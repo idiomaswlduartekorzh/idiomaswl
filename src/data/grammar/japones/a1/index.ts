@@ -20,6 +20,7 @@ import adverbiosFrecuencia from './adverbios-frecuencia'
 import negacionCompleta from './negacion-completa'
 import conjunciones from './conjunciones'
 import expresionesCotidianas from './expresiones-cotidianas'
+import additionalTopics from './additional-topics'
 
 const topics: GrammarTopic[] = [
   hiraganaBasico,
@@ -43,6 +44,7 @@ const topics: GrammarTopic[] = [
   negacionCompleta,
   conjunciones,
   expresionesCotidianas,
+  ...additionalTopics,
 ]
 
 export default topics

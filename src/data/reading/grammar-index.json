@@ -1783,6 +1783,12 @@
     "ja": {
       "a1": [
         {
+          "slug": "demostrativos-kosoado",
+          "title": "こ・そ・あ・ど",
+          "category": null,
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
           "slug": "adverbios-frecuencia",
           "title": "Adverbios frecuencia",
           "category": "Adverbios",

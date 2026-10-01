@@ -5,8 +5,8 @@ import { getTopicsByLevel, getTopicBySlug } from '@/data/grammar/registry'
 import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrated'
 import { getJapaneseScriptLesson } from '@/data/japanese-scripts-a1'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
-import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import JapaneseScriptLesson from '@/components/grammar/JapaneseScriptLesson'
+import JapaneseGrammarLesson from '@/components/grammar/JapaneseGrammarLesson'
 import TopicNav from '@/components/grammar/TopicNav'
 
 const IDIOMA = 'japones'
@@ -33,6 +33,7 @@ export default async function GrammarTopicPage({ params }: Props) {
   const topic = getTopicBySlug(IDIOMA, NIVEL, slug)
   if (!topic) notFound()
   const scriptLesson = getJapaneseScriptLesson(topic.slug)
+  const relatedWritingExercises = getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)
 
   const canonical = `https://www.idiomaswl.com/practica/${IDIOMA}/${NIVEL}/gramatica/${topic.slug}`
   const indexUrl = `https://www.idiomaswl.com/practica/${IDIOMA}/${NIVEL}/gramatica`
@@ -82,11 +83,27 @@ export default async function GrammarTopicPage({ params }: Props) {
             acceptedAnswer: { '@type': 'Answer', text: answer },
           })),
         },
-      ] : []),
+      ] : [
+        {
+          '@type': 'HowTo',
+          name: `Cómo aprender ${topic.shortTitle} en japonés A1`,
+          description: topic.lead,
+          totalTime: 'PT35M',
+          step: topic.guide.decisions.map((text, index) => ({
+            '@type': 'HowToStep', position: index + 1, name: `Decisión ${index + 1}`, text,
+          })),
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: topic.seo.map((section) => ({
+            '@type': 'Question',
+            name: section.heading,
+            acceptedAnswer: { '@type': 'Answer', text: section.paragraphs.join(' ') },
+          })),
+        },
+      ]),
     ],
   }
-
-  const waText = encodeURIComponent(`Hola, tengo una pregunta sobre ${topic.shortTitle} en japonés A1.`)
 
   return (
     <>
@@ -106,70 +123,7 @@ export default async function GrammarTopicPage({ params }: Props) {
           {scriptLesson ? (
             <JapaneseScriptLesson scriptId={scriptLesson.id} />
           ) : (
-            <>
-          <section className="topic-hero">
-            <div className="topic-hero__grid">
-              <div>
-                <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Gramática · {topic.category} · {topic.level}</p>
-                <h1 className="gram-h1">{topic.title}</h1>
-                <p className="gram-lead">{topic.lead}</p>
-                <div className="hero-actions">
-                  <a href="#practica" className="gram-btn accent">Ir a práctica →</a>
-                  <a href="#explicacion" className="gram-btn secondary">Leer explicación</a>
-                </div>
-              </div>
-              <div className="hero-brief">
-                <div><span>✓</span><p><strong style={{ display: 'block', color: 'var(--ink)', marginBottom: '0.18rem' }}>Objetivo</strong>{topic.guide.goal}</p></div>
-                <div><span>≈</span><p><strong style={{ display: 'block', color: 'var(--ink)', marginBottom: '0.18rem' }}>Fórmula</strong>{topic.guide.formula}</p></div>
-                <div><span>⚑</span><p><strong style={{ display: 'block', color: 'var(--ink)', marginBottom: '0.18rem' }}>Logros</strong>{topic.outcomes.join(' · ')}</p></div>
-              </div>
-            </div>
-          </section>
-
-          <article id="explicacion" className="seo-article">
-            <span className="section-label">— Explicación del especialista</span>
-            <h2 className="gram-h2">Aprende {topic.shortTitle}: guía para hispanohablantes</h2>
-            <p className="article-lead">{topic.description}</p>
-            {topic.seo.map((section, i) => (
-              <div key={i} className="article-section">
-                <h2 className="gram-h2">{section.heading}</h2>
-                {section.paragraphs.map((para, j) => <p key={j}>{para}</p>)}
-                {section.table && (
-                  <div className="grammar-table" style={{ marginTop: '1rem' }}>
-                    {section.table.map((row, ri) => (
-                      <div key={ri} className={`grammar-table__row${ri === 0 ? ' is-head' : ''}`} style={{ gridTemplateColumns: `repeat(${row.length}, minmax(0,1fr))` }}>
-                        {row.map((cell, ci) => <span key={ci}>{cell}</span>)}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {section.examples && (
-                  <div className="example-stack">
-                    {section.examples.map((ex, ei) => (
-                      <div key={ei} style={{ gridTemplateColumns: `repeat(${ex.length}, minmax(0,1fr))` }}>
-                        {ex.map((cell, ci) => <span key={ci}>{cell}</span>)}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            <div className="article-section">
-              <p>
-                ¿Tienes dudas sobre {topic.shortTitle} o quieres practicarlo en clase con retroalimentación personalizada?{' '}
-                <a href={`https://wa.me/573005004253?text=${waText}`} rel="nofollow" style={{ color: topic.color, fontWeight: 700, textDecoration: 'none' }}>
-                  Escríbele al equipo de Idiomas WeLearn por WhatsApp
-                </a>{' '}y te orientamos.
-              </p>
-            </div>
-            <div style={{ marginTop: '1rem', paddingTop: '0.9rem', borderTop: '1px solid var(--line-soft)', display: 'flex', alignItems: 'center', gap: '0.65rem', fontSize: '0.82rem', color: 'var(--muted)' }}>
-              <span style={{ display: 'inline-grid', placeItems: 'center', width: 32, height: 32, borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', fontSize: '1rem', flexShrink: 0 }}>✍</span>
-              <span>Escrito por el <strong style={{ color: 'var(--ink)' }}>Equipo Idiomas WeLearn</strong>{' '}· Gramática {topic.level} para hispanohablantes</span>
-            </div>
-          </article>
-
-          <GrammarTopicClient topic={topic} idioma={IDIOMA} nivel={NIVEL} relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)} />
-            </>
+            <JapaneseGrammarLesson topic={topic} relatedWritingExercises={relatedWritingExercises} />
           )}
 
           <TopicNav idioma={IDIOMA} nivel={NIVEL} slug={topic.slug} indexLabel="Gramática A1" />

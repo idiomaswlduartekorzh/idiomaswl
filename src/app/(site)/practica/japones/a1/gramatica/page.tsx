@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
 import { getTopicsByLevel } from '@/data/grammar/registry'
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
+import { getJapaneseGrammarResource } from '@/data/japanese-grammar-a1'
+import styles from './JapaneseGrammarIndex.module.css'
 
 export const metadata: Metadata = generateGrammarIndexMetadata('japones', 'a1')
 
@@ -11,15 +14,34 @@ const NIVEL = 'a1'
 
 export default function GrammarIndexPage() {
   const topics = getTopicsByLevel(IDIOMA, NIVEL)
+  const stages = [
+    { number: '01', title: 'Construye la base', copy: 'Escritura, orden de la frase, registro formal y partículas esenciales.', topics: topics.slice(0, 7) },
+    { number: '02', title: 'Describe el mundo', copy: 'Lugar, existencia, adjetivos, verbos, números y tiempo.', topics: topics.slice(7, 15) },
+    { number: '03', title: 'Comunica intenciones', copy: 'Deseos, permiso, frecuencia, negación, conectores y expresiones.', topics: topics.slice(15, 21) },
+    { number: '04', title: 'Completa tu A1', copy: 'Demostrativos, posesión, compañía, rangos, ubicación, gustos e invitaciones.', topics: topics.slice(21) },
+  ]
 
-  const breadcrumbSchema = {
+  const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },
-      { '@type': 'ListItem', position: 2, name: 'Japonés', item: 'https://www.idiomaswl.com/practica/japones' },
-      { '@type': 'ListItem', position: 3, name: 'A1', item: 'https://www.idiomaswl.com/practica/japones/a1' },
-      { '@type': 'ListItem', position: 4, name: 'Gramática A1', item: 'https://www.idiomaswl.com/practica/japones/a1/gramatica' },
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },
+          { '@type': 'ListItem', position: 2, name: 'Japonés', item: 'https://www.idiomaswl.com/practica/japones' },
+          { '@type': 'ListItem', position: 3, name: 'A1', item: 'https://www.idiomaswl.com/practica/japones/a1' },
+          { '@type': 'ListItem', position: 4, name: 'Gramática A1', item: 'https://www.idiomaswl.com/practica/japones/a1/gramatica' },
+        ],
+      },
+      {
+        '@type': 'ItemList',
+        name: 'Curso completo de gramática japonesa A1',
+        numberOfItems: topics.length,
+        itemListElement: topics.map((topic, index) => ({
+          '@type': 'ListItem', position: index + 1, name: topic.shortTitle,
+          url: `https://www.idiomaswl.com/practica/japones/a1/gramatica/${topic.slug}`,
+        })),
+      },
     ],
   }
 
@@ -27,7 +49,7 @@ export default function GrammarIndexPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="gram-page" style={{ '--topic-color': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
         <div className="wrap">
@@ -53,100 +75,33 @@ export default function GrammarIndexPage() {
             <span style={{ color: 'var(--wl-on-panel-alert, #dc2626)', fontWeight: 800 }}>Gramática</span>
           </nav>
 
-          <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>
-            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>
-              <span className="ink-line" />Gramática · Japonés A1
-            </p>
-            <h1 className="gram-h1" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>
-              Temas de gramática A1
-            </h1>
-            <p className="gram-lead">
-              Cada tema incluye explicación de especialista orientada al hispanohablante, laboratorio visual y práctica progresiva de 6 niveles. Supera el 65 % en cada nivel para desbloquear el siguiente.
-            </p>
+          <section className={styles.hero}>
+            <div><p>Japonés · Gramática · A1</p><h1>De los caracteres a tu primera conversación</h1><span>Una ruta completa, visual y práctica para entender cómo piensa una frase japonesa.</span></div>
+            <dl><div><dt>{topics.length}</dt><dd>lecciones</dd></div><div><dt>5–6</dt><dd>niveles por tema</dd></div><div><dt>75+</dt><dd>recursos nuevos</dd></div></dl>
           </section>
 
-          <div style={{ display: 'grid', gap: '0.9rem', paddingBottom: '3rem' }}>
-            {topics.map((topic) => (
-              <Link
-                key={topic.slug}
-                href={`/practica/${IDIOMA}/${NIVEL}/gramatica/${topic.slug}`}
-                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
-              >
-                <div
-                  style={{
-                    padding: '1.2rem 1.4rem',
-                    border: `1.5px solid ${topic.color}33`,
-                    borderRadius: 16,
-                    borderLeft: `5px solid ${topic.color}`,
-                    background: `linear-gradient(135deg, ${topic.color}08 0%, transparent 100%)`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '1.2rem',
-                    transition: 'box-shadow 0.18s',
-                  }}
-                >
-                  <div
-                    style={{
-                      width: 46,
-                      height: 46,
-                      borderRadius: 12,
-                      background: topic.color,
-                      color: '#fff',
-                      display: 'grid',
-                      placeItems: 'center',
-                      fontFamily: 'var(--mono)',
-                      fontWeight: 950,
-                      fontSize: '0.86rem',
-                      flexShrink: 0,
-                    }}
-                  >
-                    {topic.order}
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.2rem' }}>
-                      <span style={{ fontSize: '0.98rem', fontWeight: 900, color: 'var(--ink)' }}>
-                        {topic.shortTitle}
-                      </span>
-                      <span
-                        style={{
-                          fontSize: '0.67rem',
-                          fontFamily: 'var(--mono)',
-                          fontWeight: 800,
-                          color: topic.color,
-                          textTransform: 'uppercase',
-                          letterSpacing: '0.04em',
-                          borderRadius: 999,
-                          border: `1px solid ${topic.color}44`,
-                          padding: '0.12rem 0.38rem',
-                          background: `${topic.color}10`,
-                        }}
-                      >
-                        {topic.category}
-                      </span>
-                    </div>
-                    <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.86rem', lineHeight: 1.5 }}>
-                      {topic.lead}
-                    </p>
-                  </div>
-                  <span style={{ flexShrink: 0, color: topic.color, fontSize: '1.2rem', fontWeight: 700 }}>→</span>
+          <div className={styles.route}>
+            {stages.map((stage) => (
+              <section key={stage.number} className={styles.stage}>
+                <header><span>{stage.number}</span><div><h2>{stage.title}</h2><p>{stage.copy}</p></div><b>{stage.topics.length} temas</b></header>
+                <div className={styles.grid}>
+                  {stage.topics.map((topic) => {
+                    const resource = getJapaneseGrammarResource(topic.slug)
+                    return (
+                      <Link key={topic.slug} href={`/practica/${IDIOMA}/${NIVEL}/gramatica/${topic.slug}`} className={styles.card}>
+                        {resource && <div className={styles.cardImage}><Image src={resource.image} alt="" fill sizes="(max-width: 760px) 100vw, 38vw" /></div>}
+                        <div className={styles.cardBody}>
+                          <div><span style={{ color: topic.color }}>{topic.order}</span><em>{topic.category}</em></div>
+                          <h3>{topic.shortTitle}</h3>
+                          <p>{topic.guide.goal}</p>
+                          <small>{topic.practice.levels.length} niveles · mapa visual · PDF <b>→</b></small>
+                        </div>
+                      </Link>
+                    )
+                  })}
                 </div>
-              </Link>
+              </section>
             ))}
-
-            {topics.length === 0 && (
-              <div
-                style={{
-                  padding: '3rem',
-                  textAlign: 'center',
-                  color: 'var(--muted)',
-                  fontSize: '0.95rem',
-                  border: '1.5px solid var(--line-soft)',
-                  borderRadius: 16,
-                }}
-              >
-                Próximamente: temas de gramática A1.
-              </div>
-            )}
           </div>
 
           <div style={{ paddingBottom: '2rem' }}>

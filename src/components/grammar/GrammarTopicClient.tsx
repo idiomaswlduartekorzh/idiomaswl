@@ -630,11 +630,13 @@ export default function GrammarTopicClient({
   idioma,
   nivel,
   relatedWritingExercises = [],
+  mode = 'full',
 }: {
   topic: GrammarTopic
   idioma: string
   nivel: string
   relatedWritingExercises?: RelatedWritingExercise[]
+  mode?: 'full' | 'practiceOnly'
 }) {
   const { progress, mounted, recordLevel } = useGrammarProgress(idioma, nivel, topic.slug)
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -663,7 +665,7 @@ export default function GrammarTopicClient({
   return (
     <>
       {/* ── Descarga ───────────────────────────────────────────────────────── */}
-      {canRenderPdf(idioma) && (
+      {mode === 'full' && canRenderPdf(idioma) && (
         <div className="topic-download no-print">
           <PdfDownloadButton
             color={topic.color}
@@ -678,7 +680,7 @@ export default function GrammarTopicClient({
       )}
 
       {/* ── Visual Brief ───────────────────────────────────────────────────── */}
-      <div className="visual-brief">
+      {mode === 'full' && <div className="visual-brief">
         <div className="visual-brief__header">
           <div>
             <span className="section-label">— Laboratorio visual</span>
@@ -749,7 +751,7 @@ export default function GrammarTopicClient({
             ))}
           </div>
         )}
-      </div>
+      </div>}
 
       {relatedWritingExercises.length > 0 && (
         <section className="grammar-writing-bridge" aria-labelledby="grammar-writing-bridge-title">
