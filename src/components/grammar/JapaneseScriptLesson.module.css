@@ -357,12 +357,13 @@
 
 .wordGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.55rem;
   margin-top: 1.15rem;
 }
 
 .wordCard {
+  min-width: 0;
   padding: 0.9rem 0.55rem;
   border: 1px solid var(--js-line);
   border-radius: 0.62rem;
@@ -785,7 +786,7 @@
   }
 
   .wordGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .resources {
