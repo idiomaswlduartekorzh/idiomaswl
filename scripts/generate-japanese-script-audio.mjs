@@ -6,7 +6,10 @@ import { fileURLToPath } from 'node:url'
 import { elevenLabsApiKey } from './lib/elevenlabs-api-key.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const OUT = path.join(ROOT, 'public', 'audio', 'japones', 'a1', 'scripts')
+const outputArg = process.argv.find((argument) => argument.startsWith('--output='))
+const OUT = outputArg
+  ? path.resolve(ROOT, outputArg.slice('--output='.length))
+  : path.join(ROOT, 'public', 'audio', 'japones', 'a1', 'scripts')
 const API = 'https://api.elevenlabs.io'
 const VOICE_ID = 'nBV906YvEOdwWKK9J8Hx' // Mio — narradora japonesa cálida y clara ya usada por WeLearn.
 const MODEL_ID = 'eleven_multilingual_v2'
@@ -32,15 +35,34 @@ const kanji = [
 ].map(([file, text]) => ({ file: `kanji/${file}.mp3`, text: `${text}。` }))
 
 const examples = [
-  ['ie', 'いえ'], ['neko', 'ねこ'], ['inu', 'いぬ'], ['sakana', 'さかな'], ['tsuki', 'つき'], ['watashi', 'わたし'],
-  ['hoteru', 'ホテル'], ['koohii', 'コーヒー'], ['terebi', 'テレビ'], ['basu', 'バス'], ['kamera', 'カメラ'], ['supein', 'スペイン'],
-  ['nihon', 'にほん'], ['hitori', 'ひとり'], ['kazan', 'かざん'], ['mizu', 'みず'], ['tsuki-kanji', 'つき'], ['sen-en', 'せんえん'],
-].map(([file, text]) => ({ file: `examples/${file}.mp3`, text: `${text}。` }))
+  ['ie', 'いえ', '「家」という意味の日本語です。'],
+  ['neko', 'ねこ', '「猫」という意味の日本語です。'],
+  ['inu', 'いぬ', '「犬」という意味の日本語です。'],
+  ['sakana', 'さかな', '「魚」という意味の日本語です。'],
+  ['tsuki', 'つき', '「月」という意味の日本語です。'],
+  ['watashi', 'わたし', '自分を指す「私」という意味です。'],
+  ['hoteru', 'ホテル', '宿泊するホテルを表す日本語です。'],
+  ['koohii', 'コーヒー', '飲み物のコーヒーを表す日本語です。'],
+  ['terebi', 'テレビ', 'テレビを表す日本語です。'],
+  ['basu', 'バス', '乗り物のバスを表す日本語です。'],
+  ['kamera', 'カメラ', '写真を撮るカメラを表す日本語です。'],
+  ['supein', 'スペイン', '国名のスペインを表す日本語です。'],
+  ['nihon', 'にほん', '国名の「日本」の読み方です。'],
+  ['hitori', 'ひとり', '人数の「一人」の読み方です。'],
+  ['kazan', 'かざん', '「火山」の読み方です。'],
+  ['mizu', 'みず', '「水」という意味の日本語です。'],
+  ['tsuki-kanji', 'つき', '漢字の「月」の読み方です。'],
+  ['sen-en', 'せん、えん', '金額の「千円」の読み方です。'],
+].map(([file, text, nextText]) => ({ file: `examples/${file}.mp3`, text: `${text}。`, nextText }))
 
 const manifest = [...kana, ...kanji, ...examples]
 const generate = process.argv.includes('--generate')
 const force = process.argv.includes('--force')
-const pending = manifest.filter((item) => force || !existsSync(path.join(OUT, item.file)))
+const groupArg = process.argv.find((argument) => argument.startsWith('--group='))
+const group = groupArg?.slice('--group='.length)
+assert.ok(!group || ['kana', 'kanji', 'examples'].includes(group), '--group debe ser kana, kanji o examples')
+const selected = group ? manifest.filter((item) => item.file.startsWith(`${group}/`)) : manifest
+const pending = selected.filter((item) => force || !existsSync(path.join(OUT, item.file)))
 const characters = pending.reduce((sum, item) => sum + [...item.text].length, 0)
 
 console.log(`Audio japonés A1: ${manifest.length} clips (${kana.length} kana, ${kanji.length} kanji, ${examples.length} ejemplos).`)
@@ -67,12 +89,15 @@ for (const [index, item] of pending.entries()) {
       text: item.text,
       model_id: MODEL_ID,
       language_code: 'ja',
+      previous_text: '日本語の発音練習です。音を一つずつ、ゆっくり正確に読みます。',
+      next_text: item.nextText ?? `${item.text.replace(/。$/u, '')}の発音でした。`,
+      apply_language_text_normalization: true,
       voice_settings: {
-        stability: 0.68,
-        similarity_boost: 0.78,
-        style: 0.08,
+        stability: 0.78,
+        similarity_boost: 0.8,
+        style: 0,
         use_speaker_boost: true,
-        speed: 0.86,
+        speed: 0.78,
       },
     }),
   })
