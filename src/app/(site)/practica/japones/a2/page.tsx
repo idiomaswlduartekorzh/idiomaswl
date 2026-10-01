@@ -25,7 +25,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '文法 (Bunpō)',
     desc: 'て-form, た-form (pasado), ～ています, ～たいです (querer), ～ことができます (poder) y ～なければなりません (deber).',
-    count: '5 temas · 50+ ejercicios', href: '/practica/japones/a2/gramatica', available: true,
+    count: '25 temas · 150 niveles · PDF y audio', href: '/practica/japones/a2/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '書く (Kaku)',
