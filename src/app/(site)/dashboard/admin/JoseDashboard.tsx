@@ -107,17 +107,10 @@ function ActionCard({
   )
 }
 
-function IconBtn({ icon: Icon, active, onClick, disabled }: { icon: React.ElementType; active?: boolean; onClick?: () => void; disabled?: boolean }) {
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      title={disabled ? 'Próximamente' : undefined}
-      style={{ width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : 'transparent', color: active ? '#fff' : disabled ? BORDER : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: onClick ? 'pointer' : 'default', flexShrink: 0 }}
-    >
-      <Icon size={17} />
-    </button>
-  )
+function IconBtn({ icon: Icon, active, onClick, disabled, href, label }: { icon: React.ElementType; active?: boolean; onClick?: () => void; disabled?: boolean; href?: string; label?: string }) {
+  const style: React.CSSProperties = { width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : 'transparent', color: active ? '#fff' : disabled ? BORDER : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: onClick || href ? 'pointer' : 'default', flexShrink: 0, textDecoration: 'none' }
+  if (href) return <Link href={href} aria-label={label} title={label} style={style}><Icon size={17} /></Link>
+  return <button type="button" onClick={onClick} disabled={disabled} aria-label={label} title={disabled ? 'Próximamente' : label} style={style}><Icon size={17} /></button>
 }
 
 function weekTrend(thisWeek: number, lastWeek: number): string {
@@ -218,15 +211,15 @@ function leadsCsv(leads: LeadRow[]): string {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 type Tab = 'overview' | 'students' | 'leads'
 
-const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null }[] = [
-  { Icon: LayoutDashboard, tab: 'overview' },
-  { Icon: Users,           tab: 'students' },
-  { Icon: BookOpen,        tab: null },
-  { Icon: MessageCircle,   tab: 'leads' },
-  { Icon: FileText,        tab: null },
-  { Icon: DollarSign,      tab: null },
-  { Icon: Settings,        tab: null },
-  { Icon: Globe,           tab: null },
+const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string }[] = [
+  { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
+  { Icon: Users,           tab: 'students', label: 'Estudiantes' },
+  { Icon: BookOpen,        tab: null, label: 'Contenido' },
+  { Icon: MessageCircle,   tab: 'leads', label: 'Leads' },
+  { Icon: FileText,        tab: null, label: 'Documentos' },
+  { Icon: DollarSign,      tab: null, href: '/dashboard/admin/pagos', label: 'Pagos y finanzas' },
+  { Icon: Settings,        tab: null, label: 'Configuración' },
+  { Icon: Globe,           tab: null, label: 'Sitio' },
 ]
 
 export default function JoseDashboard({ data, viewer }: { data: DashboardData; viewer: AdminViewer }) {
@@ -289,13 +282,15 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
         <div style={{ width: 36, height: 36, background: A, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
           <GraduationCap size={18} color="#fff" />
         </div>
-        {SIDEBAR_ITEMS.map(({ Icon, tab }, i) => (
+        {SIDEBAR_ITEMS.map(({ Icon, tab, href, label }, i) => (
           <IconBtn
             key={i}
             icon={Icon}
             active={tab !== null && activeTab === tab}
             onClick={tab ? () => setActiveTab(tab) : undefined}
-            disabled={tab === null}
+            href={href}
+            label={label}
+            disabled={tab === null && !href}
           />
         ))}
       </aside>
@@ -327,6 +322,11 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'leads' ? '#14215c' : 'transparent', color: activeTab === 'leads' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
               <MessageCircle size={13} /> Leads {data.leads.length > 0 && <span style={{ background: A, color: '#fff', borderRadius: 10, fontSize: 10, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>{data.leads.length}</span>}
             </button>
+            <Link
+              href="/dashboard/admin/pagos"
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(22,101,52,.11)', color: '#166534', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
+              <DollarSign size={13} /> Pagos y finanzas
+            </Link>
             <Link
               href="/dashboard/admin/revisiones-xpress"
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(49,87,213,.12)', color: '#3157d5', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>

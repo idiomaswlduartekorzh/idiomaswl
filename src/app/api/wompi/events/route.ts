@@ -1,4 +1,5 @@
 import { queueCoursePaymentReconciliation, reconcileCoursePayment } from '@/lib/course-pricing/payments.server';
+import { persistVerifiedAdminPaymentLinkTransaction } from '@/lib/admin-payments/server';
 import { persistVerifiedIcfesTransaction } from '@/lib/icfes/payment-events.server';
 import { persistVerifiedWompiTransaction } from '@/lib/wompi/persistence';
 import { persistVerifiedToeflReportTransaction } from '@/lib/toefl/report-payment-events.server';
@@ -58,6 +59,23 @@ export async function POST(request: Request): Promise<Response> {
     }
 
     const candidate = event.data.transaction as { reference?: unknown; id?: unknown } | undefined;
+    const paymentLinkCandidate = event.data.transaction as { payment_link_id?: unknown } | undefined;
+    if (typeof paymentLinkCandidate?.payment_link_id === 'string') {
+      // Only the signed transaction ID is trusted from the event. Amount, state
+      // and payment-link ownership are read back from Wompi's authenticated API.
+      if (!event.signature.properties.includes('transaction.id') || typeof candidate?.id !== 'string') {
+        return json({ received: false, code: 'invalid_payment_link_signature' }, 401);
+      }
+      const linkPersistence = await persistVerifiedAdminPaymentLinkTransaction({
+        transactionId: candidate.id,
+        config,
+      });
+      if (linkPersistence === 'failed') {
+        return json({ received: false, code: 'payment_link_not_saved' }, 503);
+      }
+      if (linkPersistence === 'saved') return json({ received: true }, 200);
+      // Unknown Wompi links belong to another workflow and continue below.
+    }
     if (typeof candidate?.reference === 'string' && candidate.reference.startsWith('WX-')) {
       if (!event.signature.properties.includes('transaction.id') || typeof candidate.id !== 'string') {
         return json({ received: false, code: 'invalid_xpress_signature' }, 401);
