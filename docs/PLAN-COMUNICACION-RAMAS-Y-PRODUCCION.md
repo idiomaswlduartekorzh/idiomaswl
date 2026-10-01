@@ -12,7 +12,7 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 ## Tracker financiero y links de pago administrativos — 30 de septiembre de 2026
 
 `codex/admin-payment-tracker-20260930` parte de `origin/main` en `2361475c`.
-Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: nueva ruta privada
+Estado: `DESPLEGADO`. Responsable: Codex. Alcance: nueva ruta privada
 `/dashboard/admin/pagos`, ledger normalizado de planes, clases, Xpress, ICFES y
 links personalizados, indicadores de recaudo bruto, filtros y CSV; creación de
 links Wompi de monto fijo, un solo uso y vencimiento; y conciliación por webhook
@@ -29,6 +29,12 @@ regresiones Wompi/comercio/admin, TypeScript, ESLint focalizado, navegación,
 catálogo protegido y build Next.js de 2.596 páginas. El baseline de archivos
 multimedia no pudo ejecutarse en el clon liviano porque `public/audio` no se
 descargó; el catálogo de 465 temas sí pasó. Decisión de integración: `MERGE`.
+La implementación y este registro entraron en `main` como `a63374f`. GitHub
+Actions aprobó `baseline-and-types` y `production-build`; Vercel publicó ese SHA
+en el deployment `Dyyji1ZPkZkd7jZt5KW4pHe4UZrk`, estado `success`, con artefacto
+`idiomaswl-ecut7lo1y-idiomaswlduartekorzhs-projects.vercel.app`. El smoke público
+confirmó `200` en `www.idiomaswl.com`, redirección anónima de
+`/dashboard/admin/pagos` a `/login` y `405` para intentos GET contra el webhook.
 
 ## Ecosistema de vocabulario y phrasal verbs — 28 de septiembre de 2026
 
