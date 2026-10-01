@@ -25,6 +25,9 @@ for (const file of files) {
   const video = path.join(directory, `welearn-${config.exam}-${config.set}-full-listening.mp4`);
   const timeline = JSON.parse(await fs.readFile(path.join(directory, 'timeline.json'), 'utf8'));
   const hasAnswers = timeline.scenes.some(scene => scene.name === '90-answer-intro');
+  if (hasAnswers && (!Array.isArray(timeline.answerKey) || timeline.answerKey.length !== (config.exam === 'ielts' ? 4 : 3))) {
+    throw new Error(`Missing answer key in ${file}`);
+  }
   const thumbnail = path.join(directory, hasAnswers ? 'thumbnail.png' : '00-intro.png');
   try { await fs.access(video); await fs.access(thumbnail); } catch { throw new Error(`Missing output for ${file}; render it first`); }
   const duration = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', video], { encoding: 'utf8' }).trim());
@@ -42,14 +45,17 @@ for (const file of files) {
   ];
   const mock = ielts ? (await import(path.join(root, 'src/data/mocks', `ielts-${config.set}.ts`))).default : null;
   const topics = ielts ? mock.sections.filter(section => section.skill === 'listening').map(section => section.title.replace(/^Listening — Section \d+: /, '')).join(' · ') : '';
+  const answerText = hasAnswers ? timeline.answerKey.map(part =>
+    `${ielts ? 'Part' : 'Teil'} ${part.part}: ${part.answers.map(row => `${row.number} ${row.answer}`).join(' · ')}`,
+  ).join('\n') : '';
   rows.push({
     exam: config.exam, set: config.set, video, thumbnail, duration, hasAnswers, chapters,
     title: ielts
       ? `IELTS Listening Practice Test ${number} | 40 Questions${hasAnswers ? ' + Answers' : ''} | WeLearn`
       : `Goethe A1 Hören Übungstest ${number} | 15 Aufgaben${hasAnswers ? ' mit Lösungen' : ''} | WeLearn`,
     description: ielts
-      ? `IELTS Listening practice test ${number}: full audio, 40 questions in four parts${hasAnswers ? ', and the answer key at the end for self-scoring' : ''}. Read each question block on screen and write your answers as you listen.\n\nTopics: ${topics}.\n\nCHAPTERS\n${chapters.join('\n')}\n\nPractice the same original WeLearn mock and check accepted answer variants: https://idiomaswl.com/examenes/ielts/practica/${config.set}\n\nOriginal WeLearn material. Not affiliated with IELTS, British Council, IDP or Cambridge.\n\n#IELTSListening #IELTSPractice #WeLearn`
-      : `Deutsch A1 Hören Übungstest ${number}: vollständiges Audio, 15 Aufgaben in drei Teilen${hasAnswers ? ' und Lösungen am Ende zur Selbstkontrolle' : ''}. Jede Frage erscheint beim Signalton und bleibt bei der Wiederholung sichtbar.\n\nKAPITEL\n${chapters.join('\n')}\n\nÜben Sie denselben originalen WeLearn-Test: https://idiomaswl.com/examenes/goethe/practica/${config.set}\n\nOriginales Übungsmaterial von WeLearn. Keine Verbindung zum Goethe-Institut.\n\n#DeutschA1 #Hoeren #WeLearn`,
+      ? `IELTS Listening practice test ${number}: full audio, 40 questions in four parts${hasAnswers ? ', and the answer key at the end for self-scoring' : ''}. Read each question block on screen and write your answers as you listen.\n\nTopics: ${topics}.\n\nCHAPTERS\n${chapters.join('\n')}\n\n${hasAnswers ? `ANSWER KEY — SPOILERS\n${answerText}\n\n` : ''}Practice the same original WeLearn mock and check accepted answer variants: https://idiomaswl.com/examenes/ielts/practica/${config.set}\n\nOriginal WeLearn material. Not affiliated with IELTS, British Council, IDP or Cambridge.\n\n#IELTSListening #IELTSPractice #WeLearn`
+      : `Deutsch A1 Hören Übungstest ${number}: vollständiges Audio, 15 Aufgaben in drei Teilen${hasAnswers ? ' und Lösungen am Ende zur Selbstkontrolle' : ''}. Jede Frage erscheint beim Signalton und bleibt bei der Wiederholung sichtbar.\n\nKAPITEL\n${chapters.join('\n')}\n\n${hasAnswers ? `LÖSUNGEN — SPOILER\n${answerText}\n\n` : ''}Üben Sie denselben originalen WeLearn-Test: https://idiomaswl.com/examenes/goethe/practica/${config.set}\n\nOriginales Übungsmaterial von WeLearn. Keine Verbindung zum Goethe-Institut.\n\n#DeutschA1 #Hoeren #WeLearn`,
   });
 }
 if (rows.length !== 24) throw new Error(`Expected 24 videos; found ${rows.length}`);
