@@ -685,11 +685,12 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 
 ### 30 de septiembre de 2026 — escritura japonesa A1
 
-- La rama `codex/japanese-scripts-a1-20260930`, basada en
-  `2d4ef62c6696dd958966139663cf184b3ab010fe`, queda `LISTA_PARA_INTEGRAR` con
-  las lecciones especializadas de hiragana, katakana y 20 kanji esenciales.
-  La implementación funcional está contenida en
-  `c78fda0f382894acf9c6461c9a9b6f5caec61e4d`.
+- La entrega queda `DESPLEGADA` en producción desde `main` en
+  `1a60c184d39652ea406c5423ac08f1c26136479b`. El despliegue de Vercel
+  `dpl_baTWnqPGPYiHDNvoPpgBXbENYbx1` terminó `Ready` en 7 min 36 s y asignó
+  `www.idiomaswl.com`. La implementación funcional está contenida en
+  `c78fda0f382894acf9c6461c9a9b6f5caec61e4d`; la rama de respaldo es
+  `codex/japanese-scripts-a1-20260930`.
 - Las tres rutas comparten una interfaz coherente con Idiomas WeLearn, cinco
   etapas de aprendizaje, práctica aleatoria en ambas direcciones, corrección
   inmediata y navegación accesible. Incluyen 112 animaciones de trazos, 84 MP3
@@ -701,3 +702,8 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   escritura y selección múltiple, audio, doce recursos HTTP 200 y móvil sin
   desbordamiento. Los 27 folios PDF se renderizaron y revisaron sin cortes,
   solapamientos ni glifos rotos.
+- El smoke test posterior al despliegue confirmó las tres rutas y los recursos
+  PDF, PNG, ZIP, JPEG, MP3 y SVG con HTTP 200; los ejercicios de escritura y
+  opción múltiple corrigieron correctamente en hiragana, katakana y kanji. La
+  auditoría WCAG A/AA no reportó violaciones automáticas y los logs del
+  despliegue mostraron 0 warnings, 0 errores y 0 fallos fatales.
