@@ -32,7 +32,7 @@ DATA = ROOT / 'tmp' / f'japanese-grammar-{LEVEL}' / 'topics.json'
 OUT = ROOT / 'public' / 'downloads' / f'japanese-{LEVEL}' / 'grammar'
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ja-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ja-700.ttf'
-LOGO = ROOT / 'public' / 'images' / 'welearn-logo.png'
+LOGO = ROOT / 'public' / 'images' / 'welearn-pdf-mark.png'
 
 NAVY = colors.HexColor('#10266b')
 BLUE = colors.HexColor('#0f3d8c')
@@ -69,36 +69,61 @@ STYLES = {
 }
 
 
+def draw_capsule(canvas, x, y, length, thickness, color, angle=45):
+    """Draw one of the rounded diagonal strokes from the WeLearn identity."""
+    canvas.saveState()
+    canvas.translate(x, y)
+    canvas.rotate(angle)
+    canvas.setFillColor(color)
+    canvas.roundRect(
+        -length / 2,
+        -thickness / 2,
+        length,
+        thickness,
+        thickness / 2,
+        fill=1,
+        stroke=0,
+    )
+    canvas.restoreState()
+
+
 def draw_page(canvas, doc):
     canvas.saveState()
     canvas.setFillColor(colors.white)
     canvas.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
-    canvas.setFillColor(NAVY)
-    path = canvas.beginPath()
-    path.moveTo(0, PAGE_H)
-    path.lineTo(42 * mm, PAGE_H)
-    path.lineTo(0, PAGE_H - 42 * mm)
-    path.close()
-    canvas.drawPath(path, fill=1, stroke=0)
-    canvas.setFillColor(RED)
-    path = canvas.beginPath()
-    path.moveTo(PAGE_W, 0)
-    path.lineTo(PAGE_W, 43 * mm)
-    path.lineTo(PAGE_W - 43 * mm, 0)
-    path.close()
-    canvas.drawPath(path, fill=1, stroke=0)
+
+    # Upper-left: the blue diagonal pills from the WeLearn visual system.
+    draw_capsule(canvas, 4 * mm, PAGE_H - 3 * mm, 27 * mm, 6.2 * mm, NAVY)
+    draw_capsule(canvas, 18 * mm, PAGE_H - 17 * mm, 18 * mm, 5.8 * mm, BLUE)
+    draw_capsule(canvas, 5 * mm, PAGE_H - 24 * mm, 13 * mm, 5.2 * mm, NAVY)
+
+    # Lower-right: a matching red cluster, kept clear of the page information.
+    draw_capsule(canvas, PAGE_W - 2 * mm, 4 * mm, 29 * mm, 6.5 * mm, RED)
+    draw_capsule(canvas, PAGE_W - 18 * mm, 18 * mm, 19 * mm, 5.8 * mm, RED)
+    draw_capsule(canvas, PAGE_W - 4 * mm, 29 * mm, 14 * mm, 5.2 * mm, RED)
+
+    # Wordmark is deliberately isolated in the upper-right corner.
     try:
-        canvas.drawImage(str(LOGO), 19 * mm, PAGE_H - 23 * mm, width=38 * mm, height=10 * mm, preserveAspectRatio=True, mask='auto')
+        canvas.drawImage(
+            str(LOGO),
+            PAGE_W - 62 * mm,
+            PAGE_H - 22 * mm,
+            width=44 * mm,
+            height=14.5 * mm,
+            preserveAspectRatio=True,
+            anchor='c',
+            mask='auto',
+        )
     except Exception:
         canvas.setFillColor(NAVY)
         canvas.setFont('WeLearnJP-Bold', 10)
-        canvas.drawString(19 * mm, PAGE_H - 18 * mm, 'Idiomas WeLearn')
+        canvas.drawRightString(PAGE_W - 18 * mm, PAGE_H - 16 * mm, 'Idiomas WeLearn')
     canvas.setStrokeColor(LINE)
     canvas.line(18 * mm, PAGE_H - 28 * mm, PAGE_W - 18 * mm, PAGE_H - 28 * mm)
     canvas.setFillColor(MUTED)
     canvas.setFont('WeLearnJP', 6.7)
     canvas.drawString(18 * mm, 10 * mm, f'Material original · Japonés {LEVEL_LABEL} · idiomaswl.com')
-    canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'Página {doc.page}')
+    canvas.drawCentredString(PAGE_W / 2, 10 * mm, f'Página {doc.page}')
     canvas.restoreState()
 
 
