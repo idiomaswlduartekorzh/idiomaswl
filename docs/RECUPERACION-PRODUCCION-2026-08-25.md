@@ -767,4 +767,6 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 - Una segunda auditoría de intención de búsqueda quedó documentada en
   `docs/SEO-KIDS-BUSQUEDA-2026-10-03.md`. Reorienta cada URL hacia una categoría
   que los padres sí buscan: clases de inglés, programación o ajedrez para
-  niños; el cruce bilingüe se conserva como diferencial verificable.
+  niños; el cruce bilingüe se conserva como diferencial verificable. La
+  implementación está en `9e32a028c3bd1db16092b8721c55d52d19dcef7f` y pasó
+  los trabajos `baseline-and-types` y `production-build` de GitHub Actions.
