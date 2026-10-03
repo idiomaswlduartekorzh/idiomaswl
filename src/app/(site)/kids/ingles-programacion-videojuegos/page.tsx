@@ -16,9 +16,9 @@ import styles from '../kids.module.css';
 const CANONICAL = 'https://www.idiomaswl.com/kids/ingles-programacion-videojuegos';
 
 export const metadata: Metadata = {
-  title: 'Inglés y programación para niños | Crea videojuegos',
+  title: 'Programación para niños en Bucaramanga | Videojuegos',
   description:
-    'Tu hijo practica inglés mientras crea un videojuego, sigue instrucciones y presenta su proyecto. Laboratorio Kids para niños de 8 a 12 años.',
+    'Curso de programación para niños de 8 a 12 años en Bucaramanga y online: crea un videojuego con lógica visual mientras practica inglés.',
   keywords: [
     'programación para niños Bucaramanga',
     'curso de programación para niños',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: 'Aprende inglés programando videojuegos | WeLearn Kids',
-    description: 'Una misión creativa para niños de 8 a 12 años: construir, probar y presentar un videojuego en inglés.',
+    title: 'Programación para niños: crea videojuegos y practica inglés',
+    description: 'Curso creativo para niños de 8 a 12 años: programación visual, videojuegos e inglés en un proyecto guiado.',
     url: CANONICAL,
     type: 'website',
     images: [
@@ -45,6 +45,11 @@ export const metadata: Metadata = {
 };
 
 const faqs: FaqItem[] = [
+  {
+    question: '¿Para qué edades es el curso de programación para niños?',
+    answer:
+      'La propuesta base está pensada para niños de 8 a 12 años. Antes de inscribir se revisan la edad, la experiencia con tecnología y el nivel de inglés para confirmar que la edición disponible sea adecuada.',
+  },
   {
     question: '¿Mi hijo debe saber programar?',
     answer:
@@ -96,11 +101,11 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': `${CANONICAL}#service`,
-      name: 'Inglés y programación para niños: crea videojuegos',
+      name: 'Programación para niños: crea videojuegos y practica inglés',
       description:
         'Experiencia para niños de 8 a 12 años que practican inglés mientras diseñan, programan, prueban y presentan un videojuego sencillo.',
       provider: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
-      serviceType: 'Inglés para niños mediante programación de videojuegos',
+      serviceType: 'Curso de programación de videojuegos para niños con práctica de inglés',
       audience: {
         '@type': 'EducationalAudience',
         educationalRole: 'student',
@@ -117,7 +122,7 @@ const jsonLd = {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
         { '@type': 'ListItem', position: 2, name: 'Kids', item: 'https://www.idiomaswl.com/kids' },
-        { '@type': 'ListItem', position: 3, name: 'Inglés y programación', item: CANONICAL },
+        { '@type': 'ListItem', position: 3, name: 'Programación para niños', item: CANONICAL },
       ],
     },
   ],
@@ -140,22 +145,22 @@ export default function KidsProgrammingPage() {
           items={[
             { label: 'Inicio', href: '/' },
             { label: 'Kids', href: '/kids' },
-            { label: 'Inglés + programación' },
+            { label: 'Programación para niños' },
           ]}
         />
         <div className={styles.heroGrid}>
           <div>
             <p className={styles.eyebrow}>WeLearn Kids · Laboratorio creativo</p>
-            <h1>Aprende inglés programando videojuegos</h1>
+            <h1>Programación para niños: crea videojuegos y practica inglés</h1>
             <p className={styles.heroLead}>
-              Una misión para niños de 8 a 12 años: imaginar un juego, construir sus reglas con
-              programación visual, probarlo y explicar en inglés cómo funciona.
+              Curso para niños de 8 a 12 años en Bucaramanga y online: imaginan un juego, construyen
+              sus reglas con programación visual, lo prueban y explican en inglés cómo funciona.
             </p>
             <ul className={styles.heroProof}>
               <li>Desde cero</li>
+              <li>8–12 años</li>
               <li>Lógica visual</li>
-              <li>Inglés funcional</li>
-              <li>Prototipo jugable</li>
+              <li>Bucaramanga y online</li>
             </ul>
             <div className={styles.ctaActions}>
               <a
@@ -190,8 +195,8 @@ export default function KidsProgrammingPage() {
         <div className={`${styles.wrap} ${styles.split}`}>
           <div>
             <SectionHeading
-              eyebrow="La idea"
-              title="El inglés aparece porque el proyecto lo necesita"
+              eyebrow="La respuesta corta"
+              title="¿Es un curso de programación para niños? Sí, con un diferencial bilingüe"
             />
             <div className={styles.note}>
               <strong>Resultado esperado</strong>
@@ -200,7 +205,13 @@ export default function KidsProgrammingPage() {
           </div>
           <div className={styles.prose}>
             <p>
-              En una clase tradicional, una palabra puede quedarse aislada en el cuaderno. En este laboratorio,
+              El niño sí trabaja fundamentos de programación: secuencias, eventos, controles, condiciones,
+              puntaje, pruebas y corrección de errores. La meta es construir un videojuego sencillo con lógica
+              visual, una entrada apropiada para quien todavía no escribe código.
+            </p>
+            <p>
+              El diferencial es que el proyecto también funciona como contexto de inglés. En vez de dejar las
+              palabras aisladas en el cuaderno,
               <em> move</em>, <em>score</em>, <em>lives</em>, <em>touch</em> y <em>game over</em> están conectadas con algo
               que el niño ve y modifica. Cada palabra ayuda a que el videojuego haga lo que él imaginó.
             </p>

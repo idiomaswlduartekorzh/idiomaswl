@@ -16,9 +16,9 @@ import styles from '../kids.module.css';
 const CANONICAL = 'https://www.idiomaswl.com/kids/ingles-ajedrez';
 
 export const metadata: Metadata = {
-  title: 'Ajedrez en inglés para niños | WeLearn Kids',
+  title: 'Clases de ajedrez para niños en Bucaramanga | WeLearn',
   description:
-    'Clases de ajedrez en inglés para niños: piezas, movimientos, estrategia y conversación mediante retos y partidas guiadas.',
+    'Clases de ajedrez para niños de 8 a 12 años en Bucaramanga y online: fundamentos, retos y partidas guiadas mientras practican inglés.',
   keywords: [
     'ajedrez para niños Bucaramanga',
     'ajedrez en inglés para niños',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: 'Ajedrez en inglés para niños | WeLearn Kids',
-    description: 'Retos, piezas y partidas guiadas para que niños de 8 a 12 años usen inglés mientras juegan.',
+    title: 'Clases de ajedrez para niños en Bucaramanga | WeLearn Kids',
+    description: 'Ajedrez para niños de 8 a 12 años: piezas, estrategia inicial, partidas guiadas y práctica de inglés.',
     url: CANONICAL,
     type: 'website',
     images: [
@@ -45,6 +45,11 @@ export const metadata: Metadata = {
 };
 
 const faqs: FaqItem[] = [
+  {
+    question: '¿Para qué edades son las clases de ajedrez para niños?',
+    answer:
+      'La propuesta base está pensada para niños de 8 a 12 años. Antes de inscribir se revisan la edad, la experiencia con ajedrez y el nivel de inglés para confirmar que la edición disponible sea adecuada.',
+  },
   {
     question: '¿Mi hijo debe saber jugar ajedrez?',
     answer:
@@ -96,11 +101,11 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': `${CANONICAL}#service`,
-      name: 'Ajedrez en inglés para niños',
+      name: 'Clases de ajedrez para niños con práctica de inglés',
       description:
         'Experiencia para niños de 8 a 12 años que practican inglés mientras conocen las piezas, resuelven retos y explican decisiones en partidas guiadas.',
       provider: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
-      serviceType: 'Inglés para niños mediante ajedrez',
+      serviceType: 'Clases de ajedrez para niños con práctica de inglés',
       audience: {
         '@type': 'EducationalAudience',
         educationalRole: 'student',
@@ -117,7 +122,7 @@ const jsonLd = {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
         { '@type': 'ListItem', position: 2, name: 'Kids', item: 'https://www.idiomaswl.com/kids' },
-        { '@type': 'ListItem', position: 3, name: 'Ajedrez en inglés', item: CANONICAL },
+        { '@type': 'ListItem', position: 3, name: 'Ajedrez para niños', item: CANONICAL },
       ],
     },
   ],
@@ -140,22 +145,22 @@ export default function KidsChessPage() {
           items={[
             { label: 'Inicio', href: '/' },
             { label: 'Kids', href: '/kids' },
-            { label: 'Ajedrez en inglés' },
+            { label: 'Ajedrez para niños' },
           ]}
         />
         <div className={styles.heroGrid}>
           <div>
             <p className={styles.eyebrow}>WeLearn Kids · Laboratorio de estrategia</p>
-            <h1>Aprende inglés jugando ajedrez</h1>
+            <h1>Clases de ajedrez para niños en Bucaramanga con práctica de inglés</h1>
             <p className={styles.heroLead}>
-              Una experiencia para niños de 8 a 12 años donde cada pieza, cada turno y cada
-              decisión se convierten en una oportunidad para comprender y hablar en inglés.
+              Una propuesta para niños de 8 a 12 años, en Bucaramanga y online según la edición,
+              donde aprenden fundamentos del ajedrez y usan cada jugada para comprender y hablar en inglés.
             </p>
             <ul className={styles.heroProof}>
               <li>Desde cero</li>
-              <li>Retos visuales</li>
+              <li>8–12 años</li>
               <li>Partidas guiadas</li>
-              <li>Explicación en inglés</li>
+              <li>Bucaramanga y online</li>
             </ul>
             <div className={styles.ctaActions}>
               <a
@@ -190,8 +195,8 @@ export default function KidsChessPage() {
         <div className={`${styles.wrap} ${styles.split}`}>
           <div>
             <SectionHeading
-              eyebrow="La idea"
-              title="Un tablero visible hace que el idioma también sea visible"
+              eyebrow="La respuesta corta"
+              title="¿Son clases de ajedrez para niños? Sí, con un diferencial bilingüe"
             />
             <div className={styles.note}>
               <strong>Resultado esperado</strong>
@@ -200,7 +205,13 @@ export default function KidsChessPage() {
           </div>
           <div className={styles.prose}>
             <p>
-              El ajedrez crea una situación concreta: hay una pieza, una casilla, un turno y una decisión.
+              El niño sí aprende ajedrez desde la base: conoce el tablero y las piezas, practica movimientos
+              legales, identifica amenazas y resuelve posiciones breves antes de jugar partidas guiadas. No
+              necesita experiencia previa para comenzar.
+            </p>
+            <p>
+              El diferencial es que el tablero también vuelve visible el idioma: hay una pieza, una casilla,
+              un turno y una decisión.
               Palabras como <em>king</em>, <em>move</em>, <em>capture</em>, <em>safe</em> y <em>check</em> se pueden
               señalar, mover y comprobar. Esa relación ayuda a que el inglés no dependa solamente de traducir.
             </p>

@@ -742,9 +742,10 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 ### 3 de octubre de 2026 — WeLearn Kids: inglés en acción
 
 - Rama `codex/kids-receso-20261003`, creada desde
-  `32a244d93fb3b2a049616dd9fd488937090e101b` de `origin/main`. Estado:
-  `LISTO_PARA_INTEGRAR`; no requiere migraciones, variables de entorno ni
-  servicios externos nuevos.
+  `32a244d93fb3b2a049616dd9fd488937090e101b` de `origin/main`. La primera
+  entrega quedó integrada y publicada desde `main` en
+  `e9f9e84cd0241b1bc70c8a81468dc7408dc816df`; no requiere migraciones,
+  variables de entorno ni servicios externos nuevos.
 - Se añadió el hub `/kids` y dos landings de intención independiente:
   `/kids/ingles-programacion-videojuegos` y `/kids/ingles-ajedrez`. Las tres
   páginas incluyen contenido extenso para familias, rutas de aprendizaje,
@@ -760,6 +761,10 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   navegación y SEO, prebuild completo y build Turbopack de 2.599 páginas. La
   revisión local comprobó los tres heroes en escritorio, la landing de ajedrez
   a 390 × 844 px, imágenes y enlaces, sin errores ni advertencias de consola.
-- Pendiente para `DESPLEGADO`: commit y push de la rama, integración en
-  `origin/main`, deployment Vercel `READY` y smoke público de las tres rutas,
-  navegación, sitemap, metadatos, imágenes y CTA sin transmitir datos reales.
+- El smoke público confirmó HTTP 200 para las tres rutas, sus imágenes y el
+  sitemap. El estado de GitHub/Vercel continuaba mostrando una comprobación
+  pendiente aunque producción ya servía las páginas nuevas.
+- Una segunda auditoría de intención de búsqueda quedó documentada en
+  `docs/SEO-KIDS-BUSQUEDA-2026-10-03.md`. Reorienta cada URL hacia una categoría
+  que los padres sí buscan: clases de inglés, programación o ajedrez para
+  niños; el cruce bilingüe se conserva como diferencial verificable.

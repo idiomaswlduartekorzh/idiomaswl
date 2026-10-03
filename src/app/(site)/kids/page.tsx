@@ -16,9 +16,9 @@ import styles from './kids.module.css';
 const CANONICAL = 'https://www.idiomaswl.com/kids';
 
 export const metadata: Metadata = {
-  title: 'Inglés para niños en Bucaramanga y online | WeLearn Kids',
+  title: 'Clases de inglés para niños en Bucaramanga | WeLearn',
   description:
-    'Cursos de inglés para niños de 8 a 12 años con videojuegos y ajedrez. Aprenden haciendo en Bucaramanga y online. Consulta próximos grupos.',
+    'Clases de inglés para niños de 8 a 12 años en Bucaramanga y online. Practican el idioma creando videojuegos o jugando ajedrez. Consulta grupos.',
   keywords: [
     'inglés para niños Bucaramanga',
     'curso de inglés para niños',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: 'WeLearn Kids: inglés para niños que aprenden haciendo',
-    description: 'Videojuegos, ajedrez e inglés en proyectos pensados para niños de 8 a 12 años.',
+    title: 'Clases de inglés para niños en Bucaramanga | WeLearn Kids',
+    description: 'Inglés para niños de 8 a 12 años mediante proyectos de programación y ajedrez, en Bucaramanga y online.',
     url: CANONICAL,
     type: 'website',
     images: [
@@ -121,7 +121,7 @@ const jsonLd = {
           position: 1,
           item: {
             '@type': 'Service',
-            name: 'Inglés y programación para niños',
+            name: 'Programación para niños con videojuegos e inglés',
             url: 'https://www.idiomaswl.com/kids/ingles-programacion-videojuegos',
           },
         },
@@ -130,7 +130,7 @@ const jsonLd = {
           position: 2,
           item: {
             '@type': 'Service',
-            name: 'Ajedrez en inglés para niños',
+            name: 'Clases de ajedrez para niños con inglés',
             url: 'https://www.idiomaswl.com/kids/ingles-ajedrez',
           },
         },
@@ -163,10 +163,11 @@ export default function KidsPage() {
         <div className={styles.heroGrid}>
           <div>
             <p className={styles.eyebrow}>WeLearn Kids · Inglés en acción</p>
-            <h1>Inglés para niños que aprenden haciendo</h1>
+            <h1>Clases de inglés para niños en Bucaramanga que aprenden haciendo</h1>
             <p className={styles.heroLead}>
               Tu hijo no solo estudia inglés: lo usa para crear un videojuego, resolver un reto,
-              jugar una partida y explicar lo que hizo. Una experiencia activa para niños de 8 a 12 años.
+              jugar una partida y explicar lo que hizo. Cursos activos para niños de 8 a 12 años,
+              con opciones en Bucaramanga y online según la edición.
             </p>
             <ul className={styles.heroProof}>
               <li>8–12 años</li>
@@ -203,6 +204,38 @@ export default function KidsPage() {
         </div>
       </section>
 
+      <section className={`${styles.section} ${styles.sectionSoft}`}>
+        <div className={`${styles.wrap} ${styles.split}`}>
+          <div>
+            <SectionHeading
+              eyebrow="La respuesta corta"
+              title="¿Buscas un curso de inglés para niños? Esta es nuestra manera de enseñarlo"
+            />
+            <div className={styles.note}>
+              <strong>Inglés primero; una actividad que le da sentido.</strong>
+              <p>La meta es comprender y usar el idioma. La programación y el ajedrez son los contextos que motivan la práctica.</p>
+            </div>
+          </div>
+          <div className={styles.prose}>
+            <h3>Para niños de 8 a 12 años</h3>
+            <p>
+              La propuesta recibe principiantes y adapta las respuestas al nivel del niño. Antes de inscribir,
+              la familia confirma la edad, la experiencia previa y la edición que mejor encaja.
+            </p>
+            <h3>En Bucaramanga y online</h3>
+            <p>
+              WeLearn atiende en Bucaramanga y también ofrece servicios virtuales. La modalidad presencial u
+              online, la sede, el horario, la duración y el valor se confirman para el grupo disponible.
+            </p>
+            <h3>Clases prácticas, no tiempo libre sin propósito</h3>
+            <p>
+              Cada sesión conecta comprensión, vocabulario y conversación con una tarea visible. El niño crea,
+              prueba, juega y explica; el proyecto no reemplaza el inglés, le da una razón para usarlo.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className={styles.section} id="experiencias">
         <div className={styles.wrap}>
           <SectionHeading
@@ -213,7 +246,7 @@ export default function KidsPage() {
           <div className={styles.offerGrid}>
             <article className={styles.offerCard}>
               <span className={styles.offerTag}>Ruta principal · Crear</span>
-              <h3>Aprende inglés programando videojuegos</h3>
+              <h3>Programación para niños: crea videojuegos y practica inglés</h3>
               <p>
                 El niño diseña un juego sencillo, programa sus reglas con lógica visual y usa inglés
                 funcional para seguir instrucciones, nombrar elementos y presentar su resultado.
@@ -224,12 +257,12 @@ export default function KidsPage() {
                 <li>Proyecto jugable con una explicación guiada</li>
               </ul>
               <Link className={styles.textLink} href="/kids/ingles-programacion-videojuegos">
-                Explorar inglés + programación →
+                Ver curso de programación para niños →
               </Link>
             </article>
             <article className={styles.offerCard}>
               <span className={styles.offerTag}>Ruta estratégica · Jugar</span>
-              <h3>Aprende inglés jugando ajedrez</h3>
+              <h3>Clases de ajedrez para niños que también practican inglés</h3>
               <p>
                 El niño reconoce las piezas, comprende instrucciones, toma decisiones y explica un
                 movimiento en inglés dentro de retos y partidas guiadas.
@@ -240,7 +273,7 @@ export default function KidsPage() {
                 <li>Partida guiada con un pequeño relato de juego</li>
               </ul>
               <Link className={styles.textLink} href="/kids/ingles-ajedrez">
-                Explorar inglés + ajedrez →
+                Ver clases de ajedrez para niños →
               </Link>
             </article>
           </div>
