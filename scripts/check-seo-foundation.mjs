@@ -22,6 +22,17 @@ const quizzesHub = read('src/app/(site)/herramientas/quizes/page.tsx');
 const claudeRoute = read('src/app/clase-claude/route.ts');
 
 requireMatch(sitemap, /const BASE = 'https:\/\/www\.idiomaswl\.com'/, 'sitemap.ts perdió el host canónico con www.');
+requireMatch(sitemap, /\$\{BASE\}\/kids['`]/, 'El hub Kids quedó fuera del sitemap.');
+requireMatch(
+  sitemap,
+  /\$\{BASE\}\/kids\/ingles-programacion-videojuegos/,
+  'La landing de inglés y programación quedó fuera del sitemap.',
+);
+requireMatch(
+  sitemap,
+  /\$\{BASE\}\/kids\/ingles-ajedrez/,
+  'La landing de ajedrez en inglés quedó fuera del sitemap.',
+);
 requireMatch(robots, /sitemap:\s*'https:\/\/www\.idiomaswl\.com\/sitemap\.xml'/, 'robots.ts dejó de anunciar el sitemap canónico.');
 requireMatch(robots, /userAgent:\s*'\*',\s*allow:\s*'\/'/, 'robots.ts dejó de permitir el rastreo público.');
 requireMatch(rootPage, /export default HomePage/, 'La home pública dejó de vivir en la raíz /.');

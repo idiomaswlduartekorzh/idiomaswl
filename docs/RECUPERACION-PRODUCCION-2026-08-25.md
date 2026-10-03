@@ -738,3 +738,28 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   75 recursos nuevos. La revisión de navegador confirmó navegación por las
   cinco etapas, avance de ejercicios, descargas, escritorio, móvil y ausencia
   de errores de página.
+
+### 3 de octubre de 2026 — WeLearn Kids: inglés en acción
+
+- Rama `codex/kids-receso-20261003`, creada desde
+  `32a244d93fb3b2a049616dd9fd488937090e101b` de `origin/main`. Estado:
+  `LISTO_PARA_INTEGRAR`; no requiere migraciones, variables de entorno ni
+  servicios externos nuevos.
+- Se añadió el hub `/kids` y dos landings de intención independiente:
+  `/kids/ingles-programacion-videojuegos` y `/kids/ingles-ajedrez`. Las tres
+  páginas incluyen contenido extenso para familias, rutas de aprendizaje,
+  resultados observables, requisitos, privacidad, preguntas frecuentes y CTA
+  de WhatsApp gestionado por un adulto. No publican precios, horarios, cupos,
+  testimonios ni credenciales no confirmadas.
+- Kids aparece en la navegación principal en español e inglés. Las tres rutas
+  tienen título, descripción, canonical, Open Graph, datos estructurados de
+  `Service` y `BreadcrumbList`, enlazado interno y entradas de sitemap con
+  imágenes propias optimizadas. El hub también declara el listado de las dos
+  experiencias sin usar marcado de evento o de curso no verificable.
+- Pasaron ESLint dirigido, TypeScript, catálogo protegido, guardianes de
+  navegación y SEO, prebuild completo y build Turbopack de 2.599 páginas. La
+  revisión local comprobó los tres heroes en escritorio, la landing de ajedrez
+  a 390 × 844 px, imágenes y enlaces, sin errores ni advertencias de consola.
+- Pendiente para `DESPLEGADO`: commit y push de la rama, integración en
+  `origin/main`, deployment Vercel `READY` y smoke público de las tres rutas,
+  navegación, sitemap, metadatos, imágenes y CTA sin transmitir datos reales.

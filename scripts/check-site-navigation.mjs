@@ -26,6 +26,11 @@ expect(
   'La navegación principal debe conservar Herramientas/Tools en sus dos variantes.',
 )
 expect(
+  siteNav.includes("{ label: 'Kids',           href: '/kids' }") &&
+    siteNav.includes("{ label: 'Kids',       href: '/kids' }"),
+  'La navegación principal debe conservar la entrada Kids en sus dos variantes.',
+)
+expect(
   toolsPage.includes("slug: 'podcasts-examenes'") && toolsPage.includes("href: '/podcasts'"),
   'La biblioteca de podcasts debe vivir como tarjeta dentro de Herramientas.',
 )
@@ -48,5 +53,5 @@ if (failures.length) {
   for (const failure of failures) console.error(`- ${failure}`)
   process.exitCode = 1
 } else {
-  console.log('Navegación íntegra: Podcasts y Vocabulario viven en Herramientas y conservan sus rutas públicas.')
+  console.log('Navegación íntegra: Kids es visible y Podcasts/Vocabulario conservan sus rutas públicas.')
 }

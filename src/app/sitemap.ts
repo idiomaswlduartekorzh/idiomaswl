@@ -117,6 +117,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── High-intent landing pages ──────────────────────────────────────────────
     { url: `${BASE}/clases-de-idiomas`, changeFrequency: 'monthly', priority: 0.93 },
     { url: `${BASE}/clases-de-ingles`, changeFrequency: 'monthly', priority: 0.95 },
+    {
+      url: `${BASE}/kids`,
+      changeFrequency: 'weekly',
+      priority: 0.93,
+      images: [`${BASE}/images/kids/kids-hero-colaboracion.jpg`],
+    },
+    {
+      url: `${BASE}/kids/ingles-programacion-videojuegos`,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      images: [`${BASE}/images/kids/kids-programacion-videojuego.jpg`],
+    },
+    {
+      url: `${BASE}/kids/ingles-ajedrez`,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+      images: [`${BASE}/images/kids/kids-ajedrez-docente.jpg`],
+    },
     { url: `${BASE}/clases-de-coreano`, changeFrequency: 'monthly', priority: 0.92 },
     { url: `${BASE}/clases-de-frances`, changeFrequency: 'monthly', priority: 0.88 },
     { url: `${BASE}/clases-de-aleman`, changeFrequency: 'monthly', priority: 0.88 },
