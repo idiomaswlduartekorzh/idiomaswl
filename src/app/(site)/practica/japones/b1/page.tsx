@@ -25,7 +25,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '文法 (Bunpō)',
     desc: '〜てもいい/〜てはいけない, 受身形, 使役形, 〜たら y 〜のに. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/japones/b1/gramatica', available: true,
+    count: '25 temas · 150 niveles · PDF y audio', href: '/practica/japones/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '書く (Kaku)',

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useMemo, useState } from 'react'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getJapaneseGrammarResource } from '@/data/japanese-grammar-a1'
+import { getJapaneseGrammarLevelResource } from '@/data/japanese-grammar-levels'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import styles from './JapaneseGrammarLesson.module.css'
 
@@ -31,11 +32,13 @@ function splitFormula(formula: string): string[] {
 export default function JapaneseGrammarLesson({
   topic,
   relatedWritingExercises,
+  level = 'a1',
 }: {
   topic: GrammarTopic
   relatedWritingExercises: RelatedWritingExercise[]
+  level?: 'a1' | 'a2' | 'b1'
 }) {
-  const resource = getJapaneseGrammarResource(topic.slug)
+  const resource = level === 'a1' ? getJapaneseGrammarResource(topic.slug) : getJapaneseGrammarLevelResource(topic, level)
   const [active, setActive] = useState<SectionId>('comprender')
   const [playing, setPlaying] = useState(false)
   const formulaParts = useMemo(() => splitFormula(topic.guide.formula), [topic.guide.formula])
@@ -78,18 +81,19 @@ export default function JapaneseGrammarLesson({
     }
   }
 
-  const pdf = `/downloads/japanese-a1/grammar/idiomaswl-${topic.slug}-a1.pdf`
-  const map = `/downloads/japanese-a1/grammar/idiomaswl-${topic.slug}-map.png`
+  const pdfSlug = topic.slug.endsWith(`-${level}`) ? topic.slug : `${topic.slug}-${level}`
+  const pdf = `/downloads/japanese-${level}/grammar/idiomaswl-${pdfSlug}.pdf`
+  const map = `/downloads/japanese-${level}/grammar/idiomaswl-${topic.slug}-map.png`
 
   return (
     <section className={styles.lesson} aria-labelledby="japanese-grammar-title">
-      <div className={styles.track} aria-label="Ruta de gramática japonesa A1">
+      <div className={styles.track} aria-label={`Ruta de gramática japonesa ${level.toUpperCase()}`}>
         <span>Escritura</span><b>→</b><strong>Gramática</strong><b>→</b><span>Comprensión</span><b>→</b><span>Producción</span>
       </div>
 
       <header className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>Japonés · {topic.category} · A1</p>
+          <p className={styles.eyebrow}>Japonés · {topic.category} · {level.toUpperCase()}</p>
           <h1 id="japanese-grammar-title">{topic.shortTitle}</h1>
           <p className={styles.lead}>{topic.lead}</p>
           <div className={styles.heroActions}>
@@ -191,7 +195,7 @@ export default function JapaneseGrammarLesson({
               <div><span>Práctica progresiva</span><h2 id="practice-title">De reconocer a producir</h2></div>
               <p>Supera el 65 % para avanzar. Tus mejores resultados quedan guardados en este dispositivo.</p>
             </div>
-            <GrammarTopicClient topic={topic} idioma="japones" nivel="a1" relatedWritingExercises={relatedWritingExercises} mode="practiceOnly" />
+            <GrammarTopicClient topic={topic} idioma="japones" nivel={level} relatedWritingExercises={relatedWritingExercises} mode="practiceOnly" />
           </section>
         )}
 
@@ -204,7 +208,7 @@ export default function JapaneseGrammarLesson({
             <div className={styles.resourceGrid}>
               <a href={pdf} download><span className={styles.resourceIcon}>PDF</span><div><strong>Guía y cuaderno de práctica</strong><p>Explicación, tabla, ejercicios y soluciones.</p><em>Descargar PDF →</em></div></a>
               <a href={map} download><span className={styles.resourceIcon}>PNG</span><div><strong>Mapa visual del tema</strong><p>La fórmula, el modelo y los errores clave.</p><em>Descargar imagen →</em></div></a>
-              <a href={resource.audio} download><span className={styles.resourceIcon}>MP3</span><div><strong>Modelo de pronunciación</strong><p lang="ja">{resource.audioText}</p><em>Descargar audio →</em></div></a>
+              <a href={resource.audio} download><span className={styles.resourceIcon}>音声</span><div><strong>Modelo de pronunciación</strong><p lang="ja">{resource.audioText}</p><em>Descargar audio →</em></div></a>
             </div>
             <div className={styles.studyPlan}>
               <h3>Ruta de estudio recomendada</h3>

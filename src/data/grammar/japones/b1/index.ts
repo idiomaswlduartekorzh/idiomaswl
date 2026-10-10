@@ -19,6 +19,8 @@ import tameni from './tameni-b1'
 import noni from './noni-b1'
 import yooni from './yooni-b1'
 import kamo from './kamo-b1'
+import { ensureSixPracticeLevels } from '../build-expanded-topic'
+import { additionalB1Topics } from './additional-topics'
 
 const topics: GrammarTopic[] = [
   youNiNaru,
@@ -41,6 +43,7 @@ const topics: GrammarTopic[] = [
   noni,
   yooni,
   kamo,
-]
+  ...additionalB1Topics,
+].map(ensureSixPracticeLevels)
 
 export default topics

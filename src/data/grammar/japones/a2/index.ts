@@ -20,6 +20,7 @@ import nagara from './nagara-a2'
 import maeNiAtoDe from './mae-ni-ato-de-a2'
 import ageruMorauKureru from './ageru-morau-kureru-a2'
 import hikaku from './hikaku-a2'
+import { additionalA2Topics } from './additional-topics'
 
 const topics: GrammarTopic[] = [
   teFormSequence,
@@ -42,6 +43,7 @@ const topics: GrammarTopic[] = [
   maeNiAtoDe,
   ageruMorauKureru,
   hikaku,
+  ...additionalA2Topics,
 ]
 
 export default topics

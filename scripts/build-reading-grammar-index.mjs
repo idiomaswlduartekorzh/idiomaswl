@@ -42,6 +42,10 @@ function extractField(source, field) {
   return match ? match[2].trim() : null
 }
 
+function extractFields(source, field) {
+  return [...source.matchAll(new RegExp(`\\b${field}:\\s*(['"\`])([\\s\\S]*?)\\1\\s*,`, 'g'))].map((match) => match[2].trim())
+}
+
 async function readTopics(languageDir, level) {
   const dir = path.join(grammarDir, languageDir, level)
   let entries
@@ -54,16 +58,20 @@ async function readTopics(languageDir, level) {
   const topics = []
   for (const entry of entries.filter((name) => name.endsWith('.ts') && name !== 'index.ts').sort()) {
     const source = await readFile(path.join(dir, entry), 'utf8')
-    const slug = extractField(source, 'slug')
-    if (!slug) {
+    const slugs = extractFields(source, 'slug')
+    if (!slugs.length) {
       throw new Error(`${languageDir}/${level}/${entry}: no se pudo leer el slug del tema`)
     }
-    topics.push({
-      slug,
-      title: extractField(source, 'shortTitle') ?? extractField(source, 'title') ?? slug,
-      category: extractField(source, 'category'),
-      file: `src/data/grammar/${languageDir}/${level}/${entry}`,
-    })
+    const titles = extractFields(source, 'shortTitle')
+    const categories = extractFields(source, 'category')
+    for (const [index, slug] of slugs.entries()) {
+      topics.push({
+        slug,
+        title: titles[index] ?? slug,
+        category: categories[index] ?? null,
+        file: `src/data/grammar/${languageDir}/${level}/${entry}`,
+      })
+    }
   }
   return topics
 }

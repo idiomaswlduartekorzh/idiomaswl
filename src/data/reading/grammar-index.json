@@ -1785,7 +1785,43 @@
         {
           "slug": "demostrativos-kosoado",
           "title": "こ・そ・あ・ど",
-          "category": null,
+          "category": "Demostrativos",
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
+          "slug": "particula-no-posesion",
+          "title": "の posesivo",
+          "category": "Partículas",
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
+          "slug": "particulas-to-mo",
+          "title": "と y も",
+          "category": "Partículas",
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
+          "slug": "kara-made-origen-limite",
+          "title": "から y まで",
+          "category": "Tiempo y lugar",
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
+          "slug": "ubicacion-posiciones",
+          "title": "Posiciones",
+          "category": "Ubicación",
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
+          "slug": "suki-kirai-gustos",
+          "title": "好き・嫌い",
+          "category": "Preferencias",
+          "file": "src/data/grammar/japones/a1/additional-topics.ts"
+        },
+        {
+          "slug": "invitaciones-masenka-mashou",
+          "title": "ませんか・ましょう",
+          "category": "Comunicación",
           "file": "src/data/grammar/japones/a1/additional-topics.ts"
         },
         {
@@ -1917,6 +1953,36 @@
       ],
       "a2": [
         {
+          "slug": "node-kara-causa-a2",
+          "title": "ので vs から",
+          "category": "Causa y explicación",
+          "file": "src/data/grammar/japones/a2/additional-topics.ts"
+        },
+        {
+          "slug": "te-oku-preparacion-a2",
+          "title": "〜ておく",
+          "category": "Preparación",
+          "file": "src/data/grammar/japones/a2/additional-topics.ts"
+        },
+        {
+          "slug": "te-miru-intentar-a2",
+          "title": "〜てみる",
+          "category": "Experiencia",
+          "file": "src/data/grammar/japones/a2/additional-topics.ts"
+        },
+        {
+          "slug": "tsumori-yotei-planes-a2",
+          "title": "つもり vs 予定",
+          "category": "Planes",
+          "file": "src/data/grammar/japones/a2/additional-topics.ts"
+        },
+        {
+          "slug": "volitiva-you-to-omou-a2",
+          "title": "〜ようと思う",
+          "category": "Decisión",
+          "file": "src/data/grammar/japones/a2/additional-topics.ts"
+        },
+        {
           "slug": "ageru-morau-kureru-a2",
           "title": "あげる/もらう/くれる",
           "category": "Verbos",
@@ -2039,6 +2105,36 @@
       ],
       "b1": [
         {
+          "slug": "wake-dewa-nai-b1",
+          "title": "〜わけではない",
+          "category": "Matiz y negación",
+          "file": "src/data/grammar/japones/b1/additional-topics.ts"
+        },
+        {
+          "slug": "koto-ni-natte-iru-b1",
+          "title": "〜ことになっている",
+          "category": "Normas y sistemas",
+          "file": "src/data/grammar/japones/b1/additional-topics.ts"
+        },
+        {
+          "slug": "you-to-suru-b1",
+          "title": "〜ようとする",
+          "category": "Intento",
+          "file": "src/data/grammar/japones/b1/additional-topics.ts"
+        },
+        {
+          "slug": "tabi-ni-b1",
+          "title": "〜たびに",
+          "category": "Frecuencia y memoria",
+          "file": "src/data/grammar/japones/b1/additional-topics.ts"
+        },
+        {
+          "slug": "ippou-de-contraste-b1",
+          "title": "〜一方で",
+          "category": "Contraste y argumentación",
+          "file": "src/data/grammar/japones/b1/additional-topics.ts"
+        },
+        {
           "slug": "bakari-b1",
           "title": "〜ばかり (just, only)",
           "category": "Cantidad y Énfasis",
@@ -2053,13 +2149,13 @@
         {
           "slug": "hazu-da-b1",
           "title": "〜はずだ (should be, is supposed to)",
-          "category": null,
+          "category": "Lógica y Expectativa",
           "file": "src/data/grammar/japones/b1/hazu-da-b1.ts"
         },
         {
           "slug": "hodo-b1",
           "title": "〜ほど (extent, to the degree that)",
-          "category": null,
+          "category": "Grado y Comparación",
           "file": "src/data/grammar/japones/b1/hodo-b1.ts"
         },
         {
@@ -2083,13 +2179,13 @@
         {
           "slug": "nakerebanaranai-b1",
           "title": "〜なければならない (must, have to)",
-          "category": null,
+          "category": "Obligación y Necesidad",
           "file": "src/data/grammar/japones/b1/nakerebanaranai-b1.ts"
         },
         {
           "slug": "ni-chigainai-b1",
           "title": "〜に違いない (must be, surely)",
-          "category": null,
+          "category": "Lógica y Deducción",
           "file": "src/data/grammar/japones/b1/ni-chigainai-b1.ts"
         },
         {
@@ -2107,7 +2203,7 @@
         {
           "slug": "sou-b1",
           "title": "〜そう (looks like, seems)",
-          "category": null,
+          "category": "Apariencia y Percepción",
           "file": "src/data/grammar/japones/b1/sou-b1.ts"
         },
         {
@@ -2131,7 +2227,7 @@
         {
           "slug": "toutsutsuaru-b1",
           "title": "〜つつある (is becoming, in the process of)",
-          "category": null,
+          "category": "Aspecto y Progreso",
           "file": "src/data/grammar/japones/b1/toutsutsuaru-b1.ts"
         },
         {
@@ -2143,7 +2239,7 @@
         {
           "slug": "wake-da-b1",
           "title": "〜わけだ (that explains it, no wonder)",
-          "category": null,
+          "category": "Razonamiento y Lógica",
           "file": "src/data/grammar/japones/b1/wake-da-b1.ts"
         },
         {

@@ -16,8 +16,8 @@ const NIVELES = [
     href: '/practica/japones/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: 'N4', desc: 'て形、～ている、adjectives い/な, verbos de movimiento, JLPT N4.', href: '/practica/japones/a2', available: true, count: '20 temas de gramática' },
-  { nivel: 'B1', name: 'N3', desc: 'Forma ta/nai, kanji N3 (~350 chars), expresiones condicionales.', href: '/practica/japones/b1', available: true, count: '20 temas de gramática' },
+  { nivel: 'A2', name: 'N4', desc: 'Conecta acciones, explica causas, organiza planes y actúa con autonomía.', href: '/practica/japones/a2', available: true, count: '25 temas · PDF y audio' },
+  { nivel: 'B1', name: 'N3', desc: 'Narra, deduce, matiza opiniones y argumenta con dos perspectivas.', href: '/practica/japones/b1', available: true, count: '25 temas · PDF y audio' },
   { nivel: 'B2', name: 'N2', desc: 'Gramática compleja, kanji N2 (~1000 chars), escritura formal.', available: false },
   { nivel: 'C1', name: 'N1', desc: 'Registro keigo, kanji N1 (~2000 chars), nivel JLPT N1.', available: false },
 ];
