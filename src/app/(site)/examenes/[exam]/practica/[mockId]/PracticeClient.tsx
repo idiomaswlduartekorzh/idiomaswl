@@ -1350,7 +1350,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     if (idx !== -1) setCurrentIdx(idx);
   }, [stageQuestions]);
 
-  const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string }) => {
+  const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string; contactConsent: boolean }) => {
     const qs = allQuestions as MCQQuestion[];
     const { correct, total, score } = pendingResultRef.current ?? { correct: 0, total: qs.length, score: 0 };
     // El lead se confirma primero: nunca se abre el resultado si el contacto no
