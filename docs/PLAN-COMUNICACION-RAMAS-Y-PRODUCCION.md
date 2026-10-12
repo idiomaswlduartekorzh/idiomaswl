@@ -49,6 +49,14 @@ páginas. Vercel compiló las mismas 2.599 páginas y pasó TypeScript. El alias
 `/examenes/cambridge-b2/practica/set-3`; HTTP 307 a `/login` para el centro
 operativo, claves y pagos sin sesión; HTTP 405 en GET de la API de calificación.
 La tabla de alcance recibió dos navegadores reales después de publicar.
+El refuerzo de privacidad de rutas se integró en `main` como
+`b724261e19f956b46752a6aea83370b5d006b5c9` y Vercel lo publicó en
+`dpl_HfAXv9k7LdQ2xzLvs3awbNE3pCkQ` (`READY`). El alias `www.idiomaswl.com`
+apuntó a este segundo deployment. Pasaron 27/27 pruebas focalizadas,
+`check:practica-catalog`, TypeScript y el build local de 2.599 páginas; el
+build de Vercel generó las mismas 2.599. El smoke público repitió los HTTP 200,
+307 y 405 anteriores sobre el nuevo alias. Antes del cambio no había rutas
+privadas de resultados en la tabla nueva.
 
 ## Tracker financiero y links de pago administrativos — 30 de septiembre de 2026
 
