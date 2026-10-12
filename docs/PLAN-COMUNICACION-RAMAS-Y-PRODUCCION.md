@@ -11,14 +11,22 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 
 ## Cierre de acceso a claves y corrección — 12 de octubre de 2026
 
-`codex/exam-server-gating` parte del `main` vigente en `1812fb710336d6dbbe8535ba6de0666d8d82e84c`.
-Estado: `EN_VALIDACION`. Los simulacros públicos entregan primero preguntas sin claves;
+`codex/exam-server-gating` partió del `main` en `1812fb710336d6dbbe8535ba6de0666d8d82e84c`
+y se integró en `main` como `26006f5eb4db3756972d6e9284ea90fd27550afb`.
+Estado: `DESPLEGADO` en Vercel `dpl_54VGW5r8cpSLp4W3V8KgwvuxwyqN` (`READY`,
+producción desde `main`, mismo SHA); `www.idiomaswl.com` apuntó a ese deployment.
+Los simulacros públicos entregan primero preguntas sin claves;
 el servidor devuelve la revisión completa solo con un comprobante firmado tras guardar
 el lead. Las API de puntuación de prácticas IELTS/TOEFL y las entregas completas exigen
 acceso concedido tras ese registro. Las prácticas puntuadas independientes capturan el
 contacto antes de empezar y se distinguen de entregas terminadas en el panel.
 No requiere migración ni nueva variable. Auditoría y límites en
 [`exam-lead-gate-audit-2026-10-12.md`](exam-lead-gate-audit-2026-10-12.md).
+Validaciones: `check:practica-catalog`, TypeScript, build Webpack de 2.599 páginas,
+pruebas de claves y firmas, seis API de puntuación y tres API de entrega con HTTP
+403 sin registro. Smoke público: HTTP 200 en Home, Cambridge B2 Set 3 y práctica
+TOEFL; HTTP 307 en admin anónimo. Playwright confirmó el formulario previo en
+producción. No se creó un contacto ficticio.
 
 ## Captura obligatoria de leads en simulacros — 12 de octubre de 2026
 
