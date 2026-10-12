@@ -9,6 +9,18 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Acceso lateral al hub de claves — 12 de octubre de 2026
+
+`codex/exam-answer-hub` actualizó el centro operativo para mostrar **Claves de
+exámenes** en el menú lateral y retiró el enlace horizontal y la tarjeta
+promocional. Las respuestas y el sistema de corrección no cambiaron. Estado:
+`DESPLEGADO` desde `main` en `3ed22e9ed2c60518d8274ede79d63a020465ad5d`,
+deployment de Vercel `dpl_74GiJczMJnQX1GHb75QVH3pa7QGj` (`READY`). Pasaron
+`check:practica-catalog`, TypeScript y el build Webpack de 2.599 páginas. La
+auditoría de claves conservó 165 sets, 10 exámenes, 7.172 claves y cero alertas
+estructurales. El alias `www.idiomaswl.com` apuntó a ese deployment y la ruta
+`/dashboard/admin/claves` redirigió a `/login` sin sesión (HTTP 307).
+
 ## Tracker financiero y links de pago administrativos — 30 de septiembre de 2026
 
 `codex/admin-payment-tracker-20260930` parte de `origin/main` en `2361475c`.
