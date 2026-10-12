@@ -23,4 +23,6 @@ Los formularios obligatorios ahora exigen que `saveLead` devuelva un identificad
 
 ## Verificación
 
-`node --experimental-strip-types --no-warnings --test tests/exam-lead-capture.test.mts tests/icfes-product.test.mjs tests/ielts-product-assurance.test.mjs` y `npm run check:practica-catalog` pasan. El build y la prueba de navegador se registran en el plan de producción al integrar.
+Pasaron 23 pruebas dirigidas con `node --experimental-strip-types --no-warnings --test tests/exam-lead-capture.test.mts tests/icfes-product.test.mjs tests/ielts-product-assurance.test.mjs`, `npm run check:practica-catalog`, `npx tsc --noEmit` y `NODE_OPTIONS=--max-old-space-size=6144 npm run build -- --webpack` (2.599 páginas). El build Turbopack agotó el heap local durante TypeScript; Webpack completó la misma validación.
+
+En el build local, Playwright completó las 30 preguntas de TOPIK con `wl_lead_captured=1` escrito manualmente en `localStorage`. El formulario obligatorio apareció y el componente de resultados permaneció ausente. Escape no cerró el formulario y un envío vacío mostró error sin revelar la nota.
