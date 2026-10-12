@@ -22,9 +22,13 @@ interface Props {
   /** Enables the institutional-code field and binds a grant to this attempt. */
   attemptRef?: string;
   onAccessResolved?: (access: ExamAccessOutcome) => void;
+  mockId?: string;
+  onSaved?: (receipt: string) => Promise<void>;
+  source?: string;
+  mode?: 'before-practice';
 }
 
-export function LeadCaptureModal({ examSlug, examScore, examName, onClose, mandatory = false, attemptRef, onAccessResolved }: Props) {
+export function LeadCaptureModal({ examSlug, examScore, examName, onClose, mandatory = false, attemptRef, onAccessResolved, mockId, onSaved, source, mode }: Props) {
   const [name, setName]       = useState('');
   const [phone, setPhone]     = useState('');
   const [email, setEmail]     = useState('');
@@ -36,6 +40,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
   const [errorMsg, setErrorMsg] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const leadSavedRef = useRef(false);
+  const receiptRef = useRef<string | null>(null);
 
   // Focus first field on mount
   useEffect(() => { inputRef.current?.focus(); }, []);
@@ -69,8 +74,9 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
         whatsapp: phone,
         email:    email || undefined,
         examSlug,
+        mockId,
         examScore,
-        source:      mandatory ? 'exam-results' : 'simulacro',
+        source:      source ?? (mandatory ? 'exam-results' : 'simulacro'),
         utmSource:   params.get('utm_source')   ?? undefined,
         utmMedium:   params.get('utm_medium')   ?? undefined,
         utmCampaign: params.get('utm_campaign') ?? undefined,
@@ -90,6 +96,22 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
         return;
       }
       leadSavedRef.current = true;
+      receiptRef.current = result.receipt ?? null;
+    }
+
+    if (onSaved) {
+      if (!receiptRef.current) {
+        setStatus('error');
+        setErrorMsg('No pudimos validar el registro. Intenta de nuevo.');
+        return;
+      }
+      try {
+        await onSaved(receiptRef.current);
+      } catch (error) {
+        setStatus('error');
+        setErrorMsg(error instanceof Error ? error.message : 'No pudimos preparar tu resultado. Intenta de nuevo.');
+        return;
+      }
     }
 
     let access: ExamAccessOutcome = { unlocked: false };
@@ -109,7 +131,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
     // GTM event
     window.dataLayer = window.dataLayer ?? [];
     window.dataLayer.push({
-      event:      'lead_simulacro',
+      event:      mode === 'before-practice' ? 'lead_practica' : 'lead_simulacro',
       exam_slug:  examSlug,
       exam_score: examScore,
     });
@@ -293,31 +315,34 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
               <div className="wl-lead-success-icon">✅</div>
               <h2 className="wl-lead-success-title">¡Listo, {name.split(' ')[0] || 'gracias'}!</h2>
               <p className="wl-lead-success-desc">
-                Te contactaremos por WhatsApp con tu plan de preparación personalizado
-                basado en tu resultado de {examName}.
+                {mode === 'before-practice'
+                  ? `Ya puedes empezar tu práctica de ${examName}.`
+                  : `Te contactaremos por WhatsApp con tu plan de preparación personalizado basado en tu resultado de ${examName}.`}
               </p>
-              <a href={waHref} target="_blank" rel="noopener noreferrer" className="wl-lead-wa-btn">
+              {mode !== 'before-practice' && <a href={waHref} target="_blank" rel="noopener noreferrer" className="wl-lead-wa-btn">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                 </svg>
                 Escribir por WhatsApp
-              </a>
+              </a>}
               <button className="wl-lead-skip" onClick={onClose}>
-                {mandatory ? 'Ver mis resultados →' : 'Cerrar'}
+                {mode === 'before-practice' ? 'Empezar práctica →' : mandatory ? 'Ver mis resultados →' : 'Cerrar'}
               </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate>
               <div className="wl-lead-score-badge">
-                {mandatory ? '🔒 Simulacro terminado · resultado protegido' : `🎯 Tu resultado: ${examScore}`}
+                {mode === 'before-practice' ? '🔒 Registro para iniciar la práctica' : mandatory ? '🔒 Simulacro terminado · resultado protegido' : `🎯 Tu resultado: ${examScore}`}
               </div>
 
               <h2 className="wl-lead-title">
-                {mandatory ? 'Guarda tus datos para ver tu marcador' : '¿Quieres mejorar este puntaje?'}
+                {mode === 'before-practice' ? 'Regístrate para empezar' : mandatory ? 'Guarda tus datos para ver tu marcador' : '¿Quieres mejorar este puntaje?'}
               </h2>
               <p className="wl-lead-subtitle">
-                {mandatory
+                {mode === 'before-practice'
+                  ? `Al terminar la práctica de ${examName}, verás la corrección de tus respuestas.`
+                  : mandatory
                   ? `El resultado de ${examName} se mostrará después de confirmar el registro. Si tu institución te dio un código, podrás abrir aquí el informe completo.`
                   : `Déjanos tus datos y te enviamos un plan de preparación personalizado basado en tu resultado de ${examName}. Sin costo.`}
               </p>
@@ -402,7 +427,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
                 {status === 'loading'
                   ? 'Guardando…'
                   : mandatory
-                    ? accessCode.trim() ? 'Guardar y validar código' : 'Guardar y ver mi marcador'
+                    ? mode === 'before-practice' ? 'Guardar y empezar' : accessCode.trim() ? 'Guardar y validar código' : 'Guardar y ver mi marcador'
                     : 'Quiero mi plan personalizado →'}
               </button>
 

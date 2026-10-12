@@ -1,4 +1,5 @@
 import { scoreToeflReadingAttempt } from '@/lib/toefl/reading-contract';
+import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
 import { TOEFL_READING_SCORING_BY_OBJECT_ID } from '@/server/toefl/reading-registry';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -13,6 +14,7 @@ function isSafeId(value: unknown): value is string {
 }
 
 export async function POST(request: Request) {
+  if (!await hasExamScoreAccess('toefl', request)) return Response.json({ error: 'lead_required' }, { status: 403 });
   try {
     const body: unknown = await request.json();
     if (!isRecord(body)

@@ -9,6 +9,8 @@ import {
   normalizeEmail,
   normalizeWhatsapp,
 } from '../src/lib/leads/contact.ts'
+import { sanitizeExamMock } from '../src/lib/ielts/public-mock.ts'
+import type { MockExam } from '../src/data/mocks/types.ts'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const source = (path: string) => readFileSync(resolve(root, path), 'utf8')
@@ -45,17 +47,17 @@ test('todos los runners públicos exigen y guardan un lead antes del resultado',
   assert.match(modal, /mandatory \? 'exam-results' : 'simulacro'/)
   assert.match(saveLead, /isRequiredExamLead && \(!sanitize\(input\.name, 100\) \|\| input\.name\.trim\(\)\.length < 2 \|\| !email\)/)
   assert.match(icfesApi, /if \(!savedLead\.ok \|\| !savedLead\.id\)/)
-  assert.match(goethe, /if \(!lead\.ok \|\| !lead\.id\)/)
+  assert.match(goethe, /if \(!lead\.ok \|\| !lead\.id \|\| !lead\.receipt\)/)
   assert.match(publicRoute, /if \(!getIeltsReviewBlueprint\(mockId\)\) notFound\(\)/)
   assert.match(publicRoute, /if \(mock\.format !== 'toefl-2026'\) notFound\(\)/)
   assert.doesNotMatch(publicRoute, /<TOEFLPracticeClient/)
   assert.match(toeflRunner, /if \(nextIndex >= stages\.length\) \{[\s\S]*?setPhase\('submit'\)/)
-  assert.match(toeflRunner, /onSuccess=\{\(nextReceipt, access\) => \{[\s\S]*?setPhase\('scoring'\);\s*void goSubmit\(\)/)
+  assert.match(toeflRunner, /onSuccess=\{async \(nextReceipt, access, leadReceipt\) => \{[\s\S]*?setPhase\('scoring'\);\s*void goSubmit\(\)/)
 
   for (const runner of [ielts, toefl]) {
     assert.match(runner, /<label htmlFor="[^"]*whatsapp">WhatsApp<\/label>/)
     assert.match(runner, /const leadResult = await saveLead/)
-    assert.match(runner, /if \(!leadResult\.ok \|\| !leadResult\.id\) throw new Error/)
+    assert.match(runner, /if \(!leadResult\.ok \|\| !leadResult\.id(?: \|\| !leadResult\.receipt)?\) throw new Error/)
   }
 })
 
@@ -65,5 +67,21 @@ test('el panel recupera entregas históricas que tenían correo pero no fila en 
   assert.match(admin, /source: 'exam_submission_historic'/)
   assert.match(admin, /whatsapp: null/)
   assert.match(admin, /source\.eq\.exam-results/)
-  assert.match(admin, /\['exam-results', 'simulacro'/)
+  assert.match(admin, /\['exam-results', 'exam-practice-start', 'simulacro'/)
+})
+
+test('el simulacro público no serializa claves ni explicaciones antes del lead', () => {
+  const mock = {
+    id: 'set-3', examSlug: 'cambridge-b2', title: 'Set 3', subtitle: '', timeMinutes: 10,
+    sections: [{ part: 1, title: 'Reading', instructions: '', transcript: 'correct answer', insights: { q1: { rationales: { A: 'correct' } } }, questions: [
+      { type: 'mcq', id: 'q1', part: 1, text: 'Question', options: ['A', 'B'], answer: 0 },
+      { type: 'formgroup', id: 'q2', part: 1, qRange: [2, 2], groupLabel: '', template: '{{2}}', blanks: [{ num: 2, answers: ['secret'] }] },
+      { type: 'matching', id: 'q3', part: 1, qRange: [3, 3], items: [{ num: 3, stem: '', answer: 'B' }], endings: [{ letter: 'B', text: 'text' }] },
+    ] }],
+  } as MockExam
+  const publicMock = sanitizeExamMock(mock)
+  assert.equal(JSON.stringify(publicMock).includes('secret'), false)
+  assert.equal(JSON.stringify(publicMock).includes('rationales'), false)
+  assert.equal('answer' in publicMock.sections[0].questions[0], false)
+  assert.equal('answer' in (publicMock.sections[0].questions[2] as { items: Record<string, unknown>[] }).items[0], false)
 })

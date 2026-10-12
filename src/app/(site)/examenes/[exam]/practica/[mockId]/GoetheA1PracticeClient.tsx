@@ -8,7 +8,9 @@ import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { Exam } from '@/data/exams';
 import type { FormGroupQuestion, MCQQuestion, MockExam, MockSection, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
-import { GOETHE_A1_SETS_3_TO_10 } from '@/data/mocks/goethe-a1-sets-3-10-content';
+import GOETHE_A1_PUBLIC_VISUALS from '@/data/mocks/goethe-a1-public-visuals.json';
+import { LeadCaptureModal } from '@/components/LeadCaptureModal';
+import { unlockExamMock } from '@/lib/actions/unlockExamMock';
 import { goethePracticeHref, goethePracticeSections, goethePracticeTeilMeta, nextGoethePractice, type GoethePracticeSkill, type GoethePracticeTeil } from '@/lib/goethe/practice';
 import { formatGoetheModule } from '@/lib/goethe/scoring';
 import type { GoetheResultStatus, GoetheSubmissionReceipt } from '@/lib/goethe/submission';
@@ -18,7 +20,7 @@ import ExamResultOffers from '@/components/exams/ExamResultOffers';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 type Skill = GoethePracticeSkill;
-type Phase = 'intro' | 'exam' | 'submit' | 'results' | 'practice-results';
+type Phase = 'intro' | 'exam' | 'submit' | 'results' | 'practice-lead' | 'practice-results';
 type DeliveryMode = 'class' | 'simulation';
 
 const SKILLS: Array<{ id: Skill; label: string; minutes: number; points: number }> = [
@@ -159,7 +161,7 @@ function mediaFor(mockId: string) {
     readingAds: Record<number, Plate>; readingExamples: Record<number, Plate>;
   };
   const number = Number(mockId.split('-').at(-1));
-  const content = GOETHE_A1_SETS_3_TO_10[number];
+  const content = GOETHE_A1_PUBLIC_VISUALS[String(number) as keyof typeof GOETHE_A1_PUBLIC_VISUALS];
   const plate = (src: string, alt: string, width: number, height: number): Plate => ({ src, alt, width, height });
   return {
     listening: Object.fromEntries(content.listening1.map((item, index) => [index + 1, plate(`/images/goethe/${mockId}/hoeren-teil1-${String(index + 1).padStart(2, '0')}.png`, `Drei Bildoptionen für Aufgabe ${index + 1}: ${item.options.join(', ')}`, 2172, 724)])),
@@ -172,7 +174,7 @@ function mediaFor(mockId: string) {
 function listeningExamplesFor(mockId: string) {
   const existing = LISTENING_EXAMPLES[mockId];
   if (existing) return existing;
-  const content = GOETHE_A1_SETS_3_TO_10[Number(mockId.split('-').at(-1))];
+  const content = GOETHE_A1_PUBLIC_VISUALS[String(Number(mockId.split('-').at(-1))) as keyof typeof GOETHE_A1_PUBLIC_VISUALS];
   return {
     1: { question: content.listeningExample.question, options: content.listeningExample.options, answer: content.listeningExample.answer, note: 'Das Beispiel hören Sie zweimal.' },
     2: { question: 'Das Informationsbüro öffnet heute um neun Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
@@ -526,7 +528,7 @@ function SpeakingCardDeck({ part, groups, mode, mockId, currentIndex, order, onI
   onOrderChange: (order: number[]) => void;
 }) {
   const wordCards = groups.flatMap(group => group.cards.map(label => ({ kind: 'word' as const, label, theme: group.title })));
-  const configuredPictures = GOETHE_A1_SETS_3_TO_10[Number(mockId.split('-').at(-1))]?.speaking3
+  const configuredPictures = GOETHE_A1_PUBLIC_VISUALS[String(Number(mockId.split('-').at(-1))) as keyof typeof GOETHE_A1_PUBLIC_VISUALS]?.speaking3
     .flatMap((group, groupIndex) => group.map((label, index) => ({ label, sheet: groupIndex + 1, column: index % 3, row: Math.floor(index / 3) })));
   const pictureCardSource = mockId === 'a1-1' ? SET1_SPEAKING_PICTURE_CARDS : mockId === 'a1-2' ? SET2_SPEAKING_PICTURE_CARDS : configuredPictures;
   const pictureCards = pictureCardSource.map(card => ({ kind: 'picture' as const, ...card }));
@@ -742,6 +744,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   const [receipt, setReceipt] = useState<GoetheSubmissionReceipt | null>(null);
   const [resultStatus, setResultStatus] = useState<GoetheResultStatus | null>(null);
   const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
+  const [gradedMock, setGradedMock] = useState<MockExam | null>(null);
   const [speakingCardProgress, setSpeakingCardProgress] = useState<Record<number, number>>({});
   const [speakingCardOrders, setSpeakingCardOrders] = useState<Record<number, number[]>>({});
   const setNumber = mock.id.split('-').at(-1) ?? '1';
@@ -749,6 +752,10 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   const deliveryMock = useMemo<MockExam>(() => practiceSkill
     ? { ...mock, sections: goethePracticeSections(mock, practiceSkill, practicePart) }
     : mock, [mock, practicePart, practiceSkill]);
+  const reviewMock = gradedMock ?? mock;
+  const reviewDeliveryMock = useMemo<MockExam>(() => practiceSkill
+    ? { ...reviewMock, sections: goethePracticeSections(reviewMock, practiceSkill, practicePart) }
+    : reviewMock, [reviewMock, practicePart, practiceSkill]);
   const downloadWorksheet = async () => {
     const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
     await generateExamWorksheetPdf(deliveryMock, {
@@ -769,12 +776,13 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   const listeningQuestions = useMemo(() => objectiveQuestions(deliveryMock, 'listening'), [deliveryMock]);
   const readingQuestions = useMemo(() => objectiveQuestions(deliveryMock, 'reading'), [deliveryMock]);
   const correctFor = (questions: MCQQuestion[]) => questions.filter(question => answers[question.id] === question.answer).length;
-  const listeningCorrect = correctFor(listeningQuestions);
-  const readingCorrect = correctFor(readingQuestions);
+  const listeningCorrect = gradedMock ? correctFor(objectiveQuestions(reviewDeliveryMock, 'listening')) : 0;
+  const readingCorrect = gradedMock ? correctFor(objectiveQuestions(reviewDeliveryMock, 'reading')) : 0;
   const writingQuestions = moduleSections(deliveryMock, 'writing').flatMap(section => section.questions);
   const formQuestion = writingQuestions.find(question => question.type === 'formgroup') as FormGroupQuestion | undefined;
   const hasWritingMessage = writingQuestions.some(question => question.type === 'write');
-  const formCorrect = formQuestion?.blanks.filter(blank => blank.answers.some(answer => normalise(answer) === normalise(formValues[blank.num] ?? ''))).length ?? 0;
+  const reviewFormQuestion = moduleSections(reviewDeliveryMock, 'writing').flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion | undefined;
+  const formCorrect = gradedMock ? reviewFormQuestion?.blanks.filter(blank => blank.answers.some(answer => normalise(answer) === normalise(formValues[blank.num] ?? ''))).length ?? 0 : 0;
   const writingRaw = formCorrect;
   const scaled = {
     listening: formatGoetheModule(listeningCorrect),
@@ -831,7 +839,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
 
   function advanceExam() {
     if (practiceSkill) {
-      setPhase('practice-results');
+      setPhase('practice-lead');
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -844,7 +852,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   }
 
   function restart() {
-    setPhase('intro'); setActiveSkill(practiceSkill ?? 'listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setResultAccess({ unlocked: false }); setSpeakingCardProgress({}); setSpeakingCardOrders({});
+    setPhase('intro'); setActiveSkill(practiceSkill ?? 'listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setResultAccess({ unlocked: false }); setGradedMock(null); setSpeakingCardProgress({}); setSpeakingCardOrders({});
   }
 
   return (
@@ -872,7 +880,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
           <>
             <header className={`${styles.topbar} exam-unified__topbar`}>
               <div><span>WELEARN · A1</span><strong>{practiceSkill ? `Práctica ${practiceLabel}` : `Simulacro ${setNumber}`}</strong></div>
-              <div className={styles.topbarStatus}><span>{practiceTeil ? `Teil ${practiceTeil.teil} · ${practiceWorkload}` : `Bloque ${activeSkillIndex + 1} de ${visibleSkills.length}${practiceSkill ? '' : ` · ${objectiveAnswered}/30 objetivas`}`}</span><Timer totalSecs={(practiceSkill ? practiceMinutes : 80) * 60} onExpire={() => setPhase(practiceSkill ? 'practice-results' : 'submit')} /></div>
+              <div className={styles.topbarStatus}><span>{practiceTeil ? `Teil ${practiceTeil.teil} · ${practiceWorkload}` : `Bloque ${activeSkillIndex + 1} de ${visibleSkills.length}${practiceSkill ? '' : ` · ${objectiveAnswered}/30 objetivas`}`}</span><Timer totalSecs={(practiceSkill ? practiceMinutes : 80) * 60} onExpire={() => setPhase(practiceSkill ? 'practice-lead' : 'submit')} /></div>
             </header>
             <ol className={`${styles.tabs} exam-unified__nav`} aria-label="Progreso del examen">{visibleSkills.map((skill, index) => <li key={skill.id} className={index < activeSkillIndex ? styles.tabComplete : activeSkill === skill.id ? styles.tabActive : styles.tabPending} aria-current={activeSkill === skill.id ? 'step' : undefined}><span><b>{practiceTeil?.teil ?? index + 1}</b>{skill.label}{practiceTeil ? ` · Teil ${practiceTeil.teil}` : ''}</span><small>{index < activeSkillIndex ? 'Cerrado' : activeSkill === skill.id ? 'En curso' : `${skill.minutes} min`}</small></li>)}</ol>
             <main className={`${styles.exam} exam-unified__body`}>
@@ -904,7 +912,10 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               objectiveMissing={listeningMissing + readingMissing}
               formMissing={formMissing}
               onBack={() => { setPhase('exam'); setActiveSkill('speaking'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              onSuccess={(nextReceipt, access) => { setReceipt(nextReceipt); setResultStatus(null); setResultAccess(access); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              onSuccess={async (nextReceipt, access, leadReceipt) => {
+                const fullMock = await unlockExamMock({ examSlug: 'goethe', mockId: mock.id, receipt: leadReceipt });
+                setGradedMock(fullMock); setReceipt(nextReceipt); setResultStatus(null); setResultAccess(access); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
             />
           </main>
         )}
@@ -944,12 +955,24 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
 
             <section className={styles.review} aria-labelledby="answer-review-title">
               <header><p>Antwort für Antwort</p><h2 id="answer-review-title">Revisión detallada</h2><span>Cada respuesta muestra el punto obtenido, la opción marcada y la solución correcta.</span></header>
-              <ObjectiveReview mock={mock} skill="listening" answers={answers} />
-              <ObjectiveReview mock={mock} skill="reading" answers={answers} />
-              {formQuestion && <FormReview question={formQuestion} values={formValues} />}
+              <ObjectiveReview mock={reviewMock} skill="listening" answers={answers} />
+              <ObjectiveReview mock={reviewMock} skill="reading" answers={answers} />
+              {reviewFormQuestion && <FormReview question={reviewFormQuestion} values={formValues} />}
             </section>
             <div className={styles.introActions}><button className={styles.primary} onClick={restart}>Intentar de nuevo</button></div>
           </main>
+        )}
+
+        {phase === 'practice-lead' && practiceSkill && (
+          <LeadCaptureModal
+            examSlug="goethe"
+            examName={`Goethe A1 · ${practiceLabel}`}
+            examScore="Resultado pendiente de corrección"
+            mandatory
+            mockId={mock.id}
+            onSaved={async leadReceipt => setGradedMock(await unlockExamMock({ examSlug: 'goethe', mockId: mock.id, receipt: leadReceipt }))}
+            onClose={() => setPhase('practice-results')}
+          />
         )}
 
         {phase === 'practice-results' && practiceSkill && (
@@ -962,9 +985,9 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
             </div>
             <section className={styles.review} aria-labelledby="practice-review-title">
               <header><p>Modo guiado</p><h2 id="practice-review-title">Retroalimentación del módulo</h2><span>Esta revisión pertenece a la zona de práctica y no genera un resultado oficial del simulacro completo.</span></header>
-              {practiceSkill === 'listening' && <ObjectiveReview mock={deliveryMock} skill="listening" answers={answers} showListeningEvidence />}
-              {practiceSkill === 'reading' && <ObjectiveReview mock={deliveryMock} skill="reading" answers={answers} />}
-              {practiceSkill === 'writing' && <>{formQuestion && <FormReview question={formQuestion} values={formValues} />}{hasWritingMessage && <WritingPracticeReview mock={deliveryMock} text={writing} />}</>}
+              {practiceSkill === 'listening' && <ObjectiveReview mock={reviewDeliveryMock} skill="listening" answers={answers} showListeningEvidence />}
+              {practiceSkill === 'reading' && <ObjectiveReview mock={reviewDeliveryMock} skill="reading" answers={answers} />}
+              {practiceSkill === 'writing' && <>{reviewFormQuestion && <FormReview question={reviewFormQuestion} values={formValues} />}{hasWritingMessage && <WritingPracticeReview mock={reviewDeliveryMock} text={writing} />}</>}
               {practiceSkill === 'speaking' && <><section className={styles.resultNotice}><strong>Práctica oral disponible en esta sesión</strong><p>Escucha cada respuesta y compárala con el criterio del Teil. La evaluación con rúbrica y profesor permanece en el simulacro completo.</p></section><SpeakingPracticeReview mock={deliveryMock} recordings={recordings} /></>}
             </section>
             <div className={styles.introActions}>

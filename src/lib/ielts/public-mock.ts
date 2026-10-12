@@ -1,9 +1,7 @@
 import type { MockExam, Question } from '@/data/mocks/types';
 
 /** Keep the IELTS runner's question shape while removing all pre-submission keys. */
-export function sanitizeIeltsMock(mock: MockExam): MockExam {
-  if (mock.examSlug !== 'ielts') throw new Error('Expected an IELTS mock');
-
+export function sanitizeExamMock(mock: MockExam): MockExam {
   const sections = mock.sections.map(section => {
     const { transcript: _transcript, insights: _insights, exampleAnswer: _exampleAnswer, ...publicSection } = section;
     void _transcript; void _insights; void _exampleAnswer;
@@ -41,6 +39,17 @@ export function sanitizeIeltsMock(mock: MockExam): MockExam {
             }),
           };
         }
+        if (question.type === 'wordcomplete') {
+          return {
+            ...question,
+            blanks: question.blanks.map(({ answer, ...blank }) => {
+              const missingLength = blank.missingLength ?? (answer
+                ? Math.max(1, answer.length - (blank.prefix?.length ?? 0) - (blank.suffix?.length ?? 0))
+                : undefined);
+              return { ...blank, missingLength };
+            }),
+          };
+        }
         if ('answer' in question) {
           const { answer: _answer, ...publicQuestion } = question;
           void _answer;
@@ -58,4 +67,9 @@ export function sanitizeIeltsMock(mock: MockExam): MockExam {
 
   // The client only renders these fields. Scoring uses the original server mock.
   return { ...mock, sections };
+}
+
+export function sanitizeIeltsMock(mock: MockExam): MockExam {
+  if (mock.examSlug !== 'ielts') throw new Error('Expected an IELTS mock');
+  return sanitizeExamMock(mock);
 }

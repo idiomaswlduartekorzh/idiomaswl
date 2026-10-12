@@ -1,4 +1,5 @@
 import 'server-only';
+import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
 
 import { randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
@@ -182,6 +183,7 @@ function clientIp(request: Request): string {
 }
 
 async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
+  if (!await hasExamScoreAccess('ielts', request)) return Response.json({ ok: false, error: 'Registra tus datos antes de enviar el examen.' }, { status: 403 });
   const blueprint = getIeltsReviewBlueprint(mockId);
   const mock = blueprint ? await loadIeltsMock(mockId) : null;
   const speakingAssignment = blueprint ? await getIeltsSpeakingAssignment(mockId) : null;

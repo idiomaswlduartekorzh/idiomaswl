@@ -26,7 +26,7 @@ interface Props {
   objectiveMissing: number
   formMissing: number
   onBack: () => void
-  onSuccess: (receipt: GoetheSubmissionReceipt, access: ExamAccessOutcome) => void
+  onSuccess: (receipt: GoetheSubmissionReceipt, access: ExamAccessOutcome, leadReceipt: string) => Promise<void>
 }
 
 type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking'
@@ -60,6 +60,7 @@ export default function GoetheSubmission({
   const [progress, setProgress] = useState({ current: 0, total: 0 })
   const [error, setError] = useState('')
   const leadSaved = useRef(false)
+  const leadReceipt = useRef<string | null>(null)
 
   const audioEntries = Object.entries(recordings).flatMap(([questionId, recording]) => recording ? [{ questionId, recording }] : [])
   const missingAudio = 3 - audioEntries.length
@@ -90,9 +91,10 @@ export default function GoetheSubmission({
     try {
       if (!leadSaved.current) {
         setState('capturing')
-        const lead = await saveLead({ name: cleanName, email: cleanEmail, whatsapp, examSlug: 'goethe', examScore: 'Simulacro A1 enviado · evaluación pendiente', source: 'goethe-practica', contactConsent: consent, consentVersion: GOETHE_SUBMISSION_CONSENT_VERSION })
-        if (!lead.ok || !lead.id) throw new Error(lead.error ?? 'No pudimos guardar los datos de contacto.')
+        const lead = await saveLead({ name: cleanName, email: cleanEmail, whatsapp, examSlug: 'goethe', mockId, examScore: 'Simulacro A1 enviado · evaluación pendiente', source: 'goethe-practica', contactConsent: consent, consentVersion: GOETHE_SUBMISSION_CONSENT_VERSION })
+        if (!lead.ok || !lead.id || !lead.receipt) throw new Error(lead.error ?? 'No pudimos guardar los datos de contacto.')
         leadSaved.current = true
+        leadReceipt.current = lead.receipt
       }
       const payload = {
         contentVersion: getGoetheA1ContentVersion(mockId),
@@ -107,7 +109,7 @@ export default function GoetheSubmission({
       }
       const endpoint = `/api/goethe/${encodeURIComponent(mockId)}/submissions`
       setState('preparing')
-      const prepareRequest = await fetch(endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action: 'prepare', payload }) })
+      const prepareRequest = await fetch(endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action: 'prepare', payload, leadReceipt: leadReceipt.current }) })
       const prepared = await readResponse<GoethePrepareResponse>(prepareRequest)
       if (!prepareRequest.ok || !prepared.ok) throw new Error(prepared.error || 'No pudimos preparar la entrega.')
 
@@ -138,7 +140,8 @@ export default function GoetheSubmission({
         setState('unlocking')
         access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'goethe', attemptRef: completed.submissionId })
       }
-      onSuccess({ submissionId: completed.submissionId, completionToken: completed.completionToken, automatic: completed.automatic }, access)
+      if (!leadReceipt.current) throw new Error('No pudimos validar el registro del estudiante.')
+      await onSuccess({ submissionId: completed.submissionId, completionToken: completed.completionToken, automatic: completed.automatic }, access, leadReceipt.current)
     } catch (caught) {
       fail(caught instanceof Error ? caught.message : 'No pudimos enviar la entrega. Tus respuestas siguen guardadas en esta pantalla.')
     }

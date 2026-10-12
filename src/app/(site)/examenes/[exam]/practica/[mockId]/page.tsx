@@ -12,8 +12,9 @@ import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
 import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 import { parseGoetheA2PracticeTeil, parseGoetheB1PracticeTeil, parseGoethePracticeTeil, type GoetheA2PracticeSkill, type GoetheB1PracticeSkill, type GoethePracticeSkill } from '@/lib/goethe/practice';
 import { hasGoetheA1Audio } from '@/lib/goethe/release';
-import { sanitizeIeltsMock } from '@/lib/ielts/public-mock';
+import { sanitizeExamMock, sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 import { getIeltsReviewBlueprint } from '@/lib/ielts/review-blueprint';
+import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -71,19 +72,22 @@ export default async function PracticePage({ params, searchParams }: { params: P
     const practiceSkill = query.mode === 'practice' && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
       ? query.skill as 'reading' | 'writing' | 'speaking'
       : undefined;
-    return <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
+    const runner = <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
+    return practiceSkill
+      ? <ExamPracticeLeadGate examSlug="ielts" mockId={mock.id} examName={`IELTS ${practiceSkill} · ${mock.title}`}>{runner}</ExamPracticeLeadGate>
+      : runner;
   }
   if (slug === 'toefl') {
     // The legacy runner has no lead gate. Keep unsupported forms closed.
     if (mock.format !== 'toefl-2026') notFound();
-    return <Toefl2026PracticeClient exam={exam} mock={mock} />;
+    return <Toefl2026PracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
   }
   // TOPIK: set-1 es el diagnóstico-gancho de leads (UI propia, sin timer);
   // los demás sets son simulacros completos con el blueprint unificado.
   if (slug === 'topik') {
     return mockId === 'set-1'
-      ? <TOPIKPracticeClient exam={exam} mock={mock} />
-      : <LanguagePracticeClient exam={exam} mock={mock} />;
+      ? <TOPIKPracticeClient exam={exam} mock={sanitizeExamMock(mock)} />
+      : <LanguagePracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
   }
   if (slug === 'goethe' && /^a1-(?:[1-9]|10)$/.test(mockId)) {
     const skill = query.mode === 'practice' && ['listening', 'reading', 'writing', 'speaking'].includes(query.skill ?? '')
@@ -92,15 +96,15 @@ export default async function PracticePage({ params, searchParams }: { params: P
     if (!hasGoetheA1Audio(mockId) && !skill) redirect(`/examenes/goethe/practica/${mockId}?mode=practice&skill=reading`);
     if (!hasGoetheA1Audio(mockId) && skill === 'listening') redirect('/practica/goethe/listening');
     const practicePart = skill ? parseGoethePracticeTeil(skill, query.teil) : undefined;
-    return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
+    return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={sanitizeExamMock(mock)} practiceSkill={skill} practicePart={practicePart} />;
   }
   if (slug === 'goethe' && a2Skill) {
     const a2Layout = query.layout === 'sheet' ? 'sheet' : 'web';
     return <LanguagePracticeClient
       key={`${mock.id}:${a2Skill}:${a2PracticePart ?? 'all'}:${a2Layout}`}
       exam={exam}
-      mock={mock}
-      goetheFullSkillMock={goetheFullSkillMock ?? undefined}
+      mock={sanitizeExamMock(mock)}
+      goetheFullSkillMock={goetheFullSkillMock ? sanitizeExamMock(goetheFullSkillMock) : undefined}
       focusedPractice={{ level: 'A2', skill: a2Skill, part: a2PracticePart }}
       goetheA2LayoutMode={a2Layout}
     />;
@@ -110,13 +114,13 @@ export default async function PracticePage({ params, searchParams }: { params: P
     return <LanguagePracticeClient
       key={`${mock.id}:${b1Skill}:${b1PracticePart ?? 'all'}:${b1Layout}`}
       exam={exam}
-      mock={mock}
-      goetheFullSkillMock={goetheFullSkillMock ?? undefined}
+      mock={sanitizeExamMock(mock)}
+      goetheFullSkillMock={goetheFullSkillMock ? sanitizeExamMock(goetheFullSkillMock) : undefined}
       focusedPractice={{ level: 'B1', skill: b1Skill, part: b1PracticePart }}
       goetheA2LayoutMode={b1Layout}
     />;
   }
-  if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
+  if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
 
-  return <PracticeClient exam={exam} mock={mock} />;
+  return <PracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
 }

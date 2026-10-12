@@ -1,4 +1,5 @@
 import 'server-only';
+import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
 
 import { randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
@@ -286,6 +287,7 @@ function scoreObjective(mock: MockExam, answers: ToeflObjectiveAnswers, attemptI
 }
 
 async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
+  if (!await hasExamScoreAccess('toefl', request)) return Response.json({ ok: false, error: 'Registra tus datos antes de enviar el examen.' }, { status: 403 });
   const blueprint = getToeflReviewBlueprint(mockId);
   const [mock, speaking, writingEmail, writingDiscussion] = blueprint
     ? await Promise.all([

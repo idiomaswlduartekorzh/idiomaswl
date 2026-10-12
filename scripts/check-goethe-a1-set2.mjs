@@ -198,7 +198,7 @@ assert.ok(pageSource.includes("/^a1-(?:[1-9]|10)$/.test(mockId)"), 'all ten A1 s
 assert.match(runnerSource, /mock\.id/, 'the approved runner must resolve media and labels by mock id');
 assert.doesNotMatch(runnerSource, /Transkript als Beleg/);
 assert.match(runnerSource, /practiceSkill === 'listening' && <ObjectiveReview[^>]+showListeningEvidence/, 'guided Hören must expose transcript evidence only after practice');
-assert.match(runnerSource, /<ObjectiveReview mock=\{mock\} skill="listening" answers=\{answers\} \/>/, 'full exam result must keep listening evidence disabled');
+assert.match(runnerSource, /<ObjectiveReview mock=\{reviewMock\} skill="listening" answers=\{answers\} \/>/, 'full exam result must keep listening evidence disabled');
 assert.doesNotMatch(runnerSource, /Antwortübersicht/, 'exam mode must not expose an answer sheet before submission');
 assert.doesNotMatch(runnerSource, /window\.print/);
 assert.match(runnerSource, /function ReadingAdPair/, 'Set 2 Anzeigen need an integrated A/B advert renderer');

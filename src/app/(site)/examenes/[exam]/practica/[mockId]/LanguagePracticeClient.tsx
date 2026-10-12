@@ -30,6 +30,7 @@ import type {
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
+import { unlockExamMock } from '@/lib/actions/unlockExamMock';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -1556,6 +1557,7 @@ export default function LanguagePracticeClient({
   const [multiAnswers, setMultiAnswers] = useState<Record<string, string[]>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<string, Record<number, string>>>({});
   const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
+  const [gradedMock, setGradedMock] = useState<MockExam | null>(null);
   const [attemptNumber, setAttemptNumber] = useState(1);
   const stableInstanceId = useId().replace(/[^A-Za-z0-9_-]/g, '');
   const attemptRef = `language:${mock.id}:${stableInstanceId}:${attemptNumber}`;
@@ -1606,6 +1608,7 @@ export default function LanguagePracticeClient({
     setMultiAnswers({});
     setMatchAnswers({});
     setResultAccess({ unlocked: false });
+    setGradedMock(null);
     setAttemptNumber(previous => previous + 1);
     setActiveSkill(skills[0] ?? 'reading');
     setPhase('intro');
@@ -1654,7 +1657,8 @@ export default function LanguagePracticeClient({
       sourcePath: `/examenes/goethe/practica/${mock.id}?${query.toString()}`,
     });
   };
-  const leadObjectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
+  const reviewMock = gradedMock ?? mock;
+  const leadObjectiveSections = gradedMock ? getObjectiveScores(gradedMock, mcqAnswers, formAnswers, multiAnswers, matchAnswers) : [];
   const leadCorrect = leadObjectiveSections.reduce((sum, section) => sum + section.correct, 0);
   const leadTotal = leadObjectiveSections.reduce((sum, section) => sum + section.total, 0);
   const leadScore = leadTotal > 0 ? Math.round((leadCorrect / leadTotal) * 100) : 0;
@@ -1663,14 +1667,15 @@ export default function LanguagePracticeClient({
   useEffect(() => {
     if (phase !== 'results' || focusedPractice) return;
 
-    const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
+    if (!gradedMock) return;
+    const objectiveSections = getObjectiveScores(gradedMock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
     const totalCorrect = objectiveSections.reduce((a, s) => a + s.correct, 0);
     const totalQ = objectiveSections.reduce((a, s) => a + s.total, 0);
     const score = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
 
     // Collect write answers keyed by task label
-    const writeQuestions = mock.sections.flatMap(sec =>
+    const writeQuestions = gradedMock.sections.flatMap(sec =>
       sec.questions.filter(q => q.type === 'write') as WriteQuestion[]
     );
     const task1 = writeQuestions.find(q => q.taskNumber === 1);
@@ -1711,10 +1716,15 @@ export default function LanguagePracticeClient({
       <div className="prac-shell">
         <LeadCaptureModal
           examSlug={exam.slug}
-          examScore={`${leadScore}/100 (${leadCorrect}/${leadTotal} correctas)`}
+          examScore="Resultado pendiente de corrección"
           examName={exam.name}
           onClose={() => setPhase('results')}
           mandatory
+          mockId={mock.id}
+          onSaved={async receipt => {
+            const fullMock = await unlockExamMock({ examSlug: exam.slug, mockId: mock.id, receipt, focusedPractice });
+            setGradedMock(fullMock);
+          }}
           attemptRef={exam.slug === 'goethe' ? attemptRef : undefined}
           onAccessResolved={exam.slug === 'goethe' ? setResultAccess : undefined}
         />
@@ -1724,7 +1734,7 @@ export default function LanguagePracticeClient({
 
   if (phase === 'results') {
     const fullResult = <ResultsView
-      mock={mock}
+      mock={reviewMock}
       exam={exam}
       mcqAnswers={mcqAnswers}
       writeAnswers={writeAnswers}
@@ -1813,7 +1823,7 @@ export default function LanguagePracticeClient({
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs}</span>
-          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase(focusedPractice ? 'results' : 'lead')} />
+          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase('lead')} />
         </div>
       </header>
 
@@ -1870,7 +1880,7 @@ export default function LanguagePracticeClient({
                     ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{(focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL)[next]} →</button>
                     : <button onClick={() => {
                         if (unanswered > 0 && !confirm(`${unanswered} pregunta(s) sin responder. ¿Finalizar de todas formas?`)) return;
-                        setPhase(focusedPractice ? 'results' : 'lead');
+                        setPhase('lead');
                       }} className="btn">Finalizar práctica</button>
                   }
                 </span>

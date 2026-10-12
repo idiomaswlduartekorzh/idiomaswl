@@ -1,4 +1,5 @@
 import { getMock } from '@/data/mocks/index';
+import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
 import { isIeltsSectionalListeningSetId, selectIeltsListeningPractice } from '@/data/ielts/sectional-listening-adapter';
 import {
   getIeltsListeningAllowedKeys,
@@ -37,6 +38,7 @@ function validateMultiSelectRecord(value: unknown, allowed: Set<string>): value 
 }
 
 export async function POST(request: Request) {
+  if (!await hasExamScoreAccess('ielts', request)) return Response.json({ error: 'lead_required' }, { status: 403 });
   try {
     const body: unknown = await request.json();
     if (!isRecord(body)

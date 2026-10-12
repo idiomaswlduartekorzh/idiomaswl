@@ -90,7 +90,7 @@ test('admin includes both current and legacy ICFES lead sources', () => {
   const dashboard = read('src/app/(site)/dashboard/admin/JoseDashboardServer.tsx');
   assert.match(dashboard, /source\.like\.\*-practica/);
   assert.match(dashboard, /source\.eq\.icfes-post-result-gate-v1/);
-  assert.match(dashboard, /\.in\('source', \['exam-results', 'simulacro', 'icfes-post-result-gate-v1', 'nivel-radar'\]\)/);
+  assert.match(dashboard, /\.in\('source', \['exam-results', 'exam-practice-start', 'simulacro', 'icfes-post-result-gate-v1', 'nivel-radar'\]\)/);
 });
 
 test('ICFES resource count is derived from the catalog', () => {

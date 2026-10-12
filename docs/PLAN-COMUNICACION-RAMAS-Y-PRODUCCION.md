@@ -9,6 +9,17 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Cierre de acceso a claves y corrección — 12 de octubre de 2026
+
+`codex/exam-server-gating` parte del `main` vigente en `1812fb710336d6dbbe8535ba6de0666d8d82e84c`.
+Estado: `EN_VALIDACION`. Los simulacros públicos entregan primero preguntas sin claves;
+el servidor devuelve la revisión completa solo con un comprobante firmado tras guardar
+el lead. Las API de puntuación de prácticas IELTS/TOEFL y las entregas completas exigen
+acceso concedido tras ese registro. Las prácticas puntuadas independientes capturan el
+contacto antes de empezar y se distinguen de entregas terminadas en el panel.
+No requiere migración ni nueva variable. Auditoría y límites en
+[`exam-lead-gate-audit-2026-10-12.md`](exam-lead-gate-audit-2026-10-12.md).
+
 ## Captura obligatoria de leads en simulacros — 12 de octubre de 2026
 
 `codex/exam-lead-result-gates` se integró en `main` en

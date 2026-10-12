@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
+import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 import { getMock } from '@/data/mocks';
 import {
   isToeflSectionalListeningSetId,
@@ -41,7 +42,9 @@ export default async function ToeflListeningPracticePage({
       backHref="/practica/toefl/listening/simulacros"
       backLabel="Choose another Listening exercise"
     >
-      <ToeflListeningSectionRunner key={practice.id} practice={practice} />
+      <ExamPracticeLeadGate examSlug="toefl" mockId={mockId} examName={`TOEFL Listening · ${setLabel}`}>
+        <ToeflListeningSectionRunner key={practice.id} practice={practice} />
+      </ExamPracticeLeadGate>
     </PracticeRouteShell>
   );
 }

@@ -1,0 +1,722 @@
+{
+  "3": {
+    "listening1": [
+      {
+        "options": [
+          "19 Euro",
+          "29 Euro",
+          "39 Euro"
+        ]
+      },
+      {
+        "options": [
+          "um 9:00 Uhr",
+          "um 9:30 Uhr",
+          "um 10:00 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Äpfel",
+          "Bananen",
+          "Orangen"
+        ]
+      },
+      {
+        "options": [
+          "vier",
+          "sechs",
+          "acht"
+        ]
+      },
+      {
+        "options": [
+          "Zimmer 3",
+          "Zimmer 5",
+          "Zimmer 8"
+        ]
+      },
+      {
+        "options": [
+          "mit dem Fahrrad",
+          "mit der U-Bahn",
+          "mit dem Auto"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Wo treffen sich die Freunde?",
+      "options": [
+        "am Bahnhof",
+        "vor dem Kino",
+        "im Café"
+      ],
+      "answer": 1
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten am Samstag ein Fahrrad reparieren lassen."
+      },
+      {
+        "situation": "Sie suchen einen günstigen Mittagstisch ohne Fleisch."
+      },
+      {
+        "situation": "Sie brauchen ein Zimmer für drei Nächte nahe am Bahnhof."
+      },
+      {
+        "situation": "Sie möchten sonntags frische Blumen kaufen."
+      },
+      {
+        "situation": "Sie suchen einen Schwimmkurs für Ihr achtjähriges Kind."
+      }
+    ],
+    "speaking3": [
+      [
+        "Tasse",
+        "Kugelschreiber",
+        "Zeitung",
+        "Regenschirm",
+        "Stuhl",
+        "Zucker"
+      ],
+      [
+        "Fenster",
+        "Koffer",
+        "Fahrrad",
+        "Telefon",
+        "Tür",
+        "Busfahrkarte"
+      ]
+    ]
+  },
+  "4": {
+    "listening1": [
+      {
+        "options": [
+          "2,80 €",
+          "3,20 €",
+          "3,80 €"
+        ]
+      },
+      {
+        "options": [
+          "7:30 Uhr",
+          "8:00 Uhr",
+          "8:30 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Weißbrot",
+          "Vollkornbrot",
+          "Brötchen"
+        ]
+      },
+      {
+        "options": [
+          "fünf",
+          "sieben",
+          "neun"
+        ]
+      },
+      {
+        "options": [
+          "Raum 12",
+          "Raum 21",
+          "Raum 22"
+        ]
+      },
+      {
+        "options": [
+          "mit dem Bus",
+          "mit dem Zug",
+          "mit dem Flugzeug"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Was bestellt der Mann?",
+      "options": [
+        "Suppe",
+        "Pizza",
+        "Salat"
+      ],
+      "answer": 2
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten am Abend einen Anfängerkurs im Tanzen besuchen."
+      },
+      {
+        "situation": "Sie suchen am Sonntag eine geöffnete Bäckerei."
+      },
+      {
+        "situation": "Sie möchten einen gebrauchten Schreibtisch kaufen."
+      },
+      {
+        "situation": "Sie brauchen heute Abend einen Arzt für Ihr Kind."
+      },
+      {
+        "situation": "Sie möchten Ihre Katze während des Urlaubs betreuen lassen."
+      }
+    ],
+    "speaking3": [
+      [
+        "Gabel",
+        "Flasche",
+        "Serviette",
+        "Brot",
+        "Stuhl",
+        "Speisekarte"
+      ],
+      [
+        "Computer",
+        "Schlüssel",
+        "Mantel",
+        "Fenster",
+        "Taxi",
+        "Koffer"
+      ]
+    ]
+  },
+  "5": {
+    "listening1": [
+      {
+        "options": [
+          "8 Euro",
+          "12 Euro",
+          "18 Euro"
+        ]
+      },
+      {
+        "options": [
+          "11:10 Uhr",
+          "11:20 Uhr",
+          "11:30 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Nudeln",
+          "Reis",
+          "Kartoffeln"
+        ]
+      },
+      {
+        "options": [
+          "zwei",
+          "drei",
+          "vier"
+        ]
+      },
+      {
+        "options": [
+          "im Flur",
+          "im Büro",
+          "im Keller"
+        ]
+      },
+      {
+        "options": [
+          "mit dem Bus",
+          "mit dem Fahrrad",
+          "mit dem Taxi"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Welche Farbe hat das Fahrrad?",
+      "options": [
+        "rot",
+        "blau",
+        "grün"
+      ],
+      "answer": 0
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten heute ein Paket bis 20 Uhr abgeben."
+      },
+      {
+        "situation": "Sie suchen einen kostenlosen Spielplatz für kleine Kinder."
+      },
+      {
+        "situation": "Sie möchten am Morgen Englisch lernen."
+      },
+      {
+        "situation": "Sie brauchen für morgen einen kleinen Mietwagen."
+      },
+      {
+        "situation": "Sie möchten am Sonntag ein warmes Mittagessen liefern lassen."
+      }
+    ],
+    "speaking3": [
+      [
+        "Löffel",
+        "Salz",
+        "Glas",
+        "Teller",
+        "Fenster",
+        "Lampe"
+      ],
+      [
+        "Fahrkarte",
+        "Kamera",
+        "Koffer",
+        "Handy",
+        "Jacke",
+        "Tür"
+      ]
+    ]
+  },
+  "6": {
+    "listening1": [
+      {
+        "options": [
+          "15 Euro",
+          "25 Euro",
+          "35 Euro"
+        ]
+      },
+      {
+        "options": [
+          "18:30 Uhr",
+          "19:00 Uhr",
+          "19:30 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Wasser",
+          "Limonade",
+          "Milch"
+        ]
+      },
+      {
+        "options": [
+          "drei",
+          "fünf",
+          "sieben"
+        ]
+      },
+      {
+        "options": [
+          "im Erdgeschoss",
+          "im zweiten Stock",
+          "im dritten Stock"
+        ]
+      },
+      {
+        "options": [
+          "zu Fuß",
+          "mit dem Bus",
+          "mit dem Fahrrad"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Wann ist der Termin?",
+      "options": [
+        "am Montag",
+        "am Dienstag",
+        "am Mittwoch"
+      ],
+      "answer": 2
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten am Wochenende einen Computer reparieren lassen."
+      },
+      {
+        "situation": "Sie suchen eine Wohnung, in der ein Hund erlaubt ist."
+      },
+      {
+        "situation": "Sie brauchen morgens ein Taxi für sechs Personen."
+      },
+      {
+        "situation": "Sie möchten heute Karten für ein Theaterstück kaufen."
+      },
+      {
+        "situation": "Sie suchen einen Gitarrenkurs für Anfänger am Abend."
+      }
+    ],
+    "speaking3": [
+      [
+        "Bleistift",
+        "Buch",
+        "Wasser",
+        "Tasche",
+        "Uhr",
+        "Fenster"
+      ],
+      [
+        "Regenschirm",
+        "Fahrradhelm",
+        "Handy",
+        "Fahrkarte",
+        "Tür",
+        "Koffer"
+      ]
+    ]
+  },
+  "7": {
+    "listening1": [
+      {
+        "options": [
+          "6 Euro",
+          "9 Euro",
+          "12 Euro"
+        ]
+      },
+      {
+        "options": [
+          "13 Uhr",
+          "14 Uhr",
+          "15 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Kaffee",
+          "Tee",
+          "Kakao"
+        ]
+      },
+      {
+        "options": [
+          "zwei",
+          "vier",
+          "sechs"
+        ]
+      },
+      {
+        "options": [
+          "an der Kasse",
+          "im Reisebüro",
+          "im Internet"
+        ]
+      },
+      {
+        "options": [
+          "mit der Straßenbahn",
+          "mit dem Bus",
+          "zu Fuß"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Was braucht die Frau?",
+      "options": [
+        "Briefmarken",
+        "einen Umschlag",
+        "einen Stift"
+      ],
+      "answer": 1
+    },
+    "readingAds": [
+      {
+        "situation": "Sie suchen eine günstige Reinigung für einen Wintermantel."
+      },
+      {
+        "situation": "Sie möchten am Sonntag ein Museum mit Kindern besuchen."
+      },
+      {
+        "situation": "Sie brauchen einen Babysitter am Freitagabend."
+      },
+      {
+        "situation": "Sie möchten einen Schrank transportieren lassen."
+      },
+      {
+        "situation": "Sie suchen ein vegetarisches Abendessen nach 21 Uhr."
+      }
+    ],
+    "speaking3": [
+      [
+        "Medikament",
+        "Wasser",
+        "Stuhl",
+        "Fenster",
+        "Handtuch",
+        "Telefon"
+      ],
+      [
+        "Heft",
+        "Bleistift",
+        "Buch",
+        "Tasche",
+        "Computer",
+        "Tür"
+      ]
+    ]
+  },
+  "8": {
+    "listening1": [
+      {
+        "options": [
+          "10 Euro",
+          "16 Euro",
+          "20 Euro"
+        ]
+      },
+      {
+        "options": [
+          "10:15 Uhr",
+          "10:30 Uhr",
+          "10:45 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "ein Eis",
+          "einen Kuchen",
+          "ein Brötchen"
+        ]
+      },
+      {
+        "options": [
+          "zehn",
+          "zwanzig",
+          "dreißig"
+        ]
+      },
+      {
+        "options": [
+          "neben dem Café",
+          "hinter der Kasse",
+          "vor dem Ausgang"
+        ]
+      },
+      {
+        "options": [
+          "mit dem Bus",
+          "mit dem Auto",
+          "mit der Straßenbahn"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Wie kommt die Frau nach Hause?",
+      "options": [
+        "mit dem Taxi",
+        "mit dem Bus",
+        "zu Fuß"
+      ],
+      "answer": 1
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten am Sonntag ein Fahrrad mieten."
+      },
+      {
+        "situation": "Sie suchen einen Kochkurs ohne Fleisch."
+      },
+      {
+        "situation": "Sie brauchen heute einen Drucker für wenige Stunden."
+      },
+      {
+        "situation": "Sie möchten Ihren Geburtstag draußen mit 20 Gästen feiern."
+      },
+      {
+        "situation": "Sie suchen nachts eine geöffnete Tankstelle."
+      }
+    ],
+    "speaking3": [
+      [
+        "Teller",
+        "Messer",
+        "Glas",
+        "Wasser",
+        "Zucker",
+        "Stuhl"
+      ],
+      [
+        "Stadtplan",
+        "Fahrkarte",
+        "Regenschirm",
+        "Kamera",
+        "Taxi",
+        "Tür"
+      ]
+    ]
+  },
+  "9": {
+    "listening1": [
+      {
+        "options": [
+          "eine Postkarte",
+          "ein Buch",
+          "eine Tasse"
+        ]
+      },
+      {
+        "options": [
+          "um 14:15 Uhr",
+          "um 14:30 Uhr",
+          "um 14:45 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Vollkornbrot",
+          "Baguette",
+          "Brezel"
+        ]
+      },
+      {
+        "options": [
+          "zwei",
+          "vier",
+          "sechs"
+        ]
+      },
+      {
+        "options": [
+          "an der Information",
+          "bei den Schließfächern",
+          "an Gleis 3"
+        ]
+      },
+      {
+        "options": [
+          "mit dem Bus",
+          "mit dem Fahrrad",
+          "mit der Straßenbahn"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Was nimmt der Mann mit?",
+      "options": [
+        "eine Jacke",
+        "einen Hut",
+        "einen Regenschirm"
+      ],
+      "answer": 2
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten für ein Wochenende eine Nähmaschine mieten."
+      },
+      {
+        "situation": "Sie möchten am Samstag Honig aus der Region kaufen."
+      },
+      {
+        "situation": "Sie suchen ein Ferienhaus, in dem Ihr Hund erlaubt ist."
+      },
+      {
+        "situation": "Sie brauchen heute noch einen Sehtest."
+      },
+      {
+        "situation": "Sie suchen günstige gebrauchte Kinderbücher."
+      }
+    ],
+    "speaking3": [
+      [
+        "Schlüssel",
+        "Besen",
+        "Topf",
+        "Lampe",
+        "Decke",
+        "Schere"
+      ],
+      [
+        "Fahrradpumpe",
+        "Stadtplan",
+        "Trinkflasche",
+        "Rucksack",
+        "Fahrkarte",
+        "Sonnenbrille"
+      ]
+    ]
+  },
+  "10": {
+    "listening1": [
+      {
+        "options": [
+          "1,50 Euro",
+          "3 Euro",
+          "5 Euro"
+        ]
+      },
+      {
+        "options": [
+          "um 9:15 Uhr",
+          "um 9:45 Uhr",
+          "um 10:15 Uhr"
+        ]
+      },
+      {
+        "options": [
+          "Tulpen",
+          "Rosen",
+          "Sonnenblumen"
+        ]
+      },
+      {
+        "options": [
+          "acht",
+          "zwölf",
+          "zwanzig"
+        ]
+      },
+      {
+        "options": [
+          "im Keller",
+          "auf dem Balkon",
+          "in der Garage"
+        ]
+      },
+      {
+        "options": [
+          "mit dem Zug",
+          "mit dem Auto",
+          "mit der Straßenbahn"
+        ]
+      }
+    ],
+    "listeningExample": {
+      "question": "Was bringt die Frau zum Picknick mit?",
+      "options": [
+        "eine Decke",
+        "einen Korb",
+        "einen Ball"
+      ],
+      "answer": 1
+    },
+    "readingAds": [
+      {
+        "situation": "Sie möchten am Abend einen Raum zum Tanzen mieten."
+      },
+      {
+        "situation": "Sie suchen einen Reparaturdienst für Ihre Kaffeemaschine."
+      },
+      {
+        "situation": "Sie möchten montags nach der Arbeit Spanisch lernen."
+      },
+      {
+        "situation": "Sie brauchen für morgen einen Kleinbus mit Fahrer."
+      },
+      {
+        "situation": "Sie möchten alte Möbel kostenlos abgeben."
+      }
+    ],
+    "speaking3": [
+      [
+        "Locher",
+        "Notizbuch",
+        "Tasse",
+        "Ladekabel",
+        "Kalender",
+        "Stift"
+      ],
+      [
+        "Brotkorb",
+        "Salz",
+        "Serviette",
+        "Flasche",
+        "Löffel",
+        "Speisekarte"
+      ]
+    ]
+  }
+}

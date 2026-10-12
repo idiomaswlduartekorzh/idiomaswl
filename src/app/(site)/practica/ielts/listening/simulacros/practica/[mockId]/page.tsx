@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
+import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 import { getMock } from '@/data/mocks/index';
 import {
   IELTS_SECTIONAL_LISTENING_SET_IDS,
@@ -40,7 +41,9 @@ export default async function IELTSListeningPracticePage({ params }: { params: P
       backHref="/practica/ielts/listening/simulacros"
       backLabel="Choose another Listening set"
     >
-      <IELTSListeningSectionRunner key={practice.id} practice={practice} />
+      <ExamPracticeLeadGate examSlug="ielts" mockId={mockId} examName={`IELTS Listening · ${setLabel}`}>
+        <IELTSListeningSectionRunner key={practice.id} practice={practice} />
+      </ExamPracticeLeadGate>
     </PracticeRouteShell>
   );
 }

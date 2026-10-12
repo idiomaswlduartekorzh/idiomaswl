@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
+import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 import ReadingPracticeSet from '@/components/toefl/ReadingPracticeSet';
 import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog';
 import { TOEFL_READING_PRACTICE_SETS, practiceSetNumber } from '@/data/toefl/practice-set-catalog';
@@ -16,7 +17,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ s
     ...(practice ? [{ label: `Set ${setNumber}` }] : []),
   ]} backHref={practice ? PATH : undefined}>
     {practice && setNumber
-      ? <ReadingPracticeSet objectId={practice.readingObjectId} setNumber={setNumber} task="Read in Daily Life" passages={practice.dailyLife} />
+      ? <ExamPracticeLeadGate examSlug="toefl" mockId={`set-${setNumber}`} examName={`TOEFL Read in Daily Life · Set ${setNumber}`}><ReadingPracticeSet objectId={practice.readingObjectId} setNumber={setNumber} task="Read in Daily Life" passages={practice.dailyLife} /></ExamPracticeLeadGate>
       : <ToeflPracticeSetCatalog section="reading" task="Read in Daily Life" description="Choose a set of everyday texts. You will read two practical messages and answer five questions." sets={TOEFL_READING_PRACTICE_SETS.map((set) => ({ number: set.setNumber, title: `${set.dailyLife[0].title} + ${set.dailyLife[1].title}`, detail: '2 everyday texts · 5 questions', href: `${PATH}?set=${set.setNumber}`, meta: 'About 8 minutes' }))} />}
   </PracticeRouteShell>;
 }

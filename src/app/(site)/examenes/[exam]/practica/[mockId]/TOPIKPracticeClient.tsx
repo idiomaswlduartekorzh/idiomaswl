@@ -6,6 +6,7 @@ import { saveExamResult } from '@/lib/actions/saveExamResult';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion } from '@/data/mocks/types';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
+import { unlockExamMock } from '@/lib/actions/unlockExamMock';
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -75,6 +76,7 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [phase, setPhase] = useState<Phase>('intro');
   const [activePart, setActivePart] = useState(0);
+  const [gradedMock, setGradedMock] = useState<MockExam | null>(null);
 
   const allQ = useMemo(() => flattenQuestions(mock), [mock]);
   const totalQ = allQ.length;
@@ -82,8 +84,8 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
   const allAnswered = answeredCount === totalQ;
 
   const score = useMemo(
-    () => allQ.reduce((acc, q) => (answers[q.id] === q.answer ? acc + 1 : acc), 0),
-    [allQ, answers],
+    () => gradedMock ? flattenQuestions(gradedMock).reduce((acc, q) => (answers[q.id] === q.answer ? acc + 1 : acc), 0) : 0,
+    [gradedMock, answers],
   );
   const levelInfo = useMemo(() => getLevelInfo(score, totalQ), [score, totalQ]);
   const examScoreStr = `${score}/${totalQ} — TOPIK I ${levelInfo.level}`;
@@ -106,6 +108,10 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
   function handleLeadClose() {
     setPhase('results');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  useEffect(() => {
+    if (phase !== 'results' || !gradedMock) return;
     saveExamResult({
       examSlug: exam.slug,
       examName: exam.name,
@@ -115,7 +121,8 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
       totalLabel: `${score}/${totalQ} — TOPIK I ${levelInfo.level}`,
       skills: [{ skill: 'Lectura 읽기', score, max: totalQ, label: `${score}/${totalQ}` }],
     }).catch(() => {});
-  }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, gradedMock]);
 
   const waMsg = encodeURIComponent(`Hola! Acabo de hacer el diagnóstico TOPIK I en WeLearn y obtuve ${score}/30 (${levelInfo.level}). ¿Cómo puedo mejorar mi coreano?`);
   const waHref = `https://wa.me/${WA_NUMBER}?text=${waMsg}`;
@@ -391,10 +398,12 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
         {phase === 'lead' && (
           <LeadCaptureModal
             examSlug="topik"
-            examScore={examScoreStr}
+            examScore="Resultado pendiente de corrección"
             examName="TOPIK I (Coreano)"
             onClose={handleLeadClose}
             mandatory
+            mockId={mock.id}
+            onSaved={async receipt => setGradedMock(await unlockExamMock({ examSlug: 'topik', mockId: mock.id, receipt }))}
           />
         )}
       </>

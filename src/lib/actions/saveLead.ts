@@ -4,12 +4,15 @@ import { createHmac } from 'node:crypto';
 import { headers } from 'next/headers';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { normalizeEmail, normalizeWhatsapp } from '@/lib/leads/contact';
+import { createExamLeadReceipt } from '@/lib/exams/lead-receipt.server';
+import { grantExamScoreAccess } from '@/lib/exams/score-access.server';
 
 export interface LeadInput {
   name: string;
   whatsapp: string;
   email?: string;
   examSlug?: string;
+  mockId?: string;
   examScore?: string;
   source: string;
   utmSource?: string;
@@ -53,7 +56,7 @@ function sanitizeProfile(value: unknown): Record<string, unknown> {
   }
 }
 
-export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: string; error?: string }> {
+export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: string; receipt?: string; error?: string }> {
   // Honeypots receive a successful-looking response so bots do not learn how to bypass it.
   if (sanitize(input.company, 120)) return { ok: true };
 
@@ -64,9 +67,12 @@ export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: st
   const email = rawEmail ? normalizeEmail(rawEmail) : null;
   if (rawEmail && !email) return { ok: false, error: 'Ingresa un correo electrónico válido.' };
   const leadSource = typeof input.source === 'string' ? input.source : '';
-  const isRequiredExamLead = leadSource === 'exam-results' || leadSource.endsWith('-practica');
+  const isRequiredExamLead = leadSource === 'exam-results' || leadSource === 'exam-practice-start' || leadSource.endsWith('-practica');
   if (isRequiredExamLead && (!sanitize(input.name, 100) || input.name.trim().length < 2 || !email)) {
     return { ok: false, error: 'Escribe tu nombre completo y un correo electrónico válido.' };
+  }
+  if (isRequiredExamLead && input.contactConsent !== true) {
+    return { ok: false, error: 'Debes autorizar el contacto relacionado con tu resultado.' };
   }
 
   const requestHeaders = await headers();
@@ -111,5 +117,14 @@ export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: st
     return { ok: false, error: 'No pudimos guardar tus datos. Intenta de nuevo.' };
   }
 
-  return { ok: true, id: typeof data === 'string' ? data : undefined };
+  const id = typeof data === 'string' ? data : undefined;
+  const examSlug = sanitize(input.examSlug, 64);
+  const mockId = sanitize(input.mockId, 64);
+  const receipt = id && isRequiredExamLead && examSlug && mockId
+    ? createExamLeadReceipt(id, examSlug, mockId)
+    : undefined;
+  if (id && isRequiredExamLead && examSlug) {
+    await grantExamScoreAccess(id, examSlug);
+  }
+  return { ok: true, id, receipt };
 }

@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { saveLead } from '@/lib/actions/saveLead';
+import { routeSatModule, unlockExamMock } from '@/lib/actions/unlockExamMock';
 import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data/mocks/types';
@@ -1207,6 +1208,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   const [secureResult, setSecureResult] = useState<IcfesBasicResultDto | null>(null);
   const [gradingError, setGradingError] = useState('');
   const [attemptToken, setAttemptToken] = useState('');
+  const [gradedMock, setGradedMock] = useState<MockExam | null>(null);
   // Holds computed score while user fills the lead gate
   const pendingResultRef = useRef<{ correct: number; total: number; score: number } | null>(null);
 
@@ -1258,18 +1260,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     }
     // Compute score and go to lead gate — actual save happens after lead form
     const qs = allQuestions as MCQQuestion[];
-    const correct = qs.filter(q => answers[q.id] === q.answer).length;
-    const score = Math.round((correct / qs.length) * 100);
-    pendingResultRef.current = { correct, total: qs.length, score };
-    if (exam.slug === 'icfes') {
-      trackIcfesEvent('icfes_mock_complete', {
-        mock_id: mock.id,
-        mode: 'exam',
-        question_count: qs.length,
-        correct_count: correct,
-        accuracy: score,
-      });
-    }
+    pendingResultRef.current = { correct: 0, total: qs.length, score: 0 };
     setPhase('lead');
   }, [allQuestions, answers, attemptToken, exam.slug, mock.id, secureIcfes]);
 
@@ -1293,12 +1284,18 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
 
   // Entrega del módulo 1: se puntúa SOLO ese módulo, se decide la rama y ya no se
   // puede volver — igual que en el examen real.
-  const handleRoute = useCallback(() => {
+  const handleRoute = useCallback(async () => {
     if (!routing) return;
-    const primeras = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === routing.routeAfterPart);
-    const aciertos = primeras.filter(q => answers[q.id] === q.answer).length;
-    const rama = elegirRamaModulo2(aciertos, routing);
-    setRoutedTo(rama);
+    setGradingError('');
+    try {
+      const primeras = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === routing.routeAfterPart);
+      const firstAnswers = Object.fromEntries(primeras.filter(q => answers[q.id] !== undefined).map(q => [q.id, answers[q.id]]));
+      const rama = await routeSatModule(mock.id, firstAnswers);
+      setRoutedTo(rama);
+    } catch (error) {
+      setGradingError(error instanceof Error ? error.message : 'No pudimos abrir el siguiente módulo.');
+      return;
+    }
     // Las marcas pertenecen a una etapa que ya quedó cerrada y no debe reaparecer en
     // el panel del módulo 2.
     setFlagged(new Set());
@@ -1351,8 +1348,6 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   }, [stageQuestions]);
 
   const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string; contactConsent: boolean }) => {
-    const qs = allQuestions as MCQQuestion[];
-    const { correct, total, score } = pendingResultRef.current ?? { correct: 0, total: qs.length, score: 0 };
     // El lead se confirma primero: nunca se abre el resultado si el contacto no
     // quedó persistido. El historial académico sigue siendo de mejor esfuerzo.
     const leadResult = await saveLead({
@@ -1360,11 +1355,10 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
       whatsapp: lead.whatsapp,
       email: lead.email,
       examSlug: exam.slug,
+      mockId: mock.id,
       // El SAT no tiene escala de 100: guardar «63/100» ahí hace que en el panel se lea
       // como un puntaje ICFES, que sí va de 0 a 100. Para el SAT va el bruto y nada más.
-      examScore: exam.slug === 'sat'
-        ? `${correct}/${total} correctas${routedTo ? ` · M2 ${routedTo === 'high' ? 'exigente' : 'estándar'}` : ''}`
-        : `${score}/100 (${correct}/${total} correctas)`,
+      examScore: 'Resultado pendiente de corrección',
       // El balde del lead es el del examen que acaba de hacer. Estuvo fijo en
       // 'icfes-practica' hasta el 19 ago 2026, así que todo aspirante al SAT caía en la
       // lista del ICFES. Para el ICFES el valor no cambia (su slug es 'icfes').
@@ -1373,6 +1367,15 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
       consentVersion: 'exam-contact-v1-2026-10',
     });
     if (!leadResult.ok || !leadResult.id) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.');
+    if (!leadResult.receipt) throw new Error('No pudimos validar el registro. Intenta de nuevo.');
+    const fullMock = await unlockExamMock({ examSlug: exam.slug, mockId: mock.id, receipt: leadResult.receipt });
+    const servedParts = routing && routedTo ? partesServidas(routedTo, routing) : null;
+    const gradedSections = servedParts ? fullMock.sections.filter(section => servedParts.includes(section.part)) : fullMock.sections;
+    const gradedQuestions = gradedSections.flatMap(section => section.questions).filter(question => question.type === 'mcq') as MCQQuestion[];
+    const correct = gradedQuestions.filter(question => answers[question.id] === question.answer).length;
+    const total = gradedQuestions.length;
+    const score = total ? Math.round(correct / total * 100) : 0;
+    setGradedMock({ ...fullMock, sections: gradedSections });
 
     if (exam.slug === 'icfes') {
       trackIcfesEvent('icfes_lead_submit', {
@@ -1397,7 +1400,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
         totalLabel: routedTo
           ? `${correct}/${total} correctas · módulo 2 ${routedTo === 'high' ? 'exigente' : 'estándar'}`
           : `${correct}/${total} correctas`,
-        skills: servedMock.sections.map(sec => {
+        skills: gradedSections.map(sec => {
           const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
           const sc = sqs.filter(q => answers[q.id] === q.answer).length;
           return { skill: sec.title, score: sqs.length ? Math.round(sc / sqs.length * 100) : 0, max: 100, label: `${sc}/${sqs.length}` };
@@ -1405,7 +1408,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
       }),
     ]);
     setPhase('results');
-  }, [allQuestions, answers, exam, mock, routedTo, servedMock]);
+  }, [answers, exam, mock.id, mock.title, routedTo, routing]);
 
   const handleRetry = useCallback(() => {
     setAnswers({});
@@ -1415,6 +1418,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     setSecureResult(null);
     setGradingError('');
     setAttemptToken('');
+    setGradedMock(null);
     setPhase('intro');
   }, []);
 
@@ -1455,7 +1459,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     // Se promete el desglose que la pantalla de resultados va a enseñar de verdad. Con
     // un simulacro de una sola sección, «análisis por parte» era una barra que repetía
     // el marcador; el SAT lo da por dominio porque sus ítems traen dominio.
-    const hasDomains = mock.sections.some(s => s.insights &&
+    const hasDomains = exam.slug === 'sat' || mock.sections.some(s => s.insights &&
       s.questions.some(q => s.insights?.[q.id]?.domain));
     return (
       <div className="prac-shell">
@@ -1473,7 +1477,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     if (secureIcfes && secureResult) return <IcfesLeadResultOffers result={secureResult} offerEnabled={secureIcfes.offerEnabled} onRetry={handleRetry} leadCaptured />;
     return (
       <div className="prac-shell">
-        <ResultsView mock={servedMock} exam={exam} answers={answers} onRetry={handleRetry} routedTo={routedTo} />
+        <ResultsView mock={gradedMock ?? servedMock} exam={exam} answers={answers} onRetry={handleRetry} routedTo={routedTo} />
       </div>
     );
   }

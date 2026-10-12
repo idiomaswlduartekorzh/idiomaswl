@@ -1,4 +1,5 @@
 'use client';
+import { unlockExamMock } from '@/lib/actions/unlockExamMock';
 
 import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
@@ -790,6 +791,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const [currentPlayingMediaId, setCurrentPlayingMediaId] = useState('');
   const [recordings, setRecordings] = useState<Record<string, IeltsSpeakingRecording>>({});
   const [receipt, setReceipt] = useState<ToeflSubmissionReceipt | null>(null);
+  const [gradedMock, setGradedMock] = useState<MockExam | null>(null);
   const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
   const [ans, setAns] = useState<Answers>(EMPTY);
   const [wordScores, setWordScores] = useState<WordScoreMap>({});
@@ -1134,6 +1136,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     setWordScores({}); setReadingScore(undefined); setListeningScore(undefined); setBuildScore(undefined); setAttemptId(createClientId('attempt')); setLastWordFocusId(''); setLastReadingFocusId(''); setLastBuildFocusId('');
     setStageIndex(0); setForwardItemIndex(0); setStageDeadlineAt(null); setStartedMediaIds([]); setCompletedMediaIds([]); setCurrentPlayingMediaId(''); setRecordings({}); setReceipt(null);
     setResultAccess({ unlocked: false });
+    setGradedMock(null);
     setWordScoringError(false); setReadingScoringError(false); setListeningScoringError(false); setBuildScoringError(false);
     try { window.localStorage.removeItem(storageKey); } catch { /* local-only reset */ }
     setPhase('intro');
@@ -1231,7 +1234,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
           speakingPrompts={speakingPrompts}
           recordings={recordings}
           onBack={() => setPhase('exam')}
-          onSuccess={(nextReceipt, access) => {
+          onSuccess={async (nextReceipt, access, leadReceipt) => {
+            const fullMock = await unlockExamMock({ examSlug: 'toefl', mockId: mock.id, receipt: leadReceipt });
+            setGradedMock(fullMock);
             setReceipt(nextReceipt);
             setResultAccess(access);
             try { window.localStorage.removeItem(storageKey); } catch { /* receipt remains in memory */ }
@@ -1256,7 +1261,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   if (phase === 'results' && receipt) {
     return (
       <div className="prac-shell exam-unified" data-exam="toefl"><style>{T26_CSS}</style>
-        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
+        <Results mock={gradedMock ?? mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
         <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheet} label="Full practice PDF" />{(['reading', 'listening', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill[0].toUpperCase()}${skill.slice(1)} PDF`} compact />)}</div>
       </div>
     );

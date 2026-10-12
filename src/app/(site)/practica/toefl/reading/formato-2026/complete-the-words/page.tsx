@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
+import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog';
 import { TOEFL_COMPLETE_WORDS_PRACTICE_SETS, practiceSetNumber } from '@/data/toefl/practice-set-catalog';
 import CompleteTheWordsPractice from './CompleteTheWordsPractice';
@@ -16,7 +17,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ s
     ...(practice ? [{ label: `Set ${setNumber}` }] : []),
   ]} backHref={practice ? PATH : undefined}>
     {practice && setNumber
-      ? <CompleteTheWordsPractice practice={practice} setNumber={setNumber} />
+      ? <ExamPracticeLeadGate examSlug="toefl" mockId={`set-${setNumber}`} examName={`TOEFL Complete the Words · Set ${setNumber}`}><CompleteTheWordsPractice practice={practice} setNumber={setNumber} /></ExamPracticeLeadGate>
       : <ToeflPracticeSetCatalog section="reading" task="Complete the Words" description="Select a short passage. Each exercise contains ten partially hidden words and opens only after you choose it." sets={TOEFL_COMPLETE_WORDS_PRACTICE_SETS.map((set, index) => ({ number: index + 1, title: set.title, detail: '10 missing-letter items in one passage', href: `${PATH}?set=${index + 1}`, meta: 'About 5 minutes' }))} />}
   </PracticeRouteShell>;
 }

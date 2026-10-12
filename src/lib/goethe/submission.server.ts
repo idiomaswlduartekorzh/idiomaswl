@@ -16,6 +16,7 @@ import goetheA1Set9 from '@/data/mocks/goethe-a1-set-9'
 import goetheA1Set10 from '@/data/mocks/goethe-a1-set-10'
 import type { FormGroupQuestion, MCQQuestion, MockExam, SpeakQuestion } from '@/data/mocks/types'
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server'
+import { verifyExamLeadReceipt } from '@/lib/exams/lead-receipt.server'
 import { scoreGoetheAutomatic } from './scoring'
 import {
   getGoetheA1ContentVersion,
@@ -166,7 +167,8 @@ function objectiveSnapshot(mock: MockExam) {
   )
 }
 
-async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
+async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown, leadReceipt: unknown): Promise<Response> {
+  if (!verifyExamLeadReceipt(leadReceipt, 'goethe', mockId)) return jsonError('Registra tus datos antes de enviar el examen.', 403)
   const resolved = resolveMock(mockId)
   if (!resolved) return jsonError('Este simulacro todavía no admite entregas verificables.', 404)
   const { mock, contentVersion } = resolved
@@ -267,7 +269,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, token: 
 export async function handleGoetheSubmissionRequest(request: Request, mockId: string): Promise<Response> {
   let body: Record<string, unknown>
   try { body = await request.json() as Record<string, unknown> } catch { return jsonError('La solicitud no contiene JSON válido.', 400) }
-  if (body.action === 'prepare') return prepareSubmission(request, mockId, body.payload)
+  if (body.action === 'prepare') return prepareSubmission(request, mockId, body.payload, body.leadReceipt)
   if (body.action === 'complete') return completeSubmission(mockId, body.submissionId, body.completionToken)
   return jsonError('Acción de entrega no válida.', 400)
 }

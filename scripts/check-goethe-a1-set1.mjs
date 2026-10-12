@@ -66,7 +66,7 @@ assert.match(runnerSource, /aria-current=\{activeSkill === skill\.id \? 'step'/,
 assert.doesNotMatch(runnerSource, /window\.print/, 'the public exam must not expose a printable answer sheet');
 assert.doesNotMatch(runnerSource, /Transkript als Beleg/, 'the public result must not expose listening transcripts');
 assert.match(runnerSource, /practiceSkill === 'listening' && <ObjectiveReview[^>]+showListeningEvidence/, 'guided Hören must expose transcript evidence only after practice');
-assert.match(runnerSource, /<ObjectiveReview mock=\{mock\} skill="listening" answers=\{answers\} \/>/, 'full exam result must keep listening evidence disabled');
+assert.match(runnerSource, /<ObjectiveReview mock=\{reviewMock\} skill="listening" answers=\{answers\} \/>/, 'full exam result must keep listening evidence disabled');
 assert.doesNotMatch(runnerSource, /Bewertungsbogen · docente/, 'students must not be able to assign their own open-task score');
 assert.match(runnerSource, /phase === 'submit'/, 'the exam must enter a dedicated delivery phase before results');
 assert.match(submissionSource, /saveLead\(/, 'delivery must capture the Goethe lead');

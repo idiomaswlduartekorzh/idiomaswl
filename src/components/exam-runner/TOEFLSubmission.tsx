@@ -29,7 +29,7 @@ interface Props {
   speakingPrompts: ToeflSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: ToeflSubmissionReceipt, access: ExamAccessOutcome) => void;
+  onSuccess: (receipt: ToeflSubmissionReceipt, access: ExamAccessOutcome, leadReceipt: string) => Promise<void>;
 }
 
 type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking';
@@ -72,6 +72,7 @@ export function TOEFLSubmission({
   const [error, setError] = useState('');
   const errorRef = useRef<HTMLParagraphElement>(null);
   const leadSavedRef = useRef(false);
+  const leadReceiptRef = useRef<string | null>(null);
 
   const recordedEntries = speakingPrompts.flatMap(prompt => {
     const recording = recordings[prompt.questionId];
@@ -137,13 +138,15 @@ export function TOEFLSubmission({
           email: cleanEmail,
           whatsapp,
           examSlug: 'toefl',
+          mockId,
           examScore: 'Simulacro enviado para corrección',
           source: 'toefl-practica',
           contactConsent: consent,
           consentVersion: TOEFL_SUBMISSION_CONSENT_VERSION,
         });
-        if (!leadResult.ok || !leadResult.id) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
+        if (!leadResult.ok || !leadResult.id || !leadResult.receipt) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
         leadSavedRef.current = true;
+        leadReceiptRef.current = leadResult.receipt;
       }
 
       setState('preparing');
@@ -193,7 +196,8 @@ export function TOEFLSubmission({
         setState('unlocking');
         access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'toefl', attemptRef: prepared.submissionId });
       }
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, access);
+      if (!leadReceiptRef.current) throw new Error('No pudimos validar el registro del estudiante.');
+      await onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, access, leadReceiptRef.current);
     } catch (caught) {
       setState('idle');
       showError(readError(caught));

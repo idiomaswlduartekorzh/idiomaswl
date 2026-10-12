@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
+import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 import BuildSentenceSet1Practice from '@/components/toefl/BuildSentenceSet1Practice';
 import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog';
 import { TOEFL_BUILD_SENTENCE_PRACTICE_SETS, practiceSetNumber } from '@/data/toefl/practice-set-catalog';
@@ -16,7 +17,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ s
     ...(practice ? [{ label: `Set ${setNumber}` }] : []),
   ]} backHref={practice ? PATH : undefined}>
     {practice && setNumber
-      ? <BuildSentenceSet1Practice practice={practice} setNumber={setNumber} />
+      ? <ExamPracticeLeadGate examSlug="toefl" mockId={`set-${setNumber}`} examName={`TOEFL Build a Sentence · Set ${setNumber}`}><BuildSentenceSet1Practice practice={practice} setNumber={setNumber} /></ExamPracticeLeadGate>
       : <ToeflPracticeSetCatalog section="writing" task="Build a Sentence" description="Choose a set before the sentence builder opens. Each set contains ten independent items." sets={TOEFL_BUILD_SENTENCE_PRACTICE_SETS.map((set, index) => ({ number: index + 1, title: `Sentence Set ${index + 1}`, detail: `${set.items.length} sentence-building items`, href: `${PATH}?set=${index + 1}`, meta: 'About 10 minutes' }))} />}
   </PracticeRouteShell>;
 }

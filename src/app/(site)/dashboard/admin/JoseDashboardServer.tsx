@@ -110,7 +110,7 @@ export interface AdminViewer {
 //   · ICFES seguro    → source 'icfes-post-result-gate-v1' (histórico de sep. 2026)
 // El source 'blog' queda fuera a propósito: no es un simulacro y su `exam_score`
 // guarda una categoría de blog, no un puntaje.
-const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.exam-results,source.eq.simulacro,source.eq.icfes-post-result-gate-v1,source.eq.nivel-radar'
+const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.exam-results,source.eq.exam-practice-start,source.eq.simulacro,source.eq.icfes-post-result-gate-v1,source.eq.nivel-radar'
 const PRACTICA_SUFFIX = /-practica$/
 
 /** El slug del examen: primero el campo propio; si falta, se deduce del source. */
@@ -375,7 +375,7 @@ export default async function JoseDashboardServer() {
     // las fuentes por convención como las dos fuentes exactas conocidas.
     const [practiceFallback, exactFallback] = await Promise.all([
       leadsSelect().like('source', '%-practica'),
-      leadsSelect().in('source', ['exam-results', 'simulacro', 'icfes-post-result-gate-v1', 'nivel-radar']),
+      leadsSelect().in('source', ['exam-results', 'exam-practice-start', 'simulacro', 'icfes-post-result-gate-v1', 'nivel-radar']),
     ])
     const uniqueFallback = new Map(
       [...(practiceFallback.data ?? []), ...(exactFallback.data ?? [])]

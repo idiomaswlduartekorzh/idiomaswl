@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
 import { scoreCompleteWords } from '@/lib/toefl/complete-words-contract';
 import { TOEFL_CTW_SCORING_BY_OBJECT_ID } from '@/server/toefl/complete-words-registry';
 
@@ -7,6 +8,7 @@ function isShortId(value: unknown, max = 180): value is string {
 }
 
 export async function POST(request: Request) {
+  if (!await hasExamScoreAccess('toefl', request)) return NextResponse.json({ code: 'lead_required' }, { status: 403 });
   let payload: Record<string, unknown>;
   try {
     payload = await request.json();
