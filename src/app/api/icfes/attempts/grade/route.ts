@@ -5,6 +5,8 @@ import { validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
 import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
 import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
 import type { MCQQuestion } from '@/data/mocks/types';
+import { saveLead } from '@/lib/actions/saveLead';
+import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
 
 export const runtime = 'nodejs';
 
@@ -27,6 +29,14 @@ export async function POST(request: Request): Promise<Response> {
     .filter((question): question is MCQQuestion => question.type === 'mcq' || question.type === 'dialog');
   const answers = validateIcfesAnswers(body.responses, questions);
   if (!answers) return json({ ok: false, error: 'Las respuestas no corresponden a este simulacro.' }, 400);
+  const lead = body.lead && typeof body.lead === 'object' && !Array.isArray(body.lead)
+    ? body.lead as Record<string, unknown> : null;
+  const name = typeof lead?.name === 'string' ? lead.name.trim() : '';
+  const email = typeof lead?.email === 'string' ? lead.email.trim() : '';
+  const whatsapp = typeof lead?.whatsapp === 'string' ? lead.whatsapp.trim() : '';
+  if (name.length < 2 || !isPlausibleEmail(email) || !isPlausibleWhatsapp(whatsapp) || lead?.contactConsent !== true) {
+    return json({ ok: false, error: 'Confirma tus datos y la autorización para consultar el resultado.' }, 400);
+  }
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
   try {
@@ -36,6 +46,12 @@ export async function POST(request: Request): Promise<Response> {
     console.error('[icfes-grade] admin summary persistence failed:', error instanceof Error ? error.message : 'unknown');
     return json({ ok: false, error: 'No pudimos registrar el resultado. Intenta nuevamente.' }, 503);
   }
+  const savedLead = await saveLead({
+    name, email, whatsapp, examSlug: 'icfes',
+    examScore: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
+    source: 'icfes-practica', contactConsent: true,
+  });
+  if (!savedLead.ok || !savedLead.id) return json({ ok: false, error: savedLead.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.' }, 503);
   // Mocks remain usable until the private attempt schema is approved and enabled.
   // The admin summary above is always stored, but no attempt cookie is issued because
   // there is no persisted paid report to access while private persistence is disabled.

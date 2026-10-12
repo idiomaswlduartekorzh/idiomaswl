@@ -21,6 +21,27 @@ auditoría de claves conservó 165 sets, 10 exámenes, 7.172 claves y cero alert
 estructurales. El alias `www.idiomaswl.com` apuntó a ese deployment y la ruta
 `/dashboard/admin/claves` redirigió a `/login` sin sesión (HTTP 307).
 
+## Inicio de métricas y operación de exámenes — 12 de octubre de 2026
+
+`codex/admin-metrics-exam-ops` parte de `origin/main` en `da69405e`. Estado:
+`EN_VALIDACION`. El inicio administrativo muestra visitantes diarios, llegadas e
+inactividad aproximadas, páginas con más y menos alcance, y distingue visitas a
+simulacros, entregas y leads. La nueva tabla de alcance diario registra únicamente
+identificadores anónimos hash y páginas públicas; la migración aditiva
+`20261012172320_site_daily_page_reach.sql` está aplicada en Supabase producción.
+El historial de páginas comienza al publicar el tracker: los días anteriores se
+marcan sin dato. Se verificó RLS habilitado, sin lectura de `anon` ni
+`authenticated`, con inserción de `service_role`.
+
+Corrección de exámenes, revisiones Xpress, claves, códigos, pagos y contactos se
+acceden desde el menú lateral. La API ICFES ahora exige y guarda el contacto
+consentido antes de devolver el marcador básico. El módulo de pagos muestra la
+causa concreta si las credenciales deshabilitan el botón y errores específicos
+de autorización o validación de Wompi; queda pendiente confirmar con el
+administrador el síntoma exacto y el origen deseado de los links. Validaciones:
+17/17 pruebas ICFES, catálogo protegido, TypeScript y build Webpack de 2.599
+páginas. La integración y el smoke productivo se registrarán después del merge.
+
 ## Tracker financiero y links de pago administrativos — 30 de septiembre de 2026
 
 `codex/admin-payment-tracker-20260930` parte de `origin/main` en `2361475c`.

@@ -8,6 +8,7 @@ import { EXAMS } from '@/data/exams'
 import type { FullAssessment } from '@/lib/labs/types'
 import type { IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
 import { isZhannaAdminEmail } from '@/lib/config/admins'
+import { loadAdminTrafficData, type AdminTrafficData } from '@/lib/admin-traffic/server'
 
 export interface ExamSubmission {
   id: string
@@ -76,6 +77,9 @@ export interface LeadRow {
 
 export interface DashboardData {
   generatedAt: string
+  traffic: AdminTrafficData
+  completedExams7d: number
+  examLeads7d: number
   submissions: ExamSubmission[]
   totalCount: number
   thisWeekCount: number
@@ -141,6 +145,8 @@ export default async function JoseDashboardServer() {
   const supabase = createAdminClient()
 
   const now = new Date()
+  const trafficPromise = loadAdminTrafficData(now)
+  const sevenDaysAgo = new Date(now.getTime() - 7 * 86_400_000).toISOString()
   const startOfThisWeek = new Date(now)
   startOfThisWeek.setDate(now.getDate() - now.getDay())
   startOfThisWeek.setHours(0, 0, 0, 0)
@@ -159,6 +165,8 @@ export default async function JoseDashboardServer() {
     { count: totalSubmissionCount },
     { count: thisWeekSubmissionCount },
     { count: lastWeekSubmissionCount },
+    { count: completedExams7d },
+    { count: examLeads7d },
   ] = await Promise.all([
     supabase
       .from('exam_submissions')
@@ -203,6 +211,10 @@ export default async function JoseDashboardServer() {
       .eq('submission_status', 'submitted')
       .gte('created_at', startOfLastWeek.toISOString())
       .lt('created_at', startOfThisWeek.toISOString()),
+    supabase.from('exam_submissions').select('id', { count: 'exact', head: true })
+      .eq('submission_status', 'submitted').gte('created_at', sevenDaysAgo),
+    supabase.from('leads').select('id', { count: 'exact', head: true })
+      .or(LEADS_SOURCE_FILTER).gte('created_at', sevenDaysAgo),
   ])
 
   const rows = (submissions ?? []) as ExamSubmission[]
@@ -436,6 +448,9 @@ export default async function JoseDashboardServer() {
 
   const dashboardData: DashboardData = {
     generatedAt: now.toISOString(),
+    traffic: await trafficPromise,
+    completedExams7d: completedExams7d ?? 0,
+    examLeads7d: examLeads7d ?? 0,
     submissions: rows,
     totalCount,
     thisWeekCount,

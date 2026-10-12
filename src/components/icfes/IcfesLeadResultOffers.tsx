@@ -80,12 +80,14 @@ export default function IcfesLeadResultOffers({
   result,
   offerEnabled,
   onRetry,
+  leadCaptured = false,
 }: {
   result: IcfesBasicResultDto;
   offerEnabled: boolean;
   onRetry: () => void;
+  leadCaptured?: boolean;
 }) {
-  const [step, setStep] = useState<'lead' | 'offers'>('lead');
+  const [step, setStep] = useState<'lead' | 'offers'>(leadCaptured ? 'offers' : 'lead');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
@@ -162,6 +164,21 @@ export default function IcfesLeadResultOffers({
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'No pudimos guardar tus datos. Intenta nuevamente.');
     } finally {
+      setSavingLead(false);
+    }
+  }
+
+  async function redeemCode(event: React.FormEvent) {
+    event.preventDefault();
+    setMessage('');
+    if (!accessCode.trim()) return;
+    setSavingLead(true);
+    try {
+      const access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'icfes', attemptRef: result.attemptId });
+      if (!access.unlocked) throw new Error(access.message ?? 'El código no es válido.');
+      window.location.assign(`/practica/icfes-saber-11/resultados/${encodeURIComponent(result.attemptId)}`);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'No pudimos validar el código.');
       setSavingLead(false);
     }
   }
@@ -282,6 +299,12 @@ export default function IcfesLeadResultOffers({
             <div><span>04</span><strong>Revisión personalizada</strong><small>Xpress + tutor</small><b aria-label="Bloqueado">🔒</b></div>
           </div>
         </section>
+
+        {leadCaptured && codeReportAvailable && <form className={styles.form} onSubmit={redeemCode}>
+          <label htmlFor="icfes-offer-access-code">¿Ya tienes un código de acceso?</label>
+          <input id="icfes-offer-access-code" type="text" autoComplete="one-time-code" placeholder="WL-ABCD-EFGH-JKLM-NP" maxLength={24} value={accessCode} onChange={event => setAccessCode(event.target.value.toUpperCase())} disabled={savingLead} />
+          <button className={styles.secondaryButton} disabled={savingLead || !accessCode.trim()}>{savingLead ? 'Validando…' : 'Abrir informe con código'}</button>
+        </form>}
 
         <section className={styles.offers} aria-labelledby="icfes-offers-title">
           <div className={styles.sectionHeading}>

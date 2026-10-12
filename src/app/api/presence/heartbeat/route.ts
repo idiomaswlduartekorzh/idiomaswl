@@ -9,6 +9,7 @@ import {
   hashPresenceIdentity,
   isPresenceStorageConfigured,
   PRESENCE_COOKIE,
+  recordDailyPageReach,
   readPresenceCookieValue,
   upsertPresence,
 } from '@/lib/presence.server'
@@ -53,15 +54,25 @@ export async function POST(request: NextRequest) {
   const id = existingId ?? readPresenceCookieValue(cookieValue)
   if (!cookieValue || !id) return new NextResponse(null, { status: 503 })
 
+  const sessionKey = hashPresenceIdentity(`browser:${id}`)
+  const kind = classifyPresence(request.headers.get('user-agent'), body.webdriver === true)
   try {
     await upsertPresence({
-      sessionKey: hashPresenceIdentity(`browser:${id}`),
-      kind: classifyPresence(request.headers.get('user-agent'), body.webdriver === true),
+      sessionKey,
+      kind,
       source: 'heartbeat',
       path,
     })
   } catch {
     return new NextResponse(null, { status: 503, headers: { 'Cache-Control': 'no-store' } })
+  }
+
+  if (kind === 'person') {
+    try {
+      await recordDailyPageReach(sessionKey, path)
+    } catch (error) {
+      console.error('[presence] daily page reach failed:', error instanceof Error ? error.message : 'unknown')
+    }
   }
 
   const response = new NextResponse(null, {

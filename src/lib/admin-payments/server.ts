@@ -73,6 +73,7 @@ export interface AdminPaymentsData {
   generatedAt: string;
   currentEnvironment: WompiEnvironment;
   wompiConfigured: boolean;
+  configurationIssue: string | null;
   setupRequired: boolean;
   ledger: AdminPaymentLedgerRow[];
   links: AdminPaymentLinkRow[];
@@ -134,7 +135,13 @@ async function createWompiPaymentLink(input: Readonly<{
 
   if (!response.ok) {
     console.error(`[admin-payments] Wompi rechazó el link con HTTP ${response.status}.`);
-    throw new WompiPaymentLinkError('Wompi rechazó la creación del link.');
+    if (response.status === 401 || response.status === 403) {
+      throw new WompiPaymentLinkError('Wompi no aceptó la llave privada para crear links. Revisa las credenciales del ambiente activo.');
+    }
+    if (response.status === 400 || response.status === 422) {
+      throw new WompiPaymentLinkError('Wompi rechazó los datos del link. Revisa el valor, el concepto y el vencimiento.');
+    }
+    throw new WompiPaymentLinkError(`Wompi no pudo crear el link (HTTP ${response.status}). Intenta de nuevo.`);
   }
 
   let body: unknown;
@@ -370,11 +377,12 @@ function mapPaymentLinkRow(row: Record<string, unknown>): AdminPaymentLinkRow {
 export async function loadAdminPaymentsData(): Promise<AdminPaymentsData> {
   let currentEnvironment: WompiEnvironment = 'production';
   let wompiConfigured = false;
+  let configurationIssue: string | null = null;
   try {
     currentEnvironment = getWompiServerConfig().environment;
     wompiConfigured = true;
-  } catch {
-    // The dashboard remains useful for historical data while configuration is repaired.
+  } catch (error) {
+    configurationIssue = error instanceof Error ? error.message : 'No fue posible validar las credenciales de Wompi.';
   }
 
   const db = createAdminClient();
@@ -414,6 +422,7 @@ export async function loadAdminPaymentsData(): Promise<AdminPaymentsData> {
     generatedAt: new Date().toISOString(),
     currentEnvironment,
     wompiConfigured,
+    configurationIssue,
     setupRequired,
     ledger: ((ledgerResult.data ?? []) as Record<string, unknown>[])
       .map(mapLedgerRow)

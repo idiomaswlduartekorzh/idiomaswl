@@ -1103,29 +1103,33 @@ type Phase = 'intro' | 'exam' | 'module-break' | 'lead' | 'results';
 function LeadGateView({
   exam,
   breakdownLabel,
+  secureIcfes,
   onSubmit,
 }: {
   exam: Exam;
   // Qué desglose se promete antes de pedir los datos. Tiene que ser el que la pantalla
   // de resultados enseña de verdad: el SAT lo da por dominio, los demás por parte.
   breakdownLabel: string;
-  onSubmit: (lead: { name: string; email: string; whatsapp: string }) => Promise<void>;
+  secureIcfes?: boolean;
+  onSubmit: (lead: { name: string; email: string; whatsapp: string; contactConsent: boolean }) => Promise<void>;
 }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [contactConsent, setContactConsent] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (name.trim().length < 2) { setError('Ingresa tu nombre completo'); return; }
     if (!isPlausibleEmail(email)) { setError('Ingresa un correo válido'); return; }
     if (!isPlausibleWhatsapp(whatsapp)) { setError('Ingresa un WhatsApp válido de 10 a 15 dígitos'); return; }
+    if (secureIcfes && !contactConsent) { setError('Autoriza el guardado de tus datos para continuar.'); return; }
     setLoading(true);
     setError('');
     try {
-      await onSubmit({ name: name.trim(), email: email.trim(), whatsapp: whatsapp.trim() });
+      await onSubmit({ name: name.trim(), email: email.trim(), whatsapp: whatsapp.trim(), contactConsent });
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'No pudimos guardar tus datos. Intenta de nuevo.');
       setLoading(false);
@@ -1138,8 +1142,9 @@ function LeadGateView({
         <div className="prac-lead-gate__icon">🎯</div>
         <h2 className="prac-lead-gate__title">¡Tu simulacro está listo!</h2>
         <p className="prac-lead-gate__sub">
-          Déjanos tus datos y te mostramos tu resultado, {breakdownLabel} y respuestas correctas.
-          También te enviaremos consejos personalizados para mejorar tu puntaje.
+          {secureIcfes
+            ? 'Guarda tus datos para consultar tu puntaje básico. Después podrás elegir si quieres un informe detallado.'
+            : `Déjanos tus datos y te mostramos tu resultado, ${breakdownLabel} y respuestas correctas. También te enviaremos consejos personalizados para mejorar tu puntaje.`}
         </p>
         <form onSubmit={handleSubmit} className="prac-lead-gate__form">
           <div className="prac-lead-gate__field">
@@ -1176,6 +1181,10 @@ function LeadGateView({
               disabled={loading}
             />
           </div>
+          {secureIcfes && <label className="prac-lead-gate__field" style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+            <input type="checkbox" required checked={contactConsent} onChange={e => setContactConsent(e.target.checked)} disabled={loading} />
+            <span>Autorizo a WeLearn a guardar estos datos y contactarme sobre mi resultado y preparación ICFES. Puedo retirar mi autorización.</span>
+          </label>}
           {error && <p className="prac-lead-gate__error">{error}</p>}
           <button type="submit" className="btn prac-lead-gate__btn" disabled={loading}>
             {loading ? 'Guardando…' : 'Ver mis resultados →'}
@@ -1244,22 +1253,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   const handleSubmit = useCallback(async () => {
     if (secureIcfes) {
       setGradingError('');
-      try {
-        const response = await fetch('/api/icfes/attempts/grade', {
-          method: 'POST', headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ examId: mock.id, attemptToken, responses: answers }),
-        });
-        const data = await response.json() as { ok?: boolean; result?: IcfesBasicResultDto; error?: string };
-        if (!response.ok || !data.ok || !data.result) throw new Error(data.error ?? 'No pudimos calificar el intento.');
-        setSecureResult(data.result);
-        trackIcfesEvent('icfes_mock_complete', {
-          mock_id: mock.id, mode: 'exam', question_count: data.result.total,
-          correct_count: data.result.correct, accuracy: data.result.percentage,
-        });
-        setPhase('results');
-      } catch (error) {
-        setGradingError(error instanceof Error ? error.message : 'No pudimos calificar el intento.');
-      }
+      setPhase('lead');
       return;
     }
     // Compute score and go to lead gate — actual save happens after lead form
@@ -1278,6 +1272,24 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     }
     setPhase('lead');
   }, [allQuestions, answers, attemptToken, exam.slug, mock.id, secureIcfes]);
+
+  const handleSecureLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string; contactConsent: boolean }) => {
+    const response = await fetch('/api/icfes/attempts/grade', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ examId: mock.id, attemptToken, responses: answers, lead }),
+    });
+    const data = await response.json() as { ok?: boolean; result?: IcfesBasicResultDto; error?: string };
+    if (!response.ok || !data.ok || !data.result) throw new Error(data.error ?? 'No pudimos registrar el intento.');
+    setSecureResult(data.result);
+    trackIcfesEvent('icfes_lead_submit', { mock_id: mock.id, lead_context: 'post_exam_required' });
+    trackIcfesEvent('icfes_mock_complete', {
+      mock_id: mock.id, mode: 'exam', question_count: data.result.total,
+      correct_count: data.result.correct, accuracy: data.result.percentage,
+    });
+    window.dataLayer = window.dataLayer ?? [];
+    window.dataLayer.push({ event: 'lead_simulacro', exam_slug: 'icfes', exam_score: `${data.result.correct}/${data.result.total} correctas (${data.result.percentage}%)` });
+    setPhase('results');
+  }, [answers, attemptToken, mock.id]);
 
   // Entrega del módulo 1: se puntúa SOLO ese módulo, se decide la rama y ya no se
   // puede volver — igual que en el examen real.
@@ -1448,14 +1460,15 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
         <LeadGateView
           exam={exam}
           breakdownLabel={hasDomains ? 'análisis por dominio' : 'análisis por parte'}
-          onSubmit={handleLeadSubmit}
+          secureIcfes={Boolean(secureIcfes)}
+          onSubmit={secureIcfes ? handleSecureLeadSubmit : handleLeadSubmit}
         />
       </div>
     );
   }
 
   if (phase === 'results') {
-    if (secureIcfes && secureResult) return <IcfesLeadResultOffers result={secureResult} offerEnabled={secureIcfes.offerEnabled} onRetry={handleRetry} />;
+    if (secureIcfes && secureResult) return <IcfesLeadResultOffers result={secureResult} offerEnabled={secureIcfes.offerEnabled} onRetry={handleRetry} leadCaptured />;
     return (
       <div className="prac-shell">
         <ResultsView mock={servedMock} exam={exam} answers={answers} onRetry={handleRetry} routedTo={routedTo} />

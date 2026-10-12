@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import {
-  LayoutDashboard, Users, FileText, DollarSign, Settings,
+  LayoutDashboard, Users, FileText, DollarSign,
   MessageCircle, Globe, BookOpen, GraduationCap,
   Calendar, Download,
   KeyRound,
@@ -22,6 +22,8 @@ import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
 import GoetheReviewPanel from './GoetheReviewPanel'
 import LivePresenceCard from './LivePresenceCard'
+import TrafficOverview from './TrafficOverview'
+import styles from './admin-navigation.module.css'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
@@ -105,12 +107,6 @@ function ActionCard({
       <strong style={{ color, fontSize: 26, lineHeight: 1 }}>{value}</strong>
     </button>
   )
-}
-
-function IconBtn({ icon: Icon, active, highlight, onClick, disabled, href, label }: { icon: React.ElementType; active?: boolean; highlight?: boolean; onClick?: () => void; disabled?: boolean; href?: string; label?: string }) {
-  const style: React.CSSProperties = { width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : highlight ? '#e5f4f0' : 'transparent', color: active ? '#fff' : highlight ? '#155d53' : disabled ? BORDER : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: onClick || href ? 'pointer' : 'default', flexShrink: 0, textDecoration: 'none' }
-  if (href) return <Link href={href} aria-label={label} title={label} style={style}><Icon size={17} /></Link>
-  return <button type="button" onClick={onClick} disabled={disabled} aria-label={label} title={disabled ? 'Próximamente' : label} style={style}><Icon size={17} /></button>
 }
 
 function weekTrend(thisWeek: number, lastWeek: number): string {
@@ -209,18 +205,19 @@ function leadsCsv(leads: LeadRow[]): string {
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
-type Tab = 'overview' | 'students' | 'leads'
+type Tab = 'overview' | 'students' | 'leads' | 'reviews'
 
 const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean }[] = [
   { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
   { Icon: Users,           tab: 'students', label: 'Estudiantes' },
-  { Icon: BookOpen,        tab: null, label: 'Contenido' },
+  { Icon: ClipboardCheck,  tab: 'reviews', label: 'Corrección de exámenes' },
+  { Icon: FileText,        tab: null, href: '/dashboard/admin/revisiones-xpress', label: 'Revisiones Xpress' },
   { Icon: KeyRound,        tab: null, href: '/dashboard/admin/claves', label: 'Claves de exámenes', highlight: true },
+  { Icon: KeyRound,        tab: null, href: '/dashboard/admin/codigos-examen', label: 'Códigos de examen' },
   { Icon: MessageCircle,   tab: 'leads', label: 'Leads' },
-  { Icon: FileText,        tab: null, label: 'Documentos' },
   { Icon: DollarSign,      tab: null, href: '/dashboard/admin/pagos', label: 'Pagos y finanzas' },
-  { Icon: Settings,        tab: null, label: 'Configuración' },
-  { Icon: Globe,           tab: null, label: 'Sitio' },
+  { Icon: Globe,           tab: null, href: '/dashboard/admin/contactos', label: 'Origen de contactos' },
+  { Icon: BookOpen,        tab: null, href: '/dashboard/admin/live/create', label: 'Live Quiz' },
 ]
 
 export default function JoseDashboard({ data, viewer }: { data: DashboardData; viewer: AdminViewer }) {
@@ -278,22 +275,15 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
   return (
     <div style={{ display: 'flex', height: '100vh', background: BG, fontFamily: "system-ui,-apple-system,'Segoe UI',sans-serif", overflow: 'hidden', color: TEXT }}>
 
-      {/* ── LEFT SIDEBAR — icon only ── */}
-      <aside style={{ width: 62, background: CARD, borderRight: `1px solid ${BORDER}`, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 18, gap: 6, flexShrink: 0 }}>
-        <div style={{ width: 36, height: 36, background: A, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
+      {/* ── LEFT SIDEBAR ── */}
+      <aside className={styles.sidebar} aria-label="Navegación del administrador">
+        <div className={styles.brand}>
           <GraduationCap size={18} color="#fff" />
+          <span>Administración</span>
         </div>
         {SIDEBAR_ITEMS.map(({ Icon, tab, href, label, highlight }, i) => (
-          <IconBtn
-            key={i}
-            icon={Icon}
-            active={tab !== null && activeTab === tab}
-            onClick={tab ? () => setActiveTab(tab) : undefined}
-            href={href}
-            label={label}
-            highlight={highlight}
-            disabled={tab === null && !href}
-          />
+          href ? <Link key={i} href={href} className={`${styles.item} ${highlight ? styles.highlight : ''}`} title={label}><Icon size={17} /><span>{label}</span></Link>
+            : <button key={i} type="button" onClick={() => tab && setActiveTab(tab)} className={`${styles.item} ${tab === activeTab ? styles.active : ''}`} title={label} aria-current={tab === activeTab ? 'page' : undefined}><Icon size={17} /><span>{label}</span></button>
         ))}
       </aside>
 
@@ -308,43 +298,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
             </span>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flex: 1, overflow: 'hidden' }}>
-            <button
-              onClick={() => setActiveTab('overview')}
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'overview' ? TEXT : 'transparent', color: activeTab === 'overview' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
-              <LayoutDashboard size={13} /> Centro operativo
-            </button>
-            <button
-              onClick={() => setActiveTab('students')}
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'students' ? TEXT : 'transparent', color: activeTab === 'students' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
-              <Users size={13} /> Estudiantes
-            </button>
-            <button
-              onClick={() => setActiveTab('leads')}
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'leads' ? '#14215c' : 'transparent', color: activeTab === 'leads' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
-              <MessageCircle size={13} /> Leads {data.leads.length > 0 && <span style={{ background: A, color: '#fff', borderRadius: 10, fontSize: 10, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>{data.leads.length}</span>}
-            </button>
-            <Link
-              href="/dashboard/admin/pagos"
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(22,101,52,.11)', color: '#166534', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
-              <DollarSign size={13} /> Pagos y finanzas
-            </Link>
-            <Link
-              href="/dashboard/admin/revisiones-xpress"
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(49,87,213,.12)', color: '#3157d5', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
-              Revisiones Xpress
-            </Link>
-            <Link
-              href="/dashboard/admin/codigos-examen"
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(200,121,65,.12)', color: '#9b4e21', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
-              <KeyRound size={13} /> Códigos de examen
-            </Link>
-            <Link
-              href="/dashboard/admin/live/create"
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: 'rgba(99,60,180,0.25)', color: '#a78bfa', fontSize: 12, fontWeight: 700, cursor: 'pointer', textDecoration: 'none', flexShrink: 0 }}>
-              🎬 Live Quiz
-            </Link>
-          </div>
+          <div style={{ flex: 1 }} />
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 11, color: MUTED }}>
@@ -368,10 +322,6 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
 
         {/* CONTENT */}
         <main style={{ flex: 1, overflowY: 'auto', padding: '22px 24px', display: 'flex', flexDirection: 'column', gap: 14 }}>
-          <Link href="/dashboard/admin/contactos" style={{ alignSelf: 'flex-start', color: '#9b4e21', fontWeight: 700, fontSize: 14, padding: '10px 0' }}>
-            Origen de contactos WhatsApp →
-          </Link>
-
           {/* ── STUDENTS TAB ── */}
           {activeTab === 'students' && (
             <div>
@@ -510,6 +460,23 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
             </div>
           )}
 
+          {/* ── EXAM REVIEWS ── */}
+          {activeTab === 'reviews' && <>
+            <div><h1 style={{ margin: 0, fontSize: 26, fontWeight: 800 }}>Corrección de exámenes</h1><p style={{ color: MUTED, fontSize: 12 }}>Entregas pendientes e historial de revisión académica.</p></div>
+            <div id="review-queues" style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+              <Card>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
+                  <div><h3 style={{ margin: 0, fontSize: 14 }}>Nivel Radar · revisión diagnóstica</h3><p style={{ margin: '4px 0 0', color: MUTED, fontSize: 11 }}>Calificación ciega MCER y adjudicación independiente.</p></div>
+                  <Link href="/dashboard/admin/nivel-radar" style={{ background: A, color: '#fff', borderRadius: 9, padding: '9px 12px', fontSize: 11, fontWeight: 800, textDecoration: 'none' }}>Abrir cola</Link>
+                </div>
+              </Card>
+              {data.ieltsReviews.length > 0 && <IELTSReviewPanel items={data.ieltsReviews} />}
+              {data.toeflReviews.length > 0 && <TOEFLReviewPanel items={data.toeflReviews} />}
+              {data.goetheReviews.length > 0 && <GoetheReviewPanel items={data.goetheReviews} />}
+              {pendingReviewCount === 0 && data.ieltsReviews.length + data.toeflReviews.length + data.goetheReviews.length === 0 && <Card><p style={{ margin: 0, color: MUTED, fontSize: 12 }}>No hay entregas abiertas para revisión académica.</p></Card>}
+            </div>
+          </>}
+
           {/* ── OVERVIEW TAB ── */}
           {activeTab === 'overview' && <>
 
@@ -517,11 +484,12 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <h1 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>Centro operativo</h1>
-              <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Datos reales de exámenes, leads y estudiantes.</p>
+              <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Tráfico, actividad de exámenes y señales del sitio.</p>
             </div>
           </div>
 
           <LivePresenceCard />
+          <TrafficOverview traffic={data.traffic} completedExams7d={data.completedExams7d} examLeads7d={data.examLeads7d} />
 
           {/* Acciones que requieren atención, calculadas con datos reales. */}
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }} aria-label="Prioridades operativas">
@@ -531,7 +499,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               value={pendingReviewCount}
               detail="IELTS, TOEFL y Goethe aún sin cerrar"
               color="#7c3aed"
-              onClick={() => document.getElementById('review-queues')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => setActiveTab('reviews')}
             />
             <ActionCard
               icon={MessageCircle}
@@ -647,24 +615,6 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                 ))}
               </div>
             </Card>
-          </div>
-
-          {/* IELTS, TOEFL y Goethe: cola pendiente e historial revisado. */}
-          <div id="review-queues" style={{ display: 'flex', flexDirection: 'column', gap: 14, scrollMarginTop: 18 }}>
-            <Card>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
-                <div><h3 style={{ margin: 0, fontSize: 14 }}>Nivel Radar · revisión diagnóstica</h3><p style={{ margin: '4px 0 0', color: MUTED, fontSize: 11 }}>Calificación ciega MCER y adjudicación independiente.</p></div>
-                <Link href="/dashboard/admin/nivel-radar" style={{ background: A, color: '#fff', borderRadius: 9, padding: '9px 12px', fontSize: 11, fontWeight: 800, textDecoration: 'none' }}>Abrir cola</Link>
-              </div>
-            </Card>
-            {data.ieltsReviews.length > 0 && <IELTSReviewPanel items={data.ieltsReviews} />}
-            {data.toeflReviews.length > 0 && <TOEFLReviewPanel items={data.toeflReviews} />}
-            {data.goetheReviews.length > 0 && <GoetheReviewPanel items={data.goetheReviews} />}
-            {pendingReviewCount === 0 && data.ieltsReviews.length + data.toeflReviews.length + data.goetheReviews.length === 0 && (
-              <Card>
-                <p style={{ margin: 0, color: MUTED, fontSize: 12 }}>No hay entregas abiertas para revisión académica.</p>
-              </Card>
-            )}
           </div>
 
           {/* Row 3: Recent submissions + Top users */}

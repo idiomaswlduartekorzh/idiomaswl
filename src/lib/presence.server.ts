@@ -80,8 +80,24 @@ export async function upsertPresence(input: {
   // the dashboard for a long period. The cleanup contains no visitor data.
   if (input.sessionKey.endsWith('00')) {
     const staleCutoff = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
-    await createAdminClient().from('site_presence').delete().lt('last_seen', staleCutoff)
+    const reachCutoff = new Date(Date.now() - 31 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10)
+    const admin = createAdminClient()
+    await Promise.all([
+      admin.from('site_presence').delete().lt('last_seen', staleCutoff),
+      admin.from('site_daily_page_reach').delete().lt('day', reachCutoff),
+    ])
   }
+}
+
+export async function recordDailyPageReach(sessionKey: string, path: string): Promise<void> {
+  const { error } = await createAdminClient().from('site_daily_page_reach').upsert({
+    day: new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/Bogota', year: 'numeric', month: '2-digit', day: '2-digit',
+    }).format(new Date()),
+    session_key: sessionKey,
+    path,
+  }, { onConflict: 'day,session_key,path', ignoreDuplicates: true })
+  if (error) throw new Error(`site_daily_page_reach_upsert_failed:${error.code ?? 'unknown'}`)
 }
 
 export async function recordBotPresence(request: NextRequest): Promise<void> {

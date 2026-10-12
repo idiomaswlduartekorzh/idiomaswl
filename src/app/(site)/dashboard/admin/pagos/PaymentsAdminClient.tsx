@@ -297,7 +297,7 @@ export default function PaymentsAdminClient({
       {!data.wompiConfigured && (
         <section className={styles.warning} role="alert">
           <AlertTriangle size={20} />
-          <div><strong>Wompi no está configurado.</strong><br />El historial puede consultarse, pero no se crearán links hasta corregir las variables privadas.</div>
+          <div><strong>La creación de links está deshabilitada.</strong><br />{data.configurationIssue ?? 'Revisa las credenciales de Wompi.'}</div>
         </section>
       )}
 
