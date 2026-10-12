@@ -23,8 +23,10 @@ estructurales. El alias `www.idiomaswl.com` apuntó a ese deployment y la ruta
 
 ## Inicio de métricas y operación de exámenes — 12 de octubre de 2026
 
-`codex/admin-metrics-exam-ops` parte de `origin/main` en `da69405e`. Estado:
-`EN_VALIDACION`. El inicio administrativo muestra visitantes diarios, llegadas e
+`codex/admin-metrics-exam-ops` partió de `origin/main` en `da69405e`. Estado:
+`DESPLEGADO` en `39e3bdf2f5ffe25eedc91ee817433de2785222fb`, deployment
+`dpl_EFFryhfB8vEqo3QYL4WLWJoGRWgE` (`READY`) desde `main`. El inicio
+administrativo muestra visitantes diarios, llegadas e
 inactividad aproximadas, páginas con más y menos alcance, y distingue visitas a
 simulacros, entregas y leads. La nueva tabla de alcance diario registra únicamente
 identificadores anónimos hash y páginas públicas; la migración aditiva
@@ -40,7 +42,11 @@ causa concreta si las credenciales deshabilitan el botón y errores específicos
 de autorización o validación de Wompi; queda pendiente confirmar con el
 administrador el síntoma exacto y el origen deseado de los links. Validaciones:
 17/17 pruebas ICFES, catálogo protegido, TypeScript y build Webpack de 2.599
-páginas. La integración y el smoke productivo se registrarán después del merge.
+páginas. Vercel compiló las mismas 2.599 páginas y pasó TypeScript. El alias
+`www.idiomaswl.com` quedó en este deployment. Smoke público: HTTP 200 en `/` y
+`/examenes/cambridge-b2/practica/set-3`; HTTP 307 a `/login` para el centro
+operativo, claves y pagos sin sesión; HTTP 405 en GET de la API de calificación.
+La tabla de alcance recibió dos navegadores reales después de publicar.
 
 ## Tracker financiero y links de pago administrativos — 30 de septiembre de 2026
 
