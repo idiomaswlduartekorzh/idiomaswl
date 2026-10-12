@@ -338,6 +338,11 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               <KeyRound size={13} /> Códigos de examen
             </Link>
             <Link
+              href="/dashboard/admin/claves"
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(29,128,115,.13)', color: '#17695f', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
+              <KeyRound size={13} /> Claves de respuestas
+            </Link>
+            <Link
               href="/dashboard/admin/live/create"
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: 'rgba(99,60,180,0.25)', color: '#a78bfa', fontSize: 12, fontWeight: 700, cursor: 'pointer', textDecoration: 'none', flexShrink: 0 }}>
               🎬 Live Quiz
@@ -518,6 +523,11 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Datos reales de exámenes, leads y estudiantes.</p>
             </div>
           </div>
+
+          <Link href="/dashboard/admin/claves" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, padding: '17px 20px', borderRadius: 14, border: '1px solid #b9ded7', background: '#e5f4f0', color: '#155d53', textDecoration: 'none' }}>
+            <span style={{ display: 'grid', gap: 3 }}><strong style={{ fontSize: 15 }}>Biblioteca de claves de exámenes</strong><small style={{ fontSize: 12 }}>Busca respuestas por examen, set y sección; consulta variantes aceptadas y alertas de integridad.</small></span>
+            <span aria-hidden="true" style={{ fontSize: 22 }}>↗</span>
+          </Link>
 
           <LivePresenceCard />
 

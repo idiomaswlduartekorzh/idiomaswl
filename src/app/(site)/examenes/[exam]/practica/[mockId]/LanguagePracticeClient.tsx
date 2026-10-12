@@ -7,6 +7,7 @@ import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { resolveAudioUrl } from '@/lib/examAudio';
+import { acceptsExamAnswer } from '@/lib/exams/accepted-answer';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
 import { isFreeGoetheMock } from '@/lib/labs/exam-bridge/goethe';
@@ -46,18 +47,8 @@ function formatTime(s: number) {
   return `${m}:${sec}`;
 }
 
-function normaliseAnswer(value: string) {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/[.,;:!?]+$/g, '')
-    .replace(/\s+/g, ' ');
-}
-
 function isAcceptedAnswer(value: string | undefined, blank: FormBlank) {
-  if (!value) return false;
-  const candidate = normaliseAnswer(value);
-  return blank.answers.some(answer => normaliseAnswer(answer) === candidate);
+  return acceptsExamAnswer(value, blank.answers);
 }
 
 function sameLetterSet(a: string[], b: string[]) {

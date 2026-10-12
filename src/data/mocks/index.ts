@@ -407,6 +407,14 @@ export function getMock(examSlug: string, mockId: string): MockExam | null {
     : mock;
 }
 
+/** Only mocks currently served by the public practice route. Server use only. */
+export function getRegisteredMockKeys(): string[] {
+  return Object.keys(MOCK_REGISTRY).filter(key => {
+    const separator = key.indexOf(':');
+    return getMock(key.slice(0, separator), key.slice(separator + 1)) !== null;
+  });
+}
+
 export function getGoetheA2PracticeMock(
   mockId: string,
   skill: 'reading' | 'writing' | 'speaking',
