@@ -83,5 +83,7 @@ test('el simulacro público no serializa claves ni explicaciones antes del lead'
   assert.equal(JSON.stringify(publicMock).includes('secret'), false)
   assert.equal(JSON.stringify(publicMock).includes('rationales'), false)
   assert.equal('answer' in publicMock.sections[0].questions[0], false)
-  assert.equal('answer' in (publicMock.sections[0].questions[2] as { items: Record<string, unknown>[] }).items[0], false)
+  const matching = publicMock.sections[0].questions[2]
+  assert.equal(matching.type, 'matching')
+  if (matching.type === 'matching') assert.equal('answer' in matching.items[0], false)
 })
