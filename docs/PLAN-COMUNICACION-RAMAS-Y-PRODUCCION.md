@@ -9,6 +9,31 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Captura obligatoria de leads en simulacros — 12 de octubre de 2026
+
+`codex/exam-lead-result-gates` se integró en `main` en
+`89c47486aaa3e0d7c94ef8dce53cefb4b10f7f49`. Estado: `DESPLEGADO` en
+Vercel `dpl_A8FhPgWVrveBLKwUqGSdPh4WqJQB` (`READY`, producción desde
+`main`, mismo SHA). `www.idiomaswl.com` apuntó a ese deployment.
+
+Se auditó el despacho de los diez catálogos de simulacros completos. TOPIK ya
+no admite la marca local `wl_lead_captured` como prueba de contacto; todos los
+formularios obligatorios comprueban el ID persistido del lead antes de abrir
+la nota. El motor TOEFL antiguo sin barrera quedó fuera de la ruta pública y
+el TOEFL 2026 calcula las secciones después de confirmar la entrega. IELTS
+rechaza sets sin contrato de entrega. El admin incluye la fuente nueva
+`exam-results` y conserva las históricas.
+
+Validaciones: 23 pruebas dirigidas, `check:practica-catalog`, TypeScript y
+build Webpack local de 2.599 páginas. Vercel compiló y generó las mismas
+2.599 páginas. Smoke público: HTTP 200 en Home, TOPIK set 1 y Cambridge B2
+set 3; HTTP 307 en admin sin sesión; HTTP 405 en GET de la API ICFES.
+Playwright completó las 30 preguntas de TOPIK en producción con la marca local
+forzada: el formulario apareció y el resultado no estaba en el DOM. No se
+envió un contacto ficticio. El alcance y los límites de las prácticas por
+destreza y de claves presentes en el cliente están en
+[`exam-lead-gate-audit-2026-10-12.md`](exam-lead-gate-audit-2026-10-12.md).
+
 ## Acceso lateral al hub de claves — 12 de octubre de 2026
 
 `codex/exam-answer-hub` actualizó el centro operativo para mostrar **Claves de
