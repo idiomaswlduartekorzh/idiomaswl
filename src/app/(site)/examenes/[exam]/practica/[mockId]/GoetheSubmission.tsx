@@ -90,8 +90,8 @@ export default function GoetheSubmission({
     try {
       if (!leadSaved.current) {
         setState('capturing')
-        const lead = await saveLead({ name: cleanName, email: cleanEmail, whatsapp, examSlug: 'goethe', examScore: 'Simulacro A1 enviado · evaluación pendiente', source: 'goethe-practica' })
-        if (!lead.ok) throw new Error(lead.error ?? 'No pudimos guardar los datos de contacto.')
+        const lead = await saveLead({ name: cleanName, email: cleanEmail, whatsapp, examSlug: 'goethe', examScore: 'Simulacro A1 enviado · evaluación pendiente', source: 'goethe-practica', contactConsent: consent, consentVersion: GOETHE_SUBMISSION_CONSENT_VERSION })
+        if (!lead.ok || !lead.id) throw new Error(lead.error ?? 'No pudimos guardar los datos de contacto.')
         leadSaved.current = true
       }
       const payload = {

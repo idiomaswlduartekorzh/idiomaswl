@@ -34,7 +34,7 @@ test('the shared IELTS runner captures the lead, gates the report and supports a
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx');
   const submission = read('src/components/exam-runner/IELTSSubmission.tsx');
   assert.match(submission, /await saveLead\(/u);
-  assert.match(submission, /if \(!leadResult\.ok\)[\s\S]*throw new Error/u);
+  assert.match(submission, /if \(!leadResult\.ok \|\| !leadResult\.id\)[\s\S]*throw new Error/u);
   assert.match(submission, /Código de acceso/u);
   assert.match(submission, /redeemExamAccessCodeFromBrowser/u);
   assert.match(runner, /setPhase\('results'\)/u);

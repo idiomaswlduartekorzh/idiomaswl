@@ -144,8 +144,10 @@ export function IELTSSubmission({
           examSlug: 'ielts',
           examScore: 'Simulacro enviado para evaluación',
           source: 'ielts-practica',
+          contactConsent: consent,
+          consentVersion: IELTS_SUBMISSION_CONSENT_VERSION,
         });
-        if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
+        if (!leadResult.ok || !leadResult.id) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
         leadSavedRef.current = true;
       }
 
@@ -278,7 +280,7 @@ export function IELTSSubmission({
             <input type="checkbox" name="evaluation_consent" checked={consent}
               onChange={event => setConsent(event.target.checked)} required />
             <span>
-              Autorizo el almacenamiento privado de mis respuestas para su evaluación académica por el equipo docente y evaluadores autorizados. Los accesos temporales no revelan mi nombre ni correo.
+              Autorizo el almacenamiento privado de mis respuestas para su evaluación académica y el contacto de WeLearn relacionado con este simulacro. Los accesos temporales no revelan mi nombre ni correo.
             </span>
           </label>
           <p className="ielts-submit__privacy">

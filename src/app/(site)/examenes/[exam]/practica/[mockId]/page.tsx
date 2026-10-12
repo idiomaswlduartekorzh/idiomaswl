@@ -4,7 +4,6 @@ import { EXAMS } from '@/data/exams';
 import { getGoetheA2PracticeMock, getGoetheB1PracticeMock, getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
 import IELTSPracticeClient from './IELTSPracticeClient';
-import TOEFLPracticeClient from './TOEFLPracticeClient';
 import Toefl2026PracticeClient from './Toefl2026PracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
@@ -14,6 +13,7 @@ import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 import { parseGoetheA2PracticeTeil, parseGoetheB1PracticeTeil, parseGoethePracticeTeil, type GoetheA2PracticeSkill, type GoetheB1PracticeSkill, type GoethePracticeSkill } from '@/lib/goethe/practice';
 import { hasGoetheA1Audio } from '@/lib/goethe/release';
 import { sanitizeIeltsMock } from '@/lib/ielts/public-mock';
+import { getIeltsReviewBlueprint } from '@/lib/ielts/review-blueprint';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -67,16 +67,16 @@ export default async function PracticePage({ params, searchParams }: { params: P
   />;
 
   if (slug === 'ielts') {
+    if (!getIeltsReviewBlueprint(mockId)) notFound();
     const practiceSkill = query.mode === 'practice' && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
       ? query.skill as 'reading' | 'writing' | 'speaking'
       : undefined;
     return <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
   }
   if (slug === 'toefl') {
-    // All twenty public TOEFL sets use the audited fixed-form 2026 runner.
-    return mock.format === 'toefl-2026'
-      ? <Toefl2026PracticeClient exam={exam} mock={mock} />
-      : <TOEFLPracticeClient exam={exam} mock={mock} />;
+    // The legacy runner has no lead gate. Keep unsupported forms closed.
+    if (mock.format !== 'toefl-2026') notFound();
+    return <Toefl2026PracticeClient exam={exam} mock={mock} />;
   }
   // TOPIK: set-1 es el diagnóstico-gancho de leads (UI propia, sin timer);
   // los demás sets son simulacros completos con el blueprint unificado.

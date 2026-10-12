@@ -63,6 +63,11 @@ export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: st
   const rawEmail = sanitize(input.email, 254);
   const email = rawEmail ? normalizeEmail(rawEmail) : null;
   if (rawEmail && !email) return { ok: false, error: 'Ingresa un correo electrónico válido.' };
+  const leadSource = typeof input.source === 'string' ? input.source : '';
+  const isRequiredExamLead = leadSource === 'exam-results' || leadSource.endsWith('-practica');
+  if (isRequiredExamLead && (!sanitize(input.name, 100) || input.name.trim().length < 2 || !email)) {
+    return { ok: false, error: 'Escribe tu nombre completo y un correo electrónico válido.' };
+  }
 
   const requestHeaders = await headers();
   const forwardedFor = requestHeaders.get('x-forwarded-for')?.split(',')[0]?.trim();

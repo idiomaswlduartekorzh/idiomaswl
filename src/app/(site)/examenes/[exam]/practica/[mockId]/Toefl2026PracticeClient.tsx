@@ -757,7 +757,7 @@ interface Handlers {
 
 // ── Main component ────────────────────────────────────────────────────────────────
 
-type Phase = 'intro' | 'exam' | 'submit' | 'results';
+type Phase = 'intro' | 'exam' | 'submit' | 'scoring' | 'results';
 
 function createClientId(prefix: string) {
   const value = typeof crypto !== 'undefined' && 'randomUUID' in crypto
@@ -1120,10 +1120,10 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         nextBuildScore = await response.json() as ToeflBuildSentenceScoreResult;
         setBuildScore(nextBuildScore);
       }
-      setPhase('submit');
+      setPhase('results');
     } catch {
       if (failureSkill === 'writing') setBuildScoringError(true);
-      setPhase('exam');
+      setPhase('scoring');
     } finally {
       setScoringWords(false);
     }
@@ -1156,7 +1156,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 
     const nextIndex = stageIndex + 1;
     if (nextIndex >= stages.length) {
-      await goSubmit();
+      // Contact and exam delivery are confirmed before any scoring response
+      // reaches the browser.
+      setPhase('submit');
       return;
     }
     const nextStage = stages[nextIndex];
@@ -1164,7 +1166,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     setForwardItemIndex(0);
     setStageDeadlineAt(nextStage.timeLimitSeconds ? Date.now() + nextStage.timeLimitSeconds * 1000 : null);
     window.requestAnimationFrame(() => document.getElementById('t26-stage-heading')?.focus());
-  }, [goSubmit, stageIndex, stages]);
+  }, [stageIndex, stages]);
 
   const activeStage = stages[stageIndex];
   const forwardItems = activeStage?.navigation === 'forward-only' ? flattenForwardItems(activeStage) : [];
@@ -1233,11 +1235,22 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             setReceipt(nextReceipt);
             setResultAccess(access);
             try { window.localStorage.removeItem(storageKey); } catch { /* receipt remains in memory */ }
-            setPhase('results');
+            setPhase('scoring');
+            void goSubmit();
           }}
         />
       </div>
     );
+  }
+
+  if (phase === 'scoring') {
+    return <div className="prac-shell exam-unified" data-exam="toefl"><style>{T26_CSS}</style>
+      <div className="prac-intro">
+        <h1 className="prac-intro__title">Preparando tu resultado</h1>
+        <p className="prac-intro__sub">Tu entrega y tus datos ya están registrados. Estamos calculando las secciones objetivas.</p>
+        {!scoringWords && <button type="button" className="btn" onClick={() => void goSubmit()}>Reintentar cálculo</button>}
+      </div>
+    </div>;
   }
 
   if (phase === 'results' && receipt) {

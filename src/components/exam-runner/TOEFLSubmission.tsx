@@ -139,8 +139,10 @@ export function TOEFLSubmission({
           examSlug: 'toefl',
           examScore: 'Simulacro enviado para corrección',
           source: 'toefl-practica',
+          contactConsent: consent,
+          consentVersion: TOEFL_SUBMISSION_CONSENT_VERSION,
         });
-        if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
+        if (!leadResult.ok || !leadResult.id) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
         leadSavedRef.current = true;
       }
 
@@ -246,7 +248,7 @@ export function TOEFLSubmission({
           </div>
           <label className="ielts-submit__consent">
             <input name="reviewConsent" type="checkbox" checked={consent} onChange={event => setConsent(event.target.checked)} required />
-            <span>Autorizo el almacenamiento privado de textos y audios para evaluación académica. Entiendo que las notas de tarea son estimaciones pedagógicas, no resultados oficiales de ETS.</span>
+            <span>Autorizo el almacenamiento privado de textos y audios para evaluación académica y el contacto de WeLearn relacionado con este simulacro. Entiendo que las notas de tarea son estimaciones pedagógicas, no resultados oficiales de ETS.</span>
           </label>
           <p className="ielts-submit__privacy">Los audios no son públicos; el profesor accede mediante enlaces temporales y puedes solicitar su eliminación.</p>
           <p ref={errorRef} className="ielts-submit__error" role="alert" tabIndex={-1} aria-live="assertive">{error}</p>

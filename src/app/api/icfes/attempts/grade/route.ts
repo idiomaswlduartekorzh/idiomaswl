@@ -39,6 +39,12 @@ export async function POST(request: Request): Promise<Response> {
   }
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
+  const savedLead = await saveLead({
+    name, email, whatsapp, examSlug: 'icfes',
+    examScore: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
+    source: 'icfes-practica', contactConsent: true,
+  });
+  if (!savedLead.ok || !savedLead.id) return json({ ok: false, error: savedLead.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.' }, 503);
   try {
     await persistIcfesSubmissionSummary({ examId, examTitle: found.exam.title, result });
   }
@@ -46,12 +52,6 @@ export async function POST(request: Request): Promise<Response> {
     console.error('[icfes-grade] admin summary persistence failed:', error instanceof Error ? error.message : 'unknown');
     return json({ ok: false, error: 'No pudimos registrar el resultado. Intenta nuevamente.' }, 503);
   }
-  const savedLead = await saveLead({
-    name, email, whatsapp, examSlug: 'icfes',
-    examScore: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
-    source: 'icfes-practica', contactConsent: true,
-  });
-  if (!savedLead.ok || !savedLead.id) return json({ ok: false, error: savedLead.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.' }, 503);
   // Mocks remain usable until the private attempt schema is approved and enabled.
   // The admin summary above is always stored, but no attempt cookie is issued because
   // there is no persisted paid report to access while private persistence is disabled.

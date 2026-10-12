@@ -100,7 +100,6 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
   }, []);
 
   function handleSeeResults() {
-    try { if (localStorage.getItem('wl_lead_captured') === '1') { setPhase('results'); return; } } catch {}
     setPhase('lead');
   }
 

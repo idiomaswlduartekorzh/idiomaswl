@@ -1125,7 +1125,7 @@ function LeadGateView({
     if (name.trim().length < 2) { setError('Ingresa tu nombre completo'); return; }
     if (!isPlausibleEmail(email)) { setError('Ingresa un correo válido'); return; }
     if (!isPlausibleWhatsapp(whatsapp)) { setError('Ingresa un WhatsApp válido de 10 a 15 dígitos'); return; }
-    if (secureIcfes && !contactConsent) { setError('Autoriza el guardado de tus datos para continuar.'); return; }
+    if (!contactConsent) { setError('Autoriza el guardado de tus datos para continuar.'); return; }
     setLoading(true);
     setError('');
     try {
@@ -1181,10 +1181,10 @@ function LeadGateView({
               disabled={loading}
             />
           </div>
-          {secureIcfes && <label className="prac-lead-gate__field" style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+          <label className="prac-lead-gate__field" style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
             <input type="checkbox" required checked={contactConsent} onChange={e => setContactConsent(e.target.checked)} disabled={loading} />
-            <span>Autorizo a WeLearn a guardar estos datos y contactarme sobre mi resultado y preparación ICFES. Puedo retirar mi autorización.</span>
-          </label>}
+            <span>Autorizo a WeLearn a guardar estos datos y contactarme sobre mi resultado y preparación {exam.name}. Puedo retirar mi autorización.</span>
+          </label>
           {error && <p className="prac-lead-gate__error">{error}</p>}
           <button type="submit" className="btn prac-lead-gate__btn" disabled={loading}>
             {loading ? 'Guardando…' : 'Ver mis resultados →'}
@@ -1369,8 +1369,10 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
       // 'icfes-practica' hasta el 19 ago 2026, así que todo aspirante al SAT caía en la
       // lista del ICFES. Para el ICFES el valor no cambia (su slug es 'icfes').
       source: `${exam.slug}-practica`,
+      contactConsent: lead.contactConsent,
+      consentVersion: 'exam-contact-v1-2026-10',
     });
-    if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.');
+    if (!leadResult.ok || !leadResult.id) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.');
 
     if (exam.slug === 'icfes') {
       trackIcfesEvent('icfes_lead_submit', {

@@ -71,6 +71,7 @@ test('lead is mandatory and saved before the score-only result is released', () 
   assert.match(route, /lead\?\.contactConsent !== true/);
   assert.match(route, /const savedLead = await saveLead\(/);
   assert.ok(route.indexOf('const savedLead = await saveLead(') < route.indexOf('if (!isIcfesPersistenceEnabled()) return json({ ok: true, result })'));
+  assert.ok(route.indexOf('if (!savedLead.ok || !savedLead.id)') < route.indexOf('await persistIcfesSubmissionSummary('));
   assert.match(route, /if \(!savedLead\.ok \|\| !savedLead\.id\) return json\(\{ ok: false/);
   assert.match(flow, /leadCaptured \? 'offers' : 'lead'/);
   assert.ok(flow.indexOf('data-testid="icfes-lead-gate"') < flow.indexOf('data-testid="icfes-result-offers"'));
@@ -78,7 +79,7 @@ test('lead is mandatory and saved before the score-only result is released', () 
   assert.match(flow, /const saved = await saveLead/);
   assert.match(flow, /source: 'icfes-practica'/);
   assert.match(flow, /event: 'lead_simulacro'/);
-  assert.ok(flow.indexOf('if (!saved.ok)') < flow.indexOf("setStep('offers')"));
+  assert.ok(flow.indexOf('if (!saved.ok || !saved.id)') < flow.indexOf("setStep('offers')"));
   const releasedResult = flow.slice(flow.indexOf('data-testid="icfes-result-offers"'));
   assert.match(releasedResult, /\{result\.correct\}<span>\/\{result\.total\}<\/span>/);
   assert.doesNotMatch(releasedResult, /result\.(?:percentage|byPart|bySkill|recommendation)/);
@@ -89,7 +90,7 @@ test('admin includes both current and legacy ICFES lead sources', () => {
   const dashboard = read('src/app/(site)/dashboard/admin/JoseDashboardServer.tsx');
   assert.match(dashboard, /source\.like\.\*-practica/);
   assert.match(dashboard, /source\.eq\.icfes-post-result-gate-v1/);
-  assert.match(dashboard, /\.in\('source', \['simulacro', 'icfes-post-result-gate-v1', 'nivel-radar'\]\)/);
+  assert.match(dashboard, /\.in\('source', \['exam-results', 'simulacro', 'icfes-post-result-gate-v1', 'nivel-radar'\]\)/);
 });
 
 test('ICFES resource count is derived from the catalog', () => {

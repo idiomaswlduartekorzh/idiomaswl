@@ -140,7 +140,7 @@ export default function IcfesLeadResultOffers({
           examScore: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
           source: 'icfes-practica',
         });
-        if (!saved.ok) throw new Error(saved.error ?? 'No pudimos guardar tus datos.');
+        if (!saved.ok || !saved.id) throw new Error(saved.error ?? 'No pudimos guardar tus datos.');
         leadSavedRef.current = true;
         setLeadSaved(true);
         trackIcfesEvent('icfes_lead_submit', { mock_id: result.examId, lead_context: 'post_exam_required' });

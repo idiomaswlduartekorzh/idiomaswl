@@ -70,7 +70,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
         email:    email || undefined,
         examSlug,
         examScore,
-        source:      'simulacro',
+        source:      mandatory ? 'exam-results' : 'simulacro',
         utmSource:   params.get('utm_source')   ?? undefined,
         utmMedium:   params.get('utm_medium')   ?? undefined,
         utmCampaign: params.get('utm_campaign') ?? undefined,
@@ -84,7 +84,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
         company,
       });
 
-      if (!result.ok) {
+      if (!result.ok || !result.id) {
         setStatus('error');
         setErrorMsg(result.error ?? 'Error al enviar. Intenta de nuevo.');
         return;
