@@ -21,6 +21,13 @@ const INTERNAL_PREFIXES = [
   '/reset-password',
   '/dashboard/admin',
   '/preview',
+  '/evaluacion-ielts',
+]
+
+const PRIVATE_RESULT_PATHS = [
+  /^\/dashboard\/student\/resultados\/[^/]+$/,
+  /^\/examenes\/toefl\/resultado\/[^/]+$/,
+  /^\/practica\/icfes-saber-11\/resultados\/[^/]+$/,
 ]
 
 export function isBotUserAgent(userAgent: string | null | undefined): boolean {
@@ -43,7 +50,11 @@ export function normalizePresencePath(value: unknown): string | null {
     if (url.origin !== base.origin) return null
 
     const pathname = url.pathname.replace(/\/{2,}/g, '/').slice(0, 180)
-    return pathname.startsWith('/') ? pathname : null
+    if (!pathname.startsWith('/')) return null
+    for (const pattern of PRIVATE_RESULT_PATHS) {
+      if (pattern.test(pathname)) return pathname.slice(0, pathname.lastIndexOf('/'))
+    }
+    return pathname
   } catch {
     return null
   }

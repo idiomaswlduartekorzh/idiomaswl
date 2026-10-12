@@ -31,6 +31,8 @@ inactividad aproximadas, páginas con más y menos alcance, y distingue visitas 
 simulacros, entregas y leads. La nueva tabla de alcance diario registra únicamente
 identificadores anónimos hash y páginas públicas; la migración aditiva
 `20261012172320_site_daily_page_reach.sql` está aplicada en Supabase producción.
+Las URLs de resultados con identificadores privados se agrupan por ruta base
+antes de guardar la visita; las páginas de revisión con token no se registran.
 El historial de páginas comienza al publicar el tracker: los días anteriores se
 marcan sin dato. Se verificó RLS habilitado, sin lectura de `anon` ni
 `authenticated`, con inserción de `service_role`.

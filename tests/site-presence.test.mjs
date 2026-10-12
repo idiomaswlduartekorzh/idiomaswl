@@ -16,9 +16,13 @@ test('classifies known automation without treating a normal browser as a bot', (
 
 test('normalizes public paths and rejects internal or foreign routes', () => {
   assert.equal(normalizePresencePath('/practica/ingles?utm_source=test'), '/practica/ingles')
+  assert.equal(normalizePresencePath('/practica/icfes-saber-11/resultados/private-attempt'), '/practica/icfes-saber-11/resultados')
+  assert.equal(normalizePresencePath('/examenes/toefl/resultado/private-submission'), '/examenes/toefl/resultado')
+  assert.equal(normalizePresencePath('/dashboard/student/resultados/private-submission'), '/dashboard/student/resultados')
   assert.equal(normalizePresencePath('https://evil.example/path'), null)
   assert.equal(shouldTrackPresencePath('/dashboard/admin'), false)
   assert.equal(shouldTrackPresencePath('/api/presence/heartbeat'), false)
+  assert.equal(shouldTrackPresencePath('/evaluacion-ielts/private-review-token'), false)
   assert.equal(shouldTrackPresencePath('/dashboard/student'), true)
   assert.equal(shouldTrackPresencePath('/home'), true)
 })
