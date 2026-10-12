@@ -107,8 +107,8 @@ function ActionCard({
   )
 }
 
-function IconBtn({ icon: Icon, active, onClick, disabled, href, label }: { icon: React.ElementType; active?: boolean; onClick?: () => void; disabled?: boolean; href?: string; label?: string }) {
-  const style: React.CSSProperties = { width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : 'transparent', color: active ? '#fff' : disabled ? BORDER : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: onClick || href ? 'pointer' : 'default', flexShrink: 0, textDecoration: 'none' }
+function IconBtn({ icon: Icon, active, highlight, onClick, disabled, href, label }: { icon: React.ElementType; active?: boolean; highlight?: boolean; onClick?: () => void; disabled?: boolean; href?: string; label?: string }) {
+  const style: React.CSSProperties = { width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : highlight ? '#e5f4f0' : 'transparent', color: active ? '#fff' : highlight ? '#155d53' : disabled ? BORDER : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: onClick || href ? 'pointer' : 'default', flexShrink: 0, textDecoration: 'none' }
   if (href) return <Link href={href} aria-label={label} title={label} style={style}><Icon size={17} /></Link>
   return <button type="button" onClick={onClick} disabled={disabled} aria-label={label} title={disabled ? 'Próximamente' : label} style={style}><Icon size={17} /></button>
 }
@@ -211,10 +211,11 @@ function leadsCsv(leads: LeadRow[]): string {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 type Tab = 'overview' | 'students' | 'leads'
 
-const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string }[] = [
+const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean }[] = [
   { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
   { Icon: Users,           tab: 'students', label: 'Estudiantes' },
   { Icon: BookOpen,        tab: null, label: 'Contenido' },
+  { Icon: KeyRound,        tab: null, href: '/dashboard/admin/claves', label: 'Claves de exámenes', highlight: true },
   { Icon: MessageCircle,   tab: 'leads', label: 'Leads' },
   { Icon: FileText,        tab: null, label: 'Documentos' },
   { Icon: DollarSign,      tab: null, href: '/dashboard/admin/pagos', label: 'Pagos y finanzas' },
@@ -282,7 +283,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
         <div style={{ width: 36, height: 36, background: A, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
           <GraduationCap size={18} color="#fff" />
         </div>
-        {SIDEBAR_ITEMS.map(({ Icon, tab, href, label }, i) => (
+        {SIDEBAR_ITEMS.map(({ Icon, tab, href, label, highlight }, i) => (
           <IconBtn
             key={i}
             icon={Icon}
@@ -290,6 +291,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
             onClick={tab ? () => setActiveTab(tab) : undefined}
             href={href}
             label={label}
+            highlight={highlight}
             disabled={tab === null && !href}
           />
         ))}
@@ -336,11 +338,6 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               href="/dashboard/admin/codigos-examen"
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(200,121,65,.12)', color: '#9b4e21', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
               <KeyRound size={13} /> Códigos de examen
-            </Link>
-            <Link
-              href="/dashboard/admin/claves"
-              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(29,128,115,.13)', color: '#17695f', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
-              <KeyRound size={13} /> Claves de respuestas
             </Link>
             <Link
               href="/dashboard/admin/live/create"
@@ -523,11 +520,6 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Datos reales de exámenes, leads y estudiantes.</p>
             </div>
           </div>
-
-          <Link href="/dashboard/admin/claves" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, padding: '17px 20px', borderRadius: 14, border: '1px solid #b9ded7', background: '#e5f4f0', color: '#155d53', textDecoration: 'none' }}>
-            <span style={{ display: 'grid', gap: 3 }}><strong style={{ fontSize: 15 }}>Biblioteca de claves de exámenes</strong><small style={{ fontSize: 12 }}>Busca respuestas por examen, set y sección; consulta variantes aceptadas y alertas de integridad.</small></span>
-            <span aria-hidden="true" style={{ fontSize: 22 }}>↗</span>
-          </Link>
 
           <LivePresenceCard />
 

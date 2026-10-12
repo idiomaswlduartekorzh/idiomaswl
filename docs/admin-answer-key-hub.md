@@ -1,6 +1,6 @@
 # Hub de claves de exámenes
 
-Ruta interna: `/dashboard/admin/claves`. El acceso usa `requireAdmin()` y solo muestra simulacros que `getMock()` sirve actualmente. Los borradores en pausa editorial no aparecen.
+Ruta interna: `/dashboard/admin/claves`. Se entra desde el icono **Claves de exámenes** del menú lateral del centro operativo. El acceso usa `requireAdmin()` y solo muestra simulacros que `getMock()` sirve actualmente. Los borradores en pausa editorial no aparecen.
 
 ## Fuente de verdad
 
