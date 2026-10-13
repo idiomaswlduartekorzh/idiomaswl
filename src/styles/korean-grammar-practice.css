@@ -1,0 +1,159 @@
+/* Korean grammar approval pages use the shared exercise engine, but keep the
+   activity focused: explanations and references already have dedicated tabs. */
+section[aria-labelledby='practice-title'] .grammar-writing-bridge,
+section[aria-labelledby='practice-title'] .practice-journey,
+section[aria-labelledby='practice-title'] .study-rail {
+  display: none;
+}
+
+section[aria-labelledby='practice-title'] .learning-layout {
+  display: block;
+  margin-top: 0;
+}
+
+section[aria-labelledby='practice-title'] .level-strip {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  padding: 0.45rem;
+  border: 1px solid color-mix(in srgb, #003478 14%, var(--line-soft));
+  border-radius: 18px;
+  background: color-mix(in srgb, #003478 4%, var(--panel));
+}
+
+section[aria-labelledby='practice-title'] .level-card {
+  min-height: 88px;
+  padding: 0.65rem;
+  border: 0;
+  border-radius: 13px;
+  background: transparent;
+  box-shadow: none;
+}
+
+section[aria-labelledby='practice-title'] .level-card:hover,
+section[aria-labelledby='practice-title'] .level-card.is-active {
+  transform: none;
+  border-color: transparent;
+  background: var(--panel);
+  box-shadow: 0 8px 20px rgba(0, 52, 120, 0.1);
+}
+
+section[aria-labelledby='practice-title'] .level-card.is-locked {
+  opacity: 0.48;
+}
+
+section[aria-labelledby='practice-title'] .level-card > span {
+  min-width: 27px;
+  height: 27px;
+  border-radius: 9px;
+  background: color-mix(in srgb, #003478 10%, var(--panel));
+  color: #003478;
+}
+
+section[aria-labelledby='practice-title'] .level-card.is-active > span {
+  background: #003478;
+  color: #fff;
+}
+
+section[aria-labelledby='practice-title'] .level-card strong {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.18;
+}
+
+section[aria-labelledby='practice-title'] .level-card em {
+  margin-top: 0.25rem;
+  font-size: 0.65rem;
+}
+
+section[aria-labelledby='practice-title'] .teacher-note {
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #003478 8%, var(--panel)),
+    color-mix(in srgb, #f7f2e8 74%, var(--panel))
+  );
+  box-shadow: none;
+}
+
+section[aria-labelledby='practice-title'] .lesson-panel {
+  border: 1px solid color-mix(in srgb, #003478 16%, var(--line-soft));
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(0, 52, 120, 0.1);
+}
+
+section[aria-labelledby='practice-title'] .lesson-panel__bar {
+  height: 6px;
+  background: linear-gradient(90deg, #003478, #c60c30);
+}
+
+section[aria-labelledby='practice-title'] .lesson-panel__inner {
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+section[aria-labelledby='practice-title'] .question-shell {
+  padding: clamp(1rem, 2.8vw, 1.4rem);
+  border: 0;
+  border-radius: 17px;
+  background: color-mix(in srgb, #003478 4%, var(--bg));
+}
+
+section[aria-labelledby='practice-title'] .option {
+  min-height: 54px;
+  border-radius: 13px;
+  font-size: 1rem;
+}
+
+section[aria-labelledby='practice-title'] .gram-btn.accent {
+  border-color: #003478;
+  background: #003478;
+}
+
+@media (max-width: 760px) {
+  section[aria-labelledby='practice-title'] .level-strip {
+    display: flex;
+    overflow-x: auto;
+    margin-inline: -0.2rem;
+    padding: 0.38rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  section[aria-labelledby='practice-title'] .level-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  section[aria-labelledby='practice-title'] .level-card {
+    flex: 0 0 140px;
+    min-height: 82px;
+    scroll-snap-align: start;
+  }
+
+  section[aria-labelledby='practice-title'] .lesson-panel {
+    border-radius: 18px;
+  }
+
+  section[aria-labelledby='practice-title'] .lesson-panel__inner {
+    padding: 1rem;
+  }
+
+  section[aria-labelledby='practice-title'] .lesson-title {
+    font-size: 1.5rem;
+  }
+
+  section[aria-labelledby='practice-title'] .question-shell {
+    padding: 0.9rem;
+  }
+
+  section[aria-labelledby='practice-title'] .option {
+    min-height: 52px;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  section[aria-labelledby='practice-title'] .gram-actions .gram-btn {
+    width: 100%;
+  }
+}
