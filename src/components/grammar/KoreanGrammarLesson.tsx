@@ -31,6 +31,7 @@ export default function KoreanGrammarLesson({
   const [active, setActive] = useState<SectionId>('comprender')
   const formulaParts = splitFormula(topic.guide.formula)
   const model = splitModel(topic.guide.model)
+  const hasFinalResources = Boolean(resource.pdf && resource.audioTracks?.length)
 
   function selectSection(id: SectionId) {
     setActive(id)
@@ -41,7 +42,7 @@ export default function KoreanGrammarLesson({
 
   return (
     <section className={styles.lesson} aria-labelledby="korean-grammar-title">
-      <div className={styles.previewFlag}><span>Vista piloto</span> Página para aprobación · audio reservado para la fase final</div>
+      <div className={styles.previewFlag}><span>{hasFinalResources ? 'Página completa' : 'Vista piloto'}</span> {hasFinalResources ? 'Audio coreano nativo y PDF listos' : 'Página para aprobación · audio reservado para la fase final'}</div>
       <div className={styles.track} aria-label={`Ruta de gramática coreana ${level.toUpperCase()}`}>
         <span>Hangul</span><b>→</b><strong>Gramática</strong><b>→</b><span>Comprensión</span><b>→</b><span>Producción</span>
       </div>
@@ -58,7 +59,7 @@ export default function KoreanGrammarLesson({
           <div className={styles.metrics}>
             <span><b>{topic.practice.levels.length}</b> niveles listos</span>
             <span><b>{resource.studyMinutes}</b> min</span>
-            <span><b>KO</b> ejemplos nativos</span>
+            <span><b>{resource.audioTracks?.length ?? 'KO'}</b> {resource.audioTracks ? 'audios nativos' : 'ejemplos nativos'}</span>
           </div>
         </div>
         <div className={styles.heroVisual}>
@@ -122,7 +123,7 @@ export default function KoreanGrammarLesson({
             <SectionIntro kicker="Razonamiento guiado" title="Cómo decidir sin traducir palabra por palabra" titleId="steps-title" />
             <div className={styles.modelHeader}>
               <p>Modelo central de la lección</p>
-              <span aria-label="Audio se añadirá después de aprobar las páginas">Audio · fase final</span>
+              <span>{hasFinalResources ? 'Audio · listo' : 'Audio · fase final'}</span>
             </div>
             <div className={styles.modelCard}>
               <span>Modelo</span><strong lang="ko">{model.korean}</strong>{model.translation ? <p>{model.translation}</p> : null}
@@ -130,6 +131,7 @@ export default function KoreanGrammarLesson({
             <ol className={styles.stepList}>
               {topic.guide.decisions.map((decision, index) => <li key={decision}><span>{index + 1}</span><p>{decision}</p></li>)}
             </ol>
+            {resource.audioTracks ? <AudioShelf tracks={resource.audioTracks} /> : null}
             <div className={styles.warningBox}>
               <h3>Errores típicos de hispanohablantes</h3>
               {topic.guide.mistakes.map((mistake) => <p key={mistake}><span>×</span>{mistake}</p>)}
@@ -146,12 +148,13 @@ export default function KoreanGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Biblioteca de estudio" title="Recursos que seguirán la página aprobada" copy="La estructura está definida; produciremos los archivos finales cuando el diseño y la pedagogía queden aprobados." titleId="resources-title" />
+            <SectionIntro kicker="Biblioteca de estudio" title={hasFinalResources ? 'Material listo para estudiar' : 'Recursos que seguirán la página aprobada'} copy={hasFinalResources ? 'Descarga el cuaderno y usa las cuatro pistas nativas dentro de la lección o fuera de línea.' : 'La estructura está definida; produciremos los archivos finales cuando el diseño y la pedagogía queden aprobados.'} titleId="resources-title" />
             <div className={styles.resourceGrid}>
-              <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, tabla, práctica y soluciones." />
+              <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, tabla, 32 ejercicios y soluciones." href={resource.pdf} />
               <ResourceCard code="PNG" title="Mapa visual" copy="Fórmula, modelo y errores clave." />
-              <ResourceCard code="음성" title="Audio coreano nativo" copy="Chatterbox con la voz y el ritmo ya aprobados." final />
+              <ResourceCard code="음성" title="Audio coreano nativo" copy={resource.audioTracks ? `${resource.audioTracks.length} pistas Chatterbox con voz y ritmo aprobados.` : 'Chatterbox con la voz y el ritmo ya aprobados.'} final={!resource.audioTracks} />
             </div>
+            {resource.audioTracks ? <AudioDownloads tracks={resource.audioTracks} /> : null}
             <div className={styles.studyPlan}>
               <h3>Ruta de estudio recomendada</h3>
               <ol><li><b>5 min</b> Comprende la intención.</li><li><b>7 min</b> Reconstruye el mapa.</li><li><b>15 min</b> Completa dos niveles.</li><li><b>5 min</b> Produce tres frases propias.</li></ol>
@@ -172,8 +175,16 @@ function ReferenceTable({ rows }: { rows: string[][] }) {
   return <div className={styles.tableWrap} role="region" aria-label="Tabla de referencia" tabIndex={0}><table><thead><tr>{rows[0].map((cell, index) => <th key={`${index}-${cell}`}>{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <td key={`${cellIndex}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table></div>
 }
 
-function ResourceCard({ code, title, copy, final = false }: { code: string; title: string; copy: string; final?: boolean }) {
-  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p><em>{final ? 'Se produce al final' : 'Después de la aprobación'}</em></div></div>
+function ResourceCard({ code, title, copy, final = false, href }: { code: string; title: string; copy: string; final?: boolean; href?: string }) {
+  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={href} download>Descargar PDF</a> : <em>{final ? 'Se produce al final' : 'Incluido en la lección'}</em>}</div></div>
+}
+
+function AudioShelf({ tracks }: { tracks: NonNullable<ReturnType<typeof getKoreanGrammarResource>['audioTracks']> }) {
+  return <section className="korean-audio-shelf" aria-labelledby="korean-audio-title"><div className="korean-audio-heading"><span>Escucha y repite</span><h3 id="korean-audio-title">Pronunciación coreana nativa</h3><p>Escucha, señala cada bloque y repite con la voz.</p></div><div className="korean-audio-grid">{tracks.map((track, index) => <article className="korean-audio-card" key={track.id}><span>{String(index + 1).padStart(2, '0')}</span><div><strong>{track.title}</strong><p lang="ko">{track.text}</p><small>{track.translation}</small><audio controls preload="metadata" src={track.src}>Tu navegador no puede reproducir este audio.</audio></div></article>)}</div></section>
+}
+
+function AudioDownloads({ tracks }: { tracks: NonNullable<ReturnType<typeof getKoreanGrammarResource>['audioTracks']> }) {
+  return <div className="korean-audio-downloads"><h3>Descargar pistas</h3><div>{tracks.map((track, index) => <a key={track.id} href={track.src} download><span>{String(index + 1).padStart(2, '0')}</span><strong>{track.title}</strong><em>M4A · voz coreana</em></a>)}</div></div>
 }
 
 function splitFormula(formula: string): string[] {

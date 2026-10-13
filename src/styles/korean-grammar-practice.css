@@ -6,6 +6,155 @@ section[aria-labelledby='practice-title'] .study-rail {
   display: none;
 }
 
+.korean-audio-shelf {
+  margin-top: clamp(1.4rem, 4vw, 2.6rem);
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid color-mix(in srgb, #003478 16%, var(--line-soft));
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, #003478 5%, var(--panel)), var(--panel));
+}
+
+.korean-audio-heading > span {
+  color: #c60c30;
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.korean-audio-heading h3 {
+  margin: 0.35rem 0 0.3rem;
+  color: #003478;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.korean-audio-heading p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.korean-audio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.15rem;
+}
+
+.korean-audio-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, #003478 12%, var(--line-soft));
+  border-radius: 16px;
+  background: var(--panel);
+}
+
+.korean-audio-card > span {
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  place-items: center;
+  border-radius: 10px;
+  background: #003478;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.korean-audio-card strong,
+.korean-audio-card p,
+.korean-audio-card small {
+  display: block;
+}
+
+.korean-audio-card p {
+  margin: 0.45rem 0 0.15rem;
+  color: #003478;
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  line-height: 1.55;
+}
+
+.korean-audio-card small {
+  min-height: 2.5em;
+  color: var(--text-muted);
+}
+
+.korean-audio-card audio {
+  width: 100%;
+  height: 38px;
+  margin-top: 0.75rem;
+}
+
+.korean-resource-action {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  color: #c60c30;
+  font-size: 0.82rem;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.korean-resource-action:hover,
+.korean-resource-action:focus-visible {
+  text-decoration: underline;
+}
+
+.korean-audio-downloads {
+  margin-top: 1.25rem;
+}
+
+.korean-audio-downloads h3 {
+  color: #003478;
+}
+
+.korean-audio-downloads > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.korean-audio-downloads a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.7rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, #003478 14%, var(--line-soft));
+  border-radius: 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.korean-audio-downloads a:hover,
+.korean-audio-downloads a:focus-visible {
+  border-color: #003478;
+  box-shadow: 0 10px 24px rgba(0, 52, 120, 0.1);
+}
+
+.korean-audio-downloads a > span {
+  grid-row: 1 / 3;
+  color: #c60c30;
+  font-weight: 900;
+}
+
+.korean-audio-downloads em {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-style: normal;
+}
+
+@media (max-width: 760px) {
+  .korean-audio-grid,
+  .korean-audio-downloads > div {
+    grid-template-columns: 1fr;
+  }
+
+  .korean-audio-card {
+    padding: 0.9rem;
+  }
+}
+
 section[aria-labelledby='practice-title'] .learning-layout {
   display: block;
   margin-top: 0;

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
 import {
   getKoreanGrammarResource,
+  KOREAN_GRAMMAR_AVAILABLE_SLUGS,
   KOREAN_GRAMMAR_PREVIEW_SLUGS,
   type KoreanGrammarLevel,
 } from '@/data/korean-grammar-preview'
@@ -37,6 +38,7 @@ export default function KoreanGrammarIndex({ level, topics }: { level: KoreanGra
   const levelLabel = level.toUpperCase()
   const chapters = Array.from({ length: 4 }, (_, index) => topics.slice(index * 5, index * 5 + 5))
   const previewSlug = KOREAN_GRAMMAR_PREVIEW_SLUGS[level]
+  const availableSlugs = new Set(KOREAN_GRAMMAR_AVAILABLE_SLUGS[level])
 
   return (
     <main className={styles.page}>
@@ -55,7 +57,7 @@ export default function KoreanGrammarIndex({ level, topics }: { level: KoreanGra
             <p className={styles.lead}>{copy.lead}</p>
             <div className={styles.stats}>
               <span><b>{topics.length}</b> lecciones</span>
-              <span><b>1</b> piloto navegable</span>
+              <span><b>{availableSlugs.size}</b> páginas navegables</span>
               <span><b>5</b> módulos por lección</span>
             </div>
           </div>
@@ -70,7 +72,7 @@ export default function KoreanGrammarIndex({ level, topics }: { level: KoreanGra
           <div><span>01</span><b>Comprende</b><p>Explicación directa para hispanohablantes.</p></div>
           <div><span>02</span><b>Visualiza</b><p>Una fórmula y escenas que fijan el patrón.</p></div>
           <div><span>03</span><b>Produce</b><p>Práctica progresiva con retroalimentación.</p></div>
-          <div><span>04</span><b>Repasa</b><p>PDF, mapa y audio después de aprobar las páginas.</p></div>
+          <div><span>04</span><b>Repasa</b><p>PDF, mapa y audio en las páginas finalizadas.</p></div>
         </section>
 
         {chapters.map((chapter, chapterIndex) => (
@@ -83,7 +85,7 @@ export default function KoreanGrammarIndex({ level, topics }: { level: KoreanGra
             <div className={styles.grid}>
               {chapter.map((topic) => {
                 const resource = getKoreanGrammarResource(topic, level)
-                const isPreview = topic.slug === previewSlug
+                const isPreview = availableSlugs.has(topic.slug)
                 return (
                   <Link className={`${styles.card} ${isPreview ? styles.preview : ''}`} key={topic.slug} href={isPreview ? `/practica/coreano/vista-gramatica/${level}/${topic.slug}` : `/practica/coreano/${level}/gramatica/${topic.slug}`}>
                     <div className={styles.image}>
@@ -92,7 +94,7 @@ export default function KoreanGrammarIndex({ level, topics }: { level: KoreanGra
                     </div>
                     <div className={styles.cardCopy}>
                       <p>{topic.category}</p><h3>{topic.shortTitle}</h3><span>{topic.lead}</span>
-                      <footer><em>{isPreview ? 'Piloto nuevo listo' : 'Contenido actual · diseño en lote'}</em><b>→</b></footer>
+                      <footer><em>{topic.slug === 'hangul-basico' ? 'Audio y PDF listos' : isPreview ? 'Piloto nuevo listo' : 'Contenido actual · diseño en lote'}</em><b>→</b></footer>
                     </div>
                   </Link>
                 )

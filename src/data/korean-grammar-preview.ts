@@ -3,9 +3,23 @@ import type { GrammarTopic } from '@/data/grammar/types'
 export type KoreanGrammarLevel = 'a1' | 'a2' | 'b1'
 
 export const KOREAN_GRAMMAR_PREVIEW_SLUGS: Record<KoreanGrammarLevel, string> = {
-  a1: 'estructura-sov',
+  a1: 'hangul-basico',
   a2: 'progresivo-go-itda-a2',
   b1: 'oportunidad-gime-b1',
+}
+
+export const KOREAN_GRAMMAR_AVAILABLE_SLUGS: Record<KoreanGrammarLevel, readonly string[]> = {
+  a1: ['hangul-basico', 'estructura-sov'],
+  a2: ['progresivo-go-itda-a2'],
+  b1: ['oportunidad-gime-b1'],
+}
+
+export type KoreanGrammarAudioTrack = {
+  id: string
+  title: string
+  text: string
+  translation: string
+  src: string
 }
 
 type KoreanGrammarResource = {
@@ -13,6 +27,8 @@ type KoreanGrammarResource = {
   imageAlt: string
   glyph: string
   studyMinutes: number
+  pdf?: string
+  audioTracks?: KoreanGrammarAudioTrack[]
 }
 
 const LEVEL_IMAGES: Record<KoreanGrammarLevel, string[]> = {
@@ -37,6 +53,42 @@ const LEVEL_IMAGES: Record<KoreanGrammarLevel, string[]> = {
 }
 
 const PREVIEW_RESOURCES: Record<string, Omit<KoreanGrammarResource, 'studyMinutes'>> = {
+  'hangul-basico': {
+    image: '/assets/korean/step002/kr_step002_geulja_signs_v1.png',
+    imageAlt: 'Letreros coreanos para reconocer bloques silábicos del hangeúl',
+    glyph: '한글',
+    pdf: '/downloads/coreano-a1/idiomaswl-hangul-basico-a1.pdf',
+    audioTracks: [
+      {
+        id: 'modelo-silabas',
+        title: 'Modelo de sílabas',
+        text: '가, 나, 다, 라, 마, 바, 사, 아, 자, 차, 카, 타, 파, 하.',
+        translation: 'Serie básica: consonante + ㅏ.',
+        src: '/audio/coreano/a1/grammar/hangul-basico/modelo-silabas.m4a',
+      },
+      {
+        id: 'vocales-basicas',
+        title: 'Vocales básicas',
+        text: '아, 어, 오, 우, 으, 이.',
+        translation: 'a, eo, o, u, eu, i',
+        src: '/audio/coreano/a1/grammar/hangul-basico/vocales-basicas.m4a',
+      },
+      {
+        id: 'palabras-basicas',
+        title: 'Palabras para leer',
+        text: '아이. 어디. 오늘. 우리. 이름. 한글.',
+        translation: 'niño; dónde; hoy; nosotros; nombre; hangeúl',
+        src: '/audio/coreano/a1/grammar/hangul-basico/palabras-basicas.m4a',
+      },
+      {
+        id: 'frases-iniciales',
+        title: 'Primeras frases',
+        text: '안녕하세요. 감사합니다. 저는 한국어를 공부해요.',
+        translation: 'Hola. Gracias. Estudio coreano.',
+        src: '/audio/coreano/a1/grammar/hangul-basico/frases-iniciales.m4a',
+      },
+    ],
+  },
   'estructura-sov': {
     image: '/assets/korean/step002/kr_step002_na_me_v1.png',
     imageAlt: 'Dos jóvenes conversan en una calle tradicional de Seúl',
@@ -63,6 +115,8 @@ export function getKoreanGrammarResource(topic: GrammarTopic, level: KoreanGramm
     imageAlt: preview?.imageAlt ?? `Escena cotidiana coreana para estudiar ${topic.shortTitle}`,
     glyph: preview?.glyph ?? koreanGlyph(topic.shortTitle),
     studyMinutes: level === 'b1' ? 50 : level === 'a2' ? 40 : 35,
+    pdf: preview?.pdf,
+    audioTracks: preview?.audioTracks,
   }
 }
 
