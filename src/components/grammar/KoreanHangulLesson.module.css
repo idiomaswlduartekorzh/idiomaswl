@@ -1,0 +1,162 @@
+.lesson {
+  --js-red: #c60c30;
+  --js-navy: #003478;
+}
+
+.learningSwitch button {
+  min-height: 2.4rem;
+  padding: 0.62rem 0.95rem;
+  border: 0;
+  border-radius: 0.52rem;
+  color: var(--js-muted);
+  background: transparent;
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.learningSwitch .activeSwitch {
+  color: #fff;
+  background: var(--js-red);
+}
+
+.heroMark {
+  color: #003478;
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 3.6rem;
+}
+
+.audioGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.audioCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--js-line);
+  border-radius: 0.7rem;
+  background: var(--js-soft);
+}
+
+.audioCard > span {
+  grid-row: 1 / 5;
+  display: grid;
+  width: 2.15rem;
+  height: 2.15rem;
+  place-items: center;
+  border-radius: 0.55rem;
+  color: #fff;
+  background: var(--js-navy);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 900;
+}
+
+.audioCard h3,
+.audioCard p,
+.audioCard small {
+  margin: 0;
+}
+
+.audioCard h3 {
+  font-size: 0.85rem;
+}
+
+.audioCard p {
+  margin-top: 0.35rem;
+  color: var(--js-navy);
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.audioCard small {
+  min-height: 2.2em;
+  color: var(--js-muted);
+  font-size: 0.65rem;
+  line-height: 1.45;
+}
+
+.audioCard audio {
+  width: 100%;
+  height: 2.35rem;
+  margin-top: 0.6rem;
+}
+
+.blockGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blockGrid button,
+.koreanPrompt,
+.bigBlock,
+.blockParts span {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+
+.blockGrid button {
+  min-height: 5.5rem;
+  font-size: 2.4rem;
+}
+
+.blockPlayer {
+  align-content: center;
+}
+
+.bigBlock {
+  display: grid;
+  width: 10rem;
+  height: 10rem;
+  place-items: center;
+  border-radius: 1rem;
+  color: var(--js-navy);
+  background: var(--js-surface);
+  font-size: 6.5rem;
+  line-height: 1;
+}
+
+.blockParts {
+  display: flex;
+  gap: 0.45rem;
+  margin: 0.85rem 0 0.2rem;
+}
+
+.blockParts span {
+  display: grid;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 1px solid var(--js-line);
+  border-radius: 0.5rem;
+  color: var(--js-red);
+  background: var(--js-surface);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.koreanPrompt {
+  font-size: clamp(3.2rem, 9vw, 7rem);
+}
+
+@media (max-width: 720px) {
+  .audioGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .learningSwitch {
+    width: 100%;
+  }
+
+  .learningSwitch button {
+    flex: 1;
+    padding-inline: 0.35rem;
+  }
+
+  .blockGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

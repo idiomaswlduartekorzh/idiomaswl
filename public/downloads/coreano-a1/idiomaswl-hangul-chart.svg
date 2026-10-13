@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Hangeúl básico A1: 24 letras y bloques silábicos</title>
+  <desc id="desc">Tabla visual de diez vocales, catorce consonantes y cuatro ejemplos de composición de bloques del hangeúl.</desc>
+  <rect width="1600" height="1200" fill="#f7f4ee"/>
+  <rect width="1600" height="24" fill="#003478"/>
+  <rect x="1210" width="390" height="24" fill="#c60c30"/>
+  <text x="72" y="90" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#c60c30">IDIOMAS WELEARN · COREANO A1</text>
+  <text x="72" y="175" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="72" font-weight="800" fill="#003478">Hangeúl básico</text>
+  <text x="72" y="220" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="27" fill="#596579">24 letras esenciales · consonante + vocal + batchim opcional</text>
+
+  <g transform="translate(72 274)">
+    <rect width="660" height="490" rx="26" fill="#fff" stroke="#d4dbe6" stroke-width="3"/>
+    <rect width="660" height="72" rx="26" fill="#003478"/>
+    <path d="M0 46h660v26H0z" fill="#003478"/>
+    <text x="30" y="47" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="28" font-weight="700" fill="#fff">10 vocales básicas</text>
+    <g font-family="Arial, 'Noto Sans KR', sans-serif" text-anchor="middle">
+      <g transform="translate(24 102)">
+        <g transform="translate(0 0)"><rect width="116" height="152" rx="18" fill="#eef5ff"/><text x="58" y="70" font-size="50" fill="#003478">ㅏ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">a</text></g>
+        <g transform="translate(124 0)"><rect width="116" height="152" rx="18" fill="#eef5ff"/><text x="58" y="70" font-size="50" fill="#003478">ㅓ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">eo</text></g>
+        <g transform="translate(248 0)"><rect width="116" height="152" rx="18" fill="#eef5ff"/><text x="58" y="70" font-size="50" fill="#003478">ㅗ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">o</text></g>
+        <g transform="translate(372 0)"><rect width="116" height="152" rx="18" fill="#eef5ff"/><text x="58" y="70" font-size="50" fill="#003478">ㅜ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">u</text></g>
+        <g transform="translate(496 0)"><rect width="116" height="152" rx="18" fill="#eef5ff"/><text x="58" y="70" font-size="50" fill="#003478">ㅡ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">eu</text></g>
+      </g>
+      <g transform="translate(24 268)">
+        <g transform="translate(0 0)"><rect width="116" height="152" rx="18" fill="#fff1f3"/><text x="58" y="70" font-size="50" fill="#c60c30">ㅣ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">i</text></g>
+        <g transform="translate(124 0)"><rect width="116" height="152" rx="18" fill="#fff1f3"/><text x="58" y="70" font-size="50" fill="#c60c30">ㅐ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">ae</text></g>
+        <g transform="translate(248 0)"><rect width="116" height="152" rx="18" fill="#fff1f3"/><text x="58" y="70" font-size="50" fill="#c60c30">ㅔ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">e</text></g>
+        <g transform="translate(372 0)"><rect width="116" height="152" rx="18" fill="#fff1f3"/><text x="58" y="70" font-size="50" fill="#c60c30">ㅚ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">oe / we</text></g>
+        <g transform="translate(496 0)"><rect width="116" height="152" rx="18" fill="#fff1f3"/><text x="58" y="70" font-size="50" fill="#c60c30">ㅟ</text><text x="58" y="116" font-size="22" font-weight="700" fill="#596579">wi</text></g>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(768 274)">
+    <rect width="760" height="490" rx="26" fill="#fff" stroke="#d4dbe6" stroke-width="3"/>
+    <rect width="760" height="72" rx="26" fill="#c60c30"/>
+    <path d="M0 46h760v26H0z" fill="#c60c30"/>
+    <text x="30" y="47" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="28" font-weight="700" fill="#fff">14 consonantes básicas</text>
+    <g font-family="Arial, 'Noto Sans KR', sans-serif" text-anchor="middle">
+      <g transform="translate(24 100)">
+        <g transform="translate(0 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㄱ</text><text x="47" y="82" font-size="17" fill="#596579">g/k</text></g>
+        <g transform="translate(103 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㄴ</text><text x="47" y="82" font-size="17" fill="#596579">n</text></g>
+        <g transform="translate(206 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㄷ</text><text x="47" y="82" font-size="17" fill="#596579">d/t</text></g>
+        <g transform="translate(309 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㄹ</text><text x="47" y="82" font-size="17" fill="#596579">r/l</text></g>
+        <g transform="translate(412 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㅁ</text><text x="47" y="82" font-size="17" fill="#596579">m</text></g>
+        <g transform="translate(515 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㅂ</text><text x="47" y="82" font-size="17" fill="#596579">b/p</text></g>
+        <g transform="translate(618 0)"><rect width="95" height="104" rx="16" fill="#f4f6f9"/><text x="47" y="51" font-size="39" fill="#003478">ㅅ</text><text x="47" y="82" font-size="17" fill="#596579">s</text></g>
+      </g>
+      <g transform="translate(24 218)">
+        <g transform="translate(0 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅇ</text><text x="47" y="82" font-size="15" fill="#596579">muda/ng</text></g>
+        <g transform="translate(103 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅈ</text><text x="47" y="82" font-size="17" fill="#596579">j</text></g>
+        <g transform="translate(206 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅊ</text><text x="47" y="82" font-size="17" fill="#596579">ch</text></g>
+        <g transform="translate(309 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅋ</text><text x="47" y="82" font-size="15" fill="#596579">k asp.</text></g>
+        <g transform="translate(412 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅌ</text><text x="47" y="82" font-size="15" fill="#596579">t asp.</text></g>
+        <g transform="translate(515 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅍ</text><text x="47" y="82" font-size="15" fill="#596579">p asp.</text></g>
+        <g transform="translate(618 0)"><rect width="95" height="104" rx="16" fill="#eef5ff"/><text x="47" y="51" font-size="39" fill="#003478">ㅎ</text><text x="47" y="82" font-size="17" fill="#596579">h</text></g>
+      </g>
+      <text x="380" y="382" font-size="22" fill="#596579">ㅇ inicia mudo · al final suena ng</text>
+      <text x="380" y="424" font-size="19" fill="#798396">Los sonidos cambian ligeramente según la posición.</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 808)">
+    <text x="0" y="42" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="36" font-weight="800" fill="#003478">Cómo nace un bloque</text>
+    <text x="0" y="82" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="23" fill="#596579">Lee de izquierda a derecha y de arriba abajo dentro de cada cuadrado.</text>
+    <g transform="translate(0 116)" font-family="Arial, 'Noto Sans KR', sans-serif">
+      <g transform="translate(0 0)"><rect width="340" height="190" rx="24" fill="#fff" stroke="#d4dbe6" stroke-width="3"/><text x="36" y="52" font-size="19" font-weight="700" fill="#c60c30">VOCAL VERTICAL</text><text x="52" y="137" font-size="64" fill="#596579">ㄱ + ㅏ</text><text x="258" y="138" font-size="76" font-weight="700" fill="#003478">가</text></g>
+      <g transform="translate(372 0)"><rect width="340" height="190" rx="24" fill="#fff" stroke="#d4dbe6" stroke-width="3"/><text x="36" y="52" font-size="19" font-weight="700" fill="#c60c30">VOCAL HORIZONTAL</text><text x="52" y="137" font-size="64" fill="#596579">ㄱ + ㅗ</text><text x="258" y="138" font-size="76" font-weight="700" fill="#003478">고</text></g>
+      <g transform="translate(744 0)"><rect width="340" height="190" rx="24" fill="#fff" stroke="#d4dbe6" stroke-width="3"/><text x="36" y="52" font-size="19" font-weight="700" fill="#c60c30">CON BATCHIM</text><text x="34" y="137" font-size="53" fill="#596579">ㅎ+ㅏ+ㄴ</text><text x="258" y="138" font-size="76" font-weight="700" fill="#003478">한</text></g>
+      <g transform="translate(1116 0)"><rect width="340" height="190" rx="24" fill="#003478"/><text x="36" y="52" font-size="19" font-weight="700" fill="#fff">RECUERDA</text><text x="36" y="98" font-size="24" font-weight="700" fill="#fff">forma cuadrada</text><text x="36" y="134" font-size="20" fill="#dce8ff">inicio + vocal</text><text x="36" y="164" font-size="20" fill="#dce8ff">+ final opcional</text></g>
+    </g>
+  </g>
+  <text x="72" y="1162" font-family="Arial, sans-serif" font-size="18" fill="#7a8496">Material original · Idiomas WeLearn · idiomaswl.com</text>
+</svg>
