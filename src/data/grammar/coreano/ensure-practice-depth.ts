@@ -1,6 +1,6 @@
 import type { ChoiceItem, GrammarTopic, WriteItem } from '../types'
 
-const MINIMUM_ACTIVITY_COUNT = 20
+const MINIMUM_ACTIVITY_COUNT = 28
 
 const DECISION_FALLBACKS = [
   'Identifica primero la relación que quieres expresar y después elige la terminación.',

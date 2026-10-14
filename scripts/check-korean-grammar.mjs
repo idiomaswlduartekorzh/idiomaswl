@@ -6,6 +6,9 @@ import { pathToFileURL, fileURLToPath } from 'node:url'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const requestedLevel = process.argv.find((arg) => /^--level=(a1|a2|b1)$/.test(arg))?.split('=')[1]
 const levels = requestedLevel ? [requestedLevel] : ['a1', 'a2', 'b1']
+const { ensureKoreanPracticeDepth } = await import(
+  `${pathToFileURL(path.join(ROOT, 'src', 'data', 'grammar', 'coreano', 'ensure-practice-depth.ts')).href}?audit=${Date.now()}`
+)
 
 function placeholders(text) {
   return [...String(text ?? '').matchAll(/\[\[(\d+)\]\]/g)].map((match) => Number(match[1]))
@@ -41,7 +44,7 @@ for (const level of levels) {
   const topics = []
   for (const file of files) {
     const module = await import(`${pathToFileURL(path.join(directory, file)).href}?audit=${Date.now()}`)
-    topics.push(module.default)
+    topics.push(level === 'a1' ? module.default : ensureKoreanPracticeDepth(module.default))
   }
 
   assert.deepEqual(

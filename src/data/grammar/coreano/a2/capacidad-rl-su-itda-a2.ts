@@ -10,8 +10,8 @@ const topic: GrammarTopic = {
   shortTitle: '-(으)ㄹ 수 있다',
   metaTitle: 'Coreano A2 — -(으)ㄹ 수 있다/없다 capacidad posibilidad',
   description:
-    '-(으)ㄹ 수 있다 expresa capacidad o posibilidad en coreano: "poder hacer algo". Su negacion -(으)ㄹ 수 없다 significa "no poder". Se forma con la raiz del verbo mas -ㄹ 수 (vocal/ㄹ) o -을 수 (consonante) mas 있다/없다.',
-  lead: 'Raiz + -ㄹ 수 있다 (vocal/ㄹ) o + -을 수 있다 (consonante). Ejemplos: 수영할 수 있어요 (Puedo nadar). 한국어를 읽을 수 있어요 (Puedo leer coreano). 못 + verbo = alternativa coloquial.',
+    '-(으)ㄹ 수 있다 expresa capacidad o posibilidad en coreano: "poder hacer algo". Su negación -(으)ㄹ 수 없다 significa "no poder". Se forma con la raíz del verbo más -ㄹ 수 (vocal/ㄹ) o -을 수 (consonante) más 있다/없다.',
+  lead: 'Raíz + -ㄹ 수 있다 (vocal/ㄹ) o + -을 수 있다 (consonante). Ejemplos: 수영할 수 있어요 (Puedo nadar). 한국어를 읽을 수 있어요 (Puedo leer coreano). 못 + verbo = alternativa coloquial.',
   outcomes: [
     'Expresar capacidad con -(으)ㄹ 수 있다',
     'Expresar incapacidad con -(으)ㄹ 수 없다 y 못 + verbo',
@@ -21,14 +21,14 @@ const topic: GrammarTopic = {
 
   guide: {
     goal: 'Expresar lo que alguien puede o no puede hacer con -(으)ㄹ 수 있다/없다 en coreano A2.',
-    model: '저는 피아노를 칠 수 있어요 (Puedo tocar el piano) | 내일은 갈 수 없어요 (Manana no puedo ir)',
-    formula: 'Raiz + -ㄹ 수 있다 (vocal/ㄹ) | Raiz + -을 수 있다 (consonante) | 못 + verbo (negacion coloquial)',
+    model: '저는 피아노를 칠 수 있어요 (Puedo tocar el piano) | 내일은 갈 수 없어요 (Mañana no puedo ir)',
+    formula: 'Raíz + -ㄹ 수 있다 (vocal/ㄹ) | Raíz + -을 수 있다 (consonante) | 못 + verbo (negación coloquial)',
     decisions: [
-      'Raiz termina en vocal o ㄹ → añade -ㄹ 수: 가다 → 갈 수, 살다 → 살 수',
-      'Raiz termina en consonante → añade -을 수: 먹다 → 먹을 수, 읽다 → 읽을 수',
+      'Raíz termina en vocal o ㄹ → añade -ㄹ 수: 가다 → 갈 수, 살다 → 살 수',
+      'Raíz termina en consonante → añade -을 수: 먹다 → 먹을 수, 읽다 → 읽을 수',
       '있다 → capacidad positiva; 없다 → incapacidad',
-      'Negacion coloquial: 못 + verbo conjugado: 못 가요, 못 먹어요',
-      '-ㄹ 수 없다 es mas formal que 못; ambas son correctas',
+      'Negación coloquial: 못 + verbo conjugado: 못 가요, 못 먹어요',
+      '-ㄹ 수 없다 es más formal que 못; ambas son correctas',
       'Pregunta: -(으)ㄹ 수 있어요? = ¿Puede/puedes...?',
     ],
     table: [
@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
       ['살다 (vivir)', '살 수 있다', '살 수 없다 / 못 살다'],
     ],
     mistakes: [
-      '"가을 수 있다" — raiz vocal no necesita -을: 가다 → 갈 수 있다',
-      '"먹ㄹ 수 있다" — raiz consonante necesita -을: 먹다 → 먹을 수 있다',
+      '"가을 수 있다" — raíz vocal no necesita -을: 가다 → 갈 수 있다',
+      '"먹ㄹ 수 있다" — raíz consonante necesita -을: 먹다 → 먹을 수 있다',
       '"못 수영할 수 없다" — no combines 못 con -ㄹ 수 없다: elige uno solo',
     ],
   },
@@ -51,13 +51,13 @@ const topic: GrammarTopic = {
       heading: '¿Como se forma -(으)ㄹ 수 있다 en coreano?',
       paragraphs: [
         'La estructura -(으)ㄹ 수 있다 combina el futuro nominal -(으)ㄹ con el sustantivo 수 (manera, forma) y el verbo 있다 (haber, tener). Literalmente seria "hay manera de [hacer algo]". La forma negativa usa 없다: "no hay manera de [hacer algo]".',
-        'En la practica, 있다 y 없다 se conjugan normalmente: 있어요/없어요 (habla informal), 있습니다/없습니다 (formal). La parte -(으)ㄹ 수 no cambia.',
+        'En la práctica, 있다 y 없다 se conjugan normalmente: 있어요/없어요 (habla informal), 있습니다/없습니다 (formal). La parte -(으)ㄹ 수 no cambia.',
       ],
     },
     {
       heading: '¿Cuál es la diferencia entre 못 y -(으)ㄹ 수 없다?',
       paragraphs: [
-        '못 + verbo es la forma coloquial de expresar incapacidad: 못 가요 (no puedo ir), 못 먹어요 (no puedo comer). -(으)ㄹ 수 없다 es mas formal y explicito: 갈 수 없어요 (no puedo ir). Ambas son completamente correctas.',
+        '못 + verbo es la forma coloquial de expresar incapacidad: 못 가요 (no puedo ir), 못 먹어요 (no puedo comer). -(으)ㄹ 수 없다 es más formal y explicito: 갈 수 없어요 (no puedo ir). Ambas son completamente correctas.',
         '못 se coloca siempre inmediatamente antes del verbo principal. Con verbos 하다, 못 va antes de 하다: 공부 못 해요 (no puedo estudiar) o 공부하지 못해요.',
       ],
       table: [
@@ -83,7 +83,7 @@ const topic: GrammarTopic = {
     scene: [
       ['수영할 수 있어요', 'Puedo nadar (수영하다 → 수영할)'],
       ['한국어를 읽을 수 있어요', 'Puedo leer coreano (읽다 → 읽을)'],
-      ['내일 갈 수 없어요', 'No puedo ir manana (가다 → 갈)'],
+      ['내일 갈 수 없어요', 'No puedo ir mañana (가다 → 갈)'],
       ['못 먹어요 / 먹을 수 없어요', 'No puedo comer (먹다 → 먹을)'],
       ['도와줄 수 있어요?', '¿Puedes ayudarme? (도와주다 → 도와줄)'],
       ['한국어로 말할 수 있어요', 'Puedo hablar en coreano'],
@@ -97,7 +97,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Nivel 1 — Reconocimiento de -(으)ㄹ 수 있다',
-        tag: 'Opcion multiple',
+        tag: 'Opción multiple',
         intro: 'Elige la forma correcta de -(으)ㄹ 수 있다/없다.',
         type: 'choice',
         items: [
@@ -106,35 +106,35 @@ const topic: GrammarTopic = {
             lines: [['Hugo', '저는 기타를 ___ (치다). (Puedo tocar la guitarra.)']],
             options: ['칠 수 있어요', '치을 수 있어요', '칠 수 없어요', '치수 있어요'],
             answer: '칠 수 있어요',
-            explain: '치다 → raiz 치 (vocal) → 칠 수 있어요.',
+            explain: '치다 → raíz 치 (vocal) → 칠 수 있어요.',
           },
           {
             scene: 'Restriccion dietaria',
-            lines: [['Ana', '저는 매운 음식을 ___ (먹다, negacion). (No puedo comer comida picante.)']],
+            lines: [['Ana', '저는 매운 음식을 ___ (먹다, negación). (No puedo comer comida picante.)']],
             options: ['먹을 수 없어요', '먹ㄹ 수 없어요', '먹을 수 있어요', '먹수 없어요'],
             answer: '먹을 수 없어요',
-            explain: '먹다 → raiz 먹 (consonante) → 먹을 수 없어요.',
+            explain: '먹다 → raíz 먹 (consonante) → 먹을 수 없어요.',
           },
           {
             scene: 'Idiomas que domina',
-            lines: [['Carlos', '저는 스페인어를 ___ (말하다). (Puedo hablar espanol.)']],
+            lines: [['Carlos', '저는 스페인어를 ___ (말하다). (Puedo hablar español.)']],
             options: ['말할 수 있어요', '말하을 수 있어요', '말할 수 없어요', '말하수 있어요'],
             answer: '말할 수 있어요',
-            explain: '말하다 → raiz 말하 (vocal) → 말할 수 있어요.',
+            explain: '말하다 → raíz 말하 (vocal) → 말할 수 있어요.',
           },
           {
             scene: 'Peticion de ayuda',
             lines: [['Lina', '이것 좀 ___ (도와주다)? (¿Puedes ayudarme con esto?)']],
             options: ['도와줄 수 있어요', '도와주을 수 있어요', '도와줄 수 없어요', '도와주수 있어요'],
             answer: '도와줄 수 있어요',
-            explain: '도와주다 → raiz 도와주 (vocal) → 도와줄 수 있어요.',
+            explain: '도와주다 → raíz 도와주 (vocal) → 도와줄 수 있어요.',
           },
           {
             scene: 'Plan cancelado',
-            lines: [['Marco', '죄송해요. 내일 ___ (가다, negacion). (Lo siento. Manana no puedo ir.)']],
+            lines: [['Marco', '죄송해요. 내일 ___ (가다, negación). (Lo siento. Mañana no puedo ir.)']],
             options: ['갈 수 없어요', '가을 수 없어요', '갈 수 있어요', '못 갈 수 없어요'],
             answer: '갈 수 없어요',
-            explain: '가다 → raiz 가 (vocal) → 갈 수 없어요.',
+            explain: '가다 → raíz 가 (vocal) → 갈 수 없어요.',
           },
           {
             scene: 'Habilidad de natacion',
@@ -148,22 +148,22 @@ const topic: GrammarTopic = {
             lines: [['Sara', '한글을 ___ (읽다)? (¿Puedes leer hangul?)']],
             options: ['읽을 수 있어요', '읽을 수 없어요', '읽ㄹ 수 있어요', '읽수 있어요'],
             answer: '읽을 수 있어요',
-            explain: '읽다 → raiz 읽 (consonante) → 읽을 수 있어요.',
+            explain: '읽다 → raíz 읽 (consonante) → 읽을 수 있어요.',
           },
           {
             scene: 'Imposibilidad de asistir',
-            lines: [['Hugo', '미안해요, 오늘 파티에 ___ (오다, negacion). (Lo siento, hoy no puedo venir a la fiesta.)']],
+            lines: [['Hugo', '미안해요, 오늘 파티에 ___ (오다, negación). (Lo siento, hoy no puedo venir a la fiesta.)']],
             options: ['올 수 없어요', '오을 수 없어요', '올 수 있어요', '못 올 수 없어요'],
             answer: '올 수 없어요',
-            explain: '오다 → raiz 오 (vocal) → 올 수 없어요.',
+            explain: '오다 → raíz 오 (vocal) → 올 수 없어요.',
           },
         ],
       },
       {
         id: 'level-2',
-        title: 'Nivel 2 — Dialogos con dos espacios',
+        title: 'Nivel 2 — Diálogos con dos espacios',
         tag: '2 espacios',
-        intro: 'Completa los dialogos sobre capacidad y posibilidad.',
+        intro: 'Completa los diálogos sobre capacidad y posibilidad.',
         type: 'dual',
         items: [
           {
@@ -173,19 +173,19 @@ const topic: GrammarTopic = {
  ['Ana', '네, [[1]] (있다). 같이 해봐요. (Si, puedo. Intentemoslo juntos.)'],
  ],
             blanks: [
-              { options: ['풀 수 있어요', '풀을 수 있어요', '푸을 수 있어요', '풀 수 없어요'], answer: '풀 수 있어요', explain: '풀다 → raiz 풀 (ㄹ) → 풀 수 있어요.' },
+              { options: ['풀 수 있어요', '풀을 수 있어요', '푸을 수 있어요', '풀 수 없어요'], answer: '풀 수 있어요', explain: '풀다 → raíz 풀 (ㄹ) → 풀 수 있어요.' },
               { options: ['할 수 있어요', '할 수 없어요', '못 해요', '해요'], answer: '할 수 있어요', explain: 'Respuesta positiva: 할 수 있어요.' },
             ],
           },
           {
             scene: 'Restricciones de horario',
             lines: [
- ['Sara', '토요일에 [[0]] (오다, puedes)? (¿Puedes venir el sabado?)'],
- ['Marco', '아니요, 토요일에는 [[1]] (없다). 일요일은 어때요? (No, el sabado no puedo. ¿Que tal el domingo?)'],
+ ['Sara', '토요일에 [[0]] (오다, puedes)? (¿Puedes venir el sábado?)'],
+ ['Marco', '아니요, 토요일에는 [[1]] (없다). 일요일은 어때요? (No, el sábado no puedo. ¿Que tal el domingo?)'],
  ],
             blanks: [
               { options: ['올 수 있어요', '오을 수 있어요', '오을 수 없어요', '올 수 없어요'], answer: '올 수 있어요', explain: '오다 → 올 수 있어요.' },
-              { options: ['올 수 없어요', '올 수 있어요', '못 옵니다', '오를 수 없어요'], answer: '올 수 없어요', explain: 'Negacion: 올 수 없어요.' },
+              { options: ['올 수 없어요', '올 수 있어요', '못 옵니다', '오를 수 없어요'], answer: '올 수 없어요', explain: 'Negación: 올 수 없어요.' },
             ],
           },
           {
@@ -195,7 +195,7 @@ const topic: GrammarTopic = {
  ['Sofia', '김치찌개는 [[1]] (있다) 불고기는 아직 [[2]] (없다). (Puedo hacer kimchi jjigae pero el bulgogi todavia no puedo.)'],
  ],
             blanks: [
-              { options: ['만들 수 있어요', '만들을 수 있어요', '만들 수 없어요', '만드을 수 있어요'], answer: '만들 수 있어요', explain: '만들다 → raiz 만들 (ㄹ) → 만들 수 있어요.' },
+              { options: ['만들 수 있어요', '만들을 수 있어요', '만들 수 없어요', '만드을 수 있어요'], answer: '만들 수 있어요', explain: '만들다 → raíz 만들 (ㄹ) → 만들 수 있어요.' },
               { options: ['만들 수', '만들수', '만들 수 있어요,', '만드수'], answer: '만들 수 있어요,', explain: 'Positivo primero: 만들 수 있어요.' },
               { options: ['못 해요', '할 수 없어요', '만들 수 없어요', '만들수 없어요'], answer: '만들 수 없어요', explain: 'Negativo: 만들 수 없어요.' },
             ],
@@ -203,8 +203,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Peticion formal',
             lines: [
- ['Hugo', '내일 보고서를 [[0]] (제출하다, puedes)? (¿Puedes entregar el informe manana?)'],
- ['Carlos', '네, 내일까지 [[1]] (있다). 걱정하지 마세요. (Si, puedo entregarlo manana. No se preocupe.)'],
+ ['Hugo', '내일 보고서를 [[0]] (제출하다, puedes)? (¿Puedes entregar el informe mañana?)'],
+ ['Carlos', '네, 내일까지 [[1]] (있다). 걱정하지 마세요. (Si, puedo entregarlo mañana. No se preocupe.)'],
  ],
             blanks: [
               { options: ['제출할 수 있어요', '제출할 수 없어요', '제출하을 수 있어요', '제출수 있어요'], answer: '제출할 수 있어요', explain: '제출하다 → 제출할 수 있어요.' },
@@ -226,7 +226,7 @@ const topic: GrammarTopic = {
           { options: ['읽을 수 있지만', '읽ㄹ 수 있지만', '읽을 수 없지만', '읽수 있지만'], answer: '읽을 수 있지만', explain: '읽다 → 읽을 수 있다 + -지만 (pero).' },
           { options: ['못해요', '할 수 없어요', '못 합니다', '없어요'], answer: '못해요', explain: '못 + 하다 = 못해요 (forma coloquial de incapacidad).' },
           { options: ['할 수 있어요', '할 수 없어요', '하을 수 있어요', '하수 있어요'], answer: '할 수 있어요', explain: '하다 → 할 수 있어요.' },
-          { options: ['할 수 없어요', '할 수 있어요', '하을 수 없어요', '못 합니다'], answer: '할 수 없어요', explain: '하다 → 할 수 없어요 (negacion formal).' },
+          { options: ['할 수 없어요', '할 수 있어요', '하을 수 없어요', '못 합니다'], answer: '할 수 없어요', explain: '하다 → 할 수 없어요 (negación formal).' },
         ],
       },
       {
@@ -247,7 +247,7 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-5',
-        title: 'Nivel 5 — Produccion guiada',
+        title: 'Nivel 5 — Producción guiada',
         tag: 'Escritura guiada',
         intro: 'Escribe oraciones completas sobre capacidad o posibilidad.',
         type: 'write',
@@ -261,14 +261,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Peticion de ayuda',
-            prompt: 'Pregunta "¿Puedes venir a la reunion manana?" (내일, 회의에 오다).',
+            prompt: 'Pregunta "¿Puedes venir a la reunión mañana?" (내일, 회의에 오다).',
             answer: '내일 회의에 올 수 있어요?',
             accepted: ['올 수 있어요?', '올 수 있나요?'],
             explain: '오다 → 올 수 있어요? Pregunta con tono ascendente.',
           },
           {
             scene: 'Restriccion medica',
-            prompt: 'Di "No puedo comer cosas picantes" (매운 것, 먹다, negacion).',
+            prompt: 'Di "No puedo comer cosas picantes" (매운 것, 먹다, negación).',
             answer: '매운 것을 먹을 수 없어요.',
             accepted: ['먹을 수 없어요', '못 먹어요'],
             explain: '먹다 → 먹을 수 없어요 (formal) o 못 먹어요 (coloquial).',

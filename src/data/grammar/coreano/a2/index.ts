@@ -20,6 +20,7 @@ import antesDespues from './antes-despues-a2'
 import progresivoGoItda from './progresivo-go-itda-a2'
 import discursoReportado from './discurso-reportado-a2'
 import cuantoEolmana from './cuanto-eolmana-a2'
+import { ensureKoreanPracticeDepth } from '../ensure-practice-depth'
 
 const topics: GrammarTopic[] = [
   verbosIrregularesPasado,
@@ -42,6 +43,6 @@ const topics: GrammarTopic[] = [
   progresivoGoItda,
   discursoReportado,
   cuantoEolmana,
-]
+].map(ensureKoreanPracticeDepth)
 
 export default topics

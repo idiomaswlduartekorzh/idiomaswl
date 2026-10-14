@@ -10,8 +10,8 @@ const topic: GrammarTopic = {
   shortTitle: 'Irregulares ㄹ/ㅂ/르',
   metaTitle: 'Verbos irregulares coreano A2 — ㄹ, ㅂ, 르 irregulares en pasado',
   description:
-    'En coreano A2 debes dominar tres grupos de verbos irregulares que cambian la raiz al conjugar: el grupo ㄹ (raiz conserva ㄹ antes de vocal), el grupo ㅂ (ㅂ → 우 antes de vocal) y el grupo 르 (르 → ㄹㄹ). Conocerlos es clave para hablar con fluidez en presente y pasado.',
-  lead: 'ㄹ irregulares: la raiz conserva ㄹ. ㅂ irregulares: ㅂ → 우 antes de vocal (덥다 → 더워요). 르 irregulares: 르 → ㄹㄹ (모르다 → 몰라요). Reconocer el grupo de cada verbo te permite conjugar correctamente sin memorizar caso por caso.',
+    'En coreano A2 debes dominar tres grupos de verbos irregulares que cambian la raíz al conjugar: el grupo ㄹ (raíz conserva ㄹ antes de vocal), el grupo ㅂ (ㅂ → 우 antes de vocal) y el grupo 르 (르 → ㄹㄹ). Conocerlos es clave para hablar con fluidez en presente y pasado.',
+  lead: 'ㄹ irregulares: la raíz conserva ㄹ. ㅂ irregulares: ㅂ → 우 antes de vocal (덥다 → 더워요). 르 irregulares: 르 → ㄹㄹ (모르다 → 몰라요). Reconocer el grupo de cada verbo te permite conjugar correctamente sin memorizar caso por caso.',
   outcomes: [
     'Conjugar verbos ㄹ irregulares en presente y pasado',
     'Aplicar la regla ㅂ → 우 en adjetivos y verbos comunes',
@@ -20,12 +20,12 @@ const topic: GrammarTopic = {
   ],
 
   guide: {
-    goal: 'Reconocer y conjugar los tres grupos de verbos irregulares mas frecuentes en coreano A2.',
+    goal: 'Reconocer y conjugar los tres grupos de verbos irregulares más frecuentes en coreano A2.',
     model: '알다 (saber) → 알아요/알았어요 | 덥다 (estar caluroso) → 더워요 | 모르다 (no saber) → 몰라요/몰랐어요',
-    formula: 'ㄹ: raiz + 아요/어요 sin cambio | ㅂ → 우 + 어요 | 르 → ㄹ duplicado + 아요/어요',
+    formula: 'ㄹ: raíz + 아요/어요 sin cambio | ㅂ → 우 + 어요 | 르 → ㄹ duplicado + 아요/어요',
     decisions: [
       'Identificar el grupo: la terminacion del diccionario revela el tipo irregular',
-      'Grupo ㄹ: raiz termina en ㄹ; ante vocal (아/어) se conserva — 알다 → 알아요, 알았어요',
+      'Grupo ㄹ: raíz termina en ㄹ; ante vocal (아/어) se conserva — 알다 → 알아요, 알았어요',
       'Grupo ㄹ especial: ante consonante fuerte ㄹ se suprime — 알다 + -(으)세요 → 아세요',
       'Grupo ㅂ: ㅂ final se convierte en 우 ante vocal — 덥다 → 더+우+어요 → 더워요',
       'Grupo ㅂ pasado: 더워 → 더웠어요',
@@ -52,47 +52,47 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cuáles son los verbos irregulares del coreano A2?',
       paragraphs: [
-        'En coreano la mayoria de verbos siguen reglas regulares, pero un grupo importante cambia la raiz al conjugarse. En A2 los mas urgentes son tres: ㄹ irregulares (raiz termina en ㄹ), ㅂ irregulares (ㅂ final cambia a 우) y 르 irregulares (르 se convierte en ㄹ duplicado). Dominar estos tres grupos te permitira hablar con naturalidad sobre clima, habilidades y emociones.',
+        'En coreano la mayoria de verbos siguen reglas regulares, pero un grupo importante cambia la raíz al conjugarse. En A2 los más urgentes son tres: ㄹ irregulares (raíz termina en ㄹ), ㅂ irregulares (ㅂ final cambia a 우) y 르 irregulares (르 se convierte en ㄹ duplicado). Dominar estos tres grupos te permitira hablar con naturalidad sobre clima, habilidades y emociones.',
         'La buena noticia: estos cambios son sistematicos. Una vez que interiorizas la regla de cada grupo, la aplicas a todos sus miembros. No hace falta memorizar cada verbo por separado.',
       ],
     },
     {
       heading: '¿Cómo funciona el grupo irregular ㅂ en coreano?',
       paragraphs: [
-        'El grupo ㅂ incluye los adjetivos de clima y sensacion mas comunes: 덥다 (caluroso), 춥다 (frio), 가깝다 (cercano), 어렵다 (dificil), 쉽다 (facil), 아름답다 (hermoso). Todos convierten ㅂ en 우 antes de vocal: 덥다 → 더워요, 춥다 → 추워요.',
-        'Excepcion importante: 좋다 (bueno/le gusta) NO es irregular — 좋아요 es regular. Tambien 잡다 (agarrar) y 입다 (vestirse) son regulares a pesar de terminar en ㅂ.',
+        'El grupo ㅂ incluye los adjetivos de clima y sensacion más comunes: 덥다 (caluroso), 춥다 (frio), 가깝다 (cercano), 어렵다 (difícil), 쉽다 (fácil), 아름답다 (hermoso). Todos convierten ㅂ en 우 antes de vocal: 덥다 → 더워요, 춥다 → 추워요.',
+        'Excepcion importante: 좋다 (bueno/le gusta) NO es irregular — 좋아요 es regular. También 잡다 (agarrar) y 입다 (vestirse) son regulares a pesar de terminar en ㅂ.',
       ],
       table: [
         ['Adjetivo', 'Presente', 'Uso'],
         ['덥다 (caluroso)', '더워요', 'Hablar del clima'],
         ['춥다 (frio)', '추워요', 'Hablar del clima'],
-        ['어렵다 (dificil)', '어려워요', 'Nivel de dificultad'],
-        ['쉽다 (facil)', '쉬워요', 'Nivel de facilidad'],
+        ['어렵다 (difícil)', '어려워요', 'Nivel de dificultad'],
+        ['쉽다 (fácil)', '쉬워요', 'Nivel de facilidad'],
       ],
     },
     {
       heading: '¿Cómo funciona el grupo irregular 르 en coreano?',
       paragraphs: [
         '르 irregulares incluyen verbos muy utiles: 모르다 (no saber), 다르다 (ser diferente), 부르다 (llamar/cantar), 빠르다 (rapido), 고르다 (elegir). La regla: quitas 르, duplicas ㄹ en la silaba anterior y anade 아/어: 모르 → 몰+ㄹ+아요 → 몰라요.',
-        'En pasado la logica es la misma: 몰랐어요, 달랐어요, 불렀어요. La raiz modificada es la base para todas las conjugaciones siguientes.',
+        'En pasado la logica es la misma: 몰랐어요, 달랐어요, 불렀어요. La raíz modificada es la base para todas las conjugaciones siguientes.',
       ],
     },
   ],
 
   visual: {
     mode: 'scene',
-    teacherLens: 'Irregulares ㄹ/ㅂ/르: cada grupo tiene su propia regla de transformacion de raiz.',
+    teacherLens: 'Irregulares ㄹ/ㅂ/르: cada grupo tiene su propia regla de transformacion de raíz.',
     graphicPrompt: 'Tabla comparativa de los tres grupos irregulares con ejemplos y transformaciones resaltadas.',
     scene: [
-      ['알다 → 알아요 (saber)', 'Grupo ㄹ: raiz se conserva ante vocal'],
+      ['알다 → 알아요 (saber)', 'Grupo ㄹ: raíz se conserva ante vocal'],
       ['덥다 → 더워요 (caluroso)', 'Grupo ㅂ: ㅂ → 우 ante vocal'],
       ['춥다 → 추워요 (frio)', 'Grupo ㅂ: patron identico a 덥다'],
       ['모르다 → 몰라요 (no saber)', 'Grupo 르: ㄹ se duplica en silaba anterior'],
       ['다르다 → 달라요 (diferente)', 'Grupo 르: mismo patron que 모르다'],
-      ['살다 → 살아요 (vivir)', 'Grupo ㄹ: raiz conserva ㄹ en presente'],
+      ['살다 → 살아요 (vivir)', 'Grupo ㄹ: raíz conserva ㄹ en presente'],
     ],
     learnerModes: ['reading', 'choosing', 'typing'],
-    reviewFocus: ['ㅂ → 우', '르 → ㄹㄹ', 'grupo ㄹ conserva raiz'],
+    reviewFocus: ['ㅂ → 우', '르 → ㄹㄹ', 'grupo ㄹ conserva raíz'],
   },
 
   practice: {
@@ -100,7 +100,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Nivel 1 — Reconocimiento de irregulares',
-        tag: 'Opcion multiple',
+        tag: 'Opción multiple',
         intro: 'Elige la conjugacion correcta en presente 해요체.',
         type: 'choice',
         items: [
@@ -137,10 +137,10 @@ const topic: GrammarTopic = {
             lines: [['Sofia', '데이비드 선생님은 부카라망가에 ___ (살다). (El profesor Tomás vive en Bucaramanga.)']],
             options: ['살아요', '살으아요', '사라요', '삽니다'],
             answer: '살아요',
-            explain: '살다 es irregular ㄹ: ante vocal 아/어 se conserva la raiz. 살 + 아요 → 살아요.',
+            explain: '살다 es irregular ㄹ: ante vocal 아/어 se conserva la raíz. 살 + 아요 → 살아요.',
           },
           {
-            scene: 'Coreano es dificil',
+            scene: 'Coreano es difícil',
             lines: [['Marco', '한국어가 ___ (어렵다). (El coreano es ___ .)']],
             options: ['어려워요', '어렵아요', '어렵어요', '어려버요'],
             answer: '어려워요',
@@ -164,9 +164,9 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-2',
-        title: 'Nivel 2 — Dialogos con dos espacios',
+        title: 'Nivel 2 — Diálogos con dos espacios',
         tag: '2 espacios',
-        intro: 'Completa los dialogos con la forma correcta del verbo irregular.',
+        intro: 'Completa los diálogos con la forma correcta del verbo irregular.',
         type: 'dual',
         items: [
           {
@@ -205,8 +205,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Habilidades',
             lines: [
- ['Lina', '수영을 할 때 [[0]] (어렵다)? (Es dificil cuando nadas?)'],
- ['Carlos', '처음에는 [[1]] (어렵다). (Al principio es dificil.)'],
+ ['Lina', '수영을 할 때 [[0]] (어렵다)? (Es difícil cuando nadas?)'],
+ ['Carlos', '처음에는 [[1]] (어렵다). (Al principio es difícil.)'],
  ],
             blanks: [
               { options: ['어려워요', '어렵아요', '어려버요', '어렵습니다'], answer: '어려워요', explain: '어렵다 → ㅂ irregular: 어려 + 우 + 어요 → 어려워요.' },
@@ -244,13 +244,13 @@ const topic: GrammarTopic = {
           { answer: '추워요', explain: '춥다 → ㅂ irregular: 추 + 우 + 어요 → 추워요.' },
           { answer: '몰라요', explain: '모르다 → 르 irregular: 몰 + ㄹ + 아요 → 몰라요.' },
           { answer: '달라요', explain: '다르다 → 르 irregular: 달 + ㄹ + 아요 → 달라요.' },
-          { answer: '살아요', explain: '살다 → ㄹ irregular: 살 + 아요 → 살아요 (raiz conservada ante vocal).' },
+          { answer: '살아요', explain: '살다 → ㄹ irregular: 살 + 아요 → 살아요 (raíz conservada ante vocal).' },
           { answer: '어려워요', explain: '어렵다 → ㅂ irregular: 어려 + 우 + 어요 → 어려워요.' },
         ],
       },
       {
         id: 'level-5',
-        title: 'Nivel 5 — Produccion guiada',
+        title: 'Nivel 5 — Producción guiada',
         tag: 'Escritura guiada',
         intro: 'Escribe oraciones completas usando los verbos irregulares indicados.',
         type: 'write',

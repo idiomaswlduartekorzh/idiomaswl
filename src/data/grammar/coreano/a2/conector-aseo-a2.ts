@@ -6,42 +6,42 @@ const topic: GrammarTopic = {
   color: '#c60c30',
   category: 'Conectores',
   level: 'A2',
-  title: 'Conector -(아/어)서 Coreano A2 — Razon y secuencia',
+  title: 'Conector -(아/어)서 Coreano A2 — Razón y secuencia',
   shortTitle: '-(아/어)서',
-  metaTitle: 'Conector coreano A2 — -(아/어)서 razon y secuencia',
+  metaTitle: 'Conector coreano A2 — -(아/어)서 razón y secuencia',
   description:
-    'La terminacion -(아/어)서 conecta dos clausulas expresando razon ("porque") o secuencia ("y luego"). La clausula anterior explica por que o describe que paso primero. No puede usarse antes de mandatos ni de propuestas.',
-  lead: 'Raiz + -아서 (armonía vocal ㅏ/ㅗ) o + -어서 (resto). Ejemplos: 피곤해서 일찍 잤어요 (Estaba cansado, así que dormí temprano). 학교에 가서 공부했어요 (Fui al colegio y estudié).',
+    'La terminacion -(아/어)서 conecta dos cláusulas expresando razón ("porque") o secuencia ("y luego"). La cláusula anterior explica por que o describe que paso primero. No puede usarse antes de mandatos ni de propuestas.',
+  lead: 'Raíz + -아서 (armonía vocal ㅏ/ㅗ) o + -어서 (resto). Ejemplos: 피곤해서 일찍 잤어요 (Estaba cansado, así que dormí temprano). 학교에 가서 공부했어요 (Fui al colegio y estudié).',
   outcomes: [
     'Conectar dos acciones con relacion de causa usando -(아/어)서',
     'Expresar secuencia temporal con -(아/어)서',
-    'Aplicar la regla de armonia vocal para elegir -아서 o -어서',
+    'Aplicar la regla de armonía vocal para elegir -아서 o -어서',
     'Distinguir -(아/어)서 de -(으)면 y -(으)니까',
   ],
 
   guide: {
-    goal: 'Conectar clausulas indicando razon o secuencia con -(아/어)서 en coreano A2.',
+    goal: 'Conectar cláusulas indicando razón o secuencia con -(아/어)서 en coreano A2.',
     model: '피곤해서 집에 있었어요 (Estaba cansado, por eso me quede en casa) | 시장에 가서 과일을 샀어요 (Fui al mercado y compre fruta)',
-    formula: 'Raiz + -아서 (vocal ㅏ/ㅗ) | Raiz + -어서 (resto) | 하다 → 해서',
+    formula: 'Raíz + -아서 (vocal ㅏ/ㅗ) | Raíz + -어서 (resto) | 하다 → 해서',
     decisions: [
-      'Identifica la raiz del verbo o adjetivo: quita -다',
-      'Si la ultima vocal de la raiz es ㅏ o ㅗ → añade -아서: 가다 → 가서, 오다 → 와서',
-      'Si la ultima vocal es cualquier otra → añade -어서: 먹다 → 먹어서, 피곤하다 → 피곤해서',
+      'Identifica la raíz del verbo o adjetivo: quita -다',
+      'Si la última vocal de la raíz es ㅏ o ㅗ → añade -아서: 가다 → 가서, 오다 → 와서',
+      'Si la última vocal es cualquier otra → añade -어서: 먹다 → 먹어서, 피곤하다 → 피곤해서',
       '하다 tiene forma especial: 해서 (no 하아서)',
       'PROHIBICION: -(아/어)서 NO puede preceder a mandatos (세요) ni propuestas (아요/어요 invitacion). Para eso usa -(으)니까',
-      'Con -(아/어)서 el sujeto suele ser el mismo en las dos clausulas',
+      'Con -(아/어)서 el sujeto suele ser el mismo en las dos cláusulas',
     ],
     table: [
       ['Infinitivo', 'Regla de vocal', '-(아/어)서'],
       ['가다 (ir)', 'ㅏ → -아서', '가서'],
-      ['오다 (venir)', 'ㅗ → -아서 (contraccion)', '와서'],
+      ['오다 (venir)', 'ㅗ → -아서 (contracción)', '와서'],
       ['먹다 (comer)', 'ㅓ → -어서', '먹어서'],
       ['피곤하다 (estar cansado)', '하다 → 해서', '피곤해서'],
       ['배우다 (aprender)', 'ㅜ → -어서', '배워서'],
     ],
     mistakes: [
       '"피곤해서 쉬세요" — con mandatos usa -(으)니까: 피곤하니까 쉬세요',
-      '"가아서" — 가다: contraccion 가 + 아서 = 가서 (no 가아서)',
+      '"가아서" — 가다: contracción 가 + 아서 = 가서 (no 가아서)',
       '"하아서" — 하다 tiene forma especial: siempre 해서',
     ],
   },
@@ -50,8 +50,8 @@ const topic: GrammarTopic = {
     {
       heading: '¿Como funciona -(아/어)서 en coreano?',
       paragraphs: [
-        '-(아/어)서 tiene dos usos principales: razon y secuencia. Como razon equivale a "porque" o "asi que": 배가 고파서 밥을 먹었어요 (Tenia hambre, asi que comi). Como secuencia indica que una accion ocurre antes: 집에 가서 숙제를 했어요 (Fui a casa y hice la tarea).',
-        'La clave para elegir -아서 o -어서 es la armonia vocal: si la ultima vocal de la raiz es ㅏ o ㅗ, se usa -아서. En los demas casos, -어서. Y 하다 siempre da 해서, que es una contraccion de 하여서.',
+        '-(아/어)서 tiene dos usos principales: razón y secuencia. Como razón equivale a "porque" o "asi que": 배가 고파서 밥을 먹었어요 (Tenia hambre, asi que comi). Como secuencia indica que una accion ocurre antes: 집에 가서 숙제를 했어요 (Fui a casa y hice la tarea).',
+        'La clave para elegir -아서 o -어서 es la armonía vocal: si la última vocal de la raíz es ㅏ o ㅗ, se usa -아서. En los demas casos, -어서. Y 하다 siempre da 해서, que es una contracción de 하여서.',
       ],
     },
     {
@@ -70,15 +70,15 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cómo se distingue razón de secuencia con -(아/어)서?',
       paragraphs: [
-        'Con verbos de movimiento (가다, 오다, 나가다) -(아/어)서 casi siempre expresa secuencia: 학교에 가서 공부했어요 (Fui al colegio y estudie). Con adjetivos, expresa casi siempre razon: 날씨가 좋아서 기분이 좋아요 (El clima esta bien, por eso me siento bien).',
-        'El contexto y el tipo de verbo te guian: si la primera clausula describe un estado o emocion, es causa. Si describe un desplazamiento o preparacion, es secuencia.',
+        'Con verbos de movimiento (가다, 오다, 나가다) -(아/어)서 casi siempre expresa secuencia: 학교에 가서 공부했어요 (Fui al colegio y estudie). Con adjetivos, expresa casi siempre razón: 날씨가 좋아서 기분이 좋아요 (El clima esta bien, por eso me siento bien).',
+        'El contexto y el tipo de verbo te guian: si la primera cláusula describe un estado o emocion, es causa. Si describe un desplazamiento o preparacion, es secuencia.',
       ],
     },
   ],
 
   visual: {
     mode: 'scene',
-    teacherLens: '-(아/어)서: razon (ㅏ/ㅗ→아서, resto→어서, 하다→해서) o secuencia. NO con mandatos.',
+    teacherLens: '-(아/어)서: razón (ㅏ/ㅗ→아서, resto→어서, 하다→해서) o secuencia. NO con mandatos.',
     graphicPrompt: 'Dos paneles conectados por flecha: Causa/Accion1 -(아/어)서 → Resultado/Accion2.',
     scene: [
       ['피곤해서 일찍 잤어요', 'Estaba cansado, asi que dormi temprano (피곤하다 → 해서)'],
@@ -97,44 +97,44 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Nivel 1 — Reconocimiento de -(아/어)서',
-        tag: 'Opcion multiple',
+        tag: 'Opción multiple',
         intro: 'Elige la forma correcta de -(아/어)서 para cada verbo.',
         type: 'choice',
         items: [
           {
-            scene: 'Cansancio despues del trabajo',
+            scene: 'Cansancio después del trabajo',
             lines: [['Iván', '일이 많___ 집에 일찍 왔어요. (Habia mucho trabajo, asi que vine a casa temprano.)']],
             options: ['아서', '어서', '해서', '이서'],
             answer: '아서',
-            explain: '많다 → raiz 많, ultima vocal ㅏ → 많아서.',
+            explain: '많다 → raíz 많, última vocal ㅏ → 많아서.',
           },
           {
             scene: 'Cita con amigos',
             lines: [['Ana', '친구를 만나___ 카페에 갔어요. (Me encontre con mi amiga y fui al cafe.)']],
             options: ['아서', '어서', '서', '해서'],
             answer: '서',
-            explain: '만나다 → raiz 만나 (vocal ㅏ) → 만나서. 만나 + 아서 = 만나서 (contraccion).',
+            explain: '만나다 → raíz 만나 (vocal ㅏ) → 만나서. 만나 + 아서 = 만나서 (contracción).',
           },
           {
             scene: 'Estudio en casa',
             lines: [['Carlos', '도서관에 ___ (가다) 책을 읽었어요. (Fui a la biblioteca y lei un libro.)']],
             options: ['가서', '가아서', '갔어서', '가해서'],
             answer: '가서',
-            explain: '가다 → vocal ㅏ → 가아서 → contraccion: 가서.',
+            explain: '가다 → vocal ㅏ → 가아서 → contracción: 가서.',
           },
           {
             scene: 'Clima agradable',
             lines: [['Lina', '날씨가 좋___ 산책했어요. (El clima estaba bien, asi que di un paseo.)']],
             options: ['아서', '어서', '해서', '이서'],
             answer: '아서',
-            explain: '좋다 → raiz 좋, ultima vocal ㅗ → 좋아서.',
+            explain: '좋다 → raíz 좋, última vocal ㅗ → 좋아서.',
           },
           {
             scene: 'Sin dinero',
             lines: [['Marco', '돈이 없___ 못 갔어요. (No tenia dinero, asi que no pude ir.)']],
             options: ['어서', '아서', '해서', '으서'],
             answer: '어서',
-            explain: '없다 → raiz 없, ultima vocal ㅓ → 없어서.',
+            explain: '없다 → raíz 없, última vocal ㅓ → 없어서.',
           },
           {
             scene: 'Preparando clase',
@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
             lines: [['Sofia', '버스를 놓쳐___ 늦었어요. (Perde el autobus, asi que llegue tarde.)']],
             options: ['서', '아서', '해서', '이서'],
             answer: '서',
-            explain: '놓치다 → raiz 놓치, vocal ㅣ → 놓쳐서. 놓치 + 어서 → 놓쳐서.',
+            explain: '놓치다 → raíz 놓치, vocal ㅣ → 놓쳐서. 놓치 + 어서 → 놓쳐서.',
           },
           {
             scene: 'Hambre repentina',
@@ -161,9 +161,9 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-2',
-        title: 'Nivel 2 — Dialogos con dos espacios',
+        title: 'Nivel 2 — Diálogos con dos espacios',
         tag: '2 espacios',
-        intro: 'Completa los dialogos usando -(아/어)서 para razon o secuencia.',
+        intro: 'Completa los diálogos usando -(아/어)서 para razón o secuencia.',
         type: 'dual',
         items: [
           {
@@ -203,11 +203,11 @@ const topic: GrammarTopic = {
             scene: 'Motivo del descanso',
             lines: [
  ['Iván', '오늘 왜 수업을 안 들었어요? (¿Por que no asististe a clase hoy?)'],
- ['Sofia', '몸이 [[0]] (아프다) 쉬었어요. 내일은 [[1]] (오다) 꼭 들을게요. (Estaba enfermo, asi que descanse. Manana vendré seguro.)'],
+ ['Sofia', '몸이 [[0]] (아프다) 쉬었어요. 내일은 [[1]] (오다) 꼭 들을게요. (Estaba enfermo, asi que descanse. Mañana vendré seguro.)'],
  ],
             blanks: [
               { options: ['아파서', '아프어서', '아프해서', '아파아서'], answer: '아파서', explain: '아프다 → ㅡ irregular: 아파서 (vocal ㅏ).' },
-              { options: ['와서', '오아서', '왔어서', '오서'], answer: '와서', explain: '오다 → 와서 (ㅗ + 아서 = 와서, contraccion).' },
+              { options: ['와서', '오아서', '왔어서', '오서'], answer: '와서', explain: '오다 → 와서 (ㅗ + 아서 = 와서, contracción).' },
             ],
           },
         ],
@@ -221,9 +221,9 @@ const topic: GrammarTopic = {
         scene: 'El dia de Iván en Bucaramanga',
         text: '오늘 아침에 일찍 일어나[[0]] 조깅을 했어요. 그다음에 집에 돌아[[1]] 샤워를 했어요. 날씨가 맑[[2]] 기분이 정말 좋았어요. 카페에 [[3]] (가다) 커피를 마시면서 수업을 준비했어요. 학생들이 열심히 공부[[4]] 뿌듯했어요.',
         blanks: [
-          { options: ['서', '아서', '어서', '해서'], answer: '서', explain: '일어나다 → 일어나 + 아서 → 일어나서 (contraccion).' },
-          { options: ['아서', '어서', '서', '해서'], answer: '아서', explain: '돌아오다 → 돌아와서. Aqui: 돌아오다 raiz 돌아오, vocal ㅗ → 돌아와서. Simplificado: 돌아와서.' },
-          { options: ['아서', '어서', '해서', '이서'], answer: '아서', explain: '맑다 → raiz 맑, vocal ㅏ → 맑아서.' },
+          { options: ['서', '아서', '어서', '해서'], answer: '서', explain: '일어나다 → 일어나 + 아서 → 일어나서 (contracción).' },
+          { options: ['아서', '어서', '서', '해서'], answer: '아서', explain: '돌아오다 → 돌아와서. Aqui: 돌아오다 raíz 돌아오, vocal ㅗ → 돌아와서. Simplificado: 돌아와서.' },
+          { options: ['아서', '어서', '해서', '이서'], answer: '아서', explain: '맑다 → raíz 맑, vocal ㅏ → 맑아서.' },
           { options: ['가서', '가아서', '갔어서', '가이서'], answer: '가서', explain: '가다 → 가서. Secuencia.' },
           { options: ['해서', '하아서', '하서', '하어서'], answer: '해서', explain: '공부하다 → 해서. Forma especial de 하다.' },
         ],
@@ -241,12 +241,12 @@ const topic: GrammarTopic = {
           { answer: '먹어서', explain: '먹다 → 먹 + 어서 → 먹어서.' },
           { answer: '피곤해서', explain: '피곤하다 → 해서 → 피곤해서.' },
           { answer: '해서', explain: '하다 → 해서 (forma especial).' },
-          { answer: '와서', explain: '오다 → 오 + 아서 → 와서 (contraccion).' },
+          { answer: '와서', explain: '오다 → 오 + 아서 → 와서 (contracción).' },
         ],
       },
       {
         id: 'level-5',
-        title: 'Nivel 5 — Produccion guiada',
+        title: 'Nivel 5 — Producción guiada',
         tag: 'Escritura guiada',
         intro: 'Escribe oraciones completas usando -(아/어)서 para causa o secuencia.',
         type: 'write',
@@ -289,14 +289,14 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'Accion de la manana',
-            prompt: 'Escribe lo que hiciste primero esta manana y lo que paso despues (secuencia con -(아/어)서).',
+            scene: 'Accion de la mañana',
+            prompt: 'Escribe lo que hiciste primero esta mañana y lo que paso después (secuencia con -(아/어)서).',
             answer: '아침에 일어나서 커피를 마셨어요.',
             accepted: ['아서', '어서', '서', '해서'],
             explain: 'Cualquier secuencia valida: 일어나서, 가서, 만나서, 먹어서, etc.',
           },
           {
-            scene: 'Una razon personal',
+            scene: 'Una razón personal',
             prompt: 'Explica por que hiciste algo hoy usando un adjetivo + -아서/-어서.',
             answer: '피곤해서 일찍 잤어요.',
             accepted: ['해서', '아서', '어서'],
@@ -304,7 +304,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Viaje o desplazamiento',
-            prompt: 'Di adonde fuiste hoy y que hiciste despues de llegar (가서/와서).',
+            prompt: 'Di adonde fuiste hoy y que hiciste después de llegar (가서/와서).',
             answer: '도서관에 가서 공부했어요.',
             accepted: ['가서', '와서', '가서 공부'],
             explain: 'Verbos de movimiento + secuencia: 가서, 와서, 나가서, 들어가서.',
