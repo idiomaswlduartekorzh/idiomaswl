@@ -9489,7 +9489,7 @@ And explain whether you would recommend it to others.</em>
 </ul>
 
 <h2>¿Vale la pena invertir en inglés en Bucaramanga?</h2>
-<p>El retorno de inversión del inglés en Colombia sigue siendo uno de los más altos en educación no formal. Un profesional con IELTS Band 7 o TOEFL 90+ puede acceder a estudiar en el exterior, trabajar remoto para empresas internacionales o migrar a Canadá, Australia o el Reino Unido — con un aumento de ingresos del 3x–10x comparado con el mercado local.</p>
+<p>El retorno de inversión del inglés en Colombia sigue siendo uno de los más altos dentro de la formación complementaria. Un profesional con IELTS Band 7 o TOEFL 90+ puede acceder a estudiar en el exterior, trabajar remoto para empresas internacionales o migrar a Canadá, Australia o el Reino Unido — con un aumento de ingresos del 3x–10x comparado con el mercado local.</p>
 <p>Comparado con el costo de una maestría en Colombia ($15M–$40M) o un viaje de intercambio, invertir $500.000–$1.000.000 en preparación de inglés certificado es una de las mejores decisiones económicas disponibles en 2026.</p>
 
 <h2>Conclusión: cómo optimizar tu inversión en inglés</h2>
