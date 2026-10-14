@@ -9,6 +9,21 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Actualización de precios públicos — 14 de octubre de 2026
+
+`codex/pricing-copy-refresh-20261014` parte de `origin/main` en
+`eaa8e1fc4860d9c13c28a817674979da722045c9`. Estado: `LISTO_PARA_INTEGRAR`.
+Alcance: sustituir los precios propios desactualizados en ocho artículos, dejar el
+catálogo de cinco planes como única implementación de `/precios` y retirar el
+componente legado que podía reaparecer por configuración. No cambia la identidad
+de WeLearn ni añade por ahora la expresión «educación informal»; esa decisión queda
+pendiente de validar la operación real frente a la normativa y la Secretaría de
+Educación competente. No requiere migraciones, variables nuevas ni servicios externos.
+Validaciones: catálogo protegido (465 temas), línea base contra `origin/main`, seis
+pruebas focalizadas, fragmentos SEO, TypeScript, ESLint focalizado, build Next.js de
+2.599 páginas y revisión local en navegador de `/precios` y del artículo de precios de
+Bucaramanga. Sin integración, deployment ni smoke de producción todavía.
+
 ## Cierre de acceso a claves y corrección — 12 de octubre de 2026
 
 `codex/exam-server-gating` partió del `main` en `1812fb710336d6dbbe8535ba6de0666d8d82e84c`

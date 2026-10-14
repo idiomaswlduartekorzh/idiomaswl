@@ -48,11 +48,18 @@ function compareSet(current, previous, label) {
   }
 }
 
+function compareProtectedSet(current, previous, retired, label) {
+  for (const item of previous) {
+    if (!current.includes(item) && !retired.has(item)) failures.push(`${label} no puede retirar el valor protegido: ${item}`)
+  }
+}
+
 function compareManifest(previous, gitRef) {
+  const retiredProtectedFiles = new Set(manifest.retiredProtectedFiles ?? [])
   compareSet(manifest.languages, previous.languages, 'languages')
   compareSet(manifest.levels, previous.levels, 'levels')
   compareSet(manifest.practiceModalities, previous.practiceModalities, 'practiceModalities')
-  compareSet(manifest.protectedFiles, previous.protectedFiles, 'protectedFiles')
+  compareProtectedSet(manifest.protectedFiles, previous.protectedFiles, retiredProtectedFiles, 'protectedFiles')
   compareSet(manifest.requiredNpmScripts, previous.requiredNpmScripts, 'requiredNpmScripts')
   compareSet(manifest.requiredPrebuildChecks, previous.requiredPrebuildChecks, 'requiredPrebuildChecks')
 
@@ -93,6 +100,7 @@ function compareManifest(previous, gitRef) {
   }
 
   for (const [relativePath, markers] of Object.entries(previous.protectedMarkers)) {
+    if (retiredProtectedFiles.has(relativePath)) continue
     if (!manifest.protectedMarkers[relativePath]) {
       failures.push(`protectedMarkers no puede retirar el archivo: ${relativePath}`)
       continue
@@ -126,6 +134,12 @@ for (const language of manifest.classLandingLanguages ?? []) {
 
 for (const relativePath of manifest.protectedFiles) expectFile(relativePath)
 for (const [relativePath, markers] of Object.entries(manifest.protectedMarkers)) expectMarkers(relativePath, markers)
+for (const relativePath of manifest.retiredProtectedFiles ?? []) {
+  if (exists(relativePath)) failures.push(`El archivo protegido retirado todavía existe: ${relativePath}`)
+  if (manifest.protectedFiles.includes(relativePath) || manifest.protectedMarkers[relativePath]) {
+    failures.push(`El archivo retirado no puede seguir protegido: ${relativePath}`)
+  }
+}
 
 const smokeRoutePaths = manifest.smokeRoutes.map((route) => route.path)
 if (new Set(smokeRoutePaths).size !== smokeRoutePaths.length) failures.push('smokeRoutes contiene rutas duplicadas')

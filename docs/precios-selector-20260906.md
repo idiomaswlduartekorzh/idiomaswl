@@ -1,5 +1,7 @@
 # Selector de cursos y precios — 6 de septiembre de 2026
 
+> Actualización del 14 de octubre de 2026: el catálogo de cinco planes pasó a ser la única página pública de `/precios`. La página anterior y los flags `COURSE_PRICING_ENABLED` y `COURSE_PRICING_PREVIEW` fueron retirados. El resto de este documento conserva el estado histórico de la entrega original.
+
 Estado: EN_VALIDACION. Rama exclusiva `codex/precios-selector-20260906`, base canónica `3a12afb2` (main actualizado por fetch). Worktree: `/Users/ddev/Documents/ChatGPT/IdiomasWL/precios-selector-20260906`.
 
 ## Implementado

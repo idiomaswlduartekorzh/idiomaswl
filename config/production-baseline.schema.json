@@ -44,6 +44,7 @@
     },
     "classLandingLanguages": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
     "protectedFiles": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "retiredProtectedFiles": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
     "protectedMarkers": {
       "type": "object",
       "minProperties": 1,

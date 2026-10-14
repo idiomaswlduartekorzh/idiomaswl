@@ -3627,6 +3627,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Precios reales de apps, academias, tutores particulares y preparación del Goethe-Zertifikat, y cuánto hay que invertir por nivel.',
     date: '2026-05-30',
+    updatedDate: '2026-10-14',
     readTime: 6,
     category: 'Alemán',
     tags: ['cuánto cuesta aprender alemán Colombia', 'precio clases de alemán Colombia', 'academia de alemán Bucaramanga', 'Goethe preparación costo Colombia', 'aprender alemán 2026'],
@@ -3644,7 +3645,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Academia grupal en Colombia</td><td>$200.000–$400.000</td><td>Estructura, comunidad</td><td>Ritmo lento (A1 puede tomar 1–2 años), grupos grandes</td></tr>
     <tr><td>Instituto Goethe (presencial)</td><td>$400.000–$800.000</td><td>Calidad reconocida, certificación propia</td><td>Caro, no siempre disponible en todas las ciudades</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$300.000–$700.000</td><td>Ritmo personalizado, feedback inmediato</td><td>Calidad varía según tutor</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep Goethe, diagnóstico gratis</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$320.000–$1.160.000 por ciclo de 4 semanas</td><td>Plan personalizado, prep Goethe, diagnóstico gratis</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
   </tbody>
 </table>
 
@@ -3684,6 +3685,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Precios reales de la Alianza Francesa, academias, tutores online y preparación del DELF, y cuánto hay que invertir por nivel.',
     date: '2026-05-30',
+    updatedDate: '2026-10-14',
     readTime: 6,
     category: 'Francés',
     tags: ['cuánto cuesta aprender francés Colombia', 'precio clases de francés Colombia', 'Alianza Francesa precio Colombia', 'DELF preparación costo Colombia', 'aprender francés 2026'],
@@ -3700,7 +3702,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Alianza Francesa (presencial)</td><td>$350.000–$600.000</td><td>Calidad reconocida, certificación DELF in-house</td><td>Caro, grupos grandes, ritmo lento</td></tr>
     <tr><td>Academia grupal online</td><td>$150.000–$350.000</td><td>Más flexible que presencial</td><td>Grupos de hasta 15 personas, poco tiempo de speaking</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$250.000–$600.000</td><td>Ritmo personalizado</td><td>Calidad varía; no todos conocen el DELF</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep DELF, diagnóstico gratis</td><td>Requiere práctica autónoma diaria</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$320.000–$1.160.000 por ciclo de 4 semanas</td><td>Plan personalizado, prep DELF, diagnóstico gratis</td><td>Requiere práctica autónoma diaria</td></tr>
   </tbody>
 </table>
 
@@ -3735,6 +3737,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Precios reales de apps, la Dante Alighieri, tutores online y preparación del CILS, y cuánto hay que invertir para llegar al B1.',
     date: '2026-05-30',
+    updatedDate: '2026-10-14',
     readTime: 5,
     category: 'Italiano',
     tags: ['cuánto cuesta aprender italiano Colombia', 'precio clases de italiano Colombia', 'Instituto Dante Alighieri Colombia', 'CILS preparación costo Colombia', 'italiano ciudadanía italiana costo'],
@@ -3751,7 +3754,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Dante Alighieri (presencial)</td><td>$250.000–$500.000</td><td>Reconocimiento institucional, materiales oficiales</td><td>Grupos grandes, ritmo fijo, no siempre en tu ciudad</td></tr>
     <tr><td>Academia grupal online</td><td>$120.000–$300.000</td><td>Asequible</td><td>Poco tiempo de speaking, ritmo no adaptable</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$200.000–$500.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep CILS, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$320.000–$1.160.000 por ciclo de 4 semanas</td><td>Plan personalizado, prep CILS, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
   </tbody>
 </table>
 
@@ -3782,6 +3785,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Precios reales de apps, recursos gratuitos, tutores online y preparación del Celpe-Bras, con lo que hay que invertir por nivel.',
     date: '2026-05-30',
+    updatedDate: '2026-10-14',
     readTime: 5,
     category: 'Portugués',
     tags: ['cuánto cuesta aprender portugués Colombia', 'precio clases de portugués Colombia', 'Celpe-Bras preparación costo Colombia', 'portugués brasileño clases online Colombia', 'aprender portugués hispanohablantes'],
@@ -3798,7 +3802,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Academia grupal presencial</td><td>$150.000–$350.000</td><td>Ambiente social</td><td>Poco tiempo de speaking, ritmo fijo, no especializado en Celpe-Bras</td></tr>
     <tr><td>Academia grupal online</td><td>$100.000–$250.000</td><td>Asequible</td><td>Sin personalización, grupos grandes</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$180.000–$450.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$320.000–$1.160.000 por ciclo de 4 semanas</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
   </tbody>
 </table>
 
@@ -9328,6 +9332,7 @@ And explain whether you would recommend it to others.</em>
     metaDescription:
       'Qué ofrece cada academia de inglés de Bucaramanga, precios, metodología y cuál elegir según tu objetivo: IELTS, TOEFL o inglés general.',
     date: '2026-06-01',
+    updatedDate: '2026-10-14',
     readTime: 8,
     category: 'Inglés',
     tags: ['academias de inglés Bucaramanga', 'clases de inglés Bucaramanga', 'inglés Bucaramanga', 'mejor academia inglés Bucaramanga', 'curso inglés Bucaramanga 2026'],
@@ -9366,7 +9371,7 @@ And explain whether you would recommend it to others.</em>
     <tr><td>Especialización IELTS/TOEFL</td><td>Básica</td><td>Media</td><td>Alta (método propio)</td></tr>
     <tr><td>Tutor asignado</td><td>No</td><td>No</td><td>Sí, desde el día 1</td></tr>
     <tr><td>Modalidad</td><td>Presencial</td><td>Presencial/online</td><td>Online (toda Colombia)</td></tr>
-    <tr><td>Precio/mes</td><td>$300K–$900K/nivel</td><td>$400K–$1.2M/nivel</td><td>Desde $180K/mes</td></tr>
+    <tr><td>Precio</td><td>$300K–$900K/nivel</td><td>$400K–$1.2M/nivel</td><td>Desde $320K por ciclo de 4 semanas</td></tr>
     <tr><td>Simulacros de examen</td><td>Limitados</td><td>Limitados</td><td>Ilimitados en plataforma</td></tr>
   </tbody>
 </table>
@@ -9377,10 +9382,9 @@ And explain whether you would recommend it to others.</em>
   <li><strong>Academias tradicionales presenciales:</strong> $300.000 a $900.000 por nivel (1–2 meses de clases grupales)</li>
   <li><strong>Centros de idiomas con prestigio:</strong> $400.000 a $1.500.000 por nivel</li>
   <li><strong>Clases individuales con tutor particular:</strong> $40.000 a $90.000 por hora</li>
-  <li><strong>WeLearn:</strong> depende de la intensidad semanal; el diagnóstico inicial es gratis y ahí se define el valor exacto</li>
-  <li><strong>WeLearn (paquetes de horas):</strong> paquetes de 4, 10 y 20 horas con precio decreciente por hora</li>
+  <li><strong>WeLearn:</strong> entre $320.000 y $1.160.000 por ciclo de cuatro semanas, según una intensidad de 1 a 5 clases semanales de 100 minutos</li>
 </ul>
-<p>Para preparación de IELTS o TOEFL, los paquetes de horas individuales con tutor especializado suelen ser más eficientes que los cursos grupales — aunque el costo por hora sea similar, la velocidad de progreso es mucho mayor.</p>
+<p>Para preparación de IELTS o TOEFL, las clases individuales con tutor especializado suelen ser más eficientes que los cursos grupales — aunque el costo por hora sea similar, la velocidad de progreso puede ser mayor.</p>
 
 <h2>Cómo elegir la academia correcta según tu objetivo</h2>
 
@@ -9410,14 +9414,15 @@ And explain whether you would recommend it to others.</em>
     slug: 'cuanto-cuesta-aprender-ingles-en-bucaramanga-2026',
     title: '¿Cuánto cuesta aprender inglés en Bucaramanga en 2026? Precios reales',
     description:
-      'Guía completa de precios de clases de inglés en Bucaramanga 2026: academias tradicionales, clases particulares, plataformas online y paquetes de horas. Cuánto pagar según tu objetivo.',
+      'Guía completa de precios de clases de inglés en Bucaramanga 2026: academias tradicionales, clases particulares, plataformas online y planes por intensidad. Cuánto pagar según tu objetivo.',
     metaTitle: 'Cuánto cuesta aprender inglés en Bucaramanga en 2026',
     metaDescription:
       'Precios reales de academias, clases particulares y plataformas online en Bucaramanga, y cuánto conviene pagar según tu objetivo.',
     date: '2026-06-01',
+    updatedDate: '2026-10-14',
     readTime: 7,
     category: 'Inglés',
-    tags: ['cuánto cuesta inglés Bucaramanga', 'precio clases inglés Bucaramanga', 'academia inglés Bucaramanga precio', 'clases particulares inglés Bucaramanga', 'paquetes inglés Bucaramanga'],
+    tags: ['cuánto cuesta inglés Bucaramanga', 'precio clases inglés Bucaramanga', 'academia inglés Bucaramanga precio', 'clases particulares inglés Bucaramanga', 'planes inglés Bucaramanga'],
     body: `
 <h2>¿Cuánto se paga por aprender inglés en Bucaramanga?</h2>
 <p>Esta es una de las preguntas más frecuentes de quienes quieren mejorar su inglés en Bucaramanga. Los precios varían enormemente según la modalidad, el tamaño del grupo, la especialización del tutor y si las clases son presenciales u online. Esta guía te da los precios reales del mercado en 2026.</p>
@@ -9458,23 +9463,21 @@ And explain whether you would recommend it to others.</em>
 <table>
   <thead><tr><th>Plan</th><th>Precio</th><th>¿Qué incluye?</th></tr></thead>
   <tbody>
-    <tr><td>Diagnóstico</td><td>Gratis</td><td>45 min: evaluación de nivel + plan personalizado</td></tr>
-    <tr><td>Plan Preparación</td><td>$180.000/mes</td><td>Simulacros + feedback escrito + chat tutor 24h</td></tr>
-    <tr><td>Plan Intensivo 2x/sem</td><td>$280.000/mes</td><td>Sesiones en vivo + tutor asignado + plan</td></tr>
-    <tr><td>Plan Intensivo 4x/sem</td><td>$480.000/mes</td><td>Sesiones en vivo frecuentes + tutor + evaluación mensual</td></tr>
-    <tr><td>Paquete 4 horas</td><td>Consultar WA</td><td>Clases en vivo prepago, sin compromiso mensual</td></tr>
-    <tr><td>Paquete 10 horas</td><td>Consultar WA</td><td>Mejor precio/hora que compras sueltas</td></tr>
-    <tr><td>Paquete 20 horas</td><td>Consultar WA</td><td>Mejor precio/hora disponible</td></tr>
+    <tr><td>Esencial</td><td>$320.000 por ciclo</td><td>1 clase semanal · 4 clases de 100 minutos en 4 semanas</td></tr>
+    <tr><td>Constancia</td><td>$540.000 por ciclo</td><td>2 clases semanales · 8 clases de 100 minutos en 4 semanas</td></tr>
+    <tr><td>Impulso</td><td>$760.000 por ciclo</td><td>3 clases semanales · 12 clases de 100 minutos en 4 semanas</td></tr>
+    <tr><td>Intensivo</td><td>$960.000 por ciclo</td><td>4 clases semanales · 16 clases de 100 minutos en 4 semanas</td></tr>
+    <tr><td>Diario</td><td>$1.160.000 por ciclo</td><td>5 clases semanales · 20 clases de 100 minutos en 4 semanas</td></tr>
   </tbody>
 </table>
+<p>Todos los valores de WeLearn corresponden a un ciclo de cuatro semanas y no a una mensualidad con renovación automática. Consulta el detalle vigente en <a href="/precios">planes y precios</a>.</p>
 
 <h2>¿Cuánto cuesta prepararse para el IELTS en Bucaramanga?</h2>
 <p>La preparación para el IELTS en Bucaramanga tiene un costo total que incluye el programa de preparación más el costo del examen en sí:</p>
 <ul>
   <li><strong>Costo del examen IELTS</strong> (British Council / IDP): aproximadamente $1.100.000–$1.200.000 COP</li>
   <li><strong>Preparación en academia tradicional (grupal, 3 meses):</strong> $600.000–$1.800.000</li>
-  <li><strong>Preparación con WeLearn:</strong> consultar según intensidad y meses de preparación</li>
-  <li><strong>Preparación con paquete de horas WeLearn (20h):</strong> consultar por WhatsApp</li>
+  <li><strong>Preparación con WeLearn:</strong> desde $320.000 por ciclo de cuatro semanas, según la intensidad elegida</li>
 </ul>
 <p>La eficiencia del aprendizaje individual hace que el costo total de alcanzar Band 7 pueda ser menor con WeLearn que con cursos grupales, aunque el precio por hora parezca mayor — porque se llega al objetivo más rápido y con menos intentos de examen.</p>
 
@@ -9482,7 +9485,7 @@ And explain whether you would recommend it to others.</em>
 <p>El examen TOEFL iBT cuesta aproximadamente USD 235 (~$1.000.000 COP al tipo de cambio de 2026). La preparación:</p>
 <ul>
   <li>Cursos grupales en academia: $500.000–$1.200.000 (variable en meses)</li>
-  <li>Paquete de horas WeLearn: consultar por WhatsApp</li>
+  <li>WeLearn: desde $320.000 por ciclo de cuatro semanas</li>
 </ul>
 
 <h2>¿Vale la pena invertir en inglés en Bucaramanga?</h2>
@@ -9712,6 +9715,7 @@ And explain whether you would recommend it to others.</em>
     metaDescription:
       'Precios reales de apps, tutores online, academias y preparación TORFL, y cuánto hay que invertir para llegar a cada nivel de ruso.',
     date: '2026-08-18',
+    updatedDate: '2026-10-14',
     readTime: 6,
     category: 'Ruso',
     tags: ['cuánto cuesta aprender ruso Colombia', 'precio clases de ruso', 'clases de ruso Bucaramanga', 'TORFL costo', 'aprender ruso 2026'],
@@ -9728,7 +9732,7 @@ And explain whether you would recommend it to others.</em>
     <tr><td>YouTube y recursos libres</td><td>$0</td><td>Mucho material bueno en inglés</td><td>Sin progresión ni corrección; nadie te dice que declinas mal</td></tr>
     <tr><td>Intercambio de idiomas</td><td>$0</td><td>Práctica oral real</td><td>Un nativo no es profesor: sabe que suena mal, no sabe explicarte por qué</td></tr>
     <tr><td>Tutor particular online</td><td>$200.000–$550.000</td><td>Ritmo propio</td><td>Calidad muy dispar; pocos con formación pedagógica</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, dirección académica rusa nativa, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$320.000–$1.160.000 por ciclo de 4 semanas</td><td>Plan personalizado, dirección académica rusa nativa, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
   </tbody>
 </table>
 
@@ -10015,6 +10019,7 @@ And explain whether you would recommend it to others.</em>
     metaDescription:
       'Precios reales de apps, academias, tutores online y preparación JLPT, y cuánto hay que invertir para llegar a cada nivel.',
     date: '2026-08-18',
+    updatedDate: '2026-10-14',
     readTime: 6,
     category: 'Japonés',
     tags: ['cuánto cuesta aprender japonés Colombia', 'precio clases de japonés', 'clases de japonés Bucaramanga', 'JLPT costo', 'aprender japonés 2026'],
@@ -10032,7 +10037,7 @@ And explain whether you would recommend it to others.</em>
     <tr><td>YouTube y recursos libres</td><td>$0</td><td>Mucho material bueno</td><td>Sin progresión ni corrección</td></tr>
     <tr><td>Academia grupal</td><td>$180.000–$400.000</td><td>Estructura y compañeros</td><td>Grupos grandes, poca producción oral por estudiante</td></tr>
     <tr><td>Tutor particular online</td><td>$250.000–$600.000</td><td>Ritmo propio</td><td>Calidad dispar; pocos preparan JLPT específicamente</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, orientación JLPT, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$320.000–$1.160.000 por ciclo de 4 semanas</td><td>Plan personalizado, orientación JLPT, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
   </tbody>
 </table>
 

@@ -1,5 +1,7 @@
 # Candidato de precios, reglamento y Wompi
 
+> Actualización del 14 de octubre de 2026: el catálogo de cinco planes pasó a ser la única página pública de `/precios`. La página anterior y los flags `COURSE_PRICING_ENABLED` y `COURSE_PRICING_PREVIEW` fueron retirados. El resto de este documento conserva el estado histórico de la entrega original.
+
 Worktree exclusivo `precios-wompi-20260907`, rama `codex/precios-wompi-20260907`, integrada en `main`. La venta fue autorizada y liberada el 8 de septiembre de 2026 mediante un estado versionado en Git; `COURSE_SALES_EMERGENCY_DISABLED=true` funciona como cierre de emergencia.
 
 ## Alcance implementado
