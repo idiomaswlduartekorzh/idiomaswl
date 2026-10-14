@@ -5,6 +5,7 @@ import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { EXAMS } from '@/data/exams';
 import { getMock } from '@/data/mocks';
 import { auditMockKey, getAnswerKeyCatalog } from '@/lib/exams/answer-key-catalog';
+import { getExamTranscriptResource } from '@/lib/exams/transcript-resource';
 import KeyHubNavigator from './KeyHubNavigator';
 import styles from './key-hub.module.css';
 
@@ -30,6 +31,7 @@ export default async function AnswerKeyHubPage({
   const selected = catalog.find(item => item.key === requested) ?? catalog[0];
   const mock = getMock(selected.examSlug, selected.mockId)!;
   const audit = auditMockKey(mock);
+  const transcript = getExamTranscriptResource(selected.examSlug, selected.mockId);
   const issueCount = catalog.reduce((sum, item) => sum + item.issues, 0);
   const answerCount = catalog.reduce((sum, item) => sum + item.automatic + item.reference, 0);
   const examCount = new Set(catalog.map(item => item.examSlug)).size;
@@ -79,6 +81,24 @@ export default async function AnswerKeyHubPage({
             <span><b>{audit.open}</b> abiertas</span>
             <span className={audit.issues ? styles.problem : styles.clear}><b>{audit.issues}</b> alertas de integridad</span>
           </div>
+
+          {transcript && (
+            <aside className={styles.transcriptCard} aria-label="Transcripción del audio de este set">
+              <div className={styles.transcriptIcon} aria-hidden="true">PDF</div>
+              <div className={styles.transcriptCopy}>
+                <p className={styles.transcriptEyebrow}>Recurso del set</p>
+                <h3>Transcripción del audio</h3>
+                <p>
+                  Documento editorial WeLearn con interfaz en {transcript.interfaceLanguage}
+                  {' '}y el contenido del audio en {transcript.audioLanguage}.
+                </p>
+              </div>
+              <div className={styles.transcriptActions}>
+                <a href={transcript.href} target="_blank" rel="noreferrer">Abrir PDF ↗</a>
+                <a href={transcript.href} download>Descargar</a>
+              </div>
+            </aside>
+          )}
 
           <nav className={styles.sectionNav} aria-label="Secciones de este simulacro">
             {audit.sections.map((section, index) => <a href={`#seccion-${index}`} key={`${section.title}-${index}`}>{section.title}</a>)}

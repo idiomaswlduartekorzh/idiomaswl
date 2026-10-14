@@ -27,6 +27,7 @@ require.extensions['.ts'] = (module, filename) => {
 const { getMock, getRegisteredMockKeys } = require('../src/data/mocks/index.ts');
 const { getAnswerKeyCatalog, auditMockKey } = require('../src/lib/exams/answer-key-catalog.ts');
 const { acceptsExamAnswer } = require('../src/lib/exams/accepted-answer.ts');
+const { getExamTranscriptResource } = require('../src/lib/exams/transcript-resource.ts');
 
 const catalog = getAnswerKeyCatalog();
 assert.deepEqual(new Set(catalog.map(item => item.key)), new Set(getRegisteredMockKeys()));
@@ -36,10 +37,26 @@ for (const item of catalog) {
   assert.equal(item.issues, 0, `${item.key} has key-integrity alerts`);
 }
 
+const transcriptResources = catalog
+  .map(item => ({ item, resource: getExamTranscriptResource(item.examSlug, item.mockId) }))
+  .filter(({ resource }) => resource);
+assert.equal(transcriptResources.length, 57, 'The transcript library must cover 57 published sets.');
+assert.equal(new Set(transcriptResources.map(({ resource }) => resource.href)).size, 57, 'Transcript PDF routes must be unique.');
+for (const { item, resource } of transcriptResources) {
+  const pdfPath = path.join(root, 'public', resource.href.slice(1));
+  assert(fs.existsSync(pdfPath), `${item.key} transcript is missing: ${resource.href}`);
+  const descriptor = fs.openSync(pdfPath, 'r');
+  const signature = Buffer.alloc(4);
+  fs.readSync(descriptor, signature, 0, signature.length, 0);
+  fs.closeSync(descriptor);
+  assert.equal(signature.toString(), '%PDF', `${item.key} transcript is not a valid PDF`);
+  assert(fs.statSync(pdfPath).size > 10_000, `${item.key} transcript PDF is unexpectedly small`);
+}
+
 const fce = auditMockKey(getMock('cambridge-b2', 'set-3'));
 assert.equal(fce.automatic, 82);
 assert.equal(fce.sections[0].rows.map(row => row.options.find(option => option.correct).letter).join(''), 'CADBBDAC');
 assert(acceptsExamAnswer('  HAS.  ', ['has']));
 assert(!acceptsExamAnswer('had', ['has']));
 
-console.log(`Claves íntegras: ${catalog.length} sets, ${new Set(catalog.map(item => item.examSlug)).size} exámenes, ${catalog.reduce((sum, item) => sum + item.automatic + item.reference, 0)} claves, 0 alertas estructurales.`);
+console.log(`Claves íntegras: ${catalog.length} sets, ${new Set(catalog.map(item => item.examSlug)).size} exámenes, ${catalog.reduce((sum, item) => sum + item.automatic + item.reference, 0)} claves, 57 transcripciones PDF, 0 alertas estructurales.`);

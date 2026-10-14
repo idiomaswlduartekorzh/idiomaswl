@@ -770,3 +770,20 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   niños; el cruce bilingüe se conserva como diferencial verificable. La
   implementación está en `9e32a028c3bd1db16092b8721c55d52d19dcef7f` y pasó
   los trabajos `baseline-and-types` y `production-build` de GitHub Actions.
+
+### 13 de octubre de 2026 — biblioteca de transcripciones de exámenes
+
+- Rama `codex/exam-transcripts-production`, creada desde
+  `48b834179c83b134dd2de94063f247cdd7ec1864` de `origin/main`. La entrega
+  incorpora 57 PDF: IELTS 20, Goethe A1 7, Cambridge B2 First/FCE 10 y TOEFL
+  20. Los documentos de IELTS, FCE y TOEFL usan interfaz editorial en español;
+  Goethe usa alemán. El diálogo se conserva en el idioma del audio.
+- El panel privado `/dashboard/admin/claves` resuelve cada PDF por examen y set
+  desde un registro central, con acciones de apertura y descarga. El guardián
+  de claves verifica cobertura, rutas únicas, firma PDF y tamaño mínimo.
+- Validación previa a integración: 57/57 documentos, 451 páginas, primeras
+  páginas con contenido, revisión visual representativa de las cuatro familias,
+  TypeScript, catálogo de práctica, prebuild completo y build Turbopack de
+  2.599 páginas aprobados. No requiere migraciones ni variables nuevas.
+- Estado: `LISTO_PARA_INTEGRAR`. Completar SHA de `main`, deployment Vercel y
+  smoke público después de la integración.
