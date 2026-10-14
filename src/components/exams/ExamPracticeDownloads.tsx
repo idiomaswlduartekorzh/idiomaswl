@@ -12,9 +12,9 @@ export default function ExamPracticeDownloads({ examSlug, mockId }: Props) {
 
   const german = resources.interfaceLanguage === 'Deutsch';
   const copy = german ? {
-    eyebrow: 'RESSOURCEN ZUM TESTSATZ',
-    title: 'Nachbereiten mit klaren Unterlagen',
-    intro: 'Laden Sie die Audio-Transkription und die Lösungen passend zu diesem Testsatz herunter.',
+    eyebrow: 'DOWNLOADS ZUM TESTSATZ',
+    title: 'Transkription und Lösungsschlüssel',
+    intro: 'Öffnen oder laden Sie die beiden PDF-Dateien herunter, die genau zu diesem Testsatz gehören.',
     transcriptTitle: 'Audio-Transkription',
     transcriptBody: 'Der vollständige Audioinhalt zum Nachlesen und Wiederholen.',
     keyTitle: 'Lösungen und Bewertungshinweise',
@@ -23,12 +23,12 @@ export default function ExamPracticeDownloads({ examSlug, mockId }: Props) {
     download: 'Herunterladen',
     label: 'Herunterladbare Unterlagen zu diesem Testsatz',
   } : {
-    eyebrow: 'RECURSOS DEL SET',
-    title: 'Repasa y corrige con una guía clara',
-    intro: 'Descarga la transcripción y las claves correspondientes exactamente a este set.',
+    eyebrow: 'DESCARGAS DEL SET',
+    title: 'Transcripción y answer key',
+    intro: 'Abre o descarga los dos PDF que corresponden exactamente a este set.',
     transcriptTitle: 'Transcripción del audio',
     transcriptBody: `Contenido completo del audio en ${resources.audioLanguage} para volver a escuchar y estudiar.`,
-    keyTitle: 'Claves y criterios de respuesta',
+    keyTitle: 'Answer key · Claves y criterios',
     keyBody: 'Respuestas objetivas y orientación para las tareas abiertas.',
     open: 'Abrir PDF',
     download: 'Descargar',

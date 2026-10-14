@@ -1143,6 +1143,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'Responses' : 'Respuestas'}</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{practiceSkill ? '∞' : mock.timeMinutes}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'No timer' : 'Minutos'}</span></div>
           </div>
+          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <div className="prac-intro__sections">
             {mock.sections.filter(sec=>!practiceSkill || sec.skill===practiceSkill).flatMap(sec =>
               practiceSkill === 'speaking'
@@ -1161,7 +1162,6 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
             <PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={practiceSkill ? `${SKILL_LABEL[practiceSkill]} PDF` : 'Full practice PDF'} />
             {!practiceSkill && skills.filter(skill => !comingSoonSkills.has(skill)).map(skill => <PdfDownloadButton key={skill} generate={downloadWorksheetFor(skill)} label={`${SKILL_LABEL[skill]} PDF`} compact />)}
           </div>
-          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">{practiceSkill ? 'Before you start' : 'Antes de empezar'}</p>
             {practiceSkill ? <ul>

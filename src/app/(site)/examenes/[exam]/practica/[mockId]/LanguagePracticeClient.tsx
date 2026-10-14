@@ -1783,6 +1783,7 @@ export default function LanguagePracticeClient({
               <span className="prac-intro__stat-lbl">Minutos</span>
             </div>
           </div>
+          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <div className="prac-intro__sections">
             {mock.sections.map((s, i) => (
               <div key={`${s.part}-${i}`} className="prac-intro__section-item">
@@ -1792,7 +1793,6 @@ export default function LanguagePracticeClient({
               </div>
             ))}
           </div>
-          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} mockId={mock.id} /> : null}
           <div className="goethe-a2-intro-actions">
             <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>

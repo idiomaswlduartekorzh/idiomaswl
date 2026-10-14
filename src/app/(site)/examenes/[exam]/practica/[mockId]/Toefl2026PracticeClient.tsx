@@ -1281,6 +1281,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{stages.length}</span><span className="prac-intro__stat-lbl">Bloques secuenciales</span></div>
             {blockedAudioItems > 0 && <div className="prac-intro__stat"><span className="prac-intro__stat-val">{blockedAudioItems}</span><span className="prac-intro__stat-lbl">Ítems con audio pendiente</span></div>}
           </div>
+          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">Práctica fija alineada al formato vigente desde enero de 2026</p>
             <ul>
@@ -1295,7 +1296,6 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
               {blockedAudioItems > 0 && ' Los ítems sin medio se muestran sólo para revisión y no se califican.'}
             </p>
           </div>
-          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <button className="btn prac-intro__start" onClick={beginExam} disabled={!hydrated}>Empezar práctica fija</button>
           <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheet} label="Full practice PDF" />{(['reading', 'listening', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill[0].toUpperCase()}${skill.slice(1)} PDF`} compact />)}</div>
           <Link href={`/examenes/${exam.slug}`} className="prac-intro__back">Volver a {exam.name}</Link>
