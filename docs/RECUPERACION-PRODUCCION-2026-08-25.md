@@ -785,5 +785,16 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   páginas con contenido, revisión visual representativa de las cuatro familias,
   TypeScript, catálogo de práctica, prebuild completo y build Turbopack de
   2.599 páginas aprobados. No requiere migraciones ni variables nuevas.
-- Estado: `LISTO_PARA_INTEGRAR`. Completar SHA de `main`, deployment Vercel y
-  smoke público después de la integración.
+- La implementación funcional `78292f84306ede285c023a3337ec85e6409c3f83`
+  quedó integrada en `main` mediante
+  `82b84af0400e45f1513e517b52633f7c38ccad18` y la
+  [PR #20](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/20). Pasaron
+  `baseline-and-types`, `production-build`, Vercel y Vercel Preview Comments.
+- El deployment de producción
+  [`dpl_EA1V2ognpV2Zm9eihzNciEtZmZ5D`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/EA1V2ognpV2Zm9eihzNciEtZmZ5D)
+  terminó en estado `READY` y asignó `www.idiomaswl.com`, `idiomaswl.com` e
+  `idiomaswl.vercel.app`. El smoke posterior confirmó 57/57 rutas PDF con
+  HTTP 200, `application/pdf` y firma `%PDF-`; el acceso sin sesión al panel
+  conserva la redirección esperada a `/login`.
+- Estado: `DESPLEGADO`. No se añadieron migraciones, variables de entorno ni
+  servicios externos.
