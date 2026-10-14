@@ -828,3 +828,24 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   y enlazaron ambos recursos.
 - Estado: `DESPLEGADO`. No se añadieron migraciones, variables de entorno ni
   servicios externos.
+
+### 14 de octubre de 2026 — visibilidad de transcripciones y claves en práctica
+
+- La corrección mueve el bloque de transcripción y `answer key` inmediatamente
+  después del resumen de cada set, antes de listas de secciones, módulos o
+  indicaciones. IELTS, FCE y TOEFL muestran la interfaz en español; Goethe la
+  mantiene en alemán. El guardián de recursos ahora también falla si el bloque
+  vuelve a quedar por debajo del contenido introductorio.
+- La implementación entró en `main` mediante la
+  [PR #24](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/24), commit
+  `1ffe9e96d359b066dec36202e93077842a759f3d`. Pasaron
+  `baseline-and-types`, `production-build`, Vercel y Vercel Preview Comments;
+  el build local generó 2.599 páginas.
+- Vercel publicó el deployment
+  [`dpl_CveLzWZwqa1SW21n3t6tArkBBqFD`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/CveLzWZwqa1SW21n3t6tArkBBqFD)
+  en estado `READY`, asignado a `www.idiomaswl.com`, `idiomaswl.com` e
+  `idiomaswl.vercel.app`. El smoke posterior confirmó las cuatro páginas con
+  HTTP 200, el bloque antes del contenido largo y 2/2 PDF por familia con
+  HTTP 200, `application/pdf` y firma `%PDF`.
+- Estado: `DESPLEGADO`. No se añadieron migraciones, variables de entorno ni
+  servicios externos.
