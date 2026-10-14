@@ -3,6 +3,10 @@
   --js-navy: #003478;
 }
 
+.sectionNav {
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .learningSwitch button {
   min-height: 2.4rem;
   padding: 0.62rem 0.95rem;
@@ -142,12 +146,109 @@
   font-size: clamp(3.2rem, 9vw, 7rem);
 }
 
+.jamoStrokeGrid {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.jamoStrokeGrid button {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+
+.strokePlayer {
+  min-height: 34rem;
+  align-content: center;
+  gap: 0.75rem;
+}
+
+.strokeDiagram {
+  width: min(100%, 20rem);
+  overflow: visible;
+  color: var(--js-red);
+}
+
+.guideGlyph {
+  fill: none;
+  stroke: color-mix(in srgb, var(--js-navy) 13%, transparent);
+  stroke-dasharray: 4 5;
+  stroke-width: 1;
+}
+
+.animatedStroke {
+  fill: none;
+  stroke: var(--js-navy);
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10;
+  animation: drawHangul 0.66s ease-out forwards;
+}
+
+.strokeNumberDot,
+.strokeNumber {
+  opacity: 0;
+  animation: revealStrokeNumber 0.2s ease-out forwards;
+}
+
+.strokeNumberDot {
+  fill: var(--js-red);
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.strokeNumber {
+  fill: #fff;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.strokeMeta {
+  display: grid;
+  justify-items: center;
+}
+
+.strokeMeta h3 span {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 1.75rem;
+}
+
+.familyTag {
+  padding: 0.35rem 0.62rem;
+  border-radius: 999px;
+  color: var(--js-navy);
+  background: color-mix(in srgb, var(--js-navy) 8%, var(--js-surface));
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@keyframes drawHangul {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes revealStrokeNumber {
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 720px) {
+  .sectionNav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .audioGrid {
     grid-template-columns: 1fr;
   }
 
   .learningSwitch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
   }
 
@@ -158,5 +259,26 @@
 
   .blockGrid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .jamoStrokeGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .strokePlayer {
+    min-height: 29rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animatedStroke {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+  .strokeNumberDot,
+  .strokeNumber {
+    opacity: 1;
+    animation: none;
   }
 }

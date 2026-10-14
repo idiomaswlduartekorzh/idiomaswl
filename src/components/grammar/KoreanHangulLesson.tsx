@@ -6,7 +6,7 @@ import type { FormEvent, MutableRefObject } from 'react'
 import base from './JapaneseScriptLesson.module.css'
 import styles from './KoreanHangulLesson.module.css'
 
-type SectionId = 'learn' | 'chart' | 'blocks' | 'practice' | 'resources'
+type SectionId = 'learn' | 'chart' | 'strokes' | 'blocks' | 'practice' | 'resources'
 type PracticeMode = 'read' | 'choose'
 type LetterKind = 'vocal' | 'consonante'
 
@@ -15,6 +15,13 @@ type HangulLetter = {
   reading: string
   accepts: string[]
   kind: LetterKind
+  family: 'basica' | 'tensa' | 'compuesta'
+}
+
+type StrokeSpec = {
+  d: string
+  start: [number, number]
+  transform?: string
 }
 
 type HangulBlock = {
@@ -27,10 +34,11 @@ type HangulBlock = {
 
 const SECTION_LABELS: Array<[SectionId, string, string]> = [
   ['learn', '01', 'Comprender'],
-  ['chart', '02', 'Tabla visual'],
-  ['blocks', '03', 'Formar bloques'],
-  ['practice', '04', 'Práctica'],
-  ['resources', '05', 'Recursos'],
+  ['chart', '02', 'Tabla completa'],
+  ['strokes', '03', 'Orden de trazos'],
+  ['blocks', '04', 'Formar bloques'],
+  ['practice', '05', 'Práctica'],
+  ['resources', '06', 'Recursos'],
 ]
 
 const AUDIO_TRACKS = [
@@ -41,31 +49,101 @@ const AUDIO_TRACKS = [
 ] as const
 
 const LETTERS: HangulLetter[] = [
-  { glyph: 'ㅏ', reading: 'a', accepts: ['a'], kind: 'vocal' },
-  { glyph: 'ㅓ', reading: 'eo', accepts: ['eo'], kind: 'vocal' },
-  { glyph: 'ㅗ', reading: 'o', accepts: ['o'], kind: 'vocal' },
-  { glyph: 'ㅜ', reading: 'u', accepts: ['u'], kind: 'vocal' },
-  { glyph: 'ㅡ', reading: 'eu', accepts: ['eu'], kind: 'vocal' },
-  { glyph: 'ㅣ', reading: 'i', accepts: ['i'], kind: 'vocal' },
-  { glyph: 'ㅐ', reading: 'ae', accepts: ['ae'], kind: 'vocal' },
-  { glyph: 'ㅔ', reading: 'e', accepts: ['e'], kind: 'vocal' },
-  { glyph: 'ㅚ', reading: 'oe / we', accepts: ['oe', 'we'], kind: 'vocal' },
-  { glyph: 'ㅟ', reading: 'wi', accepts: ['wi'], kind: 'vocal' },
-  { glyph: 'ㄱ', reading: 'g / k', accepts: ['g', 'k', 'g/k'], kind: 'consonante' },
-  { glyph: 'ㄴ', reading: 'n', accepts: ['n'], kind: 'consonante' },
-  { glyph: 'ㄷ', reading: 'd / t', accepts: ['d', 't', 'd/t'], kind: 'consonante' },
-  { glyph: 'ㄹ', reading: 'r / l', accepts: ['r', 'l', 'r/l'], kind: 'consonante' },
-  { glyph: 'ㅁ', reading: 'm', accepts: ['m'], kind: 'consonante' },
-  { glyph: 'ㅂ', reading: 'b / p', accepts: ['b', 'p', 'b/p'], kind: 'consonante' },
-  { glyph: 'ㅅ', reading: 's', accepts: ['s'], kind: 'consonante' },
-  { glyph: 'ㅇ', reading: 'muda / ng', accepts: ['muda', 'ng', 'muda/ng'], kind: 'consonante' },
-  { glyph: 'ㅈ', reading: 'j', accepts: ['j'], kind: 'consonante' },
-  { glyph: 'ㅊ', reading: 'ch', accepts: ['ch'], kind: 'consonante' },
-  { glyph: 'ㅋ', reading: 'k aspirada', accepts: ['k', 'k aspirada'], kind: 'consonante' },
-  { glyph: 'ㅌ', reading: 't aspirada', accepts: ['t', 't aspirada'], kind: 'consonante' },
-  { glyph: 'ㅍ', reading: 'p aspirada', accepts: ['p', 'p aspirada'], kind: 'consonante' },
-  { glyph: 'ㅎ', reading: 'h', accepts: ['h'], kind: 'consonante' },
+  { glyph: 'ㄱ', reading: 'g / k', accepts: ['g', 'k', 'g/k'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㄲ', reading: 'kk', accepts: ['kk'], kind: 'consonante', family: 'tensa' },
+  { glyph: 'ㄴ', reading: 'n', accepts: ['n'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㄷ', reading: 'd / t', accepts: ['d', 't', 'd/t'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㄸ', reading: 'tt', accepts: ['tt'], kind: 'consonante', family: 'tensa' },
+  { glyph: 'ㄹ', reading: 'r / l', accepts: ['r', 'l', 'r/l'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅁ', reading: 'm', accepts: ['m'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅂ', reading: 'b / p', accepts: ['b', 'p', 'b/p'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅃ', reading: 'pp', accepts: ['pp'], kind: 'consonante', family: 'tensa' },
+  { glyph: 'ㅅ', reading: 's', accepts: ['s'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅆ', reading: 'ss', accepts: ['ss'], kind: 'consonante', family: 'tensa' },
+  { glyph: 'ㅇ', reading: 'muda / ng', accepts: ['muda', 'ng', 'muda/ng'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅈ', reading: 'j', accepts: ['j'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅉ', reading: 'jj', accepts: ['jj'], kind: 'consonante', family: 'tensa' },
+  { glyph: 'ㅊ', reading: 'ch', accepts: ['ch'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅋ', reading: 'k aspirada', accepts: ['k', 'k aspirada'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅌ', reading: 't aspirada', accepts: ['t', 't aspirada'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅍ', reading: 'p aspirada', accepts: ['p', 'p aspirada'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅎ', reading: 'h', accepts: ['h'], kind: 'consonante', family: 'basica' },
+  { glyph: 'ㅏ', reading: 'a', accepts: ['a'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅐ', reading: 'ae', accepts: ['ae'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅑ', reading: 'ya', accepts: ['ya'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅒ', reading: 'yae', accepts: ['yae'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅓ', reading: 'eo', accepts: ['eo'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅔ', reading: 'e', accepts: ['e'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅕ', reading: 'yeo', accepts: ['yeo'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅖ', reading: 'ye', accepts: ['ye'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅗ', reading: 'o', accepts: ['o'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅘ', reading: 'wa', accepts: ['wa'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅙ', reading: 'wae', accepts: ['wae'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅚ', reading: 'oe / we', accepts: ['oe', 'we'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅛ', reading: 'yo', accepts: ['yo'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅜ', reading: 'u', accepts: ['u'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅝ', reading: 'wo', accepts: ['wo'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅞ', reading: 'we', accepts: ['we'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅟ', reading: 'wi', accepts: ['wi'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅠ', reading: 'yu', accepts: ['yu'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅡ', reading: 'eu', accepts: ['eu'], kind: 'vocal', family: 'basica' },
+  { glyph: 'ㅢ', reading: 'ui', accepts: ['ui', 'eui'], kind: 'vocal', family: 'compuesta' },
+  { glyph: 'ㅣ', reading: 'i', accepts: ['i'], kind: 'vocal', family: 'basica' },
 ]
+
+const stroke = (d: string, x: number, y: number, transform?: string): StrokeSpec => ({ d, start: [x, y], transform })
+
+const BASE_STROKES: Record<string, StrokeSpec[]> = {
+  'ㄱ': [stroke('M35 42 H140 V140', 35, 42)],
+  'ㄴ': [stroke('M42 35 V140 H145', 42, 35)],
+  'ㄷ': [stroke('M38 38 H142', 38, 38), stroke('M38 38 V142 H142', 38, 38)],
+  'ㄹ': [stroke('M38 35 H142 V82 H55 V135 H145', 38, 35)],
+  'ㅁ': [stroke('M40 35 V140', 40, 35), stroke('M40 35 H140 V140', 40, 35), stroke('M40 140 H140', 40, 140)],
+  'ㅂ': [stroke('M42 32 V145', 42, 32), stroke('M138 32 V145', 138, 32), stroke('M42 48 H138', 42, 48), stroke('M42 112 H138', 42, 112)],
+  'ㅅ': [stroke('M88 35 L42 142', 88, 35), stroke('M90 35 L142 142', 90, 35)],
+  'ㅇ': [stroke('M90 34 C42 34 42 146 90 146 C138 146 138 34 90 34', 90, 34)],
+  'ㅈ': [stroke('M38 37 H142', 38, 37), stroke('M88 55 L42 142', 88, 55), stroke('M90 55 L142 142', 90, 55)],
+  'ㅊ': [stroke('M66 28 H114', 66, 28), stroke('M38 55 H142', 38, 55), stroke('M88 70 L42 145', 88, 70), stroke('M90 70 L142 145', 90, 70)],
+  'ㅋ': [stroke('M35 42 H140 V140', 35, 42), stroke('M35 90 H138', 35, 90)],
+  'ㅌ': [stroke('M35 34 H145', 35, 34), stroke('M48 83 H132', 48, 83), stroke('M38 50 V132 H142 V50', 38, 50)],
+  'ㅍ': [stroke('M38 43 H142', 38, 43), stroke('M38 132 H142', 38, 132), stroke('M58 30 V145', 58, 30), stroke('M122 30 V145', 122, 30)],
+  'ㅎ': [stroke('M66 28 H114', 66, 28), stroke('M42 58 H138', 42, 58), stroke('M90 76 C52 76 52 145 90 145 C128 145 128 76 90 76', 90, 76)],
+  'ㅏ': [stroke('M82 28 V150', 82, 28), stroke('M82 88 H145', 82, 88)],
+  'ㅐ': [stroke('M55 28 V150', 55, 28), stroke('M55 88 H105', 55, 88), stroke('M125 28 V150', 125, 28)],
+  'ㅑ': [stroke('M75 25 V155', 75, 25), stroke('M75 68 H145', 75, 68), stroke('M75 112 H145', 75, 112)],
+  'ㅒ': [stroke('M45 25 V155', 45, 25), stroke('M45 68 H92', 45, 68), stroke('M45 112 H92', 45, 112), stroke('M120 25 V155', 120, 25)],
+  'ㅓ': [stroke('M35 88 H98', 35, 88), stroke('M98 28 V150', 98, 28)],
+  'ㅔ': [stroke('M35 88 H85', 35, 88), stroke('M85 28 V150', 85, 28), stroke('M125 28 V150', 125, 28)],
+  'ㅕ': [stroke('M35 68 H105', 35, 68), stroke('M35 112 H105', 35, 112), stroke('M105 25 V155', 105, 25)],
+  'ㅖ': [stroke('M28 68 H75', 28, 68), stroke('M28 112 H75', 28, 112), stroke('M75 25 V155', 75, 25), stroke('M125 25 V155', 125, 25)],
+  'ㅗ': [stroke('M90 35 V92', 90, 35), stroke('M30 92 H150', 30, 92)],
+  'ㅘ': [stroke('M62 28 V86', 62, 28), stroke('M25 86 H112', 25, 86), stroke('M125 30 V150', 125, 30), stroke('M125 92 H158', 125, 92)],
+  'ㅙ': [stroke('M48 28 V86', 48, 28), stroke('M18 86 H91', 18, 86), stroke('M100 30 V150', 100, 30), stroke('M100 92 H132', 100, 92), stroke('M150 30 V150', 150, 30)],
+  'ㅚ': [stroke('M62 30 V88', 62, 30), stroke('M25 88 H105', 25, 88), stroke('M135 30 V150', 135, 30)],
+  'ㅛ': [stroke('M65 35 V92', 65, 35), stroke('M115 35 V92', 115, 35), stroke('M25 92 H155', 25, 92)],
+  'ㅜ': [stroke('M28 75 H152', 28, 75), stroke('M90 75 V145', 90, 75)],
+  'ㅝ': [stroke('M20 70 H103', 20, 70), stroke('M62 70 V142', 62, 70), stroke('M105 102 H145', 105, 102), stroke('M145 32 V150', 145, 32)],
+  'ㅞ': [stroke('M18 70 H88', 18, 70), stroke('M53 70 V142', 53, 70), stroke('M88 102 H112', 88, 102), stroke('M112 32 V150', 112, 32), stroke('M152 32 V150', 152, 32)],
+  'ㅟ': [stroke('M25 70 H105', 25, 70), stroke('M65 70 V142', 65, 70), stroke('M135 30 V150', 135, 30)],
+  'ㅠ': [stroke('M25 70 H155', 25, 70), stroke('M65 70 V140', 65, 70), stroke('M115 70 V140', 115, 70)],
+  'ㅡ': [stroke('M25 90 H155', 25, 90)],
+  'ㅢ': [stroke('M20 90 H105', 20, 90), stroke('M138 28 V152', 138, 28)],
+  'ㅣ': [stroke('M90 25 V155', 90, 25)],
+}
+
+const doubleStrokes = (glyph: 'ㄱ' | 'ㄷ' | 'ㅂ' | 'ㅅ' | 'ㅈ') => [
+  ...BASE_STROKES[glyph].map((item) => ({ ...item, transform: 'translate(3 35) scale(.62)' })),
+  ...BASE_STROKES[glyph].map((item) => ({ ...item, transform: 'translate(67 35) scale(.62)' })),
+]
+
+const STROKES: Record<string, StrokeSpec[]> = {
+  ...BASE_STROKES,
+  'ㄲ': doubleStrokes('ㄱ'),
+  'ㄸ': doubleStrokes('ㄷ'),
+  'ㅃ': doubleStrokes('ㅂ'),
+  'ㅆ': doubleStrokes('ㅅ'),
+  'ㅉ': doubleStrokes('ㅈ'),
+}
 
 const BLOCKS: HangulBlock[] = [
   { glyph: '가', reading: 'ga', parts: ['ㄱ', 'ㅏ'], layout: 'Vocal vertical: la vocal va a la derecha.' },
@@ -116,6 +194,33 @@ function playAudio(src: string, audioRef: MutableRefObject<HTMLAudioElement | nu
 
 function AudioButton({ src, label, audioRef }: { src: string; label: string; audioRef: MutableRefObject<HTMLAudioElement | null> }) {
   return <button className={base.audioButton} type="button" onClick={() => playAudio(src, audioRef)} aria-label={label}><span aria-hidden="true">▶</span> Escuchar</button>
+}
+
+function StrokeDiagram({ letter, replayKey }: { letter: HangulLetter; replayKey: number }) {
+  const strokes = STROKES[letter.glyph]
+  return (
+    <svg key={`${letter.glyph}-${replayKey}`} className={styles.strokeDiagram} viewBox="0 0 180 180" role="img" aria-label={`Orden de trazos de ${letter.glyph}`}>
+      <defs>
+        <marker id="hangul-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+        </marker>
+      </defs>
+      <path className={styles.guideGlyph} d="M20 20 H160 V160 H20 Z M90 20 V160 M20 90 H160" />
+      {strokes.map((item, index) => (
+        <g key={`${letter.glyph}-${index}`} transform={item.transform}>
+          <path
+            className={styles.animatedStroke}
+            d={item.d}
+            pathLength="1"
+            markerEnd="url(#hangul-arrow)"
+            style={{ animationDelay: `${index * 0.72}s` }}
+          />
+          <circle className={styles.strokeNumberDot} cx={item.start[0]} cy={item.start[1]} r="9" style={{ animationDelay: `${index * 0.72}s` }} />
+          <text className={styles.strokeNumber} x={item.start[0]} y={item.start[1] + 3.5} textAnchor="middle" style={{ animationDelay: `${index * 0.72}s` }}>{index + 1}</text>
+        </g>
+      ))}
+    </svg>
+  )
 }
 
 function HangulPractice({ audioRef }: { audioRef: MutableRefObject<HTMLAudioElement | null> }) {
@@ -219,6 +324,8 @@ function PracticeModes({ active, onSelect }: { active: PracticeMode; onSelect: (
 export default function KoreanHangulLesson() {
   const [section, setSection] = useState<SectionId>('learn')
   const [block, setBlock] = useState(BLOCKS[0])
+  const [strokeLetter, setStrokeLetter] = useState(LETTERS[0])
+  const [strokeReplay, setStrokeReplay] = useState(0)
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   function openSection(next: SectionId) {
@@ -230,6 +337,7 @@ export default function KoreanHangulLesson() {
     <div className={`${base.lesson} ${styles.lesson}`}>
       <nav className={`${base.scriptSwitch} ${styles.learningSwitch}`} aria-label="Ruta de hangeúl">
         <button type="button" className={section === 'learn' ? styles.activeSwitch : ''} onClick={() => openSection('learn')}>Hangeúl</button>
+        <button type="button" className={section === 'strokes' ? styles.activeSwitch : ''} onClick={() => openSection('strokes')}>Trazos</button>
         <button type="button" className={section === 'blocks' ? styles.activeSwitch : ''} onClick={() => openSection('blocks')}>Bloques</button>
         <button type="button" className={section === 'practice' ? styles.activeSwitch : ''} onClick={() => openSection('practice')}>Lectura A1</button>
       </nav>
@@ -238,18 +346,18 @@ export default function KoreanHangulLesson() {
         <div className={base.heroCopy}>
           <p className={base.eyebrow}>Coreano · Escritura · A1</p>
           <h1>Hangeúl básico</h1>
-          <p>Aprende las 24 letras esenciales, comprende cómo se convierten en bloques silábicos y practica en ambas direcciones sin depender de la romanización.</p>
+          <p>Aprende los 40 jamo del hangeúl moderno —19 consonantes y 21 vocales—, domina sus trazos y conviértelos en bloques silábicos.</p>
           <div className={base.heroActions}><button className={base.primaryButton} type="button" onClick={() => openSection('practice')}>Empezar práctica →</button><button className={base.secondaryButton} type="button" onClick={() => openSection('learn')}>Ver explicación</button></div>
         </div>
         <div className={base.heroVisual}>
           <Image src="/assets/korean/step002/kr_step002_geulja_signs_v1.png" alt="Letreros coreanos para reconocer bloques silábicos del hangeúl" fill priority sizes="(max-width: 860px) 100vw, 42vw" />
           <span className={`${base.heroMark} ${styles.heroMark}`} lang="ko">한</span>
-          <p>Un alfabeto de 24 letras que se organiza visualmente en bloques cuadrados.</p>
-          <div className={base.heroFacts}><div><b>24</b><span>letras básicas</span></div><div><b>2</b><span>modos de práctica</span></div><div><b>35 min</b><span>sesión sugerida</span></div></div>
+          <p>24 jamo básicos más 16 formas tensas o compuestas, organizados en bloques cuadrados.</p>
+          <div className={base.heroFacts}><div><b>40</b><span>jamo modernos</span></div><div><b>40</b><span>guías de trazos</span></div><div><b>45 min</b><span>sesión sugerida</span></div></div>
         </div>
       </section>
 
-      <nav id="korean-hangul-nav" className={base.sectionNav} aria-label="Contenido de la lección">
+      <nav id="korean-hangul-nav" className={`${base.sectionNav} ${styles.sectionNav}`} aria-label="Contenido de la lección">
         {SECTION_LABELS.map(([id, number, label]) => <button key={id} type="button" className={section === id ? base.activeSection : ''} onClick={() => openSection(id)}><small>{number}</small><b>{label}</b></button>)}
       </nav>
 
@@ -257,8 +365,8 @@ export default function KoreanHangulLesson() {
         {section === 'learn' ? (
           <section aria-labelledby="hangul-intro-title">
             <header className={base.sectionHeader}><div><span className={base.kicker}>Fundamento antes de memorizar</span><h2 id="hangul-intro-title">Qué es el hangeúl y por qué se aprende por bloques</h2></div></header>
-            <div className={base.prose}><p>El hangeúl (한글) es el alfabeto del coreano. Sus 14 consonantes y 10 vocales básicas no se escriben en una fila continua: se agrupan dentro de un bloque que representa una sílaba.</p><p>En 가, por ejemplo, ㄱ aporta el sonido inicial y ㅏ la vocal. Si aparece una consonante final, se coloca en la base: 한 combina ㅎ + ㅏ + ㄴ. Leer coreano consiste en reconocer primero el bloque y después recorrer sus partes.</p><p>Para un hispanohablante el reto principal no es memorizar 24 símbolos aislados, sino asociar forma, posición y sonido sin convertir la romanización en una muleta permanente.</p></div>
-            <div className={base.infoGrid}><article className={base.infoCard}><small>Su función</small><span lang="ko">한</span><p>Cada bloque representa una sílaba y conserva una forma visual cuadrada.</p></article><article className={base.infoCard}><small>Cómo se organiza</small><span lang="ko">가</span><p>La vocal va a la derecha o debajo de la consonante inicial.</p></article><article className={base.infoCard}><small>Meta A1</small><span lang="ko">글</span><p>Reconocer las 24 letras y leer bloques básicos sin depender del latín.</p></article></div>
+            <div className={base.prose}><p>El hangeúl (한글) es el alfabeto del coreano. Parte de 14 consonantes y 10 vocales básicas; al sumar cinco consonantes tensas y once vocales compuestas, el inventario moderno de inicio de sílaba y vocal reúne 40 formas.</p><p>En 가, por ejemplo, ㄱ aporta el sonido inicial y ㅏ la vocal. Si aparece una consonante final, se coloca en la base: 한 combina ㅎ + ㅏ + ㄴ. Leer coreano consiste en reconocer primero el bloque y después recorrer sus partes.</p><p>Para un hispanohablante el reto principal es asociar forma, posición, trazo y sonido sin convertir la romanización en una muleta permanente.</p></div>
+            <div className={base.infoGrid}><article className={base.infoCard}><small>Su función</small><span lang="ko">한</span><p>Cada bloque representa una sílaba y conserva una forma visual cuadrada.</p></article><article className={base.infoCard}><small>Inventario moderno</small><span lang="ko">40</span><p>19 consonantes y 21 vocales, incluidas las formas tensas y compuestas.</p></article><article className={base.infoCard}><small>Meta A1</small><span lang="ko">글</span><p>Reconocer todo el inventario y leer bloques básicos sin depender del latín.</p></article></div>
             <div className={base.callout}><strong>Clave para hispanohablantes.</strong> No leas ㅓ como dos sonidos porque se escriba eo. La romanización es una etiqueta provisional; escucha la voz coreana y vuelve siempre a la forma original.</div>
             <div className={styles.audioGrid}>{AUDIO_TRACKS.map((track, index) => <article key={track.id} className={styles.audioCard}><span>{String(index + 1).padStart(2, '0')}</span><h3>{track.title}</h3><p lang="ko">{track.korean}</p><small>{track.note}</small><audio controls preload="metadata" src={track.src}>Tu navegador no puede reproducir este audio.</audio></article>)}</div>
           </section>
@@ -266,8 +374,22 @@ export default function KoreanHangulLesson() {
 
         {section === 'chart' ? (
           <section aria-labelledby="hangul-chart-title">
-            <header className={base.sectionHeader}><div><span className={base.kicker}>Referencia visual</span><h2 id="hangul-chart-title">Las 24 letras y la lógica de los bloques</h2><p>Usa el mapa para comparar formas, ubicar vocales verticales u horizontales y construir tus primeras sílabas.</p></div><a className={base.secondaryButton} href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" download>Descargar SVG</a></header>
-            <div className={base.chartLayout}><div className={base.chartFrame}><Image src="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" alt="Tabla visual completa de las letras básicas del hangeúl" width={1600} height={1200} sizes="(max-width: 860px) 100vw, 72vw" unoptimized /></div><aside className={base.tipList} aria-label="Consejos para estudiar la tabla"><div><b>1. Separa por función</b><span>Memoriza primero vocales y luego consonantes; después combínalas.</span></div><div><b>2. Mira la dirección</b><span>ㅏ, ㅓ y ㅣ van a la derecha; ㅗ, ㅜ y ㅡ van debajo.</span></div><div><b>3. Lee en bloques</b><span>No deletrees indefinidamente: combina las partes y recupera una sola sílaba.</span></div></aside></div>
+            <header className={base.sectionHeader}><div><span className={base.kicker}>Referencia visual completa</span><h2 id="hangul-chart-title">Los 40 jamo del hangeúl moderno</h2><p>Compara las 19 consonantes y las 21 vocales. Las etiquetas distinguen formas básicas, tensas y compuestas.</p></div><a className={base.secondaryButton} href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" download>Descargar SVG</a></header>
+            <div className={base.chartLayout}><div className={base.chartFrame}><Image src="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" alt="Tabla visual completa de las 19 consonantes y 21 vocales del hangeúl moderno" width={1600} height={1200} sizes="(max-width: 860px) 100vw, 72vw" unoptimized /></div><aside className={base.tipList} aria-label="Consejos para estudiar la tabla"><div><b>1. Aprende la base</b><span>Empieza con los 24 jamo básicos y usa su forma para entender los 16 derivados.</span></div><div><b>2. Agrupa familias</b><span>Compara ㄱ/ㄲ, ㄷ/ㄸ y ㅗ/ㅘ/ㅙ/ㅚ para ver qué se añade.</span></div><div><b>3. Lee en bloques</b><span>No deletrees indefinidamente: combina las partes y recupera una sola sílaba.</span></div></aside></div>
+          </section>
+        ) : null}
+
+        {section === 'strokes' ? (
+          <section aria-labelledby="hangul-strokes-title">
+            <header className={base.sectionHeader}><div><span className={base.kicker}>Escritura guiada · 40 formas</span><h2 id="hangul-strokes-title">Orden y dirección de los trazos</h2><p>Elige cualquier jamo. La animación numera cada movimiento y marca su dirección; en general, escribe de arriba abajo y de izquierda a derecha.</p></div></header>
+            <div className={base.strokeLayout}>
+              <div className={`${base.strokeGrid} ${styles.jamoStrokeGrid}`}>{LETTERS.map((candidate) => <button key={candidate.glyph} type="button" lang="ko" className={strokeLetter.glyph === candidate.glyph ? base.activeStroke : ''} onClick={() => { setStrokeLetter(candidate); setStrokeReplay((value) => value + 1) }} aria-label={`${candidate.glyph}, ${candidate.reading}, ${candidate.kind}`}>{candidate.glyph}</button>)}</div>
+              <div className={`${base.strokePlayer} ${styles.strokePlayer}`}>
+                <StrokeDiagram letter={strokeLetter} replayKey={strokeReplay} />
+                <div className={styles.strokeMeta}><span className={styles.familyTag}>{strokeLetter.family === 'basica' ? 'Forma básica' : strokeLetter.family === 'tensa' ? 'Consonante tensa' : 'Vocal compuesta'}</span><h3><span lang="ko">{strokeLetter.glyph}</span> · {strokeLetter.reading}</h3><p>{STROKES[strokeLetter.glyph].length} {STROKES[strokeLetter.glyph].length === 1 ? 'movimiento mostrado' : 'movimientos mostrados'}. Sigue los números y la punta de cada línea.</p><button className={base.secondaryButton} type="button" onClick={() => setStrokeReplay((value) => value + 1)}>↻ Repetir animación</button></div>
+              </div>
+            </div>
+            <div className={base.callout}><strong>Nota de escritura.</strong> Los trazos muestran una forma escolar clara. El aspecto exacto puede variar ligeramente según la tipografía o la caligrafía, pero se conserva el principio de arriba abajo y de izquierda a derecha.</div>
           </section>
         ) : null}
 
@@ -279,14 +401,14 @@ export default function KoreanHangulLesson() {
         ) : null}
 
         {section === 'practice' ? (
-          <section aria-labelledby="hangul-practice-title"><header className={base.sectionHeader}><div><span className={base.kicker}>Práctica · sesión de 10</span><h2 id="hangul-practice-title">Reconoce el hangeúl en ambas direcciones</h2><p>Cada sesión mezcla diez de las 24 letras: primero de la forma al sonido y después del sonido a la forma.</p></div></header><HangulPractice audioRef={audioRef} /></section>
+          <section aria-labelledby="hangul-practice-title"><header className={base.sectionHeader}><div><span className={base.kicker}>Práctica · sesión de 10</span><h2 id="hangul-practice-title">Reconoce el hangeúl en ambas direcciones</h2><p>Cada sesión mezcla diez de los 40 jamo: primero de la forma al sonido y después del sonido a la forma.</p></div></header><HangulPractice audioRef={audioRef} /></section>
         ) : null}
 
         {section === 'resources' ? (
           <section aria-labelledby="hangul-resources-title">
             <header className={base.sectionHeader}><div><span className={base.kicker}>Biblioteca descargable</span><h2 id="hangul-resources-title">Recursos para estudiar sin conexión</h2><p>Materiales listos para imprimir, guardar o usar en sesiones cortas de pronunciación.</p></div></header>
-            <div className={base.resources}><ResourceCard icon="▦" title="Tabla visual" copy="Las 24 letras, sus lecturas y la composición de bloques." href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" label="Descargar SVG" /><ResourceCard icon="▤" title="Cuaderno A1" copy="7 páginas con explicación, audio, 32 ejercicios y soluciones." href="/downloads/coreano-a1/idiomaswl-hangul-basico-a1.pdf" label="Descargar PDF" /><ResourceCard icon="▶" title="Audio coreano" copy="Las cuatro pistas Chatterbox aprobadas, reunidas para estudiar sin conexión." href="/downloads/coreano-a1/idiomaswl-hangul-audios.zip" label="Descargar ZIP" /><ResourceCard icon="▣" title="Imagen editorial" copy="Escena coreana original utilizada como referencia visual de la unidad." href="/assets/korean/step002/kr_step002_geulja_signs_v1.png" label="Descargar imagen" /></div>
-            <div className={base.faq}><details><summary>¿Debo memorizar las 24 letras en un día?</summary><p>No. Estudia grupos pequeños, combínalos de inmediato y repasa con sesiones mezcladas.</p></details><details><summary>¿Por qué ㅇ a veces no suena?</summary><p>Al inicio funciona como soporte mudo para una vocal; al final del bloque suena ng.</p></details><details><summary>¿Qué es el batchim?</summary><p>Es la consonante que ocupa la base del bloque y cierra la sílaba.</p></details><details><summary>¿Cuándo dejo la romanización?</summary><p>Desde el principio úsala solo para comprobar. Tápala en la segunda lectura.</p></details></div>
+            <div className={base.resources}><ResourceCard icon="▦" title="Tabla visual completa" copy="Los 40 jamo modernos, sus lecturas y sus familias." href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" label="Descargar SVG" /><ResourceCard icon="▤" title="Cuaderno A1" copy="7 páginas con explicación, audio, 32 ejercicios y soluciones." href="/downloads/coreano-a1/idiomaswl-hangul-basico-a1.pdf" label="Descargar PDF" /><ResourceCard icon="▶" title="Audio coreano" copy="Las cuatro pistas Chatterbox aprobadas, reunidas para estudiar sin conexión." href="/downloads/coreano-a1/idiomaswl-hangul-audios.zip" label="Descargar ZIP" /><ResourceCard icon="▣" title="Imagen editorial" copy="Escena coreana original utilizada como referencia visual de la unidad." href="/assets/korean/step002/kr_step002_geulja_signs_v1.png" label="Descargar imagen" /></div>
+            <div className={base.faq}><details><summary>¿Debo memorizar los 40 jamo en un día?</summary><p>No. Aprende primero los 24 básicos; después añade las cinco consonantes tensas y las once vocales compuestas por familias.</p></details><details><summary>¿Por qué ㅇ a veces no suena?</summary><p>Al inicio funciona como soporte mudo para una vocal; al final del bloque suena ng.</p></details><details><summary>¿Qué es el batchim?</summary><p>Es la consonante que ocupa la base del bloque y cierra la sílaba.</p></details><details><summary>¿Cuándo dejo la romanización?</summary><p>Desde el principio úsala solo para comprobar. Tápala en la segunda lectura.</p></details></div>
           </section>
         ) : null}
       </div>
