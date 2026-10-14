@@ -271,6 +271,7 @@ const topic: GrammarTopic = {
           { answer: 'happily', accepted: ['happily'], explain: '"Happy" → -ily: "happily".' },
           { answer: 'slowly', accepted: ['slowly'], explain: '"Slow" + -ly → "slowly".' },
           { answer: 'easily', accepted: ['easily'], explain: '"Easy" → -ily: "easily".' },
+          { answer: 'promptly', accepted: ['promptly'], explain: '"Prompt" + -ly → "promptly".' },
         ],
       },
       {

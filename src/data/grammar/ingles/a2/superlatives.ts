@@ -225,6 +225,7 @@ const topic: GrammarTopic = {
             blanks: [
               { options: ['the best', 'the most good', 'the goodest', 'better'], answer: 'the best', explain: '"Good" → the best.' },
               { options: ['the best', 'better', 'good', 'the most good'], answer: 'the best', explain: 'Superlativo de "good": the best.' },
+              { options: ['the best', 'better', 'good', 'the most good'], answer: 'the best', explain: 'La historia también recibe el superlativo irregular "the best".' },
             ],
           },
           {

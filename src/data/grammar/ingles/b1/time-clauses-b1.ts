@@ -233,6 +233,7 @@ const topic: GrammarTopic = {
           { options: ['As soon as', 'Before', 'Until', 'While'], answer: 'As soon as', explain: '"As soon as the meeting ended" = inmediatamente después de que terminó.' },
           { options: ['While', 'After', 'Until', 'Before'], answer: 'While', explain: '"While she was showing me around" = acción en progreso simultánea.' },
           { options: ['Before', 'Until', 'While', 'When'], answer: 'Before', explain: '"Before I went home" = antes de irme a casa ese día. Secuencia.' },
+          { options: ['By the time', 'While', 'Until', 'Before'], answer: 'By the time', explain: '"By the time I get to work tomorrow" fija el momento límite futuro.' },
           { options: ['feel', 'will feel', 'felt', 'feeling'], answer: 'feel', explain: 'Regla clave: después de "when" con futuro → presente simple: "when I get... I will feel" (pero get va en presente, will va en la cláusula principal).' },
         ],
       },

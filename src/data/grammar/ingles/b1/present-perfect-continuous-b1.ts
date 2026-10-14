@@ -211,6 +211,7 @@ const topic: GrammarTopic = {
             blanks: [
               { options: ['have you been doing', 'have you done', 'are you doing', 'did you do'], answer: 'have you been doing', explain: 'Have you been doing: pregunta por actividad en progreso reciente → present perfect continuous.' },
               { options: ['\'ve been analyzing', '\'ve analyzed', '\'m analyzing', 'analyzed'], answer: '\'ve been analyzing', explain: '\'ve been analyzing: actividad en progreso desde la semana pasada → present perfect continuous.' },
+              { options: ['since', 'for', 'during', 'from'], answer: 'since', explain: 'Since + punto de inicio: since last week.' },
             ],
           },
           {
