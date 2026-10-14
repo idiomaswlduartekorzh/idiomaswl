@@ -6,6 +6,7 @@ const DECISION_FALLBACKS = [
   'Identifica primero la relación que quieres expresar y después elige la terminación.',
   'Comprueba el tallo verbal antes de añadir la estructura objetivo.',
   'Mantén el mismo registro de cortesía en toda la oración.',
+  'Lee la oración completa para comprobar que la relación entre las dos cláusulas sea coherente.',
 ]
 
 const MISTAKE_FALLBACKS = [
@@ -17,12 +18,8 @@ const MISTAKE_FALLBACKS = [
 export function ensureKoreanPracticeDepth(topic: GrammarTopic): GrammarTopic {
   const guide = {
     ...topic.guide,
-    decisions: fillToMinimum(topic.guide.decisions, DECISION_FALLBACKS, 3),
+    decisions: fillToMinimum(topic.guide.decisions, DECISION_FALLBACKS, 4),
     mistakes: fillToMinimum(topic.guide.mistakes, MISTAKE_FALLBACKS, 3),
-  }
-
-  if (countActivities(topic) >= MINIMUM_ACTIVITY_COUNT) {
-    return { ...topic, guide }
   }
 
   const koreanOptions = topic.visual.scene.map(([korean]) => korean)
@@ -50,18 +47,71 @@ export function ensureKoreanPracticeDepth(topic: GrammarTopic): GrammarTopic {
     explain: `Modelo: ${korean}`,
   }))
   const strengthenedLevels = topic.practice.levels.map((level) => {
-    if (level.type === 'choice' && level.items.length < 3) {
-      return { ...level, items: [...level.items, ...choiceItems.slice(0, 3 - level.items.length)] }
+    if (level.type === 'choice' && level.items.length < 4) {
+      return { ...level, items: [...level.items, ...choiceItems.slice(0, 4 - level.items.length)] }
     }
     if (level.type === 'write' && level.items.length < 3) {
       return { ...level, items: [...level.items, ...writeItems.slice(0, 3 - level.items.length)] }
     }
+    if (level.type === 'dual' && level.items.length < 3) {
+      const additions = Array.from({ length: 3 - level.items.length }, (_, additionIndex) => {
+        const firstIndex = (additionIndex * 2) % topic.visual.scene.length
+        const secondIndex = (firstIndex + 1) % topic.visual.scene.length
+        const [firstKorean, firstSpanish] = topic.visual.scene[firstIndex]
+        const [secondKorean, secondSpanish] = topic.visual.scene[secondIndex]
+        return {
+          scene: `Reconstrucción aplicada ${additionIndex + 1}`,
+          lines: [['Consigna', `«${firstSpanish}» → [[0]] / «${secondSpanish}» → [[1]]`] as [string, string]],
+          blanks: [
+            {
+              options: orderedOptions(koreanOptions, firstIndex),
+              answer: firstKorean,
+              explain: `Modelo natural: ${firstKorean}`,
+            },
+            {
+              options: orderedOptions(koreanOptions, secondIndex),
+              answer: secondKorean,
+              explain: `Modelo natural: ${secondKorean}`,
+            },
+          ],
+        }
+      })
+      return { ...level, items: [...level.items, ...additions] }
+    }
+    if ((level.type === 'guidedText' || level.type === 'freeText') && level.blanks.length < 4) {
+      const additions = topic.visual.scene.slice(0, 4 - level.blanks.length)
+      const baseIndex = level.blanks.length
+      return {
+        ...level,
+        text: `${level.text} / ${additions
+          .map(([, spanish], index) => `«${spanish}» → [[${baseIndex + index}]]`)
+          .join(' / ')}`,
+        blanks: [
+          ...level.blanks,
+          ...additions.map(([korean], index) => ({
+            ...(level.type === 'guidedText' ? { options: orderedOptions(koreanOptions, index) } : {}),
+            answer: korean,
+            accepted: [korean],
+            explain: `Modelo natural: ${korean}`,
+          })),
+        ],
+      }
+    }
     return level
   })
 
-  return {
+  const strengthenedTopic: GrammarTopic = {
     ...topic,
     guide,
+    practice: { levels: strengthenedLevels },
+  }
+
+  if (countActivities(strengthenedTopic) >= MINIMUM_ACTIVITY_COUNT) {
+    return strengthenedTopic
+  }
+
+  return {
+    ...strengthenedTopic,
     practice: {
       levels: [
         ...strengthenedLevels,

@@ -6,15 +6,15 @@ const topic: GrammarTopic = {
   color: '#c60c30',
   category: 'Tiempo y secuencia',
   level: 'B1',
-  title: '-고 나서: Después de (con intervalo) en Coreano B1',
+  title: '-고 나서: Después de Completar una Acción en Coreano B1',
   shortTitle: '-고 나서 (después de)',
-  metaTitle: '-고 나서 en Coreano B1 — Expresar Secuencia con Intervalo',
+  metaTitle: '-고 나서 en Coreano B1 — Expresar Secuencia Después de una Acción',
   description:
-    '-고 나서 expresa que una acción sucede después de otra CON posibilidad de intervalo. "Después de X, Y." Diferente de -자마자 (inmediato). Literal: "-고" (conector) + "나서" (salir después). Fundamental para narrativa temporal con pauses naturales en B1.',
-  lead: 'Domina -고 나서 para expresar: "después de..., luego..."',
+    '-고 나서 expresa que la primera acción se completa antes de que ocurra la segunda: «después de hacer A, B». A diferencia de -자마자, no exige que la segunda acción sea inmediata; puede haber o no una pausa.',
+  lead: 'Domina -고 나서 para ordenar acciones ya completadas: «después de hacer A, hago B», con una pausa posible entre ambas.',
   outcomes: [
-    'Forma secuencia con intervalo usando -고 나서',
-    'Expresa pasos en procesos con pausas',
+    'Forma secuencias después de completar una acción con -고 나서',
+    'Expresa pasos ordenados en rutinas y procesos',
     'Distingues -고 나서 de -자마자 (inmediato)',
     'Usa en narrativa de procedimientos y historias',
   ],
@@ -25,25 +25,26 @@ const topic: GrammarTopic = {
     formula: '동사 + -고 나서',
     decisions: [
       '-고 나서: secuencia con intervalo posible',
-      '과거형 사용: 갔고 나서, 먹고 나서',
+      'Se añade a la raíz sin marcar pasado en la primera acción: 가고 나서, 먹고 나서',
       'vs -자마자: -고 나서 permite tiempo entre acciones',
-      '매우 자연스러운 표현 (매일의 절차)',
+      'Es muy frecuente en rutinas, instrucciones y narraciones cotidianas',
     ],
     table: [
       ['Estructura', 'Significado', 'Ejemplo'],
-      ['-고 나서', 'Después de (con intervalo)', '먹고 나서 → después de comer (hay intervalo)'],
+      ['-고 나서', 'Después de completar A', '먹고 나서 → después de comer'],
       ['vs -자마자', 'Inmediato (sin intervalo)', '먹자마자 → tan pronto comí (instantáneo)'],
     ],
     mistakes: [
       '「먹고 나서 영화를 봤어요」 ✓ (después de comer, vi una película — con intervalo natural). 「먹자마자 영화를 봤어요」 implica inmediatez (en cuanto comí).',
-      'No confundir -고 나서 (secuencia con posible pausa) con -고 (simple conexión sin implicar orden estricto).'],
+      'No marques pasado en la primera acción: "먹었고 나서" ❌ → "먹고 나서" ✓.',
+      'No confundas -고 나서 (primera acción completada) con -고 (conexión general).'],
   },
 
   seo: [
     {
       heading: '¿Cómo se usa -고 나서 en coreano?',
       paragraphs: [
-        '-고 나서 es la forma natural de expresar secuencia en narrativa cotidiana. Permite intervalo temporal natural entre acciones: "después de ir, hice X" (hay tiempo entre ir y hacer X).',
+        '-고 나서 es una forma natural de expresar secuencia en la narrativa cotidiana. La primera acción queda completada antes de comenzar la segunda.',
         'Se usa constantemente en coreano para describir procesos, rutinas, historias. Mucho más natural que -자마자 en contextos ordinarios.',
       ],
     },
@@ -57,7 +58,7 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cuál es la diferencia entre -고 나서 y -(으)ㄴ 후에?',
       paragraphs: [
-        'Las dos significan "después de", pero con matiz distinto. -고 나서 (-go naseo) subraya que la primera acción se ha COMPLETADO antes de pasar a la segunda, con el mismo sujeto y cierta idea de "terminar y luego": 밥을 먹고 나서 이를 닦아요 (después de terminar de comer, me lavo los dientes). -(으)ㄴ 후에 es más neutro y solo indica sucesión temporal ("después de que ocurra X"), sin insistir en la finalización: 밥을 먹은 후에 이를 닦아요. En la práctica son casi intercambiables, pero -고 나서 aporta el matiz de "una vez acabado" y suena más natural en la narración de una secuencia de acciones propias.',
+        'Las dos significan "después de". -고 나서 subraya la culminación de la primera acción antes de pasar a la segunda: 밥을 먹고 나서 이를 닦아요. -(으)ㄴ 후에 es una expresión temporal más nominal y neutra: 밥을 먹은 후에 이를 닦아요. Ninguna exige que las dos cláusulas tengan el mismo sujeto.',
       ],
     },
   ],
@@ -68,7 +69,7 @@ const topic: GrammarTopic = {
     graphicPrompt: 'Tabla: -고 나서 vs -자마자.',
     scene: [
       ['밥 먹고 나서 영화를 봤어요.', 'Después de comer, vi una película.'],
-      ['학교 가고 나서 집에 갔어요.', 'Después de ir a la escuela, fui a casa.'],
+      ['수업을 듣고 나서 집에 갔어요.', 'Después de asistir a clase, fui a casa.'],
       ['회의가 끝나고 나서 팀장에게 전화했어요.', 'Después de terminar la reunión, llamé al jefe de equipo.'],
       ['운동하고 나서 샤워했어요.', 'Después de hacer ejercicio, me duché.'],
       ['한국에 오고 나서 김치를 자주 먹어요.', 'Después de venir a Corea, como kimchi con frecuencia.'],
@@ -82,7 +83,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Forma -고 나서',
-        tag: 'Múltipla escolha',
+        tag: 'Opción múltiple',
         intro: 'Selecciona la forma correcta.',
         type: 'choice',
         items: [
@@ -102,7 +103,7 @@ const topic: GrammarTopic = {
         intro: 'Completa una rutina con -고 나서.',
         type: 'guidedText',
         scene: 'Descripción de actividades del día.',
-        text: '아침에 일어나[[0]] 밥을 먹었어요. 밥 먹[[1]] 학교에 갔어요. 학교 다니[[2]] 집에 돌아왔어요.',
+        text: '아침에 일어나[[0]] 밥을 먹었어요. 밥을 먹[[1]] 학교에 갔어요. 수업이 끝나[[2]] 집에 돌아왔어요.',
         blanks: [
           { options: ['고 나서', '자마자'], answer: '고 나서', explain: '-고 나서 para rutina.' },
           { options: ['고 나서', '자마자'], answer: '고 나서', explain: '-고 나서 para procedimiento.' },
@@ -125,8 +126,8 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-4',
-        title: 'Análise de -고 나서 vs -자마자',
-        tag: 'Análise',
+        title: 'Análisis de -고 나서 vs -자마자',
+        tag: 'Análisis',
         intro: 'Explica cuándo usar cada forma.',
         type: 'write',
         items: [

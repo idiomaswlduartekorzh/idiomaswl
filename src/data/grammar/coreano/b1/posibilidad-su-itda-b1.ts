@@ -10,13 +10,13 @@ const topic: GrammarTopic = {
   shortTitle: '-을/ㄹ 수 있다/없다 (poder, capacidad)',
   metaTitle: '-을/ㄹ 수 있다 / -을/ㄹ 수 없다 en Coreano B1 — Expresar Posibilidad, Capacidad, Permiso',
   description:
-    '-을/ㄹ 수 있다 expresa capacidad, posibilidad y permiso. Literal: "raíz + -을/ㄹ 수" (sustantivo abstracto "manera, posibilidad") + "있다" (exista). Variante negativa: -을/ㄹ 수 없다 (no poder, imposible). Fundamental para expresar habilidades, limitaciones y permisos en B1.',
+    '-을/ㄹ 수 있다 expresa capacidad o posibilidad y, según el contexto, puede servir para preguntar si algo está permitido. Literalmente combina la forma atributiva futura con 수 (manera o posibilidad) e 있다. Su forma negativa, -을/ㄹ 수 없다, expresa incapacidad o imposibilidad.',
   lead: 'Domina -을/ㄹ 수 있다/없다 para expresar capacidad, posibilidad y permiso.',
   outcomes: [
     'Forma posibilidad/capacidad con -을/ㄹ 수 있다',
     'Usa negativa -을/ㄹ 수 없다',
     'Distingues posibilidad (poder suceder) de capacidad (poder hacer)',
-    'Expresas permisos, prohibiciones, limitaciones',
+    'Expresas posibilidades, capacidades y limitaciones',
   ],
 
   guide: {
@@ -24,10 +24,10 @@ const topic: GrammarTopic = {
     model: '할 수 있어요. / 못해요. / 할 수 없어요. 여행을 갈 수 있어요. (Puedo hacerlo. / No puedo. / Es imposible. Puedo viajar.)',
     formula: 'Raíz + -을/ㄹ 수 있다 / Raíz + -을/ㄹ 수 없다',
     decisions: [
-      '-을/ㄹ 수 있다: capacidad, posibilidad, permiso',
-      '-을/ㄹ 수 없다: imposibilidad, incapacidad, prohibición',
-      'Con consonante final ㄹ: -ㄹ 수 있다 (할 수 있다, 갈 수 있다)',
-      'Con consonante final otro: -을 수 있다 (먹을 수 있다, 갔을 수 있다)',
+      '-을/ㄹ 수 있다: capacidad o posibilidad; el contexto puede darle una lectura de permiso',
+      '-을/ㄹ 수 없다: imposibilidad o incapacidad; para una prohibición se usa normalmente -(으)면 안 되다',
+      'Con vocal o ㄹ final: -ㄹ 수 있다 (하다→할 수 있다, 가다→갈 수 있다, 만들다→만들 수 있다)',
+      'Con otra consonante final: -을 수 있다 (먹다→먹을 수 있다, 읽다→읽을 수 있다)',
       '못하다 es más común en oralidad; -을 수 없다 es más formal',
       'Posibilidad vs capacidad: "일어날 수 있어요" (es posible que suceda) vs "할 수 있어요" (tengo capacidad para hacerlo)',
     ],
@@ -35,10 +35,10 @@ const topic: GrammarTopic = {
       ['Estructura', 'Significado', 'Ejemplo'],
       ['-을/ㄹ 수 있다', 'Poder, capacidad, permiso', '한국어를 할 수 있어요 — puedo hablar coreano'],
       ['-을/ㄹ 수 없다', 'No poder, imposibilidad', '내일 갈 수 없어요 — no puedo ir mañana'],
-      ['못하다 (informal)', 'No poder (coloquial)', '못 해요 — no puedo (más casual)'],
+      ['못 V', 'Incapacidad o acción no lograda', '못 해요 — no puedo / no lo logro'],
     ],
     mistakes: [
-      '"할 수 있어요" ✓ vs "할 수가 있어요" (redundante, -가 aquí es raro).',
+      '"할 수 있어요" es neutral; "할 수가 있어요" también es correcto y puede enfatizar la posibilidad o contrastarla.',
       '"갈 수 없어요" ✓ (imposible) vs "갈 수 있어요" ✓ (posible), muy diferentes sentidos.',
       '"-을 수 있다" con vocal final: 가다 → 갈 수 있다 (no "갈 을 수 있다").',
     ],
@@ -69,8 +69,8 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cuál es la diferencia entre -(으)ㄹ 수 없다 y 못하다?',
       paragraphs: [
-        '-을/ㄹ 수 없다 es la forma negativa formal/escrita: "할 수 없어요" (no puedo, formal). 못하다 es la forma coloquial más común en oralidad: "못 해요" (no puedo, casual). Significado idéntico, pero registro diferente.',
-        'En TOPIK II, ambas formas son válidas, pero -을/ㄹ 수 없다 es más frecuente en textos escritos y académicos.',
+        '-을/ㄹ 수 없다 presenta falta de posibilidad o de medios: "지금 갈 수 없어요" (ahora no puedo ir). 못 V suele enfocarse en incapacidad o en que la acción no se logró: "수영을 못 해요" (no sé/no puedo nadar).',
+        'A menudo son intercambiables, pero la diferencia no es solo de formalidad. El contexto decide si importa la imposibilidad externa, la habilidad o el resultado fallido.',
       ],
     },
     {
@@ -95,9 +95,9 @@ const topic: GrammarTopic = {
     graphicPrompt: 'Tabla: -을 (consonante no ㄹ) vs -ㄹ (consonante ㄹ, vocal). Ejemplos de capacidad/posibilidad.',
     scene: [
       ['한국어를 할 수 있어요.', 'Puedo hablar coreano.'],
-      ['내일 비올 수 있어요.', 'Mañana podría llover.'],
+      ['내일 비가 올 수 있어요.', 'Mañana podría llover.'],
       ['학교에 갈 수 없어요.', 'No puedo ir a la escuela.'],
-      ['운전할 수 있세요?', '¿Sabe conducir?'],
+      ['운전할 수 있어요?', '¿Sabe conducir?'],
       ['할 수도 있고 못할 수도 있어요.', 'Podría o no podría.'],
       ['정말 못 했어요.', 'De verdad no pude.'],
     ],
@@ -110,7 +110,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Selecciona -을/ㄹ 수 있다',
-        tag: 'Múltipla escolha',
+        tag: 'Opción múltiple',
         intro: 'Forma correctamente la capacidad/posibilidad.',
         type: 'choice',
         items: [
@@ -119,14 +119,14 @@ const topic: GrammarTopic = {
             lines: [['', '밥을 ___ 있어요. (먹다)']],
             options: ['먹 수', '먹을 수', '먹ㄹ 수', '먹어 수'],
             answer: '먹을 수',
-            explain: '먹다 (consonante ㄹ) → 먹을 수 있다.',
+            explain: '먹다 (consonante final distinta de ㄹ) → 먹을 수 있다.',
           },
           {
             scene: 'Consonante ㄹ',
             lines: [['', '학교에 ___ 있어요? (가다)']],
             options: ['갈 수', '가을 수', '가 수', '갔을 수'],
             answer: '갈 수',
-            explain: '가다 (consonante ㄹ) → 갈 수 있다.',
+            explain: '가다 (raíz con vocal final) → 갈 수 있다.',
           },
           {
             scene: 'Vocal final',
@@ -153,9 +153,10 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: '능력 vs 가능성',
-            lines: [['', "[[0]]: 나는 수영할 수 있어요. (능력) / [[1]]: 내일 비올 수 있어요. (가능성)"]],
+            lines: [['', "[[0]]: 나는 수영할 수 있어요. (능력) / [[1]]: 내일 비가 올 수 있어요. (가능성)"]],
             blanks: [
-              { options: ['아무튼 둘 다 -을/ㄹ 수 있다', '다른 문법'], answer: '아무튼 둘 다 -을/ㄹ 수 있다', explain: 'Ambas usan -을/ㄹ 수 있다, pero significan capacidad vs posibilidad.' },
+              { options: ['Capacidad', 'Posibilidad'], answer: 'Capacidad', explain: '수영할 수 있어요 describe una habilidad de la persona.' },
+              { options: ['Posibilidad', 'Capacidad'], answer: 'Posibilidad', explain: '비가 올 수 있어요 describe la posibilidad de que llueva.' },
             ],
           },
         ],
@@ -206,8 +207,8 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-6',
-        title: 'Análise de -을/ㄹ 수 있었다',
-        tag: 'Análise',
+        title: 'Análisis de -을/ㄹ 수 있었다',
+        tag: 'Análisis',
         intro: 'Explica la forma pasada de capacidad/posibilidad.',
         type: 'write',
         items: [
