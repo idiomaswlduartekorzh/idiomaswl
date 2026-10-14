@@ -1,5 +1,6 @@
 export type ExamTranscriptResource = {
   href: string;
+  answerKeyHref: string;
   interfaceLanguage: 'Español' | 'Deutsch';
   audioLanguage: 'inglés' | 'alemán';
 };
@@ -59,6 +60,7 @@ export function getExamTranscriptResource(examSlug: string, mockId: string): Exa
   const paddedSet = String(setNumber).padStart(2, '0');
   return {
     href: `/downloads/exam-transcriptions/${series.folder}/${series.filePrefix}-set-${paddedSet}-transcripciones.pdf`,
+    answerKeyHref: `/downloads/exam-answer-keys/${series.folder}/${series.filePrefix}-set-${paddedSet}-claves.pdf`,
     interfaceLanguage: series.interfaceLanguage,
     audioLanguage: series.audioLanguage,
   };

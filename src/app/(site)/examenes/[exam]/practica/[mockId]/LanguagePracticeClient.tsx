@@ -30,6 +30,7 @@ import type {
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
+import ExamPracticeDownloads from '@/components/exams/ExamPracticeDownloads';
 import { unlockExamMock } from '@/lib/actions/unlockExamMock';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -1791,6 +1792,7 @@ export default function LanguagePracticeClient({
               </div>
             ))}
           </div>
+          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} mockId={mock.id} /> : null}
           <div className="goethe-a2-intro-actions">
             <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>

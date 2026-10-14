@@ -798,3 +798,22 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   conserva la redirección esperada a `/login`.
 - Estado: `DESPLEGADO`. No se añadieron migraciones, variables de entorno ni
   servicios externos.
+
+### 13 de octubre de 2026 — recursos descargables en práctica
+
+- Rama `codex/practice-exam-resources`, creada desde
+  `5040a820c9d775e87d5007c334d4ea85161a35e5` de `origin/main`. Añade 57 PDF de
+  claves y criterios, correspondientes uno a uno con las 57 transcripciones ya
+  publicadas: IELTS 20, Goethe A1 7, Cambridge B2 First/FCE 10 y TOEFL 20.
+- Cada introducción de práctica presenta un bloque amplio y responsivo con las
+  dos descargas del set. Goethe usa interfaz en alemán; los otros tres exámenes,
+  en español. La vinculación procede de un único registro y no de rutas
+  manuales dispersas.
+- Los 57 documentos suman 368 páginas y 4.770 respuestas o criterios. Todas las
+  páginas contienen texto extraíble; se verificaron firma, tamaño, idioma y
+  render representativo de primera y última página de las cuatro familias.
+- Validación local previa a integración: guardián de claves y recursos,
+  catálogo de práctica, TypeScript y ESLint dirigido aprobados. No requiere
+  migraciones, variables de entorno ni servicios externos nuevos.
+- Estado: `LISTO PARA INTEGRAR`. El SHA de `main`, el deployment de Vercel y el
+  smoke público se registrarán tras la integración.
