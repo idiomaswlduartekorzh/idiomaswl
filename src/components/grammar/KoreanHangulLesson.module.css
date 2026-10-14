@@ -155,62 +155,101 @@
 }
 
 .strokePlayer {
-  min-height: 34rem;
+  min-height: 36rem;
   align-content: center;
-  gap: 0.75rem;
+  gap: 1rem;
+  overflow: hidden;
+  border-color: color-mix(in srgb, var(--js-navy) 10%, var(--js-line));
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 255, 255, 0.96), rgba(247, 249, 252, 0.84) 48%, rgba(237, 241, 247, 0.9));
+}
+
+.strokeCanvas {
+  position: relative;
+  display: grid;
+  width: min(100%, 21rem);
+  padding: 0.8rem 0.8rem 2.7rem;
+  border: 1px solid rgba(0, 52, 120, 0.1);
+  border-radius: 1.35rem;
+  background: #fff;
+  box-shadow: 0 1.1rem 2.6rem rgba(0, 52, 120, 0.09), inset 0 1px 0 #fff;
 }
 
 .strokeDiagram {
-  width: min(100%, 20rem);
+  width: 100%;
   overflow: visible;
-  color: var(--js-red);
+}
+
+.strokePaper {
+  fill: #fff;
+  stroke: rgba(0, 52, 120, 0.055);
+  stroke-width: 1;
 }
 
 .guideGlyph {
   fill: none;
-  stroke: color-mix(in srgb, var(--js-navy) 13%, transparent);
-  stroke-dasharray: 4 5;
-  stroke-width: 1;
+  stroke: rgba(0, 52, 120, 0.07);
+  stroke-dasharray: 3 6;
+  stroke-width: 0.8;
+}
+
+.strokeGhost {
+  fill: none;
+  stroke: #d9dde4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 13;
 }
 
 .animatedStroke {
   fill: none;
-  stroke: var(--js-navy);
+  stroke: #111827;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 10;
-  animation: drawHangul 0.66s ease-out forwards;
+  stroke-width: 13;
+  animation: drawHangul 0.78s cubic-bezier(0.35, 0, 0.2, 1) forwards;
 }
 
-.strokeNumberDot,
-.strokeNumber {
-  opacity: 0;
-  animation: revealStrokeNumber 0.2s ease-out forwards;
+.strokeSequence {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.38rem;
+  padding: 0.72rem;
+  border-top: 1px solid rgba(0, 52, 120, 0.08);
+  color: var(--js-muted);
+  background: rgba(248, 250, 253, 0.92);
 }
 
-.strokeNumberDot {
-  fill: var(--js-red);
-  stroke: #fff;
-  stroke-width: 2;
-}
-
-.strokeNumber {
-  fill: #fff;
+.strokeSequence i {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1px solid rgba(0, 52, 120, 0.13);
+  border-radius: 50%;
+  color: var(--js-navy);
+  background: #fff;
   font-family: var(--mono);
-  font-size: 9px;
-  font-weight: 900;
+  font-size: 0.58rem;
+  font-style: normal;
+  font-weight: 850;
 }
 
 .strokeMeta {
   display: grid;
   justify-items: center;
+  max-width: 20rem;
 }
 
 .strokeMeta h3 span {
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .familyTag {
@@ -228,12 +267,6 @@
 @keyframes drawHangul {
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-@keyframes revealStrokeNumber {
-  to {
-    opacity: 1;
   }
 }
 
@@ -266,7 +299,8 @@
   }
 
   .strokePlayer {
-    min-height: 29rem;
+    min-height: 34rem;
+    padding-inline: 0.85rem;
   }
 }
 
@@ -276,9 +310,4 @@
     animation: none;
   }
 
-  .strokeNumberDot,
-  .strokeNumber {
-    opacity: 1;
-    animation: none;
-  }
 }

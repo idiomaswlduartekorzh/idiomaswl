@@ -200,24 +200,20 @@ function StrokeDiagram({ letter, replayKey }: { letter: HangulLetter; replayKey:
   const strokes = STROKES[letter.glyph]
   return (
     <svg key={`${letter.glyph}-${replayKey}`} className={styles.strokeDiagram} viewBox="0 0 180 180" role="img" aria-label={`Orden de trazos de ${letter.glyph}`}>
-      <defs>
-        <marker id="hangul-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">
-          <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
-        </marker>
-      </defs>
-      <path className={styles.guideGlyph} d="M20 20 H160 V160 H20 Z M90 20 V160 M20 90 H160" />
+      <rect className={styles.strokePaper} x="4" y="4" width="172" height="172" rx="18" />
+      <path className={styles.guideGlyph} d="M24 90 H156 M90 24 V156" />
+      <g aria-hidden="true">
+        {strokes.map((item, index) => <path key={`ghost-${letter.glyph}-${index}`} className={styles.strokeGhost} d={item.d} transform={item.transform} />)}
+      </g>
       {strokes.map((item, index) => (
-        <g key={`${letter.glyph}-${index}`} transform={item.transform}>
-          <path
-            className={styles.animatedStroke}
-            d={item.d}
-            pathLength="1"
-            markerEnd="url(#hangul-arrow)"
-            style={{ animationDelay: `${index * 0.72}s` }}
-          />
-          <circle className={styles.strokeNumberDot} cx={item.start[0]} cy={item.start[1]} r="9" style={{ animationDelay: `${index * 0.72}s` }} />
-          <text className={styles.strokeNumber} x={item.start[0]} y={item.start[1] + 3.5} textAnchor="middle" style={{ animationDelay: `${index * 0.72}s` }}>{index + 1}</text>
-        </g>
+        <path
+          key={`${letter.glyph}-${index}`}
+          className={styles.animatedStroke}
+          d={item.d}
+          transform={item.transform}
+          pathLength="1"
+          style={{ animationDelay: `${0.45 + index * 0.82}s` }}
+        />
       ))}
     </svg>
   )
@@ -385,8 +381,8 @@ export default function KoreanHangulLesson() {
             <div className={base.strokeLayout}>
               <div className={`${base.strokeGrid} ${styles.jamoStrokeGrid}`}>{LETTERS.map((candidate) => <button key={candidate.glyph} type="button" lang="ko" className={strokeLetter.glyph === candidate.glyph ? base.activeStroke : ''} onClick={() => { setStrokeLetter(candidate); setStrokeReplay((value) => value + 1) }} aria-label={`${candidate.glyph}, ${candidate.reading}, ${candidate.kind}`}>{candidate.glyph}</button>)}</div>
               <div className={`${base.strokePlayer} ${styles.strokePlayer}`}>
-                <StrokeDiagram letter={strokeLetter} replayKey={strokeReplay} />
-                <div className={styles.strokeMeta}><span className={styles.familyTag}>{strokeLetter.family === 'basica' ? 'Forma básica' : strokeLetter.family === 'tensa' ? 'Consonante tensa' : 'Vocal compuesta'}</span><h3><span lang="ko">{strokeLetter.glyph}</span> · {strokeLetter.reading}</h3><p>{STROKES[strokeLetter.glyph].length} {STROKES[strokeLetter.glyph].length === 1 ? 'movimiento mostrado' : 'movimientos mostrados'}. Sigue los números y la punta de cada línea.</p><button className={base.secondaryButton} type="button" onClick={() => setStrokeReplay((value) => value + 1)}>↻ Repetir animación</button></div>
+                <div className={styles.strokeCanvas}><StrokeDiagram letter={strokeLetter} replayKey={strokeReplay} /><span className={styles.strokeSequence}>{STROKES[strokeLetter.glyph].map((_, index) => <i key={index}>{index + 1}</i>)}</span></div>
+                <div className={styles.strokeMeta}><span className={styles.familyTag}>{strokeLetter.family === 'basica' ? 'Forma básica' : strokeLetter.family === 'tensa' ? 'Consonante tensa' : 'Vocal compuesta'}</span><h3><span lang="ko">{strokeLetter.glyph}</span> · {strokeLetter.reading}</h3><p>{STROKES[strokeLetter.glyph].length} {STROKES[strokeLetter.glyph].length === 1 ? 'movimiento mostrado' : 'movimientos mostrados'}. La forma gris anticipa el carácter y la tinta aparece en el orden correcto.</p><button className={base.secondaryButton} type="button" onClick={() => setStrokeReplay((value) => value + 1)}>↻ Repetir animación</button></div>
               </div>
             </div>
             <div className={base.callout}><strong>Nota de escritura.</strong> Los trazos muestran una forma escolar clara. El aspecto exacto puede variar ligeramente según la tipografía o la caligrafía, pero se conserva el principio de arriba abajo y de izquierda a derecha.</div>
