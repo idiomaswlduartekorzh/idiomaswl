@@ -1,0 +1,61 @@
+{
+  "status": "production",
+  "engine": "Chatterbox Multilingual V3",
+  "voice": {
+    "language": "ko",
+    "profile": "adult female, clear standard Korean, classroom pacing",
+    "reference_source": "public/audio/coreano/a1/listening-01.mp3",
+    "reference_segments_seconds": [
+      [
+        0.0,
+        3.9
+      ],
+      [
+        19.75,
+        23.95
+      ]
+    ]
+  },
+  "settings": {
+    "language_id": "ko",
+    "t3_model": "v3",
+    "exaggeration": 0.36,
+    "cfg_weight": 0.34,
+    "temperature": 0.68,
+    "repetition_penalty": 1.25,
+    "min_p": 0.05,
+    "top_p": 0.95,
+    "target_lufs": -18.0,
+    "true_peak_ceiling_dbfs": -2.2,
+    "encoding_peak_safety_margin_db": 0.5,
+    "output_sample_rate": 44100,
+    "delivery_bitrate": 128000
+  },
+  "codec": "AAC in M4A, mono, 44.1 kHz, 128 kbps",
+  "tracks": [
+    {
+      "id": "modelo-estructura",
+      "title": "Modelo y estructura",
+      "text": "나가는 김에 장을 봐야겠어요.",
+      "translation": "Ya que salgo, debo comprar.",
+      "file": "modelo-estructura.m4a",
+      "bytes": 66571
+    },
+    {
+      "id": "contraste-guiado",
+      "title": "Contraste guiado",
+      "text": "방을 청소하는 김에 창문도 닦았어요.",
+      "translation": "Ya que limpiaba el cuarto, limpié también las ventanas.",
+      "file": "contraste-guiado.m4a",
+      "bytes": 71802
+    },
+    {
+      "id": "practica-contexto",
+      "title": "Práctica en contexto",
+      "text": "새 옷을 입은 김에 사진을 찍었어요.",
+      "translation": "Ya que me puse ropa nueva, aproveché para tomar una foto.",
+      "file": "practica-contexto.m4a",
+      "bytes": 60554
+    }
+  ]
+}

@@ -149,9 +149,9 @@ export default function KoreanGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Biblioteca de estudio" title={hasFinalResources ? 'Material listo para estudiar' : 'Recursos de cierre'} copy={hasFinalResources ? 'Descarga el cuaderno y usa las cuatro pistas nativas dentro de la lección o fuera de línea.' : 'El contenido y la práctica ya están listos. Los audios nativos y archivos descargables se producirán juntos en la fase final.'} titleId="resources-title" />
+            <SectionIntro kicker="Biblioteca de estudio" title={hasFinalResources ? 'Material listo para estudiar' : 'Recursos de cierre'} copy={hasFinalResources ? `Descarga el cuaderno y usa las ${resource.audioTracks?.length ?? 0} pistas nativas dentro de la lección o fuera de línea.` : 'El contenido y la práctica ya están listos. Los audios nativos y archivos descargables se producirán juntos en la fase final.'} titleId="resources-title" />
             <div className={styles.resourceGrid}>
-              <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, tabla, 32 ejercicios y soluciones." href={resource.pdf} />
+              <ResourceCard code="PDF" title="Guía y cuaderno" copy={`Explicación, mapa visual, ${practiceActivityCount} actividades y soluciones.`} href={resource.pdf} />
               <ResourceCard code="PNG" title="Mapa visual" copy="Fórmula, modelo y errores clave." />
               <ResourceCard code="음성" title="Audio coreano nativo" copy={resource.audioTracks ? `${resource.audioTracks.length} pistas Chatterbox con voz y ritmo aprobados.` : 'Chatterbox con la voz y el ritmo ya aprobados.'} final={!resource.audioTracks} />
             </div>

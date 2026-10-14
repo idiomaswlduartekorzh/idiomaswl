@@ -119,13 +119,50 @@ export function getKoreanGrammarResource(topic: GrammarTopic, level: KoreanGramm
     glyph: preview?.glyph ?? koreanGlyph(topic.shortTitle),
     studyMinutes: level === 'b1' ? 50 : level === 'a2' ? 40 : 35,
     pdf: preview?.pdf ?? koreanGrammarPdf(topic.slug, level),
-    audioTracks: preview?.audioTracks,
+    audioTracks: preview?.audioTracks ?? koreanGrammarAudio(topic, level),
   }
 }
 
 function koreanGrammarPdf(slug: string, level: KoreanGrammarLevel): string {
   const filename = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}.pdf` : `idiomaswl-${slug}-${level}.pdf`
   return `/downloads/coreano-${level}/grammar/${filename}`
+}
+
+function koreanGrammarAudio(topic: GrammarTopic, level: KoreanGrammarLevel): KoreanGrammarAudioTrack[] {
+  const scene = topic.visual.scene
+  const groups = [[scene[0]], [scene[Math.floor((scene.length - 1) / 2)]], [scene.at(-1)!]]
+  const definitions = [
+    ['modelo-estructura', 'Modelo y estructura'],
+    ['contraste-guiado', 'Contraste guiado'],
+    ['practica-contexto', 'Práctica en contexto'],
+  ] as const
+
+  return definitions.map(([id, title], index) => ({
+    id,
+    title,
+    text: repeatShortSpoken(groups[index].map(([korean]) => normalizeSpokenKorean(korean)).join(' ')),
+    translation: groups[index].map(([, spanish]) => spanish).join(' · '),
+    src: `/audio/coreano/${level}/grammar/${topic.slug}/${id}.m4a`,
+  }))
+}
+
+function normalizeSpokenKorean(text: string): string {
+  const normalized = text
+    .replace(/\s*\([^)]*\)\s*/gu, ' ')
+    .replace(/\[[^\]]+\]/gu, '어디')
+    .replace(/\s*(?:→|\/)\s*/gu, '. ')
+    .replace(/\s*—\s*/gu, ' ')
+    .replace(/10분/gu, '십 분')
+    .replace(/1990년에/gu, '천구백구십 년에')
+    .replace(/\.{2,}/gu, '.')
+    .replace(/\s+/gu, ' ')
+    .trim()
+
+  return /[.!?。！？]$/u.test(normalized) ? normalized : `${normalized}.`
+}
+
+function repeatShortSpoken(text: string): string {
+  return text.length < 8 ? `${text} ${text}` : text
 }
 
 function koreanGlyph(title: string): string {

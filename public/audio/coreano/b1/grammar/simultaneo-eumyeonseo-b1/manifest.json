@@ -1,0 +1,61 @@
+{
+  "status": "production",
+  "engine": "Chatterbox Multilingual V3",
+  "voice": {
+    "language": "ko",
+    "profile": "adult female, clear standard Korean, classroom pacing",
+    "reference_source": "public/audio/coreano/a1/listening-01.mp3",
+    "reference_segments_seconds": [
+      [
+        0.0,
+        3.9
+      ],
+      [
+        19.75,
+        23.95
+      ]
+    ]
+  },
+  "settings": {
+    "language_id": "ko",
+    "t3_model": "v3",
+    "exaggeration": 0.36,
+    "cfg_weight": 0.34,
+    "temperature": 0.68,
+    "repetition_penalty": 1.25,
+    "min_p": 0.05,
+    "top_p": 0.95,
+    "target_lufs": -18.0,
+    "true_peak_ceiling_dbfs": -2.2,
+    "encoding_peak_safety_margin_db": 0.5,
+    "output_sample_rate": 44100,
+    "delivery_bitrate": 128000
+  },
+  "codec": "AAC in M4A, mono, 44.1 kHz, 128 kbps",
+  "tracks": [
+    {
+      "id": "modelo-estructura",
+      "title": "Modelo y estructura",
+      "text": "걸으면서 음악을 들어요.",
+      "translation": "Escucho música mientras camino.",
+      "file": "modelo-estructura.m4a",
+      "bytes": 53130
+    },
+    {
+      "id": "contraste-guiado",
+      "title": "Contraste guiado",
+      "text": "커피를 마시면서 친구와 이야기했어요.",
+      "translation": "Hablé con un amigo mientras tomaba café.",
+      "file": "contraste-guiado.m4a",
+      "bytes": 72074
+    },
+    {
+      "id": "practica-contexto",
+      "title": "Práctica en contexto",
+      "text": "지하철을 타고 가면서 책을 읽었어요.",
+      "translation": "Leí un libro mientras viajaba en metro.",
+      "file": "practica-contexto.m4a",
+      "bytes": 62802
+    }
+  ]
+}
