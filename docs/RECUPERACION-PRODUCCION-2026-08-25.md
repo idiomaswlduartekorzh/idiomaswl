@@ -815,5 +815,16 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 - Validación local previa a integración: guardián de claves y recursos,
   catálogo de práctica, TypeScript y ESLint dirigido aprobados. No requiere
   migraciones, variables de entorno ni servicios externos nuevos.
-- Estado: `LISTO PARA INTEGRAR`. El SHA de `main`, el deployment de Vercel y el
-  smoke público se registrarán tras la integración.
+- La implementación entró en `main` mediante la
+  [PR #22](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/22), commit
+  `49f760609cc90834e057d8a2ab22038e41f08787`. Pasaron
+  `baseline-and-types`, `production-build`, Vercel y Vercel Preview Comments.
+- Vercel publicó el deployment
+  [`dpl_DN21ZJdAaiSFQfkf1kXyydZkbqnt`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/DN21ZJdAaiSFQfkf1kXyydZkbqnt)
+  en estado `READY`, asignado a `www.idiomaswl.com`, `idiomaswl.com` e
+  `idiomaswl.vercel.app`. El smoke posterior confirmó 57/57 claves y 57/57
+  transcripciones con HTTP 200 y `application/pdf`; las 57 claves también
+  conservaron firma `%PDF`. Las cuatro prácticas públicas devolvieron HTTP 200
+  y enlazaron ambos recursos.
+- Estado: `DESPLEGADO`. No se añadieron migraciones, variables de entorno ni
+  servicios externos.
