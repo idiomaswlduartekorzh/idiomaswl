@@ -118,9 +118,14 @@ export function getKoreanGrammarResource(topic: GrammarTopic, level: KoreanGramm
     imageAlt: preview?.imageAlt ?? `Escena cotidiana coreana para estudiar ${topic.shortTitle}`,
     glyph: preview?.glyph ?? koreanGlyph(topic.shortTitle),
     studyMinutes: level === 'b1' ? 50 : level === 'a2' ? 40 : 35,
-    pdf: preview?.pdf,
+    pdf: preview?.pdf ?? koreanGrammarPdf(topic.slug, level),
     audioTracks: preview?.audioTracks,
   }
+}
+
+function koreanGrammarPdf(slug: string, level: KoreanGrammarLevel): string {
+  const filename = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}.pdf` : `idiomaswl-${slug}-${level}.pdf`
+  return `/downloads/coreano-${level}/grammar/${filename}`
 }
 
 function koreanGlyph(title: string): string {

@@ -34,6 +34,7 @@
     "audio:japanese-grammar-a1": "node scripts/generate-japanese-grammar-a1-audio.mjs",
     "audio:korean-hangul-a1": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/chatterbox-engine/.venv/bin/python scripts/generate-korean-hangul-audio.py",
     "check:korean-grammar": "node --experimental-strip-types --no-warnings scripts/check-korean-grammar.mjs",
+    "pdf:korean-grammar": "node --experimental-strip-types --no-warnings scripts/export-korean-grammar-pdf-data.mjs && python3 scripts/generate-korean-grammar-pdfs.py",
     "maps:japanese-grammar-a1": "node scripts/generate-japanese-grammar-a1-assets.mjs",
     "audio:japanese-scripts-a1": "node scripts/generate-japanese-script-audio.mjs",
     "check:diagnostic-foundation": "node --experimental-strip-types --no-warnings scripts/check-diagnostic-foundation.mjs && node scripts/check-diagnostic-audio-inventory.mjs && npm run check:diagnostic-candidate-inventory && npm run check:diagnostic-recovered-listening && npm run check:diagnostic-bank-readiness && npm run check:diagnostic-pilot-recruitment && npm run check:diagnostic-release-certificate && npm run test:diagnostic-foundation",
