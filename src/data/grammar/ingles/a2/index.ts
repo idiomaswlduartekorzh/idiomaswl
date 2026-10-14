@@ -20,6 +20,7 @@ import connectors from './connectors'
 import usedTo from './used-to'
 import presentContinuousFuture from './present-continuous-future'
 import pastContinuous from './past-continuous'
+import { indefinitePronouns, infinitivePurpose, tooEnough } from './supplemental-topics'
 
 const topics: GrammarTopic[] = [
   pastSimpleBe,
@@ -43,6 +44,9 @@ const topics: GrammarTopic[] = [
   usedTo,
   presentContinuousFuture,
   pastContinuous,
+  tooEnough,
+  indefinitePronouns,
+  infinitivePurpose,
 ]
 
 export default topics

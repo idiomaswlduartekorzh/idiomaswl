@@ -19,6 +19,7 @@ import timeClauses from './time-clauses-b1'
 import questionTags from './question-tags-b1'
 import wishClauses from './wish-clauses-b1'
 import linkingWords from './linking-words-b1'
+import { indirectQuestions, modalDeduction, thirdConditional } from './supplemental-topics'
 
 const topics: GrammarTopic[] = [
   pastContinuous,
@@ -41,6 +42,9 @@ const topics: GrammarTopic[] = [
   questionTags,
   wishClauses,
   linkingWords,
+  modalDeduction,
+  indirectQuestions,
+  thirdConditional,
 ]
 
 export default topics

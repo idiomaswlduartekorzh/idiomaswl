@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
-import { englishStudyMinutes, type EnglishGrammarLevel } from '@/data/english-grammar-preview'
+import { getEnglishGrammarResource, type EnglishGrammarLevel } from '@/data/english-grammar-preview'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import styles from './KoreanGrammarLesson.module.css'
 
@@ -26,6 +27,7 @@ export default function EnglishGrammarLesson({
   level: EnglishGrammarLevel
   relatedWritingExercises: RelatedWritingExercise[]
 }) {
+  const resource = getEnglishGrammarResource(topic, level)
   const [active, setActive] = useState<SectionId>('comprender')
   const formulaParts = splitFormula(topic.guide.formula)
   const practiceActivityCount = countPracticeActivities(topic)
@@ -44,7 +46,7 @@ export default function EnglishGrammarLesson({
       style={{ '--kr-blue': '#012169', '--kr-red': '#c8102e', '--kr-cream': '#f5f2ea' } as React.CSSProperties}
       aria-labelledby="english-grammar-title"
     >
-      <div className={styles.previewFlag}><span>Fase 1 · páginas</span> Plantilla A1–B1 lista para revisar antes de producir PDFs y audios</div>
+      <div className={styles.previewFlag}><span>Página completa</span> Audio inglés nativo, PDF y práctica listos</div>
       <div className={styles.track} aria-label={`Ruta de gramática inglesa ${level.toUpperCase()}`}>
         <span>Fundamentos</span><b>→</b><strong>Gramática</strong><b>→</b><span>Uso real</span><b>→</b><span>Producción</span>
       </div>
@@ -61,7 +63,7 @@ export default function EnglishGrammarLesson({
           <div className={styles.metrics}>
             <span><b>{topic.practice.levels.length}</b> niveles</span>
             <span><b>{practiceActivityCount}</b> actividades</span>
-            <span><b>{englishStudyMinutes(level)}</b> min</span>
+            <span><b>{resource.studyMinutes}</b> min</span>
           </div>
         </div>
         <div className={styles.heroVisual} aria-label="Mapa visual de pronombres ingleses">
@@ -124,9 +126,10 @@ export default function EnglishGrammarLesson({
         {active === 'ejemplos' ? (
           <section className={styles.steps} aria-labelledby="steps-title">
             <SectionIntro kicker="Razonamiento guiado" title="Cómo decidir sin traducir palabra por palabra" titleId="steps-title" />
-            <div className={styles.modelHeader}><p>Modelo central de la lección</p><span>Audio · fase final</span></div>
+            <div className={styles.modelHeader}><p>Modelo central de la lección</p><span>Audio · listo</span></div>
             <div className={styles.modelCard}><span>Modelo</span><strong lang="en">{topic.guide.model}</strong></div>
             <ol className={styles.stepList}>{topic.guide.decisions.map((decision, index) => <li key={decision}><span>{index + 1}</span><p>{decision}</p></li>)}</ol>
+            <AudioShelf tracks={resource.audioTracks} />
             <div className={styles.warningBox}><h3>Errores típicos de hispanohablantes</h3>{topic.guide.mistakes.map((mistake) => <p key={mistake}><span>×</span>{mistake}</p>)}</div>
           </section>
         ) : null}
@@ -140,12 +143,13 @@ export default function EnglishGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Producción por fases" title="Primero aprobamos la página" copy="La arquitectura editorial y los ejercicios se revisan primero. Después se producen juntos el PDF y el audio nativo, sin enlaces vacíos." titleId="resources-title" />
+            <SectionIntro kicker="Biblioteca de estudio" title="Material listo para estudiar" copy={`Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.`} titleId="resources-title" />
             <div className={styles.resourceGrid}>
               <ResourceCard code="WEB" title="Lección interactiva" copy={`${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status="Lista para revisar" />
-              <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, mapa, práctica y soluciones con la misma jerarquía visual." status="Fase 2" />
-              <ResourceCard code="AUDIO" title="Inglés nativo" copy="Modelos, contrastes y práctica en contexto con voz natural." status="Fase final" />
+              <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, mapa, práctica y soluciones con la misma jerarquía visual." status="Descargar PDF" href={resource.pdf} />
+              <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" />
             </div>
+            <AudioDownloads tracks={resource.audioTracks} />
             <div className={styles.studyPlan}>
               <h3>Ruta de estudio recomendada</h3>
               <ol><li><b>5 min</b> Comprende la intención.</li><li><b>7 min</b> Reconstruye el mapa.</li><li><b>15 min</b> Completa dos niveles.</li><li><b>5 min</b> Produce tres frases propias.</li></ol>
@@ -153,6 +157,10 @@ export default function EnglishGrammarLesson({
           </section>
         ) : null}
       </div>
+      <aside className="english-conversion" aria-label="Siguiente paso para aprender inglés">
+        <div><span>¿Quieres una ruta hecha para ti?</span><h2>Convierte esta práctica en progreso medible</h2><p>Descubre tu nivel y recibe orientación para elegir el curso que mejor encaja contigo.</p></div>
+        <div><Link href="/nivel-radar" data-english-cta="level-test">Descubrir mi nivel gratis</Link><Link href="/clases-de-ingles" data-english-cta="classes">Ver clases de inglés</Link></div>
+      </aside>
     </section>
   )
 }
@@ -166,8 +174,16 @@ function ReferenceTable({ rows }: { rows: string[][] }) {
   return <div className={styles.tableWrap} role="region" aria-label="Tabla de referencia" tabIndex={0}><table><thead><tr>{rows[0].map((cell, index) => <th key={`${index}-${cell}`}>{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <td key={`${cellIndex}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table></div>
 }
 
-function ResourceCard({ code, title, copy, status }: { code: string; title: string; copy: string; status: string }) {
-  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p><em>{status}</em></div></div>
+function ResourceCard({ code, title, copy, status, href }: { code: string; title: string; copy: string; status: string; href?: string }) {
+  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={href} download>{status}</a> : <em>{status}</em>}</div></div>
+}
+
+function AudioShelf({ tracks }: { tracks: ReturnType<typeof getEnglishGrammarResource>['audioTracks'] }) {
+  return <section className="korean-audio-shelf" aria-labelledby="english-audio-title"><div className="korean-audio-heading"><span>Listen and repeat</span><h3 id="english-audio-title">Pronunciación inglesa nativa</h3><p>Escucha el modelo completo y repítelo conservando ritmo y entonación.</p></div><div className="korean-audio-grid">{tracks.map((track, index) => <article className="korean-audio-card" key={track.id}><span>{String(index + 1).padStart(2, '0')}</span><div><strong>{track.title}</strong><p lang="en">{track.text}</p><small>{track.translation}</small><audio controls preload="metadata" src={track.src}>Tu navegador no puede reproducir este audio.</audio></div></article>)}</div></section>
+}
+
+function AudioDownloads({ tracks }: { tracks: ReturnType<typeof getEnglishGrammarResource>['audioTracks'] }) {
+  return <div className="korean-audio-downloads"><h3>Descargar pistas</h3><div>{tracks.map((track, index) => <a key={track.id} href={track.src} download><span>{String(index + 1).padStart(2, '0')}</span><strong>{track.title}</strong><em>M4A · voz inglesa</em></a>)}</div></div>
 }
 
 function splitFormula(formula: string): string[] {

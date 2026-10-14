@@ -144,6 +144,60 @@ section[aria-labelledby='practice-title'] .study-rail {
   font-style: normal;
 }
 
+.english-conversion {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  border-radius: 24px;
+  background: linear-gradient(135deg, #012169, #173f91);
+  color: #fff;
+  box-shadow: 0 22px 52px rgba(1, 33, 105, 0.2);
+}
+
+.english-conversion span {
+  color: #ffccd3;
+  font-size: 0.73rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.english-conversion h2 {
+  margin: 0.35rem 0 0.45rem;
+  color: #fff;
+  font-size: clamp(1.55rem, 4vw, 2.45rem);
+  line-height: 1.05;
+}
+
+.english-conversion p { margin: 0; color: rgba(255,255,255,.78); }
+.english-conversion > div:last-child { display: grid; gap: 0.65rem; }
+.english-conversion a { display: grid; min-height: 48px; place-items: center; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; color: #fff; font-weight: 850; text-decoration: none; }
+.english-conversion a:first-child { border-color: #fff; background: #fff; color: #012169; }
+.english-conversion a:hover, .english-conversion a:focus-visible { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,.16); }
+
+.english-index-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(230px, .7fr);
+  gap: 1.25rem;
+  align-items: center;
+  margin: 0 0 2rem;
+  padding: clamp(1.3rem, 4vw, 2.2rem);
+  border: 1px solid rgba(1,33,105,.14);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(1,33,105,.07), rgba(200,16,46,.05));
+}
+
+.english-index-cta span { color: #c8102e; font-size: .72rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.english-index-cta h2 { margin: .3rem 0; color: #012169; font-size: clamp(1.45rem, 3vw, 2.2rem); }
+.english-index-cta p { margin: 0; color: var(--muted); }
+.english-index-cta > div:last-child { display: grid; gap: .65rem; }
+.english-index-cta a { display: grid; min-height: 46px; place-items: center; border: 1px solid #012169; border-radius: 999px; color: #012169; font-weight: 850; text-decoration: none; }
+.english-index-cta a:first-child { background: #012169; color: #fff; }
+.english-index-cta a:hover, .english-index-cta a:focus-visible { box-shadow: 0 10px 24px rgba(1,33,105,.13); transform: translateY(-1px); }
+
 @media (max-width: 760px) {
   .korean-audio-grid,
   .korean-audio-downloads > div {
@@ -153,6 +207,9 @@ section[aria-labelledby='practice-title'] .study-rail {
   .korean-audio-card {
     padding: 0.9rem;
   }
+
+  .english-conversion { grid-template-columns: 1fr; }
+  .english-index-cta { grid-template-columns: 1fr; }
 }
 
 section[aria-labelledby='practice-title'] .learning-layout {

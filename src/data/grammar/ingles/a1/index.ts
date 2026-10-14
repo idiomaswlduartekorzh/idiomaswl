@@ -24,6 +24,7 @@ import likeIng from './like-ing'
 import possessiveS from './possessive-s'
 import countableUncountable from './countable-uncountable'
 import tellingTime from './telling-time'
+import { possessivePronouns, presentSimpleVsContinuous } from './supplemental-topics'
 
 const topics: GrammarTopic[] = [
   subjectPronouns,
@@ -51,6 +52,8 @@ const topics: GrammarTopic[] = [
   possessiveS,
   countableUncountable,
   tellingTime,
+  possessivePronouns,
+  presentSimpleVsContinuous,
 ]
 
 export default topics
