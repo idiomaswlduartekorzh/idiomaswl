@@ -56,9 +56,20 @@ for (const { item, resource } of transcriptResources) {
   }
 }
 
-for (const client of ['IELTSPracticeClient.tsx', 'GoetheA1PracticeClient.tsx', 'LanguagePracticeClient.tsx', 'Toefl2026PracticeClient.tsx']) {
+const practiceClients = {
+  'IELTSPracticeClient.tsx': 'className="prac-intro__sections"',
+  'GoetheA1PracticeClient.tsx': 'className={styles.moduleGrid}',
+  'LanguagePracticeClient.tsx': 'className="prac-intro__sections"',
+  'Toefl2026PracticeClient.tsx': 'className="prac-intro__tips"',
+};
+for (const [client, contentMarker] of Object.entries(practiceClients)) {
   const clientPath = path.join(root, 'src/app/(site)/examenes/[exam]/practica/[mockId]', client);
-  assert(fs.readFileSync(clientPath, 'utf8').includes('<ExamPracticeDownloads'), `${client} does not publish the practice resources.`);
+  const clientSource = fs.readFileSync(clientPath, 'utf8');
+  const downloadPosition = clientSource.lastIndexOf('<ExamPracticeDownloads');
+  const contentPosition = clientSource.lastIndexOf(contentMarker);
+  assert(downloadPosition >= 0, `${client} does not publish the practice resources.`);
+  assert(contentPosition >= 0, `${client} is missing its intro content marker.`);
+  assert(downloadPosition < contentPosition, `${client} hides the downloads below the intro content.`);
 }
 
 const fce = auditMockKey(getMock('cambridge-b2', 'set-3'));
