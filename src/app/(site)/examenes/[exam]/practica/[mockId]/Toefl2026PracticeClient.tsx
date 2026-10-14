@@ -33,6 +33,7 @@ import {
   type ToeflFixedStage,
 } from '@/lib/toefl/fixed-session';
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import ExamPracticeDownloads from '@/components/exams/ExamPracticeDownloads';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 // ── Fixed practice shape aligned to the 2026 TOEFL iBT task families ──────────
@@ -1294,6 +1295,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
               {blockedAudioItems > 0 && ' Los ítems sin medio se muestran sólo para revisión y no se califican.'}
             </p>
           </div>
+          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <button className="btn prac-intro__start" onClick={beginExam} disabled={!hydrated}>Empezar práctica fija</button>
           <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheet} label="Full practice PDF" />{(['reading', 'listening', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill[0].toUpperCase()}${skill.slice(1)} PDF`} compact />)}</div>
           <Link href={`/examenes/${exam.slug}`} className="prac-intro__back">Volver a {exam.name}</Link>

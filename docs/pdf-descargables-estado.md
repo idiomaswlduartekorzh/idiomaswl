@@ -37,6 +37,13 @@ lámina de anuncios junto a cada pregunta, y Teil 3 presenta cada aviso como
 recuadro. Los gráficos y diagramas de IELTS, incluidos los SVG, se imprimen
 junto a sus tareas. La plantilla `brandedDoc.ts` sigue siendo la misma.
 
+Las introducciones de práctica de IELTS (20 sets), Goethe A1 (7), Cambridge B2
+First/FCE (10) y TOEFL (20) ofrecen además dos PDF editoriales por set: la
+transcripción del audio y las claves con criterios para tareas abiertas. Son 57
+pares descargables resueltos desde un registro común, sin enlaces manuales por
+página. Las claves se generan desde el mismo catálogo que usa la corrección de
+la plataforma y se sirven desde `public/downloads/exam-answer-keys/`.
+
 `npm run check:exam-worksheets` comprueba los 70 sets, el recorte por Teil y por
 destreza completa, la numeración continua de los Antwortbogen Goethe,
 los grupos texto/preguntas de Goethe, las láminas públicas, la numeración 1–40
@@ -58,6 +65,9 @@ opciones y los canarios de privacidad. Corre en `prebuild`.
   vive el interruptor de qué idiomas ofrecen descarga.
 - **`PdfDownloadButton.tsx`** es el único punto por el que pasan todas las
   descargas del sitio. Cuando haya suscripción, el candado va ahí.
+- **`ExamPracticeDownloads.tsx`** presenta los dos recursos editoriales ya
+  generados de cada set. Sus rutas se obtienen de `transcript-resource.ts` y no
+  se construyen desde texto visible ni desde datos de usuario.
 
 ## Tipografías
 

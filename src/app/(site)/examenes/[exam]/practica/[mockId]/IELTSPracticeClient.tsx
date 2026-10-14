@@ -40,6 +40,7 @@ import type {
   MultiSelectQuestion, MatchingGroupQuestion,
 } from '@/data/mocks/types';
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import ExamPracticeDownloads from '@/components/exams/ExamPracticeDownloads';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 const SKILL_ORDER = ['listening','reading','writing','speaking'];
@@ -1160,6 +1161,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
             <PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={practiceSkill ? `${SKILL_LABEL[practiceSkill]} PDF` : 'Full practice PDF'} />
             {!practiceSkill && skills.filter(skill => !comingSoonSkills.has(skill)).map(skill => <PdfDownloadButton key={skill} generate={downloadWorksheetFor(skill)} label={`${SKILL_LABEL[skill]} PDF`} compact />)}
           </div>
+          <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">{practiceSkill ? 'Before you start' : 'Antes de empezar'}</p>
             {practiceSkill ? <ul>
