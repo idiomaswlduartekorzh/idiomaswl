@@ -30,7 +30,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '문법 (Munbeop)',
     desc: '았/었어요 (pasado), -(으)려고 하다 (intención), -(으)ㄹ 것 같다 (conjetura), -지만 (contraste) y -아/어서 (causa/secuencia).',
-    count: '5 temas · 50+ ejercicios', href: '/practica/coreano/a2/gramatica', available: true,
+    count: '20 temas · práctica progresiva', href: '/practica/coreano/a2/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '쓰기 (Sseugi)',

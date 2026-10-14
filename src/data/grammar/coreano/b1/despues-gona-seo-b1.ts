@@ -69,6 +69,9 @@ const topic: GrammarTopic = {
     scene: [
       ['밥 먹고 나서 영화를 봤어요.', 'Después de comer, vi una película.'],
       ['학교 가고 나서 집에 갔어요.', 'Después de ir a la escuela, fui a casa.'],
+      ['회의가 끝나고 나서 팀장에게 전화했어요.', 'Después de terminar la reunión, llamé al jefe de equipo.'],
+      ['운동하고 나서 샤워했어요.', 'Después de hacer ejercicio, me duché.'],
+      ['한국에 오고 나서 김치를 자주 먹어요.', 'Después de venir a Corea, como kimchi con frecuencia.'],
     ],
     learnerModes: ['reading', 'typing', 'choosing'],
     reviewFocus: ['순서', '간격'],

@@ -19,6 +19,7 @@ import pasivaJeosudo from './pasiva-jeosudo-b1'
 import causativaShichang from './causativa-shichang-b1'
 import propositoDorok from './proposito-dorok-b1'
 import observacionNeyo from './observacion-neyo-b1'
+import { ensureKoreanPracticeDepth } from '../ensure-practice-depth'
 
 const topics: GrammarTopic[] = [
   pasadoReminiscencia,
@@ -41,6 +42,6 @@ const topics: GrammarTopic[] = [
   causativaShichang,
   propositoDorok,
   observacionNeyo,
-]
+].map(ensureKoreanPracticeDepth)
 
 export default topics

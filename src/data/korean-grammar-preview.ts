@@ -1,4 +1,7 @@
 import type { GrammarTopic } from '@/data/grammar/types'
+import koreanA1Topics from '@/data/grammar/coreano/a1'
+import koreanA2Topics from '@/data/grammar/coreano/a2'
+import koreanB1Topics from '@/data/grammar/coreano/b1'
 
 export type KoreanGrammarLevel = 'a1' | 'a2' | 'b1'
 
@@ -9,9 +12,9 @@ export const KOREAN_GRAMMAR_PREVIEW_SLUGS: Record<KoreanGrammarLevel, string> = 
 }
 
 export const KOREAN_GRAMMAR_AVAILABLE_SLUGS: Record<KoreanGrammarLevel, readonly string[]> = {
-  a1: ['hangul-basico', 'estructura-sov'],
-  a2: ['progresivo-go-itda-a2'],
-  b1: ['oportunidad-gime-b1'],
+  a1: koreanA1Topics.map((topic) => topic.slug),
+  a2: koreanA2Topics.map((topic) => topic.slug),
+  b1: koreanB1Topics.map((topic) => topic.slug),
 }
 
 export type KoreanGrammarAudioTrack = {

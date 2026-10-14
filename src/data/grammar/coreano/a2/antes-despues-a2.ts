@@ -181,6 +181,7 @@ const topic: GrammarTopic = {
           { options: ['기', '는', 'ㄴ', '고'], answer: '기', explain: '"운동하기 전에" = antes de hacer ejercicio.' },
           { options: ['다음에', '전에', '기', '고'], answer: '다음에', explain: '"샤워한 다음에" = después de ducharse.' },
           { options: ['전에', '후에', '다음에', '기에'], answer: '전에', explain: '"학교 전에" = antes de la escuela (sustantivo + 전에).' },
+          { options: ['후에', '전에', '기에', '고'], answer: '후에', explain: '"수업이 끝난 후에" = después de terminar la clase.' },
         ],
       },
       {

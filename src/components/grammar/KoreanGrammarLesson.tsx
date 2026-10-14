@@ -32,6 +32,7 @@ export default function KoreanGrammarLesson({
   const formulaParts = splitFormula(topic.guide.formula)
   const model = splitModel(topic.guide.model)
   const hasFinalResources = Boolean(resource.pdf && resource.audioTracks?.length)
+  const practiceActivityCount = countPracticeActivities(topic)
 
   function selectSection(id: SectionId) {
     setActive(id)
@@ -42,7 +43,7 @@ export default function KoreanGrammarLesson({
 
   return (
     <section className={styles.lesson} aria-labelledby="korean-grammar-title">
-      <div className={styles.previewFlag}><span>{hasFinalResources ? 'Página completa' : 'Vista piloto'}</span> {hasFinalResources ? 'Audio coreano nativo y PDF listos' : 'Página para aprobación · audio reservado para la fase final'}</div>
+      <div className={styles.previewFlag}><span>{hasFinalResources ? 'Página completa' : 'Página renovada'}</span> {hasFinalResources ? 'Audio coreano nativo y PDF listos' : 'Contenido, práctica y diseño listos · audio reservado para la fase final'}</div>
       <div className={styles.track} aria-label={`Ruta de gramática coreana ${level.toUpperCase()}`}>
         <span>Hangul</span><b>→</b><strong>Gramática</strong><b>→</b><span>Comprensión</span><b>→</b><span>Producción</span>
       </div>
@@ -58,8 +59,8 @@ export default function KoreanGrammarLesson({
           </div>
           <div className={styles.metrics}>
             <span><b>{topic.practice.levels.length}</b> niveles listos</span>
+            <span><b>{practiceActivityCount}</b> actividades</span>
             <span><b>{resource.studyMinutes}</b> min</span>
-            <span><b>{resource.audioTracks?.length ?? 'KO'}</b> {resource.audioTracks ? 'audios nativos' : 'ejemplos nativos'}</span>
           </div>
         </div>
         <div className={styles.heroVisual}>
@@ -148,7 +149,7 @@ export default function KoreanGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Biblioteca de estudio" title={hasFinalResources ? 'Material listo para estudiar' : 'Recursos que seguirán la página aprobada'} copy={hasFinalResources ? 'Descarga el cuaderno y usa las cuatro pistas nativas dentro de la lección o fuera de línea.' : 'La estructura está definida; produciremos los archivos finales cuando el diseño y la pedagogía queden aprobados.'} titleId="resources-title" />
+            <SectionIntro kicker="Biblioteca de estudio" title={hasFinalResources ? 'Material listo para estudiar' : 'Recursos de cierre'} copy={hasFinalResources ? 'Descarga el cuaderno y usa las cuatro pistas nativas dentro de la lección o fuera de línea.' : 'El contenido y la práctica ya están listos. Los audios nativos y archivos descargables se producirán juntos en la fase final.'} titleId="resources-title" />
             <div className={styles.resourceGrid}>
               <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, tabla, 32 ejercicios y soluciones." href={resource.pdf} />
               <ResourceCard code="PNG" title="Mapa visual" copy="Fórmula, modelo y errores clave." />
@@ -199,4 +200,16 @@ function splitModel(model: string): { korean: string; translation?: string } {
 
 function modeLabel(mode: string): string {
   return ({ reading: 'lectura', choosing: 'elección', typing: 'escritura' } as Record<string, string>)[mode] ?? mode
+}
+
+function countPracticeActivities(topic: GrammarTopic): number {
+  return topic.practice.levels.reduce((total, level) => {
+    if (level.type === 'dual') {
+      return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0)
+    }
+    if (level.type === 'choice' || level.type === 'write') {
+      return total + level.items.length
+    }
+    return total + level.blanks.length
+  }, 0)
 }
