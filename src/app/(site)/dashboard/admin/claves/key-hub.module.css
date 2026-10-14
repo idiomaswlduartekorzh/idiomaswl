@@ -51,6 +51,17 @@
 .summary b { font-size: 16px; color: #193644; margin-right: 4px; }
 .summary .clear, .summary .clear b { color: #257669; }
 .summary .problem, .summary .problem b { color: #a6521b; }
+.transcriptCard { margin: 22px 25px; padding: 18px 20px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px; border: 1px solid #d6e2ef; border-radius: 12px; background: linear-gradient(135deg, #f8faff 0%, #f4f8fd 100%); }
+.transcriptIcon { display: grid; place-items: center; width: 47px; height: 47px; border-radius: 10px; background: #123a83; color: #fff; font-size: 10px; font-weight: 900; letter-spacing: .08em; box-shadow: 0 7px 18px #123a8324; }
+.transcriptCopy { min-width: 0; }
+.transcriptEyebrow { margin: 0 0 4px; color: #d52d32; font-size: 9px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+.transcriptCopy h3 { margin: 0; color: #173565; font-size: 16px; letter-spacing: -.02em; }
+.transcriptCopy > p:last-child { margin: 5px 0 0; color: #61738d; font-size: 11px; line-height: 1.45; }
+.transcriptActions { display: flex; align-items: center; gap: 8px; }
+.transcriptActions a { min-height: 36px; padding: 9px 12px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #bacbe1; border-radius: 8px; color: #173e7d; background: #fff; text-decoration: none; font-size: 10px; font-weight: 850; white-space: nowrap; }
+.transcriptActions a:first-child { border-color: #173e7d; background: #173e7d; color: #fff; }
+.transcriptActions a:hover { border-color: #d52d32; color: #b91f27; }
+.transcriptActions a:first-child:hover { background: #0e2e63; color: #fff; }
 .sectionNav { display: flex; gap: 7px; overflow-x: auto; padding: 13px 25px; border-bottom: 1px solid #e6eef1; }
 .sectionNav a { flex-shrink: 0; padding: 6px 10px; border-radius: 5px; background: #eef4f5; color: #415f6b; font-size: 10px; font-weight: 700; text-decoration: none; }
 .sectionNav a:hover, .sectionNav a:focus-visible { background: #daefeb; color: #135a58; }
@@ -87,4 +98,4 @@
 .issue { margin: 8px 0 0 36px; color: #9a4b19; background: #fff3e9; border-radius: 5px; padding: 7px 9px; font-size: 11px; font-weight: 700; }
 :is(.shell a, .shell button, .shell input, .shell summary):focus-visible { outline: 3px solid #2c8d87; outline-offset: 2px; }
 @media (max-width: 1100px) { .pageIntro { align-items: start; flex-direction: column; } .layout { grid-template-columns: 240px minmax(0, 1fr); } .summary span { padding: 10px 12px; } }
-@media (max-width: 760px) { .topbar { height: 56px; } .pageIntro { padding-top: 27px; } .counters { width: 100%; } .counters div { min-width: 0; flex: 1; padding: 11px; } .counters strong { font-size: 19px; } .layout { display: block; } .sidebar { position: static; max-height: 360px; margin-bottom: 15px; } .keyHeader { flex-direction: column; padding: 20px; } .section { padding: 20px 15px 25px; } .sectionHead h3 { font-size: 15px; } .mode { max-width: 87px; text-align: center; } .notice { margin-bottom: 16px; } }
+@media (max-width: 760px) { .topbar { height: 56px; } .pageIntro { padding-top: 27px; } .counters { width: 100%; } .counters div { min-width: 0; flex: 1; padding: 11px; } .counters strong { font-size: 19px; } .layout { display: block; } .sidebar { position: static; max-height: 360px; margin-bottom: 15px; } .keyHeader { flex-direction: column; padding: 20px; } .transcriptCard { margin: 16px; grid-template-columns: auto minmax(0, 1fr); padding: 16px; } .transcriptActions { grid-column: 1 / -1; width: 100%; } .transcriptActions a { flex: 1; } .section { padding: 20px 15px 25px; } .sectionHead h3 { font-size: 15px; } .mode { max-width: 87px; text-align: center; } .notice { margin-bottom: 16px; } }
