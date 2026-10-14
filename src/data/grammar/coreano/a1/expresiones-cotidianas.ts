@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'expresiones-cotidianas',
-  order: '21',
+  order: '20',
   color: '#c60c30',
   category: '문법',
   level: 'A1',
