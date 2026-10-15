@@ -191,11 +191,11 @@ const topic: GrammarTopic = {
             scene: 'Hablando de cumpleaños',
             lines: [
  ['Ana', '생일이 언제예요? (¿Cuándo es tu cumpleaños?)'],
- ['Lina', '[[0]] [[1]] 이일이에요. (Es el 2 de julio.)'],
+ ['Lina', '[[0]] [[1]]이에요. (Es el 2 de julio.)'],
  ],
             blanks: [
               { options: ['칠월', '시월', '삼월', '오월'], answer: '칠월', explain: '칠월(chilwol) = julio (7월).' },
-              { options: ['칠월', '팔월', '이월', '구월'], answer: '칠월', explain: 'Espera: la respuesta es 칠월 이일 = 2 de julio. 칠월 ya en [[0]].' },
+              { options: ['이일', '삼일', '오일', '십일'], answer: '이일', explain: '이일(i-il) = día 2. 칠월 이일 = 2 de julio.' },
             ],
           },
           {

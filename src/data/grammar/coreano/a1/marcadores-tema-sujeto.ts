@@ -123,7 +123,7 @@ const topic: GrammarTopic = {
             lines: [['', '고양이[[0]] 있어요. 강아지[[1]] 없어요.']],
             blanks: [
               { options: ['가', '이', '는', '은'], answer: '가', explain: '고양이 (vocal) → 가 (sujeto de existencia).' },
-              { options: ['는', '은', '가', '이'], answer: '는', explain: '강아지 (vocal) → 가... espera: 강아지가 없어요 también es correcto, pero 는 da contraste implícito. Ambos son usados.' },
+              { options: ['는', '은', '가', '이'], answer: '는', explain: '강아지 termina en vocal, por eso usa 는. Aquí contrasta al perro con el gato de la frase anterior.' },
             ],
           },
           {
@@ -138,7 +138,7 @@ const topic: GrammarTopic = {
             scene: 'Diálogo en contexto',
             lines: [['', '학교[[0]] 크고 도서관[[1]] 작아요.']],
             blanks: [
-              { options: ['은', '는', '이', '가'], answer: '은', explain: '학교 (vocal ㅛ)... espera: 교 = ㄱ+ㅛ → termina en vocal → 는. Pero en contraste → 는/은 según fonética. 학교 termina en vocal → 는.' },
+              { options: ['는', '은', '이', '가'], answer: '는', explain: '학교 termina en vocal ㅛ, por eso usa 는 como tema de la comparación.' },
               { options: ['은', '는', '이', '가'], answer: '은', explain: '도서관 termina en ㄴ (consonante) → 은 (tema, contraste).' },
             ],
           },

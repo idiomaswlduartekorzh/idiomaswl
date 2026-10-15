@@ -1,0 +1,61 @@
+{
+  "status": "production",
+  "engine": "Chatterbox Multilingual V3",
+  "voice": {
+    "language": "en",
+    "profile": "adult female, clear native English, classroom pacing",
+    "reference_source": "public/audio/historias/ingles/the-interpreter/b.mp3",
+    "reference_segments_seconds": [
+      [
+        0.25,
+        4.5
+      ],
+      [
+        6.0,
+        10.0
+      ]
+    ]
+  },
+  "settings": {
+    "language_id": "en",
+    "t3_model": "v3",
+    "exaggeration": 0.32,
+    "cfg_weight": 0.38,
+    "temperature": 0.66,
+    "repetition_penalty": 1.25,
+    "min_p": 0.05,
+    "top_p": 0.95,
+    "target_lufs": -18.0,
+    "true_peak_ceiling_dbfs": -2.2,
+    "encoding_peak_safety_margin_db": 0.5,
+    "output_sample_rate": 44100,
+    "delivery_bitrate": 128000
+  },
+  "codec": "AAC in M4A, mono, 44.1 kHz, 128 kbps",
+  "tracks": [
+    {
+      "id": "modelo-estructura",
+      "title": "Modelo y estructura",
+      "text": "Passengers must show a valid passport before boarding.",
+      "translation": "Debes llevar el cinturón de seguridad al conducir.",
+      "file": "modelo-estructura.m4a",
+      "bytes": 55005
+    },
+    {
+      "id": "contraste-guiado",
+      "title": "Contraste guiado",
+      "text": "You shouldn't drink so much coffee. It's affecting your sleep.",
+      "translation": "Tengo que entregar este informe antes del mediodía.",
+      "file": "contraste-guiado.m4a",
+      "bytes": 63175
+    },
+    {
+      "id": "practica-contexto",
+      "title": "Práctica en contexto",
+      "text": "We had to take a taxi because there were no buses at that hour.",
+      "translation": "No puedes usar tu teléfono durante el examen.",
+      "file": "practica-contexto.m4a",
+      "bytes": 60624
+    }
+  ]
+}

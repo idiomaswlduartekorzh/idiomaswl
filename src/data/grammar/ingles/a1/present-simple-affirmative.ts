@@ -193,7 +193,7 @@ const topic: GrammarTopic = {
             scene: 'Rutina de un estudiante',
             lines: [['Narrator', 'Carlos [[0]] (wake) up at six and [[1]] (study) for one hour before school.']],
             blanks: [
-              { options: ['wake', 'wakes', 'wakes up', 'wakes'], answer: 'wakes', explain: 'Carlos → he → wakes (+ s).' },
+              { options: ['wake', 'wakes', 'woke', 'is waking'], answer: 'wakes', explain: 'Carlos → he → wakes (+ s).' },
               { options: ['study', 'studies', 'studys'], answer: 'studies', explain: 'Carlos → he + study → studies (-y → -ies).' },
             ],
           },
@@ -232,7 +232,7 @@ const topic: GrammarTopic = {
         scene: 'La rutina diaria de Clara',
         text: 'Clara [[0]] (wake) up at six every morning. She [[1]] (have) coffee and [[2]] (read) the news. Then she [[3]] (go) to the WeLearn office. Her students [[4]] (arrive) at eight. She always [[5]] (prepare) her lessons the night before. After class, she [[6]] (check) her emails and [[7]] (plan) the next day.',
         blanks: [
-          { options: ['wake', 'wakes', 'wakes up', 'wakes'], answer: 'wakes', explain: 'Clara → she → wakes (+ s).' },
+          { options: ['wake', 'wakes', 'woke', 'is waking'], answer: 'wakes', explain: 'Clara → she → wakes (+ s).' },
           { options: ['have', 'has', 'haves'], answer: 'has', explain: 'She → has (irregular).' },
           { options: ['read', 'reads', 'reades'], answer: 'reads', explain: 'She → reads (+ s).' },
           { options: ['go', 'goes', 'gos'], answer: 'goes', explain: 'She + go (termina en -o) → goes (+ es).' },

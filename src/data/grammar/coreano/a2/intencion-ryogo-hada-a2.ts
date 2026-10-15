@@ -6,33 +6,33 @@ const topic: GrammarTopic = {
   color: '#c60c30',
   category: 'Intenciones',
   level: 'A2',
-  title: '-(으)려고 하다 Coreano A2 — Intencion y planes',
+  title: '-(으)려고 하다 Coreano A2 — Intención y planes',
   shortTitle: '-(으)려고 하다',
-  metaTitle: 'Coreano A2 — -(으)려고 하다 intencion y planes',
+  metaTitle: 'Coreano A2 — -(으)려고 하다 intención y planes',
   description:
-    '-(으)려고 하다 expresa intencion, plan o proposito en coreano. Equivale a "tengo la intencion de", "pienso", "voy a (plan)". Se forma con -려고 (vocal/ㄹ) o -으려고 (consonante) mas 하다 conjugado.',
-  lead: 'Raiz + -려고 해요 (vocal/ㄹ) o + -으려고 해요 (consonante). Ejemplos: 먹으려고 해요 (Pienso comer). 가려고 해요 (Voy a ir). 공부하려고 해요 (Planeo estudiar).',
+    '-(으)려고 하다 expresa intención, plan o proposito en coreano. Equivale a "tengo la intención de", "pienso", "voy a (plan)". Se forma con -려고 (vocal/ㄹ) o -으려고 (consonante) más 하다 conjugado.',
+  lead: 'Raíz + -려고 해요 (vocal/ㄹ) o + -으려고 해요 (consonante). Ejemplos: 먹으려고 해요 (Pienso comer). 가려고 해요 (Voy a ir). 공부하려고 해요 (Planeo estudiar).',
   outcomes: [
     'Expresar intenciones y planes con -(으)려고 하다',
-    'Distinguir -려고 y -으려고 segun la raiz',
+    'Distinguir -려고 y -으려고 segun la raíz',
     'Usar el futuro 할 거예요 vs -(으)려고 해요',
     'Construir oraciones de proposito con -(으)려고 가다/오다',
   ],
 
   guide: {
-    goal: 'Expresar intencion o plan con -(으)려고 하다, equivalente a "pienso hacer algo" o "planeo hacer algo".',
+    goal: 'Expresar intención o plan con -(으)려고 하다, equivalente a "pienso hacer algo" o "planeo hacer algo".',
     model: '주말에 친구를 만나려고 해요 (Planeo encontrarme con un amigo el fin de semana) | 한국어를 배우려고 학원에 등록했어요 (Me registre en la academia para aprender coreano)',
-    formula: 'Raiz + -려고 (vocal/ㄹ) | Raiz + -으려고 (consonante) | + 하다 conjugado',
+    formula: 'Raíz + -려고 (vocal/ㄹ) | Raíz + -으려고 (consonante) | + 하다 conjugado',
     decisions: [
-      'Identifica la raiz: quita -다 del infinitivo',
-      'Si la raiz termina en vocal o ㄹ → añade -려고: 가다 → 가려고, 살다 → 살려고',
-      'Si la raiz termina en consonante → añade -으려고: 먹다 → 먹으려고, 읽다 → 읽으려고',
-      '+ 하다 conjugado: 해요 (presente/intencion), 했어요 (intencion pasada), 할 거예요 (intencion futura enfatica)',
+      'Identifica la raíz: quita -다 del infinitivo',
+      'Si la raíz termina en vocal o ㄹ → añade -려고: 가다 → 가려고, 살다 → 살려고',
+      'Si la raíz termina en consonante → añade -으려고: 먹다 → 먹으려고, 읽다 → 읽으려고',
+      '+ 하다 conjugado: 해요 (presente/intención), 했어요 (intención pasada), 할 거예요 (intención futura enfatica)',
       'Sin 하다: -(으)려고 solo puede preceder a verbos de movimiento: 가다, 오다, 나가다. Ejemplo: 밥 먹으려고 집에 갔어요 (Fui a casa a comer)',
-      'Diferencia con 할 거예요: -(으)려고 해요 implica intencion planificada; 할 거예요 es prediccion o intencion menos comprometida',
+      'Diferencia con 할 거예요: -(으)려고 해요 implica intención planificada; 할 거예요 es predicción o intención menos comprometida',
     ],
     table: [
-      ['Infinitivo', 'Raiz final', '-(으)려고'],
+      ['Infinitivo', 'Raíz final', '-(으)려고'],
       ['가다 (ir)', 'vocal 가', '가려고'],
       ['먹다 (comer)', 'consonante 먹', '먹으려고'],
       ['살다 (vivir)', 'ㄹ 살', '살려고'],
@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
       ['읽다 (leer)', 'consonante 읽', '읽으려고'],
     ],
     mistakes: [
-      '"가으려고" — raiz vocal no necesita -으: 가다 → 가려고',
-      '"먹려고" — raiz consonante necesita -으: 먹다 → 먹으려고',
+      '"가으려고" — raíz vocal no necesita -으: 가다 → 가려고',
+      '"먹려고" — raíz consonante necesita -으: 먹다 → 먹으려고',
       '"-(으)려고 + mandato" — NO se puede: ✗가려고 가세요. Solo con 하다 o verbos de movimiento',
     ],
   },
@@ -50,8 +50,8 @@ const topic: GrammarTopic = {
     {
       heading: '¿Como se usa -(으)려고 하다 en coreano?',
       paragraphs: [
-        '-(으)려고 하다 es la expresion mas natural para hablar de planes e intenciones en coreano. La parte 하다 se conjuga normalmente: 해요 para el presente, 했어요 para el pasado (intencion que ya tenia), 할 거예요 para el futuro.',
-        'Es importante que el sujeto de las dos clausulas sea el mismo: 나는 밥을 먹으려고 해요 (Yo pienso comer). No se puede cambiar de sujeto entre las dos partes.',
+        '-(으)려고 하다 es la expresion más natural para hablar de planes e intenciones en coreano. La parte 하다 se conjuga normalmente: 해요 para el presente, 했어요 para el pasado (intención que ya tenia), 할 거예요 para el futuro.',
+        'Es importante que el sujeto de las dos cláusulas sea el mismo: 나는 밥을 먹으려고 해요 (Yo pienso comer). No se puede cambiar de sujeto entre las dos partes.',
       ],
     },
     {
@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cuál es la diferencia entre -(으)려고 해요 y 할 거예요?',
       paragraphs: [
-        '-(으)려고 해요 indica una intencion planificada y consciente: 내일 운동하려고 해요 (Planeo hacer ejercicio manana — es mi plan). 할 거예요 puede ser mas espontaneo o predictivo: 내일 운동할 거예요 (Voy a hacer ejercicio manana — prediccion o intencion general).',
+        '-(으)려고 해요 indica una intención planificada y consciente: 내일 운동하려고 해요 (Planeo hacer ejercicio mañana — es mi plan). 할 거예요 puede ser más espontaneo o predictivo: 내일 운동할 거예요 (Voy a hacer ejercicio mañana — predicción o intención general).',
         'Cuando quieres enfatizar que algo es un plan firme, usa -(으)려고 해요. En conversacion casual ambas formas son aceptables.',
       ],
     },
@@ -97,7 +97,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Nivel 1 — Reconocimiento de -(으)려고',
-        tag: 'Opcion multiple',
+        tag: 'Opción multiple',
         intro: 'Elige la forma correcta de -(으)려고 para cada verbo.',
         type: 'choice',
         items: [
@@ -106,49 +106,49 @@ const topic: GrammarTopic = {
             lines: [['Dario', '이번 여름에 한국에 ___ (가다) 해요. (Planeo ir a Corea este verano.)']],
             options: ['가려고', '가으려고', '갔으려고', '가고려고'],
             answer: '가려고',
-            explain: '가다 → raiz 가 (vocal) → 가려고. Sin -으.',
+            explain: '가다 → raíz 가 (vocal) → 가려고. Sin -으.',
           },
           {
             scene: 'Hora de cenar',
             lines: [['Ana', '저녁에 피자를 ___ (먹다) 해요. (Pienso comer pizza en la cena.)']],
             options: ['먹으려고', '먹려고', '먹아려고', '먹어려고'],
             answer: '먹으려고',
-            explain: '먹다 → raiz 먹 (consonante) → 먹으려고.',
+            explain: '먹다 → raíz 먹 (consonante) → 먹으려고.',
           },
           {
             scene: 'Nuevo libro',
             lines: [['Carlos', '한국어 책을 ___ (읽다) 도서관에 갔어요. (Fui a la biblioteca para leer un libro de coreano.)']],
             options: ['읽으려고', '읽려고', '읽아려고', '읽어려고'],
             answer: '읽으려고',
-            explain: '읽다 → raiz 읽 (consonante) → 읽으려고.',
+            explain: '읽다 → raíz 읽 (consonante) → 읽으려고.',
           },
           {
             scene: 'Viajar a Europa',
             lines: [['Lina', '유럽에 ___ (살다) 비자를 신청했어요. (Solicite el visado para vivir en Europa.)']],
             options: ['살려고', '살으려고', '살아려고', '사으려고'],
             answer: '살려고',
-            explain: '살다 → raiz 살 (ㄹ) → 살려고. ㄹ se trata como vocal.',
+            explain: '살다 → raíz 살 (ㄹ) → 살려고. ㄹ se trata como vocal.',
           },
           {
             scene: 'Aprender un idioma',
-            lines: [['Marco', '스페인어를 ___ (배우다) 학원에 등록했어요. (Me registre en la academia para aprender espanol.)']],
+            lines: [['Marco', '스페인어를 ___ (배우다) 학원에 등록했어요. (Me registre en la academia para aprender español.)']],
             options: ['배우려고', '배우으려고', '배워려고', '배우아려고'],
             answer: '배우려고',
-            explain: '배우다 → raiz 배우 (vocal ㅜ) → 배우려고.',
+            explain: '배우다 → raíz 배우 (vocal ㅜ) → 배우려고.',
           },
           {
             scene: 'Preparacion fisica',
-            lines: [['Sofia', '건강해지___ 해서 매일 운동해요. (Hago ejercicio a diario para estar mas sano.)']],
+            lines: [['Sofia', '건강해지___ 해서 매일 운동해요. (Hago ejercicio a diario para estar más sano.)']],
             options: ['지려고', '지으려고', '지아려고', '지어려고'],
             answer: '지려고',
-            explain: '건강해지다 → raiz 건강해지 (vocal) → 건강해지려고.',
+            explain: '건강해지다 → raíz 건강해지 (vocal) → 건강해지려고.',
           },
           {
             scene: 'Estudio nocturno',
             lines: [['Sara', '시험을 준비하___ 매일 밤 공부해요. (Estudio todas las noches para prepararme para el examen.)']],
             options: ['하려고', '하으려고', '해려고', '하아려고'],
             answer: '하려고',
-            explain: '준비하다 → raiz 준비하 (vocal) → 준비하려고.',
+            explain: '준비하다 → raíz 준비하 (vocal) → 준비하려고.',
           },
           {
             scene: 'Reserva de restaurante',
@@ -161,9 +161,9 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-2',
-        title: 'Nivel 2 — Dialogos con dos espacios',
+        title: 'Nivel 2 — Diálogos con dos espacios',
         tag: '2 espacios',
-        intro: 'Completa los dialogos con -(으)려고 y la conjugacion de 하다.',
+        intro: 'Completa los diálogos con -(으)려고 y la conjugacion de 하다.',
         type: 'dual',
         items: [
           {
@@ -178,7 +178,7 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Razon de visita a la tienda',
+            scene: 'Razón de visita a la tienda',
             lines: [
  ['Sara', '어디 가요? (¿A donde vas?)'],
  ['Lina', '물건을 [[0]] (사다) 마트에 가요. 저녁에 요리를 [[1]] (하다) 재료가 필요해요. (Voy al supermercado a comprar cosas. Necesito ingredientes para cocinar en la tarde.)'],
@@ -192,7 +192,7 @@ const topic: GrammarTopic = {
             scene: 'Motivation para estudiar',
             lines: [
  ['Marco', '왜 한국어를 공부해요? (¿Por que estudias coreano?)'],
- ['Sofia', '한국에 [[0]] (살다) 공부해요. 그리고 한국 회사에 [[1]] (취직하다) 싶어서요. (Estudio para vivir en Corea. Tambien porque quiero trabajar en una empresa coreana.)'],
+ ['Sofia', '한국에 [[0]] (살다) 공부해요. 그리고 한국 회사에 [[1]] (취직하다) 싶어서요. (Estudio para vivir en Corea. También porque quiero trabajar en una empresa coreana.)'],
  ],
             blanks: [
               { options: ['살려고', '살으려고', '사으려고', '살아려고'], answer: '살려고', explain: '살다 → 살려고 (ㄹ = como vocal).' },
@@ -223,9 +223,9 @@ const topic: GrammarTopic = {
         blanks: [
           { options: ['가려고', '가으려고', '갔으려고', '가이려고'], answer: '가려고', explain: '가다 → 가려고 (vocal).' },
           { options: ['하려고', '하으려고', '해려고', '하아려고'], answer: '하려고', explain: '하다 → 하려고.' },
-          { options: ['받으려고', '받려고', '받아려고', '받어려고'], answer: '받으려고', explain: '받다 → raiz 받 (consonante) → 받으려고.' },
-          { options: ['찾으려고', '찾려고', '찾아려고', '찾어려고'], answer: '찾으려고', explain: '찾다 → raiz 찾 (consonante) → 찾으려고.' },
-          { options: ['이루려고', '이루으려고', '이뤄려고', '이루아려고'], answer: '이루려고', explain: '이루다 → raiz 이루 (vocal) → 이루려고.' },
+          { options: ['받으려고', '받려고', '받아려고', '받어려고'], answer: '받으려고', explain: '받다 → raíz 받 (consonante) → 받으려고.' },
+          { options: ['찾으려고', '찾려고', '찾아려고', '찾어려고'], answer: '찾으려고', explain: '찾다 → raíz 찾 (consonante) → 찾으려고.' },
+          { options: ['이루려고', '이루으려고', '이뤄려고', '이루아려고'], answer: '이루려고', explain: '이루다 → raíz 이루 (vocal) → 이루려고.' },
         ],
       },
       {
@@ -237,16 +237,16 @@ const topic: GrammarTopic = {
         scene: 'Planes de diferentes estudiantes de WeLearn',
         text: '마르코는 살을 빼[[0]] (빼다) 운동을 시작했어요. / 소피아는 스페인어를 가르치[[1]] (가르치다) 대학에 지원했어요. / 카를로스는 책을 쓰[[2]] (쓰다) 매일 연습해요. / 리나는 한국 음식을 만들[[3]] (만들다) 요리 책을 샀어요. / 다비드는 새 노래를 외우[[4]] (외우다) 계속 들어요.',
         blanks: [
-          { answer: '빼려고', explain: '빼다 → raiz 빼 (vocal) → 빼려고.' },
-          { answer: '가르치려고', explain: '가르치다 → raiz 가르치 (vocal) → 가르치려고.' },
-          { answer: '쓰려고', explain: '쓰다 → raiz 쓰 (vocal ㅡ) → 쓰려고.' },
-          { answer: '만들려고', explain: '만들다 → raiz 만들 (ㄹ) → 만들려고 (ㄹ = como vocal).' },
-          { answer: '외우려고', explain: '외우다 → raiz 외우 (vocal) → 외우려고.' },
+          { answer: '빼려고', explain: '빼다 → raíz 빼 (vocal) → 빼려고.' },
+          { answer: '가르치려고', explain: '가르치다 → raíz 가르치 (vocal) → 가르치려고.' },
+          { answer: '쓰려고', explain: '쓰다 → raíz 쓰 (vocal ㅡ) → 쓰려고.' },
+          { answer: '만들려고', explain: '만들다 → raíz 만들 (ㄹ) → 만들려고 (ㄹ = como vocal).' },
+          { answer: '외우려고', explain: '외우다 → raíz 외우 (vocal) → 외우려고.' },
         ],
       },
       {
         id: 'level-5',
-        title: 'Nivel 5 — Produccion guiada',
+        title: 'Nivel 5 — Producción guiada',
         tag: 'Escritura guiada',
         intro: 'Escribe oraciones completas con -(으)려고 해요 o -(으)려고 + verbo de movimiento.',
         type: 'write',
@@ -266,7 +266,7 @@ const topic: GrammarTopic = {
             explain: '사다 → 사려고 + verbo de movimiento 갔어요.',
           },
           {
-            scene: 'Intencion de aprendizaje',
+            scene: 'Intención de aprendizaje',
             prompt: 'Di "Pienso aprender a cocinar comida coreana" (한국 음식을 만들다, 배우다).',
             answer: '한국 음식 만드는 법을 배우려고 해요.',
             accepted: ['배우려고 해요', '만들려고', '배우려고'],

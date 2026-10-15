@@ -186,6 +186,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),
+    {
+      url: `${BASE}/practica/ingles/recursos`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.82,
+      images: [
+        `${BASE}/images/ingles/recursos/100-verbos-irregulares-ingles.png`,
+        `${BASE}/images/ingles/recursos/100-adjetivos-ingles-opuestos.png`,
+        `${BASE}/images/ingles/recursos/50-phrasal-verbs-esenciales.png`,
+        `${BASE}/images/ingles/recursos/60-combinaciones-preposiciones-ingles.png`,
+        `${BASE}/images/ingles/recursos/40-conectores-ingles.png`,
+      ],
+    },
 
     // ── Practice — level pages ────────────────────────────────────────────────
     ...PRACTICE_LANGUAGES.flatMap((lang) =>

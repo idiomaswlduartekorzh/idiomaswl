@@ -1,0 +1,313 @@
+.lesson {
+  --js-red: #c60c30;
+  --js-navy: #003478;
+}
+
+.sectionNav {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.learningSwitch button {
+  min-height: 2.4rem;
+  padding: 0.62rem 0.95rem;
+  border: 0;
+  border-radius: 0.52rem;
+  color: var(--js-muted);
+  background: transparent;
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.learningSwitch .activeSwitch {
+  color: #fff;
+  background: var(--js-red);
+}
+
+.heroMark {
+  color: #003478;
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 3.6rem;
+}
+
+.audioGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.audioCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--js-line);
+  border-radius: 0.7rem;
+  background: var(--js-soft);
+}
+
+.audioCard > span {
+  grid-row: 1 / 5;
+  display: grid;
+  width: 2.15rem;
+  height: 2.15rem;
+  place-items: center;
+  border-radius: 0.55rem;
+  color: #fff;
+  background: var(--js-navy);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 900;
+}
+
+.audioCard h3,
+.audioCard p,
+.audioCard small {
+  margin: 0;
+}
+
+.audioCard h3 {
+  font-size: 0.85rem;
+}
+
+.audioCard p {
+  margin-top: 0.35rem;
+  color: var(--js-navy);
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.audioCard small {
+  min-height: 2.2em;
+  color: var(--js-muted);
+  font-size: 0.65rem;
+  line-height: 1.45;
+}
+
+.audioCard audio {
+  width: 100%;
+  height: 2.35rem;
+  margin-top: 0.6rem;
+}
+
+.blockGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blockGrid button,
+.koreanPrompt,
+.bigBlock,
+.blockParts span {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+
+.blockGrid button {
+  min-height: 5.5rem;
+  font-size: 2.4rem;
+}
+
+.blockPlayer {
+  align-content: center;
+}
+
+.bigBlock {
+  display: grid;
+  width: 10rem;
+  height: 10rem;
+  place-items: center;
+  border-radius: 1rem;
+  color: var(--js-navy);
+  background: var(--js-surface);
+  font-size: 6.5rem;
+  line-height: 1;
+}
+
+.blockParts {
+  display: flex;
+  gap: 0.45rem;
+  margin: 0.85rem 0 0.2rem;
+}
+
+.blockParts span {
+  display: grid;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 1px solid var(--js-line);
+  border-radius: 0.5rem;
+  color: var(--js-red);
+  background: var(--js-surface);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.koreanPrompt {
+  font-size: clamp(3.2rem, 9vw, 7rem);
+}
+
+.jamoStrokeGrid {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.jamoStrokeGrid button {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+
+.strokePlayer {
+  min-height: 36rem;
+  align-content: center;
+  gap: 1rem;
+  overflow: hidden;
+  border-color: color-mix(in srgb, var(--js-navy) 10%, var(--js-line));
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 255, 255, 0.96), rgba(247, 249, 252, 0.84) 48%, rgba(237, 241, 247, 0.9));
+}
+
+.strokeCanvas {
+  position: relative;
+  display: grid;
+  width: min(100%, 21rem);
+  padding: 0.8rem 0.8rem 2.7rem;
+  border: 1px solid rgba(0, 52, 120, 0.1);
+  border-radius: 1.35rem;
+  background: #fff;
+  box-shadow: 0 1.1rem 2.6rem rgba(0, 52, 120, 0.09), inset 0 1px 0 #fff;
+}
+
+.strokeDiagram {
+  width: 100%;
+  overflow: visible;
+}
+
+.strokePaper {
+  fill: #fff;
+  stroke: rgba(0, 52, 120, 0.055);
+  stroke-width: 1;
+}
+
+.guideGlyph {
+  fill: none;
+  stroke: rgba(0, 52, 120, 0.07);
+  stroke-dasharray: 3 6;
+  stroke-width: 0.8;
+}
+
+.strokeGhost {
+  fill: none;
+  stroke: #d9dde4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 13;
+}
+
+.animatedStroke {
+  fill: none;
+  stroke: #111827;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 13;
+  animation: drawHangul 0.78s cubic-bezier(0.35, 0, 0.2, 1) forwards;
+}
+
+.strokeSequence {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.38rem;
+  padding: 0.72rem;
+  border-top: 1px solid rgba(0, 52, 120, 0.08);
+  color: var(--js-muted);
+  background: rgba(248, 250, 253, 0.92);
+}
+
+.strokeSequence i {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1px solid rgba(0, 52, 120, 0.13);
+  border-radius: 50%;
+  color: var(--js-navy);
+  background: #fff;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  font-style: normal;
+  font-weight: 850;
+}
+
+.strokeMeta {
+  display: grid;
+  justify-items: center;
+  max-width: 20rem;
+}
+
+.strokeMeta h3 span {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 2rem;
+}
+
+.familyTag {
+  padding: 0.35rem 0.62rem;
+  border-radius: 999px;
+  color: var(--js-navy);
+  background: color-mix(in srgb, var(--js-navy) 8%, var(--js-surface));
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@keyframes drawHangul {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .sectionNav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .audioGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .learningSwitch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+
+  .learningSwitch button {
+    flex: 1;
+    padding-inline: 0.35rem;
+  }
+
+  .blockGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .jamoStrokeGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .strokePlayer {
+    min-height: 34rem;
+    padding-inline: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animatedStroke {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+}

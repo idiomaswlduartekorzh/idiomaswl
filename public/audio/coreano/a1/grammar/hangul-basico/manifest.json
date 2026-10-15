@@ -1,0 +1,76 @@
+{
+  "status": "production",
+  "engine": "Chatterbox Multilingual V3",
+  "voice": {
+    "language": "ko",
+    "profile": "adult female, clear standard Korean, classroom pacing",
+    "reference_source": "public/audio/coreano/a1/listening-01.mp3",
+    "reference_segments_seconds": [
+      [
+        0.0,
+        3.9
+      ],
+      [
+        19.75,
+        23.95
+      ]
+    ]
+  },
+  "settings": {
+    "language_id": "ko",
+    "t3_model": "v3",
+    "exaggeration": 0.36,
+    "cfg_weight": 0.34,
+    "temperature": 0.68,
+    "repetition_penalty": 1.25,
+    "min_p": 0.05,
+    "top_p": 0.95,
+    "target_lufs": -18.0,
+    "true_peak_ceiling_dbfs": -2.2,
+    "output_sample_rate": 44100,
+    "delivery_bitrate": 128000
+  },
+  "codec": "AAC in M4A, mono, 44.1 kHz, 128 kbps",
+  "tracks": [
+    {
+      "id": "modelo-silabas",
+      "title": "Modelo de sílabas",
+      "text": "가, 나, 다, 라, 마, 바, 사, 아, 자, 차, 카, 타, 파, 하.",
+      "translation": "Serie básica para escuchar el patrón consonante más vocal.",
+      "seed": 5101,
+      "file": "modelo-silabas.m4a",
+      "duration_seconds": 6.84,
+      "bytes": 114482
+    },
+    {
+      "id": "vocales-basicas",
+      "title": "Vocales básicas",
+      "text": "아, 어, 오, 우, 으, 이.",
+      "translation": "a, eo, o, u, eu, i",
+      "seed": 5102,
+      "file": "vocales-basicas.m4a",
+      "duration_seconds": 5.6,
+      "bytes": 94766
+    },
+    {
+      "id": "palabras-basicas",
+      "title": "Palabras para leer",
+      "text": "아이. 어디. 오늘. 우리. 이름. 한글.",
+      "translation": "niño; dónde; hoy; nosotros; nombre; hangeúl",
+      "seed": 5103,
+      "file": "palabras-basicas.m4a",
+      "duration_seconds": 5.0,
+      "bytes": 85109
+    },
+    {
+      "id": "frases-iniciales",
+      "title": "Primeras frases",
+      "text": "안녕하세요. 감사합니다. 저는 한국어를 공부해요.",
+      "translation": "Hola. Gracias. Estudio coreano.",
+      "seed": 5104,
+      "file": "frases-iniciales.m4a",
+      "duration_seconds": 5.64,
+      "bytes": 95099
+    }
+  ]
+}

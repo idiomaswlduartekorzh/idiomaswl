@@ -11,7 +11,7 @@ const topic: GrammarTopic = {
   metaTitle: '-ㄹ수록 / -을수록 en Coreano B1 — Expresar Proporcionalidad',
   description:
     '-ㄹ수록 expresa relación proporcional: "cuanto más X, más/menos Y". Literal: "raíz + -ㄹ수" (cantidad) + "록" (en la medida que). Se usa para: "cuanto más trabajo, más aprendo", "cuanto menos duermes, peor estás". Fundamental para expresar causa-efecto proporcional en B1.',
-  lead: 'Domina -ㄹ수록 para expresar: "cuanto más..., más..."',
+  lead: 'Domina -(으)ㄹ수록 para relacionar dos cambios graduales: «cuanto más ocurre A, más o menos sucede B».',
   outcomes: [
     'Forma proporcionalidad con -ㄹ수록',
     'Expresa relaciones causa-efecto graduales',
@@ -22,7 +22,7 @@ const topic: GrammarTopic = {
   guide: {
     goal: 'Expresar relaciones proporcionales entre dos variables.',
     model: '공부할수록 알 수 있어요. 나이가 들수록 지혜가 생겨요. (Cuanto más estudio, más aprendo. Cuanto más envejeces, más sabiduría adquieres.)',
-    formula: '동사/형용사 + -ㄹ수록',
+    formula: 'raíz con vocal/ㄹ + -ㄹ수록 | raíz con consonante + -을수록',
     decisions: [
       '-ㄹ수록: proporcionalidad, "cuanto más... más..."',
       '동사: 공부하다 → 공부할수록, 먹다 → 먹을수록',
@@ -33,12 +33,12 @@ const topic: GrammarTopic = {
     table: [
       ['Estructura', 'Significado', 'Ejemplo'],
       ['-ㄹ수록', 'Proporcionalidad', '많을수록 좋아요 — cuanto más, mejor'],
-      ['반복', 'Cadena proporcional', '큰 도시일수록 비쌀수록 → cuanto más grande la ciudad, más cara'],
-      ['부정', 'Proporción negativa', '못 잘수록 피곤해요 — cuanto menos duermes, más cansado estás'],
+      ['resultado con 더/덜', 'Cambio correlacionado', '도시가 클수록 생활비가 더 비싸요'],
+      ['proporción inversa', 'Menos A, más B', '잠을 적게 잘수록 더 피곤해요'],
     ],
     mistakes: [
       '"-는수록" no existe; es "-ㄹ수록".',
-      '"많으면 많을수록" (redundancia); usa solo "-ㄹ수록".',
+      '"많으면 많을수록" es una forma enfática válida; no la confundas con una repetición accidental.',
       '"공부할수록" ✓ (cuanto más estudies) vs "공부하면서" (mientras estudias) — proporcional vs simultaneidad.',
     ],
   },
@@ -61,22 +61,22 @@ const topic: GrammarTopic = {
     {
       heading: 'Expresiones comunes con -ㄹ수록',
       paragraphs: [
-        '"좋을수록" = cuanto mejor. "많을수록 좋아요" = cuanto más, mejor (expresión fija). "클수록 비쌀수록" = cuanto más grande, más caro.',
+        '"좋을수록" = cuanto mejor. "많을수록 좋아요" = cuanto más, mejor (expresión fija). "도시가 클수록 생활비가 더 비싸요" = cuanto más grande es la ciudad, más caro es vivir.',
         '"공부할수록 알 수 있어요" = cuanto más estudio, más entiendo. Relación causa-efecto proporcional clara.',
       ],
     },
     {
       heading: '¿Cómo se expresa la proporción inversa con -(으)ㄹ수록?',
       paragraphs: [
-        '"못 잘수록 피곤해요" = cuanto menos duermes, más cansado estás (proporción inversa). La negación invierte la relación pero -ㄹ수록 sigue expresando proporcionalidad.',
-        'También: "덜 먹을수록 건강해요" (cuanto menos comas, más sano estás) — la negación o reducción en una variable produce reducción en el resultado.',
+        '"잠을 적게 잘수록 더 피곤해요" = cuanto menos duermes, más cansado estás. La reducción se expresa con 적게 o 덜, y -(으)ㄹ수록 mantiene la relación proporcional.',
+        'También: "운동을 덜 할수록 체력이 떨어져요" (cuanto menos ejercicio haces, peor se vuelve la resistencia). La segunda cláusula debe expresar el cambio correlacionado.',
       ],
     },
     {
       heading: 'Cadena de proporciones: A-ㄹ수록 B, B-ㄹ수록 C',
       paragraphs: [
-        'Se puede encadenar: "도시가 클수록 비쌀수록 살기 힘들어요" (cuanto más grande la ciudad, más cara, más difícil vivir). Cada variable proporciona causa para la siguiente.',
-        'Ejemplo complejo: "일을 많이 할수록 스트레스가 많아질수록 건강이 나빠져요" (cuanto más trabajes, más estrés, peor salud).',
+        'Es más claro presentar una relación por vez: "도시가 클수록 생활비가 비싸고, 생활비가 비쌀수록 살기 힘들어요".',
+        'También puede repetirse la base para dar énfasis: "보면 볼수록 재미있어요" (cuanto más lo veo, más interesante resulta).',
       ],
     },
   ],
@@ -88,8 +88,8 @@ const topic: GrammarTopic = {
     scene: [
       ['많을수록 좋아요.', 'Cuanto más, mejor.'],
       ['공부할수록 알 수 있어요.', 'Cuanto más estudio, más entiendo.'],
-      ['클수록 비쌀수록 산다.', 'Cuanto más grande, más caro, más difícil vivir.'],
-      ['못 잘수록 피곤해요.', 'Cuanto menos duermes, más cansado.'],
+      ['도시가 클수록 생활비가 더 비싸요.', 'Cuanto más grande es la ciudad, más caro es vivir.'],
+      ['잠을 적게 잘수록 더 피곤해요.', 'Cuanto menos duermes, más cansado estás.'],
       ['나이가 들수록 지혜가 생겨요.', 'Cuanto más envejeces, más sabiduría adquieres.'],
       ['돈이 많을수록 행복할까요?', '¿Cuanto más dinero, más feliz?'],
     ],
@@ -102,7 +102,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Forma -ㄹ수록',
-        tag: 'Múltipla escolha',
+        tag: 'Opción múltiple',
         intro: 'Selecciona la forma correcta.',
         type: 'choice',
         items: [
@@ -147,13 +147,13 @@ const topic: GrammarTopic = {
         blanks: [
           { answer: '많이 일할수록 피곤해요', accepted: ['할수록', '피곤'], explain: '-ㄹ수록 con trabajo.' },
           { answer: '아이가 클수록 똑똑해요', accepted: ['수록', '크다'], explain: '-ㄹ수록 con edad/tamaño.' },
-          { answer: '못 잘수록 피곤해요', accepted: ['수록', '못'], explain: '-ㄹ수록 con negación (inverso).' },
+          { answer: '잠을 적게 잘수록 더 피곤해요', accepted: ['수록', '적게'], explain: '-ㄹ수록 con una cantidad reducida.' },
         ],
       },
       {
         id: 'level-4',
-        title: 'Análise de proporciones',
-        tag: 'Análise',
+        title: 'Análisis de proporciones',
+        tag: 'Análisis',
         intro: 'Explica la proporcionalidad en contexto.',
         type: 'write',
         items: [

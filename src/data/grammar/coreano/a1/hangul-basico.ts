@@ -177,7 +177,7 @@ const topic: GrammarTopic = {
           { options: ['neo', 'no', 'nu', 'ni'], answer: 'neo', explain: '너 = ㄴ+ㅓ = neo (vocal eo).' },
           { options: ['uri', 'uli', 'ugi', 'ubi'], answer: 'uri', explain: '우리 = ㅜ+ㄹ+ㅣ = u-ri = uri.' },
           { options: ['ireum', 'irum', 'ileum', 'ilum'], answer: 'ireum', explain: '이름 = 이(i)+름(reum) = ireum.' },
-          { options: ['Hanguk', 'Hangug', 'Hangul', 'Hangug'], answer: 'Hanguk', explain: '한국 = 한(han)+국(guk) = Hanguk.' },
+          { options: ['Hanguk', 'Hangug', 'Hangul', 'Hangun'], answer: 'Hanguk', explain: '한국 = 한(han)+국(guk) = Hanguk.' },
           { options: ['mul', 'mol', 'mal', 'mel'], answer: 'mul', explain: '물 = ㅁ+ㅜ+ㄹ = mul.' },
           { options: ['bap', 'bab', 'bam', 'ban'], answer: 'bap', explain: '밥 = ㅂ+ㅏ+ㅂ = bap (b final suena más como p).' },
         ],

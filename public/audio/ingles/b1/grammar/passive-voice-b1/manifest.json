@@ -1,0 +1,61 @@
+{
+  "status": "production",
+  "engine": "Chatterbox Multilingual V3",
+  "voice": {
+    "language": "en",
+    "profile": "adult female, clear native English, classroom pacing",
+    "reference_source": "public/audio/historias/ingles/the-interpreter/b.mp3",
+    "reference_segments_seconds": [
+      [
+        0.25,
+        4.5
+      ],
+      [
+        6.0,
+        10.0
+      ]
+    ]
+  },
+  "settings": {
+    "language_id": "en",
+    "t3_model": "v3",
+    "exaggeration": 0.32,
+    "cfg_weight": 0.38,
+    "temperature": 0.66,
+    "repetition_penalty": 1.25,
+    "min_p": 0.05,
+    "top_p": 0.95,
+    "target_lufs": -18.0,
+    "true_peak_ceiling_dbfs": -2.2,
+    "encoding_peak_safety_margin_db": 0.5,
+    "output_sample_rate": 44100,
+    "delivery_bitrate": 128000
+  },
+  "codec": "AAC in M4A, mono, 44.1 kHz, 128 kbps",
+  "tracks": [
+    {
+      "id": "modelo-estructura",
+      "title": "Modelo y estructura",
+      "text": "This cathedral was built in the 15th century.",
+      "translation": "El inglés se habla en más de 80 países.",
+      "file": "modelo-estructura.m4a",
+      "bytes": 47992
+    },
+    {
+      "id": "contraste-guiado",
+      "title": "Contraste guiado",
+      "text": "This device should be stored in a dry, cool place.",
+      "translation": "El informe fue entregado ayer por la mañana.",
+      "file": "contraste-guiado.m4a",
+      "bytes": 56935
+    },
+    {
+      "id": "practica-contexto",
+      "title": "Práctica en contexto",
+      "text": "Are credit cards accepted in this shop?",
+      "translation": "Se está construyendo un nuevo hospital cerca del centro.",
+      "file": "practica-contexto.m4a",
+      "bytes": 38348
+    }
+  ]
+}

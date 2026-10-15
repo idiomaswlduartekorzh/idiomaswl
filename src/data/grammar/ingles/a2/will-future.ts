@@ -189,7 +189,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Error a detectar',
-            lines: [['', 'She ___ works late tonight.']],
+            lines: [['', 'She ___ work late tonight.']],
             options: ['will', 'won\'t', 'wills', 'will be'],
             answer: 'will',
             explain: '"Will" nunca lleva -s. "She will work" es correcto; "she wills work" es incorrecto.',

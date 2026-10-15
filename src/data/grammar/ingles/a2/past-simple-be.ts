@@ -274,6 +274,7 @@ const topic: GrammarTopic = {
           { answer: 'was', accepted: ['was'], explain: '"The school" = singular → "was".' },
           { answer: 'was', accepted: ['was'], explain: '"I" → "was".' },
           { answer: 'weren\'t', accepted: ["weren't", 'were not'], explain: 'Negativo plural → "weren\'t".' },
+          { answer: 'were', accepted: ['were'], explain: '"They" → "were".' },
         ],
       },
       {

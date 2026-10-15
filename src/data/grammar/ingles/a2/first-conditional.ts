@@ -269,6 +269,7 @@ const topic: GrammarTopic = {
           { answer: '\'ll feel', accepted: ["'ll feel", 'will feel'], explain: '"I\'ll feel healthier" → resultado con will.' },
           { answer: 'eat', accepted: ['eat'], explain: '"If I eat" → presente simple.' },
           { answer: 'study', accepted: ['study'], explain: '"If I study" → presente simple.' },
+          { answer: '\'ll improve', accepted: ["'ll improve", 'will improve'], explain: '"My level will improve" → resultado con will.' },
         ],
       },
       {

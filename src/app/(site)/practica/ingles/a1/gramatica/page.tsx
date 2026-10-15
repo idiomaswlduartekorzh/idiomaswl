@@ -3,8 +3,9 @@ import Link from 'next/link'
 import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
 import { getTopicsByLevel } from '@/data/grammar/registry'
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
+import EnglishGrammarIndexCta from '@/components/grammar/EnglishGrammarIndexCta'
 
-export const metadata: Metadata = generateGrammarIndexMetadata('ingles', 'a1')
+export const metadata: Metadata = generateGrammarIndexMetadata('ingles', 'a1', 27)
 
 const IDIOMA = 'ingles'
 const NIVEL = 'a1'
@@ -55,6 +56,7 @@ export default function GrammarIndexPage() {
                       <span style={{ fontSize: '0.67rem', fontFamily: 'var(--mono)', fontWeight: 800, color: topic.color, textTransform: 'uppercase', letterSpacing: '0.04em', borderRadius: 999, border: `1px solid ${topic.color}44`, padding: '0.12rem 0.38rem', background: `${topic.color}10` }}>{topic.category}</span>
                     </div>
                     <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.86rem', lineHeight: 1.5 }}>{topic.lead}</p>
+                    <small style={{ display: 'block', marginTop: '0.35rem', color: topic.color, fontWeight: 800 }}>Audio nativo · PDF · 6 niveles</small>
                   </div>
                   <span style={{ flexShrink: 0, color: topic.color, fontSize: '1.2rem', fontWeight: 700 }}>→</span>
                 </div>
@@ -64,6 +66,8 @@ export default function GrammarIndexPage() {
               <div style={{ padding: '3rem', textAlign: 'center', color: 'var(--muted)', fontSize: '0.95rem', border: '1.5px solid var(--line-soft)', borderRadius: 16 }}>Próximamente: temas de gramática A1.</div>
             )}
           </div>
+
+          <EnglishGrammarIndexCta level={NIVEL} topicCount={topics.length} />
 
           <div style={{ paddingBottom: '2rem' }}>
             <Link href="/practica/ingles/a1" style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.82rem', textDecoration: 'none' }}>← Volver a Inglés A1</Link>
