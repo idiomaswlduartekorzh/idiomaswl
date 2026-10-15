@@ -40,6 +40,7 @@
     "audio:korean-grammar:validate": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/chatterbox-engine/.venv/bin/python scripts/validate-korean-grammar-audio.py",
     "check:english-grammar": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/check-english-grammar.mjs",
     "pdf:english-grammar": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/export-english-grammar-data.mjs && python3 scripts/generate-english-grammar-pdfs.py",
+    "resources:english": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/export-english-reference-resources.mjs && python3 scripts/generate-english-reference-resources.py",
     "audio:english-grammar:export": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/export-english-grammar-audio-data.mjs",
     "audio:english-grammar": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/export-english-grammar-audio-data.mjs && /Users/ddev/Documents/Codex/2026-10-02/pu/work/chatterbox-engine/.venv/bin/python scripts/generate-english-grammar-audio.py",
     "audio:english-grammar:validate": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/chatterbox-engine/.venv/bin/python scripts/validate-english-grammar-audio.py",

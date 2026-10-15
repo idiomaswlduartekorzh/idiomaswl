@@ -10,6 +10,7 @@ export default function EnglishGrammarIndexCta({ level, topicCount }: { level: s
       </div>
       <div>
         <Link href="/nivel-radar" data-english-cta="index-level-test">Descubrir mi nivel gratis</Link>
+        <Link href="/practica/ingles/recursos" data-english-cta="index-resources">PDFs y listas gratis</Link>
         <Link href="/clases-de-ingles" data-english-cta="index-classes">Ver clases de inglés</Link>
       </div>
     </aside>
