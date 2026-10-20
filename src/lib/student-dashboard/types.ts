@@ -12,7 +12,9 @@ export type StudentAttempt = Readonly<{
   score: number | null;
   scoreLabel: string;
   reportHref: string;
+  reportAvailable: boolean;
   feedbackState: 'not-included' | 'available' | 'processing' | 'delivered' | 'failed';
+  humanReviewState?: 'not-included' | 'available' | 'pending' | 'assigned' | 'completed' | 'declined';
   teacherFeedback?: Readonly<{ summary: string; strengths: string; improvements: string; nextSteps: string }> | null;
   skills: readonly StudentSkillScore[];
 }>;
@@ -82,7 +84,7 @@ export type StudentAccess = Readonly<{
   exam: StudentExamWorkspace | null;
   startsAt: string | null;
   endsAt: string | null;
-  singleAttemptAvailable: boolean;
+  source: 'autodidacta-free' | 'xpress-membership' | 'welearn' | 'legacy' | 'none';
 }>;
 
 export type StudentSubscription = Readonly<{
@@ -97,7 +99,9 @@ export type StudentDashboardData = Readonly<{
   name: string;
   email: string;
   access: StudentAccess;
+  accesses: readonly StudentAccess[];
   subscription: StudentSubscription | null;
+  subscriptions: readonly (StudentSubscription & { examSlug: string })[];
   attempts: readonly StudentAttempt[];
   courses: readonly StudentCourse[];
   courseProgress: StudentCourseProgress;

@@ -12,8 +12,8 @@ export function studentDashboardPreview(product: StudentPreviewKind): StudentDas
     const activityDates = ['2026-09-12', '2026-09-11', '2026-09-10', '2026-09-08', '2026-09-05'];
     return {
       name: 'Mariana López', email: 'mariana@ejemplo.com', dataAvailable: true,
-      access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, singleAttemptAvailable: false },
-      subscription: null, attempts: [],
+      access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, source: 'none' },
+      accesses: [], subscription: null, subscriptions: [], attempts: [],
       courses: [{ id: '00000000-0000-4000-8000-000000000005', language: 'ingles', objective: 'Idioma general', plan: 'constancia', classes: 8, sessions: 16, purchasedAt: NOW }],
       courseProgress: { completedActivities: 12, lastCompletedAt: '2026-09-11T20:00:00.000Z' },
       assignments: [
@@ -23,23 +23,25 @@ export function studentDashboardPreview(product: StudentPreviewKind): StudentDas
       progress: buildStudentProgress([], null, activityDates, new Date('2026-09-12T18:00:00.000Z')),
     };
   }
-  const examSlug = product === 'single' ? 'toefl' : product === 'automatic' ? 'goethe' : 'ielts';
+  const examSlug = product === 'free' ? 'toefl' : product === 'automatic' ? 'goethe' : product === 'essential' ? 'cambridge-b2' : 'ielts';
   const exam = getStudentExamWorkspace(examSlug)!;
-  const attempts: StudentAttempt[] = product === 'single' ? [{
+  const attempts: StudentAttempt[] = product === 'free' ? [{
     id: '00000000-0000-4000-8000-000000000001', examSlug: exam.slug, examName: exam.name, examFlag: exam.flag, examHubHref: exam.hubHref,
     mockId: 'set-1', title: `${exam.name} · Simulacro 1`,
-    createdAt: NOW, score: 76, scoreLabel: '76%', reportHref: '#reporte', feedbackState: 'not-included' as const,
-    skills: [{ name: 'Reading', score: 8, maximum: 10, percentage: 80 }, { name: 'Listening', score: 7, maximum: 10, percentage: 70 }],
+    createdAt: NOW, score: 76, scoreLabel: '76%', reportHref: exam.hubHref, reportAvailable: false, feedbackState: 'not-included' as const,
+    skills: [],
   }] : [
-    { id: '00000000-0000-4000-8000-000000000002', examSlug: exam.slug, examName: exam.name, examFlag: exam.flag, examHubHref: exam.hubHref, mockId: exam.mocks[0]?.id ?? null, title: exam.mocks[0]?.title ?? 'Simulacro 1', createdAt: '2026-09-11T18:00:00.000Z', score: 82, scoreLabel: '82%', reportHref: '#reporte', feedbackState: product === 'personalized' ? 'delivered' as const : 'not-included' as const, skills: [{ name: 'Reading', score: 86, maximum: 100, percentage: 86 }, { name: 'Listening', score: 81, maximum: 100, percentage: 81 }, { name: 'Writing', score: 72, maximum: 100, percentage: 72 }, { name: 'Speaking', score: 78, maximum: 100, percentage: 78 }] },
-    { id: '00000000-0000-4000-8000-000000000003', examSlug: exam.slug, examName: exam.name, examFlag: exam.flag, examHubHref: exam.hubHref, mockId: exam.mocks[1]?.id ?? null, title: exam.mocks[1]?.title ?? 'Simulacro 2', createdAt: '2026-09-08T18:00:00.000Z', score: 68, scoreLabel: '68%', reportHref: '#reporte', feedbackState: product === 'personalized' ? 'processing' as const : 'not-included' as const, skills: [{ name: 'Reading', score: 70, maximum: 100, percentage: 70 }, { name: 'Listening', score: 72, maximum: 100, percentage: 72 }, { name: 'Writing', score: 60, maximum: 100, percentage: 60 }, { name: 'Speaking', score: 66, maximum: 100, percentage: 66 }] },
+    { id: '00000000-0000-4000-8000-000000000002', examSlug: exam.slug, examName: exam.name, examFlag: exam.flag, examHubHref: exam.hubHref, mockId: exam.mocks[0]?.id ?? null, title: exam.mocks[0]?.title ?? 'Simulacro 1', createdAt: '2026-09-11T18:00:00.000Z', score: 82, scoreLabel: '82%', reportHref: '#reporte', reportAvailable: true, feedbackState: product === 'personalized' ? 'delivered' as const : 'not-included' as const, skills: [{ name: 'Reading', score: 86, maximum: 100, percentage: 86 }, { name: 'Listening', score: 81, maximum: 100, percentage: 81 }, { name: 'Writing', score: 72, maximum: 100, percentage: 72 }, { name: 'Speaking', score: 78, maximum: 100, percentage: 78 }] },
+    { id: '00000000-0000-4000-8000-000000000003', examSlug: exam.slug, examName: exam.name, examFlag: exam.flag, examHubHref: exam.hubHref, mockId: exam.mocks[1]?.id ?? null, title: exam.mocks[1]?.title ?? 'Simulacro 2', createdAt: '2026-09-08T18:00:00.000Z', score: 68, scoreLabel: '68%', reportHref: '#reporte', reportAvailable: true, feedbackState: product === 'personalized' ? 'processing' as const : 'not-included' as const, skills: [{ name: 'Reading', score: 70, maximum: 100, percentage: 70 }, { name: 'Listening', score: 72, maximum: 100, percentage: 72 }, { name: 'Writing', score: 60, maximum: 100, percentage: 60 }, { name: 'Speaking', score: 66, maximum: 100, percentage: 66 }] },
   ];
   const activityDates = ['2026-09-12', '2026-09-11', '2026-09-10', '2026-09-08', '2026-09-05'];
   const courses = product === 'personalized' ? [{ id: '00000000-0000-4000-8000-000000000005', language: 'ingles', objective: 'IELTS Academic', plan: 'esencial', classes: 4, sessions: 8, purchasedAt: NOW }] : [];
   return {
     name: 'Mariana López', email: 'mariana@ejemplo.com', dataAvailable: true,
-    access: { state: product === 'single' ? 'consumed' : 'active', product, exam, startsAt: NOW, endsAt: product === 'single' ? null : END, singleAttemptAvailable: false },
-    subscription: product === 'single' ? null : { id: '00000000-0000-4000-8000-000000000004', status: 'active', nextChargeAt: END, periodEndsAt: END, cancelRequestedAt: null },
+    access: { state: 'active', product, exam, startsAt: NOW, endsAt: product === 'free' || product === 'welearn' ? null : END, source: product === 'free' ? 'autodidacta-free' : product === 'welearn' ? 'welearn' : 'xpress-membership' },
+    accesses: [{ state: 'active', product, exam, startsAt: NOW, endsAt: product === 'free' || product === 'welearn' ? null : END, source: product === 'free' ? 'autodidacta-free' : product === 'welearn' ? 'welearn' : 'xpress-membership' }],
+    subscription: product === 'free' || product === 'welearn' ? null : { id: '00000000-0000-4000-8000-000000000004', status: 'active', nextChargeAt: END, periodEndsAt: END, cancelRequestedAt: null },
+    subscriptions: product === 'free' || product === 'welearn' ? [] : [{ id: '00000000-0000-4000-8000-000000000004', status: 'active', nextChargeAt: END, periodEndsAt: END, cancelRequestedAt: null, examSlug: exam.slug }],
     attempts,
     courses,
     courseProgress: { completedActivities: courses.length ? 4 : 0, lastCompletedAt: courses.length ? NOW : null },

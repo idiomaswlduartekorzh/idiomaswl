@@ -57,8 +57,8 @@ export default function ExamPracticeDownloads({ examSlug, mockId }: Props) {
             <h3>{card.title}</h3>
             <p>{card.body}</p>
             <div className={styles.actions}>
-              <a href={card.href} target="_blank" rel="noreferrer">{copy.open} ↗</a>
-              <a href={card.href} download>{copy.download}</a>
+              <a href={card.href} target="_blank" rel="noreferrer" data-exam-download="true">{copy.open} ↗</a>
+              <a href={`${card.href}?download=1`} download data-exam-download="true">{copy.download}</a>
             </div>
           </article>
         ))}

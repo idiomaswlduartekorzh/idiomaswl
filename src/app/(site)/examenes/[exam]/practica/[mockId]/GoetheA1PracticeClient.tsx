@@ -790,8 +790,8 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
     reading: formatGoetheModule(readingCorrect),
     writing: formatGoetheModule(writingRaw),
   };
-  const rawTotal = receipt?.automatic.automaticRaw ?? (listeningCorrect + readingCorrect + formCorrect);
-  const totalScore = resultStatus?.status === 'reviewed' ? resultStatus.totalScore ?? 0 : receipt?.automatic.automaticScaled ?? 0;
+  const rawTotal = receipt?.automatic?.automaticRaw ?? (listeningCorrect + readingCorrect + formCorrect);
+  const totalScore = resultStatus?.status === 'reviewed' ? resultStatus.totalScore ?? 0 : receipt?.automatic?.automaticScaled ?? receipt?.totalScore ?? 0;
   const objectiveAnswered = [...listeningQuestions, ...readingQuestions].filter(question => answers[question.id] !== undefined).length;
   const listeningMissing = listeningQuestions.filter(question => answers[question.id] === undefined).length;
   const readingMissing = readingQuestions.filter(question => answers[question.id] === undefined).length;
@@ -823,7 +823,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   const nextPractice = practiceSkill ? nextGoethePractice(mock.id, practiceSkill, practicePart) : undefined;
 
   useEffect(() => {
-    if (phase !== 'results' || !receipt || resultStatus?.status === 'reviewed') return
+    if (phase !== 'results' || !receipt || !resultAccess.unlocked || resultStatus?.status === 'reviewed') return
     let cancelled = false
     async function refreshResult() {
       try {
@@ -836,7 +836,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
     void refreshResult()
     const interval = window.setInterval(refreshResult, 15_000)
     return () => { cancelled = true; window.clearInterval(interval) }
-  }, [mock.id, phase, receipt, resultStatus?.status]);
+  }, [mock.id, phase, receipt, resultAccess.unlocked, resultStatus?.status]);
 
   function advanceExam() {
     if (practiceSkill) {
@@ -870,7 +870,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
               <div className={styles.moduleGrid}>{visibleSkills.map(skill => <article key={skill.id}><div><strong>{skill.label}{practiceTeil ? ` · Teil ${practiceTeil.teil}` : ''}</strong><small>{practiceTeil?.title ?? `${skill.minutes} Minuten`}</small></div><span>{practiceTeil ? `${practiceTeil.minutes} min` : `${skill.points} P.`}</span></article>)}</div>
               <div className={styles.introNotice}><strong>Antes de empezar</strong><p>{practiceSkill ? practiceGuidance : 'El audio solo puede iniciarse una vez por parte. Las repeticiones reglamentarias ya están incluidas dentro de cada pista.'}</p></div>
-              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>{practiceSkill ? 'Empezar práctica' : 'Empezar examen'}</button><PdfDownloadButton generate={downloadWorksheet} label={practiceSkill ? practicePdfLabel : 'Descargar hoja de práctica en PDF'} />{practiceSkill && practicePart ? <PdfDownloadButton generate={downloadSkillWorksheet(practiceSkill)} label={`Descargar ${activeSkillMeta.label} completo`} /> : null}</div>
+              <div className={styles.introActions}><button data-exam-start="true" className={styles.primary} onClick={() => setPhase('exam')}>{practiceSkill ? 'Empezar práctica' : 'Empezar examen'}</button><PdfDownloadButton generate={downloadWorksheet} label={practiceSkill ? practicePdfLabel : 'Descargar hoja de práctica en PDF'} />{practiceSkill && practicePart ? <PdfDownloadButton generate={downloadSkillWorksheet(practiceSkill)} label={`Descargar ${activeSkillMeta.label} completo`} /> : null}</div>
               {!practiceSkill && <div className="exam-pdf-options" aria-label="Hojas PDF por destreza">{(['listening', 'reading', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill === 'listening' ? 'Hören' : skill === 'reading' ? 'Lesen' : skill === 'writing' ? 'Schreiben' : 'Sprechen'} PDF`} compact />)}</div>}
               <p className={styles.disclaimer}>Contenido original de WeLearn alineado con la arquitectura pública A1. No es un examen oficial ni está afiliado al Goethe-Institut.</p>
               <Link className={styles.backLink} href={practiceSkill ? `/practica/goethe/${practiceSkill}` : `/examenes/${exam.slug}`}>← Volver a Goethe</Link>
@@ -915,7 +915,9 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               formMissing={formMissing}
               onBack={() => { setPhase('exam'); setActiveSkill('speaking'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               onSuccess={async (nextReceipt, access, leadReceipt) => {
-                const fullMock = await unlockExamMock({ examSlug: 'goethe', mockId: mock.id, receipt: leadReceipt });
+                const fullMock = access.unlocked
+                  ? await unlockExamMock({ examSlug: 'goethe', mockId: mock.id, receipt: leadReceipt })
+                  : null;
                 setGradedMock(fullMock); setReceipt(nextReceipt); setResultStatus(null); setResultAccess(access); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             />
@@ -927,8 +929,8 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
             examSlug="goethe"
             examName={exam.name}
             attemptRef={receipt.submissionId}
-            score={`${rawTotal}/60`}
-            scoreLabel="puntos brutos"
+            score={`${receipt.totalScore}/100`}
+            scoreLabel="puntaje automático total"
             initialCodeMessage={resultAccess.message}
             fullResult={null}
             onRetry={restart}

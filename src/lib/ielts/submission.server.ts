@@ -182,6 +182,21 @@ function clientIp(request: Request): string {
     || 'unknown';
 }
 
+function ieltsBasicScore(value: unknown): string {
+  if (!Array.isArray(value)) return 'Resultado guardado';
+  let correct = 0;
+  let total = 0;
+  for (const row of value) {
+    if (!row || typeof row !== 'object') continue;
+    const raw = (row as { raw?: unknown }).raw;
+    const match = typeof raw === 'string' ? raw.match(/^(\d+)\/(\d+)\s+correct$/) : null;
+    if (!match) continue;
+    correct += Number(match[1]);
+    total += Number(match[2]);
+  }
+  return total > 0 ? `${correct}/${total}` : 'Resultado guardado';
+}
+
 async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
   if (!await hasExamScoreAccess('ielts', request)) return Response.json({ ok: false, error: 'Registra tus datos antes de enviar el examen.' }, { status: 403 });
   const blueprint = getIeltsReviewBlueprint(mockId);
@@ -310,7 +325,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   const admin = createAdminClient();
   const { data: submission, error: readError } = await admin
     .from('exam_submissions')
-    .select('id, user_id, speaking_audio_paths, speaking_audio_metadata, submission_status')
+    .select('id, user_id, skills, speaking_audio_paths, speaking_audio_metadata, submission_status')
     .eq('id', submissionId)
     .eq('exam_slug', 'ielts')
     .eq('mock_id', mockId)
@@ -320,10 +335,10 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   if (submission.submission_status === 'submitted') {
     const xpressAccess = submission.user_id
       ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId })
-      : { access: 'public' as const, personalizedFeedback: false };
-    const reviewMock = await loadIeltsMock(mockId);
-    if (!reviewMock) return jsonError('No pudimos cargar la revisión del simulacro.', 500);
-    return Response.json({ ok: true, submissionId, reviewMock, xpressAccess: xpressAccess.access });
+      : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
+    const reviewMock = xpressAccess.detailedResults ? await loadIeltsMock(mockId) : null;
+    if (xpressAccess.detailedResults && !reviewMock) return jsonError('No pudimos cargar la revisión del simulacro.', 500);
+    return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: xpressAccess.access });
   }
 
   const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
@@ -352,10 +367,10 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
   const xpressAccess = submission.user_id
     ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId })
-    : { access: 'public' as const, personalizedFeedback: false };
-  const reviewMock = await loadIeltsMock(mockId);
-  if (!reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 500);
-  return Response.json({ ok: true, submissionId, reviewMock, xpressAccess: xpressAccess.access });
+    : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
+  const reviewMock = xpressAccess.detailedResults ? await loadIeltsMock(mockId) : null;
+  if (xpressAccess.detailedResults && !reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 500);
+  return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: xpressAccess.access });
 }
 
 export async function handleIeltsSubmissionRequest(request: Request, mockId: string): Promise<Response> {

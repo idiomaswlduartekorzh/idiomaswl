@@ -5,14 +5,14 @@ import { getIeltsObjectiveAllowedKeys } from '@/lib/ielts/listening-practice-con
 import { scoreIeltsReadingPracticeAttempt } from '@/lib/ielts/reading-practice-contract';
 import { getIeltsReviewBlueprint } from '@/lib/ielts/review-blueprint';
 import { consumeIeltsRateLimit } from '@/lib/ielts/rate-limit.server';
-import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
+import { hasDetailedExamResultsAccess } from '@/lib/exams/score-access.server';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
 }
 
 export async function POST(request: Request) {
-  if (!await hasExamScoreAccess('ielts', request)) return Response.json({ error: 'lead_required' }, { status: 403 });
+  if (!await hasDetailedExamResultsAccess('ielts')) return Response.json({ error: 'detailed_results_required' }, { status: 403 });
   try {
     if (Number(request.headers.get('content-length') ?? 0) > 24_000) {
       return Response.json({ error: 'invalid_ielts_reading_score_request' }, { status: 413 });

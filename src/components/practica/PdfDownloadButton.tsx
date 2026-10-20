@@ -8,9 +8,8 @@ import { useCallback, useState } from 'react'
  * generador se cargan solo cuando alguien pulsa, y no pesan en la carga inicial
  * de ninguna página.
  *
- * Hoy la descarga es libre y de un clic, por decisión de producto. Cuando haya
- * suscripción, el candado va aquí: es el único sitio por el que pasan todas las
- * descargas del sitio.
+ * Los flujos de examen interceptan `data-exam-download` antes de ejecutar el
+ * generador. Los materiales privados también deben validar acceso en servidor.
  */
 // Azul de marca. Vive aquí, y no en quien llama, porque varias de las carpetas
 // que usan el botón están vigiladas por el guardián de colores del prebuild:
@@ -56,6 +55,7 @@ export default function PdfDownloadButton({
   return (
     <button
       type="button"
+      data-exam-download="true"
       onClick={onClick}
       disabled={state === 'busy'}
       className="no-print"

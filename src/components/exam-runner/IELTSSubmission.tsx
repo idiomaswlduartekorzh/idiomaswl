@@ -30,7 +30,7 @@ interface Props {
   speakingPrompts: IeltsSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string, reviewMock: MockExam, access: ExamAccessOutcome) => void;
+  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string, reviewMock: MockExam | null, basicScore: string, access: ExamAccessOutcome) => void;
 }
 
 type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking';
@@ -200,13 +200,15 @@ export function IELTSSubmission({
           audio_count: recordedEntries.length,
         });
       } catch {}
-      if (!completed.reviewMock || completed.reviewMock.id !== mockId) throw new Error('La revisión del servidor no llegó completa. Inténtalo otra vez.');
       let access: ExamAccessOutcome = { unlocked: completed.xpressAccess !== 'public' };
+      if (access.unlocked && (!completed.reviewMock || completed.reviewMock.id !== mockId)) {
+        throw new Error('La revisión del servidor no llegó completa. Inténtalo otra vez.');
+      }
       if (!access.unlocked && accessCode.trim()) {
         setState('unlocking');
         access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'ielts', attemptRef: prepared.submissionId });
       }
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName, completed.reviewMock, access);
+      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName, completed.reviewMock, completed.basicScore, access);
     } catch (caught) {
       setState('idle');
       showError(errorMessage(caught));

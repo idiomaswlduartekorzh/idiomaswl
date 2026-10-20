@@ -27,7 +27,7 @@ require.extensions['.ts'] = (module, filename) => {
 const { getMock, getRegisteredMockKeys } = require('../src/data/mocks/index.ts');
 const { getAnswerKeyCatalog, auditMockKey } = require('../src/lib/exams/answer-key-catalog.ts');
 const { acceptsExamAnswer } = require('../src/lib/exams/accepted-answer.ts');
-const { getExamTranscriptResource } = require('../src/lib/exams/transcript-resource.ts');
+const { getExamTranscriptResource, getPrivateExamMaterial } = require('../src/lib/exams/transcript-resource.ts');
 
 const catalog = getAnswerKeyCatalog();
 assert.deepEqual(new Set(catalog.map(item => item.key)), new Set(getRegisteredMockKeys()));
@@ -43,14 +43,16 @@ const transcriptResources = catalog
 assert.equal(transcriptResources.length, 57, 'The transcript library must cover 57 published sets.');
 assert.equal(new Set(transcriptResources.map(({ resource }) => resource.href)).size, 57, 'Transcript PDF routes must be unique.');
 assert.equal(new Set(transcriptResources.map(({ resource }) => resource.answerKeyHref)).size, 57, 'Answer-key PDF routes must be unique.');
-for (const { item, resource } of transcriptResources) {
-  for (const [kind, href] of [['transcript', resource.href], ['answer key', resource.answerKeyHref]]) {
-    const pdfPath = path.join(root, 'public', href.slice(1));
-    assert(fs.existsSync(pdfPath), `${item.key} ${kind} is missing: ${href}`);
-    const descriptor = fs.openSync(pdfPath, 'r');
+for (const { item } of transcriptResources) {
+  for (const [kind, materialKind] of [['transcript', 'transcript'], ['answer key', 'answer-key']]) {
+    const descriptor = getPrivateExamMaterial(item.examSlug, item.mockId, materialKind);
+    assert(descriptor, `${item.key} ${kind} has no private descriptor`);
+    const pdfPath = path.join(root, 'private', 'exam-materials', descriptor.relativePath);
+    assert(fs.existsSync(pdfPath), `${item.key} ${kind} is missing: ${descriptor.relativePath}`);
+    const fileDescriptor = fs.openSync(pdfPath, 'r');
     const signature = Buffer.alloc(4);
-    fs.readSync(descriptor, signature, 0, signature.length, 0);
-    fs.closeSync(descriptor);
+    fs.readSync(fileDescriptor, signature, 0, signature.length, 0);
+    fs.closeSync(fileDescriptor);
     assert.equal(signature.toString(), '%PDF', `${item.key} ${kind} is not a valid PDF`);
     assert(fs.statSync(pdfPath).size > 10_000, `${item.key} ${kind} PDF is unexpectedly small`);
   }

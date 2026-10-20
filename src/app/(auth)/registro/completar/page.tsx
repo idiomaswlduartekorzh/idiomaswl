@@ -5,6 +5,7 @@ import {
   registrationIntentMetadata,
 } from '@/lib/student-onboarding/catalog';
 import { createClient } from '@/lib/supabase/server';
+import { claimFreeExamAccess } from '@/lib/xpress-commerce/access.server';
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
@@ -34,6 +35,14 @@ export default async function CompleteRegistrationPage({ searchParams }: { searc
     .eq('id', user.id);
 
   if (error) redirect('/registro?error=guardar');
+  if (intent.path === 'exam' && intent.plan === 'exam-free') {
+    try {
+      await claimFreeExamAccess(user.id, intent.exam);
+    } catch (claimError) {
+      const code = claimError instanceof Error ? claimError.message : 'free_exam_claim_failed';
+      redirect(`/dashboard/student?error=${encodeURIComponent(code)}`);
+    }
+  }
   const returnValue = typeof params.return === 'string' ? params.return : null;
   redirect(safeCourseReturnPath(returnValue));
 }

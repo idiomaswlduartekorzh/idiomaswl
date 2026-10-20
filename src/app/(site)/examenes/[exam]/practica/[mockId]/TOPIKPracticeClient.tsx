@@ -246,6 +246,7 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
               </ul>
             </div>
             <button
+              data-exam-start="true"
               onClick={() => { setActivePart(0); setPhase('quiz'); }}
               className="btn"
               style={{ fontSize: '1.05rem', padding: '0.9rem 2.5rem' }}

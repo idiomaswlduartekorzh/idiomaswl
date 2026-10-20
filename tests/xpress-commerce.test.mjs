@@ -16,22 +16,22 @@ import { parseXpressOrderInput, parseXpressProviderPayment, parseXpressSubscript
 import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
 import { buildXpressRecurringTransaction } from '../src/lib/xpress-commerce/recurring.ts';
 
-test('publishes one exam purchase and two memberships in COP cents', () => {
+test('publishes the three paid per-exam subscriptions in COP cents', () => {
   assert.deepEqual(XPRESS_OFFERS.map(({ id, amountInCents }) => [id, amountInCents]), [
-    ['exam-single', 1_290_000],
+    ['exam-basic', 1_590_000],
     ['exam-auto', 4_990_000],
     ['exam-teacher', 9_990_000],
   ]);
-  assert.equal(XPRESS_OFFERS[2].name, 'Exámenes + feedback personalizado');
-  assert.equal(XPRESS_OFFERS[0].billing, 'single-exam');
-  assert.deepEqual(XPRESS_OFFERS.slice(1).map((offer) => offer.billing), ['recurring-30-days', 'recurring-30-days']);
+  assert.equal(XPRESS_OFFERS[2].name, 'Autodidacta Pro');
+  assert.deepEqual(XPRESS_OFFERS.map((offer) => offer.billing), ['recurring-30-days', 'recurring-30-days', 'recurring-30-days']);
+  assert.ok(XPRESS_OFFERS.every((offer) => offer.entitlementScope === 'exam'));
 });
 
-test('the paid tutor promise matches the human 24-hour review workflow', () => {
+test('the human review promises match the approved plan rules', () => {
   const correctionTerms = XPRESS_TERMS.find((section) => section.title === 'Correcciones')?.text ?? '';
-  assert.match(correctionTerms, /tutor de WeLearn/);
-  assert.match(correctionTerms, /24 horas/);
-  assert.doesNotMatch(correctionTerms, /No es una revisión humana/);
+  assert.match(correctionTerms, /5 revisiones humanas/);
+  assert.match(correctionTerms, /plan de mejora personalizado/);
+  assert.doesNotMatch(correctionTerms, /12\.900/);
 });
 
 test('accepts recurring consent and only Wompi card tokens for memberships', () => {
@@ -46,6 +46,8 @@ test('accepts recurring consent and only Wompi card tokens for memberships', () 
   form.set('payment_source_token', 'tok_test_1234567890');
   form.set('payment_source_type', 'CARD');
   assert.equal(parseXpressSubscriptionForm(form)?.offerId, 'exam-auto');
+  form.set('offer_id', 'exam-basic');
+  assert.equal(parseXpressSubscriptionForm(form)?.offerId, 'exam-basic');
   form.set('offer_id', 'exam-single');
   assert.equal(parseXpressSubscriptionForm(form), null);
   form.set('offer_id', 'exam-auto');
@@ -84,15 +86,15 @@ test('opens the existing class checkout with the exam objective preselected', ()
   assert.match(xpressClassPurchasePath('ielts', { plan: 'impulso', startAtRules: true }), /plan=impulso.*paso=reglamento/);
 });
 
-test('accepts only versioned Xpress orders and strict Wompi transactions', () => {
+test('retires new one-time Xpress orders and accepts strict Wompi transactions', () => {
   const input = {
     idempotencyKey: '12345678-1234-4234-8234-123456789012',
     examSlug: 'ielts',
-    offerId: 'exam-auto',
+    offerId: 'exam-single',
     acceptedTerms: XPRESS_TERMS_VERSION,
     acceptedPrivacy: XPRESS_PRIVACY_VERSION,
   };
-  assert.deepEqual(parseXpressOrderInput(input), input);
+  assert.equal(parseXpressOrderInput(input), null);
   assert.equal(parseXpressOrderInput({ ...input, offerId: 'inventado' }), null);
   assert.equal(parseXpressOrderInput({ ...input, acceptedTerms: 'viejos' }), null);
   const payment = { id: 'transaction-1', reference: 'WX-12345678-1234-4234-8234-123456789012', amount_in_cents: 4_900_000, currency: 'COP', status: 'APPROVED' };
@@ -111,12 +113,11 @@ test('an active membership cannot charge twice for the same exam', () => {
   assert.equal(quote.amountInCents, 0);
 });
 
-test('a single self-study exam charges COP 12,900 and creates no membership period', () => {
-  const quote = quoteXpressPurchase({ requestedOfferId: 'exam-single', requestedExamSlug: 'ielts' });
-  assert.equal(quote.action, 'checkout');
-  assert.equal(quote.amountInCents, 1_290_000);
-  assert.equal(quote.reason, 'single-purchase');
-  assert.equal(quote.offer.billing, 'single-exam');
+test('the retired one-time product cannot create a new quote', () => {
+  assert.throws(
+    () => quoteXpressPurchase({ requestedOfferId: 'exam-single', requestedExamSlug: 'ielts' }),
+    /legacy_xpress_offer_not_sellable/,
+  );
 });
 
 test('charges only COP 50,000 when upgrading the same exam', () => {
@@ -129,7 +130,7 @@ test('charges only COP 50,000 when upgrading the same exam', () => {
   assert.equal(quote.reason, 'membership-upgrade');
 });
 
-test('schedules plan or exam changes instead of creating overlapping access', () => {
+test('schedules a downgrade but treats a different exam as a separate checkout', () => {
   const downgrade = quoteXpressPurchase({
     requestedOfferId: 'exam-auto',
     requestedExamSlug: 'ielts',
@@ -141,14 +142,15 @@ test('schedules plan or exam changes instead of creating overlapping access', ()
     activeMembership: { offerId: 'exam-auto', examSlug: 'ielts' },
   });
   assert.equal(downgrade.reason, 'downgrade');
-  assert.equal(examChange.reason, 'different-exam');
-  assert.equal(examChange.action, 'schedule-change');
+  assert.equal(examChange.reason, 'additional-exam');
+  assert.equal(examChange.action, 'checkout');
 });
 
-test('a membership lasts 30 days and only the top plan includes personalized feedback', () => {
+test('a membership lasts 30 days and paid review tiers include personalized feedback', () => {
   assert.equal(xpressAccessEndsAt(new Date('2026-09-08T12:00:00Z')).toISOString(), '2026-10-08T12:00:00.000Z');
   assert.equal(xpressOfferIncludes('exam-teacher', 'personalized-feedback'), true);
-  assert.equal(xpressOfferIncludes('exam-auto', 'personalized-feedback'), false);
+  assert.equal(xpressOfferIncludes('exam-auto', 'personalized-feedback'), true);
+  assert.equal(xpressOfferIncludes('exam-basic', 'personalized-feedback'), false);
 });
 
 test('validates and normalizes both registration paths', () => {

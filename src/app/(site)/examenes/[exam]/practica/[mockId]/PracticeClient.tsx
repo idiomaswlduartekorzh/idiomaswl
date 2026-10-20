@@ -19,7 +19,7 @@ import {
   type RamaModulo2,
 } from '@/data/mocks/sat/routing';
 import type { SatDomain } from '@/data/mocks/sat/module-types';
-import type { IcfesBasicResultDto } from '@/lib/icfes/attempt-contract';
+import type { IcfesTotalResultDto } from '@/lib/icfes/attempt-contract';
 import IcfesLeadResultOffers from '@/components/icfes/IcfesLeadResultOffers';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
@@ -1205,7 +1205,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [flagged, setFlagged] = useState<Set<string>>(new Set());
-  const [secureResult, setSecureResult] = useState<IcfesBasicResultDto | null>(null);
+  const [secureResult, setSecureResult] = useState<IcfesTotalResultDto | null>(null);
   const [gradingError, setGradingError] = useState('');
   const [attemptToken, setAttemptToken] = useState('');
   const [gradedMock, setGradedMock] = useState<MockExam | null>(null);
@@ -1255,7 +1255,22 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   const handleSubmit = useCallback(async () => {
     if (secureIcfes) {
       setGradingError('');
-      setPhase('lead');
+      try {
+        const response = await fetch('/api/icfes/attempts/grade', {
+          method: 'POST', headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ examId: mock.id, attemptToken, responses: answers }),
+        });
+        const data = await response.json() as { ok?: boolean; result?: IcfesTotalResultDto; error?: string };
+        if (!response.ok || !data.ok || !data.result) throw new Error(data.error ?? 'No pudimos registrar el intento.');
+        setSecureResult(data.result);
+        trackIcfesEvent('icfes_mock_complete', {
+          mock_id: mock.id, mode: 'exam', question_count: data.result.total,
+          correct_count: data.result.correct, accuracy: data.result.percentage,
+        });
+        setPhase('results');
+      } catch (error) {
+        setGradingError(error instanceof Error ? error.message : 'No pudimos registrar el intento.');
+      }
       return;
     }
     // Compute score and go to lead gate — actual save happens after lead form
@@ -1263,24 +1278,6 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     pendingResultRef.current = { correct: 0, total: qs.length, score: 0 };
     setPhase('lead');
   }, [allQuestions, answers, attemptToken, exam.slug, mock.id, secureIcfes]);
-
-  const handleSecureLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string; contactConsent: boolean }) => {
-    const response = await fetch('/api/icfes/attempts/grade', {
-      method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ examId: mock.id, attemptToken, responses: answers, lead }),
-    });
-    const data = await response.json() as { ok?: boolean; result?: IcfesBasicResultDto; error?: string };
-    if (!response.ok || !data.ok || !data.result) throw new Error(data.error ?? 'No pudimos registrar el intento.');
-    setSecureResult(data.result);
-    trackIcfesEvent('icfes_lead_submit', { mock_id: mock.id, lead_context: 'post_exam_required' });
-    trackIcfesEvent('icfes_mock_complete', {
-      mock_id: mock.id, mode: 'exam', question_count: data.result.total,
-      correct_count: data.result.correct, accuracy: data.result.percentage,
-    });
-    window.dataLayer = window.dataLayer ?? [];
-    window.dataLayer.push({ event: 'lead_simulacro', exam_slug: 'icfes', exam_score: `${data.result.correct}/${data.result.total} correctas (${data.result.percentage}%)` });
-    setPhase('results');
-  }, [answers, attemptToken, mock.id]);
 
   // Entrega del módulo 1: se puntúa SOLO ese módulo, se decide la rama y ya no se
   // puede volver — igual que en el examen real.
@@ -1467,7 +1464,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
           exam={exam}
           breakdownLabel={hasDomains ? 'análisis por dominio' : 'análisis por parte'}
           secureIcfes={Boolean(secureIcfes)}
-          onSubmit={secureIcfes ? handleSecureLeadSubmit : handleLeadSubmit}
+          onSubmit={handleLeadSubmit}
         />
       </div>
     );
@@ -1603,7 +1600,7 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '.7rem', flexWrap: 'wrap' }}>
-            <button onClick={handleStart} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>{exam.slug === 'icfes' ? 'Empezar modo examen →' : 'Empezar examen →'}</button>
+            <button data-exam-start="true" onClick={handleStart} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>{exam.slug === 'icfes' ? 'Empezar modo examen →' : 'Empezar examen →'}</button>
             {exam.slug === 'sat' && (
               <p style={{ maxWidth: 560, margin: '1.4rem auto 0', fontSize: '0.76rem', lineHeight: 1.5, opacity: 0.62 }}>
                 {SAT_MARCA}

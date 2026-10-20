@@ -25,8 +25,13 @@ export default function MockGrid({ exam }: { exam: Exam }) {
     );
   }
 
-  const freeMocks = exam.mocks.filter(m => m.free && !(exam.slug === 'goethe' && (isGoetheA2Held(m.id) || isGoetheB1Held(m.id))));
-  const paidMocks = exam.mocks.filter(m => !m.free);
+  const onboardingLanguage = exam.slug === 'goethe' ? 'aleman'
+    : exam.slug === 'delf-dalf' ? 'frances'
+      : exam.slug === 'cils-celi' ? 'italiano'
+        : exam.slug === 'topik' ? 'coreano'
+          : exam.slug === 'celpe-bras' ? 'portugues'
+            : 'ingles';
+
   const isIcfes = exam.slug === 'icfes';
   const icfesUniqueResources = isIcfes ? exam.mocks.length + 1 : 0;
   const icfesModes = isIcfes
@@ -59,7 +64,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
         const goetheB1Held = exam.slug === 'goethe' && isGoetheB1Held(mock.id);
         const goetheHeld = goetheA2Held || goetheB1Held;
         return (
-          <article key={mock.id} className={`wl-mock-card${mock.free && !goetheHeld ? '' : ' wl-mock-card--locked'}`}>
+          <article key={mock.id} className={`wl-mock-card${goetheHeld ? ' wl-mock-card--locked' : ''}`}>
             <div className="wl-mock-card__header">
               <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
               <div className="wl-mock-card__badges">
@@ -67,8 +72,8 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                 {goetheAudioPending ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
                 {goetheA2Held ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
                 {goetheB1Held ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
-                <span className={`wl-mock-card__tag ${mock.free && !goetheHeld ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
-                  {goetheHeld ? 'Bloqueado' : mock.free ? 'Gratis' : 'Pro'}
+                <span className={`wl-mock-card__tag ${goetheHeld ? 'wl-mock-card__tag--pro' : 'wl-mock-card__tag--free'}`}>
+                  {goetheHeld ? 'Bloqueado' : 'Cuenta requerida'}
                 </span>
               </div>
             </div>
@@ -77,7 +82,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             <div className="wl-mock-card__stats">
               <span>{mock.parts} {mock.parts === 1 ? 'parte' : 'partes'}</span><span aria-hidden="true">·</span><span>{mock.questions} preguntas</span>
             </div>
-            {mock.free && !goetheHeld ? (
+            {!goetheHeld ? (
               <div className="wl-mock-card__actions">
                 <Link
                   href={goetheAudioPending ? `/examenes/goethe/practica/${mock.id}?mode=practice&skill=reading` : mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`}
@@ -89,7 +94,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                     'data-icfes-resource-kind': mock.badge ? 'attributed' : 'own',
                     'data-icfes-surface': 'exam-hub-catalog',
                   } : {})}
-                >{goetheAudioPending ? 'Practicar Lesen →' : 'Modo examen →'}</Link>
+                >{goetheAudioPending ? 'Practicar Lesen →' : 'Abrir simulacro →'}</Link>
                 {exam.slug === 'icfes' && hasGuidedMock(mock.id) ? (
                   <Link
                     href={`/examenes/icfes/practica/${mock.id}/guiado`}
@@ -102,10 +107,8 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                   >Modo guiado</Link>
                 ) : null}
               </div>
-            ) : goetheHeld ? (
-              <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 {goetheB1Held ? 'B1' : 'A2'} en preparación · audio pendiente</button>
             ) : (
-              <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 Suscríbete para acceder</button>
+              <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 {goetheB1Held ? 'B1' : 'A2'} en preparación · audio pendiente</button>
             )}
           </article>
         );
@@ -128,7 +131,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               ? `${icfesUniqueResources} recursos únicos · ${icfesModes} modos disponibles`
               : exam.slug === 'toefl'
               ? `${exam.mocks.length} simulacros · Reading, Listening, Writing y Speaking`
-              : `${freeMocks.length} gratis · ${paidMocks.length} con suscripción`}
+              : `${exam.mocks.length} simulacros visibles · crea una cuenta al empezar`}
           </p>
         </header>
 
@@ -180,17 +183,13 @@ export default function MockGrid({ exam }: { exam: Exam }) {
         ))}
 
         {/* Subscription CTA */}
-        {paidMocks.length > 0 && (
+        {exam.mocks.length > 0 && (
           <div className="wl-sub-banner">
             <div>
-              <h3 className="wl-sub-banner__title">Desbloquea los {paidMocks.length} simulacros restantes</h3>
-              <p className="wl-sub-banner__sub">Acceso completo a todos los simulacros, retroalimentación personalizada y seguimiento de progreso.</p>
+              <h3 className="wl-sub-banner__title">Tu primer examen puede empezar gratis</h3>
+              <p className="wl-sub-banner__sub">Crea tu cuenta, elige este examen y accede a su práctica y simulacros. Los detalles, descargas y revisiones se añaden con los planes pagos.</p>
             </div>
-            <a
-              href="https://wa.me/573005004253?text=Hola%2C%20quiero%20acceso%20completo%20a%20los%20simulacros%20de%20WeLearn."
-              target="_blank" rel="noopener noreferrer"
-              className="btn"
-            >Hablar con WeLearn <span className="arrow">→</span></a>
+            <Link href={`/registro?${new URLSearchParams({ path: 'exam', language: onboardingLanguage, exam: exam.slug, plan: 'exam-free' }).toString()}`} className="btn">Crear cuenta gratis <span className="arrow">→</span></Link>
           </div>
         )}
       </div>

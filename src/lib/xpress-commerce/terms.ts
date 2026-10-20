@@ -1,18 +1,18 @@
-export const XPRESS_TERMS_VERSION = 'xpress-20260912-v4';
+export const XPRESS_TERMS_VERSION = 'xpress-20261020-v8';
 export const XPRESS_PRIVACY_VERSION = 'xpress-privacy-20260908-v1';
 
 export const XPRESS_TERMS = [
   {
     title: 'Qué estás comprando',
-    text: 'La compra individual de $12.900 permite realizar una vez un simulacro de la familia elegida. Las suscripciones de $49.900 y $99.900 activan periodos sucesivos de 30 días con simulacros disponibles de esa familia. Ninguna opción incluye la inscripción al examen oficial.',
+    text: 'Los planes de $15.900, $49.900 y $99.900 activan por periodos de 30 días el ecosistema completo del examen elegido: práctica, simulacros cronometrados y explicaciones guiadas. Cada plan corresponde a un solo examen y no incluye la inscripción al examen oficial.',
   },
   {
     title: 'Correcciones',
-    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. El plan de $99.900 añade una revisión personalizada de un tutor de WeLearn, entregada en el panel dentro de las 24 horas siguientes al envío del simulacro. Esta revisión no es una calificación oficial.',
+    text: 'El plan de $15.900 incluye resultados detallados, descargas y retroalimentación automática. El de $49.900 añade hasta 5 revisiones humanas de Writing o Speaking por periodo. El de $99.900 añade revisiones humanas, retroalimentación integral y un plan de mejora personalizado. Estas revisiones no son calificaciones oficiales.',
   },
   {
     title: 'Renovación automática',
-    text: 'La compra de $12.900 es un pago único. Las suscripciones de $49.900 y $99.900 cobran el mismo valor por cada periodo de 30 días hasta que las canceles. La renovación puede procesarse durante las 24 horas anteriores al siguiente periodo para evitar que pierdas acceso. Antes de suscribirte verás el valor y la fecha del primer cobro. El servicio no garantiza una calificación, admisión ni aprobación.',
+    text: 'Los planes de $15.900, $49.900 y $99.900 cobran el mismo valor por cada periodo de 30 días hasta que los canceles. La renovación puede procesarse durante las 24 horas anteriores al siguiente periodo para evitar que pierdas acceso. Antes de suscribirte verás el valor y la fecha del primer cobro. El servicio no garantiza una calificación, admisión ni aprobación.',
   },
   {
     title: 'Cancelación sencilla',
@@ -26,7 +26,7 @@ export const XPRESS_TERMS = [
 
 export const XPRESS_PRIVACY_NOTICE = 'Autorizo usar los datos de mi cuenta para gestionar esta compra, verificar el pago y enviarme su comprobante. No incluye publicidad.';
 
-export const XPRESS_RECURRING_CONSENT_VERSION = 'xpress-recurring-30d-20260912-v2';
+export const XPRESS_RECURRING_CONSENT_VERSION = 'xpress-recurring-30d-20261020-v3';
 export const XPRESS_RECURRING_CONSENT = 'Autorizo a WeLearn a cobrar automáticamente el valor del plan seleccionado por cada periodo de 30 días, con procesamiento desde 24 horas antes del siguiente periodo, hasta que yo cancele la renovación desde mi panel.';
 
 export const XPRESS_LEGAL_SNAPSHOT = JSON.stringify({

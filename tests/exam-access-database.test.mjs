@@ -44,9 +44,41 @@ test('the database resolver never grants one exam from another exam entitlement'
   assert.match(migration, /revoke all on function public\.resolve_exam_access\(uuid,text,text,timestamptz\)[\s\S]*from public,anon,authenticated,service_role/);
 });
 
+test('existing paid WeLearn exam enrollments are backfilled into the same ledger', () => {
+  assert.match(migration, /join public\.course_enrollments enrollment on enrollment\.order_id=course\.id/);
+  assert.match(migration, /profile\.student_path='welearn'/);
+  assert.match(migration, /when 'Cambridge B2 First' then 'cambridge-b2'/);
+  assert.match(migration, /when 'IELTS General Training' then 'ielts'/);
+  assert.match(migration, /on conflict \(user_id,exam_slug,source\) where status='active' do nothing/);
+});
+
 test('durable submission access is also bound to the exact exam', () => {
   assert.match(submissionAccessMigration, /membership\.exam_slug=p_exam/);
   assert.match(submissionAccessMigration, /credit\.exam_slug=p_exam/);
   assert.match(submissionAccessMigration, /where id=p_submission and user_id=p_user and exam_slug=p_exam/);
+});
+
+test('human review quota is atomic and limited to five for the 49.900 plan', () => {
+  assert.match(migration, /create table public\.xpress_human_review_requests/);
+  assert.match(migration, /membership\.offer_id in \('exam-auto','exam-teacher'\)/);
+  assert.match(migration, /perform pg_catalog\.pg_advisory_xact_lock\(pg_catalog\.hashtextextended\(p_user::text,91\)\)/);
+  assert.match(migration, /if selected_membership\.offer_id='exam-auto'/);
+  assert.match(migration, /if used_requests>=5 then raise exception 'human_review_quota_exhausted'/);
+  assert.doesNotMatch(migration, /selected_membership\.offer_id='exam-teacher'[\s\S]{0,100}used_requests>=/);
+});
+
+test('free result payloads do not include review keys or section score endpoints', async () => {
+  const [icfes, ielts, goethe, unlock, toeflScore] = await Promise.all([
+    readFile(new URL('../src/app/api/icfes/attempts/grade/route.ts', import.meta.url), 'utf8'),
+    readFile(new URL('../src/lib/ielts/submission.server.ts', import.meta.url), 'utf8'),
+    readFile(new URL('../src/lib/goethe/submission.server.ts', import.meta.url), 'utf8'),
+    readFile(new URL('../src/lib/actions/unlockExamMock.ts', import.meta.url), 'utf8'),
+    readFile(new URL('../src/app/api/practica/toefl/reading/score/route.ts', import.meta.url), 'utf8'),
+  ]);
+  assert.match(icfes, /toIcfesTotalResult\(result\)/);
+  assert.match(ielts, /xpressAccess\.detailedResults \? await loadIeltsMock\(mockId\) : null/);
+  assert.match(goethe, /automatic: xpressAccess\.detailedResults \? automatic : null/);
+  assert.match(unlock, /examCan\(access\.level, 'view-detailed-results'\)/);
+  assert.match(toeflScore, /hasDetailedExamResultsAccess\('toefl'\)/);
 });
 

@@ -24,6 +24,13 @@ export interface IcfesBasicResultDto {
   premiumUnavailableReason?: string;
 }
 
+export type IcfesTotalResultDto = Omit<IcfesBasicResultDto, 'byPart' | 'bySkill' | 'recommendation'>;
+
+export function toIcfesTotalResult(result: IcfesBasicResultDto): IcfesTotalResultDto {
+  const { byPart: _byPart, bySkill: _bySkill, recommendation: _recommendation, ...totalOnly } = result;
+  return totalOnly;
+}
+
 export type IcfesPaymentStatus = 'PENDING' | 'APPROVED' | 'DECLINED' | 'VOIDED' | 'ERROR';
 
 export interface IcfesCheckoutDto {

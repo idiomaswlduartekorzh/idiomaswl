@@ -49,8 +49,9 @@ export interface IeltsPrepareResponse extends IeltsSubmissionReceipt {
 export interface IeltsCompleteResponse {
   ok: true;
   submissionId: string;
-  reviewMock: MockExam;
-  xpressAccess: 'membership' | 'single-credit' | 'public';
+  reviewMock: MockExam | null;
+  basicScore: string;
+  xpressAccess: 'membership' | 'single-credit' | 'welearn' | 'public';
 }
 
 export const IELTS_SPEAKING_MIN_PART_SECONDS: Readonly<Record<number, number>> = {

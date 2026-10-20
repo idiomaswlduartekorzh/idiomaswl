@@ -582,8 +582,8 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function IELTSResults({ mock, exam, ans, receipt, studentName, access, onAccessUnlocked, onRetry }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; access: ExamAccessOutcome; onAccessUnlocked: () => void; onRetry: ()=>void;
+function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, access, onAccessUnlocked, onRetry }: {
+  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; basicScore: string; access: ExamAccessOutcome; onAccessUnlocked: () => void; onRetry: ()=>void;
 }) {
   const objectiveScore = scoreIeltsObjectiveAnswers(mock, ans);
   const lCorrect = objectiveScore.listening?.correct ?? 0;
@@ -659,7 +659,7 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, access, onAccessU
       examSlug="ielts"
       examName={exam.name}
       attemptRef={receipt?.submissionId ?? `ielts:${mock.id}`}
-      score={`${lCorrect + rCorrect}/${lTotal + rTotal}`}
+      score={basicScore || `${lCorrect + rCorrect}/${lTotal + rTotal}`}
       initialCodeMessage={access.message}
       fullResult={null}
       onRetry={onRetry}
@@ -903,6 +903,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
   const [completedReviewMock, setCompletedReviewMock] = useState<MockExam | null>(null);
+  const [completedBasicScore, setCompletedBasicScore] = useState('');
   const [readingResult, setReadingResult] = useState<IeltsReadingPracticeResult | null>(null);
   const [readingScoring, setReadingScoring] = useState(false);
   const [submittedStudentName, setSubmittedStudentName] = useState('');
@@ -1086,7 +1087,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     if (practiceSkill) return <div className="exam-unified" data-exam="ielts"><IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} /><div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={`${SKILL_LABEL[practiceSkill]} PDF`} /></div></div>;
     return (
       <div className="prac-shell exam-unified" data-exam="ielts">
-        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
+        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} basicScore={completedBasicScore} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
         <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor()} label="Full practice PDF" /></div>
       </div>
     );
@@ -1110,7 +1111,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
           speakingPrompts={speakingQuestions.map(question=>({ questionId: question.id, partNumber: question.partNumber }))}
           recordings={recordings}
           onBack={()=>setPhase('exam')}
-          onSuccess={(receipt, studentName, reviewMock, access)=>{
+          onSuccess={(receipt, studentName, reviewMock, basicScore, access)=>{
             try { localStorage.removeItem(draftKey); } catch {}
             trackIeltsEvent('ielts_lead_submit', { mock_id: mock.id });
             trackIeltsEvent('ielts_report_view', { mock_id: mock.id, report_state: 'objective_ready_human_review_pending' });
@@ -1118,6 +1119,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
             setDraftRestored(false);
             setSubmissionReceipt(receipt);
             setCompletedReviewMock(reviewMock);
+            setCompletedBasicScore(basicScore);
             setSubmittedStudentName(studentName);
             setResultAccess(access);
             setPhase('results');
@@ -1176,7 +1178,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
               {draftRestored && <li role="status">Recuperamos tus respuestas y el tiempo restante. Las grabaciones de Speaking deben hacerse otra vez.</li>}
             </ul>}
           </div>
-          <button onClick={()=>{
+          <button data-exam-start="true" onClick={()=>{
             if (!draftRestored) {
               setActiveSkill(firstActiveSkill);
               if (!practiceSkill) setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);

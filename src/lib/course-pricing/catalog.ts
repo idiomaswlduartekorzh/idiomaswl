@@ -12,7 +12,7 @@ export type CoursePlanId = (typeof PLANS)[number]['id'];
 
 // These are interests to discuss, not verified teacher availability or exam registration.
 export const LANGUAGES = [
-  { id: 'ingles', name: 'Inglés', exams: ['IELTS Academic', 'IELTS General Training', 'TOEFL iBT', 'ICFES inglés', 'SAT Reading and Writing'] },
+  { id: 'ingles', name: 'Inglés', exams: ['IELTS Academic', 'IELTS General Training', 'TOEFL iBT', 'ICFES inglés', 'SAT Reading and Writing', 'Cambridge B2 First'] },
   { id: 'coreano', name: 'Coreano', exams: ['TOPIK I', 'TOPIK II'] },
   { id: 'frances', name: 'Francés', exams: ['DELF', 'DALF'] },
   { id: 'aleman', name: 'Alemán', exams: ['Goethe'] },

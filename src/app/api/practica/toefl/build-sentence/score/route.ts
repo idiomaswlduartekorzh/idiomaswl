@@ -1,5 +1,5 @@
 import { scoreToeflBuildSentenceAttempt } from '@/lib/toefl/build-sentence-contract';
-import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
+import { hasDetailedExamResultsAccess } from '@/lib/exams/score-access.server';
 import { TOEFL_BUILD_SENTENCE_SCORING_BY_OBJECT_ID } from '@/server/toefl/build-sentence-registry';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -14,7 +14,7 @@ function isSafeId(value: unknown): value is string {
 }
 
 export async function POST(request: Request) {
-  if (!await hasExamScoreAccess('toefl', request)) return Response.json({ error: 'lead_required' }, { status: 403 });
+  if (!await hasDetailedExamResultsAccess('toefl')) return Response.json({ error: 'detailed_results_required' }, { status: 403 });
   try {
     const body: unknown = await request.json();
     if (!isRecord(body)

@@ -4,6 +4,7 @@ import { isVerifiedAdminUser } from '@/lib/config/admins';
 import { createClient } from '@/lib/supabase/server';
 import { loadOwnedPaidAttempt, loadStudentDashboard } from '@/lib/student-dashboard/data.server';
 import styles from './report.module.css';
+import { requestHumanXpressReview } from '@/lib/actions/xpressReviews';
 
 export const metadata = { title: 'Mi reporte — WeLearn', robots: { index: false, follow: false } };
 
@@ -40,6 +41,15 @@ export default async function StudentResultPage({ params }: { params: Promise<{ 
         <article><h3>Por mejorar</h3><p>{attempt.teacherFeedback.improvements}</p></article>
         <article><h3>Siguiente paso</h3><p>{attempt.teacherFeedback.nextSteps}</p></article>
       </div> : <span>Tu tutor registrará aquí observaciones sobre tu desempeño y los aspectos que conviene reforzar. Las escalas de práctica no constituyen un resultado oficial.</span>}
+    </section> : null}
+    {attempt.humanReviewState && attempt.humanReviewState !== 'not-included' ? <section className={styles.feedback}>
+      <p>Revisión humana de Writing o Speaking</p>
+      <h2>{attempt.humanReviewState === 'available' ? 'Elige qué quieres que revise el equipo WeLearn' : attempt.humanReviewState === 'completed' ? 'Tu revisión humana fue completada' : 'Tu solicitud está en la cola de revisión'}</h2>
+      {attempt.humanReviewState === 'available' ? <form action={requestHumanXpressReview}>
+        <input type="hidden" name="submissionId" value={attempt.id} />
+        <button type="submit" name="reviewKind" value="writing">Solicitar revisión de Writing</button>
+        <button type="submit" name="reviewKind" value="speaking">Solicitar revisión de Speaking</button>
+      </form> : <span>Te avisaremos en tu panel cuando la revisión esté lista.</span>}
     </section> : null}
     <section className={styles.actions}><Link href={attempt.examHubHref}>Volver a los simulacros</Link><a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20ayuda%20con%20mi%20reporte%20de%20WeLearn." rel="noreferrer" target="_blank">Pedir ayuda</a></section>
   </main>;

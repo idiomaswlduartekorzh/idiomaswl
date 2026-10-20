@@ -141,7 +141,7 @@ export default function GoetheSubmission({
         access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'goethe', attemptRef: completed.submissionId })
       }
       if (!leadReceipt.current) throw new Error('No pudimos validar el registro del estudiante.')
-      await onSuccess({ submissionId: completed.submissionId, completionToken: completed.completionToken, automatic: completed.automatic }, access, leadReceipt.current)
+      await onSuccess({ submissionId: completed.submissionId, completionToken: completed.completionToken, automatic: completed.automatic, totalScore: completed.totalScore }, access, leadReceipt.current)
     } catch (caught) {
       fail(caught instanceof Error ? caught.message : 'No pudimos enviar la entrega. Tus respuestas siguen guardadas en esta pantalla.')
     }

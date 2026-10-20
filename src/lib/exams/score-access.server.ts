@@ -1,4 +1,7 @@
-import { createHmac, timingSafeEqual } from 'node:crypto';
+import { createHmac } from 'node:crypto';
+import { createClient } from '@/lib/supabase/server';
+import { examCan, type ExamAccessDecision } from '@/lib/xpress-commerce/access';
+import { parseXpressExamSlug, resolveExamAccessForUser } from '@/lib/xpress-commerce/access.server';
 
 const cookieName = (examSlug: string) => `wl_exam_score_${examSlug}`;
 
@@ -21,14 +24,26 @@ export async function grantExamScoreAccess(id: string, examSlug: string): Promis
   });
 }
 
-export async function hasExamScoreAccess(examSlug: string, request?: Request): Promise<boolean> {
-  if (!/^[a-z0-9-]{2,40}$/.test(examSlug)) return false;
-  const value = request
-    ? request.headers.get('cookie')?.split(';').map(part => part.trim()).find(part => part.startsWith(`${cookieName(examSlug)}=`))?.slice(cookieName(examSlug).length + 1)
-    : (await (await import('next/headers')).cookies()).get(cookieName(examSlug))?.value;
-  const match = value && /^([0-9a-f-]{36})\.([0-9a-f]{64})$/i.exec(value);
-  if (!match) return false;
-  const expected = Buffer.from(signature(match[1], examSlug), 'hex');
-  const provided = Buffer.from(match[2], 'hex');
-  return provided.length === expected.length && timingSafeEqual(provided, expected);
+export async function hasExamScoreAccess(examSlug: string, _request?: Request): Promise<boolean> {
+  const access = await currentExamScoreAccess(examSlug);
+  return access !== null
+    && examCan(access.level, 'start-exam')
+    && examCan(access.level, 'save-result');
+}
+
+export async function hasDetailedExamResultsAccess(examSlug: string): Promise<boolean> {
+  const access = await currentExamScoreAccess(examSlug);
+  return access !== null && examCan(access.level, 'view-detailed-results');
+}
+
+export async function currentExamScoreAccess(examSlug: string): Promise<ExamAccessDecision | null> {
+  const parsedExam = parseXpressExamSlug(examSlug);
+  if (!parsedExam) return null;
+  const { data: { user } } = await (await createClient()).auth.getUser();
+  if (!user?.email_confirmed_at) return null;
+  try {
+    return await resolveExamAccessForUser(user.id, parsedExam);
+  } catch {
+    return null;
+  }
 }

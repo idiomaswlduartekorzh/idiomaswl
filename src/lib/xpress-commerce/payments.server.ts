@@ -24,11 +24,11 @@ export async function xpressUser() {
   return !error && user?.email_confirmed_at && user.email ? user : null;
 }
 
-export async function activeXpressMembership(userId: string): Promise<MembershipRow | null> {
+export async function activeXpressMembership(userId: string, examSlug: string): Promise<MembershipRow | null> {
   const config = getWompiServerConfig();
   const { data, error } = await createAdminClient().from('xpress_memberships')
     .select('id,exam_slug,offer_id,starts_at,ends_at')
-    .eq('user_id', userId).eq('environment', config.environment).eq('status', 'active')
+    .eq('user_id', userId).eq('environment', config.environment).eq('exam_slug', examSlug).eq('status', 'active')
     .lte('starts_at', new Date().toISOString()).gt('ends_at', new Date().toISOString()).order('ends_at', { ascending: false })
     .abortSignal(AbortSignal.timeout(8000));
   if (error) throw new Error('xpress_membership_lookup_failed');
@@ -45,7 +45,7 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
   if (profile?.student_path !== 'exam' || profile.target_exam !== input.examSlug) throw new Error('xpress_exam_mismatch');
   if (getXpressOffer(input.offerId).billing !== 'single-exam') throw new Error('xpress_subscription_required');
 
-  const active = await activeXpressMembership(user.id);
+  const active = await activeXpressMembership(user.id, input.examSlug);
   const quote = quoteXpressPurchase({
     requestedOfferId: input.offerId,
     requestedExamSlug: input.examSlug,
