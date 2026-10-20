@@ -233,7 +233,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Noticia reciente',
-            lines: [['', 'They [[0]] just [[1]] that the government [[2]] a new environmental law last week.']],
+            lines: [['', 'They [[0]] that the government [[1]] a new environmental law last week.']],
             blanks: [
               { options: ['\'ve announced', 'announced', 'announce', 'announcing'], answer: '\'ve announced', explain: '"Just" → present perfect "They\'ve just announced".' },
               { options: ['passed', 'have passed', 'pass', 'passing'], answer: 'passed', explain: '"Last week" → past simple "passed".' },
@@ -255,6 +255,7 @@ const topic: GrammarTopic = {
           { options: ['\'ve worked', 'worked', 'work', 'was working'], answer: '\'ve worked', explain: '"Since then" + experiencias acumuladas hasta ahora → present perfect.' },
           { options: ['led', '\'ve led', 'lead', 'was leading'], answer: 'led', explain: '"Last year" = tiempo específico → past simple.' },
           { options: ['resulted in', 'has resulted in', 'result in', 'results in'], answer: 'resulted in', explain: 'Consecuencia de la campaña pasada → past simple.' },
+          { options: ['have', 'did', 'was', 'am'], answer: 'have', explain: 'El auxiliar "have" completa "I have also recently completed".' },
           { options: ['completed', '\'ve completed', 'complete', 'completing'], answer: 'completed', explain: '"Recently" → present perfect "I\'ve recently completed".' },
           { options: ['\'ve been', 'was', 'am', 'be'], answer: '\'ve been', explain: '"Always excited" en mi vida → present perfect "I\'ve always been".' },
         ],
@@ -272,6 +273,7 @@ const topic: GrammarTopic = {
           { answer: 'moved', accepted: ['moved'], explain: '"In 2019" → past simple.' },
           { answer: 'got', accepted: ['got'], explain: '"When I arrived" = momento específico pasado → past simple.' },
           { answer: "I've met", accepted: ["i've met", 'i have met'], explain: '"Since I arrived" → present perfect para experiencias acumuladas.' },
+          { answer: "I've discovered", accepted: ["i've discovered", 'i have discovered'], explain: '"Since I arrived" también gobierna esta experiencia acumulada → present perfect.' },
           { answer: 'visited', accepted: ['visited'], explain: '"Last month" → past simple.' },
         ],
       },

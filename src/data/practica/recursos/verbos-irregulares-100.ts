@@ -189,7 +189,7 @@ export const IRREGULAR_VERBS_100: IrregularVerbGroup[] = [
     verbs: [
       { base: 'wear', past: 'wore', participle: 'worn', es: 'usar / vestir' },
       { base: 'tear', past: 'tore', participle: 'torn', es: 'rasgar' },
-      { base: 'bear', past: 'bore', participle: 'born', es: 'soportar / nacer' },
+      { base: 'bear', past: 'bore', participle: 'borne / born', es: 'soportar / nacer', note: 'born para nacer; borne para soportar o llevar' },
       { base: 'swear', past: 'swore', participle: 'sworn', es: 'jurar' },
     ],
   },

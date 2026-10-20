@@ -226,7 +226,8 @@ const topic: GrammarTopic = {
             scene: 'Los deberes',
             lines: [['', 'A: [[0]] you [[1]] (finish) your homework? B: Not [[2]].']],
             blanks: [
-              { options: ['Have / finished', 'Has / finished', 'Did / finish', 'Are / finishing'], answer: 'Have / finished', explain: 'Have you finished: you → have. Pregunta por resultado actual.' },
+              { options: ['Have', 'Has', 'Did', 'Are'], answer: 'Have', explain: 'You → have en una pregunta de present perfect.' },
+              { options: ['finished', 'finish', 'finishing', 'finishes'], answer: 'finished', explain: 'Después de have usamos el participio: finished.' },
               { options: ['yet', 'already', 'just', 'ever'], answer: 'yet', explain: 'Not yet: todavía no (yet en negativas al final).' },
             ],
           },

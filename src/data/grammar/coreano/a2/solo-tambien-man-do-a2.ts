@@ -216,7 +216,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Solo los fines de semana descansas.',
-            prompt: '주말___만 쉬어요.',
+            prompt: '«Solo descanso los fines de semana»: 주말___만 쉬어요.',
             answer: '주말에만 쉬어요.',
             accepted: ['주말만 쉬어요.'],
             explain: '"주말에만" = solo los fines de semana. 만 después de 에.',

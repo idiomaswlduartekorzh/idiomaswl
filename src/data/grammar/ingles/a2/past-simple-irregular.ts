@@ -277,6 +277,7 @@ const topic: GrammarTopic = {
           { answer: 'met', accepted: ['met'], explain: '"Meet" → met.' },
           { answer: 'went', accepted: ['went'], explain: '"Go" → went.' },
           { answer: 'wrote', accepted: ['wrote'], explain: '"Write" → wrote.' },
+          { answer: 'sent', accepted: ['sent'], explain: '"Send" → sent.' },
         ],
       },
       {

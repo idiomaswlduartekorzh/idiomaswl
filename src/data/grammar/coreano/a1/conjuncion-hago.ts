@@ -25,7 +25,7 @@ const topic: GrammarTopic = {
     decisions: [
       '하고: universal, coloquial, se puede usar con cualquier sustantivo',
       '와: después de sustantivo terminado en VOCAL: 사과+와(sag-wa) = 사과와',
-      '과: después de sustantivo terminado en CONSONANTE: 친구+과... NO, 친구 termina en vocal → 와',
+      '과: después de sustantivo terminado en CONSONANTE: 밥+과 = 밥과',
       'Ejemplo 과: 밥+과(gwa) = 밥과 (arroz+consonante ㅂ → 과)',
       'Ejemplo 와: 커피+와 = 커피와 (café+vocal ㅣ → 와)',
       '랑/이랑: muy informal (entre amigos): 친구랑, 엄마랑. 이랑 después de consonante: 밥이랑',

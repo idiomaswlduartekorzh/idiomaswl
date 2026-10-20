@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'forma-formal-habnida',
-  order: '20',
+  order: '19',
   color: '#c60c30',
   category: '문법',
   level: 'A1',
@@ -116,10 +116,10 @@ const topic: GrammarTopic = {
         intro: 'Transforma la forma educada a la forma formal.',
         type: 'dual',
         items: [
-          { scene: '이에요 → 입니다', lines: [['', '"저는 콜롬비아 사람이에요" en formal: 저는 콜롬비아 [[0]] [[1]].']], blanks: [{ options: ['사람이에요', '사람입니다', '사람합니다', '사람이습니다'], answer: '사람입니다', explain: '사람 + 입니다. 이에요/예요 → 입니다 en formal.' }, { options: ['(fin)', '이에요', 'ㅂ니다', '해요'], answer: '(fin)', explain: '사람입니다 — la frase termina aquí. 입니다 ya incluye todo.' }] },
-          { scene: '가요 → 갑니다', lines: [['', '"학교에 가요" en formal: 학교에 [[0]].']], blanks: [{ options: ['갑니다', '가합니다', '가습니다', '가요'], answer: '갑니다', explain: '가다 → vocal final + ㅂ니다 = 갑니다.' }, { options: ['(completa)', '요', '니다', '다'], answer: '(completa)', explain: '학교에 갑니다 — forma formal completa.' }] },
-          { scene: '먹어요 → 먹습니다', lines: [['', '"점심을 먹어요" en formal: 점심을 [[0]].']], blanks: [{ options: ['먹합니다', '먹습니다', '먹이니다', '먹ㅂ니다'], answer: '먹습니다', explain: '먹다 → consonante final ㄱ + 습니다 = 먹습니다.' }, { options: ['(completa)', '요', '어요', '이에요'], answer: '(completa)', explain: '점심을 먹습니다 — forma formal completa.' }] },
-          { scene: '해요 → 합니다 (하다 verbo)', lines: [['', '"일해요" en formal: [[0]].']], blanks: [{ options: ['일합니다', '일습니다', '일ㅂ니다', '일이니다'], answer: '일합니다', explain: '일하다 → 일합니다. Verbos 하다: siempre 합니다.' }, { options: ['(completa)', '이에요', '요', 'ㄴ다'], answer: '(completa)', explain: '일합니다 — forma formal de 일해요 (trabaja/trabajo).' }] },
+          { scene: '이에요 → 입니다', lines: [['', '"저는 콜롬비아 사람이에요" en formal: 저는 콜롬비아 [[0]][[1]].']], blanks: [{ options: ['사람', '학생', '의사', '선생님'], answer: '사람', explain: '사람 = persona. Conservamos el sustantivo de la oración original.' }, { options: ['입니다', '이에요', '예요', '합니다'], answer: '입니다', explain: '사람 + 입니다. 이에요/예요 cambia a 입니다 en el registro formal.' }] },
+          { scene: '가요 → 갑니다', lines: [['', '"학교에 가요" en formal: 학교에 [[0]].']], blanks: [{ options: ['갑니다', '가합니다', '가습니다', '가요'], answer: '갑니다', explain: '가다 → vocal final + ㅂ니다 = 갑니다.' }] },
+          { scene: '먹어요 → 먹습니다', lines: [['', '"점심을 먹어요" en formal: 점심을 [[0]].']], blanks: [{ options: ['먹합니다', '먹습니다', '먹이니다', '먹ㅂ니다'], answer: '먹습니다', explain: '먹다 → consonante final ㄱ + 습니다 = 먹습니다.' }] },
+          { scene: '해요 → 합니다 (하다 verbo)', lines: [['', '"일해요" en formal: [[0]].']], blanks: [{ options: ['일합니다', '일습니다', '일ㅂ니다', '일이니다'], answer: '일합니다', explain: '일하다 → 일합니다. Verbos 하다: siempre 합니다.' }] },
         ],
       },
       {

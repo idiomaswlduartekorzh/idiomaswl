@@ -11,7 +11,7 @@ const topic: GrammarTopic = {
   metaTitle: 'Antes y después en coreano A2 — 기 전에, -(으)ㄴ 후에/다음에',
   description:
     'Las expresiones -기 전에 y -(으)ㄴ 후에 / 다음에 son las formas principales para expresar "antes de hacer algo" y "después de hacer algo" en coreano. -기 전에 siempre usa el infinitivo (sin conjugar). -(으)ㄴ 후에 usa la forma verbal de pasado del modificador. Son estructuras de secuencia temporal fundamentales en A2.',
-  lead: '자기 전에 이를 닦아요: antes y después en coreano A2.',
+  lead: '자기 전에 이를 닦아요: aprende a ordenar acciones y expresar con claridad qué ocurre antes y qué sucede después en coreano A2.',
   outcomes: [
     'Usar -기 전에 para expresar "antes de + infinitivo"',
     'Usar -(으)ㄴ 후에 / -(으)ㄴ 다음에 para expresar "después de"',
@@ -181,6 +181,7 @@ const topic: GrammarTopic = {
           { options: ['기', '는', 'ㄴ', '고'], answer: '기', explain: '"운동하기 전에" = antes de hacer ejercicio.' },
           { options: ['다음에', '전에', '기', '고'], answer: '다음에', explain: '"샤워한 다음에" = después de ducharse.' },
           { options: ['전에', '후에', '다음에', '기에'], answer: '전에', explain: '"학교 전에" = antes de la escuela (sustantivo + 전에).' },
+          { options: ['후에', '전에', '기에', '고'], answer: '후에', explain: '"수업이 끝난 후에" = después de terminar la clase.' },
         ],
       },
       {

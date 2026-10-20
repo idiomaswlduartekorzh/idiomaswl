@@ -181,6 +181,7 @@ const topic: GrammarTopic = {
           { options: ['께', '한테', '에게서', '에서'], answer: '께', explain: '"어머니께 드렸어요" = le di a mi madre (honorífico).' },
           { options: ['한테', '께', '에게서', '에서'], answer: '한테', explain: '"친구한테 부탁했어요" = le pedí a mi amigo (coloquial).' },
           { options: ['한테서', '한테', '에게', '께'], answer: '한테서', explain: '"친구한테서 왔어요" = llegó de parte del amigo (origen).' },
+          { options: ['께', '한테서', '에서', '의'], answer: '께', explain: '"어머니께 카드를 썼어요" = escribí una tarjeta a mi madre (honorífico).' },
         ],
       },
       {

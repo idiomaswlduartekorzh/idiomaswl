@@ -215,7 +215,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '"자요" + "꿈을 꿔요" → 동안에로 연결',
-            prompt: '자는 동안에...',
+            prompt: '자는 동안에... 뒤에 알맞은 행동을 써 보세요.',
             answer: '자는 동안에 꿈을 꿔요.',
             accepted: ['자는 동안에 꿈을 자주 꿔요.'],
             explain: '"자는 동안에" = mientras duerme.',

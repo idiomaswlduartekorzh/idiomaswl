@@ -10,13 +10,13 @@ const topic: GrammarTopic = {
   shortTitle: '-자마자 (tan pronto como, inmediatamente después)',
   metaTitle: '-자마자 en Coreano B1 — Expresar Acciones Inmediatas',
   description:
-    '-자마자 expresa que una acción sucede inmediatamente después de otra sin intervalo. "Tan pronto como X, Y." Literal: "-자" (tiempo/momento) + "마자" (en el instante). Muy coreano, diferente del español. Fundamental para narración temporal precisa en B1.',
-  lead: 'Domina -자마자 para expresar: "tan pronto como..., inmediatamente..."',
+    '-자마자 expresa que una acción sucede inmediatamente después de otra: «tan pronto como A, B». Se une directamente a la raíz verbal y no recibe una marca de pasado propia. Es fundamental para narrar secuencias rápidas con precisión.',
+  lead: 'Domina -자마자 para enlazar dos hechos sin intervalo: «tan pronto como ocurre A, sucede B» en narraciones y planes.',
   outcomes: [
     'Forma secuencia inmediata con -자마자',
     'Expresa acciones que suceden sin intervalo',
     'Usa en narrativa temporal precisa',
-    'Distingues de -자마자 de -고 나서 (luego, con intervalo)',
+    'Distingues -자마자 de -고 나서 (después, con intervalo posible)',
   ],
 
   guide: {
@@ -25,18 +25,19 @@ const topic: GrammarTopic = {
     formula: '동사 + -자마자',
     decisions: [
       '-자마자: inmediatamente después, sin intervalo',
-      '과거형: 갔자마자, 왔자마자',
-      'No tiene futuro; expresa lo que pasó/pasa',
-      '같은 주어만 가능: 나는 왔자마자 vs 내가 올 때 누군가 왔자마자 (sujetos diferentes)',
+      'Se añade directamente a la raíz verbal: 가다 → 가자마자, 오다 → 오자마자',
+      'La primera acción no marca tiempo; el tiempo aparece en el verbo principal',
+      'Las dos cláusulas pueden compartir sujeto o tener sujetos diferentes',
     ],
     table: [
       ['Estructura', 'Significado', 'Ejemplo'],
-      ['-자마자', 'Inmediatamente después', '도착하자마자 → tan pronto como llegué'],
+      ['V-자마자', 'Inmediatamente después', '도착하자마자 → tan pronto como llegué'],
       ['vs -고 나서', 'Con intervalo', '도착하고 나서 → después de llegar (hay intervalo)'],
     ],
     mistakes: [
-      '"-자마자" con sujetos diferentes es raro; usa "-자" solo para mismo sujeto.',
-      '"전화가 오자마자 받았어요" ✓ (pasivo, pero mismo evento).',
+      'No conjugues la primera acción en pasado: "왔자마자" ❌ → "오자마자" ✓.',
+      'No separes la forma: "자 마자" ❌ → "자마자" ✓.',
+      'El verbo principal sí marca el tiempo: 도착하자마자 전화했어요 / 전화할게요.',
     ],
   },
 
@@ -51,22 +52,22 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cuál es la diferencia entre -자마자 y -고 나서?',
       paragraphs: [
-        '-자마자: "tan pronto como X, Y" (inmediato). 학교 와자마자 밥을 먹었어요 (tan pronto llegué a la escuela, comí).',
+        '-자마자: "tan pronto como X, Y" (inmediato). 학교에 오자마자 밥을 먹었어요 (tan pronto llegué a la escuela, comí).',
         '-고 나서: "después de X, Y" (con posible intervalo). 학교 오고 나서 밥을 먹었어요 (después de llegar a la escuela, comí — hay intervalo). Diferencia clara: -자마자 es rapidísimo; -고 나서 permite tiempo.',
       ],
     },
     {
       heading: '¿Cómo se usa -자마자 con el tiempo pasado?',
       paragraphs: [
-        '-자마자 se usa principalmente en narrativa pasada: "왔자마자", "했자마자", "들었자마자". Raramente con presente/futuro porque implica sucesión instantánea que ya ocurrió.',
-        'Ejemplo: "도착했자마자 폭우가 내리기 시작했어요" (tan pronto llegué, comenzó una lluvia torrencial). Narrativa de sucesos consecutivos rápidos.',
+        '-자마자 no lleva tiempo propio: se une a la raíz verbal y el tiempo aparece en el verbo principal. Por eso se dice 오자마자, 하자마자 y 듣자마자, nunca 왔자마자 o 했자마자.',
+        'Puede describir pasado o futuro: 도착하자마자 비가 내리기 시작했어요 (tan pronto llegué, empezó a llover) / 도착하자마자 전화할게요 (te llamaré apenas llegue).',
       ],
     },
     {
-      heading: 'Con estructuras de mismo sujeto',
+      heading: '¿Pueden cambiar los sujetos con -자마자?',
       paragraphs: [
-        '-자마자 requiere típicamente el mismo sujeto: "내가 왔자마자 그게 울었어요" (cuando yo llegué, eso lloró). Los sujetos diferentes son posibles pero menos comunes.',
-        'Más natural con sujeto implícito: "도착하자마자 누군가 날 봤어" (tan pronto llegué, alguien me vio — sujeto "alguien" es extraño).',
+        'Las dos cláusulas pueden compartir sujeto: 집에 오자마자 잤어요 (apenas llegué a casa, dormí). También pueden tener sujetos diferentes: 내가 집에 도착하자마자 비가 내리기 시작했어요 (apenas llegué a casa, empezó a llover).',
+        'Cuando los sujetos cambian, conviene expresarlos para evitar ambigüedad. La relación central sigue siendo temporal: la segunda acción ocurre inmediatamente después de la primera.',
       ],
     },
   ],
@@ -76,10 +77,11 @@ const topic: GrammarTopic = {
     teacherLens: '-자마자: sucesión inmediata vs -고 나서 (con intervalo).',
     graphicPrompt: 'Tabla: -자마자 (instantáneo) vs -고 나서 (con pausa). Ejemplos.',
     scene: [
-      ['집에 가자마자 쉬었어요.', 'Tan pronto llegué a casa, descansé.'],
+      ['집에 도착하자마자 쉬었어요.', 'Tan pronto llegué a casa, descansé.'],
       ['전화가 오자마자 받았어요.', 'Tan pronto sonó el teléfono, lo contesté.'],
       ['강의가 끝나자마자 나갔어요.', 'Tan pronto terminó la clase, me fui.'],
       ['편지를 받자마자 읽었어요.', 'Tan pronto recibí la carta, la leí.'],
+      ['집에 도착하자마자 전화할게요.', 'Te llamaré apenas llegue a casa.'],
     ],
     learnerModes: ['reading', 'typing', 'choosing'],
     reviewFocus: ['즉시성', '과거형', '-고 나서 대비'],
@@ -90,7 +92,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Forma -자마자',
-        tag: 'Múltipla escolha',
+        tag: 'Opción múltiple',
         intro: 'Selecciona la forma correcta.',
         type: 'choice',
         items: [
@@ -103,10 +105,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: '-자마자 vs -고 나서',
-            lines: [['', '도착___ 폭우가 내렸어요. (instantáneo)']],
-            options: ['하자마자', '했자마자', '고 나서', '으면'],
-            answer: '했자마자',
-            explain: '-자마자 para sucesión inmediata.',
+            lines: [['', '도착하___ 폭우가 내렸어요. (instantáneo)']],
+            options: ['자마자', '고 나서', '면서', '면'],
+            answer: '자마자',
+            explain: '도착하다 → 도착하자마자. La primera acción no se conjuga en pasado.',
           },
         ],
       },
@@ -133,22 +135,22 @@ const topic: GrammarTopic = {
         scene: 'Descripción de eventos consecutivos rápidos.',
         text: '1. [[0]] (Tan pronto llegué). 2. [[1]] (Tan pronto recibí). 3. [[2]] (Tan pronto comenzó).',
         blanks: [
-          { answer: '집에 가자마자 잤어요', accepted: ['-자마자', '가'], explain: '-자마자 con llegada.' },
+          { answer: '집에 도착하자마자 잤어요', accepted: ['-자마자', '도착'], explain: '도착하다 → 도착하자마자 para expresar «apenas llegué».' },
           { answer: '편지를 받자마자 읽었어요', accepted: ['-자마자', '받'], explain: '-자마자 con recepción.' },
           { answer: '영화가 시작하자마자 떠들었어요', accepted: ['-자마자', '시작'], explain: '-자마자 con inicio.' },
         ],
       },
       {
         id: 'level-4',
-        title: 'Análise de -자마자 vs -고 나서',
-        tag: 'Análise',
+        title: 'Análisis de -자마자 vs -고 나서',
+        tag: 'Análisis',
         intro: 'Explica la diferencia de intervalo.',
         type: 'write',
         items: [
           {
             scene: 'Inmediatez vs intervalo',
-            prompt: '"왔자마자" vs "오고 나서": ¿cuál implica intervalo?',
-            answer: '"왔자마자" = instantáneo, sin intervalo. "오고 나서" = llegó, luego (hay tiempo entre llegar y lo que sigue). Diferencia clave de velocidad temporal.',
+            prompt: '"오자마자" vs "오고 나서": ¿cuál implica intervalo?',
+            answer: '"오자마자" = instantáneo, sin intervalo. "오고 나서" = después de venir, con posibilidad de una pausa antes de la siguiente acción.',
             accepted: ['즉시', '간격', '시간 차이'],
             explain: '-자마자 es inmediato; -고 나서 permite intervalo.',
           },

@@ -29,7 +29,7 @@ const topic: GrammarTopic = {
       ['Situación', 'Terminación', 'Ejemplo'],
       ['Después de consonante', '이에요', '학생이에요 (soy estudiante)'],
       ['Después de vocal', '예요', '의사예요 (soy médico/a)'],
-      ['Después de vocal', '예요', '한국 사람이에요 — espera, "람" termina en consonante → 이에요'],
+      ['Después de vocal', '예요', '커피예요 (es café)'],
       ['Negación', '이 아니에요', '학생이 아니에요 (no soy estudiante)'],
     ],
     mistakes: [
@@ -119,7 +119,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Diálogo en contexto',
-            lines: [['', '[[0]] 학생이에요. (yo soy estudiante, formal)']],
+            lines: [['', '[[0]] [[1]]. (yo soy estudiante, formal)']],
             blanks: [
               { options: ['저는', '나는', '그는', '우리는'], answer: '저는', explain: '저는 = yo formal. Presentación ante desconocidos.' },
               { options: ['학생이에요', '학생예요', '학생이 아니에요', '학생없어요'], answer: '학생이에요', explain: '학생 + consonante final ㅇ → 이에요.' },
@@ -142,10 +142,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Usando la negación',
-            lines: [['', '저는 [[0]] 이 아니에요. (no soy estudiante)']],
+            lines: [['', '저는 [[0]][[1]] 아니에요. (no soy estudiante)']],
             blanks: [
               { options: ['학생', '의사', '선생님', '사람'], answer: '학생', explain: '학생이 아니에요 = no soy estudiante.' },
-              { options: ['이에요', '예요', '있어요', '아니에요'], answer: '이에요', explain: 'Aquí "이" es la partícula de sujeto en la negación, no parte de 이에요.' },
+              { options: ['이', '가', '을', '는'], answer: '이', explain: '학생 termina en consonante, por eso la negación usa la partícula 이: 학생이 아니에요.' },
             ],
           },
         ],
@@ -159,7 +159,7 @@ const topic: GrammarTopic = {
         scene: 'Completa con 이에요 o 예요.',
         text: '안녕하세요! 저는 카를로스[[0]]. 저는 학생[[1]]. 저는 스페인 사람[[2]]. 이것은 제 책[[3]]. 이것은 커피가 아니에요 — 차[[4]]. 저는 의사가 아니에요 — 선생님[[5]].',
         blanks: [
-          { options: ['예요', '이에요'], answer: '예요', explain: '카를로스 termina en vocal ㅅ... espera: 스 = consonante ㅅ? No, 스 = ㅅ+ㅡ = termina en vocal ㅡ → 예요.' },
+          { options: ['예요', '이에요'], answer: '예요', explain: '카를로스 termina en la vocal ㅡ del bloque 스, por eso usa 예요.' },
           { options: ['이에요', '예요'], answer: '이에요', explain: '학생 termina en ㅇ (consonante) → 이에요.' },
           { options: ['이에요', '예요'], answer: '이에요', explain: '사람 termina en ㅁ (consonante) → 이에요.' },
           { options: ['이에요', '예요'], answer: '이에요', explain: '책 termina en ㄱ (consonante) → 이에요.' },

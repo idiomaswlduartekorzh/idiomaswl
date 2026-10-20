@@ -190,11 +190,12 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma la oración directa en indirecta.',
         type: 'freeText',
         scene: '직접 화법을 간접 화법으로 바꾸세요.',
-        text: '"피곤해요" → 피곤[[0]] 했어요. / "오세요" → 오[[1]] 했어요. / "어디 가요?" → 어디 가[[2]] 물었어요.',
+        text: '"피곤해요" → 피곤[[0]] 했어요. / "오세요" → 오[[1]] 했어요. / "어디 가요?" → 어디 가[[2]] 물었어요. / "같이 가요" → 같이 가[[3]] 했어요.',
         blanks: [
           { answer: '하다고', explain: '"피곤하다고 했어요" = dijo que estaba cansado.' },
           { answer: '라고', explain: '"오라고 했어요" = dijo que viniera (orden).' },
           { answer: '냐고', explain: '"어디 가냐고 물었어요" = preguntó adónde iba.' },
+          { answer: '자고', explain: '"같이 가자고 했어요" = propuso que fuéramos juntos.' },
         ],
       },
       {
@@ -213,7 +214,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '"조용히 하세요" → el profesor lo dijo',
-            prompt: '선생님이 조용히...',
+            prompt: '선생님이 조용히 하라고... 문장을 완성하세요.',
             answer: '선생님이 조용히 하라고 했어요.',
             accepted: ['선생님이 조용히 하라고 말씀하셨어요.'],
             explain: '"하세요" → "하라고" = discurso indirecto de orden.',

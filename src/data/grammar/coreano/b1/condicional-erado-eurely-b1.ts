@@ -10,12 +10,12 @@ const topic: GrammarTopic = {
   shortTitle: '-더라도 (condicional concesivo)',
   metaTitle: '-더라도 / -더라고 해도 en Coreano B1 — Condicionales Concesivos y Adversativos',
   description:
-    '-더라도 (y su variante -더라고 해도) expresa condicionales concesivos: "aunque...", "incluso si...". A diferencia de -면 (simple condicional), -더라도 añade matiz de concesión: aceptas la condición pero afirmas la consecuencia de todas formas. Esencial para argumentación en B1.',
+    '-더라도 expresa una concesión hipotética: "aunque" o "incluso si". -더라고 해도 también puede introducir una concesión, pero conserva el matiz de algo observado o descubierto. Ambas contrastan con -(으)면, que plantea una condición neutral.',
   lead: 'Domina -더라도 / -더라고 해도 para expresar condicionales concesivos: "aunque..., aún así..."',
   outcomes: [
     'Forma condicionales concesivos con -더라도',
     'Distingues -면 (si) de -더라도 (aunque, incluso si)',
-    'Usas -더라고 해도 para variante más coloquial',
+    'Reconoces el matiz experiencial de -더라고 해도',
     'Expresas argumentos que persisten a pesar de la condición',
   ],
 
@@ -25,16 +25,16 @@ const topic: GrammarTopic = {
     formula: 'Verbo + -더라도 / Verbo + -더라고 해도',
     decisions: [
       '-더라도: condicional concesivo formal, "aunque, incluso si"',
-      '-더라고 해도: variante más coloquial de -더라도',
+      '-더라고 해도: «aunque resulte/descubra que...», con matiz experiencial o evidencial',
       'Con verbos: 가다 → 가더라도, 먹다 → 먹더라도',
       'Con adjetivos: 예쁘다 → 예쁘더라도, 비싸다 → 비싸더라도',
-      'Diferencia: -면은 simple condicional (si A, entonces B); -더라도 concesivo (aunque A, sigue siendo B)',
+      'Diferencia: -(으)면 es condicional simple (si A, B); -더라도 es concesivo (aunque A, B)',
       '시간이 없더라도 = aunque no tengas tiempo / 시간이 없으면 = si no tienes tiempo',
     ],
     table: [
       ['Estructura', 'Significado', 'Ejemplo'],
       ['-더라도', 'Concesivo formal', '아무리 바쁘더라도 와요 — aunque esté muy ocupado, vengo'],
-      ['-더라고 해도', 'Concesivo coloquial', '힘들더라고 해도 포기 안 해요 — aunque sea difícil, no renuncio'],
+      ['-더라고 해도', 'Concesión basada en lo observado', '어렵더라고 해도 포기하지 않아요 — aunque resulte difícil, no renuncio'],
       ['-면 vs -더라도', 'Simple vs concesivo', '비가 오면 안 가요 vs 비가 와도 가요 — si llueve no voy vs aunque llueva, voy'],
     ],
     mistakes: [
@@ -67,10 +67,10 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-더라고 해도: variante coloquial',
+      heading: '-더라고 해도: concesión con experiencia',
       paragraphs: [
-        '-더라고 해도 es la forma más coloquial de -더라도, muy común en oralidad coreana. Tiene el mismo significado: concesión.',
-        'Ejemplo: 힘들더라고 해도 계속할 거예요 (aunque sea difícil, seguiré). Es más natural en conversación que -더라도 formal.',
+        '-더라고 해도 puede traducirse también como «aunque», pero recoge algo que el hablante comprobó o descubrió. No es simplemente una versión coloquial de -더라도.',
+        'Ejemplo: 직접 해 보니 어렵더라고 해도 계속할 거예요 (aunque al probarlo resulte difícil, continuaré). Para una condición puramente hipotética, 어렵더라도 es más directo.',
       ],
     },
     {
@@ -96,9 +96,9 @@ const topic: GrammarTopic = {
     scene: [
       ['비가 와도 가요.', 'Aunque llueva, voy.'],
       ['아무리 비싸더라도 사고 싶어요.', 'Aunque sea muy caro, quiero comprarlo.'],
-      ['힘들더라고 해도 포기 안 했어요.', 'Aunque fuera difícil, no renuncié.'],
+      ['어렵더라고 해도 포기하지 않을 거예요.', 'Aunque resulte difícil, no voy a renunciar.'],
       ['시간이 없더라도 도와줄 거예요.', 'Aunque no tenga tiempo, te ayudaré.'],
-      ['뭐라고 해도 이 결정은 변 안 할 거예요.', 'Sin importar qué digas, no cambiaré esta decisión.'],
+      ['뭐라고 해도 이 결정을 바꾸지 않을 거예요.', 'Sin importar qué digas, no cambiaré esta decisión.'],
       ['얼마나 멀더라도 찾아가겠어요.', 'Por lejos que sea, iré a buscarte.'],
     ],
     learnerModes: ['reading', 'typing', 'choosing'],
@@ -110,16 +110,16 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Identifica -더라도 correcto',
-        tag: 'Múltipla escolha',
+        tag: 'Opción múltiple',
         intro: 'Selecciona la forma correcta con -더라도.',
         type: 'choice',
         items: [
           {
             scene: 'Verbo + -더라도',
-            lines: [['', '비가 와도 ___. (가다)']],
-            options: ['가요', '가더라도', '가더라고', '갔어도'],
-            answer: '가더라고',
-            explain: '가다 → 가더라도 (aunque vaya).',
+            lines: [['', '비가 오___ 갈 거예요. (aunque llueva)']],
+            options: ['더라도', '면', '자마자', '기 때문에'],
+            answer: '더라도',
+            explain: '오다 → 오더라도: aunque llueva, iré.',
           },
           {
             scene: 'Adjetivo + -더라도',
@@ -136,11 +136,11 @@ const topic: GrammarTopic = {
             explain: '-면: 인과관계 (sin tiempo → no voy). -더라도: 양보 (aunque no tenga tiempo, voy).',
           },
           {
-            scene: '-더라고 해도 (coloquial)',
-            lines: [['', '힘들___ 포기 안 해요.']],
+            scene: '-더라고 해도 (resultado observado)',
+            lines: [['', '직접 해 보니 어렵___ 포기하지 않을 거예요.']],
             options: ['더라도', '더라고 해도', '면', '고도'],
             answer: '더라고 해도',
-            explain: '-더라고 해도 es coloquial para -더라도.',
+            explain: '-더라고 해도 retoma algo comprobado: aunque resulte difícil.',
           },
         ],
       },
@@ -155,14 +155,14 @@ const topic: GrammarTopic = {
             scene: 'Simple causal vs concesivo',
             lines: [['', " : 비가 오[[0]] 안 가요. (Lógico: lluvia → no voy)"]],
             blanks: [
-              { options: ['-면', '-더라도'], answer: '-면', explain: '-면 para relación causal simple.' },
+              { options: ['면', '더라도'], answer: '면', explain: '-면 para una condición simple.' },
             ],
           },
           {
             scene: 'Concesión vs causal',
-            lines: [['', " : 비가 와[[0]] 가겠어요. (Concesión: aunque llueva, voy)"]],
+            lines: [['', '비가 오[[0]] 가겠어요. (Concesión: aunque llueva, voy)']],
             blanks: [
-              { options: ['-면', '-더라도'], answer: '-더라도', explain: '-더라도 para concesión.' },
+              { options: ['면', '더라도'], answer: '더라도', explain: '오더라도 expresa concesión: aunque llueva.' },
             ],
           },
         ],
@@ -176,10 +176,10 @@ const topic: GrammarTopic = {
         scene: 'Expresión de determinación a pesar de obstáculos.',
         text: '아무리 바쁘[[0]] 약속은 지킬 거예요. 돈이 없[[1]] 꿈을 포기 안 할 거예요. 남들이 반대[[2]] 내 길을 갈 거예요. 얼마나 어렵[[3]] 절대 포기 안 해요.',
         blanks: [
-          { options: ['-더라도', '-면', '-고도'], answer: '-더라도', explain: 'Concesión: aunque esté ocupado, mantendré la cita.' },
-          { options: ['-더라도', '-면', '-더니'], answer: '-더라도', explain: 'Concesión: aunque no tenga dinero, no abandonaré el sueño.' },
-          { options: ['-더라도', '-도', '-고'], answer: '-더라도', explain: 'Concesión: aunque se opongan, seguiré mi camino.' },
-          { options: ['-더라도', '-면', '-니'], answer: '-더라도', explain: 'Concesión: por difícil que sea, nunca renunciaré.' },
+          { options: ['더라도', '면', '고도'], answer: '더라도', explain: 'Concesión: aunque esté ocupado, mantendré la cita.' },
+          { options: ['더라도', '면', '더니'], answer: '더라도', explain: 'Concesión: aunque no tenga dinero, no abandonaré el sueño.' },
+          { options: ['하더라도', '해도', '하고'], answer: '하더라도', explain: '반대하다 → 반대하더라도: aunque se opongan.' },
+          { options: ['더라도', '면', '니'], answer: '더라도', explain: 'Concesión: por difícil que sea, nunca renunciaré.' },
         ],
       },
       {
@@ -214,8 +214,8 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-6',
-        title: 'Análise de -더라도 vs -었더라도',
-        tag: 'Análise',
+        title: 'Análisis de -더라도 vs -었더라도',
+        tag: 'Análisis',
         intro: 'Explica la diferencia entre presente y pasado contrafáctico.',
         type: 'write',
         items: [

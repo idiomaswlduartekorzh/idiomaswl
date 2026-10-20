@@ -257,6 +257,7 @@ const topic: GrammarTopic = {
           { options: ['never', 'ever', 'already', 'yet'], answer: 'never', explain: '"I\'ve never done that" — nunca tuve esa experiencia.' },
           { options: ['ever', 'yet', 'already', 'never'], answer: 'ever', explain: '"Have you ever visited South America?" — pregunta por experiencia de vida.' },
           { options: ['yet', 'ever', 'already', 'never'], answer: 'yet', explain: '"Not yet" = todavía no. Respuesta a pregunta con "yet".' },
+          { options: ['yet', 'already', 'ever', 'never'], answer: 'yet', explain: '"No, not yet" — todavía no.' },
           { options: ['already', 'ever', 'yet', 'never'], answer: 'already', explain: '"Have you already decided?" — pregunta si ya tomó esa decisión.' },
           { options: ['already', 'yet', 'never', 'ever'], answer: 'already', explain: '"I\'ve already booked!" — ya lo hizo, antes de que se esperara.' },
         ],

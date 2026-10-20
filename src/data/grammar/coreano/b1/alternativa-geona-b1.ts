@@ -10,12 +10,12 @@ const topic: GrammarTopic = {
   shortTitle: '-거나 (o bien, o)',
   metaTitle: '-거나 en Coreano B1 — Expresar Alternativas y Opciones',
   description:
-    '-거나 expresa alternativa entre dos o más opciones: "X o Y", "puedes hacer X o Y". Literal: "-거나" es un marcador de alternancia. Diferente de "-거나 -거나": la primera forma solo une dos opciones; la repetición (A-거나 B-거나) expresa "ya sea A o B, no importa cuál". Fundamental para expresar opciones y preferencia en B1.',
+    '-거나 conecta dos o más predicados como alternativas: «hacer X o hacer Y», «ser X o ser Y». Puede repetirse para marcar cada alternativa, pero la indiferencia depende del contexto o de expresiones como 상관없다. Con sustantivos se usa normalmente -(이)나.',
   lead: 'Domina -거나 para expresar alternativas: "o bien..., o bien..."',
   outcomes: [
     'Forma alternativas con -거나',
-    'Usa repetición -거나 -거나 para "ya sea... o..."',
-    'Distingues -거나 de -아니면 (sino, en su lugar)',
+    'Usas -거나 repetido para enumerar varias alternativas',
+    'Distingues -거나 del conector 아니면 (o, si no)',
     'Expresa opciones en contextos de decisión y preferencia',
   ],
 
@@ -26,21 +26,21 @@ const topic: GrammarTopic = {
     decisions: [
       '-거나: une dos opciones, "o bien... o bien..."',
       'Múltiples opciones: A-거나 B-거나 C-거나 (A o B o C)',
-      '-거나 -거나: repetición, "ya sea A o B, no importa" (indiferencia)',
+      '-거나 puede aparecer tras cada predicado: 쉬거나 산책하거나',
       'Con verbos: 가다 → 가거나, 먹다 → 먹거나',
       'Con adjetivos: 예쁘다 → 예쁘거나, 비싸다 → 비싸거나',
       'Negación: 하지 않거나 o 못 하거나',
     ],
     table: [
       ['Estructura', 'Significado', 'Ejemplo'],
-      ['-거나', 'Alternativa simple', '커피거나 차거나 → café o té'],
-      ['-거나 -거나', 'Alternativa indiferente', '뭘 하거나 상관없어요 → no importa qué hagas'],
-      ['다중선택', 'Múltiples opciones', 'A-거나 B-거나 C-거나 → A o B o C'],
+      ['V/A-거나', 'Alternativa entre predicados', '영화를 보거나 책을 읽어요'],
+      ['A-거나 B-거나', 'Enumeración de alternativas', '집에서 쉬거나 산책하거나 해요'],
+      ['N-(이)나', 'Alternativa entre sustantivos', '커피나 차를 마셔요'],
     ],
     mistakes: [
-      '"-나 -나" no es lo mismo que "-거나 -거나"; "-나" es más coloquial.',
-      '"-거나" vs "-아니면": -거나 es opción real; -아니면 es "sino" (negación + alternativa).',
-      '"오거나 가거나" (viene o va) ✓ vs "오거나 뭐거나" (viene o qué sea) ✓ (espontáneidad).',
+      'No uses V-거나 como si fuera la forma habitual para unir solo sustantivos: 커피나 차 ✓.',
+      '-거나 une predicados dentro de una oración; 아니면 puede introducir una segunda alternativa completa: 영화 볼까요? 아니면 산책할까요?',
+      'No confundas -거나 con -든지: -든지 enfatiza que cualquiera de las alternativas es válida o indiferente.',
     ],
   },
 
@@ -55,8 +55,8 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cuál es la diferencia entre -거나 simple y repetido?',
       paragraphs: [
-        'Simple: "커피거나 차" (café o té — tienes que elegir uno). Repetida: "커피거나 차거나" (café o té, me da igual cuál elijas — indiferencia). La repetición añade matiz de que "no importa cuál".',
-        'Ejemplo con indiferencia: "뭐를 하거나 상관없어요" (no importa qué hagas, me da igual). La repetición suaviza hacia la aceptación de cualquier opción.',
+        'Con predicados puede aparecer una sola vez: "영화를 보거나 책을 읽어요". También puede marcarse cada alternativa: "쉬거나 산책하거나 해요".',
+        'La repetición no expresa indiferencia por sí sola. Para «da igual cuál» se añaden expresiones como 상관없어요 o se usa con frecuencia -든지: 무엇을 하든지 상관없어요.',
       ],
     },
     {
@@ -67,10 +67,10 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-거나 vs -아니면 (sino)',
+      heading: '-거나 vs 아니면',
       paragraphs: [
-        '-거나 expresa opciones equivalentes: A o B (ambas válidas). -아니면 expresa negación + alternativa: "no es A, sino B" (B es la alternativa específica). Diferencia de implicatura: -거나 es "elige A o elige B"; -아니면 es "no A, [entonces] B".',
-        'Ejemplo: "이 책이거나 저 책 읽어요" (este libro o ese, ambos válidos) vs "이 책 아니면 저 책 읽어요" (no este, sino ese).',
+        '-거나 es una terminación que se adjunta al primer predicado: 영화를 보거나 책을 읽어요. 아니면 es una palabra independiente que introduce otra opción: 영화를 볼까요? 아니면 책을 읽을까요?',
+        '아니면 puede significar «o» o «si no», pero no rechaza necesariamente la primera opción. Para alternativas entre sustantivos, lo habitual es N-(이)나: 이 책이나 저 책.',
       ],
     },
     {
@@ -83,8 +83,8 @@ const topic: GrammarTopic = {
     {
       heading: '-거나 -거나 para indiferencia',
       paragraphs: [
-        'Repetición añade matiz: "뭐하거나 괜찮아요" (está bien hagas lo que hagas). "언제 와도 돼. 지금이거나 나중이거나" (viene ahora o después, me da igual).',
-        'Es útil en contextos de concesión flexible: "어디든 괜찮아. 서울이거나 부산이거나" (está bien, Seúl o Busan, me da igual).',
+        'La repetición enumera de manera equilibrada: "집에서 쉬거나 밖을 산책하거나 해요" (descanso en casa o paseo fuera).',
+        'Si quieres expresar indiferencia, añádela explícitamente: "집에서 쉬거나 산책하거나, 어느 쪽이든 상관없어요" (descansemos o paseemos, cualquiera está bien).',
       ],
     },
   ],
@@ -96,9 +96,9 @@ const topic: GrammarTopic = {
     scene: [
       ['차를 마시거나 커피를 마셔요.', 'Bebo té o café.'],
       ['영화를 보거나 게임을 할 수 있어요.', 'Puedo ver una película o jugar.'],
-      ['언제 와도 돼. 지금이거나 나중이거나.', 'Está bien. Ven ahora o después, me da igual.'],
+      ['주말에는 집에서 쉬거나 산책해요.', 'El fin de semana descanso en casa o paseo.'],
       ['예쁘거나 싼 옷을 사요.', 'Compro ropa que sea bonita o barata.'],
-      ['뭐하거나 상관없어요.', 'No importa qué hagas.'],
+      ['버스를 타거나 지하철을 타요.', 'Voy en autobús o en metro.'],
       ['내일 비가 오거나 눈이 올 거예요.', 'Mañana podría llover o nevar.'],
     ],
     learnerModes: ['reading', 'typing', 'choosing'],
@@ -110,7 +110,7 @@ const topic: GrammarTopic = {
       {
         id: 'level-1',
         title: 'Forma -거나',
-        tag: 'Múltipla escolha',
+        tag: 'Opción múltiple',
         intro: 'Selecciona la forma correcta con -거나.',
         type: 'choice',
         items: [
@@ -130,8 +130,8 @@ const topic: GrammarTopic = {
           },
           {
             scene: '-거나 -거나 (indiferencia)',
-            lines: [['', '언제 와도 돼. 아침___ 저녁___']],
-            options: ['에', '거나', '때', '고도'],
+            lines: [['', '주말에는 집에서 쉬___ 산책해요.']],
+            options: ['거나', '지만', '면서', '니까'],
             answer: '거나',
             explain: '-거나 -거나 para indiferencia.',
           },
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un diálogo sobre opciones.',
         type: 'guidedText',
         scene: 'Conversación sobre preferencias y decisiones.',
-        text: '뭘 마실거야? 커피[[0]] 차를 마실 수 있어. 뭘 할거야? 영화를 보[[1]] 게임을 할 수 있어. 언제 와? 내일[[2]] 모레에 올 거야.',
+        text: '뭘 마실 거야? 커피를 마시[[0]] 차를 마실 수 있어. 뭘 할 거야? 영화를 보[[1]] 게임을 할 수 있어. 어떻게 올 거야? 버스를 타[[2]] 지하철을 탈 거야.',
         blanks: [
           { options: ['거나', '고도'], answer: '거나', explain: '-거나 para alternativa.' },
           { options: ['거나', '고도'], answer: '거나', explain: '-거나 para alternativa.' },
@@ -176,9 +176,9 @@ const topic: GrammarTopic = {
         scene: 'Descripción de preferencias y alternativas.',
         text: '1. [[0]] (Bebo café o té). 2. [[1]] (Puedo venir mañana o pasado). 3. [[2]] (No importa, cualquier opción).',
         blanks: [
-          { answer: '커피거나 차를 마셔요', accepted: ['-거나', '마셔'], explain: '-거나 con bebidas.' },
-          { answer: '내일이거나 모레에 올 수 있어요', accepted: ['-거나', '올'], explain: '-거나 con tiempo.' },
-          { answer: '뭐거나 상관없어요', accepted: ['-거나', '상관'], explain: '-거나 con indiferencia.' },
+          { answer: '커피를 마시거나 차를 마셔요', accepted: ['-거나', '마셔'], explain: '-거나 conecta los dos predicados.' },
+          { answer: '내일 오거나 모레 올 수 있어요', accepted: ['-거나', '올'], explain: '-거나 conecta las dos posibilidades de venir.' },
+          { answer: '영화를 보거나 책을 읽어도 괜찮아요', accepted: ['-거나', '괜찮'], explain: '-거나 enumera opciones; 괜찮아요 expresa aceptación.' },
         ],
       },
       {
@@ -191,7 +191,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Preferencias personales',
             prompt: 'Describe 3 opciones que te gustan usando -거나.',
-            answer: '나는 커피거나 차를 좋아해요. 주말에는 영화를 보거나 책을 읽어요. 밥은 한국음식이거나 이탈리아음식을 먹고 싶어요.',
+            answer: '아침에는 커피를 마시거나 차를 마셔요. 주말에는 영화를 보거나 책을 읽어요. 저녁에는 한국 음식을 먹거나 이탈리아 음식을 먹고 싶어요.',
             accepted: ['-거나', '선택', '대안'],
             explain: 'Múltiples expresiones de alternativa.',
           },
@@ -199,17 +199,17 @@ const topic: GrammarTopic = {
       },
       {
         id: 'level-6',
-        title: 'Análise de -거나 vs -아니면',
-        tag: 'Análise',
+        title: 'Análisis de -거나 vs -아니면',
+        tag: 'Análisis',
         intro: 'Explica la diferencia de implicatura.',
         type: 'write',
         items: [
           {
             scene: 'Alternativa vs negación',
-            prompt: '"이 책이거나 저 책" vs "이 책 아니면 저 책": ¿cuál es la diferencia?',
-            answer: '"이 책이거나 저 책" = ambos libros son opciones válidas (elige uno). "이 책 아니면 저 책" = no este libro, [entonces] ese libro (este es rechazado). -거나 es opciones equivalentes; -아니면 es negación + específica alternativa.',
-            accepted: ['동등한', '부정', '선택'],
-            explain: '-거나 (opciones equivalentes) vs -아니면 (negación + alternativa).',
+            prompt: '"영화를 보거나 책을 읽어요" vs "영화를 볼까요? 아니면 책을 읽을까요?": ¿qué cambia?',
+            answer: '-거나 se adjunta al primer predicado y une alternativas dentro de una oración. 아니면 es un conector independiente que puede abrir una segunda pregunta u oración completa. Ambos pueden traducirse como «o».',
+            accepted: ['연결 어미', '접속 부사', '선택'],
+            explain: '-거나 es una terminación; 아니면 conecta alternativas de manera independiente.',
           },
         ],
       },

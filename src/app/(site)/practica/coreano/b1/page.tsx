@@ -25,7 +25,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '문법 (Munbeop)',
     desc: '-(으)면, -아/어야 하다, -(으)ㄹ 수 있다, -기 때문에, -는데. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/coreano/b1/gramatica', available: true,
+    count: '20 temas · práctica progresiva', href: '/practica/coreano/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '쓰기 (Sseugi)',
