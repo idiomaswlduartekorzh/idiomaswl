@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState, type MouseEvent, type ReactNode } from 'react';
 import type { ExamAccessDecision } from '@/lib/xpress-commerce/access';
 import { AUTODIDACTA_PLANS } from '@/lib/xpress-commerce/catalog';
@@ -28,13 +28,12 @@ export default function ExamAccessGate({
   children: ReactNode;
 }) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const [gate, setGate] = useState<'start' | 'download' | null>(null);
   const [claiming, setClaiming] = useState(false);
   const [message, setMessage] = useState('');
   const mayStart = !['anonymous', 'locked'].includes(access.level);
   const mayDownload = ['essential', 'autodidacta', 'pro', 'welearn-full'].includes(access.level);
-  const next = `${pathname}${searchParams.size ? `?${searchParams.toString()}` : ''}`;
+  const next = typeof window === 'undefined' ? pathname : `${pathname}${window.location.search}`;
 
   function capture(event: MouseEvent<HTMLDivElement>) {
     const target = event.target as HTMLElement;

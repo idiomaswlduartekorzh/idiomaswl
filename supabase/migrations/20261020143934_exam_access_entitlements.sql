@@ -177,17 +177,20 @@ create table public.xpress_human_review_requests (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id) on delete cascade,
   membership_id uuid not null references public.xpress_memberships(id),
-  submission_id uuid not null unique references public.exam_submissions(id),
+  submission_id uuid not null references public.exam_submissions(id),
   environment text not null check (environment in ('sandbox','production')),
   exam_slug text not null check (
     exam_slug in ('ielts','toefl','sat','icfes','cambridge-b2','goethe','delf-dalf','cils-celi','topik','celpe-bras')
   ),
   review_kind text not null check (review_kind in ('writing','speaking')),
   status text not null default 'pending' check (status in ('pending','assigned','completed','declined')),
+  review_report jsonb,
+  reviewer_id uuid references auth.users(id),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   completed_at timestamptz,
-  check (status='completed' and completed_at is not null or status<>'completed')
+  unique(submission_id,review_kind),
+  check (status='completed' and completed_at is not null and review_report is not null or status<>'completed')
 );
 create index xpress_human_review_membership_period
   on public.xpress_human_review_requests(membership_id,created_at);
@@ -197,7 +200,7 @@ create index xpress_human_review_queue
 alter table public.xpress_human_review_requests enable row level security;
 revoke all on public.xpress_human_review_requests from public,anon,authenticated,service_role;
 grant select,insert on public.xpress_human_review_requests to service_role;
-grant update(status,updated_at,completed_at) on public.xpress_human_review_requests to service_role;
+grant update(status,review_report,reviewer_id,updated_at,completed_at) on public.xpress_human_review_requests to service_role;
 
 create function public.request_xpress_human_review(
   p_user uuid,p_submission uuid,p_kind text,p_environment text
@@ -220,7 +223,7 @@ begin
     where id=p_submission and user_id=p_user and submission_status='submitted';
   if not found then raise exception 'submission_not_owned'; end if;
   select * into existing_request from public.xpress_human_review_requests
-    where submission_id=p_submission;
+    where submission_id=p_submission and review_kind=p_kind;
   if found then return existing_request; end if;
   select membership.* into selected_membership from public.xpress_memberships membership
     where membership.user_id=p_user and membership.environment=p_environment

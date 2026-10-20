@@ -6,6 +6,7 @@ import { getGuidedMockQuestions, GUIDED_MOCK_IDS } from '@/data/icfes/guided-moc
 import { getIcfesPart, ICFES_PARTS } from '@/data/icfes/parts';
 import IcfesJsonLd from '@/app/(site)/practica/icfes-saber-11/_components/IcfesJsonLd';
 import IcfesPartPracticeEngine from '@/app/(site)/practica/icfes-saber-11/_components/IcfesPartPracticeEngine';
+import ExamAccessBoundary from '@/components/exams/ExamAccessBoundary';
 import styles from '@/app/(site)/practica/icfes-saber-11/icfes-learning.module.css';
 
 interface Props { params: Promise<{ exam: string; mockId: string }> }
@@ -36,7 +37,7 @@ export default async function GuidedMockPage({ params }: Props) {
   if (!mock || !firstPart || !questions.length || !GUIDED_MOCK_IDS.includes(mockId as typeof GUIDED_MOCK_IDS[number])) notFound();
   const canonical = `https://www.idiomaswl.com/examenes/icfes/practica/${mockId}/guiado`;
 
-  return (
+  return <ExamAccessBoundary examSlug="icfes" examLabel="ICFES Saber 11" language="ingles">
     <main className={styles.learningPage} style={{ '--part-color': firstPart.color, '--part-soft': firstPart.softColor } as React.CSSProperties}>
       <IcfesJsonLd name={`${mock.title}: modo guiado`} description="Práctica propia abreviada de WeLearn con retroalimentación inmediata." url={canonical} type="Quiz" questionCount={questions.length} currentLabel={`${mock.title} guiado`} />
       <div className={styles.pageWrap}>
@@ -53,5 +54,5 @@ export default async function GuidedMockPage({ params }: Props) {
         <section className={styles.sourceSection}><div><span>Fuente</span><p>Preguntas y claves: práctica original de WeLearn. Capa pedagógica: adaptación estructurada para el motor guiado.</p></div><div><span>Alcance</span><p>El porcentaje mide únicamente este test. Consulta los bancos históricos atribuidos y pendientes de cotejo en el catálogo separado.</p></div></section>
       </div>
     </main>
-  );
+  </ExamAccessBoundary>;
 }

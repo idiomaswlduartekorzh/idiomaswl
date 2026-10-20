@@ -530,7 +530,7 @@ export default function ClasesDeCoreanoPage() {
           <PracticeBand
             accent="#c8202e"
             title="Todo lo que puedes practicar gratis desde hoy"
-            sub="Las cinco habilidades, el diagnóstico TOPIK y el vocabulario con imágenes. Corrección inmediata y sin registro."
+            sub="Las cinco habilidades, el diagnóstico TOPIK y el vocabulario con imágenes. Explora todo y crea una cuenta gratis al comenzar."
             cards={[
               { href: '/practica/coreano/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Partículas, orden de la frase y niveles de formalidad, explicados desde el español en los tres niveles.' },
               { href: '/practica/coreano/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, para fijar pronunciación desde el primer día.' },

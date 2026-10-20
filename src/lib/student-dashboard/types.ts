@@ -15,8 +15,20 @@ export type StudentAttempt = Readonly<{
   reportAvailable: boolean;
   feedbackState: 'not-included' | 'available' | 'processing' | 'delivered' | 'failed';
   humanReviewState?: 'not-included' | 'available' | 'pending' | 'assigned' | 'completed' | 'declined';
+  humanReviews?: readonly StudentHumanReview[];
   teacherFeedback?: Readonly<{ summary: string; strengths: string; improvements: string; nextSteps: string }> | null;
   skills: readonly StudentSkillScore[];
+}>;
+
+export type StudentHumanReview = Readonly<{
+  kind: 'writing' | 'speaking';
+  status: 'pending' | 'assigned' | 'completed' | 'declined';
+  report: Readonly<{
+    summary: string;
+    strengths: string;
+    improvements: string;
+    improvementPlan: string | null;
+  }> | null;
 }>;
 
 export type StudentSkillScore = Readonly<{

@@ -5,7 +5,7 @@ import { objectiveLabel } from '@/lib/course-pricing/catalog';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { authenticatedResultHref, getStudentExamWorkspace, productKindForOffer } from './catalog';
 import { buildStudentProgress, parseSkillScores } from './progress';
-import type { StudentAssignment, StudentAttempt, StudentCourse, StudentDashboardData, StudentSubscription } from './types';
+import type { StudentAssignment, StudentAttempt, StudentCourse, StudentDashboardData, StudentHumanReview, StudentSubscription } from './types';
 import { examCan } from '@/lib/xpress-commerce/access';
 import { parseXpressExamSlug, resolveExamAccessForUser } from '@/lib/xpress-commerce/access.server';
 
@@ -30,6 +30,7 @@ type SubmissionRow = {
 type SubscriptionRow = StudentSubscription & { offer_id: string; exam_slug: string; created_at: string };
 type CourseOrderRow = { id: string; selection: unknown; amount_in_cents: number; classes: number; sessions: number; created_at: string };
 type FeedbackRow = { submission_id: string; status: 'pending' | 'processing' | 'completed' | 'failed'; generated_report?: unknown };
+type HumanReviewRow = { status: StudentHumanReview['status']; review_kind: StudentHumanReview['kind']; review_report?: unknown };
 type SubmissionAccessRow = { submission_id: string; offer_id: string; personalized_feedback: boolean };
 type AssignmentRow = {
   id: string; title: string; instructions: string; resource_url: string | null; due_at: string | null;
@@ -68,6 +69,19 @@ function teacherFeedback(value: unknown): StudentAttempt['teacherFeedback'] {
     || typeof report.improvements !== 'string' || typeof report.nextSteps !== 'string') return null;
   return { summary: report.summary, strengths: report.strengths,
     improvements: report.improvements, nextSteps: report.nextSteps };
+}
+
+function humanReviewReport(value: unknown): StudentHumanReview['report'] {
+  if (!value || typeof value !== 'object') return null;
+  const report = value as Record<string, unknown>;
+  if (typeof report.summary !== 'string' || typeof report.strengths !== 'string'
+    || typeof report.improvements !== 'string') return null;
+  return {
+    summary: report.summary,
+    strengths: report.strengths,
+    improvements: report.improvements,
+    improvementPlan: typeof report.improvementPlan === 'string' ? report.improvementPlan : null,
+  };
 }
 
 function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: FeedbackRow, detailed = true): StudentAttempt {
@@ -114,8 +128,8 @@ export async function loadOwnedPaidAttempt(user: AuthUser, submissionId: string)
       .gt('ends_at', row.created_at).limit(1).maybeSingle(),
     db.from('xpress_personalized_feedback_requests').select('submission_id,status,generated_report').eq('submission_id', submissionId)
       .eq('user_id', user.id).maybeSingle(),
-    db.from('xpress_human_review_requests').select('status').eq('submission_id', submissionId)
-      .eq('user_id', user.id).maybeSingle(),
+    db.from('xpress_human_review_requests').select('status,review_kind,review_report').eq('submission_id', submissionId)
+      .eq('user_id', user.id),
   ]);
   if ([access, credit, membership, feedback, humanReview].some((result) => result.error)) return null;
   if (!access.data && !credit.data && !membership.data) {
@@ -132,10 +146,20 @@ export async function loadOwnedPaidAttempt(user: AuthUser, submissionId: string)
     || membership.data?.offer_id === 'exam-teacher' || Boolean(feedback.data);
   const attempt = toAttempt(row, personalized, (feedback.data as FeedbackRow | null) ?? undefined);
   const offerId = access.data?.offer_id ?? membership.data?.offer_id;
+  const humanReviews = ((humanReview.data ?? []) as HumanReviewRow[]).map((review) => ({
+    kind: review.review_kind,
+    status: review.status,
+    report: review.status === 'completed' ? humanReviewReport(review.review_report) : null,
+  }));
+  const reviewStates = humanReviews.map((review) => review.status);
   return {
     ...attempt,
-    humanReviewState: humanReview.data?.status
-      ?? (offerId === 'exam-auto' || offerId === 'exam-teacher' ? 'available' : 'not-included'),
+    humanReviews,
+    humanReviewState: reviewStates.includes('pending') ? 'pending'
+      : reviewStates.includes('assigned') ? 'assigned'
+        : reviewStates.includes('completed') ? 'completed'
+          : reviewStates.includes('declined') ? 'declined'
+            : (offerId === 'exam-auto' || offerId === 'exam-teacher' ? 'available' : 'not-included'),
   };
 }
 

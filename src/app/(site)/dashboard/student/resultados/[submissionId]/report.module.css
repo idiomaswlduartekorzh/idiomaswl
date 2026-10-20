@@ -15,4 +15,5 @@
 .feedback form{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.feedback form button{appearance:none;border:0;border-radius:999px;background:#172154;color:#fff;padding:11px 16px;font:800 11px/1 var(--font-dm-sans),system-ui,sans-serif;cursor:pointer}.feedback form button:last-child{background:#3157d5}.feedback form button:focus-visible{outline:3px solid #f4ca4e;outline-offset:3px}
 .feedbackGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}
 .feedbackGrid h3{margin:0;color:#213d9e;font-size:12px}.feedbackGrid p{margin:0;color:#3d496e;font-size:12px;line-height:1.6;white-space:pre-wrap}
+.humanReview{margin-top:16px;padding:16px;border:1px solid rgba(49,87,213,.14);border-radius:17px;background:rgba(255,255,255,.62)}.humanReview>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:12px}.humanReview>div:first-child strong{font-size:13px;color:#172154}.humanReview>div:first-child span{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#3157d5}
 @media(max-width:650px){.feedbackGrid{grid-template-columns:1fr}.breakdown{padding:20px}}

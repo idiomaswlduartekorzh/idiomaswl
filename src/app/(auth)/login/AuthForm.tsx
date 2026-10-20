@@ -258,12 +258,12 @@ export default function AuthForm({
 
         {/* Logo */}
         <div>
-          <div style={{ position: 'relative', width: 120, height: 42, marginBottom: '0.5rem' }}>
+          <div style={{ position: 'relative', width: 180, height: 72, marginBottom: '0.25rem' }}>
             <Image
-              src="/images/welearn-logo.png"
+              src="/images/welearn-wordmark-transparent-v2.png"
               alt="Idiomas WeLearn"
               fill
-              sizes="120px"
+              sizes="180px"
               style={{ objectFit: 'contain', objectPosition: 'left center' }}
               priority
             />
@@ -353,7 +353,11 @@ export default function AuthForm({
                   ? 'Elige primero el idioma. Tu cuenta se crea al final.'
                   : registrationStep === 2
                     ? 'Elige tu objetivo y cómo quieres aprender.'
-                    : 'Tu elección está lista. Ahora guarda tu acceso y continúa al pago.'}
+                    : examPlan === 'exam-free'
+                      ? 'Tu acceso gratuito está listo. Crea la cuenta y continúa al examen.'
+                      : studentPath === 'exam'
+                        ? 'Tu plan está listo. Crea la cuenta y continúa al pago seguro.'
+                        : 'Tu plan está listo. Crea la cuenta y continúa con la inscripción.'}
             </p>
             {mode === 'register' && (
               <div aria-label={`Paso ${registrationStep} de 3`} style={{ display: 'flex', gap: 6, marginTop: '1rem' }}>

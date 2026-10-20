@@ -64,6 +64,8 @@ test('human review quota is atomic and limited to five for the 49.900 plan', () 
   assert.match(migration, /perform pg_catalog\.pg_advisory_xact_lock\(pg_catalog\.hashtextextended\(p_user::text,91\)\)/);
   assert.match(migration, /if selected_membership\.offer_id='exam-auto'/);
   assert.match(migration, /if used_requests>=5 then raise exception 'human_review_quota_exhausted'/);
+  assert.match(migration, /unique\(submission_id,review_kind\)/);
+  assert.match(migration, /where submission_id=p_submission and review_kind=p_kind/);
   assert.doesNotMatch(migration, /selected_membership\.offer_id='exam-teacher'[\s\S]{0,100}used_requests>=/);
 });
 

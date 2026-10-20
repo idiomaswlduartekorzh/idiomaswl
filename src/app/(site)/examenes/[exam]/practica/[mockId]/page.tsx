@@ -67,8 +67,14 @@ export default async function PracticePage({ params, searchParams }: { params: P
 
   const examSlug = parseXpressExamSlug(slug);
   if (!examSlug) notFound();
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  let user: { id: string; email_confirmed_at?: string | null } | null = null;
+  try {
+    const supabase = await createClient();
+    const result = await supabase.auth.getUser();
+    user = result.data.user;
+  } catch {
+    // Keep public content discoverable while every protected action remains closed.
+  }
   const authenticated = Boolean(user?.email_confirmed_at);
   let access: ExamAccessDecision = {
     examSlug,

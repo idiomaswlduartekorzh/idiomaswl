@@ -4,6 +4,7 @@ import { getSimulacro } from '@/data/mocks/icfes-simulacros';
 import ExamClient from './ExamClient';
 import IcfesJsonLd from '../../_components/IcfesJsonLd';
 import { sanitizeIcfesMock, simulacroToMockExam } from '@/lib/icfes/exam-registry.server';
+import ExamAccessBoundary from '@/components/exams/ExamAccessBoundary';
 
 interface Props {
   params: Promise<{ examId: string }>;
@@ -40,5 +41,5 @@ export default async function Page({ params }: Props) {
   if (!sim) notFound();
   const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
   const mock = sanitizeIcfesMock(simulacroToMockExam(sim));
-  return <><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un banco histórico atribuido a material ICFES, pendiente de cotejo primario.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient mock={mock} /></>;
+  return <ExamAccessBoundary examSlug="icfes" examLabel="ICFES Saber 11" language="ingles"><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un banco histórico atribuido a material ICFES, pendiente de cotejo primario.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient mock={mock} /></ExamAccessBoundary>;
 }

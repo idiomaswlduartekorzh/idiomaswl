@@ -167,14 +167,18 @@ test('human review quotas are private, atomic, and exposed only for eligible pla
   assert.match(action, /await requireAdmin\(\)/);
   assert.match(action, /reviewer_id: admin\.id/);
   assert.match(queue, /await requireAdmin\(\)/);
-  assert.match(queue, /\.eq\('environment', getWompiServerConfig\(\)\.environment\)/);
+  assert.match(queue, /const environment = getWompiServerConfig\(\)\.environment/);
+  assert.equal((queue.match(/\.eq\('environment', environment\)/g) ?? []).length, 2);
   assert.match(loader, /feedback\?\.status === 'completed' \? teacherFeedback/);
   assert.match(report, /attempt\.teacherFeedback/);
   const accessMigration = read('supabase/migrations/20261020143934_exam_access_entitlements.sql');
   assert.match(accessMigration, /create table public\.xpress_human_review_requests/);
   assert.match(accessMigration, /if used_requests>=5/);
+  assert.match(accessMigration, /unique\(submission_id,review_kind\)/);
+  assert.match(accessMigration, /review_report jsonb/);
   assert.match(accessMigration, /pg_advisory_xact_lock/);
   assert.match(report, /requestHumanXpressReview/);
+  assert.match(queue, /completeHumanXpressReview/);
 });
 
 test('paid reports remain addressable after a subscription ends or another single exam is purchased', () => {

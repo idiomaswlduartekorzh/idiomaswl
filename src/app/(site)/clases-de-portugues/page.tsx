@@ -443,7 +443,7 @@ export default function ClasesDePortuguesPage() {
         <PracticeBand
           accent="#166534"
           title="Todo lo que puedes practicar gratis desde hoy"
-          sub="No tienes que esperar a matricularte. Las cinco habilidades, los simulacros del Celpe-Bras y el diagnóstico de nivel están abiertos, con corrección inmediata y sin registro."
+          sub="No tienes que esperar a matricularte. Explora las cinco habilidades, los simulacros del Celpe-Bras y el diagnóstico de nivel; crea una cuenta gratis al comenzar."
           cards={[
             { href: '/practica/portugues/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Los cimientos del portugués brasileño: artículos, presente, preposiciones y las trampas del portuñol.' },
             { href: '/practica/portugues/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio brasileño — el portugués que de verdad se habla.' },
