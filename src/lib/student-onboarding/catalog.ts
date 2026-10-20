@@ -1,4 +1,4 @@
-import type { XpressOfferId } from '../xpress-commerce/catalog.ts';
+import type { AutodidactaPlanId } from '../xpress-commerce/catalog.ts';
 import { LEVELS, PLANS, selectionPath, type CoursePlanId, type Selection } from '../course-pricing/catalog.ts';
 
 export const STUDENT_PATHS = [
@@ -39,7 +39,7 @@ const XPRESS_CLASS_OBJECTIVES: Readonly<Record<XpressExamSlug, string>> = {
   toefl: 'TOEFL iBT',
   sat: 'SAT Reading and Writing',
   icfes: 'ICFES inglés',
-  'cambridge-b2': 'general',
+  'cambridge-b2': 'Cambridge B2 First',
   goethe: 'Goethe',
   'delf-dalf': 'DELF',
   'cils-celi': 'CILS',
@@ -59,18 +59,34 @@ export function xpressClassSelection(examSlug: XpressExamSlug, plan: CoursePlanI
   };
 }
 
+export function xpressExamForClassSelection(language: string, objective: string): XpressExamSlug | null {
+  const aliases: Readonly<Record<string, XpressExamSlug>> = {
+    'IELTS General Training': 'ielts', DALF: 'delf-dalf', CELI: 'cils-celi', 'TOPIK II': 'topik',
+  };
+  if (aliases[objective]) {
+    const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === aliases[objective]);
+    return exam?.language === language ? aliases[objective] : null;
+  }
+  return (Object.entries(XPRESS_CLASS_OBJECTIVES) as [XpressExamSlug, string][])
+    .find(([examSlug, examObjective]) => {
+      const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === examSlug);
+      return exam?.language === language && examObjective === objective;
+    })?.[0] ?? null;
+}
+
 export function xpressClassPurchasePath(examSlug: XpressExamSlug, options?: { plan?: CoursePlanId; startAtRules?: boolean }): string {
   const path = selectionPath(xpressClassSelection(examSlug, options?.plan));
   return options?.startAtRules ? `${path}&paso=reglamento` : path;
 }
 
-export function guidedLanguagePurchasePath(language: WelearnLanguage, plan: CoursePlanId): string {
-  return `${selectionPath({ language, objective: 'general', plan, level: LEVELS[0] })}&paso=reglamento`;
+export function guidedLanguagePurchasePath(language: WelearnLanguage, plan: CoursePlanId, exam?: XpressExamSlug): string {
+  const selection = exam ? xpressClassSelection(exam, plan) : { language, objective: 'general', plan, level: LEVELS[0] };
+  return `${selectionPath(selection)}&paso=reglamento`;
 }
 
 export type RegistrationIntent =
-  | Readonly<{ path: 'welearn'; language: WelearnLanguage; plan: CoursePlanId }>
-  | Readonly<{ path: 'exam'; language: WelearnLanguage; exam: XpressExamSlug; plan: XpressOfferId }>;
+  | Readonly<{ path: 'welearn'; language: WelearnLanguage; plan: CoursePlanId; exam?: XpressExamSlug }>
+  | Readonly<{ path: 'exam'; language: WelearnLanguage; exam: XpressExamSlug; plan: AutodidactaPlanId }>;
 
 function scalar(value: unknown): string | null {
   return typeof value === 'string' ? value : Array.isArray(value) && typeof value[0] === 'string' ? value[0] : null;
@@ -83,8 +99,16 @@ export function parseRegistrationIntent(value: unknown): RegistrationIntent | nu
   if (path === 'welearn') {
     const language = scalar(input.language);
     const plan = scalar(input.plan);
+    const exam = scalar(input.exam);
     if (WELEARN_LANGUAGE_OPTIONS.some((item) => item.id === language) && PLANS.some((item) => item.id === plan)) {
-      return { path, language: language as WelearnLanguage, plan: plan as CoursePlanId };
+      const matchingExam = exam ? XPRESS_EXAM_OPTIONS.find((item) => item.id === exam && item.language === language) : null;
+      if (exam && !matchingExam) return null;
+      return {
+        path,
+        language: language as WelearnLanguage,
+        plan: plan as CoursePlanId,
+        ...(matchingExam ? { exam: matchingExam.id } : {}),
+      };
     }
     return null;
   }
@@ -93,8 +117,8 @@ export function parseRegistrationIntent(value: unknown): RegistrationIntent | nu
     const exam = scalar(input.exam);
     const plan = scalar(input.plan);
     const matchingExam = XPRESS_EXAM_OPTIONS.find((item) => item.id === exam);
-    if (matchingExam && matchingExam.language === language && (plan === 'exam-single' || plan === 'exam-auto' || plan === 'exam-teacher')) {
-      return { path, language: language as WelearnLanguage, exam: exam as XpressExamSlug, plan };
+    if (matchingExam && matchingExam.language === language && ['exam-free', 'exam-basic', 'exam-auto', 'exam-teacher'].includes(String(plan))) {
+      return { path, language: language as WelearnLanguage, exam: exam as XpressExamSlug, plan: plan as AutodidactaPlanId };
     }
   }
   return null;
@@ -105,8 +129,8 @@ export function registrationIntentMetadata(intent: RegistrationIntent) {
     return {
       student_path: 'welearn' as const,
       language: intent.language,
-      subject: intent.language,
-      target_exam: null,
+      subject: intent.exam ?? intent.language,
+      target_exam: intent.exam ?? null,
       xpress_plan_interest: null,
     };
   }
@@ -123,7 +147,10 @@ export function registrationIntentMetadata(intent: RegistrationIntent) {
 export function registrationCompletionPath(intent: RegistrationIntent, returnTo = '/dashboard'): string {
   const params = new URLSearchParams({ path: intent.path, return: returnTo });
   params.set('language', intent.language);
-  if (intent.path === 'welearn') params.set('plan', intent.plan);
+  if (intent.path === 'welearn') {
+    params.set('plan', intent.plan);
+    if (intent.exam) params.set('exam', intent.exam);
+  }
   else {
     params.set('exam', intent.exam);
     params.set('plan', intent.plan);
@@ -132,6 +159,10 @@ export function registrationCompletionPath(intent: RegistrationIntent, returnTo 
 }
 
 export function registrationPurchasePath(intent: RegistrationIntent): string {
-  if (intent.path === 'exam') return '/suscripcion/examenes';
+  if (intent.path === 'exam') {
+    if (intent.plan === 'exam-free') return '/dashboard/student';
+    return `/suscripcion/examenes?${new URLSearchParams({ exam: intent.exam, plan: intent.plan }).toString()}`;
+  }
+  if (intent.exam) return xpressClassPurchasePath(intent.exam, { plan: intent.plan, startAtRules: true });
   return selectionPath({ language: intent.language, objective: 'general', plan: intent.plan, level: LEVELS[0] });
 }

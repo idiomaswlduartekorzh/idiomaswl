@@ -210,6 +210,21 @@ function clientIp(request: Request): string {
     || 'unknown';
 }
 
+function toeflBasicScore(value: unknown): string {
+  if (!Array.isArray(value)) return 'Resultado guardado';
+  let correct = 0;
+  let total = 0;
+  for (const row of value) {
+    if (!row || typeof row !== 'object') continue;
+    const score = Number((row as { score?: unknown }).score);
+    const max = Number((row as { max?: unknown }).max);
+    if (!Number.isFinite(score) || !Number.isFinite(max) || max <= 0) continue;
+    correct += score;
+    total += max;
+  }
+  return total > 0 ? `${correct}/${total}` : 'Resultado guardado';
+}
+
 function scoreObjective(mock: MockExam, answers: ToeflObjectiveAnswers, attemptId: string) {
   const questions = expectedQuestions(mock);
   let readingCorrect = 0;
@@ -388,7 +403,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   const admin = createAdminClient();
   const { data: submission, error: readError } = await admin
     .from('exam_submissions')
-    .select('id, user_id, speaking_audio_paths, speaking_audio_metadata, submission_status')
+    .select('id, user_id, skills, speaking_audio_paths, speaking_audio_metadata, submission_status')
     .eq('id', submissionId)
     .eq('exam_slug', 'toefl')
     .eq('mock_id', mockId)
@@ -398,8 +413,8 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   if (submission.submission_status === 'submitted') {
     const xpressAccess = submission.user_id
       ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'toefl', submissionId })
-      : { access: 'public' as const, personalizedFeedback: false };
-    return Response.json({ ok: true, submissionId, xpressAccess: xpressAccess.access });
+      : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
+    return Response.json({ ok: true, submissionId, basicScore: toeflBasicScore(submission.skills), xpressAccess: xpressAccess.access });
   }
 
   const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
@@ -427,8 +442,8 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
   const xpressAccess = submission.user_id
     ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'toefl', submissionId })
-    : { access: 'public' as const, personalizedFeedback: false };
-  return Response.json({ ok: true, submissionId, xpressAccess: xpressAccess.access });
+    : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
+  return Response.json({ ok: true, submissionId, basicScore: toeflBasicScore(submission.skills), xpressAccess: xpressAccess.access });
 }
 
 export async function handleToeflSubmissionRequest(request: Request, mockId: string): Promise<Response> {

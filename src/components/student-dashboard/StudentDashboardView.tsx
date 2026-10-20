@@ -94,9 +94,6 @@ function Assignments({ data, preview }: { data: StudentDashboardData; preview: b
 function nextAction(data: StudentDashboardData) {
   const { access } = data;
   if (!data.dataAvailable) return { title: 'No pudimos comprobar tu acceso', body: 'Tu contenido seguirá bloqueado hasta que podamos verificar tus compras.', href: '/contacto', cta: 'Pedir ayuda' };
-  if (access.product === 'single' && access.singleAttemptAvailable && access.exam?.mocks[0]) {
-    return { title: 'Tu intento está disponible', body: `Elige un simulacro de ${access.exam.name}. Al enviarlo, encontrarás aquí el resultado y su reporte.`, href: access.exam.mocks[0].href, cta: 'Elegir simulacro' };
-  }
   if (access.state === 'active' && access.exam?.mocks[0]) {
     const completed = new Set(data.attempts.map((attempt) => attempt.mockId).filter(Boolean));
     const nextMock = access.exam.mocks.find((mock) => !completed.has(mock.id)) ?? access.exam.mocks[0];
@@ -115,15 +112,15 @@ function nextAction(data: StudentDashboardData) {
   return { title: 'Escoge cómo quieres practicar', body: 'Selecciona un examen y un plan para activar tu espacio personal.', href: '/registro', cta: 'Ver planes' };
 }
 
-function ProductCard({ data }: { data: StudentDashboardData }) {
+function ProductCard({ data, cardId = 'primary' }: { data: StudentDashboardData; cardId?: string }) {
   const { access, subscription } = data;
   const product = access.product ? STUDENT_PRODUCT_COPY[access.product] : null;
   const isAvailable = access.state === 'active' || access.state === 'consumed';
-  return <section className={styles.productCard} aria-labelledby="product-title">
+  return <section className={styles.productCard} aria-labelledby={`product-title-${cardId}`}>
     <div className={styles.productTop}>
       <div>
         <p className={styles.eyebrow}>Mi acceso Xpress</p>
-        <h2 id="product-title">{product?.label ?? 'Sin plan activo'}</h2>
+        <h2 id={`product-title-${cardId}`}>{product?.label ?? 'Sin plan activo'}</h2>
         <p>{product?.summary ?? 'Cuando una compra quede aprobada, aparecerá aquí automáticamente.'}</p>
       </div>
       <span className={`${styles.status} ${isAvailable ? styles.statusActive : styles.statusQuiet}`}>
@@ -133,14 +130,14 @@ function ProductCard({ data }: { data: StudentDashboardData }) {
     {product ? <dl className={styles.productFacts}>
       <div><dt>Plan</dt><dd>{product.price} · {product.billing}</dd></div>
       <div><dt>Examen</dt><dd>{access.exam ? `${access.exam.flag} ${access.exam.name}` : 'Por confirmar'}</dd></div>
-      <div><dt>{access.product === 'single' ? 'Compra' : 'Vigencia actual'}</dt><dd>{access.product === 'single' ? dateLabel(access.startsAt) : `${dateLabel(access.startsAt)} – ${dateLabel(access.endsAt)}`}</dd></div>
+      <div><dt>Vigencia actual</dt><dd>{access.endsAt ? `${dateLabel(access.startsAt)} – ${dateLabel(access.endsAt)}` : `Desde ${dateLabel(access.startsAt)}`}</dd></div>
     </dl> : null}
     {subscription ? <div className={styles.subscriptionStrip}>
       <div><span>Suscripción</span><strong>{STATUS_COPY[subscription.status]}</strong></div>
       <div><span>{subscription.status === 'cancel_at_period_end' ? 'Acceso hasta' : 'Próximo cobro'}</span><strong>{dateLabel(subscription.status === 'cancel_at_period_end' ? subscription.periodEndsAt : subscription.nextChargeAt)}</strong></div>
       <Link href="/suscripcion/examenes">Administrar</Link>
     </div> : null}
-    {access.product === 'personalized' && access.state === 'active' ? <div className={styles.aiNotice}>
+    {(access.product === 'personalized' || access.product === 'welearn') && access.state === 'active' ? <div className={styles.aiNotice}>
       <span aria-hidden="true">✦</span><p><strong>Revisión personalizada incluida.</strong> Recibirás observaciones concretas sobre tus resultados y los aspectos que conviene reforzar.</p>
     </div> : null}
   </section>;
@@ -150,7 +147,7 @@ function AttemptRow({ attempt }: { attempt: StudentDashboardData['attempts'][num
   return <article className={styles.attempt}>
     <div className={styles.score} aria-label={attempt.score === null ? attempt.scoreLabel : `${attempt.score} por ciento`}><strong>{attempt.score ?? '✓'}</strong>{attempt.score !== null ? <span>%</span> : null}</div>
     <div className={styles.attemptBody}><span>{dateLabel(attempt.createdAt)} · {attempt.examFlag} {attempt.examName}</span><h3>{attempt.title}</h3><p>{attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible' : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado' : attempt.feedbackState === 'failed' ? 'Retomaremos tu revisión' : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : 'Corrección automática guardada'}</p></div>
-    <Link href={attempt.reportHref}>Ver reporte <span aria-hidden="true">→</span></Link>
+    <Link href={attempt.reportHref}>{attempt.reportAvailable ? 'Ver reporte' : 'Seguir practicando'} <span aria-hidden="true">→</span></Link>
   </article>;
 }
 
@@ -168,7 +165,7 @@ function Attempts({ data }: { data: StudentDashboardData }) {
 function MockLibrary({ data }: { data: StudentDashboardData }) {
   const { access } = data;
   const canPractice = access.state === 'active';
-  const mocks = canPractice ? access.exam?.mocks.slice(0, access.product === 'single' ? 4 : 8) ?? [] : [];
+  const mocks = canPractice ? access.exam?.mocks.slice(0, 8) ?? [] : [];
   if (!access.exam || !canPractice) return null;
   const completed = new Set(data.attempts.map((attempt) => attempt.mockId).filter(Boolean));
   return <section className={styles.section} aria-labelledby="mocks-title">
@@ -197,11 +194,13 @@ function Courses({ courses, examName }: { courses: StudentDashboardData['courses
 
 export default function StudentDashboardView({ data, preview = false }: { data: StudentDashboardData; preview?: boolean }) {
   const action = nextAction(data);
-  const guidedOnly = data.courses.length > 0 && !data.access.product;
+  const guidedOnly = data.courses.length > 0 && data.accesses.length === 0 && !data.access.product;
   const initial = data.name.trim().charAt(0).toUpperCase() || 'E';
   const completed = data.attempts.length;
   const best = data.attempts.reduce<number | null>((value, attempt) => attempt.score === null ? value : Math.max(value ?? 0, attempt.score), null);
-  return <div className={styles.shell} data-testid="student-dashboard" data-plan={data.access.product ?? 'none'}>
+  const activeAccesses = data.accesses.length ? data.accesses : data.access.product ? [data.access] : [];
+  const availableMocks = activeAccesses.reduce((sum, access) => sum + (access.exam?.mocks.length ?? 0), 0);
+  return <div className={styles.shell} data-testid="student-dashboard" data-plan={activeAccesses.map((access) => access.product).filter(Boolean).join(',') || 'none'}>
     <aside className={styles.sidebar}>
       <Link className={styles.brand} href="/"><b>We</b>Learn<span>Student space</span></Link>
       <nav aria-label="Panel del estudiante">
@@ -226,11 +225,13 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
           <div><p className={styles.eyebrow}>Siguiente paso</p><h2>{action.title}</h2><p>{action.body}</p></div><Link href={action.href}>{action.cta} <span aria-hidden="true">→</span></Link>
         </section>
         {guidedOnly ? <div className={styles.metrics}><article><span>Clases contratadas</span><strong>{data.courses.reduce((sum, course) => sum + course.classes, 0)}</strong><small>en tus planes de estudio</small></article><article><span>Prácticas terminadas</span><strong>{data.courseProgress.completedActivities}</strong><small>guardadas en tu cuenta</small></article><article><span>Tareas pendientes</span><strong>{data.assignments.filter((item) => item.status === 'assigned').length}</strong><small>de tu profesor</small></article></div>
-          : <div className={styles.metrics}><article><span>Intentos</span><strong>{completed}</strong><small>guardados en tu cuenta</small></article><article><span>Mejor resultado</span><strong>{best === null ? '—' : `${best}%`}</strong><small>{best === null ? 'Completa tu primer mock' : 'entre tus intentos'}</small></article><article><span>Simulacros disponibles</span><strong>{data.access.state === 'active' ? (data.access.product === 'single' ? '1' : data.access.exam?.mocks.length ?? 0) : '0'}</strong><small>{data.access.product === 'single' ? data.access.state === 'consumed' ? 'intento utilizado' : 'un intento comprado' : 'de tu familia de examen'}</small></article></div>}
-        {guidedOnly ? <Courses courses={data.courses} /> : <ProductCard data={data} />}
+          : <div className={styles.metrics}><article><span>Intentos</span><strong>{completed}</strong><small>guardados en tu cuenta</small></article><article><span>Mejor resultado</span><strong>{best === null ? '—' : `${best}%`}</strong><small>{best === null ? 'Completa tu primer mock' : 'entre tus intentos'}</small></article><article><span>Simulacros disponibles</span><strong>{availableMocks}</strong><small>en {activeAccesses.length || 0} examen{activeAccesses.length === 1 ? '' : 'es'}</small></article></div>}
+        {guidedOnly ? <Courses courses={data.courses} /> : activeAccesses.length
+          ? <div>{activeAccesses.map((access) => <ProductCard key={access.exam?.slug ?? access.product ?? 'access'} cardId={access.exam?.slug ?? 'access'} data={{ ...data, access, subscription: data.subscriptions.find((item) => item.examSlug === access.exam?.slug) ?? null }} />)}</div>
+          : <ProductCard data={data} />}
         {guidedOnly ? <CourseProgress data={data} /> : <LearningCurve data={data} />}
         <Assignments data={data} preview={preview} />
-        <div id="simulacros"><MockLibrary data={data} /></div>
+        <div id="simulacros">{activeAccesses.map((access) => <MockLibrary key={access.exam?.slug ?? access.product ?? 'access'} data={{ ...data, access }} />)}</div>
         <div id="resultados">{data.access.product || data.attempts.length ? <Attempts data={data} /> : null}</div>
         {guidedOnly ? null : <Courses courses={data.courses} examName={data.access.exam?.name} />}
       </div>

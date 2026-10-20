@@ -27,7 +27,7 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "tmp/english-reference-resources/data.json"
-PUBLIC_PDF_DIR = ROOT / "public/downloads/ingles-recursos"
+PUBLIC_PDF_DIR = ROOT / "private/site-materials/ingles-recursos"
 OUTPUT_PDF_DIR = ROOT / "output/pdf/english-resources"
 IMAGE_DIR = ROOT / "public/images/ingles/recursos"
 BACKGROUND_SOURCE = Path(

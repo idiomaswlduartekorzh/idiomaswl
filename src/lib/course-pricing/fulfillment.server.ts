@@ -3,6 +3,7 @@ import {randomUUID} from 'node:crypto';
 import {createAdminClient} from '@/lib/supabase/admin';
 import {LANGUAGES,PLANS,formatCOP,objectiveLabel} from './catalog';
 import {escapeEmailHtml,sendCourseEmail} from './email.server';
+import {xpressExamForClassSelection} from '@/lib/student-onboarding/catalog';
 
 type JobKind='student_welcome'|'owner_notification';
 type CourseOrderRecord={id:string;reference:string;amount_in_cents:number;classes:number;contact:unknown;selection:unknown};
@@ -48,13 +49,20 @@ async function welcomeStudent(order:CourseOrderRecord) {
     accountActionLink=generated.data.properties.action_link;
   }
   const selection=order.selection as {language:string;objective:string;level:string;plan:string};
+  const assignedExam=xpressExamForClassSelection(selection.language,selection.objective);
   const studentPlan=selection.plan==='intensivo'||selection.plan==='diario'?'intensivo':'preparacion';
   const {error:profileError}=await admin.from('profiles').upsert({
     id:profile.id,email:contact.studentEmail,name:contact.studentName,full_name:contact.studentName,
-    language:selection.language,level:selection.level,subject:selection.language,plan:studentPlan,role:'user',
-    student_path:'welearn',target_exam:null,xpress_plan_interest:null,onboarding_completed_at:new Date().toISOString(),enrolled_at:new Date().toISOString(),
+    language:selection.language,level:selection.level,subject:assignedExam??selection.language,plan:studentPlan,role:'user',
+    student_path:'welearn',target_exam:assignedExam,xpress_plan_interest:null,onboarding_completed_at:new Date().toISOString(),enrolled_at:new Date().toISOString(),
   },{onConflict:'id'});
   if(profileError)throw new Error('student_profile_update_failed');
+  if(assignedExam){
+    const {error:accessError}=await admin.rpc('grant_welearn_exam_access',{
+      p_user:profile.id,p_exam:assignedExam,p_source_reference:`course-order:${order.id}`,p_created_by:null,
+    });
+    if(accessError)throw new Error('welearn_exam_access_failed');
+  }
   const {error:orderError}=await admin.from('course_orders').update({user_id:profile.id}).eq('id',order.id).is('user_id',null);
   if(orderError)throw new Error('student_order_link_failed');
   const language=LANGUAGES.find(item=>item.id===selection.language)?.name??selection.language;

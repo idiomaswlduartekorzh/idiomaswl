@@ -6,12 +6,12 @@ import { XPRESS_EXAM_OPTIONS, xpressClassPurchasePath, type XpressExamSlug } fro
 import { activeXpressMembership } from '@/lib/xpress-commerce/payments.server';
 import { currentXpressSubscription, wompiAcceptanceLinks } from '@/lib/xpress-commerce/subscriptions.server';
 import { getWompiServerConfig } from '@/lib/wompi/server';
-import type { XpressOfferId } from '@/lib/xpress-commerce/catalog';
+import type { XpressMembershipOfferId } from '@/lib/xpress-commerce/catalog';
 import XpressMembershipClient from './XpressMembershipClient';
 
 export const metadata: Metadata = {
   title: 'Membresía de exámenes | WeLearn',
-  description: 'Elige un examen individual o una suscripción recurrente y añade clases con docente si las necesitas.',
+  description: 'Elige un plan autodidacta para un examen y añade clases con docente si las necesitas.',
   robots: { index: false, follow: false },
 };
 
@@ -22,23 +22,25 @@ export default async function XpressMembershipPage({ searchParams }: { searchPar
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect(`/login?next=${encodeURIComponent('/suscripcion/examenes')}`);
 
+  const params = await searchParams;
   const { data: profile } = await supabase.from('profiles')
     .select('student_path,target_exam,xpress_plan_interest').eq('id', user.id).single();
   if (profile?.student_path !== 'exam') redirect('/precios');
-  const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === profile.target_exam);
+  const requestedExam = typeof params.exam === 'string' ? params.exam : profile.target_exam;
+  const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === requestedExam);
   if (!exam) redirect('/registro?error=seleccion');
 
-  const params = await searchParams;
   const orderId = typeof params.orden === 'string' ? params.orden : null;
   const transactionId = typeof params.id === 'string' ? params.id : null;
   const [membership, subscription, wompiDocuments] = await Promise.all([
-    activeXpressMembership(user.id),
-    currentXpressSubscription(user.id),
+    activeXpressMembership(user.id, exam.id),
+    currentXpressSubscription(user.id, exam.id),
     wompiAcceptanceLinks().catch(() => null),
   ]);
-  const initialOfferId: XpressOfferId = ['exam-single', 'exam-auto', 'exam-teacher'].includes(String(profile.xpress_plan_interest))
-    ? profile.xpress_plan_interest as XpressOfferId
-    : 'exam-auto';
+  const requestedPlan = typeof params.plan === 'string' ? params.plan : profile.xpress_plan_interest;
+  const initialOfferId: XpressMembershipOfferId = ['exam-basic', 'exam-auto', 'exam-teacher'].includes(String(requestedPlan))
+    ? requestedPlan as XpressMembershipOfferId
+    : 'exam-basic';
 
   return <XpressMembershipClient
     examSlug={exam.id as XpressExamSlug}

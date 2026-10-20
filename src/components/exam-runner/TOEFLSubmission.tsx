@@ -29,7 +29,7 @@ interface Props {
   speakingPrompts: ToeflSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: ToeflSubmissionReceipt, access: ExamAccessOutcome, leadReceipt: string) => Promise<void>;
+  onSuccess: (receipt: ToeflSubmissionReceipt, basicScore: string, access: ExamAccessOutcome, leadReceipt: string) => Promise<void>;
 }
 
 type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking';
@@ -197,7 +197,7 @@ export function TOEFLSubmission({
         access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'toefl', attemptRef: prepared.submissionId });
       }
       if (!leadReceiptRef.current) throw new Error('No pudimos validar el registro del estudiante.');
-      await onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, access, leadReceiptRef.current);
+      await onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, completed.basicScore, access, leadReceiptRef.current);
     } catch (caught) {
       setState('idle');
       showError(readError(caught));

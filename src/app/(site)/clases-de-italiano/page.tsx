@@ -445,7 +445,7 @@ export default function ClasesDeItalianoPage() {
         <PracticeBand
           accent="#009246"
           title="Todo lo que puedes practicar gratis desde hoy"
-          sub="No tienes que esperar a matricularte. Las cinco habilidades, los simulacros del CILS y el diagnóstico de nivel están abiertos, con corrección inmediata y sin registro."
+          sub="No tienes que esperar a matricularte. Explora las cinco habilidades, los simulacros del CILS y el diagnóstico de nivel; crea una cuenta gratis al comenzar."
           cards={[
             { href: '/practica/italiano/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Artículos, género, presente, passato prossimo y congiuntivo. Ejercicios interactivos con corrección al instante.' },
             { href: '/practica/italiano/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo — el italiano que de verdad se habla en Italia.' },

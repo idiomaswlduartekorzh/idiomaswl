@@ -347,7 +347,7 @@ export default function IcfesPartPracticeEngine({
       <div className={styles.practiceIntro} style={{ '--part-color': part.color } as React.CSSProperties}>
         <div className={styles.practiceIntroIcon} aria-hidden="true">{part.icon}</div>
         <div>
-          <p className={styles.kicker}>Práctica guiada · sin registro</p>
+          <p className={styles.kicker}>Práctica guiada · tu primera cuenta es gratis</p>
           <h2>Aprende con cada respuesta</h2>
           <p>Responde {questions.length} preguntas. Después de confirmar verás la evidencia, la razón correcta, el error de cada distractor y una microlección.</p>
           <div className={styles.practiceMeta}>
@@ -355,7 +355,7 @@ export default function IcfesPartPracticeEngine({
             <span>✓ Feedback inmediato</span>
             <span>↻ Progreso local: {savedAttempts} respuestas</span>
           </div>
-          <button type="button" className={styles.primaryButton} onClick={start}>Comenzar práctica</button>
+          <button type="button" data-exam-start="true" className={styles.primaryButton} onClick={start}>Comenzar práctica</button>
         </div>
       </div>
     );

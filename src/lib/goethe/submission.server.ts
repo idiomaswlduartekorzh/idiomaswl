@@ -16,7 +16,8 @@ import goetheA1Set9 from '@/data/mocks/goethe-a1-set-9'
 import goetheA1Set10 from '@/data/mocks/goethe-a1-set-10'
 import type { FormGroupQuestion, MCQQuestion, MockExam, SpeakQuestion } from '@/data/mocks/types'
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server'
-import { verifyExamLeadReceipt } from '@/lib/exams/lead-receipt.server'
+import { currentExamScoreAccess, hasExamScoreAccess } from '@/lib/exams/score-access.server'
+import { examCan } from '@/lib/xpress-commerce/access'
 import { scoreGoetheAutomatic } from './scoring'
 import {
   getGoetheA1ContentVersion,
@@ -167,8 +168,8 @@ function objectiveSnapshot(mock: MockExam) {
   )
 }
 
-async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown, leadReceipt: unknown): Promise<Response> {
-  if (!verifyExamLeadReceipt(leadReceipt, 'goethe', mockId)) return jsonError('Registra tus datos antes de enviar el examen.', 403)
+async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown, _leadReceipt: unknown): Promise<Response> {
+  if (!await hasExamScoreAccess('goethe', request)) return jsonError('Inicia sesión y activa Goethe antes de enviar el examen.', 403)
   const resolved = resolveMock(mockId)
   if (!resolved) return jsonError('Este simulacro todavía no admite entregas verificables.', 404)
   const { mock, contentVersion } = resolved
@@ -262,8 +263,15 @@ async function completeSubmission(mockId: string, submissionId: unknown, token: 
   }
   const xpressAccess = submission.user_id
     ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'goethe', submissionId })
-    : { access: 'public' as const, personalizedFeedback: false }
-  return Response.json({ ok: true, submissionId, completionToken: token, automatic, xpressAccess: xpressAccess.access })
+    : { access: 'public' as const, detailedResults: false, personalizedFeedback: false }
+  return Response.json({
+    ok: true,
+    submissionId,
+    completionToken: token,
+    automatic: xpressAccess.detailedResults ? automatic : null,
+    totalScore: automatic.automaticScaled,
+    xpressAccess: xpressAccess.access,
+  })
 }
 
 export async function handleGoetheSubmissionRequest(request: Request, mockId: string): Promise<Response> {
@@ -275,6 +283,10 @@ export async function handleGoetheSubmissionRequest(request: Request, mockId: st
 }
 
 export async function handleGoetheResultRequest(request: Request, mockId: string): Promise<Response> {
+  const access = await currentExamScoreAccess('goethe')
+  if (!access || !examCan(access.level, 'view-detailed-results')) {
+    return jsonError('Este plan solo incluye el puntaje total.', 403)
+  }
   const url = new URL(request.url)
   const submissionId = url.searchParams.get('submissionId')
   const token = url.searchParams.get('token')

@@ -4,31 +4,31 @@ import { useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { redeemExamAccessCodeFromBrowser } from '@/lib/exam-access-codes/client';
 import type { ExamAccessCodeExam } from '@/lib/exam-access-codes/config';
-import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
+import { XPRESS_OFFERS, type XpressMembershipOfferId } from '@/lib/xpress-commerce/catalog';
 import styles from './ExamResultOffers.module.css';
 
-const OFFER_COPY: Record<XpressOfferId, { eyebrow: string; title: string; billing: string; benefits: string[]; action: string; featured?: boolean }> = {
-  'exam-single': {
-    eyebrow: 'UN SOLO EXAMEN',
-    title: 'Examen con informe',
-    billing: 'pago único',
-    benefits: ['Un nuevo simulacro completo', 'Revisión pregunta por pregunta', 'Explicaciones y áreas prioritarias'],
-    action: 'Elegir examen individual',
+const OFFER_COPY: Record<XpressMembershipOfferId, { eyebrow: string; title: string; billing: string; benefits: string[]; action: string; featured?: boolean }> = {
+  'exam-basic': {
+    eyebrow: 'ESENCIAL · 30 DÍAS',
+    title: 'Autodidacta Esencial',
+    billing: 'renovación cada 30 días',
+    benefits: ['Todo el ecosistema del examen', 'Revisión pregunta por pregunta', 'Descargas y retroalimentación automática'],
+    action: 'Elegir Esencial',
   },
   'exam-auto': {
     eyebrow: 'XPRESS · 30 DÍAS',
-    title: 'Preparación automática',
+    title: 'Autodidacta',
     billing: 'renovación cada 30 días',
-    benefits: ['Simulacros del examen disponibles', 'Informes detallados e historial', 'Progreso y ruta de estudio'],
-    action: 'Elegir Xpress',
+    benefits: ['Todo lo incluido en Esencial', '5 revisiones humanas por periodo', 'Writing o Speaking'],
+    action: 'Elegir Autodidacta',
     featured: true,
   },
   'exam-teacher': {
     eyebrow: 'XPRESS + TUTOR · 30 DÍAS',
-    title: 'Feedback personalizado',
+    title: 'Autodidacta Pro',
     billing: 'renovación cada 30 días',
-    benefits: ['Todo lo incluido en Xpress', 'Revisión personalizada de un tutor', 'Entrega en el panel dentro de 24 horas'],
-    action: 'Elegir Xpress + tutor',
+    benefits: ['Revisiones humanas', 'Retroalimentación integral', 'Plan de mejora personalizado'],
+    action: 'Elegir Pro',
   },
 };
 
@@ -36,7 +36,7 @@ function formatCop(amountInCents: number): string {
   return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(amountInCents / 100);
 }
 
-function registrationHref(examSlug: ExamAccessCodeExam, offerId: XpressOfferId): string {
+function registrationHref(examSlug: ExamAccessCodeExam, offerId: XpressMembershipOfferId): string {
   const params = new URLSearchParams({
     path: 'exam',
     language: examSlug === 'goethe' ? 'aleman' : 'ingles',
@@ -90,7 +90,7 @@ export default function ExamResultOffers({
     onUnlocked?.();
   }
 
-  function chooseOffer(offerId: XpressOfferId) {
+  function chooseOffer(offerId: XpressMembershipOfferId) {
     try { window.sessionStorage.setItem('wl_xpress_pending_submission', `${examSlug}:${attemptRef}`); } catch {}
     window.location.assign(registrationHref(examSlug, offerId));
   }
@@ -130,7 +130,7 @@ export default function ExamResultOffers({
         </section>
 
         <section className={styles.offers} aria-labelledby={`${examSlug}-offers-title`}>
-          <div className={styles.sectionHeading}><p className={styles.eyebrow}>ELIGE EL ALCANCE</p><h2 id={`${examSlug}-offers-title`}>Un examen completo o preparación continua</h2><p>El primero habilita un nuevo intento completo en tu cuenta. Los planes Xpress se renuevan cada 30 días.</p></div>
+          <div className={styles.sectionHeading}><p className={styles.eyebrow}>ELIGE TU NIVEL</p><h2 id={`${examSlug}-offers-title`}>Continúa con todo el ecosistema de {examName}</h2><p>Los tres planes desbloquean práctica, simulacros cronometrados y explicaciones del examen elegido durante 30 días.</p></div>
           <div className={styles.offerGrid}>{XPRESS_OFFERS.map(offer => {
             const copy = OFFER_COPY[offer.id];
             return <article key={offer.id} className={`${styles.offer} ${copy.featured ? styles.featured : ''}`}>

@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
 import { getIcfesSecureExam } from '@/lib/icfes/exam-registry.server';
 import { gradeIcfesAttempt, persistIcfesAttempt, persistIcfesSubmissionSummary } from '@/lib/icfes/grading.server';
-import { validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
+import { toIcfesTotalResult, validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
 import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
 import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
 import type { MCQQuestion } from '@/data/mocks/types';
-import { saveLead } from '@/lib/actions/saveLead';
-import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
+import { currentExamScoreAccess } from '@/lib/exams/score-access.server';
+import { examCan } from '@/lib/xpress-commerce/access';
 
 export const runtime = 'nodejs';
 
@@ -17,6 +17,10 @@ function json(body: unknown, status = 200) {
 }
 
 export async function POST(request: Request): Promise<Response> {
+  const access = await currentExamScoreAccess('icfes');
+  if (!access || !examCan(access.level, 'start-exam') || !examCan(access.level, 'save-result')) {
+    return json({ ok: false, error: 'Inicia sesión y activa ICFES para guardar el resultado.' }, 403);
+  }
   let body: Record<string, unknown>;
   try { body = await request.json() as Record<string, unknown>; }
   catch { return json({ ok: false, error: 'Solicitud inválida.' }, 400); }
@@ -29,22 +33,8 @@ export async function POST(request: Request): Promise<Response> {
     .filter((question): question is MCQQuestion => question.type === 'mcq' || question.type === 'dialog');
   const answers = validateIcfesAnswers(body.responses, questions);
   if (!answers) return json({ ok: false, error: 'Las respuestas no corresponden a este simulacro.' }, 400);
-  const lead = body.lead && typeof body.lead === 'object' && !Array.isArray(body.lead)
-    ? body.lead as Record<string, unknown> : null;
-  const name = typeof lead?.name === 'string' ? lead.name.trim() : '';
-  const email = typeof lead?.email === 'string' ? lead.email.trim() : '';
-  const whatsapp = typeof lead?.whatsapp === 'string' ? lead.whatsapp.trim() : '';
-  if (name.length < 2 || !isPlausibleEmail(email) || !isPlausibleWhatsapp(whatsapp) || lead?.contactConsent !== true) {
-    return json({ ok: false, error: 'Confirma tus datos y la autorización para consultar el resultado.' }, 400);
-  }
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
-  const savedLead = await saveLead({
-    name, email, whatsapp, examSlug: 'icfes',
-    examScore: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
-    source: 'icfes-practica', contactConsent: true,
-  });
-  if (!savedLead.ok || !savedLead.id) return json({ ok: false, error: savedLead.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.' }, 503);
   try {
     await persistIcfesSubmissionSummary({ examId, examTitle: found.exam.title, result });
   }
@@ -55,7 +45,8 @@ export async function POST(request: Request): Promise<Response> {
   // Mocks remain usable until the private attempt schema is approved and enabled.
   // The admin summary above is always stored, but no attempt cookie is issued because
   // there is no persisted paid report to access while private persistence is disabled.
-  if (!isIcfesPersistenceEnabled()) return json({ ok: true, result });
+  const browserResult = examCan(access.level, 'view-detailed-results') ? result : toIcfesTotalResult(result);
+  if (!isIcfesPersistenceEnabled()) return json({ ok: true, result: browserResult });
   try {
     const persisted = await persistIcfesAttempt({ attemptId: payload.attemptId, examId, token: String(body.attemptToken), answers, result });
     if (!persisted) return json({ ok: false, error: 'El guardado privado del intento no está habilitado.' }, 503);
@@ -64,7 +55,7 @@ export async function POST(request: Request): Promise<Response> {
     console.error('[icfes-grade] secure persistence failed:', error instanceof Error ? error.message : 'unknown');
     return json({ ok: false, error: 'No pudimos guardar el intento seguro.' }, 503);
   }
-  const response = json({ ok: true, result });
+  const response = json({ ok: true, result: browserResult });
   response.cookies.set(ICFES_ATTEMPT_COOKIE, String(body.attemptToken), {
     httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'lax', path: '/', maxAge: 6 * 60 * 60,
   });

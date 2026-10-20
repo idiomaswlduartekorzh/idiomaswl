@@ -4,6 +4,7 @@ import { isVerifiedAdminUser } from '@/lib/config/admins';
 import { createClient } from '@/lib/supabase/server';
 import { loadOwnedPaidAttempt, loadStudentDashboard } from '@/lib/student-dashboard/data.server';
 import styles from './report.module.css';
+import { requestHumanXpressReview } from '@/lib/actions/xpressReviews';
 
 export const metadata = { title: 'Mi reporte — WeLearn', robots: { index: false, follow: false } };
 
@@ -19,6 +20,8 @@ export default async function StudentResultPage({ params }: { params: Promise<{ 
   if (!dashboard.dataAvailable) notFound();
   const attempt = await loadOwnedPaidAttempt(user, submissionId);
   if (!attempt) notFound();
+  const requestedHumanReviewKinds = new Set(attempt.humanReviews?.map((review) => review.kind) ?? []);
+  const availableHumanReviewKinds = (['writing', 'speaking'] as const).filter((kind) => !requestedHumanReviewKinds.has(kind));
 
   return <main className={styles.page}>
     <nav><Link href="/dashboard/student">← Volver a mi espacio</Link><span>Reporte privado</span></nav>
@@ -40,6 +43,23 @@ export default async function StudentResultPage({ params }: { params: Promise<{ 
         <article><h3>Por mejorar</h3><p>{attempt.teacherFeedback.improvements}</p></article>
         <article><h3>Siguiente paso</h3><p>{attempt.teacherFeedback.nextSteps}</p></article>
       </div> : <span>Tu tutor registrará aquí observaciones sobre tu desempeño y los aspectos que conviene reforzar. Las escalas de práctica no constituyen un resultado oficial.</span>}
+    </section> : null}
+    {attempt.humanReviewState && attempt.humanReviewState !== 'not-included' ? <section className={styles.feedback}>
+      <p>Revisión humana de Writing o Speaking</p>
+      <h2>{availableHumanReviewKinds.length ? 'Elige qué quieres que revise el equipo WeLearn' : attempt.humanReviewState === 'completed' ? 'Tu revisión humana fue completada' : 'Tu solicitud está en la cola de revisión'}</h2>
+      {attempt.humanReviews?.map((review) => <article className={styles.humanReview} key={review.kind}>
+        <div><strong>{review.kind === 'writing' ? 'Writing' : 'Speaking'}</strong><span>{review.status === 'completed' ? 'Revisión entregada' : review.status === 'assigned' ? 'Asignada a un revisor' : review.status === 'declined' ? 'Solicitud cerrada' : 'En cola de revisión'}</span></div>
+        {review.report ? <div className={styles.feedbackGrid}>
+          <article><h3>Evaluación</h3><p>{review.report.summary}</p></article>
+          <article><h3>Fortalezas</h3><p>{review.report.strengths}</p></article>
+          <article><h3>Por mejorar</h3><p>{review.report.improvements}</p></article>
+          {review.report.improvementPlan ? <article><h3>Plan de mejora</h3><p>{review.report.improvementPlan}</p></article> : null}
+        </div> : null}
+      </article>)}
+      {availableHumanReviewKinds.length ? <form action={requestHumanXpressReview}>
+        <input type="hidden" name="submissionId" value={attempt.id} />
+        {availableHumanReviewKinds.map((kind) => <button type="submit" name="reviewKind" value={kind} key={kind}>Solicitar revisión de {kind === 'writing' ? 'Writing' : 'Speaking'}</button>)}
+      </form> : attempt.humanReviewState !== 'completed' ? <span>Te avisaremos en tu panel cuando la revisión esté lista.</span> : null}
     </section> : null}
     <section className={styles.actions}><Link href={attempt.examHubHref}>Volver a los simulacros</Link><a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20ayuda%20con%20mi%20reporte%20de%20WeLearn." rel="noreferrer" target="_blank">Pedir ayuda</a></section>
   </main>;

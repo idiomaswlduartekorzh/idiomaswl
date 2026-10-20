@@ -83,7 +83,7 @@ function pickThree(items: string[]): string[] {
 
 function englishGrammarPdf(slug: string, level: EnglishGrammarLevel): string {
   const filename = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}.pdf` : `idiomaswl-${slug}-${level}.pdf`
-  return `/downloads/ingles-${level}/grammar/${filename}`
+  return `/api/site-materials/ingles-${level}/grammar/${filename}`
 }
 
 function normalizeSpokenEnglish(text: string): string {

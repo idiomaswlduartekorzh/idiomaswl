@@ -10,7 +10,7 @@ export const metadata = { title: 'Revisión del dashboard de estudiante', robots
 export default async function StudentDashboardPreviewPage({ searchParams }: { searchParams: Promise<{ plan?: string }> }) {
   if (process.env.VERCEL_ENV === 'production' || process.env.STUDENT_DASHBOARD_PREVIEW !== 'true') notFound();
   const { plan } = await searchParams;
-  const selected: StudentPreviewKind = plan === 'single' || plan === 'personalized' || plan === 'guided' ? plan : 'automatic';
+  const selected: StudentPreviewKind = plan === 'free' || plan === 'essential' || plan === 'personalized' || plan === 'welearn' || plan === 'guided' ? plan : 'automatic';
   const optionStyle = (active: boolean, accent: '#ef3340' | '#3157d5') => ({
     padding: '7px 11px', borderRadius: 999, color: active ? '#fff' : '#172154',
     font: '750 11px system-ui', textDecoration: 'none',
@@ -19,9 +19,11 @@ export default async function StudentDashboardPreviewPage({ searchParams }: { se
   });
   return <>
     <nav className={styles.planSwitch} aria-label="Planes de prueba">
-      <Link href="?plan=single" style={optionStyle(selected === 'single', '#ef3340')}>$12.900</Link>
+      <Link href="?plan=free" style={optionStyle(selected === 'free', '#ef3340')}>Gratis</Link>
+      <Link href="?plan=essential" style={optionStyle(selected === 'essential', '#3157d5')}>$15.900</Link>
       <Link href="?plan=automatic" style={optionStyle(selected === 'automatic', '#3157d5')}>$49.900</Link>
       <Link href="?plan=personalized" style={optionStyle(selected === 'personalized', '#ef3340')}>$99.900</Link>
+      <Link href="?plan=welearn" style={optionStyle(selected === 'welearn', '#3157d5')}>WeLearn</Link>
       <Link href="?plan=guided" style={optionStyle(selected === 'guided', '#3157d5')}>Clases</Link>
     </nav>
     <StudentDashboardView data={studentDashboardPreview(selected)} preview />

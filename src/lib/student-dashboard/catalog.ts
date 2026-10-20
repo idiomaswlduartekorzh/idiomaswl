@@ -1,7 +1,7 @@
 import { EXAMS } from '@/data/exams';
 import { XPRESS_EXAM_OPTIONS, type XpressExamSlug } from '@/lib/student-onboarding/catalog';
 
-export type StudentProductKind = 'single' | 'automatic' | 'personalized';
+export type StudentProductKind = 'free' | 'essential' | 'automatic' | 'personalized' | 'welearn';
 
 export type StudentMock = Readonly<{
   id: string;
@@ -23,11 +23,17 @@ export type StudentExamWorkspace = Readonly<{
 }>;
 
 export const STUDENT_PRODUCT_COPY = Object.freeze({
-  single: {
-    label: 'Un examen',
-    price: '$12.900 COP',
-    billing: 'pago único',
-    summary: 'Un intento, su resultado y el reporte detallado.',
+  free: {
+    label: 'Autodidacta Gratis',
+    price: '$0 COP',
+    billing: 'acceso permanente al examen elegido',
+    summary: 'Ecosistema del examen y puntaje total, sin descargas ni revisión detallada.',
+  },
+  essential: {
+    label: 'Autodidacta Esencial',
+    price: '$15.900 COP',
+    billing: 'cada 30 días',
+    summary: 'Todo el ecosistema del examen, resultados detallados y descargas.',
   },
   automatic: {
     label: 'Xpress',
@@ -39,7 +45,13 @@ export const STUDENT_PRODUCT_COPY = Object.freeze({
     label: 'Xpress + feedback',
     price: '$99.900 COP',
     billing: 'cada 30 días',
-    summary: 'Todo Xpress más una revisión pedagógica personalizada de WeLearn.',
+    summary: 'Revisiones humanas, retroalimentación integral y plan de mejora.',
+  },
+  welearn: {
+    label: 'Estudiante WeLearn',
+    price: 'Incluido',
+    billing: 'con tu plan de clases',
+    summary: 'Acceso completo al ecosistema del examen asignado en tu programa.',
   },
 } as const);
 
@@ -70,9 +82,11 @@ export function getStudentExamWorkspace(examSlug: string | null | undefined): St
 }
 
 export function productKindForOffer(offerId: string | null | undefined): StudentProductKind | null {
-  if (offerId === 'exam-single') return 'single';
+  if (offerId === 'exam-free') return 'free';
+  if (offerId === 'exam-basic') return 'essential';
   if (offerId === 'exam-auto') return 'automatic';
   if (offerId === 'exam-teacher') return 'personalized';
+  if (offerId === 'welearn-full') return 'welearn';
   return null;
 }
 

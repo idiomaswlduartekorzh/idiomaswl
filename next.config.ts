@@ -145,6 +145,9 @@ const nextConfig: NextConfig = {
     '/dashboard/admin/clase-claude/material-instructor': [
       'src/content/clase-claude/Paquete_Completo_Instructor_Casos_Claude.zip',
     ],
+    '/api/exam-materials/**': [
+      'private/exam-materials/**/*.pdf',
+    ],
   },
 
   async headers() {

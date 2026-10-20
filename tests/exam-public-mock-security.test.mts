@@ -5,8 +5,7 @@ import { EXAMS } from '../src/data/exams.ts';
 import { getGoetheA2PracticeMock, getGoetheB1PracticeMock, getMock } from '../src/data/mocks/index.ts';
 import { sanitizeExamMock } from '../src/lib/ielts/public-mock.ts';
 import { createExamLeadReceipt, verifyExamLeadReceipt } from '../src/lib/exams/lead-receipt.server.ts';
-import { hasExamScoreAccess } from '../src/lib/exams/score-access.server.ts';
-import { createHmac } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import GOETHE_A1_PUBLIC_VISUALS from '../src/data/mocks/goethe-a1-public-visuals.json' with { type: 'json' };
 
 test('all published exam mocks remove objective keys and review insights before browser delivery', () => {
@@ -70,19 +69,11 @@ test('lead receipts bind a persisted id to the exact exam and set', () => {
   }
 });
 
-test('score routes reject missing, malformed, and cross-exam cookies', async () => {
-  const previous = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-signing-key';
-  try {
-    const id = '12345678-1234-1234-1234-123456789abc';
-    const signature = createHmac('sha256', 'test-signing-key').update(`exam-score-v1:${id}:ielts`).digest('hex');
-    const cookie = `wl_exam_score_ielts=${id}.${signature}`;
-    assert.equal(await hasExamScoreAccess('ielts', new Request('http://localhost/api')), false);
-    assert.equal(await hasExamScoreAccess('ielts', new Request('http://localhost/api', { headers: { cookie } })), true);
-    assert.equal(await hasExamScoreAccess('toefl', new Request('http://localhost/api', { headers: { cookie } })), false);
-    assert.equal(await hasExamScoreAccess('ielts', new Request('http://localhost/api', { headers: { cookie: `${cookie}0` } })), false);
-  } finally {
-    if (previous === undefined) delete process.env.SUPABASE_SERVICE_ROLE_KEY;
-    else process.env.SUPABASE_SERVICE_ROLE_KEY = previous;
-  }
+test('score access is resolved from the authenticated account and exact exam grant', () => {
+  const source = readFileSync('src/lib/exams/score-access.server.ts', 'utf8');
+  assert.match(source, /auth\.getUser\(\)/);
+  assert.match(source, /user\?\.email_confirmed_at/);
+  assert.match(source, /resolveExamAccessForUser\(user\.id, parsedExam\)/);
+  assert.match(source, /examCan\(access\.level, 'save-result'\)/);
+  assert.doesNotMatch(source.slice(source.indexOf('export async function hasExamScoreAccess')), /cookies\(\)/);
 });

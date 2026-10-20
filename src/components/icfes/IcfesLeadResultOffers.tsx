@@ -4,10 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { saveLead } from '@/lib/actions/saveLead';
 import { trackIcfesEvent } from '@/lib/analytics/icfes';
-import type { IcfesBasicResultDto, IcfesCheckoutDto } from '@/lib/icfes/attempt-contract';
+import type { IcfesTotalResultDto } from '@/lib/icfes/attempt-contract';
 import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
-import { getXpressOffer, XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
-import { XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from '@/lib/xpress-commerce/terms';
+import { getXpressOffer, XPRESS_OFFERS, type XpressMembershipOfferId } from '@/lib/xpress-commerce/catalog';
 import { redeemExamAccessCodeFromBrowser } from '@/lib/exam-access-codes/client';
 import styles from './IcfesLeadResultOffers.module.css';
 
@@ -20,40 +19,40 @@ type OfferCopy = Readonly<{
   featured?: boolean;
 }>;
 
-const OFFER_COPY: Record<XpressOfferId, OfferCopy> = {
-  'exam-single': {
-    eyebrow: 'UN SOLO INTENTO',
-    title: 'Informe detallado',
-    billing: 'pago único',
+const OFFER_COPY: Record<XpressMembershipOfferId, OfferCopy> = {
+  'exam-basic': {
+    eyebrow: 'ESENCIAL · 30 DÍAS',
+    title: 'Autodidacta Esencial',
+    billing: 'renovación cada 30 días',
     benefits: [
+      'Todo el ecosistema ICFES',
       'Revisión pregunta por pregunta',
-      'Tu respuesta frente a la correcta',
-      'Explicaciones y áreas prioritarias',
+      'Descargas y retroalimentación automática',
     ],
-    action: 'Desbloquear informe',
+    action: 'Elegir Esencial',
   },
   'exam-auto': {
     eyebrow: 'XPRESS · 30 DÍAS',
-    title: 'Preparación automática',
+    title: 'Autodidacta',
     billing: 'renovación cada 30 días',
     benefits: [
-      'Todos los simulacros ICFES disponibles',
-      'Informes detallados e historial',
-      'Progreso y ruta de estudio',
+      'Todo lo incluido en Esencial',
+      '5 revisiones humanas por periodo',
+      'Writing o Speaking',
     ],
-    action: 'Elegir Xpress',
+    action: 'Elegir Autodidacta',
     featured: true,
   },
   'exam-teacher': {
     eyebrow: 'XPRESS + TUTOR · 30 DÍAS',
-    title: 'Feedback personalizado',
+    title: 'Autodidacta Pro',
     billing: 'renovación cada 30 días',
     benefits: [
-      'Todo lo incluido en Xpress',
-      'Revisión personalizada de un tutor',
-      'Entrega en el panel dentro de 24 horas',
+      'Revisiones humanas',
+      'Retroalimentación integral',
+      'Plan de mejora personalizado',
     ],
-    action: 'Elegir Xpress + tutor',
+    action: 'Elegir Pro',
   },
 };
 
@@ -65,7 +64,7 @@ function formatCop(amountInCents: number) {
   }).format(amountInCents / 100);
 }
 
-function registrationHref(offerId: XpressOfferId) {
+function registrationHref(offerId: XpressMembershipOfferId) {
   const params = new URLSearchParams({
     path: 'exam',
     language: 'ingles',
@@ -82,7 +81,7 @@ export default function IcfesLeadResultOffers({
   onRetry,
   leadCaptured = false,
 }: {
-  result: IcfesBasicResultDto;
+  result: IcfesTotalResultDto;
   offerEnabled: boolean;
   onRetry: () => void;
   leadCaptured?: boolean;
@@ -93,14 +92,12 @@ export default function IcfesLeadResultOffers({
   const [whatsapp, setWhatsapp] = useState('');
   const [accessCode, setAccessCode] = useState('');
   const [leadConsent, setLeadConsent] = useState(false);
-  const [purchaseConsent, setPurchaseConsent] = useState(false);
   const [savingLead, setSavingLead] = useState(false);
   const [leadSaved, setLeadSaved] = useState(false);
-  const [busyOffer, setBusyOffer] = useState<XpressOfferId | null>(null);
+  const [busyOffer, setBusyOffer] = useState<XpressMembershipOfferId | null>(null);
   const [message, setMessage] = useState('');
   const leadSavedRef = useRef(false);
 
-  const directReportAvailable = offerEnabled && result.premiumEligible && !result.officialResource;
   const codeReportAvailable = result.premiumEligible && !result.officialResource;
 
   useEffect(() => {
@@ -183,7 +180,7 @@ export default function IcfesLeadResultOffers({
     }
   }
 
-  function continueToRegistration(offerId: XpressOfferId) {
+  function continueToRegistration(offerId: XpressMembershipOfferId) {
     try {
       window.sessionStorage.setItem('wl_icfes_pending_attempt', result.attemptId);
     } catch {
@@ -192,7 +189,7 @@ export default function IcfesLeadResultOffers({
     window.location.assign(registrationHref(offerId));
   }
 
-  async function selectOffer(offerId: XpressOfferId) {
+  function selectOffer(offerId: XpressMembershipOfferId) {
     const selectedOffer = getXpressOffer(offerId);
     setMessage('');
     setBusyOffer(offerId);
@@ -202,40 +199,7 @@ export default function IcfesLeadResultOffers({
       amount_cop: selectedOffer.amountInCents / 100,
     });
 
-    if (offerId !== 'exam-single' || !directReportAvailable) {
-      continueToRegistration(offerId);
-      return;
-    }
-    if (!purchaseConsent) {
-      setMessage('Confirma las condiciones del informe individual antes de continuar al pago.');
-      setBusyOffer(null);
-      return;
-    }
-
-    try {
-      const response = await fetch('/api/icfes/pass/checkout', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          attemptId: result.attemptId,
-          acceptedTerms: XPRESS_TERMS_VERSION,
-          acceptedPrivacy: XPRESS_PRIVACY_VERSION,
-        }),
-      });
-      const data = await response.json() as IcfesCheckoutDto | { error?: string };
-      if (!response.ok || !('ok' in data) || !data.ok) {
-        throw new Error('error' in data ? data.error : 'No pudimos abrir el pago.');
-      }
-      trackIcfesEvent('icfes_checkout_start', {
-        mock_id: result.examId,
-        product_code: 'exam-single',
-        amount_cop: data.amountInCents / 100,
-      });
-      window.location.assign(data.checkoutUrl ?? data.resultUrl);
-    } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'No pudimos abrir el pago. Intenta nuevamente.');
-      setBusyOffer(null);
-    }
+    continueToRegistration(offerId);
   }
 
   if (step === 'lead') {
@@ -309,13 +273,12 @@ export default function IcfesLeadResultOffers({
         <section className={styles.offers} aria-labelledby="icfes-offers-title">
           <div className={styles.sectionHeading}>
             <p className={styles.eyebrow}>ELIGE EL ALCANCE</p>
-            <h2 id="icfes-offers-title">Un informe o una preparación continua</h2>
-            <p>El primer producto es un pago único. Los planes Xpress se renuevan cada 30 días y se cancelan desde el panel.</p>
+            <h2 id="icfes-offers-title">Continúa con todo el ecosistema ICFES</h2>
+            <p>Los tres planes desbloquean práctica, simulacros cronometrados y explicaciones de ICFES durante 30 días.</p>
           </div>
           <div className={styles.offerGrid}>
             {XPRESS_OFFERS.map((offer) => {
               const copy = OFFER_COPY[offer.id];
-              const isSingleFallback = offer.id === 'exam-single' && !directReportAvailable;
               return (
                 <article key={offer.id} className={`${styles.offerCard} ${copy.featured ? styles.featured : ''}`}>
                   {copy.featured && <span className={styles.featuredBadge}>RECOMENDADO</span>}
@@ -325,7 +288,7 @@ export default function IcfesLeadResultOffers({
                   <p className={styles.billing}>{copy.billing}</p>
                   <ul>{copy.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}</ul>
                   <button type="button" className={copy.featured ? styles.primaryButton : styles.secondaryButton} disabled={busyOffer !== null} onClick={() => void selectOffer(offer.id)}>
-                    {busyOffer === offer.id ? 'Continuando…' : isSingleFallback ? 'Elegir un simulacro propio' : copy.action}
+                    {busyOffer === offer.id ? 'Continuando…' : copy.action}
                   </button>
                 </article>
               );
@@ -333,12 +296,7 @@ export default function IcfesLeadResultOffers({
           </div>
         </section>
 
-        {directReportAvailable && (
-          <label className={`${styles.consent} ${styles.purchaseConsent}`} htmlFor="icfes-purchase-consent">
-            <input id="icfes-purchase-consent" type="checkbox" checked={purchaseConsent} onChange={(event) => setPurchaseConsent(event.target.checked)} />
-            <span>Para el informe de $12.900: confirmo que es un pago único para este intento, que no incluye la inscripción oficial ni garantiza un puntaje, y acepto el uso de mis datos para gestionar la compra.</span>
-          </label>
-        )}
+        {!offerEnabled && <p className={styles.notice}>Los planes se activarán desde tu cuenta; este intento conserva únicamente el marcador básico.</p>}
         {message && <p className={styles.error} role="alert">{message}</p>}
         {result.officialResource && <p className={styles.notice}>{result.premiumUnavailableReason ?? 'Este cuadernillo histórico conserva únicamente el marcador gratuito. Los productos pagos aplican a simulacros propios de WeLearn.'}</p>}
 

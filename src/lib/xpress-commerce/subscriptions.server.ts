@@ -108,22 +108,22 @@ async function createWompiCardSource(input: { token: string; email: string; acce
   return { id, status: 'AVAILABLE' as const };
 }
 
-export async function currentXpressSubscription(userId: string): Promise<SubscriptionRow | null> {
+export async function currentXpressSubscription(userId: string, examSlug: string): Promise<SubscriptionRow | null> {
   const config = getWompiServerConfig();
   const db = createAdminClient();
   await db.rpc('finalize_xpress_subscription_cancellations').abortSignal(AbortSignal.timeout(8000));
   const { data, error } = await db.from('xpress_subscriptions')
     .select('id,user_id,purchaser_email,environment,offer_id,exam_slug,amount_in_cents,status,payment_source_id,payment_source_status,initial_charge_at,current_period_start,current_period_end,next_charge_at,payment_failure_count,last_payment_status,cancel_requested_at,canceled_at')
-    .eq('user_id', userId).eq('environment', config.environment).neq('status', 'canceled')
+    .eq('user_id', userId).eq('environment', config.environment).eq('exam_slug', examSlug).neq('status', 'canceled')
     .order('created_at', { ascending: false }).limit(1).abortSignal(AbortSignal.timeout(8000)).maybeSingle();
   if (error) throw new Error('xpress_subscription_lookup_failed');
   return data as SubscriptionRow | null;
 }
 
-async function profileAllowsSubscription(userId: string, examSlug: string) {
+async function profileAllowsSubscription(userId: string) {
   const { data, error } = await createAdminClient().from('profiles').select('student_path,target_exam').eq('id', userId).maybeSingle();
   if (error) throw new Error('xpress_profile_lookup_failed');
-  return data?.student_path === 'exam' && data.target_exam === examSlug;
+  return data?.student_path === 'exam';
 }
 
 function legalSnapshot(acceptance: WompiAcceptance) {
@@ -141,11 +141,10 @@ export async function prepareXpressSubscription(
   input: XpressSubscriptionInput,
 ) {
   const config = getWompiServerConfig();
-  if (!user.email || !await profileAllowsSubscription(user.id, input.examSlug)) throw new Error('xpress_exam_mismatch');
+  if (!user.email || !await profileAllowsSubscription(user.id)) throw new Error('xpress_exam_mismatch');
   if (process.env.VERCEL_ENV !== 'production' && config.environment === 'production') throw new Error('production_disabled_outside_production');
   const offer = getXpressOffer(input.offerId);
-  const active = await activeXpressMembership(user.id);
-  if (active && active.exam_slug !== input.examSlug) throw new Error('xpress_exam_mismatch');
+  const active = await activeXpressMembership(user.id, input.examSlug);
   const initialChargeAt = active?.ends_at && new Date(active.ends_at).getTime() > Date.now()
     ? active.ends_at
     : new Date().toISOString();

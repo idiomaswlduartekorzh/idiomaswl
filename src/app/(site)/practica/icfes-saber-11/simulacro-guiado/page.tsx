@@ -4,6 +4,7 @@ import { GUIDED_SIMULACRO_2026_COUNTS, GUIDED_SIMULACRO_2026_QUESTIONS } from '@
 import { getIcfesPart, ICFES_PARTS } from '@/data/icfes/parts';
 import IcfesJsonLd from '../_components/IcfesJsonLd';
 import IcfesPartPracticeEngine from '../_components/IcfesPartPracticeEngine';
+import ExamAccessBoundary from '@/components/exams/ExamAccessBoundary';
 import styles from '../icfes-learning.module.css';
 
 const CANONICAL = 'https://www.idiomaswl.com/practica/icfes-saber-11/simulacro-guiado';
@@ -24,7 +25,7 @@ export default function GuidedSimulacroPage() {
   const firstPart = getIcfesPart('parte-1');
   if (!firstPart) return null;
 
-  return (
+  return <ExamAccessBoundary examSlug="icfes" examLabel="ICFES Saber 11" language="ingles">
     <main className={styles.learningPage} style={{ '--part-color': firstPart.color, '--part-soft': firstPart.softColor } as React.CSSProperties}>
       <IcfesJsonLd
         name="Simulacro guiado ICFES Inglés de 55 preguntas"
@@ -86,5 +87,5 @@ export default function GuidedSimulacroPage() {
         </section>
       </div>
     </main>
-  );
+  </ExamAccessBoundary>;
 }

@@ -614,7 +614,7 @@ export default function ClasesDeInglesPage() {
       <PracticeBand
         accent="#1a4fcc"
         title="Todo lo que puedes practicar gratis desde hoy"
-        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES, y el diagnóstico de nivel. Corrección inmediata y sin registro."
+        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES, y el diagnóstico de nivel. Explora todo y crea una cuenta gratis al comenzar."
         cards={[
           { href: '/practica/ingles/a1/gramatica', title: 'Gramática A1 · A2 · B1 · B2', desc: 'Desde los cimientos hasta estructuras avanzadas, con corrección al instante en los cuatro niveles.' },
           { href: '/practica/ingles/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, organizadas por nivel del Marco Europeo.' },

@@ -6,6 +6,7 @@ import { getIcfesPart, ICFES_PARTS } from '@/data/icfes/parts';
 import { getSimulacro } from '@/data/mocks/icfes-simulacros';
 import IcfesPartPracticeEngine from '../../../_components/IcfesPartPracticeEngine';
 import IcfesJsonLd from '../../../_components/IcfesJsonLd';
+import ExamAccessBoundary from '@/components/exams/ExamAccessBoundary';
 import styles from '../../../icfes-learning.module.css';
 
 interface Props { params: Promise<{ examId: string }> }
@@ -32,7 +33,7 @@ export default async function GuidedWorkbookPage({ params }: Props) {
   const questions = getGuidedWorkbookQuestions(examId);
   if (!exam || !part || !questions.length) notFound();
 
-  return (
+  return <ExamAccessBoundary examSlug="icfes" examLabel="ICFES Saber 11" language="ingles">
     <main className={styles.learningPage} style={{ '--part-color': part.color, '--part-soft': part.softColor } as React.CSSProperties}>
       <IcfesJsonLd name={`${exam.title}: modo guiado`} description={`Muestra histórica de ${questions.length} preguntas con retroalimentación pedagógica de WeLearn.`} url={`https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${exam.id}/guiado`} type="Quiz" questionCount={questions.length} currentLabel={`${exam.title} guiado`} />
       <div className={styles.pageWrap}>
@@ -46,5 +47,5 @@ export default async function GuidedWorkbookPage({ params }: Props) {
         <section className={styles.sourceSection}><div><span>Procedencia declarada</span><p>{exam.source} La atribución aún no cuenta con cotejo primario por ítem. Las explicaciones, la selección de evidencia y el análisis de distractores son elaboración editorial de Idiomas WeLearn.</p></div><div><span>Alcance histórico</span><p>Las {questions.length} preguntas conservan la cantidad y el orden del banco local asociado a la muestra de {exam.year}. Esta práctica no reproduce necesariamente la aplicación estándar 2026-2, no implica afiliación o aval y no predice un puntaje oficial.</p></div></section>
       </div>
     </main>
-  );
+  </ExamAccessBoundary>;
 }

@@ -24,16 +24,21 @@ export async function POST(request: Request) {
   if (!input) return redirectTo(request, { error: 'condiciones' });
   try {
     const result = await prepareXpressSubscription(user, input);
-    const params: Record<string, string> = { suscripcion: result.subscription.id };
+    const params: Record<string, string> = {
+      suscripcion: result.subscription.id,
+      exam: input.examSlug,
+      plan: input.offerId,
+    };
     if (result.order?.id) params.orden = String(result.order.id);
     if (!result.order) params.programada = '1';
     return redirectTo(request, params);
   } catch (error) {
     const code = error instanceof Error ? error.message : 'subscription_failed';
     console.error('[xpress-subscriptions] setup failed', { userId: user.id, code });
-    if (code === 'xpress_subscription_exists') return redirectTo(request, { error: 'ya-activa' });
-    if (code === 'xpress_exam_mismatch') return redirectTo(request, { error: 'seleccion' });
-    if (code.startsWith('payment_source_rejected_')) return redirectTo(request, { error: 'tarjeta' });
-    return redirectTo(request, { error: 'suscripcion' });
+    const context = { exam: input.examSlug, plan: input.offerId };
+    if (code === 'xpress_subscription_exists') return redirectTo(request, { ...context, error: 'ya-activa' });
+    if (code === 'xpress_exam_mismatch') return redirectTo(request, { ...context, error: 'seleccion' });
+    if (code.startsWith('payment_source_rejected_')) return redirectTo(request, { ...context, error: 'tarjeta' });
+    return redirectTo(request, { ...context, error: 'suscripcion' });
   }
 }

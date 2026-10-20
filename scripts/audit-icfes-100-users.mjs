@@ -21,6 +21,8 @@ const source = {
   errorReview: readFileSync('src/app/(site)/practica/icfes-saber-11/repaso-errores/ErrorReviewClient.tsx', 'utf8'),
   mockGuided: readFileSync('src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx', 'utf8'),
   workbookGuided: readFileSync('src/app/(site)/practica/icfes-saber-11/examenes/[examId]/guiado/page.tsx', 'utf8'),
+  accessGate: readFileSync('src/components/exams/ExamAccessGate.tsx', 'utf8'),
+  accessBoundary: readFileSync('src/components/exams/ExamAccessBoundary.tsx', 'utf8'),
 };
 
 const templates = [
@@ -56,8 +58,8 @@ const templates = [
     id: 'recommended-mock', count: 15, source: 'recommendation', priorKnowledge: 'none', viewport: 'mobile',
     intent: 'me recomendaron esta práctica y quiero empezar de inmediato',
     journey: (index) => [`/examenes/icfes/practica/${GUIDED_MOCK_IDS[index % GUIDED_MOCK_IDS.length]}/guiado`],
-    outcome: 'Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.',
-    opportunity: ['no-registration', 'scope-disclaimer', 'error-explanation'],
+    outcome: 'Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.',
+    opportunity: ['free-account-gate', 'scope-disclaimer', 'error-explanation'],
   },
   {
     id: 'error-recovery', count: 10, source: 'returning', priorKnowledge: 'mixed', viewport: 'desktop',
@@ -107,6 +109,7 @@ check('hub-choice-architecture', 'El hub ofrece diagnóstico, partes, cuadernill
 check('vocabulary-transfer', 'Vocabulario enlaza a aplicación real', ['parte-1', 'parte-7', 'sinonimos-inferencia'].every((token) => source.vocabulary.includes(token)), 'high', 'Tres destinos de transferencia', 'Evitar un banco de tarjetas sin aplicación.');
 check('feedback-contract', 'El motor muestra evidencia, distractores y microlección', ['option.rationale', 'question.evidence.reason', 'question.microLesson', 'aria-live'].every((token) => source.engine.includes(token)), 'critical', 'Contrato pedagógico completo', 'No reducir feedback a correcta/incorrecta.');
 check('attempt-persistence', 'El intento se persiste para continuidad', source.engine.includes('writeProgress(updated, progressScope)') && source.errorReview.includes('window.localStorage.length') && source.errorReview.includes('latestWrong'), 'critical', 'Persistencia y reconstrucción de cola', 'Conectar motor y repaso de errores.');
+check('account-start-gate', 'La práctica es visible pero comenzar exige una cuenta con acceso al examen', source.engine.includes('data-exam-start="true"') && source.accessGate.includes("closest<HTMLElement>('[data-exam-start=\"true\"]')") && source.accessBoundary.includes('resolveExamAccessForUser'), 'critical', 'Contenido público; inicio interceptado por acceso exacto a ICFES', 'Restaurar el portón de cuenta en cada botón de inicio.');
 check('error-review-contract', 'El repaso reconstruye error, evidencia y refuerzo', ['selectedIndex', 'Respuesta correcta', 'Evidencia', 'reinforcement.href'].every((token) => source.errorReview.includes(token)), 'high', 'Cuatro elementos de corrección', 'Mostrar la decisión anterior y la transferencia.');
 check('keyboard-contract', 'La Parte 1 implementa patrón de pestañas accesible', ['onKeyDown=', 'tabIndex=', 'aria-labelledby=', 'ArrowRight', 'Home', 'End'].every((token) => source.partOneExamples.includes(token)), 'high', 'Flechas, Home/End y roving tabindex', 'Restaurar navegación de teclado.');
 check('own-practice-truth', 'Los mocks propios declaran extensión y límites', source.mockGuided.includes('práctica abreviada') && source.mockGuided.includes('no reproduce la extensión estándar') && source.mockGuided.includes('predice tu puntaje oficial'), 'critical', '45 preguntas, práctica propia y sin predicción', 'No presentar un mock propio como cuadernillo oficial.');

@@ -56,14 +56,16 @@ export interface GoetheCompleteResponse {
   ok: true
   submissionId: string
   completionToken: string
-  automatic: GoetheAutomaticScore
-  xpressAccess: 'membership' | 'single-credit' | 'public'
+  automatic: GoetheAutomaticScore | null
+  totalScore: number
+  xpressAccess: 'membership' | 'single-credit' | 'welearn' | 'public'
 }
 
 export interface GoetheSubmissionReceipt {
   submissionId: string
   completionToken: string
-  automatic: GoetheAutomaticScore
+  automatic: GoetheAutomaticScore | null
+  totalScore: number
 }
 
 export interface GoetheResultStatus {

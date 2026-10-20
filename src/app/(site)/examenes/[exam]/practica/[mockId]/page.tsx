@@ -15,6 +15,10 @@ import { hasGoetheA1Audio } from '@/lib/goethe/release';
 import { sanitizeExamMock, sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 import { getIeltsReviewBlueprint } from '@/lib/ielts/review-blueprint';
 import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
+import ExamAccessGate from '@/components/exams/ExamAccessGate';
+import { createClient } from '@/lib/supabase/server';
+import { hasClaimedFreeExamAccess, parseXpressExamSlug, resolveExamAccessForUser } from '@/lib/xpress-commerce/access.server';
+import type { ExamAccessDecision } from '@/lib/xpress-commerce/access';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -61,11 +65,56 @@ export default async function PracticePage({ params, searchParams }: { params: P
 
   if (!exam || !mock) notFound();
 
-  if (slug === 'icfes') return <PracticeClient
+  const examSlug = parseXpressExamSlug(slug);
+  if (!examSlug) notFound();
+  let user: { id: string; email_confirmed_at?: string | null } | null = null;
+  try {
+    const supabase = await createClient();
+    const result = await supabase.auth.getUser();
+    user = result.data.user;
+  } catch {
+    // Keep public content discoverable while every protected action remains closed.
+  }
+  const authenticated = Boolean(user?.email_confirmed_at);
+  let access: ExamAccessDecision = {
+    examSlug,
+    level: authenticated ? 'locked' : 'anonymous',
+    planId: null,
+    source: authenticated ? 'none' : 'anonymous',
+    expiresAt: null,
+  };
+  let freeClaimAvailable = false;
+  if (authenticated && user) {
+    try {
+      const [resolved, alreadyClaimed] = await Promise.all([
+        resolveExamAccessForUser(user.id, examSlug),
+        hasClaimedFreeExamAccess(user.id),
+      ]);
+      access = resolved;
+      freeClaimAvailable = !alreadyClaimed;
+    } catch {
+      // Fail closed: an unavailable entitlement service must never unlock an exam.
+    }
+  }
+  const language = examSlug === 'goethe' ? 'aleman'
+    : examSlug === 'delf-dalf' ? 'frances'
+      : examSlug === 'cils-celi' ? 'italiano'
+        : examSlug === 'topik' ? 'coreano'
+          : examSlug === 'celpe-bras' ? 'portugues'
+            : 'ingles';
+  const withAccessGate = (content: React.ReactNode) => <ExamAccessGate
+    access={access}
+    authenticated={authenticated}
+    freeClaimAvailable={freeClaimAvailable}
+    examLabel={exam.name}
+    language={language}
+  >{content}</ExamAccessGate>;
+
+  if (slug === 'icfes') return withAccessGate(<PracticeClient
     exam={exam}
     mock={sanitizeIcfesMock(mock)}
     secureIcfes={{ offerEnabled: isIcfesPassEnabled() }}
-  />;
+  />);
 
   if (slug === 'ielts') {
     if (!getIeltsReviewBlueprint(mockId)) notFound();
@@ -73,21 +122,21 @@ export default async function PracticePage({ params, searchParams }: { params: P
       ? query.skill as 'reading' | 'writing' | 'speaking'
       : undefined;
     const runner = <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
-    return practiceSkill
+    return withAccessGate(practiceSkill
       ? <ExamPracticeLeadGate examSlug="ielts" mockId={mock.id} examName={`IELTS ${practiceSkill} · ${mock.title}`}>{runner}</ExamPracticeLeadGate>
-      : runner;
+      : runner);
   }
   if (slug === 'toefl') {
     // The legacy runner has no lead gate. Keep unsupported forms closed.
     if (mock.format !== 'toefl-2026') notFound();
-    return <Toefl2026PracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
+    return withAccessGate(<Toefl2026PracticeClient exam={exam} mock={sanitizeExamMock(mock)} />);
   }
   // TOPIK: set-1 es el diagnóstico-gancho de leads (UI propia, sin timer);
   // los demás sets son simulacros completos con el blueprint unificado.
   if (slug === 'topik') {
-    return mockId === 'set-1'
+    return withAccessGate(mockId === 'set-1'
       ? <TOPIKPracticeClient exam={exam} mock={sanitizeExamMock(mock)} />
-      : <LanguagePracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
+      : <LanguagePracticeClient exam={exam} mock={sanitizeExamMock(mock)} />);
   }
   if (slug === 'goethe' && /^a1-(?:[1-9]|10)$/.test(mockId)) {
     const skill = query.mode === 'practice' && ['listening', 'reading', 'writing', 'speaking'].includes(query.skill ?? '')
@@ -96,31 +145,31 @@ export default async function PracticePage({ params, searchParams }: { params: P
     if (!hasGoetheA1Audio(mockId) && !skill) redirect(`/examenes/goethe/practica/${mockId}?mode=practice&skill=reading`);
     if (!hasGoetheA1Audio(mockId) && skill === 'listening') redirect('/practica/goethe/listening');
     const practicePart = skill ? parseGoethePracticeTeil(skill, query.teil) : undefined;
-    return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={sanitizeExamMock(mock)} practiceSkill={skill} practicePart={practicePart} />;
+    return withAccessGate(<GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={sanitizeExamMock(mock)} practiceSkill={skill} practicePart={practicePart} />);
   }
   if (slug === 'goethe' && a2Skill) {
     const a2Layout = query.layout === 'sheet' ? 'sheet' : 'web';
-    return <LanguagePracticeClient
+    return withAccessGate(<LanguagePracticeClient
       key={`${mock.id}:${a2Skill}:${a2PracticePart ?? 'all'}:${a2Layout}`}
       exam={exam}
       mock={sanitizeExamMock(mock)}
       goetheFullSkillMock={goetheFullSkillMock ? sanitizeExamMock(goetheFullSkillMock) : undefined}
       focusedPractice={{ level: 'A2', skill: a2Skill, part: a2PracticePart }}
       goetheA2LayoutMode={a2Layout}
-    />;
+    />);
   }
   if (slug === 'goethe' && b1Skill) {
     const b1Layout = query.layout === 'sheet' ? 'sheet' : 'web';
-    return <LanguagePracticeClient
+    return withAccessGate(<LanguagePracticeClient
       key={`${mock.id}:${b1Skill}:${b1PracticePart ?? 'all'}:${b1Layout}`}
       exam={exam}
       mock={sanitizeExamMock(mock)}
       goetheFullSkillMock={goetheFullSkillMock ? sanitizeExamMock(goetheFullSkillMock) : undefined}
       focusedPractice={{ level: 'B1', skill: b1Skill, part: b1PracticePart }}
       goetheA2LayoutMode={b1Layout}
-    />;
+    />);
   }
-  if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
+  if (LANGUAGE_EXAMS.has(slug)) return withAccessGate(<LanguagePracticeClient exam={exam} mock={sanitizeExamMock(mock)} />);
 
-  return <PracticeClient exam={exam} mock={sanitizeExamMock(mock)} />;
+  return withAccessGate(<PracticeClient exam={exam} mock={sanitizeExamMock(mock)} />);
 }

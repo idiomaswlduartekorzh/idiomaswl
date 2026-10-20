@@ -46,7 +46,7 @@ export default async function AdminStudentDetailPage({ params }: { params: Promi
       id: row.id, examSlug: row.exam_slug, examName: exam?.name ?? row.exam_name, examFlag: exam?.flag ?? '',
       examHubHref: exam?.hubHref ?? '/examenes', mockId: row.mock_id, title: row.mock_title ?? 'Simulacro',
       createdAt: row.created_at, score, scoreLabel: row.total_label ?? (score === null ? 'Pendiente' : `${score}%`),
-      reportHref: `/dashboard/student/resultados/${row.id}`, feedbackState: 'not-included', skills: parseSkillScores(row.skills),
+      reportHref: `/dashboard/student/resultados/${row.id}`, reportAvailable: true, feedbackState: 'not-included', skills: parseSkillScores(row.skills),
     };
   });
   const preferredExam = typeof profile.target_exam === 'string' ? profile.target_exam : attempts[0]?.examSlug;

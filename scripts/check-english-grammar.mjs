@@ -88,7 +88,7 @@ for (const level of Object.keys(expected)) {
     assert.ok(interactions >= 28, `${label}: solo ${interactions} interacciones`)
     if (withAssets) {
       const file = topic.slug.endsWith(`-${level}`) ? `idiomaswl-${topic.slug}.pdf` : `idiomaswl-${topic.slug}-${level}.pdf`
-      assert.ok(existsSync(path.join(ROOT, 'public', 'downloads', `ingles-${level}`, 'grammar', file)), `${label}: falta PDF`)
+      assert.ok(existsSync(path.join(ROOT, 'private', 'site-materials', `ingles-${level}`, 'grammar', file)), `${label}: falta PDF`)
       for (const audio of ['modelo-estructura', 'contraste-guiado', 'practica-contexto']) {
         assert.ok(existsSync(path.join(ROOT, 'public', 'audio', 'ingles', level, 'grammar', topic.slug, `${audio}.m4a`)), `${label}: falta audio ${audio}`)
       }

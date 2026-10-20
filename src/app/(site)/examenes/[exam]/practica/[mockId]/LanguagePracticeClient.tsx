@@ -1795,7 +1795,7 @@ export default function LanguagePracticeClient({
           </div>
           {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} mockId={mock.id} /> : null}
           <div className="goethe-a2-intro-actions">
-            <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
+            <button data-exam-start="true" onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
               Comenzar práctica
             </button>
             {goetheWorksheetLayout ? <PdfDownloadButton generate={downloadGoetheWorksheet} label={goetheCurrentPdfLabel} /> : null}

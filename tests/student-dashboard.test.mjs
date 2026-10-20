@@ -20,23 +20,28 @@ test('the ten purchasable exam families resolve to their real mock routes', () =
   }
 });
 
-test('the dashboard keeps the three products distinct', () => {
-  assert.equal(productKindForOffer('exam-single'), 'single');
+test('the dashboard keeps the four autonomous plans and WeLearn access distinct', () => {
+  assert.equal(productKindForOffer('exam-free'), 'free');
+  assert.equal(productKindForOffer('exam-basic'), 'essential');
   assert.equal(productKindForOffer('exam-auto'), 'automatic');
   assert.equal(productKindForOffer('exam-teacher'), 'personalized');
-  assert.equal(STUDENT_PRODUCT_COPY.single.billing, 'pago único');
+  assert.equal(productKindForOffer('welearn-full'), 'welearn');
+  assert.equal(productKindForOffer('exam-single'), null);
+  assert.equal(STUDENT_PRODUCT_COPY.free.price, '$0 COP');
+  assert.equal(STUDENT_PRODUCT_COPY.essential.price, '$15.900 COP');
   assert.equal(STUDENT_PRODUCT_COPY.automatic.billing, 'cada 30 días');
   assert.equal(STUDENT_PRODUCT_COPY.personalized.billing, 'cada 30 días');
-  assert.match(STUDENT_PRODUCT_COPY.personalized.summary, /revisión pedagógica personalizada/);
-  assert.doesNotMatch(STUDENT_PRODUCT_COPY.personalized.summary, /\bIA\b|inteligencia artificial|revisión humana/i);
+  assert.match(STUDENT_PRODUCT_COPY.personalized.summary, /Revisiones humanas/);
 });
 
 test('personalized feedback and class enrollment appear only in their preview fixtures', () => {
-  const single = studentDashboardPreview('single');
+  const free = studentDashboardPreview('free');
   const automatic = studentDashboardPreview('automatic');
   const personalized = studentDashboardPreview('personalized');
-  assert.equal(single.subscription, null);
-  assert.equal(single.access.state, 'consumed');
+  assert.equal(free.subscription, null);
+  assert.equal(free.access.state, 'active');
+  assert.equal(free.attempts[0].reportAvailable, false);
+  assert.deepEqual(free.attempts[0].skills, []);
   assert.equal(automatic.attempts.some((attempt) => attempt.feedbackState !== 'not-included'), false);
   assert.equal(personalized.attempts.some((attempt) => attempt.feedbackState === 'delivered'), true);
   assert.equal(personalized.courses.length, 1);
@@ -67,6 +72,7 @@ test('server loader scopes every private product query to the authenticated iden
   assert.match(page, /auth\.getUser\(\)/);
   assert.match(page, /isVerifiedAdminUser\(user\)/);
   assert.match(loader, /from\('xpress_memberships'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
+  assert.match(loader, /from\('exam_access_grants'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('xpress_exam_credits'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('xpress_subscriptions'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('exam_submissions'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
@@ -129,28 +135,28 @@ test('completed submissions are linked to paid access without trusting the brows
   }
 });
 
-test('the additive migration preserves old purchases and enforces the new prices privately', () => {
-  const migration = read('supabase/migrations/20260919195406_xpress_personalized_feedback_prices.sql');
+test('the additive migration preserves history and enforces the new prices privately', () => {
+  const migration = read('supabase/migrations/20260919195406_xpress_personalized_feedback_prices.sql')
+    + read('supabase/migrations/20261020143934_exam_access_entitlements.sql');
   assert.match(migration, /xpress-2026-09-12-v4/);
   assert.match(migration, /xpress-2026-09-12-v5/);
-  assert.match(migration, /offer_version='xpress-2026-09-12-v5'[\s\S]*?offer_id='exam-single'[\s\S]*?amount_in_cents=1290000/);
+  assert.match(migration, /offer_version='xpress-2026-10-20-v8'/);
+  assert.match(migration, /exam-basic' and amount_in_cents=1590000/);
   assert.match(migration, /exam-auto' and amount_in_cents=4990000/);
   assert.match(migration, /exam-teacher' and amount_in_cents=9990000/);
-  assert.match(migration, /create table public\.xpress_submission_access/);
-  assert.match(migration, /submission_id uuid not null unique references public\.exam_submissions/);
-  assert.match(migration, /credit_id uuid unique references public\.xpress_exam_credits/);
+  assert.match(migration, /alter table public\.xpress_submission_access/);
+  assert.match(migration, /offer_id in \('exam-single','exam-basic','exam-auto','exam-teacher'\)/);
   assert.match(migration, /alter table public\.xpress_submission_access enable row level security/);
   assert.match(migration, /revoke all on public\.xpress_submission_access from public,anon,authenticated,service_role/);
   assert.match(migration, /alter table public\.xpress_personalized_feedback_requests enable row level security/);
   assert.match(migration, /revoke all on public\.xpress_personalized_feedback_requests from public,anon,authenticated,service_role/);
   assert.match(migration, /xpress_personalized_feedback_requests/);
-  assert.match(migration, /create function public\.recover_xpress_identity/);
-  assert.match(migration, /email_confirmed_at is not null/);
-  assert.match(migration, /identity_recovery_subscription_conflict/);
-  assert.match(migration, /grant execute on function public\.recover_xpress_identity\(uuid,text,text\) to service_role/);
+  assert.match(migration, /create table public\.exam_access_grants/);
+  assert.match(migration, /exam_access_grants_one_free_exam_per_user/);
+  assert.match(migration, /create function public\.resolve_exam_access/);
 });
 
-test('the 24-hour tutor review is assigned privately and shown only after delivery', () => {
+test('human review quotas are private, atomic, and exposed only for eligible plans', () => {
   const migration = read('supabase/migrations/20260919195444_xpress_feedback_review_workflow.sql');
   const action = read('src/lib/actions/xpressReviews.ts');
   const queue = read('src/app/(site)/dashboard/admin/revisiones-xpress/page.tsx');
@@ -161,9 +167,18 @@ test('the 24-hour tutor review is assigned privately and shown only after delive
   assert.match(action, /await requireAdmin\(\)/);
   assert.match(action, /reviewer_id: admin\.id/);
   assert.match(queue, /await requireAdmin\(\)/);
-  assert.match(queue, /\.eq\('environment', getWompiServerConfig\(\)\.environment\)/);
+  assert.match(queue, /const environment = getWompiServerConfig\(\)\.environment/);
+  assert.equal((queue.match(/\.eq\('environment', environment\)/g) ?? []).length, 2);
   assert.match(loader, /feedback\?\.status === 'completed' \? teacherFeedback/);
   assert.match(report, /attempt\.teacherFeedback/);
+  const accessMigration = read('supabase/migrations/20261020143934_exam_access_entitlements.sql');
+  assert.match(accessMigration, /create table public\.xpress_human_review_requests/);
+  assert.match(accessMigration, /if used_requests>=5/);
+  assert.match(accessMigration, /unique\(submission_id,review_kind\)/);
+  assert.match(accessMigration, /review_report jsonb/);
+  assert.match(accessMigration, /pg_advisory_xact_lock/);
+  assert.match(report, /requestHumanXpressReview/);
+  assert.match(queue, /completeHumanXpressReview/);
 });
 
 test('paid reports remain addressable after a subscription ends or another single exam is purchased', () => {

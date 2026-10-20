@@ -11,7 +11,7 @@ export const WELEARN_PDF_BASE_URL = 'https://www.idiomaswl.com'
 // PDF suelto, subido a mano a /public/downloads, con su propia landing.
 // Es anterior a la plantilla generada; se queda como está.
 export const IELTS_INTRODUCTION_PDF = {
-  href: '/downloads/ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf',
+  href: '/api/site-materials/ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf',
   landingPath: '/recursos/ielts-writing-task-1-introduccion-pdf',
   title: 'IELTS Writing Task 1 Introduccion PDF: guia de paraphrasing',
 } as const

@@ -7,6 +7,8 @@ import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server'
 import { parseGoetheA2PracticeTeil, parseGoetheB1PracticeTeil } from '@/lib/goethe/practice';
 import { verifyExamLeadReceipt } from '@/lib/exams/lead-receipt.server';
 import type { MCQQuestion } from '@/data/mocks/types';
+import { currentExamScoreAccess } from '@/lib/exams/score-access.server';
+import { examCan } from '@/lib/xpress-commerce/access';
 
 export async function unlockExamMock(input: {
   examSlug: string;
@@ -16,6 +18,10 @@ export async function unlockExamMock(input: {
 }): Promise<MockExam> {
   if (!verifyExamLeadReceipt(input.receipt, input.examSlug, input.mockId)) {
     throw new Error('No pudimos validar el registro. Intenta de nuevo.');
+  }
+  const access = await currentExamScoreAccess(input.examSlug);
+  if (!access || !examCan(access.level, 'view-detailed-results')) {
+    throw new Error('Tu plan actual incluye el puntaje total, pero no la revisión pregunta por pregunta.');
   }
 
   let mock: MockExam | null = getMock(input.examSlug, input.mockId);

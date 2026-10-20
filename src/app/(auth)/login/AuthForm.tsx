@@ -21,7 +21,7 @@ import {
   type XpressExamSlug,
 } from '@/lib/student-onboarding/catalog';
 import { createClient } from '@/lib/supabase/client';
-import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
+import { AUTODIDACTA_PLANS, type AutodidactaPlanId } from '@/lib/xpress-commerce/catalog';
 
 type Mode = 'login' | 'register';
 type OAuthProvider = 'google' | 'apple';
@@ -59,7 +59,7 @@ export default function AuthForm({
   const [language, setLanguage] = useState<WelearnLanguage | ''>(initialIntent?.language ?? '');
   const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>(initialIntent?.path === 'welearn' ? initialIntent.plan : '');
   const [exam, setExam] = useState<XpressExamSlug | ''>(initialIntent?.path === 'exam' ? initialIntent.exam : '');
-  const [examPlan, setExamPlan] = useState<XpressOfferId | ''>(initialIntent?.path === 'exam' ? initialIntent.plan : '');
+  const [examPlan, setExamPlan] = useState<AutodidactaPlanId | ''>(initialIntent?.path === 'exam' ? initialIntent.plan : '');
   const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>(initialIntent?.path === 'exam' ? 'self' : '');
   const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(initialIntent ? 3 : 1);
   const [loading, setLoading]   = useState(false);
@@ -258,12 +258,12 @@ export default function AuthForm({
 
         {/* Logo */}
         <div>
-          <div style={{ position: 'relative', width: 120, height: 42, marginBottom: '0.5rem' }}>
+          <div style={{ position: 'relative', width: 180, height: 72, marginBottom: '0.25rem' }}>
             <Image
-              src="/images/welearn-logo.png"
+              src="/images/welearn-wordmark-transparent-v2.png"
               alt="Idiomas WeLearn"
               fill
-              sizes="120px"
+              sizes="180px"
               style={{ objectFit: 'contain', objectPosition: 'left center' }}
               priority
             />
@@ -353,7 +353,11 @@ export default function AuthForm({
                   ? 'Elige primero el idioma. Tu cuenta se crea al final.'
                   : registrationStep === 2
                     ? 'Elige tu objetivo y cómo quieres aprender.'
-                    : 'Tu elección está lista. Ahora guarda tu acceso y continúa al pago.'}
+                    : examPlan === 'exam-free'
+                      ? 'Tu acceso gratuito está listo. Crea la cuenta y continúa al examen.'
+                      : studentPath === 'exam'
+                        ? 'Tu plan está listo. Crea la cuenta y continúa al pago seguro.'
+                        : 'Tu plan está listo. Crea la cuenta y continúa con la inscripción.'}
             </p>
             {mode === 'register' && (
               <div aria-label={`Paso ${registrationStep} de 3`} style={{ display: 'flex', gap: 6, marginTop: '1rem' }}>
@@ -463,15 +467,11 @@ export default function AuthForm({
 
                 {examPreparationMode === 'self' && <Field label="Elige tu acceso Xpress">
                   <div style={{ display: 'grid', gap: '0.55rem' }}>
-                    {XPRESS_OFFERS.map((offer) => <PlanChoice
+                    {AUTODIDACTA_PLANS.map((offer) => <PlanChoice
                       key={offer.id}
                       selected={examPlan === offer.id}
-                      label={`${offer.name} · ${formatCOP(offer.amountInCents / 100)} COP`}
-                      description={offer.id === 'exam-single'
-                        ? 'Pago único: un simulacro con corrección automática y reporte detallado.'
-                        : offer.id === 'exam-auto'
-                          ? 'Suscripción renovable: simulacros ilimitados y corrección automática por periodos de 30 días.'
-                          : 'Suscripción renovable: simulacros ilimitados y revisión personalizada de un tutor de WeLearn dentro de las 24 horas siguientes al envío.'}
+                      label={`${offer.name} · ${offer.amountInCents === 0 ? '$0' : formatCOP(offer.amountInCents / 100)} COP`}
+                      description={offer.description}
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>
@@ -609,7 +609,7 @@ export default function AuthForm({
                   <span style={{ color: 'var(--ink)', fontSize: 13, fontWeight: 650 }}>
                     {studentPath === 'welearn'
                       ? `${WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label ?? ''} · ${PLANS.find((option) => option.id === coursePlan)?.name ?? ''} · ${formatCOP(PLANS.find((option) => option.id === coursePlan)?.price ?? 0)}`
-                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${formatCOP((XPRESS_OFFERS.find((option) => option.id === examPlan)?.amountInCents ?? 0) / 100)}`}
+                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${examPlan === 'exam-free' ? '$0 COP' : formatCOP((AUTODIDACTA_PLANS.find((option) => option.id === examPlan)?.amountInCents ?? 0) / 100)}`}
                   </span>
                   <button
                     type="button"

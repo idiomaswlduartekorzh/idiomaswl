@@ -5,7 +5,9 @@ import { objectiveLabel } from '@/lib/course-pricing/catalog';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { authenticatedResultHref, getStudentExamWorkspace, productKindForOffer } from './catalog';
 import { buildStudentProgress, parseSkillScores } from './progress';
-import type { StudentAssignment, StudentAttempt, StudentCourse, StudentDashboardData, StudentSubscription } from './types';
+import type { StudentAssignment, StudentAttempt, StudentCourse, StudentDashboardData, StudentHumanReview, StudentSubscription } from './types';
+import { examCan } from '@/lib/xpress-commerce/access';
+import { parseXpressExamSlug, resolveExamAccessForUser } from '@/lib/xpress-commerce/access.server';
 
 type AuthUser = Readonly<{
   id: string;
@@ -17,6 +19,7 @@ type AuthUser = Readonly<{
 type Profile = { full_name?: string | null; target_exam?: string | null } | null;
 type MembershipRow = { offer_id: string; exam_slug: string; status: string; starts_at: string; ends_at: string; created_at: string };
 type CreditRow = { offer_id?: string; exam_slug: string; status: string; granted_at: string; consumed_at: string | null; consumed_submission_id: string | null };
+type GrantRow = { exam_slug: string; source: 'autodidacta-free' | 'welearn'; plan_id: 'exam-free' | 'welearn-full'; status: string; starts_at: string; ends_at: string | null };
 type SubmissionRow = {
   id: string; exam_slug: string; mock_id: string | null; mock_title: string | null; total_score: number | null;
   total_max: number | null; total_label: string | null; created_at: string; reviewed_at: string | null;
@@ -27,6 +30,7 @@ type SubmissionRow = {
 type SubscriptionRow = StudentSubscription & { offer_id: string; exam_slug: string; created_at: string };
 type CourseOrderRow = { id: string; selection: unknown; amount_in_cents: number; classes: number; sessions: number; created_at: string };
 type FeedbackRow = { submission_id: string; status: 'pending' | 'processing' | 'completed' | 'failed'; generated_report?: unknown };
+type HumanReviewRow = { status: StudentHumanReview['status']; review_kind: StudentHumanReview['kind']; review_report?: unknown };
 type SubmissionAccessRow = { submission_id: string; offer_id: string; personalized_feedback: boolean };
 type AssignmentRow = {
   id: string; title: string; instructions: string; resource_url: string | null; due_at: string | null;
@@ -67,7 +71,20 @@ function teacherFeedback(value: unknown): StudentAttempt['teacherFeedback'] {
     improvements: report.improvements, nextSteps: report.nextSteps };
 }
 
-function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: FeedbackRow): StudentAttempt {
+function humanReviewReport(value: unknown): StudentHumanReview['report'] {
+  if (!value || typeof value !== 'object') return null;
+  const report = value as Record<string, unknown>;
+  if (typeof report.summary !== 'string' || typeof report.strengths !== 'string'
+    || typeof report.improvements !== 'string') return null;
+  return {
+    summary: report.summary,
+    strengths: report.strengths,
+    improvements: report.improvements,
+    improvementPlan: typeof report.improvementPlan === 'string' ? report.improvementPlan : null,
+  };
+}
+
+function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: FeedbackRow, detailed = true): StudentAttempt {
   const score = normalizedScore(row);
   const exam = getStudentExamWorkspace(row.exam_slug);
   const deliveredFeedback = feedback?.status === 'completed' ? teacherFeedback(feedback.generated_report) : null;
@@ -82,8 +99,9 @@ function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: Feedbac
     createdAt: row.created_at,
     score: score.score,
     scoreLabel: score.label,
-    reportHref: authenticatedResultHref(row.id),
-    skills: parseSkillScores(row.skills),
+    reportHref: detailed ? authenticatedResultHref(row.id) : (exam?.hubHref ?? '/examenes'),
+    reportAvailable: detailed,
+    skills: detailed ? parseSkillScores(row.skills) : [],
     feedbackState: personalized
       ? (deliveredFeedback ? 'delivered' : feedback?.status === 'failed' ? 'failed' : feedback ? 'processing' : 'available')
       : 'not-included',
@@ -100,7 +118,7 @@ export async function loadOwnedPaidAttempt(user: AuthUser, submissionId: string)
     .eq('id', submissionId).eq('user_id', user.id).maybeSingle();
   if (submissionError || !submission) return null;
   const row = submission as SubmissionRow;
-  const [access, credit, membership, feedback] = await Promise.all([
+  const [access, credit, membership, feedback, humanReview] = await Promise.all([
     db.from('xpress_submission_access').select('offer_id,personalized_feedback')
       .eq('submission_id', submissionId).eq('user_id', user.id).eq('environment', environment).maybeSingle(),
     db.from('xpress_exam_credits').select('id').eq('user_id', user.id).eq('environment', environment)
@@ -110,12 +128,39 @@ export async function loadOwnedPaidAttempt(user: AuthUser, submissionId: string)
       .gt('ends_at', row.created_at).limit(1).maybeSingle(),
     db.from('xpress_personalized_feedback_requests').select('submission_id,status,generated_report').eq('submission_id', submissionId)
       .eq('user_id', user.id).maybeSingle(),
+    db.from('xpress_human_review_requests').select('status,review_kind,review_report').eq('submission_id', submissionId)
+      .eq('user_id', user.id),
   ]);
-  if ([access, credit, membership, feedback].some((result) => result.error)) return null;
-  if (!access.data && !credit.data && !membership.data) return null;
+  if ([access, credit, membership, feedback, humanReview].some((result) => result.error)) return null;
+  if (!access.data && !credit.data && !membership.data) {
+    const examSlug = parseXpressExamSlug(row.exam_slug);
+    if (!examSlug) return null;
+    try {
+      const currentAccess = await resolveExamAccessForUser(user.id, examSlug);
+      if (!examCan(currentAccess.level, 'view-detailed-results')) return null;
+    } catch {
+      return null;
+    }
+  }
   const personalized = access.data?.personalized_feedback === true || access.data?.offer_id === 'exam-teacher'
     || membership.data?.offer_id === 'exam-teacher' || Boolean(feedback.data);
-  return toAttempt(row, personalized, (feedback.data as FeedbackRow | null) ?? undefined);
+  const attempt = toAttempt(row, personalized, (feedback.data as FeedbackRow | null) ?? undefined);
+  const offerId = access.data?.offer_id ?? membership.data?.offer_id;
+  const humanReviews = ((humanReview.data ?? []) as HumanReviewRow[]).map((review) => ({
+    kind: review.review_kind,
+    status: review.status,
+    report: review.status === 'completed' ? humanReviewReport(review.review_report) : null,
+  }));
+  const reviewStates = humanReviews.map((review) => review.status);
+  return {
+    ...attempt,
+    humanReviews,
+    humanReviewState: reviewStates.includes('pending') ? 'pending'
+      : reviewStates.includes('assigned') ? 'assigned'
+        : reviewStates.includes('completed') ? 'completed'
+          : reviewStates.includes('declined') ? 'declined'
+            : (offerId === 'exam-auto' || offerId === 'exam-teacher' ? 'available' : 'not-included'),
+  };
 }
 
 function courseFromOrder(order: CourseOrderRow): StudentCourse {
@@ -129,8 +174,8 @@ function courseFromOrder(order: CourseOrderRow): StudentCourse {
 export async function loadStudentDashboard(user: AuthUser, profile: Profile): Promise<StudentDashboardData> {
   const fallback: StudentDashboardData = {
     name: displayName(user, profile), email: user.email ?? '', dataAvailable: false,
-    access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, singleAttemptAvailable: false },
-    subscription: null, attempts: [], courses: [], courseProgress: { completedActivities: 0, lastCompletedAt: null }, assignments: [],
+    access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, source: 'none' },
+    accesses: [], subscription: null, subscriptions: [], attempts: [], courses: [], courseProgress: { completedActivities: 0, lastCompletedAt: null }, assignments: [],
     progress: buildStudentProgress([], profile?.target_exam),
   };
   if (!user.email) return fallback;
@@ -145,9 +190,11 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       });
       if (recoveryError) return fallback;
     }
-    const [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows, courseProgressRows] = await Promise.all([
+    const [memberships, grants, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows, courseProgressRows] = await Promise.all([
       db.from('xpress_memberships').select('offer_id,exam_slug,status,starts_at,ends_at,created_at')
         .eq('user_id', user.id).eq('environment', environment).order('created_at', { ascending: false }).limit(20),
+      db.from('exam_access_grants').select('exam_slug,source,plan_id,status,starts_at,ends_at')
+        .eq('user_id', user.id).order('starts_at', { ascending: false }).limit(20),
       db.from('xpress_exam_credits').select('exam_slug,status,granted_at,consumed_at,consumed_submission_id')
         .eq('user_id', user.id).eq('environment', environment).order('granted_at', { ascending: false }).limit(20),
       db.from('xpress_subscriptions').select('id,offer_id,exam_slug,status,next_charge_at,current_period_end,cancel_requested_at,created_at')
@@ -170,23 +217,43 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       db.from('user_progress').select('course_slug,completed_at').eq('user_id', user.id)
         .order('completed_at', { ascending: false }).limit(1000),
     ]);
-    const failed = [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows, courseProgressRows].some((result) => result.error);
+    const failed = [memberships, grants, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows, courseProgressRows].some((result) => result.error);
     if (failed) return fallback;
 
     const now = Date.now();
     const membershipRows = (memberships.data ?? []) as MembershipRow[];
+    const grantRows = (grants.data ?? []) as GrantRow[];
     const creditRows = (credits.data ?? []) as CreditRow[];
     const subscriptionRows = (subscriptions.data ?? []) as unknown as SubscriptionRow[];
     const submissionRows = (submissions.data ?? []) as SubmissionRow[];
     const accessRows = (submissionAccess.data ?? []) as SubmissionAccessRow[];
     const accessBySubmission = new Map(accessRows.map((row) => [row.submission_id, row]));
     const feedbackBySubmission = new Map(((feedbackRequests.data ?? []) as FeedbackRow[]).map((row) => [row.submission_id, row]));
-    const activeMembership = membershipRows.find((row) => row.status === 'active' && Date.parse(row.starts_at) <= now && Date.parse(row.ends_at) > now);
+    const activeMemberships = membershipRows.filter((row) => row.status === 'active' && Date.parse(row.starts_at) <= now && Date.parse(row.ends_at) > now);
+    const activeGrants = grantRows.filter((row) => row.status === 'active' && Date.parse(row.starts_at) <= now
+      && (row.ends_at === null || Date.parse(row.ends_at) > now));
+    const activeByExam = new Map<string, StudentDashboardData['access']>();
+    for (const grant of activeGrants) {
+      activeByExam.set(grant.exam_slug, {
+        state: 'active', product: productKindForOffer(grant.plan_id), exam: getStudentExamWorkspace(grant.exam_slug),
+        startsAt: grant.starts_at, endsAt: grant.ends_at, source: grant.source,
+      });
+    }
+    for (const membership of activeMemberships) {
+      activeByExam.set(membership.exam_slug, {
+        state: 'active', product: productKindForOffer(membership.offer_id), exam: getStudentExamWorkspace(membership.exam_slug),
+        startsAt: membership.starts_at, endsAt: membership.ends_at, source: 'xpress-membership',
+      });
+    }
+    const accesses = [...activeByExam.values()];
+    const selectedAccess = accesses.find((candidate) => candidate.exam?.slug === profile?.target_exam) ?? accesses[0] ?? null;
     const latestCredit = creditRows.find((row) => row.status === 'active' || row.status === 'consumed') ?? null;
     const latestMembership = membershipRows[0] ?? null;
-    const selectedExam = activeMembership?.exam_slug || latestCredit?.exam_slug || latestMembership?.exam_slug || subscriptionRows[0]?.exam_slug || profile?.target_exam || null;
-    const product = activeMembership ? productKindForOffer(activeMembership.offer_id) : latestCredit ? 'single' : latestMembership ? productKindForOffer(latestMembership.offer_id) : null;
-    const accessState = activeMembership ? 'active' : latestCredit?.status === 'active' ? 'active' : latestCredit?.status === 'consumed' ? 'consumed' : latestMembership ? 'expired' : 'none';
+    const selectedExam = selectedAccess?.exam?.slug || latestCredit?.exam_slug || latestMembership?.exam_slug || subscriptionRows[0]?.exam_slug || profile?.target_exam || null;
+    const fallbackAccess: StudentDashboardData['access'] = latestMembership ? {
+      state: 'expired', product: productKindForOffer(latestMembership.offer_id), exam: getStudentExamWorkspace(latestMembership.exam_slug),
+      startsAt: latestMembership.starts_at, endsAt: latestMembership.ends_at, source: 'xpress-membership',
+    } : { state: 'none', product: null, exam: getStudentExamWorkspace(selectedExam), startsAt: null, endsAt: null, source: 'none' };
     const consumedSubmissionIds = new Set(creditRows.flatMap((row) => row.consumed_submission_id ? [row.consumed_submission_id] : []));
     const isMembershipSubmission = (row: SubmissionRow) => membershipRows.some((membership) => (
       membership.status !== 'revoked' && membership.exam_slug === row.exam_slug
@@ -195,7 +262,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     ));
     const relevantSubmissions = submissionRows.filter((row) => (
       accessBySubmission.has(row.id) || consumedSubmissionIds.has(row.id)
-      || feedbackBySubmission.has(row.id) || isMembershipSubmission(row)
+      || feedbackBySubmission.has(row.id) || isMembershipSubmission(row) || activeByExam.has(row.exam_slug)
     ));
     const courseOrderMap = new Map<string, CourseOrderRow>();
     for (const order of [...(ownedCourseOrders.data ?? []), ...(emailedCourseOrders.data ?? [])] as CourseOrderRow[]) courseOrderMap.set(order.id, order);
@@ -207,14 +274,15 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       const enrolled = new Set((enrollments.data ?? []).map((row) => String(row.order_id)));
       courses = [...courseOrderMap.values()].filter((order) => enrolled.has(order.id)).map(courseFromOrder);
     }
-    const currentSubscription = subscriptionRows[0] ?? null;
-    const subscription: StudentSubscription | null = currentSubscription ? {
+    const mappedSubscriptions = subscriptionRows.map((currentSubscription) => ({
       id: currentSubscription.id,
       status: currentSubscription.status,
       nextChargeAt: currentSubscription.nextChargeAt ?? (currentSubscription as unknown as { next_charge_at: string | null }).next_charge_at,
       periodEndsAt: currentSubscription.periodEndsAt ?? (currentSubscription as unknown as { current_period_end: string | null }).current_period_end,
       cancelRequestedAt: currentSubscription.cancelRequestedAt ?? (currentSubscription as unknown as { cancel_requested_at: string | null }).cancel_requested_at,
-    } : null;
+      examSlug: currentSubscription.exam_slug,
+    }));
+    const subscription = mappedSubscriptions.find((item) => item.examSlug === selectedAccess?.exam?.slug) ?? mappedSubscriptions[0] ?? null;
 
     const attempts = relevantSubmissions.map((row) => {
       const ledgerAccess = accessBySubmission.get(row.id);
@@ -222,7 +290,9 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
         || feedbackBySubmission.has(row.id)
         || membershipRows.some((membership) => membership.status !== 'revoked' && membership.offer_id === 'exam-teacher' && membership.exam_slug === row.exam_slug
           && Date.parse(row.created_at) >= Date.parse(membership.starts_at) && Date.parse(row.created_at) < Date.parse(membership.ends_at));
-      return toAttempt(row, personalized, feedbackBySubmission.get(row.id));
+      const currentAccess = activeByExam.get(row.exam_slug);
+      const detailed = currentAccess?.product !== 'free';
+      return toAttempt(row, personalized, feedbackBySubmission.get(row.id), detailed);
     });
     const assignments: StudentAssignment[] = ((assignmentRows.data ?? []) as AssignmentRow[]).map((row) => ({
       id: row.id, title: row.title, instructions: row.instructions, resourceUrl: row.resource_url,
@@ -238,15 +308,10 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
 
     return {
       name: displayName(user, profile), email, dataAvailable: true,
-      access: {
-        state: accessState,
-        product,
-        exam: getStudentExamWorkspace(selectedExam),
-        startsAt: activeMembership?.starts_at ?? latestCredit?.granted_at ?? null,
-        endsAt: activeMembership?.ends_at ?? null,
-        singleAttemptAvailable: product === 'single' && latestCredit?.status === 'active',
-      },
+      access: selectedAccess ?? fallbackAccess,
+      accesses,
       subscription,
+      subscriptions: mappedSubscriptions,
       attempts,
       courses,
       courseProgress: { completedActivities: completedCourseRows.length,

@@ -54,7 +54,7 @@ export default function Page() {
           <div className={styles.hubHeroCopy}>
             <p className={styles.hubKicker}>Centro de entrenamiento · Inglés Saber 11</p>
             <h1>Entiende las 7 partes. Practica con feedback. Llega con estrategia.</h1>
-            <p>El componente de Inglés evalúa lectura y uso del idioma mediante siete tipos de tarea. Aquí puedes aprender el método, practicar sin registro y pasar después a cuadernillos o una ruta enfocada en tus errores.</p>
+            <p>El componente de Inglés evalúa lectura y uso del idioma mediante siete tipos de tarea. Aquí puedes aprender el método, crear una cuenta gratis para practicar y pasar después a cuadernillos o una ruta enfocada en tus errores.</p>
             <div className={styles.hubActions}>
               <Link href="/practica/icfes-saber-11/diagnostico" className={styles.primaryButton} data-icfes-cta="learning_hero_diagnostic" data-icfes-surface="learning-hub-hero">Hacer diagnóstico</Link>
               <Link href="/examenes/icfes" className={styles.secondaryButton} data-icfes-cta="learning_hero_catalog" data-icfes-surface="learning-hub-hero">Ver 31 recursos de examen</Link>

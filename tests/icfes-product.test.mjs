@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
-import { hasSensitiveResultFields, validateIcfesAnswers } from '../src/lib/icfes/attempt-contract.ts';
+import { hasSensitiveResultFields, toIcfesTotalResult, validateIcfesAnswers } from '../src/lib/icfes/attempt-contract.ts';
 import { parseIcfesWompiTransaction } from '../src/lib/icfes/payment-event.ts';
 
 const read = (path) => readFileSync(path, 'utf8');
@@ -13,6 +13,11 @@ test('free result DTO rejects answer-key and rationale fields', () => {
     { answer: 1 }, { correctAnswer: 'B' }, { nested: { answers: { q1: 1 } } },
     { rationale: 'because' }, { explanation: 'because' },
   ]) assert.equal(hasSensitiveResultFields(unsafe), true);
+  const totalOnly = toIcfesTotalResult({ attemptId: 'a', examId: 'e', correct: 2, total: 3, percentage: 67,
+    byPart: [], bySkill: [], recommendation: { label: 'x', href: '/' }, officialResource: false, premiumEligible: true });
+  assert.equal('byPart' in totalOnly, false);
+  assert.equal('bySkill' in totalOnly, false);
+  assert.equal('recommendation' in totalOnly, false);
 });
 
 test('response validation rejects unknown questions and manipulated choices', () => {
@@ -37,13 +42,14 @@ test('secure grade route validates signed attempt, exam binding, and returns onl
   const route = read('src/app/api/icfes/attempts/grade/route.ts');
   assert.match(route, /verifyIcfesAttemptToken\(body\.attemptToken, examId\)/);
   assert.match(route, /validateIcfesAnswers\(body\.responses, questions\)/);
-  assert.match(route, /json\(\{ ok: true, result \}\)/);
+  assert.match(route, /toIcfesTotalResult\(result\)/);
+  assert.match(route, /json\(\{ ok: true, result: browserResult \}\)/);
   assert.doesNotMatch(route, /json\([^\n]*(answers|rationale|explanation)/i);
 });
 
 test('mocks can finish while private persistence is disabled', () => {
   const route = read('src/app/api/icfes/attempts/grade/route.ts');
-  assert.match(route, /if \(!isIcfesPersistenceEnabled\(\)\) return json\(\{ ok: true, result \}\)/);
+  assert.match(route, /if \(!isIcfesPersistenceEnabled\(\)\) return json\(\{ ok: true, result: browserResult \}\)/);
   assert.match(route, /if \(!persisted\) return json\(\{ ok: false/);
   assert.match(route, /await persistIcfesSubmissionSummary\(/);
   assert.ok(route.indexOf('persistIcfesSubmissionSummary(') < route.indexOf('if (!isIcfesPersistenceEnabled())'));
@@ -61,18 +67,15 @@ test('every secure completion stores a safe admin summary without answers', () =
   assert.doesNotMatch(summary, /input\.answers|answers:|answer_key|access_token/);
 });
 
-test('lead is mandatory and saved before the score-only result is released', () => {
+test('an authenticated exact-exam entitlement replaces the old post-exam lead gate', () => {
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
   const flow = read('src/components/icfes/IcfesLeadResultOffers.tsx');
   const route = read('src/app/api/icfes/attempts/grade/route.ts');
   assert.match(runner, /<IcfesLeadResultOffers result=\{secureResult\}/);
-  assert.match(runner, /setPhase\('lead'\)/);
-  assert.match(runner, /responses: answers, lead/);
-  assert.match(route, /lead\?\.contactConsent !== true/);
-  assert.match(route, /const savedLead = await saveLead\(/);
-  assert.ok(route.indexOf('const savedLead = await saveLead(') < route.indexOf('if (!isIcfesPersistenceEnabled()) return json({ ok: true, result })'));
-  assert.ok(route.indexOf('if (!savedLead.ok || !savedLead.id)') < route.indexOf('await persistIcfesSubmissionSummary('));
-  assert.match(route, /if \(!savedLead\.ok \|\| !savedLead\.id\) return json\(\{ ok: false/);
+  assert.match(runner, /responses: answers/);
+  assert.match(route, /currentExamScoreAccess\('icfes'\)/);
+  assert.match(route, /examCan\(access\.level, 'save-result'\)/);
+  assert.doesNotMatch(route, /const savedLead = await saveLead\(/);
   assert.match(flow, /leadCaptured \? 'offers' : 'lead'/);
   assert.ok(flow.indexOf('data-testid="icfes-lead-gate"') < flow.indexOf('data-testid="icfes-result-offers"'));
   assert.match(flow, /required checked=\{leadConsent\}/);
@@ -99,43 +102,38 @@ test('ICFES resource count is derived from the catalog', () => {
   assert.doesNotMatch(hero, /label: 'Recursos únicos', value: '34'/);
 });
 
-test('post-exam screen reuses the reviewed Xpress products and preserves their scope', () => {
+test('post-exam screen offers the three approved paid plans and preserves their scope', () => {
   const flow = read('src/components/icfes/IcfesLeadResultOffers.tsx');
   const catalog = read('src/lib/xpress-commerce/catalog.ts');
   assert.match(flow, /XPRESS_OFFERS\.map/);
-  assert.match(flow, /Informe detallado/);
-  assert.match(flow, /Preparación automática/);
-  assert.match(flow, /Feedback personalizado/);
-  assert.match(flow, /Revisión personalizada de un tutor/);
-  assert.match(flow, /Entrega en el panel dentro de 24 horas/);
-  assert.match(catalog, /amountInCents: 1_290_000/);
+  assert.match(flow, /Autodidacta Esencial/);
+  assert.match(flow, /5 revisiones humanas por periodo/);
+  assert.match(flow, /Plan de mejora personalizado/);
+  assert.match(catalog, /amountInCents: 1_590_000/);
   assert.match(catalog, /amountInCents: 4_990_000/);
   assert.match(catalog, /amountInCents: 9_990_000/);
 });
 
-test('official resources cannot reach checkout or premium detail', () => {
+test('the retired one-time ICFES checkout cannot create another payment', () => {
   const registry = read('src/lib/icfes/exam-registry.server.ts');
   const checkout = read('src/app/api/icfes/pass/checkout/route.ts');
   const detail = read('src/app/api/icfes/attempts/[attemptId]/detail/route.ts');
   assert.match(registry, /getIcfesPaidDetailAvailability\(examId\)/);
   assert.match(registry, /getSimulacroForPaidDetail\(examId\)/);
-  assert.match(checkout, /if \(!availability\.eligible\)/);
+  assert.match(checkout, /legacy_icfes_pass_retired/);
+  assert.match(checkout, /status: 410/);
   assert.match(detail, /!availability\.eligible \|\| !getIcfesPaidExam/);
 });
 
-test('checkout uses server price, signed cookie capability, user ownership, and no fake success', () => {
+test('legacy checkout is closed while historical payment verification remains intact', () => {
   const checkout = read('src/app/api/icfes/pass/checkout/route.ts');
   const config = read('src/lib/icfes/product-config.server.ts');
   assert.match(config, /ICFES_PASS_PRICE_COP = 12_900/);
   assert.match(config, /ICFES_PASE_ENABLED !== 'true'/);
   assert.match(config, /ICFES_PERSISTENCE_ENABLED === 'true'/);
-  assert.match(checkout, /acceptedTerms !== XPRESS_TERMS_VERSION/);
-  assert.match(checkout, /acceptedPrivacy !== XPRESS_PRIVACY_VERSION/);
-  assert.match(checkout, /ICFES_ATTEMPT_COOKIE/);
-  assert.match(checkout, /attempt\.user_id && attempt\.user_id !== user\?\.id/);
-  assert.match(checkout, /createWompiIntegritySignature/);
+  assert.match(checkout, /legacy_icfes_pass_retired/);
   assert.doesNotMatch(checkout, /status:\s*'APPROVED'/);
-  assert.match(read('src/components/icfes/IcfesLeadResultOffers.tsx'), /amount_cop: data\.amountInCents \/ 100/);
+  assert.match(read('src/components/icfes/IcfesLeadResultOffers.tsx'), /amount_cop: selectedOffer\.amountInCents \/ 100/);
 });
 
 test('feature flags default off and private ownership never comes from the client', () => {
@@ -200,8 +198,8 @@ test('commercial analytics use centralized names and exclude PII/answers', () =>
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
   const offers = read('src/components/icfes/IcfesLeadResultOffers.tsx');
   const paid = read('src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/IcfesPaidResultClient.tsx');
-  for (const event of ['icfes_offer_view', 'icfes_paid_detail_intent', 'icfes_checkout_start']) assert.ok(offers.includes(`trackIcfesEvent('${event}'`));
+  for (const event of ['icfes_offer_view', 'icfes_paid_detail_intent']) assert.ok(offers.includes(`trackIcfesEvent('${event}'`));
   assert.ok(paid.includes("trackIcfesEvent('icfes_purchase_complete'"));
-  assert.doesNotMatch(offers.match(/trackIcfesEvent\('icfes_(offer_view|paid_detail_intent|checkout_start)'[\s\S]{0,180}/g)?.join('') ?? '', /email|whatsapp|answer/);
+  assert.doesNotMatch(offers.match(/trackIcfesEvent\('icfes_(offer_view|paid_detail_intent)'[\s\S]{0,180}/g)?.join('') ?? '', /email|whatsapp|answer/);
   assert.ok(runner.includes("trackIcfesEvent('icfes_mock_complete'"));
 });

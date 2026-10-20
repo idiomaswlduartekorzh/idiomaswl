@@ -77,7 +77,7 @@ export default function IntroduccionContent() {
           </p>
 
           <WeLearnDownloadButton
-            href="/downloads/ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf"
+            href="/api/site-materials/ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf"
               label="Download PDF guide"
           />
 

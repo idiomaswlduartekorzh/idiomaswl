@@ -5,6 +5,8 @@ export type ExamTranscriptResource = {
   audioLanguage: 'inglés' | 'alemán';
 };
 
+export type ExamMaterialKind = 'transcript' | 'answer-key';
+
 type TranscriptSeries = {
   folder: string;
   filePrefix: string;
@@ -59,9 +61,25 @@ export function getExamTranscriptResource(examSlug: string, mockId: string): Exa
 
   const paddedSet = String(setNumber).padStart(2, '0');
   return {
-    href: `/downloads/exam-transcriptions/${series.folder}/${series.filePrefix}-set-${paddedSet}-transcripciones.pdf`,
-    answerKeyHref: `/downloads/exam-answer-keys/${series.folder}/${series.filePrefix}-set-${paddedSet}-claves.pdf`,
+    href: `/api/exam-materials/${examSlug}/${mockId}/transcript`,
+    answerKeyHref: `/api/exam-materials/${examSlug}/${mockId}/answer-key`,
     interfaceLanguage: series.interfaceLanguage,
     audioLanguage: series.audioLanguage,
   };
+}
+
+export function getPrivateExamMaterial(examSlug: string, mockId: string, kind: ExamMaterialKind) {
+  const series = TRANSCRIPT_SERIES[examSlug];
+  if (!series) return null;
+  const match = mockId.match(series.mockPattern);
+  const setNumber = match ? Number(match[1]) : 0;
+  if (!Number.isInteger(setNumber) || setNumber < 1 || setNumber > series.maxSet) return null;
+  const paddedSet = String(setNumber).padStart(2, '0');
+  const suffix = kind === 'transcript' ? 'transcripciones' : 'claves';
+  const category = kind === 'transcript' ? 'exam-transcriptions' : 'exam-answer-keys';
+  const fileName = `${series.filePrefix}-set-${paddedSet}-${suffix}.pdf`;
+  return {
+    fileName,
+    relativePath: `${category}/${series.folder}/${fileName}`,
+  } as const;
 }

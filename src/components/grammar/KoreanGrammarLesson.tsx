@@ -5,6 +5,7 @@ import { useState } from 'react'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getKoreanGrammarResource, type KoreanGrammarLevel } from '@/data/korean-grammar-preview'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './KoreanGrammarLesson.module.css'
 
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
@@ -177,7 +178,7 @@ function ReferenceTable({ rows }: { rows: string[][] }) {
 }
 
 function ResourceCard({ code, title, copy, final = false, href }: { code: string; title: string; copy: string; final?: boolean; href?: string }) {
-  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={href} download>Descargar PDF</a> : <em>{final ? 'Se produce al final' : 'Incluido en la lección'}</em>}</div></div>
+  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={protectedMaterialHref(href)} download>Descargar PDF</a> : <em>{final ? 'Se produce al final' : 'Incluido en la lección'}</em>}</div></div>
 }
 
 function AudioShelf({ tracks }: { tracks: NonNullable<ReturnType<typeof getKoreanGrammarResource>['audioTracks']> }) {
@@ -185,7 +186,7 @@ function AudioShelf({ tracks }: { tracks: NonNullable<ReturnType<typeof getKorea
 }
 
 function AudioDownloads({ tracks }: { tracks: NonNullable<ReturnType<typeof getKoreanGrammarResource>['audioTracks']> }) {
-  return <div className="korean-audio-downloads"><h3>Descargar pistas</h3><div>{tracks.map((track, index) => <a key={track.id} href={track.src} download><span>{String(index + 1).padStart(2, '0')}</span><strong>{track.title}</strong><em>M4A · voz coreana</em></a>)}</div></div>
+  return <div className="korean-audio-downloads"><h3>Descargar pistas</h3><div>{tracks.map((track, index) => <a key={track.id} href={protectedMaterialHref(track.src)} download><span>{String(index + 1).padStart(2, '0')}</span><strong>{track.title}</strong><em>M4A · voz coreana</em></a>)}</div></div>
 }
 
 function splitFormula(formula: string): string[] {

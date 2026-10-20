@@ -1,5 +1,5 @@
 import { XPRESS_EXAM_OPTIONS, type XpressExamSlug } from '../student-onboarding/catalog.ts';
-import { getXpressOffer, type XpressOfferId } from './catalog.ts';
+import { getXpressOffer, type XpressMembershipOfferId, type XpressOfferId } from './catalog.ts';
 import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS_VERSION } from './terms.ts';
 
 export type XpressOrderInput = Readonly<{
@@ -13,7 +13,7 @@ export type XpressOrderInput = Readonly<{
 export type XpressSubscriptionInput = Readonly<{
   idempotencyKey: string;
   examSlug: XpressExamSlug;
-  offerId: Exclude<XpressOfferId, 'exam-single'>;
+  offerId: XpressMembershipOfferId;
   acceptedTerms: string;
   acceptedPrivacy: string;
   acceptedRecurring: string;
@@ -27,16 +27,12 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
   const input = value as Record<string, unknown>;
   if (typeof input.idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.idempotencyKey)) return null;
   if (!XPRESS_EXAM_OPTIONS.some((item) => item.id === input.examSlug)) return null;
-  if (input.offerId !== 'exam-single' && input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
+  if (input.offerId !== 'exam-single') return null;
   if (input.acceptedTerms !== XPRESS_TERMS_VERSION || input.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
-  getXpressOffer(input.offerId);
-  return {
-    idempotencyKey: input.idempotencyKey,
-    examSlug: input.examSlug as XpressExamSlug,
-    offerId: input.offerId,
-    acceptedTerms: input.acceptedTerms,
-    acceptedPrivacy: input.acceptedPrivacy,
-  } as XpressOrderInput;
+  if (getXpressOffer(input.offerId).availableForPurchase) return null;
+  // The one-time offer is retained only so historical receipts can be read.
+  // It must never be accepted for a new order.
+  return null;
 }
 
 export function parseXpressSubscriptionForm(value: FormData): XpressSubscriptionInput | null {
@@ -51,7 +47,7 @@ export function parseXpressSubscriptionForm(value: FormData): XpressSubscription
   const paymentSourceType = value.get('payment_source_type');
   if (typeof idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(idempotencyKey)) return null;
   if (typeof examSlug !== 'string' || !XPRESS_EXAM_OPTIONS.some((item) => item.id === examSlug)) return null;
-  if (offerId !== 'exam-auto' && offerId !== 'exam-teacher') return null;
+  if (offerId !== 'exam-basic' && offerId !== 'exam-auto' && offerId !== 'exam-teacher') return null;
   if (acceptedTerms !== XPRESS_TERMS_VERSION || acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
   if (acceptedRecurring !== XPRESS_RECURRING_CONSENT_VERSION || acceptedWompi !== 'yes') return null;
   if (paymentSourceType !== 'CARD' || typeof paymentSourceToken !== 'string' || !/^tok_(test|prod)_[A-Za-z0-9_-]{8,240}$/.test(paymentSourceToken)) return null;

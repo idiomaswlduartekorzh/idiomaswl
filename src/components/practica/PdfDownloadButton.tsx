@@ -8,9 +8,8 @@ import { useCallback, useState } from 'react'
  * generador se cargan solo cuando alguien pulsa, y no pesan en la carga inicial
  * de ninguna página.
  *
- * Hoy la descarga es libre y de un clic, por decisión de producto. Cuando haya
- * suscripción, el candado va aquí: es el único sitio por el que pasan todas las
- * descargas del sitio.
+ * Los flujos de examen interceptan `data-exam-download` antes de ejecutar el
+ * generador. Los materiales privados también deben validar acceso en servidor.
  */
 // Azul de marca. Vive aquí, y no en quien llama, porque varias de las carpetas
 // que usan el botón están vigiladas por el guardián de colores del prebuild:
@@ -42,6 +41,23 @@ export default function PdfDownloadButton({
     if (state === 'busy') return
     setState('busy')
     try {
+      const access = await fetch('/api/material-access', {
+        method: 'GET',
+        credentials: 'same-origin',
+        headers: { accept: 'application/json' },
+      })
+      if (!access.ok) {
+        const next = `${window.location.pathname}${window.location.search}`
+        if (access.status === 401) {
+          window.location.assign(`/registro?${new URLSearchParams({ next, source: 'material' }).toString()}`)
+          return
+        }
+        if (access.status === 403) {
+          window.location.assign(`/suscripcion/examenes?reason=material-download`)
+          return
+        }
+        throw new Error('material_access_unavailable')
+      }
       await generate()
       setState('idle')
     } catch (err) {
@@ -56,6 +72,7 @@ export default function PdfDownloadButton({
   return (
     <button
       type="button"
+      data-exam-download="true"
       onClick={onClick}
       disabled={state === 'busy'}
       className="no-print"

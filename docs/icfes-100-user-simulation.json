@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T02:08:43.314Z",
+  "generatedAt": "2026-10-20T15:25:55.108Z",
   "methodology": {
     "kind": "deterministic-synthetic-cohort",
     "runtime": true,
@@ -11,7 +11,7 @@
     "users": 100,
     "cohorts": 7,
     "uniqueRoutes": 33,
-    "checks": 15,
+    "checks": 16,
     "criticalOrHighOpen": 0
   },
   "perCohort": [
@@ -47,7 +47,7 @@
       "cohort": "recommended-mock",
       "users": 15,
       "source": "recommendation",
-      "outcomeProxy": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "outcomeProxy": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
     },
     {
@@ -363,6 +363,14 @@
       "severity": "critical",
       "evidence": "Persistencia y reconstrucción de cola",
       "remediation": "Conectar motor y repaso de errores."
+    },
+    {
+      "id": "account-start-gate",
+      "title": "La práctica es visible pero comenzar exige una cuenta con acceso al examen",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Contenido público; inicio interceptado por acceso exacto a ICFES",
+      "remediation": "Restaurar el portón de cuenta en cada botón de inicio."
     },
     {
       "id": "error-review-contract",
@@ -1602,9 +1610,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-01/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1619,9 +1627,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-02/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1636,9 +1644,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-03/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1653,9 +1661,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-04/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1670,9 +1678,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-05/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1687,9 +1695,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-06/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1704,9 +1712,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-07/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1721,9 +1729,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-08/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1738,9 +1746,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-09/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1755,9 +1763,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-10/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1772,9 +1780,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-11/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1789,9 +1797,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-12/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1806,9 +1814,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-13/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1823,9 +1831,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-14/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
@@ -1840,9 +1848,9 @@
       "journey": [
         "/examenes/icfes/practica/mock-15/guiado"
       ],
-      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "expectedOutcome": "Puede explorar la práctica, recibe una promesa clara de cuenta gratis al comenzar y conserva el contexto del simulacro.",
       "learningOpportunity": [
-        "no-registration",
+        "free-account-gate",
         "scope-disclaimer",
         "error-explanation"
       ]
