@@ -23,7 +23,7 @@ from reportlab.platypus import (
 )
 
 DATA = ROOT / 'tmp' / 'japanese-grammar-a1' / 'topics.json'
-OUT = ROOT / 'public' / 'downloads' / 'japanese-a1' / 'grammar'
+OUT = ROOT / 'private' / 'site-materials' / 'japanese-a1' / 'grammar'
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ja-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ja-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-logo.png'

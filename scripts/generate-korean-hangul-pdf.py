@@ -27,7 +27,7 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'output' / 'pdf' / 'idiomaswl-hangul-basico-a1.pdf'
-PUBLIC = ROOT / 'public' / 'downloads' / 'coreano-a1' / 'idiomaswl-hangul-basico-a1.pdf'
+PUBLIC = ROOT / 'private' / 'site-materials' / 'coreano-a1' / 'idiomaswl-hangul-basico-a1.pdf'
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-logo.png'

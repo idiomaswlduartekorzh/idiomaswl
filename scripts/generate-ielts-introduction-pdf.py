@@ -16,7 +16,7 @@ from pdf_templates.welearn_branded import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / 'public' / 'downloads' / 'ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf'
+OUTPUT = ROOT / 'private' / 'site-materials' / 'ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-logo.png'
 CONTENT_W = 174 * mm
 CHART_W = 156 * mm

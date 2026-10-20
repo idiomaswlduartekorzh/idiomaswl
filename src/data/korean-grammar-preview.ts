@@ -60,7 +60,7 @@ const PREVIEW_RESOURCES: Record<string, Omit<KoreanGrammarResource, 'studyMinute
     image: '/assets/korean/step002/kr_step002_geulja_signs_v1.png',
     imageAlt: 'Letreros coreanos para reconocer bloques silábicos del hangeúl',
     glyph: '한글',
-    pdf: '/downloads/coreano-a1/idiomaswl-hangul-basico-a1.pdf',
+    pdf: '/api/site-materials/coreano-a1/idiomaswl-hangul-basico-a1.pdf',
     audioTracks: [
       {
         id: 'modelo-silabas',
@@ -125,7 +125,7 @@ export function getKoreanGrammarResource(topic: GrammarTopic, level: KoreanGramm
 
 function koreanGrammarPdf(slug: string, level: KoreanGrammarLevel): string {
   const filename = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}.pdf` : `idiomaswl-${slug}-${level}.pdf`
-  return `/downloads/coreano-${level}/grammar/${filename}`
+  return `/api/site-materials/coreano-${level}/grammar/${filename}`
 }
 
 function koreanGrammarAudio(topic: GrammarTopic, level: KoreanGrammarLevel): KoreanGrammarAudioTrack[] {

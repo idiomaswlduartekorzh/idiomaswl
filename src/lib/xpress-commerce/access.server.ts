@@ -67,6 +67,42 @@ export async function hasClaimedFreeExamAccess(userId: string): Promise<boolean>
   return (count ?? 0) > 0;
 }
 
+/**
+ * General study-library downloads are not tied to one exam slug. They are
+ * available when the learner has at least one current paid autonomous access
+ * or an active WeLearn academic assignment. The free claim intentionally does
+ * not qualify.
+ */
+export async function hasMaterialDownloadAccess(userId: string): Promise<boolean> {
+  const { environment } = getWompiServerConfig();
+  const now = new Date().toISOString();
+  const admin = createAdminClient();
+  const [membership, welearnGrant] = await Promise.all([
+    admin.from('xpress_memberships')
+      .select('id')
+      .eq('user_id', userId)
+      .eq('environment', environment)
+      .eq('status', 'active')
+      .lte('starts_at', now)
+      .gt('ends_at', now)
+      .limit(1)
+      .abortSignal(AbortSignal.timeout(8000))
+      .maybeSingle(),
+    admin.from('exam_access_grants')
+      .select('id')
+      .eq('user_id', userId)
+      .eq('source', 'welearn')
+      .eq('status', 'active')
+      .lte('starts_at', now)
+      .or(`ends_at.is.null,ends_at.gt.${now}`)
+      .limit(1)
+      .abortSignal(AbortSignal.timeout(8000))
+      .maybeSingle(),
+  ]);
+  if (membership.error || welearnGrant.error) throw new Error('material_access_lookup_failed');
+  return Boolean(membership.data || welearnGrant.data);
+}
+
 export function publicExamAccessPayload(decision: ExamAccessDecision) {
   return {
     examSlug: decision.examSlug,

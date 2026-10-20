@@ -46,7 +46,7 @@ for (const topic of grammarTopics) {
   assert.ok(resource, `${topic.slug}: no tiene manifiesto visual/audio`)
   assertMagic(path.join(ROOT, 'public', resource.image), Buffer.from([0xff, 0xd8, 0xff]), 'imagen editorial')
   assertMagic(path.join(ROOT, 'public', resource.audio), Buffer.from('ID3'), 'audio MP3')
-  assertMagic(path.join(ROOT, 'public', 'downloads', 'japanese-a1', 'grammar', `idiomaswl-${topic.slug}-a1.pdf`), Buffer.from('%PDF'), 'cuaderno PDF')
+  assertMagic(path.join(ROOT, 'private', 'site-materials', 'japanese-a1', 'grammar', `idiomaswl-${topic.slug}-a1.pdf`), Buffer.from('%PDF'), 'cuaderno PDF')
   assertMagic(path.join(ROOT, 'public', 'downloads', 'japanese-a1', 'grammar', `idiomaswl-${topic.slug}-map.png`), Buffer.from([0x89, 0x50, 0x4e, 0x47]), 'mapa PNG')
 }
 

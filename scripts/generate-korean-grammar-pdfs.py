@@ -29,7 +29,7 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'tmp' / 'pdfs' / 'korean-grammar' / 'topics.json'
 OUTPUT = ROOT / 'output' / 'pdf' / 'korean-grammar'
-PUBLIC = ROOT / 'public' / 'downloads'
+PUBLIC = ROOT / 'private' / 'site-materials'
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-logo.png'

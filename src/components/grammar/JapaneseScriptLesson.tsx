@@ -6,6 +6,7 @@ import { useMemo, useRef, useState } from 'react'
 import type { FormEvent, MutableRefObject } from 'react'
 import { JAPANESE_SCRIPTS_A1 } from '@/data/japanese-scripts-a1'
 import type { JapaneseScriptId, JapaneseScriptItem } from '@/data/japanese-scripts-a1'
+import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './JapaneseScriptLesson.module.css'
 
 type SectionId = 'learn' | 'chart' | 'strokes' | 'practice' | 'resources'
@@ -322,7 +323,7 @@ export default function JapaneseScriptLesson({ scriptId }: { scriptId: JapaneseS
           <section aria-labelledby="script-chart-title">
             <header className={styles.sectionHeader}>
               <div><span className={styles.kicker}>Referencia visual</span><h2 id="script-chart-title">{lesson.chartTitle}</h2><p>{lesson.chartCopy}</p></div>
-              <a className={styles.secondaryButton} href={lesson.resources.chart} download>Descargar PNG</a>
+              <a className={styles.secondaryButton} href={protectedMaterialHref(lesson.resources.chart)} download>Descargar PNG</a>
             </header>
             <div className={styles.chartLayout}>
               <div className={styles.chartFrame}><Image src={lesson.chartImage} alt={`Tabla visual completa de ${lesson.name}`} width={1500} height={1900} sizes="(max-width: 860px) 100vw, 72vw" /></div>
@@ -391,7 +392,7 @@ export default function JapaneseScriptLesson({ scriptId }: { scriptId: JapaneseS
 function ResourceCard({ icon, title, copy, href, label }: { icon: string; title: string; copy: string; href: string; label: string }) {
   return (
     <article className={styles.resourceCard}>
-      <span aria-hidden="true">{icon}</span><h3>{title}</h3><p>{copy}</p><a href={href} download>{label} →</a>
+      <span aria-hidden="true">{icon}</span><h3>{title}</h3><p>{copy}</p><a href={protectedMaterialHref(href)} download>{label} →</a>
     </article>
   )
 }

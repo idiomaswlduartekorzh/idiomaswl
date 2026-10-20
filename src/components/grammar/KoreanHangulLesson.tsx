@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useMemo, useRef, useState } from 'react'
 import type { FormEvent, MutableRefObject } from 'react'
+import { protectedMaterialHref } from '@/lib/material-download'
 import base from './JapaneseScriptLesson.module.css'
 import styles from './KoreanHangulLesson.module.css'
 
@@ -370,7 +371,7 @@ export default function KoreanHangulLesson() {
 
         {section === 'chart' ? (
           <section aria-labelledby="hangul-chart-title">
-            <header className={base.sectionHeader}><div><span className={base.kicker}>Referencia visual completa</span><h2 id="hangul-chart-title">Los 40 jamo del hangeúl moderno</h2><p>Compara las 19 consonantes y las 21 vocales. Las etiquetas distinguen formas básicas, tensas y compuestas.</p></div><a className={base.secondaryButton} href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" download>Descargar SVG</a></header>
+            <header className={base.sectionHeader}><div><span className={base.kicker}>Referencia visual completa</span><h2 id="hangul-chart-title">Los 40 jamo del hangeúl moderno</h2><p>Compara las 19 consonantes y las 21 vocales. Las etiquetas distinguen formas básicas, tensas y compuestas.</p></div><a className={base.secondaryButton} href={protectedMaterialHref('/downloads/coreano-a1/idiomaswl-hangul-chart.svg')} download>Descargar SVG</a></header>
             <div className={base.chartLayout}><div className={base.chartFrame}><Image src="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" alt="Tabla visual completa de las 19 consonantes y 21 vocales del hangeúl moderno" width={1600} height={1200} sizes="(max-width: 860px) 100vw, 72vw" unoptimized /></div><aside className={base.tipList} aria-label="Consejos para estudiar la tabla"><div><b>1. Aprende la base</b><span>Empieza con los 24 jamo básicos y usa su forma para entender los 16 derivados.</span></div><div><b>2. Agrupa familias</b><span>Compara ㄱ/ㄲ, ㄷ/ㄸ y ㅗ/ㅘ/ㅙ/ㅚ para ver qué se añade.</span></div><div><b>3. Lee en bloques</b><span>No deletrees indefinidamente: combina las partes y recupera una sola sílaba.</span></div></aside></div>
           </section>
         ) : null}
@@ -403,7 +404,7 @@ export default function KoreanHangulLesson() {
         {section === 'resources' ? (
           <section aria-labelledby="hangul-resources-title">
             <header className={base.sectionHeader}><div><span className={base.kicker}>Biblioteca descargable</span><h2 id="hangul-resources-title">Recursos para estudiar sin conexión</h2><p>Materiales listos para imprimir, guardar o usar en sesiones cortas de pronunciación.</p></div></header>
-            <div className={base.resources}><ResourceCard icon="▦" title="Tabla visual completa" copy="Los 40 jamo modernos, sus lecturas y sus familias." href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" label="Descargar SVG" /><ResourceCard icon="▤" title="Cuaderno A1" copy="7 páginas con explicación, audio, 32 ejercicios y soluciones." href="/downloads/coreano-a1/idiomaswl-hangul-basico-a1.pdf" label="Descargar PDF" /><ResourceCard icon="▶" title="Audio coreano" copy="Las cuatro pistas Chatterbox aprobadas, reunidas para estudiar sin conexión." href="/downloads/coreano-a1/idiomaswl-hangul-audios.zip" label="Descargar ZIP" /><ResourceCard icon="▣" title="Imagen editorial" copy="Escena coreana original utilizada como referencia visual de la unidad." href="/assets/korean/step002/kr_step002_geulja_signs_v1.png" label="Descargar imagen" /></div>
+            <div className={base.resources}><ResourceCard icon="▦" title="Tabla visual completa" copy="Los 40 jamo modernos, sus lecturas y sus familias." href="/downloads/coreano-a1/idiomaswl-hangul-chart.svg" label="Descargar SVG" /><ResourceCard icon="▤" title="Cuaderno A1" copy="7 páginas con explicación, audio, 32 ejercicios y soluciones." href="/api/site-materials/coreano-a1/idiomaswl-hangul-basico-a1.pdf" label="Descargar PDF" /><ResourceCard icon="▶" title="Audio coreano" copy="Las cuatro pistas Chatterbox aprobadas, reunidas para estudiar sin conexión." href="/api/site-materials/coreano-a1/idiomaswl-hangul-audios.zip" label="Descargar ZIP" /><ResourceCard icon="▣" title="Imagen editorial" copy="Escena coreana original utilizada como referencia visual de la unidad." href="/assets/korean/step002/kr_step002_geulja_signs_v1.png" label="Descargar imagen" /></div>
             <div className={base.faq}><details><summary>¿Debo memorizar los 40 jamo en un día?</summary><p>No. Aprende primero los 24 básicos; después añade las cinco consonantes tensas y las once vocales compuestas por familias.</p></details><details><summary>¿Por qué ㅇ a veces no suena?</summary><p>Al inicio funciona como soporte mudo para una vocal; al final del bloque suena ng.</p></details><details><summary>¿Qué es el batchim?</summary><p>Es la consonante que ocupa la base del bloque y cierra la sílaba.</p></details><details><summary>¿Cuándo dejo la romanización?</summary><p>Desde el principio úsala solo para comprobar. Tápala en la segunda lectura.</p></details></div>
           </section>
         ) : null}
@@ -413,5 +414,5 @@ export default function KoreanHangulLesson() {
 }
 
 function ResourceCard({ icon, title, copy, href, label }: { icon: string; title: string; copy: string; href: string; label: string }) {
-  return <article className={base.resourceCard}><span aria-hidden="true">{icon}</span><h3>{title}</h3><p>{copy}</p><a href={href} download>{label} →</a></article>
+  return <article className={base.resourceCard}><span aria-hidden="true">{icon}</span><h3>{title}</h3><p>{copy}</p><a href={protectedMaterialHref(href)} download>{label} →</a></article>
 }

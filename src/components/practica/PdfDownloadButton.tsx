@@ -41,6 +41,23 @@ export default function PdfDownloadButton({
     if (state === 'busy') return
     setState('busy')
     try {
+      const access = await fetch('/api/material-access', {
+        method: 'GET',
+        credentials: 'same-origin',
+        headers: { accept: 'application/json' },
+      })
+      if (!access.ok) {
+        const next = `${window.location.pathname}${window.location.search}`
+        if (access.status === 401) {
+          window.location.assign(`/registro?${new URLSearchParams({ next, source: 'material' }).toString()}`)
+          return
+        }
+        if (access.status === 403) {
+          window.location.assign(`/suscripcion/examenes?reason=material-download`)
+          return
+        }
+        throw new Error('material_access_unavailable')
+      }
       await generate()
       setState('idle')
     } catch (err) {

@@ -5,6 +5,7 @@ import { useMemo, useState } from 'react'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getJapaneseGrammarResource } from '@/data/japanese-grammar-a1'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './JapaneseGrammarLesson.module.css'
 
 type RelatedWritingExercise = {
@@ -78,7 +79,7 @@ export default function JapaneseGrammarLesson({
     }
   }
 
-  const pdf = `/downloads/japanese-a1/grammar/idiomaswl-${topic.slug}-a1.pdf`
+  const pdf = `/api/site-materials/japanese-a1/grammar/idiomaswl-${topic.slug}-a1.pdf`
   const map = `/downloads/japanese-a1/grammar/idiomaswl-${topic.slug}-map.png`
 
   return (
@@ -202,9 +203,9 @@ export default function JapaneseGrammarLesson({
               <p>Material preparado para estudiar sin conexión, imprimir o repasar desde el teléfono.</p>
             </div>
             <div className={styles.resourceGrid}>
-              <a href={pdf} download><span className={styles.resourceIcon}>PDF</span><div><strong>Guía y cuaderno de práctica</strong><p>Explicación, tabla, ejercicios y soluciones.</p><em>Descargar PDF →</em></div></a>
-              <a href={map} download><span className={styles.resourceIcon}>PNG</span><div><strong>Mapa visual del tema</strong><p>La fórmula, el modelo y los errores clave.</p><em>Descargar imagen →</em></div></a>
-              <a href={resource.audio} download><span className={styles.resourceIcon}>MP3</span><div><strong>Modelo de pronunciación</strong><p lang="ja">{resource.audioText}</p><em>Descargar audio →</em></div></a>
+              <a href={protectedMaterialHref(pdf)} download><span className={styles.resourceIcon}>PDF</span><div><strong>Guía y cuaderno de práctica</strong><p>Explicación, tabla, ejercicios y soluciones.</p><em>Descargar PDF →</em></div></a>
+              <a href={protectedMaterialHref(map)} download><span className={styles.resourceIcon}>PNG</span><div><strong>Mapa visual del tema</strong><p>La fórmula, el modelo y los errores clave.</p><em>Descargar imagen →</em></div></a>
+              <a href={protectedMaterialHref(resource.audio)} download><span className={styles.resourceIcon}>MP3</span><div><strong>Modelo de pronunciación</strong><p lang="ja">{resource.audioText}</p><em>Descargar audio →</em></div></a>
             </div>
             <div className={styles.studyPlan}>
               <h3>Ruta de estudio recomendada</h3>

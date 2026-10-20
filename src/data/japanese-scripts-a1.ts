@@ -119,8 +119,8 @@ const kanji = kanjiRows.map(([glyph, reading, meaning, code, accepts]) => ({
 
 const baseResources = (id: JapaneseScriptId) => ({
   chart: `/downloads/japanese-a1/idiomaswl-${id}-chart.png`,
-  pdf: `/downloads/japanese-a1/idiomaswl-${id}-a1.pdf`,
-  strokes: `/downloads/japanese-a1/idiomaswl-${id}-strokes.zip`,
+  pdf: `/api/site-materials/japanese-a1/idiomaswl-${id}-a1.pdf`,
+  strokes: `/api/site-materials/japanese-a1/idiomaswl-${id}-strokes.zip`,
   image: `/images/japanese-a1/${id}-editorial.jpg`,
 })
 
