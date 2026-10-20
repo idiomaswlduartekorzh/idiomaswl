@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "engine": "ResembleAI/chatterbox",
+  "model": "ChatterboxTTS",
+  "language": "en",
+  "voicePolicy": {
+    "referenceAudioRequired": true,
+    "rightsConfirmationRequired": true,
+    "note": "Use one clean English reference voice for both bands so the comparison measures language quality, not a different speaker."
+  },
+  "generationDefaults": {
+    "chunkMaxCharacters": 280,
+    "pauseMilliseconds": 320,
+    "exaggeration": 0.5,
+    "cfgWeight": 0.5,
+    "temperature": 0.8,
+    "minP": 0.05,
+    "topP": 1.0,
+    "repetitionPenalty": 1.2,
+    "seed": 20261020
+  },
+  "items": [
+    {
+      "id": "ielts-guided-speaking-band-5-5",
+      "band": "5.5",
+      "output": "public/audio/ielts/guided-speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided-speaking-band-5-5.wav",
+      "minimumDurationSeconds": 30,
+      "maximumDurationSeconds": 95,
+      "text": "I want to talk about when I visited my cousin at his office. He works in a small travel company in Bogotá. I went there, um, last year because I was near the place and he told me to visit him. The office was not very big, but it was nice and there were maybe ten people working there. First, he showed me his desk and introduced me with his colleagues. Then we drank coffee in the kitchen and talked about his job. He works with customers and organises trips, so he uses the computer and phone a lot. I stayed for, I think, one hour. I felt happy because I never saw his workplace before and I understood his job more. It was interesting, but also a little noisy because everybody was speaking on phones."
+    },
+    {
+      "id": "ielts-guided-speaking-band-9",
+      "band": "9.0",
+      "output": "public/audio/ielts/guided-speaking-band-9.wav",
+      "publicUrl": "/audio/ielts/guided-speaking-band-9.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 150,
+      "text": "A workplace visit that has stayed with me was the afternoon I spent at my aunt's architectural studio in Medellín. I had always associated her job with sketches and attractive buildings, but I had very little idea of how collaborative the work actually was. I went because I was considering architecture as a possible degree, and she suggested that observing the studio would be more useful than simply reading about the profession.\n\nWhen I arrived, she was preparing a proposal for a small public library. She showed me an early hand-drawn concept and then the detailed digital model her team had developed from it. What fascinated me most was a design meeting in which the architects challenged one another's assumptions about light, accessibility and cost. Later, I helped organise material samples for a client presentation. It was a minor task, but it made me feel briefly involved rather than merely being a visitor.\n\nI left feeling impressed and slightly overwhelmed. The visit confirmed that architecture can be highly creative, but it also revealed the patience and negotiation hidden behind the finished building. Although I eventually chose a different field, that afternoon changed the way I look at public spaces because I now notice the decisions that shape how people move through them."
+    }
+  ]
+}

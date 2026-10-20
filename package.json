@@ -272,6 +272,8 @@
     "plan:ielts-legacy-replacements": "node --experimental-strip-types --no-warnings scripts/build-ielts-legacy-replacement-manifest.mjs && node --experimental-strip-types --no-warnings scripts/build-ielts-legacy-replacement-casting.mjs",
     "plan:ielts-audio-repairs": "node --experimental-strip-types --no-warnings scripts/build-ielts-audio-repair-manifest.mjs",
     "audio:ielts": "node --experimental-strip-types --no-warnings scripts/generate-ielts-audio.mjs",
+    "audio:ielts-guided-speaking": "python3 scripts/generate-ielts-guided-speaking-audio.py",
+    "check:ielts-guided-speaking-audio": "python3 scripts/generate-ielts-guided-speaking-audio.py --check",
     "audio:ielts-legacy-replacements": "node --experimental-strip-types --no-warnings scripts/generate-ielts-audio.mjs --manifest-file config/ielts-audio/legacy-replacement-manifest.json --casting-file config/ielts-audio/legacy-replacement-casting.json",
     "audio:ielts-repairs": "node --experimental-strip-types --no-warnings scripts/generate-ielts-audio-repairs.mjs",
     "audit:ielts-audio-repairs": "node --experimental-strip-types --no-warnings scripts/audit-ielts-audio-repairs.mjs",

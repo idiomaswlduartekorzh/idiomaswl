@@ -8,16 +8,34 @@ import IcfesJsonLd from '@/app/(site)/practica/icfes-saber-11/_components/IcfesJ
 import IcfesPartPracticeEngine from '@/app/(site)/practica/icfes-saber-11/_components/IcfesPartPracticeEngine';
 import ExamAccessBoundary from '@/components/exams/ExamAccessBoundary';
 import styles from '@/app/(site)/practica/icfes-saber-11/icfes-learning.module.css';
+import IeltsGuidedCoach from './IeltsGuidedCoach';
 
 interface Props { params: Promise<{ exam: string; mockId: string }> }
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return GUIDED_MOCK_IDS.map((mockId) => ({ exam: 'icfes', mockId }));
+  return [
+    ...GUIDED_MOCK_IDS.map((mockId) => ({ exam: 'icfes', mockId })),
+    { exam: 'ielts', mockId: 'set-1' },
+  ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { exam, mockId } = await params;
+  if (exam === 'ielts' && mockId === 'set-1') {
+    const canonical = 'https://www.idiomaswl.com/examenes/ielts/practica/set-1/guiado';
+    return {
+      title: 'IELTS Set 1 guiado: audio y evidencia pregunta por pregunta',
+      description: 'Practica IELTS Listening, Reading, Writing y Speaking con corrección inmediata, clips de audio exactos, texto resaltado y autoevaluación guiada.',
+      alternates: { canonical },
+      openGraph: {
+        title: 'IELTS Set 1 · Modo guiado WeLearn',
+        description: 'Una ruta de aprendizaje autónoma con evidencia exacta después de cada respuesta.',
+        url: canonical,
+        type: 'website',
+      },
+    };
+  }
   const mock = exam === 'icfes' ? getMock(exam, mockId) : null;
   if (!mock || !GUIDED_MOCK_IDS.includes(mockId as typeof GUIDED_MOCK_IDS[number])) return {};
   const canonical = `https://www.idiomaswl.com/examenes/icfes/practica/${mockId}/guiado`;
@@ -31,6 +49,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GuidedMockPage({ params }: Props) {
   const { exam, mockId } = await params;
+  if (exam === 'ielts' && mockId === 'set-1') {
+    const ieltsMock = getMock('ielts', 'set-1');
+    const readingPassage = ieltsMock?.sections.find(section => section.skill === 'reading' && section.part === 5)?.passage;
+    if (!readingPassage) notFound();
+    return <IeltsGuidedCoach readingPassage={readingPassage} />;
+  }
   const mock = exam === 'icfes' ? getMock(exam, mockId) : null;
   const questions = getGuidedMockQuestions(mockId);
   const firstPart = getIcfesPart('parte-1');

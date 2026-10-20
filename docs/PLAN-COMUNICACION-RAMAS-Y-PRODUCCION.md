@@ -9,6 +9,26 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Guía autónoma IELTS Set 1 — 20 de octubre de 2026
+
+`codex/ielts-guided-review-20261020` parte de `origin/main`. Estado:
+`LISTO_PARA_INTEGRAR`, sin despliegue. Alcance: recorrido guiado de Listening y
+Reading con corrección pregunta por pregunta y evidencia exacta; referencias
+originales de Writing y Speaking para bandas aproximadas 5.5 y 9; y acceso al
+modo guiado desde el simulacro IELTS Set 1.
+
+Los audios provisionales de Speaking fueron retirados. Los dos guiones finales,
+el manifiesto, el estado de publicación y el generador reproducible quedaron
+preparados para `ResembleAI/chatterbox`; la interfaz no crea reproductores ni
+solicita archivos inexistentes mientras el lote siga pendiente. El paso final
+requiere una muestra de voz inglesa autorizada y revisión auditiva humana. Ver
+[`ielts-guided-speaking-audio.md`](ielts-guided-speaking-audio.md).
+
+Validaciones: prueba focalizada 3/3, `check:practica-catalog`, TypeScript, chequeo
+del manifiesto Chatterbox, QA funcional y visual local sin errores de consola, y
+build Next.js completo de 2.743 páginas. No requiere migración, variables ni
+servicios externos para la guía; Chatterbox solo se usa en el lote final de audio.
+
 ## Cierre de acceso a claves y corrección — 12 de octubre de 2026
 
 `codex/exam-server-gating` partió del `main` en `1812fb710336d6dbbe8535ba6de0666d8d82e84c`

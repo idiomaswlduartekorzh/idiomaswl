@@ -1178,14 +1178,17 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
               {draftRestored && <li role="status">Recuperamos tus respuestas y el tiempo restante. Las grabaciones de Speaking deben hacerse otra vez.</li>}
             </ul>}
           </div>
-          <button data-exam-start="true" onClick={()=>{
-            if (!draftRestored) {
-              setActiveSkill(firstActiveSkill);
-              if (!practiceSkill) setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);
-            }
-            if (!practiceSkill) trackIeltsEvent('ielts_mock_start', { mock_id: mock.id, resumed: draftRestored });
-            setPhase('exam');
-          }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{practiceSkill ? (draftRestored ? 'Continue practice' : 'Start practice') : (draftRestored?'Continuar examen':'Empezar examen')}</button>
+          <div style={{display:'flex',flexWrap:'wrap',gap:'0.75rem',justifyContent:'center'}}>
+            <button data-exam-start="true" onClick={()=>{
+              if (!draftRestored) {
+                setActiveSkill(firstActiveSkill);
+                if (!practiceSkill) setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);
+              }
+              if (!practiceSkill) trackIeltsEvent('ielts_mock_start', { mock_id: mock.id, resumed: draftRestored });
+              setPhase('exam');
+            }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{practiceSkill ? (draftRestored ? 'Continue practice' : 'Start practice') : (draftRestored?'Continuar examen':'Empezar examen')}</button>
+            {mock.id === 'set-1' && !practiceSkill && <Link href="/examenes/ielts/practica/set-1/guiado" className="btn btn-ghost" style={{fontSize:'1rem',padding:'0.9rem 1.5rem'}}>Aprender paso a paso</Link>}
+          </div>
           <Link href={practiceSkill ? `/practica/ielts/${practiceSkill}/simulacros` : `/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>{practiceSkill ? 'Back to skill sets' : 'Volver a IELTS'}</Link>
         </div>
       </div>
