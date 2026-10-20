@@ -33,9 +33,10 @@ function accessResponse(request: Request, error: string, status: 401 | 403 | 503
   const destination = status === 401
     ? `/registro?next=${encodeURIComponent(`${current.pathname}${current.search}`)}&source=material`
     : '/suscripcion/examenes?reason=material-download';
-  const response = Response.redirect(new URL(destination, current.origin), 303);
-  Object.entries(headers).forEach(([name, value]) => response.headers.set(name, value));
-  return response;
+  return new Response(null, {
+    status: 303,
+    headers: { ...headers, Location: new URL(destination, current.origin).toString() },
+  });
 }
 
 export async function GET(
