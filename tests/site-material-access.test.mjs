@@ -31,6 +31,8 @@ test('the general material endpoint authenticates and requires paid or WeLearn a
   assert.match(route, /X-Robots-Tag.*noindex, nofollow, noarchive/s);
   assert.match(route, /Cache-Control.*private, no-store/s);
   assert.match(route, /Response\.json\(\{ error \}, \{ status, headers \}\)/);
+  assert.match(route, /new Response\(null, \{[\s\S]*status: 303,[\s\S]*Location:/);
+  assert.doesNotMatch(route, /Object\.entries\(headers\)/);
   assert.match(route, /absolutePath\.startsWith/);
   assert.match(resolver, /from\('xpress_memberships'\)/);
   assert.match(resolver, /from\('exam_access_grants'\)/);
