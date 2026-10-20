@@ -4,7 +4,11 @@ import { xpressUser } from '@/lib/xpress-commerce/payments.server';
 export const runtime = 'nodejs';
 
 export async function GET() {
-  const headers = { 'Cache-Control': 'private, no-store, max-age=0' };
+  const headers = {
+    'Cache-Control': 'private, no-store, max-age=0',
+    'X-Content-Type-Options': 'nosniff',
+    'X-Robots-Tag': 'noindex, nofollow, noarchive',
+  };
   const user = await xpressUser();
   if (!user) return Response.json({ authenticated: false, allowed: false }, { status: 401, headers });
   try {

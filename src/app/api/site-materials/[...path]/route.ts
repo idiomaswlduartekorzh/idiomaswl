@@ -22,13 +22,20 @@ const PUBLIC_DOWNLOAD_ROOTS = new Set(['audio', 'assets', 'downloads', 'images']
 const PUBLIC_DOWNLOAD_EXTENSIONS = new Set(['.mp3', '.m4a', '.wav', '.png', '.jpg', '.jpeg', '.webp', '.svg']);
 
 function accessResponse(request: Request, error: string, status: 401 | 403 | 503) {
+  const headers = {
+    'Cache-Control': 'private, no-store, max-age=0',
+    'X-Content-Type-Options': 'nosniff',
+    'X-Robots-Tag': 'noindex, nofollow, noarchive',
+  };
   const acceptsHtml = (request.headers.get('accept') ?? '').includes('text/html');
-  if (!acceptsHtml || status === 503) return Response.json({ error }, { status });
+  if (!acceptsHtml || status === 503) return Response.json({ error }, { status, headers });
   const current = new URL(request.url);
   const destination = status === 401
     ? `/registro?next=${encodeURIComponent(`${current.pathname}${current.search}`)}&source=material`
     : '/suscripcion/examenes?reason=material-download';
-  return Response.redirect(new URL(destination, current.origin), 303);
+  const response = Response.redirect(new URL(destination, current.origin), 303);
+  Object.entries(headers).forEach(([name, value]) => response.headers.set(name, value));
+  return response;
 }
 
 export async function GET(
