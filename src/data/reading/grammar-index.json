@@ -141,6 +141,12 @@
           "file": "src/data/grammar/ingles/a1/subject-pronouns.ts"
         },
         {
+          "slug": "possessive-pronouns",
+          "title": "Possessive pronouns en inglés A1",
+          "category": null,
+          "file": "src/data/grammar/ingles/a1/supplemental-topics.ts"
+        },
+        {
           "slug": "telling-time",
           "title": "La hora en inglés",
           "category": "Expressions",
@@ -281,6 +287,12 @@
           "file": "src/data/grammar/ingles/a2/superlatives.ts"
         },
         {
+          "slug": "too-enough",
+          "title": "Too y enough en inglés A2",
+          "category": null,
+          "file": "src/data/grammar/ingles/a2/supplemental-topics.ts"
+        },
+        {
           "slug": "used-to-a2",
           "title": "Used to",
           "category": "Tiempo pasado",
@@ -401,6 +413,12 @@
           "title": "Second Conditional",
           "category": "Conditionals",
           "file": "src/data/grammar/ingles/b1/second-conditional-b1.ts"
+        },
+        {
+          "slug": "modal-deduction-b1",
+          "title": "Modal verbs of deduction en inglés B1",
+          "category": null,
+          "file": "src/data/grammar/ingles/b1/supplemental-topics.ts"
         },
         {
           "slug": "time-clauses-b1",
@@ -2353,7 +2371,7 @@
         {
           "slug": "negacion-ji-anta-a2",
           "title": "-지 않다 / 못",
-          "category": "Negacion",
+          "category": "Negación",
           "file": "src/data/grammar/coreano/a2/negacion-ji-anta-a2.ts"
         },
         {
@@ -2438,14 +2456,14 @@
         },
         {
           "slug": "estado-mantener-chae-b1",
-          "title": "-은 채로 (manteniendo el estado)",
+          "title": "-(으)ㄴ 채로 (manteniendo el estado)",
           "category": "Estado y condición",
           "file": "src/data/grammar/coreano/b1/estado-mantener-chae-b1.ts"
         },
         {
           "slug": "forzosidad-subakkeneopsda-b1",
           "title": "-수밖에 없다 (no hay más remedio que)",
-          "category": "Obligación y Necesidad",
+          "category": "Obligación y necesidad",
           "file": "src/data/grammar/coreano/b1/forzosidad-subakkeneopsda-b1.ts"
         },
         {
@@ -2475,7 +2493,7 @@
         {
           "slug": "obligacion-eoyahada-b1",
           "title": "-어야 하다 (debo, tengo que)",
-          "category": "Obligación y Necesidad",
+          "category": "Obligación y necesidad",
           "file": "src/data/grammar/coreano/b1/obligacion-eoyahada-b1.ts"
         },
         {
@@ -2486,14 +2504,14 @@
         },
         {
           "slug": "oportunidad-gime-b1",
-          "title": "-는 김에 (mientras, ya que)",
+          "title": "-(으)ㄴ/는 김에 (ya que...)",
           "category": "Tiempo y oportunidad",
           "file": "src/data/grammar/coreano/b1/oportunidad-gime-b1.ts"
         },
         {
           "slug": "pasiva-jeosudo-b1",
-          "title": "피동사 (ser + participio)",
-          "category": "Voz y Perspectiva",
+          "title": "피동사 (voz pasiva)",
+          "category": "Voz y perspectiva",
           "file": "src/data/grammar/coreano/b1/pasiva-jeosudo-b1.ts"
         },
         {
