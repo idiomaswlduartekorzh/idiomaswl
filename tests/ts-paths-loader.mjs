@@ -24,6 +24,13 @@ async function firstExistingUrl(candidateUrl) {
 }
 
 export async function resolve(specifier, context, nextResolve) {
+  if (specifier === 'server-only') {
+    return {
+      url: 'data:text/javascript,export%20{}',
+      shortCircuit: true,
+    };
+  }
+
   const rewritten = specifier.startsWith('@/')
     ? pathToFileURL(path.join(ROOT, 'src', specifier.slice(2))).href
     : specifier;
@@ -35,9 +42,14 @@ export async function resolve(specifier, context, nextResolve) {
 
     let candidateUrl;
     try {
+      const isBareSpecifier = !rewritten.startsWith('file:')
+        && !rewritten.startsWith('.')
+        && !rewritten.startsWith('/');
       candidateUrl = rewritten.startsWith('file:')
         ? rewritten
-        : new URL(rewritten, context.parentURL).href;
+        : isBareSpecifier
+          ? pathToFileURL(path.join(ROOT, 'node_modules', rewritten)).href
+          : new URL(rewritten, context.parentURL).href;
     } catch {
       throw error;
     }
