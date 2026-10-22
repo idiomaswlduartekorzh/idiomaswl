@@ -51,68 +51,114 @@ function dashboardPath(studentId: string): string {
   return `/dashboard/admin/estudiantes/${studentId}`;
 }
 
-export async function createManagedStudent(input: ManagedStudentInput): Promise<StudentOperationResult> {
-  const actor = await requireAdmin();
-  const email = cleanText(input.email, 320).toLowerCase();
-  const fullName = cleanText(input.fullName, 100);
-  const language = cleanText(input.language, 40);
-  const level = cleanText(input.level, 30);
-  const plan = input.plan;
-  const subject = cleanText(input.subject, 100);
-  const examSlug = input.examSlug ? cleanText(input.examSlug, 40) : null;
-  if (!EMAIL.test(email) || fullName.length < 2) return { ok: false, error: 'Revisa el nombre y el correo.' };
-  if (!VALID_LANGUAGES.has(language) || !VALID_PLANS.has(plan) || !level || !subject) return { ok: false, error: 'Revisa el plan, idioma, nivel y materia.' };
-  if (examSlug && !VALID_EXAMS.has(examSlug)) return { ok: false, error: 'El examen seleccionado no es válido.' };
+type CreationStage = 'authorization' | 'validation' | 'existing-account' | 'auth-account' | 'profile' | 'exam-access' | 'welcome-email';
 
-  const db = createAdminClient();
-  const { data: usersPage, error: usersError } = await db.auth.admin.listUsers({ page: 1, perPage: 1000 });
-  if (usersError) return { ok: false, error: 'No pudimos comprobar si la cuenta ya existe.' };
-  const existing = usersPage.users.find((user) => user.email?.trim().toLowerCase() === email);
-  if (existing) return { ok: false, error: 'Ya existe una cuenta con ese correo.', studentId: existing.id };
-
-  const password = temporaryPassword();
-  const { data: created, error: createError } = await db.auth.admin.createUser({
-    email,
-    password,
-    email_confirm: true,
-    user_metadata: { full_name: fullName },
+function logCreationFailure(stage: CreationStage, error: unknown, hasStudentId: boolean): void {
+  const failure = error as { code?: unknown; status?: unknown; message?: unknown } | null;
+  console.error('[student-operations:create]', {
+    stage,
+    hasStudentId,
+    code: typeof failure?.code === 'string' ? failure.code : undefined,
+    status: typeof failure?.status === 'number' ? failure.status : undefined,
+    message: typeof failure?.message === 'string' ? failure.message.slice(0, 240) : 'unknown_error',
   });
-  if (createError || !created.user) return { ok: false, error: createError?.message ?? 'No pudimos crear la cuenta.' };
-  const studentId = created.user.id;
+}
 
-  const now = new Date().toISOString();
-  const { error: profileError } = await db.from('profiles').upsert({
-    id: studentId,
-    email,
-    name: fullName,
-    full_name: fullName,
-    language,
-    level,
-    subject,
-    plan,
-    role: 'user',
-    student_path: 'welearn',
-    target_exam: null,
-    xpress_plan_interest: null,
-    onboarding_completed_at: now,
-    enrolled_at: now,
-    updated_at: now,
-  }, { onConflict: 'id' });
-  if (profileError) return { ok: false, error: 'La cuenta existe, pero no pudimos completar el perfil.', studentId };
+function isExistingAccountError(error: unknown): boolean {
+  const failure = error as { code?: unknown; status?: unknown; message?: unknown } | null;
+  const code = typeof failure?.code === 'string' ? failure.code.toLowerCase() : '';
+  const message = typeof failure?.message === 'string' ? failure.message.toLowerCase() : '';
+  return code === 'email_exists'
+    || code === 'user_already_exists'
+    || (failure?.status === 422 && /(already|exists|registered|duplicate)/.test(message));
+}
 
-  if (examSlug) {
-    const { error: grantError } = await db.rpc('grant_welearn_exam_access', {
-      p_user: studentId,
-      p_exam: examSlug,
-      p_source_reference: `admin-center:new-student:${studentId}`,
-      p_created_by: actor.id,
-    });
-    if (grantError) return { ok: false, error: 'La cuenta fue creada, pero no pudimos asignar el examen.', studentId };
-  }
-
-  const examCopy = examSlug ? `<p>Tu acceso incluye <strong>${escapeEmailHtml(displayExam(examSlug))}</strong> con los simulacros y recursos correspondientes a tu programa.</p>` : '';
-  const body = `<p>Hola ${escapeEmailHtml(fullName)},</p><p>Tu cuenta de estudiante en IdiomasWL ya está lista.</p><div style="background:#f4f6fb;border-radius:12px;padding:16px 18px;margin:20px 0"><p style="margin:0 0 8px"><strong>Usuario:</strong> ${escapeEmailHtml(email)}</p><p style="margin:0"><strong>Contraseña temporal:</strong> ${escapeEmailHtml(password)}</p></div>${examCopy}<p>Al entrar, cambia la contraseña temporal desde <strong>Mi perfil</strong>.</p>`;
+export async function createManagedStudent(input: ManagedStudentInput): Promise<StudentOperationResult> {
+  let stage: CreationStage = 'authorization';
+  let studentId: string | undefined;
   try {
+    const actor = await requireAdmin();
+    stage = 'validation';
+    const email = cleanText(input.email, 320).toLowerCase();
+    const fullName = cleanText(input.fullName, 100);
+    const language = cleanText(input.language, 40);
+    const level = cleanText(input.level, 30);
+    const plan = input.plan;
+    const subject = cleanText(input.subject, 100);
+    const examSlug = input.examSlug ? cleanText(input.examSlug, 40) : null;
+    if (!EMAIL.test(email) || fullName.length < 2) return { ok: false, error: 'Revisa el nombre y el correo.' };
+    if (!VALID_LANGUAGES.has(language) || !VALID_PLANS.has(plan) || !level || !subject) return { ok: false, error: 'Revisa el plan, idioma, nivel y materia.' };
+    if (examSlug && !VALID_EXAMS.has(examSlug)) return { ok: false, error: 'El examen seleccionado no es válido.' };
+
+    const db = createAdminClient();
+    stage = 'existing-account';
+    const { data: existingProfile, error: existingProfileError } = await db.from('profiles')
+      .select('id').ilike('email', email).maybeSingle();
+    if (existingProfileError) throw existingProfileError;
+    if (existingProfile?.id) {
+      return { ok: false, error: 'Ya existe una cuenta con ese correo. Puedes abrir su ficha y reenviar el acceso.', studentId: existingProfile.id };
+    }
+
+    stage = 'auth-account';
+    const password = temporaryPassword();
+    const { data: created, error: createError } = await db.auth.admin.createUser({
+      email,
+      password,
+      email_confirm: true,
+      user_metadata: { full_name: fullName },
+    });
+    if (createError || !created.user) {
+      if (isExistingAccountError(createError)) {
+        const { data: recoveredProfile } = await db.from('profiles').select('id').ilike('email', email).maybeSingle();
+        return {
+          ok: false,
+          error: 'Ya existe una cuenta con ese correo. Actualiza la lista y abre su ficha para reenviar el acceso.',
+          studentId: recoveredProfile?.id,
+        };
+      }
+      throw createError ?? new Error('auth_user_missing');
+    }
+    studentId = created.user.id;
+
+    stage = 'profile';
+    const now = new Date().toISOString();
+    const { error: profileError } = await db.from('profiles').upsert({
+      id: studentId,
+      email,
+      name: fullName,
+      full_name: fullName,
+      language,
+      level,
+      subject,
+      plan,
+      role: 'user',
+      student_path: 'welearn',
+      target_exam: null,
+      xpress_plan_interest: null,
+      onboarding_completed_at: now,
+      enrolled_at: now,
+      updated_at: now,
+    }, { onConflict: 'id' });
+    if (profileError) throw profileError;
+
+    if (examSlug) {
+      stage = 'exam-access';
+      const { error: grantError } = await db.rpc('grant_welearn_exam_access', {
+        p_user: studentId,
+        p_exam: examSlug,
+        p_source_reference: `admin-center:new-student:${studentId}`,
+        p_created_by: actor.id,
+      });
+      if (grantError) {
+        logCreationFailure(stage, grantError, true);
+        revalidatePath('/dashboard/admin');
+        return { ok: false, error: 'La cuenta fue creada, pero no pudimos asignar el examen. Abre la ficha para completar el acceso.', studentId };
+      }
+    }
+
+    stage = 'welcome-email';
+    const examCopy = examSlug ? `<p>Tu acceso incluye <strong>${escapeEmailHtml(displayExam(examSlug))}</strong> con los simulacros y recursos correspondientes a tu programa.</p>` : '';
+    const body = `<p>Hola ${escapeEmailHtml(fullName)},</p><p>Tu cuenta de estudiante en IdiomasWL ya está lista.</p><div style="background:#f4f6fb;border-radius:12px;padding:16px 18px;margin:20px 0"><p style="margin:0 0 8px"><strong>Usuario:</strong> ${escapeEmailHtml(email)}</p><p style="margin:0"><strong>Contraseña temporal:</strong> ${escapeEmailHtml(password)}</p></div>${examCopy}<p>Al entrar, cambia la contraseña temporal desde <strong>Mi perfil</strong>.</p>`;
     await sendTrackedStudentEmail({
       studentId,
       createdBy: actor.id,
@@ -127,14 +173,25 @@ export async function createManagedStudent(input: ManagedStudentInput): Promise<
       }),
       idempotencyKey: `student-welcome/${studentId}`,
     });
-  } catch {
-    revalidatePath('/dashboard/admin');
-    return { ok: false, error: 'La cuenta quedó creada, pero Resend no pudo entregar el correo. Abre la ficha para reenviar el acceso.', studentId };
-  }
 
-  revalidatePath('/dashboard/admin');
-  revalidatePath(dashboardPath(studentId));
-  return { ok: true, message: 'Cuenta creada, acceso asignado y correo enviado.', studentId };
+    revalidatePath('/dashboard/admin');
+    revalidatePath(dashboardPath(studentId));
+    return { ok: true, message: 'Cuenta creada, acceso asignado y correo enviado.', studentId };
+  } catch (error) {
+    logCreationFailure(stage, error, Boolean(studentId));
+    if (studentId) {
+      revalidatePath('/dashboard/admin');
+      revalidatePath(dashboardPath(studentId));
+      const message = stage === 'welcome-email'
+        ? 'La cuenta quedó creada, pero Resend no pudo entregar el correo. Abre la ficha para reenviar el acceso.'
+        : 'La cuenta quedó creada, pero la configuración no terminó. Abre la ficha para completarla o reenviar el acceso.';
+      return { ok: false, error: message, studentId };
+    }
+    const message = stage === 'authorization'
+      ? 'Tu sesión administrativa venció o no tiene permisos. Actualiza la página e inicia sesión de nuevo.'
+      : 'No pudimos crear la cuenta. No se guardaron cambios; puedes volver a intentarlo.';
+    return { ok: false, error: message };
+  }
 }
 
 export async function updateStudentAcademicProfile(form: FormData): Promise<void> {
