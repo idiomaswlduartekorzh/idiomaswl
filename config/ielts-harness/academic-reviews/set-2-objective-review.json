@@ -4,11 +4,26 @@
   "scope": "independent_academic_objective_key_review",
   "set": 2,
   "mockId": "set-2",
-  "contentVersionAtReview": "ielts-set-2-v4",
+  "contentVersionAtReview": "ielts-set-2-v5",
   "reviewedAt": "2026-09-09",
   "reviewer": {
     "kind": "academic-agent",
     "id": "codex-academic-keys-2-7"
+  },
+  "remediationReview": {
+    "status": "PASS",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+    },
+    "reviewedAt": "2026-10-22",
+    "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
+    "scope": [
+      "Listening Q21",
+      "Listening Q23",
+      "Listening Q24"
+    ],
+    "releaseAuthorized": false
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
@@ -17,10 +32,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "2b7e3afccff799a49740cda2b43d9eecd8e5ef717d90aeb76de52b17e9792955",
-    "listeningMaterialSha256": "9b2a6d2b7f34ebd2f43a7a0008a26eeb0f3c6e0e1f3a4012c20924645dafa411",
+    "objectiveSha256": "7b0aa639c6ce2fd3c128248d3dcaaed65879ea4a5e3acab481d33c5268f6f7eb",
+    "listeningMaterialSha256": "6857e0a0d62205cc1ef8f281e18a536a594864e54954c1592d917743f51b5a52",
     "readingMaterialSha256": "3a951bfc4cdd3c61577887c0150976d34e6992a03fcbf5775c6afc160b06c47c",
-    "objectiveMaterialSha256": "233f3633f3910c952e14032ad440902ddbd3f1cc75b715db17b70a8bb6772113"
+    "objectiveMaterialSha256": "918ca38c65d81a74474ceeb7ead54265d9f9b95e236c4a9393c90c2e394df3a1"
   },
   "summary": {
     "responseRows": 78,
@@ -260,9 +275,10 @@
       ],
       "weight": 1,
       "options": [
-        "contained too many statistics",
-        "lacked real-world examples",
-        "was too long"
+        "Replace the solar-power discussion.",
+        "Add real-world case studies.",
+        "Shorten the section substantially.",
+        "Move the section into the conclusion."
       ]
     },
     {
@@ -1726,31 +1742,46 @@
       "acceptedAnswers": [
         1
       ],
-      "questionPrompt": "Professor Jenkins' main criticism of their wind energy section was that it",
+      "questionPrompt": "What change does Sarah propose to strengthen the wind energy discussion?",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
-      "sourceExcerpt": "SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-      "sourceExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
+      "sourceExcerpt": "SARAH: I agree. I think we relied too much on statistics and not enough on case studies. Real-world examples would make it more convincing.",
+      "sourceExcerptSha256": "b02b87bd6f058c032b9dbc2f5cda3f9e7f89ae9471f505867dee283209bb6ad7",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "Sarah explicitly proposes case studies and real-world examples to strengthen the wind-energy discussion; none of the other changes is proposed.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "correctOptions": [
         {
-          "key": "1",
-          "text": "lacked real-world examples"
+          "key": 1,
+          "text": "Add real-world case studies."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "contained too many statistics",
+          "option": 0,
+          "text": "Replace the solar-power discussion.",
           "verdict": "DISMISSED",
-          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+          "rationale": "Tom says the solar-power section was liked; Sarah does not propose replacing it."
         },
         {
-          "option": "2",
-          "text": "was too long",
+          "option": 2,
+          "text": "Shorten the section substantially.",
           "verdict": "DISMISSED",
-          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+          "rationale": "No substantial shortening of the wind-energy section is proposed."
+        },
+        {
+          "option": 3,
+          "text": "Move the section into the conclusion.",
+          "verdict": "DISMISSED",
+          "rationale": "The discussion treats the wind-energy section and conclusion separately and never proposes moving the section."
         }
       ]
     },
@@ -1807,10 +1838,19 @@
       "questionPrompt": "Tom and Sarah decide to handle the wind energy feedback by",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
-      "sourceExcerpt": "SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-      "sourceExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
+      "sourceExcerpt": "TOM: I think revise. Adding a new section might make the report too long. Professor Jenkins also commented that our introduction was too vague.",
+      "sourceExcerptSha256": "8892bba3341491362d72e1277a286e21cb07b77d48fa2acee52ac7abc7249aae",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "Tom explicitly chooses to revise the existing material and rejects adding a new section because of the report length.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "correctOptions": [
         {
           "key": "1",
@@ -1846,10 +1886,19 @@
       "questionPrompt": "What was the main problem with their conclusion?",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
-      "sourceExcerpt": "SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-      "sourceExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
+      "sourceExcerpt": "TOM: Exactly. Now, what about the conclusion? I felt it was quite weak.\n\nSARAH: Yes, we basically just summarised what we'd said. We need to make some stronger recommendations.",
+      "sourceExcerptSha256": "e01b0db17a56c9ae2d64c461f0f0ec6c07122939f161151264e7f1a2e4fc1a8d",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "Sarah states that the conclusion merely summarised earlier material and says it needs stronger recommendations.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "correctOptions": [
         {
           "key": "1",
@@ -3854,5 +3903,5 @@
       }
     ]
   },
-  "reviewSha256": "1808a6f8daf7db6b2f7524d12cd13b12fd664defd0aec20d789b7fb01f8b9de2"
+  "reviewSha256": "18af936868d101fd056250789287a1ac6855698ffac920d561b65d718cb0ed6d"
 }

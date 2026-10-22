@@ -10,6 +10,20 @@
     "kind": "academic-agent",
     "id": "codex-audit-harness-bias-review"
   },
+  "remediationReview": {
+    "status": "PASS",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+    },
+    "reviewedAt": "2026-10-22",
+    "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
+    "scope": [
+      "Listening Q22",
+      "Listening Q26"
+    ],
+    "releaseAuthorized": false
+  },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
     "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
@@ -1635,10 +1649,19 @@
       "questionPrompt": "Who takes part in the study as participants?",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
-      "sourceExcerpt": "AMY: We also need to be careful about cause and association in the sports-science study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-      "sourceExcerptSha256": "c4fb85be2d4da6ae25d6796513c3e0d67d482171606a1c674720d2278b32e649",
+      "sourceExcerpt": "JOSH: We're recruiting university students, but only ones who already play sport competitively. We thought about using complete beginners, but their results would be too inconsistent.",
+      "sourceExcerptSha256": "d7356f4e90c90026b170fb2bdf9b047f818bd5427919d287ff7351930b316a8e",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "Josh explicitly identifies competitive university students as participants, rejects beginners, and does not describe professional athletes.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "correctOptions": [
         {
           "key": 1,
@@ -1791,10 +1814,19 @@
       "questionPrompt": "• The students should increase the {{26}} size.",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
-      "sourceExcerpt": "AMY: We also need to be careful about cause and association in the sports-science study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-      "sourceExcerptSha256": "c4fb85be2d4da6ae25d6796513c3e0d67d482171606a1c674720d2278b32e649",
+      "sourceExcerpt": "TUTOR: Fascinating. That's genuinely worth exploring. Now, in terms of next steps, I'd strongly recommend increasing your sample size — twenty participants really isn't enough to draw firm conclusions.",
+      "sourceExcerptSha256": "a06562fecd8cbc8b554c097de89d1c085659e35a1dca69ecb336da7abc1261df",
       "verdict": "SUPPORTED",
-      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "rationale": "The tutor explicitly recommends increasing the sample size, so “sample” is literal, grammatical in the note, and within the one-word limit.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "sourceAnswerForm": "sample",
       "acceptedAnswerEvidence": [
         {
@@ -3569,5 +3601,5 @@
       "optionLengthHeuristicGatePassed": true
     }
   },
-  "reviewSha256": "18ed694bcf19e13767f01c635548bf80826aec4b3dcf2bbef13c4aeac663a095"
+  "reviewSha256": "39826441576b77a270968aa6b6992e1a162c04b55d37532796da049af79c6075"
 }

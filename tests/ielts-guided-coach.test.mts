@@ -76,9 +76,11 @@ test('Writing and Speaking band references are complete local teaching assets', 
     const plannedAudio = audioPlan.items.find(item => item.band === band);
     assert.ok(plannedAudio, `missing Chatterbox plan for Speaking band ${band}`);
     assert.equal(plannedAudio.text, speaking.transcript);
-    assert.equal(plannedAudio.publicUrl, speaking.audio.url);
     if (speaking.audio.ready) {
+      assert.equal(plannedAudio.publicUrl, speaking.audio.url);
       await access(new URL(`../public${speaking.audio.url}`, import.meta.url));
+    } else {
+      assert.equal(speaking.audio.url, '', 'pending or unapproved audio must not expose a public URL');
     }
   }
 });

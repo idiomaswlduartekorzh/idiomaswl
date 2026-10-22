@@ -20,11 +20,11 @@
     },
     "machineAlignment": {
       "status": "PASS",
-      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE_WITH_INDEPENDENT_ACADEMIC_REVIEW",
       "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
       "transcriptSha256": "07235f9534063383d29b496341d54abfdc88361d1b55b5226d32ba4537bbc831",
       "evidencePath": "config/ielts-harness/listening-evidence/set-1-listening-evidence.json",
-      "evidenceSha256": "7a0eb09be5cfd99121da950d593f806fec6d3a849b179a1ee513043906b9aeb3"
+      "evidenceSha256": "40e2a7c9d23a71ff81505971e0aaee1bf6eef7847d1a86e14bca68f9aba03133"
     },
     "questions": [
       {
@@ -181,31 +181,31 @@
         "question": 11,
         "responseKey": "l2-multi",
         "part": 2,
-        "startSeconds": 1269.08,
-        "endSeconds": 1280.42,
-        "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
-        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "startSeconds": 411.98,
+        "endSeconds": 423.52,
+        "audiblePhrase": "Our recently refurbished fitness suite has all the latest exercise equipment, including 10 new running machines and a wide range of weight training machines.",
+        "rationale": "The exact ASR slice states that the fitness suite (gym) was recently refurbished; this mapping passed independent academic semantic review.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "human",
-          "id": "owner-reviewed-set1"
+          "kind": "academic-agent",
+          "id": "/root/objective_reviewer_final2"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-20"
       },
       {
         "question": 12,
         "responseKey": "l2-multi",
         "part": 2,
-        "startSeconds": 1269.08,
-        "endSeconds": 1280.42,
-        "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
-        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "startSeconds": 381.28,
+        "endSeconds": 393.08,
+        "audiblePhrase": "Our greatest asset is probably our swimming pool, which at 25 meters isn't Olympic-sized, but now we've expanded it to eight lanes. It's much wider.",
+        "rationale": "The exact ASR slice states that the indoor pool was expanded to eight lanes; this mapping passed independent academic semantic review.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "human",
-          "id": "owner-reviewed-set1"
+          "kind": "academic-agent",
+          "id": "/root/objective_reviewer_final2"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-20"
       },
       {
         "question": 13,
@@ -1281,7 +1281,7 @@
     ]
   },
   "speaking": {
-    "status": "APPROVED",
+    "status": "PENDING",
     "binding": {
       "speakingSha256": "ea00959bcdf0b3811d9ed0afbc63d3cfc2f710fe69deb72ae96dc93275c25120"
     },
@@ -1336,14 +1336,12 @@
     "evidenceSha256": "88264f02b6309db0003cba7343d92990fe730c28350e1b7042adec67eb7e1c55"
   },
   "releaseApproval": {
-    "status": "APPROVED",
+    "status": "PENDING",
     "releaseFingerprintSha256": "eb2ef62d96ea6f47569767896307f038f419555d6a1f993d8d8e120d9c37758b",
     "reviewer": {
       "kind": "human",
-      "id": "David Duarte (workspace owner)"
+      "id": ""
     },
-    "reviewedAt": "2026-09-12T19:39:19.595Z",
-    "evidencePath": "config/ielts-harness/final-release-approval.json",
-    "evidenceSha256": "fe210b7b8a04559c1971598d77998f5848c5456167ef576770e8b6829d462642"
+    "reviewedAt": ""
   }
 }

@@ -8,32 +8,59 @@ import IcfesJsonLd from '@/app/(site)/practica/icfes-saber-11/_components/IcfesJ
 import IcfesPartPracticeEngine from '@/app/(site)/practica/icfes-saber-11/_components/IcfesPartPracticeEngine';
 import ExamAccessBoundary from '@/components/exams/ExamAccessBoundary';
 import styles from '@/app/(site)/practica/icfes-saber-11/icfes-learning.module.css';
-import IeltsGuidedCoach from './IeltsGuidedCoach';
+import { IELTS_GUIDED_SET_1_WRITING } from '@/data/ielts/guided-set-1';
+import { getIeltsGuidedEvidence } from '@/data/ielts/guided-evidence';
+import { buildIeltsGuidedMock, IELTS_GUIDED_MOCK_IDS, type IeltsGuidedReferences } from '@/data/ielts/guided-mock';
+import { getIeltsGuidedSpeakingReference } from '@/data/ielts/guided-speaking-references';
+import { IELTS_GUIDED_WRITING_BY_SET } from '@/data/ielts/guided-writing-samples';
+import IeltsGuidedMockCoach from './IeltsGuidedMockCoach';
+import guidedStyles from './ielts-guided.module.css';
 
 interface Props { params: Promise<{ exam: string; mockId: string }> }
+
+function IeltsGuidedLockedPreview({ setNumber }: { setNumber: number }) {
+  return <main className={guidedStyles.page}>
+    <div className={guidedStyles.glowOne} aria-hidden="true" />
+    <div className={guidedStyles.glowTwo} aria-hidden="true" />
+    <div className={guidedStyles.shell}>
+      <nav className={guidedStyles.breadcrumbs} aria-label="Migas de pan"><Link href="/examenes/ielts">IELTS</Link><span>/</span><span aria-current="page">Set {setNumber} · Modo guiado</span></nav>
+      <header className={guidedStyles.hero}>
+        <div className={guidedStyles.heroCopy}>
+          <span className={guidedStyles.eyebrow}>Tutor de bolsillo</span>
+          <h1>Responde primero.<br /><em>Entiende después.</em></h1>
+          <p>La guía separa Listening y Reading en bloques cortos y revela la corrección, el fragmento de audio o el pasaje exacto únicamente después de responder.</p>
+          <div className={guidedStyles.heroActions}><button data-exam-start="true" type="button">Comenzar guía del Set {setNumber}</button><Link href={`/examenes/ielts/practica/set-${setNumber}`}>Ir al modo examen</Link></div>
+        </div>
+        <aside className={guidedStyles.progressCard} aria-label="Contenido de la guía"><div className={guidedStyles.progressTop}><span>Incluye</span><strong>4 habilidades</strong></div><p><strong>80 preguntas objetivas</strong> más referencias pedagógicas de Writing y Speaking.</p><small>Las claves y evidencias se cargan sólo con acceso habilitado.</small></aside>
+      </header>
+    </div>
+  </main>;
+}
 
 export const dynamicParams = false;
 export function generateStaticParams() {
   return [
     ...GUIDED_MOCK_IDS.map((mockId) => ({ exam: 'icfes', mockId })),
-    { exam: 'ielts', mockId: 'set-1' },
+    ...IELTS_GUIDED_MOCK_IDS.map((mockId) => ({ exam: 'ielts', mockId })),
   ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { exam, mockId } = await params;
-  if (exam === 'ielts' && mockId === 'set-1') {
-    const canonical = 'https://www.idiomaswl.com/examenes/ielts/practica/set-1/guiado';
+  if (exam === 'ielts' && IELTS_GUIDED_MOCK_IDS.includes(mockId)) {
+    const setNumber = Number(mockId.replace('set-', ''));
+    const canonical = `https://www.idiomaswl.com/examenes/ielts/practica/${mockId}/guiado`;
     return {
-      title: 'IELTS Set 1 guiado: audio y evidencia pregunta por pregunta',
+      title: `IELTS Set ${setNumber} guiado: audio y evidencia pregunta por pregunta`,
       description: 'Practica IELTS Listening, Reading, Writing y Speaking con corrección inmediata, clips de audio exactos, texto resaltado y autoevaluación guiada.',
       alternates: { canonical },
       openGraph: {
-        title: 'IELTS Set 1 · Modo guiado WeLearn',
+        title: `IELTS Set ${setNumber} · Modo guiado WeLearn`,
         description: 'Una ruta de aprendizaje autónoma con evidencia exacta después de cada respuesta.',
         url: canonical,
         type: 'website',
       },
+      robots: { index: false, follow: false },
     };
   }
   const mock = exam === 'icfes' ? getMock(exam, mockId) : null;
@@ -49,11 +76,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GuidedMockPage({ params }: Props) {
   const { exam, mockId } = await params;
-  if (exam === 'ielts' && mockId === 'set-1') {
-    const ieltsMock = getMock('ielts', 'set-1');
-    const readingPassage = ieltsMock?.sections.find(section => section.skill === 'reading' && section.part === 5)?.passage;
-    if (!readingPassage) notFound();
-    return <IeltsGuidedCoach readingPassage={readingPassage} />;
+  if (exam === 'ielts' && IELTS_GUIDED_MOCK_IDS.includes(mockId)) {
+    const ieltsMock = getMock('ielts', mockId);
+    if (!ieltsMock) notFound();
+    const writingReference = IELTS_GUIDED_WRITING_BY_SET[mockId as keyof typeof IELTS_GUIDED_WRITING_BY_SET];
+    const references: IeltsGuidedReferences = {
+      writing: mockId === 'set-1' ? IELTS_GUIDED_SET_1_WRITING : writingReference,
+      speaking: getIeltsGuidedSpeakingReference(Number(mockId.replace('set-', ''))),
+    };
+    const guidedData = buildIeltsGuidedMock(ieltsMock, getIeltsGuidedEvidence(mockId), references);
+    return <ExamAccessBoundary
+      examSlug="ielts"
+      examLabel="IELTS Academic"
+      language="ingles"
+      redactLockedChildren
+      lockedFallback={<IeltsGuidedLockedPreview setNumber={Number(mockId.replace('set-', ''))} />}
+    >
+      <IeltsGuidedMockCoach data={guidedData} />
+    </ExamAccessBoundary>;
   }
   const mock = exam === 'icfes' ? getMock(exam, mockId) : null;
   const questions = getGuidedMockQuestions(mockId);

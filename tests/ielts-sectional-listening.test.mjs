@@ -11,7 +11,7 @@ import {
   selectIeltsListeningPractice,
 } from '../src/data/ielts/sectional-listening-adapter.ts';
 import { scoreIeltsListeningPracticeAttempt } from '../src/lib/ielts/listening-practice-contract.ts';
-import { scoreIeltsListeningRequest } from '../src/app/api/practica/ielts/listening/score/route.ts';
+import { scoreIeltsListeningRequest as scoreListening } from '../src/lib/ielts/listening-score-request.ts';
 
 const ROOT = process.cwd();
 const blankKey = (groupId, num) => `${groupId}__${num}`;
@@ -100,9 +100,7 @@ test('displayed part instructions name the actual response range in all 20 sets'
     }
   }
   assert.deepEqual(displayedMismatches, []);
-  assert.deepEqual(sourceMismatches, [
-    'set-4 part 3: You will hear two students discussing a research project on social media and well-being. Listen and answer Questions 21–30. -> You will hear two students discussing a research project on social media and well-being. Listen and answer Questions 21–27.',
-  ]);
+  assert.deepEqual(sourceMismatches, []);
 });
 
 test('client payloads never expose answer keys or transcripts', () => {
@@ -137,18 +135,18 @@ test('score endpoint accepts the exact set contract and rejects stale or injecte
     contentVersion: practice.contentVersion,
     answers: perfectAnswers(mock),
   };
-  const blocked = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }), false);
+  const blocked = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }), false);
   assert.equal(blocked.status, 403);
-  const validResponse = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }), true);
+  const validResponse = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }), true);
   assert.equal(validResponse.status, 200);
   assert.equal((await validResponse.json()).correct, 40);
 
-  const staleResponse = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify({ ...validBody, contentVersion: 'ielts-set-2-v0' }) }), true);
+  const staleResponse = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify({ ...validBody, contentVersion: 'ielts-set-2-v0' }) }), true);
   assert.equal(staleResponse.status, 409);
 
   const injected = structuredClone(validBody);
   injected.answers.fills['unknown__999'] = 'leaked';
-  const injectedResponse = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(injected) }), true);
+  const injectedResponse = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(injected) }), true);
   assert.equal(injectedResponse.status, 400);
 });
 

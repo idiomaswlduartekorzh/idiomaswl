@@ -13,12 +13,53 @@ import {
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const outputDirectory = path.join(root, 'config/ielts-harness/listening-evidence');
-const SETS = Array.from({ length: 19 }, (_, index) => index + 2);
+const requestedSets = process.argv.find(argument => argument.startsWith('--sets='))?.split('=')[1]
+  ?.split(',').map(Number);
+const SETS = requestedSets?.length ? requestedSets : Array.from({ length: 19 }, (_, index) => index + 2);
 const relative = file => path.relative(root, file);
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const fileSha = file => sha256Bytes(fs.readFileSync(file));
 
+// Human-readable, exact global-ASR slices for repairs where the former academic
+// excerpt pointed at a neighbouring sentence. These are not ASR inventions:
+// exactAsrSlice below must reproduce each phrase byte-for-byte before emission.
+const REMEDIATED_EXACT_SLICES = new Map([
+  ['2:21', { startSeconds: 921.78, endSeconds: 937.7,
+    audiblePhrase: 'Yes, overall I thought it was quite positive. She liked the section on solar power, but said we need to develop our argument about wind energy more. I agree. I think we relied too much on statistics and not enough on case studies. Real-world examples would make it more convincing.',
+    semanticFocus: ['case studies', 'real-world examples'],
+    rationale: 'This exact ASR slice contains Sarah’s proposed case studies and real-world examples, while the revised options leave one defensible keyed change.' }],
+  ['2:23', { startSeconds: 998.6, endSeconds: 1002.28,
+    audiblePhrase: 'I think revise. Adding a new section might make the report too long.',
+    semanticFocus: ['revise', 'new section'],
+    rationale: 'This exact ASR slice explicitly chooses revising the existing material instead of adding a new section.' }],
+  ['2:24', { startSeconds: 1031.02, endSeconds: 1040.32,
+    audiblePhrase: "Exactly. Now what about the conclusion? I felt it was quite weak. Yes, we basically just summarized what we'd said. We need to make some stronger recommendations.",
+    semanticFocus: ['summarized', 'stronger recommendations'],
+    rationale: 'This exact ASR slice states that the conclusion merely summarized the report and needs stronger recommendations.' }],
+  ['13:13', { startSeconds: 567.88, endSeconds: 574.74,
+    audiblePhrase: 'The check-in desks for international flights are on level 2 and they open exactly 3 hours before departure.',
+    semanticFocus: ['level 2'],
+    rationale: 'This exact ASR slice states that the international-flight check-in desks are on level 2.' }],
+  ['17:22', { startSeconds: 917.92, endSeconds: 927.24,
+    audiblePhrase: "We're recruiting university students, but only ones who already play sport competitively. We thought about using complete beginners, but their results would be too inconsistent.",
+    semanticFocus: ['university students', 'sport competitively'],
+    rationale: 'This exact ASR slice identifies competitive university students and explicitly rejects complete beginners.' }],
+  ['17:26', { startSeconds: 1126.86, endSeconds: 1137.66,
+    audiblePhrase: "Now in terms of next steps, I'd strongly recommend increasing your sample size. Twenty participants really isn't enough to draw firm conclusions.",
+    semanticFocus: ['sample size'],
+    rationale: 'This exact ASR slice explicitly recommends increasing the sample size.' }],
+  ['19:21', { startSeconds: 1010.2, endSeconds: 1024.76,
+    audiblePhrase: 'Well, at first we wanted to interview professional film directors, but we soon realised that would be almost impossible to arrange. Street musicians were far easier to approach, and honestly, the topic felt much fresher.',
+    semanticFocus: ['almost impossible to arrange', 'far easier to approach'],
+    rationale: 'This exact ASR slice contrasts the impractical first idea with the more accessible subject.' }],
+  ['19:23', { startSeconds: 1145.0800000000002, endSeconds: 1162.84,
+    audiblePhrase: "I'm proudest of the interviews. We let each musician tell their own story, and those personal moments give the film its emotional heart. The camera work is a little shaky in places, but the interviews really carry it. I agree. The interviews are your strongest element.",
+    semanticFocus: ['proudest', 'interviews'],
+    rationale: 'This exact ASR slice repeatedly identifies the interviews as the documentary’s strongest element.' }],
+]);
+
 function walk(directory, basenamePattern, results = []) {
+  if (!fs.existsSync(directory)) return results;
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     if (entry.isDirectory() && ['.cache', '.segments', '.assembly', 'dev-cache-backups'].includes(entry.name)) continue;
     const file = path.join(directory, entry.name);
@@ -46,6 +87,17 @@ async function effectiveMock(set) {
 function matchingQa(set, audioSha) {
   const matches = qaCandidates.map(file => ({ file, qa: readJson(file) }))
     .filter(({ qa }) => qa.set === set && qa.status === 'PASS' && qa.audioSha256 === audioSha);
+  if (matches.length === 0) {
+    const existingArtifactFile = path.join(outputDirectory, `set-${set}-listening-evidence.json`);
+    if (fs.existsSync(existingArtifactFile)) {
+      const existingArtifact = readJson(existingArtifactFile);
+      const file = path.join(root, existingArtifact.asr.qaPath);
+      const qa = readJson(file);
+      qa.vendoredGlobalReportPath = existingArtifact.asr.globalReportPath;
+      qa.vendoredGlobalSourcePath = existingArtifact.asr.globalSourcePath;
+      if (qa.set === set && qa.status === 'PASS' && qa.audioSha256 === audioSha) matches.push({ file, qa });
+    }
+  }
   assert.equal(matches.length, 1, `Set ${set}: expected one PASS ASR QA bound to public audio, found ${matches.length}`);
   return matches[0];
 }
@@ -56,9 +108,11 @@ function absoluteFromReport(value) {
 }
 
 function globalAsrSources(qaFile, qa) {
-  const reportFile = absoluteFromReport(qa.globalAsr.reportPath);
+  const reportedReportFile = absoluteFromReport(qa.globalAsr.reportPath);
+  const reportFile = fs.existsSync(reportedReportFile) ? reportedReportFile : path.join(root, qa.vendoredGlobalReportPath);
   const report = readJson(reportFile);
-  const asrFile = absoluteFromReport(report.asrSourcePath);
+  const reportedAsrFile = absoluteFromReport(report.asrSourcePath);
+  const asrFile = fs.existsSync(reportedAsrFile) ? reportedAsrFile : path.join(root, qa.vendoredGlobalSourcePath);
   return { reportFile, report, asrFile, asr: readJson(asrFile), qaFile, qa };
 }
 
@@ -75,6 +129,7 @@ function completionSources(sources, set) {
   for (const [collection, method] of [[sources.qa.partReports ?? [], 'PART_COMPLETION'], [sources.qa.focusedReports ?? [], 'FOCUSED_COMPLETION']]) {
     for (const report of collection) {
       const asrFile = absoluteFromReport(report.asrPath);
+      if (!fs.existsSync(asrFile)) continue;
       const converter = focusedToMasterConverter(qaDirectory, report.segmentIndexes, playbackSpeed);
       for (const item of report.completionEvidence.filter(entry => entry.found && !result.has(entry.question))) {
         result.set(item.question, {
@@ -101,6 +156,7 @@ function alignmentSources(sources, set, part) {
   for (const [collection, method] of [[sources.qa.partReports ?? [], 'PART_ACADEMIC_EXCERPT_ALIGNMENT'], [sources.qa.focusedReports ?? [], 'FOCUSED_ACADEMIC_EXCERPT_ALIGNMENT']]) {
     for (const report of collection.filter(entry => entry.part === part)) {
       const asrFile = absoluteFromReport(report.asrPath);
+      if (!fs.existsSync(asrFile)) continue;
       candidates.push({ method, asrFile, segments: asrSegments(readJson(asrFile)),
         converter: focusedToMasterConverter(qaDirectory, report.segmentIndexes, playbackSpeed),
         segmentIndexes: report.segmentIndexes, playbackSpeed });
@@ -150,6 +206,8 @@ fs.mkdirSync(outputDirectory, { recursive: true });
 const manifestRows = [];
 for (const set of SETS) {
   const mock = await effectiveMock(set);
+  const previousArtifactFile = path.join(outputDirectory, `set-${set}-listening-evidence.json`);
+  const previousArtifact = fs.existsSync(previousArtifactFile) ? readJson(previousArtifactFile) : null;
   const reviewFile = path.join(root, `config/ielts-harness/academic-reviews/set-${set}-objective-review.json`);
   const review = readJson(reviewFile);
   const audioFile = path.join(root, `public/audio/ielts/ielts-listening-set-${set}.mp3`);
@@ -165,6 +223,28 @@ for (const set of SETS) {
   const items = [];
   for (const unit of units) {
     const { academic, question } = unit;
+    const remediated = REMEDIATED_EXACT_SLICES.get(`${set}:${question}`);
+    if (remediated) {
+      const phrase = exactAsrSlice(globalSegments, remediated.startSeconds, remediated.endSeconds);
+      assert.equal(phrase, remediated.audiblePhrase, `Set ${set} Q${question}: remediated exact ASR phrase drift`);
+      assert.equal(academic.independentReview?.verdict, 'PASS',
+        `Set ${set} Q${question}: independent remediation review is missing`);
+      items.push({
+        question, responseKey: academic.responseKey, part: academic.sourcePart,
+        academicEvidenceSha256: sha256Bytes(JSON.stringify(academic)), academicExcerptSha256: academic.sourceExcerptSha256,
+        startSeconds: remediated.startSeconds, endSeconds: remediated.endSeconds,
+        audiblePhrase: phrase, audiblePhraseSha256: sha256Bytes(phrase),
+        rationale: remediated.rationale,
+        method: 'KEYED_ANSWER_EXACT_ASR_SLICE', confidence: 'HIGH', asrMatchKind: 'exact',
+        semanticFocus: remediated.semanticFocus,
+        reviewStatus: 'APPROVED', reviewer: academic.independentReview.reviewer,
+        reviewedAt: academic.independentReview.reviewedAt,
+        reviewPackageSha256: academic.independentReview.artifactPackageSha256,
+        sourceAsr: { path: vendorListeningEvidenceSource({ root, set, file: sources.asrFile }), sha256: fileSha(sources.asrFile),
+          startSeconds: remediated.startSeconds, endSeconds: remediated.endSeconds },
+      });
+      continue;
+    }
     const completion = academic.evidenceClass === 'completion' ? completions.get(academic.question) : null;
     if (completion) {
       const sourceAsr = readJson(completion.asrFile);
@@ -184,6 +264,16 @@ for (const set of SETS) {
         ...(completion.conversion ? { conversion: { ...completion.conversion,
           masterStartSeconds: completion.startSeconds, masterEndSeconds: completion.endSeconds } } : {}),
       });
+      continue;
+    }
+    if (academic.evidenceClass === 'completion' && previousArtifact) {
+      const previous = previousArtifact.evidence.find(item => item.question === question);
+      assert.ok(previous, `Set ${set} Q${question}: completion has no preserved audible evidence`);
+      assert.equal(previous.academicEvidenceSha256, sha256Bytes(JSON.stringify(academic)),
+        `Set ${set} Q${question}: preserved completion academic binding is stale`);
+      assert.equal(previous.academicExcerptSha256, academic.sourceExcerptSha256,
+        `Set ${set} Q${question}: preserved completion excerpt binding is stale`);
+      items.push(previous);
       continue;
     }
     assert.notEqual(academic.evidenceClass, 'completion', `Set ${set} Q${question}: completion has no audible ASR evidence`);
@@ -239,8 +329,13 @@ for (const set of SETS) {
     artifactPath: relative(artifactFile), artifactFileSha256: fileSha(artifactFile), artifactSha256: artifact.artifactSha256 });
   console.log(`Set ${set}: PASS 40/40`);
 }
-const manifestCore = { schemaVersion: 1, status: 'PASS', generatedAt: '2026-09-09', scope: 'ielts_listening_sets_2_20',
-  sets: manifestRows, summary: { sets: 19, questions: 760, supported: 760, unresolved: 0 } };
+const existingManifestPath = path.join(outputDirectory, 'manifest.json');
+const existingManifest = fs.existsSync(existingManifestPath) ? readJson(existingManifestPath) : null;
+const mergedRows = existingManifest && SETS.length < 19
+  ? existingManifest.sets.map(row => manifestRows.find(candidate => candidate.set === row.set) ?? row)
+  : manifestRows;
+const manifestCore = { schemaVersion: 1, status: 'PASS', generatedAt: '2026-10-22', scope: 'ielts_listening_sets_2_20',
+  sets: mergedRows, summary: { sets: 19, questions: 760, supported: 760, unresolved: 0 } };
 const manifest = { ...manifestCore, manifestSha256: sha256Bytes(JSON.stringify(manifestCore)) };
 fs.writeFileSync(path.join(outputDirectory, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
 console.log(`Manifest: ${manifest.manifestSha256}`);

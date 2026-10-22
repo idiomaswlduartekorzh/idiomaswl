@@ -4,11 +4,23 @@
   "scope": "independent_academic_objective_key_review",
   "set": 4,
   "mockId": "set-4",
-  "contentVersionAtReview": "ielts-set-4-v5",
-  "reviewedAt": "2026-09-12",
+  "contentVersionAtReview": "ielts-set-4-v6",
+  "reviewedAt": "2026-10-20",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-audit-harness-bias-review"
+    "id": "/root/objective_reviewer_final2"
+  },
+  "independentReview": {
+    "reviewer": { "kind": "academic-agent", "id": "/root/objective_reviewer_final2" },
+    "reviewedAt": "2026-10-20",
+    "artifactPackageSha256": "2018efdf3ffbe5db36252929e456123d709c2c4d8e260b11aba647ff0442bb14",
+    "verdict": "PASS",
+    "scope": ["Set 4 objective key", "Q28", "Q29", "Q30"]
+  },
+  "supersededReview": {
+    "reviewedAt": "2026-09-12",
+    "reviewer": { "kind": "academic-agent", "id": "codex-audit-harness-bias-review" },
+    "reason": "Set 4 Listening incorrectly assigned Q28-Q30 to Part 4, producing a 10/10/7/13 distribution. The repaired 4×10 contract requires a fresh independent review."
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
@@ -17,10 +29,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "0c564253d64a2f35bb76ea148bd67e8eeb75b818b0b5345042f53690e0fff99c",
-    "listeningMaterialSha256": "9b6095b3a01b722f0aad4123dea6f9707d56dcc7fdbb7328dcb27add963f040f",
+    "objectiveSha256": "c2cfc7fbf057c5656dcfe570479c97de75f97ae81f62318637fbac1012fcc1f7",
+    "listeningMaterialSha256": "1a89215e864c6cb2127510b8d4e162a8beead0bb370f55a847f3df8fbbce5292",
     "readingMaterialSha256": "2938871cc9b4ef724396d154658b3ef89b072883fb9e5533296ef6e4dbc238d8",
-    "objectiveMaterialSha256": "5baa85d92e3f89428de0abf1be7d568e4b1388bb9b6ff39a7968bf32a2ab66c2"
+    "objectiveMaterialSha256": "0a7d172f12f8fb230dca223357383399e7d3d4e65d6587ff63fb26ffe220e7c1"
   },
   "summary": {
     "responseRows": 79,
@@ -352,32 +364,50 @@
     {
       "skill": "listening",
       "number": 28,
-      "kind": "fill",
-      "key": "l4-notes__28",
+      "kind": "mcq",
+      "key": "l3q28",
       "accepted": [
-        "food"
+        0
       ],
-      "weight": 1
+      "weight": 1,
+      "options": [
+        "It is practical within their limited time.",
+        "It removes the need to control other variables.",
+        "It is the only method their university permits.",
+        "It guarantees more accurate answers than phone data."
+      ]
     },
     {
       "skill": "listening",
       "number": 29,
-      "kind": "fill",
-      "key": "l4-notes__29",
+      "kind": "mcq",
+      "key": "l3q29",
       "accepted": [
-        "daylight"
+        2
       ],
-      "weight": 1
+      "weight": 1,
+      "options": [
+        "Participants’ grades, course choices and study hours.",
+        "Age, income and the type of phone participants own.",
+        "Baseline mental health, pre-existing conditions and offline social support.",
+        "The number of platforms and accounts each participant uses."
+      ]
     },
     {
       "skill": "listening",
       "number": 30,
-      "kind": "fill",
-      "key": "l4-notes__30",
+      "kind": "mcq",
+      "key": "l3q30",
       "accepted": [
-        "scarce"
+        1
       ],
-      "weight": 1
+      "weight": 1,
+      "options": [
+        "Only participants’ weekly screen-time summaries.",
+        "Both self-reports and weekly screen-time summaries.",
+        "Interviews instead of any phone-use data.",
+        "Only results from the Warwick-Edinburgh scale."
+      ]
     },
     {
       "skill": "listening",
@@ -2001,91 +2031,91 @@
       "skill": "listening",
       "question": 28,
       "questionLabel": "Q28",
-      "responseKey": "l4-notes__28",
-      "kind": "fill",
-      "evidenceClass": "completion",
+      "responseKey": "l3q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
       "points": 1,
       "acceptedAnswers": [
-        "food"
+        0
       ],
-      "questionPrompt": "• Seasonal changes in {{28}} availability",
-      "sourcePart": 4,
-      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
-      "sourceExcerpt": "Let's start with the \"why.\" Migration is fundamentally a response to seasonal changes in food availability. During summer in the northern hemisphere, insects, seeds, and fruits are abundant, and the long daylight hours allow birds to forage for long periods. But as winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
-      "sourceExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
+      "questionPrompt": "Why does James suggest using a survey for their small study?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: I was thinking we could use a survey — it's practical given our time constraints. But we'd need to control for baseline mental health, pre-existing conditions, and offline social support.",
+      "sourceExcerptSha256": "7c803c6a1efdf1d85a0d07e928cfd486e243fd3f4635a7132ac8c5f3eacd07a2",
       "verdict": "SUPPORTED",
-      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
-      "sourceAnswerForm": "food",
-      "acceptedAnswerEvidence": [
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted or unsupported.",
+      "correctOptions": [
         {
-          "answer": "food",
-          "basis": "LITERAL",
-          "rationale": "The accepted answer reproduces the cited source wording."
+          "key": 0,
+          "text": "It is practical within their limited time."
         }
       ],
-      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
-      "maxWords": 1,
-      "limitStatus": "PASS"
+      "distractors": [
+        { "option": 1, "text": "It removes the need to control other variables.", "verdict": "DISMISSED", "rationale": "James immediately lists variables that still need to be controlled." },
+        { "option": 2, "text": "It is the only method their university permits.", "verdict": "DISMISSED", "rationale": "No university requirement is stated." },
+        { "option": 3, "text": "It guarantees more accurate answers than phone data.", "verdict": "DISMISSED", "rationale": "The speakers later add phone data because self-reports can be unreliable." }
+      ]
     },
     {
       "skill": "listening",
       "question": 29,
       "questionLabel": "Q29",
-      "responseKey": "l4-notes__29",
-      "kind": "fill",
-      "evidenceClass": "completion",
+      "responseKey": "l3q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
       "points": 1,
       "acceptedAnswers": [
-        "daylight"
+        2
       ],
-      "questionPrompt": "• Northern summer: insects/seeds abundant; long {{29}} hours allow extended foraging",
-      "sourcePart": 4,
-      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
-      "sourceExcerpt": "Let's start with the \"why.\" Migration is fundamentally a response to seasonal changes in food availability. During summer in the northern hemisphere, insects, seeds, and fruits are abundant, and the long daylight hours allow birds to forage for long periods. But as winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
-      "sourceExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
+      "questionPrompt": "Which factors does James say the study would need to control for?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: I was thinking we could use a survey — it's practical given our time constraints. But we'd need to control for baseline mental health, pre-existing conditions, and offline social support.",
+      "sourceExcerptSha256": "7c803c6a1efdf1d85a0d07e928cfd486e243fd3f4635a7132ac8c5f3eacd07a2",
       "verdict": "SUPPORTED",
-      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
-      "sourceAnswerForm": "daylight",
-      "acceptedAnswerEvidence": [
+      "rationale": "The cited material lists all three factors in the keyed option.",
+      "correctOptions": [
         {
-          "answer": "daylight",
-          "basis": "LITERAL",
-          "rationale": "The accepted answer reproduces the cited source wording."
+          "key": 2,
+          "text": "Baseline mental health, pre-existing conditions and offline social support."
         }
       ],
-      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
-      "maxWords": 1,
-      "limitStatus": "PASS"
+      "distractors": [
+        { "option": 0, "text": "Participants’ grades, course choices and study hours.", "verdict": "DISMISSED", "rationale": "These factors are not listed." },
+        { "option": 1, "text": "Age, income and the type of phone participants own.", "verdict": "DISMISSED", "rationale": "These factors are not listed." },
+        { "option": 3, "text": "The number of platforms and accounts each participant uses.", "verdict": "DISMISSED", "rationale": "These factors are not listed." }
+      ]
     },
     {
       "skill": "listening",
       "question": 30,
       "questionLabel": "Q30",
-      "responseKey": "l4-notes__30",
-      "kind": "fill",
-      "evidenceClass": "completion",
+      "responseKey": "l3q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
       "points": 1,
       "acceptedAnswers": [
-        "scarce"
+        1
       ],
-      "questionPrompt": "• Winter: food becomes {{30}} in northern regions",
-      "sourcePart": 4,
-      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
-      "sourceExcerpt": "Let's start with the \"why.\" Migration is fundamentally a response to seasonal changes in food availability. During summer in the northern hemisphere, insects, seeds, and fruits are abundant, and the long daylight hours allow birds to forage for long periods. But as winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
-      "sourceExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
+      "questionPrompt": "What do the students finally decide to collect?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: That would be great for objective data rather than just self-reports, which tend to be unreliable — people consistently underestimate how long they spend on their phones.\n\nSOFIA: Let's include both then. We'll ask them to share weekly screen time summaries from their phone settings.",
+      "sourceExcerptSha256": "aacf3010dca4877ba29517f0a6bf6f52562ee325100d0a3c42710d44750bf56c",
       "verdict": "SUPPORTED",
-      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
-      "sourceAnswerForm": "scarce",
-      "acceptedAnswerEvidence": [
+      "rationale": "Sofia explicitly says to include both sources after James explains the limitation of self-reports.",
+      "correctOptions": [
         {
-          "answer": "scarce",
-          "basis": "LITERAL",
-          "rationale": "The accepted answer reproduces the cited source wording."
+          "key": 1,
+          "text": "Both self-reports and weekly screen-time summaries."
         }
       ],
-      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
-      "maxWords": 1,
-      "limitStatus": "PASS"
+      "distractors": [
+        { "option": 0, "text": "Only participants’ weekly screen-time summaries.", "verdict": "DISMISSED", "rationale": "Sofia says to include both." },
+        { "option": 2, "text": "Interviews instead of any phone-use data.", "verdict": "DISMISSED", "rationale": "Interviews are not selected." },
+        { "option": 3, "text": "Only results from the Warwick-Edinburgh scale.", "verdict": "DISMISSED", "rationale": "They also decide to collect screen-time summaries." }
+      ]
     },
     {
       "skill": "listening",
@@ -4014,5 +4044,5 @@
       "optionLengthHeuristicGatePassed": true
     }
   },
-  "reviewSha256": "073bdecd0b8d06985c02385d48821fe454dcef813955d4abb7391900b545acdb"
+  "reviewSha256": "31d3875cf40cde2eb4d5f47c738b1c60c6b17499f704858bb8264d5cee2d3299"
 }

@@ -24,7 +24,7 @@
       "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
       "transcriptSha256": "9f2c676755fe417a3710e053b44dcccf55dd89550d1f376d8a20c7b37e9ee291",
       "evidencePath": "config/ielts-harness/listening-evidence/set-17-listening-evidence.json",
-      "evidenceSha256": "5af9c0990143a347ef2dd40f7c1d49ccb6e368350b7f81a32f853d32a0f72fe3"
+      "evidenceSha256": "a589bdc9a423bd2cb02e0d06ca245e54022c59e61813089711e3c32b1324f360"
     },
     "questions": [
       {
@@ -346,16 +346,17 @@
         "question": 22,
         "responseKey": "l3q22",
         "part": 3,
-        "startSeconds": 927.92,
-        "endSeconds": 944.5,
-        "audiblePhrase": "We also need to be careful about cause and association in the Sports Science Study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "startSeconds": 917.92,
+        "endSeconds": 927.24,
+        "audiblePhrase": "We're recruiting university students, but only ones who already play sport competitively. We thought about using complete beginners, but their results would be too inconsistent.",
+        "rationale": "This exact ASR slice identifies competitive university students and explicitly rejects complete beginners.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 23,
@@ -406,16 +407,17 @@
         "question": 26,
         "responseKey": "l3-form__26",
         "part": 3,
-        "startSeconds": 937.9,
-        "endSeconds": 941.68,
-        "audiblePhrase": "particularly when the sample is small, participants select themselves,",
-        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "startSeconds": 1126.86,
+        "endSeconds": 1137.66,
+        "audiblePhrase": "Now in terms of next steps, I'd strongly recommend increasing your sample size. Twenty participants really isn't enough to draw firm conclusions.",
+        "rationale": "This exact ASR slice explicitly recommends increasing the sample size.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 27,
@@ -1305,7 +1307,7 @@
     "status": "APPROVED",
     "objectiveSha256": "65056588b72942b0524d1f9b623fd706c9496c661ed303f087237fa1a4d42efc",
     "evidencePath": "config/ielts-harness/academic-reviews/set-17-objective-review.json",
-    "evidenceSha256": "10d002b3d6c94de3902957366546c38a4572d85af6a731e725227c484b98553b",
+    "evidenceSha256": "d4b10c4c29f7333e61841ed6ed89791d3756bf6348303ebd1bc0b89b9f081d54",
     "reviewer": {
       "kind": "academic-agent",
       "id": "codex-audit-harness-bias-review"

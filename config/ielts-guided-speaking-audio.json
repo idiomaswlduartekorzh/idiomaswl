@@ -1,12 +1,46 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 3,
+  "specVersion": "ielts-public-format-2026-10-03",
+  "product": "original-unofficial-ielts-academic-guided-practice",
+  "setCount": 20,
   "engine": "ResembleAI/chatterbox",
   "model": "ChatterboxTTS",
   "language": "en",
+  "releaseState": "DRAFTED",
+  "pedagogicalNotice": "Las bandas objetivo son referencias pedagógicas basadas en el lenguaje del guion. El audio sintético no establece una banda de pronunciación ni predice un resultado oficial de IELTS.",
+  "editorialCorrections": [
+    {
+      "setNumber": 4,
+      "sourceQuestionId": "sp2",
+      "sourceCueCard": "You should say:\n• what the skill is\n• when and how you learned it\n• why it has been useful to you\n\nAnd explain whether you would like to develop this skill further.",
+      "displayCueCard": "Describe a practical skill you have learned.\n\nYou should say:\n• what the skill is\n• when and how you learned it\n• why it has been useful to you\n\nAnd explain whether you would like to develop this skill further.",
+      "editorialCorrectionReason": "The canonical source preserves the bullet prompts but omits the opening Describe sentence. Guided mode adds that sentence explicitly without changing the source mock."
+    }
+  ],
   "voicePolicy": {
     "referenceAudioRequired": true,
     "rightsConfirmationRequired": true,
-    "note": "Use one clean English reference voice for both bands so the comparison measures language quality, not a different speaker."
+    "sameVoiceAcrossBandsAndSets": true,
+    "note": "Use one clean authorised English reference voice for every item so comparisons reflect the scripted language rather than speaker identity."
+  },
+  "audioApprovalPolicy": {
+    "generationDoesNotApprove": true,
+    "pairApprovalRequired": true,
+    "independentHumanReviewerRequired": true,
+    "receiptKind": "ielts-guided-speaking-acoustic-review",
+    "receiptSchemaVersion": 1,
+    "requiredBindingsPerBand": [
+      "sha256",
+      "contentSha256"
+    ],
+    "requiredChecks": [
+      "identityStable",
+      "noArtifacts",
+      "intelligible",
+      "naturalPauses",
+      "transcriptMatch",
+      "durationAppropriate"
+    ]
   },
   "generationDefaults": {
     "chunkMaxCharacters": 280,
@@ -15,28 +49,860 @@
     "cfgWeight": 0.5,
     "temperature": 0.8,
     "minP": 0.05,
-    "topP": 1.0,
+    "topP": 1,
     "repetitionPenalty": 1.2,
     "seed": 20261020
   },
+  "bandProfiles": {
+    "5.5": {
+      "label": "Referencia pedagógica aproximada · Banda 5.5",
+      "verdict": "Cubre la tarjeta y se entiende, pero la respuesta depende de vocabulario frecuente, enlaces previsibles y un control gramatical irregular.",
+      "criteria": [
+        [
+          "Fluency & Coherence",
+          "Mantiene una respuesta relevante, aunque recurre a secuencias lineales, algunas pausas y desarrollo desigual."
+        ],
+        [
+          "Lexical Resource",
+          "Comunica el tema con vocabulario suficiente pero frecuente, repetición visible y flexibilidad limitada."
+        ],
+        [
+          "Grammatical Range & Accuracy",
+          "Combina estructuras simples y algunas complejas, con errores que normalmente no impiden comprender el mensaje."
+        ],
+        [
+          "Pronunciation",
+          "El audio sintético solo modela el guion; una banda real exige evaluar ritmo, acento y sonidos en la voz del candidato."
+        ]
+      ]
+    },
+    "9.0": {
+      "label": "Referencia pedagógica aproximada · Banda 9",
+      "verdict": "Desarrolla la tarjeta con precisión, progresión natural, vocabulario flexible y estructuras complejas controladas.",
+      "criteria": [
+        [
+          "Fluency & Coherence",
+          "Construye una respuesta completa y flexible, con progresión clara y conexiones naturales entre detalle y reflexión."
+        ],
+        [
+          "Lexical Resource",
+          "Usa vocabulario preciso, idiomático y específico del tema sin que resulte forzado."
+        ],
+        [
+          "Grammatical Range & Accuracy",
+          "Maneja con naturalidad una amplia variedad de estructuras y mantiene un control casi completo."
+        ],
+        [
+          "Pronunciation",
+          "El audio sintético facilita seguir el ritmo del modelo; la banda real depende de la pronunciación producida por cada candidato."
+        ]
+      ]
+    }
+  },
+  "band55FeedbackBySet": {
+    "1": {
+      "verdict": "Responde toda la tarjeta con una visita concreta, aunque repite office/job y desarrolla poco la reacción personal.",
+      "fluency": "La secuencia de la oficina se sigue bien; um e I think producen vacilación natural y el cierre queda algo breve.",
+      "lexical": "Travel company, desk y colleagues bastan para narrar, pero nice, interesting y job se reutilizan con poca precisión.",
+      "grammar": "Alterna pasado y presente de forma comprensible; introduced me with y never saw muestran control irregular.",
+      "pronunciation": "Las pausas escritas orientan el ritmo de la visita, pero la pronunciación real solo puede juzgarse en la voz del candidato."
+    },
+    "2": {
+      "verdict": "La visita a Villa de Leyva resulta clara y personal, pero algunas ideas se enumeran y la explicación de por qué gustó queda desigual.",
+      "fluency": "Okay, um, well y la autocorrección sobre la duración crean habla plausible sin impedir seguir el recorrido.",
+      "lexical": "Usa vocabulario funcional de viaje y pueblo; nice, calm y photos se apoyan en palabras frecuentes y repetidas.",
+      "grammar": "El pasado sostiene casi toda la historia, aunque some rooms was revela errores limitados de concordancia.",
+      "pronunciation": "El contraste Bogotá–Villa de Leyva ofrece lugares naturales para pausar; el audio sintético no acredita pronunciación de banda."
+    },
+    "3": {
+      "verdict": "Explica el viaje y su importancia con emoción reconocible, aunque la reflexión final es breve y bastante general.",
+      "fluency": "Avanza cronológicamente y usa una reparación espontánea sobre la decisión; algunas frases arrancan con enlaces básicos.",
+      "lexical": "Residence, heavy rain e independent comunican la experiencia, con repetición de journey y expresiones comunes.",
+      "grammar": "Maneja pasado y obligación con claridad; hay poca variedad compleja, pero los errores no bloquean el sentido.",
+      "pronunciation": "La duda maybe this was a bad decision debe sonar como vacilación, no como actuación; la banda oral exige voz humana."
+    },
+    "4": {
+      "verdict": "Cubre cómo aprendió a cocinar y para qué sirve, con anécdotas útiles; la progresión repite at first/slowly y no profundiza mucho.",
+      "fluency": "La aclaración simple cooking y el recuerdo del soup dan naturalidad, aunque el desarrollo es lineal.",
+      "lexical": "Rice, salt, baking y prepare lunch son adecuados; el repertorio sigue siendo cotidiano y poco flexible.",
+      "grammar": "Combina pasado, presente y would like; which save me time deja un error visible pero comprensible.",
+      "pronunciation": "Las reparaciones del relato culinario pueden guiar el ritmo; la síntesis no permite puntuar sonidos ni acento del candidato."
+    },
+    "5": {
+      "verdict": "Describe vivienda, rutina y efecto personal, pero dedica más espacio a enumerar hábitos que a desarrollar el cambio cultural.",
+      "fluency": "Um y la reformulación sobre la privacidad crean continuidad oral; el cierre llega de forma algo rápida.",
+      "lexical": "Flatmates, neighbourhood y private space son pertinentes, con dependencia de hard, comfortable y family.",
+      "grammar": "Usa tiempos de pasado de manera suficiente; the first weeks was hard muestra concordancia inestable sin perder claridad.",
+      "pronunciation": "El cambio entre rutina y dificultad ofrece pausas lógicas; solo una grabación del candidato permitiría valorar pronunciación."
+    },
+    "6": {
+      "verdict": "Da una postura equilibrada sobre el smartphone, aunque varias funciones aparecen como lista y la conclusión repite control.",
+      "fluency": "Honestly, well y like mantienen un tono conversacional; la enumeración central es menos flexible.",
+      "lexical": "Maps, bus, notes y concentrate cubren el tema, pero useful, phone y check reaparecen con frecuencia.",
+      "grammar": "Incluye contraste y condición; this happen muestra un error limitado de tercera persona.",
+      "pronunciation": "La autocorrección sobre el uso excesivo debe conservar un ritmo natural; el modelo sintético no mide la producción del alumno."
+    },
+    "7": {
+      "verdict": "La confusión entre hora y plataforma aporta un episodio claro, aunque la lección final se formula de manera sencilla.",
+      "fluency": "Las pausas por palabras desconocidas están narradas con naturalidad y la secuencia conserva coherencia.",
+      "lexical": "Timetable, platform, gestures y confusion son precisos; help y understand se repiten con poca sustitución.",
+      "grammar": "El relato usa pasado con control suficiente; she thought I mean conserva un error de tiempo reconocible.",
+      "pronunciation": "La historia exige distinguir seven como hora y plataforma, pero esa inteligibilidad debe evaluarse en la voz real."
+    },
+    "8": {
+      "verdict": "Explica una reacción auténtica a la novela y admite incertidumbre, aunque el análisis de su significado queda parcialmente desarrollado.",
+      "fluency": "Actually, though y la duda sobre el final evitan un miniensayo rígido; hay alguna repetición de book y story.",
+      "lexical": "Characters, memories, imagination y generations son adecuados, con paráfrasis sencilla al hablar del tema.",
+      "grammar": "Combina cláusulas de razón y contraste; el control es suficiente y la variedad compleja todavía es limitada.",
+      "pronunciation": "Los nombres propios y la duda final requieren una entrega inteligible; el audio sintético solo ofrece una referencia."
+    },
+    "9": {
+      "verdict": "Presenta el trabajo de Laura y una razón clara para admirarla, pero varias responsabilidades aparecen sin mucho desarrollo.",
+      "fluency": "Although, well y honestly enlazan una respuesta estable; la sección sobre tareas se vuelve enumerativa.",
+      "lexical": "Nurse, shifts, protective clothes y emergency care son específicos, aunque job y important reaparecen.",
+      "grammar": "Usa relativas y because con claridad; when other people is afraid deja un error de concordancia limitado.",
+      "pronunciation": "El énfasis sobre long shifts y calm puede modelarse, pero no sustituye la evaluación de ritmo y sonidos del candidato."
+    },
+    "10": {
+      "verdict": "La caminata por Cocora tiene detalles memorables y una reflexión ambiental, aunque la explicación final es corta.",
+      "fluency": "La casi caída y las quejas dan espontaneidad; la respuesta progresa con conectores mayormente básicos.",
+      "lexical": "Valley, muddy, clouds y palms describen bien el lugar; amazing y special resultan generales.",
+      "grammar": "El pasado se mantiene y hay contraste con but; I nearly fell two times es comprensible aunque poco idiomático.",
+      "pronunciation": "La alternancia entre dificultad y vista final invita a cambios de entonación; la síntesis no califica la voz del alumno."
+    },
+    "11": {
+      "verdict": "Explica el antes y el después del parque con beneficiarios concretos, aunque el balance de problemas se desarrolla poco.",
+      "fluency": "Um y la concesión final mantienen naturalidad; varias ideas siguen un patrón simple de lista.",
+      "lexical": "Playground, benches, bins y outdoor space son pertinentes, con repetición de park y people.",
+      "grammar": "Usa relativas y contraste con suficiente control; the bins gets full muestra concordancia irregular.",
+      "pronunciation": "El contraste before/now puede organizar el ritmo; solo la respuesta grabada del candidato permite valorar pronunciación."
+    },
+    "12": {
+      "verdict": "La emergencia familiar se entiende y la tecnología cumple una función concreta, aunque la reflexión se concentra al final.",
+      "fluency": "La corrección sobre la imagen borrosa y um producen un relato oral creíble con secuencia clara.",
+      "lexical": "Prescription, medicine boxes, blurry y department aportan precisión; helped y hospital se repiten.",
+      "grammar": "Controla pasado y modales de consejo; las estructuras son mayormente seguras y de complejidad media.",
+      "pronunciation": "Prescription y blurry requieren claridad en una voz real; el audio generado no demuestra la pronunciación del candidato."
+    },
+    "13": {
+      "verdict": "El malentendido cultural está bien ejemplificado, aunque la comparación entre estilos de comunicación podría ampliarse.",
+      "fluency": "Well y la autocorrección sobre el desacuerdo hacen la narración espontánea; el cierre es algo general.",
+      "lexical": "Interrupt, silent, assumptions y group work son adecuados, con prefer y communicate usados de forma básica.",
+      "grammar": "Alterna pasado y presente con claridad; las oraciones complejas aparecen pero no se sostienen de forma amplia.",
+      "pronunciation": "Las pausas alrededor del malentendido ayudan al sentido; la banda oral depende de la entrega del estudiante."
+    },
+    "14": {
+      "verdict": "Presenta los dos lados de la decisión y un compromiso realista, pero algunas consecuencias personales quedan apenas mencionadas.",
+      "fluency": "Um y changed my mind several times aportan vacilación auténtica; la secuencia sigue siendo bastante lineal.",
+      "lexical": "Salary, rent, remote days y compromise son útiles, con repetición de family y decision.",
+      "grammar": "Usa condición y contraste de forma comprensible; el rango complejo es limitado pero estable.",
+      "pronunciation": "La indecisión debe oírse sin pausas teatrales; el audio sintético no permite asignar banda de pronunciación."
+    },
+    "15": {
+      "verdict": "Comunica una impresión personal de Ciudad de México con detalles concretos, aunque explica de forma simple su mezcla histórica.",
+      "fluency": "I think, if that makes sense y um crean una voz oral; la lista de lugares reduce algo el desarrollo.",
+      "lexical": "Metro, neighbourhood, anthropology museum y historic centre son pertinentes; big y huge limitan la precisión.",
+      "grammar": "Combina pasado y explicación presente; el repertorio es suficiente pero se apoya en estructuras frecuentes.",
+      "pronunciation": "Los nombres de lugar exigen inteligibilidad, que debe comprobarse en la grabación humana y no en la voz sintética."
+    },
+    "16": {
+      "verdict": "Explica beneficios y límites de los buses eléctricos, aunque algunas afirmaciones ambientales quedan generales.",
+      "fluency": "La reacción oh y I think suavizan la exposición; el tramo final adopta un tono más explicativo que narrativo.",
+      "lexical": "Charging stations, black smoke y dirty energy son específicos, con repetición de bus y clean.",
+      "grammar": "Usa condicionales y comparación de forma comprensible; hay poco riesgo gramatical sostenido.",
+      "pronunciation": "El énfasis entre beneficio y límite puede modelarse, pero la pronunciación del candidato necesita evidencia propia."
+    },
+    "17": {
+      "verdict": "Describe el documental, corrige una creencia previa y menciona cambios de conducta, aunque no recuerda el título.",
+      "fluency": "Actually y um introducen vacilación natural; la respuesta mantiene una línea clara desde imagen hasta opinión.",
+      "lexical": "Plastic, river, waste y reusable bottle cubren el tema; problem y change se usan de manera amplia.",
+      "grammar": "Maneja pasado y contraste con bastante claridad; las estructuras complejas aparecen de forma limitada.",
+      "pronunciation": "Las pausas ante el título olvidado deben sonar espontáneas; la voz sintética no puntúa inteligibilidad humana."
+    },
+    "18": {
+      "verdict": "Relaciona las videollamadas con familia y trabajo, pero repite la idea de distancia y desarrolla poco sus límites.",
+      "fluency": "Of course y um sostienen un tono conversacional; la enumeración de usos resulta algo previsible.",
+      "lexical": "Video calling, share my screen, freeze y online meetings son apropiados, con repetición de people y important.",
+      "grammar": "Usa modales y contraste; too many online meetings makes conserva un error de concordancia comprensible.",
+      "pronunciation": "La distinción entre llamada común y video necesita énfasis claro; la banda real requiere escuchar al candidato."
+    },
+    "19": {
+      "verdict": "La visita al centro amurallado combina impresión e importancia, aunque recuerda pocos datos y la reflexión patrimonial es breve.",
+      "fluency": "Um y I don't remember all the dates dan espontaneidad; la respuesta avanza con enlaces sencillos.",
+      "lexical": "Walled city, stone walls, defended y community son pertinentes; interesting y people permanecen generales.",
+      "grammar": "El pasado y should se usan con claridad; la variedad compleja es limitada pero el mensaje se sostiene.",
+      "pronunciation": "Cartagena y el contraste museo vivo exigen una entrega clara; el audio sintético no demuestra esa capacidad."
+    },
+    "20": {
+      "verdict": "Define el problema y propone respuestas concretas, aunque la evidencia de alcance se apoya sobre todo en experiencia personal.",
+      "fluency": "Um marca una pausa plausible y las ideas se conectan con claridad; parte de la respuesta suena enumerativa.",
+      "lexical": "Counselling, appointment, judging y mental health son pertinentes, con repetición de help y people.",
+      "grammar": "Combina modales y relativas; the situation become serious deja un error limitado de tercera persona.",
+      "pronunciation": "El tono sobre salud mental debe ser claro y no dramatizado; solo la voz del candidato permite evaluar pronunciación."
+    }
+  },
+  "band9FeedbackBySet": {
+    "1": {
+      "verdict": "Convierte la visita al estudio de arquitectura en una reflexión precisa sobre colaboración, vocación y espacio público.",
+      "fluency": "La narración enlaza observación, participación y cambio de perspectiva sin perder el hilo de la tarjeta.",
+      "lexical": "Architectural studio, hand-drawn concept, accessibility y material samples aportan precisión temática natural.",
+      "grammar": "Las relativas, concesiones y contrastes temporales aparecen variados y casi completamente controlados.",
+      "pronunciation": "El audio puede modelar agrupación y énfasis en ideas clave, pero no acredita la pronunciación del candidato."
+    },
+    "2": {
+      "verdict": "La visita a Tayrona integra recorrido, detalle visual y turismo responsable con desarrollo flexible.",
+      "fluency": "La respuesta pasa del trayecto a la reflexión ecológica mediante conexiones naturales y sin enumeración rígida.",
+      "lexical": "Dense tropical vegetation, viewpoint, ecosystem y responsibly managed travel muestran selección precisa.",
+      "grammar": "El contraste entre acceso y responsabilidad usa subordinación amplia con control sostenido.",
+      "pronunciation": "El modelo puede señalar cambios de énfasis entre paisaje y responsabilidad; la banda real requiere voz humana."
+    },
+    "3": {
+      "verdict": "El viaje a Bogotá adquiere significado personal mediante detalles concretos y una reflexión matizada sobre independencia.",
+      "fluency": "La ansiedad durante el trayecto y el balance posterior se conectan con progresión segura y flexible.",
+      "lexical": "Consequential, support network, fogged window y abstract idea expresan el cambio con precisión.",
+      "grammar": "Combina narración pasada, interrogación indirecta y concesión con control casi completo.",
+      "pronunciation": "La voz sintética puede modelar el cambio emocional, pero no permite calificar ritmo o sonidos del alumno."
+    },
+    "4": {
+      "verdict": "La cocina se desarrolla desde errores iniciales hasta técnica, hospitalidad y preservación cultural.",
+      "fluency": "Los ejemplos culinarios conducen de forma natural a la reflexión sin sonar como una lista de viñetas.",
+      "lexical": "Seasoning, acidity, richness, texture y regional recipes forman un repertorio específico y flexible.",
+      "grammar": "La respuesta alterna explicación, ejemplo y propósito mediante estructuras complejas bien controladas.",
+      "pronunciation": "El audio sirve para observar agrupación en ejemplos; la pronunciación evaluable debe provenir del candidato."
+    },
+    "5": {
+      "verdict": "La estancia en Buenos Aires combina rutina, choque lingüístico y una idea convincente de cómo se construye un hogar.",
+      "fluency": "La rutina diaria y la adaptación avanzan con un ritmo estable y transiciones discretas.",
+      "lexical": "Compact apartment, sharp change, mentally exhausted y repeated small actions añaden precisión sin exceso.",
+      "grammar": "Las cláusulas temporales y el contraste not simply/built through se manejan con alta precisión.",
+      "pronunciation": "El modelo puede ilustrar el énfasis del contraste final; no sustituye la evidencia oral del estudiante."
+    },
+    "6": {
+      "verdict": "La respuesta evalúa el smartphone con ejemplos cotidianos y una postura matizada sobre atención y autonomía.",
+      "fluency": "Los usos diarios se agrupan antes de introducir el coste atencional, lo que evita una lista mecánica.",
+      "lexical": "Navigation, fragmented attention, deliberate boundaries y indispensable expresan matices con naturalidad.",
+      "grammar": "La concesión y las condiciones hipotéticas amplían el rango con control consistente.",
+      "pronunciation": "Los contrastes de beneficio y coste pueden modelarse en síntesis; la banda real depende de la voz propia."
+    },
+    "7": {
+      "verdict": "El malentendido en la estación se narra con detalle y conduce a una conclusión específica sobre comprobar el sentido.",
+      "fluency": "La reparación comunicativa organiza la historia con progresión natural desde problema hasta aprendizaje.",
+      "lexical": "Timetable, platform, ambiguity, gestures y verify expresan con precisión la negociación de significado.",
+      "grammar": "La narración integra discurso referido y contraste con control prácticamente completo.",
+      "pronunciation": "La diferencia entre hora y plataforma requiere claridad de énfasis; el modelo no puntúa al candidato."
+    },
+    "8": {
+      "verdict": "La novela se aborda desde dificultad lectora, resonancia familiar e interpretación histórica sin memorizar una reseña.",
+      "fluency": "La respuesta admite confusión inicial y desarrolla después una lectura personal con conexiones fluidas.",
+      "lexical": "Narrative logic, intergenerational patterns, collective memory y ambiguity son precisos y pertinentes.",
+      "grammar": "Las relativas y estructuras de énfasis sostienen ideas abstractas con control casi total.",
+      "pronunciation": "El audio puede modelar nombres y agrupación de ideas; la pronunciación real exige escuchar al candidato."
+    },
+    "9": {
+      "verdict": "El perfil de la enfermera integra responsabilidades, pandemia y admiración sin caer en elogio genérico.",
+      "fluency": "Las escenas del hospital y la valoración personal se conectan con desarrollo equilibrado.",
+      "lexical": "Protective equipment, emergency care, emotional composure y clinical knowledge muestran precisión profesional.",
+      "grammar": "La respuesta usa relativas, concesión y causa con amplitud y control sostenido.",
+      "pronunciation": "La síntesis puede modelar énfasis empático; no demuestra la inteligibilidad o el acento del candidato."
+    },
+    "10": {
+      "verdict": "Cocora se presenta mediante una experiencia física concreta y una reflexión proporcionada sobre protección.",
+      "fluency": "El esfuerzo de la caminata prepara con naturalidad la revelación del paisaje y su impacto.",
+      "lexical": "Wax palms, mist, muddy trail y fragile landscape construyen una descripción precisa y variada.",
+      "grammar": "Participios, cláusulas temporales y contraste se combinan con control casi completo.",
+      "pronunciation": "El cambio de ritmo al aparecer el valle puede modelarse, pero la banda oral requiere producción humana."
+    },
+    "11": {
+      "verdict": "El parque se evalúa con beneficios sociales, límites y participación vecinal de manera equilibrada.",
+      "fluency": "La comparación antes/después y el matiz sobre ruido avanzan con conexiones naturales.",
+      "lexical": "Neglected plot, lighting, informal surveillance y shared ownership son específicos y flexibles.",
+      "grammar": "La respuesta maneja pasivas, relativas y concesiones con precisión sostenida.",
+      "pronunciation": "El audio puede mostrar el énfasis del contraste espacial; no acredita pronunciación individual."
+    },
+    "12": {
+      "verdict": "La urgencia médica usa la tecnología como apoyo concreto sin exagerar lo que puede resolver.",
+      "fluency": "Los pasos de la situación se narran con tensión controlada y una reflexión final bien integrada.",
+      "lexical": "Prescription, dosage, official hospital channel y informed decisions aportan exactitud contextual.",
+      "grammar": "La cautela y las relaciones de causa se expresan mediante estructuras variadas y precisas.",
+      "pronunciation": "La claridad en términos médicos debe evaluarse en la voz del candidato; la síntesis solo sirve de modelo."
+    },
+    "13": {
+      "verdict": "El trabajo intercultural transforma un silencio malinterpretado en una reflexión precisa sobre normas de comunicación.",
+      "fluency": "La respuesta integra ejemplo, explicación y cambio de conducta con progresión flexible.",
+      "lexical": "Tentative agreement, conversational overlap, reflection y collaboration describen matices culturales.",
+      "grammar": "El contraste de interpretaciones y las cláusulas temporales mantienen alta precisión.",
+      "pronunciation": "El énfasis sobre silencio y acuerdo puede modelarse; la banda real necesita la entrega del estudiante."
+    },
+    "14": {
+      "verdict": "La decisión laboral se explora como tensión real entre crecimiento, coste y responsabilidad familiar.",
+      "fluency": "La deliberación y el compromiso final se presentan con una progresión natural, no como lista de pros y contras.",
+      "lexical": "Professional growth, practical constraint, remote arrangement y responsibility son precisos.",
+      "grammar": "Condicionales, concesiones y retrospectiva se combinan con control casi completo.",
+      "pronunciation": "La síntesis puede modelar el tono de deliberación; no reemplaza una evaluación de la voz real."
+    },
+    "15": {
+      "verdict": "Ciudad de México se desarrolla a través de capas históricas y una revisión personal de lo que produce una megaciudad.",
+      "fluency": "La respuesta se mueve entre escenas y reflexión con enlaces discretos y ritmo estable.",
+      "lexical": "Historical layers, anonymity, overlapping identities y cultural flatness expresan matices con precisión.",
+      "grammar": "Las comparaciones y concesiones sostienen ideas abstractas con rango amplio y controlado.",
+      "pronunciation": "Los nombres y contrastes culturales pueden modelarse, pero la banda depende de la producción del candidato."
+    },
+    "16": {
+      "verdict": "Los buses eléctricos se analizan desde experiencia del pasajero hasta condiciones sistémicas de impacto.",
+      "fluency": "La respuesta equilibra beneficio y cautela sin perder la línea central sobre transporte urbano.",
+      "lexical": "Procurement, exhaust fumes, charging infrastructure y fleet-level improvements son específicos.",
+      "grammar": "Las condiciones y matices causales se expresan con estructuras complejas bien controladas.",
+      "pronunciation": "El audio puede marcar contraste entre mejora y límite; la pronunciación real necesita evidencia del alumno."
+    },
+    "17": {
+      "verdict": "El documental conecta imágenes, diseño de productos y responsabilidad institucional con cambio personal creíble.",
+      "fluency": "La progresión desde expectativa hasta postura política es fluida y evita una simple lista de acciones.",
+      "lexical": "Food chain, systemic, disposable, supply chains y prevent waste muestran flexibilidad temática.",
+      "grammar": "La respuesta combina concesión, condición y contraste de agentes con control casi completo.",
+      "pronunciation": "La voz sintética modela agrupación en argumentos; no permite asignar una banda oral al candidato."
+    },
+    "18": {
+      "verdict": "Las videollamadas se valoran por participación y vínculo, con límites concretos que evitan una postura absoluta.",
+      "fluency": "Familia, trabajo y acceso se conectan mediante una progresión flexible y bien dosificada.",
+      "lexical": "Physical presence, delicate conversations, dispersed family y practical expansion aportan precisión.",
+      "grammar": "La concesión y los ejemplos paralelos mantienen un rango amplio con control sostenido.",
+      "pronunciation": "El contraste entre complemento y reemplazo puede modelarse; la banda real exige voz humana."
+    },
+    "19": {
+      "verdict": "Cartagena se presenta como patrimonio vivo y también como evidencia de historias difíciles y desplazamiento.",
+      "fluency": "La observación física conduce a la reflexión histórica y social con conexiones naturales.",
+      "lexical": "Fortifications, forced migration, material structures y displacement forman un repertorio preciso.",
+      "grammar": "Las condiciones y oposiciones sostienen el argumento con control casi completo.",
+      "pronunciation": "La síntesis puede modelar énfasis respetuoso; la pronunciación evaluable pertenece al candidato."
+    },
+    "20": {
+      "verdict": "La salud mental se explica como problema de acceso y contexto social, no solo de resiliencia individual.",
+      "fluency": "Prevalencia, atención y respuesta pública se integran en una línea clara y flexible.",
+      "lexical": "Prevalence, continuity, community-based care y preventable sources of stress son precisos.",
+      "grammar": "La cautela, causa y propuesta se expresan mediante estructuras variadas con alta precisión.",
+      "pronunciation": "El tono sobrio puede modelarse con síntesis, pero la banda oral exige escuchar al estudiante."
+    }
+  },
   "items": [
     {
-      "id": "ielts-guided-speaking-band-5-5",
+      "id": "ielts-guided-set-01-speaking-band-5-5",
+      "setNumber": 1,
+      "sourceMockFile": "src/data/mocks/ielts-set-1.ts",
+      "sourceQuestionId": "sp2",
       "band": "5.5",
+      "cueCard": "Describe a time when you visited a friend or family member at their workplace.\n\nYou should say:\n  - who you visited and where they work\n  - why you visited them there\n  - what you did during your visit\n\nand explain how you felt about the experience.",
       "output": "public/audio/ielts/guided-speaking-band-5-5.wav",
       "publicUrl": "/audio/ielts/guided-speaking-band-5-5.wav",
-      "minimumDurationSeconds": 30,
-      "maximumDurationSeconds": 95,
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
       "text": "I want to talk about when I visited my cousin at his office. He works in a small travel company in Bogotá. I went there, um, last year because I was near the place and he told me to visit him. The office was not very big, but it was nice and there were maybe ten people working there. First, he showed me his desk and introduced me with his colleagues. Then we drank coffee in the kitchen and talked about his job. He works with customers and organises trips, so he uses the computer and phone a lot. I stayed for, I think, one hour. I felt happy because I never saw his workplace before and I understood his job more. It was interesting, but also a little noisy because everybody was speaking on phones."
     },
     {
-      "id": "ielts-guided-speaking-band-9",
+      "id": "ielts-guided-set-01-speaking-band-9-0",
+      "setNumber": 1,
+      "sourceMockFile": "src/data/mocks/ielts-set-1.ts",
+      "sourceQuestionId": "sp2",
       "band": "9.0",
+      "cueCard": "Describe a time when you visited a friend or family member at their workplace.\n\nYou should say:\n  - who you visited and where they work\n  - why you visited them there\n  - what you did during your visit\n\nand explain how you felt about the experience.",
       "output": "public/audio/ielts/guided-speaking-band-9.wav",
       "publicUrl": "/audio/ielts/guided-speaking-band-9.wav",
       "minimumDurationSeconds": 55,
-      "maximumDurationSeconds": 150,
-      "text": "A workplace visit that has stayed with me was the afternoon I spent at my aunt's architectural studio in Medellín. I had always associated her job with sketches and attractive buildings, but I had very little idea of how collaborative the work actually was. I went because I was considering architecture as a possible degree, and she suggested that observing the studio would be more useful than simply reading about the profession.\n\nWhen I arrived, she was preparing a proposal for a small public library. She showed me an early hand-drawn concept and then the detailed digital model her team had developed from it. What fascinated me most was a design meeting in which the architects challenged one another's assumptions about light, accessibility and cost. Later, I helped organise material samples for a client presentation. It was a minor task, but it made me feel briefly involved rather than merely being a visitor.\n\nI left feeling impressed and slightly overwhelmed. The visit confirmed that architecture can be highly creative, but it also revealed the patience and negotiation hidden behind the finished building. Although I eventually chose a different field, that afternoon changed the way I look at public spaces because I now notice the decisions that shape how people move through them."
+      "maximumDurationSeconds": 120,
+      "text": "Well, a workplace visit that has stayed with me was the afternoon I spent at my aunt's architectural studio in Medellín. I'd always associated her job with sketches and attractive buildings, but I had very little idea of how collaborative the work actually was. I went because I was considering architecture as a possible degree, and she suggested that observing the studio would be more useful than simply reading about the profession. When I arrived, she was preparing a proposal for a small public library. She showed me an early hand-drawn concept and then the detailed digital model her team had developed from it. What fascinated me most was a design meeting in which the architects challenged one another's assumptions about light, accessibility and cost. Later, I helped organise material samples for a client presentation. It was a minor task, but it made me feel briefly involved rather than merely being a visitor. I left feeling impressed and slightly overwhelmed. The visit confirmed that architecture can be highly creative, but it also revealed the patience and negotiation hidden behind the finished building. Although I eventually chose a different field, that afternoon changed the way I look at public spaces because I now notice the decisions that shape how people move through them."
+    },
+    {
+      "id": "ielts-guided-set-02-speaking-band-5-5",
+      "setNumber": 2,
+      "sourceMockFile": "src/data/mocks/ielts-set-2.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a place you have visited that you particularly enjoyed.\n\nYou should say:\n  - where the place is and how you got there\n  - what you did there\n  - who you went with\n\nand explain why you enjoyed the visit so much.",
+      "output": "public/audio/ielts/guided/set-02/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-02/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "Okay, I'd like to talk about Villa de Leyva. It's a small town in Colombia, and I went there, um, about two years ago with two friends from university. We took a bus from Bogotá. It was around three hours, maybe a little more, because the road was quite slow. When we arrived, we walked in the main square and, well, we mostly just looked at the old white houses and took photos. We also ate a local soup, but I can't remember the name now. The museum was interesting, although some rooms was a bit dark. I enjoyed the visit because the town felt calm, really calm, compared with Bogotá. Also, I had more time to speak with my friends. At night it got very cold, which we weren't prepared for, but during the day the weather was sunny and nice."
+    },
+    {
+      "id": "ielts-guided-set-02-speaking-band-9-0",
+      "setNumber": 2,
+      "sourceMockFile": "src/data/mocks/ielts-set-2.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a place you have visited that you particularly enjoyed.\n\nYou should say:\n  - where the place is and how you got there\n  - what you did there\n  - who you went with\n\nand explain why you enjoyed the visit so much.",
+      "output": "public/audio/ielts/guided/set-02/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-02/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "One place I keep thinking about is Tayrona National Park on Colombia's Caribbean coast. I travelled there with two close friends after we had finished a demanding university semester. We took an overnight bus to Santa Marta and then continued by local transport before hiking through the forest to reach the coast. The journey was hardly convenient, but that inconvenience made our arrival feel earned. We spent most of the day walking between beaches and observing the dramatic change from dense tropical vegetation to open sea. At one point, we climbed to a viewpoint where enormous rocks framed the coastline, and the water appeared almost impossibly clear. We also spoke with a local guide, who explained why some areas were periodically closed to allow the ecosystem and Indigenous communities to recover from tourism. What I enjoyed most was the combination of beauty and perspective. The park was visually extraordinary, yet it also reminded me that access to a place doesn't give visitors the right to consume it without limits. Sharing that realisation with friends made the visit more meaningful than an ordinary beach trip. I returned home rested, but also more conscious of how responsibly managed travel can protect the very experience people come to enjoy."
+    },
+    {
+      "id": "ielts-guided-set-03-speaking-band-5-5",
+      "setNumber": 3,
+      "sourceMockFile": "src/data/mocks/ielts-set-3.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe an important journey you have made.\n\nYou should say:\n  - where you went and why\n  - how you travelled\n  - what happened during the journey\n\nand explain why the journey was important to you.",
+      "output": "public/audio/ielts/guided/set-03/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-03/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "The journey I remember most was when I moved to Bogotá for university. I came from a smaller town, so, you know, Bogotá felt enormous to me. My mother travelled with me by bus because I had two big bags and I didn't know where the student residence was. The trip normally takes about six hours, but that day there was heavy rain and we arrived almost two hours late. At first I was excited, then I started thinking, maybe this was a bad decision. My mother helped me find the residence and we had dinner nearby. The next morning she went home, and that part was quite difficult. This journey was important because after it I had to do everything by myself, like cooking and using the buses. I made many mistakes in the beginning, but, well, I became more independent."
+    },
+    {
+      "id": "ielts-guided-set-03-speaking-band-9-0",
+      "setNumber": 3,
+      "sourceMockFile": "src/data/mocks/ielts-set-3.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe an important journey you have made.\n\nYou should say:\n  - where you went and why\n  - how you travelled\n  - what happened during the journey\n\nand explain why the journey was important to you.",
+      "output": "public/audio/ielts/guided/set-03/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-03/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "I suppose the most consequential journey I've made was my move from a small town in Santander to Bogotá for university. Although the physical distance wasn't enormous, the trip represented a decisive separation from the routines and support network that had shaped my life. My mother accompanied me on an intercity bus because I was carrying nearly everything I owned in two suitcases and a cardboard box. Heavy rain slowed the traffic through the mountains, so the journey lasted several hours longer than expected. During that delay, my excitement gradually gave way to anxiety. I remember looking at the unfamiliar suburbs through a fogged window and wondering whether I'd mistaken ambition for readiness. When we finally reached the residence, the manager had almost gone home, and we had to persuade her to wait while we found the correct entrance. The journey matters to me because it marked the point at which independence stopped being an abstract idea. Once my mother left, I had to navigate the city, manage a limited budget and build relationships from nothing. I struggled initially, but that discomfort expanded my confidence. Whenever I face a major transition now, I recall that bus ride and remember that uncertainty can be evidence of growth rather than proof that a decision is wrong."
+    },
+    {
+      "id": "ielts-guided-set-04-speaking-band-5-5",
+      "setNumber": 4,
+      "sourceMockFile": "src/data/mocks/ielts-set-4.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "You should say:\n• what the skill is\n• when and how you learned it\n• why it has been useful to you\n\nAnd explain whether you would like to develop this skill further.",
+      "output": "public/audio/ielts/guided/set-04/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-04/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "The skill is cooking, but I mean simple cooking, not anything very professional. I started learning when I moved away from my parents for university. Before that, my mother cooked most days, so I could make eggs and sandwiches and, well, that was basically all. I watched short videos and sometimes called my mother while the food was already in the pan. At first I burned the rice many times, and once I put too much salt in a soup, so nobody wanted it. Slowly I got better. Cooking is useful because restaurant food every day is too expensive, and it's not always healthy. Now I prepare lunch for two or three days, which save me time. I'd like to improve more, especially baking, because cakes never work for me. I'm still not creative, but I feel proud when my friends actually enjoy my food."
+    },
+    {
+      "id": "ielts-guided-set-04-speaking-band-9-0",
+      "setNumber": 4,
+      "sourceMockFile": "src/data/mocks/ielts-set-4.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "You should say:\n• what the skill is\n• when and how you learned it\n• why it has been useful to you\n\nAnd explain whether you would like to develop this skill further.",
+      "output": "public/audio/ielts/guided/set-04/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-04/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "For me, a practical skill that has transformed my daily life is the ability to cook confidently without relying on a recipe. I began learning when I left home for university. Until then, cooking had been something my family did around me rather than a responsibility I understood. My first attempts were predictably poor: rice stuck to the pan, vegetables were overcooked, and I treated seasoning as an emergency repair rather than part of the process. I improved through a mixture of observation and experimentation. My mother explained a few basic techniques by video call, while online demonstrations helped me understand why ingredients should be added in a particular order. Gradually, I stopped memorising individual dishes and began recognising broader patterns, such as how acidity can balance richness or how temperature affects texture. The skill has been useful in obvious financial and health terms, but its greatest value is social. Preparing a meal gives me a practical way to welcome people and create an atmosphere in which conversation unfolds naturally. I'd certainly like to develop it further, particularly by learning regional Colombian recipes that are disappearing from everyday kitchens. That would deepen my technique while preserving knowledge that is usually passed on informally."
+    },
+    {
+      "id": "ielts-guided-set-05-speaking-band-5-5",
+      "setNumber": 5,
+      "sourceMockFile": "src/data/mocks/ielts-set-5.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a time when you lived somewhere new or different from your usual home.\n\nYou should say:\n• where this place was\n• why you moved or stayed there\n• what your daily routine was like there\n• and explain how this experience affected you",
+      "output": "public/audio/ielts/guided/set-05/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-05/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "I lived in Buenos Aires for three months when I did a literature course there. I stayed in a small apartment with two Brazilian students. It was, um, very different from my home because I normally had my own room, and there I had almost no private space. In the morning I walked to class and usually bought coffee from one little shop. Then in the afternoon I studied in the library. At night, sometimes we cooked together, or we just walked around the neighbourhood. The first weeks was hard because the city is huge and people spoke so fast. I missed my family too. After some time, though, I could find places without checking my phone every minute, and I felt more comfortable. The experience made me more independent, I think, and I still message one of my flatmates sometimes."
+    },
+    {
+      "id": "ielts-guided-set-05-speaking-band-9-0",
+      "setNumber": 5,
+      "sourceMockFile": "src/data/mocks/ielts-set-5.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a time when you lived somewhere new or different from your usual home.\n\nYou should say:\n• where this place was\n• why you moved or stayed there\n• what your daily routine was like there\n• and explain how this experience affected you",
+      "output": "public/audio/ielts/guided/set-05/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-05/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "Actually, I lived in a compact apartment in Buenos Aires while attending a literature course. I'd grown up in a relatively quiet household, so sharing a city flat with two Brazilian students was a sharp change in both pace and privacy. I chose the arrangement because it was affordable and close enough for me to walk to the university. My routine quickly acquired a rhythm. I bought coffee from the same corner café, attended morning seminars, and spent afternoons reading in the library. Evenings were more unpredictable: sometimes my flatmates and I cooked together, while on other days we explored a neighbourhood or attended a free cultural event. The main challenge wasn't the language itself but the speed and confidence with which local people used it. For the first few weeks, ordinary exchanges left me mentally exhausted. Living there made me more adaptable. I learned to negotiate shared responsibilities, ask for help without embarrassment and tolerate the uncertainty of not fully understanding a place. More importantly, it showed me that feeling at home is not simply a response to familiarity. It can be built through repeated small actions, such as greeting a shopkeeper or preparing dinner with people who were strangers only weeks earlier."
+    },
+    {
+      "id": "ielts-guided-set-06-speaking-band-5-5",
+      "setNumber": 6,
+      "sourceMockFile": "src/data/mocks/ielts-set-6.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a piece of technology that has had a big impact on your life.\n\nYou should say:\n• what the technology is\n• when and how you started using it\n• how it has changed your daily routine\n• and explain whether you think its overall impact has been positive or negative",
+      "output": "public/audio/ielts/guided/set-06/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-06/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "For me, it's probably my smartphone. I got my first proper one when I started university, because I needed email and maps in a city I didn't know. Now, honestly, I use it too much. It wakes me up, tells me which bus to take, and I keep class notes and photos on it. I also call my family, so in that way it's really useful. Before, I had to go to a computer room just to check one message, but now everything is in my pocket. The negative part is, um, I often open my phone to check one thing and then watch videos for half an hour. This happen especially when I should study. So I think the impact is mostly positive, but not completely. I need to control it more, like putting it in another room when I want to concentrate."
+    },
+    {
+      "id": "ielts-guided-set-06-speaking-band-9-0",
+      "setNumber": 6,
+      "sourceMockFile": "src/data/mocks/ielts-set-6.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a piece of technology that has had a big impact on your life.\n\nYou should say:\n• what the technology is\n• when and how you started using it\n• how it has changed your daily routine\n• and explain whether you think its overall impact has been positive or negative",
+      "output": "public/audio/ielts/guided/set-06/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-06/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "If I had to choose, the technology with the greatest influence on my daily life is the smartphone, although the significance lies less in the device itself than in the services it brings together. I began using one seriously when I moved to a new city for university. Initially, it was mainly a practical tool for maps, email and communication with my family, but it gradually became the central control panel for my schedule. Today, it manages everything from transport and banking to language practice and collaborative work. That integration saves considerable time: a delayed bus, a changed meeting and an urgent payment can all be handled within minutes. It has also allowed me to maintain relationships across distance in a way that would have been difficult even a generation ago. Nevertheless, convenience has a cost. Because entertainment, work and social contact occupy the same screen, the boundary between purposeful use and distraction is remarkably thin. I've sometimes opened the phone to answer one message and emerged twenty minutes later having watched content I never intended to see. On balance, its impact has been positive, but only after I imposed limits such as disabling non-essential notifications and keeping the device away from my desk during focused work. For me, the technology is valuable precisely when it remains a tool rather than becoming the default setting of my attention."
+    },
+    {
+      "id": "ielts-guided-set-07-speaking-band-5-5",
+      "setNumber": 7,
+      "sourceMockFile": "src/data/mocks/ielts-set-7.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe an experience you have had communicating with someone who speaks a different language from you.\n\nYou should say:\n• who the person was and where you met\n• what language(s) you used to communicate\n• what challenges or misunderstandings arose\n• and explain what you learned from the experience",
+      "output": "public/audio/ielts/guided/set-07/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-07/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "I remember helping a French tourist at a bus station in Cartagena. She wanted the bus to Santa Marta, but she didn't speak much Spanish and my French is, well, almost nothing. We tried English, but both of us stopped a lot because we didn't know some words. I showed the timetable on my phone and pointed to the platform. Then there was a confusion: I said the bus left at seven, and she thought I mean platform seven. We repeated it a few times, which was a little embarrassing. Finally, an employee explained it and she found the correct bus. I learned that you don't need perfect grammar to help someone. You need patience and maybe pictures or gestures. Also, now I check that the person really understood important details, because saying the same sentence again is not always enough."
+    },
+    {
+      "id": "ielts-guided-set-07-speaking-band-9-0",
+      "setNumber": 7,
+      "sourceMockFile": "src/data/mocks/ielts-set-7.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe an experience you have had communicating with someone who speaks a different language from you.\n\nYou should say:\n• who the person was and where you met\n• what language(s) you used to communicate\n• what challenges or misunderstandings arose\n• and explain what you learned from the experience",
+      "output": "public/audio/ielts/guided/set-07/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-07/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "One experience that comes to mind is a cross-language encounter that occurred at a bus terminal in Cartagena, where I met a French traveller trying to reach Santa Marta. She had only elementary Spanish, while my French was limited to a handful of classroom phrases. We settled on English as our common language, although neither of us spoke it effortlessly. The practical challenge was explaining the departure information in a noisy environment. I told her the bus left at seven, and she interpreted the number as the platform rather than the time. We only discovered the misunderstanding when she began walking in the wrong direction. Instead of continuing with increasingly complicated sentences, I opened the timetable on my phone, pointed to each field and asked her to repeat the information back to me. A station employee then confirmed the platform. The exchange taught me that successful communication depends as much on checking meaning as on producing correct language. I'd assumed that a nod signalled understanding, when it may simply have expressed politeness or uncertainty. Since then, I've become more willing to slow down, rephrase and use visual information when the consequences of confusion matter. I also learned that making a minor linguistic mistake is far less damaging than pretending that communication has succeeded when it has not."
+    },
+    {
+      "id": "ielts-guided-set-08-speaking-band-5-5",
+      "setNumber": 8,
+      "sourceMockFile": "src/data/mocks/ielts-set-8.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a piece of art, music, or literature that has had a strong impact on you.\n\nYou should say:\n• what it is and who created it\n• when and how you first encountered it\n• why it made such an impression on you\n• and explain what you think it communicates or represents",
+      "output": "public/audio/ielts/guided/set-08/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-08/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "I'd like to talk about One Hundred Years of Solitude by Gabriel García Márquez. I first read it at secondary school because our teacher, um, made the whole class read it. At the beginning I really didn't enjoy it. Many people had similar names, so I kept going back to see who was who. Also, strange things happen and nobody in the book seems surprised. After a few chapters, though, I started to like that world. It reminded me of stories from my grandparents, because sometimes their real memories and imagination are mixed. I think the book is about a family repeating the same mistakes, but maybe it's also about Colombia and how people forget the past. I'm not sure I understood everything, especially the ending. Still, it made me interested in other Colombian writers, which hadn't happened before that class."
+    },
+    {
+      "id": "ielts-guided-set-08-speaking-band-9-0",
+      "setNumber": 8,
+      "sourceMockFile": "src/data/mocks/ielts-set-8.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a piece of art, music, or literature that has had a strong impact on you.\n\nYou should say:\n• what it is and who created it\n• when and how you first encountered it\n• why it made such an impression on you\n• and explain what you think it communicates or represents",
+      "output": "public/audio/ielts/guided/set-08/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-08/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "Well, the work of literature that has affected me most deeply is Gabriel García Márquez's One Hundred Years of Solitude. I first encountered it at school, where it was assigned almost as a cultural obligation. Initially, the repeated names and circular chronology frustrated me, and I approached the magical episodes as puzzles that required explanation. That response changed when I stopped demanding that the novel behave like a conventional history. Its extraordinary events are narrated with such calm precision that they begin to resemble the stories families tell about themselves, where memory, exaggeration and fact become inseparable. The fictional town of Macondo felt unfamiliar, yet its political violence, private loyalties and selective forgetting echoed patterns I recognised in Colombian life. The novel made an impression because it communicates history emotionally rather than merely recording it. A statistic can tell us that conflict occurred, but a family saga can show how its consequences pass quietly from one generation to the next. I also think the book represents the danger of isolation: characters repeatedly fail to learn from one another because they retreat into obsession or solitude. Reading it changed my understanding of what literature can do. It doesn't simply describe a society from the outside; it can reveal the myths through which that society understands, conceals and repeats its own experience."
+    },
+    {
+      "id": "ielts-guided-set-09-speaking-band-5-5",
+      "setNumber": 9,
+      "sourceMockFile": "src/data/mocks/ielts-set-9.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a person you know who works in science, medicine, or research.\n\nYou should say:\n• who this person is and what they do\n• how you know them\n• what their work involves\n• and explain what you admire about their work or dedication",
+      "output": "public/audio/ielts/guided/set-09/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-09/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "The person is my friend Laura, who's a nurse in a public hospital. I met her at university because we lived in the same residence, although she was studying nursing and I was doing a different course. Her job is checking patients, giving medicine and, um, speaking with families when they're worried. She often works at night and her shifts can be very long. During the pandemic it was much harder. The hospital was full and she had to wear protective clothes for hours, which she said was very uncomfortable. I admire her because she stays quite calm when other people is afraid. She also studies after work because she wants to work in emergency care. I honestly couldn't do that job every day. For me, her work shows that medical knowledge is important, of course, but patience and being kind are important too."
+    },
+    {
+      "id": "ielts-guided-set-09-speaking-band-9-0",
+      "setNumber": 9,
+      "sourceMockFile": "src/data/mocks/ielts-set-9.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a person you know who works in science, medicine, or research.\n\nYou should say:\n• who this person is and what they do\n• how you know them\n• what their work involves\n• and explain what you admire about their work or dedication",
+      "output": "public/audio/ielts/guided/set-09/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-09/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "The person who immediately comes to mind is my friend Laura, an emergency nurse at a large public hospital. We met while living in the same university residence, and I watched her progress from a nervous first-year student to a calm practitioner trusted with people at their most vulnerable. Her work combines clinical observation, technical procedures and constant communication. She may need to monitor a patient's condition, administer treatment and explain an uncertain situation to relatives within the same few minutes. During the pandemic, she worked extended shifts in protective equipment while the hospital faced shortages and an overwhelming volume of patients. What struck me wasn't a dramatic claim that she felt no fear, but her ability to acknowledge that fear and still perform each task carefully. I admire the discipline behind that steadiness. After exhausting shifts, she continues studying because emergency protocols and treatments evolve, and she believes experience is not an excuse to stop learning. She is also unusually attentive to the language she uses with families, avoiding technical vocabulary when a simple explanation would be kinder and clearer. Her example has changed my understanding of expertise. It's not merely possessing specialised knowledge; it is applying that knowledge reliably, under pressure, while remembering that the person receiving care is more than a medical problem."
+    },
+    {
+      "id": "ielts-guided-set-10-speaking-band-5-5",
+      "setNumber": 10,
+      "sourceMockFile": "src/data/mocks/ielts-set-10.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a place in nature that you have visited and found particularly impressive or memorable.\n\nYou should say:\n• where the place is and how you got there\n• what the natural environment was like\n• what you did or saw there\n• and explain why this place had such an impact on you",
+      "output": "public/audio/ielts/guided/set-10/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-10/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A place in nature I remember very clearly is the Cocora Valley in Colombia. I went with my sister on a holiday. First we took a bus to Salento and then one of those small jeeps to the valley. The area was extremely green, and there were clouds around the mountains and these very, very tall palm trees. We walked for several hours and crossed some little bridges. Then it started raining, so the path became muddy and I nearly fell two times. We were tired and, to be honest, complained a lot. But when the clouds moved away, we could suddenly see the whole valley. It was amazing and much bigger than I expected. The place impressed me mainly because of the palms; I'd never seen trees like that. It also made me think that too many hotels or visitors could damage a special place quite quickly."
+    },
+    {
+      "id": "ielts-guided-set-10-speaking-band-9-0",
+      "setNumber": 10,
+      "sourceMockFile": "src/data/mocks/ielts-set-10.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a place in nature that you have visited and found particularly impressive or memorable.\n\nYou should say:\n• where the place is and how you got there\n• what the natural environment was like\n• what you did or saw there\n• and explain why this place had such an impact on you",
+      "output": "public/audio/ielts/guided/set-10/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-10/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A place I still picture very clearly is Colombia's Cocora Valley. My sister and I reached it by travelling to Salento and then taking one of the open-sided jeeps that climb towards the trail. Even before we began walking, the scenery felt almost theatrical: steep green slopes disappeared into low cloud, while wax palms rose above the vegetation like narrow columns. We followed a circuit through pasture and cloud forest, crossing small suspension bridges as the weather shifted repeatedly between fine rain and sudden sunlight. The mud made the climb slow, but that pace encouraged us to observe details we might otherwise have missed, including hummingbirds near a wooden shelter and water gathering on enormous leaves. At the highest open section, the cloud briefly lifted and revealed palms scattered across the entire valley. The place affected me because it overturned my idea of what a palm landscape should look like. I'd associated palms with beaches and heat, not cool mountain air. It also made environmental protection feel tangible rather than abstract. The valley's popularity supports local livelihoods, yet the paths, traffic and construction required by tourism can damage the ecosystem people come to admire. I left with a sense of wonder, but also with the uncomfortable recognition that appreciating a landscape creates responsibilities towards it."
+    },
+    {
+      "id": "ielts-guided-set-11-speaking-band-5-5",
+      "setNumber": 11,
+      "sourceMockFile": "src/data/mocks/ielts-set-11.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a change to a city or neighbourhood that improved people's daily lives.\n\nYou should say:\n• where the place is\n• what was changed\n• who benefited from the change\n• and explain why you think the change was successful",
+      "output": "public/audio/ielts/guided/set-11/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-11/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "In my neighbourhood there was an empty area, and a few years ago the city changed it into a small park. Before, there was rubbish everywhere and people didn't like to walk there after dark. Now it has trees, lights, benches and a playground. There's also a path where people walk or ride bicycles, although it's, um, quite short. Families use the park a lot, and older people do exercise there in the morning. I think it improved daily life because the area feels safer and people have somewhere free to go. Many flats around here are small, so that outdoor space is important. It isn't perfect. At weekends some groups play loud music, and sometimes the bins gets full. But residents complain when something is broken, and the park is busy every day, so I think most people value the change."
+    },
+    {
+      "id": "ielts-guided-set-11-speaking-band-9-0",
+      "setNumber": 11,
+      "sourceMockFile": "src/data/mocks/ielts-set-11.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a change to a city or neighbourhood that improved people's daily lives.\n\nYou should say:\n• where the place is\n• what was changed\n• who benefited from the change\n• and explain why you think the change was successful",
+      "output": "public/audio/ielts/guided/set-11/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-11/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "The change I'd choose is the conversion of a neglected vacant lot into a compact public park. The site had previously collected rubbish and was poorly lit, so residents treated it as a gap to pass quickly rather than part of the community. After several local consultations, the council installed trees, seating, a children's play area, lighting and a path wide enough for walkers and cyclists. The benefits extend beyond any single group. Parents have a safe outdoor space for children, older residents use the path for morning exercise, and workers often sit there during lunch. Small businesses nearby also receive more customers because people now have a reason to remain in the area. Crucially, the design retained clear sightlines and several entrances, which makes the park feel connected to the streets rather than enclosed and unsafe. I consider the project successful because it changed behaviour as well as appearance. Residents who previously had little contact now recognise one another through repeated everyday encounters. The park is not flawless: weekend noise occasionally causes tension, and maintenance must be continuous. Nevertheless, its constant use is strong evidence that the planners responded to an actual need. By turning unusable land into shared space, the project improved safety, recreation and social connection without requiring a spectacular or expensive landmark."
+    },
+    {
+      "id": "ielts-guided-set-12-speaking-band-5-5",
+      "setNumber": 12,
+      "sourceMockFile": "src/data/mocks/ielts-set-12.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a time when technology helped you in an important way.\n\nYou should say:\n• what the situation was\n• what technology you used\n• how it helped you\n• and explain how you felt about this experience",
+      "output": "public/audio/ielts/guided/set-12/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-12/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "Technology really helped me once when my father got sick and I was in another city. My mother phoned me, but she didn't understand all the doctor's instructions. We changed to a video call, and she showed me the prescription and the medicine boxes. At first the image was blurry, so, um, I asked her to move near a window. Then I found the hospital number online and called the correct department. I also bought a bus ticket on my phone and came home that evening. Of course, the phone didn't solve my father's problem, but it helped us share information quickly when everybody was nervous. I felt worried, but also relieved that I could do something from far away. I learned one thing too: you shouldn't trust any medical page you find. We checked everything with the hospital before he took the medicine."
+    },
+    {
+      "id": "ielts-guided-set-12-speaking-band-9-0",
+      "setNumber": 12,
+      "sourceMockFile": "src/data/mocks/ielts-set-12.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a time when technology helped you in an important way.\n\nYou should say:\n• what the situation was\n• what technology you used\n• how it helped you\n• and explain how you felt about this experience",
+      "output": "public/audio/ielts/guided/set-12/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-12/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "One time technology genuinely mattered was when my father became ill while I was attending a conference in another city. My mother phoned me after a medical appointment because she was uncertain about the written instructions and too anxious to explain them clearly. Through a video call, she showed me the prescription, the packaging and the discharge document, allowing us to identify exactly which point required clarification. Rather than searching randomly for medical advice, I used the hospital's official patient portal to locate the relevant department and arrange a follow-up call. I also purchased a bus ticket online and shared my live journey details so my family knew when I'd arrive. None of these tools replaced the doctor or treated my father, but together they reduced confusion at a moment when our ability to think calmly was limited. I felt both relieved and cautious. The experience demonstrated how digital systems can make practical support possible across distance, yet it also exposed the danger of mistaking access to information for expertise. An unreliable website could easily have increased our anxiety or encouraged a poor decision. What mattered was using technology to reach trustworthy human assistance more efficiently. Since then, I've viewed digital tools less as independent solutions and more as bridges that are useful when they connect people to appropriate knowledge and care."
+    },
+    {
+      "id": "ielts-guided-set-13-speaking-band-5-5",
+      "setNumber": 13,
+      "sourceMockFile": "src/data/mocks/ielts-set-13.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe an experience of meeting or working with someone from a different cultural background.\n\nYou should say:\n• who the person was\n• where and when you met\n• what you learned about each other's cultures\n• and explain how the experience affected your perspective",
+      "output": "public/audio/ielts/guided/set-13/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-13/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "I worked with a Japanese student called Emi in an online university project. We had to make a presentation about public transport. In the first meetings, communication was a bit difficult. I usually say my opinion quickly, but she sometimes stayed silent for a long time. I thought she agreed with me, and, well, later I discovered she didn't. She just wanted more time to think about the details. We talked about this and also about food, university and meetings in our countries. She was surprised that people in my class interrupt each other so much. I learned that silence doesn't always mean a person has no idea; it can be a way to show respect. The experience changed me because now, in group work, I try to ask people how they prefer to communicate. I still make assumptions sometimes, but I'm more careful than before."
+    },
+    {
+      "id": "ielts-guided-set-13-speaking-band-9-0",
+      "setNumber": 13,
+      "sourceMockFile": "src/data/mocks/ielts-set-13.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe an experience of meeting or working with someone from a different cultural background.\n\nYou should say:\n• who the person was\n• where and when you met\n• what you learned about each other's cultures\n• and explain how the experience affected your perspective",
+      "output": "public/audio/ielts/guided/set-13/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-13/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "An experience I learned a lot from was an international university project in which I worked closely with Emi, a student based in Japan, to prepare a presentation on public transport. Because the collaboration took place online and in English, I initially assumed that any difficulty would be linguistic. In fact, the more significant differences concerned timing, disagreement and what each of us considered respectful participation. I tended to respond immediately and test half-formed ideas through discussion. Emi preferred to reflect before commenting and often expressed disagreement indirectly. At first, I interpreted her pauses as uncertainty and her polite responses as agreement. She, meanwhile, found my habit of interrupting enthusiastic but difficult to follow. Once we discussed the problem openly, we changed our process: agendas were shared in advance, written comments came before meetings, and each person had uninterrupted time to respond. Beyond completing the presentation, we exchanged stories about education, family meals and workplace expectations. The experience affected me because it revealed how easily people treat their own communication habits as neutral. Speaking a common language doesn't remove cultural assumptions; it can actually hide them. I now approach international collaboration with more curiosity and less confidence in first impressions. Rather than asking whether someone communicates well, I try to ask what conditions allow both of us to communicate clearly and participate on equal terms."
+    },
+    {
+      "id": "ielts-guided-set-14-speaking-band-5-5",
+      "setNumber": 14,
+      "sourceMockFile": "src/data/mocks/ielts-set-14.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a time when you had to make a difficult decision.\n\nYou should say:\n• what the decision was about\n• what options you were considering\n• how you made your final choice\n• and explain how you feel about that decision now",
+      "output": "public/audio/ielts/guided/set-14/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-14/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A difficult decision for me was accepting a job in another city. The salary was better and the work looked interesting, but my parents live near me and my father had some health problems then. So I worried about leaving them, and also about paying rent in the new city. I made a list of good and bad points, which helped a little, but, um, I changed my mind several times. Finally I asked the company if I could work from home some days. They agreed to two days, so I accepted. The first months were lonely and I felt guilty when I couldn't visit my family. Later I found a routine and travelled home quite often. I think it was the right choice because I learned more at work and still supported my parents. But it wasn't a perfect answer; it was more like a compromise that worked okay."
+    },
+    {
+      "id": "ielts-guided-set-14-speaking-band-9-0",
+      "setNumber": 14,
+      "sourceMockFile": "src/data/mocks/ielts-set-14.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a time when you had to make a difficult decision.\n\nYou should say:\n• what the decision was about\n• what options you were considering\n• how you made your final choice\n• and explain how you feel about that decision now",
+      "output": "public/audio/ielts/guided/set-14/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-14/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "Probably the hardest decision I've made was whether to accept a promising job in another city or remain close to my family while my father was experiencing health problems. Professionally, the position offered better training, greater responsibility and a substantial salary increase. Personally, moving would mean higher living costs and the possibility of being absent when my family needed practical support. I initially treated the choice as a simple contest between ambition and loyalty, which made either option feel selfish. To move beyond that framing, I listed the actual responsibilities involved, discussed them openly with my parents and asked the employer whether the arrangement had any flexibility. The company agreed that I could work remotely two days a week after the initial training period. I also calculated that the salary increase would cover frequent travel and allow me to contribute to medical expenses. I accepted the position. The first months were emotionally difficult, and the compromise didn't eliminate every conflict, but it made the competing obligations manageable. Looking back, I feel comfortable with the decision because it was based on evidence and honest conversation rather than fear. More importantly, it taught me that difficult choices are rarely solved by identifying a perfectly correct option. Often, the better approach is to reshape the available options until the values that seem to conflict can coexist reasonably."
+    },
+    {
+      "id": "ielts-guided-set-15-speaking-band-5-5",
+      "setNumber": 15,
+      "sourceMockFile": "src/data/mocks/ielts-set-15.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a city or place you have visited that made a strong impression on you.\n\nYou should say:\n• where this place was and when you visited\n• what you did there\n• what was special or striking about it\n• and explain why it made such a strong impression on you",
+      "output": "public/audio/ielts/guided/set-15/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-15/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A city that made a strong impression on me was Mexico City. I went there with my brother three years ago and we stayed, I think, seven days. We used the metro a lot because the city is huge. Sometimes we got off at the wrong station, but usually it was easy and cheap. We visited museums, markets and the historic centre. The thing I remember most is the number of people and buildings everywhere. It was noisy and tiring, but every neighbourhood felt a little different. I especially liked the anthropology museum, although it's so big that after three hours I couldn't concentrate anymore. The city felt modern and old at the same time, if that makes sense. After the trip I wanted to learn more about Mexican history. I also want to return because, um, we missed many places on our list."
+    },
+    {
+      "id": "ielts-guided-set-15-speaking-band-9-0",
+      "setNumber": 15,
+      "sourceMockFile": "src/data/mocks/ielts-set-15.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a city or place you have visited that made a strong impression on you.\n\nYou should say:\n• where this place was and when you visited\n• what you did there\n• what was special or striking about it\n• and explain why it made such a strong impression on you",
+      "output": "public/audio/ielts/guided/set-15/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-15/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "Well, Mexico City made a particularly strong impression on me when I visited it with my brother three years ago. We spent a week moving mostly by metro, which gave us a sense of the city's immense scale as well as the distinct character of its neighbourhoods. We explored the historic centre, visited markets and devoted almost an entire day to the National Museum of Anthropology. What struck me was the way different historical layers coexist without forming a neat sequence. Pre-Hispanic objects are displayed in a modern museum, colonial buildings stand beside intense commercial streets, and contemporary art appears in neighbourhoods shaped by much older traditions. The city felt crowded and occasionally exhausting, yet never culturally flat. Even an ordinary meal in a market seemed connected to regional ingredients and family histories. The visit changed my assumptions about large cities. I'd expected scale to produce anonymity and uniformity, but Mexico City seemed to contain many overlapping local identities. It also made me aware of how little Latin American history I'd learned beyond my own country. That combination of familiarity and discovery was powerful: I could recognise certain social rhythms and foods while constantly encountering perspectives I'd not considered. I left with a long list of places I'd missed, which may be the clearest sign that a city has captured my imagination."
+    },
+    {
+      "id": "ielts-guided-set-16-speaking-band-5-5",
+      "setNumber": 16,
+      "sourceMockFile": "src/data/mocks/ielts-set-16.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe an environmental or energy-related change in your country that you consider positive.\n\nYou should say:\n• what the change is\n• when and how it happened\n• how it has affected people's lives\n• and explain why you think it could help the environment in the long term",
+      "output": "public/audio/ielts/guided/set-16/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-16/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "One positive change is the electric buses that are appearing in cities like Bogotá. I first noticed them a few years ago on one route near my work. At first I only thought, oh, this bus is much quieter. Then I realised there was also no black smoke when it left the stop. That's better for passengers and for people who work near busy roads. The city bought many buses as part of a cleaner transport plan, I think. There are problems, of course. Charging stations cost a lot, and electric doesn't always mean clean if the power comes from dirty energy. Still, buses drive all day and carry many people, so changing one bus can have more effect than changing one private car. In the long term, this could reduce pollution and maybe persuade other cities to do the same, although it needs better planning."
+    },
+    {
+      "id": "ielts-guided-set-16-speaking-band-9-0",
+      "setNumber": 16,
+      "sourceMockFile": "src/data/mocks/ielts-set-16.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe an environmental or energy-related change in your country that you consider positive.\n\nYou should say:\n• what the change is\n• when and how it happened\n• how it has affected people's lives\n• and explain why you think it could help the environment in the long term",
+      "output": "public/audio/ielts/guided/set-16/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-16/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A change I feel quite positive about is the gradual introduction of electric buses into major urban transport systems, particularly in Bogotá. I first noticed the change when new vehicles appeared on routes that had previously been served by ageing diesel buses. The transition resulted from public procurement programmes designed to reduce local air pollution while modernising the fleet. For passengers, the most immediate difference is sensory: electric buses are quieter and produce no exhaust fumes at street level. That matters in dense neighbourhoods where residents, vendors and commuters spend hours beside heavily used roads. Drivers may also benefit from reduced vibration and noise during long shifts. The change has encouraged investment in charging infrastructure and created practical experience that other cities can study. Electric buses are not an environmental cure by themselves. Their wider impact depends on how the electricity is generated, how batteries are manufactured and whether the transport network is reliable enough to attract people away from private cars. Nevertheless, I consider the transition important because buses operate for long hours and carry large numbers of passengers, so fleet-level improvements can reduce emissions at meaningful scale. In the long term, combining electrification with renewable power and better route planning could make urban mobility both cleaner and more accessible, rather than treating environmental protection as a luxury."
+    },
+    {
+      "id": "ielts-guided-set-17-speaking-band-5-5",
+      "setNumber": 17,
+      "sourceMockFile": "src/data/mocks/ielts-set-17.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a film, documentary, or television programme about an environmental issue that had a strong impact on you.\n\nYou should say:\n• what the programme was and which issue it explored\n• when and where you watched it\n• why it had such a strong impact on you\n• and explain whether it changed your behaviour or opinions",
+      "output": "public/audio/ielts/guided/set-17/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-17/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "I watched a documentary about plastic in the oceans during the pandemic. A friend recommended it, and I watched it at home one evening. I don't remember the exact title, actually, but it showed beaches covered in plastic and animals that had eaten small pieces. One part explained how rubbish from a city can go into a river and finally reach the sea. That surprised me because I used to think ocean plastic mostly came from ships or tourists on beaches. Some images were difficult to watch and, um, stayed in my mind. After that, I started carrying a reusable bottle and saying no to bags when I don't need one. I know my actions are small, because companies produce much more waste. Still, the film changed my opinion: personal habits matter, but governments and businesses also need to change the system."
+    },
+    {
+      "id": "ielts-guided-set-17-speaking-band-9-0",
+      "setNumber": 17,
+      "sourceMockFile": "src/data/mocks/ielts-set-17.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a film, documentary, or television programme about an environmental issue that had a strong impact on you.\n\nYou should say:\n• what the programme was and which issue it explored\n• when and where you watched it\n• why it had such a strong impact on you\n• and explain whether it changed your behaviour or opinions",
+      "output": "public/audio/ielts/guided/set-17/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-17/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "One documentary I still think about is the movement of plastic waste from cities into the ocean. I watched it at home during the pandemic, expecting a familiar warning about litter. Instead, it traced ordinary packaging through drains and rivers, showing how a brief moment of convenience could create pollution that persisted for decades. The programme had a strong impact because it connected distant images of injured wildlife to routine decisions in places like my own neighbourhood. One sequence followed fragments of plastic through the food chain, making the issue feel systemic rather than simply the result of careless individuals dropping bottles on beaches. It also examined the limited value of recycling when products are designed from the beginning to be disposable or difficult to process. Afterwards, I began carrying reusable containers and paying more attention to unnecessary packaging. Those habits have lasted, but the documentary also made me sceptical of messages that place the entire burden on consumers. Individual choices matter, especially when they influence social expectations, yet they can't redesign supply chains or waste systems. My opinion shifted from seeing ocean plastic mainly as a cleanliness problem to understanding it as a policy and production problem. The film therefore changed both my behaviour and the questions I ask about who has the power to prevent waste."
+    },
+    {
+      "id": "ielts-guided-set-18-speaking-band-5-5",
+      "setNumber": 18,
+      "sourceMockFile": "src/data/mocks/ielts-set-18.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe an invention or piece of technology that has changed your life significantly.\n\nYou should say:\n• what the invention or technology is\n• how you use it in your daily life\n• how life would be different without it\n• and explain why you consider it so important",
+      "output": "public/audio/ielts/guided/set-18/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-18/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "The technology I'd choose is video calling. I use it almost every day, sometimes for work and sometimes to speak with family in other cities. It became really important during the pandemic because we couldn't visit each other. A phone call was possible, of course, but on video I could see people's faces and show them things. My grandmother likes seeing everyone together, although she usually needs help finding the right button. Without video calls, my work would also be harder because I often share my screen to explain a document. The bad part is the internet can freeze, and too many online meetings makes me tired. So it isn't the same as being with someone in person. But, um, I think it's important because it makes distance feel smaller and helps people continue relationships when travelling is too expensive or impossible."
+    },
+    {
+      "id": "ielts-guided-set-18-speaking-band-9-0",
+      "setNumber": 18,
+      "sourceMockFile": "src/data/mocks/ielts-set-18.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe an invention or piece of technology that has changed your life significantly.\n\nYou should say:\n• what the invention or technology is\n• how you use it in your daily life\n• how life would be different without it\n• and explain why you consider it so important",
+      "output": "public/audio/ielts/guided/set-18/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-18/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "If I had to pick one, I'd say video calling. Although it may appear less revolutionary than artificial intelligence or medical innovation, it has quietly changed how I sustain relationships, learn and work. I use it for regular conversations with relatives in other cities, collaborative meetings and occasional online classes. Without it, distance would impose much sharper boundaries. A conventional phone call carries words and tone, but video allows participants to notice expressions, show an object or share a screen when an explanation becomes difficult. During the pandemic, this distinction became especially important. My family could gather virtually around my grandmother, and professional projects continued even when travel was impossible. I value the technology not because it perfectly reproduces physical presence, but because it supports forms of contact that might otherwise disappear. It also has limitations: unstable connections interrupt delicate conversations, constant online meetings can be exhausting, and easy access sometimes encourages organisations to schedule interactions that are unnecessary. Nevertheless, video calling has made location less decisive in determining who can participate. A specialist can advise someone remotely, a student can access a course outside their town, and a dispersed family can preserve shared routines. For me, its importance lies in that practical expansion of connection, provided we remember that convenience should complement rather than replace meaningful face-to-face relationships."
+    },
+    {
+      "id": "ielts-guided-set-19-speaking-band-5-5",
+      "setNumber": 19,
+      "sourceMockFile": "src/data/mocks/ielts-set-19.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a historical place or monument that you have visited and found interesting.\n\nYou should say:\n• what the place or monument is and where it is located\n• when you visited it\n• what you found most interesting or impressive about it\n• and explain why you think it is important to preserve places like this",
+      "output": "public/audio/ielts/guided/set-19/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-19/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A historical place I found interesting is the walled city in Cartagena. I visited it with my family when I was, um, maybe sixteen. We walked on part of the wall, went into some churches and listened to a guide. He explained how people defended the city, but I don't remember all the dates he mentioned. What impressed me was how thick the stone walls were, and also the colourful houses inside. At night there was music and lots of people, so it didn't feel like a quiet museum. I think places like this should be preserved because seeing a real wall helps history feel more real. Tourists also bring jobs, which is good. But there is a problem if local people cannot afford to live there anymore. So preservation should protect the buildings, yes, but it should also include the community."
+    },
+    {
+      "id": "ielts-guided-set-19-speaking-band-9-0",
+      "setNumber": 19,
+      "sourceMockFile": "src/data/mocks/ielts-set-19.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a historical place or monument that you have visited and found interesting.\n\nYou should say:\n• what the place or monument is and where it is located\n• when you visited it\n• what you found most interesting or impressive about it\n• and explain why you think it is important to preserve places like this",
+      "output": "public/audio/ielts/guided/set-19/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-19/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A place that stayed with me is Cartagena's walled city on Colombia's Caribbean coast. I first visited it as a teenager with my family, when we joined a walking tour through the fortifications, plazas and narrow streets of the old centre. The guide explained how the walls responded to repeated attacks and how the port connected colonial trade, forced migration and imperial power. The most impressive feature wasn't a single monument but the physical continuity of the area. Massive stone defences remain integrated into a living city filled with homes, businesses and music. That vitality prevented the past from feeling sealed behind glass. At the same time, learning about the wealth that passed through the port raised uncomfortable questions about whose labour and suffering made that architecture possible. Preserving such places is important because physical environments make historical complexity harder to ignore. A wall or public square can prompt questions that a brief textbook paragraph may not. Preservation also supports cultural identity and employment, but it must not reduce the city to a decorative product for visitors. If rising prices displace residents or difficult histories are replaced by romantic stories, the buildings survive while much of their meaning is lost. Genuine preservation should therefore protect material structures, historical evidence and the community that continues to give the place life."
+    },
+    {
+      "id": "ielts-guided-set-20-speaking-band-5-5",
+      "setNumber": 20,
+      "sourceMockFile": "src/data/mocks/ielts-set-20.ts",
+      "sourceQuestionId": "sp2",
+      "band": "5.5",
+      "cueCard": "Describe a health issue or challenge that you think is important for your community or country.\n\nYou should say:\n• what the health issue is\n• how widespread it is\n• what is currently being done about it\n• and explain why you think this issue deserves more attention",
+      "output": "public/audio/ielts/guided/set-20/speaking-band-5-5.wav",
+      "publicUrl": "/audio/ielts/guided/set-20/speaking-band-5-5.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "A health issue that needs more attention is mental health, especially anxiety and depression in young people. It seems quite common because many students I know say they're stressed or can't sleep, but they don't always ask for help. Some universities and companies offer counselling now, and there are phone lines for a crisis. That's positive, but, um, getting regular professional help can be expensive. In the public system, people sometimes wait a long time for an appointment. I think the issue is important because it affects study, work and relationships, not only how a person feels. Some people are still ashamed to talk about it, so they wait until the situation become serious. We need cheaper services and better information. Also, families and teachers should learn how to listen without judging the person immediately."
+    },
+    {
+      "id": "ielts-guided-set-20-speaking-band-9-0",
+      "setNumber": 20,
+      "sourceMockFile": "src/data/mocks/ielts-set-20.ts",
+      "sourceQuestionId": "sp2",
+      "band": "9.0",
+      "cueCard": "Describe a health issue or challenge that you think is important for your community or country.\n\nYou should say:\n• what the health issue is\n• how widespread it is\n• what is currently being done about it\n• and explain why you think this issue deserves more attention",
+      "output": "public/audio/ielts/guided/set-20/speaking-band-9-0.wav",
+      "publicUrl": "/audio/ielts/guided/set-20/speaking-band-9-0.wav",
+      "minimumDurationSeconds": 55,
+      "maximumDurationSeconds": 120,
+      "text": "For me, the issue that needs much more attention is the growing burden of anxiety and depression, particularly among adolescents and young adults. Precise prevalence varies across studies, but the issue is visible in schools, universities and workplaces, where many people report persistent stress while relatively few obtain timely professional support. There has been progress. Some educational institutions employ counsellors, crisis helplines are available, and public discussion has reduced part of the stigma surrounding mental illness. Nevertheless, access remains uneven. Private therapy is unaffordable for many families, while public appointments may involve long waits and limited continuity. Awareness campaigns can encourage people to seek help, but that message becomes frustrating if appropriate care is unavailable when they respond. The issue deserves attention because its effects spread well beyond individual mood. Untreated mental illness can disrupt education, employment, relationships and physical health, and severe cases may become life-threatening. It's also shaped by conditions such as insecurity, isolation and unstable work, so telling individuals simply to become more resilient is inadequate. I believe the response should combine affordable community-based care, training for teachers and primary health workers, and policies that address preventable sources of stress. Most importantly, mental health should be treated as a routine part of public health rather than an exceptional problem discussed only during a crisis."
     }
   ]
 }

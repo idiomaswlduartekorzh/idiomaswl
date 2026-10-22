@@ -1,4 +1,4 @@
-import { IELTS_GUIDED_SPEAKING_AUDIO_STATUS } from './guided-speaking-audio.generated.ts';
+import { getIeltsGuidedSpeakingReference } from './guided-speaking-references.ts';
 
 export type IeltsGuidedListeningItem = {
   number: number;
@@ -140,10 +140,10 @@ export const IELTS_GUIDED_SET_1_READING: readonly IeltsGuidedReadingItem[] = [
 ] as const;
 
 export const IELTS_GUIDED_SET_1_WRITING = {
-  prompt: 'In some countries, many more people are choosing to live alone nowadays than in the past. Do you think this is a positive or negative development?',
+  prompt: 'In some countries, many more people are choosing to live alone nowadays than in the past. Do you think this is a positive or negative development?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.',
   samples: {
     '5.5': {
-      label: 'Referencia aproximada · Banda 5.5',
+      label: 'Referencia pedagógica aproximada · Banda 5.5',
       wordCount: 257,
       answer: [
         'Nowadays, in several countries, the number of people who choose to live alone is increasing. Some people think this is good because they can have more freedom, but other people believe it creates many social problems. In my opinion, this development has more negative effects than positive ones.',
@@ -156,12 +156,12 @@ export const IELTS_GUIDED_SET_1_WRITING = {
         ['Task Response', 'Responde la pregunta y mantiene una postura, aunque las ideas se desarrollan con ejemplos bastante generales.'],
         ['Coherence & Cohesion', 'Tiene párrafos claros, pero usa conectores previsibles y repite algunas relaciones lógicas.'],
         ['Lexical Resource', 'El vocabulario comunica el mensaje, con repetición y colocaciones poco naturales como “the disadvantages are bigger”.'],
-        ['Grammar', 'Combina oraciones simples y complejas, pero conserva errores visibles: “not the same like” y “other persons”.'],
+        ['Grammatical Range & Accuracy', 'Combina oraciones simples y complejas, pero conserva errores visibles: “not the same like” y “other persons”.'],
       ],
       notice: ['postura visible desde la introducción', 'ideas comprensibles pero previsibles', 'errores que no impiden entender'],
     },
     '9.0': {
-      label: 'Referencia avanzada · Banda 9',
+      label: 'Referencia pedagógica aproximada · Banda 9',
       wordCount: 274,
       answer: [
         'The growing preference for single-person households is often interpreted as evidence of social fragmentation. Although the trend can expose individuals to financial pressure and isolation, I regard it as broadly positive because it reflects greater personal autonomy and can produce more deliberate forms of social connection.',
@@ -174,49 +174,11 @@ export const IELTS_GUIDED_SET_1_WRITING = {
         ['Task Response', 'Responde por completo, reconoce la objeción y sostiene una evaluación clara sin perder el foco.'],
         ['Coherence & Cohesion', 'Las ideas progresan de autonomía a conexión social; los enlaces son variados y casi invisibles.'],
         ['Lexical Resource', 'Usa vocabulario preciso y flexible: “social fragmentation”, “practical competence”, “purposeful relationships”.'],
-        ['Grammar', 'Maneja estructuras complejas con naturalidad y puntuación precisa, sin errores que distraigan.'],
+        ['Grammatical Range & Accuracy', 'Maneja estructuras complejas con naturalidad y puntuación precisa, sin errores que distraigan.'],
       ],
       notice: ['tesis matizada y directa', 'ejemplos integrados en el argumento', 'variedad sin vocabulario forzado'],
     },
   },
 } as const;
-export const IELTS_GUIDED_SET_1_SPEAKING = {
-  cueCard: 'Describe a time when you visited a friend or family member at their workplace.',
-  bullets: [
-    'who you visited and where they work',
-    'why you visited them there',
-    'what you did during your visit',
-    'how you felt about the experience',
-  ],
-  samples: {
-    '5.5': {
-      label: 'Referencia aproximada · Banda 5.5',
-      audio: IELTS_GUIDED_SPEAKING_AUDIO_STATUS.files['5.5'],
-      transcript: 'I want to talk about when I visited my cousin at his office. He works in a small travel company in Bogotá. I went there, um, last year because I was near the place and he told me to visit him. The office was not very big, but it was nice and there were maybe ten people working there. First, he showed me his desk and introduced me with his colleagues. Then we drank coffee in the kitchen and talked about his job. He works with customers and organises trips, so he uses the computer and phone a lot. I stayed for, I think, one hour. I felt happy because I never saw his workplace before and I understood his job more. It was interesting, but also a little noisy because everybody was speaking on phones.',
-      verdict: 'Cubre la tarjeta y se entiende, pero las pausas, la repetición y algunos errores limitan la flexibilidad.',
-      criteria: [
-        ['Fluency & Coherence', 'Mantiene la respuesta, aunque depende de “and/then”, hace pausas y desarrolla poco algunos detalles.'],
-        ['Lexical Resource', 'Vocabulario suficiente pero común; repite “office”, “job” y “nice”.'],
-        ['Grammar', 'Alterna estructuras básicas con algunos errores: “introduced me with” y control irregular del pasado.'],
-        ['Pronunciation', 'La referencia prioriza claridad general; una banda real exige evaluar ritmo, acento y sonidos en la voz del candidato.'],
-      ],
-    },
-    '9.0': {
-      label: 'Referencia avanzada · Banda 9',
-      audio: IELTS_GUIDED_SPEAKING_AUDIO_STATUS.files['9.0'],
-      transcript: [
-        "A workplace visit that has stayed with me was the afternoon I spent at my aunt's architectural studio in Medellín. I had always associated her job with sketches and attractive buildings, but I had very little idea of how collaborative the work actually was. I went because I was considering architecture as a possible degree, and she suggested that observing the studio would be more useful than simply reading about the profession.",
-        'When I arrived, she was preparing a proposal for a small public library. She showed me an early hand-drawn concept and then the detailed digital model her team had developed from it. What fascinated me most was a design meeting in which the architects challenged one another\'s assumptions about light, accessibility and cost. Later, I helped organise material samples for a client presentation. It was a minor task, but it made me feel briefly involved rather than merely being a visitor.',
-        'I left feeling impressed and slightly overwhelmed. The visit confirmed that architecture can be highly creative, but it also revealed the patience and negotiation hidden behind the finished building. Although I eventually chose a different field, that afternoon changed the way I look at public spaces because I now notice the decisions that shape how people move through them.',
-      ].join('\n\n'),
-      verdict: 'La respuesta avanza con naturalidad, desarrolla detalles precisos y utiliza el lenguaje con flexibilidad y control.',
-      criteria: [
-        ['Fluency & Coherence', 'Construye una historia completa, enlaza reflexión y detalle, y mantiene el ritmo sin conectores mecánicos.'],
-        ['Lexical Resource', 'El vocabulario es específico y natural: “collaborative”, “challenged assumptions”, “material samples”.'],
-        ['Grammar', 'Combina tiempos y estructuras complejas con control, incluido contraste, subordinación y énfasis.'],
-        ['Pronunciation', 'El audio facilita seguir el ritmo del modelo; la banda real depende de la pronunciación producida por cada candidato.'],
-      ],
-    },
-  },
-} as const;
+export const IELTS_GUIDED_SET_1_SPEAKING = getIeltsGuidedSpeakingReference(1);
 // End of the owner-reviewed IELTS Set 1 guided references.

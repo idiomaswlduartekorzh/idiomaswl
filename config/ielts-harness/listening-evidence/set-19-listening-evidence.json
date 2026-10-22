@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "status": "PASS",
   "set": 19,
-  "generatedAt": "2026-09-12",
+  "generatedAt": "2026-09-09",
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-19.mp3",
     "path": "public/audio/ielts/ielts-listening-set-19.mp3",
@@ -15,8 +15,8 @@
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-19-objective-review.json",
-    "fileSha256": "5ff8f9dad16c26b7dc4fc52a3292d23c964a0116b13dcb0a7571df3c99e14f1f",
-    "reviewSha256": "fd53af93c6fb79026443e54e100e9f07306f3e76ab548d39f740ed5b91f648fa"
+    "fileSha256": "1e7f99be87cd72dc7666067567fd4ed374ce76bf51a81dce2f37436b893959e8",
+    "reviewSha256": "db0d6a30b1cdc15a891f7a03138a56d7a9209fd18a5821a85657d2e0381a1c28"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-19/a9eaaaddf8af-staged-asr-qa-set-19.json",
@@ -453,22 +453,32 @@
       "question": 21,
       "responseKey": "l3q21",
       "part": 3,
-      "academicEvidenceSha256": "b502fed71dc21f9b72fcf26d520ceae5c1c143c04f1eaefd8fb429c99e5144d3",
-      "academicExcerptSha256": "59d6238af7ed961ccb7378c5dce744b037fd691364dc5e877d23c568a963f04a",
-      "startSeconds": 972.42,
-      "endSeconds": 983.68,
-      "audiblePhrase": "Come in, Maya and Tom. I've watched the first cut of your film studies documentary, so let's talk it through. Thanks. As you know, we chose to film the street musicians who perform around the Old Town.",
-      "audiblePhraseSha256": "c2fd0aede20b88ac38e5ac5a7cd0ca08f647acf038a9c23c9a38c48dc680111e",
-      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
-      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "academicEvidenceSha256": "f3a97e139437cd7092b59bc311820c1bdc31ba42dc49f2acf429cc974df6bdac",
+      "academicExcerptSha256": "8c007bcbdb27d26c7c32d347654a020e483000d23cd1229ca14a8cf30fa65c0f",
+      "startSeconds": 1010.2,
+      "endSeconds": 1024.76,
+      "audiblePhrase": "Well, at first we wanted to interview professional film directors, but we soon realised that would be almost impossible to arrange. Street musicians were far easier to approach, and honestly, the topic felt much fresher.",
+      "audiblePhraseSha256": "3bc0bfe59471b2ddffab697d46b03c1299c3d802921f9549a630eb84ab6ac6c7",
+      "rationale": "This exact ASR slice contrasts the impractical first idea with the more accessible subject.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "alignmentScore": 1,
-      "answerSupportScore": 0.25,
+      "asrMatchKind": "exact",
+      "semanticFocus": [
+        "almost impossible to arrange",
+        "far easier to approach"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-19/9b5f5a335800-whisper-set-19.json",
         "sha256": "9b5f5a335800253a99b894d94518ef952c36813cbce60283a67658789c6ac35c",
-        "startSeconds": 972.42,
-        "endSeconds": 983.68
+        "startSeconds": 1010.2,
+        "endSeconds": 1024.76
       }
     },
     {
@@ -497,22 +507,32 @@
       "question": 23,
       "responseKey": "l3q23",
       "part": 3,
-      "academicEvidenceSha256": "b6ae80037e30b8e49d3bfc521f2d165681eeadef234530e5a63cb27176681d45",
-      "academicExcerptSha256": "52599e7770a44487fb18beb88f3ac845ac08851125799607cb32663816635a55",
-      "startSeconds": 1030.94,
-      "endSeconds": 1049.38,
-      "audiblePhrase": "We also need to be careful about cause and association in the film studies project. Two patterns can occur together without one necessarily producing the other. Particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-      "audiblePhraseSha256": "53c4102836d7813b41b9e03468f58eb4456cf94addf0b2f8adc8f4dfe9bab0a7",
-      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
-      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "academicEvidenceSha256": "935072aad928c5b34a7cca072dbe2e659035ede4e0c315ee856db51e9b2cb7de",
+      "academicExcerptSha256": "a852fdbe646313de7465db6281f66b1735513ac8d70017ca42dc1250ddfb9a6d",
+      "startSeconds": 1145.0800000000002,
+      "endSeconds": 1162.84,
+      "audiblePhrase": "I'm proudest of the interviews. We let each musician tell their own story, and those personal moments give the film its emotional heart. The camera work is a little shaky in places, but the interviews really carry it. I agree. The interviews are your strongest element.",
+      "audiblePhraseSha256": "1898f2aaa16818931085efda96acee10c4a6e3cde20baa7f913f2c4720d3a3ef",
+      "rationale": "This exact ASR slice repeatedly identifies the interviews as the documentary’s strongest element.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "alignmentScore": 0.9762,
-      "answerSupportScore": 0.5,
+      "asrMatchKind": "exact",
+      "semanticFocus": [
+        "proudest",
+        "interviews"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-19/9b5f5a335800-whisper-set-19.json",
         "sha256": "9b5f5a335800253a99b894d94518ef952c36813cbce60283a67658789c6ac35c",
-        "startSeconds": 1030.94,
-        "endSeconds": 1049.38
+        "startSeconds": 1145.0800000000002,
+        "endSeconds": 1162.84
       }
     },
     {
@@ -880,5 +900,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "d55b2ad9a9c80e9149b1aac274d76f459ef6b5fd4e42bc9865c1251c8ca2f04c"
+  "artifactSha256": "856f116974b9257058f7a24d7ca7d0dcafc95f4bf6b359013fcc332e4ccbb057"
 }

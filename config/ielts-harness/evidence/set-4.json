@@ -3,14 +3,14 @@
   "set": 4,
   "generatedFrom": {
     "source": "src/data/mocks/ielts-set-4.ts",
-    "sourceSha256": "0ffc75b418c3002d7c30f79c9dcdf8f2854bed5e78571a67b82b71bbe057fce9",
-    "releaseFingerprintSha256": "81de55a657dfaff27ff717839f3b1129c6512e836edc5304652ef72a9ae3f92b"
+    "sourceSha256": "da4d563071e91f2470d8e6014c2c099dd66ddfb3beaaeea053710dc1f4c0d8c4",
+    "releaseFingerprintSha256": "9cd6bdb05e89ad26db96cd5ec4834b69ec18c6bfdab376e8f34c4079da943d9d"
   },
   "listening": {
     "binding": {
       "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
       "transcriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
-      "objectiveSha256": "0c564253d64a2f35bb76ea148bd67e8eeb75b818b0b5345042f53690e0fff99c"
+      "objectiveSha256": "c2cfc7fbf057c5656dcfe570479c97de75f97ae81f62318637fbac1012fcc1f7"
     },
     "technicalQa": {
       "status": "PASS",
@@ -20,11 +20,11 @@
     },
     "machineAlignment": {
       "status": "PASS",
-      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE_WITH_INDEPENDENT_ACADEMIC_REVIEW",
       "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
       "transcriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
       "evidencePath": "config/ielts-harness/listening-evidence/set-4-listening-evidence.json",
-      "evidenceSha256": "e4158cbc6ed7d508d89c7b1f5bad12eeb954479b9e44d1d225cf2e5bd1a65be3"
+      "evidenceSha256": "b3b8433fd820f96ff6543c3aa35e150ee1385c04115763354c51e90ec358a5c1"
     },
     "questions": [
       {
@@ -434,48 +434,48 @@
       },
       {
         "question": 28,
-        "responseKey": "l4-notes__28",
-        "part": 4,
-        "startSeconds": 1461.32,
-        "endSeconds": 1464.76,
-        "audiblePhrase": "Migration is fundamentally a response to seasonal changes in food availability.",
-        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "responseKey": "l3q28",
+        "part": 3,
+        "startSeconds": 1218.84,
+        "endSeconds": 1229.32,
+        "audiblePhrase": "I was thinking we could use a survey, it's practical given our time constraints, but we'd need to control for baseline mental health, pre-existing conditions and offline social support.",
+        "rationale": "The exact ASR slice states why a survey is practical and lists the controls; this mapping passed independent academic semantic review.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_reviewer_final2"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-20"
       },
       {
         "question": 29,
-        "responseKey": "l4-notes__29",
-        "part": 4,
-        "startSeconds": 1465.38,
-        "endSeconds": 1473.02,
-        "audiblePhrase": "During summer in the northern hemisphere, insects, seeds and fruits are abundant, and the long daylight hours allow birds to forage for long periods.",
-        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "responseKey": "l3q29",
+        "part": 3,
+        "startSeconds": 1218.84,
+        "endSeconds": 1229.32,
+        "audiblePhrase": "I was thinking we could use a survey, it's practical given our time constraints, but we'd need to control for baseline mental health, pre-existing conditions and offline social support.",
+        "rationale": "The exact ASR slice lists all three controls in the keyed option; this mapping passed independent academic semantic review.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_reviewer_final2"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-20"
       },
       {
         "question": 30,
-        "responseKey": "l4-notes__30",
-        "part": 4,
-        "startSeconds": 1474.02,
-        "endSeconds": 1481.4,
-        "audiblePhrase": "In winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
-        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "responseKey": "l3q30",
+        "part": 3,
+        "startSeconds": 1284.22,
+        "endSeconds": 1298.86,
+        "audiblePhrase": "That would be great for objective data rather than just self-reports, which tend to be unreliable, people consistently underestimate how long they spend on their phones. Let's include both then, we'll ask them to share weekly screen time summaries from their phone settings.",
+        "rationale": "The consecutive exact ASR segments state that both self-reports and weekly screen-time summaries will be collected; this mapping passed independent academic semantic review.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_reviewer_final2"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-20"
       },
       {
         "question": 31,
@@ -632,7 +632,7 @@
   "reading": {
     "binding": {
       "readingSha256": "9949003ac506455cd902232fc885fb63730a6a8eddac54ffd609663117e77a91",
-      "objectiveSha256": "0c564253d64a2f35bb76ea148bd67e8eeb75b818b0b5345042f53690e0fff99c"
+      "objectiveSha256": "c2cfc7fbf057c5656dcfe570479c97de75f97ae81f62318637fbac1012fcc1f7"
     },
     "questions": [
       {
@@ -1303,19 +1303,19 @@
   },
   "objectiveKey": {
     "status": "APPROVED",
-    "objectiveSha256": "0c564253d64a2f35bb76ea148bd67e8eeb75b818b0b5345042f53690e0fff99c",
+    "objectiveSha256": "c2cfc7fbf057c5656dcfe570479c97de75f97ae81f62318637fbac1012fcc1f7",
     "evidencePath": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
-    "evidenceSha256": "34e50737ef02afd9e587322e8dcefb0f2ae9258f8b0a3d6fdcbddc1d11240014",
+    "evidenceSha256": "d06ae1206c43df5a6855826f292309424cd974cf1a54571a1ec37ab8d4447b51",
     "reviewer": {
       "kind": "academic-agent",
-      "id": "codex-audit-harness-bias-review"
+      "id": "/root/objective_reviewer_final2"
     },
-    "reviewedAt": "2026-09-12"
+    "reviewedAt": "2026-10-20"
   },
   "ux": {
-    "status": "APPROVED",
+    "status": "PENDING",
     "binding": {
-      "contentSha256": "ce13f646c5b6f06b70d722abf1b7f66607d5467bc4a0e20bd4230dae39a5d3a7"
+      "contentSha256": "19c62778e7e77bd86d75ab3db469579121f4bf3f3a7dde13eea602548603847e"
     },
     "viewports": [
       {
@@ -1329,21 +1329,17 @@
     ],
     "reviewer": {
       "kind": "ux-agent",
-      "id": "codex-ielts-runtime-review"
+      "id": ""
     },
-    "reviewedAt": "2026-09-12",
-    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
-    "evidenceSha256": "88264f02b6309db0003cba7343d92990fe730c28350e1b7042adec67eb7e1c55"
+    "reviewedAt": ""
   },
   "releaseApproval": {
-    "status": "APPROVED",
-    "releaseFingerprintSha256": "81de55a657dfaff27ff717839f3b1129c6512e836edc5304652ef72a9ae3f92b",
+    "status": "PENDING",
+    "releaseFingerprintSha256": "9cd6bdb05e89ad26db96cd5ec4834b69ec18c6bfdab376e8f34c4079da943d9d",
     "reviewer": {
       "kind": "human",
-      "id": "David Duarte (workspace owner)"
+      "id": ""
     },
-    "reviewedAt": "2026-09-12T19:39:19.595Z",
-    "evidencePath": "config/ielts-harness/final-release-approval.json",
-    "evidenceSha256": "fe210b7b8a04559c1971598d77998f5848c5456167ef576770e8b6829d462642"
+    "reviewedAt": ""
   }
 }

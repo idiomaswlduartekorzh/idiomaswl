@@ -1,4 +1,5 @@
 import { access } from 'node:fs/promises';
+import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
@@ -26,7 +27,7 @@ async function firstExistingUrl(candidateUrl) {
 export async function resolve(specifier, context, nextResolve) {
   if (specifier === 'server-only') {
     return {
-      url: 'data:text/javascript,export%20{}',
+      url: 'data:text/javascript,export%20%7B%7D%3B',
       shortCircuit: true,
     };
   }
@@ -40,16 +41,21 @@ export async function resolve(specifier, context, nextResolve) {
   } catch (error) {
     if (error?.code !== 'ERR_MODULE_NOT_FOUND') throw error;
 
+    if (!rewritten.startsWith('.') && !rewritten.startsWith('/') && !rewritten.startsWith('file:')) {
+      try {
+        const requireFromParent = createRequire(context.parentURL ?? import.meta.url);
+        const resolvedPackagePath = requireFromParent.resolve(rewritten);
+        return nextResolve(pathToFileURL(resolvedPackagePath).href, context);
+      } catch {
+        // Fall through to the source-extension lookup below.
+      }
+    }
+
     let candidateUrl;
     try {
-      const isBareSpecifier = !rewritten.startsWith('file:')
-        && !rewritten.startsWith('.')
-        && !rewritten.startsWith('/');
       candidateUrl = rewritten.startsWith('file:')
         ? rewritten
-        : isBareSpecifier
-          ? pathToFileURL(path.join(ROOT, 'node_modules', rewritten)).href
-          : new URL(rewritten, context.parentURL).href;
+        : new URL(rewritten, context.parentURL).href;
     } catch {
       throw error;
     }

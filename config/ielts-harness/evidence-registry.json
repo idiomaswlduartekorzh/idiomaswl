@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12",
+  "generatedAt": "2026-10-22",
   "policy": {
     "intermediateEvidence": "Identified independent domain agents may approve hash-bound academic, ASR, visual, speaking and UX evidence.",
     "finalReleaseApproval": "A human reviewer must approve the current release fingerprint; the harness and generators cannot self-approve release."
@@ -21,6 +21,7 @@
         "tests/fixtures/ielts/set-1-reading-cambridge5-test2-reference.json"
       ],
       "notes": [
+        "Listening Q11-Q12 use exact ASR slices for the fitness suite and pool; the former false human alignment remains invalidated and the replacements passed independent academic review by /root/objective_reviewer_final2 on 2026-10-20. Human release remains pending.",
         "Objective key and Set 1 diagram guards exist independently.",
         "Listening Q1-Q40 matches a separately pinned Cambridge 10 Test 1 answer reference.",
         "Reading Q1-Q40 matches a separately pinned Cambridge 5 Test 2 answer reference; Q30-Q31 are scored in either order with one-time answer consumption.",
@@ -52,6 +53,7 @@
         "https://www.gov.uk/government/publications/incentivising-pension-saving-wp109"
       ],
       "notes": [
+        "Listening Q21 was rewritten in content version ielts-set-2-v5 so its four options yield one defensible result while preserving key index 1. Q21, Q23 and Q24 use exact ASR slices and fresh academic excerpts independently reviewed by /root/objective_remediation_final4/literal_semantic_reviewer on package 08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d. The prior human release fingerprint is invalid; release remains pending.",
         "MP3 contains the Louisa Hardie transport survey; screen/script describe Daniel Harris court booking.",
         "Reading expanded within existing paragraphs. Glass history now distinguishes glass from faience, uses the Corning Museum chronology, qualifies Murano legends and dates the Pilkington float process. Pollination replaces the misleading one-third-of-food claim with FAO's bounded crop-production measures, distinguishes managed and wild pollinators, and qualifies interacting threats. Decision making presents rational choice as a benchmark, corrects the rigged-wheel description and changes Q35 from YES to NO; pension Q38 now tests participation rather than an unsupported general savings-rate claim. Q30 retains the literal completion mind. The mismatched MP3 must be replaced and fully aligned before release.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
@@ -99,6 +101,7 @@
       "evidencePath": "config/ielts-harness/evidence/set-4.json",
       "references": [],
       "notes": [
+        "Listening was repaired from 10/10/7/13 to the canonical 4×10 partition; Q28-Q30 and the changed bindings passed independent academic review by /root/objective_reviewer_final2 on 2026-10-20. Human release remains pending.",
         "MP3 contains a call to a builder; screen/script describe university accommodation.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
@@ -279,7 +282,7 @@
         "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
       ],
       "notes": [
-        "Reading expanded within existing paragraphs. Migration dates and forced-displacement categories were corrected against IOM and UNHCR sources; the Fortune 500 attribution now distinguishes immigrant founders from children of immigrants. Quantum investment language was made non-numeric, error correction and benchmark limits were clarified, and Q18 now points directly to Shor's algorithm. Full academic review and missing-audio production/alignment remain pending.",
+        "Listening Q13 was rebound to a literal academic excerpt and the exact ASR sentence stating that international check-in is on level two; independently reviewed on package 08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d. Reading expanded within existing paragraphs. Migration dates and forced-displacement categories were corrected against IOM and UNHCR sources; the Fortune 500 attribution now distinguishes immigrant founders from children of immigrants. Quantum investment language was made non-numeric, error correction and benchmark limits were clarified, and Q18 now points directly to Shor's algorithm. Human release remains pending.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
@@ -388,7 +391,7 @@
         "https://www.oecd.org/en/publications/tools-and-ethics-for-applied-behavioural-insights-the-basic-toolkit_9ea76a8f-en/full-report/component-6.html"
       ],
       "notes": [
-        "Reading expanded within existing paragraphs. Ocean chemistry and nutrition figures now use scenario-bounded IPCC, NOAA and FAO language; species responses and local interventions are qualified. The cinema passage corrects the false claim that the Lumière programme was the first paid moving-image exhibition while preserving its historical significance. Behavioural economics now treats rational choice as a benchmark, limits the classic loss-aversion ratio, and distinguishes context-specific nudge effects from universal success. Q1, Q2, Q4, Q16, Q21, Q28, Q32, Q33 and Q35 were updated to follow the revised evidence without changing their keyed outcomes. Full academic review and missing-audio production/alignment remain pending.",
+        "Listening Q22 and Q26 were rebound to literal academic excerpts and exact ASR slices for the participant group and sample-size recommendation; independently reviewed on package 08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d. Reading expanded within existing paragraphs. Ocean chemistry and nutrition figures now use scenario-bounded IPCC, NOAA and FAO language; species responses and local interventions are qualified. The cinema passage corrects the false claim that the Lumière programme was the first paid moving-image exhibition while preserving its historical significance. Behavioural economics now treats rational choice as a benchmark, limits the classic loss-aversion ratio, and distinguishes context-specific nudge effects from universal success. Human release remains pending.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
@@ -453,7 +456,7 @@
         "https://www.unesco.org/en/articles/impact-climate-change-archaeological-sites"
       ],
       "notes": [
-        "Reading expanded within existing paragraphs. Dark-matter evidence now distinguishes model inference from particle identification, updates Rubin Observatory after the June 2026 start of LSST, and corrects Q7 from NOT GIVEN to FALSE because the concept predates Rubin. E-commerce replaces an unsupported global retail forecast with scoped UNCTAD and US Census measures and qualifies platform, labour, retail and environmental claims. Heritage uses current UNESCO counts, removes the false claim that the Great Barrier Reef is on the danger list, and corrects the false attribution of reversibility to the Venice Charter; Q35 changes from NOT GIVEN to NO because the revised passage explicitly rejects full equivalence of digital and physical heritage. Full academic review and missing-audio production/alignment remain pending.",
+        "Listening Q21 and Q23 were rebound to literal academic excerpts and exact ASR slices for the feasibility comparison and strongest documentary element; independently reviewed on package 08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d. Reading expanded within existing paragraphs. Dark-matter evidence now distinguishes model inference from particle identification, updates Rubin Observatory after the June 2026 start of LSST, and corrects Q7 from NOT GIVEN to FALSE because the concept predates Rubin. E-commerce replaces an unsupported global retail forecast with scoped UNCTAD and US Census measures and qualifies platform, labour, retail and environmental claims. Human release remains pending.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
         "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",

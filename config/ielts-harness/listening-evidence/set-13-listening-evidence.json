@@ -15,8 +15,8 @@
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-13-objective-review.json",
-    "fileSha256": "d01a2be24eddc382bb1f75cc13c1909774bf1ba7d2902f285dffc76249a70f87",
-    "reviewSha256": "745e9ade3d03b7595fee69164d9424c84f3b590729565f4b27babaefab61f90c"
+    "fileSha256": "632d7522ae25963095083bece8f9519c2732e7fda046aae7e7180c819e180d0e",
+    "reviewSha256": "d4b0292516e3f098122ac1892284932c7ee122f9985568ae018483f31444e62f"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-13/15ed24e459fd-staged-asr-qa-set-13.json",
@@ -285,21 +285,31 @@
       "question": 13,
       "responseKey": "l2-form__13",
       "part": 2,
-      "academicEvidenceSha256": "7e5557d26e19edaeb6902b8fea7335f113526a8762741c2847c16584c2f1da74",
+      "academicEvidenceSha256": "5cab1dcded96246eca01ac20a521c78a14fea290b1b1674577db80a890f8721d",
       "academicExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
-      "startSeconds": 342.2,
-      "endSeconds": 347.08,
-      "audiblePhrase": "With premium you also get a free towel service and two guest passes every month.",
-      "audiblePhraseSha256": "998d90d8fc81b6e5355f7b1c7a8c01b1750a125b0884f8cd1f5a4674c85acf58",
-      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
-      "method": "GLOBAL_COMPLETION",
+      "startSeconds": 567.88,
+      "endSeconds": 574.74,
+      "audiblePhrase": "The check-in desks for international flights are on level 2 and they open exactly 3 hours before departure.",
+      "audiblePhraseSha256": "27c8083b5f7c848410cb4abdfc2951ac6fe5120a8d2c10843cb526da897839db",
+      "rationale": "This exact ASR slice states that the international-flight check-in desks are on level 2.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
       "asrMatchKind": "exact",
+      "semanticFocus": [
+        "level 2"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-13/f58598ca12b6-whisper-set-13.json",
         "sha256": "f58598ca12b6230ebf493ed016ac9e4c2f330b4197821efcd77e30177e5f7471",
-        "startSeconds": 342.2,
-        "endSeconds": 347.08
+        "startSeconds": 567.88,
+        "endSeconds": 574.74
       }
     },
     {
@@ -890,5 +900,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "631e7677b86528c4d95c4bce100077fec3533d2f3ac9bb80092b9105fed9b325"
+  "artifactSha256": "2811eae547aaf61afa806c45ffa102520bbc3bf67daad8659242c92a3237aa42"
 }

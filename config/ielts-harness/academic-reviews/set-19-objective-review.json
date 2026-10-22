@@ -10,6 +10,20 @@
     "kind": "academic-agent",
     "id": "codex-audit-harness-bias-review"
   },
+  "remediationReview": {
+    "status": "PASS",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+    },
+    "reviewedAt": "2026-10-22",
+    "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
+    "scope": [
+      "Listening Q21",
+      "Listening Q23"
+    ],
+    "releaseAuthorized": false
+  },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
     "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
@@ -1605,10 +1619,19 @@
       "questionPrompt": "Why did the students choose street musicians as their subject?",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Film-studies project",
-      "sourceExcerpt": "MAYA: Thanks. As you know, we chose to film the street musicians who perform around the old town.",
-      "sourceExcerptSha256": "59d6238af7ed961ccb7378c5dce744b037fd691364dc5e877d23c568a963f04a",
+      "sourceExcerpt": "MAYA: Well, at first we wanted to interview professional film directors, but we soon realised that would be almost impossible to arrange. Street musicians were far easier to approach, and honestly the topic felt much fresher.",
+      "sourceExcerptSha256": "8c007bcbdb27d26c7c32d347654a020e483000d23cd1229ca14a8cf30fa65c0f",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "Maya contrasts the difficulty of arranging access to directors with how much easier street musicians were to approach, directly supporting accessibility.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "correctOptions": [
         {
           "key": 1,
@@ -1683,10 +1706,19 @@
       "questionPrompt": "Which part of the documentary is Maya most pleased with?",
       "sourcePart": 3,
       "sourceTitle": "Listening — Section 3: Film-studies project",
-      "sourceExcerpt": "MAYA: We also need to be careful about cause and association in the film-studies project. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-      "sourceExcerptSha256": "52599e7770a44487fb18beb88f3ac845ac08851125799607cb32663816635a55",
+      "sourceExcerpt": "MAYA: I'm proudest of the interviews. We let each musician tell their own story, and those personal moments give the film its emotional heart. The camerawork is a little shaky in places, but the interviews really carry it.\n\nTUTOR: I agree — the interviews are your strongest element. Now, my main criticism concerns the length. At twenty-five minutes, it's simply too long for this assignment; you need to bring it down to about fifteen.",
+      "sourceExcerptSha256": "a852fdbe646313de7465db6281f66b1735513ac8d70017ca42dc1250ddfb9a6d",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "Maya says she is proudest of the interviews and the tutor confirms that they are the documentary's strongest element.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "correctOptions": [
         {
           "key": 1,
@@ -3571,5 +3603,5 @@
       "optionLengthHeuristicGatePassed": true
     }
   },
-  "reviewSha256": "fd53af93c6fb79026443e54e100e9f07306f3e76ab548d39f740ed5b91f648fa"
+  "reviewSha256": "db0d6a30b1cdc15a891f7a03138a56d7a9209fd18a5821a85657d2e0381a1c28"
 }

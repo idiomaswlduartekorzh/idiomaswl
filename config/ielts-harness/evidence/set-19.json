@@ -24,7 +24,7 @@
       "audioSha256": "638d3abd6b093aa385795ae0e590b19f122e065503036c3d38c0fdfff6255d21",
       "transcriptSha256": "96be3c7d8a1fcaa2de962d7585783094f74b5c7bfc55de529a557ee05178357b",
       "evidencePath": "config/ielts-harness/listening-evidence/set-19-listening-evidence.json",
-      "evidenceSha256": "8a18f66b5d2c49b4941731756161be832412d67256db8d7615e1e774045e8a2e"
+      "evidenceSha256": "dafa7a7ba2f59e6a4e0850371246e389c1ab134adcc36b1885aa0d9188f7f9aa"
     },
     "questions": [
       {
@@ -331,16 +331,17 @@
         "question": 21,
         "responseKey": "l3q21",
         "part": 3,
-        "startSeconds": 972.42,
-        "endSeconds": 983.68,
-        "audiblePhrase": "Come in, Maya and Tom. I've watched the first cut of your film studies documentary, so let's talk it through. Thanks. As you know, we chose to film the street musicians who perform around the Old Town.",
-        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "startSeconds": 1010.2,
+        "endSeconds": 1024.76,
+        "audiblePhrase": "Well, at first we wanted to interview professional film directors, but we soon realised that would be almost impossible to arrange. Street musicians were far easier to approach, and honestly, the topic felt much fresher.",
+        "rationale": "This exact ASR slice contrasts the impractical first idea with the more accessible subject.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 22,
@@ -361,16 +362,17 @@
         "question": 23,
         "responseKey": "l3q23",
         "part": 3,
-        "startSeconds": 1030.94,
-        "endSeconds": 1049.38,
-        "audiblePhrase": "We also need to be careful about cause and association in the film studies project. Two patterns can occur together without one necessarily producing the other. Particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "startSeconds": 1145.0800000000002,
+        "endSeconds": 1162.84,
+        "audiblePhrase": "I'm proudest of the interviews. We let each musician tell their own story, and those personal moments give the film its emotional heart. The camera work is a little shaky in places, but the interviews really carry it. I agree. The interviews are your strongest element.",
+        "rationale": "This exact ASR slice repeatedly identifies the interviews as the documentary’s strongest element.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 24,
@@ -1305,7 +1307,7 @@
     "status": "APPROVED",
     "objectiveSha256": "791fdfcb6d0010b77a2fe1e6c69898430ab482e016246fb1720ed51c38093f29",
     "evidencePath": "config/ielts-harness/academic-reviews/set-19-objective-review.json",
-    "evidenceSha256": "5ff8f9dad16c26b7dc4fc52a3292d23c964a0116b13dcb0a7571df3c99e14f1f",
+    "evidenceSha256": "1e7f99be87cd72dc7666067567fd4ed374ce76bf51a81dce2f37436b893959e8",
     "reviewer": {
       "kind": "academic-agent",
       "id": "codex-audit-harness-bias-review"

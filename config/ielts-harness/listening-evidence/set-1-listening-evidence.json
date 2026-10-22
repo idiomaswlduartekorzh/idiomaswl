@@ -4,8 +4,21 @@
   "set": 1,
   "generatedAt": "2026-09-12",
   "reviewer": {
+    "kind": "academic-agent",
+    "id": "/root/objective_reviewer_final2"
+  },
+  "reviewedAt": "2026-10-20",
+  "independentReview": {
+    "reviewer": { "kind": "academic-agent", "id": "/root/objective_reviewer_final2" },
+    "reviewedAt": "2026-10-20",
+    "artifactPackageSha256": "2018efdf3ffbe5db36252929e456123d709c2c4d8e260b11aba647ff0442bb14",
+    "verdict": "PASS",
+    "scope": ["Q11", "Q12"]
+  },
+  "supersededReview": {
     "kind": "human",
-    "id": "owner-reviewed-set1"
+    "id": "owner-reviewed-set1",
+    "reason": "Q11-Q12 were falsely aligned to an unrelated Part 4 phrase. Their replacement exact ASR slices require independent review."
   },
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-1.mp3",
@@ -218,18 +231,19 @@
       "question": 11,
       "responseKey": "l2-multi",
       "part": 2,
-      "startSeconds": 1269.08,
-      "endSeconds": 1280.42,
-      "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
-      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
-      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
-      "confidence": "MEDIUM",
-      "alignmentScore": 0.3077,
+      "startSeconds": 411.98,
+      "endSeconds": 423.52,
+      "audiblePhrase": "Our recently refurbished fitness suite has all the latest exercise equipment, including 10 new running machines and a wide range of weight training machines.",
+      "rationale": "The exact ASR slice states that the fitness suite (gym) was recently refurbished; this mapping passed independent academic semantic review.",
+      "method": "EXACT_ASR_SLICE",
+      "confidence": "HIGH",
+      "reviewStatus": "APPROVED",
+      "semanticFocus": ["fitness suite", "recently refurbished"],
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
         "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
-        "startSeconds": 1269.08,
-        "endSeconds": 1280.42,
+        "startSeconds": 411.98,
+        "endSeconds": 423.52,
         "masterOffsetSeconds": 0
       }
     },
@@ -237,18 +251,19 @@
       "question": 12,
       "responseKey": "l2-multi",
       "part": 2,
-      "startSeconds": 1269.08,
-      "endSeconds": 1280.42,
-      "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
-      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
-      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
-      "confidence": "MEDIUM",
-      "alignmentScore": 0.2857,
+      "startSeconds": 381.28,
+      "endSeconds": 393.08,
+      "audiblePhrase": "Our greatest asset is probably our swimming pool, which at 25 meters isn't Olympic-sized, but now we've expanded it to eight lanes. It's much wider.",
+      "rationale": "The exact ASR slice states that the indoor pool was expanded to eight lanes; this mapping passed independent academic semantic review.",
+      "method": "EXACT_ASR_SLICE",
+      "confidence": "HIGH",
+      "reviewStatus": "APPROVED",
+      "semanticFocus": ["swimming pool", "expanded it to eight lanes"],
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
         "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
-        "startSeconds": 1269.08,
-        "endSeconds": 1280.42,
+        "startSeconds": 381.28,
+        "endSeconds": 393.08,
         "masterOffsetSeconds": 0
       }
     },
@@ -767,5 +782,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "217a39d56d5e0e77d8e31fecf25fc252c63a57bb8f8d72366990509ea42fc168"
+  "artifactSha256": "670940f2cc194bceedaab8ca899c6320e2b698884890f2974ea0e88b76549790"
 }

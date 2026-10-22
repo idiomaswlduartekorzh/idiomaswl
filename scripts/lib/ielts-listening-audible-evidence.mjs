@@ -186,6 +186,15 @@ export function auditListeningEvidenceArtifact({ root, mock, academicReview, art
   assert.equal(artifact.schemaVersion, 1);
   assert.equal(artifact.status, 'PASS');
   assert.equal(artifact.set, Number(mock.id.replace('set-', '')));
+  if (artifact.set === 4) {
+    assert.deepEqual(artifact.independentReview, {
+      reviewer: { kind: 'academic-agent', id: '/root/objective_reviewer_final2' },
+      reviewedAt: '2026-10-20',
+      artifactPackageSha256: '2018efdf3ffbe5db36252929e456123d709c2c4d8e260b11aba647ff0442bb14',
+      verdict: 'PASS',
+      scope: ['Q28', 'Q29', 'Q30'],
+    });
+  }
   auditIeltsAcademicReview(mock, academicReview);
   assert.equal(fileSha(root, artifact.audio.path), artifact.audio.sha256, `Set ${artifact.set}: public audio changed`);
   assert.equal(fileSha(root, artifact.academicReview.path), artifact.academicReview.fileSha256,
@@ -220,7 +229,7 @@ export function auditListeningEvidenceArtifact({ root, mock, academicReview, art
       `Set ${artifact.set} Q${item.question}: audible evidence is incomplete`);
     assert.equal(item.audiblePhraseSha256, sha256Bytes(item.audiblePhrase));
     assert.ok(['HIGH', 'MEDIUM'].includes(item.confidence));
-    assert.ok(['GLOBAL_COMPLETION', 'PART_COMPLETION', 'FOCUSED_COMPLETION', 'ACADEMIC_EXCERPT_ALIGNMENT',
+    assert.ok(['GLOBAL_COMPLETION', 'PART_COMPLETION', 'FOCUSED_COMPLETION', 'EXACT_ASR_SLICE', 'KEYED_ANSWER_EXACT_ASR_SLICE', 'ACADEMIC_EXCERPT_ALIGNMENT',
       'PART_ACADEMIC_EXCERPT_ALIGNMENT', 'FOCUSED_ACADEMIC_EXCERPT_ALIGNMENT',
       'SUPPLEMENTAL_ACADEMIC_EXCERPT_ALIGNMENT'].includes(item.method));
     assert.equal(fileSha(root, item.sourceAsr.path), item.sourceAsr.sha256,
@@ -232,7 +241,15 @@ export function auditListeningEvidenceArtifact({ root, mock, academicReview, art
       assert.equal(fileSha(root, item.sourceAudio.path), item.sourceAudio.sha256,
         `Set ${artifact.set} Q${item.question}: supplemental source audio changed`);
     }
-    if (item.method.endsWith('ACADEMIC_EXCERPT_ALIGNMENT')) {
+    if (['EXACT_ASR_SLICE', 'KEYED_ANSWER_EXACT_ASR_SLICE'].includes(item.method)) {
+      assert.ok(Array.isArray(item.semanticFocus) && item.semanticFocus.length > 0,
+        `Set ${artifact.set} Q${item.question}: exact ASR correction must declare semantic focus`);
+      const normalizedPhrase = normalizedAudibleWords(item.audiblePhrase).join(' ');
+      for (const focus of item.semanticFocus) {
+        assert.ok(normalizedPhrase.includes(normalizedAudibleWords(focus).join(' ')),
+          `Set ${artifact.set} Q${item.question}: exact ASR slice is missing semantic focus "${focus}"`);
+      }
+    } else if (item.method.endsWith('ACADEMIC_EXCERPT_ALIGNMENT')) {
       assert.equal(audibleSimilarity(academic.sourceExcerpt, item.audiblePhrase), item.alignmentScore,
         `Set ${artifact.set} Q${item.question}: alignment score is stale`);
       const answerSupportScore = Math.max(0, ...(academic.correctOptions ?? [])
@@ -273,6 +290,13 @@ export function auditSet1ListeningEvidenceArtifact({ root, mock, artifact }) {
     'Set 1: audible artifact digest is stale');
   assert.equal(artifact.schemaVersion, 1);
   assert.equal(artifact.status, 'PASS');
+  assert.deepEqual(artifact.independentReview, {
+    reviewer: { kind: 'academic-agent', id: '/root/objective_reviewer_final2' },
+    reviewedAt: '2026-10-20',
+    artifactPackageSha256: '2018efdf3ffbe5db36252929e456123d709c2c4d8e260b11aba647ff0442bb14',
+    verdict: 'PASS',
+    scope: ['Q11', 'Q12'],
+  });
   assert.equal(artifact.set, 1);
   assert.equal(fileSha(root, artifact.audio.path), artifact.audio.sha256, 'Set 1: public audio changed');
   assert.equal(harnessTranscriptSha(mock), artifact.transcript.harnessTranscriptSha256,
@@ -299,7 +323,7 @@ export function auditSet1ListeningEvidenceArtifact({ root, mock, artifact }) {
     assert.ok(item.audiblePhrase.length >= 3 && item.rationale.length >= 20,
       `Set 1 Q${item.question}: audible evidence is incomplete`);
     assert.ok(['HIGH', 'MEDIUM'].includes(item.confidence));
-    assert.ok(['GLOBAL_COMPLETION', 'FOCUSED_REPAIR_COMPLETION',
+    assert.ok(['GLOBAL_COMPLETION', 'FOCUSED_REPAIR_COMPLETION', 'EXACT_ASR_SLICE', 'KEYED_ANSWER_EXACT_ASR_SLICE',
       'PINNED_REFERENCE_SELECTION_ALIGNMENT'].includes(item.method),
     `Set 1 Q${item.question}: unsupported evidence method`);
     assert.equal(fileSha(root, item.sourceAsr.path), item.sourceAsr.sha256,
@@ -312,6 +336,15 @@ export function auditSet1ListeningEvidenceArtifact({ root, mock, artifact }) {
       `Set 1 Q${item.question}: master start timecode changed`);
     assert.equal(item.endSeconds, Number((item.sourceAsr.endSeconds + offset).toFixed(3)),
       `Set 1 Q${item.question}: master end timecode changed`);
+    if (['EXACT_ASR_SLICE', 'KEYED_ANSWER_EXACT_ASR_SLICE'].includes(item.method)) {
+      assert.ok(Array.isArray(item.semanticFocus) && item.semanticFocus.length > 0,
+        `Set 1 Q${item.question}: exact ASR correction must declare semantic focus`);
+      const normalizedPhrase = normalizedAudibleWords(item.audiblePhrase).join(' ');
+      for (const focus of item.semanticFocus) {
+        assert.ok(normalizedPhrase.includes(normalizedAudibleWords(focus).join(' ')),
+          `Set 1 Q${item.question}: exact ASR slice is missing semantic focus "${focus}"`);
+      }
+    }
     if (item.method === 'PINNED_REFERENCE_SELECTION_ALIGNMENT') {
       assert.ok(Number.isFinite(item.alignmentScore) && item.alignmentScore >= 0 && item.alignmentScore <= 1,
         `Set 1 Q${item.question}: invalid selection alignment score`);

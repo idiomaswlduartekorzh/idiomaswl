@@ -13,11 +13,17 @@ export default async function ExamAccessBoundary({
   examLabel,
   language,
   children,
+  lockedFallback,
+  redactLockedChildren = false,
 }: {
   examSlug: XpressExamSlug;
   examLabel: string;
   language: WelearnLanguage;
   children: ReactNode;
+  /** Optional server-rendered shell that contains no protected assessment payload. */
+  lockedFallback?: ReactNode;
+  /** Discard protected children from the returned RSC tree unless this user may start. */
+  redactLockedChildren?: boolean;
 }) {
   let user: { id: string; email_confirmed_at?: string | null } | null = null;
   try {
@@ -50,11 +56,14 @@ export default async function ExamAccessBoundary({
     }
   }
 
+  const mayStart = !['anonymous', 'locked'].includes(access.level);
+  const visibleChildren = redactLockedChildren && !mayStart ? lockedFallback ?? null : children;
+
   return <ExamAccessGate
     access={access}
     authenticated={authenticated}
     freeClaimAvailable={freeClaimAvailable}
     examLabel={examLabel}
     language={language}
-  >{children}</ExamAccessGate>;
+  >{visibleChildren}</ExamAccessGate>;
 }

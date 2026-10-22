@@ -11,12 +11,12 @@
   "transcript": {
     "effectiveTranscriptSha256": "9bfab3debd6681ef2307ae28612b87682f4d30414d7a952bd2e0effd0efbe86e",
     "harnessTranscriptSha256": "c39eb4e036e4fcd19a32b61cfd34da8ab034ed681827410ff6273f9c764cdb3e",
-    "academicListeningMaterialSha256": "9b2a6d2b7f34ebd2f43a7a0008a26eeb0f3c6e0e1f3a4012c20924645dafa411"
+    "academicListeningMaterialSha256": "6857e0a0d62205cc1ef8f281e18a536a594864e54954c1592d917743f51b5a52"
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-2-objective-review.json",
-    "fileSha256": "04a0ebe84668c423e080c8e11dda5410cbd5f628b590250c2a4de9e3227dd12c",
-    "reviewSha256": "1808a6f8daf7db6b2f7524d12cd13b12fd664defd0aec20d789b7fb01f8b9de2"
+    "fileSha256": "65ccbcfc83a200392916c450f114d18fb6a580c2acc26ccb9681cf45c2d29e54",
+    "reviewSha256": "18af936868d101fd056250789287a1ac6855698ffac920d561b65d718cb0ed6d"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-2/ace8eee3f66f-staged-asr-qa-set-2.json",
@@ -453,22 +453,32 @@
       "question": 21,
       "responseKey": "l3q21",
       "part": 3,
-      "academicEvidenceSha256": "a065691f5d905b756968b47a41320af15a0a6fb8247d3f41a5fb2e80866fb994",
-      "academicExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
-      "startSeconds": 914.9599999999999,
-      "endSeconds": 920.76,
-      "audiblePhrase": "Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-      "audiblePhraseSha256": "bc752ef900fe506d95a63c15c39be81e4e8d61634a064ae3fcce7c1a3a65c6e1",
-      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
-      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "academicEvidenceSha256": "5ef7271206505850afcabb346df5a47ac173c55a362e58e5e067f9f8cd9187df",
+      "academicExcerptSha256": "b02b87bd6f058c032b9dbc2f5cda3f9e7f89ae9471f505867dee283209bb6ad7",
+      "startSeconds": 921.78,
+      "endSeconds": 937.7,
+      "audiblePhrase": "Yes, overall I thought it was quite positive. She liked the section on solar power, but said we need to develop our argument about wind energy more. I agree. I think we relied too much on statistics and not enough on case studies. Real-world examples would make it more convincing.",
+      "audiblePhraseSha256": "0be23ec6f438951638dd4ff9f22157f1669462b4233c735752b4fcf3b399835f",
+      "rationale": "This exact ASR slice contains Sarah’s proposed case studies and real-world examples, while the revised options leave one defensible keyed change.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "alignmentScore": 0.9524,
-      "answerSupportScore": 0,
+      "asrMatchKind": "exact",
+      "semanticFocus": [
+        "case studies",
+        "real-world examples"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-2/9b123313cf5e-whisper-set-2.json",
         "sha256": "9b123313cf5e82b26acae73b71898e36e898d7f5877fc61f6015c7b272c47012",
-        "startSeconds": 914.9599999999999,
-        "endSeconds": 920.76
+        "startSeconds": 921.78,
+        "endSeconds": 937.7
       }
     },
     {
@@ -497,44 +507,64 @@
       "question": 23,
       "responseKey": "l3q23",
       "part": 3,
-      "academicEvidenceSha256": "2c5ae8fa274ed3f45fd32c9eb071361db98dc2857b35c5f31773f2a1d55c6053",
-      "academicExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
-      "startSeconds": 914.9599999999999,
-      "endSeconds": 920.76,
-      "audiblePhrase": "Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-      "audiblePhraseSha256": "bc752ef900fe506d95a63c15c39be81e4e8d61634a064ae3fcce7c1a3a65c6e1",
-      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
-      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "academicEvidenceSha256": "030d592968798bcc15c90e0c9c27af98d17452e2d03afef74a2a29a6919bd788",
+      "academicExcerptSha256": "8892bba3341491362d72e1277a286e21cb07b77d48fa2acee52ac7abc7249aae",
+      "startSeconds": 998.6,
+      "endSeconds": 1002.28,
+      "audiblePhrase": "I think revise. Adding a new section might make the report too long.",
+      "audiblePhraseSha256": "a89af39be53ac6a8317afd00307421da66066b90b7c9a583091fff2a533e4c97",
+      "rationale": "This exact ASR slice explicitly chooses revising the existing material instead of adding a new section.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "alignmentScore": 0.9524,
-      "answerSupportScore": 0.25,
+      "asrMatchKind": "exact",
+      "semanticFocus": [
+        "revise",
+        "new section"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-2/9b123313cf5e-whisper-set-2.json",
         "sha256": "9b123313cf5e82b26acae73b71898e36e898d7f5877fc61f6015c7b272c47012",
-        "startSeconds": 914.9599999999999,
-        "endSeconds": 920.76
+        "startSeconds": 998.6,
+        "endSeconds": 1002.28
       }
     },
     {
       "question": 24,
       "responseKey": "l3q24",
       "part": 3,
-      "academicEvidenceSha256": "ebc1defc8165eb0eaaf179f51095c3a8dd422d05a2575dbc50d37ac05dda699e",
-      "academicExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
-      "startSeconds": 914.9599999999999,
-      "endSeconds": 920.76,
-      "audiblePhrase": "Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-      "audiblePhraseSha256": "bc752ef900fe506d95a63c15c39be81e4e8d61634a064ae3fcce7c1a3a65c6e1",
-      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
-      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "academicEvidenceSha256": "ee265c4e418ddcfa54776427283aedf0c0930ee1cef0944f457acb48346f81c6",
+      "academicExcerptSha256": "e01b0db17a56c9ae2d64c461f0f0ec6c07122939f161151264e7f1a2e4fc1a8d",
+      "startSeconds": 1031.02,
+      "endSeconds": 1040.32,
+      "audiblePhrase": "Exactly. Now what about the conclusion? I felt it was quite weak. Yes, we basically just summarized what we'd said. We need to make some stronger recommendations.",
+      "audiblePhraseSha256": "4dccd6f098f31c854c225b5acab9f3fd5cc34a76a1fcd714798c0c98833174af",
+      "rationale": "This exact ASR slice states that the conclusion merely summarized the report and needs stronger recommendations.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "alignmentScore": 0.9524,
-      "answerSupportScore": 0.125,
+      "asrMatchKind": "exact",
+      "semanticFocus": [
+        "summarized",
+        "stronger recommendations"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-2/9b123313cf5e-whisper-set-2.json",
         "sha256": "9b123313cf5e82b26acae73b71898e36e898d7f5877fc61f6015c7b272c47012",
-        "startSeconds": 914.9599999999999,
-        "endSeconds": 920.76
+        "startSeconds": 1031.02,
+        "endSeconds": 1040.32
       }
     },
     {
@@ -880,5 +910,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "b54b71b45a6c548ab587134aeb67a64304b4889957d8568bee2c0857804fce93"
+  "artifactSha256": "790cb09f05f8de0fead9decb510561e2ab9919c30dc9c39d6d9fe6e3f4e7ae37"
 }

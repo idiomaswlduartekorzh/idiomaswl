@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "status": "PASS",
   "set": 17,
-  "generatedAt": "2026-09-12",
+  "generatedAt": "2026-09-09",
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-17.mp3",
     "path": "public/audio/ielts/ielts-listening-set-17.mp3",
@@ -15,8 +15,8 @@
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-17-objective-review.json",
-    "fileSha256": "10d002b3d6c94de3902957366546c38a4572d85af6a731e725227c484b98553b",
-    "reviewSha256": "18ed694bcf19e13767f01c635548bf80826aec4b3dcf2bbef13c4aeac663a095"
+    "fileSha256": "d4b10c4c29f7333e61841ed6ed89791d3756bf6348303ebd1bc0b89b9f081d54",
+    "reviewSha256": "39826441576b77a270968aa6b6992e1a162c04b55d37532796da049af79c6075"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-17/02b58571e2ee-staged-asr-qa-set-17.json",
@@ -475,22 +475,32 @@
       "question": 22,
       "responseKey": "l3q22",
       "part": 3,
-      "academicEvidenceSha256": "310be68ed33b3e0a99bad7ae7b2eea719a02de90f188fb2849cafde912d20c70",
-      "academicExcerptSha256": "c4fb85be2d4da6ae25d6796513c3e0d67d482171606a1c674720d2278b32e649",
-      "startSeconds": 927.92,
-      "endSeconds": 944.5,
-      "audiblePhrase": "We also need to be careful about cause and association in the Sports Science Study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
-      "audiblePhraseSha256": "23fcbd9d380bf19d038bea4a2993720f2429d07a751c0306277a690072a5864f",
-      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
-      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "academicEvidenceSha256": "89da415a442beec9c6d1f8f5e73d371260ee415d8772cb0f4db7e451d38036ab",
+      "academicExcerptSha256": "d7356f4e90c90026b170fb2bdf9b047f818bd5427919d287ff7351930b316a8e",
+      "startSeconds": 917.92,
+      "endSeconds": 927.24,
+      "audiblePhrase": "We're recruiting university students, but only ones who already play sport competitively. We thought about using complete beginners, but their results would be too inconsistent.",
+      "audiblePhraseSha256": "872e26e455c72a1c3e45486bb0b6d9dc11b88c389009d87a9c8b88b9541f3789",
+      "rationale": "This exact ASR slice identifies competitive university students and explicitly rejects complete beginners.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "alignmentScore": 0.9762,
-      "answerSupportScore": 0.1667,
+      "asrMatchKind": "exact",
+      "semanticFocus": [
+        "university students",
+        "sport competitively"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-17/cfd6dceb3dbf-whisper-set-17.json",
         "sha256": "cfd6dceb3dbf3ed65b1e8871b4dd7220999b3865c3fd5168081da9b239eb1b49",
-        "startSeconds": 927.92,
-        "endSeconds": 944.5
+        "startSeconds": 917.92,
+        "endSeconds": 927.24
       }
     },
     {
@@ -563,21 +573,31 @@
       "question": 26,
       "responseKey": "l3-form__26",
       "part": 3,
-      "academicEvidenceSha256": "d63c21c92fe13c40e0b837986b89957505c68cb4bf639007bd3eff569461681e",
-      "academicExcerptSha256": "c4fb85be2d4da6ae25d6796513c3e0d67d482171606a1c674720d2278b32e649",
-      "startSeconds": 937.9,
-      "endSeconds": 941.68,
-      "audiblePhrase": "particularly when the sample is small, participants select themselves,",
-      "audiblePhraseSha256": "7868eedd520047ac67cdb726664bf52f25478f9eeab39b5261592cd10ab445e3",
-      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
-      "method": "GLOBAL_COMPLETION",
+      "academicEvidenceSha256": "e6dcd3c6a6720ae2e2495339ef2f40df21bdeb715c585c0d48deb04c78a3200f",
+      "academicExcerptSha256": "a06562fecd8cbc8b554c097de89d1c085659e35a1dca69ecb336da7abc1261df",
+      "startSeconds": 1126.86,
+      "endSeconds": 1137.66,
+      "audiblePhrase": "Now in terms of next steps, I'd strongly recommend increasing your sample size. Twenty participants really isn't enough to draw firm conclusions.",
+      "audiblePhraseSha256": "22fbc903402940a521b3aa9ca59d3fa35a8c6411cca27b835ca99147fd1d02e8",
+      "rationale": "This exact ASR slice explicitly recommends increasing the sample size.",
+      "method": "KEYED_ANSWER_EXACT_ASR_SLICE",
       "confidence": "HIGH",
       "asrMatchKind": "exact",
+      "semanticFocus": [
+        "sample size"
+      ],
+      "reviewStatus": "APPROVED",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+      },
+      "reviewedAt": "2026-10-22",
+      "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-17/cfd6dceb3dbf-whisper-set-17.json",
         "sha256": "cfd6dceb3dbf3ed65b1e8871b4dd7220999b3865c3fd5168081da9b239eb1b49",
-        "startSeconds": 937.9,
-        "endSeconds": 941.68
+        "startSeconds": 1126.86,
+        "endSeconds": 1137.66
       }
     },
     {
@@ -880,5 +900,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "54710fcb7ebf9c7f3a6cf362b696f8203475ec2f97ddc6440e9e8ccc257083f2"
+  "artifactSha256": "783247e126fe583365d184d8457217058c3ab4cbd6a79deb234e4203640ca461"
 }

@@ -10,6 +10,19 @@
     "kind": "academic-agent",
     "id": "codex-audit-harness"
   },
+  "remediationReview": {
+    "status": "PASS",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+    },
+    "reviewedAt": "2026-10-22",
+    "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d",
+    "scope": [
+      "Listening Q13"
+    ],
+    "releaseAuthorized": false
+  },
   "methodology": [
     "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
     "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
@@ -1342,7 +1355,16 @@
       "sourceExcerpt": "Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.",
       "sourceExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
       "verdict": "SUPPORTED",
-      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "rationale": "The cited sentence states that the international-flight desks are on level two; the written form and numeral are equivalent and both stay within the one-word limit.",
+      "independentReview": {
+        "verdict": "PASS",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
+        },
+        "reviewedAt": "2026-10-22",
+        "artifactPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
+      },
       "sourceAnswerForm": "two",
       "acceptedAnswerEvidence": [
         {
@@ -3571,5 +3593,5 @@
       "reason": "Removed an unsupported 2020 date; the passage attributes the finding only to separate research."
     }
   ],
-  "reviewSha256": "745e9ade3d03b7595fee69164d9424c84f3b590729565f4b27babaefab61f90c"
+  "reviewSha256": "d4b0292516e3f098122ac1892284932c7ee122f9985568ae018483f31444e62f"
 }

@@ -3,6 +3,23 @@
   "status": "PASS",
   "set": 4,
   "generatedAt": "2026-09-12",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "/root/objective_reviewer_final2"
+  },
+  "reviewedAt": "2026-10-20",
+  "independentReview": {
+    "reviewer": { "kind": "academic-agent", "id": "/root/objective_reviewer_final2" },
+    "reviewedAt": "2026-10-20",
+    "artifactPackageSha256": "2018efdf3ffbe5db36252929e456123d709c2c4d8e260b11aba647ff0442bb14",
+    "verdict": "PASS",
+    "scope": ["Q28", "Q29", "Q30"]
+  },
+  "supersededReview": {
+    "kind": "qa-agent",
+    "id": "codex-listening-evidence-q1-q40",
+    "reason": "The prior artifact inherited the invalid 10/10/7/13 partition. Q28-Q30 and the repaired 4×10 binding require independent review."
+  },
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-4.mp3",
     "path": "public/audio/ielts/ielts-listening-set-4.mp3",
@@ -11,12 +28,12 @@
   "transcript": {
     "effectiveTranscriptSha256": "8daf05b6b482fbf6d577766c8ece6e724dfbf6ac1ea395e4bab74326dfc22b3b",
     "harnessTranscriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
-    "academicListeningMaterialSha256": "9b6095b3a01b722f0aad4123dea6f9707d56dcc7fdbb7328dcb27add963f040f"
+    "academicListeningMaterialSha256": "1a89215e864c6cb2127510b8d4e162a8beead0bb370f55a847f3df8fbbce5292"
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
-    "fileSha256": "34e50737ef02afd9e587322e8dcefb0f2ae9258f8b0a3d6fdcbddc1d11240014",
-    "reviewSha256": "073bdecd0b8d06985c02385d48821fe454dcef813955d4abb7391900b545acdb"
+    "fileSha256": "d06ae1206c43df5a6855826f292309424cd974cf1a54571a1ec37ab8d4447b51",
+    "reviewSha256": "31d3875cf40cde2eb4d5f47c738b1c60c6b17499f704858bb8264d5cee2d3299"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-4/59007598e855-staged-asr-qa-set-4.json",
@@ -605,65 +622,68 @@
     },
     {
       "question": 28,
-      "responseKey": "l4-notes__28",
-      "part": 4,
-      "academicEvidenceSha256": "d7c3a9f78dcd3506af9257f2855b2aa0df82b2f5727ef472d3f3df7ed7423fb6",
-      "academicExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
-      "startSeconds": 1461.32,
-      "endSeconds": 1464.76,
-      "audiblePhrase": "Migration is fundamentally a response to seasonal changes in food availability.",
-      "audiblePhraseSha256": "eb33c7b5e3f74a348e29699a8fafb2c01f488667f6ddc63eb12d052f7aacc116",
-      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
-      "method": "GLOBAL_COMPLETION",
+      "responseKey": "l3q28",
+      "part": 3,
+      "academicEvidenceSha256": "23037e9d41d25d97080f0afe069d07ba6ebc2c0b724dfa36d45ee2d0e9cced09",
+      "academicExcerptSha256": "7c803c6a1efdf1d85a0d07e928cfd486e243fd3f4635a7132ac8c5f3eacd07a2",
+      "startSeconds": 1218.84,
+      "endSeconds": 1229.32,
+      "audiblePhrase": "I was thinking we could use a survey, it's practical given our time constraints, but we'd need to control for baseline mental health, pre-existing conditions and offline social support.",
+      "audiblePhraseSha256": "64e6b3922b8e498c1944f7765dfeab25c3acaf73c4227d0af18fe7ff085a9b43",
+      "rationale": "The exact ASR slice states why a survey is practical and lists the controls; this mapping passed independent academic semantic review.",
+      "method": "EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "asrMatchKind": "exact",
+      "reviewStatus": "APPROVED",
+      "semanticFocus": ["survey", "practical given our time constraints"],
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-4/eeecdbc6de30-whisper-set-4.json",
         "sha256": "eeecdbc6de3032594f51a316c36ebf5eb04101b85626979e01afd8a918c5dd68",
-        "startSeconds": 1461.32,
-        "endSeconds": 1464.76
+        "startSeconds": 1218.84,
+        "endSeconds": 1229.32
       }
     },
     {
       "question": 29,
-      "responseKey": "l4-notes__29",
-      "part": 4,
-      "academicEvidenceSha256": "981b200b2c07ad7349666278483480275966481aa6d0e144aeb12c4ed7222ae9",
-      "academicExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
-      "startSeconds": 1465.38,
-      "endSeconds": 1473.02,
-      "audiblePhrase": "During summer in the northern hemisphere, insects, seeds and fruits are abundant, and the long daylight hours allow birds to forage for long periods.",
-      "audiblePhraseSha256": "315fd03f65a583941c48819877d2365b1a8f11dde9dffba333681a67883ac129",
-      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
-      "method": "GLOBAL_COMPLETION",
+      "responseKey": "l3q29",
+      "part": 3,
+      "academicEvidenceSha256": "a45fec2a44fcfd7034dcec4c94c01dc93e278c97d6507b8771436f684c1d84ad",
+      "academicExcerptSha256": "7c803c6a1efdf1d85a0d07e928cfd486e243fd3f4635a7132ac8c5f3eacd07a2",
+      "startSeconds": 1218.84,
+      "endSeconds": 1229.32,
+      "audiblePhrase": "I was thinking we could use a survey, it's practical given our time constraints, but we'd need to control for baseline mental health, pre-existing conditions and offline social support.",
+      "audiblePhraseSha256": "64e6b3922b8e498c1944f7765dfeab25c3acaf73c4227d0af18fe7ff085a9b43",
+      "rationale": "The exact ASR slice lists all three controls in the keyed option; this mapping passed independent academic semantic review.",
+      "method": "EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "asrMatchKind": "exact",
+      "reviewStatus": "APPROVED",
+      "semanticFocus": ["baseline mental health", "offline social support"],
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-4/eeecdbc6de30-whisper-set-4.json",
         "sha256": "eeecdbc6de3032594f51a316c36ebf5eb04101b85626979e01afd8a918c5dd68",
-        "startSeconds": 1465.38,
-        "endSeconds": 1473.02
+        "startSeconds": 1218.84,
+        "endSeconds": 1229.32
       }
     },
     {
       "question": 30,
-      "responseKey": "l4-notes__30",
-      "part": 4,
-      "academicEvidenceSha256": "ea0eb7f2daadd969d3bb2c949438eba522f7711ca99f4f900d1809c4b703181d",
-      "academicExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
-      "startSeconds": 1474.02,
-      "endSeconds": 1481.4,
-      "audiblePhrase": "In winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
-      "audiblePhraseSha256": "91d5739f9386ee0eda4d5f359524f18501552ec25352a6c5bf57e18fd70855f1",
-      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
-      "method": "GLOBAL_COMPLETION",
+      "responseKey": "l3q30",
+      "part": 3,
+      "academicEvidenceSha256": "a9289380d2c21b23f9a74d41fb0436d29e86147c8370e14686aa7367302efd20",
+      "academicExcerptSha256": "aacf3010dca4877ba29517f0a6bf6f52562ee325100d0a3c42710d44750bf56c",
+      "startSeconds": 1284.22,
+      "endSeconds": 1298.86,
+      "audiblePhrase": "That would be great for objective data rather than just self-reports, which tend to be unreliable, people consistently underestimate how long they spend on their phones. Let's include both then, we'll ask them to share weekly screen time summaries from their phone settings.",
+      "audiblePhraseSha256": "2d1b05f7d9a27d4d29e7a902b6db7e6528ba96a3d396b33b17e53a6320618dbb",
+      "rationale": "The consecutive exact ASR segments state that both self-reports and weekly screen-time summaries will be collected; this mapping passed independent academic semantic review.",
+      "method": "EXACT_ASR_SLICE",
       "confidence": "HIGH",
-      "asrMatchKind": "exact",
+      "reviewStatus": "APPROVED",
+      "semanticFocus": ["self-reports", "weekly screen time summaries"],
       "sourceAsr": {
         "path": "config/ielts-harness/listening-evidence/sources/set-4/eeecdbc6de30-whisper-set-4.json",
         "sha256": "eeecdbc6de3032594f51a316c36ebf5eb04101b85626979e01afd8a918c5dd68",
-        "startSeconds": 1474.02,
-        "endSeconds": 1481.4
+        "startSeconds": 1284.22,
+        "endSeconds": 1298.86
       }
     },
     {
@@ -886,5 +906,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "b85851999f516a226cecc5a545644898ef2d4744ba6cbf2d9c166836d4465a9d"
+  "artifactSha256": "edad629254c577746acaa5216d14d04601122974d526b80629f5689bd803a971"
 }

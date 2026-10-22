@@ -3,14 +3,14 @@
   "set": 2,
   "generatedFrom": {
     "source": "src/data/mocks/ielts-set-2.ts",
-    "sourceSha256": "b04c1cbec688a2a560b916176873550b624b8dd0807610d605985950f8b6e2e8",
-    "releaseFingerprintSha256": "39056cba9b33d96c119b8a55d015d87d8ba0efa38b70161a7949d58abf5880be"
+    "sourceSha256": "339ef1107f0ae6dfbe510394b65255d8644516c4423a53e32eb641ad14315c1e",
+    "releaseFingerprintSha256": "bd575c2b6110545d5800e048b225062ccf56df861687ec1606d5be3b3b70df1c"
   },
   "listening": {
     "binding": {
       "audioSha256": "f14616ac55ca16256b7675bc4542062bb058068dfc0b5c16675d57218e6fcb62",
       "transcriptSha256": "c39eb4e036e4fcd19a32b61cfd34da8ab034ed681827410ff6273f9c764cdb3e",
-      "objectiveSha256": "2b7e3afccff799a49740cda2b43d9eecd8e5ef717d90aeb76de52b17e9792955"
+      "objectiveSha256": "7b0aa639c6ce2fd3c128248d3dcaaed65879ea4a5e3acab481d33c5268f6f7eb"
     },
     "technicalQa": {
       "status": "PASS",
@@ -24,7 +24,7 @@
       "audioSha256": "f14616ac55ca16256b7675bc4542062bb058068dfc0b5c16675d57218e6fcb62",
       "transcriptSha256": "c39eb4e036e4fcd19a32b61cfd34da8ab034ed681827410ff6273f9c764cdb3e",
       "evidencePath": "config/ielts-harness/listening-evidence/set-2-listening-evidence.json",
-      "evidenceSha256": "14c7a53aaad8cbc9a5d754b0a4ca30be79f170793e4cfbc018f7b7fbb123546f"
+      "evidenceSha256": "3e10074c6b3de7dbbc0e6d3732713e8eb3cd3325005fd6b007f060bfcddcc24a"
     },
     "questions": [
       {
@@ -331,16 +331,17 @@
         "question": 21,
         "responseKey": "l3q21",
         "part": 3,
-        "startSeconds": 914.9599999999999,
-        "endSeconds": 920.76,
-        "audiblePhrase": "Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "startSeconds": 921.78,
+        "endSeconds": 937.7,
+        "audiblePhrase": "Yes, overall I thought it was quite positive. She liked the section on solar power, but said we need to develop our argument about wind energy more. I agree. I think we relied too much on statistics and not enough on case studies. Real-world examples would make it more convincing.",
+        "rationale": "This exact ASR slice contains Sarah’s proposed case studies and real-world examples, while the revised options leave one defensible keyed change.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 22,
@@ -361,31 +362,33 @@
         "question": 23,
         "responseKey": "l3q23",
         "part": 3,
-        "startSeconds": 914.9599999999999,
-        "endSeconds": 920.76,
-        "audiblePhrase": "Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "startSeconds": 998.6,
+        "endSeconds": 1002.28,
+        "audiblePhrase": "I think revise. Adding a new section might make the report too long.",
+        "rationale": "This exact ASR slice explicitly chooses revising the existing material instead of adding a new section.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 24,
         "responseKey": "l3q24",
         "part": 3,
-        "startSeconds": 914.9599999999999,
-        "endSeconds": 920.76,
-        "audiblePhrase": "Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
-        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "startSeconds": 1031.02,
+        "endSeconds": 1040.32,
+        "audiblePhrase": "Exactly. Now what about the conclusion? I felt it was quite weak. Yes, we basically just summarized what we'd said. We need to make some stronger recommendations.",
+        "rationale": "This exact ASR slice states that the conclusion merely summarized the report and needs stronger recommendations.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 25,
@@ -632,7 +635,7 @@
   "reading": {
     "binding": {
       "readingSha256": "421c034c9f0d30e119a364cedf51a723f03e4585c8941aa521228a58bb9e1eb1",
-      "objectiveSha256": "2b7e3afccff799a49740cda2b43d9eecd8e5ef717d90aeb76de52b17e9792955"
+      "objectiveSha256": "7b0aa639c6ce2fd3c128248d3dcaaed65879ea4a5e3acab481d33c5268f6f7eb"
     },
     "questions": [
       {
@@ -1303,9 +1306,9 @@
   },
   "objectiveKey": {
     "status": "APPROVED",
-    "objectiveSha256": "2b7e3afccff799a49740cda2b43d9eecd8e5ef717d90aeb76de52b17e9792955",
+    "objectiveSha256": "7b0aa639c6ce2fd3c128248d3dcaaed65879ea4a5e3acab481d33c5268f6f7eb",
     "evidencePath": "config/ielts-harness/academic-reviews/set-2-objective-review.json",
-    "evidenceSha256": "04a0ebe84668c423e080c8e11dda5410cbd5f628b590250c2a4de9e3227dd12c",
+    "evidenceSha256": "65ccbcfc83a200392916c450f114d18fb6a580c2acc26ccb9681cf45c2d29e54",
     "reviewer": {
       "kind": "academic-agent",
       "id": "codex-academic-keys-2-7"
@@ -1313,9 +1316,9 @@
     "reviewedAt": "2026-09-09"
   },
   "ux": {
-    "status": "APPROVED",
+    "status": "PENDING",
     "binding": {
-      "contentSha256": "656bbe58ff9b39ebfe49c31d4dfd122ed42fbc6338f0c5ec6e49f0852373303d"
+      "contentSha256": "ef879d4442a16b155078fa3b00b382b8624990282fabab2111ddf60bfa0c81a5"
     },
     "viewports": [
       {
@@ -1329,21 +1332,19 @@
     ],
     "reviewer": {
       "kind": "ux-agent",
-      "id": "codex-ielts-runtime-review"
+      "id": ""
     },
-    "reviewedAt": "2026-09-12",
-    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
-    "evidenceSha256": "88264f02b6309db0003cba7343d92990fe730c28350e1b7042adec67eb7e1c55"
+    "reviewedAt": "",
+    "evidencePath": "",
+    "evidenceSha256": ""
   },
   "releaseApproval": {
-    "status": "APPROVED",
-    "releaseFingerprintSha256": "39056cba9b33d96c119b8a55d015d87d8ba0efa38b70161a7949d58abf5880be",
+    "status": "PENDING",
+    "releaseFingerprintSha256": "bd575c2b6110545d5800e048b225062ccf56df861687ec1606d5be3b3b70df1c",
     "reviewer": {
       "kind": "human",
-      "id": "David Duarte (workspace owner)"
+      "id": ""
     },
-    "reviewedAt": "2026-09-12T19:39:19.595Z",
-    "evidencePath": "config/ielts-harness/final-release-approval.json",
-    "evidenceSha256": "fe210b7b8a04559c1971598d77998f5848c5456167ef576770e8b6829d462642"
+    "reviewedAt": ""
   }
 }

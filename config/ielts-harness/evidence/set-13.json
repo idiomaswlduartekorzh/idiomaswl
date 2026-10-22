@@ -24,7 +24,7 @@
       "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
       "transcriptSha256": "28c5d09499917ca11fb444b294548dc7f4b588ada93a4614c262c4deb306ea9d",
       "evidencePath": "config/ielts-harness/listening-evidence/set-13-listening-evidence.json",
-      "evidenceSha256": "fe65795057791dacf815856a4fd3dcb743ed7ddd32d7a6fc2eff4dfdf5616e3e"
+      "evidenceSha256": "68c47756c26c1809dbca0e88b022d4b0ea7573a32735f0cf0d51f65001be8468"
     },
     "questions": [
       {
@@ -211,16 +211,17 @@
         "question": 13,
         "responseKey": "l2-form__13",
         "part": 2,
-        "startSeconds": 342.2,
-        "endSeconds": 347.08,
-        "audiblePhrase": "With premium you also get a free towel service and two guest passes every month.",
-        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "startSeconds": 567.88,
+        "endSeconds": 574.74,
+        "audiblePhrase": "The check-in desks for international flights are on level 2 and they open exactly 3 hours before departure.",
+        "rationale": "This exact ASR slice states that the international-flight check-in desks are on level 2.",
         "status": "APPROVED",
         "reviewer": {
-          "kind": "qa-agent",
-          "id": "codex-listening-evidence-q1-q40"
+          "kind": "academic-agent",
+          "id": "/root/objective_remediation_final4/literal_semantic_reviewer"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-10-22",
+        "reviewPackageSha256": "08a9c260482f79f260013565727ae72d132dbedabae7bd9c289c4c8dda16652d"
       },
       {
         "question": 14,
@@ -1305,7 +1306,7 @@
     "status": "APPROVED",
     "objectiveSha256": "c63655ea107f49f2511672e7c4c1666e91b70dcf04c633c49dd02c0dbd015010",
     "evidencePath": "config/ielts-harness/academic-reviews/set-13-objective-review.json",
-    "evidenceSha256": "d01a2be24eddc382bb1f75cc13c1909774bf1ba7d2902f285dffc76249a70f87",
+    "evidenceSha256": "632d7522ae25963095083bece8f9519c2732e7fda046aae7e7180c819e180d0e",
     "reviewer": {
       "kind": "academic-agent",
       "id": "codex-audit-harness"

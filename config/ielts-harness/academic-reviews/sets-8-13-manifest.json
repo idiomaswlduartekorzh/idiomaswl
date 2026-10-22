@@ -66,8 +66,8 @@
       "objectivePoints": 80,
       "ambiguousPoints": 0,
       "objectiveMaterialSha256": "42e7d6078f97145b8de08806aa98cccbd6bafb14402341cadf76266abd72cac7",
-      "reviewSha256": "745e9ade3d03b7595fee69164d9424c84f3b590729565f4b27babaefab61f90c",
-      "fileSha256": "d01a2be24eddc382bb1f75cc13c1909774bf1ba7d2902f285dffc76249a70f87",
+      "reviewSha256": "d4b0292516e3f098122ac1892284932c7ee122f9985568ae018483f31444e62f",
+      "fileSha256": "632d7522ae25963095083bece8f9519c2732e7fda046aae7e7180c819e180d0e",
       "reviewPath": "config/ielts-harness/academic-reviews/set-13-objective-review.json"
     }
   ],
@@ -80,5 +80,5 @@
     "correctedAcceptedVariants": 2,
     "correctedQuestionStems": 1
   },
-  "manifestSha256": "9a4cd3411729407f3fd80f6b7edb98e44bd86e9d2fd45265f7bfb9a7d082e1de"
+  "manifestSha256": "eadd1e7fdda8c68533eb9ab05cd815d0eaa83d01c886199dd06227c1b65748bb"
 }
