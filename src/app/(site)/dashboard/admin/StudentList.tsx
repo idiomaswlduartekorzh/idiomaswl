@@ -80,6 +80,15 @@ function PlanBadge({ plan }: { plan: StudentPlan }) {
 }
 
 // ─── Invite modal ─────────────────────────────────────────────────────────────
+type StudentCreationError = { message: string; studentId?: string }
+
+function withCreationTimeout<T>(operation: Promise<T>): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timeout = window.setTimeout(() => reject(new Error('student_creation_timeout')), 30000)
+    operation.then(resolve, reject).finally(() => window.clearTimeout(timeout))
+  })
+}
+
 function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (name: string) => void }) {
   const [email,   setEmail]   = useState('')
   const [name,    setName]    = useState('')
@@ -89,26 +98,35 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
   const [examSlug, setExamSlug] = useState<XpressExamSlug | ''>('cambridge-b2')
   const [plan,    setPlan]    = useState<StudentPlan>('preparacion')
   const [loading, setLoading] = useState(false)
-  const [error,   setError]   = useState<string | null>(null)
+  const [error,   setError]   = useState<StudentCreationError | null>(null)
 
   async function handleSubmit() {
-    if (!email.trim() || !name.trim()) { setError('Email y nombre son requeridos'); return }
+    if (!email.trim() || !name.trim()) { setError({ message: 'Email y nombre son requeridos' }); return }
     setLoading(true)
     setError(null)
-    const result = await createManagedStudent({
-      email: email.trim(),
-      fullName: name.trim(),
-      subject,
-      language,
-      level,
-      plan,
-      examSlug: examSlug || null,
-    })
-    setLoading(false)
-    if (result.ok) {
-      onSuccess(name.trim())
-    } else {
-      setError(result.error)
+    try {
+      const result = await withCreationTimeout(createManagedStudent({
+        email: email.trim(),
+        fullName: name.trim(),
+        subject,
+        language,
+        level,
+        plan,
+        examSlug: examSlug || null,
+      }))
+      if (result.ok) {
+        onSuccess(name.trim())
+      } else {
+        setError({ message: result.error, studentId: result.studentId })
+      }
+    } catch (submitError) {
+      setError({
+        message: submitError instanceof Error && submitError.message === 'student_creation_timeout'
+          ? 'La operación tardó demasiado. Actualiza la lista antes de reintentar: la cuenta podría haberse creado.'
+          : 'La creación se interrumpió. Actualiza la lista para comprobar si la cuenta quedó creada y vuelve a intentarlo.',
+      })
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -211,9 +229,14 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
           </label>
 
           {error && (
-            <p style={{ margin: 0, fontSize: 12, color: '#dc2626', background: '#fee2e2', padding: '8px 12px', borderRadius: 8 }}>
-              {error}
-            </p>
+            <div role="alert" aria-live="polite" style={{ margin: 0, fontSize: 12, color: '#991b1b', background: '#fee2e2', padding: '9px 12px', borderRadius: 8 }}>
+              <p style={{ margin: 0 }}>{error.message}</p>
+              {error.studentId ? (
+                <Link href={`/dashboard/admin/estudiantes/${error.studentId}`} style={{ display: 'inline-block', marginTop: 6, color: '#991b1b', fontWeight: 800 }}>
+                  Abrir la ficha del estudiante →
+                </Link>
+              ) : null}
+            </div>
           )}
 
           <div style={{ display: 'flex', gap: 10, marginTop: 4 }}>

@@ -51,11 +51,23 @@ test('the administrator UI exposes profile, access, communication, notes, and as
   const detail = read('src/app/(site)/dashboard/admin/estudiantes/[studentId]/page.tsx');
   assert.match(list, /createManagedStudent/);
   assert.match(list, /Crear y enviar acceso/);
+  assert.match(list, /finally \{/);
+  assert.match(list, /student_creation_timeout/);
+  assert.match(list, /Abrir la ficha del estudiante/);
   assert.match(detail, /Perfil académico/);
   assert.match(detail, /Accesos a exámenes/);
   assert.match(detail, /Enviar mensaje/);
   assert.match(detail, /Notas privadas/);
   assert.match(detail, /Guardar y notificar/);
+});
+
+test('student creation is recoverable and reports partial completion', () => {
+  const actions = read('src/lib/actions/studentOperations.ts');
+  assert.doesNotMatch(actions, /auth\.admin\.listUsers/);
+  assert.match(actions, /isExistingAccountError/);
+  assert.match(actions, /existingProfile/);
+  assert.match(actions, /logCreationFailure/);
+  assert.match(actions, /La cuenta quedó creada, pero Resend no pudo entregar el correo/);
 });
 
 test('students can replace temporary credentials from their private profile', () => {
