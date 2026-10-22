@@ -34,6 +34,15 @@ linear-gradient(145deg,#f8faff 0%,#f2f5fc 52%,#edf2fb 100%)}
 .curveCard,.insightColumn article{background:rgba(247,249,255,.68);border-color:rgba(46,66,135,.1);box-shadow:inset 0 1px rgba(255,255,255,.9)}
 .assignmentCheck{background:rgba(224,231,255,.9);color:#3157d5;box-shadow:inset 0 0 0 1px rgba(49,87,213,.12)}
 .assignmentDone{background:rgba(236,249,244,.72)}
+.submissionForm{display:grid;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.submissionForm textarea,.submissionForm input{width:100%;padding:10px 12px;border:1px solid rgba(46,66,135,.16);border-radius:11px;background:rgba(255,255,255,.82);color:var(--ink);font:inherit;font-size:11px;box-sizing:border-box}
+.submissionForm textarea:focus,.submissionForm input:focus{outline:3px solid rgba(49,87,213,.1);border-color:rgba(49,87,213,.45)}
+.submissionForm button{justify-self:start;background:#3157d5!important}
+.submissionBox,.feedbackBox{margin-top:10px;padding:11px 12px;border-radius:12px;background:rgba(238,242,255,.78);border:1px solid rgba(49,87,213,.1)}
+.submissionBox strong,.feedbackBox strong{display:block;margin-bottom:5px;font-size:10px;color:#172154}
+.submissionBox p,.feedbackBox p{white-space:pre-wrap;color:#4f5878!important}
+.feedbackBox{background:rgba(232,249,240,.85);border-color:rgba(20,115,67,.12)}
+.feedbackBox strong{color:#147343}
 .courseCard{background:linear-gradient(120deg,rgba(19,31,82,.98),rgba(32,55,136,.96));border:1px solid rgba(255,255,255,.14);box-shadow:0 14px 34px rgba(18,31,82,.18),inset 0 1px rgba(255,255,255,.13)}
 .teacherMark span:nth-child(1){background:#ef3340}.teacherMark span:nth-child(2){background:#3157d5}.teacherMark span:nth-child(3){background:#ef3340}.courseCard div:nth-child(2)>span{color:#9db2ff}
 @media(max-width:900px){.mobileMenu{position:sticky;top:0;z-index:50;background:rgba(18,31,82,.88);border-bottom:1px solid rgba(255,255,255,.15);box-shadow:0 12px 32px rgba(17,31,82,.14);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%)}.hero{height:175px}}

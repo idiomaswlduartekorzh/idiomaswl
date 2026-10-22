@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { signOut } from '@/lib/actions/signOut';
-import { setStudentAssignmentCompleted } from '@/lib/actions/studentAssignments';
+import { setStudentAssignmentCompleted, submitStudentAssignment } from '@/lib/actions/studentAssignments';
 import { STUDENT_PRODUCT_COPY } from '@/lib/student-dashboard/catalog';
 import type { StudentDashboardData } from '@/lib/student-dashboard/types';
 import styles from './student-dashboard.module.css';
@@ -85,8 +85,12 @@ function Assignments({ data, preview }: { data: StudentDashboardData; preview: b
     <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Trabajo con tu profesor</p><h2 id="assignments-title">Mis asignaciones</h2></div><span className={styles.assignmentCount}>{data.assignments.filter((item) => item.status === 'assigned').length} pendientes</span></header>
     {data.assignments.length ? <div className={styles.assignmentList}>{data.assignments.map((assignment) => <article className={assignment.status === 'completed' ? styles.assignmentDone : ''} key={assignment.id}>
       <div className={styles.assignmentCheck}>{assignment.status === 'completed' ? '✓' : '○'}</div>
-      <div><span>{assignment.status === 'completed' ? 'Completada' : assignment.dueAt ? `Entrega ${dateLabel(assignment.dueAt)}` : 'Sin fecha límite'}</span><h3>{assignment.title}</h3><p>{assignment.instructions}</p>{assignment.resourceUrl ? <Link href={assignment.resourceUrl}>Abrir material →</Link> : null}</div>
-      {preview ? <button type="button" disabled>{assignment.status === 'completed' ? 'Completada' : 'Marcar como lista'}</button> : <form action={setStudentAssignmentCompleted}><input type="hidden" name="assignmentId" value={assignment.id} /><input type="hidden" name="completed" value={assignment.status === 'completed' ? 'false' : 'true'} /><button type="submit">{assignment.status === 'completed' ? 'Reabrir' : 'Marcar como lista'}</button></form>}
+      <div><span>{assignment.status === 'completed' ? `Entregada ${dateLabel(assignment.submittedAt ?? assignment.completedAt)}` : assignment.dueAt ? `Entrega ${dateLabel(assignment.dueAt)}` : 'Sin fecha límite'}</span><h3>{assignment.title}</h3><p>{assignment.instructions}</p>{assignment.resourceUrl ? <Link href={assignment.resourceUrl}>Abrir material →</Link> : null}
+        {assignment.status === 'assigned' && !preview ? <form action={submitStudentAssignment} className={styles.submissionForm}><input type="hidden" name="assignmentId" value={assignment.id} /><textarea aria-label={`Respuesta para ${assignment.title}`} name="submissionText" rows={4} maxLength={12000} placeholder="Escribe aquí tu respuesta, observaciones o el texto solicitado" /><input aria-label={`Enlace de entrega para ${assignment.title}`} name="submissionUrl" type="url" placeholder="https://... enlace de tu entrega (opcional)" /><button type="submit">Entregar tarea</button></form> : null}
+        {assignment.submissionText ? <div className={styles.submissionBox}><strong>Tu entrega</strong><p>{assignment.submissionText}</p>{assignment.submissionUrl ? <a href={assignment.submissionUrl} target="_blank" rel="noreferrer">Abrir enlace entregado →</a> : null}</div> : assignment.submissionUrl ? <div className={styles.submissionBox}><strong>Tu entrega</strong><a href={assignment.submissionUrl} target="_blank" rel="noreferrer">Abrir enlace entregado →</a></div> : null}
+        {assignment.teacherFeedback ? <div className={styles.feedbackBox}><strong>Retroalimentación de tu profesor</strong><p>{assignment.teacherFeedback}</p></div> : null}
+      </div>
+      {assignment.status === 'completed' && !preview ? <form action={setStudentAssignmentCompleted}><input type="hidden" name="assignmentId" value={assignment.id} /><input type="hidden" name="completed" value="false" /><button type="submit">Reabrir entrega</button></form> : preview ? <button type="button" disabled>{assignment.status === 'completed' ? 'Entregada' : 'Entregar'}</button> : null}
     </article>)}</div> : <div className={styles.empty}><span aria-hidden="true">✓</span><div><h3>Todo al día</h3><p>Tu profesor todavía no ha dejado nuevas asignaciones.</p></div></div>}
   </section>;
 }

@@ -1,12 +1,15 @@
 'use client'
 
-import { useState, useTransition, useCallback } from 'react'
+import { Fragment, useState, useTransition, useCallback } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { assignPlan } from '@/lib/actions/assignPlan'
 import { assignSubject } from '@/lib/actions/assignSubject'
 import type { StudentSubject } from '@/lib/actions/inviteStudent'
-import { inviteStudent, SUBJECT_LABELS } from '@/lib/actions/inviteStudent'
+import { SUBJECT_LABELS } from '@/lib/actions/inviteStudent'
+import { createManagedStudent } from '@/lib/actions/studentOperations'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
+import { WELEARN_LANGUAGE_OPTIONS, XPRESS_EXAM_OPTIONS, type WelearnLanguage, type XpressExamSlug } from '@/lib/student-onboarding/catalog'
 import type { ExamSubmission } from './JoseDashboardServer'
 
 export interface StudentRow {
@@ -15,6 +18,9 @@ export interface StudentRow {
   full_name: string | null
   plan: StudentPlan
   subject: string | null
+  language: string | null
+  level: string | null
+  active_exam_access: string[]
   enrolled_at: string | null
   simulacro_count: number
   completed_steps: number
@@ -77,7 +83,10 @@ function PlanBadge({ plan }: { plan: StudentPlan }) {
 function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (name: string) => void }) {
   const [email,   setEmail]   = useState('')
   const [name,    setName]    = useState('')
-  const [subject, setSubject] = useState<StudentSubject>('icfes')
+  const [subject, setSubject] = useState<StudentSubject>('fce')
+  const [language, setLanguage] = useState<WelearnLanguage>('ingles')
+  const [level, setLevel] = useState('B2')
+  const [examSlug, setExamSlug] = useState<XpressExamSlug | ''>('cambridge-b2')
   const [plan,    setPlan]    = useState<StudentPlan>('preparacion')
   const [loading, setLoading] = useState(false)
   const [error,   setError]   = useState<string | null>(null)
@@ -86,7 +95,15 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
     if (!email.trim() || !name.trim()) { setError('Email y nombre son requeridos'); return }
     setLoading(true)
     setError(null)
-    const result = await inviteStudent(email.trim(), name.trim(), subject, plan)
+    const result = await createManagedStudent({
+      email: email.trim(),
+      fullName: name.trim(),
+      subject,
+      language,
+      level,
+      plan,
+      examSlug: examSlug || null,
+    })
     setLoading(false)
     if (result.ok) {
       onSuccess(name.trim())
@@ -108,10 +125,10 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
         boxShadow: '0 8px 40px rgba(0,0,0,0.18)',
       }}>
         <h3 style={{ margin: '0 0 6px', fontSize: 18, fontWeight: 800, color: TEXT }}>
-          Invitar estudiante
+          Crear estudiante
         </h3>
         <p style={{ margin: '0 0 20px', fontSize: 12, color: MUTED }}>
-          Le llegará un correo de Supabase para crear su contraseña.
+          Crea la cuenta, asigna su ruta y envía las credenciales por Resend.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
@@ -135,6 +152,26 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
             <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: TEXT }}>Idioma</span>
+              <select
+                value={language} onChange={e => setLanguage(e.target.value as WelearnLanguage)}
+                style={{ padding: '8px 12px', borderRadius: 8, border: `1px solid ${BORDER}`, fontSize: 12, color: TEXT, background: BG, outline: 'none' }}
+              >
+                {WELEARN_LANGUAGE_OPTIONS.map(o => <option key={o.id} value={o.id}>{o.label}</option>)}
+              </select>
+            </label>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: TEXT }}>Nivel</span>
+              <select
+                value={level} onChange={e => setLevel(e.target.value)}
+                style={{ padding: '8px 12px', borderRadius: 8, border: `1px solid ${BORDER}`, fontSize: 12, color: TEXT, background: BG, outline: 'none' }}
+              >
+                {['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'Por diagnosticar'].map(value => <option key={value} value={value}>{value}</option>)}
+              </select>
+            </label>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
               <span style={{ fontSize: 11, fontWeight: 700, color: TEXT }}>Materia</span>
               <select
                 value={subject} onChange={e => setSubject(e.target.value as StudentSubject)}
@@ -155,6 +192,24 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
             </label>
           </div>
 
+          <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: TEXT }}>Acceso inicial a examen</span>
+            <select
+              value={examSlug}
+              onChange={e => {
+                const next = e.target.value as XpressExamSlug | ''
+                setExamSlug(next)
+                const exam = XPRESS_EXAM_OPTIONS.find(item => item.id === next)
+                if (exam) setLanguage(exam.language)
+              }}
+              style={{ padding: '8px 12px', borderRadius: 8, border: `1px solid ${BORDER}`, fontSize: 12, color: TEXT, background: BG, outline: 'none' }}
+            >
+              <option value="">Sin examen por ahora</option>
+              {XPRESS_EXAM_OPTIONS.map(o => <option key={o.id} value={o.id}>{o.label}</option>)}
+            </select>
+            <small style={{ color: MUTED, fontSize: 10 }}>Se puede conceder o revocar cualquier examen desde la ficha del estudiante.</small>
+          </label>
+
           {error && (
             <p style={{ margin: 0, fontSize: 12, color: '#dc2626', background: '#fee2e2', padding: '8px 12px', borderRadius: 8 }}>
               {error}
@@ -168,7 +223,7 @@ function InviteModal({ onClose, onSuccess }: { onClose: () => void; onSuccess: (
             </button>
             <button onClick={handleSubmit} disabled={loading}
               style={{ flex: 2, padding: '9px 0', borderRadius: 8, border: 'none', background: A, color: '#fff', fontSize: 13, fontWeight: 700, cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.7 : 1 }}>
-              {loading ? 'Enviando…' : 'Enviar invitación'}
+              {loading ? 'Creando y enviando…' : 'Crear y enviar acceso'}
             </button>
           </div>
         </div>
@@ -289,7 +344,8 @@ export default function StudentList({
   students: StudentRow[]
   submissions?: ExamSubmission[]
 }) {
-  const [list,       setList]       = useState<StudentRow[]>(students)
+  const router = useRouter()
+  const list = students
   const [search,     setSearch]     = useState('')
   const [filter,     setFilter]     = useState<StudentPlan | 'todos'>('todos')
   const [expandedId, setExpandedId] = useState<string | null>(null)
@@ -318,7 +374,7 @@ export default function StudentList({
     startTransition(async () => {
       try {
         await assignPlan(studentId, newPlan)
-        setList(prev => prev.map(s => s.id === studentId ? { ...s, plan: newPlan } : s))
+        router.refresh()
         showToast(`Plan → ${PLAN_OPTS.find(o => o.value === newPlan)?.label}`)
       } catch (e) {
         showToast('Error: ' + String(e))
@@ -333,7 +389,7 @@ export default function StudentList({
     startTransition(async () => {
       try {
         await assignSubject(studentId, newSubject)
-        setList(prev => prev.map(s => s.id === studentId ? { ...s, subject: newSubject } : s))
+        router.refresh()
         showToast(`Materia → ${(SUBJECT_LABELS as Record<string, string>)[newSubject]}`)
       } catch (e) {
         showToast('Error: ' + String(e))
@@ -362,7 +418,8 @@ export default function StudentList({
           onClose={() => setShowInvite(false)}
           onSuccess={name => {
             setShowInvite(false)
-            showToast(`✓ Invitación enviada a ${name}`)
+            showToast(`✓ Cuenta y acceso enviados a ${name}`)
+            router.refresh()
           }}
         />
       )}
@@ -410,21 +467,21 @@ export default function StudentList({
             whiteSpace: 'nowrap', flexShrink: 0,
           }}
         >
-          + Invitar estudiante
+          + Nuevo estudiante
         </button>
       </div>
 
       {/* Table */}
       {filtered.length === 0 ? (
         <p style={{ color: MUTED, fontSize: 13, textAlign: 'center', padding: '32px 0' }}>
-          Sin estudiantes. Usa &ldquo;Invitar estudiante&rdquo; para agregar el primero.
+          Sin estudiantes. Usa &ldquo;Nuevo estudiante&rdquo; para agregar el primero.
         </p>
       ) : (
         <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
             <thead>
               <tr>
-                {['', 'Estudiante', 'Estado', 'Materia', 'Plan', 'Pasos', 'Sims', 'Último acceso', 'Cambiar plan', 'Materia', ''].map((h, i) => (
+                {['', 'Estudiante', 'Estado', 'Materia', 'Accesos', 'Plan', 'Pasos', 'Sims', 'Último acceso', 'Cambiar plan', 'Materia', ''].map((h, i) => (
                   <th key={i} style={{
                     textAlign: 'left', padding: '6px 8px',
                     color: MUTED, fontWeight: 600, fontSize: 10,
@@ -437,9 +494,8 @@ export default function StudentList({
             </thead>
             <tbody>
               {filtered.map(student => (
-                <>
+                <Fragment key={student.id}>
                   <tr
-                    key={student.id}
                     style={{ borderBottom: expandedId === student.id ? 'none' : `1px solid ${BORDER}`, cursor: 'pointer' }}
                   >
                     {/* Expand toggle */}
@@ -498,6 +554,20 @@ export default function StudentList({
                       ) : (
                         <span style={{ color: MUTED, fontSize: 11 }}>—</span>
                       )}
+                    </td>
+
+                    {/* Active exam access */}
+                    <td style={{ padding: '10px 8px', maxWidth: 180 }}>
+                      {student.active_exam_access.length ? (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                          {student.active_exam_access.slice(0, 2).map(exam => (
+                            <span key={exam} style={{ fontSize: 9, fontWeight: 750, padding: '2px 6px', borderRadius: 999, background: '#e8f5ec', color: '#14733c' }}>
+                              {XPRESS_EXAM_OPTIONS.find(item => item.id === exam)?.label ?? exam}
+                            </span>
+                          ))}
+                          {student.active_exam_access.length > 2 ? <span style={{ fontSize: 9, color: MUTED }}>+{student.active_exam_access.length - 2}</span> : null}
+                        </div>
+                      ) : <span style={{ color: MUTED, fontSize: 10 }}>Sin acceso</span>}
                     </td>
 
                     {/* Current plan */}
@@ -580,12 +650,12 @@ export default function StudentList({
                   {/* Expanded detail row */}
                   {expandedId === student.id && (
                     <tr key={`${student.id}-detail`} style={{ borderBottom: `1px solid ${BORDER}` }}>
-                      <td colSpan={11} style={{ padding: '0 0 8px' }}>
+                      <td colSpan={12} style={{ padding: '0 0 8px' }}>
                         <StudentDetail student={student} submissions={submissions} />
                       </td>
                     </tr>
                   )}
-                </>
+                </Fragment>
               ))}
             </tbody>
           </table>

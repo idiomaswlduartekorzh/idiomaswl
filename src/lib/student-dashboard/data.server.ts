@@ -35,6 +35,8 @@ type SubmissionAccessRow = { submission_id: string; offer_id: string; personaliz
 type AssignmentRow = {
   id: string; title: string; instructions: string; resource_url: string | null; due_at: string | null;
   status: StudentAssignment['status']; assigned_at: string; completed_at: string | null;
+  submission_text: string | null; submission_url: string | null; submitted_at: string | null;
+  teacher_feedback: string | null; feedback_at: string | null;
 };
 type CourseProgressRow = { course_slug: string; completed_at: string };
 
@@ -212,7 +214,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
           .eq('purchaser_email', email).eq('environment', environment).order('created_at', { ascending: false }).limit(20)
         : Promise.resolve({ data: [] as CourseOrderRow[], error: null }),
       db.from('daily_activity').select('activity_date').eq('user_id', user.id).order('activity_date', { ascending: false }).limit(365),
-      db.from('student_assignments').select('id,title,instructions,resource_url,due_at,status,assigned_at,completed_at')
+      db.from('student_assignments').select('id,title,instructions,resource_url,due_at,status,assigned_at,completed_at,submission_text,submission_url,submitted_at,teacher_feedback,feedback_at')
         .eq('student_id', user.id).neq('status', 'canceled').order('assigned_at', { ascending: false }).limit(100),
       db.from('user_progress').select('course_slug,completed_at').eq('user_id', user.id)
         .order('completed_at', { ascending: false }).limit(1000),
@@ -297,6 +299,8 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     const assignments: StudentAssignment[] = ((assignmentRows.data ?? []) as AssignmentRow[]).map((row) => ({
       id: row.id, title: row.title, instructions: row.instructions, resourceUrl: row.resource_url,
       dueAt: row.due_at, status: row.status, assignedAt: row.assigned_at, completedAt: row.completed_at,
+      submissionText: row.submission_text, submissionUrl: row.submission_url, submittedAt: row.submitted_at,
+      teacherFeedback: row.teacher_feedback, feedbackAt: row.feedback_at,
     }));
     const activityDates = (activity.data ?? []).map((row) => String(row.activity_date));
     const selectedCourseSlugs = new Set(courses.flatMap((course) => {

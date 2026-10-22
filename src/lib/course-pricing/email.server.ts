@@ -11,7 +11,7 @@ export function escapeEmailHtml(value:unknown) {
   return String(value??'').replace(/[&<>"']/g,character=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[character]!);
 }
 
-export async function sendCourseEmail(input:{to:string;subject:string;html:string;idempotencyKey:string}) {
+export async function sendCourseEmail(input:{to:string;subject:string;html:string;idempotencyKey:string}):Promise<{id:string|null}> {
   const {apiKey,from}=emailConfig();
   const response=await fetch('https://api.resend.com/emails',{
     method:'POST',
@@ -20,4 +20,6 @@ export async function sendCourseEmail(input:{to:string;subject:string;html:strin
     signal:AbortSignal.timeout(10000),
   });
   if(!response.ok)throw new Error(`course_email_failed_${response.status}`);
+  const payload=await response.json().catch(()=>null) as {id?:unknown}|null;
+  return {id:typeof payload?.id==='string'?payload.id:null};
 }
