@@ -37,8 +37,8 @@ function validateMultiSelectRecord(value: unknown, allowed: Set<string>): value 
       && item.every(choice => typeof choice === 'string' && /^[A-Z]$/.test(choice)));
 }
 
-export async function POST(request: Request) {
-  if (!await hasDetailedExamResultsAccess('ielts')) return Response.json({ error: 'detailed_results_required' }, { status: 403 });
+export async function scoreIeltsListeningRequest(request: Request, hasDetailedAccess: boolean) {
+  if (!hasDetailedAccess) return Response.json({ error: 'detailed_results_required' }, { status: 403 });
   try {
     const body: unknown = await request.json();
     if (!isRecord(body)
@@ -75,4 +75,8 @@ export async function POST(request: Request) {
   } catch {
     return Response.json({ error: 'invalid_ielts_listening_score_request' }, { status: 400 });
   }
+}
+
+export async function POST(request: Request) {
+  return scoreIeltsListeningRequest(request, await hasDetailedExamResultsAccess('ielts'));
 }

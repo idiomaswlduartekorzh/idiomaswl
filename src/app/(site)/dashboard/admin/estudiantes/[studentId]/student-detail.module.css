@@ -22,7 +22,8 @@
 .page > nav,
 .page > header,
 .metrics,
-.card {
+.card,
+.operationsGrid {
   max-width: 1200px;
   margin-inline: auto;
 }
@@ -251,12 +252,101 @@
   font-size: 11px;
 }
 
+.operationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.operationsGrid > .card { width: 100%; max-width: none; margin-inline: 0; }
+
+.operationForm,
+.messageForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.operationForm label,
+.messageForm label { display: grid; gap: 6px; }
+.operationForm label > span,
+.messageForm label > span { font-size: 10px; font-weight: 800; }
+
+.operationForm input,
+.operationForm select,
+.messageForm input,
+.messageForm select,
+.messageForm textarea,
+.inlineForm input,
+.inlineForm select,
+.noteForm textarea,
+.feedbackForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: var(--ink);
+  border: 1px solid rgba(43, 65, 139, .14);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, .82);
+  font: inherit;
+  font-size: 11px;
+}
+
+.operationForm > button,
+.messageForm > button,
+.inlineForm button,
+.noteForm button,
+.feedbackForm button,
+.secondaryAction button {
+  justify-self: start;
+  padding: 9px 14px;
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--blue), #213d9e);
+  font-size: 10px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.operationForm > button,
+.messageForm > button { grid-column: 1 / -1; }
+.inlineForm { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-bottom: 13px; }
+.accessList, .timeline, .noteList { display: grid; gap: 8px; }
+.accessList > article { display: grid; gap: 8px; padding: 11px; border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.55); }
+.accessList > article > div { display: grid; gap: 3px; }
+.accessList strong { font-size: 11px; }
+.accessList span, .accessList em { color: var(--muted); font-size: 9px; font-style: normal; }
+.accessList form { display: grid; grid-template-columns: 1fr auto; gap: 7px; }
+.accessList form input { padding: 7px 9px; border: 1px solid rgba(239,51,64,.18); border-radius: 9px; font: inherit; font-size: 10px; }
+.accessList form button { color: var(--red); border: 1px solid rgba(239,51,64,.18); border-radius: 999px; background: #fff; font-size: 9px; font-weight: 800; }
+.secondaryAction { margin: 13px 0; padding: 11px; display: flex; align-items: center; justify-content: space-between; gap: 10px; border-radius: 13px; background: #f4f6fd; }
+.secondaryAction p { margin: 0; color: var(--muted); font-size: 9px; }
+.timeline article { display: flex; gap: 9px; padding: 9px 0; border-top: 1px solid var(--line); }
+.timeline i { width: 8px; height: 8px; margin-top: 4px; border-radius: 50%; background: #16a34a; }
+.timeline i[data-status="failed"] { background: var(--red); }
+.timeline i[data-status="queued"] { background: #d97706; }
+.timeline article > div { display: grid; gap: 2px; }
+.timeline strong { font-size: 10px; }
+.timeline span, .timeline small { color: var(--muted); font-size: 8px; }
+.noteForm { display: grid; gap: 8px; margin-bottom: 13px; }
+.noteForm label { color: var(--muted); font-size: 9px; }
+.noteList article { padding: 11px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.55); }
+.noteList article[data-pinned="true"] { border-color: rgba(49,87,213,.24); background: rgba(237,242,255,.82); }
+.noteList span { color: var(--blue); font-size: 8px; text-transform: uppercase; letter-spacing: .08em; }
+.noteList p, .delivery p { margin: 5px 0 0; white-space: pre-wrap; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.delivery { margin-top: 10px; padding: 11px; border-radius: 12px; background: #f4f7ff; border: 1px solid var(--line); }
+.delivery strong { font-size: 10px; }
+.delivery a { display: inline-block; margin-top: 6px; color: var(--blue); font-size: 10px; font-weight: 800; text-decoration: none; }
+.feedbackForm { display: grid; gap: 8px; margin-top: 10px; }
+
 @media (max-width: 760px) {
   .metrics { grid-template-columns: 1fr 1fr; }
   .progressGrid { grid-template-columns: 1fr; }
   .assignmentForm { grid-template-columns: 1fr; }
   .formWide { grid-column: auto; }
   .chart svg { height: 150px; }
+  .operationsGrid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
@@ -270,6 +360,8 @@
   .cardHeader { align-items: flex-start; }
   .examList article,
   .assignmentList article { align-items: flex-start; flex-direction: column; }
+  .operationForm, .messageForm { grid-template-columns: 1fr; }
+  .operationForm > button, .messageForm > button, .formWide { grid-column: auto; }
 }
 
 .page {

@@ -73,6 +73,11 @@ export type StudentAssignment = Readonly<{
   status: 'assigned' | 'completed' | 'canceled';
   assignedAt: string;
   completedAt: string | null;
+  submissionText: string | null;
+  submissionUrl: string | null;
+  submittedAt: string | null;
+  teacherFeedback: string | null;
+  feedbackAt: string | null;
 }>;
 
 export type StudentCourse = Readonly<{

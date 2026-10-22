@@ -17,7 +17,10 @@ for (const [id, lesson] of Object.entries(JAPANESE_SCRIPTS_A1)) {
 
   const required = [lesson.image, lesson.resources.chart, lesson.resources.pdf, lesson.resources.strokes]
   for (const publicPath of required) {
-    const target = path.join(ROOT, 'public', publicPath.replace(/^\//u, ''))
+    const protectedPrefix = '/api/site-materials/'
+    const target = publicPath.startsWith(protectedPrefix)
+      ? path.join(ROOT, 'private', 'site-materials', publicPath.slice(protectedPrefix.length))
+      : path.join(ROOT, 'public', publicPath.replace(/^\//u, ''))
     assert.ok(existsSync(target), `${id}: falta ${publicPath}`)
     assert.ok(statSync(target).size > 1_000, `${id}: recurso vacío ${publicPath}`)
   }

@@ -2,7 +2,9 @@
 
 import Link from 'next/link'
 import { useState, useRef } from 'react'
+import type { FormEvent } from 'react'
 import { updateProfile } from '@/lib/actions/updateProfile'
+import { updatePassword } from '@/lib/actions/updatePassword'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 
 const PLAN_LABELS: Record<StudentPlan, string> = {
@@ -35,6 +37,9 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
   const [savedName, setSavedName] = useState(name)
   const [saving, setSaving]     = useState(false)
   const [msg, setMsg]           = useState<{ ok: boolean; text: string } | null>(null)
+  const [password, setPassword] = useState('')
+  const [confirmation, setConfirmation] = useState('')
+  const [passwordSaving, setPasswordSaving] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   async function handleSave() {
@@ -58,6 +63,23 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
   function startEdit() {
     setEditing(true)
     setTimeout(() => inputRef.current?.focus(), 60)
+  }
+
+  async function handlePasswordChange(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setPasswordSaving(true)
+    setMsg(null)
+    const form = new FormData(event.currentTarget)
+    const result = await updatePassword(form)
+    setPasswordSaving(false)
+    if (result.ok) {
+      setPassword('')
+      setConfirmation('')
+      setMsg({ ok: true, text: 'Contraseña actualizada correctamente.' })
+    } else {
+      setMsg({ ok: false, text: result.error })
+    }
+    setTimeout(() => setMsg(null), 5000)
   }
 
   const initial = (savedName[0] ?? 'E').toUpperCase()
@@ -281,6 +303,19 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
             </div>
           </div>
         </div>
+
+        <form onSubmit={handlePasswordChange} style={{
+          background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16,
+          padding: '20px 24px', marginBottom: 20, display: 'grid', gap: 12,
+        }}>
+          <div>
+            <h2 style={{ margin: '0 0 5px', fontSize: 14, color: 'var(--ink)' }}>Cambiar contraseña</h2>
+            <p style={{ margin: 0, fontSize: 11, color: 'var(--muted)' }}>Mínimo 12 caracteres, con mayúsculas, minúsculas y números.</p>
+          </div>
+          <input aria-label="Nueva contraseña" name="password" type="password" autoComplete="new-password" required minLength={12} value={password} onChange={event => setPassword(event.target.value)} placeholder="Nueva contraseña" style={{ padding: '10px 12px', borderRadius: 9, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }} />
+          <input aria-label="Confirmar nueva contraseña" name="confirmation" type="password" autoComplete="new-password" required minLength={12} value={confirmation} onChange={event => setConfirmation(event.target.value)} placeholder="Confirmar nueva contraseña" style={{ padding: '10px 12px', borderRadius: 9, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }} />
+          <button type="submit" disabled={passwordSaving} style={{ justifySelf: 'start', padding: '8px 15px', borderRadius: 9, border: 0, background: '#1a2ecc', color: '#fff', fontWeight: 700, cursor: 'pointer', opacity: passwordSaving ? .65 : 1 }}>{passwordSaving ? 'Actualizando…' : 'Actualizar contraseña'}</button>
+        </form>
 
         {/* ── Danger zone ── */}
         <div style={{

@@ -279,10 +279,12 @@ export default async function JoseDashboardServer() {
     { data: profileRows },
     { data: progressRows },
     { data: activityRows },
+    { data: accessGrantRows },
+    { data: membershipRows },
   ] = await Promise.all([
     supabase
       .from('profiles')
-      .select('id, email, full_name, plan, subject, enrolled_at, created_at')
+      .select('id, email, full_name, plan, subject, language, level, enrolled_at, created_at')
       .eq('role', 'user')
       .order('created_at', { ascending: false }),
     supabase
@@ -295,6 +297,14 @@ export default async function JoseDashboardServer() {
       .select('user_id, activity_date')
       .order('activity_date', { ascending: false })
       .limit(10000),
+    supabase
+      .from('exam_access_grants')
+      .select('user_id, exam_slug, status, starts_at, ends_at')
+      .eq('status', 'active'),
+    supabase
+      .from('xpress_memberships')
+      .select('user_id, exam_slug, status, starts_at, ends_at')
+      .eq('status', 'active'),
   ])
 
   // Build simulacro count per user from existing submissions
@@ -343,6 +353,18 @@ export default async function JoseDashboardServer() {
     }
   }
 
+  const currentTime = now.getTime()
+  const accessMap = new Map<string, Set<string>>()
+  for (const row of [...(accessGrantRows ?? []), ...(membershipRows ?? [])]) {
+    const startsAt = Date.parse(String(row.starts_at))
+    const endsAt = row.ends_at ? Date.parse(String(row.ends_at)) : Number.POSITIVE_INFINITY
+    if (row.status !== 'active' || startsAt > currentTime || endsAt <= currentTime) continue
+    const userId = String(row.user_id)
+    const current = accessMap.get(userId) ?? new Set<string>()
+    current.add(String(row.exam_slug))
+    accessMap.set(userId, current)
+  }
+
   const students: StudentRow[] = (profileRows ?? [])
     .filter(p => typeof p.email === 'string' && p.email.length > 0)
     .map(p => ({
@@ -351,6 +373,9 @@ export default async function JoseDashboardServer() {
       full_name:       p.full_name ?? null,
       plan:            (p.plan as StudentPlan) ?? 'autodidacta',
       subject:         (p.subject as StudentSubject | null) ?? null,
+      language:        p.language ? String(p.language) : null,
+      level:           p.level ? String(p.level) : null,
+      active_exam_access: Array.from(accessMap.get(p.id) ?? []).sort(),
       enrolled_at:     p.enrolled_at ?? p.created_at ?? null,
       simulacro_count: simCountMap.get(p.id) ?? 0,
       completed_steps: progressMap.get(p.id)?.length ?? 0,

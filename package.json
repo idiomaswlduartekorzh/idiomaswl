@@ -28,6 +28,7 @@
     "test:admin-access": "node --experimental-strip-types --no-warnings --test tests/admin-access.test.mjs",
     "test:registration-onboarding": "node --experimental-strip-types --no-warnings --test tests/registration-onboarding.test.mjs",
     "test:student-dashboard": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/student-dashboard.test.mjs",
+    "test:student-operations": "node --experimental-strip-types --no-warnings --test tests/student-operations-center.test.mjs",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:japanese-scripts-a1": "node --experimental-strip-types --no-warnings scripts/check-japanese-scripts-a1.mjs",
     "check:japanese-grammar-a1": "node scripts/check-japanese-grammar-a1.mjs",

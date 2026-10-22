@@ -46,13 +46,16 @@ test('todos los runners públicos exigen y guardan un lead antes del resultado',
   assert.match(modal, /if \(!result\.ok \|\| !result\.id\)/)
   assert.match(modal, /mandatory \? 'exam-results' : 'simulacro'/)
   assert.match(saveLead, /isRequiredExamLead && \(!sanitize\(input\.name, 100\) \|\| input\.name\.trim\(\)\.length < 2 \|\| !email\)/)
-  assert.match(icfesApi, /if \(!savedLead\.ok \|\| !savedLead\.id\)/)
+  // ICFES is no longer a public lead-gated runner: its private attempt endpoint
+  // requires an authenticated exam entitlement before it can save a result.
+  assert.match(icfesApi, /currentExamScoreAccess\('icfes'\)/)
+  assert.match(icfesApi, /examCan\(access\.level, 'save-result'\)/)
   assert.match(goethe, /if \(!lead\.ok \|\| !lead\.id \|\| !lead\.receipt\)/)
   assert.match(publicRoute, /if \(!getIeltsReviewBlueprint\(mockId\)\) notFound\(\)/)
   assert.match(publicRoute, /if \(mock\.format !== 'toefl-2026'\) notFound\(\)/)
   assert.doesNotMatch(publicRoute, /<TOEFLPracticeClient/)
   assert.match(toeflRunner, /if \(nextIndex >= stages\.length\) \{[\s\S]*?setPhase\('submit'\)/)
-  assert.match(toeflRunner, /onSuccess=\{async \(nextReceipt, access, leadReceipt\) => \{[\s\S]*?setPhase\('scoring'\);\s*void goSubmit\(\)/)
+  assert.match(toeflRunner, /onSuccess=\{async \(nextReceipt, nextBasicScore, access, leadReceipt\) => \{[\s\S]*?setPhase\('scoring'\);\s*void goSubmit\(\)/)
 
   for (const runner of [ielts, toefl]) {
     assert.match(runner, /<label htmlFor="[^"]*whatsapp">WhatsApp<\/label>/)

@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { createHmac } from 'node:crypto';
 import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
@@ -12,7 +11,7 @@ import {
   selectIeltsListeningPractice,
 } from '../src/data/ielts/sectional-listening-adapter.ts';
 import { scoreIeltsListeningPracticeAttempt } from '../src/lib/ielts/listening-practice-contract.ts';
-import { POST as scoreListening } from '../src/app/api/practica/ielts/listening/score/route.ts';
+import { scoreIeltsListeningRequest } from '../src/app/api/practica/ielts/listening/score/route.ts';
 
 const ROOT = process.cwd();
 const blankKey = (groupId, num) => `${groupId}__${num}`;
@@ -129,11 +128,7 @@ test('server scoring returns 40/40 and a complete four-part breakdown for every 
 });
 
 test('score endpoint accepts the exact set contract and rejects stale or injected fields', async () => {
-  const previousKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-exam-score-access-key';
-  const leadId = '00000000-0000-4000-8000-000000000123';
-  const proof = createHmac('sha256', process.env.SUPABASE_SERVICE_ROLE_KEY).update(`exam-score-v1:${leadId}:ielts`).digest('hex');
-  const headers = { 'content-type': 'application/json', cookie: `wl_exam_score_ielts=${leadId}.${proof}` };
+  const headers = { 'content-type': 'application/json' };
   const mock = getMock('ielts', 'set-2');
   const practice = selectIeltsListeningPractice(mock);
   const validBody = {
@@ -142,21 +137,19 @@ test('score endpoint accepts the exact set contract and rejects stale or injecte
     contentVersion: practice.contentVersion,
     answers: perfectAnswers(mock),
   };
-  const blocked = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(validBody) }));
+  const blocked = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }), false);
   assert.equal(blocked.status, 403);
-  const validResponse = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }));
+  const validResponse = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(validBody) }), true);
   assert.equal(validResponse.status, 200);
   assert.equal((await validResponse.json()).correct, 40);
 
-  const staleResponse = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify({ ...validBody, contentVersion: 'ielts-set-2-v0' }) }));
+  const staleResponse = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify({ ...validBody, contentVersion: 'ielts-set-2-v0' }) }), true);
   assert.equal(staleResponse.status, 409);
 
   const injected = structuredClone(validBody);
   injected.answers.fills['unknown__999'] = 'leaked';
-  const injectedResponse = await scoreListening(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(injected) }));
+  const injectedResponse = await scoreIeltsListeningRequest(new Request('http://localhost/api/practica/ielts/listening/score', { method: 'POST', headers, body: JSON.stringify(injected) }), true);
   assert.equal(injectedResponse.status, 400);
-  if (previousKey === undefined) delete process.env.SUPABASE_SERVICE_ROLE_KEY;
-  else process.env.SUPABASE_SERVICE_ROLE_KEY = previousKey;
 });
 
 test('routes provide free navigation, server scoring, replay controls and student PDFs', async () => {
