@@ -44,9 +44,15 @@
   },
   "generationDefaults": {
     "chunkMaxCharacters": 280,
+    "sentenceChunks": true,
     "pauseMilliseconds": 320,
+    "pauseMillisecondsByBand": {
+      "5.5": 2050,
+      "9.0": 700
+    },
+    "normalizationPeak": 0.98,
     "exaggeration": 0.5,
-    "cfgWeight": 0.5,
+    "cfgWeight": 0.3,
     "temperature": 0.8,
     "minP": 0.05,
     "topP": 1,

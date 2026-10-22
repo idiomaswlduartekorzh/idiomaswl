@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { IELTS_GUIDED_SPEAKING_AUDIO_STATUS } from '../src/data/ielts/guided-speaking-audio.generated.ts';
@@ -171,10 +172,10 @@ test('Set 4 display correction is explicit, source-bound and does not rewrite th
   assert.equal(getIeltsGuidedSpeakingReference(4).fullCueCard, correction.displayCueCard);
 });
 
-test('generated status reserves both pending WAV slots without treating generation as approval', () => {
+test('generated WAV pairs remain hidden until independent human approval', async () => {
   assert.equal(IELTS_GUIDED_SPEAKING_AUDIO_STATUS.schemaVersion, 4);
   assert.equal(Object.keys(IELTS_GUIDED_SPEAKING_AUDIO_STATUS.sets).length, 20);
-  assert.equal(IELTS_GUIDED_SPEAKING_AUDIO_STATUS.generated, false);
+  assert.equal(IELTS_GUIDED_SPEAKING_AUDIO_STATUS.generated, true);
   assert.equal(IELTS_GUIDED_SPEAKING_AUDIO_STATUS.approved, false);
   assert.equal(IELTS_GUIDED_SPEAKING_AUDIO_STATUS.ready, false);
 
@@ -183,14 +184,22 @@ test('generated status reserves both pending WAV slots without treating generati
       String(item.setNumber) as keyof typeof IELTS_GUIDED_SPEAKING_AUDIO_STATUS.sets
     ];
     assert.ok(setStatus);
-    assert.equal(setStatus.generated, false);
+    assert.equal(setStatus.generated, true);
     assert.equal(setStatus.approved, false);
     assert.equal(setStatus.ready, false);
     assert.equal(setStatus.humanReview, null);
-    assert.equal(setStatus.files[item.band].generated, false);
-    assert.equal(setStatus.files[item.band].approved, false);
-    assert.equal(setStatus.files[item.band].ready, false);
-    assert.equal(setStatus.files[item.band].url, item.publicUrl);
+    const fileStatus = setStatus.files[item.band];
+    assert.equal(fileStatus.generated, true);
+    assert.equal(fileStatus.approved, false);
+    assert.equal(fileStatus.ready, false);
+    assert.equal(fileStatus.url, item.publicUrl);
+    assert.ok(fileStatus.durationSeconds !== null && fileStatus.durationSeconds >= 55 && fileStatus.durationSeconds <= 120);
+    assert.equal(fileStatus.sampleRate, 24000);
+    assert.match(fileStatus.sha256 ?? '', /^[a-f0-9]{64}$/);
+    assert.match(fileStatus.contentSha256 ?? '', /^[a-f0-9]{64}$/);
+    const wav = await readFile(new URL(`../${item.output}`, import.meta.url));
+    assert.ok(wav.byteLength > 44);
+    assert.equal(createHash('sha256').update(wav).digest('hex'), fileStatus.sha256);
     const runtimeAudio = getIeltsGuidedSpeakingReference(item.setNumber).samples[item.band].audio;
     assert.equal(runtimeAudio.ready, false);
     assert.equal(runtimeAudio.url, '');

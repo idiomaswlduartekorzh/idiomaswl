@@ -24,7 +24,7 @@ test('normaliza contactos utilizables y rechaza datos evidentemente falsos', () 
   assert.equal(isPlausibleEmail('correo-raro'), false)
 })
 
-test('todos los runners públicos exigen y guardan un lead antes del resultado', () => {
+test('los runners protegen el resultado con lead persistido o acceso autenticado por examen', () => {
   const generic = source('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx')
   const languages = source('src/app/(site)/examenes/[exam]/practica/[mockId]/LanguagePracticeClient.tsx')
   const topik = source('src/app/(site)/examenes/[exam]/practica/[mockId]/TOPIKPracticeClient.tsx')
@@ -49,13 +49,15 @@ test('todos los runners públicos exigen y guardan un lead antes del resultado',
   // ICFES is no longer a public lead-gated runner: its private attempt endpoint
   // requires an authenticated exam entitlement before it can save a result.
   assert.match(icfesApi, /currentExamScoreAccess\('icfes'\)/)
-  assert.match(icfesApi, /examCan\(access\.level, 'save-result'\)/)
+  assert.match(icfesApi, /!access \|\| !examCan\(access\.level, 'start-exam'\) \|\| !examCan\(access\.level, 'save-result'\)/)
+  assert.match(icfesApi, /await persistIcfesSubmissionSummary/)
+  assert.match(icfesApi, /examCan\(access\.level, 'view-detailed-results'\) \? result : toIcfesTotalResult\(result\)/)
   assert.match(goethe, /if \(!lead\.ok \|\| !lead\.id \|\| !lead\.receipt\)/)
   assert.match(publicRoute, /if \(!getIeltsReviewBlueprint\(mockId\)\) notFound\(\)/)
   assert.match(publicRoute, /if \(mock\.format !== 'toefl-2026'\) notFound\(\)/)
   assert.doesNotMatch(publicRoute, /<TOEFLPracticeClient/)
   assert.match(toeflRunner, /if \(nextIndex >= stages\.length\) \{[\s\S]*?setPhase\('submit'\)/)
-  assert.match(toeflRunner, /onSuccess=\{async \(nextReceipt, nextBasicScore, access, leadReceipt\) => \{[\s\S]*?setPhase\('scoring'\);\s*void goSubmit\(\)/)
+  assert.match(toeflRunner, /onSuccess=\{async \(nextReceipt, nextBasicScore, access, leadReceipt\) => \{[\s\S]*?if \(access\.unlocked\) \{\s*setPhase\('scoring'\);\s*void goSubmit\(\);\s*\} else \{\s*setPhase\('results'\)/)
 
   for (const runner of [ielts, toefl]) {
     assert.match(runner, /<label htmlFor="[^"]*whatsapp">WhatsApp<\/label>/)

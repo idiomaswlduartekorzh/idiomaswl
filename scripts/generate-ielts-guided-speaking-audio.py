@@ -69,6 +69,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="Validate and apply an external human acoustic-review receipt for one generated pair.",
     )
+    action.add_argument(
+        "--normalize-generated",
+        action="store_true",
+        help="Peak-normalize generated, unapproved WAVs and atomically refresh their hashes.",
+    )
     return parser.parse_args()
 
 
@@ -238,11 +243,17 @@ def read_source_cue_card(path: Path, question_id: str) -> str:
     return cue_card
 
 
-def split_text(text: str, maximum: int) -> list[str]:
+def split_text(text: str, maximum: int, sentence_chunks: bool = False) -> list[str]:
     paragraphs = [part.strip() for part in text.split("\n\n") if part.strip()]
     chunks: list[str] = []
     for paragraph in paragraphs:
         sentences = [part.strip() for part in re.split(r"(?<=[.!?])\s+", paragraph) if part.strip()]
+        if sentence_chunks:
+            if any(len(sentence) > maximum for sentence in sentences):
+                longest = max(len(sentence) for sentence in sentences)
+                raise ValueError(f"Sentence exceeds {maximum} characters ({longest}).")
+            chunks.extend(sentences)
+            continue
         current = ""
         for sentence in sentences:
             if len(sentence) > maximum:
@@ -439,6 +450,81 @@ def promote_staged_audio(staged: list[tuple[dict[str, Any], Path, float]], selec
                 pending_path.unlink()
 
 
+def normalize_generated_audio(
+    manifest: dict[str, Any],
+    status: dict[str, Any],
+    selected_sets: list[int],
+) -> None:
+    """Normalize generated pairs without allowing an approved artifact to drift."""
+    try:
+        import torch
+        import torchaudio as ta
+    except ImportError as error:
+        raise RuntimeError("Peak normalization requires torch and torchaudio.") from error
+
+    selected_items = [item for item in manifest["items"] if item["setNumber"] in selected_sets]
+    target_peak = float(manifest["generationDefaults"]["normalizationPeak"])
+    if not 0.5 <= target_peak < 1:
+        raise ValueError("normalizationPeak must be at least 0.5 and below 1.0.")
+
+    for set_number in selected_sets:
+        set_status = status["sets"][str(set_number)]
+        if not set_status.get("generated"):
+            raise ValueError(f"Set {set_number} must be generated before normalization.")
+        if set_status.get("approved") or set_status.get("ready") or set_status.get("humanReview"):
+            raise ValueError(f"Refusing to change human-reviewed Set {set_number}.")
+
+    staged: list[tuple[dict[str, Any], Path, float]] = []
+    with tempfile.TemporaryDirectory(prefix="ielts-guided-speaking-normalized-") as temporary:
+        temp_dir = Path(temporary)
+        for item in selected_items:
+            source = PROJECT_ROOT / item["output"]
+            wav, sample_rate = ta.load(str(source))
+            if not torch.isfinite(wav).all() or float(wav.abs().max()) < 0.001:
+                raise ValueError(f"Set {item['setNumber']} band {item['band']} is silent or invalid.")
+            peak = float(wav.abs().max())
+            if peak > target_peak:
+                wav = wav * (target_peak / peak)
+            duration = wav.shape[1] / sample_rate
+            if not float(item["minimumDurationSeconds"]) <= duration <= float(item["maximumDurationSeconds"]):
+                raise ValueError(
+                    f"Set {item['setNumber']} band {item['band']} duration changed outside its approved window."
+                )
+            temp_output = temp_dir / f"{item['id']}.wav"
+            ta.save(str(temp_output), wav, sample_rate)
+            staged.append((item, temp_output, duration))
+
+        # Close the selected publication gates before replacing any public file.
+        invalidate_selected_sets_for_generation(status, manifest, selected_sets)
+        promote_staged_audio(staged, selected_sets)
+        status = load_status()
+        generated_at = datetime.now(timezone.utc).isoformat()
+        for item, _temp_output, duration in staged:
+            destination = PROJECT_ROOT / item["output"]
+            set_status = status["sets"][str(item["setNumber"])]
+            _wav, sample_rate = ta.load(str(destination))
+            set_status["files"][item["band"]] = {
+                "generated": True,
+                "approved": False,
+                "ready": False,
+                "url": item["publicUrl"],
+                "durationSeconds": round(duration, 2),
+                "sampleRate": sample_rate,
+                "sha256": sha256(destination),
+                "contentSha256": item_content_sha256(item, manifest),
+            }
+            set_status["generatedAt"] = generated_at
+        update_status_rollups(status)
+        status["generatedAt"] = generated_at if status["generated"] else None
+        status["approvedAt"] = None
+        write_status(status)
+
+    print(
+        f"{len(selected_sets)} set(s) peak-normalized to {target_peak:.2f}; "
+        "hashes refreshed and human approval remains closed."
+    )
+
+
 def validate_review_receipt(receipt: dict[str, Any], status: dict[str, Any]) -> tuple[int, str, str]:
     if receipt.get("schemaVersion") != 1 or receipt.get("kind") != "ielts-guided-speaking-acoustic-review":
         raise ValueError("Human review receipt must use the supported schema and kind.")
@@ -606,11 +692,22 @@ def main() -> int:
         apply_human_review(args.apply_human_review, status)
         return 0
 
+    if args.normalize_generated:
+        status = load_status()
+        validate_status(manifest, selected_sets)
+        normalize_generated_audio(manifest, status, selected_sets)
+        validate_status(manifest, selected_sets)
+        return 0
+
     selected_items = [item for item in manifest["items"] if item["setNumber"] in selected_sets]
 
     defaults = manifest["generationDefaults"]
     for item in selected_items:
-        chunks = split_text(item["text"], int(defaults["chunkMaxCharacters"]))
+        chunks = split_text(
+            item["text"],
+            int(defaults["chunkMaxCharacters"]),
+            bool(defaults.get("sentenceChunks", False)),
+        )
         print(
             f"Set {item['setNumber']:02d} · band {item['band']}: "
             f"{len(chunks)} chunks, {len(item['text'].split())} words"
@@ -654,8 +751,6 @@ def main() -> int:
     device = resolve_device(args.device, torch)
     print(f"Loading ChatterboxTTS on {device}…")
     model = ChatterboxTTS.from_pretrained(device=device)
-    pause_frames = round(model.sr * int(defaults["pauseMilliseconds"]) / 1000)
-    silence = torch.zeros((1, pause_frames), dtype=torch.float32)
     staged: list[tuple[dict[str, Any], Path, float]] = []
 
     with tempfile.TemporaryDirectory(prefix="ielts-guided-speaking-") as temporary:
@@ -666,7 +761,17 @@ def main() -> int:
             if torch.cuda.is_available():
                 torch.cuda.manual_seed_all(int(defaults["seed"]))
 
-            chunks = split_text(item["text"], int(defaults["chunkMaxCharacters"]))
+            chunks = split_text(
+                item["text"],
+                int(defaults["chunkMaxCharacters"]),
+                bool(defaults.get("sentenceChunks", False)),
+            )
+            pause_by_band = defaults.get("pauseMillisecondsByBand", {})
+            pause_milliseconds = int(
+                pause_by_band.get(item["band"], defaults["pauseMilliseconds"])
+            )
+            pause_frames = round(model.sr * pause_milliseconds / 1000)
+            silence = torch.zeros((1, pause_frames), dtype=torch.float32)
             rendered = []
             for index, chunk in enumerate(chunks):
                 print(
@@ -697,6 +802,10 @@ def main() -> int:
                 raise ValueError(
                     f"Set {item['setNumber']} band {item['band']} produced silent or invalid samples."
                 )
+            peak = float(final_wav.abs().max())
+            target_peak = float(defaults["normalizationPeak"])
+            if peak > target_peak:
+                final_wav = final_wav * (target_peak / peak)
             duration = final_wav.shape[1] / model.sr
             if not float(item["minimumDurationSeconds"]) <= duration <= float(item["maximumDurationSeconds"]):
                 raise ValueError(
