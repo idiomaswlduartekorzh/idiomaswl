@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Protege las señales compartidas por las ocho landings comerciales locales.
+ * Protege las señales compartidas por las ocho landings comerciales.
  * Los errores son regresiones; la profundidad pendiente de FAQ solo genera aviso.
  */
 
@@ -24,7 +24,7 @@ const GOOGLE_PROFILE = {
 };
 
 const LANDINGS = [
-  { slug: 'clases-de-ingles', language: 'inglés', exams: ['IELTS', 'TOEFL', 'FCE', 'ICFES'] },
+  { slug: 'clases-de-ingles', language: 'inglés', exams: ['IELTS', 'TOEFL', 'FCE', 'ICFES'], titleLocation: 'Colombia' },
   { slug: 'clases-de-coreano', language: 'coreano', exams: ['TOPIK'] },
   { slug: 'clases-de-italiano', language: 'italiano', exams: ['CILS', 'CELI', 'Ciudadanía'], faqSingleSource: true },
   { slug: 'clases-de-portugues', language: 'portugués', exams: ['Celpe-Bras'] },
@@ -77,7 +77,7 @@ const snippetSource = read('src/lib/seo-snippet.ts') ?? '';
 const TITLE_MAX = Number(snippetSource.match(/TITLE_MAX\s*=\s*(\d+)/)?.[1] ?? 60);
 const DESCRIPTION_MAX = Number(snippetSource.match(/DESC_MAX\s*=\s*(\d+)/)?.[1] ?? 155);
 
-for (const { slug, language, exams, faqSingleSource } of LANDINGS) {
+for (const { slug, language, exams, faqSingleSource, titleLocation = 'Bucaramanga' } of LANDINGS) {
   const relativePath = `src/app/(site)/${slug}/page.tsx`;
   const source = read(relativePath);
   if (!source) {
@@ -91,7 +91,9 @@ for (const { slug, language, exams, faqSingleSource } of LANDINGS) {
 
   if (!title) fail(slug, 'no se pudo leer el title.');
   else {
-    if (!/Bucaramanga/i.test(title)) fail(slug, `el title perdió Bucaramanga: «${title}».`);
+    if (!title.toLowerCase().includes(titleLocation.toLowerCase())) {
+      fail(slug, `el title perdió ${titleLocation}: «${title}».`);
+    }
     if (!/online/i.test(title)) warn(slug, `el title perdió online: «${title}».`);
     if (title.length > TITLE_MAX) fail(slug, `el title mide ${title.length}; el máximo es ${TITLE_MAX}.`);
     if (!exams.some((exam) => title.toLowerCase().includes(exam.toLowerCase()))) {
