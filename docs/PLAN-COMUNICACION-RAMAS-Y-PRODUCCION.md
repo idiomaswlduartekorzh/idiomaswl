@@ -14,7 +14,9 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 ### Identidad de marca en páginas de idiomas — 23 de octubre de 2026
 
 `codex/tutores-no-academia` parte de `main` en `819d4ba`.
-Estado: `VALIDADO_PARA_INTEGRAR`. El propietario aclaró que WeLearn es un
+Estado: `DESPLEGADO` mediante PR #34, SHA de `main`
+`38f7a61893b5580872dacd1e901058be8e45f2a3` y Vercel
+`dpl_H7A8xXjARTEEZJyX96aDcLHUBSX9` (`READY`). El propietario aclaró que WeLearn es un
 servicio de clases particulares con tutores, no una academia. Esta rama
 reemplaza la autodescripción incorrecta en las páginas de idiomas, Inicio,
 Quiénes somos, Kids, textos de IA, OG y JSON-LD. Conserva los títulos y
@@ -24,8 +26,11 @@ mantiene `LocalBusiness` y la ficha NAP, sin `LanguageSchool` ni el alias
 «Academia». Las comparaciones con academias ajenas y citas textuales
 atribuidas se conservan. La regla de marca quedó en `AGENTS.md` y `CLAUDE.md`.
 Pasaron TypeScript, catálogo, línea base, navegación, SEO foundation, landings
-locales, snippets y build Webpack de 2.764 rutas. Pendiente integrar por PR y
-verificar producción con el SHA final.
+locales, snippets y build Webpack de 2.764 rutas, además de cuatro checks de
+GitHub. En producción respondieron HTTP 200 con canonical Inicio, el hub, las
+nueve páginas específicas, Quiénes somos, Kids y dos artículos. En Chrome se
+verificó la redacción del hub; el JSON-LD de Inicio, inglés, coreano y Quiénes
+somos conservó `LocalBusiness` y dejó de declarar `LanguageSchool`.
 
 ### Hiperoptimización SEO y consultas — 23 de octubre de 2026
 
