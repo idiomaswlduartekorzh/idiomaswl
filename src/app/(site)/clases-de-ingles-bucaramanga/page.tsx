@@ -508,9 +508,9 @@ export default function ClasesInglessBucaramangaPage() {
             Respuesta en menos de 2 horas · Lunes–Sábado 7 am–8 pm
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
-            ¿Quieres ver todos los idiomas? →{' '}
+            ¿Prefieres estudiar desde otra ciudad? →{' '}
             <Link href="/clases-de-ingles" style={{ color: 'var(--accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>
-              Clases de inglés
+              Clases de inglés online para toda Colombia
             </Link>
           </p>
         </div>

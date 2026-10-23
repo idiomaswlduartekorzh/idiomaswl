@@ -21,14 +21,14 @@ const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (F
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de inglés online en Bucaramanga | IELTS y TOEFL',
+  title: 'Clases de inglés online en Colombia | IELTS y TOEFL',
   description:
     'Clases de inglés online 1:1 para toda Colombia. Prepara IELTS, TOEFL, Cambridge B2 First o ICFES con tutor asignado y práctica guiada.',
   keywords: [
-    'clases de inglés', 'inglés Bucaramanga', 'preparación IELTS Colombia',
+    'clases de inglés', 'clases de inglés online Colombia', 'preparación IELTS Colombia',
     'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
-    'clases inglés online', 'IELTS Bucaramanga', 'TOEFL Bucaramanga',
-    'Cambridge B2 First Colombia', 'FCE preparación Colombia', 'FCE Bucaramanga',
+    'clases inglés online', 'IELTS online Colombia', 'TOEFL online Colombia',
+    'Cambridge B2 First Colombia', 'FCE preparación Colombia', 'FCE online Colombia',
     'inglés para trabajo', 'inglés para migrar',
   ],
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles' },
@@ -243,7 +243,7 @@ export default function ClasesDeInglesPage() {
           {/* Copy */}
           <div>
             <p className="wlh-section-eyebrow" style={{ marginBottom: '1rem' }}>
-              Academia de inglés · Bucaramanga y Colombia
+              Academia de inglés online · Toda Colombia
             </p>
             <h1 style={{
               fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
@@ -597,7 +597,7 @@ export default function ClasesDeInglesPage() {
         accent="#1a4fcc"
         idioma="inglés"
         intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar inglés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo tutor y el mismo plan, se hace por videollamada."
-        presencial="Clases cara a cara con tutor asignado. Y una ventaja concreta si vas por certificación: el IELTS y el TOEFL sí se aplican en Bucaramanga, así que puedes prepararte y presentarte sin salir de la ciudad."
+        presencial="Clases cara a cara con tutor asignado. Si vas por certificación, puedes preparar IELTS y TOEFL desde Bucaramanga; consulta las sedes vigentes de cada examen antes de inscribirte."
         waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de inglés presenciales. ¿Cómo funcionan?"
         moreHref="/clases-de-ingles-bucaramanga"
         moreLabel="Ver todo sobre las clases de inglés en Bucaramanga: horarios, sede y modalidades"
