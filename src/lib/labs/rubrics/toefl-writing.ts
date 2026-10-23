@@ -96,7 +96,7 @@ dijeron los compañeros — no basta con dar una opinión aislada que ignore la 
 export function buildSystemPrompt(task: ToeflTask): string {
   const target = TOEFL_WORD_TARGETS[task];
 
-  return `Eres el evaluador de TOEFL iBT Writing de WeLearn, una academia de idiomas colombiana.
+  return `Eres el evaluador de TOEFL iBT Writing de WeLearn, un servicio colombiano de tutorías de idiomas.
 Evalúas ${task === 'write-email' ? 'la tarea Write an Email' : 'la Academic Discussion Task'}
 con la escala oficial holística de ETS (0-5), desglosada en 3 dimensiones para dar feedback
 accionable: "purpose" (propósito o contribución), "development" (desarrollo y claridad), y

@@ -9333,7 +9333,7 @@ And explain whether you would recommend it to others.</em>
     tags: ['academias de inglés Bucaramanga', 'clases de inglés Bucaramanga', 'inglés Bucaramanga', 'mejor academia inglés Bucaramanga', 'curso inglés Bucaramanga 2026'],
     body: `
 <h2>¿Cómo está el mercado de inglés en Bucaramanga en 2026?</h2>
-<p>Bucaramanga tiene una oferta creciente de academias de inglés, pero la calidad varía enormemente. Desde institutos con 30 años de tradición como el Celai Institute hasta academias especializadas en certificaciones internacionales como WeLearn, cada opción tiene un perfil diferente. Esta guía te ayuda a elegir según lo que realmente necesitas.</p>
+<p>Bucaramanga tiene distintas opciones para estudiar inglés: institutos, academias y clases particulares con tutores, como las de WeLearn. Cada modalidad tiene un perfil diferente. Esta guía te ayuda a elegir según lo que realmente necesitas.</p>
 <p>El error más común al elegir academia de inglés en Bucaramanga es fijarse solo en el precio o en la cercanía. Lo que realmente importa es: ¿La academia tiene experiencia en tu objetivo específico? ¿Tienen tutores certificados? ¿Qué resultados tienen sus estudiantes?</p>
 
 <h2>Tipos de academias de inglés en Bucaramanga</h2>
@@ -9345,8 +9345,8 @@ And explain whether you would recommend it to others.</em>
 <h3>2. Centros oficiales con énfasis cultural</h3>
 <p>El Centro Colombo Americano tiene presencia en Bucaramanga y es reconocido por su enfoque cultural anglosajón. Tiene certificación de calidad y programas desde A1 hasta C1. Es una buena opción si buscas el componente cultural además del lingüístico. Sus grupos también son medianos a grandes.</p>
 
-<h3>3. Academias especializadas en exámenes internacionales</h3>
-<p>Si tu objetivo es IELTS, TOEFL, ICFES o cualquier certificación oficial, necesitas una academia que conozca los criterios de evaluación de esos exámenes específicos — no solo que enseñe inglés general. WeLearn es la academia en Bucaramanga especializada en preparación de exámenes internacionales, con tutores que conocen los estándares del British Council (IELTS) y ETS (TOEFL) y con simulacros integrados en la plataforma.</p>
+<h3>3. Preparación individual de exámenes internacionales</h3>
+<p>Si tu objetivo es IELTS, TOEFL, ICFES o cualquier certificación oficial, busca tutores que conozcan los criterios de evaluación de ese examen, además de enseñar inglés general. WeLearn ofrece clases particulares en Bucaramanga y online, con preparación por examen y simulacros integrados en la plataforma.</p>
 
 <h3>4. Plataformas online (sin presencia en Bucaramanga)</h3>
 <p>Canadian College, English Training y otras plataformas ofrecen cursos online dirigidos a Bucaramanga. Son opciones válidas para inglés general, pero rara vez tienen la profundidad de preparación para exámenes internacionales que una academia especializada.</p>
@@ -9397,11 +9397,11 @@ And explain whether you would recommend it to others.</em>
 <p>Los cursos gratuitos de la Alcaldía de Bucaramanga en alianza con el SENA son una opción para inglés básico. Para niveles intermedios o avanzados, pide varias cotizaciones y compara qué incluye cada una: número de estudiantes por grupo, si hay tutor asignado, si el material está incluido y si hay evaluación de progreso. El precio por hora aislado dice poco.</p>
 
 <h3>Si quieres clases presenciales, no online</h3>
-<p>Es una preferencia legítima y más común de lo que parece: estar en un salón obliga a hablar y elimina la tentación de dejar la clase a medias. En Bucaramanga hay varias opciones presenciales, entre ellas Celai y Praxis English con grupos y horarios fijos. WeLearn también es presencial —tenemos sede en el barrio Sotomayor, Calle 47 # 29-33— con la diferencia de que puedes alternar presencial y online la misma semana si tu horario cambia. El detalle está en <a href="/clases-de-ingles-bucaramanga">academia de inglés en Bucaramanga con sede física</a>.</p>
+<p>Es una preferencia legítima y más común de lo que parece: estar en un salón obliga a hablar y elimina la tentación de dejar la clase a medias. En Bucaramanga hay varias opciones presenciales, entre ellas Celai y Praxis English con grupos y horarios fijos. WeLearn también ofrece clases presenciales —tenemos sede en el barrio Sotomayor, Calle 47 # 29-33— y puedes alternar presencial y online si tu horario cambia. El detalle está en <a href="/clases-de-ingles-bucaramanga">clases de inglés con tutores en Bucaramanga</a>.</p>
 
 <h2>Conclusión: la academia correcta depende de tu objetivo</h2>
 <p>No existe "la mejor academia de inglés en Bucaramanga" sin contexto. Si tu objetivo es una certificación internacional con puntaje específico, WeLearn es la opción más especializada. Si buscas grupos grandes y horarios fijos de mañana a noche, las academias tradicionales tienen más cobertura. Lo más importante: define primero qué necesitas lograr y en cuánto tiempo.</p>
-<p>¿Quieres saber qué academia y qué plan se adapta mejor a tu objetivo? <a href="https://wa.me/573005004253?text=Hola%2C%20vi%20el%20art%C3%ADculo%20sobre%20academias%20de%20ingl%C3%A9s%20en%20Bucaramanga%20y%20quiero%20saber%20cu%C3%A1l%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> — te damos una recomendación honesta en menos de 2 horas.</p>
+<p>¿Quieres saber qué modalidad y qué plan se adapta mejor a tu objetivo? <a href="https://wa.me/573005004253?text=Hola%2C%20vi%20el%20art%C3%ADculo%20sobre%20academias%20de%20ingl%C3%A9s%20en%20Bucaramanga%20y%20quiero%20saber%20cu%C3%A1l%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> y te explicamos las clases particulares disponibles.</p>
 <p>Lee también: <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga en 2026?</a> y <a href="/blog/clases-de-ingles-presenciales-vs-online-bucaramanga">Clases de inglés presenciales vs online en Bucaramanga</a>.</p>
     `,
   },
@@ -9454,11 +9454,11 @@ And explain whether you would recommend it to others.</em>
   <li>Tutor especializado en IELTS/TOEFL: $60.000–$90.000/hora</li>
 </ul>
 
-<h3>WeLearn — Academia especializada en Bucaramanga</h3>
+<h3>WeLearn — Clases particulares con tutores en Bucaramanga</h3>
 <table>
   <thead><tr><th>Plan</th><th>Precio</th><th>¿Qué incluye?</th></tr></thead>
   <tbody>
-    <tr><td>Diagnóstico con tutor</td><td>Consultar</td><td>45 min: evaluación de nivel + plan personalizado</td></tr>
+    <tr><td>Diagnóstico con tutor</td><td>Consultar</td><td>Evaluación de nivel y plan personalizado; duración y precio antes de agendar</td></tr>
     <tr><td>Plan Preparación</td><td>$180.000/mes</td><td>Simulacros + feedback escrito + chat tutor 24h</td></tr>
     <tr><td>Plan Intensivo 2x/sem</td><td>$280.000/mes</td><td>Sesiones en vivo + tutor asignado + plan</td></tr>
     <tr><td>Plan Intensivo 4x/sem</td><td>$480.000/mes</td><td>Sesiones en vivo frecuentes + tutor + evaluación mensual</td></tr>

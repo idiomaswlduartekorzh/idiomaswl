@@ -273,7 +273,7 @@ export const ANSWERS = [
   {
     question: '¿Qué es Idiomas WeLearn?',
     answer:
-      'Idiomas WeLearn es una academia de idiomas con sede en Bucaramanga y atención online. Reúne clases, práctica y preparación de exámenes para ayudar a cada persona a avanzar según su punto de partida y su meta.',
+      'Idiomas WeLearn ofrece clases particulares con tutores en Bucaramanga y online. Reúne clases, práctica y preparación de exámenes para ayudar a cada persona a avanzar según su punto de partida y su meta.',
   },
   {
     question: '¿Dónde ofrece WeLearn clases de idiomas en Bucaramanga?',
@@ -335,7 +335,7 @@ export const ORGANIZATION_SCHEMA = {
       url: 'https://www.idiomaswl.com',
       logo: 'https://www.idiomaswl.com/images/welearn-logo.png',
       description:
-        'Academia de idiomas con clases, práctica y preparación de exámenes en Bucaramanga y online.',
+        'Clases particulares de idiomas con tutores, práctica y preparación de exámenes en Bucaramanga y online.',
       founder: [
         { '@id': 'https://www.idiomaswl.com/#zhanna' },
         { '@id': 'https://www.idiomaswl.com/#david' },
@@ -368,7 +368,7 @@ export const ORGANIZATION_SCHEMA = {
         'Ingeniero industrial y políglota activo en ocho idiomas, aprendidos desde el español mediante disciplina y años de práctica.',
     },
     {
-      '@type': ['LocalBusiness', 'LanguageSchool'],
+      '@type': 'LocalBusiness',
       '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
       url: 'https://www.idiomaswl.com/',

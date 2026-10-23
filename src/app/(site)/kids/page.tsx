@@ -91,7 +91,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga y online con experiencias de inglés para niños mediante proyectos de programación y ajedrez.',
+      'Clases de idiomas en Bucaramanga y online con experiencias de inglés para niños mediante proyectos de programación y ajedrez.',
     ),
     {
       '@type': 'Service',

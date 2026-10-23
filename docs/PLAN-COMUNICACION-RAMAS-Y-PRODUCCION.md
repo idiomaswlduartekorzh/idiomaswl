@@ -11,10 +11,28 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 
 ## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
 
+### Identidad de marca en páginas de idiomas — 23 de octubre de 2026
+
+`codex/tutores-no-academia` parte de `main` en `819d4ba`.
+Estado: `VALIDADO_PARA_INTEGRAR`. El propietario aclaró que WeLearn es un
+servicio de clases particulares con tutores, no una academia. Esta rama
+reemplaza la autodescripción incorrecta en las páginas de idiomas, Inicio,
+Quiénes somos, Kids, textos de IA, OG y JSON-LD. Conserva los títulos y
+canonicals de las nueve páginas específicas de idiomas; cambia el título del
+hub y de Quiénes somos para que describan el servicio real. El esquema local
+mantiene `LocalBusiness` y la ficha NAP, sin `LanguageSchool` ni el alias
+«Academia». Las comparaciones con academias ajenas y citas textuales
+atribuidas se conservan. La regla de marca quedó en `AGENTS.md` y `CLAUDE.md`.
+Pasaron TypeScript, catálogo, línea base, navegación, SEO foundation, landings
+locales, snippets y build Webpack de 2.764 rutas. Pendiente integrar por PR y
+verificar producción con el SHA final.
+
 ### Hiperoptimización SEO y consultas — 23 de octubre de 2026
 
 `codex/seo-hyperopt-20261023` parte del `main` desplegado en `817aca8b`.
-Estado: `VALIDADO_PARA_INTEGRAR`. El plan y las fuentes del diagnóstico están en el
+Estado: `DESPLEGADO` mediante PR #33, SHA de `main`
+`819d4bafb0b55eb9c034343db41a4ff4ef5456b0` y Vercel
+`dpl_9h7vtXtirikNvdatnyCaRLBAGP5s` (`READY`). El plan y las fuentes del diagnóstico están en el
 informe privado del propietario, fuera del repositorio. Dos revisores
 independientes de SEO técnico y conversión aprobaron el alcance tras exigir
 conservar URL, títulos, H1 y canonical de páginas ganadoras, así como retirar
@@ -32,7 +50,8 @@ migración, cambio de precios ni cambio de canonical.
 Pasaron TypeScript, catálogo, línea base, navegación, SEO foundation, landings
 locales, snippets, revisión de señales SEO de nueve landings y build Webpack
 completo de 2.764 rutas. Dos revisores independientes dieron visto bueno al
-diff final. Falta la prueba pública tras integrar y confirmar Vercel `READY`.
+diff final. Las diez páginas de clases y el artículo de italiano A1–B2
+respondieron HTTP 200 con canonical en producción; el hub se verificó en Chrome.
 
 ### Fase previa: auditoría y corrección de oferta
 

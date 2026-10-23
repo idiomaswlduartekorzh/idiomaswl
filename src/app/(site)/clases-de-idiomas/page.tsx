@@ -5,21 +5,21 @@ import { BLOG_POSTS } from '@/data/blog';
 import LocalBand from '@/components/hub/LocalBand';
 
 export const metadata: Metadata = {
-  title: 'Academia de idiomas en Bucaramanga y online — 8 idiomas',
+  title: 'Clases de idiomas en Bucaramanga y online — 8 idiomas',
   description:
     'Clases 1:1 en Bucaramanga y online para Colombia. Tutores asignados, ruta por objetivo y preparación IELTS, TOEFL, Goethe, DELF, CILS y TOPIK.',
   keywords: [
-    'academia de idiomas Bucaramanga',
+    'clases particulares de idiomas Bucaramanga',
     'clases de idiomas Bucaramanga',
-    'instituto de idiomas Bucaramanga',
-    'academia de idiomas Sotomayor',
+    'tutores de idiomas Bucaramanga',
+    'tutores de idiomas Sotomayor',
     'clases de idiomas online Colombia',
     'certificaciones de idiomas Colombia',
     'preparación IELTS TOEFL Bucaramanga',
     'aprender idiomas con tutor Colombia',
   ],
   openGraph: {
-    title: 'Academia de Idiomas en Bucaramanga y Online',
+    title: 'Clases de Idiomas en Bucaramanga y Online',
     description: 'Ocho idiomas con tutor asignado, presencial en Bucaramanga u online en Colombia. Conoce la ruta y el precio antes de agendar.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
@@ -139,7 +139,7 @@ const LANGUAGES = [
 ];
 
 /**
- * Los nueve certificados oficiales para los que la academia prepara, con su simulacro.
+ * Los nueve certificados oficiales para los que WeLearn prepara, con su simulacro.
  * Las rutas corresponden a los slugs reales de `src/data/exams.ts`.
  */
 const CERTIFICADOS = [
@@ -229,7 +229,7 @@ export default function ClasesDeIdiomasPage() {
               <span style={{ color: '#60a5fa' }}>Un método creado por dos políglotas.</span>
             </h1>
             <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.75)', maxWidth: 620, margin: '0 auto', lineHeight: 1.6 }}>
-              José David y Zhanna crearon esta academia en Bucaramanga. Ellos diseñan el método;
+              José David y Zhanna fundaron WeLearn en Bucaramanga. Ellos diseñan el método;
               un tutor asignado adapta las clases 1:1 a tu idioma, nivel y objetivo, presencial
               u online.
             </p>
@@ -436,7 +436,7 @@ export default function ClasesDeIdiomasPage() {
       <section style={{ background: 'var(--bg-2)', padding: '4rem 1.25rem', borderTop: '1px solid var(--line-soft)' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.1rem)', fontWeight: 900, textAlign: 'center', marginBottom: '2.5rem' }}>
-            Por qué WeLearn y no una app o academia genérica
+            Por qué aprender con tutores de WeLearn
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.25rem' }}>
             {[

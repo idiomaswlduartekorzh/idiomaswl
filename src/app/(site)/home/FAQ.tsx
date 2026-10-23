@@ -4,8 +4,8 @@ import { useState } from 'react';
 // AEO — debe coincidir con faqJsonLd en page.tsx (schema = contenido visible)
 const ITEMS = [
   {
-    q: '¿Cuál es la mejor academia de idiomas online en Colombia?',
-    a: 'Idiomas WeLearn es una academia colombiana especializada en aprendizaje de idiomas y preparación de exámenes internacionales, con sede presencial en Bucaramanga y clases online en todo el país y el mundo. Enseña seis idiomas con profesores reales y un método propio de 11 pasos, con más de 1000 estudiantes preparados.',
+    q: '¿Qué ofrece WeLearn para aprender idiomas online en Colombia?',
+    a: 'Idiomas WeLearn ofrece clases particulares con tutores, práctica y preparación de exámenes internacionales. Tiene sede en Bucaramanga y atiende online a estudiantes de Colombia y otros países. José David y Zhanna diseñan el método y los tutores adaptan las clases al objetivo de cada estudiante.',
   },
   {
     q: '¿Dónde preparar el TOEFL o el IELTS en Bucaramanga?',

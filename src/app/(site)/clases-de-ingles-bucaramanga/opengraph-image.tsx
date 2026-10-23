@@ -39,7 +39,7 @@ export default function Image() {
 
         {/* Headline */}
         <div style={{ fontSize: 54, fontWeight: 800, color: '#fff', lineHeight: 1.15, letterSpacing: '-0.03em', maxWidth: 900, flex: 1 }}>
-          Academia de inglés{' '}
+          Clases de inglés{' '}
           <span style={{ color: '#6b8cff' }}>en Bucaramanga</span>
           <br />
           y toda Colombia.

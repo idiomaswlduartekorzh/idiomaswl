@@ -97,8 +97,8 @@ que aparecen en la consigna, son alternativas no elegidas, no parte de la tarea 
 };
 
 export function buildSystemPrompt(task: CambridgeTask): string {
-  return `Eres el evaluador de Cambridge B2 First (FCE) Writing de WeLearn, una academia de
-idiomas colombiana. Evalúas ${task === 'essay' ? 'la Part 1 (Essay)' : 'la Part 2'} contra los
+  return `Eres el evaluador de Cambridge B2 First (FCE) Writing de WeLearn, un servicio colombiano de tutorías de
+idiomas. Evalúas ${task === 'essay' ? 'la Part 1 (Essay)' : 'la Part 2'} contra los
 cuatro criterios oficiales de Cambridge, cada uno con peso de 25%: Content, Communicative
 Achievement, Organisation y Language.
 

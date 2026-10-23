@@ -62,8 +62,8 @@ if (!localBusiness) {
     if (!localBusiness.includes(value)) fail('localBusiness.ts', `${label} ya no coincide con la ficha de Google (${value}).`);
   }
 
-  if (!/'@type':\s*\['LocalBusiness',\s*'LanguageSchool'\]/.test(localBusiness)) {
-    fail('localBusiness.ts', "el nodo dejó de ser LocalBusiness + LanguageSchool.");
+  if (!/'@type':\s*'LocalBusiness'/.test(localBusiness) || /'LanguageSchool'/.test(localBusiness)) {
+    fail('localBusiness.ts', 'el negocio local debe describirse como LocalBusiness, sin presentarse como academia.');
   }
   if (!/courseMode:\s*'onsite'/.test(localBusiness) || !/location:\s*\{\s*'@id':\s*BUSINESS_ID\s*\}/.test(localBusiness)) {
     fail('localBusiness.ts', 'la CourseInstance presencial perdió su ubicación de negocio.');
@@ -71,6 +71,11 @@ if (!localBusiness) {
   for (const marker of ['GeoCoordinates', 'sameAs']) {
     if (!localBusiness.includes(marker)) fail('localBusiness.ts', `perdió ${marker}.`);
   }
+}
+
+const homeContent = read('src/app/(site)/home/home-content.ts');
+if (!homeContent || !/'@type':\s*'LocalBusiness'/.test(homeContent) || /'LanguageSchool'/.test(homeContent)) {
+  fail('home-content.ts', 'el nodo local de inicio debe ser LocalBusiness y no LanguageSchool.');
 }
 
 const snippetSource = read('src/lib/seo-snippet.ts') ?? '';

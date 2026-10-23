@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'Cursos de inglés presenciales en Bucaramanga, barrio Sotomayor, con tutor asignado. Combina clases online. Preparación IELTS, TOEFL e ICFES.',
   keywords: [
     'cursos de inglés en Bucaramanga presenciales', 'clases de inglés presenciales Bucaramanga',
-    'clases de inglés en Bucaramanga', 'academia de inglés Bucaramanga',
+    'clases de inglés en Bucaramanga', 'clases particulares de inglés Bucaramanga',
     'inglés Bucaramanga', 'curso de inglés Bucaramanga', 'IELTS Bucaramanga',
     'TOEFL Bucaramanga', 'preparación IELTS Bucaramanga', 'inglés online Bucaramanga',
     'clases inglés Santander Colombia', 'paquetes de inglés Bucaramanga',
@@ -43,10 +43,10 @@ const buildJsonLd = () => ({
   '@context': 'https://schema.org',
   '@graph': [
     localBusinessNode(
-      'Academia de inglés en Bucaramanga con clases presenciales en la sede de Sotomayor y online para toda Colombia. Preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
+      'Clases particulares de inglés en la sede de Sotomayor, Bucaramanga, y online para toda Colombia. Preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
     ),
     davidNode(
-      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen dio origen al método de la academia.'
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen dio origen al método de WeLearn.'
     ),
     zhannaNode(
       'Co-fundadora y directora académica de WeLearn. Estudió en Inglaterra y en Francia, y lidera el diseño curricular y la preparación de IELTS, TOEFL y Cambridge.',
@@ -155,7 +155,7 @@ export default function ClasesInglessBucaramangaPage() {
             {/* Copy */}
             <div>
               <p style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '0.75rem' }}>
-                Academia de inglés · Bucaramanga y Área Metropolitana
+                Clases de inglés · Bucaramanga y Área Metropolitana
               </p>
               <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.02em', color: 'var(--ink)', marginBottom: '1.25rem' }}>
                 Cursos de inglés<br />
@@ -216,7 +216,7 @@ export default function ClasesInglessBucaramangaPage() {
       <div style={{ background: 'var(--ink-bg)', padding: '0.9rem 0' }}>
         <div className="wrap">
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center', listStyle: 'none', margin: 0, padding: 0, fontSize: '0.85rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
-            <li>✓ Academia en Bucaramanga</li>
+            <li>✓ Sede en Bucaramanga</li>
             <li>✓ Clases online toda Colombia</li>
             <li>✓ Preparación IELTS</li>
             <li>✓ Preparación TOEFL iBT</li>
@@ -257,7 +257,7 @@ export default function ClasesInglessBucaramangaPage() {
       <section className="wlh-section wlh-section--alt">
         <div className="wrap">
           <p className="wlh-section-eyebrow">01 — Por qué WeLearn en Bucaramanga</p>
-          <h2 className="wlh-section-h2">No somos una app. Somos una academia de verdad.</h2>
+          <h2 className="wlh-section-h2">Clases con tutores reales y un método propio.</h2>
           <p className="wlh-section-desc" style={{ maxWidth: 580 }}>
             En Bucaramanga hay varias opciones para aprender inglés — grupos masivos, plataformas online genéricas, profesores particulares sin método.
             WeLearn combina plan individual, tutor asignado y una ruta creada por co-fundadores políglotas con dirección académica especializada.

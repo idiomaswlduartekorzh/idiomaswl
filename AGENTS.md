@@ -12,6 +12,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 Read `docs/OPERACION-REPOSITORIO.md` before changing content, deploying, merging, or changing Git remotes. The canonical repository is `idiomaswl`; production must come from its `main` branch only. Do not use `Welearnmiguel` as a source or publish from an uncommitted working tree.
 
+## Identidad de WeLearn
+
+El propietario confirmó que WeLearn no es una academia. Al describir la marca en contenido visible, metadatos, datos estructurados o prompts, usar «clases particulares de idiomas con tutores», «equipo de tutores» o una descripción específica y verificable del servicio. Conservar la sede en Bucaramanga, la opción online y el método diseñado por sus fundadores cuando corresponda. «Academia» solo puede aparecer al hablar de otras entidades, consultas comparativas o citas textuales atribuidas; no debe presentarse como identidad de WeLearn ni usarse `LanguageSchool` en sus datos estructurados.
+
 ## Antes de integrar tu rama en `main` — léelo
 
 Si tu rama nació antes del **7 de agosto de 2026**, `main` lleva por delante trabajo que no

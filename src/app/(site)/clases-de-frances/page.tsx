@@ -14,10 +14,10 @@ const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DE
 export const metadata: Metadata = {
   title: 'Clases de francés en Bucaramanga y online — DELF y DALF',
   description:
-    'Academia de francés en Bucaramanga y online. Preparación DELF A1–B2, DALF C1–C2 y TCF/TEF para Canadá, desde cero. Diagnóstico de pago.',
+    'Clases de francés en Bucaramanga y online. Preparación DELF A1–B2, DALF C1–C2 y TCF/TEF para Canadá, desde cero. Diagnóstico de pago.',
   keywords: [
     'clases de francés Bucaramanga',
-    'academia de francés Bucaramanga',
+    'clases particulares de francés Bucaramanga',
     'curso de francés Bucaramanga',
     'profesor de francés Bucaramanga',
     'clases de francés online Colombia',
@@ -67,7 +67,7 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Francés', 'fr'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Francés con preparación DELF, DALF y TCF/TEF, además de inglés, coreano, alemán, italiano y portugués.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Francés con preparación DELF, DALF y TCF/TEF, además de inglés, coreano, alemán, italiano y portugués.'
     ),
     davidNode(
       'Políglota activo en ocho idiomas. Aprendió francés después del inglés, el italiano y el portugués, y de ese recorrido nació el método WeLearn de francés para hispanohablantes.'
@@ -147,7 +147,7 @@ const FAQS = [
   },
   {
     q: '¿Dónde puedo tomar clases de francés en Bucaramanga?',
-    a: 'En Idiomas WeLearn, academia con base en Bucaramanga. Atendemos presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. Escríbenos por WhatsApp al 300 500 4253 y agendamos tu diagnóstico de pago.',
+    a: 'En Idiomas WeLearn ofrecemos clases particulares con sede en Bucaramanga. Atendemos presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. Escríbenos por WhatsApp al 300 500 4253 y consulta el precio del diagnóstico con tutor antes de agendar.',
   },
   {
     q: '¿Las clases son presenciales o virtuales?',
@@ -398,7 +398,7 @@ export default function ClasesDeFrancesPage() {
         <LocalBand
           accent="#1a2ecc"
           idioma="francés"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar francés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          intro="Estudia francés con un tutor y una ruta ajustada a tu nivel, ya sea para DELF, DALF o una meta personal. Si estás en la ciudad o en el área metropolitana puedes estudiar francés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Clases cara a cara para quienes rinden más con el profesor al lado. Ideal si vas a presentar el DELF y quieres entrenar la expresión oral sin la barrera de la pantalla."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de francés presenciales. ¿Cómo funcionan?"
         />

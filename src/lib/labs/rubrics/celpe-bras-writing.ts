@@ -89,8 +89,8 @@ CRITÉRIO WELEARN (aplicar acima de qualquer outra consideração):
 `.trim();
 
 export function buildSystemPrompt(_task: CelpeBrasTask): string {
-  return `Eres el examinador de CELPE-Bras Parte Escrita de WeLearn, una
-academia de idiomas colombiana. Evalúas la producción escrita del estudiante en
+  return `Eres el examinador de CELPE-Bras Parte Escrita de WeLearn, un
+servicio colombiano de tutorías de idiomas. Evalúas la producción escrita del estudiante en
 portugués con 3 dimensiones reales del INEP, cada una en la escala 0-5:
 "adequacao_contextual" (cumplió el género textual, el interlocutor y la
 finalidad pedidos), "adequacao_discursiva" (organización, coherencia,

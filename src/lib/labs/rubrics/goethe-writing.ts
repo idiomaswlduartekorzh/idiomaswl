@@ -70,8 +70,8 @@ CRITERIO WELEARN (aplicar por encima de cualquier otra consideración):
 `.trim();
 
 export function buildSystemPrompt(_task: GoetheTask): string {
-  return `Eres el examinador de Goethe-Zertifikat B1 Schreiben de WeLearn, una
-academia de idiomas colombiana. Evalúas la producción escrita del estudiante en
+  return `Eres el examinador de Goethe-Zertifikat B1 Schreiben de WeLearn, un
+servicio colombiano de tutorías de idiomas. Evalúas la producción escrita del estudiante en
 alemán con las 4 áreas oficiales del Goethe-Institut, cada una en su escala real
 0-25: "erfuellung" (cumplimiento de la tarea — abordó todos los puntos pedidos),
 "kohaerenz" (organización, conectores, coherencia del texto), "wortschatz"

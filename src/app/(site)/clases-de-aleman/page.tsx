@@ -13,11 +13,11 @@ const WA_GOETHE  = encodeURIComponent('Hola, quiero prepararme para el examen Go
 export const metadata: Metadata = {
   title: 'Clases de alemán en Bucaramanga y online — Goethe A1–C1',
   description:
-    'Academia de alemán en Bucaramanga y online. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería y Chancenkarte. Diagnóstico de pago.',
+    'Clases de alemán en Bucaramanga y online. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería y Chancenkarte. Diagnóstico de pago.',
   keywords: [
     'clases de alemán Bucaramanga',
     'curso de alemán Bucaramanga',
-    'academia de alemán Bucaramanga',
+    'clases particulares de alemán Bucaramanga',
     'nivel de alemán para Ausbildung',
     'curso de alemán para enfermeras',
     'Chancenkarte Colombia',
@@ -53,7 +53,7 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Alemán', 'de'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Alemán con preparación del Goethe-Zertifikat, además de inglés, francés, italiano, portugués, coreano y ruso.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Alemán con preparación del Goethe-Zertifikat, además de inglés, francés, italiano, portugués, coreano y ruso.'
     ),
     davidNode(
       'Políglota activo en ocho idiomas y co-fundador de WeLearn. El alemán es de los que más le costó, y por eso es el que mejor sabe desarmar para un hispanohablante.'
@@ -149,7 +149,7 @@ const FAQS = [
   },
   {
     q: '¿Existe un colegio alemán en Bucaramanga?',
-    a: 'No. No hay ninguna escuela alemana en Bucaramanga; el colegio alemán más antiguo del país está en Barranquilla. En Bucaramanga el alemán se estudia en algunas universidades y en academias de idiomas como la nuestra.',
+    a: 'No. No hay ninguna escuela alemana en Bucaramanga; el colegio alemán más antiguo del país está en Barranquilla. En Bucaramanga puedes estudiar alemán en algunas universidades o con tutores de idiomas como los de WeLearn.',
   },
   {
     q: '¿Qué nivel de alemán necesito para una Ausbildung?',
@@ -515,7 +515,7 @@ export default function ClasesDeAlemanPage() {
         <LocalBand
           accent="#1a2ecc"
           idioma="alemán"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar alemán presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          intro="Aprende alemán con un tutor y una ruta adaptada a tu objetivo, desde Goethe hasta Ausbildung. Si estás en la ciudad o en el área metropolitana puedes estudiar alemán presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Clases cara a cara para el idioma que más se beneficia de tener al profesor al lado: los casos, el género y el orden de la frase se corrigen mucho más rápido en persona que por chat."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de alemán presenciales. ¿Cómo funcionan?"
         />

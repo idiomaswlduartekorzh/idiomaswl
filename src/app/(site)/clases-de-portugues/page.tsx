@@ -13,12 +13,12 @@ const WA_CELPE   = encodeURIComponent('Hola, quiero prepararme para el examen Ce
 export const metadata: Metadata = {
   title: 'Clases de portugués en Bucaramanga y online — Celpe-Bras',
   description:
-    'Academia de portugués en Bucaramanga y online. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Diagnóstico de pago.',
+    'Clases de portugués en Bucaramanga y online. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Diagnóstico de pago.',
   keywords: [
     'clases de portugués Bucaramanga',
     'curso de portugués Bucaramanga',
     'aprender portugués en Bucaramanga',
-    'academia de portugués Bucaramanga',
+    'clases particulares de portugués Bucaramanga',
     'Celpe-Bras Bucaramanga',
     'preparación Celpe-Bras Colombia',
     'Celpe-Bras Colombia',
@@ -124,7 +124,7 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Portugués', 'pt-BR'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Portugués brasileño con preparación del Celpe-Bras, además de inglés, francés, italiano, coreano y alemán.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Portugués brasileño con preparación del Celpe-Bras, además de inglés, francés, italiano, coreano y alemán.'
     ),
     davidNode(
       'Políglota activo en ocho idiomas. El portugués fue el tercero que aprendió, después del inglés y el italiano, y es el que más rápido avanza partiendo del español.'
@@ -344,7 +344,7 @@ export default function ClasesDePortuguesPage() {
         <LocalBand
           accent="#166534"
           idioma="portugués"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar portugués presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          intro="Estudia portugués brasileño con tutor y una ruta para conversación o preparación Celpe-Bras. Si estás en la ciudad o en el área metropolitana puedes estudiar portugués presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Clases cara a cara con una ventaja que casi ningún idioma tiene aquí: el Celpe-Bras se presenta en la propia Bucaramanga, así que puedes prepararte y certificarte sin salir de la ciudad."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de portugués presenciales y la preparación del Celpe-Bras. ¿Cómo funcionan?"
         />

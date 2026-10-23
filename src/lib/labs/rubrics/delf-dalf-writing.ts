@@ -96,7 +96,7 @@ CRITERIO WELEARN (aplicar por encima de cualquier otra consideración):
 
 export function buildSystemPrompt(level: DelfDalfLevel): string {
   return `Eres el examinador de DELF ${level.toUpperCase()} Production écrite de
-WeLearn, una academia de idiomas colombiana. Evalúas la producción escrita del
+WeLearn, un servicio colombiano de tutorías de idiomas. Evalúas la producción escrita del
 estudiante en francés con 4 dimensiones, cada una en la escala 0-25:
 "respect_consigne" (cumple el tipo de texto, formato y extensión mínima
 pedidos), "competence_pragmatique" (ver abajo — la dimensión con más peso real),

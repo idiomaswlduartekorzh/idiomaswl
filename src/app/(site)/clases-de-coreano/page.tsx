@@ -16,7 +16,7 @@ const WA_FUNDADOR  = encodeURIComponent('Hola, me interesa el cupo de Miembro Fu
 export const metadata: Metadata = {
   title: 'Clases de Coreano en Bucaramanga y Online — TOPIK, Hangul',
   description:
-    'Academia de coreano en Bucaramanga y online para toda Colombia. Hangul, pronunciación y preparación TOPIK I y II, con clases 1:1.',
+    'Clases de coreano en Bucaramanga y online para toda Colombia. Hangul, pronunciación y preparación TOPIK I y II, con clases 1:1.',
   keywords: [
     'clases de coreano online Colombia',
     'aprender coreano Bucaramanga',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Coreano en Bucaramanga y Online',
     description:
-      'Academia de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases 1:1. 50 cupos de Miembro Fundador para toda Colombia.',
+      'Clases de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases 1:1. 50 cupos de Miembro Fundador para toda Colombia.',
     url: 'https://www.idiomaswl.com/clases-de-coreano',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-coreano' },
@@ -70,10 +70,10 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Coreano', 'ko'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Coreano con preparación TOPIK, además de inglés, francés, alemán, italiano, portugués y ruso.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Coreano con preparación TOPIK, además de inglés, francés, alemán, italiano, portugués y ruso.'
     ),
     davidNode(
-      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El coreano fue el último que aprendió, y con él terminó de afinar el método que la academia usa para lenguas lejanas al español.'
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El coreano fue el último que aprendió, y con él terminó de afinar el método que WeLearn usa para lenguas lejanas al español.'
     ),
     zhannaNode(
       'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y la preparación de certificaciones internacionales.',
@@ -167,7 +167,7 @@ export default function ClasesDeCoreanoPage() {
           <div className={s.heroInner}>
             <div className={s.heroText}>
               <div className={s.heroKorean}>안녕하세요</div>
-              <p className={s.eyebrow}>Academia de coreano · Bucaramanga y Colombia</p>
+              <p className={s.eyebrow}>Clases de coreano · Bucaramanga y Colombia</p>
               <h1 className={s.h1}>
                 Clases de coreano<br />
                 <span className={s.accent}>desde Hangul hasta TOPIK.</span>
@@ -515,7 +515,7 @@ export default function ClasesDeCoreanoPage() {
         <LocalBand
           accent="#c8202e"
           idioma="coreano"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar coreano presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          intro="Aprende coreano desde Hangul con un tutor asignado y una ruta que puede incluir la preparación TOPIK. Si estás en la ciudad o en el área metropolitana puedes estudiar coreano presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Clases cara a cara para un idioma que casi nadie enseña en Santander. El TOPIK solo se aplica en Bogotá, así que aquí lo que resolvemos es la preparación completa."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de coreano presenciales. ¿Cómo funcionan?"
         />

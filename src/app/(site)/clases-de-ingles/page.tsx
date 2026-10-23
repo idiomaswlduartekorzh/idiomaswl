@@ -83,10 +83,10 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Inglés', 'en'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Inglés con preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Inglés con preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
     ),
     davidNode(
-      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen es lo que dio origen al método de la academia.'
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen es lo que dio origen al método de WeLearn.'
     ),
     zhannaNode(
       'Co-fundadora y directora académica de WeLearn. Estudió en Inglaterra y en Francia, y lidera el diseño curricular y la preparación de IELTS, TOEFL y Cambridge.',
@@ -243,7 +243,7 @@ export default function ClasesDeInglesPage() {
           {/* Copy */}
           <div>
             <p className="wlh-section-eyebrow" style={{ marginBottom: '1rem' }}>
-              Academia de inglés online · Toda Colombia
+              Clases de inglés online · Toda Colombia
             </p>
             <h1 style={{
               fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
@@ -321,7 +321,7 @@ export default function ClasesDeInglesPage() {
           <p className="wlh-section-eyebrow">01 — ¿Para qué necesitas el inglés?</p>
           <h2 className="wlh-section-h2">Cada objetivo, una preparación específica.</h2>
           <p className="wlh-section-desc">
-            No todas las clases de inglés son iguales. En Idiomas WeLearn — academia de inglés en Bucaramanga con cobertura nacional online — tu plan de estudio depende de exactamente lo que necesitas lograr.
+            No todas las clases de inglés son iguales. En Idiomas WeLearn — con tutores en Bucaramanga y clases online en Colombia — tu plan de estudio depende de exactamente lo que necesitas lograr.
           </p>
           <div className={s.grid4} style={{ marginTop: '2.5rem' }}>
             {INTENTS.map(intent => (
@@ -359,7 +359,7 @@ export default function ClasesDeInglesPage() {
       <section className="wlh-section">
         <div className="wrap">
           <p className="wlh-section-eyebrow">02 — Por qué WeLearn</p>
-          <h2 className="wlh-section-h2">No es una app. Es una academia de verdad.</h2>
+          <h2 className="wlh-section-h2">Clases con tutores reales y un método propio.</h2>
           <p className="wlh-section-desc" style={{ maxWidth: 560 }}>
             WeLearn nació de la frustración con métodos que entretienen pero no enseñan.
             Aquí la prioridad es que aprendas y alcances el resultado que necesitas.
@@ -597,7 +597,7 @@ export default function ClasesDeInglesPage() {
       <LocalBand
         accent="#1a4fcc"
         idioma="inglés"
-        intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar inglés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo tutor y el mismo plan, se hace por videollamada."
+        intro="En WeLearn eliges la ruta de inglés según tu meta, con tutor asignado para conversación, trabajo o exámenes. Si estás en la ciudad o en el área metropolitana puedes estudiar inglés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo tutor y el mismo plan, se hace por videollamada."
         presencial="Clases cara a cara con tutor asignado. Si vas por certificación, puedes preparar IELTS y TOEFL desde Bucaramanga; consulta las sedes vigentes de cada examen antes de inscribirte."
         waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de inglés presenciales. ¿Cómo funcionan?"
         moreHref="/clases-de-ingles-bucaramanga"
