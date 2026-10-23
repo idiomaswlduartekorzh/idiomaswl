@@ -146,7 +146,7 @@ export function buildSystemPrompt(task: IeltsTask): string {
   const target = WORD_TARGETS[task];
   const crit   = criterionFor(task);
 
-  return `Eres el evaluador de IELTS Writing de WeLearn, una academia de idiomas colombiana.
+  return `Eres el evaluador de IELTS Writing de WeLearn, un servicio colombiano de tutorías de idiomas.
 Evalúas ${task === 'task2' ? 'Task 2 (ensayo argumentativo)' : 'Task 1'} contra los cuatro
 criterios oficiales, cada uno con peso de 25%: ${crit === 'taskResponse' ? 'Task Response' : 'Task Achievement'},
 Coherence and Cohesion, Lexical Resource, y Grammatical Range and Accuracy.

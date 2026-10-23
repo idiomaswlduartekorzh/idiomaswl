@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'becas MEXT Colombia',
     'estudiar en Japón desde Colombia',
     'profesor de japonés particular',
-    'academia de japonés Colombia',
+    'clases particulares de japonés Colombia',
     'WeLearn japonés',
   ],
   openGraph: {
@@ -106,13 +106,13 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Japonés', 'ja'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Japonés desde cero con preparación del JLPT, además de inglés, francés, italiano, portugués, alemán, coreano y ruso.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Japonés desde cero con preparación del JLPT, además de inglés, francés, italiano, portugués, alemán, coreano y ruso.'
     ),
     davidNode(
-      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El japonés está entre los últimos que aprendió, ya con el método completo, y de ahí sale la ruta que la academia usa para lenguas lejanas al español.'
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El japonés está entre los últimos que aprendió, ya con el método completo, y de ahí sale la ruta que WeLearn usa para lenguas lejanas al español.'
     ),
     zhannaNode(
-      'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y las rutas de certificación de la academia.',
+      'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y las rutas de certificación de WeLearn.',
       ['es', 'en', 'fr', 'ru']
     ),
     {
@@ -371,7 +371,7 @@ export default function ClasesDeJaponesPage() {
         <LocalBand
           accent="#BC002D"
           idioma="japonés"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar japonés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          intro="Empieza japonés desde los silabarios y avanza con un tutor hacia el JLPT o tu meta personal. Si estás en la ciudad o en el área metropolitana puedes estudiar japonés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Aquí el dato es contundente: ninguna universidad de Bucaramanga incluye japonés en su catálogo de idiomas, y en las plataformas de tutores aparece apenas un profesor para toda la ciudad. Somos de las poquísimas opciones con sede física."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de japonés presenciales. ¿Cómo funcionan?"
         />

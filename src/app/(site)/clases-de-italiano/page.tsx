@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'Clases de italiano 1:1 en Bucaramanga y online. Prepara el B1 de ciudadanía italiana, CILS o CELI con tutor y plan según tu nivel.',
   keywords: [
     'clases de italiano Bucaramanga',
-    'academia de italiano Bucaramanga',
+    'clases particulares de italiano Bucaramanga',
     'curso de italiano Bucaramanga',
     'profesor de italiano Bucaramanga',
     'italiano para ciudadanía italiana',
@@ -61,7 +61,7 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Italiano', 'it'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Italiano con preparación CILS y CELI, incluida la ruta B1 para la ciudadanía italiana, además de inglés, francés, coreano, alemán y portugués.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Italiano con preparación CILS y CELI, incluida la ruta B1 para la ciudadanía italiana, además de inglés, francés, coreano, alemán y portugués.'
     ),
     davidNode(
       'Políglota activo en ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés, y es el que mejor demuestra cuánta ventaja da partir del español.'
@@ -295,7 +295,7 @@ export default function ClasesDeItalianoPage() {
         <LocalBand
           accent="#009246"
           idioma="italiano"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar italiano presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          intro="Aprende italiano con tutor y una ruta para conversación, ciudadanía o preparación CILS y CELI. Si estás en la ciudad o en el área metropolitana puedes estudiar italiano presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Clases cara a cara para quienes rinden más con el profesor al lado. Especialmente útil si vas por el B1 de ciudadanía: la prueba oral es la que más se falla y la que menos se puede improvisar."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de italiano presenciales. ¿Cómo funcionan?"
         />

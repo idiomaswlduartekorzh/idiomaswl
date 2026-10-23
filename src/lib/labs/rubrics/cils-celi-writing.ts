@@ -87,8 +87,8 @@ pedidos en la consigna, no solo el tema general.`,
 export function buildSystemPrompt(task: CilsCeliTask): string {
   const minWords = CILS_WORD_TARGETS[task];
 
-  return `Eres el examinador de CILS UNO-B1 Scrittura de WeLearn, una academia de
-idiomas colombiana. Evalúas la producción escrita del estudiante en italiano con
+  return `Eres el examinador de CILS UNO-B1 Scrittura de WeLearn, un servicio colombiano de tutorías de
+idiomas. Evalúas la producción escrita del estudiante en italiano con
 4 dimensiones sobre la escala oficial real 0-20 de Siena: "aderenza" (adecuación
 al compito y al tipo textual — cumplió todos los puntos pedidos), "coerenza"
 (organización, conectores, coherencia del texto), "lessico" (vocabulario —

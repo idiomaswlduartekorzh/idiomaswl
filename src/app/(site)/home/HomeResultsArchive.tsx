@@ -120,8 +120,8 @@ export default function HomeResultsArchive() {
       </div>
 
       <p className={styles.resultsArchiveNote}>
-        Los resultados son históricos y no garantizan una puntuación. WeLearn es una
-        academia independiente; los nombres de los exámenes no implican afiliación ni aval.
+        Los resultados son históricos y no garantizan una puntuación. WeLearn ofrece
+        preparación independiente; los nombres de los exámenes no implican afiliación ni aval.
       </p>
 
       <div className={styles.resultsExplore}>

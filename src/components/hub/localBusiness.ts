@@ -36,15 +36,14 @@ export const ZHANNA_ID = 'https://www.idiomaswl.com/#zhanna';
 export const BUSINESS_ID = 'https://www.idiomaswl.com/#localbusiness';
 
 /**
- * Nodo LocalBusiness + LanguageSchool. `description` se pasa por idioma para que cada
+ * Nodo LocalBusiness. `description` se pasa por idioma para que cada
  * landing describa su propia oferta sin repetir el resto del marcado.
  */
 export function localBusinessNode(description: string) {
   return {
-    '@type': ['LocalBusiness', 'LanguageSchool'],
+    '@type': 'LocalBusiness',
     '@id': BUSINESS_ID,
     name: 'Idiomas WeLearn',
-    alternateName: 'WeLearn Academia de Idiomas',
     description,
     url: 'https://www.idiomaswl.com',
     telephone: `+${WA_NUMBER}`,

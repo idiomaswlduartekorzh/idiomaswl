@@ -8,23 +8,23 @@ const WA = '573005004253';
 const WA_GENERAL = encodeURIComponent('Hola, vi la página de Quiénes somos en WeLearn y quiero conocer el precio y agendar un diagnóstico con tutor.');
 
 export const metadata: Metadata = {
-  title: 'Quiénes somos — Academia de idiomas en Bucaramanga',
+  title: 'Quiénes somos — Tutores de idiomas en Bucaramanga',
   description:
-    'Academia con sede en Bucaramanga (Sotomayor) y clases online en toda Colombia, fundada en 2015 por un políglota y una lingüista titulada.',
+    'Tutores de idiomas en Bucaramanga (Sotomayor) y online en Colombia. WeLearn nació en 2015 de un políglota y una lingüista titulada.',
   keywords: [
-    'academia de idiomas Bucaramanga',
+    'tutores de idiomas Bucaramanga',
     'Idiomas WeLearn',
     'quiénes somos WeLearn',
     'José David Duarte Silva políglota',
     'Zhanna Korzh',
     'profesores de idiomas Bucaramanga',
-    'escuela de idiomas Sotomayor Bucaramanga',
-    'academia de idiomas Santander',
+    'clases particulares de idiomas Sotomayor Bucaramanga',
+    'clases de idiomas Santander',
   ],
   openGraph: {
-    title: 'Quiénes somos — Idiomas WeLearn, academia en Bucaramanga',
+    title: 'Quiénes somos — Idiomas WeLearn, tutores en Bucaramanga',
     description:
-      'Una academia con sede real en Bucaramanga desde 2015, fundada por un políglota en ocho idiomas y una lingüista titulada en Rusia en enseñanza de idiomas. Más de 1000 estudiantes.',
+      'Un equipo de tutores con sede en Bucaramanga desde 2015, fundado por un políglota en ocho idiomas y una lingüista titulada en Rusia en enseñanza de idiomas.',
     url: 'https://www.idiomaswl.com/quienes-somos',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/quienes-somos' },
@@ -157,10 +157,10 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     localBusinessNode(
-      'Academia de idiomas con sede presencial en Bucaramanga y clases online para toda Colombia y el mundo. Enseña ocho idiomas y prepara exámenes internacionales, con más de 1000 estudiantes.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia y el mundo. Tutores para ocho idiomas y preparación de exámenes internacionales.'
     ),
     davidNode(
-      'Co-fundador de Idiomas WeLearn e ingeniero industrial de la UDES. Políglota activo en ocho idiomas: español nativo, inglés C2, italiano y portugués C1, francés y alemán B2, ruso y coreano B1. Se formó en inglés en el LTC de Eastbourne, Inglaterra, y diseñó el método con el que la academia enseña a hispanohablantes adultos.'
+      'Co-fundador de Idiomas WeLearn e ingeniero industrial de la UDES. Políglota activo en ocho idiomas: español nativo, inglés C2, italiano y portugués C1, francés y alemán B2, ruso y coreano B1. Se formó en inglés en el LTC de Eastbourne, Inglaterra, y diseñó el método con el que WeLearn enseña a hispanohablantes adultos.'
     ),
     zhannaNode(
       'Co-fundadora y directora académica de Idiomas WeLearn. Lingüista y profesora universitaria titulada por la Universidad Estatal de Oremburgo (Rusia), especializada en teorías y métodos de enseñanza de idiomas extranjeros, con estudios de doctorado en idiomas germánicos en la Universidad Estatal Pedagógica de Oremburgo. Se formó en francés en la Universidad de Le Mans (Francia) y en inglés en el LTC de Eastbourne (Inglaterra). Enseña desde 2011. Ruso nativo, inglés y español C1, francés B2, italiano A2.',
@@ -195,8 +195,8 @@ export default function QuienesSomosPage() {
             <div className={s.heroText}>
               <p className={s.eyebrow}>Quiénes somos · WeLearn</p>
               <h1 className={s.h1}>
-                Una academia con<br />
-                <span className={s.accent}>dirección física.</span>
+                Tutores de idiomas con<br />
+                <span className={s.accent}>sede en Bucaramanga.</span>
               </h1>
               <p className={s.heroSub}>
                 Idiomas WeLearn nació en Bucaramanga en 2015 y sigue aquí, en el barrio Sotomayor.
@@ -370,8 +370,8 @@ export default function QuienesSomosPage() {
           <div className={s.wrap}>
             <h2 className={s.ctaTitle}>Empieza por saber<br /><span className={s.accent}>dónde estás.</span></h2>
             <p className={s.ctaSub}>
-              El diagnóstico es de pago y dura media hora. Salimos de ahí con tu nivel real, tu
-              objetivo y cuánto te va a tomar de verdad.
+              El diagnóstico con tutor es de pago. Te informamos su duración y precio antes de
+              agendar; sirve para entender tu punto de partida y trazar una ruta hacia tu objetivo.
             </p>
             <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
               <WaIcon /> Agendar diagnóstico de pago

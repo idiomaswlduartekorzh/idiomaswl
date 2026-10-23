@@ -187,7 +187,7 @@ export default function HomePage() {
             </div>
           </section>
           <p className={styles.discoveryDisclaimer}>
-            WeLearn es una academia independiente. Los nombres de los exámenes identifican
+            WeLearn ofrece preparación independiente. Los nombres de los exámenes identifican
             la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
           </p>
         </div>
@@ -421,7 +421,7 @@ export default function HomePage() {
           </div>
         </div>
         <p className={styles.examRevealDisclaimer}>
-          WeLearn es una academia independiente. Los nombres de los exámenes identifican
+          WeLearn ofrece preparación independiente. Los nombres de los exámenes identifican
           la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
         </p>
         <i className={styles.examNarrativeExit} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" />

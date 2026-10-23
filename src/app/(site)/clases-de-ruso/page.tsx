@@ -13,7 +13,7 @@ const WA_BECAS   = encodeURIComponent('Hola, quiero aprender ruso para aplicar a
 export const metadata: Metadata = {
   title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero',
   description:
-    'Academia de ruso en Bucaramanga y online. Del alfabeto cirílico al nivel avanzado, con preparación para estudiar en Rusia. Diagnóstico de pago.',
+    'Clases de ruso en Bucaramanga y online. Del alfabeto cirílico al nivel avanzado, con preparación para estudiar en Rusia. Diagnóstico de pago.',
   keywords: [
     'clases de ruso Bucaramanga',
     'curso de ruso Bucaramanga',
@@ -102,13 +102,13 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Ruso', 'ru'),
     },
     localBusinessNode(
-      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Ruso desde cero con profesora rusoparlante, además de inglés, francés, italiano, portugués, alemán y coreano.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Ruso desde cero con profesora rusoparlante, además de inglés, francés, italiano, portugués, alemán y coreano.'
     ),
     davidNode(
-      'Políglota activo en ocho idiomas y co-fundador de WeLearn. Diseñó el método con el que la academia enseña lenguas lejanas al español, como el ruso, a hispanohablantes adultos.'
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. Diseñó el método con el que WeLearn enseña lenguas lejanas al español, como el ruso, a hispanohablantes adultos.'
     ),
     zhannaNode(
-      'Co-fundadora y directora académica de WeLearn, rusoparlante. Lidera la enseñanza de ruso de la academia y el diseño de sus rutas de nivel.',
+      'Co-fundadora y directora académica de WeLearn, rusoparlante. Lidera la enseñanza de ruso de WeLearn y el diseño de sus rutas de nivel.',
       ['ru', 'es', 'en', 'fr']
     ),
     {
@@ -348,7 +348,7 @@ export default function ClasesDeRusoPage() {
         <LocalBand
           accent="#0039A6"
           idioma="ruso"
-          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar ruso presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con la misma profesora y el mismo plan, se hace por videollamada."
+          intro="Estudia ruso desde el alfabeto con acompañamiento de una profesora rusoparlante. Si estás en la ciudad o en el área metropolitana puedes estudiar ruso presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con la misma profesora y el mismo plan, se hace por videollamada."
           presencial="Prácticamente la única opción de ruso con sede física en Santander: ni el Instituto de Lenguas de la UIS ni el Departamento de Lenguas de la UNAB lo incluyen en su catálogo, y no hay academias privadas locales que lo dicten."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de ruso presenciales. ¿Cómo funcionan?"
         />
