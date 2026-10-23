@@ -28,7 +28,7 @@ export function PracticaWABanner({ idioma, color, msg }: Props) {
               ¿Aprendes más rápido con un tutor?
             </p>
             <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.5 }}>
-              Agenda tu clase de diagnóstico gratis de {idioma} con un tutor de WeLearn — sin costo, sin compromiso.
+              Agenda tu clase de diagnóstico de pago de {idioma} con un tutor de WeLearn — con precio informado antes de agendar.
             </p>
           </div>
           <a

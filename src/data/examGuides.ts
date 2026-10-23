@@ -460,7 +460,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { href: '/blog/como-sacar-band-7-en-ielts', label: 'Cómo llegar a Band 7', note: 'Lo que separa un 6,5 de un 7 en cada destreza.' },
       { href: '/practica/ingles/b1/escritura', label: 'Escritura guiada', note: 'La destreza donde más gente se queda corta del mínimo por sección.' },
       { href: '/practica/ingles/b1/habla', label: 'Expresión oral', note: 'Estructuras y pronunciación modelo para el Speaking.' },
-      { href: '/clases-de-ingles-bucaramanga', label: 'Preparación en Bucaramanga', note: 'Presencial en el barrio Sotomayor u online, con diagnóstico gratis.' },
+      { href: '/clases-de-ingles-bucaramanga', label: 'Preparación en Bucaramanga', note: 'Presencial en el barrio Sotomayor u online, con diagnóstico de pago.' },
     ],
     checked: 'agosto de 2026',
   },

@@ -8,13 +8,13 @@ import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/com
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
   title: 'Clases de francés en Bucaramanga y online — DELF y DALF',
   description:
-    'Academia de francés en Bucaramanga y online. Preparación DELF A1–B2, DALF C1–C2 y TCF/TEF para Canadá, desde cero. Diagnóstico gratis.',
+    'Academia de francés en Bucaramanga y online. Preparación DELF A1–B2, DALF C1–C2 y TCF/TEF para Canadá, desde cero. Diagnóstico de pago.',
   keywords: [
     'clases de francés Bucaramanga',
     'academia de francés Bucaramanga',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Francés en Bucaramanga y Online — DELF/DALF',
     description:
-      'Presencial en Bucaramanga y online en toda Colombia. Preparación DELF, DALF y TCF/TEF Canadá. Diagnóstico gratis.',
+      'Presencial en Bucaramanga y online en toda Colombia. Preparación DELF, DALF y TCF/TEF Canadá. Diagnóstico de pago.',
     url: 'https://www.idiomaswl.com/clases-de-frances',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-frances' },
@@ -65,13 +65,6 @@ const jsonLd = {
         url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: courseInstances('Francés', 'fr'),
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Clase de diagnóstico gratis',
-        availability: 'https://schema.org/InStock',
-      },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Francés con preparación DELF, DALF y TCF/TEF, además de inglés, coreano, alemán, italiano y portugués.'
@@ -93,7 +86,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Identificamos tu nivel real, tu objetivo y te diseñamos un plan personalizado desde la primera sesión.' },
+  { icon: '🎯', title: 'Diagnóstico de pago', desc: 'Identificamos tu nivel real, tu objetivo y te diseñamos un plan personalizado desde la primera sesión.' },
   { icon: '🇫🇷', title: 'Tutor especializado', desc: 'Docentes con experiencia en DELF/DALF y en enseñanza de francés a hispanohablantes.' },
   { icon: '📚', title: 'Método estructurado', desc: 'Pronunciación → gramática → vocabulario → producción oral y escrita. Sin saltos, sin relleno.' },
   { icon: '✅', title: 'Preparación DELF/DALF', desc: 'Simulacros, comprensión auditiva, producción escrita y expresión oral. Exactamente lo que evalúa el examen.' },
@@ -154,7 +147,7 @@ const FAQS = [
   },
   {
     q: '¿Dónde puedo tomar clases de francés en Bucaramanga?',
-    a: 'En Idiomas WeLearn, academia con base en Bucaramanga. Atendemos presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. Escríbenos por WhatsApp al 300 500 4253 y agendamos tu diagnóstico gratis.',
+    a: 'En Idiomas WeLearn, academia con base en Bucaramanga. Atendemos presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. Escríbenos por WhatsApp al 300 500 4253 y agendamos tu diagnóstico de pago.',
   },
   {
     q: '¿Las clases son presenciales o virtuales?',
@@ -162,7 +155,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
-    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. La forma más rápida de tener el precio exacto de tu caso es el diagnóstico gratis, donde definimos objetivo, nivel y frecuencia. Puedes ver los planes vigentes en la página de precios.',
+    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. La forma más rápida de tener el precio exacto de tu caso es el diagnóstico de pago, donde definimos objetivo, nivel y frecuencia. Puedes ver los planes vigentes en la página de precios.',
   },
   {
     q: '¿El DELF sirve para migrar a Canadá?',
@@ -230,7 +223,7 @@ export default function ClasesDeFrancesPage() {
                   className={s.waBtn}
                 >
                   <WaIcon />
-                  Clase de diagnóstico gratis
+                  Clase de diagnóstico de pago
                 </a>
                 <Link href="/examenes/delf-dalf" className={s.ghostBtn}>
                   Ver simulacros DELF →
@@ -268,7 +261,7 @@ export default function ClasesDeFrancesPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>DELF A1 hasta DALF C2</strong></span>
         </div>
@@ -563,7 +556,7 @@ export default function ClasesDeFrancesPage() {
             <p className={s.ctaPhrase}>C'est parti !</p>
             <h2 className={s.ctaTitle}>
               Tu diagnóstico de francés<br />
-              <span className={s.accent}>es gratis.</span>
+              <span className={s.accent}>es una sesión paga.</span>
             </h2>
             <p className={s.ctaSub}>
               Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al DELF que necesitas.
@@ -575,7 +568,7 @@ export default function ClasesDeFrancesPage() {
                 className={s.waBtn}
               >
                 <WaIcon />
-                Agendar diagnóstico gratis
+                Agendar diagnóstico de pago
               </a>
             </div>
           </div>

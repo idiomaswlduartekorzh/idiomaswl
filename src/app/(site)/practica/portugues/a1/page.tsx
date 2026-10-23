@@ -45,7 +45,7 @@ export default function PortuguesA1Page() {
       <PracticaWABanner
         idioma="portugués"
         color="#009c3b"
-        msg="Hola, estoy practicando portugués en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando portugués en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

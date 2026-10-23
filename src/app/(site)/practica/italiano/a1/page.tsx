@@ -48,7 +48,7 @@ export default function ItalianoA1Page() {
       <PracticaWABanner
         idioma="italiano"
         color="#009246"
-        msg="Hola, estoy practicando italiano en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando italiano en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

@@ -9,6 +9,28 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
+
+`codex/seo-contact-audit-20261023` parte de `origin/main` en `d7c48068`.
+Estado: `VALIDADO_PARA_INTEGRAR`; la publicación se verifica por separado.
+La revisión de la lista principal de WhatsApp (sin abrir Archivados), el panel de
+contactos y el alcance por página, y Search Console no respaldan una caída general
+del tráfico orgánico: los clics de búsqueda subieron de 708 a 926 en dos ventanas
+consecutivas de 28 días. El panel guarda clics a WhatsApp, pero aún no recibe
+mensajes entrantes ni confirmaciones manuales, por lo que no cuantifica la caída
+percibida de conversaciones. Se localizaron 14 referencias de Google en la lista
+principal; son un mínimo observado, no un censo exhaustivo.
+
+El propietario confirmó que las clases y los diagnósticos con tutor son pagos; las
+pruebas automáticas de la web siguen gratis. Esta rama corrige las promesas de
+sesiones gratuitas en páginas, blog, enlaces de WhatsApp y datos estructurados, y
+ajusta las páginas de inglés online, inglés en Bucaramanga, coreano, italiano y
+japonés según el rendimiento observado. Sin migración ni cambio de precios.
+Validaciones: `check:practica-catalog`, TypeScript, navegación, SEO foundation,
+landings locales, snippets y build Webpack completo de 2.764 rutas. El informe
+privado con referencias de chats se conserva fuera del repositorio para no publicar
+identificadores de conversaciones.
+
 ## Guía autónoma IELTS Set 1 — 20 de octubre de 2026
 
 `codex/ielts-guided-review-20261020` parte de `origin/main`. Estado:

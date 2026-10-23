@@ -7,7 +7,7 @@ import LocalBand from '@/components/hub/LocalBand';
 export const metadata: Metadata = {
   title: 'Academia de idiomas en Bucaramanga y online — 8 idiomas',
   description:
-    'Ocho idiomas y nueve certificaciones oficiales, en Bucaramanga y online para toda Colombia: IELTS, TOEFL, Goethe, DELF, CILS y TOPIK. Diagnóstico gratis.',
+    'Ocho idiomas y nueve certificaciones oficiales, en Bucaramanga y online para toda Colombia: IELTS, TOEFL, Goethe, DELF, CILS y TOPIK. Diagnóstico de pago.',
   keywords: [
     'academia de idiomas Bucaramanga',
     'clases de idiomas Bucaramanga',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Academia de Idiomas en Bucaramanga y Online',
-    description: 'Inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Presencial en Bucaramanga y online en toda Colombia. Diagnóstico gratis.',
+    description: 'Inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Presencial en Bucaramanga y online en toda Colombia. Diagnóstico de pago.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
   },
@@ -275,7 +275,7 @@ export default function ClasesDeIdiomasPage() {
               rel="noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#25d366', color: '#fff', fontWeight: 700, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem' }}
             >
-              Diagnóstico gratis por WhatsApp →
+              Diagnóstico de pago por WhatsApp →
             </a>
             <Link href="/quienes-somos" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem', border: '1px solid rgba(255,255,255,0.15)' }}>
               Conócenos
@@ -291,7 +291,7 @@ export default function ClasesDeIdiomasPage() {
             { n: '8', label: 'Idiomas disponibles' },
             { n: '9', label: 'Certificaciones oficiales' },
             { n: 'Sotomayor', label: 'Sede en Bucaramanga' },
-            { n: 'Gratis', label: 'Diagnóstico inicial' },
+            { n: '1:1', label: 'Diagnóstico con tutor' },
           ].map(s => (
             <div key={s.label} style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--ink)', lineHeight: 1 }}>{s.n}</p>
@@ -438,7 +438,7 @@ export default function ClasesDeIdiomasPage() {
               { icon: '🎯', title: 'Tutores especializados por idioma', desc: 'Cada tutor conoce el examen al que te preparas, el nivel que tienes y el objetivo que persigues. No son instructores genéricos.' },
               { icon: '📋', title: 'Plan personalizado desde el día 1', desc: 'El diagnóstico inicial define exactamente qué necesitas. El plan cambia si tu ritmo o tu objetivo cambia.' },
               { icon: '🗣️', title: 'Clases 1:1, no grupos', desc: 'Cada minuto de clase es para ti. Sin esperar turno, sin ritmo de grupo que no se adapta, sin sílabo rígido.' },
-              { icon: '✅', title: 'Diagnóstico gratis', desc: 'Tu primera sesión de diagnóstico no tiene costo. Conoces el tutor, el método y el plan antes de comprometerte.' },
+              { icon: '✅', title: 'Diagnóstico de pago', desc: 'Tu primera sesión de diagnóstico tiene costo. Conoces el tutor, el método y el plan antes de comprometerte.' },
             ].map(f => (
               <div key={f.title} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1.4rem' }}>
                 <span style={{ fontSize: '1.75rem', display: 'block', marginBottom: '0.75rem' }}>{f.icon}</span>
@@ -505,20 +505,20 @@ export default function ClasesDeIdiomasPage() {
       <section style={{ padding: '4.5rem 1.25rem', textAlign: 'center', background: 'linear-gradient(135deg, #050a14 0%, #0b1230 100%)' }}>
         <div style={{ maxWidth: 580, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, color: '#fff', marginBottom: '0.75rem', lineHeight: 1.2 }}>
-            Tu diagnóstico es gratis.
+            Tu diagnóstico es de pago.
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
-            Agenda tu clase de diagnóstico gratuita. En 60 minutos sabrás tu nivel real,
+            Agenda tu clase de diagnóstico de pago. En 60 minutos sabrás tu nivel real,
             qué necesitas y cuánto tiempo te toma alcanzar tu objetivo.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero agendar mi primera clase de diagnóstico gratis en WeLearn.')}`}
+              href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero conocer el precio y agendar la primera clase de diagnóstico con tutor en WeLearn.')}`}
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#25d366', color: '#fff', fontWeight: 700, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem' }}
             >
-              Agendar diagnóstico gratis →
+              Agendar diagnóstico de pago →
             </a>
             <Link href="/practica" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem', border: '1px solid rgba(255,255,255,0.15)' }}>
               Practicar gratis

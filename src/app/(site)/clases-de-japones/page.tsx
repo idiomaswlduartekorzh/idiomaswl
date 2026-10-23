@@ -7,13 +7,13 @@ import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/com
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de japonés en WeLearn y quiero agendar mi diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de japonés en WeLearn y quiero conocer el precio y agendar un diagnóstico con tutor.');
 const WA_JLPT    = encodeURIComponent('Hola, quiero prepararme para el JLPT con WeLearn. ¿Cómo funciona el plan?');
 
 export const metadata: Metadata = {
   title: 'Clases de japonés en Bucaramanga y online — JLPT desde cero',
   description:
-    'Academia de japonés en Bucaramanga y online. Del hiragana al JLPT, con preparación para becas de estudio en Japón. Diagnóstico gratis.',
+    'Clases de japonés 1:1 en Bucaramanga y online: aprende hiragana y katakana, avanza hacia el JLPT y prepara tus objetivos de estudio en Japón.',
   keywords: [
     'clases de japonés Bucaramanga',
     'curso de japonés Bucaramanga',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Japonés en Bucaramanga y Online — Desde Cero y JLPT',
     description:
-      'Presencial en Bucaramanga y online en toda Colombia. Del hiragana al JLPT, con la ruta real hacia las becas de estudio en Japón. Diagnóstico gratis.',
+      'Japonés presencial en Bucaramanga y online en Colombia. Desde hiragana y katakana hasta preparación JLPT, con plan según tu objetivo.',
     url: 'https://www.idiomaswl.com/clases-de-japones',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-japones' },
@@ -80,7 +80,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de japonés en Bucaramanga?',
-    a: 'Depende de la modalidad, individual o grupal, presencial u online, y de la intensidad semanal. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos por WhatsApp al 300 500 4253.',
+    a: 'Depende de la modalidad, individual o grupal, presencial u online, y de la intensidad semanal. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos por WhatsApp al 300 500 4253.',
   },
 ];
 
@@ -104,13 +104,6 @@ const jsonLd = {
         'Aprende japonés desde el hiragana hasta el JLPT con profesores reales. Preparación para el examen oficial y para las becas de estudio en Japón.',
       provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       hasCourseInstance: courseInstances('Japonés', 'ja'),
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Diagnóstico gratis',
-        availability: 'https://schema.org/InStock',
-      },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Japonés desde cero con preparación del JLPT, además de inglés, francés, italiano, portugués, alemán, coreano y ruso.'
@@ -181,8 +174,8 @@ export default function ClasesDeJaponesPage() {
               <div className={s.heroPhrase}>はじめまして</div>
               <p className={s.eyebrow}>Japonés en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
-                Aprende japonés<br />
-                <span className={s.accent}>desde cero.</span>
+                Clases de japonés<br />
+                <span className={s.accent}>desde cero hasta el JLPT.</span>
               </h1>
               <p className={s.heroSub}>
                 Tiene fama de imposible y esa fama es solo medio cierta. Hablarlo se te va a dar
@@ -192,7 +185,7 @@ export default function ClasesDeJaponesPage() {
               <div className={s.heroCtas}>
                 <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
                   <WaIcon />
-                  Diagnóstico gratis
+                  Diagnóstico de pago
                 </a>
                 <Link href="/practica/japones" className={s.ghostBtn}>
                   Practicar japonés gratis →
@@ -230,7 +223,7 @@ export default function ClasesDeJaponesPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Ruta JLPT</strong> N5 a N1</span>
         </div>
@@ -478,13 +471,13 @@ export default function ClasesDeJaponesPage() {
         {/* ══════════════ CTA ══════════════ */}
         <section className={s.ctaSection}>
           <div className={s.wrap}>
-            <h2 className={s.ctaTitle}>Tu diagnóstico de japonés<br /><span className={s.accent}>es gratis.</span></h2>
+            <h2 className={s.ctaTitle}>Tu diagnóstico de japonés<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>
               Media hora para ver dónde estás, a dónde quieres llegar y cuánto te va a tomar de
               verdad. Sin compromiso.
             </p>
             <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-              <WaIcon /> Agendar diagnóstico gratis
+              <WaIcon /> Agendar diagnóstico de pago
             </a>
           </div>
         </section>

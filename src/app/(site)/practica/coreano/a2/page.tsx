@@ -83,7 +83,7 @@ export default function CoreanoA2Page() {
       <PracticaWABanner
         idioma="coreano"
         color="#534AB7"
-        msg="Hola, estoy practicando coreano A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando coreano A2 en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

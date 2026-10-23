@@ -24,7 +24,7 @@ export default function InglesA1Page() {
       <PracticaWABanner
         idioma="inglés"
         color="#0066cc"
-        msg="Hola, estoy practicando inglés en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando inglés en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   )

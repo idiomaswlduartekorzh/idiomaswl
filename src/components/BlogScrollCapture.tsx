@@ -138,7 +138,7 @@ export function BlogScrollCapture({ slug, category, waMsg }: Props) {
         .wl-bsc-wa:hover { background: #1da851; }
       `}</style>
 
-      <div className="wl-bsc-wrap" role="complementary" aria-label="Clase de diagnóstico gratis">
+      <div className="wl-bsc-wrap" role="complementary" aria-label="Clase de diagnóstico de pago">
         <button className="wl-bsc-close" onClick={dismiss} aria-label="Cerrar">✕</button>
 
         {status === 'success' ? (
@@ -158,8 +158,9 @@ export function BlogScrollCapture({ slug, category, waMsg }: Props) {
           </div>
         ) : (
           <form onSubmit={handleSubmit} noValidate>
-            <p className="wl-bsc-eyebrow">WeLearn · Gratis</p>
-            <h2 className="wl-bsc-title">¿Te gustaría una clase de diagnóstico gratis?</h2>
+            <p className="wl-bsc-eyebrow">WeLearn · Sesión con tutor</p>
+            <h2 className="wl-bsc-title">¿Te gustaría agendar un diagnóstico con tutor?</h2>
+            <p className="wl-bsc-success-desc">La sesión es paga. Te informaremos el precio antes de agendar.</p>
             <div className="wl-bsc-row">
               <input
                 ref={inputRef}

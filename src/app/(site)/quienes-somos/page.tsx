@@ -5,7 +5,7 @@ import { localBusinessNode, davidNode, zhannaNode, SEDE, HAS_MAP } from '@/compo
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de Quiénes somos en WeLearn y quiero agendar mi diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de Quiénes somos en WeLearn y quiero conocer el precio y agendar un diagnóstico con tutor.');
 
 export const metadata: Metadata = {
   title: 'Quiénes somos — Academia de idiomas en Bucaramanga',
@@ -237,7 +237,7 @@ export default function QuienesSomosPage() {
                   • Ocho idiomas, de A1 a nivel avanzado<br />
                   • Preparación de exámenes internacionales<br />
                   • Presencial en Bucaramanga y online en el mundo<br />
-                  • Diagnóstico inicial gratuito
+                  • Diagnóstico inicial de pago
                 </p>
               </div>
             </div>
@@ -370,11 +370,11 @@ export default function QuienesSomosPage() {
           <div className={s.wrap}>
             <h2 className={s.ctaTitle}>Empieza por saber<br /><span className={s.accent}>dónde estás.</span></h2>
             <p className={s.ctaSub}>
-              El diagnóstico es gratis y dura media hora. Salimos de ahí con tu nivel real, tu
+              El diagnóstico es de pago y dura media hora. Salimos de ahí con tu nivel real, tu
               objetivo y cuánto te va a tomar de verdad.
             </p>
             <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-              <WaIcon /> Agendar diagnóstico gratis
+              <WaIcon /> Agendar diagnóstico de pago
             </a>
           </div>
         </section>

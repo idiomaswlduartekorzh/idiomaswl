@@ -72,7 +72,7 @@ export default function InglesA2Page() {
       <PracticaWABanner
         idioma="inglés"
         color="#0066cc"
-        msg="Hola, estoy practicando inglés A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando inglés A2 en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

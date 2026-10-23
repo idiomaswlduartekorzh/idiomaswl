@@ -9,7 +9,7 @@ import s from './page.module.css';
 import { KOREAN_STEPS } from '@/data/stepsMeta';
 
 const WA = '573005004253';
-const WA_GENERAL   = encodeURIComponent('Hola, vi la página de clases de coreano en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
+const WA_GENERAL   = encodeURIComponent('Hola, vi la página de clases de coreano en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
 const WA_TOPIK     = encodeURIComponent('Hola, quiero prepararme para el examen TOPIK con WeLearn. ¿Cuándo puedo empezar?');
 const WA_FUNDADOR  = encodeURIComponent('Hola, me interesa el cupo de Miembro Fundador de coreano en WeLearn. ¿Quedan cupos disponibles?');
 
@@ -68,13 +68,6 @@ const jsonLd = {
         url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: courseInstances('Coreano', 'ko'),
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Clase de diagnóstico gratis',
-        availability: 'https://schema.org/LimitedAvailability',
-      },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Coreano con preparación TOPIK, además de inglés, francés, alemán, italiano, portugués y ruso.'
@@ -176,8 +169,8 @@ export default function ClasesDeCoreanoPage() {
               <div className={s.heroKorean}>안녕하세요</div>
               <p className={s.eyebrow}>Academia de coreano · Bucaramanga y Colombia</p>
               <h1 className={s.h1}>
-                Aprende coreano<br />
-                <span className={s.accent}>de verdad.</span>
+                Clases de coreano<br />
+                <span className={s.accent}>desde Hangul hasta TOPIK.</span>
               </h1>
               <p className={s.heroSub}>
                 El coreano no es difícil — es diferente. Con el método correcto,
@@ -194,7 +187,7 @@ export default function ClasesDeCoreanoPage() {
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                   </svg>
-                  Clase de diagnóstico gratis
+                  Clase de diagnóstico de pago
                 </a>
                 <a href="#miembro-fundador" className={s.ghostBtn}>
                   Ver oferta Miembro Fundador →
@@ -693,7 +686,7 @@ export default function ClasesDeCoreanoPage() {
               <div className={s.ctaKorean}>시작하세요</div>
               <h2 className={s.ctaTitle}>¿Listo para empezar?</h2>
               <p className={s.ctaSub}>
-                Diagnóstico inicial gratis. Sin compromisos.
+                Diagnóstico inicial de pago. Sin compromisos.
                 En 50 minutos sabes exactamente en qué nivel estás y qué necesitas para llegar a donde quieres.
               </p>
               <div className={s.ctaBtns}>
@@ -702,7 +695,7 @@ export default function ClasesDeCoreanoPage() {
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
-                  Agendar diagnóstico gratis por WhatsApp
+                  Agendar diagnóstico de pago por WhatsApp
                 </a>
                 <Link href="/miembro-fundador" className={s.ghostBtn}>
                   Ver todos los beneficios de Miembro Fundador
