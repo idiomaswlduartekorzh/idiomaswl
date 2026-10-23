@@ -7,13 +7,13 @@ import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de alemán en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de alemán en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
 const WA_GOETHE  = encodeURIComponent('Hola, quiero prepararme para el examen Goethe con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
   title: 'Clases de alemán en Bucaramanga y online — Goethe A1–C1',
   description:
-    'Academia de alemán en Bucaramanga y online. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería y Chancenkarte. Diagnóstico gratis.',
+    'Academia de alemán en Bucaramanga y online. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería y Chancenkarte. Diagnóstico de pago.',
   keywords: [
     'clases de alemán Bucaramanga',
     'curso de alemán Bucaramanga',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Alemán en Bucaramanga y Online — Goethe y Ausbildung',
     description:
-      'Presencial en Bucaramanga y online en toda Colombia. Las rutas reales: Ausbildung, enfermería, Chancenkarte y visa familiar. Diagnóstico gratis.',
+      'Presencial en Bucaramanga y online en toda Colombia. Las rutas reales: Ausbildung, enfermería, Chancenkarte y visa familiar. Diagnóstico de pago.',
     url: 'https://www.idiomaswl.com/clases-de-aleman',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-aleman' },
@@ -51,13 +51,6 @@ const jsonLd = {
         url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: courseInstances('Alemán', 'de'),
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Clase de diagnóstico gratis',
-        availability: 'https://schema.org/InStock',
-      },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Alemán con preparación del Goethe-Zertifikat, además de inglés, francés, italiano, portugués, coreano y ruso.'
@@ -80,7 +73,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (visa, estudios o trabajo) y diseñamos tu plan personalizado.' },
+  { icon: '🎯', title: 'Diagnóstico de pago', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (visa, estudios o trabajo) y diseñamos tu plan personalizado.' },
   { icon: '🇩🇪', title: 'Tutor especializado', desc: 'Docentes con experiencia en Goethe-Zertifikat y en enseñanza del alemán a hispanohablantes.' },
   { icon: '📐', title: 'Gramática sin miedo', desc: 'Los 4 casos del alemán (Nominativ, Akkusativ, Dativ, Genitiv) explicados con lógica, no con memorización.' },
   { icon: '✅', title: 'Preparación Goethe', desc: 'Leseverstehen, Hörverstehen, Schreiben y Sprechen. Simulacros reales y feedback detallado.' },
@@ -148,7 +141,7 @@ const FAQS = [
   },
   {
     q: '¿Dónde puedo estudiar alemán en Bucaramanga?',
-    a: 'En Idiomas WeLearn, Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Algunas universidades de la ciudad ofrecen alemán, normalmente en niveles iniciales y para su propia comunidad. El diagnóstico inicial es gratis: escríbenos al 300 500 4253.',
+    a: 'En Idiomas WeLearn, Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Algunas universidades de la ciudad ofrecen alemán, normalmente en niveles iniciales y para su propia comunidad. El diagnóstico inicial es de pago: escríbenos al 300 500 4253.',
   },
   {
     q: '¿Dónde puedo presentar el examen Goethe en Bucaramanga?',
@@ -168,7 +161,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de alemán en Bucaramanga?',
-    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.',
+    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.',
   },
 ];
 
@@ -228,7 +221,7 @@ export default function ClasesDeAlemanPage() {
                   className={s.waBtn}
                 >
                   <WaIcon />
-                  Clase de diagnóstico gratis
+                  Clase de diagnóstico de pago
                 </a>
                 <Link href="/examenes/goethe" className={s.ghostBtn}>
                   Ver simulacros Goethe →
@@ -264,7 +257,7 @@ export default function ClasesDeAlemanPage() {
         <div className={s.proofStrip}>
           <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Goethe A1 hasta C1</strong></span>
           <span className={s.proofDivider} />
@@ -576,7 +569,7 @@ export default function ClasesDeAlemanPage() {
             <p className={s.ctaPhrase}>Viel Erfolg!</p>
             <h2 className={s.ctaTitle}>
               Tu diagnóstico de alemán<br />
-              <span className={s.accent}>es gratis.</span>
+              <span className={s.accent}>es una sesión paga.</span>
             </h2>
             <p className={s.ctaSub}>
               Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al Goethe que necesitas.
@@ -588,7 +581,7 @@ export default function ClasesDeAlemanPage() {
                 className={s.waBtn}
               >
                 <WaIcon />
-                Agendar diagnóstico gratis
+                Agendar diagnóstico de pago
               </a>
             </div>
           </div>

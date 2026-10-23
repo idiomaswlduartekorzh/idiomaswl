@@ -50,7 +50,7 @@ export default function FrancesA1Page() {
       <PracticaWABanner
         idioma="francés"
         color="#003189"
-        msg="Hola, estoy practicando francés en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando francés en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

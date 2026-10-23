@@ -67,8 +67,8 @@ interface CtaConfig {
 const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
   IELTS: {
     title: '¿Listo para preparar el IELTS en serio?',
-    desc: 'Agenda tu clase de diagnóstico gratis y empieza con un plan personalizado para alcanzar tu Band objetivo.',
-    msg: 'Hola, leí el artículo de WeLearn sobre el IELTS y quiero agendar mi clase de diagnóstico gratis.',
+    desc: 'Agenda tu clase de diagnóstico de pago y empieza con un plan personalizado para alcanzar tu Band objetivo.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el IELTS y quiero conocer el precio y agendar una clase de diagnóstico con tutor.',
     pageLink: '/clases-de-ingles',
     pageLinkLabel: 'Ver clases de inglés',
   },
@@ -102,7 +102,7 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
   },
   Portugués: {
     title: '¿Quieres aprender portugués o preparar el Celpe-Bras?',
-    desc: 'Clases de portugués brasileño online con tutor especializado. Preparamos Celpe-Bras Intermediário hasta Superior. Clase diagnóstico gratis.',
+    desc: 'Clases de portugués brasileño online con tutor especializado. Preparamos Celpe-Bras Intermediário hasta Superior. Clase diagnóstico de pago.',
     msg: 'Hola, leí el artículo de WeLearn sobre el portugués y quiero saber más sobre las clases de portugués.',
     pageLink: '/clases-de-portugues',
     pageLinkLabel: 'Ver clases de portugués',
@@ -123,14 +123,14 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
   },
   Ruso: {
     title: '¿Quieres aprender ruso o preparar el TORFL?',
-    desc: 'Clases de ruso online o presenciales en Bucaramanga, con dirección académica de una lingüista rusa nativa. Del alfabeto cirílico al B1. Clase diagnóstico gratis.',
+    desc: 'Clases de ruso online o presenciales en Bucaramanga, con dirección académica de una lingüista rusa nativa. Del alfabeto cirílico al B1. Clase diagnóstico de pago.',
     msg: 'Hola, leí el artículo de WeLearn sobre el ruso y quiero saber más sobre las clases de ruso.',
     pageLink: '/clases-de-ruso',
     pageLinkLabel: 'Ver clases de ruso',
   },
   Japonés: {
     title: '¿Quieres aprender japonés o preparar el JLPT?',
-    desc: 'Clases de japonés online o presenciales en Bucaramanga. Del hiragana al JLPT, con plan personalizado según tu nivel y objetivo. Clase diagnóstico gratis.',
+    desc: 'Clases de japonés online o presenciales en Bucaramanga. Del hiragana al JLPT, con plan personalizado según tu nivel y objetivo. Clase diagnóstico de pago.',
     msg: 'Hola, leí el artículo de WeLearn sobre el japonés y quiero saber más sobre las clases de japonés.',
     pageLink: '/clases-de-japones',
     pageLinkLabel: 'Ver clases de japonés',
@@ -160,7 +160,7 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
 
 const DEFAULT_CTA: CtaConfig = {
   title: '¿Listo para aprender en serio?',
-  desc: 'Agenda tu clase de diagnóstico gratis con un tutor de WeLearn y empieza con un plan personalizado.',
+  desc: 'Agenda tu clase de diagnóstico de pago con un tutor de WeLearn y empieza con un plan personalizado.',
   msg: 'Hola, leí un artículo del blog de WeLearn y quiero saber más sobre las clases.',
   pageLink: '/clases-de-ingles',
   pageLinkLabel: 'Ver clases de inglés',

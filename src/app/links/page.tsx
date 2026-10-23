@@ -16,7 +16,7 @@ const LINKS = [
   { emoji: '📡', title: 'Nivel Radar', desc: 'Tu nivel real de inglés en 90 segundos', href: '/nivel-radar' },
   { emoji: '🇰🇷', title: 'Miembro Fundador Coreano', desc: '50 cupos · precio vitalicio', href: '/miembro-fundador' },
   { emoji: '📝', title: 'Simulacros gratis', desc: 'IELTS, TOEFL, ICFES, TOPIK y más', href: '/examenes' },
-  { emoji: '🇬🇧', title: 'Clases de inglés', desc: 'Diagnóstico gratis con David', href: '/clases-de-ingles' },
+  { emoji: '🇬🇧', title: 'Clases de inglés', desc: 'Diagnóstico de pago con David', href: '/clases-de-ingles' },
   { emoji: '🇰🇷', title: 'Clases de coreano', desc: 'Método de 17 pasos', href: '/clases-de-coreano' },
   { emoji: '🌍', title: 'Todos los idiomas', desc: 'Francés, alemán, italiano, portugués', href: '/clases-de-idiomas' },
   { emoji: '💰', title: 'Precios', desc: 'Planes y paquetes de horas', href: '/precios' },

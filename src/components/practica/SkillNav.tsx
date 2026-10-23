@@ -112,7 +112,7 @@ export default function SkillNav({
           <Link href={LANG_HUB[lang] ?? '/clases-de-idiomas'} style={{ fontWeight: 700 }}>
             Ver cómo enseñamos {langName.toLowerCase()} en WeLearn
           </Link>{' '}
-          — presencial en Bucaramanga u online. El diagnóstico de nivel es gratis.
+          — presencial en Bucaramanga u online. La prueba automática de nivel es gratis; el diagnóstico con tutor es pago.
         </p>
 
       </div>

@@ -7,13 +7,13 @@ import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/com
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de ruso en WeLearn y quiero agendar mi diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de ruso en WeLearn y quiero conocer el precio y agendar un diagnóstico con tutor.');
 const WA_BECAS   = encodeURIComponent('Hola, quiero aprender ruso para aplicar a las becas de estudio en Rusia. ¿Cómo me preparo?');
 
 export const metadata: Metadata = {
   title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero',
   description:
-    'Academia de ruso en Bucaramanga y online. Del alfabeto cirílico al nivel avanzado, con preparación para estudiar en Rusia. Diagnóstico gratis.',
+    'Academia de ruso en Bucaramanga y online. Del alfabeto cirílico al nivel avanzado, con preparación para estudiar en Rusia. Diagnóstico de pago.',
   keywords: [
     'clases de ruso Bucaramanga',
     'curso de ruso Bucaramanga',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero',
     description:
-      'Presencial en Bucaramanga y online en toda Colombia. Del alfabeto cirílico al nivel avanzado, con profesora rusoparlante. Diagnóstico gratis.',
+      'Presencial en Bucaramanga y online en toda Colombia. Del alfabeto cirílico al nivel avanzado, con profesora rusoparlante. Diagnóstico de pago.',
     url: 'https://www.idiomaswl.com/clases-de-ruso',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ruso' },
@@ -68,7 +68,7 @@ const FAQS = [
   },
   {
     q: '¿Dónde puedo estudiar ruso en Bucaramanga?',
-    a: 'La oferta en la ciudad es muy escasa: ni el Instituto de Lenguas de la UIS ni el Departamento de Lenguas de la UNAB incluyen ruso en su catálogo, y no hay academias privadas locales que lo dicten. Hasta ahora la única alternativa eran unos pocos tutores particulares en plataformas de clases. En Idiomas WeLearn damos ruso presencial en nuestra sede de la Calle 47 # 29-33, barrio Sotomayor, y también online. El diagnóstico inicial es gratis: escríbenos al 300 500 4253.',
+    a: 'La oferta en la ciudad es muy escasa: ni el Instituto de Lenguas de la UIS ni el Departamento de Lenguas de la UNAB incluyen ruso en su catálogo, y no hay academias privadas locales que lo dicten. Hasta ahora la única alternativa eran unos pocos tutores particulares en plataformas de clases. En Idiomas WeLearn damos ruso presencial en nuestra sede de la Calle 47 # 29-33, barrio Sotomayor, y también online. El diagnóstico inicial es de pago: escríbenos al 300 500 4253.',
   },
   {
     q: '¿Las clases de ruso son presenciales o virtuales?',
@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de ruso en Bucaramanga?',
-    a: 'Depende de la modalidad, individual o grupal, presencial u online, y de la intensidad semanal. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Como referencia del mercado local, las clases particulares de ruso en Bucaramanga se han publicado por encima del promedio nacional, precisamente porque hay muy poca oferta.',
+    a: 'Depende de la modalidad, individual o grupal, presencial u online, y de la intensidad semanal. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Como referencia del mercado local, las clases particulares de ruso en Bucaramanga se han publicado por encima del promedio nacional, precisamente porque hay muy poca oferta.',
   },
 ];
 
@@ -100,13 +100,6 @@ const jsonLd = {
         'Aprende ruso desde el alfabeto cirílico hasta nivel avanzado con profesora rusoparlante. Preparación para estudiar en Rusia y para el examen oficial ТРКИ.',
       provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       hasCourseInstance: courseInstances('Ruso', 'ru'),
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Diagnóstico gratis',
-        availability: 'https://schema.org/InStock',
-      },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Ruso desde cero con profesora rusoparlante, además de inglés, francés, italiano, portugués, alemán y coreano.'
@@ -188,7 +181,7 @@ export default function ClasesDeRusoPage() {
               <div className={s.heroCtas}>
                 <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
                   <WaIcon />
-                  Diagnóstico gratis
+                  Diagnóstico de pago
                 </a>
                 <Link href="/practica/ruso" className={s.ghostBtn}>
                   Practicar ruso gratis →
@@ -226,7 +219,7 @@ export default function ClasesDeRusoPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Profesora rusoparlante</strong></span>
         </div>
@@ -508,13 +501,13 @@ export default function ClasesDeRusoPage() {
         {/* ══════════════ CTA ══════════════ */}
         <section className={s.ctaSection}>
           <div className={s.wrap}>
-            <h2 className={s.ctaTitle}>Tu diagnóstico de ruso<br /><span className={s.accent}>es gratis.</span></h2>
+            <h2 className={s.ctaTitle}>Tu diagnóstico de ruso<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>
               Media hora para ver dónde estás, a dónde quieres llegar y cuánto te va a tomar de
               verdad. Sin compromiso.
             </p>
             <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-              <WaIcon /> Agendar diagnóstico gratis
+              <WaIcon /> Agendar diagnóstico de pago
             </a>
           </div>
         </section>

@@ -36,7 +36,7 @@ export default function Image() {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 24, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-          <div style={{ fontSize: 17, color: 'rgba(255,255,255,0.5)' }}>Clase diagnóstico gratis · Ciudadanía italiana · 100% online</div>
+          <div style={{ fontSize: 17, color: 'rgba(255,255,255,0.5)' }}>Clase diagnóstico de pago · Ciudadanía italiana · 100% online</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 36, height: 36, borderRadius: 10, background: '#009246', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, fontWeight: 800 }}>W</div>
             <span style={{ fontSize: 18, fontWeight: 700, color: 'rgba(255,255,255,0.55)' }}>idiomaswl.com</span>

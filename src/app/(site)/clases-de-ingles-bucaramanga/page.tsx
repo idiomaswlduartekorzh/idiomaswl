@@ -10,9 +10,9 @@ const WA = '573005004253';
 const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
-const WA_GENERAL  = wa('Hola, vi su página de clases de inglés en Bucaramanga y quiero agendar mi clase de diagnóstico gratis.');
+const WA_GENERAL  = wa('Hola, vi su página de clases de inglés en Bucaramanga y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
 const WA_IELTS    = wa('Hola, necesito preparación para el IELTS en Bucaramanga. ¿Cómo funciona la clase diagnóstico?');
-const WA_TOEFL    = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cómo puedo agendar mi diagnóstico gratis?');
+const WA_TOEFL    = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cuál es el precio y cómo agendo un diagnóstico con tutor?');
 const WA_PAQUETE  = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   // anterior no contenía ni «cursos» ni «presenciales».
   title: 'Cursos de inglés en Bucaramanga presenciales y online',
   description:
-    'Academia de inglés con sede física en Bucaramanga, barrio Sotomayor: cursos presenciales y online, con tutor asignado. Diagnóstico de nivel gratis.',
+    'Cursos de inglés presenciales en Bucaramanga, barrio Sotomayor, con tutor asignado. Combina clases online. Preparación IELTS, TOEFL e ICFES.',
   keywords: [
     'cursos de inglés en Bucaramanga presenciales', 'clases de inglés presenciales Bucaramanga',
     'clases de inglés en Bucaramanga', 'academia de inglés Bucaramanga',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga' },
   openGraph: {
     title: 'Cursos de inglés en Bucaramanga, presenciales y online',
-    description: 'Sede física en el barrio Sotomayor. Cursos presenciales en Bucaramanga y también online. Preparación IELTS, TOEFL e ICFES. Diagnóstico gratis.',
+    description: 'Clases presenciales en Sotomayor, Bucaramanga, con tutor asignado. Alterna con clases online y prepara IELTS, TOEFL o ICFES.',
     url: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga',
   },
 };
@@ -99,7 +99,7 @@ const FAQS_LOCAL = [
   },
   {
     q: '¿Cuánto cuestan las clases de inglés en Bucaramanga?',
-    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos al 300 500 4253.',
+    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.',
   },
   {
     q: '¿WeLearn prepara para IELTS y TOEFL desde Bucaramanga?',
@@ -111,7 +111,7 @@ const FAQS_LOCAL = [
   },
   {
     q: '¿Puedo tomar clases si vivo en Floridablanca, Girón o Piedecuesta?',
-    a: 'Sí. Todas las clases son online por videollamada. Atendemos todo el área metropolitana de Bucaramanga y cualquier ciudad de Colombia.',
+    a: 'Sí. Puedes venir a la sede en Sotomayor desde Floridablanca, Girón o Piedecuesta, o tomar las clases online por videollamada. También atendemos a estudiantes de otras ciudades de Colombia.',
   },
   {
     q: '¿Qué diferencia a WeLearn de otras academias de inglés en Bucaramanga?',
@@ -181,7 +181,7 @@ export default function ClasesInglessBucaramangaPage() {
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                   </svg>
-                  Diagnóstico gratis
+                  Diagnóstico de pago
                 </a>
                 <a href={WA_PAQUETE} target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
                   Ver paquetes →
@@ -295,7 +295,7 @@ export default function ClasesInglessBucaramangaPage() {
                 </div>
                 <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.6, flexGrow: 1 }}>{item.desc}</p>
                 <a href={item.waUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '0.85rem', padding: '0.6rem 1rem', borderRadius: 10, textDecoration: 'none' }}>
-                  Agendar diagnóstico gratis →
+                  Agendar diagnóstico de pago →
                 </a>
               </div>
             ))}
@@ -319,9 +319,9 @@ export default function ClasesInglessBucaramangaPage() {
             {[
               {
                 name: 'Diagnóstico',
-                price: 'Gratis',
+                price: 'Consultar',
                 cadence: '',
-                desc: 'Evaluamos tu nivel, identificamos tu objetivo y te damos un plan. 45 minutos. Sin costo ni compromiso.',
+                desc: 'Evaluamos tu nivel, identificamos tu objetivo y te damos un plan. Sesión paga de 45 minutos; consulta el precio antes de agendar.',
                 cta: 'Agendar ahora',
                 url: WA_GENERAL,
                 featured: false,
@@ -393,7 +393,7 @@ export default function ClasesInglessBucaramangaPage() {
           </div>
 
           <p style={{ textAlign: 'center', marginTop: '1.75rem', color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem' }}>
-            Todos los planes incluyen clase de diagnóstico gratis · Sin permanencia mínima · Cancela cuando quieras
+            La clase de diagnóstico con tutor es paga · Sin permanencia mínima · Cancela cuando quieras
           </p>
         </div>
       </section>
@@ -491,7 +491,7 @@ export default function ClasesInglessBucaramangaPage() {
         <div className="wrap" style={{ textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
           <p className="wlh-section-eyebrow">Empieza en Bucaramanga</p>
           <h2 className="wlh-section-h2">
-            Tu diagnóstico es gratis.<br />Empezamos esta semana.
+            Tu diagnóstico es de pago.<br />Empezamos esta semana.
           </h2>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', marginBottom: '2rem', lineHeight: 1.6 }}>
             45 minutos por videollamada. Evaluamos tu nivel, encontramos tu objetivo

@@ -7,13 +7,13 @@ import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de italiano en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de italiano en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
 const WA_CILS    = encodeURIComponent('Hola, quiero prepararme para el examen CILS o CELI con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
   title: 'Clases de italiano en Bucaramanga y online — CILS y CELI',
   description:
-    'Academia de italiano en Bucaramanga y online. Preparación del B1 para la ciudadanía italiana y de CILS y CELI, de A2 a C2. Diagnóstico gratis.',
+    'Clases de italiano 1:1 en Bucaramanga y online. Prepara el B1 de ciudadanía italiana, CILS o CELI con tutor y plan según tu nivel.',
   keywords: [
     'clases de italiano Bucaramanga',
     'academia de italiano Bucaramanga',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Italiano en Bucaramanga y Online — B1 de Ciudadanía',
     description:
-      'Presencial en Bucaramanga y online en toda Colombia. Preparación del B1 para la ciudadanía italiana, CILS y CELI. Diagnóstico gratis.',
+      'Italiano presencial en Bucaramanga y online en toda Colombia. Preparación del B1 de ciudadanía, CILS y CELI con tutor asignado.',
     url: 'https://www.idiomaswl.com/clases-de-italiano',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-italiano' },
@@ -59,7 +59,6 @@ const jsonLd = {
       description: 'Aprende italiano desde cero hasta CILS/CELI C2. Preparación para ciudadanía italiana, estudios y trabajo en Italia.',
       provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       hasCourseInstance: courseInstances('Italiano', 'it'),
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'COP', description: 'Clase de diagnóstico gratis', availability: 'https://schema.org/InStock' },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Italiano con preparación CILS y CELI, incluida la ruta B1 para la ciudadanía italiana, además de inglés, francés, coreano, alemán y portugués.'
@@ -82,7 +81,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (ciudadanía, CILS, viaje o trabajo) y diseñamos tu plan personalizado.' },
+  { icon: '🎯', title: 'Diagnóstico de pago', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (ciudadanía, CILS, viaje o trabajo) y diseñamos tu plan personalizado.' },
   { icon: '🇮🇹', title: 'Tutor especializado', desc: 'Docentes con experiencia en CILS/CELI y en enseñanza del italiano a hispanohablantes.' },
   { icon: '🗣️', title: 'Énfasis en la fluidez', desc: 'Pronunciación, entonación y confianza para hablar desde la primera semana. El italiano se aprende hablando.' },
   { icon: '✅', title: 'Preparación CILS y CELI', desc: 'Comprensione orale, comprensione scritta, produzione scritta e produzione orale. Los cuatro componentes del examen.' },
@@ -134,12 +133,12 @@ const FAQS = [
   { q: '¿Dónde puedo presentar el CILS o el CELI en Colombia?', a: 'El CILS se presenta en el Istituto Italiano di Cultura de Bogotá, su sede en el país. El PLIDA lo administra la Sociedad Dante Alighieri, con comités en Bogotá y Cartagena, y también se presenta en Medellín a través de la Universidad EAFIT. No hay sede en Bucaramanga ni en Santander, así que desde aquí toca viajar. El calendario cambia cada año: confirma sede y fecha antes de inscribirte.' },
   { q: '¿Cuánto se demora el resultado del CILS B1?', a: 'Cuenta con meses, no con semanas. La corrección del CILS toma alrededor de tres meses y el certificado físico puede llegar medio año después del examen. El CELI publica resultados en torno a los tres meses. Si tienes cita consular con fecha fija, planea hacia atrás desde ahí: es el error de cálculo más común.' },
   { q: '¿Cuánto tiempo toma llegar a B1 en italiano si ya hablo español?', a: 'Entre 6 y 12 meses estudiando de 3 a 5 horas por semana. Es más rápido que la referencia general del MCER porque compartes gramática y buena parte del vocabulario con el italiano.' },
-  { q: '¿Dónde puedo estudiar italiano en Bucaramanga?', a: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Varias universidades de la ciudad tienen cursos de italiano, pero suelen quedarse en niveles iniciales y estar dirigidos a su propia comunidad; nosotros llevamos hasta el B1 de ciudadanía y más allá. El diagnóstico inicial es gratis: escríbenos al 300 500 4253.' },
+  { q: '¿Dónde puedo estudiar italiano en Bucaramanga?', a: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Varias universidades de la ciudad tienen cursos de italiano, pero suelen quedarse en niveles iniciales y estar dirigidos a su propia comunidad; nosotros llevamos hasta el B1 de ciudadanía y más allá. El diagnóstico inicial es de pago: escríbenos al 300 500 4253.' },
   { q: '¿Hay consulado de Italia en Bucaramanga?', a: 'Sí. Italia tiene un consulado honorario en Bucaramanga cuya jurisdicción cubre Santander, Norte de Santander y Arauca, y atiende con cita previa. Ojo con la confusión más común: el consulado gestiona el trámite, pero el examen de italiano no se presenta ahí ni en la ciudad — para eso hay que viajar, normalmente a Bogotá.' },
   { q: '¿Puedo presentar el examen B1 de italiano en Bucaramanga?', a: 'No. No hay sede de CILS, CELI ni PLIDA en Bucaramanga ni en Santander. El CILS se presenta en Bogotá y el PLIDA en Bogotá, Cartagena o Medellín. Lo que sí puedes hacer desde Bucaramanga es toda la preparación, presencial u online, y viajar solo el día del examen.' },
   { q: '¿Todavía existe el examen corto de "B1 Ciudadanía" en Bogotá?', a: 'No. La sede de Bogotá pasó a administrar únicamente los exámenes de los seis niveles del Marco Común Europeo y dejó de ofrecer las versiones hechas a la medida de un trámite, como el B1 de ciudadanía. Quien lo presente allí debe rendir el CILS B1 completo: cinco habilidades, cerca de cuatro horas de escrito más el oral, y un mínimo exigido en cada habilidad por separado. Casi todas las guías en español siguen describiendo el examen viejo.' },
   { q: '¿Necesito certificar italiano si voy por ciudadanía por descendencia?', a: 'Ojo, aquí hay mucha información contradictoria circulando. El requisito de certificar B1 aplica claramente a las vías por matrimonio y por residencia. Para la vía por descendencia, la Embajada de Italia en Bogotá no lista un requisito de idioma en su información oficial, pese a que varios medios lo han dado por hecho. Como las reglas cambiaron en 2025 y siguen discutiéndose, confirma tu caso concreto con el consulado antes de pagar cualquier examen.' },
-  { q: '¿Cuánto cuestan las clases de italiano en Bucaramanga?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.' },
+  { q: '¿Cuánto cuestan las clases de italiano en Bucaramanga?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.' },
 ];
 
 const BLOG_POSTS = [
@@ -173,16 +172,16 @@ export default function ClasesDeItalianoPage() {
               <div className={s.heroPhrase}>Ciao!</div>
               <p className={s.eyebrow}>Italiano en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
-                Aprende italiano<br />
-                <span className={s.accent}>de verdad.</span>
+                Clases de italiano<br />
+                <span className={s.accent}>para ciudadanía y CILS.</span>
               </h1>
               <p className={s.heroSub}>
                 El italiano es el idioma románico más cercano al español. Con método correcto,
-                en 6 meses ya conversas, y en 12–18 puedes alcanzar el CILS B2 para ciudadanía o trabajo en Italia.
+                avanzas hacia la conversación y puedes preparar el B1 de ciudadanía o el CILS según tu objetivo.
               </p>
               <div className={s.heroCtas}>
                 <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                  <WaIcon /> Clase de diagnóstico gratis
+                  <WaIcon /> Clase de diagnóstico de pago
                 </a>
                 <Link href="/examenes/cils-celi" className={s.ghostBtn}>Ver simulacros CILS →</Link>
               </div>
@@ -215,7 +214,7 @@ export default function ClasesDeItalianoPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>B1 de ciudadanía · CILS y CELI</strong></span>
         </div>
@@ -496,11 +495,11 @@ export default function ClasesDeItalianoPage() {
         <section className={s.ctaSection}>
           <div className={s.ctaBox}>
             <p className={s.ctaPhrase}>Iniziamo!</p>
-            <h2 className={s.ctaTitle}>Tu diagnóstico de italiano<br /><span className={s.accent}>es gratis.</span></h2>
+            <h2 className={s.ctaTitle}>Tu diagnóstico de italiano<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al CILS que necesitas.</p>
             <div className={s.ctaBtns}>
               <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                <WaIcon /> Agendar diagnóstico gratis
+                <WaIcon /> Agendar diagnóstico de pago
               </a>
             </div>
           </div>

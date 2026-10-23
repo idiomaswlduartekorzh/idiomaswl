@@ -54,7 +54,7 @@ export default function FrancesA2Page() {
       <PracticaWABanner
         idioma="francés"
         color="#003189"
-        msg="Hola, estoy practicando francés A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando francés A2 en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

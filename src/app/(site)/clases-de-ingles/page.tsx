@@ -12,18 +12,18 @@ const WA = '573005004253';
 const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
-const WA_GENERAL = wa('Hola, vi su página de clases de inglés y quiero agendar mi clase de diagnóstico gratis.');
-const WA_IELTS   = wa('Hola, necesito preparación para el IELTS. ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
-const WA_TOEFL   = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
-const WA_ICFES   = wa('Hola, necesito mejorar mi inglés para el ICFES Saber 11. ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
-const WA_TRABAJO = wa('Hola, quiero mejorar mi inglés para trabajo o para comunicarme con fluidez. ¿Cómo funciona la clase de diagnóstico gratis?');
-const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (FCE). ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
+const WA_GENERAL = wa('Hola, vi su página de clases de inglés y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_IELTS   = wa('Hola, necesito preparación para el IELTS. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
+const WA_TOEFL   = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
+const WA_ICFES   = wa('Hola, necesito mejorar mi inglés para el ICFES Saber 11. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
+const WA_TRABAJO = wa('Hola, quiero mejorar mi inglés para trabajo o para comunicarme con fluidez. ¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?');
+const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (FCE). ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de inglés en Bucaramanga y online — IELTS, TOEFL, FCE',
+  title: 'Clases de inglés online en Bucaramanga | IELTS y TOEFL',
   description:
-    'Academia de inglés en Bucaramanga y online para toda Colombia. Preparación IELTS, TOEFL, Cambridge B2 First e ICFES. Diagnóstico gratis.',
+    'Clases de inglés online 1:1 para toda Colombia. Prepara IELTS, TOEFL, Cambridge B2 First o ICFES con tutor asignado y práctica guiada.',
   keywords: [
     'clases de inglés', 'inglés Bucaramanga', 'preparación IELTS Colombia',
     'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles' },
   openGraph: {
-    title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES',
-    description: 'Academia de inglés en Bucaramanga. Preparación IELTS, TOEFL e ICFES con método propio. Clase de diagnóstico gratis para toda Colombia.',
+    title: 'Clases de inglés online para IELTS, TOEFL e ICFES',
+    description: 'Preparación individual para exámenes y objetivos laborales con tutor asignado. Sesión de diagnóstico con tutor paga; consulta el precio antes de agendar.',
     url: 'https://www.idiomaswl.com/clases-de-ingles',
   },
 };
@@ -47,11 +47,11 @@ const FAQS = [
   { q: '¿Qué nivel de inglés necesito para graduarme de la universidad en Bucaramanga?', a: 'Depende de la universidad y varía bastante: va desde A1 en pregrado en la UIS hasta B2 en la UNAB, pasando por B1 en la UPB, la USTA y la UDES. Las UTS piden B1 en tecnología y B2 en el ciclo profesional. Muchas permiten homologar el requisito con un examen internacional. Confirma tu caso con tu facultad, porque los reglamentos cambian.' },
   { q: '¿Qué nivel de inglés piden los call centers bilingües en Bucaramanga?', a: 'Hoy el estándar es B2, que en muchas convocatorias se expresa como un 80% de dominio. Es un salto real frente al B1 que se pedía hace unos años. En el área metropolitana operan compañías como TP, Concentrix, Lean Solutions, Accedo, Atento y Solvo, y los cargos bilingües pagan por encima de los monolingües.' },
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
-  { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos al 300 500 4253.' },
+  { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
   { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
-  { q: '¿Cómo funciona la clase de diagnóstico gratis?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Sin costo y sin compromiso.' },
+  { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Con precio informado antes de agendar.' },
   { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
   { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. En Bucaramanga y su área metropolitana puedes venir presencialmente; desde cualquier otra ciudad la clase es online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
 ];
@@ -81,12 +81,6 @@ const jsonLd = {
         url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: courseInstances('Inglés', 'en'),
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Diagnóstico gratis',
-      },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Inglés con preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
@@ -173,9 +167,9 @@ const PILARES = [
 const PRECIOS = [
   {
     name: 'Clase de diagnóstico',
-    price: 'Gratis',
+    price: 'Consultar',
     cadence: '',
-    desc: 'Evaluamos tu nivel actual, identificamos tu objetivo y diseñamos un plan de preparación personalizado. Sin costo ni compromiso.',
+    desc: 'Evaluamos tu nivel actual, identificamos tu objetivo y diseñamos un plan de preparación personalizado. Sesión paga; consulta el precio antes de agendar.',
     cta: 'Agendar por WhatsApp',
     waUrl: WA_GENERAL,
     featured: false,
@@ -259,13 +253,12 @@ export default function ClasesDeInglesPage() {
               marginBottom: '1.25rem',
               color: 'var(--ink)',
             }}>
-              Aprende inglés<br />
-              con quien<br />
-              <span style={{ color: 'var(--accent)' }}>lo domina de verdad.</span>
+              Clases de inglés online<br />
+              para <span style={{ color: 'var(--accent)' }}>IELTS, TOEFL e ICFES.</span>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '2rem', maxWidth: 440 }}>
-              Preparación específica para IELTS, TOEFL e ICFES con el método WeLearn.
-              Clase de diagnóstico 100% gratis.
+              Aprende 1:1 con tutor asignado y un plan para tu examen, trabajo o conversación.
+              La sesión de diagnóstico con tutor es paga; consulta su precio antes de agendar.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
               <a href={WA_GENERAL} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
@@ -273,7 +266,7 @@ export default function ClasesDeInglesPage() {
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                 </svg>
-                Clase de diagnóstico gratis
+                Clase de diagnóstico de pago
               </a>
               <Link href="/examenes/ielts" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
                 Ver simulacro IELTS →
@@ -344,7 +337,7 @@ export default function ClasesDeInglesPage() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.25rem' }}>
                   <a href={intent.waUrl} target="_blank" rel="noopener noreferrer" className={s.waBtnSm}>
-                    Agendar diagnóstico gratis →
+                    Agendar diagnóstico de pago →
                   </a>
                   {intent.simulacro && (
                     <Link
@@ -405,7 +398,7 @@ export default function ClasesDeInglesPage() {
             ¿Cuánto cuesta aprender inglés con WeLearn?
           </h2>
           <p className="wlh-section-desc wlh-section-desc--light" style={{ maxWidth: 500 }}>
-            Empieza con tu clase de diagnóstico gratis. Sin tarjeta de crédito ni compromiso.
+            Empieza con una clase de diagnóstico con tutor. Consulta el precio antes de agendar.
           </p>
           <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
             {PRECIOS.map(plan => (
@@ -478,7 +471,7 @@ export default function ClasesDeInglesPage() {
             color: 'rgba(255,255,255,0.68)',
             fontSize: '0.82rem',
           }}>
-            Todos los planes incluyen clase de diagnóstico gratis · Sin permanencia mínima
+            La clase de diagnóstico con tutor es paga · Sin permanencia mínima
           </p>
         </div>
       </section>
@@ -709,7 +702,7 @@ export default function ClasesDeInglesPage() {
         <div className={`wrap ${s.ctaFinal}`}>
           <p className="wlh-section-eyebrow">Empieza hoy</p>
           <h2 className="wlh-section-h2">
-            Tu clase de diagnóstico es gratis.<br />Sin compromisos.
+            Tu clase de diagnóstico es de pago.<br />Sin compromisos.
           </h2>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', marginBottom: '2rem', lineHeight: 1.6 }}>
             En 45 minutos evaluamos tu nivel, identificamos tu objetivo y te damos

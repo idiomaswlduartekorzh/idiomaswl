@@ -942,7 +942,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>¿Cómo saber en qué nivel estás?</h2>
 <p>La única forma confiable de saber tu nivel real es un test bien calibrado. Hay cuatro opciones según tu objetivo:</p>
 <ol>
-  <li><strong>Test interno WeLearn</strong>: si quieres una evaluación con retroalimentación de un tutor, la clase de diagnóstico gratuita te da una evaluación honesta de tu nivel en 45 minutos.</li>
+  <li><strong>Test interno WeLearn</strong>: si quieres una evaluación con retroalimentación de un tutor, la clase de diagnóstico de pago te da una evaluación honesta de tu nivel en 45 minutos.</li>
   <li><strong>Simulacro oficial</strong>: Cambridge tiene tests gratuitos de ubicación. El ETS (TOEFL) tiene una prueba de práctica. Son menos precisos para niveles medios-altos.</li>
   <li><strong>Examen oficial</strong>: IELTS, TOEFL, Cambridge First (B2) o Cambridge Advanced (C1) son los más reconocidos y dan un resultado certificado, verificable y válido por 2 años (IELTS/TOEFL) o de forma permanente (Cambridge).</li>
   <li><strong>Test en línea gratuito</strong>: British Council, EF English Level Test. Dan una idea general pero no son verificables.</li>
@@ -986,7 +986,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>B1 → B2</strong>: 9–12 meses. Aquí la brecha se ensancha: necesitas producción activa (hablar y escribir), no solo comprensión. Un tutor que da retroalimentación real acelera significativamente este paso.</li>
   <li><strong>B2 → C1</strong>: 12–18 meses. Matices, vocabulario académico, fluidez sin esfuerzo. Preparación para exámenes como IELTS 7.0+ o TOEFL 95+.</li>
 </ul>
-<p>Si ya sabes tu nivel y quieres un plan concreto para subir al siguiente, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés en WeLearn</a> — el primer paso es una clase de diagnóstico gratis donde evaluamos tu nivel real y diseñamos el plan. También puedes hacer un <a href="/examenes">simulacro de IELTS gratuito</a> para tener un punto de referencia concreto hoy mismo.</p>
+<p>Si ya sabes tu nivel y quieres un plan concreto para subir al siguiente, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés en WeLearn</a> — el primer paso es una clase de diagnóstico de pago donde evaluamos tu nivel real y diseñamos el plan. También puedes hacer un <a href="/examenes">simulacro de IELTS gratuito</a> para tener un punto de referencia concreto hoy mismo.</p>
 <p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a>.</p>
     `,
   },
@@ -1115,7 +1115,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>¿Y si no estoy seguro de cuál necesito?</h2>
 <p>La respuesta corta: verifica la convocatoria específica a la que vas a aplicar. Cada universidad, cada proceso migratorio y cada colegios profesional indica explícitamente qué módulo acepta. Nunca asumas.</p>
-<p>Si tienes un objetivo claro pero no sabes cuál módulo requiere, o si quieres prepararte para el IELTS con una estrategia específica para Academic o General Training, puedes <a href="/clases-de-ingles">agendar una clase de diagnóstico gratis en WeLearn</a> — en esa sesión revisamos tu objetivo, te orientamos sobre qué módulo necesitas y diseñamos el plan de preparación más eficiente.</p>
+<p>Si tienes un objetivo claro pero no sabes cuál módulo requiere, o si quieres prepararte para el IELTS con una estrategia específica para Academic o General Training, puedes <a href="/clases-de-ingles">agendar una clase de diagnóstico de pago en WeLearn</a> — en esa sesión revisamos tu objetivo, te orientamos sobre qué módulo necesitas y diseñamos el plan de preparación más eficiente.</p>
 <p>Y si quieres practicar antes con un simulacro gratuito, puedes <a href="/examenes/ielts">hacer el simulacro de IELTS</a> en nuestra plataforma.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a>.</p>
     `,
@@ -1227,8 +1227,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>¿Solo o con un tutor?</h2>
 <p>La preparación autodidacta con este plan es posible si tienes disciplina y experiencia evaluando tu propio trabajo. El mayor riesgo de la preparación solo es el Writing: la autocorrección tiene un límite claro porque no puedes detectar los errores que cometes sistemáticamente — precisamente porque los cometes sin notarlos.</p>
-<p>Un tutor con experiencia en IELTS acelera significativamente la preparación en Writing y Speaking porque puede darte retroalimentación específica que tú solo no puedes generarte. En WeLearn, la preparación para IELTS es 1:1 con tutor asignado — la clase de diagnóstico gratis te permite evaluar el nivel, decidir el plan y empezar a prepararte con dirección clara.</p>
-<p>Si quieres agendar tu diagnóstico gratuito o tienes preguntas sobre la preparación, puedes hacerlo por <a href="/clases-de-ingles">nuestra página de clases de inglés</a>.</p>
+<p>Un tutor con experiencia en IELTS acelera significativamente la preparación en Writing y Speaking porque puede darte retroalimentación específica que tú solo no puedes generarte. En WeLearn, la preparación para IELTS es 1:1 con tutor asignado — la clase de diagnóstico de pago te permite evaluar el nivel, decidir el plan y empezar a prepararte con dirección clara.</p>
+<p>Si quieres agendar tu diagnóstico de pago o tienes preguntas sobre la preparación, puedes hacerlo por <a href="/clases-de-ingles">nuestra página de clases de inglés</a>.</p>
 <p>Lee también: <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar Band 7</a>, <a href="/blog/ielts-speaking-como-preparar-las-3-partes">IELTS Speaking: cómo preparar las 3 partes</a> y <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band en el ensayo argumentativo</a>.</p>
     `,
   },
@@ -1410,7 +1410,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   <li>Desde B1 sólido: 16–24 semanas intensivas.</li>
   <li>Desde B2: 8–14 semanas.</li>
 </ul>
-<p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico gratis identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
+<p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico de pago identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/ielts-academic-vs-general-training">IELTS Academic vs General Training: ¿cuál necesitas tomar?</a>.</p>
 <p>El puntaje de inglés es solo una parte del proceso. Si además estás resolviendo el trámite en sí —qué visa te corresponde, qué documentos pide y cómo se presenta—, nuestro equipo de <a href="https://www.asesoriaenvisas.com/visas/canada" target="_blank" rel="noopener">Asesoría en Visas cubre el proceso migratorio a Canadá</a>. Aquí nos ocupamos del idioma; allí, del expediente.</p>
     `,
@@ -1790,7 +1790,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <h2>El verdadero costo: el examen más la preparación</h2>
 <p>El precio del examen es solo una parte del costo real. Muchos colombianos presentan el IELTS dos o tres veces porque no se prepararon adecuadamente la primera vez — a un costo de $870.000–$920.000 COP por intento.</p>
 <p>Invertir en preparación antes de presentar el examen tiene más sentido financiero que repetirlo: el costo de 10–12 semanas de preparación con un tutor suele ser igual o menor al costo de un segundo intento del examen.</p>
-<p>Si estás considerando presentar el IELTS y quieres prepararte para pasarlo en el primer intento con el puntaje que necesitas, puedes <a href="/clases-de-ingles">conocer el programa de preparación IELTS de WeLearn</a> — empezamos con una clase de diagnóstico gratis que define exactamente cuánto tiempo necesitas.</p>
+<p>Si estás considerando presentar el IELTS y quieres prepararte para pasarlo en el primer intento con el puntaje que necesitas, puedes <a href="/clases-de-ingles">conocer el programa de preparación IELTS de WeLearn</a> — empezamos con una clase de diagnóstico de pago que define exactamente cuánto tiempo necesitas.</p>
 <p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?</a>.</p>
     `,
   },
@@ -1870,7 +1870,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   <li>Evalúa tu nivel de inglés actual con honestidad — el nivel B1 típico de muchas profesionales colombianas está lejos del 7.0 overall que requieren la mayoría de procesos.</li>
   <li>Prepárate con foco en el examen específico (IELTS Academic u OET). La preparación médica/clínica del OET lo hace particularmente valioso si vas a presentar IELTS o TOEFL: practica con materiales clínicos en inglés simultáneamente.</li>
 </ol>
-<p>Si eres enfermera y quieres prepararte para el IELTS Academic o el OET con el puntaje que requiere tu proceso de migración, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a> — la clase de diagnóstico gratis te dice exactamente cuánto tiempo necesitas y diseñamos el plan para tu objetivo específico.</p>
+<p>Si eres enfermera y quieres prepararte para el IELTS Academic o el OET con el puntaje que requiere tu proceso de migración, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a> — la clase de diagnóstico de pago te dice exactamente cuánto tiempo necesitas y diseñamos el plan para tu objetivo específico.</p>
 <p>Lee también: <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá desde Colombia: qué puntaje de IELTS necesitas</a> y <a href="/blog/migrar-a-australia-con-ielts">Migrar a Australia desde Colombia: requisitos de IELTS y cómo prepararse</a>.</p>
     `,
   },
@@ -2033,9 +2033,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 </ol>
 
 <h2>Por qué elegir WeLearn para inglés online en Colombia</h2>
-<p>En WeLearn las clases son 1:1 con tutor asignado. El proceso empieza siempre con una clase de diagnóstico gratis que define tu nivel real, tu objetivo específico y el tiempo que necesitas para alcanzarlo. El método de 17 pasos está diseñado para hispanohablantes — no adaptamos contenido en inglés para Colombia, sino que construimos el método desde el contexto lingüístico del español.</p>
+<p>En WeLearn las clases son 1:1 con tutor asignado. El proceso empieza siempre con una clase de diagnóstico de pago que define tu nivel real, tu objetivo específico y el tiempo que necesitas para alcanzarlo. El método de 17 pasos está diseñado para hispanohablantes — no adaptamos contenido en inglés para Colombia, sino que construimos el método desde el contexto lingüístico del español.</p>
 <p>Tenemos preparadores específicos para IELTS, TOEFL e ICFES — no tutores genéricos que "cubren todos los exámenes". Y los simulacros de práctica están disponibles en la plataforma para que practiques entre sesiones.</p>
-<p>Si quieres agendar tu clase de diagnóstico gratis y ver si somos la opción correcta para ti, puedes hacerlo desde la <a href="/clases-de-ingles">página de clases de inglés</a>.</p>
+<p>Si quieres agendar tu clase de diagnóstico de pago y ver si somos la opción correcta para ti, puedes hacerlo desde la <a href="/clases-de-ingles">página de clases de inglés</a>.</p>
 <p>Lee también: <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026? Guía de precios honesta</a>.</p>
     `,
   },
@@ -2101,7 +2101,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <h2>TOEFL vs IELTS: ¿cuál es más barato en total?</h2>
 <p>No compares cifras de dos artículos publicados en fechas distintas. Abre en paralelo el total oficial de IELTS para Colombia y el total final de ETS, suma impuestos, desplazamiento y reportes adicionales, y decide con valores del mismo día.</p>
 <p>Si tu objetivo es específicamente universidades norteamericanas o el sistema de salud americano, el TOEFL tiene más reconocimiento histórico en EE.UU. Para migración, IELTS es preferido en la mayoría de procesos. Para más detalles sobre cuál elegir, revisa nuestra guía <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: cuál tomar en Colombia</a>.</p>
-<p>Si quieres prepararte para el TOEFL iBT con simulacros y clases 1:1, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a> — en esa sesión evaluamos tu nivel, te orientamos sobre el examen correcto para tu objetivo y diseñamos el plan.</p>
+<p>Si quieres prepararte para el TOEFL iBT con simulacros y clases 1:1, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico de pago en WeLearn</a> — en esa sesión evaluamos tu nivel, te orientamos sobre el examen correcto para tu objetivo y diseñamos el plan.</p>
 <p>Lee también: <a href="/blog/cuanto-cuesta-el-ielts-en-colombia-2026">¿Cuánto cuesta el IELTS en Colombia en 2026?</a> y <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación desde cero para colombianos</a>.</p>
     `,
   },
@@ -2182,7 +2182,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 Para Proficient English (7.0 en cada sección) desde B1–B2: 16–24 semanas.<br/>
 Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B2+.</p>
 <p>El requisito "en cada sección" hace que el perfil de preparación deba ser balanceado. No puedes compensar un Speaking débil con un Reading alto. Si tu Speaking es 5.5 y el resto es 7.0, el plan debe enfocarse intensamente en Speaking para alcanzar el 6.0 mínimo en esa sección.</p>
-<p>Si migrar a Australia es tu objetivo y necesitas prepararte para el IELTS con foco en el puntaje específico que requieres, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a>. El plan se diseña para que cada sección alcance el umbral requerido.</p>
+<p>Si migrar a Australia es tu objetivo y necesitas prepararte para el IELTS con foco en el puntaje específico que requieres, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico de pago en WeLearn</a>. El plan se diseña para que cada sección alcance el umbral requerido.</p>
 <p>Lee también: <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá desde Colombia: qué puntaje de IELTS necesitas</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a>.</p>
     `,
   },
@@ -2525,7 +2525,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li>El programa de becas del gobierno francés (Eiffel) lo exige en varios perfiles</li>
   <li>Algunas empresas multinacionales francesas en Colombia (Total, BNP Paribas, Renault) lo valoran para perfiles bilingües</li>
 </ul>
-<p>En WeLearn preparamos para todos los niveles del DELF con material actualizado y práctica de producción oral y escrita con retroalimentación real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para empezar con una diagnóstico gratuito.</p>
+<p>En WeLearn preparamos para todos los niveles del DELF con material actualizado y práctica de producción oral y escrita con retroalimentación real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para empezar con una diagnóstico de pago.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>, <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse desde Colombia</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: certifica tu italiano desde Colombia</a>.</p>
     `,
   },
@@ -2768,7 +2768,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Un developer colombiano con inglés C1 puede cobrar USD 3.000-6.000/mes en empresas de EE.UU. vs USD 800-1.500/mes en el mercado local. Un diseñador UX con inglés B2+ tiene acceso a plataformas como Toptal o Upwork donde la tarifa mínima competitiva es USD 30-50/hora. El ROI de invertir 6-12 meses en subir de B1 a B2-C1 en inglés es extraordinario en cualquier sector.</p>
 
 <h2>Cómo te ayuda WeLearn</h2>
-<p>En WeLearn diseñamos planes de estudio orientados a objetivos laborales concretos: desde inglés conversacional para trabajo remoto hasta preparación para exámenes que abren puertas internacionales. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajo%20remoto%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para una diagnóstico gratuito.</p>
+<p>En WeLearn diseñamos planes de estudio orientados a objetivos laborales concretos: desde inglés conversacional para trabajo remoto hasta preparación para exámenes que abren puertas internacionales. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajo%20remoto%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para una diagnóstico de pago.</p>
 <p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">qué significa cada nivel de inglés (A1-C2)</a>.</p>
     `,
   },
@@ -2831,7 +2831,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li><strong>Emprendimiento digital con clientes internacionales:</strong> B2+ para poder prospectar y atender clientes anglófonos.</li>
 </ul>
 
-<p>En WeLearn hemos acompañado a colombianos que preparan su migración a España con inglés orientado a sus objetivos laborales específicos. Si estás en ese proceso, <a href="https://wa.me/573005004253?text=Hola%2C%20voy%20a%20migrar%20a%20Espa%C3%B1a%20y%20quiero%20mejorar%20mi%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> para un diagnóstico gratuito.</p>
+<p>En WeLearn hemos acompañado a colombianos que preparan su migración a España con inglés orientado a sus objetivos laborales específicos. Si estás en ese proceso, <a href="https://wa.me/573005004253?text=Hola%2C%20voy%20a%20migrar%20a%20Espa%C3%B1a%20y%20quiero%20mejorar%20mi%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> para un diagnóstico de pago.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">qué significa cada nivel de inglés</a>.</p>
     `,
   },
@@ -2938,7 +2938,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>¿Cuándo se necesita un tutor para Reading?</h2>
 <p>El IELTS Reading es la sección donde más colombianos creen que pueden prepararse solos — y tienen parcialmente razón. Con los recursos correctos y disciplina de análisis de errores, es posible subir de Band 5.5 a 6.5 de forma autónoma.</p>
 <p>El salto de 6.5 a 7.0 es más difícil de hacer solo porque los errores que te tienen en 6.5 suelen ser puntos ciegos: patrones de error que no ves porque llevas semanas practicando el mismo tipo de texto de la misma manera. Un tutor que revisa tu metodología (no solo tus respuestas) puede identificar en dos sesiones lo que tú no has detectado en semanas.</p>
-<p>Si estás en esa etapa y quieres acelerar la preparación, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de IELTS en WeLearn</a>. La primera sesión es de diagnóstico gratuito y incluye una revisión de tus patrones de error en Reading.</p>
+<p>Si estás en esa etapa y quieres acelerar la preparación, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de IELTS en WeLearn</a>. La primera sesión es de diagnóstico de pago y incluye una revisión de tus patrones de error en Reading.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a> y <a href="/blog/ielts-listening-errores-comunes">IELTS Listening: los 7 errores más comunes y cómo evitarlos</a>.</p>
     `,
   },
@@ -3161,7 +3161,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y la certificación de italiano</h2>
-<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados, material actualizado y práctica oral con retroalimentación real en cada sesión. Tanto si partes de cero como si ya tienes un A2 consolidado, un diagnóstico gratuito con tu tutor definirá el plan exacto para tu nivel y objetivo. Visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20CILS%20o%20CELI%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y empezamos.</p>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados, material actualizado y práctica oral con retroalimentación real en cada sesión. Tanto si partes de cero como si ya tienes un A2 consolidado, un diagnóstico de pago con tu tutor definirá el plan exacto para tu nivel y objetivo. Visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20CILS%20o%20CELI%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y empezamos.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: guía completa para colombianos</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
     `,
   },
@@ -3244,7 +3244,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Con 5–7 horas semanales de estudio activo (clases + práctica independiente), puedes alcanzar TOPIK I Nivel 2 en 12–18 meses partiendo de cero.</p>
 
 <h2>WeLearn y las clases de coreano online</h2>
-<p>En WeLearn preparamos para coreano con método estructurado desde Hangeul hasta TOPIK II. Las clases son online 1:1, empezamos con una sesión de diagnóstico gratuita que evalúa tu nivel real y define tu ruta — ya sea conversacional, TOPIK o beca GKS. Nuestros tutores tienen formación específica en coreano y experiencia con estudiantes colombianos que aprenden el idioma en contexto hispanohablante.</p>
+<p>En WeLearn preparamos para coreano con método estructurado desde Hangeul hasta TOPIK II. Las clases son online 1:1, empezamos con una sesión de diagnóstico de pago que evalúa tu nivel real y define tu ruta — ya sea conversacional, TOPIK o beca GKS. Nuestros tutores tienen formación específica en coreano y experiencia con estudiantes colombianos que aprenden el idioma en contexto hispanohablante.</p>
 <p>Si quieres saber si WeLearn es la opción correcta para ti, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20coreano%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-coreano">página de clases de coreano</a> para ver el plan completo.</p>
 <p>Lee también: <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a>.</p>
     `,
@@ -3325,7 +3325,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y las clases de coreano</h2>
-<p>En WeLearn ofrecemos clases de coreano 1:1 con tutor especializado, desde nivel cero hasta TOPIK II. Empezamos con una sesión de diagnóstico gratuita para definir tu nivel real, tu objetivo y el plan exacto para alcanzarlo. Los precios están estructurados por paquetes de horas con descuento por volumen — sin contratos largos ni matrícula oculta.</p>
+<p>En WeLearn ofrecemos clases de coreano 1:1 con tutor especializado, desde nivel cero hasta TOPIK II. Empezamos con una sesión de diagnóstico de pago para definir tu nivel real, tu objetivo y el plan exacto para alcanzarlo. Los precios están estructurados por paquetes de horas con descuento por volumen — sin contratos largos ni matrícula oculta.</p>
 <p>Si quieres saber el precio exacto para tu nivel y objetivo, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20coreano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita nuestra <a href="/precios">página de precios</a>.</p>
 <p>Lee también: <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
@@ -3406,7 +3406,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y las clases de alemán online</h2>
-<p>En WeLearn ofrecemos clases de alemán 1:1 con tutores especializados en DaF (Deutsch als Fremdsprache) y en preparación del Goethe-Zertifikat. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel actual, entiende tu objetivo (visa de trabajo, Goethe B1, beca DAAD) y diseña el plan exacto para alcanzarlo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20alem%C3%A1n%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a> para más información.</p>
+<p>En WeLearn ofrecemos clases de alemán 1:1 con tutores especializados en DaF (Deutsch als Fremdsprache) y en preparación del Goethe-Zertifikat. El proceso empieza con una sesión de diagnóstico de pago que evalúa tu nivel actual, entiende tu objetivo (visa de trabajo, Goethe B1, beca DAAD) y diseña el plan exacto para alcanzarlo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20alem%C3%A1n%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a> para más información.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/clases-de-ingles-online-colombia">Clases de inglés online en Colombia: cómo elegir bien</a>.</p>
     `,
   },
@@ -3479,7 +3479,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>La ventaja de ser hispanohablante reduce estos tiempos en un 15–25% comparado con un anglohablante — principalmente en comprensión lectora y vocabulario. Sin embargo, la pronunciación y la producción oral toman el mismo tiempo de práctica que para cualquier otra lengua materna.</p>
 
 <h2>WeLearn y las clases de francés online</h2>
-<p>En WeLearn preparamos para todos los niveles del DELF/DALF con tutores especializados, material actualizado y práctica oral con retroalimentación en cada sesión. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel real y define el plan para alcanzar tu objetivo — ya sea el DELF B1 para ciudadanía, el B2 para la universidad o el C1 para la beca Eiffel. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20franc%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a> para más información.</p>
+<p>En WeLearn preparamos para todos los niveles del DELF/DALF con tutores especializados, material actualizado y práctica oral con retroalimentación en cada sesión. El proceso empieza con una sesión de diagnóstico de pago que evalúa tu nivel real y define el plan para alcanzar tu objetivo — ya sea el DELF B1 para ciudadanía, el B2 para la universidad o el C1 para la beca Eiffel. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20franc%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a> para más información.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
@@ -3546,7 +3546,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para hispanohablantes, estos tiempos se reducen un 20–30% comparado con hablantes de inglés u otras lenguas no romances — especialmente en vocabulario y comprensión escrita.</p>
 
 <h2>WeLearn y las clases de italiano online</h2>
-<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. Empezamos con una sesión de diagnóstico gratuita que evalúa tu nivel y diseña el plan exacto para tu objetivo — sea el B1 para ciudadanía, el B2 para la universidad o la fluidez conversacional para viajes y trabajo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20italiano%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a> para más información.</p>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. Empezamos con una sesión de diagnóstico de pago que evalúa tu nivel y diseña el plan exacto para tu objetivo — sea el B1 para ciudadanía, el B2 para la universidad o la fluidez conversacional para viajes y trabajo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20italiano%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a> para más información.</p>
 <p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: guía completa para certificar tu italiano desde Colombia</a> y <a href="/blog/clases-de-frances-online-colombia">Clases de francés online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
@@ -3613,7 +3613,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Los hispanohablantes llegan al Intermediário 30–40% más rápido que los hablantes de inglés — principalmente en comprensión lectora y producción escrita. La comprensión oral con acento carioca o paulista toma más tiempo.</p>
 
 <h2>WeLearn y las clases de portugués online</h2>
-<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. La clase diagnóstico gratuita evalúa tu nivel y define el camino exacto hacia el nivel que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20portugu%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
+<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. La clase diagnóstico de pago evalúa tu nivel y define el camino exacto hacia el nivel que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20portugu%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/clases-de-italiano-online-colombia">Clases de italiano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
@@ -3644,7 +3644,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Academia grupal en Colombia</td><td>$200.000–$400.000</td><td>Estructura, comunidad</td><td>Ritmo lento (A1 puede tomar 1–2 años), grupos grandes</td></tr>
     <tr><td>Instituto Goethe (presencial)</td><td>$400.000–$800.000</td><td>Calidad reconocida, certificación propia</td><td>Caro, no siempre disponible en todas las ciudades</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$300.000–$700.000</td><td>Ritmo personalizado, feedback inmediato</td><td>Calidad varía según tutor</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep Goethe, diagnóstico gratis</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico de pago</td><td>Plan personalizado, prep Goethe, diagnóstico de pago</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
   </tbody>
 </table>
 
@@ -3670,7 +3670,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y las clases de alemán</h2>
-<p>En WeLearn ofrecemos clases de alemán 1:1 diseñadas según tu nivel y tu objetivo. Si tu meta es el Goethe B1, preparamos específicamente los 4 módulos del examen. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20alem%C3%A1n%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
+<p>En WeLearn ofrecemos clases de alemán 1:1 diseñadas según tu nivel y tu objetivo. Si tu meta es el Goethe B1, preparamos específicamente los 4 módulos del examen. La primera sesión de diagnóstico es de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20alem%C3%A1n%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
   },
@@ -3700,7 +3700,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Alianza Francesa (presencial)</td><td>$350.000–$600.000</td><td>Calidad reconocida, certificación DELF in-house</td><td>Caro, grupos grandes, ritmo lento</td></tr>
     <tr><td>Academia grupal online</td><td>$150.000–$350.000</td><td>Más flexible que presencial</td><td>Grupos de hasta 15 personas, poco tiempo de speaking</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$250.000–$600.000</td><td>Ritmo personalizado</td><td>Calidad varía; no todos conocen el DELF</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep DELF, diagnóstico gratis</td><td>Requiere práctica autónoma diaria</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico de pago</td><td>Plan personalizado, prep DELF, diagnóstico de pago</td><td>Requiere práctica autónoma diaria</td></tr>
   </tbody>
 </table>
 
@@ -3721,7 +3721,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para estudiantes sin objetivo de examen que solo quieren conversación básica, la Alianza Francesa o grupos son válidos. Para todo objetivo con fecha límite o nivel B1+, un tutor especializado es la opción más efectiva.</p>
 
 <h2>WeLearn y las clases de francés</h2>
-<p>En WeLearn ofrecemos clases de francés 1:1 con preparación DELF incluida si ese es tu objetivo. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20franc%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a>.</p>
+<p>En WeLearn ofrecemos clases de francés 1:1 con preparación DELF incluida si ese es tu objetivo. La primera sesión de diagnóstico es de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20franc%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a>.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
   },
@@ -3751,7 +3751,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Dante Alighieri (presencial)</td><td>$250.000–$500.000</td><td>Reconocimiento institucional, materiales oficiales</td><td>Grupos grandes, ritmo fijo, no siempre en tu ciudad</td></tr>
     <tr><td>Academia grupal online</td><td>$120.000–$300.000</td><td>Asequible</td><td>Poco tiempo de speaking, ritmo no adaptable</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$200.000–$500.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep CILS, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico de pago</td><td>Plan personalizado, prep CILS, diagnóstico de pago</td><td>Requiere práctica diaria autónoma</td></tr>
   </tbody>
 </table>
 
@@ -3768,7 +3768,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>El examen CILS cuesta entre $200.000 y $450.000 COP según el nivel. Se puede presentar en algunos centros universitarios aliados en Colombia y también viajando a Ecuador o directamente a Italia (donde los precios son similares). El CILI es permanente: no vence.</p>
 
 <h2>WeLearn y las clases de italiano</h2>
-<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. El proceso empieza con una sesión de diagnóstico gratuita, donde definimos tu nivel real, tu objetivo y la intensidad que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20italiano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>.</p>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. El proceso empieza con una sesión de diagnóstico de pago, donde definimos tu nivel real, tu objetivo y la intensidad que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20italiano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>.</p>
 <p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano</a> y <a href="/blog/cuanto-cuesta-aprender-coreano-colombia-2026">¿Cuánto cuesta aprender coreano en Colombia en 2026?</a>.</p>
     `,
   },
@@ -3798,7 +3798,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Academia grupal presencial</td><td>$150.000–$350.000</td><td>Ambiente social</td><td>Poco tiempo de speaking, ritmo fijo, no especializado en Celpe-Bras</td></tr>
     <tr><td>Academia grupal online</td><td>$100.000–$250.000</td><td>Asequible</td><td>Sin personalización, grupos grandes</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$180.000–$450.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico de pago</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico de pago</td><td>Requiere práctica diaria autónoma</td></tr>
   </tbody>
 </table>
 
@@ -3818,7 +3818,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para colombianos, el portugués tiene una curva de aprendizaje mucho más amable que el alemán, el coreano o el inglés. La gramática es similar, la pronunciación es asequible y el vocabulario compartido elimina la mayor barrera del aprendizaje de idiomas. Esto significa que la inversión total en tiempo y dinero para alcanzar el nivel Intermediário del Celpe-Bras es considerablemente menor que para certificaciones equivalentes en otros idiomas.</p>
 
 <h2>WeLearn y las clases de portugués</h2>
-<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. El proceso empieza con una sesión de diagnóstico gratuita para ubicar tu nivel real y definir la intensidad que te conviene. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20portugu%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
+<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. El proceso empieza con una sesión de diagnóstico de pago para ubicar tu nivel real y definir la intensidad que te conviene. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20portugu%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/cuanto-cuesta-aprender-frances-colombia-2026">¿Cuánto cuesta aprender francés en Colombia en 2026?</a>.</p>
     `,
   },
@@ -3886,7 +3886,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>El CILS tiene centros autorizados en Bogotá, Medellín y Cali (confirma la disponibilidad y fechas directamente con la Università per Stranieri di Siena o con los centros locales autorizados en Colombia, ya que los calendarios cambian cada año). También puedes presentarlo en Ecuador o Argentina, o directamente en Italia si vas a completar tu trámite de ciudadanía allá.</p>
 
 <h2>WeLearn y la preparación CILS para ciudadanía italiana</h2>
-<p>En WeLearn preparamos para el CILS B1 con un plan personalizado desde cualquier nivel inicial. El proceso empieza con una sesión de diagnóstico gratuita. Escríbenos por WhatsApp para saber cuánto tiempo necesitas según tu nivel actual: <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparar%20el%20CILS%20B1%20para%20la%20ciudadan%C3%ADa%20italiana%20y%20quiero%20saber%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Hablar con un tutor de WeLearn</a>.</p>
+<p>En WeLearn preparamos para el CILS B1 con un plan personalizado desde cualquier nivel inicial. El proceso empieza con una sesión de diagnóstico de pago. Escríbenos por WhatsApp para saber cuánto tiempo necesitas según tu nivel actual: <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparar%20el%20CILS%20B1%20para%20la%20ciudadan%C3%ADa%20italiana%20y%20quiero%20saber%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Hablar con un tutor de WeLearn</a>.</p>
 <p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano desde Colombia</a> y <a href="/blog/clases-de-italiano-online-colombia">Clases de italiano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
@@ -3945,7 +3945,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>El alemán es uno de los idiomas más complejos para hispanohablantes (casos gramaticales, artículos con 3 géneros, estructura de oración flexible), por lo que la constancia y el feedback de un tutor especializado marcan una diferencia significativa.</p>
 
 <h2>WeLearn y la preparación para trabajar en Alemania</h2>
-<p>En WeLearn preparamos para los exámenes Goethe con tutores especializados, desde A1 para visa familiar hasta C1 para profesiones reguladas. La primera sesión de diagnóstico es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20alem%C3%A1n%20para%20trabajar%20en%20Alemania%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases." target="_blank" rel="noopener noreferrer">Habla con un tutor de WeLearn</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
+<p>En WeLearn preparamos para los exámenes Goethe con tutores especializados, desde A1 para visa familiar hasta C1 para profesiones reguladas. La primera sesión de diagnóstico es de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20alem%C3%A1n%20para%20trabajar%20en%20Alemania%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases." target="_blank" rel="noopener noreferrer">Habla con un tutor de WeLearn</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-aleman-colombia-2026">¿Cuánto cuesta aprender alemán en Colombia en 2026?</a>.</p>
     `,
   },
@@ -4009,7 +4009,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Cómo prepararte para el TOPIK desde Colombia</h2>
 <p>La preparación para el TOPIK I requiere mínimo 3–6 meses de estudio para alguien que parte de cero. Para el TOPIK II (Nivel 3+), espera 12 o más meses si empiezas sin base. Los puntos críticos son: vocabulario TOPIK (hay listas específicas para cada nivel), comprensión auditiva de velocidad media-rápida, y lectura de textos formales y periodísticos en coreano.</p>
-<p>En WeLearn usamos el <a href="/metodo">método de 17 pasos</a> diseñado específicamente para hispanohablantes, con énfasis en Hangul, gramática estructurada y preparación para el TOPIK. La primera clase de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOPIK%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>En WeLearn usamos el <a href="/metodo">método de 17 pasos</a> diseñado específicamente para hispanohablantes, con énfasis en Hangul, gramática estructurada y preparación para el TOPIK. La primera clase de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOPIK%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
 <p>Lee también: <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave que necesitas conocer</a>.</p>
     `,
   },
@@ -4071,14 +4071,14 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Cómo prepararte para el TCF Canadá desde Colombia</h2>
 <ol>
-  <li><strong>Define tu nivel actual</strong>: una sesión de diagnóstico gratuita te ubica en tu nivel real.</li>
+  <li><strong>Define tu nivel actual</strong>: una sesión de diagnóstico de pago te ubica en tu nivel real.</li>
   <li><strong>Trabaja los módulos específicos del TCF Canadá</strong>: el vocabulario y los temas del examen tienen un contexto canadiense/quebequés que difiere del francés europeo estándar.</li>
   <li><strong>Enfócate en producción oral</strong>: el examen de expresión oral se hace con examinator real o grabación. Es la sección que más reprobados genera.</li>
   <li><strong>Practica con simulacros oficiales</strong>: el CIEP publica materiales de práctica en su sitio web.</li>
 </ol>
 
 <h2>WeLearn y la preparación para el TCF Canadá</h2>
-<p>En WeLearn preparamos para el TCF Canadá con tutores especializados en francés para inmigración. Conocemos el formato, el vocabulario específico y los criterios de corrección del examen. La primera sesión de diagnóstico es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TCF%20Canad%C3%A1%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">Habla con un tutor por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de clases de francés</a>.</p>
+<p>En WeLearn preparamos para el TCF Canadá con tutores especializados en francés para inmigración. Conocemos el formato, el vocabulario específico y los criterios de corrección del examen. La primera sesión de diagnóstico es de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TCF%20Canad%C3%A1%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">Habla con un tutor por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de clases de francés</a>.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: requisitos de IELTS e inglés para residencia permanente</a>.</p>
     `,
   },
@@ -4171,7 +4171,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Qué sigue después del Hangul</h2>
 <p>Una vez que puedes leer Hangul fluidamente (sin pensar en cada letra), el siguiente paso es vocabulario básico y estructuras gramaticales. El coreano tiene una gramática muy diferente al español (verbo al final, partículas de caso, honoríficos), pero con un método estructurado un hispanohablante puede llegar a conversación básica (A2) en 4–6 meses.</p>
-<p>En WeLearn el <a href="/metodo">método de 17 pasos</a> empieza exactamente por el Hangul y lo construye todo desde cero. La primera clase es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20a%20aprender%20coreano%20desde%20Hangul%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>En WeLearn el <a href="/metodo">método de 17 pasos</a> empieza exactamente por el Hangul y lo construye todo desde cero. La primera clase con tutor es paga: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20a%20aprender%20coreano%20desde%20Hangul%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
 <p>Lee también: <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa</a> y <a href="/blog/aprender-coreano-siendo-hispanohablante">Ventajas y retos de aprender coreano siendo hispanohablante</a>.</p>
     `,
   },
@@ -4236,7 +4236,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>El alemán para enfermería requiere vocabulario técnico específico (nombres de medicamentos, procedimientos de enfermería, anatomía) que se trabaja mejor con un tutor especializado desde el nivel B1. Esperar hasta el B2 para empezar el vocabulario médico retrasa todo el proceso.</p>
 
 <h2>WeLearn y la preparación de alemán para enfermería</h2>
-<p>En WeLearn preparamos para el Goethe B2 e incluimos vocabulario de enfermería desde el nivel B1 en los planes de estudiantes que van a Alemania a trabajar en salud. La primera sesión de diagnóstico es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20enfermera%2Fenfermero%20y%20quiero%20preparar%20el%20alem%C3%A1n%20para%20trabajar%20en%20Alemania.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-aleman">nuestra página de clases de alemán</a>.</p>
+<p>En WeLearn preparamos para el Goethe B2 e incluimos vocabulario de enfermería desde el nivel B1 en los planes de estudiantes que van a Alemania a trabajar en salud. La primera sesión de diagnóstico es de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20enfermera%2Fenfermero%20y%20quiero%20preparar%20el%20alem%C3%A1n%20para%20trabajar%20en%20Alemania.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-aleman">nuestra página de clases de alemán</a>.</p>
 <p>Lee también: <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
     `,
   },
@@ -4306,7 +4306,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y la preparación de italiano para universidades</h2>
-<p>En WeLearn preparamos para el CILS B2 y C1 — las certificaciones más aceptadas por universidades italianas. El proceso empieza con una sesión de diagnóstico gratuita para saber exactamente dónde estás y cuánto tiempo necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20estudiar%20en%20Italia%20y%20necesito%20preparar%20mi%20italiano.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-italiano">nuestra página de clases de italiano</a>.</p>
+<p>En WeLearn preparamos para el CILS B2 y C1 — las certificaciones más aceptadas por universidades italianas. El proceso empieza con una sesión de diagnóstico de pago para saber exactamente dónde estás y cuánto tiempo necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20estudiar%20en%20Italia%20y%20necesito%20preparar%20mi%20italiano.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-italiano">nuestra página de clases de italiano</a>.</p>
 <p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano desde Colombia</a> y <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana: el requisito de italiano B1 explicado</a>.</p>
     `,
   },
@@ -4361,7 +4361,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para hispanohablantes, el portugués tiene una curva de aprendizaje significativamente más corta que el inglés o el alemán. La inversión en tiempo es menor para un impacto comercial comparable.</p>
 
 <h2>WeLearn y el portugués para negocios</h2>
-<p>En WeLearn preparamos para el Celpe-Bras y para el portugués de negocios con tutores especializados en portugués brasileño. Podemos adaptar el plan a tu sector (tecnología, manufactura, agro, finanzas) e incluir vocabulario específico desde el inicio. Primera sesión gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20aprender%20portugu%C3%A9s%20para%20hacer%20negocios%20con%20Brasil.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-portugues">nuestra página de clases de portugués</a>.</p>
+<p>En WeLearn preparamos para el Celpe-Bras y para el portugués de negocios con tutores especializados en portugués brasileño. Podemos adaptar el plan a tu sector (tecnología, manufactura, agro, finanzas) e incluir vocabulario específico desde el inicio. Primera sesión con tutor paga: <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20aprender%20portugu%C3%A9s%20para%20hacer%20negocios%20con%20Brasil.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-portugues">nuestra página de clases de portugués</a>.</p>
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/cuanto-cuesta-aprender-portugues-colombia-2026">¿Cuánto cuesta aprender portugués en Colombia en 2026?</a>.</p>
     `,
   },
@@ -4495,7 +4495,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para un candidato con nivel B1 sólido (capaz de sostener conversación y leer textos en inglés), alcanzar el IELTS 6.5 requiere generalmente entre 8 y 16 semanas de preparación estructurada. La clave es no preparar el examen en general — prepararlo por secciones (Reading, Listening, Writing Task 1 y 2, Speaking) con ejercicios específicos del formato IELTS.</p>
 
 <h2>WeLearn y la preparación IELTS para Irlanda</h2>
-<p>En WeLearn preparamos para el IELTS con tutores que conocen el examen y los requisitos específicos de las universidades de destino. La primera sesión es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20estudiar%20en%20Irlanda%20y%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>En WeLearn preparamos para el IELTS con tutores que conocen el examen y los requisitos específicos de las universidades de destino. La primera sesión con tutor es paga. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20estudiar%20en%20Irlanda%20y%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
 <p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: requisitos de IELTS e inglés</a>.</p>
     `,
   },
@@ -4555,7 +4555,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y el coreano para fans de K-pop y K-dramas</h2>
-<p>En WeLearn sabemos que muchos de nuestros estudiantes de coreano llegan por el K-pop o los dramas. El <a href="/metodo">método de 17 pasos</a> aprovecha esa motivación y la convierte en estructura real: Hangul desde el día 1, gramática progresiva y mucho contenido cultural. La primera clase es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20me%20gusta%20el%20K-pop%20y%20los%20K-dramas%20y%20quiero%20aprender%20coreano%20de%20verdad.%20%C2%BFCuánto%20cuesta%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>En WeLearn sabemos que muchos de nuestros estudiantes de coreano llegan por el K-pop o los dramas. El <a href="/metodo">método de 17 pasos</a> aprovecha esa motivación y la convierte en estructura real: Hangul desde el día 1, gramática progresiva y mucho contenido cultural. La primera clase con tutor es paga: <a href="https://wa.me/573005004253?text=Hola%2C%20me%20gusta%20el%20K-pop%20y%20los%20K-dramas%20y%20quiero%20aprender%20coreano%20de%20verdad.%20%C2%BFCuánto%20cuesta%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
 <p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: la guía definitiva para hispanohablantes</a> y <a href="/blog/aprender-coreano-siendo-hispanohablante">Ventajas y retos de aprender coreano siendo hispanohablante</a>.</p>
     `,
   },
@@ -4615,7 +4615,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y el inglés para trabajo remoto</h2>
-<p>En WeLearn diseñamos planes de inglés enfocados en el objetivo específico del estudiante. Si tu meta es conseguir trabajo remoto con empresa internacional, el plan se enfoca en inglés profesional, entrevistas, comunicación escrita y speaking en llamadas. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajar%20de%20forma%20remota%20con%20empresas%20internacionales.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>En WeLearn diseñamos planes de inglés enfocados en el objetivo específico del estudiante. Si tu meta es conseguir trabajo remoto con empresa internacional, el plan se enfoca en inglés profesional, entrevistas, comunicación escrita y speaking en llamadas. Primera clase de diagnóstico de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajar%20de%20forma%20remota%20con%20empresas%20internacionales.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
 <p>Lee también: <a href="/blog/ingles-para-trabajo-remoto-empleadores-globales">Inglés para trabajo remoto: lo que buscan los empleadores globales</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
     `,
   },
@@ -4676,7 +4676,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para un IELTS 6.5 (residencia permanente), un candidato con nivel B2 real necesita típicamente 8–16 semanas de preparación intensiva. El foco debe estar en Writing y Speaking, las secciones donde los candidatos hispanohablantes suelen perder más puntos.</p>
 
 <h2>WeLearn y la preparación IELTS para Nueva Zelanda</h2>
-<p>En WeLearn preparamos para el IELTS Academic y General Training con tutores especializados. Conocemos los requisitos específicos de Immigration New Zealand y diseñamos el plan según tu objetivo de visa. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20migrar%20a%20Nueva%20Zelanda%20y%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>En WeLearn preparamos para el IELTS Academic y General Training con tutores especializados. Conocemos los requisitos específicos de Immigration New Zealand y diseñamos el plan según tu objetivo de visa. Primera clase de diagnóstico de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20migrar%20a%20Nueva%20Zelanda%20y%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
 <p>Lee también: <a href="/blog/migrar-a-australia-con-ielts">Migrar a Australia con IELTS: puntajes mínimos y tipos de visa</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: requisitos de inglés para residencia permanente</a>.</p>
     `,
   },
@@ -4755,7 +4755,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </table>
 
 <h2>WeLearn y la preparación DELF/DALF</h2>
-<p>En WeLearn preparamos para el DELF B1, B2 y DALF C1 con tutores especializados en francés para colombianos. El plan se adapta a tu nivel inicial y tu fecha de examen. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20DELF%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de francés</a>.</p>
+<p>En WeLearn preparamos para el DELF B1, B2 y DALF C1 con tutores especializados en francés para colombianos. El plan se adapta a tu nivel inicial y tu fecha de examen. Primera clase de diagnóstico de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20DELF%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de francés</a>.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa de preparación para colombianos</a> y <a href="/blog/tcf-canada-frances-para-inmigrar-a-quebec">TCF Canadá: el examen de francés para inmigrar a Quebec</a>.</p>
     `,
   },
@@ -4811,7 +4811,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>En WeLearn tenemos estudiantes que llevan clases de inglés para el IELTS y al mismo tiempo están en el método de coreano. Lo que funciona: clases de inglés 2 veces por semana + clases de coreano 1 vez por semana. Con práctica autónoma de 20–30 min diarios por idioma, el progreso en ambos es real.</p>
 
 <h2>WeLearn y el aprendizaje de múltiples idiomas</h2>
-<p>Si tienes dos objetivos de idioma, el primer paso es una sesión de diagnóstico donde definimos cuál es tu nivel real en cada uno y qué plan tiene más sentido según tu tiempo disponible. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20dos%20idiomas%20a%20la%20vez%20y%20quisiera%20que%20me%20orienten%20sobre%20cómo%20hacerlo." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-idiomas">nuestra página de idiomas</a>.</p>
+<p>Si tienes dos objetivos de idioma, el primer paso es una sesión de diagnóstico donde definimos cuál es tu nivel real en cada uno y qué plan tiene más sentido según tu tiempo disponible. Primera clase de diagnóstico de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20dos%20idiomas%20a%20la%20vez%20y%20quisiera%20que%20me%20orienten%20sobre%20cómo%20hacerlo." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-idiomas">nuestra página de idiomas</a>.</p>
 <p>Lee también: <a href="/blog/como-aprender-un-idioma-mas-rapido">Cómo aprender un idioma más rápido: lo que dice la ciencia</a> y <a href="/blog/aprender-idiomas-con-series-y-peliculas">Aprender idiomas con series y películas: lo que funciona</a>.</p>
     `,
   },
@@ -4884,7 +4884,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>
-<p>En WeLearn tenemos un plan específico para el inglés ICFES de 8 a 12 semanas, con tutores que conocen el formato y los tipos de preguntas. Incluye práctica semanal con feedback específico. La primera clase de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20ingl%C3%A9s%20para%20el%20ICFES%20Saber%2011%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20plan%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>.</p>
+<p>En WeLearn tenemos un plan específico para el inglés ICFES de 8 a 12 semanas, con tutores que conocen el formato y los tipos de preguntas. Incluye práctica semanal con feedback específico. La primera clase de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20ingl%C3%A9s%20para%20el%20ICFES%20Saber%2011%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20plan%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>.</p>
 <p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">ICFES Saber 11: guía completa de niveles de inglés</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
     `,
   },
@@ -4942,7 +4942,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Si partes de cero, llegar al C1 de francés requiere entre 30 y 42 meses de estudio intenso (2–3 clases semanales + práctica diaria). Si tienes base A2 o B1, ese tiempo se reduce significativamente. Para medicina, el C1 no es el objetivo final — necesitas el C1 certificado (DALF C1) más fluidez en vocabulario médico y científico en francés.</p>
 
 <h2>WeLearn y el francés para medicina en Francia y Bélgica</h2>
-<p>En WeLearn preparamos para el DALF C1 con tutores especializados en francés académico. Si tu objetivo es medicina en Francia o Bélgica, el plan incluye vocabulario científico y médico desde el nivel B2. La primera sesión de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20franc%C3%A9s%20para%20estudiar%20medicina%20en%20Francia%20o%20B%C3%A9lgica%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de francés</a>.</p>
+<p>En WeLearn preparamos para el DALF C1 con tutores especializados en francés académico. Si tu objetivo es medicina en Francia o Bélgica, el plan incluye vocabulario científico y médico desde el nivel B2. La primera sesión de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20franc%C3%A9s%20para%20estudiar%20medicina%20en%20Francia%20o%20B%C3%A9lgica%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de francés</a>.</p>
 <p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa de preparación para colombianos</a>.</p>
     `,
   },
@@ -5000,7 +5000,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y el coreano para empresas coreanas</h2>
-<p>En WeLearn preparamos coreano con enfoque práctico desde el día 1 — incluyendo vocabulario laboral y cultural para entornos coreanos. Si ya trabajas en Samsung, LG o similar, o quieres diferenciarte para ese mercado laboral, la primera clase de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20una%20empresa%20coreana%20en%20Colombia%20y%20quisiera%20m%C3%A1s%20info." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>En WeLearn preparamos coreano con enfoque práctico desde el día 1 — incluyendo vocabulario laboral y cultural para entornos coreanos. Si ya trabajas en Samsung, LG o similar, o quieres diferenciarte para ese mercado laboral, la primera clase de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20una%20empresa%20coreana%20en%20Colombia%20y%20quisiera%20m%C3%A1s%20info." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
 <p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: la guía definitiva para hispanohablantes</a> y <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos</a>.</p>
     `,
   },
@@ -5077,7 +5077,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>No. Debes inscribirte en la versión correcta desde el inicio. Si te equivocas, el resultado no será válido para tu propósito aunque el puntaje sea bueno. Verifica siempre con la institución o proceso migratorio exactamente qué versión piden.</p>
 
 <h2>Preparación en WeLearn</h2>
-<p>En WeLearn preparamos las dos versiones del IELTS. Si no tienes claro cuál necesitas, la primera sesión de diagnóstico es gratuita y te ayudamos a definir la versión, el puntaje objetivo y el plan de estudio. <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparaci%C3%B3n%20para%20el%20IELTS%20y%20no%20s%C3%A9%20si%20Academic%20o%20General.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>En WeLearn preparamos las dos versiones del IELTS. Si no tienes claro cuál necesitas, la primera sesión de diagnóstico es de pago y te ayudamos a definir la versión, el puntaje objetivo y el plan de estudio. <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparaci%C3%B3n%20para%20el%20IELTS%20y%20no%20s%C3%A9%20si%20Academic%20o%20General.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ielts-bandas-0-9-que-significa-cada-puntaje">Bandas IELTS 0–9: qué significa cada puntaje</a> y <a href="/blog/ielts-writing-task-2-guia-completa-para-principiantes">IELTS Writing Task 2: guía completa para principiantes</a>.</p>
     `,
   },
@@ -5384,7 +5384,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y el alemán</h2>
-<p>Preparamos alemán desde A1 con instructores especializados. El método WeLearn adapta el ritmo a tu velocidad — algunos completan A1→B1 en 12 meses, otros en 18, según disponibilidad. Lo importante es la consistencia. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20a%20aprender%20alem%C3%A1n%20desde%20cero%20con%20WeLearn.%20%C2%BFC%C3%B3mo%20funciona%3F" target="_blank" rel="noopener noreferrer">Agenda tu clase de diagnóstico gratis</a>.</p>
+<p>Preparamos alemán desde A1 con instructores especializados. El método WeLearn adapta el ritmo a tu velocidad — algunos completan A1→B1 en 12 meses, otros en 18, según disponibilidad. Lo importante es la consistencia. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20a%20aprender%20alem%C3%A1n%20desde%20cero%20con%20WeLearn.%20%C2%BFC%C3%B3mo%20funciona%3F" target="_blank" rel="noopener noreferrer">Agenda tu clase de diagnóstico de pago</a>.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: qué nivel de alemán necesitas</a>.</p>
     `,
   },
@@ -5459,7 +5459,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y el coreano para Corea</h2>
-<p>Preparamos coreano con enfoque en el TOPIK y en vocabulario laboral real. Si tu meta es trabajar en Corea, aprender el idioma es la inversión más estratégica que puedes hacer ahora. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20Corea%20del%20Sur.%20%C2%BFC%C3%B3mo%20puedo%20empezar%3F" target="_blank" rel="noopener noreferrer">Primera clase de diagnóstico gratis — escríbenos</a>.</p>
+<p>Preparamos coreano con enfoque en el TOPIK y en vocabulario laboral real. Si tu meta es trabajar en Corea, aprender el idioma es la inversión más estratégica que puedes hacer ahora. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20Corea%20del%20Sur.%20%C2%BFC%C3%B3mo%20puedo%20empezar%3F" target="_blank" rel="noopener noreferrer">Primera clase de diagnóstico de pago — escríbenos</a>.</p>
 <p>Lee también: <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos</a> y <a href="/blog/topik-i-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero</a>.</p>
     `,
   },
@@ -5534,7 +5534,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para estudiantes colombianos, el <strong>CILS B1 o B2</strong> es generalmente la mejor opción porque tiene mayor red de aplicación para visas, trabajo y universidad.</p>
 
 <h2>WeLearn y el italiano</h2>
-<p>Preparamos italiano desde A1 con instructores especializados que adaptan el ritmo a tu base en español. Si tienes ciudadanía italiana en proceso, o planeas estudiar o trabajar en Italia, empieza con una clase de diagnóstico gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20italiano%20desde%20cero%20para%20llegar%20a%20B2.%20%C2%BFTienen%20clases%20para%20eso%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Preparamos italiano desde A1 con instructores especializados que adaptan el ritmo a tu base en español. Si tienes ciudadanía italiana en proceso, o planeas estudiar o trabajar en Italia, empieza con una clase de diagnóstico de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20italiano%20desde%20cero%20para%20llegar%20a%20B2.%20%C2%BFTienen%20clases%20para%20eso%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana: el requisito de italiano B1 explicado</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: guía completa para certificar tu italiano</a>.</p>
     `,
   },
@@ -5598,7 +5598,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>El DELF B2 tiene 4 pruebas: comprensión de textos escritos, comprensión de documentos orales, producción escrita (argumentación) y producción oral (exposición + debate). El puntaje mínimo es 50/100 en total y 5/25 por prueba. En Colombia, el Alliance Française administra el DELF.</p>
 
 <h2>WeLearn y la preparación DELF B2</h2>
-<p>Si ya tienes A2 o B1 en francés y quieres llegar a B2 con certificación, diseñamos contigo un plan específico para el DELF B2. Primera clase de diagnóstico gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20B2%20en%20franc%C3%A9s%20con%20WeLearn.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Si ya tienes A2 o B1 en francés y quieres llegar a B2 con certificación, diseñamos contigo un plan específico para el DELF B2. Primera clase de diagnóstico de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20B2%20en%20franc%C3%A9s%20con%20WeLearn.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/tcf-canada-frances-para-inmigrar-a-quebec">TCF Canadá: francés para inmigrar a Quebec</a>.</p>
     `,
   },
@@ -5753,7 +5753,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Sí, con tiempo. Después de 6–12 meses de práctica en una variedad, puedes comenzar a exponerte a la otra y adaptarte en semanas. La estructura es la misma; solo el acento y algunas palabras cambian. Muchos colombianos aprenden PB primero y luego agregan exposición a PE para proyectos en Portugal o Angola.</p>
 
 <h2>WeLearn y el portugués</h2>
-<p>Enseñamos las dos variedades según el objetivo del estudiante. Si tienes claro si vas hacia Brasil o Portugal, el programa se adapta desde el día 1. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20portugu%C3%A9s%20y%20quisiera%20orientaci%C3%B3n%20sobre%20cu%C3%A1l%20variedad%20estudiar.%20%C2%BFMe%20ayudan%3F" target="_blank" rel="noopener noreferrer">Clase de diagnóstico gratis — escríbenos</a>.</p>
+<p>Enseñamos las dos variedades según el objetivo del estudiante. Si tienes claro si vas hacia Brasil o Portugal, el programa se adapta desde el día 1. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20portugu%C3%A9s%20y%20quisiera%20orientaci%C3%B3n%20sobre%20cu%C3%A1l%20variedad%20estudiar.%20%C2%BFMe%20ayudan%3F" target="_blank" rel="noopener noreferrer">Clase de diagnóstico de pago — escríbenos</a>.</p>
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse desde Colombia</a> y <a href="/blog/portugues-para-negocios-con-brasil-nivel-recomendado">Portugués para negocios con Brasil: guía práctica</a>.</p>
     `,
   },
@@ -6134,7 +6134,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y el alemán para Suiza</h2>
-<p>Si tu meta es trabajar en Suiza, el camino empieza con Hochdeutsch hasta B2 certificado — lo mismo que para Alemania, pero con la ventaja adicional de que en muchos sectores suizos el inglés complementa bien. Diseñamos el plan según tu sector y tu punto de partida. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20alem%C3%A1n%20para%20trabajar%20en%20Suiza.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Primera clase gratis — escríbenos</a>.</p>
+<p>Si tu meta es trabajar en Suiza, el camino empieza con Hochdeutsch hasta B2 certificado — lo mismo que para Alemania, pero con la ventaja adicional de que en muchos sectores suizos el inglés complementa bien. Diseñamos el plan según tu sector y tu punto de partida. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20alem%C3%A1n%20para%20trabajar%20en%20Suiza.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Consulta el precio de la primera clase — escríbenos</a>.</p>
 <p>Lee también: <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: qué nivel de alemán necesitas</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
     `,
   },
@@ -6225,7 +6225,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Si al hacerlo descubres que el problema no es el vocabulario sino la velocidad de lectura o los conectores, tenemos práctica específica para eso: <a href="/practica/icfes-saber-11/sinonimos-inferencia">sinónimos e inferencia</a> y <a href="/practica/icfes-saber-11/gramatica-conjunciones">conectores y conjunciones</a>, que son los dos tipos de pregunta que más se fallan en la segunda mitad de la prueba.</p>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>
-<p>En WeLearn preparamos el inglés del ICFES con vocabulario, comprensión lectora y estrategias de examen, presencialmente en Bucaramanga u online. Puedes ver cómo lo trabajamos en la página de <a href="/preparacion-icfes">preparación ICFES</a>, o <a href="https://wa.me/573005004253?text=Hola%2C%20me%20preparo%20para%20el%20ICFES%20y%20quiero%20mejorar%20mi%20puntaje%20en%20ingl%C3%A9s.%20%C2%BFC%C3%B3mo%20pueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escribirnos por WhatsApp</a> para un diagnóstico gratis.</p>
+<p>En WeLearn preparamos el inglés del ICFES con vocabulario, comprensión lectora y estrategias de examen, presencialmente en Bucaramanga u online. Puedes ver cómo lo trabajamos en la página de <a href="/preparacion-icfes">preparación ICFES</a>, o <a href="https://wa.me/573005004253?text=Hola%2C%20me%20preparo%20para%20el%20ICFES%20y%20quiero%20mejorar%20mi%20puntaje%20en%20ingl%C3%A9s.%20%C2%BFC%C3%B3mo%20pueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escribirnos por WhatsApp</a> para un diagnóstico de pago.</p>
 <p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">Puntaje inglés ICFES: qué significan los niveles</a> y <a href="/blog/icfes-ingles-plan-estudio-3-meses">Plan de estudio inglés ICFES en 3 meses</a>.</p>
     `,
   },
@@ -6637,7 +6637,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para el batchim ㄱ (k cerrado): di "pak" en español. Ahora hazlo de nuevo, pero no abras la boca al final — detén el aire con la posición de la "k" sin soltarlo. Eso es el batchim ㄱ. Practica con: 학 (hak), 국 (guk), 먹 (meok), 각 (gak).</p>
 
 <h2>WeLearn y la pronunciación coreana</h2>
-<p>La pronunciación es uno de los pilares del método WeLearn para coreano. En las primeras clases cubrimos hangul, batchim y las reglas de enlace con práctica intensiva de pronunciación. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20desde%20cero%20y%20pronunciar%20bien%20desde%20el%20principio.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Primera clase de diagnóstico gratis</a>.</p>
+<p>La pronunciación es uno de los pilares del método WeLearn para coreano. En las primeras clases cubrimos hangul, batchim y las reglas de enlace con práctica intensiva de pronunciación. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20desde%20cero%20y%20pronunciar%20bien%20desde%20el%20principio.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Primera clase de diagnóstico de pago</a>.</p>
 <p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: guía definitiva para hispanohablantes</a> y <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero: guía completa</a>.</p>
     `,
   },
@@ -6774,7 +6774,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Desde el principio, si el objetivo es llegar a B1 o B2 en menos de 2 años. Las clases 1:1 reducen el tiempo total porque un tutor corrige los errores en tiempo real, antes de que se vuelvan hábitos. Aprender solo durante 6 meses y luego buscar clases significa 6 meses de errores consolidados.</p>
 
 <h2>WeLearn y el francés para adultos</h2>
-<p>En WeLearn la mayoría de nuestros estudiantes de francés son adultos que empiezan desde cero o desde un nivel muy básico. El programa se adapta al ritmo real de un adulto con trabajo, familia y poco tiempo — pero con las horas correctas. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20adulto%20y%20quiero%20aprender%20franc%C3%A9s%20desde%20cero.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Empieza con una clase de diagnóstico gratis</a>.</p>
+<p>En WeLearn la mayoría de nuestros estudiantes de francés son adultos que empiezan desde cero o desde un nivel muy básico. El programa se adapta al ritmo real de un adulto con trabajo, familia y poco tiempo — pero con las horas correctas. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20adulto%20y%20quiero%20aprender%20franc%C3%A9s%20desde%20cero.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Empieza con una clase de diagnóstico de pago</a>.</p>
 <p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/cuanto-tiempo-para-aprender-un-idioma-desde-cero">¿Cuánto tiempo se necesita para aprender un idioma desde cero?</a>.</p>
     `,
   },
@@ -9377,7 +9377,7 @@ And explain whether you would recommend it to others.</em>
   <li><strong>Academias tradicionales presenciales:</strong> $300.000 a $900.000 por nivel (1–2 meses de clases grupales)</li>
   <li><strong>Centros de idiomas con prestigio:</strong> $400.000 a $1.500.000 por nivel</li>
   <li><strong>Clases individuales con tutor particular:</strong> $40.000 a $90.000 por hora</li>
-  <li><strong>WeLearn:</strong> depende de la intensidad semanal; el diagnóstico inicial es gratis y ahí se define el valor exacto</li>
+  <li><strong>WeLearn:</strong> depende de la intensidad semanal; el diagnóstico inicial es de pago y ahí se define el valor exacto</li>
   <li><strong>WeLearn (paquetes de horas):</strong> paquetes de 4, 10 y 20 horas con precio decreciente por hora</li>
 </ul>
 <p>Para preparación de IELTS o TOEFL, los paquetes de horas individuales con tutor especializado suelen ser más eficientes que los cursos grupales — aunque el costo por hora sea similar, la velocidad de progreso es mucho mayor.</p>
@@ -9458,7 +9458,7 @@ And explain whether you would recommend it to others.</em>
 <table>
   <thead><tr><th>Plan</th><th>Precio</th><th>¿Qué incluye?</th></tr></thead>
   <tbody>
-    <tr><td>Diagnóstico</td><td>Gratis</td><td>45 min: evaluación de nivel + plan personalizado</td></tr>
+    <tr><td>Diagnóstico con tutor</td><td>Consultar</td><td>45 min: evaluación de nivel + plan personalizado</td></tr>
     <tr><td>Plan Preparación</td><td>$180.000/mes</td><td>Simulacros + feedback escrito + chat tutor 24h</td></tr>
     <tr><td>Plan Intensivo 2x/sem</td><td>$280.000/mes</td><td>Sesiones en vivo + tutor asignado + plan</td></tr>
     <tr><td>Plan Intensivo 4x/sem</td><td>$480.000/mes</td><td>Sesiones en vivo frecuentes + tutor + evaluación mensual</td></tr>
@@ -9569,7 +9569,7 @@ And explain whether you would recommend it to others.</em>
 <p>WeLearn no te obliga a elegir. Tenemos <strong>sede física en el barrio Sotomayor, Calle 47 # 29-33</strong>, donde damos clases presenciales, y también damos clases online para quien vive lejos, viaja o tiene horarios imposibles. Muchos estudiantes combinan las dos: presencial cuando pueden venir, online cuando no.</p>
 <p>Atendemos presencialmente a todo el área metropolitana: Bucaramanga, Floridablanca, Girón y Piedecuesta. Cada estudiante tiene un tutor asignado, plan de estudio personalizado y evaluación mensual de progreso, sin importar la modalidad.</p>
 <p>Si estás decidiendo entre las dos, la página de <a href="/clases-de-ingles-bucaramanga">cursos de inglés presenciales en Bucaramanga</a> tiene el detalle de horarios, cómo llegar a la sede y cómo funciona cada modalidad.</p>
-<p><a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20comparar%20las%20clases%20de%20ingl%C3%A9s%20presenciales%20y%20online%20en%20Bucaramanga%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para tu diagnóstico gratis.</p>
+<p><a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20comparar%20las%20clases%20de%20ingl%C3%A9s%20presenciales%20y%20online%20en%20Bucaramanga%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para tu diagnóstico de pago.</p>
 <p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga?</a>.</p>
     `,
   },
@@ -9635,7 +9635,7 @@ And explain whether you would recommend it to others.</em>
 
 <h2>Preparación para IELTS en Bucaramanga con WeLearn</h2>
 <p>WeLearn ofrece preparación para IELTS con clases online desde Bucaramanga. Nuestros estudiantes han alcanzado Band 7.0+ en IELTS Academic y General. El programa incluye simulacros completos, retroalimentación escrita por sección (Reading, Listening, Writing y Speaking) y sesiones en vivo con tutor asignado.</p>
-<p><a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparaci%C3%B3n%20para%20el%20IELTS%20desde%20Bucaramanga.%20%C2%BFC%C3%B3mo%20funciona%20el%20programa%20de%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu clase de diagnóstico gratis y armar un plan según tu fecha de examen.</p>
+<p><a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparaci%C3%B3n%20para%20el%20IELTS%20desde%20Bucaramanga.%20%C2%BFC%C3%B3mo%20funciona%20el%20programa%20de%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu clase de diagnóstico de pago y armar un plan según tu fecha de examen.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
     `,
   },
@@ -9698,7 +9698,7 @@ And explain whether you would recommend it to others.</em>
 <p>Puedes probar la práctica de ruso <a href="/practica/ruso">sin registrarte y gratis</a> antes de hablar con nadie. Es la forma más rápida de saber si el idioma te engancha.</p>
 
 <h2>Empieza con un diagnóstico</h2>
-<p>La primera sesión es un diagnóstico gratuito: vemos de dónde partes, para qué quieres el ruso y cuánto tiempo real necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20ruso%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-ruso">página de clases de ruso</a>.</p>
+<p>La primera sesión es un diagnóstico de pago: vemos de dónde partes, para qué quieres el ruso y cuánto tiempo real necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20ruso%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-ruso">página de clases de ruso</a>.</p>
 <p>Lee también: <a href="/blog/aprender-ruso-desde-cero-alfabeto-cirilico">Aprender ruso desde cero: el alfabeto cirílico en dos semanas</a> y <a href="/blog/cuanto-cuesta-aprender-ruso-colombia-2026">¿Cuánto cuesta aprender ruso en Colombia en 2026?</a>.</p>
     `,
   },
@@ -9728,7 +9728,7 @@ And explain whether you would recommend it to others.</em>
     <tr><td>YouTube y recursos libres</td><td>$0</td><td>Mucho material bueno en inglés</td><td>Sin progresión ni corrección; nadie te dice que declinas mal</td></tr>
     <tr><td>Intercambio de idiomas</td><td>$0</td><td>Práctica oral real</td><td>Un nativo no es profesor: sabe que suena mal, no sabe explicarte por qué</td></tr>
     <tr><td>Tutor particular online</td><td>$200.000–$550.000</td><td>Ritmo propio</td><td>Calidad muy dispar; pocos con formación pedagógica</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, dirección académica rusa nativa, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico de pago</td><td>Plan personalizado, dirección académica rusa nativa, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
   </tbody>
 </table>
 
@@ -9751,7 +9751,7 @@ And explain whether you would recommend it to others.</em>
 <p>Para el ruso, la respuesta es menos ambigua que en otros idiomas: <strong>clases individuales con corrección constante</strong>. En un idioma donde cada sustantivo cambia de forma seis veces, aprender sin nadie que te corrija produce errores que se fosilizan y que después cuestan más tiempo de desmontar que lo que ahorraste. Las apps sirven de complemento para el cirílico y el vocabulario; no sustituyen al profesor.</p>
 
 <h2>Clases de ruso en WeLearn</h2>
-<p>Damos clases de ruso 1:1, presenciales en Bucaramanga u online a cualquier ciudad, con la plataforma de práctica incluida. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20ruso%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-ruso">página de clases de ruso</a> y nuestros <a href="/precios">precios</a>.</p>
+<p>Damos clases de ruso 1:1, presenciales en Bucaramanga u online a cualquier ciudad, con la plataforma de práctica incluida. La primera sesión de diagnóstico es de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20ruso%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-ruso">página de clases de ruso</a> y nuestros <a href="/precios">precios</a>.</p>
 <p>Lee también: <a href="/blog/clases-de-ruso-online-colombia">Clases de ruso online en Colombia: guía para elegir bien</a> y <a href="/blog/estudiar-en-rusia-becas-y-nivel-de-ruso">Estudiar en Rusia: becas y nivel de ruso que piden</a>.</p>
     `,
   },
@@ -9821,7 +9821,7 @@ And explain whether you would recommend it to others.</em>
 
 <h2>Practica el cirílico ahora, gratis</h2>
 <p>Tenemos el alfabeto cirílico como ejercicio interactivo, con audio y corrección inmediata, sin registro: <a href="/practica/ruso/a1/gramatica/alfabeto-cirilico">practicar el alfabeto cirílico</a>. Y si quieres seguir, toda la <a href="/practica/ruso">práctica de ruso de A1 a B1</a> está abierta.</p>
-<p>Cuando quieras que alguien te corrija de verdad, la primera clase de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20ruso%20desde%20cero%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
+<p>Cuando quieras que alguien te corrija de verdad, la primera clase de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20ruso%20desde%20cero%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
     `,
   },
   // ── Article 130 ────────────────────────────────────────────────────────────
@@ -9881,7 +9881,7 @@ And explain whether you would recommend it to others.</em>
 </ol>
 
 <h2>Preparación TORFL en WeLearn</h2>
-<p>Preparamos ruso de A1 a B1 con plan personalizado y orientación al TORFL, presencial en Bucaramanga u online. La dirección académica está a cargo de una lingüista rusa nativa con formación universitaria en Rusia. La primera sesión de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20TORFL%20de%20ruso%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
+<p>Preparamos ruso de A1 a B1 con plan personalizado y orientación al TORFL, presencial en Bucaramanga u online. La dirección académica está a cargo de una lingüista rusa nativa con formación universitaria en Rusia. La primera sesión de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20TORFL%20de%20ruso%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
 <p>Lee también: <a href="/blog/estudiar-en-rusia-becas-y-nivel-de-ruso">Estudiar en Rusia: becas y nivel de ruso que piden</a> y <a href="/blog/clases-de-ruso-online-colombia">Clases de ruso online en Colombia</a>.</p>
     `,
   },
@@ -9936,7 +9936,7 @@ And explain whether you would recommend it to others.</em>
 <p>Los plazos de las convocatorias suelen cerrarse con varios meses de antelación al inicio del curso. Si el ruso te va a hacer falta, ese es justamente el tiempo que puedes usar para llegar con A2 en vez de con cero.</p>
 
 <h2>Prepara el ruso antes de irte</h2>
-<p>En WeLearn damos clases de ruso 1:1 orientadas a este objetivo, presenciales en Bucaramanga u online a cualquier ciudad, con dirección académica de una lingüista rusa nativa. La primera sesión es un diagnóstico gratuito: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20estudiar%20en%20Rusia%20y%20necesito%20prepararme%20en%20ruso." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
+<p>En WeLearn damos clases de ruso 1:1 orientadas a este objetivo, presenciales en Bucaramanga u online a cualquier ciudad, con dirección académica de una lingüista rusa nativa. La primera sesión es un diagnóstico de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20estudiar%20en%20Rusia%20y%20necesito%20prepararme%20en%20ruso." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
 <p>Lee también: <a href="/blog/torfl-certificacion-ruso-colombia">TORFL: la certificación oficial de ruso explicada</a> y <a href="/blog/aprender-ruso-desde-cero-alfabeto-cirilico">Aprender ruso desde cero: el cirílico en dos semanas</a>.</p>
     `,
   },
@@ -10001,7 +10001,7 @@ And explain whether you would recommend it to others.</em>
 <p>Puedes probar la <a href="/practica/japones">práctica de japonés</a> gratis y sin registro antes de hablar con nadie.</p>
 
 <h2>Empieza con un diagnóstico</h2>
-<p>La primera sesión es un diagnóstico gratuito donde vemos tu punto de partida, tu objetivo y el tiempo real que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20japon%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-japones">página de clases de japonés</a>.</p>
+<p>La primera sesión es un diagnóstico de pago donde vemos tu punto de partida, tu objetivo y el tiempo real que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20japon%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-japones">página de clases de japonés</a>.</p>
 <p>Lee también: <a href="/blog/aprender-japones-desde-cero-hiragana-katakana">Aprender japonés desde cero: hiragana y katakana</a> y <a href="/blog/jlpt-niveles-n5-a-n1-guia-colombia">JLPT: guía de los niveles N5 a N1</a>.</p>
     `,
   },
@@ -10032,7 +10032,7 @@ And explain whether you would recommend it to others.</em>
     <tr><td>YouTube y recursos libres</td><td>$0</td><td>Mucho material bueno</td><td>Sin progresión ni corrección</td></tr>
     <tr><td>Academia grupal</td><td>$180.000–$400.000</td><td>Estructura y compañeros</td><td>Grupos grandes, poca producción oral por estudiante</td></tr>
     <tr><td>Tutor particular online</td><td>$250.000–$600.000</td><td>Ritmo propio</td><td>Calidad dispar; pocos preparan JLPT específicamente</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, orientación JLPT, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico de pago</td><td>Plan personalizado, orientación JLPT, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
   </tbody>
 </table>
 
@@ -10060,7 +10060,7 @@ And explain whether you would recommend it to others.</em>
 </ul>
 
 <h2>Clases de japonés en WeLearn</h2>
-<p>Damos clases de japonés 1:1, presenciales en Bucaramanga u online a cualquier ciudad, con plataforma de práctica incluida y plan orientado al JLPT si ese es tu objetivo. La primera sesión de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20japon%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira la <a href="/clases-de-japones">página de clases de japonés</a> y los <a href="/precios">precios</a>.</p>
+<p>Damos clases de japonés 1:1, presenciales en Bucaramanga u online a cualquier ciudad, con plataforma de práctica incluida y plan orientado al JLPT si ese es tu objetivo. La primera sesión de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20japon%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira la <a href="/clases-de-japones">página de clases de japonés</a> y los <a href="/precios">precios</a>.</p>
 <p>Lee también: <a href="/blog/jlpt-niveles-n5-a-n1-guia-colombia">JLPT: guía de los niveles N5 a N1</a> y <a href="/blog/clases-de-japones-online-colombia">Clases de japonés online en Colombia</a>.</p>
     `,
   },
@@ -10124,7 +10124,7 @@ And explain whether you would recommend it to others.</em>
 
 <h2>Practica ahora, gratis</h2>
 <p>Tenemos hiragana y katakana como ejercicios interactivos con audio y corrección inmediata, sin registro: <a href="/practica/japones/a1/gramatica/hiragana-basico">hiragana básico</a> y <a href="/practica/japones/a1/gramatica/katakana-basico">katakana básico</a>. Toda la <a href="/practica/japones">práctica de japonés de A1 a B1</a> está abierta.</p>
-<p>Cuando quieras corrección de verdad, la primera clase de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20japon%C3%A9s%20desde%20cero%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
+<p>Cuando quieras corrección de verdad, la primera clase de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20japon%C3%A9s%20desde%20cero%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
     `,
   },
   // ── Article 135 ────────────────────────────────────────────────────────────
@@ -10188,7 +10188,7 @@ And explain whether you would recommend it to others.</em>
 </ol>
 
 <h2>Preparación JLPT en WeLearn</h2>
-<p>Preparamos japonés de A1 a B1 con plan personalizado y orientación al JLPT, presencial en Bucaramanga u online a cualquier ciudad, trabajando también la producción oral que el examen no mide pero la vida sí. La primera sesión de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20JLPT%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
+<p>Preparamos japonés de A1 a B1 con plan personalizado y orientación al JLPT, presencial en Bucaramanga u online a cualquier ciudad, trabajando también la producción oral que el examen no mide pero la vida sí. La primera sesión de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20JLPT%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
 <p>Lee también: <a href="/blog/becas-mext-estudiar-en-japon-nivel-japones">Becas MEXT: estudiar en Japón y el nivel de japonés que piden</a> y <a href="/blog/aprender-japones-desde-cero-hiragana-katakana">Aprender japonés desde cero</a>.</p>
     `,
   },
@@ -10245,7 +10245,7 @@ And explain whether you would recommend it to others.</em>
 <p>La MEXT no es la única vía. Hay universidades japonesas con becas propias para extranjeros, programas de intercambio entre universidades colombianas y japonesas, y fundaciones privadas japonesas con convocatorias abiertas. En casi todas, el nivel de japonés es un factor de peso en la selección aunque el programa se dicte en inglés.</p>
 
 <h2>Prepara el japonés mientras preparas la postulación</h2>
-<p>En WeLearn damos clases de japonés 1:1 orientadas a este objetivo, presenciales en Bucaramanga u online a cualquier ciudad, con plataforma de práctica incluida. La primera sesión es un diagnóstico gratuito: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20postular%20a%20una%20beca%20para%20Jap%C3%B3n%20y%20necesito%20japon%C3%A9s." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
+<p>En WeLearn damos clases de japonés 1:1 orientadas a este objetivo, presenciales en Bucaramanga u online a cualquier ciudad, con plataforma de práctica incluida. La primera sesión es un diagnóstico de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20postular%20a%20una%20beca%20para%20Jap%C3%B3n%20y%20necesito%20japon%C3%A9s." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
 <p>Lee también: <a href="/blog/jlpt-niveles-n5-a-n1-guia-colombia">JLPT: guía de los niveles N5 a N1</a> y <a href="/blog/cuanto-cuesta-aprender-japones-colombia-2026">¿Cuánto cuesta aprender japonés en Colombia en 2026?</a>.</p>
     `,
   },

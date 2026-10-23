@@ -7,13 +7,13 @@ import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de portugués en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de portugués en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
 const WA_CELPE   = encodeURIComponent('Hola, quiero prepararme para el examen Celpe-Bras con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
   title: 'Clases de portugués en Bucaramanga y online — Celpe-Bras',
   description:
-    'Academia de portugués en Bucaramanga y online. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Diagnóstico gratis.',
+    'Academia de portugués en Bucaramanga y online. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Diagnóstico de pago.',
   keywords: [
     'clases de portugués Bucaramanga',
     'curso de portugués Bucaramanga',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Clases de Portugués en Bucaramanga y Online — Celpe-Bras',
-    description: 'Presencial en Bucaramanga y online en toda Colombia. Preparación del Celpe-Bras, que se presenta aquí mismo en la ciudad. Diagnóstico gratis.',
+    description: 'Presencial en Bucaramanga y online en toda Colombia. Preparación del Celpe-Bras, que se presenta aquí mismo en la ciudad. Diagnóstico de pago.',
     url: 'https://www.idiomaswl.com/clases-de-portugues',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-portugues' },
@@ -83,12 +83,12 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Dónde puedo estudiar portugués en Bucaramanga?',
-      acceptedAnswer: { '@type': 'Answer', text: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor, Bucaramanga. Hay clases presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta, y online para el resto del país. La preparación apunta al Celpe-Bras, que se presenta en la propia ciudad. El diagnóstico inicial es gratuito y el contacto es por WhatsApp al 300 500 4253.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor, Bucaramanga. Hay clases presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta, y online para el resto del país. La preparación apunta al Celpe-Bras, que se presenta en la propia ciudad. El diagnóstico inicial es de pago y el contacto es por WhatsApp al 300 500 4253.' },
     },
     {
       '@type': 'Question',
       name: '¿Cuánto cuestan las clases de portugués en Bucaramanga?',
-      acceptedAnswer: { '@type': 'Answer', text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es de pago y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.' },
     },
     {
       '@type': 'Question',
@@ -122,7 +122,6 @@ const jsonLd = {
       description: 'Aprende portugués brasileño desde cero hasta Celpe-Bras con tutor especializado.',
       provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       hasCourseInstance: courseInstances('Portugués', 'pt-BR'),
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'COP', description: 'Clase de diagnóstico gratis', availability: 'https://schema.org/InStock' },
     },
     localBusinessNode(
       'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Portugués brasileño con preparación del Celpe-Bras, además de inglés, francés, italiano, coreano y alemán.'
@@ -145,7 +144,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (Celpe-Bras, estudios en Brasil, fluidez) y diseñamos tu plan personalizado.' },
+  { icon: '🎯', title: 'Diagnóstico de pago', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (Celpe-Bras, estudios en Brasil, fluidez) y diseñamos tu plan personalizado.' },
   { icon: '🇧🇷', title: 'Portugués brasileño real', desc: 'No el portugués de los libros. El portugués que se habla en São Paulo, Río y las universidades brasileñas.' },
   { icon: '🗣️', title: 'Producción oral desde el inicio', desc: 'El Celpe-Bras evalúa principalmente producción oral. Practicamos hablar desde la primera semana.' },
   { icon: '✅', title: 'Preparación Celpe-Bras', desc: 'Tarefas escritas y orales al estilo exacto del Celpe-Bras. Retroalimentación detallada por tarea.' },
@@ -184,8 +183,8 @@ const FAQS = [
   { q: '¿Cómo es el examen Celpe-Bras y por qué no tiene opción múltiple?', a: 'Porque evalúa uso real del idioma, no memorización. Consta de tareas escritas a partir de videos y textos auténticos, más una interacción oral con evaluadores. Debes lograr algo concreto con el portugués: responder, argumentar, resumir o persuadir.' },
   { q: '¿Qué niveles tiene el Celpe-Bras y puedo elegir cuál presentar?', a: 'No se elige. Presentas un único examen y el resultado te asigna el nivel: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Y ojo con esto: cuando el desempeño escrito y el oral no coinciden, prevalece el menor de los dos. Si no alcanzas el mínimo, no hay certificado.' },
   { q: '¿Necesito el Celpe-Bras para revalidar mi título profesional en Brasil?', a: 'Es el certificado de proficiencia que aparece habitualmente en los procesos de revalidación y en las admisiones de posgrado de universidades públicas brasileñas. Los requisitos exactos dependen de la universidad y de la profesión, así que confírmalos con la institución donde vas a hacer el trámite.' },
-  { q: '¿Dónde puedo estudiar portugués en Bucaramanga?', a: 'En Idiomas WeLearn, Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Y como el Celpe-Bras se presenta aquí mismo, puedes prepararte y certificarte sin viajar. El diagnóstico es gratis: escríbenos al 300 500 4253.' },
-  { q: '¿Cuánto cuestan las clases de portugués en Bucaramanga?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.' },
+  { q: '¿Dónde puedo estudiar portugués en Bucaramanga?', a: 'En Idiomas WeLearn, Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Y como el Celpe-Bras se presenta aquí mismo, puedes prepararte y certificarte sin viajar. El diagnóstico es de pago: escríbenos al 300 500 4253.' },
+  { q: '¿Cuánto cuestan las clases de portugués en Bucaramanga?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.' },
   { q: '¿Debo aprender portugués de Brasil o de Portugal?', a: 'Depende de tu objetivo. Si vas a estudiar, trabajar o revalidar título en Brasil, el brasileño — y es el que evalúa el Celpe-Bras. Si buscas nacionalidad o residencia en Portugal, el europeo, con exámenes del sistema CAPLE. WeLearn enseña portugués brasileño.' },
 ];
 
@@ -229,7 +228,7 @@ export default function ClasesDePortuguesPage() {
               </p>
               <div className={s.heroCtas}>
                 <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                  <WaIcon /> Clase de diagnóstico gratis
+                  <WaIcon /> Clase de diagnóstico de pago
                 </a>
                 <Link href="/examenes/celpe-bras" className={s.ghostBtn}>Ver simulacros Celpe-Bras →</Link>
               </div>
@@ -260,7 +259,7 @@ export default function ClasesDePortuguesPage() {
         <div className={s.proofStrip}>
           <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Celpe-Bras Intermediário a Superior</strong></span>
           <span className={s.proofDivider} />
@@ -492,11 +491,11 @@ export default function ClasesDePortuguesPage() {
         <section className={s.ctaSection}>
           <div className={s.ctaBox}>
             <p className={s.ctaPhrase}>Vamos lá!</p>
-            <h2 className={s.ctaTitle}>Tu diagnóstico de portugués<br /><span className={s.accent}>es gratis.</span></h2>
+            <h2 className={s.ctaTitle}>Tu diagnóstico de portugués<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al Celpe-Bras que necesitas.</p>
             <div className={s.ctaBtns}>
               <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                <WaIcon /> Agendar diagnóstico gratis
+                <WaIcon /> Agendar diagnóstico de pago
               </a>
             </div>
           </div>

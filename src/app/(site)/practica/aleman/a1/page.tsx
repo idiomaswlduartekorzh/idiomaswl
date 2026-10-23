@@ -43,7 +43,7 @@ export default function AlemanA1Page() {
       <PracticaWABanner
         idioma="alemán"
         color="#dd0000"
-        msg="Hola, estoy practicando alemán en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+        msg="Hola, estoy practicando alemán en WeLearn y me gustaría conocer el precio y agendar una clase de diagnóstico con tutor."
       />
     </>
   );

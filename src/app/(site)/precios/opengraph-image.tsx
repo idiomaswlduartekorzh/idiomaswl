@@ -42,7 +42,7 @@ export default function Image() {
         {/* Plan cards */}
         <div style={{ display: 'flex', gap: 14, marginBottom: 28 }}>
           {[
-            { name: 'Clase de prueba', tag: 'GRATIS', desc: 'Diagnóstico + 1 clase', highlight: false },
+            { name: 'Diagnóstico con tutor', tag: 'PAGO', desc: 'Consulta el precio', highlight: false },
             { name: 'Plan Intensivo',  tag: 'POPULAR', desc: 'Paquetes por horas',   highlight: true  },
             { name: 'Plan IELTS',      tag: 'EXAMEN',  desc: 'Preparación guiada',  highlight: false },
           ].map(plan => (
