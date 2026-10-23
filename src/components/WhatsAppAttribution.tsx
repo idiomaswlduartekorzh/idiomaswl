@@ -89,6 +89,7 @@ export default function WhatsAppAttribution() {
         window.dataLayer = window.dataLayer ?? [];
         window.dataLayer.push({ event: event.type === 'contextmenu' ? 'whatsapp_context_menu' : 'click_whatsapp',
           source_page: pathname, landing_page: source.landing_page, contact_ref: item.intent.reference,
+          cta_location: anchor.dataset.waCta ?? (anchor.classList.contains('wl-wa-float') ? 'floating_button' : 'inline_cta'),
           utm_source: source.utm_source, utm_medium: source.utm_medium, utm_campaign: source.utm_campaign });
         if (isIcfesPath(pathname)) {
           trackIcfesEvent('icfes_whatsapp_click', {

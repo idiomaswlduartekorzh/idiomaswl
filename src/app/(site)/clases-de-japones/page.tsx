@@ -7,7 +7,7 @@ import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/com
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de japonés en WeLearn y quiero conocer el precio y agendar un diagnóstico con tutor.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de japonés en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_JLPT    = encodeURIComponent('Hola, quiero prepararme para el JLPT con WeLearn. ¿Cómo funciona el plan?');
 
 export const metadata: Metadata = {
@@ -183,14 +183,15 @@ export default function ClasesDeJaponesPage() {
                 <strong> Presencial en Bucaramanga u online desde cualquier ciudad.</strong>
               </p>
               <div className={s.heroCtas}>
-                <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+                <a data-wa-cta="japones-hero" href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
                   <WaIcon />
-                  Diagnóstico de pago
+                  Consultar ruta y precio
                 </a>
                 <Link href="/practica/japones" className={s.ghostBtn}>
                   Practicar japonés gratis →
                 </Link>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>
@@ -231,8 +232,8 @@ export default function ClasesDeJaponesPage() {
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#BC002D"
-          title="Dos políglotas te enseñan japonés. No un curso grabado."
-          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, incluidos los que se consideran difíciles."
+          title="Una ruta de japonés creada por dos políglotas."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
           davidLine="Habla ocho idiomas. Llegó al japonés casi al final del recorrido, con el método ya probado en lenguas lejanas al español, y por eso sabe qué atajos sirven y cuáles hacen perder meses."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del JLPT corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Rutas de certificación', 'Diseño curricular']}
@@ -473,11 +474,11 @@ export default function ClasesDeJaponesPage() {
           <div className={s.wrap}>
             <h2 className={s.ctaTitle}>Tu diagnóstico de japonés<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>
-              Media hora para ver dónde estás, a dónde quieres llegar y cuánto te va a tomar de
-              verdad. Sin compromiso.
+              Cuéntanos tu objetivo por chat sin costo. La sesión con tutor es paga;
+              te explicamos la ruta y el precio antes de agendar.
             </p>
-            <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-              <WaIcon /> Agendar diagnóstico de pago
+            <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="japones-final" target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+              <WaIcon /> Consultar ruta y precio
             </a>
           </div>
         </section>

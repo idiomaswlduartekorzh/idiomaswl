@@ -12,7 +12,7 @@ const WA = '573005004253';
 const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
-const WA_GENERAL = wa('Hola, vi su página de clases de inglés y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL = wa('Hola, vi su página de clases de inglés. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_IELTS   = wa('Hola, necesito preparación para el IELTS. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
 const WA_TOEFL   = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
 const WA_ICFES   = wa('Hola, necesito mejorar mi inglés para el ICFES Saber 11. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
@@ -49,9 +49,9 @@ const FAQS = [
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
   { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
-  { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
+  { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'El tiempo depende de tu nivel inicial, la puntuación objetivo y las horas de práctica. Un tutor puede evaluar tu punto de partida y proponer una ruta; la sesión con tutor es paga.' },
   { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
-  { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Con precio informado antes de agendar.' },
+  { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión paga con tutor para revisar tu nivel, objetivo y plan. Te informamos el precio y la modalidad antes de agendar.' },
   { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
   { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. En Bucaramanga y su área metropolitana puedes venir presencialmente; desde cualquier otra ciudad la clase es online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
 ];
@@ -74,7 +74,7 @@ const jsonLd = {
     {
       '@type': 'Course',
       name: 'Clases de Inglés — Preparación IELTS, TOEFL e ICFES',
-      description: 'Clases de inglés online con preparación para IELTS, TOEFL e ICFES. Método WeLearn de 17 pasos.',
+      description: 'Clases de inglés online con preparación para IELTS, TOEFL e ICFES. Método WeLearn para hispanohablantes.',
       provider: {
         '@type': 'EducationalOrganization',
         name: 'Idiomas WeLearn',
@@ -149,12 +149,12 @@ const INTENTS = [
 const PILARES = [
   {
     num: '01',
-    title: 'Método de 17 pasos',
+    title: 'Método propio para hispanohablantes',
     desc: 'Cada clase sigue un ciclo estructurado: vocabulario, gramática, escucha, producción y revisión espaciada. Nada se deja al azar ni a la improvisación.',
   },
   {
     num: '02',
-    title: 'Directora académica con doctorado',
+    title: 'Dirección académica especializada',
     desc: 'Zhanna Korzh lidera el diseño curricular y la calidad de todos los cursos. Rigor académico real, respaldado por años de experiencia en preparación de exámenes internacionales.',
   },
   {
@@ -170,7 +170,7 @@ const PRECIOS = [
     price: 'Consultar',
     cadence: '',
     desc: 'Evaluamos tu nivel actual, identificamos tu objetivo y diseñamos un plan de preparación personalizado. Sesión paga; consulta el precio antes de agendar.',
-    cta: 'Agendar por WhatsApp',
+    cta: 'Consultar ruta y precio',
     waUrl: WA_GENERAL,
     featured: false,
   },
@@ -258,15 +258,16 @@ export default function ClasesDeInglesPage() {
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '2rem', maxWidth: 440 }}>
               Aprende 1:1 con tutor asignado y un plan para tu examen, trabajo o conversación.
-              La sesión de diagnóstico con tutor es paga; consulta su precio antes de agendar.
+              La orientación inicial por chat es gratis. La sesión de diagnóstico con tutor es paga;
+              consulta su precio antes de agendar.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
-              <a href={WA_GENERAL} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+              <a href={WA_GENERAL} target="_blank" rel="noopener noreferrer" data-wa-cta="ingles-hero" className={s.waBtn}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                 </svg>
-                Clase de diagnóstico de pago
+                Consultar ruta y precio
               </a>
               <Link href="/examenes/ielts" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
                 Ver simulacro IELTS →
@@ -295,9 +296,9 @@ export default function ClasesDeInglesPage() {
       <div className={s.proofStrip}>
         <div className="wrap">
           <ul>
-            <li>✓ 500+ estudiantes preparados</li>
-            <li>✓ IELTS Band 7.0+</li>
-            <li>✓ TOEFL 100+ puntos</li>
+            <li>✓ Clases 1:1 con tutor asignado</li>
+            <li>✓ Preparación IELTS</li>
+            <li>✓ Preparación TOEFL iBT</li>
             <li>✓ Preparación ICFES Inglés</li>
             <li>✓ Bucaramanga · Todo Colombia</li>
           </ul>
@@ -307,9 +308,9 @@ export default function ClasesDeInglesPage() {
       {/* ── FUNDADORES ───────────────────────────────────────────────────── */}
       <FoundersBand
         accent="#1a4fcc"
-        title="Dos políglotas te enseñan inglés. No un curso grabado."
-        intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad — y una de ellas estudió en Inglaterra."
-        davidLine="Habla ocho idiomas. El inglés fue el primero, y prepararlo hasta nivel de examen es lo que dio origen al método de 11 pasos que usamos hoy."
+        title="Una ruta de inglés creada por dos políglotas."
+        intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+        davidLine="Habla ocho idiomas. El inglés fue el primero, y su experiencia al preparar exámenes ayudó a crear el método que usamos hoy."
         zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
         zhannaTags={['Co-fundadora · Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
       />
@@ -337,7 +338,7 @@ export default function ClasesDeInglesPage() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.25rem' }}>
                   <a href={intent.waUrl} target="_blank" rel="noopener noreferrer" className={s.waBtnSm}>
-                    Agendar diagnóstico de pago →
+                    Consultar ruta y precio →
                   </a>
                   {intent.simulacro && (
                     <Link
@@ -620,7 +621,7 @@ export default function ClasesDeInglesPage() {
           { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT, con retroalimentación.' },
           { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con el nivel estimado según la escala del examen.' },
           { href: '/herramientas/transcripcion-fonetica/ingles', title: 'Transcripción fonética', desc: 'Pega cualquier texto y léelo en alfabeto fonético, en británico o americano, con el acento tónico donde va.' },
-          { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico te ubica en el MCER antes de la primera clase.' },
+          { href: '/nivel-radar', title: 'Explora tu nivel orientativo', desc: 'La herramienta automática es gratis y te da un punto de partida antes de una sesión paga con tutor.' },
         ]}
       />
 
@@ -705,15 +706,15 @@ export default function ClasesDeInglesPage() {
             Tu clase de diagnóstico es de pago.<br />Sin compromisos.
           </h2>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', marginBottom: '2rem', lineHeight: 1.6 }}>
-            En 45 minutos evaluamos tu nivel, identificamos tu objetivo y te damos
-            el plan de preparación más eficiente para ti.
+            Cuéntanos tu objetivo por chat sin costo. La sesión con tutor es paga;
+            te explicamos la ruta y el precio antes de agendar.
           </p>
-          <a href={WA_GENERAL} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+          <a href={WA_GENERAL} data-wa-cta="ingles-final" target="_blank" rel="noopener noreferrer" className={s.waBtn}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
               <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
             </svg>
-            Agendar por WhatsApp
+            Consultar ruta y precio
           </a>
           <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
             Respuesta en menos de 2 horas · Lun–Sáb 7 am–8 pm

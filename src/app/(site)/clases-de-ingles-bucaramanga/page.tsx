@@ -10,7 +10,7 @@ const WA = '573005004253';
 const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
-const WA_GENERAL  = wa('Hola, vi su página de clases de inglés en Bucaramanga y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL  = wa('Hola, vi su página de clases de inglés en Bucaramanga. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_IELTS    = wa('Hola, necesito preparación para el IELTS en Bucaramanga. ¿Cómo funciona la clase diagnóstico?');
 const WA_TOEFL    = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cuál es el precio y cómo agendo un diagnóstico con tutor?');
 const WA_PAQUETE  = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
@@ -103,7 +103,7 @@ const FAQS_LOCAL = [
   },
   {
     q: '¿WeLearn prepara para IELTS y TOEFL desde Bucaramanga?',
-    a: 'Sí. Tenemos ruta específica para IELTS Academic, IELTS General y TOEFL iBT. Nuestros estudiantes en Bucaramanga han alcanzado Band 7.0+ en IELTS y más de 90 puntos en TOEFL.',
+    a: 'Sí. Tenemos rutas específicas para IELTS Academic, IELTS General y TOEFL iBT. La preparación depende de tu nivel inicial y del puntaje que necesitas.',
   },
   {
     q: '¿Tienen paquetes de horas con descuento?',
@@ -115,7 +115,7 @@ const FAQS_LOCAL = [
   },
   {
     q: '¿Qué diferencia a WeLearn de otras academias de inglés en Bucaramanga?',
-    a: 'Directora académica con doctorado + profesor políglota en 8 idiomas + método propio de 17 pasos. No hacemos grupos masivos — cada estudiante tiene plan individual. Somos especialistas en exámenes internacionales: IELTS, TOEFL, ICFES.',
+    a: 'Co-fundadores políglotas, dirección académica especializada, método propio y clases 1:1 con tutor asignado. Preparamos IELTS, TOEFL e ICFES con una ruta para cada objetivo.',
   },
 ];
 
@@ -168,11 +168,12 @@ export default function ClasesInglessBucaramangaPage() {
                 Atendemos Bucaramanga, Floridablanca, Girón y Piedecuesta.
               </p>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6, marginBottom: '2rem', maxWidth: 440 }}>
-                Preparación para IELTS, TOEFL e ICFES con tutor asignado y método propio de 17 pasos.
+                Preparación para IELTS, TOEFL e ICFES con tutor asignado y método propio para hispanohablantes.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <a
                   href={WA_GENERAL}
+                  data-wa-cta="ingles-bucaramanga-hero"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '1rem', padding: '0.85rem 2rem', borderRadius: 12, textDecoration: 'none' }}
@@ -181,12 +182,16 @@ export default function ClasesInglessBucaramangaPage() {
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                   </svg>
-                  Diagnóstico de pago
+                  Consultar ruta y precio
                 </a>
                 <a href={WA_PAQUETE} target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
                   Ver paquetes →
                 </a>
               </div>
+              <p style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.8rem', lineHeight: 1.5 }}>
+                La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos;
+                conoces el precio antes de agendar.
+              </p>
             </div>
 
             {/* Photo */}
@@ -213,9 +218,9 @@ export default function ClasesInglessBucaramangaPage() {
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center', listStyle: 'none', margin: 0, padding: 0, fontSize: '0.85rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
             <li>✓ Academia en Bucaramanga</li>
             <li>✓ Clases online toda Colombia</li>
-            <li>✓ IELTS Band 7.0+</li>
-            <li>✓ TOEFL 90+ puntos</li>
-            <li>✓ 500+ estudiantes preparados</li>
+            <li>✓ Preparación IELTS</li>
+            <li>✓ Preparación TOEFL iBT</li>
+            <li>✓ Clases 1:1 con tutor asignado</li>
             <li>✓ Paquetes de horas con descuento</li>
           </ul>
         </div>
@@ -225,9 +230,9 @@ export default function ClasesInglessBucaramangaPage() {
       {/* ── FUNDADORES ──────────────────────────────────────────────────── */}
       <FoundersBand
         accent="#1a4fcc"
-        title="Dos políglotas te enseñan inglés, aquí en Bucaramanga."
-        intro="No es una franquicia ni un marketplace de tutores: los fundadores siguen dando clase y diseñando el contenido."
-        davidLine="Habla ocho idiomas. El inglés fue el primero, y llevarlo hasta nivel de examen es lo que dio origen al método de once pasos que usamos hoy."
+        title="Un método de inglés creado por dos políglotas en Bucaramanga."
+        intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+        davidLine="Habla ocho idiomas. El inglés fue el primero, y su experiencia al preparar exámenes ayudó a crear el método que usamos hoy."
         zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
         zhannaTags={['Co-fundadora · Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
       />
@@ -236,7 +241,7 @@ export default function ClasesInglessBucaramangaPage() {
       <PracticeBand
         accent="#1a4fcc"
         title="Practica gratis antes de venir a la primera clase"
-        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES y el diagnóstico de nivel. Sin registro."
+        sub="Practica las cinco habilidades de A1 a B2, explora simulacros de IELTS, TOEFL e ICFES y usa Nivel Radar. El acceso y los resultados pueden requerir una cuenta o tus datos de contacto; las herramientas automáticas son gratuitas."
         cards={[
           { href: '/practica/ingles/a1/gramatica', title: 'Gramática A1 a B2', desc: 'Desde los cimientos hasta estructuras avanzadas, con corrección al instante en los cuatro niveles.' },
           { href: '/practica/ingles/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, organizadas por nivel del Marco Europeo.' },
@@ -245,7 +250,7 @@ export default function ClasesInglessBucaramangaPage() {
           { href: '/examenes/ielts', title: 'Simulacros IELTS', desc: 'Listening, Reading y Writing con formato real e informe por sección.' },
           { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT.' },
           { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con tu nivel estimado según la escala del examen.' },
-          { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'El diagnóstico te ubica en el MCER antes de que agendes la primera clase.' },
+          { href: '/nivel-radar', title: 'Explora tu nivel orientativo', desc: 'La herramienta automática es gratis y te da un punto de partida antes de agendar una sesión paga con tutor.' },
         ]}
       />
 
@@ -255,12 +260,12 @@ export default function ClasesInglessBucaramangaPage() {
           <h2 className="wlh-section-h2">No somos una app. Somos una academia de verdad.</h2>
           <p className="wlh-section-desc" style={{ maxWidth: 580 }}>
             En Bucaramanga hay varias opciones para aprender inglés — grupos masivos, plataformas online genéricas, profesores particulares sin método.
-            WeLearn es diferente: plan individual, tutor asignado y el único método en Colombia con directora académica con doctorado.
+            WeLearn combina plan individual, tutor asignado y una ruta creada por co-fundadores políglotas con dirección académica especializada.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginTop: '3rem' }}>
             {[
-              { num: '01', title: 'Método de 17 pasos', desc: 'Diseñado específicamente para hispanohablantes. Cada clase sigue un ciclo estructurado: vocabulario, gramática, escucha, producción oral y revisión. Nada improvisado.' },
-              { num: '02', title: 'Directora académica con doctorado', desc: 'Zhanna Korzh diseña el currículo y controla la calidad de todos los cursos. Rigor académico real, con años de experiencia en preparación de exámenes internacionales.' },
+              { num: '01', title: 'Método estructurado', desc: 'Diseñado específicamente para hispanohablantes. Cada clase sigue un ciclo estructurado: vocabulario, gramática, escucha, producción oral y revisión. Nada improvisado.' },
+              { num: '02', title: 'Dirección académica especializada', desc: 'Zhanna Korzh diseña el currículo y controla la calidad de todos los cursos. Rigor académico real, con años de experiencia en preparación de exámenes internacionales.' },
               { num: '03', title: 'Políglota en 8 idiomas', desc: 'David habla inglés, coreano, ruso, alemán y más. Conoce exactamente los errores que comete un hispanohablante — y cómo corregirlos más rápido.' },
             ].map(p => (
               <div key={p.num} style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
@@ -295,7 +300,7 @@ export default function ClasesInglessBucaramangaPage() {
                 </div>
                 <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.6, flexGrow: 1 }}>{item.desc}</p>
                 <a href={item.waUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '0.85rem', padding: '0.6rem 1rem', borderRadius: 10, textDecoration: 'none' }}>
-                  Agendar diagnóstico de pago →
+                  Consultar ruta y precio →
                 </a>
               </div>
             ))}
@@ -321,8 +326,8 @@ export default function ClasesInglessBucaramangaPage() {
                 name: 'Diagnóstico',
                 price: 'Consultar',
                 cadence: '',
-                desc: 'Evaluamos tu nivel, identificamos tu objetivo y te damos un plan. Sesión paga de 45 minutos; consulta el precio antes de agendar.',
-                cta: 'Agendar ahora',
+                desc: 'Evaluamos tu nivel, identificamos tu objetivo y te damos un plan. La sesión con tutor es paga; consulta el precio antes de agendar.',
+                cta: 'Consultar ruta y precio',
                 url: WA_GENERAL,
                 featured: false,
               },
@@ -340,7 +345,7 @@ export default function ClasesInglessBucaramangaPage() {
                 price: 'Consultar',
                 cadence: '/ mes',
                 desc: '2 a 4 sesiones en vivo por semana + tutor asignado + plan personalizado + evaluación mensual.',
-                cta: 'Reservar cupo',
+                cta: 'Consultar ruta y precio',
                 url: WA_GENERAL,
                 featured: false,
               },
@@ -449,7 +454,7 @@ export default function ClasesInglessBucaramangaPage() {
           <p className="wlh-section-eyebrow">06 — Practica gratis ahora</p>
           <h2 className="wlh-section-h2">¿Quieres medir tu nivel antes de empezar?</h2>
           <p className="wlh-section-desc" style={{ maxWidth: 480, margin: '0 auto 2.5rem' }}>
-            Haz un simulacro gratis de IELTS, TOEFL o ICFES. Sin registro. Sin costo.
+            Explora un simulacro de IELTS, TOEFL o ICFES sin costo. El acceso y los resultados pueden requerir una cuenta o tus datos de contacto.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/examenes/ielts" className="btn">Simulacro IELTS →</Link>
@@ -494,15 +499,15 @@ export default function ClasesInglessBucaramangaPage() {
             Tu diagnóstico es de pago.<br />Empezamos esta semana.
           </h2>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', marginBottom: '2rem', lineHeight: 1.6 }}>
-            45 minutos por videollamada. Evaluamos tu nivel, encontramos tu objetivo
-            y te damos el plan más eficiente. Sin compromisos.
+            Cuéntanos tu objetivo por chat sin costo. La sesión con tutor es paga;
+            te informamos la modalidad, la duración y el precio antes de agendar.
           </p>
-          <a href={WA_GENERAL} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '1rem', padding: '0.9rem 2.25rem', borderRadius: 12, textDecoration: 'none' }}>
+          <a href={WA_GENERAL} data-wa-cta="ingles-bucaramanga-final" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '1rem', padding: '0.9rem 2.25rem', borderRadius: 12, textDecoration: 'none' }}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
               <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
             </svg>
-            Agendar por WhatsApp
+            Consultar ruta y precio
           </a>
           <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
             Respuesta en menos de 2 horas · Lunes–Sábado 7 am–8 pm

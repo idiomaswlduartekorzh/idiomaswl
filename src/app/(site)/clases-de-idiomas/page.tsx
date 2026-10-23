@@ -7,7 +7,7 @@ import LocalBand from '@/components/hub/LocalBand';
 export const metadata: Metadata = {
   title: 'Academia de idiomas en Bucaramanga y online — 8 idiomas',
   description:
-    'Ocho idiomas y nueve certificaciones oficiales, en Bucaramanga y online para toda Colombia: IELTS, TOEFL, Goethe, DELF, CILS y TOPIK. Diagnóstico de pago.',
+    'Clases 1:1 en Bucaramanga y online para Colombia. Tutores asignados, ruta por objetivo y preparación IELTS, TOEFL, Goethe, DELF, CILS y TOPIK.',
   keywords: [
     'academia de idiomas Bucaramanga',
     'clases de idiomas Bucaramanga',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Academia de Idiomas en Bucaramanga y Online',
-    description: 'Inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Presencial en Bucaramanga y online en toda Colombia. Diagnóstico de pago.',
+    description: 'Ocho idiomas con tutor asignado, presencial en Bucaramanga u online en Colombia. Conoce la ruta y el precio antes de agendar.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
   },
@@ -52,7 +52,7 @@ const LANGUAGES = [
     native: '한국어',
     color: '#c8202e',
     bgColor: 'rgba(200,32,46,0.08)',
-    description: 'El idioma del K-pop, los dramas y las empresas tecnológicas. Método visual de 17 pasos diseñado para hispanohablantes. Preparamos para TOPIK I y II.',
+    description: 'El idioma del K-pop, los dramas y las empresas tecnológicas. Método visual diseñado para hispanohablantes. Preparamos para TOPIK I y II.',
     exams: ['TOPIK I', 'TOPIK II'],
     href: '/clases-de-coreano',
     waMsg: 'Hola, estoy interesado en clases de coreano con WeLearn. ¿Cómo funciona?',
@@ -226,12 +226,12 @@ export default function ClasesDeIdiomasPage() {
             </p>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.25rem', letterSpacing: '-0.02em' }}>
               Ocho idiomas.<br />
-              <span style={{ color: '#60a5fa' }}>Dos políglotas que los enseñan.</span>
+              <span style={{ color: '#60a5fa' }}>Un método creado por dos políglotas.</span>
             </h1>
             <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.75)', maxWidth: 620, margin: '0 auto', lineHeight: 1.6 }}>
-              No somos una plataforma con lecciones grabadas. Somos dos personas que aprendieron
-              idiomas de verdad y montaron una academia en Bucaramanga para enseñarlos, presencial
-              y online.
+              José David y Zhanna crearon esta academia en Bucaramanga. Ellos diseñan el método;
+              un tutor asignado adapta las clases 1:1 a tu idioma, nivel y objetivo, presencial
+              u online.
             </p>
           </div>
 
@@ -270,17 +270,22 @@ export default function ClasesDeIdiomasPage() {
 
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero saber qué idioma me recomienda WeLearn según mi objetivo.')}`}
+              href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio de las clases en WeLearn.')}`}
               target="_blank"
               rel="noopener noreferrer"
+              data-wa-cta="hub-hero"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#25d366', color: '#fff', fontWeight: 700, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem' }}
             >
-              Diagnóstico de pago por WhatsApp →
+              Consultar ruta y precio por WhatsApp →
             </a>
             <Link href="/quienes-somos" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem', border: '1px solid rgba(255,255,255,0.15)' }}>
               Conócenos
             </Link>
           </div>
+          <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.75)', fontSize: '0.86rem', lineHeight: 1.5, margin: '1rem auto 0', maxWidth: 680 }}>
+            La orientación inicial por chat no tiene costo. La clase y el diagnóstico con tutor son pagos;
+            conoces el precio antes de agendar. <Link href="/nivel-radar" style={{ color: '#93c5fd' }}>Nivel Radar es automático, gratis y orientativo</Link>.
+          </p>
         </div>
       </section>
 
@@ -291,7 +296,7 @@ export default function ClasesDeIdiomasPage() {
             { n: '8', label: 'Idiomas disponibles' },
             { n: '9', label: 'Certificaciones oficiales' },
             { n: 'Sotomayor', label: 'Sede en Bucaramanga' },
-            { n: '1:1', label: 'Diagnóstico con tutor' },
+            { n: '1:1', label: 'Clases con tutor asignado' },
           ].map(s => (
             <div key={s.label} style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--ink)', lineHeight: 1 }}>{s.n}</p>
@@ -438,7 +443,7 @@ export default function ClasesDeIdiomasPage() {
               { icon: '🎯', title: 'Tutores especializados por idioma', desc: 'Cada tutor conoce el examen al que te preparas, el nivel que tienes y el objetivo que persigues. No son instructores genéricos.' },
               { icon: '📋', title: 'Plan personalizado desde el día 1', desc: 'El diagnóstico inicial define exactamente qué necesitas. El plan cambia si tu ritmo o tu objetivo cambia.' },
               { icon: '🗣️', title: 'Clases 1:1, no grupos', desc: 'Cada minuto de clase es para ti. Sin esperar turno, sin ritmo de grupo que no se adapta, sin sílabo rígido.' },
-              { icon: '✅', title: 'Diagnóstico de pago', desc: 'Tu primera sesión de diagnóstico tiene costo. Conoces el tutor, el método y el plan antes de comprometerte.' },
+              { icon: '✅', title: 'Sesión individual con tutor', desc: 'La clase y el diagnóstico con tutor tienen costo. Consulta el precio antes de agendar; la orientación inicial por chat es gratuita.' },
             ].map(f => (
               <div key={f.title} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1.4rem' }}>
                 <span style={{ fontSize: '1.75rem', display: 'block', marginBottom: '0.75rem' }}>{f.icon}</span>
@@ -505,20 +510,21 @@ export default function ClasesDeIdiomasPage() {
       <section style={{ padding: '4.5rem 1.25rem', textAlign: 'center', background: 'linear-gradient(135deg, #050a14 0%, #0b1230 100%)' }}>
         <div style={{ maxWidth: 580, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, color: '#fff', marginBottom: '0.75rem', lineHeight: 1.2 }}>
-            Tu diagnóstico es de pago.
+            Cuéntanos qué idioma quieres aprender.
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
-            Agenda tu clase de diagnóstico de pago. En 60 minutos sabrás tu nivel real,
-            qué necesitas y cuánto tiempo te toma alcanzar tu objetivo.
+            Te explicamos la ruta, la modalidad, quién te acompaña y el precio antes de agendar.
+            La clase y el diagnóstico con tutor son pagos; puedes empezar con una consulta por chat.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero conocer el precio y agendar la primera clase de diagnóstico con tutor en WeLearn.')}`}
+              href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio de las clases en WeLearn.')}`}
               target="_blank"
               rel="noopener noreferrer"
+              data-wa-cta="hub-final"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#25d366', color: '#fff', fontWeight: 700, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem' }}
             >
-              Agendar diagnóstico de pago →
+              Consultar ruta y precio →
             </a>
             <Link href="/practica" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem', border: '1px solid rgba(255,255,255,0.15)' }}>
               Practicar gratis
