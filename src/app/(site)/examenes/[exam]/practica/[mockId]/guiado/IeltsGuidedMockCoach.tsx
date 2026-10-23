@@ -47,6 +47,40 @@ function formatTimestamp(seconds: number) {
   return `${Math.floor(safeSeconds / 60)}:${String(safeSeconds % 60).padStart(2, '0')}`;
 }
 
+function groupConsecutiveItemsByPrompt(items: readonly IeltsGuidedObjectiveItem[]) {
+  return items.reduce<Array<{ prompt: string; items: IeltsGuidedObjectiveItem[] }>>((groups, item) => {
+    const previous = groups.at(-1);
+    if (previous?.prompt === item.prompt) {
+      previous.items.push(item);
+      return groups;
+    }
+    groups.push({ prompt: item.prompt, items: [item] });
+    return groups;
+  }, []);
+}
+
+function questionRangeLabel(items: readonly IeltsGuidedObjectiveItem[]) {
+  const first = items[0]?.number;
+  const last = items.at(-1)?.number;
+  return first === last ? `Pregunta ${first}` : `Preguntas ${first}–${last}`;
+}
+
+function readingEvidenceParts(item: IeltsGuidedObjectiveItem) {
+  const excerpt = item.evidence.focus;
+  if (item.kind !== 'fill') return { before: '', focus: excerpt, after: '' };
+  const normalizedExcerpt = excerpt.toLocaleLowerCase('en');
+  const literalAnswer = [...item.accepted]
+    .sort((left, right) => right.length - left.length)
+    .find(candidate => normalizedExcerpt.includes(candidate));
+  if (!literalAnswer) return { before: '', focus: excerpt, after: '' };
+  const start = normalizedExcerpt.indexOf(literalAnswer);
+  return {
+    before: excerpt.slice(0, start),
+    focus: excerpt.slice(start, start + literalAnswer.length),
+    after: excerpt.slice(start + literalAnswer.length),
+  };
+}
+
 function UnitPicker({ units, activeIndex, onChange }: {
   units: readonly IeltsGuidedUnit[];
   activeIndex: number;
@@ -181,24 +215,15 @@ function PracticeAudio({ unit }: { unit: IeltsGuidedUnit }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const segments = unit.practiceSegments ?? [];
-  const [segmentIndex, setSegmentIndex] = useState(0);
-  const segment = segments[segmentIndex];
-  const [position, setPosition] = useState(segment?.startSeconds ?? 0);
-  if (!unit.audioUrl || !segment) return null;
+  const windowStart = segments[0]?.startSeconds;
+  const windowEnd = segments.at(-1)?.endSeconds;
+  const [position, setPosition] = useState(windowStart ?? 0);
+  if (!unit.audioUrl || windowStart === undefined || windowEnd === undefined) return null;
 
   const seek = (nextPosition: number) => {
-    const bounded = Math.min(segment.endSeconds, Math.max(segment.startSeconds, nextPosition));
+    const bounded = Math.min(windowEnd, Math.max(windowStart, nextPosition));
     if (audioRef.current) audioRef.current.currentTime = bounded;
     setPosition(bounded);
-  };
-
-  const chooseSegment = (index: number) => {
-    const next = segments[index];
-    if (!next) return;
-    audioRef.current?.pause();
-    setSegmentIndex(index);
-    if (audioRef.current) audioRef.current.currentTime = next.startSeconds;
-    setPosition(next.startSeconds);
   };
 
   const toggle = async () => {
@@ -208,7 +233,7 @@ function PracticeAudio({ unit }: { unit: IeltsGuidedUnit }) {
       audio.pause();
       return;
     }
-    if (audio.currentTime < segment.startSeconds || audio.currentTime >= segment.endSeconds - 0.08) seek(segment.startSeconds);
+    if (audio.currentTime < windowStart || audio.currentTime >= windowEnd - 0.08) seek(windowStart);
     try {
       await audio.play();
     } catch {
@@ -222,15 +247,15 @@ function PracticeAudio({ unit }: { unit: IeltsGuidedUnit }) {
         ref={audioRef}
         src={unit.audioUrl}
         preload="metadata"
-        onLoadedMetadata={() => seek(segment.startSeconds)}
+        onLoadedMetadata={() => seek(windowStart)}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         onTimeUpdate={event => {
           const current = event.currentTarget.currentTime;
           setPosition(current);
-          if (current >= segment.endSeconds) {
+          if (current >= windowEnd) {
             event.currentTarget.pause();
-            seek(segment.endSeconds);
+            seek(windowEnd);
           }
         }}
       />
@@ -239,28 +264,19 @@ function PracticeAudio({ unit }: { unit: IeltsGuidedUnit }) {
       </button>
       <div className={styles.fullPlayerBody}>
         <div className={styles.fullPlayerHeading}>
-          <span><Volume2 size={15} /> Fragmento verificado {segmentIndex + 1}/{segments.length}</span>
-          <strong>{formatTimestamp(position)} / {formatTimestamp(segment.endSeconds)}</strong>
+          <span><Volume2 size={15} /> Audio del bloque {unit.part}.{unit.segment}</span>
+          <strong>{formatTimestamp(position - windowStart)} / {formatTimestamp(windowEnd - windowStart)}</strong>
         </div>
-        {segments.length > 1 && (
-          <div className={styles.segmentPicker} aria-label="Fragmentos verificados del bloque">
-            {segments.map((current, index) => (
-              <button key={`${current.startSeconds}-${current.endSeconds}`} type="button" aria-pressed={index === segmentIndex} onClick={() => chooseSegment(index)}>
-                {index + 1} · P{current.questionNumbers.join('/')}
-              </button>
-            ))}
-          </div>
-        )}
         <input
-          aria-label="Posición dentro del fragmento verificado"
+          aria-label={`Posición dentro del audio del bloque ${unit.part}.${unit.segment}`}
           type="range"
-          min={segment.startSeconds}
-          max={segment.endSeconds}
+          min={windowStart}
+          max={windowEnd}
           step="0.1"
-          value={Math.min(segment.endSeconds, Math.max(segment.startSeconds, position))}
+          value={Math.min(windowEnd, Math.max(windowStart, position))}
           onChange={event => seek(Number(event.target.value))}
         />
-        <small>Estos fragmentos breves provienen de cortes ya aprobados; no se presentan como límites oficiales de la parte.</small>
+        <small>Escucha la grabación continua y responde sin pistas. Los recortes exactos aparecen únicamente después de verificar.</small>
       </div>
     </div>
   );
@@ -275,6 +291,7 @@ function SourceEvidence({ unit, item }: { unit: IeltsGuidedUnit; item: IeltsGuid
       </div>
     );
   }
+  const evidence = unit.skill === 'reading' ? readingEvidenceParts(item) : item.evidence;
   return (
     <div className={unit.skill === 'reading' ? styles.readingEvidence : styles.evidenceBlock}>
       <div className={styles.evidenceHeading}>
@@ -282,7 +299,7 @@ function SourceEvidence({ unit, item }: { unit: IeltsGuidedUnit; item: IeltsGuid
         <small>Evidencia aprobada y vinculada a esta pregunta</small>
       </div>
       {unit.skill === 'listening' && <EvidenceClip unit={unit} item={item} />}
-      <p>{item.evidence.before}<mark>{item.evidence.focus}</mark>{item.evidence.after}</p>
+      <p>{evidence.before}<mark>{evidence.focus}</mark>{evidence.after}</p>
     </div>
   );
 }
@@ -412,6 +429,7 @@ export default function IeltsGuidedMockCoach({ data }: { data: IeltsGuidedMockDa
     const setItemIndex = isListening ? setListeningItemIndex : setReadingItemIndex;
     const setMode = isListening ? setListeningMode : setReadingMode;
     const label = isListening ? 'Listening' : 'Reading';
+    const readingGroups = isListening ? [] : groupConsecutiveItemsByPrompt(unit.items);
 
     const changeUnit = (index: number) => {
       setUnitIndex(index);
@@ -436,7 +454,7 @@ export default function IeltsGuidedMockCoach({ data }: { data: IeltsGuidedMockDa
       <>
         <div className={styles.lessonHeader}>
           <div>
-            <span className={styles.lessonTag}>{label} · Parte {unit.part} · Bloque {unit.segment}</span>
+            <span className={styles.lessonTag}>{label} · Parte {unit.part} · Bloque {unit.segment} · Fase {mode === 'practice' ? '1' : '2'} de 2</span>
             <h2>{mode === 'practice' ? (isListening ? 'Escucha primero. Corrige después.' : 'Lee y responde. La evidencia viene después.') : 'Corrige una respuesta a la vez.'}</h2>
             <p>{mode === 'practice' ? unit.instructions : 'Compara tu decisión con la clave y vuelve a la frase que sostiene la respuesta.'}</p>
           </div>
@@ -461,15 +479,48 @@ export default function IeltsGuidedMockCoach({ data }: { data: IeltsGuidedMockDa
                   </div>
                 ))}
               </div>
-              <div className={styles.submitSection}><div><ClipboardCheck size={20} /><p><strong>¿Terminaste este bloque?</strong><span>La evidencia aparece después de entregar.</span></p></div><button type="button" className={styles.primaryButton} disabled={!unitReady(unit)} onClick={() => { setItemIndex(0); setMode('review'); markReviewed(unit.items[0]); }}>Entregar y corregir <ArrowRight size={16} /></button></div>
+              <div className={styles.submitSection}><div><ClipboardCheck size={20} /><p><strong>¿Terminaste este bloque?</strong><span>La clave y el audio exacto aparecen después de verificar.</span></p></div><button type="button" className={styles.primaryButton} disabled={!unitReady(unit)} onClick={() => { setItemIndex(0); setMode('review'); markReviewed(unit.items[0]); }}>Verificar respuestas <ArrowRight size={16} /></button></div>
             </div>
           ) : (
             <div className={styles.readingPractice}>
               <article className={styles.passagePanel}><div className={styles.passageTopbar}><span>Reading Passage {unit.part - 4}</span><small>Texto fuente completo</small></div><h3>{unit.title.replace(/^Reading\s*[—-]\s*/i, '')}</h3>{unit.visuals.length > 0 && <div className={styles.sourceVisuals}>{unit.visuals.map(visual => <figure key={visual.url}><Image src={visual.url} alt={visual.alt} width={1100} height={700} sizes="(max-width: 900px) 100vw, 52vw" unoptimized /></figure>)}</div>}<div className={styles.passageCopy}>{unit.sourceText.split('\n\n').map((paragraph, index) => <p key={index}><span aria-hidden="true">{String.fromCharCode(65 + index)}</span>{paragraph}</p>)}</div></article>
               <aside className={styles.readingSheet}>
-                <div className={styles.readingSheetHeader}><span>Hoja de respuestas</span><strong>{unit.items.filter(current => normalizeIeltsGuidedAnswer(answers[current.id] ?? '')).length} de {unit.items.length} contestadas</strong><small>Parte {unit.part - 4} · bloque {unit.segment}</small></div>
-                {unit.items.map(current => <div key={current.id} className={styles.readingQuestionCompact}><div><span>{current.number}</span><p>{current.prompt}</p><strong>{current.frame}</strong></div><AnswerControl item={current} value={answers[current.id] ?? ''} onChange={value => setAnswer(current, value)} /></div>)}
-                <div className={styles.readingSubmit}><p><strong>Entrega cuando termines.</strong><span>Después aparecerá la evidencia pregunta por pregunta.</span></p><button type="button" className={styles.primaryButton} disabled={!unitReady(unit)} onClick={() => { setItemIndex(0); setMode('review'); markReviewed(unit.items[0]); }}>Entregar y corregir <ArrowRight size={16} /></button></div>
+                <div className={styles.readingSheetHeader}><div><span>Hoja de respuestas</span><strong>{unit.items.filter(current => normalizeIeltsGuidedAnswer(answers[current.id] ?? '')).length} de {unit.items.length}</strong></div><small>Passage {unit.part - 4} · bloque {unit.segment}</small></div>
+                <div className={styles.readingTaskList}>
+                  {readingGroups.map(group => {
+                    const promptLines = group.prompt.split('\n').map(line => line.trim()).filter(Boolean);
+                    const showPromptInsideQuestion = group.items.length === 1 && promptLines.length === 1;
+                    return (
+                      <section key={`${group.items[0].id}-group`} className={styles.readingTaskGroup}>
+                        {!showPromptInsideQuestion && (
+                          <header className={styles.readingTaskHeader}>
+                            <span>{questionRangeLabel(group.items)}</span>
+                            <h3>{promptLines[0]}</h3>
+                            {promptLines.slice(1).map(line => <p key={line}>{line}</p>)}
+                          </header>
+                        )}
+                        <div className={styles.readingTaskQuestions}>
+                          {group.items.map(current => {
+                            const genericFrame = /^Choose the correct answer\.?$/i.test(current.frame);
+                            return (
+                              <article key={current.id} className={styles.readingQuestionCompact}>
+                                <div className={styles.readingQuestionStem}>
+                                  <span>{current.number}</span>
+                                  <div>
+                                    {showPromptInsideQuestion && <p>{current.prompt}</p>}
+                                    {!genericFrame && <strong>{current.frame}</strong>}
+                                  </div>
+                                </div>
+                                <AnswerControl item={current} value={answers[current.id] ?? ''} onChange={value => setAnswer(current, value)} />
+                              </article>
+                            );
+                          })}
+                        </div>
+                      </section>
+                    );
+                  })}
+                </div>
+                <div className={styles.readingSubmit}><p><strong>¿Listo para comprobar?</strong><span>La frase exacta del pasaje se subraya después, respuesta por respuesta.</span></p><button type="button" className={styles.primaryButton} disabled={!unitReady(unit)} onClick={() => { setItemIndex(0); setMode('review'); markReviewed(unit.items[0]); }}>Verificar respuestas <ArrowRight size={16} /></button></div>
               </aside>
             </div>
           )

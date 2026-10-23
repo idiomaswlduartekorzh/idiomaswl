@@ -237,3 +237,27 @@ test('unreleased IELTS guides stay out of indexing and behind the exam access bo
   assert.match(route, /lockedFallback=\{<IeltsGuidedLockedPreview/);
   assert.match(coach, /id="guided-workspace" data-exam-start="true"/);
 });
+
+test('guided practice hides answer-level evidence until the learner verifies the block', async () => {
+  const coach = await readFile(new URL('../src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/IeltsGuidedMockCoach.tsx', import.meta.url), 'utf8');
+
+  assert.match(coach, /Audio del bloque \{unit\.part\}\.\{unit\.segment\}/);
+  assert.match(coach, /windowStart = segments\[0\]\?\.startSeconds/);
+  assert.match(coach, /windowEnd = segments\.at\(-1\)\?\.endSeconds/);
+  assert.doesNotMatch(coach, /Fragmento verificado/);
+  assert.doesNotMatch(coach, /questionNumbers\.join/);
+  assert.match(coach, /Los recortes exactos aparecen únicamente después de verificar/);
+  assert.match(coach, /<EvidenceClip unit=\{unit\} item=\{item\} \/>/);
+  assert.match(coach, />Verificar respuestas <ArrowRight/);
+});
+
+test('guided Reading groups repeated task instructions instead of repeating them per answer', async () => {
+  const coach = await readFile(new URL('../src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/IeltsGuidedMockCoach.tsx', import.meta.url), 'utf8');
+
+  assert.match(coach, /groupConsecutiveItemsByPrompt/);
+  assert.match(coach, /className=\{styles\.readingTaskGroup\}/);
+  assert.match(coach, /className=\{styles\.readingTaskHeader\}/);
+  assert.match(coach, /readingEvidenceParts\(item\)/);
+  assert.match(coach, /item\.kind !== 'fill'/);
+  assert.match(coach, /La frase exacta del pasaje se subraya después, respuesta por respuesta/);
+});
