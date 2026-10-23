@@ -4884,7 +4884,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>
-<p>En WeLearn tenemos un plan específico para el inglés ICFES de 8 a 12 semanas, con tutores que conocen el formato y los tipos de preguntas. Incluye práctica semanal con feedback específico. La primera clase de diagnóstico es de pago: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20ingl%C3%A9s%20para%20el%20ICFES%20Saber%2011%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20plan%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>.</p>
+<p>En WeLearn preparamos la sección de inglés del ICFES con tutores que conocen el formato y los tipos de preguntas. La duración de la ruta depende del nivel inicial y la fecha del examen. Conoce nuestra <a href="/preparacion-icfes">preparación ICFES</a> o las <a href="/clases-de-ingles">clases de inglés 1:1</a>. La orientación inicial por chat no tiene costo; la sesión con tutor es paga.</p>
 <p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">ICFES Saber 11: guía completa de niveles de inglés</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
     `,
   },
@@ -5534,7 +5534,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para estudiantes colombianos, el <strong>CILS B1 o B2</strong> es generalmente la mejor opción porque tiene mayor red de aplicación para visas, trabajo y universidad.</p>
 
 <h2>WeLearn y el italiano</h2>
-<p>Preparamos italiano desde A1 con instructores especializados que adaptan el ritmo a tu base en español. Si tienes ciudadanía italiana en proceso, o planeas estudiar o trabajar en Italia, empieza con una clase de diagnóstico de pago. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20italiano%20desde%20cero%20para%20llegar%20a%20B2.%20%C2%BFTienen%20clases%20para%20eso%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Preparamos italiano desde A1 con tutores asignados que adaptan el ritmo a tu base en español. Si tienes ciudadanía italiana en proceso, o planeas estudiar o trabajar en Italia, conoce nuestras <a href="/clases-de-italiano">clases de italiano 1:1 y preparación CILS</a>. Puedes consultar la ruta y el precio por chat sin costo; la clase y el diagnóstico con tutor son pagos. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20italiano%20desde%20cero%20para%20llegar%20a%20B2.%20%C2%BFTienen%20clases%20para%20eso%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana: el requisito de italiano B1 explicado</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: guía completa para certificar tu italiano</a>.</p>
     `,
   },

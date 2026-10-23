@@ -7,7 +7,7 @@ import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de alemán en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de alemán en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_GOETHE  = encodeURIComponent('Hola, quiero prepararme para el examen Goethe con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
@@ -217,16 +217,18 @@ export default function ClasesDeAlemanPage() {
               <div className={s.heroCtas}>
                 <a
                   href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                  data-wa-cta="aleman-hero"
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
                   <WaIcon />
-                  Clase de diagnóstico de pago
+                  Consultar ruta y precio
                 </a>
                 <Link href="/examenes/goethe" className={s.ghostBtn}>
                   Ver simulacros Goethe →
                 </Link>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>
@@ -267,8 +269,8 @@ export default function ClasesDeAlemanPage() {
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#1a2ecc"
-          title="Dos políglotas te enseñan alemán. No un curso grabado."
-          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          title="Una ruta de alemán creada por dos políglotas."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
           davidLine="Habla ocho idiomas. El alemán es de los que más le costó, y por eso es el que mejor sabe explicar: casos, orden de la frase y verbos separables, paso a paso desde el español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Goethe corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación Goethe', 'Diseño curricular']}
@@ -576,12 +578,12 @@ export default function ClasesDeAlemanPage() {
             </p>
             <div className={s.ctaBtns}>
               <a
-                href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="aleman-final"
                 target="_blank" rel="noopener noreferrer"
                 className={s.waBtn}
               >
                 <WaIcon />
-                Agendar diagnóstico de pago
+                Consultar ruta y precio
               </a>
             </div>
           </div>

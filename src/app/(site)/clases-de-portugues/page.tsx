@@ -7,7 +7,7 @@ import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de portugués en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de portugués en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_CELPE   = encodeURIComponent('Hola, quiero prepararme para el examen Celpe-Bras con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
@@ -223,15 +223,16 @@ export default function ClasesDePortuguesPage() {
               </h1>
               <p className={s.heroSub}>
                 El portugués es el cuarto idioma más hablado del mundo. Con método correcto,
-                en 6 meses ya conversas con brasileños, y en 12–16 puedes alcanzar el Celpe-Bras Intermediário
-                para estudiar en las mejores universidades de Brasil.
+                trabajas la conversación y puedes preparar el Celpe-Bras Intermediário
+                según tu punto de partida, el tiempo de estudio y tu objetivo.
               </p>
               <div className={s.heroCtas}>
-                <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                  <WaIcon /> Clase de diagnóstico de pago
+                <a data-wa-cta="portugues-hero" href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+                  <WaIcon /> Consultar ruta y precio
                 </a>
                 <Link href="/examenes/celpe-bras" className={s.ghostBtn}>Ver simulacros Celpe-Bras →</Link>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>
@@ -269,8 +270,8 @@ export default function ClasesDePortuguesPage() {
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#166534"
-          title="Dos políglotas te enseñan portugués. No un curso grabado."
-          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          title="Una ruta de portugués creada por dos políglotas."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
           davidLine="Habla ocho idiomas. El portugués fue el tercero que aprendió, después del inglés y el italiano, y es el que más rápido avanza cuando ya hablas español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Celpe-Bras corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación Celpe-Bras', 'Diseño curricular']}
@@ -494,8 +495,8 @@ export default function ClasesDePortuguesPage() {
             <h2 className={s.ctaTitle}>Tu diagnóstico de portugués<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al Celpe-Bras que necesitas.</p>
             <div className={s.ctaBtns}>
-              <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                <WaIcon /> Agendar diagnóstico de pago
+              <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="portugues-final" target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+                <WaIcon /> Consultar ruta y precio
               </a>
             </div>
           </div>

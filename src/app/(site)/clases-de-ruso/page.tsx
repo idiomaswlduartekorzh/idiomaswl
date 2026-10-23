@@ -7,7 +7,7 @@ import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/com
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de ruso en WeLearn y quiero conocer el precio y agendar un diagnóstico con tutor.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de ruso en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_BECAS   = encodeURIComponent('Hola, quiero aprender ruso para aplicar a las becas de estudio en Rusia. ¿Cómo me preparo?');
 
 export const metadata: Metadata = {
@@ -179,14 +179,15 @@ export default function ClasesDeRusoPage() {
                 <strong> Presencial en Bucaramanga u online desde cualquier ciudad.</strong>
               </p>
               <div className={s.heroCtas}>
-                <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+                <a data-wa-cta="ruso-hero" href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
                   <WaIcon />
-                  Diagnóstico de pago
+                  Consultar ruta y precio
                 </a>
                 <Link href="/practica/ruso" className={s.ghostBtn}>
                   Practicar ruso gratis →
                 </Link>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>
@@ -503,11 +504,11 @@ export default function ClasesDeRusoPage() {
           <div className={s.wrap}>
             <h2 className={s.ctaTitle}>Tu diagnóstico de ruso<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>
-              Media hora para ver dónde estás, a dónde quieres llegar y cuánto te va a tomar de
-              verdad. Sin compromiso.
+              Cuéntanos tu objetivo por chat sin costo. La sesión con tutor es paga;
+              te explicamos la ruta y el precio antes de agendar.
             </p>
-            <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-              <WaIcon /> Agendar diagnóstico de pago
+            <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="ruso-final" target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+              <WaIcon /> Consultar ruta y precio
             </a>
           </div>
         </section>

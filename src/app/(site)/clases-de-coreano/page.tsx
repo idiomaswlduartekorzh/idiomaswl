@@ -9,7 +9,7 @@ import s from './page.module.css';
 import { KOREAN_STEPS } from '@/data/stepsMeta';
 
 const WA = '573005004253';
-const WA_GENERAL   = encodeURIComponent('Hola, vi la página de clases de coreano en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL   = encodeURIComponent('Hola, vi la página de clases de coreano en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_TOPIK     = encodeURIComponent('Hola, quiero prepararme para el examen TOPIK con WeLearn. ¿Cuándo puedo empezar?');
 const WA_FUNDADOR  = encodeURIComponent('Hola, me interesa el cupo de Miembro Fundador de coreano en WeLearn. ¿Quedan cupos disponibles?');
 
@@ -61,7 +61,7 @@ const jsonLd = {
     {
       '@type': 'Course',
       name: 'Coreano con el método WeLearn',
-      description: 'Aprende coreano desde cero hasta TOPIK con el método WeLearn de 17 pasos. Clases 1:1 con tutor especializado.',
+      description: 'Aprende coreano desde cero hasta TOPIK con el método WeLearn. Clases 1:1 con tutor especializado.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
@@ -145,7 +145,7 @@ const FAQS = [
   },
   {
     q: '¿Las clases son en vivo o grabadas?',
-    a: 'Las clases 1:1 son en vivo por videollamada. También tienes acceso al método de 17 pasos con videos, ejercicios y podcasts para practicar entre sesiones.',
+    a: 'Las clases 1:1 son en vivo por videollamada. También tienes acceso a videos, ejercicios y podcasts para practicar entre sesiones.',
   },
 ];
 
@@ -174,12 +174,13 @@ export default function ClasesDeCoreanoPage() {
               </h1>
               <p className={s.heroSub}>
                 El coreano no es difícil — es diferente. Con el método correcto,
-                en 6 meses ya entiendes K-dramas, ordenas en un restaurante coreano
-                y estás listo para el TOPIK I.
+                puedes avanzar desde Hangul hacia la comprensión cotidiana y la preparación TOPIK I,
+                según tu nivel, práctica y objetivo.
               </p>
               <div className={s.heroCtas}>
                 <a
                   href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                  data-wa-cta="coreano-hero"
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
@@ -187,12 +188,13 @@ export default function ClasesDeCoreanoPage() {
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                   </svg>
-                  Clase de diagnóstico de pago
+                  Consultar ruta y precio
                 </a>
                 <a href="#miembro-fundador" className={s.ghostBtn}>
                   Ver oferta Miembro Fundador →
                 </a>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
             <div className={s.heroVisual}>
               {/* Step003 lesson preview video — muted autoplay (compressed to 3 MB) */}
@@ -217,7 +219,7 @@ export default function ClasesDeCoreanoPage() {
         <div className={s.proofStrip}>
           <div className={s.proofItem}><strong>6 idiomas</strong> en la plataforma</div>
           <div className={s.proofDivider} />
-          <div className={s.proofItem}><strong>17 pasos</strong> por nivel</div>
+          <div className={s.proofItem}><strong>Método propio</strong> por nivel</div>
           <div className={s.proofDivider} />
           <div className={s.proofItem}><strong>TOPIK I y II</strong> incluidos</div>
           <div className={s.proofDivider} />
@@ -228,8 +230,8 @@ export default function ClasesDeCoreanoPage() {
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#c8202e"
-          title="Dos políglotas te enseñan coreano. No un curso grabado."
-          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          title="Una ruta de coreano creada por dos políglotas."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
           davidLine="Habla ocho idiomas y el coreano fue el último que aprendió. Justamente por eso llegó a él con todo el método ya afinado, y sabe qué atajos funcionan y cuáles no."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del TOPIK corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación TOPIK', 'Diseño curricular']}
@@ -285,7 +287,7 @@ export default function ClasesDeCoreanoPage() {
               ))}
             </div>
             <div className={s.metodCta}>
-              <a href="/metodo" className={s.ghostBtnLight}>Ver el método completo (17 pasos) →</a>
+              <a href="/metodo" className={s.ghostBtnLight}>Ver el método completo →</a>
             </div>
           </div>
         </section>
@@ -427,7 +429,7 @@ export default function ClasesDeCoreanoPage() {
         {/* ══════════════ STEPS — LECCIONES DEL MÉTODO ══════════════ */}
         <section className={s.sectionDark} id="lecciones">
           <div className={s.wrap}>
-            <p className={s.sectionEyebrow}>Método WeLearn · 17 pasos</p>
+            <p className={s.sectionEyebrow}>Método WeLearn · ruta por nivel</p>
             <h2 className={s.h2}>Empieza a aprender hoy — gratis</h2>
             <p className={s.sectionSub}>
               Los primeros 5 pasos del método son completamente gratuitos.
@@ -587,7 +589,7 @@ export default function ClasesDeCoreanoPage() {
                 {[
                   { icon: '📖', label: '30 preguntas', sub: 'Lectura TOPIK I' },
                   { icon: '⏱️', label: 'Sin límite', sub: 'A tu ritmo' },
-                  { icon: '🎯', label: 'Nivel exacto', sub: 'Nivel 1 · Nivel 2 · Inicial' },
+                  { icon: '🎯', label: 'Orientación inicial', sub: 'Nivel 1 · Nivel 2 · Inicial' },
                 ].map((stat) => (
                   <div key={stat.label} style={{
                     flex: 1, minWidth: 120,
@@ -619,10 +621,10 @@ export default function ClasesDeCoreanoPage() {
                   transition: 'opacity 0.15s',
                 }}
               >
-                🇰🇷 Hacer el diagnóstico gratis →
+                🇰🇷 Hacer práctica de lectura gratis →
               </Link>
               <div style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', marginTop: '-0.75rem' }}>
-                Sin registro · Resultado inmediato · 100% gratuito
+                Resultado orientativo de lectura · Práctica gratuita
               </div>
             </div>
           </div>
@@ -687,15 +689,16 @@ export default function ClasesDeCoreanoPage() {
               <h2 className={s.ctaTitle}>¿Listo para empezar?</h2>
               <p className={s.ctaSub}>
                 Diagnóstico inicial de pago. Sin compromisos.
-                En 50 minutos sabes exactamente en qué nivel estás y qué necesitas para llegar a donde quieres.
+                Cuéntanos tu objetivo por chat sin costo. La sesión con tutor es paga;
+                te explicamos la ruta y el precio antes de agendar.
               </p>
               <div className={s.ctaBtns}>
                 <a
-                  href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                  href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="coreano-final"
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
-                  Agendar diagnóstico de pago por WhatsApp
+                  Consultar ruta y precio por WhatsApp
                 </a>
                 <Link href="/miembro-fundador" className={s.ghostBtn}>
                   Ver todos los beneficios de Miembro Fundador

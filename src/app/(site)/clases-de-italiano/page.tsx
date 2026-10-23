@@ -7,7 +7,7 @@ import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de italiano en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de italiano en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_CILS    = encodeURIComponent('Hola, quiero prepararme para el examen CILS o CELI con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
@@ -180,11 +180,12 @@ export default function ClasesDeItalianoPage() {
                 avanzas hacia la conversación y puedes preparar el B1 de ciudadanía o el CILS según tu objetivo.
               </p>
               <div className={s.heroCtas}>
-                <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                  <WaIcon /> Clase de diagnóstico de pago
+                <a data-wa-cta="italiano-hero" href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+                  <WaIcon /> Consultar ruta y precio
                 </a>
                 <Link href="/examenes/cils-celi" className={s.ghostBtn}>Ver simulacros CILS →</Link>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>
@@ -222,8 +223,8 @@ export default function ClasesDeItalianoPage() {
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#009246"
-          title="Dos políglotas te enseñan italiano. No un curso grabado."
-          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          title="Una ruta de italiano creada por dos políglotas."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
           davidLine="Habla ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés — y es el que mejor demuestra cuánta ventaja te da ya hablar español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación CILS y CELI corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación CILS / CELI', 'Diseño curricular']}
@@ -498,8 +499,8 @@ export default function ClasesDeItalianoPage() {
             <h2 className={s.ctaTitle}>Tu diagnóstico de italiano<br /><span className={s.accent}>es una sesión paga.</span></h2>
             <p className={s.ctaSub}>Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al CILS que necesitas.</p>
             <div className={s.ctaBtns}>
-              <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
-                <WaIcon /> Agendar diagnóstico de pago
+              <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="italiano-final" target="_blank" rel="noopener noreferrer" className={s.waBtn}>
+                <WaIcon /> Consultar ruta y precio
               </a>
             </div>
           </div>

@@ -8,7 +8,7 @@ import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/com
 import s from './page.module.css';
 
 const WA = '573005004253';
-const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn y quiero conocer el precio y agendar una clase de diagnóstico con tutor.');
+const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
@@ -155,7 +155,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
-    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. La forma más rápida de tener el precio exacto de tu caso es el diagnóstico de pago, donde definimos objetivo, nivel y frecuencia. Puedes ver los planes vigentes en la página de precios.',
+    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. Puedes consultar por chat sin costo la ruta y el precio; el diagnóstico con tutor es pago. Puedes ver los planes vigentes en la página de precios.',
   },
   {
     q: '¿El DELF sirve para migrar a Canadá?',
@@ -219,16 +219,18 @@ export default function ClasesDeFrancesPage() {
               <div className={s.heroCtas}>
                 <a
                   href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                  data-wa-cta="frances-hero"
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
                   <WaIcon />
-                  Clase de diagnóstico de pago
+                  Consultar ruta y precio
                 </a>
                 <Link href="/examenes/delf-dalf" className={s.ghostBtn}>
                   Ver simulacros DELF →
                 </Link>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>
@@ -269,8 +271,8 @@ export default function ClasesDeFrancesPage() {
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#1a2ecc"
-          title="Dos políglotas te enseñan francés. No un curso grabado."
-          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad — y una de ellas estudió en Francia."
+          title="Una ruta de francés creada por dos políglotas."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
           davidLine="Habla ocho idiomas. Llegó al francés después del inglés, el italiano y el portugués — y ese recorrido es exactamente el método que hoy usamos con hispanohablantes."
           zhannaLine="Estudió en Francia y en Inglaterra. Esa experiencia académica dentro del sistema francés es la que respalda nuestra preparación DELF y DALF."
           zhannaTags={['Co-fundadora · Estudió en Francia', 'Preparación DELF / DALF', 'Diseño curricular']}
@@ -563,12 +565,12 @@ export default function ClasesDeFrancesPage() {
             </p>
             <div className={s.ctaBtns}>
               <a
-                href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                href={`https://wa.me/${WA}?text=${WA_GENERAL}`} data-wa-cta="frances-final"
                 target="_blank" rel="noopener noreferrer"
                 className={s.waBtn}
               >
                 <WaIcon />
-                Agendar diagnóstico de pago
+                Consultar ruta y precio
               </a>
             </div>
           </div>

@@ -11,6 +11,31 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 
 ## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
 
+### Hiperoptimización SEO y consultas — 23 de octubre de 2026
+
+`codex/seo-hyperopt-20261023` parte del `main` desplegado en `817aca8b`.
+Estado: `VALIDADO_PARA_INTEGRAR`. El plan y las fuentes del diagnóstico están en el
+informe privado del propietario, fuera del repositorio. Dos revisores
+independientes de SEO técnico y conversión aprobaron el alcance tras exigir
+conservar URL, títulos, H1 y canonical de páginas ganadoras, así como retirar
+afirmaciones no acreditadas.
+
+La comparación lunes–viernes 19–23 frente a 12–16 octubre muestra 10 frente a
+15 clics de contacto, y 5 frente a 5 con referido Google; el viernes 23 sigue
+en curso. Son clics hacia WhatsApp, no mensajes enviados. Search Console
+registra 926 frente a 708 clics orgánicos en periodos sucesivos de 28 días.
+La hipótesis de caída general del posicionamiento no está demostrada; se
+trabaja la conversión y la medición por ubicación de CTA. La redacción aclara
+que la orientación inicial por chat es gratuita, las sesiones con tutor son
+pagas y las herramientas automáticas son gratuitas y orientativas. No hay
+migración, cambio de precios ni cambio de canonical.
+Pasaron TypeScript, catálogo, línea base, navegación, SEO foundation, landings
+locales, snippets, revisión de señales SEO de nueve landings y build Webpack
+completo de 2.764 rutas. Dos revisores independientes dieron visto bueno al
+diff final. Falta la prueba pública tras integrar y confirmar Vercel `READY`.
+
+### Fase previa: auditoría y corrección de oferta
+
 `codex/seo-contact-audit-20261023` parte de `origin/main` en `d7c48068`.
 Estado: `DESPLEGADO` mediante PR #31, SHA de `main`
 `bf2a86a91d83146f61de2eb02cef5d7d6515552a` y Vercel
@@ -37,9 +62,10 @@ identificadores de conversaciones.
 ## Seguimiento de intención inglesa y conciliación de contactos — 23 de octubre de 2026
 
 `codex/seo-english-intent-20261023` parte del `main` anterior en `bf2a86a9`.
-Estado: `VALIDADO_PARA_INTEGRAR`; se publicará solo desde `main` tras los
-controles de la PR. Pasaron TypeScript, catálogo, línea base, snippets SEO y
-build Webpack completo de 2.764 rutas.
+Estado: `DESPLEGADO` mediante PR #32, SHA de `main`
+`817aca8b831508a507bb986a532f31d0ee559a6b` y Vercel
+`dpl_5ryVggVPKMjBm5Lfnh7D1yJt4XC7` (`READY`). Pasaron TypeScript,
+catálogo, línea base, snippets SEO y build Webpack completo de 2.764 rutas.
 Search Console muestra que `/clases-de-ingles` recibe impresiones de búsquedas
 locales aunque su intención principal es online nacional. Se retira «Bucaramanga»
 del título y las palabras clave de esa página, se aclara el enlace desde la
