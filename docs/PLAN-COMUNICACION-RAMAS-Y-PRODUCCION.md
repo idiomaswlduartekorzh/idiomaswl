@@ -12,7 +12,10 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 ## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
 
 `codex/seo-contact-audit-20261023` parte de `origin/main` en `d7c48068`.
-Estado: `VALIDADO_PARA_INTEGRAR`; la publicación se verifica por separado.
+Estado: `DESPLEGADO` mediante PR #31, SHA de `main`
+`bf2a86a91d83146f61de2eb02cef5d7d6515552a` y Vercel
+`dpl_5hkh8d98isJKFjk3f4KXm1EiTSpi` (`READY`). Se comprobaron HTTP 200,
+encabezados y metadatos en cinco páginas públicas.
 La revisión de la lista principal de WhatsApp (sin abrir Archivados), el panel de
 contactos y el alcance por página, y Search Console no respaldan una caída general
 del tráfico orgánico: los clics de búsqueda subieron de 708 a 926 en dos ventanas
@@ -30,6 +33,20 @@ Validaciones: `check:practica-catalog`, TypeScript, navegación, SEO foundation,
 landings locales, snippets y build Webpack completo de 2.764 rutas. El informe
 privado con referencias de chats se conserva fuera del repositorio para no publicar
 identificadores de conversaciones.
+
+## Seguimiento de intención inglesa y conciliación de contactos — 23 de octubre de 2026
+
+`codex/seo-english-intent-20261023` parte del `main` anterior en `bf2a86a9`.
+Estado: `VALIDADO_PARA_INTEGRAR`; se publicará solo desde `main` tras los
+controles de la PR. Pasaron TypeScript, catálogo, línea base, snippets SEO y
+build Webpack completo de 2.764 rutas.
+Search Console muestra que `/clases-de-ingles` recibe impresiones de búsquedas
+locales aunque su intención principal es online nacional. Se retira «Bucaramanga»
+del título y las palabras clave de esa página, se aclara el enlace desde la
+página local y se corrige una afirmación contradictoria sobre sedes de TOEFL.
+La búsqueda de WhatsApp confirmó 3 referencias de Google entre el 25 de
+septiembre y el 8 de octubre y 5 entre el 9 y el 22 de octubre; son mínimos
+observados. El panel no recibe mensajes de la IA nativa de WhatsApp Business.
 
 ## Guía autónoma IELTS Set 1 — 20 de octubre de 2026
 
