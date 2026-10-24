@@ -250,6 +250,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE}/practica/${lang}/${level}/gramatica/${topic.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.72,
+      images: [`${BASE}/recursos-visuales/gramatica/${lang}/${level}/${topic.slug}`],
     })),
 
     // ── Practice — vocabulary, hub + one URL per themed block ─────────────────

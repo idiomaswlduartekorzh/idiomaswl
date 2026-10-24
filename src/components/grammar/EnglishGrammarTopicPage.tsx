@@ -4,6 +4,7 @@ import type { EnglishGrammarLevel } from '@/data/english-grammar-preview'
 import EnglishGrammarLesson from '@/components/grammar/EnglishGrammarLesson'
 import TopicNav from '@/components/grammar/TopicNav'
 import { getEnglishGrammarResource } from '@/data/english-grammar-preview'
+import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
 
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
 
@@ -15,7 +16,8 @@ export default function EnglishGrammarTopicPage({ topic, level, relatedWritingEx
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'en'], teaches: topic.shortTitle, learningResourceType: ['Lección interactiva', 'Cuaderno de ejercicios', 'Audio'], timeRequired: `PT${resource.studyMinutes}M`, isAccessibleForFree: true, hasPart: [{ '@type': 'MediaObject', name: 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf' }, ...resource.audioTracks.map((track) => ({ '@type': 'AudioObject', name: track.title, contentUrl: `https://www.idiomaswl.com${track.src}`, encodingFormat: 'audio/mp4', inLanguage: 'en' }))], provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
+      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'en'], teaches: topic.shortTitle, image: grammarVisualUrl('ingles', level, topic.slug), learningResourceType: ['Lección interactiva', 'Cuaderno de ejercicios', 'Audio'], timeRequired: `PT${resource.studyMinutes}M`, isAccessibleForFree: true, hasPart: [{ '@type': 'MediaObject', name: 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf' }, ...resource.audioTracks.map((track) => ({ '@type': 'AudioObject', name: track.title, contentUrl: `https://www.idiomaswl.com${track.src}`, encodingFormat: 'audio/mp4', inLanguage: 'en' }))], provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
+      grammarVisualImageObject(topic, 'ingles', level),
       { '@type': 'HowTo', name: `Cómo estudiar ${topic.shortTitle}`, description: topic.guide.goal, totalTime: `PT${resource.studyMinutes}M`, step: topic.guide.decisions.map((decision, index) => ({ '@type': 'HowToStep', position: index + 1, name: `Paso ${index + 1}`, text: decision })) },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },

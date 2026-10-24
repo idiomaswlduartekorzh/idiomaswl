@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import TopicNav from '@/components/grammar/TopicNav'
+import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
 import styles from './GrammarCollection.module.css'
 
-type GrammarLanguage = 'aleman' | 'frances' | 'italiano' | 'portugues' | 'ruso'
+type GrammarLanguage = 'aleman' | 'frances' | 'italiano' | 'japones' | 'portugues' | 'ruso'
 type GrammarLevel = 'a1' | 'a2' | 'b1'
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
 
@@ -21,6 +23,7 @@ const LANGUAGE: Record<GrammarLanguage, {
   aleman: { label: 'Alemán', adjective: 'alemana', flag: '🇩🇪', code: 'de', native: 'Deutsch', accent: '#d79a00', deep: '#181818', soft: '#fff3cf' },
   frances: { label: 'Francés', adjective: 'francesa', flag: '🇫🇷', code: 'fr', native: 'Français', accent: '#e7374f', deep: '#18347a', soft: '#eef3ff' },
   italiano: { label: 'Italiano', adjective: 'italiana', flag: '🇮🇹', code: 'it', native: 'Italiano', accent: '#d72b3f', deep: '#08713c', soft: '#edf8f0' },
+  japones: { label: 'Japonés', adjective: 'japonesa', flag: '🇯🇵', code: 'ja', native: '日本語', accent: '#dc2f45', deep: '#202a44', soft: '#fff0f1' },
   portugues: { label: 'Portugués', adjective: 'portuguesa', flag: '🇧🇷', code: 'pt', native: 'Português', accent: '#e4aa00', deep: '#126b3a', soft: '#f4fae8' },
   ruso: { label: 'Ruso', adjective: 'rusa', flag: '🇷🇺', code: 'ru', native: 'Русский', accent: '#d92f45', deep: '#24458f', soft: '#f1f5ff' },
 }
@@ -96,7 +99,7 @@ export function GrammarCollectionIndex({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <main
+      <div
         className={styles.page}
         style={{ '--grammar-accent': language.accent, '--grammar-deep': language.deep, '--grammar-soft': language.soft } as React.CSSProperties}
       >
@@ -164,7 +167,7 @@ export function GrammarCollectionIndex({
 
           <Link className={styles.backLink} href={basePath}>← Volver a {language.label} {levelLabel}</Link>
         </div>
-      </main>
+      </div>
     </>
   )
 }
@@ -200,8 +203,10 @@ export function GrammarCollectionTopicPage({
         teaches: topic.shortTitle,
         learningResourceType: ['Lección interactiva', 'Ejercicios de gramática'],
         isAccessibleForFree: true,
+        image: grammarVisualUrl(idioma, nivel, topic.slug),
         provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       },
+      grammarVisualImageObject(topic, idioma, nivel),
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
@@ -218,7 +223,7 @@ export function GrammarCollectionTopicPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <main
+      <div
         className={`${styles.page} gram-page`}
         style={{ '--grammar-accent': language.accent, '--grammar-deep': language.deep, '--grammar-soft': language.soft, '--topic-color': topic.color } as React.CSSProperties}
       >
@@ -255,6 +260,8 @@ export function GrammarCollectionTopicPage({
             <a href={indexPath}><span>04</span> Más temas</a>
           </nav>
 
+          <GrammarTopicVisual topic={topic} idioma={idioma} nivel={nivel} priority />
+
           <section className={styles.outcomes} aria-labelledby="lesson-outcomes-title">
             <div><span>Lo que vas a dominar</span><h2 id="lesson-outcomes-title">Una meta clara antes de practicar</h2></div>
             <ol>{topic.outcomes.map((outcome, index) => <li key={outcome}><span>{index + 1}</span><p>{outcome}</p></li>)}</ol>
@@ -289,7 +296,7 @@ export function GrammarCollectionTopicPage({
 
           <TopicNav idioma={idioma} nivel={nivel} slug={topic.slug} indexLabel={`Gramática ${levelLabel}`} />
         </div>
-      </main>
+      </div>
     </>
   )
 }

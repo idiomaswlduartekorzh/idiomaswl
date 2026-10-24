@@ -74,12 +74,26 @@ function reducer(s: State, a: Action): State {
 // Grammar topic data always lists the correct answer as the first element of
 // `options` (authoring convention), so rendering it verbatim puts the right
 // choice in position 1 on every question. Fisher-Yates shuffles the display
-// order while `answer`/scoring still reference the original string value.
+// order while `answer`/scoring still reference the original string value. The
+// seed keeps SSR and the first client render identical, avoiding hydration
+// mismatches without putting the answer in a fixed position.
 
-function shuffle<T>(arr: T[]): T[] {
+function shuffle<T>(arr: T[], seed: string): T[] {
   const a = [...arr]
+  let state = 2166136261
+  for (const char of seed) {
+    state ^= char.codePointAt(0) ?? 0
+    state = Math.imul(state, 16777619)
+  }
+  const random = () => {
+    state += 0x6d2b79f5
+    let value = state
+    value = Math.imul(value ^ (value >>> 15), value | 1)
+    value ^= value + Math.imul(value ^ (value >>> 7), value | 61)
+    return ((value ^ (value >>> 14)) >>> 0) / 4294967296
+  }
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
+    const j = Math.floor(random() * (i + 1))
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
@@ -218,8 +232,8 @@ function TextWithBlanks({
 }) {
   const parts = text.split(/\[\[(\d+)\]\]/)
   const shuffledOptions = useMemo(
-    () => blanks.map((b) => (b.options ? shuffle(b.options) : undefined)),
-    [blanks],
+    () => blanks.map((b, index) => (b.options ? shuffle(b.options, `${text}-${index}-${b.answer}`) : undefined)),
+    [blanks, text],
   )
   return (
     <p className="story-text">
@@ -274,7 +288,7 @@ function ChoicePractice({
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
   const canProceed = !!(answers[`${idx}`])
-  const shuffledOptions = useMemo(() => shuffle(item.options), [item])
+  const shuffledOptions = useMemo(() => shuffle(item.options, `${item.scene}-${item.answer}`), [item])
 
   function next() {
     if (isLast) {
@@ -344,7 +358,7 @@ function DualPractice({
   const requiredBi = gapIndices(dualItemText(item)).filter((bi) => item.blanks[bi])
   const canProceed = requiredBi.every((bi) => !!(answers[`${idx}-${bi}`]))
   const shuffledOptions = useMemo(
-    () => item.blanks.map((b) => (b.options ? shuffle(b.options) : undefined)),
+    () => item.blanks.map((b, index) => (b.options ? shuffle(b.options, `${item.scene}-${index}-${b.answer}`) : undefined)),
     [item],
   )
 

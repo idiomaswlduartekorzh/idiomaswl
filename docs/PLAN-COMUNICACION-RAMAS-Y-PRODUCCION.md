@@ -9,6 +9,29 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Remodelación gramatical A1–B1 e imágenes educativas — 24 de octubre de 2026
+
+`codex/korean-grammar-pages-20261013` conserva las URLs, canonicals, títulos y contenido
+rastreable de gramática y completa la fachada nueva de japonés A2–B1. Estado:
+`LISTO_PARA_INTEGRAR`; sin migraciones ni variables nuevas. Los audios que no existían
+siguen explícitamente pendientes y no se anuncian como publicados.
+
+Cada entrada del registro de gramática incorpora una infografía educativa original de
+1200 × 630 construida con la fórmula y los ejemplos revisados del tema. La imagen aparece
+en la lección con texto alternativo y pie contextual, se declara como `ImageObject`,
+Open Graph y Twitter Card, y entra en el sitemap de imágenes. El sitemap de producción
+local generó 482 URLs visuales únicas, todas bajo una ruta rastreable fuera de `/api/`.
+También se sustituyó el barajado aleatorio durante render por uno determinista para evitar
+fallos de hidratación en los ejercicios sin fijar la respuesta correcta en la primera
+posición.
+
+Validaciones: TypeScript y ESLint focalizado sin errores; catálogo protegido de 465 temas;
+protección SEO de 17 índices y 17 plantillas; 467 snippets; build Webpack completo de 2.764
+páginas; HTTP 200 y `image/png` en muestras de los ocho idiomas; HTML con `ImageObject`,
+`og:image` y `twitter:image`; sitemap con 482 recursos visuales únicos. Falta integrar
+sobre `origin/main`, esperar Vercel y ejecutar el smoke público antes de cambiar el estado
+a `DESPLEGADO`.
+
 ## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
 
 ### Retiro de promesas de modalidad individual y oferta gratis — 23 de octubre de 2026
