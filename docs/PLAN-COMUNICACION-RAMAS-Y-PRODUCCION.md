@@ -9,6 +9,19 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Conexión entre idiomas, práctica y exámenes — 24 de octubre de 2026
+
+`codex/language-practice-links-20261024` parte de `origin/main` en `5661967a`.
+Estado: `EN_VALIDACION`; integración y despliegue pendientes. Las ocho páginas de idiomas
+incluyen un acceso secundario a sus ejercicios por nivel. Inglés, coreano, francés, alemán,
+italiano y portugués enlazan además sus catálogos de exámenes existentes. Los hubs de
+práctica muestran las rutas hacia clases y exámenes, y los hubs de exámenes enlazan de
+regreso a la práctica del idioma. Ruso y japonés solo apuntan a su práctica porque no
+tienen catálogo de exámenes publicado. No cambian URL, títulos, H1 ni canonicals.
+Validaciones locales: catálogo protegido, navegación, TypeScript, build Webpack de 2.764
+páginas y respuesta HTTP 200 de páginas representativas. Se revisó la presentación de
+inglés, práctica de inglés e IELTS en navegador local.
+
 ## Consultas desde SEO y conciliación de WhatsApp — 24 de octubre de 2026
 
 `codex/seo-message-funnel-20261024` parte de `origin/main` en `68f28b6e`.

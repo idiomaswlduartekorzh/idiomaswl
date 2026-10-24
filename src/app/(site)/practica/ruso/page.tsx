@@ -34,6 +34,7 @@ export default function RusoPage() {
         inLanguage="ru"
       />
       <LanguageHub
+        language="ruso"
         langLabel="🇷🇺 Ruso"
         eyebrow="🇷🇺 Ruso / Русский"
         title="Elige tu nivel"

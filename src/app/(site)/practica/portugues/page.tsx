@@ -34,6 +34,7 @@ export default function PortuguesPage() {
         inLanguage="pt"
       />
       <LanguageHub
+        language="portugues"
         langLabel="🇧🇷 Portugués"
         eyebrow="🇧🇷 Portugués"
         title="Elige tu nivel"

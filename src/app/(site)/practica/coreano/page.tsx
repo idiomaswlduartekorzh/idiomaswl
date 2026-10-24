@@ -41,6 +41,7 @@ export default function CoreanoPage() {
         inLanguage="es"
       />
       <LanguageHub
+        language="coreano"
         langLabel="🇰🇷 Coreano"
         eyebrow="🇰🇷 Coreano / 한국어"
         title="Elige tu nivel"

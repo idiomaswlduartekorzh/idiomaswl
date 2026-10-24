@@ -57,6 +57,7 @@ export default function InglesPageClient({ historiasCard }: { historiasCard?: Re
 
   return (
     <LanguageHub
+      language="ingles"
       langLabel="🇬🇧 Inglés"
       eyebrow="🇬🇧 Inglés"
       title="Elige tu nivel"

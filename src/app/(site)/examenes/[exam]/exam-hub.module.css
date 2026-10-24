@@ -821,3 +821,20 @@
     animation-iteration-count: 1 !important;
   }
 }
+.languageLinks {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+}
+
+.languageLinks span { color: var(--muted); }
+.languageLinks a { color: var(--exam-accent); font-weight: 700; text-underline-offset: 3px; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .languageLinks a {
+  color: var(--wl-accent);
+}

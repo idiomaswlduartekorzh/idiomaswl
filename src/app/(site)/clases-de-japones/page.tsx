@@ -1,3 +1,4 @@
+import LanguageResourceLinks from '@/components/hub/LanguageResourceLinks';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FoundersBand from '@/components/hub/FoundersBand';
@@ -228,6 +229,8 @@ export default function ClasesDeJaponesPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Ruta JLPT</strong> N5 a N1</span>
         </div>
+
+        <LanguageResourceLinks language="japones" />
 
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand

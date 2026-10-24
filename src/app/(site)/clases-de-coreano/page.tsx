@@ -1,3 +1,4 @@
+import LanguageResourceLinks from '@/components/hub/LanguageResourceLinks';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -227,6 +228,8 @@ export default function ClasesDeCoreanoPage() {
         </div>
 
         {/* ══════════════ WHY KOREAN ══════════════ */}
+        <LanguageResourceLinks language="coreano" />
+
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand
           accent="#c8202e"

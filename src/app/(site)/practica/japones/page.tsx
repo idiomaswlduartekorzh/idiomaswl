@@ -34,6 +34,7 @@ export default function JaponesPage() {
         inLanguage="ja"
       />
       <LanguageHub
+        language="japones"
         langLabel="🇯🇵 Japonés"
         eyebrow="🇯🇵 Japonés / 日本語"
         title="Elige tu nivel"

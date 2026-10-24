@@ -10,6 +10,18 @@
   padding: 0;
 }
 
+.related {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  margin-top: 1.2rem;
+  font-size: 0.82rem;
+}
+
+.related span { color: var(--wlp-muted); }
+.related a { color: var(--wlp-accent); font-weight: 700; text-underline-offset: 3px; }
+
 /* Fila de nivel: chapa, texto y flecha. Se compone sobre .wlp-card, así que el radio, el
    filete y la superficie ya vienen dados. */
 .row {
