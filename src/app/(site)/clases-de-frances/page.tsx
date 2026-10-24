@@ -208,12 +208,12 @@ export default function ClasesDeFrancesPage() {
               <div className={s.heroPhrase}>Bonjour !</div>
               <p className={s.eyebrow}>Francés en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
-                Aprende francés<br />
-                <span className={s.accent}>de verdad.</span>
+                Clases de francés<br />
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
                 El francés no es solo pronunciación difícil — es estructura, ritmo y contexto.
-                Con el método WeLearn llegas al DELF B2 con una base sólida que no se te olvida.
+                Con el método WeLearn trabajas la base y las habilidades que exige tu objetivo, desde empezar de cero hasta preparar DELF o DALF.
                 <strong> Presencial en Bucaramanga u online desde cualquier ciudad de Colombia.</strong>
               </p>
               <div className={s.heroCtas}>
@@ -230,7 +230,7 @@ export default function ClasesDeFrancesPage() {
                   Ver simulacros DELF →
                 </Link>
               </div>
-              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
+              <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat y la <Link href="/practica/frances/a1/gramatica">práctica automática de francés A1</Link> son gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
             </div>
 
             <div className={s.heroVisual}>

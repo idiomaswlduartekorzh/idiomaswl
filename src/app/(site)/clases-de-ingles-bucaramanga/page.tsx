@@ -184,7 +184,7 @@ export default function ClasesInglessBucaramangaPage() {
                   </svg>
                   Consultar ruta y precio
                 </a>
-                <a href={WA_PAQUETE} target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
+                <a href={WA_PAQUETE} data-wa-cta="ingles-bucaramanga-paquetes" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
                   Ver paquetes →
                 </a>
               </div>
