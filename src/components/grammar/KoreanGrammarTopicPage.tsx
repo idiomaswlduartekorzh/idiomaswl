@@ -4,6 +4,8 @@ import type { KoreanGrammarLevel } from '@/data/korean-grammar-preview'
 import KoreanGrammarLesson from '@/components/grammar/KoreanGrammarLesson'
 import KoreanHangulLesson from '@/components/grammar/KoreanHangulLesson'
 import TopicNav from '@/components/grammar/TopicNav'
+import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
+import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
 
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
 
@@ -14,7 +16,8 @@ export default function KoreanGrammarTopicPage({ topic, level, relatedWritingExe
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: 'ko', teaches: topic.shortTitle, learningResourceType: 'Lección interactiva', provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
+      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'ko'], teaches: topic.shortTitle, image: grammarVisualUrl('coreano', level, topic.slug), learningResourceType: 'Lección interactiva', provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
+      grammarVisualImageObject(topic, 'coreano', level),
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },
         { '@type': 'ListItem', position: 2, name: 'Coreano', item: 'https://www.idiomaswl.com/practica/coreano' },
@@ -28,5 +31,5 @@ export default function KoreanGrammarTopicPage({ topic, level, relatedWritingExe
 
   const isHangulLesson = level === 'a1' && topic.slug === 'hangul-basico'
 
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /><div className="gram-page" style={{ '--topic-color': topic.color } as React.CSSProperties}><div className="wrap"><nav aria-label="breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0 0', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}><Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link><span>/</span><Link href={`/practica/coreano/${level}`} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Coreano {levelLabel}</Link><span>/</span><Link href={indexUrl.replace('https://www.idiomaswl.com', '')} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Gramática</Link><span>/</span><span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span></nav>{isHangulLesson ? <KoreanHangulLesson /> : <KoreanGrammarLesson topic={topic} level={level} relatedWritingExercises={relatedWritingExercises} />}<TopicNav idioma="coreano" nivel={level} slug={topic.slug} indexLabel={`Gramática ${levelLabel}`} /></div></div></>
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /><div className="gram-page" style={{ '--topic-color': topic.color } as React.CSSProperties}><div className="wrap"><nav aria-label="breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0 0', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}><Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link><span>/</span><Link href={`/practica/coreano/${level}`} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Coreano {levelLabel}</Link><span>/</span><Link href={indexUrl.replace('https://www.idiomaswl.com', '')} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Gramática</Link><span>/</span><span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span></nav>{isHangulLesson ? <><KoreanHangulLesson /><GrammarTopicVisual topic={topic} idioma="coreano" nivel={level} /></> : <KoreanGrammarLesson topic={topic} level={level} relatedWritingExercises={relatedWritingExercises} />}<TopicNav idioma="coreano" nivel={level} slug={topic.slug} indexLabel={`Gramática ${levelLabel}`} /></div></div></>
 }

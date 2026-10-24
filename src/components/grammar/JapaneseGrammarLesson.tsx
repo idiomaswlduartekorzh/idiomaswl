@@ -5,6 +5,7 @@ import { useMemo, useState } from 'react'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getJapaneseGrammarResource } from '@/data/japanese-grammar-a1'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './JapaneseGrammarLesson.module.css'
 
@@ -110,6 +111,8 @@ export default function JapaneseGrammarLesson({
           <p>{topic.guide.goal}</p>
         </div>
       </header>
+
+      <GrammarTopicVisual topic={topic} idioma="japones" nivel="a1" />
 
       <nav id="japanese-grammar-nav" className={styles.tabs} aria-label="Contenido de la lección">
         {sections.map((section) => (

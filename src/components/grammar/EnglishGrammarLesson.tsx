@@ -5,6 +5,7 @@ import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getEnglishGrammarResource, type EnglishGrammarLevel } from '@/data/english-grammar-preview'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './KoreanGrammarLesson.module.css'
 
@@ -79,6 +80,8 @@ export default function EnglishGrammarLesson({
           <p>{topic.guide.goal}</p>
         </div>
       </header>
+
+      <GrammarTopicVisual topic={topic} idioma="ingles" nivel={level} />
 
       <nav id="english-grammar-nav" className={styles.tabs} aria-label="Contenido de la lección">
         {SECTIONS.map((section) => (

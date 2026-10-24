@@ -5,6 +5,7 @@ import { useState } from 'react'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getKoreanGrammarResource, type KoreanGrammarLevel } from '@/data/korean-grammar-preview'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './KoreanGrammarLesson.module.css'
 
@@ -71,6 +72,8 @@ export default function KoreanGrammarLesson({
           <p>{topic.guide.goal}</p>
         </div>
       </header>
+
+      <GrammarTopicVisual topic={topic} idioma="coreano" nivel={level} />
 
       <nav id="korean-grammar-nav" className={styles.tabs} aria-label="Contenido de la lección">
         {SECTIONS.map((section) => (

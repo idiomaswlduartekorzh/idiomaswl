@@ -148,6 +148,10 @@ const nextConfig: NextConfig = {
     '/api/exam-materials/**': [
       'private/exam-materials/**/*.pdf',
     ],
+    '/recursos-visuales/gramatica/**': [
+      'public/fonts/welearn-ja-*.ttf',
+      'public/fonts/welearn-ko-*.ttf',
+    ],
   },
 
   async headers() {

@@ -8,6 +8,8 @@ import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 import JapaneseScriptLesson from '@/components/grammar/JapaneseScriptLesson'
 import JapaneseGrammarLesson from '@/components/grammar/JapaneseGrammarLesson'
 import TopicNav from '@/components/grammar/TopicNav'
+import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
+import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
 
 const IDIOMA = 'japones'
 const NIVEL = 'a1'
@@ -49,9 +51,11 @@ export default async function GrammarTopicPage({ params }: Props) {
         educationalLevel: topic.level,
         inLanguage: 'ja',
         teaches: topic.shortTitle,
+        image: grammarVisualUrl(IDIOMA, NIVEL, topic.slug),
         learningResourceType: 'Lección interactiva',
         provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       },
+      grammarVisualImageObject(topic, IDIOMA, NIVEL),
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
@@ -121,7 +125,7 @@ export default async function GrammarTopicPage({ params }: Props) {
           </nav>
 
           {scriptLesson ? (
-            <JapaneseScriptLesson scriptId={scriptLesson.id} />
+            <><JapaneseScriptLesson scriptId={scriptLesson.id} /><GrammarTopicVisual topic={topic} idioma={IDIOMA} nivel={NIVEL} /></>
           ) : (
             <JapaneseGrammarLesson topic={topic} relatedWritingExercises={relatedWritingExercises} />
           )}

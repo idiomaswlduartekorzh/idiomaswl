@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import type { GrammarTopic } from '@/data/grammar/types'
+import { grammarVisualAlt, grammarVisualUrl, isGrammarVisualLanguage } from '@/lib/grammar-visual'
 import {
   buildGrammarDescription,
   buildGrammarTitle,
@@ -25,6 +26,10 @@ export function generateGrammarMetadata(
 ): Metadata {
   const lang = IDIOMA_LABELS[idioma] ?? idioma
   const canonical = `https://www.idiomaswl.com/practica/${idioma}/${nivel}/gramatica/${topic.slug}`
+  const visual = grammarVisualUrl(idioma, nivel, topic.slug)
+  const visualAlt = isGrammarVisualLanguage(idioma)
+    ? grammarVisualAlt(topic, idioma, nivel)
+    : `Explicación visual de ${topic.shortTitle}`
 
   // El título y la descripción del buscador se derivan; NO son `topic.metaTitle`
   // ni `topic.description` en crudo. `description` se pinta además en el cuerpo
@@ -44,6 +49,13 @@ export function generateGrammarMetadata(
       type: 'website',
       locale: 'es_CO',
       url: canonical,
+      images: [{ url: visual, width: 1200, height: 630, alt: visualAlt }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: topic.metaTitle,
+      description: topic.lead,
+      images: [{ url: visual, alt: visualAlt }],
     },
     other: {
       'article:section': `Gramática ${lang} ${nivel.toUpperCase()}`,
