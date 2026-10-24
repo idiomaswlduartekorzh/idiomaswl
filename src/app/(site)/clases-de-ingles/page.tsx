@@ -23,7 +23,7 @@ const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (F
 export const metadata: Metadata = {
   title: 'Clases de inglés online en Colombia | IELTS y TOEFL',
   description:
-    'Clases de inglés online 1:1 para toda Colombia. Prepara IELTS, TOEFL, Cambridge B2 First o ICFES con tutor asignado y práctica guiada.',
+    'Clases de inglés online para toda Colombia. Prepara IELTS, TOEFL, Cambridge B2 First o ICFES con tutor asignado y práctica guiada.',
   keywords: [
     'clases de inglés', 'clases de inglés online Colombia', 'preparación IELTS Colombia',
     'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles' },
   openGraph: {
     title: 'Clases de inglés online para IELTS, TOEFL e ICFES',
-    description: 'Preparación individual para exámenes y objetivos laborales con tutor asignado. Sesión de diagnóstico con tutor paga; consulta el precio antes de agendar.',
+    description: 'Preparación guiada para exámenes y objetivos laborales con tutor asignado. Sesión de diagnóstico con tutor paga; consulta el precio antes de agendar.',
     url: 'https://www.idiomaswl.com/clases-de-ingles',
   },
 };
@@ -52,7 +52,7 @@ const FAQS = [
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'El tiempo depende de tu nivel inicial, la puntuación objetivo y las horas de práctica. Un tutor puede evaluar tu punto de partida y proponer una ruta; la sesión con tutor es paga.' },
   { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
   { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión paga con tutor para revisar tu nivel, objetivo y plan. Te informamos el precio y la modalidad antes de agendar.' },
-  { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
+  { q: '¿Cómo se organizan las clases?', a: 'Te asignamos un tutor y una ruta según tu nivel y objetivo. Consulta las modalidades y horarios disponibles antes de elegir un plan.' },
   { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. En Bucaramanga y su área metropolitana puedes venir presencialmente; desde cualquier otra ciudad la clase es online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
 ];
 
@@ -257,7 +257,7 @@ export default function ClasesDeInglesPage() {
               para <span style={{ color: 'var(--accent)' }}>IELTS, TOEFL e ICFES.</span>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '2rem', maxWidth: 440 }}>
-              Aprende 1:1 con tutor asignado y un plan para tu examen, trabajo o conversación.
+              Aprende con tutor asignado y un plan para tu examen, trabajo o conversación.
               La orientación inicial por chat es gratis. La sesión de diagnóstico con tutor es paga;
               consulta su precio antes de agendar.
             </p>
@@ -296,7 +296,7 @@ export default function ClasesDeInglesPage() {
       <div className={s.proofStrip}>
         <div className="wrap">
           <ul>
-            <li>✓ Clases 1:1 con tutor asignado</li>
+            <li>✓ Clases con tutor asignado</li>
             <li>✓ Preparación IELTS</li>
             <li>✓ Preparación TOEFL iBT</li>
             <li>✓ Preparación ICFES Inglés</li>
@@ -309,7 +309,7 @@ export default function ClasesDeInglesPage() {
       <FoundersBand
         accent="#1a4fcc"
         title="Una ruta de inglés creada por dos políglotas."
-        intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+        intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
         davidLine="Habla ocho idiomas. El inglés fue el primero, y su experiencia al preparar exámenes ayudó a crear el método que usamos hoy."
         zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
         zhannaTags={['Co-fundadora · Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}

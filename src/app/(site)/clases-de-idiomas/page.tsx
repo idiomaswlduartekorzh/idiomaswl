@@ -7,7 +7,7 @@ import LocalBand from '@/components/hub/LocalBand';
 export const metadata: Metadata = {
   title: 'Clases de idiomas en Bucaramanga y online — 8 idiomas',
   description:
-    'Clases 1:1 en Bucaramanga y online para Colombia. Tutores asignados, ruta por objetivo y preparación IELTS, TOEFL, Goethe, DELF, CILS y TOPIK.',
+    'Clases de idiomas en Bucaramanga y online para Colombia. Tutores asignados, ruta por objetivo y preparación IELTS, TOEFL, Goethe, DELF, CILS y TOPIK.',
   keywords: [
     'clases particulares de idiomas Bucaramanga',
     'clases de idiomas Bucaramanga',
@@ -185,7 +185,7 @@ const jsonLd = {
       '@type': 'Service',
       '@id': 'https://www.idiomaswl.com/clases-de-idiomas#service',
       name: 'Clases de idiomas online — Idiomas WeLearn',
-      description: 'Clases de idiomas online 1:1 en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados.',
+      description: 'Clases de idiomas online en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
@@ -230,7 +230,7 @@ export default function ClasesDeIdiomasPage() {
             </h1>
             <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.75)', maxWidth: 620, margin: '0 auto', lineHeight: 1.6 }}>
               José David y Zhanna fundaron WeLearn en Bucaramanga. Ellos diseñan el método;
-              un tutor asignado adapta las clases 1:1 a tu idioma, nivel y objetivo, presencial
+              un tutor asignado adapta las clases a tu idioma, nivel y objetivo, presencial
               u online.
             </p>
           </div>
@@ -296,7 +296,7 @@ export default function ClasesDeIdiomasPage() {
             { n: '8', label: 'Idiomas disponibles' },
             { n: '9', label: 'Certificaciones oficiales' },
             { n: 'Sotomayor', label: 'Sede en Bucaramanga' },
-            { n: '1:1', label: 'Clases con tutor asignado' },
+            { n: 'Tutor', label: 'Asignado según tu ruta' },
           ].map(s => (
             <div key={s.label} style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--ink)', lineHeight: 1 }}>{s.n}</p>
@@ -442,8 +442,8 @@ export default function ClasesDeIdiomasPage() {
             {[
               { icon: '🎯', title: 'Tutores especializados por idioma', desc: 'Cada tutor conoce el examen al que te preparas, el nivel que tienes y el objetivo que persigues. No son instructores genéricos.' },
               { icon: '📋', title: 'Plan personalizado desde el día 1', desc: 'El diagnóstico inicial define exactamente qué necesitas. El plan cambia si tu ritmo o tu objetivo cambia.' },
-              { icon: '🗣️', title: 'Clases 1:1, no grupos', desc: 'Cada minuto de clase es para ti. Sin esperar turno, sin ritmo de grupo que no se adapta, sin sílabo rígido.' },
-              { icon: '✅', title: 'Sesión individual con tutor', desc: 'La clase y el diagnóstico con tutor tienen costo. Consulta el precio antes de agendar; la orientación inicial por chat es gratuita.' },
+              { icon: '🗣️', title: 'Clases guiadas por tutores', desc: 'Tu ruta parte de tu nivel y objetivo, con práctica guiada y retroalimentación.' },
+              { icon: '✅', title: 'Sesión con tutor', desc: 'La clase y el diagnóstico con tutor tienen costo. Consulta el precio antes de agendar; la orientación inicial por chat es gratuita.' },
             ].map(f => (
               <div key={f.title} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1.4rem' }}>
                 <span style={{ fontSize: '1.75rem', display: 'block', marginBottom: '0.75rem' }}>{f.icon}</span>

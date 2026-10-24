@@ -11,7 +11,7 @@ const candidate = preview || process.env.COURSE_PRICING_ENABLED === 'true';
 const legacyMetadata: Metadata = {
   title: 'Planes y Precios — Inglés, Coreano, IELTS, TOEFL',
   description:
-    'Planes para preparar IELTS, TOEFL, ICFES, Goethe y DELF: simulacros ilimitados, feedback por sección y clases 1:1. Empieza con 3 días gratis.',
+    'Planes de IELTS, TOEFL, ICFES, Goethe y DELF con simulacros. Prueba la plataforma 3 días gratis; clases y diagnóstico con tutor son pagos.',
   keywords: [
     'precio curso inglés Colombia',
     'precio clases idiomas online',
@@ -24,7 +24,7 @@ const legacyMetadata: Metadata = {
   openGraph: {
     title: 'Planes y Precios',
     description:
-      'Planes desde $50.000/mes para inglés, coreano, francés, alemán y más. Simulacros ilimitados + tutor 1:1.',
+      'Planes desde $50.000/mes para varios idiomas. Consulta el precio de las clases y diagnósticos con tutor antes de agendar.',
     url: 'https://www.idiomaswl.com/precios',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/precios' },

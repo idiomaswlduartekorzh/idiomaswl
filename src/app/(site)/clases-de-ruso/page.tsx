@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de ruso en Bucaramanga?',
-    a: 'Depende de la modalidad, individual o grupal, presencial u online, y de la intensidad semanal. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Como referencia del mercado local, las clases particulares de ruso en Bucaramanga se han publicado por encima del promedio nacional, precisamente porque hay muy poca oferta.',
+    a: 'Depende de la modalidad, presencial u online, y de la intensidad semanal. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Como referencia del mercado local, las clases particulares de ruso en Bucaramanga se han publicado por encima del promedio nacional, precisamente porque hay muy poca oferta.',
   },
 ];
 

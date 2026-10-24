@@ -8,7 +8,7 @@ const WA_FUNDADOR = encodeURIComponent('Hola, quiero asegurar mi cupo de Miembro
 export const metadata: Metadata = {
   title: 'Miembro Fundador Coreano — 50 Cupos · Precio Vitalicio',
   description:
-    'Los primeros 50 estudiantes de coreano congelan su precio para siempre: sesión 1:1 con David, grupo exclusivo y todos los niveles. Cupos limitados.',
+    'Los primeros 50 estudiantes de coreano congelan su precio: sesión de bienvenida con David, grupo exclusivo y todos los niveles. Cupos limitados.',
   keywords: [
     'miembro fundador coreano WeLearn',
     'curso coreano precio especial',
@@ -28,7 +28,7 @@ const courseJsonLd = {
   '@type': 'Course',
   name: 'Coreano con WeLearn — Miembro Fundador',
   description:
-    'Programa completo de coreano online con tutor 1:1, método de 17 pasos y preparación para TOPIK I y II. Acceso vitalicio al precio fundador para los primeros 50 estudiantes.',
+    'Programa completo de coreano online con tutor asignado, método de 17 pasos y preparación para TOPIK I y II. Acceso vitalicio al precio fundador para los primeros 50 estudiantes.',
   url: 'https://www.idiomaswl.com/miembro-fundador',
   provider: {
     '@type': 'Organization',
@@ -71,7 +71,7 @@ const PERKS = [
   },
   {
     icon: '🎯',
-    title: 'Sesión 1:1 de bienvenida con David',
+    title: 'Sesión de bienvenida con David',
     desc: 'Una sesión de 60 minutos con David para evaluar tu nivel, entender tus metas y diseñar tu ruta de aprendizaje personal.',
   },
   {
@@ -239,7 +239,7 @@ export default function MiembroFundadorPage() {
               <ul className={s.compareList}>
                 <li>✅ Vocabulario en contexto real desde el día 1</li>
                 <li>✅ Gramática funcional — usas lo que aprendes</li>
-                <li>✅ Tutor 1:1 asignado</li>
+                <li>✅ Tutor asignado</li>
                 <li>✅ Plan personalizado según tus metas</li>
                 <li>✅ Preparación completa para TOPIK I y II</li>
               </ul>

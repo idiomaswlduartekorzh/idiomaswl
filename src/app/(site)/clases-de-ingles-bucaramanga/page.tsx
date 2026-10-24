@@ -114,8 +114,8 @@ const FAQS_LOCAL = [
     a: 'Sí. Puedes venir a la sede en Sotomayor desde Floridablanca, Girón o Piedecuesta, o tomar las clases online por videollamada. También atendemos a estudiantes de otras ciudades de Colombia.',
   },
   {
-    q: '¿Qué diferencia a WeLearn de otras academias de inglés en Bucaramanga?',
-    a: 'Co-fundadores políglotas, dirección académica especializada, método propio y clases 1:1 con tutor asignado. Preparamos IELTS, TOEFL e ICFES con una ruta para cada objetivo.',
+    q: '¿Qué diferencia a WeLearn de las academias de inglés en Bucaramanga?',
+    a: 'Co-fundadores políglotas, dirección académica especializada, método propio y clases con tutor asignado. Preparamos IELTS, TOEFL e ICFES con una ruta para cada objetivo.',
   },
 ];
 
@@ -220,7 +220,7 @@ export default function ClasesInglessBucaramangaPage() {
             <li>✓ Clases online toda Colombia</li>
             <li>✓ Preparación IELTS</li>
             <li>✓ Preparación TOEFL iBT</li>
-            <li>✓ Clases 1:1 con tutor asignado</li>
+            <li>✓ Clases con tutor asignado</li>
             <li>✓ Paquetes de horas con descuento</li>
           </ul>
         </div>
@@ -231,7 +231,7 @@ export default function ClasesInglessBucaramangaPage() {
       <FoundersBand
         accent="#1a4fcc"
         title="Un método de inglés creado por dos políglotas en Bucaramanga."
-        intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+        intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
         davidLine="Habla ocho idiomas. El inglés fue el primero, y su experiencia al preparar exámenes ayudó a crear el método que usamos hoy."
         zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
         zhannaTags={['Co-fundadora · Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
@@ -260,7 +260,7 @@ export default function ClasesInglessBucaramangaPage() {
           <h2 className="wlh-section-h2">Clases con tutores reales y un método propio.</h2>
           <p className="wlh-section-desc" style={{ maxWidth: 580 }}>
             En Bucaramanga hay varias opciones para aprender inglés — grupos masivos, plataformas online genéricas, profesores particulares sin método.
-            WeLearn combina plan individual, tutor asignado y una ruta creada por co-fundadores políglotas con dirección académica especializada.
+            WeLearn combina plan por objetivo, tutor asignado y una ruta creada por co-fundadores políglotas con dirección académica especializada.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginTop: '3rem' }}>
             {[

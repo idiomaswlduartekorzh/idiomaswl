@@ -8,7 +8,7 @@ const WA_ICFES      = encodeURIComponent('Hola, quiero prepararme para el inglé
 export const metadata: Metadata = {
   title: 'Preparación ICFES Inglés con tutor | WeLearn',
   description:
-    'Preparación para Inglés Saber 11 con diagnóstico, plan por habilidades y clases 1:1. Practica aparte con el catálogo gratuito de simulacros ICFES.',
+    'Preparación para Inglés Saber 11 con diagnóstico, plan por habilidades y clases con tutor. Practica aparte con el catálogo gratuito de simulacros ICFES.',
   keywords: [
     'preparación inglés ICFES',
     'Saber 11 inglés',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Preparación ICFES Inglés con tutor | WeLearn',
     description:
-      'Diagnóstico, plan por habilidades y clases 1:1 para estudiantes de toda Colombia.',
+      'Diagnóstico, plan por habilidades y clases con tutor para estudiantes de toda Colombia.',
     url: 'https://www.idiomaswl.com/preparacion-icfes',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/preparacion-icfes' },
@@ -66,7 +66,7 @@ const jsonLd = {
     {
       '@type': 'Course',
       name: 'Preparación Inglés ICFES Saber 11',
-      description: 'Preparación para la sección de inglés del ICFES Saber 11 con diagnóstico, análisis de errores y clases 1:1 con tutor.',
+      description: 'Preparación para la sección de inglés del ICFES Saber 11 con diagnóstico, análisis de errores y clases con tutor.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
@@ -211,8 +211,8 @@ export default function PreparacionICFESPage() {
                 <div className={s.statLabel}>partes del componente</div>
               </div>
               <div className={s.statCard}>
-                <div className={s.statNum}>1:1</div>
-                <div className={s.statLabel}>acompañamiento con tutor</div>
+                <div className={s.statNum}>Tutor</div>
+                <div className={s.statLabel}>acompañamiento en tu ruta</div>
               </div>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function PreparacionICFESPage() {
           <div className={s.proofDivider} />
           <div className={s.proofItem}><strong>Análisis</strong> por sección</div>
           <div className={s.proofDivider} />
-          <div className={s.proofItem}><strong>Clases 1:1</strong> con tutor asignado</div>
+          <div className={s.proofItem}><strong>Clases guiadas</strong> por tutor asignado</div>
           <div className={s.proofDivider} />
           <div className={s.proofItem}><strong>100% online</strong> desde cualquier ciudad</div>
         </div>
@@ -304,7 +304,7 @@ export default function PreparacionICFESPage() {
               </div>
               <div className={s.planStep}>
                 <div className={s.planN}>03</div>
-                <h3 className={s.planTitle}>Clases 1:1 + simulacros semanales</h3>
+                <h3 className={s.planTitle}>Clases con tutor + simulacros semanales</h3>
                 <p className={s.planDesc}>Clases en vivo por videollamada más un simulacro por semana. Cada simulacro es revisado en detalle con el tutor.</p>
               </div>
               <div className={s.planStep}>

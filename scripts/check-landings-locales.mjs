@@ -78,6 +78,11 @@ if (!homeContent || !/'@type':\s*'LocalBusiness'/.test(homeContent) || /'Languag
   fail('home-content.ts', 'el nodo local de inicio debe ser LocalBusiness y no LanguageSchool.');
 }
 
+const hub = read('src/app/(site)/clases-de-idiomas/page.tsx');
+if (!hub || /1:1|clases? uno a uno|diagnóstico (?:gratis|gratuito)/i.test(hub)) {
+  fail('clases-de-idiomas', 'el hub promete una modalidad o diagnóstico gratuito que el propietario retiró.');
+}
+
 const snippetSource = read('src/lib/seo-snippet.ts') ?? '';
 const TITLE_MAX = Number(snippetSource.match(/TITLE_MAX\s*=\s*(\d+)/)?.[1] ?? 60);
 const DESCRIPTION_MAX = Number(snippetSource.match(/DESC_MAX\s*=\s*(\d+)/)?.[1] ?? 155);
@@ -88,6 +93,10 @@ for (const { slug, language, exams, faqSingleSource, titleLocation = 'Bucaramang
   if (!source) {
     fail(slug, 'desapareció la landing comercial.');
     continue;
+  }
+
+  if (/1:1|clases? uno a uno|diagnóstico (?:gratis|gratuito)/i.test(source)) {
+    fail(slug, 'la landing promete una modalidad o diagnóstico gratuito que el propietario retiró.');
   }
 
   const metadata = source.slice(Math.max(0, source.indexOf('export const metadata')));
