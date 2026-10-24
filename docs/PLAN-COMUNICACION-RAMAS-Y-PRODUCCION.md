@@ -38,6 +38,30 @@ seguimiento están en [`SEO-MENSAJES-2026-10-24.md`](SEO-MENSAJES-2026-10-24.md)
 
 ## Remodelación gramatical A1–B1 e imágenes educativas — 24 de octubre de 2026
 
+### Corrección del banco visual por propósito — 24 de octubre de 2026
+
+`codex/grammar-visual-purpose` parte de `origin/main` en `5661967a`. Estado:
+`LISTO_PARA_INTEGRAR`; integración y despliegue pendientes. La revisión visual confirmó
+que el primer banco cambiaba el texto, pero repetía la misma composición de título,
+regla y tres ejemplos en todos los temas. La corrección sustituye esa plantilla única
+por siete familias pedagógicas: mapa de escritura, comparación, tabla de referencia,
+transformaciones, línea temporal, constructor de oraciones y mapa de uso.
+
+Hiragana y katakana muestran sus 46 formas básicas; hangeúl separa vocales,
+consonantes y formación de bloques; el cirílico organiza letras familiares, trampas y
+nuevas; ser/estar compara las conjugaciones en paralelo; los irregulares muestran
+cambios reales, y `〜ようになる` representa antes, proceso y resultado. El resto se
+clasifica usando el modo visual, título, categoría, objetivo, fórmula y consigna gráfica
+ya revisados en cada lección. No se generan escenas decorativas ni texto mediante IA en
+tiempo de ejecución.
+
+Se conserva la ruta visual anterior para compatibilidad y se publica la versión
+pedagógica bajo `/recursos-visuales/gramatica/v2/`; páginas, `ImageObject`, Open Graph,
+Twitter Card y sitemap apuntan a la versión nueva para romper la caché inmutable del
+banco anterior sin perder URLs existentes. Validaciones locales: TypeScript, catálogo
+protegido de 465 temas, protección SEO, build Next.js de 2.764 páginas y render HTTP 200
+`image/png` de las 482 URLs visuales del sitemap, sin fallos.
+
 `codex/korean-grammar-pages-20261013` conserva las URLs, canonicals, títulos y contenido
 rastreable de gramática y completa la fachada nueva de japonés A2–B1. Estado:
 `DESPLEGADO` mediante el PR #37 y el commit de `main`

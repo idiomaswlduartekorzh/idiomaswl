@@ -31,6 +31,7 @@ import {
   PHRASAL_VERB_SEO_PAGES,
   PHRASAL_VERBS_BASE_PATH,
 } from '@/data/herramientas/vocabulario';
+import { grammarVisualUrl } from '@/lib/grammar-visual';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -250,7 +251,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE}/practica/${lang}/${level}/gramatica/${topic.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.72,
-      images: [`${BASE}/recursos-visuales/gramatica/${lang}/${level}/${topic.slug}`],
+      images: [grammarVisualUrl(lang, level, topic.slug)],
     })),
 
     // ── Practice — vocabulary, hub + one URL per themed block ─────────────────

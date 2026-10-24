@@ -7,7 +7,18 @@ import {
   type GrammarVisualLanguage,
   type GrammarVisualLevel,
 } from '@/lib/grammar-visual'
+import { getGrammarVisualKind } from '@/lib/grammar-visual-blueprint'
 import styles from './GrammarTopicVisual.module.css'
+
+const VISUAL_LABELS = {
+  script: 'Mapa de escritura',
+  contrast: 'Comparación visual',
+  reference: 'Tabla de referencia',
+  transformation: 'Tabla de transformaciones',
+  timeline: 'Línea de tiempo',
+  structure: 'Constructor visual',
+  usage: 'Mapa de uso',
+} as const
 
 export default function GrammarTopicVisual({
   topic,
@@ -22,13 +33,14 @@ export default function GrammarTopicVisual({
 }) {
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const imagePath = grammarVisualPath(idioma, nivel, topic.slug)
+  const visualLabel = VISUAL_LABELS[getGrammarVisualKind(topic)]
 
   return (
     <figure className={styles.figure} aria-labelledby={`visual-caption-${topic.slug}`}>
       <div className={styles.heading}>
         <div>
           <span>Guía visual para guardar y compartir</span>
-          <h2>Explicación visual de {topic.shortTitle}</h2>
+          <h2>{visualLabel} de {topic.shortTitle}</h2>
         </div>
         <p>{language.native} · {nivel.toUpperCase()}</p>
       </div>
@@ -46,7 +58,7 @@ export default function GrammarTopicVisual({
       <figcaption id={`visual-caption-${topic.slug}`}>
         <span>Regla clave</span>
         <strong>{topic.guide.formula}</strong>
-        <p>Imagen educativa original de Idiomas WeLearn. Ábrela para verla en tamaño completo.</p>
+        <p>Recurso educativo original construido con la tabla, la regla o el mapa específico de esta lección. Ábrelo en tamaño completo.</p>
       </figcaption>
     </figure>
   )

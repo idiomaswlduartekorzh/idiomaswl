@@ -1,6 +1,9 @@
 import type { GrammarTopic } from '@/data/grammar/types'
 
-export const GRAMMAR_VISUAL_BASE = '/recursos-visuales/gramatica'
+// v2 identifica el banco pedagógico por propósito. La ruta anterior sigue viva como
+// compatibilidad, pero las páginas, metadatos y sitemaps apuntan a esta versión para
+// que navegadores y buscadores no reutilicen durante un año las imágenes genéricas.
+export const GRAMMAR_VISUAL_BASE = '/recursos-visuales/gramatica/v2'
 export const SITE_ORIGIN = 'https://www.idiomaswl.com'
 
 export const GRAMMAR_VISUAL_LANGUAGES = {
@@ -35,7 +38,7 @@ export function grammarVisualUrl(idioma: string, nivel: string, slug: string): s
 
 export function grammarVisualAlt(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string): string {
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
-  return `Explicación visual de ${topic.shortTitle} en ${language.label} ${nivel.toUpperCase()}: ${topic.guide.formula}`
+  return `Infografía de ${topic.shortTitle} en ${language.label} ${nivel.toUpperCase()} con tabla, regla y ejemplos: ${topic.guide.formula}`
 }
 
 export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string) {
@@ -45,7 +48,7 @@ export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVis
     '@type': 'ImageObject',
     name: `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
     caption: grammarVisualAlt(topic, idioma, nivel),
-    description: `Infografía educativa con la regla, el modelo y ejemplos de ${topic.shortTitle}, creada por Idiomas WeLearn para hispanohablantes.`,
+    description: `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
     contentUrl,
     url: contentUrl,
     width: 1200,
