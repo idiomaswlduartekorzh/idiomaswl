@@ -9,6 +9,20 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Consultas desde SEO y conciliación de WhatsApp — 24 de octubre de 2026
+
+`codex/seo-message-funnel-20261024` parte de `origin/main` en `68f28b6e`.
+Estado al abrir [PR #39](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/39):
+`EN_VALIDACION`; integración y despliegue de producción pendientes. Se añadieron
+enlaces contextuales a la práctica TOPIK gratuita y a la oferta con tutor desde
+dos guías que ya reciben visitas, sin cambiar sus URL, títulos, H1 ni canonicals.
+La landing de francés, de alcance reducido, aclara la oferta presencial y online
+en el H1. El panel privado explica cómo confirmar solo mensajes efectivamente
+recibidos; los clics de WhatsApp continúan separados de los mensajes. No hay
+migración ni variables nuevas. Pasaron línea base, catálogo, TypeScript, ESLint
+sin errores y build Webpack de 2.764 páginas. El diagnóstico y el protocolo de
+seguimiento están en [`SEO-MENSAJES-2026-10-24.md`](SEO-MENSAJES-2026-10-24.md).
+
 ## Remodelación gramatical A1–B1 e imágenes educativas — 24 de octubre de 2026
 
 `codex/korean-grammar-pages-20261013` conserva las URLs, canonicals, títulos y contenido
