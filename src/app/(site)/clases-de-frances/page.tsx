@@ -1,3 +1,4 @@
+import LanguageResourceLinks from '@/components/hub/LanguageResourceLinks';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -267,6 +268,8 @@ export default function ClasesDeFrancesPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>DELF A1 hasta DALF C2</strong></span>
         </div>
+
+        <LanguageResourceLinks language="frances" />
 
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand

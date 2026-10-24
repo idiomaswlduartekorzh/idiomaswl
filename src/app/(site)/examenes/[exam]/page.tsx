@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { EXAMS } from '@/data/exams';
+import { LANGUAGE_RESOURCES } from '@/data/language-resources';
 import ExamInfoGraphic from './ExamInfoGraphic';
 import MockGrid from './MockGrid';
 import ExamGuideBlock from './ExamGuide';
@@ -88,6 +89,9 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   const { exam: slug } = await params;
   const exam = EXAMS[slug];
   if (!exam) notFound();
+  const language = Object.values(LANGUAGE_RESOURCES).find(resource =>
+    resource.exams.some(item => item.href === `/examenes/${slug}`)
+  ) ?? (exam.language === 'Inglés' ? LANGUAGE_RESOURCES.ingles : undefined);
   const guide = EXAM_GUIDES[slug];
   const podcasts = getExamPodcasts(slug);
   const icfesResourceCount = slug === 'icfes' ? exam.mocks.length + 1 : 0;
@@ -131,6 +135,14 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
       </nav>
 
       <ExamInfoGraphic exam={exam} hasPodcast={podcasts.length > 0} />
+
+      {language ? (
+        <nav className={styles.languageLinks} aria-label={`Más recursos de ${language.name}`}>
+          <span>¿Quieres reforzar tu {language.name} antes del simulacro?</span>
+          <Link href={language.practice}>Ejercicios por nivel →</Link>
+          <Link href={language.classes}>Clases con tutor →</Link>
+        </nav>
+      ) : null}
 
       {slug === 'toefl' ? <ToeflCluster accent={exam.color} /> : null}
 

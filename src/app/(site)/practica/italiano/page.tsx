@@ -49,6 +49,7 @@ export default function ItalianoPage() {
         inLanguage="it"
       />
       <LanguageHub
+        language="italiano"
         langLabel="🇮🇹 Italiano"
         eyebrow="🇮🇹 Italiano"
         title="Scegli il tuo livello"

@@ -1,3 +1,4 @@
+import LanguageResourceLinks from '@/components/hub/LanguageResourceLinks';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FoundersBand from '@/components/hub/FoundersBand';
@@ -265,6 +266,8 @@ export default function ClasesDeAlemanPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · Sotomayor</span>
         </div>
+
+        <LanguageResourceLinks language="aleman" />
 
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand

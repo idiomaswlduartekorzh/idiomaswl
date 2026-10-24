@@ -1,3 +1,4 @@
+import LanguageResourceLinks from '@/components/hub/LanguageResourceLinks';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -306,6 +307,8 @@ export default function ClasesDeInglesPage() {
       </div>
 
       {/* ── FUNDADORES ───────────────────────────────────────────────────── */}
+      <LanguageResourceLinks language="ingles" />
+
       <FoundersBand
         accent="#1a4fcc"
         title="Una ruta de inglés creada por dos políglotas."

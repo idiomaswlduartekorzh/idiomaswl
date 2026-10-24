@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { LANGUAGE_RESOURCES, type LanguageResourceKey } from '@/data/language-resources'
 import s from './LanguageHub.module.css'
 
 /**
@@ -31,6 +32,7 @@ export type HubTool = {
 }
 
 export type LanguageHubProps = {
+  language: LanguageResourceKey
   /** La última migaja: «🇰🇷 Coreano». */
   langLabel: string
   eyebrow: string
@@ -48,6 +50,7 @@ export type LanguageHubProps = {
 }
 
 export default function LanguageHub({
+  language,
   langLabel,
   eyebrow,
   title,
@@ -59,6 +62,7 @@ export default function LanguageHub({
   beforeLevels,
   levelExtra,
 }: LanguageHubProps) {
+  const related = LANGUAGE_RESOURCES[language]
   return (
     <div className="wlp-page" style={{ '--wlp-accent': accent } as React.CSSProperties}>
       <div className="wlp-shell">
@@ -73,6 +77,14 @@ export default function LanguageHub({
           <h1>{title}</h1>
           <p className="wlp-hero-lead">{lead}</p>
         </header>
+
+        <nav className={s.related} aria-label={`Más recursos de ${related.name}`}>
+          <span>Más sobre {related.name}:</span>
+          <Link href={related.classes}>Clases con tutor</Link>
+          {related.exams.map(exam => (
+            <Link key={exam.href} href={exam.href}>Recursos {exam.label}</Link>
+          ))}
+        </nav>
 
         {beforeLevels ? <div className={s.list}>{beforeLevels}</div> : null}
 

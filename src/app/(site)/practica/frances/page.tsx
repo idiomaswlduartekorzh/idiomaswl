@@ -34,6 +34,7 @@ export default function FrancesPage() {
         inLanguage="fr"
       />
       <LanguageHub
+        language="frances"
         langLabel="🇫🇷 Francés"
         eyebrow="🇫🇷 Francés"
         title="Elige tu nivel"

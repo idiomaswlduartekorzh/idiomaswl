@@ -1,3 +1,4 @@
+import LanguageResourceLinks from '@/components/hub/LanguageResourceLinks';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FoundersBand from '@/components/hub/FoundersBand';
@@ -219,6 +220,8 @@ export default function ClasesDeItalianoPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>B1 de ciudadanía · CILS y CELI</strong></span>
         </div>
+
+        <LanguageResourceLinks language="italiano" />
 
         {/* ══════════════ FUNDADORES ══════════════ */}
         <FoundersBand

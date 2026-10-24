@@ -34,6 +34,7 @@ export default function AlemanPage() {
         inLanguage="de"
       />
       <LanguageHub
+        language="aleman"
         langLabel="🇩🇪 Alemán"
         eyebrow="🇩🇪 Alemán"
         title="Elige tu nivel"
