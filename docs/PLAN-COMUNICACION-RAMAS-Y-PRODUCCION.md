@@ -13,8 +13,9 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 
 `codex/korean-grammar-pages-20261013` conserva las URLs, canonicals, títulos y contenido
 rastreable de gramática y completa la fachada nueva de japonés A2–B1. Estado:
-`LISTO_PARA_INTEGRAR`; sin migraciones ni variables nuevas. Los audios que no existían
-siguen explícitamente pendientes y no se anuncian como publicados.
+`DESPLEGADO` mediante el PR #37 y el commit de `main`
+`9bd3304c2c44d54b974cd70c80003f8eca3a0533`; sin migraciones ni variables nuevas. Los
+audios que no existían siguen explícitamente pendientes y no se anuncian como publicados.
 
 Cada entrada del registro de gramática incorpora una infografía educativa original de
 1200 × 630 construida con la fórmula y los ejemplos revisados del tema. La imagen aparece
@@ -27,10 +28,11 @@ posición.
 
 Validaciones: TypeScript y ESLint focalizado sin errores; catálogo protegido de 465 temas;
 protección SEO de 17 índices y 17 plantillas; 467 snippets; build Webpack completo de 2.764
-páginas; HTTP 200 y `image/png` en muestras de los ocho idiomas; HTML con `ImageObject`,
-`og:image` y `twitter:image`; sitemap con 482 recursos visuales únicos. Falta integrar
-sobre `origin/main`, esperar Vercel y ejecutar el smoke público antes de cambiar el estado
-a `DESPLEGADO`.
+páginas; checks de GitHub y despliegue Vercel
+`HLj95gyySxnzZr4VnCNdUFkgigDm` completados. El smoke público confirmó HTTP 200 en la
+lección japonesa B1, PNG 1200 × 630 y `image/png` en muestras de los ocho idiomas, HTML
+con `ImageObject`, `og:image` y `twitter:image`, caché inmutable y sitemap con 482 recursos
+visuales únicos.
 
 ## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
 
