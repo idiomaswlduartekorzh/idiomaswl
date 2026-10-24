@@ -10,6 +10,8 @@
 
 Servicio de clases particulares de idiomas con tutores y sede en Bucaramanga, Colombia; el propietario confirma que **WeLearn no es una academia**. Fundadores: **José David Duarte Silva** (políglota 8 idiomas, cara visible) y **Zhanna Korzh** (directora académica). Producto: clases de idiomas (inglés, coreano, francés, alemán, italiano, portugués) + preparación de exámenes (IELTS, TOEFL, ICFES, Goethe, DELF, CILS, CELPE-Bras) + plataforma con método propio de 17 pasos. Sitio: **idiomaswl.com**.
 
+En el contenido comercial, no prometer clases «1:1» ni «uno a uno». Las clases y los diagnósticos con tutor son pagos. Las pruebas automáticas de nivel pueden ser gratis, pero deben presentarse como herramientas automáticas y no como sesiones humanas.
+
 ---
 
 ## Stack técnico

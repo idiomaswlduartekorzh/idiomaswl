@@ -16,6 +16,8 @@ Read `docs/OPERACION-REPOSITORIO.md` before changing content, deploying, merging
 
 El propietario confirmó que WeLearn no es una academia. Al describir la marca en contenido visible, metadatos, datos estructurados o prompts, usar «clases particulares de idiomas con tutores», «equipo de tutores» o una descripción específica y verificable del servicio. Conservar la sede en Bucaramanga, la opción online y el método diseñado por sus fundadores cuando corresponda. «Academia» solo puede aparecer al hablar de otras entidades, consultas comparativas o citas textuales atribuidas; no debe presentarse como identidad de WeLearn ni usarse `LanguageSchool` en sus datos estructurados.
 
+El propietario también pidió retirar la promesa de clases «1:1» o «uno a uno» de la oferta comercial. Describir el acompañamiento del tutor sin afirmar una modalidad individual. Ninguna clase, asesoría o diagnóstico con tutor es gratis; las pruebas automáticas de la web sí pueden ser gratuitas, siempre identificadas claramente como herramientas automáticas.
+
 ## Antes de integrar tu rama en `main` — léelo
 
 Si tu rama nació antes del **7 de agosto de 2026**, `main` lleva por delante trabajo que no

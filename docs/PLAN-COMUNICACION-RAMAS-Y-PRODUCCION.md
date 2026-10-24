@@ -11,6 +11,25 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 
 ## Auditoría WhatsApp y corrección de oferta SEO — 23 de octubre de 2026
 
+### Retiro de promesas de modalidad individual y oferta gratis — 23 de octubre de 2026
+
+`codex/copy-offer-audit` parte de `origin/main` en `8148b4ed`.
+Estado: `VALIDADO_PENDIENTE_DE_PR`. El propietario pidió retirar transversalmente la promesa
+«1:1 / uno a uno», mantener a WeLearn fuera de la categoría de academia y
+eliminar «diagnóstico gratis» como posible promesa de sesión humana. Se ajustan
+landings, metadatos, JSON-LD, imágenes OG, precios, preparación ICFES, el panel
+de estudiante y los artículos que describen la oferta. Las pruebas de nivel
+automáticas siguen siendo gratuitas y se nombran como tales; clases y
+diagnósticos con tutor son pagos. Las comparaciones sobre academias ajenas y
+la cita textual atribuida se conservan. Permanecen las URL, títulos y
+canonicals de las diez páginas de clases. El reporte privado del propietario
+contrasta 15 conversaciones codificadas de WhatsApp, alcance del panel y
+clics orgánicos de Search Console, sin equiparar clics con mensajes enviados.
+Pasaron TypeScript, landings locales, fragmentos SEO y el build Webpack de
+2.764 rutas. La ejecución del prebuild completo se detuvo en la máquina local
+por un enlace faltante del paquete `jiti`; los checks específicos de esta
+corrección y la compilación de la aplicación sí completaron.
+
 ### Identidad de marca en páginas de idiomas — 23 de octubre de 2026
 
 `codex/tutores-no-academia` parte de `main` en `819d4ba`.

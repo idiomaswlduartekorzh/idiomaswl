@@ -16,7 +16,7 @@ const WA_FUNDADOR  = encodeURIComponent('Hola, me interesa el cupo de Miembro Fu
 export const metadata: Metadata = {
   title: 'Clases de Coreano en Bucaramanga y Online — TOPIK, Hangul',
   description:
-    'Clases de coreano en Bucaramanga y online para toda Colombia. Hangul, pronunciación y preparación TOPIK I y II, con clases 1:1.',
+    'Clases de coreano en Bucaramanga y online para toda Colombia. Hangul, pronunciación y preparación TOPIK I y II, con tutores especializados.',
   keywords: [
     'clases de coreano online Colombia',
     'aprender coreano Bucaramanga',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Coreano en Bucaramanga y Online',
     description:
-      'Clases de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases 1:1. 50 cupos de Miembro Fundador para toda Colombia.',
+      'Clases de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases con tutor. 50 cupos de Miembro Fundador para toda Colombia.',
     url: 'https://www.idiomaswl.com/clases-de-coreano',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-coreano' },
@@ -61,7 +61,7 @@ const jsonLd = {
     {
       '@type': 'Course',
       name: 'Coreano con el método WeLearn',
-      description: 'Aprende coreano desde cero hasta TOPIK con el método WeLearn. Clases 1:1 con tutor especializado.',
+      description: 'Aprende coreano desde cero hasta TOPIK con el método WeLearn. Clases con tutor especializado.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
@@ -145,7 +145,7 @@ const FAQS = [
   },
   {
     q: '¿Las clases son en vivo o grabadas?',
-    a: 'Las clases 1:1 son en vivo por videollamada. También tienes acceso a videos, ejercicios y podcasts para practicar entre sesiones.',
+    a: 'Las clases online son en vivo por videollamada. También tienes acceso a videos, ejercicios y podcasts para practicar entre sesiones.',
   },
 ];
 
@@ -231,7 +231,7 @@ export default function ClasesDeCoreanoPage() {
         <FoundersBand
           accent="#c8202e"
           title="Una ruta de coreano creada por dos políglotas."
-          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
           davidLine="Habla ocho idiomas y el coreano fue el último que aprendió. Justamente por eso llegó a él con todo el método ya afinado, y sabe qué atajos funcionan y cuáles no."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del TOPIK corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación TOPIK', 'Diseño curricular']}
@@ -367,7 +367,7 @@ export default function ClasesDeCoreanoPage() {
                 <div className={s.founderPerk}><span>✅</span> Precio vitalicio — nunca sube para ti</div>
                 <div className={s.founderPerk}><span>✅</span> Acceso prioritario a todos los niveles nuevos</div>
                 <div className={s.founderPerk}><span>✅</span> Grupo exclusivo de fundadores en WhatsApp</div>
-                <div className={s.founderPerk}><span>✅</span> Sesión de bienvenida 1:1 con David</div>
+                <div className={s.founderPerk}><span>✅</span> Sesión de bienvenida con David</div>
                 <div className={s.founderPerk}><span>✅</span> Tu nombre en los créditos del programa</div>
               </div>
               <a
@@ -543,7 +543,7 @@ export default function ClasesDeCoreanoPage() {
         {/* ══════════════ DIAGNÓSTICO TOPIK ══════════════ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>
-            <p className={s.sectionEyebrow}>Diagnóstico gratuito</p>
+            <p className={s.sectionEyebrow}>Prueba TOPIK automática gratuita</p>
             <h2 className={s.h2}>¿En qué nivel de coreano estás?</h2>
             <p style={{ color: 'var(--muted)', maxWidth: 560, marginBottom: '2rem', lineHeight: 1.65, fontSize: '0.97rem' }}>
               Haz el simulacro de lectura estilo TOPIK I y descubre en minutos si eres

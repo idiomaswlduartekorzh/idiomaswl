@@ -23,7 +23,7 @@ export default function Image() {
 
         <div style={{ fontSize: 58, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
           Clases de idiomas<br />
-          <span style={{ color: '#60a5fa' }}>online. 1:1. En serio.</span>
+          <span style={{ color: '#60a5fa' }}>online. Con tutores. En serio.</span>
         </div>
 
         <div style={{ display: 'flex', gap: 10, marginBottom: 28, flexWrap: 'wrap' }}>

@@ -272,7 +272,7 @@ export default function ClasesDeFrancesPage() {
         <FoundersBand
           accent="#1a2ecc"
           title="Una ruta de francés creada por dos políglotas."
-          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
           davidLine="Habla ocho idiomas. Llegó al francés después del inglés, el italiano y el portugués — y ese recorrido es exactamente el método que hoy usamos con hispanohablantes."
           zhannaLine="Estudió en Francia y en Inglaterra. Esa experiencia académica dentro del sistema francés es la que respalda nuestra preparación DELF y DALF."
           zhannaTags={['Co-fundadora · Estudió en Francia', 'Preparación DELF / DALF', 'Diseño curricular']}

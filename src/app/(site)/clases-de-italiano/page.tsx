@@ -13,7 +13,7 @@ const WA_CILS    = encodeURIComponent('Hola, quiero prepararme para el examen CI
 export const metadata: Metadata = {
   title: 'Clases de italiano en Bucaramanga y online — CILS y CELI',
   description:
-    'Clases de italiano 1:1 en Bucaramanga y online. Prepara el B1 de ciudadanía italiana, CILS o CELI con tutor y plan según tu nivel.',
+    'Clases de italiano en Bucaramanga y online. Prepara el B1 de ciudadanía italiana, CILS o CELI con tutor y plan según tu nivel.',
   keywords: [
     'clases de italiano Bucaramanga',
     'clases particulares de italiano Bucaramanga',
@@ -224,7 +224,7 @@ export default function ClasesDeItalianoPage() {
         <FoundersBand
           accent="#009246"
           title="Una ruta de italiano creada por dos políglotas."
-          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
           davidLine="Habla ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés — y es el que mejor demuestra cuánta ventaja te da ya hablar español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación CILS y CELI corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación CILS / CELI', 'Diseño curricular']}

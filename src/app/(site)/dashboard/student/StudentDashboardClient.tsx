@@ -756,7 +756,7 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
                   <p className="std-lock-card__eyebrow">🔒 Plan Intensivo</p>
                   <p className="std-lock-card__title">Sesiones en vivo</p>
                   <p className="std-lock-card__desc">
-                    Clases 1:1 con tutor asignado, plan de estudio personalizado y evaluación mensual.
+                    Clases con tutor asignado, plan de estudio personalizado y evaluación mensual.
                   </p>
                   <a
                     href="https://wa.me/573005004253?text=Hola%2C%20quiero%20conocer%20el%20plan%20Intensivo%20de%20WeLearn."
