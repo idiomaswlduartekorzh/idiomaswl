@@ -7,8 +7,8 @@ import styles from '../icfes-learning.module.css';
 const CANONICAL = 'https://www.idiomaswl.com/practica/icfes-saber-11/diagnostico';
 
 export const metadata: Metadata = {
-  title: 'Diagnóstico ICFES Inglés gratis y ruta por habilidades',
-  description: 'Haz un diagnóstico gratuito de Inglés ICFES Saber 11 y recibe nivel inicial, fortalezas, debilidades y una ruta de práctica por habilidades.',
+  title: 'Prueba automática ICFES Inglés y ruta por habilidades',
+  description: 'Haz una prueba automática gratuita de Inglés ICFES Saber 11 y recibe nivel inicial, fortalezas, debilidades y una ruta de práctica por habilidades.',
   alternates: { canonical: CANONICAL },
   openGraph: { title: 'Diagnóstico ICFES Inglés y ruta inteligente', description: '15 preguntas, reporte por habilidad y siguiente nivel recomendado.', url: CANONICAL, type: 'website' },
 };

@@ -270,7 +270,7 @@ export default function ClasesDeAlemanPage() {
         <FoundersBand
           accent="#1a2ecc"
           title="Una ruta de alemán creada por dos políglotas."
-          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
           davidLine="Habla ocho idiomas. El alemán es de los que más le costó, y por eso es el que mejor sabe explicar: casos, orden de la frase y verbos separables, paso a paso desde el español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Goethe corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación Goethe', 'Diseño curricular']}

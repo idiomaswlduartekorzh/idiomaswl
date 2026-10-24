@@ -13,7 +13,7 @@ const WA_JLPT    = encodeURIComponent('Hola, quiero prepararme para el JLPT con 
 export const metadata: Metadata = {
   title: 'Clases de japonés en Bucaramanga y online — JLPT desde cero',
   description:
-    'Clases de japonés 1:1 en Bucaramanga y online: aprende hiragana y katakana, avanza hacia el JLPT y prepara tus objetivos de estudio en Japón.',
+    'Clases de japonés en Bucaramanga y online: aprende hiragana y katakana, avanza hacia el JLPT y prepara tus objetivos de estudio en Japón.',
   keywords: [
     'clases de japonés Bucaramanga',
     'curso de japonés Bucaramanga',
@@ -80,7 +80,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de japonés en Bucaramanga?',
-    a: 'Depende de la modalidad, individual o grupal, presencial u online, y de la intensidad semanal. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos por WhatsApp al 300 500 4253.',
+    a: 'Depende de la modalidad, presencial u online, y de la intensidad semanal. El diagnóstico inicial es de pago y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos por WhatsApp al 300 500 4253.',
   },
 ];
 
@@ -233,7 +233,7 @@ export default function ClasesDeJaponesPage() {
         <FoundersBand
           accent="#BC002D"
           title="Una ruta de japonés creada por dos políglotas."
-          intro="Los fundadores diseñan el método y la ruta; un tutor asignado te acompaña en tus clases 1:1."
+          intro="Los fundadores diseñan el método y la ruta; un tutor asignado acompaña tu aprendizaje según tu objetivo."
           davidLine="Habla ocho idiomas. Llegó al japonés casi al final del recorrido, con el método ya probado en lenguas lejanas al español, y por eso sabe qué atajos sirven y cuáles hacen perder meses."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del JLPT corresponda a lo que el examen realmente evalúa."
           zhannaTags={['Lingüista titulada · Co-fundadora', 'Rutas de certificación', 'Diseño curricular']}
