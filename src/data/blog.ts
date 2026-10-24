@@ -424,7 +424,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       'Qué evalúa el TOPIK I, cómo se califica, qué materiales gratuitos sirven y un plan de ocho semanas para alcanzar el nivel 1 o 2.',
     date: '2026-05-22',
-    updatedDate: '2026-05-30',
+    updatedDate: '2026-10-24',
     readTime: 7,
     category: 'Coreano',
     tags: ['TOPIK', 'TOPIK I', 'coreano', 'examen coreano', 'Korea', 'certificación', 'principiantes'],
@@ -501,6 +501,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Practica las estrategias de eliminación en Reading.</li>
   <li>Confirma la sede del examen, documentos y horarios con semanas de anticipación (los cupos se agotan).</li>
 </ul>
+<p>Para comprobar qué partes de lectura necesitas reforzar, puedes hacer la <a href="/examenes/topik/practica/set-1">práctica TOPIK I automática y gratuita</a>. Su resultado es orientativo. Si prefieres revisar errores y organizar una ruta con una persona, mira cómo funcionan las <a href="/clases-de-coreano">clases de coreano con tutor</a>; la sesión con tutor es paga y te informamos el precio antes de agendar.</p>
 
 <h2>¿Dónde se presenta el TOPIK en Colombia?</h2>
 <p>El TOPIK en Colombia generalmente se presenta en Bogotá, en la embajada de Corea o en alianza con universidades con departamento de estudios coreanos. Las convocatorias se abren una o dos veces por año. Sigue la página del NIIED y del Centro Cultural Coreano para las fechas.</p>
@@ -1241,7 +1242,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       'Qué significan Pre A1, A1, A2 y B1 en el ICFES, cuántos puntos necesita cada uno y qué estudiar para subir al siguiente nivel.',
     date: '2026-05-30',
-    updatedDate: '2026-09-08',
+    updatedDate: '2026-10-24',
     readTime: 8,
     category: 'ICFES',
     tags: ['ICFES inglés', 'Saber 11', 'puntaje inglés', 'B1 ICFES', 'preparación ICFES', 'Colombia'],
@@ -1324,6 +1325,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>El avance depende del punto de partida, la frecuencia de práctica y la calidad del análisis de errores. Mide el progreso con bloques comparables y ajusta el plan según la habilidad, no según una promesa comercial.</p>
 <p>Si necesitas certificar B2, debes usar un examen internacional o el instrumento que acepte la institución correspondiente; Saber 11 reporta hasta B1.</p>
 <p>Si quieres prepararte con acompañamiento de un tutor y un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>. Si prefieres medirte primero, abre el <a href="/examenes/icfes">catálogo de simulacros ICFES Inglés</a>: diferencia prácticas propias, bancos históricos atribuidos y el recorrido guiado de 55 preguntas.</p>
+<p>Si estás en Bucaramanga y prefieres estudiar presencialmente, conoce también las <a href="/clases-de-ingles-bucaramanga">clases de inglés en la sede de Sotomayor</a>. Puedes contar tu objetivo por chat sin costo; las clases y diagnósticos con tutor son pagos.</p>
 <p>Lee también: <a href="/blog/puntaje-icfes-ingles-niveles-y-como-mejorar">Puntaje ICFES inglés: niveles, puntaje mínimo y cómo mejorarlo en 3 meses</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },

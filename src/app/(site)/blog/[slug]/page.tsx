@@ -302,6 +302,7 @@ export default async function BlogArticlePage(
             <div className={s.ctaActions}>
               <a
                 href={`https://wa.me/${WA}?text=${encodeURIComponent(`${cta.msg} (Blog: ${post.slug})`)}`}
+                data-wa-cta="blog-final"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={s.ctaBtn}
