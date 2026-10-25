@@ -56,6 +56,13 @@ C2 se renderizó para comprobar legibilidad. Pasaron TypeScript, catálogo prote
 local confirmó la navegación de nivel, las seis etapas de ejercicios, recursos sin
 audio e infografías distintas por propósito.
 
+Tras la primera revisión móvil, la lección de aprobación `inversion-emphasis-c1` se
+reconstruyó como experiencia monolingüe en inglés: interfaz, explicación, instrucciones,
+retroalimentación, mapa, ejercicios y PDF. El cuaderno conserva siete páginas y presenta
+18 ejercicios imprimibles con solucionario; la versión web conserva seis etapas y 29
+actividades. Esta corrección fija el estándar editorial que deberá aplicarse al resto de
+la expansión B2–C2 después de la aprobación del piloto.
+
 ### Corrección del banco visual por propósito — 24 de octubre de 2026
 
 `codex/grammar-visual-purpose` parte de `origin/main` en `5661967a`. Estado:

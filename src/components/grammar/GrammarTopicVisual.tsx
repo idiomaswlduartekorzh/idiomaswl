@@ -25,12 +25,15 @@ export default function GrammarTopicVisual({
   idioma,
   nivel,
   priority = false,
+  uiLanguage = 'es',
 }: {
   topic: GrammarTopic
   idioma: GrammarVisualLanguage
   nivel: GrammarVisualLevel
   priority?: boolean
+  uiLanguage?: 'es' | 'en'
 }) {
+  const english = uiLanguage === 'en'
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const imagePath = grammarVisualPath(idioma, nivel, topic.slug)
   const visualLabel = VISUAL_LABELS[getGrammarVisualKind(topic)]
@@ -39,12 +42,12 @@ export default function GrammarTopicVisual({
     <figure className={styles.figure} aria-labelledby={`visual-caption-${topic.slug}`}>
       <div className={styles.heading}>
         <div>
-          <span>Guía visual para guardar y compartir</span>
-          <h2>{visualLabel} de {topic.shortTitle}</h2>
+          <span>{english ? 'Visual guide to save and share' : 'Guía visual para guardar y compartir'}</span>
+          <h2>{english ? `Visual guide: ${topic.shortTitle}` : `${visualLabel} de ${topic.shortTitle}`}</h2>
         </div>
         <p>{language.native} · {nivel.toUpperCase()}</p>
       </div>
-      <a href={imagePath} className={styles.imageLink} aria-label={`Abrir la infografía de ${topic.shortTitle} en tamaño completo`}>
+      <a href={imagePath} className={styles.imageLink} aria-label={english ? `Open the full-size ${topic.shortTitle} infographic` : `Abrir la infografía de ${topic.shortTitle} en tamaño completo`}>
         <Image
           src={imagePath}
           alt={grammarVisualAlt(topic, idioma, nivel)}
@@ -56,9 +59,9 @@ export default function GrammarTopicVisual({
         />
       </a>
       <figcaption id={`visual-caption-${topic.slug}`}>
-        <span>Regla clave</span>
+        <span>{english ? 'Key rule' : 'Regla clave'}</span>
         <strong>{topic.guide.formula}</strong>
-        <p>Recurso educativo original construido con la tabla, la regla o el mapa específico de esta lección. Ábrelo en tamaño completo.</p>
+        <p>{english ? 'Original learning resource built from this lesson’s specific rule, table and examples. Open it at full size.' : 'Recurso educativo original construido con la tabla, la regla o el mapa específico de esta lección. Ábrelo en tamaño completo.'}</p>
       </figcaption>
     </figure>
   )

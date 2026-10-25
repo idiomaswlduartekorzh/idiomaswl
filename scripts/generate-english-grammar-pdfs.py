@@ -69,7 +69,9 @@ STYLES = {
 class Workbook(BaseDocTemplate):
     def __init__(self, filename, topic):
         self.topic = topic
-        super().__init__(filename, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=31 * mm, bottomMargin=20 * mm, title=f"Idiomas WeLearn - {topic['title']}", author='Idiomas WeLearn', subject=f"Cuaderno de gramática inglesa {topic['level']}")
+        advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
+        subject = f"English grammar workbook {topic['level']}" if advanced else f"Cuaderno de gramática inglesa {topic['level']}"
+        super().__init__(filename, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=31 * mm, bottomMargin=20 * mm, title=f"Idiomas WeLearn - {topic['title']}", author='Idiomas WeLearn', subject=subject)
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id='body')
         self.addPageTemplates([PageTemplate(id='welearn', frames=[frame], onPage=self.draw_page)])
 
@@ -87,8 +89,11 @@ class Workbook(BaseDocTemplate):
         canvas.line(18 * mm, PAGE_H - 28 * mm, PAGE_W - 18 * mm, PAGE_H - 28 * mm)
         canvas.setFillColor(MUTED)
         canvas.setFont('WeLearnEN', 6.7)
-        canvas.drawString(18 * mm, 10 * mm, f"Material original · Inglés {self.topic['level']} · idiomaswl.com")
-        canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'Página {doc.page}')
+        advanced = self.topic['level'].lower() in ('b2', 'c1', 'c2')
+        footer = f"Original material · English {self.topic['level']} · idiomaswl.com" if advanced else f"Material original · Inglés {self.topic['level']} · idiomaswl.com"
+        page_label = 'Page' if advanced else 'Página'
+        canvas.drawString(18 * mm, 10 * mm, footer)
+        canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'{page_label} {doc.page}')
         canvas.restoreState()
 
 
@@ -121,19 +126,21 @@ def blank_text(text):
 
 def exercises_for(topic):
     exercises, answers, number = [], [], 1
+    advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
+    options_label = 'Options' if advanced else 'Opciones'
     for level in topic['practice']['levels']:
         kind, title = level['type'], level['title']
         if kind == 'choice':
             for item in level['items']:
                 prompt = ' '.join(line[1] for line in item['lines'])
-                exercises.append((number, title, f"{prompt}   Opciones: {' · '.join(item['options'])}"))
+                exercises.append((number, title, f"{prompt}   {options_label}: {' · '.join(item['options'])}"))
                 answers.append((number, item['answer'], item['explain']))
                 number += 1
         elif kind == 'dual':
             for item in level['items']:
                 prompt = blank_text(' '.join(line[1] for line in item['lines']))
                 options = ' / '.join(' · '.join(blank.get('options', [])) for blank in item['blanks'])
-                exercises.append((number, title, f'{prompt}   Opciones: {options}'))
+                exercises.append((number, title, f'{prompt}   {options_label}: {options}'))
                 answers.append((number, ' / '.join(blank['answer'] for blank in item['blanks']), ' '.join(blank['explain'] for blank in item['blanks'])))
                 number += 1
         elif kind in ('guidedText', 'freeText'):
@@ -149,37 +156,62 @@ def exercises_for(topic):
 
 
 def build_story(topic):
-    story = [p(f"INGLÉS · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE", STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box('Meta de la lección', topic['guide']['goal']), Spacer(1, 4 * mm), info_box('Modelo', topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p('Al terminar podrás', STYLES['h1'])]
+    advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
+    labels = {
+        'cover': f"ENGLISH · LEVEL {topic['level']} · PRINTABLE WORKBOOK" if advanced else f"INGLÉS · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE",
+        'goal': 'Lesson goal' if advanced else 'Meta de la lección',
+        'model': 'Model' if advanced else 'Modelo',
+        'outcomes': 'By the end, you will be able to' if advanced else 'Al terminar podrás',
+        'study': 'How to study' if advanced else 'Cómo estudiar',
+        'understand': '01 · UNDERSTAND' if advanced else '01 · COMPRENDER',
+        'essential': 'The essential idea' if advanced else 'La idea esencial',
+        'map': '02 · VISUAL MAP' if advanced else '02 · MAPA VISUAL',
+        'glance': 'The rule at a glance' if advanced else 'La regla de una sola mirada',
+        'formula': 'Formula' if advanced else 'Fórmula',
+        'order': 'Decide in this order' if advanced else 'Decide en este orden',
+        'errors': 'Common errors' if advanced else 'Errores frecuentes',
+        'examples': 'Reference examples' if advanced else 'Ejemplos de referencia',
+        'practice': '03 · PRACTICE' if advanced else '03 · PRÁCTICA',
+        'production': 'From recognition to production' if advanced else 'De reconocer a producir',
+        'answers': '04 · ANSWER KEY' if advanced else '04 · SOLUCIONES',
+        'correct': 'Correct and explain the rule' if advanced else 'Corrige y explica la regla',
+        'close': 'Final task' if advanced else 'Cierre',
+    }
+    story = [p(labels['cover'], STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box(labels['goal'], topic['guide']['goal']), Spacer(1, 4 * mm), info_box(labels['model'], topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p(labels['outcomes'], STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
     study_copy = (
         'Lee la explicación, reconstruye el mapa sin mirar, resuelve la práctica y corrige al final. Usa las tres pistas de audio de la lección web para imitar ritmo y entonación.'
         if topic['level'].lower() in ('a1', 'a2', 'b1')
-        else 'Lee la explicación, reconstruye la infografía sin mirar, resuelve la práctica y corrige al final. Vuelve al mapa visual para justificar cada decisión.'
+        else 'Read the explanation, rebuild the infographic from memory, complete the practice, and check the answer key. Return to the visual map to justify each decision.'
     )
-    story += [Spacer(1, 3 * mm), info_box('Cómo estudiar', study_copy, PALE_RED), PageBreak()]
-    story += [p('01 · COMPRENDER', STYLES['eyebrow']), p('La idea esencial', STYLES['title']), p(topic['description'], STYLES['lead'])]
+    story += [Spacer(1, 3 * mm), info_box(labels['study'], study_copy, PALE_RED), PageBreak()]
+    story += [p(labels['understand'], STYLES['eyebrow']), p(labels['essential'], STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
         block = [p(section['heading'], STYLES['h2'])] + [p(paragraph, STYLES['body']) for paragraph in section.get('paragraphs', [])]
         story.append(KeepTogether(block))
         if section.get('table'):
             story += [Spacer(1, 2 * mm), data_table(section['table']), Spacer(1, 2 * mm)]
-    story += [PageBreak(), p('02 · MAPA VISUAL', STYLES['eyebrow']), p('La regla de una sola mirada', STYLES['title']), info_box('Fórmula', topic['guide']['formula'], CREAM, 'formula'), Spacer(1, 4 * mm), p('Decide en este orden', STYLES['h1'])]
+    story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['glance'], STYLES['title']), info_box(labels['formula'], topic['guide']['formula'], CREAM, 'formula'), Spacer(1, 4 * mm), p(labels['order'], STYLES['h1'])]
     story.extend(p(f'{index}. {decision}', STYLES['body']) for index, decision in enumerate(topic['guide']['decisions'], 1))
-    story += [Spacer(1, 2 * mm), data_table(topic['guide']['table']), Spacer(1, 3 * mm), p('Errores frecuentes', STYLES['h2'])]
+    story += [Spacer(1, 2 * mm), data_table(topic['guide']['table']), Spacer(1, 3 * mm), p(labels['errors'], STYLES['h2'])]
     story.extend(p(f'× {mistake}', STYLES['body']) for mistake in topic['guide']['mistakes'])
-    story += [PageBreak(), p('02 · MAPA VISUAL', STYLES['eyebrow']), p('Ejemplos de referencia', STYLES['title']), p('Tapa la columna en español, explica el sentido y lee el ejemplo en voz alta.', STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
+    examples_copy = 'Cover the second column, reconstruct the pattern, and explain why the inversion is required.' if advanced else 'Tapa la columna en español, explica el sentido y lee el ejemplo en voz alta.'
+    story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']), p(examples_copy, STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
     exercises, answers = exercises_for(topic)
-    story += [p('03 · PRÁCTICA', STYLES['eyebrow']), p('De reconocer a producir', STYLES['title']), p(f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.', STYLES['lead'])]
+    exercise_copy = f'{len(exercises)} printable exercises. Work without checking the answer key.' if advanced else f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.'
+    story += [p(labels['practice'], STYLES['eyebrow']), p(labels['production'], STYLES['title']), p(exercise_copy, STYLES['lead'])]
     current = None
     for number, level, prompt in exercises:
         if level != current:
             story.append(p(level, STYLES['h2']))
             current = level
         story.append(p(f'{number}. {prompt}', STYLES['exercise']))
-    story += [PageBreak(), p('04 · SOLUCIONES', STYLES['eyebrow']), p('Corrige y explica la regla', STYLES['title']), p('En respuestas abiertas, compara primero la estructura objetivo y después el vocabulario.', STYLES['lead'])]
+    answer_copy = 'For open responses, compare the target structure first and the vocabulary second.' if advanced else 'En respuestas abiertas, compara primero la estructura objetivo y después el vocabulario.'
+    story += [PageBreak(), p(labels['answers'], STYLES['eyebrow']), p(labels['correct'], STYLES['title']), p(answer_copy, STYLES['lead'])]
     for number, answer, explanation in answers:
         story.append(p(f'{number}. {answer} — {explanation}', STYLES['answer']))
-    story += [Spacer(1, 4 * mm), info_box('Cierre', 'Escribe tres frases nuevas, léelas en voz alta y vuelve al mapa visual dentro de 24 horas.', PALE_BLUE)]
+    closing_copy = 'Write three original sentences and return to the visual map within 24 hours.' if advanced else 'Escribe tres frases nuevas, léelas en voz alta y vuelve al mapa visual dentro de 24 horas.'
+    story += [Spacer(1, 4 * mm), info_box(labels['close'], closing_copy, PALE_BLUE)]
     return story
 
 

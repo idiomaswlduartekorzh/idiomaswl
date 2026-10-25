@@ -17,14 +17,16 @@ import { getTopicsByLevel } from '@/data/grammar/registry'
  * entero sin volver a subir.
  */
 export default function TopicNav({
-  idioma, nivel, slug, indexLabel,
+  idioma, nivel, slug, indexLabel, uiLanguage = 'es',
 }: {
   idioma: string
   nivel: string
   slug: string
   /** Etiqueta del índice, p. ej. «Gramática A1». */
   indexLabel: string
+  uiLanguage?: 'es' | 'en'
 }) {
+  const english = uiLanguage === 'en'
   const topics = getTopicsByLevel(idioma, nivel)
   const i = topics.findIndex(t => t.slug === slug)
   const prev = i > 0 ? topics[i - 1] : null
@@ -48,27 +50,27 @@ export default function TopicNav({
 
   return (
     <>
-      <nav className="topic-nav" aria-label="Navegación de temas">
+      <nav className="topic-nav" aria-label={english ? 'Topic navigation' : 'Navegación de temas'}>
         {prev ? (
           <Link href={`${base}/${prev.slug}`} className="topic-nav__link" style={box}>
-            <span>← Tema anterior</span>
+            <span>← {english ? 'Previous topic' : 'Tema anterior'}</span>
             <strong>{prev.shortTitle}</strong>
           </Link>
         ) : (
           <Link href={base} className="topic-nav__link" style={box}>
-            <span>← Todos los temas</span>
+            <span>← {english ? 'All topics' : 'Todos los temas'}</span>
             <strong>{indexLabel}</strong>
           </Link>
         )}
 
         {next ? (
           <Link href={`${base}/${next.slug}`} className="topic-nav__link next" style={{ ...box, textAlign: 'right' }}>
-            <span>Tema siguiente →</span>
+            <span>{english ? 'Next topic' : 'Tema siguiente'} →</span>
             <strong>{next.shortTitle}</strong>
           </Link>
         ) : (
           <Link href={base} className="topic-nav__link next" style={{ ...box, textAlign: 'right' }}>
-            <span>Volver al índice →</span>
+            <span>{english ? 'Back to index' : 'Volver al índice'} →</span>
             <strong>{indexLabel}</strong>
           </Link>
         )}
@@ -77,7 +79,7 @@ export default function TopicNav({
       {others.length > 0 && (
         <section style={{ margin: '2rem 0 3rem' }}>
           <h2 style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: '0.9rem' }}>
-            Más gramática de este nivel
+            {english ? 'More grammar at this level' : 'Más gramática de este nivel'}
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '0.7rem' }}>
             {others.map(t => (
@@ -98,7 +100,7 @@ export default function TopicNav({
             ))}
           </div>
           <p style={{ marginTop: '0.9rem', fontSize: '0.86rem' }}>
-            <Link href={base} style={{ fontWeight: 700 }}>Ver los {topics.length} temas de {indexLabel} →</Link>
+            <Link href={base} style={{ fontWeight: 700 }}>{english ? `View all ${topics.length} ${indexLabel} topics` : `Ver los ${topics.length} temas de ${indexLabel}`} →</Link>
           </p>
         </section>
       )}

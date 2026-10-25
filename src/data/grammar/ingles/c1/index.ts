@@ -1,5 +1,5 @@
-import type { GrammarTopic } from '../../types'
-import { cleftSentences, hedgingStance, inversionEmphasis, nominalisation } from './pilot-topics'
+import type { GrammarTopic } from '../../types.ts'
+import { cleftSentences, hedgingStance, inversionEmphasis, nominalisation } from './pilot-topics.ts'
 
 const topics: GrammarTopic[] = [inversionEmphasis, cleftSentences, hedgingStance, nominalisation]
 

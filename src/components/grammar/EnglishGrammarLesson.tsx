@@ -20,6 +20,14 @@ const SECTIONS: Array<{ id: SectionId; number: string; label: string }> = [
   { id: 'recursos', number: '05', label: 'Recursos' },
 ]
 
+const ADVANCED_SECTIONS: Array<{ id: SectionId; number: string; label: string }> = [
+  { id: 'comprender', number: '01', label: 'Understand' },
+  { id: 'mapa', number: '02', label: 'Visual map' },
+  { id: 'ejemplos', number: '03', label: 'Step by step' },
+  { id: 'practica', number: '04', label: 'Practice' },
+  { id: 'recursos', number: '05', label: 'Resources' },
+]
+
 export default function EnglishGrammarLesson({
   topic,
   level,
@@ -31,6 +39,8 @@ export default function EnglishGrammarLesson({
 }) {
   const resource = getEnglishGrammarResource(topic, level)
   const advancedPilot = isAdvancedPilot(level)
+  const english = advancedPilot
+  const sections = english ? ADVANCED_SECTIONS : SECTIONS
   const [active, setActive] = useState<SectionId>('comprender')
   const formulaParts = splitFormula(topic.guide.formula)
   const practiceActivityCount = countPracticeActivities(topic)
@@ -49,23 +59,23 @@ export default function EnglishGrammarLesson({
       style={{ '--kr-blue': '#012169', '--kr-red': '#c8102e', '--kr-cream': '#f5f2ea' } as React.CSSProperties}
       aria-labelledby="english-grammar-title"
     >
-      <div className={styles.previewFlag}><span>{advancedPilot ? 'Piloto avanzado' : 'Página completa'}</span> {advancedPilot ? 'Infografía, PDF y práctica listos' : 'Audio inglés nativo, PDF y práctica listos'}</div>
+      <div className={styles.previewFlag}><span>{advancedPilot ? 'Advanced pilot' : 'Página completa'}</span> {advancedPilot ? 'Infographic, PDF and practice ready' : 'Audio inglés nativo, PDF y práctica listos'}</div>
       <div className={styles.track} aria-label={`Ruta de gramática inglesa ${level.toUpperCase()}`}>
-        <span>Fundamentos</span><b>→</b><strong>Gramática</strong><b>→</b><span>Uso real</span><b>→</b><span>Producción</span>
+        <span>{english ? 'Foundations' : 'Fundamentos'}</span><b>→</b><strong>{english ? 'Grammar' : 'Gramática'}</strong><b>→</b><span>{english ? 'Real use' : 'Uso real'}</span><b>→</b><span>{english ? 'Production' : 'Producción'}</span>
       </div>
 
       <header className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>Inglés · {topic.category} · {level.toUpperCase()}</p>
+          <p className={styles.eyebrow}>{english ? 'English' : 'Inglés'} · {topic.category} · {level.toUpperCase()}</p>
           <h1 id="english-grammar-title">{topic.shortTitle}</h1>
           <p className={styles.lead}>{topic.lead}</p>
           <div className={styles.heroActions}>
-            <button type="button" onClick={() => selectSection('practica')}>Empezar práctica <span>→</span></button>
-            <button type="button" className={styles.secondary} onClick={() => selectSection('mapa')}>Ver mapa visual</button>
+            <button type="button" onClick={() => selectSection('practica')}>{english ? 'Start practice' : 'Empezar práctica'} <span>→</span></button>
+            <button type="button" className={styles.secondary} onClick={() => selectSection('mapa')}>{english ? 'View visual map' : 'Ver mapa visual'}</button>
           </div>
           <div className={styles.metrics}>
-            <span><b>{topic.practice.levels.length}</b> niveles</span>
-            <span><b>{practiceActivityCount}</b> actividades</span>
+            <span><b>{topic.practice.levels.length}</b> {english ? 'stages' : 'niveles'}</span>
+            <span><b>{practiceActivityCount}</b> {english ? 'activities' : 'actividades'}</span>
             <span><b>{resource.studyMinutes}</b> min</span>
           </div>
         </div>
@@ -82,10 +92,10 @@ export default function EnglishGrammarLesson({
         </div>
       </header>
 
-      <GrammarTopicVisual topic={topic} idioma="ingles" nivel={level} />
+      <GrammarTopicVisual topic={topic} idioma="ingles" nivel={level} uiLanguage={english ? 'en' : 'es'} />
 
-      <nav id="english-grammar-nav" className={styles.tabs} aria-label="Contenido de la lección">
-        {SECTIONS.map((section) => (
+      <nav id="english-grammar-nav" className={styles.tabs} aria-label={english ? 'Lesson content' : 'Contenido de la lección'}>
+        {sections.map((section) => (
           <button key={section.id} type="button" data-english-section={section.id} className={active === section.id ? styles.active : ''} onClick={() => selectSection(section.id)}>
             <span>{section.number}</span>{section.label}
           </button>
@@ -95,7 +105,7 @@ export default function EnglishGrammarLesson({
       <div className={styles.panel}>
         {active === 'comprender' ? (
           <article className={styles.article}>
-            <SectionIntro kicker="Explicación del profesor" title={topic.title} copy={topic.description} />
+            <SectionIntro kicker={english ? 'Teacher explanation' : 'Explicación del profesor'} title={topic.title} copy={topic.description} />
             <div className={styles.outcomeGrid}>
               {topic.outcomes.map((outcome, index) => <div key={outcome}><span>{index + 1}</span><p>{outcome}</p></div>)}
             </div>
@@ -112,7 +122,7 @@ export default function EnglishGrammarLesson({
 
         {active === 'mapa' ? (
           <section className={styles.visualSection} aria-labelledby="visual-title">
-            <SectionIntro kicker="Laboratorio visual" title="La regla de una sola mirada" copy={topic.visual.teacherLens} titleId="visual-title" />
+            <SectionIntro kicker={english ? 'Visual lab' : 'Laboratorio visual'} title={english ? 'The rule at a glance' : 'La regla de una sola mirada'} copy={topic.visual.teacherLens} titleId="visual-title" />
             <div className={styles.formula} aria-label={`Fórmula: ${topic.guide.formula}`}>
               {formulaParts.map((part, index) => (
                 <div key={`${part}-${index}`} style={{ '--delay': `${index * 90}ms` } as React.CSSProperties}><span>{String(index + 1).padStart(2, '0')}</span><b>{part}</b></div>
@@ -130,41 +140,41 @@ export default function EnglishGrammarLesson({
 
         {active === 'ejemplos' ? (
           <section className={styles.steps} aria-labelledby="steps-title">
-            <SectionIntro kicker="Razonamiento guiado" title="Cómo decidir sin traducir palabra por palabra" titleId="steps-title" />
-            <div className={styles.modelHeader}><p>Modelo central de la lección</p><span>{advancedPilot ? 'Patrón · contraste · uso' : 'Audio · listo'}</span></div>
-            <div className={styles.modelCard}><span>Modelo</span><strong lang="en">{topic.guide.model}</strong></div>
+            <SectionIntro kicker={english ? 'Guided reasoning' : 'Razonamiento guiado'} title={english ? 'How to decide without translating word for word' : 'Cómo decidir sin traducir palabra por palabra'} titleId="steps-title" />
+            <div className={styles.modelHeader}><p>{english ? 'Core lesson model' : 'Modelo central de la lección'}</p><span>{advancedPilot ? 'Pattern · contrast · use' : 'Audio · listo'}</span></div>
+            <div className={styles.modelCard}><span>{english ? 'Model' : 'Modelo'}</span><strong lang="en">{topic.guide.model}</strong></div>
             <ol className={styles.stepList}>{topic.guide.decisions.map((decision, index) => <li key={decision}><span>{index + 1}</span><p>{decision}</p></li>)}</ol>
             {resource.audioTracks.length ? <AudioShelf tracks={resource.audioTracks} /> : null}
-            <div className={styles.warningBox}><h3>Errores típicos de hispanohablantes</h3>{topic.guide.mistakes.map((mistake) => <p key={mistake}><span>×</span>{mistake}</p>)}</div>
+            <div className={styles.warningBox}><h3>{english ? 'Common learner errors' : 'Errores típicos de hispanohablantes'}</h3>{topic.guide.mistakes.map((mistake) => <p key={mistake}><span>×</span>{mistake}</p>)}</div>
           </section>
         ) : null}
 
         {active === 'practica' ? (
           <section className={styles.practice} aria-labelledby="practice-title">
-            <SectionIntro kicker="Práctica progresiva" title="De reconocer a producir" copy="Supera el 65 % para avanzar. Cada nivel combina contexto, corrección y producción propia." titleId="practice-title" />
-            <GrammarTopicClient topic={topic} idioma="ingles" nivel={level} relatedWritingExercises={relatedWritingExercises} mode="practiceOnly" />
+            <SectionIntro kicker={english ? 'Progressive practice' : 'Práctica progresiva'} title={english ? 'From recognition to production' : 'De reconocer a producir'} copy={english ? 'Score at least 65% to continue. Every stage combines context, correction and original production.' : 'Supera el 65 % para avanzar. Cada nivel combina contexto, corrección y producción propia.'} titleId="practice-title" />
+            <GrammarTopicClient topic={topic} idioma="ingles" nivel={level} relatedWritingExercises={relatedWritingExercises} mode="practiceOnly" uiLanguage={english ? 'en' : 'es'} />
           </section>
         ) : null}
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Biblioteca de estudio" title="Material listo para estudiar" copy={resource.audioTracks.length ? `Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.` : 'Descarga el cuaderno imprimible y conserva la infografía como referencia rápida del tema.'} titleId="resources-title" />
+            <SectionIntro kicker={english ? 'Study library' : 'Biblioteca de estudio'} title={english ? 'Study materials ready to use' : 'Material listo para estudiar'} copy={resource.audioTracks.length ? `Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.` : (english ? 'Download the printable workbook and keep the infographic as a quick reference for this topic.' : 'Descarga el cuaderno imprimible y conserva la infografía como referencia rápida del tema.')} titleId="resources-title" />
             <div className={styles.resourceGrid}>
-              <ResourceCard code="WEB" title="Lección interactiva" copy={`${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status="Lista para revisar" />
-              <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, mapa, práctica y soluciones con la misma jerarquía visual." status="Descargar PDF" href={resource.pdf} />
-              {resource.audioTracks.length ? <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" /> : <ResourceCard code="MAP" title="Infografía del tema" copy="Regla, contraste y ejemplos organizados para repasar de una sola mirada." status="Incluida en la lección" />}
+              <ResourceCard code="WEB" title={english ? 'Interactive lesson' : 'Lección interactiva'} copy={english ? `${topic.practice.levels.length} stages and ${practiceActivityCount} activities already integrated.` : `${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status={english ? 'Ready to review' : 'Lista para revisar'} />
+              <ResourceCard code="PDF" title={english ? 'Guide and workbook' : 'Guía y cuaderno'} copy={english ? 'Explanation, visual map, practice and answer key with the same visual hierarchy.' : 'Explicación, mapa, práctica y soluciones con la misma jerarquía visual.'} status={english ? 'Download PDF' : 'Descargar PDF'} href={resource.pdf} />
+              {resource.audioTracks.length ? <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" /> : <ResourceCard code="MAP" title={english ? 'Topic infographic' : 'Infografía del tema'} copy={english ? 'Rule, contrast and examples organised for quick review.' : 'Regla, contraste y ejemplos organizados para repasar de una sola mirada.'} status={english ? 'Included in the lesson' : 'Incluida en la lección'} />}
             </div>
             {resource.audioTracks.length ? <AudioDownloads tracks={resource.audioTracks} /> : null}
             <div className={styles.studyPlan}>
-              <h3>Ruta de estudio recomendada</h3>
-              <ol><li><b>5 min</b> Comprende la intención.</li><li><b>7 min</b> Reconstruye el mapa.</li><li><b>15 min</b> Completa dos niveles.</li><li><b>5 min</b> Produce tres frases propias.</li></ol>
+              <h3>{english ? 'Recommended study route' : 'Ruta de estudio recomendada'}</h3>
+              <ol><li><b>5 min</b> {english ? 'Understand the communicative purpose.' : 'Comprende la intención.'}</li><li><b>7 min</b> {english ? 'Rebuild the visual map.' : 'Reconstruye el mapa.'}</li><li><b>15 min</b> {english ? 'Complete two practice stages.' : 'Completa dos niveles.'}</li><li><b>5 min</b> {english ? 'Produce three original sentences.' : 'Produce tres frases propias.'}</li></ol>
             </div>
           </section>
         ) : null}
       </div>
-      <aside className="english-conversion" aria-label="Siguiente paso para aprender inglés">
-        <div><span>¿Quieres una ruta hecha para ti?</span><h2>Convierte esta práctica en progreso medible</h2><p>Descubre tu nivel y recibe orientación para elegir el curso que mejor encaja contigo.</p></div>
-        <div><Link href="/nivel-radar" data-english-cta="level-test">Descubrir mi nivel gratis</Link><Link href="/clases-de-ingles" data-english-cta="classes">Ver clases de inglés</Link></div>
+      <aside className="english-conversion" aria-label={english ? 'Next step in your English learning' : 'Siguiente paso para aprender inglés'}>
+        <div><span>{english ? 'Would you like a route built around your level?' : '¿Quieres una ruta hecha para ti?'}</span><h2>{english ? 'Turn this practice into measurable progress' : 'Convierte esta práctica en progreso medible'}</h2><p>{english ? 'Check your level and get guidance on the course that best fits your goals.' : 'Descubre tu nivel y recibe orientación para elegir el curso que mejor encaja contigo.'}</p></div>
+        <div><Link href="/nivel-radar" data-english-cta="level-test">{english ? 'Check my level' : 'Descubrir mi nivel gratis'}</Link><Link href="/clases-de-ingles" data-english-cta="classes">{english ? 'View English lessons' : 'Ver clases de inglés'}</Link></div>
       </aside>
     </section>
   )

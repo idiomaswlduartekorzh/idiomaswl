@@ -9,6 +9,16 @@ const ink = '#17213a'
 const muted = '#5b667a'
 const line = '#dce2ec'
 
+const ENGLISH_EYEBROWS: Record<GrammarVisualBlueprint['kind'], string> = {
+  script: 'WRITING MAP',
+  contrast: 'KEY COMPARISON',
+  reference: 'REFERENCE TABLE',
+  transformation: 'KEY TRANSFORMATIONS',
+  timeline: 'BEFORE · CHANGE · RESULT',
+  structure: 'HOW IT WORKS',
+  usage: 'USAGE MAP',
+}
+
 function clip(value: string, max: number): string {
   const safeValue = value.replace(/[✗❌]/g, 'NO').replace(/[✓✅]/g, 'OK').trim()
   const characters = Array.from(safeValue)
@@ -20,12 +30,14 @@ function Frame({
   language,
   nivel,
   blueprint,
+  english,
   children,
 }: {
   topic: GrammarTopic
   language: LanguageTheme
   nivel: string
   blueprint: GrammarVisualBlueprint
+  english: boolean
   children: ReactNode
 }) {
   const titleSize = topic.shortTitle.length > 38 ? 36 : topic.shortTitle.length > 25 ? 42 : 48
@@ -37,11 +49,11 @@ function Frame({
           <div style={{ width: 44, height: 44, borderRadius: 13, display: 'flex', alignItems: 'center', justifyContent: 'center', background: language.deep, color: '#fff', fontSize: 22, fontWeight: 700 }}>W</div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ fontSize: 20, fontWeight: 700, color: language.deep }}>Idiomas WeLearn</span>
-            <span style={{ marginTop: 2, fontSize: 12, color: muted, letterSpacing: 1.3 }}>GUÍA VISUAL PARA HISPANOHABLANTES</span>
+            <span style={{ marginTop: 2, fontSize: 12, color: muted, letterSpacing: 1.3 }}>{english ? 'VISUAL GUIDE FOR ENGLISH LEARNERS' : 'GUÍA VISUAL PARA HISPANOHABLANTES'}</span>
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>{blueprint.eyebrow}</span>
+          <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>{english ? ENGLISH_EYEBROWS[blueprint.kind] : blueprint.eyebrow}</span>
           <span style={{ border: `2px solid ${language.deep}`, borderRadius: 999, padding: '8px 15px', color: language.deep, fontSize: 15, fontWeight: 700 }}>{language.native} · {nivel.toUpperCase()}</span>
         </div>
       </div>
@@ -54,14 +66,14 @@ function Frame({
       </div>
       <div style={{ display: 'flex', flex: 1, padding: '0 42px 26px' }}>{children}</div>
       <div style={{ height: 34, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 42px 14px', color: '#758094', fontSize: 12 }}>
-        <span>Contenido original basado en la lección completa</span>
+        <span>{english ? 'Original content based on the complete lesson' : 'Contenido original basado en la lección completa'}</span>
         <strong style={{ color: language.deep }}>idiomaswl.com</strong>
       </div>
     </div>
   )
 }
 
-function TablePanel({ blueprint, language, dense = false }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme; dense?: boolean }) {
+function TablePanel({ blueprint, language, dense = false, english = false }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme; dense?: boolean; english?: boolean }) {
   const rows = blueprint.rows.slice(0, dense ? 10 : 6)
   const columns = Math.max(blueprint.headers.length, ...rows.map((row) => row.length))
   const firstWidth = columns >= 5 ? 82 : columns === 3 ? 190 : 220
@@ -85,7 +97,7 @@ function TablePanel({ blueprint, language, dense = false }: { blueprint: Grammar
       <div style={{ display: 'flex', minHeight: dense ? 34 : 42, background: language.deep, color: '#fff' }}>
         {Array.from({ length: columns }, (_, index) => (
           <span key={index} style={{ ...cellStyle(index), color: '#fff', fontSize: dense ? 13 : 14, letterSpacing: .7, textTransform: 'uppercase' }}>
-            {clip(blueprint.headers[index] || (index === 0 ? 'grupo' : ''), 28)}
+            {clip(blueprint.headers[index] || (index === 0 ? (english ? 'group' : 'grupo') : ''), 28)}
           </span>
         ))}
       </div>
@@ -100,8 +112,8 @@ function TablePanel({ blueprint, language, dense = false }: { blueprint: Grammar
   )
 }
 
-function ContrastPanel({ blueprint, language }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme }) {
-  const headers = blueprint.headers.length >= 3 ? blueprint.headers.slice(1, 3) : ['OPCIÓN A', 'OPCIÓN B']
+function ContrastPanel({ blueprint, language, english = false }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme; english?: boolean }) {
+  const headers = blueprint.headers.length >= 3 ? blueprint.headers.slice(1, 3) : (english ? ['OPTION A', 'OPTION B'] : ['OPCIÓN A', 'OPCIÓN B'])
   const rows = blueprint.rows.slice(0, 5)
   return (
     <div style={{ width: '100%', display: 'flex', gap: 18 }}>
@@ -122,7 +134,7 @@ function ContrastPanel({ blueprint, language }: { blueprint: GrammarVisualBluepr
   )
 }
 
-function TransformationPanel({ blueprint, language }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme }) {
+function TransformationPanel({ blueprint, language, english = false }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme; english?: boolean }) {
   const rows = blueprint.rows.slice(0, 8)
   const midpoint = Math.ceil(rows.length / 2)
   const columns = [rows.slice(0, midpoint), rows.slice(midpoint)].filter((column) => column.length)
@@ -134,7 +146,7 @@ function TransformationPanel({ blueprint, language }: { blueprint: GrammarVisual
             const index = columnIndex * midpoint + rowIndex
             return (
               <div key={`${index}-${row.join('|')}`} style={{ display: 'flex', flex: 1, minHeight: 66, alignItems: 'center', border: `1px solid ${line}`, borderLeft: `7px solid ${index % 2 ? language.deep : language.accent}`, borderRadius: 14, background: '#fff', padding: '9px 15px' }}>
-                <span style={{ width: 148, color: muted, fontSize: 12, fontWeight: 700, textTransform: 'uppercase' }}>{clip(row[2] || blueprint.headers[0] || 'forma', 25)}</span>
+                <span style={{ width: 148, color: muted, fontSize: 12, fontWeight: 700, textTransform: 'uppercase' }}>{clip(row[2] || blueprint.headers[0] || (english ? 'form' : 'forma'), 25)}</span>
                 <strong style={{ color: ink, fontSize: 20 }}>{clip(row[0] || '', 24)}</strong>
                 <span style={{ margin: '0 12px', color: language.accent, fontSize: 22, fontWeight: 700 }}>→</span>
                 <strong style={{ color: language.deep, fontSize: 20 }}>{clip(row[1] || '', 26)}</strong>
@@ -147,7 +159,7 @@ function TransformationPanel({ blueprint, language }: { blueprint: GrammarVisual
   )
 }
 
-function TimelinePanel({ blueprint, language }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme }) {
+function TimelinePanel({ blueprint, language, english = false }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme; english?: boolean }) {
   const rows = blueprint.rows.slice(0, 4)
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -155,7 +167,7 @@ function TimelinePanel({ blueprint, language }: { blueprint: GrammarVisualBluepr
         {rows.map((row, index) => (
           <div key={`${index}-${row.join('|')}`} style={{ display: 'flex', flex: 1, alignItems: 'center' }}>
             <div style={{ minHeight: 190, display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', border: `2px solid ${index === rows.length - 1 ? language.accent : line}`, borderRadius: 20, background: index === rows.length - 1 ? language.soft : '#fff', padding: '18px 17px' }}>
-              <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1 }}>PASO {index + 1}</span>
+              <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1 }}>{english ? 'STEP' : 'PASO'} {index + 1}</span>
               <strong style={{ marginTop: 10, color: language.deep, fontSize: 23, lineHeight: 1.14 }}>{clip(row[0] || '', 44)}</strong>
               <span style={{ marginTop: 9, color: muted, fontSize: 15, lineHeight: 1.28 }}>{clip(row.slice(1).join(' · '), 78)}</span>
             </div>
@@ -167,13 +179,13 @@ function TimelinePanel({ blueprint, language }: { blueprint: GrammarVisualBluepr
   )
 }
 
-function StructurePanel({ topic, blueprint, language }: { topic: GrammarTopic; blueprint: GrammarVisualBlueprint; language: LanguageTheme }) {
+function StructurePanel({ topic, blueprint, language, english = false }: { topic: GrammarTopic; blueprint: GrammarVisualBlueprint; language: LanguageTheme; english?: boolean }) {
   const parts = blueprint.formulaParts.length > 1 ? blueprint.formulaParts : [topic.guide.formula]
   const examples = blueprint.rows.slice(0, 3)
   return (
     <div style={{ width: '100%', display: 'flex', gap: 22 }}>
       <div style={{ display: 'flex', flex: 1.1, flexDirection: 'column', justifyContent: 'center', borderRadius: 20, background: language.soft, padding: '22px 24px' }}>
-        <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>FÓRMULA</span>
+        <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>{english ? 'FORMULA' : 'FÓRMULA'}</span>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 9, marginTop: 16 }}>
           {parts.map((part, index) => (
             <div key={`${index}-${part}`} style={{ display: 'flex', alignItems: 'center' }}>
@@ -195,12 +207,12 @@ function StructurePanel({ topic, blueprint, language }: { topic: GrammarTopic; b
   )
 }
 
-function UsagePanel({ topic, blueprint, language }: { topic: GrammarTopic; blueprint: GrammarVisualBlueprint; language: LanguageTheme }) {
+function UsagePanel({ topic, blueprint, language, english = false }: { topic: GrammarTopic; blueprint: GrammarVisualBlueprint; language: LanguageTheme; english?: boolean }) {
   const rows = blueprint.rows.slice(0, 5)
   return (
     <div style={{ width: '100%', display: 'flex', alignItems: 'stretch', gap: 16 }}>
       <div style={{ width: 330, display: 'flex', flexDirection: 'column', justifyContent: 'center', borderRadius: 24, background: language.deep, color: '#fff', padding: '24px' }}>
-        <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>IDEA CENTRAL</span>
+        <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>{english ? 'CORE IDEA' : 'IDEA CENTRAL'}</span>
         <strong style={{ marginTop: 12, fontSize: 25, lineHeight: 1.2 }}>{clip(topic.guide.formula, 92)}</strong>
         <span style={{ marginTop: 15, color: 'rgba(255,255,255,.72)', fontSize: 14, lineHeight: 1.35 }}>{clip(topic.guide.goal, 112)}</span>
       </div>
@@ -220,17 +232,18 @@ function UsagePanel({ topic, blueprint, language }: { topic: GrammarTopic; bluep
 export default function GrammarVisualImage({ topic, idioma, nivel }: { topic: GrammarTopic; idioma: GrammarVisualLanguage; nivel: string }) {
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const blueprint = buildGrammarVisualBlueprint(topic)
+  const english = idioma === 'ingles' && ['b2', 'c1', 'c2'].includes(nivel.toLowerCase())
   let panel: ReactNode
 
   switch (blueprint.kind) {
-    case 'script': panel = <TablePanel blueprint={blueprint} language={language} dense />; break
-    case 'contrast': panel = <ContrastPanel blueprint={blueprint} language={language} />; break
-    case 'reference': panel = <TablePanel blueprint={blueprint} language={language} />; break
-    case 'transformation': panel = <TransformationPanel blueprint={blueprint} language={language} />; break
-    case 'timeline': panel = <TimelinePanel blueprint={blueprint} language={language} />; break
-    case 'structure': panel = <StructurePanel topic={topic} blueprint={blueprint} language={language} />; break
-    default: panel = <UsagePanel topic={topic} blueprint={blueprint} language={language} />
+    case 'script': panel = <TablePanel blueprint={blueprint} language={language} dense english={english} />; break
+    case 'contrast': panel = <ContrastPanel blueprint={blueprint} language={language} english={english} />; break
+    case 'reference': panel = <TablePanel blueprint={blueprint} language={language} english={english} />; break
+    case 'transformation': panel = <TransformationPanel blueprint={blueprint} language={language} english={english} />; break
+    case 'timeline': panel = <TimelinePanel blueprint={blueprint} language={language} english={english} />; break
+    case 'structure': panel = <StructurePanel topic={topic} blueprint={blueprint} language={language} english={english} />; break
+    default: panel = <UsagePanel topic={topic} blueprint={blueprint} language={language} english={english} />
   }
 
-  return <Frame topic={topic} language={language} nivel={nivel} blueprint={blueprint}>{panel}</Frame>
+  return <Frame topic={topic} language={language} nivel={nivel} blueprint={blueprint} english={english}>{panel}</Frame>
 }

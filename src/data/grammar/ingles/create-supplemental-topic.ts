@@ -1,4 +1,4 @@
-import type { Blank, GrammarTopic, WriteItem } from '../types'
+import type { Blank, GrammarTopic, WriteItem } from '../types.ts'
 
 type ChoiceDraft = {
   scene: string
@@ -33,16 +33,20 @@ export type SupplementalTopic = Omit<GrammarTopic, 'practice'> & {
   practice: SupplementalPractice
 }
 
-export function createSupplementalTopic(config: SupplementalTopic): GrammarTopic {
+export function createSupplementalTopic(
+  config: SupplementalTopic,
+  options: { language?: 'es' | 'en' } = {},
+): GrammarTopic {
+  const english = options.language === 'en'
   return {
     ...config,
     practice: {
       levels: [
         {
           id: 'level-1',
-          title: 'Reconocimiento en contexto',
-          tag: 'Opción múltiple',
-          intro: 'Elige la forma que completa naturalmente cada situación.',
+          title: english ? 'Recognition in context' : 'Reconocimiento en contexto',
+          tag: english ? 'Multiple choice' : 'Opción múltiple',
+          intro: english ? 'Choose the form that completes each situation naturally.' : 'Elige la forma que completa naturalmente cada situación.',
           type: 'choice',
           items: config.practice.choice.map((item) => ({
             scene: item.scene,
@@ -54,9 +58,9 @@ export function createSupplementalTopic(config: SupplementalTopic): GrammarTopic
         },
         {
           id: 'level-2',
-          title: 'Dos decisiones conectadas',
-          tag: '2 espacios',
-          intro: 'Resuelve dos decisiones dentro de la misma situación.',
+          title: english ? 'Two connected decisions' : 'Dos decisiones conectadas',
+          tag: english ? '2 gaps' : '2 espacios',
+          intro: english ? 'Resolve two connected choices within the same context.' : 'Resuelve dos decisiones dentro de la misma situación.',
           type: 'dual',
           items: config.practice.dual.map((item) => ({
             scene: item.scene,
@@ -66,33 +70,33 @@ export function createSupplementalTopic(config: SupplementalTopic): GrammarTopic
         },
         {
           id: 'level-3',
-          title: 'Texto guiado',
-          tag: 'Opciones',
-          intro: 'Mantén la estructura objetivo a lo largo de un texto completo.',
+          title: english ? 'Guided text' : 'Texto guiado',
+          tag: english ? 'Options' : 'Opciones',
+          intro: english ? 'Maintain the target structure throughout a complete text.' : 'Mantén la estructura objetivo a lo largo de un texto completo.',
           type: 'guidedText',
           ...config.practice.guided,
         },
         {
           id: 'level-4',
-          title: 'Texto libre',
-          tag: 'Sin opciones',
-          intro: 'Escribe cada forma sin banco de palabras.',
+          title: english ? 'Open text' : 'Texto libre',
+          tag: english ? 'No options' : 'Sin opciones',
+          intro: english ? 'Supply every form without a word bank.' : 'Escribe cada forma sin banco de palabras.',
           type: 'freeText',
           ...config.practice.free,
         },
         {
           id: 'level-5',
-          title: 'Producción controlada',
-          tag: 'Producción',
-          intro: 'Transforma la idea sin perder el significado.',
+          title: english ? 'Controlled production' : 'Producción controlada',
+          tag: english ? 'Production' : 'Producción',
+          intro: english ? 'Transform the idea without changing its meaning.' : 'Transforma la idea sin perder el significado.',
           type: 'write',
           items: config.practice.write,
         },
         {
           id: 'level-6',
-          title: 'Misión comunicativa',
-          tag: 'Reto final',
-          intro: 'Usa la estructura en respuestas propias y situaciones reales.',
+          title: english ? 'Communicative mission' : 'Misión comunicativa',
+          tag: english ? 'Final challenge' : 'Reto final',
+          intro: english ? 'Use the structure in original responses and realistic situations.' : 'Usa la estructura en respuestas propias y situaciones reales.',
           type: 'write',
           items: config.practice.mission,
         },
