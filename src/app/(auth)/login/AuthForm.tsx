@@ -688,14 +688,12 @@ export default function AuthForm({
           {/* Forgot password (login only) */}
           {mode === 'login' && (
             <p style={{ textAlign: 'right', marginTop: '-0.5rem' }}>
-              <a
-                href="https://wa.me/573005004253?text=Hola%2C%20olvidé%20mi%20contraseña%20de%20WeLearn.%20¿Me%20pueden%20ayudar%3F"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/recuperar-contrasena"
                 style={{ fontSize: 12, color: MUTED, textDecoration: 'underline', textUnderlineOffset: 2 }}
               >
                 ¿Olvidaste tu contraseña?
-              </a>
+              </Link>
             </p>
           )}
 

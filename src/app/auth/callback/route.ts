@@ -21,8 +21,8 @@ export async function GET(request: Request) {
     const supabase = await createClient();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (error) {
-      // Invalid or expired code — redirect to login without leaking details
-      return NextResponse.redirect(`${origin}/login?error=auth`);
+      // A recovery link can expire; return to the request form so it can be renewed.
+      return NextResponse.redirect(`${origin}${next === '/restablecer-contrasena' ? '/recuperar-contrasena' : '/login?error=auth'}`);
     }
   }
 
