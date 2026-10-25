@@ -41,8 +41,8 @@ seguimiento están en [`SEO-MENSAJES-2026-10-24.md`](SEO-MENSAJES-2026-10-24.md)
 ### Gramática inglesa completa B2–C2 — 25 de octubre de 2026
 
 `codex/english-b2-c2-complete-curriculum` sustituye el piloto de doce lecciones por un
-currículo operativo integral de 90 temas: 30 B2, 30 C1 y 30 C2. Estado:
-`VALIDADO_LOCAL_PENDIENTE_DE_INTEGRACION`; integración y despliegue pendientes. La
+currículo operativo integral de 90 temas: 30 B2, 30 C1 y 30 C2. Estado: `DESPLEGADO`
+desde `main` mediante la implementación `c947fae7` y la promoción `981afa2b`. La
 cobertura recorre tiempo y aspecto, modalidad, voz y reporte, arquitectura de cláusulas
 y sintagmas nominales, énfasis y estructura informativa, cohesión, referencia, registro
 y control editorial. Cada tema conserva URL única, metadatos, datos estructurados,
@@ -61,7 +61,9 @@ El guardián `check:english-advanced-grammar` exige 30 temas por nivel, slugs y 
 además TypeScript, catálogo protegido de 465 temas, protección SEO de 17 índices y 17
 plantillas, 467 snippets y build Next.js completo de 2.949 páginas. Se renderizaron y
 revisaron muestras B2, C1 y C2, incluidas guía, ejercicios y soluciones; no se observaron
-recortes, superposiciones ni preguntas duplicadas.
+recortes, superposiciones ni preguntas duplicadas. GitHub Actions y Vercel finalizaron
+en éxito; el smoke público confirmó las 90/90 lecciones con HTTP 200, tres PDF por
+página y 30 enlaces únicos en cada índice B2, C1 y C2.
 
 ### Corrección del banco visual por propósito — 24 de octubre de 2026
 

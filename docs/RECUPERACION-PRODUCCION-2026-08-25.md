@@ -849,3 +849,23 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   HTTP 200, `application/pdf` y firma `%PDF`.
 - Estado: `DESPLEGADO`. No se añadieron migraciones, variables de entorno ni
   servicios externos.
+
+### 25 de octubre de 2026 — currículo completo de gramática inglesa B2–C2
+
+- La rama `codex/english-b2-c2-complete-curriculum` amplía el piloto de 12 temas a
+  90 lecciones: 30 B2, 30 C1 y 30 C2. Cada página está completamente en inglés e
+  incluye explicación extensa, mapa visual con propósito, seis etapas de práctica
+  y al menos 30 decisiones de aprendizaje.
+- Cada tema enlaza tres recursos con el estilo editorial aprobado: guía completa,
+  ejercicios y `answer key`. El lote contiene 270 PDF de 8 a 20 páginas, con texto
+  extraíble y revisión visual representativa. Los audios permanecen fuera del
+  alcance y no se anuncian en la interfaz ni en los datos estructurados.
+- La implementación `c947fae7d7086643106883dcdfa2f614b1cb0f1d` y la promoción
+  `981afa2b0d1b79f3feb1a283e183913a513beff8` entraron en `main`. Pasaron los
+  guardianes de catálogo y SEO, TypeScript, el guardián específico de 90 temas y
+  270 PDF, el build Next.js de 2.949 páginas, GitHub Actions y Vercel.
+- El smoke posterior confirmó HTTP 200 en 90/90 rutas, tres referencias PDF por
+  lección y 30 enlaces únicos en cada índice B2, C1 y C2 en
+  `www.idiomaswl.com`. No se añadieron migraciones, variables de entorno ni
+  servicios externos.
+- Estado: `DESPLEGADO`.
