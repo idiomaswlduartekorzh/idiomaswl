@@ -8,6 +8,7 @@ import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './KoreanGrammarLesson.module.css'
+import englishStyles from './EnglishGrammarLesson.module.css'
 
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
 type SectionId = 'comprender' | 'mapa' | 'ejemplos' | 'practica' | 'recursos'
@@ -128,6 +129,26 @@ export default function EnglishGrammarLesson({
                 <div key={`${part}-${index}`} style={{ '--delay': `${index * 90}ms` } as React.CSSProperties}><span>{String(index + 1).padStart(2, '0')}</span><b>{part}</b></div>
               ))}
             </div>
+            {topic.slug === 'inversion-emphasis-c1' ? (
+              <div className={englishStyles.mapGuide}>
+                <div>
+                  <span>HOW TO READ THE MAP</span>
+                  <h3>Use it as a decision path, not as a sentence to memorise</h3>
+                  <p>Begin with the neutral sentence and preserve its meaning. The opener changes position, the auxiliary carries the tense, and the main verb keeps the form required by that auxiliary.</p>
+                  <ol>
+                    {topic.guide.decisions.map((decision, index) => <li key={decision}><b>{index + 1}</b><span>{decision}</span></li>)}
+                  </ol>
+                </div>
+                <aside aria-label="Worked example of emphatic inversion">
+                  <span>WORKED EXAMPLE</span>
+                  <p><small>Neutral</small>We understood the risk only after the audit.</p>
+                  <p><small>Front the restriction</small>Only after the audit...</p>
+                  <p><small>Recover the tense</small>past simple → <b>did</b> + base verb</p>
+                  <p className={englishStyles.mapResult}><small>Final sentence</small>Only after the audit <b>did we understand</b> the risk.</p>
+                  <em>Effect: the delayed moment of understanding becomes the focus.</em>
+                </aside>
+              </div>
+            ) : null}
             <div className={styles.sceneGrid}>
               {topic.visual.scene.map(([pattern, meaning], index) => (
                 <div key={pattern} style={{ '--delay': `${index * 110}ms` } as React.CSSProperties}><strong lang="en">{pattern}</strong><span>→</span><p>{meaning}</p></div>
