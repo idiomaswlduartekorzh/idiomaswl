@@ -38,30 +38,30 @@ seguimiento están en [`SEO-MENSAJES-2026-10-24.md`](SEO-MENSAJES-2026-10-24.md)
 
 ## Remodelación gramatical A1–B1 e imágenes educativas — 24 de octubre de 2026
 
-### Piloto de gramática inglesa B2–C2 — 24 de octubre de 2026
+### Gramática inglesa completa B2–C2 — 25 de octubre de 2026
 
-`codex/grammar-visual-purpose` incorpora un piloto avanzado de doce lecciones: cuatro
-temas B2, cuatro C1 y cuatro C2. Estado: `VALIDADO_LOCAL_PENDIENTE_DE_INTEGRACION`;
-integración y despliegue pendientes. Cada tema incluye explicación pedagógica, mapa
-visual específico, seis etapas de práctica progresiva y un cuaderno PDF original de
-siete páginas con soluciones. Los índices, metadatos, datos estructurados, enlaces
-internos y sitemap reconocen los tres niveles nuevos sin modificar las URL canónicas
-de A1–B1.
+`codex/english-b2-c2-complete-curriculum` sustituye el piloto de doce lecciones por un
+currículo operativo integral de 90 temas: 30 B2, 30 C1 y 30 C2. Estado:
+`VALIDADO_LOCAL_PENDIENTE_DE_INTEGRACION`; integración y despliegue pendientes. La
+cobertura recorre tiempo y aspecto, modalidad, voz y reporte, arquitectura de cláusulas
+y sintagmas nominales, énfasis y estructura informativa, cohesión, referencia, registro
+y control editorial. Cada tema conserva URL única, metadatos, datos estructurados,
+enlaces internos y entrada de sitemap sin modificar las rutas A1–B1 existentes.
 
-Por decisión del propietario, el piloto no publica ni anuncia audios: las tarjetas de
-recursos avanzadas contienen solo lección web, PDF y mapa visual, y el JSON-LD omite
-`AudioObject`. Los doce PDF se validaron por estructura y texto, y una muestra B2, C1 y
-C2 se renderizó para comprobar legibilidad. Pasaron TypeScript, catálogo protegido de
-465 temas, snippets SEO y build Webpack completo de 2.793 páginas. La prueba visual
-local confirmó la navegación de nivel, las seis etapas de ejercicios, recursos sin
-audio e infografías distintas por propósito.
+Las 90 páginas y sus interfaces son monolingües en inglés. Cada lección incluye cuatro
+bloques explicativos, mapa visual con propósito pedagógico y seis etapas de práctica
+progresiva con al menos 30 decisiones. Cada tema ofrece tres PDF separados con el estilo
+editorial aprobado: guía completa, ejercicios y `answer key`; son 270 documentos en
+total, de 8 a 20 páginas, revisados por texto extraíble, tamaño y render representativo.
+Por decisión del propietario, el alcance no publica ni anuncia audios y el JSON-LD omite
+`AudioObject`.
 
-Tras la primera revisión móvil, la lección de aprobación `inversion-emphasis-c1` se
-reconstruyó como experiencia monolingüe en inglés: interfaz, explicación, instrucciones,
-retroalimentación, mapa, ejercicios y PDF. El cuaderno conserva siete páginas y presenta
-18 ejercicios imprimibles con solucionario; la versión web conserva seis etapas y 29
-actividades. Esta corrección fija el estándar editorial que deberá aplicarse al resto de
-la expansión B2–C2 después de la aprobación del piloto.
+El guardián `check:english-advanced-grammar` exige 30 temas por nivel, slugs y órdenes
+únicos, contenido en inglés, seis etapas y tres PDF mayores de 50 KB por tema. Pasaron
+además TypeScript, catálogo protegido de 465 temas, protección SEO de 17 índices y 17
+plantillas, 467 snippets y build Next.js completo de 2.949 páginas. Se renderizaron y
+revisaron muestras B2, C1 y C2, incluidas guía, ejercicios y soluciones; no se observaron
+recortes, superposiciones ni preguntas duplicadas.
 
 ### Corrección del banco visual por propósito — 24 de octubre de 2026
 

@@ -60,7 +60,7 @@ export default function EnglishGrammarLesson({
       style={{ '--kr-blue': '#012169', '--kr-red': '#c8102e', '--kr-cream': '#f5f2ea' } as React.CSSProperties}
       aria-labelledby="english-grammar-title"
     >
-      <div className={styles.previewFlag}><span>{advancedPilot ? 'Advanced pilot' : 'Página completa'}</span> {advancedPilot ? 'Infographic, PDF and practice ready' : 'Audio inglés nativo, PDF y práctica listos'}</div>
+      <div className={styles.previewFlag}><span>{advancedPilot ? 'Complete advanced lesson' : 'Página completa'}</span> {advancedPilot ? 'Visual map, three PDFs and extended practice ready' : 'Audio inglés nativo, PDF y práctica listos'}</div>
       <div className={styles.track} aria-label={english ? `English grammar route ${level.toUpperCase()}` : `Ruta de gramática inglesa ${level.toUpperCase()}`}>
         <span>{english ? 'Foundations' : 'Fundamentos'}</span><b>→</b><strong>{english ? 'Grammar' : 'Gramática'}</strong><b>→</b><span>{english ? 'Real use' : 'Uso real'}</span><b>→</b><span>{english ? 'Production' : 'Producción'}</span>
       </div>

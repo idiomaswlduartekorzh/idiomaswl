@@ -46,19 +46,19 @@ const LEVEL_COPY: Record<GrammarLevel, { label: string; lead: string; outcome: s
     outcome: 'Al terminar esta ruta podrás sostener explicaciones más complejas y elegir estructuras según la intención comunicativa.',
   },
   b2: {
-    label: 'Precisión',
-    lead: 'Consolida estructuras complejas, matices de tiempo, voz y modalidad con práctica que exige decisiones de significado, no solo completar formas.',
-    outcome: 'Al terminar este piloto podrás combinar tiempos y estructuras B2 con precisión en conversaciones, textos y exámenes.',
+    label: 'Precision',
+    lead: 'Consolidate complex tense, voice, modality and clause systems through practice that requires decisions about meaning, not mechanical completion.',
+    outcome: 'Complete the full B2 grammar system with controlled choices for conversation, writing and exam tasks.',
   },
   c1: {
-    label: 'Dominio avanzado',
-    lead: 'Aprende a organizar el énfasis, modular afirmaciones y condensar ideas con recursos propios del inglés académico y profesional.',
-    outcome: 'Al terminar este piloto podrás controlar el foco y el registro con estructuras C1 naturales y deliberadas.',
+    label: 'Advanced control',
+    lead: 'Control emphasis, stance, clause compression and information flow across academic, professional and natural spoken English.',
+    outcome: 'Complete the full C1 grammar system and use advanced structures as purposeful discourse choices.',
   },
   c2: {
-    label: 'Maestría',
-    lead: 'Trabaja elecciones finas de cohesión, evidencialidad, elipsis y registro para producir inglés flexible, idiomático y preciso.',
-    outcome: 'Al terminar este piloto podrás reformular una misma idea según audiencia, intención y grado de certeza.',
+    label: 'Mastery',
+    lead: 'Refine information structure, evidentiality, reference, clause architecture and register for flexible, idiomatic and precise English.',
+    outcome: 'Complete the full C2 grammar system and redesign the same proposition for different audiences, purposes and degrees of commitment.',
   },
 }
 
@@ -74,6 +74,7 @@ export function GrammarCollectionIndex({
   const language = LANGUAGE[idioma]
   const level = LEVEL_COPY[nivel]
   const levelLabel = nivel.toUpperCase()
+  const english = idioma === 'ingles' && (nivel === 'b2' || nivel === 'c1' || nivel === 'c2')
   const basePath = `/practica/${idioma}/${nivel}`
   const canonical = `https://www.idiomaswl.com${basePath}/gramatica`
   const groupedTopics = groupTopics(topics)
@@ -84,10 +85,10 @@ export function GrammarCollectionIndex({
     '@graph': [
       {
         '@type': 'CollectionPage',
-        name: `Gramática ${language.adjective} ${levelLabel}`,
-        description: `Temas de gramática ${language.adjective} ${levelLabel} con explicaciones y ejercicios para hispanohablantes.`,
+        name: english ? `English grammar ${levelLabel}` : `Gramática ${language.adjective} ${levelLabel}`,
+        description: english ? `Complete English grammar ${levelLabel} curriculum with explanations, visual maps, extended exercises and printable resources.` : `Temas de gramática ${language.adjective} ${levelLabel} con explicaciones y ejercicios para hispanohablantes.`,
         url: canonical,
-        inLanguage: 'es',
+        inLanguage: english ? 'en' : 'es',
         isPartOf: { '@type': 'WebSite', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
         mainEntity: {
           '@type': 'ItemList',
@@ -103,10 +104,10 @@ export function GrammarCollectionIndex({
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },
-          { '@type': 'ListItem', position: 2, name: language.label, item: `https://www.idiomaswl.com/practica/${idioma}` },
+          { '@type': 'ListItem', position: 1, name: english ? 'Practice' : 'Práctica', item: 'https://www.idiomaswl.com/practica' },
+          { '@type': 'ListItem', position: 2, name: english ? 'English' : language.label, item: `https://www.idiomaswl.com/practica/${idioma}` },
           { '@type': 'ListItem', position: 3, name: levelLabel, item: `https://www.idiomaswl.com${basePath}` },
-          { '@type': 'ListItem', position: 4, name: `Gramática ${levelLabel}`, item: canonical },
+          { '@type': 'ListItem', position: 4, name: english ? `Grammar ${levelLabel}` : `Gramática ${levelLabel}`, item: canonical },
         ],
       },
     ],
@@ -120,48 +121,48 @@ export function GrammarCollectionIndex({
         style={{ '--grammar-accent': language.accent, '--grammar-deep': language.deep, '--grammar-soft': language.soft } as React.CSSProperties}
       >
         <div className={styles.wrap}>
-          <Breadcrumb idioma={idioma} nivel={nivel} languageLabel={language.label} />
+          <Breadcrumb idioma={idioma} nivel={nivel} languageLabel={english ? 'English' : language.label} english={english} />
 
           <header className={styles.indexHero}>
             <div className={styles.indexHeroCopy}>
               <p className={styles.eyebrow}>{language.flag} {language.native} · {levelLabel} · {level.label}</p>
-              <h1>Gramática {language.adjective} {levelLabel}: temas y ejercicios</h1>
+              <h1>{english ? `English grammar ${levelLabel}: complete curriculum and practice` : `Gramática ${language.adjective} ${levelLabel}: temas y ejercicios`}</h1>
               <p className={styles.lead}>{level.lead}</p>
               <div className={styles.heroActions}>
-                {firstTopic ? <Link className={styles.primaryAction} href={`${basePath}/gramatica/${firstTopic.slug}`}>Empezar la ruta <span>→</span></Link> : null}
-                <a className={styles.secondaryAction} href="#temas">Ver todos los temas</a>
+                {firstTopic ? <Link className={styles.primaryAction} href={`${basePath}/gramatica/${firstTopic.slug}`}>{english ? 'Start the route' : 'Empezar la ruta'} <span>→</span></Link> : null}
+                <a className={styles.secondaryAction} href="#temas">{english ? 'View all topics' : 'Ver todos los temas'}</a>
               </div>
               <div className={styles.metrics} aria-label="Resumen de la ruta">
-                <span><b>{topics.length}</b> lecciones</span>
-                <span><b>6</b> niveles de práctica</span>
-                <span><b>100 %</b> acceso libre</span>
+                <span><b>{topics.length}</b> {english ? 'lessons' : 'lecciones'}</span>
+                <span><b>6</b> {english ? 'practice stages' : 'niveles de práctica'}</span>
+                <span><b>100 %</b> {english ? 'open access' : 'acceso libre'}</span>
               </div>
             </div>
             <aside className={styles.routeGoal}>
-              <span>Meta de la ruta</span>
+              <span>{english ? 'Route goal' : 'Meta de la ruta'}</span>
               <p>{level.outcome}</p>
               <div><b>{language.native}</b><em>{levelLabel}</em></div>
             </aside>
           </header>
 
-          <section className={styles.method} aria-label="Método de estudio">
-            <div><span>01</span><b>Comprende</b><p>Explicación directa en español.</p></div>
-            <div><span>02</span><b>Visualiza</b><p>Fórmulas, tablas y ejemplos.</p></div>
-            <div><span>03</span><b>Practica</b><p>Seis niveles con corrección.</p></div>
-            <div><span>04</span><b>Produce</b><p>Del reconocimiento al uso propio.</p></div>
+          <section className={styles.method} aria-label={english ? 'Study method' : 'Método de estudio'}>
+            <div><span>01</span><b>{english ? 'Understand' : 'Comprende'}</b><p>{english ? 'Full teacher explanation in English.' : 'Explicación directa en español.'}</p></div>
+            <div><span>02</span><b>{english ? 'Visualise' : 'Visualiza'}</b><p>{english ? 'Purposeful maps, formulas and contrasts.' : 'Fórmulas, tablas y ejemplos.'}</p></div>
+            <div><span>03</span><b>{english ? 'Practise' : 'Practica'}</b><p>{english ? 'Six stages with feedback.' : 'Seis niveles con corrección.'}</p></div>
+            <div><span>04</span><b>{english ? 'Produce' : 'Produce'}</b><p>{english ? 'Move from recognition to original use.' : 'Del reconocimiento al uso propio.'}</p></div>
           </section>
 
           <section id="temas" className={styles.catalogIntro}>
-            <div><span>Ruta completa</span><h2>Todos los temas de gramática {language.adjective} {levelLabel}</h2></div>
-            <p>Avanza en orden o abre la estructura que necesitas repasar. Cada enlace conserva una lección completa, ejemplos y ejercicios.</p>
+            <div><span>{english ? 'Complete route' : 'Ruta completa'}</span><h2>{english ? `All English grammar topics for ${levelLabel}` : `Todos los temas de gramática ${language.adjective} ${levelLabel}`}</h2></div>
+            <p>{english ? 'Follow the sequence or open the system you need. Every topic includes a complete lesson, visual map, extended practice and three printable PDFs.' : 'Avanza en orden o abre la estructura que necesitas repasar. Cada enlace conserva una lección completa, ejemplos y ejercicios.'}</p>
           </section>
 
           {groupedTopics.map(([category, categoryTopics], categoryIndex) => (
             <section className={styles.topicGroup} key={category} aria-labelledby={`categoria-${categoryIndex}`}>
               <div className={styles.groupHeading}>
                 <span>{String(categoryIndex + 1).padStart(2, '0')}</span>
-                <div><p>Bloque {categoryIndex + 1}</p><h2 id={`categoria-${categoryIndex}`}>{category}</h2></div>
-                <small>{categoryTopics.length} {categoryTopics.length === 1 ? 'tema' : 'temas'}</small>
+                <div><p>{english ? 'Block' : 'Bloque'} {categoryIndex + 1}</p><h2 id={`categoria-${categoryIndex}`}>{category}</h2></div>
+                <small>{categoryTopics.length} {english ? (categoryTopics.length === 1 ? 'topic' : 'topics') : (categoryTopics.length === 1 ? 'tema' : 'temas')}</small>
               </div>
               <div className={styles.topicGrid}>
                 {categoryTopics.map((topic) => (
@@ -169,7 +170,7 @@ export function GrammarCollectionIndex({
                     <div className={styles.cardTop}><span style={{ background: topic.color }}>{topic.order}</span><em>{topic.category}</em></div>
                     <h3>{topic.shortTitle}</h3>
                     <p>{topic.lead}</p>
-                    <footer><span>Explicación + práctica</span><b>→</b></footer>
+                    <footer><span>{english ? 'Explanation + practice + PDFs' : 'Explicación + práctica'}</span><b>→</b></footer>
                   </Link>
                 ))}
               </div>
@@ -177,11 +178,11 @@ export function GrammarCollectionIndex({
           ))}
 
           <nav className={styles.levelRoute} aria-label={`Niveles de gramática ${language.label}`}>
-            <div><span>Sigue tu ruta</span><h2>Gramática {language.adjective} de A1 a {idioma === 'ingles' ? 'C2' : 'B1'}</h2></div>
+            <div><span>{english ? 'Continue your route' : 'Sigue tu ruta'}</span><h2>{english ? 'English grammar from A1 to C2' : `Gramática ${language.adjective} de A1 a ${idioma === 'ingles' ? 'C2' : 'B1'}`}</h2></div>
             <div>{(idioma === 'ingles' ? ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const : ['a1', 'a2', 'b1'] as const).map((routeLevel) => <Link key={routeLevel} className={routeLevel === nivel ? styles.currentLevel : ''} href={`/practica/${idioma}/${routeLevel}/gramatica`}>{routeLevel.toUpperCase()}</Link>)}</div>
           </nav>
 
-          <Link className={styles.backLink} href={basePath}>← Volver a {language.label} {levelLabel}</Link>
+          <Link className={styles.backLink} href={basePath}>← {english ? `Back to English ${levelLabel}` : `Volver a ${language.label} ${levelLabel}`}</Link>
         </div>
       </div>
     </>
@@ -317,14 +318,14 @@ export function GrammarCollectionTopicPage({
   )
 }
 
-function Breadcrumb({ idioma, nivel, languageLabel, topic }: { idioma: GrammarLanguage; nivel: GrammarLevel; languageLabel: string; topic?: GrammarTopic }) {
+function Breadcrumb({ idioma, nivel, languageLabel, topic, english = false }: { idioma: GrammarLanguage; nivel: GrammarLevel; languageLabel: string; topic?: GrammarTopic; english?: boolean }) {
   const levelLabel = nivel.toUpperCase()
   return (
     <nav className={styles.breadcrumb} aria-label="breadcrumb">
-      <Link href="/practica">Práctica</Link><span>/</span>
+      <Link href="/practica">{english ? 'Practice' : 'Práctica'}</Link><span>/</span>
       <Link href={`/practica/${idioma}`}>{languageLabel}</Link><span>/</span>
       <Link href={`/practica/${idioma}/${nivel}`}>{levelLabel}</Link><span>/</span>
-      {topic ? <><Link href={`/practica/${idioma}/${nivel}/gramatica`}>Gramática</Link><span>/</span><strong>{topic.shortTitle}</strong></> : <strong>Gramática</strong>}
+      {topic ? <><Link href={`/practica/${idioma}/${nivel}/gramatica`}>{english ? 'Grammar' : 'Gramática'}</Link><span>/</span><strong>{topic.shortTitle}</strong></> : <strong>{english ? 'Grammar' : 'Gramática'}</strong>}
     </nav>
   )
 }
