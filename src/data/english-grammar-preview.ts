@@ -1,23 +1,35 @@
 import englishA1Topics from '@/data/grammar/ingles/a1'
 import englishA2Topics from '@/data/grammar/ingles/a2'
 import englishB1Topics from '@/data/grammar/ingles/b1'
+import englishB2Topics from '@/data/grammar/ingles/b2'
+import englishC1Topics from '@/data/grammar/ingles/c1'
+import englishC2Topics from '@/data/grammar/ingles/c2'
 import type { GrammarTopic } from '@/data/grammar/types'
 
-export type EnglishGrammarLevel = 'a1' | 'a2' | 'b1'
+export type EnglishGrammarLevel = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2'
 
 export const ENGLISH_GRAMMAR_PREVIEW_SLUGS: Record<EnglishGrammarLevel, string> = {
   a1: 'subject-pronouns',
   a2: 'past-simple-be',
   b1: 'present-perfect-simple-b1',
+  b2: 'mixed-conditionals-b2',
+  c1: 'inversion-emphasis-c1',
+  c2: 'ellipsis-substitution-c2',
 }
 
 export const ENGLISH_GRAMMAR_AVAILABLE_SLUGS: Record<EnglishGrammarLevel, readonly string[]> = {
   a1: englishA1Topics.map((topic) => topic.slug),
   a2: englishA2Topics.map((topic) => topic.slug),
   b1: englishB1Topics.map((topic) => topic.slug),
+  b2: englishB2Topics.map((topic) => topic.slug),
+  c1: englishC1Topics.map((topic) => topic.slug),
+  c2: englishC2Topics.map((topic) => topic.slug),
 }
 
 export function englishStudyMinutes(level: EnglishGrammarLevel): number {
+  if (level === 'c2') return 65
+  if (level === 'c1') return 60
+  if (level === 'b2') return 55
   return level === 'b1' ? 50 : level === 'a2' ? 40 : 35
 }
 
@@ -46,7 +58,7 @@ export function getEnglishGrammarResource(topic: GrammarTopic, level: EnglishGra
   return {
     studyMinutes: englishStudyMinutes(level),
     pdf: englishGrammarPdf(topic.slug, level),
-    audioTracks: definitions.map(([id, title], index) => ({
+    audioTracks: isAdvancedPilot(level) ? [] : definitions.map(([id, title], index) => ({
       id,
       title,
       text: normalizeSpokenEnglish(selected[index] ?? topic.guide.model),
@@ -54,6 +66,10 @@ export function getEnglishGrammarResource(topic: GrammarTopic, level: EnglishGra
       src: `/audio/ingles/${level}/grammar/${topic.slug}/${id}.m4a`,
     })),
   }
+}
+
+export function isAdvancedPilot(level: EnglishGrammarLevel): boolean {
+  return level === 'b2' || level === 'c1' || level === 'c2'
 }
 
 function englishTrackExamples(topic: GrammarTopic): string[] {

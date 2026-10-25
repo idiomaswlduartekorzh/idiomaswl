@@ -26,11 +26,14 @@ export default async function EnglishGrammarPreviewPage({ params }: Props) {
   const topic = getTopicBySlug('ingles', nivel, slug)
   if (!topic) notFound()
 
-  return <EnglishGrammarTopicPage topic={topic} level={nivel} relatedWritingExercises={getWritingExercisesForGrammar('ingles', nivel, topic.slug)} />
+  const relatedWritingExercises = nivel === 'a1' || nivel === 'a2' || nivel === 'b1'
+    ? getWritingExercisesForGrammar('ingles', nivel, topic.slug)
+    : []
+  return <EnglishGrammarTopicPage topic={topic} level={nivel} relatedWritingExercises={relatedWritingExercises} />
 }
 
 function isPreviewLevel(level: string): level is EnglishGrammarLevel {
-  return level === 'a1' || level === 'a2' || level === 'b1'
+  return level === 'a1' || level === 'a2' || level === 'b1' || level === 'b2' || level === 'c1' || level === 'c2'
 }
 
 function isAvailableTopic(level: string, slug: string): level is EnglishGrammarLevel {

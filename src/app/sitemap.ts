@@ -37,7 +37,7 @@ import { grammarVisualUrl } from '@/lib/grammar-visual';
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
 const BASE = 'https://www.idiomaswl.com';
 
-// Fuente única para hubs, rutas indexables y validación de gramática A1–B1.
+// Fuente única para hubs, rutas indexables y validación de gramática publicada.
 // No mantener listas manuales de temas en cada consumidor.
 const GRAMMAR_ENTRIES = Object.entries(grammarRegistry).flatMap(([lang, levels]) =>
   Object.entries(levels).flatMap(([level, topics]) =>
@@ -215,9 +215,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // no de esta lista. Las otras tres destrezas (escritura, habla, lectura) también tienen
     // página y siguen fuera del sitemap: es una decisión aparte, no un olvido de este cambio.
     ...PRACTICE_LANGUAGES.flatMap((lang) =>
-      Object.keys(grammarRegistry[lang]).flatMap((level) =>
-        ['gramatica', 'escucha'].map((skill) => ({ lang, level, skill }))
-      )
+      Object.keys(grammarRegistry[lang]).flatMap((level) => [
+        { lang, level, skill: 'gramatica' },
+        ...(['a1', 'a2', 'b1'].includes(level) ? [{ lang, level, skill: 'escucha' }] : []),
+      ])
     ).map(({ lang, level, skill }) => ({
       url: `${BASE}/practica/${lang}/${level}/${skill}`,
       changeFrequency: 'monthly' as const,
@@ -246,7 +247,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ]),
     ]),
 
-    // ── Practice — grammar topics A1–B1 (one indexable URL per topic) ─────────
+    // ── Practice — grammar topics (one indexable URL per topic) ──────────────
     ...GRAMMAR_ENTRIES.map(({ lang, level, topic }) => ({
       url: `${BASE}/practica/${lang}/${level}/gramatica/${topic.slug}`,
       changeFrequency: 'monthly' as const,

@@ -13,10 +13,14 @@ export default function EnglishGrammarTopicPage({ topic, level, relatedWritingEx
   const canonical = `https://www.idiomaswl.com/practica/ingles/${level}/gramatica/${topic.slug}`
   const indexUrl = `https://www.idiomaswl.com/practica/ingles/${level}/gramatica`
   const resource = getEnglishGrammarResource(topic, level)
+  const resourceParts = [
+    { '@type': 'MediaObject', name: 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf' },
+    ...resource.audioTracks.map((track) => ({ '@type': 'AudioObject', name: track.title, contentUrl: `https://www.idiomaswl.com${track.src}`, encodingFormat: 'audio/mp4', inLanguage: 'en' })),
+  ]
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'en'], teaches: topic.shortTitle, image: grammarVisualUrl('ingles', level, topic.slug), learningResourceType: ['Lección interactiva', 'Cuaderno de ejercicios', 'Audio'], timeRequired: `PT${resource.studyMinutes}M`, isAccessibleForFree: true, hasPart: [{ '@type': 'MediaObject', name: 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf' }, ...resource.audioTracks.map((track) => ({ '@type': 'AudioObject', name: track.title, contentUrl: `https://www.idiomaswl.com${track.src}`, encodingFormat: 'audio/mp4', inLanguage: 'en' }))], provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
+      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'en'], teaches: topic.shortTitle, image: grammarVisualUrl('ingles', level, topic.slug), learningResourceType: resource.audioTracks.length ? ['Lección interactiva', 'Cuaderno de ejercicios', 'Audio'] : ['Lección interactiva', 'Cuaderno de ejercicios', 'Infografía educativa'], timeRequired: `PT${resource.studyMinutes}M`, isAccessibleForFree: true, hasPart: resourceParts, provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
       grammarVisualImageObject(topic, 'ingles', level),
       { '@type': 'HowTo', name: `Cómo estudiar ${topic.shortTitle}`, description: topic.guide.goal, totalTime: `PT${resource.studyMinutes}M`, step: topic.guide.decisions.map((decision, index) => ({ '@type': 'HowToStep', position: index + 1, name: `Paso ${index + 1}`, text: decision })) },
       { '@type': 'BreadcrumbList', itemListElement: [

@@ -6,8 +6,8 @@ import TopicNav from '@/components/grammar/TopicNav'
 import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
 import styles from './GrammarCollection.module.css'
 
-type GrammarLanguage = 'aleman' | 'frances' | 'italiano' | 'japones' | 'portugues' | 'ruso'
-type GrammarLevel = 'a1' | 'a2' | 'b1'
+type GrammarLanguage = 'aleman' | 'frances' | 'ingles' | 'italiano' | 'japones' | 'portugues' | 'ruso'
+type GrammarLevel = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2'
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
 
 const LANGUAGE: Record<GrammarLanguage, {
@@ -22,6 +22,7 @@ const LANGUAGE: Record<GrammarLanguage, {
 }> = {
   aleman: { label: 'Alemán', adjective: 'alemana', flag: '🇩🇪', code: 'de', native: 'Deutsch', accent: '#d79a00', deep: '#181818', soft: '#fff3cf' },
   frances: { label: 'Francés', adjective: 'francesa', flag: '🇫🇷', code: 'fr', native: 'Français', accent: '#e7374f', deep: '#18347a', soft: '#eef3ff' },
+  ingles: { label: 'Inglés', adjective: 'inglesa', flag: '🇬🇧', code: 'en', native: 'English', accent: '#c8102e', deep: '#012169', soft: '#eef3ff' },
   italiano: { label: 'Italiano', adjective: 'italiana', flag: '🇮🇹', code: 'it', native: 'Italiano', accent: '#d72b3f', deep: '#08713c', soft: '#edf8f0' },
   japones: { label: 'Japonés', adjective: 'japonesa', flag: '🇯🇵', code: 'ja', native: '日本語', accent: '#dc2f45', deep: '#202a44', soft: '#fff0f1' },
   portugues: { label: 'Portugués', adjective: 'portuguesa', flag: '🇧🇷', code: 'pt', native: 'Português', accent: '#e4aa00', deep: '#126b3a', soft: '#f4fae8' },
@@ -43,6 +44,21 @@ const LEVEL_COPY: Record<GrammarLevel, { label: string; lead: string; outcome: s
     label: 'Independencia',
     lead: 'Afina matices, relaciones entre ideas y estructuras de uso real con explicaciones completas y práctica progresiva.',
     outcome: 'Al terminar esta ruta podrás sostener explicaciones más complejas y elegir estructuras según la intención comunicativa.',
+  },
+  b2: {
+    label: 'Precisión',
+    lead: 'Consolida estructuras complejas, matices de tiempo, voz y modalidad con práctica que exige decisiones de significado, no solo completar formas.',
+    outcome: 'Al terminar este piloto podrás combinar tiempos y estructuras B2 con precisión en conversaciones, textos y exámenes.',
+  },
+  c1: {
+    label: 'Dominio avanzado',
+    lead: 'Aprende a organizar el énfasis, modular afirmaciones y condensar ideas con recursos propios del inglés académico y profesional.',
+    outcome: 'Al terminar este piloto podrás controlar el foco y el registro con estructuras C1 naturales y deliberadas.',
+  },
+  c2: {
+    label: 'Maestría',
+    lead: 'Trabaja elecciones finas de cohesión, evidencialidad, elipsis y registro para producir inglés flexible, idiomático y preciso.',
+    outcome: 'Al terminar este piloto podrás reformular una misma idea según audiencia, intención y grado de certeza.',
   },
 }
 
@@ -161,8 +177,8 @@ export function GrammarCollectionIndex({
           ))}
 
           <nav className={styles.levelRoute} aria-label={`Niveles de gramática ${language.label}`}>
-            <div><span>Sigue tu ruta</span><h2>Gramática {language.adjective} de A1 a B1</h2></div>
-            <div>{(['a1', 'a2', 'b1'] as const).map((routeLevel) => <Link key={routeLevel} className={routeLevel === nivel ? styles.currentLevel : ''} href={`/practica/${idioma}/${routeLevel}/gramatica`}>{routeLevel.toUpperCase()}</Link>)}</div>
+            <div><span>Sigue tu ruta</span><h2>Gramática {language.adjective} de A1 a {idioma === 'ingles' ? 'C2' : 'B1'}</h2></div>
+            <div>{(idioma === 'ingles' ? ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const : ['a1', 'a2', 'b1'] as const).map((routeLevel) => <Link key={routeLevel} className={routeLevel === nivel ? styles.currentLevel : ''} href={`/practica/${idioma}/${routeLevel}/gramatica`}>{routeLevel.toUpperCase()}</Link>)}</div>
           </nav>
 
           <Link className={styles.backLink} href={basePath}>← Volver a {language.label} {levelLabel}</Link>

@@ -38,6 +38,24 @@ seguimiento están en [`SEO-MENSAJES-2026-10-24.md`](SEO-MENSAJES-2026-10-24.md)
 
 ## Remodelación gramatical A1–B1 e imágenes educativas — 24 de octubre de 2026
 
+### Piloto de gramática inglesa B2–C2 — 24 de octubre de 2026
+
+`codex/grammar-visual-purpose` incorpora un piloto avanzado de doce lecciones: cuatro
+temas B2, cuatro C1 y cuatro C2. Estado: `VALIDADO_LOCAL_PENDIENTE_DE_INTEGRACION`;
+integración y despliegue pendientes. Cada tema incluye explicación pedagógica, mapa
+visual específico, seis etapas de práctica progresiva y un cuaderno PDF original de
+siete páginas con soluciones. Los índices, metadatos, datos estructurados, enlaces
+internos y sitemap reconocen los tres niveles nuevos sin modificar las URL canónicas
+de A1–B1.
+
+Por decisión del propietario, el piloto no publica ni anuncia audios: las tarjetas de
+recursos avanzadas contienen solo lección web, PDF y mapa visual, y el JSON-LD omite
+`AudioObject`. Los doce PDF se validaron por estructura y texto, y una muestra B2, C1 y
+C2 se renderizó para comprobar legibilidad. Pasaron TypeScript, catálogo protegido de
+465 temas, snippets SEO y build Webpack completo de 2.793 páginas. La prueba visual
+local confirmó la navegación de nivel, las seis etapas de ejercicios, recursos sin
+audio e infografías distintas por propósito.
+
 ### Corrección del banco visual por propósito — 24 de octubre de 2026
 
 `codex/grammar-visual-purpose` parte de `origin/main` en `5661967a`. Estado:

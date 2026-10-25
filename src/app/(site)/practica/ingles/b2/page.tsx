@@ -8,6 +8,11 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   {
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Advanced Grammar',
+    desc: 'Mixed conditionals, modal perfects, reporting passives y participle clauses con infografías, PDF y seis niveles de práctica.',
+    count: '4 temas · 24 niveles', href: '/practica/ingles/b2/gramatica', available: true,
+  },
+  {
     id: 'uso-del-idioma', emoji: '🔤', name: 'Use of English', eng: 'Grammar & Vocab',
     desc: 'Multiple Choice Cloze (FCE Part 1 / ICFES) + Word Formation (FCE Part 3). 3 textos de cloze + 2 pasajes de formación de palabras.',
     count: '5 textos · 40 ejercicios', href: '/practica/ingles/b2/uso-del-idioma', available: true,

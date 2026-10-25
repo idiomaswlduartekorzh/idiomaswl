@@ -18,14 +18,14 @@ export const GRAMMAR_VISUAL_LANGUAGES = {
 } as const
 
 export type GrammarVisualLanguage = keyof typeof GRAMMAR_VISUAL_LANGUAGES
-export type GrammarVisualLevel = 'a1' | 'a2' | 'b1'
+export type GrammarVisualLevel = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2'
 
 export function isGrammarVisualLanguage(value: string): value is GrammarVisualLanguage {
   return value in GRAMMAR_VISUAL_LANGUAGES
 }
 
 export function isGrammarVisualLevel(value: string): value is GrammarVisualLevel {
-  return value === 'a1' || value === 'a2' || value === 'b1'
+  return value === 'a1' || value === 'a2' || value === 'b1' || value === 'b2' || value === 'c1' || value === 'c2'
 }
 
 export function grammarVisualPath(idioma: string, nivel: string, slug: string): string {

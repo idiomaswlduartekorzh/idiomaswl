@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
-import { getEnglishGrammarResource, type EnglishGrammarLevel } from '@/data/english-grammar-preview'
+import { getEnglishGrammarResource, isAdvancedPilot, type EnglishGrammarLevel } from '@/data/english-grammar-preview'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
@@ -30,6 +30,7 @@ export default function EnglishGrammarLesson({
   relatedWritingExercises: RelatedWritingExercise[]
 }) {
   const resource = getEnglishGrammarResource(topic, level)
+  const advancedPilot = isAdvancedPilot(level)
   const [active, setActive] = useState<SectionId>('comprender')
   const formulaParts = splitFormula(topic.guide.formula)
   const practiceActivityCount = countPracticeActivities(topic)
@@ -48,7 +49,7 @@ export default function EnglishGrammarLesson({
       style={{ '--kr-blue': '#012169', '--kr-red': '#c8102e', '--kr-cream': '#f5f2ea' } as React.CSSProperties}
       aria-labelledby="english-grammar-title"
     >
-      <div className={styles.previewFlag}><span>Página completa</span> Audio inglés nativo, PDF y práctica listos</div>
+      <div className={styles.previewFlag}><span>{advancedPilot ? 'Piloto avanzado' : 'Página completa'}</span> {advancedPilot ? 'Infografía, PDF y práctica listos' : 'Audio inglés nativo, PDF y práctica listos'}</div>
       <div className={styles.track} aria-label={`Ruta de gramática inglesa ${level.toUpperCase()}`}>
         <span>Fundamentos</span><b>→</b><strong>Gramática</strong><b>→</b><span>Uso real</span><b>→</b><span>Producción</span>
       </div>
@@ -130,10 +131,10 @@ export default function EnglishGrammarLesson({
         {active === 'ejemplos' ? (
           <section className={styles.steps} aria-labelledby="steps-title">
             <SectionIntro kicker="Razonamiento guiado" title="Cómo decidir sin traducir palabra por palabra" titleId="steps-title" />
-            <div className={styles.modelHeader}><p>Modelo central de la lección</p><span>Audio · listo</span></div>
+            <div className={styles.modelHeader}><p>Modelo central de la lección</p><span>{advancedPilot ? 'Patrón · contraste · uso' : 'Audio · listo'}</span></div>
             <div className={styles.modelCard}><span>Modelo</span><strong lang="en">{topic.guide.model}</strong></div>
             <ol className={styles.stepList}>{topic.guide.decisions.map((decision, index) => <li key={decision}><span>{index + 1}</span><p>{decision}</p></li>)}</ol>
-            <AudioShelf tracks={resource.audioTracks} />
+            {resource.audioTracks.length ? <AudioShelf tracks={resource.audioTracks} /> : null}
             <div className={styles.warningBox}><h3>Errores típicos de hispanohablantes</h3>{topic.guide.mistakes.map((mistake) => <p key={mistake}><span>×</span>{mistake}</p>)}</div>
           </section>
         ) : null}
@@ -147,13 +148,13 @@ export default function EnglishGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Biblioteca de estudio" title="Material listo para estudiar" copy={`Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.`} titleId="resources-title" />
+            <SectionIntro kicker="Biblioteca de estudio" title="Material listo para estudiar" copy={resource.audioTracks.length ? `Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.` : 'Descarga el cuaderno imprimible y conserva la infografía como referencia rápida del tema.'} titleId="resources-title" />
             <div className={styles.resourceGrid}>
               <ResourceCard code="WEB" title="Lección interactiva" copy={`${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status="Lista para revisar" />
               <ResourceCard code="PDF" title="Guía y cuaderno" copy="Explicación, mapa, práctica y soluciones con la misma jerarquía visual." status="Descargar PDF" href={resource.pdf} />
-              <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" />
+              {resource.audioTracks.length ? <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" /> : <ResourceCard code="MAP" title="Infografía del tema" copy="Regla, contraste y ejemplos organizados para repasar de una sola mirada." status="Incluida en la lección" />}
             </div>
-            <AudioDownloads tracks={resource.audioTracks} />
+            {resource.audioTracks.length ? <AudioDownloads tracks={resource.audioTracks} /> : null}
             <div className={styles.studyPlan}>
               <h3>Ruta de estudio recomendada</h3>
               <ol><li><b>5 min</b> Comprende la intención.</li><li><b>7 min</b> Reconstruye el mapa.</li><li><b>15 min</b> Completa dos niveles.</li><li><b>5 min</b> Produce tres frases propias.</li></ol>

@@ -2,6 +2,7 @@
 """Generate the complete English A1-B1 grammar workbook collection."""
 
 import json
+import os
 import re
 import shutil
 from pathlib import Path
@@ -18,7 +19,9 @@ from reportlab.platypus import BaseDocTemplate, Frame, KeepTogether, PageBreak, 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'tmp' / 'english-grammar' / 'topics.json'
-OUTPUT = ROOT / 'output' / 'pdf' / 'english-grammar'
+OUTPUT = Path(os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / 'english-grammar'))
+if not OUTPUT.is_absolute():
+    OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
@@ -41,7 +44,8 @@ pdfmetrics.registerFont(TTFont('WeLearnEN-Bold', str(FONT_BOLD)))
 
 
 def p(text, style):
-    return Paragraph(escape(str(text)).replace('\n', '<br/>'), style)
+    printable = str(text).replace('→', '->')
+    return Paragraph(escape(printable).replace('\n', '<br/>'), style)
 
 
 STYLES = {
@@ -147,7 +151,12 @@ def exercises_for(topic):
 def build_story(topic):
     story = [p(f"INGLÉS · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE", STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box('Meta de la lección', topic['guide']['goal']), Spacer(1, 4 * mm), info_box('Modelo', topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p('Al terminar podrás', STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
-    story += [Spacer(1, 3 * mm), info_box('Cómo estudiar', 'Lee la explicación, reconstruye el mapa sin mirar, resuelve la práctica y corrige al final. Usa las tres pistas de audio de la lección web para imitar ritmo y entonación.', PALE_RED), PageBreak()]
+    study_copy = (
+        'Lee la explicación, reconstruye el mapa sin mirar, resuelve la práctica y corrige al final. Usa las tres pistas de audio de la lección web para imitar ritmo y entonación.'
+        if topic['level'].lower() in ('a1', 'a2', 'b1')
+        else 'Lee la explicación, reconstruye la infografía sin mirar, resuelve la práctica y corrige al final. Vuelve al mapa visual para justificar cada decisión.'
+    )
+    story += [Spacer(1, 3 * mm), info_box('Cómo estudiar', study_copy, PALE_RED), PageBreak()]
     story += [p('01 · COMPRENDER', STYLES['eyebrow']), p('La idea esencial', STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
         block = [p(section['heading'], STYLES['h2'])] + [p(paragraph, STYLES['body']) for paragraph in section.get('paragraphs', [])]

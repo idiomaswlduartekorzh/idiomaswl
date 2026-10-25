@@ -11,8 +11,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <SkillNav
         lang="ingles"
         level="b2"
-        skills={['conectores', 'uso-del-idioma']}
-        levels={['a1', 'a2', 'b1', 'b2']}
+        skills={['gramatica', 'conectores', 'uso-del-idioma']}
+        levels={['a1', 'a2', 'b1', 'b2', 'c1', 'c2']}
       />
     </>
   )

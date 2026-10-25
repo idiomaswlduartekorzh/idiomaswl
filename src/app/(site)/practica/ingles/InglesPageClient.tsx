@@ -6,7 +6,7 @@ import LanguageHub from '@/components/practica/LanguageHub'
 import { getLevelProgress } from '@/lib/progress'
 
 
-const SKILL_TOTALS: Record<string, number> = { a1: 6, a2: 6, b2: 1 }
+const SKILL_TOTALS: Record<string, number> = { a1: 6, a2: 6, b2: 3, c1: 1, c2: 1 }
 
 const NIVELES = [
   {
@@ -29,14 +29,21 @@ const NIVELES = [
   },
   {
     nivel: 'B2', key: 'b2', name: 'Intermedio alto',
-    desc: 'Use of English: Multiple Choice Cloze (FCE Part 1 / ICFES) + Word Formation (FCE Part 3). Textos de contexto colombiano y académico.',
+    desc: 'Gramática avanzada, Use of English y conectores con práctica progresiva de nivel FCE.',
     href: '/practica/ingles/b2', available: true,
-    count: '1 habilidad · 40 ejercicios',
+    count: '3 habilidades · 12 lecciones',
   },
   {
     nivel: 'C1', key: 'c1', name: 'Avanzado',
     desc: 'Gramática compleja, colocaciones, escritura avanzada y nivel CAE.',
-    available: false,
+    href: '/practica/ingles/c1', available: true,
+    count: '4 temas de gramática avanzada',
+  },
+  {
+    nivel: 'C2', key: 'c2', name: 'Maestría',
+    desc: 'Cohesión, estructura informativa, evidencialidad y transformación de registro.',
+    href: '/practica/ingles/c2', available: true,
+    count: '4 temas de gramática experta',
   },
 ]
 

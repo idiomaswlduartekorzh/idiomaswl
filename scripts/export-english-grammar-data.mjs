@@ -7,8 +7,9 @@ import { pathToFileURL } from 'node:url'
 const ROOT = process.cwd()
 const TARGET = path.join(ROOT, 'tmp', 'english-grammar', 'topics.json')
 const topics = []
+const levels = (process.env.ENGLISH_GRAMMAR_LEVELS ?? 'a1,a2,b1').split(',').map((level) => level.trim()).filter(Boolean)
 
-for (const level of ['a1', 'a2', 'b1']) {
+for (const level of levels) {
   const moduleUrl = pathToFileURL(path.join(ROOT, 'src', 'data', 'grammar', 'ingles', level, 'index.ts')).href
   const { default: levelTopics } = await import(`${moduleUrl}?export=${Date.now()}`)
   topics.push(...levelTopics.map((topic) => ({ ...topic, level: level.toUpperCase() })))
