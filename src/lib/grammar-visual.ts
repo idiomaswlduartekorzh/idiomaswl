@@ -41,20 +41,24 @@ export function grammarVisualAlt(topic: GrammarTopic, idioma: GrammarVisualLangu
   return `Infografía de ${topic.shortTitle} en ${language.label} ${nivel.toUpperCase()} con tabla, regla y ejemplos: ${topic.guide.formula}`
 }
 
-export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string) {
+export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string, options: { contentLanguage?: 'es' | 'en' } = {}) {
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const contentUrl = grammarVisualUrl(idioma, nivel, topic.slug)
+  const english = options.contentLanguage === 'en'
+  const caption = english
+    ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}`
+    : grammarVisualAlt(topic, idioma, nivel)
   return {
     '@type': 'ImageObject',
-    name: `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
-    caption: grammarVisualAlt(topic, idioma, nivel),
-    description: `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
+    name: english ? `Visual guide to ${topic.shortTitle} — English ${nivel.toUpperCase()}` : `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
+    caption,
+    description: english ? `Original educational infographic for ${topic.shortTitle}, built from the lesson’s specific rule, visual map and examples.` : `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
     contentUrl,
     url: contentUrl,
     width: 1200,
     height: 630,
     encodingFormat: 'image/png',
-    inLanguage: ['es', language.code],
+    inLanguage: english ? 'en' : ['es', language.code],
     creditText: 'Idiomas WeLearn',
     creator: { '@type': 'Organization', name: 'Idiomas WeLearn', url: SITE_ORIGIN },
   }

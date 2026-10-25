@@ -1,4 +1,4 @@
-import { createSupplementalTopic } from '../create-supplemental-topic'
+import { createSupplementalTopic } from '../create-supplemental-topic.ts'
 
 export const ellipsisSubstitution = createSupplementalTopic({
   slug: 'ellipsis-substitution-c2', order: '01', color: '#C8102E', category: 'Cohesion', level: 'C2',
@@ -41,7 +41,7 @@ export const ellipsisSubstitution = createSupplementalTopic({
       { scene: 'Justificación', prompt: 'Explica por qué mantienes una repetición en vez de usar elipsis.', answer: 'I repeat “approve the budget” because two earlier actions could be the referent of “do so”.', accepted: ['because', 'referent'], explain: 'La claridad limita la elipsis.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const frontingInformation = createSupplementalTopic({
   slug: 'fronting-information-structure-c2', order: '02', color: '#7C3AED', category: 'Information structure', level: 'C2',
@@ -84,7 +84,7 @@ export const frontingInformation = createSupplementalTopic({
       { scene: 'Justificación', prompt: 'Usa fronting y explica qué información tratas como conocida.', answer: 'This constraint, we cannot ignore; “this constraint” is already active and becomes the topic.', accepted: ['topic'], explain: 'Decisión discursiva explícita.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const evidentialModality = createSupplementalTopic({
   slug: 'evidential-modality-c2', order: '03', color: '#0369A1', category: 'Modality', level: 'C2',
@@ -127,7 +127,7 @@ export const evidentialModality = createSupplementalTopic({
       { scene: 'Auditoría', prompt: 'Identifica cuándo una frase presenta un rumor como hecho y repárala.', answer: 'Replace “The firm will close” with “The firm is reportedly considering closure,” and cite the source.', accepted: ['reportedly', 'source'], explain: 'Atribución responsable.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const registerTransformation = createSupplementalTopic({
   slug: 'register-transformation-c2', order: '04', color: '#047857', category: 'Register', level: 'C2',
@@ -170,4 +170,4 @@ export const registerTransformation = createSupplementalTopic({
       { scene: 'Control semántico', prompt: 'Transforma una instrucción firme en una petición cortés sin cambiar obligación ni fecha.', answer: 'Please submit the signed form by 5 p.m. today; the deadline remains mandatory.', accepted: ['please submit', 'by 5 p.m.'], explain: 'Registro cambia; contenido no.' },
     ],
   },
-})
+}, { language: 'en' })

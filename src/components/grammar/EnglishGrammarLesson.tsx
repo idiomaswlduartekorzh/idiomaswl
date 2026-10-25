@@ -61,7 +61,7 @@ export default function EnglishGrammarLesson({
       aria-labelledby="english-grammar-title"
     >
       <div className={styles.previewFlag}><span>{advancedPilot ? 'Advanced pilot' : 'Página completa'}</span> {advancedPilot ? 'Infographic, PDF and practice ready' : 'Audio inglés nativo, PDF y práctica listos'}</div>
-      <div className={styles.track} aria-label={`Ruta de gramática inglesa ${level.toUpperCase()}`}>
+      <div className={styles.track} aria-label={english ? `English grammar route ${level.toUpperCase()}` : `Ruta de gramática inglesa ${level.toUpperCase()}`}>
         <span>{english ? 'Foundations' : 'Fundamentos'}</span><b>→</b><strong>{english ? 'Grammar' : 'Gramática'}</strong><b>→</b><span>{english ? 'Real use' : 'Uso real'}</span><b>→</b><span>{english ? 'Production' : 'Producción'}</span>
       </div>
 
@@ -80,7 +80,7 @@ export default function EnglishGrammarLesson({
             <span><b>{resource.studyMinutes}</b> min</span>
           </div>
         </div>
-        <div className={styles.heroVisual} aria-label="Mapa visual de pronombres ingleses">
+        <div className={styles.heroVisual} aria-label={english ? `Visual map for ${topic.shortTitle}` : 'Mapa visual de pronombres ingleses'}>
           <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 25% 20%, #ffffff 0 2%, transparent 2.4%), linear-gradient(145deg, #eef3ff 0%, #d8e3fb 48%, #b7c9ee 100%)' }} />
           <div style={{ position: 'absolute', inset: '12% 9% 24%', display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 'clamp(.55rem, 2vw, 1rem)', transform: 'rotate(-2deg)' }}>
             {heroWords(topic).map((word, index) => (
@@ -114,7 +114,7 @@ export default function EnglishGrammarLesson({
               <section key={section.heading} className={styles.explainBlock}>
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                {section.table ? <ReferenceTable rows={section.table} /> : null}
+                {section.table ? <ReferenceTable rows={section.table} uiLanguage={english ? 'en' : 'es'} /> : null}
                 {section.examples ? <div className={styles.exampleRows}>{section.examples.map((row, rowIndex) => <div key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <span key={`${cellIndex}-${cell}`}>{cell}</span>)}</div>)}</div> : null}
               </section>
             ))}
@@ -124,7 +124,7 @@ export default function EnglishGrammarLesson({
         {active === 'mapa' ? (
           <section className={styles.visualSection} aria-labelledby="visual-title">
             <SectionIntro kicker={english ? 'Visual lab' : 'Laboratorio visual'} title={english ? 'The rule at a glance' : 'La regla de una sola mirada'} copy={topic.visual.teacherLens} titleId="visual-title" />
-            <div className={styles.formula} aria-label={`Fórmula: ${topic.guide.formula}`}>
+            <div className={styles.formula} aria-label={`${english ? 'Formula' : 'Fórmula'}: ${topic.guide.formula}`}>
               {formulaParts.map((part, index) => (
                 <div key={`${part}-${index}`} style={{ '--delay': `${index * 90}ms` } as React.CSSProperties}><span>{String(index + 1).padStart(2, '0')}</span><b>{part}</b></div>
               ))}
@@ -154,7 +154,7 @@ export default function EnglishGrammarLesson({
                 <div key={pattern} style={{ '--delay': `${index * 110}ms` } as React.CSSProperties}><strong lang="en">{pattern}</strong><span>→</span><p>{meaning}</p></div>
               ))}
             </div>
-            <ReferenceTable rows={topic.guide.table} />
+            <ReferenceTable rows={topic.guide.table} uiLanguage={english ? 'en' : 'es'} />
             <div className={styles.modeRow}>{topic.visual.learnerModes.map((mode) => <span key={mode}>{mode}</span>)}</div>
           </section>
         ) : null}
@@ -182,7 +182,9 @@ export default function EnglishGrammarLesson({
             <SectionIntro kicker={english ? 'Study library' : 'Biblioteca de estudio'} title={english ? 'Study materials ready to use' : 'Material listo para estudiar'} copy={resource.audioTracks.length ? `Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.` : (english ? 'Download the printable workbook and keep the infographic as a quick reference for this topic.' : 'Descarga el cuaderno imprimible y conserva la infografía como referencia rápida del tema.')} titleId="resources-title" />
             <div className={styles.resourceGrid}>
               <ResourceCard code="WEB" title={english ? 'Interactive lesson' : 'Lección interactiva'} copy={english ? `${topic.practice.levels.length} stages and ${practiceActivityCount} activities already integrated.` : `${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status={english ? 'Ready to review' : 'Lista para revisar'} />
-              <ResourceCard code="PDF" title={english ? 'Guide and workbook' : 'Guía y cuaderno'} copy={english ? 'Explanation, visual map, practice and answer key with the same visual hierarchy.' : 'Explicación, mapa, práctica y soluciones con la misma jerarquía visual.'} status={english ? 'Download PDF' : 'Descargar PDF'} href={resource.pdf} />
+              <ResourceCard code="PDF" title={english ? 'Complete guide' : 'Guía y cuaderno'} copy={english ? 'Full explanation, guided visual map, practice and answer key in one editorial workbook.' : 'Explicación, mapa, práctica y soluciones con la misma jerarquía visual.'} status={english ? 'Download complete PDF' : 'Descargar PDF'} href={resource.pdf} />
+              {resource.exercisesPdf ? <ResourceCard code="WORK" title="Exercises only" copy={`${practiceActivityCount} learning decisions organised for printing, classroom use or independent practice.`} status="Download exercises" href={resource.exercisesPdf} /> : null}
+              {resource.answerKeyPdf ? <ResourceCard code="KEY" title="Answer key" copy="Model answers with a concise explanation of the grammar decision behind each response." status="Download answer key" href={resource.answerKeyPdf} /> : null}
               {resource.audioTracks.length ? <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" /> : <ResourceCard code="MAP" title={english ? 'Topic infographic' : 'Infografía del tema'} copy={english ? 'Rule, contrast and examples organised for quick review.' : 'Regla, contraste y ejemplos organizados para repasar de una sola mirada.'} status={english ? 'Included in the lesson' : 'Incluida en la lección'} />}
             </div>
             {resource.audioTracks.length ? <AudioDownloads tracks={resource.audioTracks} /> : null}
@@ -205,9 +207,9 @@ function SectionIntro({ kicker, title, copy, titleId }: { kicker: string; title:
   return <div className={styles.sectionIntro}><div><span>{kicker}</span><h2 id={titleId}>{title}</h2></div>{copy ? <p>{copy}</p> : null}</div>
 }
 
-function ReferenceTable({ rows }: { rows: string[][] }) {
+function ReferenceTable({ rows, uiLanguage = 'es' }: { rows: string[][]; uiLanguage?: 'es' | 'en' }) {
   if (rows.length === 0) return null
-  return <div className={styles.tableWrap} role="region" aria-label="Tabla de referencia" tabIndex={0}><table><thead><tr>{rows[0].map((cell, index) => <th key={`${index}-${cell}`}>{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <td key={`${cellIndex}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table></div>
+  return <div className={styles.tableWrap} role="region" aria-label={uiLanguage === 'en' ? 'Reference table' : 'Tabla de referencia'} tabIndex={0}><table><thead><tr>{rows[0].map((cell, index) => <th key={`${index}-${cell}`}>{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <td key={`${cellIndex}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table></div>
 }
 
 function ResourceCard({ code, title, copy, status, href }: { code: string; title: string; copy: string; status: string; href?: string }) {

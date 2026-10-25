@@ -93,7 +93,7 @@ export const cleftSentences = createSupplementalTopic({
       { scene: 'Párrafo', prompt: 'Usa dos tipos de cleft sin repetir el mismo foco.', answer: 'What the team needs is direction. It was the new manager who finally provided it.', accepted: ['what', 'it was'], explain: 'Cohesión y variedad.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const hedgingStance = createSupplementalTopic({
   slug: 'hedging-stance-c1', order: '03', color: '#0369A1', category: 'Academic grammar', level: 'C1',
@@ -136,7 +136,7 @@ export const hedgingStance = createSupplementalTopic({
       { scene: 'Auditoría', prompt: 'Revisa una afirmación absoluta y explica por qué la matizas.', answer: 'Users tend to prefer the new design; tend to is appropriate because the survey was not universal.', accepted: ['tend to'], explain: 'Decisión justificada.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const nominalisation = createSupplementalTopic({
   slug: 'nominalisation-c1', order: '04', color: '#047857', category: 'Formal style', level: 'C1',
@@ -179,4 +179,4 @@ export const nominalisation = createSupplementalTopic({
       { scene: 'Edición', prompt: 'Detecta una cadena nominal pesada y reescríbela con verbos.', answer: 'Instead of the completion of the evaluation of the system, write: We evaluated the system and completed the review.', accepted: ['evaluated', 'completed'], explain: 'Claridad antes que densidad.' },
     ],
   },
-})
+}, { language: 'en' })

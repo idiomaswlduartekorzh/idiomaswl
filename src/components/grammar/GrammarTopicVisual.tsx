@@ -50,7 +50,7 @@ export default function GrammarTopicVisual({
       <a href={imagePath} className={styles.imageLink} aria-label={english ? `Open the full-size ${topic.shortTitle} infographic` : `Abrir la infografía de ${topic.shortTitle} en tamaño completo`}>
         <Image
           src={imagePath}
-          alt={grammarVisualAlt(topic, idioma, nivel)}
+          alt={english ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}` : grammarVisualAlt(topic, idioma, nivel)}
           width={1200}
           height={630}
           sizes="(max-width: 820px) 100vw, 1120px"

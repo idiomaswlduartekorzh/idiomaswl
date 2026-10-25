@@ -12,7 +12,7 @@ export function generateStaticParams() { return getTopicsByLevel(IDIOMA, NIVEL).
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const topic = getTopicBySlug(IDIOMA, NIVEL, (await params).slug)
-  return topic ? generateGrammarMetadata(topic, IDIOMA, NIVEL) : {}
+  return topic ? generateGrammarMetadata(topic, IDIOMA, NIVEL, { contentLanguage: 'en' }) : {}
 }
 
 export default async function EnglishC2GrammarTopicPage({ params }: Props) {

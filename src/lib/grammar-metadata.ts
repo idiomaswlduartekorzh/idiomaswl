@@ -22,12 +22,16 @@ const IDIOMA_LABELS: Record<string, string> = {
 export function generateGrammarMetadata(
   topic: GrammarTopic,
   idioma: string,
-  nivel: string
+  nivel: string,
+  options: { contentLanguage?: 'es' | 'en' } = {},
 ): Metadata {
+  const english = options.contentLanguage === 'en'
   const lang = IDIOMA_LABELS[idioma] ?? idioma
   const canonical = `https://www.idiomaswl.com/practica/${idioma}/${nivel}/gramatica/${topic.slug}`
   const visual = grammarVisualUrl(idioma, nivel, topic.slug)
-  const visualAlt = isGrammarVisualLanguage(idioma)
+  const visualAlt = english
+    ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}`
+    : isGrammarVisualLanguage(idioma)
     ? grammarVisualAlt(topic, idioma, nivel)
     : `Explicación visual de ${topic.shortTitle}`
 
@@ -35,8 +39,10 @@ export function generateGrammarMetadata(
   // ni `topic.description` en crudo. `description` se pinta además en el cuerpo
   // del artículo, así que está escrita para leerse en la página: en el resultado
   // de Google salía cortada y regalaba la respuesta. Ver `@/lib/seo-snippet`.
-  const title = buildGrammarTitle(topic)
-  const description = buildGrammarDescription(topic)
+  const title = english ? fitTitle(topic.metaTitle) : buildGrammarTitle(topic)
+  const description = english
+    ? fitDescription(`${topic.description} Includes a visual map, progressive practice and three printable PDFs.`)
+    : buildGrammarDescription(topic)
 
   return {
     title,
@@ -47,7 +53,7 @@ export function generateGrammarMetadata(
       title: topic.metaTitle,
       description: topic.lead,
       type: 'website',
-      locale: 'es_CO',
+      locale: english ? 'en_US' : 'es_CO',
       url: canonical,
       images: [{ url: visual, width: 1200, height: 630, alt: visualAlt }],
     },
@@ -58,7 +64,7 @@ export function generateGrammarMetadata(
       images: [{ url: visual, alt: visualAlt }],
     },
     other: {
-      'article:section': `Gramática ${lang} ${nivel.toUpperCase()}`,
+      'article:section': english ? `English grammar ${nivel.toUpperCase()}` : `Gramática ${lang} ${nivel.toUpperCase()}`,
     },
   }
 }

@@ -1,4 +1,5 @@
 import type { Blank, GrammarTopic, WriteItem } from '../types.ts'
+import { localizeAdvancedEnglishTopic } from './localize-advanced-topic.ts'
 
 type ChoiceDraft = {
   scene: string
@@ -38,8 +39,9 @@ export function createSupplementalTopic(
   options: { language?: 'es' | 'en' } = {},
 ): GrammarTopic {
   const english = options.language === 'en'
+  const topic = english ? localizeAdvancedEnglishTopic(config) : config
   return {
-    ...config,
+    ...topic,
     practice: {
       levels: [
         {
@@ -48,7 +50,7 @@ export function createSupplementalTopic(
           tag: english ? 'Multiple choice' : 'Opción múltiple',
           intro: english ? 'Choose the form that completes each situation naturally.' : 'Elige la forma que completa naturalmente cada situación.',
           type: 'choice',
-          items: config.practice.choice.map((item) => ({
+          items: topic.practice.choice.map((item) => ({
             scene: item.scene,
             lines: [['', item.prompt]],
             options: item.options,
@@ -62,7 +64,7 @@ export function createSupplementalTopic(
           tag: english ? '2 gaps' : '2 espacios',
           intro: english ? 'Resolve two connected choices within the same context.' : 'Resuelve dos decisiones dentro de la misma situación.',
           type: 'dual',
-          items: config.practice.dual.map((item) => ({
+          items: topic.practice.dual.map((item) => ({
             scene: item.scene,
             lines: [['', item.prompt]],
             blanks: item.blanks,
@@ -74,7 +76,7 @@ export function createSupplementalTopic(
           tag: english ? 'Options' : 'Opciones',
           intro: english ? 'Maintain the target structure throughout a complete text.' : 'Mantén la estructura objetivo a lo largo de un texto completo.',
           type: 'guidedText',
-          ...config.practice.guided,
+          ...topic.practice.guided,
         },
         {
           id: 'level-4',
@@ -82,7 +84,7 @@ export function createSupplementalTopic(
           tag: english ? 'No options' : 'Sin opciones',
           intro: english ? 'Supply every form without a word bank.' : 'Escribe cada forma sin banco de palabras.',
           type: 'freeText',
-          ...config.practice.free,
+          ...topic.practice.free,
         },
         {
           id: 'level-5',
@@ -90,7 +92,7 @@ export function createSupplementalTopic(
           tag: english ? 'Production' : 'Producción',
           intro: english ? 'Transform the idea without changing its meaning.' : 'Transforma la idea sin perder el significado.',
           type: 'write',
-          items: config.practice.write,
+          items: topic.practice.write,
         },
         {
           id: 'level-6',
@@ -98,7 +100,7 @@ export function createSupplementalTopic(
           tag: english ? 'Final challenge' : 'Reto final',
           intro: english ? 'Use the structure in original responses and realistic situations.' : 'Usa la estructura en respuestas propias y situaciones reales.',
           type: 'write',
-          items: config.practice.mission,
+          items: topic.practice.mission,
         },
       ],
     },

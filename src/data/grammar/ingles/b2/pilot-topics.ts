@@ -1,4 +1,4 @@
-import { createSupplementalTopic } from '../create-supplemental-topic'
+import { createSupplementalTopic } from '../create-supplemental-topic.ts'
 
 export const mixedConditionals = createSupplementalTopic({
   slug: 'mixed-conditionals-b2', order: '01', color: '#C8102E', category: 'Conditionals', level: 'B2',
@@ -41,7 +41,7 @@ export const mixedConditionals = createSupplementalTopic({
       { scene: 'Debate', prompt: 'Contrasta una realidad pasada y una característica presente en dos frases.', answer: 'If we had planned better, we would be on schedule. If the team were more flexible, it would have adapted faster.', accepted: ['if', 'would'], explain: 'Control de las dos combinaciones.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const modalPerfects = createSupplementalTopic({
   slug: 'modal-perfects-b2', order: '02', color: '#6D28D9', category: 'Modality', level: 'B2',
@@ -84,7 +84,7 @@ export const modalPerfects = createSupplementalTopic({
       { scene: 'Noticia', prompt: 'Distingue un hecho de dos inferencias sobre él.', answer: 'The server stopped at midnight. It may have overheated, but someone must have restarted it.', accepted: ['may have', 'must have'], explain: 'Separa evidencia e interpretación.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const reportingPassives = createSupplementalTopic({
   slug: 'reporting-passives-b2', order: '03', color: '#075985', category: 'Passive voice', level: 'B2',
@@ -127,7 +127,7 @@ export const reportingPassives = createSupplementalTopic({
       { scene: 'Fuentes', prompt: 'Escribe una frase pasiva y después añade una fuente explícita.', answer: 'The area is believed to be safe; according to the council report, inspections ended on Friday.', accepted: ['is believed to be', 'according to'], explain: 'La pasiva no sustituye la fuente.' },
     ],
   },
-})
+}, { language: 'en' })
 
 export const participleClauses = createSupplementalTopic({
   slug: 'participle-clauses-b2', order: '04', color: '#047857', category: 'Complex sentences', level: 'B2',
@@ -170,4 +170,4 @@ export const participleClauses = createSupplementalTopic({
       { scene: 'Edición', prompt: 'Escribe una oración reducida y comprueba explícitamente quién realiza cada acción.', answer: 'Having checked the route, we left early; we both checked and left.', accepted: ['having checked'], explain: 'Control consciente del sujeto.' },
     ],
   },
-})
+}, { language: 'en' })

@@ -15,14 +15,16 @@ export default function EnglishGrammarTopicPage({ topic, level, relatedWritingEx
   const indexUrl = `https://www.idiomaswl.com/practica/ingles/${level}/gramatica`
   const resource = getEnglishGrammarResource(topic, level)
   const resourceParts = [
-    { '@type': 'MediaObject', name: 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf' },
+    { '@type': 'MediaObject', name: advancedPilot ? 'Complete grammar guide' : 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf', inLanguage: advancedPilot ? 'en' : ['es', 'en'] },
+    ...(resource.exercisesPdf ? [{ '@type': 'MediaObject', name: 'Grammar exercise workbook', contentUrl: `https://www.idiomaswl.com${resource.exercisesPdf}`, encodingFormat: 'application/pdf', inLanguage: 'en' }] : []),
+    ...(resource.answerKeyPdf ? [{ '@type': 'MediaObject', name: 'Grammar answer key', contentUrl: `https://www.idiomaswl.com${resource.answerKeyPdf}`, encodingFormat: 'application/pdf', inLanguage: 'en' }] : []),
     ...resource.audioTracks.map((track) => ({ '@type': 'AudioObject', name: track.title, contentUrl: `https://www.idiomaswl.com${track.src}`, encodingFormat: 'audio/mp4', inLanguage: 'en' })),
   ]
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
       { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: advancedPilot ? 'en' : ['es', 'en'], teaches: topic.shortTitle, image: grammarVisualUrl('ingles', level, topic.slug), learningResourceType: resource.audioTracks.length ? ['Lección interactiva', 'Cuaderno de ejercicios', 'Audio'] : ['Interactive lesson', 'Exercise workbook', 'Educational infographic'], timeRequired: `PT${resource.studyMinutes}M`, isAccessibleForFree: true, hasPart: resourceParts, provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
-      grammarVisualImageObject(topic, 'ingles', level),
+      grammarVisualImageObject(topic, 'ingles', level, { contentLanguage: advancedPilot ? 'en' : 'es' }),
       { '@type': 'HowTo', name: advancedPilot ? `How to study ${topic.shortTitle}` : `Cómo estudiar ${topic.shortTitle}`, description: topic.guide.goal, totalTime: `PT${resource.studyMinutes}M`, step: topic.guide.decisions.map((decision, index) => ({ '@type': 'HowToStep', position: index + 1, name: `${advancedPilot ? 'Step' : 'Paso'} ${index + 1}`, text: decision })) },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },

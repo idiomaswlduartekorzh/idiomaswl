@@ -44,6 +44,8 @@ export type EnglishGrammarAudioTrack = {
 export type EnglishGrammarResource = {
   studyMinutes: number
   pdf: string
+  exercisesPdf?: string
+  answerKeyPdf?: string
   audioTracks: EnglishGrammarAudioTrack[]
 }
 
@@ -58,6 +60,8 @@ export function getEnglishGrammarResource(topic: GrammarTopic, level: EnglishGra
   return {
     studyMinutes: englishStudyMinutes(level),
     pdf: englishGrammarPdf(topic.slug, level),
+    exercisesPdf: isAdvancedPilot(level) ? englishGrammarPdf(topic.slug, level, 'exercises') : undefined,
+    answerKeyPdf: isAdvancedPilot(level) ? englishGrammarPdf(topic.slug, level, 'answer-key') : undefined,
     audioTracks: isAdvancedPilot(level) ? [] : definitions.map(([id, title], index) => ({
       id,
       title,
@@ -97,8 +101,9 @@ function pickThree(items: string[]): string[] {
   return [values[0], values[Math.floor((values.length - 1) / 2)], values.at(-1)!]
 }
 
-function englishGrammarPdf(slug: string, level: EnglishGrammarLevel): string {
-  const filename = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}.pdf` : `idiomaswl-${slug}-${level}.pdf`
+function englishGrammarPdf(slug: string, level: EnglishGrammarLevel, edition?: 'exercises' | 'answer-key'): string {
+  const stem = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}` : `idiomaswl-${slug}-${level}`
+  const filename = `${stem}${edition ? `-${edition}` : ''}.pdf`
   return `/api/site-materials/ingles-${level}/grammar/${filename}`
 }
 
