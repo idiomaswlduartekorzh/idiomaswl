@@ -7,6 +7,22 @@ Fecha de corte: 25 de agosto de 2026.
 
 Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dded815e0e6b`.
 
+## Recuperación de contraseña — 25 de octubre de 2026
+
+`codex/password-recovery-20261025` partió de `origin/main` en `a7d96133` y se integró
+en `main` mediante `1a8564eb`. El enlace de la página de acceso abre ahora
+`/recuperar-contrasena`; Supabase envía un enlace al correo y el callback conduce a
+`/restablecer-contrasena` para elegir una contraseña nueva. Los enlaces vencidos
+regresan al formulario. El formulario no revela si existe una cuenta.
+
+Validación previa: catálogo protegido íntegro (465 temas), TypeScript y build Next.js
+de 2.951 páginas, incluidas las dos rutas nuevas. Despliegue de producción
+`dpl_33d2Q6swqHEsLsRnuhujf1tcyGeU`: `READY`, fuente GitHub `main`, SHA `1a8564eb`.
+`/login`, `/recuperar-contrasena` y `/restablecer-contrasena` respondieron `200` en
+`www.idiomaswl.com`; el enlace de login apunta al nuevo formulario. Supabase registró
+un envío de correo de recuperación a la cuenta reportada. La recepción en la bandeja
+de la alumna y la apertura del enlace requieren confirmación de ella.
+
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
 ## Conexión entre idiomas, práctica y exámenes — 24 de octubre de 2026
