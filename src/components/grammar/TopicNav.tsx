@@ -24,11 +24,12 @@ export default function TopicNav({
   slug: string
   /** Etiqueta del índice, p. ej. «Gramática A1». */
   indexLabel: string
-  uiLanguage?: 'es' | 'en' | 'fr' | 'de'
+  uiLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it'
 }) {
   const english = uiLanguage === 'en'
   const french = uiLanguage === 'fr'
   const german = uiLanguage === 'de'
+  const italian = uiLanguage === 'it'
   const topics = getTopicsByLevel(idioma, nivel)
   const i = topics.findIndex(t => t.slug === slug)
   const prev = i > 0 ? topics[i - 1] : null
@@ -52,27 +53,27 @@ export default function TopicNav({
 
   return (
     <>
-      <nav className="topic-nav" aria-label={english ? 'Topic navigation' : french ? 'Navigation des thèmes' : german ? 'Themennavigation' : 'Navegación de temas'}>
+      <nav className="topic-nav" aria-label={english ? 'Topic navigation' : french ? 'Navigation des thèmes' : german ? 'Themennavigation' : italian ? 'Navigazione degli argomenti' : 'Navegación de temas'}>
         {prev ? (
           <Link href={`${base}/${prev.slug}`} className="topic-nav__link" style={box}>
-            <span>← {english ? 'Previous topic' : french ? 'Thème précédent' : german ? 'Vorheriges Thema' : 'Tema anterior'}</span>
+            <span>← {english ? 'Previous topic' : french ? 'Thème précédent' : german ? 'Vorheriges Thema' : italian ? 'Argomento precedente' : 'Tema anterior'}</span>
             <strong>{prev.shortTitle}</strong>
           </Link>
         ) : (
           <Link href={base} className="topic-nav__link" style={box}>
-            <span>← {english ? 'All topics' : french ? 'Tous les thèmes' : german ? 'Alle Themen' : 'Todos los temas'}</span>
+            <span>← {english ? 'All topics' : french ? 'Tous les thèmes' : german ? 'Alle Themen' : italian ? 'Tutti gli argomenti' : 'Todos los temas'}</span>
             <strong>{indexLabel}</strong>
           </Link>
         )}
 
         {next ? (
           <Link href={`${base}/${next.slug}`} className="topic-nav__link next" style={{ ...box, textAlign: 'right' }}>
-            <span>{english ? 'Next topic' : french ? 'Thème suivant' : german ? 'Nächstes Thema' : 'Tema siguiente'} →</span>
+            <span>{english ? 'Next topic' : french ? 'Thème suivant' : german ? 'Nächstes Thema' : italian ? 'Argomento successivo' : 'Tema siguiente'} →</span>
             <strong>{next.shortTitle}</strong>
           </Link>
         ) : (
           <Link href={base} className="topic-nav__link next" style={{ ...box, textAlign: 'right' }}>
-            <span>{english ? 'Back to index' : french ? 'Retour à l’index' : german ? 'Zurück zur Übersicht' : 'Volver al índice'} →</span>
+            <span>{english ? 'Back to index' : french ? 'Retour à l’index' : german ? 'Zurück zur Übersicht' : italian ? 'Torna all’indice' : 'Volver al índice'} →</span>
             <strong>{indexLabel}</strong>
           </Link>
         )}
@@ -81,7 +82,7 @@ export default function TopicNav({
       {others.length > 0 && (
         <section style={{ margin: '2rem 0 3rem' }}>
           <h2 style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: '0.9rem' }}>
-            {english ? 'More grammar at this level' : french ? 'Plus de grammaire à ce niveau' : german ? 'Mehr Grammatik auf diesem Niveau' : 'Más gramática de este nivel'}
+            {english ? 'More grammar at this level' : french ? 'Plus de grammaire à ce niveau' : german ? 'Mehr Grammatik auf diesem Niveau' : italian ? 'Altra grammatica di questo livello' : 'Más gramática de este nivel'}
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '0.7rem' }}>
             {others.map(t => (

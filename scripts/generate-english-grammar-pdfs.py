@@ -21,12 +21,13 @@ ROOT = Path(__file__).resolve().parents[1]
 PDF_LANGUAGE = os.environ.get('GRAMMAR_PDF_LANGUAGE', 'english').lower()
 IS_FRENCH = PDF_LANGUAGE == 'french'
 IS_GERMAN = PDF_LANGUAGE == 'german'
+IS_ITALIAN = PDF_LANGUAGE == 'italian'
 DATA = Path(os.environ.get('GRAMMAR_PDF_DATA', ROOT / 'tmp' / 'english-grammar' / 'topics.json'))
 OUTPUT = Path(os.environ.get('GRAMMAR_PDF_OUTPUT', os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / f'{PDF_LANGUAGE}-grammar')))
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
-PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'ingles')
+PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'ingles')
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-wordmark-transparent-v2.png'
@@ -117,11 +118,80 @@ def germanize(value):
     return value
 
 
+ITALIAN_TEXT = {
+    'complete guide': 'corso completo', 'exercise workbook': 'quaderno di esercizi', 'answer key': 'soluzioni',
+    'English grammar': 'Grammatica italiana', 'Complete guide': 'Corso completo', 'Exercise workbook': 'Quaderno di esercizi',
+    'Answer key': 'Soluzioni', 'Original material · English': 'Materiale originale · Italiano', 'Page': 'Pagina',
+    'Options': 'Opzioni', 'OPTIONS  ': 'OPZIONI  ', 'ENGLISH': 'ITALIANO', 'This document': 'Questo documento',
+    'Model answers and concise grammar explanations for every stage in the separate exercise workbook.': 'Risposte modello e spiegazioni grammaticali concise per ogni fase del quaderno di esercizi separato.',
+    'Recommended use': 'Uso consigliato', 'Keep the three-document system together': 'Usa insieme i tre documenti',
+    'Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.': 'Usa il corso completo per capire il concetto, questo quaderno per esercitarti e le soluzioni per valutare ogni decisione.',
+    'Correct one stage at a time. Explain the rule aloud before marking an answer as secure.': 'Correggi una fase alla volta. Spiega la regola ad alta voce prima di considerare sicura una risposta.',
+    'WELEARN STUDY SEQUENCE': 'PERCORSO DI STUDIO WELEARN', 'Practice stage': 'Fase di pratica', 'Gap': 'Spazio',
+    'Word bank': 'Banca di forme', 'Available forms': 'Forme disponibili', 'Stage check': 'Controllo della fase',
+    'Pause before continuing': 'Fermati prima di continuare',
+    'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.': 'Sottolinea l’elemento attivatore o il punto decisionale, nomina la regola e controlla che il significato non sia cambiato.',
+    'Retrieval': 'Recupero attivo', 'Final self-check': 'Autocontrollo finale',
+    'Complete these prompts without reopening the guide.': 'Completa queste consegne senza riaprire il corso.',
+    'Review focus': 'Focus di revisione', 'Compare the form first, then read the explanation and name the rule in your own words.': 'Confronta prima la forma, poi leggi la spiegazione e formula la regola con parole tue.',
+    'Feedback': 'Riscontro', 'Diagnose the pattern, not only the score': 'Analizza lo schema, non solo il punteggio',
+    'Use this page to decide what to revisit in the complete guide.': 'Usa questa pagina per decidere che cosa ripassare nel corso completo.',
+    'What went wrong? What rule will prevent the same error next time?': 'Che cosa non ha funzionato? Quale regola eviterà lo stesso errore la prossima volta?',
+    'ADVANCED GRAMMAR': 'GRAMMATICA AVANZATA', 'The central idea': 'L’idea centrale', 'Model': 'Modello',
+    'This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.': 'Questo corso completo unisce spiegazione, ragionamento visivo, pratica e riscontro. Dalla pagina della lezione sono disponibili anche il quaderno di esercizi e le soluzioni separate.',
+    'LEARNING OUTCOMES': 'OBIETTIVI DI APPRENDIMENTO', 'Understand': 'Capire', 'Build meaning before form': 'Costruire il significato prima della forma',
+    'Visual map': 'Mappa visiva', 'Reason through the pattern': 'Ragionare attraverso lo schema',
+    'DECIDE IN THIS ORDER': 'DECIDI IN QUESTO ORDINE', 'Reference': 'Riferimento',
+    'Compare forms and meanings': 'Confrontare forme e significati', 'Use the table to justify each structural choice.': 'Usa la tabella per motivare ogni scelta strutturale.',
+    'EXAMPLES AT A GLANCE': 'ESEMPI IN SINTESI', 'COMMON ERRORS': 'ERRORI FREQUENTI',
+    'Edit this': 'Da rivedere', 'Avoid this pattern': 'Evita questo errore',
+    'exercises': 'esercizi', 'answer-key': 'soluzioni',
+}
+
+
+def italianize(value):
+    if isinstance(value, list):
+        if value == ['complete guide', 'exercise workbook', 'answer key', 'retrieval review']:
+            return ['corso completo', 'quaderno di esercizi', 'soluzioni', 'recupero attivo']
+        if value == ['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register']:
+            return ['Elemento attivatore o contesto', 'Ausiliare o scelta strutturale', 'Verbo principale o forma della frase', 'Significato e registro']
+        return value
+    if value in ITALIAN_TEXT:
+        return ITALIAN_TEXT[value]
+    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    if match:
+        return f"{match.group(1)} decisioni di apprendimento in sei fasi progressive. Scrivi direttamente sulla pagina e consulta le soluzioni separate solo dopo aver completato una fase."
+    match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
+    if match:
+        return f"Esercizi stampabili su {match.group(1)}. Nessuna spiegazione o soluzione interrompe le pagine di lavoro."
+    match = re.fullmatch(r'Explain and exemplify: (.+)\.', value)
+    if match:
+        return f"Spiega e illustra con un esempio: {match.group(1)}."
+    match = re.fullmatch(r'Solutions and feedback for the (.+) exercise workbook\.', value)
+    if match:
+        return f"Soluzioni e riscontro per il quaderno di esercizi su {match.group(1)}."
+    match = re.fullmatch(r'(\d+) GUIDED STAGES · (\d+) LEARNING DECISIONS', value)
+    if match:
+        return f"{match.group(1)} FASI GUIDATE · {match.group(2)} DECISIONI DI APPRENDIMENTO"
+    match = re.fullmatch(r'Outcome (\d+)', value)
+    if match:
+        return f"Obiettivo {match.group(1)}"
+    match = re.fullmatch(r'Step (\d+)', value)
+    if match:
+        return f"Passo {match.group(1)}"
+    match = re.fullmatch(r'Decision (\d+)', value)
+    if match:
+        return f"Decisione {match.group(1)}"
+    return value
+
+
 def l(english, french):
     if IS_FRENCH:
         return french
     if IS_GERMAN:
         return germanize(english)
+    if IS_ITALIAN:
+        return italianize(english)
     return english
 
 
@@ -679,7 +749,7 @@ def main():
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))
             print(answer_key_target.relative_to(ROOT))
-    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
+    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 
 if __name__ == '__main__':

@@ -272,7 +272,7 @@ function TextWithBlanks({
 
 // ── Choice level ─────────────────────────────────────────────────────────────
 
-type UiLanguage = 'es' | 'en' | 'fr' | 'de'
+type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it'
 const GERMAN_UI: Record<string, string> = {
   'Question': 'Frage', 'View results →': 'Ergebnisse anzeigen →', 'Next →': 'Weiter →', 'Context': 'Kontext',
   'Submit answers →': 'Antworten abgeben →', 'Exercise': 'Übung', 'Instruction': 'Aufgabe',
@@ -294,12 +294,37 @@ const GERMAN_UI: Record<string, string> = {
   'stages unlocked': 'Stufen freigeschaltet', 'stages': 'Stufen', 'Objective': 'Lernziel',
   'Key decisions': 'Wichtige Entscheidungen', 'Quick reference': 'Schnellübersicht', 'Common errors': 'Häufige Fehler',
 }
+const ITALIAN_UI: Record<string, string> = {
+  'Question': 'Domanda', 'View results →': 'Vedi i risultati →', 'Next →': 'Avanti →', 'Context': 'Contesto',
+  'Submit answers →': 'Invia le risposte →', 'Exercise': 'Esercizio', 'Instruction': 'Consegna',
+  'Write your answer here...': 'Scrivi qui la tua risposta...', '(no answer)': '(nessuna risposta)',
+  'gap': 'spazio', 'Gap': 'Spazio', 'Detailed review': 'Correzione dettagliata',
+  'Review every answer with its correction and explanation.': 'Rivedi ogni risposta con la correzione e la spiegazione.',
+  'correct': 'corrette', '✓ Correct': '✓ Corretta', '✗ Review': '✗ Da rivedere', 'Your answer': 'La tua risposta',
+  'Correct answer': 'Risposta corretta', 'Download this topic as a PDF': 'Scarica questo argomento in PDF',
+  'Explanation, reference table, exercises and answer key. Ready to print.': 'Spiegazione, tabella di riferimento, esercizi e soluzioni. Pronto da stampare.',
+  'Visual lab': 'Laboratorio visivo', 'Writing transfer': 'Trasferimento alla scrittura',
+  'The guided task asks you to use this structure in a communicative situation at the same level.': 'L’attività guidata ti chiede di usare questa struttura in una situazione comunicativa dello stesso livello.',
+  'Progressive practice': 'Pratica progressiva', '6 practice stages': '6 fasi di pratica',
+  'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.': 'Ottieni almeno il 65% in ogni fase per sbloccare la successiva. Le correzioni compaiono dopo l’intera fase, non dopo ogni domanda.',
+  'Stage': 'Fase', 'Score at least 65% in the previous stage to unlock': 'Ottieni almeno il 65% nella fase precedente per sbloccare questa',
+  'Teacher note': 'Nota didattica', 'Select a stage above to begin the practice.': 'Seleziona una fase qui sopra per iniziare la pratica.',
+  'Exit': 'Esci', 'Stage passed!': 'Fase superata!', 'Keep improving': 'Continua a migliorare', 'of': 'su',
+  ' · Next stage unlocked': ' · Fase successiva sbloccata', ' · You need 65% to continue': ' · Serve il 65% per continuare',
+  'Try again': 'Riprova', 'Topic completed! →': 'Argomento completato! →', 'Your progress': 'I tuoi progressi',
+  'stages unlocked': 'fasi sbloccate', 'stages': 'fasi', 'Objective': 'Obiettivo',
+  'Key decisions': 'Decisioni chiave', 'Quick reference': 'Riferimento rapido', 'Common errors': 'Errori frequenti',
+}
 const tr = (language: UiLanguage, english: string, spanish: string, french: string) => {
   if (language === 'en') return english
   if (language === 'fr') return french
   if (language === 'de') {
     const writingMatch = english.match(/^Use (.+) in a text$/u)
     return writingMatch ? `${writingMatch[1]} in einem Text verwenden` : (GERMAN_UI[english] ?? english)
+  }
+  if (language === 'it') {
+    const writingMatch = english.match(/^Use (.+) in a text$/u)
+    return writingMatch ? `Usare ${writingMatch[1]} in un testo` : (ITALIAN_UI[english] ?? english)
   }
   return spanish
 }
