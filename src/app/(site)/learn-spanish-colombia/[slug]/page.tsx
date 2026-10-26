@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { SPANISH_GUIDES, SPANISH_HUB, SPANISH_HUB_URL, TRAVEL_PHRASES } from '@/data/spanish-colombia';
+import { SPANISH_CLASSES, SPANISH_GUIDES, SPANISH_HUB, SPANISH_HUB_URL, TRAVEL_PHRASES } from '@/data/spanish-colombia';
 import styles from '../spanish-colombia.module.css';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -18,8 +18,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${guide.title} | WeLearn`,
     description: guide.description,
+    keywords: null,
     alternates: { canonical: url },
     openGraph: { title: guide.title, description: guide.description, url, locale: 'en_US', type: 'article' },
+    twitter: { card: 'summary_large_image', title: `${guide.title} | WeLearn`, description: guide.description },
   };
 }
 
@@ -96,6 +98,7 @@ export default async function SpanishGuidePage({ params }: Props) {
     <header className={styles.articleHero}><div className={styles.articleHeroInner}><nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href={SPANISH_HUB}>Learn Spanish in Colombia</Link> / {guide.eyebrow}</nav><p className={styles.kicker}>{guide.eyebrow}</p><h1>{guide.title}</h1><p>{guide.description}</p></div></header>
     <article className={styles.articleBody}>
       {slug === 'colombian-spanish' ? <ColombianSpanish /> : slug === 'spanish-for-travelers' ? <TravelerSpanish /> : <FourWeekPlan />}
+      <div className={styles.articleCallout}><strong>Want guided practice?</strong><p>WeLearn offers <Link href={SPANISH_CLASSES}>Spanish classes in Bucaramanga and online</Link>. Ask about current schedules and prices before booking a paid class.</p></div>
       <div className={styles.articleFooter}><Link href={SPANISH_HUB}>← Back to the hub</Link>{SPANISH_GUIDES.filter(item => item.slug !== slug).map(item => <Link key={item.slug} href={`${SPANISH_HUB}/${item.slug}`}>{item.title} →</Link>)}</div>
     </article>
   </div>;

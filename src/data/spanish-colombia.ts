@@ -1,11 +1,13 @@
 export const SPANISH_HUB = '/learn-spanish-colombia';
 export const SPANISH_HUB_URL = `https://www.idiomaswl.com${SPANISH_HUB}`;
+export const SPANISH_CLASSES = '/spanish-classes-bucaramanga';
+export const SPANISH_CLASSES_URL = `https://www.idiomaswl.com${SPANISH_CLASSES}`;
 
 export const SPANISH_GUIDES = [
   {
     slug: 'colombian-spanish',
     eyebrow: 'Language & culture',
-    title: 'Colombian Spanish: what changes from city to city?',
+    title: 'Colombian Spanish: accents and expressions',
     description: 'A practical introduction to usted, tú, vos and everyday Colombian expressions, with context instead of accent myths.',
     question: 'Is there one Colombian accent?',
     answer: 'No. Colombia has many regional varieties. Learn broadly understood Spanish first, then listen to the people in the city where you spend time.',
@@ -13,7 +15,7 @@ export const SPANISH_GUIDES = [
   {
     slug: 'spanish-for-travelers',
     eyebrow: 'First conversations',
-    title: 'Spanish for travelers in Colombia',
+    title: 'Spanish for travelers in Colombia: useful phrases',
     description: 'Useful phrases for cafés, transport and asking someone to slow down, with short explanations you can use immediately.',
     question: 'What should I learn before arriving?',
     answer: 'Start with greetings, polite requests, numbers, directions and one phrase for asking people to repeat themselves.',
@@ -41,7 +43,11 @@ export const HUB_QUESTIONS = [
   },
   {
     question: 'Do I need classes, or can I learn on my own?',
-    answer: 'Self-study can build vocabulary and listening. Feedback from a tutor or conversation partner helps you notice what others actually understand. Many learners combine both.',
+    answer: 'Self-study can build vocabulary and listening. WeLearn offers Spanish classes online and in person in Bucaramanga if you want tutor feedback alongside your own practice.',
+  },
+  {
+    question: 'Where does WeLearn teach Spanish for foreigners?',
+    answer: 'You can take Spanish classes with WeLearn online or in person at our location in Sotomayor, Bucaramanga. Ask us about current schedules and prices before booking.',
   },
   {
     question: 'Does WeLearn have a campus in Medellín, Bogotá or Cartagena?',

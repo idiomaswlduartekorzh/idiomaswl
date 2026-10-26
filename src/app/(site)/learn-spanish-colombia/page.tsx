@@ -1,27 +1,33 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HUB_QUESTIONS, SPANISH_GUIDES, SPANISH_HUB, SPANISH_HUB_URL, TRAVEL_PHRASES } from '@/data/spanish-colombia';
+import { HUB_QUESTIONS, SPANISH_CLASSES, SPANISH_GUIDES, SPANISH_HUB, SPANISH_HUB_URL, TRAVEL_PHRASES } from '@/data/spanish-colombia';
 import styles from './spanish-colombia.module.css';
 
 export const metadata: Metadata = {
-  title: 'Learn Spanish in Colombia | A Practical Guide by WeLearn',
-  description: 'Learn Spanish in Colombia with practical phrases, Colombian usage, a four-week plan and honest advice on choosing where to study.',
+  title: 'Learn Spanish in Colombia: Classes & Guide | WeLearn',
+  description: 'Learn Spanish in Colombia with WeLearn: online or in-person classes in Bucaramanga, plus practical phrases, local expressions and a study plan.',
+  keywords: null,
   alternates: {
     canonical: SPANISH_HUB_URL,
     languages: { en: SPANISH_HUB_URL, es: 'https://www.idiomaswl.com/espanol-para-extranjeros-colombia' },
   },
   openGraph: {
-    title: 'Learn Spanish in Colombia | WeLearn',
-    description: 'A practical starting point for real conversations in Colombia, created by a language-learning team based in Bucaramanga.',
+    title: 'Learn Spanish in Colombia: Classes & Guide | WeLearn',
+    description: 'Online Spanish classes and in-person lessons in Bucaramanga, with free guides to Colombian Spanish and everyday conversations.',
     url: SPANISH_HUB_URL,
     locale: 'en_US',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Learn Spanish in Colombia: Classes & Guide | WeLearn',
+    description: 'Online Spanish classes and in-person lessons in Bucaramanga, with free guides to Colombian Spanish.',
+  },
 };
 
 const cityCards = [
-  { city: 'Bucaramanga', label: 'Our home base', copy: 'WeLearn is based here. Use a smaller-city routine to practise everyday conversations in cafés, shops and neighborhoods.' },
+  { city: 'Bucaramanga', label: 'In-person Spanish classes', copy: 'WeLearn teaches Spanish for foreigners here. Practise everyday conversations beyond class in cafés, shops and neighborhoods.' },
   { city: 'Bogotá', label: 'Capital city', copy: 'A large city with many formal learning options. Compare class location, schedule and time spent speaking.' },
   { city: 'Medellín', label: 'Popular with visitors', copy: 'Compare programs on teacher feedback and practice outside class, not only social activities.' },
   { city: 'Cartagena', label: 'Caribbean coast', copy: 'Listen to local speech as well as textbook audio. Regional pace and vocabulary can sound different.' },
@@ -71,12 +77,12 @@ export default function LearnSpanishColombiaPage() {
           <div className={styles.heroCopy}>
             <p className={styles.kicker}>A field guide to Colombian Spanish</p>
             <h1>Learn Spanish in Colombia.<br /><em>Use it in real life.</em></h1>
-            <p className={styles.lede}>Start with the conversations you will actually have: ordering coffee, asking directions and getting to know people. Then build the habits that help those conversations grow.</p>
+            <p className={styles.lede}>Start with the conversations you will actually have. WeLearn offers Spanish classes online and in person in Bucaramanga; these free guides help you practise between lessons.</p>
             <div className={styles.heroActions}>
               <a className={styles.primaryButton} href="#start">Start with the guide <span aria-hidden="true">↗</span></a>
-              <Link className={styles.textButton} href={`${SPANISH_HUB}/spanish-for-travelers`}>Try four useful phrases <span aria-hidden="true">→</span></Link>
+              <Link className={styles.textButton} href={SPANISH_CLASSES}>Explore Spanish classes <span aria-hidden="true">→</span></Link>
             </div>
-            <p className={styles.heroNote}>An independent learning guide by WeLearn, a language-learning team based in Bucaramanga.</p>
+            <p className={styles.heroNote}>Free guide by WeLearn, a language-learning team based in Bucaramanga.</p>
           </div>
           <div className={styles.heroArt} role="img" aria-label="Spanish phrase ¿Me puede ayudar? and its English translation, Could you help me?">
             <span className={styles.artIndex}>01 / EVERYDAY SPANISH</span>
@@ -89,7 +95,7 @@ export default function LearnSpanishColombiaPage() {
       </header>
 
       <nav className={styles.sectionNav} aria-label="Explore this guide">
-        <a href="#start">The approach</a><a href="#paths">Learning paths</a><a href="#places">Places</a><a href="#first-phrases">First phrases</a><a href="#questions">Questions</a>
+        <a href="#start">The approach</a><a href="#classes">Classes</a><a href="#paths">Learning paths</a><a href="#places">Places</a><a href="#first-phrases">First phrases</a><a href="#questions">Questions</a>
       </nav>
 
       <section id="start" className={`${styles.section} ${styles.introSection}`}>
@@ -101,6 +107,11 @@ export default function LearnSpanishColombiaPage() {
         <div className={styles.steps}>
           {steps.map(step => <article className={styles.step} key={step.number}><span>{step.number}</span><h3>{step.title}</h3><p>{step.copy}</p></article>)}
         </div>
+      </section>
+
+      <section id="classes" className={`${styles.section} ${styles.pathsSection}`}>
+        <div className={styles.sectionHeading}><div><p className={styles.kicker}>Study with WeLearn</p><h2>Spanish classes online or in Bucaramanga.</h2></div><p>Choose in-person lessons at our Bucaramanga location or study online from elsewhere. Ask about current schedules and prices before booking.</p></div>
+        <Link className={styles.inlineLink} href={SPANISH_CLASSES}>Compare Spanish classes in Bucaramanga and online →</Link>
       </section>
 
       <section id="paths" className={`${styles.section} ${styles.pathsSection}`}>
@@ -132,13 +143,13 @@ export default function LearnSpanishColombiaPage() {
       </section>
 
       <section className={`${styles.section} ${styles.trustSection}`}>
-        <div><p className={styles.kicker}>Who made this guide</p><h2>Real people, a real address.</h2><p>WeLearn is a team of language tutors based in Bucaramanga. José David Duarte Silva and Zhanna Korzh founded it and designed its learning method. This guide draws on that language-learning perspective; it does not claim a campus or a Spanish program in every city listed above.</p><address className={styles.address}>Calle 47 #29-33, Sotomayor · Bucaramanga, Santander</address><div className={styles.trustLinks}><Link href="/quienes-somos">Meet the founders →</Link><a href="https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn" target="_blank" rel="noopener noreferrer">Find us on the map ↗</a></div></div>
+        <div><p className={styles.kicker}>Who made this guide</p><h2>Real people, a real address.</h2><p>WeLearn is a team of language tutors based in Bucaramanga. José David Duarte Silva and Zhanna Korzh founded it and designed its learning method. We offer Spanish classes online and in person at our Bucaramanga location.</p><address className={styles.address}>Calle 47 #29-33, Sotomayor · Bucaramanga, Santander</address><div className={styles.trustLinks}><Link href="/quienes-somos">Meet the founders →</Link><a href="https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn" target="_blank" rel="noopener noreferrer">Find us on the map ↗</a></div></div>
         <div className={styles.founders}><figure><Image src="/images/david-duarte.jpg" width={120} height={140} alt="José David Duarte Silva, WeLearn co-founder" /><figcaption>José David Duarte Silva<br /><span>Co-founder</span></figcaption></figure><figure><Image src="/images/team-zhanna-korzh.png" width={120} height={140} alt="Zhanna Korzh, WeLearn co-founder" /><figcaption>Zhanna Korzh<br /><span>Co-founder & academic director</span></figcaption></figure></div>
       </section>
 
       <section id="questions" className={`${styles.section} ${styles.faqSection}`}><div className={styles.sectionHeading}><div><p className={styles.kicker}>Quick answers</p><h2>Questions before you begin.</h2></div></div><div className={styles.faqList}>{HUB_QUESTIONS.map(item => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></section>
 
-      <footer className={styles.ctaSection}><p className={styles.kicker}>Keep learning</p><h2>Your next conversation starts with one sentence.</h2><p>Explore the guides, practise aloud and ask us if you want to know about Spanish-learning support from WeLearn.</p><div><Link className={styles.primaryButton} href={`${SPANISH_HUB}/four-week-study-plan`}>See the four-week plan ↗</Link><a className={styles.textButton} href="https://wa.me/573005004253?text=Hello%2C%20I%20found%20your%20Spanish%20in%20Colombia%20guide.%20Is%20Spanish-learning%20support%20available%3F" target="_blank" rel="noopener noreferrer">Ask WeLearn on WhatsApp →</a></div></footer>
+      <footer className={styles.ctaSection}><p className={styles.kicker}>Keep learning</p><h2>Your next conversation starts with one sentence.</h2><p>Explore the guides, practise aloud and choose online Spanish classes or in-person lessons in Bucaramanga when you want tutor feedback.</p><div><Link className={styles.primaryButton} href={SPANISH_CLASSES}>See Spanish class options ↗</Link><Link className={styles.textButton} href={`${SPANISH_HUB}/four-week-study-plan`}>See the four-week plan →</Link></div></footer>
     </div>
   );
 }

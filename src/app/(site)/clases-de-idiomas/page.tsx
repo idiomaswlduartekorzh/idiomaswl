@@ -5,7 +5,7 @@ import { BLOG_POSTS } from '@/data/blog';
 import LocalBand from '@/components/hub/LocalBand';
 
 export const metadata: Metadata = {
-  title: 'Clases de idiomas en Bucaramanga y online — 8 idiomas',
+  title: 'Clases de idiomas en Bucaramanga y online — 9 idiomas',
   description:
     'Clases de idiomas en Bucaramanga y online para Colombia. Tutores asignados, ruta por objetivo y preparación IELTS, TOEFL, Goethe, DELF, CILS y TOPIK.',
   keywords: [
@@ -14,13 +14,14 @@ export const metadata: Metadata = {
     'tutores de idiomas Bucaramanga',
     'tutores de idiomas Sotomayor',
     'clases de idiomas online Colombia',
+    'clases de español para extranjeros Bucaramanga',
     'certificaciones de idiomas Colombia',
     'preparación IELTS TOEFL Bucaramanga',
     'aprender idiomas con tutor Colombia',
   ],
   openGraph: {
     title: 'Clases de Idiomas en Bucaramanga y Online',
-    description: 'Ocho idiomas con tutor asignado, presencial en Bucaramanga u online en Colombia. Conoce la ruta y el precio antes de agendar.',
+    description: 'Nueve idiomas, incluido español para extranjeros, presencial en Bucaramanga u online. Conoce las opciones y el precio antes de agendar.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
   },
@@ -136,6 +137,20 @@ const LANGUAGES = [
     waMsg: 'Hola, estoy interesado en clases de japonés con WeLearn. ¿Cómo funciona?',
     levels: 'N5 → N1',
   },
+  {
+    slug: 'espanol',
+    flag: '🇨🇴',
+    name: 'Español para extranjeros',
+    native: 'Spanish',
+    color: '#1d5a47',
+    bgColor: 'rgba(29,90,71,0.08)',
+    description: 'Clases de español online o presenciales en Bucaramanga. Aprende a comunicarte en situaciones reales de Colombia.',
+    exams: ['Presencial Bucaramanga', 'Online'],
+    tagLabel: 'Modalidades',
+    href: '/spanish-classes-bucaramanga',
+    waMsg: 'Hola, busco clases de español para extranjeros. ¿Qué horarios y precios tienen para la modalidad online o presencial en Bucaramanga?',
+    levels: 'Colombia · online y presencial',
+  },
 ];
 
 /**
@@ -184,14 +199,14 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://www.idiomaswl.com/clases-de-idiomas#service',
-      name: 'Clases de idiomas online — Idiomas WeLearn',
-      description: 'Clases de idiomas online en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados.',
+      name: 'Clases de idiomas en Bucaramanga y online — Idiomas WeLearn',
+      description: 'Clases de idiomas presenciales en Bucaramanga y online, incluido español para extranjeros, con tutores de WeLearn.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
         url: 'https://www.idiomaswl.com',
       },
-      serviceType: 'Clases de idiomas online',
+      serviceType: 'Clases de idiomas presenciales y online',
       areaServed: 'Colombia',
       inLanguage: 'es-CO',
     },
@@ -225,7 +240,7 @@ export default function ClasesDeIdiomasPage() {
               Idiomas WeLearn · Bucaramanga
             </p>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.25rem', letterSpacing: '-0.02em' }}>
-              Ocho idiomas.<br />
+              Nueve idiomas.<br />
               <span style={{ color: '#60a5fa' }}>Un método creado por dos políglotas.</span>
             </h1>
             <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.75)', maxWidth: 620, margin: '0 auto', lineHeight: 1.6 }}>
@@ -293,7 +308,7 @@ export default function ClasesDeIdiomasPage() {
       <section style={{ background: 'var(--bg-2)', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)', padding: '1.25rem 1.25rem' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '1.5rem 3rem', justifyContent: 'center', alignItems: 'center' }}>
           {[
-            { n: '8', label: 'Idiomas disponibles' },
+            { n: '9', label: 'Idiomas disponibles' },
             { n: '9', label: 'Certificaciones oficiales' },
             { n: 'Sotomayor', label: 'Sede en Bucaramanga' },
             { n: 'Tutor', label: 'Asignado según tu ruta' },
@@ -316,7 +331,7 @@ export default function ClasesDeIdiomasPage() {
             Elige tu idioma objetivo.
           </h2>
           <p style={{ color: 'var(--muted)', textAlign: 'center', maxWidth: 520, margin: '0 auto 2.5rem', fontSize: '0.97rem' }}>
-            Cada idioma tiene su propia ruta de aprendizaje, sus exámenes internacionales y sus oportunidades específicas. Aquí encontrarás todo lo que necesitas.
+            Cada idioma tiene su ruta de aprendizaje y sus oportunidades. También ofrecemos español para extranjeros online y presencial en Bucaramanga.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: '1.25rem' }}>
@@ -344,7 +359,7 @@ export default function ClasesDeIdiomasPage() {
                 </div>
 
                 <div style={{ padding: '1rem 1.5rem', borderTop: '1px solid var(--line-soft)' }}>
-                  <p style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '0.5rem' }}>Certificaciones</p>
+                  <p style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '0.5rem' }}>{'tagLabel' in lang ? lang.tagLabel : 'Certificaciones'}</p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1.1rem' }}>
                     {lang.exams.map(e => (
                       <span key={e} className="wl-language-accent-text wl-language-accent-surface" style={{ fontSize: '0.73rem', fontWeight: 700, padding: '2px 8px', borderRadius: 100, background: lang.bgColor, color: lang.color }}>
@@ -380,10 +395,13 @@ export default function ClasesDeIdiomasPage() {
         <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem' }}>
           <div style={{ maxWidth: 650 }}>
             <p style={{ color: '#28664c', fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.45rem' }}>For international learners</p>
-            <h2 style={{ fontSize: 'clamp(1.45rem, 3vw, 2rem)', lineHeight: 1.2, marginBottom: '0.5rem' }}>Interested in learning Spanish in Colombia?</h2>
-            <p style={{ color: 'var(--muted)', lineHeight: 1.6, margin: 0 }}>Explore our practical guide to Colombian Spanish, first conversations and a study routine. La guía también está disponible en español.</p>
+            <h2 style={{ fontSize: 'clamp(1.45rem, 3vw, 2rem)', lineHeight: 1.2, marginBottom: '0.5rem' }}>Spanish classes in Bucaramanga and online</h2>
+            <p style={{ color: 'var(--muted)', lineHeight: 1.6, margin: 0 }}>Learn Spanish with WeLearn in person or online. Explore the free guide to Colombian Spanish, first conversations and a study routine.</p>
           </div>
-          <Link href="/learn-spanish-colombia" style={{ background: '#1d5a47', color: '#fff', padding: '0.9rem 1.2rem', borderRadius: 7, fontWeight: 800, textDecoration: 'none' }}>Explore the guide →</Link>
+          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '0.85rem' }}>
+            <Link href="/spanish-classes-bucaramanga" style={{ background: '#1d5a47', color: '#fff', padding: '0.9rem 1.2rem', borderRadius: 7, fontWeight: 800, textDecoration: 'none' }}>Explore Spanish classes →</Link>
+            <Link href="/learn-spanish-colombia" style={{ color: '#1d5a47', fontWeight: 800, textUnderlineOffset: 4 }}>Read the free guide →</Link>
+          </div>
         </div>
       </section>
 
@@ -391,7 +409,7 @@ export default function ClasesDeIdiomasPage() {
       <LocalBand
         accent="#60a5fa"
         idioma="idiomas"
-        intro="WeLearn no es una plataforma sin dirección: tenemos sede en el barrio Sotomayor de Bucaramanga y damos clases presenciales de los ocho idiomas. Si vives lejos o tu horario cambia, la misma clase con el mismo tutor se hace por videollamada."
+        intro="WeLearn tiene sede en el barrio Sotomayor de Bucaramanga y ofrece clases presenciales de nueve idiomas, incluido español para extranjeros. Si vives lejos, también puedes preguntar por clases online."
         presencial="Salón, tutor asignado y horario fijo. Es la modalidad que más funciona cuando cuesta mantener la constancia: venir a una hora concreta obliga de una forma que la pantalla no logra."
         waText="Hola, estoy en Bucaramanga y quiero saber qué idiomas puedo estudiar presencialmente en la sede."
         moreHref="/clases-de-ingles-bucaramanga"
