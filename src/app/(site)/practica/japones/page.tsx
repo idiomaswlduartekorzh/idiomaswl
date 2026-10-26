@@ -5,7 +5,7 @@ import HistoriasCard from '@/components/practica/HistoriasCard';
 
 export const metadata: Metadata = {
   title: '日本語文法 A1-C2 — JLPTと高度運用の完全コース',
-  description: 'ひらがなからC2の談話・文体・校閲まで。視覚マップ、段階別練習、テーマ別PDFで学ぶ日本語文法コースです。',
+  description: 'ひらがなからC2の談話・文体・校閲まで。視覚マップ、段階別練習、テーマ別PDFと実践的な例文で学ぶ日本語文法コースです。基礎から高度な表現まで段階的に復習できます。',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/japones' },
 };
 

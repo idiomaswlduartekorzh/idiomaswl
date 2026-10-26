@@ -5,6 +5,22 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Rediseño y seis idiomas del hub de español — 26 de octubre de 2026
+
+La rama `codex/spanish-colombia-visual-multilingual-20261026` partió de `origin/main` actualizado.
+Estado: `VALIDADO_LOCALMENTE`; integración y despliegue pendientes. Rediseña las portadas editorial y comercial, corrige el tamaño y
+encuadre de las fotos de los fundadores, y publica contenido de ambas páginas en seis idiomas
+(inglés, español, francés, italiano, ruso y chino simplificado). Cada una de las doce URL
+tiene canonical propio y `hreflang` recíproco; las guías largas existentes siguen en inglés.
+El alcance SEO, las palabras semilla y los límites de la medición están en
+[`espanol-extranjeros-superhub-2026-10-25.md`](espanol-extranjeros-superhub-2026-10-25.md).
+El catálogo protegido, TypeScript, ESLint focalizado, las comprobaciones SEO y la
+batería `prebuild` pasaron. La primera ejecución de `prebuild` falló de forma
+intermitente en una simulación de diagnóstico ajena a estas rutas; la prueba aislada
+y la segunda ejecución completa pasaron sin modificar el diagnóstico. El guardián
+de fragmentos SEO detectó además una descripción japonesa demasiado corta ya presente
+en `main`; se amplió de forma puntual y el guardián pasó.
+
 Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dded815e0e6b`.
 
 ## Superhub de español para extranjeros — 25 de octubre de 2026
