@@ -272,7 +272,7 @@ function TextWithBlanks({
 
 // ── Choice level ─────────────────────────────────────────────────────────────
 
-type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko'
+type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja'
 const GERMAN_UI: Record<string, string> = {
   'Question': 'Frage', 'View results →': 'Ergebnisse anzeigen →', 'Next →': 'Weiter →', 'Context': 'Kontext',
   'Submit answers →': 'Antworten abgeben →', 'Exercise': 'Übung', 'Instruction': 'Aufgabe',
@@ -357,6 +357,27 @@ const KOREAN_UI: Record<string, string> = {
   'stages unlocked': '단계 열림', 'stages': '단계', 'Objective': '학습 목표',
   'Key decisions': '핵심 판단', 'Quick reference': '빠른 참고', 'Common errors': '자주 하는 오류',
 }
+const JAPANESE_UI: Record<string, string> = {
+  'Question': '問題', 'View results →': '結果を見る →', 'Next →': '次へ →', 'Context': '文脈',
+  'Submit answers →': '答えを送る →', 'Exercise': '練習', 'Instruction': '指示',
+  'Write your answer here...': 'ここに答えを書いてください...', '(no answer)': '（未回答）',
+  'gap': '空欄', 'Gap': '空欄', 'Detailed review': '詳しい解説',
+  'Review every answer with its correction and explanation.': '各回答を、正解と理由の説明とともに確認してください。',
+  'correct': '正解', '✓ Correct': '✓ 正解', '✗ Review': '✗ 要確認', 'Your answer': 'あなたの答え',
+  'Correct answer': '正解', 'Download this topic as a PDF': 'このテーマをPDFで開く',
+  'Explanation, reference table, exercises and answer key. Ready to print.': '解説、参考表、練習、解答を印刷できます。',
+  'Visual lab': '視覚学習室', 'Writing transfer': '作文への応用',
+  'The guided task asks you to use this structure in a communicative situation at the same level.': 'ガイド付き課題では、同じレベルの実際の場面でこの構造を使います。',
+  'Progressive practice': '段階別練習', '6 practice stages': '6段階の練習',
+  'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.': '各段階で65％以上を取ると次へ進めます。解説は一問ごとではなく、段階を終えた後に表示されます。',
+  'Stage': '段階', 'Score at least 65% in the previous stage to unlock': '前の段階で65％以上を取ると開きます',
+  'Teacher note': '学習のポイント', 'Select a stage above to begin the practice.': '上の段階を選んで練習を始めてください。',
+  'Exit': '終了', 'Stage passed!': '段階クリア！', 'Keep improving': 'もう少し練習しましょう', 'of': '/',
+  ' · Next stage unlocked': ' · 次の段階が開きました', ' · You need 65% to continue': ' · 続けるには65％が必要です',
+  'Try again': 'もう一度', 'Topic completed! →': 'テーマ完了！ →', 'Your progress': '学習進度',
+  'stages unlocked': '段階が開いています', 'stages': '段階', 'Objective': '学習目標',
+  'Key decisions': '重要な判断', 'Quick reference': '早見表', 'Common errors': 'よくある誤り',
+}
 const tr = (language: UiLanguage, english: string, spanish: string, french: string) => {
   if (language === 'en') return english
   if (language === 'fr') return french
@@ -375,6 +396,10 @@ const tr = (language: UiLanguage, english: string, spanish: string, french: stri
   if (language === 'ko') {
     const writingMatch = english.match(/^Use (.+) in a text$/u)
     return writingMatch ? `글에서 ${writingMatch[1]} 사용하기` : (KOREAN_UI[english] ?? english)
+  }
+  if (language === 'ja') {
+    const writingMatch = english.match(/^Use (.+) in a text$/u)
+    return writingMatch ? `文章で「${writingMatch[1]}」を使う` : (JAPANESE_UI[english] ?? english)
   }
   return spanish
 }

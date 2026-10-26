@@ -38,6 +38,9 @@ import portuguesC2 from './portugues/c2'
 import japonesA1 from './japones/a1'
 import japonesA2 from './japones/a2'
 import japonesB1 from './japones/b1'
+import japonesB2 from './japones/b2'
+import japonesC1 from './japones/c1'
+import japonesC2 from './japones/c2'
 import rusoA1 from './ruso/a1'
 import rusoA2 from './ruso/a2'
 import rusoB1 from './ruso/b1'
@@ -49,7 +52,7 @@ export const grammarRegistry: Record<string, Record<string, GrammarTopic[]>> = {
   coreano: { a1: coreanoA1, a2: coreanoA2, b1: coreanoB1, b2: coreanoB2, c1: coreanoC1, c2: coreanoC2 },
   italiano: { a1: italianoA1, a2: italianoA2, b1: italianoB1, b2: italianoB2, c1: italianoC1, c2: italianoC2 },
   portugues: { a1: portuguesA1, a2: portuguesA2, b1: portuguesB1, b2: portuguesB2, c1: portuguesC1, c2: portuguesC2 },
-  japones: { a1: japonesA1, a2: japonesA2, b1: japonesB1 },
+  japones: { a1: japonesA1, a2: japonesA2, b1: japonesB1, b2: japonesB2, c1: japonesC1, c2: japonesC2 },
   ruso: { a1: rusoA1, a2: rusoA2, b1: rusoB1 },
 }
 

@@ -24,19 +24,20 @@ IS_GERMAN = PDF_LANGUAGE == 'german'
 IS_ITALIAN = PDF_LANGUAGE == 'italian'
 IS_PORTUGUESE = PDF_LANGUAGE == 'portuguese'
 IS_KOREAN = PDF_LANGUAGE == 'korean'
+IS_JAPANESE = PDF_LANGUAGE == 'japanese'
 DATA = Path(os.environ.get('GRAMMAR_PDF_DATA', ROOT / 'tmp' / 'english-grammar' / 'topics.json'))
 OUTPUT = Path(os.environ.get('GRAMMAR_PDF_OUTPUT', os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / f'{PDF_LANGUAGE}-grammar')))
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
-PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'portugues' if IS_PORTUGUESE else 'coreano' if IS_KOREAN else 'ingles')
-FONT_REGULAR = ROOT / 'public' / 'fonts' / ('noto-sans-kr-400.ttf' if IS_KOREAN else 'welearn-ko-400.ttf')
-FONT_BOLD = ROOT / 'public' / 'fonts' / ('noto-sans-kr-700.ttf' if IS_KOREAN else 'welearn-ko-700.ttf')
+PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'portugues' if IS_PORTUGUESE else 'coreano' if IS_KOREAN else 'japones' if IS_JAPANESE else 'ingles')
+FONT_REGULAR = ROOT / 'public' / 'fonts' / ('noto-sans-kr-400.ttf' if IS_KOREAN else 'welearn-ja-400.ttf' if IS_JAPANESE else 'welearn-ko-400.ttf')
+FONT_BOLD = ROOT / 'public' / 'fonts' / ('noto-sans-kr-700.ttf' if IS_KOREAN else 'welearn-ja-700.ttf' if IS_JAPANESE else 'welearn-ko-700.ttf')
 LOGO = ROOT / 'public' / 'images' / 'welearn-wordmark-transparent-v2.png'
 
-NAVY = colors.HexColor('#153C79' if IS_KOREAN else '#126B3A' if IS_PORTUGUESE else '#012169')
-RED = colors.HexColor('#D6293E' if IS_KOREAN else '#C99C00' if IS_PORTUGUESE else '#C8102E')
-BLUE = colors.HexColor('#315A9A' if IS_KOREAN else '#197347' if IS_PORTUGUESE else '#244C9A')
+NAVY = colors.HexColor('#202A44' if IS_JAPANESE else '#153C79' if IS_KOREAN else '#126B3A' if IS_PORTUGUESE else '#012169')
+RED = colors.HexColor('#BC002D' if IS_JAPANESE else '#D6293E' if IS_KOREAN else '#C99C00' if IS_PORTUGUESE else '#C8102E')
+BLUE = colors.HexColor('#3B4768' if IS_JAPANESE else '#315A9A' if IS_KOREAN else '#197347' if IS_PORTUGUESE else '#244C9A')
 INK = colors.HexColor('#172033')
 MUTED = colors.HexColor('#667085')
 LINE = colors.HexColor('#D8DEE9')
@@ -321,6 +322,73 @@ def koreanize(value):
     return value
 
 
+JAPANESE_TEXT = {
+    'complete guide': '完全版', 'exercise workbook': '練習問題集', 'answer key': '解答と解説',
+    'English grammar': '日本語文法', 'Complete guide': '完全版', 'Exercise workbook': '練習問題集',
+    'Answer key': '解答と解説', 'Original material · English': 'Idiomas WeLearn制作 · 日本語', 'Page': 'ページ',
+    'Options': '選択肢', 'OPTIONS  ': '選択肢  ', 'ENGLISH': '日本語', 'This document': 'この資料',
+    'Model answers and concise grammar explanations for every stage in the separate exercise workbook.': '別冊の練習問題集の全段階に対応する模範解答と文法解説です。',
+    'Recommended use': 'おすすめの使い方', 'Keep the three-document system together': '3種類の資料を一緒に使う',
+    'Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.': '完全版で概念を理解し、問題集で練習し、解答と解説で各判断を診断してください。',
+    'Correct one stage at a time. Explain the rule aloud before marking an answer as secure.': '一段階ずつ答え合わせし、正解とする前に規則を自分の言葉で説明してください。',
+    'WELEARN STUDY SEQUENCE': 'WELEARN 学習の流れ', 'Practice stage': '練習段階', 'Gap': '空欄',
+    'Word bank': '表現バンク', 'Available forms': '使える形', 'Stage check': '段階の確認',
+    'Pause before continuing': '次へ進む前に確認する',
+    'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.': '判断の手掛かりに線を引き、規則を言葉にし、意味が変わっていないか確認してください。',
+    'Retrieval': '想起練習', 'Final self-check': '最終セルフチェック',
+    'Complete these prompts without reopening the guide.': '完全版を開かずに、次の課題を完成させてください。',
+    'Review focus': '復習の焦点', 'Compare the form first, then read the explanation and name the rule in your own words.': 'まず形を比べ、解説を読んだ後、規則を自分の言葉で説明してください。',
+    'Feedback': 'フィードバック', 'Diagnose the pattern, not only the score': '点数だけでなく誤りの型を診断する',
+    'Use this page to decide what to revisit in the complete guide.': 'このページを使って、完全版で何を復習するか決めてください。',
+    'What went wrong? What rule will prevent the same error next time?': '何が間違っていましたか。次に同じ誤りを防ぐ規則は何ですか。',
+    'ADVANCED GRAMMAR': '上級文法', 'The central idea': '中心となる考え', 'Model': 'モデル',
+    'This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.': 'この完全版は、解説、視覚的な思考、練習、フィードバックを一つにつなげます。レッスンページには問題集と解答解説の別冊もあります。',
+    'LEARNING OUTCOMES': '学習目標', 'Understand': '理解する', 'Build meaning before form': '形より先に意味を組み立てる',
+    'Visual map': '視覚マップ', 'Reason through the pattern': '型に沿って考える',
+    'DECIDE IN THIS ORDER': 'この順序で判断する', 'Reference': '参考表',
+    'Compare forms and meanings': '形と意味を比べる', 'Use the table to justify each structural choice.': '表を使って各構造を選んだ理由を説明してください。',
+    'EXAMPLES AT A GLANCE': '例文を一目で確認', 'COMMON ERRORS': 'よくある誤り',
+    'Edit this': '推敲する', 'Avoid this pattern': 'この誤りを避ける',
+    'exercises': 'renshu', 'answer-key': 'kaito',
+}
+
+
+def japaneseize(value):
+    if isinstance(value, list):
+        if value == ['complete guide', 'exercise workbook', 'answer key', 'retrieval review']:
+            return ['完全版', '練習問題集', '解答と解説', '想起復習']
+        if value == ['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register']:
+            return ['手掛かり・文脈', '文法形式・構造の選択', '中心述語・節の形', '意味と文体']
+        return value
+    if value in JAPANESE_TEXT:
+        return JAPANESE_TEXT[value]
+    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    if match:
+        return f"6段階に整理した{match.group(1)}の学習判断です。ページに直接答えを書き、一段階を終えてから別冊の解答を確認してください。"
+    match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
+    if match:
+        return f"「{match.group(1)}」の印刷用練習です。問題ページには解説や答えを入れていません。"
+    match = re.fullmatch(r'Explain and exemplify: (.+)\.', value)
+    if match:
+        return f"説明し、例文を作ってください：{match.group(1)}。"
+    match = re.fullmatch(r'Solutions and feedback for the (.+) exercise workbook\.', value)
+    if match:
+        return f"「{match.group(1)}」練習問題集の解答とフィードバックです。"
+    match = re.fullmatch(r'(\d+) GUIDED STAGES · (\d+) LEARNING DECISIONS', value)
+    if match:
+        return f"{match.group(1)}段階の練習 · {match.group(2)}の文法判断"
+    match = re.fullmatch(r'Outcome (\d+)', value)
+    if match:
+        return f"学習目標 {match.group(1)}"
+    match = re.fullmatch(r'Step (\d+)', value)
+    if match:
+        return f"ステップ {match.group(1)}"
+    match = re.fullmatch(r'Decision (\d+)', value)
+    if match:
+        return f"判断 {match.group(1)}"
+    return value
+
+
 def l(english, french):
     if IS_FRENCH:
         return french
@@ -332,6 +400,8 @@ def l(english, french):
         return portugueseize(english)
     if IS_KOREAN:
         return koreanize(english)
+    if IS_JAPANESE:
+        return japaneseize(english)
     return english
 
 
@@ -896,7 +966,7 @@ def main():
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))
             print(answer_key_target.relative_to(ROOT))
-    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else f"Prontos: {len(topics)} cursos de gramática portuguesa com edições separadas." if IS_PORTUGUESE else f"완료: 한국어 문법 {len(topics)}개 강의와 분리형 자료를 생성했습니다." if IS_KOREAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
+    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else f"Prontos: {len(topics)} cursos de gramática portuguesa com edições separadas." if IS_PORTUGUESE else f"완료: 한국어 문법 {len(topics)}개 강의와 분리형 자료를 생성했습니다." if IS_KOREAN else f"完了：日本語文法{len(topics)}レッスンと別冊資料を生成しました。" if IS_JAPANESE else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 
 if __name__ == '__main__':

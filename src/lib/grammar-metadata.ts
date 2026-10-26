@@ -23,7 +23,7 @@ export function generateGrammarMetadata(
   topic: GrammarTopic,
   idioma: string,
   nivel: string,
-  options: { contentLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' } = {},
+  options: { contentLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja' } = {},
 ): Metadata {
   const english = options.contentLanguage === 'en'
   const french = options.contentLanguage === 'fr'
@@ -31,6 +31,7 @@ export function generateGrammarMetadata(
   const italian = options.contentLanguage === 'it'
   const portuguese = options.contentLanguage === 'pt'
   const korean = options.contentLanguage === 'ko'
+  const japanese = options.contentLanguage === 'ja'
   const lang = IDIOMA_LABELS[idioma] ?? idioma
   const canonical = `https://www.idiomaswl.com/practica/${idioma}/${nivel}/gramatica/${topic.slug}`
   const visual = grammarVisualUrl(idioma, nivel, topic.slug)
@@ -46,6 +47,8 @@ export function generateGrammarMetadata(
     ? `Guia visual de ${topic.shortTitle} para português ${nivel.toUpperCase()}: ${topic.guide.formula}`
     : korean
     ? `한국어 ${nivel.toUpperCase()} ${topic.shortTitle} 시각 자료: ${topic.guide.formula}`
+    : japanese
+    ? `日本語${nivel.toUpperCase()}「${topic.shortTitle}」の視覚資料：${topic.guide.formula}`
     : isGrammarVisualLanguage(idioma)
     ? grammarVisualAlt(topic, idioma, nivel)
     : `Explicación visual de ${topic.shortTitle}`
@@ -54,7 +57,7 @@ export function generateGrammarMetadata(
   // ni `topic.description` en crudo. `description` se pinta además en el cuerpo
   // del artículo, así que está escrita para leerse en la página: en el resultado
   // de Google salía cortada y regalaba la respuesta. Ver `@/lib/seo-snippet`.
-  const title = english || french || german || italian || portuguese || korean ? fitTitle(topic.metaTitle) : buildGrammarTitle(topic)
+  const title = english || french || german || italian || portuguese || korean || japanese ? fitTitle(topic.metaTitle) : buildGrammarTitle(topic)
   const description = english
     ? fitDescription(`${topic.description} Includes a visual map, progressive practice and three printable PDFs.`)
     : french
@@ -67,6 +70,8 @@ export function generateGrammarMetadata(
     ? fitDescription(`${topic.description} Com mapa visual, prática progressiva e três PDFs para imprimir.`)
     : korean
     ? fitDescription(`${topic.description} 시각 지도, 단계별 연습, 인쇄용 PDF 3종을 제공합니다.`)
+    : japanese
+    ? fitDescription(`${topic.description} 視覚マップ、段階別練習、印刷用PDF 3種を収録しています。`)
     : buildGrammarDescription(topic)
 
   return {
@@ -78,7 +83,7 @@ export function generateGrammarMetadata(
       title: topic.metaTitle,
       description: topic.lead,
       type: 'website',
-      locale: english ? 'en_US' : french ? 'fr_FR' : german ? 'de_DE' : italian ? 'it_IT' : portuguese ? 'pt_BR' : korean ? 'ko_KR' : 'es_CO',
+      locale: english ? 'en_US' : french ? 'fr_FR' : german ? 'de_DE' : italian ? 'it_IT' : portuguese ? 'pt_BR' : korean ? 'ko_KR' : japanese ? 'ja_JP' : 'es_CO',
       url: canonical,
       images: [{ url: visual, width: 1200, height: 630, alt: visualAlt }],
     },
@@ -89,7 +94,7 @@ export function generateGrammarMetadata(
       images: [{ url: visual, alt: visualAlt }],
     },
     other: {
-      'article:section': english ? `English grammar ${nivel.toUpperCase()}` : french ? `Grammaire française ${nivel.toUpperCase()}` : german ? `Deutsche Grammatik ${nivel.toUpperCase()}` : italian ? `Grammatica italiana ${nivel.toUpperCase()}` : portuguese ? `Gramática portuguesa ${nivel.toUpperCase()}` : korean ? `한국어 문법 ${nivel.toUpperCase()}` : `Gramática ${lang} ${nivel.toUpperCase()}`,
+      'article:section': english ? `English grammar ${nivel.toUpperCase()}` : french ? `Grammaire française ${nivel.toUpperCase()}` : german ? `Deutsche Grammatik ${nivel.toUpperCase()}` : italian ? `Grammatica italiana ${nivel.toUpperCase()}` : portuguese ? `Gramática portuguesa ${nivel.toUpperCase()}` : korean ? `한국어 문법 ${nivel.toUpperCase()}` : japanese ? `日本語文法${nivel.toUpperCase()}` : `Gramática ${lang} ${nivel.toUpperCase()}`,
     },
   }
 }
@@ -104,12 +109,13 @@ export function generateGrammarIndexMetadata(idioma: string, nivel: string, topi
   const italianComplete = idioma === 'italiano' && topicCount && ['b2', 'c1', 'c2'].includes(nivel.toLowerCase())
   const portugueseComplete = idioma === 'portugues' && topicCount && ['b2', 'c1', 'c2'].includes(nivel.toLowerCase())
   const koreanComplete = idioma === 'coreano' && topicCount && ['b2', 'c1', 'c2'].includes(nivel.toLowerCase())
+  const japaneseComplete = idioma === 'japones' && topicCount && ['b2', 'c1', 'c2'].includes(nivel.toLowerCase())
   const includeAudio = options?.includeAudio ?? true
   const englishResourceLabel = includeAudio ? 'con audio' : 'con PDF e infografías'
   return {
     // Sin sufijo de marca: Google ya muestra el nombre del sitio aparte, y aquí
     // cada carácter gastado en repetirlo es un carácter que se come el corte.
-    title: fitTitle(japaneseA1 ? 'Gramática japonesa A1: 28 temas con audio y ejercicios' : englishComplete ? `Gramática inglesa ${nivel.toUpperCase()}: ${topicCount} temas ${englishResourceLabel}` : frenchComplete ? `Grammaire française ${nivel.toUpperCase()} : ${topicCount} cours avec PDF` : germanComplete ? `Deutsche Grammatik ${nivel.toUpperCase()}: ${topicCount} Lektionen mit PDF` : italianComplete ? `Grammatica italiana ${nivel.toUpperCase()}: ${topicCount} lezioni con PDF` : portugueseComplete ? `Gramática portuguesa ${nivel.toUpperCase()}: ${topicCount} aulas com PDF` : koreanComplete ? `한국어 문법 ${nivel.toUpperCase()}: PDF가 있는 ${topicCount}개 강의` : `Gramática de ${lang} ${nivel.toUpperCase()}: todos los temas con ejercicios`),
+    title: fitTitle(japaneseA1 ? 'Gramática japonesa A1: 28 temas con audio y ejercicios' : englishComplete ? `Gramática inglesa ${nivel.toUpperCase()}: ${topicCount} temas ${englishResourceLabel}` : frenchComplete ? `Grammaire française ${nivel.toUpperCase()} : ${topicCount} cours avec PDF` : germanComplete ? `Deutsche Grammatik ${nivel.toUpperCase()}: ${topicCount} Lektionen mit PDF` : italianComplete ? `Grammatica italiana ${nivel.toUpperCase()}: ${topicCount} lezioni con PDF` : portugueseComplete ? `Gramática portuguesa ${nivel.toUpperCase()}: ${topicCount} aulas com PDF` : koreanComplete ? `한국어 문법 ${nivel.toUpperCase()}: PDF가 있는 ${topicCount}개 강의` : japaneseComplete ? `日本語文法${nivel.toUpperCase()}：PDF付き${topicCount}レッスン` : `Gramática de ${lang} ${nivel.toUpperCase()}: todos los temas con ejercicios`),
     description: fitDescription(
       japaneseA1
         ? 'Curso completo de gramática japonesa A1 para hispanohablantes: 28 temas, mapas visuales, audio nativo, práctica progresiva y PDF descargables.'
@@ -125,14 +131,16 @@ export function generateGrammarIndexMetadata(idioma: string, nivel: string, topi
           ? `${topicCount} aulas completas de gramática portuguesa ${nivel.toUpperCase()} com mapas visuais, exercícios, curso em PDF e gabarito.`
         : koreanComplete
           ? `한국어 문법 ${nivel.toUpperCase()} 전체 ${topicCount}개 강의. 시각 지도, 단계별 연습, 강의 PDF, 연습지와 해설을 제공합니다.`
+        : japaneseComplete
+          ? `日本語文法${nivel.toUpperCase()}の全${topicCount}レッスン。視覚マップ、段階別練習、完全版PDF、問題集、解答解説を収録。`
         : `Todos los temas de gramática de ${lang} ${nivel.toUpperCase()}, cada uno con explicación para hispanohablantes y ejercicios corregidos al instante.`
     ),
     alternates: { canonical },
     openGraph: {
-      title: frenchComplete ? `Grammaire française ${nivel.toUpperCase()} — ${topicCount} thèmes` : germanComplete ? `Deutsche Grammatik ${nivel.toUpperCase()} — ${topicCount} Themen` : italianComplete ? `Grammatica italiana ${nivel.toUpperCase()} — ${topicCount} argomenti` : portugueseComplete ? `Gramática portuguesa ${nivel.toUpperCase()} — ${topicCount} temas` : koreanComplete ? `한국어 문법 ${nivel.toUpperCase()} — ${topicCount}개 주제` : `Gramática ${lang} ${nivel.toUpperCase()} — Temas`,
-      description: frenchComplete ? `Maîtrisez la grammaire française ${nivel.toUpperCase()} avec des explications, des cartes visuelles, des exercices et trois PDF par thème.` : germanComplete ? `Beherrschen Sie die deutsche Grammatik ${nivel.toUpperCase()} mit Erklärungen, visuellen Karten, Übungen und drei PDFs pro Thema.` : italianComplete ? `Padroneggia la grammatica italiana ${nivel.toUpperCase()} con spiegazioni, mappe visive, esercizi e tre PDF per argomento.` : portugueseComplete ? `Domine a gramática portuguesa ${nivel.toUpperCase()} com explicações, mapas visuais, exercícios e três PDFs por tema.` : koreanComplete ? `설명, 시각 지도, 단계별 연습, 주제별 PDF 3종으로 한국어 문법 ${nivel.toUpperCase()}를 완성하세요.` : `Domina la gramática ${lang} ${nivel.toUpperCase()} tema por tema, con explicación y práctica progresiva.`,
+      title: frenchComplete ? `Grammaire française ${nivel.toUpperCase()} — ${topicCount} thèmes` : germanComplete ? `Deutsche Grammatik ${nivel.toUpperCase()} — ${topicCount} Themen` : italianComplete ? `Grammatica italiana ${nivel.toUpperCase()} — ${topicCount} argomenti` : portugueseComplete ? `Gramática portuguesa ${nivel.toUpperCase()} — ${topicCount} temas` : koreanComplete ? `한국어 문법 ${nivel.toUpperCase()} — ${topicCount}개 주제` : japaneseComplete ? `日本語文法${nivel.toUpperCase()} — ${topicCount}テーマ` : `Gramática ${lang} ${nivel.toUpperCase()} — Temas`,
+      description: frenchComplete ? `Maîtrisez la grammaire française ${nivel.toUpperCase()} avec des explications, des cartes visuelles, des exercices et trois PDF par thème.` : germanComplete ? `Beherrschen Sie die deutsche Grammatik ${nivel.toUpperCase()} mit Erklärungen, visuellen Karten, Übungen und drei PDFs pro Thema.` : italianComplete ? `Padroneggia la grammatica italiana ${nivel.toUpperCase()} con spiegazioni, mappe visive, esercizi e tre PDF per argomento.` : portugueseComplete ? `Domine a gramática portuguesa ${nivel.toUpperCase()} com explicações, mapas visuais, exercícios e três PDFs por tema.` : koreanComplete ? `설명, 시각 지도, 단계별 연습, 주제별 PDF 3종으로 한국어 문법 ${nivel.toUpperCase()}를 완성하세요.` : japaneseComplete ? `解説、視覚マップ、段階別練習、テーマ別PDF 3種で日本語文法${nivel.toUpperCase()}を完成させます。` : `Domina la gramática ${lang} ${nivel.toUpperCase()} tema por tema, con explicación y práctica progresiva.`,
       type: 'website',
-      locale: frenchComplete ? 'fr_FR' : germanComplete ? 'de_DE' : italianComplete ? 'it_IT' : portugueseComplete ? 'pt_BR' : koreanComplete ? 'ko_KR' : 'es_CO',
+      locale: frenchComplete ? 'fr_FR' : germanComplete ? 'de_DE' : italianComplete ? 'it_IT' : portugueseComplete ? 'pt_BR' : koreanComplete ? 'ko_KR' : japaneseComplete ? 'ja_JP' : 'es_CO',
       url: canonical,
     },
   }
