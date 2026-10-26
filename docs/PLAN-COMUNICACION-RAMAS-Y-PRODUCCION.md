@@ -7,6 +7,20 @@ Fecha de corte: 25 de agosto de 2026.
 
 Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dded815e0e6b`.
 
+## Superhub de español para extranjeros — 25 de octubre de 2026
+
+`codex/spanish-colombia-hub-20261025` parte de `origin/main@46a441e3` en un
+worktree aislado. Estado: `EN_VALIDACION`; integración y despliegue pendientes.
+Añade una entrada en inglés, otra en español y tres guías de intención distinta,
+con canonicals, `hreflang` recíproco para las dos portadas, sitemap y enlace desde
+el catálogo de idiomas. El mapa de búsquedas y sus límites están en
+[`espanol-extranjeros-superhub-2026-10-25.md`](espanol-extranjeros-superhub-2026-10-25.md).
+
+La oferta de clases de español no consta en el catálogo actual. Las páginas son
+editoriales y preguntan por disponibilidad; no anuncian un curso ni sedes fuera de
+Bucaramanga. Catálogo protegido, TypeScript, navegación, SEO, build completo y
+smoke local de las cinco rutas pasaron. Falta integrar y verificar producción.
+
 ## Perfil y notificaciones del estudiante — 25 de octubre de 2026
 
 `codex/student-profile-settings-20261025` partió de `origin/main` en `f5d514db`.

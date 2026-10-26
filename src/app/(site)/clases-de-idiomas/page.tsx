@@ -376,6 +376,17 @@ export default function ClasesDeIdiomasPage() {
         </div>
       </section>
 
+      <section style={{ padding: '2.5rem 1.25rem', background: '#eaf0e5', borderBlock: '1px solid #d4dfd1' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem' }}>
+          <div style={{ maxWidth: 650 }}>
+            <p style={{ color: '#28664c', fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.45rem' }}>For international learners</p>
+            <h2 style={{ fontSize: 'clamp(1.45rem, 3vw, 2rem)', lineHeight: 1.2, marginBottom: '0.5rem' }}>Interested in learning Spanish in Colombia?</h2>
+            <p style={{ color: 'var(--muted)', lineHeight: 1.6, margin: 0 }}>Explore our practical guide to Colombian Spanish, first conversations and a study routine. La guía también está disponible en español.</p>
+          </div>
+          <Link href="/learn-spanish-colombia" style={{ background: '#1d5a47', color: '#fff', padding: '0.9rem 1.2rem', borderRadius: 7, fontWeight: 800, textDecoration: 'none' }}>Explore the guide →</Link>
+        </div>
+      </section>
+
       {/* ══════════════ BUCARAMANGA ══════════════ */}
       <LocalBand
         accent="#60a5fa"

@@ -27,6 +27,7 @@ import { PARAPHRASE_TECHNIQUES } from '@/app/(site)/practica/ielts/academic/writ
 import { VOCAB_FUNCTIONS } from '@/app/(site)/practica/ielts/academic/writing/task2/academic-vocabulary/vocabulary-data';
 import { TRANSFERABLE_SKILLS } from '@/app/(site)/practica/ielts/academic/writing/task2/habilidades/skills-data';
 import { VOCAB_UNITS } from '@/app/(site)/practica/ielts/academic/writing/vocabulario/vocabulary-index';
+import { SPANISH_GUIDES, SPANISH_HUB } from '@/data/spanish-colombia';
 import {
   PHRASAL_VERB_SEO_PAGES,
   PHRASAL_VERBS_BASE_PATH,
@@ -117,6 +118,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── High-intent landing pages ──────────────────────────────────────────────
     { url: `${BASE}/clases-de-idiomas`, changeFrequency: 'monthly', priority: 0.93 },
+    { url: `${BASE}${SPANISH_HUB}`, changeFrequency: 'monthly', priority: 0.83 },
+    { url: `${BASE}/espanol-para-extranjeros-colombia`, changeFrequency: 'monthly', priority: 0.8 },
+    ...SPANISH_GUIDES.map(({ slug }) => ({ url: `${BASE}${SPANISH_HUB}/${slug}`, changeFrequency: 'monthly' as const, priority: 0.72 })),
     { url: `${BASE}/clases-de-ingles`, changeFrequency: 'monthly', priority: 0.95 },
     {
       url: `${BASE}/kids`,
