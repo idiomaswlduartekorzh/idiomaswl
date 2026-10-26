@@ -23,19 +23,20 @@ IS_FRENCH = PDF_LANGUAGE == 'french'
 IS_GERMAN = PDF_LANGUAGE == 'german'
 IS_ITALIAN = PDF_LANGUAGE == 'italian'
 IS_PORTUGUESE = PDF_LANGUAGE == 'portuguese'
+IS_KOREAN = PDF_LANGUAGE == 'korean'
 DATA = Path(os.environ.get('GRAMMAR_PDF_DATA', ROOT / 'tmp' / 'english-grammar' / 'topics.json'))
 OUTPUT = Path(os.environ.get('GRAMMAR_PDF_OUTPUT', os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / f'{PDF_LANGUAGE}-grammar')))
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
-PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'portugues' if IS_PORTUGUESE else 'ingles')
-FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
-FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
+PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'portugues' if IS_PORTUGUESE else 'coreano' if IS_KOREAN else 'ingles')
+FONT_REGULAR = ROOT / 'public' / 'fonts' / ('noto-sans-kr-400.ttf' if IS_KOREAN else 'welearn-ko-400.ttf')
+FONT_BOLD = ROOT / 'public' / 'fonts' / ('noto-sans-kr-700.ttf' if IS_KOREAN else 'welearn-ko-700.ttf')
 LOGO = ROOT / 'public' / 'images' / 'welearn-wordmark-transparent-v2.png'
 
-NAVY = colors.HexColor('#126B3A' if IS_PORTUGUESE else '#012169')
-RED = colors.HexColor('#C99C00' if IS_PORTUGUESE else '#C8102E')
-BLUE = colors.HexColor('#197347' if IS_PORTUGUESE else '#244C9A')
+NAVY = colors.HexColor('#153C79' if IS_KOREAN else '#126B3A' if IS_PORTUGUESE else '#012169')
+RED = colors.HexColor('#D6293E' if IS_KOREAN else '#C99C00' if IS_PORTUGUESE else '#C8102E')
+BLUE = colors.HexColor('#315A9A' if IS_KOREAN else '#197347' if IS_PORTUGUESE else '#244C9A')
 INK = colors.HexColor('#172033')
 MUTED = colors.HexColor('#667085')
 LINE = colors.HexColor('#D8DEE9')
@@ -253,6 +254,73 @@ def portugueseize(value):
     return value
 
 
+KOREAN_TEXT = {
+    'complete guide': '전체 강의', 'exercise workbook': '연습 문제집', 'answer key': '정답과 해설',
+    'English grammar': '한국어 문법', 'Complete guide': '전체 강의', 'Exercise workbook': '연습 문제집',
+    'Answer key': '정답과 해설', 'Original material · English': 'Idiomas WeLearn 제작 · 한국어', 'Page': '쪽',
+    'Options': '선택지', 'OPTIONS  ': '선택지  ', 'ENGLISH': '한국어', 'This document': '이 자료',
+    'Model answers and concise grammar explanations for every stage in the separate exercise workbook.': '별도 연습 문제집의 모든 단계에 대한 모범 답안과 핵심 문법 해설입니다.',
+    'Recommended use': '권장 활용법', 'Keep the three-document system together': '세 가지 자료를 함께 활용하세요',
+    'Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.': '전체 강의로 개념을 이해하고, 연습 문제집으로 훈련한 뒤, 정답과 해설로 각 선택을 점검하세요.',
+    'Correct one stage at a time. Explain the rule aloud before marking an answer as secure.': '한 번에 한 단계씩 채점하고, 정답으로 확정하기 전에 규칙을 말로 설명하세요.',
+    'WELEARN STUDY SEQUENCE': 'WELEARN 학습 순서', 'Practice stage': '연습 단계', 'Gap': '빈칸',
+    'Word bank': '표현 상자', 'Available forms': '사용할 수 있는 형태', 'Stage check': '단계 점검',
+    'Pause before continuing': '다음 단계 전에 잠시 점검하세요',
+    'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.': '선택을 결정하는 단서를 표시하고 규칙을 말한 뒤 의미가 달라지지 않았는지 확인하세요.',
+    'Retrieval': '인출 연습', 'Final self-check': '최종 자기 점검',
+    'Complete these prompts without reopening the guide.': '전체 강의를 다시 보지 않고 다음 과제를 완성하세요.',
+    'Review focus': '복습 초점', 'Compare the form first, then read the explanation and name the rule in your own words.': '먼저 형태를 비교하고 해설을 읽은 뒤 규칙을 자신의 말로 설명하세요.',
+    'Feedback': '피드백', 'Diagnose the pattern, not only the score': '점수뿐 아니라 오류의 패턴을 찾으세요',
+    'Use this page to decide what to revisit in the complete guide.': '이 페이지를 바탕으로 전체 강의에서 무엇을 다시 볼지 결정하세요.',
+    'What went wrong? What rule will prevent the same error next time?': '무엇이 잘못되었나요? 같은 실수를 막을 규칙은 무엇인가요?',
+    'ADVANCED GRAMMAR': '고급 문법', 'The central idea': '핵심 개념', 'Model': '모델',
+    'This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.': '이 전체 강의는 설명, 시각적 사고, 연습과 피드백을 연결합니다. 강의 페이지에서 연습 문제집과 정답·해설도 따로 받을 수 있습니다.',
+    'LEARNING OUTCOMES': '학습 목표', 'Understand': '이해하기', 'Build meaning before form': '형태보다 의미를 먼저 세우기',
+    'Visual map': '시각 지도', 'Reason through the pattern': '구조를 따라 사고하기',
+    'DECIDE IN THIS ORDER': '이 순서로 판단하세요', 'Reference': '참고표',
+    'Compare forms and meanings': '형태와 의미 비교하기', 'Use the table to justify each structural choice.': '표를 사용해 각 구조 선택의 근거를 설명하세요.',
+    'EXAMPLES AT A GLANCE': '예문 한눈에 보기', 'COMMON ERRORS': '자주 하는 실수',
+    'Edit this': '고쳐 보기', 'Avoid this pattern': '이 오류 패턴을 피하세요',
+    'exercises': 'yeonseup', 'answer-key': 'haeseol',
+}
+
+
+def koreanize(value):
+    if isinstance(value, list):
+        if value == ['complete guide', 'exercise workbook', 'answer key', 'retrieval review']:
+            return ['전체 강의', '연습 문제집', '정답과 해설', '인출 복습']
+        if value == ['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register']:
+            return ['단서 또는 맥락', '문법 형태 또는 구조 선택', '중심 서술어 또는 절의 형태', '의미와 격식']
+        return value
+    if value in KOREAN_TEXT:
+        return KOREAN_TEXT[value]
+    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    if match:
+        return f"6단계로 구성된 {match.group(1)}개의 학습 판단입니다. 페이지에 직접 답하고 한 단계를 마친 뒤에만 별도 해설을 확인하세요."
+    match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
+    if match:
+        return f"{match.group(1)} 인쇄용 연습입니다. 문제 페이지에는 설명이나 정답이 섞이지 않습니다."
+    match = re.fullmatch(r'Explain and exemplify: (.+)\.', value)
+    if match:
+        return f"설명하고 예문을 만드세요: {match.group(1)}."
+    match = re.fullmatch(r'Solutions and feedback for the (.+) exercise workbook\.', value)
+    if match:
+        return f"{match.group(1)} 연습 문제집의 정답과 해설입니다."
+    match = re.fullmatch(r'(\d+) GUIDED STAGES · (\d+) LEARNING DECISIONS', value)
+    if match:
+        return f"{match.group(1)}단계 학습 · {match.group(2)}개 문법 판단"
+    match = re.fullmatch(r'Outcome (\d+)', value)
+    if match:
+        return f"학습 목표 {match.group(1)}"
+    match = re.fullmatch(r'Step (\d+)', value)
+    if match:
+        return f"{match.group(1)}단계"
+    match = re.fullmatch(r'Decision (\d+)', value)
+    if match:
+        return f"판단 {match.group(1)}"
+    return value
+
+
 def l(english, french):
     if IS_FRENCH:
         return french
@@ -262,6 +330,8 @@ def l(english, french):
         return italianize(english)
     if IS_PORTUGUESE:
         return portugueseize(english)
+    if IS_KOREAN:
+        return koreanize(english)
     return english
 
 
@@ -702,8 +772,15 @@ def build_advanced_standard_story(topic):
         Spacer(1, 4 * mm),
         p(l('LEARNING OUTCOMES', 'OBJECTIFS D’APPRENTISSAGE'), STYLES['eyebrow']),
     ]
+    outcome_cells = []
     for index, outcome in enumerate(topic['outcomes'], 1):
-        story += [editorial_card(l(f'Outcome {index}', f'Objectif {index}'), f'{index:02d}', outcome, WHITE if index % 2 else PALE_RED, RED), Spacer(1, 2.5 * mm)]
+        outcome_cells.append([p(l(f'Outcome {index}', f'Objectif {index}'), STYLES['eyebrow']), p(outcome, STYLES['card_body'])])
+    story.append(Table([[outcome_cells[0], outcome_cells[1]], [outcome_cells[2], outcome_cells[3]]], colWidths=[84.5 * mm] * 2, style=TableStyle([
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('BOX', (0, 0), (-1, -1), .6, LINE),
+        ('INNERGRID', (0, 0), (-1, -1), .5, LINE), ('ROWBACKGROUNDS', (0, 0), (-1, -1), [WHITE, PALE_RED]),
+        ('LEFTPADDING', (0, 0), (-1, -1), 8), ('RIGHTPADDING', (0, 0), (-1, -1), 8),
+        ('TOPPADDING', (0, 0), (-1, -1), 7), ('BOTTOMPADDING', (0, 0), (-1, -1), 7),
+    ])))
 
     story += [PageBreak(), *section_heading('01', l('Understand', 'Comprendre'), l('Build meaning before form', 'Construire le sens avant la forme'), topic['description'])]
     for section_index, section in enumerate(topic['seo'], 1):
@@ -819,7 +896,7 @@ def main():
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))
             print(answer_key_target.relative_to(ROOT))
-    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else f"Prontos: {len(topics)} cursos de gramática portuguesa com edições separadas." if IS_PORTUGUESE else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
+    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else f"Prontos: {len(topics)} cursos de gramática portuguesa com edições separadas." if IS_PORTUGUESE else f"완료: 한국어 문법 {len(topics)}개 강의와 분리형 자료를 생성했습니다." if IS_KOREAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 
 if __name__ == '__main__':

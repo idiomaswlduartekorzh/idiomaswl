@@ -1,0 +1,14 @@
+import Link from 'next/link'
+import type { GrammarTopic } from '@/data/grammar/types'
+import type { KoreanAdvancedGrammarLevel } from '@/data/korean-advanced-grammar-resources'
+import { getKoreanAdvancedGrammarResource } from '@/data/korean-advanced-grammar-resources'
+import KoreanAdvancedGrammarLesson from './KoreanAdvancedGrammarLesson'
+import TopicNav from './TopicNav'
+import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
+
+export default function KoreanAdvancedGrammarTopicPage({ topic, level }: { topic: GrammarTopic; level: KoreanAdvancedGrammarLevel }) {
+  const label = level.toUpperCase(), canonical = `https://www.idiomaswl.com/practica/coreano/${level}/gramatica/${topic.slug}`
+  const indexUrl = `https://www.idiomaswl.com/practica/coreano/${level}/gramatica`, resource = getKoreanAdvancedGrammarResource(topic, level)
+  const jsonLd = { '@context': 'https://schema.org', '@graph': [{ '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: 'ko-KR', teaches: topic.shortTitle, image: grammarVisualUrl('coreano', level, topic.slug), learningResourceType: ['온라인 강의', '연습 문제', '학습 인포그래픽'], timeRequired: `PT${resource.studyMinutes}M`, isAccessibleForFree: true, hasPart: [{ '@type': 'MediaObject', name: '전체 강의 PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf', inLanguage: 'ko-KR' }, { '@type': 'MediaObject', name: '연습 문제 PDF', contentUrl: `https://www.idiomaswl.com${resource.exercisesPdf}`, encodingFormat: 'application/pdf', inLanguage: 'ko-KR' }, { '@type': 'MediaObject', name: '정답과 해설 PDF', contentUrl: `https://www.idiomaswl.com${resource.answerKeyPdf}`, encodingFormat: 'application/pdf', inLanguage: 'ko-KR' }] }, grammarVisualImageObject(topic, 'coreano', level, { contentLanguage: 'ko' }), { '@type': 'HowTo', name: `${topic.shortTitle} 학습법`, description: topic.guide.goal, totalTime: `PT${resource.studyMinutes}M`, step: topic.guide.decisions.map((text, index) => ({ '@type': 'HowToStep', position: index + 1, name: `${index + 1}단계`, text })) }] }
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /><div className="gram-page" style={{ '--topic-color': topic.color } as React.CSSProperties}><div className="wrap"><nav aria-label="경로 탐색" style={{ display: 'flex', gap: '.5rem', padding: '1.5rem 0 0', fontSize: '.82rem', flexWrap: 'wrap' }}><Link href="/practica">학습</Link><span>/</span><Link href={`/practica/coreano/${level}`}>한국어 {label}</Link><span>/</span><Link href={indexUrl.replace('https://www.idiomaswl.com', '')}>문법</Link><span>/</span><strong>{topic.shortTitle}</strong></nav><KoreanAdvancedGrammarLesson topic={topic} level={level} /><TopicNav idioma="coreano" nivel={level} slug={topic.slug} indexLabel={`${label} 문법`} uiLanguage="ko" /></div></div></>
+}

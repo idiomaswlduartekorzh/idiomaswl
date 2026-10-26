@@ -272,7 +272,7 @@ function TextWithBlanks({
 
 // ── Choice level ─────────────────────────────────────────────────────────────
 
-type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt'
+type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko'
 const GERMAN_UI: Record<string, string> = {
   'Question': 'Frage', 'View results →': 'Ergebnisse anzeigen →', 'Next →': 'Weiter →', 'Context': 'Kontext',
   'Submit answers →': 'Antworten abgeben →', 'Exercise': 'Übung', 'Instruction': 'Aufgabe',
@@ -336,6 +336,27 @@ const PORTUGUESE_UI: Record<string, string> = {
   'stages unlocked': 'etapas liberadas', 'stages': 'etapas', 'Objective': 'Objetivo',
   'Key decisions': 'Decisões-chave', 'Quick reference': 'Referência rápida', 'Common errors': 'Erros frequentes',
 }
+const KOREAN_UI: Record<string, string> = {
+  'Question': '문항', 'View results →': '결과 보기 →', 'Next →': '다음 →', 'Context': '맥락',
+  'Submit answers →': '답 제출하기 →', 'Exercise': '연습문제', 'Instruction': '지시문',
+  'Write your answer here...': '여기에 답을 쓰세요...', '(no answer)': '(답 없음)',
+  'gap': '빈칸', 'Gap': '빈칸', 'Detailed review': '상세 해설',
+  'Review every answer with its correction and explanation.': '각 답의 교정 내용과 설명을 확인하세요.',
+  'correct': '정답', '✓ Correct': '✓ 정답', '✗ Review': '✗ 다시 보기', 'Your answer': '내 답',
+  'Correct answer': '정답', 'Download this topic as a PDF': '이 주제를 PDF로 받기',
+  'Explanation, reference table, exercises and answer key. Ready to print.': '설명, 참고표, 연습문제, 정답과 해설을 인쇄할 수 있습니다.',
+  'Visual lab': '시각 학습실', 'Writing transfer': '쓰기 적용',
+  'The guided task asks you to use this structure in a communicative situation at the same level.': '안내 과제에서는 같은 수준의 실제 의사소통 상황에 이 구조를 적용합니다.',
+  'Progressive practice': '단계별 연습', '6 practice stages': '6단계 연습',
+  'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.': '각 단계에서 65% 이상 맞히면 다음 단계가 열립니다. 해설은 문항마다가 아니라 한 단계를 모두 마친 뒤에 표시됩니다.',
+  'Stage': '단계', 'Score at least 65% in the previous stage to unlock': '이 단계를 열려면 이전 단계에서 65% 이상 맞히세요',
+  'Teacher note': '학습 안내', 'Select a stage above to begin the practice.': '위에서 단계를 선택해 연습을 시작하세요.',
+  'Exit': '나가기', 'Stage passed!': '단계 통과!', 'Keep improving': '조금 더 연습해 보세요', 'of': '/',
+  ' · Next stage unlocked': ' · 다음 단계가 열렸습니다', ' · You need 65% to continue': ' · 계속하려면 65%가 필요합니다',
+  'Try again': '다시 풀기', 'Topic completed! →': '주제 완료! →', 'Your progress': '학습 진도',
+  'stages unlocked': '단계 열림', 'stages': '단계', 'Objective': '학습 목표',
+  'Key decisions': '핵심 판단', 'Quick reference': '빠른 참고', 'Common errors': '자주 하는 오류',
+}
 const tr = (language: UiLanguage, english: string, spanish: string, french: string) => {
   if (language === 'en') return english
   if (language === 'fr') return french
@@ -350,6 +371,10 @@ const tr = (language: UiLanguage, english: string, spanish: string, french: stri
   if (language === 'pt') {
     const writingMatch = english.match(/^Use (.+) in a text$/u)
     return writingMatch ? `Usar ${writingMatch[1]} em um texto` : (PORTUGUESE_UI[english] ?? english)
+  }
+  if (language === 'ko') {
+    const writingMatch = english.match(/^Use (.+) in a text$/u)
+    return writingMatch ? `글에서 ${writingMatch[1]} 사용하기` : (KOREAN_UI[english] ?? english)
   }
   return spanish
 }
