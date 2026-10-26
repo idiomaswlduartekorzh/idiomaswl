@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the complete English or French grammar workbook collection."""
+"""Generate the complete English, French, or German grammar workbook collection."""
 
 import json
 import os
@@ -20,12 +20,13 @@ from reportlab.platypus import BaseDocTemplate, Frame, KeepTogether, PageBreak, 
 ROOT = Path(__file__).resolve().parents[1]
 PDF_LANGUAGE = os.environ.get('GRAMMAR_PDF_LANGUAGE', 'english').lower()
 IS_FRENCH = PDF_LANGUAGE == 'french'
+IS_GERMAN = PDF_LANGUAGE == 'german'
 DATA = Path(os.environ.get('GRAMMAR_PDF_DATA', ROOT / 'tmp' / 'english-grammar' / 'topics.json'))
 OUTPUT = Path(os.environ.get('GRAMMAR_PDF_OUTPUT', os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / f'{PDF_LANGUAGE}-grammar')))
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
-PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'ingles')
+PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'ingles')
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-wordmark-transparent-v2.png'
@@ -49,8 +50,79 @@ pdfmetrics.registerFont(TTFont('WeLearnEN', str(FONT_REGULAR)))
 pdfmetrics.registerFont(TTFont('WeLearnEN-Bold', str(FONT_BOLD)))
 
 
+GERMAN_TEXT = {
+    'complete guide': 'vollständiger Kurs', 'exercise workbook': 'Übungsheft', 'answer key': 'Lösungsschlüssel',
+    'English grammar': 'Deutsche Grammatik', 'Complete guide': 'Vollständiger Kurs', 'Exercise workbook': 'Übungsheft',
+    'Answer key': 'Lösungsschlüssel', 'Original material · English': 'Originalmaterial · Deutsch', 'Page': 'Seite',
+    'Options': 'Auswahl', 'OPTIONS  ': 'AUSWAHL  ', 'ENGLISH': 'DEUTSCH', 'This document': 'Dieses Dokument',
+    'Model answers and concise grammar explanations for every stage in the separate exercise workbook.': 'Musterlösungen und knappe grammatische Erklärungen zu jeder Stufe des getrennten Übungshefts.',
+    'Recommended use': 'Empfohlene Verwendung', 'Keep the three-document system together': 'Das System aus drei Dokumenten zusammen verwenden',
+    'Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.': 'Nutzen Sie den vollständigen Kurs zum Verstehen, das Übungsheft zum Trainieren und den Lösungsschlüssel zur Auswertung jeder Entscheidung.',
+    'Correct one stage at a time. Explain the rule aloud before marking an answer as secure.': 'Korrigieren Sie jeweils eine Stufe. Erklären Sie die Regel laut, bevor Sie eine Antwort als sicher markieren.',
+    'WELEARN STUDY SEQUENCE': 'WELEARN-LERNABLAUF', 'Practice stage': 'Übungsstufe', 'Gap': 'Lücke',
+    'Word bank': 'Formenbank', 'Available forms': 'Verfügbare Formen', 'Stage check': 'Stufenkontrolle',
+    'Pause before continuing': 'Vor dem Fortfahren kurz prüfen',
+    'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.': 'Unterstreichen Sie den Auslöser oder Entscheidungspunkt, benennen Sie die Regel und prüfen Sie, ob die Bedeutung erhalten bleibt.',
+    'Retrieval': 'Aktiver Abruf', 'Final self-check': 'Abschließende Selbstkontrolle',
+    'Complete these prompts without reopening the guide.': 'Bearbeiten Sie diese Impulse, ohne den Kurs erneut zu öffnen.',
+    'Review focus': 'Wiederholungsfokus', 'Compare the form first, then read the explanation and name the rule in your own words.': 'Vergleichen Sie zuerst die Form, lesen Sie dann die Erklärung und formulieren Sie die Regel mit eigenen Worten.',
+    'Feedback': 'Rückmeldung', 'Diagnose the pattern, not only the score': 'Analysieren Sie das Muster, nicht nur die Punktzahl',
+    'Use this page to decide what to revisit in the complete guide.': 'Nutzen Sie diese Seite, um die nächste Wiederholung im vollständigen Kurs zu planen.',
+    'What went wrong? What rule will prevent the same error next time?': 'Was ist schiefgegangen? Welche Regel verhindert denselben Fehler beim nächsten Mal?',
+    'ADVANCED GRAMMAR': 'FORTGESCHRITTENE GRAMMATIK', 'The central idea': 'Die zentrale Idee', 'Model': 'Modell',
+    'This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.': 'Dieser vollständige Kurs verbindet Erklärung, visuelles Denken, Übungen und Rückmeldung. Ein getrenntes Übungsheft und ein Lösungsschlüssel stehen ebenfalls auf der Lektionsseite bereit.',
+    'LEARNING OUTCOMES': 'LERNZIELE', 'Understand': 'Verstehen', 'Build meaning before form': 'Bedeutung vor Form aufbauen',
+    'Visual map': 'Visuelle Karte', 'Reason through the pattern': 'Das Muster schrittweise begründen',
+    'DECIDE IN THIS ORDER': 'IN DIESER REIHENFOLGE ENTSCHEIDEN', 'Reference': 'Übersicht',
+    'Compare forms and meanings': 'Formen und Bedeutungen vergleichen', 'Use the table to justify each structural choice.': 'Begründen Sie jede strukturelle Wahl mithilfe der Tabelle.',
+    'EXAMPLES AT A GLANCE': 'BEISPIELE AUF EINEN BLICK', 'COMMON ERRORS': 'HÄUFIGE FEHLER',
+    'Edit this': 'Überarbeiten', 'Avoid this pattern': 'Dieses Fehlermuster vermeiden',
+    'exercises': 'uebungen', 'answer-key': 'loesungen',
+}
+
+
+def germanize(value):
+    if isinstance(value, list):
+        if value == ['complete guide', 'exercise workbook', 'answer key', 'retrieval review']:
+            return ['vollständiger Kurs', 'Übungsheft', 'Lösungsschlüssel', 'aktiver Abruf']
+        if value == ['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register']:
+            return ['Auslöser oder Kontext', 'Hilfsverb oder Strukturwahl', 'Vollverb oder Satzform', 'Bedeutung und Register']
+        return value
+    if value in GERMAN_TEXT:
+        return GERMAN_TEXT[value]
+    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    if match:
+        return f"{match.group(1)} Lernentscheidungen in sechs progressiven Stufen. Schreiben Sie direkt auf die Seite und nutzen Sie den getrennten Lösungsschlüssel erst nach Abschluss einer Stufe."
+    match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
+    if match:
+        return f"Druckbare Übungen zu {match.group(1)}. Keine Erklärungen oder Lösungen unterbrechen die Arbeitsseiten."
+    match = re.fullmatch(r'Explain and exemplify: (.+)\.', value)
+    if match:
+        return f"Erklären und mit einem Beispiel belegen: {match.group(1)}."
+    match = re.fullmatch(r'Solutions and feedback for the (.+) exercise workbook\.', value)
+    if match:
+        return f"Lösungen und Rückmeldung zum Übungsheft {match.group(1)}."
+    match = re.fullmatch(r'(\d+) GUIDED STAGES · (\d+) LEARNING DECISIONS', value)
+    if match:
+        return f"{match.group(1)} GELENKTE STUFEN · {match.group(2)} LERNENTSCHEIDUNGEN"
+    match = re.fullmatch(r'Outcome (\d+)', value)
+    if match:
+        return f"Lernziel {match.group(1)}"
+    match = re.fullmatch(r'Step (\d+)', value)
+    if match:
+        return f"Schritt {match.group(1)}"
+    match = re.fullmatch(r'Decision (\d+)', value)
+    if match:
+        return f"Entscheidung {match.group(1)}"
+    return value
+
+
 def l(english, french):
-    return french if IS_FRENCH else english
+    if IS_FRENCH:
+        return french
+    if IS_GERMAN:
+        return germanize(english)
+    return english
 
 
 def p(text, style):
@@ -607,7 +679,7 @@ def main():
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))
             print(answer_key_target.relative_to(ROOT))
-    print(l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
+    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 
 if __name__ == '__main__':

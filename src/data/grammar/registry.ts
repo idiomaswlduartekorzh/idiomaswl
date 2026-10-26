@@ -14,6 +14,9 @@ import francesC2 from './frances/c2'
 import alemanA1 from './aleman/a1'
 import alemanA2 from './aleman/a2'
 import alemanB1 from './aleman/b1'
+import alemanB2 from './aleman/b2'
+import alemanC1 from './aleman/c1'
+import alemanC2 from './aleman/c2'
 import coreanoA1 from './coreano/a1'
 import coreanoA2 from './coreano/a2'
 import coreanoB1 from './coreano/b1'
@@ -33,7 +36,7 @@ import rusoB1 from './ruso/b1'
 export const grammarRegistry: Record<string, Record<string, GrammarTopic[]>> = {
   ingles: { a1: inglesA1, a2: inglesA2, b1: inglesB1, b2: inglesB2, c1: inglesC1, c2: inglesC2 },
   frances: { a1: francesA1, a2: francesA2, b1: francesB1, b2: francesB2, c1: francesC1, c2: francesC2 },
-  aleman: { a1: alemanA1, a2: alemanA2, b1: alemanB1 },
+  aleman: { a1: alemanA1, a2: alemanA2, b1: alemanB1, b2: alemanB2, c1: alemanC1, c2: alemanC2 },
   coreano: { a1: coreanoA1, a2: coreanoA2, b1: coreanoB1 },
   italiano: { a1: italianoA1, a2: italianoA2, b1: italianoB1 },
   portugues: { a1: portuguesA1, a2: portuguesA2, b1: portuguesB1 },

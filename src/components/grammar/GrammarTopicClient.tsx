@@ -272,8 +272,37 @@ function TextWithBlanks({
 
 // ── Choice level ─────────────────────────────────────────────────────────────
 
-type UiLanguage = 'es' | 'en' | 'fr'
-const tr = (language: UiLanguage, english: string, spanish: string, french: string) => language === 'en' ? english : language === 'fr' ? french : spanish
+type UiLanguage = 'es' | 'en' | 'fr' | 'de'
+const GERMAN_UI: Record<string, string> = {
+  'Question': 'Frage', 'View results →': 'Ergebnisse anzeigen →', 'Next →': 'Weiter →', 'Context': 'Kontext',
+  'Submit answers →': 'Antworten abgeben →', 'Exercise': 'Übung', 'Instruction': 'Aufgabe',
+  'Write your answer here...': 'Schreiben Sie Ihre Antwort hier...', '(no answer)': '(keine Antwort)',
+  'gap': 'Lücke', 'Gap': 'Lücke', 'Detailed review': 'Ausführliche Auswertung',
+  'Review every answer with its correction and explanation.': 'Prüfen Sie jede Antwort mit Korrektur und Begründung.',
+  'correct': 'richtig', '✓ Correct': '✓ Richtig', '✗ Review': '✗ Überarbeiten', 'Your answer': 'Ihre Antwort',
+  'Correct answer': 'Richtige Antwort', 'Download this topic as a PDF': 'Dieses Thema als PDF herunterladen',
+  'Explanation, reference table, exercises and answer key. Ready to print.': 'Erklärung, Übersicht, Übungen und Lösungsschlüssel. Druckfertig.',
+  'Visual lab': 'Visuelles Labor', 'Writing transfer': 'Transfer zum Schreiben',
+  'The guided task asks you to use this structure in a communicative situation at the same level.': 'Die gelenkte Aufgabe überträgt diese Struktur auf eine kommunikative Situation desselben Niveaus.',
+  'Progressive practice': 'Progressives Training', '6 practice stages': '6 Übungsstufen',
+  'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.': 'Erreichen Sie in jeder Stufe mindestens 65 %, um die nächste freizuschalten. Die Korrekturen erscheinen nach der gesamten Stufe, nicht nach jeder Frage.',
+  'Stage': 'Stufe', 'Score at least 65% in the previous stage to unlock': 'Erreichen Sie in der vorherigen Stufe mindestens 65 %, um diese freizuschalten',
+  'Teacher note': 'Didaktischer Hinweis', 'Select a stage above to begin the practice.': 'Wählen Sie oben eine Stufe aus, um die Übungen zu beginnen.',
+  'Exit': 'Beenden', 'Stage passed!': 'Stufe bestanden!', 'Keep improving': 'Weiter üben', 'of': 'von',
+  ' · Next stage unlocked': ' · Nächste Stufe freigeschaltet', ' · You need 65% to continue': ' · Sie benötigen 65 %, um fortzufahren',
+  'Try again': 'Erneut versuchen', 'Topic completed! →': 'Thema abgeschlossen! →', 'Your progress': 'Ihr Fortschritt',
+  'stages unlocked': 'Stufen freigeschaltet', 'stages': 'Stufen', 'Objective': 'Lernziel',
+  'Key decisions': 'Wichtige Entscheidungen', 'Quick reference': 'Schnellübersicht', 'Common errors': 'Häufige Fehler',
+}
+const tr = (language: UiLanguage, english: string, spanish: string, french: string) => {
+  if (language === 'en') return english
+  if (language === 'fr') return french
+  if (language === 'de') {
+    const writingMatch = english.match(/^Use (.+) in a text$/u)
+    return writingMatch ? `${writingMatch[1]} in einem Text verwenden` : (GERMAN_UI[english] ?? english)
+  }
+  return spanish
+}
 
 function ChoicePractice({
   level,
