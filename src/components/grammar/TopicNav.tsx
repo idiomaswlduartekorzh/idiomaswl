@@ -24,7 +24,7 @@ export default function TopicNav({
   slug: string
   /** Etiqueta del índice, p. ej. «Gramática A1». */
   indexLabel: string
-  uiLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja'
+  uiLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja' | 'ru'
 }) {
   const english = uiLanguage === 'en'
   const french = uiLanguage === 'fr'
@@ -33,6 +33,7 @@ export default function TopicNav({
   const portuguese = uiLanguage === 'pt'
   const korean = uiLanguage === 'ko'
   const japanese = uiLanguage === 'ja'
+  const russian = uiLanguage === 'ru'
   const topics = getTopicsByLevel(idioma, nivel)
   const i = topics.findIndex(t => t.slug === slug)
   const prev = i > 0 ? topics[i - 1] : null
@@ -56,27 +57,27 @@ export default function TopicNav({
 
   return (
     <>
-      <nav className="topic-nav" aria-label={english ? 'Topic navigation' : french ? 'Navigation des thèmes' : german ? 'Themennavigation' : italian ? 'Navigazione degli argomenti' : portuguese ? 'Navegação dos temas' : korean ? '문법 주제 탐색' : japanese ? '文法テーマのナビゲーション' : 'Navegación de temas'}>
+      <nav className="topic-nav" aria-label={english ? 'Topic navigation' : french ? 'Navigation des thèmes' : german ? 'Themennavigation' : italian ? 'Navigazione degli argomenti' : portuguese ? 'Navegação dos temas' : korean ? '문법 주제 탐색' : japanese ? '文法テーマのナビゲーション' : russian ? 'Навигация по темам' : 'Navegación de temas'}>
         {prev ? (
           <Link href={`${base}/${prev.slug}`} className="topic-nav__link" style={box}>
-            <span>← {english ? 'Previous topic' : french ? 'Thème précédent' : german ? 'Vorheriges Thema' : italian ? 'Argomento precedente' : portuguese ? 'Tema anterior' : korean ? '이전 주제' : japanese ? '前のテーマ' : 'Tema anterior'}</span>
+            <span>← {english ? 'Previous topic' : french ? 'Thème précédent' : german ? 'Vorheriges Thema' : italian ? 'Argomento precedente' : portuguese ? 'Tema anterior' : korean ? '이전 주제' : japanese ? '前のテーマ' : russian ? 'Предыдущая тема' : 'Tema anterior'}</span>
             <strong>{prev.shortTitle}</strong>
           </Link>
         ) : (
           <Link href={base} className="topic-nav__link" style={box}>
-            <span>← {english ? 'All topics' : french ? 'Tous les thèmes' : german ? 'Alle Themen' : italian ? 'Tutti gli argomenti' : portuguese ? 'Todos os temas' : korean ? '모든 주제' : japanese ? '全テーマ' : 'Todos los temas'}</span>
+            <span>← {english ? 'All topics' : french ? 'Tous les thèmes' : german ? 'Alle Themen' : italian ? 'Tutti gli argomenti' : portuguese ? 'Todos os temas' : korean ? '모든 주제' : japanese ? '全テーマ' : russian ? 'Все темы' : 'Todos los temas'}</span>
             <strong>{indexLabel}</strong>
           </Link>
         )}
 
         {next ? (
           <Link href={`${base}/${next.slug}`} className="topic-nav__link next" style={{ ...box, textAlign: 'right' }}>
-            <span>{english ? 'Next topic' : french ? 'Thème suivant' : german ? 'Nächstes Thema' : italian ? 'Argomento successivo' : portuguese ? 'Próximo tema' : korean ? '다음 주제' : japanese ? '次のテーマ' : 'Tema siguiente'} →</span>
+            <span>{english ? 'Next topic' : french ? 'Thème suivant' : german ? 'Nächstes Thema' : italian ? 'Argomento successivo' : portuguese ? 'Próximo tema' : korean ? '다음 주제' : japanese ? '次のテーマ' : russian ? 'Следующая тема' : 'Tema siguiente'} →</span>
             <strong>{next.shortTitle}</strong>
           </Link>
         ) : (
           <Link href={base} className="topic-nav__link next" style={{ ...box, textAlign: 'right' }}>
-            <span>{english ? 'Back to index' : french ? 'Retour à l’index' : german ? 'Zurück zur Übersicht' : italian ? 'Torna all’indice' : portuguese ? 'Voltar ao índice' : korean ? '목록으로 돌아가기' : japanese ? '一覧に戻る' : 'Volver al índice'} →</span>
+            <span>{english ? 'Back to index' : french ? 'Retour à l’index' : german ? 'Zurück zur Übersicht' : italian ? 'Torna all’indice' : portuguese ? 'Voltar ao índice' : korean ? '목록으로 돌아가기' : japanese ? '一覧に戻る' : russian ? 'Вернуться к списку' : 'Volver al índice'} →</span>
             <strong>{indexLabel}</strong>
           </Link>
         )}
@@ -85,7 +86,7 @@ export default function TopicNav({
       {others.length > 0 && (
         <section style={{ margin: '2rem 0 3rem' }}>
           <h2 style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: '0.9rem' }}>
-            {english ? 'More grammar at this level' : french ? 'Plus de grammaire à ce niveau' : german ? 'Mehr Grammatik auf diesem Niveau' : italian ? 'Altra grammatica di questo livello' : portuguese ? 'Mais gramática deste nível' : korean ? '이 단계의 다른 문법' : japanese ? 'このレベルの他の文法' : 'Más gramática de este nivel'}
+            {english ? 'More grammar at this level' : french ? 'Plus de grammaire à ce niveau' : german ? 'Mehr Grammatik auf diesem Niveau' : italian ? 'Altra grammatica di questo livello' : portuguese ? 'Mais gramática deste nível' : korean ? '이 단계의 다른 문법' : japanese ? 'このレベルの他の文法' : russian ? 'Другие темы этого уровня' : 'Más gramática de este nivel'}
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '0.7rem' }}>
             {others.map(t => (
@@ -106,7 +107,7 @@ export default function TopicNav({
             ))}
           </div>
           <p style={{ marginTop: '0.9rem', fontSize: '0.86rem' }}>
-            <Link href={base} style={{ fontWeight: 700 }}>{english ? `View all ${topics.length} ${indexLabel} topics` : french ? `Voir les ${topics.length} thèmes de ${indexLabel}` : german ? `Alle ${topics.length} Themen in ${indexLabel} anzeigen` : italian ? `Vedi tutti i ${topics.length} argomenti di ${indexLabel}` : portuguese ? `Ver os ${topics.length} temas de ${indexLabel}` : korean ? `${indexLabel}의 ${topics.length}개 주제 모두 보기` : japanese ? `${indexLabel}の全${topics.length}テーマを見る` : `Ver los ${topics.length} temas de ${indexLabel}`} →</Link>
+            <Link href={base} style={{ fontWeight: 700 }}>{english ? `View all ${topics.length} ${indexLabel} topics` : french ? `Voir les ${topics.length} thèmes de ${indexLabel}` : german ? `Alle ${topics.length} Themen in ${indexLabel} anzeigen` : italian ? `Vedi tutti i ${topics.length} argomenti di ${indexLabel}` : portuguese ? `Ver os ${topics.length} temas de ${indexLabel}` : korean ? `${indexLabel}의 ${topics.length}개 주제 모두 보기` : japanese ? `${indexLabel}の全${topics.length}テーマを見る` : russian ? `Открыть все темы раздела «${indexLabel}»: ${topics.length}` : `Ver los ${topics.length} temas de ${indexLabel}`} →</Link>
           </p>
         </section>
       )}

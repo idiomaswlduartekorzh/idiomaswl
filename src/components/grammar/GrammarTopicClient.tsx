@@ -272,7 +272,7 @@ function TextWithBlanks({
 
 // ── Choice level ─────────────────────────────────────────────────────────────
 
-type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja'
+type UiLanguage = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja' | 'ru'
 const GERMAN_UI: Record<string, string> = {
   'Question': 'Frage', 'View results →': 'Ergebnisse anzeigen →', 'Next →': 'Weiter →', 'Context': 'Kontext',
   'Submit answers →': 'Antworten abgeben →', 'Exercise': 'Übung', 'Instruction': 'Aufgabe',
@@ -378,6 +378,27 @@ const JAPANESE_UI: Record<string, string> = {
   'stages unlocked': '段階が開いています', 'stages': '段階', 'Objective': '学習目標',
   'Key decisions': '重要な判断', 'Quick reference': '早見表', 'Common errors': 'よくある誤り',
 }
+const RUSSIAN_UI: Record<string, string> = {
+  'Question': 'Вопрос', 'View results →': 'Показать результаты →', 'Next →': 'Далее →', 'Context': 'Контекст',
+  'Submit answers →': 'Проверить ответы →', 'Exercise': 'Упражнение', 'Instruction': 'Задание',
+  'Write your answer here...': 'Напишите ответ здесь...', '(no answer)': '(нет ответа)',
+  'gap': 'пропуск', 'Gap': 'Пропуск', 'Detailed review': 'Подробный разбор',
+  'Review every answer with its correction and explanation.': 'Проверьте каждый ответ, исправление и грамматическое объяснение.',
+  'correct': 'верно', '✓ Correct': '✓ Верно', '✗ Review': '✗ Повторить', 'Your answer': 'Ваш ответ',
+  'Correct answer': 'Правильный ответ', 'Download this topic as a PDF': 'Открыть эту тему в PDF',
+  'Explanation, reference table, exercises and answer key. Ready to print.': 'Объяснение, справочная таблица, упражнения и ответы в формате для печати.',
+  'Visual lab': 'Визуальная лаборатория', 'Writing transfer': 'Перенос в письменную речь',
+  'The guided task asks you to use this structure in a communicative situation at the same level.': 'В направляемом задании эта структура применяется в реальной коммуникативной ситуации того же уровня.',
+  'Progressive practice': 'Поэтапная практика', '6 practice stages': '6 этапов практики',
+  'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.': 'Наберите не менее 65 % на каждом этапе, чтобы открыть следующий. Исправления появятся после завершения всего этапа.',
+  'Stage': 'Этап', 'Score at least 65% in the previous stage to unlock': 'Наберите не менее 65 % на предыдущем этапе, чтобы открыть этот',
+  'Teacher note': 'Методическая заметка', 'Select a stage above to begin the practice.': 'Выберите этап выше, чтобы начать практику.',
+  'Exit': 'Выйти', 'Stage passed!': 'Этап пройден!', 'Keep improving': 'Продолжайте тренироваться', 'of': 'из',
+  ' · Next stage unlocked': ' · Следующий этап открыт', ' · You need 65% to continue': ' · Для продолжения нужно 65 %',
+  'Try again': 'Повторить', 'Topic completed! →': 'Тема завершена! →', 'Your progress': 'Ваш прогресс',
+  'stages unlocked': 'этапов открыто', 'stages': 'этапов', 'Objective': 'Цель',
+  'Key decisions': 'Ключевые решения', 'Quick reference': 'Краткая справка', 'Common errors': 'Типичные ошибки',
+}
 const tr = (language: UiLanguage, english: string, spanish: string, french: string) => {
   if (language === 'en') return english
   if (language === 'fr') return french
@@ -400,6 +421,10 @@ const tr = (language: UiLanguage, english: string, spanish: string, french: stri
   if (language === 'ja') {
     const writingMatch = english.match(/^Use (.+) in a text$/u)
     return writingMatch ? `文章で「${writingMatch[1]}」を使う` : (JAPANESE_UI[english] ?? english)
+  }
+  if (language === 'ru') {
+    const writingMatch = english.match(/^Use (.+) in a text$/u)
+    return writingMatch ? `Используйте «${writingMatch[1]}» в тексте` : (RUSSIAN_UI[english] ?? english)
   }
   return spanish
 }

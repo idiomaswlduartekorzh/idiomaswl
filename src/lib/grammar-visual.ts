@@ -41,7 +41,7 @@ export function grammarVisualAlt(topic: GrammarTopic, idioma: GrammarVisualLangu
   return `Infografía de ${topic.shortTitle} en ${language.label} ${nivel.toUpperCase()} con tabla, regla y ejemplos: ${topic.guide.formula}`
 }
 
-export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string, options: { contentLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja' } = {}) {
+export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string, options: { contentLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ko' | 'ja' | 'ru' } = {}) {
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const contentUrl = grammarVisualUrl(idioma, nivel, topic.slug)
   const english = options.contentLanguage === 'en'
@@ -51,6 +51,7 @@ export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVis
   const portuguese = options.contentLanguage === 'pt'
   const korean = options.contentLanguage === 'ko'
   const japanese = options.contentLanguage === 'ja'
+  const russian = options.contentLanguage === 'ru'
   const caption = english
     ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}`
     : french
@@ -65,18 +66,20 @@ export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVis
     ? `한국어 ${nivel.toUpperCase()} ${topic.shortTitle} 시각 자료: ${topic.guide.formula}`
     : japanese
     ? `日本語${nivel.toUpperCase()}「${topic.shortTitle}」の視覚資料：${topic.guide.formula}`
+    : russian
+    ? `Визуальная карта темы «${topic.shortTitle}» для русского ${nivel.toUpperCase()}: ${topic.guide.formula}`
     : grammarVisualAlt(topic, idioma, nivel)
   return {
     '@type': 'ImageObject',
-    name: english ? `Visual guide to ${topic.shortTitle} — English ${nivel.toUpperCase()}` : french ? `Guide visuel de ${topic.shortTitle} — Français ${nivel.toUpperCase()}` : german ? `Visueller Leitfaden zu ${topic.shortTitle} — Deutsch ${nivel.toUpperCase()}` : italian ? `Guida visiva a ${topic.shortTitle} — Italiano ${nivel.toUpperCase()}` : portuguese ? `Guia visual de ${topic.shortTitle} — Português ${nivel.toUpperCase()}` : korean ? `${topic.shortTitle} 시각 자료 — 한국어 ${nivel.toUpperCase()}` : japanese ? `${topic.shortTitle}の視覚資料 — 日本語${nivel.toUpperCase()}` : `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
+    name: english ? `Visual guide to ${topic.shortTitle} — English ${nivel.toUpperCase()}` : french ? `Guide visuel de ${topic.shortTitle} — Français ${nivel.toUpperCase()}` : german ? `Visueller Leitfaden zu ${topic.shortTitle} für Deutsch ${nivel.toUpperCase()}` : italian ? `Guida visiva a ${topic.shortTitle} — Italiano ${nivel.toUpperCase()}` : portuguese ? `Guia visual de ${topic.shortTitle} — Português ${nivel.toUpperCase()}` : korean ? `${topic.shortTitle} 시각 자료 — 한국어 ${nivel.toUpperCase()}` : japanese ? `${topic.shortTitle}の視覚資料 — 日本語${nivel.toUpperCase()}` : russian ? `Визуальная карта «${topic.shortTitle}» — русский ${nivel.toUpperCase()}` : `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
     caption,
-    description: english ? `Original educational infographic for ${topic.shortTitle}, built from the lesson’s specific rule, visual map and examples.` : french ? `Infographie pédagogique originale sur ${topic.shortTitle}, construite à partir de la règle, de la carte visuelle et des exemples de la leçon.` : german ? `Originale Lerninfografik zu ${topic.shortTitle}, aufgebaut aus der Regel, der visuellen Karte und den Beispielen der Lektion.` : italian ? `Infografica didattica originale su ${topic.shortTitle}, costruita con la regola, la mappa visiva e gli esempi specifici della lezione.` : portuguese ? `Infográfico didático original sobre ${topic.shortTitle}, criado com a regra, o mapa visual e os exemplos da lição.` : korean ? `${topic.shortTitle}의 규칙, 대비, 예문을 바탕으로 제작한 독창적인 한국어 학습 인포그래픽입니다.` : japanese ? `${topic.shortTitle}の規則、対比、例文をもとに制作したオリジナル日本語学習インフォグラフィックです。` : `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
+    description: english ? `Original educational infographic for ${topic.shortTitle}, built from the lesson’s specific rule, visual map and examples.` : french ? `Infographie pédagogique originale sur ${topic.shortTitle}, construite à partir de la règle, de la carte visuelle et des exemples de la leçon.` : german ? `Originale Lerninfografik zu ${topic.shortTitle}, aufgebaut aus der Regel, der visuellen Karte und den Beispielen der Lektion.` : italian ? `Infografica didattica originale su ${topic.shortTitle}, costruita con la regola, la mappa visiva e gli esempi specifici della lezione.` : portuguese ? `Infográfico didático original sobre ${topic.shortTitle}, criado com a regra, o mapa visual e os exemplos da lição.` : korean ? `${topic.shortTitle}의 규칙, 대비, 예문을 바탕으로 제작한 독창적인 한국어 학습 인포그래픽입니다.` : japanese ? `${topic.shortTitle}の規則、対比、例文をもとに制作したオリジナル日本語学習インフォグラフィックです。` : russian ? `Оригинальная учебная инфографика по теме «${topic.shortTitle}», созданная на основе правила, смысловых контрастов и примеров урока.` : `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
     contentUrl,
     url: contentUrl,
     width: 1200,
     height: 630,
     encodingFormat: 'image/png',
-    inLanguage: english ? 'en' : french ? 'fr' : german ? 'de' : italian ? 'it' : portuguese ? 'pt-BR' : korean ? 'ko-KR' : japanese ? 'ja-JP' : ['es', language.code],
+    inLanguage: english ? 'en' : french ? 'fr' : german ? 'de' : italian ? 'it' : portuguese ? 'pt-BR' : korean ? 'ko-KR' : japanese ? 'ja-JP' : russian ? 'ru-RU' : ['es', language.code],
     creditText: 'Idiomas WeLearn',
     creator: { '@type': 'Organization', name: 'Idiomas WeLearn', url: SITE_ORIGIN },
   }
