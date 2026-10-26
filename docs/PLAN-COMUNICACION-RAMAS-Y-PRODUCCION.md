@@ -9,8 +9,8 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 ## Superhub de español para extranjeros — 25 de octubre de 2026
 
-`codex/spanish-colombia-hub-20261025` se actualizó sobre `origin/main@296f8c2d` en un
-worktree aislado. Estado: `EN_VALIDACION`; integración y despliegue pendientes.
+`codex/spanish-colombia-hub-20261025` se actualizó sobre `origin/main@aabc9223` en un
+worktree aislado. Estado: `LISTO_PARA_INTEGRAR`; integración y despliegue pendientes.
 Añade una entrada editorial en inglés, otra en español, una página comercial de
 clases presenciales en Bucaramanga y online, y tres guías de intención distinta,
 con canonicals, `hreflang` recíproco para las dos portadas editoriales, sitemap y enlaces desde
@@ -21,10 +21,11 @@ El propietario confirmó clases de español online y presenciales en Bucaramanga
 25 de octubre de 2026. La rama incluye una página comercial y una tarjeta de español
 en el catálogo; no anuncia precios, horarios, visados ni sedes fuera de Bucaramanga.
 La ampliación pasó catálogo protegido (465 temas), TypeScript, ESLint focalizado,
-navegación, SEO y build completo de 2.958 páginas. Smoke local: seis rutas de español,
+navegación, SEO y build completo; tras el rebase generó 3.054 páginas. Smoke local: seis rutas de español,
 catálogo y sitemap responden `200`; títulos, descripciones y canonicals se comprobaron
 en el HTML renderizado. Se revisó la landing comercial en escritorio y móvil sin
-desbordamiento horizontal. Falta integrar y verificar producción.
+desbordamiento horizontal. Catálogo, TypeScript y build completo pasaron de nuevo
+sobre `origin/main@aabc9223`. Falta integrar y verificar producción.
 
 ## Perfil y notificaciones del estudiante — 25 de octubre de 2026
 
