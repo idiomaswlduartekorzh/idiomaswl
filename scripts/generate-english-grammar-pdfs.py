@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the complete English A1-B1 grammar workbook collection."""
+"""Generate the complete English or French grammar workbook collection."""
 
 import json
 import os
@@ -18,11 +18,14 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import BaseDocTemplate, Frame, KeepTogether, PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / 'tmp' / 'english-grammar' / 'topics.json'
-OUTPUT = Path(os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / 'english-grammar'))
+PDF_LANGUAGE = os.environ.get('GRAMMAR_PDF_LANGUAGE', 'english').lower()
+IS_FRENCH = PDF_LANGUAGE == 'french'
+DATA = Path(os.environ.get('GRAMMAR_PDF_DATA', ROOT / 'tmp' / 'english-grammar' / 'topics.json'))
+OUTPUT = Path(os.environ.get('GRAMMAR_PDF_OUTPUT', os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / f'{PDF_LANGUAGE}-grammar')))
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
+PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'ingles')
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-wordmark-transparent-v2.png'
@@ -44,6 +47,10 @@ PAGE_W, PAGE_H = A4
 
 pdfmetrics.registerFont(TTFont('WeLearnEN', str(FONT_REGULAR)))
 pdfmetrics.registerFont(TTFont('WeLearnEN-Bold', str(FONT_BOLD)))
+
+
+def l(english, french):
+    return french if IS_FRENCH else english
 
 
 def p(text, style):
@@ -82,8 +89,8 @@ class Workbook(BaseDocTemplate):
         self.topic = topic
         self.edition = edition
         advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
-        edition_label = {'complete': 'complete guide', 'exercises': 'exercise workbook', 'answer-key': 'answer key'}[edition]
-        subject = f"English grammar {edition_label} {topic['level']}" if advanced else f"Cuaderno de gramática inglesa {topic['level']}"
+        edition_label = {'complete': l('complete guide', 'cours complet'), 'exercises': l('exercise workbook', "cahier d'exercices"), 'answer-key': l('answer key', 'corrigé')}[edition]
+        subject = f"{l('English grammar', 'Grammaire française')} {edition_label} {topic['level']}" if advanced else f"Cuaderno de gramática inglesa {topic['level']}"
         super().__init__(filename, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=31 * mm, bottomMargin=20 * mm, title=f"Idiomas WeLearn - {topic['title']} - {edition_label}", author='Idiomas WeLearn', subject=subject)
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id='body')
         self.addPageTemplates([PageTemplate(id='welearn', frames=[frame], onPage=self.draw_page)])
@@ -116,9 +123,9 @@ class Workbook(BaseDocTemplate):
         canvas.line(18 * mm, PAGE_H - 28 * mm, PAGE_W - 18 * mm, PAGE_H - 28 * mm)
         canvas.setFillColor(MUTED)
         canvas.setFont('WeLearnEN', 6.7)
-        edition_footer = {'complete': 'Complete guide', 'exercises': 'Exercise workbook', 'answer-key': 'Answer key'}[self.edition]
-        footer = f"Original material · English {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · Inglés {self.topic['level']} · idiomaswl.com"
-        page_label = 'Page' if advanced else 'Página'
+        edition_footer = {'complete': l('Complete guide', 'Cours complet'), 'exercises': l('Exercise workbook', "Cahier d'exercices"), 'answer-key': l('Answer key', 'Corrigé')}[self.edition]
+        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · Inglés {self.topic['level']} · idiomaswl.com"
+        page_label = l('Page', 'Page') if advanced else 'Página'
         canvas.drawString(18 * mm, 10 * mm, footer)
         canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'{page_label} {doc.page}')
         canvas.restoreState()
@@ -154,7 +161,7 @@ def blank_text(text):
 def exercises_for(topic):
     exercises, answers, number = [], [], 1
     advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
-    options_label = 'Options' if advanced else 'Opciones'
+    options_label = l('Options', 'Choix') if advanced else 'Opciones'
     for level in topic['practice']['levels']:
         kind, title = level['type'], level['title']
         if kind == 'choice':
@@ -228,7 +235,7 @@ def formula_flow(parts):
 def practice_box(code, scene, prompt, options=None, lines=0, background=WHITE):
     content = [p(f'{code} · {scene}'.upper(), STYLES['eyebrow']), p(blank_text(prompt), STYLES['exercise_large'])]
     if options:
-        content.append(p('OPTIONS  ' + '  ·  '.join(options), STYLES['small']))
+        content.append(p(l('OPTIONS  ', 'CHOIX  ') + '  ·  '.join(options), STYLES['small']))
     for _ in range(lines):
         content.append(p('________________________________________________________________________________', STYLES['small']))
     table = Table([[content]], colWidths=[169 * mm], hAlign='LEFT')
@@ -380,67 +387,67 @@ def build_advanced_editorial_story(topic):
 
 
 def split_pdf_cover(topic, edition, description, decisions):
-    edition_title = 'Exercise workbook' if edition == 'exercises' else 'Answer key'
+    edition_title = l('Exercise workbook', "Cahier d'exercices") if edition == 'exercises' else l('Answer key', 'Corrigé raisonné')
     accent = RED if edition == 'exercises' else BLUE
     return [
         Spacer(1, 32 * mm),
-        p(f"ENGLISH {topic['level']} · {edition_title.upper()}", STYLES['eyebrow']),
+        p(f"{l('ENGLISH', 'FRANÇAIS')} {topic['level']} · {edition_title.upper()}", STYLES['eyebrow']),
         p(topic['shortTitle'], STYLES['cover_title']),
         p(description, STYLES['cover_lead']),
         Spacer(1, 4 * mm),
-        editorial_card('This document', edition_title, (
-            f'{decisions} learning decisions arranged in six progressive stages. Write directly on the page and consult the separate answer key only after completing a stage.'
+        editorial_card(l('This document', 'Ce document'), edition_title, (
+            l(f'{decisions} learning decisions arranged in six progressive stages. Write directly on the page and consult the separate answer key only after completing a stage.', f'{decisions} décisions d’apprentissage organisées en six étapes progressives. Écrivez directement sur la page et consultez le corrigé séparé seulement après avoir terminé une étape.')
             if edition == 'exercises'
-            else 'Model answers and concise grammar explanations for every stage in the separate exercise workbook.'
+            else l('Model answers and concise grammar explanations for every stage in the separate exercise workbook.', "Réponses modèles et explications grammaticales concises pour chaque étape du cahier d'exercices séparé.")
         ), PALE_RED if edition == 'exercises' else PALE_BLUE, accent),
         Spacer(1, 8 * mm),
-        editorial_card('Recommended use', 'Keep the three-document system together', (
-            'Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.'
+        editorial_card(l('Recommended use', 'Utilisation conseillée'), l('Keep the three-document system together', 'Conservez le système de trois documents'), (
+            l('Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.', "Utilisez le cours complet pour comprendre, ce cahier pour pratiquer et le corrigé pour analyser chaque décision.")
             if edition == 'exercises'
-            else 'Correct one stage at a time. Explain the rule aloud before marking an answer as secure.'
+            else l('Correct one stage at a time. Explain the rule aloud before marking an answer as secure.', "Corrigez une étape à la fois. Expliquez la règle à voix haute avant de considérer une réponse comme acquise.")
         ), PALE_GOLD, accent),
         Spacer(1, 8 * mm),
-        p('WELEARN STUDY SEQUENCE', STYLES['eyebrow']),
-        formula_flow(['complete guide', 'exercise workbook', 'answer key', 'retrieval review']),
+        p(l('WELEARN STUDY SEQUENCE', 'PARCOURS D’ÉTUDE WELEARN'), STYLES['eyebrow']),
+        formula_flow(l(['complete guide', 'exercise workbook', 'answer key', 'retrieval review'], ['cours complet', "cahier d'exercices", 'corrigé', 'rappel actif'])),
     ]
 
 
 def build_exercises_only_story(topic):
-    story = split_pdf_cover(topic, 'exercises', f"Printable practice for {topic['title']}. No explanations or solutions interrupt the work pages.", practice_decision_count(topic))
+    story = split_pdf_cover(topic, 'exercises', l(f"Printable practice for {topic['title']}. No explanations or solutions interrupt the work pages.", f"Pratique imprimable pour {topic['title']}. Aucune explication ni solution n’interrompt les pages de travail."), practice_decision_count(topic))
     levels = topic['practice']['levels']
     prefixes = ['A', 'B', 'C', 'D', 'E', 'F']
     for level_index, level in enumerate(levels):
-        story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', 'Practice stage', level['title'], level['intro'])]
+        story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'), level['title'], level['intro'])]
         prefix = prefixes[level_index]
         if level['type'] == 'choice':
             for index, item in enumerate(level['items'], 1):
                 story += [practice_box(f'{prefix}{index}', item['scene'], ' '.join(line[1] for line in item['lines']), item['options'], background=WHITE if index % 2 else SOFT_BG), Spacer(1, 2.5 * mm)]
         elif level['type'] == 'dual':
             for index, item in enumerate(level['items'], 1):
-                options = [f"Gap {blank_index + 1}: {' / '.join(blank.get('options', []))}" for blank_index, blank in enumerate(item['blanks'])]
+                options = [f"{l('Gap', 'Espace')} {blank_index + 1}: {' / '.join(blank.get('options', []))}" for blank_index, blank in enumerate(item['blanks'])]
                 story += [practice_box(f'{prefix}{index}', item['scene'], ' '.join(line[1] for line in item['lines']), options, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
         elif level['type'] in ('guidedText', 'freeText'):
             story += [practice_box(f'{prefix}1', level['scene'], level['text'], lines=4 if level['type'] == 'freeText' else 2, background=WHITE)]
             if level['type'] == 'guidedText':
                 word_bank = sorted(set(option for blank in level['blanks'] for option in blank.get('options', [])))
-                story += [Spacer(1, 4 * mm), editorial_card('Word bank', 'Available forms', ' · '.join(word_bank), PALE_BLUE, BLUE)]
+                story += [Spacer(1, 4 * mm), editorial_card(l('Word bank', 'Banque de formes'), l('Available forms', 'Formes disponibles'), ' · '.join(word_bank), PALE_BLUE, BLUE)]
         else:
             for index, item in enumerate(level['items'], 1):
                 story += [practice_box(f'{prefix}{index}', item['scene'], item['prompt'], lines=3 if level_index == 5 else 2, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
         if level_index < len(levels) - 1:
-            story += [Spacer(1, 5 * mm), editorial_card('Stage check', 'Pause before continuing', 'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', PALE_GREEN, BLUE)]
-    story += [PageBreak(), *section_heading('07', 'Retrieval', 'Final self-check', 'Complete these prompts without reopening the guide.')]
+            story += [Spacer(1, 5 * mm), editorial_card(l('Stage check', 'Bilan de l’étape'), l('Pause before continuing', 'Faites une pause avant de continuer'), l('Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé."), PALE_GREEN, BLUE)]
+    story += [PageBreak(), *section_heading('07', l('Retrieval', 'Rappel actif'), l('Final self-check', 'Autoévaluation finale'), l('Complete these prompts without reopening the guide.', 'Répondez sans rouvrir le cours.'))]
     prompts = topic.get('visual', {}).get('reviewFocus', []) or ['form', 'meaning', 'register', 'error correction']
     for index, focus in enumerate(prompts, 1):
-        story += [practice_box(f'R{index}', 'Review focus', f'Explain and exemplify: {focus}.', lines=3, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
+        story += [practice_box(f'R{index}', l('Review focus', 'Point de révision'), l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.'), lines=3, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
     return story
 
 
 def build_answer_key_only_story(topic):
-    story = split_pdf_cover(topic, 'answer-key', f"Solutions and feedback for the {topic['title']} exercise workbook.", practice_decision_count(topic))
+    story = split_pdf_cover(topic, 'answer-key', l(f"Solutions and feedback for the {topic['title']} exercise workbook.", f"Solutions et rétroaction pour le cahier d’exercices {topic['title']}."), practice_decision_count(topic))
     prefixes = ['A', 'B', 'C', 'D', 'E', 'F']
     for level_index, level in enumerate(topic['practice']['levels']):
-        story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', 'Answer key', level['title'], 'Compare the form first, then read the explanation and name the rule in your own words.')]
+        story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Answer key', 'Corrigé'), level['title'], l('Compare the form first, then read the explanation and name the rule in your own words.', "Comparez d’abord la forme, puis lisez l’explication et reformulez la règle avec vos propres mots."))]
         prefix = prefixes[level_index]
         if level['type'] == 'choice':
             entries = [(f'{prefix}{index}', item['answer'], item['explain']) for index, item in enumerate(level['items'], 1)]
@@ -452,9 +459,10 @@ def build_answer_key_only_story(topic):
             entries = [(f'{prefix}{index}', item['answer'], item['explain']) for index, item in enumerate(level['items'], 1)]
         for index, (code, answer, explanation) in enumerate(entries, 1):
             story += [editorial_card(code, answer, explanation, WHITE if index % 2 else SOFT_BG, BLUE), Spacer(1, 2.5 * mm)]
-    story += [PageBreak(), *section_heading('07', 'Feedback', 'Diagnose the pattern, not only the score', 'Use this page to decide what to revisit in the complete guide.')]
-    for label in ['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register']:
-        story += [practice_box('CHECK', label, 'What went wrong? What rule will prevent the same error next time?', lines=3, background=WHITE), Spacer(1, 3 * mm)]
+    story += [PageBreak(), *section_heading('07', l('Feedback', 'Rétroaction'), l('Diagnose the pattern, not only the score', 'Analysez la structure, pas seulement le score'), l('Use this page to decide what to revisit in the complete guide.', 'Utilisez cette page pour décider ce qu’il faut revoir dans le cours complet.'))]
+    labels = l(['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register'], ['Déclencheur ou contexte', 'Choix structurel', 'Forme verbale ou propositionnelle', 'Sens et registre'])
+    for label in labels:
+        story += [practice_box('CHECK', label, l('What went wrong? What rule will prevent the same error next time?', 'Quelle erreur avez-vous commise ? Quelle règle permettra de l’éviter ?'), lines=3, background=WHITE), Spacer(1, 3 * mm)]
     return story
 
 
@@ -469,23 +477,23 @@ def build_advanced_standard_story(topic):
     decisions = practice_decision_count(topic)
     story = [
         Spacer(1, 28 * mm),
-        p(f"ENGLISH {topic['level']} · ADVANCED GRAMMAR", STYLES['eyebrow']),
+        p(f"{l('ENGLISH', 'FRANÇAIS')} {topic['level']} · {l('ADVANCED GRAMMAR', 'GRAMMAIRE AVANCÉE')}", STYLES['eyebrow']),
         p(topic['shortTitle'], STYLES['cover_title']),
         p(topic['lead'], STYLES['cover_lead']),
         Spacer(1, 3 * mm),
-        editorial_card('The central idea', topic['guide']['goal'], topic['description'], PALE_BLUE, RED),
+        editorial_card(l('The central idea', 'L’idée centrale'), topic['guide']['goal'], topic['description'], PALE_BLUE, RED),
         Spacer(1, 6 * mm),
-        editorial_card('Model', topic['guide']['model'], topic['guide']['formula'], PALE_GOLD, BLUE),
+        editorial_card(l('Model', 'Modèle'), topic['guide']['model'], topic['guide']['formula'], PALE_GOLD, BLUE),
         Spacer(1, 7 * mm),
-        p(f"{len(topic['practice']['levels'])} GUIDED STAGES · {decisions} LEARNING DECISIONS", STYLES['eyebrow']),
-        p('This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.', STYLES['section_lead']),
+        p(l(f"{len(topic['practice']['levels'])} GUIDED STAGES · {decisions} LEARNING DECISIONS", f"{len(topic['practice']['levels'])} ÉTAPES GUIDÉES · {decisions} DÉCISIONS D’APPRENTISSAGE"), STYLES['eyebrow']),
+        p(l('This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.', "Ce cours complet réunit explication, raisonnement visuel, pratique et rétroaction. Un cahier d’exercices et un corrigé séparés sont également disponibles sur la page de la leçon."), STYLES['section_lead']),
         Spacer(1, 4 * mm),
-        p('LEARNING OUTCOMES', STYLES['eyebrow']),
+        p(l('LEARNING OUTCOMES', 'OBJECTIFS D’APPRENTISSAGE'), STYLES['eyebrow']),
     ]
     for index, outcome in enumerate(topic['outcomes'], 1):
-        story += [editorial_card(f'Outcome {index}', f'{index:02d}', outcome, WHITE if index % 2 else PALE_RED, RED), Spacer(1, 2.5 * mm)]
+        story += [editorial_card(l(f'Outcome {index}', f'Objectif {index}'), f'{index:02d}', outcome, WHITE if index % 2 else PALE_RED, RED), Spacer(1, 2.5 * mm)]
 
-    story += [PageBreak(), *section_heading('01', 'Understand', 'Build meaning before form', topic['description'])]
+    story += [PageBreak(), *section_heading('01', l('Understand', 'Comprendre'), l('Build meaning before form', 'Construire le sens avant la forme'), topic['description'])]
     for section_index, section in enumerate(topic['seo'], 1):
         story += [p(section['heading'], STYLES['section_title'])]
         for paragraph in section.get('paragraphs', []):
@@ -498,12 +506,12 @@ def build_advanced_standard_story(topic):
             story += [Spacer(1, 4 * mm)]
 
     formula_parts = [part.strip() for part in re.split(r'\s*(?:\||→|\+)\s*', topic['guide']['formula']) if part.strip()]
-    story += [PageBreak(), *section_heading('02', 'Visual map', 'Reason through the pattern', topic['visual']['teacherLens']), formula_flow(formula_parts), Spacer(1, 6 * mm), p('DECIDE IN THIS ORDER', STYLES['eyebrow'])]
+    story += [PageBreak(), *section_heading('02', l('Visual map', 'Carte visuelle'), l('Reason through the pattern', 'Raisonner à partir de la structure'), topic['visual']['teacherLens']), formula_flow(formula_parts), Spacer(1, 6 * mm), p(l('DECIDE IN THIS ORDER', 'DÉCIDEZ DANS CET ORDRE'), STYLES['eyebrow'])]
     for index, decision in enumerate(topic['guide']['decisions'], 1):
-        story += [editorial_card(f'Step {index}', f'Decision {index}', decision, WHITE if index % 2 else SOFT_BG, RED if index == 1 else BLUE), Spacer(1, 2.5 * mm)]
-    story += [PageBreak(), *section_heading('03', 'Reference', 'Compare forms and meanings', 'Use the table to justify each structural choice.'), data_table(topic['guide']['table']), Spacer(1, 6 * mm), p('EXAMPLES AT A GLANCE', STYLES['eyebrow']), examples_table(topic['visual']['scene']), Spacer(1, 7 * mm), p('COMMON ERRORS', STYLES['eyebrow'])]
+        story += [editorial_card(l(f'Step {index}', f'Étape {index}'), l(f'Decision {index}', f'Décision {index}'), decision, WHITE if index % 2 else SOFT_BG, RED if index == 1 else BLUE), Spacer(1, 2.5 * mm)]
+    story += [PageBreak(), *section_heading('03', l('Reference', 'Référence'), l('Compare forms and meanings', 'Comparer les formes et les sens'), l('Use the table to justify each structural choice.', 'Utilisez le tableau pour justifier chaque choix structurel.')), data_table(topic['guide']['table']), Spacer(1, 6 * mm), p(l('EXAMPLES AT A GLANCE', 'EXEMPLES EN UN COUP D’ŒIL'), STYLES['eyebrow']), examples_table(topic['visual']['scene']), Spacer(1, 7 * mm), p(l('COMMON ERRORS', 'ERREURS FRÉQUENTES'), STYLES['eyebrow'])]
     for mistake in topic['guide']['mistakes']:
-        story += [editorial_card('Edit this', 'Avoid this pattern', mistake, PALE_RED, RED), Spacer(1, 2.5 * mm)]
+        story += [editorial_card(l('Edit this', 'À corriger'), l('Avoid this pattern', 'Évitez cette erreur'), mistake, PALE_RED, RED), Spacer(1, 2.5 * mm)]
 
     story += without_cover(build_exercises_only_story(topic))
     story += without_cover(build_answer_key_only_story(topic))
@@ -579,7 +587,7 @@ def main():
     for topic in topics:
         level = topic['level'].lower()
         output_dir = OUTPUT / level
-        public_dir = PUBLIC / f'ingles-{level}' / 'grammar'
+        public_dir = PUBLIC / f'{PUBLIC_PREFIX}-{level}' / 'grammar'
         output_dir.mkdir(parents=True, exist_ok=True)
         public_dir.mkdir(parents=True, exist_ok=True)
         filename = f"idiomaswl-{topic['slug']}.pdf" if topic['slug'].endswith(f'-{level}') else f"idiomaswl-{topic['slug']}-{level}.pdf"
@@ -589,8 +597,8 @@ def main():
         print(target.relative_to(ROOT))
         if level in ('b2', 'c1', 'c2'):
             stem = filename[:-4]
-            exercises_filename = f'{stem}-exercises.pdf'
-            answer_key_filename = f'{stem}-answer-key.pdf'
+            exercises_filename = f"{stem}-{l('exercises', 'exercices')}.pdf"
+            answer_key_filename = f"{stem}-{l('answer-key', 'corrige')}.pdf"
             exercises_target = output_dir / exercises_filename
             answer_key_target = output_dir / answer_key_filename
             Workbook(str(exercises_target), topic, 'exercises').build(build_exercises_only_story(topic))
@@ -599,7 +607,7 @@ def main():
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))
             print(answer_key_target.relative_to(ROOT))
-    print(f"Listo: {len(topics)} cuadernos PDF de gramática inglesa.")
+    print(l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 
 if __name__ == '__main__':

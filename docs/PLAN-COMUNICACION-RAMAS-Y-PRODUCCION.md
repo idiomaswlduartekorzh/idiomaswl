@@ -971,3 +971,20 @@ La recuperación termina cuando:
 - el smoke posterior al despliegue está automatizado;
 - los documentos de subsistema coinciden con Git y producción;
 - un despliegue nuevo puede añadir trabajo, pero no hacer desaparecer trabajo aprobado sin una retirada explícita.
+
+## 11. Entrega activa — gramática francesa B2–C2
+
+- Rama: `codex/french-b2-c2-complete-curriculum`.
+- Alcance: 90 lecciones, 30 por nivel B2, C1 y C2, con interfaz y contenido en
+  francés, explicación pedagógica, mapa visual específico, seis etapas de
+  práctica y al menos 30 decisiones de aprendizaje por tema.
+- Recursos: 270 PDF editoriales (cours complet, cahier d’exercices y corrigé),
+  entre 8 y 20 páginas, con texto extraíble. Los audios quedan expresamente
+  aplazados y no se anuncian todavía.
+- SEO/GEO: canonicals estables, metadatos franceses, `LearningResource`,
+  `ImageObject`, `HowTo`, breadcrumbs, sitemap derivado del registro e
+  interlinking de A1 a C2.
+- Puertas locales superadas: guardián francés 90/270, controles de catálogo y
+  SEO, regresión inglesa, TypeScript y build Next.js de 3.048 páginas.
+- Estado: `LISTO_PARA_INTEGRAR`; pasa a `DESPLEGADO` únicamente después de
+  integrar en `main`, obtener Vercel `READY` y ejecutar el smoke de producción.

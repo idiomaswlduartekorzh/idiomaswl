@@ -272,20 +272,23 @@ function TextWithBlanks({
 
 // ── Choice level ─────────────────────────────────────────────────────────────
 
+type UiLanguage = 'es' | 'en' | 'fr'
+const tr = (language: UiLanguage, english: string, spanish: string, french: string) => language === 'en' ? english : language === 'fr' ? french : spanish
+
 function ChoicePractice({
   level,
   idx,
   answers,
   dispatch,
   onSubmit,
-  english,
+  uiLanguage,
 }: {
   level: ChoiceLevel
   idx: number
   answers: Record<string, string>
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
-  english: boolean
+  uiLanguage: UiLanguage
 }) {
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
@@ -304,7 +307,7 @@ function ChoicePractice({
   return (
     <div className="question-shell">
       <div className="question-topline">
-        <span>{english ? 'Question' : 'Pregunta'} {idx + 1} / {level.items.length}</span>
+        <span>{tr(uiLanguage, 'Question', 'Pregunta', 'Question')} {idx + 1} / {level.items.length}</span>
         <div className="mini-progress">
           <span style={{ width: `${((idx + 1) / level.items.length) * 100}%` }} />
         </div>
@@ -331,7 +334,7 @@ function ChoicePractice({
       </div>
       <div className="gram-actions">
         <button className="gram-btn accent" disabled={!canProceed} onClick={next}>
-          {isLast ? (english ? 'View results →' : 'Ver resultados →') : (english ? 'Next →' : 'Siguiente →')}
+          {isLast ? tr(uiLanguage, 'View results →', 'Ver resultados →', 'Voir les résultats →') : tr(uiLanguage, 'Next →', 'Siguiente →', 'Suivant →')}
         </button>
       </div>
     </div>
@@ -346,14 +349,14 @@ function DualPractice({
   answers,
   dispatch,
   onSubmit,
-  english,
+  uiLanguage,
 }: {
   level: DualLevel
   idx: number
   answers: Record<string, string>
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
-  english: boolean
+  uiLanguage: UiLanguage
 }) {
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
@@ -410,7 +413,7 @@ function DualPractice({
   return (
     <div className="question-shell">
       <div className="question-topline">
-        <span>{english ? 'Context' : 'Diálogo'} {idx + 1} / {level.items.length}</span>
+        <span>{tr(uiLanguage, 'Context', 'Diálogo', 'Contexte')} {idx + 1} / {level.items.length}</span>
         <div className="mini-progress">
           <span style={{ width: `${((idx + 1) / level.items.length) * 100}%` }} />
         </div>
@@ -423,7 +426,7 @@ function DualPractice({
       </div>
       <div className="gram-actions">
         <button className="gram-btn accent" disabled={!canProceed} onClick={next}>
-          {isLast ? (english ? 'View results →' : 'Ver resultados →') : (english ? 'Next →' : 'Siguiente →')}
+          {isLast ? tr(uiLanguage, 'View results →', 'Ver resultados →', 'Voir les résultats →') : tr(uiLanguage, 'Next →', 'Siguiente →', 'Suivant →')}
         </button>
       </div>
     </div>
@@ -437,13 +440,13 @@ function TextPractice({
   answers,
   dispatch,
   onSubmit,
-  english,
+  uiLanguage,
 }: {
   level: GuidedTextLevel | FreeTextLevel
   answers: Record<string, string>
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
-  english: boolean
+  uiLanguage: UiLanguage
 }) {
   // Sólo se exigen los huecos [[n]] presentes en el texto que tienen blank
   // definido; huecos extra son opcionales y blanks sin hueco se ignoran.
@@ -472,7 +475,7 @@ function TextPractice({
       />
       <div className="gram-actions">
         <button className="gram-btn accent" disabled={!canSubmit} onClick={handleSubmit}>
-          {english ? 'Submit answers →' : 'Enviar respuestas →'}
+          {tr(uiLanguage, 'Submit answers →', 'Enviar respuestas →', 'Envoyer les réponses →')}
         </button>
       </div>
     </div>
@@ -487,14 +490,14 @@ function WritePractice({
   answers,
   dispatch,
   onSubmit,
-  english,
+  uiLanguage,
 }: {
   level: WriteLevel
   idx: number
   answers: Record<string, string>
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
-  english: boolean
+  uiLanguage: UiLanguage
 }) {
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
@@ -512,27 +515,27 @@ function WritePractice({
   return (
     <div className="question-shell">
       <div className="question-topline">
-        <span>{english ? 'Exercise' : 'Ejercicio'} {idx + 1} / {level.items.length}</span>
+        <span>{tr(uiLanguage, 'Exercise', 'Ejercicio', 'Exercice')} {idx + 1} / {level.items.length}</span>
         <div className="mini-progress">
           <span style={{ width: `${((idx + 1) / level.items.length) * 100}%` }} />
         </div>
       </div>
       <span className="scene-label">{item.scene}</span>
       <div className="write-card">
-        <span className="write-card__label">{english ? 'Instruction' : 'Instrucción'}</span>
+        <span className="write-card__label">{tr(uiLanguage, 'Instruction', 'Instrucción', 'Consigne')}</span>
         <p className="write-card__text">{item.prompt}</p>
       </div>
       <textarea
         className="answer-field"
         value={answers[`${idx}`] ?? ''}
         onChange={(e) => dispatch({ type: 'SET', key: `${idx}`, value: e.target.value })}
-        placeholder={english ? 'Write your answer here...' : 'Escribe tu respuesta aquí...'}
+        placeholder={tr(uiLanguage, 'Write your answer here...', 'Escribe tu respuesta aquí...', 'Écrivez votre réponse ici...')}
         rows={2}
         style={{ resize: 'vertical', marginTop: '0.75rem' }}
       />
       <div className="gram-actions">
         <button className="gram-btn accent" disabled={!canProceed} onClick={next}>
-          {isLast ? (english ? 'Submit answers →' : 'Enviar respuestas →') : (english ? 'Next →' : 'Siguiente →')}
+          {isLast ? tr(uiLanguage, 'Submit answers →', 'Enviar respuestas →', 'Envoyer les réponses →') : tr(uiLanguage, 'Next →', 'Siguiente →', 'Suivant →')}
         </button>
       </div>
     </div>
@@ -541,7 +544,7 @@ function WritePractice({
 
 // ── Deferred review (shown after completing a level) ─────────────────────────
 
-function DeferredReview({ level, answers, english }: { level: Level; answers: Record<string, string>; english: boolean }) {
+function DeferredReview({ level, answers, uiLanguage }: { level: Level; answers: Record<string, string>; uiLanguage: UiLanguage }) {
   type ReviewItem = {
     label: string
     user: string
@@ -558,7 +561,7 @@ function DeferredReview({ level, answers, english }: { level: Level; answers: Re
       const user = answers[`${i}`] ?? ''
       items.push({
         label: item.scene,
-        user: user || (english ? '(no answer)' : '(sin respuesta)'),
+        user: user || tr(uiLanguage, '(no answer)', '(sin respuesta)', '(sans réponse)'),
         correct: item.answer,
         explain: item.explain,
         isGood: user.toLowerCase() === item.answer.toLowerCase(),
@@ -572,8 +575,8 @@ function DeferredReview({ level, answers, english }: { level: Level; answers: Re
         if (!blank) return
         const user = answers[`${ii}-${bi}`] ?? ''
         items.push({
-          label: `${item.scene} — ${english ? 'gap' : 'espacio'} ${bi + 1}`,
-          user: user || (english ? '(no answer)' : '(sin respuesta)'),
+          label: `${item.scene} — ${tr(uiLanguage, 'gap', 'espacio', 'espace')} ${bi + 1}`,
+          user: user || tr(uiLanguage, '(no answer)', '(sin respuesta)', '(sans réponse)'),
           correct: blank.answer,
           explain: blank.explain,
           isGood: user.toLowerCase() === blank.answer.toLowerCase(),
@@ -587,8 +590,8 @@ function DeferredReview({ level, answers, english }: { level: Level; answers: Re
       if (!blank) return
       const user = answers[`${i}`] ?? ''
       items.push({
-        label: `${english ? 'Gap' : 'Espacio'} ${i + 1}`,
-        user: user || (english ? '(no answer)' : '(sin respuesta)'),
+        label: `${tr(uiLanguage, 'Gap', 'Espacio', 'Espace')} ${i + 1}`,
+        user: user || tr(uiLanguage, '(no answer)', '(sin respuesta)', '(sans réponse)'),
         correct: blank.answer,
         explain: blank.explain,
         isGood: matchAnswer(user, blank.answer, blank.accepted),
@@ -600,7 +603,7 @@ function DeferredReview({ level, answers, english }: { level: Level; answers: Re
       const user = answers[`${i}`] ?? ''
       items.push({
         label: item.scene,
-        user: user || (english ? '(no answer)' : '(sin respuesta)'),
+        user: user || tr(uiLanguage, '(no answer)', '(sin respuesta)', '(sans réponse)'),
         correct: item.answer,
         explain: item.explain,
         isGood: evaluateWrite(item, user),
@@ -614,26 +617,26 @@ function DeferredReview({ level, answers, english }: { level: Level; answers: Re
     <div className="review-section">
       <div className="review-heading">
         <div>
-          <h3>{english ? 'Detailed review' : 'Revisión detallada'}</h3>
-          <p>{english ? 'Review every answer with its correction and explanation.' : 'Cada respuesta con su corrección y explicación del porqué.'}</p>
+          <h3>{tr(uiLanguage, 'Detailed review', 'Revisión detallada', 'Correction détaillée')}</h3>
+          <p>{tr(uiLanguage, 'Review every answer with its correction and explanation.', 'Cada respuesta con su corrección y explicación del porqué.', 'Revoyez chaque réponse avec sa correction et son explication.')}</p>
         </div>
-        <span className="review-summary">{goodCount}/{items.length} {english ? 'correct' : 'correctas'}</span>
+        <span className="review-summary">{goodCount}/{items.length} {tr(uiLanguage, 'correct', 'correctas', 'correctes')}</span>
       </div>
       <div className="review-grid">
         {items.map((it, i) => (
           <div key={i} className={`review-card ${it.isGood ? 'good' : 'bad'}`}>
             <div className="review-card__top">
               <span className="review-index">{i + 1}</span>
-              <span className="review-status">{it.isGood ? (english ? '✓ Correct' : '✓ Correcto') : (english ? '✗ Review' : '✗ Revisar')}</span>
+              <span className="review-status">{it.isGood ? tr(uiLanguage, '✓ Correct', '✓ Correcto', '✓ Correct') : tr(uiLanguage, '✗ Review', '✗ Revisar', '✗ À revoir')}</span>
             </div>
             <p className="review-prompt">{it.label}</p>
             <div className="review-answer-grid">
               <div className="review-answer">
-                <span>{english ? 'Your answer' : 'Tu respuesta'}</span>
+                <span>{tr(uiLanguage, 'Your answer', 'Tu respuesta', 'Votre réponse')}</span>
                 <b>{it.user}</b>
               </div>
               <div className="review-answer">
-                <span>{english ? 'Correct answer' : 'Respuesta correcta'}</span>
+                <span>{tr(uiLanguage, 'Correct answer', 'Respuesta correcta', 'Réponse correcte')}</span>
                 <b>{it.correct}</b>
               </div>
             </div>
@@ -660,9 +663,8 @@ export default function GrammarTopicClient({
   nivel: string
   relatedWritingExercises?: RelatedWritingExercise[]
   mode?: 'full' | 'practiceOnly'
-  uiLanguage?: 'es' | 'en'
+  uiLanguage?: UiLanguage
 }) {
-  const english = uiLanguage === 'en'
   const { progress, mounted, recordLevel } = useGrammarProgress(idioma, nivel, topic.slug)
   const [state, dispatch] = useReducer(reducer, initialState)
 
@@ -694,13 +696,13 @@ export default function GrammarTopicClient({
         <div className="topic-download no-print">
           <PdfDownloadButton
             color={topic.color}
-            label={english ? 'Download this topic as a PDF' : 'Descargar este tema en PDF'}
+            label={tr(uiLanguage, 'Download this topic as a PDF', 'Descargar este tema en PDF', 'Télécharger ce thème en PDF')}
             generate={async () => {
               const { generateGrammarPdf } = await import('@/lib/pdf/generateGrammarPdf')
               await generateGrammarPdf(topic, idioma, nivel)
             }}
           />
-          <span>{english ? 'Explanation, reference table, exercises and answer key. Ready to print.' : 'Explicación, tabla y ejercicios con las soluciones. Para imprimir y resolver a mano.'}</span>
+          <span>{tr(uiLanguage, 'Explanation, reference table, exercises and answer key. Ready to print.', 'Explicación, tabla y ejercicios con las soluciones. Para imprimir y resolver a mano.', 'Explication, tableau de référence, exercices et corrigé. Prêt à imprimer.')}</span>
         </div>
       )}
 
@@ -708,7 +710,7 @@ export default function GrammarTopicClient({
       {mode === 'full' && <div className="visual-brief">
         <div className="visual-brief__header">
           <div>
-            <span className="section-label">— {english ? 'Visual lab' : 'Laboratorio visual'}</span>
+            <span className="section-label">— {tr(uiLanguage, 'Visual lab', 'Laboratorio visual', 'Laboratoire visuel')}</span>
             <h3 className="gram-h3">{topic.visual.graphicPrompt}</h3>
           </div>
           <p>{topic.visual.teacherLens}</p>
@@ -781,9 +783,9 @@ export default function GrammarTopicClient({
       {relatedWritingExercises.length > 0 && (
         <section className="grammar-writing-bridge" aria-labelledby="grammar-writing-bridge-title">
           <div>
-            <span className="section-label">— {english ? 'Writing transfer' : 'Transferencia a escritura'}</span>
-            <h2 id="grammar-writing-bridge-title" className="gram-h2">{english ? `Use ${topic.shortTitle} in a text` : `Usa ${topic.shortTitle} en un texto`}</h2>
-            <p>{english ? 'The guided task asks you to use this structure in a communicative situation at the same level.' : 'La práctica guiada te pide usar esta estructura para resolver una situación comunicativa del mismo nivel.'}</p>
+            <span className="section-label">— {tr(uiLanguage, 'Writing transfer', 'Transferencia a escritura', 'Transfert vers l’écriture')}</span>
+            <h2 id="grammar-writing-bridge-title" className="gram-h2">{tr(uiLanguage, `Use ${topic.shortTitle} in a text`, `Usa ${topic.shortTitle} en un texto`, `Employez ${topic.shortTitle} dans un texte`)}</h2>
+            <p>{tr(uiLanguage, 'The guided task asks you to use this structure in a communicative situation at the same level.', 'La práctica guiada te pide usar esta estructura para resolver una situación comunicativa del mismo nivel.', 'La tâche guidée vous demande d’employer cette structure dans une situation communicative du même niveau.')}</p>
           </div>
           <div className="grammar-writing-bridge__links">
             {relatedWritingExercises.map(exercise => (
@@ -801,18 +803,19 @@ export default function GrammarTopicClient({
       <div id="practica" className="practice-journey">
         <div className="practice-journey__intro">
           <div>
-            <span className="section-label">— {english ? 'Progressive practice' : 'Práctica progresiva'}</span>
-            <h2 className="gram-h2">{english ? '6 practice stages' : '6 niveles de práctica'}</h2>
+            <span className="section-label">— {tr(uiLanguage, 'Progressive practice', 'Práctica progresiva', 'Pratique progressive')}</span>
+            <h2 className="gram-h2">{tr(uiLanguage, '6 practice stages', '6 niveles de práctica', '6 étapes de pratique')}</h2>
           </div>
           <p>
-            {english
-              ? 'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.'
-              : 'Supera el 65 % en cada nivel para desbloquear el siguiente. Las correcciones aparecen al terminar el nivel completo, no pregunta por pregunta.'}
+            {tr(uiLanguage,
+              'Score at least 65% in each stage to unlock the next one. Corrections appear after you complete the whole stage, not after each question.',
+              'Supera el 65 % en cada nivel para desbloquear el siguiente. Las correcciones aparecen al terminar el nivel completo, no pregunta por pregunta.',
+              'Obtenez au moins 65 % à chaque étape pour débloquer la suivante. Les corrections apparaissent après toute l’étape, et non après chaque question.')}
           </p>
         </div>
         <div className="journey-grid">
           {topic.practice.levels.map((level, i) => {
-            const verb = topic.visual.practiceVerbs?.[i] ?? `${english ? 'Stage' : 'Nivel'} ${i + 1}`
+            const verb = topic.visual.practiceVerbs?.[i] ?? `${tr(uiLanguage, 'Stage', 'Nivel', 'Étape')} ${i + 1}`
             return (
               <div
                 key={level.id}
@@ -845,7 +848,7 @@ export default function GrammarTopicClient({
                   className={`level-card${isActive ? ' is-active' : ''}${!unlocked ? ' is-locked' : ''}`}
                   disabled={!unlocked}
                   onClick={() => dispatch({ type: 'START', levelIdx: i })}
-                  title={!unlocked ? (english ? 'Score at least 65% in the previous stage to unlock' : 'Supera el nivel anterior con ≥65% para desbloquear') : level.title}
+                  title={!unlocked ? tr(uiLanguage, 'Score at least 65% in the previous stage to unlock', 'Supera el nivel anterior con ≥65% para desbloquear', 'Obtenez au moins 65 % à l’étape précédente pour débloquer') : level.title}
                 >
                   <span>{unlocked ? (i + 1) : '🔒'}</span>
                   <strong>{level.title}</strong>
@@ -863,11 +866,11 @@ export default function GrammarTopicClient({
           {/* Idle: show teacher note */}
           {state.phase === 'idle' && (
             <div className="teacher-note">
-              <span className="section-label">— {english ? 'Teacher note' : 'Nota del especialista'}</span>
+              <span className="section-label">— {tr(uiLanguage, 'Teacher note', 'Nota del especialista', 'Note pédagogique')}</span>
               <h2 className="gram-h2">{topic.guide.goal}</h2>
               <p>{topic.guide.model}</p>
               <p style={{ marginTop: '0.65rem', color: 'var(--muted)', fontSize: '0.9rem' }}>
-                {english ? 'Select a stage above to begin the practice.' : 'Selecciona un nivel arriba para comenzar la práctica.'}
+                {tr(uiLanguage, 'Select a stage above to begin the practice.', 'Selecciona un nivel arriba para comenzar la práctica.', 'Sélectionnez une étape ci-dessus pour commencer la pratique.')}
               </p>
             </div>
           )}
@@ -878,14 +881,14 @@ export default function GrammarTopicClient({
               <div className="lesson-panel__bar" />
               <div className="lesson-panel__inner">
                 <div className="level-kicker">
-                  <span className="pill active">{english ? 'Stage' : 'Nivel'} {state.activeLevelIdx + 1}</span>
+                  <span className="pill active">{tr(uiLanguage, 'Stage', 'Nivel', 'Étape')} {state.activeLevelIdx + 1}</span>
                   <span className="pill">{activeLevel.tag}</span>
                   <button
                     className="gram-btn secondary"
                     onClick={() => dispatch({ type: 'BACK' })}
                     style={{ padding: '0.28rem 0.65rem', minHeight: 28, fontSize: '0.78rem' }}
                   >
-                    ← {english ? 'Exit' : 'Salir'}
+                    ← {tr(uiLanguage, 'Exit', 'Salir', 'Quitter')}
                   </button>
                 </div>
                 <h2 className="lesson-title">{activeLevel.title}</h2>
@@ -898,7 +901,7 @@ export default function GrammarTopicClient({
                     answers={state.answers}
                     dispatch={dispatch}
                     onSubmit={handleSubmit}
-                    english={english}
+                    uiLanguage={uiLanguage}
                   />
                 )}
                 {activeLevel.type === 'dual' && (
@@ -908,7 +911,7 @@ export default function GrammarTopicClient({
                     answers={state.answers}
                     dispatch={dispatch}
                     onSubmit={handleSubmit}
-                    english={english}
+                    uiLanguage={uiLanguage}
                   />
                 )}
                 {(activeLevel.type === 'guidedText' || activeLevel.type === 'freeText') && (
@@ -917,7 +920,7 @@ export default function GrammarTopicClient({
                     answers={state.answers}
                     dispatch={dispatch}
                     onSubmit={handleSubmit}
-                    english={english}
+                    uiLanguage={uiLanguage}
                   />
                 )}
                 {activeLevel.type === 'write' && (
@@ -927,7 +930,7 @@ export default function GrammarTopicClient({
                     answers={state.answers}
                     dispatch={dispatch}
                     onSubmit={handleSubmit}
-                    english={english}
+                    uiLanguage={uiLanguage}
                   />
                 )}
               </div>
@@ -955,21 +958,21 @@ export default function GrammarTopicClient({
                         className="gram-h2"
                         style={{ fontSize: 'clamp(1.3rem, 3vw, 1.9rem)', color: passed ? 'var(--good)' : 'var(--ink)' }}
                       >
-                        {passed ? (english ? 'Stage passed!' : '¡Nivel superado!') : (english ? 'Keep improving' : 'Puedes mejorar')}
+                        {passed ? tr(uiLanguage, 'Stage passed!', '¡Nivel superado!', 'Étape réussie !') : tr(uiLanguage, 'Keep improving', 'Puedes mejorar', 'Continuez à progresser')}
                       </h2>
                       <p style={{ color: 'var(--muted)', margin: '0.4rem 0 0.9rem', fontSize: '0.94rem' }}>
-                        {state.score} {english ? 'of' : 'de'} {state.total} {english ? 'correct' : 'correctas'} · {pct}%
+                        {state.score} {tr(uiLanguage, 'of', 'de', 'sur')} {state.total} {tr(uiLanguage, 'correct', 'correctas', 'correctes')} · {pct}%
                         {passed && state.activeLevelIdx + 1 < topic.practice.levels.length
-                          ? (english ? ' · Next stage unlocked' : ' · Siguiente nivel desbloqueado')
+                          ? tr(uiLanguage, ' · Next stage unlocked', ' · Siguiente nivel desbloqueado', ' · Étape suivante débloquée')
                           : ''}
-                        {!passed ? (english ? ' · You need 65% to continue' : ' · Necesitas 65% para avanzar') : ''}
+                        {!passed ? tr(uiLanguage, ' · You need 65% to continue', ' · Necesitas 65% para avanzar', ' · Il faut 65 % pour continuer') : ''}
                       </p>
                       <div className="gram-actions">
                         <button
                           className="gram-btn secondary"
                           onClick={() => dispatch({ type: 'RETRY' })}
                         >
-                          {english ? 'Try again' : 'Reintentar'}
+                          {tr(uiLanguage, 'Try again', 'Reintentar', 'Réessayer')}
                         </button>
                         {state.activeLevelIdx + 1 < topic.practice.levels.length && (
                           <button
@@ -977,7 +980,7 @@ export default function GrammarTopicClient({
                             disabled={!isUnlocked(state.activeLevelIdx + 1)}
                             onClick={() => dispatch({ type: 'START', levelIdx: state.activeLevelIdx + 1 })}
                           >
-                            {english ? 'Stage' : 'Nivel'} {state.activeLevelIdx + 2} →
+                            {tr(uiLanguage, 'Stage', 'Nivel', 'Étape')} {state.activeLevelIdx + 2} →
                           </button>
                         )}
                         {state.activeLevelIdx === topic.practice.levels.length - 1 && passed && (
@@ -985,7 +988,7 @@ export default function GrammarTopicClient({
                             className="gram-btn accent"
                             onClick={() => dispatch({ type: 'BACK' })}
                           >
-                            {english ? 'Topic completed! →' : '¡Tema completado! →'}
+                            {tr(uiLanguage, 'Topic completed! →', '¡Tema completado! →', 'Thème terminé ! →')}
                           </button>
                         )}
                       </div>
@@ -994,7 +997,7 @@ export default function GrammarTopicClient({
                 </div>
               </div>
 
-              <DeferredReview level={activeLevel} answers={state.answers} english={english} />
+              <DeferredReview level={activeLevel} answers={state.answers} uiLanguage={uiLanguage} />
             </>
           )}
         </div>
@@ -1003,7 +1006,7 @@ export default function GrammarTopicClient({
         <aside className="study-rail">
           {/* Progress */}
           <div className="rail-card progress-card">
-            <span className="rail-kicker">{english ? 'Your progress' : 'Tu progreso'}</span>
+            <span className="rail-kicker">{tr(uiLanguage, 'Your progress', 'Tu progreso', 'Votre progression')}</span>
             <strong>{topic.shortTitle}</strong>
             <div className="rail-meter">
               <span
@@ -1016,21 +1019,21 @@ export default function GrammarTopicClient({
             </div>
             <p style={{ marginTop: '0.4rem', fontSize: '0.78rem' }}>
               {mounted
-                ? `${Math.min(progress.unlocked, topic.practice.levels.length)} / ${topic.practice.levels.length} ${english ? 'stages unlocked' : 'niveles desbloqueados'}`
-                : `0 / ${topic.practice.levels.length} ${english ? 'stages' : 'niveles'}`}
+                ? `${Math.min(progress.unlocked, topic.practice.levels.length)} / ${topic.practice.levels.length} ${tr(uiLanguage, 'stages unlocked', 'niveles desbloqueados', 'étapes débloquées')}`
+                : `0 / ${topic.practice.levels.length} ${tr(uiLanguage, 'stages', 'niveles', 'étapes')}`}
             </p>
           </div>
 
           {/* Objective */}
           <div className="rail-card">
-            <span className="rail-kicker">{english ? 'Objective' : 'Objetivo'}</span>
+            <span className="rail-kicker">{tr(uiLanguage, 'Objective', 'Objetivo', 'Objectif')}</span>
             <strong>{topic.guide.goal}</strong>
             <p style={{ marginTop: '0.35rem' }}>{topic.guide.formula}</p>
           </div>
 
           {/* Decisions */}
           <div className="rail-card">
-            <span className="rail-kicker">{english ? 'Key decisions' : 'Decisiones clave'}</span>
+            <span className="rail-kicker">{tr(uiLanguage, 'Key decisions', 'Decisiones clave', 'Décisions clés')}</span>
             <ul>
               {topic.guide.decisions.map((d, i) => <li key={i}>{d}</li>)}
             </ul>
@@ -1038,7 +1041,7 @@ export default function GrammarTopicClient({
 
           {/* Reference table */}
           <div className="rail-card">
-            <span className="rail-kicker">{english ? 'Quick reference' : 'Referencia rápida'}</span>
+            <span className="rail-kicker">{tr(uiLanguage, 'Quick reference', 'Referencia rápida', 'Référence rapide')}</span>
             <div className="grammar-table" style={{ marginTop: '0.5rem' }}>
               {topic.guide.table.map(([col1, col2, col3], i) => (
                 <div key={i} className="grammar-table__row">
@@ -1058,7 +1061,7 @@ export default function GrammarTopicClient({
 
           {/* Common mistakes */}
           <div className="rail-card">
-            <span className="rail-kicker">{english ? 'Common errors' : 'Errores frecuentes'}</span>
+            <span className="rail-kicker">{tr(uiLanguage, 'Common errors', 'Errores frecuentes', 'Erreurs fréquentes')}</span>
             <ul>
               {topic.guide.mistakes.map((m, i) => <li key={i}>{m}</li>)}
             </ul>

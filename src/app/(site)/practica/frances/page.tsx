@@ -18,8 +18,9 @@ const NIVELES = [
   },
   { nivel: 'A2', name: 'Élémentaire', desc: 'Passé composé, imparfait, pronoms COD/COI, comparatif/superlatif et futur.', href: '/practica/frances/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
   { nivel: 'B1', name: 'Intermédiaire', desc: 'Subjonctif, futur simple, production écrite, compréhension orale.', href: '/practica/frances/b1', available: true, count: '20 temas de gramática' },
-  { nivel: 'B2', name: 'Intermédiaire avancé', desc: 'Conditionnel, préparation DELF B2, vocabulaire soutenu.', available: false },
-  { nivel: 'C1', name: 'Avancé', desc: 'Style formel, préparation DALF C1, nuances grammaticales.', available: false },
+  { nivel: 'B2', name: 'Intermédiaire avancé', desc: '30 thèmes de grammaire, cartes visuelles, pratique approfondie et trois PDF par leçon.', href: '/practica/frances/b2', available: true, count: '30 thèmes · 90 PDF' },
+  { nivel: 'C1', name: 'Avancé', desc: 'Syntaxe, cohésion, modalisation et registre dans 30 leçons complètes.', href: '/practica/frances/c1', available: true, count: '30 thèmes · 90 PDF' },
+  { nivel: 'C2', name: 'Maîtrise', desc: 'Point de vue, portée, référence et reformulation dans 30 leçons expertes.', href: '/practica/frances/c2', available: true, count: '30 thèmes · 90 PDF' },
 ];
 
 export default function FrancesPage() {
@@ -27,9 +28,9 @@ export default function FrancesPage() {
     <>
       <CourseSchema
         name="Práctica de Francés — Ejercicios interactivos MCER"
-        description="Ejercicios de francés por nivel MCER: A1 y A2 disponibles. Vocabulario, gramática, escritura, habla y escucha."
+        description="Exercices de français du niveau A1 au C2, avec un parcours complet de grammaire avancée B2, C1 et C2."
         url="https://www.idiomaswl.com/practica/frances"
-        educationalLevel="A1,A2"
+        educationalLevel="A1,A2,B1,B2,C1,C2"
         teaches="Francés, DELF, DALF"
         inLanguage="fr"
       />

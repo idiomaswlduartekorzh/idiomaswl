@@ -31,9 +31,10 @@ export default function GrammarTopicVisual({
   idioma: GrammarVisualLanguage
   nivel: GrammarVisualLevel
   priority?: boolean
-  uiLanguage?: 'es' | 'en'
+  uiLanguage?: 'es' | 'en' | 'fr'
 }) {
   const english = uiLanguage === 'en'
+  const french = uiLanguage === 'fr'
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const imagePath = grammarVisualPath(idioma, nivel, topic.slug)
   const visualLabel = VISUAL_LABELS[getGrammarVisualKind(topic)]
@@ -42,15 +43,15 @@ export default function GrammarTopicVisual({
     <figure className={styles.figure} aria-labelledby={`visual-caption-${topic.slug}`}>
       <div className={styles.heading}>
         <div>
-          <span>{english ? 'Visual guide to save and share' : 'Guía visual para guardar y compartir'}</span>
-          <h2>{english ? `Visual guide: ${topic.shortTitle}` : `${visualLabel} de ${topic.shortTitle}`}</h2>
+          <span>{english ? 'Visual guide to save and share' : french ? 'Guide visuel à enregistrer et partager' : 'Guía visual para guardar y compartir'}</span>
+          <h2>{english ? `Visual guide: ${topic.shortTitle}` : french ? `Guide visuel : ${topic.shortTitle}` : `${visualLabel} de ${topic.shortTitle}`}</h2>
         </div>
         <p>{language.native} · {nivel.toUpperCase()}</p>
       </div>
-      <a href={imagePath} className={styles.imageLink} aria-label={english ? `Open the full-size ${topic.shortTitle} infographic` : `Abrir la infografía de ${topic.shortTitle} en tamaño completo`}>
+      <a href={imagePath} className={styles.imageLink} aria-label={english ? `Open the full-size ${topic.shortTitle} infographic` : french ? `Ouvrir l’infographie ${topic.shortTitle} en grand format` : `Abrir la infografía de ${topic.shortTitle} en tamaño completo`}>
         <Image
           src={imagePath}
-          alt={english ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}` : grammarVisualAlt(topic, idioma, nivel)}
+          alt={english ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}` : french ? `Guide visuel de ${topic.shortTitle} en français ${nivel.toUpperCase()} : ${topic.guide.formula}` : grammarVisualAlt(topic, idioma, nivel)}
           width={1200}
           height={630}
           sizes="(max-width: 820px) 100vw, 1120px"
@@ -59,9 +60,9 @@ export default function GrammarTopicVisual({
         />
       </a>
       <figcaption id={`visual-caption-${topic.slug}`}>
-        <span>{english ? 'Key rule' : 'Regla clave'}</span>
+        <span>{english ? 'Key rule' : french ? 'Règle clé' : 'Regla clave'}</span>
         <strong>{topic.guide.formula}</strong>
-        <p>{english ? 'Original learning resource built from this lesson’s specific rule, table and examples. Open it at full size.' : 'Recurso educativo original construido con la tabla, la regla o el mapa específico de esta lección. Ábrelo en tamaño completo.'}</p>
+        <p>{english ? 'Original learning resource built from this lesson’s specific rule, table and examples. Open it at full size.' : french ? 'Ressource pédagogique originale construite à partir de la règle, du tableau et des exemples propres à cette leçon. Ouvrez-la en grand format.' : 'Recurso educativo original construido con la tabla, la regla o el mapa específico de esta lección. Ábrelo en tamaño completo.'}</p>
       </figcaption>
     </figure>
   )
