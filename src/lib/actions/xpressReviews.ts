@@ -5,6 +5,7 @@ import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import { getWompiServerConfig } from '@/lib/wompi/server';
+import { notifyExamReview } from '@/lib/student-notifications.server';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
@@ -54,6 +55,7 @@ export async function completeXpressReview(form: FormData): Promise<void> {
     .eq('id', reviewId).in('status', ['pending', 'processing', 'failed'])
     .select('submission_id').maybeSingle();
   if (error || !data) throw new Error('La revisión ya se cerró o no pudo guardarse.');
+  try { await notifyExamReview(data.submission_id, 'Xpress', 'personalized') } catch (notificationError) { console.error('[student-notification:xpress]', notificationError) }
   revalidatePath('/dashboard/admin/revisiones-xpress');
   revalidatePath(`/dashboard/student/resultados/${data.submission_id}`);
   revalidatePath('/dashboard/student');
@@ -89,6 +91,7 @@ export async function completeHumanXpressReview(form: FormData): Promise<void> {
     .eq('id', reviewId).in('status', ['pending', 'assigned'])
     .select('submission_id').maybeSingle();
   if (error || !data) throw new Error('La revisión ya se cerró o no pudo guardarse.');
+  try { await notifyExamReview(data.submission_id, 'Xpress', `human-${reviewId}`) } catch (notificationError) { console.error('[student-notification:xpress-human]', notificationError) }
   revalidatePath('/dashboard/admin/revisiones-xpress');
   revalidatePath(`/dashboard/student/resultados/${data.submission_id}`);
   revalidatePath('/dashboard/student');

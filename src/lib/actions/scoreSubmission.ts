@@ -3,6 +3,7 @@
 import { createAdminClient } from '@/lib/supabase/admin'
 import { requireAdmin } from '@/lib/auth/require-admin.server'
 import { buildIeltsScoreSummary, normalizeIeltsBand } from '@/lib/ielts/scoring'
+import { notifyExamReview } from '@/lib/student-notifications.server'
 
 export async function scoreSubmission(
   submissionId: string,
@@ -55,5 +56,6 @@ export async function scoreSubmission(
 
   if (error) throw error
   if (!updated) throw new Error('La entrega fue evaluada por otra persona. Actualiza el panel para ver el resultado final.')
+  try { await notifyExamReview(submissionId, 'IELTS') } catch (notificationError) { console.error('[student-notification:ielts]', notificationError) }
   return { ok: true, overall: summary.totalScore }
 }

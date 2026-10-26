@@ -13,7 +13,7 @@ export default async function StudentDashboardPage() {
   const activityPromise = trackDailyActivity();
 
   const { data: profile } = await supabase.from('profiles')
-    .select('full_name,target_exam')
+    .select('full_name,target_exam,avatar_url')
     .eq('id', user.id)
     .maybeSingle();
   await activityPromise;

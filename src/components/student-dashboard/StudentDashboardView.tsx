@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { signOut } from '@/lib/actions/signOut';
 import { setStudentAssignmentCompleted, submitStudentAssignment } from '@/lib/actions/studentAssignments';
 import { STUDENT_PRODUCT_COPY } from '@/lib/student-dashboard/catalog';
@@ -216,7 +217,7 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
         <a href="#clases"><span>◉</span>Mis clases</a>
         <Link href="/dashboard/student/perfil"><span>♙</span>Mi perfil</Link>
       </nav>
-      <div className={styles.sidebarBottom}><div className={styles.person}><b>{initial}</b><div><strong>{data.name}</strong><span>{data.email}</span></div></div>{preview ? <span className={styles.previewTag}>Vista de revisión</span> : <form action={signOut}><button type="submit">Cerrar sesión</button></form>}</div>
+      <div className={styles.sidebarBottom}><div className={styles.person}><b>{data.avatarUrl ? <Image src={data.avatarUrl} alt="" width={35} height={35} style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} /> : initial}</b><div><strong>{data.name}</strong><span>{data.email}</span></div></div>{preview ? <span className={styles.previewTag}>Vista de revisión</span> : <form action={signOut}><button type="submit">Cerrar sesión</button></form>}</div>
     </aside>
     <main className={styles.main}>
       <details className={styles.mobileMenu}><summary><span className={styles.mobileBrand}><b>We</b>Learn</span><span>Menú</span></summary><nav><Link href="/dashboard/student">Inicio</Link><a href="#progreso">Mi progreso</a>{!guidedOnly ? <a href="#simulacros">Simulacros</a> : null}{!guidedOnly || data.attempts.length ? <a href="#resultados">Resultados</a> : null}{data.courses.length || data.assignments.length ? <a href="#asignaciones">Asignaciones</a> : null}<a href="#clases">Mis clases</a></nav></details>

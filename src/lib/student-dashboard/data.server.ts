@@ -16,7 +16,7 @@ type AuthUser = Readonly<{
   user_metadata?: Record<string, unknown>;
 }>;
 
-type Profile = { full_name?: string | null; target_exam?: string | null } | null;
+type Profile = { full_name?: string | null; target_exam?: string | null; avatar_url?: string | null } | null;
 type MembershipRow = { offer_id: string; exam_slug: string; status: string; starts_at: string; ends_at: string; created_at: string };
 type CreditRow = { offer_id?: string; exam_slug: string; status: string; granted_at: string; consumed_at: string | null; consumed_submission_id: string | null };
 type GrantRow = { exam_slug: string; source: 'autodidacta-free' | 'welearn'; plan_id: 'exam-free' | 'welearn-full'; status: string; starts_at: string; ends_at: string | null };
@@ -175,7 +175,7 @@ function courseFromOrder(order: CourseOrderRow): StudentCourse {
 
 export async function loadStudentDashboard(user: AuthUser, profile: Profile): Promise<StudentDashboardData> {
   const fallback: StudentDashboardData = {
-    name: displayName(user, profile), email: user.email ?? '', dataAvailable: false,
+    name: displayName(user, profile), email: user.email ?? '', avatarUrl: profile?.avatar_url ?? null, dataAvailable: false,
     access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, source: 'none' },
     accesses: [], subscription: null, subscriptions: [], attempts: [], courses: [], courseProgress: { completedActivities: 0, lastCompletedAt: null }, assignments: [],
     progress: buildStudentProgress([], profile?.target_exam),
@@ -311,7 +311,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       .filter((row) => selectedCourseSlugs.has(row.course_slug));
 
     return {
-      name: displayName(user, profile), email, dataAvailable: true,
+      name: displayName(user, profile), email, avatarUrl: profile?.avatar_url ?? null, dataAvailable: true,
       access: selectedAccess ?? fallbackAccess,
       accesses,
       subscription,

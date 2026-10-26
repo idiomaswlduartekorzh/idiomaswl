@@ -7,6 +7,21 @@ Fecha de corte: 25 de agosto de 2026.
 
 Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dded815e0e6b`.
 
+## Perfil y notificaciones del estudiante — 25 de octubre de 2026
+
+`codex/student-profile-settings-20261025` partió de `origin/main` en `f5d514db`.
+El estudiante puede editar nombre, teléfono, ciudad, foto, correo de acceso sujeto a
+confirmación, contraseña y preferencias de correo desde `/dashboard/student/perfil`.
+Los recordatorios son optativos (diarios o semanales, alrededor de las 8:00 a. m. de
+Colombia); las correcciones de tareas y revisiones IELTS, TOEFL, Goethe y Xpress
+respetan la preferencia correspondiente. La foto aparece también en el panel.
+
+Las migraciones `20261026005430`, `20261026005856` y `20261026010235` se aplicaron
+al proyecto Supabase productivo. Se verificaron RLS, permisos de columnas,
+políticas de Storage, bucket y el trigger que sincroniza el correo confirmado.
+Catálogo protegido, TypeScript, ESLint, pruebas existentes del panel y build Webpack
+pasaron. Integración y smoke de producción: pendientes.
+
 ## Recuperación de contraseña — 25 de octubre de 2026
 
 `codex/password-recovery-20261025` partió de `origin/main` en `a7d96133` y se integró

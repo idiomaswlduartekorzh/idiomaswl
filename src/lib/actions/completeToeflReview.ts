@@ -3,6 +3,7 @@
 import { requireAdmin } from '@/lib/auth/require-admin.server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { TOEFL_SUBMISSION_ID_PATTERN } from '@/lib/toefl/submission-token.server'
+import { notifyExamReview } from '@/lib/student-notifications.server'
 
 function taskScore(value: number): number | null {
   return Number.isInteger(value) && value >= 0 && value <= 5 ? value : null
@@ -73,5 +74,6 @@ export async function completeToeflReview(input: {
     .maybeSingle()
   if (error) throw error
   if (!updated) throw new Error('Otra persona cerró esta entrega. Actualiza el panel.')
+  try { await notifyExamReview(input.submissionId, 'TOEFL') } catch (notificationError) { console.error('[student-notification:toefl]', notificationError) }
   return { ok: true }
 }

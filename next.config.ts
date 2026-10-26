@@ -93,6 +93,7 @@ const nextConfig: NextConfig = {
   // Tree-shaking de barrels: importa solo lo usado de estas librerías pesadas
   // en lugar del paquete completo. Reduce el JS sin usar en el bundle inicial.
   experimental: {
+    serverActions: { bodySizeLimit: '3mb' },
     // The local release verifier runs after the complete diagnostic suite and
     // TypeScript. Bound its build concurrency so a transient worker allocation
     // cannot turn an otherwise reproducible release check into a SIGABRT on a

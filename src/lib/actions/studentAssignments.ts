@@ -6,6 +6,7 @@ import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import { sendTrackedStudentEmail, studentEmailShell } from '@/lib/student-operations/email.server';
+import { correctionEmailEnabled } from '@/lib/student-notifications.server';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
@@ -128,6 +129,7 @@ export async function giveStudentAssignmentFeedback(form: FormData): Promise<voi
   }).eq('id', assignmentId).eq('student_id', studentId).select('id,title').maybeSingle();
   if (error || !assignment) throw new Error('No pudimos guardar la retroalimentación.');
   try {
+    if (await correctionEmailEnabled(studentId)) {
     await sendTrackedStudentEmail({
       studentId,
       createdBy: admin.id,
@@ -143,6 +145,7 @@ export async function giveStudentAssignmentFeedback(form: FormData): Promise<voi
       }),
       idempotencyKey: `student-assignment-feedback/${assignment.id}/${Date.now()}`,
     });
+    }
   } catch {
     // Feedback is still visible in the dashboard and the failed email is logged.
   }

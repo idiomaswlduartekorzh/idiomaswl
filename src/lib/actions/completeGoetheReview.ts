@@ -16,6 +16,7 @@ import type { MockExam } from '@/data/mocks/types'
 import { completeGoetheScore, scoreGoetheAutomatic } from '@/lib/goethe/scoring'
 import { GOETHE_SUBMISSION_ID_PATTERN } from '@/lib/goethe/submission-token.server'
 import type { GoetheReviewPayload } from '@/lib/goethe/submission'
+import { notifyExamReview } from '@/lib/student-notifications.server'
 
 const WRITING_CONTENT = new Set([0, 1.5, 3])
 const WRITING_CONVENTIONS = new Set([0, 0.5, 1])
@@ -88,5 +89,6 @@ export async function completeGoetheReview(input: {
   }).eq('id', input.submissionId).eq('exam_slug', 'goethe').is('reviewed_at', null).select('id').maybeSingle()
   if (error) throw error
   if (!updated) throw new Error('Otra persona cerró esta revisión. Actualiza el panel.')
+  try { await notifyExamReview(input.submissionId, 'Goethe A1') } catch (notificationError) { console.error('[student-notification:goethe]', notificationError) }
   return { ok: true, result, review }
 }

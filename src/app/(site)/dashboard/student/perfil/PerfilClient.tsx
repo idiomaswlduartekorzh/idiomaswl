@@ -1,351 +1,149 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
-import { useState, useRef } from 'react'
-import type { FormEvent } from 'react'
-import { updateProfile } from '@/lib/actions/updateProfile'
-import { updatePassword } from '@/lib/actions/updatePassword'
-import type { StudentPlan } from '@/lib/actions/assignPlan'
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState, type FormEvent } from 'react';
+import { updatePassword } from '@/lib/actions/updatePassword';
+import { removeStudentAvatar, requestStudentEmailChange, updateStudentAvatar, updateStudentDetails, updateStudentNotifications } from '@/lib/actions/studentSettings';
+import type { StudentPlan } from '@/lib/actions/assignPlan';
+import styles from './perfil.module.css';
 
-const PLAN_LABELS: Record<StudentPlan, string> = {
-  autodidacta: 'Autodidacta',
-  preparacion: 'Preparación',
-  intensivo:   'Intensivo',
-}
-const PLAN_COLORS: Record<StudentPlan, string> = {
-  autodidacta: '#6b7280',
-  preparacion: '#1a2ecc',
-  intensivo:   '#c8202e',
-}
+type Preferences = { reminders: boolean; frequency: 'daily' | 'weekly'; weekday: number; corrections: boolean };
+type Props = { name: string; email: string; phone: string; city: string; avatarUrl: string | null; preferences: Preferences; plan: StudentPlan; joinedAt: string };
+type Message = { ok: boolean; text: string };
+const PLAN_LABELS: Record<StudentPlan, string> = { autodidacta: 'Autodidacta', preparacion: 'Preparación', intensivo: 'Intensivo' };
+const DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
-interface Props {
-  name: string
-  email: string
-  plan: StudentPlan
-  joinedAt: string
-}
+export default function PerfilClient({ name, email, phone, city, avatarUrl, preferences, plan, joinedAt }: Props) {
+  const [savedName, setSavedName] = useState(name);
+  const [avatar, setAvatar] = useState(avatarUrl);
+  const [busy, setBusy] = useState<string | null>(null);
+  const [message, setMessage] = useState<Message | null>(null);
+  const [password, setPassword] = useState('');
+  const [confirmation, setConfirmation] = useState('');
+  const [reminders, setReminders] = useState(preferences.reminders);
+  const [frequency, setFrequency] = useState(preferences.frequency);
+  const [weekday, setWeekday] = useState(preferences.weekday);
 
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('es-CO', {
-    day: '2-digit', month: 'long', year: 'numeric',
-  })
-}
-
-export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
-  const [editing, setEditing]   = useState(false)
-  const [value, setValue]       = useState(name)
-  const [savedName, setSavedName] = useState(name)
-  const [saving, setSaving]     = useState(false)
-  const [msg, setMsg]           = useState<{ ok: boolean; text: string } | null>(null)
-  const [password, setPassword] = useState('')
-  const [confirmation, setConfirmation] = useState('')
-  const [passwordSaving, setPasswordSaving] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
-
-  async function handleSave() {
-    if (!value.trim() || value.trim() === savedName) { setEditing(false); return }
-    setSaving(true)
-    setMsg(null)
-    const fd = new FormData()
-    fd.set('full_name', value.trim())
-    const res = await updateProfile(fd)
-    setSaving(false)
-    if (res.ok) {
-      setSavedName(value.trim())
-      setMsg({ ok: true, text: '¡Nombre actualizado correctamente!' })
-      setEditing(false)
-    } else {
-      setMsg({ ok: false, text: res.error ?? 'Error al guardar.' })
-    }
-    setTimeout(() => setMsg(null), 4000)
+  function report(result: { ok: boolean; error?: string }, success: string) {
+    setMessage({ ok: result.ok, text: result.ok ? success : result.error ?? 'No pudimos guardar los cambios.' });
+  }
+  async function saveDetails(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    setBusy('details');
+    const result = await updateStudentDetails(form);
+    setBusy(null);
+    report(result, 'Datos personales actualizados.');
+    if (result.ok) setSavedName(String(form.get('full_name') ?? '').trim());
+  }
+  async function saveAvatar(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setBusy('avatar');
+    const result = await updateStudentAvatar(new FormData(event.currentTarget));
+    setBusy(null);
+    report(result, 'Foto de perfil actualizada.');
+    if (result.ok) setAvatar(result.avatarUrl ?? null);
+  }
+  async function removeAvatar() {
+    setBusy('avatar');
+    const result = await removeStudentAvatar();
+    setBusy(null);
+    report(result, 'Foto de perfil eliminada.');
+    if (result.ok) setAvatar(null);
+  }
+  async function saveNotifications(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setBusy('notifications');
+    const result = await updateStudentNotifications(new FormData(event.currentTarget));
+    setBusy(null);
+    report(result, 'Preferencias de notificaciones guardadas.');
+  }
+  async function savePassword(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setBusy('password');
+    const result = await updatePassword(new FormData(event.currentTarget));
+    setBusy(null);
+    report(result, 'Contraseña actualizada.');
+    if (result.ok) { setPassword(''); setConfirmation(''); }
+  }
+  async function changeEmail(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setBusy('email');
+    const result = await requestStudentEmailChange(new FormData(form));
+    setBusy(null);
+    report(result, 'Revisa los mensajes de confirmación para completar el cambio de correo.');
+    if (result.ok) form.reset();
   }
 
-  function startEdit() {
-    setEditing(true)
-    setTimeout(() => inputRef.current?.focus(), 60)
-  }
-
-  async function handlePasswordChange(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setPasswordSaving(true)
-    setMsg(null)
-    const form = new FormData(event.currentTarget)
-    const result = await updatePassword(form)
-    setPasswordSaving(false)
-    if (result.ok) {
-      setPassword('')
-      setConfirmation('')
-      setMsg({ ok: true, text: 'Contraseña actualizada correctamente.' })
-    } else {
-      setMsg({ ok: false, text: result.error })
-    }
-    setTimeout(() => setMsg(null), 5000)
-  }
-
-  const initial = (savedName[0] ?? 'E').toUpperCase()
-
-  return (
-    <div style={{
-      minHeight: '100vh',
-      background: 'var(--bg-2)',
-      fontFamily: 'system-ui, sans-serif',
-      color: 'var(--ink)',
-    }}>
-      {/* Toast */}
-      {msg && (
-        <div style={{
-          position: 'fixed', top: 16, right: 16, zIndex: 9999,
-          background: msg.ok ? '#15803d' : '#dc2626',
-          color: '#fff', padding: '10px 18px', borderRadius: 10,
-          fontSize: 13, fontWeight: 600,
-          boxShadow: '0 4px 20px rgba(0,0,0,0.18)',
-          transition: 'opacity 0.2s',
-        }}>
-          {msg.text}
-        </div>
-      )}
-
-      <div className="wrap" style={{ paddingTop: 40, paddingBottom: 64, maxWidth: 680 }}>
-
-        {/* ── Back link ── */}
-        <Link
-          href="/dashboard/student"
-          style={{ fontSize: 12, color: 'var(--muted)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 5, marginBottom: 24 }}
-        >
-          ← Volver al inicio
-        </Link>
-
-        {/* ── Header card ── */}
-        <div style={{
-          background: 'var(--bg)',
-          border: '1px solid var(--line-soft)',
-          borderRadius: 20,
-          padding: '28px 28px 24px',
-          marginBottom: 20,
-          boxShadow: '0 4px 20px rgba(20,33,92,0.06)',
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginBottom: 20 }}>
-            <div style={{
-              width: 56, height: 56, borderRadius: '50%',
-              background: PLAN_COLORS[plan],
-              color: '#fff',
-              fontWeight: 800, fontSize: 22,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              flexShrink: 0,
-            }}>
-              {initial}
+  return <main className={styles.page}>
+    <div className={styles.wrap}>
+      <Link className={styles.back} href="/dashboard/student">← Volver a mi panel</Link>
+      <header className={styles.heading}>
+        <div className={styles.avatar}>{avatar ? <Image src={avatar} alt={`Foto de ${savedName}`} width={82} height={82} /> : <span>{savedName[0]?.toUpperCase() ?? 'E'}</span>}</div>
+        <div><p className={styles.eyebrow}>Mi cuenta</p><h1>Perfil y preferencias</h1><p>{savedName} · Plan {PLAN_LABELS[plan]}</p></div>
+      </header>
+      {message && <div className={message.ok ? styles.success : styles.error} role="status">{message.text}</div>}
+      <div className={styles.grid}>
+        <section className={styles.card} aria-labelledby="avatar-title">
+          <h2 id="avatar-title">Foto de perfil</h2>
+          <p>Usa una imagen JPG, PNG o WebP de hasta 2 MB. Tu foto será visible en tu perfil.</p>
+          <form onSubmit={saveAvatar} className={styles.form}>
+            <label htmlFor="avatar-upload">Seleccionar imagen</label>
+            <input id="avatar-upload" name="avatar" type="file" accept="image/jpeg,image/png,image/webp" required />
+            <div className={styles.actions}><button disabled={busy === 'avatar'} type="submit">{busy === 'avatar' ? 'Subiendo…' : 'Guardar foto'}</button>
+              {avatar && <button className={styles.secondary} disabled={busy === 'avatar'} onClick={removeAvatar} type="button">Quitar foto</button>}
             </div>
-            <div>
-              <h1 style={{ margin: 0, fontSize: 20, fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)' }}>
-                {savedName}
-              </h1>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 6 }}>
-                <span style={{
-                  fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em',
-                  padding: '3px 9px', borderRadius: 100,
-                  background: PLAN_COLORS[plan] + '18',
-                  color: PLAN_COLORS[plan],
-                  border: `1px solid ${PLAN_COLORS[plan]}44`,
-                }}>
-                  {PLAN_LABELS[plan]}
-                </span>
-                <span style={{ fontSize: 12, color: 'var(--muted)' }}>Estudiante</span>
-              </div>
-            </div>
-          </div>
-
-          {/* ── Info rows ── */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-
-            {/* Name field */}
-            <div style={{
-              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-              padding: '12px 16px',
-              background: 'var(--bg-2)',
-              border: '1px solid var(--line-soft)',
-              borderRadius: 12,
-            }}>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)' }}>
-                  Nombre completo
-                </p>
-                {editing ? (
-                  <input
-                    ref={inputRef}
-                    value={value}
-                    onChange={e => setValue(e.target.value)}
-                    onKeyDown={e => { if (e.key === 'Enter') handleSave(); if (e.key === 'Escape') setEditing(false) }}
-                    maxLength={80}
-                    style={{
-                      fontSize: 14, fontWeight: 500, color: 'var(--ink)',
-                      border: '1px solid rgba(26,46,204,0.35)', borderRadius: 7,
-                      padding: '4px 8px', outline: 'none',
-                      background: 'var(--bg)', width: '100%', maxWidth: 300,
-                    }}
-                  />
-                ) : (
-                  <p style={{ margin: 0, fontSize: 14, fontWeight: 500, color: 'var(--ink)' }}>
-                    {value}
-                  </p>
-                )}
-              </div>
-              {editing ? (
-                <div style={{ display: 'flex', gap: 8, marginLeft: 12, flexShrink: 0 }}>
-                  <button
-                    onClick={handleSave}
-                    disabled={saving}
-                    style={{
-                      padding: '6px 14px', borderRadius: 8,
-                      background: '#1a2ecc', color: '#fff',
-                      border: 'none', fontSize: 12, fontWeight: 600, cursor: 'pointer',
-                      opacity: saving ? 0.7 : 1,
-                    }}
-                  >
-                    {saving ? 'Guardando…' : 'Guardar'}
-                  </button>
-                  <button
-                    onClick={() => { setEditing(false); setValue(savedName) }}
-                    style={{
-                      padding: '6px 12px', borderRadius: 8,
-                      background: 'transparent', color: 'var(--muted)',
-                      border: '1px solid var(--line-soft)', fontSize: 12, fontWeight: 600, cursor: 'pointer',
-                    }}
-                  >
-                    Cancelar
-                  </button>
-                </div>
-              ) : (
-                <button
-                  onClick={startEdit}
-                  style={{
-                    padding: '6px 12px', borderRadius: 8, marginLeft: 12,
-                    background: 'transparent', color: 'var(--muted)',
-                    border: '1px solid var(--line-soft)', fontSize: 12, fontWeight: 600, cursor: 'pointer',
-                    flexShrink: 0,
-                  }}
-                >
-                  Editar
-                </button>
-              )}
-            </div>
-
-            {/* Email (read-only) */}
-            <div style={{
-              padding: '12px 16px',
-              background: 'var(--bg-2)',
-              border: '1px solid var(--line-soft)',
-              borderRadius: 12,
-            }}>
-              <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)' }}>
-                Correo electrónico
-              </p>
-              <p style={{ margin: 0, fontSize: 14, color: 'var(--ink)', fontFamily: 'var(--mono)' }}>
-                {email}
-              </p>
-              <p style={{ margin: '4px 0 0', fontSize: 11, color: 'var(--muted)' }}>
-                Para cambiar tu email contáctanos por WhatsApp.
-              </p>
-            </div>
-
-            {/* Plan */}
-            <div style={{
-              padding: '12px 16px',
-              background: 'var(--bg-2)',
-              border: '1px solid var(--line-soft)',
-              borderRadius: 12,
-              display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12,
-            }}>
-              <div>
-                <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)' }}>
-                  Plan activo
-                </p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span style={{
-                    fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em',
-                    padding: '3px 9px', borderRadius: 100,
-                    background: PLAN_COLORS[plan] + '18',
-                    color: PLAN_COLORS[plan],
-                    border: `1px solid ${PLAN_COLORS[plan]}44`,
-                  }}>
-                    {PLAN_LABELS[plan]}
-                  </span>
-                </div>
-              </div>
-              {plan !== 'intensivo' && (
-                <a
-                  href="https://wa.me/573005004253?text=Hola%2C%20quiero%20conocer%20los%20planes%20de%20WeLearn%20y%20hacer%20un%20upgrade."
-                  target="_blank" rel="noopener noreferrer"
-                  style={{
-                    fontSize: 12, fontWeight: 600, color: PLAN_COLORS.intensivo,
-                    textDecoration: 'none', border: `1px solid ${PLAN_COLORS.intensivo}44`,
-                    padding: '5px 12px', borderRadius: 8, background: `${PLAN_COLORS.intensivo}08`,
-                    whiteSpace: 'nowrap', flexShrink: 0,
-                  }}
-                >
-                  Subir de plan →
-                </a>
-              )}
-            </div>
-
-            {/* Joined date */}
-            <div style={{
-              padding: '12px 16px',
-              background: 'var(--bg-2)',
-              border: '1px solid var(--line-soft)',
-              borderRadius: 12,
-            }}>
-              <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)' }}>
-                Miembro desde
-              </p>
-              <p style={{ margin: 0, fontSize: 14, color: 'var(--ink)', fontFamily: 'var(--mono)' }}>
-                {formatDate(joinedAt)}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <form onSubmit={handlePasswordChange} style={{
-          background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16,
-          padding: '20px 24px', marginBottom: 20, display: 'grid', gap: 12,
-        }}>
-          <div>
-            <h2 style={{ margin: '0 0 5px', fontSize: 14, color: 'var(--ink)' }}>Cambiar contraseña</h2>
-            <p style={{ margin: 0, fontSize: 11, color: 'var(--muted)' }}>Mínimo 12 caracteres, con mayúsculas, minúsculas y números.</p>
-          </div>
-          <input aria-label="Nueva contraseña" name="password" type="password" autoComplete="new-password" required minLength={12} value={password} onChange={event => setPassword(event.target.value)} placeholder="Nueva contraseña" style={{ padding: '10px 12px', borderRadius: 9, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }} />
-          <input aria-label="Confirmar nueva contraseña" name="confirmation" type="password" autoComplete="new-password" required minLength={12} value={confirmation} onChange={event => setConfirmation(event.target.value)} placeholder="Confirmar nueva contraseña" style={{ padding: '10px 12px', borderRadius: 9, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }} />
-          <button type="submit" disabled={passwordSaving} style={{ justifySelf: 'start', padding: '8px 15px', borderRadius: 9, border: 0, background: '#1a2ecc', color: '#fff', fontWeight: 700, cursor: 'pointer', opacity: passwordSaving ? .65 : 1 }}>{passwordSaving ? 'Actualizando…' : 'Actualizar contraseña'}</button>
-        </form>
-
-        {/* ── Danger zone ── */}
-        <div style={{
-          background: 'var(--bg)',
-          border: '1px solid rgba(220,38,38,0.2)',
-          borderRadius: 16,
-          padding: '20px 24px',
-        }}>
-          <h2 style={{ margin: '0 0 6px', fontSize: 13, fontWeight: 700, color: '#dc2626' }}>
-            ¿Necesitas ayuda?
-          </h2>
-          <p style={{ margin: '0 0 14px', fontSize: 12, color: 'var(--muted)', lineHeight: 1.5 }}>
-            Si necesitas eliminar tu cuenta, cambiar tu correo o tienes algún problema técnico,
-            escríbenos directamente por WhatsApp.
-          </p>
-          <a
-            href="https://wa.me/573005004253?text=Hola%2C%20necesito%20ayuda%20con%20mi%20cuenta%20en%20WeLearn."
-            target="_blank" rel="noopener noreferrer"
-            style={{
-              display: 'inline-block', fontSize: 12, fontWeight: 600,
-              color: '#fff', background: '#25D366',
-              padding: '7px 14px', borderRadius: 8,
-              textDecoration: 'none',
-            }}
-          >
-            Abrir chat de soporte →
-          </a>
-        </div>
-
+          </form>
+        </section>
+        <section className={styles.card} aria-labelledby="details-title">
+          <h2 id="details-title">Datos personales</h2>
+          <form onSubmit={saveDetails} className={styles.form}>
+            <label htmlFor="profile-name">Nombre completo</label><input id="profile-name" name="full_name" defaultValue={name} minLength={2} maxLength={80} required />
+            <label htmlFor="profile-phone">Teléfono</label><input id="profile-phone" name="phone" type="tel" defaultValue={phone} maxLength={25} placeholder="Opcional" />
+            <label htmlFor="profile-city">Ciudad</label><input id="profile-city" name="city" defaultValue={city} maxLength={80} placeholder="Opcional" />
+            <label htmlFor="profile-email">Correo de acceso</label><input id="profile-email" value={email} readOnly aria-describedby="email-note" />
+            <small id="email-note">Puedes solicitar un cambio de correo debajo. Por seguridad se confirma por email.</small>
+            <button disabled={busy === 'details'} type="submit">{busy === 'details' ? 'Guardando…' : 'Guardar datos'}</button>
+          </form>
+          <form onSubmit={changeEmail} className={styles.form} style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid var(--line-soft,#e3e7ef)' }}>
+            <label htmlFor="new-email">Cambiar correo de acceso</label>
+            <input id="new-email" name="email" type="email" autoComplete="email" placeholder="Nuevo correo electrónico" required />
+            <small>Tu correo actual seguirá activo hasta que confirmes el nuevo.</small>
+            <button disabled={busy === 'email'} type="submit">{busy === 'email' ? 'Enviando…' : 'Solicitar cambio de correo'}</button>
+          </form>
+        </section>
+        <section className={styles.card} aria-labelledby="notification-title">
+          <h2 id="notification-title">Notificaciones por correo</h2>
+          <form onSubmit={saveNotifications} className={styles.form}>
+            <label className={styles.check}><input name="reminders" type="checkbox" defaultChecked={preferences.reminders} onChange={event => setReminders(event.target.checked)} /> Recordarme que estudie</label>
+            {reminders && <div className={styles.options}>
+              <label htmlFor="reminder-frequency">Frecuencia</label>
+              <select id="reminder-frequency" name="frequency" defaultValue={preferences.frequency} onChange={event => setFrequency(event.target.value as Preferences['frequency'])}>
+                <option value="weekly">Una vez por semana</option><option value="daily">Todos los días</option>
+              </select>
+              {frequency === 'weekly' && <><label htmlFor="reminder-weekday">Día</label><select id="reminder-weekday" name="weekday" value={weekday} onChange={event => setWeekday(Number(event.target.value))}>{DAYS.map((day, index) => <option key={day} value={index + 1}>{day}</option>)}</select></>}
+              <p>Enviaremos el recordatorio alrededor de las 8:00 a. m., hora de Colombia.</p>
+            </div>}
+            {!reminders && <input type="hidden" name="frequency" value={frequency} />}
+            {(frequency === 'daily' || !reminders) && <input type="hidden" name="weekday" value={weekday} />}
+            <label className={styles.check}><input name="corrections" type="checkbox" defaultChecked={preferences.corrections} /> Avisarme cuando un docente corrija mis tareas o simulacros</label>
+            <button disabled={busy === 'notifications'} type="submit">{busy === 'notifications' ? 'Guardando…' : 'Guardar notificaciones'}</button>
+          </form>
+        </section>
+        <section className={styles.card} aria-labelledby="password-title">
+          <h2 id="password-title">Cambiar contraseña</h2>
+          <p>Mínimo 12 caracteres, con mayúsculas, minúsculas y números.</p>
+          <form onSubmit={savePassword} className={styles.form}>
+            <label htmlFor="new-password">Nueva contraseña</label><input id="new-password" name="password" type="password" autoComplete="new-password" minLength={12} required value={password} onChange={event => setPassword(event.target.value)} />
+            <label htmlFor="confirm-password">Confirmar contraseña</label><input id="confirm-password" name="confirmation" type="password" autoComplete="new-password" minLength={12} required value={confirmation} onChange={event => setConfirmation(event.target.value)} />
+            <button disabled={busy === 'password'} type="submit">{busy === 'password' ? 'Actualizando…' : 'Actualizar contraseña'}</button>
+          </form>
+          <Link className={styles.help} href="/recuperar-contrasena">¿Olvidaste tu contraseña?</Link>
+        </section>
       </div>
+      <p className={styles.footer}>Miembro desde {new Date(joinedAt).toLocaleDateString('es-CO', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
     </div>
-  )
+  </main>;
 }

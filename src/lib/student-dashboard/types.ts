@@ -113,6 +113,7 @@ export type StudentSubscription = Readonly<{
 }>;
 
 export type StudentDashboardData = Readonly<{
+  avatarUrl?: string | null;
   name: string;
   email: string;
   access: StudentAccess;
