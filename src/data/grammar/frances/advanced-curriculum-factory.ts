@@ -27,6 +27,29 @@ export type FrenchAdvancedCurriculumSpec = {
 
 const rotate = <T,>(items: T[], offset: number) => items.map((_, index) => items[(index + offset) % items.length])
 
+function complementWithA(value: string) {
+  const normalized = value.trim().toLocaleLowerCase('fr')
+  if (normalized.startsWith('les ')) return `aux ${normalized.slice(4)}`
+  if (normalized.startsWith('le ')) return `au ${normalized.slice(3)}`
+  if (normalized.startsWith('la ')) return `à la ${normalized.slice(3)}`
+  if (normalized.startsWith("l'") || normalized.startsWith('l’')) return `à l’${normalized.slice(2)}`
+  return `à ${normalized}`
+}
+
+function complementWithDe(value: string) {
+  const normalized = value.trim().toLocaleLowerCase('fr')
+  if (normalized.startsWith('les ')) return `des ${normalized.slice(4)}`
+  if (normalized.startsWith('le ')) return `du ${normalized.slice(3)}`
+  if (normalized.startsWith('la ')) return `de la ${normalized.slice(3)}`
+  if (normalized.startsWith("l'") || normalized.startsWith('l’')) return `de l’${normalized.slice(2)}`
+  return `de ${normalized}`
+}
+
+function infinitiveWithDe(value: string) {
+  const normalized = value.trim().toLocaleLowerCase('fr')
+  return /^[aeiouyàâäéèêëîïôöùûüh]/iu.test(normalized) ? `d’${normalized}` : `de ${normalized}`
+}
+
 function cloze(example: string, key: string, index: number) {
   const position = example.toLocaleLowerCase('fr').indexOf(key.toLocaleLowerCase('fr'))
   if (position < 0) throw new Error(`La clé « ${key} » est absente de l’exemple « ${example} ».`)
@@ -78,13 +101,13 @@ export function createFrenchAdvancedCurriculumTopic(spec: FrenchAdvancedCurricul
     description: spec.description,
     lead: `${spec.description} Cette leçon relie la forme, le sens, le registre et la révision éditoriale au lieu d’isoler une règle hors contexte.`,
     outcomes: [
-      `Reconnaître les principaux emplois associés à ${spec.shortTitle.toLowerCase()} dans des contextes authentiques.`,
-      `Choisir une forme afin de ${spec.purpose.toLowerCase()}.`,
+      `Reconnaître les principaux emplois associés ${complementWithA(spec.shortTitle)} dans des contextes authentiques.`,
+      `Choisir une forme afin ${infinitiveWithDe(spec.purpose)}.`,
       `Éviter les erreurs qui modifient le temps, l’agent, la portée ou le degré d’engagement.`,
       `Employer la structure avec précision dans les contextes suivants : ${spec.register.toLowerCase()}.`,
     ],
     guide: {
-      goal: `Maîtriser ${spec.shortTitle.toLowerCase()} afin de ${spec.purpose.toLowerCase()}, tout en préservant le sens et le registre visés.`,
+      goal: `Maîtriser ${spec.shortTitle.toLowerCase()} afin ${infinitiveWithDe(spec.purpose)}, tout en préservant le sens et le registre visés.`,
       model: spec.model,
       formula: spec.formula,
       decisions: [
@@ -102,7 +125,7 @@ export function createFrenchAdvancedCurriculumTopic(spec: FrenchAdvancedCurricul
     },
     seo: [
       {
-        heading: `Fonctions de ${spec.shortTitle.toLowerCase()}`,
+        heading: `Fonctions ${complementWithDe(spec.shortTitle)}`,
         paragraphs: [
           spec.description,
           `L’objectif central consiste à ${spec.purpose.toLowerCase()}. Le bon choix conserve donc la proposition tout en rendant visibles la relation logique, le point de vue ou le degré d’engagement.`,

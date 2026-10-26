@@ -195,7 +195,7 @@ const specs: Seed[] = [
   },
   {
     slug: 'nominalisation-style-verbal-c1', order: '19', category: 'Style et densité', shortTitle: 'Nominalisation et style verbal',
-    description: "Alternez structures nominales et verbales pour régler densité, agentivité et fluidité.", purpose: "condensez sans rendre le raisonnement opaque", register: 'rapports, presse et écrits académiques',
+    description: "Alternez structures nominales et verbales pour régler densité, agentivité et fluidité.", purpose: "condenser sans rendre le raisonnement opaque", register: 'rapports, presse et écrits académiques',
     formula: 'verbe ↔ nom d’action + compléments', model: "L'équipe a révisé le protocole après l'évaluation des risques.",
     patterns: [
       ['Densité nominale', 'nom d’action + de/par', "L'évaluation des risques par l'équipe a précédé la révision.", 'plusieurs relations condensées dans le groupe nominal', "L'équipe a évalué les risques puis révisé le texte.", "L'évaluation", "N'empilez pas les compléments au point de rendre l'agent indécidable."],
