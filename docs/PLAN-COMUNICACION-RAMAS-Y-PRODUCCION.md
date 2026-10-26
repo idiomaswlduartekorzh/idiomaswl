@@ -20,7 +20,13 @@ Las migraciones `20261026005430`, `20261026005856` y `20261026010235` se aplicar
 al proyecto Supabase productivo. Se verificaron RLS, permisos de columnas,
 políticas de Storage, bucket y el trigger que sincroniza el correo confirmado.
 Catálogo protegido, TypeScript, ESLint, pruebas existentes del panel y build Webpack
-pasaron. Integración y smoke de producción: pendientes.
+pasaron. Código integrado en `main` mediante `46a441e3`. Vercel publicó ese SHA
+desde `main` en el despliegue de producción `dpl_Eqi16ZquW4UtEwTFYDgQm2jD4KAR`
+con estado `READY` y dominio `www.idiomaswl.com`. El smoke confirmó que la ruta
+interna de recordatorios responde `401` sin el secreto de cron y que
+`/dashboard/student/perfil` redirige a `/login` sin sesión. El guardado y la
+entrega de correo con una cuenta real quedan sin prueba manual para evitar
+alterar los datos o la bandeja de un estudiante.
 
 ## Recuperación de contraseña — 25 de octubre de 2026
 
