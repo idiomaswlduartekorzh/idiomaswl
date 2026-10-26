@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SPANISH_GUIDES, SPANISH_HUB } from '@/data/spanish-colombia';
+import { spanishEnrollment } from '@/data/spanish-enrollment';
 import {
   localeHreflang, localeNames, localeOg, spanishAlternates, spanishCopy,
   spanishLocales, spanishPath, spanishUrl, type SpanishLocale, type SpanishPageKind,
@@ -60,9 +61,23 @@ function People({ locale }: { locale: SpanishLocale }) {
 
 function Questions({ locale, kind }: { locale: SpanishLocale; kind: SpanishPageKind }) {
   const copy = spanishCopy[locale];
+  const questions = kind === 'hub' ? copy.faq : [...copy.classesFaq, {
+    question: spanishEnrollment[locale].question,
+    answer: spanishEnrollment[locale].answer,
+  }];
   return <section id="questions" className={`${styles.section} ${styles.faqSection}`}>
     <div className={styles.sectionHeading}><div><p className={styles.kicker}>{copy.faqKicker}</p><h2>{kind === 'hub' ? copy.faqTitle : copy.classesFaqTitle}</h2></div></div>
-    <div className={styles.faqList}>{(kind === 'hub' ? copy.faq : copy.classesFaq).map(item => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div>
+    <div className={styles.faqList}>{questions.map(item => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div>
+  </section>;
+}
+
+function Enrollment({ locale, contact }: { locale: SpanishLocale; contact: string }) {
+  const copy = spanishEnrollment[locale];
+  return <section id="enrollment" className={`${styles.section} ${styles.introSection}`}>
+    <div className={styles.sectionHeading}><div><p className={styles.kicker}>{copy.kicker}</p><h2>{copy.title}</h2></div><p>{copy.intro}</p></div>
+    <div className={styles.steps}>{copy.steps.map((step, index) => <article className={styles.step} key={step.title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{step.title}</h3><p>{step.copy}</p></article>)}</div>
+    <p className={styles.enrollmentNote}>{copy.note}</p>
+    <a className={styles.primaryButton} href={contact} target="_blank" rel="noopener noreferrer" data-wa-cta={`spanish-enrollment-${locale}`}>{copy.button} <span aria-hidden="true">↗</span></a>
   </section>;
 }
 
@@ -121,8 +136,9 @@ export default function SpanishExperience({ locale, kind }: { locale: SpanishLoc
         <p className={styles.asideLocation}>BUCARAMANGA <span aria-hidden="true">↗</span> COLOMBIA</p>
       </div>
     </div></header>
-    <nav className={styles.sectionNav} aria-label="Page sections"><a href="#formats">{copy.navFormats}</a>{kind === 'hub' && <><a href="#approach">{copy.navApproach}</a><a href="#phrases">{copy.navPhrases}</a></>}<a href="#people">{copy.navPeople}</a><a href="#questions">{copy.navFaq}</a></nav>
+    <nav className={styles.sectionNav} aria-label="Page sections"><a href="#formats">{copy.navFormats}</a>{kind === 'hub' ? <><a href="#approach">{copy.navApproach}</a><a href="#phrases">{copy.navPhrases}</a></> : <a href="#enrollment">{spanishEnrollment[locale].kicker}</a>}<a href="#people">{copy.navPeople}</a><a href="#questions">{copy.navFaq}</a></nav>
     <Formats locale={locale} kind={kind} />
+    {kind === 'classes' && <Enrollment locale={locale} contact={contact} />}
     {kind === 'hub' && <>
       <section id="approach" className={`${styles.section} ${styles.introSection}`}><div className={styles.sectionHeading}><div><p className={styles.kicker}>{copy.approachKicker}</p><h2>{copy.approachTitle}</h2></div><p>{copy.approachIntro}</p></div><div className={styles.steps}>{copy.steps.map(step => <article className={styles.step} key={step.label}><span>{step.label}</span><h3>{step.title}</h3><p>{step.copy}</p></article>)}</div></section>
       <section id="phrases" className={`${styles.section} ${styles.phraseSection}`}><div className={styles.sectionHeading}><div><p className={styles.kicker}>{copy.phrasesKicker}</p><h2>{copy.phrasesTitle}</h2></div><p>{copy.phrasesIntro}</p></div><div className={styles.phraseGrid}>{phrases.map((phrase, index) => <article className={styles.phraseCard} key={phrase}><span>{copy.phraseLabels[index]}</span><h3 lang="es">{phrase}</h3><p>{copy.phraseMeanings[index]}</p></article>)}</div></section>
