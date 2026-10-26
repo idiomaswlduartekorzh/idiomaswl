@@ -1,6 +1,25 @@
 # Superhub: español para extranjeros en Colombia
 
-Actualizado: 25 de octubre de 2026. Responsable editorial propuesto: equipo WeLearn. Esta es una estrategia de búsqueda y contenido; **no** contiene estimaciones de volumen ni de posición, porque no se consultó una herramienta de palabras clave ni la propiedad de Search Console.
+Actualizado: 26 de octubre de 2026. Responsable editorial propuesto: equipo WeLearn. Esta es una estrategia de búsqueda y contenido; **no** contiene estimaciones de volumen ni de posición, porque no se consultó una herramienta de palabras clave ni la propiedad de Search Console.
+
+## Rediseño visual y versiones por idioma — 26 de octubre de 2026
+
+La portada y la página comercial comparten ahora una composición editorial clara: fondo marfil, texto azul oscuro, acento cálido y una frase sin el arco verde anterior. Se redujeron párrafos y bloques repetidos. Las fotos originales de los fundadores siguen intactas; la página solicita una variante optimizada más grande y las presenta en marcos cuadrados centrados en los rostros, con menos techo visible. Los retratos se comprobaron en navegador en escritorio. En móvil, el selector de seis idiomas queda visible y no hay desbordamiento horizontal.
+
+El contenido principal y la oferta comercial tienen versiones propias en inglés, español, francés, italiano, ruso y chino simplificado. Cada una tiene URL, título, descripción, canonical propio, texto visible en su idioma, `inLanguage`, y `hreflang` recíproco (incluido `x-default`) en HTML y sitemap. Las tres guías largas continúan en inglés y se presentan explícitamente como recursos en inglés; no se declaran traducciones equivalentes de esas guías. El encabezado general del sitio conserva su idioma actual, mientras el contenido del hub marca su idioma con `lang` en el contenedor.
+
+| Idioma | Búsqueda semilla de descubrimiento | Búsqueda semilla comercial |
+| --- | --- | --- |
+| Inglés | learn Spanish in Colombia | Spanish classes in Bucaramanga; online Spanish classes |
+| Español | aprender español en Colombia | clases de español para extranjeros en Bucaramanga; clases de español online |
+| Francés | apprendre l’espagnol en Colombie | cours d’espagnol à Bucaramanga; cours d’espagnol en ligne |
+| Italiano | imparare lo spagnolo in Colombia | corsi di spagnolo a Bucaramanga; corsi di spagnolo online |
+| Ruso | изучать испанский в Колумбии | уроки испанского в Букараманге; уроки испанского онлайн |
+| Chino simplificado | 在哥伦比亚学西班牙语 | 布卡拉曼加西班牙语课程; 线上西班牙语课程 |
+
+Estas consultas son hipótesis lingüísticas, no cifras de demanda. Google recomienda URLs distintas para cada idioma y anotaciones `hreflang`; advierte que cambiar contenido solo por la configuración del navegador dificulta descubrir versiones. La traducción crea una oportunidad de coincidir con búsquedas en esos idiomas, sin prometer posiciones. El contenido se redacta para personas; no se añade `meta keywords`, que Google no usa. Fuentes: [sitios multilingües](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites), [versiones localizadas](https://developers.google.com/search/docs/specialty/international/localized-versions), [guía SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
+
+Medir en Search Console impresiones, consultas, país, CTR, indexación y canonical elegido por cada una de las doce URLs. La traducción de las tres guías largas se decidirá con las consultas reales y revisión lingüística humana.
 
 ## Decisión editorial
 
