@@ -5,6 +5,26 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Conversión de las clases de español — 26 de octubre de 2026
+
+La rama `codex/spanish-hub-conversion-audit-20261026` se integró mediante PR #44
+en `main@c75d823a29400e8aa9a5f9b45c9ab08845ab842c`. Vercel publicó
+`dpl_HA4Pro9cTgXJyV7K6uw8t9CGwKLR` desde ese commit y la rama `main`;
+estado `READY`, con `www.idiomaswl.com` asignado. Estado: `DESPLEGADO`.
+Las seis páginas comerciales ahora explican cómo consultar, conocer tutor,
+horario, duración y precio antes de reservar. La orientación inicial por chat
+es gratuita; la clase y el diagnóstico con tutor son pagos. Los mensajes de
+WhatsApp piden nivel, objetivo, modalidad y zona horaria cuando aplica.
+
+Pasaron el catálogo protegido, TypeScript, ESLint focalizado, build local,
+`baseline-and-types`, `production-build` y Vercel. El smoke público confirmó
+las seis páginas comerciales con la sección nueva, CTA y canonical propios;
+el smoke completo confirmó HTTP 200, metadatos, canonicals y `hreflang` en las
+doce páginas localizadas y doce entradas en el sitemap. La página inglesa se
+revisó visualmente en el navegador público.
+La auditoría de contenido y el límite de medición constan en
+[`espanol-extranjeros-superhub-2026-10-25.md`](espanol-extranjeros-superhub-2026-10-25.md).
+
 ## Rediseño y seis idiomas del hub de español — 26 de octubre de 2026
 
 La rama `codex/spanish-colombia-visual-multilingual-20261026` partió de `origin/main` actualizado.

@@ -29,6 +29,8 @@ El propietario confirmó el **25 de octubre de 2026** que WeLearn ofrece clases 
 
 ## Auditoría de conversión — 26 de octubre de 2026
 
+Publicada mediante PR #44 en `main@c75d823a29400e8aa9a5f9b45c9ab08845ab842c` y deployment de producción `dpl_HA4Pro9cTgXJyV7K6uw8t9CGwKLR` (`READY`). Las doce rutas localizadas pasaron el smoke público; las seis páginas comerciales muestran el nuevo recorrido de consulta y sus enlaces de WhatsApp.
+
 El propietario aclaró que las condiciones de las clases de español son las mismas que las de los demás idiomas. Por eso la página comercial explica el mismo proceso ya publicado en `/clases-de-idiomas`: la primera orientación por chat no tiene costo; la clase y el diagnóstico con tutor son pagos; WeLearn comunica el precio antes de reservar. Se añadió un recorrido breve de tres pasos y los mensajes de WhatsApp ahora solicitan nivel, objetivo, modalidad y, para clases online, zona horaria. Esto permite responder con tutor, duración, disponibilidad y precio sin pedir otra ronda de datos básicos. La página mantiene visible la sede y la identidad de los fundadores.
 
 No se han publicado cifras de precio ni paquetes específicos para español. El selector y el catálogo de pagos de `/precios` todavía tienen ocho idiomas y excluyen español; sus planes de exámenes no prueban que cada plan sea aplicable a español. Publicar un precio o un enlace de pago de español requiere configurar y comprobar ese producto en el catálogo. El CTA de las páginas de español lleva a consulta por WhatsApp, no a ese checkout.
