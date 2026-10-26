@@ -27,6 +27,14 @@ El punto de entrada editorial en inglés es `/learn-spanish-colombia`; la versi�
 
 El propietario confirmó el **25 de octubre de 2026** que WeLearn ofrece clases de español para extranjeros **online y presenciales en Bucaramanga**. La sede verificada es Calle 47 #29-33, Sotomayor. El catálogo ahora presenta nueve idiomas, incluido español. La página comercial no anuncia precio, horarios, niveles, acreditaciones, visados, sedes en otras ciudades ni resultados de estudiantes de español que no estén verificados. Se pide al interesado consultar tutor, horario y precio antes de agendar una clase paga.
 
+## Auditoría de conversión — 26 de octubre de 2026
+
+El propietario aclaró que las condiciones de las clases de español son las mismas que las de los demás idiomas. Por eso la página comercial explica el mismo proceso ya publicado en `/clases-de-idiomas`: la primera orientación por chat no tiene costo; la clase y el diagnóstico con tutor son pagos; WeLearn comunica el precio antes de reservar. Se añadió un recorrido breve de tres pasos y los mensajes de WhatsApp ahora solicitan nivel, objetivo, modalidad y, para clases online, zona horaria. Esto permite responder con tutor, duración, disponibilidad y precio sin pedir otra ronda de datos básicos. La página mantiene visible la sede y la identidad de los fundadores.
+
+No se han publicado cifras de precio ni paquetes específicos para español. El selector y el catálogo de pagos de `/precios` todavía tienen ocho idiomas y excluyen español; sus planes de exámenes no prueban que cada plan sea aplicable a español. Publicar un precio o un enlace de pago de español requiere configurar y comprobar ese producto en el catálogo. El CTA de las páginas de español lleva a consulta por WhatsApp, no a ese checkout.
+
+La revisión valida que título, descripción, H1, texto visible, enlazado, versiones de idioma y datos estructurados son coherentes con sus intenciones de búsqueda. **No valida posiciones, impresiones, apariciones en respuestas de IA ni ventas.** Para medir conversión hay que unir sesiones de la página → clics de WhatsApp → conversaciones recibidas → prospectos calificados → reservas pagadas. El atributo `data-wa-cta` permite distinguir los enlaces; un clic por sí solo no demuestra que se haya enviado el mensaje ni que haya venta. Revisar Search Console por URL e idioma y contrastar consultas reales con los términos semilla antes de crear más páginas.
+
 ## Mapa de palabras clave e intención
 
 | Prioridad | Búsqueda semilla | Intención | URL actual | Ángulo propio / siguiente paso |
