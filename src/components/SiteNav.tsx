@@ -41,6 +41,7 @@ const IDIOMAS = [
   { label: 'Alemán',    native: 'Deutsch',  href: '/clases-de-aleman' },
   { label: 'Japonés',   native: '日本語',    href: '/clases-de-japones' },
   { label: 'Coreano',   native: '한국어',    href: '/clases-de-coreano' },
+  { label: 'Español para extranjeros', native: 'Spanish', href: '/spanish-classes-bucaramanga' },
 ];
 
 const IELTS_IDIOMAS = [
@@ -52,11 +53,15 @@ const IELTS_IDIOMAS = [
   { label: 'German',     native: 'Deutsch',   href: '/clases-de-aleman' },
   { label: 'Japanese',   native: '日本語',      href: '/clases-de-japones' },
   { label: 'Korean',     native: '한국어',       href: '/clases-de-coreano' },
+  { label: 'Spanish for foreigners', native: 'Español', href: '/spanish-classes-bucaramanga' },
 ];
 
 /** Verdadero cuando la ruta actual es una landing de idioma o el hub. */
 function isIdiomasPath(pathname: string) {
-  return pathname.startsWith('/clases-de-');
+  return pathname.startsWith('/clases-de-')
+    || pathname.startsWith('/learn-spanish-colombia')
+    || pathname.startsWith('/espanol-para-extranjeros-colombia')
+    || pathname.startsWith('/spanish-classes-bucaramanga');
 }
 
 function UserMenu({ user, onSignOut, english = false }: { user: User; onSignOut: () => void; english?: boolean }) {
@@ -159,7 +164,10 @@ function ThemeToggle({ english = false }: { english?: boolean }) {
 
 export default function SiteNav() {
   const pathname = usePathname();
-  const english = pathname.startsWith('/practica/ielts') || pathname.startsWith('/practica/toefl');
+  const english = pathname.startsWith('/practica/ielts')
+    || pathname.startsWith('/practica/toefl')
+    || pathname.startsWith('/learn-spanish-colombia')
+    || pathname.startsWith('/spanish-classes-bucaramanga');
   const navLinks = english ? IELTS_NAV_LINKS : NAV_LINKS;
   const languageLinks = english ? IELTS_IDIOMAS : IDIOMAS;
   const router = useRouter();
