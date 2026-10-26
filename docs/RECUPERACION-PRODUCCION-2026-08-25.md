@@ -869,3 +869,26 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `www.idiomaswl.com`. No se añadieron migraciones, variables de entorno ni
   servicios externos.
 - Estado: `DESPLEGADO`.
+
+### 25 de octubre de 2026 — currículo completo de gramática francesa B2–C2
+
+- La rama `codex/french-b2-c2-complete-curriculum` incorpora 90 lecciones: 30
+  B2, 30 C1 y 30 C2. Cada página usa interfaz y contenido en francés, explicación
+  pedagógica extensa, mapa visual específico, seis etapas de práctica y al menos
+  30 decisiones de aprendizaje.
+- Cada tema enlaza una guía completa, un cahier d’exercices y un corrigé con el
+  sistema editorial aprobado. El lote contiene 270 PDF de 8 a 20 páginas, texto
+  extraíble y revisión visual representativa. Los audios permanecen aplazados y
+  no se anuncian en la interfaz ni en los datos estructurados.
+- La implementación `92a943b24d532dcc5c186d2297c2fd6c089f6f95`, la promoción
+  `6b1923a53d5f17ab883e1d875e789068698f9ff0` y la revisión editorial
+  `aabc9223ca07b13f4e30033d89ae732914c883e4` entraron en `main`. Pasaron el
+  guardián específico de 90 temas y 270 PDF, TypeScript, el build Next.js de
+  3.048 páginas, `baseline-and-types`, `production-build` y Vercel.
+- El deployment de Vercel
+  [`EStoG3v2am1tWXCSzWgetDvBE5Gu`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/EStoG3v2am1tWXCSzWgetDvBE5Gu)
+  terminó correctamente. El smoke posterior confirmó HTTP 200 en 90/90 rutas,
+  tres referencias PDF y un mapa visual por lección, 30 enlaces únicos en cada
+  índice B2, C1 y C2 y la revisión francesa final servida por el dominio.
+- No se añadieron migraciones, variables de entorno ni servicios externos.
+  Estado: `DESPLEGADO`.

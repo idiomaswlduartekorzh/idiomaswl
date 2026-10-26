@@ -1006,5 +1006,12 @@ La recuperación termina cuando:
   interlinking de A1 a C2.
 - Puertas locales superadas: guardián francés 90/270, controles de catálogo y
   SEO, regresión inglesa, TypeScript y build Next.js de 3.048 páginas.
-- Estado: `LISTO_PARA_INTEGRAR`; pasa a `DESPLEGADO` únicamente después de
-  integrar en `main`, obtener Vercel `READY` y ejecutar el smoke de producción.
+- Integración: implementación `92a943b24d532dcc5c186d2297c2fd6c089f6f95`,
+  promoción exclusiva de `main` `6b1923a53d5f17ab883e1d875e789068698f9ff0`
+  y revisión editorial final
+  `aabc9223ca07b13f4e30033d89ae732914c883e4`.
+- Evidencia de producción: GitHub `baseline-and-types` y `production-build` en
+  verde; Vercel deployment `EStoG3v2am1tWXCSzWgetDvBE5Gu` completado. El smoke
+  confirmó HTTP 200 en 90/90 lecciones, tres PDF y un recurso visual por tema,
+  además de 30 enlaces únicos en cada índice B2, C1 y C2.
+- Estado: `DESPLEGADO`.
