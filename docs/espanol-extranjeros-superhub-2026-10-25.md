@@ -49,7 +49,7 @@ Las búsquedas son **hipótesis de investigación**, no volúmenes confirmados. 
 2. **Respuestas extraíbles:** pregunta concreta, respuesta breve y explicación con ejemplos visibles. Cada artículo aporta una tarea práctica; el resumen sirve a lectores y a sistemas que citan páginas, sin texto oculto ni contenido escrito solo para robots.
 3. **Confianza:** identidad real de WeLearn, sede en Bucaramanga, enlace a fundadores, límites claros de presencia geográfica, fuentes externas para léxico regional. Añadir autor experto en español y fecha de revisión cuando una persona real haga la revisión pedagógica.
 4. **Datos estructurados honestos:** `WebPage`, `Article` y `BreadcrumbList` reflejan el contenido visible. Aunque existe la oferta de clases, no usar `Course`, `Offer`, `FAQPage` ni reseñas hasta que se verifiquen sus datos y se cumplan las reglas del resultado enriquecido correspondiente.
-5. **Palabras clave visibles:** cada URL usa una consulta principal distinta en el título, H1, primer párrafo y enlaces contextuales. El elemento `meta keywords` no ayuda a posicionar en Google; las seis páginas de español anulan la lista global heredada, que contenía consultas de otros idiomas.
+5. **Palabras clave visibles:** cada URL usa una consulta principal distinta en el título, H1, primer párrafo y enlaces contextuales. El elemento `meta keywords` no ayuda a posicionar en Google; las doce páginas localizadas anulan la lista global heredada, que contenía consultas de otros idiomas.
 6. **Actualizaciones:** revisar cada trimestre frases, enlaces, posibles cambios de oferta y consultas emergentes. Si se crea una guía de visados o requisitos legales, citar la fuente oficial vigente y revisarla con más frecuencia.
 
 Google indica que las prácticas SEO habituales también aplican a sus funciones de IA y que no existe un marcado especial obligatorio para ellas. También recomienda contenido útil, original, confiable, con autoría clara. Fuentes: [guía oficial de optimización para IA](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide), [títulos concisos](https://developers.google.com/search/docs/appearance/title-link), [descripciones únicas](https://developers.google.com/search/docs/appearance/snippet), [meta keywords ignoradas](https://developers.google.com/search/docs/crawling-indexing/special-tags), [versiones localizadas](https://developers.google.com/search/docs/specialty/international/localized-versions), [reglas de marcado Course](https://developers.google.com/search/docs/appearance/structured-data/course).
@@ -60,7 +60,7 @@ En la investigación de SERP aparecen ofertas universitarias de [UPB en Medellí
 
 ## Medición para la primera etapa
 
-- Search Console: indexación de las seis URLs, impresiones y consultas por idioma/país, CTR y canonical elegido.
+- Search Console: indexación de las doce URLs, impresiones y consultas por idioma/país, CTR y canonical elegido.
 - Analítica: visitas al hub, clics hacia las guías, clics de WhatsApp desde las páginas de español y conversaciones en las que se confirme interés real.
 - Cualitativo: registrar las diez preguntas más repetidas, nivel aproximado, país de origen, ciudad de destino y modalidad preferida, sin publicar datos personales.
 - Decisión comercial siguiente: usar consultas y contactos reales para decidir si conviene separar más adelante páginas para clases online y presenciales. Primero completar detalles verificables de tutores, horarios y precios en la página comercial existente.

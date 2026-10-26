@@ -8,7 +8,10 @@ Fecha de corte: 25 de agosto de 2026.
 ## Rediseño y seis idiomas del hub de español — 26 de octubre de 2026
 
 La rama `codex/spanish-colombia-visual-multilingual-20261026` partió de `origin/main` actualizado.
-Estado: `VALIDADO_LOCALMENTE`; integración y despliegue pendientes. Rediseña las portadas editorial y comercial, corrige el tamaño y
+Estado: `DESPLEGADO` mediante PR #42; squash en
+`main@2427f418975abadb5ce768b26044c34005a62e56`. Vercel publicó el deployment
+de producción `dpl_Hxnpkn7thesdERuWCWosM7HoWWdY` desde `main` y ese SHA.
+Rediseña las portadas editorial y comercial, corrige el tamaño y
 encuadre de las fotos de los fundadores, y publica contenido de ambas páginas en seis idiomas
 (inglés, español, francés, italiano, ruso y chino simplificado). Cada una de las doce URL
 tiene canonical propio y `hreflang` recíproco; las guías largas existentes siguen en inglés.
@@ -20,8 +23,15 @@ intermitente en una simulación de diagnóstico ajena a estas rutas; la prueba a
 y la segunda ejecución completa pasaron sin modificar el diagnóstico. El guardián
 de fragmentos SEO detectó además una descripción japonesa demasiado corta ya presente
 en `main`; se amplió de forma puntual y el guardián pasó.
+La vista previa pasó tras habilitar las funciones grandes de Vercel para la ruta ya existente
+de materiales PDF protegidos, cuyo paquete superó el límite estándar de 250 MB. La
+configuración está versionada en `vercel.json`. En producción, las doce rutas respondieron
+`200` con título, descripción, canonical propio y siete anotaciones `hreflang` recíprocas;
+el sitemap contiene las doce URL. Se revisó en navegador el diseño y los retratos servidos
+desde el dominio público.
 
-Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dded815e0e6b`.
+Fuente canónica de la publicación: `origin/main` en
+`2427f418975abadb5ce768b26044c34005a62e56`.
 
 ## Superhub de español para extranjeros — 25 de octubre de 2026
 
