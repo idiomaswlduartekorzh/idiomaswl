@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the complete English, French, or German grammar workbook collection."""
+"""Generate the complete multilingual grammar workbook collection."""
 
 import json
 import os
@@ -22,19 +22,20 @@ PDF_LANGUAGE = os.environ.get('GRAMMAR_PDF_LANGUAGE', 'english').lower()
 IS_FRENCH = PDF_LANGUAGE == 'french'
 IS_GERMAN = PDF_LANGUAGE == 'german'
 IS_ITALIAN = PDF_LANGUAGE == 'italian'
+IS_PORTUGUESE = PDF_LANGUAGE == 'portuguese'
 DATA = Path(os.environ.get('GRAMMAR_PDF_DATA', ROOT / 'tmp' / 'english-grammar' / 'topics.json'))
 OUTPUT = Path(os.environ.get('GRAMMAR_PDF_OUTPUT', os.environ.get('ENGLISH_GRAMMAR_PDF_OUTPUT', ROOT / 'output' / 'pdf' / f'{PDF_LANGUAGE}-grammar')))
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
 PUBLIC = ROOT / 'private' / 'site-materials'
-PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'ingles')
+PUBLIC_PREFIX = os.environ.get('GRAMMAR_PDF_PUBLIC_PREFIX', 'frances' if IS_FRENCH else 'aleman' if IS_GERMAN else 'italiano' if IS_ITALIAN else 'portugues' if IS_PORTUGUESE else 'ingles')
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ko-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ko-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-wordmark-transparent-v2.png'
 
-NAVY = colors.HexColor('#012169')
-RED = colors.HexColor('#C8102E')
-BLUE = colors.HexColor('#244C9A')
+NAVY = colors.HexColor('#126B3A' if IS_PORTUGUESE else '#012169')
+RED = colors.HexColor('#C99C00' if IS_PORTUGUESE else '#C8102E')
+BLUE = colors.HexColor('#197347' if IS_PORTUGUESE else '#244C9A')
 INK = colors.HexColor('#172033')
 MUTED = colors.HexColor('#667085')
 LINE = colors.HexColor('#D8DEE9')
@@ -185,6 +186,73 @@ def italianize(value):
     return value
 
 
+PORTUGUESE_TEXT = {
+    'complete guide': 'curso completo', 'exercise workbook': 'caderno de exercícios', 'answer key': 'gabarito comentado',
+    'English grammar': 'Gramática portuguesa', 'Complete guide': 'Curso completo', 'Exercise workbook': 'Caderno de exercícios',
+    'Answer key': 'Gabarito comentado', 'Original material · English': 'Material original · Português', 'Page': 'Página',
+    'Options': 'Opções', 'OPTIONS  ': 'OPÇÕES  ', 'ENGLISH': 'PORTUGUÊS', 'This document': 'Este documento',
+    'Model answers and concise grammar explanations for every stage in the separate exercise workbook.': 'Respostas-modelo e explicações gramaticais concisas para cada etapa do caderno de exercícios separado.',
+    'Recommended use': 'Uso recomendado', 'Keep the three-document system together': 'Use os três documentos em conjunto',
+    'Use the complete guide to understand the concept, this workbook to practise, and the answer key to diagnose each decision.': 'Use o curso completo para compreender o conceito, este caderno para praticar e o gabarito para avaliar cada decisão.',
+    'Correct one stage at a time. Explain the rule aloud before marking an answer as secure.': 'Corrija uma etapa de cada vez. Explique a regra em voz alta antes de considerar uma resposta segura.',
+    'WELEARN STUDY SEQUENCE': 'PERCURSO DE ESTUDO WELEARN', 'Practice stage': 'Etapa de prática', 'Gap': 'Lacuna',
+    'Word bank': 'Banco de formas', 'Available forms': 'Formas disponíveis', 'Stage check': 'Verificação da etapa',
+    'Pause before continuing': 'Faça uma pausa antes de continuar',
+    'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.': 'Sublinhe o elemento acionador ou o ponto de decisão, nomeie a regra e confira se o sentido não mudou.',
+    'Retrieval': 'Recuperação ativa', 'Final self-check': 'Autoavaliação final',
+    'Complete these prompts without reopening the guide.': 'Complete estas propostas sem reabrir o curso.',
+    'Review focus': 'Foco de revisão', 'Compare the form first, then read the explanation and name the rule in your own words.': 'Compare primeiro a forma, depois leia a explicação e formule a regra com suas próprias palavras.',
+    'Feedback': 'Retorno', 'Diagnose the pattern, not only the score': 'Analise o padrão, não apenas a pontuação',
+    'Use this page to decide what to revisit in the complete guide.': 'Use esta página para decidir o que deve ser revisto no curso completo.',
+    'What went wrong? What rule will prevent the same error next time?': 'O que não funcionou? Que regra evitará o mesmo erro na próxima vez?',
+    'ADVANCED GRAMMAR': 'GRAMÁTICA AVANÇADA', 'The central idea': 'A ideia central', 'Model': 'Modelo',
+    'This complete guide combines explanation, visual reasoning, practice and feedback. Separate exercise and answer-key editions are also available from the lesson page.': 'Este curso completo reúne explicação, raciocínio visual, prática e retorno. O caderno de exercícios e o gabarito separados também estão disponíveis na página da aula.',
+    'LEARNING OUTCOMES': 'OBJETIVOS DE APRENDIZAGEM', 'Understand': 'Compreender', 'Build meaning before form': 'Construir o sentido antes da forma',
+    'Visual map': 'Mapa visual', 'Reason through the pattern': 'Raciocinar a partir da estrutura',
+    'DECIDE IN THIS ORDER': 'DECIDA NESTA ORDEM', 'Reference': 'Referência',
+    'Compare forms and meanings': 'Comparar formas e sentidos', 'Use the table to justify each structural choice.': 'Use a tabela para justificar cada escolha estrutural.',
+    'EXAMPLES AT A GLANCE': 'EXEMPLOS EM UM SÓ OLHAR', 'COMMON ERRORS': 'ERROS FREQUENTES',
+    'Edit this': 'Revise isto', 'Avoid this pattern': 'Evite este padrão',
+    'exercises': 'exercicios', 'answer-key': 'gabarito',
+}
+
+
+def portugueseize(value):
+    if isinstance(value, list):
+        if value == ['complete guide', 'exercise workbook', 'answer key', 'retrieval review']:
+            return ['curso completo', 'caderno de exercícios', 'gabarito comentado', 'recuperação ativa']
+        if value == ['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register']:
+            return ['Elemento acionador ou contexto', 'Auxiliar ou escolha estrutural', 'Verbo principal ou forma da oração', 'Sentido e registro']
+        return value
+    if value in PORTUGUESE_TEXT:
+        return PORTUGUESE_TEXT[value]
+    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    if match:
+        return f"{match.group(1)} decisões de aprendizagem em seis etapas progressivas. Escreva diretamente na página e consulte o gabarito separado somente depois de concluir uma etapa."
+    match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
+    if match:
+        return f"Prática para impressão sobre {match.group(1)}. Nenhuma explicação ou solução interrompe as páginas de trabalho."
+    match = re.fullmatch(r'Explain and exemplify: (.+)\.', value)
+    if match:
+        return f"Explique e exemplifique: {match.group(1)}."
+    match = re.fullmatch(r'Solutions and feedback for the (.+) exercise workbook\.', value)
+    if match:
+        return f"Soluções e retorno para o caderno de exercícios sobre {match.group(1)}."
+    match = re.fullmatch(r'(\d+) GUIDED STAGES · (\d+) LEARNING DECISIONS', value)
+    if match:
+        return f"{match.group(1)} ETAPAS GUIADAS · {match.group(2)} DECISÕES DE APRENDIZAGEM"
+    match = re.fullmatch(r'Outcome (\d+)', value)
+    if match:
+        return f"Objetivo {match.group(1)}"
+    match = re.fullmatch(r'Step (\d+)', value)
+    if match:
+        return f"Passo {match.group(1)}"
+    match = re.fullmatch(r'Decision (\d+)', value)
+    if match:
+        return f"Decisão {match.group(1)}"
+    return value
+
+
 def l(english, french):
     if IS_FRENCH:
         return french
@@ -192,6 +260,8 @@ def l(english, french):
         return germanize(english)
     if IS_ITALIAN:
         return italianize(english)
+    if IS_PORTUGUESE:
+        return portugueseize(english)
     return english
 
 
@@ -749,7 +819,7 @@ def main():
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))
             print(answer_key_target.relative_to(ROOT))
-    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
+    print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else f"Prontos: {len(topics)} cursos de gramática portuguesa com edições separadas." if IS_PORTUGUESE else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 
 if __name__ == '__main__':

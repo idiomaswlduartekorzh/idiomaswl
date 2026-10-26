@@ -41,13 +41,14 @@ export function grammarVisualAlt(topic: GrammarTopic, idioma: GrammarVisualLangu
   return `Infografía de ${topic.shortTitle} en ${language.label} ${nivel.toUpperCase()} con tabla, regla y ejemplos: ${topic.guide.formula}`
 }
 
-export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string, options: { contentLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' } = {}) {
+export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVisualLanguage, nivel: string, options: { contentLanguage?: 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' } = {}) {
   const language = GRAMMAR_VISUAL_LANGUAGES[idioma]
   const contentUrl = grammarVisualUrl(idioma, nivel, topic.slug)
   const english = options.contentLanguage === 'en'
   const french = options.contentLanguage === 'fr'
   const german = options.contentLanguage === 'de'
   const italian = options.contentLanguage === 'it'
+  const portuguese = options.contentLanguage === 'pt'
   const caption = english
     ? `Visual guide to ${topic.shortTitle} for English ${nivel.toUpperCase()}: ${topic.guide.formula}`
     : french
@@ -56,18 +57,20 @@ export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVis
     ? `Visueller Leitfaden zu ${topic.shortTitle} für Deutsch ${nivel.toUpperCase()}: ${topic.guide.formula}`
     : italian
     ? `Guida visiva a ${topic.shortTitle} per italiano ${nivel.toUpperCase()}: ${topic.guide.formula}`
+    : portuguese
+    ? `Guia visual de ${topic.shortTitle} para português ${nivel.toUpperCase()}: ${topic.guide.formula}`
     : grammarVisualAlt(topic, idioma, nivel)
   return {
     '@type': 'ImageObject',
-    name: english ? `Visual guide to ${topic.shortTitle} — English ${nivel.toUpperCase()}` : french ? `Guide visuel de ${topic.shortTitle} — Français ${nivel.toUpperCase()}` : german ? `Visueller Leitfaden zu ${topic.shortTitle} — Deutsch ${nivel.toUpperCase()}` : italian ? `Guida visiva a ${topic.shortTitle} — Italiano ${nivel.toUpperCase()}` : `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
+    name: english ? `Visual guide to ${topic.shortTitle} — English ${nivel.toUpperCase()}` : french ? `Guide visuel de ${topic.shortTitle} — Français ${nivel.toUpperCase()}` : german ? `Visueller Leitfaden zu ${topic.shortTitle} — Deutsch ${nivel.toUpperCase()}` : italian ? `Guida visiva a ${topic.shortTitle} — Italiano ${nivel.toUpperCase()}` : portuguese ? `Guia visual de ${topic.shortTitle} — Português ${nivel.toUpperCase()}` : `Guía visual de ${topic.shortTitle} — ${language.label} ${nivel.toUpperCase()}`,
     caption,
-    description: english ? `Original educational infographic for ${topic.shortTitle}, built from the lesson’s specific rule, visual map and examples.` : french ? `Infographie pédagogique originale sur ${topic.shortTitle}, construite à partir de la règle, de la carte visuelle et des exemples de la leçon.` : german ? `Originale Lerninfografik zu ${topic.shortTitle}, aufgebaut aus der Regel, der visuellen Karte und den Beispielen der Lektion.` : italian ? `Infografica didattica originale su ${topic.shortTitle}, costruita con la regola, la mappa visiva e gli esempi della lezione.` : `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
+    description: english ? `Original educational infographic for ${topic.shortTitle}, built from the lesson’s specific rule, visual map and examples.` : french ? `Infographie pédagogique originale sur ${topic.shortTitle}, construite à partir de la règle, de la carte visuelle et des exemples de la leçon.` : german ? `Originale Lerninfografik zu ${topic.shortTitle}, aufgebaut aus der Regel, der visuellen Karte und den Beispielen der Lektion.` : italian ? `Infografica didattica originale su ${topic.shortTitle}, costruita con la regola, la mappa visiva e gli esempi della lezione.` : portuguese ? `Infográfico didático original sobre ${topic.shortTitle}, criado com a regra, o mapa visual e os exemplos da lição.` : `Infografía educativa específica de ${topic.shortTitle}, con su tabla, estructura o mapa de uso según el tema, creada por Idiomas WeLearn para hispanohablantes.`,
     contentUrl,
     url: contentUrl,
     width: 1200,
     height: 630,
     encodingFormat: 'image/png',
-    inLanguage: english ? 'en' : french ? 'fr' : german ? 'de' : italian ? 'it' : ['es', language.code],
+    inLanguage: english ? 'en' : french ? 'fr' : german ? 'de' : italian ? 'it' : portuguese ? 'pt-BR' : ['es', language.code],
     creditText: 'Idiomas WeLearn',
     creator: { '@type': 'Organization', name: 'Idiomas WeLearn', url: SITE_ORIGIN },
   }
