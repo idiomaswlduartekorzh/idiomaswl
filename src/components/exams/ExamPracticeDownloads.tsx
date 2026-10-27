@@ -56,7 +56,11 @@ export default function ExamPracticeDownloads({ examSlug, mockId }: Props) {
         </div>
         <span aria-hidden="true">PDF</span>
       </div>
-      <p className={styles.intro}>{copy.intro}</p>
+      <p className={styles.intro}>
+        {resources.combinedReviewPacket
+          ? 'Abre o descarga el paquete protegido que corresponde exactamente a este set.'
+          : copy.intro}
+      </p>
       <div className={styles.grid}>
         {cards.map(card => (
           <article className={styles.card} key={card.href}>
