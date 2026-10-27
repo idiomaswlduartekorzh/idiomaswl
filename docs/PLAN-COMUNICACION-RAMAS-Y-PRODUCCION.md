@@ -5,6 +5,25 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Parche de seguridad Next.js y decisión de inscripción — 26 de octubre de 2026
+
+La [PR #46](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/46) actualizó Next.js a
+16.4.3 y las dependencias transitivas vulnerables. Entró en
+`main@15b634965357a5ab6ca704b059508a305870bf44`. Vercel publicó
+`dpl_CA1SJYdKr3PvigwrA84ZrBQm6kaS` desde ese SHA, estado `READY`, con
+`www.idiomaswl.com`, `idiomaswl.com` e `idiomaswl.vercel.app` asignados.
+Pasaron auditoría npm sin avisos conocidos, catálogo protegido, TypeScript,
+build completo, pruebas Wompi, pruebas de registro y controles de GitHub.
+El smoke público confirmó 200 en inicio, precios, inscripción y registro, y
+401 para consultar órdenes sin sesión. Estado: `DESPLEGADO`.
+
+La propuesta de tarifa única de inscripción de $99.000 COP y exención por
+continuidad está guardada en
+[`decision-tarifa-inscripcion-2026-10-26.md`](decision-tarifa-inscripcion-2026-10-26.md),
+sin activarse ni modificar cobros. La evidencia de seguridad, las fuentes y
+los límites están en
+[`auditoria-seguridad-php-next-2026-10-26.md`](auditoria-seguridad-php-next-2026-10-26.md).
+
 ## Conversión de las clases de español — 26 de octubre de 2026
 
 La rama `codex/spanish-hub-conversion-audit-20261026` se integró mediante PR #44

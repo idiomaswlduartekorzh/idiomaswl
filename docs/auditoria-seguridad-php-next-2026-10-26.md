@@ -12,8 +12,12 @@
 - `npm audit fix --package-lock-only` actualizó dependencias transitivas vulnerables: `dompurify` 3.4.15 → 3.4.17, `source-map-js` 1.2.1 → 1.2.2 y `zod` 4.4.3 → 4.6.7. No se modificó la lógica de cobros ni de inscripción.
 - `npm audit` y `npm audit --omit=dev`: **0 vulnerabilidades** en la base de avisos consultada. Esto no equivale a una prueba de que no existan fallos desconocidos.
 - `npm ci`, TypeScript, `npm run check:practica-catalog`, `npm run build` (3.663 páginas estáticas), 10 pruebas Wompi y 4 de registro: aprobados.
-- La revisión de Supabase Security Advisors mostró 44 tablas con RLS activado y sin políticas (regla de denegación por defecto para el cliente; las rutas administrativas usan el servidor), y una advertencia operativa: **protección de contraseñas filtradas desactivada** en Supabase Auth. Activarla en la configuración del proyecto sigue pendiente; este parche de dependencias no cambia la configuración de Auth.
+- La revisión de Supabase Security Advisors mostró 44 tablas con RLS activado y sin políticas (regla de denegación por defecto para el cliente; las rutas administrativas usan el servidor), y una advertencia operativa: **protección de contraseñas filtradas desactivada** en Supabase Auth. El proyecto está en el plan Free; [Supabase reserva esa protección para Pro](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection). No se contrató un plan de pago.
 
 ## Límite de la comprobación
 
-Una actualización y una auditoría de dependencias reducen los riesgos descritos, pero no garantizan inmunidad frente a ataques. Falta verificar el SHA del nuevo despliegue en Vercel, sus rutas esenciales y la configuración de Auth tras publicarlo. No se ejecutó una prueba de penetración ni se inspeccionaron servidores ajenos a `idiomaswl`.
+Una actualización y una auditoría de dependencias reducen los riesgos descritos, pero no garantizan inmunidad frente a ataques. No se ejecutó una prueba de penetración ni se inspeccionaron servidores ajenos a `idiomaswl`. La API de logs de Vercel devolvió 403, de modo que esta revisión no pudo analizar los errores de runtime del despliegue.
+
+## Publicación verificada
+
+La [PR #46](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/46) se integró como `main@15b634965357a5ab6ca704b059508a305870bf44`. GitHub marcó `baseline-and-types` y `production-build` como correctos. Vercel publicó `dpl_CA1SJYdKr3PvigwrA84ZrBQm6kaS` en estado `READY` desde ese SHA y lo asignó a `www.idiomaswl.com`, `idiomaswl.com` e `idiomaswl.vercel.app`. La comprobación pública confirmó HTTP 200 en `/`, `/precios`, `/inscripcion` y `/registro`; `/api/course-orders` sin sesión respondió 401. Las respuestas conservan HSTS y `X-Content-Type-Options: nosniff`.
