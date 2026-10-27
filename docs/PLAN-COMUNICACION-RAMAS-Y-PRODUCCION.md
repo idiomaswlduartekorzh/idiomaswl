@@ -5,6 +5,20 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Paneles de estudiante y administración — 26 de octubre de 2026
+
+La rama `codex/dashboard-redesign-20261026` parte de `main@480b5467` y propone un
+rediseño de ambos paneles. El estudiante puede filtrar resultados por examen y
+periodo, comparar su evolución y abrir el reporte más reciente. El centro
+administrativo ofrece filtros, actividad diaria, prioridades y seguimiento del
+estado de leads, con la escritura protegida por `requireAdmin`.
+
+Estado: `EN_VALIDACION`; no integrado ni publicado. Pasaron el catálogo protegido,
+TypeScript, ESLint focalizado, las 12 pruebas del panel de estudiante, el build
+optimizado y una revisión visual de escritorio y móvil. Falta validar con una
+sesión administrativa real el cambio de estado de un lead y revisar CI antes de
+integrar.
+
 ## Parche de seguridad Next.js y decisión de inscripción — 26 de octubre de 2026
 
 La [PR #46](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/46) actualizó Next.js a

@@ -5,6 +5,7 @@ import { setStudentAssignmentCompleted, submitStudentAssignment } from '@/lib/ac
 import { STUDENT_PRODUCT_COPY } from '@/lib/student-dashboard/catalog';
 import type { StudentDashboardData } from '@/lib/student-dashboard/types';
 import styles from './student-dashboard.module.css';
+import StudentInsights from './StudentInsights';
 
 const STATUS_COPY = {
   creating_source: 'Configurando cobro',
@@ -28,39 +29,6 @@ const PLAN_NAMES: Record<string, string> = {
 function dateLabel(value: string | null): string {
   if (!value) return 'Sin fecha';
   return new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'America/Bogota' }).format(new Date(value));
-}
-
-function LearningCurve({ data }: { data: StudentDashboardData }) {
-  const progress = data.progress;
-  const points = progress.points.slice(-8);
-  const coordinates = points.map((point, index) => ({
-    ...point,
-    x: points.length === 1 ? 310 : 30 + (index * 560) / (points.length - 1),
-    y: 145 - point.score * 1.15,
-  }));
-  const trend = progress.trendPoints;
-  const trendText = trend === null ? 'Necesitamos al menos dos intentos para calcular tu tendencia.'
-    : trend > 0 ? `Has subido ${trend} puntos desde tu primer intento.`
-      : trend < 0 ? `Tu resultado reciente está ${Math.abs(trend)} puntos por debajo del primero.`
-        : 'Tu resultado se mantiene estable.';
-  return <section className={`${styles.section} ${styles.progressSection}`} id="progreso" aria-labelledby="progress-title">
-    <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Tu evolución</p><h2 id="progress-title">Curva de aprendizaje</h2></div><span className={styles.progressScope}>{progress.examName ?? 'Tu examen'}</span></header>
-    <div className={styles.progressGrid}>
-      <div className={styles.curveCard}>
-        {coordinates.length ? <svg viewBox="0 0 620 170" role="img" aria-label={`Evolución de ${coordinates.length} resultados`}>
-          {[30, 60, 90].map((value) => <line key={value} x1="28" x2="595" y1={145 - value * 1.15} y2={145 - value * 1.15} />)}
-          {coordinates.length > 1 ? <polyline points={coordinates.map((point) => `${point.x},${point.y}`).join(' ')} /> : null}
-          {coordinates.map((point) => <g key={point.id}><circle cx={point.x} cy={point.y} r="6" /><text x={point.x} y={point.y - 12}>{point.score}%</text></g>)}
-        </svg> : <div className={styles.progressEmpty}>Completa un simulacro para empezar tu curva.</div>}
-        <div className={styles.trendCopy}><strong>{trend !== null && trend > 0 ? '↗ ' : trend !== null && trend < 0 ? '↘ ' : '→ '}{trendText}</strong><span>{points.length} intento{points.length === 1 ? '' : 's'} comparable{points.length === 1 ? '' : 's'} · promedio {progress.averageScore === null ? '—' : `${progress.averageScore}%`}</span></div>
-      </div>
-      <div className={styles.insightColumn}>
-        <article><span>Aspectos fuertes</span>{progress.strengths.length ? progress.strengths.map((item) => <div key={item.name}><strong>{item.name}</strong><b>{item.percentage}%</b></div>) : <p>Se mostrarán cuando tengamos resultados por habilidad.</p>}</article>
-        <article><span>Aspectos por mejorar</span>{progress.improvements.length ? progress.improvements.map((item) => <div key={item.name}><strong>{item.name}</strong><b>{item.percentage}%</b></div>) : <p>Completa más secciones para recibir una guía concreta.</p>}</article>
-      </div>
-    </div>
-    <div className={styles.activityFacts}><span><strong>{progress.activeDaysLast30}</strong> días activos en los últimos 30</span><span><strong>{progress.currentStreak}</strong> días de constancia actual</span><span><strong>{progress.lastActiveAt ? dateLabel(progress.lastActiveAt) : '—'}</strong> última actividad</span></div>
-  </section>;
 }
 
 function CourseProgress({ data }: { data: StudentDashboardData }) {
@@ -234,7 +202,7 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
         {guidedOnly ? <Courses courses={data.courses} /> : activeAccesses.length
           ? <div>{activeAccesses.map((access) => <ProductCard key={access.exam?.slug ?? access.product ?? 'access'} cardId={access.exam?.slug ?? 'access'} data={{ ...data, access, subscription: data.subscriptions.find((item) => item.examSlug === access.exam?.slug) ?? null }} />)}</div>
           : <ProductCard data={data} />}
-        {guidedOnly ? <CourseProgress data={data} /> : <LearningCurve data={data} />}
+        {guidedOnly ? <CourseProgress data={data} /> : <StudentInsights data={data} asOf={new Date().toISOString()} />}
         <Assignments data={data} preview={preview} />
         <div id="simulacros">{activeAccesses.map((access) => <MockLibrary key={access.exam?.slug ?? access.product ?? 'access'} data={{ ...data, access }} />)}</div>
         <div id="resultados">{data.access.product || data.attempts.length ? <Attempts data={data} /> : null}</div>

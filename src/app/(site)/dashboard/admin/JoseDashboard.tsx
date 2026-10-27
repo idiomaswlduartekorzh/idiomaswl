@@ -2,46 +2,32 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import {
   LayoutDashboard, Users, FileText, DollarSign,
   MessageCircle, Globe, BookOpen, GraduationCap,
   Calendar, Download,
   KeyRound,
-  ClipboardCheck, UserRoundSearch,
+  ClipboardCheck,
 } from 'lucide-react'
 import type React from 'react'
 import { signOut } from '@/lib/actions/signOut'
-import {
-  BarChart, Bar,
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
-} from 'recharts'
-import { motion } from 'framer-motion'
 import type { AdminViewer, DashboardData, LeadRow } from './JoseDashboardServer'
 import StudentList from './StudentList'
 import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
 import GoetheReviewPanel from './GoetheReviewPanel'
-import LivePresenceCard from './LivePresenceCard'
-import TrafficOverview from './TrafficOverview'
+import AdminOverview from './AdminOverview'
+import { updateLeadStatus, type LeadStatus } from './lead-actions'
 import styles from './admin-navigation.module.css'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
-const A2 = '#d4904f'
-const A3 = '#e8b080'
 const BG   = '#f5f0eb'
 const CARD = '#ffffff'
 const TEXT = '#1a1a2e'
 const MUTED  = '#9ca3af'
 const BORDER = '#e8ddd4'
-const GRID   = '#f0ebe4'
-
-const EXAM_COLORS: Record<string, string> = {
-  ielts: A,
-  toefl: A2,
-  icfes: A3,
-}
-
 // ─── Shared components ────────────────────────────────────────────────────────
 function Card({ children, style }: { children: React.ReactNode; style?: React.CSSProperties }) {
   return (
@@ -49,79 +35,6 @@ function Card({ children, style }: { children: React.ReactNode; style?: React.CS
       {children}
     </div>
   )
-}
-
-function Stat({ label, value, sub }: { label: string; value: string; sub: string }) {
-  return (
-    <div style={{ flex: 1, minWidth: 0 }}>
-      <p style={{ margin: '0 0 3px', fontSize: 11, color: MUTED, fontWeight: 500 }}>{label}</p>
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, flexWrap: 'wrap' }}>
-        <span style={{ fontSize: 24, fontWeight: 800, color: TEXT, letterSpacing: '-0.02em', lineHeight: 1 }}>{value}</span>
-        <span style={{ fontSize: 11, color: MUTED, whiteSpace: 'nowrap' }}>{sub}</span>
-      </div>
-    </div>
-  )
-}
-
-function ActionCard({
-  icon: Icon,
-  label,
-  value,
-  detail,
-  color,
-  onClick,
-}: {
-  icon: React.ElementType
-  label: string
-  value: number
-  detail: string
-  color: string
-  onClick: () => void
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        flex: 1,
-        minWidth: 220,
-        display: 'flex',
-        alignItems: 'center',
-        gap: 14,
-        padding: '16px 18px',
-        border: `1px solid ${BORDER}`,
-        borderRadius: 14,
-        background: CARD,
-        textAlign: 'left',
-        cursor: 'pointer',
-        boxShadow: '0 1px 6px rgba(0,0,0,0.04)',
-      }}
-    >
-      <span style={{ width: 38, height: 38, borderRadius: 11, background: `${color}18`, color, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-        <Icon size={19} />
-      </span>
-      <span style={{ flex: 1, minWidth: 0 }}>
-        <span style={{ display: 'block', color: MUTED, fontSize: 11, fontWeight: 700, marginBottom: 2 }}>{label}</span>
-        <span style={{ display: 'block', color: TEXT, fontSize: 12, lineHeight: 1.35 }}>{detail}</span>
-      </span>
-      <strong style={{ color, fontSize: 26, lineHeight: 1 }}>{value}</strong>
-    </button>
-  )
-}
-
-function weekTrend(thisWeek: number, lastWeek: number): string {
-  if (lastWeek === 0) return thisWeek > 0 ? '▲ nuevo' : '—'
-  const delta = ((thisWeek - lastWeek) / lastWeek) * 100
-  const sign = delta >= 0 ? '▲' : '▼'
-  return `${sign} ${Math.abs(delta).toFixed(0)}% vs sem. ant.`
-}
-
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('es-CO', {
-    day: '2-digit', month: 'short', year: 'numeric',
-    hour: '2-digit', minute: '2-digit',
-    timeZone: 'America/Bogota',
-  })
 }
 
 // ─── Leads de simulacros ──────────────────────────────────────────────────────
@@ -221,8 +134,14 @@ const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; 
 ]
 
 export default function JoseDashboard({ data, viewer }: { data: DashboardData; viewer: AdminViewer }) {
+  const router = useRouter()
   const [activeTab, setActiveTab] = useState<Tab>('overview')
   const [leadExam, setLeadExam] = useState<string>('todos')
+  const [leadStatus, setLeadStatus] = useState<LeadStatus | 'todos'>('todos')
+  const [leadSearch, setLeadSearch] = useState('')
+  const [leadStatuses, setLeadStatuses] = useState<Record<string, LeadStatus>>({})
+  const [savingLead, setSavingLead] = useState<string | null>(null)
+  const [leadError, setLeadError] = useState<string | null>(null)
 
   // Exámenes presentes en los leads, de más a menos. Se calcula de los datos:
   // cuando entre un examen nuevo aparece solo, sin tocar este archivo.
@@ -233,9 +152,27 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
     ),
   ).sort((a, b) => b[1] - a[1])
 
-  const visibleLeads = leadExam === 'todos'
-    ? data.leads
-    : data.leads.filter(l => leadExamName(l) === leadExam)
+  const visibleLeads = data.leads.map(lead => ({ ...lead, lead_status: leadStatuses[lead.id] ?? lead.lead_status })).filter(lead => {
+    if (leadExam !== 'todos' && leadExamName(lead) !== leadExam) return false
+    if (leadStatus !== 'todos' && lead.lead_status !== leadStatus) return false
+    const query = leadSearch.trim().toLowerCase()
+    return !query || [lead.name, lead.email, lead.whatsapp].some(value => value?.toLowerCase().includes(query))
+  })
+
+  async function changeLeadStatus(lead: LeadRow, status: LeadStatus) {
+    setSavingLead(lead.id)
+    setLeadError(null)
+    try {
+      const result = await updateLeadStatus(lead.id, status)
+      if (!result.ok) { setLeadError(result.error ?? 'No se pudo guardar el estado.'); return }
+      setLeadStatuses(current => ({ ...current, [lead.id]: status }))
+      router.refresh()
+    } catch {
+      setLeadError('No se pudo guardar el estado. Comprueba la conexión e intenta de nuevo.')
+    } finally {
+      setSavingLead(null)
+    }
+  }
 
   const now = new Date(data.generatedAt)
   const dateStr = now.toLocaleDateString('es-CO', {
@@ -244,36 +181,10 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
     timeZone: 'America/Bogota',
   })
 
-  const trend = weekTrend(data.thisWeekCount, data.lastWeekCount)
-  const trendColor = data.thisWeekCount >= data.lastWeekCount ? '#16a34a' : '#dc2626'
-
-  const oneWeekAgo = new Date(now.getTime() - 7 * 86400000)
-  const twoWeeksAgo = new Date(now.getTime() - 14 * 86400000)
-  const newStudentsThisWeek = data.students.filter(student =>
-    Boolean(student.enrolled_at && new Date(student.enrolled_at) >= oneWeekAgo)
-  ).length
-  const newContactableLeads = data.leads.filter(lead =>
-    Boolean(lead.whatsapp && new Date(lead.created_at) >= oneWeekAgo)
-  ).length
-  const pendingReviewCount = [
-    ...data.ieltsReviews,
-    ...data.toeflReviews,
-    ...data.goetheReviews,
-  ].filter(submission => !submission.reviewed_at).length
-  const studentsNeedingFollowUp = data.students.filter(student => {
-    if (student.last_active) return new Date(student.last_active) < twoWeeksAgo
-    return !student.enrolled_at || new Date(student.enrolled_at) < oneWeekAgo
-  }).length
-
-  // Bar chart data for per-exam breakdown
-  const examBarData = data.perExam.map(e => ({
-    name: e.exam_name,
-    count: e.count,
-    slug: e.exam_slug,
-  }))
+  const pendingReviewCount = [...data.ieltsReviews, ...data.toeflReviews, ...data.goetheReviews].filter(submission => !submission.reviewed_at).length
 
   return (
-    <div style={{ display: 'flex', height: '100vh', background: BG, fontFamily: "system-ui,-apple-system,'Segoe UI',sans-serif", overflow: 'hidden', color: TEXT }}>
+    <div className={styles.adminShell} style={{ display: 'flex', height: '100vh', background: '#f3f6fb', fontFamily: "system-ui,-apple-system,'Segoe UI',sans-serif", overflow: 'hidden', color: TEXT }}>
 
       {/* ── LEFT SIDEBAR ── */}
       <aside className={styles.sidebar} aria-label="Navegación del administrador">
@@ -291,7 +202,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
         {/* TOP BAR */}
-        <header style={{ background: CARD, borderBottom: `1px solid ${BORDER}`, padding: '0 20px', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexShrink: 0 }}>
+        <header style={{ background: CARD, borderBottom: '1px solid #dce5f0', padding: '0 20px', height: 58, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexShrink: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 16, flexShrink: 0 }}>
             <span style={{ fontWeight: 800, fontSize: 15, color: TEXT, letterSpacing: '-0.3px' }}>
               <span style={{ color: A }}>Idiomas</span> WeLearn
@@ -301,7 +212,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
           <div style={{ flex: 1 }} />
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 11, color: MUTED }}>
+            <div className={styles.dateStamp} style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 11, color: MUTED }}>
               <Calendar size={12} />
               <span style={{ whiteSpace: 'nowrap' }}>{dateStr}</span>
             </div>
@@ -321,7 +232,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
         </header>
 
         {/* CONTENT */}
-        <main style={{ flex: 1, overflowY: 'auto', padding: '22px 24px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+        <main style={{ flex: 1, overflowY: 'auto', padding: '26px clamp(15px, 2.5vw, 34px)', display: 'flex', flexDirection: 'column', gap: 14 }}>
           {/* ── STUDENTS TAB ── */}
           {activeTab === 'students' && (
             <div>
@@ -368,6 +279,11 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                       ))}
                     </select>
                   )}
+                  <select value={leadStatus} onChange={e => setLeadStatus(e.target.value as LeadStatus | 'todos')} aria-label="Filtrar leads por estado" style={{ padding: '7px 10px', borderRadius: 7, border: '1px solid #cbd6e5', background: CARD, fontSize: 11, color: TEXT }}>
+                    <option value="todos">Todos los estados</option>
+                    {Object.entries(LEAD_STATUS_LABELS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+                  </select>
+                  <input type="search" value={leadSearch} onChange={e => setLeadSearch(e.target.value)} placeholder="Buscar nombre, correo o WhatsApp" aria-label="Buscar leads" style={{ padding: '7px 10px', minWidth: 210, borderRadius: 7, border: '1px solid #cbd6e5', background: CARD, fontSize: 11, color: TEXT }} />
                   <span style={{ fontSize: 12, color: MUTED }}>{visibleLeads.length} registros</span>
                   <a
                     href={`data:text/csv;charset=utf-8,${encodeURIComponent(leadsCsv(visibleLeads))}`}
@@ -377,6 +293,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                   </a>
                 </div>
               </div>
+              {leadError ? <p role="alert" style={{ color: '#b42318', fontSize: 12, margin: '0 0 12px' }}>{leadError}</p> : null}
               <Card>
                 {visibleLeads.length === 0 ? (
                   <div style={{ padding: '3rem', textAlign: 'center' }}>
@@ -432,9 +349,9 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                               </div>
                             </td>
                             <td style={{ padding: '10px 12px' }}>
-                              <span style={{ display: 'inline-block', padding: '3px 8px', borderRadius: 20, background: '#eef2ff', color: '#3730a3', fontSize: 10, fontWeight: 800, whiteSpace: 'nowrap' }}>
-                                {LEAD_STATUS_LABELS[lead.lead_status]}
-                              </span>
+                              {lead.id.startsWith('submission-') ? <span title="Contacto histórico sin registro editable" style={{ color: MUTED, fontSize: 10 }}>Histórico</span> : <select aria-label={`Estado de ${lead.name ?? lead.email ?? 'lead'}`} value={lead.lead_status} disabled={savingLead === lead.id} onChange={event => void changeLeadStatus(lead, event.target.value as LeadStatus)} style={{ padding: '5px 8px', borderRadius: 6, border: '1px solid #cbd6e5', background: '#f3f7fc', color: '#244d8b', fontSize: 10, fontWeight: 750 }}>
+                                {Object.entries(LEAD_STATUS_LABELS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+                              </select>}
                             </td>
                             <td style={{ padding: '10px 12px', color: MUTED, fontSize: 11, whiteSpace: 'nowrap' }}>
                               {new Date(lead.created_at).toLocaleString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Bogota' })}
@@ -477,217 +394,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
             </div>
           </>}
 
-          {/* ── OVERVIEW TAB ── */}
-          {activeTab === 'overview' && <>
-
-          {/* Title */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div>
-              <h1 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>Centro operativo</h1>
-              <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Tráfico, actividad de exámenes y señales del sitio.</p>
-            </div>
-          </div>
-
-          <LivePresenceCard />
-          <TrafficOverview traffic={data.traffic} completedExams7d={data.completedExams7d} examLeads7d={data.examLeads7d} />
-
-          {/* Acciones que requieren atención, calculadas con datos reales. */}
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }} aria-label="Prioridades operativas">
-            <ActionCard
-              icon={ClipboardCheck}
-              label="Correcciones pendientes"
-              value={pendingReviewCount}
-              detail="IELTS, TOEFL y Goethe aún sin cerrar"
-              color="#7c3aed"
-              onClick={() => setActiveTab('reviews')}
-            />
-            <ActionCard
-              icon={MessageCircle}
-              label="Leads nuevos con WhatsApp"
-              value={newContactableLeads}
-              detail="Capturados durante los últimos 7 días"
-              color="#16a34a"
-              onClick={() => setActiveTab('leads')}
-            />
-            <ActionCard
-              icon={UserRoundSearch}
-              label="Estudiantes para seguimiento"
-              value={studentsNeedingFollowUp}
-              detail="Sin actividad reciente o sin haber empezado"
-              color="#dc2626"
-              onClick={() => setActiveTab('students')}
-            />
-          </div>
-
-          {/* KPI strip */}
-          <Card style={{ padding: '16px 24px' }}>
-            <div style={{ display: 'flex', gap: 0, alignItems: 'stretch', flexWrap: 'wrap' }}>
-              <Stat label="Simulacros totales" value={String(data.totalCount)} sub="enviados" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Esta semana" value={String(data.thisWeekCount)} sub="simulacros" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Semana anterior" value={String(data.lastWeekCount)} sub="simulacros" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Personas evaluadas" value={String(data.uniqueExamTakers)} sub="identificadas" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Estudiantes" value={String(data.students.length)} sub="registrados" />
-              {newStudentsThisWeek > 0 && (
-                <>
-                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-                  <Stat label="Nuevos esta semana" value={String(newStudentsThisWeek)} sub="estudiantes" />
-                </>
-              )}
-            </div>
-          </Card>
-
-          {/* Row 2: Exam breakdown + Top users */}
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 14 }}>
-
-            {/* Exam bar chart */}
-            <Card>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
-                <div>
-                  <h3 style={{ margin: '0 0 6px', fontSize: 14, fontWeight: 700 }}>Simulacros por examen</h3>
-                  <div style={{ display: 'flex', gap: 20 }}>
-                    <div>
-                      <p style={{ margin: 0, fontSize: 10, color: MUTED }}>Total</p>
-                      <p style={{ margin: 0, fontSize: 18, fontWeight: 800, letterSpacing: '-0.02em' }}>{data.totalCount}</p>
-                    </div>
-                    <div>
-                      <p style={{ margin: 0, fontSize: 10, color: MUTED }}>Esta semana</p>
-                      <p style={{ margin: 0, fontSize: 18, fontWeight: 800, letterSpacing: '-0.02em', color: trendColor }}>{data.thisWeekCount}</p>
-                    </div>
-                  </div>
-                </div>
-                <span style={{ fontSize: 11, color: trendColor, fontWeight: 700, paddingTop: 4 }}>{trend}</span>
-              </div>
-              {examBarData.length > 0 ? (
-                <ResponsiveContainer width="100%" height={155}>
-                  <BarChart data={examBarData} margin={{ top: 4, right: 4, left: -24, bottom: 0 }} barSize={40}>
-                    <CartesianGrid strokeDasharray="3 3" stroke={GRID} vertical={false} />
-                    <XAxis dataKey="name" tick={{ fontSize: 10, fill: MUTED }} axisLine={false} tickLine={false} />
-                    <YAxis tick={{ fontSize: 10, fill: MUTED }} axisLine={false} tickLine={false} allowDecimals={false} />
-                    <Tooltip
-                      contentStyle={{ background: TEXT, border: 'none', borderRadius: 8, color: '#fff', fontSize: 11, padding: '8px 12px' }}
-                      labelStyle={{ color: '#ccc', marginBottom: 4 }}
-                      formatter={(v) => [v, 'Simulacros']}
-                    />
-                    <Bar dataKey="count" radius={[6, 6, 0, 0]}>
-                      {examBarData.map((d, i) => (
-                        <Cell key={i} fill={EXAM_COLORS[d.slug] ?? A} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              ) : (
-                <div style={{ height: 155, display: 'flex', alignItems: 'center', justifyContent: 'center', color: MUTED, fontSize: 13 }}>
-                  Sin datos aún
-                </div>
-              )}
-            </Card>
-
-            {/* Estado exámenes — per-exam summary */}
-            <Card style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ marginBottom: 6 }}>
-                <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>Estado exámenes</h3>
-              </div>
-              <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>
-                Personas evaluadas: <strong style={{ color: TEXT, fontWeight: 700 }}>{data.uniqueExamTakers}</strong>
-              </p>
-              {/* Color bars */}
-              {data.perExam.length > 0 && (
-                <div style={{ display: 'flex', gap: 5, marginBottom: 14 }}>
-                  {data.perExam.slice(0, 3).map(e => (
-                    <div key={e.exam_slug} style={{ flex: e.count, height: 58, background: EXAM_COLORS[e.exam_slug] ?? A, borderRadius: 10 }} />
-                  ))}
-                </div>
-              )}
-              {/* Legend */}
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                {data.perExam.slice(0, 3).map(e => (
-                  <div key={e.exam_slug} style={{ flex: 1, minWidth: 60 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginBottom: 2 }}>
-                      <div style={{ width: 7, height: 7, borderRadius: '50%', background: EXAM_COLORS[e.exam_slug] ?? A }} />
-                      <span style={{ fontSize: 10, color: MUTED }}>{e.exam_name}</span>
-                    </div>
-                    <p style={{ margin: 0, fontSize: 15, fontWeight: 800, color: TEXT }}>{e.count}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
-          </div>
-
-          {/* Row 3: Recent submissions + Top users */}
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 14 }}>
-
-            {/* Recent submissions table */}
-            <Card>
-              <div style={{ marginBottom: 12 }}>
-                <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>Últimos simulacros</h3>
-              </div>
-              {data.recentSubmissions.length === 0 ? (
-                <p style={{ color: MUTED, fontSize: 13, textAlign: 'center', padding: '20px 0' }}>Sin simulacros registrados aún</p>
-              ) : (
-                <div style={{ overflowX: 'auto' }}>
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
-                    <thead>
-                      <tr>
-                        {['Email', 'Examen', 'Resultado', 'Fecha'].map(h => (
-                          <th key={h} style={{ textAlign: 'left', padding: '4px 8px', color: MUTED, fontWeight: 600, fontSize: 10, borderBottom: `1px solid ${BORDER}`, whiteSpace: 'nowrap' }}>{h}</th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {data.recentSubmissions.map((s, i) => (
-                        <motion.tr
-                          key={s.id}
-                          initial={{ opacity: 0, y: 4 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: i * 0.03 }}
-                          style={{ borderBottom: `1px solid ${BORDER}` }}
-                        >
-                          <td style={{ padding: '7px 8px', color: TEXT, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {s.user_email ?? <span style={{ color: MUTED }}>anónimo</span>}
-                          </td>
-                          <td style={{ padding: '7px 8px', color: TEXT }}>{s.exam_name}</td>
-                          <td style={{ padding: '7px 8px', fontWeight: 700, color: A }}>{s.total_label ?? '—'}</td>
-                          <td style={{ padding: '7px 8px', color: MUTED, whiteSpace: 'nowrap' }}>{formatDate(s.created_at)}</td>
-                        </motion.tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              )}
-            </Card>
-
-            {/* Top users */}
-            <Card>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-                <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>Top estudiantes</h3>
-              </div>
-              {data.topUsers.length === 0 ? (
-                <p style={{ color: MUTED, fontSize: 13, textAlign: 'center', padding: '20px 0' }}>Sin datos aún</p>
-              ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                  {data.topUsers.map((u, i) => (
-                    <div key={u.user_email} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                      <div style={{ width: 24, height: 24, borderRadius: '50%', background: i === 0 ? A : BORDER, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 700, color: i === 0 ? '#fff' : MUTED, flexShrink: 0 }}>
-                        {i + 1}
-                      </div>
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <p style={{ margin: 0, fontSize: 11, color: TEXT, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                          {u.user_email}
-                        </p>
-                      </div>
-                      <span style={{ fontSize: 12, fontWeight: 800, color: TEXT }}>{u.count}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </Card>
-          </div>
-
-          </>}
+          {activeTab === 'overview' && <AdminOverview data={data} viewer={viewer} onTabChange={setActiveTab} />}
 
         </main>
       </div>
