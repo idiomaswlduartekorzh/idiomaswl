@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">Routes used for unwanted household textiles in a fictional regional survey</title><desc id="chart-desc">The two equal-sized pie charts show percentage shares for four routes. In 2012, reuse accounted for 18%, recycling 12%, waste 52% and storage 18%. In 2025, reuse accounted for 31%, recycling 34%, waste 22% and storage 13%. Each year totals 100%.</desc>
+  <defs>
+    <pattern id="master-recycling" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#EAF3EE"/><line x1="0" y1="0" x2="0" y2="12" stroke="#3C7D5A" stroke-width="5"/></pattern>
+    <pattern id="master-waste" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#FFF1F1"/><circle cx="4" cy="4" r="2.6" fill="#B33A3A"/><circle cx="11" cy="11" r="2.6" fill="#B33A3A"/></pattern>
+    <pattern id="master-storage" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#FFF5E9"/><path d="M-2 2 L2 -2 M0 14 L14 0 M12 16 L16 12 M12 -2 L16 2 M0 0 L14 14 M-2 12 L2 16" stroke="#D9822B" stroke-width="2.5"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#FFFFFF"/><path d="M40 40 H270 L40 270 Z" fill="#F2EEFA"/><path d="M1560 960 H1330 L1560 730 Z" fill="#F2EEFA"/><rect x="40" y="40" width="1520" height="920" rx="8" fill="none" stroke="#17324D" stroke-width="5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="800" y="100" text-anchor="middle" font-size="42" font-weight="700" fill="#17324D">Routes used for unwanted household textiles</text>
+    <text x="800" y="148" text-anchor="middle" font-size="42" font-weight="700" fill="#17324D">in a fictional regional survey</text>
+    <text x="800" y="184" text-anchor="middle" font-size="27" fill="#17324D">Percentage share by route, 2012 and 2025</text>
+    <g aria-label="Legend"><g class="legend-entry"><rect class="legend-swatch" data-legend="Reuse" data-border-style="single" x="345" y="206" width="30" height="24" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/><text x="387" y="226" font-size="24" fill="#17324D">Reuse</text></g>
+<g class="legend-entry"><rect class="legend-swatch" data-legend="Recycling" data-border-style="double" x="590" y="206" width="30" height="24" fill="url(#master-recycling)" stroke="#3C7D5A" stroke-width="3"/><rect x="593" y="209" width="24" height="18" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="632" y="226" font-size="24" fill="#17324D">Recycling</text></g>
+<g class="legend-entry"><rect class="legend-swatch" data-legend="Waste" data-border-style="dashed" x="835" y="206" width="30" height="24" fill="url(#master-waste)" stroke="#B33A3A" stroke-width="3" stroke-dasharray="8 5"/><text x="877" y="226" font-size="24" fill="#17324D">Waste</text></g>
+<g class="legend-entry"><rect class="legend-swatch" data-legend="Storage" data-border-style="single-thick" x="1080" y="206" width="30" height="24" fill="url(#master-storage)" stroke="#17324D" stroke-width="6"/><text x="1122" y="226" font-size="24" fill="#17324D">Storage</text></g></g>
+    <g class="slice-group" data-year="2012" data-category="Reuse" data-value="18" data-start="-90" data-end="-25.2" data-radius="220" data-encoding="reuse" data-border-style="single">
+      <path class="data-slice" d="M 460 530 L 460 310 A 220 220 0 0 1 659.06 436.33 Z" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/>
+      <polyline class="leader" points="582.17,337.49 612.7,289.4" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="622.7" y="285.4" text-anchor="start" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="622.7" dy="0">Reuse</tspan><tspan x="622.7" dy="27">18%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2012" data-category="Recycling" data-value="12" data-start="-25.2" data-end="18" data-radius="220" data-encoding="recycling" data-border-style="double">
+      <path class="data-slice" d="M 460 530 L 659.06 436.33 A 220 220 0 0 1 669.23 597.98 Z" fill="url(#master-recycling)" stroke="#3C7D5A" stroke-width="6"/><path d="M 460 530 L 659.06 436.33 A 220 220 0 0 1 669.23 597.98 Z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"/>
+      <polyline class="leader" points="687.55,515.68 744.4,512.1" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="775" y="508.1" text-anchor="end" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="775" dy="0">Recycling</tspan><tspan x="775" dy="27">12%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2012" data-category="Waste" data-value="52" data-start="18" data-end="205.2" data-radius="220" data-encoding="waste" data-border-style="dashed">
+      <path class="data-slice" d="M 460 530 L 669.23 597.98 A 220 220 0 1 1 260.94 436.33 Z" fill="url(#master-waste)" stroke="#B33A3A" stroke-width="4" stroke-dasharray="10 7"/>
+      <polyline class="leader" points="376.07,741.99 355.1,795" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="345.1" y="791" text-anchor="end" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="345.1" dy="0">Waste</tspan><tspan x="345.1" dy="27">52%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2012" data-category="Storage" data-value="18" data-start="205.2" data-end="270" data-radius="220" data-encoding="storage" data-border-style="single-thick">
+      <path class="data-slice" d="M 460 530 L 260.94 436.33 A 220 220 0 0 1 460 310 Z" fill="url(#master-storage)" stroke="#17324D" stroke-width="7"/>
+      <polyline class="leader" points="337.83,337.49 307.3,289.4" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="297.3" y="285.4" text-anchor="end" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="297.3" dy="0">Storage</tspan><tspan x="297.3" dy="27">18%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2025" data-category="Reuse" data-value="31" data-start="-90" data-end="21.6" data-radius="220" data-encoding="reuse" data-border-style="single">
+      <path class="data-slice" d="M 1140 530 L 1140 310 A 220 220 0 0 1 1344.55 610.99 Z" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/>
+      <polyline class="leader" points="1328.57,401.84 1375.7,369.8" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="1385.7" y="365.8" text-anchor="start" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="1385.7" dy="0">Reuse</tspan><tspan x="1385.7" dy="27">31%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2025" data-category="Recycling" data-value="34" data-start="21.6" data-end="144" data-radius="220" data-encoding="recycling" data-border-style="double">
+      <path class="data-slice" d="M 1140 530 L 1344.55 610.99 A 220 220 0 0 1 962.02 659.31 Z" fill="url(#master-recycling)" stroke="#3C7D5A" stroke-width="6"/><path d="M 1140 530 L 1344.55 610.99 A 220 220 0 0 1 962.02 659.31 Z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9"/>
+      <polyline class="leader" points="1168.58,756.2 1175.7,812.8" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="1185.7" y="808.8" text-anchor="start" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="1185.7" dy="0">Recycling</tspan><tspan x="1185.7" dy="27">34%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2025" data-category="Waste" data-value="22" data-start="144" data-end="223.2" data-radius="220" data-encoding="waste" data-border-style="dashed">
+      <path class="data-slice" d="M 1140 530 L 962.02 659.31 A 220 220 0 0 1 979.63 379.4 Z" fill="url(#master-waste)" stroke="#B33A3A" stroke-width="4" stroke-dasharray="10 7"/>
+      <polyline class="leader" points="912.45,515.68 855.6,512.1" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="825" y="508.1" text-anchor="start" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="825" dy="0">Waste</tspan><tspan x="825" dy="27">22%</tspan></text>
+    </g>
+<g class="slice-group" data-year="2025" data-category="Storage" data-value="13" data-start="223.2" data-end="270" data-radius="220" data-encoding="storage" data-border-style="single-thick">
+      <path class="data-slice" d="M 1140 530 L 979.63 379.4 A 220 220 0 0 1 1140 310 Z" fill="url(#master-storage)" stroke="#17324D" stroke-width="7"/>
+      <polyline class="leader" points="1049.45,320.75 1026.8,268.4" fill="none" stroke="#526B82" stroke-width="3"/>
+      <text class="direct-label" x="1016.8" y="264.4" text-anchor="end" font-size="24" font-weight="700" fill="#17324D" stroke="#FFFFFF" stroke-width="6" paint-order="stroke fill" stroke-linejoin="round"><tspan x="1016.8" dy="0">Storage</tspan><tspan x="1016.8" dy="27">13%</tspan></text>
+    </g>
+    <text x="460" y="865" text-anchor="middle" font-size="30" font-weight="700" fill="#17324D">2012</text><text x="1140" y="865" text-anchor="middle" font-size="30" font-weight="700" fill="#17324D">2025</text>
+    <text x="800" y="905" text-anchor="middle" font-size="25" font-weight="700" fill="#17324D">Unit: percentage</text>
+    <text x="75" y="940" font-size="22" fill="#17324D">Source: author-created fictional data for WeLearn Original Practice</text><text x="1525" y="940" text-anchor="end" font-size="22" font-weight="700" fill="#17324D">WeLearn Original Practice</text>
+  </g>
+</svg>

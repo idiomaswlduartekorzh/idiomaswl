@@ -4,6 +4,7 @@ import { examCan } from '@/lib/xpress-commerce/access';
 import { parseXpressExamSlug, resolveExamAccessForUser } from '@/lib/xpress-commerce/access.server';
 import { xpressUser } from '@/lib/xpress-commerce/payments.server';
 import { getPrivateExamMaterial, type ExamMaterialKind } from '@/lib/exams/transcript-resource';
+import { isVerifiedAdminUser } from '@/lib/config/admins';
 
 export const runtime = 'nodejs';
 
@@ -32,9 +33,11 @@ export async function GET(
   const user = await xpressUser();
   if (!user) return errorResponse('authentication_required', 401);
   try {
-    const access = await resolveExamAccessForUser(user.id, examSlug);
-    if (!examCan(access.level, 'download-materials')) {
-      return errorResponse('paid_exam_access_required', 403);
+    if (!isVerifiedAdminUser(user)) {
+      const access = await resolveExamAccessForUser(user.id, examSlug);
+      if (!examCan(access.level, 'download-materials')) {
+        return errorResponse('paid_exam_access_required', 403);
+      }
     }
     const absolutePath = path.join(process.cwd(), 'private', 'exam-materials', material.relativePath);
     const file = await readFile(absolutePath);

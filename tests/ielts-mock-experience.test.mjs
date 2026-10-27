@@ -17,6 +17,10 @@ const expectedNumbers = Array.from({ length: 40 }, (_, index) => index + 1);
 
 function questionNumbers(section) {
   return section.questions.flatMap(question => {
+    if (question.type === 'fill') {
+      const number = Number(question.id.match(/q(\d+)$/i)?.[1]);
+      return Number.isInteger(number) ? [number] : [];
+    }
     if (question.type === 'formgroup') return question.blanks.map(blank => blank.num);
     if (question.type === 'tablegroup') {
       return question.rows.flatMap(row => row)
@@ -35,9 +39,9 @@ function questionNumbers(section) {
   });
 }
 
-test('all 20 public IELTS sets satisfy the Set 1 navigation and answer-sheet contract', async () => {
+test('all 40 public IELTS sets satisfy the Set 1 navigation and answer-sheet contract', async () => {
   const bridge = read('src/lib/labs/exam-bridge/ielts.ts');
-  for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
+  for (let setNumber = 1; setNumber <= 40; setNumber += 1) {
     const mockId = `set-${setNumber}`;
     const mock = (await import(`../src/data/mocks/ielts-set-${setNumber}.ts`)).default;
     const active = mock.sections.filter(section => !section.comingSoon);

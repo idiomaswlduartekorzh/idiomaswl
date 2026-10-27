@@ -9,10 +9,10 @@ import styles from '../../toefl/page.module.css';
 const URL = 'https://www.idiomaswl.com/practica/ielts/listening';
 
 export const metadata: Metadata = {
-  title: 'IELTS Listening: Format, Strategy and 20 Practice Sets',
-  description: 'Understand the four IELTS Listening parts, follow a practical study method, and practise 20 audited sets with replayable audio and printable PDFs.',
+  title: 'IELTS Listening: Format, Strategy and 40 Practice Sets',
+  description: 'Understand the four IELTS Listening parts, follow a practical study method, and practise 40 assembled sets with replayable audio and printable PDFs.',
   alternates: { canonical: URL },
-  openGraph: { title: 'IELTS Listening: Format and Practice', description: 'Four-part IELTS Listening guidance and 20 complete WeLearn practice sets.', url: URL, type: 'website', locale: 'en_US' },
+  openGraph: { title: 'IELTS Listening: Format and Practice', description: 'Four-part IELTS Listening guidance and 40 complete WeLearn practice sets.', url: URL, type: 'website', locale: 'en_US' },
 };
 
 const parts = [
@@ -42,8 +42,8 @@ export default function IELTSListeningPage() {
           <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Practice</Link><span>›</span><Link href="/practica/ielts">IELTS</Link><span>›</span><span>Listening</span></nav>
           <p className={styles.kicker}>IELTS Academic · Listening study route</p>
           <h1>IELTS Listening: understand the four parts, then practise the full set.</h1>
-          <p className={styles.lead}>Learn what changes from an everyday conversation to an academic lecture, then use any of the 20 audited WeLearn sets with complete playback control and no timer.</p>
-          <div className={styles.facts} aria-label="IELTS Listening summary"><div><strong>4</strong><span>parts in every set</span></div><div><strong>40</strong><span>scored responses</span></div><div><strong>20</strong><span>audited practice sets</span></div><div><strong>PDF</strong><span>student copy for every set</span></div></div>
+          <p className={styles.lead}>Learn what changes from an everyday conversation to an academic lecture, then use any of the 40 assembled WeLearn sets with complete playback control and no timer.</p>
+          <div className={styles.facts} aria-label="IELTS Listening summary"><div><strong>4</strong><span>parts in every set</span></div><div><strong>40</strong><span>scored responses</span></div><div><strong>40</strong><span>assembled practice sets</span></div><div><strong>PDF</strong><span>student copy for every set</span></div></div>
         </div></section>
 
         <section className={styles.routes} aria-labelledby="ielts-listening-parts"><div className="wrap">

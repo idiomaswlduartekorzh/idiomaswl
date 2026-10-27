@@ -17,7 +17,7 @@ membretada. La descarga es libre y de un clic: no pide correo.
 | Escritura | `generateWritingPdf.ts` | `IntegratedWritingPractice` |
 | Los 100 verbos irregulares | `generateVerbsResourcePdf.ts` | dentro de `ingles/a2/gramatica/past-simple-irregular` |
 
-IELTS Listening ya ofrece 20 hojas de estudiante en sus prácticas por set. El
+IELTS Listening ya ofrece 40 hojas de estudiante en sus prácticas por set. El
 [PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15), publicado en producción,
 añadió hojas para Goethe A1 (10 sets, por destreza y por Teil) y TOEFL iBT 2026
 (20 simulacros completos y 20 prácticas independientes de Listening). Los PDF
@@ -26,7 +26,7 @@ nacen del mismo mock que ve el estudiante:
 compone el PDF con la plantilla. No imprime claves, soluciones, transcripciones ni guiones de
 Listen and Repeat. El audio se abre desde la práctica viva.
 
-La ampliación de la rama de unificación añade botones por destreza en los 20 sets
+La ampliación de la rama de unificación añade botones por destreza en los 40 sets
 TOEFL e IELTS, y por Task/Part/Pasaje en las prácticas independientes de IELTS.
 Goethe A1–B1 ofrece dos escalas de descarga: cada Teil por separado y toda la
 destreza reunida en un solo PDF. Los cuadernillos completos conservan el orden
@@ -43,6 +43,11 @@ transcripción del audio y las claves con criterios para tareas abiertas. Son 57
 pares descargables resueltos desde un registro común, sin enlaces manuales por
 página. Las claves se generan desde el mismo catálogo que usa la corrección de
 la plataforma y se sirven desde `public/downloads/exam-answer-keys/`.
+
+IELTS 21–40 añade 20 cuadernillos públicos de candidato y 20 paquetes privados
+de revisión que reúnen clave y transcripción. Los cuadernillos se sirven desde
+`public/downloads/ielts/`; los paquetes de staff nunca viven en `public/` y se
+entregan mediante la ruta autenticada de materiales del examen.
 
 `npm run check:exam-worksheets` comprueba los 70 sets, el recorte por Teil y por
 destreza completa, la numeración continua de los Antwortbogen Goethe,

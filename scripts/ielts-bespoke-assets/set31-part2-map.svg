@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bramley Signal Box Visitor Plan</title>
+  <desc id="desc">A polished candidate floor plan with a south entrance, a central hall, a western garden path and eight unnamed locations A to H.</desc>
+  <defs>
+    <pattern id="garden" width="38" height="38" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="5" fill="#a8c8a0"/><circle cx="28" cy="27" r="7" fill="#c4dbc0"/></pattern>
+    <pattern id="platform" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 14L14 0M-4 4L4-4M10 18L18 10" stroke="#8e9caf" stroke-width="2"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#14215c" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#fbfcff"/>
+  <rect x="18" y="18" width="1164" height="724" rx="22" fill="none" stroke="#14215c" stroke-width="3"/>
+  <rect x="38" y="36" width="1124" height="72" rx="15" fill="#eef3fb"/><rect x="38" y="36" width="14" height="72" rx="7" fill="#c8202e"/>
+  <g font-family="Helvetica Neue,Arial,sans-serif" fill="#14215c"><text x="76" y="70" font-size="30" font-weight="700">BRAMLEY SIGNAL BOX</text><text x="76" y="94" font-size="15" fill="#5c6680">Visitor plan · choose from options A–H</text><g transform="translate(1080 56)"><text x="0" y="0" text-anchor="middle" font-size="14" font-weight="700">N</text><path d="M0 12V45M0 12l-8 13M0 12l8 13" fill="none" stroke="#14215c" stroke-width="3"/></g></g>
+  <!-- garden and building shell -->
+  <path d="M70 160C135 126 244 132 303 192C334 224 326 289 291 326C244 374 151 376 84 340C48 301 43 202 70 160Z" fill="url(#garden)" stroke="#5f8759" stroke-width="4"/>
+  <text x="178" y="186" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" fill="#5f8759">GARDEN PATH</text>
+  <path d="M344 148H1086V596H344Z" fill="#fff" stroke="#27364f" stroke-width="7" filter="url(#shadow)"/>
+  <path d="M344 456H1086M548 148V596M822 148V596" stroke="#a7b0bf" stroke-width="4"/>
+  <path d="M548 302H822" stroke="#a7b0bf" stroke-width="4"/>
+  <rect x="568" y="323" width="234" height="112" rx="10" fill="#f8f0df" stroke="#aa8d5d" stroke-width="3"/>
+  <text x="685" y="375" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="700" fill="#7c6848">CENTRAL HALL</text><text x="685" y="401" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="13" fill="#7c6848">public circulation</text>
+  <rect x="843" y="172" width="218" height="112" rx="8" fill="url(#platform)" stroke="#53687f" stroke-width="3"/><path d="M850 305H1050" stroke="#c8202e" stroke-width="7"/><text x="950" y="325" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="13" fill="#c8202e">SAFETY LINE</text>
+  <g stroke="#725d42" stroke-width="8"><path d="M592 192v76M626 192v76M660 192v76M694 192v76M728 192v76M762 192v76"/></g><text x="677" y="180" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="13" fill="#5c6680">PRESERVED WORKING FLOOR</text>
+  <!-- public route -->
+  <path d="M685 708V582C685 534 639 508 592 500L437 481M705 500H945V415" fill="none" stroke="#dce5f2" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><path d="M685 708V582C685 534 639 508 592 500L437 481M705 500H945V415" fill="none" stroke="#53687f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="730" y="686" font-family="Helvetica Neue,Arial,sans-serif" font-size="14" fill="#5c6680">MAIN ENTRANCE</text><path d="M648 596h74" stroke="#fff" stroke-width="12"/>
+  <!-- ramp and steps -->
+  <path d="M1038 604H1110V458H1069" fill="none" stroke="#7a9b73" stroke-width="22"/><path d="M1046 604H1118M1046 578H1118M1046 552H1118" stroke="#5f8759" stroke-width="3"/><text x="1117" y="532" transform="rotate(-90 1117 532)" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" fill="#5f8759">LEVEL ACCESS</text>
+  <path d="M320 456h48M320 473h48M320 490h48" stroke="#8e9caf" stroke-width="5"/><text x="300" y="530" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" fill="#5c6680">historic steps</text>
+  <!-- neutral fixtures -->
+  <rect x="376" y="510" width="126" height="58" rx="8" fill="#edf1f7" stroke="#53687f" stroke-width="3"/><rect x="866" y="480" width="150" height="72" rx="8" fill="#edf1f7" stroke="#53687f" stroke-width="3"/>
+  <rect x="402" y="211" width="116" height="70" rx="8" fill="#f2e9d6" stroke="#8b6b4a" stroke-width="3"/><rect x="854" y="350" width="178" height="58" rx="8" fill="#f2e9d6" stroke="#8b6b4a" stroke-width="3"/>
+  <path d="M425 405h76m-65 0v-18m54 18v-18" stroke="#725d42" stroke-width="7" stroke-linecap="round"/>
+  <!-- candidate markers -->
+  <g font-family="Helvetica Neue,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#14215c">
+    <g aria-label="Location A"><circle cx="422" cy="538" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="422" y="546">A</text></g>
+    <g aria-label="Location B"><circle cx="944" cy="518" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="944" y="526">B</text></g>
+    <g aria-label="Location C"><circle cx="952" cy="228" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="952" y="236">C</text></g>
+    <g aria-label="Location D"><circle cx="460" cy="245" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="460" y="253">D</text></g>
+    <g aria-label="Location E"><circle cx="225" cy="272" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="225" y="280">E</text></g>
+    <g aria-label="Location F"><circle cx="1080" cy="430" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="1080" y="438">F</text></g>
+    <g aria-label="Location G"><circle cx="935" cy="379" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="935" y="387">G</text></g>
+    <g aria-label="Location H"><circle cx="677" cy="228" r="25" fill="#fff" stroke="#14215c" stroke-width="4"/><text x="677" y="236">H</text></g>
+  </g>
+  <text x="1140" y="724" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="13" font-weight="700" fill="#c8202e">WELEARN ORIGINAL PRACTICE</text>
+</svg>

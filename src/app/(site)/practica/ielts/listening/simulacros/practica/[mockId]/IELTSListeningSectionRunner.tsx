@@ -18,6 +18,7 @@ import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import { ieltsQuestionNumber } from '@/data/ielts/question-number';
 import type {
   IeltsListeningSectionPractice,
+  PublicIeltsFillQuestion,
   PublicIeltsFormGroupQuestion,
   PublicIeltsListeningQuestion,
   PublicIeltsListeningSection,
@@ -46,7 +47,9 @@ function responseNumbers(question: PublicIeltsListeningQuestion): number[] {
 function answeredNumbers(section: PublicIeltsListeningSection, answers: IeltsListeningPracticeAnswers): Set<number> {
   const answered = new Set<number>();
   for (const question of section.questions) {
-    if (question.type === 'formgroup') {
+    if (question.type === 'fill') {
+      if ((answers.fills[question.id] ?? '').trim()) answered.add(ieltsQuestionNumber(question.id));
+    } else if (question.type === 'formgroup') {
       for (const blank of question.blanks) if ((answers.fills[blankKey(question.id, blank.num)] ?? '').trim()) answered.add(blank.num);
     } else if (question.type === 'tablegroup') {
       for (const cell of question.rows.flat()) if (typeof cell !== 'string' && (answers.fills[blankKey(question.id, cell.num)] ?? '').trim()) answered.add(cell.num);
@@ -97,6 +100,34 @@ function FormGroup({ question, answers, onFill }: {
           }
           return <span key={index}>{part.split('\n').map((line, lineIndex, lines) => <span key={lineIndex}>{line.startsWith('•') ? <span className="ielts-form__bullet">{line}</span> : line}{lineIndex < lines.length - 1 ? <br /> : null}</span>)}</span>;
         })}
+      </div>
+    </article>
+  );
+}
+
+function Fill({ question, answers, onFill }: {
+  question: PublicIeltsFillQuestion;
+  answers: IeltsListeningPracticeAnswers;
+  onFill: (key: string, value: string) => void;
+}) {
+  const number = ieltsQuestionNumber(question.id);
+  return (
+    <article className="ielts-mcq ielts-fill">
+      <div className="ielts-mcq__num">{number}.</div>
+      <div className="ielts-mcq__body">
+        {question.stimulusLabel ? <p className="ielts-group__range">{question.stimulusLabel}</p> : null}
+        {question.stimulus ? <p>{question.stimulus}</p> : null}
+        <label className="ielts-mcq__text" htmlFor={`${question.id}-answer`}>{question.text}</label>
+        <input
+          id={`${question.id}-answer`}
+          type="text"
+          autoComplete="off"
+          className="ielts-form__input"
+          value={answers.fills[question.id] ?? ''}
+          onChange={event => onFill(question.id, event.target.value)}
+          placeholder="Answer…"
+          style={{ width: `${Math.max(12, (question.maxWords ?? 2) * 7)}ch`, maxWidth: '100%' }}
+        />
       </div>
     </article>
   );
@@ -173,6 +204,7 @@ function QuestionView({ question, answers, setAnswers }: {
   setAnswers: React.Dispatch<React.SetStateAction<IeltsListeningPracticeAnswers>>;
 }) {
   const onFill = (key: string, value: string) => setAnswers(previous => ({ ...previous, fills: { ...previous.fills, [key]: value } }));
+  if (question.type === 'fill') return <Fill question={question} answers={answers} onFill={onFill} />;
   if (question.type === 'formgroup') return <FormGroup question={question} answers={answers} onFill={onFill} />;
   if (question.type === 'tablegroup') return <TableGroup question={question} answers={answers} onFill={onFill} />;
   if (question.type === 'multiselect') return <MultiSelect question={question} answers={answers} onToggle={letter => setAnswers(previous => { const current = previous.ms[question.id] ?? []; const next = current.includes(letter) ? current.filter(item => item !== letter) : [...current, letter]; return { ...previous, ms: { ...previous.ms, [question.id]: next } }; })} />;

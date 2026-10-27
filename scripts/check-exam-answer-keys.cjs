@@ -40,9 +40,9 @@ for (const item of catalog) {
 const transcriptResources = catalog
   .map(item => ({ item, resource: getExamTranscriptResource(item.examSlug, item.mockId) }))
   .filter(({ resource }) => resource);
-assert.equal(transcriptResources.length, 57, 'The transcript library must cover 57 published sets.');
-assert.equal(new Set(transcriptResources.map(({ resource }) => resource.href)).size, 57, 'Transcript PDF routes must be unique.');
-assert.equal(new Set(transcriptResources.map(({ resource }) => resource.answerKeyHref)).size, 57, 'Answer-key PDF routes must be unique.');
+assert.equal(transcriptResources.length, 77, 'The material library must cover 77 published sets.');
+assert.equal(new Set(transcriptResources.map(({ resource }) => resource.href)).size, 77, 'Transcript or review-packet PDF routes must be unique.');
+assert.equal(new Set(transcriptResources.map(({ resource }) => resource.answerKeyHref)).size, 77, 'Answer-key PDF routes must be unique.');
 for (const { item } of transcriptResources) {
   for (const [kind, materialKind] of [['transcript', 'transcript'], ['answer key', 'answer-key']]) {
     const descriptor = getPrivateExamMaterial(item.examSlug, item.mockId, materialKind);
@@ -80,4 +80,4 @@ assert.equal(fce.sections[0].rows.map(row => row.options.find(option => option.c
 assert(acceptsExamAnswer('  HAS.  ', ['has']));
 assert(!acceptsExamAnswer('had', ['has']));
 
-console.log(`Claves íntegras: ${catalog.length} sets, ${new Set(catalog.map(item => item.examSlug)).size} exámenes, ${catalog.reduce((sum, item) => sum + item.automatic + item.reference, 0)} claves, 57 transcripciones PDF, 57 claves PDF, 0 alertas estructurales.`);
+console.log(`Claves íntegras: ${catalog.length} sets, ${new Set(catalog.map(item => item.examSlug)).size} exámenes, ${catalog.reduce((sum, item) => sum + item.automatic + item.reference, 0)} claves, 77 paquetes de transcripción/revisión, 77 claves PDF, 0 alertas estructurales.`);

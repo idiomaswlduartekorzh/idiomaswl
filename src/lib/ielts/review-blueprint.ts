@@ -48,7 +48,7 @@ const IELTS_CONTENT_REVISIONS: Readonly<Record<number, number>> = {
  * manifest ever drift apart.
  */
 export const IELTS_REVIEW_BLUEPRINTS: Record<string, IeltsReviewBlueprint> = Object.fromEntries(
-  Array.from({ length: 20 }, (_, index) => {
+  Array.from({ length: 40 }, (_, index) => {
     const setNumber = index + 1;
     const mockId = `set-${setNumber}`;
     const revision = IELTS_CONTENT_REVISIONS[setNumber] ?? 1;

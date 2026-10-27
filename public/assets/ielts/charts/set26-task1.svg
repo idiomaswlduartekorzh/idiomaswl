@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">Seasonal water use at a fictional municipal swimming centre</title><desc id="chart-desc">The chart compares three uses of water across four seasons, measured in cubic metres on a zero-based scale from 0 to 1,400. In winter, pools use 820 cubic metres, showers 430 and cleaning 260. In spring, the figures are 910, 510 and 275. In summer, they are 1,260, 760 and 320. In autumn, they are 980, 560 and 285.</desc>
+  <defs>
+    <pattern id="master-showers" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#FFF7F7"/><line x1="0" y1="0" x2="0" y2="10" stroke="#B33A3A" stroke-width="4"/></pattern>
+    <pattern id="master-cleaning" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#F5FBF7"/><circle cx="3" cy="3" r="2" fill="#3C7D5A"/><circle cx="9" cy="9" r="2" fill="#3C7D5A"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#FFFFFF"/><path d="M40 40 H270 L40 270 Z" fill="#F2EEFA"/><path d="M1560 960 H1330 L1560 730 Z" fill="#F2EEFA"/><rect x="40" y="40" width="1520" height="920" rx="8" fill="none" stroke="#17324D" stroke-width="5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="800" y="105" text-anchor="middle" font-size="42" font-weight="700" fill="#17324D">Seasonal water use at a fictional municipal swimming centre</text>
+    <text x="800" y="148" text-anchor="middle" font-size="27" fill="#17324D">Water used for pools, showers and cleaning</text>
+    <g aria-label="Legend"><rect x="520" y="177" width="30" height="25" fill="#2D6F9F" stroke="#17324D" stroke-width="2"/><text x="564" y="198" font-size="25" fill="#17324D">Pools</text><rect x="700" y="177" width="30" height="25" fill="url(#master-showers)" stroke="#B33A3A" stroke-width="2"/><rect x="705" y="182" width="20" height="15" fill="none" stroke="#B33A3A" stroke-width="2"/><text x="744" y="198" font-size="25" fill="#17324D">Showers</text><rect x="945" y="177" width="30" height="25" fill="url(#master-cleaning)" stroke="#3C7D5A" stroke-width="2" stroke-dasharray="8 5"/><text x="989" y="198" font-size="25" fill="#17324D">Cleaning</text></g>
+    <line x1="210" y1="790" x2="1450" y2="790" stroke="#17324D" stroke-width="3"/><text x="188" y="798" text-anchor="end" font-size="24" fill="#17324D">0</text>
+    <line x1="210" y1="712.86" x2="1450" y2="712.86" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="720.86" text-anchor="end" font-size="24" fill="#17324D">200</text>
+    <line x1="210" y1="635.71" x2="1450" y2="635.71" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="643.71" text-anchor="end" font-size="24" fill="#17324D">400</text>
+    <line x1="210" y1="558.57" x2="1450" y2="558.57" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="566.57" text-anchor="end" font-size="24" fill="#17324D">600</text>
+    <line x1="210" y1="481.43" x2="1450" y2="481.43" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="489.43" text-anchor="end" font-size="24" fill="#17324D">800</text>
+    <line x1="210" y1="404.29" x2="1450" y2="404.29" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="412.29" text-anchor="end" font-size="24" fill="#17324D">1,000</text>
+    <line x1="210" y1="327.14" x2="1450" y2="327.14" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="335.14" text-anchor="end" font-size="24" fill="#17324D">1,200</text>
+    <line x1="210" y1="250" x2="1450" y2="250" stroke="#D9E1E8" stroke-width="2"/><text x="188" y="258" text-anchor="end" font-size="24" fill="#17324D">1,400</text>
+    <line x1="210" y1="250" x2="210" y2="790" stroke="#17324D" stroke-width="3"/>
+    <rect class="data-bar pool" data-series="pool" data-category="Winter" data-value="820" x="297" y="473.71" width="50" height="316.29" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/>
+    <rect class="data-bar showers" data-series="showers" data-category="Winter" data-value="430" x="365" y="624.14" width="50" height="165.86" fill="url(#master-showers)" stroke="#B33A3A" stroke-width="3"/><rect x="369" y="628.14" width="42" height="157.86" fill="none" stroke="#B33A3A" stroke-width="3"/>
+    <rect class="data-bar cleaning" data-series="cleaning" data-category="Winter" data-value="260" x="433" y="689.71" width="50" height="100.29" fill="url(#master-cleaning)" stroke="#3C7D5A" stroke-width="3" stroke-dasharray="8 5"/>
+    <rect class="data-bar pool" data-series="pool" data-category="Spring" data-value="910" x="607" y="439" width="50" height="351" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/>
+    <rect class="data-bar showers" data-series="showers" data-category="Spring" data-value="510" x="675" y="593.29" width="50" height="196.71" fill="url(#master-showers)" stroke="#B33A3A" stroke-width="3"/><rect x="679" y="597.29" width="42" height="188.71" fill="none" stroke="#B33A3A" stroke-width="3"/>
+    <rect class="data-bar cleaning" data-series="cleaning" data-category="Spring" data-value="275" x="743" y="683.93" width="50" height="106.07" fill="url(#master-cleaning)" stroke="#3C7D5A" stroke-width="3" stroke-dasharray="8 5"/>
+    <rect class="data-bar pool" data-series="pool" data-category="Summer" data-value="1260" x="917" y="304" width="50" height="486" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/>
+    <rect class="data-bar showers" data-series="showers" data-category="Summer" data-value="760" x="985" y="496.86" width="50" height="293.14" fill="url(#master-showers)" stroke="#B33A3A" stroke-width="3"/><rect x="989" y="500.86" width="42" height="285.14" fill="none" stroke="#B33A3A" stroke-width="3"/>
+    <rect class="data-bar cleaning" data-series="cleaning" data-category="Summer" data-value="320" x="1053" y="666.57" width="50" height="123.43" fill="url(#master-cleaning)" stroke="#3C7D5A" stroke-width="3" stroke-dasharray="8 5"/>
+    <rect class="data-bar pool" data-series="pool" data-category="Autumn" data-value="980" x="1227" y="412" width="50" height="378" fill="#2D6F9F" stroke="#17324D" stroke-width="3"/>
+    <rect class="data-bar showers" data-series="showers" data-category="Autumn" data-value="560" x="1295" y="574" width="50" height="216" fill="url(#master-showers)" stroke="#B33A3A" stroke-width="3"/><rect x="1299" y="578" width="42" height="208" fill="none" stroke="#B33A3A" stroke-width="3"/>
+    <rect class="data-bar cleaning" data-series="cleaning" data-category="Autumn" data-value="285" x="1363" y="680.07" width="50" height="109.93" fill="url(#master-cleaning)" stroke="#3C7D5A" stroke-width="3" stroke-dasharray="8 5"/>
+    <text x="390" y="835" text-anchor="middle" font-size="25" fill="#17324D">Winter</text>
+    <text x="700" y="835" text-anchor="middle" font-size="25" fill="#17324D">Spring</text>
+    <text x="1010" y="835" text-anchor="middle" font-size="25" fill="#17324D">Summer</text>
+    <text x="1320" y="835" text-anchor="middle" font-size="25" fill="#17324D">Autumn</text>
+    <text x="830" y="882" text-anchor="middle" font-size="27" font-weight="700" fill="#17324D">Season</text><text x="92" y="520" text-anchor="middle" font-size="27" font-weight="700" fill="#17324D" transform="rotate(-90 92 520)">Water used (cubic metres)</text>
+    <text x="75" y="935" font-size="22" fill="#17324D">Source: author-created fictional data for WeLearn Original Practice</text><text x="1525" y="935" text-anchor="end" font-size="22" font-weight="700" fill="#17324D">WeLearn Original Practice</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Pinewater Reservoir — candidate map</title>
+  <desc id="desc">North is at the top. The reservoir outline includes an eastern cove, a ridge and pale shore below it, a north-east buoy line, a northern rocky narrows with a dashed carrying track, a visitor centre and a dam. Eight unnamed locations are marked A to H.</desc>
+  <style>
+    text{font-family:'Helvetica Neue',Arial,sans-serif;font-size:17px;fill:#14215c}
+    .loc{font-size:24px;font-weight:700}
+    .title{font-size:27px;font-weight:700}
+    .small{font-size:14px}
+  </style>
+  <rect width="900" height="620" fill="#fbfcff" />
+  <rect x="22" y="18" width="856.0" height="60" rx="14" fill="#eef3fb" stroke="#d3dbea" stroke-width="2" /><text x="450" y="36" text-anchor="middle" class="title" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">Pinewater Reservoir — candidate map</text>
+  <path d="M820 104 V58 M820 58 l-12 20 M820 58 l12 20" stroke="#172a3a" stroke-width="4" fill="none" />
+  <text x="820" y="125" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">NORTH</text>
+
+  
+  <path d="M108 128 C250 65 470 70 590 100 C675 75 760 105 780 160 C795 205 752 235 690 245 C640 253 623 279 657 307 C715 354 790 340 794 400 C798 455 732 498 664 516 C500 570 230 555 112 466 C50 374 42 220 108 128Z" fill="#bfe0e6" stroke="#274c5e" stroke-width="5" />
+
+  
+  <path d="M624 360 Q690 330 760 352 Q724 386 646 397Z" fill="#ead7a4" stroke="#9b7a43" stroke-width="3" aria-label="pale shore" />
+  <path d="M628 326 Q690 286 756 314" fill="none" stroke="#7c6f59" stroke-width="5" stroke-dasharray="9 7" aria-label="ridge" />
+  <path d="M395 128 Q438 102 485 126 Q520 147 540 178" fill="none" stroke="#6f6657" stroke-width="10" stroke-linecap="round" aria-label="rocky narrows" />
+  <path d="M424 102 C426 72 475 62 514 94" fill="none" stroke="#76552f" stroke-width="6" stroke-dasharray="12 9" aria-label="carrying track" />
+  <g aria-label="buoy line" fill="#e8842e" stroke="#7f3c16" stroke-width="2">
+    <circle cx="642" cy="146" r="7" /><circle cx="675" cy="133" r="7" /><circle cx="710" cy="132" r="7" /><circle cx="742" cy="145" r="7" />
+  </g>
+  <path d="M86 414 L169 520" stroke="#9b6a4b" stroke-width="11" aria-label="dam" />
+  <rect x="365" y="520" width="170" height="38" rx="8" fill="#f4e7ca" stroke="#20354a" />
+  <text x="450" y="545" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">VISITOR CENTRE</text>
+  <text x="108" y="468" transform="rotate(52 108 468)" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">DAM</text>
+
+  
+  <g data-location="A" aria-label="Location A"><circle cx="690" cy="278" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="690" y="286" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">A</text></g>
+  <g data-location="B" aria-label="Location B"><circle cx="704" cy="383" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="704" y="391" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">B</text></g>
+  <g data-location="C" aria-label="Location C"><circle cx="450" cy="490" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="450" y="498" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">C</text></g>
+  <g data-location="D" aria-label="Location D"><circle cx="455" cy="145" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="455" y="153" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">D</text></g>
+  <g data-location="E" aria-label="Location E"><circle cx="570" cy="115" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="570" y="123" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">E</text></g>
+  <g data-location="F" aria-label="Location F"><circle cx="135" cy="300" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="135" y="308" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">F</text></g>
+  <g data-location="G" aria-label="Location G"><circle cx="145" cy="440" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="145" y="448" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">G</text></g>
+  <g data-location="H" aria-label="Location H"><circle cx="690" cy="165" r="27" fill="#ffffff" stroke="#14215c" stroke-width="4" /><text x="690" y="173" text-anchor="middle" class="loc" fill="#14215c" font-weight="700" font-family="Helvetica Neue, Arial, sans-serif">H</text></g>
+
+  <g transform="translate(210 568)" aria-label="map symbol legend">
+    <rect x="0" y="0" width="480" height="39" rx="6" fill="#fff" stroke="#6d7b86" />
+    <path d="M18 12 h36" stroke="#7c6f59" stroke-width="5" stroke-dasharray="7 5" /><text x="62" y="25" class="small" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">ridge</text>
+    <path d="M132 20 h36" stroke="#76552f" stroke-width="5" stroke-dasharray="10 7" /><text x="176" y="25" class="small" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">track</text>
+    <circle cx="249" cy="19" r="6" fill="#e8842e" stroke="#7f3c16" /><circle cx="269" cy="19" r="6" fill="#e8842e" stroke="#7f3c16" /><text x="282" y="25" class="small" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">buoys</text>
+    <rect x="361" y="11" width="32" height="15" fill="#ead7a4" stroke="#9b7a43" /><text x="401" y="25" class="small" font-family="Helvetica Neue, Arial, sans-serif" fill="#14215c">pale shore</text>
+  </g>
+<rect x="12" y="12" width="876.0" height="596.0" rx="18" fill="none" stroke="#14215c" stroke-width="3" /></svg>

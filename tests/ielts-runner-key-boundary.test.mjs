@@ -20,7 +20,9 @@ function perfectReadingAnswers(mock) {
   const answers = { fills: {}, mcq: {}, ms: {}, match: {} };
   for (const section of mock.sections.filter(item => item.skill === 'reading')) {
     for (const question of section.questions) {
-      if (question.type === 'formgroup') {
+      if (question.type === 'fill') {
+        answers.fills[question.id] = question.answers[0];
+      } else if (question.type === 'formgroup') {
         for (const blank of question.blanks) answers.fills[`${question.id}__${blank.num}`] = blank.answers[0];
       } else if (question.type === 'tablegroup') {
         for (const cell of question.rows.flat()) if (typeof cell !== 'string') answers.fills[`${question.id}__${cell.num}`] = cell.answers[0];

@@ -35,10 +35,17 @@ export default function ExamPracticeDownloads({ examSlug, mockId }: Props) {
     label: 'Material descargable de este set',
   };
 
-  const cards = [
-    { title: copy.transcriptTitle, body: copy.transcriptBody, href: resources.href, kind: german ? 'TRANSKRIPTION' : 'TRANSCRIPCIÓN' },
-    { title: copy.keyTitle, body: copy.keyBody, href: resources.answerKeyHref, kind: german ? 'LÖSUNGEN' : 'CLAVES' },
-  ];
+  const cards = resources.combinedReviewPacket
+    ? [{
+        title: 'Paquete privado de revisión',
+        body: 'Transcripción completa, claves objetivas y orientación para las tareas abiertas en un solo PDF protegido.',
+        href: resources.answerKeyHref,
+        kind: 'TRANSCRIPCIÓN + CLAVES',
+      }]
+    : [
+        { title: copy.transcriptTitle, body: copy.transcriptBody, href: resources.href, kind: german ? 'TRANSKRIPTION' : 'TRANSCRIPCIÓN' },
+        { title: copy.keyTitle, body: copy.keyBody, href: resources.answerKeyHref, kind: german ? 'LÖSUNGEN' : 'CLAVES' },
+      ];
 
   return (
     <aside className={styles.resources} aria-label={copy.label}>

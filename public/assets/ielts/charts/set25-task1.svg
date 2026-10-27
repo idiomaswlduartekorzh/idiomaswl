@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">Monthly ferry passengers on a fictional island route</title>
+  <desc id="chart-desc">The graph has six monthly points for two series, measured in people per month on a zero-based scale from 0 to 6,000. Resident passengers are 3,200 in January, 3,450 in February, 3,800 in March, 4,200 in April, 3,900 in May and 3,500 in June. Visitor passengers are 900 in January, 1,100 in February, 1,800 in March, 3,100 in April, 4,600 in May and 5,200 in June.</desc>
+  <rect width="1600" height="1000" fill="#FFFFFF"/>
+  <path d="M40 40 H270 L40 270 Z" fill="#F2EEFA"/>
+  <path d="M1560 960 H1330 L1560 730 Z" fill="#F2EEFA"/>
+  <rect x="40" y="40" width="1520" height="920" rx="8" fill="none" stroke="#17324D" stroke-width="5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="800" y="112" text-anchor="middle" font-size="42" font-weight="700" fill="#17324D">Monthly ferry passengers on a fictional island route</text>
+    <text x="800" y="157" text-anchor="middle" font-size="28" fill="#17324D">January to June</text>
+    <g aria-label="Legend">
+      <line x1="830" y1="192" x2="900" y2="192" stroke="#2D6F9F" stroke-width="5"/>
+      <circle cx="865" cy="192" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+      <text x="915" y="201" font-size="26" fill="#17324D">Resident passengers</text>
+      <line x1="1170" y1="192" x2="1240" y2="192" stroke="#B33A3A" stroke-width="5" stroke-dasharray="16 10"/>
+      <rect x="1197" y="184" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+      <text x="1255" y="201" font-size="26" fill="#17324D">Visitor passengers</text>
+    </g>
+    <line x1="210" y1="800" x2="1450" y2="800" stroke="#17324D" stroke-width="3"/>
+    <text x="180" y="808" text-anchor="end" font-size="25" fill="#17324D">0</text>
+    <line x1="210" y1="703.33" x2="1450" y2="703.33" stroke="#D9E1E8" stroke-width="2"/>
+    <text x="180" y="711.33" text-anchor="end" font-size="25" fill="#17324D">1,000</text>
+    <line x1="210" y1="606.67" x2="1450" y2="606.67" stroke="#D9E1E8" stroke-width="2"/>
+    <text x="180" y="614.67" text-anchor="end" font-size="25" fill="#17324D">2,000</text>
+    <line x1="210" y1="510" x2="1450" y2="510" stroke="#D9E1E8" stroke-width="2"/>
+    <text x="180" y="518" text-anchor="end" font-size="25" fill="#17324D">3,000</text>
+    <line x1="210" y1="413.33" x2="1450" y2="413.33" stroke="#D9E1E8" stroke-width="2"/>
+    <text x="180" y="421.33" text-anchor="end" font-size="25" fill="#17324D">4,000</text>
+    <line x1="210" y1="316.67" x2="1450" y2="316.67" stroke="#D9E1E8" stroke-width="2"/>
+    <text x="180" y="324.67" text-anchor="end" font-size="25" fill="#17324D">5,000</text>
+    <line x1="210" y1="220" x2="1450" y2="220" stroke="#D9E1E8" stroke-width="2"/>
+    <text x="180" y="228" text-anchor="end" font-size="25" fill="#17324D">6,000</text>
+    <line x1="210" y1="220" x2="210" y2="800" stroke="#17324D" stroke-width="3"/>
+    <line x1="210" y1="800" x2="210" y2="810" stroke="#17324D" stroke-width="3"/>
+    <text x="210" y="846" text-anchor="middle" font-size="25" fill="#17324D">January</text>
+    <line x1="458" y1="800" x2="458" y2="810" stroke="#17324D" stroke-width="3"/>
+    <text x="458" y="846" text-anchor="middle" font-size="25" fill="#17324D">February</text>
+    <line x1="706" y1="800" x2="706" y2="810" stroke="#17324D" stroke-width="3"/>
+    <text x="706" y="846" text-anchor="middle" font-size="25" fill="#17324D">March</text>
+    <line x1="954" y1="800" x2="954" y2="810" stroke="#17324D" stroke-width="3"/>
+    <text x="954" y="846" text-anchor="middle" font-size="25" fill="#17324D">April</text>
+    <line x1="1202" y1="800" x2="1202" y2="810" stroke="#17324D" stroke-width="3"/>
+    <text x="1202" y="846" text-anchor="middle" font-size="25" fill="#17324D">May</text>
+    <line x1="1450" y1="800" x2="1450" y2="810" stroke="#17324D" stroke-width="3"/>
+    <text x="1450" y="846" text-anchor="middle" font-size="25" fill="#17324D">June</text>
+    <text x="830" y="894" text-anchor="middle" font-size="28" font-weight="700" fill="#17324D">Month</text>
+    <text x="88" y="510" text-anchor="middle" font-size="28" font-weight="700" fill="#17324D" transform="rotate(-90 88 510)">Passengers (people per month)</text>
+    <polyline data-series-line="residents" points="210,490.67 458,466.5 706,432.67 954,394 1202,423 1450,461.67" fill="none" stroke="#2D6F9F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <polyline data-series-line="visitors" points="210,713 458,693.67 706,626 954,500.33 1202,355.33 1450,297.33" fill="none" stroke="#B33A3A" stroke-width="5" stroke-dasharray="16 10" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle class="data-marker residents" data-series="residents" data-category="January" data-value="3200" cx="210" cy="490.67" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+    <circle class="data-marker residents" data-series="residents" data-category="February" data-value="3450" cx="458" cy="466.5" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+    <circle class="data-marker residents" data-series="residents" data-category="March" data-value="3800" cx="706" cy="432.67" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+    <circle class="data-marker residents" data-series="residents" data-category="April" data-value="4200" cx="954" cy="394" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+    <circle class="data-marker residents" data-series="residents" data-category="May" data-value="3900" cx="1202" cy="423" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+    <circle class="data-marker residents" data-series="residents" data-category="June" data-value="3500" cx="1450" cy="461.67" r="8" fill="#FFFFFF" stroke="#2D6F9F" stroke-width="4"/>
+    <rect class="data-marker visitors" data-series="visitors" data-category="January" data-value="900" x="202" y="705" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+    <rect class="data-marker visitors" data-series="visitors" data-category="February" data-value="1100" x="450" y="685.67" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+    <rect class="data-marker visitors" data-series="visitors" data-category="March" data-value="1800" x="698" y="618" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+    <rect class="data-marker visitors" data-series="visitors" data-category="April" data-value="3100" x="946" y="492.33" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+    <rect class="data-marker visitors" data-series="visitors" data-category="May" data-value="4600" x="1194" y="347.33" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+    <rect class="data-marker visitors" data-series="visitors" data-category="June" data-value="5200" x="1442" y="289.33" width="16" height="16" fill="#FFFFFF" stroke="#B33A3A" stroke-width="4"/>
+    <text x="75" y="935" font-size="22" fill="#17324D">Source: author-created fictional data for WeLearn Original Practice</text>
+    <text x="1525" y="935" text-anchor="end" font-size="22" font-weight="700" fill="#17324D">WeLearn Original Practice</text>
+  </g>
+</svg>

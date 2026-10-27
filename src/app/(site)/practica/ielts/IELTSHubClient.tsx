@@ -28,8 +28,8 @@ const AVAILABLE_SKILLS = [
     id: 'listening',
     name: 'Listening',
     label: 'Listening comprehension',
-    desc: 'Practise all 20 audited sets with replayable audio, free navigation, private scoring and printable student PDFs.',
-    count: '20 sets · 800 questions · student PDFs',
+    desc: 'Practise all 40 assembled sets with replayable audio, free navigation, private scoring and printable student PDFs.',
+    count: '40 sets · 1,600 questions · student PDFs',
     href: '/practica/ielts/listening',
     icon: Headphones,
   },
@@ -37,8 +37,8 @@ const AVAILABLE_SKILLS = [
     id: 'reading',
     name: 'Reading',
     label: 'Reading comprehension',
-    desc: 'Practise Reading alone with 20 audited sets, or study 14 question formats and 6 transferable reading skills.',
-    count: '20 sets · 40 questions each · method lessons',
+    desc: 'Practise Reading alone with 40 assembled sets, or study 14 question formats and 6 transferable reading skills.',
+    count: '40 sets · 40 questions each · method lessons',
     href: '/practica/ielts/reading',
     icon: BookOpenText,
   },
@@ -46,8 +46,8 @@ const AVAILABLE_SKILLS = [
     id: 'writing',
     name: 'Writing',
     label: 'Academic writing',
-    desc: 'Work on Task 1 and Task 2 from any of the 20 audited sets, with no exam timer, then study the full Writing method.',
-    count: '20 sets · Task 1 + Task 2',
+    desc: 'Work on Task 1 and Task 2 from any of the 40 assembled sets, with no exam timer, then study the full Writing method.',
+    count: '40 sets · Task 1 + Task 2',
     href: '/practica/ielts/writing',
     icon: PenLine,
   },
@@ -55,8 +55,8 @@ const AVAILABLE_SKILLS = [
     id: 'speaking',
     name: 'Speaking',
     label: 'Spoken production',
-    desc: 'Practise the three Speaking parts independently with prompts from 20 audited sets and record your responses.',
-    count: '20 sets · 3 parts · recording',
+    desc: 'Practise the three Speaking parts independently with prompts from 40 assembled sets and record your responses.',
+    count: '40 sets · 3 parts · recording',
     href: '/practica/ielts/speaking',
     icon: Mic2,
   },
@@ -71,10 +71,10 @@ export default function IELTSHubClient() {
         <header className={styles.hero}>
           <p className={styles.eyebrow}>IELTS practice · Choose your route</p>
           <h1>Practise one skill or take a complete mock.</h1>
-          <p className={styles.heroLead}>Choose Listening, Reading, Writing or Speaking and work from the 20 audited Academic sets at your own pace. When you want exam conditions, take all four skills together in a complete mock.</p>
+          <p className={styles.heroLead}>Choose Listening, Reading, Writing or Speaking and work from the 40 assembled Academic sets at your own pace. When you want exam conditions, take all four skills together in a complete mock.</p>
           <div className={styles.factGrid} aria-label="IELTS practice at a glance">
             <div className={styles.fact}><strong>4 skills</strong><span>independent practice</span></div>
-            <div className={styles.fact}><strong>20 sets</strong><span>audited Academic material</span></div>
+            <div className={styles.fact}><strong>40 sets</strong><span>Academic practice material</span></div>
             <div className={styles.fact}><strong>No timer</strong><span>in skill practice</span></div>
             <div className={styles.fact}><strong>Full mocks</strong><span>when you are ready</span></div>
           </div>

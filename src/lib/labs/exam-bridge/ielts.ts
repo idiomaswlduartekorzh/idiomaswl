@@ -7,7 +7,7 @@
  * 1.12GB sin comprimir (límite de Vercel: 250MB), tumbando el deploy. Con
  * import() dinámico, Next solo empaqueta el set-N que realmente se pide.
  *
- * Alcance de revisión: los 20 sets publicados. La disponibilidad gratuita
+ * Alcance de revisión: los 40 sets ensamblados. La disponibilidad gratuita
  * del motor automático de Writing sigue siendo una decisión independiente.
  */
 
@@ -45,6 +45,26 @@ const SET_LOADERS: Record<string, () => Promise<{ default: MockExam }>> = {
   'set-18': () => import('@/data/mocks/ielts-set-18'),
   'set-19': () => import('@/data/mocks/ielts-set-19'),
   'set-20': () => import('@/data/mocks/ielts-set-20'),
+  'set-21': () => import('@/data/mocks/ielts-set-21'),
+  'set-22': () => import('@/data/mocks/ielts-set-22'),
+  'set-23': () => import('@/data/mocks/ielts-set-23'),
+  'set-24': () => import('@/data/mocks/ielts-set-24'),
+  'set-25': () => import('@/data/mocks/ielts-set-25'),
+  'set-26': () => import('@/data/mocks/ielts-set-26'),
+  'set-27': () => import('@/data/mocks/ielts-set-27'),
+  'set-28': () => import('@/data/mocks/ielts-set-28'),
+  'set-29': () => import('@/data/mocks/ielts-set-29'),
+  'set-30': () => import('@/data/mocks/ielts-set-30'),
+  'set-31': () => import('@/data/mocks/ielts-set-31'),
+  'set-32': () => import('@/data/mocks/ielts-set-32'),
+  'set-33': () => import('@/data/mocks/ielts-set-33'),
+  'set-34': () => import('@/data/mocks/ielts-set-34'),
+  'set-35': () => import('@/data/mocks/ielts-set-35'),
+  'set-36': () => import('@/data/mocks/ielts-set-36'),
+  'set-37': () => import('@/data/mocks/ielts-set-37'),
+  'set-38': () => import('@/data/mocks/ielts-set-38'),
+  'set-39': () => import('@/data/mocks/ielts-set-39'),
+  'set-40': () => import('@/data/mocks/ielts-set-40'),
 };
 
 const FREE_WRITING_MOCKS = new Set(['set-1', 'set-2', 'set-3', 'set-4']);

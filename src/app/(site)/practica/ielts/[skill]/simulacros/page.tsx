@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const config = SKILLS[skill as Skill];
   if (!config) return {};
   return {
-    title: `IELTS ${config.label} Practice: 20 Focused Sets`,
-    description: `Practise IELTS ${config.label} independently using the 20 audited WeLearn Academic mocks, without taking the complete exam.`,
+    title: `IELTS ${config.label} Practice: 40 Focused Sets`,
+    description: `Practise IELTS ${config.label} independently using the 40 assembled WeLearn Academic mocks, without taking the complete exam.`,
     alternates: { canonical: `https://www.idiomaswl.com/practica/ielts/${skill}/simulacros` },
   };
 }
@@ -38,7 +38,23 @@ export default async function IeltsSkillSetsPage({ params }: Props) {
   const config = SKILLS[selectedSkill];
   const sets = IELTS_SECTIONAL_LISTENING_SET_IDS.map((mockId, index) => {
     const mock = getMock('ielts', mockId);
-    if (!mock || mock.sections.filter(section => section.skill === selectedSkill && !section.comingSoon).length !== (selectedSkill === 'writing' ? 2 : selectedSkill === 'speaking' ? 1 : 3)) {
+    const sections = mock?.sections.filter(section => section.skill === selectedSkill && !section.comingSoon) ?? [];
+    const writingTasks = sections
+      .flatMap(section => section.questions)
+      .filter(question => question.type === 'write')
+      .map(question => question.taskNumber)
+      .sort();
+    const speakingParts = sections
+      .flatMap(section => section.questions)
+      .filter(question => question.type === 'speak')
+      .map(question => question.partNumber)
+      .sort();
+    const complete = selectedSkill === 'reading'
+      ? sections.length === 3
+      : selectedSkill === 'writing'
+        ? JSON.stringify(writingTasks) === JSON.stringify([1, 2])
+        : sections.length === 1 && JSON.stringify(speakingParts) === JSON.stringify([1, 2, 3]);
+    if (!mock || !complete) {
       throw new Error(`IELTS ${selectedSkill} practice is incomplete for ${mockId}`);
     }
     return {
@@ -50,5 +66,5 @@ export default async function IeltsSkillSetsPage({ params }: Props) {
     };
   });
 
-  return <ExamSkillSetLibrary product="ielts" skill={selectedSkill} description={`Choose one of the 20 audited IELTS Academic sets and practise only ${config.label}. Navigate freely between its parts without a timer.`} detail={config.detail} note={config.note} sets={sets} backHref="/practica/ielts#destrezas" backLabel="Choose another IELTS skill" />;
+  return <ExamSkillSetLibrary product="ielts" skill={selectedSkill} description={`Choose one of the 40 assembled IELTS Academic sets and practise only ${config.label}. Navigate freely between its parts without a timer.`} detail={config.detail} note={config.note} sets={sets} backHref="/practica/ielts#destrezas" backLabel="Choose another IELTS skill" />;
 }

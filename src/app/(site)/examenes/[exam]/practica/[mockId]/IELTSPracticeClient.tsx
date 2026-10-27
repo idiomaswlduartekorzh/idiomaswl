@@ -35,7 +35,7 @@ import {
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
-  MCQQuestion, WriteQuestion, SpeakQuestion,
+  MCQQuestion, FillQuestion, WriteQuestion, SpeakQuestion,
   FormGroupQuestion, TableGroupQuestion, TableCell,
   MultiSelectQuestion, MatchingGroupQuestion,
 } from '@/data/mocks/types';
@@ -64,6 +64,32 @@ type MatchMap  = Record<string, string>;    // `${groupId}-${num}` -> letter
 type WriteMap  = Record<string, string>;    // questionId -> text
 type SpeakMap  = Record<string, string>;    // questionId -> notes
 type SpeakAudioMap = Record<string, IeltsSpeakingRecording>;
+
+function FillView({
+  q, value, onChange,
+}: { q: FillQuestion; value: string; onChange: (value: string) => void }) {
+  const number = ieltsQuestionNumber(q.id);
+  return (
+    <article className="ielts-mcq ielts-fill">
+      <div className="ielts-mcq__num">{number}.</div>
+      <div className="ielts-mcq__body">
+        {q.stimulusLabel ? <p className="ielts-group__range">{q.stimulusLabel}</p> : null}
+        {q.stimulus ? <p className="ielts-write__stimulus">{q.stimulus}</p> : null}
+        <label className="ielts-mcq__text" htmlFor={`${q.id}-answer`}>{q.text}</label>
+        <input
+          id={`${q.id}-answer`}
+          type="text"
+          autoComplete="off"
+          className="ielts-form__input"
+          value={value}
+          onChange={event => onChange(event.target.value)}
+          placeholder="Answer…"
+          style={{ width: `${Math.max(12, (q.maxWords ?? 2) * 7)}ch`, maxWidth: '100%' }}
+        />
+      </div>
+    </article>
+  );
+}
 
 // ── Form-group question renderer ──────────────────────────────────────────────
 
@@ -462,6 +488,8 @@ function renderQuestion(
   },
 ) {
   switch (q.type) {
+    case 'fill':
+      return <FillView key={q.id} q={q as FillQuestion} value={ans.fills[q.id] ?? ''} onChange={value => handlers.onFill(q.id, value)} />;
     case 'formgroup':
       return <FormGroupView key={q.id} q={q as FormGroupQuestion} fills={ans.fills} onChange={handlers.onFill} />;
     case 'tablegroup':
@@ -502,12 +530,35 @@ function SectionPanel({
   handlers: Parameters<typeof renderQuestion>[4];
 }) {
   const hasPassage = !!section.passage;
+  const sectionVisuals = Array.from(
+    new Map(
+      section.questions
+        .filter((question): question is MCQQuestion => (question.type === 'mcq' || question.type === 'dialog') && Boolean(question.imageUrl))
+        .map(question => [question.imageUrl!, { url: question.imageUrl!, alt: question.imageAlt ?? 'Listening question visual' }]),
+    ).values(),
+  );
 
   // Simple numbered counter for MCQ-like questions in this section
   let mcqCounter = 0;
 
   const questionsEl = (
     <div className="ielts-panel__questions">
+      {sectionVisuals.map(visual => (
+        <figure className="ielts-section-visual" key={visual.url}>
+          <div className="ielts-section-visual__header">
+            <span>Listening visual</span>
+            <small>Use this image for the related questions below</small>
+          </div>
+          <Image
+            src={visual.url}
+            alt={visual.alt}
+            width={1600}
+            height={1000}
+            className="ielts-section-visual__image"
+            unoptimized
+          />
+        </figure>
+      ))}
       {section.questions.map(q => {
         let idx = 0;
         if (q.type === 'mcq' || q.type === 'dialog') { idx = mcqCounter; mcqCounter++; }
@@ -552,7 +603,10 @@ void _BAND_OPTIONS;
 function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: number; total: number } {
   let done = 0, total = 0;
   for (const q of section.questions) {
-    if (q.type === 'formgroup') {
+    if (q.type === 'fill') {
+      total += 1;
+      if ((ans.fills[q.id] ?? '').trim()) done += 1;
+    } else if (q.type === 'formgroup') {
       const fg = q as FormGroupQuestion;
       total += fg.blanks.length;
       done += fg.blanks.filter(b => (ans.fills[blankKey(fg.id,b.num)]??'').trim()).length;
@@ -729,6 +783,23 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
           <div key={sec.part} className="prac-results__section-block">
             <h3 className="prac-results__section-name">{sec.title}</h3>
             {sec.questions.map(q=>{
+              if (q.type==='fill') {
+                const fill=q as FillQuestion;
+                const val=ans.fills[fill.id]??'';
+                const ok=isCorrect(val,fill.answers);
+                return (
+                  <div key={fill.id} className={`prac-review-item${ok?' prac-review-item--correct':' prac-review-item--wrong'}`}>
+                    <div className="prac-review-item__header">
+                      <span className="prac-review-item__num">Q{ieltsQuestionNumber(fill.id)}</span>
+                      <span className={`prac-review-item__badge${ok?' prac-review-item__badge--ok':' prac-review-item__badge--err'}`}>
+                        {ok?'✓ Correct':'✗ Incorrect'}
+                      </span>
+                    </div>
+                    <p className="ielts-review__fill-ans">Your answer: <strong>{val||'(blank)'}</strong></p>
+                    {!ok&&<p className="ielts-review__fill-correct">Accepted: {fill.answers[0]}</p>}
+                  </div>
+                );
+              }
               if (q.type==='formgroup') {
                 const fg=q as FormGroupQuestion;
                 return (
@@ -927,6 +998,10 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   const [draftReady, setDraftReady] = useState(false);
   const [draftRestored, setDraftRestored] = useState(false);
   const [activePartIndex, setActivePartIndex] = useState(0);
+  const setNumber = Number(mock.id.match(/^set-(\d+)$/)?.[1] ?? 0);
+  const candidateWorkbookHref = setNumber >= 21 && setNumber <= 40
+    ? `/downloads/ielts/ielts-academic-set-${String(setNumber).padStart(2, '0')}-candidate-workbook.pdf`
+    : null;
 
   const skills = practiceSkill ? [practiceSkill] : SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
   const downloadWorksheetFor = (skill?: string) => async () => {
@@ -1146,6 +1221,16 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{practiceSkill ? '∞' : mock.timeMinutes}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'No timer' : 'Minutos'}</span></div>
           </div>
           <ExamPracticeDownloads examSlug={exam.slug} mockId={mock.id} />
+          {candidateWorkbookHref && (
+            <div className="exam-pdf-options" aria-label="Official-format workbook">
+              <a className="btn btn-ghost" href={candidateWorkbookHref} target="_blank" rel="noreferrer" data-exam-download="true">
+                Open candidate workbook PDF ↗
+              </a>
+              <a className="btn btn-ghost btn-sm" href={candidateWorkbookHref} download data-exam-download="true">
+                Download workbook
+              </a>
+            </div>
+          )}
           <div className="prac-intro__sections">
             {mock.sections.filter(sec=>!practiceSkill || sec.skill===practiceSkill).flatMap(sec =>
               practiceSkill === 'speaking'
@@ -1155,7 +1240,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
               <div key={`${sec.part}:${label}`} className={`prac-intro__section${sec.comingSoon?' prac-intro__section--coming-soon':''}`}>
                 <span className="prac-intro__section-part">{sec.skill?SKILL_LABEL[sec.skill]:''}</span>
                 <span className="prac-intro__section-title">{sec.comingSoon ? '🔨 Próximamente' : label}</span>
-                <span className="prac-intro__section-q">{sec.comingSoon ? '—' : practiceSkill ? `${count} ${count===1 ? 'task' : 'question groups'}` : `${count} grupos`}</span>
+                <span className="prac-intro__section-q">{sec.comingSoon ? '—' : practiceSkill ? `${count} ${count===1 ? 'task' : 'question groups'}` : `${count} ${count===1 ? 'grupo' : 'grupos'}`}</span>
                 {practiceSkill && !sec.comingSoon && <PdfDownloadButton generate={downloadPartWorksheet(sec, label)} label={`${label} PDF`} compact />}
               </div>
             ))}
@@ -1206,7 +1291,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   const unanswered = totalQs - totalAnswered;
 
   return (
-    <div className="prac-shell prac-shell--exam exam-unified" data-exam="ielts">
+    <div className="prac-shell prac-shell--exam exam-unified" data-exam="ielts" data-active-practice="true">
       <header className="prac-topbar">
         <div className="prac-topbar__left">
           <Link href={practiceSkill ? `/practica/ielts/${practiceSkill}/simulacros` : `/examenes/${exam.slug}`} className="prac-topbar__back">IELTS</Link>
@@ -1221,7 +1306,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
       {practiceSkill ? <nav aria-label={`${SKILL_LABEL[practiceSkill]} parts`} style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', padding: '1rem', justifyContent: 'center' }}>{skillSections.map((section, index) => <button key={section.part} type="button" className={index===activePartIndex ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} aria-current={index===activePartIndex ? 'step' : undefined} onClick={() => setActivePartIndex(index)}>{practiceSkill==='writing' ? `Task ${index+1}` : `Part ${index+1}`}</button>)}</nav> : <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} labels={SKILL_LABEL} />}
 
       <div className="ielts-exam-body">
-        <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill ?? activeSkill)} label={`${SKILL_LABEL[practiceSkill ?? activeSkill]} PDF`} compact />{practiceSkill && activeSections[0] && <PdfDownloadButton generate={downloadPartWorksheet(activeSections[0], practiceSkill === 'writing' ? `Task ${activePartIndex + 1}` : `Part ${activePartIndex + 1}`)} label={`${practiceSkill === 'writing' ? 'Task' : 'Part'} ${activePartIndex + 1} PDF`} compact />}</div>
+        <div className="exam-pdf-options">{candidateWorkbookHref && <a className="btn btn-ghost btn-sm" href={candidateWorkbookHref} target="_blank" rel="noreferrer" data-exam-download="true">Candidate workbook ↗</a>}<PdfDownloadButton generate={downloadWorksheetFor(practiceSkill ?? activeSkill)} label={`${SKILL_LABEL[practiceSkill ?? activeSkill]} PDF`} compact />{practiceSkill && activeSections[0] && <PdfDownloadButton generate={downloadPartWorksheet(activeSections[0], practiceSkill === 'writing' ? `Task ${activePartIndex + 1}` : `Part ${activePartIndex + 1}`)} label={`${practiceSkill === 'writing' ? 'Task' : 'Part'} ${activePartIndex + 1} PDF`} compact />}</div>
         {activeSkill === 'listening' && (
           <div className="ielts-audio-sticky">
             <AudioPlayer src={mock.sections.find(s=>s.skill==='listening')?.audioUrl} label="IELTS Listening" />

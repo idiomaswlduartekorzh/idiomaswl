@@ -14,7 +14,9 @@ function perfectReadingAnswers(mock) {
   const answers = { fills: {}, mcq: {}, ms: {}, match: {} };
   for (const section of mock.sections.filter(item => item.skill === 'reading')) {
     for (const question of section.questions) {
-      if (question.type === 'formgroup') {
+      if (question.type === 'fill') {
+        answers.fills[question.id] = question.answers[0];
+      } else if (question.type === 'formgroup') {
         for (const blank of question.blanks) answers.fills[blankKey(question.id, blank.num)] = blank.answers[0];
       } else if (question.type === 'tablegroup') {
         for (const cell of question.rows.flat()) if (typeof cell !== 'string') answers.fills[blankKey(question.id, cell.num)] = cell.answers[0];
@@ -42,14 +44,16 @@ test('each focused Reading set has three passages, 40 responses and a perfect-sc
   }
 });
 
-test('each focused Writing and Speaking set reuses both visual prompts and three spoken tasks', async () => {
+test('each focused Writing and Speaking set exposes both writing tasks and three spoken parts', async () => {
   for (const mockId of IELTS_SECTIONAL_LISTENING_SET_IDS) {
     const mock = getMock('ielts', mockId);
-    const writing = mock.sections.filter(section => section.skill === 'writing' && !section.comingSoon);
+    const writing = mock.sections
+      .filter(section => section.skill === 'writing' && !section.comingSoon)
+      .flatMap(section => section.questions);
     const speaking = mock.sections.filter(section => section.skill === 'speaking' && !section.comingSoon);
     assert.equal(writing.length, 2, mockId);
     assert.equal(speaking.length, 1, mockId);
-    const [task1, task2] = writing.flatMap(section => section.questions);
+    const [task1, task2] = writing;
     assert.deepEqual([task1.taskNumber, task2.taskNumber], [1, 2], mockId);
     assert.deepEqual([task1.minWords, task2.minWords], [150, 250], mockId);
     assert.ok(task1.imageUrl, `${mockId} Task 1 visual missing`);

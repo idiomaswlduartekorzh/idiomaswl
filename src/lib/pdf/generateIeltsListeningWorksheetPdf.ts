@@ -30,6 +30,16 @@ export async function generateIeltsListeningWorksheetPdf(practice: IeltsListenin
   paragraph('This student copy contains no transcript or answer key.', { size: 8.8, color: GRAY, gap: 5 });
 
   const renderQuestion = (question: PublicIeltsListeningQuestion) => {
+    if (question.type === 'fill') {
+      const number = ieltsQuestionNumber(question.id);
+      ensure(22);
+      heading(`Question ${number}`, { size: 11, gapTop: 5 });
+      if (question.stimulusLabel) paragraph(question.stimulusLabel, { size: 8.8, style: 'bold', color: NAVY, gap: 1.2 });
+      if (question.stimulus) paragraph(question.stimulus, { size: 9, color: GRAY, gap: 1.5 });
+      paragraph(question.text, { size: 9.6, gap: 1.8 });
+      paragraph(`${number}. ______________________________`, { size: 9.4, indent: 4, gap: 1.2 });
+      return;
+    }
     if (question.type === 'formgroup') {
       heading(`Questions ${question.qRange[0]}–${question.qRange[1]}`, { size: 11, gapTop: 5 });
       question.groupLabel.split('\n').forEach(line => paragraph(line, { size: 9.2, gap: 1.4 }));

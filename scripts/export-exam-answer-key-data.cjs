@@ -40,7 +40,9 @@ const { getExamTranscriptResource } = require('../src/lib/exams/transcript-resou
 
 const sets = getAnswerKeyCatalog()
   .map((item) => ({ item, resource: getExamTranscriptResource(item.examSlug, item.mockId) }))
-  .filter(({ resource }) => resource)
+  // Sets 21–40 use the factory-generated combined private review packet.
+  // Keep this legacy exporter scoped to the 57 standalone public key PDFs.
+  .filter(({ resource }) => resource && !resource.combinedReviewPacket)
   .map(({ item, resource }) => {
     const mock = getMock(item.examSlug, item.mockId);
     const audit = auditMockKey(mock);

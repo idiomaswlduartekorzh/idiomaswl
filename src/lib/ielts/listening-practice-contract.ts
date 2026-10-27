@@ -27,7 +27,9 @@ export function getIeltsObjectiveAllowedKeys(mock: MockExam, skill: 'listening' 
   };
   for (const section of mock.sections.filter(item => item.skill === skill && !item.comingSoon)) {
     for (const question of section.questions) {
-      if (question.type === 'formgroup') {
+      if (question.type === 'fill') {
+        keys.fills.add(question.id);
+      } else if (question.type === 'formgroup') {
         for (const blank of question.blanks) keys.fills.add(blankKey(question.id, blank.num));
       } else if (question.type === 'tablegroup') {
         for (const cell of question.rows.flat()) {

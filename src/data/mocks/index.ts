@@ -50,6 +50,26 @@ import ieltsSet17 from './ielts-set-17';
 import ieltsSet18 from './ielts-set-18';
 import ieltsSet19 from './ielts-set-19';
 import ieltsSet20 from './ielts-set-20';
+import ieltsSet21 from './ielts-set-21';
+import ieltsSet22 from './ielts-set-22';
+import ieltsSet23 from './ielts-set-23';
+import ieltsSet24 from './ielts-set-24';
+import ieltsSet25 from './ielts-set-25';
+import ieltsSet26 from './ielts-set-26';
+import ieltsSet27 from './ielts-set-27';
+import ieltsSet28 from './ielts-set-28';
+import ieltsSet29 from './ielts-set-29';
+import ieltsSet30 from './ielts-set-30';
+import ieltsSet31 from './ielts-set-31';
+import ieltsSet32 from './ielts-set-32';
+import ieltsSet33 from './ielts-set-33';
+import ieltsSet34 from './ielts-set-34';
+import ieltsSet35 from './ielts-set-35';
+import ieltsSet36 from './ielts-set-36';
+import ieltsSet37 from './ielts-set-37';
+import ieltsSet38 from './ielts-set-38';
+import ieltsSet39 from './ielts-set-39';
+import ieltsSet40 from './ielts-set-40';
 import toeflSet1 from './toefl-set-1';
 import toeflSet2 from './toefl-set-2';
 import toeflSet3 from './toefl-set-3';
@@ -222,7 +242,7 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'icfes:mock-21': icfesMock21,
   'icfes:mock-22': icfesMock22,
   'icfes:mock-23': icfesMock23,
-  // ── IELTS Academic sets 1–20 ──────────────────────────────────────────────
+  // ── IELTS Academic sets 1–40 ──────────────────────────────────────────────
   'ielts:set-1':  withIeltsBalancedChoicePositions(ieltsSet1),
   'ielts:set-2':  withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet2)),
   'ielts:set-3':  withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet3)),
@@ -243,6 +263,26 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'ielts:set-18': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet18)),
   'ielts:set-19': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet19)),
   'ielts:set-20': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet20)),
+  'ielts:set-21': withIeltsBalancedChoicePositions(ieltsSet21),
+  'ielts:set-22': withIeltsBalancedChoicePositions(ieltsSet22),
+  'ielts:set-23': withIeltsBalancedChoicePositions(ieltsSet23),
+  'ielts:set-24': withIeltsBalancedChoicePositions(ieltsSet24),
+  'ielts:set-25': withIeltsBalancedChoicePositions(ieltsSet25),
+  'ielts:set-26': withIeltsBalancedChoicePositions(ieltsSet26),
+  'ielts:set-27': withIeltsBalancedChoicePositions(ieltsSet27),
+  'ielts:set-28': withIeltsBalancedChoicePositions(ieltsSet28),
+  'ielts:set-29': withIeltsBalancedChoicePositions(ieltsSet29),
+  'ielts:set-30': withIeltsBalancedChoicePositions(ieltsSet30),
+  'ielts:set-31': withIeltsBalancedChoicePositions(ieltsSet31),
+  'ielts:set-32': withIeltsBalancedChoicePositions(ieltsSet32),
+  'ielts:set-33': withIeltsBalancedChoicePositions(ieltsSet33),
+  'ielts:set-34': withIeltsBalancedChoicePositions(ieltsSet34),
+  'ielts:set-35': withIeltsBalancedChoicePositions(ieltsSet35),
+  'ielts:set-36': withIeltsBalancedChoicePositions(ieltsSet36),
+  'ielts:set-37': withIeltsBalancedChoicePositions(ieltsSet37),
+  'ielts:set-38': withIeltsBalancedChoicePositions(ieltsSet38),
+  'ielts:set-39': withIeltsBalancedChoicePositions(ieltsSet39),
+  'ielts:set-40': withIeltsBalancedChoicePositions(ieltsSet40),
   // ── Other exams ───────────────────────────────────────────────────────────
   'toefl:set-1': withToefl2026FixedForm(toeflSet1),
   'toefl:set-2': withToefl2026FixedForm(toeflSet2),

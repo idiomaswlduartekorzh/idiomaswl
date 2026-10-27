@@ -3,6 +3,7 @@ export type ExamTranscriptResource = {
   answerKeyHref: string;
   interfaceLanguage: 'Español' | 'Deutsch';
   audioLanguage: 'inglés' | 'alemán';
+  combinedReviewPacket?: boolean;
 };
 
 export type ExamMaterialKind = 'transcript' | 'answer-key';
@@ -21,7 +22,7 @@ const TRANSCRIPT_SERIES: Record<string, TranscriptSeries> = {
     folder: 'ielts',
     filePrefix: 'ielts',
     mockPattern: /^set-(\d+)$/,
-    maxSet: 20,
+    maxSet: 40,
     interfaceLanguage: 'Español',
     audioLanguage: 'inglés',
   },
@@ -60,6 +61,16 @@ export function getExamTranscriptResource(examSlug: string, mockId: string): Exa
   if (!Number.isInteger(setNumber) || setNumber < 1 || setNumber > series.maxSet) return null;
 
   const paddedSet = String(setNumber).padStart(2, '0');
+  if (examSlug === 'ielts' && setNumber >= 21) {
+    const packetHref = `/api/exam-materials/${examSlug}/${mockId}/answer-key`;
+    return {
+      href: packetHref,
+      answerKeyHref: packetHref,
+      interfaceLanguage: series.interfaceLanguage,
+      audioLanguage: series.audioLanguage,
+      combinedReviewPacket: true,
+    };
+  }
   return {
     href: `/api/exam-materials/${examSlug}/${mockId}/transcript`,
     answerKeyHref: `/api/exam-materials/${examSlug}/${mockId}/answer-key`,
@@ -75,6 +86,13 @@ export function getPrivateExamMaterial(examSlug: string, mockId: string, kind: E
   const setNumber = match ? Number(match[1]) : 0;
   if (!Number.isInteger(setNumber) || setNumber < 1 || setNumber > series.maxSet) return null;
   const paddedSet = String(setNumber).padStart(2, '0');
+  if (examSlug === 'ielts' && setNumber >= 21) {
+    const fileName = `ielts-academic-set-${paddedSet}-PRIVATE-STAFF-key-transcript.pdf`;
+    return {
+      fileName,
+      relativePath: `ielts-review-packets/${fileName}`,
+    } as const;
+  }
   const suffix = kind === 'transcript' ? 'transcripciones' : 'claves';
   const category = kind === 'transcript' ? 'exam-transcriptions' : 'exam-answer-keys';
   const fileName = `${series.filePrefix}-set-${paddedSet}-${suffix}.pdf`;

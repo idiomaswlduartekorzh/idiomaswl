@@ -1,5 +1,6 @@
 import type {
   FormGroupQuestion,
+  FillQuestion,
   MatchingGroupQuestion,
   MCQQuestion,
   MockExam,
@@ -23,13 +24,15 @@ export type PublicIeltsMatchingQuestion = Omit<MatchingGroupQuestion, 'items'> &
   items: Array<Omit<MatchingGroupQuestion['items'][number], 'answer'>>;
 };
 export type PublicIeltsMcqQuestion = Omit<MCQQuestion, 'answer'>;
+export type PublicIeltsFillQuestion = Omit<FillQuestion, 'answers'>;
 
 export type PublicIeltsListeningQuestion =
   | PublicIeltsFormGroupQuestion
   | PublicIeltsTableGroupQuestion
   | PublicIeltsMultiSelectQuestion
   | PublicIeltsMatchingQuestion
-  | PublicIeltsMcqQuestion;
+  | PublicIeltsMcqQuestion
+  | PublicIeltsFillQuestion;
 
 export type PublicIeltsListeningSection = {
   part: number;
@@ -50,7 +53,7 @@ export type IeltsListeningSectionPractice = {
 };
 
 export const IELTS_SECTIONAL_LISTENING_SET_IDS = Object.freeze(
-  Array.from({ length: 20 }, (_, index) => `set-${index + 1}`),
+  Array.from({ length: 40 }, (_, index) => `set-${index + 1}`),
 );
 
 const SET_ID_LOOKUP = new Set(IELTS_SECTIONAL_LISTENING_SET_IDS);
@@ -69,7 +72,12 @@ export function ieltsListeningResponseCount(question: PublicIeltsListeningQuesti
   return 1;
 }
 
-function sanitizeQuestion(question: FormGroupQuestion | TableGroupQuestion | MultiSelectQuestion | MatchingGroupQuestion | MCQQuestion): PublicIeltsListeningQuestion {
+function sanitizeQuestion(question: FormGroupQuestion | TableGroupQuestion | MultiSelectQuestion | MatchingGroupQuestion | MCQQuestion | FillQuestion): PublicIeltsListeningQuestion {
+  if (question.type === 'fill') {
+    const { answers: _answers, ...publicQuestion } = question;
+    void _answers;
+    return publicQuestion;
+  }
   if (question.type === 'formgroup') {
     const { unorderedAnswerGroups: _groups, ...publicQuestion } = question;
     void _groups;
@@ -126,7 +134,7 @@ export function selectIeltsListeningPractice(mock: MockExam): IeltsListeningSect
     .sort((a, b) => a.part - b.part);
   if (!blueprint || sourceSections.length !== 4) return null;
 
-  const allowedTypes = new Set(['formgroup', 'tablegroup', 'multiselect', 'matching', 'mcq', 'dialog']);
+  const allowedTypes = new Set(['fill', 'formgroup', 'tablegroup', 'multiselect', 'matching', 'mcq', 'dialog']);
   if (sourceSections.some(section => !section.audioUrl || section.questions.some(question => !allowedTypes.has(question.type)))) {
     return null;
   }
@@ -139,7 +147,7 @@ export function selectIeltsListeningPractice(mock: MockExam): IeltsListeningSect
     title: section.title,
     instructions: displayIeltsSectionInstructions(mock.id, section),
     audioUrl: section.audioUrl!,
-    questions: section.questions.map(question => sanitizeQuestion(question as FormGroupQuestion | TableGroupQuestion | MultiSelectQuestion | MatchingGroupQuestion | MCQQuestion)),
+    questions: section.questions.map(question => sanitizeQuestion(question as FormGroupQuestion | TableGroupQuestion | MultiSelectQuestion | MatchingGroupQuestion | MCQQuestion | FillQuestion)),
   }));
   const responseCount = sections.flatMap(section => section.questions).reduce(
     (total, question) => total + ieltsListeningResponseCount(question),

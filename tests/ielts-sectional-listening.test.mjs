@@ -20,7 +20,9 @@ function perfectAnswers(mock) {
   const answers = { fills: {}, mcq: {}, ms: {}, match: {} };
   for (const section of mock.sections.filter(item => item.skill === 'listening')) {
     for (const question of section.questions) {
-      if (question.type === 'formgroup') {
+      if (question.type === 'fill') {
+        answers.fills[question.id] = question.answers[0];
+      } else if (question.type === 'formgroup') {
         for (const blank of question.blanks) answers.fills[blankKey(question.id, blank.num)] = blank.answers[0];
       } else if (question.type === 'tablegroup') {
         for (const cell of question.rows.flat()) if (typeof cell !== 'string') answers.fills[blankKey(question.id, cell.num)] = cell.answers[0];
@@ -55,13 +57,13 @@ function responseNumbers(section) {
   });
 }
 
-test('catalog exposes exactly IELTS Listening Sets 1–20', () => {
-  assert.deepEqual(IELTS_SECTIONAL_LISTENING_SET_IDS, Array.from({ length: 20 }, (_, index) => `set-${index + 1}`));
+test('catalog exposes exactly IELTS Listening Sets 1–40', () => {
+  assert.deepEqual(IELTS_SECTIONAL_LISTENING_SET_IDS, Array.from({ length: 40 }, (_, index) => `set-${index + 1}`));
   for (const id of IELTS_SECTIONAL_LISTENING_SET_IDS) assert.equal(isIeltsSectionalListeningSetId(id), true);
-  for (const id of ['set-0', 'set-01', 'set-21', 'mock-1']) assert.equal(isIeltsSectionalListeningSetId(id), false);
+  for (const id of ['set-0', 'set-01', 'set-41', 'mock-1']) assert.equal(isIeltsSectionalListeningSetId(id), false);
 });
 
-test('all 20 projections preserve four parts, 40 response slots and one released audio', async () => {
+test('all 40 projections preserve four parts, 40 response slots and one released audio', async () => {
   for (const mockId of IELTS_SECTIONAL_LISTENING_SET_IDS) {
     const mock = getMock('ielts', mockId);
     assert.ok(mock, `${mockId} must exist`);
@@ -77,7 +79,7 @@ test('all 20 projections preserve four parts, 40 response slots and one released
   }
 });
 
-test('displayed part instructions name the actual response range in all 20 sets', () => {
+test('displayed part instructions name the actual response range in all 40 sets', () => {
   const sourceMismatches = [];
   const displayedMismatches = [];
   for (const mockId of IELTS_SECTIONAL_LISTENING_SET_IDS) {
@@ -86,11 +88,14 @@ test('displayed part instructions name the actual response range in all 20 sets'
     for (const section of mock.sections.filter(item => item.skill === 'listening')) {
       const displayed = displayIeltsSectionInstructions(mockId, section);
       assert.equal(practice.sections.find(item => item.part === section.part)?.instructions, displayed);
-      const match = displayed.match(/Questions?\s+(\d+)\s*[–-]\s*(\d+)/i);
-      if (!match) continue;
+      const ranges = [...displayed.matchAll(/(?:Questions?\s+)?(\d+)\s*[–-]\s*(\d+)/gi)];
+      if (ranges.length === 0) continue;
       const numbers = responseNumbers(section);
       const expected = [Math.min(...numbers), Math.max(...numbers)];
-      const stated = [Number(match[1]), Number(match[2])];
+      const stated = [
+        Math.min(...ranges.map(match => Number(match[1]))),
+        Math.max(...ranges.map(match => Number(match[2]))),
+      ];
       if (stated[0] !== expected[0] || stated[1] !== expected[1]) {
         displayedMismatches.push(`${mockId} part ${section.part}: says ${stated.join('–')}, has ${expected.join('–')}`);
       }

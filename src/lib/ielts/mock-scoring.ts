@@ -5,6 +5,7 @@ import type {
   MultiSelectQuestion,
   MatchingGroupQuestion,
   MCQQuestion,
+  FillQuestion,
 } from '@/data/mocks/types';
 import type { IeltsObjectiveAnswers } from './submission';
 
@@ -77,7 +78,11 @@ function scoreObjectiveSkill(
 
   for (const section of sections) {
     for (const question of section.questions) {
-      if (question.type === 'formgroup') {
+      if (question.type === 'fill') {
+        const item = question as FillQuestion;
+        total += 1;
+        if (isCorrect(answers.fills[item.id] ?? '', item.answers)) correct += 1;
+      } else if (question.type === 'formgroup') {
         const item = question as FormGroupQuestion;
         total += item.blanks.length;
         const groupedNumbers = new Set<number>();

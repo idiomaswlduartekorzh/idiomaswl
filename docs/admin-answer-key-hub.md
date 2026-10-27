@@ -8,8 +8,9 @@ Ruta interna: `/dashboard/admin/claves`. Se entra desde el icono **Claves de ex�
 - Las claves TOEFL con corrección en servidor salen de `src/server/toefl/*-registry.ts`. Nunca se infieren de las opciones visibles.
 - El hub distingue respuestas autocorregidas, referencias de tareas que no corrige el runner general y tareas abiertas sin respuesta única.
 - El Set 3 de Cambridge B2 contiene 82 respuestas objetivas y 6 tareas abiertas. Las letras de Listening se leen después de la distribución determinista de opciones.
-- Los sets con audio de IELTS (20), Goethe A1 (7), Cambridge B2 First/FCE (10) y TOEFL (20) muestran una tarjeta **Transcripción del audio** con apertura y descarga directa del PDF correspondiente.
+- Los sets con audio de IELTS 1–20, Goethe A1 (7), Cambridge B2 First/FCE (10) y TOEFL (20) muestran una tarjeta **Transcripción del audio** con apertura y descarga directa del PDF correspondiente.
 - Esos mismos 57 sets publican en su introducción de práctica dos recursos emparejados: **Transcripción del audio** y **Claves y criterios de respuesta**. Los enlaces de Goethe se presentan en alemán; IELTS, FCE y TOEFL, en español.
+- IELTS 21–40 publica un único **Paquete privado de revisión** protegido, que reúne transcripción, claves y criterios en un solo PDF. El propietario administrador puede abrirlo aunque no tenga un plan de pago activo; para el resto de usuarios se conserva el control de acceso habitual.
 - Las rutas de ambos PDF se resuelven de forma centralizada en `src/lib/exams/transcript-resource.ts`. No se enlazan archivos manualmente desde los componentes.
 
 ## Contrato editorial de las transcripciones
@@ -28,7 +29,7 @@ Ruta interna: `/dashboard/admin/claves`. Se entra desde el icono **Claves de ex�
 
 ## Alcance de la verificación
 
-`npm run check:exam-answer-keys` recorre todos los sets publicados, confirma que las claves señalan opciones existentes, detecta IDs y opciones idénticas, comprueba espacios y respuestas vacías, revisa la unión con los registros de TOEFL y verifica las 114 rutas PDF (57 transcripciones y 57 claves: existencia, firma, tamaño mínimo y asociación única). También comprueba que las cuatro experiencias de práctica publiquen el bloque de recursos. El check es parte de `prebuild`.
+`npm run check:exam-answer-keys` recorre todos los sets publicados, confirma que las claves señalan opciones existentes, detecta IDs y opciones idénticas, comprueba espacios y respuestas vacías, revisa la unión con los registros de TOEFL y verifica 77 paquetes registrados: 57 pares públicos (transcripción y claves) y 20 paquetes privados combinados de IELTS 21–40. También comprueba que las cuatro experiencias de práctica publiquen el bloque de recursos. El check es parte de `prebuild`.
 
 Un resultado de **0 alertas estructurales** no sustituye la revisión académica del enunciado, del audio o de respuestas alternativas semánticamente válidas. Las diferencias de puntuación intencionales, como la puntuación en opciones SAT o los pares IELTS aceptados en cualquier orden, deben conservarse al revisar contenido.
 

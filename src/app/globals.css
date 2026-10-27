@@ -3014,9 +3014,22 @@ button {
 .icfes-consent input { margin-top: 0.2rem; flex: 0 0 auto; }
 
 @media (max-width: 640px) {
-  .prac-topbar { top: 60px; height: auto; min-height: 56px; padding: 0.55rem 0.75rem; }
-  .prac-topbar__title { max-width: 40vw; }
+  .prac-topbar {
+    top: 60px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    height: auto;
+    min-height: 60px;
+    padding: 0.55rem 0.75rem;
+  }
+  .prac-topbar__left { gap: 0.55rem; }
+  .prac-topbar__title { max-width: none; font-size: 0.8rem; }
+  .prac-topbar__right { gap: 0.65rem; }
+  .ielts-topbar__progress { display: none; }
   .prac-timer__label, .prac-timer__bar { display: none; }
+  .prac-timer__val { min-width: 50px; font-size: 1rem; }
+  .ielts-section-visual__header { align-items: flex-start; flex-direction: column; gap: 0.15rem; }
+  .ielts-section-visual__image { padding: 0.25rem; }
   .icfes-product-card { padding: 1.1rem; }
 }
 
@@ -4409,6 +4422,43 @@ button {
   border-radius: 8px;
   overflow: hidden;
   background: var(--surface);
+}
+.ielts-section-visual {
+  margin: 0 0 1.25rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--exam-color, var(--accent)) 24%, var(--border));
+  border-radius: 18px;
+  background: #fbfcff;
+  box-shadow: 0 14px 34px rgba(20, 33, 92, 0.09);
+}
+.ielts-section-visual__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(20, 33, 92, 0.07), rgba(200, 32, 46, 0.04));
+}
+.ielts-section-visual__header span {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.ielts-section-visual__header small {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+.ielts-section-visual__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(68vh, 720px);
+  object-fit: contain;
+  padding: clamp(0.4rem, 1.5vw, 1rem);
 }
 .ielts-form__title {
   font-size: 1rem;
