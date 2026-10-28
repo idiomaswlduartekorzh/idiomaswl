@@ -56,6 +56,12 @@ test('all 40 public IELTS sets satisfy the Set 1 navigation and answer-sheet con
     assert.equal(active.filter(section => section.skill === 'reading').length, 3, `${mockId}: Reading passages`);
     assert.equal(new Set(active.map(section => section.part)).size, active.length, `${mockId}: duplicate section part key`);
 
+    const readingPassages = active.filter(section => section.skill === 'reading').map(section => section.passage.trim());
+    const readingWordCount = readingPassages.join(' ').split(/\s+/).filter(Boolean).length;
+    assert.ok(readingPassages.every(passage => passage.split(/\s+/).filter(Boolean).length >= 400), `${mockId}: incomplete Reading passage`);
+    assert.ok(readingPassages.every(passage => !/^[1-3]$/.test(passage)), `${mockId}: Reading placeholder leaked into public content`);
+    assert.ok(readingWordCount >= 2_150 && readingWordCount <= 2_750, `${mockId}: Reading word count ${readingWordCount} outside IELTS contract`);
+
     for (const skill of ['listening', 'reading']) {
       const numbers = active.filter(section => section.skill === skill).flatMap(questionNumbers).sort((a, b) => a - b);
       assert.deepEqual(numbers, expectedNumbers, `${mockId}: ${skill} answer-sheet numbers`);
