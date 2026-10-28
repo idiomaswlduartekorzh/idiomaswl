@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const API = 'https://api.elevenlabs.io';
@@ -17,6 +17,8 @@ const MODEL_ID = 'eleven_v3';
 const CREDIT_MULTIPLIER = 0.70;
 const OUTPUT_FORMAT = 'mp3_44100_128';
 const generate = process.argv.includes('--generate');
+const davidCast = process.argv.includes('--david-cast');
+const release = process.argv.includes('--release');
 const setNumber = Number(process.argv.find(value => value.startsWith('--set='))?.split('=')[1] ?? 2);
 assert.ok(Number.isInteger(setNumber) && setNumber >= 2 && setNumber <= 10, '--set must be a number from 2 to 10');
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -44,13 +46,21 @@ const minimumReserve = Number(process.argv.find(value => value.startsWith('--res
 const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `wl-goethe-a1-set${setNumber}-`));
 let sequence = 0;
 
-const voices = {
-  narrator: { id: 'VNHNa6nN6yJdVF3YRyuF', name: 'WL de · Klara' },
-  female: { id: 'AnvlJBAqSLDzEevYr9Ap', name: 'WL de · Emma' },
-  femaleAlt: { id: 'uvysWDLbKpA4XvpD3GI6', name: 'WL de · Frau Schneider' },
-  male: { id: 'IeQubAjK1ujbppIdhJw4', name: 'WL de · Jonas' },
-  maleAlt: { id: 'NlRO8ABjJNJNYaRaLiPJ', name: 'WL de · Herr Becker' },
-};
+const voices = davidCast
+  ? {
+      narrator: { id: 'JudZUClAOU1jP3wA2eDG', name: 'Lola · native German educational' },
+      female: { id: 'ZoxS77tXeRuNRJNif3rR', name: 'Mila · native German conversational' },
+      femaleAlt: { id: 'Utm9RYMyBhvkjOgvnWNB', name: 'Livia · native German expressive' },
+      male: { id: 'FfvPVzUs3MSJucOhMXLy', name: 'Julius · native German educational' },
+      maleAlt: { id: 'yamcvgNdKmgh0Ron7Bsz', name: 'Hans · native German explainer' },
+    }
+  : {
+      narrator: { id: 'VNHNa6nN6yJdVF3YRyuF', name: 'WL de · Klara' },
+      female: { id: 'AnvlJBAqSLDzEevYr9Ap', name: 'WL de · Emma' },
+      femaleAlt: { id: 'uvysWDLbKpA4XvpD3GI6', name: 'WL de · Frau Schneider' },
+      male: { id: 'IeQubAjK1ujbppIdhJw4', name: 'WL de · Jonas' },
+      maleAlt: { id: 'NlRO8ABjJNJNYaRaLiPJ', name: 'WL de · Herr Becker' },
+    };
 
 function envValue(name) {
   if (process.env[name]) return process.env[name];
@@ -116,7 +126,7 @@ if (!generate) {
 }
 
 if (setNumber !== 2) assert.equal(scriptManifest.status, 'script-ready-audio-blocked', 'audio script must remain explicitly gated before generation');
-assert.ok(ffmpeg && ffprobe, 'approved ffmpeg/ffprobe toolchain is unavailable');
+assert.ok(ffmpeg, 'approved ffmpeg toolchain is unavailable');
 
 async function apiJson(endpoint, apiKey) {
   const response = await fetch(`${API}${endpoint}`, { headers: { 'xi-api-key': apiKey } });
@@ -227,6 +237,21 @@ function encodeMp3(wav, output) {
   run(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-i', wav, '-af', 'loudnorm=I=-18:TP=-2:LRA=7', '-ar', '44100', '-ac', '1', '-b:a', '64k', output]);
 }
 
+function durationSeconds(file) {
+  if (ffprobe) {
+    return Number(execFileSync(ffprobe, [
+      '-v', 'error', '-show_entries', 'format=duration',
+      '-of', 'default=noprint_wrappers=1:nokey=1', file,
+    ], { encoding: 'utf8' }).trim());
+  }
+  const probe = spawnSync(ffmpeg, ['-hide_banner', '-i', file, '-f', 'null', '-'], { encoding: 'utf8' });
+  assert.equal(probe.status, 0, `unable to inspect duration for ${file}`);
+  const matches = [...String(probe.stderr).matchAll(/time=(\d+):(\d+):(\d+(?:\.\d+)?)/g)];
+  assert.ok(matches.length > 0, `ffmpeg did not report duration for ${file}`);
+  const [, hours, minutes, seconds] = matches.at(-1);
+  return Number(hours) * 3600 + Number(minutes) * 60 + Number(seconds);
+}
+
 function itemSequence(itemNumber, plays) {
   const padded = String(itemNumber).padStart(2, '0');
   const stimulus = sourceWav(`item${padded}.mp3`);
@@ -265,7 +290,7 @@ try {
   const expectedNames = ['hoeren-komplett.mp3', 'hoeren-teil1.mp3', 'hoeren-teil2.mp3', 'hoeren-teil3.mp3', ...Array.from({ length: 15 }, (_, index) => `item-${String(index + 1).padStart(2, '0')}.mp3`)];
   const outputs = expectedNames.sort().map(name => {
     const file = path.join(outputDir, name);
-    const duration = Number(execFileSync(ffprobe, ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file], { encoding: 'utf8' }).trim());
+    const duration = durationSeconds(file);
     return { file: `public/audio/goethe/a1-${setNumber}/${name}`, durationSeconds: Number(duration.toFixed(3)), bytes: fs.statSync(file).size };
   });
   const after = await apiJson('/v1/user/subscription', apiKey);
@@ -279,11 +304,14 @@ try {
     acousticCue: { kind: 'WeLearn synthetic descending three-tone exam signal', frequenciesHz: [990, 831, 698], durationSeconds: cueDurationSeconds, cueCount: 28, placement: 'before every scored playback and both Teil 1 example playbacks' },
     outputs,
   }, null, 2)}\n`);
-  const releaseManifest = JSON.parse(fs.readFileSync(releasePath, 'utf8'));
-  releaseManifest.releasedSets = [...new Set([...releaseManifest.releasedSets, setNumber])].sort((left, right) => left - right);
-  fs.writeFileSync(releasePath, `${JSON.stringify(releaseManifest, null, 2)}\n`);
+  if (release) {
+    const releaseManifest = JSON.parse(fs.readFileSync(releasePath, 'utf8'));
+    releaseManifest.releasedSets = [...new Set([...releaseManifest.releasedSets, setNumber])].sort((left, right) => left - right);
+    fs.writeFileSync(releasePath, `${JSON.stringify(releaseManifest, null, 2)}\n`);
+  }
   console.log(`  complete: ${(outputs.find(output => output.file.endsWith('/hoeren-komplett.mp3')).durationSeconds / 60).toFixed(2)} minutes`);
   console.log(`  charged: ${availableCredits - afterRemaining} credits · remaining: ${afterRemaining}`);
+  if (!release) console.log('  release: gated pending human listening and runtime QA');
 } finally {
   fs.rmSync(tempDir, { recursive: true, force: true });
 }
