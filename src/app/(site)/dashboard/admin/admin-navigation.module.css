@@ -6,23 +6,28 @@
   gap: 4px;
   overflow-y: auto;
   padding: 18px 12px;
-  border-right: 1px solid #e8ddd4;
-  background: #fff;
+  border-right: 1px solid #273b58;
+  background: #14233f;
 }
 
-.brand { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; padding: 7px 10px; color: #1a1a2e; font-size: 13px; font-weight: 800; }
-.brand svg { flex-shrink: 0; box-sizing: content-box; padding: 9px; border-radius: 10px; background: #c87941; }
-.item { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 42px; padding: 9px 12px; border: 0; border-radius: 10px; background: transparent; color: #465064; text-align: left; text-decoration: none; font: 600 12px/1.3 system-ui, sans-serif; cursor: pointer; }
+.brand { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; padding: 7px 10px; color: #fff; font-size: 13px; font-weight: 800; }
+.brand svg { flex-shrink: 0; box-sizing: content-box; padding: 9px; border-radius: 8px; background: #3971c7; }
+.item { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 42px; padding: 9px 12px; border: 0; border-radius: 8px; background: transparent; color: #c3d1e7; text-align: left; text-decoration: none; font: 600 12px/1.3 system-ui, sans-serif; cursor: pointer; }
 .item svg { flex-shrink: 0; }
-.item:hover, .item:focus-visible { background: #f5f0eb; color: #1a1a2e; }
-.item:focus-visible { outline: 2px solid #c87941; outline-offset: 2px; }
-.active { background: #1a1a2e; color: #fff; }
-.active:hover, .active:focus-visible { background: #25253d; color: #fff; }
-.highlight { color: #155d53; background: #e5f4f0; }
+.item:hover, .item:focus-visible { background: #263f65; color: #fff; }
+.item:focus-visible { outline: 2px solid #78a8ed; outline-offset: 2px; }
+.active { background: #315f9f; color: #fff; }
+.active:hover, .active:focus-visible { background: #3971c7; color: #fff; }
+.highlight { color: #b9e6de; background: #23504f; }
 
 @media (max-width: 950px) {
   .sidebar { width: 58px; padding: 18px 7px; align-items: center; }
   .brand { padding: 0; }
   .brand span, .item span { display: none; }
   .item { width: 42px; justify-content: center; padding: 9px; }
+}
+.adminShell{}
+:global(body):has(.adminShell) :global(.wl-site-nav),:global(body):has(.adminShell) :global(.wl-wa-float){display:none!important}
+@media (max-width: 650px) {
+  .dateStamp { display: none !important; }
 }

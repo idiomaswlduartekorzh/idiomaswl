@@ -5,6 +5,27 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Paneles de estudiante y administración — 26 de octubre de 2026
+
+La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama
+`codex/dashboard-redesign-20261026`, incorpora `main@4f0f27b7` y propone un
+rediseño de ambos paneles. El estudiante puede filtrar resultados por examen y
+periodo, comparar su evolución y abrir el reporte más reciente. El centro
+administrativo ofrece filtros, actividad diaria, prioridades y seguimiento del
+estado de leads, con la escritura protegida por `requireAdmin` y la verificación
+del origen de cada solicitud.
+
+Estado: `LISTO_PARA_INTEGRAR`; no integrado ni publicado en producción. Pasaron la CI,
+la vista previa de Vercel, el catálogo protegido, la línea base frente a `main`,
+TypeScript, ESLint focalizado, las 12 pruebas del panel de estudiante, el build
+optimizado y una revisión visual de escritorio y móvil. El 28 de octubre se
+actualizó la rama desde `main` y se repitieron catálogo, línea base, pruebas,
+TypeScript y build. Con una sesión administradora real se comprobaron los filtros
+del resumen y de leads y el guardado del estado `contacted` en la vista previa y
+en Supabase. El lead sintético de la prueba se eliminó. Para completar el acceso
+con Google se autorizó temporalmente la URL exacta de retorno de la vista previa;
+se retiró después y Supabase conserva solo sus dos URLs de producción.
+
 ## Parche de seguridad Next.js y decisión de inscripción — 26 de octubre de 2026
 
 La [PR #46](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/46) actualizó Next.js a
