@@ -18,9 +18,9 @@ import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
 import GoetheReviewPanel from './GoetheReviewPanel'
 import AdminOverview from './AdminOverview'
-import { updateLeadStatus } from './lead-actions'
-import type { LeadStatus } from './lead-status'
 import styles from './admin-navigation.module.css'
+
+type LeadStatus = LeadRow['lead_status']
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
@@ -164,8 +164,13 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
     setSavingLead(lead.id)
     setLeadError(null)
     try {
-      const result = await updateLeadStatus(lead.id, status)
-      if (!result.ok) { setLeadError(result.error ?? 'No se pudo guardar el estado.'); return }
+      const response = await fetch('/api/admin/leads/status', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ leadId: lead.id, status }),
+      })
+      const result = await response.json() as { ok?: boolean; error?: string }
+      if (!response.ok || !result.ok) { setLeadError(result.error ?? 'No se pudo guardar el estado.'); return }
       setLeadStatuses(current => ({ ...current, [lead.id]: status }))
       router.refresh()
     } catch {
