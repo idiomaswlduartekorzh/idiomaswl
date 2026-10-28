@@ -5,10 +5,10 @@ Fecha editorial: 24 de septiembre de 2026.
 ## Estado de publicación
 
 - Los sets 8, 9 y 10 contienen material original de WeLearn alineado con la arquitectura pública de Start Deutsch 1.
-- Lesen, Schreiben y Sprechen están publicados para práctica independiente.
-- Hören y el simulacro completo quedan cerrados por set hasta que existan y pasen control las pistas de audio.
+- Los cuatro módulos y el simulacro completo están publicados para los sets 8–10.
+- Hören usa los masters aprobados y las pistas derivadas por Teil e ítem.
 - La fuente de verdad del audio habilitado es `src/data/mocks/goethe-a1-audio-release.json`.
-- El generador añade un set a ese manifiesto únicamente después de producir y medir correctamente sus audios finales.
+- La liberación se registró después de producir, medir, escuchar y comprobar en runtime los audios finales.
 
 Cada set conserva 11 partes, 35 respuestas objetivas, un formulario, una tarea de mensaje y tres bloques de Sprechen. El control editorial compara los estímulos completos de los sets 3–10 y rechaza repeticiones exactas.
 
@@ -69,40 +69,42 @@ Prompt base de Sprechen:
 
 Cada set incluye dos hojas y doce objetos nuevos. En el set 8 son plato, cuchillo, vaso, agua, azúcar, silla, mapa, billete, paraguas, cámara, taxi y puerta; los sets 9 y 10 siguen el mismo contrato gráfico con los sustantivos propios de sus tareas.
 
-## Audio pendiente
+## Audio liberado
 
-El inventario operativo consolidado —caracteres, huellas, salidas y reserva—
+El inventario operativo consolidado —caracteres, huellas y salidas—
 vive en `docs/GOETHE-AUDIO-PENDIENTE-A1-B1.md`; el contrato verificable está en
 `config/goethe-audio/backlog.json`. Si este documento y aquel inventario
 divergen, se detiene la generación y se vuelve a ejecutar
 `npm run check:goethe-audio-backlog`.
 
-El guion de cada set ya está dividido en 28 clips naturales y usa el reparto existente:
+Cada set se produjo desde 28 clips naturales con este reparto nativo alemán:
 
-- narradora: Klara;
-- voces femeninas: Emma y Frau Schneider;
-- voces masculinas: Jonas y Herr Becker;
+- narradora: Lola;
+- voces femeninas: Mila y Livia;
+- voces masculinas: Julius y Hans;
 - modelo: ElevenLabs `eleven_v3`;
-- salida: MP3 44.1 kHz / 128 kbps;
+- salida pública: MP3 mono 44.1 kHz / 64 kbps, normalizada a -18 LUFS;
 - señal: cue sintético WeLearn antes de cada reproducción evaluada.
 
-Los ensayos sin consumo registran:
+Los manifiestos liberados registran:
 
 | Set | Clips | Caracteres facturables | Hash de manifiesto |
 |---|---:|---:|---|
-| 8 | 28 | 3.875 | `808da3196a73b89d` |
-| 9 | 28 | 4.440 | `62ed3dc8d450c4da` |
-| 10 | 28 | 4.233 | `0c11d84ba7140c62` |
+| 8 | 28 | 3.875 | `ab65155669dbcfe6` |
+| 9 | 28 | 4.440 | `1267ce45d5c86188` |
+| 10 | 28 | 4.233 | `eec351cde2c6d3d6` |
 
-Cuando haya saldo, producir un set por vez:
+Una regeneración futura debe ejecutarse por set y no cambia el manifiesto de
+liberación salvo que se pase `--release` después de repetir todos los controles:
 
 ```bash
-npm run audio:goethe-a1 -- --set=8 --generate
-npm run audio:goethe-a1 -- --set=9 --generate
-npm run audio:goethe-a1 -- --set=10 --generate
+npm run audio:goethe-a1 -- --set=8 --generate --release
 ```
 
-El proceso comprueba saldo y reserva protegida antes de consumir créditos, ensambla pistas por Teil y el examen completo, mide archivos, escribe el manifiesto técnico y habilita automáticamente el set terminado. Después de cada lote se debe ejecutar `npm run check:goethe-a1` y escuchar una muestra humana antes de integrar el cambio de audio.
+El proceso comprueba saldo y reserva protegida antes de consumir créditos,
+ensambla pistas por Teil y el examen completo, mide archivos y escribe el
+manifiesto técnico. Sin `--release`, conserva el set cerrado aunque la síntesis
+haya terminado correctamente.
 
 ## Puertas de calidad
 

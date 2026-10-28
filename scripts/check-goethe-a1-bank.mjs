@@ -89,4 +89,4 @@ for (const { number, mock, audio } of sets) {
 
 const comparable = sets.flatMap(({ number, mock }) => mock.sections.flatMap(section => [section.passage, ...section.questions.flatMap(question => [question.stimulus, question.type === 'mcq' ? question.text : question.groupLabel])]).filter(Boolean).map(value => ({ number, value: value.toLocaleLowerCase('de-DE').replace(/[^\p{L}\p{N}]+/gu, ' ').trim() })));
 for (let left = 0; left < comparable.length; left += 1) for (let right = left + 1; right < comparable.length; right += 1) if (comparable[left].number !== comparable[right].number && comparable[left].value.length > 35) assert.notEqual(comparable[left].value, comparable[right].value, `duplicate stimulus across Sets ${comparable[left].number}/${comparable[right].number}`);
-console.log(`✓ Sets 3–${finalSet} are mutually original at full-stimulus level${release ? '; Sets 8–10 are content-ready with audio explicitly gated' : ''}`);
+console.log(`✓ Sets 3–${finalSet} are mutually original at full-stimulus level${release ? '; Sets 1–10 have complete released audio' : ''}`);

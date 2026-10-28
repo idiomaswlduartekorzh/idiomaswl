@@ -1,6 +1,6 @@
 # Goethe A1–B1 · inventario exacto de audio pendiente
 
-Fecha de corte: **28 de septiembre de 2026**. Este documento es la puerta de
+Fecha de corte: **28 de octubre de 2026**. Este documento es la puerta de
 entrada operativa para reanudar ElevenLabs. El inventario legible por máquina
 está en `config/goethe-audio/backlog.json`.
 
@@ -8,40 +8,40 @@ está en `config/goethe-audio/backlog.json`.
 
 | Nivel | Sets que necesitan audio | Estado real | Archivos públicos finales |
 |---|---|---|---:|
-| A1 | 8, 9 y 10 | listo para generar, un set por vez | 57 |
+| A1 | ninguno | sets 1–10 liberados con audio completo | 0 |
 | A2 | 1–10 | guiones congelados; generador y casting todavía bloqueados | 50 |
 | B1 | 1–10 | faltan los guiones completos de Hören | 50 planificados |
 
-Los sets A1 1–7 ya están liberados y **no se regeneran**. En total quedan 157
-salidas públicas si A2 y B1 conservan un master de examen y cuatro pistas de
-práctica por set. Las fuentes de TTS, manifiestos y recibos no cuentan como
-salidas públicas.
+Los sets A1 1–10 ya están liberados y **no se regeneran**. En total quedan 100
+salidas públicas planificadas para A2 y B1 si ambos niveles conservan un master
+de examen y cuatro pistas de práctica por set. Las fuentes de TTS, manifiestos
+y recibos no cuentan como salidas públicas.
 
-## A1 · lote ejecutable
+## A1 · lote liberado
 
 Cada set produce 28 clips naturales reutilizables y 19 archivos públicos:
 `hoeren-komplett.mp3`, tres pistas por Teil y `item-01.mp3` a `item-15.mp3`.
-El generador usa `eleven_v3`, cinco voces alemanas ya fijadas, MP3 44.1 kHz /
-128 kbps y reserva protegida de 8.000 créditos.
+Los sets 8–10 se publicaron tras aprobación humana el 28 de octubre de 2026.
+Usan `eleven_v3`, cinco voces alemanas nativas, MP3 44.1 kHz / 64 kbps mono y
+normalización a -18 LUFS.
 
-| Set | Clips | Caracteres facturables | Crédito estimado actual | Huella |
+| Set | Clips | Caracteres facturables | Duración master | Huella |
 |---:|---:|---:|---:|---|
-| 8 | 28 | 3.875 | 2.713 | `808da3196a73b89d` |
-| 9 | 28 | 4.440 | 3.108 | `62ed3dc8d450c4da` |
-| 10 | 28 | 4.233 | 2.964 | `0c11d84ba7140c62` |
-| **Total** | **84** | **12.548** | **8.785** | — |
+| 8 | 28 | 3.875 | 17:49 | `ab65155669dbcfe6` |
+| 9 | 28 | 4.440 | 18:56 | `1267ce45d5c86188` |
+| 10 | 28 | 4.233 | 18:49 | `eec351cde2c6d3d6` |
+| **Total** | **84** | **12.548** | **55:34** | — |
 
-Ejecutar y escuchar un set antes de iniciar el siguiente:
+La generación nunca habilita un set automáticamente. Una regeneración futura
+requiere autorización, escucha humana y la opción explícita `--release`:
 
 ```bash
-npm run audio:goethe-a1 -- --set=8 --generate --reserve=8000
-npm run audio:goethe-a1 -- --set=9 --generate --reserve=8000
-npm run audio:goethe-a1 -- --set=10 --generate --reserve=8000
+npm run audio:goethe-a1 -- --set=8 --generate --reserve=8000 --release
 ```
 
-El proceso debe escribir `public/audio/goethe/a1-<set>/manifest.json`, medir las
-19 salidas y añadir el set a `goethe-a1-audio-release.json`. Si la huella o el
-saldo no coincide, se detiene: no se corrige el guion durante la generación.
+El proceso escribe `public/audio/goethe/a1-<set>/manifest.json`, mide las 19
+salidas y solo modifica `goethe-a1-audio-release.json` cuando recibe
+`--release`. Si la huella o el saldo no coincide, se detiene.
 
 ## A2 · textos exactos, generación todavía prohibida
 

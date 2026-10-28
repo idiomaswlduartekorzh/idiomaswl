@@ -30,10 +30,9 @@ for (const [skill, expectedCounts] of Object.entries(expectedQuestionCounts)) {
 
 for (const mock of sets) {
   for (const [skill, expectedCounts] of Object.entries(expectedQuestionCounts)) {
-    if (skill === 'listening' && Number(mock.id.split('-')[1]) > 7) continue;
     const completeSections = goethePracticeSections(mock, skill);
     assert.equal(completeSections.length, expectedCounts.length, `${mock.id} ${skill}: cantidad de Teile incorrecta`);
-    const followingSet = sets.find(candidate => Number(candidate.id.split('-')[1]) === Number(mock.id.split('-')[1]) + 1 && (skill !== 'listening' || Number(candidate.id.split('-')[1]) <= 7));
+    const followingSet = sets.find(candidate => Number(candidate.id.split('-')[1]) === Number(mock.id.split('-')[1]) + 1);
     assert.equal(
       nextGoethePractice(mock.id, skill)?.href,
       followingSet ? goethePracticeHref(followingSet.id, skill) : undefined,
@@ -71,7 +70,8 @@ assert.deepEqual(nextGoethePractice('a1-2', 'listening'), {
 });
 assert.deepEqual(nextGoethePractice('a1-7', 'speaking', 3), { href: goethePracticeHref('a1-8', 'speaking', 1), label: 'Continuar con Set 8 · Teil 1' });
 assert.deepEqual(nextGoethePractice('a1-7', 'speaking'), { href: goethePracticeHref('a1-8', 'speaking'), label: 'Continuar con Set 8' });
-assert.equal(nextGoethePractice('a1-7', 'listening'), undefined, 'Hören no debe enlazar a un set sin audio publicado');
+assert.deepEqual(nextGoethePractice('a1-7', 'listening'), { href: goethePracticeHref('a1-8', 'listening'), label: 'Continuar con Set 8' });
+assert.equal(nextGoethePractice('a1-10', 'listening'), undefined, 'Set 10 debe cerrar la secuencia publicada de Hören');
 assert.equal(nextGoethePractice('a1-10', 'speaking'), undefined, 'Set 10 debe cerrar la secuencia editorial');
 
 const hubSource = fs.readFileSync(path.join(root, 'src/app/(site)/practica/goethe/page.tsx'), 'utf8');

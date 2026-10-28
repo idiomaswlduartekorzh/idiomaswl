@@ -15,10 +15,11 @@ const b1Release = json('src/data/mocks/goethe-b1-release.json');
 
 assert.equal(backlog.schemaVersion, 1);
 assert.deepEqual(backlog.a1.releasedSets, a1Release.releasedSets, 'A1 released-set inventory drifted');
-assert.deepEqual(backlog.a1.pendingSets.map(entry => entry.set), [8, 9, 10]);
-assert.equal(backlog.a1.publicOutputsPerPendingSet.count, 19);
+assert.deepEqual(backlog.a1.releasedSets, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+assert.deepEqual(backlog.a1.pendingSets, []);
+assert.equal(backlog.a1.publicOutputsPerSet.count, 19);
 
-for (const expected of backlog.a1.pendingSets) {
+for (const expected of backlog.a1.release20261028) {
   const run = spawnSync(process.execPath, [
     '--experimental-strip-types', '--no-warnings',
     '--experimental-loader', './tests/ts-paths-loader.mjs',
@@ -29,8 +30,13 @@ for (const expected of backlog.a1.pendingSets) {
   assert.equal(Number(field('jobs')), expected.sourceClips, `A1 Set ${expected.set} clip count drifted`);
   assert.equal(Number(field('characters')), expected.billableCharacters, `A1 Set ${expected.set} character count drifted`);
   assert.equal(field('manifest'), expected.sourceManifestHash, `A1 Set ${expected.set} manifest drifted`);
-  assert.equal(expected.estimatedCreditsAtCurrentModel, Math.ceil(expected.billableCharacters * backlog.a1.generation.creditMultiplier));
-  assert.equal(existsSync(path.join(root, `public/audio/goethe/a1-${expected.set}/hoeren-komplett.mp3`)), false, `A1 Set ${expected.set} is pending but already has an untracked master`);
+  const audioDir = path.join(root, `public/audio/goethe/a1-${expected.set}`);
+  const master = path.join(audioDir, 'hoeren-komplett.mp3');
+  assert.equal(existsSync(master), true, `A1 Set ${expected.set} released master is missing`);
+  assert.equal(createHash('sha256').update(readFileSync(master)).digest('hex'), expected.masterSha256, `A1 Set ${expected.set} master hash drifted`);
+  const manifest = json(`public/audio/goethe/a1-${expected.set}/manifest.json`);
+  assert.equal(manifest.sourceManifestHash, expected.sourceManifestHash, `A1 Set ${expected.set} release manifest drifted`);
+  assert.equal(manifest.outputs.length, backlog.a1.publicOutputsPerSet.count);
 }
 
 assert.equal(backlog.a2.sets.length, 10);
@@ -76,9 +82,9 @@ for (const set of backlog.b1.sets) {
 }
 
 const documentation = readFileSync(path.join(root, 'docs/GOETHE-AUDIO-PENDIENTE-A1-B1.md'), 'utf8');
-assert.match(documentation, /A1 1–7 ya están liberados/);
+assert.match(documentation, /A1 1–10 ya están liberados/);
 assert.match(documentation, /A2 Set 1/);
 assert.match(documentation, /faltan los guiones completos de Hören/);
 assert.match(documentation, /No se generan, no se copian y no se usan/);
 
-console.log('Goethe audio backlog verified: A1 8–10 executable; A2 1–10 script-frozen; B1 1–10 correctly blocked before script authoring.');
+console.log('Goethe audio backlog verified: A1 1–10 released and reproducible; A2 1–10 script-frozen; B1 1–10 correctly blocked before script authoring.');

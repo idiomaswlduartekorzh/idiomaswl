@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "exam": "Goethe-Zertifikat A1 / Start Deutsch 1",
+  "reviewedAt": "2026-10-28",
+  "sets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "humanApproval": {
+    "sets": [8, 9, 10],
+    "scope": "audio masters",
+    "status": "APPROVED"
+  },
+  "audio": {
+    "status": "PASS",
+    "files": 190,
+    "totalBytes": 189143008,
+    "format": "MP3 mono, 44.1 kHz, 64 kbps",
+    "masterDurationRangeSeconds": [1038.28, 1135.96],
+    "fullMasterDecode": "10/10 PASS",
+    "masterSha256": {
+      "1": "98485f3c9eb4b323aabeb0457a92c58bf939a6c919c21a2f869c72ad645f4195",
+      "2": "28c9c85661b20c1e71b22b3ebf486b3d0743416923cc2db404799d15899d8b00",
+      "3": "579bd28b9bc2131c1e8d994a3f6f8ee858369ebdabe144419aeab7c4d2cf3716",
+      "4": "c04eaf3468d04d2706707c683a9ce2309f3c2643de780d304ae8ff53d4ebf4e5",
+      "5": "c3e4683326ac70c5296c096dc5d980b3550e723a8a38ae59da1235f19b9c4e21",
+      "6": "e1203740b22ba67acac4d3d6ddcb37692deac069a4c9470a9c58b79a41ef4aec",
+      "7": "de7e050f62b17b22fd98c2d278e5f5938edfdb6e24c59538bc94a180907a9f65",
+      "8": "9cc77b617ead3853fd4fa0bf5550dfe370e59372c5cb1d51da8bb18451e8ba63",
+      "9": "6580996b211c69ece384ed1b799ea3a21335fd5b4e2467fa4601537438b9b316",
+      "10": "42948d928dd5c423bf143ab216cd0f65879400a155b8bf4ab1ba13a29c7126e6"
+    }
+  },
+  "content": {
+    "status": "PASS",
+    "partsPerSet": 11,
+    "responsesPerSet": 35,
+    "listeningItemsPerSet": 15,
+    "readingItemsPerSet": 15,
+    "visualAssetsPerSet": 15,
+    "scoringTests": "PASS",
+    "answerKeyIsolation": "PASS",
+    "guidedContinuity": "A1 Sets 1–10 PASS"
+  },
+  "releaseGates": {
+    "goetheA1": "PASS",
+    "goethePractice": "PASS",
+    "goetheAudioBacklog": "PASS",
+    "practiceCatalog": "PASS",
+    "typescript": "PASS",
+    "productionBuild": "PASS"
+  }
+}

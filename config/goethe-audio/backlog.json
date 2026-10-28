@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "auditedAt": "2026-09-28",
+  "auditedAt": "2026-10-28",
   "policy": {
     "provider": "ElevenLabs",
     "generateOnlyAfterFreshCreditSnapshot": true,
@@ -9,29 +9,30 @@
     "requiredQa": ["technical", "human-listening", "runtime", "release-receipt"]
   },
   "a1": {
-    "state": "PARTIALLY_RELEASED",
-    "releasedSets": [1, 2, 3, 4, 5, 6, 7],
-    "pendingSets": [
+    "state": "FULLY_RELEASED",
+    "releasedSets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "pendingSets": [],
+    "release20261028": [
       {
         "set": 8,
         "sourceClips": 28,
         "billableCharacters": 3875,
-        "estimatedCreditsAtCurrentModel": 2713,
-        "sourceManifestHash": "808da3196a73b89d"
+        "sourceManifestHash": "ab65155669dbcfe6",
+        "masterSha256": "9cc77b617ead3853fd4fa0bf5550dfe370e59372c5cb1d51da8bb18451e8ba63"
       },
       {
         "set": 9,
         "sourceClips": 28,
         "billableCharacters": 4440,
-        "estimatedCreditsAtCurrentModel": 3108,
-        "sourceManifestHash": "62ed3dc8d450c4da"
+        "sourceManifestHash": "1267ce45d5c86188",
+        "masterSha256": "6580996b211c69ece384ed1b799ea3a21335fd5b4e2467fa4601537438b9b316"
       },
       {
         "set": 10,
         "sourceClips": 28,
         "billableCharacters": 4233,
-        "estimatedCreditsAtCurrentModel": 2964,
-        "sourceManifestHash": "0c11d84ba7140c62"
+        "sourceManifestHash": "eec351cde2c6d3d6",
+        "masterSha256": "42948d928dd5c423bf143ab216cd0f65879400a155b8bf4ab1ba13a29c7126e6"
       }
     ],
     "generation": {
@@ -40,9 +41,12 @@
       "creditMultiplier": 0.7,
       "minimumRemainingCreditReserve": 8000,
       "outputFormat": "mp3_44100_128",
-      "voices": ["WL de · Klara", "WL de · Emma", "WL de · Frau Schneider", "WL de · Jonas", "WL de · Herr Becker"]
+      "voicesByRelease": {
+        "sets1To7": ["WL de · Klara", "WL de · Emma", "WL de · Frau Schneider", "WL de · Jonas", "WL de · Herr Becker"],
+        "sets8To10": ["Lola · native German educational", "Mila · native German conversational", "Livia · native German expressive", "Julius · native German educational", "Hans · native German explainer"]
+      }
     },
-    "publicOutputsPerPendingSet": {
+    "publicOutputsPerSet": {
       "count": 19,
       "master": "public/audio/goethe/a1-{set}/hoeren-komplett.mp3",
       "parts": [
