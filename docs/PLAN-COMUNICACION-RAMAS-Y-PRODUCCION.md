@@ -7,17 +7,21 @@ Fecha de corte: 25 de agosto de 2026.
 
 ## Paneles de estudiante y administración — 26 de octubre de 2026
 
-La rama `codex/dashboard-redesign-20261026` parte de `main@480b5467` y propone un
+La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama
+`codex/dashboard-redesign-20261026`, incorpora `main@4f0f27b7` y propone un
 rediseño de ambos paneles. El estudiante puede filtrar resultados por examen y
 periodo, comparar su evolución y abrir el reporte más reciente. El centro
 administrativo ofrece filtros, actividad diaria, prioridades y seguimiento del
 estado de leads, con la escritura protegida por `requireAdmin`.
 
-Estado: `EN_VALIDACION`; no integrado ni publicado. Pasaron el catálogo protegido,
+Estado: `EN_VALIDACION`; no integrado ni publicado en producción. Pasaron la CI,
+la vista previa de Vercel, el catálogo protegido, la línea base frente a `main`,
 TypeScript, ESLint focalizado, las 12 pruebas del panel de estudiante, el build
-optimizado y una revisión visual de escritorio y móvil. Falta validar con una
-sesión administrativa real el cambio de estado de un lead y revisar CI antes de
-integrar.
+optimizado y una revisión visual de escritorio y móvil. El 28 de octubre se
+actualizó la rama desde `main` y se repitieron catálogo, línea base, pruebas,
+TypeScript y build. La vista previa protegida redirige al inicio de sesión;
+falta probar con una sesión administradora real el cambio de estado de un lead
+antes de integrar.
 
 ## Parche de seguridad Next.js y decisión de inscripción — 26 de octubre de 2026
 
