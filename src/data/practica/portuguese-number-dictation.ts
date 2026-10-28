@@ -96,55 +96,64 @@ export function portugueseNumberWords(value: number): string {
   return `${prefix}${joiner}${underOneThousand(rest)}`
 }
 
-const RANGE_DEFINITIONS = [
+const SET_DEFINITIONS = [
   {
-    id: '0-99',
+    id: '0-99-digits',
     range: '0–99',
-    values: [0, 3, 7, 11, 14, 18, 20, 22, 27, 30, 33, 39, 42, 48, 50, 56, 64, 71, 85, 99],
+    answerMode: 'digits',
+    values: [42, 54, 85, 63, 16, 67, 11, 99, 27, 50, 18, 71, 33, 87, 56, 14, 48, 22, 39, 39],
   },
   {
-    id: '100-199',
-    range: '100–199',
-    values: [100, 101, 105, 109, 110, 112, 118, 120, 124, 130, 137, 140, 145, 150, 156, 160, 168, 175, 184, 199],
+    id: '0-99-words',
+    range: '0–99',
+    answerMode: 'words',
+    values: [6, 92, 24, 0, 57, 81, 35, 13, 74, 46, 2, 68, 90, 29, 53, 17, 76, 41, 8, 95],
   },
   {
-    id: '1000-100000',
+    id: '100-999-digits',
+    range: '100–999',
+    answerMode: 'digits',
+    values: [145, 302, 999, 418, 560, 711, 284, 630, 105, 872, 396, 500, 217, 684, 901, 453, 790, 118, 765, 340],
+  },
+  {
+    id: '100-999-words',
+    range: '100–999',
+    answerMode: 'words',
+    values: [823, 156, 407, 692, 250, 934, 318, 701, 579, 112, 845, 263, 980, 436, 600, 174, 759, 521, 888, 209],
+  },
+  {
+    id: '1000-100000-digits',
     range: '1.000–100.000',
-    values: [1_000, 1_001, 1_010, 1_100, 1_200, 1_500, 1_999, 2_000, 2_500, 3_100, 4_700, 9_999, 10_000, 12_000, 25_000, 37_800, 50_000, 64_000, 99_999, 100_000],
+    answerMode: 'digits',
+    values: [25_000, 1_001, 64_000, 2_500, 99_999, 1_200, 10_000, 4_700, 100_000, 1_999, 37_800, 1_000, 50_000, 3_100, 12_000, 1_100, 9_999, 2_000, 1_010, 1_500],
+  },
+  {
+    id: '1000-100000-words',
+    range: '1.000–100.000',
+    answerMode: 'words',
+    values: [18_600, 1_045, 52_408, 7_070, 31_999, 80_000, 2_250, 15_015, 69_420, 95_800, 6_304, 40_040, 23_700, 11_111, 72_005, 3_999, 27_080, 50_500, 1_900, 88_888],
   },
 ] as const
 
-export const PORTUGUESE_NUMBER_DICTATION_SETS: PortugueseNumberDictationSet[] = RANGE_DEFINITIONS.flatMap((range, rangeIndex) => {
-  const items = range.values.map((value) => ({
+export const PORTUGUESE_NUMBER_DICTATION_SETS: PortugueseNumberDictationSet[] = SET_DEFINITIONS.map((set, index) => {
+  const items = set.values.map((value) => ({
     value,
     spoken: portugueseNumberWords(value),
   }))
-  const firstOrder = rangeIndex * 2 + 1
-  const audioUrl = `/audio/portugues/a1/numeros/${range.id}/ditado-20.mp3`
+  const modeLabel = set.answerMode === 'digits' ? 'Em cifras' : 'Com letras'
 
-  return [
-    {
-      id: `${range.id}-digits`,
-      order: firstOrder,
-      title: `Números de ${range.range} · em algarismos`,
-      range: range.range,
-      description: 'Ouça cada número e registre a resposta usando somente algarismos.',
-      answerMode: 'digits' as const,
-      modeLabel: 'Em cifras',
-      audioUrl,
-      items,
-    },
-    {
-      id: `${range.id}-words`,
-      order: firstOrder + 1,
-      title: `Números de ${range.range} · por extenso`,
-      range: range.range,
-      description: 'Ouça os mesmos 20 números e escreva cada resposta por extenso, com ortografia completa.',
-      answerMode: 'words' as const,
-      modeLabel: 'Com letras',
-      audioUrl,
-      items,
-    },
-  ]
+  return {
+    id: set.id,
+    order: index + 1,
+    title: `Números de ${set.range} · ${set.answerMode === 'digits' ? 'em algarismos' : 'por extenso'}`,
+    range: set.range,
+    description: set.answerMode === 'digits'
+      ? 'Ouça os 20 números deste áudio e registre cada resposta usando somente algarismos.'
+      : 'Ouça uma nova sequência de 20 números e escreva cada resposta por extenso, com ortografia completa.',
+    answerMode: set.answerMode,
+    modeLabel,
+    audioUrl: `/audio/portugues/a1/numeros/${set.id}/ditado-20.mp3`,
+    items,
+  }
 })
 

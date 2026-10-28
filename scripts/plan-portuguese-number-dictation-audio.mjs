@@ -26,14 +26,10 @@ for (const [value, expected] of spellingChecks) {
 
 assert.equal(PORTUGUESE_NUMBER_DICTATION_SETS.length, 6)
 assert.ok(PORTUGUESE_NUMBER_DICTATION_SETS.every((set) => set.items.length === 20))
-for (let index = 0; index < PORTUGUESE_NUMBER_DICTATION_SETS.length; index += 2) {
-  const digitsSet = PORTUGUESE_NUMBER_DICTATION_SETS[index]
-  const wordsSet = PORTUGUESE_NUMBER_DICTATION_SETS[index + 1]
-  assert.equal(digitsSet.answerMode, 'digits')
-  assert.equal(wordsSet.answerMode, 'words')
-  assert.deepEqual(wordsSet.items, digitsSet.items, `Paired sets must reuse the same audio at index ${index}`)
-  assert.equal(wordsSet.audioUrl, digitsSet.audioUrl, `Paired sets must reference one recording at index ${index}`)
-}
+assert.equal(new Set(PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => set.audioUrl)).size, 6)
+assert.deepEqual(PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => set.answerMode), [
+  'digits', 'words', 'digits', 'words', 'digits', 'words',
+])
 
 const seenAudioUrls = new Set()
 const sets = PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => {

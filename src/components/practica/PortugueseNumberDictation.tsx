@@ -8,7 +8,7 @@ import styles from './PortugueseNumberDictation.module.css'
 type FieldResult = 'idle' | 'correct' | 'wrong'
 type StoredProgress = { completed: boolean[]; scores: number[]; unlockedSet: number }
 
-const STORAGE_KEY = 'welearn:portugues:a1:numeros-ditado:v4'
+const STORAGE_KEY = 'welearn:portugues:a1:numeros-ditado:v5'
 const setCount = PORTUGUESE_NUMBER_DICTATION_SETS.length
 const emptyCompleted = () => PORTUGUESE_NUMBER_DICTATION_SETS.map(() => false)
 const emptyScores = () => PORTUGUESE_NUMBER_DICTATION_SETS.map(() => 0)
