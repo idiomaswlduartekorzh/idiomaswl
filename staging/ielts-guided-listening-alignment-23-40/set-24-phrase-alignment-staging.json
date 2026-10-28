@@ -1,0 +1,1269 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_LISTENING_PHRASE_ALIGNMENT_STAGING",
+  "set": 24,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "audioBinding": {
+    "publicUrl": "/audio/ielts/ielts-listening-set-24.mp3",
+    "publicPath": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-24.mp3",
+    "publicMp3Sha256": "7ebff499f45432e9b3550a0ee7a500040471b3b39bf70ca0a84a41605229dfb0",
+    "elevenLabsV4Mp3Path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/ielts-set-24-listening-eleven-v4.mp3",
+    "elevenLabsV4Mp3Sha256": "7ebff499f45432e9b3550a0ee7a500040471b3b39bf70ca0a84a41605229dfb0",
+    "masterWavPath": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/ielts-set-24-listening-eleven-v4-master.wav",
+    "masterWavSha256": "54af38d473c4c03d88fee7c5698da9a85ceb24b894739d9062dd6f1c5d1add1d",
+    "durationFrames": 77107521,
+    "sampleRateHz": 44100
+  },
+  "sourceBindings": {
+    "manifest": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-eleven-v4-manifest.json",
+      "sha256": "599c19148d31b7646ce4477cc0e51a3a44e3e561dedc11f47f67d150f885661f"
+    },
+    "qa": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-eleven-v4-qa.json",
+      "sha256": "2f35c1e01837b01002a16951ce0629b462c0e34a06673db6045aba67e9832e3d"
+    },
+    "concat": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-concat.txt",
+      "sha256": "d2275a08c884aafa03a77c6c05cab002e5ae70b66ae6af1854092639a033846e"
+    },
+    "productionPlan": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-24/set24-audio-production-plan.json",
+      "sha256": "d5e4d1d2743638fa81f11353647dd02d9d2c173989b0018b4d3cf1c790add879"
+    },
+    "content": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/set24-listening-content-v1.0.12.json",
+      "sha256": "34d53c51543ef75262d4f0a89a4cae476330cd82210f5f0fb4fd9ed87a4316d2"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "sha256": "73c091e40c7b82a22134c959e56bd87d9e3b7d5ad9364aac8263dbf1e2cf1c4f"
+    }
+  },
+  "method": {
+    "engine": "mlx-whisper",
+    "modelSnapshot": "45f3915923c7a79a5a5b5a7d909d39aeb0e5630e",
+    "modelWeightsSha256": "55b6674c9b339702d486e2b1573839a66f8ec8f821ed2886993ef717a86b09f5",
+    "ffmpegSha256": "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617",
+    "alignment": "deterministic minimum-edit-distance backtrace over normalized words",
+    "questionNumberProjection": "immutable source-ledger rows retained by hash; Set 32 source rows 39/40 project to corrected questions 40/39",
+    "contextPaddingSeconds": 0.35,
+    "maximumWindowSeconds": 60.0
+  },
+  "windowCount": 40,
+  "windows": [
+    {
+      "question": 1,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T04",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "Bramble",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Bramble,",
+      "timecode": {
+        "startFrame": 5286248,
+        "endFrame": 5340050,
+        "sampleRateHz": 44100,
+        "startSeconds": 119.869569,
+        "endSeconds": 121.089569,
+        "durationSeconds": 1.22,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.982422,
+        "lastRecognizedWordProbability": 0.982422,
+        "chunkWordErrorRate": 0.051613,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-03.json",
+        "rawAsrSha256": "8150552027a3082a30d0371b17546bd68f58a7e4fb2280ffb6f98fb76e7f0c14"
+      },
+      "ledgerRowSha256": "43db808b10d7b60adfe8143ea4803d06fbf83c195763fc239db1dd83a40c8d1f",
+      "planSegmentTextSha256": "110386fe87e329bff94ee7e44fc245b9466866d88affd4ff77d1e7cd50369f0b"
+    },
+    {
+      "question": 2,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T06",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "lurcher",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Lurcher.",
+      "timecode": {
+        "startFrame": 6241454,
+        "endFrame": 6292610,
+        "sampleRateHz": 44100,
+        "startSeconds": 141.529569,
+        "endSeconds": 142.689569,
+        "durationSeconds": 1.16,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.982422,
+        "lastRecognizedWordProbability": 0.982422,
+        "chunkWordErrorRate": 0.051613,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-03.json",
+        "rawAsrSha256": "8150552027a3082a30d0371b17546bd68f58a7e4fb2280ffb6f98fb76e7f0c14"
+      },
+      "ledgerRowSha256": "cc255fcfbaf4b195bf31c1522141e48d19678a4c39ecc7b60c6d19f166febea1",
+      "planSegmentTextSha256": "a99ced6236bc873574bcfc84fcc7d352d85225e86fa3824ba570ac7935be1771"
+    },
+    {
+      "question": 3,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T08",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "three",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "three",
+      "timecode": {
+        "startFrame": 6597782,
+        "endFrame": 6642764,
+        "sampleRateHz": 44100,
+        "startSeconds": 149.609569,
+        "endSeconds": 150.629569,
+        "durationSeconds": 1.02,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.55127,
+        "lastRecognizedWordProbability": 0.55127,
+        "chunkWordErrorRate": 0.051613,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-03.json",
+        "rawAsrSha256": "8150552027a3082a30d0371b17546bd68f58a7e4fb2280ffb6f98fb76e7f0c14"
+      },
+      "ledgerRowSha256": "3b64c61d4d9bf8bc4e5b77268fd1322319676f31968c952a7fa2689dcf6bff71",
+      "planSegmentTextSha256": "eeea543b4056973f76ae3f41585bc3be175795ff5ab3b6c9a3169b8916552eb9"
+    },
+    {
+      "question": 4,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T10",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "four eight two seven",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "4, 8, 2, 7.",
+      "timecode": {
+        "startFrame": 7520354,
+        "endFrame": 7629722,
+        "sampleRateHz": 44100,
+        "startSeconds": 170.529569,
+        "endSeconds": 173.009569,
+        "durationSeconds": 2.48,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 4,
+        "mappedWordCount": 4,
+        "firstRecognizedWordProbability": 0.929199,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.051613,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-03.json",
+        "rawAsrSha256": "8150552027a3082a30d0371b17546bd68f58a7e4fb2280ffb6f98fb76e7f0c14"
+      },
+      "ledgerRowSha256": "e136737fc69dacf54a225270df6a2c6dd4d68735ffab38416d330b95088aca38",
+      "planSegmentTextSha256": "798f6a827f742f60f6cfca91c959186e1ea3e0f3e3ead5cfe02f51fe8741c43d"
+    },
+    {
+      "question": 5,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T12",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "March",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "March.",
+      "timecode": {
+        "startFrame": 8113058,
+        "endFrame": 8154512,
+        "sampleRateHz": 44100,
+        "startSeconds": 183.969569,
+        "endSeconds": 184.909569,
+        "durationSeconds": 0.94,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.995605,
+        "lastRecognizedWordProbability": 0.995605,
+        "chunkWordErrorRate": 0.051613,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-03.json",
+        "rawAsrSha256": "8150552027a3082a30d0371b17546bd68f58a7e4fb2280ffb6f98fb76e7f0c14"
+      },
+      "ledgerRowSha256": "9dd1cffe5138fd7e8994744b07864649e7b62c6fa0611cb666a08e8d46f2a0f1",
+      "planSegmentTextSha256": "f95b63d3f2ccfb183463a164e23de8c608f44333bbc4ea38a27bed65d0e7c82f"
+    },
+    {
+      "question": 6,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T14",
+      "renderedChunk": "chunk-04",
+      "focusPhrase": "text message",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "text message",
+      "timecode": {
+        "startFrame": 8923919,
+        "endFrame": 8983895,
+        "sampleRateHz": 44100,
+        "startSeconds": 202.35644,
+        "endSeconds": 203.71644,
+        "durationSeconds": 1.36,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.995117,
+        "lastRecognizedWordProbability": 0.999023,
+        "chunkWordErrorRate": 0.048701,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-04.json",
+        "rawAsrSha256": "70fa1defbffa2c0a62435f84c8f6f0afac56224701112585b2a42178b11c8509"
+      },
+      "ledgerRowSha256": "23800261d13561d63ed8cfc9a3b59dc650996e18d52a4b2eb328eec8db091a75",
+      "planSegmentTextSha256": "9dfd10fa5c00c89e31cfdacd24d6be199a7c2afe38da69f27cfa40546ece7ab5"
+    },
+    {
+      "question": 7,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T16",
+      "renderedChunk": "chunk-04",
+      "focusPhrase": "mobile clinic beside the library",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "mobile clinic beside the library.",
+      "timecode": {
+        "startFrame": 9999077,
+        "endFrame": 10095215,
+        "sampleRateHz": 44100,
+        "startSeconds": 226.73644,
+        "endSeconds": 228.91644,
+        "durationSeconds": 2.18,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 5,
+        "mappedWordCount": 5,
+        "firstRecognizedWordProbability": 0.973633,
+        "lastRecognizedWordProbability": 0.996094,
+        "chunkWordErrorRate": 0.048701,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-04.json",
+        "rawAsrSha256": "70fa1defbffa2c0a62435f84c8f6f0afac56224701112585b2a42178b11c8509"
+      },
+      "ledgerRowSha256": "05c2362ab113c748773c54a468dd64a9b2d64e8c47e6221521640ddede19894c",
+      "planSegmentTextSha256": "c1659b1bec4d3bd64427b0bc7e948eadeef7ef9a597199034d006cd6a8ca7e0f"
+    },
+    {
+      "question": 8,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T18",
+      "renderedChunk": "chunk-04",
+      "focusPhrase": "work meeting",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "work meeting",
+      "timecode": {
+        "startFrame": 11228585,
+        "endFrame": 11280623,
+        "sampleRateHz": 44100,
+        "startSeconds": 254.61644,
+        "endSeconds": 255.79644,
+        "durationSeconds": 1.18,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.994629,
+        "lastRecognizedWordProbability": 0.983398,
+        "chunkWordErrorRate": 0.048701,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-04.json",
+        "rawAsrSha256": "70fa1defbffa2c0a62435f84c8f6f0afac56224701112585b2a42178b11c8509"
+      },
+      "ledgerRowSha256": "29090ae0e44af28ac34e566ab05318d80c5d00f9258ed6e58bde0c6638d953ac",
+      "planSegmentTextSha256": "4c445a750c980154c1f21f03a461f0aa3497823d3c59ca9e6e73b4e99e3ecc7b"
+    },
+    {
+      "question": 9,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T19",
+      "renderedChunk": "chunk-04",
+      "focusPhrase": "vaccination record",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "vaccination record,",
+      "timecode": {
+        "startFrame": 11647535,
+        "endFrame": 11717213,
+        "sampleRateHz": 44100,
+        "startSeconds": 264.11644,
+        "endSeconds": 265.69644,
+        "durationSeconds": 1.58,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.997559,
+        "lastRecognizedWordProbability": 0.998535,
+        "chunkWordErrorRate": 0.048701,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-04.json",
+        "rawAsrSha256": "70fa1defbffa2c0a62435f84c8f6f0afac56224701112585b2a42178b11c8509"
+      },
+      "ledgerRowSha256": "f4c5036034191e4aaec1cbd8960174d44df0e362816859fac50ec3a2b3adf5e3",
+      "planSegmentTextSha256": "abdffcf31305d72c121372a098207301fc664dc28b426f159b9288f084e9a502"
+    },
+    {
+      "question": 10,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T21",
+      "renderedChunk": "chunk-05",
+      "focusPhrase": "card",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "card",
+      "timecode": {
+        "startFrame": 12540422,
+        "endFrame": 12584522,
+        "sampleRateHz": 44100,
+        "startSeconds": 284.363311,
+        "endSeconds": 285.363311,
+        "durationSeconds": 1.0,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.961914,
+        "lastRecognizedWordProbability": 0.961914,
+        "chunkWordErrorRate": 0.0,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-05.json",
+        "rawAsrSha256": "7899a7706926fa6459e7d1bd82236a730b5f06463e6d0bd8d4206f2d2b0784f5"
+      },
+      "ledgerRowSha256": "1c7030de32f9ff5799748fb868d42da3e5ace51d2a781003925430e2822bf6e2",
+      "planSegmentTextSha256": "cfcf96c599405a1af369a1a933e03943f90d30261c919141d524941a5e79f1f3"
+    },
+    {
+      "question": 11,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S02",
+      "renderedChunk": "chunk-08",
+      "focusPhrase": "information board",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "information board",
+      "timecode": {
+        "startFrame": 18984470,
+        "endFrame": 19047092,
+        "sampleRateHz": 44100,
+        "startSeconds": 430.486848,
+        "endSeconds": 431.906848,
+        "durationSeconds": 1.42,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.903809,
+        "lastRecognizedWordProbability": 0.993164,
+        "chunkWordErrorRate": 0.034483,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-08.json",
+        "rawAsrSha256": "1abd7cafa62640db00204deb4cea62a23e2aeea0fde44cb53b6c2ee64eb3fc26"
+      },
+      "ledgerRowSha256": "db26f6b07726cab8068f5207612a01f21f01d85df77cffc8ae55bebfb73f2b66",
+      "planSegmentTextSha256": "f78c734cb2994abc67010c957a023b2f05b9046fb9f475a3036dc3e2abf0ef2d"
+    },
+    {
+      "question": 12,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S03",
+      "renderedChunk": "chunk-08",
+      "focusPhrase": "tide gate",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Tidegate.",
+      "timecode": {
+        "startFrame": 20394788,
+        "endFrame": 20451236,
+        "sampleRateHz": 44100,
+        "startSeconds": 462.466848,
+        "endSeconds": 463.746848,
+        "durationSeconds": 1.28,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.657715,
+        "lastRecognizedWordProbability": 0.657715,
+        "chunkWordErrorRate": 0.034483,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-08.json",
+        "rawAsrSha256": "1abd7cafa62640db00204deb4cea62a23e2aeea0fde44cb53b6c2ee64eb3fc26"
+      },
+      "ledgerRowSha256": "82173155d081218b62859d7688f2877e4c623f4c151f94dd0e198decad46db1d",
+      "planSegmentTextSha256": "04898ed9c1cdf88af4aa827b665316c190da5514f0f08c7893d4c79c9baeeec8"
+    },
+    {
+      "question": 13,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S04",
+      "renderedChunk": "chunk-08",
+      "focusPhrase": "start of the winter diversion",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "start of the winter diversion",
+      "timecode": {
+        "startFrame": 21065990,
+        "endFrame": 21150662,
+        "sampleRateHz": 44100,
+        "startSeconds": 477.686848,
+        "endSeconds": 479.606848,
+        "durationSeconds": 1.92,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 5,
+        "mappedWordCount": 5,
+        "firstRecognizedWordProbability": 0.998535,
+        "lastRecognizedWordProbability": 0.976562,
+        "chunkWordErrorRate": 0.034483,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-08.json",
+        "rawAsrSha256": "1abd7cafa62640db00204deb4cea62a23e2aeea0fde44cb53b6c2ee64eb3fc26"
+      },
+      "ledgerRowSha256": "78e5e8fcfd125fce18bdab76416027979033f61e893e5e5c7182fd1fc3e53293",
+      "planSegmentTextSha256": "2494ddb914a90a912349efc59c8fe01a7ec0ae0dde87ccaffa54107050482400"
+    },
+    {
+      "question": 14,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S05",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "emergency marker three",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Emergency Marker 3.",
+      "timecode": {
+        "startFrame": 22497667,
+        "endFrame": 22589395,
+        "sampleRateHz": 44100,
+        "startSeconds": 510.151179,
+        "endSeconds": 512.231179,
+        "durationSeconds": 2.08,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 3,
+        "mappedWordCount": 3,
+        "firstRecognizedWordProbability": 0.970703,
+        "lastRecognizedWordProbability": 0.990723,
+        "chunkWordErrorRate": 0.024735,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-09.json",
+        "rawAsrSha256": "4ba39f77f3b5966cb30e72586ddb97dcde5baf64c0d1959af2288733674a9881"
+      },
+      "ledgerRowSha256": "1fe57462fde783bfff301ab600fc71cf9daedc11f105c6867bd5781fbf1a5fed",
+      "planSegmentTextSha256": "6e6d92ec34399e78a6320f8d9edd6b28d3125284873c44ba83c34c323be09649"
+    },
+    {
+      "question": 15,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S06",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "warming shelter",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "warming shelter",
+      "timecode": {
+        "startFrame": 23252659,
+        "endFrame": 23308225,
+        "sampleRateHz": 44100,
+        "startSeconds": 527.271179,
+        "endSeconds": 528.531179,
+        "durationSeconds": 1.26,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.947266,
+        "lastRecognizedWordProbability": 0.99707,
+        "chunkWordErrorRate": 0.024735,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-09.json",
+        "rawAsrSha256": "4ba39f77f3b5966cb30e72586ddb97dcde5baf64c0d1959af2288733674a9881"
+      },
+      "ledgerRowSha256": "7dacbdbee97a3d9d843e098e33abd35d4b6966409cb3c574bb530a7b4efe369f",
+      "planSegmentTextSha256": "eb074a56b2148a478c839bb547d87e701d379b6492ef4452ded03e47dd8c4f80"
+    },
+    {
+      "question": 16,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S07",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "lookout point",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "lookout point",
+      "timecode": {
+        "startFrame": 24300475,
+        "endFrame": 24358687,
+        "sampleRateHz": 44100,
+        "startSeconds": 551.031179,
+        "endSeconds": 552.351179,
+        "durationSeconds": 1.32,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.438721,
+        "lastRecognizedWordProbability": 0.996582,
+        "chunkWordErrorRate": 0.024735,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-09.json",
+        "rawAsrSha256": "4ba39f77f3b5966cb30e72586ddb97dcde5baf64c0d1959af2288733674a9881"
+      },
+      "ledgerRowSha256": "5e0754840e868f81a76931c17d4689ec65076172271cc20749bf983f9c102389",
+      "planSegmentTextSha256": "eb9a7caf4225420f0947f225932b9d2b79afd933178a278b726c91fe3432701c"
+    },
+    {
+      "question": 17,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S09",
+      "renderedChunk": "chunk-10",
+      "focusPhrase": "weather forecast",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "weather forecast",
+      "timecode": {
+        "startFrame": 26464181,
+        "endFrame": 26521511,
+        "sampleRateHz": 44100,
+        "startSeconds": 600.094807,
+        "endSeconds": 601.394807,
+        "durationSeconds": 1.3,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.998535,
+        "lastRecognizedWordProbability": 0.927246,
+        "chunkWordErrorRate": 0.006826,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-10.json",
+        "rawAsrSha256": "9b29368759c07a3f84296f811ec40e09185d107b9e5cf3f03f116c758435d07f"
+      },
+      "ledgerRowSha256": "c775defea03a55e9edd90019abbdfd32d56a0932e83fc9cfb5ba537ed08c6dd8",
+      "planSegmentTextSha256": "413f5687cd64685f61c57d5f47e54801e80795b28ae2e359f8d9aa8f12fc093f"
+    },
+    {
+      "question": 18,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S10",
+      "renderedChunk": "chunk-10",
+      "focusPhrase": "yellow",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "yellow",
+      "timecode": {
+        "startFrame": 27443201,
+        "endFrame": 27487301,
+        "sampleRateHz": 44100,
+        "startSeconds": 622.294807,
+        "endSeconds": 623.294807,
+        "durationSeconds": 1.0,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.974609,
+        "lastRecognizedWordProbability": 0.974609,
+        "chunkWordErrorRate": 0.006826,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-10.json",
+        "rawAsrSha256": "9b29368759c07a3f84296f811ec40e09185d107b9e5cf3f03f116c758435d07f"
+      },
+      "ledgerRowSha256": "7b6ee5cd34acd74e89fa032368beb8de0030e012a546f40439317409f4a04ce3",
+      "planSegmentTextSha256": "c63a530e31be023fc42a8cb5cab0322f16a8e4080952e960938fac90c57f008c"
+    },
+    {
+      "question": 19,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S11",
+      "renderedChunk": "chunk-10",
+      "focusPhrase": "charged phone",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "charged phone",
+      "timecode": {
+        "startFrame": 28049135,
+        "endFrame": 28108229,
+        "sampleRateHz": 44100,
+        "startSeconds": 636.034807,
+        "endSeconds": 637.374807,
+        "durationSeconds": 1.34,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.984375,
+        "lastRecognizedWordProbability": 0.997559,
+        "chunkWordErrorRate": 0.006826,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-10.json",
+        "rawAsrSha256": "9b29368759c07a3f84296f811ec40e09185d107b9e5cf3f03f116c758435d07f"
+      },
+      "ledgerRowSha256": "75d1bb420760d6d684d8be4708e17a3fe3f37a04354042da6997d046ec0a229a",
+      "planSegmentTextSha256": "93ea31521b98e3d61cf01442f15f318ffc7746207b4fca474d957cc982ce90f5"
+    },
+    {
+      "question": 20,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S12",
+      "renderedChunk": "chunk-10",
+      "focusPhrase": "turn back",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "turn back.",
+      "timecode": {
+        "startFrame": 28867631,
+        "endFrame": 28921433,
+        "sampleRateHz": 44100,
+        "startSeconds": 654.594807,
+        "endSeconds": 655.814807,
+        "durationSeconds": 1.22,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.998047,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.006826,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-10.json",
+        "rawAsrSha256": "9b29368759c07a3f84296f811ec40e09185d107b9e5cf3f03f116c758435d07f"
+      },
+      "ledgerRowSha256": "2a09ff5e00d515090db4d3dabeb8adebd513b5c121d4d6df574e95748ec733ac",
+      "planSegmentTextSha256": "f623bbe55ff9c56e7531887d3cf3135dc2e2c0d9ea72a1426cf689ca9dd0827f"
+    },
+    {
+      "question": 21,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T03",
+      "renderedChunk": "chunk-14",
+      "focusPhrase": "replica",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "replica,",
+      "timecode": {
+        "startFrame": 36872255,
+        "endFrame": 36916355,
+        "sampleRateHz": 44100,
+        "startSeconds": 836.105556,
+        "endSeconds": 837.105556,
+        "durationSeconds": 1.0,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.990234,
+        "lastRecognizedWordProbability": 0.990234,
+        "chunkWordErrorRate": 0.009934,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-14.json",
+        "rawAsrSha256": "f401fafdbed0f178f8b1513cfd96bd91df23b1f7f5391c0ffde5cd12205a552c"
+      },
+      "ledgerRowSha256": "c835255e21b2b2ad92cc5d31e0e83328bb0c55b2a89f914976d1fabc33b5e218",
+      "planSegmentTextSha256": "67107a8605d23efc7c3c75ed0bbd538f6b52ed832f4a3bb0d006d240db7e763e"
+    },
+    {
+      "question": 22,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T08",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "colorimeter readings",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "colorimeter readings",
+      "timecode": {
+        "startFrame": 40303820,
+        "endFrame": 40376144,
+        "sampleRateHz": 44100,
+        "startSeconds": 913.918821,
+        "endSeconds": 915.558821,
+        "durationSeconds": 1.64,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.781738,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.013793,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-15.json",
+        "rawAsrSha256": "5894b4f6feddc1f0cd3e6ac827f8f45bfbc62694f6e349a020c1246144f8cc5e"
+      },
+      "ledgerRowSha256": "7aaf9e1b23d729386c54a4a8a74f7d947f8b9cf2df371012fb0946b4245b3152",
+      "planSegmentTextSha256": "26cbd4e1abe16bb96ba2bc5276b29617161840ddb2162f9453948e18e2037d77"
+    },
+    {
+      "question": 23,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T10",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "same total light dose",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "same total light dose.",
+      "timecode": {
+        "startFrame": 41513924,
+        "endFrame": 41606534,
+        "sampleRateHz": 44100,
+        "startSeconds": 941.358821,
+        "endSeconds": 943.458821,
+        "durationSeconds": 2.1,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 4,
+        "mappedWordCount": 4,
+        "firstRecognizedWordProbability": 0.999512,
+        "lastRecognizedWordProbability": 0.92334,
+        "chunkWordErrorRate": 0.013793,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-15.json",
+        "rawAsrSha256": "5894b4f6feddc1f0cd3e6ac827f8f45bfbc62694f6e349a020c1246144f8cc5e"
+      },
+      "ledgerRowSha256": "bf2562586cad4de674299b11e6dc9357f3222dcf556e10760167f39ac5cc31d7",
+      "planSegmentTextSha256": "c29c893180fcb5f1f597db3eaf9a99bd4154de181757c2b7d4af85d34f706c16"
+    },
+    {
+      "question": 24,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T12",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "reasons other than light",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "reasons other than light,",
+      "timecode": {
+        "startFrame": 42644648,
+        "endFrame": 42728438,
+        "sampleRateHz": 44100,
+        "startSeconds": 966.998821,
+        "endSeconds": 968.898821,
+        "durationSeconds": 1.9,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 4,
+        "mappedWordCount": 4,
+        "firstRecognizedWordProbability": 0.978516,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.013793,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-15.json",
+        "rawAsrSha256": "5894b4f6feddc1f0cd3e6ac827f8f45bfbc62694f6e349a020c1246144f8cc5e"
+      },
+      "ledgerRowSha256": "6e211a99db1aa0ebe74ef42baa0947bda684de718feae535e7e2a3ded35a1d72",
+      "planSegmentTextSha256": "0b9d4dc02b488b97fb1c4fa7cc5d03ff47985e7adbec01c15deef52b8c79112a"
+    },
+    {
+      "question": 25,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T14",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "Randomise the swatch positions",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Randomize the swatch positions",
+      "timecode": {
+        "startFrame": 44042618,
+        "endFrame": 44136992,
+        "sampleRateHz": 44100,
+        "startSeconds": 998.698821,
+        "endSeconds": 1000.838821,
+        "durationSeconds": 2.14,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 4,
+        "mappedWordCount": 4,
+        "firstRecognizedWordProbability": 0.946289,
+        "lastRecognizedWordProbability": 0.990723,
+        "chunkWordErrorRate": 0.013793,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-15.json",
+        "rawAsrSha256": "5894b4f6feddc1f0cd3e6ac827f8f45bfbc62694f6e349a020c1246144f8cc5e"
+      },
+      "ledgerRowSha256": "bb96a88dedfc3c9a5c06b7ff759bd2641c41d7706dc970d17da2f3938a8b6169",
+      "planSegmentTextSha256": "2bd6f456e0163be79ef935227bad05d94b16499160a45279a7272d0312f81fb2"
+    },
+    {
+      "question": 26,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T16",
+      "renderedChunk": "chunk-16",
+      "focusPhrase": "may not reproduce slow ageing",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "may not reproduce slow aging",
+      "timecode": {
+        "startFrame": 45190092,
+        "endFrame": 45306516,
+        "sampleRateHz": 44100,
+        "startSeconds": 1024.718639,
+        "endSeconds": 1027.358639,
+        "durationSeconds": 2.64,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 5,
+        "mappedWordCount": 5,
+        "firstRecognizedWordProbability": 0.992188,
+        "lastRecognizedWordProbability": 0.508301,
+        "chunkWordErrorRate": 0.019868,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-16.json",
+        "rawAsrSha256": "fc272e73e0657ca58b2533c8546a4d0caa911b16e285cc9ecd0eb72f08f0b8c5"
+      },
+      "ledgerRowSha256": "c684c7612f1daa6d53fcf8e99b58bc6858b897c61a270deca59f339d53da6485",
+      "planSegmentTextSha256": "eaff275fb3078f523ba4cf0fbe0e9ca38b94fe70218fc5f6bd3a1aa066348704"
+    },
+    {
+      "question": 27,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T19",
+      "renderedChunk": "chunk-16",
+      "focusPhrase": "maintain the preparation log",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "maintain the preparation log.",
+      "timecode": {
+        "startFrame": 47525628,
+        "endFrame": 47611182,
+        "sampleRateHz": 44100,
+        "startSeconds": 1077.678639,
+        "endSeconds": 1079.618639,
+        "durationSeconds": 1.94,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 4,
+        "mappedWordCount": 4,
+        "firstRecognizedWordProbability": 0.999023,
+        "lastRecognizedWordProbability": 0.982422,
+        "chunkWordErrorRate": 0.019868,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-16.json",
+        "rawAsrSha256": "fc272e73e0657ca58b2533c8546a4d0caa911b16e285cc9ecd0eb72f08f0b8c5"
+      },
+      "ledgerRowSha256": "bb437fe667dbe17ec0107d657c1c018ef482e33b12d1d49eea1e4482fa08b53e",
+      "planSegmentTextSha256": "2bf694cf0b4c744dfff57756a520057b708da3a2d140195d44710a75c45ee7d5"
+    },
+    {
+      "question": 28,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T20",
+      "renderedChunk": "chunk-16",
+      "focusPhrase": "handle the colorimeter calibration",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "handle the colourimeter calibration.",
+      "timecode": {
+        "startFrame": 48144792,
+        "endFrame": 48234756,
+        "sampleRateHz": 44100,
+        "startSeconds": 1091.718639,
+        "endSeconds": 1093.758639,
+        "durationSeconds": 2.04,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 4,
+        "mappedWordCount": 4,
+        "firstRecognizedWordProbability": 0.989746,
+        "lastRecognizedWordProbability": 0.996582,
+        "chunkWordErrorRate": 0.019868,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-16.json",
+        "rawAsrSha256": "fc272e73e0657ca58b2533c8546a4d0caa911b16e285cc9ecd0eb72f08f0b8c5"
+      },
+      "ledgerRowSha256": "21419fc0f83262758b72a9d0e3f07604e10f1c84ec409b80366328fa7a41a508",
+      "planSegmentTextSha256": "8305f60978e0cdd0812cd75988b475a307883e7136befa4d6e1892d0ebf4942f"
+    },
+    {
+      "question": 29,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T21",
+      "renderedChunk": "chunk-16",
+      "focusPhrase": "approved by me",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "approved by me.",
+      "timecode": {
+        "startFrame": 48846864,
+        "endFrame": 48913014,
+        "sampleRateHz": 44100,
+        "startSeconds": 1107.638639,
+        "endSeconds": 1109.138639,
+        "durationSeconds": 1.5,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 3,
+        "mappedWordCount": 3,
+        "firstRecognizedWordProbability": 0.997559,
+        "lastRecognizedWordProbability": 0.99707,
+        "chunkWordErrorRate": 0.019868,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-16.json",
+        "rawAsrSha256": "fc272e73e0657ca58b2533c8546a4d0caa911b16e285cc9ecd0eb72f08f0b8c5"
+      },
+      "ledgerRowSha256": "28c02dfefd50018d0556b1693860ddcca5fc689e1870094091b9c076d1355dad",
+      "planSegmentTextSha256": "6dab428b6ca156beb64d5f2779e2ed13ccc63fdab05376ed077df0f29b7d32ae"
+    },
+    {
+      "question": 30,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T22",
+      "renderedChunk": "chunk-17",
+      "focusPhrase": "contact the workshop",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "contact the workshop",
+      "timecode": {
+        "startFrame": 49711359,
+        "endFrame": 49781037,
+        "sampleRateHz": 44100,
+        "startSeconds": 1127.241701,
+        "endSeconds": 1128.821701,
+        "durationSeconds": 1.58,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 3,
+        "mappedWordCount": 3,
+        "firstRecognizedWordProbability": 0.998047,
+        "lastRecognizedWordProbability": 0.99707,
+        "chunkWordErrorRate": 0.011236,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-17.json",
+        "rawAsrSha256": "e9dd78057be4a8087fe2354c3e43f05241bc5621c8b10fca56beaf6cf5bd8975"
+      },
+      "ledgerRowSha256": "31df66a83ae988669f7c7a044629dffac0200e71dc0e3cac8bddfc3ba30672b9",
+      "planSegmentTextSha256": "47fec6420631f5f8b9823e00362712d0653f84bc7346d52ca4d51fea29e0e878"
+    },
+    {
+      "question": 31,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S02",
+      "renderedChunk": "chunk-20",
+      "focusPhrase": "air spaces",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "air spaces",
+      "timecode": {
+        "startFrame": 57938404,
+        "endFrame": 57998380,
+        "sampleRateHz": 44100,
+        "startSeconds": 1313.796009,
+        "endSeconds": 1315.156009,
+        "durationSeconds": 1.36,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.989746,
+        "lastRecognizedWordProbability": 0.539551,
+        "chunkWordErrorRate": 0.026316,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-20.json",
+        "rawAsrSha256": "4646c953c77026e85611083f277d9d55c9b29443108483691e4a9f510b8f976a"
+      },
+      "ledgerRowSha256": "c57973aaaa6dd29c87e7a12e3c2d87ba6084cab57a09cb5ab7b7f2aee4536ff0",
+      "planSegmentTextSha256": "a742f8fe55a0044c08eff708b9bf9af4bfaeed570c66b4a5830b01d208148ea0"
+    },
+    {
+      "question": 32,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S03",
+      "renderedChunk": "chunk-20",
+      "focusPhrase": "waxy coat",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "waxy coat",
+      "timecode": {
+        "startFrame": 59082358,
+        "endFrame": 59144098,
+        "sampleRateHz": 44100,
+        "startSeconds": 1339.736009,
+        "endSeconds": 1341.136009,
+        "durationSeconds": 1.4,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.987793,
+        "lastRecognizedWordProbability": 0.979004,
+        "chunkWordErrorRate": 0.026316,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-20.json",
+        "rawAsrSha256": "4646c953c77026e85611083f277d9d55c9b29443108483691e4a9f510b8f976a"
+      },
+      "ledgerRowSha256": "ceb19d85975af186dd086b5f984a6973cb396cebff579b78e244dee3a9ee2b08",
+      "planSegmentTextSha256": "0dbb3846fa604b9501cb5d094553dad788763202de2ddbd634158142897778af"
+    },
+    {
+      "question": 33,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S04",
+      "renderedChunk": "chunk-20",
+      "focusPhrase": "ocean currents",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "ocean currents,",
+      "timecode": {
+        "startFrame": 59775610,
+        "endFrame": 59841760,
+        "sampleRateHz": 44100,
+        "startSeconds": 1355.456009,
+        "endSeconds": 1356.956009,
+        "durationSeconds": 1.5,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.987305,
+        "lastRecognizedWordProbability": 0.996094,
+        "chunkWordErrorRate": 0.026316,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-20.json",
+        "rawAsrSha256": "4646c953c77026e85611083f277d9d55c9b29443108483691e4a9f510b8f976a"
+      },
+      "ledgerRowSha256": "7af717c5c18bb616d760668276ea89f36322c62fe04c505635c8bfa8040486d1",
+      "planSegmentTextSha256": "e334fca721a1ca5bc3632f807ccb83d43a815482e05a5ec923502b3a56d47014"
+    },
+    {
+      "question": 34,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S05",
+      "renderedChunk": "chunk-21",
+      "focusPhrase": "tide line",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "tide line",
+      "timecode": {
+        "startFrame": 60929392,
+        "endFrame": 60987604,
+        "sampleRateHz": 44100,
+        "startSeconds": 1381.618866,
+        "endSeconds": 1382.938866,
+        "durationSeconds": 1.32,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.871094,
+        "lastRecognizedWordProbability": 0.937012,
+        "chunkWordErrorRate": 0.019763,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-21.json",
+        "rawAsrSha256": "e7ee60b9003db1c364ba5b3181dc73cf9d6c86c360e65a1f21b97b457edbe932"
+      },
+      "ledgerRowSha256": "48519746126e988bfc9f2b4b3685ffff36d9612b092e1bf2957247d920af0ab7",
+      "planSegmentTextSha256": "1f4e3db4a14cc18cdfb4907312c3d09b8b94b1b1ed3ac5011a562090c5d3be28"
+    },
+    {
+      "question": 35,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S06",
+      "renderedChunk": "chunk-21",
+      "focusPhrase": "fresh water",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "fresh water,",
+      "timecode": {
+        "startFrame": 61940164,
+        "endFrame": 62007196,
+        "sampleRateHz": 44100,
+        "startSeconds": 1404.538866,
+        "endSeconds": 1406.058866,
+        "durationSeconds": 1.52,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.959473,
+        "lastRecognizedWordProbability": 0.997559,
+        "chunkWordErrorRate": 0.019763,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-21.json",
+        "rawAsrSha256": "e7ee60b9003db1c364ba5b3181dc73cf9d6c86c360e65a1f21b97b457edbe932"
+      },
+      "ledgerRowSha256": "21b218d7de74a16c6c64d77e2ee8d08b3d1bcbe9c735bc5b1ed17a3e160f04af",
+      "planSegmentTextSha256": "75408f73835f0f921e3bd9da8e7641c23310861c32a5f9d334b4efe493cd7285"
+    },
+    {
+      "question": 36,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S07",
+      "renderedChunk": "chunk-21",
+      "focusPhrase": "stable soil",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "stable soil",
+      "timecode": {
+        "startFrame": 62800114,
+        "endFrame": 62865382,
+        "sampleRateHz": 44100,
+        "startSeconds": 1424.038866,
+        "endSeconds": 1425.518866,
+        "durationSeconds": 1.48,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.987305,
+        "lastRecognizedWordProbability": 0.99707,
+        "chunkWordErrorRate": 0.019763,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-21.json",
+        "rawAsrSha256": "e7ee60b9003db1c364ba5b3181dc73cf9d6c86c360e65a1f21b97b457edbe932"
+      },
+      "ledgerRowSha256": "e50735544f3696820c99253e9d7da98c96da4b64b0ffe6fc7696c42becbf2d5e",
+      "planSegmentTextSha256": "1fc87017d3dd355499b6d24ad54ff101de6457eef75dd6d926889a5f811a73aa"
+    },
+    {
+      "question": 37,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S09",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "viability",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "viability.",
+      "timecode": {
+        "startFrame": 65240308,
+        "endFrame": 65297638,
+        "sampleRateHz": 44100,
+        "startSeconds": 1479.372063,
+        "endSeconds": 1480.672063,
+        "durationSeconds": 1.3,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.998047,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.016598,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-22.json",
+        "rawAsrSha256": "989257620ade96078324c5faf2349e40555b75f24aaee17464d9eb4aacb05f3f"
+      },
+      "ledgerRowSha256": "68028debe82f04d63cb5ac00cc778208c613753e8cf95b12836c22695f2a26e3",
+      "planSegmentTextSha256": "96cca8d94464b0734ec64271b8a310e5579a672d30a00a2e1ddd5fd917d2793e"
+    },
+    {
+      "question": 38,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S10",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "turbulence",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "turbulence.",
+      "timecode": {
+        "startFrame": 66301354,
+        "endFrame": 66356920,
+        "sampleRateHz": 44100,
+        "startSeconds": 1503.432063,
+        "endSeconds": 1504.692063,
+        "durationSeconds": 1.26,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.992676,
+        "lastRecognizedWordProbability": 0.992676,
+        "chunkWordErrorRate": 0.016598,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-22.json",
+        "rawAsrSha256": "989257620ade96078324c5faf2349e40555b75f24aaee17464d9eb4aacb05f3f"
+      },
+      "ledgerRowSha256": "696a8086e1295b6fa983a52f3109a72e0e5d7b3cddc5a6fedafc33277c94879a",
+      "planSegmentTextSha256": "2d3adb3c51d4fc3c453566e129410650d41978b9f97a182614612dffa453e02c"
+    },
+    {
+      "question": 39,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S11",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "sampling",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "sampling",
+      "timecode": {
+        "startFrame": 67228336,
+        "endFrame": 67276846,
+        "sampleRateHz": 44100,
+        "startSeconds": 1524.452063,
+        "endSeconds": 1525.552063,
+        "durationSeconds": 1.1,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.994141,
+        "lastRecognizedWordProbability": 0.994141,
+        "chunkWordErrorRate": 0.016598,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-22.json",
+        "rawAsrSha256": "989257620ade96078324c5faf2349e40555b75f24aaee17464d9eb4aacb05f3f"
+      },
+      "ledgerRowSha256": "a8c51e7fd8eacf88c5496ef214ce39fd70c8476acce4260b533bf068046a64c5",
+      "planSegmentTextSha256": "aa1f9e72d2ef9a017e01560bf86c0ac546b4acb2a480e9b9d730db47496918b2"
+    },
+    {
+      "question": 40,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S12",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "competition",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "competition",
+      "timecode": {
+        "startFrame": 68821228,
+        "endFrame": 68870620,
+        "sampleRateHz": 44100,
+        "startSeconds": 1560.572063,
+        "endSeconds": 1561.692063,
+        "durationSeconds": 1.12,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.993164,
+        "lastRecognizedWordProbability": 0.993164,
+        "chunkWordErrorRate": 0.016598,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-24/chunk-22.json",
+        "rawAsrSha256": "989257620ade96078324c5faf2349e40555b75f24aaee17464d9eb4aacb05f3f"
+      },
+      "ledgerRowSha256": "a3adc45238c309ed260dd3dcecb450f0b3d0738837c5ad11eff0ba630570bbdd",
+      "planSegmentTextSha256": "361f6f44dac96ff7b525ca1dc757fb6945d281a3e8c1ba2837701a5626e0b052"
+    }
+  ],
+  "gates": {
+    "publicMp3HashMatchesQaBoundV4": "PASS",
+    "exactly40Windows": "PASS",
+    "allWindowsPositiveAndAtMost60Seconds": "PASS",
+    "allQuestionWindowStartsChronological": "PASS",
+    "independentReview": "PENDING",
+    "humanListening": "PENDING",
+    "release": "NOT_APPROVED"
+  }
+}

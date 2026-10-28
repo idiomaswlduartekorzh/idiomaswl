@@ -1,0 +1,1978 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 34,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-34.ts",
+      "sha256": "aa45cb302e18367feaf550a80e02bda263eff7d0b6021c4d01dadf61a3762406"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph A.",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Music without a live performer"
+        },
+        "sourceExcerpt": "Before sound could be recorded and replayed electrically, instrument makers searched for ways to make music repeatable without a performer. Early mechanical devices were costly curiosities, combining metalwork, clockmaking and decoration. The pinned-cylinder music box emerged from that craft tradition. It did not preserve the sound of an orchestra; instead, it encoded a short sequence of notes as physical instructions. Its appeal came from the surprise of hearing an apparently self-contained object perform a recognisable tune.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph A.» y la clave es «Music without a live performer». La evidencia dice «Before sound could be recorded and replayed electrically, instrument makers searched for ways to make music repeatable without a performer.». La coincidencia semántica se apoya en «music», «without», «performer»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "33f82fbdd76535b903ca501e4c063b7ba6967e017dc08ef6101158c0ae1d6958",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph B.",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Controlling stored mechanical energy"
+        },
+        "sourceExcerpt": "The listener first supplied energy by turning a winding key. This tightened a spring inside a barrel. When released, the spring drove a train of gears, but it could not be allowed to unwind at once. A governor moderated the speed so that the tune did not rush and then stop. These components were related to clockwork, yet musical performance demanded particular steadiness: a small variation in rotation altered rhythm even when every note remained in the correct position.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph B.» y la clave es «Controlling stored mechanical energy». La evidencia dice «The listener first supplied energy by turning a winding key.». La coincidencia semántica se apoya en «energy»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2130094b52590f7f0175ffd8b4dd394ff405c0d68671d50362f8b81b8ec3389a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph C.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A melody stored as physical instructions"
+        },
+        "sourceExcerpt": "The melody was carried by a pinned cylinder. As the cylinder rotated, individual pins lifted tuned teeth in a metal comb and then released them, producing notes. Pin arrangement determined order and timing, while each tooth’s physical properties helped determine pitch. The mechanism therefore joined a programme and an instrument in one assembly. Changing the tune was not like replacing a paper score; in many boxes, it meant changing the cylinder or owning a different machine.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph C.» y la clave es «A melody stored as physical instructions». La evidencia dice «The melody was carried by a pinned cylinder.». La coincidencia semántica se apoya en «melody»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "259ced18aa1021cf57df4aeda7924e64fafcc24312cbc4f9c73061c4c6ef6e59",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph D.",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Precision behind the sound"
+        },
+        "sourceExcerpt": "A comb might look like a single piece of metal, but its teeth had to respond as distinct musical elements. Makers adjusted them carefully, sometimes adding mass to lower a note or removing material to raise it. The process required judgement because tuning one tooth could affect the character of the whole instrument. A bright, clear sound depended on more than accurate pitch: the mounting, case and vibration of the comb also shaped what the listener heard.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph D.» y la clave es «Precision behind the sound». La evidencia dice «A bright, clear sound depended on more than accurate pitch: the mounting, case and vibration of the comb also shaped what the listener heard.». La coincidencia semántica se apoya en «sound»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "fd95a15f4b701d617676cd770709831891a3aa9d48f87e33aeb5c56e4f2b0a3b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph E.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "The transition towards broader manufacture"
+        },
+        "sourceExcerpt": "Manufacture changed as demand widened. Specialised tools allowed parts to be produced more consistently, and workshops divided tasks that one craftsperson might once have combined. Standardisation lowered the skill needed at some stages but did not remove finishing and adjustment. Decorative cases also ranged from plain to elaborate, permitting similar mechanisms to reach different markets. The music box thus became both a manufactured product and a display of taste, with price determined by workmanship, repertoire and appearance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph E.» y la clave es «The transition towards broader manufacture». La evidencia dice «Manufacture changed as demand widened.». La coincidencia semántica se apoya en «manufacture»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "ef3935ea742622784f94901ba557e2d195e273c5c881daae12a348357be493cd",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph F.",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Engineering solutions for a wider repertoire"
+        },
+        "sourceExcerpt": "Designers sought ways to offer multiple tunes without making the object unmanageably large. Some cylinders shifted sideways after one revolution so a different row of pins met the comb. Other mechanisms used replaceable cylinders, trading compactness for choice. Each solution imposed limits: additional pin paths demanded precision, while removable parts needed careful alignment. The apparent abundance of music was therefore produced by engineering compromise rather than unlimited storage.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph F.» y la clave es «Engineering solutions for a wider repertoire». La evidencia dice «The apparent abundance of music was therefore produced by engineering compromise rather than unlimited storage.». La coincidencia semántica se apoya en «engineering»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d580d868e1c04c064d13d50051b5b2563e73fca39bd4f804bf6162b0977f0867",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph G.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "An old mechanism with continuing explanatory value"
+        },
+        "sourceExcerpt": "Later technologies could store longer performances and reproduce the sound of real musicians. Yet the cylinder box remains instructive because its programme is visible. A viewer can watch rotation become timing and see metal projections become musical events. For historians, it reveals how entertainment, precision manufacture and domestic consumption intersected. For engineers, it is a compact example of information expressed through shape. Its historical interest survives even when its original practical advantage has disappeared.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph G.» y la clave es «An old mechanism with continuing explanatory value». La evidencia dice «Yet the cylinder box remains instructive because its programme is visible.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "96ecc36250b7c20f7517a29db0181bd72d60e2d464e3b7a1b8c6de12e5eab3c5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "What did the listener turn to store energy in the mechanism?",
+          "acceptedResponses": [
+            "winding key"
+          ]
+        },
+        "sourceExcerpt": "The listener first supplied energy by turning a winding key. This tightened a spring inside a barrel. When released, the spring drove a train of gears, but it could not be allowed to unwind at once. A governor moderated the speed so that the tune did not rush and then stop. These components were related to clockwork, yet musical performance demanded particular steadiness: a small variation in rotation altered rhythm even when every note remained in the correct position.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What did the listener turn to store energy in the mechanism?» y acepta «winding key». La oración fuente dice «The listener first supplied energy by turning a winding key.». Esa oración contiene la respuesta y la conecta con «listener», «energy», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "73e37a8dff57a3f7801eec16cdb98eb68d46023db804724551632da1f1671668",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "Which device controlled the speed of the gears?",
+          "acceptedResponses": [
+            "governor"
+          ]
+        },
+        "sourceExcerpt": "The listener first supplied energy by turning a winding key. This tightened a spring inside a barrel. When released, the spring drove a train of gears, but it could not be allowed to unwind at once. A governor moderated the speed so that the tune did not rush and then stop. These components were related to clockwork, yet musical performance demanded particular steadiness: a small variation in rotation altered rhythm even when every note remained in the correct position.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which device controlled the speed of the gears?» y acepta «governor». La oración fuente dice «A governor moderated the speed so that the tune did not rush and then stop.». Esa oración contiene la respuesta y la conecta con «speed», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "8bc4203d0fc7df21c8b6196082fbf9418e0e23fc556c4e9f0e5c2b82a84af34d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "What component carried the physical sequence of the tune?",
+          "acceptedResponses": [
+            "pinned cylinder"
+          ]
+        },
+        "sourceExcerpt": "The melody was carried by a pinned cylinder. As the cylinder rotated, individual pins lifted tuned teeth in a metal comb and then released them, producing notes. Pin arrangement determined order and timing, while each tooth’s physical properties helped determine pitch. The mechanism therefore joined a programme and an instrument in one assembly. Changing the tune was not like replacing a paper score; in many boxes, it meant changing the cylinder or owning a different machine.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What component carried the physical sequence of the tune?» y acepta «pinned cylinder». La oración fuente dice «The melody was carried by a pinned cylinder.». Esa oración contiene la respuesta y la conecta con «carried», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "e212e6051d8f2258991318ecbf765fd121f67c8c9b9a89218916db8b9119bc93",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "What did the pins lift to produce notes?",
+          "acceptedResponses": [
+            "tuned teeth"
+          ]
+        },
+        "sourceExcerpt": "The melody was carried by a pinned cylinder. As the cylinder rotated, individual pins lifted tuned teeth in a metal comb and then released them, producing notes. Pin arrangement determined order and timing, while each tooth’s physical properties helped determine pitch. The mechanism therefore joined a programme and an instrument in one assembly. Changing the tune was not like replacing a paper score; in many boxes, it meant changing the cylinder or owning a different machine.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What did the pins lift to produce notes?» y acepta «tuned teeth». La oración fuente dice «As the cylinder rotated, individual pins lifted tuned teeth in a metal comb and then released them, producing notes.». Esa oración contiene la respuesta y la conecta con «pins», «notes», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2208f7531c774bf6794379267e8e867ab3a534273c75eff3d0d761f0c502ae8e",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "What helped manufacturers make parts more consistent?",
+          "acceptedResponses": [
+            "specialised tools"
+          ]
+        },
+        "sourceExcerpt": "Manufacture changed as demand widened. Specialised tools allowed parts to be produced more consistently, and workshops divided tasks that one craftsperson might once have combined. Standardisation lowered the skill needed at some stages but did not remove finishing and adjustment. Decorative cases also ranged from plain to elaborate, permitting similar mechanisms to reach different markets. The music box thus became both a manufactured product and a display of taste, with price determined by workmanship, repertoire and appearance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What helped manufacturers make parts more consistent?» y acepta «specialised tools». La oración fuente dice «Specialised tools allowed parts to be produced more consistently, and workshops divided tasks that one craftsperson might once have combined.». Esa oración contiene la respuesta y la conecta con «parts», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2b2b138157d392a9b4056e1e5b18b3086f89a69fcdc88bd6ce25d860c7cdd92f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "What could be replaced in some boxes to change the music?",
+          "acceptedResponses": [
+            "cylinders"
+          ]
+        },
+        "sourceExcerpt": "Designers sought ways to offer multiple tunes without making the object unmanageably large. Some cylinders shifted sideways after one revolution so a different row of pins met the comb. Other mechanisms used replaceable cylinders, trading compactness for choice. Each solution imposed limits: additional pin paths demanded precision, while removable parts needed careful alignment. The apparent abundance of music was therefore produced by engineering compromise rather than unlimited storage.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What could be replaced in some boxes to change the music?» y acepta «cylinders». La oración fuente dice «Some cylinders shifted sideways after one revolution so a different row of pins met the comb.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "32b6077655b475527327a9a980ab5f4767205584aa4b661c52fede4d6495c520",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "creates stable positions between an emitter and a reflector",
+          "correctOptionIndex": 0,
+          "correctOptionText": "standing-wave arrangement"
+        },
+        "sourceExcerpt": "The simplest arrangements create a standing wave between an emitter and a reflecting surface. At particular positions, the forces can balance and form a stable trap. This geometry is conceptually clear, but the reflector restricts access and the trap positions are largely fixed by the wavelength. A droplet that grows or changes shape may respond differently. The method is therefore useful for demonstrating the principle and studying stationary samples, but less suited to complex paths.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «creates stable positions between an emitter and a reflector» y la clave es «standing-wave arrangement». La evidencia dice «The simplest arrangements create a standing wave between an emitter and a reflecting surface.». La coincidencia semántica se apoya en «between», «emitter», «standing», «wave»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "921cf2ecd9edd745d422ec124c5c4c9d72058a131e33bd7defcc765c77042d34",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "moves traps by altering the timing of multiple emitters",
+          "correctOptionIndex": 1,
+          "correctOptionText": "phased array"
+        },
+        "sourceExcerpt": "A phased array replaces one emitter with many controllable elements. By changing the relative timing of their signals, the system can reshape the field and move a pressure trap without physically moving the whole apparatus. This flexibility permits steering, although control becomes computationally demanding. The array must account for interactions between sound, object and surroundings. A command that moves one sample smoothly may destabilise another with a different size or density.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «moves traps by altering the timing of multiple emitters» y la clave es «phased array». La evidencia dice «A phased array replaces one emitter with many controllable elements.». La coincidencia semántica se apoya en «phased», «array»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "a25cb87598b516b5ba32ee67b77fec119419726ca2c8d5e9ba2ff664feb5523a",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "uses observations of actual position to correct motion",
+          "correctOptionIndex": 2,
+          "correctOptionText": "feedback control"
+        },
+        "sourceExcerpt": "Open-loop control assumes that the object follows the predicted path. Feedback control checks that assumption. A camera tracks the object, software compares its actual and intended positions, and the emitters are adjusted. This can correct small disturbances, but the measurement introduces delay. If correction arrives too late, an aggressive response may amplify the error. The design challenge is therefore not merely detecting motion; it is making a timely adjustment that restores stability without creating oscillation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «uses observations of actual position to correct motion» y la clave es «feedback control». La evidencia dice «Feedback control checks that assumption.». La coincidencia semántica se apoya en «feedback», «control»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "33af30ce3357d0284a7ff1d9bd4c68896e43976b0e5b80bf42d3c142b46fbe49",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "places some of the control function in the surrounding geometry",
+          "correctOptionIndex": 3,
+          "correctOptionText": "shaped chamber"
+        },
+        "sourceExcerpt": "Another approach modifies the space around the acoustic field. A shaped chamber can guide or concentrate pressure while reducing the number of independently controlled emitters. It may offer efficient suspension for a narrow class of tasks, but it sacrifices some freedom of access and movement. This illustrates a recurring trade-off: hardware geometry can perform part of the control work, whereas a more open arrangement transfers that burden to sensing and computation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «places some of the control function in the surrounding geometry» y la clave es «shaped chamber». La evidencia dice «A shaped chamber can guide or concentrate pressure while reducing the number of independently controlled emitters.». La coincidencia semántica se apoya en «shaped», «chamber»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "f9cfd26d4344f74a148d93caa194b22ed99cd9e4ede89cc083e275326ca4f737",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "offers limited access because a reflecting surface is required",
+          "correctOptionIndex": 0,
+          "correctOptionText": "standing-wave arrangement"
+        },
+        "sourceExcerpt": "The simplest arrangements create a standing wave between an emitter and a reflecting surface. At particular positions, the forces can balance and form a stable trap. This geometry is conceptually clear, but the reflector restricts access and the trap positions are largely fixed by the wavelength. A droplet that grows or changes shape may respond differently. The method is therefore useful for demonstrating the principle and studying stationary samples, but less suited to complex paths.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «offers limited access because a reflecting surface is required» y la clave es «standing-wave arrangement». La evidencia dice «The simplest arrangements create a standing wave between an emitter and a reflecting surface.». La coincidencia semántica se apoya en «reflecting», «surface», «standing», «wave»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c89cde082301a63d8effdf6b162c651927053c601dc5f25ee512637bbe831152",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "may need considerable computation when samples differ",
+          "correctOptionIndex": 1,
+          "correctOptionText": "phased array"
+        },
+        "sourceExcerpt": "A phased array replaces one emitter with many controllable elements. By changing the relative timing of their signals, the system can reshape the field and move a pressure trap without physically moving the whole apparatus. This flexibility permits steering, although control becomes computationally demanding. The array must account for interactions between sound, object and surroundings. A command that moves one sample smoothly may destabilise another with a different size or density.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «may need considerable computation when samples differ» y la clave es «phased array». La evidencia dice «A phased array replaces one emitter with many controllable elements.». La coincidencia semántica se apoya en «phased», «array»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d14ba175016a658a6f31b5a6d0c3f61359da79accf7a6b5daf3f2e127d1c301f",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "can become unstable if its correction is delayed",
+          "correctOptionIndex": 2,
+          "correctOptionText": "feedback control"
+        },
+        "sourceExcerpt": "Open-loop control assumes that the object follows the predicted path. Feedback control checks that assumption. A camera tracks the object, software compares its actual and intended positions, and the emitters are adjusted. This can correct small disturbances, but the measurement introduces delay. If correction arrives too late, an aggressive response may amplify the error. The design challenge is therefore not merely detecting motion; it is making a timely adjustment that restores stability without creating oscillation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «can become unstable if its correction is delayed» y la clave es «feedback control». La evidencia dice «Feedback control checks that assumption.». La coincidencia semántica se apoya en «feedback», «control»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2ef170a147e9c3582f1dab48d551235d34294708aa3fdc8e269f66b4ee89d186",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "Acoustic levitation supports an object through ______.",
+          "acceptedResponses": [
+            "pressure variations"
+          ]
+        },
+        "sourceExcerpt": "Sound is usually treated as information, but an acoustic field also carries energy and can exert force. Under suitable conditions, that force can counter gravity on a very small object. The result is acoustic levitation: contactless suspension rather than a trick in which the object has no support at all. The support is supplied by pressure variations in the sound field. Because the object avoids a solid holder, researchers are interested in handling droplets or delicate samples that might be contaminated, distorted or absorbed by a surface.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Acoustic levitation supports an object through ______.» y acepta «pressure variations». La oración fuente dice «The support is supplied by pressure variations in the sound field.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "8766c4a58068036f5d45741efb3c572bb07d1598c5bab0b98d60d6d550e51801",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "In a standing-wave device, trap positions are linked to the ______.",
+          "acceptedResponses": [
+            "wavelength"
+          ]
+        },
+        "sourceExcerpt": "The simplest arrangements create a standing wave between an emitter and a reflecting surface. At particular positions, the forces can balance and form a stable trap. This geometry is conceptually clear, but the reflector restricts access and the trap positions are largely fixed by the wavelength. A droplet that grows or changes shape may respond differently. The method is therefore useful for demonstrating the principle and studying stationary samples, but less suited to complex paths.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «In a standing-wave device, trap positions are linked to the ______.» y acepta «wavelength». La oración fuente dice «This geometry is conceptually clear, but the reflector restricts access and the trap positions are largely fixed by the wavelength.». Esa oración contiene la respuesta y la conecta con «trap», «positions», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "6a5ed306873a7da24f2e718a915b151eac838e49078b2c3eb2b25ed56901b06f",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "fill",
+          "questionText": "A phased array can steer a trap without moving the entire ______.",
+          "acceptedResponses": [
+            "apparatus"
+          ]
+        },
+        "sourceExcerpt": "A phased array replaces one emitter with many controllable elements. By changing the relative timing of their signals, the system can reshape the field and move a pressure trap without physically moving the whole apparatus. This flexibility permits steering, although control becomes computationally demanding. The array must account for interactions between sound, object and surroundings. A command that moves one sample smoothly may destabilise another with a different size or density.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A phased array can steer a trap without moving the entire ______.» y acepta «apparatus». La oración fuente dice «By changing the relative timing of their signals, the system can reshape the field and move a pressure trap without physically moving the whole apparatus.». Esa oración contiene la respuesta y la conecta con «trap», «without», «moving», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "0a5e6c19b76caf19ac3767f600953af92ba17276e56cfa9a424772c1b5ddc755",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "A ______ records the object’s actual position.",
+          "acceptedResponses": [
+            "camera"
+          ]
+        },
+        "sourceExcerpt": "Open-loop control assumes that the object follows the predicted path. Feedback control checks that assumption. A camera tracks the object, software compares its actual and intended positions, and the emitters are adjusted. This can correct small disturbances, but the measurement introduces delay. If correction arrives too late, an aggressive response may amplify the error. The design challenge is therefore not merely detecting motion; it is making a timely adjustment that restores stability without creating oscillation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A ______ records the object’s actual position.» y acepta «camera». La oración fuente dice «A camera tracks the object, software compares its actual and intended positions, and the emitters are adjusted.». Esa oración contiene la respuesta y la conecta con «object», «actual», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7da69e222a8eb505584229eb8e35837dcf12c921222fe67ad6047d4f5fb2867b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "A suspended droplet may ______ and lose mass.",
+          "acceptedResponses": [
+            "evaporate"
+          ]
+        },
+        "sourceExcerpt": "Contactless handling does not make the sample passive. A liquid droplet may evaporate, changing mass and size while it is suspended. Acoustic energy can also affect internal circulation or surface shape. Researchers must therefore distinguish the behaviour they wish to observe from behaviour caused by the holding method. A non-contact technique removes contamination from a clamp or dish, yet introduces its own environment. “Contactless” should not be read as “influence-free”.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A suspended droplet may ______ and lose mass.» y acepta «evaporate». La oración fuente dice «A liquid droplet may evaporate, changing mass and size while it is suspended.». Esa oración contiene la respuesta y la conecta con «suspended», «droplet», «mass», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "038adee0da13e963a367479e5c718d55458703d2565b3ef13101258254b2b0ca",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "Reliable operation requires reserve force, described as a ______.",
+          "acceptedResponses": [
+            "control margin"
+          ]
+        },
+        "sourceExcerpt": "Practical systems need a control margin: enough reserve force to tolerate modest disturbance without damaging the sample or requiring extreme sound levels. They also need verification, because a stable demonstration does not prove reliable transfer over repeated cycles. The best architecture depends on the task. A stationary measurement may favour a simple standing wave; an irregular route may justify an array and feedback; a high-throughput operation may prefer constrained geometry. Acoustic levitation is therefore a family of design choices, not a single universal device.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Reliable operation requires reserve force, described as a ______.» y acepta «control margin». La oración fuente dice «Practical systems need a control margin: enough reserve force to tolerate modest disturbance without damaging the sample or requiring extreme sound levels.». Esa oración contiene la respuesta y la conecta con «reserve», «force», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d98d8b9435e5ed1a10fdccc7907ed7c5a3792023f88aa3a86b0806496051853d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "The author believes a lottery should always be used before candidates are screened.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "When a programme has fewer places than qualified applicants, selection cannot be solved by checking eligibility alone. Every remaining candidate may satisfy the threshold, yet some rule must still decide who enters. A lottery makes chance explicit. Critics see this as surrendering judgement; supporters argue that it can be more honest than pretending to measure tiny differences precisely. Its legitimacy depends on the stage at which it is used. Random admission before basic screening raises a different issue from random selection among candidates already judged suitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author believes a lottery should always be used before candidates are screened.», mientras el pasaje dice «Its legitimacy depends on the stage at which it is used. Random admission before basic screening raises a different issue from random selection among candidates already judged suitable.». Ambos tratan «used», «before», «candidates», pero la proposición añade «lottery», «always», «screened» donde la fuente especifica «legitimacy», «depends», «stage», «random», «admission», «basic». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "02ab0e0b44015e15fc2771c6031b53e3ef482194afbaeeae074aeed790f80779",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "A queue may favour applicants who have more flexible time and better information.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "First-come, first-served allocation appears neutral because everyone faces the same clock. In practice, it rewards access to time, information and reliable technology. People who learn about an opportunity late, work during registration hours or have unstable internet begin at a disadvantage unrelated to the programme’s purpose. A queue can still be appropriate when early action is itself relevant, but convenience should not be mistaken for fairness. The central question is whether speed of application is a quality the institution intends to reward.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A queue may favour applicants who have more flexible time and better information.» y el pasaje dice «In practice, it rewards access to time, information and reliable technology.». La fuente conserva la misma relación mediante «time», «information» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "f4686832e7b00ffd3e17652a5ffe390faa405e1d74b355ab0e33127bd04c7a24",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The author considers all merit-based evaluation worthless.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Merit ranking seems to offer the opposite virtue: places go to those judged strongest. The difficulty comes near the cut-off, where small score differences may reflect measurement noise, unequal preparation or subjective assessment. A detailed rank can project false precision. This does not invalidate evaluation. It suggests that a threshold followed by a lottery may be preferable when the institution can distinguish acceptable from unacceptable candidates more confidently than it can order every acceptable candidate.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author considers all merit-based evaluation worthless.», mientras el pasaje dice «The difficulty comes near the cut-off, where small score differences may reflect measurement noise, unequal preparation or subjective assessment.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «considers», «all», «merit», «based», «evaluation», «worthless» donde la fuente especifica «difficulty», «comes», «near», «cut», «off», «small». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "a407c7294da7de9867ad703009cfe199aab6e120ae885bce0aaa0c248b08ab62",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Weighted lotteries can pursue access goals but may be difficult to explain.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Lottery design ranges from a complete draw to a tie-breaker used only among equally ranked candidates. Weighted lotteries give additional chances to groups or applicants with specified characteristics. Weighting can pursue access goals while preserving uncertainty, but it also makes the system harder to explain. If weights are poorly justified, randomisation may conceal rather than resolve disagreement. A draw is therefore not automatically fair; its rules encode values about who enters the pool and whether all entries count alike.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Weighted lotteries can pursue access goals but may be difficult to explain.» y el pasaje dice «Weighting can pursue access goals while preserving uncertainty, but it also makes the system harder to explain.». La fuente conserva la misma relación mediante «pursue», «access», «goals», «explain» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "ee06c52e2d8f673fca644c79a128223782e74454e701d202a3ff98799b8b62b4",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "The passage specifies that every draw must be supervised by a judge.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Trust depends on a published procedure. Applicants should know eligibility rules, the number of available places, whether priority categories exist and how the draw will be checked. Releasing only the final names is insufficient because observers cannot distinguish an honest random process from an arbitrary decision. Independent verification can protect both winners and administrators. Transparency does not remove disappointment, but it changes the basis on which the outcome can be challenged.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage specifies that every draw must be supervised by a judge.». El pasaje sí ofrece el contexto «Applicants should know eligibility rules, the number of available places, whether priority categories exist and how the draw will be checked.», pero en el texto completo no especifica «specifies», «supervised» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7ee5c7bda67e276321573b4fc12bba469ba795abf40f94d9e45e3f794b7d6e07",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "The author says research value should be the main reason for withholding a place.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "A lottery also changes what evaluation can reveal. Because selection among eligible candidates is random, later differences between selected and unselected groups may help researchers study programme effects, provided ethical and methodological conditions are met. Yet evaluation should not become the primary justification for denying a place. The allocation rule must first be defensible to applicants. A post-allocation review should also test whether eligibility and weighting created unintended exclusion.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author says research value should be the main reason for withholding a place.», mientras el pasaje dice «Yet evaluation should not become the primary justification for denying a place.». Ambos tratan «place», pero la proposición añade «research», «value», «main», «reason», «withholding» donde la fuente especifica «yet», «evaluation», «become», «primary», «justification», «denying». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "abc8e8b554934500a0cdd4b62994c90deffaa991060aa52b9e77998cdf5e835d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "The preferred allocation method should reflect the institution’s purpose.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "No allocation method is universally fair. Queues privilege prompt access, rankings privilege chosen measures, and lotteries privilege an equal or deliberately weighted chance. The appropriate rule follows from institutional purpose and from the kinds of error decision-makers are willing to accept. Where differences in merit are substantial and reliably measured, ranking has a strong claim. Where acceptable candidates are numerous and finely ranked differences are doubtful, randomisation may acknowledge uncertainty more honestly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The preferred allocation method should reflect the institution’s purpose.» y el pasaje dice «No allocation method is universally fair.». La fuente conserva la misma relación mediante «allocation», «method» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "bcd0d4571e993783bb79c9e54b32e0ae24d781788d93c673b18c3bf82cc4cfac",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "Why does the author distinguish between lotteries used before and after screening?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Because the stage of randomisation changes its fairness implications"
+        },
+        "sourceExcerpt": "When a programme has fewer places than qualified applicants, selection cannot be solved by checking eligibility alone. Every remaining candidate may satisfy the threshold, yet some rule must still decide who enters. A lottery makes chance explicit. Critics see this as surrendering judgement; supporters argue that it can be more honest than pretending to measure tiny differences precisely. Its legitimacy depends on the stage at which it is used. Random admission before basic screening raises a different issue from random selection among candidates already judged suitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why does the author distinguish between lotteries used before and after screening?» y la clave es «Because the stage of randomisation changes its fairness implications». La evidencia dice «Its legitimacy depends on the stage at which it is used.». La coincidencia semántica se apoya en «used», «stage»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7bc4ce04f2bd73ae785ce8cf1da8ae646944749d0de055d7bc0a90837474e92d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "What criticism is made of first-come, first-served allocation?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "It can reward advantages unrelated to the programme"
+        },
+        "sourceExcerpt": "First-come, first-served allocation appears neutral because everyone faces the same clock. In practice, it rewards access to time, information and reliable technology. People who learn about an opportunity late, work during registration hours or have unstable internet begin at a disadvantage unrelated to the programme’s purpose. A queue can still be appropriate when early action is itself relevant, but convenience should not be mistaken for fairness. The central question is whether speed of application is a quality the institution intends to reward.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What criticism is made of first-come, first-served allocation?» y la clave es «It can reward advantages unrelated to the programme». La evidencia dice «First-come, first-served allocation appears neutral because everyone faces the same clock.». La coincidencia semántica se apoya en «first», «come», «served», «allocation»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "b007a0155780f1888ffa65142434fd76731979b6b1c017cebd84f6d2252a27d2",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "When might a threshold followed by a lottery be appropriate?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "When acceptable candidates can be identified more reliably than finely ranked"
+        },
+        "sourceExcerpt": "Merit ranking seems to offer the opposite virtue: places go to those judged strongest. The difficulty comes near the cut-off, where small score differences may reflect measurement noise, unequal preparation or subjective assessment. A detailed rank can project false precision. This does not invalidate evaluation. It suggests that a threshold followed by a lottery may be preferable when the institution can distinguish acceptable from unacceptable candidates more confidently than it can order every acceptable candidate.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «When might a threshold followed by a lottery be appropriate?» y la clave es «When acceptable candidates can be identified more reliably than finely ranked». La evidencia dice «It suggests that a threshold followed by a lottery may be preferable when the institution can distinguish acceptable from unacceptable candidates more confidently than it can order every acceptable candidate.». La coincidencia semántica se apoya en «threshold», «followed», «lottery», «acceptable», «candidates»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d7e0c725c31f4a31096da2756e249d11c7c10529c3f259366050d545aa465c4b",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "What is the main point about weighted lotteries?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Their weights need a defensible rationale"
+        },
+        "sourceExcerpt": "Lottery design ranges from a complete draw to a tie-breaker used only among equally ranked candidates. Weighted lotteries give additional chances to groups or applicants with specified characteristics. Weighting can pursue access goals while preserving uncertainty, but it also makes the system harder to explain. If weights are poorly justified, randomisation may conceal rather than resolve disagreement. A draw is therefore not automatically fair; its rules encode values about who enters the pool and whether all entries count alike.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the main point about weighted lotteries?» y la clave es «Their weights need a defensible rationale». La evidencia dice «Weighted lotteries give additional chances to groups or applicants with specified characteristics.». La coincidencia semántica se apoya en «weighted», «lotteries»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "1bbbd473fbe28910b82da98cff1f79015779cd2411caf7febe714ad10b86150b",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "Why should procedures be published before the draw?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "So the process can be distinguished from arbitrary selection"
+        },
+        "sourceExcerpt": "Trust depends on a published procedure. Applicants should know eligibility rules, the number of available places, whether priority categories exist and how the draw will be checked. Releasing only the final names is insufficient because observers cannot distinguish an honest random process from an arbitrary decision. Independent verification can protect both winners and administrators. Transparency does not remove disappointment, but it changes the basis on which the outcome can be challenged.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why should procedures be published before the draw?» y la clave es «So the process can be distinguished from arbitrary selection». La evidencia dice «Releasing only the final names is insufficient because observers cannot distinguish an honest random process from an arbitrary decision.». La coincidencia semántica se apoya en «process», «arbitrary»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "e1a1ecbeec1fb5a1934cec1f51b7e4d3c44e2502b51a7c348db81b8b385289c3",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "What does the author mean by saying each method “privileges” something?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Each rewards a different quality or condition"
+        },
+        "sourceExcerpt": "No allocation method is universally fair. Queues privilege prompt access, rankings privilege chosen measures, and lotteries privilege an equal or deliberately weighted chance. The appropriate rule follows from institutional purpose and from the kinds of error decision-makers are willing to accept. Where differences in merit are substantial and reliably measured, ranking has a strong claim. Where acceptable candidates are numerous and finely ranked differences are doubtful, randomisation may acknowledge uncertainty more honestly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What does the author mean by saying each method “privileges” something?» y la clave es «Each rewards a different quality or condition». La evidencia dice «No allocation method is universally fair.». La coincidencia semántica se apoya en «method»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c52b9089eda10d49b708f647627430f40d51bd234f6e2cdee39dda3755ba3f0e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "Which best summarises bounded randomisation?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Expert judgement defines the pool and chance resolves the remaining scarcity"
+        },
+        "sourceExcerpt": "The strongest case is for bounded randomisation: judgement defines a defensible pool, and chance resolves scarcity inside it. This model neither eliminates expertise nor treats applicants as identical. It asks experts to make the distinction they can support, then prevents them from inventing confidence beyond that point. Such restraint may feel less decisive than a complete ranking, but decisiveness is not the same as accuracy. A legitimate lottery is not an escape from reasons; it is a rule for acting when reasons run out.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which best summarises bounded randomisation?» y la clave es «Expert judgement defines the pool and chance resolves the remaining scarcity». La evidencia dice «The strongest case is for bounded randomisation: judgement defines a defensible pool, and chance resolves scarcity inside it.». La coincidencia semántica se apoya en «bounded», «randomisation», «judgement», «defines», «pool», «chance»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "0fea02e4434c9ed73f2b2fff366688f6da2756d5995aae795451c7f1260e7879",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/reading/set34-reading-content-v1.0.2.json",
+        "sha256": "cb9a144d4a8b07e40ab41a6b240627d54284018eff40977f858e92b660fdc32b"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "2d51243109f33e41ac0b0c417a5e1d8a518b8e1fcc57417a36d439842dd1f2b7",
+      "canonicalQuestionProjectionSha256": "a63ec344e4dfaff34ea049d8ae4a318e4e9ed35e9e3dd5427891f45059456be3"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Orde"
+          ]
+        },
+        "evidenceSegment": "s34-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is Orde, O-R-D-E. The earlier note saying Ward is not correct, so please enter Orde on the collection label.",
+        "timecode": {
+          "startFrame": 3141521,
+          "endFrame": 7619386,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.236304,
+          "endSeconds": 172.775193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b93462dc9dd90b32abefd86025ff5456e0746d6933d44d506c8c76eb6d405093",
+        "planSegmentTextSha256": "c4967c59458635be8c82e23b78a9432238001598c46f48190dfd7befa38a94d1"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Number of knives: ______",
+          "acceptedResponses": [
+            "5"
+          ]
+        },
+        "evidenceSegment": "s34-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "There is a chef’s knife, a bread knife, one utility knife and two paring knives. That makes 5 knives altogether, not four.",
+        "timecode": {
+          "startFrame": 3141521,
+          "endFrame": 7619386,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.236304,
+          "endSeconds": 172.775193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "71a82526560e2f79532ad159461a92b8482cb34a7061f7a24cc23dc00e67ce4e",
+        "planSegmentTextSha256": "c5c20c7a8b6b134dc36e83c054479156a33beb7348323cee4e07c2e7867c6d27"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Longest blade: ______ cm",
+          "acceptedResponses": [
+            "24"
+          ]
+        },
+        "evidenceSegment": "s34-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Yes, the chef’s knife is the longest. Its blade measures 24 centimetres from heel to tip; the handle is not included.",
+        "timecode": {
+          "startFrame": 3141521,
+          "endFrame": 7619386,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.236304,
+          "endSeconds": 172.775193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b2517e15a37ef40aeb7bf3d9a0c2bc4befc5b08f9c188ac5ee60a0ae820ca2fd",
+        "planSegmentTextSha256": "89f3b2ea833b7340aa47443538019e5163274c758df5590d96e7a2f285d82985"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Special edge: ______",
+          "acceptedResponses": [
+            "serrated",
+            "serrated edge"
+          ]
+        },
+        "evidenceSegment": "s34-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Four have plain edges. The bread knife is the only one with a serrated edge, so that is the special edge on the form.",
+        "timecode": {
+          "startFrame": 3141521,
+          "endFrame": 7619386,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.236304,
+          "endSeconds": 172.775193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "88653e1c165e1c582e8187a21177d65d5b1a33cc3655f8a0aadad9d294eb7287",
+        "planSegmentTextSha256": "e95a4356c0673e7a05d6d48160d33bded9ef06a50a61d7a91dbf74c9d4b4cc94"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Collection date: ______",
+          "acceptedResponses": [
+            "6 December",
+            "6th December",
+            "December 6",
+            "December 6th"
+          ]
+        },
+        "evidenceSegment": "s34-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Yes, please book 6 December. I can be at home during the morning window and hand the sealed box to the driver.",
+        "timecode": {
+          "startFrame": 3141521,
+          "endFrame": 7619386,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.236304,
+          "endSeconds": 172.775193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cd37101e677cbb16bf1d440a85587a166954ed8ade22a083f193c41feddb176f",
+        "planSegmentTextSha256": "4d350a3e25e6df9a3b7fbff46e91b7d00682473ccb596f8a22edfcf6c24995c0"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Items must be placed in protective ______",
+          "acceptedResponses": [
+            "sleeves",
+            "protective sleeves"
+          ]
+        },
+        "evidenceSegment": "s34-p1-t011",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Before collection, put every blade in protective sleeves so no edge can move or cut through the box. Newspaper by itself is not secure enough.",
+        "timecode": {
+          "startFrame": 3141521,
+          "endFrame": 7619386,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.236304,
+          "endSeconds": 172.775193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "de090d6423f1af8a8219f7a12fdd4cc9660e2bddccc212d3efabe5d130b7593e",
+        "planSegmentTextSha256": "5f08eb3b56e7e80a24d4236345d6ce0e8d76835c7e370835275d076d1b977bb1"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Why will one knife be inspected before pricing?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "its tip is damaged"
+        },
+        "evidenceSegment": "s34-p1-t013",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Possibly. Because the tip is damaged, the workshop must inspect it before pricing any reshaping. A loose handle or unusual length is not the issue here.",
+        "timecode": {
+          "startFrame": 10241112,
+          "endFrame": 14111313,
+          "sampleRateHz": 44100,
+          "startSeconds": 232.224762,
+          "endSeconds": 319.984422,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "35f889077d0b0afc5e0d11acfe236afd582a536954f0a7a95ca967ceeb65a4cc",
+        "planSegmentTextSha256": "1aa606292b9858ffbec271aa1a7e950dbf5da48abc614fa8ce02e3ada5b26e9d"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "Which return method does Tamsin choose?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "a tracked return parcel"
+        },
+        "evidenceSegment": "s34-p1-t014",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "That makes sense. For the return, workshop collection is free and the next van is cheaper, but I will be away then. I choose the tracked return parcel.",
+        "timecode": {
+          "startFrame": 10241112,
+          "endFrame": 14111313,
+          "sampleRateHz": 44100,
+          "startSeconds": 232.224762,
+          "endSeconds": 319.984422,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "240defa5d7c3b3994ff8c6bfa3dc632023ec0e56e730c6bbcc5eec9a195b2108",
+        "planSegmentTextSha256": "b91b2ce159de602d7841180fa27b396788b280fb422afd32a9f4ae252c1d0978"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "What should Tamsin write on the outer box?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "the booking code"
+        },
+        "evidenceSegment": "s34-p1-t015",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Fine. On the outer box, write only the booking code. Put your contact details inside; do not write the knives’ value or the word fragile outside.",
+        "timecode": {
+          "startFrame": 10241112,
+          "endFrame": 14111313,
+          "sampleRateHz": 44100,
+          "startSeconds": 232.224762,
+          "endSeconds": 319.984422,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4b0418ab758393f181445a755f415f7d129064e3d6b2d5ce11e00bce7f21768f",
+        "planSegmentTextSha256": "08da08b8c2bd7b338a95926122796b9f4c7eeee51c8097f298697fd0955c84d3"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "When will the final cost be confirmed?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "after condition inspection"
+        },
+        "evidenceSegment": "s34-p1-t017",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "The driver cannot price them. We confirm the final cost after the workshop completes its condition inspection, and we contact you before any repair beyond sharpening.",
+        "timecode": {
+          "startFrame": 10241112,
+          "endFrame": 14111313,
+          "sampleRateHz": 44100,
+          "startSeconds": 232.224762,
+          "endSeconds": 319.984422,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "df1b6df9bd1ea6b77630b98803ad7c0f89e2b93bd8e10bdadf88df809a5c9e75",
+        "planSegmentTextSha256": "ef0faba3197650f032073e03ab3faa317f6e5658920a3fcf2c10f88cb8cb819e"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Public gallery",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "s34-p2-t002",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "From the southern entrance, look to the far left, the north-west corner. The raised public gallery occupies that corner.",
+        "timecode": {
+          "startFrame": 18904996,
+          "endFrame": 23966830,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.684717,
+          "endSeconds": 543.465533,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c21ea1e9ddf8da69bbfa1e9f33e2f38e2e4abc553eba1b3bbc93d93a986133c9",
+        "planSegmentTextSha256": "2cd8b921dbdaa3bf9320ccfb7e4c46c78712bb6152c2244d401ffc94d6f3abc5"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "Bidding hall",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "s34-p2-t004",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "The bidding hall is the large open space in the centre, not the smaller office against the north wall.",
+        "timecode": {
+          "startFrame": 18904996,
+          "endFrame": 23966830,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.684717,
+          "endSeconds": 543.465533,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8965720b4633ecf0b54d053171ea9022f63c3538414696191980059664da631e",
+        "planSegmentTextSha256": "ac050a4ff90a7cea371a66b8e9353c516a7b4264027b382dd790937e1dd8bba6"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Sample bench",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "s34-p2-t006",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Directly east of the gallery, before you reach the cold rooms, you will see the sample bench.",
+        "timecode": {
+          "startFrame": 18904996,
+          "endFrame": 23966830,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.684717,
+          "endSeconds": 543.465533,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6352f268d71e4ebd9e0e4644c33901a816e4764acf93022c3fbb0b66cbdf10d7",
+        "planSegmentTextSha256": "06234d5b2ef1cb0b66f57b60bff5664029db514f5d16661adea63c4210e89d76"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "Cold rooms",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "s34-p2-t008a",
+        "ledgerSegmentBeforeAudioRebind": "s34-p2-t008",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "The cold rooms are in the north-east corner. They form a clearly marked group along the north-east wall.",
+        "timecode": {
+          "startFrame": 18904996,
+          "endFrame": 23966830,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.684717,
+          "endSeconds": 543.465533,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3105c2d2902078b4a8260b6e14b425f7b923487acd6df4f0e4f79c91cfc630e4",
+        "planSegmentTextSha256": "ddbb440eb06019e849105f9e563a333cd6df4e7fa564008f5643208c2f84032a"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Wash point",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "evidenceSegment": "s34-p2-t010a",
+        "ledgerSegmentBeforeAudioRebind": "s34-p2-t010",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Now follow the visitor route to the south-east corner. The wash point is there, beside the exit and outside the bidding hall.",
+        "timecode": {
+          "startFrame": 18904996,
+          "endFrame": 23966830,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.684717,
+          "endSeconds": 543.465533,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9ac1117effddaff9a522e19608aca7077eb892f9a992771b4210897a6b38090a",
+        "planSegmentTextSha256": "ec2deb7d5cf6406ee1d8c8173399375aa83b7d3bb54078bda17b7dedcd0b78e2"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Permit desk",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "s34-p2-t012",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The permit desk is immediately beside the southern entrance, so visitors register before entering the main route.",
+        "timecode": {
+          "startFrame": 23986675,
+          "endFrame": 24908139,
+          "sampleRateHz": 44100,
+          "startSeconds": 543.915533,
+          "endSeconds": 564.810408,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cb2925ffcead8d75d223cad88901b45f89cccc5c87f4dafc07a7971994d72a44",
+        "planSegmentTextSha256": "c6e1250a184ce46cb9d73ec3e0fa9a3e5b9047d43ff43d504db6c4fcaa00d23a"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "fill",
+          "questionText": "Visitors first show their ______ at the entrance.",
+          "acceptedResponses": [
+            "photo ID",
+            "photographic ID"
+          ]
+        },
+        "evidenceSegment": "s34-p2-t014",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "At that desk, visitors first show photo ID. A booking email alone does not complete registration.",
+        "timecode": {
+          "startFrame": 27529877,
+          "endFrame": 31734097,
+          "sampleRateHz": 44100,
+          "startSeconds": 624.260249,
+          "endSeconds": 719.594036,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "05faee726b265035da3bbd0260af5a0216d4b2808c14f98a0b0f2fad88590d61",
+        "planSegmentTextSha256": "90b438990ec129fb3319edc620f80a24eed58456c4e087a18178cf8a5de0d3a6"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "fill",
+          "questionText": "Only staff may cross the yellow ______.",
+          "acceptedResponses": [
+            "hygiene line"
+          ]
+        },
+        "evidenceSegment": "s34-p2-t015",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The yellow hygiene line separates the public route from produce handling. Only staff may cross it, even after bidding has ended.",
+        "timecode": {
+          "startFrame": 27529877,
+          "endFrame": 31734097,
+          "sampleRateHz": 44100,
+          "startSeconds": 624.260249,
+          "endSeconds": 719.594036,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6b5f41c532363801bd3bce912bfa052314dddb594f73d6e9fc52b0b431c5c902",
+        "planSegmentTextSha256": "e1fe9047222f91b849c33d3d43493968a37bfad9d1c0b3017133a51d04a28065"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "fill",
+          "questionText": "The demonstration uses a small ______.",
+          "acceptedResponses": [
+            "sample lot"
+          ]
+        },
+        "evidenceSegment": "s34-p2-t016",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "For the bidding explanation, the auctioneer uses a small sample lot, not an entire commercial consignment.",
+        "timecode": {
+          "startFrame": 27529877,
+          "endFrame": 31734097,
+          "sampleRateHz": 44100,
+          "startSeconds": 624.260249,
+          "endSeconds": 719.594036,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cf550c214251b1f01bbd52ebd31fa2e0c901492f1136808f15bcbfd9aabafc42",
+        "planSegmentTextSha256": "4c3cc6aa272f93f1784f967c56c086822145ec039674d5d285bf6cf3ce38a644"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "fill",
+          "questionText": "Purchased boxes are collected from the ______.",
+          "acceptedResponses": [
+            "dispatch lane"
+          ]
+        },
+        "evidenceSegment": "s34-p2-t017",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "If you buy anything during the supervised session, boxes are collected later from the dispatch lane on the west side.",
+        "timecode": {
+          "startFrame": 27529877,
+          "endFrame": 31734097,
+          "sampleRateHz": 44100,
+          "startSeconds": 624.260249,
+          "endSeconds": 719.594036,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "075b64d0186f835cc1ffe3f1bf0dc25b172e4d3d0389cc0e8163b2bfc75d4f14",
+        "planSegmentTextSha256": "bafed968fa444c7095896021be6699025f9d9fdf3c31db930c1d8f5c296f69fc"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "fill",
+          "questionText": "The test route will begin at the ______.",
+          "acceptedResponses": [
+            "student union"
+          ]
+        },
+        "evidenceSegment": "s34-p3-t002",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "The route should start at the student union. Beginning in the design studio would make the building too familiar to our volunteers.",
+        "timecode": {
+          "startFrame": 36957728,
+          "endFrame": 41653296,
+          "sampleRateHz": 44100,
+          "startSeconds": 838.043719,
+          "endSeconds": 944.519184,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d418f200b441b372ab722f833f0b66727dbfbb2726abfc6f37e5e05ae07dc01b",
+        "planSegmentTextSha256": "fac6ba751f33b72b660c8220916768686540a9343f5af9501bbf860282e282a8"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "fill",
+          "questionText": "Each sign will use the same ______.",
+          "acceptedResponses": [
+            "typeface"
+          ]
+        },
+        "evidenceSegment": "s34-p3-t004",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "Across all conditions we keep the same typeface. Otherwise a change attributed to spacing could actually come from letter shape.",
+        "timecode": {
+          "startFrame": 36957728,
+          "endFrame": 41653296,
+          "sampleRateHz": 44100,
+          "startSeconds": 838.043719,
+          "endSeconds": 944.519184,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0366186909a405b3823d2a34b6b23d7db6a779c0a3a552889a8ec87072ca52ec",
+        "planSegmentTextSha256": "b39e48fa60fb9ab03cb909fcc7ca8fd8ed2732269e79ce0fa92fc47e5878ab3c"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "fill",
+          "questionText": "Participants will stand at a fixed ______.",
+          "acceptedResponses": [
+            "viewing distance"
+          ]
+        },
+        "evidenceSegment": "s34-p3-t006",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "We will mark a fixed viewing distance on the floor before each choice point, so everyone first sees the sign from the same position.",
+        "timecode": {
+          "startFrame": 36957728,
+          "endFrame": 41653296,
+          "sampleRateHz": 44100,
+          "startSeconds": 838.043719,
+          "endSeconds": 944.519184,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e7a5d929f9ea763c4b8f9ff7304be27f4c4b4514db330aa0e599f0a6364127dd",
+        "planSegmentTextSha256": "3b95083f2fa24cd4af2d8fe193286b0fd8e21382ffd2d8308e14f2ff7e3de7ec"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "fill",
+          "questionText": "The main outcome will be ______.",
+          "acceptedResponses": [
+            "decision time"
+          ]
+        },
+        "evidenceSegment": "s34-p3-t008",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "Our main outcome should be decision time: the interval from the sign becoming visible to the participant choosing a direction.",
+        "timecode": {
+          "startFrame": 36957728,
+          "endFrame": 41653296,
+          "sampleRateHz": 44100,
+          "startSeconds": 838.043719,
+          "endSeconds": 944.519184,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b4a1c8b3d6457a588835fc96e99e6afa0fe550080bb1534a51317dce3a3528b6",
+        "planSegmentTextSha256": "f2d80642dd839c179336cd15f05c390387c36c2ee69d3858a663b5d8453766e2"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "fill",
+          "questionText": "A wrong turn will be recorded as a ______.",
+          "acceptedResponses": [
+            "route error"
+          ]
+        },
+        "evidenceSegment": "s34-p3-t010",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "If the participant enters the wrong corridor, we record a route error, even if they notice and correct it immediately.",
+        "timecode": {
+          "startFrame": 36957728,
+          "endFrame": 41653296,
+          "sampleRateHz": 44100,
+          "startSeconds": 838.043719,
+          "endSeconds": 944.519184,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "72e8a8968bb7cd55f4696eb9081c22c713359257bbe5253a2be8f7bdd37fac45",
+        "planSegmentTextSha256": "ba7edc900d10240ee0c288a5492a649bc2579ec7d1fd20c0dbcc7a7f5ce4ec88"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "Why do they reject testing three sign heights?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "it would add another changing variable"
+        },
+        "evidenceSegment": "s34-p3-t012",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Three sign heights seemed useful, but height would add another changing variable. We need to isolate spacing first.",
+        "timecode": {
+          "startFrame": 44812026,
+          "endFrame": 47719513,
+          "sampleRateHz": 44100,
+          "startSeconds": 1016.145714,
+          "endSeconds": 1082.075125,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7d07829069964eccb7de67dc7c984a3b862996d2c836ee07f5971da8648240b0",
+        "planSegmentTextSha256": "42019d0ef474f3763c4994561fa72e0d02acc8042b74b1a7d3b00d2a2a91a3e7"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "How will letter spacing be varied?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "in three predefined levels"
+        },
+        "evidenceSegment": "s34-p3-t014",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Let us use three predefined spacing levels: standard, moderately open and very open. We should not adjust them for individuals.",
+        "timecode": {
+          "startFrame": 44812026,
+          "endFrame": 47719513,
+          "sampleRateHz": 44100,
+          "startSeconds": 1016.145714,
+          "endSeconds": 1082.075125,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "83cae1a21894f2af3faa4e4a7d8f0ed7bd750308f0b98b259d0dab0616c1de26",
+        "planSegmentTextSha256": "13983fc25ebb389d6a792a6686fd84e692162a82044ea91eb258374df14f4f79"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "Who will take part in the pilot?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "staff unfamiliar with the building"
+        },
+        "evidenceSegment": "s34-p3-t016",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "For the pilot, recruit staff who are unfamiliar with the building. Design students may recognise our manipulation, and library users know the route.",
+        "timecode": {
+          "startFrame": 44812026,
+          "endFrame": 47719513,
+          "sampleRateHz": 44100,
+          "startSeconds": 1016.145714,
+          "endSeconds": 1082.075125,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1acb36d5331d55b4158adb3efbf54246f93cacd9ec7413077d07426d6ec00564",
+        "planSegmentTextSha256": "3e3e5ca35bb9e3897889b16ab47a7c1cf658e329283a03ed48cecf07f2c1f33a"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "What will the camera record?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "movement at the choice point"
+        },
+        "evidenceSegment": "s34-p3-t017",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "The camera should frame the choice point and record movement. We do not need faces or a recording of anyone reading aloud.",
+        "timecode": {
+          "startFrame": 44812026,
+          "endFrame": 47719513,
+          "sampleRateHz": 44100,
+          "startSeconds": 1016.145714,
+          "endSeconds": 1082.075125,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4781a2d33545d2f6055321d8c5c5802da3a76cf7be5b431a314aa7a2bf279d58",
+        "planSegmentTextSha256": "4b688742295f51cf9afab1397d0f48aff29c0db93339a2f8887d54b2e87467cb"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "What will Merrick prepare next?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the randomised sign sequence"
+        },
+        "evidenceSegment": "s34-p3-t018",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "I will draft the consent form, while Merrick prepares the randomised sign sequence so the conditions are not always presented in the same order.",
+        "timecode": {
+          "startFrame": 44812026,
+          "endFrame": 47719513,
+          "sampleRateHz": 44100,
+          "startSeconds": 1016.145714,
+          "endSeconds": 1082.075125,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4ace376495282f360758359c4b70d4c186d31f65752358096975a46770a35d3e",
+        "planSegmentTextSha256": "5e0b24d10627bac7cc6b135035fc5b77a04f5ac215bf964c4689fe1f4e32b0cb"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Sound begins when grains move down the ______.",
+          "acceptedResponses": [
+            "avalanche face"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t002",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "The event begins when dry sand avalanches down the steep avalanche face of a dune, whether the movement starts naturally or is triggered carefully.",
+        "timecode": {
+          "startFrame": 56824717,
+          "endFrame": 62027974,
+          "sampleRateHz": 44100,
+          "startSeconds": 1288.542336,
+          "endSeconds": 1406.530023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0c495b2843abfa06f54ac2b2be44cc8dfc9a8ba8d22c7359df61b9fa2e283558",
+        "planSegmentTextSha256": "e8e18d826bd9d0f12add2289e13903eba0b0548c9ccc112433d2f2979638d52e"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "The grains tend to occupy a narrow range of ______.",
+          "acceptedResponses": [
+            "grain sizes",
+            "grain size"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t004",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Booming material often contains grains within a narrow range of grain sizes; a broad mixture does not necessarily move in the same coordinated way.",
+        "timecode": {
+          "startFrame": 56824717,
+          "endFrame": 62027974,
+          "sampleRateHz": 44100,
+          "startSeconds": 1288.542336,
+          "endSeconds": 1406.530023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "de936d34893d6f7062f8526ac25a4bded637cdc02532c306ba3f41cc48a0100c",
+        "planSegmentTextSha256": "f69743088f063a0ebf4ebf859cc221174a68e022554e73e38e1b7ddeee5a092a"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "The sustained tone has a relatively ______ frequency.",
+          "acceptedResponses": [
+            "low"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t006",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Instead of a sharp crack, observers hear a sustained tone with a relatively low frequency, sometimes lasting while the avalanche continues.",
+        "timecode": {
+          "startFrame": 56824717,
+          "endFrame": 62027974,
+          "sampleRateHz": 44100,
+          "startSeconds": 1288.542336,
+          "endSeconds": 1406.530023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2d469e132249763e754362743f59da33a36bca6357e2688e7f2fc99be5a06651",
+        "planSegmentTextSha256": "4411b0ecf55b197b4868f75c7d97c2f511845e2ea6c18255866434bc6af88e2b"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Too much ______ can prevent the sound.",
+          "acceptedResponses": [
+            "moisture"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t008",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Dryness matters. Too much moisture between grains can prevent the sound even when the slope and movement look suitable.",
+        "timecode": {
+          "startFrame": 56824717,
+          "endFrame": 62027974,
+          "sampleRateHz": 44100,
+          "startSeconds": 1288.542336,
+          "endSeconds": 1406.530023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5dfd538f09cfa63c9c3f5c48133249ef211f4ec71ac11ccaac905214316a86b9",
+        "planSegmentTextSha256": "b578d77b5faff333abc9da3cb2cff6c708eb0643ff222ee5da42a6a169701d5b"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "A proposed explanation involves a ______ beneath the surface.",
+          "acceptedResponses": [
+            "resonant layer"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t010",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "One proposed explanation involves a resonant layer beneath the surface, although its exact role remains debated and should not be presented as settled.",
+        "timecode": {
+          "startFrame": 56824717,
+          "endFrame": 62027974,
+          "sampleRateHz": 44100,
+          "startSeconds": 1288.542336,
+          "endSeconds": 1406.530023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f804fdb4e8d8a18dafabbbdebc968490feaddd84bee0ef4b8f2351f77df8fb43",
+        "planSegmentTextSha256": "b148c4cf72a4f45be4e7aa8a756cae3955f70ad2d7cd15c12be5ebec7e30f27a"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Field team first records the slope ______.",
+          "acceptedResponses": [
+            "angle"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t012",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "In a field survey, the team first records the slope angle at the active face before disturbing the sand.",
+        "timecode": {
+          "startFrame": 65608641,
+          "endFrame": 68664241,
+          "sampleRateHz": 44100,
+          "startSeconds": 1487.724286,
+          "endSeconds": 1557.012268,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "daa2ec7eb08bf02b376a918a57b51e9fc697d3fb5478aebb401f723203943d83",
+        "planSegmentTextSha256": "1d7da8db92f988737d56ea20104efcdb73afe6a03588e0132ef425bb00a36e7c"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "A microphone measures sound ______.",
+          "acceptedResponses": [
+            "frequency"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t014",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "A calibrated microphone records the sound frequency and its change through time rather than relying on the listener’s description alone.",
+        "timecode": {
+          "startFrame": 65608641,
+          "endFrame": 68664241,
+          "sampleRateHz": 44100,
+          "startSeconds": 1487.724286,
+          "endSeconds": 1557.012268,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "71d3fed26c10d2d167027de1c62f356dfcaf2a82ceddf87ae84bb47f7b973e74",
+        "planSegmentTextSha256": "e8d2e37eb5f36d9521df12511bea83e68c5237208a185b33bb46569dac9d41cd"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "Samples are tested for grain size and ______.",
+          "acceptedResponses": [
+            "roundness"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t016",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Collected grains are tested for size and roundness, since similar-looking sands may differ in surface form.",
+        "timecode": {
+          "startFrame": 65608641,
+          "endFrame": 68664241,
+          "sampleRateHz": 44100,
+          "startSeconds": 1487.724286,
+          "endSeconds": 1557.012268,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7d51691980a93c29b04b33043fecde7268591b5dc26d711b0db78945cb581a07",
+        "planSegmentTextSha256": "791a71a417ea9c2e111806e83dba34ce0c46d010cd7fe12fde3f458d67862426"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "Sensors beneath the surface detect ______.",
+          "acceptedResponses": [
+            "vibration"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t017",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Small buried sensors detect vibration beneath the moving surface and show whether oscillation extends into deeper material.",
+        "timecode": {
+          "startFrame": 65608641,
+          "endFrame": 68664241,
+          "sampleRateHz": 44100,
+          "startSeconds": 1487.724286,
+          "endSeconds": 1557.012268,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b2f94b822616f8317811353b95c66b71392c77d8b71a418f276a660dd921ec50",
+        "planSegmentTextSha256": "5c4675f1b5a24e614e3c5c10869cdaf91ed010c57f9f34d67d498a4f476b3440"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "Competing models are compared with field ______.",
+          "acceptedResponses": [
+            "measurements"
+          ]
+        },
+        "evidenceSegment": "s34-p4-t018",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Finally, competing models are compared with field measurements. A plausible mechanism must explain observations at more than one dune.",
+        "timecode": {
+          "startFrame": 65608641,
+          "endFrame": 68664241,
+          "sampleRateHz": 44100,
+          "startSeconds": 1487.724286,
+          "endSeconds": 1557.012268,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fdbbff138e00a71bd4715642f27d0ff03eaa5d42e28179c147da856bf4755737",
+        "planSegmentTextSha256": "283e54d142dc3f7741bc75e4f0c61f647d9ed70eb9568da56220b5767c3cf6bc"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/set34-listening-content-v1.0.3.json",
+        "sha256": "3e146bec733d5c48e060ccc0808a8378c1a49e3cd72f3e3fa48b68a2c2aa80c7"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "79aeaf09ceeb5e2567d90792edbfb3fb67f435b275a24717376dc5586403361e",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-34/set34-audio-production-plan.json",
+        "sha256": "6ba6f7be8d599d277f2398697dd74b5443cac39c7a46edbfd6c69bf256a7264a"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/elevenlabs-v4/set34-eleven-v4-manifest.json",
+        "sha256": "be236065a94e886f06de8250c72eeb726597878ff597bec068548b23ba4dddfa"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/elevenlabs-v4/set34-eleven-v4-progress.json",
+        "sha256": "14ccf3fa1e61f9e0d738551db6a189379745361c31770182ca3cdb407ecab446"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/elevenlabs-v4/set34-eleven-v4-qa.json",
+        "sha256": "c3b77871c224170ac67440cad9a5b9e1fc58412a5b0e369faf6a97752517b3e6"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/elevenlabs-v4/set34-concat.txt",
+        "sha256": "5299c66aca1f9725aa9e4a088f1db926be8364aeecfd8401ccd5218b1933ac76"
+      },
+      "concatPieceAggregateSha256": "705e0fb6d7269359185ff0e15b6bc264200d69553bfcf672237bdcc22025b760",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/elevenlabs-v4/ielts-set-34-listening-eleven-v4-master.wav",
+        "sha256": "19a9aed8d58d603ef2f5479d27ef4945a0613d928191404b5ffc42a5710231ca",
+        "frameCount": 76736449,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/listening/elevenlabs-v4/ielts-set-34-listening-eleven-v4.mp3",
+        "sha256": "c8d565aba2e1f02726d4c49cd1aa01d687298783dd10a023140b4e71b59837d8"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-34.mp3",
+        "sha256": "c8d565aba2e1f02726d4c49cd1aa01d687298783dd10a023140b4e71b59837d8"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "6807758b9c9fbb021569e16f498c357d4e617e439ab771daa704d1efbcddb81c"
+  }
+}

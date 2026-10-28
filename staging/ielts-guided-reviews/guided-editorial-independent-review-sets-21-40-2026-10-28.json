@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "ielts-guided-editorial-review.v1",
+  "reviewId": "guided-editorial-independent-review-sets-21-40-2026-10-28",
+  "reviewedAt": "2026-10-28T14:07:28Z",
+  "reviewer": {
+    "role": "independent-module-reviewer",
+    "actor": "codex-guided-editorial-independent-review",
+    "authorship": false,
+    "sourceEdits": false
+  },
+  "mode": "review-module",
+  "scope": {
+    "sets": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+    "artifacts": [
+      "Writing Task 2 pedagogical samples",
+      "Speaking Part 2 pedagogical references"
+    ],
+    "excluded": [
+      "Listening/Reading evidence",
+      "Speaking audio quality or pronunciation scoring",
+      "runtime integration",
+      "human release approval"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "src/data/ielts/guided-writing-samples-21-40.draft.ts",
+      "sha256": "2f7699486d8bf53b8a5518420de4d511be3c24989b9bd8a3aeeb631f554271ce"
+    },
+    {
+      "path": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "sha256": "f20d93603bb1a4a42bd00c6eaafead9f3779ad53b1ff59adbf1395aa03da202e"
+    }
+  ],
+  "specBasis": {
+    "skill": "ielts-mock-factory",
+    "publicSpecSnapshot": "official-spec-contract verified 2026-10-03",
+    "minimums": {
+      "writingTask2Words": 250,
+      "speakingPart2Minutes": "1-2"
+    },
+    "claimsPolicy": "approximate pedagogical references only; no official score prediction"
+  },
+  "deterministicSummary": {
+    "setsReviewed": 20,
+    "writingSamples": 40,
+    "speakingSamples": 40,
+    "writingPromptExactOncePass": 0,
+    "writingMinimumPass": 40,
+    "writingCriteriaShapePass": 40,
+    "writingUniquePass": 40,
+    "speakingCueCardExactPass": 20,
+    "speakingMinimumPass": 40,
+    "speakingCriteriaShapePass": 40,
+    "speakingUniquePass": 40,
+    "speakingAudioSafelyHidden": 40,
+    "relevantTests": {
+      "command": "node --experimental-strip-types --experimental-loader ./tests/ts-paths-loader.mjs --test tests/ielts-guided-writing-samples-21-40.test.mts tests/ielts-guided-speaking-references-21-40.test.mts",
+      "result": "PASS (2/2), but tests do not detect the editorial blockers below"
+    }
+  },
+  "findings": [
+    {
+      "id": "WRT-PROMPT-DUPLICATION",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "sets": "21-40",
+      "artifact": "src/data/ielts/guided-writing-samples-21-40.draft.ts",
+      "sourceLocation": "task2Prompt(), lines 56-61",
+      "title": "Every Writing Task 2 prompt is repeated verbatim",
+      "evidence": "For every canonical mock 21-40, task.stimulus equals task.text. task2Prompt() concatenates both with two newlines, so each generated reference.prompt contains the complete canonical prompt twice (20/20 exact-once checks fail; occurrence count is 2 for every set).",
+      "impact": "The reference is not bound to one exact candidate prompt and would display a visibly duplicated task. The current deterministic test asserts the duplicated concatenation and therefore gives a false PASS.",
+      "requiredRemediation": "Derive the prompt from one canonical field, or deduplicate equal stimulus/text values; then update the binding test to require one occurrence and invalidate this review hash."
+    },
+    {
+      "id": "SPK-FEEDBACK-NONTRACEABLE",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "sets": "21-40",
+      "artifact": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "sourceLocation": "intermediateFeedback()/advancedFeedback(), lines 68-82",
+      "title": "Speaking criteria are shared templates rather than evidence-based reviews",
+      "evidence": "All 40 samples receive one of two fixed verdict/criterion templates with only topic/detail interpolation. The 5.5 template universally asserts restarts, repetition, basic connectors and irregular complex range, while the stored transcripts are clean scripted prose and frequently contain no observable restart or repeated idea.",
+      "impact": "Criterion notes can misdescribe the actual sample and the apparent Band 5.5-versus-9 distinction is partly manufactured by generic commentary rather than traceable linguistic evidence. This fails the requested criteria-quality and anti-template review.",
+      "requiredRemediation": "Replace helper-generated judgments with set- and transcript-specific observations (quoted or precisely located linguistic evidence) and independently review the claimed band contrast; any source change invalidates this review hash."
+    },
+    {
+      "id": "WRT-BAND55-PROFILE-ADVISORY",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "sets": "21-40",
+      "artifact": "src/data/ielts/guided-writing-samples-21-40.draft.ts",
+      "title": "Band 5.5 samples use a highly regular pedagogical error profile",
+      "evidence": "The 5.5 samples consistently use a polished five-paragraph structure, then often signal limitation through repetition and a localized agreement error described in the criterion note. They remain unique and on-task, but the pattern is conspicuously regular across the batch.",
+      "impact": "Learners may infer that one visible grammar error plus simpler vocabulary reliably constitutes Band 5.5.",
+      "requiredRemediation": "During remediation, vary authentic limitations across task response, cohesion, lexical control and grammar instead of relying on a repeated essay/error recipe."
+    },
+    {
+      "id": "SPK-PART2-LENGTH-ADVISORY",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "sets": "21-40",
+      "artifact": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "title": "Band 5.5 long turns sit at the lower timing boundary",
+      "evidence": "The 20 Band 5.5 transcripts range from 122 to 137 words. They meet the repository floor, but at fluent reading speed may last about one minute or less unless natural pauses are present.",
+      "impact": "A text-only reference may under-model the 1-2 minute Part 2 target if learners read it as a duration exemplar.",
+      "requiredRemediation": "Add an explicit timing caveat or validate delivered duration with human-recorded reference audio before any audio-ready state."
+    }
+  ],
+  "sets": [
+    {"set": 21, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 286, "9.0": 324}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 126, "9.0": 215}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 22, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 300, "9.0": 344}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 125, "9.0": 196}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 23, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 285, "9.0": 333}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 134, "9.0": 210}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 24, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 285, "9.0": 323}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 130, "9.0": 206}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 25, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 300, "9.0": 333}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 128, "9.0": 198}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 26, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 285, "9.0": 317}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 128, "9.0": 207}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 27, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 288, "9.0": 333}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 132, "9.0": 206}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 28, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 276, "9.0": 329}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 122, "9.0": 199}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 29, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 274, "9.0": 326}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 127, "9.0": 209}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 30, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 283, "9.0": 327}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 131, "9.0": 209}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 31, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 282, "9.0": 319}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 133, "9.0": 207}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 32, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 281, "9.0": 322}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 124, "9.0": 203}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 33, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 287, "9.0": 308}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 128, "9.0": 202}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 34, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 284, "9.0": 309}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 137, "9.0": 203}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 35, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 259, "9.0": 295}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 135, "9.0": 214}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 36, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 266, "9.0": 306}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 130, "9.0": 203}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 37, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 278, "9.0": 318}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 130, "9.0": 210}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 38, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 276, "9.0": 309}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 125, "9.0": 200}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 39, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 262, "9.0": 299}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 136, "9.0": 209}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}},
+    {"set": 40, "decision": "FAIL", "findingIds": ["WRT-PROMPT-DUPLICATION", "SPK-FEEDBACK-NONTRACEABLE"], "writing": {"decision": "FAIL", "promptBoundExactlyOnce": false, "canonicalPromptOccurrences": 2, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 268, "9.0": 318}, "criteriaComplete": true, "taskResponseQuality": "PASS", "bandDifferentiation": "PASS", "uniqueWithinBatch": true}, "speaking": {"decision": "FAIL", "cueCardBoundExactly": true, "bulletCount": 4, "minimumWords": {"5.5": true, "9.0": true}, "wordCounts": {"5.5": 134, "9.0": 212}, "criteriaComplete": true, "transcriptTaskCoverage": "PASS", "bandDifferentiation": "PARTIAL", "feedbackTraceableToObservedTranscript": false, "audioHidden": true, "uniqueWithinBatch": true}}
+  ],
+  "portfolioAssessment": {
+    "writingContentQuality": "PASS apart from duplicated prompt binding",
+    "speakingTranscriptQuality": "PASS for cue-card coverage and uniqueness",
+    "bandDifferentiation": {
+      "writing": "PASS",
+      "speaking": "PARTIAL"
+    },
+    "templateRisk": "FAIL",
+    "criteriaEvidenceAlignment": "FAIL",
+    "allSourceMinimums": "PASS"
+  },
+  "globalGate": {
+    "decision": "FAIL",
+    "nextState": "REMEDIATION",
+    "readyForHumanReview": false,
+    "runtimeIntegrationAuthorized": false,
+    "audioApprovalAuthorized": false,
+    "releaseAuthorized": false,
+    "reason": "Two unresolved HIGH findings affect all Sets 21-40. Under the factory gate rules, unresolved HIGH findings prevent CONTENT/ASSEMBLY approval."
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "canonicalization": "Recursive key sort, JSON.stringify, integrity field excluded",
+    "reviewPayloadSha256": "282dade15299e40a830bbe105d07ca7a9339e4a1f0a3fe0e993ad151c7a74f1e"
+  }
+}

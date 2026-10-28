@@ -1,0 +1,1994 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_READING_FINAL_INDEPENDENT_REREVIEW",
+  "scope": {
+    "sets": [
+      21,
+      40
+    ],
+    "module": "Academic Reading",
+    "rowsReviewed": 800
+  },
+  "reviewedAt": "2026-10-28T14:21:43.546961Z",
+  "reviewer": {
+    "role": "Independent Reading Module Reviewer",
+    "task": "guided_reading_independent_review",
+    "independentOfGeneratorAndSourceAuthoring": true
+  },
+  "supersedes": {
+    "path": "staging/ielts-guided-reviews/reading-evidence-independent-rereview-21-40-2026-10-28.json",
+    "sha256": "8b571bc9c61f71764d31b481ed0daa610c83249f6401ca565b0fafe65fb6e97c",
+    "payloadSha256": "e27f28ec3aff393eb85d6069cb5de0291d262de112401cef484499604caf3dd0"
+  },
+  "decision": "FAIL",
+  "gate": "G3_CONTENT_READING_EVIDENCE",
+  "releaseAuthorized": false,
+  "runtimeIntegrationAuthorized": false,
+  "reviewPolicy": {
+    "mode": "review-module",
+    "failClosed": true,
+    "passRequires": "Each row must bind to the canonical question, key, part, literal excerpt and current hashes. The rationale must select evidence that actually performs the claimed semantic work, not merely quote another sentence from the correct paragraph.",
+    "notGivenRule": "NOT GIVEN requires the missing proposition to be named and the complete canonical passage checked for both the proposition and its contrary.",
+    "falseNoRule": "FALSE/NO requires a cited contradiction or an explicit explanation of the incompatible relationship; a sentence elsewhere in the same paragraph is not enough if the rationale selects a different sentence.",
+    "completionRule": "An accepted completion must occur in the bound source excerpt when the rationale claims that excerpt contains the answer.",
+    "approvalMeaning": "PASS is limited to the Reading evidence gate and exact hashes. It is not release, runtime integration or human QA."
+  },
+  "sourceManifest": {
+    "path": "staging/ielts-guided-evidence-21-40/manifest.json",
+    "sha256": "075928b9e5216e8e640a66bbfe2c4530f6e3b2c5b3626ceb98220d0e27c703b5",
+    "payloadSha256": "13a111d267f37a5cd1032b40457b47161c47a2786492ddcb58e0e471409e1556",
+    "generatorSha256": "c575119970ec4c3a560696235327a1fc628751444901cd3f31489d6b0211b80c"
+  },
+  "aggregate": {
+    "setsReviewed": 20,
+    "passSets": 12,
+    "failSets": 8,
+    "rowsReviewed": 800,
+    "semanticRowsPassed": 785,
+    "failedRows": 15,
+    "notGivenRowsReviewed": 40,
+    "notGivenRowsPassed": 40,
+    "notGivenRowsFailed": 0,
+    "falseNoRowsReviewed": 84,
+    "falseNoRowsPassed": 76,
+    "falseNoRowsFailed": 8,
+    "questionFamilyCounts": {
+      "fill": 237,
+      "trueYes": 79,
+      "falseNo": 84,
+      "notGiven": 40,
+      "otherMcq": 360
+    },
+    "passSetNumbers": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      38
+    ],
+    "failSetNumbers": [
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39,
+      40
+    ]
+  },
+  "sets": [
+    {
+      "set": 21,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "otherMcq": 20,
+        "fill": 6,
+        "trueYes": 5,
+        "falseNo": 5,
+        "notGiven": 4
+      },
+      "notGivenReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-21-guided-evidence-staging.json",
+          "sha256": "abd29ac2301db1c74a0ba60679b55938fc05b4750aa94df21d66f2ec22b83197",
+          "payloadSha256": "88a2c051698fd3e636ece9923972844c04aaba75b79ed0eb141e2bdf64b86281"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-21.ts",
+          "sha256": "e9ced020f75eb4bb940ef75c109e654817539327ad225ac35ac70b7e6d3db397"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-21/reading/set21-reading-content-v2.1.3.json",
+          "sha256": "a6f9a6ecb07b1a9bcdf7962b96bcac9a93b1da5e069486d47add3f7c44fa9b58"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "c1713721b0ae350b8c75481ab484adb4f906f088280bf2a84be3a6ed31ab793a",
+        "canonicalQuestionProjectionSha256": "41a0b4e8cf60a9ea1bf5cb3ebbb7cec8cf5cc0d9eb2fe5758a1655ad881b2f6e",
+        "reviewedRowsCanonicalSha256": "05a5fa4b82fa801888015bb146a4aa83d6f6609c51377961a4b5a2e6beb6bd1a"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": []
+    },
+    {
+      "set": 22,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "otherMcq": 14,
+        "fill": 13,
+        "trueYes": 5,
+        "falseNo": 4,
+        "notGiven": 4
+      },
+      "notGivenReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-22-guided-evidence-staging.json",
+          "sha256": "88db924ae7c7b51df1f2e4e59a935540e76aef0c43900fc8271c5faa006fae3b",
+          "payloadSha256": "6957e722aa9c1e8986c039699d8f4ceca2f9f7dac59fbc28bb351e5a49ab7a0c"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-22.ts",
+          "sha256": "e6617c19287f3559449af2073f67a355558894d05cf2d7557010239b958b8eb9"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/reading/set22-reading-content-v1.0.1.json",
+          "sha256": "77597babe6483109d424f0e19f81bda60ed4b698741bd6f5f89cae3d370094b6"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "4eb47761270939120a71909ef31890bf6f758cdcb06c052dfdedc63b435f8d13",
+        "canonicalQuestionProjectionSha256": "cdfb973197499a9dd093642aec9e05635e2ce6a56fbc63e1be3c8f25e5bb3e51",
+        "reviewedRowsCanonicalSha256": "983b272e567f86a0b120c98605bde8fd16a58ed70ac3c673a69f6744bb3cf698"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": []
+    },
+    {
+      "set": 23,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "fill": 12,
+        "otherMcq": 21,
+        "falseNo": 1,
+        "trueYes": 4,
+        "notGiven": 2
+      },
+      "notGivenReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-23-guided-evidence-staging.json",
+          "sha256": "002e3796e271ef6e5e701f1520af06a26a1cbc8e0dc4b27fa4aa5ce6b456b937",
+          "payloadSha256": "6ef023ac481d1dc11928563eb90bdad03a80948a35c253cc388c3b6423ff0972"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-23.ts",
+          "sha256": "aee603e7a3e489bc474af88b4c4cb3b967aa9799c73bdf735f09f94345b17bf1"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-23/reading/set23-reading-content-v1.0.4.json",
+          "sha256": "5e6fb3e5629e53d48ed713f08ac84519515cd9facb66772725a6122d39827034"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "293106ef4ad5bc6cefd6f28ecf68e056d3658fdb1c038967ab32bfb209b6d138",
+        "canonicalQuestionProjectionSha256": "67bc0019a1a80a1e5567cdc58f9c4177886b765cfcc381ec842f43562c6d47de",
+        "reviewedRowsCanonicalSha256": "cbf3af342593f01c58532e04112aaea18384466ee97ad4754f8f060ac99706b0"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": []
+    },
+    {
+      "set": 24,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "fill": 20,
+        "otherMcq": 13,
+        "falseNo": 4,
+        "trueYes": 2,
+        "notGiven": 1
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-24-guided-evidence-staging.json",
+          "sha256": "592bdeda2abec89807e404139cf6e737a737eb30d1390996b792eb4dbb632c0b",
+          "payloadSha256": "49a58dd62cdc49fa9a140d3cb75d34618363a2e5e112f8ef4abb3184a43dea17"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-24.ts",
+          "sha256": "f5a0ce8c1cf2292a083dcd026902175f477a0b03ad5a284c1f00f0d4629fabe8"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/reading/set24-reading-content-v1.0.2.json",
+          "sha256": "d701ff78de1311b4fe00bb3d511450de621331ee4d6000913066be3aa86caefd"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "1515077c5d8ff89b7ae025ab2ed85031971b580967659dcf6b826de7b302965a",
+        "canonicalQuestionProjectionSha256": "673558a281ff8121c3071f89c0eac187e6f3d12efb5c052f4dad1e8c4dcbeed1",
+        "reviewedRowsCanonicalSha256": "afc29556c2bc140276d5ce46a36f05a5386a13e7c665a129992479b25891d60a"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 25,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "otherMcq": 20,
+        "fill": 6,
+        "falseNo": 5,
+        "trueYes": 5,
+        "notGiven": 4
+      },
+      "notGivenReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-25-guided-evidence-staging.json",
+          "sha256": "10f31619cda89a3df26088e43158d8f68e59342c860fa660e2a81c7a891cbfcd",
+          "payloadSha256": "be4abc470194b661d945f696ae03bcd4627aa84254ecf8727643d34b0dbaf034"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-25.ts",
+          "sha256": "9e42f5720dc693b981703bd81c380e6f4acb96e319f5a64dfe00cc71ada5d889"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-25/reading/set25-reading-content-v1.0.3.json",
+          "sha256": "bb70edda101a0cb6cbc5c6a97b8f140a1c67980092186fc54713924b26211e5b"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "bdfa96075c3204540b131ac26736419245b3b194adc6950bc3dbaa87d10ba730",
+        "canonicalQuestionProjectionSha256": "be9d2674a26b2da28e4ca0dd7be0d40bd33c4f6477b3dabe7d75c676effecd28",
+        "reviewedRowsCanonicalSha256": "d8a02157f3973d041854d3f28266e95c3762ce4640c49f69ec2aaebec19bc4db"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 26,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "fill": 13,
+        "otherMcq": 20,
+        "trueYes": 3,
+        "falseNo": 3,
+        "notGiven": 1
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-26-guided-evidence-staging.json",
+          "sha256": "93f5279ca3078d54e60ead3e4431ff962f0b47ef3e176628d2232e632af59e5e",
+          "payloadSha256": "5e7a2add6fcfaa0b051682dbfd6214fafc9c1dfe988c8203dd42862fae7a9e4b"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-26.ts",
+          "sha256": "f918f76bddb5f4c52b5a2f6a49b03049b65cd97675640a532494c9cf3d97a7e4"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/reading/set26-reading-content-v1.0.4.json",
+          "sha256": "619773e3cc2f88a1af8a3b3ff3308f72ad75d80de29c0b39cc1b7cefc30abb3b"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "6841aee0ee18a821d69daf6e24c1699b68be3f175a083f35ed047e7544d80d7c",
+        "canonicalQuestionProjectionSha256": "51d81735bdcbec5487e7996b36751ab66d40289c411da3c8da9737d4497ff051",
+        "reviewedRowsCanonicalSha256": "2f1504e1184c1b24414b7c829e84da86c4db2ab3443adad59cb8f125bdfa1d69"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 27,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "otherMcq": 20,
+        "fill": 7,
+        "falseNo": 5,
+        "trueYes": 6,
+        "notGiven": 2
+      },
+      "notGivenReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 14,
+          "count": 14
+        },
+        "6": {
+          "firstQuestion": 15,
+          "lastQuestion": 26,
+          "count": 12
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-27-guided-evidence-staging.json",
+          "sha256": "93f929effcf54d4e828556b9ecff88f02f2b6c3daa657434d123b28b85ac4030",
+          "payloadSha256": "39e6015d2428fe269aa8eb58feb57be998a7d0d238aec1837bc642f17bdc8189"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-27.ts",
+          "sha256": "1332d47309648f3a417b30c54b9d08c6c901341dfda06cb297739a9104963b80"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/reading/set27-reading-content-v1.0.6.json",
+          "sha256": "63b340c5a945b3b54ec2b1bd9ad2c5da036e0adf06c3788b35865aee164099e1"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "9ab4098e8da824aeefe2c188f8ce14d0f13cc864d04109f410f174dcb6b89fed",
+        "canonicalQuestionProjectionSha256": "3b39bf947fe5d9c00783942c394259ad2210ea104d26b7c5d4f4fb97b44074c9",
+        "reviewedRowsCanonicalSha256": "6c55884e833f4d11adc1470530ec01bf3d3b9d89c1d3a14a9d766cfef9fd8737"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 28,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "fill": 13,
+        "trueYes": 6,
+        "falseNo": 6,
+        "notGiven": 2,
+        "otherMcq": 13
+      },
+      "notGivenReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 6,
+        "passed": 6,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-28-guided-evidence-staging.json",
+          "sha256": "0ccb7b2be10e8fba46fe70a9ea068c0c3e8c51320f31746965ba9ec1719dba99",
+          "payloadSha256": "2c518b383378d8c57b7f027fb886d82aff70b973e37b80fd04379a95f083c43d"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-28.ts",
+          "sha256": "50084193ee798d5ea01b23d4d31cfe2baa2c3bd42998802874c8dc4def2ccb52"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-28/reading/set28-reading-content-v1.0.12.json",
+          "sha256": "5cdf1e90d29d66ef5e71fcf1068e0e510b163dc588705c1670659a70351f553e"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "df411e4e438f49b2692ba57d7506953a92e417f6be8e68d4ceebba3ea53897e9",
+        "canonicalQuestionProjectionSha256": "a36bfbc898f9cac3fe1fd1eaccb4e1b75761760c708449d0420fa95748050311",
+        "reviewedRowsCanonicalSha256": "fa529be2395622c20ad89b26eb0d8851949e5df93fad364016c9f158f384d75f"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 29,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "otherMcq": 22,
+        "fill": 6,
+        "trueYes": 5,
+        "falseNo": 4,
+        "notGiven": 3
+      },
+      "notGivenReview": {
+        "rows": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-29-guided-evidence-staging.json",
+          "sha256": "1e665f9fa7dcae48af0d251994212e9ca5a3efbb4d42279abffc8ae4eb081ade",
+          "payloadSha256": "84b37080ec871c33a8d0a2df43041a52310794b19c0f10c0de610fd33fc1bde1"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-29.ts",
+          "sha256": "21365a40cd230d888b770c4f47e8b26849c120757f1baf0210f8f3d9d80ec0b1"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-29/reading/set29-reading-content-v1.0.2.json",
+          "sha256": "9d2bd7b3b91358ad39d954c7492bcee3d5538c5edf3a2f302093301c5436f57f"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "0311342b604c56e11956bc228af030a10f785ab2445defae386dbd4b30d75a64",
+        "canonicalQuestionProjectionSha256": "ce8ddeee9a77f4e630c0b9caddc762aabee65f12b433f5d1b7b01ab6b3be5f29",
+        "reviewedRowsCanonicalSha256": "545a0fda4ad6baa0b36ec28400ab1082ea161a25f38e88ea14020472b357b4e4"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 30,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "fill": 13,
+        "otherMcq": 15,
+        "trueYes": 7,
+        "notGiven": 3,
+        "falseNo": 2
+      },
+      "notGivenReview": {
+        "rows": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-30-guided-evidence-staging.json",
+          "sha256": "fc2b029d794fc809c401c640bb4b0fc85e8036a90aa8060a0bdcc799743b3db5",
+          "payloadSha256": "fb4d027325cd3bb29fdaf849e39d5f5345fe64fb89ab91685b02007e19d81c48"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-30.ts",
+          "sha256": "20b9e446aac6f815ab69f5e2b6c05df43e2e0a7d241fbdbc41019ce1a16bde27"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/reading/set30-reading-content-v1.0.4.json",
+          "sha256": "99e297db46a56792b7e1652166bc7ba2ad02d160490f6dd7891d0602dcd56c93"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "1b62f86591f4deb885a9aa58807cbfa65945fa2d5685637dd30557f4d65079da",
+        "canonicalQuestionProjectionSha256": "3332cfc24b0f71ad761e2d2906e73bac68b86d2a2acf0fb476d848d9d6f1f31f",
+        "reviewedRowsCanonicalSha256": "90a196c9d67f38169c8a407d025d93721b6204aff4c0a8ee2fcc621ba2450029"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 31,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 38,
+      "failedRows": 2,
+      "failedQuestions": [
+        3,
+        28
+      ],
+      "questionFamilyCounts": {
+        "fill": 12,
+        "otherMcq": 23,
+        "trueYes": 2,
+        "falseNo": 2,
+        "notGiven": 1
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 2,
+        "passed": 1,
+        "failed": 1
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 14,
+          "count": 14
+        },
+        "6": {
+          "firstQuestion": 15,
+          "lastQuestion": 26,
+          "count": 12
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-31-guided-evidence-staging.json",
+          "sha256": "e904476a5d61d9f4d4456d216ad1680c7fba54414d049cb13cde9b74384c65d7",
+          "payloadSha256": "0e1dfbafe537e3cb6dca528a42bc798fb753028e70b49e88ff3d2b8735834f77"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-31.ts",
+          "sha256": "e740448e55a2d80de2955f86e5c87407ceb79c32f90ae0b94fb5a146e4fd2e2d"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-31/reading/set31-reading-content-v1.0.2.json",
+          "sha256": "4aa94a23d2726e4a235c98ceeacd50819276b9235f669bf77edeb8f6ba2b07ea"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "9b81f95e3e478d5f207d83c031ffb4b3d4b47b425d98052af2d9446f177613cf",
+        "canonicalQuestionProjectionSha256": "d98df8c33590e22861a8e4d6bd2fee3cb32675b86b8748def6ebd80fa5290e25",
+        "reviewedRowsCanonicalSha256": "43f681c612178c17b2689abb5b40542cb1b6f0f7aaeced86464198970722dc64"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": [
+        {
+          "question": 3,
+          "code": "READING-FILL-ANSWER-NOT-IN-BOUND-EXCERPT",
+          "severity": "HIGH",
+          "detail": "The accepted response «evaporation» does not occur in the staged sourceExcerpt or in the sentence quoted by the rationale, although the rationale says that sentence contains the answer. The term occurs later in the canonical passage, so this row needs the correct bound excerpt."
+        },
+        {
+          "question": 28,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes the sentence about exposing structural weaknesses, not the earlier sentence stating that clustered members do not guarantee accuracy. The selected sentence does not itself adjudicate the proposition."
+        }
+      ]
+    },
+    {
+      "set": 32,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "fill": 12,
+        "otherMcq": 16,
+        "trueYes": 5,
+        "falseNo": 5,
+        "notGiven": 2
+      },
+      "notGivenReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-32-guided-evidence-staging.json",
+          "sha256": "053777c24560a47272fcf5182598728e5118baea097e6c1dfec9e415f34085b7",
+          "payloadSha256": "f5452222e62f31600271351f3866b2f205b58f87cca0f3e51ee48f95cb9d423f"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-32.ts",
+          "sha256": "9ddb43b12f352c6cafbe34894a1f01985eb3b9775fbce97aace5965022ba33e4"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/reading/set32-reading-content-v1.0.2.json",
+          "sha256": "ca0395448babaf4a6c63d34c50c82ee455dd5bddbeb01df1e753a68e3dfa3989"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "33d7e7178c52e2fea8312c7143c798b995a0c6d371e640475e46cf371fa15446",
+        "canonicalQuestionProjectionSha256": "0a4116a54e88a0ec5de708bb6d4a4676c780d90920e3bf9094dceb192f437009",
+        "reviewedRowsCanonicalSha256": "e80b359635cfebd02dd9c83649124958e510c511a421aef3c5693c50353c0e6a"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": []
+    },
+    {
+      "set": 33,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 39,
+      "failedRows": 1,
+      "failedQuestions": [
+        10
+      ],
+      "questionFamilyCounts": {
+        "fill": 12,
+        "otherMcq": 16,
+        "falseNo": 4,
+        "trueYes": 5,
+        "notGiven": 3
+      },
+      "notGivenReview": {
+        "rows": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-33-guided-evidence-staging.json",
+          "sha256": "ffc98d1f9c859c1d5b425a6e9022ceefdf106c5c6f4bdc16eade427b1291f106",
+          "payloadSha256": "a464581e6c48d6eedb78c2b18b7448d28800acf2fe454a9e6c43b1c40f61791b"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-33.ts",
+          "sha256": "5d78774529168f12ead7852ff2579aa84fa9145d9c6905e5887e0cffc99cbf56"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/reading/set33-reading-content-v1.0.2.json",
+          "sha256": "5022e85d1d9a916f07c032c4759dcd38e5f7d4fe19ccd0eac78c0d190f4a4bfe"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "338691e48fbadda2121b5140c13db38f84d79d1ec18174d7c454f96fd5c27622",
+        "canonicalQuestionProjectionSha256": "c523151410b00e89f8046a27dec699812e4b4d2a876a47330162018365483c0a",
+        "reviewedRowsCanonicalSha256": "cfd426b31c460e592f767f712d385de6e8a6b5e86d840f384280445e6ebfea1f"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 10,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes only that a switch junction was demanding; the procedure for unclear destination information is the later instruction to divert the carrier for manual checking."
+        }
+      ]
+    },
+    {
+      "set": 34,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 38,
+      "failedRows": 2,
+      "failedQuestions": [
+        7,
+        27
+      ],
+      "questionFamilyCounts": {
+        "otherMcq": 21,
+        "fill": 12,
+        "falseNo": 3,
+        "trueYes": 3,
+        "notGiven": 1
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 3,
+        "passed": 2,
+        "failed": 1
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-34-guided-evidence-staging.json",
+          "sha256": "bc697ca2fe045939bbd0afb0a3672a558b2870f120a9fc40e601e105a2a27136",
+          "payloadSha256": "ebab59c4ae82e2b7d5b0de3a0f351c0f6c6237e7a1edd3182dee5fb77e3c7ecc"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-34.ts",
+          "sha256": "aa45cb302e18367feaf550a80e02bda263eff7d0b6021c4d01dadf61a3762406"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/reading/set34-reading-content-v1.0.2.json",
+          "sha256": "cb9a144d4a8b07e40ab41a6b240627d54284018eff40977f858e92b660fdc32b"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "2d51243109f33e41ac0b0c417a5e1d8a518b8e1fcc57417a36d439842dd1f2b7",
+        "canonicalQuestionProjectionSha256": "a63ec344e4dfaff34ea049d8ae4a318e4e9ed35e9e3dd5427891f45059456be3",
+        "reviewedRowsCanonicalSha256": "49f6765ab815a1c4e7e1d64d27eccefe77318d78ced4651dd55623f1afed2ed0"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 7,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes the arrival of later technologies, not the sentences explaining the old mechanism’s continuing instructional value."
+        },
+        {
+          "question": 27,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes a shortage among qualified applicants, but does not quote or explain the stage at which the lottery is used relative to screening."
+        }
+      ]
+    },
+    {
+      "set": 35,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 38,
+      "failedRows": 2,
+      "failedQuestions": [
+        15,
+        29
+      ],
+      "questionFamilyCounts": {
+        "fill": 18,
+        "otherMcq": 17,
+        "falseNo": 2,
+        "trueYes": 2,
+        "notGiven": 1
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 2,
+        "passed": 1,
+        "failed": 1
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-35-guided-evidence-staging.json",
+          "sha256": "1492e18029254a7b505f3d79619abcbaf1d938e383f8f500dcf99f659ea86933",
+          "payloadSha256": "9348a6b2b1d4b2e9120e3b4039b77da0c344d90850f60b38aa692afd00e26581"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-35.ts",
+          "sha256": "f98a9364e5cc8da0ed39515510754d70c6372f17ef587b97c537fae3f968b3fa"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/reading/set35-reading-content-v1.0.3.json",
+          "sha256": "7d7e5230bcdabe584494a3a40578e3fcd16eb9b4f3f1f10760f2003ec1ebbbe3"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "fa5a9ba27632b4413e7394fb53654bd253ba76dcb1cfe37ac6beed8aa265732d",
+        "canonicalQuestionProjectionSha256": "38dfbe2ea64ce1df0feb1467b80bcfd51bcbcac402a29a1acba3c3740efa8e3c",
+        "reviewedRowsCanonicalSha256": "9b7c38bd86be0cace3ef003408ec76f127282d5c8ecdff8304bf2b1cfe0eb338"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 15,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes the ordering of samples but omits the later evidence about fading and impermanence required by the heading."
+        },
+        {
+          "question": 29,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes only that calculations are not neutral; the direct support is the preceding sentence that different objectives produce different queues."
+        }
+      ]
+    },
+    {
+      "set": 36,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 38,
+      "failedRows": 2,
+      "failedQuestions": [
+        38,
+        40
+      ],
+      "questionFamilyCounts": {
+        "fill": 13,
+        "otherMcq": 15,
+        "trueYes": 4,
+        "falseNo": 6,
+        "notGiven": 2
+      },
+      "notGivenReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 6,
+        "passed": 4,
+        "failed": 2
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-36-guided-evidence-staging.json",
+          "sha256": "7a65ec7392a091b5038ef5dc76db14e3d732c71beb862e47dd4df39303864ad9",
+          "payloadSha256": "699e4f528e4497170e122708689e0f4db15acf4d650731187a4355211da3d784"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-36.ts",
+          "sha256": "3fc32204f91ec67591fde557d808ad1af861a56c1829796bd9adbb71c0277356"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/reading/set36-reading-content-v1.0.3.json",
+          "sha256": "f78374ac7f7325447530837c55743f0ceee09d59c627593064c9c2b43786a872"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "0eba73bff6393fcec7698bc50c069722855afb507915f6c7fddeba6b804ad75e",
+        "canonicalQuestionProjectionSha256": "fede4ef0f246d6a9a8ed3f2b2485d12cab84550b3939c2ce6731d9f47ecd29b5",
+        "reviewedRowsCanonicalSha256": "ca8d0028726bdee34a4dd518b9716fce9903c3a66753aeb8a0bd556e823eff5c"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 38,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes a bias-control procedure but omits the explicit sentence saying the aim is not to suppress communication."
+        },
+        {
+          "question": 40,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes the general value of a crowd, not the explicit later sentence that platforms cannot guarantee recovery."
+        }
+      ]
+    },
+    {
+      "set": 37,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 39,
+      "failedRows": 1,
+      "failedQuestions": [
+        19
+      ],
+      "questionFamilyCounts": {
+        "otherMcq": 20,
+        "fill": 13,
+        "falseNo": 5,
+        "trueYes": 2
+      },
+      "notGivenReview": {
+        "rows": 0,
+        "passed": 0,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 5,
+        "passed": 4,
+        "failed": 1
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-37-guided-evidence-staging.json",
+          "sha256": "bf3604dded8996572279b1db810871144f87bdf3c1e3e471b93e9ef61044d593",
+          "payloadSha256": "1fc39a445d03a10c20b3935a74d5ab5044089a8b77b8f2eb35f83d5f0ac96134"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-37.ts",
+          "sha256": "8135a715e023fda9a7300b8c7b5fb0a96bbb86782710a3e9040c58712bd5da39"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/reading/set37-reading-content-v1.0.5.json",
+          "sha256": "6a38de3a9dab334dc5c1c58244540d2f2628f5cc849741af7f8983d9b68b3c27"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "56149b7adca25a1cf5e1f4e3edeb63dd3ab6edbfca1d69e464a360b5e0b675d7",
+        "canonicalQuestionProjectionSha256": "5f3b738076b02ffe8b05eb73ddcb1411b485ce795d09b7bcedcc2062a1f01d1e",
+        "reviewedRowsCanonicalSha256": "af2758adb0e08810caedc6cc084bb1dfe0a10f3a8b32a135d9ca8825e3c21224"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 19,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes non-contact recording but omits the next sentence stating that the beam samples selected locations rather than the entire web."
+        }
+      ]
+    },
+    {
+      "set": 38,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 40,
+      "failedRows": 0,
+      "failedQuestions": [],
+      "questionFamilyCounts": {
+        "otherMcq": 16,
+        "fill": 15,
+        "falseNo": 6,
+        "notGiven": 1,
+        "trueYes": 2
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 6,
+        "passed": 6,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": true,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-38-guided-evidence-staging.json",
+          "sha256": "4dfd3fcffa932b870814a18e2762a2fc5166f5cee8b6b897d09a30e3759e70d4",
+          "payloadSha256": "6d19cd781b3eaaa158379ecae0a082ec6360e2c4dfba834279befb88e3d2e7eb"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-38.ts",
+          "sha256": "644577368f18ed66c1fc7fa698ad6a72c159a35ffb2d5438f4b3fc3badc5b6fb"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/reading/set38-reading-content-v1.0.4.json",
+          "sha256": "8b6b6b37c64d9a298087286198ce7075bfbbda0c3a01cdb045e77efd0c05e753"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "3598bf5fbd9e6608f2aac4f9cc150fc1270d7264222162c9e7e099f54df6be71",
+        "canonicalQuestionProjectionSha256": "68ed6d9423fcd0b795196d39a31de593f568ac7998cf1db48873bd5d2c2925c7",
+        "reviewedRowsCanonicalSha256": "c98c860d31a0d41a3752cb0de71bae9e5037e0c83d04ff89c0f544b8e82a5329"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 39,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 36,
+      "failedRows": 4,
+      "failedQuestions": [
+        7,
+        20,
+        26,
+        32
+      ],
+      "questionFamilyCounts": {
+        "otherMcq": 18,
+        "fill": 11,
+        "falseNo": 8,
+        "trueYes": 2,
+        "notGiven": 1
+      },
+      "notGivenReview": {
+        "rows": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 8,
+        "passed": 6,
+        "failed": 2
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-39-guided-evidence-staging.json",
+          "sha256": "48d18dbc9546b7221ccdd80e32ecbc56f2e985e8607c483802c508a19bfadb97",
+          "payloadSha256": "373476861ee7c37678c4563658eec3833e0046ae319f9b323ce1304f6e676281"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-39.ts",
+          "sha256": "d840a88c9ba2804f5d60a90c632fef74a3887947a8fdb44de62fbff90ae0c264"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/reading/set39-reading-content-v1.0.3.json",
+          "sha256": "6bfbf65f89b11133eb8bbd5406fc8307d86e9a3f704ed7985782c087d14bc0ce"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "2a722f673f3d98fd5263115d70e7d79a64a7336f0930dc6dbed6afe8c3f8ec05",
+        "canonicalQuestionProjectionSha256": "ef0940f59d58d42f4e5da694f55953fe98fac35b428717ed2e9f22d85ef597bc",
+        "reviewedRowsCanonicalSha256": "78c35f16e27ffe3b660aee380f6f1f743f77c30e1fe6bde0a8f5d922fb1053ad"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 7,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes schedule trade-offs but does not explain the heading’s claim that the machine is one component inside a political service."
+        },
+        {
+          "question": 20,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes ecological value but does not establish why scientific measurement alone cannot determine every cultural value."
+        },
+        {
+          "question": 26,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes different microclimates, not the explicit warning that spatial pattern is not a clock."
+        },
+        {
+          "question": 32,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes how members earn and spend credits, not the evidence about differing training requirements."
+        }
+      ]
+    },
+    {
+      "set": 40,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "semanticRowsPassed": 39,
+      "failedRows": 1,
+      "failedQuestions": [
+        18
+      ],
+      "questionFamilyCounts": {
+        "otherMcq": 20,
+        "fill": 10,
+        "falseNo": 4,
+        "trueYes": 4,
+        "notGiven": 2
+      },
+      "notGivenReview": {
+        "rows": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "falseNoReview": {
+        "rows": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyTypeQuestionAndCanonicalPartMatch": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "sourceLedgerRationaleMatchesHashBoundLedger": true,
+        "guidedRationaleQuotesBoundExcerptAndNamesQuestionAndKey": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "semanticAndRationaleReviewPassesAllRows": false,
+        "notGivenMissingPropositionAndContraryCheckPassAll": true,
+        "falseNoContradictionExplanationPassAll": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-40-guided-evidence-staging.json",
+          "sha256": "6abd25a25d33fa18857aebf3c0bc2dcbc809b88e893fef8900b7da8269669b16",
+          "payloadSha256": "12dfc303fa15e07e6799d1c7ae063381af9bcf819f376270bad05d4aae1cd4de"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-40.ts",
+          "sha256": "b1f20b6a0f1e2a10aada414a6520ac809de129a748b730c5c08249a512f673f6"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/reading/set40-reading-content-v1.0.5.json",
+          "sha256": "b286a7c3d94957b5a82c0757ae0cec56b7a3267e715a2579f4e0001c62f075f3"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "a1233cfd53c59e630246ba3799c238818bc6a5a48cdf15ea81ada41344f44614",
+        "canonicalQuestionProjectionSha256": "509d021c2476bcc3a89d1848edc58ea54f032cc4f12759e694c28481bd1e81f3",
+        "reviewedRowsCanonicalSha256": "6cb90b70dd9940205105e6981efffa8184fbb2726570c59e558f860ecf604a45"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "guidedRationaleSha256",
+        "sourceLedgerRationaleSha256",
+        "ledgerRowSha256",
+        "semanticDecision",
+        "findingCode?"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "question": 18,
+          "code": "READING-RATIONALE-SELECTED-SENTENCE-MISALIGNED",
+          "severity": "HIGH",
+          "detail": "The rationale quotes only that fresh crystals carry water; it omits the washing, drying, grading and laboratory analysis that justify the full heading."
+        }
+      ]
+    }
+  ],
+  "requiredRemediation": "For each listed row, bind the rationale to the exact sentence that performs the semantic work. Set 31 Q3 also needs the excerpt containing «evaporation». Regenerate staging and obtain a new independent hash-bound review.",
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "36ef8894ebfbd2d3d5185fd0a89268e76cdbd4e583be6ecb4ce6ab3f4a7407b5"
+  }
+}

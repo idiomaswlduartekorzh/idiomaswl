@@ -537,9 +537,9 @@ const mock: MockExam = {
           "type": "fill",
           "id": "l-q39",
           "part": 4,
-          "text": "What must remain functional?",
+          "text": "How may damaged tissue be replaced?",
           "answers": [
-            "water transport"
+            "new growth"
           ],
           "maxWords": 2
         },
@@ -547,9 +547,9 @@ const mock: MockExam = {
           "type": "fill",
           "id": "l-q40",
           "part": 4,
-          "text": "How may damaged tissue be replaced?",
+          "text": "What must remain functional?",
           "answers": [
-            "new growth"
+            "water transport"
           ],
           "maxWords": 2
         }

@@ -1,0 +1,1759 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 21,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-21.ts",
+      "sha256": "e9ced020f75eb4bb940ef75c109e654817539327ad225ac35ac70b7e6d3db397"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Paragraph A",
+          "correctOptionIndex": 3,
+          "correctOptionText": "How local materials guide the building plan"
+        },
+        "sourceExcerpt": "A dry-stone wall may look informal, yet its construction follows a disciplined sequence rather than the chance piling of rock. Its recognised profile and finish respond to the size, shape and composition of local stone, so a form familiar in one district need not be copied elsewhere. Before building starts, usable material is sorted into broad working groups. Building stones will form the two visible faces, through stones are reserved to connect those faces, and coping stones are kept for the top.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph A» y la clave es «How local materials guide the building plan». La evidencia dice «Its recognised profile and finish respond to the size, shape and composition of local stone, so a form familiar in one district need not be copied elsewhere.». La coincidencia semántica se apoya en «local»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading iv; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "53b4badbb734486409245ee0d0cc5616b16c5e05ae51c37126ffaccc29e49cda",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Paragraph B",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Preparing a secure beginning below the wall"
+        },
+        "sourceExcerpt": "The first constructed layer is the footing, which gives remaining courses a firm base. Work begins by clearing weak material until firm ground or firm stones are reached and, where the guidance calls for it, preparing a shallow trench. The largest suitable stones are normally chosen for this beginning and are arranged so that they sit securely. Irregular spaces beneath them are packed with stone rather than left to make the footing rock. Fine loose fill is not a substitute for careful placement, and the bounded guidance also excludes concrete and mortar from this dry construction.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph B» y la clave es «Preparing a secure beginning below the wall». La evidencia dice «Work begins by clearing weak material until firm ground or firm stones are reached and, where the guidance calls for it, preparing a shallow trench.». La coincidencia semántica se apoya en «preparing»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading i; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "859cc5da11638ca1cb6ec80901f69ab4dda007ae9d0357c67305c2064c58b16d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Maintaining an even taper from base to top"
+        },
+        "sourceExcerpt": "From the footing upward, the two faces do not rise vertically at a constant width. They follow a batter: an even inward taper that makes the wall wider at its base and narrower at its top. Simple guide lines or frames can help a builder judge this changing profile while the courses rise. The important quality is consistency along the work, not a sudden change at one convenient point. A local profile may be slight, but it should remain even on both faces. Visible bulges or depressions are warnings that the intended line has been lost and that the wall may be weakened.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «Maintaining an even taper from base to top». La evidencia dice «They follow a batter: an even inward taper that makes the wall wider at its base and narrower at its top.». La coincidencia semántica se apoya en «even», «taper», «base», «top»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading vii; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "14ec3f74a6ede4cd5b678052a8ae465833a9741673918e24429cbbaeac024826",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Connecting both faces through deliberate stone placement"
+        },
+        "sourceExcerpt": "The wall is built as two faces with a centre between them, but the faces must not behave as unrelated skins. Face stones are graded as the work rises, and their longer dimension is directed inward rather than laid along the visible surface. Vertical joints are covered by stones in the course above, avoiding continuous gaps through successive layers. Neighbouring pieces are brought into useful contact and the face is checked for openings that reveal daylight. At selected stages, through stones extend across the wall and tie its two sides together. The result depends on overlap, inward length and face connections working together throughout the build.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «Connecting both faces through deliberate stone placement». La evidencia dice «The wall is built as two faces with a centre between them, but the faces must not behave as unrelated skins.». La coincidencia semántica se apoya en «faces»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading iii; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "e2470ba52f19ae49cad71095068457e241804d97ed75deb0b4acd79788722bb9",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Paragraph E",
+          "correctOptionIndex": 8,
+          "correctOptionText": "Filling the centre as each course rises"
+        },
+        "sourceExcerpt": "As each face course is formed, the middle is filled with hearting, the smaller irregular stone used between the faces. Hearting is placed and packed during the same course, rather than tipped into a deep hollow after the faces have climbed far ahead. Pieces are selected to occupy awkward spaces, while very small loose material is not treated as a complete solution. The centre should become compact without being mistaken for a sealed block. Packing supports the orderly relationship between the two faces and prepares an even level for the next course. A qualitative check is direct: the finished work and its hearting should feel solid and should not move when tested by impact.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph E» y la clave es «Filling the centre as each course rises». La evidencia dice «As each face course is formed, the middle is filled with hearting, the smaller irregular stone used between the faces.». La coincidencia semántica se apoya en «each», «course»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading ix; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "cecc134181d92437d43e1c72908ea09b7ebcf0490ef1321eb4dbca7a849538b1",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Completing the wall top and exposed ends"
+        },
+        "sourceExcerpt": "The final full course does not by itself complete the wall. Coping stones are fitted along the top to make an even upper line and are packed tightly enough to remain steady. Their weight is directed onto the top face stones rather than onto an uncertain empty space. At a wall head or exposed end, runners or tying pieces and carefully placed end coping provide a stable finish. The builder checks the height visually along the work and adjusts individual stones before declaring the line complete. The close of the sequence therefore repeats the same habits seen below: selection, contact, packing and checking.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «Completing the wall top and exposed ends». La evidencia dice «At a wall head or exposed end, runners or tying pieces and carefully placed end coping provide a stable finish.». La coincidencia semántica se apoya en «wall», «exposed»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading v; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "a03feca4b1be0fa31c768bb3565c75a00b972de4ae64fc2df3227f3b861509fb",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Paragraph G",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Taking failed work back before rebuilding begins"
+        },
+        "sourceExcerpt": "Repair begins with a decision about where reliable construction resumes, not with covering the most obvious surface gap. Damaged work is dismantled back to sound construction so that the new section can join material that is still firm. Recovered stones are sorted again, preserving suitable building, through and coping pieces for their proper positions. Rebuilding then follows the original order: establish the base, restore an even batter, connect the faces, pack the hearting and finish the top. An even top line and consistent face profile allow the rebuilt section to meet the retained wall without an abrupt change. What appears to be removal is therefore constructive preparation: sound work supplies the starting point for sound rebuilding.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph G» y la clave es «Taking failed work back before rebuilding begins». La evidencia dice «Damaged work is dismantled back to sound construction so that the new section can join material that is still firm.». La coincidencia semántica se apoya en «work», «back»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph as a whole is organised around the gist expressed by heading ii; alternatives either belong to another paragraph or introduce an absent subject.",
+        "ledgerRowSha256": "f3a061ede1bd0800188826dc1c1f894e509f0f4a59c671259371f1825d97fe86",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "Before construction, usable material is sorted into broad ______.",
+          "acceptedResponses": [
+            "working groups",
+            "groups"
+          ]
+        },
+        "sourceExcerpt": "Before building starts, usable material is sorted into broad working groups.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Before construction, usable material is sorted into broad ______.» y acepta «working groups» / «groups». La oración fuente dice «Before building starts, usable material is sorted into broad working groups.». Esa oración contiene la respuesta y la conecta con «before», «usable», «material», «sorted», «broad», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The primary answer “working groups” is the exact passage phrase; the shorter passage-derived response “groups” also yields the grammatical and fully entailed completion “sorted into broad groups”. Both stay within the two-word limit and neither repeats Question 11's keyed term.",
+        "ledgerRowSha256": "b1d60a372b118cacbf91104e8177a3dea0fc56e05392ae288ca8a2a6f539f403",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "The largest suitable stones may have irregular spaces beneath them packed with ______.",
+          "acceptedResponses": [
+            "stone"
+          ]
+        },
+        "sourceExcerpt": "Irregular spaces beneath them are packed with stone rather than left to make the footing rock.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The largest suitable stones may have irregular spaces beneath them packed with ______.» y acepta «stone». La oración fuente dice «Irregular spaces beneath them are packed with stone rather than left to make the footing rock.». Esa oración contiene la respuesta y la conecta con «irregular», «spaces», «beneath», «them», «packed», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "P1-B-S4 supplies the exact material “stone”. It is the sole passage-derived completion that is grammatical, answers the local packing detail and stays within the two-word limit.",
+        "ledgerRowSha256": "21edc1ec8c294301c3204c9d34fac915df1d05a51df4f85d5202ef2323677f40",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "The passage's technical construction name for the profile checked with guide lines or frames is ______.",
+          "acceptedResponses": [
+            "batter",
+            "a batter"
+          ]
+        },
+        "sourceExcerpt": "They follow a batter: an even inward taper that makes the wall wider at its base and narrower at its top. Simple guide lines or frames can help a builder judge this changing profile while the courses rise.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The passage's technical construction name for the profile checked with guide lines or frames is ______.» y acepta «batter» / «a batter». La oración fuente dice «They follow a batter: an even inward taper that makes the wall wider at its base and narrower at its top.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "P1-C-S2 names the construction profile “a batter”, and P1-C-S3 supplies the local guide-line/frame detail. Both “batter” and “a batter” complete the sentence grammatically and remain within the limit.",
+        "ledgerRowSha256": "23551f0a5335801b18a70d5969a4b1db34a434510be2a39595aaae67ff05edcc",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "At selected stages, pieces reserved under the two-word name ______ are brought into use.",
+          "acceptedResponses": [
+            "through stones"
+          ]
+        },
+        "sourceExcerpt": "At selected stages, through stones extend across the wall and tie its two sides together.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «At selected stages, pieces reserved under the two-word name ______ are brought into use.» y acepta «through stones». La oración fuente dice «At selected stages, through stones extend across the wall and tie its two sides together.». Esa oración contiene la respuesta y la conecta con «selected», «stages», «two», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "P1-D-S5 identifies the pieces used at selected stages as “through stones”. The explicit two-word naming frame keeps that exact construction term as the sole defensible scoring outcome.",
+        "ledgerRowSha256": "aaa50c853cdd4cd7825b92af7b226c67179f4cf172077ae9046bf1b55585c6e5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "Very small loose material is not treated as a complete ______.",
+          "acceptedResponses": [
+            "solution"
+          ]
+        },
+        "sourceExcerpt": "Pieces are selected to occupy awkward spaces, while very small loose material is not treated as a complete solution.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Very small loose material is not treated as a complete ______.» y acepta «solution». La oración fuente dice «Pieces are selected to occupy awkward spaces, while very small loose material is not treated as a complete solution.». Esa oración contiene la respuesta y la conecta con «very», «small», «loose», «material», «treated», «complete», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "P1-E-S3 contains the exact local qualification “not treated as a complete solution”. “Solution” is passage-derived, grammatical and unique within the word limit.",
+        "ledgerRowSha256": "3f0c49e39539f05a81887b2b52294bd94de1a4e6cd42d20d9ab5ecaa94c2f225",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "The repeated building habits include selection, contact, packing and ______.",
+          "acceptedResponses": [
+            "checking"
+          ]
+        },
+        "sourceExcerpt": "The close of the sequence therefore repeats the same habits seen below: selection, contact, packing and checking.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The repeated building habits include selection, contact, packing and ______.» y acepta «checking». La oración fuente dice «The close of the sequence therefore repeats the same habits seen below: selection, contact, packing and checking.». Esa oración contiene la respuesta y la conecta con «habits», «selection», «contact», «packing», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "P1-F-S6 ends the explicit list with “checking”. The response is passage-derived, grammatical, within the limit and does not expose the paragraph’s top-and-end heading proposition.",
+        "ledgerRowSha256": "8e4c22fb2bb7e733f6556e0f8711fdfe660726e1038bc70b9198745a53e1b155",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "A tracer age identifies when a substance entered water rather than necessarily dating the water itself.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "A tracer age refers to when a particular chemical substance entered the water; it is not automatically the age of the water itself.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A tracer age identifies when a substance entered water rather than necessarily dating the water itself.» y el pasaje dice «A tracer age refers to when a particular chemical substance entered the water; it is not automatically the age of the water itself.». La fuente conserva la misma relación mediante «tracer», «age», «substance», «entered», «water», «itself» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The statement restates the controlling sentence without widening its scope.",
+        "ledgerRowSha256": "8f2b3892d9c356f30d84bde2bf157379d7eca9d0c67868005ea23573ffc20b70",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "The meaning of a tracer age is independent of which tracer is selected.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "A When hydrogeologists assign a date using a dissolved marker, the result needs careful wording. A tracer age refers to when a particular chemical substance entered the water; it is not automatically the age of the water itself. That distinction matters because each tracer carries a record shaped by its own history and properties. The interpretation is conditional rather than a simple reading from a chemical dial. These applications do not turn a measured concentration into a direct clock for one indivisible body of water. Instead, the date is an inference whose meaning depends on the chosen tracer and the assumptions used to interpret it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «The meaning of a tracer age is independent of which tracer is selected.», mientras el pasaje dice «A tracer age refers to when a particular chemical substance entered the water; it is not automatically the age of the water itself.». Ambos tratan «tracer», «age», pero la proposición añade «meaning», «independent», «selected» donde la fuente especifica «refers», «particular», «chemical», «substance», «entered», «water». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The passage explicitly makes the meaning dependent on the chosen tracer, so the statement is contradicted.",
+        "ledgerRowSha256": "80d3d61131c4bca813cd45c18a0aa639a8130010d4fed7404d1af5b9eb568e99",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "The passage states that conditional wording for tracer ages was first adopted in the 1980s.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "The interpretation is conditional rather than a simple reading from a chemical dial.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage states that conditional wording for tracer ages was first adopted in the 1980s.». El pasaje sí ofrece el contexto «The interpretation is conditional rather than a simple reading from a chemical dial.», pero en el texto completo no especifica «adopted» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The passage establishes conditional interpretation but gives no date for when that wording or practice was first adopted; no other paragraph supplies one.",
+        "ledgerRowSha256": "e13dbe22dd99e37c62a26c02b8a756fc77bd3fdaf6a219e7eed4bfa226255c1c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Changing a fitted dispersion parameter can produce a younger estimated mean age.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Its sensitivity can be tested by changing parameters instead of accepting the first output as inevitable. For example, changing a fitted dispersion parameter can produce a younger mean age.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Changing a fitted dispersion parameter can produce a younger estimated mean age.» y el pasaje dice «For example, changing a fitted dispersion parameter can produce a younger mean age.». La fuente conserva la misma relación mediante «changing», «fitted», «dispersion», «parameter», «produce», «younger» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The statement directly restates the model-sensitivity example.",
+        "ledgerRowSha256": "97ba747fc0f9bd751bce0b8d70141a55c1cdbf289b493ee18714078f9cd233e9",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "The passage identifies the software used to fit the lumped-parameter model.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "The fitting process draws on corrected analytical values and on assumptions about how ages are distributed.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage identifies the software used to fit the lumped-parameter model.». El pasaje sí ofrece el contexto «The fitting process draws on corrected analytical values and on assumptions about how ages are distributed.», pero en el texto completo no especifica «identifies», «software» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The passage describes the fitting inputs but never names any software; the software claim is absent rather than contradicted.",
+        "ledgerRowSha256": "863e416e9870a7d2cbaeccb7d16d0b8b46a3900b43f636f8f4fd2479efa01e4a",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Agreement across several tracers allows analysts to discard the assumptions behind the model.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Agreement across tracers is therefore evidence to examine, not permission to erase the assumptions behind it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Agreement across several tracers allows analysts to discard the assumptions behind the model.», mientras el pasaje dice «Agreement across tracers is therefore evidence to examine, not permission to erase the assumptions behind it.». Ambos tratan «agreement», «across», «tracers», «assumptions», «behind», pero la proposición añade «several», «allows», «analysts», «discard», «model» donde la fuente especifica «therefore», «evidence», «examine», «permission», «erase». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The statement asserts the opposite of the writer’s explicit qualification.",
+        "ledgerRowSha256": "8d6c5b570e912b41b6b2a21ec29a6b10b51f48dca76e324ff688327f9c959a92",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "An inferred mean age is independent of both model form and parameter choice.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "That shift does not show that the water itself has suddenly become younger; it shows that the inferred mean depends on model form and parameter choice.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «An inferred mean age is independent of both model form and parameter choice.», mientras el pasaje dice «That shift does not show that the water itself has suddenly become younger; it shows that the inferred mean depends on model form and parameter choice.». Ambos tratan «inferred», «mean», «model», «form», «parameter», «choice», pero la proposición añade «age», «independent», «both» donde la fuente especifica «shift», «show», «water», «itself», «suddenly», «become». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The statement contradicts the controlling sentence, which explicitly makes the inferred mean dependent on model form and parameter choice.",
+        "ledgerRowSha256": "be752745200d72f7b545ddfe9a95e930091a0fe45d9b6e540deab355b09bd14d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "an explanation for combining tracers while preserving differences between their records",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B"
+        },
+        "sourceExcerpt": "Their historical records differ, which is one reason they are considered together rather than treated as interchangeable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «an explanation for combining tracers while preserving differences between their records» y la clave es «B». La evidencia dice «Their historical records differ, which is one reason they are considered together rather than treated as interchangeable.». La coincidencia semántica se apoya en «records»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B alone contains the requested information; the competitor audit records why all other paragraphs fail.",
+        "ledgerRowSha256": "7119d041bafdc4c773edde2678c19166d991fe0275f31eba973eb2f3597b68d9",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "a compact approach that represents recharge times collectively rather than tracing every molecule",
+          "correctOptionIndex": 5,
+          "correctOptionText": "F"
+        },
+        "sourceExcerpt": "One approach is to fit a lumped-parameter model to several environmental-tracer observations. In this usage, the model is a compact way of estimating a distribution of recharge times rather than identifying the exact history of every molecule.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «a compact approach that represents recharge times collectively rather than tracing every molecule» y la clave es «F». La evidencia dice «One approach is to fit a lumped-parameter model to several environmental-tracer observations.». La coincidencia semántica se apoya en «approach»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F alone contains the requested information; the competitor audit records why all other paragraphs fail.",
+        "ledgerRowSha256": "604d2f4b61aa7830fd7d8a8298c981ee9373b499b7c60e92516d5210718351a7",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "the role of data adjustment between a measured value and a dating conclusion",
+          "correctOptionIndex": 3,
+          "correctOptionText": "D"
+        },
+        "sourceExcerpt": "A correction is part of the route from an observed concentration to an inference; it is not evidence that the uncorrected number directly states an age.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «the role of data adjustment between a measured value and a dating conclusion» y la clave es «D». La evidencia dice «A correction is part of the route from an observed concentration to an inference; it is not evidence that the uncorrected number directly states an age.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D alone states the required correction-specific mediation between observation and age inference; the competitor audit tests every paragraph.",
+        "ledgerRowSha256": "cd42e77acdcc90503c4b58fa605e3f262a6edbc634c604c3b2ac4e0c50a1a427",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "uses of age-distribution evidence in recharge calculations and hydrologic models",
+          "correctOptionIndex": 6,
+          "correctOptionText": "G"
+        },
+        "sourceExcerpt": "An estimated age distribution can contribute to recharge-rate calculations and can improve the structure or calibration of a hydrologic model.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «uses of age-distribution evidence in recharge calculations and hydrologic models» y la clave es «G». La evidencia dice «An estimated age distribution can contribute to recharge-rate calculations and can improve the structure or calibration of a hydrologic model.». La coincidencia semántica se apoya en «age», «distribution», «recharge», «calculations», «hydrologic»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G alone contains the requested information; the competitor audit records why all other paragraphs fail.",
+        "ledgerRowSha256": "207bee1cf0226d61a964de4a0bf2d33f0344bfed1b9eec3a39fde2daeb236f66",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "the length of the atmospheric CFC record available for dating",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C"
+        },
+        "sourceExcerpt": "For CFCs, roughly fifty years of recorded atmospheric amounts provide one basis for groundwater dating.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «the length of the atmospheric CFC record available for dating» y la clave es «C». La evidencia dice «For CFCs, roughly fifty years of recorded atmospheric amounts provide one basis for groundwater dating.». La coincidencia semántica se apoya en «atmospheric», «dating»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C alone contains the requested information; the competitor audit records why all other paragraphs fail.",
+        "ledgerRowSha256": "69554e34d73d4c6f106cc075777b68489175b3a9bb61d8103bb2be4635c38250",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "a warning that four parts of the analysis are not interchangeable descriptions of one observation",
+          "correctOptionIndex": 4,
+          "correctOptionText": "E"
+        },
+        "sourceExcerpt": "This is why concentration, correction, mixing and age cannot be treated as four names for the same observation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «a warning that four parts of the analysis are not interchangeable descriptions of one observation» y la clave es «E». La evidencia dice «This is why concentration, correction, mixing and age cannot be treated as four names for the same observation.». La coincidencia semántica se apoya en «four», «observation»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E alone contains the requested information; the competitor audit records why all other paragraphs fail.",
+        "ledgerRowSha256": "8588bd07cc06577f41b4b769ebc8c3936d9051eacf8f5aa021b83951ec6e19f2",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "Under the former kilogram arrangement, no single artefact was central to the definition used elsewhere.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "For much of its modern history, the kilogram was defined through the mass of the International Prototype of the Kilogram. That arrangement made a single artefact conceptually central to the unit used elsewhere.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Under the former kilogram arrangement, no single artefact was central to the definition used elsewhere.», mientras el pasaje dice «That arrangement made a single artefact conceptually central to the unit used elsewhere.». Ambos tratan «arrangement», «single», «artefact», «central», «used», «elsewhere», pero la proposición añade «under», «former», «kilogram», «definition» donde la fuente especifica «made», «conceptually», «unit». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The statement contradicts the writer’s explicit claim that the former arrangement made a single artefact conceptually central.",
+        "ledgerRowSha256": "871da655845354d8c25cdd5d33513a94a3576fa0db387389d30ffa16060696cb",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Under the new definition, reporting associated uncertainty remains part of realising the kilogram.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "To realise a unit is to establish a value, together with its associated uncertainty, for a quantity of the same kind as that unit. The uncertainty belongs inside the statement of a realisation, not outside it as an embarrassing afterthought.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Under the new definition, reporting associated uncertainty remains part of realising the kilogram.» y el pasaje dice «To realise a unit is to establish a value, together with its associated uncertainty, for a quantity of the same kind as that unit.». La fuente conserva la misma relación mediante «associated», «uncertainty» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The statement agrees with the writer’s explicit claim that associated uncertainty belongs inside the statement of a realisation.",
+        "ledgerRowSha256": "cf86b6216381fafa05b1b9e9edc8e001f23c29bcc8c77f1c7b95996b903cb8c6",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The writer considers maintaining a Kibble balance more difficult than fixing a constant.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "The route connects a mass realisation to experimentally established quantities, but the connection must still be made by an actual instrument. It would therefore be a mistake to argue that fixing a constant has made realisation equipment unnecessary.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The writer considers maintaining a Kibble balance more difficult than fixing a constant.». El pasaje sí ofrece el contexto «It would therefore be a mistake to argue that fixing a constant has made realisation equipment unnecessary.», pero en el texto completo no especifica «writer», «considers», «maintaining», «difficult» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The writer says that an actual instrument remains necessary but gives no judgement comparing the difficulty of maintaining it with the act of fixing a constant.",
+        "ledgerRowSha256": "fdac98eb02b8d91923f955b87dee1e8e5b895f47816776090defaeaa03dcdd0b",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "The writer uses the availability of pure, dislocation-free silicon crystals to explain why silicon is often chosen for XRCD.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Single crystals of silicon are often used because large crystals with high chemical purity and no dislocations can be obtained.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The writer uses the availability of pure, dislocation-free silicon crystals to explain why silicon is often chosen for XRCD.» y el pasaje dice «Single crystals of silicon are often used because large crystals with high chemical purity and no dislocations can be obtained.». La fuente conserva la misma relación mediante «silicon», «crystals», «often» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The statement agrees with the writer’s explicit evaluative claim at the controlling location.",
+        "ledgerRowSha256": "ed6b1e18ca8a04ada84c54ebc2f349440f510dfa4b64c8c59b3502d4ac5f0c62",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "The writer believes the BIPM should organise key comparisons more frequently.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "International comparison is therefore part of the achievement, not a ceremonial step added after it. The BIPM, coordinating with the Consultative Committee for Mass and Related Quantities, organises a key comparison for laboratories operating primary realisation methods.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The writer believes the BIPM should organise key comparisons more frequently.». El pasaje sí ofrece el contexto «The BIPM, coordinating with the Consultative Committee for Mass and Related Quantities, organises a key comparison for laboratories operating primary realisation methods.», pero en el texto completo no especifica «writer», «organise», «comparisons», «frequently» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The writer states who organises a key comparison and values comparison, but gives no view about increasing its frequency.",
+        "ledgerRowSha256": "a5becda8503954d1d0556bb3facf09d63c0f14bfe58fde5e20f56b8df5d0e655",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "The writer treats a smaller Kibble balance as a complete replacement for the one-kilogram system.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Tabletop work points toward on-site realisation at the gram level and may bring the practical route closer to more laboratories. But scaling farther from the one-kilogram benchmark adds uncertainties, so smaller equipment is not simply a complete replacement with the size reduced.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The writer treats a smaller Kibble balance as a complete replacement for the one-kilogram system.», mientras el pasaje dice «But scaling farther from the one-kilogram benchmark adds uncertainties, so smaller equipment is not simply a complete replacement with the size reduced.». Ambos tratan «smaller», «complete», «replacement», «kilogram», pero la proposición añade «writer», «treats», «kibble», «balance», «system» donde la fuente especifica «scaling», «farther», «benchmark», «adds», «uncertainties», «equipment». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The writer explicitly advances the opposing claim, so the answer is NO rather than NOT GIVEN.",
+        "ledgerRowSha256": "3603a7f550d721f1c5c5656c2cf76ee3929e34c2a9ea86518106d33e823343ab",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "The writer acknowledges that a method-neutral definition creates genuine freedom for competent laboratories.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "The strongest counterclaim is that once any competent laboratory may realise the kilogram from a constant, decentralisation has already been accomplished. That claim correctly recognises the freedom created by a method-neutral definition, but it compresses permission, capability and equivalence into one idea.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The writer acknowledges that a method-neutral definition creates genuine freedom for competent laboratories.» y el pasaje dice «That claim correctly recognises the freedom created by a method-neutral definition, but it compresses permission, capability and equivalence into one idea.». La fuente conserva la misma relación mediante «method», «neutral», «definition», «freedom» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The writer explicitly acknowledges the freedom before qualifying what that freedom does not guarantee.",
+        "ledgerRowSha256": "289c804ba7093d5fd9ee17e1bcf2e71ae0065e33640542972c55e1f046bfb7e8",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "Which distinction frames the main argument in paragraph A?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "A universal definition does not by itself create universal practical access."
+        },
+        "sourceExcerpt": "A definition states what the unit is; laboratories still need a defensible way to establish mass values from it. The argument of this passage is that universality at the definitional level is real, while universality in practical access must be achieved through methods, comparison and dissemination.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which distinction frames the main argument in paragraph A?» y la clave es «A universal definition does not by itself create universal practical access.». La evidencia dice «The argument of this passage is that universality at the definitional level is real, while universality in practical access must be achieved through methods, comparison and dissemination.». La coincidencia semántica se apoya en «argument», «practical», «access»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option B captures the paragraph’s argumentative function without adding the error represented by the other three options.",
+        "ledgerRowSha256": "c8a6be8fd057389a00edb0f4b25a784b6511e68496e558239cb1ce93a8753ffa",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "What did the selected numerical value of the Planck constant achieve?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "It preserved continuity with the previous definition of the unit."
+        },
+        "sourceExcerpt": "The kilogram is now defined using a fixed value of the Planck constant, and the former prototype no longer realises mass. The selected numerical value of that constant preserved continuity with the previous definition of the unit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What did the selected numerical value of the Planck constant achieve?» y la clave es «It preserved continuity with the previous definition of the unit.». La evidencia dice «The selected numerical value of that constant preserved continuity with the previous definition of the unit.». La coincidencia semántica se apoya en «selected», «numerical», «value», «constant», «preserved», «continuity»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option D captures the paragraph’s argumentative function without adding the error represented by the other three options.",
+        "ledgerRowSha256": "1df55bef29bb40c8b53759be733654e5bd2360d7665d0ee010fab1a8cb12f135",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "Why does the writer give a concise account of the Kibble balance's defining relation?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "To explain the bridge the instrument creates without giving an operating manual."
+        },
+        "sourceExcerpt": "At the level needed here, its defining relation is a comparison in which electrical power is equated with mechanical power. That concise description is important because it explains the kind of bridge the instrument creates without turning the passage into an operating manual.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why does the writer give a concise account of the Kibble balance's defining relation?» y la clave es «To explain the bridge the instrument creates without giving an operating manual.». La evidencia dice «That concise description is important because it explains the kind of bridge the instrument creates without turning the passage into an operating manual.». La coincidencia semántica se apoya en «concise», «bridge», «instrument», «creates», «without», «operating»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option A captures the paragraph’s argumentative function without adding the error represented by the other three options.",
+        "ledgerRowSha256": "4e516531924c67b493c99d5263b41096e4874356f7583f7fd28a3a615545dc73",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "What is the main value of presenting both primary routes in paragraph D?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "They provide independent techniques whose outcomes can be compared."
+        },
+        "sourceExcerpt": "Together, the Kibble and XRCD routes show that the definition does not depend on only one practical technique. Two independent methods can reach relative uncertainties within a few parts in one hundred million, but that capability does not guarantee that every result will agree automatically. Method diversity strengthens the system only when the outcomes can also be compared.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the main value of presenting both primary routes in paragraph D?» y la clave es «They provide independent techniques whose outcomes can be compared.». La evidencia dice «Method diversity strengthens the system only when the outcomes can also be compared.». La coincidencia semántica se apoya en «outcomes», «compared»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option C captures the paragraph’s argumentative function without adding the error represented by the other three options.",
+        "ledgerRowSha256": "9181b39bbcc528a38867ac21d6dfbb06f6236c1cd83af65b86eff2ba4f2bb711",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "What role does a consensus value play according to paragraph E?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "It supports international equivalence while individual results remain dispersed."
+        },
+        "sourceExcerpt": "When individual results remain dispersed, national metrology institutes with a kilogram realisation use a consensus value to preserve international equivalence. The value is internationally agreed, but agreement does not replace measurement.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What role does a consensus value play according to paragraph E?» y la clave es «It supports international equivalence while individual results remain dispersed.». La evidencia dice «When individual results remain dispersed, national metrology institutes with a kilogram realisation use a consensus value to preserve international equivalence.». La coincidencia semántica se apoya en «consensus», «value», «international», «equivalence», «individual», «results»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option B captures the paragraph’s argumentative function without adding the error represented by the other three options.",
+        "ledgerRowSha256": "73b5d9c09c131f6ac0ab4133f218be50fd6dc3b9b2b8811bdd13ad847572a307",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "Why does paragraph F trace the chain beyond the definition and primary method?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "To show how later stages preserve a usable link to ordinary weights."
+        },
+        "sourceExcerpt": "The chain from definition to primary method, comparison, agreed value and calibration shows why changing the first link cannot replace all the later ones. Later steps preserve a usable relation between primary work and ordinary weights.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why does paragraph F trace the chain beyond the definition and primary method?» y la clave es «To show how later stages preserve a usable link to ordinary weights.». La evidencia dice «The chain from definition to primary method, comparison, agreed value and calibration shows why changing the first link cannot replace all the later ones.». La coincidencia semántica se apoya en «chain», «definition», «primary», «method», «later», «link»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option A captures the paragraph’s argumentative function without adding the error represented by the other three options.",
+        "ledgerRowSha256": "2de6bbc1b056126fadd5949c2d7e425a92f5d5c148fdffa35f1aa196feb7137f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "What practical constraint does paragraph G identify for a one-kilogram Kibble balance?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "It can demand substantial space, expense and specialist operation."
+        },
+        "sourceExcerpt": "A one-kilogram Kibble balance at a national metrology institute can occupy a room, cost extremely large sums and require expert operators.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What practical constraint does paragraph G identify for a one-kilogram Kibble balance?» y la clave es «It can demand substantial space, expense and specialist operation.». La evidencia dice «A one-kilogram Kibble balance at a national metrology institute can occupy a room, cost extremely large sums and require expert operators.». La coincidencia semántica se apoya en «kilogram», «kibble», «balance»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Option D alone paraphrases all three resource constraints in the controlling sentence without importing a false method or scale claim.",
+        "ledgerRowSha256": "bf06a44c576cdfbe5d5bcbeaf78b8a0d78f831bee943a66d296250981b845611",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-21/reading/set21-reading-content-v2.1.3.json",
+        "sha256": "a6f9a6ecb07b1a9bcdf7962b96bcac9a93b1da5e069486d47add3f7c44fa9b58"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "c1713721b0ae350b8c75481ab484adb4f906f088280bf2a84be3a6ed31ab793a",
+      "canonicalQuestionProjectionSha256": "41a0b4e8cf60a9ea1bf5cb3ebbb7cec8cf5cc0d9eb2fe5758a1655ad881b2f6e"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer name | Noah ______",
+          "acceptedResponses": [
+            "Carmichael"
+          ]
+        },
+        "evidenceSegment": "P1-04",
+        "audiblePhrase": "It's Noah Carmichael.",
+        "timecode": {
+          "startSeconds": 86.02,
+          "endSeconds": 87.78,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "8cbc09120d6aab215460a109454364de3ce19cbd05a98535c702a54d575c3f67"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Storage starting date | ______ October",
+          "acceptedResponses": [
+            "18",
+            "18th",
+            "eighteenth"
+          ]
+        },
+        "evidenceSegment": "P1-06",
+        "audiblePhrase": "I first wrote the 16th of October because my brother offered his van that day. He has since learned he won't be free until two days later. So the story should actually start on the 18th.",
+        "timecode": {
+          "startSeconds": 93.07,
+          "endSeconds": 105.11,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "ebd987089ddb5a309b05f628b5163813e3608d496e5245da09ff48504e918431"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Recommended unit size | ______ square feet",
+          "acceptedResponses": [
+            "35",
+            "thirty-five"
+          ]
+        },
+        "evidenceSegment": "P1-09",
+        "audiblePhrase": "40 would leave quite a lot of unused space. 25 would be too tight once the mattress is inside, but the 35 square foot unit should take everything and still leave a passage. Down the middle, I'll recommend 35.",
+        "timecode": {
+          "startSeconds": 131.37,
+          "endSeconds": 146.45,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "9da7cd4bed9530427004b7681ddd19616c058cbdf6e573a0802f41c06fe19aa6"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Latest access required | ______ p.m.",
+          "acceptedResponses": [
+            "9.30",
+            "9:30",
+            "09.30",
+            "09:30",
+            "nine thirty"
+          ]
+        },
+        "evidenceSegment": "P1-13",
+        "audiblePhrase": "Yes. We can put late access on your account, which will let your entry code work until 9.30pm. After that, the security system closes the building automatically.",
+        "timecode": {
+          "startSeconds": 170.95,
+          "endSeconds": 182.19,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "37954087ab3ec1b043d172b193704eb4621f660cf104b79fc1696b1c0d81b875"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Fragile items | two framed ______",
+          "acceptedResponses": [
+            "mirrors"
+          ]
+        },
+        "evidenceSegment": "P1-16",
+        "audiblePhrase": "I've got three framed prints, though those have plastic rather than glass. The things I'm concerned about are two framed mirrors. They belong to my grandparents, so I'll rack them separately.",
+        "timecode": {
+          "startSeconds": 194.53,
+          "endSeconds": 207.37,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "c0200a56de8dc5eb44f8a24af3960f4dd7ac7272febb042e566ca98108a711fc"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Declared value of goods | £______",
+          "acceptedResponses": [
+            "4,800",
+            "4800"
+          ]
+        },
+        "evidenceSegment": "P1-18",
+        "audiblePhrase": "I made a list yesterday. The furniture, boxes and mirrors came to £4,000. I'd forgotten the bicycle though and replacing that would cost about £800. So the total should be £4,800.",
+        "timecode": {
+          "startSeconds": 214.73,
+          "endSeconds": 228.71,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "c23038829e4018ac4195e2e97adead45ab4abdd263a3c6af205e9b07c6cf06cd"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "fill",
+          "questionText": "Collection van | Price: £______",
+          "acceptedResponses": [
+            "48",
+            "forty-eight"
+          ]
+        },
+        "evidenceSegment": "P1-22",
+        "audiblePhrase": "Our collection van is large enough for your inventory and comes with a driver and loading trolley. A weekend collection would be £56. As you're coming on a Thursday, the price is £48.",
+        "timecode": {
+          "startSeconds": 275.61,
+          "endSeconds": 287.57,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "cb5a9487733336279d7cc1b7a1600f6f0a54b3a59a9a938f98f4845165f1ac1c"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "fill",
+          "questionText": "Protective pack | Includes blankets and ______",
+          "acceptedResponses": [
+            "corner guards"
+          ]
+        },
+        "evidenceSegment": "P1-24",
+        "audiblePhrase": "Would you also like the protective packing set? It contains four reusable blankets and eight corner guards. The straps belong to the van, so the driver takes those away afterwards. But you keep the guards for the whole rental.",
+        "timecode": {
+          "startSeconds": 291.58,
+          "endSeconds": 305.12,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "df5c163e688af996c151d52b41af9f11151779ee14c62f54138d9bd9954ce048"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "fill",
+          "questionText": "Security lock | A ______ lock is supplied",
+          "acceptedResponses": [
+            "combination"
+          ]
+        },
+        "evidenceSegment": "P1-26",
+        "audiblePhrase": "The set costs £12. You'll also need a lock. We used to supply one with a key, but customers often misplace the key. So our standard lock is now a combination model. You choose the four-digit code when you arrive.",
+        "timecode": {
+          "startSeconds": 309.22,
+          "endSeconds": 323.7,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "8f4e103d032042e862d74bfd810f9ef04796c2626708bb03ee7d51df7a6fc574"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "fill",
+          "questionText": "Refundable deposit | Normally returned within ______ working days",
+          "acceptedResponses": [
+            "5",
+            "five"
+          ]
+        },
+        "evidenceSegment": "P1-28",
+        "audiblePhrase": "There is a refundable deposit as well. Once the unit has been emptied and checked, we normally return it within five working days. Some banks take another day or two to display the payment, but the refund leaves us within five.",
+        "timecode": {
+          "startSeconds": 329.59,
+          "endSeconds": 343.23,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "2e164157ab266b016d348d6a4e6bb8a00258f064b57b9c1f545e1a0f662185a1"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "fill",
+          "questionText": "Cooking frequently activates the smoke alarm. __________  ",
+          "acceptedResponses": [
+            "C"
+          ]
+        },
+        "evidenceSegment": "P2-02",
+        "audiblePhrase": "The first concerns cooking. If steam or cooking fumes regularly set off the smoke alarm beside your kitchen, don't remove its battery. Fit a heat alarm there, while keeping an ordinary smoke alarm in the nearby hall. A fire blanket can help with a small pan fire, but it will not solve repeated false alarms.",
+        "timecode": {
+          "startSeconds": 452,
+          "endSeconds": 469.26,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "68540bf10ec785645d377bdd9584e5d67307b6ae36c281d1082a507814f09a25"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "fill",
+          "questionText": "A resident is uncertain whether the whole home is adequately protected. __________  ",
+          "acceptedResponses": [
+            "A"
+          ]
+        },
+        "evidenceSegment": "P2-03",
+        "audiblePhrase": "Second, some residents have alarms but remain uncertain about the rest of the property. They may not know whether an elderly relative could hear an alarm from a back bedroom. Rather than buying equipment at random, request a free inspection. An officer will assess the whole home, test existing devices and recommend what is actually needed.",
+        "timecode": {
+          "startSeconds": 469.61,
+          "endSeconds": 489.31,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "e153c153e06f89792ecda86aa2927d04a9b198f7e2b174d1a849045b94dcc601"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "fill",
+          "questionText": "Several high-powered appliances share one electrical connection. __________  ",
+          "acceptedResponses": [
+            "G"
+          ]
+        },
+        "evidenceSegment": "P2-04",
+        "audiblePhrase": "The third situation is electrical. A television, portable heater and kettle should never share a lightweight extension lead. Switching one appliance off most of the time is not enough. Replace the extension lead with one rated for the required load. Or have additional wall sockets installed by a qualified electrician. Moving the heater does not remove the overloaded connection.",
+        "timecode": {
+          "startSeconds": 489.66,
+          "endSeconds": 511.44,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "c768fb3f1166ac17633affdf1515a5e5cc217ae9a7b3a2050914f5e01cfb0a7b"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "fill",
+          "questionText": "A resident wants greater protection while the household is asleep. __________  ",
+          "acceptedResponses": [
+            "E"
+          ]
+        },
+        "evidenceSegment": "P2-05",
+        "audiblePhrase": "Fourth, many serious fires spread after people have gone to bed. Closing internal doors before sleeping, slow smoke and heat, and gives the alarm more time to wake everyone. Do not lock those doors, because that could delay an escape, simply shut them.",
+        "timecode": {
+          "startSeconds": 511.79,
+          "endSeconds": 526.51,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "9676dacc4c02d36813b8bf5fb96b9bb9942ef12a6a6b789481262004eeb88995"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "fill",
+          "questionText": "A portable heater is positioned beside an armchair.",
+          "acceptedResponses": [
+            "B"
+          ]
+        },
+        "evidenceSegment": "P2-06",
+        "audiblePhrase": "The final situation involves a portable heater beside an armchair. Move the heater at least a meter from upholstered furniture, curtains and drying clothes. A fire blanket belongs in the kitchen and is not a substitute for safe distance. Also place the heater where it cannot be knocked over.",
+        "timecode": {
+          "startSeconds": 526.86,
+          "endSeconds": 543.12,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "b94bd1b1e9cb50e0debd407922e392bda6b4461ec3f146c5bd495b497cba5b6f"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "fill",
+          "questionText": "Which street will receive free inspection visits on Tuesday?  ",
+          "acceptedResponses": [
+            "Larkhill Road"
+          ]
+        },
+        "evidenceSegment": "P2-08",
+        "audiblePhrase": "I'll now explain our free home inspection visits. This month, the team is concentrating on the north side of Mirford. Monday's appointments are in Quarry Lane. On Tuesday, officers will visit Lark Hill Road, and Wednesday has been set aside for Northgate Crescent. If your street is not listed you can still request the later appointment through the council website.",
+        "timecode": {
+          "startSeconds": 581.06,
+          "endSeconds": 601.1,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "8cd274788021fe8feb7ba91fd45c3e933411b84f3182d48af7b07d4f917af57c"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "fill",
+          "questionText": "What document should residents ask to see before opening the door?  ",
+          "acceptedResponses": [
+            "photo ID"
+          ]
+        },
+        "evidenceSegment": "P2-09",
+        "audiblePhrase": "Please remember that genuine inspectors never arrive without an appointment. Every officer will carry photo-eyed showing the Northgate service badge and an identification number. A uniform by itself is not proof. Ask to see the photo-eyed before opening the door. And telephone the service if the face or number does not match the appointment. Message.",
+        "timecode": {
+          "startSeconds": 601.45,
+          "endSeconds": 622.97,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "55a9e5de9295e80254c43f3d004bf78a9894fe745a12d8da4c8f24a50632c19a"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "fill",
+          "questionText": "Where must the second smoke alarm be fitted in a two-storey home?  ",
+          "acceptedResponses": [
+            "upstairs landing"
+          ]
+        },
+        "evidenceSegment": "P2-10",
+        "audiblePhrase": "During the visit, we will check alarm coverage. A single-story home usually needs a smoke alarm in the hall between the living area and bedrooms. In a two-story house, there should be one downstairs as well. But the second alarm must be on the upstairs landing, where it can be heard from every bedroom. An alarm inside only the main bedroom does not provide adequate coverage.",
+        "timecode": {
+          "startSeconds": 623.32,
+          "endSeconds": 643.68,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "04ec1932992bcb7130958bb03c792342e0e6bd9fc31743cf5ea920794e732a79"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "fill",
+          "questionText": "How often should household alarms be tested?  ",
+          "acceptedResponses": [
+            "every week"
+          ]
+        },
+        "evidenceSegment": "P2-11",
+        "audiblePhrase": "Testing is just as important as location. Some packaging suggests a monthly check. And our reminder messages were once sent on the first day of each month. Current guidance is to press the test button every week. Choose a regular day so it becomes a habit. If an alarm chirps because the battery is low, replace the battery immediately, rather than waiting for the weekly test.",
+        "timecode": {
+          "startSeconds": 644.03,
+          "endSeconds": 666.31,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "2a03af2350de0ff9659f3ddb1d46eae5dcb785be1c907825d3a0945beee4c4a3"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "fill",
+          "questionText": "What telephone number should residents use to change an appointment?  ",
+          "acceptedResponses": [
+            "01632 960 412",
+            "01632960412"
+          ]
+        },
+        "evidenceSegment": "P2-12",
+        "audiblePhrase": "Appliance lasts about 40 minutes. If you need to change yours, do not call the emergency station. Use the inspection line on 01632 960412. I'll repeat that 01632 960412. The line is staffed from 9 until 5. Outside those hours, leave your name and appointment date, but never leave medical or banking information.",
+        "timecode": {
+          "startSeconds": 666.66,
+          "endSeconds": 691.8,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "7279af713e6cd3d10695791f738bddfcb19c5c4e6385bf2b2c61acd178755156"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "What problem does Aisha identify in the students’ original sample?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "It represents only one employment sector."
+        },
+        "evidenceSegment": "P3-03",
+        "audiblePhrase": "Neither is the main issue. All 12 people on your list work in healthcare, nurses, laboratory technicians and ambulance dispatchers. That would tell us a great deal about one sector, but not about night work more generally. You need people from different occupations, even if the final sample is slightly smaller.",
+        "timecode": {
+          "startSeconds": 809.47,
+          "endSeconds": 828.45,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "9b2bc894785de40630864428d9a37ea6a37dd01365ffea1a7dd681c7f1887518"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "Who will take part in the pilot interviews?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "archive volunteers who previously worked night shifts"
+        },
+        "evidenceSegment": "P3-07",
+        "audiblePhrase": "Use those volunteers for the pilot. They understand why the material will be preserved, but they have not conducted interviews themselves. Their feedback should expose unclear questions without using any of your main participants.",
+        "timecode": {
+          "startSeconds": 870.6,
+          "endSeconds": 884.16,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "e13ab5dc9c9ebdceba5f629c26a6051ba5b6035c03d72bf7246d1bda05f04111"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "Which recording format do the speakers choose?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "audio only"
+        },
+        "evidenceSegment": "P3-10",
+        "audiblePhrase": "I agree. Choose audio only. Consistent, well-recorded sound is more valuable here than poor video. And people may speak more freely without a lens pointed at them.",
+        "timecode": {
+          "startSeconds": 907.8,
+          "endSeconds": 919.58,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "b8d3fb1846b97d2c261b4cb8b96417e6c5682f5b3e6f361669b24b89cf200ec4"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "How will the main interview be organised?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Participants will choose from a set of topic cards."
+        },
+        "evidenceSegment": "P3-13",
+        "audiblePhrase": "Prepare topic cards instead, sleep, food, family contact, quiet periods, emergencies and the journey home. After a short opening, let each participant choose which card to discuss next. You'll cover the same broad areas, but the order will reflect what matters to that person.",
+        "timecode": {
+          "startSeconds": 942.18,
+          "endSeconds": 959.58,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "e890f5143abdda28de818636f3f8d4cb06edeaef2402bb5cec1b7279197b1594"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "What will be the main measure of the archive’s success?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the range of occupations represented"
+        },
+        "evidenceSegment": "P3-16",
+        "audiblePhrase": "Numbers and lengths are production targets, not the main measure of value. A long set of similar accounts would add little. Your primary measures should be the range of occupations represented. Within that range, you can report differences in age and experience.",
+        "timecode": {
+          "startSeconds": 979.5,
+          "endSeconds": 995.92,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "edbb474e3b39d95eccc610c2b332f09fb660e01c2ebaf9f8827771a5a2c8718c"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "Some participants do not want their identities made public. __________  ",
+          "acceptedResponses": [
+            "B"
+          ]
+        },
+        "evidenceSegment": "P3-20",
+        "audiblePhrase": "The call is good practice, but it does not protect identity. Offer pseudonyms for the public catalog and recording. Keep the real name list in an encrypted file available only to the archive manager. Participants can still choose to be named.",
+        "timecode": {
+          "startSeconds": 1055.43,
+          "endSeconds": 1071.05,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "1029ccccceee7e80c5086140e9174cb0066117b80d4bbc0673d33794e1638388"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "A long interview may be tiring after a night shift. __________  ",
+          "acceptedResponses": [
+            "D"
+          ]
+        },
+        "evidenceSegment": "P3-23",
+        "audiblePhrase": "divided into two shorter sessions. Agree the second date before ending the first and begin the follow-up with a brief summary that gives people time to rest and often allows them to remember useful details between sessions.",
+        "timecode": {
+          "startSeconds": 1087.27,
+          "endSeconds": 1101.83,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "f92d14193cb5b2b2242ffcd8454eb9968d6e27d00f583d0ef03abe91c501c1cb"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "Useful memories may occur when an interviewer is unavailable. __________  ",
+          "acceptedResponses": [
+            "C"
+          ]
+        },
+        "evidenceSegment": "P3-26",
+        "audiblePhrase": "Land each participant a simple recorder with a single large button. They can capture a short voice note when a memory occurs. Discuss it fully at the next session. You should copy the file and erase the device before it goes to somebody else.",
+        "timecode": {
+          "startSeconds": 1125.97,
+          "endSeconds": 1140.51,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "1440bd4f0d440557841d3cd3ccaed8c9c73e414959e70a19b4b03a730ba26269"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "The recordings may be difficult for researchers to search. __________  ",
+          "acceptedResponses": [
+            "E"
+          ]
+        },
+        "evidenceSegment": "P3-29",
+        "audiblePhrase": "retain the original recordings and create a keyword index. For each file, record the time at which subjects, such as transport, meals or isolation begin. A researcher can then jump to the relevant passage without altering the source audio.",
+        "timecode": {
+          "startSeconds": 1159.07,
+          "endSeconds": 1174.85,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "82782a43288cd0897aa188f6ce39a2d6465fde95ef28ba8f9198d3a478a6e817"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Written transcripts may contain errors.",
+          "acceptedResponses": [
+            "F"
+          ]
+        },
+        "evidenceSegment": "P3-32",
+        "audiblePhrase": "Do that as a first pass, then ask each participant to approve the transcript. They can correct specialized vocabulary and point out where the written wording changes their intended meaning. Keep a record of every amendment rather than silently replacing the original.",
+        "timecode": {
+          "startSeconds": 1194.13,
+          "endSeconds": 1210.63,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "b90cbc2708dcce46681960cd4720267d56c1672f729fe533c2a22082169ac548"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "The lack of oxygen limits the activity of",
+          "acceptedResponses": [
+            "microorganisms"
+          ]
+        },
+        "evidenceSegment": "P4-01",
+        "audiblePhrase": "The day will examine a source of archaeological evidence that is physically small but. Remarkably informative, waterlogged seeds. Plant remains normally disappear quickly. In dry soil, insects. And the another organisms break down soft tissue until little survives. Waterlogging changes that process because the spaces in the soil remain filled with. Water. Oxygen cannot circulate. and the microorganisms responsible for most decay become far less active. The seed is not turned to stone it remains organic and fragile, but decomposition slows dramatically.",
+        "timecode": {
+          "startSeconds": 1307.06,
+          "endSeconds": 1344.94,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "754b8063d2fc2777abb94a75ee0e86d0749f324d6d01b212da76f7bc4a9075fb"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Sediment is transported in sealed",
+          "acceptedResponses": [
+            "buckets"
+          ]
+        },
+        "evidenceSegment": "P4-03",
+        "audiblePhrase": "Election begins before the seeds themselves are visible. Excavators place measured blocks of dark sediment in sealed buckets. Cloth bags are appropriate for dry pottery, but they allow moisture to escape. So they are unsuitable here. Each bucket receives the context number, depth and collection date on two labels. One outside and one protected beneath the lid. Until processing the buckets are kept cool. Although freezing is avoided because it can damage delicate remains.",
+        "timecode": {
+          "startSeconds": 1376.56,
+          "endSeconds": 1405.9,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "63c2c2fea4a4b3818362ce7da1ab967287fb956eb2ff1504c504802889c733eb"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "The upper sieve has the widest",
+          "acceptedResponses": [
+            "openings"
+          ]
+        },
+        "evidenceSegment": "P4-04",
+        "audiblePhrase": "In the laboratory, water is used to loosen the sediment over a sequence of sieves. The upper sieve has the widest openings. It catches gravel, along with pieces of wood or bone that must be examined separately. The material passing through then reaches progressively finer mesh. This staged approach is slower than forcing everything through one very fine screen. But it prevents the mesh from becoming blocked and reduces damage to the smallest. Leads.",
+        "timecode": {
+          "startSeconds": 1406.2,
+          "endSeconds": 1435.22,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "4caac84c3e7f6780a04cddbf2193574b72d29325ba184424d13cb64255d3696c"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Final identification is carried out using a",
+          "acceptedResponses": [
+            "microscope"
+          ]
+        },
+        "evidenceSegment": "P4-05",
+        "audiblePhrase": "After washing, the residue is sorted while still damp. Large cereal grains may be recognized by eye. But many wild plants produce seeds only a millimeter across. Final identification is therefore carried out under a microscope. The analyst looks at overall shape, surface texture and the scar where the seed was attached to the parent plant. Pala alone is unreliable because centuries in wet sediment can darken unrelated. It's been treated. Species in similar ways.",
+        "timecode": {
+          "startSeconds": 1435.52,
+          "endSeconds": 1463.9,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "482309ad51b8c541d57a0598e34d8d0e9a5d0bde231b3be3d05af8b588058b8b"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Ancient material is compared with modern specimens in a reference",
+          "acceptedResponses": [
+            "collection"
+          ]
+        },
+        "evidenceSegment": "P4-06",
+        "audiblePhrase": "Identification is comparative rather than intuitive. Archaeological specimens are placed beside modern seeds of known species held in A. Reference collection? Good collections include natural variation. A seed from a dry hillside may be narrower than one of the same species grown beside. A stream? A stream. Published photographs are helpful, but they flatten texture and scale. So they cannot fully replace physical reference material.",
+        "timecode": {
+          "startSeconds": 1464.2,
+          "endSeconds": 1492.98,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "6a1bea314f950e2a1e37e3114f440f3ae6b383686fc9e4921e6e5fca1eab5e71"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Seeds introduced by modern roots are treated as",
+          "acceptedResponses": [
+            "contamination"
+          ]
+        },
+        "evidenceSegment": "P4-07",
+        "audiblePhrase": "Analysts must also decide whether a seed is genuinely ancient. Modern roots can penetrate an old deposit and carry recent seeds down through cracks. Earth-moving animals may do the same. Material that entered in this way is recorded as contamination. Not quietly removed from the data. Pale color. Intact soft tissue or a concentration around a living root can indicate recent. Origin, although several signs should be considered together.",
+        "timecode": {
+          "startSeconds": 1493.28,
+          "endSeconds": 1522.34,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "a1b5c1ba02b03e810131f6b2b5429e61c8369da2f669e38d368e97a515c00917"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "Broken stalks in the outer yard indicate",
+          "acceptedResponses": [
+            "threshing"
+          ]
+        },
+        "evidenceSegment": "P4-10",
+        "audiblePhrase": "The outer yard contained very little clean grain but large numbers of broken stalks. Those fragments are produced when harvested cereal heads are beaten to separate grain from the main stems. In other words, their concentration indicates threshing. The activity was probably kept outside because it required space and generated a great deal of dust. Few grains in the yard do not contradict that conclusion. Some losses inevitable during beating.",
+        "timecode": {
+          "startSeconds": 1600.21,
+          "endSeconds": 1628.67,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "746528128ae2d78a963b1ff34f3fed3707143ada4b75445063a349e0d9aa4212"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "Small weed seeds in the covered room indicate",
+          "acceptedResponses": [
+            "fine sieving"
+          ]
+        },
+        "evidenceSegment": "P4-11",
+        "audiblePhrase": "The covered room presented a different pattern. Core stems were scarce. While small weed seeds occurred in dense patches beside low working platforms. Large weeds can be removed earlier by hand. But seeds similar in size to cereal grains survive until a finer screen is used. The evidence therefore points to fine sieving inside the covered room. Shelter would have mattered at this stage because a sudden shower could wet cleaned brain and make it difficult to store.",
+        "timecode": {
+          "startSeconds": 1628.97,
+          "endSeconds": 1658.75,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "3e12eafcc1c1cf67ff19f30302fb4507208919803e8da0b66999ad591d62a6e4"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "Grain beside the hearth had probably been",
+          "acceptedResponses": [
+            "roasted"
+          ]
+        },
+        "evidenceSegment": "P4-12",
+        "audiblePhrase": "Near the half most grain was intact, but its surface was darkened and slightly cracked by heat. One explanation will be an accidental building fire. However, the same limited heating appeared in several occupation layers. While roof timbers showed no burning. Researchers concluded that the grain had probably been roasted deliberately in small patches. Light roasting can loosen the of some cereal varieties and also changes flavor.",
+        "timecode": {
+          "startSeconds": 1659.05,
+          "endSeconds": 1687.67,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "3da03f93e73734fba23147fec50063b9878cff440e7748a6240f55bf95959664"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "The absence of",
+          "acceptedResponses": [
+            "storage pests"
+          ]
+        },
+        "evidenceSegment": "P4-13",
+        "audiblePhrase": "Finally, the team looked for evidence of long-term storage. A large granary often supports beetles and other insects that feed specifically on. Stored cereal, their bodies survive well in the same waterlogged deposits as seeds. Here, however, there were no storage pests. This absence cannot prove that no grain was ever kept on the site. But combined with the small processing batches, it suggests that supplies The Allies move through fairly quickly rather than remaining for Ann. Eight entire season.",
+        "timecode": {
+          "startSeconds": 1687.97,
+          "endSeconds": 1718.45,
+          "basis": "EXISTING_SET21_DIRECT_CURRENT_MASTER_FOCAL_WINDOW"
+        },
+        "sourceRowSha256": "396a0363a06065e3ab56504db87034dccf2e8a07e5082f3095cd0da7728b90c7"
+      }
+    ],
+    "provenance": {
+      "method": "EXISTING_SET21_EXACT_WINDOWS",
+      "focalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-21/listening/set21-listening-asr-focal-master-v1.0.0.json",
+        "sha256": "6e2c908006b1177e93d8fdb53681946b84d09409352148cd348b78d592c5e132"
+      },
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-21/listening/ielts-set-21-listening-master.wav",
+        "sha256": "9d7318b13991252b3aac926ce92fc5fea4e8d6d1033055520786035d94220b75",
+        "frameCount": 78158872,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-21/listening/ielts-set-21-listening.mp3",
+        "sha256": "dc71ba1070e1eebf50eb48fc40f54e99bcdc358772ada4dabf971b1697f24aa6"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "6835e4956c2fcfe54a65d0fceae84ee1f19a270b0aeecf670322e916537d2350"
+  }
+}

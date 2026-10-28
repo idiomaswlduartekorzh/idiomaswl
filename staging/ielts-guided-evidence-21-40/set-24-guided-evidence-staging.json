@@ -1,0 +1,1987 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 24,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-24.ts",
+      "sha256": "f5a0ce8c1cf2292a083dcd026902175f477a0b03ad5a284c1f00f0d4629fabe8"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "volume"
+          ]
+        },
+        "sourceExcerpt": "Roots need a connected volume containing air, water and mineral nutrients.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «volume». La oración fuente dice «Roots need a connected volume containing air, water and mineral nutrients.». Esa oración contiene la respuesta y la conecta con «need», «roots», «connected», «containing», «air», «water», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The printed word connected combines with the unique passage word volume.",
+        "ledgerRowSha256": "d5843f6cd7b2e7128f6c799e92b9194c0696e6e7a7643b7b580635101db63f93",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "skeleton"
+          ]
+        },
+        "sourceExcerpt": "stones form a load-bearing skeleton",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «skeleton». La oración fuente dice «stones form a load-bearing skeleton». Esa oración contiene la respuesta y la conecta con «stones», «load», «bearing», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact completion.",
+        "ledgerRowSha256": "935bd0ae80ad8a2b671fc7c7d77e951ccb0f2c17217a58cff11f93c44d935f48",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "cells"
+          ]
+        },
+        "sourceExcerpt": "A different approach uses soil cells: modular frames installed below paving.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «cells». La oración fuente dice «A different approach uses soil cells: modular frames installed below paving.». Esa oración contiene la respuesta y la conecta con «soil», «uses», «modular», «frames», «paving», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The printed word soil combines with the unique passage word cells.",
+        "ledgerRowSha256": "f3a861d0d2258b9685fc2eb4cbe8b70f1e8fc833aa31f4a9e2a8d4fef51de5ff",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "hyphae"
+          ]
+        },
+        "sourceExcerpt": "threads called hyphae",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «hyphae». La oración fuente dice «threads called hyphae». Esa oración contiene la respuesta y la conecta con «threads», «called», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact completion.",
+        "ledgerRowSha256": "0f3d9dc3a9fb018c89a84ee859655333af28d4718b974677e7ec2a04a365cd49",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "overflow"
+          ]
+        },
+        "sourceExcerpt": "without an overflow may leave roots waterlogged",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «overflow». La oración fuente dice «without an overflow may leave roots waterlogged». Esa oración contiene la respuesta y la conecta con «roots», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Prevention device.",
+        "ledgerRowSha256": "5b0aa98150bec4aa722c74e89a7d6b877e4972a09b8d0c2a9f2d55af4120f2a5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "root extension"
+          ]
+        },
+        "sourceExcerpt": "Rapid root extension in one trial does not by itself prove better long-term survival",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «root extension». La oración fuente dice «Rapid root extension in one trial does not by itself prove better long-term survival». Esa oración contiene la respuesta y la conecta con «long», «term», «survival», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact noun phrase.",
+        "ledgerRowSha256": "c9b53265cf3fc5b0ce55810bd7aa8fe8894d50b100cc2c90f38e900b47e6b46a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "fill",
+          "questionText": "Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.",
+          "acceptedResponses": [
+            "conditions"
+          ]
+        },
+        "sourceExcerpt": "then select a construction that meets those site conditions",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Street trees need an underground system, not merely an opening around the trunk. Their roots require a connected 1 ____ containing air, water and mineral nutrients. In one engineered method, large stones create a load-bearing 2 ____, while soil fills spaces among them. Another method uses soil 3 ____: modular frames that support paving separately. Fungi may extend the area explored by roots through fine threads called 4 ____. Water from paved areas can be directed underground, but a design also needs an 5 ____ to prevent saturation. Because trials differ in species and climate, fast 6 ____ alone cannot demonstrate long-term survival. Planners should define the requirements, then select construction that meets site 7 ____.» y acepta «conditions». La oración fuente dice «then select a construction that meets those site conditions». Esa oración contiene la respuesta y la conecta con «then», «select», «construction», «meets», «site», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The printed word site combines with the unique passage word conditions.",
+        "ledgerRowSha256": "20730103444952c5bc2945382e52795034dfcff7a7d1ddd37f56a3ea09b4ad07",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "mcq",
+          "questionText": "Its useful soil quantity is less than the excavated volume suggests.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "structural soil"
+        },
+        "sourceExcerpt": "C One response is structural soil. Large angular stones form a load-bearing skeleton, and a measured soil mixture occupies spaces between them. When properly specified, the stones transfer pressure from the pavement while the soil in their voids offers routes for fine roots. The approach can extend a rooting medium beneath areas that must remain firm. However, the usable soil fraction is smaller than the total excavated volume because stone takes up much of that volume. Structural soil is not ordinary topsoil with rubble added; stone size, proportion and installation determine whether it carries loads without closing root passages.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Its useful soil quantity is less than the excavated volume suggests.» y la clave es «structural soil». La evidencia dice «C One response is structural soil.». La coincidencia semántica se apoya en «soil», «structural»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Feature B.",
+        "ledgerRowSha256": "eeaeeaf810ecb4cc5e1e944a07c6c7803253c5e0d228bb0f38cc6c2d0b907a7d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "mcq",
+          "questionText": "It may already occur naturally at a planting site.",
+          "correctOptionIndex": 3,
+          "correctOptionText": "mycorrhizal fungi"
+        },
+        "sourceExcerpt": "Suitable fungi may already be present",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «It may already occur naturally at a planting site.» y la clave es «mycorrhizal fungi». La evidencia dice «Suitable fungi may already be present». La coincidencia semántica se apoya en «already», «fungi»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Feature D.",
+        "ledgerRowSha256": "ad858dedc0b64c3fa6b8bb0f34f47ff147ca88c1289b588fa054f55ce5889ab4",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "mcq",
+          "questionText": "It can leave roots close to the hottest and most disturbed ground.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "compacted conventional soil"
+        },
+        "sourceExcerpt": "roots remain shallow",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «It can leave roots close to the hottest and most disturbed ground.» y la clave es «compacted conventional soil». La evidencia dice «roots remain shallow». La coincidencia semántica se apoya en «roots»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Feature A.",
+        "ledgerRowSha256": "8927c88ea420f5bfc101f9bd31e94de9d858e9928a3d48020b19b6caed09699a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "mcq",
+          "questionText": "It requires routes to be planned around buried services.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "soil cells"
+        },
+        "sourceExcerpt": "engineering around utility lines",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «It requires routes to be planned around buried services.» y la clave es «soil cells». La evidencia dice «engineering around utility lines». La coincidencia semántica se apoya en «around»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Feature C.",
+        "ledgerRowSha256": "434dbfc91654752d8d4a349fad46f9ceda552cef3c177aaf622dd5265de4d62a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "mcq",
+          "questionText": "Its performance depends on the proportions and installation of stone and soil.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "structural soil"
+        },
+        "sourceExcerpt": "stone size, proportion and installation determine",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Its performance depends on the proportions and installation of stone and soil.» y la clave es «structural soil». La evidencia dice «stone size, proportion and installation determine». La coincidencia semántica se apoya en «installation», «stone»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Feature B.",
+        "ledgerRowSha256": "877ae167b7a225bd5a452c55f4510a2a39bef4d890a7c6553df13980417bcede",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "mcq",
+          "questionText": "It explores spaces that tree roots cannot enter.",
+          "correctOptionIndex": 3,
+          "correctOptionText": "mycorrhizal fungi"
+        },
+        "sourceExcerpt": "explore pores too small for roots",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «It explores spaces that tree roots cannot enter.» y la clave es «mycorrhizal fungi». La evidencia dice «explore pores too small for roots». La coincidencia semántica se apoya en «roots»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Feature D.",
+        "ledgerRowSha256": "c08aef2cc9bab8bbdc83928cc61552011c90d4114c31020a6b7c3e33421b3f43",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Raised-letter books allowed pupils to write exercises using the same method.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "A For readers who use touch, a writing system must solve two related problems. Marks must be distinct enough for a fingertip to recognise, and they must be compact enough to scan without repeatedly moving the hand. Early educators often began with familiar printed letters raised above the page. This made sense to sighted teachers because the shapes already represented literacy to them. For learners, however, a curved or elaborate outline could require slow tracing. The books were large, production was expensive, and the method mainly supported reading. A pupil could identify prepared type but had no equally convenient way to compose a private note or complete an exercise independently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «Raised-letter books allowed pupils to write exercises using the same method.», mientras el pasaje dice «The books were large, production was expensive, and the method mainly supported reading.». Ambos tratan «books», «method», pero la proposición añade «raised», «letter», «allowed», «pupils», «write», «exercises» donde la fuente especifica «large», «production», «expensive», «mainly», «supported», «reading». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Contradiction.",
+        "ledgerRowSha256": "8b09a1d885a3dc70f4daf5cb2b58b53ffec8378d6493ff2d447e7ce80034281a",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Barbier's code was originally intended for schoolchildren.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "B In nineteenth-century France, experiments therefore shifted from copying visual shapes to arranging simple raised points. A military code proposed by Charles Barbier used patterns of dots that could be read without light. It demonstrated that touch did not need to imitate ink, but its cells were relatively tall and contained more positions than a finger could grasp at once. Users had to move along a pattern to interpret it. The code had been designed for messages rather than for the grammar, punctuation and varied texts of everyday literacy. Its importance lay less in becoming a finished school system than in showing that a small set of embossed points could carry information.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «Barbier's code was originally intended for schoolchildren.», mientras el pasaje dice «A military code proposed by Charles Barbier used patterns of dots that could be read without light.». Ambos tratan «barbier», «code», pero la proposición añade «originally», «intended», «schoolchildren» donde la fuente especifica «military», «proposed», «charles», «used», «patterns», «dots». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Contradiction.",
+        "ledgerRowSha256": "e84bc6ae879dcdb227daf89bcae1f3604d3aa881d81aea178e1b9478fd5733e7",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "The size of Barbier's cells made them difficult to perceive in one touch.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "more positions than a finger could grasp at once",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The size of Barbier's cells made them difficult to perceive in one touch.» y el pasaje dice «more positions than a finger could grasp at once». La fuente conserva la misma relación mediante la misma relación descrita en la pregunta y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Direct agreement.",
+        "ledgerRowSha256": "1f7d4b837dc77688d229d87448d77c357b1b17c9299fb1ea496530a2123fe132",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Louis Braille had lost his sight before attending the Paris institute.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "C Louis Braille encountered such ideas while studying at the Royal Institute for Blind Youth in Paris. Blind after a childhood injury, he understood the classroom problem as a reader and writer rather than only as a designer. By the age of fifteen he had developed an initial tactile system. Its basic unit was a six-dot cell arranged in two columns. Because the whole cell fitted beneath a fingertip, a reader could recognise a configuration without tracing a large outline. Sixty-four possible combinations, including the blank cell, supplied a compact code for letters, punctuation and other signs. Economy of space also meant that lines and pages could carry more information than many raised-letter books.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «Louis Braille had lost his sight before attending the Paris institute.» y el pasaje dice «C Louis Braille encountered such ideas while studying at the Royal Institute for Blind Youth in Paris.». La fuente conserva la misma relación mediante «louis», «braille», «paris», «institute» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Direct agreement.",
+        "ledgerRowSha256": "3d4c6feeeaf91d7ba31f88d8e419678a8196676dcca14f276cd6ae057d2ac825",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "The six-dot cell offered fewer than fifty possible patterns.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Sixty-four possible combinations",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The six-dot cell offered fewer than fifty possible patterns.», mientras el pasaje dice «Sixty-four possible combinations». Ambos tratan «possible», pero la proposición añade «six», «dot», «cell», «offered», «fewer», «fifty» donde la fuente especifica «sixty», «four», «combinations». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Contradiction.",
+        "ledgerRowSha256": "a14e6f9f6b6b673818de7abb4d0f4ac3b00083c48e4603364046fe651373a17c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Education authorities adopted Braille's system immediately.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Adoption was not immediate",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Education authorities adopted Braille's system immediately.», mientras el pasaje dice «Adoption was not immediate». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «education», «authorities», «adopted», «braille», «system», «immediately» donde la fuente especifica «adoption», «immediate». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Contradiction.",
+        "ledgerRowSha256": "cae3b5a2fc97b0efdbedf2134362360e07a2411b5eb3878f85bae1ca40931c0d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "The passage states that one language now uses more braille symbols than all others.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "E Adoption was not immediate. Institutions had invested in competing raised systems, teachers differed over methods, and authorities did not automatically accept a code created by a young blind student. Braille continued refining the system and extended it for music and mathematics. He died in 1852 without seeing the full international reach of his work. Over time, practical use by readers and writers supplied an argument that official preference could not easily dismiss. The system spread through schools and libraries, although languages developed their own conventions. Its success was therefore not a single moment of invention followed by instant agreement; it was a process of testing, teaching, adaptation and institutional change.\n\nF The same design principle survived changes in production. A mechanical braillewriter uses six main keys corresponding to the cell's dots. Embossers can produce pages from digital files, while refreshable displays raise and lower pins so that electronic text can be read line by line. These devices alter speed, storage and distribution, but they do not make the tactile code obsolete. A digital document still needs rules that tell a display which dot pattern represents a character or symbol. Nor has technology removed every constraint: embossed volumes occupy substantial space, refreshable equipment can be costly, and transcription must represent layouts, mathematics and music accurately rather than convert ordinary print mechanically.\n\nG The history also warns against measuring an accessible system only by resemblance to the dominant one. Raised print preserved the appearance of letters but imposed a heavy perceptual burden on touch. The dot cell changed the design question from 'How can print be felt?' to 'What can a fingertip distinguish quickly and what can a writer produce directly?' That shift joined finger span, page economy and independent composition in one solution. Modern audio and speech tools offer valuable additional access, yet they serve different purposes from spelling, punctuation and close textual study. The continuing use of braille reflects not resistance to new technology but the value of a code designed around active literacy rather than passive receipt. It endures.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición ausente es «The passage states that one language now uses more braille symbols than all others.». El pasaje sí ofrece el contexto «Braille continued refining the system and extended it for music and mathematics.», pero en el texto completo no especifica «language», «now», «symbols», «all» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "Not stated.",
+        "ledgerRowSha256": "fa557d52d92055303665fdd09e822dc7be4c08caed8014d77095ec091fbaf4d0",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E-G"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "What held the paper steady while a stylus was used?",
+          "acceptedResponses": [
+            "a slate",
+            "slate"
+          ]
+        },
+        "sourceExcerpt": "A slate held paper in position",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What held the paper steady while a stylus was used?» y acepta «a slate» / «slate». La oración fuente dice «A slate held paper in position». Esa oración contiene la respuesta y la conecta con «held», «paper», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact answer.",
+        "ledgerRowSha256": "b2e713f00bc655e0d301f626dcd4e18ae8ccaed5943c6d5564df69740d5f9527",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "What could students make during lessons once they could write for themselves?",
+          "acceptedResponses": [
+            "notes"
+          ]
+        },
+        "sourceExcerpt": "student could take notes",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What could students make during lessons once they could write for themselves?» y acepta «notes». La oración fuente dice «student could take notes». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact answer.",
+        "ledgerRowSha256": "a2e3c294fcb8bcb77a483ab3e79f430d999b3e0cd60915bd20c25318c174651d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "fill",
+          "questionText": "For which two specialised subjects did Braille extend his system?",
+          "acceptedResponses": [
+            "music and mathematics",
+            "mathematics and music"
+          ]
+        },
+        "sourceExcerpt": "extended it for music and mathematics",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «For which two specialised subjects did Braille extend his system?» y acepta «music and mathematics» / «mathematics and music». La oración fuente dice «extended it for music and mathematics». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact answer.",
+        "ledgerRowSha256": "fde6d57271d487cf383c1758d20f9dcb72ffe2a22dc2f68b1b88d7ffcb35ab8b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "Which places helped the system spread over time?",
+          "acceptedResponses": [
+            "schools and libraries",
+            "libraries and schools"
+          ]
+        },
+        "sourceExcerpt": "spread through schools and libraries",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which places helped the system spread over time?» y acepta «schools and libraries» / «libraries and schools». La oración fuente dice «spread through schools and libraries». Esa oración contiene la respuesta y la conecta con «spread», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact answer.",
+        "ledgerRowSha256": "c2ad7cfd1ea14bb2fe42572e95e7613f24c4130438f55ecda4d9d7a244a218fc",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "What rises and falls in a refreshable display?",
+          "acceptedResponses": [
+            "pins"
+          ]
+        },
+        "sourceExcerpt": "displays raise and lower pins",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What rises and falls in a refreshable display?» y acepta «pins». La oración fuente dice «displays raise and lower pins». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact answer.",
+        "ledgerRowSha256": "2104c95d6ea7f618173387b8382cc31f35a5c497ba066d16b5920a7fa691ccfe",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "What kind of study does the final paragraph contrast with listening to speech tools?",
+          "acceptedResponses": [
+            "close textual study"
+          ]
+        },
+        "sourceExcerpt": "spelling, punctuation and close textual study",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What kind of study does the final paragraph contrast with listening to speech tools?» y acepta «close textual study». La oración fuente dice «spelling, punctuation and close textual study». Esa oración contiene la respuesta y la conecta con «study», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Exact answer.",
+        "ledgerRowSha256": "acc61926d44c0ecc1465c45649d1d2abd313874ce2f70f114ca1e1cd3dde7753",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "Question 27",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "sourceExcerpt": "A A roof under a clear sky participates in two energy exchanges that are easy to confuse. Sunlight arrives mainly at short wavelengths and can heat the surface if absorbed. The warm surface also emits energy at longer, thermal-infrared wavelengths. Ordinary materials may lose some heat by this second route at night, when solar input has disappeared. Achieving cooling in daytime is harder because even modest absorption of intense sunlight can exceed the infrared loss. A successful passive cooling surface must therefore perform two apparently separate optical tasks: reject most incoming solar energy and emit thermal radiation strongly in the wavelengths through which that radiation can escape.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Question 27» y la clave es «Location A». La evidencia dice «A A roof under a clear sky participates in two energy exchanges that are easy to confuse.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending A.",
+        "ledgerRowSha256": "33407b0d9ab0727c27f3f27f6622e398c5dcd320831a6aa540b5407d19cd375c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Question 28",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Location G"
+        },
+        "sourceExcerpt": "E Weather narrows the theoretical pathway. Water vapour absorbs infrared radiation, so humid air can partly close the atmospheric window. Clouds are stronger emitters than a clear upper sky and can send thermal radiation downward. The angle at which a surface views the sky also matters: nearby walls, trees and roof equipment may replace part of that cold view with warmer objects. A horizontal sample on an open test platform therefore has an advantage that a vertical facade in a dense street may not share. Dust, ageing and rain alter optical properties over time. Performance claims based on a clean new specimen and a few clear days cannot automatically be transferred to every climate or orientation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Question 28» y la clave es «Location G». La evidencia dice «E Weather narrows the theoretical pathway.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending G.",
+        "ledgerRowSha256": "5d80af7d36e95dbbb66b5ac3ec27bae9fc880bdab9f92bd97688f32500c93efc",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "Question 29",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "sourceExcerpt": "spectrum of the complete assembly",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Question 29» y la clave es «Location D». La evidencia dice «spectrum of the complete assembly». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending D.",
+        "ledgerRowSha256": "1eede6bf3025b1caba1ba0b6297146b8bcadce08f63f6ed1154c64b8817000e6",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Question 30",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "sourceExcerpt": "F Researchers quantify the balance with a net cooling power. Outgoing thermal radiation is counted as a gain for cooling; absorbed sunlight, downward atmospheric radiation and non-radiative heat transfer count against it. Each term changes with surface temperature and conditions, so a single efficiency percentage can conceal important assumptions. A test conducted at night removes the largest solar term and is useful for studying emission, but it cannot establish daytime performance by itself. Likewise, reporting only a surface temperature without a reference surface makes weather effects difficult to separate. Strong evidence clearly combines spectral measurements, an energy-balance model and outdoor comparisons.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Question 30» y la clave es «Location C». La evidencia dice «F Researchers quantify the balance with a net cooling power.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending C.",
+        "ledgerRowSha256": "9cf38cc6adac962b15fe6dad70593445c01d51c7e9888bde590653d7ab062238",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "Question 31",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "sourceExcerpt": "E Weather narrows the theoretical pathway. Water vapour absorbs infrared radiation, so humid air can partly close the atmospheric window. Clouds are stronger emitters than a clear upper sky and can send thermal radiation downward. The angle at which a surface views the sky also matters: nearby walls, trees and roof equipment may replace part of that cold view with warmer objects. A horizontal sample on an open test platform therefore has an advantage that a vertical facade in a dense street may not share. Dust, ageing and rain alter optical properties over time. Performance claims based on a clean new specimen and a few clear days cannot automatically be transferred to every climate or orientation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Question 31» y la clave es «Location B». La evidencia dice «E Weather narrows the theoretical pathway.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending B.",
+        "ledgerRowSha256": "255b27bd44ddf3d5f29119fb054cd72d82a30f78f270728140fe8a63c463fcdc",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Question 32",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Location E"
+        },
+        "sourceExcerpt": "G The path from sample to building adds another scale. Electricity savings depend on how a building is operated. The roof deck and insulation determine how much of the altered surface balance reaches the interior. In an unconditioned structure, the valued outcome may instead be fewer hours above a dangerous indoor temperature. Thus a claim that a film reflects a certain fraction of sunlight is a statement about the material, not yet a statement about energy bills, comfort or public-health benefit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Question 32» y la clave es «Location E». La evidencia dice «G The path from sample to building adds another scale.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending E.",
+        "ledgerRowSha256": "6311322961a93301055c5e154d8212c5faf1e29d13f0f6635d832a8b08d06e3d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "Question 33",
+          "correctOptionIndex": 8,
+          "correctOptionText": "Location I"
+        },
+        "sourceExcerpt": "H This layered reasoning explains both the promise and the caution surrounding radiative cooling. The physical mechanism is real: a surface can send heat through a spectral opening while resisting solar gain. Yet the magnitude of that effect moves through a chain—from optical spectrum, to surface energy balance, to roof construction, to indoor conditions, and finally to human or energy outcomes. A useful diagram should keep these levels distinct. It should show incoming sunlight meeting a reflective layer, thermal emission leaving the surface through the atmospheric window, and conductive exchange moderated by insulation above the roof deck. It should not imply that every emitted ray reaches space or that a cooler coating guarantees an equally large reduction inside.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Question 33» y la clave es «Location I». La evidencia dice «H This layered reasoning explains both the promise and the caution surrounding radiative cooling.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Ending I.",
+        "ledgerRowSha256": "286cc4e3d942e8e0ab4e370756f9bfd238dddafc766cc7011e0961b918a40382",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "fill",
+          "questionText": "Question 34",
+          "acceptedResponses": [
+            "sunlight"
+          ]
+        },
+        "sourceExcerpt": "A A roof under a clear sky participates in two energy exchanges that are easy to confuse. Sunlight arrives mainly at short wavelengths and can heat the surface if absorbed. The warm surface also emits energy at longer, thermal-infrared wavelengths. Ordinary materials may lose some heat by this second route at night, when solar input has disappeared. Achieving cooling in daytime is harder because even modest absorption of intense sunlight can exceed the infrared loss. A successful passive cooling surface must therefore perform two apparently separate optical tasks: reject most incoming solar energy and emit thermal radiation strongly in the wavelengths through which that radiation can escape.",
+        "additionalSourceExcerpts": [
+          "H This layered reasoning explains both the promise and the caution surrounding radiative cooling. The physical mechanism is real: a surface can send heat through a spectral opening while resisting solar gain. Yet the magnitude of that effect moves through a chain—from optical spectrum, to surface energy balance, to roof construction, to indoor conditions, and finally to human or energy outcomes. A useful diagram should keep these levels distinct. It should show incoming sunlight meeting a reflective layer, thermal emission leaving the surface through the atmospheric window, and conductive exchange moderated by insulation above the roof deck. It should not imply that every emitted ray reaches space or that a cooler coating guarantees an equally large reduction inside."
+        ],
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Question 34» y acepta «sunlight». La oración fuente dice «Sunlight arrives mainly at short wavelengths and can heat the surface if absorbed.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Incoming short-wave arrow.",
+        "ledgerRowSha256": "42791ed2a46c56dda5e4ff15f571e489761d45c7d565dc423c3418be94cd8509",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A,H"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "fill",
+          "questionText": "Question 35",
+          "acceptedResponses": [
+            "top layer"
+          ]
+        },
+        "sourceExcerpt": "A pale top layer may scatter",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 35» y acepta «top layer». La oración fuente dice «A pale top layer may scatter». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Upper scattering layer.",
+        "ledgerRowSha256": "3b85d3b06c1c0aa82af582a00cce89487069e0d68f88fe46cce9d143e766e693",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "fill",
+          "questionText": "Question 36",
+          "acceptedResponses": [
+            "metallic reflector"
+          ]
+        },
+        "sourceExcerpt": "a metallic reflector can return radiation",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 36» y acepta «metallic reflector». La oración fuente dice «a metallic reflector can return radiation». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Reflecting layer.",
+        "ledgerRowSha256": "f3bff7b8dcd49ad139e1a33f35019cae80dc8020c4ae9d9f586a291da618a73d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "fill",
+          "questionText": "Question 37",
+          "acceptedResponses": [
+            "thermal emission",
+            "thermal radiation"
+          ]
+        },
+        "sourceExcerpt": "thermal emission leaving the surface",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 37» y acepta «thermal emission» / «thermal radiation». La oración fuente dice «thermal emission leaving the surface». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Upward long-wave arrow.",
+        "ledgerRowSha256": "c77fbe4505e98a481da75c77bd7259ddda61752e17d833fb42ac3cecf2eb91d0",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "fill",
+          "questionText": "Question 38",
+          "acceptedResponses": [
+            "atmospheric window"
+          ]
+        },
+        "sourceExcerpt": "atmospheric window",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 38» y acepta «atmospheric window». La oración fuente dice «atmospheric window». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Transparent band.",
+        "ledgerRowSha256": "aa46371ba05caa28ebefff9ec8362ea53c0283eafa6a1f296f98f2c0082fbd09",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B,H"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "fill",
+          "questionText": "Question 39",
+          "acceptedResponses": [
+            "insulation"
+          ]
+        },
+        "sourceExcerpt": "Insulation limits conductive exchange",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 39» y acepta «insulation». La oración fuente dice «Insulation limits conductive exchange». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Heat-flow limiting layer.",
+        "ledgerRowSha256": "a6b072f1090044bad61fe5cfbaa2556d9698c722c6b35921c706a6e4e1d10516",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D,H"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "fill",
+          "questionText": "Question 40",
+          "acceptedResponses": [
+            "roof deck"
+          ]
+        },
+        "sourceExcerpt": "roof deck and insulation",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 40» y acepta «roof deck». La oración fuente dice «roof deck and insulation». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Structural base.",
+        "ledgerRowSha256": "e5e6344cd55217083e5e38b909aee59afe81949e2a14bfaa7727e0591849be15",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G,H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/reading/set24-reading-content-v1.0.2.json",
+        "sha256": "d701ff78de1311b4fe00bb3d511450de621331ee4d6000913066be3aa86caefd"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "1515077c5d8ff89b7ae025ab2ed85031971b580967659dcf6b826de7b302965a",
+      "canonicalQuestionProjectionSha256": "673558a281ff8121c3071f89c0eac187e6f3d12efb5c052f4dad1e8c4dcbeed1"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Dog’s name: ______",
+          "acceptedResponses": [
+            "Bramble",
+            "bramble"
+          ]
+        },
+        "evidenceSegment": "P1-T04",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "His name is Bramble — B R A M B L E. The receptionist at our old clinic once wrote Brandon, so I always spell it now.",
+        "timecode": {
+          "startFrame": 4101281,
+          "endFrame": 8365172,
+          "sampleRateHz": 44100,
+          "startSeconds": 92.999569,
+          "endSeconds": 189.68644,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "43db808b10d7b60adfe8143ea4803d06fbf83c195763fc239db1dd83a40c8d1f",
+        "planSegmentTextSha256": "110386fe87e329bff94ee7e44fc245b9466866d88affd4ff77d1e7cd50369f0b"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Breed: ______",
+          "acceptedResponses": [
+            "lurcher"
+          ]
+        },
+        "evidenceSegment": "P1-T06",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "They wondered whether he had some collie in him, but every official page says lurcher. So please put lurcher.",
+        "timecode": {
+          "startFrame": 4101281,
+          "endFrame": 8365172,
+          "sampleRateHz": 44100,
+          "startSeconds": 92.999569,
+          "endSeconds": 189.68644,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cc255fcfbaf4b195bf31c1522141e48d19678a4c39ecc7b60c6d19f166febea1",
+        "planSegmentTextSha256": "a99ced6236bc873574bcfc84fcc7d352d85225e86fa3824ba570ac7935be1771"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Age: ______ years",
+          "acceptedResponses": [
+            "3",
+            "three"
+          ]
+        },
+        "evidenceSegment": "P1-T08",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "We do know it. He turned three in January. His adoption form still says two, but that was completed before his birthday.",
+        "timecode": {
+          "startFrame": 4101281,
+          "endFrame": 8365172,
+          "sampleRateHz": 44100,
+          "startSeconds": 92.999569,
+          "endSeconds": 189.68644,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3b64c61d4d9bf8bc4e5b77268fd1322319676f31968c952a7fa2689dcf6bff71",
+        "planSegmentTextSha256": "eeea543b4056973f76ae3f41585bc3be175795ff5ab3b6c9a3169b8916552eb9"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Final four microchip digits: ______",
+          "acceptedResponses": [
+            "4827"
+          ]
+        },
+        "evidenceSegment": "P1-T10",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "I've found it. The photocopy ends four, two, eight, seven, but someone switched the middle digits. The original certificate ends four, eight, two, seven — that's 4827 on the form.",
+        "timecode": {
+          "startFrame": 4101281,
+          "endFrame": 8365172,
+          "sampleRateHz": 44100,
+          "startSeconds": 92.999569,
+          "endSeconds": 189.68644,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e136737fc69dacf54a225270df6a2c6dd4d68735ffab38416d330b95088aca38",
+        "planSegmentTextSha256": "798f6a827f742f60f6cfca91c959186e1ea3e0f3e3ead5cfe02f51fe8741c43d"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Previous vaccination month: ______",
+          "acceptedResponses": [
+            "March",
+            "march"
+          ]
+        },
+        "evidenceSegment": "P1-T12",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Yes, it was in March. We adopted him in February, then the rescue centre arranged the vaccination the following month.",
+        "timecode": {
+          "startFrame": 4101281,
+          "endFrame": 8365172,
+          "sampleRateHz": 44100,
+          "startSeconds": 92.999569,
+          "endSeconds": 189.68644,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9dd1cffe5138fd7e8994744b07864649e7b62c6fa0611cb666a08e8d46f2a0f1",
+        "planSegmentTextSha256": "f95b63d3f2ccfb183463a164e23de8c608f44333bbc4ea38a27bed65d0e7c82f"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Preferred confirmation method: ______",
+          "acceptedResponses": [
+            "text message",
+            "text"
+          ]
+        },
+        "evidenceSegment": "P1-T14",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "A text message would be best. I rarely hear my phone while I'm working, and clinic emails sometimes disappear into the junk folder, but I check texts at lunch.",
+        "timecode": {
+          "startFrame": 8396042,
+          "endFrame": 12398420,
+          "sampleRateHz": 44100,
+          "startSeconds": 190.38644,
+          "endSeconds": 281.143311,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "23800261d13561d63ed8cfc9a3b59dc650996e18d52a4b2eb328eec8db091a75",
+        "planSegmentTextSha256": "9dfd10fa5c00c89e31cfdacd24d6be199a7c2afe38da69f27cfa40546ece7ab5"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Which clinic location does Niamh choose?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "the mobile clinic beside the library"
+        },
+        "evidenceSegment": "P1-T16",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "I'll choose the mobile clinic beside the library. Parking near the main surgery is difficult, and the school is across the city. The library is a short walk from my office, so I can bring Bramble over after work.",
+        "timecode": {
+          "startFrame": 8396042,
+          "endFrame": 12398420,
+          "sampleRateHz": 44100,
+          "startSeconds": 190.38644,
+          "endSeconds": 281.143311,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "05c2362ab113c748773c54a468dd64a9b2d64e8c47e6221521640ddede19894c",
+        "planSegmentTextSha256": "c1659b1bec4d3bd64427b0bc7e948eadeef7ef9a597199034d006cd6a8ca7e0f"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "Why does Niamh reject the earlier appointments?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "she has a work meeting"
+        },
+        "evidenceSegment": "P1-T18",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "Bramble is fine in the morning, and transport isn't the issue. I have a work meeting that runs until three, so the two earlier times are impossible. Four-forty-five is the one I can manage.",
+        "timecode": {
+          "startFrame": 8396042,
+          "endFrame": 12398420,
+          "sampleRateHz": 44100,
+          "startSeconds": 190.38644,
+          "endSeconds": 281.143311,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "29090ae0e44af28ac34e566ab05318d80c5d00f9258ed6e58bde0c6638d953ac",
+        "planSegmentTextSha256": "4c445a750c980154c1f21f03a461f0aa3497823d3c59ca9e6e73b4e99e3ecc7b"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "What must Niamh bring to the appointment?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the vaccination record"
+        },
+        "evidenceSegment": "P1-T19",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "I've booked that. Please arrive ten minutes early and bring his vaccination record, even though some entries came from the rescue centre. We can scan the chip at the van, so the chip certificate is optional, and we don't need proof of address.",
+        "timecode": {
+          "startFrame": 8396042,
+          "endFrame": 12398420,
+          "sampleRateHz": 44100,
+          "startSeconds": 190.38644,
+          "endSeconds": 281.143311,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f4c5036034191e4aaec1cbd8960174d44df0e362816859fac50ec3a2b3adf5e3",
+        "planSegmentTextSha256": "abdffcf31305d72c121372a098207301fc664dc28b426f159b9288f084e9a502"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "How will Niamh pay the clinic fee?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "by card on arrival"
+        },
+        "evidenceSegment": "P1-T21",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Good. Payment is taken at the van, and you can pay by card when you arrive. The link on our website is only for donations; it won't accept clinic fees. We no longer take cash at the mobile service.",
+        "timecode": {
+          "startFrame": 12427085,
+          "endFrame": 13751138,
+          "sampleRateHz": 44100,
+          "startSeconds": 281.793311,
+          "endSeconds": 311.817188,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1c7030de32f9ff5799748fb868d42da3e5ace51d2a781003925430e2822bf6e2",
+        "planSegmentTextSha256": "cfcf96c599405a1af369a1a933e03943f90d30261c919141d524941a5e79f1f3"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "information board",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "P2-S02",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Begin in the car park in the south-west corner. Before you join the trail, look to the right, along the north edge of the parking area. The information board is there, beside the water tap. Do not confuse it with the small notice fixed to the toilets opposite. The main board carries today's closure, the ranger telephone number, and the route-check time, so each group should stop there.",
+        "timecode": {
+          "startFrame": 17662793,
+          "endFrame": 21747526,
+          "sampleRateHz": 44100,
+          "startSeconds": 400.516848,
+          "endSeconds": 493.141179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "db26f6b07726cab8068f5207612a01f21f01d85df77cffc8ae55bebfb73f2b66",
+        "planSegmentTextSha256": "f78c734cb2994abc67010c957a023b2f05b9046fb9f475a3036dc3e2abf0ef2d"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "tide gate",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "P2-S03",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "From the board, take the pale gravel path north-east. It reaches a low stone bridge over the stream. Cross the bridge but do not turn beside it; the narrow track following the bank serves the fields. Continue until the gravel becomes dark compacted earth at a wooden barrier on the coast. That barrier is the tide gate. You may hear the sea before you see it, but stay on the maintained surface until you reach the gate.",
+        "timecode": {
+          "startFrame": 17662793,
+          "endFrame": 21747526,
+          "sampleRateHz": 44100,
+          "startSeconds": 400.516848,
+          "endSeconds": 493.141179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "82173155d081218b62859d7688f2877e4c623f4c151f94dd0e198decad46db1d",
+        "planSegmentTextSha256": "04898ed9c1cdf88af4aa827b665316c190da5514f0f08c7893d4c79c9baeeec8"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "start of winter diversion",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "P2-S04",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "In summer the usual trail passes through that barrier and follows the shore. In winter, waves can cut off the beach with very little warning. The start of the winter diversion lies just before the gate, on its eastern side. Choose the narrower path bending inland, marked by two orange arrows. The broad track continuing north looks easier, but it leads towards the closed shore and must not be used.",
+        "timecode": {
+          "startFrame": 17662793,
+          "endFrame": 21747526,
+          "sampleRateHz": 44100,
+          "startSeconds": 400.516848,
+          "endSeconds": 493.141179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "78e5e8fcfd125fce18bdab76416027979033f61e893e5e5c7182fd1fc3e53293",
+        "planSegmentTextSha256": "2494ddb914a90a912349efc59c8fe01a7ec0ae0dde87ccaffa54107050482400"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "emergency marker 3",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "P2-S05",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The diversion climbs gradually between two fields. First you pass emergency marker two beside a dry-stone wall. That is not the point you need to label. Continue to the next bend, where a line of wind-shaped pine trees crosses your view. Immediately beyond the trees stands emergency marker three. The number is printed on both faces of the yellow post, so you can identify it when walking in either direction.",
+        "timecode": {
+          "startFrame": 21809266,
+          "endFrame": 25883384,
+          "sampleRateHz": 44100,
+          "startSeconds": 494.541179,
+          "endSeconds": 586.924807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1fe57462fde783bfff301ab600fc71cf9daedc11f105c6867bd5781fbf1a5fed",
+        "planSegmentTextSha256": "6e6d92ec34399e78a6320f8d9edd6b28d3125284873c44ba83c34c323be09649"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "warming shelter",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "evidenceSegment": "P2-S06",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "After marker three, the path descends towards two buildings near the service road. The larger grey building is the ranger store, which is locked to visitors. The warming shelter is the smaller building west of it, directly beside the walking path. It has a green roof and a covered doorway. If you reach the vehicle barrier by the store, you have gone too far east and should return to the path.",
+        "timecode": {
+          "startFrame": 21809266,
+          "endFrame": 25883384,
+          "sampleRateHz": 44100,
+          "startSeconds": 494.541179,
+          "endSeconds": 586.924807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7dacbdbee97a3d9d843e098e33abd35d4b6966409cb3c574bb530a7b4efe369f",
+        "planSegmentTextSha256": "eb074a56b2148a478c839bb547d87e701d379b6492ef4452ded03e47dd8c4f80"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "lookout point",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "P2-S07",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "Beyond the shelter, continue north and ignore the right-hand track dropping to the beach steps; those steps are closed. The safe trail curves left around the headland. It finishes at the lookout point, just south of the north arrow on your map. A rope barrier marks the end. There is no second exit beyond it, so anyone who is already tired should turn around at the shelter rather than attempt the final exposed section.",
+        "timecode": {
+          "startFrame": 21809266,
+          "endFrame": 25883384,
+          "sampleRateHz": 44100,
+          "startSeconds": 494.541179,
+          "endSeconds": 586.924807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5e0754840e868f81a76931c17d4689ec65076172271cc20749bf983f9c102389",
+        "planSegmentTextSha256": "eb9a7caf4225420f0947f225932b9d2b79afd933178a278b726c91fe3432701c"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "fill",
+          "questionText": "What should walkers check before leaving home?",
+          "acceptedResponses": [
+            "weather forecast",
+            "forecast"
+          ]
+        },
+        "evidenceSegment": "P2-S09",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Now, the safety details. Conditions on the headland can differ sharply from those in the nearest town, and clear sky above the car park tells you nothing about mist moving in from the water. Before leaving home, check the weather forecast specifically for this coast. If the warning is amber or red, postpone the walk rather than hoping it will improve.",
+        "timecode": {
+          "startFrame": 25931894,
+          "endFrame": 30302816,
+          "sampleRateHz": 44100,
+          "startSeconds": 588.024807,
+          "endSeconds": 687.138685,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c775defea03a55e9edd90019abbdfd32d56a0932e83fc9cfb5ba537ed08c6dd8",
+        "planSegmentTextSha256": "413f5687cd64685f61c57d5f47e54801e80795b28ae2e359f8d9aa8f12fc093f"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "fill",
+          "questionText": "What colour are the emergency markers?",
+          "acceptedResponses": [
+            "yellow"
+          ]
+        },
+        "evidenceSegment": "P2-S10",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Some older online photographs show red emergency posts, and a few faded red bases remain beside the path. Those markers were replaced two years ago: every current marker is yellow. In an emergency, quote the number on the nearest yellow post so the rescue team knows which approach to use.",
+        "timecode": {
+          "startFrame": 25931894,
+          "endFrame": 30302816,
+          "sampleRateHz": 44100,
+          "startSeconds": 588.024807,
+          "endSeconds": 687.138685,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7b6ee5cd34acd74e89fa032368beb8de0030e012a546f40439317409f4a04ce3",
+        "planSegmentTextSha256": "c63a530e31be023fc42a8cb5cab0322f16a8e4080952e960938fac90c57f008c"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "fill",
+          "questionText": "What should walkers keep in a waterproof bag?",
+          "acceptedResponses": [
+            "charged phone",
+            "phone"
+          ]
+        },
+        "evidenceSegment": "P2-S11",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Carry drinking water and an extra warm layer, even for a short walk. A paper map is useful when reception is weak, but it cannot be used to call for help. Put a charged phone in a waterproof bag and check its battery before leaving. The rescue team asks you to protect that phone from spray because it provides both contact and a location reading.",
+        "timecode": {
+          "startFrame": 25931894,
+          "endFrame": 30302816,
+          "sampleRateHz": 44100,
+          "startSeconds": 588.024807,
+          "endSeconds": 687.138685,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "75d1bb420760d6d684d8be4708e17a3fe3f37a04354042da6997d046ec0a229a",
+        "planSegmentTextSha256": "93ea31521b98e3d61cf01442f15f318ffc7746207b4fca474d957cc982ce90f5"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "fill",
+          "questionText": "What should walkers do if water covers the lower band at the tide gate?",
+          "acceptedResponses": [
+            "turn back"
+          ]
+        },
+        "evidenceSegment": "P2-S12",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "At the tide gate, inspect the striped depth post before taking the inland turn. If water already covers the lower white band, turn back. Do not wait beside the gate for the level to drop, since the next surge may be higher, and never try to reach the diversion by stepping across wet rocks. The safe decision applies even when other walkers appear to be continuing.",
+        "timecode": {
+          "startFrame": 25931894,
+          "endFrame": 30302816,
+          "sampleRateHz": 44100,
+          "startSeconds": 588.024807,
+          "endSeconds": 687.138685,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2a09ff5e00d515090db4d3dabeb8adebd513b5c121d4d6df574e95748ec733ac",
+        "planSegmentTextSha256": "f623bbe55ff9c56e7531887d3cf3135dc2e2c0d9ea72a1426cf689ca9dd0827f"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "Why do the group decide to use replica swatches?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "They avoid risk to collection objects."
+        },
+        "evidenceSegment": "P3-T03",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "That would still cause irreversible change to original material. When the same question can be answered with a replica, there is no ethical reason to consume a collection object. Use newly dyed wool swatches instead. You can make enough pieces for repetition, and their known recipes will help you interpret unexpected fading.",
+        "timecode": {
+          "startFrame": 35238350,
+          "endFrame": 39846944,
+          "sampleRateHz": 44100,
+          "startSeconds": 799.055556,
+          "endSeconds": 903.558821,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c835255e21b2b2ad92cc5d31e0e83328bb0c55b2a89f914976d1fabc33b5e218",
+        "planSegmentTextSha256": "67107a8605d23efc7c3c75ed0bbd538f6b52ed832f4a3bb0d006d240db7e763e"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "What will provide the main colour measurements?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "colorimeter readings"
+        },
+        "evidenceSegment": "P3-T08",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Keep the photographs as a visual record, but don't make them the main data. Camera settings, processing, and screens can alter appearance. Take baseline and weekly colorimeter readings for repeatable numerical measurements. Average several points on each swatch so one dark fibre does not control the result.",
+        "timecode": {
+          "startFrame": 39875609,
+          "endFrame": 44519331,
+          "sampleRateHz": 44100,
+          "startSeconds": 904.208821,
+          "endSeconds": 1009.508639,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7aaf9e1b23d729386c54a4a8a74f7d947f8b9cf2df371012fb0946b4245b3152",
+        "planSegmentTextSha256": "26cbd4e1abe16bb96ba2bc5276b29617161840ddb2162f9453948e18e2037d77"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "What will be kept equal between the two lamp groups?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the total light dose"
+        },
+        "evidenceSegment": "P3-T10",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Equal hours are not necessarily equal exposure; one lamp may deliver more energy per hour. Adjust the duration so both groups receive the same total light dose. Then spectrum remains the independent variable. Include the calculation so another researcher can reproduce the schedule with lamps of different power.",
+        "timecode": {
+          "startFrame": 39875609,
+          "endFrame": 44519331,
+          "sampleRateHz": 44100,
+          "startSeconds": 904.208821,
+          "endSeconds": 1009.508639,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bf2562586cad4de674299b11e6dc9357f3222dcf556e10760167f39ac5cc31d7",
+        "planSegmentTextSha256": "c29c893180fcb5f1f597db3eaf9a99bd4154de181757c2b7d4af85d34f706c16"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "What is the purpose of the dark control?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "to detect colour change not caused by light"
+        },
+        "evidenceSegment": "P3-T12",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "No, the dark set has an analytical purpose. It reveals colour changes caused by reasons other than light, such as handling or dye instability. Keep it in the same room for comparable temperature and humidity, open it only for measurements, and handle it exactly like the illuminated swatches.",
+        "timecode": {
+          "startFrame": 39875609,
+          "endFrame": 44519331,
+          "sampleRateHz": 44100,
+          "startSeconds": 904.208821,
+          "endSeconds": 1009.508639,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6e211a99db1aa0ebe74ef42baa0947bda684de718feae535e7e2a3ded35a1d72",
+        "planSegmentTextSha256": "0b9d4dc02b488b97fb1c4fa7cc5d03ff47985e7adbec01c15deef52b8c79112a"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "How will the students reduce the effect of shelf position?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "randomise positions each week"
+        },
+        "evidenceSegment": "P3-T14",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Recording temperature is useful, but fixed samples would make location a hidden variable. Randomise the swatch positions each week, spreading shelf differences across treatments instead of confusing them with one lamp. Prepare the sequence in advance and retain it in the laboratory log.",
+        "timecode": {
+          "startFrame": 39875609,
+          "endFrame": 44519331,
+          "sampleRateHz": 44100,
+          "startSeconds": 904.208821,
+          "endSeconds": 1009.508639,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bb96a88dedfc3c9a5c06b7ff759bd2641c41d7706dc970d17da2f3938a8b6169",
+        "planSegmentTextSha256": "2bd6f456e0163be79ef935227bad05d94b16499160a45279a7272d0312f81fb2"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "What main limitation will the report acknowledge?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Accelerated exposure may differ from slow gallery ageing."
+        },
+        "evidenceSegment": "P3-T16",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "You can compare treatments, but don't make that conversion. Short, intense exposure may not reproduce slow ageing under gallery conditions; reactions can change with intensity, temperature, and rest periods. State that as the main limitation and recommend longer observation before translating results into display years.",
+        "timecode": {
+          "startFrame": 44550201,
+          "endFrame": 49470132,
+          "sampleRateHz": 44100,
+          "startSeconds": 1010.208639,
+          "endSeconds": 1121.771701,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c684c7612f1daa6d53fcf8e99b58bc6858b897c61a270deca59f339d53da6485",
+        "planSegmentTextSha256": "eaff275fb3078f523ba4cf0fbe0e9ca38b94fe70218fc5f6bd3a1aa066348704"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "maintaining the dye preparation log",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Mei Tan"
+        },
+        "evidenceSegment": "P3-T19",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "I've already tested the dye recipes, so I can maintain the preparation log. I'll enter fibre weight, dye concentration, bath temperature, and every batch number as the swatches are made. That will be more reliable than trying to reconstruct a batch from labels on the drying trays.",
+        "timecode": {
+          "startFrame": 44550201,
+          "endFrame": 49470132,
+          "sampleRateHz": 44100,
+          "startSeconds": 1010.208639,
+          "endSeconds": 1121.771701,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bb437fe667dbe17ec0107d657c1c018ef482e33b12d1d49eea1e4482fa08b53e",
+        "planSegmentTextSha256": "2bf694cf0b4c744dfff57756a520057b708da3a2d140195d44710a75c45ee7d5"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "calibrating the colorimeter",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Lachlan Price"
+        },
+        "evidenceSegment": "P3-T20",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Then I'll handle the colorimeter calibration. I used the same model during my placement. Before every weekly session I'll run the white-tile check, record the result, and repeat it if the instrument has drifted beyond the manufacturer's tolerance.",
+        "timecode": {
+          "startFrame": 44550201,
+          "endFrame": 49470132,
+          "sampleRateHz": 44100,
+          "startSeconds": 1010.208639,
+          "endSeconds": 1121.771701,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "21419fc0f83262758b72a9d0e3f07604e10f1c84ec409b80366328fa7a41a508",
+        "planSegmentTextSha256": "8305f60978e0cdd0812cd75988b475a307883e7136befa4d6e1892d0ebf4942f"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "approving the maximum exposure ceiling",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Olivia Mercer"
+        },
+        "evidenceSegment": "P3-T21",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Good. The maximum exposure ceiling must be approved by me. It affects laboratory safety and sets the point beyond which the accelerated treatment would no longer be ethically or scientifically defensible. You can calculate the proposed dose, but place my name in the approval column.",
+        "timecode": {
+          "startFrame": 44550201,
+          "endFrame": 49470132,
+          "sampleRateHz": 44100,
+          "startSeconds": 1010.208639,
+          "endSeconds": 1121.771701,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "28c02dfefd50018d0556b1693860ddcca5fc689e1870094091b9c076d1355dad",
+        "planSegmentTextSha256": "6dab428b6ca156beb64d5f2779e2ed13ccc63fdab05376ed077df0f29b7d32ae"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "contacting the textile workshop",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Mei Tan"
+        },
+        "evidenceSegment": "P3-T22",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "That leaves the replica cloth. I met the textile workshop manager last term, so I'll contact the workshop and confirm the fibre specification, weave, quantity, and delivery date. I'll copy Lachlan into the message because he needs the cloth dimensions for the cutting plan.",
+        "timecode": {
+          "startFrame": 49501002,
+          "endFrame": 52381344,
+          "sampleRateHz": 44100,
+          "startSeconds": 1122.471701,
+          "endSeconds": 1187.785578,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "31df66a83ae988669f7c7a044629dffac0200e71dc0e3cac8bddfc3ba30672b9",
+        "planSegmentTextSha256": "47fec6420631f5f8b9823e00362712d0653f84bc7346d52ca4d51fea29e0e878"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Buoyancy is aided by ______ within the outer tissue.",
+          "acceptedResponses": [
+            "air spaces"
+          ]
+        },
+        "evidenceSegment": "P4-S02",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "The first transport filter is buoyancy. Size alone is a poor guide: a large seed whose tissues fill with water may sink, while a smaller one with persistent internal cavities can float. The crucial feature is air spaces within the outer tissue, which reduce overall density and keep the seed near the surface. Experiments use several intact samples because one cracked coat or unusually dense individual may behave differently.",
+        "timecode": {
+          "startFrame": 56072533,
+          "endFrame": 60436795,
+          "sampleRateHz": 44100,
+          "startSeconds": 1271.486009,
+          "endSeconds": 1370.448866,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c57973aaaa6dd29c87e7a12e3c2d87ba6084cab57a09cb5ab7b7f2aee4536ff0",
+        "planSegmentTextSha256": "a742f8fe55a0044c08eff708b9bf9af4bfaeed570c66b4a5830b01d208148ea0"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "A ______ slows the entry of sea water.",
+          "acceptedResponses": [
+            "waxy coat"
+          ]
+        },
+        "evidenceSegment": "P4-S03",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "A second useful feature protects the embryo from immediate salt exposure. Abrasion and pre-existing cracks reduce that protection, and microscopic wear increases permeability during a long voyage. The barrier is a waxy coat, which slows the entry of sea water but never makes the seed permanently waterproof. Its value therefore depends on both its condition and the journey's length.",
+        "timecode": {
+          "startFrame": 56072533,
+          "endFrame": 60436795,
+          "sampleRateHz": 44100,
+          "startSeconds": 1271.486009,
+          "endSeconds": 1370.448866,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ceb19d85975af186dd086b5f984a6973cb396cebff579b78e244dee3a9ee2b08",
+        "planSegmentTextSha256": "0dbb3846fa604b9501cb5d094553dad788763202de2ddbd634158142897778af"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Seeds may be transported by ______.",
+          "acceptedResponses": [
+            "ocean currents",
+            "currents"
+          ]
+        },
+        "evidenceSegment": "P4-S04",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Once afloat, a seed may move along a coast, enter open water, and approach another island. The main driver is ocean currents, not the wind direction observed on one day. Multi-year drifter records reveal recurring pathways, but they still express probabilities. Storms can push an individual away from the average route or hold it in circulating water much longer.",
+        "timecode": {
+          "startFrame": 56072533,
+          "endFrame": 60436795,
+          "sampleRateHz": 44100,
+          "startSeconds": 1271.486009,
+          "endSeconds": 1370.448866,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7af717c5c18bb616d760668276ea89f36322c62fe04c505635c8bfa8040486d1",
+        "planSegmentTextSha256": "e334fca721a1ca5bc3632f807ccb83d43a815482e05a5ec923502b3a56d47014"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Storm debris can trap seeds at the ______.",
+          "acceptedResponses": [
+            "tide line",
+            "tideline"
+          ]
+        },
+        "evidenceSegment": "P4-S05",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Arrival creates another filter. Waves may throw seeds onto bare rock, where they dry or wash back immediately. Storm debris offers a better chance when it catches a seed at the tide line, above ordinary waves. Leaves and wood can provide shade and reduce movement, though heavy debris may bury the seed too deeply. A favourable feature at one stage can therefore create a later problem.",
+        "timecode": {
+          "startFrame": 60494125,
+          "endFrame": 64843849,
+          "sampleRateHz": 44100,
+          "startSeconds": 1371.748866,
+          "endSeconds": 1470.382063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "48519746126e988bfc9f2b4b3685ffff36d9612b092e1bf2957247d920af0ab7",
+        "planSegmentTextSha256": "1f4e3db4a14cc18cdfb4907312c3d09b8b94b1b1ed3ac5011a562090c5d3be28"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Rain supplies ______ that removes salt.",
+          "acceptedResponses": [
+            "fresh water"
+          ]
+        },
+        "evidenceSegment": "P4-S06",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "A stranded seed remains surrounded by salt. Repeated rain gradually lowers the concentration around the embryo and allows early metabolism to begin. The rain supplies fresh water, which drains through the upper beach and flushes the coat and sand. Tests that replace salt water instantly may exaggerate the benefit, because natural flushing is intermittent and depends on grain size and drainage.",
+        "timecode": {
+          "startFrame": 60494125,
+          "endFrame": 64843849,
+          "sampleRateHz": 44100,
+          "startSeconds": 1371.748866,
+          "endSeconds": 1470.382063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "21b218d7de74a16c6c64d77e2ee8d08b3d1bcbe9c735bc5b1ed17a3e160f04af",
+        "planSegmentTextSha256": "75408f73835f0f921e3bd9da8e7641c23310861c32a5f9d334b4efe493cd7285"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "The emerging root needs ______ for anchorage.",
+          "acceptedResponses": [
+            "stable soil"
+          ]
+        },
+        "evidenceSegment": "P4-S07",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "A viable, desalted seed still cannot establish on ground that shifts with every wave. The emerging root needs stable soil for anchorage, while organic matter retains moisture. The balance matters: saturated ground may lack oxygen, whereas rapidly draining sand leaves seedlings dry. Establishment also requires light and a period without renewed storm disturbance.",
+        "timecode": {
+          "startFrame": 60494125,
+          "endFrame": 64843849,
+          "sampleRateHz": 44100,
+          "startSeconds": 1371.748866,
+          "endSeconds": 1470.382063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e50735544f3696820c99253e9d7da98c96da4b64b0ffe6fc7696c42becbf2d5e",
+        "planSegmentTextSha256": "1fc87017d3dd355499b6d24ad54ff101de6457eef75dd6d926889a5f811a73aa"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "A flotation trial does not establish seed ______.",
+          "acceptedResponses": [
+            "viability"
+          ]
+        },
+        "evidenceSegment": "P4-S09",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "The second half of the problem concerns evidence and its limits. A flotation trial demonstrates buoyancy, but buoyancy alone does not establish viability. A seed may remain on the surface for months while its embryo loses the ability to germinate. A stronger experiment tests germination after different periods in salt water and compares the result with an unexposed control, although even that design still simplifies the voyage.",
+        "timecode": {
+          "startFrame": 64892359,
+          "endFrame": 69091222,
+          "sampleRateHz": 44100,
+          "startSeconds": 1471.482063,
+          "endSeconds": 1566.694376,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "68028debe82f04d63cb5ac00cc778208c613753e8cf95b12836c22695f2a26e3",
+        "planSegmentTextSha256": "96cca8d94464b0734ec64271b8a310e5579a672d30a00a2e1ddd5fd917d2793e"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "Laboratory tanks simplify coastal ______.",
+          "acceptedResponses": [
+            "turbulence"
+          ]
+        },
+        "evidenceSegment": "P4-S10",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Laboratory tanks are valuable because temperature, salinity, and duration can be repeated. Their weakness is that they simplify coastal turbulence. Real shores subject seeds to breaking waves, abrasion, burial, and repeated sinking and resurfacing. Wave simulators improve realism, but regular mechanical motion still lacks the unpredictable sequence of calm periods and storms.",
+        "timecode": {
+          "startFrame": 64892359,
+          "endFrame": 69091222,
+          "sampleRateHz": 44100,
+          "startSeconds": 1471.482063,
+          "endSeconds": 1566.694376,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "696a8086e1295b6fa983a52f3109a72e0e5d7b3cddc5a6fedafc33277c94879a",
+        "planSegmentTextSha256": "2d3adb3c51d4fc3c453566e129410650d41978b9f97a182614612dffa453e02c"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "Small field collections may introduce ______ bias.",
+          "acceptedResponses": [
+            "sampling"
+          ]
+        },
+        "evidenceSegment": "P4-S11",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Field collections have a different weakness. Researchers often recover only a few stranded seeds, so sampling can bias the apparent success rate. One storm may deposit many seeds on a monitored beach while a nearby shore receives none. Surveys should cover several sites and seasons, though large, recognisable seeds may still be reported more often than damaged specimens.",
+        "timecode": {
+          "startFrame": 64892359,
+          "endFrame": 69091222,
+          "sampleRateHz": 44100,
+          "startSeconds": 1471.482063,
+          "endSeconds": 1566.694376,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a8c51e7fd8eacf88c5496ef214ce39fd70c8476acce4260b533bf068046a64c5",
+        "planSegmentTextSha256": "aa1f9e72d2ef9a017e01560bf86c0ac546b4acb2a480e9b9d730db47496918b2"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "After germination, ______ may prevent permanent colonisation.",
+          "acceptedResponses": [
+            "competition"
+          ]
+        },
+        "evidenceSegment": "P4-S12",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Finally, arrival and germination do not equal permanent colonisation. Existing plants may already occupy the available light, nutrients, water, and root space. In other words, competition can eliminate a young plant after every dispersal stage has apparently succeeded. Herbivory, disease, or the absence of pollinators may create further barriers, but competition is often the first ecological explanation tested when seedlings emerge and then disappear.",
+        "timecode": {
+          "startFrame": 64892359,
+          "endFrame": 69091222,
+          "sampleRateHz": 44100,
+          "startSeconds": 1471.482063,
+          "endSeconds": 1566.694376,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a3adc45238c309ed260dd3dcecb450f0b3d0738837c5ad11eff0ba630570bbdd",
+        "planSegmentTextSha256": "361f6f44dac96ff7b525ca1dc757fb6945d281a3e8c1ba2837701a5626e0b052"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/set24-listening-content-v1.0.12.json",
+        "sha256": "34d53c51543ef75262d4f0a89a4cae476330cd82210f5f0fb4fd9ed87a4316d2"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "5bccf5e65dfe00797b4534c9dc07b7281c0fd5dcea5dc7cab147c59fcf0ccd56",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-24/set24-audio-production-plan.json",
+        "sha256": "d5e4d1d2743638fa81f11353647dd02d9d2c173989b0018b4d3cf1c790add879"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-eleven-v4-manifest.json",
+        "sha256": "599c19148d31b7646ce4477cc0e51a3a44e3e561dedc11f47f67d150f885661f"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-eleven-v4-progress.json",
+        "sha256": "1a9d3ab9098e24c8b9ea29823ab673f3d84b743b5f8e4527621c4e2ccfa5ad55"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-eleven-v4-qa.json",
+        "sha256": "2f35c1e01837b01002a16951ce0629b462c0e34a06673db6045aba67e9832e3d"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/set24-concat.txt",
+        "sha256": "d2275a08c884aafa03a77c6c05cab002e5ae70b66ae6af1854092639a033846e"
+      },
+      "concatPieceAggregateSha256": "981841de4bea09b97469e225b9ff539a807fe9c409fe2fcf0fd680f1fc4bcef3",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/ielts-set-24-listening-eleven-v4-master.wav",
+        "sha256": "54af38d473c4c03d88fee7c5698da9a85ceb24b894739d9062dd6f1c5d1add1d",
+        "frameCount": 77107521,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/listening/elevenlabs-v4/ielts-set-24-listening-eleven-v4.mp3",
+        "sha256": "7ebff499f45432e9b3550a0ee7a500040471b3b39bf70ca0a84a41605229dfb0"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-24.mp3",
+        "sha256": "7ebff499f45432e9b3550a0ee7a500040471b3b39bf70ca0a84a41605229dfb0"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "32050cf3f80021f434dc535b8028b19b9686d3c338b4b453d8f2b3ff2c2d8372"
+  }
+}

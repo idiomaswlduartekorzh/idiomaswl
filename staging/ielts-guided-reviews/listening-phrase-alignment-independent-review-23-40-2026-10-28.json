@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_LISTENING_PHRASE_ALIGNMENT_INDEPENDENT_REVIEW",
+  "reviewMode": "independent-read-only-fail-closed",
+  "reviewedAt": "2026-10-28",
+  "scope": {
+    "sets": "23-40",
+    "setCount": 18,
+    "windowCount": 720
+  },
+  "sourceManifest": {
+    "path": "/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/manifest.json",
+    "sha256": "0b735ceba46ce7336c94e2bf86114ea6ec74715a99b2760c416e1fa6f0062719",
+    "status": "PENDING_INDEPENDENT_REVIEW"
+  },
+  "decision": "FAIL",
+  "releaseAuthorized": false,
+  "runtimeIntegrationAuthorized": false,
+  "humanListening": "PENDING",
+  "summary": {
+    "setsPass": 15,
+    "setsFail": 3,
+    "failedSets": [
+      26,
+      32,
+      36
+    ],
+    "windowsMechanicallyBound": 720,
+    "focusPhraseTraceabilityPass": 718,
+    "focusPhraseTraceabilityFail": 2,
+    "chronologicalTransitionsPass": 700,
+    "chronologicalTransitionsFail": 2,
+    "maximumWindowSeconds": 45.36,
+    "sourceBindingFilesVerified": 108,
+    "distinctRawAsrFilesVerified": 212,
+    "globalReason": "Release/runtime promotion is denied: Sets 26 and 36 contain false/truncated answer-evidence alignments, and Set 32 violates ordered Listening chronology twice."
+  },
+  "globalGates": {
+    "manifestAndArtifactHashes": "PASS",
+    "eighteenSetsSevenHundredTwentyWindows": "PASS",
+    "questionCoverageQ1ToQ40Each": "PASS",
+    "publicMp3EqualsApprovedElevenLabsV4": "PASS",
+    "ledgerPlanChunkRawAsrBinding": "PASS",
+    "timestampBoundsAndDuration": "PASS",
+    "questionOrderChronology": "FAIL",
+    "focusPhraseSemanticPhoneticTraceability": "FAIL",
+    "set38Question4AlternatePassProvenance": "PASS",
+    "releaseRuntimeRemainPendingFalse": "PASS",
+    "humanListening": "PENDING",
+    "global": "FAIL"
+  },
+  "chronologyFailures": [
+    {
+      "set": 32,
+      "code": "QUESTION_ORDER_TIMESTAMP_INVERSION",
+      "severity": "HIGH",
+      "previousQuestion": 32,
+      "previousStartSeconds": 1351.19288,
+      "question": 33,
+      "startSeconds": 1338.13288,
+      "detail": "Listening answers must occur in question order; the later-numbered question starts earlier in the same ordered completion task."
+    },
+    {
+      "set": 32,
+      "code": "QUESTION_ORDER_TIMESTAMP_INVERSION",
+      "severity": "HIGH",
+      "previousQuestion": 39,
+      "previousStartSeconds": 1525.671088,
+      "question": 40,
+      "startSeconds": 1521.291088,
+      "detail": "Listening answers must occur in question order; the later-numbered question starts earlier in the same ordered completion task."
+    }
+  ],
+  "acceptedTraceabilityNotes": [
+    {
+      "set": 24,
+      "question": 12,
+      "focus": "tide gate",
+      "recognized": "Tidegate.",
+      "basis": "phonetic compound collapse"
+    },
+    {
+      "set": 27,
+      "question": 18,
+      "focus": "tide board",
+      "recognized": "tideboard",
+      "basis": "phonetic compound collapse"
+    },
+    {
+      "set": 40,
+      "question": 7,
+      "focus": "ear drops",
+      "recognized": "eardrops",
+      "basis": "phonetic compound collapse"
+    },
+    {
+      "set": 35,
+      "question": 32,
+      "focus": "meltwater",
+      "recognized": "water",
+      "basis": "morphological partial ASR match bound to exact rendered turn; human listening remains pending"
+    },
+    {
+      "set": 35,
+      "question": 36,
+      "focus": "snowmelt",
+      "recognized": "melt",
+      "basis": "morphological partial ASR match bound to exact rendered turn; human listening remains pending"
+    }
+  ],
+  "set38Question4AlternatePass": {
+    "decision": "PASS",
+    "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-38/chunk-03-conditioned.json",
+    "rawAsrSha256": "6ce2347ec52544e076b94b96dd2e574f6d2d57b39cc61e8d5b4886ef9a18c273",
+    "decodeOptions": {
+      "language": "en",
+      "task": "transcribe",
+      "conditionOnPreviousText": true,
+      "wordTimestamps": true,
+      "temperature": 0.0
+    },
+    "recognizedWord": {
+      "word": "cloth",
+      "normalized": "cloth",
+      "startSeconds": 119.22,
+      "endSeconds": 119.68,
+      "probability": 0.996582
+    },
+    "masterWindowSeconds": {
+      "start": 196.869932,
+      "end": 198.029932
+    },
+    "provenanceNote": "The retry is explicitly conditioned, hash-bound to the same chunk WAV, deterministic at temperature 0.0, and contains exact word-level cloth evidence. This proves alignment provenance only; human listening remains pending."
+  },
+  "perSet": [
+    {
+      "set": 23,
+      "decision": "PASS",
+      "artifactSha256": "a48aa1091d2f0f6b70cc67d199d468615374482bb87260f6aa4936017ad5cc7c",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 24,
+      "decision": "PASS",
+      "artifactSha256": "2e0aafe941023005029412883662d46a25918d8f893fa9b69e58c0368dd5dee1",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 25,
+      "decision": "PASS",
+      "artifactSha256": "870738377a6f1b5e7030ed64100a61e9de2c3c446a05fd63b2cb4eebc8864c0d",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 26,
+      "decision": "FAIL",
+      "artifactSha256": "ca64fdecb2e708e902ffdf7b44cd34a9ce1975858f509d236467b36666fa4015",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "FAIL",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "question": 25,
+          "code": "FALSE_ALIGNMENT_TRUNCATED_AUDIO",
+          "severity": "BLOCKER",
+          "detail": "The 35-word answer-bearing closing-trail turn is mapped to only 'you.' (1/35 words, 0.84 s). The raw ASR ends the prior content and does not contain the target turn, so the timestamp cannot teach or expose Q25's answer evidence.",
+          "focusPhrase": "For the closing trail, the recorded version advertises next week’s guest by name. Since the booking is not confirmed, we should replace the name with the programme topic rather than delete the whole trail.",
+          "recognizedPhrase": "you.",
+          "mappedWords": "1/35",
+          "windowSeconds": 0.84,
+          "rawAsrSha256": "7d6205d55b6bbcecab929147d967616add70a1134ece85ab4f7b1e25477a720b"
+        }
+      ]
+    },
+    {
+      "set": 27,
+      "decision": "PASS",
+      "artifactSha256": "6c8dba02618384c71a14c88b99a8fcbad20199066d2e02e9ee4fae473c305d81",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 28,
+      "decision": "PASS",
+      "artifactSha256": "34e471e0d7a46872c42545890e83a41def564035a144951e8b55dcbd6817e3d1",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 29,
+      "decision": "PASS",
+      "artifactSha256": "bca907893c297f9f5f5a8877059678db1469fb739f73fda10582890b9435c62b",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 30,
+      "decision": "PASS",
+      "artifactSha256": "5a6d701013e6a49990271921cc2d475b9439d922a80ea3b2078bd62779d5eb18",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 31,
+      "decision": "PASS",
+      "artifactSha256": "a7e34e2634d986b440e7cb986bcc7d573d53ad780a0af19aa10e9ccc4ea149d6",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 32,
+      "decision": "FAIL",
+      "artifactSha256": "fcebba85713d0b098628f06619cf4b0b110635ab120ad7e6a3d61568f8effab7",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "FAIL",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "QUESTION_ORDER_TIMESTAMP_INVERSION",
+          "severity": "HIGH",
+          "previousQuestion": 32,
+          "previousStartSeconds": 1351.19288,
+          "question": 33,
+          "startSeconds": 1338.13288,
+          "detail": "Listening answers must occur in question order; the later-numbered question starts earlier in the same ordered completion task."
+        },
+        {
+          "code": "QUESTION_ORDER_TIMESTAMP_INVERSION",
+          "severity": "HIGH",
+          "previousQuestion": 39,
+          "previousStartSeconds": 1525.671088,
+          "question": 40,
+          "startSeconds": 1521.291088,
+          "detail": "Listening answers must occur in question order; the later-numbered question starts earlier in the same ordered completion task."
+        }
+      ]
+    },
+    {
+      "set": 33,
+      "decision": "PASS",
+      "artifactSha256": "003fa7d1e745dd4e1dad569d6f58ad74eccd48df4b7eb9d77f17ab882b67b4c3",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 34,
+      "decision": "PASS",
+      "artifactSha256": "cf5da83507f296f3769fbb48cf0c648c53f1ec3d5a82508fb73490e843f11d0d",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 35,
+      "decision": "PASS",
+      "artifactSha256": "34aaa27f6eb292df59b46d2cc0e4a3e75350de468c2620afe0b5c2d0cb707aa4",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 36,
+      "decision": "FAIL",
+      "artifactSha256": "b0f20ebf9c8272f971bb8e2a3bac4aea3589493906ffb9c3732d5b8f65d02088",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "FAIL",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "question": 14,
+          "code": "FALSE_ALIGNMENT_ANSWER_BEARING_TAIL_MISSING",
+          "severity": "BLOCKER",
+          "detail": "The 22-word map instruction is truncated after 'The line of orange buoys in the' (7/22 words). The omitted tail contains the north-east nesting-zone location and shore restriction needed for Q14.",
+          "focusPhrase": "The line of orange buoys in the north-east marks the nesting exclusion zone. Do not pass between those buoys and shore.",
+          "recognizedPhrase": "The line of orange buoys in the",
+          "mappedWords": "7/22",
+          "windowSeconds": 8.98,
+          "rawAsrSha256": "0dc752b25e602cdf90ad0123acbe320b442eba014805825736fc57037f5fdd51"
+        }
+      ]
+    },
+    {
+      "set": 37,
+      "decision": "PASS",
+      "artifactSha256": "730adf9d31dcb80cbeef657ad7b786748126e1daf53d35d84b97d5619ef23247",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 38,
+      "decision": "PASS",
+      "artifactSha256": "e3d04b78a15187e75b8c3ee5bbc2f98c5f2d1070fd6b7a470ec73cf1ba39663c",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 39,
+      "decision": "PASS",
+      "artifactSha256": "9e611a19fc6eb3f670192619a5c0a7de73d614b90e26f9afc1a5ca503119d37f",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 40,
+      "decision": "PASS",
+      "artifactSha256": "0d17b9c3fdc2534deea6a35f2317fda231d3cbe8b4f6609b18782add62e48dd8",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    }
+  ],
+  "artifactHashes": [
+    {
+      "set": 23,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-23-phrase-alignment-staging.json",
+      "sha256": "a48aa1091d2f0f6b70cc67d199d468615374482bb87260f6aa4936017ad5cc7c"
+    },
+    {
+      "set": 24,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-24-phrase-alignment-staging.json",
+      "sha256": "2e0aafe941023005029412883662d46a25918d8f893fa9b69e58c0368dd5dee1"
+    },
+    {
+      "set": 25,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-25-phrase-alignment-staging.json",
+      "sha256": "870738377a6f1b5e7030ed64100a61e9de2c3c446a05fd63b2cb4eebc8864c0d"
+    },
+    {
+      "set": 26,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-26-phrase-alignment-staging.json",
+      "sha256": "ca64fdecb2e708e902ffdf7b44cd34a9ce1975858f509d236467b36666fa4015"
+    },
+    {
+      "set": 27,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-27-phrase-alignment-staging.json",
+      "sha256": "6c8dba02618384c71a14c88b99a8fcbad20199066d2e02e9ee4fae473c305d81"
+    },
+    {
+      "set": 28,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-28-phrase-alignment-staging.json",
+      "sha256": "34e471e0d7a46872c42545890e83a41def564035a144951e8b55dcbd6817e3d1"
+    },
+    {
+      "set": 29,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-29-phrase-alignment-staging.json",
+      "sha256": "bca907893c297f9f5f5a8877059678db1469fb739f73fda10582890b9435c62b"
+    },
+    {
+      "set": 30,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-30-phrase-alignment-staging.json",
+      "sha256": "5a6d701013e6a49990271921cc2d475b9439d922a80ea3b2078bd62779d5eb18"
+    },
+    {
+      "set": 31,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-31-phrase-alignment-staging.json",
+      "sha256": "a7e34e2634d986b440e7cb986bcc7d573d53ad780a0af19aa10e9ccc4ea149d6"
+    },
+    {
+      "set": 32,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-32-phrase-alignment-staging.json",
+      "sha256": "fcebba85713d0b098628f06619cf4b0b110635ab120ad7e6a3d61568f8effab7"
+    },
+    {
+      "set": 33,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-33-phrase-alignment-staging.json",
+      "sha256": "003fa7d1e745dd4e1dad569d6f58ad74eccd48df4b7eb9d77f17ab882b67b4c3"
+    },
+    {
+      "set": 34,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-34-phrase-alignment-staging.json",
+      "sha256": "cf5da83507f296f3769fbb48cf0c648c53f1ec3d5a82508fb73490e843f11d0d"
+    },
+    {
+      "set": 35,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-35-phrase-alignment-staging.json",
+      "sha256": "34aaa27f6eb292df59b46d2cc0e4a3e75350de468c2620afe0b5c2d0cb707aa4"
+    },
+    {
+      "set": 36,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-36-phrase-alignment-staging.json",
+      "sha256": "b0f20ebf9c8272f971bb8e2a3bac4aea3589493906ffb9c3732d5b8f65d02088"
+    },
+    {
+      "set": 37,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-37-phrase-alignment-staging.json",
+      "sha256": "730adf9d31dcb80cbeef657ad7b786748126e1daf53d35d84b97d5619ef23247"
+    },
+    {
+      "set": 38,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-38-phrase-alignment-staging.json",
+      "sha256": "e3d04b78a15187e75b8c3ee5bbc2f98c5f2d1070fd6b7a470ec73cf1ba39663c"
+    },
+    {
+      "set": 39,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-39-phrase-alignment-staging.json",
+      "sha256": "9e611a19fc6eb3f670192619a5c0a7de73d614b90e26f9afc1a5ca503119d37f"
+    },
+    {
+      "set": 40,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-40-phrase-alignment-staging.json",
+      "sha256": "0d17b9c3fdc2534deea6a35f2317fda231d3cbe8b4f6609b18782add62e48dd8"
+    }
+  ],
+  "reviewNotes": [
+    "PASS here certifies only the independent phrase-alignment artifact review; it does not approve human listening or release.",
+    "The two false alignments are not repaired by widening a timestamp because the answer-bearing speech is absent/truncated in raw ASR evidence.",
+    "Set 32 Q31-40 are ordered fill items. Q33 occurs before Q32, and Q40 occurs before Q39 in the hash-bound audio, violating the official ordered-answer contract.",
+    "No generator, source artifact, runtime data, release flag, or audio was modified by this review."
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "canonicalPayloadSha256": "73a3bc1da390ca82419a9c84d87e845104f991bf98ddc3bd2cabea47e595e55f",
+    "canonicalization": "UTF-8 JSON, recursively sorted keys, compact separators, integrity field excluded"
+  }
+}

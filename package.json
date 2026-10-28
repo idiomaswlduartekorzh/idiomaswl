@@ -218,7 +218,7 @@
     "check:ielts-set1-listening-reference": "node --experimental-strip-types --no-warnings scripts/check-ielts-set1-listening-reference.mjs",
     "check:ielts-set1-reading-reference": "node --experimental-strip-types --no-warnings scripts/check-ielts-set1-reading-reference.mjs",
     "test:ielts-objective": "node --experimental-strip-types --no-warnings --test tests/ielts-objective-key.test.mjs",
-    "test:ielts-guided": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/ielts-guided-mocks.test.mts tests/ielts-guided-coach.test.mts tests/ielts-guided-speaking-audio.test.mts tests/ielts-guided-writing-samples.test.mts",
+    "test:ielts-guided": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/ielts-guided-eligibility.test.mts tests/ielts-guided-mocks.test.mts tests/ielts-guided-coach.test.mts tests/ielts-guided-listening-phrase-alignment-staging.test.mjs tests/ielts-guided-reading-rationales-21-40.test.mjs tests/ielts-guided-speaking-audio.test.mts tests/ielts-guided-speaking-references-21-40.test.mts tests/ielts-guided-writing-samples.test.mts tests/ielts-guided-writing-samples-21-40.test.mts",
     "test:ielts-harness": "node --experimental-strip-types --no-warnings --test tests/ielts-harness.test.mjs",
     "test:ielts-asr": "node --experimental-strip-types --no-warnings --test tests/ielts-asr-audit.test.mjs",
     "test:ielts-reading-evidence": "node --experimental-strip-types --no-warnings --test tests/ielts-reading-evidence.test.mjs",

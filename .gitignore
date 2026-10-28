@@ -124,3 +124,7 @@ tmp-catas-historias/
 
 # Supabase CLI local cache
 supabase/.temp/
+
+# Regenerable IELTS guided-evidence snapshots retained locally for audit diffing.
+staging/ielts-guided-evidence-21-40-superseded*/
+staging/ielts-guided-listening-alignment-23-40/raw-asr/

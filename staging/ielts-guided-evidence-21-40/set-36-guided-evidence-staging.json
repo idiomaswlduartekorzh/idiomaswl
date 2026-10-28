@@ -1,0 +1,1970 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 36,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-36.ts",
+      "sha256": "3fc32204f91ec67591fde557d808ad1af861a56c1829796bd9adbb71c0277356"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "fill",
+          "questionText": "Water enters through an inlet beside openings called ______.",
+          "acceptedResponses": [
+            "air ports"
+          ]
+        },
+        "sourceExcerpt": "Water enters a vertical pipe through a shaped inlet. Openings near the top act as air ports. The rapid stream draws air through them and breaks it into bubbles. Large pockets rise too easily, while extremely fine bubbles may be harder to separate later, so the inlet must create a useful mixture. There is no mechanical pump forcing each bubble downward; the descending water provides both transport and compression.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Water enters through an inlet beside openings called ______.» y acepta «air ports». La oración fuente dice «Openings near the top act as air ports.». Esa oración contiene la respuesta y la conecta con «openings», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c70836182e3a81d0e7ed773c495d795cb4d3555adebf3f896b5082b23a9c7e7a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "fill",
+          "questionText": "The stream carries a mixture of water and ______ downwards.",
+          "acceptedResponses": [
+            "air"
+          ]
+        },
+        "sourceExcerpt": "Water enters a vertical pipe through a shaped inlet. Openings near the top act as air ports. The rapid stream draws air through them and breaks it into bubbles. Large pockets rise too easily, while extremely fine bubbles may be harder to separate later, so the inlet must create a useful mixture. There is no mechanical pump forcing each bubble downward; the descending water provides both transport and compression.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The stream carries a mixture of water and ______ downwards.» y acepta «air». La oración fuente dice «Openings near the top act as air ports.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "ecfb366cb4102d88b78b1551d7ce64443e0c1fbf03aae16fb32a99ffc8f04536",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "fill",
+          "questionText": "Compression increases as the mixture descends the falling ______.",
+          "acceptedResponses": [
+            "shaft"
+          ]
+        },
+        "sourceExcerpt": "The falling shaft determines how much hydrostatic pressure can develop. Greater depth can support higher pressure, but excavation and water management become more demanding. Friction and turbulence also consume energy. The shaft is therefore not simply made as long as possible. Designers balance the pressure required at the workshop against the available drop and flow. A site with abundant water but little vertical height may be less suitable than a smaller stream crossing steep ground.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Compression increases as the mixture descends the falling ______.» y acepta «shaft». La oración fuente dice «The falling shaft determines how much hydrostatic pressure can develop.». Esa oración contiene la respuesta y la conecta con «falling», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports shaft; the revised wording excludes the alternative identified by the fresh blind reviewer.",
+        "ledgerRowSha256": "9446b8e7c2a5ddffca4ae6b56875d43edd024d6d104daf4c614f2ba3e9970957",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "fill",
+          "questionText": "The flow slows in the ______.",
+          "acceptedResponses": [
+            "separation chamber"
+          ]
+        },
+        "sourceExcerpt": "At the bottom, the mixture enters a separation chamber where velocity falls. Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe. Maintaining the interface is essential: if water rises too far, it can enter the air line; if it falls too low, compressed air may escape with the tailrace. The chamber is therefore both collector and regulator, even though it contains no complex rotating machinery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The flow slows in the ______.» y acepta «separation chamber». La oración fuente dice «At the bottom, the mixture enters a separation chamber where velocity falls.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "3c24d7f3b4b9b3991a0241b738b5223f149f62f70e4fef78b0c6ad973b17813f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "fill",
+          "questionText": "Compressed air leaves through a ______.",
+          "acceptedResponses": [
+            "delivery pipe"
+          ]
+        },
+        "sourceExcerpt": "At the bottom, the mixture enters a separation chamber where velocity falls. Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe. Maintaining the interface is essential: if water rises too far, it can enter the air line; if it falls too low, compressed air may escape with the tailrace. The chamber is therefore both collector and regulator, even though it contains no complex rotating machinery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Compressed air leaves through a ______.» y acepta «delivery pipe». La oración fuente dice «Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe.». Esa oración contiene la respuesta y la conecta con «compressed», «air», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "8379757314abd5aab4979dd1b7f60a06820a94a661d65860188f7f49bb2bee6a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "fill",
+          "questionText": "Water continues from the separation chamber towards an ______.",
+          "acceptedResponses": [
+            "outlet"
+          ]
+        },
+        "sourceExcerpt": "At the bottom, the mixture enters a separation chamber where velocity falls. Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe. Maintaining the interface is essential: if water rises too far, it can enter the air line; if it falls too low, compressed air may escape with the tailrace. The chamber is therefore both collector and regulator, even though it contains no complex rotating machinery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Water continues from the separation chamber towards an ______.» y acepta «outlet». La oración fuente dice «Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe.». Esa oración contiene la respuesta y la conecta con «water», «continues», «towards», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D states that water continues towards an outlet. The supplied article an makes outlet the unique grammatical one-word completion; tailrace cannot complete the sentence.",
+        "ledgerRowSha256": "f5b865f2320b2366cdf19ff7a0e22fac843527e085554ab34c10c71b910f5c0d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "fill",
+          "questionText": "Further equipment may be needed to remove ______ from the air.",
+          "acceptedResponses": [
+            "moisture"
+          ]
+        },
+        "sourceExcerpt": "The air delivered by a trompe can serve tasks such as ventilating or supplying a furnace, depending on the installation. Contact with water may also cool the compressed air. These advantages once suited sites where water power was available and mechanical compressors were difficult to maintain. The air, however, may carry moisture, which is beneficial for some uses and troublesome for others. A separator or drainage arrangement may therefore be needed beyond the main chamber.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Further equipment may be needed to remove ______ from the air.» y acepta «moisture». La oración fuente dice «The air, however, may carry moisture, which is beneficial for some uses and troublesome for others.». Esa oración contiene la respuesta y la conecta con «air», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "86e338bd9498d8b9fcac8953e4712c447112bc18a796d8a0ff3ba189838352c9",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "mcq",
+          "questionText": "Which paragraph contrasts a trompe with a piston compressor?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Paragraph A"
+        },
+        "sourceExcerpt": "A trompe is a hydraulic air compressor whose main moving material is water. It has no piston cycling inside a cylinder. Instead, falling water captures bubbles of air and carries them down a shaft. As the mixture descends, increasing water pressure compresses the bubbles. At depth, air and water are separated so the compressed air can be collected while water leaves by another route. The simplicity is deceptive: dependable operation requires suitable height, flow and geometry.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph contrasts a trompe with a piston compressor?» y la clave es «Paragraph A». La evidencia dice «A trompe is a hydraulic air compressor whose main moving material is water.». La coincidencia semántica se apoya en «trompe», «compressor»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "8f6d3068e76d49bc27d3d7f0ff0aa7af01d07f06d759b0c6ed48c025ed6f97bb",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why simply increasing one dimension is not always sensible?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Paragraph C"
+        },
+        "sourceExcerpt": "The falling shaft determines how much hydrostatic pressure can develop. Greater depth can support higher pressure, but excavation and water management become more demanding. Friction and turbulence also consume energy. The shaft is therefore not simply made as long as possible. Designers balance the pressure required at the workshop against the available drop and flow. A site with abundant water but little vertical height may be less suitable than a smaller stream crossing steep ground.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why simply increasing one dimension is not always sensible?» y la clave es «Paragraph C». La evidencia dice «The shaft is therefore not simply made as long as possible.». La coincidencia semántica se apoya en «simply»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "696b08fe86c6a80953dd7a2d088241d18c5c3f08728b5fcef717e5903c3d6996",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes the consequences of an incorrect water level?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Paragraph D"
+        },
+        "sourceExcerpt": "At the bottom, the mixture enters a separation chamber where velocity falls. Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe. Maintaining the interface is essential: if water rises too far, it can enter the air line; if it falls too low, compressed air may escape with the tailrace. The chamber is therefore both collector and regulator, even though it contains no complex rotating machinery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes the consequences of an incorrect water level?» y la clave es «Paragraph D». La evidencia dice «Water continues towards an outlet, while compressed air gathers above it and enters a delivery pipe.». La coincidencia semántica se apoya en «water»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "97fddbaaf360f5a100723a2df6258779916b598c76621a33e99f089476d1af4f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "mcq",
+          "questionText": "Which paragraph mentions both a possible benefit and drawback of contact with water?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Paragraph E"
+        },
+        "sourceExcerpt": "The air delivered by a trompe can serve tasks such as ventilating or supplying a furnace, depending on the installation. Contact with water may also cool the compressed air. These advantages once suited sites where water power was available and mechanical compressors were difficult to maintain. The air, however, may carry moisture, which is beneficial for some uses and troublesome for others. A separator or drainage arrangement may therefore be needed beyond the main chamber.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph mentions both a possible benefit and drawback of contact with water?» y la clave es «Paragraph E». La evidencia dice «Contact with water may also cool the compressed air.». La coincidencia semántica se apoya en «contact», «water»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c355b6cdb399e59817dff1b4f5d80db6125e61933714a586ca653a98c295f301",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why the same apparatus cannot work equally well everywhere?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Paragraph F"
+        },
+        "sourceExcerpt": "The technology is strongly site-dependent. It consumes a continuous water flow and needs a sufficient drop, while the discharged water must have somewhere to go. A mine or metalworking site near suitable terrain could benefit; a flat or water-scarce location could not reproduce that advantage merely by copying the equipment. This dependence explains both historical success and limited spread. The trompe converted a particular landscape into pressure rather than offering a portable source of power.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why the same apparatus cannot work equally well everywhere?» y la clave es «Paragraph F». La evidencia dice «This dependence explains both historical success and limited spread.». La coincidencia semántica se apoya en «explains»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "4d3a6fe97069c68c33fc017ae80018b3a106e5f1d9a527caad4159df2a5e4b3d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "mcq",
+          "questionText": "Which paragraph argues for evaluating equipment together with its surroundings and purpose?",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Paragraph G"
+        },
+        "sourceExcerpt": "Judging efficiency requires a boundary around the whole system. Water may be locally abundant and require no purchased fuel, yet civil works, leakage and unused flow still carry costs. Conversely, an apparatus with few mechanical parts may offer long service where repair skills are scarce. The trompe shows why technology cannot be evaluated from a component list alone. Its performance emerges from the relation between fluid process, terrain, maintenance and the work that the compressed air is expected to do.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph argues for evaluating equipment together with its surroundings and purpose?» y la clave es «Paragraph G». La evidencia dice «Judging efficiency requires a boundary around the whole system.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "eff6cc02728f82e9ccc66177cbf1b5954be9ae83a04a458c3293ab1e538664c0",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "The earliest explanation described in the passage treated an epic as a fixed text memorised word for word.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "A long epic performed without a written script can look like an impossible feat of memory. Early observers often assumed that the singer had memorised a fixed text word for word. Yet comparison between performances revealed both recurrence and variation. This suggested a different model: the performer could compose during delivery by drawing on familiar phrases, scenes and narrative patterns. Memory remained crucial, but it stored resources and relationships rather than a single unchanging sequence.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The earliest explanation described in the passage treated an epic as a fixed text memorised word for word.» y el pasaje dice «Early observers often assumed that the singer had memorised a fixed text word for word.». La fuente conserva la misma relación mediante «fixed», «text», «memorised», «word» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c1d26c0d24ef5178c4eaa0f800e6d865bcc801c15242f11fd45c39832c55c0fc",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Formulaic language always indicates a lack of skill.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "A formula is a recurring expression suited to a particular metrical position and idea. It gives the singer language that already fits the rhythm, reducing the number of decisions required at speed. Formulaic diction is not necessarily a sign of laziness or poor originality. It is part of the technique that makes fluent composition possible. A skilled performer can select, adapt and combine inherited material while responding to audience, occasion and the direction of the story.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Formulaic language always indicates a lack of skill.», mientras el pasaje dice «It gives the singer language that already fits the rhythm, reducing the number of decisions required at speed.». Ambos tratan «language», pero la proposición añade «formulaic», «always», «indicates», «lack», «skill» donde la fuente especifica «gives», «singer», «already», «fits», «rhythm», «reducing». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "f757b9ad1824cce90cb9d1f1232aadc2e71b8e6536605212bce1c9cecb7fc170",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "A recurring theme must contain exactly the same wording in every performance.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Recurring themes operate at a broader scale. A departure, challenge, feast or recognition scene may have a familiar sequence of actions without identical wording. These frameworks help the performer maintain narrative coherence while varying detail and emphasis. The same theme can be brief in one performance and elaborated in another. This flexibility explains how an epic can remain recognisable across occasions without existing as one fixed verbal object.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A recurring theme must contain exactly the same wording in every performance.», mientras el pasaje dice «The same theme can be brief in one performance and elaborated in another.». Ambos tratan «theme», «same», «performance», pero la proposición añade «recurring», «must», «contain», «exactly», «wording», «every» donde la fuente especifica «brief», «elaborated», «another». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "93fc655096223d2ace958f2a25caf041c6cf40913ee53dd8f332a70e916bf819",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "A transcript can encourage readers to treat one performance as definitive.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "When a performance is transcribed, a moving event becomes a written snapshot. The page preserves valuable evidence, but readers may treat accidental features of that occasion as definitive. Pauses, audience reactions and musical delivery can also be difficult to represent. A transcript is therefore both record and transformation. Comparing several recordings or texts can reveal which elements are stable and which belong to the performer’s immediate choices.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A transcript can encourage readers to treat one performance as definitive.» y el pasaje dice «The page preserves valuable evidence, but readers may treat accidental features of that occasion as definitive.». La fuente conserva la misma relación mediante «readers», «treat», «definitive» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "52301b4c3195c9ec8e19ac5f0d36428c0c2b95e1458d0ac7a7fca9935b50c133",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "The passage states that audiences prefer the longest possible version of every scene.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "In a literate tradition, deviation from a printed poem may be called an error. In oral composition, variation can demonstrate competence if it preserves the story’s logic and style. Freedom is not unlimited: metre, audience expectation and inherited narrative impose creative constraint. Expertise consists in negotiating those limits. The performer must be sufficiently traditional to remain intelligible and sufficiently responsive to make the event work in the present.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage states that audiences prefer the longest possible version of every scene.». El pasaje sí ofrece el contexto «In a literate tradition, deviation from a printed poem may be called an error.», pero en el texto completo no especifica «audiences», «prefer», «longest», «version» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d21ef845d10efc7544d629476613f8e77e43b84fe37bca703d539a84db130099",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Learning the tradition may involve extensive listening and gradual participation.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Such skill is often acquired through prolonged listening and participation rather than through memorising a manual. An apprentice absorbs recurrent patterns, attempts shorter performances and gradually develops control over longer sequences. The process resembles learning a generative language. Knowing many expressions matters, but so does knowing when they fit. This account helps explain why direct translation of a formula may miss its practical role inside a metrical and cultural system.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Learning the tradition may involve extensive listening and gradual participation.» y el pasaje dice «Such skill is often acquired through prolonged listening and participation rather than through memorising a manual.». La fuente conserva la misma relación mediante «listening», «participation» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "14f0628f60aa16a7ab16b1387eb164069af311deba2804f9230608f16538d548",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "The author recommends applying one oral-composition model to every culture.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Not every repeated phrase proves oral composition, and not every oral tradition works in the same way. Formula counts can be informative, but they need contextual evidence about metre, training and performance. A model developed from one body of epic cannot simply be imposed on all narrative cultures. The enduring contribution of the theory is more modest and more useful: it shows how recurrence can support live creation rather than merely indicate mechanical recall.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author recommends applying one oral-composition model to every culture.», mientras el pasaje dice «Not every repeated phrase proves oral composition, and not every oral tradition works in the same way.». Ambos tratan «oral», «composition», «every», pero la proposición añade «recommends», «applying», «model», «culture» donde la fuente especifica «repeated», «phrase», «proves», «tradition», «works», «same». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "da914a2cd00694e4073c0645bc54569b29dc2843971430bc142beab6b33e54f9",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "The model says memory stores resources and relationships, not an ______.",
+          "acceptedResponses": [
+            "unchanging sequence"
+          ]
+        },
+        "sourceExcerpt": "A long epic performed without a written script can look like an impossible feat of memory. Early observers often assumed that the singer had memorised a fixed text word for word. Yet comparison between performances revealed both recurrence and variation. This suggested a different model: the performer could compose during delivery by drawing on familiar phrases, scenes and narrative patterns. Memory remained crucial, but it stored resources and relationships rather than a single unchanging sequence.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The model says memory stores resources and relationships, not an ______.» y acepta «unchanging sequence». La oración fuente dice «Memory remained crucial, but it stored resources and relationships rather than a single unchanging sequence.». Esa oración contiene la respuesta y la conecta con «memory», «resources», «relationships», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph A says memory stored resources and relationships rather than a single unchanging sequence. The supplied article an makes unchanging sequence the unique grammatical two-word completion; fixed text cannot complete the sentence.",
+        "ledgerRowSha256": "820e13d18400bb35f30a0300c29a791dd679700c7e56d1faf6f979343673c62f",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "A recurring expression adapted to metre is called a ______.",
+          "acceptedResponses": [
+            "formula"
+          ]
+        },
+        "sourceExcerpt": "A formula is a recurring expression suited to a particular metrical position and idea. It gives the singer language that already fits the rhythm, reducing the number of decisions required at speed. Formulaic diction is not necessarily a sign of laziness or poor originality. It is part of the technique that makes fluent composition possible. A skilled performer can select, adapt and combine inherited material while responding to audience, occasion and the direction of the story.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A recurring expression adapted to metre is called a ______.» y acepta «formula». La oración fuente dice «A formula is a recurring expression suited to a particular metrical position and idea.». Esa oración contiene la respuesta y la conecta con «recurring», «expression», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "797c62a905d2ae9e04286615adddbfdb456088845480e964db9be05ceeeb7403",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "fill",
+          "questionText": "A familiar sequence for a type of scene is a ______.",
+          "acceptedResponses": [
+            "theme"
+          ]
+        },
+        "sourceExcerpt": "Recurring themes operate at a broader scale. A departure, challenge, feast or recognition scene may have a familiar sequence of actions without identical wording. These frameworks help the performer maintain narrative coherence while varying detail and emphasis. The same theme can be brief in one performance and elaborated in another. This flexibility explains how an epic can remain recognisable across occasions without existing as one fixed verbal object.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A familiar sequence for a type of scene is a ______.» y acepta «theme». La oración fuente dice «Recurring themes operate at a broader scale.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "4aa69c1ac39ddafdfde79f534debf3dfe708173f3f74e63353d4ff3b2adec39b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "A transcription turns an event into a ______.",
+          "acceptedResponses": [
+            "written snapshot"
+          ]
+        },
+        "sourceExcerpt": "When a performance is transcribed, a moving event becomes a written snapshot. The page preserves valuable evidence, but readers may treat accidental features of that occasion as definitive. Pauses, audience reactions and musical delivery can also be difficult to represent. A transcript is therefore both record and transformation. Comparing several recordings or texts can reveal which elements are stable and which belong to the performer’s immediate choices.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A transcription turns an event into a ______.» y acepta «written snapshot». La oración fuente dice «When a performance is transcribed, a moving event becomes a written snapshot.». Esa oración contiene la respuesta y la conecta con «event», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "09ea50d36b7410412efa367ac0ca0a4bceaffd1ef3ef0613bc6c8bf7c209c648",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "Metre and audience expectations act as a ______.",
+          "acceptedResponses": [
+            "creative constraint"
+          ]
+        },
+        "sourceExcerpt": "In a literate tradition, deviation from a printed poem may be called an error. In oral composition, variation can demonstrate competence if it preserves the story’s logic and style. Freedom is not unlimited: metre, audience expectation and inherited narrative impose creative constraint. Expertise consists in negotiating those limits. The performer must be sufficiently traditional to remain intelligible and sufficiently responsive to make the event work in the present.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Metre and audience expectations act as a ______.» y acepta «creative constraint». La oración fuente dice «Freedom is not unlimited: metre, audience expectation and inherited narrative impose creative constraint.». Esa oración contiene la respuesta y la conecta con «metre», «audience», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "cd6cdb803726c2a397f031e32a06afddc9f0c100e338dc99635d22f5562a8079",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "Inherited resources shared across generations form a ______.",
+          "acceptedResponses": [
+            "distributed tradition"
+          ]
+        },
+        "sourceExcerpt": "Formulaic composition complicates modern ideas of authorship. A performance is produced by an individual, yet its resources have been shaped by generations. Calling it either wholly original or merely repeated is inadequate. The singer’s contribution lies in selection, arrangement, pacing and adaptation within a distributed tradition. Scholars must therefore attend to both continuity and agency. The theory does not deny artistic individuality; it locates individuality in a different relation to inherited language.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Inherited resources shared across generations form a ______.» y acepta «distributed tradition». La oración fuente dice «The singer’s contribution lies in selection, arrangement, pacing and adaptation within a distributed tradition.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "a0e49034507e7ac4efb40dee8a5c2b99d6c963a5d71076729318a49caebb859b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "Adding more volunteers improves coverage only when",
+          "correctOptionIndex": 4,
+          "correctOptionText": "their effort is spread across different areas."
+        },
+        "sourceExcerpt": "When an object is lost across a large physical or digital space, a single searcher may inspect only a small fraction. Crowdsourcing can divide the task among many contributors. At first glance, more eyes should mean greater coverage. That expectation is reasonable only if effort is distributed. A thousand volunteers who all examine the most obvious location may add less value than a small team assigned to distinct sectors. The problem is therefore one of coordination as well as participation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Adding more volunteers improves coverage only when» y la clave es «their effort is spread across different areas.». La evidencia dice «When an object is lost across a large physical or digital space, a single searcher may inspect only a small fraction.». La coincidencia semántica se apoya en «only», «across»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c2452a79d6fdaaa1089567babe234e443cd0512f8dc11041e237d6eb1ba558f4",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Independent search strategies are valuable because they",
+          "correctOptionIndex": 1,
+          "correctOptionText": "reduce the risk of one shared mistaken assumption."
+        },
+        "sourceExcerpt": "Uncoordinated searchers sometimes bring a useful advantage: independent strategies. Different people notice different cues and question different assumptions. If every volunteer follows the same detailed hunch, the search becomes vulnerable to a shared mistake. Diversity can broaden coverage, but complete independence also creates duplication. The challenge is to preserve varied judgement while making completed work visible enough to prevent needless repetition.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Independent search strategies are valuable because they» y la clave es «reduce the risk of one shared mistaken assumption.». La evidencia dice «Uncoordinated searchers sometimes bring a useful advantage: independent strategies.». La coincidencia semántica se apoya en «independent», «strategies»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "cd0298dda87fcb94be57a4119612e74e79029e431543a41473945c5cb51c327c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "A useful sector board should show",
+          "correctOptionIndex": 6,
+          "correctOptionText": "both coverage and the reliability of each status update."
+        },
+        "sourceExcerpt": "A sector board can show which areas have been assigned, checked or left open. It need not dictate exactly how each person searches. Its purpose is to expose coverage gaps and allow new volunteers to choose neglected areas. Updates must be easy to submit, otherwise the board becomes a delayed picture of yesterday’s effort. Equally, a checked label should not imply certainty when the inspection was brief or visibility was poor. Status needs both location and confidence.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «A useful sector board should show» y la clave es «both coverage and the reliability of each status update.». La evidencia dice «A sector board can show which areas have been assigned, checked or left open.». La coincidencia semántica se apoya en «sector», «board», «show»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "b75161eb52adaa15521ee0f8f6e5c344186ae4dea34450fe101f8a297715d928",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "A verification queue prevents field teams from",
+          "correctOptionIndex": 0,
+          "correctOptionText": "being overloaded by unfiltered sightings."
+        },
+        "sourceExcerpt": "Crowds generate candidate sightings as well as search coverage. These reports vary greatly in quality. Sending every one directly to field teams can overwhelm the operation, so evidence may enter a verification queue. Clear photographs, precise locations or agreement between independent observers can raise priority. Verification protects scarce response capacity, but excessive delay can make good information useless. The process must match scrutiny to the cost of acting on an error.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «A verification queue prevents field teams from» y la clave es «being overloaded by unfiltered sightings.». La evidencia dice «Sending every one directly to field teams can overwhelm the operation, so evidence may enter a verification queue.». La coincidencia semántica se apoya en «verification», «queue», «field», «teams»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "0da703378ba284674e748796441564b06bdd2859ffa8a4836cee8ee204f09f34",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "A dominant theory can weaken a search by",
+          "correctOptionIndex": 3,
+          "correctOptionText": "directing too much attention towards one explanation."
+        },
+        "sourceExcerpt": "Social communication can reduce duplication while increasing shared bias. A widely repeated theory may steer volunteers away from places that contradict it. Early confident posts are especially influential, even when based on weak evidence. Coordinators can counter this by reserving some search sectors for teams who have not seen the dominant hypothesis, or by asking contributors to record observations before reading others. The aim is not to suppress communication but to keep one narrative from consuming all attention.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «A dominant theory can weaken a search by» y la clave es «directing too much attention towards one explanation.». La evidencia dice «Coordinators can counter this by reserving some search sectors for teams who have not seen the dominant hypothesis, or by asking contributors to record observations before reading others.». La coincidencia semántica se apoya en «dominant», «search»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "38d8517c71984f5f6341889ed7537a16be965ad146a9858cd38c7242f9a3fd90",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Why should a checked sector include a confidence indication?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Because inspections differ in thoroughness and visibility"
+        },
+        "sourceExcerpt": "A sector board can show which areas have been assigned, checked or left open. It need not dictate exactly how each person searches. Its purpose is to expose coverage gaps and allow new volunteers to choose neglected areas. Updates must be easy to submit, otherwise the board becomes a delayed picture of yesterday’s effort. Equally, a checked label should not imply certainty when the inspection was brief or visibility was poor. Status needs both location and confidence.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why should a checked sector include a confidence indication?» y la clave es «Because inspections differ in thoroughness and visibility». La evidencia dice «A sector board can show which areas have been assigned, checked or left open.». La coincidencia semántica se apoya en «checked», «sector»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9f54d97a10b6ea25da5284ef3f6b39d3ec5125238623d909b365fed6aca0dc59",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "What determines how much verification a report needs?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "The cost of acting on a mistaken report"
+        },
+        "sourceExcerpt": "Crowds generate candidate sightings as well as search coverage. These reports vary greatly in quality. Sending every one directly to field teams can overwhelm the operation, so evidence may enter a verification queue. Clear photographs, precise locations or agreement between independent observers can raise priority. Verification protects scarce response capacity, but excessive delay can make good information useless. The process must match scrutiny to the cost of acting on an error.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What determines how much verification a report needs?» y la clave es «The cost of acting on a mistaken report». La evidencia dice «The process must match scrutiny to the cost of acting on an error.». La coincidencia semántica se apoya en «cost», «acting»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "448eeda91181592808d07c744cd57c0431c1fbfe4b9c56155067d4cf048ca86f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "What problem can occur if every report is sent to a specialist?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "The specialist becomes a bottleneck"
+        },
+        "sourceExcerpt": "Volunteers offer scale and familiarity with local conditions; specialists may recognise technical evidence or manage risk. Mixed teams can combine these strengths. Yet expertise should be deployed where it changes decisions rather than used as a ceremonial label. A specialist reviewing thousands of low-information reports becomes a bottleneck. Triage, training and structured forms can help contributors supply the details that an expert needs to make a rapid judgement.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What problem can occur if every report is sent to a specialist?» y la clave es «The specialist becomes a bottleneck». La evidencia dice «A specialist reviewing thousands of low-information reports becomes a bottleneck.». La coincidencia semántica se apoya en «specialist», «becomes», «bottleneck»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "06e750ce18463656748046ff095416bdc048ba1714b7b704066690dab7635256",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "Which phrase best captures the author’s preferred design?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Coordinated diversity"
+        },
+        "sourceExcerpt": "The value of a crowd lies neither in raw numbers nor in central control alone. Effective search combines coordinated diversity: enough structure to reveal gaps and verify reports, enough independence to test different possibilities. Platforms shape this balance through assignment, updates, confidence labels and feedback. They cannot guarantee recovery, because the evidence may never be present or observable. They can, however, turn scattered goodwill into a search whose limits and coverage are understood.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which phrase best captures the author’s preferred design?» y la clave es «Coordinated diversity». La evidencia dice «Effective search combines coordinated diversity: enough structure to reveal gaps and verify reports, enough independence to test different possibilities.». La coincidencia semántica se apoya en «coordinated», «diversity»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "fa8902fa5a904160d928daed0c00471bea45c3475b9518539c59ae5af0b48282",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "The author believes that the number of volunteers alone determines search quality.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "When an object is lost across a large physical or digital space, a single searcher may inspect only a small fraction. Crowdsourcing can divide the task among many contributors. At first glance, more eyes should mean greater coverage. That expectation is reasonable only if effort is distributed. A thousand volunteers who all examine the most obvious location may add less value than a small team assigned to distinct sectors. The problem is therefore one of coordination as well as participation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author believes that the number of volunteers alone determines search quality.», mientras el pasaje dice «A thousand volunteers who all examine the most obvious location may add less value than a small team assigned to distinct sectors.». Ambos tratan «volunteers», pero la proposición añade «number», «alone», «determines», «search», «quality» donde la fuente especifica «thousand», «all», «examine», «obvious», «location», «add». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "f58085d494ded864538709fe19e832e2bdf0d0c2bb9288025e4bdf15d7481b71",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "Some duplication may occur when searchers work independently.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Uncoordinated searchers sometimes bring a useful advantage: independent strategies. Different people notice different cues and question different assumptions. If every volunteer follows the same detailed hunch, the search becomes vulnerable to a shared mistake. Diversity can broaden coverage, but complete independence also creates duplication. The challenge is to preserve varied judgement while making completed work visible enough to prevent needless repetition.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Some duplication may occur when searchers work independently.» y el pasaje dice «Uncoordinated searchers sometimes bring a useful advantage: independent strategies.». La fuente conserva la misma relación mediante «searchers» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "78aa9f89d7865218b562d166ad26f2a1e6e4ebda2c77e73be3274bcd2f60d35e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "The author recommends preventing volunteers from communicating with each other.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Social communication can reduce duplication while increasing shared bias. A widely repeated theory may steer volunteers away from places that contradict it. Early confident posts are especially influential, even when based on weak evidence. Coordinators can counter this by reserving some search sectors for teams who have not seen the dominant hypothesis, or by asking contributors to record observations before reading others. The aim is not to suppress communication but to keep one narrative from consuming all attention.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author recommends preventing volunteers from communicating with each other.», mientras el pasaje dice «The aim is not to suppress communication but to keep one narrative from consuming all attention.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «recommends», «preventing», «volunteers», «communicating», «each», «other» donde la fuente especifica «aim», «suppress», «communication», «keep», «narrative», «consuming». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "b7b2f368e52ab56e0856d1a8b07b00387daef53d824489cc8768d2da6ebc3ad5",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "The passage gives a fixed number of days after which every search should stop.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Searches cannot expand forever. Organisers need a search threshold that considers new evidence, remaining risk and the cost of continued effort. A falling number of fresh reports does not prove the object is absent, but it may change how resources are allocated. Decisions to pause or redirect should preserve the record of completed sectors so that work can resume intelligently. Without such memory, each new surge of volunteers risks repeating the first day.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage gives a fixed number of days after which every search should stop.». El pasaje sí ofrece el contexto «Organisers need a search threshold that considers new evidence, remaining risk and the cost of continued effort.», pero en el texto completo no especifica «gives», «fixed», «days», «stop» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "bc493e9b6afe9b36f29af626f90643b2c6a02f7320f5e8dfec0ecf196f85f8f6",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "A well-designed platform can guarantee that the missing object will be found.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "The value of a crowd lies neither in raw numbers nor in central control alone. Effective search combines coordinated diversity: enough structure to reveal gaps and verify reports, enough independence to test different possibilities. Platforms shape this balance through assignment, updates, confidence labels and feedback. They cannot guarantee recovery, because the evidence may never be present or observable. They can, however, turn scattered goodwill into a search whose limits and coverage are understood.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A well-designed platform can guarantee that the missing object will be found.», mientras el pasaje dice «They cannot guarantee recovery, because the evidence may never be present or observable.». Ambos tratan «guarantee», pero la proposición añade «well», «designed», «platform», «missing», «object», «found» donde la fuente especifica «cannot», «recovery», «because», «evidence», «never», «present». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "b13f83fe472deaad4a09b6ca436ae6ab1cd24d237311c902831dd3057d97e544",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/reading/set36-reading-content-v1.0.3.json",
+        "sha256": "f78374ac7f7325447530837c55743f0ceee09d59c627593064c9c2b43786a872"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "0eba73bff6393fcec7698bc50c069722855afb507915f6c7fddeba6b804ad75e",
+      "canonicalQuestionProjectionSha256": "fede4ef0f246d6a9a8ed3f2b2485d12cab84550b3939c2ce6731d9f47ecd29b5"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Devereux"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is Devereux, D-E-V-E-R-E-U-X, rather than the shorter spelling on the web enquiry. Please use Devereux on the appointment.",
+        "timecode": {
+          "startFrame": 3439802,
+          "endFrame": 8447088,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000045,
+          "endSeconds": 191.543946,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "949007df06f64ccb767141dc16905260c5f0f1c758438d95ee53f038b59a2d08",
+        "planSegmentTextSha256": "3dab96451f5e00397afe53f5c9a8a82ad2970d3e495c69338d594dfb7d3d7c65"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Room: ______",
+          "acceptedResponses": [
+            "home office"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The troublesome window is in the home office. The bedroom may need privacy later, but it is not part of this visit.",
+        "timecode": {
+          "startFrame": 3439802,
+          "endFrame": 8447088,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000045,
+          "endSeconds": 191.543946,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "22bc7c9e63619617088d67565b03bf88350981ab40291980c68ec4de4194ac0c",
+        "planSegmentTextSha256": "2354127e26b7067d04f4e42a86f218efc049868569fda00937c93cafe292fcff"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Window faces: ______",
+          "acceptedResponses": [
+            "west"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It faces west, which is why the strongest sun reaches it later in the day rather than first thing in the morning.",
+        "timecode": {
+          "startFrame": 3439802,
+          "endFrame": 8447088,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000045,
+          "endSeconds": 191.543946,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b3f4c980383efe2e928c276dc5a444b33d37ccd42bc065714860f8278a910ec0",
+        "planSegmentTextSha256": "8390fa7b7184b2973259837ee88a85aa1d3c73f3d878bb2f2fccd6d2aaa18d73"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Window width: ______ cm",
+          "acceptedResponses": [
+            "184"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The frame opening is one hundred and eighty-four centimetres wide. The glass itself is slightly narrower, but the booking figure is one eight four centimetres.",
+        "timecode": {
+          "startFrame": 3439802,
+          "endFrame": 8447088,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000045,
+          "endSeconds": 191.543946,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0db6c55d1f84656cdd2ee349b4e27d20de6955e46a749512aef6a92d32b14a02",
+        "planSegmentTextSha256": "c4d1219d16695c45cbf3f60f8610daac2b2c8a1077b122f6fb0bb971ad3dfe4c"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Visit date: ______",
+          "acceptedResponses": [
+            "23 February",
+            "23rd February",
+            "February 23",
+            "February 23rd"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Yes, please book 23 February. I work from home that morning, so the ten-to-noon arrival window is fine.",
+        "timecode": {
+          "startFrame": 3439802,
+          "endFrame": 8447088,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000045,
+          "endSeconds": 191.543946,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8fefd1b73f5dccb5dbc2d0032129bef6e3c3000f238647a53611e6ddf0b69984",
+        "planSegmentTextSha256": "86f3b26a1a09b424be90af6d613c18c0096caaaf9b8f3cfe699f83d6b59e2f0e"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Adviser will bring a ______ card.",
+          "acceptedResponses": [
+            "sample"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t011",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "I will bring a sample card with several films, allowing you to compare them against the actual daylight before any product is selected or bonded.",
+        "timecode": {
+          "startFrame": 3439802,
+          "endFrame": 8447088,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000045,
+          "endSeconds": 191.543946,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8ac51229ab6a9745f6cbf988c2db54e36cc589fa111afc6f9bc92b851e67c8cf",
+        "planSegmentTextSha256": "f4bdf2d042c0fadc9d38a734c16384df2ae91c0bef90d6295d1be2e5ab9e8b63"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "fill",
+          "questionText": "When is glare worst?",
+          "acceptedResponses": [
+            "late afternoon"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t014",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The glare is worst in late afternoon, usually after three. It is much less troublesome during the brighter-looking morning.",
+        "timecode": {
+          "startFrame": 11063124,
+          "endFrame": 15252824,
+          "sampleRateHz": 44100,
+          "startSeconds": 250.86449,
+          "endSeconds": 345.869025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e0177417841b7401fde2c36202a9bf43534fbca901fb063d7cca81de18e93f0c",
+        "planSegmentTextSha256": "752541d46582c870e61eb6008621195bdf43d60041e5f2a2881222b4aee999fd"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "fill",
+          "questionText": "What must remain visible through the glass?",
+          "acceptedResponses": [
+            "garden"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t016",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The garden must remain visible through the glass. Privacy is useful, but I do not want to lose that view while I am working.",
+        "timecode": {
+          "startFrame": 11063124,
+          "endFrame": 15252824,
+          "sampleRateHz": 44100,
+          "startSeconds": 250.86449,
+          "endSeconds": 345.869025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1177771e7ad18645bdd9b44a0c4eebb3475fb20b82ec489c9f26cf47a5ef279c",
+        "planSegmentTextSha256": "2827083245b30ec4fa4827b74d3a48ec8d8eaff8172cb0b4e28346da34445bf3"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "fill",
+          "questionText": "Which film type is preferred?",
+          "acceptedResponses": [
+            "neutral film",
+            "neutral"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t018",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "I prefer neutral film. I do not want the window to look mirrored, although I understand we should still compare how the samples control glare.",
+        "timecode": {
+          "startFrame": 11063124,
+          "endFrame": 15252824,
+          "sampleRateHz": 44100,
+          "startSeconds": 250.86449,
+          "endSeconds": 345.869025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b2cb7f2c65f7da022c466eb2eea9d1250c10f245bdcd90059ef728556b9ca2a5",
+        "planSegmentTextSha256": "8d8a7587b8c8d7459d88e5f28be124dde2fbb8a5f1b0cf467ad0f9677dee9551"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "fill",
+          "questionText": "What will the adviser inspect first?",
+          "acceptedResponses": [
+            "glass condition"
+          ]
+        },
+        "evidenceSegment": "s36-p1-t019",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Before colour or final measurements, I will inspect the glass condition for cracks, seals and any previous coating. That determines whether film is suitable at all.",
+        "timecode": {
+          "startFrame": 11063124,
+          "endFrame": 15252824,
+          "sampleRateHz": 44100,
+          "startSeconds": 250.86449,
+          "endSeconds": 345.869025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f3879e75b5b26422b0001609edf5b97e72d91ce1d971fd45cc3c70fc9b9c2e85",
+        "planSegmentTextSha256": "37848fd1f3df2c91fdcf9a50897ff736b3de2cfe4d825ece3271f2d3edba8e35"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Main launch ramp",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "s36-p2-t002",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The main launch is on the south shore, beside the visitor centre and equipment check area.",
+        "timecode": {
+          "startFrame": 18723514,
+          "endFrame": 23951927,
+          "sampleRateHz": 44100,
+          "startSeconds": 424.569478,
+          "endSeconds": 543.127596,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7a3e1f5b3cbb3ebe825260b669df86ccb5cfc96de110e750f382dba4a969f1a9",
+        "planSegmentTextSha256": "261a6bfee0f36bf751095147c122b34a774cdf5700e5d7f983e344bd8d1e9520"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "Alternative launch ramp",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "s36-p2-t004",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The smaller alternative launch is on the west shore. Use it only when the main ramp is closed or a ranger directs your group there.",
+        "timecode": {
+          "startFrame": 18723514,
+          "endFrame": 23951927,
+          "sampleRateHz": 44100,
+          "startSeconds": 424.569478,
+          "endSeconds": 543.127596,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "62b586fb798e9da8cc6b32188500980715732882e98fcaa0ca03c3f80f6c78e9",
+        "planSegmentTextSha256": "6039939ab72e16778374a429e7e6fc8fed5d5494998d5ea4f314b3c36c70cc9c"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Sheltered inlet",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "s36-p2-t006",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The curved water on the eastern side is the sheltered inlet, which offers protection from a west wind.",
+        "timecode": {
+          "startFrame": 18723514,
+          "endFrame": 23951927,
+          "sampleRateHz": 44100,
+          "startSeconds": 424.569478,
+          "endSeconds": 543.127596,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c518ca3bca73fc1ce00cf6ff5d7dd2cf7e3f74aaf192e9caa775ba3967ecea4f",
+        "planSegmentTextSha256": "c9f977aa07eb9ba1900fb2b0a57b819a38d13aa0c78d81f13bc9d5b36d46666a"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "Nesting exclusion zone",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "s36-p2-t008",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The line of orange buoys in the north-east marks the nesting exclusion zone. Do not pass between those buoys and shore.",
+        "timecode": {
+          "startFrame": 18723514,
+          "endFrame": 23951927,
+          "sampleRateHz": 44100,
+          "startSeconds": 424.569478,
+          "endSeconds": 543.127596,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "32cd7acdb4d85f0853a3e37a14169b23776e5d6af409a481f5f37ee07a70a346",
+        "planSegmentTextSha256": "d1f8edb447f5570094159ff7a5052df16a1e0a6e3c669960462f10cfdb5b1ef7"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Portage path",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "evidenceSegment": "s36-p2-t010",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "At the narrow rocky section, leave the water and use the portage path, carrying the canoe to the marked re-entry point.",
+        "timecode": {
+          "startFrame": 18723514,
+          "endFrame": 23951927,
+          "sampleRateHz": 44100,
+          "startSeconds": 424.569478,
+          "endSeconds": 543.127596,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9d9db70e2a381b33fd81d98c7ac71b8e212121e8f845d16713ca97bd485eb252",
+        "planSegmentTextSha256": "324b0b79ce81d63fcef10e5233d30cd29ff3aab27e89576a9b8417a062fda5fe"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Emergency landing beach",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "s36-p2-t012",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The pale beach below the eastern ridge is the emergency landing beach. It is not a lunch stop.",
+        "timecode": {
+          "startFrame": 26132665,
+          "endFrame": 31869009,
+          "sampleRateHz": 44100,
+          "startSeconds": 592.577438,
+          "endSeconds": 722.653265,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "04e8e277b0319f722475891c0de3dd7210756674dd05381bc59d246a4e5f96ca",
+        "planSegmentTextSha256": "8d17904d5d4f2e32c4e51d3d1285ea246010e577f1025753803e7a30941f9a29"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "North picnic point",
+          "correctOptionIndex": 1,
+          "correctOptionText": "normal stopping place"
+        },
+        "evidenceSegment": "s36-p2-t014",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "North picnic point is a normal stopping place with racks above the waterline.",
+        "timecode": {
+          "startFrame": 26132665,
+          "endFrame": 31869009,
+          "sampleRateHz": 44100,
+          "startSeconds": 592.577438,
+          "endSeconds": 722.653265,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ed196c70003e673c0572441f7d1d0af3221c25fcd007239ce122f05fe70009f9",
+        "planSegmentTextSha256": "ce4b0068ce7b2224103d807de12e8ee1d40f47b7f72a4db278b03fdabc1a5198"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Emergency beach",
+          "correctOptionIndex": 3,
+          "correctOptionText": "use only in an emergency"
+        },
+        "evidenceSegment": "s36-p2-t016",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The emergency beach is for use only in an emergency such as injury, damaged equipment or rapidly worsening weather.",
+        "timecode": {
+          "startFrame": 26132665,
+          "endFrame": 31869009,
+          "sampleRateHz": 44100,
+          "startSeconds": 592.577438,
+          "endSeconds": 722.653265,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5b716193e3ec2dd404aec27a348396c7d946b556bad4133f019942564a49e64a",
+        "planSegmentTextSha256": "04d315b45037eb1e161716baad68825539cacffd4be65b1df6e876aa51b98e11"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "Nesting buoy line",
+          "correctOptionIndex": 0,
+          "correctOptionText": "no landing permitted"
+        },
+        "evidenceSegment": "s36-p2-t017",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "At the nesting buoy line, no landing is permitted. Stay on the open-water side and keep noise low.",
+        "timecode": {
+          "startFrame": 26132665,
+          "endFrame": 31869009,
+          "sampleRateHz": 44100,
+          "startSeconds": 592.577438,
+          "endSeconds": 722.653265,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "df93da19d3a2bd3aa387f9e16a35438050a75e9cf3f6ff9644b566bdfd838b06",
+        "planSegmentTextSha256": "60c131908b643ca31bf1e239b080126e86843f5b88e4f72de52b3d7e8afa9a0a"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "Portage path",
+          "correctOptionIndex": 2,
+          "correctOptionText": "carry boats on foot"
+        },
+        "evidenceSegment": "s36-p2-t018",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "On the portage path, carry boats on foot. Paddling the shallow channel beside it damages the bank.",
+        "timecode": {
+          "startFrame": 26132665,
+          "endFrame": 31869009,
+          "sampleRateHz": 44100,
+          "startSeconds": 592.577438,
+          "endSeconds": 722.653265,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "94967dfe8fd01be2e57621cf765f04e0a36638ef17adb0fa5d0c959eddafc7ec",
+        "planSegmentTextSha256": "7d4fc8e748e720dd5cfc62cef6c61296252b80b0df29e771aa351205f1b43a17"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "What caused the main problem in the pilot?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "participants used a familiar shortcut"
+        },
+        "evidenceSegment": "s36-p3-t002",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "The pilot failed mainly because participants used a familiar shortcut. They reached the shelf without relying on either information condition.",
+        "timecode": {
+          "startFrame": 35339683,
+          "endFrame": 40335918,
+          "sampleRateHz": 44100,
+          "startSeconds": 801.353356,
+          "endSeconds": 914.646667,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2cf4cae17b14c02174c02461d2f93f4bedb3f02a19a617cb520095158639b5ae",
+        "planSegmentTextSha256": "ff4d439f29f9f2486bff815114d40082c3a6724f7975a9b2aff6da36a56167a0"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "How will the revised study limit prior knowledge?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "use a less familiar floor"
+        },
+        "evidenceSegment": "s36-p3-t004",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "We cannot exclude every student, but we can use a less familiar floor where the pilot group has not attended classes.",
+        "timecode": {
+          "startFrame": 35339683,
+          "endFrame": 40335918,
+          "sampleRateHz": 44100,
+          "startSeconds": 801.353356,
+          "endSeconds": 914.646667,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5ebe11520c8a32c14cd82ee60fac7699a46116bd526a818fda0237fe6c14ca39",
+        "planSegmentTextSha256": "e7fe8dccfef4245db23c4f3792130096958690fe829d7628705005dbc8f45536"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "What will remain identical in both conditions?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the target books"
+        },
+        "evidenceSegment": "s36-p3-t006",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "Both conditions must use the same target books. The route display changes, not the item being searched for.",
+        "timecode": {
+          "startFrame": 35339683,
+          "endFrame": 40335918,
+          "sampleRateHz": 44100,
+          "startSeconds": 801.353356,
+          "endSeconds": 914.646667,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d741cae2854ea52d5ef4d629dc921528b2eb38e4f433a94ff895e587770f665e",
+        "planSegmentTextSha256": "e69115b2842d32af82cdbf0028c5a88f61e2208bbf85b889e12671033a24c11f"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "What is the primary outcome measure?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "time to locate the target"
+        },
+        "evidenceSegment": "s36-p3-t008",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "Our primary outcome is the time to locate the target book. Questions asked and recall are useful secondary observations.",
+        "timecode": {
+          "startFrame": 35339683,
+          "endFrame": 40335918,
+          "sampleRateHz": 44100,
+          "startSeconds": 801.353356,
+          "endSeconds": 914.646667,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ebfe30914a19f98d1289693f4424bde47c2f1466b988d348af69c7856f6b3df4",
+        "planSegmentTextSha256": "1e80a452775c34723f39d92a4d68d47c939b78b6ab018215deab746cf3bc200e"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "Why will observers use a coded route sheet?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "to record choices consistently"
+        },
+        "evidenceSegment": "s36-p3-t010",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "A coded route sheet gives observers the same categories, so they record corridor and aisle choices consistently.",
+        "timecode": {
+          "startFrame": 35339683,
+          "endFrame": 40335918,
+          "sampleRateHz": 44100,
+          "startSeconds": 801.353356,
+          "endSeconds": 914.646667,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6081c6dd06ddd68fa6c8b9cb632aab817f34d1970b8e7ca584e10f96d3b3d184",
+        "planSegmentTextSha256": "626607141f4e7c739231541bb1a8f20b3b4f678fa1c24f58bab2a753a506631f"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "Participants receive one printed ______.",
+          "acceptedResponses": [
+            "call number"
+          ]
+        },
+        "evidenceSegment": "s36-p3-t012",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "At the start of each task, the participant receives one printed call number rather than a title and cover image.",
+        "timecode": {
+          "startFrame": 43116482,
+          "endFrame": 46443130,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.698005,
+          "endSeconds": 1053.1322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c24da9f4cad73371a75e0251467eaba5286442e52e2accbb6db9a2fa0da21fe3",
+        "planSegmentTextSha256": "8083cd42d61745b1760062b5948bc545b70f058e0c3a66a82c28adc9e17b0d2e"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "The digital condition shows a location ______.",
+          "acceptedResponses": [
+            "prompt"
+          ]
+        },
+        "evidenceSegment": "s36-p3-t014",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "In the digital condition, the phone displays a location prompt with floor, zone and shelf direction.",
+        "timecode": {
+          "startFrame": 43116482,
+          "endFrame": 46443130,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.698005,
+          "endSeconds": 1053.1322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "94247cb380271d1be8245a095d3be74d95958b0fba0115c8b9238e02076e5a24",
+        "planSegmentTextSha256": "5467921645bd5233f35ba78dbe011288b57aaa8bb5febd139b7aa7c365a27c22"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "Observers record each wrong ______.",
+          "acceptedResponses": [
+            "aisle"
+          ]
+        },
+        "evidenceSegment": "s36-p3-t016",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Observers mark every wrong aisle entered, even if the participant leaves it quickly.",
+        "timecode": {
+          "startFrame": 43116482,
+          "endFrame": 46443130,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.698005,
+          "endSeconds": 1053.1322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6d6a023d5ebf437684e4f33a17a54506bd97a639d1b43f27b5c4aa4149ebbeba",
+        "planSegmentTextSha256": "756e54648798b120490105d260d2ae94fefbb91dc3f1e393918b3004720b0536"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "A short survey measures perceived ______.",
+          "acceptedResponses": [
+            "difficulty"
+          ]
+        },
+        "evidenceSegment": "s36-p3-t018",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "After each task, a short survey asks about perceived difficulty, which may differ from measured completion time.",
+        "timecode": {
+          "startFrame": 43116482,
+          "endFrame": 46443130,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.698005,
+          "endSeconds": 1053.1322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "764f341d3fc4afdda2186a364f7bac11e722faf7063e50f77788b7a59158d7a3",
+        "planSegmentTextSha256": "ed77377d887e2f674ffb535fd4f4d64873203d51a6c1ecd15d1a8c0a6f976afe"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Crispin will prepare the random ______.",
+          "acceptedResponses": [
+            "order"
+          ]
+        },
+        "evidenceSegment": "s36-p3-t019",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "I will handle the route sheet, while Crispin prepares the random order in which conditions and target books appear.",
+        "timecode": {
+          "startFrame": 43116482,
+          "endFrame": 46443130,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.698005,
+          "endSeconds": 1053.1322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "237d3aebe1ef72e4a6a573e93de8ae5367919803d90e5c470e43a6e47a89d6eb",
+        "planSegmentTextSha256": "bccedcda518689cd271c3ef5810a7eb89a422277689c69b4e08a6547968faac9"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Sunlight is scattered by molecules in the ______.",
+          "acceptedResponses": [
+            "atmosphere"
+          ]
+        },
+        "evidenceSegment": "s36-p4-t002",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Direct sunlight becomes scattered by molecules in the atmosphere, creating directional information across the dome of the sky.",
+        "timecode": {
+          "startFrame": 53967934,
+          "endFrame": 59648126,
+          "sampleRateHz": 44100,
+          "startSeconds": 1223.762676,
+          "endSeconds": 1352.565215,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ea4d4526b41fa47a853d6e847614cddf6f972f3547113b89ec5ef53d50fba59a",
+        "planSegmentTextSha256": "6507876bd9a687282b1623da1ef7835d4b5bc055689d8bd92895cbe3ced149e0"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "This creates a pattern of sky ______.",
+          "acceptedResponses": [
+            "polarisation"
+          ]
+        },
+        "evidenceSegment": "s36-p4-t004",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "That scattering produces a pattern of sky polarisation: light waves tend to oscillate in particular orientations depending on position.",
+        "timecode": {
+          "startFrame": 53967934,
+          "endFrame": 59648126,
+          "sampleRateHz": 44100,
+          "startSeconds": 1223.762676,
+          "endSeconds": 1352.565215,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c32bc071b446ce4c77f4c0e5f284b05255d99b4ca77e59073402680e53d06955",
+        "planSegmentTextSha256": "d30be8d2957458ff2a71f9752f14c5ca63199c3b7cc7b56a4689c7eb52f24b7e"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Specialised ______ detect the orientation of light waves.",
+          "acceptedResponses": [
+            "photoreceptors"
+          ]
+        },
+        "evidenceSegment": "s36-p4-t006",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Insects detect these orientations with specialised photoreceptors, often concentrated in a particular region of the compound eye.",
+        "timecode": {
+          "startFrame": 53967934,
+          "endFrame": 59648126,
+          "sampleRateHz": 44100,
+          "startSeconds": 1223.762676,
+          "endSeconds": 1352.565215,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "46fe3b31d3264caba3b7b1ff273c8f31a7839c04585cff97e031e5627be0e762",
+        "planSegmentTextSha256": "b71aee1248c4ad6b168f7002234d00e1c54f06eed5e1604df967190113ebe717"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Neural processing produces a celestial ______.",
+          "acceptedResponses": [
+            "compass"
+          ]
+        },
+        "evidenceSegment": "s36-p4-t008",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Signals from those receptors are compared in neural circuits to produce a celestial compass rather than a picture of a painted line.",
+        "timecode": {
+          "startFrame": 53967934,
+          "endFrame": 59648126,
+          "sampleRateHz": 44100,
+          "startSeconds": 1223.762676,
+          "endSeconds": 1352.565215,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "efb7ce0abf91470dc8cf15e65047b5733182168a0d71ff1b43ad6ee713c1ec63",
+        "planSegmentTextSha256": "a4a0006154f36fe3dc00cdbf0ea1e1400f7ea0682bd1e190d229d1aa4a3e34d6"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "The pattern remains useful under partial ______.",
+          "acceptedResponses": [
+            "cloud cover"
+          ]
+        },
+        "evidenceSegment": "s36-p4-t010",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "The pattern may remain useful under partial cloud cover, when the solar disc itself is not visible but portions of sky can still be sampled.",
+        "timecode": {
+          "startFrame": 53967934,
+          "endFrame": 59648126,
+          "sampleRateHz": 44100,
+          "startSeconds": 1223.762676,
+          "endSeconds": 1352.565215,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "20a1e50d64963e508d8bf210352d1f8eefdbc8c5c5213947a753715bf9287cd1",
+        "planSegmentTextSha256": "007989255eb58220e871cc3a7df0a9d3cbf17f074c18f4e6ec8682637a0ae480"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "The animal compares the signal with an internal ______.",
+          "acceptedResponses": [
+            "clock"
+          ]
+        },
+        "evidenceSegment": "s36-p4-t012",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Because the sky pattern changes through the day, the insect compares direction with an internal clock to maintain a useful bearing.",
+        "timecode": {
+          "startFrame": 59676791,
+          "endFrame": 61474203,
+          "sampleRateHz": 44100,
+          "startSeconds": 1353.215215,
+          "endSeconds": 1393.972857,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6b6cdb91de75b220c04ed5450671ac59c79dd74971b72829c1b33dbf7f446882",
+        "planSegmentTextSha256": "a45c39f7e05318e8cc861749875c34441c9d167f7bfa73522b92b2a4083958ec"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "mcq",
+          "questionText": "Rotating-filter experiment",
+          "correctOptionIndex": 3,
+          "correctOptionText": "shows response to a rotated light pattern"
+        },
+        "evidenceSegment": "s36-p4-t014",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "In a rotating-filter experiment, changing the artificial polarisation axis produces a corresponding change in chosen direction.",
+        "timecode": {
+          "startFrame": 63654964,
+          "endFrame": 67567350,
+          "sampleRateHz": 44100,
+          "startSeconds": 1443.42322,
+          "endSeconds": 1532.139456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4ba17d974615e9cd2b5ed16fc2ac74537f07f29c2e9fcd209552893482e85d66",
+        "planSegmentTextSha256": "ede8b0350b63c53a694f5d77bfb44f3df3ea8b9dc2b0e0672199ac61ebf34ec9"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "mcq",
+          "questionText": "Screened-sun experiment",
+          "correctOptionIndex": 0,
+          "correctOptionText": "tests use when the sun is hidden"
+        },
+        "evidenceSegment": "s36-p4-t016",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "A screened-sun experiment tests whether an insect can orient when the sun itself is hidden but a patch of polarised sky remains available.",
+        "timecode": {
+          "startFrame": 63654964,
+          "endFrame": 67567350,
+          "sampleRateHz": 44100,
+          "startSeconds": 1443.42322,
+          "endSeconds": 1532.139456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "234d2b3c823ab4fa20eadb7f4ae6d293c6774c2bbea7bde76b33cdddd11c410c",
+        "planSegmentTextSha256": "c1256e1f47944927246c12c83b606281cad22f2bccdea32f6fa17087650a9047"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "mcq",
+          "questionText": "Clock-shift experiment",
+          "correctOptionIndex": 2,
+          "correctOptionText": "separates clock shift from visual cue"
+        },
+        "evidenceSegment": "s36-p4-t018",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "A clock-shift experiment alters the animal’s internal time, helping separate compensation by the clock from a fixed response to the visual cue.",
+        "timecode": {
+          "startFrame": 63654964,
+          "endFrame": 67567350,
+          "sampleRateHz": 44100,
+          "startSeconds": 1443.42322,
+          "endSeconds": 1532.139456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9f495ee8013b90fe77f62d477584436428ae1a0ba68eb80fa1d4fed1a6687929",
+        "planSegmentTextSha256": "65ecf635fc8f2e4d4bb474df496aaa3472c71fade4cb20188930b6d1e321a2ed"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "mcq",
+          "questionText": "Eye-cover experiment",
+          "correctOptionIndex": 4,
+          "correctOptionText": "confirms a role for specialised receptors"
+        },
+        "evidenceSegment": "s36-p4-t020",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Covering the specialised eye region, while leaving other vision available, can confirm a role for those receptors if orientation deteriorates.",
+        "timecode": {
+          "startFrame": 63654964,
+          "endFrame": 67567350,
+          "sampleRateHz": 44100,
+          "startSeconds": 1443.42322,
+          "endSeconds": 1532.139456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ad2aad3062c47899a951a70141264ef474f871ff5742f84ad39c085c28f52aa5",
+        "planSegmentTextSha256": "b94077ba12770720d5087280d817895f42586741c12314928ac71457729cebd8"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/set36-listening-content-v1.0.5.json",
+        "sha256": "8c5fa288c6d26a9d43c053cc84330c98ea6a8fa50165076f526fb25ffdf7a8a2"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "66f6eb4daea238ee3ae8588e406645ee252aca89c3655b2ba8be20da2eee46ef",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-36/set36-audio-production-plan.json",
+        "sha256": "35c24436e3bffdbb2419837c3c49f98931e3b35ac243095ec97fd91023ea6d51"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/elevenlabs-v4/set36-eleven-v4-manifest.json",
+        "sha256": "28a993142cee5194b8ef84ed7891b163666f3bda0f22c9b10f7844e2fd5514a6"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/elevenlabs-v4/set36-eleven-v4-progress.json",
+        "sha256": "76a1920eafb2c8f269412b2a75925e6596b26435380e9e824dc025cd4abcf4ae"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/elevenlabs-v4/set36-eleven-v4-qa.json",
+        "sha256": "e9d1db01d5135443c7181d650d0bdad801f7779e0531372d09fa0c1a274dfd42"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/elevenlabs-v4/set36-concat.txt",
+        "sha256": "7aa1397d73973eaf26f2c80297a7176dcb9e7e215e02819e91885650979eaa49"
+      },
+      "concatPieceAggregateSha256": "c58b21dd4be560615a62b8e9e8e0b172045d9170cbf700936f0cbcd6f8084c2c",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/elevenlabs-v4/ielts-set-36-listening-eleven-v4-master.wav",
+        "sha256": "e552f0e914926f5bab517c62f2fa7993956812a9121c4c35c659cf014fd5bd18",
+        "frameCount": 74488775,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/listening/elevenlabs-v4/ielts-set-36-listening-eleven-v4.mp3",
+        "sha256": "845d77bacb7fd56523a771b3e406e75e4c8d53252aa740974245320f803013ea"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-36.mp3",
+        "sha256": "845d77bacb7fd56523a771b3e406e75e4c8d53252aa740974245320f803013ea"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "3a3d7dc9a4e9979bb565abe8f974b5cdaf512f5c6935b31e7f2e201dd361e69a"
+  }
+}

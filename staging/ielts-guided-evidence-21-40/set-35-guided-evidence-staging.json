@@ -1,0 +1,1972 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 35,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-35.ts",
+      "sha256": "f98a9364e5cc8da0ed39515510754d70c6372f17ef587b97c537fae3f968b3fa"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "fill",
+          "questionText": "The area over which the wind collects loose snow is the ______.",
+          "acceptedResponses": [
+            "fetch"
+          ]
+        },
+        "sourceExcerpt": "Design begins upwind. The fetch is the distance over which wind can gather loose snow before it reaches the fence. A large exposed field may supply far more drifting snow than a short, sheltered approach. Prevailing wind direction also matters, because a fence that is oblique to the main flow creates a different pattern from one placed across it. These variables are site-specific; copying a successful installation without examining its approach can produce a barrier with too little capacity or a drift in the wrong place.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The area over which the wind collects loose snow is the ______.» y acepta «fetch». La oración fuente dice «The fetch is the distance over which wind can gather loose snow before it reaches the fence.». Esa oración contiene la respuesta y la conecta con «over», «wind», «loose», «snow», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2103b544bd2272dd2ab320a1ff990db4d3573ab41e3366ce30b1ebdef5b2a331",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "fill",
+          "questionText": "The passage describes the deliberately porous structure as a ______.",
+          "acceptedResponses": [
+            "barrier"
+          ]
+        },
+        "sourceExcerpt": "A snow fence works by changing wind flow, not by acting as a solid wall. The barrier is deliberately porous. Some air passes through while the rest is displaced, creating a zone of reduced speed on the downwind side. Snow carried by the wind then loses momentum and is deposited. A completely solid fence can produce strong turbulence and an unpredictable drift. The engineering aim is therefore controlled deposition: encouraging snow to settle where storage is available rather than where vehicles or buildings require a clear route.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The passage describes the deliberately porous structure as a ______.» y acepta «barrier». La oración fuente dice «The barrier is deliberately porous.». Esa oración contiene la respuesta y la conecta con «deliberately», «porous», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports barrier; the revised wording excludes the alternative identified by the fresh blind reviewer.",
+        "ledgerRowSha256": "22ac030b020a34b9de33411220a4edefe6934d9a5e9eaa6cf1abd61df59b6e3f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "fill",
+          "questionText": "Immediately behind the barrier, ______ falls.",
+          "acceptedResponses": [
+            "air speed"
+          ]
+        },
+        "sourceExcerpt": "Immediately behind the fence, air speed falls and circulating flow develops. The deepest part of the final drift does not usually sit against the barrier. It forms farther into the sheltered zone as snow is transported and deposited over repeated events. This separation protects the fence from being buried too quickly and creates a more usable storage shape. The exact geometry changes with terrain, snowfall and wind, so the diagram of a “typical” drift should be read as a relationship, not as a universal set of dimensions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Immediately behind the barrier, ______ falls.» y acepta «air speed». La oración fuente dice «Immediately behind the fence, air speed falls and circulating flow develops.». Esa oración contiene la respuesta y la conecta con «immediately», «behind», «falls», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "48cdf399b287cabffcac03307a66a27233c6c4fd2b86dd40c3abaf08c0c1728b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "fill",
+          "questionText": "The main deposit is described as the ______.",
+          "acceptedResponses": [
+            "final drift"
+          ]
+        },
+        "sourceExcerpt": "Immediately behind the fence, air speed falls and circulating flow develops. The deepest part of the final drift does not usually sit against the barrier. It forms farther into the sheltered zone as snow is transported and deposited over repeated events. This separation protects the fence from being buried too quickly and creates a more usable storage shape. The exact geometry changes with terrain, snowfall and wind, so the diagram of a “typical” drift should be read as a relationship, not as a universal set of dimensions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The main deposit is described as the ______.» y acepta «final drift». La oración fuente dice «The deepest part of the final drift does not usually sit against the barrier.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "e6558d01de692e317a8dbe0fdc70b167f199f402e0f802c6b6f68ceb3ce58a24",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "fill",
+          "questionText": "The distance between the fence and road is the ______.",
+          "acceptedResponses": [
+            "setback"
+          ]
+        },
+        "sourceExcerpt": "A protected road must be placed beyond the expected drift, which makes setback a design variable rather than leftover space. If the fence is too close, the engineered deposit may extend onto the carriageway. If it is unnecessarily distant, land and maintenance costs rise. Engineers estimate the likely storage requirement, then position the barrier so that the lee-side drift can mature without reaching the road. The fence does not remove snow from the landscape; it reallocates where that snow accumulates.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The distance between the fence and road is the ______.» y acepta «setback». La oración fuente dice «A protected road must be placed beyond the expected drift, which makes setback a design variable rather than leftover space.». Esa oración contiene la respuesta y la conecta con «road», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "796de53453b5955d1e4f4e21215567a5458366d41d136bc831d9f7bdf959006f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "fill",
+          "questionText": "The route kept clear in the diagram is the ______.",
+          "acceptedResponses": [
+            "protected road"
+          ]
+        },
+        "sourceExcerpt": "A protected road must be placed beyond the expected drift, which makes setback a design variable rather than leftover space. If the fence is too close, the engineered deposit may extend onto the carriageway. If it is unnecessarily distant, land and maintenance costs rise. Engineers estimate the likely storage requirement, then position the barrier so that the lee-side drift can mature without reaching the road. The fence does not remove snow from the landscape; it reallocates where that snow accumulates.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The route kept clear in the diagram is the ______.» y acepta «protected road». La oración fuente dice «A protected road must be placed beyond the expected drift, which makes setback a design variable rather than leftover space.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "85ff7fe9e6751ffdcd992dee6c9aebaee2a890577b9abf50b4f8564d43992d88",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "fill",
+          "questionText": "How is the barrier deliberately constructed?",
+          "acceptedResponses": [
+            "porous"
+          ]
+        },
+        "sourceExcerpt": "A snow fence works by changing wind flow, not by acting as a solid wall. The barrier is deliberately porous. Some air passes through while the rest is displaced, creating a zone of reduced speed on the downwind side. Snow carried by the wind then loses momentum and is deposited. A completely solid fence can produce strong turbulence and an unpredictable drift. The engineering aim is therefore controlled deposition: encouraging snow to settle where storage is available rather than where vehicles or buildings require a clear route.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «How is the barrier deliberately constructed?» y acepta «porous». La oración fuente dice «The barrier is deliberately porous.». Esa oración contiene la respuesta y la conecta con «barrier», «deliberately», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2758787b586414a0471ea5b46c3d1ce3e051e9b65ea1330448278b5206898031",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "Which wind pattern should be examined before a fence is aligned?",
+          "acceptedResponses": [
+            "prevailing wind"
+          ]
+        },
+        "sourceExcerpt": "Design begins upwind. The fetch is the distance over which wind can gather loose snow before it reaches the fence. A large exposed field may supply far more drifting snow than a short, sheltered approach. Prevailing wind direction also matters, because a fence that is oblique to the main flow creates a different pattern from one placed across it. These variables are site-specific; copying a successful installation without examining its approach can produce a barrier with too little capacity or a drift in the wrong place.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which wind pattern should be examined before a fence is aligned?» y acepta «prevailing wind». La oración fuente dice «Prevailing wind direction also matters, because a fence that is oblique to the main flow creates a different pattern from one placed across it.». Esa oración contiene la respuesta y la conecta con «wind», «pattern», «fence», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9646a546d348ce16274b2f1aa7a710aa7e42d80cf27c7937b6112196729d002c",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "In which area does the main drift form?",
+          "acceptedResponses": [
+            "sheltered zone"
+          ]
+        },
+        "sourceExcerpt": "Immediately behind the fence, air speed falls and circulating flow develops. The deepest part of the final drift does not usually sit against the barrier. It forms farther into the sheltered zone as snow is transported and deposited over repeated events. This separation protects the fence from being buried too quickly and creates a more usable storage shape. The exact geometry changes with terrain, snowfall and wind, so the diagram of a “typical” drift should be read as a relationship, not as a universal set of dimensions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «In which area does the main drift form?» y acepta «sheltered zone». La oración fuente dice «It forms farther into the sheltered zone as snow is transported and deposited over repeated events.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "47225e2a7021e761fc825b14fb538a525d6b56e98308dffe7797987883bc515a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "What term describes the point at which the storage area is full?",
+          "acceptedResponses": [
+            "saturation"
+          ]
+        },
+        "sourceExcerpt": "A fence can lose effectiveness when the storage area fills. Once the drift reaches saturation, later snow may pass beyond it or build in undesirable places. Seasonal patterns matter: several moderate storms can create a different sequence from one severe event followed by thaw. Maintenance teams monitor the drift profile rather than judging only the height of the fence. In some sites, temporary barriers can be adjusted between seasons as vegetation, ploughing practice or land use changes.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What term describes the point at which the storage area is full?» y acepta «saturation». La oración fuente dice «Once the drift reaches saturation, later snow may pass beyond it or build in undesirable places.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "fb0185a56e9e03b6ce4956f1eb53d8cead583c483ce5b476c98fc3b5519ca241",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "What type of barrier can be made from shrubs?",
+          "acceptedResponses": [
+            "living fence"
+          ]
+        },
+        "sourceExcerpt": "Rows of shrubs can function as a living fence, combining wind reduction with habitat or landscape benefits. Their performance develops slowly and varies with leaf density, gaps and snow load. Manufactured fences offer more predictable porosity and can be installed quickly, but they require posts, access and periodic repair. Neither type is inherently superior. The choice depends on how soon protection is needed, how stable the site is and whether other land-management goals can share the same strip.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What type of barrier can be made from shrubs?» y acepta «living fence». La oración fuente dice «Rows of shrubs can function as a living fence, combining wind reduction with habitat or landscape benefits.». Esa oración contiene la respuesta y la conecta con «shrubs», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "42d5a4f86efc1de3676416dff7d8f2796772bd1096dc95d6d8c25b7a9811bca1",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "What field activity records the actual location of deposited snow?",
+          "acceptedResponses": [
+            "drift survey"
+          ]
+        },
+        "sourceExcerpt": "Good design continues after installation. A drift survey records where snow actually settles and whether the protected route remains clear. Observations can reveal an unexpected crosswind, a gap at the end of the fence or a local rise that redirects flow. Such evidence supports targeted adjustment rather than blaming the general principle. Snow fences are simple in appearance, but their success comes from matching porosity, orientation, capacity and distance to a moving supply of snow.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What field activity records the actual location of deposited snow?» y acepta «drift survey». La oración fuente dice «A drift survey records where snow actually settles and whether the protected route remains clear.». Esa oración contiene la respuesta y la conecta con «records», «snow», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c426643f3db66c8a95468cff38871ea22687dc1a21c653cc8dee08d86786c87d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "What feature at the end of a fence may be revealed by observations?",
+          "acceptedResponses": [
+            "a gap",
+            "gap"
+          ]
+        },
+        "sourceExcerpt": "Good design continues after installation. A drift survey records where snow actually settles and whether the protected route remains clear. Observations can reveal an unexpected crosswind, a gap at the end of the fence or a local rise that redirects flow. Such evidence supports targeted adjustment rather than blaming the general principle. Snow fences are simple in appearance, but their success comes from matching porosity, orientation, capacity and distance to a moving supply of snow.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What feature at the end of a fence may be revealed by observations?» y acepta «a gap» / «gap». La oración fuente dice «Observations can reveal an unexpected crosswind, a gap at the end of the fence or a local rise that redirects flow.». Esa oración contiene la respuesta y la conecta con «end», «fence», «observations», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph G names a gap at the end of the fence. Both a gap and gap answer the short-answer question, remain within the two-word limit, and are accepted as equivalent forms.",
+        "ledgerRowSha256": "fcd1def27193e15df46ef35ae473df839bef56ce7167a22e599f6a5df5128a79",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph A.",
+          "correctOptionIndex": 5,
+          "correctOptionText": "The ambiguity of ordinary labels"
+        },
+        "sourceExcerpt": "Everyday colour names are flexible. One person’s “sage” may be another person’s grey-green, and the same word can migrate between fashion, paint and natural history. This elasticity is useful in conversation but troublesome when a scientist, printer and manufacturer must reproduce a colour rather than evoke it. Standardisation began with a practical recognition: verbal labels need a visible reference. A sample gives observers something to compare, even if it does not eliminate every source of variation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph A.» y la clave es «The ambiguity of ordinary labels». La evidencia dice «Standardisation began with a practical recognition: verbal labels need a visible reference.». La coincidencia semántica se apoya en «labels»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "712b1aa623a4dd73bf94c3358f837b9f017799314f1a9e2c768e1425d0020aeb",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph B.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Order brings precision but not permanence"
+        },
+        "sourceExcerpt": "Early systems often arranged painted cards or material chips into an ordered set. Their power came from relation. A sample was not merely “blue”; it occupied a position among lighter, darker, warmer and cooler neighbours. Users could point to an entry and communicate more precisely across distance. Yet handmade samples varied, and pigments changed with age. A reference could stabilise a discussion while slowly becoming less like the colour it was supposed to preserve.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph B.» y la clave es «Order brings precision but not permanence». La evidencia dice «Yet handmade samples varied, and pigments changed with age. A reference could stabilise a discussion while slowly becoming less like the colour it was supposed to preserve.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "4c976cec40a33f887b4993b3256a7309153d87ad8a70d5a70b8f2b8bc4cb2f6c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph C.",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Colour enters industrial quality control"
+        },
+        "sourceExcerpt": "Industrial swatches tied colour communication to production. Textile, ceramic and paint makers could compare a new batch with an accepted sample and reject visible departures. This supported contracts and quality control, but it also exposed material differences: a colour on glossy metal may not look identical on woven cloth. Standardisation therefore shifted from naming a hue to defining conditions of comparison. Surface texture, viewing angle and illumination became part of the problem.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph C.» y la clave es «Colour enters industrial quality control». La evidencia dice «This supported contracts and quality control, but it also exposed material differences: a colour on glossy metal may not look identical on woven cloth.». La coincidencia semántica se apoya en «colour», «quality», «control»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "3d1f78a69e2317286b20b4a8efcce7974e0b4536cae7989b9e6ed38cea064dd5",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph D.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Controlling the light used for comparison"
+        },
+        "sourceExcerpt": "Two samples can appear to match under one lamp and separate under another because their materials reflect wavelengths differently. Controlled viewing booths address this by providing standard illumination. They do not create a universally “true” appearance; they make the viewing condition reproducible. This distinction is important. An observer may still need to ask how the product will look in daylight, a shop or a home, but comparisons made under the agreed lamp can be repeated by another laboratory.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph D.» y la clave es «Controlling the light used for comparison». La evidencia dice «Two samples can appear to match under one lamp and separate under another because their materials reflect wavelengths differently.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "85941618b9cb7fa7521e3616c0f81e3e8fa2d4e2c808dfb7ec066c945009f409",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph E.",
+          "correctOptionIndex": 4,
+          "correctOptionText": "The contribution and limits of numerical measurement"
+        },
+        "sourceExcerpt": "Instruments translate reflected light into numerical readings. Numbers improve record keeping and allow tolerances to be specified, but they do not make physical samples obsolete. Different instruments and settings can produce small differences, and a numerical match may not capture every perceptual effect of texture. Many organisations therefore use instrument readings alongside visual assessment. The two methods answer related but not identical questions: one quantifies a signal; the other judges an appearance in context.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph E.» y la clave es «The contribution and limits of numerical measurement». La evidencia dice «Instruments translate reflected light into numerical readings.». La coincidencia semántica se apoya en «numerical»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c2d490ccc681f0ef9f45d75c427b32f79507fce3f229c9ff18b3e3815f99cd02",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph F.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Protecting a standard through time"
+        },
+        "sourceExcerpt": "A standard needs a history. Samples exposed repeatedly to light, dust and handling may fade or become soiled. A reference archive protects master samples, while working copies absorb daily use. Dates, materials and replacement decisions should be recorded so that a “match” from one decade is not silently compared with a changed reference in the next. Custody sounds administrative, yet without it a carefully designed colour system can drift while retaining the same labels.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph F.» y la clave es «Protecting a standard through time». La evidencia dice «A standard needs a history.». La coincidencia semántica se apoya en «standard»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "3d7c88137281e67466d6499fc46d8cb2c2b5a99b2904d465550c1c6c08d72a3b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "Choose the correct heading for paragraph G.",
+          "correctOptionIndex": 6,
+          "correctOptionText": "A practical agreement rather than absolute truth"
+        },
+        "sourceExcerpt": "Colour standards do not abolish perception or context. They create negotiated consistency by specifying a reference, a method and an acceptable range. This is enough to coordinate many scientific and industrial tasks, provided users remember the boundary. A colour sample communicates more than a name, and an instrument reading offers more than an impression, but neither is independent of material, light and purpose. The strongest systems make those conditions visible rather than hiding them behind an apparently exact code.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the correct heading for paragraph G.» y la clave es «A practical agreement rather than absolute truth». La evidencia dice «The strongest systems make those conditions visible rather than hiding them behind an apparently exact code.». La coincidencia semántica se apoya en «rather»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "1c62dbd3ec269fb4bc8af8eebb12a4bdf6dd04e5fbc4377420e4b44729746cd0",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "organised colours through their position among neighbouring samples",
+          "correctOptionIndex": 0,
+          "correctOptionText": "ordered painted samples"
+        },
+        "sourceExcerpt": "Early systems often arranged painted cards or material chips into an ordered set. Their power came from relation. A sample was not merely “blue”; it occupied a position among lighter, darker, warmer and cooler neighbours. Users could point to an entry and communicate more precisely across distance. Yet handmade samples varied, and pigments changed with age. A reference could stabilise a discussion while slowly becoming less like the colour it was supposed to preserve.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «organised colours through their position among neighbouring samples» y la clave es «ordered painted samples». La evidencia dice «Early systems often arranged painted cards or material chips into an ordered set.». La coincidencia semántica se apoya en «ordered», «painted»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "300aa97e119fa5d90261cd9b741cfce45628563c99eb07bbdb43fbff280934a1",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "made batch comparison part of commercial quality control",
+          "correctOptionIndex": 1,
+          "correctOptionText": "industrial swatches"
+        },
+        "sourceExcerpt": "Industrial swatches tied colour communication to production. Textile, ceramic and paint makers could compare a new batch with an accepted sample and reject visible departures. This supported contracts and quality control, but it also exposed material differences: a colour on glossy metal may not look identical on woven cloth. Standardisation therefore shifted from naming a hue to defining conditions of comparison. Surface texture, viewing angle and illumination became part of the problem.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «made batch comparison part of commercial quality control» y la clave es «industrial swatches». La evidencia dice «Industrial swatches tied colour communication to production.». La coincidencia semántica se apoya en «industrial», «swatches»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "c8e290f3e1be81df2027f0169f75be47865468a3224d2017372313d29d9a20dc",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "made the conditions of visual comparison repeatable",
+          "correctOptionIndex": 2,
+          "correctOptionText": "standard illumination"
+        },
+        "sourceExcerpt": "Two samples can appear to match under one lamp and separate under another because their materials reflect wavelengths differently. Controlled viewing booths address this by providing standard illumination. They do not create a universally “true” appearance; they make the viewing condition reproducible. This distinction is important. An observer may still need to ask how the product will look in daylight, a shop or a home, but comparisons made under the agreed lamp can be repeated by another laboratory.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «made the conditions of visual comparison repeatable» y la clave es «standard illumination». La evidencia dice «Controlled viewing booths address this by providing standard illumination.». La coincidencia semántica se apoya en «standard», «illumination»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "1ddfd2b0f748f59f1097a9576c527accbcb3e991da7917b99d9a3ff9b3177f98",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "expressed reflected light as numerical data",
+          "correctOptionIndex": 3,
+          "correctOptionText": "instrument readings"
+        },
+        "sourceExcerpt": "Instruments translate reflected light into numerical readings. Numbers improve record keeping and allow tolerances to be specified, but they do not make physical samples obsolete. Different instruments and settings can produce small differences, and a numerical match may not capture every perceptual effect of texture. Many organisations therefore use instrument readings alongside visual assessment. The two methods answer related but not identical questions: one quantifies a signal; the other judges an appearance in context.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «expressed reflected light as numerical data» y la clave es «instrument readings». La evidencia dice «Many organisations therefore use instrument readings alongside visual assessment.». La coincidencia semántica se apoya en «instrument», «readings»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "74eec44282bf7b1885f0fd1575dbb46f8bc3566b14b8fdb4a9316c936d861288",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "separated protected masters from frequently handled copies",
+          "correctOptionIndex": 4,
+          "correctOptionText": "reference archives"
+        },
+        "sourceExcerpt": "A standard needs a history. Samples exposed repeatedly to light, dust and handling may fade or become soiled. A reference archive protects master samples, while working copies absorb daily use. Dates, materials and replacement decisions should be recorded so that a “match” from one decade is not silently compared with a changed reference in the next. Custody sounds administrative, yet without it a carefully designed colour system can drift while retaining the same labels.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «separated protected masters from frequently handled copies» y la clave es «reference archives». La evidencia dice «A reference archive protects master samples, while working copies absorb daily use.». La coincidencia semántica se apoya en «copies», «reference»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "56535d8953919d2de13197684d5279bea43c39fed0d51ceaf52d841dd1f5b5e7",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "defined consistency as an agreement about method and tolerance",
+          "correctOptionIndex": 5,
+          "correctOptionText": "negotiated standards"
+        },
+        "sourceExcerpt": "Colour standards do not abolish perception or context. They create negotiated consistency by specifying a reference, a method and an acceptable range. This is enough to coordinate many scientific and industrial tasks, provided users remember the boundary. A colour sample communicates more than a name, and an instrument reading offers more than an impression, but neither is independent of material, light and purpose. The strongest systems make those conditions visible rather than hiding them behind an apparently exact code.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «defined consistency as an agreement about method and tolerance» y la clave es «negotiated standards». La evidencia dice «They create negotiated consistency by specifying a reference, a method and an acceptable range.». La coincidencia semántica se apoya en «consistency», «method», «negotiated»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "bd39358737b2c6d3c285b048e9dc8a1dc56738095bdb421105bafe7fea372e24",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "The author believes algorithms remove moral choices from disaster triage.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "After a disaster, needs arrive faster than agencies can inspect them. Roads may be blocked, communications intermittent and records incomplete. Triage is unavoidable: someone must decide which request receives attention first. Algorithms can support prioritisation by combining reports, location and available resources. Their attraction is not that they remove values but that they apply a stated rule quickly across many cases. The danger begins when speed is mistaken for certainty or when the rule’s moral choices are hidden inside technical language.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author believes algorithms remove moral choices from disaster triage.», mientras el pasaje dice «Their attraction is not that they remove values but that they apply a stated rule quickly across many cases.». Ambos tratan «remove», pero la proposición añade «algorithms», «moral», «choices», «disaster», «triage» donde la fuente especifica «attraction», «values», «apply», «rule», «quickly», «across». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "1a3e43762e6ae246bb75b83f522fedc7bd4e7bf0fdd6ca6afa3406099a0b9c91",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Areas with poor communications may appear less needy than they really are.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "A model can rank only what enters its data. Neighbourhoods with reliable connections may submit more detailed reports than equally affected areas that are offline. If report volume is treated as need, visibility becomes advantage. Missing reports are not evidence of safety. Designers can introduce uncertainty flags or seek alternative signals, but no adjustment fully replaces local knowledge. The output should therefore be read as a provisional map of recorded information, not as a complete picture of suffering.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Areas with poor communications may appear less needy than they really are.» y el pasaje dice «Neighbourhoods with reliable connections may submit more detailed reports than equally affected areas that are offline.». La fuente conserva la misma relación mediante «areas» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "ca5b79f435be1ce66b5727bb82147857dc2831e32b07b3c0cb8cf002174a5968",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "Every reasonable objective produces the same order of requests.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Different objectives produce different queues. Minimising travel time may favour clusters of accessible requests; reducing the greatest immediate risk may send teams farther apart; supporting the largest number of people may disadvantage a small isolated community. None of these calculations is neutral. A priority rule expresses what counts as benefit and whose delay is acceptable. Public agencies should make that rule contestable before a crisis rather than discovering its implications while people are waiting.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Every reasonable objective produces the same order of requests.», mientras el pasaje dice «Different objectives produce different queues.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «every», «reasonable», «objective», «produces», «same», «order» donde la fuente especifica «different», «objectives», «produce», «queues». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2e266e21f78b203d46a601d514f2bc51481acd80eba6b8e8a8732f5565136484",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Decisions made by a model can influence the evidence available for later decisions.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Allocation decisions alter the data used for later decisions. If a model sends teams to one district, observers there will generate more confirmed reports, which may cause the district to appear even more important. This feedback loop can reinforce an early judgement that was based on incomplete information. Random checks outside the highest-ranked area and deliberate exploration can reveal hidden need. Efficiency measured only where the system already looked may become self-confirming.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Decisions made by a model can influence the evidence available for later decisions.» y el pasaje dice «Allocation decisions alter the data used for later decisions.». La fuente conserva la misma relación mediante «decisions», «later» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "214826666ae21f2dcdcfe6d07ed9e8f6c3f78ee0590382ef6f58f8004fbd5e44",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "The passage states that reason codes are legally required in all countries.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Frontline coordinators need more than a priority score. A reason code can show which factors drove the result and alert staff to missing or contradictory inputs. Explanation is not merely for public relations; it enables a human reviewer to recognise when a model has interpreted an unusual case badly. However, a long technical account is not automatically useful. Explanations must connect to decisions that a coordinator is authorised and equipped to change.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage states that reason codes are legally required in all countries.». El pasaje sí ofrece el contexto «A reason code can show which factors drove the result and alert staff to missing or contradictory inputs.», pero en el texto completo no especifica «codes», «legally», «required», «all», «countries» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "93f71d43b32626236d3c6521006bc2f79254e3d4e32686fa331628b6a56d7e9a",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "fill",
+          "questionText": "A lack of ______ should not be interpreted as proof that an area is safe.",
+          "acceptedResponses": [
+            "reports"
+          ]
+        },
+        "sourceExcerpt": "A model can rank only what enters its data. Neighbourhoods with reliable connections may submit more detailed reports than equally affected areas that are offline. If report volume is treated as need, visibility becomes advantage. Missing reports are not evidence of safety. Designers can introduce uncertainty flags or seek alternative signals, but no adjustment fully replaces local knowledge. The output should therefore be read as a provisional map of recorded information, not as a complete picture of suffering.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A lack of ______ should not be interpreted as proof that an area is safe.» y acepta «reports». La oración fuente dice «Neighbourhoods with reliable connections may submit more detailed reports than equally affected areas that are offline.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "8984e4844001f503ac0e59b27f56f4a0848d64242e2b72f6cabe556bc85ae69f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "fill",
+          "questionText": "Different ______ produce different queues.",
+          "acceptedResponses": [
+            "objectives"
+          ]
+        },
+        "sourceExcerpt": "Different objectives produce different queues. Minimising travel time may favour clusters of accessible requests; reducing the greatest immediate risk may send teams farther apart; supporting the largest number of people may disadvantage a small isolated community. None of these calculations is neutral. A priority rule expresses what counts as benefit and whose delay is acceptable. Public agencies should make that rule contestable before a crisis rather than discovering its implications while people are waiting.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Different ______ produce different queues.» y acepta «objectives». La oración fuente dice «Different objectives produce different queues.». Esa oración contiene la respuesta y la conecta con «different», «produce», «queues», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports objectives; the revised wording excludes the alternative identified by the fresh blind reviewer.",
+        "ledgerRowSha256": "638cc2c89f56503c86b1b0c045a772dde73799709cfb8833e7aca7a8ee023cfb",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "fill",
+          "questionText": "Repeatedly favouring one area can create a ______.",
+          "acceptedResponses": [
+            "feedback loop"
+          ]
+        },
+        "sourceExcerpt": "Allocation decisions alter the data used for later decisions. If a model sends teams to one district, observers there will generate more confirmed reports, which may cause the district to appear even more important. This feedback loop can reinforce an early judgement that was based on incomplete information. Random checks outside the highest-ranked area and deliberate exploration can reveal hidden need. Efficiency measured only where the system already looked may become self-confirming.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Repeatedly favouring one area can create a ______.» y acepta «feedback loop». La oración fuente dice «This feedback loop can reinforce an early judgement that was based on incomplete information.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "627fad6956ccd99918f6029d39794c4ff27471c7a1c85d9495fa5505166c10d3",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "fill",
+          "questionText": "A ______ can identify the main factors behind a score.",
+          "acceptedResponses": [
+            "reason code"
+          ]
+        },
+        "sourceExcerpt": "Frontline coordinators need more than a priority score. A reason code can show which factors drove the result and alert staff to missing or contradictory inputs. Explanation is not merely for public relations; it enables a human reviewer to recognise when a model has interpreted an unusual case badly. However, a long technical account is not automatically useful. Explanations must connect to decisions that a coordinator is authorised and equipped to change.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A ______ can identify the main factors behind a score.» y acepta «reason code». La oración fuente dice «A reason code can show which factors drove the result and alert staff to missing or contradictory inputs.». Esa oración contiene la respuesta y la conecta con «factors», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7a7e0f39c546a2759cf219f234a8a30573f162dd117e06c2cda0cea136d22e59",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "fill",
+          "questionText": "Reasons for human changes should be recorded in a ______.",
+          "acceptedResponses": [
+            "log"
+          ]
+        },
+        "sourceExcerpt": "Human oversight becomes ceremonial if staff cannot challenge a ranking. An effective system allows an override, records why it occurred and reviews patterns later. Frequent overrides may reveal flawed inputs, an outdated objective or a local condition that the model does not represent. The log also discourages arbitrary intervention because decisions leave a trace. Accountability therefore runs in both directions: the algorithm should be auditable, and departures from it should be documented.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Reasons for human changes should be recorded in a ______.» y acepta «log». La oración fuente dice «The log also discourages arbitrary intervention because decisions leave a trace.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "6fd8580853967057daca3bbe68de7cb00b3da088a591c0f93217444971760ce9",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "What is the author’s main warning about input data?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Recorded visibility may be confused with actual need"
+        },
+        "sourceExcerpt": "A model can rank only what enters its data. Neighbourhoods with reliable connections may submit more detailed reports than equally affected areas that are offline. If report volume is treated as need, visibility becomes advantage. Missing reports are not evidence of safety. Designers can introduce uncertainty flags or seek alternative signals, but no adjustment fully replaces local knowledge. The output should therefore be read as a provisional map of recorded information, not as a complete picture of suffering.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the author’s main warning about input data?» y la clave es «Recorded visibility may be confused with actual need». La evidencia dice «If report volume is treated as need, visibility becomes advantage.». La coincidencia semántica se apoya en «visibility», «need»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "5965d64a5aa17c96861732311e16f68e43335a8836f806847da300ab6424e977",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "Why are random checks outside top-ranked areas useful?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "They can reveal need hidden by a reinforcing feedback pattern"
+        },
+        "sourceExcerpt": "Allocation decisions alter the data used for later decisions. If a model sends teams to one district, observers there will generate more confirmed reports, which may cause the district to appear even more important. This feedback loop can reinforce an early judgement that was based on incomplete information. Random checks outside the highest-ranked area and deliberate exploration can reveal hidden need. Efficiency measured only where the system already looked may become self-confirming.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why are random checks outside top-ranked areas useful?» y la clave es «They can reveal need hidden by a reinforcing feedback pattern». La evidencia dice «Random checks outside the highest-ranked area and deliberate exploration can reveal hidden need.». La coincidencia semántica se apoya en «random», «checks», «outside», «ranked», «reveal», «need»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9b1039f47c0d8b1c8e6deceb7eeeb0afe21e3b193a04982067bd7bcb0d693ccd",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "What makes human oversight effective according to the passage?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Reviewers can change a result and leave an auditable reason"
+        },
+        "sourceExcerpt": "Human oversight becomes ceremonial if staff cannot challenge a ranking. An effective system allows an override, records why it occurred and reviews patterns later. Frequent overrides may reveal flawed inputs, an outdated objective or a local condition that the model does not represent. The log also discourages arbitrary intervention because decisions leave a trace. Accountability therefore runs in both directions: the algorithm should be auditable, and departures from it should be documented.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What makes human oversight effective according to the passage?» y la clave es «Reviewers can change a result and leave an auditable reason». La evidencia dice «Human oversight becomes ceremonial if staff cannot challenge a ranking.». La coincidencia semántica se apoya en «human», «oversight»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7513d949a1ac40a35ae1538679298be74f68696078eae5d37bdb7093387afe9c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "Which best expresses the author’s conclusion?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Algorithms can assist, but institutions remain responsible for their design and use"
+        },
+        "sourceExcerpt": "The sensible position is neither automatic trust nor blanket rejection. Algorithmic triage can organise information and expose a consistent priority rule, but responsibility remains institutional. Agencies choose objectives, collect data, set override powers and decide how uncertainty is communicated. A model that accelerates a bad rule is not an improvement. A carefully governed tool, by contrast, can help staff see a crowded situation without pretending to replace judgement. The relevant question is not whether an algorithm decides, but how people design, supervise and answer for its role.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which best expresses the author’s conclusion?» y la clave es «Algorithms can assist, but institutions remain responsible for their design and use». La evidencia dice «The relevant question is not whether an algorithm decides, but how people design, supervise and answer for its role.». La coincidencia semántica se apoya en «design»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "4d4aeec73a7d538d2af412282bbb8b9b23c9e3d1051cde4661fd445789c5190c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/reading/set35-reading-content-v1.0.3.json",
+        "sha256": "7d7e5230bcdabe584494a3a40578e3fcd16eb9b4f3f1f10760f2003ec1ebbbe3"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "fa5a9ba27632b4413e7394fb53654bd253ba76dcb1cfe37ac6beed8aa265732d",
+      "canonicalQuestionProjectionSha256": "38dfbe2ea64ce1df0feb1467b80bcfd51bcbcac402a29a1acba3c3740efa8e3c"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Pritchlow"
+          ]
+        },
+        "evidenceSegment": "s35-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is Pritchlow, P-R-I-T-C-H-L-O-W, not Pritchard as the earlier enquiry suggested. Please use the longer spelling on the collection record.",
+        "timecode": {
+          "startFrame": 3439803,
+          "endFrame": 8564378,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000068,
+          "endSeconds": 194.203583,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "069f71c4696539cbcb17bd60811146836bbac70c8b5fe089bdfd70718351524c",
+        "planSegmentTextSha256": "0b4d423c05d9a2c784c91dd82ef6d04a657ca0e4b649447aa405ac53ba5760a0"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Rug material: ______",
+          "acceptedResponses": [
+            "wool"
+          ]
+        },
+        "evidenceSegment": "s35-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The pile is wool, natural sheep wool. The fringe may contain cotton, but the main rug material you should record is wool.",
+        "timecode": {
+          "startFrame": 3439803,
+          "endFrame": 8564378,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000068,
+          "endSeconds": 194.203583,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b499a72995cabc448fbce4547580e7c8cf5f8701effbb0a25c2fe0c57edbb194",
+        "planSegmentTextSha256": "d3a9665f176702893c586b552a24b7793ee7bef9fadcc86e2b17ccae11a78103"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Main stain: ______",
+          "acceptedResponses": [
+            "coffee"
+          ]
+        },
+        "evidenceSegment": "s35-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "There is a small pet mark by the door, but the main visible stain is coffee in the centre. One fringe corner is loose as well.",
+        "timecode": {
+          "startFrame": 3439803,
+          "endFrame": 8564378,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000068,
+          "endSeconds": 194.203583,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "60b0a1d86bead765d6a76186ea19e46092dae32e1cc6720219c155d8c138d83b",
+        "planSegmentTextSha256": "f8f0e930d6f243ee4c03ee9581094492a00e243d4f8d67584659c0ccfe0df470"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Approximate width: ______ metres",
+          "acceptedResponses": [
+            "2.1",
+            "2.1 metres"
+          ]
+        },
+        "evidenceSegment": "s35-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is about three metres long and 2.1 metres wide. The 2.1 figure is the approximate width for the form.",
+        "timecode": {
+          "startFrame": 3439803,
+          "endFrame": 8564378,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000068,
+          "endSeconds": 194.203583,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1d66d845af33b8c67baa5aa761a5f9a2291e09397f5962833a143846a8d86538",
+        "planSegmentTextSha256": "74de3bc31f84470d67fbc135bb5fc5c06453f771d2bb87bcd721a61b70dce1e3"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Collection date: ______",
+          "acceptedResponses": [
+            "12 January",
+            "12th January",
+            "January 12",
+            "January 12th"
+          ]
+        },
+        "evidenceSegment": "s35-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Yes, 12 January is suitable. I will keep the afternoon free, and the rug can remain flat on the floor until the crew arrives.",
+        "timecode": {
+          "startFrame": 3439803,
+          "endFrame": 8564378,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000068,
+          "endSeconds": 194.203583,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "56001d97cd2e2cefe3237dad4136c459451669e4617c7601a6f4bf22a706f11f",
+        "planSegmentTextSha256": "4f96e0ef87ea8e90c219ccd11959426d80c18485a6932e280f0d8aada80ef011"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Access note: use the ______ entrance",
+          "acceptedResponses": [
+            "courtyard"
+          ]
+        },
+        "evidenceSegment": "s35-p1-t012",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The front stair turns too sharply, so please use the courtyard entrance. The crew can carry the rug out flat through there.",
+        "timecode": {
+          "startFrame": 3439803,
+          "endFrame": 8564378,
+          "sampleRateHz": 44100,
+          "startSeconds": 78.000068,
+          "endSeconds": 194.203583,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "82ee84011142f560ee24bac953d5b125bbee325b9817e22bb1317c87445500dd",
+        "planSegmentTextSha256": "b676d17d597fc439a0a299662712096a57f1e446389a26e6d4d29f8de1032300"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Blue border",
+          "correctOptionIndex": 2,
+          "correctOptionText": "colour test"
+        },
+        "evidenceSegment": "s35-p1-t013",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "At the workshop, the first special step concerns the blue border. Because that colour may release dye, we carry out a colour test before any wet treatment.",
+        "timecode": {
+          "startFrame": 10529017,
+          "endFrame": 14771172,
+          "sampleRateHz": 44100,
+          "startSeconds": 238.75322,
+          "endSeconds": 334.947211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3509b4cb2c2575b95344f42e84305a4d90d574c6f420c0f226c0e53d675a2cb6",
+        "planSegmentTextSha256": "eee0c8a04aa839007c1db3eb8a6d29c64e97e5b7229e87d37a5ae65108861eb3"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "General dust",
+          "correctOptionIndex": 5,
+          "correctOptionText": "surface clean"
+        },
+        "evidenceSegment": "s35-p1-t015",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "For the general dust, the planned treatment is a controlled surface clean rather than soaking. Odour treatment is a separate option and has not been selected.",
+        "timecode": {
+          "startFrame": 10529017,
+          "endFrame": 14771172,
+          "sampleRateHz": 44100,
+          "startSeconds": 238.75322,
+          "endSeconds": 334.947211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "641e6eacfd48d3a9a036c062838a51f238be1427da46932c65547f13497bfa16",
+        "planSegmentTextSha256": "e6b81a10634373f04cdd0235d3c12fb8041653196359d1edf370a58553ab2ebc"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "Coffee mark",
+          "correctOptionIndex": 0,
+          "correctOptionText": "spot treatment"
+        },
+        "evidenceSegment": "s35-p1-t017",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "The coffee mark is listed for spot treatment after the fibre and colour checks. We will contact you if the hidden test shows an unexpected reaction.",
+        "timecode": {
+          "startFrame": 10529017,
+          "endFrame": 14771172,
+          "sampleRateHz": 44100,
+          "startSeconds": 238.75322,
+          "endSeconds": 334.947211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "504de2315222bedab35f97a20aab005194656aa5136fb2dcd85d03ca885d1663",
+        "planSegmentTextSha256": "d16df4d2308771789b9d7ab5bd1b1edddb98de5afcb895461b4d741449cd4221"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "Flat drying",
+          "correctOptionIndex": 4,
+          "correctOptionText": "drying rack"
+        },
+        "evidenceSegment": "s35-p1-t019",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "It will lie on a drying rack and dry flat; it will not hang. Once fully dry, it is wrapped for transport, never sealed while damp.",
+        "timecode": {
+          "startFrame": 10529017,
+          "endFrame": 14771172,
+          "sampleRateHz": 44100,
+          "startSeconds": 238.75322,
+          "endSeconds": 334.947211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3d8a325a189449ed3e0c9bcb968f5b4ef5d432c42541f33b971451a0404acd19",
+        "planSegmentTextSha256": "6aaaa3771abcc5cf5173fdb0ab03422ce50ffe6ea0fdb3948dd19ec36f47afd0"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Load unexposed film",
+          "correctOptionIndex": 1,
+          "correctOptionText": "film-loading bench"
+        },
+        "evidenceSegment": "s35-p2-t002",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "The completely light-tight film-loading bench is station A. That is where unexposed film is loaded into a processing tank.",
+        "timecode": {
+          "startFrame": 18241852,
+          "endFrame": 24133158,
+          "sampleRateHz": 44100,
+          "startSeconds": 413.647438,
+          "endSeconds": 547.237143,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "77c507e98a548f4728fd6d290d030bf147765a6cf324aa7f7a055ae7b557c0b3",
+        "planSegmentTextSha256": "7f8ebbb46b0be0307b919d790c7dd9b6c3ee36ddbbabe60b8a8f31acc1d4edb9"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "Begin processing paper",
+          "correctOptionIndex": 3,
+          "correctOptionText": "developer station"
+        },
+        "evidenceSegment": "s35-p2-t004",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Paper processing starts at the developer station, B. Keep the developer tongs there rather than carrying them to the wash sink.",
+        "timecode": {
+          "startFrame": 18241852,
+          "endFrame": 24133158,
+          "sampleRateHz": 44100,
+          "startSeconds": 413.647438,
+          "endSeconds": 547.237143,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ff128c7806b7d313ce1bd0f6d5da8ce0ba71fa503954769ec9f03ceeacb8db77",
+        "planSegmentTextSha256": "5cca9287cbcdbee8d8ad4becff42c110a408d882608e996a904cab392bec3993"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Rinse finished prints",
+          "correctOptionIndex": 5,
+          "correctOptionText": "wash sink"
+        },
+        "evidenceSegment": "s35-p2-t006",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Finished prints receive their extended rinse in the wash sink, the sink reserved for washing, after the fixing stage is complete.",
+        "timecode": {
+          "startFrame": 18241852,
+          "endFrame": 24133158,
+          "sampleRateHz": 44100,
+          "startSeconds": 413.647438,
+          "endSeconds": 547.237143,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2c9e76774c3e2775c37c144f6f365fa27530b9fda251fb2f6b4f43c0dec88dd5",
+        "planSegmentTextSha256": "3b533d4ff20be4277397f8ca72da48897c7a56a1271ce2071a64f2d3f7f2e859"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "Collect labelled negatives",
+          "correctOptionIndex": 0,
+          "correctOptionText": "negative cabinet"
+        },
+        "evidenceSegment": "s35-p2-t008",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Labelled negative sleeves are returned through the negative cabinet, D. Loose strips must never be left on a table.",
+        "timecode": {
+          "startFrame": 18241852,
+          "endFrame": 24133158,
+          "sampleRateHz": 44100,
+          "startSeconds": 413.647438,
+          "endSeconds": 547.237143,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1a3bea0f1fa5ae93ce8747017a2c1048780ee2ed5efbeb55425131e1dff609e9",
+        "planSegmentTextSha256": "6e2a90d1f2a62d2f48fd37d6b08674a4208a3c560a9471e352b80fddd6bfd1f9"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Dry fibre-based prints",
+          "correctOptionIndex": 4,
+          "correctOptionText": "print dryer"
+        },
+        "evidenceSegment": "s35-p2-t010",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Fibre-based prints that are ready for controlled drying go to the print dryer at E after members complete the separate demonstration.",
+        "timecode": {
+          "startFrame": 18241852,
+          "endFrame": 24133158,
+          "sampleRateHz": 44100,
+          "startSeconds": 413.647438,
+          "endSeconds": 547.237143,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "35c34fc62c8a0745196e0f02863a245d7b43e77028d307486045b4868889d0e7",
+        "planSegmentTextSha256": "8ff7d8eee9c6adffe705a7041f3db93009edbefba547049841f29cccf97c6dd0"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Why must members book a full session?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "to prevent overlap at shared stations"
+        },
+        "evidenceSegment": "s35-p2-t012",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Book a full session because the stations are shared and overlap creates unsafe crowding. The booking does not guarantee one-to-one teaching.",
+        "timecode": {
+          "startFrame": 26093423,
+          "endFrame": 31370427,
+          "sampleRateHz": 44100,
+          "startSeconds": 591.687596,
+          "endSeconds": 711.347551,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b1dc6315467285e51c02fe9dfcaede143b1eed50d8f7454279b790e4533aa8ff",
+        "planSegmentTextSha256": "bb8dbf32ddcaa1ca1c1e1a5f40ae8749bc11eb469be6903cbb3fafe03674cf04"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "What should a member do if the safe light fails?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "cover materials and call the supervisor"
+        },
+        "evidenceSegment": "s35-p2-t014",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "If the safe light fails, do not use a phone. Cover light-sensitive materials immediately and call the supervisor from the doorway.",
+        "timecode": {
+          "startFrame": 26093423,
+          "endFrame": 31370427,
+          "sampleRateHz": 44100,
+          "startSeconds": 591.687596,
+          "endSeconds": 711.347551,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "609a53ef7941287ac1facb1519a4c280ac24a8e6c128d4e529ab5a70ef5eca23",
+        "planSegmentTextSha256": "5d52435fcd2acc2d2d4c0f0d45d51277fe76211e8394eba28e242a91ebe3f72b"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Where are personal chemicals kept?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "in the checked storage locker"
+        },
+        "evidenceSegment": "s35-p2-t015",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Personal chemicals are accepted only in the checked storage locker, with contents and owner clearly labelled.",
+        "timecode": {
+          "startFrame": 26093423,
+          "endFrame": 31370427,
+          "sampleRateHz": 44100,
+          "startSeconds": 591.687596,
+          "endSeconds": 711.347551,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2ad293826df5bf4b84912e89cc83ef6640d62425766af2e859b846ba9901b5de",
+        "planSegmentTextSha256": "23ba937c9c397298b250971077925af0d76bc1523af53f62edf7b8b72245c998"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "What is required before using the print dryer?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "a dry-mounting demonstration"
+        },
+        "evidenceSegment": "s35-p2-t016",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The print dryer becomes available after a dry-mounting demonstration. It does not require another card or a payment each time.",
+        "timecode": {
+          "startFrame": 26093423,
+          "endFrame": 31370427,
+          "sampleRateHz": 44100,
+          "startSeconds": 591.687596,
+          "endSeconds": 711.347551,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cd7bdd01412174cdf590eab53b8c8b2c0b855a12c0d0ad3ab5ca1eba3b11c0f8",
+        "planSegmentTextSha256": "9d2110d832dcc06485e5a8a853b478cee365cb15b30c05de201547a1aebced32"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "How are spills reported?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "directly to the duty supervisor"
+        },
+        "evidenceSegment": "s35-p2-t017",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Tell the duty supervisor about every spill immediately. Do not hide the report in the calendar or write it only on an envelope.",
+        "timecode": {
+          "startFrame": 26093423,
+          "endFrame": 31370427,
+          "sampleRateHz": 44100,
+          "startSeconds": 591.687596,
+          "endSeconds": 711.347551,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "aaf64b16a97f798313c2ae2c60eab973b1a7cac82542aca5026b04f925708aca",
+        "planSegmentTextSha256": "cbafc2a1a6a2c11275f2a0f1c660dabb0ab910cdd3f8eb664c55fe5febd81023"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "Identify substances purchased by the workshop",
+          "correctOptionIndex": 3,
+          "correctOptionText": "trade ledger"
+        },
+        "evidenceSegment": "s35-p3-t002",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "The trade ledger lists materials the workshop actually purchased, so it can identify substances available even when no mixing instructions survive.",
+        "timecode": {
+          "startFrame": 35736776,
+          "endFrame": 41439857,
+          "sampleRateHz": 44100,
+          "startSeconds": 810.357732,
+          "endSeconds": 939.679297,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "847ab51279ac3e4fddcf0c9a084a4b9092aa6c214d78d331fd243e08e84b45b1",
+        "planSegmentTextSha256": "924e73e1cf8e44b69e954f0bd595d81a2732121146bc583821c58f93c602d050"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "Show how a mixture was described",
+          "correctOptionIndex": 1,
+          "correctOptionText": "recipe inventory"
+        },
+        "evidenceSegment": "s35-p3-t004",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "A recipe inventory gives the language and proportions used to describe a mixture, although we must not assume the workers followed it exactly.",
+        "timecode": {
+          "startFrame": 35736776,
+          "endFrame": 41439857,
+          "sampleRateHz": 44100,
+          "startSeconds": 810.357732,
+          "endSeconds": 939.679297,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "62191e47f7a85f455a5cef580ef3113834c4fa37639014bdafcf576465fa0774",
+        "planSegmentTextSha256": "7b98ab8f4b2ae363af84af8390fb4f70b3184aa79fd60c94ffe51693cbca3426"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "Confirm residue on a surviving tool",
+          "correctOptionIndex": 5,
+          "correctOptionText": "material sample"
+        },
+        "evidenceSegment": "s35-p3-t006",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "A material sample taken from a surviving tool can confirm residue, but contamination and later conservation treatment have to be considered.",
+        "timecode": {
+          "startFrame": 35736776,
+          "endFrame": 41439857,
+          "sampleRateHz": 44100,
+          "startSeconds": 810.357732,
+          "endSeconds": 939.679297,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b982ce224b9611f893627776fcc6f7d309f59f1ce5006c81ce6813470da46bfc",
+        "planSegmentTextSha256": "1cf864e4482263e3be50e43a37cd00cc97bbc1957deabb8d0a157dbf526f78ba"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "Record a remembered sensory impression",
+          "correctOptionIndex": 0,
+          "correctOptionText": "oral history"
+        },
+        "evidenceSegment": "s35-p3-t008",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "An oral history records a remembered sensory impression. It is valuable evidence of experience, not a chemical measurement.",
+        "timecode": {
+          "startFrame": 35736776,
+          "endFrame": 41439857,
+          "sampleRateHz": 44100,
+          "startSeconds": 810.357732,
+          "endSeconds": 939.679297,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "46e8c55f1aed1562d0652ad490c46f9503f9ed2f0430bbd21a8f8183a9c3bf67",
+        "planSegmentTextSha256": "fd7c55ca512783dfe2b28002889bab0fce564d651c55d38c9edaeec7bd322233"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "Locate likely ventilation points",
+          "correctOptionIndex": 4,
+          "correctOptionText": "building survey"
+        },
+        "evidenceSegment": "s35-p3-t010",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "The building survey can locate doors, roof vents and other likely ventilation points, helping us understand how odour may have moved.",
+        "timecode": {
+          "startFrame": 35736776,
+          "endFrame": 41439857,
+          "sampleRateHz": 44100,
+          "startSeconds": 810.357732,
+          "endSeconds": 939.679297,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4a90c1d34c0f06f8f7e8b37f3fa1e0621f6b8d0ca5a51b80dbb96176e84c2984",
+        "planSegmentTextSha256": "5471aed0722916eea97e8fa7b8f52c341f9d2c7cd07c57458c952d111d128d6b"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "The exhibit will describe the result as an ______.",
+          "acceptedResponses": [
+            "interpretation"
+          ]
+        },
+        "evidenceSegment": "s35-p3-t012",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "The label should call the recreated smell an interpretation, not the authentic smell of every workshop day.",
+        "timecode": {
+          "startFrame": 44163770,
+          "endFrame": 47218194,
+          "sampleRateHz": 44100,
+          "startSeconds": 1001.446032,
+          "endSeconds": 1070.707347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "15e5e16fae4cd5812c1631e27b1f1def59917f92fd76c4e5ba42288c9dee5d82",
+        "planSegmentTextSha256": "8dba0dbb6ae86a4352e08f010e54aded487ab154858e8fde7f4b2dc5d5372930"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "Visitors will smell the mixture on a ______.",
+          "acceptedResponses": [
+            "scent strip"
+          ]
+        },
+        "evidenceSegment": "s35-p3-t014",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Visitors will not inhale from a bottle. A single-use scent strip gives a controlled optional encounter.",
+        "timecode": {
+          "startFrame": 44163770,
+          "endFrame": 47218194,
+          "sampleRateHz": 44100,
+          "startSeconds": 1001.446032,
+          "endSeconds": 1070.707347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3e5043ad9aec48f4ed663015f61768644b09dfcdac75312674b785631d21ff7c",
+        "planSegmentTextSha256": "bd064af0c4489bff50165d892bafef2109a37684cdbe673517184e6d1fcf3cd1"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "A screening question will identify fragrance ______.",
+          "acceptedResponses": [
+            "sensitivity"
+          ]
+        },
+        "evidenceSegment": "s35-p3-t016",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Before participation, one screening question asks about fragrance sensitivity, without demanding private medical details.",
+        "timecode": {
+          "startFrame": 44163770,
+          "endFrame": 47218194,
+          "sampleRateHz": 44100,
+          "startSeconds": 1001.446032,
+          "endSeconds": 1070.707347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c2bde81531ef4e6f0df94c55fa563b18267d1ffadc10251612bc9e0aa302fb7a",
+        "planSegmentTextSha256": "445b7236ba7af0e16250a2ebe7c593c6aa3ac66023cb76d16ccce85ac9df6bab"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "The first trial will use a ______ concentration.",
+          "acceptedResponses": [
+            "low"
+          ]
+        },
+        "evidenceSegment": "s35-p3-t017",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "The first trial uses a low concentration. We can increase it only if detection is poor and the safety boundary still holds.",
+        "timecode": {
+          "startFrame": 44163770,
+          "endFrame": 47218194,
+          "sampleRateHz": 44100,
+          "startSeconds": 1001.446032,
+          "endSeconds": 1070.707347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9971615dcc711797a65098332c7a174237d8e371d8a1dcbd9bd0dc8edc1937f4",
+        "planSegmentTextSha256": "8a4507c4287c01efdf38a16b330cd04ae2935f1b77bf485f9fef60ba6f86803e"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Responses will be recorded with an anonymous ______.",
+          "acceptedResponses": [
+            "code"
+          ]
+        },
+        "evidenceSegment": "s35-p3-t018",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "To separate feedback from names, each response sheet receives an anonymous code that links only to the session condition.",
+        "timecode": {
+          "startFrame": 44163770,
+          "endFrame": 47218194,
+          "sampleRateHz": 44100,
+          "startSeconds": 1001.446032,
+          "endSeconds": 1070.707347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "537f55142bada849670af9901973ac139599d8703216862ddd29b1ccaaf8941f",
+        "planSegmentTextSha256": "0b098f69ee38480980b466eab4b7b01d56ca07bcf87ba26eab3d29644eac35d2"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Dormant cells survive beneath the winter ______.",
+          "acceptedResponses": [
+            "snowpack"
+          ]
+        },
+        "evidenceSegment": "s35-p4-t002",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Many snow algae persist as dormant cells beneath the winter snow pack, the compact layer of seasonal snow, becoming active only when conditions improve.",
+        "timecode": {
+          "startFrame": 55061962,
+          "endFrame": 60944366,
+          "sampleRateHz": 44100,
+          "startSeconds": 1248.570567,
+          "endSeconds": 1381.958413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "38e8b07228a522752c0228b5bb73c92c5df908c47879fd8faf77aaec00f20db2",
+        "planSegmentTextSha256": "77c5ac7d34200be668277b097a18027cd745ac0bf965f4c276eddbea3bf9f558"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Growth increases when liquid ______ becomes available.",
+          "acceptedResponses": [
+            "meltwater"
+          ]
+        },
+        "evidenceSegment": "s35-p4-t004",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Growth accelerates when liquid meltwater becomes available around the grains; cold alone does not mean the habitat is completely dry.",
+        "timecode": {
+          "startFrame": 55061962,
+          "endFrame": 60944366,
+          "sampleRateHz": 44100,
+          "startSeconds": 1248.570567,
+          "endSeconds": 1381.958413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2d7f5ebbb5a8d3501febe7dfc271acf975cce6795aeb84e5463f0e39041ae931",
+        "planSegmentTextSha256": "c75c938e098a6c996aba8b5bab45546aa76d4ad89628584eefe37c19065d97b1"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "A protective ______ can colour the snow red.",
+          "acceptedResponses": [
+            "pigment"
+          ]
+        },
+        "evidenceSegment": "s35-p4-t006",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Some cells produce a protective pigment that screens intense radiation and can make a snow surface appear red or pink.",
+        "timecode": {
+          "startFrame": 55061962,
+          "endFrame": 60944366,
+          "sampleRateHz": 44100,
+          "startSeconds": 1248.570567,
+          "endSeconds": 1381.958413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b1b55328ccfe8c8b49a45aff34089311821abec24e4fe956b268dba81a9c9d83",
+        "planSegmentTextSha256": "24e92938dbb07747e8f4f3234b52b6e026dc5ba87526f1d7892005a13fbe1158"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Wind-blown ______ may supply nutrients.",
+          "acceptedResponses": [
+            "dust"
+          ]
+        },
+        "evidenceSegment": "s35-p4-t008",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Nutrients may arrive with wind-blown dust, but the amount and source differ among sites and storms.",
+        "timecode": {
+          "startFrame": 55061962,
+          "endFrame": 60944366,
+          "sampleRateHz": 44100,
+          "startSeconds": 1248.570567,
+          "endSeconds": 1381.958413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c0840cc6fad428853f5adf1aff5107826ff08a1b8c58c1c2a675cbed7d270591",
+        "planSegmentTextSha256": "66464014a20eda3408ba82aa4aaf0c17065a4376608844c38b6638e321a9e254"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Darker snow has lower surface ______.",
+          "acceptedResponses": [
+            "albedo"
+          ]
+        },
+        "evidenceSegment": "s35-p4-t010",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "When biological colour darkens the surface, its albedo—the fraction of incoming light reflected—can decrease.",
+        "timecode": {
+          "startFrame": 55061962,
+          "endFrame": 60944366,
+          "sampleRateHz": 44100,
+          "startSeconds": 1248.570567,
+          "endSeconds": 1381.958413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a97042e47c78ecc9aa6290f0239053b50f5444765362847220a16308862b75fc",
+        "planSegmentTextSha256": "35896b51bf81aa8607672a8425e9bb366a6591086d81961f4009521a54bdf3ee"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "More absorbed energy can accelerate ______.",
+          "acceptedResponses": [
+            "snowmelt"
+          ]
+        },
+        "evidenceSegment": "s35-p4-t012",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Lower reflection means more energy is absorbed, which can accelerate snowmelt under suitable weather conditions.",
+        "timecode": {
+          "startFrame": 60973031,
+          "endFrame": 62806979,
+          "sampleRateHz": 44100,
+          "startSeconds": 1382.608413,
+          "endSeconds": 1424.194535,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f5558d5a32604bbae4780a5dd6ba97136c7f99d394396035b0c82899f60b4a7b",
+        "planSegmentTextSha256": "08cc3ea585c249ebbb41927aae6037b642d5614858da1253c1d8afa629c42c46"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "mcq",
+          "questionText": "Why do researchers sample several colour patches?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "to capture variation in the community"
+        },
+        "evidenceSegment": "s35-p4-t014",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Researchers sample several colour patches because one red area does not represent the whole community; spatial variation is part of the result.",
+        "timecode": {
+          "startFrame": 64767207,
+          "endFrame": 68054376,
+          "sampleRateHz": 44100,
+          "startSeconds": 1468.64415,
+          "endSeconds": 1543.183129,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e369fae44114c3588709fc47869b8d70bb8dbaace3463c5650612ab576a56bbb",
+        "planSegmentTextSha256": "2c90a872208a835c3cc2f04f8722ced43d36af4e441c074a458fa2e5707f173e"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "mcq",
+          "questionText": "What is a limitation of satellite colour data?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "other materials can produce similar colours"
+        },
+        "evidenceSegment": "s35-p4-t016",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Satellite colour covers large regions, but mineral dust and other materials can look similar, so colour alone does not uniquely identify algae.",
+        "timecode": {
+          "startFrame": 64767207,
+          "endFrame": 68054376,
+          "sampleRateHz": 44100,
+          "startSeconds": 1468.64415,
+          "endSeconds": 1543.183129,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e46be3b13717376a0d3e87c1776a8068bebbd280a3bce3205f8d037de559a4fb",
+        "planSegmentTextSha256": "2899fca5444e7bc83d022a183382cd81068c4814160857229ee3410b95a698e9"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "mcq",
+          "questionText": "What does the lecturer say about the feedback effect?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "its strength varies among sites"
+        },
+        "evidenceSegment": "s35-p4-t018",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "The feedback is plausible, yet its strength varies among sites. It should not be described as the dominant cause of melting everywhere.",
+        "timecode": {
+          "startFrame": 64767207,
+          "endFrame": 68054376,
+          "sampleRateHz": 44100,
+          "startSeconds": 1468.64415,
+          "endSeconds": 1543.183129,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "629f783f264ef1e088666680974c55396a41bb2bda98233134648e5d6911f029",
+        "planSegmentTextSha256": "392f6df2bf83c98715de3e9e2b313a41149655e49480d68392a47a8030f429a7"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "mcq",
+          "questionText": "Why are repeated measurements needed?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "to follow change through the melt season"
+        },
+        "evidenceSegment": "s35-p4-t019",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Repeated measurements follow change through the melt season, separating a single snapshot from a developing biological and physical process.",
+        "timecode": {
+          "startFrame": 64767207,
+          "endFrame": 68054376,
+          "sampleRateHz": 44100,
+          "startSeconds": 1468.64415,
+          "endSeconds": 1543.183129,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6cca08a9a6df628b4f334399eeaf041392e626c503f011d771b5f1ccf6adbce7",
+        "planSegmentTextSha256": "9fea7cff8b32f27be3c89dbf5c36dff17acf7ebc29f34493da05d91778b4deb3"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/set35-listening-content-v1.0.3.json",
+        "sha256": "f614135fc09ec978bc328efda4076ffd504f66c80f279ad54344a3a96ee62af8"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "ccde7b1deb0d320cd4c86cc6d5ed077c0480f9a891977f1e0739ef10c8392853",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-35/set35-audio-production-plan.json",
+        "sha256": "6a081a35561e5e959bde83fb19f66fa2c487de7da75f65af352eda7bb5eb0fda"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/elevenlabs-v4/set35-eleven-v4-manifest.json",
+        "sha256": "9ee873eec312ebe8ad1d96f8242a753e148a6e6aa40c98b2b9bfaa7583ce1bd5"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/elevenlabs-v4/set35-eleven-v4-progress.json",
+        "sha256": "a1d0629e9d9cfe8570ff8c932139e76565d4bb467021b2ecdfc81dab7c01f439"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/elevenlabs-v4/set35-eleven-v4-qa.json",
+        "sha256": "6d067ae4eb956b2ab5727fc71142b74cdeed5ee433f23dc20705a5bbbc63ae3a"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/elevenlabs-v4/set35-concat.txt",
+        "sha256": "f1a4c43b737cef3935ea2b6b114441ddaf9b67fb8a95b8514b271c9852263beb"
+      },
+      "concatPieceAggregateSha256": "f23605d8d7b52b01701f464d8317da693a8393e74053c2e1dd3fb25a8e84943e",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/elevenlabs-v4/ielts-set-35-listening-eleven-v4-master.wav",
+        "sha256": "9506e53d29548ba3833a934962165d1b18caa621246b1f6e48ebdf4585dd8331",
+        "frameCount": 75791750,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/listening/elevenlabs-v4/ielts-set-35-listening-eleven-v4.mp3",
+        "sha256": "1afb916f19ae0d4efd99da6ffdd49884ce41d72769def22d1788f525b0200bc7"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-35.mp3",
+        "sha256": "1afb916f19ae0d4efd99da6ffdd49884ce41d72769def22d1788f525b0200bc7"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "6a9e399f0b90988c94c252f3b06b1c6638fc60994b249b5e99534c3c75bf556b"
+  }
+}

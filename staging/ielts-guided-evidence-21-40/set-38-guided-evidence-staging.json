@@ -1,0 +1,1982 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 38,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-38.ts",
+      "sha256": "644577368f18ed66c1fc7fa698ad6a72c159a35ffb2d5438f4b3fc3badc5b6fb"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Paragraph A",
+          "correctOptionIndex": 2,
+          "correctOptionText": "A record suited to rough handling"
+        },
+        "sourceExcerpt": "Long before cheap paper and searchable databases, administrators needed durable ways to record obligations. One answer was the tally stick: a piece of wood marked with notches that represented a payment, delivery or debt. The system did not depend on elaborate writing. What mattered was a convention linking the size and position of each notch to a quantity. Because the record was physical, it could survive handling that would damage a loose scrap of parchment, and it could be understood by people with limited literacy.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph A» y la clave es «A record suited to rough handling». La evidencia dice «Because the record was physical, it could survive handling that would damage a loose scrap of parchment, and it could be understood by people with limited literacy.». La coincidencia semántica se apoya en «record», «handling»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports iii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "ae32562d4ed9bdc5b1cba1024a09387c3b36dc3d93d20a9803fb24db4c456431",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Paragraph B",
+          "correctOptionIndex": 5,
+          "correctOptionText": "A split that created independent evidence"
+        },
+        "sourceExcerpt": "After the notches were cut, the stick was split lengthways through them. One half, traditionally called the stock, went to one party; the other, the foil, went to the other party or remained with an office. The split produced irregular fibres along the break. When the halves were reunited, both the cut notches and the grain had to correspond. A later claimant could therefore present a record that was difficult to alter independently. The method turned one wooden object into two related witnesses.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph B» y la clave es «A split that created independent evidence». La evidencia dice «After the notches were cut, the stick was split lengthways through them.». La coincidencia semántica se apoya en «split»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports vi; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "31c73e3c326c011b05925342bffdb44abdd00172daf2d82366ff7468ca424baf",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A code still needed shared knowledge"
+        },
+        "sourceExcerpt": "The cuts were not casual scratches. Their width, depth or shape distinguished values, while written names or dates could identify the transaction. A large notch might denote a larger unit and smaller cuts subdivisions, but conventions varied across institutions and periods. The stick worked only because users shared the code. It was therefore neither purely numerical nor purely material: a matching split could show that halves belonged together, but interpretation of the marks still relied on administrative practice.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «A code still needed shared knowledge». La evidencia dice «The stick worked only because users shared the code.». La coincidencia semántica se apoya en «code», «shared»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports i; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e20b1480dba1a370660d416d6d8a0d491d8aa1f7f15c697610003f93e0086a3b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Two checks at settlement"
+        },
+        "sourceExcerpt": "At settlement, officials placed stock and foil side by side. If the broken surfaces matched and the notches aligned, the pair supported the claim recorded at issuance. Cancellation could then be shown by cutting, piercing or otherwise marking the reunited pieces. This procedure separated two questions: whether the presented halves were originally one object, and what obligation their marks represented. The first depended on physical fit; the second depended on the accepted code and the surrounding account.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «Two checks at settlement». La evidencia dice «At settlement, officials placed stock and foil side by side.». La coincidencia semántica se apoya en «settlement»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports viii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "cac56d362c79fc910f0bd6080643d41ccd47eacef7fd22e8f79a889acbc69d16",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Paragraph E",
+          "correctOptionIndex": 3,
+          "correctOptionText": "A claim that could circulate"
+        },
+        "sourceExcerpt": "Some tallies did more than acknowledge a completed payment. A government could issue a tally for money owed and the holder could transfer the claim to another person. In that setting, possession of one half represented an expectation of future payment. Yet the stick was not self-explanatory currency. Its value depended on confidence that the issuing authority would recognise the obligation and on clerks being able to reconcile it with records held elsewhere.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph E» y la clave es «A claim that could circulate». La evidencia dice «A government could issue a tally for money owed and the holder could transfer the claim to another person.». La coincidencia semántica se apoya en «claim»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports iv; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "494f4d010327b682cdd49a4ae334c267fa784da9ab4834b2c4d09331e881905f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Persistence through institutional fit"
+        },
+        "sourceExcerpt": "Tallying persisted partly because it fitted existing routines. Wood was inexpensive, the split offered a practical authenticity check and established offices knew how to store and compare pieces. Replacing such a system required more than inventing a neater record. A reform had to provide equal confidence, train staff and make old obligations compatible with new accounts. Administrative technologies often survive because many procedures have grown around them, not because no superior material exists.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «Persistence through institutional fit». La evidencia dice «Tallying persisted partly because it fitted existing routines.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports vii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "78d85dc5ccfa9fb2f882da4ac47f41b40900dcfcad3b11aeaf1a0f9f2fe22b81",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Paragraph G",
+          "correctOptionIndex": 1,
+          "correctOptionText": "A modern lesson from an obsolete medium"
+        },
+        "sourceExcerpt": "As bookkeeping and paper records became more standardised, tallies lost their central role. Their disappearance is sometimes told as a simple victory of writing over a primitive device. That account misses their sophisticated division of evidence between parties. Modern systems likewise separate records and compare them later, although they use databases and cryptographic checks rather than matching wood grain. The useful historical lesson is not that wooden accounts were crude, but that trust is strengthened when no single holder can silently rewrite the whole record.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph G» y la clave es «A modern lesson from an obsolete medium». La evidencia dice «Modern systems likewise separate records and compare them later, although they use databases and cryptographic checks rather than matching wood grain.». La coincidencia semántica se apoya en «modern»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports ii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "bf8fdde6ec712f18e629b4824fb639d063d10b7754d5061658d75c727b0bf8fe",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "What material was used to make the record?",
+          "acceptedResponses": [
+            "wood"
+          ]
+        },
+        "sourceExcerpt": "Long before cheap paper and searchable databases, administrators needed durable ways to record obligations. One answer was the tally stick: a piece of wood marked with notches that represented a payment, delivery or debt. The system did not depend on elaborate writing. What mattered was a convention linking the size and position of each notch to a quantity. Because the record was physical, it could survive handling that would damage a loose scrap of parchment, and it could be understood by people with limited literacy.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What material was used to make the record?» y acepta «wood». La oración fuente dice «One answer was the tally stick: a piece of wood marked with notches that represented a payment, delivery or debt.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports wood; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "4f736c0a0bcd75df4e40e7512b731b81cc0c880647a98f914af420995b70bd29",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "What was the foil's matching half traditionally called?",
+          "acceptedResponses": [
+            "stock"
+          ]
+        },
+        "sourceExcerpt": "After the notches were cut, the stick was split lengthways through them. One half, traditionally called the stock, went to one party; the other, the foil, went to the other party or remained with an office. The split produced irregular fibres along the break. When the halves were reunited, both the cut notches and the grain had to correspond. A later claimant could therefore present a record that was difficult to alter independently. The method turned one wooden object into two related witnesses.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What was the foil's matching half traditionally called?» y acepta «stock». La oración fuente dice «One half, traditionally called the stock, went to one party; the other, the foil, went to the other party or remained with an office.». Esa oración contiene la respuesta y la conecta con «foil», «half», «traditionally», «called», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B names the two matching halves as the stock and the foil. Once the prompt identifies the foil, its matching half is uniquely 'stock'; no holder-to-claim mapping is required.",
+        "ledgerRowSha256": "b4b3f5e11f690f2a02a1bb2c193a35ed15b849607ce587ed45fcbfd712163bb3",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "What natural feature had to correspond when halves were reunited?",
+          "acceptedResponses": [
+            "grain"
+          ]
+        },
+        "sourceExcerpt": "After the notches were cut, the stick was split lengthways through them. One half, traditionally called the stock, went to one party; the other, the foil, went to the other party or remained with an office. The split produced irregular fibres along the break. When the halves were reunited, both the cut notches and the grain had to correspond. A later claimant could therefore present a record that was difficult to alter independently. The method turned one wooden object into two related witnesses.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What natural feature had to correspond when halves were reunited?» y acepta «grain». La oración fuente dice «When the halves were reunited, both the cut notches and the grain had to correspond.». Esa oración contiene la respuesta y la conecta con «correspond», «halves», «reunited», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports grain; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "bae89e8d39055ef0ed18ea10db7cc89ad1dfa03c4ef3e24646af349b186e5a28",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "What physical marks encoded the size of an obligation?",
+          "acceptedResponses": [
+            "cuts",
+            "notches"
+          ]
+        },
+        "sourceExcerpt": "The cuts were not casual scratches. Their width, depth or shape distinguished values, while written names or dates could identify the transaction. A large notch might denote a larger unit and smaller cuts subdivisions, but conventions varied across institutions and periods. The stick worked only because users shared the code. It was therefore neither purely numerical nor purely material: a matching split could show that halves belonged together, but interpretation of the marks still relied on administrative practice.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What physical marks encoded the size of an obligation?» y acepta «cuts» / «notches». La oración fuente dice «The cuts were not casual scratches.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uses cuts and notches for the same value-encoding marks; both source-grounded terms are accepted, eliminating the blind-review ambiguity.",
+        "ledgerRowSha256": "61dd7c1abe0dcf6188825b44a6a2db6c8b8d6a744779eb7feb31d28f1836a29d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "Who compared the two halves at settlement?",
+          "acceptedResponses": [
+            "officials"
+          ]
+        },
+        "sourceExcerpt": "At settlement, officials placed stock and foil side by side. If the broken surfaces matched and the notches aligned, the pair supported the claim recorded at issuance. Cancellation could then be shown by cutting, piercing or otherwise marking the reunited pieces. This procedure separated two questions: whether the presented halves were originally one object, and what obligation their marks represented. The first depended on physical fit; the second depended on the accepted code and the surrounding account.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Who compared the two halves at settlement?» y acepta «officials». La oración fuente dice «At settlement, officials placed stock and foil side by side.». Esa oración contiene la respuesta y la conecta con «settlement», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports officials; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "ee771a77a3360527e8144de430dc55e0b6546bb46d09fa5ee4d747ac18de9f9e",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "What later record material helped replace tallies?",
+          "acceptedResponses": [
+            "paper",
+            "paper records"
+          ]
+        },
+        "sourceExcerpt": "As bookkeeping and paper records became more standardised, tallies lost their central role. Their disappearance is sometimes told as a simple victory of writing over a primitive device. That account misses their sophisticated division of evidence between parties. Modern systems likewise separate records and compare them later, although they use databases and cryptographic checks rather than matching wood grain. The useful historical lesson is not that wooden accounts were crude, but that trust is strengthened when no single holder can silently rewrite the whole record.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What later record material helped replace tallies?» y acepta «paper» / «paper records». La oración fuente dice «As bookkeeping and paper records became more standardised, tallies lost their central role.». Esa oración contiene la respuesta y la conecta con «tallies», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph G contains the exact phrase “paper records”; both the head noun material and the complete in-limit source phrase are accepted.",
+        "ledgerRowSha256": "8004fd921d47edeaee5e6e6dc824c02191fe8d2b3b3967820095ab49c2ebef0b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Which feature is associated with large old trees?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "retention of natural hollows"
+        },
+        "sourceExcerpt": "Many hollows begin with damage: a broken branch, fire scar or fungal decay opens a route into the wood. Expansion can take decades as decomposition removes material while living tissue continues to grow around the opening. Large old trees therefore contain a range of cavities rarely present in a young stand. When mature trees disappear, replacements cannot provide equivalent spaces immediately. Planting seedlings is valuable for the future, but it does not solve a present shortage of deep hollows.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which feature is associated with large old trees?» y la clave es «retention of natural hollows». La evidencia dice «Large old trees therefore contain a range of cavities rarely present in a young stand.». La coincidencia semántica se apoya en «large», «old», «trees»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "13625299a1bb1b3cbf31d6c422fea926ec28a7950cc649fe56ca1a8786ae56e8",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Which response may overheat because its walls are thin?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "nest boxes"
+        },
+        "sourceExcerpt": "A thin-walled nest box may heat rapidly when exposed to afternoon sun, even if its dimensions resemble a natural cavity. Orientation, colour, ventilation and surrounding shade all influence performance. Boxes can be useful for particular species, but simply increasing their number does not guarantee a network of drought refuges. Monitoring should record internal conditions and animal use, not only whether a box remains attached. Relocating a poor box can sometimes achieve more than adding another in the same exposed position.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which response may overheat because its walls are thin?» y la clave es «nest boxes». La evidencia dice «A thin-walled nest box may heat rapidly when exposed to afternoon sun, even if its dimensions resemble a natural cavity.». La coincidencia semántica se apoya en «thin», «nest»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "aac542b6938d3eaa58ba31c1b0b64858b3a4e6779160e5e3c322f5c94f3a44fd",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Which response can be installed rapidly?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "nest boxes"
+        },
+        "sourceExcerpt": "Managers facing a scarcity of natural cavities commonly consider three responses. Nest boxes can be installed quickly and placed where monitoring is convenient. Artificial hollows can be carved into living or dead trees, creating thicker walls than a box. A third approach is to protect existing hollow-bearing trees and the younger trees most likely to replace them. These measures operate on different timescales; treating them as interchangeable obscures both their strengths and their risks.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which response can be installed rapidly?» y la clave es «nest boxes». La evidencia dice «Nest boxes can be installed quickly and placed where monitoring is convenient.». La coincidencia semántica se apoya en «installed», «nest», «boxes»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "8c553babda7e0c936957a4eec509b2d4cacd51926769fa3d08075de8bc4d8b61",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Which response may wound a living tree?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "carved hollows"
+        },
+        "sourceExcerpt": "A cavity cut into a trunk can imitate some insulation provided by wood and can be designed with a narrow entrance. Its creation nevertheless wounds the tree and requires skilled assessment of structural safety. Evidence about long-term occupancy remains uneven because designs, climates and target species differ. A successful trial in one woodland is not a universal recipe. Managers need explicit criteria for evaluating use, overheating and tree health before adopting the technique at scale.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which response may wound a living tree?» y la clave es «carved hollows». La evidencia dice «Its creation nevertheless wounds the tree and requires skilled assessment of structural safety.». La coincidencia semántica se apoya en «tree»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "93e20aaa2215645f51090659b75694c36ac2c35b6ff7eccca7599b14c635ab47",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Which response maintains habitat already formed by time?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "retention of natural hollows"
+        },
+        "sourceExcerpt": "Protecting large hollow-bearing trees preserves refuges already shaped by time, while retaining younger cohorts maintains continuity. This strategy can conflict with concerns about falling branches near roads or buildings. Risk management need not mean removing every old tree: access can be redirected, vulnerable limbs treated or habitat trees retained in lower-use areas. The strongest programme combines immediate aids with long-term retention. Manufactured shelters may bridge a gap, but only living landscapes can keep producing the varied cavities on which future animals will depend.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which response maintains habitat already formed by time?» y la clave es «retention of natural hollows». La evidencia dice «Protecting large hollow-bearing trees preserves refuges already shaped by time, while retaining younger cohorts maintains continuity.». La coincidencia semántica se apoya en «maintains», «already», «time»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph H uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "0470c981a90fba01bdc433e9573ce3d3158b890edbce4000fe5ac51aca87c4e9",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "fill",
+          "questionText": "Callout 19 identifies the ______ used as a refuge nearest ground level.",
+          "acceptedResponses": [
+            "tree-base crevices",
+            "tree-base hollows",
+            "base hollow",
+            "hollow",
+            "base cavity",
+            "cavity"
+          ]
+        },
+        "sourceExcerpt": "A cavity close to the ground is surrounded by a thick mass of wood and may receive less direct sun than an exposed branch hollow. In large trees, the interior can remain cooler than the surrounding air during the hottest part of a day. Studies of heat-stressed birds have recorded individuals using tree-base crevices and hollows as thermal refuges. This does not mean that every base cavity is safe: waterlogging, predators and restricted escape routes may make some unsuitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Callout 19 identifies the ______ used as a refuge nearest ground level.» y acepta «tree-base crevices» / «tree-base hollows» / «base hollow» / «hollow» / «base cavity» / «cavity». La oración fuente dice «Studies of heat-stressed birds have recorded individuals using tree-base crevices and hollows as thermal refuges.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Callout 19 marks the cavity at the base of the tree. The key accepts the exact passage descriptions and concise equivalent labels, including base cavity.",
+        "ledgerRowSha256": "423d2295cdab4a28a4dd26cf339f87af9f9d6263c4ae159018194473fa4aae7e",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "fill",
+          "questionText": "Callout 20 points to the thick ______ surrounding the hollow.",
+          "acceptedResponses": [
+            "wood"
+          ]
+        },
+        "sourceExcerpt": "A cavity close to the ground is surrounded by a thick mass of wood and may receive less direct sun than an exposed branch hollow. In large trees, the interior can remain cooler than the surrounding air during the hottest part of a day. Studies of heat-stressed birds have recorded individuals using tree-base crevices and hollows as thermal refuges. This does not mean that every base cavity is safe: waterlogging, predators and restricted escape routes may make some unsuitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Callout 20 points to the thick ______ surrounding the hollow.» y acepta «wood». La oración fuente dice «A cavity close to the ground is surrounded by a thick mass of wood and may receive less direct sun than an exposed branch hollow.». Esa oración contiene la respuesta y la conecta con «thick», «hollow», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The passage wording and callout 20 jointly identify wood; no answer text is printed in the candidate asset.",
+        "ledgerRowSha256": "8fd620a917b453434b16de0d44772f5849c8198409792555653f6a09fe98ba5f",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "Callout 21 marks the narrow ______ of the carved hollow.",
+          "acceptedResponses": [
+            "entrance"
+          ]
+        },
+        "sourceExcerpt": "A cavity cut into a trunk can imitate some insulation provided by wood and can be designed with a narrow entrance. Its creation nevertheless wounds the tree and requires skilled assessment of structural safety. Evidence about long-term occupancy remains uneven because designs, climates and target species differ. A successful trial in one woodland is not a universal recipe. Managers need explicit criteria for evaluating use, overheating and tree health before adopting the technique at scale.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Callout 21 marks the narrow ______ of the carved hollow.» y acepta «entrance». La oración fuente dice «A cavity cut into a trunk can imitate some insulation provided by wood and can be designed with a narrow entrance.». Esa oración contiene la respuesta y la conecta con «narrow», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The passage wording and callout 21 jointly identify entrance; no answer text is printed in the candidate asset.",
+        "ledgerRowSha256": "b63916d7ac43d2db4ca0e4da796b8f6b3b55f680babef653ac00c71fb5f7566d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "Callout 22 points to the nest box feature that lets air move through it.",
+          "acceptedResponses": [
+            "ventilation"
+          ]
+        },
+        "sourceExcerpt": "A thin-walled nest box may heat rapidly when exposed to afternoon sun, even if its dimensions resemble a natural cavity. Orientation, colour, ventilation and surrounding shade all influence performance. Boxes can be useful for particular species, but simply increasing their number does not guarantee a network of drought refuges. Monitoring should record internal conditions and animal use, not only whether a box remains attached. Relocating a poor box can sometimes achieve more than adding another in the same exposed position.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Callout 22 points to the nest box feature that lets air move through it.» y acepta «ventilation». La oración fuente dice «Orientation, colour, ventilation and surrounding shade all influence performance.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The passage wording and callout 22 jointly identify ventilation; no answer text is printed in the candidate asset.",
+        "ledgerRowSha256": "e351156ae0d9b7534caa7afaec0fcf77a51a828d5746abffe34507c4b07cba94",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "Young planted trees can immediately replace all functions of old hollow-bearing trees.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Many hollows begin with damage: a broken branch, fire scar or fungal decay opens a route into the wood. Expansion can take decades as decomposition removes material while living tissue continues to grow around the opening. Large old trees therefore contain a range of cavities rarely present in a young stand. When mature trees disappear, replacements cannot provide equivalent spaces immediately. Planting seedlings is valuable for the future, but it does not solve a present shortage of deep hollows.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Young planted trees can immediately replace all functions of old hollow-bearing trees.», mientras el pasaje dice «Large old trees therefore contain a range of cavities rarely present in a young stand.». Ambos tratan «young», «trees», «old», pero la proposición añade «planted», «immediately», «replace», «all», «functions», «hollow» donde la fuente especifica «large», «therefore», «contain», «range», «cavities», «rarely». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "4d0aca18c12fd8ad7c50bccab8653bca16db903c3d53c7665425a4f068639752",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "Every tree-base cavity is described as a safe refuge.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "A cavity close to the ground is surrounded by a thick mass of wood and may receive less direct sun than an exposed branch hollow. In large trees, the interior can remain cooler than the surrounding air during the hottest part of a day. Studies of heat-stressed birds have recorded individuals using tree-base crevices and hollows as thermal refuges. This does not mean that every base cavity is safe: waterlogging, predators and restricted escape routes may make some unsuitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Every tree-base cavity is described as a safe refuge.», mientras el pasaje dice «This does not mean that every base cavity is safe: waterlogging, predators and restricted escape routes may make some unsuitable.». Ambos tratan «every», «base», «cavity», «safe», pero la proposición añade «tree», «described», «refuge» donde la fuente especifica «mean», «waterlogging», «predators», «restricted», «escape», «routes». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "93bc7c219e4c57006946c397caae34359fb06d29e1261da6e3ec2e9bf6627948",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "The passage states that carved hollows are always occupied within one year.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "A cavity cut into a trunk can imitate some insulation provided by wood and can be designed with a narrow entrance. Its creation nevertheless wounds the tree and requires skilled assessment of structural safety. Evidence about long-term occupancy remains uneven because designs, climates and target species differ. A successful trial in one woodland is not a universal recipe. Managers need explicit criteria for evaluating use, overheating and tree health before adopting the technique at scale.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage states that carved hollows are always occupied within one year.». El pasaje sí ofrece el contexto «A cavity cut into a trunk can imitate some insulation provided by wood and can be designed with a narrow entrance.», pero en el texto completo no especifica «always», «within», «year» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports NOT GIVEN; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "485282b3d03e7956b2634da4c1c641ad5f2741ec811734b2dc86a264ec8bf5eb",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "The recommended programme uses both immediate and long-term measures.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Protecting large hollow-bearing trees preserves refuges already shaped by time, while retaining younger cohorts maintains continuity. This strategy can conflict with concerns about falling branches near roads or buildings. Risk management need not mean removing every old tree: access can be redirected, vulnerable limbs treated or habitat trees retained in lower-use areas. The strongest programme combines immediate aids with long-term retention. Manufactured shelters may bridge a gap, but only living landscapes can keep producing the varied cavities on which future animals will depend.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The recommended programme uses both immediate and long-term measures.» y el pasaje dice «The strongest programme combines immediate aids with long-term retention.». La fuente conserva la misma relación mediante «programme», «immediate», «long», «term» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Paragraph H uniquely supports TRUE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "f3830e9c81ca8bc03ddd6a25fe4134b0a34b1a5248678fe20e9dc140c4357eae",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "A reserve should be treated as a response only to genuinely unforeseeable damage.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Apartment owners often share responsibility for roofs, lifts, façades and drainage. None lasts indefinitely, yet a major repair can still be described as an unexpected expense when no money has been set aside. A maintenance reserve converts that foreseeable future cost into regular contributions. The principle is simple: residents who consume the building's service life should fund part of its renewal, rather than leaving the entire bill to whoever owns a unit when failure becomes visible.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A reserve should be treated as a response only to genuinely unforeseeable damage.», mientras el pasaje dice «None lasts indefinitely, yet a major repair can still be described as an unexpected expense when no money has been set aside.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «reserve», «treated», «response», «only», «genuinely», «unforeseeable» donde la fuente especifica «none», «lasts», «indefinitely», «yet», «major», «repair». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "dca9d6457a08f534b55afcea841f2f73cc58713bca11d8056b5cfde47d2a59be",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Long-range cost forecasts can be perfectly precise if produced by an engineer.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "A credible reserve begins with an inventory of common assets, an estimate of their remaining lives and a forecast of replacement costs. Those figures are combined into a schedule showing when expenditure may occur. Precision is impossible—materials deteriorate unevenly and prices change—but a transparent range is more useful than false certainty. Updating the study after inspections allows contributions to respond to evidence instead of remaining fixed until a crisis.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Long-range cost forecasts can be perfectly precise if produced by an engineer.», mientras el pasaje dice «Precision is impossible—materials deteriorate unevenly and prices change—but a transparent range is more useful than false certainty.». Ambos tratan «range», pero la proposición añade «long», «cost», «forecasts», «perfectly», «precise», «produced» donde la fuente especifica «precision», «impossible», «materials», «deteriorate», «unevenly», «prices». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "1f6e44c8cba55b82b01a4e860a0e2a76159aa472b2705268282623eef71d0839",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "One allocation formula is inherently fair for every shared component.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Regular contributions make costs easier for households to plan and allow a fund to earn interest. They also reduce dependence on emergency loans or sudden special levies. However, a perfectly level payment is not automatically fair. A lift may serve upper floors more directly, while the roof protects everyone. Allocation rules based on ownership shares, floor area or expected benefit produce different distributions. Fairness is a governance decision, not a number generated by an engineer.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «One allocation formula is inherently fair for every shared component.», mientras el pasaje dice «However, a perfectly level payment is not automatically fair.». Ambos tratan «fair», pero la proposición añade «allocation», «formula», «inherently», «every», «shared», «component» donde la fuente especifica «however», «perfectly», «level», «payment», «automatically». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "c77cccb2c8bcff3f59c126815b794b1fd61774336d3af09fec46bd5fecbe6802",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "A strong reserve may be reflected in an apartment’s sale value.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "A reserve spreads payments through time, but apartments are bought and sold during that period. A seller may contribute for a roof that is replaced after departure; a recent buyer may benefit from years of earlier saving. Some regard this as unfair. Others reply that the sales price reflects the condition of the building and the strength of its fund. A well-disclosed reserve can therefore transfer value with the property, even though individual cash contributions and individual use never align perfectly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A strong reserve may be reflected in an apartment’s sale value.» y el pasaje dice «A well-disclosed reserve can therefore transfer value with the property, even though individual cash contributions and individual use never align perfectly.». La fuente conserva la misma relación mediante «reserve», «value» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports YES; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "79adcbee2fa90e9d8a69a7a56e4ad53f077da458370305a4a98bd2be6f1b12e8",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "Regulation should impose an identical contribution percentage on every building.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Requiring a reserve can prevent a majority from repeatedly postponing unpopular contributions. Yet a legal minimum may become a target rather than a floor. Buildings differ in age, exposure and equipment, so one percentage cannot represent every need. The writer's view is that regulation is most useful when it demands planning, disclosure and periodic review, while allowing the funding schedule to follow a building-specific study.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Regulation should impose an identical contribution percentage on every building.», mientras el pasaje dice «Buildings differ in age, exposure and equipment, so one percentage cannot represent every need.». Ambos tratan «percentage», «every», pero la proposición añade «regulation», «impose», «identical», «contribution», «building» donde la fuente especifica «buildings», «differ», «age», «exposure», «equipment», «cannot». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "d6c05d37b71d2c9f53ae78d8e64355ec7694ed442dfec6d265f3c2e082600874",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "fill",
+          "questionText": "A reserve study starts with an ______ of shared assets.",
+          "acceptedResponses": [
+            "inventory"
+          ]
+        },
+        "sourceExcerpt": "A credible reserve begins with an inventory of common assets, an estimate of their remaining lives and a forecast of replacement costs. Those figures are combined into a schedule showing when expenditure may occur. Precision is impossible—materials deteriorate unevenly and prices change—but a transparent range is more useful than false certainty. Updating the study after inspections allows contributions to respond to evidence instead of remaining fixed until a crisis.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A reserve study starts with an ______ of shared assets.» y acepta «inventory». La oración fuente dice «A credible reserve begins with an inventory of common assets, an estimate of their remaining lives and a forecast of replacement costs.». Esa oración contiene la respuesta y la conecta con «reserve», «assets», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports inventory; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "d2518a8a290943cf4539656566c2b575ba59ba3e3357ee6b72ca8e67c2ed3279",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "fill",
+          "questionText": "Periodic ______ allow the funding plan to incorporate new evidence.",
+          "acceptedResponses": [
+            "inspections",
+            "reviews"
+          ]
+        },
+        "sourceExcerpt": "A credible reserve begins with an inventory of common assets, an estimate of their remaining lives and a forecast of replacement costs. Those figures are combined into a schedule showing when expenditure may occur. Precision is impossible—materials deteriorate unevenly and prices change—but a transparent range is more useful than false certainty. Updating the study after inspections allows contributions to respond to evidence instead of remaining fixed until a crisis.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Periodic ______ allow the funding plan to incorporate new evidence.» y acepta «inspections» / «reviews». La oración fuente dice «Updating the study after inspections allows contributions to respond to evidence instead of remaining fixed until a crisis.». Esa oración contiene la respuesta y la conecta con «evidence», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B supports both inspections and periodic review as the evidence-updating event; both grammatical source-grounded responses are accepted.",
+        "ledgerRowSha256": "0da5c6d5fcf1681e1604ce876d24bdb9d626c7fb80b62b2947ec238e50351d35",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "fill",
+          "questionText": "Emergency borrowing can be reduced through regular ______.",
+          "acceptedResponses": [
+            "contributions"
+          ]
+        },
+        "sourceExcerpt": "Regular contributions make costs easier for households to plan and allow a fund to earn interest. They also reduce dependence on emergency loans or sudden special levies. However, a perfectly level payment is not automatically fair. A lift may serve upper floors more directly, while the roof protects everyone. Allocation rules based on ownership shares, floor area or expected benefit produce different distributions. Fairness is a governance decision, not a number generated by an engineer.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Emergency borrowing can be reduced through regular ______.» y acepta «contributions». La oración fuente dice «Regular contributions make costs easier for households to plan and allow a fund to earn interest.». Esa oración contiene la respuesta y la conecta con «regular», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports contributions; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "99f4e8837f40415a0bb3658951e450cb78ffee49fc3dd577f6adf891ef0453bc",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "fill",
+          "questionText": "Boards should distinguish capital needs from routine ______ costs.",
+          "acceptedResponses": [
+            "operating"
+          ]
+        },
+        "sourceExcerpt": "A nominally healthy reserve may still fail if governance is weak. Boards can invest funds too aggressively, spend them on routine operating deficits or defer a repair to avoid criticism. Restricted accounts, dual authorisation and clear reporting reduce those risks. Owners also need reports that separate current operating costs from long-term capital obligations. Without that distinction, a temporary surplus can conceal the fact that major components are steadily approaching replacement.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Boards should distinguish capital needs from routine ______ costs.» y acepta «operating». La oración fuente dice «Boards can invest funds too aggressively, spend them on routine operating deficits or defer a repair to avoid criticism.». Esa oración contiene la respuesta y la conecta con «boards», «routine», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports operating; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "7a675b14c02c1f661c1db5b1c0b3bb1148b87780e0d04155dd9ca2a6d2ab78cb",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "fill",
+          "questionText": "A plan should provide a defensible ______ that essential work can proceed.",
+          "acceptedResponses": [
+            "probability"
+          ]
+        },
+        "sourceExcerpt": "Too little saving produces deterioration and abrupt levies, but excessive accumulation also has costs. Money locked in a low-return account cannot be used by households for other priorities, and forecasts far into the future carry wide uncertainty. The aim should not be the largest possible balance. It should be a defensible probability that essential work can proceed when needed, supported by contingency ranges and access to limited borrowing for unusually early failures.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A plan should provide a defensible ______ that essential work can proceed.» y acepta «probability». La oración fuente dice «It should be a defensible probability that essential work can proceed when needed, supported by contingency ranges and access to limited borrowing for unusually early failures.». Esa oración contiene la respuesta y la conecta con «defensible», «essential», «work», «proceed», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports probability; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "54445c4aa221ca24d02861c626b0766f425d45478e75598cc08c52ead940681c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "Why does the writer discuss owners who buy and sell?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "To show that individual payments and benefits do not align exactly"
+        },
+        "sourceExcerpt": "A reserve spreads payments through time, but apartments are bought and sold during that period. A seller may contribute for a roof that is replaced after departure; a recent buyer may benefit from years of earlier saving. Some regard this as unfair. Others reply that the sales price reflects the condition of the building and the strength of its fund. A well-disclosed reserve can therefore transfer value with the property, even though individual cash contributions and individual use never align perfectly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why does the writer discuss owners who buy and sell?» y la clave es «To show that individual payments and benefits do not align exactly». La evidencia dice «A well-disclosed reserve can therefore transfer value with the property, even though individual cash contributions and individual use never align perfectly.». La coincidencia semántica se apoya en «individual», «align»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "409df5e081c0ea3e037684898758c0765b40fdb8ace6ad02ab216478eec691e9",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "What danger is associated with legal minimum contributions?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "They may be treated as sufficient rather than minimal."
+        },
+        "sourceExcerpt": "Requiring a reserve can prevent a majority from repeatedly postponing unpopular contributions. Yet a legal minimum may become a target rather than a floor. Buildings differ in age, exposure and equipment, so one percentage cannot represent every need. The writer's view is that regulation is most useful when it demands planning, disclosure and periodic review, while allowing the funding schedule to follow a building-specific study.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What danger is associated with legal minimum contributions?» y la clave es «They may be treated as sufficient rather than minimal.». La evidencia dice «Yet a legal minimum may become a target rather than a floor.». La coincidencia semántica se apoya en «legal», «minimum», «rather»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "4e809bb5c0b3246916590b92af12a1c59b2bdeacb46c1c222ac8565a601e9cf5",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "What is the writer’s view of the largest possible reserve balance?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "It is not necessarily the right goal."
+        },
+        "sourceExcerpt": "Too little saving produces deterioration and abrupt levies, but excessive accumulation also has costs. Money locked in a low-return account cannot be used by households for other priorities, and forecasts far into the future carry wide uncertainty. The aim should not be the largest possible balance. It should be a defensible probability that essential work can proceed when needed, supported by contingency ranges and access to limited borrowing for unusually early failures.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the writer’s view of the largest possible reserve balance?» y la clave es «It is not necessarily the right goal.». La evidencia dice «The aim should not be the largest possible balance.». La coincidencia semántica se apoya en «largest», «possible», «balance»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports D; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "3fc5cd64d71e7de684b1c7fb73eb68a459d798a0305b3dd896714dff2d3b0fcb",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "Which statement best summarises the writer’s conclusion about durable reserve schemes?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "They connect evidence, contribution rules and decisions that residents can understand."
+        },
+        "sourceExcerpt": "Reserve policy is sometimes presented as a technical calculation, although it expresses a social contract between present and future owners. Reliable buildings require both money and consent to maintain them. A schedule that residents do not understand may be overturned at the next meeting; a popular low fee may simply transfer risk forward. Durable schemes connect inspection evidence, contribution rules and visible decisions. Their success is measured less by the size of the account on one date than by whether necessary work occurs without destabilising households.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which statement best summarises the writer’s conclusion about durable reserve schemes?» y la clave es «They connect evidence, contribution rules and decisions that residents can understand.». La evidencia dice «Durable schemes connect inspection evidence, contribution rules and visible decisions.». La coincidencia semántica se apoya en «durable», «schemes», «connect», «evidence», «contribution», «rules»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph H concludes that durable schemes connect inspection evidence, contribution rules and visible decisions, and that residents must understand and consent to the schedule. Only option A states that conclusion.",
+        "ledgerRowSha256": "e44fa346c31f58ce5cd2c10dd471b3af4244e23b4d114125072c46ad218b0e79",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/reading/set38-reading-content-v1.0.4.json",
+        "sha256": "8b6b6b37c64d9a298087286198ce7075bfbbda0c3a01cdb045e77efd0c05e753"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "3598bf5fbd9e6608f2aac4f9cc150fc1270d7264222162c9e7e099f54df6be71",
+      "canonicalQuestionProjectionSha256": "68ed6d9423fcd0b795196d39a31de593f568ac7998cf1db48873bd5d2c2925c7"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Ashford"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "My surname is Ashford, A-S-H-F-O-R-D. The note on the parcel says Ashton, which is incorrect.",
+        "timecode": {
+          "startFrame": 3439797,
+          "endFrame": 8805752,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999932,
+          "endSeconds": 199.676916,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d8377a047be617fd5b74907e84a8f682f1e95260e2be0d304516fc7ce524edae",
+        "planSegmentTextSha256": "0db38e761e34ceebde799a5454d30aaeae4f168501bb17d8fb53ddd57f2720b2"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Type of book: family ______",
+          "acceptedResponses": [
+            "travel diary"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is a family travel diary kept by my grandmother, not a published novel or an official record. I still read the diary with my children, so I want it usable rather than polished until it looks new.",
+        "timecode": {
+          "startFrame": 3439797,
+          "endFrame": 8805752,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999932,
+          "endSeconds": 199.676916,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "364e833fa65f0320b799618c1950e0c63e92582a79bd117b4824940f743cdd0b",
+        "planSegmentTextSha256": "e0ebfa1acd5efdbd671697d70e4b7845d22409af48e5721bcf20a0f7178e54a8"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Main structural damage: loose ______",
+          "acceptedResponses": [
+            "spine"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The pages are complete, but the spine is loose and two sewn sections lift when the book is opened. Several pencilled routes cross the fold-out maps, and those marks matter more to us than perfect flatness.",
+        "timecode": {
+          "startFrame": 3439797,
+          "endFrame": 8805752,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999932,
+          "endSeconds": 199.676916,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5b22332059abf845da2767d6cd3f5b729310c1037eacbb01f5023c983b20d777",
+        "planSegmentTextSha256": "047d8f984f3848e9926719b726bf7f3eb815f5a257de1682378c2c037c001e66"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Chosen covering material: green ______",
+          "acceptedResponses": [
+            "cloth"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t012",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Leather was attractive but costly; I would prefer durable green cloth that can be handled regularly.",
+        "timecode": {
+          "startFrame": 3439797,
+          "endFrame": 8805752,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999932,
+          "endSeconds": 199.676916,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "117783fcc9210423ec3b36de258bd212656b76bc812065b35fe33fb92a503b3c",
+        "planSegmentTextSha256": "544b0ec26b69a85902804fa2691b2a2d489fffeecda67f001d822026312befa7"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Title finish: ______ lettering",
+          "acceptedResponses": [
+            "gold"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t014",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "Please use gold lettering on the spine. Silver was shown in the sample, but it looked too modern.",
+        "timecode": {
+          "startFrame": 8830007,
+          "endFrame": 10164318,
+          "sampleRateHz": 44100,
+          "startSeconds": 200.226916,
+          "endSeconds": 230.483401,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ac2a397e1ba9e0c9659c628a9f4e92ec36c7e48a2238cd3189aaeead92ea3f19",
+        "planSegmentTextSha256": "1326aea51988efca5e622f32a7598fb7cd23b9a5d48813dbaccbbd68a32c8be3"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Collection date: ______ April",
+          "acceptedResponses": [
+            "22",
+            "22nd",
+            "twenty-second"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t016",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "Collection can take place on the twenty-second of April; the nineteenth is too early because I am away.",
+        "timecode": {
+          "startFrame": 8830007,
+          "endFrame": 10164318,
+          "sampleRateHz": 44100,
+          "startSeconds": 200.226916,
+          "endSeconds": 230.483401,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "db6f003776342d74dac6f2b1011ab6c5e0e4f37cee804d06a1ad17010071194b",
+        "planSegmentTextSha256": "02cd9180f187571287da6e44b50cde0171cbe24fc473abaa8c0e2d20df32f5c7"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "fill",
+          "questionText": "Which existing feature should be retained?",
+          "acceptedResponses": [
+            "marbled paper"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t018",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The original marbled paper inside the covers should be retained if it can be lifted safely. One page still carries a pressed fern; should I remove it before the collection?",
+        "timecode": {
+          "startFrame": 12341083,
+          "endFrame": 15463043,
+          "sampleRateHz": 44100,
+          "startSeconds": 279.843152,
+          "endSeconds": 350.635896,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "530779a5e6c541fcf8bd65b773cdf0a9c43069a878201393a78bec66bb645cf0",
+        "planSegmentTextSha256": "70a3dc93ba79bfcca1810caf6c2bc9e84fd85fca3857f195fe67fb18454dfc5b"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "fill",
+          "questionText": "What extra item does Calum recommend?",
+          "acceptedResponses": [
+            "protective box"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t021",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Because the diary travels between relatives, I recommend a protective box rather than a display stand.",
+        "timecode": {
+          "startFrame": 12341083,
+          "endFrame": 15463043,
+          "sampleRateHz": 44100,
+          "startSeconds": 279.843152,
+          "endSeconds": 350.635896,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "dc01023c8d02de6ad923a98a6692fe4496970323576b15f2d9a80f61b2e427dc",
+        "planSegmentTextSha256": "010ab2ec254716a370d305183b97873f04888555f13bb10df6b708fa43aa9650"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "fill",
+          "questionText": "How long will the work take?",
+          "acceptedResponses": [
+            "six weeks",
+            "6 weeks"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t023",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Allow six weeks from approval of the written quotation; drying and pressing account for much of that time.",
+        "timecode": {
+          "startFrame": 12341083,
+          "endFrame": 15463043,
+          "sampleRateHz": 44100,
+          "startSeconds": 279.843152,
+          "endSeconds": 350.635896,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f6670f36d2e770d31acce00596de340f0b4592c267181f4d9b63baf1c89f2796",
+        "planSegmentTextSha256": "35c0f02a3020762472beb47e6fa2c9bb2b8297d6a05fac4512797e17f06dab5c"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "fill",
+          "questionText": "How will the book return to Leonie?",
+          "acceptedResponses": [
+            "courier",
+            "insured courier"
+          ]
+        },
+        "evidenceSegment": "s38-p1-t025",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "We will return it by insured courier. Collection in person remains possible, but it is not the arrangement selected. I will now prepare the provisional quotation, pricing the structural repair, new covering and storage box as separate decisions for you to review carefully online.",
+        "timecode": {
+          "startFrame": 12341083,
+          "endFrame": 15463043,
+          "sampleRateHz": 44100,
+          "startSeconds": 279.843152,
+          "endSeconds": 350.635896,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d09d569d3ef408bcbd0d094c5002306d1099ebafff23bf1dfbd9b803825c2c1c",
+        "planSegmentTextSha256": "233f8142354c5c9b3601fe626d8fd5191ec7c4e323508ff43dfda8919a365d10"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "11  Ticket desk",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "s38-p2-t002",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "After the entrance bridge, the ticket desk is tucked below the wheel-room wall immediately inside the courtyard; the counter farther across the court is not for admission.",
+        "timecode": {
+          "startFrame": 18933711,
+          "endFrame": 23508448,
+          "sampleRateHz": 44100,
+          "startSeconds": 429.33585,
+          "endSeconds": 533.071383,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7f7734f3fb931c99fb98bc73cac2a99f6d417bbab22f1247954b33d64c5cb84b",
+        "planSegmentTextSha256": "b16aa4351cc1411d0c8e89d80532ccd1677ef9f3a3453d814d12b833dee245ae"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "12  Wheel gallery",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Location G"
+        },
+        "evidenceSegment": "s38-p2-t005",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The wheel gallery occupies the long western room beside the mill channel, between the sluice window and the stone floor.",
+        "timecode": {
+          "startFrame": 18933711,
+          "endFrame": 23508448,
+          "sampleRateHz": 44100,
+          "startSeconds": 429.33585,
+          "endSeconds": 533.071383,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "87b92a2c8f3d18e8891f3ae69c1e59c58933ab424416806e800558e7989b6fd6",
+        "planSegmentTextSha256": "1f92f0aa9d5fef948129035b47d5033d498f80401eb5ee0bd9b469822639cda2"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "13  Flour room",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "evidenceSegment": "s38-p2-t008",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The flour room is in the upper-floor inset, directly above the stone floor and reached by the narrow internal stair.",
+        "timecode": {
+          "startFrame": 18933711,
+          "endFrame": 23508448,
+          "sampleRateHz": 44100,
+          "startSeconds": 429.33585,
+          "endSeconds": 533.071383,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9c8c68b5f1e9b8397c49bbf630ebc5730d0277ebefe0f4672e5e693066efa7ae",
+        "planSegmentTextSha256": "65ddccf68ffe8d8c46b5953832b0aaa11c3c9d73f4005ad4e07ca5dfd64a4264"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "14  Accessible viewing platform",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "s38-p2-t011",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The accessible viewing platform is at the end of the courtyard ramp, overlooking the wheel through the glazed western wall.",
+        "timecode": {
+          "startFrame": 18933711,
+          "endFrame": 23508448,
+          "sampleRateHz": 44100,
+          "startSeconds": 429.33585,
+          "endSeconds": 533.071383,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8dda59018d9108e7de6fa5c37d922f28828cc5909121f06d7e5bb6b912fbcb27",
+        "planSegmentTextSha256": "b69b580c993ef4f53994820cc7a325ea3d383e970b406513ad9042b19a533984"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "15  Picnic lawn",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "s38-p2-t014",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The picnic lawn lies beyond the east gate, across the riverside path and well away from the delivery lane.",
+        "timecode": {
+          "startFrame": 23526970,
+          "endFrame": 25927541,
+          "sampleRateHz": 44100,
+          "startSeconds": 533.491383,
+          "endSeconds": 587.9261,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0b35edca9e6a6a8e4735e293d4a4603d3bc498ff65a58c53427035e8fbe5ef48",
+        "planSegmentTextSha256": "15987f7ed8b9ac2136f617069e5ecdccb83a9da61158bbe96eff0a306a73e60f"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "16  Bread shop",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "s38-p2-t017",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The bread shop faces into the courtyard beside the visitor exit, opposite the lower end of the ramp.",
+        "timecode": {
+          "startFrame": 23526970,
+          "endFrame": 25927541,
+          "sampleRateHz": 44100,
+          "startSeconds": 533.491383,
+          "endSeconds": 587.9261,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fe162f5a217da38c1f35feba2e5832ba83f2502e2dd5020a7c1acf5642ddef38",
+        "planSegmentTextSha256": "c04df4bc93ebf65c397cded2a551591e5e1ebfa9709c80e5e346bbeda87652d0"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "What must visitors do during a machinery demonstration?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "remain behind the rail"
+        },
+        "evidenceSegment": "s38-p2-t020",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "During a machinery demonstration, remain behind the marked rail even if the wheel appears to have stopped.",
+        "timecode": {
+          "startFrame": 28106974,
+          "endFrame": 32318403,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.346349,
+          "endSeconds": 732.843605,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b40dcd9d86c39209b05cbd70991e97eb3c789784db6e674542e650f75b5cc02f",
+        "planSegmentTextSha256": "4aa46e8b185fd567f5a41dbeb8972b7129aa837a1d806e44e579d6777dc26fd7"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Where does the family trail begin?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "at the ticket desk"
+        },
+        "evidenceSegment": "s38-p2-t023",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "The family trail begins at the ticket desk, not upstairs where the activity sheets are returned.",
+        "timecode": {
+          "startFrame": 28106974,
+          "endFrame": 32318403,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.346349,
+          "endSeconds": 732.843605,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "64e6ac877ae7ebe40a343615cd03c797cd3d4150e03bd91b81d02dbb55bdcf72",
+        "planSegmentTextSha256": "6a88725b8ac5efbf09f7fc8a410a31aa1ce8dc9f22863074de6214a34c47784e"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "When is the main mill talk?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "12.30"
+        },
+        "evidenceSegment": "s38-p2-t026",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "There is a short introduction at eleven, but the main mill talk begins at half past twelve.",
+        "timecode": {
+          "startFrame": 28106974,
+          "endFrame": 32318403,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.346349,
+          "endSeconds": 732.843605,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6623102c0cfd332fd66bc438ec6ba39056b94bde05ca383165b54fdc29d51774",
+        "planSegmentTextSha256": "522abb55b0251c7772a6d0d75f21369837a9234af4622ab3075ab5838a2d9c6b"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "Which activity needs advance booking?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the stone-dressing demonstration"
+        },
+        "evidenceSegment": "s38-p2-t029",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Bread tasting is open to everyone, whereas the stone-dressing demonstration needs advance booking because space is limited.",
+        "timecode": {
+          "startFrame": 28106974,
+          "endFrame": 32318403,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.346349,
+          "endSeconds": 732.843605,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f3f5874eb10f14c6851d17a8f95b67784b5d2ab76364a791aaf864efaa3988c8",
+        "planSegmentTextSha256": "8dd1201f8e2f0ac8bd4db8fb658720edcbfdd9f0ebc480f793f4173d1060140b"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "fill",
+          "questionText": "Grip force will be recorded by a ______.",
+          "acceptedResponses": [
+            "pressure sensor"
+          ]
+        },
+        "evidenceSegment": "s38-p3-t002",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "We should place a pressure sensor under the thumb area; a stopwatch alone cannot show how grip force changes.",
+        "timecode": {
+          "startFrame": 35789087,
+          "endFrame": 40296412,
+          "sampleRateHz": 44100,
+          "startSeconds": 811.543923,
+          "endSeconds": 913.750839,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ac3a4a77ec1d4a03992469c0325cf827e1a20af871d77725b91e572ec7db3a0f",
+        "planSegmentTextSha256": "b10fa02cac90436b6cb70d1643b1c8b834b248257c211f8896dc0d06c2e2818d"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "fill",
+          "questionText": "Each participant will test ______ prototypes.",
+          "acceptedResponses": [
+            "three",
+            "3"
+          ]
+        },
+        "evidenceSegment": "s38-p3-t006",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Three prototypes are enough for comparison without making the session tiring.",
+        "timecode": {
+          "startFrame": 35789087,
+          "endFrame": 40296412,
+          "sampleRateHz": 44100,
+          "startSeconds": 811.543923,
+          "endSeconds": 913.750839,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "010d36f073aa4c417863e353a35e40a3d9f1cfff6769a5b37d45880366f98d0c",
+        "planSegmentTextSha256": "bfc6441102c4f2da9ae1e1a1bc944cb868767c116b3a18ec2f68bff57db32a42"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "fill",
+          "questionText": "The instructions should avoid the word ______.",
+          "acceptedResponses": [
+            "easy"
+          ]
+        },
+        "evidenceSegment": "s38-p3-t010",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Avoid calling any package easy, because that wording could influence both confidence and persistence.",
+        "timecode": {
+          "startFrame": 35789087,
+          "endFrame": 40296412,
+          "sampleRateHz": 44100,
+          "startSeconds": 811.543923,
+          "endSeconds": 913.750839,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "024482083add4f1fa87845300058aff3d4b29342a52e6a0fed226a43ebc70031",
+        "planSegmentTextSha256": "db7aaf6b52048c451c5fc6c037b47b62df4f74c660fbca3f31fa897d956b7568"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "fill",
+          "questionText": "A failed attempt ends after ______ seconds.",
+          "acceptedResponses": [
+            "45",
+            "forty-five"
+          ]
+        },
+        "evidenceSegment": "s38-p3-t014",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Let us define a failed attempt as no successful opening after forty-five seconds, not thirty.",
+        "timecode": {
+          "startFrame": 40314934,
+          "endFrame": 43549602,
+          "sampleRateHz": 44100,
+          "startSeconds": 914.170839,
+          "endSeconds": 987.51932,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7fef08372b2dc9b40f7d614f1801568b34c40a0d14cde640823750a4ba389b05",
+        "planSegmentTextSha256": "dbbae0dec6a007a3a4f76be56bf51bda53136991e4e4c32886ffeb1ffa244105"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "fill",
+          "questionText": "Prototype order will be ______ for each participant.",
+          "acceptedResponses": [
+            "randomised"
+          ]
+        },
+        "evidenceSegment": "s38-p3-t018",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Prototype order must be randomised for each participant so practice or fatigue does not favour one design.",
+        "timecode": {
+          "startFrame": 40314934,
+          "endFrame": 43549602,
+          "sampleRateHz": 44100,
+          "startSeconds": 914.170839,
+          "endSeconds": 987.51932,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "46c2b4a4137cbfb0816a8e2a0efbe325075ba57c88da152779b5d99fd1206328",
+        "planSegmentTextSha256": "7ea986d8754df77bfe26b038496fcb4e753282607c1875f26fa8ab88dc548683"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "26  recruits older volunteers",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Ben"
+        },
+        "evidenceSegment": "s38-p3-t022",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Ben will recruit the older volunteers through the community design panel.",
+        "timecode": {
+          "startFrame": 45729026,
+          "endFrame": 49949357,
+          "sampleRateHz": 44100,
+          "startSeconds": 1036.939365,
+          "endSeconds": 1132.638481,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "528638b38ec5c7aa57ffc635a34fb31736904b3efe0a8548d289952e063a4251",
+        "planSegmentTextSha256": "4a2d72e08e74d5af53073d3584b8e92d7ff0f428cd45c9f6e897742315327ead"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "27  calibrates the force equipment",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Professor Kerr"
+        },
+        "evidenceSegment": "s38-p3-t026",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Professor Kerr will supervise calibration of the force equipment before the pilot.",
+        "timecode": {
+          "startFrame": 45729026,
+          "endFrame": 49949357,
+          "sampleRateHz": 44100,
+          "startSeconds": 1036.939365,
+          "endSeconds": 1132.638481,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "460d482df76abf2145557e3faadd0928365375602eb15ec8ffd640c5ada23860",
+        "planSegmentTextSha256": "838c472e84bb94393c3aba8a4df7f84d28aad63d15a05a4df48add0306199228"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "28  prepares illustrated instructions",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Soraya"
+        },
+        "evidenceSegment": "s38-p3-t029",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Soraya will prepare the illustrated instructions and remove evaluative words from the captions.",
+        "timecode": {
+          "startFrame": 45729026,
+          "endFrame": 49949357,
+          "sampleRateHz": 44100,
+          "startSeconds": 1036.939365,
+          "endSeconds": 1132.638481,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7175ae36a763f9666163c259eafccf962cefeb471d3838a81dbc0ded5ff99cf1",
+        "planSegmentTextSha256": "0663c7bb7011937e22fa2951e92a9506e710fb13b47fadf04e3fadf788a58b48"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "29  codes opening errors",
+          "correctOptionIndex": 3,
+          "correctOptionText": "lab assistant"
+        },
+        "evidenceSegment": "s38-p3-t032",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "The lab assistant will code opening errors from the overhead recordings using the agreed categories.",
+        "timecode": {
+          "startFrame": 45729026,
+          "endFrame": 49949357,
+          "sampleRateHz": 44100,
+          "startSeconds": 1036.939365,
+          "endSeconds": 1132.638481,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d57144168f484dae964e3858f8d4f6451e7c5c0b759cc37903453d0365bd6c9c",
+        "planSegmentTextSha256": "a631557a5dd9ec6eb0891431c2c678dd59824664d78abd08615984663a10cfa6"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "30  compares successful and failed attempts",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Soraya"
+        },
+        "evidenceSegment": "s38-p3-t035",
+        "renderedChunk": "chunk-19",
+        "audiblePhrase": "I will compare successful and failed attempts because I am already structuring the analysis table.",
+        "timecode": {
+          "startFrame": 49967879,
+          "endFrame": 51965524,
+          "sampleRateHz": 44100,
+          "startSeconds": 1133.058481,
+          "endSeconds": 1178.356553,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f62b6e0245e7897f966242c0827318fa2c3cb937b65f79133d4e3cd36d6133ee",
+        "planSegmentTextSha256": "da3475543d6ccb74db699171edc9963ff1e63def35de0a84fa76234370605cf1"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "The clouds form near the ______.",
+          "acceptedResponses": [
+            "mesopause"
+          ]
+        },
+        "evidenceSegment": "s38-p4-t002",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "In the opening case notes, the cloud layer sits near the mesopause, much higher than the layer assigned to ordinary weather.",
+        "timecode": {
+          "startFrame": 55436202,
+          "endFrame": 60018401,
+          "sampleRateHz": 44100,
+          "startSeconds": 1257.056735,
+          "endSeconds": 1360.961474,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "efb34066521bb5db7ab7a5e0c6edbe31b322fd96839c16d29c288801189739b1",
+        "planSegmentTextSha256": "f6218f7e510f21995647ced88c7e108691cf2943022117dc7b9ef00df4e5a8fd"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "They consist mainly of tiny ______.",
+          "acceptedResponses": [
+            "ice crystals"
+          ]
+        },
+        "evidenceSegment": "s38-p4-t007",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "They consist mainly of tiny ice crystals rather than droplets of liquid water.",
+        "timecode": {
+          "startFrame": 55436202,
+          "endFrame": 60018401,
+          "sampleRateHz": 44100,
+          "startSeconds": 1257.056735,
+          "endSeconds": 1360.961474,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "23553c5d3871b5d0530149e4aa8311f958c61b22dea6cd1f92d27cb52a65f4af",
+        "planSegmentTextSha256": "3ed75caa564af66561a2c7a98c436e7a7c0c2466fcae256e2c5c6b3f4333926e"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Ice develops around minute ______.",
+          "acceptedResponses": [
+            "dust particles"
+          ]
+        },
+        "evidenceSegment": "s38-p4-t011",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "In the second section of the case, water molecules freeze around minute dust particles, which provide nuclei for crystal growth.",
+        "timecode": {
+          "startFrame": 55436202,
+          "endFrame": 60018401,
+          "sampleRateHz": 44100,
+          "startSeconds": 1257.056735,
+          "endSeconds": 1360.961474,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "930097066375d01ffbf7031a2ce32169f1dc7c4052243ee01513c844f1796514",
+        "planSegmentTextSha256": "53b2dd22137bf9d7f96063ef5d522e4fb1e85f9cc3f04f805011b896fae0b8e8"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "The upper atmosphere must be unusually ______.",
+          "acceptedResponses": [
+            "cold"
+          ]
+        },
+        "evidenceSegment": "s38-p4-t015",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "Paradoxically, the upper atmosphere must be unusually cold, a condition most common there during summer.",
+        "timecode": {
+          "startFrame": 60036923,
+          "endFrame": 64721478,
+          "sampleRateHz": 44100,
+          "startSeconds": 1361.381474,
+          "endSeconds": 1467.607211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "436c7be059d66f46f9864dae0e825ca9c501ca6c05a447f4c327726cde62b16c",
+        "planSegmentTextSha256": "1e1e28edd33510b6fc14e62a86f2837bc87861b8162e0ae3a782fed40d214595"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Observers see the clouds during ______.",
+          "acceptedResponses": [
+            "twilight"
+          ]
+        },
+        "evidenceSegment": "s38-p4-t018",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "They are usually noticed during twilight, when the ground is dark but sunlight still reaches the high layer.",
+        "timecode": {
+          "startFrame": 60036923,
+          "endFrame": 64721478,
+          "sampleRateHz": 44100,
+          "startSeconds": 1361.381474,
+          "endSeconds": 1467.607211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e6e4330e2715eefb93ed0dd70382b0fe345e739b59091f3fd9d5dbb3aa287293",
+        "planSegmentTextSha256": "5932cc46b044149983ce5b7032f238eb541c0484b773f69dbc856acf40e0987d"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Displays often appear low above the ______ horizon.",
+          "acceptedResponses": [
+            "northern"
+          ]
+        },
+        "evidenceSegment": "s38-p4-t023",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "At northern mid-latitudes, displays often appear low above the northern horizon before extending higher.",
+        "timecode": {
+          "startFrame": 60036923,
+          "endFrame": 64721478,
+          "sampleRateHz": 44100,
+          "startSeconds": 1361.381474,
+          "endSeconds": 1467.607211,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1dbb407e87a47bbaa1f8a5a39d91c1a763e58d850e4e06cbbdb495cffb52a28c",
+        "planSegmentTextSha256": "af807dced4988820181769687fb370eba78fb2e39ca45ce51a8fd96632fb526e"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "mcq",
+          "questionText": "Why can a low cloud not be noctilucent?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "it would no longer receive sunlight"
+        },
+        "evidenceSegment": "s38-p4-t027",
+        "renderedChunk": "chunk-26",
+        "audiblePhrase": "A low cloud would be in Earth’s shadow at that time; the glowing material must be high enough to remain sunlit.",
+        "timecode": {
+          "startFrame": 67619267,
+          "endFrame": 72264945,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.316712,
+          "endSeconds": 1638.660884,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "95fcc79398f3cf11a10e54a389d2e40b802e04511c6edaa07f0516ecd628bfa2",
+        "planSegmentTextSha256": "58159aaf31efa629dd8514e129823bf930f59d1546a688a50877997effaebd26"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "mcq",
+          "questionText": "What is one advantage of satellite observations?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "they cover areas with few observers"
+        },
+        "evidenceSegment": "s38-p4-t031",
+        "renderedChunk": "chunk-26",
+        "audiblePhrase": "We now compare coverage in the course dataset: repeated orbital passes include regions where the ground network has few observers.",
+        "timecode": {
+          "startFrame": 67619267,
+          "endFrame": 72264945,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.316712,
+          "endSeconds": 1638.660884,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d691f0e7c310dc278e74b2b2572f64603d1027f367407b22fa5768642da487cc",
+        "planSegmentTextSha256": "88a96d08fa43b1aac6fb4ac40ab76a56642e3172abac2c754547ac74a6eed525"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "mcq",
+          "questionText": "Why should long-term reports be interpreted cautiously?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "observation methods have changed"
+        },
+        "evidenceSegment": "s38-p4-t035",
+        "renderedChunk": "chunk-26",
+        "audiblePhrase": "In the archive exercise, observation methods change over time, including camera sensitivity, so more reports do not automatically mean more cloud occurrence.",
+        "timecode": {
+          "startFrame": 67619267,
+          "endFrame": 72264945,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.316712,
+          "endSeconds": 1638.660884,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e7a7de31883b8739ce32a85c4b4ebc6017a1d90acc8395c19f34184d018113f7",
+        "planSegmentTextSha256": "25eee08701266da398276371389a4f10717c3d92214c1ec5c3352288978ffd00"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "mcq",
+          "questionText": "What does the lecturer recommend combining?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "several independent types of evidence"
+        },
+        "evidenceSegment": "s38-p4-t039",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "The most useful interpretation combines ground photographs, satellite records and atmospheric measurements.",
+        "timecode": {
+          "startFrame": 72283467,
+          "endFrame": 74256540,
+          "sampleRateHz": 44100,
+          "startSeconds": 1639.080884,
+          "endSeconds": 1683.821769,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7faa98a9a6ceb60d46ecbec1bbd95e52637dbc38b9cec40ba11be8e629933115",
+        "planSegmentTextSha256": "19225f4d7c744ade5e95111c95b7e4ae15980b16182e5c73b25c982c555a4497"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/set38-listening-content-v1.0.14.json",
+        "sha256": "3aa934ad995f7f32692449efff900df3c8912ac2e12bc5a93c9bb802bd24de31"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "8901dbd359a120d9afbcf179bb758b8b23de2ca69efadaf095a3dcb46f54272f",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-38/set38-audio-production-plan.json",
+        "sha256": "8c0a20608dbf00955e85c0bfe04d076d25dfc6340f4863c93d86a4e7a4b78e92"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/elevenlabs-v4/set38-eleven-v4-manifest.json",
+        "sha256": "38ea169c15da02413e38b4d5a64bb459a214a0ab8670b2daaa8561a982b6a196"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/elevenlabs-v4/set38-eleven-v4-progress.json",
+        "sha256": "f08ab48b13ead32b4be1e3895407eab370ec867c0a5b3d6288632733f797dcb2"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/elevenlabs-v4/set38-eleven-v4-qa.json",
+        "sha256": "71f2ded520a583dff2060c0c44a9f71c3c866b562b3c0689a547d4f40f79f9be"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/elevenlabs-v4/set38-concat.txt",
+        "sha256": "b9232cee0f6920edc5f64ac38ae9e13071b2d398c5c66d2be371ab68b2b68b22"
+      },
+      "concatPieceAggregateSha256": "389c2116abf16d65070c2c7d94f8b6e2fee4dc1fe5f408fc886780cb204a91c9",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/elevenlabs-v4/ielts-set-38-listening-eleven-v4-master.wav",
+        "sha256": "f33d0a2811ad6df88713578947b423593bcb0d38387d5b83cbcb2bd8458a104a",
+        "frameCount": 75786801,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/listening/elevenlabs-v4/ielts-set-38-listening-eleven-v4.mp3",
+        "sha256": "2bd20c139303c1e806d534b2f76b25db370e556148a424cc9379327a54cd3436"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-38.mp3",
+        "sha256": "2bd20c139303c1e806d534b2f76b25db370e556148a424cc9379327a54cd3436"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "85e6b579612c25c566a151b503151e8a4086d83a0f5c888a323d13b2fb4aa30f"
+  }
+}

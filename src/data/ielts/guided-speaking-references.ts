@@ -1,11 +1,12 @@
 import audioManifest from '../../../config/ielts-guided-speaking-audio.json' with { type: 'json' };
 import { IELTS_GUIDED_SPEAKING_AUDIO_STATUS } from './guided-speaking-audio.generated.ts';
+import { IELTS_GUIDED_SPEAKING_REFERENCES_21_40 } from './guided-speaking-references-21-40.ts';
 
 export type IeltsGuidedSpeakingBand = '5.5' | '9.0';
 
 export type IeltsGuidedSpeakingAudio = {
   ready: boolean;
-  url: string;
+  url: string | null;
   durationSeconds: number | null;
   sampleRate: number | null;
   sha256: string | null;
@@ -158,12 +159,17 @@ function buildReference(setNumber: number): IeltsGuidedSpeakingReference {
   };
 }
 
-export const IELTS_GUIDED_SPEAKING_REFERENCES = Object.fromEntries(
+const releasedReferences = Object.fromEntries(
   Array.from({ length: 20 }, (_, index) => {
     const setNumber = index + 1;
     return [setNumber, buildReference(setNumber)];
   }),
 ) as Record<number, IeltsGuidedSpeakingReference>;
+
+export const IELTS_GUIDED_SPEAKING_REFERENCES = {
+  ...releasedReferences,
+  ...IELTS_GUIDED_SPEAKING_REFERENCES_21_40,
+} as Record<number, IeltsGuidedSpeakingReference>;
 
 export function getIeltsGuidedSpeakingReference(setNumber: number): IeltsGuidedSpeakingReference {
   const reference = IELTS_GUIDED_SPEAKING_REFERENCES[setNumber];

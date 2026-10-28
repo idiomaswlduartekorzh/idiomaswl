@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_READING_INDEPENDENT_TARGETED_FINAL_REVIEW",
+  "reviewedAt": "2026-10-28T14:26:11Z",
+  "reviewer": {
+    "role": "independent-reading-reviewer",
+    "task": "/root/guided_reading_independent_review",
+    "independence": "Reviewer did not author or modify the generator or staged evidence artifacts."
+  },
+  "scope": {
+    "sets": "21-40",
+    "module": "Academic Reading guided evidence",
+    "targetedSemanticCases": 15,
+    "globalIntegrityRows": 800,
+    "policy": "The 15 rows that failed the preceding independent review were re-read semantically against their canonical excerpts. The remaining rows were revalidated for manifest, artifact, source, key, numbering, and count integrity."
+  },
+  "supersedes": {
+    "path": "staging/ielts-guided-reviews/reading-evidence-independent-final-rereview-21-40-2026-10-28.json",
+    "sha256": "e0023013dddd2173c2edd25af8913d382a22becdd44db2a7fff551823b3b0162",
+    "payloadSha256": "36ef8894ebfbd2d3d5185fd0a89268e76cdbd4e583be6ecb4ce6ab3f4a7407b5"
+  },
+  "sourceManifest": {
+    "path": "staging/ielts-guided-evidence-21-40/manifest.json",
+    "sha256": "10e70a0211a9cd473efe83913f92640362849d59e466e9cde044b78628bed23b",
+    "payloadSha256": "28189f33f4cbf581521f65c2dd637bb97464c22a8408bde87bc4a13211d7ab83",
+    "aggregateSha256": "ce5c20f0613a39755b469ae06c4e0d4f4d4035765763bc833e5c25a7ba7fbc6d",
+    "generatorSha256": "96bf53c3bb104dc2046bee56f33703c9cd01a6442bb702e819b47f12d68384bf"
+  },
+  "decision": "PASS",
+  "gate": {
+    "name": "READING_GUIDED_EVIDENCE_INDEPENDENT_REVIEW",
+    "status": "PASS",
+    "reason": "All 15 remediated rows now cite evidence that directly supports the keyed response, and the complete 800-row staged corpus passes current manifest, payload, file, source, numbering, and count integrity checks."
+  },
+  "releaseAuthorized": false,
+  "runtimeIntegrationAuthorized": false,
+  "aggregate": {
+    "setsReviewed": 20,
+    "passSets": 20,
+    "failSets": 0,
+    "rowsIntegrityChecked": 800,
+    "targetedSemanticRowsReviewed": 15,
+    "targetedSemanticRowsPassed": 15,
+    "targetedSemanticRowsFailed": 0,
+    "questionFamilyCounts": {
+      "fill": 237,
+      "trueYes": 79,
+      "falseNo": 84,
+      "notGiven": 40,
+      "otherMcq": 360
+    },
+    "passSetNumbers": [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+    "failSetNumbers": []
+  },
+  "globalChecks": {
+    "manifestFileHashMatchesRequestedSha": true,
+    "manifestCanonicalPayloadHashMatches": true,
+    "manifestAggregateHashPresent": true,
+    "allTwentyArtifactFileHashesMatchManifest": true,
+    "allTwentyArtifactCanonicalPayloadHashesMatch": true,
+    "allTwentyCanonicalMockHashesMatch": true,
+    "allTwentyReadingContentSourceHashesMatch": true,
+    "q1To40ExactlyOncePerSet": true,
+    "readingRowsPerSet": 40,
+    "totalReadingRows": 800,
+    "allRowsRemainPendingIndependentReviewInSourceArtifacts": true,
+    "sourceArtifactsReleaseAuthorizedFalse": true,
+    "sourceArtifactsRuntimeConnectedFalse": true,
+    "generatorValidateOnlyResult": "PASS: 20 sets; Reading 40/40 and Listening 40/40; no files written"
+  },
+  "sets": [
+    {"set":21,"decision":"PASS","rows":40,"artifactSha256":"57244baa5ac7ec2813e3e4d403f9ae2e1b6d6a3f9c3cc72d46599297b2088b20","artifactPayloadSha256":"cbdca12e054023fcfe8a3b5d21ecd8157d99cfe6704c23f67c0e2970dc84ed84"},
+    {"set":22,"decision":"PASS","rows":40,"artifactSha256":"08ae318bf8f34bf177f0afbb39b34eb2a0efc46722d20cd613249708cf12c9a1","artifactPayloadSha256":"742bee4b18502d8a1ef5662b2e770b6caa33a5c82731e401642fa737f250532f"},
+    {"set":23,"decision":"PASS","rows":40,"artifactSha256":"6639a8ab5d6769067d0851d00ef503375ca88acca5b78cb7f80177a13d5e1644","artifactPayloadSha256":"195542bbaa819f39ec6d64f821cb5727f4475cde126baeee89ec460ddc4827f2"},
+    {"set":24,"decision":"PASS","rows":40,"artifactSha256":"222b9833d230947c9d2bb94e5421bc7b3fdfb3e34b2813bbb4690a97ac88ecec","artifactPayloadSha256":"90b9b188b7fce517e9a7814a8775523bbda452d096ba44fe2a04ce3e98c02629"},
+    {"set":25,"decision":"PASS","rows":40,"artifactSha256":"cef478160e3cb01b153c108438737dbf11c4cd7a8e91822d729c0f0fd2661c29","artifactPayloadSha256":"5ae47b9be4f200b49c95f168832ec7d89574620ff4960d003d8e887013960b3d"},
+    {"set":26,"decision":"PASS","rows":40,"artifactSha256":"fbb9805ca65f7c07172a836a6869a01c4a5aa336eef01580a719ffbda0e6daa8","artifactPayloadSha256":"3123de96d3a14430e97440466403215c2e124d574a20aaba50a7664c29c7cf31"},
+    {"set":27,"decision":"PASS","rows":40,"artifactSha256":"b87cdc5bec05165461dd7d778071e8aaf497f903c36feba8f7d8473a5c48314f","artifactPayloadSha256":"3b5bfdb212a6763e302d0e1cb9503532e5331cc3366993cafa5a2fafc5e4599a"},
+    {"set":28,"decision":"PASS","rows":40,"artifactSha256":"18f4a13ae28e2b1098ce742586cfbb4af0b6bf4c9250b6265843090e38e896d8","artifactPayloadSha256":"b7c5940b3562b3a0b22e8b1226a9141adc99d00111231fe7f33dde29b4a60e8b"},
+    {"set":29,"decision":"PASS","rows":40,"artifactSha256":"ea904cebd66ef751ec3b077c7edcf8728ee13cea4cfa9403e5644f7556c210e2","artifactPayloadSha256":"8cb3368235598d8853a3694f5a6c6bb7558ce4719d273b4a50898a0907037433"},
+    {"set":30,"decision":"PASS","rows":40,"artifactSha256":"b4a939505dc50ae114b526bb8be99dbe0cc404d73cbb7c5dd44fa56d9fc173fe","artifactPayloadSha256":"8a3c031c18a1ad722dbef16048ef1e81d6bbc4fc0d6a0ef133c9b63bea3765f8"},
+    {"set":31,"decision":"PASS","rows":40,"artifactSha256":"775d940f90bbb5122bfc83cf8223216e788371f2cf62d6b25186c2739fd17b93","artifactPayloadSha256":"b46f0c2f550b571cdb08f12ef053c3d79250f4ebeba0afdb0e7a48404a3a78a0"},
+    {"set":32,"decision":"PASS","rows":40,"artifactSha256":"8a3884e09db6e58eb8a50a336390365f99df93bae16657a5d74db94d37b9593f","artifactPayloadSha256":"2299dd757f0c777eaee260c59a6b55adad1571eac299c104c7a81e8bc657a0cc"},
+    {"set":33,"decision":"PASS","rows":40,"artifactSha256":"e9eb4ba1c504d776c4d1ff93bf934206fe72391f938149bfdfa491197a5c19ea","artifactPayloadSha256":"11936df87dd3822fc2be9d47fbbcaa898624593f486500e556add7ce26cf82ff"},
+    {"set":34,"decision":"PASS","rows":40,"artifactSha256":"5c0afd7cdeab870045040f6e7517742b8cd331cff63bbd7231a27099aa615365","artifactPayloadSha256":"d95354a934e4832af64027a23d23951577e430576ea7222cf20472b7712e3955"},
+    {"set":35,"decision":"PASS","rows":40,"artifactSha256":"c62b78dbe6b46b466282ca65bd2ab039a96cd243072476989f281213a20605a0","artifactPayloadSha256":"5c3550e66d642933bd8e8fa58e1cbe0f2a0a6d7248f8ea657a7eee535f0d3793"},
+    {"set":36,"decision":"PASS","rows":40,"artifactSha256":"f6bce768b0936c93f50039e4d8987e7b15bb061d72739ce8ac916482460e8d1d","artifactPayloadSha256":"b18a06a2a8abce24a2ce5c6759f1dea68425bf1cd3893a6e4b7876bc199f9350"},
+    {"set":37,"decision":"PASS","rows":40,"artifactSha256":"48d21e00386c0a1fa6a34112db22075bf306614a54008ba54e07dd7cebdef946","artifactPayloadSha256":"882e6c6a151de6a1422d94517fb87926edc09cf4c9c7951d7e8908b1eb871ec6"},
+    {"set":38,"decision":"PASS","rows":40,"artifactSha256":"1e058289f3a55f3239ba96bf584fa66faec2e0bb5402fe6cf14579a1e906e4bf","artifactPayloadSha256":"1794bedbb9e5e0713117c516d0ba7ec88b1f3b0a096f9b5d20ace67a96aa0aec"},
+    {"set":39,"decision":"PASS","rows":40,"artifactSha256":"87f02cadcf41649e393edc33eaf2bcf6883d7f09e4f4c168de9ee90a3bd218a2","artifactPayloadSha256":"4189509ec1ffbb66e74afa789f7ccd7e7fd17ef2abc005edd6c40994d11b8a53"},
+    {"set":40,"decision":"PASS","rows":40,"artifactSha256":"e44519c58e70534eb85510307c6aadbfd58c9a320bcf2cce497185414e78fae2","artifactPayloadSha256":"52357b321d0bc65f3bc048689e00898556c791f00c32227b5726c7f72ad3a64d"}
+  ],
+  "targetedCases": [
+    {"set":31,"question":3,"decision":"PASS","rowSha256":"0be0c3fe937bae055bbb4a6d2b140732758ced60b661d11e41b5dae9474e3394","sourceExcerptSha256":"446337a2e59a18801497b7454c133935e6429c611b1f196b781f190a85beffd3","rationaleSha256":"60f5b22c87f4ff1be074a86f9d6d96a8d6f38ae47243c89d702bf10f1f747f3c","finding":"The remediated paragraph contains evaporation and explains water leaving through evaporation."},
+    {"set":31,"question":28,"decision":"PASS","rowSha256":"4e2226d1c7bdbb5342f19b6114492421ede04a7c9bc0ffdb92040ac474e05e9a","sourceExcerptSha256":"f1ed18116cb112e76a952fd92af3c7f8963f1f817e1ecd63ea8976b90fb8ccb4","rationaleSha256":"e75badf17afa63289f9fd3afd855a09c5f62204316d2ac3c830e1c697c6e0db3","finding":"The excerpt explicitly says neither pattern is a guarantee and explains shared model error."},
+    {"set":33,"question":10,"decision":"PASS","rowSha256":"d8a6c0d4f14853b681f5ca852a1c0dc0a596ba24db6d8860e1e0a962a496613b","sourceExcerptSha256":"45b9f944000a1ab999781cc8e8c2bf31cb148baf61e9de4268eb1dfc021e125b","rationaleSha256":"797ce0527ceac5480207ebe0892ff15c46adde0b1c43e42a381919dc8e635cb0","finding":"Paragraph E explicitly gives the manual-checking procedure for an unclear label."},
+    {"set":34,"question":7,"decision":"PASS","rowSha256":"90d22eff5930cf2196d389b1d670ed7be114cbb131f4da7cef0b26d56666baec","sourceExcerptSha256":"ed9044358868fcc713b02e539d00d0fc3db0232e178d123225003255ad93f603","rationaleSha256":"274d0dafa71b499b168f95f3d0f4e38188866ffe5d57abfb74b4de0d8bbdea68","finding":"Paragraph G directly states that the old cylinder box remains instructive."},
+    {"set":34,"question":27,"decision":"PASS","rowSha256":"059c45bb5e5066af0d6ccd27d1572f237a6eee985d70f6697c1b54917e22cd0b","sourceExcerptSha256":"1ee4bb8ddf7c937d30c6e107631a1cc7c7f787d432375906e45f9fed4d11de5b","rationaleSha256":"7e798edc7918c210d16d37625437a3c7f3c8df14e9e832f39402d42d5cf308d6","finding":"The author conditions legitimacy on stage and distinguishes pre-screening from post-screening use, contradicting always before screening."},
+    {"set":35,"question":15,"decision":"PASS","rowSha256":"c2369a02bdd05913c7ee0434d05d54013761c4eb2b209e1a4b39f1a41a937f0c","sourceExcerptSha256":"da8a6db02f16c1d0cb36cdf5d18d1e238f353698267ca55c76a91bc8c8571966","rationaleSha256":"a2e5428ab8da6d14e37107226daabfc78ef61dfcc925654d649f4ada9d7354ea","finding":"Paragraph B links ordered precision with the impermanence caused by variation and ageing pigments."},
+    {"set":35,"question":29,"decision":"PASS","rowSha256":"b28c8b84190bb335d7bc5cfa8ef4deb77395e14392f46a6a8678aa5638c85c60","sourceExcerptSha256":"37148d87d88303f8d78d50c918939fecd3594e29d395037cd747a0206584394b","rationaleSha256":"f2355479fc10c69b2e334c27123e8b050fafaf973b9fcdc588f0e44cb6f76550","finding":"Different objectives produce different queues, directly contradicting the proposition."},
+    {"set":36,"question":38,"decision":"PASS","rowSha256":"3c4bfcc82a90eb27faeb9dcc26631f091d0bd6fcefc40e8b0f77de38ee775434","sourceExcerptSha256":"c3f6a15d0a716f6903f8c0a778a4624556e62dbde3b355d925c7fb8132fb987f","rationaleSha256":"28549a57e038339cb1c46c96f5815d8264fd058d8503bba679834791107f5e4a","finding":"The text explicitly says the aim is not to suppress communication."},
+    {"set":36,"question":40,"decision":"PASS","rowSha256":"c8493de7bd1d1c76b3edc9718305080a0454bb62029b12467fa5ffead7bb80bc","sourceExcerptSha256":"d5eb9ed36f758e15c6e49bfa9cf0ea7c4db6d35e03cc437f55276d9991346b3d","rationaleSha256":"16c8095c4141846da0d4978ac02d1e469a6bf8805ca44d4fb1985401d6fefc69","finding":"The passage explicitly states that platforms cannot guarantee recovery."},
+    {"set":37,"question":19,"decision":"PASS","rowSha256":"aea0c71ad12529e293b5fe1619d9e3852bdb67394d8fbb14518f5a82f7fa932c","sourceExcerptSha256":"440b2309c1e6ac2f0d134252b2b666d730da569a90bcd7aa4ae3a1611db841ee","rationaleSha256":"940330a8b7f53893fc8442aec813b3820d2e4e85b713cbd2906e5cdf83d8cb81","finding":"The beam samples selected locations, not every point of the web."},
+    {"set":39,"question":7,"decision":"PASS","rowSha256":"24c7bcdbcd93ff0b69b1b17bf4ad898407eabda4ad891b194d89b5a201b96e70","sourceExcerptSha256":"a5642e0dd49ca2ea0d5b683be3e4aa750f93297d9f0627cf7b2e412c10521844","rationaleSha256":"ea8a38f6ad3e13f021a07a3c9a909ef36c92e1b828db17954fec093d1ddd1090","finding":"Paragraph G combines improved patented components with politically determined municipal priorities."},
+    {"set":39,"question":20,"decision":"PASS","rowSha256":"d342ead34e90cfe579100eb8c493b857400c148204a201bbeacfac4d6c0ff5cd","sourceExcerptSha256":"e7a8c0cdd0da6823a7e4a818932bf241c86b44756965ff5c9e32efd71d2cecdc","rationaleSha256":"e12093215ee5ae88d7aea16e0ec42d4574ef433e9fde9fa93bbca378db05b375","finding":"The source says cultural positions are not resolved by laboratory measurements alone."},
+    {"set":39,"question":26,"decision":"PASS","rowSha256":"ccd54dd7125859b9a0824b1dedf320c4859a48706ed6929c68a371349f873613","sourceExcerptSha256":"5956899ba3d06e1ae8749a7e58927126924b0b7c8306b2593dff04f2917ef6e6","rationaleSha256":"4282a519e6799d97fb7b54e72b22544269cc0ce8b31be357584203ec6d5a6777","finding":"Paragraph C explicitly warns that spatial pattern is not a clock."},
+    {"set":39,"question":32,"decision":"PASS","rowSha256":"74c5b2b460a32aed9203c87706e3e0a6a29fa0be27a081472864108d1f19da62","sourceExcerptSha256":"75b8da23fd291f03b7ad6acacb1b4dd8a751b96c2f97e06d4174911ae2cde7bb","rationaleSha256":"64c4afbb15c06c259d3f20288939484aa7144651c1ba3ec73ebb8a79834ca4c2","finding":"The passage explicitly says equal-hour accounting does not imply identical training or effort."},
+    {"set":40,"question":18,"decision":"PASS","rowSha256":"4dfa00037eadb32102a62c78ab7b765e78506e701a7d66d0ad9eb6a0f949cb65","sourceExcerptSha256":"3ace68281c9c5350ad34bc5a8cb270bcc5d64a2f8b704a215f6289a1f1fd6b8e","rationaleSha256":"fb1486206ca75168332b46176c1f0b8913cd54a4928e5420d7794a48923a2395","finding":"Paragraph F describes separation, washing, drying, grading, and laboratory assessment of the recovered material."}
+  ],
+  "requiredRemediation": [],
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "aa0f1d2571e877ab0dccf88803935b8ea0e047f4e3d458d338b42e571a28bc16"
+  }
+}

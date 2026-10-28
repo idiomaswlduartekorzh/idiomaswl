@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "ielts-guided-editorial-review.v1",
+  "reviewId": "guided-editorial-independent-rereview-sets-21-40-2026-10-28",
+  "reviewedAt": "2026-10-28T14:11:50Z",
+  "supersedes": {
+    "reviewId": "guided-editorial-independent-review-sets-21-40-2026-10-28",
+    "path": "staging/ielts-guided-reviews/guided-editorial-independent-review-sets-21-40-2026-10-28.json",
+    "sha256": "dbea2a1755d08e0454da83954bc5ec430add5fce0dbc8428824d74c087d03767"
+  },
+  "reviewer": {
+    "role": "independent-module-reviewer",
+    "actor": "codex-guided-editorial-independent-review",
+    "authorship": false,
+    "sourceEdits": false
+  },
+  "mode": "review-module",
+  "inputs": [
+    {
+      "path": "src/data/ielts/guided-writing-samples-21-40.draft.ts",
+      "sha256": "9a57a1299703b236676b48e9a40b6979dba3d919cfadbdf4e702705821218c20"
+    },
+    {
+      "path": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "sha256": "d0522a13d1ed32955b16ef24db9be8ed63de4fcf1b1c7d09ba5b03eed3627933"
+    }
+  ],
+  "specBasis": {
+    "skill": "ielts-mock-factory",
+    "publicSpecSnapshot": "official-spec-contract verified 2026-10-03",
+    "claimsPolicy": "approximate pedagogical references only; no official score prediction"
+  },
+  "remediationVerification": {
+    "WRT-PROMPT-DUPLICATION": {
+      "decision": "RESOLVED",
+      "evidence": "All 20 generated Writing prompts equal the one canonical Task 2 prompt and contain it exactly once."
+    },
+    "SPK-FEEDBACK-NONTRACEABLE-DELIVERY": {
+      "decision": "RESOLVED",
+      "evidence": "All 40 samples now state that pauses, restarts, speed, productive range and pronunciation cannot be inferred from text; no criterion invents those delivery features."
+    },
+    "SPK-FEEDBACK-QUOTED-EVIDENCE": {
+      "decision": "FAIL",
+      "evidence": "Each sample has eight quoted fragments across verdict and criteria. Seven are substrings of the transcript; the Lexical Resource quote is not. This fails in 40/40 samples."
+    }
+  },
+  "deterministicSummary": {
+    "setsReviewed": 20,
+    "writingPromptExactOncePass": 20,
+    "writingMinimumPass": 40,
+    "writingUniquePass": 40,
+    "speakingCueCardExactPass": 20,
+    "speakingMinimumPass": 40,
+    "speakingUniquePass": 40,
+    "speakingSamplesWithoutInventedDeliveryClaims": 40,
+    "speakingSamplesWithAllQuotesTraceable": 0,
+    "speakingQuotedFragments": {
+      "total": 320,
+      "traceable": 280,
+      "notInTranscript": 40
+    },
+    "relevantTests": {
+      "command": "node --experimental-strip-types --experimental-loader ./tests/ts-paths-loader.mjs --test tests/ielts-guided-writing-samples-21-40.test.mts tests/ielts-guided-speaking-references-21-40.test.mts",
+      "result": "PASS (2/2), but the Speaking test checks only for guillemets and does not assert that quoted text is a transcript substring"
+    }
+  },
+  "findings": [
+    {
+      "id": "SPK-LEXICAL-QUOTE-NOT-IN-TRANSCRIPT",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "sets": "21-40",
+      "bands": ["5.5", "9.0"],
+      "artifact": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "sourceLocation": "observedFeedback(), Lexical Resource builder, lines 89-90; detail arguments in lines 116-383",
+      "title": "Every lexical criterion labels an invented paraphrase as a quoted expression from the transcript",
+      "evidence": "The criterion says 'expresiones realmente presentes' and places detail inside guillemets, but the quoted detail is absent from the associated transcript in 40/40 samples. Examples include Set 21 Band 5.5 «the monthly clean-up», Set 21 Band 9 «the shift from physical repair to stronger neighbourhood…», and Set 40 Band 9 «the move from editing survey wording to clarifying its purpose». Across verdict plus criteria, 280/320 quoted fragments are traceable and these 40 are not.",
+      "impact": "The feedback presents paraphrase as verbatim evidence. This violates the requested traceability rule and can teach learners to trust a lexical observation that was not actually made on the sample.",
+      "requiredRemediation": "Select the lexical quotation directly from the transcript, or explicitly label the detail as a reviewer paraphrase without guillemets or a claim that it is present. Add a test that normalizes ellipsis and asserts every quoted fragment is a transcript substring. Any source change invalidates this report hash."
+    },
+    {
+      "id": "WRT-BAND55-PROFILE-ADVISORY",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "sets": "21-40",
+      "artifact": "src/data/ielts/guided-writing-samples-21-40.draft.ts",
+      "title": "Band 5.5 samples retain a highly regular pedagogical error profile",
+      "evidence": "Samples remain unique and on-task but consistently use a polished five-paragraph structure, repetition and often one localized agreement error as the visible limitation.",
+      "impact": "Learners may infer an overly mechanical distinction between Band 5.5 and Band 9.",
+      "requiredRemediation": "Vary authentic limitations across task response, cohesion, lexical control and grammar in a future editorial pass."
+    },
+    {
+      "id": "SPK-PART2-LENGTH-ADVISORY",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "sets": "21-40",
+      "artifact": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "title": "Band 5.5 long turns remain at the lower timing boundary",
+      "evidence": "The 20 Band 5.5 transcripts contain 122-137 words. They meet the repository floor but may last about one minute or less at fluent reading speed.",
+      "impact": "They can under-model the 1-2 minute Part 2 target if treated as duration exemplars.",
+      "requiredRemediation": "Keep the timing caveat and validate delivered duration before any audio-ready state."
+    }
+  ],
+  "sets": [
+    {"set": 21, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 286, "9.0": 324}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 126, "9.0": 215}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 22, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 300, "9.0": 344}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 125, "9.0": 196}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 23, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 285, "9.0": 333}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 134, "9.0": 210}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 24, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 285, "9.0": 323}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 130, "9.0": 206}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 25, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 300, "9.0": 333}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 128, "9.0": 198}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 26, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 285, "9.0": 317}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 128, "9.0": 207}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 27, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 288, "9.0": 333}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 132, "9.0": 206}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 28, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 276, "9.0": 329}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 122, "9.0": 199}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 29, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 274, "9.0": 326}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 127, "9.0": 209}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 30, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 283, "9.0": 327}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 131, "9.0": 209}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 31, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 282, "9.0": 319}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 133, "9.0": 207}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 32, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 281, "9.0": 322}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 124, "9.0": 203}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 33, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 287, "9.0": 308}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 128, "9.0": 202}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 34, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 284, "9.0": 309}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 137, "9.0": 203}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 35, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 259, "9.0": 295}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 135, "9.0": 214}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 36, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 266, "9.0": 306}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 130, "9.0": 203}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 37, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 278, "9.0": 318}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 130, "9.0": 210}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 38, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 276, "9.0": 309}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 125, "9.0": 200}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 39, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 262, "9.0": 299}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 136, "9.0": 209}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}},
+    {"set": 40, "decision": "FAIL", "writing": {"decision": "PASS", "promptExactOnce": true, "wordCounts": {"5.5": 268, "9.0": 318}}, "speaking": {"decision": "FAIL", "wordCounts": {"5.5": 134, "9.0": 212}, "quotedFragmentsTraceable": {"5.5": "7/8", "9.0": "7/8"}, "inventedDeliveryClaims": false}}
+  ],
+  "portfolioAssessment": {
+    "writingGate": "PASS",
+    "speakingGate": "FAIL",
+    "promptBinding": "PASS",
+    "cueCardBinding": "PASS",
+    "minimums": "PASS",
+    "uniqueness": "PASS",
+    "inventedDeliveryFeatures": "PASS",
+    "quotedEvidenceTraceability": "FAIL"
+  },
+  "globalGate": {
+    "decision": "FAIL",
+    "nextState": "REMEDIATION",
+    "readyForHumanReview": false,
+    "runtimeIntegrationAuthorized": false,
+    "audioApprovalAuthorized": false,
+    "releaseAuthorized": false,
+    "reason": "One unresolved HIGH finding affects both Speaking samples in all Sets 21-40. The factory CONTENT gate remains closed."
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "canonicalization": "Recursive key sort, JSON.stringify, integrity field excluded",
+    "reviewPayloadSha256": "76ce7d8682c0d0a2da87cd5c1097dfb63c6d16ff344845873dbc1f8cec8d58b1"
+  }
+}

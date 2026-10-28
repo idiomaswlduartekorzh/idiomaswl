@@ -1,5 +1,6 @@
 import type { IeltsGuidedWritingReference } from './guided-mock.ts';
 import { IELTS_GUIDED_WRITING_55_AUTHORED_SAMPLES } from './guided-writing-band-55.ts';
+import { IELTS_GUIDED_WRITING_DRAFTS_21_40 } from './guided-writing-samples-21-40.draft.ts';
 
 type BandProfile = '5.5' | '9.0';
 
@@ -66,7 +67,7 @@ function advancedSample(
   };
 }
 
-export const IELTS_GUIDED_WRITING_BY_SET = {
+const IELTS_GUIDED_WRITING_RELEASED_BY_SET = {
   'set-2': {
     prompt: 'Some people think that environmental problems are too big for individuals to solve. Others believe that individuals can make a significant difference. Discuss both views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.',
     samples: {
@@ -533,4 +534,13 @@ In conclusion, sustainable mobility requires both attraction and restraint. Exce
       ),
     },
   },
+} satisfies Partial<Record<string, IeltsGuidedWritingReference>>;
+
+/**
+ * References for staged Sets 21–40 are intentionally authored but unreleased.
+ * Eligibility remains controlled independently by ielts-guided-eligibility.json.
+ */
+export const IELTS_GUIDED_WRITING_BY_SET = {
+  ...IELTS_GUIDED_WRITING_RELEASED_BY_SET,
+  ...IELTS_GUIDED_WRITING_DRAFTS_21_40,
 } satisfies Partial<Record<string, IeltsGuidedWritingReference>>;

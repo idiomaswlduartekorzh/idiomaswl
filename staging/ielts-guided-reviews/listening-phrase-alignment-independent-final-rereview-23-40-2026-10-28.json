@@ -1,0 +1,859 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_LISTENING_PHRASE_ALIGNMENT_INDEPENDENT_FINAL_REREVIEW",
+  "reviewMode": "independent-read-only-fail-closed",
+  "reviewedAt": "2026-10-28",
+  "scope": {
+    "sets": "23-40",
+    "setCount": 18,
+    "windowCount": 720
+  },
+  "supersedes": {
+    "path": "/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-reviews/listening-phrase-alignment-independent-review-23-40-2026-10-28.json",
+    "sha256": "fb3c343549f542b3561dbc803c1fc8fedbec1c15a620493095036e231bf57cdd"
+  },
+  "sourceManifest": {
+    "path": "/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/manifest.json",
+    "sha256": "254ae13984f58fd08e6bec4fc75e46e8013a2cc63f0786894bb6d7d4e32f13ba",
+    "status": "PENDING_INDEPENDENT_REVIEW"
+  },
+  "decision": "FAIL",
+  "releaseAuthorized": false,
+  "runtimeIntegrationAuthorized": false,
+  "humanListening": "PENDING",
+  "summary": {
+    "setsPass": 2,
+    "setsFail": 16,
+    "failedSets": [
+      23,
+      24,
+      25,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40
+    ],
+    "windowsMechanicallyBound": 720,
+    "focusPhraseTraceabilityPass": 719,
+    "focusPhraseTraceabilityFail": 1,
+    "windowStartChronologicalTransitionsPass": 702,
+    "windowStartChronologicalTransitionsFail": 0,
+    "answerAnchorChronologyPass": 719,
+    "answerAnchorChronologyFail": 1,
+    "maximumWindowSeconds": 45.36,
+    "sourceBindingFilesVerified": 93,
+    "sourceBindingMismatches": 15,
+    "distinctRawAsrFilesVerified": 214,
+    "globalReason": "Release/runtime promotion is denied for two independent reasons: Set 32 Q40's answer occurs before Q39's answer, and 15 artifacts retain a stale generator source binding after targeted regeneration changed the generator path hash."
+  },
+  "globalGates": {
+    "manifestAndArtifactHashes": "PASS",
+    "allDeclaredSourceBindingHashes": "FAIL",
+    "eighteenSetsSevenHundredTwentyWindows": "PASS",
+    "questionCoverageQ1ToQ40Each": "PASS",
+    "publicMp3EqualsApprovedElevenLabsV4": "PASS",
+    "ledgerPlanChunkRawAsrBinding": "PASS",
+    "timestampBoundsAndDuration": "PASS",
+    "windowStartChronology": "PASS",
+    "answerAnchorChronology": "FAIL",
+    "focusPhraseSemanticPhoneticTraceability": "FAIL",
+    "set38Question4AlternatePassProvenance": "PASS",
+    "releaseRuntimeRemainPendingFalse": "PASS",
+    "humanListening": "PENDING",
+    "global": "FAIL"
+  },
+  "chronologyFailures": [
+    {
+      "code": "ANSWER_ANCHOR_ORDER_INVERSION_HIDDEN_BY_WINDOW_WIDENING",
+      "severity": "BLOCKER",
+      "questions": [
+        39,
+        40
+      ],
+      "q39Answer": "water transport",
+      "q39RawAsrLocalStartSeconds": 56.22,
+      "q40Answer": "new growth",
+      "q40RawAsrLocalStartSeconds": 51.84,
+      "detail": "Q40's exact answer 'new growth' occurs 4.38 seconds before Q39's exact answer 'water transport'. Q39's remediated 19.08-second window starts earlier only because it includes the entire prefix and exposes Q40's answer before reaching Q39's answer. This does not repair ordered Listening chronology and contaminates Q39 guidance with Q40 evidence.",
+      "rawAsrSha256": "b98ae46bf57694a503abb1201c256e59d954ed0e16711a911aefe86b657cc7ea"
+    }
+  ],
+  "sourceBindingMismatches": [
+    {
+      "set": 23,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 24,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 25,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 27,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 28,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 29,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 30,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 31,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 33,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 34,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 35,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 37,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 38,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 39,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    },
+    {
+      "set": 40,
+      "binding": "generator",
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+      "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6"
+    }
+  ],
+  "acceptedTraceabilityNotes": [
+    {
+      "set": 24,
+      "question": 12,
+      "focus": "tide gate",
+      "recognized": "Tidegate.",
+      "basis": "phonetic compound collapse"
+    },
+    {
+      "set": 27,
+      "question": 18,
+      "focus": "tide board",
+      "recognized": "tideboard",
+      "basis": "phonetic compound collapse"
+    },
+    {
+      "set": 40,
+      "question": 7,
+      "focus": "ear drops",
+      "recognized": "eardrops",
+      "basis": "phonetic compound collapse"
+    },
+    {
+      "set": 35,
+      "question": 32,
+      "focus": "meltwater",
+      "recognized": "water",
+      "basis": "morphological partial ASR match bound to exact rendered turn; human listening remains pending"
+    },
+    {
+      "set": 35,
+      "question": 36,
+      "focus": "snowmelt",
+      "recognized": "melt",
+      "basis": "morphological partial ASR match bound to exact rendered turn; human listening remains pending"
+    }
+  ],
+  "set38Question4AlternatePass": {
+    "decision": "PASS",
+    "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-38/chunk-03-conditioned.json",
+    "rawAsrSha256": "6ce2347ec52544e076b94b96dd2e574f6d2d57b39cc61e8d5b4886ef9a18c273",
+    "decodeOptions": {
+      "language": "en",
+      "task": "transcribe",
+      "conditionOnPreviousText": true,
+      "wordTimestamps": true,
+      "temperature": 0.0
+    },
+    "recognizedWord": {
+      "word": "cloth",
+      "normalized": "cloth",
+      "startSeconds": 119.22,
+      "endSeconds": 119.68,
+      "probability": 0.996582
+    },
+    "masterWindowSeconds": {
+      "start": 196.869932,
+      "end": 198.029932
+    },
+    "provenanceNote": "The retry is explicitly conditioned, hash-bound to the same chunk WAV, deterministic at temperature 0.0, and contains exact word-level cloth evidence. This proves alignment provenance only; human listening remains pending."
+  },
+  "targetedRemediationResults": [
+    {
+      "set": 26,
+      "question": 25,
+      "decision": "PASS",
+      "mappedWords": "35/35",
+      "durationSeconds": 13.724059,
+      "rawAsrSha256": "eddc866a1a3f5643021fc1b6e6901db06f5911f06b93437a14c97739cf3ae374",
+      "conditionOnPreviousText": true
+    },
+    {
+      "set": 32,
+      "questions": [
+        32,
+        33
+      ],
+      "decision": "PASS",
+      "detail": "Exact answer anchors are in order and independently hash-bound."
+    },
+    {
+      "set": 32,
+      "questions": [
+        39,
+        40
+      ],
+      "decision": "FAIL",
+      "detail": "Exact answer anchors remain reversed; Q39's widened clip contains Q40 evidence."
+    },
+    {
+      "set": 36,
+      "question": 14,
+      "decision": "PASS",
+      "mappedWords": "13/13",
+      "durationSeconds": 6.14,
+      "rawAsrSha256": "553921a4b92a16598e3baa64565b6ca28fa42b882f768b05db26a02a90799eda",
+      "conditionOnPreviousText": true
+    }
+  ],
+  "validatorResults": [
+    {
+      "path": "/tmp/ielts-prod-audit.9UhQtF/scripts/validate-ielts-v4-phrase-alignments-23-40.py",
+      "sha256": "40786e2b4701a63107844469d8eb502cc9eb5d75fa5f0c3e5a067b0fec764f35",
+      "result": "PASS",
+      "limitation": "The repository validator checks window start order, not exact answer-anchor order, and does not re-hash every declared source binding. Independent checks therefore correctly override its apparent PASS for release gating."
+    }
+  ],
+  "perSet": [
+    {
+      "set": 23,
+      "decision": "FAIL",
+      "artifactSha256": "a48aa1091d2f0f6b70cc67d199d468615374482bb87260f6aa4936017ad5cc7c",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 23,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 24,
+      "decision": "FAIL",
+      "artifactSha256": "2e0aafe941023005029412883662d46a25918d8f893fa9b69e58c0368dd5dee1",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 24,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 25,
+      "decision": "FAIL",
+      "artifactSha256": "870738377a6f1b5e7030ed64100a61e9de2c3c446a05fd63b2cb4eebc8864c0d",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 25,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 26,
+      "decision": "PASS",
+      "artifactSha256": "d10152297a286dda6afd5090dcba4c225d0d21ec1497def92e6ffc01c2f14e5a",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 27,
+      "decision": "FAIL",
+      "artifactSha256": "6c8dba02618384c71a14c88b99a8fcbad20199066d2e02e9ee4fae473c305d81",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 27,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 28,
+      "decision": "FAIL",
+      "artifactSha256": "34e471e0d7a46872c42545890e83a41def564035a144951e8b55dcbd6817e3d1",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 28,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 29,
+      "decision": "FAIL",
+      "artifactSha256": "bca907893c297f9f5f5a8877059678db1469fb739f73fda10582890b9435c62b",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 29,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 30,
+      "decision": "FAIL",
+      "artifactSha256": "5a6d701013e6a49990271921cc2d475b9439d922a80ea3b2078bd62779d5eb18",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 30,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 31,
+      "decision": "FAIL",
+      "artifactSha256": "a7e34e2634d986b440e7cb986bcc7d573d53ad780a0af19aa10e9ccc4ea149d6",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 31,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 32,
+      "decision": "FAIL",
+      "artifactSha256": "11dac6476b9b13144df69b5767870a1799c83c0becf59a155a8e7e60685deee8",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "FAIL",
+      "focusPhraseTraceability": "FAIL",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "ANSWER_ANCHOR_ORDER_INVERSION_HIDDEN_BY_WINDOW_WIDENING",
+          "severity": "BLOCKER",
+          "questions": [
+            39,
+            40
+          ],
+          "q39Answer": "water transport",
+          "q39RawAsrLocalStartSeconds": 56.22,
+          "q40Answer": "new growth",
+          "q40RawAsrLocalStartSeconds": 51.84,
+          "detail": "Q40's exact answer 'new growth' occurs 4.38 seconds before Q39's exact answer 'water transport'. Q39's remediated 19.08-second window starts earlier only because it includes the entire prefix and exposes Q40's answer before reaching Q39's answer. This does not repair ordered Listening chronology and contaminates Q39 guidance with Q40 evidence.",
+          "rawAsrSha256": "b98ae46bf57694a503abb1201c256e59d954ed0e16711a911aefe86b657cc7ea"
+        }
+      ]
+    },
+    {
+      "set": 33,
+      "decision": "FAIL",
+      "artifactSha256": "003fa7d1e745dd4e1dad569d6f58ad74eccd48df4b7eb9d77f17ab882b67b4c3",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 33,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 34,
+      "decision": "FAIL",
+      "artifactSha256": "cf5da83507f296f3769fbb48cf0c648c53f1ec3d5a82508fb73490e843f11d0d",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 34,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 35,
+      "decision": "FAIL",
+      "artifactSha256": "34aaa27f6eb292df59b46d2cc0e4a3e75350de468c2620afe0b5c2d0cb707aa4",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 35,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 36,
+      "decision": "PASS",
+      "artifactSha256": "dd7986ec29e4af0a5f94a25c768f8f24050a404cb8d23aa1fae67e8dd97b2408",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": []
+    },
+    {
+      "set": 37,
+      "decision": "FAIL",
+      "artifactSha256": "730adf9d31dcb80cbeef657ad7b786748126e1daf53d35d84b97d5619ef23247",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 37,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 38,
+      "decision": "FAIL",
+      "artifactSha256": "e3d04b78a15187e75b8c3ee5bbc2f98c5f2d1070fd6b7a470ec73cf1ba39663c",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 38,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 39,
+      "decision": "FAIL",
+      "artifactSha256": "9e611a19fc6eb3f670192619a5c0a7de73d614b90e26f9afc1a5ca503119d37f",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 39,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    },
+    {
+      "set": 40,
+      "decision": "FAIL",
+      "artifactSha256": "0d17b9c3fdc2534deea6a35f2317fda231d3cbe8b4f6609b18782add62e48dd8",
+      "windows": 40,
+      "questionCoverage": "Q1-Q40",
+      "mechanicalBindings": "PASS",
+      "audioHashBinding": "PASS",
+      "timestampBoundsAndDuration": "PASS",
+      "questionOrderChronology": "PASS",
+      "focusPhraseTraceability": "PASS",
+      "releaseAndRuntimeGuard": "PASS",
+      "humanListening": "PENDING",
+      "findings": [
+        {
+          "code": "STALE_SOURCE_BINDING",
+          "severity": "BLOCKER",
+          "set": 40,
+          "binding": "generator",
+          "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+          "declaredSha256": "21000c7d327a5e0a82eb23f0240e64ee789d92729619c5d06c69c3904c718324",
+          "actualSha256": "7ec76c1626e1a36f4b6e75f291f4c5c5f887cc5ff93e1126bbb345882d68a9a6",
+          "detail": "The bound path no longer hashes to the declared source. Reproducibility/integrity is fail-closed until the artifact is regenerated or the immutable bound source is restored."
+        }
+      ]
+    }
+  ],
+  "artifactHashes": [
+    {
+      "set": 23,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-23-phrase-alignment-staging.json",
+      "sha256": "a48aa1091d2f0f6b70cc67d199d468615374482bb87260f6aa4936017ad5cc7c"
+    },
+    {
+      "set": 24,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-24-phrase-alignment-staging.json",
+      "sha256": "2e0aafe941023005029412883662d46a25918d8f893fa9b69e58c0368dd5dee1"
+    },
+    {
+      "set": 25,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-25-phrase-alignment-staging.json",
+      "sha256": "870738377a6f1b5e7030ed64100a61e9de2c3c446a05fd63b2cb4eebc8864c0d"
+    },
+    {
+      "set": 26,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-26-phrase-alignment-staging.json",
+      "sha256": "d10152297a286dda6afd5090dcba4c225d0d21ec1497def92e6ffc01c2f14e5a"
+    },
+    {
+      "set": 27,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-27-phrase-alignment-staging.json",
+      "sha256": "6c8dba02618384c71a14c88b99a8fcbad20199066d2e02e9ee4fae473c305d81"
+    },
+    {
+      "set": 28,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-28-phrase-alignment-staging.json",
+      "sha256": "34e471e0d7a46872c42545890e83a41def564035a144951e8b55dcbd6817e3d1"
+    },
+    {
+      "set": 29,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-29-phrase-alignment-staging.json",
+      "sha256": "bca907893c297f9f5f5a8877059678db1469fb739f73fda10582890b9435c62b"
+    },
+    {
+      "set": 30,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-30-phrase-alignment-staging.json",
+      "sha256": "5a6d701013e6a49990271921cc2d475b9439d922a80ea3b2078bd62779d5eb18"
+    },
+    {
+      "set": 31,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-31-phrase-alignment-staging.json",
+      "sha256": "a7e34e2634d986b440e7cb986bcc7d573d53ad780a0af19aa10e9ccc4ea149d6"
+    },
+    {
+      "set": 32,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-32-phrase-alignment-staging.json",
+      "sha256": "11dac6476b9b13144df69b5767870a1799c83c0becf59a155a8e7e60685deee8"
+    },
+    {
+      "set": 33,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-33-phrase-alignment-staging.json",
+      "sha256": "003fa7d1e745dd4e1dad569d6f58ad74eccd48df4b7eb9d77f17ab882b67b4c3"
+    },
+    {
+      "set": 34,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-34-phrase-alignment-staging.json",
+      "sha256": "cf5da83507f296f3769fbb48cf0c648c53f1ec3d5a82508fb73490e843f11d0d"
+    },
+    {
+      "set": 35,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-35-phrase-alignment-staging.json",
+      "sha256": "34aaa27f6eb292df59b46d2cc0e4a3e75350de468c2620afe0b5c2d0cb707aa4"
+    },
+    {
+      "set": 36,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-36-phrase-alignment-staging.json",
+      "sha256": "dd7986ec29e4af0a5f94a25c768f8f24050a404cb8d23aa1fae67e8dd97b2408"
+    },
+    {
+      "set": 37,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-37-phrase-alignment-staging.json",
+      "sha256": "730adf9d31dcb80cbeef657ad7b786748126e1daf53d35d84b97d5619ef23247"
+    },
+    {
+      "set": 38,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-38-phrase-alignment-staging.json",
+      "sha256": "e3d04b78a15187e75b8c3ee5bbc2f98c5f2d1070fd6b7a470ec73cf1ba39663c"
+    },
+    {
+      "set": 39,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-39-phrase-alignment-staging.json",
+      "sha256": "9e611a19fc6eb3f670192619a5c0a7de73d614b90e26f9afc1a5ca503119d37f"
+    },
+    {
+      "set": 40,
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-40-phrase-alignment-staging.json",
+      "sha256": "0d17b9c3fdc2534deea6a35f2317fda231d3cbe8b4f6609b18782add62e48dd8"
+    }
+  ],
+  "reviewNotes": [
+    "PASS here certifies only the independent phrase-alignment artifact review; it does not approve human listening or release.",
+    "Set 26 Q25 and Set 36 Q14 are genuinely remediated with exact conditioned-ASR evidence.",
+    "Set 32 Q32/Q33 is genuinely remediated. Q39/Q40 is not: Q40's answer remains earlier in the audio, while Q39's widened prefix merely makes the window start earlier.",
+    "No generator, source artifact, runtime data, release flag, or audio was modified by this review."
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "canonicalPayloadSha256": "42643207d668f4e1cc7fdd07f4234f5d8f46107e6ff8ec5269bfdc43c855897a",
+    "canonicalization": "UTF-8 JSON, recursively sorted keys, compact separators, integrity field excluded"
+  }
+}

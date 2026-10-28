@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING_MANIFEST",
+  "range": [
+    21,
+    40
+  ],
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "generator": {
+    "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+    "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+  },
+  "batchControl": {
+    "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+    "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+  },
+  "sets": [
+    {
+      "set": 21,
+      "filename": "set-21-guided-evidence-staging.json",
+      "sha256": "f4174a379bfc3fa2b499ed610b489d0ef7123beac367be53f05034b6991fae98"
+    },
+    {
+      "set": 22,
+      "filename": "set-22-guided-evidence-staging.json",
+      "sha256": "c6783f5e3811b0621a678ce728c9a21b7a0b668a04262968a433d5d6dcb31fae"
+    },
+    {
+      "set": 23,
+      "filename": "set-23-guided-evidence-staging.json",
+      "sha256": "df6fac88d7243085338e245db7fb99f73314c31f0cb999c51fc68d088f346dbb"
+    },
+    {
+      "set": 24,
+      "filename": "set-24-guided-evidence-staging.json",
+      "sha256": "0692a6f07f940681ee116cead79a3aa3241bfa2ac1673081b939a229cfa8df86"
+    },
+    {
+      "set": 25,
+      "filename": "set-25-guided-evidence-staging.json",
+      "sha256": "471c610e3ca5d2c7034fc32a09e79bed71c1d2688320089b58e3e1d0233a249d"
+    },
+    {
+      "set": 26,
+      "filename": "set-26-guided-evidence-staging.json",
+      "sha256": "d06a89fe40dc854687ecbe54c3c336f9992873e33db21d58cdcaba04c1c2ea6d"
+    },
+    {
+      "set": 27,
+      "filename": "set-27-guided-evidence-staging.json",
+      "sha256": "595a9acfa82a46ed17d3b65e1aede3ef61d169b5ada25d914f9651b924d4dbb0"
+    },
+    {
+      "set": 28,
+      "filename": "set-28-guided-evidence-staging.json",
+      "sha256": "40533354f1e8dde4ff9439600d7ae4dfd9381308466880e01fc93d69a79cb4c1"
+    },
+    {
+      "set": 29,
+      "filename": "set-29-guided-evidence-staging.json",
+      "sha256": "9355da772cfbb6b0d768c821652effdabf1728de0e633d3f26d3ecdd64d4c82c"
+    },
+    {
+      "set": 30,
+      "filename": "set-30-guided-evidence-staging.json",
+      "sha256": "0c19fa1758df92ff4ac71be71246bd76e3c75cda996c0c3d9c4615c28ef22ea2"
+    },
+    {
+      "set": 31,
+      "filename": "set-31-guided-evidence-staging.json",
+      "sha256": "8f02fb79eec9f4276ed87ba155248b71c2da1606a0f19b6986d81833d5d24a70"
+    },
+    {
+      "set": 32,
+      "filename": "set-32-guided-evidence-staging.json",
+      "sha256": "3193e6ba78957e651b8cd285ea4c428ce2f2f07fcb33abf83afcea1d6e16512d"
+    },
+    {
+      "set": 33,
+      "filename": "set-33-guided-evidence-staging.json",
+      "sha256": "ba5e79fe9373f5e42c066633e86314ea3875b92502bed40a4eb74bdd2e4a05a4"
+    },
+    {
+      "set": 34,
+      "filename": "set-34-guided-evidence-staging.json",
+      "sha256": "d4cbe188579c4a1e74d3e9741fce5ba7acc01a38f5e9d5a90da64579b2419725"
+    },
+    {
+      "set": 35,
+      "filename": "set-35-guided-evidence-staging.json",
+      "sha256": "69f3f12d40f3610d9a2c872e32fae123158e45a9f7ad36bafaf17e0fa1ab42b4"
+    },
+    {
+      "set": 36,
+      "filename": "set-36-guided-evidence-staging.json",
+      "sha256": "68a7770d40134c1b78f1669c640eba4c8b28c7f9e82217b73b6166e717ac7582"
+    },
+    {
+      "set": 37,
+      "filename": "set-37-guided-evidence-staging.json",
+      "sha256": "c4888ebcb24f4cb3a771f1346dc63f6645cecbcc6bb7f96042ca1ff33861d04c"
+    },
+    {
+      "set": 38,
+      "filename": "set-38-guided-evidence-staging.json",
+      "sha256": "d970972816e8ea068b34182488774638fe0ce0c55067f0f34a9b19354dbf7e71"
+    },
+    {
+      "set": 39,
+      "filename": "set-39-guided-evidence-staging.json",
+      "sha256": "a376845c60c4146974556d00691140c1de50220dd21e6ee87eef549936a20a00"
+    },
+    {
+      "set": 40,
+      "filename": "set-40-guided-evidence-staging.json",
+      "sha256": "b97adb5b30a31b5b188a164d647cf0703ce915a3da64a145c1c139a6e5f70edc"
+    }
+  ],
+  "aggregateSha256": "ecc32f769fd33de99b046a46bdfb48c503248b3c6e4fb36211f44a80b674c02e",
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "89a1499c9642a59ea0bc809fa0af1f6a6db28b1dc9179f0af16890b21867e5b2"
+  }
+}

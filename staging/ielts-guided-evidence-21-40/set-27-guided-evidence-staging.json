@@ -1,0 +1,1961 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 27,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-27.ts",
+      "sha256": "1332d47309648f3a417b30c54b9d08c6c901341dfda06cb297739a9104963b80"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Paragraph A",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Why the architect metaphor is incomplete"
+        },
+        "sourceExcerpt": "A bird carrying a twig invites a familiar picture: a small architect executing an internal plan.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph A» y la clave es «Why the architect metaphor is incomplete». La evidencia dice «A bird carrying a twig invites a familiar picture: a small architect executing an internal plan.». La coincidencia semántica se apoya en «architect»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph questions the architect metaphor and explains why the completed nest cannot reveal a pre-held plan.",
+        "ledgerRowSha256": "d4d9a8fb769d84d0509927c9b0ed3f6cc462749633451ce4886a2d091627a8bf",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Paragraph B",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Materials delivered and rearranged"
+        },
+        "sourceExcerpt": "The observed birds carried mostly sticks, together with a smaller number of palm leaves and one recorded piece of grass.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph B» y la clave es «Materials delivered and rearranged». La evidencia dice «The observed birds carried mostly sticks, together with a smaller number of palm leaves and one recorded piece of grass.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph focuses on the materials delivered and on how sticks already in the nest were rearranged during maintenance.",
+        "ledgerRowSha256": "0a9de5d2433194bd81cba1a90880197e5868ce5bf9fbddace07b8fb4f5e63acf",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Unequal roles can still produce a shared result"
+        },
+        "sourceExcerpt": "This division should not be converted into a universal rule for all birds. It demonstrates a narrower point: a shared product can arise from complementary roles rather than equal turns.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «Unequal roles can still produce a shared result». La evidencia dice «It demonstrates a narrower point: a shared product can arise from complementary roles rather than equal turns.». La coincidencia semántica se apoya en «roles», «shared»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Different roles and unequal effort still contribute to one nest.",
+        "ledgerRowSha256": "3fb9e8233a4717d11fd9c5842155a2c38d7599f19f8a69e1c3ea1833e4d44a0d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 2,
+          "correctOptionText": "A communal structure as a collective resource"
+        },
+        "sourceExcerpt": "The outer structure can then function as a public good: no single chamber owner created every protective layer, but several occupants use it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «A communal structure as a collective resource». La evidencia dice «The outer structure can then function as a public good: no single chamber owner created every protective layer, but several occupants use it.». La coincidencia semántica se apoya en «structure»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph explains collective benefit from a shared structure.",
+        "ledgerRowSha256": "0ff63a8d1309d7382d5688f88875e9e3f02dc8ad82e3a1e910546cba62b3977e",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Paragraph E",
+          "correctOptionIndex": 8,
+          "correctOptionText": "Competition within a cooperative setting"
+        },
+        "sourceExcerpt": "Cooperation and competition are therefore not opposite labels from which one must be chosen.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph E» y la clave es «Competition within a cooperative setting». La evidencia dice «Cooperation and competition are therefore not opposite labels from which one must be chosen.». La coincidencia semántica se apoya en «competition»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph describes theft and defence within a shared compound nest.",
+        "ledgerRowSha256": "550575b2d2be3df81db90b511298fedef57e41b609d545527bc3f68d4565fb31",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 1,
+          "correctOptionText": "How observers define and record construction"
+        },
+        "sourceExcerpt": "Field researchers distinguish building, in which material arrives from elsewhere, from maintenance, in which an existing piece is shifted within the structure.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «How observers define and record construction». La evidencia dice «Field researchers distinguish building, in which material arrives from elsewhere, from maintenance, in which an existing piece is shifted within the structure.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph explains operational definitions and recording methods.",
+        "ledgerRowSha256": "590d8e842eb8937ec843cba96da5a09aa355139ed5a1a1d70066c36ffccea04c",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Paragraph G",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Adjustment instead of a complete advance plan"
+        },
+        "sourceExcerpt": "A structure accumulates through choices, failed insertions, repairs and responses to other occupants.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph G» y la clave es «Adjustment instead of a complete advance plan». La evidencia dice «A structure accumulates through choices, failed insertions, repairs and responses to other occupants.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph presents construction as continuing adjustment rather than execution of a fixed design.",
+        "ledgerRowSha256": "c4616a1f22b87117b1b8db79041019f0c8b5129eaa996df11f66d078b53022c0",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "Paragraph A's final sentence explains that a workable form can emerge without a 8 ____; write the complete two-word expression.",
+          "acceptedResponses": [
+            "fixed blueprint"
+          ]
+        },
+        "sourceExcerpt": "The useful question is how a workable form emerges without a fixed blueprint.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Paragraph A's final sentence explains that a workable form can emerge without a 8 ____; write the complete two-word expression.» y acepta «fixed blueprint». La oración fuente dice «The useful question is how a workable form emerges without a fixed blueprint.». Esa oración contiene la respuesta y la conecta con «workable», «form», «without», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The stem explicitly requests the complete two-word expression used for the rejected advance-plan idea. Neither fixed nor blueprint alone supplies that complete expression.",
+        "ledgerRowSha256": "f3af3c8474cc209c9c64dca9c9d9b9ae48da09d088756d97f635bd45217d5716",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "Most of the building material recorded in the study consisted of 9 ____.",
+          "acceptedResponses": [
+            "sticks"
+          ]
+        },
+        "sourceExcerpt": "The observed birds carried mostly sticks, together with a smaller number of palm leaves and one recorded piece of grass.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Most of the building material recorded in the study consisted of 9 ____.» y acepta «sticks». La oración fuente dice «The observed birds carried mostly sticks, together with a smaller number of palm leaves and one recorded piece of grass.». Esa oración contiene la respuesta y la conecta con «recorded», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The one-word response identifies the predominant recorded building material and completes the summary grammatically.",
+        "ledgerRowSha256": "6b0c1adf3d7d234b8a693d1b1b558af445505ad632e292dbe4bbc9480f5c3968",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "In one parakeet study, females devoted relatively more effort to 10 ____.",
+          "acceptedResponses": [
+            "defence"
+          ]
+        },
+        "sourceExcerpt": "In observed monk-parakeet groups, males performed more recorded construction and maintenance than females, while females invested more in defence.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «In one parakeet study, females devoted relatively more effort to 10 ____.» y acepta «defence». La oración fuente dice «In observed monk-parakeet groups, males performed more recorded construction and maintenance than females, while females invested more in defence.». Esa oración contiene la respuesta y la conecta con «parakeet», «females», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The one-word response is unique and grammatical.",
+        "ledgerRowSha256": "26632c906c19f367211d9330e91368104c589814bf7b68c2ddc5811c73d97618",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "In sociable-weaver nests, several chambers lie below a layer of 11 ____.",
+          "acceptedResponses": [
+            "communal thatch",
+            "thatch"
+          ]
+        },
+        "sourceExcerpt": "Sociable weavers build many chambers beneath communal thatch, and investment near a bird's own chamber can also benefit relatives occupying adjacent areas.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «In sociable-weaver nests, several chambers lie below a layer of 11 ____.» y acepta «communal thatch» / «thatch». La oración fuente dice «Sociable weavers build many chambers beneath communal thatch, and investment near a bird's own chamber can also benefit relatives occupying adjacent areas.». Esa oración contiene la respuesta y la conecta con «sociable», «chambers», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Both communal thatch and its exact-span head noun thatch refer to the same layer, fit the sentence grammatically and remain within the two-word limit.",
+        "ledgerRowSha256": "61d193185cb9c863bce8d4868e0c871c99acb2a7b9a495edfb971af78a9894e2",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "Researchers describe such movement as 'theft of 12 ____'; write the complete two-word term from the passage.",
+          "acceptedResponses": [
+            "nesting material"
+          ]
+        },
+        "sourceExcerpt": "A stick already woven into one section may be taken and moved to another, behaviour researchers describe as theft of nesting material.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Researchers describe such movement as 'theft of 12 ____'; write the complete two-word term from the passage.» y acepta «nesting material». La oración fuente dice «A stick already woven into one section may be taken and moved to another, behaviour researchers describe as theft of nesting material.». Esa oración contiene la respuesta y la conecta con «researchers», «describe», «theft», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The stem explicitly requires the complete two-word term in the passage phrase theft of nesting material, excluding the incomplete head noun material and the different concrete phrase a stick.",
+        "ledgerRowSha256": "b90dc3a99665579c3feb0a4a38bd3b4c711b280721c047c8f97b954b3b1278c8",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "Researchers can recognise particular birds by using 13 ____.",
+          "acceptedResponses": [
+            "individual marks",
+            "marks"
+          ]
+        },
+        "sourceExcerpt": "They identify birds through individual marks, record the chamber attended, and distribute observations across different times.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Researchers can recognise particular birds by using 13 ____.» y acepta «individual marks» / «marks». La oración fuente dice «They identify birds through individual marks, record the chamber attended, and distribute observations across different times.». Esa oración contiene la respuesta y la conecta con «birds», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Both passage-derived forms identify the same recognition method and remain grammatical within the two-word limit.",
+        "ledgerRowSha256": "0a39e78027c17df2c2d7f5f889b0f0a4293f9cb3fa5cd01527a4cf79592b52fe",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "fill",
+          "questionText": "Repeated observation shows how 14 ____ from a material may cause a bird to repeat an action or abandon that material.",
+          "acceptedResponses": [
+            "environmental feedback",
+            "feedback"
+          ]
+        },
+        "sourceExcerpt": "Environmental feedback may make a bird repeat a successful action or abandon a material that behaved poorly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Repeated observation shows how 14 ____ from a material may cause a bird to repeat an action or abandon that material.» y acepta «environmental feedback» / «feedback». La oración fuente dice «Environmental feedback may make a bird repeat a successful action or abandon a material that behaved poorly.». Esa oración contiene la respuesta y la conecta con «material», «bird», «repeat», «action», «abandon», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The revised stem anchors the response to feedback from a material and to repeat-or-abandon behaviour; social feedback cannot answer it. The shorter form names the same concept.",
+        "ledgerRowSha256": "e0553885d12e7fa038524895b89e878f33bd88c91fec3cfd4ab66b5183936d81",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "The term ropewalk referred only to the building and never to the manufacturing method.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "The word ropewalk came to describe both this method and the specialised place where it occurred.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The term ropewalk referred only to the building and never to the manufacturing method.», mientras el pasaje dice «The word ropewalk came to describe both this method and the specialised place where it occurred.». Ambos tratan «ropewalk», «method», pero la proposición añade «term», «referred», «only», «building», «never», «manufacturing» donde la fuente especifica «word», «came», «describe», «both», «specialised», «place». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The passage states that the term applied to both method and place.",
+        "ledgerRowSha256": "abdf888c1d9d40a326b45fa95309534914ddffddf5b414ce6515eb892de9d558",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Every historical ropewalk was completely enclosed by a roof and walls.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Some operations used covered structures; others worked on open or partly sheltered walks.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Every historical ropewalk was completely enclosed by a roof and walls.», mientras el pasaje dice «Some operations used covered structures; others worked on open or partly sheltered walks.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «every», «historical», «ropewalk», «completely», «enclosed», «roof» donde la fuente especifica «operations», «used», «covered», «structures», «others», «worked». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The universal enclosure claim is directly contradicted.",
+        "ledgerRowSha256": "bcf0454b64e30569e7d0d1ab6a44437ab8a65ece62d13bc840914bddb155c383",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Private businesses supplied most of the rope required by the Navy.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Private firms provided most naval rope, while the public factory could expand output in wartime and also test or develop products.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Private businesses supplied most of the rope required by the Navy.» y el pasaje dice «Private firms provided most naval rope, while the public factory could expand output in wartime and also test or develop products.». La fuente conserva la misma relación mediante «private», «rope» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "This directly supports the statement.",
+        "ledgerRowSha256": "379698c75118a8faad93040a432065cc25b04c208e66931f3100d8fc290287b0",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "The Charlestown ropewalk was steam-powered when it first opened.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Initially powered by steam, it incorporated innovations associated with Daniel Treadwell.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The Charlestown ropewalk was steam-powered when it first opened.» y el pasaje dice «Initially powered by steam, it incorporated innovations associated with Daniel Treadwell.». La fuente conserva la misma relación mediante «steam», «powered» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Initially refers to the opening configuration of the Charlestown ropewalk.",
+        "ledgerRowSha256": "698fb448adb0f5bb3b24e676459fe220073651420de0818cc7472cb3e9b93a3c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "The Jones Point ropewalk occupied a single floor.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "It was a narrow, two-storey structure about 400 yards long, serving the maritime trade of the nearby port.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The Jones Point ropewalk occupied a single floor.», mientras el pasaje dice «It was a narrow, two-storey structure about 400 yards long, serving the maritime trade of the nearby port.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «jones», «point», «ropewalk», «occupied», «single», «floor» donde la fuente especifica «narrow», «two», «storey», «structure», «about», «400». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Two storeys contradicts a single floor.",
+        "ledgerRowSha256": "7a5c24878e526f40b98f1f728651c99ade26288cfd434c493ccda96a83149d28",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "Researchers linked a dark archaeological mark at Jones Point to tar used on rope.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Investigators interpreted the stain as probably resulting from tar applied to cordage to resist decay in seawater.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Researchers linked a dark archaeological mark at Jones Point to tar used on rope.» y el pasaje dice «Investigators interpreted the stain as probably resulting from tar applied to cordage to resist decay in seawater.». La fuente conserva la misma relación mediante «tar» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The archaeological interpretation matches the statement.",
+        "ledgerRowSha256": "5c5574b2656771ddc53311508776ae39a84d613cd2ba1337135fabed1385501c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "was recorded as extending 1,325 feet",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "sourceExcerpt": "The building followed what is now Chelsea Street for 1,325 feet and could produce rope up to roughly a quarter of a mile long.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «was recorded as extending 1,325 feet» y la clave es «Location A». La evidencia dice «The building followed what is now Chelsea Street for 1,325 feet and could produce rope up to roughly a quarter of a mile long.». La coincidencia semántica se apoya en «325», «feet»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The measurement belongs to Charlestown.",
+        "ledgerRowSha256": "d468be59d6fb9b72a8c58ce8fa928e1a59dc5a50223468b1d29954f5f287e0b0",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "was constructed close to the port of Alexandria",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "sourceExcerpt": "At Jones Point near Alexandria, Virginia, Josiah Davis built a different ropewalk in 1833.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «was constructed close to the port of Alexandria» y la clave es «Location B». La evidencia dice «At Jones Point near Alexandria, Virginia, Josiah Davis built a different ropewalk in 1833.». La coincidencia semántica se apoya en «alexandria»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The location identifies Jones Point.",
+        "ledgerRowSha256": "ffaaa935549124de879bf3f67c6c7b4b78043baa15ef881aa2f5b649583dd63a",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "left foundations and a central stain for archaeologists to examine",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "sourceExcerpt": "Excavation exposed foundation remains and a black stain running along the centre.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «left foundations and a central stain for archaeologists to examine» y la clave es «Location B». La evidencia dice «Excavation exposed foundation remains and a black stain running along the centre.». La coincidencia semántica se apoya en «stain»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "These archaeological traces belong to Jones Point.",
+        "ledgerRowSha256": "d2440572a694ab965516ce39e05d27a508cd838339951aa2af961539996e7608",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "used granite and brick in an early fireproofing effort",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "sourceExcerpt": "Granite and brick construction made it notable as an early attempt at fireproofing.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «used granite and brick in an early fireproofing effort» y la clave es «Location A». La evidencia dice «Granite and brick construction made it notable as an early attempt at fireproofing.». La coincidencia semántica se apoya en «granite», «brick», «early», «fireproofing»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "This feature is attributed to Charlestown.",
+        "ledgerRowSha256": "1272c9e73a8ec606293ab259ceb8b912f4ff2d5ab174dde3fbcc4515b17a7959",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "could be hundreds or thousands of feet long because of the manufacturing process",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "sourceExcerpt": "Historical ropewalks could extend for hundreds or even thousands of feet, and a building had to accommodate the rope being laid.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «could be hundreds or thousands of feet long because of the manufacturing process» y la clave es «Location C». La evidencia dice «Historical ropewalks could extend for hundreds or even thousands of feet, and a building had to accommodate the rope being laid.». La coincidencia semántica se apoya en «hundreds», «thousands», «feet»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The plural statement describes ropewalks generally.",
+        "ledgerRowSha256": "e8299966fc48d6bd9f3ab6207f3bbc0b96e87c9b1b3377ab994cb8c0c4fad3fb",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "later became an informal place for local children to play",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "sourceExcerpt": "A later recollection described boys running through the abandoned building and playing on a large reel, evidence of an industrial space acquiring informal uses after production ended.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «later became an informal place for local children to play» y la clave es «Location B». La evidencia dice «A later recollection described boys running through the abandoned building and playing on a large reel, evidence of an industrial space acquiring informal uses after production ended.». La coincidencia semántica se apoya en «later», «informal»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The recollection concerns Jones Point.",
+        "ledgerRowSha256": "f0ea3a654c40fac0154ecd0dba06987ad2304498b756cad11ae1e43d0aba2468",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "The writer presents lower-cost transport to hospital as the principal aim of community paramedicine.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "The purpose is not simply to replace an ambulance journey with a cheaper journey. It is to intervene earlier, improve access and decide which setting can meet a need safely.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The writer presents lower-cost transport to hospital as the principal aim of community paramedicine.», mientras el pasaje dice «The purpose is not simply to replace an ambulance journey with a cheaper journey.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «writer», «presents», «lower», «cost», «transport», «hospital» donde la fuente especifica «purpose», «simply», «replace», «ambulance», «journey», «cheaper». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The writer explicitly rejects cheaper transport as the principal purpose and instead names earlier intervention, access and safe setting choice.",
+        "ledgerRowSha256": "8dbdc253a41f171213f6d20db2911a4495e2e0cd4c91250ee80907fa105dc0c0",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Variation between programmes may be useful because communities have different service gaps.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Such variation may be useful because local gaps differ.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Variation between programmes may be useful because communities have different service gaps.» y el pasaje dice «Such variation may be useful because local gaps differ.». La fuente conserva la misma relación mediante «variation», «useful», «because», «gaps» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The statement directly reflects the writer's explanation of why variation can be useful.",
+        "ledgerRowSha256": "7ecaf4d61917d1d5add4e2ea30c6ea6c96de1d3606f358c6015dd7563db8ef80",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The writer treats scope of practice as extending beyond a catalogue of clinical procedures.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Scope of practice therefore concerns more than a list of clinical procedures.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The writer treats scope of practice as extending beyond a catalogue of clinical procedures.» y el pasaje dice «Scope of practice therefore concerns more than a list of clinical procedures.». La fuente conserva la misma relación mediante «scope», «practice», «clinical», «procedures» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The writer explicitly says that scope of practice is broader than a procedure list.",
+        "ledgerRowSha256": "1c5f7f15048d99a906b574675133183920ead8c723e9b58521487bc9c47a4e63",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "The systematic review found that most training programmes included a formal examination.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "The systematic review found that many programme reports described training incompletely, and reported content ranged from acute assessment to communication, leadership and knowledge of community services.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The systematic review found that most training programmes included a formal examination.». El pasaje sí ofrece el contexto «The systematic review found that many programme reports described training incompletely, and reported content ranged from acute assessment to communication, leadership and knowledge of community services.», pero en el texto completo no especifica «included», «formal», «examination» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The passage describes incomplete reporting and training content, but gives no information about whether most programmes included a formal examination.",
+        "ledgerRowSha256": "39a8d1ce959fdca581bb5b8477b917fe41fc110d5eda4d45372383b498bb0983",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "Additional activity can still be worthwhile when it addresses needs that were previously neglected.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "This additional activity can still be valuable if it meets neglected needs or prevents later harm.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Additional activity can still be worthwhile when it addresses needs that were previously neglected.» y el pasaje dice «This additional activity can still be valuable if it meets neglected needs or prevents later harm.». La fuente conserva la misma relación mediante «additional», «activity», «still», «needs», «neglected» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The statement paraphrases the writer's explicit qualification about the value of additional care.",
+        "ledgerRowSha256": "6ca0466b094be71040b041c89bb186afdd182a87d6beeaf0ffe64d2ea65258de",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "The ambulance trust followed the reported pilot for exactly two years.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Its annual report presented encouraging early figures from a particular pilot.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The ambulance trust followed the reported pilot for exactly two years.». El pasaje sí ofrece el contexto «Its annual report presented encouraging early figures from a particular pilot.», pero en el texto completo no especifica «followed», «exactly», «two», «years» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The writer mentions a limited comparison period but gives no exact two-year follow-up duration.",
+        "ledgerRowSha256": "09b46a8246c2f41af641bd9e81fd348f97945c57be390d086988a91f8e4eee75",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "Paying providers according to the number of home visits is sufficient to demonstrate benefit.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Conversely, paying for home visits alone can reward volume without showing benefit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Paying providers according to the number of home visits is sufficient to demonstrate benefit.», mientras el pasaje dice «Conversely, paying for home visits alone can reward volume without showing benefit.». Ambos tratan «paying», «home», «visits», «benefit», pero la proposición añade «providers», «number», «sufficient», «demonstrate» donde la fuente especifica «conversely», «alone», «reward», «volume», «without», «showing». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The writer states that visit volume can be rewarded without demonstrating benefit.",
+        "ledgerRowSha256": "da1c2d1a4c9980cf3426f469482a686000905916de9ded9f19e4af656d162151",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "Which feature most clearly shows how community paramedicine broadens the conventional emergency-response model?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "It combines scheduled visits and referrals with responses to recurring emergency use."
+        },
+        "sourceExcerpt": "Some programmes schedule home visits, receive referrals from primary care or follow people who repeatedly call emergency services.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which feature most clearly shows how community paramedicine broadens the conventional emergency-response model?» y la clave es «It combines scheduled visits and referrals with responses to recurring emergency use.». La evidencia dice «Some programmes schedule home visits, receive referrals from primary care or follow people who repeatedly call emergency services.». La coincidencia semántica se apoya en «emergency», «visits», «referrals»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The examples show planned and referral-led activity alongside work with recurring emergency callers.",
+        "ledgerRowSha256": "70214893dbeb530187e3bc9d400d531c45dbe9392e87ffdc83f0a0a65fe3b88e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "According to paragraph B, what should analysts establish before evaluating whether a programme works?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Its target population, activities and relevant alternative"
+        },
+        "sourceExcerpt": "Before asking whether community paramedicine works, analysts must specify for whom, through which activities and against what alternative.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «According to paragraph B, what should analysts establish before evaluating whether a programme works?» y la clave es «Its target population, activities and relevant alternative». La evidencia dice «Before asking whether community paramedicine works, analysts must specify for whom, through which activities and against what alternative.». La coincidencia semántica se apoya en «analysts», «before», «whether», «works», «activities», «alternative»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The sentence identifies the population, activities and comparator that must be specified.",
+        "ledgerRowSha256": "5b17980b797e3af8084c4d046343f6e05ada410024d3f5874e6008f38cd85d55",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "What risk does paragraph C associate with adding tasks before institutional boundaries are clear?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "The programme may create an extra handoff instead of continuity."
+        },
+        "sourceExcerpt": "Programmes that add tasks without clarifying these boundaries may create another handoff rather than genuine continuity.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What risk does paragraph C associate with adding tasks before institutional boundaries are clear?» y la clave es «The programme may create an extra handoff instead of continuity.». La evidencia dice «Programmes that add tasks without clarifying these boundaries may create another handoff rather than genuine continuity.». La coincidencia semántica se apoya en «tasks», «boundaries», «create», «handoff», «continuity»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The paragraph explicitly identifies an additional handoff as the risk of unclear boundaries.",
+        "ledgerRowSha256": "086325c082fd106932734fd81b1df1421cddd4d289bb9c915e2dfaff83cfa0a0",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "What training approach does the writer favour?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Core competencies combined with programme-specific preparation"
+        },
+        "sourceExcerpt": "A useful framework would identify core competencies while allowing additional preparation for the population and partners in each programme.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What training approach does the writer favour?» y la clave es «Core competencies combined with programme-specific preparation». La evidencia dice «A useful framework would identify core competencies while allowing additional preparation for the population and partners in each programme.». La coincidencia semántica se apoya en «core», «competencies», «programme», «preparation»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The writer supports a shared core with preparation tailored to the programme.",
+        "ledgerRowSha256": "3d645201d086c15e5db153b176a04162ce99235baa9a733fbeb0f671a36147c3",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "How should early pilot results be treated?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "As a reason for further testing rather than universal proof"
+        },
+        "sourceExcerpt": "Those observations can justify further testing, but they cannot establish that the same results will occur in every region.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «How should early pilot results be treated?» y la clave es «As a reason for further testing rather than universal proof». La evidencia dice «Those observations can justify further testing, but they cannot establish that the same results will occur in every region.». La coincidencia semántica se apoya en «results», «further», «testing»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The pilot is grounds for further testing, not universal generalisation.",
+        "ledgerRowSha256": "beff96b09ff3be26f92e07df067c6747d6b68642f356b172d46798982bd003b0",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "Why should an evaluation keep unenrolled patients and unmet needs visible?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "To avoid judging fairness only among programme participants"
+        },
+        "sourceExcerpt": "It also keeps unenrolled patients and unmet needs visible.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why should an evaluation keep unenrolled patients and unmet needs visible?» y la clave es «To avoid judging fairness only among programme participants». La evidencia dice «It also keeps unenrolled patients and unmet needs visible.». La coincidencia semántica se apoya en «unenrolled», «patients», «unmet», «needs», «visible»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Keeping non-participants and unmet need in view prevents an assessment of fairness from being limited to those enrolled.",
+        "ledgerRowSha256": "e8b840b2c9ed3c6b3086534d4e0da114801bb72b2ccfefc2fb26abd34863acf4",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "Which statement best summarises the writer's conclusion?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Programmes should be judged through explicit design and system-wide evidence."
+        },
+        "sourceExcerpt": "Community paramedicine should be judged as a designed system, not as a job title with assumed effects.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which statement best summarises the writer's conclusion?» y la clave es «Programmes should be judged through explicit design and system-wide evidence.». La evidencia dice «Community paramedicine should be judged as a designed system, not as a job title with assumed effects.». La coincidencia semántica se apoya en «judged», «system»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The conclusion requires explicit programme design and evidence across the service pathway.",
+        "ledgerRowSha256": "7901866a784a94150cf6d0ef5aefb12342f148878aeed57d2b0a861a55ffdb72",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/reading/set27-reading-content-v1.0.6.json",
+        "sha256": "63b340c5a945b3b54ec2b1bd9ad2c5da036e0adf06c3788b35865aee164099e1"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "9ab4098e8da824aeefe2c188f8ce14d0f13cc864d04109f410f174dcb6b89fed",
+      "canonicalQuestionProjectionSha256": "3b39bf947fe5d9c00783942c394259ad2210ea104d26b7c5d4f4fb97b44074c9"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Destination country: ______",
+          "acceptedResponses": [
+            "Canada"
+          ]
+        },
+        "evidenceSegment": "P1-T04",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Yes, Canada. The American address belongs to another relative. This parcel is going to Vancouver, and the postcode on the label is the Canadian one.",
+        "timecode": {
+          "startFrame": 3168025,
+          "endFrame": 8655484,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.837302,
+          "endSeconds": 196.269478,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "31778daba8cf5e370e3ac5b18c24be08acbac54d5233682af30441549e493d02",
+        "planSegmentTextSha256": "2e0c14ccfbec9a37b251a21176961e9c511a404722daffb38648ea7f8806569d"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Main item: wool ______",
+          "acceptedResponses": [
+            "scarf"
+          ]
+        },
+        "evidenceSegment": "P1-T06",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is a wool scarf. I nearly wrote just gift, but the help note said to name the item, so wool scarf would be accurate.",
+        "timecode": {
+          "startFrame": 3168025,
+          "endFrame": 8655484,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.837302,
+          "endSeconds": 196.269478,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4aa25c1293797c0b1b9ff5b53143ef41d546e6852515c800b9345506688f1443",
+        "planSegmentTextSha256": "81979fdee0dfab24d3e1c38755c16167bbfe3ba2f5459520df232f39baaf7c69"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Parcel weight: ______ kg",
+          "acceptedResponses": [
+            "1.8"
+          ]
+        },
+        "evidenceSegment": "P1-T07",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The scale shows one point eight kilograms. That replaces your estimate of two and a half, which included a bag you are keeping.",
+        "timecode": {
+          "startFrame": 3168025,
+          "endFrame": 8655484,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.837302,
+          "endSeconds": 196.269478,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "00d2b7cb43a3b86b50a7dc56c20a2ee0cd6b5dbaca54e4847b15746dda00adaf",
+        "planSegmentTextSha256": "cf01c1f9a5e21b9ba43506e1c73bf80bba2312615ae48320185879230e4eac1c"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Declared value: NZ$ ______",
+          "acceptedResponses": [
+            "75",
+            "seventy-five"
+          ]
+        },
+        "evidenceSegment": "P1-T08",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Please record one point eight kilograms, then. The scarf cost sixty dollars and the puzzle was fifteen, so the total declared value is seventy-five New Zealand dollars.",
+        "timecode": {
+          "startFrame": 3168025,
+          "endFrame": 8655484,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.837302,
+          "endSeconds": 196.269478,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a4e096c5c93353ec9cb93f71a9e9e6c9fdc5e08797f5ef0071a37b1783b484e7",
+        "planSegmentTextSha256": "e522c795313fba6b6b38ea7e6aea4bf4db1e25970440babcba5bc7f589f8a977"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Sender street: Aroha ______",
+          "acceptedResponses": [
+            "Lane"
+          ]
+        },
+        "evidenceSegment": "P1-T10",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Aroha Lane is correct. Road was my old address. The house number remains fourteen, which is probably why I missed the error.",
+        "timecode": {
+          "startFrame": 3168025,
+          "endFrame": 8655484,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.837302,
+          "endSeconds": 196.269478,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2947a3fac3ca592be9edae362ea272ae804c1b361f177b65de87dcb7a8ea7a98",
+        "planSegmentTextSha256": "95b9f3129ec4e7b8649d09a15640145d2ce8e0601a0c04414a7ecd57e3b66dc6"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Selected service: ______ Track",
+          "acceptedResponses": [
+            "Economy"
+          ]
+        },
+        "evidenceSegment": "P1-T12",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "My cousin works away from home on weekdays, so the signature could cause difficulty. Economy Track is fine; I care more about being able to follow the parcel than about the shortest time.",
+        "timecode": {
+          "startFrame": 3168025,
+          "endFrame": 8655484,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.837302,
+          "endSeconds": 196.269478,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7f470ce3ab1647e35a33f898836dc0a6b28a185ff3070e74f6a03f0e795f44ba",
+        "planSegmentTextSha256": "9bc03194a640daabd7a189edaeaf0266db8da6197212b61004d598fd6a5aa940"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Which item must Moana remove from the parcel?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the honey"
+        },
+        "evidenceSegment": "P1-T13",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Before payment, let us check every item against the current destination list. You have the scarf, a small wooden puzzle, a watercolour set and this jar of honey. The list on my screen says the honey cannot be accepted in this parcel.",
+        "timecode": {
+          "startFrame": 10363884,
+          "endFrame": 14892160,
+          "sampleRateHz": 44100,
+          "startSeconds": 235.008707,
+          "endSeconds": 337.690703,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f9318bc6560cee26a64dbecb66bbda721b1f7864468b27e9095a6144e62b19cf",
+        "planSegmentTextSha256": "0b6fb96e148347180a8b2f22fe3d9551cc1076d320a126a633b84b3bef2f8e61"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "Why did Moana think the removed item might be accepted?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "She had sent it within New Zealand."
+        },
+        "evidenceSegment": "P1-T14",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Then I will take the honey out. I have posted it within New Zealand before, so I assumed it would be acceptable overseas as well.",
+        "timecode": {
+          "startFrame": 10363884,
+          "endFrame": 14892160,
+          "sampleRateHz": 44100,
+          "startSeconds": 235.008707,
+          "endSeconds": 337.690703,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0ac32d47f99897b35e700e13b1903a6cff8e6311a2736d56c4ff6fff462f2f57",
+        "planSegmentTextSha256": "a86942577beaed8d3999489b417fbc3248dff5874c87930e3850a2a8857e8293"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "How will the final parcel labels be produced?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "The counter printer will produce them."
+        },
+        "evidenceSegment": "P1-T19",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Do not add another handwritten label. The counter printer produces the final address and customs labels together. I will place them on the largest face of the box and leave the seams clear.",
+        "timecode": {
+          "startFrame": 10363884,
+          "endFrame": 14892160,
+          "sampleRateHz": 44100,
+          "startSeconds": 235.008707,
+          "endSeconds": 337.690703,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "760024d5ded1a4e3f3fccae68e37c90c4436e877d7d388798639b959f60936ea",
+        "planSegmentTextSha256": "34bbf3051ee5a1d1b3a32adca13eeb5ac5e3ccd3dd8844b9a794f25b5ba53e68"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "What does Callum say remains Moana’s responsibility?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Giving an accurate contents statement"
+        },
+        "evidenceSegment": "P1-T21",
+        "renderedChunk": "chunk-05",
+        "audiblePhrase": "Exactly. Confirm the declaration, and I will print the labels today. Keep the tracking receipt, but remember that the sender remains responsible for an accurate contents statement.",
+        "timecode": {
+          "startFrame": 10363884,
+          "endFrame": 14892160,
+          "sampleRateHz": 44100,
+          "startSeconds": 235.008707,
+          "endSeconds": 337.690703,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a45ca1a29a36e264c9afca24af3091b5e02eb4596e31978e028d71eaf319f1a6",
+        "planSegmentTextSha256": "f46eb71c6df77e30c2c574a9275bd85fc8af83ea08df289e9f5b0a54a5df88f4"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Where is the changing room?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B"
+        },
+        "evidenceSegment": "P2-S03",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Look at the plan. From the entrance, turn right before reception and follow the path to the eastern wall. The changing room is the long public room immediately south of the smaller staff store.",
+        "timecode": {
+          "startFrame": 18081143,
+          "endFrame": 23773325,
+          "sampleRateHz": 44100,
+          "startSeconds": 410.003243,
+          "endSeconds": 539.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a646ce18866edddc359e037598d0f3bf6d19e66824586b27c5e69a6050ebf04e",
+        "planSegmentTextSha256": "f8ea2465c16bcf748c498b7086d94c5d742ba687eaa9ece95c89635742f58a11"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "Where is the first-aid room?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "F"
+        },
+        "evidenceSegment": "P2-S04",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Return to reception and take the path on your left. Pass the ticket office nearest reception, then turn slightly north. The first-aid room is below the centre of the shallow end. Do not continue to the far western boundary.",
+        "timecode": {
+          "startFrame": 18081143,
+          "endFrame": 23773325,
+          "sampleRateHz": 44100,
+          "startSeconds": 410.003243,
+          "endSeconds": 539.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c25d1e7472c2bf382ec33bfd38f80aa1cc55648be78b4340eec21127af6764de",
+        "planSegmentTextSha256": "ab52c4700def77364cd0ae522c9bb594d5b54dd918f1e25f5c4b10e88aa01d4c"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Where is the accessible ramp?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A"
+        },
+        "evidenceSegment": "P2-S05",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "From first aid, continue north-west along the boundary. The accessible ramp is directly below the shallow end, at the far western edge. Nearby steps are shorter, but only the ramp has a handrail and gradual slope.",
+        "timecode": {
+          "startFrame": 18081143,
+          "endFrame": 23773325,
+          "sampleRateHz": 44100,
+          "startSeconds": 410.003243,
+          "endSeconds": 539.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a189b10130c637a75b87099496636c3d0309f162e37007b6f34e78d3e3c9c551",
+        "planSegmentTextSha256": "b9b78d9064dd95cc7dbfffa75f92f2624e5742bf84cb00c99af10ab177d08442"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "Where is the tide gate?",
+          "correctOptionIndex": 7,
+          "correctOptionText": "H"
+        },
+        "evidenceSegment": "P2-S06",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "The main lap lanes occupy the centre of the pool. The tide gate is beyond their northern end, just outside the upper-right corner of the lane area. Staff operate it; swimmers must never try to move it, even when the water appears calm.",
+        "timecode": {
+          "startFrame": 18081143,
+          "endFrame": 23773325,
+          "sampleRateHz": 44100,
+          "startSeconds": 410.003243,
+          "endSeconds": 539.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6ee514c316740c413680becaf9e66ec28c31c873027d9fdf17fa3db3b0539b68",
+        "planSegmentTextSha256": "768f6c5e64d76807a1d49ae166872beefe6b48461713b0ff00f43dc2576edad7"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Where is the family deck?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "D"
+        },
+        "evidenceSegment": "P2-S07",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Now look south-east of reception. Two possible places sit near the street entrance. The family deck is the more central one, with benches and a clear view of the shallow area. The other place, farther east near the boundary, is only a delivery bay.",
+        "timecode": {
+          "startFrame": 18081143,
+          "endFrame": 23773325,
+          "sampleRateHz": 44100,
+          "startSeconds": 410.003243,
+          "endSeconds": 539.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "07c2d24af86589e116e05be37fec5a5d38f616e9f6c7baeacc9aada9316a0887",
+        "planSegmentTextSha256": "23dcf2db565c427998d6953c4dabda8d0d92b20366e51eba00bff4d02e609032"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Where are the equipment racks?",
+          "correctOptionIndex": 6,
+          "correctOptionText": "G"
+        },
+        "evidenceSegment": "P2-S08",
+        "renderedChunk": "chunk-08",
+        "audiblePhrase": "Finally, the equipment racks are south-west of reception, closer to the street entrance than the first-aid room. Personal property belongs in lockers; the racks are for kickboards and pool wheelchairs.",
+        "timecode": {
+          "startFrame": 18081143,
+          "endFrame": 23773325,
+          "sampleRateHz": 44100,
+          "startSeconds": 410.003243,
+          "endSeconds": 539.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "85d0416deb69746fc33dc67d6a554dc0cbd81ab1220b8bb27bc6842706eac4a0",
+        "planSegmentTextSha256": "2b4fba7a78b88a7c996f4d72d28b31026f751c7263c3c012dbb0fc727e279fc9"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "fill",
+          "questionText": "What colour flag shows that a section is closed?",
+          "acceptedResponses": [
+            "red"
+          ]
+        },
+        "evidenceSegment": "P2-S11",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "If a section closes, staff raise a red flag beside reception. The electronic sign repeats the message, but the flag is the quickest answer if you are already on the deck. A yellow flag means extra caution, not closure.",
+        "timecode": {
+          "startFrame": 25490560,
+          "endFrame": 31059229,
+          "sampleRateHz": 44100,
+          "startSeconds": 578.017234,
+          "endSeconds": 704.290907,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1b77cb4eba1a87969051eff8e156e99f82b0dacf7df0808cb2c122d19cad18bd",
+        "planSegmentTextSha256": "b544a8f4935a72f24328f0fedc1626d512b40cdc1e210d54c4dbfab6c00f884b"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "fill",
+          "questionText": "What should visitors read before using the northern path?",
+          "acceptedResponses": [
+            "tide board"
+          ]
+        },
+        "evidenceSegment": "P2-S12",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "Before walking to the northern path, read the tide board. It displays the staff inspection time as well as the expected tide. A phone forecast may be useful before travelling, but the tide board gives the decision for this facility.",
+        "timecode": {
+          "startFrame": 25490560,
+          "endFrame": 31059229,
+          "sampleRateHz": 44100,
+          "startSeconds": 578.017234,
+          "endSeconds": 704.290907,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a9ae12c2a9511722531b804876618f928579222e7794fc01ff12e7a69e593e61",
+        "planSegmentTextSha256": "4b4f222004bbff783315b4384cf8b682e0100ae6ecaaa549d198e3c50b84d0b4"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "fill",
+          "questionText": "What should swimmers use when entering by the ramp?",
+          "acceptedResponses": [
+            "handrail",
+            "the handrail"
+          ]
+        },
+        "evidenceSegment": "P2-S13",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "At the accessible ramp, enter facing forward and use the handrail. The painted edge is a visual guide; it is not something to grip. If you need the pool wheelchair, ask at reception rather than moving one from the equipment rack yourself.",
+        "timecode": {
+          "startFrame": 25490560,
+          "endFrame": 31059229,
+          "sampleRateHz": 44100,
+          "startSeconds": 578.017234,
+          "endSeconds": 704.290907,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b65deb5e435a35a9909039870f4250052ee5ac1581804b8cd15da2eda54b193d",
+        "planSegmentTextSha256": "666937fbe4c6062054d7cfad2c61ed57107689033d33f658f02bba3b2269d129"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "fill",
+          "questionText": "What do children need if they enter outside a coached lesson?",
+          "acceptedResponses": [
+            "adult supervision",
+            "supervision"
+          ]
+        },
+        "evidenceSegment": "P2-S18",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "To recap: a red flag shows closure, read the tide board, use the ramp handrail, and remember that children require adult supervision. We will now walk the safe southern route.",
+        "timecode": {
+          "startFrame": 31103329,
+          "endFrame": 31733451,
+          "sampleRateHz": 44100,
+          "startSeconds": 705.290907,
+          "endSeconds": 719.579388,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a580a34fb464f0d8aba7cd3e53d900457d240b8803f28df36f571dd2656632b0",
+        "planSegmentTextSha256": "2f6a1a8b0d175a85bdda6b7b4dbf93124a3838c9870facf64b32dfeebf0c9550"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "Which source will the trainees use to check earliest online appearance?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "a reverse-image search"
+        },
+        "evidenceSegment": "P3-T03",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "First, we need the earliest known online appearance. I will run a reverse-image search. If an older copy exists, the current post may be recycling an image from another event.",
+        "timecode": {
+          "startFrame": 34940085,
+          "endFrame": 38925565,
+          "sampleRateHz": 44100,
+          "startSeconds": 792.292177,
+          "endSeconds": 882.665873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9405873c6b1f9ee4414b3f88abc9d25fb9d28ab3d002f61a78e5bc7ad309a386",
+        "planSegmentTextSha256": "2878da7135b7b3d580ceaf546e79446289a5a69e343dd6635ca65a54aabbca97"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "Which source will the trainees use to check camera time?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "image metadata"
+        },
+        "evidenceSegment": "P3-T04",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "For the camera time, I will inspect the image metadata. A timestamp can be altered or stripped, so it is a clue rather than proof.",
+        "timecode": {
+          "startFrame": 34940085,
+          "endFrame": 38925565,
+          "sampleRateHz": 44100,
+          "startSeconds": 792.292177,
+          "endSeconds": 882.665873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "48de44e1151abef07fd223a25f1aac95329cd4560c79ee6a83b0542938c5f816",
+        "planSegmentTextSha256": "227bc4158dfb738a2c8e50971c1f9bb54e5918dc2fc5a9d75bc049c1f6cb1249"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "Which source will the trainees use to check weather at the claimed hour?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "a weather archive"
+        },
+        "evidenceSegment": "P3-T05",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "The sky in the photograph is bright, yet the caption says heavy rain was falling at seven. We can compare that visual clue with a weather archive for the claimed place and hour.",
+        "timecode": {
+          "startFrame": 34940085,
+          "endFrame": 38925565,
+          "sampleRateHz": 44100,
+          "startSeconds": 792.292177,
+          "endSeconds": 882.665873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "40d2fc9b46447ca863d54105beaeb1f2b37145cc4e3e50216e074aff1d961c43",
+        "planSegmentTextSha256": "b6850e7a776df741fbb24d90530f5fae1f64c809841f1fb9f4ae289221d0b1ff"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "Which source will the trainees use to check fixed landmarks?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "a street map"
+        },
+        "evidenceSegment": "P3-T06",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "For location, the shop sign is blurred, but the mural and the shape of the junction are distinctive. A street map with recent imagery should let us compare those fixed landmarks.",
+        "timecode": {
+          "startFrame": 34940085,
+          "endFrame": 38925565,
+          "sampleRateHz": 44100,
+          "startSeconds": 792.292177,
+          "endSeconds": 882.665873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1343462ce3fafbb49117d460808ac7134deb38566059c4df01c33c523a674349",
+        "planSegmentTextSha256": "22e5b5f902d3c934fe3d48049e56b446a113aad03377aa151251c03edbab7692"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "Which source will the trainees use to check first-hand context and permission?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "the original uploader"
+        },
+        "evidenceSegment": "P3-T07",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "I will contact the original uploader, ask what they saw and request the uncompressed file. We can also confirm permission.",
+        "timecode": {
+          "startFrame": 34940085,
+          "endFrame": 38925565,
+          "sampleRateHz": 44100,
+          "startSeconds": 792.292177,
+          "endSeconds": 882.665873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7cc2f189e4c03b4ecce8079762410f61f341267d3dc4111b88dcc90a10811831",
+        "planSegmentTextSha256": "b5a26e82a7f54e6693d95456a4d3a4421c09e8477e367d2c058e6d2ea9f33544"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "What does the reverse-image search reveal?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "The picture appeared online eighteen months earlier."
+        },
+        "evidenceSegment": "P3-T09",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "I have the reverse search result. The same photograph appeared eighteen months ago on a community blog in Halifax. It was cropped differently, but the bus, awning and water pattern are identical.",
+        "timecode": {
+          "startFrame": 40631763,
+          "endFrame": 46046578,
+          "sampleRateHz": 44100,
+          "startSeconds": 921.35517,
+          "endSeconds": 1044.140091,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "03382d4ed7a909cc0fc9494fb0e1670f640fa01a7fc46125597606a3ab5d33c5",
+        "planSegmentTextSha256": "551ccca0354bce9af97b15b8ec5ea14042114d46cc85265dfde825944aecb2e7"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "What conclusion do they draw from the missing location metadata?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "The image does not establish its location."
+        },
+        "evidenceSegment": "P3-T12",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Missing coordinates do not prove manipulation. Devices or platforms may omit them. The file does not establish location; that is all we can conclude.",
+        "timecode": {
+          "startFrame": 40631763,
+          "endFrame": 46046578,
+          "sampleRateHz": 44100,
+          "startSeconds": 921.35517,
+          "endSeconds": 1044.140091,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bc7f2b2a3ba16b2d4dca2596e25a7ccabe1b17f52218c9435fdec2b69a96d2e4",
+        "planSegmentTextSha256": "43e174276ef3df0a5b83a8567ce88df1fcc13a72c5f80f5d2187dec3769d1762"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "What corrects Declan’s first interpretation of the red vehicle?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the visible company logo"
+        },
+        "evidenceSegment": "P3-T15",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "The correction matters. Colour suggested public transport, but the visible company logo and route context are stronger evidence.",
+        "timecode": {
+          "startFrame": 40631763,
+          "endFrame": 46046578,
+          "sampleRateHz": 44100,
+          "startSeconds": 921.35517,
+          "endSeconds": 1044.140091,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "733ce9899f78f908fd9734a67353efc27157077b789f2db7556e5eabe16626e7",
+        "planSegmentTextSha256": "77b17fb7875fa710565eedd85a14a49aaefc23c89187812c44bee3cae2f8436e"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "What do the trainees decide to do next?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Refer the publication decision to the editor."
+        },
+        "evidenceSegment": "P3-T19",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "We should hold the image, preserve our evidence and alert the news editor. The editor can choose a correction, verification note or no article.",
+        "timecode": {
+          "startFrame": 46073038,
+          "endFrame": 49631731,
+          "sampleRateHz": 44100,
+          "startSeconds": 1044.740091,
+          "endSeconds": 1125.436077,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "da7280fccf35f8cbb6f0ca581a9b16872e33b74eb426219322fddbf03239c8d0",
+        "planSegmentTextSha256": "e725a47c03f6afe67882861de1af3d2144bc31cdc54b8df33bdc488627d5e5cd"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "Which statement best describes their verified finding?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "It is a genuine older image with a false time and place."
+        },
+        "evidenceSegment": "P3-T23",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Exactly. The strongest result is not simply fake image. It is a genuine older photograph presented with a false current location and time. That description is both more precise and easier to defend.",
+        "timecode": {
+          "startFrame": 46073038,
+          "endFrame": 49631731,
+          "sampleRateHz": 44100,
+          "startSeconds": 1044.740091,
+          "endSeconds": 1125.436077,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "540da2336b22172f15dba8bcb2c87de177a205f793ea871d55552745e480786a",
+        "planSegmentTextSha256": "29aef0e749b49740e0353ba158b23fe863cd04bdd0724249f81181fb565aafc0"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Cryoconite begins with fine mineral ______ and organic particles.",
+          "acceptedResponses": [
+            "dust"
+          ]
+        },
+        "evidenceSegment": "P4-S02",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Cryoconite begins with fine mineral dust and organic particles deposited by wind, meltwater or nearby exposed ground. The material is visibly darker than clean snow or ice, and researchers compare the two surfaces carefully.",
+        "timecode": {
+          "startFrame": 52820699,
+          "endFrame": 58458503,
+          "sampleRateHz": 44100,
+          "startSeconds": 1197.748277,
+          "endSeconds": 1325.589637,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3bf2709576c612e114449d8a57794cac1adaf848ddbbfe281204cd4cca97f250",
+        "planSegmentTextSha256": "cf7015ca908b015b4411cc6062d9f4b5d113282dc72e621c6154dc480b497bb5"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "A dark patch has lower ______ than clean bright ice.",
+          "acceptedResponses": [
+            "albedo"
+          ]
+        },
+        "evidenceSegment": "P4-S03",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "The relevant property is albedo, the proportion of incoming radiation a surface reflects. Clean bright ice has relatively high albedo, while a dark patch has lower albedo. We will return later to the physical consequence of that contrast.",
+        "timecode": {
+          "startFrame": 52820699,
+          "endFrame": 58458503,
+          "sampleRateHz": 44100,
+          "startSeconds": 1197.748277,
+          "endSeconds": 1325.589637,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "308a4f654a92eb832b134d1a0bfcde8592cf0740af676b2b51aaee310d31b017",
+        "planSegmentTextSha256": "5968a2eda8bb13d94cdea7fa3d5f6eb3c20da0f64f1c38b708b5f396f595908d"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "As a hole forms, ______ collects around the particles.",
+          "acceptedResponses": [
+            "meltwater"
+          ]
+        },
+        "evidenceSegment": "P4-S04",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Dark particles can settle into a shallow cavity while remaining exposed to light from above. Meltwater collects around them, and the wet sediment creates a small habitat whose depth and outline can change during the season.",
+        "timecode": {
+          "startFrame": 52820699,
+          "endFrame": 58458503,
+          "sampleRateHz": 44100,
+          "startSeconds": 1197.748277,
+          "endSeconds": 1325.589637,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "73de9f4bae1088e7ae7876bc236ef38f7fc90242307225c0b281a702edafba9e",
+        "planSegmentTextSha256": "e322dd1a810a2e536140439a07866d02ee408316c5a57eb69480578d1b4d0175"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Microbial substances help bind particles into ______.",
+          "acceptedResponses": [
+            "granules"
+          ]
+        },
+        "evidenceSegment": "P4-S05",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "The sediment is not biologically inert. Bacteria, algae and other microorganisms live among the grains. Sticky substances produced by microbes help bind fine particles into granules; the resulting structure is compact rather than a completely loose layer of dust.",
+        "timecode": {
+          "startFrame": 52820699,
+          "endFrame": 58458503,
+          "sampleRateHz": 44100,
+          "startSeconds": 1197.748277,
+          "endSeconds": 1325.589637,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "eec94fa4b1c7bafe0185a30d5603fb08eae8e8b0c60750ee6d834c9b9a86f820",
+        "planSegmentTextSha256": "0916b9c3ed1461b599eb239cbb4aca59d264ef84ca38d4b38fd5695746afde33"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "In very cold settings, a lid of ______ may form above the water.",
+          "acceptedResponses": [
+            "ice"
+          ]
+        },
+        "evidenceSegment": "P4-S07",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Conditions differ among glaciers. On temperate ice, water may move through open surface channels. In very cold polar settings, a lid of ice can form above the liquid water for part of the season.",
+        "timecode": {
+          "startFrame": 52820699,
+          "endFrame": 58458503,
+          "sampleRateHz": 44100,
+          "startSeconds": 1197.748277,
+          "endSeconds": 1325.589637,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bfb481c644f6132addf0f4f614d25f23a0b9776a5f704cad0b233c27992434e1",
+        "planSegmentTextSha256": "41308ca9b24e73dc2d1a468d0d87a8fc4e5eedd6b31157122e3421546fccc83e"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Material accidentally introduced during sampling is called ______.",
+          "acceptedResponses": [
+            "contamination"
+          ]
+        },
+        "evidenceSegment": "P4-S11",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "That final problem is contamination. Good field practice records the location and physical form before collection, then uses clean tools. Care reduces introduced material, although natural differences between holes still remain.",
+        "timecode": {
+          "startFrame": 58507013,
+          "endFrame": 61356730,
+          "sampleRateHz": 44100,
+          "startSeconds": 1326.689637,
+          "endSeconds": 1391.30907,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a85d465a3e778f11ceb247c247d5a17d718e77646dc309c8b1dbdd303ca0cf68",
+        "planSegmentTextSha256": "0815b77efb4665e0694ed5a64a026a8c7962e2d1089c69101eaee4659df81f7d"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "mcq",
+          "questionText": "Why can a dark patch deepen the ice beneath it?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "It absorbs more incoming energy."
+        },
+        "evidenceSegment": "P4-S12",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "We can now explain why the darker material may deepen the ice beneath it. Its lower albedo means that it absorbs more incoming energy than bright ice, so local melting can proceed more quickly.",
+        "timecode": {
+          "startFrame": 63076154,
+          "endFrame": 69082049,
+          "sampleRateHz": 44100,
+          "startSeconds": 1430.298277,
+          "endSeconds": 1566.486372,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7a97457273d4ef422213e10ca1172c0bbe0b1a889824149122625bdd06010722",
+        "planSegmentTextSha256": "aa7a83cc01b62a053a2579df59faf3f746866d83b1ef211430c063f362bf6af8"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "mcq",
+          "questionText": "What does the lecturer say about a hole with an ice lid?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "It is relatively closed but not permanently sealed."
+        },
+        "evidenceSegment": "P4-S14",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "The ice lid also needs careful interpretation. It can make a hole relatively closed for a period, but the system is not permanently sealed. Light can pass through ice, and later melting can reopen a connection.",
+        "timecode": {
+          "startFrame": 63076154,
+          "endFrame": 69082049,
+          "sampleRateHz": 44100,
+          "startSeconds": 1430.298277,
+          "endSeconds": 1566.486372,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "de92f903e36b1111084a0eecae51081c5bbf55c753cf96881b174c9089f3a567",
+        "planSegmentTextSha256": "233d00a425db0f1d596ff618c29f8250a7bf7c27c356d8d84ce9409ebfce9812"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "mcq",
+          "questionText": "Why are replicate samples valuable?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "They represent spatial variation better than one hole."
+        },
+        "evidenceSegment": "P4-S16",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "Replicate samples are valuable because they represent spatial variation better than one hole. Several samples from a defined area reveal whether a result is common or simply a feature of one unusual cavity.",
+        "timecode": {
+          "startFrame": 63076154,
+          "endFrame": 69082049,
+          "sampleRateHz": 44100,
+          "startSeconds": 1430.298277,
+          "endSeconds": 1566.486372,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c08f9122e5f7e8c2f2d10d1b07023e526ab390b467f7cab37ab5fcbf37e5da7d",
+        "planSegmentTextSha256": "b87018b0ab6ef037168703efe3d2c3531d3cc3f64f4719b9bec8990fb0394a2b"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "mcq",
+          "questionText": "Which study design does the lecturer recommend?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Biological sampling combined with physical and hydrological observations"
+        },
+        "evidenceSegment": "P4-S18",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "The strongest study design therefore combines biological sampling with physical and hydrological observations. Microbial groups and pigments are interpreted alongside depth, reflectance, water routes, temperature and the timing of lid formation.",
+        "timecode": {
+          "startFrame": 63076154,
+          "endFrame": 69082049,
+          "sampleRateHz": 44100,
+          "startSeconds": 1430.298277,
+          "endSeconds": 1566.486372,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "587cdc1752d3756f7d6a28235b069c98d96d66449f294bbae04678192d0d48d7",
+        "planSegmentTextSha256": "ed2f573fa6fd84589d1d14e40c6443c3e3cd2aa0f08068bf54f97635733155f4"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/set27-listening-content-v1.0.2.json",
+        "sha256": "e6feb5e7d772c34f1f46f556136987d99850139a5211d8e7e30b7e13fbba748e"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "83b0faeab07ef6f0b11ac0fc57986a4bb8600dde7cb71dc68acc12ec18422200",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-27/set27-audio-production-plan.json",
+        "sha256": "36e53c1e27675a3e7c625750d2591a20f14460887adc2aadb2ffa1794cbf4e3e"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/elevenlabs-v4/set27-eleven-v4-manifest.json",
+        "sha256": "40b1a8dbd4553c62f486392ec94c213c5267be7805b551219aff02408b7d54f1"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/elevenlabs-v4/set27-eleven-v4-progress.json",
+        "sha256": "100d64a8b86f29c0c42a7c85b504e2180602401a8e5bfedcd72781cff12dbad3"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/elevenlabs-v4/set27-eleven-v4-qa.json",
+        "sha256": "79f0c6676106dc8703531104b4244e484888e20bb7f45b80152050a2bf9ea5ce"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/elevenlabs-v4/set27-concat.txt",
+        "sha256": "9776719345548f74619c3b67a40da699dece60a67ed52307cade97e797dde285"
+      },
+      "concatPieceAggregateSha256": "0aaf348462e30bd3144e685e41d2559fbffb4939151e97fc42b9aa99248bbf74",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/elevenlabs-v4/ielts-set-27-listening-eleven-v4-master.wav",
+        "sha256": "e07e40b1e9391e79ab69cfef8658f79f1125cab86efff71430cf449f65ca75d5",
+        "frameCount": 76726618,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/listening/elevenlabs-v4/ielts-set-27-listening-eleven-v4.mp3",
+        "sha256": "a90e44b50f42466229a0cbc397789d5b1f1f54102be316704fc4e34bf9410ed9"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-27.mp3",
+        "sha256": "a90e44b50f42466229a0cbc397789d5b1f1f54102be316704fc4e34bf9410ed9"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "4311b9f6138dccc82b67d2227a62f092054653913a35661b7331f879c71e6bb3"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_READING_INDEPENDENT_INTEGRITY_REVALIDATION",
+  "reviewedAt": "2026-10-28T14:43:02Z",
+  "reviewer": {
+    "role": "independent-reading-reviewer",
+    "task": "/root/guided_reading_independent_review",
+    "independence": "Reviewer performed a read-only comparison and did not author or modify source, runtime, generator, or staged evidence artifacts."
+  },
+  "scope": {
+    "sets": "21-40",
+    "module": "Academic Reading guided evidence",
+    "reason": "Rebind the prior 800/800 Reading PASS after a Set 32 Listening-only canonical correction for Q39/Q40.",
+    "comparison": "Every complete current reading object was compared with the corresponding object in the superseded snapshot using direct object equality, exact raw JSON byte equality, and canonical JSON equality."
+  },
+  "supersedesReview": {
+    "path": "staging/ielts-guided-reviews/reading-evidence-independent-targeted-final-review-21-40-2026-10-28.json",
+    "sha256": "42d4cc37338b17b310c019c6a9c8a37aa089387280d03f8c1a17d16faa07b9ef",
+    "payloadSha256": "aa0f1d2571e877ab0dccf88803935b8ea0e047f4e3d458d338b42e571a28bc16",
+    "priorDecision": "PASS",
+    "priorRowsPassed": 800
+  },
+  "supersededSnapshot": {
+    "path": "staging/ielts-guided-evidence-21-40-superseded-before-q39q40-2026-10-28",
+    "manifestSha256": "10e70a0211a9cd473efe83913f92640362849d59e466e9cde044b78628bed23b",
+    "manifestPayloadSha256": "28189f33f4cbf581521f65c2dd637bb97464c22a8408bde87bc4a13211d7ab83"
+  },
+  "currentSource": {
+    "path": "staging/ielts-guided-evidence-21-40",
+    "manifestSha256": "0519883c24b12f556dfd4e14423e0b50145b5e1f39d3b71c5686f4d8fbc90951",
+    "manifestPayloadSha256": "89a1499c9642a59ea0bc809fa0af1f6a6db28b1dc9179f0af16890b21867e5b2",
+    "manifestAggregateSha256": "ecc32f769fd33de99b046a46bdfb48c503248b3c6e4fb36211f44a80b674c02e",
+    "generatorSha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+  },
+  "decision": "PASS",
+  "gate": {
+    "name": "READING_GUIDED_EVIDENCE_INDEPENDENT_REVIEW_REBIND",
+    "status": "PASS",
+    "reason": "All 20 current Reading payloads are byte-identical and canonically identical to the independently approved snapshot; therefore the prior 800/800 Reading PASS can be rebound to the current manifest hashes without re-authoring."
+  },
+  "releaseAuthorized": false,
+  "runtimeIntegrationAuthorized": false,
+  "aggregate": {
+    "setsCompared": 20,
+    "rawByteEquivalentSets": 20,
+    "canonicalEquivalentSets": 20,
+    "objectEquivalentSets": 20,
+    "readingRowsRebound": 800,
+    "readingRowsPassed": 800,
+    "readingRowsFailed": 0
+  },
+  "set32ListeningCorrectionInspection": {
+    "readingObjectEqual": true,
+    "readingRawBytesEqual": true,
+    "readingCanonicalEqual": true,
+    "readingQ39Equal": true,
+    "readingQ40Equal": true,
+    "listeningQ39Before": {"questionText":"What must remain functional?","acceptedResponses":["water transport"]},
+    "listeningQ39After": {"questionText":"How may damaged tissue be replaced?","acceptedResponses":["new growth"]},
+    "listeningQ40Before": {"questionText":"How may damaged tissue be replaced?","acceptedResponses":["new growth"]},
+    "listeningQ40After": {"questionText":"What must remain functional?","acceptedResponses":["water transport"]},
+    "conclusion": "The correction is confined to Listening response bindings and derived artifact/source-binding hashes; it does not alter Reading."
+  },
+  "globalChecks": {
+    "currentManifestFileHashValid": true,
+    "currentManifestCanonicalPayloadHashValid": true,
+    "currentManifestAggregateHashValid": true,
+    "snapshotManifestFileHashValid": true,
+    "snapshotManifestCanonicalPayloadHashValid": true,
+    "allCurrentArtifactFileHashesMatchManifest": true,
+    "allCurrentArtifactCanonicalPayloadHashesValid": true,
+    "allSnapshotArtifactFileHashesMatchManifest": true,
+    "allSnapshotArtifactCanonicalPayloadHashesValid": true,
+    "allReadingObjectsEqual": true,
+    "allReadingRawJsonBytesEqual": true,
+    "allReadingCanonicalJsonEqual": true,
+    "set32ReadingUnaffected": true
+  },
+  "sets": [
+    {"set":21,"decision":"PASS","currentArtifactSha256":"f4174a379bfc3fa2b499ed610b489d0ef7123beac367be53f05034b6991fae98","snapshotArtifactSha256":"57244baa5ac7ec2813e3e4d403f9ae2e1b6d6a3f9c3cc72d46599297b2088b20","readingCanonicalSha256":"2b7e7cb39651f070d5ecffbf259921748abab6c51aa4a37ac013b56a4d788126","readingRawSha256":"1ba5ad26d2986d35ea1620f611337a7eedf0e9109a502e2aa1ae0dba51f0d5ba"},
+    {"set":22,"decision":"PASS","currentArtifactSha256":"c6783f5e3811b0621a678ce728c9a21b7a0b668a04262968a433d5d6dcb31fae","snapshotArtifactSha256":"08ae318bf8f34bf177f0afbb39b34eb2a0efc46722d20cd613249708cf12c9a1","readingCanonicalSha256":"184ca8826e1e229061d4ea592f5df9af0bcb40fcfb980d355840ddfc661f1544","readingRawSha256":"aff824acb217f5f4876f0a498409c585869996e608d77ba3d47bc652de52054a"},
+    {"set":23,"decision":"PASS","currentArtifactSha256":"df6fac88d7243085338e245db7fb99f73314c31f0cb999c51fc68d088f346dbb","snapshotArtifactSha256":"6639a8ab5d6769067d0851d00ef503375ca88acca5b78cb7f80177a13d5e1644","readingCanonicalSha256":"a739895defe5b9f6203e78a7b058063791f323a6ad5951a532597d986467e096","readingRawSha256":"56b46bb91b91f2c16fd51f93dada7bfd15564396ab662b143aaa95aa71f75e44"},
+    {"set":24,"decision":"PASS","currentArtifactSha256":"0692a6f07f940681ee116cead79a3aa3241bfa2ac1673081b939a229cfa8df86","snapshotArtifactSha256":"222b9833d230947c9d2bb94e5421bc7b3fdfb3e34b2813bbb4690a97ac88ecec","readingCanonicalSha256":"473e66cae6dffe935974996317c46e7c39b49ea49b656c5335655b877272b2dd","readingRawSha256":"7c676cac12d21035715117013aa2cf1d45ff3d1c4247fa52ef55ca4798bd62f5"},
+    {"set":25,"decision":"PASS","currentArtifactSha256":"471c610e3ca5d2c7034fc32a09e79bed71c1d2688320089b58e3e1d0233a249d","snapshotArtifactSha256":"cef478160e3cb01b153c108438737dbf11c4cd7a8e91822d729c0f0fd2661c29","readingCanonicalSha256":"42c4eae0ce861582cb1f62c472cbb76ceb82b42767459b569380ff6b11a4f848","readingRawSha256":"a4bbeae90f748dc512dda0ad79458fe066e3b91ed10a2fb2d7b91b1073b2e56b"},
+    {"set":26,"decision":"PASS","currentArtifactSha256":"d06a89fe40dc854687ecbe54c3c336f9992873e33db21d58cdcaba04c1c2ea6d","snapshotArtifactSha256":"fbb9805ca65f7c07172a836a6869a01c4a5aa336eef01580a719ffbda0e6daa8","readingCanonicalSha256":"2569fbc1b9d09dad68f912eb1197f082b69cb05b1f220fd8e5c815c5b4830759","readingRawSha256":"faf6062304fb01dc38d25ee4d435753ffaa937ea189de0261db1b9c6780fdab8"},
+    {"set":27,"decision":"PASS","currentArtifactSha256":"595a9acfa82a46ed17d3b65e1aede3ef61d169b5ada25d914f9651b924d4dbb0","snapshotArtifactSha256":"b87cdc5bec05165461dd7d778071e8aaf497f903c36feba8f7d8473a5c48314f","readingCanonicalSha256":"0232cd88ccd6f28f3d398d788d5c7c311e79f5b82dbd41f19b6e7893e3d65c13","readingRawSha256":"b2e393f7ef82559ccc523d6fc96a1e6e0e9e4c44d2bcabdb8dabaec68829874f"},
+    {"set":28,"decision":"PASS","currentArtifactSha256":"40533354f1e8dde4ff9439600d7ae4dfd9381308466880e01fc93d69a79cb4c1","snapshotArtifactSha256":"18f4a13ae28e2b1098ce742586cfbb4af0b6bf4c9250b6265843090e38e896d8","readingCanonicalSha256":"6f7a23fc23bf1e2bdcefbb6fa502ccf3cdd3d55cb3f7c3eb27b2097fea64c8a5","readingRawSha256":"d90ef1ce4f1ffa0919701f1446895f514849f3ec4b852dd667d71efb6bee4496"},
+    {"set":29,"decision":"PASS","currentArtifactSha256":"9355da772cfbb6b0d768c821652effdabf1728de0e633d3f26d3ecdd64d4c82c","snapshotArtifactSha256":"ea904cebd66ef751ec3b077c7edcf8728ee13cea4cfa9403e5644f7556c210e2","readingCanonicalSha256":"60beb4350ea0ee3fecc442e7d2562f037b911ae8c6b8796173749bd1d769df1d","readingRawSha256":"d63951035af879952d670bb8e34e5dc6bcf93d097f6eed3907ffe074fda3e333"},
+    {"set":30,"decision":"PASS","currentArtifactSha256":"0c19fa1758df92ff4ac71be71246bd76e3c75cda996c0c3d9c4615c28ef22ea2","snapshotArtifactSha256":"b4a939505dc50ae114b526bb8be99dbe0cc404d73cbb7c5dd44fa56d9fc173fe","readingCanonicalSha256":"98165904246ffa342da920ac62056de1e8f12141eedd72531e3d8f180e1ded95","readingRawSha256":"35d1c592aff6344e374e944e8af474c949aec973c05f6d78a55a3cedcb64b2f0"},
+    {"set":31,"decision":"PASS","currentArtifactSha256":"8f02fb79eec9f4276ed87ba155248b71c2da1606a0f19b6986d81833d5d24a70","snapshotArtifactSha256":"775d940f90bbb5122bfc83cf8223216e788371f2cf62d6b25186c2739fd17b93","readingCanonicalSha256":"5d0302c30698b79f0878a60241153862f6b611ebc663b2dfb0b9fe343cb598b1","readingRawSha256":"632b0f3c88e7c2b083f80100bd4cdcc380f7fb69267d0647f991812b33659533"},
+    {"set":32,"decision":"PASS","currentArtifactSha256":"3193e6ba78957e651b8cd285ea4c428ce2f2f07fcb33abf83afcea1d6e16512d","snapshotArtifactSha256":"8a3884e09db6e58eb8a50a336390365f99df93bae16657a5d74db94d37b9593f","readingCanonicalSha256":"f074b03e2edd1da77608a11c8f0d099017be3e5fb444573851b2f28ec5f732ac","readingRawSha256":"9431368e7a68355d91450684151b0e15b2af6943d8f15e01e4c40e5be0330095"},
+    {"set":33,"decision":"PASS","currentArtifactSha256":"ba5e79fe9373f5e42c066633e86314ea3875b92502bed40a4eb74bdd2e4a05a4","snapshotArtifactSha256":"e9eb4ba1c504d776c4d1ff93bf934206fe72391f938149bfdfa491197a5c19ea","readingCanonicalSha256":"91c541b0ba0c842e77c772e29724641c9ebb3b3a22dafeaf1d41f6d68ff8d1ee","readingRawSha256":"cd10d6d5b0f54f80c379a46b3e7461214a779b64b9b76915c75c9fa52455e7e0"},
+    {"set":34,"decision":"PASS","currentArtifactSha256":"d4cbe188579c4a1e74d3e9741fce5ba7acc01a38f5e9d5a90da64579b2419725","snapshotArtifactSha256":"5c0afd7cdeab870045040f6e7517742b8cd331cff63bbd7231a27099aa615365","readingCanonicalSha256":"7555571d78d5a3c724bfc712fe13658f097b70b10641d35965ed45f0f284cdb3","readingRawSha256":"fd29d7bc9f18c92a3f4a7737c95a8e81dbd84a8c79a92e24ec909deca1636028"},
+    {"set":35,"decision":"PASS","currentArtifactSha256":"69f3f12d40f3610d9a2c872e32fae123158e45a9f7ad36bafaf17e0fa1ab42b4","snapshotArtifactSha256":"c62b78dbe6b46b466282ca65bd2ab039a96cd243072476989f281213a20605a0","readingCanonicalSha256":"f2215b05ab58312c92e35d2619e99870ffbf3028b7548f305b43bdcee422e41c","readingRawSha256":"25fd0e15ae0071832b9c471958e2973086d3a1adede47db58e4b50f2b58acaf8"},
+    {"set":36,"decision":"PASS","currentArtifactSha256":"68a7770d40134c1b78f1669c640eba4c8b28c7f9e82217b73b6166e717ac7582","snapshotArtifactSha256":"f6bce768b0936c93f50039e4d8987e7b15bb061d72739ce8ac916482460e8d1d","readingCanonicalSha256":"ca5d60510448bff5c5187c11ab387334fa6da277ea84d0a47fb130fefa806699","readingRawSha256":"0217e8944bf3691e47e161ecf33a4eae78395830cc1fb01cdce278769c4fd14c"},
+    {"set":37,"decision":"PASS","currentArtifactSha256":"c4888ebcb24f4cb3a771f1346dc63f6645cecbcc6bb7f96042ca1ff33861d04c","snapshotArtifactSha256":"48d21e00386c0a1fa6a34112db22075bf306614a54008ba54e07dd7cebdef946","readingCanonicalSha256":"e3fdcf534ecdf064989ffa3a8094bfd47720d85e9cbd9c314ffa56d9f9447c2f","readingRawSha256":"6d61a8b902504f251f425b04e66d4fd2da676c6779a1f785cba2d3c2b4204c91"},
+    {"set":38,"decision":"PASS","currentArtifactSha256":"d970972816e8ea068b34182488774638fe0ce0c55067f0f34a9b19354dbf7e71","snapshotArtifactSha256":"1e058289f3a55f3239ba96bf584fa66faec2e0bb5402fe6cf14579a1e906e4bf","readingCanonicalSha256":"e32714d579a67c0e08f705f9705edb49b503af180c549deebfed22e3a8452b1a","readingRawSha256":"030b6021e3f8e4ae06b1776953850cc221d49bc6d4ffefdaebfc3e3ef2da7e9f"},
+    {"set":39,"decision":"PASS","currentArtifactSha256":"a376845c60c4146974556d00691140c1de50220dd21e6ee87eef549936a20a00","snapshotArtifactSha256":"87f02cadcf41649e393edc33eaf2bcf6883d7f09e4f4c168de9ee90a3bd218a2","readingCanonicalSha256":"ff6604c2d49a9efeea7712f0e120ca4a6616fccca3831da4ae1cdefa9df32bdc","readingRawSha256":"9ed3bdb9dcc41c921acae440d199aca4e606368b0c68271faa6694b7086dd432"},
+    {"set":40,"decision":"PASS","currentArtifactSha256":"b97adb5b30a31b5b188a164d647cf0703ce915a3da64a145c1c139a6e5f70edc","snapshotArtifactSha256":"e44519c58e70534eb85510307c6aadbfd58c9a320bcf2cce497185414e78fae2","readingCanonicalSha256":"2f5094b156432922b34d8b2f9dad014978c7d595ab578887ebe20329bbbb4306","readingRawSha256":"fb2ca7696b0b8af29691ff4c1f35ed392728f28e723a8071d3124d589b3ddb28"}
+  ],
+  "requiredRemediation": [],
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "6eada20779ec488c3199d4dad188a5e241bac8f0d2b02b822bc27c0368bc7552"
+  }
+}

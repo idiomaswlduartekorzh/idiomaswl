@@ -1,0 +1,1269 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_LISTENING_PHRASE_ALIGNMENT_STAGING",
+  "set": 26,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "audioBinding": {
+    "publicUrl": "/audio/ielts/ielts-listening-set-26.mp3",
+    "publicPath": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-26.mp3",
+    "publicMp3Sha256": "acc52c146c6c107e28648912a6efec5ca0f620100b8174b172ff6ac5aa36eb9c",
+    "elevenLabsV4Mp3Path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/listening/elevenlabs-v4/ielts-set-26-listening-eleven-v4.mp3",
+    "elevenLabsV4Mp3Sha256": "acc52c146c6c107e28648912a6efec5ca0f620100b8174b172ff6ac5aa36eb9c",
+    "masterWavPath": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/listening/elevenlabs-v4/ielts-set-26-listening-eleven-v4-master.wav",
+    "masterWavSha256": "09d475e62ddeebefbf8fd6879acd84342b7ec15678cc042e9d425af31ff386bc",
+    "durationFrames": 76724717,
+    "sampleRateHz": 44100
+  },
+  "sourceBindings": {
+    "manifest": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/listening/elevenlabs-v4/set26-eleven-v4-manifest.json",
+      "sha256": "f963d5658d58d580f87262c7d43ee3b0150429b8bc618db8c12c1db284575ea4"
+    },
+    "qa": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/listening/elevenlabs-v4/set26-eleven-v4-qa.json",
+      "sha256": "768ef152e8a9f78990b9aa0fdae72a7ed9b246677853f95e623960b4a1bf655c"
+    },
+    "concat": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/listening/elevenlabs-v4/set26-concat.txt",
+      "sha256": "e62b50e69238b759e3f2be0480c911058360129b06d7aa31b95d5a1ba6de305d"
+    },
+    "productionPlan": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-26/set26-audio-production-plan.json",
+      "sha256": "3acdf5b621c08709af5eaedca87dcd1cd00d8a1bfca9215bf99313d3ae77bfb2"
+    },
+    "content": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/listening/set26-listening-content-v1.0.4.json",
+      "sha256": "5dec734643c351a5d17549bb75b3a4dd79674a5e5609449cc79e6d35e3155c7e"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-v4-phrase-alignments-23-40.py",
+      "sha256": "73c091e40c7b82a22134c959e56bd87d9e3b7d5ad9364aac8263dbf1e2cf1c4f"
+    }
+  },
+  "method": {
+    "engine": "mlx-whisper",
+    "modelSnapshot": "45f3915923c7a79a5a5b5a7d909d39aeb0e5630e",
+    "modelWeightsSha256": "55b6674c9b339702d486e2b1573839a66f8ec8f821ed2886993ef717a86b09f5",
+    "ffmpegSha256": "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617",
+    "alignment": "deterministic minimum-edit-distance backtrace over normalized words",
+    "questionNumberProjection": "immutable source-ledger rows retained by hash; Set 32 source rows 39/40 project to corrected questions 40/39",
+    "contextPaddingSeconds": 0.35,
+    "maximumWindowSeconds": 60.0
+  },
+  "windowCount": 40,
+  "windows": [
+    {
+      "question": 1,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T04",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "certificate",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "certificate.",
+      "timecode": {
+        "startFrame": 4686448,
+        "endFrame": 4742014,
+        "sampleRateHz": 44100,
+        "startSeconds": 106.268662,
+        "endSeconds": 107.528662,
+        "durationSeconds": 1.26,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.998535,
+        "lastRecognizedWordProbability": 0.998535,
+        "chunkWordErrorRate": 0.027778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-03.json",
+        "rawAsrSha256": "bf1331024475624fd4c1c91ae869316f2940e67df4423c3d0927e9bded5f3e7d"
+      },
+      "ledgerRowSha256": "8b974333522885440dc21c69a10861ca44fbe03d9f2022298e358245893e653e",
+      "planSegmentTextSha256": "62e63c91d4b6403a4bba0d513527155f35fd0d9b1fc0f3547f640e28497bfc19"
+    },
+    {
+      "question": 2,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T06",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "three",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "three",
+      "timecode": {
+        "startFrame": 5953882,
+        "endFrame": 6008566,
+        "sampleRateHz": 44100,
+        "startSeconds": 135.008662,
+        "endSeconds": 136.248662,
+        "durationSeconds": 1.24,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.914062,
+        "lastRecognizedWordProbability": 0.914062,
+        "chunkWordErrorRate": 0.027778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-03.json",
+        "rawAsrSha256": "bf1331024475624fd4c1c91ae869316f2940e67df4423c3d0927e9bded5f3e7d"
+      },
+      "ledgerRowSha256": "98d20185248c273b48fe19494ce86b6e712ea7986b8c3217cf191954cf482571",
+      "planSegmentTextSha256": "85466cdd556e874acee2f2a1f2a47601dea82adff33702cdb927e89217b6a416"
+    },
+    {
+      "question": 3,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T08",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "Wednesday",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Wednesday",
+      "timecode": {
+        "startFrame": 6632140,
+        "endFrame": 6704464,
+        "sampleRateHz": 44100,
+        "startSeconds": 150.388662,
+        "endSeconds": 152.028662,
+        "durationSeconds": 1.64,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.616699,
+        "lastRecognizedWordProbability": 0.616699,
+        "chunkWordErrorRate": 0.027778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-03.json",
+        "rawAsrSha256": "bf1331024475624fd4c1c91ae869316f2940e67df4423c3d0927e9bded5f3e7d"
+      },
+      "ledgerRowSha256": "6b05b8021a9a0dc9972bd08e27b15bf26cb79bfdb8fcc96be9bf07444b6a764d",
+      "planSegmentTextSha256": "495eaa071e68515eece0eca70a941b77a4dfacbf0e6d1aa66180d0d83df12d0e"
+    },
+    {
+      "question": 4,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T08",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "Wednesday at ten forty would be best. Friday was my first thought, but I need to post the application before then.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Wednesday at 10 .40 would be best. Friday was my first thought but I need to post the application before then.",
+      "timecode": {
+        "startFrame": 6632140,
+        "endFrame": 7021984,
+        "sampleRateHz": 44100,
+        "startSeconds": 150.388662,
+        "endSeconds": 159.228662,
+        "durationSeconds": 8.84,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 21,
+        "mappedWordCount": 21,
+        "firstRecognizedWordProbability": 0.616699,
+        "lastRecognizedWordProbability": 0.994141,
+        "chunkWordErrorRate": 0.027778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-03.json",
+        "rawAsrSha256": "bf1331024475624fd4c1c91ae869316f2940e67df4423c3d0927e9bded5f3e7d"
+      },
+      "ledgerRowSha256": "0f7b51f99606897d8c705d64b0bca9e308255e280360211123b2786404fb1110",
+      "planSegmentTextSha256": "495eaa071e68515eece0eca70a941b77a4dfacbf0e6d1aa66180d0d83df12d0e"
+    },
+    {
+      "question": 5,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T10",
+      "renderedChunk": "chunk-03",
+      "focusPhrase": "passport",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "passport",
+      "timecode": {
+        "startFrame": 7591756,
+        "endFrame": 7648204,
+        "sampleRateHz": 44100,
+        "startSeconds": 172.148662,
+        "endSeconds": 173.428662,
+        "durationSeconds": 1.28,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.993164,
+        "lastRecognizedWordProbability": 0.993164,
+        "chunkWordErrorRate": 0.027778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-03.json",
+        "rawAsrSha256": "bf1331024475624fd4c1c91ae869316f2940e67df4423c3d0927e9bded5f3e7d"
+      },
+      "ledgerRowSha256": "7c218f8dafbc7a3603b6686d65899d9320d208e7fa3e30aede34cb0c594e1b39",
+      "planSegmentTextSha256": "ee7e28396ea36c427956182251c9ad548c79a2539dd43e7f4694da953b854faa"
+    },
+    {
+      "question": 6,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T12",
+      "renderedChunk": "chunk-04",
+      "focusPhrase": "courier",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "courier.",
+      "timecode": {
+        "startFrame": 8439847,
+        "endFrame": 8493649,
+        "sampleRateHz": 44100,
+        "startSeconds": 191.379751,
+        "endSeconds": 192.599751,
+        "durationSeconds": 1.22,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.943848,
+        "lastRecognizedWordProbability": 0.943848,
+        "chunkWordErrorRate": 0.0,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-04.json",
+        "rawAsrSha256": "6138d59775ad7bb6c2112eda73694003a8b7583a7908c7af4dcaf57fda80d30e"
+      },
+      "ledgerRowSha256": "5fe0a677304c25d5a5964f1ad4fcbd48766bb9e70c86c72f82d5074115999241",
+      "planSegmentTextSha256": "0162ed33cfbdb8bd535514bb9e295e82342a9cd4daac1c6c73796893badb74f8"
+    },
+    {
+      "question": 7,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T13",
+      "renderedChunk": "chunk-06",
+      "focusPhrase": "solicitor",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "solicitor",
+      "timecode": {
+        "startFrame": 10507955,
+        "endFrame": 10564403,
+        "sampleRateHz": 44100,
+        "startSeconds": 238.275624,
+        "endSeconds": 239.555624,
+        "durationSeconds": 1.28,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.987305,
+        "lastRecognizedWordProbability": 0.987305,
+        "chunkWordErrorRate": 0.024194,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-06.json",
+        "rawAsrSha256": "3c0e4d79a6f33b0a5149d2f899c57986ab833355010390548cbaffd2628071f5"
+      },
+      "ledgerRowSha256": "90e482f1f97e10f7b78e0f677d949d51bf7854d6bf8b646dd1b8f6c374180209",
+      "planSegmentTextSha256": "fbab22de6e344bfcdf7e834209d7447d5f6cde13ced549eb9bf34de2b1e6de2d"
+    },
+    {
+      "question": 8,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T15",
+      "renderedChunk": "chunk-06",
+      "focusPhrase": "date",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "date",
+      "timecode": {
+        "startFrame": 11752457,
+        "endFrame": 11801849,
+        "sampleRateHz": 44100,
+        "startSeconds": 266.495624,
+        "endSeconds": 267.615624,
+        "durationSeconds": 1.12,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.95459,
+        "lastRecognizedWordProbability": 0.95459,
+        "chunkWordErrorRate": 0.024194,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-06.json",
+        "rawAsrSha256": "3c0e4d79a6f33b0a5149d2f899c57986ab833355010390548cbaffd2628071f5"
+      },
+      "ledgerRowSha256": "6364c22778288dd90b6ecac2a4a00fb13d24b055ee2e27f882ab1299dd28457a",
+      "planSegmentTextSha256": "cc7cdac5e1c686a56bca839a73a83e78b1b64d3e18a6f0adf8d3967a36df5a7f"
+    },
+    {
+      "question": 9,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T17",
+      "renderedChunk": "chunk-06",
+      "focusPhrase": "application letter",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "application letter.",
+      "timecode": {
+        "startFrame": 12516269,
+        "endFrame": 12587711,
+        "sampleRateHz": 44100,
+        "startSeconds": 283.815624,
+        "endSeconds": 285.435624,
+        "durationSeconds": 1.62,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.982422,
+        "lastRecognizedWordProbability": 0.997559,
+        "chunkWordErrorRate": 0.024194,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-06.json",
+        "rawAsrSha256": "3c0e4d79a6f33b0a5149d2f899c57986ab833355010390548cbaffd2628071f5"
+      },
+      "ledgerRowSha256": "18ed4343f2940c5540b630d4986d5a591bf59b4fe6bc295884b96ed169271380",
+      "planSegmentTextSha256": "83a3b9ccb7820eaf3214ca5021195d11acff5a9708e5137aace240acd1dbae23"
+    },
+    {
+      "question": 10,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P1-T19",
+      "renderedChunk": "chunk-06",
+      "focusPhrase": "reference number",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "reference number",
+      "timecode": {
+        "startFrame": 13714907,
+        "endFrame": 13782821,
+        "sampleRateHz": 44100,
+        "startSeconds": 310.995624,
+        "endSeconds": 312.535624,
+        "durationSeconds": 1.54,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.998047,
+        "lastRecognizedWordProbability": 0.998535,
+        "chunkWordErrorRate": 0.024194,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-06.json",
+        "rawAsrSha256": "3c0e4d79a6f33b0a5149d2f899c57986ab833355010390548cbaffd2628071f5"
+      },
+      "ledgerRowSha256": "3a519382c0b7c08abbe31c90a4ee5094d0595ae00cc5f43a549ac24b3eaf5e6e",
+      "planSegmentTextSha256": "68f2cbce2d804a4326ac7a43a2ea76cca4c28cf7c9fd3888ae7b451144ded460"
+    },
+    {
+      "question": 11,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S02",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "Buoyancy aids are arranged by size near the door, but please do not pick one up immediately. I have the booking list and will call surnames in order. Wait until you hear yours before taking an aid; we need to record the size issued.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Boyancy aids are arranged by size near the door, but please do not pick one up immediately. I have the booking list and will call surnames in order. Wait until you hear yours before taking an aid. We need to record the size issued.",
+      "timecode": {
+        "startFrame": 18768339,
+        "endFrame": 19533033,
+        "sampleRateHz": 44100,
+        "startSeconds": 425.585918,
+        "endSeconds": 442.925918,
+        "durationSeconds": 17.34,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 44,
+        "mappedWordCount": 44,
+        "firstRecognizedWordProbability": 0.631348,
+        "lastRecognizedWordProbability": 0.981445,
+        "chunkWordErrorRate": 0.012397,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-09.json",
+        "rawAsrSha256": "9bb5763b7b03cd4ff908d6a5e369b98ceecc1603d73d64534e78daca1052cfa2"
+      },
+      "ledgerRowSha256": "bb6bdc860c6b0802aee3561030d3abd4ad240567bd9df42d5e077dde7342ef70",
+      "planSegmentTextSha256": "7fd05d23f6852676c835bb3db727e8cd61c93b5b3ce2cd18d25951fcf3fd148f"
+    },
+    {
+      "question": 12,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S03",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "Whistles arrive clipped to the aids, although they are logged separately. At the end, do not put yours into the general equipment crate. Unclip it and hand it back separately; reception staff count them before the next group.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Whistles arrive clipped to the aids, although they are logged separately. At the end, do not put yours into the general equipment crate. Unclip it and hand it back separately. Reception staff count them before the next group.",
+      "timecode": {
+        "startFrame": 19548027,
+        "endFrame": 20233341,
+        "sampleRateHz": 44100,
+        "startSeconds": 443.265918,
+        "endSeconds": 458.805918,
+        "durationSeconds": 15.54,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 38,
+        "mappedWordCount": 38,
+        "firstRecognizedWordProbability": 0.749512,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.012397,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-09.json",
+        "rawAsrSha256": "9bb5763b7b03cd4ff908d6a5e369b98ceecc1603d73d64534e78daca1052cfa2"
+      },
+      "ledgerRowSha256": "3567568a9f3eb39812d39d68b88957177e5a0e48132d211fbda8c96b1f686e56",
+      "planSegmentTextSha256": "32fbdf152b240acb3e0de671b0983e285301180c7435652a7606545f22845389"
+    },
+    {
+      "question": 13,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S04",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "Each pair has a spare paddle. Before you carry it down the path, show it to the assistant at the riverside gate. She will check the blade number against your boat; the check is not done at the equipment rack.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Each pair has a spare paddle. Before you carry it down the path, show it to the assistant at the Riverside Gate. She will check the blade number against your boat. The check is not done at the equipment rack.",
+      "timecode": {
+        "startFrame": 20249217,
+        "endFrame": 20867499,
+        "sampleRateHz": 44100,
+        "startSeconds": 459.165918,
+        "endSeconds": 473.185918,
+        "durationSeconds": 14.02,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 40,
+        "mappedWordCount": 40,
+        "firstRecognizedWordProbability": 0.994141,
+        "lastRecognizedWordProbability": 0.998535,
+        "chunkWordErrorRate": 0.012397,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-09.json",
+        "rawAsrSha256": "9bb5763b7b03cd4ff908d6a5e369b98ceecc1603d73d64534e78daca1052cfa2"
+      },
+      "ledgerRowSha256": "b9e892b0c4fb08643a9bb95f3842c509065f9d2a583105bd7481cff6aea05121",
+      "planSegmentTextSha256": "4f68ff671c7daa9470c4129eeedbb69053d60014b4c75bd99d835cf356f4ec7e"
+    },
+    {
+      "question": 14,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S05",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "We also lend dry bags for small essentials. They remain behind the desk while I give this safety talk, so do not take one from the bench. When the talk ends, collect the bag from reception and write its number on your locker slip.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "We also lend dry bags for small essentials. They remain behind the desk while I give this safety talk, so do not take one from the bench. When the talk ends, collect the bag from reception and write its number on your locker slip.",
+      "timecode": {
+        "startFrame": 20879847,
+        "endFrame": 21575745,
+        "sampleRateHz": 44100,
+        "startSeconds": 473.465918,
+        "endSeconds": 489.245918,
+        "durationSeconds": 15.78,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 44,
+        "mappedWordCount": 44,
+        "firstRecognizedWordProbability": 0.985352,
+        "lastRecognizedWordProbability": 0.989746,
+        "chunkWordErrorRate": 0.012397,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-09.json",
+        "rawAsrSha256": "9bb5763b7b03cd4ff908d6a5e369b98ceecc1603d73d64534e78daca1052cfa2"
+      },
+      "ledgerRowSha256": "2906532a4d9ce85ffeff2f25cee2c04514e54121b377405790fa91bf08f9dc8f",
+      "planSegmentTextSha256": "0850de2d779ffb0af02fc0ce47e507e7c6d4c262e5385dbf8fba9e274a659456"
+    },
+    {
+      "question": 15,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S06",
+      "renderedChunk": "chunk-09",
+      "focusPhrase": "The throw line is already secured beside the bank assistant's position. Leave it where it is when you move the boats; a trained staff member will remove it if needed. Beginners should not carry it to the water or practise with it today.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "The throw line is already secured beside the bank assistant's assistant's position. Leave it where it is when you move the boats. A trained staff member will remove it if needed. Beginners should not carry it to the water or practice with it today.",
+      "timecode": {
+        "startFrame": 21581037,
+        "endFrame": 22252394,
+        "sampleRateHz": 44100,
+        "startSeconds": 489.365918,
+        "endSeconds": 504.589433,
+        "durationSeconds": 15.223515,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 44,
+        "mappedWordCount": 44,
+        "firstRecognizedWordProbability": 0.993164,
+        "lastRecognizedWordProbability": 0.994141,
+        "chunkWordErrorRate": 0.012397,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-09.json",
+        "rawAsrSha256": "9bb5763b7b03cd4ff908d6a5e369b98ceecc1603d73d64534e78daca1052cfa2"
+      },
+      "ledgerRowSha256": "ed2702ae7983598390bf7cda3dcc2ba9ac9732bc8234625768fd7eef71502e24",
+      "planSegmentTextSha256": "9965fb9c5a00f2cb1678a3a7e2742414bd0f9388288ba1be2728c313fa49bba9"
+    },
+    {
+      "question": 16,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S07",
+      "renderedChunk": "chunk-11",
+      "focusPhrase": "Now, changing rooms. The upstairs room looks larger, but building work has closed it this week. Use the ground-floor changing room beside reception. The outdoor shelter is for wet equipment after the session, not for changing clothes.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Now, changing rooms. The upstairs room looks larger, but building work has closed it this week. Use the ground floor changing room beside reception. The outdoor shelter is for wet equipment after the session, not for changing clothes.",
+      "timecode": {
+        "startFrame": 23884922,
+        "endFrame": 24628007,
+        "sampleRateHz": 44100,
+        "startSeconds": 541.608209,
+        "endSeconds": 558.458209,
+        "durationSeconds": 16.85,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 38,
+        "mappedWordCount": 38,
+        "firstRecognizedWordProbability": 0.86377,
+        "lastRecognizedWordProbability": 0.99707,
+        "chunkWordErrorRate": 0.016447,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-11.json",
+        "rawAsrSha256": "e99e3e6c4abdf25797697f068d0c70e3d39b3f3f1659bb1b3df9a087e8decdec"
+      },
+      "ledgerRowSha256": "afe011a3b8a52fd2e6eb3afc46bd0bd5050f2e02bfdf48e36d960c52b20ec80f",
+      "planSegmentTextSha256": "0a5c230977efe67d5aaed11d6ee2a40fdbae5c482881b939d07f08d2d32a7653"
+    },
+    {
+      "question": 17,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S08",
+      "renderedChunk": "chunk-11",
+      "focusPhrase": "Once changed, place bags in the lockers and meet beside the equipment rack. We launch in a fixed order. The instructor enters first and waits downstream. Paddlers then launch one at a time. The bank assistant goes last after checking that nothing has been left behind.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Once changed, place bags in the lockers and meet beside the equipment rack. We launch in a fixed order. The instructor enters first and waits downstream. stream. Paddlers then launch one at a time. The bank assistant goes last after checking that nothing has been left behind.",
+      "timecode": {
+        "startFrame": 24635945,
+        "endFrame": 25508243,
+        "sampleRateHz": 44100,
+        "startSeconds": 558.638209,
+        "endSeconds": 578.418209,
+        "durationSeconds": 19.78,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 46,
+        "mappedWordCount": 46,
+        "firstRecognizedWordProbability": 0.998535,
+        "lastRecognizedWordProbability": 0.999512,
+        "chunkWordErrorRate": 0.016447,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-11.json",
+        "rawAsrSha256": "e99e3e6c4abdf25797697f068d0c70e3d39b3f3f1659bb1b3df9a087e8decdec"
+      },
+      "ledgerRowSha256": "2d71bed0f32f49708fdea31c1c2c5d77be35afe793eeca1ce98cfc3fef63799b",
+      "planSegmentTextSha256": "bbbe1584c6c4c9cab1ab047c6a2fb28611ad047b948877894279733a75c2efc2"
+    },
+    {
+      "question": 18,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S09",
+      "renderedChunk": "chunk-11",
+      "focusPhrase": "You may hear three possible signals. One short whistle means look towards the instructor and wait for a hand signal. Two short blasts mean gather near the bank. A continuous blast means leave the water at the nearest safe landing point. Today we will practise the two-blast signal before travelling upstream.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "You may hear three possible signals. One short whistle means look towards the instructor and wait for a hand signal. Two short blasts mean gather near the bank. A continuous blast means leave the water at the nearest safe landing Today, we will practice the two -blast signal before traveling upstream.",
+      "timecode": {
+        "startFrame": 25511771,
+        "endFrame": 26559587,
+        "sampleRateHz": 44100,
+        "startSeconds": 578.498209,
+        "endSeconds": 602.258209,
+        "durationSeconds": 23.76,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 52,
+        "mappedWordCount": 51,
+        "firstRecognizedWordProbability": 0.982422,
+        "lastRecognizedWordProbability": 0.993164,
+        "chunkWordErrorRate": 0.016447,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-11.json",
+        "rawAsrSha256": "e99e3e6c4abdf25797697f068d0c70e3d39b3f3f1659bb1b3df9a087e8decdec"
+      },
+      "ledgerRowSha256": "4447ad928c9c69041e0223fef83cfc64f29c68582bf95bf3cce50a9dfa80718f",
+      "planSegmentTextSha256": "e4e15a35ee152f023732640d9e5aba3d9f616d52692209ad305f34b822c405ad"
+    },
+    {
+      "question": 19,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S10",
+      "renderedChunk": "chunk-11",
+      "focusPhrase": "People often ask whether light rain cancels a session. Usually it does not. We check river level, wind and official weather information together. If conditions become unsafe, the centre manager—not an individual participant—makes the cancellation decision and sends a text to the booking contact.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "People often ask whether light rain cancels a session. Usually, it does not. We check river level, wind, and official weather information together. If conditions become unsafe, the center manager, not an individual participant, makes the cancellation decision and sends a text to the booking contact.",
+      "timecode": {
+        "startFrame": 26571053,
+        "endFrame": 27552719,
+        "sampleRateHz": 44100,
+        "startSeconds": 602.518209,
+        "endSeconds": 624.778209,
+        "durationSeconds": 22.26,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 46,
+        "mappedWordCount": 46,
+        "firstRecognizedWordProbability": 0.990234,
+        "lastRecognizedWordProbability": 0.996094,
+        "chunkWordErrorRate": 0.016447,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-11.json",
+        "rawAsrSha256": "e99e3e6c4abdf25797697f068d0c70e3d39b3f3f1659bb1b3df9a087e8decdec"
+      },
+      "ledgerRowSha256": "7c4ea74f4f5079ed97dd748f43c9d945a6d31a7f42a841592e44baca491e9fe7",
+      "planSegmentTextSha256": "fadbff18e1c8b5bb8a2f4542e60e557c961af057172ba43b364152de56d2caca"
+    },
+    {
+      "question": 20,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P2-S14",
+      "renderedChunk": "chunk-12",
+      "focusPhrase": "When we return, carry the boats to the marked stands. Leave wet buoyancy aids on the ventilated rail, not in your locker. Rinse the paddles at the hose, but report any damage before you clean it, so staff can see the problem clearly.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "When we return, carry the boats to the marked stands. Leave wet buoyancy aids on the ventilated rail, not in your locker. Rinse the paddles at the hose, but report any damage before you clean it so staff can see the problem clearly.",
+      "timecode": {
+        "startFrame": 29703648,
+        "endFrame": 30448497,
+        "sampleRateHz": 44100,
+        "startSeconds": 673.552109,
+        "endSeconds": 690.442109,
+        "durationSeconds": 16.89,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 43,
+        "mappedWordCount": 43,
+        "firstRecognizedWordProbability": 0.890137,
+        "lastRecognizedWordProbability": 0.998535,
+        "chunkWordErrorRate": 0.012048,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-12.json",
+        "rawAsrSha256": "91e0633000e00af40f173f6cf07f4b36cbc20f787f379ab7e8f1051c0862c63e"
+      },
+      "ledgerRowSha256": "34aa0ba75b7ff1adbe289dd9e471d6b5e82a7618da2067e3a77575f767074747",
+      "planSegmentTextSha256": "9fa26aafc35cf30adc0cb2327a83baaeafed9c6fe0e1e444f1f1ef552b0b14d2"
+    },
+    {
+      "question": 21,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T03",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "So for the opening headlines, we shorten the summary and keep only one sentence per story. I had considered dropping the local arts item entirely, but its full report appears later and still needs a headline.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "So for the opening headlines, we shorten the summary and keep only one sentence per story. I had considered dropping the local arts item entirely, but its full report appears later and still needs a headline.",
+      "timecode": {
+        "startFrame": 35406643,
+        "endFrame": 36097249,
+        "sampleRateHz": 44100,
+        "startSeconds": 802.871723,
+        "endSeconds": 818.531723,
+        "durationSeconds": 15.66,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 36,
+        "mappedWordCount": 36,
+        "firstRecognizedWordProbability": 0.509766,
+        "lastRecognizedWordProbability": 0.996582,
+        "chunkWordErrorRate": 0.152778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-15.json",
+        "rawAsrSha256": "7d6205d55b6bbcecab929147d967616add70a1134ece85ab4f7b1e25477a720b"
+      },
+      "ledgerRowSha256": "43f4a7bbbc266ccf73d3f4b8a708796173f884c1065f8a47e7ccdd2298a19fc3",
+      "planSegmentTextSha256": "bea7f7fb0fdf193dc9386c9b8be323908e88bf8283a5ae273ccade5bb81502c2"
+    },
+    {
+      "question": 22,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T04",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "Next is the recorded market interview. The raw interview lasts four minutes forty. The strongest answer begins after a long introduction, so trim the insert to two minutes and start with the vendor explaining the price change.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Next is the recorded market interview. The raw interview lasts 4 minutes 40. The strongest answer begins after a long introduction, so trim the insert to two minutes and start with the vendor explaining the price change.",
+      "timecode": {
+        "startFrame": 36099895,
+        "endFrame": 36789619,
+        "sampleRateHz": 44100,
+        "startSeconds": 818.591723,
+        "endSeconds": 834.231723,
+        "durationSeconds": 15.64,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 37,
+        "mappedWordCount": 37,
+        "firstRecognizedWordProbability": 0.888672,
+        "lastRecognizedWordProbability": 0.992188,
+        "chunkWordErrorRate": 0.152778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-15.json",
+        "rawAsrSha256": "7d6205d55b6bbcecab929147d967616add70a1134ece85ab4f7b1e25477a720b"
+      },
+      "ledgerRowSha256": "386ffba4aa8513621182e6a93fef06d8c3658caaf2359bb83f90661b489cf84b",
+      "planSegmentTextSha256": "09b1286df733ffb9b0b792145a9c0ffdfd82be80423d94d523e1184b52a9b735"
+    },
+    {
+      "question": 23,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T06",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "The traffic bulletin is scheduled after the culture review, yet the road closure begins during our broadcast. Move that bulletin earlier, immediately after the opening headlines, so the information reaches commuters in time.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "The traffic bulletin is scheduled after the culture review, yet the road closure begins during our broadcast. Move that bulletin earlier, immediately after the opening headlines, so the information reaches commuters in time.",
+      "timecode": {
+        "startFrame": 37257961,
+        "endFrame": 37917697,
+        "sampleRateHz": 44100,
+        "startSeconds": 844.851723,
+        "endSeconds": 859.811723,
+        "durationSeconds": 14.96,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 33,
+        "mappedWordCount": 33,
+        "firstRecognizedWordProbability": 0.962402,
+        "lastRecognizedWordProbability": 0.997559,
+        "chunkWordErrorRate": 0.152778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-15.json",
+        "rawAsrSha256": "7d6205d55b6bbcecab929147d967616add70a1134ece85ab4f7b1e25477a720b"
+      },
+      "ledgerRowSha256": "05c466e31b16ee567aa9bf2ff5239a80d718db92fdf6652c1dab352e0699a4da",
+      "planSegmentTextSha256": "553e1015cfffb055fbe7328f9a066ac626707b650c87b13314cd624183646aa9"
+    },
+    {
+      "question": 24,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T08",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "Use selected listener messages instead. We already have permission to broadcast five, and the presenter can read three contrasting responses. That replaces the cancelled guest without pretending we have a new interview.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "You selected listener messages instead. We already have permission to broadcast five and the presenter can read three contrasting responses. That replaces the cancelled guest without pretending we have a new interview.",
+      "timecode": {
+        "startFrame": 38460127,
+        "endFrame": 39117217,
+        "sampleRateHz": 44100,
+        "startSeconds": 872.111723,
+        "endSeconds": 887.011723,
+        "durationSeconds": 14.9,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 32,
+        "mappedWordCount": 32,
+        "firstRecognizedWordProbability": 0.597168,
+        "lastRecognizedWordProbability": 0.999023,
+        "chunkWordErrorRate": 0.152778,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-15.json",
+        "rawAsrSha256": "7d6205d55b6bbcecab929147d967616add70a1134ece85ab4f7b1e25477a720b"
+      },
+      "ledgerRowSha256": "0cd378813a7563e827d48aa70af6b40e3a7c37fe132744f188373065fb3a3b98",
+      "planSegmentTextSha256": "bbf540bcccb2d702fd6c1ab6bd18c9820bb1005efdc007e40f5a2210d7cbcf4f"
+    },
+    {
+      "question": 25,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T09",
+      "renderedChunk": "chunk-15",
+      "focusPhrase": "For the closing trail, the recorded version advertises next week’s guest by name. Since the booking is not confirmed, we should replace the name with the programme topic rather than delete the whole trail.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "For the closing trail, the recorded version advertises next week's week's guest by name. Since the booking is not confirmed, we should replace the name with the program topic, rather than delete the whole trail.",
+      "timecode": {
+        "startFrame": 39118981,
+        "endFrame": 39724212,
+        "sampleRateHz": 44100,
+        "startSeconds": 887.051723,
+        "endSeconds": 900.775782,
+        "durationSeconds": 13.724059,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 35,
+        "mappedWordCount": 35,
+        "firstRecognizedWordProbability": 0.976074,
+        "lastRecognizedWordProbability": 0.990723,
+        "chunkWordErrorRate": 0.128472,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-15-conditioned.json",
+        "rawAsrSha256": "eddc866a1a3f5643021fc1b6e6901db06f5911f06b93437a14c97739cf3ae374"
+      },
+      "ledgerRowSha256": "b775d0e496ef9842d2937813fcff38144d811a863914b1720393dc5ef35e5767",
+      "planSegmentTextSha256": "7f1de6772e8dfe60443ad41ba422416a90905f98441bf93f43530de301cc93c7"
+    },
+    {
+      "question": 26,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T12",
+      "renderedChunk": "chunk-18",
+      "focusPhrase": "rundown",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "rundown.",
+      "timecode": {
+        "startFrame": 42181833,
+        "endFrame": 42239163,
+        "sampleRateHz": 44100,
+        "startSeconds": 956.50415,
+        "endSeconds": 957.80415,
+        "durationSeconds": 1.3,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.967285,
+        "lastRecognizedWordProbability": 0.967285,
+        "chunkWordErrorRate": 0.034014,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-18.json",
+        "rawAsrSha256": "0add468f624b281a818e4875033d03cbda854f4648faf44f42f35b14b417eb79"
+      },
+      "ledgerRowSha256": "4416871ccee8ac35efe5f350b21e7165bad93ca2980978e838044d61d607b66a",
+      "planSegmentTextSha256": "1e55298d7394bb8fc461450aa2f8b5a3d7ab29875371926883882bee279dbdf7"
+    },
+    {
+      "question": 27,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T13",
+      "renderedChunk": "chunk-18",
+      "focusPhrase": "news bulletin",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "news bulletin",
+      "timecode": {
+        "startFrame": 42666051,
+        "endFrame": 42733965,
+        "sampleRateHz": 44100,
+        "startSeconds": 967.48415,
+        "endSeconds": 969.02415,
+        "durationSeconds": 1.54,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.941895,
+        "lastRecognizedWordProbability": 0.997559,
+        "chunkWordErrorRate": 0.034014,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-18.json",
+        "rawAsrSha256": "0add468f624b281a818e4875033d03cbda854f4648faf44f42f35b14b417eb79"
+      },
+      "ledgerRowSha256": "3d23b96ea8269c77cf8e3e871eb7333a5fd0917732e3a2360f8b4ce700600ae8",
+      "planSegmentTextSha256": "0bfe3edffd656fcd5db5eb3f46d20349c1d18298d4056b17d4301be8fa51845a"
+    },
+    {
+      "question": 28,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T14",
+      "renderedChunk": "chunk-18",
+      "focusPhrase": "two minutes",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "two minutes,",
+      "timecode": {
+        "startFrame": 43215537,
+        "endFrame": 43271985,
+        "sampleRateHz": 44100,
+        "startSeconds": 979.94415,
+        "endSeconds": 981.22415,
+        "durationSeconds": 1.28,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.769043,
+        "lastRecognizedWordProbability": 0.99707,
+        "chunkWordErrorRate": 0.034014,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-18.json",
+        "rawAsrSha256": "0add468f624b281a818e4875033d03cbda854f4648faf44f42f35b14b417eb79"
+      },
+      "ledgerRowSha256": "7a0e8f4833c10cceba9dae22fe6549dae61f50f345b00793882476fbb5a6bfc9",
+      "planSegmentTextSha256": "409bc8e3d2b35043ae0990226e7cd56a6111c5158111115611b202d0552993d0"
+    },
+    {
+      "question": 29,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T16",
+      "renderedChunk": "chunk-18",
+      "focusPhrase": "red",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "red.",
+      "timecode": {
+        "startFrame": 44079897,
+        "endFrame": 44125761,
+        "sampleRateHz": 44100,
+        "startSeconds": 999.54415,
+        "endSeconds": 1000.58415,
+        "durationSeconds": 1.04,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.983887,
+        "lastRecognizedWordProbability": 0.983887,
+        "chunkWordErrorRate": 0.034014,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-18.json",
+        "rawAsrSha256": "0add468f624b281a818e4875033d03cbda854f4648faf44f42f35b14b417eb79"
+      },
+      "ledgerRowSha256": "0b181a627803d79294c1eecd3b62169876fa2eab0e3fe116addf3f174e37e103",
+      "planSegmentTextSha256": "16972e47fb00d408061b5ab5a7487befebe8f077a9b0111fcb29c56c73fd9ff0"
+    },
+    {
+      "question": 30,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P3-T25",
+      "renderedChunk": "chunk-19",
+      "focusPhrase": "pronunciations",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "pronunciations",
+      "timecode": {
+        "startFrame": 48967927,
+        "endFrame": 49035841,
+        "sampleRateHz": 44100,
+        "startSeconds": 1110.383832,
+        "endSeconds": 1111.923832,
+        "durationSeconds": 1.54,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.919434,
+        "lastRecognizedWordProbability": 0.919434,
+        "chunkWordErrorRate": 0.056,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-19.json",
+        "rawAsrSha256": "4769324e0b519924d7d6ef1b39218d22ec49b7211e0f5b70225a23056226d33c"
+      },
+      "ledgerRowSha256": "a84809af0ad6dc012edf4107cfcf840e164b08d20734589525ad3b015fae40a1",
+      "planSegmentTextSha256": "8836a7fae9155737276d74413351fe3ec6423a26587f739cbd89e3b9d8becd93"
+    },
+    {
+      "question": 31,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S02",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "nitrogen oxides",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "nitrogen oxides,",
+      "timecode": {
+        "startFrame": 53425451,
+        "endFrame": 53523353,
+        "sampleRateHz": 44100,
+        "startSeconds": 1211.461474,
+        "endSeconds": 1213.681474,
+        "durationSeconds": 2.22,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.941406,
+        "lastRecognizedWordProbability": 0.992676,
+        "chunkWordErrorRate": 0.013216,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-22.json",
+        "rawAsrSha256": "c5a97c9f5df216adbcffb70d40eb47ec5248d5ced1eeee8447ef4be32c42f8e2"
+      },
+      "ledgerRowSha256": "1fb3f5bdff457133a97356e30f17c8d8bd5d9d92870ac41f89a87dd878f96a8c",
+      "planSegmentTextSha256": "49daa077fbb9c5f963d5ddcf165c2008e9028d9f2942477e533adff20f4dfdf3"
+    },
+    {
+      "question": 32,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S03",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "ammonia",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "ammonia",
+      "timecode": {
+        "startFrame": 54997175,
+        "endFrame": 55051859,
+        "sampleRateHz": 44100,
+        "startSeconds": 1247.101474,
+        "endSeconds": 1248.341474,
+        "durationSeconds": 1.24,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 1,
+        "mappedWordCount": 1,
+        "firstRecognizedWordProbability": 0.969238,
+        "lastRecognizedWordProbability": 0.969238,
+        "chunkWordErrorRate": 0.013216,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-22.json",
+        "rawAsrSha256": "c5a97c9f5df216adbcffb70d40eb47ec5248d5ced1eeee8447ef4be32c42f8e2"
+      },
+      "ledgerRowSha256": "0dd867f82d3f919060fc143b5dd44c4b86e976c601af00ed32194270fdf7cd51",
+      "planSegmentTextSha256": "7279f9e97df3c650f9791756081d0fe24032232e94c9f9a432f0a36b0ebaa9f1"
+    },
+    {
+      "question": 33,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S04",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "nitric acid",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Nitric acid",
+      "timecode": {
+        "startFrame": 55612811,
+        "endFrame": 55686017,
+        "sampleRateHz": 44100,
+        "startSeconds": 1261.061474,
+        "endSeconds": 1262.721474,
+        "durationSeconds": 1.66,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.991211,
+        "lastRecognizedWordProbability": 0.993652,
+        "chunkWordErrorRate": 0.013216,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-22.json",
+        "rawAsrSha256": "c5a97c9f5df216adbcffb70d40eb47ec5248d5ced1eeee8447ef4be32c42f8e2"
+      },
+      "ledgerRowSha256": "1e49b106f415b7d5c03a049b8ae655a32efbc1822b68baf56dcedc2c2bd1b61a",
+      "planSegmentTextSha256": "a29e48f8697071745968dfd99a7df790018ab3ff5cac956c13cdf34f8aeaa82b"
+    },
+    {
+      "question": 34,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S04",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "ammonium nitrate",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "ammonium nitrate,",
+      "timecode": {
+        "startFrame": 55827137,
+        "endFrame": 55918865,
+        "sampleRateHz": 44100,
+        "startSeconds": 1265.921474,
+        "endSeconds": 1268.001474,
+        "durationSeconds": 2.08,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.983887,
+        "lastRecognizedWordProbability": 0.997559,
+        "chunkWordErrorRate": 0.013216,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-22.json",
+        "rawAsrSha256": "c5a97c9f5df216adbcffb70d40eb47ec5248d5ced1eeee8447ef4be32c42f8e2"
+      },
+      "ledgerRowSha256": "e639c890685895a071dd6e6b69318ffcf7aa4e98ee5bcae011ffb02c1f6be93c",
+      "planSegmentTextSha256": "a29e48f8697071745968dfd99a7df790018ab3ff5cac956c13cdf34f8aeaa82b"
+    },
+    {
+      "question": 35,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S05",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "low temperatures",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Low temperatures",
+      "timecode": {
+        "startFrame": 56627111,
+        "endFrame": 56687087,
+        "sampleRateHz": 44100,
+        "startSeconds": 1284.061474,
+        "endSeconds": 1285.421474,
+        "durationSeconds": 1.36,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.992676,
+        "lastRecognizedWordProbability": 0.995605,
+        "chunkWordErrorRate": 0.013216,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-22.json",
+        "rawAsrSha256": "c5a97c9f5df216adbcffb70d40eb47ec5248d5ced1eeee8447ef4be32c42f8e2"
+      },
+      "ledgerRowSha256": "9b9be6ee66f8f252f8cc831f4900ce612b7a17911575b36ace4cc4dae3369dc7",
+      "planSegmentTextSha256": "9061d688212805fa16239d9768a1aebc66d5a3781008ec38db4490c927f862fe"
+    },
+    {
+      "question": 36,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S05",
+      "renderedChunk": "chunk-22",
+      "focusPhrase": "filter samples",
+      "focusPhraseBasis": "ANSWER_ANCHOR_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "filter samples",
+      "timecode": {
+        "startFrame": 57468539,
+        "endFrame": 57547037,
+        "sampleRateHz": 44100,
+        "startSeconds": 1303.141474,
+        "endSeconds": 1304.921474,
+        "durationSeconds": 1.78,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 2,
+        "mappedWordCount": 2,
+        "firstRecognizedWordProbability": 0.991699,
+        "lastRecognizedWordProbability": 0.999512,
+        "chunkWordErrorRate": 0.013216,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-22.json",
+        "rawAsrSha256": "c5a97c9f5df216adbcffb70d40eb47ec5248d5ced1eeee8447ef4be32c42f8e2"
+      },
+      "ledgerRowSha256": "b12c910419d65e33bb9355a7881acc9ee3ef23db62467f90bee195079bea9d41",
+      "planSegmentTextSha256": "9061d688212805fa16239d9768a1aebc66d5a3781008ec38db4490c927f862fe"
+    },
+    {
+      "question": 37,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S06",
+      "renderedChunk": "chunk-24",
+      "focusPhrase": "This helps explain why nitrate often shows a seasonal pattern. A cold winter atmosphere can support particulate nitrate, and a winter inversion may trap pollutants close to the ground. In summer, stronger mixing can dilute local concentrations and greater heat can shift volatile material away from particles.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "This helps explain why nitrate often shows a seasonal pattern. A cold winter atmosphere can support particulate nitrate, and a winter inversion may trap pollutants close to the ground. In summer, stronger mixing can dilute local concentrations, and greater heat can shift volatile material away from particles.",
+      "timecode": {
+        "startFrame": 59238249,
+        "endFrame": 60219474,
+        "sampleRateHz": 44100,
+        "startSeconds": 1343.270952,
+        "endSeconds": 1365.520952,
+        "durationSeconds": 22.25,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 47,
+        "mappedWordCount": 47,
+        "firstRecognizedWordProbability": 0.958008,
+        "lastRecognizedWordProbability": 0.994141,
+        "chunkWordErrorRate": 0.007605,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-24.json",
+        "rawAsrSha256": "e4e0653e4e45dc9281c3bb6b2b8f64125ed91eea730a7c2ed72fab5414d4a0e3"
+      },
+      "ledgerRowSha256": "3022cc1a506e99f8194a3c270d86311ec1010484fd4cbd566384e2e93767b9fc",
+      "planSegmentTextSha256": "fb7d45abf9f7da3df4a16342362f63c670776a9e30dfac78ed841a385800c36e"
+    },
+    {
+      "question": 38,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S09",
+      "renderedChunk": "chunk-24",
+      "focusPhrase": "Total particle mass remains valuable, but it cannot by itself identify which chemical components produced a peak. Two days may have similar fine-particle mass while one contains more nitrate and the other more organic material or sulfate. Composition measurements therefore change the scientific interpretation.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Total particle mass remains valuable, but it cannot by itself identify which chemical components produced a peak. Two days may have similar fine particle mass, while one contains more nitrate and the other more organic material, or sulfate. Composition measurements therefore change the scientific interpretation.",
+      "timecode": {
+        "startFrame": 62043450,
+        "endFrame": 63025116,
+        "sampleRateHz": 44100,
+        "startSeconds": 1406.880952,
+        "endSeconds": 1429.140952,
+        "durationSeconds": 22.26,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 45,
+        "mappedWordCount": 45,
+        "firstRecognizedWordProbability": 0.974121,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.007605,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-24.json",
+        "rawAsrSha256": "e4e0653e4e45dc9281c3bb6b2b8f64125ed91eea730a7c2ed72fab5414d4a0e3"
+      },
+      "ledgerRowSha256": "ebd14ce71a8b13b7fcddb5a186c320453225b635bc3605939804a344a9d7e928",
+      "planSegmentTextSha256": "ce6914fe3a211695ac5dcccc8a95eb4b3d94efee3f1a0939ddc5db70c920cb3e"
+    },
+    {
+      "question": 39,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S10",
+      "renderedChunk": "chunk-24",
+      "focusPhrase": "Filters also introduce uncertainty. Ammonium nitrate is semi-volatile. Material collected on a filter can partly evaporate during sampling, transport or storage, especially if temperature changes. A low laboratory result may therefore reflect loss from the filter rather than low nitrate in the original air.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "Filtres also introduce uncertainty. Ammonium nitrate is semi -volatile. Material collected on a filter can partly evaporate during sampling, transport or storage, especially if temperature changes. A low laboratory result may therefore reflect loss from the filter rather than low nitrate in the original air.",
+      "timecode": {
+        "startFrame": 62994246,
+        "endFrame": 64037652,
+        "sampleRateHz": 44100,
+        "startSeconds": 1428.440952,
+        "endSeconds": 1452.100952,
+        "durationSeconds": 23.66,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 45,
+        "mappedWordCount": 45,
+        "firstRecognizedWordProbability": 0.416016,
+        "lastRecognizedWordProbability": 0.998047,
+        "chunkWordErrorRate": 0.007605,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-24.json",
+        "rawAsrSha256": "e4e0653e4e45dc9281c3bb6b2b8f64125ed91eea730a7c2ed72fab5414d4a0e3"
+      },
+      "ledgerRowSha256": "e8d118e01a0a49903d03da0c756c34ecc3ccf8a6920249a75b3f0c5564c3249c",
+      "planSegmentTextSha256": "4589fe0885208d9acdae21056421f16ba3953cd3d9ee2ff10f730ce4f4150b7a"
+    },
+    {
+      "question": 40,
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "evidenceSegment": "P4-S17",
+      "renderedChunk": "chunk-26",
+      "focusPhrase": "The central lesson is methodological. Nitrate is produced through linked chemical steps, distributed by moving air and observed through imperfect instruments. The best explanation joins the precursor record, the meteorology and more than one measurement method rather than relying on total particle mass alone. It should also report uncertainty openly, distinguish correlation from mechanism, and test whether the same interpretation survives at different sites and times. That caution matters whenever a chemically dynamic pollutant is represented by a single daily number.",
+      "focusPhraseBasis": "LEDGER_EVIDENCE_EXACT_IN_RENDERED_TURN",
+      "recognizedPhrase": "The central lesson is methodological. Nitrate is produced through linked chemical steps, distributed by moving air, and observed through imperfect instruments. The best explanation joins the precursor record, the meteorology, and more than one measurement method, rather than relying on total particle mass alone. It should also report uncertainty openly, distinguish correlation from mechanism, and test whether the same interpretation survives at different sites and times. That caution matters whenever a chemically dynamic pollutant is represented by a single daily number.",
+      "timecode": {
+        "startFrame": 69890477,
+        "endFrame": 71693108,
+        "sampleRateHz": 44100,
+        "startSeconds": 1584.818073,
+        "endSeconds": 1625.694059,
+        "durationSeconds": 40.875986,
+        "basis": "LOCAL_MLX_WHISPER_WORD_TIMESTAMPS_ALIGNED_TO_HASH_BOUND_ELEVENLABS_V4_RENDERED_SCRIPT",
+        "contextPaddingSeconds": 0.35
+      },
+      "alignmentEvidence": {
+        "targetExpectedWordCount": 81,
+        "mappedWordCount": 81,
+        "firstRecognizedWordProbability": 0.880371,
+        "lastRecognizedWordProbability": 0.998535,
+        "chunkWordErrorRate": 0.0,
+        "rawAsrPath": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/raw-asr/set-26/chunk-26.json",
+        "rawAsrSha256": "7b4b38a42df0d38ac5347702b26653a2090a891b3d55b939445e261950eeb8a8"
+      },
+      "ledgerRowSha256": "fc411cd69ef47bb571d29b6a7abda2393decbe34f9641af99aaa609feac0e38a",
+      "planSegmentTextSha256": "331409cbbebde9af6c9fbda434f60b1e4ac37c0b2ebd1a39a07a8466bc976d09"
+    }
+  ],
+  "gates": {
+    "publicMp3HashMatchesQaBoundV4": "PASS",
+    "exactly40Windows": "PASS",
+    "allWindowsPositiveAndAtMost60Seconds": "PASS",
+    "allQuestionWindowStartsChronological": "PASS",
+    "independentReview": "PENDING",
+    "humanListening": "PENDING",
+    "release": "NOT_APPROVED"
+  }
+}

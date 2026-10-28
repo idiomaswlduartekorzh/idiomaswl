@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_LISTENING_PHRASE_ALIGNMENT_STAGING_MANIFEST",
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sets": [
+    {
+      "set": 23,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-23-phrase-alignment-staging.json",
+      "sha256": "06d2903f0fa091d44c74b06f68c06f69355457c0dcc97ef39ca37695c3a3e11b",
+      "windows": 40,
+      "maximumWindowSeconds": 4.34,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 24,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-24-phrase-alignment-staging.json",
+      "sha256": "fee3b8123f6621daafed470edada7e15803de58140d9d004765dd072f1f2434c",
+      "windows": 40,
+      "maximumWindowSeconds": 2.64,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 25,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-25-phrase-alignment-staging.json",
+      "sha256": "ed6c4bd737effac43e41f611020c9eec01f9ce8e14e66d3d33619d159c3e0083",
+      "windows": 40,
+      "maximumWindowSeconds": 4.58,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 26,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-26-phrase-alignment-staging.json",
+      "sha256": "eb426e03e38998e0ed6809e2e33d18f4ca76a21ab69f65903f4e0a85ccc6c25c",
+      "windows": 40,
+      "maximumWindowSeconds": 40.875986,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 27,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-27-phrase-alignment-staging.json",
+      "sha256": "9767c7b98237c604991ecd27dadb0d063a237724637234ed0fb46da70f372bb5",
+      "windows": 40,
+      "maximumWindowSeconds": 18.12,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 28,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-28-phrase-alignment-staging.json",
+      "sha256": "75abf8763e77f56128e22d01068baf55637f364d8d989245b4c3e29c0a298344",
+      "windows": 40,
+      "maximumWindowSeconds": 13.68,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 29,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-29-phrase-alignment-staging.json",
+      "sha256": "c85befa68673186b80cd48f81c1d3cf3f9d35fe40c1df75aaff737aa7118727c",
+      "windows": 40,
+      "maximumWindowSeconds": 16.32,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 30,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-30-phrase-alignment-staging.json",
+      "sha256": "df0b1fb5057c5f95ef421611fd931271dbe69327904c3c95f47e8199607f9555",
+      "windows": 40,
+      "maximumWindowSeconds": 14.46,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 31,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-31-phrase-alignment-staging.json",
+      "sha256": "33d560eef3bbf5d3b9d17ff57b26af96da1214b880191f489ffdd6017a62fe0a",
+      "windows": 40,
+      "maximumWindowSeconds": 45.36,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 32,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-32-phrase-alignment-staging.json",
+      "sha256": "079c3846cf1c7f4ded1b3b429977ff261c3824efe388f028c2c1601debbbb66d",
+      "windows": 40,
+      "maximumWindowSeconds": 32.98,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 33,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-33-phrase-alignment-staging.json",
+      "sha256": "f4521752454f9e629fc7ac3763c1fbce3a3a258707a1e6117614560930e77494",
+      "windows": 40,
+      "maximumWindowSeconds": 11.94,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 34,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-34-phrase-alignment-staging.json",
+      "sha256": "c760d7f3147b90f0b303f3f5b37e18d3cfdb34330644d5a6eb37a73454179dee",
+      "windows": 40,
+      "maximumWindowSeconds": 10.7,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 35,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-35-phrase-alignment-staging.json",
+      "sha256": "847dff8e6e9211801713c8e8a0d65910817a4d3d1b2fcbf1cc03cdc5da099d1a",
+      "windows": 40,
+      "maximumWindowSeconds": 11.5,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 36,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-36-phrase-alignment-staging.json",
+      "sha256": "53f9e4ad2cf851c8115376e13b64d2380123511a67168dc5e51f1a315e20fa27",
+      "windows": 40,
+      "maximumWindowSeconds": 10.86,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 37,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-37-phrase-alignment-staging.json",
+      "sha256": "7b4da9f4a771082ecc0c0bb26c3401dcfe28731dd0880f7e4773502b917d84d5",
+      "windows": 40,
+      "maximumWindowSeconds": 13.15,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 38,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-38-phrase-alignment-staging.json",
+      "sha256": "d3b504e43e0e1587cba7814af67d350afd02331db867e59310976c6c28807bf2",
+      "windows": 40,
+      "maximumWindowSeconds": 11.82,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 39,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-39-phrase-alignment-staging.json",
+      "sha256": "19c8eb7c18de569b118a0560ce184b0a947a083a71964cfbe77a830d1bb8e595",
+      "windows": 40,
+      "maximumWindowSeconds": 13.52,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    },
+    {
+      "set": 40,
+      "artifact": "/private/tmp/ielts-prod-audit.9UhQtF/staging/ielts-guided-listening-alignment-23-40/set-40-phrase-alignment-staging.json",
+      "sha256": "1676500d6fec655a1f3cb236fbe3e5137ff47bed6bae25d3c3525f788f77b1a3",
+      "windows": 40,
+      "maximumWindowSeconds": 10.4,
+      "status": "PENDING_INDEPENDENT_REVIEW"
+    }
+  ]
+}

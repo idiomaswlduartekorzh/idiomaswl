@@ -1,0 +1,1983 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 30,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-30.ts",
+      "sha256": "20b9e446aac6f815ab69f5e2b6c05df43e2e0a7d241fbdbc41019ce1a16bde27"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "fill",
+          "questionText": "Question 1",
+          "acceptedResponses": [
+            "glass cover"
+          ]
+        },
+        "sourceExcerpt": "A glass cover formed the upper sloping surface above the brine.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 1» y acepta «glass cover». La oración fuente dice «A glass cover formed the upper sloping surface above the brine.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 1.",
+        "ledgerRowSha256": "05020c3f35bdd8c93bb859078be107b653f93444ca3b345ef73c9532e98f5b8b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "fill",
+          "questionText": "Question 2",
+          "acceptedResponses": [
+            "brine"
+          ]
+        },
+        "sourceExcerpt": "above the brine",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 2» y acepta «brine». La oración fuente dice «above the brine». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 2.",
+        "ledgerRowSha256": "bd79d94a8f7e8998c28cfe9fd516b166e82822b735afb9026289900a17f4b2eb",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "fill",
+          "questionText": "Question 3",
+          "acceptedResponses": [
+            "steel base",
+            "galvanised steel"
+          ]
+        },
+        "sourceExcerpt": "Beneath the liquid lay a galvanised steel base, two millimetres thick.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 3» y acepta «steel base» / «galvanised steel». La oración fuente dice «Beneath the liquid lay a galvanised steel base, two millimetres thick.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 3.",
+        "ledgerRowSha256": "0d3ba63b0870423a6c7b68f4da45664926dfaa3c0fb4512f53c9a1adedf53651",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "fill",
+          "questionText": "Question 4",
+          "acceptedResponses": [
+            "absorber coating",
+            "Fe2O3"
+          ]
+        },
+        "sourceExcerpt": "The enhanced version placed an absorber coating of Fe2O3 directly on this metal, with a reported thickness of about 0.8 to 1.0 millimetres.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 4» y acepta «absorber coating» / «Fe2O3». La oración fuente dice «The enhanced version placed an absorber coating of Fe2O3 directly on this metal, with a reported thickness of about 0.8 to 1.0 millimetres.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 4.",
+        "ledgerRowSha256": "f1a4fc50b47fd8f8f27a5c9bb320f6d3e293340f578ce68f1714b5e556ac7211",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "fill",
+          "questionText": "Question 5",
+          "acceptedResponses": [
+            "EPS insulation",
+            "expanded polystyrene",
+            "EPS"
+          ]
+        },
+        "sourceExcerpt": "Expanded polystyrene, or EPS insulation, was fitted below the base and along the side walls to restrict heat loss.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 5» y acepta «EPS insulation» / «expanded polystyrene» / «EPS». La oración fuente dice «Expanded polystyrene, or EPS insulation, was fitted below the base and along the side walls to restrict heat loss.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The passage defines Expanded polystyrene as EPS insulation and later uses insulation for the same callout; the expanded form, defined acronym and noun phrase are exact, grammatical answers within the two-word cap.",
+        "ledgerRowSha256": "37f04a664e5ec6851fb8ef09fa205fb456203acbc4ebbc9bf105395abcbfbd42",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "fill",
+          "questionText": "Question 6",
+          "acceptedResponses": [
+            "wooden panels"
+          ]
+        },
+        "sourceExcerpt": "Seasoned wooden panels formed the outer frame.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Question 6» y acepta «wooden panels». La oración fuente dice «Seasoned wooden panels formed the outer frame.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 6.",
+        "ledgerRowSha256": "a9b0d08a4a8267a88e3cf0944b616a578bd1f18b9432f2390567695ce471bf97",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "fill",
+          "questionText": "What was the active surface area of each pond?",
+          "acceptedResponses": [
+            "1 m2"
+          ]
+        },
+        "sourceExcerpt": "an active surface area of 1 m2",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What was the active surface area of each pond?» y acepta «1 m2». La oración fuente dice «an active surface area of 1 m2». Esa oración contiene la respuesta y la conecta con «active», «surface», «area», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 7.",
+        "ledgerRowSha256": "33e00ab8be1414b891a4a0cfa918ab7c001e3be088ca568c25da8ef5a345f012",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "How deep was the brine in each pond?",
+          "acceptedResponses": [
+            "30 cm"
+          ]
+        },
+        "sourceExcerpt": "held brine 30 cm deep",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «How deep was the brine in each pond?» y acepta «30 cm». La oración fuente dice «held brine 30 cm deep». Esa oración contiene la respuesta y la conecta con «deep», «brine», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 8.",
+        "ledgerRowSha256": "e3859c69a7fff77783ec727c19db33539f1f0e5216f3d0ba6ceafe83d31655f0",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "At what angle were the supporting frames tilted?",
+          "acceptedResponses": [
+            "36 degrees"
+          ]
+        },
+        "sourceExcerpt": "Both stood on metal supports tilted at 36 degrees, the latitude selected for the Tehran site, to improve exposure to the sun.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «At what angle were the supporting frames tilted?» y acepta «36 degrees». La oración fuente dice «Both stood on metal supports tilted at 36 degrees, the latitude selected for the Tehran site, to improve exposure to the sun.». Esa oración contiene la respuesta y la conecta con «tilted», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 9.",
+        "ledgerRowSha256": "4a1694afc4773e4beed2e327194019cbc893f2b388a59dffe4332ef53caff494",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "Which instrument recorded global solar irradiance?",
+          "acceptedResponses": [
+            "pyranometer"
+          ]
+        },
+        "sourceExcerpt": "A pyranometer recorded global solar irradiance",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which instrument recorded global solar irradiance?» y acepta «pyranometer». La oración fuente dice «A pyranometer recorded global solar irradiance». Esa oración contiene la respuesta y la conecta con «recorded», «global», «solar», «irradiance», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 10.",
+        "ledgerRowSha256": "8d599af78145fa519f7c836f3e3459749ccb28618308aa7668d898ac56a608c0",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "Which instruments measured the three temperatures?",
+          "acceptedResponses": [
+            "thermocouples",
+            "K-type thermocouples"
+          ]
+        },
+        "sourceExcerpt": "K-type thermocouples measured temperatures in the brine, the glass and the surrounding air.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which instruments measured the three temperatures?» y acepta «thermocouples» / «K-type thermocouples». La oración fuente dice «K-type thermocouples measured temperatures in the brine, the glass and the surrounding air.». Esa oración contiene la respuesta y la conecta con «measured», «temperatures», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 11.",
+        "ledgerRowSha256": "3e89b93f19300f8f8647afb78dbdf5b2fb5bf03be6d00eff8c77dc8e1a1d7970",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "What liquid output was measured with a graduated glass jar?",
+          "acceptedResponses": [
+            "distilled water"
+          ]
+        },
+        "sourceExcerpt": "Researchers quantified the distilled water with a graduated glass jar.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What liquid output was measured with a graduated glass jar?» y acepta «distilled water». La oración fuente dice «Researchers quantified the distilled water with a graduated glass jar.». Esa oración contiene la respuesta y la conecta con «graduated», «glass», «jar», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 12.",
+        "ledgerRowSha256": "cb20e8e7deea717752193876a34af8b10b2252e2ccb1e613dad5807b8e06dca7",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "Which instrument measured wind speed?",
+          "acceptedResponses": [
+            "anemometer"
+          ]
+        },
+        "sourceExcerpt": "an anemometer measured wind speed",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which instrument measured wind speed?» y acepta «anemometer». La oración fuente dice «an anemometer measured wind speed». Esa oración contiene la respuesta y la conecta con «measured», «wind», «speed», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 13.",
+        "ledgerRowSha256": "60e921b77ae3730b5fbddd043c5465bf42d0c7c96dd12a5273e8aa42aeb77afd",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Paragraph A",
+          "correctOptionIndex": 2,
+          "correctOptionText": "A navigational problem solved in public"
+        },
+        "sourceExcerpt": "The time ball offered a public visual signal instead. Mounted where it could be seen from ships, the large ball fell at a precisely determined moment, allowing many officers to observe the same event and compare their chronometers without leaving the vessel.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph A» y la clave es «A navigational problem solved in public». La evidencia dice «The time ball offered a public visual signal instead.». La coincidencia semántica se apoya en «public»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A introduces a navigational timing problem and its public visual solution.",
+        "ledgerRowSha256": "d60d357f2a7a3a173f726ae747a1690905b2e45caf30459e7198ed1d6fe5a276",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Paragraph B",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Advance stages define the exact signal"
+        },
+        "sourceExcerpt": "Its movement followed a staged daily sequence that warned viewers before the signal.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph B» y la clave es «Advance stages define the exact signal». La evidencia dice «Its movement followed a staged daily sequence that warned viewers before the signal.». La coincidencia semántica se apoya en «signal»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 15.",
+        "ledgerRowSha256": "69ec247398e96f0277909822d1f2e4addd0d2a3d74cde4969572807d93f33399",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Practical limits of a brief visual service"
+        },
+        "sourceExcerpt": "These limits qualify the apparent simplicity of a falling sphere.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «Practical limits of a brief visual service». La evidencia dice «These limits qualify the apparent simplicity of a falling sphere.». La coincidencia semántica se apoya en «limits»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 16.",
+        "ledgerRowSha256": "a0cb5649ac627150601c450424eb2a703a7005b63101623d3640fe23aa3b031c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 4,
+          "correctOptionText": "A public signal for two different audiences"
+        },
+        "sourceExcerpt": "A single Greenwich drop addressed two audiences. Ships used it to compare marine chronometers, while people in London could treat it as a public indication of time.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «A public signal for two different audiences». La evidencia dice «A single Greenwich drop addressed two audiences.». La coincidencia semántica se apoya en «two», «audiences»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D explains how the public signal served maritime and land-based users.",
+        "ledgerRowSha256": "cc6e00801b2f82c562b012761b138f90990d57f49723f86b51992ea80b8ae2b1",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Paragraph E",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Electrical transmission extends the observatory's reach"
+        },
+        "sourceExcerpt": "Electric signalling changed how observatory time could be distributed.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph E» y la clave es «Electrical transmission extends the observatory's reach». La evidencia dice «Electric signalling changed how observatory time could be distributed.». La coincidencia semántica se apoya en «observatory»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E explains how a pulse extended observatory time beyond direct sight of the ball.",
+        "ledgerRowSha256": "40b103fc68a9bf95a704aa455399ed962f7e55eb8f85d3025e9f567605064524",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A preserved object reveals a connected system"
+        },
+        "sourceExcerpt": "Seen in a museum, the time ball represents more than an old clock.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «A preserved object reveals a connected system». La evidencia dice «Seen in a museum, the time ball represents more than an old clock.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uses the preserved object to explain a wider timekeeping system.",
+        "ledgerRowSha256": "d4b37535da995fce04508f16c26c73504bc01255be2f437c5d9c6e36f1a0a741",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "Longitude calculations required a comparison between local time and a reference time.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "A ship's longitude depended on comparing local astronomical time with the time kept for a reference meridian.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Longitude calculations required a comparison between local time and a reference time.» y el pasaje dice «A ship's longitude depended on comparing local astronomical time with the time kept for a reference meridian.». La fuente conserva la misma relación mediante «longitude», «local», «time», «reference» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The statement directly paraphrases the comparison.",
+        "ledgerRowSha256": "7c94a1f5b21e040a29f5404c80cd88263fef4111be2dde81218ef92f88d910e5",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "At Greenwich, observers recorded the beginning of the ball’s fall as the exact signal.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "The valid instant was the first visible downward movement, not the moment when the ball reached the bottom.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «At Greenwich, observers recorded the beginning of the ball’s fall as the exact signal.» y el pasaje dice «The valid instant was the first visible downward movement, not the moment when the ball reached the bottom.». La fuente conserva la misma relación mediante «ball» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 21.",
+        "ledgerRowSha256": "506f634cf2ff6be60efbc2e7b566a55b3ec70d2533deaa787efded4ddb094389",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "The Greenwich apparatus used a larger ball than every later installation.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "The Greenwich time ball began operating in 1833 above the Royal Observatory.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The Greenwich apparatus used a larger ball than every later installation.». El pasaje sí ofrece el contexto «The Greenwich time ball began operating in 1833 above the Royal Observatory.», pero en el texto completo no especifica «apparatus», «larger», «later», «installation» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The paragraph names Greenwich but makes no size comparison with later installations.",
+        "ledgerRowSha256": "bebf1614d67638a363e8945d1ff405a18e957c2ba1cd19a2a25e64e8682f8487",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "The same Greenwich signal could be useful to both ships and people on land.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Ships used it to compare marine chronometers, while people in London could treat it as a public indication of time.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The same Greenwich signal could be useful to both ships and people on land.» y el pasaje dice «Ships used it to compare marine chronometers, while people in London could treat it as a public indication of time.». La fuente conserva la misma relación mediante «ships», «people» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The sentence states that the signal served both groups.",
+        "ledgerRowSha256": "fbe8196678bac720157e040ba7b7d16b42c5858f0c99dcaf0f4ec701cdd64471",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "An electrical pulse could carry observatory time to a place from which the ball could not be seen.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Instead of depending on a distant view of the ball, a timed electrical pulse could carry the standard through a wire to another instrument or location.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «An electrical pulse could carry observatory time to a place from which the ball could not be seen.» y el pasaje dice «Instead of depending on a distant view of the ball, a timed electrical pulse could carry the standard through a wire to another instrument or location.». La fuente conserva la misma relación mediante «electrical», «pulse», «carry», «ball» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The pulse transmitted the standard without direct visual observation of the ball.",
+        "ledgerRowSha256": "7171dc1fd518b128f0535b69245107964afa7ca1e6763934a377e57ac05ba2d2",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "The electrical pulse and the visible drop required users to receive the information in exactly the same way.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "One was a public display that required a clear line of sight; the other was a transmitted instruction moving along a connection.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The electrical pulse and the visible drop required users to receive the information in exactly the same way.», mientras el pasaje dice «One was a public display that required a clear line of sight; the other was a transmitted instruction moving along a connection.». Ambos tratan «required», pero la proposición añade «electrical», «pulse», «visible», «drop», «users», «receive» donde la fuente especifica «public», «display», «clear», «line», «sight», «other». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The two methods required different forms of reception, contradicting the statement.",
+        "ledgerRowSha256": "d5a8493ffa7346ba4689a7c78e19edd7584402b0100928a4358b2f00b26a1f7b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "The museum collection identifies which timekeeping instrument was the most expensive to construct.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Its history joins instruments used to determine time, devices built to keep or carry it, and signals intended to communicate it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The museum collection identifies which timekeeping instrument was the most expensive to construct.». El pasaje sí ofrece el contexto «Its history joins instruments used to determine time, devices built to keep or carry it, and signals intended to communicate it.», pero en el texto completo no especifica «collection», «identifies», «expensive», «construct» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The collection context classifies functions but supplies no construction-cost ranking.",
+        "ledgerRowSha256": "96ce69f3e89e98f6b82644ef90fac9d3f009f6ea6611da9a8cc4a76e1b377b76",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "The M/M/1 analysis used exponential assumptions for both interarrival and service times.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Its two M symbols represent exponential assumptions for interarrival and service times",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The M/M/1 analysis used exponential assumptions for both interarrival and service times.» y el pasaje dice «Its two M symbols represent exponential assumptions for interarrival and service times». La fuente conserva la misma relación mediante «exponential», «assumptions», «interarrival», «service», «times» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 27.",
+        "ledgerRowSha256": "6c579bc4af925c5d09c6abe7de128bbd9a8e2462dd3c28d48cd934d29a754c95",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Deleting every suspect timestamp would leave estimates of queue size unaffected.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "could underestimate waiting and queue size",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Deleting every suspect timestamp would leave estimates of queue size unaffected.», mientras el pasaje dice «could underestimate waiting and queue size». Ambos tratan «queue», «size», pero la proposición añade «deleting», «every», «suspect», «timestamp», «leave», «estimates» donde la fuente especifica «underestimate», «waiting». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 28.",
+        "ledgerRowSha256": "8a689aed8855c39049581a1db5b4e6b3aac6dcb0cb2412b2a4645ecfff9ea874",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The three hospitals used identical database software.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Patient names and gender were masked; reception and prescription logs were recorded to the second.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The three hospitals used identical database software.». El pasaje sí ofrece el contexto «Patient names and gender were masked; reception and prescription logs were recorded to the second.», pero en el texto completo no especifica «identical», «software» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 29.",
+        "ledgerRowSha256": "084a5b3df21053d1b87aad080bd2de818125935587cb40563aeaaccbf3eba7dc",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Estimated average waiting time decreased in each of the three hospitals.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Estimates showed shorter waits after electronic records were introduced in all three hospitals.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Estimated average waiting time decreased in each of the three hospitals.» y el pasaje dice «Estimates showed shorter waits after electronic records were introduced in all three hospitals.». La fuente conserva la misma relación mediante «three», «hospitals» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 30.",
+        "ledgerRowSha256": "50aef428dfc1a9fd0724c994b50683001af9629fc9aeeb3321a57d8c52f1bb5c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "More data would be needed before the findings could be generalised strongly.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "more would be needed for strong generalisation",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «More data would be needed before the findings could be generalised strongly.» y el pasaje dice «more would be needed for strong generalisation». La fuente conserva la misma relación mediante «needed» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 31.",
+        "ledgerRowSha256": "de5bc4bfbf75a521c450bf0a2d0f7f80b213b3ba6eaf46a2afbe5d55e0231945",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Why did the researchers separate morning and afternoon arrival data?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "to prevent the lunch gap from distorting the arrival rate"
+        },
+        "sourceExcerpt": "Treating the full eight-hour span as continuous activity would inflate average interarrival time and depress arrival rate.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why did the researchers separate morning and afternoon arrival data?» y la clave es «to prevent the lunch gap from distorting the arrival rate». La evidencia dice «Treating the full eight-hour span as continuous activity would inflate average interarrival time and depress arrival rate.». La coincidencia semántica se apoya en «arrival», «rate»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 32.",
+        "ledgerRowSha256": "c896d8a2a548f383ad78eec256a2f5e8207b50660bc48caeed1ca887f0cb5bc2",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "How were the direct observations used in estimating service rate?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "They identified a threshold for excluding implausibly long intervals."
+        },
+        "sourceExcerpt": "Their sample was too small to supply the rate alone, so it played a supporting role: the maximum observed consultation became a threshold for removing implausibly long digital intervals.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «How were the direct observations used in estimating service rate?» y la clave es «They identified a threshold for excluding implausibly long intervals.». La evidencia dice «Their sample was too small to supply the rate alone, so it played a supporting role: the maximum observed consultation became a threshold for removing implausibly long digital intervals.». La coincidencia semántica se apoya en «rate», «threshold», «implausibly», «long», «intervals»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 33.",
+        "ledgerRowSha256": "562991bef4f70f979f5342a58f4f216cea1b83b11fa80a865d6ab7a0c34d208b",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "Why might the measured reductions have been especially large?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Manual chart handling had formed much of the earlier delay."
+        },
+        "sourceExcerpt": "manual chart handling had occupied much of the delay",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why might the measured reductions have been especially large?» y la clave es «Manual chart handling had formed much of the earlier delay.». La evidencia dice «manual chart handling had occupied much of the delay». La coincidencia semántica se apoya en «manual», «chart», «handling», «much», «delay»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 34.",
+        "ledgerRowSha256": "d8bb8881f0d01b50389b3bb8c3be86e34c52cd22f06655f5ce3be2f20b50f0f8",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "Which statement best expresses the writer's conclusion?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Carefully interpreted digital logs and a bounded model can support useful comparisons."
+        },
+        "sourceExcerpt": "Rather, arrival and service rates extracted with attention to local procedures can support comparisons of waiting times and help identify bottlenecks.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which statement best expresses the writer's conclusion?» y la clave es «Carefully interpreted digital logs and a bounded model can support useful comparisons.». La evidencia dice «Rather, arrival and service rates extracted with attention to local procedures can support comparisons of waiting times and help identify bottlenecks.». La coincidencia semántica se apoya en «support», «comparisons»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 35.",
+        "ledgerRowSha256": "3a3403ba6698bef4c7c1f385db6bcb4fb123935530c917bb8b3cb2a77667a2d7",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "were used to derive the arrival rate",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "sourceExcerpt": "The researchers therefore derived arrival rate from reception times across the period rather than treating every timestamp as exact.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «were used to derive the arrival rate» y la clave es «Location A». La evidencia dice «The researchers therefore derived arrival rate from reception times across the period rather than treating every timestamp as exact.». La coincidencia semántica se apoya en «arrival», «rate»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 36.",
+        "ledgerRowSha256": "4f8a7baa112ed487ac0198e9b9a384b08e7fcf85359cc0499d0ed36372a11148",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "acted as a proxy for the end of consultation",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "sourceExcerpt": "Prescription entry was treated as the consultation's end.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «acted as a proxy for the end of consultation» y la clave es «Location B». La evidencia dice «Prescription entry was treated as the consultation's end.». La coincidencia semántica se apoya en «end», «consultation»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 37.",
+        "ledgerRowSha256": "3d42bc5ecf71a339cb2741b79b2bf2c82c42b05cc13dd4d9025812d497e44a83",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "provided a maximum value used to remove outliers",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "sourceExcerpt": "the maximum observed consultation became a threshold for removing implausibly long digital intervals",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «provided a maximum value used to remove outliers» y la clave es «Location C». La evidencia dice «the maximum observed consultation became a threshold for removing implausibly long digital intervals». La coincidencia semántica se apoya en «maximum»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 38.",
+        "ledgerRowSha256": "1b70c404ecd601e655dbbdd26135727a65b15ea95122f0f2372731124faf64c4",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "produced estimates of average waiting time",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "sourceExcerpt": "From these parameters it estimates the average number of patients waiting, the average number in the whole system, the average queueing time and the average total time in the system.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «produced estimates of average waiting time» y la clave es «Location D». La evidencia dice «From these parameters it estimates the average number of patients waiting, the average number in the whole system, the average queueing time and the average total time in the system.». La coincidencia semántica se apoya en «estimates», «average», «waiting», «time»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 39.",
+        "ledgerRowSha256": "ccf9a114b7af12bf527ecb796d34d4e51be3beacdf7b6358c7e77977c6e9941a",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "represented the analysis as having one server",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "sourceExcerpt": "the final 1 indicates a single server",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «represented the analysis as having one server» y la clave es «Location D». La evidencia dice «the final 1 indicates a single server». La coincidencia semántica se apoya en «server»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited sentence directly supports the keyed response for Question 40.",
+        "ledgerRowSha256": "14fff4d4ee86105cb0edab7f7868b8e50d39e3fea2770d986e515350281c647f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/reading/set30-reading-content-v1.0.4.json",
+        "sha256": "99e297db46a56792b7e1652166bc7ba2ad02d160490f6dd7891d0602dcd56c93"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "1b62f86591f4deb885a9aa58807cbfa65945fa2d5685637dd30557f4d65079da",
+      "canonicalQuestionProjectionSha256": "3332cfc24b0f71ad761e2d2906e73bac68b86d2a2acf0fb476d848d9d6f1f31f"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Appliance: freestanding ______",
+          "acceptedResponses": [
+            "wood burner",
+            "woodburner"
+          ]
+        },
+        "evidenceSegment": "P1-T04",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is a freestanding wood burner. The previous owner called it a stove, but it stands clear of the brick wall rather than sitting inside a fireplace.",
+        "timecode": {
+          "startFrame": 3175192,
+          "endFrame": 7367763,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.999819,
+          "endSeconds": 167.069456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1f594d4fa20c60a138a7c4c710a9348c70d126f06d01c99253ad5c708d7de34b",
+        "planSegmentTextSha256": "9e53a6495fa19d8d5085e00efbb2e5c8b08287755f8228882e7900c8e3e95ffb"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Suburb: ______",
+          "acceptedResponses": [
+            "Mornington"
+          ]
+        },
+        "evidenceSegment": "P1-T06",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Mornington. The street address is twelve Lorne Street, but Mornington is the suburb you need for the route.",
+        "timecode": {
+          "startFrame": 3175192,
+          "endFrame": 7367763,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.999819,
+          "endSeconds": 167.069456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1a8e38997a3d1553ef3679a1ed85079e71e3b99dece02ad623c7e58f3244cc0c",
+        "planSegmentTextSha256": "54b6c7d3590f0d85306220ba65805aace120c5203cdaabd1b2a4736796c5259f"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Main fuel: dry ______",
+          "acceptedResponses": [
+            "hardwood"
+          ]
+        },
+        "evidenceSegment": "P1-T08",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "We tried manufactured logs once, then stopped. We now use dry hardwood, stored under cover, so please record hardwood as the main fuel.",
+        "timecode": {
+          "startFrame": 3175192,
+          "endFrame": 7367763,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.999819,
+          "endSeconds": 167.069456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "52e4c89960979dbf35915f1d9f52fecbe02f3c6341e4531211ca2279aed3a85a",
+        "planSegmentTextSha256": "c6c96af539dca2044154dabca62f0fe888f9da80a79f34277fd84eefe034925a"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Roof access hatch: ______",
+          "acceptedResponses": [
+            "hall cupboard"
+          ]
+        },
+        "evidenceSegment": "P1-T10",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is inside the hall cupboard. Someone suggested moving it to the laundry, but that work never happened, so the hall cupboard is still correct.",
+        "timecode": {
+          "startFrame": 3175192,
+          "endFrame": 7367763,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.999819,
+          "endSeconds": 167.069456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7440176bbbee27ecbf68d267b10aaf7307dc7f867b7e7af706924cc2136612e3",
+        "planSegmentTextSha256": "8de9624ae64c6868935a0a15092e53dc569a0b133f5f0e982b0b54d6806f694d"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Inspection date: ______",
+          "acceptedResponses": [
+            "17 November",
+            "17th November",
+            "November 17",
+            "November 17th",
+            "17th of November"
+          ]
+        },
+        "evidenceSegment": "P1-T12",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Wednesday clashes with work. Let us take 17 November at nine thirty, please.",
+        "timecode": {
+          "startFrame": 3175192,
+          "endFrame": 7367763,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.999819,
+          "endSeconds": 167.069456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8b45523db67bbc18a3b46752abb3658adc07191854511575708918f4cd0ffbfc",
+        "planSegmentTextSha256": "248204f85f4526f22dee5cd7ccd5b4c8249da99ff1fb0e5d6ea216efaea7c368"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Report delivery: ______",
+          "acceptedResponses": [
+            "secure link"
+          ]
+        },
+        "evidenceSegment": "P1-T14",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "A secure link would be best. Our insurer accepts the signed digital version, and I would rather not have the report sitting in an unprotected email.",
+        "timecode": {
+          "startFrame": 7436118,
+          "endFrame": 8619063,
+          "sampleRateHz": 44100,
+          "startSeconds": 168.619456,
+          "endSeconds": 195.443605,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1606332601e58dd9144c02be34237076ed7e137773038a2a7e41af311842a448",
+        "planSegmentTextSha256": "14401fb029d4061af36b70538836c1c5a33431bb4758718ea4c60fecbe7d3713"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "When will an inspection camera be used?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "when the first check suggests a problem"
+        },
+        "evidenceSegment": "P1-T18",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Not yet. If the visual check suggests a blockage or hidden damage, the inspector will discuss the camera with you before adding it. That avoids an unnecessary charge.",
+        "timecode": {
+          "startFrame": 11419433,
+          "endFrame": 15587984,
+          "sampleRateHz": 44100,
+          "startSeconds": 258.944059,
+          "endSeconds": 353.469025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3d188ff77b0f511da5852284ff75b01cd0d289a4f8ebd3e22d09d38c59952467",
+        "planSegmentTextSha256": "78b265608c3e810018182f27b5623363440253cb7ae32b514c1588c220a2cbf6"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "Why is the inspection booked for the morning?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "The appliance must be cold."
+        },
+        "evidenceSegment": "P1-T20",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "It is not longer. We chose morning because the burner must be completely cold, and an early visit makes that easier after an overnight shutdown.",
+        "timecode": {
+          "startFrame": 11419433,
+          "endFrame": 15587984,
+          "sampleRateHz": 44100,
+          "startSeconds": 258.944059,
+          "endSeconds": 353.469025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "dfb2b6daae95f246b78d8060570fb877a49f3e010d1897cd11802eedadaa0e78",
+        "planSegmentTextSha256": "35d581b199e946161ccab008081714c921c3d29675b86b2a7d101581fb0de683"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "Which report has Mireille booked?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "a certificate with measurements and photographs"
+        },
+        "evidenceSegment": "P1-T22",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The detailed certificate. The brief note is for landlords who only want a visible-condition record; your insurer asked for measurements and photographs as well.",
+        "timecode": {
+          "startFrame": 11419433,
+          "endFrame": 15587984,
+          "sampleRateHz": 44100,
+          "startSeconds": 258.944059,
+          "endSeconds": 353.469025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5ca3e34d89f6dcdb94747dbfb0fb961fa26e80298b5ca2f254d204feb6e9915c",
+        "planSegmentTextSha256": "10bb776bdd71d25cd6b005886da0faec069206c9bc2502a42d8f3a06d1bc6d30"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "What should Mireille do before the inspector arrives?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "clear the hall cupboard"
+        },
+        "evidenceSegment": "P1-T24",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Please clear the hall cupboard so the roof hatch opens fully. Leave the heavy stove in place, remove loose ash only when cold, and keep pets away from the work area.",
+        "timecode": {
+          "startFrame": 11419433,
+          "endFrame": 15587984,
+          "sampleRateHz": 44100,
+          "startSeconds": 258.944059,
+          "endSeconds": 353.469025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b3e6ad3cde5a89cb5ae04462f36d30d7c8bc81be0899e12a7336f157843fbb02",
+        "planSegmentTextSha256": "f313726b20766b6a946fd69fc244ba9478f5fdd1cff6cb2962ea5cfee3d471ab"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Where is the clay store?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "P2-S04",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The clay store is in the enclosed north-west corner, beyond the wash-up sink and against both the north and west walls.",
+        "timecode": {
+          "startFrame": 18875670,
+          "endFrame": 24772691,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.019728,
+          "endSeconds": 561.739025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5f06b8bf807d189d5abe6acf5566d785f7184b33d931821c65322bdcbc477683",
+        "planSegmentTextSha256": "7834b614e683c27658d6fcd2b9804ab0fab17dc6190c9ee9c9ee5b8c977ec130"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "Where are the pottery wheels?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "P2-S06",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "From the entrance, walk north along the clean walkway and turn left before the central worktables. The pottery wheels occupy the western side beside those tables.",
+        "timecode": {
+          "startFrame": 18875670,
+          "endFrame": 24772691,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.019728,
+          "endSeconds": 561.739025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b4e8632ef68f4dc0e23e49feb71faca2ececa1b0e27346278881672578c69b58",
+        "planSegmentTextSha256": "aaeb87fd0ce2915bbec1d368d35788cda85cdd88563f10279c9d1b3da47864c7"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Where is the glaze bench?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "P2-S08",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The glaze bench is on the eastern wall, directly south of the first-aid point. The counter immediately beside reception is only for collecting finished work.",
+        "timecode": {
+          "startFrame": 18875670,
+          "endFrame": 24772691,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.019728,
+          "endSeconds": 561.739025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "05a054a682901b1a7f9e58a38b7cc0b4f327b95088fc161bcdf154ea2b929085",
+        "planSegmentTextSha256": "e9b2671a17bd53e30880760356808a9f36c945068a6175a2bfdd8c43ece985ba"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "Where is the kiln room?",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "P2-S09",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "Continue to the fire door in the north-east corner. The kiln room is on the far side of that door. A ventilated mixing alcove lies before the door.",
+        "timecode": {
+          "startFrame": 18875670,
+          "endFrame": 24772691,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.019728,
+          "endSeconds": 561.739025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c4b2b5ea38429f3e4819df5d7b52e3ca794fc3ad9059ddcb77c70238a649485b",
+        "planSegmentTextSha256": "70a068b53ad643238d71a75f5bfbfdf401253bf2590a72ea9f1ee4abac481703"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Where are the drying racks?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Location E"
+        },
+        "evidenceSegment": "P2-S10",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "Finally, the drying racks stand just north of the central worktables and west of the clean walkway. They are open shelves rather than an enclosed room.",
+        "timecode": {
+          "startFrame": 18875670,
+          "endFrame": 24772691,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.019728,
+          "endSeconds": 561.739025,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2dc64f14cc10bd28f26a4f56f466eb0d55b212b48dbaf9c2a60b71916729eae9",
+        "planSegmentTextSha256": "cbb8a6804a5985b8eeb04eb02404f4f4792f9a879e6707e9b6b93fa11624bde3"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Which rule applies to the clay reclaim area?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Keep scrap material damp."
+        },
+        "evidenceSegment": "P2-S13",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "At clay reclaim, keep scraps damp. Dry sweeping can put fine dust into the air, so use the wet-cleaning tools stored by the sink and close the reclaim tub after use.",
+        "timecode": {
+          "startFrame": 27453967,
+          "endFrame": 32608387,
+          "sampleRateHz": 44100,
+          "startSeconds": 622.538934,
+          "endSeconds": 739.419206,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "83ca3b0ceb1c529956d526d937557926e817efe392c581bd913e0bc39eb4932f",
+        "planSegmentTextSha256": "d1d91a09425e4de200fdb93dd0c22d0c817f972943eb983fde3e3c47c9d1988d"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "Which rule applies to the glaze bench?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Do not bring food or drink."
+        },
+        "evidenceSegment": "P2-S14",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "At the glaze bench, food and drink are not allowed. A covered water bottle may stay in your locker, but it should not be placed on a surface used for glaze materials.",
+        "timecode": {
+          "startFrame": 27453967,
+          "endFrame": 32608387,
+          "sampleRateHz": 44100,
+          "startSeconds": 622.538934,
+          "endSeconds": 739.419206,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b359aa3b1735856471197308b4ba7ba463a54c097c49ce8e876479ef05fb2dc0",
+        "planSegmentTextSha256": "35ce542b13d2f9eb40a818ce03ea3339746cea78e11010d864a73aaf339cd517"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Which rule applies to the kiln room?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Only trained staff may enter."
+        },
+        "evidenceSegment": "P2-S15",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The kiln room is restricted to trained staff. Members may leave labelled work on the loading shelf, yet they must not enter to adjust a firing schedule or open a hot kiln.",
+        "timecode": {
+          "startFrame": 27453967,
+          "endFrame": 32608387,
+          "sampleRateHz": 44100,
+          "startSeconds": 622.538934,
+          "endSeconds": 739.419206,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d38faa5faf13ba3f2aeff6d1521b34d26c333da5f1c6f11ce47dd618ab92524b",
+        "planSegmentTextSha256": "eec9bc55e7bfef284a7786e8e0d7f0a5c647d62b6ab55a4e54e35f68124a70dd"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "Which rule applies to the pottery wheels?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Use the floor pedal only while seated."
+        },
+        "evidenceSegment": "P2-S16",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "At the pottery wheels, operate the floor pedal only while seated securely. Switch the wheel off before changing a bat or reaching underneath to retrieve a tool.",
+        "timecode": {
+          "startFrame": 27453967,
+          "endFrame": 32608387,
+          "sampleRateHz": 44100,
+          "startSeconds": 622.538934,
+          "endSeconds": 739.419206,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4231dc40c31e3014dca11fb9329831fe2d4561ebcfff9bd85e856008d8a14cba",
+        "planSegmentTextSha256": "2e3bd65cf7e75a376d7c5a0ef71633214e9bc6387f756732ea6e771ff229a793"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "Which rule applies to the drying racks?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Add the owner’s name and date."
+        },
+        "evidenceSegment": "P2-S17",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "Every piece placed on the drying racks needs the owner’s name and the date. The date helps us move work fairly when shelf space is limited.",
+        "timecode": {
+          "startFrame": 27453967,
+          "endFrame": 32608387,
+          "sampleRateHz": 44100,
+          "startSeconds": 622.538934,
+          "endSeconds": 739.419206,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "272ee771cfbde71de9b1654e7c3aea094b2de45d0e204e5b33e3eabffcf65622",
+        "planSegmentTextSha256": "b6a12e8168103a3da9e1b1379301105e3746d006fda980a7d4eb6eae140e6daa"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "Why do the students decide to use simulation actors?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "to keep the case consistent"
+        },
+        "evidenceSegment": "P3-T03",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "So the main reason for actors is consistency. Each participant can receive the same fictional case and the same initial information before the communication method changes.",
+        "timecode": {
+          "startFrame": 35690960,
+          "endFrame": 41085321,
+          "sampleRateHz": 44100,
+          "startSeconds": 809.318821,
+          "endSeconds": 931.639932,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b6444028e9f60426b3e80a4105287faa343676b22b63972c11ea2c895acd04cb",
+        "planSegmentTextSha256": "beba1503eee7bb26e8abb75338dc0d8db4cf2504c8752aeb2055490d679898d0"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "What will be the main outcome measure?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "recall of warning signs and follow-up action"
+        },
+        "evidenceSegment": "P3-T06",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "Let us score recall of the warning signs and the follow-up action. Those details matter in the fictional discharge plan and can be checked against a clear rubric.",
+        "timecode": {
+          "startFrame": 35690960,
+          "endFrame": 41085321,
+          "sampleRateHz": 44100,
+          "startSeconds": 809.318821,
+          "endSeconds": 931.639932,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "267523834937887d1e5a156b461cdb90021a2df794d761eccc12504f6fdb9ca0",
+        "planSegmentTextSha256": "4d4f7f05719360758a855773301ed05a3980f2fbe5202c06fba8ef2e26bd3c47"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "How will participants be allocated to conditions?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "randomly within each session"
+        },
+        "evidenceSegment": "P3-T09",
+        "renderedChunk": "chunk-14",
+        "audiblePhrase": "It would also mix the teaching time with the method. We should randomise within each session, using sealed cards prepared before participants arrive.",
+        "timecode": {
+          "startFrame": 35690960,
+          "endFrame": 41085321,
+          "sampleRateHz": 44100,
+          "startSeconds": 809.318821,
+          "endSeconds": 931.639932,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5099db842999d3fbd31b39b1647a9cf5b8e13cad8e604d28509e05fedd7c6b6a",
+        "planSegmentTextSha256": "bcd2bee3341441d93513d00d3b8954e07bbf34b7c1ca6d2a9cf1dd0e39fcc4c5"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "Why will the consultations be audio-recorded?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "to check agreement between coders"
+        },
+        "evidenceSegment": "P3-T12",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Audio is sufficient and less intrusive. More importantly, a second assessor can code a sample of recordings, so we can estimate whether the rubric is applied consistently.",
+        "timecode": {
+          "startFrame": 41164701,
+          "endFrame": 44181311,
+          "sampleRateHz": 44100,
+          "startSeconds": 933.439932,
+          "endSeconds": 1001.843787,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "819ced4001ebb93290642e82da771759cba27112251738c36a974137052ccec1",
+        "planSegmentTextSha256": "9d2b3ad82f354f068530dc3eb1abe76532417836c0c056a4eab4457f348dfab1"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "What main change will be made after the pilot?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "The fictional case will be shorter."
+        },
+        "evidenceSegment": "P3-T17",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "So the key pilot change is to shorten the case, rather than asking actors to speak faster. The communication method should remain the feature we are comparing.",
+        "timecode": {
+          "startFrame": 41164701,
+          "endFrame": 44181311,
+          "sampleRateHz": 44100,
+          "startSeconds": 933.439932,
+          "endSeconds": 1001.843787,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a78798ad4790738bb13d0f6c6fd1a8072d4381c9d4bd1ef24e7ad9f565f6eff6",
+        "planSegmentTextSha256": "e829542dd14079b959b396998724e6c06c093afa12ae6d3c0a7651b6ba161a50"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "Actor prompt: describe your ______.",
+          "acceptedResponses": [
+            "home plan"
+          ]
+        },
+        "evidenceSegment": "P3-T19",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "A better prompt is: tell me your home plan. That invites the actor to explain what they will do without copying the student’s exact wording.",
+        "timecode": {
+          "startFrame": 46869195,
+          "endFrame": 52094991,
+          "sampleRateHz": 44100,
+          "startSeconds": 1062.793537,
+          "endSeconds": 1181.292313,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "526f89f08083f5f3790992a2755e931adf54d70ca6c316f7ca28d2ff465f4478",
+        "planSegmentTextSha256": "bec1c42095c33c3e6766a9de8336c64945cb0a77eb3d8e7af126bd5b416b772f"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "The rubric will include a category for ______.",
+          "acceptedResponses": [
+            "self-correction",
+            "self correction"
+          ]
+        },
+        "evidenceSegment": "P3-T20",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "The rubric should credit accurate content even when the actor pauses and corrects an initial mistake. We can add a self-correction category instead of scoring only the first response.",
+        "timecode": {
+          "startFrame": 46869195,
+          "endFrame": 52094991,
+          "sampleRateHz": 44100,
+          "startSeconds": 1062.793537,
+          "endSeconds": 1181.292313,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a666de1c2ceae407c90eec85de104edd94d3a5662dcfc93e75287cca42617aa0",
+        "planSegmentTextSha256": "de9c4a4af8d2c20d18ee8805d6ce81893e34286e0b2c6489e0e950c5ffde9c3f"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "Delayed recall will be tested after ______.",
+          "acceptedResponses": [
+            "20 minutes",
+            "twenty minutes"
+          ]
+        },
+        "evidenceSegment": "P3-T23",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Twenty minutes is manageable. Participants can complete the satisfaction form during the interval, but they must not see the discharge sheet again.",
+        "timecode": {
+          "startFrame": 46869195,
+          "endFrame": 52094991,
+          "sampleRateHz": 44100,
+          "startSeconds": 1062.793537,
+          "endSeconds": 1181.292313,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fbb05777c73414e0e7c274d159ed01e599572423776dcff1f8ea393b1db6a550",
+        "planSegmentTextSha256": "2e35503d793872f39ce651d2615738dabc35f0bd1a4426c660533a585e51a68b"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "The coding-sheet category hidden from the assessor is labelled ______.",
+          "acceptedResponses": [
+            "communication method"
+          ]
+        },
+        "evidenceSegment": "P3-T24",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "On the coding sheet, the category hidden from the recall assessor is labelled communication method. This prevents expectations from influencing the judgement.",
+        "timecode": {
+          "startFrame": 46869195,
+          "endFrame": 52094991,
+          "sampleRateHz": 44100,
+          "startSeconds": 1062.793537,
+          "endSeconds": 1181.292313,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a0fc104b31f8ce70217146b81bdb20b4a6bacd54768b6042638a9c1656069122",
+        "planSegmentTextSha256": "7f65753e71e89cfe5931f4e17c7ed4dbd0aa398b0060d18544a4c57ea1406635"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Participants will be ______.",
+          "acceptedResponses": [
+            "second-year students",
+            "second year students"
+          ]
+        },
+        "evidenceSegment": "P3-T28",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Second-year students offer a useful middle point. They have practised discharge conversations, yet the technique is unlikely to be automatic.",
+        "timecode": {
+          "startFrame": 46869195,
+          "endFrame": 52094991,
+          "sampleRateHz": 44100,
+          "startSeconds": 1062.793537,
+          "endSeconds": 1181.292313,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fc12c850593558d24100daf233684795c2e6fc714a737ee9c147365eb7086dd5",
+        "planSegmentTextSha256": "46742694498229892cb8d730fa2f0e0548bc5dfaddc8c5878e2d7e35102947d8"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "The organism’s ______ may remain after soft tissue decays.",
+          "acceptedResponses": [
+            "shell"
+          ]
+        },
+        "evidenceSegment": "P4-S02",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "When an organism dies, its soft tissues decay, but the shell can remain in peat. Identification therefore relies on durable structures rather than the living cell itself.",
+        "timecode": {
+          "startFrame": 56013071,
+          "endFrame": 61305567,
+          "sampleRateHz": 44100,
+          "startSeconds": 1270.137664,
+          "endSeconds": 1390.148912,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "75d866aa6fb2d818fbc3e41dc27172f354bb6fbf3c0171500602b9a46e5d2a01",
+        "planSegmentTextSha256": "4bb218ddc16f4a39108c321dcc51872a159cd371ff6a4a2784e43b70830b331c"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Species distributions are related to ______.",
+          "acceptedResponses": [
+            "moisture conditions"
+          ]
+        },
+        "evidenceSegment": "P4-S03",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Different species tolerate different moisture conditions. Some are common where the water table lies close to the surface; others occur more often in comparatively dry microhabitats.",
+        "timecode": {
+          "startFrame": 56013071,
+          "endFrame": 61305567,
+          "sampleRateHz": 44100,
+          "startSeconds": 1270.137664,
+          "endSeconds": 1390.148912,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "22bb4a7fb2ea048925fad8be64c77674fffd00440d83710cf7e8500488fa62b6",
+        "planSegmentTextSha256": "3c4a49a2423dbb92b42d778a06a60c64afa58dfc21be6859abfb7c5ba8508108"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Testate-amoeba samples were taken every ______.",
+          "acceptedResponses": [
+            "five centimetres",
+            "5 centimetres",
+            "5 cm",
+            "5cm",
+            "five centimeters",
+            "5 centimeters",
+            "five cm"
+          ]
+        },
+        "evidenceSegment": "P4-S06",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "In the cited peat-core study, testate-amoeba samples were taken every five centimetres. This spacing belongs to that proxy workflow and should not be confused with the denser schedule used for other evidence.",
+        "timecode": {
+          "startFrame": 56013071,
+          "endFrame": 61305567,
+          "sampleRateHz": 44100,
+          "startSeconds": 1270.137664,
+          "endSeconds": 1390.148912,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3bffb747755f250a89031bbafa71365baef462e3db500ee28e5d772275e0a5cd",
+        "planSegmentTextSha256": "60e663ecfb8069b6ca6e35f7d1a3275086c4dc9f5310278f3e71fd2e333072bd"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "The target minimum is ______ tests per sample.",
+          "acceptedResponses": [
+            "100",
+            "one hundred"
+          ]
+        },
+        "evidenceSegment": "P4-S08",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "In the cited peat-core method, analysts used a light microscope and aimed to count a minimum of 100 tests in each sample whenever possible.",
+        "timecode": {
+          "startFrame": 56013071,
+          "endFrame": 61305567,
+          "sampleRateHz": 44100,
+          "startSeconds": 1270.137664,
+          "endSeconds": 1390.148912,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "09e90597ce5f0e0337b0011bd485dd4e76f26d1bc96847a4cedd6635e80d3fe2",
+        "planSegmentTextSha256": "86cc0b45220610e5906af6d00e0cde8354c30ba0580380612a4db549cc6b5603"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "A ______ calibration links assemblages with measured conditions.",
+          "acceptedResponses": [
+            "modern"
+          ]
+        },
+        "evidenceSegment": "P4-S10",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "That modern calibration links changes in community composition with observed water-table depth. Statistical relationships summarise the pattern across many modern samples, not just one convenient site.",
+        "timecode": {
+          "startFrame": 61387152,
+          "endFrame": 63112368,
+          "sampleRateHz": 44100,
+          "startSeconds": 1391.998912,
+          "endSeconds": 1431.119456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "19f9d10cf84aac0b43a1d412bd1e514484ca6e90a2ac35eda015c279ec86f17d",
+        "planSegmentTextSha256": "3313eded40212629286cd05ce14d93a2b2641b51e4b38f88eb15de0e2efebb06"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "The transfer function estimates past ______.",
+          "acceptedResponses": [
+            "water-table depth",
+            "water table depth"
+          ]
+        },
+        "evidenceSegment": "P4-S11",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "A transfer function applies the modern relationship to fossil assemblages. Its output is an estimate of past water-table depth, often accompanied by an uncertainty range.",
+        "timecode": {
+          "startFrame": 61387152,
+          "endFrame": 63112368,
+          "sampleRateHz": 44100,
+          "startSeconds": 1391.998912,
+          "endSeconds": 1431.119456,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ed34c4386fdafa6961d05018605130aad45666d4a171f6737029a65cb500704a",
+        "planSegmentTextSha256": "9578e6669f2d4c2129edf53537922daeea4ffdf1104fb53acfff841e487a0e05"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "mcq",
+          "questionText": "What is the principal use of the testate-amoeba assemblage?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "water-table reconstruction"
+        },
+        "evidenceSegment": "P4-S14",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Testate amoebae mainly inform us about conditions at or near the peat surface. They are therefore valuable indicators of local water-table position, but they do not describe every process around the bog.",
+        "timecode": {
+          "startFrame": 65749561,
+          "endFrame": 71313125,
+          "sampleRateHz": 44100,
+          "startSeconds": 1490.919751,
+          "endSeconds": 1617.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "480ec2fe82087f25a3d75305d52c4eb51228af2c133a5ae90952065af0beb99f",
+        "planSegmentTextSha256": "a42c02a10d2f3b3a4f73e63655995ec81d51ba1e11497b3238d5ae58f419557c"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "mcq",
+          "questionText": "What does the pollen record directly identify?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "vegetation change"
+        },
+        "evidenceSegment": "P4-S18",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Pollen is a classical proxy that directly identifies vegetation shifts. It provides a different line of evidence from the testate-amoeba reconstruction, so agreement between them can strengthen an interpretation without making the two records interchangeable.",
+        "timecode": {
+          "startFrame": 65749561,
+          "endFrame": 71313125,
+          "sampleRateHz": 44100,
+          "startSeconds": 1490.919751,
+          "endSeconds": 1617.077664,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "098223056fe8d23f48b1bc157f0e03645a779768a3da8c6496acba3861db99f9",
+        "planSegmentTextSha256": "28f5d542a4d042217a468fe32cad2945d61eca7039460b06fdb382f05c621080"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "mcq",
+          "questionText": "What feature is associated with the plant-macrofossil record?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "continuous one-centimetre sampling"
+        },
+        "evidenceSegment": "P4-S21",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "So, for plant macrofossils, the relevant feature here is continuous one-centimetre sampling. Do not confuse that method with the five-centimetre schedule used for pollen, microscopic charcoal and testate amoebae in the same study.",
+        "timecode": {
+          "startFrame": 71394710,
+          "endFrame": 76102042,
+          "sampleRateHz": 44100,
+          "startSeconds": 1618.927664,
+          "endSeconds": 1725.669887,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "23ca23e3beecf006c1f069a7fa866dfa74aaacf291e66dc99413b5c2b1add20e",
+        "planSegmentTextSha256": "921e58d29de4d645b38e06492f5c9059e2f8d9e72d8f02fadeb3eb049b71a4ef"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "mcq",
+          "questionText": "What is the stated use of the lipid-biomarker evidence?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "peat composition, decomposition and restoration"
+        },
+        "evidenceSegment": "P4-S24",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "In that study, lipid biomarkers were used to assess peatland composition, decomposition and restoration success. The authors also warned that one core per site and only three sampled depths limited both spatial and vertical resolution.",
+        "timecode": {
+          "startFrame": 71394710,
+          "endFrame": 76102042,
+          "sampleRateHz": 44100,
+          "startSeconds": 1618.927664,
+          "endSeconds": 1725.669887,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1d24b9fa8c3ddbd193bdefa6928286a722b5d7d58203563f276d71500b4301c1",
+        "planSegmentTextSha256": "a91ec3fa1a3e50294f32ce4803d69c40649f0e45d1de4e0feba97bbfe2f7c4d8"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/set30-listening-content-v1.0.15.json",
+        "sha256": "e91bd7bbb4329a2c9070bf6c22acd9228a029c8969c0013ff434630238045eb7"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "df3826a580216da282ecc15255e9861638ede23264f9ae86fbde4fd9cf88c4c9",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-30/set30-audio-production-plan.json",
+        "sha256": "63d531d88b598d5bcafdd65a2cce0f62cdc62d02dfa88387b3c7b4e1123436b1"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/elevenlabs-v4/set30-eleven-v4-manifest.json",
+        "sha256": "a4ca561927dd6cd66e62179c776f6bedbad1672c26621014868bacaf78b4f04c"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/elevenlabs-v4/set30-eleven-v4-progress.json",
+        "sha256": "fc638d9ad0c19932c8222d3142fb00bffb5934298a09c777bc5239eee92f83bd"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/elevenlabs-v4/set30-eleven-v4-qa.json",
+        "sha256": "79061a1e903e3efc6db9a249f2f2d1fa5aa25b7cd8fd142b7610810bdb4a439f"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/elevenlabs-v4/set30-concat.txt",
+        "sha256": "b61f4996dd57f0cb609a86c55ee8014914ba4b01c1a1771e503298c3b7b0fb64"
+      },
+      "concatPieceAggregateSha256": "8e1a8d1a2ea6a429d1fc327a3967268a3095e43993bdda2e894fbc0c79333362",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/elevenlabs-v4/ielts-set-30-listening-eleven-v4-master.wav",
+        "sha256": "a17a58643113e2e761b66de63e1c40c10f79452fe8905c8fae20ed6cb1529ab6",
+        "frameCount": 76706191,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/listening/elevenlabs-v4/ielts-set-30-listening-eleven-v4.mp3",
+        "sha256": "8d1c7c4bebd3d564bc2c7e46a4e58c785d08fec5028287253019747a844b785a"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-30.mp3",
+        "sha256": "8d1c7c4bebd3d564bc2c7e46a4e58c785d08fec5028287253019747a844b785a"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "709808d0edb36640ec74d56ac9e7d1880dd2a072d7329c11ad3ec9a8d8d0d452"
+  }
+}

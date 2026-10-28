@@ -1,0 +1,1970 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 39,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-39.ts",
+      "sha256": "d840a88c9ba2804f5d60a90c632fef74a3887947a8fdb44de62fbff90ae0c264"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Paragraph A",
+          "correctOptionIndex": 4,
+          "correctOptionText": "The collection challenge posed by urban waste"
+        },
+        "sourceExcerpt": "Urban streets accumulated horse manure, mud, market waste and dust. Hand sweeping could move this mixture into heaps for collection, but the work was slow and exposed labourers to traffic and airborne dirt. Expanding towns wanted a machine that would gather material continuously while travelling. The challenge was not merely to rotate a brush. Debris had to be lifted from an uneven surface, retained rather than scattered, and deposited somewhere that could be emptied.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph A» y la clave es «The collection challenge posed by urban waste». La evidencia dice «Urban streets accumulated horse manure, mud, market waste and dust.». La coincidencia semántica se apoya en «urban», «waste»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports v; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "d13fb94de7da61d1ab8f52bf6086f66aa32c024ec14c8dcc5f84d110d431623c",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Paragraph B",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Turning road wheels into brush movement"
+        },
+        "sourceExcerpt": "Early mechanical sweepers were pulled by horses. Wheels drove a system of gears, which turned a cylindrical or diagonal brush as the vehicle moved. Setting the brush across the direction of travel pushed refuse towards a conveyor or collection body. Designers experimented with bristle stiffness and contact pressure: a brush held too high missed compacted dirt, while one forced down wore rapidly and threw dust beyond the machine's path.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph B» y la clave es «Turning road wheels into brush movement». La evidencia dice «Wheels drove a system of gears, which turned a cylindrical or diagonal brush as the vehicle moved.». La coincidencia semántica se apoya en «wheels», «brush»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports ii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "d619e681b082201e2b1ac67fdbe75555a95839e28666a933bdfa14c55326584b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 7,
+          "correctOptionText": "The crucial hand-off from brush to container"
+        },
+        "sourceExcerpt": "A powered brush alone can leave a clean strip beside a larger ridge of rubbish. Successful machines therefore coordinated sweeping with a receptacle. Some lifted debris mechanically; others directed it into a hopper behind the brush. The mouth of the collection system had to pass close to the road without striking raised stones. Patents repeatedly altered this junction between brush, roadway and container because it determined whether the machine collected dirt or simply redistributed it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «The crucial hand-off from brush to container». La evidencia dice «Patents repeatedly altered this junction between brush, roadway and container because it determined whether the machine collected dirt or simply redistributed it.». La coincidencia semántica se apoya en «brush», «container»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports viii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "fa2e737410c660cd85ad79434279219cc35c25e76f8a9c66bca13582e06150bb",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Controlling airborne dirt with a limited resource"
+        },
+        "sourceExcerpt": "Dry sweeping created clouds that annoyed pedestrians and reduced visibility. Water sprays were added to damp fine particles before the brush disturbed them. Too little water failed to control dust, whereas too much turned soil into a heavy slurry and increased the load. Operators learned to adjust spraying to weather and surface conditions. Dust control thus became an operational judgement as well as a mechanical feature, and water supply limited how long a sweeper could remain on its route.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «Controlling airborne dirt with a limited resource». La evidencia dice «Dust control thus became an operational judgement as well as a mechanical feature, and water supply limited how long a sweeper could remain on its route.». La coincidencia semántica se apoya en «limited»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports iv; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "6339f03e2e92f5c4ffaacbd71d316ea1dd6c284de8b946946dd2a7f43620d7c5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Paragraph E",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Independent power, continuing compromises"
+        },
+        "sourceExcerpt": "Motorised vehicles removed dependence on the movement of a horse-drawn wheel and allowed brushes, conveyors and suction systems to have their own power. Greater control did not eliminate trade-offs. A fast brush could clean aggressively but wear itself and damage loose surfaces. Suction captured lighter particles yet struggled with bulky objects unless paired with side brushes. Manufacturers combined mechanisms, placing rotating brushes at the kerb to feed material towards a central intake.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph E» y la clave es «Independent power, continuing compromises». La evidencia dice «Motorised vehicles removed dependence on the movement of a horse-drawn wheel and allowed brushes, conveyors and suction systems to have their own power.». La coincidencia semántica se apoya en «power»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports i; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "5fc854933873d48721e2ed8971563b8eb3c0aa34ee876ed7e37d41d072921887",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Jobs transformed rather than erased"
+        },
+        "sourceExcerpt": "Mechanisation reduced the amount of hand sweeping required along a route, but it did not remove workers from street cleaning. Drivers had to judge kerb distance, monitor water and clear blockages. Crews were still needed around parked vehicles, narrow alleys and obstacles. Maintenance shifted effort into workshops, where bristles, bearings and collection systems were repaired. The machine changed the composition of labour from repeated manual sweeping towards operation, support and specialised maintenance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «Jobs transformed rather than erased». La evidencia dice «Mechanisation reduced the amount of hand sweeping required along a route, but it did not remove workers from street cleaning.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports vii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "133c568ea655bbb7ed16fc947889fe0e72c24626d58896b54544fb32c037aee7",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Paragraph G",
+          "correctOptionIndex": 2,
+          "correctOptionText": "A component improved within a political service"
+        },
+        "sourceExcerpt": "Modern sweeping schedules balance cleanliness, pollution control, traffic and cost. A machine may pass frequently on a commercial street and rarely on a quiet road, even though both use the same equipment. Sensors can show when a hopper is full, but they cannot decide which neighbourhood receives priority. Street sweepers illustrate a wider point about municipal technology: successive patents improve components, while the public outcome still depends on routing, staffing and the definition of an acceptably clean street.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph G» y la clave es «A component improved within a political service». La evidencia dice «Street sweepers illustrate a wider point about municipal technology: successive patents improve components, while the public outcome still depends on routing, staffing and the definition of an acceptably clean street.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports iii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "79b7181ffd090e274437ef278b6cc5e777a4c5ba335b1b28a285f3b2c38cdeaf",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "Hand sweepers first formed waste into ______ for collection.",
+          "acceptedResponses": [
+            "heaps"
+          ]
+        },
+        "sourceExcerpt": "Urban streets accumulated horse manure, mud, market waste and dust. Hand sweeping could move this mixture into heaps for collection, but the work was slow and exposed labourers to traffic and airborne dirt. Expanding towns wanted a machine that would gather material continuously while travelling. The challenge was not merely to rotate a brush. Debris had to be lifted from an uneven surface, retained rather than scattered, and deposited somewhere that could be emptied.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Hand sweepers first formed waste into ______ for collection.» y acepta «heaps». La oración fuente dice «Hand sweeping could move this mixture into heaps for collection, but the work was slow and exposed labourers to traffic and airborne dirt.». Esa oración contiene la respuesta y la conecta con «hand», «collection», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports heaps; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "0a46b346da5094ca807f0ba7d67ff66d552d4899ad79d0337c22c19d554dcbbe",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "On early machines, the ______ supplied motion to the gears.",
+          "acceptedResponses": [
+            "wheels"
+          ]
+        },
+        "sourceExcerpt": "Early mechanical sweepers were pulled by horses. Wheels drove a system of gears, which turned a cylindrical or diagonal brush as the vehicle moved. Setting the brush across the direction of travel pushed refuse towards a conveyor or collection body. Designers experimented with bristle stiffness and contact pressure: a brush held too high missed compacted dirt, while one forced down wore rapidly and threw dust beyond the machine's path.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «On early machines, the ______ supplied motion to the gears.» y acepta «wheels». La oración fuente dice «Wheels drove a system of gears, which turned a cylindrical or diagonal brush as the vehicle moved.». Esa oración contiene la respuesta y la conecta con «gears», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports wheels; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "150f23d57645f0ae4041b4ca2f8ac7713f7e39146d26360b91aa22637459c1a8",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "The intake had to avoid raised ______ in the roadway.",
+          "acceptedResponses": [
+            "stones"
+          ]
+        },
+        "sourceExcerpt": "A powered brush alone can leave a clean strip beside a larger ridge of rubbish. Successful machines therefore coordinated sweeping with a receptacle. Some lifted debris mechanically; others directed it into a hopper behind the brush. The mouth of the collection system had to pass close to the road without striking raised stones. Patents repeatedly altered this junction between brush, roadway and container because it determined whether the machine collected dirt or simply redistributed it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The intake had to avoid raised ______ in the roadway.» y acepta «stones». La oración fuente dice «The mouth of the collection system had to pass close to the road without striking raised stones.». Esa oración contiene la respuesta y la conecta con «raised», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports stones; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "cee66610b9c493163fbba6b8ff1bac88681d094809cbe0114f1bb17ff628c2b7",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "Too much spray could produce a heavy ______.",
+          "acceptedResponses": [
+            "slurry"
+          ]
+        },
+        "sourceExcerpt": "Dry sweeping created clouds that annoyed pedestrians and reduced visibility. Water sprays were added to damp fine particles before the brush disturbed them. Too little water failed to control dust, whereas too much turned soil into a heavy slurry and increased the load. Operators learned to adjust spraying to weather and surface conditions. Dust control thus became an operational judgement as well as a mechanical feature, and water supply limited how long a sweeper could remain on its route.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Too much spray could produce a heavy ______.» y acepta «slurry». La oración fuente dice «Too little water failed to control dust, whereas too much turned soil into a heavy slurry and increased the load.». Esa oración contiene la respuesta y la conecta con «too», «much», «heavy», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports slurry; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "4bbf4b2d8846c3d69287e216ad12d4836c6fffbf246c9f9808cfd50a16cfa5f5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "Side brushes direct waste towards a central ______.",
+          "acceptedResponses": [
+            "intake"
+          ]
+        },
+        "sourceExcerpt": "Motorised vehicles removed dependence on the movement of a horse-drawn wheel and allowed brushes, conveyors and suction systems to have their own power. Greater control did not eliminate trade-offs. A fast brush could clean aggressively but wear itself and damage loose surfaces. Suction captured lighter particles yet struggled with bulky objects unless paired with side brushes. Manufacturers combined mechanisms, placing rotating brushes at the kerb to feed material towards a central intake.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Side brushes direct waste towards a central ______.» y acepta «intake». La oración fuente dice «Manufacturers combined mechanisms, placing rotating brushes at the kerb to feed material towards a central intake.». Esa oración contiene la respuesta y la conecta con «brushes», «towards», «central», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports intake; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "7f967d26c1e5e9df2d4346d0a4427154e9621b9a71cf163cecbfaa8294515c86",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "The three kinds of labour replacing repeated manual sweeping were operation, support and specialised ______.",
+          "acceptedResponses": [
+            "maintenance"
+          ]
+        },
+        "sourceExcerpt": "Mechanisation reduced the amount of hand sweeping required along a route, but it did not remove workers from street cleaning. Drivers had to judge kerb distance, monitor water and clear blockages. Crews were still needed around parked vehicles, narrow alleys and obstacles. Maintenance shifted effort into workshops, where bristles, bearings and collection systems were repaired. The machine changed the composition of labour from repeated manual sweeping towards operation, support and specialised maintenance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The three kinds of labour replacing repeated manual sweeping were operation, support and specialised ______.» y acepta «maintenance». La oración fuente dice «Maintenance shifted effort into workshops, where bristles, bearings and collection systems were repaired.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F gives an explicit three-part list—operation, support and specialised maintenance. The blank completes that list with 'maintenance'; 'workshops' is a location and cannot supply the named third kind of labour.",
+        "ledgerRowSha256": "0383cde1077229ab1dd5545194f3e6147c94cc96f09c05875ebf320d1c243985",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Lichens require a layer of soil before they can colonise stone.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Lichens are partnerships in which a fungus lives with photosynthetic cells. They need no soil and can establish on exposed stone, making them conspicuous early colonists of roofs, walls and monuments. Attachment is slow, and a patch visible today may record many years of growth. That longevity interests ecologists, but conservators confront a different question: whether the organism is damaging the surface, merely occupying it or contributing to the valued appearance of an old structure.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Lichens require a layer of soil before they can colonise stone.», mientras el pasaje dice «They need no soil and can establish on exposed stone, making them conspicuous early colonists of roofs, walls and monuments.». Ambos tratan «soil», «stone», pero la proposición añade «lichens», «require», «layer», «before», «colonise» donde la fuente especifica «need», «establish», «exposed», «making», «them», «conspicuous». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "1961b46f4073fcbc764528185b7d71228e33ee85f82a91c0d8a94c7ba11638ca",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "All parts of one monument provide the same chemical habitat.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "A monument is not a uniform habitat. Mineral composition affects acidity and nutrient availability, while grain size and porosity influence how long water remains after rain. Calcareous stone supports communities different from those on siliceous rock. Mortar joints add another substrate within the same wall. Consequently, a list of species from one face cannot be assumed to represent the entire building, and comparisons between monuments must account for their materials.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «All parts of one monument provide the same chemical habitat.», mientras el pasaje dice «A monument is not a uniform habitat.». Ambos tratan «monument», «habitat», pero la proposición añade «all», «parts», «provide», «same», «chemical» donde la fuente especifica «uniform». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "9cea00c05c5d12606d5f424110830687b1e8a2d13199bf56d3e27211e25cd5fa",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "A spatial pattern always gives a reliable measure of age.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "North-facing surfaces in some climates remain moist longer, whereas exposed upper edges receive intense sun and rapid drying. Overhangs shelter stone from direct rain but may collect dust. These microclimates create bands and patches that can resemble a simple chronological succession. In reality, two adjacent areas may host different communities because they experience different wetting cycles. Spatial pattern is therefore not a clock unless exposure has been measured independently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A spatial pattern always gives a reliable measure of age.», mientras el pasaje dice «Spatial pattern is therefore not a clock unless exposure has been measured independently.». Ambos tratan «spatial», «pattern», pero la proposición añade «always», «gives», «reliable», «measure», «age» donde la fuente especifica «therefore», «clock», «unless», «exposure», «measured», «independently». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "ace05d615cba79ebeddd91a3322560810a3e58c1d1e709cb6828892e49251d56",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "The presence of a damaging mechanism proves serious loss at any monument.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Fungal filaments may enter pores and widen existing weaknesses as they expand and contract. Organic compounds can interact chemically with minerals, and fragments may detach when a crust is removed. These processes support concern about biodeterioration. Their practical importance varies with the lichen, stone and climate. On a sound block, change may be extremely slow; on a friable carved surface, even slight penetration can matter. A mechanism of damage is not by itself proof of serious loss at a particular monument.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The presence of a damaging mechanism proves serious loss at any monument.», mientras el pasaje dice «A mechanism of damage is not by itself proof of serious loss at a particular monument.». Ambos tratan «mechanism», «serious», «loss», «monument», pero la proposición añade «presence», «damaging», «proves», «any» donde la fuente especifica «damage», «itself», «proof», «particular». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "b1ab73ebf44192ecb4a90ce6ba7b33f98f4245b8d653760d4758a257ca63db88",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Removing a lichen cover may expose an unstable surface.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "A lichen cover can also reduce direct exposure to wind-driven rain or rapid temperature change. Removing it may reveal a surface that is less stable than expected. Claims of protection must be treated as carefully as claims of damage, because a dense mat may trap moisture under other conditions. The relevant comparison is not a clean stone imagined as permanent, but the likely future of the actual surface with and without intervention.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Removing a lichen cover may expose an unstable surface.» y el pasaje dice «A lichen cover can also reduce direct exposure to wind-driven rain or rapid temperature change.». La fuente conserva la misma relación mediante «lichen», «cover» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports TRUE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "260985b768cda00f4c67490fb861dca5574f9fc1c4280fdcf4c69c4874ae03ec",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "The passage gives a universal interval for recolonisation after cleaning.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Mechanical scraping, chemicals and high-pressure water can remove organisms, but each method can also alter the substrate. If fragments remain, recolonisation may occur; if the surface becomes rougher, new attachment may even be easier. A visually uniform result immediately after treatment tells little about long-term conservation. Trial areas, magnified inspection and follow-up monitoring provide stronger evidence than cleaning an entire façade in one operation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage gives a universal interval for recolonisation after cleaning.». El pasaje sí ofrece el contexto «If fragments remain, recolonisation may occur; if the surface becomes rougher, new attachment may even be easier.», pero en el texto completo no especifica «gives», «universal», «interval» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports NOT GIVEN; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "a5d764db032a015bca53003e17b21bd3bc955b89c5cf5091d7d9cb195725281e",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "Scientific measurement alone can determine every cultural value.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Some communities regard lichens as neglect, especially where inscriptions become unreadable. Elsewhere, a weathered biological patina contributes to historical character. Ecologists may value rare communities that have developed on undisturbed stone. These positions are not resolved by laboratory measurements alone. Decisions have to identify which values—legibility, material preservation, appearance or biodiversity—are at stake and whether they can coexist on different parts of a monument.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Scientific measurement alone can determine every cultural value.», mientras el pasaje dice «These positions are not resolved by laboratory measurements alone.». Ambos tratan «alone», pero la proposición añade «scientific», «measurement», «determine», «every», «cultural», «value» donde la fuente especifica «positions», «resolved», «laboratory», «measurements». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "b164cb3d5ab5497bf21c00843ad2a58c7e4f088345e9e75704ceffcaa8bde8ac",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes a possible stabilising effect of biological cover?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Paragraph E"
+        },
+        "sourceExcerpt": "A lichen cover can also reduce direct exposure to wind-driven rain or rapid temperature change. Removing it may reveal a surface that is less stable than expected. Claims of protection must be treated as carefully as claims of damage, because a dense mat may trap moisture under other conditions. The relevant comparison is not a clean stone imagined as permanent, but the likely future of the actual surface with and without intervention.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes a possible stabilising effect of biological cover?» y la clave es «Paragraph E». La evidencia dice «A lichen cover can also reduce direct exposure to wind-driven rain or rapid temperature change.». La coincidencia semántica se apoya en «cover»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports E; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "fe06030e412ad60c1f84d2f6d579a73105b96218155e68b2d223c6b39cfdba4c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why communities differ across materials within one wall?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Paragraph B"
+        },
+        "sourceExcerpt": "A monument is not a uniform habitat. Mineral composition affects acidity and nutrient availability, while grain size and porosity influence how long water remains after rain. Calcareous stone supports communities different from those on siliceous rock. Mortar joints add another substrate within the same wall. Consequently, a list of species from one face cannot be assumed to represent the entire building, and comparisons between monuments must account for their materials.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why communities differ across materials within one wall?» y la clave es «Paragraph B». La evidencia dice «Mortar joints add another substrate within the same wall.». La coincidencia semántica se apoya en «within», «wall»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "6bba62a6e6d73152b3cce6a9b107e5f1b1a25339cfa1a5326838821debb33b1a",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "Which paragraph proposes thresholds instead of a universal rule?",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Paragraph H"
+        },
+        "sourceExcerpt": "The evidence does not justify a rule that lichens should always be removed or always retained. Conservation begins with diagnosis: identify the organism, stone condition, exposure and purpose of the surface. An inscription actively losing detail may need targeted treatment; a stable patch away from carved features may be monitored. By replacing a binary argument with site-specific thresholds, managers can respond to genuine deterioration without erasing every living trace from historic stone.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph proposes thresholds instead of a universal rule?» y la clave es «Paragraph H». La evidencia dice «The evidence does not justify a rule that lichens should always be removed or always retained.». La coincidencia semántica se apoya en «rule»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph H uniquely supports H; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "b639633f488fdae526093ebebb2d76fe11b89b81ec8561f39f9306e7a1192177",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "Which paragraph contrasts the effect of penetration on sound stone with its effect on a friable carved surface?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Paragraph D"
+        },
+        "sourceExcerpt": "Fungal filaments may enter pores and widen existing weaknesses as they expand and contract. Organic compounds can interact chemically with minerals, and fragments may detach when a crust is removed. These processes support concern about biodeterioration. Their practical importance varies with the lichen, stone and climate. On a sound block, change may be extremely slow; on a friable carved surface, even slight penetration can matter. A mechanism of damage is not by itself proof of serious loss at a particular monument.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph contrasts the effect of penetration on sound stone with its effect on a friable carved surface?» y la clave es «Paragraph D». La evidencia dice «On a sound block, change may be extremely slow; on a friable carved surface, even slight penetration can matter.». La coincidencia semántica se apoya en «penetration», «sound», «friable», «carved», «surface»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph D makes the specific sound-block versus friable-carved-surface comparison and links it to the importance of slight penetration; paragraph J discusses scale and significance without that material-condition contrast.",
+        "ledgerRowSha256": "1f19dc9f219b5dc571f5581570bfabc31903be2328c59b059d3eef63d2b4e252",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "Which paragraph recommends small-scale testing before broad treatment?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Paragraph F"
+        },
+        "sourceExcerpt": "Mechanical scraping, chemicals and high-pressure water can remove organisms, but each method can also alter the substrate. If fragments remain, recolonisation may occur; if the surface becomes rougher, new attachment may even be easier. A visually uniform result immediately after treatment tells little about long-term conservation. Trial areas, magnified inspection and follow-up monitoring provide stronger evidence than cleaning an entire façade in one operation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph recommends small-scale testing before broad treatment?» y la clave es «Paragraph F». La evidencia dice «A visually uniform result immediately after treatment tells little about long-term conservation.». La coincidencia semántica se apoya en «treatment»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports F; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "dfe251eaaafa4bcc8d63e95aa6e1236d896a08d142cd6f24cf5fd9e7728e691e",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "Which paragraph warns against interpreting patterns as a timeline?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Paragraph C"
+        },
+        "sourceExcerpt": "North-facing surfaces in some climates remain moist longer, whereas exposed upper edges receive intense sun and rapid drying. Overhangs shelter stone from direct rain but may collect dust. These microclimates create bands and patches that can resemble a simple chronological succession. In reality, two adjacent areas may host different communities because they experience different wetting cycles. Spatial pattern is therefore not a clock unless exposure has been measured independently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph warns against interpreting patterns as a timeline?» y la clave es «Paragraph C». La evidencia dice «Spatial pattern is therefore not a clock unless exposure has been measured independently.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "2a27925ea8cf3627fe7b4555ee67cf4eb162cbf0f80dab3a9812278dac026ec8",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "Which participant is most likely to begin with an immediate practical need?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "a member currently needing support"
+        },
+        "sourceExcerpt": "Newcomers often join because they need a practical service, while established members may be motivated by social contact or a wish to contribute. Organisations sometimes participate too, offering meeting space or staff time. These groups behave differently. Someone with urgent needs may spend before earning; a regular volunteer may accumulate credits they never use; an institution can dominate the ledger through its scale. A durable bank must accommodate those patterns without turning credit balances into measures of personal worth.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which participant is most likely to begin with an immediate practical need?» y la clave es «a member currently needing support». La evidencia dice «Newcomers often join because they need a practical service, while established members may be motivated by social contact or a wish to contribute.». La coincidencia semántica se apoya en «practical», «need»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "7ff9559a92a9e0d5273477647dab2a9c5aebc3b14437267e4daf52894427c39c",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Which participant may build a balance without spending it?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "a regular volunteer"
+        },
+        "sourceExcerpt": "Newcomers often join because they need a practical service, while established members may be motivated by social contact or a wish to contribute. Organisations sometimes participate too, offering meeting space or staff time. These groups behave differently. Someone with urgent needs may spend before earning; a regular volunteer may accumulate credits they never use; an institution can dominate the ledger through its scale. A durable bank must accommodate those patterns without turning credit balances into measures of personal worth.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which participant may build a balance without spending it?» y la clave es «a regular volunteer». La evidencia dice «Someone with urgent needs may spend before earning; a regular volunteer may accumulate credits they never use; an institution can dominate the ledger through its scale.». La coincidencia semántica se apoya en «regular», «volunteer»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "a1d2663f42466a0f3eae42a41c4c9babd8f97b63dbb5d258411b71daca8db540",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "Which participant can affect the ledger through its larger scale?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "a partner institution"
+        },
+        "sourceExcerpt": "Newcomers often join because they need a practical service, while established members may be motivated by social contact or a wish to contribute. Organisations sometimes participate too, offering meeting space or staff time. These groups behave differently. Someone with urgent needs may spend before earning; a regular volunteer may accumulate credits they never use; an institution can dominate the ledger through its scale. A durable bank must accommodate those patterns without turning credit balances into measures of personal worth.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which participant can affect the ledger through its larger scale?» y la clave es «a partner institution». La evidencia dice «Someone with urgent needs may spend before earning; a regular volunteer may accumulate credits they never use; an institution can dominate the ledger through its scale.». La coincidencia semántica se apoya en «ledger», «through», «scale», «institution»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "72e5162dc9fa694d278564373bc99a79b69605e227c7ebbbf13622495dd7a6f4",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Which participant may be unable to reply through contribution because of illness?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "a member currently needing support"
+        },
+        "sourceExcerpt": "The system's social value may lie in generalised reciprocity. A member does not owe the original helper; the obligation is to the network. This can connect people who would never form a private barter pair. Yet trust weakens if members believe some repeatedly receive without contributing. Strictly blocking negative balances can exclude those with illness or caring responsibilities, precisely the people a community scheme may aim to support. Governance must decide when imbalance is exploitation and when it is solidarity.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which participant may be unable to reply through contribution because of illness?» y la clave es «a member currently needing support». La evidencia dice «Strictly blocking negative balances can exclude those with illness or caring responsibilities, precisely the people a community scheme may aim to support.». La coincidencia semántica se apoya en «illness», «support»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "9b8e9b8f8a06b8d98d7751ed518dcbcac7093a1aa5cbdd4a5485e389f3e3dbeb",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "Which participant can provide rooms and safeguarding procedures?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "a partner institution"
+        },
+        "sourceExcerpt": "Time banks often become more stable when hosted by a library, health service or community centre. An anchor can supply rooms, safeguarding procedures and a coordinator. Dependence on one sponsor, however, makes the network vulnerable to a budget cut or a change of priorities. Diverse partnerships and member-led governance spread that risk. Institutional support is most useful when it provides continuity without converting the bank into a programme in which professionals deliver and residents merely receive.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which participant can provide rooms and safeguarding procedures?» y la clave es «a partner institution». La evidencia dice «An anchor can supply rooms, safeguarding procedures and a coordinator.». La coincidencia semántica se apoya en «rooms», «safeguarding», «procedures»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "f8abe251b179c00c36d45c51c28a72438e57b55943cb4746812c7f317546f44e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Equal-hour accounting means every task has identical training requirements.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "A time bank records services in hours. A member earns credit by helping someone and spends credit when another member helps them. One hour is normally valued as one hour regardless of whether the task is tutoring, gardening or companionship. Advocates argue that this rule recognises contributions undervalued in cash markets and invites people with limited money to exchange. The equality is moral and administrative; it does not mean that every task demands identical training or effort.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Equal-hour accounting means every task has identical training requirements.», mientras el pasaje dice «The equality is moral and administrative; it does not mean that every task demands identical training or effort.». Ambos tratan «every», «task», «identical», «training», pero la proposición añade «equal», «hour», «accounting», «means», «requirements» donde la fuente especifica «equality», «moral», «administrative», «mean», «demands», «effort». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "167be7d190815f67c41929a8a7c495428b6b0cbe21b2d12952cf9f4a68cddc75",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "A coordinator may be required even when exchanges use a simple time unit.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Many schemes use a coordinator or digital platform rather than relying on two people to swap directly. A member can assist one person and later receive an unrelated service from someone else. This breaks the need for a coincidence of wants. It also creates work: requests must be matched, boundaries explained and inactive accounts followed up. The infrastructure supporting an apparently simple hour-for-hour exchange is substantial, even when much of it is volunteered.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A coordinator may be required even when exchanges use a simple time unit.» y el pasaje dice «Many schemes use a coordinator or digital platform rather than relying on two people to swap directly.». La fuente conserva la misma relación mediante «coordinator», «use» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports YES; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "18d9cb7ca5d9ec9935252118caf1640839e6daf6f7b1da91dd1b43e0dd316fe9",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "All time banks permit regulated electrical work.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Equal time is easy to defend for neighbourly assistance but harder where licensing, liability or expensive equipment is involved. A qualified electrician cannot necessarily provide regulated work through an informal exchange, and an hour using specialised machinery costs more than an hour of conversation. Some banks exclude high-risk services; others reimburse materials separately. The principle survives by narrowing what a credit promises. It measures time, not unrestricted access to every professional service.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «All time banks permit regulated electrical work.», mientras el pasaje dice «A qualified electrician cannot necessarily provide regulated work through an informal exchange, and an hour using specialised machinery costs more than an hour of conversation.». Ambos tratan «regulated», «work», pero la proposición añade «all», «time», «banks», «permit», «electrical» donde la fuente especifica «qualified», «electrician», «cannot», «necessarily», «provide», «through». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e2aec5372f8759c4cc1f812c11944cec90d4199476c4b28486b9c6628bdc3762",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "Transaction volume alone is sufficient evidence of social success.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "A count of exchanged hours shows activity but not outcome. A weekly visit may reduce isolation even if no concrete task is completed, while a large number of brief transactions may create little lasting connection. Evaluators therefore combine ledger data with interviews, retention and evidence of new relationships. The writer rejects the idea that rising transaction volume alone proves success. Measurement should follow the scheme's stated purpose, whether that is mutual aid, skills access or community participation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Transaction volume alone is sufficient evidence of social success.», mientras el pasaje dice «A count of exchanged hours shows activity but not outcome.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «transaction», «volume», «alone», «sufficient», «evidence», «social» donde la fuente especifica «count», «exchanged», «hours», «shows», «activity», «outcome». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports NO; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "51d5299da3b834fc09b38bedd73520ec2afcdc8838de5e30e39376dfa4024a25",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "fill",
+          "questionText": "A platform removes the need for a direct ______ of wants.",
+          "acceptedResponses": [
+            "coincidence"
+          ]
+        },
+        "sourceExcerpt": "Many schemes use a coordinator or digital platform rather than relying on two people to swap directly. A member can assist one person and later receive an unrelated service from someone else. This breaks the need for a coincidence of wants. It also creates work: requests must be matched, boundaries explained and inactive accounts followed up. The infrastructure supporting an apparently simple hour-for-hour exchange is substantial, even when much of it is volunteered.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A platform removes the need for a direct ______ of wants.» y acepta «coincidence». La oración fuente dice «This breaks the need for a coincidence of wants.». Esa oración contiene la respuesta y la conecta con «need», «wants», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports coincidence; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "c415233057a612b48738689ecee94e6e2730e627fd50f6c29ab4839faab1ed62",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "fill",
+          "questionText": "Some schemes charge separately for ______ used in a task.",
+          "acceptedResponses": [
+            "materials"
+          ]
+        },
+        "sourceExcerpt": "Equal time is easy to defend for neighbourly assistance but harder where licensing, liability or expensive equipment is involved. A qualified electrician cannot necessarily provide regulated work through an informal exchange, and an hour using specialised machinery costs more than an hour of conversation. Some banks exclude high-risk services; others reimburse materials separately. The principle survives by narrowing what a credit promises. It measures time, not unrestricted access to every professional service.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Some schemes charge separately for ______ used in a task.» y acepta «materials». La oración fuente dice «Some banks exclude high-risk services; others reimburse materials separately.». Esa oración contiene la respuesta y la conecta con «separately», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports materials; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "9c3630442121b74a00fcf9c2034f1a09c89cd03744a6bdbfeb58752ed379d5b8",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "fill",
+          "questionText": "Members owe help to the ______ rather than to one original helper.",
+          "acceptedResponses": [
+            "network"
+          ]
+        },
+        "sourceExcerpt": "The system's social value may lie in generalised reciprocity. A member does not owe the original helper; the obligation is to the network. This can connect people who would never form a private barter pair. Yet trust weakens if members believe some repeatedly receive without contributing. Strictly blocking negative balances can exclude those with illness or caring responsibilities, precisely the people a community scheme may aim to support. Governance must decide when imbalance is exploitation and when it is solidarity.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Members owe help to the ______ rather than to one original helper.» y acepta «network». La oración fuente dice «A member does not owe the original helper; the obligation is to the network.». Esa oración contiene la respuesta y la conecta con «owe», «original», «helper», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports network; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e1dbb76a0593458847352dabfc7b24e43d88d839daae20d4d4e75e75f4a7fb77",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "fill",
+          "questionText": "Evaluation can examine retention and new ______ as well as recorded hours.",
+          "acceptedResponses": [
+            "relationships"
+          ]
+        },
+        "sourceExcerpt": "A count of exchanged hours shows activity but not outcome. A weekly visit may reduce isolation even if no concrete task is completed, while a large number of brief transactions may create little lasting connection. Evaluators therefore combine ledger data with interviews, retention and evidence of new relationships. The writer rejects the idea that rising transaction volume alone proves success. Measurement should follow the scheme's stated purpose, whether that is mutual aid, skills access or community participation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Evaluation can examine retention and new ______ as well as recorded hours.» y acepta «relationships». La oración fuente dice «Evaluators therefore combine ledger data with interviews, retention and evidence of new relationships.». Esa oración contiene la respuesta y la conecta con «retention», «new», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports relationships; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e2ded94100c3451464291f0b32798cc2be2de601b44aaa98a2ee5bef27de79cc",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "fill",
+          "questionText": "Several partnerships can reduce dependence on one ______.",
+          "acceptedResponses": [
+            "sponsor"
+          ]
+        },
+        "sourceExcerpt": "Time banks often become more stable when hosted by a library, health service or community centre. An anchor can supply rooms, safeguarding procedures and a coordinator. Dependence on one sponsor, however, makes the network vulnerable to a budget cut or a change of priorities. Diverse partnerships and member-led governance spread that risk. Institutional support is most useful when it provides continuity without converting the bank into a programme in which professionals deliver and residents merely receive.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Several partnerships can reduce dependence on one ______.» y acepta «sponsor». La oración fuente dice «Dependence on one sponsor, however, makes the network vulnerable to a budget cut or a change of priorities.». Esa oración contiene la respuesta y la conecta con «dependence», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports sponsor; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "da6dd57caa4b736c340cd27626b9db4f0c25859f7e9a40215ebe4970714de64e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/reading/set39-reading-content-v1.0.3.json",
+        "sha256": "6bfbf65f89b11133eb8bbd5406fc8307d86e9a3f704ed7985782c087d14bc0ce"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "2a722f673f3d98fd5263115d70e7d79a64a7336f0930dc6dbed6afe8c3f8ec05",
+      "canonicalQuestionProjectionSha256": "ef0940f59d58d42f4e5da694f55953fe98fac35b428717ed2e9f22d85ef597bc"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Corbett"
+          ]
+        },
+        "evidenceSegment": "s39-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is Corbett, C-O-R-B-E-T-T. The voicemail transcript wrote Colbert.",
+        "timecode": {
+          "startFrame": 3439772,
+          "endFrame": 8770384,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999365,
+          "endSeconds": 198.874921,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "03b443f43c65eb779cc5e68352d539a539ab0180f29c5c47a56ef06567a97433",
+        "planSegmentTextSha256": "c01135e9cbe724468aef055ae6ea4e9e731175535f4c674fa05bcdc1d78e9206"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Room: ______",
+          "acceptedResponses": [
+            "bedroom"
+          ]
+        },
+        "evidenceSegment": "s39-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "These are the bedroom curtains; the sitting-room pair will stay in the old flat. The bedroom pair has a narrow leading edge that always faced the window, and I would like that orientation retained.",
+        "timecode": {
+          "startFrame": 3439772,
+          "endFrame": 8770384,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999365,
+          "endSeconds": 198.874921,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "295eb0ed6d1ba802f33b8b910526242dcb6a3e6617f4276c1cd57ea19c44201a",
+        "planSegmentTextSha256": "d389a7c53f8be6bdb0f09686a20cbc231339797751fa268d9208e1688bd89092"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Finished drop: ______ cm",
+          "acceptedResponses": [
+            "214"
+          ]
+        },
+        "evidenceSegment": "s39-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The finished drop should be two hundred and fourteen centimetres, not the current two thirty. The patterned border must stay level across all four panels, even though the new floor is slightly uneven.",
+        "timecode": {
+          "startFrame": 3439772,
+          "endFrame": 8770384,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999365,
+          "endSeconds": 198.874921,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1ff117f38c8c3eca6a93cdc37f98ef2e59d4742ee9d535fe6247725a1ffd1d14",
+        "planSegmentTextSha256": "60d29e27d0ab0b7e643ba35fecc68aa1687d2941c0e2a73bdc72aea372b64a69"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "New lining: ______",
+          "acceptedResponses": [
+            "thermal",
+            "thermal lining"
+          ]
+        },
+        "evidenceSegment": "s39-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "I considered blackout lining, but the shutters already block light, so thermal lining is the better choice. The old lining is faded at the sides, but the blue face fabric has no tears.",
+        "timecode": {
+          "startFrame": 3439772,
+          "endFrame": 8770384,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999365,
+          "endSeconds": 198.874921,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8102e71840becc15210c4a03e70d7b419fecdad778d51dac357fa4aa34b38830",
+        "planSegmentTextSha256": "bd27efdd61e90721ff2d68b769e784ece845c72f3ad14caec4bd090f13b145a7"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Existing fittings: silver ______",
+          "acceptedResponses": [
+            "hooks"
+          ]
+        },
+        "evidenceSegment": "s39-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Please reuse the silver hooks. The brass rings belong to another pair. Should I take down the metal hooks myself, or can the driver help when he arrives?",
+        "timecode": {
+          "startFrame": 3439772,
+          "endFrame": 8770384,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999365,
+          "endSeconds": 198.874921,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7b583f390f594064e082b6f8b96c8924223e7b05856baf4a711954c15faa1cf8",
+        "planSegmentTextSha256": "bd7a73814630fe58e4264060c2afdf948ab3431932654617c091c6617702ba01"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Collection: Friday the ______",
+          "acceptedResponses": [
+            "9th",
+            "9",
+            "ninth"
+          ]
+        },
+        "evidenceSegment": "s39-p1-t012",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "Friday the ninth suits me; the following Monday is too close to the move. I can provide the new postcode now, although the flat number will follow when I receive the keys.",
+        "timecode": {
+          "startFrame": 8794639,
+          "endFrame": 10398637,
+          "sampleRateHz": 44100,
+          "startSeconds": 199.424921,
+          "endSeconds": 235.796757,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b41e7ddd79d88b5d1de9438d9137f534cf0c180547cc2466d33496a63d869c2d",
+        "planSegmentTextSha256": "86fb24bbbb7944e077b5e2a67742a04200fd17c33a7362693aecd0cf869f8780"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Why are the curtains being shortened?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the new windows are lower"
+        },
+        "evidenceSegment": "s39-p1-t014",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The new windows are lower, although the width is almost identical, so only the drop needs changing. Before you press the old fabric, which colour-safety check will the workroom carry out?",
+        "timecode": {
+          "startFrame": 12578052,
+          "endFrame": 15193114,
+          "sampleRateHz": 44100,
+          "startSeconds": 285.216599,
+          "endSeconds": 344.515057,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8d8b7364654746eaf2c5b04ff034b540cda9fa10048a3220a5f5d9d5a3f628eb",
+        "planSegmentTextSha256": "190769d12580c7ffed69ae6590111dc16a8124a955246bebdfafc932db5916b8"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "What will Owen check before fitting the lining?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "whether the fabric releases dye"
+        },
+        "evidenceSegment": "s39-p1-t015",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Before fitting new lining, we will test whether the old blue fabric releases dye during pressing. How many complete pairs will be waiting for the driver?",
+        "timecode": {
+          "startFrame": 12578052,
+          "endFrame": 15193114,
+          "sampleRateHz": 44100,
+          "startSeconds": 285.216599,
+          "endSeconds": 344.515057,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "be109dfb1c2e871382e5e9adbf83efda20b97b98e906315ad4838517858d45dc",
+        "planSegmentTextSha256": "71eeae52f0051b023e0ca48139fd73118fac3803ce2caa61a8f8e775d34f8873"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "How many pairs will the driver collect?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "two pairs"
+        },
+        "evidenceSegment": "s39-p1-t016",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The booking is for two pairs: four curtain panels altogether. Please package each room separately because the moving boxes may arrive first.",
+        "timecode": {
+          "startFrame": 12578052,
+          "endFrame": 15193114,
+          "sampleRateHz": 44100,
+          "startSeconds": 285.216599,
+          "endSeconds": 344.515057,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7a781d396f74602d47eef7e3a3afc3bb57482bb933ad4eb631fbb1d64b2a2f74",
+        "planSegmentTextSha256": "3c2df90b5824980b248c8632f41eefc114666bb6922acb8f82a1d32f2339c4e1"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "How will Niamh pay the balance?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "by card"
+        },
+        "evidenceSegment": "s39-p1-t018",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "I paid the deposit online, but I will settle the balance by card when the curtains are returned.",
+        "timecode": {
+          "startFrame": 12578052,
+          "endFrame": 15193114,
+          "sampleRateHz": 44100,
+          "startSeconds": 285.216599,
+          "endSeconds": 344.515057,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "22761199f6e2c2f5fe538e6bf7ba3e48efd22b6efac7ec0efeb1fa7ad44860ba",
+        "planSegmentTextSha256": "479c027d5e59e89dc608d03ef3fbd7f69fba227dbc1b84e4e26173e396888dbb"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "11  Registration tent",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Location E"
+        },
+        "evidenceSegment": "s39-p2-t002",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The registration tent is on the upstream meadow beside the service gate, immediately before the rope-lined spectator path begins.",
+        "timecode": {
+          "startFrame": 18663792,
+          "endFrame": 23213260,
+          "sampleRateHz": 44100,
+          "startSeconds": 423.215238,
+          "endSeconds": 526.377778,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "28c4dd05823fccb936ccb83aff8e4400f5550acadb8c1e361057dc610aa12f18",
+        "planSegmentTextSha256": "74537c62287a6a3eb6ac7c13d14b251a4ccafcb9ebcf40147d0b7e3f6189e78a"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "12  Boathouse",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "s39-p2-t006",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The boathouse is the long riverside building set behind the central pontoon, on the bank opposite the town steps.",
+        "timecode": {
+          "startFrame": 18663792,
+          "endFrame": 23213260,
+          "sampleRateHz": 44100,
+          "startSeconds": 423.215238,
+          "endSeconds": 526.377778,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b88e9cb53d5b6a26247ffb07e47e53b5289f557a39223f8366f610f47a2131e3",
+        "planSegmentTextSha256": "950c6a26e9149854827e2e0ccd64d55f77b23b30ddcc86b261692d936805fabc"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "13  First-aid point",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "s39-p2-t009",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "First aid is on the town-side bank immediately upstream of the pedestrian bridge, beside the paved access route.",
+        "timecode": {
+          "startFrame": 18663792,
+          "endFrame": 23213260,
+          "sampleRateHz": 44100,
+          "startSeconds": 423.215238,
+          "endSeconds": 526.377778,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2e9a27100a510dbdc3f0e56e16d414b2ab18bfacf5ffa25297ce161159f19762",
+        "planSegmentTextSha256": "00de56a5b050aa0f2ca7d001a8874f0917e42dd9d87432f79768f30bff73d5b1"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "14  Commentary stand",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "s39-p2-t012",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The commentary stand faces the final two hundred metres from the town bank, just upstream of the finish tower.",
+        "timecode": {
+          "startFrame": 18663792,
+          "endFrame": 23213260,
+          "sampleRateHz": 44100,
+          "startSeconds": 423.215238,
+          "endSeconds": 526.377778,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "099e68b3ca362131e2972588a9209b14e9c041fecf88b8d2d0a77b074f91c016",
+        "planSegmentTextSha256": "5c85339fefe1d223d7fbd10f103729d363ca3ff4e7000c03ed0bc8cb103cbb54"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "15  Marshal post",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "s39-p2-t015",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The main marshal post is beside the controlled riverside crossing, where the meadow path meets the central pontoon approach.",
+        "timecode": {
+          "startFrame": 23237515,
+          "endFrame": 26228796,
+          "sampleRateHz": 44100,
+          "startSeconds": 526.927778,
+          "endSeconds": 594.757279,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d2daadb6e2ae705ab25bb2c567403ba84d04199d98e024100379c64ee892e807",
+        "planSegmentTextSha256": "a873e6c547ceab5c91afe13d2e078434a2a571e1fa10d252d11a367c78a718e7"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "16  Finish pontoon",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "s39-p2-t018",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The finish pontoon projects from the town bank immediately downstream of the finish tower.",
+        "timecode": {
+          "startFrame": 23237515,
+          "endFrame": 26228796,
+          "sampleRateHz": 44100,
+          "startSeconds": 526.927778,
+          "endSeconds": 594.757279,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b36c325750b0e2fc052c9387d3cc5ab5a79b0215488c278d9b8e3b27b4080403",
+        "planSegmentTextSha256": "c2f02f908921b38a947e1427c1b5e2d4cd66d2e907292e484377cef044b1b5c5"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "fill",
+          "questionText": "The pedestrian crossing opens only ______ races.",
+          "acceptedResponses": [
+            "between"
+          ]
+        },
+        "evidenceSegment": "s39-p2-t021",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "The crossing opens between races and closes as soon as the warning bell sounds.",
+        "timecode": {
+          "startFrame": 28408209,
+          "endFrame": 32172314,
+          "sampleRateHz": 44100,
+          "startSeconds": 644.177075,
+          "endSeconds": 729.53093,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ef15d15ddfc761bd45f29bd0bc2fc4b61f3be931e4f3206b78ee254d12a9df17",
+        "planSegmentTextSha256": "173c59125367906271c882674fcd357c985727a3f4c49e85d88d0d84066c8044"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "fill",
+          "questionText": "Volunteers must keep the ______ lane clear.",
+          "acceptedResponses": [
+            "emergency"
+          ]
+        },
+        "evidenceSegment": "s39-p2-t023",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Keep the emergency lane clear of bags, chairs and bicycles throughout the day.",
+        "timecode": {
+          "startFrame": 28408209,
+          "endFrame": 32172314,
+          "sampleRateHz": 44100,
+          "startSeconds": 644.177075,
+          "endSeconds": 729.53093,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d0117c838c4b031793c60671fbdbc45a8cb18e8a41f77a7af24ab8ac6fed610d",
+        "planSegmentTextSha256": "fa599033d40f240929dc9a7a6dd7c869a36131a0d2b5f76170f31c3784f2b000"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "fill",
+          "questionText": "A lost child should be taken to the ______.",
+          "acceptedResponses": [
+            "first-aid point"
+          ]
+        },
+        "evidenceSegment": "s39-p2-t027",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Take a lost child to the first-aid point, where the safeguarding lead can make an announcement.",
+        "timecode": {
+          "startFrame": 28408209,
+          "endFrame": 32172314,
+          "sampleRateHz": 44100,
+          "startSeconds": 644.177075,
+          "endSeconds": 729.53093,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "83a2b93171482ba9bb1eee01d5cf5c621ae2907b53dc788caedac1c7f8825d9c",
+        "planSegmentTextSha256": "769c0f5c3521ed047366f1af608bcef60c56ab83a8584fb95e860d59d3dbcc83"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "fill",
+          "questionText": "Radio messages should begin with the volunteer’s ______.",
+          "acceptedResponses": [
+            "post number"
+          ]
+        },
+        "evidenceSegment": "s39-p2-t030",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Begin every radio message with your post number, then describe the issue briefly.",
+        "timecode": {
+          "startFrame": 28408209,
+          "endFrame": 32172314,
+          "sampleRateHz": 44100,
+          "startSeconds": 644.177075,
+          "endSeconds": 729.53093,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f9b25403c12bb12807f9ba11d458ea6ceb48c0072bb34b35683bc22f845b896f",
+        "planSegmentTextSha256": "733fe577051463c1e06f2da25670940af6de77afc762293f9ee47acfc7f27eea"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "What weakness did the tutor identify in the first design?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "two variables changed together"
+        },
+        "evidenceSegment": "s39-p3-t002",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "The first design changed both timing and wording accuracy, so any effect could not be attributed to caption lag alone.",
+        "timecode": {
+          "startFrame": 36026245,
+          "endFrame": 40507099,
+          "sampleRateHz": 44100,
+          "startSeconds": 816.921655,
+          "endSeconds": 918.528322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "69f187ffd2d0fbdaf80debabb85bc616a653df0db35a144672b6673fc5439ac5",
+        "planSegmentTextSha256": "a87cbcb34b8cb5e8e61be61174f1d8d038a299ffbc5b7b0489556f7cf6113e2f"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "Why will the team use unfamiliar lecture topics?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "to limit prior-knowledge effects"
+        },
+        "evidenceSegment": "s39-p3-t006",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Unfamiliar topics reduce the advantage held by students who already know the content.",
+        "timecode": {
+          "startFrame": 36026245,
+          "endFrame": 40507099,
+          "sampleRateHz": 44100,
+          "startSeconds": 816.921655,
+          "endSeconds": 918.528322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d639b5441d07010470e311d75e815cd5c17f38d78ed6755159ef0ef0366aad83",
+        "planSegmentTextSha256": "b5574ab4006180036860901ad707e84d4f86fda077032088755ee4b21a1d3585"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "What will be rotated between participants?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the order of the recordings"
+        },
+        "evidenceSegment": "s39-p3-t009",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "We will rotate recording order so the second condition does not always benefit from practice.",
+        "timecode": {
+          "startFrame": 36026245,
+          "endFrame": 40507099,
+          "sampleRateHz": 44100,
+          "startSeconds": 816.921655,
+          "endSeconds": 918.528322,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "aeffb8a7369b88e8f0b114776644b10fc85dc074c92c2eae6b460b95a2934e34",
+        "planSegmentTextSha256": "b5eb84b1bac48ca276c92f2b80f2d043059ab2900f1d64154611e757334cb039"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "What outcome will supplement the comprehension test?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "note quality"
+        },
+        "evidenceSegment": "s39-p3-t013",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Alongside the comprehension test, we will score the quality of participants’ notes using a blind rubric.",
+        "timecode": {
+          "startFrame": 40525621,
+          "endFrame": 43453522,
+          "sampleRateHz": 44100,
+          "startSeconds": 918.948322,
+          "endSeconds": 985.340635,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a954d6e14bc2301ae7a1b7ef8c9b4c0a8ca861e89d9756d1c2f9ce26e5ec45c2",
+        "planSegmentTextSha256": "d3e87e09f3988f90dcdbe8d540155f1e05060a290f0fabcc8ac1439c00528a3d"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "What does Dr Nair say about concentration ratings?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "they should not be used alone"
+        },
+        "evidenceSegment": "s39-p3-t017",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Concentration ratings are useful background data, but they cannot be the only outcome because they are subjective.",
+        "timecode": {
+          "startFrame": 40525621,
+          "endFrame": 43453522,
+          "sampleRateHz": 44100,
+          "startSeconds": 918.948322,
+          "endSeconds": 985.340635,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "233ba17e66f3982f52e45f1c7ddedd43f2d48c731a98f2ef55898d6991a6c262",
+        "planSegmentTextSha256": "fb638f15c23d1de11a4a51544569f7f2be4f2107d4a46059e724fa751fc83f37"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "Participants: ______ students",
+          "acceptedResponses": [
+            "first-year",
+            "first year"
+          ]
+        },
+        "evidenceSegment": "s39-p3-t021",
+        "renderedChunk": "chunk-19",
+        "audiblePhrase": "Recruit first-year students so experience with recorded university lectures is reasonably similar.",
+        "timecode": {
+          "startFrame": 45632928,
+          "endFrame": 50026038,
+          "sampleRateHz": 44100,
+          "startSeconds": 1034.760272,
+          "endSeconds": 1134.377279,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "77a48d22043e341a732311ba3e8f2f9c779ba13cfb2f86da79d68c3e551c48b0",
+        "planSegmentTextSha256": "2343531060b91243d1421b13b73c8cda0cc649958a91fc1a8f42b1b4ee1e9c7e"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "Caption delay tested: ______ seconds",
+          "acceptedResponses": [
+            "three",
+            "3"
+          ]
+        },
+        "evidenceSegment": "s39-p3-t025",
+        "renderedChunk": "chunk-19",
+        "audiblePhrase": "The delayed condition will trail the speech by three seconds; five seconds felt obviously disruptive in the pilot.",
+        "timecode": {
+          "startFrame": 45632928,
+          "endFrame": 50026038,
+          "sampleRateHz": 44100,
+          "startSeconds": 1034.760272,
+          "endSeconds": 1134.377279,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1de3ab295a36eb22ba4154d0ef3569537c17ec7096f21f536bf720d064c7655d",
+        "planSegmentTextSha256": "35f3197eef65fd2e4a061ba3fbfff937b897d29f0cc2510e9a74952fa58cb34c"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "Listening equipment: closed-back ______",
+          "acceptedResponses": [
+            "headphones"
+          ]
+        },
+        "evidenceSegment": "s39-p3-t028",
+        "renderedChunk": "chunk-19",
+        "audiblePhrase": "Closed-back headphones will reduce variation from corridor noise.",
+        "timecode": {
+          "startFrame": 45632928,
+          "endFrame": 50026038,
+          "sampleRateHz": 44100,
+          "startSeconds": 1034.760272,
+          "endSeconds": 1134.377279,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "43c3a53a049783400ded9cb143db40f54de0d3414ee31ad4834084b6ffbdda11",
+        "planSegmentTextSha256": "05f6761a84cf7141fef5fefe80ce8ab3434022b2bdf8a349df57a78b3f83d51f"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "Notes collected on: ______",
+          "acceptedResponses": [
+            "paper"
+          ]
+        },
+        "evidenceSegment": "s39-p3-t031",
+        "renderedChunk": "chunk-19",
+        "audiblePhrase": "Participants will take notes on paper, avoiding differences in laptop notification settings.",
+        "timecode": {
+          "startFrame": 45632928,
+          "endFrame": 50026038,
+          "sampleRateHz": 44100,
+          "startSeconds": 1034.760272,
+          "endSeconds": 1134.377279,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "06f78d53ce0195d7f8758344a28fe0468341019efa1cc9854edfd68060096a17",
+        "planSegmentTextSha256": "1ffc84d670a551f62200ff3981a2f7bbc176704051052592be3bd3cbb6dd38bb"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Final interview length: ______",
+          "acceptedResponses": [
+            "five minutes",
+            "5 minutes"
+          ]
+        },
+        "evidenceSegment": "s39-p3-t036",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "The final interview will last five minutes and ask when participants noticed the delay.",
+        "timecode": {
+          "startFrame": 50044560,
+          "endFrame": 52510769,
+          "sampleRateHz": 44100,
+          "startSeconds": 1134.797279,
+          "endSeconds": 1190.720385,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f79bfb5576ca7b30b51b447f6fc3a4faa44150c715331ec14c447f0a6c5b1b75",
+        "planSegmentTextSha256": "9223ee06e1e405982c300f7a4c670ca4e655d903069e27433956242647268c0c"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "The leaf ______ slows water movement.",
+          "acceptedResponses": [
+            "canopy"
+          ]
+        },
+        "evidenceSegment": "s39-p4-t002",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "In the first sample, the leaf canopy slows water near the seabed, allowing material to settle.",
+        "timecode": {
+          "startFrame": 55981443,
+          "endFrame": 60869414,
+          "sampleRateHz": 44100,
+          "startSeconds": 1269.420476,
+          "endSeconds": 1380.258821,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "100920728dd81fe667dd85604c4c300b242b1734bf88d98c32e3c6df21835326",
+        "planSegmentTextSha256": "491acb146c69dadc475dd6e58af3acca217dcf3fec45e6e6133d3ffe2aa53610"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Meadows trap fine ______ carried from elsewhere.",
+          "acceptedResponses": [
+            "particles"
+          ]
+        },
+        "evidenceSegment": "s39-p4-t005",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "Meadows trap fine particles carried from elsewhere as well as material produced inside the habitat.",
+        "timecode": {
+          "startFrame": 55981443,
+          "endFrame": 60869414,
+          "sampleRateHz": 44100,
+          "startSeconds": 1269.420476,
+          "endSeconds": 1380.258821,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d32b9e6301de92ac3c7f67bb9194c50cb09d2d82549de3f1111740b865fec1fe",
+        "planSegmentTextSha256": "bd566591a1e533c8cb5c981d1f545cd5058027a1f4c268d19ca1495f2289a830"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Most long-term carbon is held in the ______.",
+          "acceptedResponses": [
+            "sediment"
+          ]
+        },
+        "evidenceSegment": "s39-p4-t010",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "In this dataset, most long-term carbon lies in sediment, not visible leaves.",
+        "timecode": {
+          "startFrame": 55981443,
+          "endFrame": 60869414,
+          "sampleRateHz": 44100,
+          "startSeconds": 1269.420476,
+          "endSeconds": 1380.258821,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0a9319d3eec706abcca4d02f5682d64e3db7ffd6f890474d2dca0af6e3beb7f0",
+        "planSegmentTextSha256": "b0894413a1aa3353405f904af534c23c1c9423196f4bc626880457245b45dd92"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Roots and ______ help stabilise the seabed.",
+          "acceptedResponses": [
+            "rhizomes"
+          ]
+        },
+        "evidenceSegment": "s39-p4-t015",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "In our course meadow, roots and rhizomes form a network that helps stabilise the seabed.",
+        "timecode": {
+          "startFrame": 60887936,
+          "endFrame": 65465062,
+          "sampleRateHz": 44100,
+          "startSeconds": 1380.678821,
+          "endSeconds": 1484.468526,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "40eb2873bad7306483931e3299b36e28fe06d16e4820ee55b03a1d990b2eb84f",
+        "planSegmentTextSha256": "dceb72da42f20f9ffea6e69b33fa48c86b1875104b1dbe9f698d68c32ccaca08"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Researchers take a sediment ______ to examine buried layers.",
+          "acceptedResponses": [
+            "core"
+          ]
+        },
+        "evidenceSegment": "s39-p4-t021",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "We now examine sampling. A sediment core, or core sample, provides a vertical sequence for analysis by depth.",
+        "timecode": {
+          "startFrame": 60887936,
+          "endFrame": 65465062,
+          "sampleRateHz": 44100,
+          "startSeconds": 1380.678821,
+          "endSeconds": 1484.468526,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "94a4fc9028a9c3eb72c75add2829bdc9bb58cf6495f845160d70e471ca755652",
+        "planSegmentTextSha256": "cfc2324b0df3eeb78d09caf6966a6015d4aed9c29f2065cc2d0621f583462176"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "The age of deposits may be estimated with chemical ______.",
+          "acceptedResponses": [
+            "markers"
+          ]
+        },
+        "evidenceSegment": "s39-p4-t025",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "The team uses coded chemical markers to estimate when the sampled layers accumulated.",
+        "timecode": {
+          "startFrame": 65483584,
+          "endFrame": 67268605,
+          "sampleRateHz": 44100,
+          "startSeconds": 1484.888526,
+          "endSeconds": 1525.365193,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8359148f7b4b2ff67cff0d4a3e3df8cee0a1189e6c6f576610ae2360a66fcd14",
+        "planSegmentTextSha256": "ff4c367aaed09100629d6cc9f22a1b2ab55e6b72c75a18b575dd19a8924717d6"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "mcq",
+          "questionText": "37  carbon produced by seagrass",
+          "correctOptionIndex": 0,
+          "correctOptionText": "local plant material"
+        },
+        "evidenceSegment": "s39-p4-t030",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "Carbon produced by the seagrass itself is classified as local plant material.",
+        "timecode": {
+          "startFrame": 69448041,
+          "endFrame": 73744670,
+          "sampleRateHz": 44100,
+          "startSeconds": 1574.78551,
+          "endSeconds": 1672.214739,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ee2ca9c063d216be22eebd988657b758398beb229cf641b78967c5471ebad353",
+        "planSegmentTextSha256": "61df58891b3f6a1f0013da7f5a53f12b1d11d504e3ca71a25bd6fb666296fafe"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "mcq",
+          "questionText": "38  particles arriving from the catchment",
+          "correctOptionIndex": 2,
+          "correctOptionText": "imported terrestrial material"
+        },
+        "evidenceSegment": "s39-p4-t034",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "Particles washed from the catchment belong to the imported terrestrial category.",
+        "timecode": {
+          "startFrame": 69448041,
+          "endFrame": 73744670,
+          "sampleRateHz": 44100,
+          "startSeconds": 1574.78551,
+          "endSeconds": 1672.214739,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8eccc99fdbfa27101af4cc31f4147660e3c08f2b3fc503dff9c3392035343672",
+        "planSegmentTextSha256": "6741c582fc80b236defa068adef8ad2c3b04e2fbdcbd02be57879a69f9cb105c"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "mcq",
+          "questionText": "39  carbon lost after a severe storm",
+          "correctOptionIndex": 3,
+          "correctOptionText": "remobilised material"
+        },
+        "evidenceSegment": "s39-p4-t038",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "In the storm record, carbon lost after a severe event is recorded as remobilised material because its burial has been reversed.",
+        "timecode": {
+          "startFrame": 69448041,
+          "endFrame": 73744670,
+          "sampleRateHz": 44100,
+          "startSeconds": 1574.78551,
+          "endSeconds": 1672.214739,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0bde00768feb60f028a87ebb00e78a2810329df277e58d5f8297833cdbcaaaf4",
+        "planSegmentTextSha256": "93f7f1ca1ce9ccd3e8aafb8e5662327fbb44570afcff2872dfc612980102e137"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "mcq",
+          "questionText": "40  additional storage after restoration",
+          "correctOptionIndex": 1,
+          "correctOptionText": "restoration gain"
+        },
+        "evidenceSegment": "s39-p4-t042",
+        "renderedChunk": "chunk-28",
+        "audiblePhrase": "Additional storage after restoration is the restoration gain, calculated against a credible baseline rather than the total stock.",
+        "timecode": {
+          "startFrame": 73763192,
+          "endFrame": 75820109,
+          "sampleRateHz": 44100,
+          "startSeconds": 1672.634739,
+          "endSeconds": 1719.276848,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e08c3aaebd42ee11e47dac69ae545171195e19f31dd878e0da24f0e65f0ed3cb",
+        "planSegmentTextSha256": "a176884508cfa256b6a3091104ea63989b1c5eabd9f49a049dc824228674ce70"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/set39-listening-content-v1.0.14.json",
+        "sha256": "75e5d6fb23c78ed80f1e0d9dfe16e1a59ff4dfc875216a4dc1c8a4eafc1e103d"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "ed368025a727e7fbb82eef5cc10f5199f19cebb90e2416d816e01d32403bb272",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-39/set39-audio-production-plan.json",
+        "sha256": "d8e3f8c8d4a3eb8a07451b137415d215d34c443daa84b141c482e3ab07bcc695"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/elevenlabs-v4/set39-eleven-v4-manifest.json",
+        "sha256": "19a4396ade89fd4696c51bb69afec066d15201035e237009ef5db0c0905b0536"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/elevenlabs-v4/set39-eleven-v4-progress.json",
+        "sha256": "6eae7a0e28e6a8020d9f795ce30ee2ec92fa7d71a496f9fb9a190679d4f7a721"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/elevenlabs-v4/set39-eleven-v4-qa.json",
+        "sha256": "f62dbfc4468f8e261a2fc817f584a1e8a0ae5d782cdbd4c0c4d71c63c6d36ab1"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/elevenlabs-v4/set39-concat.txt",
+        "sha256": "39010751860039cf7cb4c572dd04a79d6ef7fca309a5e5c183515c09698e12d1"
+      },
+      "concatPieceAggregateSha256": "196a18038a6f5df857295cad9626a07064937a10962ded25627d9a028c19dd5d",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/elevenlabs-v4/ielts-set-39-listening-eleven-v4-master.wav",
+        "sha256": "e3ae7a5d91ad7a61db68096abdfb1b1c138b9e5c91cc6a32cec6bd2fe9358ce1",
+        "frameCount": 77350400,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/listening/elevenlabs-v4/ielts-set-39-listening-eleven-v4.mp3",
+        "sha256": "6f7adbfd141b5df9c63ff9e82b49a937db099a85d6fe10ae6f185877e27a9df7"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-39.mp3",
+        "sha256": "6f7adbfd141b5df9c63ff9e82b49a937db099a85d6fe10ae6f185877e27a9df7"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "b9b2c448fc6339a668fbe5f20f87026e1e1889db401f48e7cb3803f95539b658"
+  }
+}

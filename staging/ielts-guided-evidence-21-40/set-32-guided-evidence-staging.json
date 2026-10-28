@@ -1,0 +1,1812 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 32,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-32.ts",
+      "sha256": "46b67e242ff897c7f827a01cee364ea3f7fd3a6b61ae68d5ac244da30e1c3aa2"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "fill",
+          "questionText": "Pressing the ______ releases character matrices.",
+          "acceptedResponses": [
+            "keyboard"
+          ]
+        },
+        "sourceExcerpt": "A line-casting machine began with a keyboard, but pressing a key did not print a letter. It released a small brass matrix from a magazine above the operator. Each matrix carried the recessed mould for one character. The selected matrices travelled down channels and gathered in sequence at the assembler, where the operator could inspect the line before casting. This separation between selection and printing was central: the keyboard organised reusable moulds rather than striking inked type directly onto paper. Magazines held multiple fonts and sizes, so the operator selected the appropriate bank before beginning. Copy was marked with type instructions, and a wrong selection could require several lines to be reset even when every word had been keyed correctly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Pressing the ______ releases character matrices.» y acepta «keyboard». La oración fuente dice «A line-casting machine began with a keyboard, but pressing a key did not print a letter.». Esa oración contiene la respuesta y la conecta con «pressing», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "56300a60af329a2616f3c6279d42141091003e64e8c8a531eb55db3082038e4d"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "fill",
+          "questionText": "Brass ______ carry the moulds for individual characters.",
+          "acceptedResponses": [
+            "matrices"
+          ]
+        },
+        "sourceExcerpt": "A line-casting machine began with a keyboard, but pressing a key did not print a letter. It released a small brass matrix from a magazine above the operator. Each matrix carried the recessed mould for one character. The selected matrices travelled down channels and gathered in sequence at the assembler, where the operator could inspect the line before casting. This separation between selection and printing was central: the keyboard organised reusable moulds rather than striking inked type directly onto paper. Magazines held multiple fonts and sizes, so the operator selected the appropriate bank before beginning. Copy was marked with type instructions, and a wrong selection could require several lines to be reset even when every word had been keyed correctly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Brass ______ carry the moulds for individual characters.» y acepta «matrices». La oración fuente dice «The selected matrices travelled down channels and gathered in sequence at the assembler, where the operator could inspect the line before casting.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "05ec0ec019aa1084d5d719cdd8ecd3fd84d46e16dc752e3d64af0c4a41fb6a1d"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "fill",
+          "questionText": "Characters are gathered at the ______ before casting.",
+          "acceptedResponses": [
+            "assembler"
+          ]
+        },
+        "sourceExcerpt": "A line-casting machine began with a keyboard, but pressing a key did not print a letter. It released a small brass matrix from a magazine above the operator. Each matrix carried the recessed mould for one character. The selected matrices travelled down channels and gathered in sequence at the assembler, where the operator could inspect the line before casting. This separation between selection and printing was central: the keyboard organised reusable moulds rather than striking inked type directly onto paper. Magazines held multiple fonts and sizes, so the operator selected the appropriate bank before beginning. Copy was marked with type instructions, and a wrong selection could require several lines to be reset even when every word had been keyed correctly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Characters are gathered at the ______ before casting.» y acepta «assembler». La oración fuente dice «The selected matrices travelled down channels and gathered in sequence at the assembler, where the operator could inspect the line before casting.». Esa oración contiene la respuesta y la conecta con «gathered», «before», «casting», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "1b853741d1b28a194afef458c07c41e1043e9468f13e06d57aecc55b2fcd4579"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "fill",
+          "questionText": "A complete line is formed at the ______.",
+          "acceptedResponses": [
+            "casting station"
+          ]
+        },
+        "sourceExcerpt": "At the casting station, molten type metal was forced against the aligned matrices to form one solid line, known as a slug. After cooling, the slug moved to a tray for page assembly, while the matrices were lifted away for reuse. Casting an entire line reduced the handling of individual pieces of type, but accuracy still mattered: a wrong matrix embedded an error in metal and usually required the whole line to be cast again. The moulding cycle was rapid, but the metal needed a controlled composition and temperature. Metal that was too cool might not fill fine details; excessive heat increased wear and made the working environment more hazardous. Rejected slugs returned to the melting pot.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A complete line is formed at the ______.» y acepta «casting station». La oración fuente dice «At the casting station, molten type metal was forced against the aligned matrices to form one solid line, known as a slug.». Esa oración contiene la respuesta y la conecta con «line», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "54008227e01e52a9fdf3006fb673e35986e6567e04ef929ec92bd3c4552623ea"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "fill",
+          "questionText": "Expandable ______ make the line reach the set width.",
+          "acceptedResponses": [
+            "spacebands"
+          ]
+        },
+        "sourceExcerpt": "A line had to fill a prescribed width even when its words did not do so naturally. The operator inserted wedge-shaped spacebands between words. Once the matrices reached the correct sequence, the machine expanded those spacebands until the row fitted the measure. The spaces, not the letters, absorbed the extra width. This mechanical justification produced a straight right-hand edge while preserving the chosen type size, although poor spacing decisions could still leave an unattractive page. Operators judged spacing while reading ahead. A line with too many wide gaps was often reset rather than accepted merely because it reached the measure. Thus mechanical expansion depended on typographic judgement about what readers would find tolerable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Expandable ______ make the line reach the set width.» y acepta «spacebands». La oración fuente dice «The operator inserted wedge-shaped spacebands between words.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "dccd55f3e45f977ee03be210c2be2fda0968bc4af05460ba630a58ceebd17d6d"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "fill",
+          "questionText": "Coded teeth guide matrices through the ______.",
+          "acceptedResponses": [
+            "distribution channel"
+          ]
+        },
+        "sourceExcerpt": "After casting, the matrices rose to a distributor. Their coded teeth differed by character, and a rotating mechanism carried each matrix along the distribution channel until the pattern matched the entrance to its own magazine slot. It then dropped into place for reuse. A damaged or incorrectly coded matrix could enter the wrong channel and later produce a puzzling substitution, so cleaning and inspection were part of routine operation. Distribution allowed the same matrices to circulate repeatedly during a shift. It was one reason the machine could sustain newspaper production without storing a separate piece of type for every occurrence of a common letter.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Coded teeth guide matrices through the ______.» y acepta «distribution channel». La oración fuente dice «Their coded teeth differed by character, and a rotating mechanism carried each matrix along the distribution channel until the pattern matched the entrance to its own magazine slot.». Esa oración contiene la respuesta y la conecta con «coded», «teeth», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "1c80141b63a1ad9cf1f9fb512a8b87a3de82aca7d442369fb1d3c135039d6ff2"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph A.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "II. From keyboard to assembled matrices"
+        },
+        "sourceExcerpt": "A line-casting machine began with a keyboard, but pressing a key did not print a letter. It released a small brass matrix from a magazine above the operator. Each matrix carried the recessed mould for one character. The selected matrices travelled down channels and gathered in sequence at the assembler, where the operator could inspect the line before casting. This separation between selection and printing was central: the keyboard organised reusable moulds rather than striking inked type directly onto paper. Magazines held multiple fonts and sizes, so the operator selected the appropriate bank before beginning. Copy was marked with type instructions, and a wrong selection could require several lines to be reset even when every word had been keyed correctly.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph A.» y la clave es «II. From keyboard to assembled matrices». La evidencia dice «A line-casting machine began with a keyboard, but pressing a key did not print a letter.». La coincidencia semántica se apoya en «keyboard»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "d8c33647df3f8f6396751200917d208d1cf519a0819ab1f105f4190954765f42"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph B.",
+          "correctOptionIndex": 4,
+          "correctOptionText": "V. Expanding spaces to justify a line"
+        },
+        "sourceExcerpt": "A line had to fill a prescribed width even when its words did not do so naturally. The operator inserted wedge-shaped spacebands between words. Once the matrices reached the correct sequence, the machine expanded those spacebands until the row fitted the measure. The spaces, not the letters, absorbed the extra width. This mechanical justification produced a straight right-hand edge while preserving the chosen type size, although poor spacing decisions could still leave an unattractive page. Operators judged spacing while reading ahead. A line with too many wide gaps was often reset rather than accepted merely because it reached the measure. Thus mechanical expansion depended on typographic judgement about what readers would find tolerable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph B.» y la clave es «V. Expanding spaces to justify a line». La evidencia dice «A line had to fill a prescribed width even when its words did not do so naturally.». La coincidencia semántica se apoya en «line»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "3fe37eac1b20cf5308d6db040588749cdb33a026647f57538edac7e7874e4a98"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph C.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "I. Producing a cast line"
+        },
+        "sourceExcerpt": "At the casting station, molten type metal was forced against the aligned matrices to form one solid line, known as a slug. After cooling, the slug moved to a tray for page assembly, while the matrices were lifted away for reuse. Casting an entire line reduced the handling of individual pieces of type, but accuracy still mattered: a wrong matrix embedded an error in metal and usually required the whole line to be cast again. The moulding cycle was rapid, but the metal needed a controlled composition and temperature. Metal that was too cool might not fill fine details; excessive heat increased wear and made the working environment more hazardous. Rejected slugs returned to the melting pot.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph C.» y la clave es «I. Producing a cast line». La evidencia dice «Casting an entire line reduced the handling of individual pieces of type, but accuracy still mattered: a wrong matrix embedded an error in metal and usually required the whole line to be cast again.». La coincidencia semántica se apoya en «cast», «line»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "cef811ca9800efab9c2671b63929cfedd5e9787d57fc2687b644893803b0fea6"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph D.",
+          "correctOptionIndex": 5,
+          "correctOptionText": "VI. Skill after mechanisation"
+        },
+        "sourceExcerpt": "Mechanisation changed compositors’ work without removing skill. Keyboard operators had to read copy rapidly, anticipate line length and notice errors before casting. Machinists diagnosed jams, controlled metal temperature and adjusted alignment. Proofreaders then compared the cast text with the manuscript. The technology redistributed expertise among specialised roles; it did not turn composition into an automatic process requiring no judgement. Speed and accuracy were measured together. An operator who produced many lines but forced frequent recasting could delay the page more than a slower colleague whose copy required little correction. Training therefore included rhythm, abbreviation conventions and the diagnosis of recurring faults.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph D.» y la clave es «VI. Skill after mechanisation». La evidencia dice «Mechanisation changed compositors’ work without removing skill.». La coincidencia semántica se apoya en «skill», «mechanisation»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "da38c04a940fc81ff42d9e37a0f75785ca9b99316cc766e2061a16b1f41e55f4"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph E.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "III. Distributing matrices by coded teeth"
+        },
+        "sourceExcerpt": "After casting, the matrices rose to a distributor. Their coded teeth differed by character, and a rotating mechanism carried each matrix along the distribution channel until the pattern matched the entrance to its own magazine slot. It then dropped into place for reuse. A damaged or incorrectly coded matrix could enter the wrong channel and later produce a puzzling substitution, so cleaning and inspection were part of routine operation. Distribution allowed the same matrices to circulate repeatedly during a shift. It was one reason the machine could sustain newspaper production without storing a separate piece of type for every occurrence of a common letter.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph E.» y la clave es «III. Distributing matrices by coded teeth». La evidencia dice «Their coded teeth differed by character, and a rotating mechanism carried each matrix along the distribution channel until the pattern matched the entrance to its own magazine slot.». La coincidencia semántica se apoya en «coded», «teeth»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "be97f3a222e067770fadbe92ec1e12ca794919494471fcce6483a0be63c6afe3"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph F.",
+          "correctOptionIndex": 6,
+          "correctOptionText": "VII. Working conditions and production risks"
+        },
+        "sourceExcerpt": "The composing room combined speed with hazards. Operators worked beside molten metal, hot surfaces and moving mechanisms, while fumes and metal dust required ventilation. Noise made conversation difficult, and a jam could tempt an impatient worker to reach into machinery. Safe production therefore depended on guards, disciplined maintenance and the handling of metal residues as carefully as on typing speed. Modern demonstrations use barriers and safer materials because historical practice is not an acceptable safety standard. Ventilation also protected the quality of casting by controlling heat around the machine. Safety and output were intertwined: neglected cleaning increased both mechanical faults and workers’ exposure to residues.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph F.» y la clave es «VII. Working conditions and production risks». La evidencia dice «Safe production therefore depended on guards, disciplined maintenance and the handling of metal residues as carefully as on typing speed.». La coincidencia semántica se apoya en «production»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "a58a57b75daee91bf16b9f97847f1e95d92cc62e8697348cb2ce3a2b127524c6"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "mcq",
+          "questionText": "Choose the most suitable heading for paragraph G.",
+          "correctOptionIndex": 3,
+          "correctOptionText": "IV. Digital replacement of hand composition"
+        },
+        "sourceExcerpt": "Photocomposition and later digital systems eventually replaced line casting in most newspaper plants. Text could be stored, corrected and arranged without producing a metal slug for every line, shortening revision and removing much hot-metal handling. Adoption was gradual rather than instantaneous: firms often ran old and new systems together while staff learned new processes and managers tested whether deadlines and page assembly remained reliable. The change reorganised whole production schedules, not merely the operator’s keyboard. Some occupations disappeared, others narrowed, and new work developed in photographic processing, electronic typesetting and system maintenance. Describing the transition simply as deskilling misses that uneven redistribution.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Choose the most suitable heading for paragraph G.» y la clave es «IV. Digital replacement of hand composition». La evidencia dice «Photocomposition and later digital systems eventually replaced line casting in most newspaper plants.». La coincidencia semántica se apoya en «digital»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "cdcd6b85c28cf0bb4ec3f00aaaf29ddf28c3eb606a7da9d32c426c13ed73f6c0"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Urban allotment contamination can originate from several different historical activities.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Urban allotment soil may contain lead, arsenic or other contaminants from former workshops, demolition, traffic emissions, painted structures or imported fill. A concentration is not a complete statement of risk. Exposure also depends on how the land is used, who uses it, how contact occurs and whether the contaminant is readily absorbed. Reconstructing the site’s history from maps and files is therefore an efficient first step: it suggests what to test, but it cannot replace physical sampling. Children may receive a larger dose from the same contact because of hand-to-mouth behaviour and lower body mass. The planned users of a site therefore belong in the initial assessment, not as an afterthought once numbers arrive.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Urban allotment contamination can originate from several different historical activities.» y el pasaje dice «Urban allotment soil may contain lead, arsenic or other contaminants from former workshops, demolition, traffic emissions, painted structures or imported fill.». La fuente conserva la misma relación mediante «urban», «allotment» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "99ffa365c812a4beae1fd06213a61fd8da39d482dcdbcd990d8688cbb33e5a56"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "A clean-looking surface proves that deeper soil is uncontaminated.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Appearance is unreliable. A clean layer at the surface may conceal older material below, while an industrial past does not mean that every part of a site is equally affected. Digging, drainage work and deep roots can reconnect layers that once seemed separate. Historical research helps identify former sheds, painted fences, sidings or dumping areas, yet those clues remain hypotheses until samples from known depths and locations are analysed. Community memories can identify short-lived uses that never appeared on formal maps. Such testimony guides investigation but still requires corroboration, because dates and exact locations may be uncertain.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A clean-looking surface proves that deeper soil is uncontaminated.», mientras el pasaje dice «A clean layer at the surface may conceal older material below, while an industrial past does not mean that every part of a site is equally affected.». Ambos tratan «clean», «surface», pero la proposición añade «looking», «proves», «deeper», «soil», «uncontaminated» donde la fuente especifica «layer», «conceal», «older», «material», «below», «while». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "6f86449ce1a0aa56e040ae942f39398adb7962ac803990dad20b302d81006e94"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Every city uses the same numerical soil-screening values.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Sampling design determines what conclusions are possible. Composite samples made from several small portions can estimate an area’s average condition, but they may dilute a local hotspot. Targeted sampling is preferable where records or visible remains suggest a specific source. Beds, paths and play areas may need separate treatment because patterns of contact differ. Numerical screening values also vary among jurisdictions; each reflects local assumptions about land use and exposure rather than a universal boundary between safe and unsafe soil. A sampling plan should be written before results are known. Moving points after seeing unexpectedly high or low values can bias the picture of the site unless the change is recorded as a separate follow-up investigation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Every city uses the same numerical soil-screening values.», mientras el pasaje dice «Numerical screening values also vary among jurisdictions; each reflects local assumptions about land use and exposure rather than a universal boundary between safe and unsafe soil.». Ambos tratan «numerical», «soil», «screening», «values», pero la proposición añade «every», «city», «uses», «same» donde la fuente especifica «also», «vary», «among», «jurisdictions», «each», «reflects». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "df0920e2ccb6835b96496009c870a4b1efbc0399bfac5b86d5aedeebff32341f"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Combining samples can conceal a small local hotspot.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Sampling design determines what conclusions are possible. Composite samples made from several small portions can estimate an area’s average condition, but they may dilute a local hotspot. Targeted sampling is preferable where records or visible remains suggest a specific source. Beds, paths and play areas may need separate treatment because patterns of contact differ. Numerical screening values also vary among jurisdictions; each reflects local assumptions about land use and exposure rather than a universal boundary between safe and unsafe soil. A sampling plan should be written before results are known. Moving points after seeing unexpectedly high or low values can bias the picture of the site unless the change is recorded as a separate follow-up investigation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Combining samples can conceal a small local hotspot.» y el pasaje dice «Composite samples made from several small portions can estimate an area’s average condition, but they may dilute a local hotspot.». La fuente conserva la misma relación mediante «samples», «small», «local», «hotspot» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "e20318748e761f70b8579d03ab3457919c51b2e903d98bb66b1de8154fe67128"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Raised beds remove contaminants from the underlying land.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Proportionate precautions can reduce contact while investigation continues. Gardeners can place verified clean soil in raised beds, cover busy paths and avoid carrying soil into homes. These measures interrupt exposure, but they do not remove contamination from the underlying land. Barriers need inspection when beds are repaired or roots penetrate deeply. Their purpose is managed separation, not a permanent declaration that the original soil has become clean. Mulch or vegetation can suppress dust on paths, but bare patches must be repaired. Raised beds also require clean compost and careful edging so that underlying soil is not brought to the surface during maintenance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Raised beds remove contaminants from the underlying land.», mientras el pasaje dice «These measures interrupt exposure, but they do not remove contamination from the underlying land.». Ambos tratan «remove», «underlying», «land», pero la proposición añade «raised», «beds», «contaminants» donde la fuente especifica «measures», «interrupt», «exposure», «contamination». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "cbd0127bd92e825ee0f38d10758188c05b3747750f6ad13993b0c0073181296d"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Soil particles on produce may contribute to exposure.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Food crops differ in how they interact with contaminants. Uptake into tissue varies by chemical and species, while soil particles adhering to leaves or roots may contribute substantially to exposure. Washing produce, peeling where appropriate and washing hands and tools can interrupt these exposure routes. Fruiting crops often behave differently from leafy vegetables, so advice should distinguish crop types rather than assume that every plant transfers contaminants in the same way. Preparation habits matter. Shaking soil from roots outdoors and keeping gardening footwear out of living areas reduce transport of particles without making unsupported claims about plant uptake.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Soil particles on produce may contribute to exposure.» y el pasaje dice «Uptake into tissue varies by chemical and species, while soil particles adhering to leaves or roots may contribute substantially to exposure.». La fuente conserva la misma relación mediante «soil», «particles», «contribute», «exposure» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "6180cb0d1245941e0abc70b64fa5da2500c219db379e7119864a402d603529be"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "The passage gives a fixed safe number of hours for weekly gardening.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "A transparent report records the site history, sampling positions, depths, methods, results and limitations. It explains which precautions remain sensible and where uncertainty persists. The passage does not prescribe a fixed number of safe gardening hours because exposure depends on activities and conditions, not time alone. Clear maps and units allow future gardeners to understand what was tested, while follow-up sampling can check whether barriers or replacement soil still perform as intended. The goal is a documented management plan, not a timeless certificate of safety. Communication should distinguish a screening value from a diagnosis. Exceeding a screen usually signals the need for closer assessment; it does not by itself specify the eventual remedy or prove that harm has occurred.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage gives a fixed safe number of hours for weekly gardening.». El pasaje sí ofrece el contexto «The passage does not prescribe a fixed number of safe gardening hours because exposure depends on activities and conditions, not time alone.», pero en el texto completo no especifica «gives», «weekly» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "73a546d005d058bba132c78c52ab990a48c74d30e3464c690ea094e04b7c6a29"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "Begin by examining maps and files to reconstruct the site's ______.",
+          "acceptedResponses": [
+            "history",
+            "site history"
+          ]
+        },
+        "sourceExcerpt": "Urban allotment soil may contain lead, arsenic or other contaminants from former workshops, demolition, traffic emissions, painted structures or imported fill. A concentration is not a complete statement of risk. Exposure also depends on how the land is used, who uses it, how contact occurs and whether the contaminant is readily absorbed. Reconstructing the site’s history from maps and files is therefore an efficient first step: it suggests what to test, but it cannot replace physical sampling. Children may receive a larger dose from the same contact because of hand-to-mouth behaviour and lower body mass. The planned users of a site therefore belong in the initial assessment, not as an afterthought once numbers arrive.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Begin by examining maps and files to reconstruct the site's ______.» y acepta «history» / «site history». La oración fuente dice «Reconstructing the site’s history from maps and files is therefore an efficient first step: it suggests what to test, but it cannot replace physical sampling.». Esa oración contiene la respuesta y la conecta con «maps», «files», «site», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "99ff75bbcb054b118ce5777d07444ec422d3398bc3410652503d1f4d0ca8c53d"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "Use ______ where earlier activities suggest a particular concern.",
+          "acceptedResponses": [
+            "targeted sampling"
+          ]
+        },
+        "sourceExcerpt": "Sampling design determines what conclusions are possible. Composite samples made from several small portions can estimate an area’s average condition, but they may dilute a local hotspot. Targeted sampling is preferable where records or visible remains suggest a specific source. Beds, paths and play areas may need separate treatment because patterns of contact differ. Numerical screening values also vary among jurisdictions; each reflects local assumptions about land use and exposure rather than a universal boundary between safe and unsafe soil. A sampling plan should be written before results are known. Moving points after seeing unexpectedly high or low values can bias the picture of the site unless the change is recorded as a separate follow-up investigation.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Use ______ where earlier activities suggest a particular concern.» y acepta «targeted sampling». La oración fuente dice «Targeted sampling is preferable where records or visible remains suggest a specific source.». Esa oración contiene la respuesta y la conecta con «suggest», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "25425efebbfe2b6afa16a1bda44952805fc0f35254f93e169f61d777ed95ebc8"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "fill",
+          "questionText": "Clean soil can be placed in ______ to reduce contact.",
+          "acceptedResponses": [
+            "raised beds"
+          ]
+        },
+        "sourceExcerpt": "Proportionate precautions can reduce contact while investigation continues. Gardeners can place verified clean soil in raised beds, cover busy paths and avoid carrying soil into homes. These measures interrupt exposure, but they do not remove contamination from the underlying land. Barriers need inspection when beds are repaired or roots penetrate deeply. Their purpose is managed separation, not a permanent declaration that the original soil has become clean. Mulch or vegetation can suppress dust on paths, but bare patches must be repaired. Raised beds also require clean compost and careful edging so that underlying soil is not brought to the surface during maintenance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Clean soil can be placed in ______ to reduce contact.» y acepta «raised beds». La oración fuente dice «Gardeners can place verified clean soil in raised beds, cover busy paths and avoid carrying soil into homes.». Esa oración contiene la respuesta y la conecta con «clean», «soil», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "75a341bd3e066cd8c7295618e5726ca369fdd0e864796638a6f847ae86fae1f4"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "Hand washing and ground cover interrupt possible ______.",
+          "acceptedResponses": [
+            "exposure routes"
+          ]
+        },
+        "sourceExcerpt": "Food crops differ in how they interact with contaminants. Uptake into tissue varies by chemical and species, while soil particles adhering to leaves or roots may contribute substantially to exposure. Washing produce, peeling where appropriate and washing hands and tools can interrupt these exposure routes. Fruiting crops often behave differently from leafy vegetables, so advice should distinguish crop types rather than assume that every plant transfers contaminants in the same way. Preparation habits matter. Shaking soil from roots outdoors and keeping gardening footwear out of living areas reduce transport of particles without making unsupported claims about plant uptake.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Hand washing and ground cover interrupt possible ______.» y acepta «exposure routes». La oración fuente dice «Washing produce, peeling where appropriate and washing hands and tools can interrupt these exposure routes.». Esa oración contiene la respuesta y la conecta con «washing», «interrupt», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "697ea0790b4791ff001f8ecf7cab692368048f9080a4c5684e7b2a2c83fa98ca"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "Major remediation should follow a ______ rather than one isolated result.",
+          "acceptedResponses": [
+            "professional assessment"
+          ]
+        },
+        "sourceExcerpt": "Adding compost may improve structure but does not make an unknown contaminant disappear. Capping, excavation or long-term controls should follow a professional assessment that considers extent, depth, exposure and regulation. Such decisions should not rest on a single sample. A qualified assessment integrates site history, a defensible sampling plan, laboratory controls and the intended land use before recommending costly remediation. Excavation can itself create dust and contaminated waste, so removal plans must specify worker protection, transport and lawful disposal. An apparently decisive remedy may otherwise shift exposure elsewhere.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Major remediation should follow a ______ rather than one isolated result.» y acepta «professional assessment». La oración fuente dice «Capping, excavation or long-term controls should follow a professional assessment that considers extent, depth, exposure and regulation.». Esa oración contiene la respuesta y la conecta con «follow», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "16b958bd5484aacb5581884ec9f5abd49ddcc708ca59e02f510563aef529240e"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "A good final document is a ______ that explains sampling and limitations.",
+          "acceptedResponses": [
+            "transparent report"
+          ]
+        },
+        "sourceExcerpt": "A transparent report records the site history, sampling positions, depths, methods, results and limitations. It explains which precautions remain sensible and where uncertainty persists. The passage does not prescribe a fixed number of safe gardening hours because exposure depends on activities and conditions, not time alone. Clear maps and units allow future gardeners to understand what was tested, while follow-up sampling can check whether barriers or replacement soil still perform as intended. The goal is a documented management plan, not a timeless certificate of safety. Communication should distinguish a screening value from a diagnosis. Exceeding a screen usually signals the need for closer assessment; it does not by itself specify the eventual remedy or prove that harm has occurred.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A good final document is a ______ that explains sampling and limitations.» y acepta «transparent report». La oración fuente dice «A transparent report records the site history, sampling positions, depths, methods, results and limitations.». Esa oración contiene la respuesta y la conecta con «sampling», «limitations», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "de8722c7e090203f0a63337709744f6557c5913db8376687b52160b200f1ce6a"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "The author believes internal markets can reveal information absent from meetings.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "An internal prediction market lets employees trade contracts tied to future events, such as whether a project will meet a deadline. The changing price summarises participants’ willingness to back an outcome. Supporters value the mechanism because it can aggregate dispersed information that staff may hesitate to voice in meetings. A technician who sees a supply problem and a salesperson who notices weak demand can both affect the estimate without first producing a single agreed narrative. Contracts can also be designed around sales, regulatory approval or completion of a technical milestone. Each captures a different uncertainty, so combining them into one broad question can hide which part of a project participants doubt.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author believes internal markets can reveal information absent from meetings.» y el pasaje dice «Supporters value the mechanism because it can aggregate dispersed information that staff may hesitate to voice in meetings.». La fuente conserva la misma relación mediante «information», «meetings» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "398865c5d7018612c554743cef73a06e711b4a51ca9d1a46bd4fb816134375a7"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "The author claims market prices are automatically true.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "A market price is not automatically true. Participation may be thin, incentives may be weak, and several traders may rely on the same mistaken source. Protected anonymity can reduce pressure from organisational rank, allowing a junior employee to express a pessimistic view, but it cannot create independent evidence. Design and culture determine whether a price reflects broad knowledge or merely the confidence of a small group. Correlated information is a particular danger when many employees rely on the same dashboard or manager. Numerous trades may then create an appearance of consensus without adding independent observations.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author claims market prices are automatically true.», mientras el pasaje dice «A market price is not automatically true.». Ambos tratan «market», «automatically», pero la proposición añade «claims», «prices» donde la fuente especifica «price». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "90e8608947cca11f50dec12af7d6111b9c7d622deb173c41ec1de3b933a204b2"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The author states that financial contracts always outperform virtual currency.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Incentives require balance. Virtual currency and modest prizes can widen participation without exposing employees to financial loss. Real stakes may focus attention in some settings, but they also introduce legal, ethical and equity concerns. The author does not claim that one arrangement always outperforms the other. What matters is whether the reward is sufficient to encourage considered forecasts without turning participation into gambling or excluding staff. Participation time is another cost. If trading requires constant attention, the market may privilege employees whose jobs allow frequent screen access rather than those with the best information.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The author states that financial contracts always outperform virtual currency.». El pasaje sí ofrece el contexto «Virtual currency and modest prizes can widen participation without exposing employees to financial loss.», pero en el texto completo no especifica «outperform» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "887628fbca1ad392ac711ac79c3f94e303a1dbd82358c152e834716130eedb74"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "The author supports stable settlement rules.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Credibility accumulates through visible settlement under stable rules. When an event occurs, the organisation should publish how the contract was resolved and pay or score it according to the rule announced at the start. Cancelling inconvenient questions or redefining deadlines teaches employees that conformity matters more than accuracy. A repeated record of fair settlement is therefore more important than an elaborate trading interface. Stable rules include a declared response to cancellation, postponement and missing evidence. Edge cases are not administrative trivia; unresolved ambiguity reduces willingness to trade in later rounds.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author supports stable settlement rules.» y el pasaje dice «Credibility accumulates through visible settlement under stable rules.». La fuente conserva la misma relación mediante «stable», «settlement», «rules» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "f65b4e2408dfb886309008affb449a2168e88143cedf9c13800b3ce430bca722"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "The author recommends using prices as commands to managers.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Fear can nullify the mechanism. If employees believe a pessimistic trade will damage their career, they may stay silent or imitate senior opinion. A market then reproduces the hierarchy it was meant to bypass. For this reason, a price is best treated as an early-warning signal: an unexpected movement should trigger interviews, checks of project data or scenario analysis, not an automatic managerial command. Confidential reporting channels may still be needed because a price shows that concern exists without revealing its factual basis. Investigation supplies the explanation that trading alone cannot provide.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author recommends using prices as commands to managers.», mientras el pasaje dice «For this reason, a price is best treated as an early-warning signal: an unexpected movement should trigger interviews, checks of project data or scenario analysis, not an automatic managerial command.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «recommends», «using», «prices», «commands», «managers» donde la fuente especifica «reason», «price», «best», «treated», «early», «warning». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "2ee66eda31554c0301ffb81246294146dffffb6e795d6ab708b8c0c0d994e324"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Which feature can reduce pressure from organisational rank?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. protected anonymity"
+        },
+        "sourceExcerpt": "A market price is not automatically true. Participation may be thin, incentives may be weak, and several traders may rely on the same mistaken source. Protected anonymity can reduce pressure from organisational rank, allowing a junior employee to express a pessimistic view, but it cannot create independent evidence. Design and culture determine whether a price reflects broad knowledge or merely the confidence of a small group. Correlated information is a particular danger when many employees rely on the same dashboard or manager. Numerous trades may then create an appearance of consensus without adding independent observations.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which feature can reduce pressure from organisational rank?» y la clave es «B. protected anonymity». La evidencia dice «Protected anonymity can reduce pressure from organisational rank, allowing a junior employee to express a pessimistic view, but it cannot create independent evidence.». La coincidencia semántica se apoya en «reduce», «pressure», «organisational», «rank», «protected», «anonymity»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "67400abe8f68fda603a9cf2b9a40d285dc19f3af904791664f4fd5c46b98cc2a"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "Which feature makes a contract easier to settle?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C. a specified event and date"
+        },
+        "sourceExcerpt": "Contracts must describe a specified event and date. ‘The product launches by 30 June’ can be settled mechanically; ‘the project is successful’ cannot, unless success has already been defined. Precise wording prevents organisers from changing the meaning after forecasts are made and makes disputes easier to resolve. It also tells participants what evidence is relevant instead of asking them to price a vague aspiration. Settlement sources should be named in advance—for example, a signed acceptance record or a published launch date. Otherwise two honest participants may interpret the same event differently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which feature makes a contract easier to settle?» y la clave es «C. a specified event and date». La evidencia dice «Contracts must describe a specified event and date.». La coincidencia semántica se apoya en «specified», «event», «date»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "64fbc1629c449af135da790e5edf47027814083834c0d001ba1755d8cf0a9325"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "Which practice is linked to credible operation?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A. visible settlement under stable rules"
+        },
+        "sourceExcerpt": "Credibility accumulates through visible settlement under stable rules. When an event occurs, the organisation should publish how the contract was resolved and pay or score it according to the rule announced at the start. Cancelling inconvenient questions or redefining deadlines teaches employees that conformity matters more than accuracy. A repeated record of fair settlement is therefore more important than an elaborate trading interface. Stable rules include a declared response to cancellation, postponement and missing evidence. Edge cases are not administrative trivia; unresolved ambiguity reduces willingness to trade in later rounds.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which practice is linked to credible operation?» y la clave es «A. visible settlement under stable rules». La evidencia dice «Credibility accumulates through visible settlement under stable rules.». La coincidencia semántica se apoya en «visible», «settlement», «under», «stable», «rules»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "7c695aef3ffda4b7e8f582537c22bea0e1c09552c6e83acd37a2815934b7753f"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "Which condition most limits the usefulness of an internal market?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "D. fear discourages honest participation"
+        },
+        "sourceExcerpt": "Fear can nullify the mechanism. If employees believe a pessimistic trade will damage their career, they may stay silent or imitate senior opinion. A market then reproduces the hierarchy it was meant to bypass. For this reason, a price is best treated as an early-warning signal: an unexpected movement should trigger interviews, checks of project data or scenario analysis, not an automatic managerial command. Confidential reporting channels may still be needed because a price shows that concern exists without revealing its factual basis. Investigation supplies the explanation that trading alone cannot provide.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which condition most limits the usefulness of an internal market?» y la clave es «D. fear discourages honest participation». La evidencia dice «Fear can nullify the mechanism.». La coincidencia semántica se apoya en «fear»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "87fec5db7221b0246c27860a6308c6b8b99b1a5b281af0576a96d2c0f1f061c8"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "What is the author’s preferred role for a market price?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. an early-warning signal"
+        },
+        "sourceExcerpt": "Fear can nullify the mechanism. If employees believe a pessimistic trade will damage their career, they may stay silent or imitate senior opinion. A market then reproduces the hierarchy it was meant to bypass. For this reason, a price is best treated as an early-warning signal: an unexpected movement should trigger interviews, checks of project data or scenario analysis, not an automatic managerial command. Confidential reporting channels may still be needed because a price shows that concern exists without revealing its factual basis. Investigation supplies the explanation that trading alone cannot provide.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the author’s preferred role for a market price?» y la clave es «B. an early-warning signal». La evidencia dice «For this reason, a price is best treated as an early-warning signal: an unexpected movement should trigger interviews, checks of project data or scenario analysis, not an automatic managerial command.». La coincidencia semántica se apoya en «price», «early», «warning», «signal»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "8ab68e7a269029f72487c2e2bf504627c2ffbd9b7eb52f01b935161df38ae7ad"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "What central limitation does the author emphasise?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C. Design and culture determine what prices mean."
+        },
+        "sourceExcerpt": "A market price is not automatically true. Participation may be thin, incentives may be weak, and several traders may rely on the same mistaken source. Protected anonymity can reduce pressure from organisational rank, allowing a junior employee to express a pessimistic view, but it cannot create independent evidence. Design and culture determine whether a price reflects broad knowledge or merely the confidence of a small group. Correlated information is a particular danger when many employees rely on the same dashboard or manager. Numerous trades may then create an appearance of consensus without adding independent observations.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What central limitation does the author emphasise?» y la clave es «C. Design and culture determine what prices mean.». La evidencia dice «Design and culture determine whether a price reflects broad knowledge or merely the confidence of a small group.». La coincidencia semántica se apoya en «design», «culture», «determine»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "0aa9138c8d1756ec47c91cce60c515fb8477ebcdfec18176c26e6fb8088e7c9e"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "Why must outcomes be precisely defined?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A. So contracts can be resolved without dispute"
+        },
+        "sourceExcerpt": "Contracts must describe a specified event and date. ‘The product launches by 30 June’ can be settled mechanically; ‘the project is successful’ cannot, unless success has already been defined. Precise wording prevents organisers from changing the meaning after forecasts are made and makes disputes easier to resolve. It also tells participants what evidence is relevant instead of asking them to price a vague aspiration. Settlement sources should be named in advance—for example, a signed acceptance record or a published launch date. Otherwise two honest participants may interpret the same event differently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why must outcomes be precisely defined?» y la clave es «A. So contracts can be resolved without dispute». La evidencia dice «Contracts must describe a specified event and date.». La coincidencia semántica se apoya en «must», «contracts»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "94f553f57f374f64329ebbebe1dade5985142917175f2d926be6e4ab1195d036"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "Which statement best reflects the conclusion?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "D. Markets can complement decisions under specific governance conditions."
+        },
+        "sourceExcerpt": "The conclusion is conditional. Internal markets can complement organisational decisions when questions are resolvable, participation is broad, settlement is credible and governance protects honest disagreement. Their usefulness declines where outcomes cannot be verified or fear suppresses participation. Procedures should name who reviews a signal, how conflicting evidence is recorded and when further investigation is required. The market earns authority through accountable performance over time, not through the market label or the visual precision of a price. A market should be discontinued when it repeatedly lacks participation or when settlement cannot be insulated from managerial discretion. Maintaining a visible number under those conditions adds theatre rather than evidence.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which statement best reflects the conclusion?» y la clave es «D. Markets can complement decisions under specific governance conditions.». La evidencia dice «Internal markets can complement organisational decisions when questions are resolvable, participation is broad, settlement is credible and governance protects honest disagreement.». La coincidencia semántica se apoya en «markets», «complement», «decisions», «governance»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "1717f836fdcdd480f99d2fa000a1fb6e25a75e017bcde8f0ca80cdf9a2bbb0f5"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "What does the author say leaders must be willing to do?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. examine inconvenient results"
+        },
+        "sourceExcerpt": "Leaders must be willing to examine inconvenient results. They should compare the market with surveys, expert panels and later outcomes, recording where the methods disagree. Participation and liquidity should accompany any headline price because a precise number can conceal very few trades. Regular evaluation shows whether forecasts are calibrated and whether information reaches the market in time to influence a decision. Calibration should be examined across many contracts, not inferred from one celebrated success. Organisations also need to record forecasts that attracted little activity, since selective evaluation exaggerates performance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What does the author say leaders must be willing to do?» y la clave es «B. examine inconvenient results». La evidencia dice «Leaders must be willing to examine inconvenient results.». La coincidencia semántica se apoya en «leaders», «must», «willing», «examine», «inconvenient», «results»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The cited paragraph uniquely supports the keyed response under the item instruction; distractors contradict, overstate, or are not stated by the passage.",
+        "ledgerRowSha256": "3affb67e7dffeffb3db1d45317aec0e158c0e52f8cbd765afc4fa131772c2777"
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/reading/set32-reading-content-v1.0.2.json",
+        "sha256": "ca0395448babaf4a6c63d34c50c82ee455dd5bddbeb01df1e753a68e3dfa3989"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "33d7e7178c52e2fea8312c7143c798b995a0c6d371e640475e46cf371fa15446",
+      "canonicalQuestionProjectionSha256": "0a4116a54e88a0ec5de708bb6d4a4676c780d90920e3bf9094dceb192f437009"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Researcher surname: ______",
+          "acceptedResponses": [
+            "Sedgewick"
+          ]
+        },
+        "evidenceSegment": "s32-p1-t002a",
+        "ledgerSegmentBeforeAudioRebind": "s32-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Hello. My surname is Sedgewick. I will spell it slowly: S, E, D, G, E, W, I, C, K. I need a scan for a research article.",
+        "timecode": {
+          "startFrame": 3146475,
+          "endFrame": 6938344,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.348639,
+          "endSeconds": 157.332063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "caacbe6ff33949799c3bf0be67c8a556d54907600f6a6e48ee9b3bcb6a6f1e20",
+        "planSegmentTextSha256": "5ab4ffbf2ff8c2a3c376dea5cd58cd97b468df41b08dc396026d25cfc87ed84b"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Map sheet: ______",
+          "acceptedResponses": [
+            "47"
+          ]
+        },
+        "evidenceSegment": "s32-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Sheet 47 in the coastal survey series. The catalogue also lists a sheet 74, but that covers the neighbouring district. I found the reference through your online catalogue, but the thumbnail was too small to check handwritten revisions.",
+        "timecode": {
+          "startFrame": 3146475,
+          "endFrame": 6938344,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.348639,
+          "endSeconds": 157.332063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a7f71efc0f7699ac526c07327a32c7f658ae5dd19755204c98ac5663dc13b6d1",
+        "planSegmentTextSha256": "eece4aa3406021ed59ea0ca124b97a690f45ec76c6d828ea36459813b95cf34d"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Original scale: ______",
+          "acceptedResponses": [
+            "1:2500"
+          ]
+        },
+        "evidenceSegment": "s32-p1-t007a",
+        "ledgerSegmentBeforeAudioRebind": "s32-p1-t007",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "No. It is the wider survey at a scale of one to two thousand five hundred. The catalogue writes that as one colon two thousand five hundred.",
+        "timecode": {
+          "startFrame": 3146475,
+          "endFrame": 6938344,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.348639,
+          "endSeconds": 157.332063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ca09cee98be8499cd942b34fab9b71a90f9243f11f7d272342e8e210beaa4556",
+        "planSegmentTextSha256": "dfe97a5804887eb77e34814e4976e831ef33dbccd0f0d2a8933a9cea65e2cc62"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Calibration item: ______",
+          "acceptedResponses": [
+            "colour target"
+          ]
+        },
+        "evidenceSegment": "s32-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Good. For a publication scan we place a colour target beside the map before capture, so later readers can judge whether the digital colour is faithful. Scale is easy to mistype, so the order form will display it both as a ratio and in words. The colour target is removed from the publication crop only after colour correction; the preservation master keeps it visible. That way, any later adjustment can be traced back to a documented capture.",
+        "timecode": {
+          "startFrame": 3146475,
+          "endFrame": 6938344,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.348639,
+          "endSeconds": 157.332063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4fcc1c3ad7fc42d3183101bfb09642a51a8aad5107e4791295c8aab19afa7ca5",
+        "planSegmentTextSha256": "ab1d34d913a7bba9db76c83d9f0d2f632c71674043a4b415723d741fb87d96fe"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Declared use: ______",
+          "acceptedResponses": [
+            "scholarly article"
+          ]
+        },
+        "evidenceSegment": "s32-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "A scholarly article on shoreline change, not a commercial guidebook.",
+        "timecode": {
+          "startFrame": 3146475,
+          "endFrame": 6938344,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.348639,
+          "endSeconds": 157.332063,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e7051c325d2ecb1817a815b38daeafd9264d4a05a0cb1c4e39db3df01062cd6d",
+        "planSegmentTextSha256": "9957a4dd1404a9773d51ea1aee5cc70cc3d7999a358bc7481f0a79294296e7ba"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Delivery method: ______",
+          "acceptedResponses": [
+            "secure download"
+          ]
+        },
+        "evidenceSegment": "s32-p1-t011",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "That distinction matters for the permission record. We will prepare the full-resolution file as a secure download; it is too large for an email attachment, and the download link expires after fourteen days. A secure link also allows us to send the uncompressed preservation derivative. Please download it on a computer rather than opening it in a phone preview, which may create a reduced copy. We keep the link active for two weeks and can issue it again after identity verification if necessary.",
+        "timecode": {
+          "startFrame": 6956866,
+          "endFrame": 8383427,
+          "sampleRateHz": 44100,
+          "startSeconds": 157.752063,
+          "endSeconds": 190.100385,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "275db9223a92a1dd3247f636ccf52a6817dc45370bbfe166ef2471a6eb649e9d",
+        "planSegmentTextSha256": "1930e64a3cba7ed273b3e1b65e9ad673edeb895397be0444483b9439fd2325ad"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Why is rights status checked?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. To determine whether the scan may be republished"
+        },
+        "evidenceSegment": "s32-p1-t013",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Not necessarily. We check rights status separately to determine whether the scan may be republished. Ownership of the paper object does not automatically include publication rights. We can scan first, but we will not issue the publication licence until that check is complete. The rights researcher checks the survey's date, creator and any later annotations separately. Different elements on one sheet may have different legal histories. If a note was added much later, permission for the base map does not automatically settle permission for that annotation.",
+        "timecode": {
+          "startFrame": 10998539,
+          "endFrame": 14976463,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.399977,
+          "endSeconds": 339.602336,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "466176c82cabf461bd1ccfd9198795e5983790dd2b658b0f7714ec94645f4762",
+        "planSegmentTextSha256": "39a5cf5bb0d98a2f03288f3300100b5076cbee47a2f6d7d016f33f0410927413"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "What will remain visible?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C. The map’s marginal annotations and scale information"
+        },
+        "evidenceSegment": "s32-p1-t015",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "We will. The crop can include the map's annotations and scale information without showing the conservation cradle. For your named article, the appropriate licence is the scholarly-publication licence. It covers this single use and requires the archive credit supplied with the download. Your article can reproduce one map image in print and the corresponding online edition. A book cover, exhibition panel or commercial database would require a new request. Please keep the credit line with the image file so an editor does not replace it with a generic acknowledgement during layout.",
+        "timecode": {
+          "startFrame": 10998539,
+          "endFrame": 14976463,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.399977,
+          "endSeconds": 339.602336,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4bdb72a7bbd4f18a99cb03c2b21ec071d61cddf29996699f984c507df618796a",
+        "planSegmentTextSha256": "002ba8f718479dcbc2fda0d3d6b861dfb87eee59482282126c8bd87c5ae0a003"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "Which licence is chosen?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A. A licence permitting use in the named scholarly article"
+        },
+        "evidenceSegment": "s32-p1-t015",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "We will. The crop can include the map's annotations and scale information without showing the conservation cradle. For your named article, the appropriate licence is the scholarly-publication licence. It covers this single use and requires the archive credit supplied with the download. Your article can reproduce one map image in print and the corresponding online edition. A book cover, exhibition panel or commercial database would require a new request. Please keep the credit line with the image file so an editor does not replace it with a generic acknowledgement during layout.",
+        "timecode": {
+          "startFrame": 10998539,
+          "endFrame": 14976463,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.399977,
+          "endSeconds": 339.602336,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ff084264830196619ce45213343a6c32f966f28a55f6eddeec2942e9d2c5957e",
+        "planSegmentTextSha256": "002ba8f718479dcbc2fda0d3d6b861dfb87eee59482282126c8bd87c5ae0a003"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "Why will a proof image be sent before the final file?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A. To check the sheet number, orientation and crop"
+        },
+        "evidenceSegment": "s32-p1-t016",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "I'll send a proof image before final release. Check the sheet number, orientation and crop, but do not judge fine colour from the proof because it is compressed for quick viewing. Once you approve those structural details, the archive will generate the full file and attach a metadata record describing capture date, equipment and any digital adjustments.",
+        "timecode": {
+          "startFrame": 10998539,
+          "endFrame": 14976463,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.399977,
+          "endSeconds": 339.602336,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "24374813838a6eb3600f7fe5e91076d4a0a39a40108cd8d22e6bec0fa2c45be6",
+        "planSegmentTextSha256": "30ee38c1dc239254db30718468afb2e8534bbbc1170c322fb12bde6451e6604d"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Map location: signal crossing",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B"
+        },
+        "evidenceSegment": "s32-p2-t001",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "Welcome to Northport’s rebuilt bus interchange. Station Road runs along the southern edge of your plan. The signal crossing is at B, where the tactile path enters the forecourt. Ignore the crossing by the taxi exit: it has no pedestrian phase and is shown only as a service boundary.",
+        "timecode": {
+          "startFrame": 19757807,
+          "endFrame": 23959013,
+          "sampleRateHz": 44100,
+          "startSeconds": 448.022834,
+          "endSeconds": 543.288277,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "640f2d824bcc6e1141228a97da852fd20a31fc1ae11b05503a4d0ae498af0f0f",
+        "planSegmentTextSha256": "2ef1624407a75b70418584eb1a9f6a77275edae75fb3af56a7738b6e440141a0"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "Map location: mobility desk",
+          "correctOptionIndex": 4,
+          "correctOptionText": "E"
+        },
+        "evidenceSegment": "s32-p2-t002",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "After crossing, follow the covered walkway north-east. The mobility desk is E, immediately beside the lift and opposite the ticket machines. Staff there arrange boarding assistance and provide wheelchairs; they do not change tickets or reserve seats.",
+        "timecode": {
+          "startFrame": 19757807,
+          "endFrame": 23959013,
+          "sampleRateHz": 44100,
+          "startSeconds": 448.022834,
+          "endSeconds": 543.288277,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ee882c27995a650b6d7951451541111c0811e86921656e97d4212926a4a862b7",
+        "planSegmentTextSha256": "a3d4cba64d18bb27732f888b4cc6467857110a261129a11110f92d11396cae6d"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Map location: quiet waiting room",
+          "correctOptionIndex": 7,
+          "correctOptionText": "H"
+        },
+        "evidenceSegment": "s32-p2-t003",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "Passengers needing a low-stimulation space can use the quiet waiting room at H. It has adjustable lighting, solid doors and no public-address speaker, although departure information appears on a visual screen and an emergency light flashes if evacuation is required.",
+        "timecode": {
+          "startFrame": 19757807,
+          "endFrame": 23959013,
+          "sampleRateHz": 44100,
+          "startSeconds": 448.022834,
+          "endSeconds": 543.288277,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "04e3eb12e1393329e255c50df5089359e707a3ea99b902512ad5651b0a41b6f8",
+        "planSegmentTextSha256": "5c90bfedaa6763441bb0238dd62a529280cc7942d53c59db8f4b7faa02ef316c"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "Map location: taxi rank",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C"
+        },
+        "evidenceSegment": "s32-p2-t004",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The taxi rank is C, beyond the eastern service road. Taxis enter and leave without crossing the bus apron. Join the signed queue rather than approaching a vehicle from behind; the walking route is slightly longer but keeps passengers away from reversing buses.",
+        "timecode": {
+          "startFrame": 19757807,
+          "endFrame": 23959013,
+          "sampleRateHz": 44100,
+          "startSeconds": 448.022834,
+          "endSeconds": 543.288277,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b4b041f7af5da3b28fa78c6b7ff892b6934c34d51366d2c434fcbb3301308157",
+        "planSegmentTextSha256": "4437e4460c271cecd772c40af702b190c64d5772d7e38ca45a6a31dcefd55cc1"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Map location: information point",
+          "correctOptionIndex": 5,
+          "correctOptionText": "F"
+        },
+        "evidenceSegment": "s32-p2-t005",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "For routes and fares, use the information point at F, farther north than the mobility desk. If you have booked assistance, report to the mobility desk first, but take fare changes and operator questions to the information point.",
+        "timecode": {
+          "startFrame": 19757807,
+          "endFrame": 23959013,
+          "sampleRateHz": 44100,
+          "startSeconds": 448.022834,
+          "endSeconds": 543.288277,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8021deb8a3c7f625a1d999c4b7151f17275c9afbce67b0f27df485fdb35de1b9",
+        "planSegmentTextSha256": "ef75c8b68bdf2067ba807fc7c9cfda0006feb3b394488b6693f65681e86d348f"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Map location: sheltered link",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A"
+        },
+        "evidenceSegment": "s32-p2-t006",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The sheltered link between the old and new buildings is A on the western side. It is not the glass corridor beside Bay 6. Cyclists must dismount in the forecourt and leave bicycles at the western racks, because bicycles cannot be taken through the link.",
+        "timecode": {
+          "startFrame": 19757807,
+          "endFrame": 23959013,
+          "sampleRateHz": 44100,
+          "startSeconds": 448.022834,
+          "endSeconds": 543.288277,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bd5872f48575aa1c62ac3f586e5bda923068e8960bbf265148bb6cc12c819da0",
+        "planSegmentTextSha256": "ac4ad7e34c5618ff9bf061c895c69d13ca4784bca7ed903646c8f810fdb0e9cd"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "Coastal service bay",
+          "correctOptionIndex": 3,
+          "correctOptionText": "D. Bay 4"
+        },
+        "evidenceSegment": "s32-p2-t007",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "Now look at the departure bays. The coastal service leaves from Bay 4, option D. That bay remains fixed throughout the day, including during rail engineering work.",
+        "timecode": {
+          "startFrame": 26589576,
+          "endFrame": 31010330,
+          "sampleRateHz": 44100,
+          "startSeconds": 602.938231,
+          "endSeconds": 703.182086,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fd9cf1610c7c494c18e86068712f2e7f36d94fd0b6cc9f1577b427a4d2cc882b",
+        "planSegmentTextSha256": "f1c015882de3713c6c5f907d96d91a185f90f166c6b98f99df766a15664d1daf"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Airport service bay",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. Bay 2"
+        },
+        "evidenceSegment": "s32-p2-t008",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The airport coach uses Bay 2, option B. Roadworks can delay the journey, so passengers should allow extra time, but the departure point does not change.",
+        "timecode": {
+          "startFrame": 26589576,
+          "endFrame": 31010330,
+          "sampleRateHz": 44100,
+          "startSeconds": 602.938231,
+          "endSeconds": 703.182086,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2da12ab454a715a7f7574007326d9e0d6d708bfbc8300fb6d88cf2498fea6a2d",
+        "planSegmentTextSha256": "3bcb5526351115b4f64d7eae84d093a22da0a8394b091dd0e76dfda044e22263"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "Evening local service bay",
+          "correctOptionIndex": 4,
+          "correctOptionText": "E. Bay 5"
+        },
+        "evidenceSegment": "s32-p2-t009",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The evening local departs from Bay 5, option E. Check the main screen because its destination is sometimes announced without the route number.",
+        "timecode": {
+          "startFrame": 26589576,
+          "endFrame": 31010330,
+          "sampleRateHz": 44100,
+          "startSeconds": 602.938231,
+          "endSeconds": 703.182086,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f75236e38e5f396f571d543f8ccfbc4a3b2bbb1a1bb85f136fd032c27515ec03",
+        "planSegmentTextSha256": "57397c7a17ae43de5d2a28c245ea361235be006a29f166fc62d397337c457f7a"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "Replacement service bay",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C. Bay 3"
+        },
+        "evidenceSegment": "s32-p2-t010",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "Replacement buses for disrupted trains use Bay 3, option C. It has room for luggage and rail staff. Those vehicles may display a rail destination rather than a bus number, and staff check tickets at the head of the bay.",
+        "timecode": {
+          "startFrame": 26589576,
+          "endFrame": 31010330,
+          "sampleRateHz": 44100,
+          "startSeconds": 602.938231,
+          "endSeconds": 703.182086,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1bdcf365018476f112ed9dd123313290021d0ad6c37f4bceaff72f114e7d38fd",
+        "planSegmentTextSha256": "bc61b320f4ae5d27162d3fddec0fa7629fcf1219d87616b05ce41138fbf25ecc"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "Why standardise vessel size?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. To prevent size from confounding the comparison"
+        },
+        "evidenceSegment": "s32-p3-t001",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "For a fair comparison, every vessel needs the same dimensions. A larger pot heats and cools differently, so size would otherwise confound the effect of the temper.",
+        "timecode": {
+          "startFrame": 37554040,
+          "endFrame": 40475769,
+          "sampleRateHz": 44100,
+          "startSeconds": 851.565533,
+          "endSeconds": 917.817891,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "709c4079acc51a23b672571d9a184bfd34285cd1dd343dede7caed9b477b7869",
+        "planSegmentTextSha256": "0d25003fbe55942486eef0cb894d7e16d04192d8c7e256f404bcae073a48aee1"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "What is the control group?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A. Vessels made from the same clay without added temper"
+        },
+        "evidenceSegment": "s32-p3-t004",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Pots made from the same clay but with no added temper. They must receive the same mixing, drying, handling and firing schedule as the experimental pots.",
+        "timecode": {
+          "startFrame": 37554040,
+          "endFrame": 40475769,
+          "sampleRateHz": 44100,
+          "startSeconds": 851.565533,
+          "endSeconds": 917.817891,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9f8f216e8c2d8f05db27057676a3a22fe6e5f987ef94780d3969410039359cf4",
+        "planSegmentTextSha256": "a1e7fc8d7d1b75089894e90a98cf8165896d29281e8dbd302239a1eced8fc0bf"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "Why not move pots?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C. Movement would introduce uncontrolled temperature variation."
+        },
+        "evidenceSegment": "s32-p3-t006",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "No. Movement would introduce uncontrolled temperature variation and might cause damage itself. We’ll randomise positions before ignition and record the layout on a scaled sketch.",
+        "timecode": {
+          "startFrame": 37554040,
+          "endFrame": 40475769,
+          "sampleRateHz": 44100,
+          "startSeconds": 851.565533,
+          "endSeconds": 917.817891,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c2381531419dce4db9ff6b25d8154cc4ffdd016592b4d7e14464c8f134bf2cbd",
+        "planSegmentTextSha256": "db54b750bff1191e5f473197f1ccda840cc7bb20318c0db1cfd01af5ddcfceb1"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "Why reject a second firing?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B. Weather and fuel conditions could not be held constant."
+        },
+        "evidenceSegment": "s32-p3-t008",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Not reliable replication. Weather and fuel conditions could not be held constant, so a second day might add a new confound. It could be analysed as a separate experiment, but not casually merged with this one.",
+        "timecode": {
+          "startFrame": 37554040,
+          "endFrame": 40475769,
+          "sampleRateHz": 44100,
+          "startSeconds": 851.565533,
+          "endSeconds": 917.817891,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "aa1fef8c3458445f418d58d95f41e71613c1dd749ee1829e57ae13395679f6a2",
+        "planSegmentTextSha256": "c494db64fdc52dec2837ec5a35e21db19572bb878d51270bf96aee29be89be35"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "What is the main improvement?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C. Adding witness tiles around the firing area"
+        },
+        "evidenceSegment": "s32-p3-t009",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Then the main improvement over our first design is to place witness tiles around the firing area. They provide spatial evidence without disturbing the pots.",
+        "timecode": {
+          "startFrame": 37554040,
+          "endFrame": 40475769,
+          "sampleRateHz": 44100,
+          "startSeconds": 851.565533,
+          "endSeconds": 917.817891,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3b28832a6f63e135f9d33d069e095eb838b06f53ccfcf3f986edc87286252b57",
+        "planSegmentTextSha256": "2d0cf8bc635507f6ec0867cc17878008abe2c10f94ffe6c69fe16dd1872cf703"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "Keep ______ similar.",
+          "acceptedResponses": [
+            "wall thickness"
+          ]
+        },
+        "evidenceSegment": "s32-p3-t010",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "For the measurement sheet, keep wall thickness similar. Thick walls may survive because they warm more slowly, not because a temper recipe is better.",
+        "timecode": {
+          "startFrame": 43104135,
+          "endFrame": 47881500,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.418027,
+          "endSeconds": 1085.748299,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "623e27c78f77b8bc7bf90c36a45774a9f455fa8c0272ce63998cf4777fcf6615",
+        "planSegmentTextSha256": "a41ea14e70e36da653f68f6eb1a691959261d635d5b14102cf524ff598863323"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "Record the ______ before firing.",
+          "acceptedResponses": [
+            "fuel mass"
+          ]
+        },
+        "evidenceSegment": "s32-p3-t012",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "We’ll also record the fuel mass before firing. A weighed amount is more defensible than saying that each wood pile looked roughly equal.",
+        "timecode": {
+          "startFrame": 43104135,
+          "endFrame": 47881500,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.418027,
+          "endSeconds": 1085.748299,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "22ccffd1406c4ab1a740161b887a0027984a1d3f896caa61f9313155f3b8d9e7",
+        "planSegmentTextSha256": "6df8e57825edc816a2c327cd3bf8c39d3ff78fd28134a77f540f141555819e86"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "Log ______ during the firing.",
+          "acceptedResponses": [
+            "wind direction"
+          ]
+        },
+        "evidenceSegment": "s32-p3-t013",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "During the firing, one person will log wind direction at fixed intervals. Changes in airflow can alter oxygen supply and push heat across the firing area.",
+        "timecode": {
+          "startFrame": 43104135,
+          "endFrame": 47881500,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.418027,
+          "endSeconds": 1085.748299,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1241cd6749904c24df3d433e3dc60bc2385132bd5733cde752889fad2494b969",
+        "planSegmentTextSha256": "856265a86fc733eb6e0353e4c789360571fbf88b50f09d6cfa859088e46d830e"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "Place ______ around the fire.",
+          "acceptedResponses": [
+            "witness tiles"
+          ]
+        },
+        "evidenceSegment": "s32-p3-t015",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "The witness tiles should go at measured distances and orientations around the fire. Their colour and surface changes will give us a rough map of heat exposure between the three temperature sensors.",
+        "timecode": {
+          "startFrame": 43104135,
+          "endFrame": 47881500,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.418027,
+          "endSeconds": 1085.748299,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "be59fb91cb35b5301d5013d05f938fe24f74a98bb46128f415eaaeb17644ad18",
+        "planSegmentTextSha256": "2ce27514d68f7cbdd2460e9e54510138f27d353050d78799095c7d9d923af84a"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Classify damage by ______.",
+          "acceptedResponses": [
+            "fracture pattern"
+          ]
+        },
+        "evidenceSegment": "s32-p3-t016",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "After cooling, classify vessel damage by fracture pattern rather than simply calling pots broken or unbroken. Photograph fragments in place and record where each crack began.",
+        "timecode": {
+          "startFrame": 43104135,
+          "endFrame": 47881500,
+          "sampleRateHz": 44100,
+          "startSeconds": 977.418027,
+          "endSeconds": 1085.748299,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ab74314848e65dda8eb672446fc534ad37ab9253b0d37b98945d063c72481b77",
+        "planSegmentTextSha256": "41a71b4a09c27907a13f98de3ffd80af295729a0591e864c14a405b018b982f5"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Water rises under ______.",
+          "acceptedResponses": [
+            "tension"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t001",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "Water in a tall tree travels through narrow xylem conduits under tension. Evaporation from leaves pulls on a continuous water column, rather like drawing liquid through an extremely fine system of pipes. This mechanism is effective, but it leaves the column vulnerable when soil dries and the tension becomes unusually strong. The cohesion of water molecules helps transmit that pull down the continuous column. Because the pressure is negative, a tiny air entry can expand rather than collapse. The architecture of conduits therefore reflects a compromise between moving large quantities efficiently and limiting the consequences of failure.",
+        "timecode": {
+          "startFrame": 56912941,
+          "endFrame": 60312613,
+          "sampleRateHz": 44100,
+          "startSeconds": 1290.54288,
+          "endSeconds": 1367.632948,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f846d3de309d43b703b43ded56b5118972556e97c6efdfa0cb04d66ac1d1adcd",
+        "planSegmentTextSha256": "aeec95bf456d779efcbc660f8440e10856d4ccff2c17895b9c64e77f39f0a8bf"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Air in a conduit forms an ______.",
+          "acceptedResponses": [
+            "embolism"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t002",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "If air enters a conduit, it forms an embolism and blocks transport through that route. Air does not necessarily spread through the whole stem, because pit membranes between neighbouring conduits can slow or stop it. Their pores permit water movement while providing a partial barrier to expanding air bubbles. Wide conduits usually transport water efficiently, but an embolism in one wide route can remove substantial capacity. Networks with many narrower conduits may retain alternative paths. Neither design is universally superior; performance depends on climate, plant form and the cost of constructing and maintaining tissue.",
+        "timecode": {
+          "startFrame": 56912941,
+          "endFrame": 60312613,
+          "sampleRateHz": 44100,
+          "startSeconds": 1290.54288,
+          "endSeconds": 1367.632948,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "857a715c0a25f2bb997c58cc0fefd491b2bc672b0f2df99131fa9a6d5c3a78fe",
+        "planSegmentTextSha256": "1b66dd41b6be0937f8a83e8a5962d2d0e890bad8df0723bba4679bdeebf4e1e3"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Spread may be limited by ______.",
+          "acceptedResponses": [
+            "pit membranes"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t002",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "If air enters a conduit, it forms an embolism and blocks transport through that route. Air does not necessarily spread through the whole stem, because pit membranes between neighbouring conduits can slow or stop it. Their pores permit water movement while providing a partial barrier to expanding air bubbles. Wide conduits usually transport water efficiently, but an embolism in one wide route can remove substantial capacity. Networks with many narrower conduits may retain alternative paths. Neither design is universally superior; performance depends on climate, plant form and the cost of constructing and maintaining tissue.",
+        "timecode": {
+          "startFrame": 56912941,
+          "endFrame": 60312613,
+          "sampleRateHz": 44100,
+          "startSeconds": 1290.54288,
+          "endSeconds": 1367.632948,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "36206bff40272bc764a4ab948cd413a11da7f8f66dbbddbd94ae1d026e5eaf1c",
+        "planSegmentTextSha256": "1b66dd41b6be0937f8a83e8a5962d2d0e890bad8df0723bba4679bdeebf4e1e3"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Plants reduce loss by closing ______.",
+          "acceptedResponses": [
+            "stomata"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t003",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Plants can reduce water loss by closing stomata. The trade-off is that closure also restricts carbon dioxide uptake and therefore photosynthesis. Species manage that tension differently. Some tolerate narrow operating ranges; others maintain wider safety margins between everyday water stress and the point where transport failure becomes likely. Stomatal closure can happen within minutes, whereas roots and wood change over much longer periods. Short-term regulation buys time but also slows carbon gain. Repeated drought may therefore affect growth even when a plant avoids immediate hydraulic failure.",
+        "timecode": {
+          "startFrame": 60335545,
+          "endFrame": 61972878,
+          "sampleRateHz": 44100,
+          "startSeconds": 1368.152948,
+          "endSeconds": 1405.28068,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "52a0a8fe6c3c24f1b2603d50f513a0613525e20b66e469576bdac42bd6787905",
+        "planSegmentTextSha256": "526a3b873a01381dcc2baec05d86532af5a73e367c624d4ad572027db726d64c"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Closure restricts uptake of ______.",
+          "acceptedResponses": [
+            "carbon dioxide"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t003",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Plants can reduce water loss by closing stomata. The trade-off is that closure also restricts carbon dioxide uptake and therefore photosynthesis. Species manage that tension differently. Some tolerate narrow operating ranges; others maintain wider safety margins between everyday water stress and the point where transport failure becomes likely. Stomatal closure can happen within minutes, whereas roots and wood change over much longer periods. Short-term regulation buys time but also slows carbon gain. Repeated drought may therefore affect growth even when a plant avoids immediate hydraulic failure.",
+        "timecode": {
+          "startFrame": 60335545,
+          "endFrame": 61972878,
+          "sampleRateHz": 44100,
+          "startSeconds": 1368.152948,
+          "endSeconds": 1405.28068,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d21008350b696a7e5ef8a668c6bd7b48de021d82f9a9019b5302b02bee8abdf2",
+        "planSegmentTextSha256": "526a3b873a01381dcc2baec05d86532af5a73e367c624d4ad572027db726d64c"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Species differ in their ______.",
+          "acceptedResponses": [
+            "safety margins"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t003",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Plants can reduce water loss by closing stomata. The trade-off is that closure also restricts carbon dioxide uptake and therefore photosynthesis. Species manage that tension differently. Some tolerate narrow operating ranges; others maintain wider safety margins between everyday water stress and the point where transport failure becomes likely. Stomatal closure can happen within minutes, whereas roots and wood change over much longer periods. Short-term regulation buys time but also slows carbon gain. Repeated drought may therefore affect growth even when a plant avoids immediate hydraulic failure.",
+        "timecode": {
+          "startFrame": 60335545,
+          "endFrame": 61972878,
+          "sampleRateHz": 44100,
+          "startSeconds": 1368.152948,
+          "endSeconds": 1405.28068,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b8bbcea98e028926ae198c96840d334f46b7146fce257611496e654ebde1a671",
+        "planSegmentTextSha256": "526a3b873a01381dcc2baec05d86532af5a73e367c624d4ad572027db726d64c"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "What helps plants reach deep water?",
+          "acceptedResponses": [
+            "rooting depth"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t004",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Access to deep water often depends on rooting depth, yet roots are only part of the story. Measurements made at midday may mislead if they capture a temporary peak in stress rather than the plant's daily recovery. Researchers therefore compare several times and link leaf measurements with stem conductivity and soil moisture. Predawn measurements are sometimes used to estimate recovery after a cool night, while midday values capture peak atmospheric demand. Comparing them reveals whether stress is transient. A single midday reading cannot show whether transport rebounds by evening or remains impaired across several days.",
+        "timecode": {
+          "startFrame": 64818228,
+          "endFrame": 68378792,
+          "sampleRateHz": 44100,
+          "startSeconds": 1469.801088,
+          "endSeconds": 1550.539501,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "acd66e3cd837d380c0933fcee7559014ce3622395b908b8fdb6e0ec9365f828f",
+        "planSegmentTextSha256": "d949271d04627b4ec6cdd37e4f2890acd18aa98c783e2e642d7c602306fb2fe7"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "Which measurement time may mislead?",
+          "acceptedResponses": [
+            "midday"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t004",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Access to deep water often depends on rooting depth, yet roots are only part of the story. Measurements made at midday may mislead if they capture a temporary peak in stress rather than the plant's daily recovery. Researchers therefore compare several times and link leaf measurements with stem conductivity and soil moisture. Predawn measurements are sometimes used to estimate recovery after a cool night, while midday values capture peak atmospheric demand. Comparing them reveals whether stress is transient. A single midday reading cannot show whether transport rebounds by evening or remains impaired across several days.",
+        "timecode": {
+          "startFrame": 64818228,
+          "endFrame": 68378792,
+          "sampleRateHz": 44100,
+          "startSeconds": 1469.801088,
+          "endSeconds": 1550.539501,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "017675ac4fb7abf0cfda9257bc194bebd51a8c5ff3b80ceb86b782e81dd393b2",
+        "planSegmentTextSha256": "d949271d04627b4ec6cdd37e4f2890acd18aa98c783e2e642d7c602306fb2fe7"
+      },
+      {
+        "question": 39,
+        "sourceLedgerQuestion": 40,
+        "questionCorrection": "SET_32_Q39_Q40_CANONICAL_ORDER_CORRECTION",
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "How may damaged tissue be replaced?",
+          "acceptedResponses": [
+            "new growth"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t005",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Repair strategies vary. In some plants, nearby living cells help refill or isolate damaged conduits; in others, blocked tissue remains unusable. Woody species may replace lost capacity through new growth in a later season. Survival therefore depends on keeping enough water transport functional while balancing conservation against continued carbon gain. New xylem is costly and arrives only as the plant grows. If drought recurs before replacement is complete, accumulated damage can reduce resilience. Ecologists therefore monitor survival, growth and conductivity together; green leaves alone do not prove that the transport network is intact.",
+        "timecode": {
+          "startFrame": 64818228,
+          "endFrame": 68378792,
+          "sampleRateHz": 44100,
+          "startSeconds": 1469.801088,
+          "endSeconds": 1550.539501,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cba31ea90e0571212b1a05b9ef2e7a76d786d33334489d7d5f553040f3883105",
+        "planSegmentTextSha256": "666b73e9c343c5a7bbd125a33638229f4e26452157e368138a75ec128bd671ba"
+      },
+      {
+        "question": 40,
+        "sourceLedgerQuestion": 39,
+        "questionCorrection": "SET_32_Q39_Q40_CANONICAL_ORDER_CORRECTION",
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "What must remain functional?",
+          "acceptedResponses": [
+            "water transport"
+          ]
+        },
+        "evidenceSegment": "s32-p4-t005",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Repair strategies vary. In some plants, nearby living cells help refill or isolate damaged conduits; in others, blocked tissue remains unusable. Woody species may replace lost capacity through new growth in a later season. Survival therefore depends on keeping enough water transport functional while balancing conservation against continued carbon gain. New xylem is costly and arrives only as the plant grows. If drought recurs before replacement is complete, accumulated damage can reduce resilience. Ecologists therefore monitor survival, growth and conductivity together; green leaves alone do not prove that the transport network is intact.",
+        "timecode": {
+          "startFrame": 64818228,
+          "endFrame": 68378792,
+          "sampleRateHz": 44100,
+          "startSeconds": 1469.801088,
+          "endSeconds": 1550.539501,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "00d4f0a8515f2f92a13f61889f69abb46dac9514176f23c9108561c5c0ebb339",
+        "planSegmentTextSha256": "666b73e9c343c5a7bbd125a33638229f4e26452157e368138a75ec128bd671ba"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/set32-listening-content-v1.0.2.json",
+        "sha256": "7c036dd80969eb73ca8f77dbc6ecf13518b472c9ec638e6ce050524a227bbaef"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "1f9940561c3e74e52c094190327afd9ea8b888d4a62b5494abc8920e30954af0",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-32/set32-audio-production-plan.json",
+        "sha256": "54af5fb6eb4908df1399c91dfddcb5840ec2017fd00299b3e2ed457f0d1418ef"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/elevenlabs-v4/set32-eleven-v4-manifest.json",
+        "sha256": "21ba373c9cc483d91d975f5a116b892055d5c85a4df740660c25be3fc022318d"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/elevenlabs-v4/set32-eleven-v4-progress.json",
+        "sha256": "071e667a525ebb9667644b86bda33f2a694f820bb826a6c468947b056c2185f5"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/elevenlabs-v4/set32-eleven-v4-qa.json",
+        "sha256": "b9414a5d89ac526ebb4d5077e81d5a22e6b77644cf2cfd7d8762d4c0f40e4ce0"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/elevenlabs-v4/set32-concat.txt",
+        "sha256": "8e5b2c795eeb8658ca8851e191d888b44c008add0a501999dd6372019c9a1b80"
+      },
+      "concatPieceAggregateSha256": "5c6b18c97dad0c6372998e1b6dabc18bc302d5acb6c63082dbcc471523f7ad07",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/elevenlabs-v4/ielts-set-32-listening-eleven-v4-master.wav",
+        "sha256": "1177fb789d6c6969afb78d5044fea0fd0d89f8c253bd3c2ae87f4bc01181e358",
+        "frameCount": 76739742,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/listening/elevenlabs-v4/ielts-set-32-listening-eleven-v4.mp3",
+        "sha256": "47b2be5e35111028d019ff5e4470ab5e1e0b4c0e5e9c409c6a6fcbd4a2b69066"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-32.mp3",
+        "sha256": "47b2be5e35111028d019ff5e4470ab5e1e0b4c0e5e9c409c6a6fcbd4a2b69066"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "b9477438ce2c4ad0aa5effe7a8bd488caf00b6b667554df07c0959f4719b9e0c"
+  }
+}

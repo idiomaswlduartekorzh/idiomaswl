@@ -1,0 +1,1970 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 33,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-33.ts",
+      "sha256": "5d78774529168f12ead7852ff2579aa84fa9145d9c6905e5887e0cffc99cbf56"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "fill",
+          "questionText": "At the beginning of the route, staff load the carrier at the ______.",
+          "acceptedResponses": [
+            "dispatch station"
+          ]
+        },
+        "sourceExcerpt": "At a dispatch station, a clerk placed papers or a small object inside a carrier, closed it and entered a destination. A pressure fan then created the force that sent the carrier into the pipe. City postal systems linked several such stations, allowing traffic to be distributed over a network rather than along a single tube. This arrangement saved street-level journeys, but it also introduced a coordination problem: as soon as routes intersected, the system had to distinguish one destination from another. The tube itself supplied motion; the operating rules supplied direction.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «At the beginning of the route, staff load the carrier at the ______.» y acepta «dispatch station». La oración fuente dice «At a dispatch station, a clerk placed papers or a small object inside a carrier, closed it and entered a destination.». Esa oración contiene la respuesta y la conecta con «carrier», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "0b282c097cb3a267a7d14b4ff676a19a89757137c6519d8697219b29bdde6d1c",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "fill",
+          "questionText": "The ______ creates the force that moves the carrier into the pipe.",
+          "acceptedResponses": [
+            "pressure fan"
+          ]
+        },
+        "sourceExcerpt": "At a dispatch station, a clerk placed papers or a small object inside a carrier, closed it and entered a destination. A pressure fan then created the force that sent the carrier into the pipe. City postal systems linked several such stations, allowing traffic to be distributed over a network rather than along a single tube. This arrangement saved street-level journeys, but it also introduced a coordination problem: as soon as routes intersected, the system had to distinguish one destination from another. The tube itself supplied motion; the operating rules supplied direction.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The ______ creates the force that moves the carrier into the pipe.» y acepta «pressure fan». La oración fuente dice «A pressure fan then created the force that sent the carrier into the pipe.». Esa oración contiene la respuesta y la conecta con «force», «carrier», «pipe», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "fef1a5eb39a5677fe5d57c77b1478f67bde1cf2817f89b84f6ab9e894a2dde8e",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "fill",
+          "questionText": "The network's most demanding routing point is the ______.",
+          "acceptedResponses": [
+            "switch junction"
+          ]
+        },
+        "sourceExcerpt": "The most demanding point was often a switch junction. A movable section of track or valve had to align with the required branch before the carrier arrived. Routine traffic could follow a timetable, whereas urgent items might need priority. If a label was unclear, the safest response was not to guess but to divert the carrier for manual checking. Such exception handling reduced headline speed, yet protected the network from cascading mistakes. The history of the technology is therefore partly a history of disciplined clerical work hidden behind dramatic machinery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The network's most demanding routing point is the ______.» y acepta «switch junction». La oración fuente dice «The most demanding point was often a switch junction.». Esa oración contiene la respuesta y la conecta con «demanding», «point», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports switch junction; the revised wording excludes the alternative identified by the fresh blind reviewer.",
+        "ledgerRowSha256": "0c754703caff9b0d03d012afa9f1b5d416c1d3b1e1b732f267d896c927be63b4",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "fill",
+          "questionText": "The component containing the brake or air cushion is the ______.",
+          "acceptedResponses": [
+            "receiving terminal"
+          ]
+        },
+        "sourceExcerpt": "Arrival required deliberate engineering. A carrier travelling quickly through a narrow pipe could not simply strike the end of the line. A receiving terminal used a brake or cushion of air to slow it before removal. Staff then checked that the destination mark matched the station. This apparently minor step illustrates why the networks were services rather than novelties: the useful outcome was not movement but verified delivery. Some installations also had a return line so empty carriers could be sent back without competing with outward traffic.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The component containing the brake or air cushion is the ______.» y acepta «receiving terminal». La oración fuente dice «A receiving terminal used a brake or cushion of air to slow it before removal.». Esa oración contiene la respuesta y la conecta con «brake», «air», «cushion», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports receiving terminal; the revised wording excludes the alternative identified by the fresh blind reviewer.",
+        "ledgerRowSha256": "1d2df3c010c0481536ebe5f8f34abd8d9727610fb65d356c2355f5293d319fc1",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "fill",
+          "questionText": "Empty carriers may travel back along a separate ______.",
+          "acceptedResponses": [
+            "return line"
+          ]
+        },
+        "sourceExcerpt": "Arrival required deliberate engineering. A carrier travelling quickly through a narrow pipe could not simply strike the end of the line. A receiving terminal used a brake or cushion of air to slow it before removal. Staff then checked that the destination mark matched the station. This apparently minor step illustrates why the networks were services rather than novelties: the useful outcome was not movement but verified delivery. Some installations also had a return line so empty carriers could be sent back without competing with outward traffic.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Empty carriers may travel back along a separate ______.» y acepta «return line». La oración fuente dice «Some installations also had a return line so empty carriers could be sent back without competing with outward traffic.». Esa oración contiene la respuesta y la conecta con «empty», «carriers», «back», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7f9c89ed551422321c9b80311d09417b4f53a2b0ea7e6f07fafd9aa9ff47b397",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "fill",
+          "questionText": "Engineers need ______ so that concealed pipes can be repaired.",
+          "acceptedResponses": [
+            "inspection access"
+          ]
+        },
+        "sourceExcerpt": "Networks accumulated practical burdens. Pipes had to remain clear, access points had to be reachable, and carriers needed inspection because worn seals altered airflow. A blockage in a shared section could delay several destinations at once. Maintenance teams valued inspection access more than decorative concealment, while architects often preferred the reverse. Where these priorities were reconciled early, the system could be repaired without dismantling occupied rooms. Where they were not, a small fault became a costly interruption. This tension helps explain why adoption varied between buildings that seemed technically similar.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Engineers need ______ so that concealed pipes can be repaired.» y acepta «inspection access». La oración fuente dice «Maintenance teams valued inspection access more than decorative concealment, while architects often preferred the reverse.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "1b7052a8c049ab7ff40b446a20c2a82482dd8abce39a057ceb3119962be7d3dc",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why the technology can still be useful for particular physical items?",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Paragraph G"
+        },
+        "sourceExcerpt": "Electronic communication removed much of the demand for transporting written messages, but it did not make every tube network pointless. Some hospitals, laboratories and industrial sites still had specialised loads that could not be sent as data. In such settings, a compact physical item could move without joining corridor traffic. Survival depended less on nostalgia than on a narrow match between the object, the route and the organisation. A network designed for general correspondence might become obsolete, while one carrying time-sensitive samples along a fixed path could retain value.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why the technology can still be useful for particular physical items?» y la clave es «Paragraph G». La evidencia dice «Some hospitals, laboratories and industrial sites still had specialised loads that could not be sent as data.». La coincidencia semántica se apoya en «still»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "f5c1e5970df3de08642987ff62ecda862419c572e685eee6b7300f03100658ab",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes two alternative ways of creating the required pressure difference?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Paragraph C"
+        },
+        "sourceExcerpt": "Designers could move a carrier by pushing air behind it or by reducing pressure ahead of it. In practice, a network might use either method in different sections. What mattered was maintaining enough pressure difference to overcome friction without making arrival violent. Long bends, poorly fitting carriers and leaks all reduced performance. Operators therefore treated the pipe, fan and carrier as one system. A powerful fan could not compensate indefinitely for a damaged seal, just as a perfect carrier could not travel through a blocked branch. Reliability emerged from the fit between components.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes two alternative ways of creating the required pressure difference?» y la clave es «Paragraph C». La evidencia dice «What mattered was maintaining enough pressure difference to overcome friction without making arrival violent.». La coincidencia semántica se apoya en «pressure», «difference»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "0b721f88563f7163fb3d5eae4d4f8f59ab75e99b2bf0c7327c898dd5a93a7efa",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "mcq",
+          "questionText": "Which paragraph contrasts the priorities of maintenance staff and architects?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Paragraph F"
+        },
+        "sourceExcerpt": "Networks accumulated practical burdens. Pipes had to remain clear, access points had to be reachable, and carriers needed inspection because worn seals altered airflow. A blockage in a shared section could delay several destinations at once. Maintenance teams valued inspection access more than decorative concealment, while architects often preferred the reverse. Where these priorities were reconciled early, the system could be repaired without dismantling occupied rooms. Where they were not, a small fault became a costly interruption. This tension helps explain why adoption varied between buildings that seemed technically similar.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph contrasts the priorities of maintenance staff and architects?» y la clave es «Paragraph F». La evidencia dice «Maintenance teams valued inspection access more than decorative concealment, while architects often preferred the reverse.». La coincidencia semántica se apoya en «maintenance», «architects»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "6ea2661c0754e828812355d08211659525e8dc78eabd7ceb3836f005a9539aa0",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "mcq",
+          "questionText": "Which paragraph mentions a procedure for dealing with uncertain destination information?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Paragraph E"
+        },
+        "sourceExcerpt": "The most demanding point was often a switch junction. A movable section of track or valve had to align with the required branch before the carrier arrived. Routine traffic could follow a timetable, whereas urgent items might need priority. If a label was unclear, the safest response was not to guess but to divert the carrier for manual checking. Such exception handling reduced headline speed, yet protected the network from cascading mistakes. The history of the technology is therefore partly a history of disciplined clerical work hidden behind dramatic machinery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph mentions a procedure for dealing with uncertain destination information?» y la clave es «Paragraph E». La evidencia dice «If a label was unclear, the safest response was not to guess but to divert the carrier for manual checking.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9861fe265ace5cb943af05ade3268eb8471ea4f3df75a1497c60061ea0fe29e4",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "mcq",
+          "questionText": "Which paragraph distinguishes rapid writing from slow physical delivery?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Paragraph A"
+        },
+        "sourceExcerpt": "Long before electronic messaging became ordinary, large organisations faced a physical problem: a note could be written in seconds but might take much longer to cross a station, hospital or city district. Pneumatic tubes offered a striking answer. A carrier was sealed inside a pipe and moved by a difference in air pressure. The principle was simple enough to demonstrate on a tabletop, yet a useful network required more than a fast-moving capsule. It needed stations, routes and agreed procedures so that speed did not merely deliver an item rapidly to the wrong place.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph distinguishes rapid writing from slow physical delivery?» y la clave es «Paragraph A». La evidencia dice «Long before electronic messaging became ordinary, large organisations faced a physical problem: a note could be written in seconds but might take much longer to cross a station, hospital or city district.». La coincidencia semántica se apoya en «physical»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "436afe2145caca2913c6f01173fb1c9ef3cbfced4671ca5aae395da0c0c320d6",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "mcq",
+          "questionText": "Which paragraph argues that organisational routines were as important as standard equipment?",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Paragraph H"
+        },
+        "sourceExcerpt": "Pneumatic tubes are often remembered as ingenious hardware, yet their broader lesson concerns coordination. Standard carriers and compatible terminals made exchange possible, but shared routines made it dependable. Every additional branch increased reach and also multiplied the places where information could be lost. The successful network joined physical pressure to administrative clarity: a carrier had to be launched, routed, received, checked and returned. Judged in that way, the technology was not an automatic messenger. It was a partnership between machinery and people, with each compensating for limits in the other.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph argues that organisational routines were as important as standard equipment?» y la clave es «Paragraph H». La evidencia dice «Standard carriers and compatible terminals made exchange possible, but shared routines made it dependable.». La coincidencia semántica se apoya en «routines», «standard»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "7b6f60619245082356ffdeddf8aaa4ae868bd141cb02b435107edc0b5e595e2e",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why movement alone did not count as successful delivery?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Paragraph D"
+        },
+        "sourceExcerpt": "Arrival required deliberate engineering. A carrier travelling quickly through a narrow pipe could not simply strike the end of the line. A receiving terminal used a brake or cushion of air to slow it before removal. Staff then checked that the destination mark matched the station. This apparently minor step illustrates why the networks were services rather than novelties: the useful outcome was not movement but verified delivery. Some installations also had a return line so empty carriers could be sent back without competing with outward traffic.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why movement alone did not count as successful delivery?» y la clave es «Paragraph D». La evidencia dice «This apparently minor step illustrates why the networks were services rather than novelties: the useful outcome was not movement but verified delivery.». La coincidencia semántica se apoya en «movement», «delivery»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9ca5cb3e7a6cad7fea53f69444fec5ec6642177694e3f91e81f7adf99704fd33",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Reflective glass is the only type of glass that can create a collision hazard.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "To a human observer, a window is a solid boundary. To a bird in flight, it may appear to be open air or a continuation of nearby habitat. Transparent glass can reveal vegetation on the far side, while reflective glass can reproduce sky and trees on its surface. These are different optical mechanisms, but both can turn a building into a collision hazard. The danger is not confined to spectacular glass towers. A modest pane placed opposite another window can create what looks like a clear route through a room.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Reflective glass is the only type of glass that can create a collision hazard.», mientras el pasaje dice «Transparent glass can reveal vegetation on the far side, while reflective glass can reproduce sky and trees on its surface.». Ambos tratan «reflective», «glass», pero la proposición añade «only», «type», «create», «collision», «hazard» donde la fuente especifica «transparent», «reveal», «vegetation», «far», «side», «while». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "216f21e442d8b3cc883541e3070e83f099ad84ae4597d1ebb7ee8618c816f8a6",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Markers on the outside of a window are visible before a bird reaches the glass.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "One response is to add visible markers that interrupt the apparent route. Position matters. Markers on the outside surface are encountered before a bird reaches the glass and are not hidden behind a strong reflection. Coverage matters too: a few decorative shapes may leave wide areas that still look passable. Effective designs therefore treat the pane as a surface to be perceived, not as a blank background for isolated stickers. This principle can be applied through patterns, screens or other building interventions, depending on the window and its use.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Markers on the outside of a window are visible before a bird reaches the glass.» y el pasaje dice «Markers on the outside surface are encountered before a bird reaches the glass and are not hidden behind a strong reflection.». La fuente conserva la misma relación mediante «markers», «outside», «before», «bird», «reaches», «glass» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "df512817a86d95af9ef5baaaefe56cfeb0432cad36af9c90b2faaf55dbbc80f1",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "A successful controlled trial proves that the same pattern will work equally well in every location.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Research can compare treatments, but a single trial cannot establish that one pattern will work equally well everywhere. Tests differ in lighting, species, viewing angle and the alternative routes offered to birds. A strong result in a controlled passage is valuable evidence about visibility, yet it is not a universal guarantee. Field monitoring adds realism but introduces uncertainty because observers may miss a collision or find evidence after it has been disturbed. The sensible conclusion is comparative: some treatments reduce risk under specified conditions, and their transfer to another setting must be checked.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A successful controlled trial proves that the same pattern will work equally well in every location.», mientras el pasaje dice «Research can compare treatments, but a single trial cannot establish that one pattern will work equally well everywhere.». Ambos tratan «trial», «pattern», «work», «equally», «well», pero la proposición añade «successful», «controlled», «proves», «same», «every», «location» donde la fuente especifica «research», «compare», «treatments», «single», «cannot», «establish». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d072ed6a4b2f9345632c3f709467de3a87175455364d1968d487defc4809df83",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Reducing unnecessary lighting can complement treatments applied to glass.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Night-time conditions create a related problem. Artificial light can attract or disorient migrating birds, bringing more of them close to buildings. Reducing unnecessary night lighting may therefore complement daytime surface treatments. The two measures address different stages of risk: lighting influences where birds travel, while visible glass treatments affect what they perceive at the final approach. Treating one as a substitute for the other oversimplifies the pathway. A building with well-marked windows can still create a wider attraction, and a dark building can still contain a dangerous transparent corridor by day.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Reducing unnecessary lighting can complement treatments applied to glass.» y el pasaje dice «Reducing unnecessary night lighting may therefore complement daytime surface treatments.». La fuente conserva la misma relación mediante «reducing», «unnecessary», «lighting», «complement», «treatments» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "ac9bcb4b4d16ff0072285455b20927697a08edc2d09a988f0eb121d446efef33",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "The passage gives the exact cost difference between redesigning a window and retrofitting it.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "The cheapest intervention is not always a retrofit. During the design stage, architects can consider sightlines, internal planting and the position of windows relative to outdoor vegetation. A transparent corner or glazed link may be visually attractive precisely because it appears open; that same quality can create risk. Early decisions can reduce the amount of glass requiring later treatment. This does not mean that glass must be abandoned. It means that transparency, reflection and surrounding habitat should be treated as performance conditions rather than merely aesthetic effects.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage gives the exact cost difference between redesigning a window and retrofitting it.». El pasaje sí ofrece el contexto «The cheapest intervention is not always a retrofit.», pero en el texto completo no especifica «gives», «exact», «cost», «difference», «between», «redesigning», «retrofitting» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9ec6f4236456f391d6404505740daa9d1a22d569ebf0f80545dd6a472a49eb66",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Reliable monitoring requires the observation effort to remain reasonably consistent.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "A campus team evaluating a treatment needs a repeatable method. Observers might walk a fixed route at similar times, record the location of any evidence, and distinguish confirmed collisions from uncertain traces. They should also note changes in vegetation, cleaning or lighting that could affect comparisons. A decline after treatment is encouraging, but it becomes more persuasive when the untreated comparison area and observation effort remain stable. Monitoring is therefore not an afterthought: it is what reveals whether installation quality and local context support the expected benefit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Reliable monitoring requires the observation effort to remain reasonably consistent.» y el pasaje dice «A decline after treatment is encouraging, but it becomes more persuasive when the untreated comparison area and observation effort remain stable.». La fuente conserva la misma relación mediante «observation», «effort», «remain» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "241eba5840332146438a94c23197cffbacf93617c8e0b7cc41eb5757c209bf2c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "The author states that building owners should pay the entire cost of every treatment.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Building guidance often condenses evidence into rules about placement and spacing. Such rules are useful because contractors need decisions they can apply, but their effectiveness depends on correct coverage. A pattern that is suitable on paper can fail if sections are omitted, applied to the wrong face or removed during maintenance. Occupants may also resist treatments that alter views. Successful programmes combine a defensible technical standard with inspection and explanation, rather than assuming that publication of a rule changes the building by itself.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The author states that building owners should pay the entire cost of every treatment.». El pasaje sí ofrece el contexto «Building guidance often condenses evidence into rules about placement and spacing.», pero en el texto completo no especifica «owners», «pay», «entire», «cost» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d6f89caba1b655a6db42e11e8971e9b5ce0944f00a9d242b1c02324299a82e02",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "Birds may mistake reflected sky and trees for ______.",
+          "acceptedResponses": [
+            "habitat"
+          ]
+        },
+        "sourceExcerpt": "To a human observer, a window is a solid boundary. To a bird in flight, it may appear to be open air or a continuation of nearby habitat. Transparent glass can reveal vegetation on the far side, while reflective glass can reproduce sky and trees on its surface. These are different optical mechanisms, but both can turn a building into a collision hazard. The danger is not confined to spectacular glass towers. A modest pane placed opposite another window can create what looks like a clear route through a room.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Birds may mistake reflected sky and trees for ______.» y acepta «habitat». La oración fuente dice «To a bird in flight, it may appear to be open air or a continuation of nearby habitat.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "504f24a7cf2330d8aaa304551558f4af6f5b623db07f33159666eec4624be5b2",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "Markers are generally most visible when placed on the ______.",
+          "acceptedResponses": [
+            "outside surface"
+          ]
+        },
+        "sourceExcerpt": "One response is to add visible markers that interrupt the apparent route. Position matters. Markers on the outside surface are encountered before a bird reaches the glass and are not hidden behind a strong reflection. Coverage matters too: a few decorative shapes may leave wide areas that still look passable. Effective designs therefore treat the pane as a surface to be perceived, not as a blank background for isolated stickers. This principle can be applied through patterns, screens or other building interventions, depending on the window and its use.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Markers are generally most visible when placed on the ______.» y acepta «outside surface». La oración fuente dice «Markers on the outside surface are encountered before a bird reaches the glass and are not hidden behind a strong reflection.». Esa oración contiene la respuesta y la conecta con «markers», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "f2237581be53ffc8c97567405b40b685317a32e7d5aed91d11bd93cb5b5e69b8",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "fill",
+          "questionText": "In one form of testing, birds move through a ______.",
+          "acceptedResponses": [
+            "controlled passage"
+          ]
+        },
+        "sourceExcerpt": "Research can compare treatments, but a single trial cannot establish that one pattern will work equally well everywhere. Tests differ in lighting, species, viewing angle and the alternative routes offered to birds. A strong result in a controlled passage is valuable evidence about visibility, yet it is not a universal guarantee. Field monitoring adds realism but introduces uncertainty because observers may miss a collision or find evidence after it has been disturbed. The sensible conclusion is comparative: some treatments reduce risk under specified conditions, and their transfer to another setting must be checked.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «In one form of testing, birds move through a ______.» y acepta «controlled passage». La oración fuente dice «A strong result in a controlled passage is valuable evidence about visibility, yet it is not a universal guarantee.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "ecb96dd6b2de9f5f86112ebb3a8127a683b635a8ac230ec6626aebcbca60b026",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "Reducing ______ can lower an attraction that brings birds near buildings.",
+          "acceptedResponses": [
+            "night lighting"
+          ]
+        },
+        "sourceExcerpt": "Night-time conditions create a related problem. Artificial light can attract or disorient migrating birds, bringing more of them close to buildings. Reducing unnecessary night lighting may therefore complement daytime surface treatments. The two measures address different stages of risk: lighting influences where birds travel, while visible glass treatments affect what they perceive at the final approach. Treating one as a substitute for the other oversimplifies the pathway. A building with well-marked windows can still create a wider attraction, and a dark building can still contain a dangerous transparent corridor by day.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Reducing ______ can lower an attraction that brings birds near buildings.» y acepta «night lighting». La oración fuente dice «Reducing unnecessary night lighting may therefore complement daytime surface treatments.». Esa oración contiene la respuesta y la conecta con «reducing», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "93a4642c49b1ce7b9ec6ad232415c2744989c0c20fb34bbc7247d6ac7f544a3c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "Observers can improve consistency by following a ______.",
+          "acceptedResponses": [
+            "fixed route"
+          ]
+        },
+        "sourceExcerpt": "A campus team evaluating a treatment needs a repeatable method. Observers might walk a fixed route at similar times, record the location of any evidence, and distinguish confirmed collisions from uncertain traces. They should also note changes in vegetation, cleaning or lighting that could affect comparisons. A decline after treatment is encouraging, but it becomes more persuasive when the untreated comparison area and observation effort remain stable. Monitoring is therefore not an afterthought: it is what reveals whether installation quality and local context support the expected benefit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Observers can improve consistency by following a ______.» y acepta «fixed route». La oración fuente dice «Observers might walk a fixed route at similar times, record the location of any evidence, and distinguish confirmed collisions from uncertain traces.». Esa oración contiene la respuesta y la conecta con «observers», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "e5436c77caf6a9cdb53750b52c23b3ed10e969025f18cf2ce6d3d894b0c48edf",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "The appropriate combination of measures depends on ______.",
+          "acceptedResponses": [
+            "local context"
+          ]
+        },
+        "sourceExcerpt": "No single measure removes every collision risk. The practical approach is layered: identify deceptive transparency and reflection, reduce avoidable attraction, make dangerous surfaces visible, and verify performance after installation. The balance will vary with local context. A low window beside dense shrubs presents a different problem from an illuminated upper storey on a migration route. This variability does not weaken the case for intervention. It explains why claims should be specific about mechanism, setting and evidence instead of promising that one product solves a complex ecological problem.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The appropriate combination of measures depends on ______.» y acepta «local context». La oración fuente dice «The balance will vary with local context.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "309115d2645ad7954a11427748914c8179ae48bf754365acf8b4de99423124ae",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "The author believes that compatible handling depends on more than the dimensions of the container itself.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "A freight container looks deliberately unremarkable, yet its value lies in agreement. Standard dimensions and corner fittings allow compatible equipment to lift the same box between ship, train and lorry. Cargo can remain inside while responsibility for movement passes from one operator to another. This reduces repeated handling, but it should not be confused with effortless transport. Intermodal transfer works because vehicles, cranes, yards, documents and safety rules have been adjusted to recognise the same physical unit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author believes that compatible handling depends on more than the dimensions of the container itself.» y el pasaje dice «Standard dimensions and corner fittings allow compatible equipment to lift the same box between ship, train and lorry.». La fuente conserva la misma relación mediante «compatible», «dimensions» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "e6b75d21287aa0e390d93cd3f1194e685c00c6641ea73acbb4435e12bae598c3",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "The container alone was responsible for changes in world trade.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "It is tempting to credit the box itself with transforming world trade. That story is too neat. Containers delivered large gains only where ports deepened berths, installed cranes, reorganised storage and connected efficiently to inland routes. Shipping companies also had to acquire suitable vessels, while exporters altered packing and scheduling. Standardisation coordinated these investments; it did not replace them. The distinction matters because it prevents an object from receiving sole credit for a change produced by an entire system.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The container alone was responsible for changes in world trade.», mientras el pasaje dice «Standardisation coordinated these investments; it did not replace them.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «container», «alone», «responsible», «changes», «world», «trade» donde la fuente especifica «standardisation», «coordinated», «investments», «replace», «them». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "02714f03dc5c939c9c0d75c19b1c3385660fd03524a008c37ed24d9da6b76cbf",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The author regards structural inspection as part of the coordination system.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Shared dimensions solve a compatibility problem, not a structural one. A damaged box can endanger workers and cargo even if it fits every crane. International coordination therefore includes safety and inspection requirements as well as measurements. An inspection regime makes visible who must check condition and when. This adds time and paperwork, but it protects the assumption on which rapid handling depends: equipment can treat a container as a known unit only when its structure remains trustworthy.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The author regards structural inspection as part of the coordination system.» y el pasaje dice «International coordination therefore includes safety and inspection requirements as well as measurements.». La fuente conserva la misma relación mediante «inspection», «coordination» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "be2b2672e6762d509b5e7a3002ffcdda8c2a4e2126b8b45eb9fcbc2b597f367e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Every small port that adopted container equipment gained the same commercial advantage.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Benefits were uneven. A port with capital, land and strong inland connections could process high volumes, whereas a smaller harbour might lose traffic when it could not justify specialised infrastructure. Workers whose skills centred on manual cargo handling faced disruption, while other roles expanded around cranes, logistics and maintenance. These outcomes do not show that standards failed. They show that a common interface changes bargaining power and location as well as technical efficiency. Uniform equipment can produce highly non-uniform social effects.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Every small port that adopted container equipment gained the same commercial advantage.», mientras el pasaje dice «A port with capital, land and strong inland connections could process high volumes, whereas a smaller harbour might lose traffic when it could not justify specialised infrastructure.». Ambos tratan «port», pero la proposición añade «every», «small», «adopted», «container», «equipment», «gained» donde la fuente especifica «capital», «land», «strong», «inland», «connections», «process». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9ba218310627421f2f2039c9df502bdf73d8a117f1b00f9d333138e3bf32cf09",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "The first container standard was chosen after a worldwide public vote.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Once many firms have invested in compatible assets, changing the standard becomes difficult. This is infrastructure lock-in: not an absolute prohibition on innovation, but a rising cost of departure. A new design may be technically superior and still struggle if it requires different cranes, storage slots and vehicle frames. The installed system gives current dimensions a practical authority beyond the wording of any rule. Stability supports confidence, yet it can also preserve compromises chosen under earlier conditions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The first container standard was chosen after a worldwide public vote.». El pasaje sí ofrece el contexto «Once many firms have invested in compatible assets, changing the standard becomes difficult.», pero en el texto completo no especifica «first», «after», «worldwide», «public», «vote» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "5b6975c90da8f764c0028476b2f743bc7be7b36146a75ef17e1a806f8024e745",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Why does the author discuss investment in cranes, vessels and inland routes?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "To challenge a single-cause account of change"
+        },
+        "sourceExcerpt": "It is tempting to credit the box itself with transforming world trade. That story is too neat. Containers delivered large gains only where ports deepened berths, installed cranes, reorganised storage and connected efficiently to inland routes. Shipping companies also had to acquire suitable vessels, while exporters altered packing and scheduling. Standardisation coordinated these investments; it did not replace them. The distinction matters because it prevents an object from receiving sole credit for a change produced by an entire system.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why does the author discuss investment in cranes, vessels and inland routes?» y la clave es «To challenge a single-cause account of change». La evidencia dice «Containers delivered large gains only where ports deepened berths, installed cranes, reorganised storage and connected efficiently to inland routes.». La coincidencia semántica se apoya en «cranes», «inland», «routes»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph B; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "99eb1a6d9bceda463b005c8aa3387a2e9acbcd6243735ae2c6382111b47240ec",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "What assumption supports rapid handling of a standard container?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Its structure remains dependable"
+        },
+        "sourceExcerpt": "Shared dimensions solve a compatibility problem, not a structural one. A damaged box can endanger workers and cargo even if it fits every crane. International coordination therefore includes safety and inspection requirements as well as measurements. An inspection regime makes visible who must check condition and when. This adds time and paperwork, but it protects the assumption on which rapid handling depends: equipment can treat a container as a known unit only when its structure remains trustworthy.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What assumption supports rapid handling of a standard container?» y la clave es «Its structure remains dependable». La evidencia dice «This adds time and paperwork, but it protects the assumption on which rapid handling depends: equipment can treat a container as a known unit only when its structure remains trustworthy.». La coincidencia semántica se apoya en «assumption», «rapid», «handling», «container», «structure», «remains»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph C; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d4dfc726c2367c27794afc234471c28ae3db167ff20409371f71a13f31b6e0e4",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "What is meant by infrastructure lock-in in the passage?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Leaving an established standard becomes costly"
+        },
+        "sourceExcerpt": "Once many firms have invested in compatible assets, changing the standard becomes difficult. This is infrastructure lock-in: not an absolute prohibition on innovation, but a rising cost of departure. A new design may be technically superior and still struggle if it requires different cranes, storage slots and vehicle frames. The installed system gives current dimensions a practical authority beyond the wording of any rule. Stability supports confidence, yet it can also preserve compromises chosen under earlier conditions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is meant by infrastructure lock-in in the passage?» y la clave es «Leaving an established standard becomes costly». La evidencia dice «Once many firms have invested in compatible assets, changing the standard becomes difficult.». La coincidencia semántica se apoya en «standard», «becomes»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "01cf2dd710931bbcf53611a1fdcbf20c335016bd25bd86639927896359a3b757",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "What is the author’s main qualification about efficiency?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "It is only one part of wider evaluation"
+        },
+        "sourceExcerpt": "A container standard does not decide which goods should move, how emissions should be priced or whether a route is socially desirable. Those questions remain outside the box. Faster transfer can lower one cost while encouraging more distant production and additional transport. The author’s point is not that coordination is harmful, but that efficiency at an interface is only one layer of evaluation. Policy must still consider external costs, labour transitions and the resilience of long supply chains.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the author’s main qualification about efficiency?» y la clave es «It is only one part of wider evaluation». La evidencia dice «The author’s point is not that coordination is harmful, but that efficiency at an interface is only one layer of evaluation.». La coincidencia semántica se apoya en «efficiency», «only», «evaluation»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph F; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "d7bfac3a67903d3e970df66bc01de993dbf82f0d7c4e4d3e741553b8782c1d12",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "Standard corner fittings make it possible for",
+          "correctOptionIndex": 2,
+          "correctOptionText": "different transport systems to handle the same unit."
+        },
+        "sourceExcerpt": "A freight container looks deliberately unremarkable, yet its value lies in agreement. Standard dimensions and corner fittings allow compatible equipment to lift the same box between ship, train and lorry. Cargo can remain inside while responsibility for movement passes from one operator to another. This reduces repeated handling, but it should not be confused with effortless transport. Intermodal transfer works because vehicles, cranes, yards, documents and safety rules have been adjusted to recognise the same physical unit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Standard corner fittings make it possible for» y la clave es «different transport systems to handle the same unit.». La evidencia dice «Standard dimensions and corner fittings allow compatible equipment to lift the same box between ship, train and lorry.». La coincidencia semántica se apoya en «standard», «corner», «fittings», «same»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph A; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "b3811a72905956855ed0797829840c3c33b979e98f2b0016f170433dd9dbc981",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "The shift to specialised handling changed",
+          "correctOptionIndex": 5,
+          "correctOptionText": "the distribution of work and commercial opportunity."
+        },
+        "sourceExcerpt": "Benefits were uneven. A port with capital, land and strong inland connections could process high volumes, whereas a smaller harbour might lose traffic when it could not justify specialised infrastructure. Workers whose skills centred on manual cargo handling faced disruption, while other roles expanded around cranes, logistics and maintenance. These outcomes do not show that standards failed. They show that a common interface changes bargaining power and location as well as technical efficiency. Uniform equipment can produce highly non-uniform social effects.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «The shift to specialised handling changed» y la clave es «the distribution of work and commercial opportunity.». La evidencia dice «A port with capital, land and strong inland connections could process high volumes, whereas a smaller harbour might lose traffic when it could not justify specialised infrastructure.». La coincidencia semántica se apoya en «specialised»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph D; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "9d46f062d567fb0de8504e468d6eeea9928f2540af7bc3d70c7d435aa46cfa4d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "Existing investments give a standard",
+          "correctOptionIndex": 0,
+          "correctOptionText": "practical authority beyond the written rule."
+        },
+        "sourceExcerpt": "Once many firms have invested in compatible assets, changing the standard becomes difficult. This is infrastructure lock-in: not an absolute prohibition on innovation, but a rising cost of departure. A new design may be technically superior and still struggle if it requires different cranes, storage slots and vehicle frames. The installed system gives current dimensions a practical authority beyond the wording of any rule. Stability supports confidence, yet it can also preserve compromises chosen under earlier conditions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Existing investments give a standard» y la clave es «practical authority beyond the written rule.». La evidencia dice «The installed system gives current dimensions a practical authority beyond the wording of any rule.». La coincidencia semántica se apoya en «practical», «authority», «beyond», «rule»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph E; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "2b1e8c0a148d91d99fdd3dcb3bfc8a475db8b01e100f505885360d59880fe66d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "Incremental innovation is attractive because it",
+          "correctOptionIndex": 4,
+          "correctOptionText": "can improve the system without destroying compatibility."
+        },
+        "sourceExcerpt": "Lock-in is not paralysis. Operators can introduce tracking devices, improved seals or new inspection methods without discarding the entire interface. Such incremental change is attractive because it preserves compatibility while improving information or safety. More radical alteration is possible when benefits are large enough and transition arrangements are shared. The crucial variable is coordination: a single carrier cannot redesign a network alone, but groups can change it when the costs and timetable are made explicit.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Incremental innovation is attractive because it» y la clave es «can improve the system without destroying compatibility.». La evidencia dice «Such incremental change is attractive because it preserves compatibility while improving information or safety.». La coincidencia semántica se apoya en «incremental», «attractive», «because», «compatibility»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph G; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "5cafc67e6aba2dcc1c4ff563b2bab8cb0450a4a2645edbdd8ad9d07be263d38f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "The author describes the container as institutional because it",
+          "correctOptionIndex": 1,
+          "correctOptionText": "embodies commitments between many organisations."
+        },
+        "sourceExcerpt": "The container is best understood as an institutional object. Its steel walls carry goods, while its standard form carries commitments among organisations that may never meet. Those commitments reduce uncertainty at each transfer and make large-scale scheduling possible. They also distribute dependence: a delay in one port can propagate through many routes. The achievement of standardisation is therefore neither the triumph of a clever box nor a tale of rigid uniformity. It is the construction of a shared platform whose benefits and constraints must be governed over time.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «The author describes the container as institutional because it» y la clave es «embodies commitments between many organisations.». La evidencia dice «The container is best understood as an institutional object.». La coincidencia semántica se apoya en «container», «institutional»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is supported by paragraph H; the candidate must interpret the question rather than copy a visible paragraph heading.",
+        "ledgerRowSha256": "a0a56db47c5b49a1d3197e9190d7e2545fea7823ca08db41ae0e18ed1829cfec",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/reading/set33-reading-content-v1.0.2.json",
+        "sha256": "5022e85d1d9a916f07c032c4759dcd38e5f7d4fe19ccd0eac78c0d190f4a4bfe"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "338691e48fbadda2121b5140c13db38f84d79d1ec18174d7c454f96fd5c27622",
+      "canonicalQuestionProjectionSha256": "c523151410b00e89f8046a27dec699812e4b4d2a876a47330162018365483c0a"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Vair"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t002c",
+        "ledgerSegmentBeforeAudioRebind": "s33-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "My surname is Vair. It has exactly four letters: V, A, I, and R. The final letter is R, as in Romeo. I will repeat the complete spelling: V, A, I, and R.",
+        "timecode": {
+          "startFrame": 3149398,
+          "endFrame": 7959220,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.414921,
+          "endSeconds": 180.481179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "dee51b5af6a79f0185ec8ac1e07059b3a2473aafb6485345bad62c60d119c103",
+        "planSegmentTextSha256": "79fac71434ce5e9aea370af4e9aa7b75e24d5ab8a30be7d057bce64c655bb6ed"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Tank capacity: ______ litres",
+          "acceptedResponses": [
+            "4200",
+            "4,200"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t004a",
+        "ledgerSegmentBeforeAudioRebind": "s33-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is a slimline tank behind the house. I thought it held four thousand litres, but the label actually says four thousand two hundred litres.",
+        "timecode": {
+          "startFrame": 3149398,
+          "endFrame": 7959220,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.414921,
+          "endSeconds": 180.481179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7333be8e1c73b7674c0512242210cde5f103662755a44875cb2a29ac8b12e820",
+        "planSegmentTextSha256": "078775324320e52c1ed9ccba90f14a9e0c3605b7af4b4fe15262f70b2ff8bde9"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Access is through the ______",
+          "acceptedResponses": [
+            "side gate"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The front path is too narrow and the back gate sticks. Please use the side gate; that gives the clearest route to the tank.",
+        "timecode": {
+          "startFrame": 3149398,
+          "endFrame": 7959220,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.414921,
+          "endSeconds": 180.481179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "47654341c3d7a2e64826d91bef958b559def2ad693f78ebe2ec33fd90778560e",
+        "planSegmentTextSha256": "28c13f07bd99e98ec7b36f42c05acd2f34b94b348b753cadfb68ea74d4ca036b"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "The inspection hatch is beside the ______",
+          "acceptedResponses": [
+            "downpipe screen"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t008",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The round hatch is on top, immediately beside the downpipe screen, not near the pump housing on the other side.",
+        "timecode": {
+          "startFrame": 3149398,
+          "endFrame": 7959220,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.414921,
+          "endSeconds": 180.481179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "95b7f3026e6f99d18cecb0654100740c60982cba2ed6119ec0934ed97fa9478c",
+        "planSegmentTextSha256": "74b9bfcb0330f43b14cbbae75fde215c0fba889b10764a18c31b6708a63a40c7"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Preferred date: ______",
+          "acceptedResponses": [
+            "18 November",
+            "18th November",
+            "November 18",
+            "November 18th"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "Tuesday the seventeenth is impossible, but the next morning is ideal. Please book 18 November, before eleven if possible.",
+        "timecode": {
+          "startFrame": 3149398,
+          "endFrame": 7959220,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.414921,
+          "endSeconds": 180.481179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a38cee49b13893200ca9e4e1962fc1c1dce35d2157103cf2883509846a97672a",
+        "planSegmentTextSha256": "3245b4b40fc7d9217bf2246a55ea20aca75eeb739f1ea94a2958bdb62a67bfec"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Report requested: ______ report",
+          "acceptedResponses": [
+            "photographic"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t012",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The brief note would not be enough for the house file, so I will take the photographic report with the labelled images.",
+        "timecode": {
+          "startFrame": 3149398,
+          "endFrame": 7959220,
+          "sampleRateHz": 44100,
+          "startSeconds": 71.414921,
+          "endSeconds": 180.481179,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "32f7ef08e83bfbf0e18733c87c4a322ef8f5361deb6e920ced75703d197aa13a",
+        "planSegmentTextSha256": "ba97dd5d90d7c9ac7b0cea0963eb2f395a99bc1cae98946fecf19eec50f99a6d"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "fill",
+          "questionText": "What must be moved before the visit?",
+          "acceptedResponses": [
+            "plant pots"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t014",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The ladder can stay where it is, but I need to move the plant pots. They are the only things blocking the working area.",
+        "timecode": {
+          "startFrame": 11013506,
+          "endFrame": 14343025,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.739365,
+          "endSeconds": 325.238662,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ca393a622716977a326e97ced851c0b88742bdbda188a75438850b584f87485c",
+        "planSegmentTextSha256": "6c27f1d740dc8eddc3e795cbf9bb5644028018a427213a585e51f828eb68eae9"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "fill",
+          "questionText": "What will the inspector measure first?",
+          "acceptedResponses": [
+            "sediment depth"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t015",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Good. The inspector will begin by measuring the sediment depth at the bottom. The screen check and water sample come afterwards, so the tank should not be emptied.",
+        "timecode": {
+          "startFrame": 11013506,
+          "endFrame": 14343025,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.739365,
+          "endSeconds": 325.238662,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "80d415fae8422f329edd8cb74ebda6f39d8eca49f1a3fd8a1caf868af12b5f77",
+        "planSegmentTextSha256": "83ebb9f93ba3e17ea5daf21d97b286fc0b399b54b84ec02db395f20c9bce65c9"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "fill",
+          "questionText": "What should remain switched off?",
+          "acceptedResponses": [
+            "garden pump"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t017",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The timer can remain as it is, but please keep the garden pump switched off from breakfast until the inspection has finished.",
+        "timecode": {
+          "startFrame": 11013506,
+          "endFrame": 14343025,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.739365,
+          "endSeconds": 325.238662,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "53b697241ffac231ec4f99865f8050521490c6e8061b8c72aaef2e539b27ab2f",
+        "planSegmentTextSha256": "9dd2b08668cd089ecb9f33ec803f04656d3fe0e6427eba7b54b889bf2dc74d6c"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "fill",
+          "questionText": "Where will the water sample be taken?",
+          "acceptedResponses": [
+            "kitchen tap"
+          ]
+        },
+        "evidenceSegment": "s33-p1-t019",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "We need a household sample, so it will be taken from the kitchen tap, not the outdoor tank tap. The technician will call ten minutes before arrival.",
+        "timecode": {
+          "startFrame": 11013506,
+          "endFrame": 14343025,
+          "sampleRateHz": 44100,
+          "startSeconds": 249.739365,
+          "endSeconds": 325.238662,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fd654e5d512fe12a9f4c39a7b1e86b92525d80974a0616454edf92abd4c6633b",
+        "planSegmentTextSha256": "3bf762e6c9935448757d1b48ae1d3c7c29b3782085abca42f7451e3b813ca6df"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "Why must stallholders arrive during their allocated unloading window?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "to keep the shared lane moving"
+        },
+        "evidenceSegment": "s33-p2-t002",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "Your coloured pass shows an unloading time. Please keep to it, not because the pitch changes or the parking is cheaper, but because one shared lane must keep moving.",
+        "timecode": {
+          "startFrame": 19136695,
+          "endFrame": 24408853,
+          "sampleRateHz": 44100,
+          "startSeconds": 433.938662,
+          "endSeconds": 553.48873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8fef466bbd762feb42242d0b6510010b4095ed61013ae7c37e3304ca94ba1f3a",
+        "planSegmentTextSha256": "b7c6ab08876e1eae4f6be32a19984f68a8abd298156f46642be4745768092092"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "What will staff check before electrical equipment is used?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "the current power tag"
+        },
+        "evidenceSegment": "s33-p2-t004",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "At the power desk, staff do not count appliances or judge cable colour. They check that each powered item carries a current power tag before it is connected.",
+        "timecode": {
+          "startFrame": 19136695,
+          "endFrame": 24408853,
+          "sampleRateHz": 44100,
+          "startSeconds": 433.938662,
+          "endSeconds": 553.48873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e748f16cc63bc8b01aa072563368e187815ff96e3c8468c63a06558c273b085d",
+        "planSegmentTextSha256": "bd928454521fbcb6efc099d9e803064874cbf8b9d6c47a81975b21e3dd3b9ac9"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "What is the main purpose of the grey waste station?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "general non-food rubbish"
+        },
+        "evidenceSegment": "s33-p2-t006",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The grey station is for tied bags of general non-food rubbish. Cardboard goes to the reuse cage, while cooking oil has its own sealed return point.",
+        "timecode": {
+          "startFrame": 19136695,
+          "endFrame": 24408853,
+          "sampleRateHz": 44100,
+          "startSeconds": 433.938662,
+          "endSeconds": 553.48873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "151d560c0e83de1fa736139a572ac4838db28a9a0a364c3bb5bf6e80ca5b5672",
+        "planSegmentTextSha256": "d5cbc8778353dc926eeae98927cdd79ddda0333f70aeb2e40808d7885f545c68"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "What happens at the quiet close?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "music stops before final sales end"
+        },
+        "evidenceSegment": "s33-p2-t008",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "At nine forty-five we begin the quiet close. Trading continues for fifteen minutes, but amplified music stops so nearby residents are not disturbed.",
+        "timecode": {
+          "startFrame": 19136695,
+          "endFrame": 24408853,
+          "sampleRateHz": 44100,
+          "startSeconds": 433.938662,
+          "endSeconds": 553.48873,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "125f319021ea3073ce52a3301875c275be1119afed4621d04e242f63ff751b6e",
+        "planSegmentTextSha256": "6c0b06ac0aa000a8d8c3d92b7e782e84e92411585af30d1df8bbee9c7a74d15a"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Which document must be displayed at every stall?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "the stall permit"
+        },
+        "evidenceSegment": "s33-p2-t010",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "A vehicle pass only admits you to unloading, and prices are your responsibility. The laminated stall permit must remain visible throughout the evening.",
+        "timecode": {
+          "startFrame": 24428698,
+          "endFrame": 25459857,
+          "sampleRateHz": 44100,
+          "startSeconds": 553.93873,
+          "endSeconds": 577.32102,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "c1963ff44c98523764ce677b61ea9e52b6c63ce9afce54d098956ebf699a31d6",
+        "planSegmentTextSha256": "74811d303eb93190c6eca2f4df3e18fa161d5900f19c87f39e525e07af9f3e08"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Where should empty delivery crates be taken?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "loading bay"
+        },
+        "evidenceSegment": "s33-p2-t012",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Once unloaded, collapse empty delivery crates and take them back to the loading bay. Do not leave them behind your stall.",
+        "timecode": {
+          "startFrame": 28081604,
+          "endFrame": 32275355,
+          "sampleRateHz": 44100,
+          "startSeconds": 636.771066,
+          "endSeconds": 731.86746,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7b9f27e7d3768571cc8245223f66385ac3510acd11e5f10b796855fd9ec26f7c",
+        "planSegmentTextSha256": "236415901f504ed15128d48229a51fc7fc02396e5dfe881734af1187aba7e852"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "Where are damaged extension leads reported?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "power desk"
+        },
+        "evidenceSegment": "s33-p2-t013",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "If an extension lead is split or its tag cannot be read, carry it unplugged to the power desk and report it there.",
+        "timecode": {
+          "startFrame": 28081604,
+          "endFrame": 32275355,
+          "sampleRateHz": 44100,
+          "startSeconds": 636.771066,
+          "endSeconds": 731.86746,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "40dd723c0f8ad8763cae722246817b593e490a928cf6b084fcea7345c60c3d70",
+        "planSegmentTextSha256": "b80b338a9ad911bbbd5b0b7ffd1510e807e6b17b734546b0b348193cb7ad57a5"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Where should tied rubbish bags go?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "grey waste station"
+        },
+        "evidenceSegment": "s33-p2-t014",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Tie ordinary rubbish securely. Those bags belong at the grey waste station, not at the cardboard cage beside it.",
+        "timecode": {
+          "startFrame": 28081604,
+          "endFrame": 32275355,
+          "sampleRateHz": 44100,
+          "startSeconds": 636.771066,
+          "endSeconds": 731.86746,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "14c910aa93afde2edbd564d38de1cec276d2edd696d5f1ec81a912513c6e0839",
+        "planSegmentTextSha256": "38eb1df5f13109364e26cb8b04d59280110dbc9ee58e507a97fbef73747d6995"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "Where is cooled cooking oil returned?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "oil return point"
+        },
+        "evidenceSegment": "s33-p2-t015",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Let used oil cool in its original covered container. Return it only at the oil return point after the dinner rush.",
+        "timecode": {
+          "startFrame": 28081604,
+          "endFrame": 32275355,
+          "sampleRateHz": 44100,
+          "startSeconds": 636.771066,
+          "endSeconds": 731.86746,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ab1279b8b66b8fd7f473e4585780a50b789a984951bc94d9c32deedfd51703e0",
+        "planSegmentTextSha256": "292bef82036047f176b844a791ffca6e1b80d810bafa6b442cc46d7fb2582cc0"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "Where can a lost permit be reprinted?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "permit office"
+        },
+        "evidenceSegment": "s33-p2-t016",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "If wind damages your permit or you misplace it, the permit office can verify your booking and print a replacement.",
+        "timecode": {
+          "startFrame": 28081604,
+          "endFrame": 32275355,
+          "sampleRateHz": 44100,
+          "startSeconds": 636.771066,
+          "endSeconds": 731.86746,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bdf192c1ef825b91cb63e8d23269099c32278513608edff1560018707ecea698",
+        "planSegmentTextSha256": "c4e552aa97b334ccad6d788e310ed496eda3ea2a4cc2c15612c96a988b45f88d"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "What problem do the students identify in their first design?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "soil moisture differs between sites"
+        },
+        "evidenceSegment": "s33-p3-t002",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Our first plan compares the woodland and sports field as if habitat is the only difference, but the woodland plots are much wetter. Soil moisture could explain a count difference.",
+        "timecode": {
+          "startFrame": 37510031,
+          "endFrame": 42573838,
+          "sampleRateHz": 44100,
+          "startSeconds": 850.567596,
+          "endSeconds": 965.393152,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1278c76ae2900c91f3171fce9f25dca1c6671b4a9b218bac2fb568afca1fa785",
+        "planSegmentTextSha256": "de5055447a0bd8e1fb2cb0fb4f6c1f00107cdf4c442669676e472763959ba31c"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "Why do they retain mustard extraction?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "it can be applied consistently"
+        },
+        "evidenceSegment": "s33-p3-t004",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "I considered hand sorting alone, yet effort would vary. We should retain mustard extraction because we can apply the same concentration, area and waiting time at every plot.",
+        "timecode": {
+          "startFrame": 37510031,
+          "endFrame": 42573838,
+          "sampleRateHz": 44100,
+          "startSeconds": 850.567596,
+          "endSeconds": 965.393152,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6e2a3458d6fb2a11abc75872cd1b8b751a0f56741de9794a12ddf7a0134d1e1c",
+        "planSegmentTextSha256": "c863db7a5138d71a5f24df70daec5e4ca72396d551b7488f45e16cb47a6e6a5e"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "How will they reduce observer bias?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the same pair will sort every sample"
+        },
+        "evidenceSegment": "s33-p3-t006",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "For observer bias, swapping guides will not help. The same pair of people should sort every sample, then resolve disagreements together.",
+        "timecode": {
+          "startFrame": 37510031,
+          "endFrame": 42573838,
+          "sampleRateHz": 44100,
+          "startSeconds": 850.567596,
+          "endSeconds": 965.393152,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0644fa81e6469bc25d0a0f86bf473cf7ba1ecd4cfbdc3092c4e532cc038f7947",
+        "planSegmentTextSha256": "3de3daf169c55da36c90fbbe15880ed315c2376adce8f84119dff8993f6eff86"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "What will be recorded before extraction begins?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "soil moisture"
+        },
+        "evidenceSegment": "s33-p3-t008",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "Before any solution is poured, we will record soil moisture. Worm length and vegetation height can be secondary, but moisture must come first.",
+        "timecode": {
+          "startFrame": 37510031,
+          "endFrame": 42573838,
+          "sampleRateHz": 44100,
+          "startSeconds": 850.567596,
+          "endSeconds": 965.393152,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "08cb995ccfc9ce0d1137e8a1e9b8b9b56c0dfcea14309803176b3153e3fd76fb",
+        "planSegmentTextSha256": "9b6f8ba86a1f9e0fa432e8143fe8d2fa3456401be17726c7061aa43f2e7ac03f"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "Which comparison becomes their primary analysis?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "paired moist plots across habitats"
+        },
+        "evidenceSegment": "s33-p3-t010",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "So the primary comparison will use paired moist plots, one in each habitat. Total habitat counts and time-of-day patterns can remain exploratory.",
+        "timecode": {
+          "startFrame": 42593683,
+          "endFrame": 43559022,
+          "sampleRateHz": 44100,
+          "startSeconds": 965.843152,
+          "endSeconds": 987.732925,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8661e0c07f06b751c4fa16a7feff28a22cf69711a07ccb246c95f75d940fbcc4",
+        "planSegmentTextSha256": "1cb0e1b41e39a203ef143467f23ed1ea0e5cb1c0792f7cc13cdecc5668919579"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "Different recent rainfall",
+          "correctOptionIndex": 4,
+          "correctOptionText": "pair plots by moisture"
+        },
+        "evidenceSegment": "s33-p3-t012",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Recent rainfall creates unequal moisture. Pairing plots by their measured moisture is the revision that addresses that problem.",
+        "timecode": {
+          "startFrame": 46180778,
+          "endFrame": 48600817,
+          "sampleRateHz": 44100,
+          "startSeconds": 1047.183175,
+          "endSeconds": 1102.059342,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a1db77bd98eda742a15091e219e8253d50f8e1a5f6c9c1336bad5e70b901f546",
+        "planSegmentTextSha256": "843142115122ea257611451d02839f81cca810a4bab1f34a3972f01514af0307"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "Unequal extraction duration",
+          "correctOptionIndex": 1,
+          "correctOptionText": "standardise extraction time"
+        },
+        "evidenceSegment": "s33-p3-t014",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "If one team waits five minutes and another waits ten, effort changes. We will standardise extraction time with a single timer.",
+        "timecode": {
+          "startFrame": 46180778,
+          "endFrame": 48600817,
+          "sampleRateHz": 44100,
+          "startSeconds": 1047.183175,
+          "endSeconds": 1102.059342,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3e1339252bc93d22eeee01a41e9783181584a737e3765bf3d26e6e7c4e1465b5",
+        "planSegmentTextSha256": "1fc27497e1930c2e39ee6f581fa69bc08f7c77eec69013a575ec34ea249ad828"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "Disagreement over juvenile specimens",
+          "correctOptionIndex": 3,
+          "correctOptionText": "use a shared identification check"
+        },
+        "evidenceSegment": "s33-p3-t015",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Juvenile worms are hard to identify consistently. A shared identification check by both students should reduce disagreement.",
+        "timecode": {
+          "startFrame": 46180778,
+          "endFrame": 48600817,
+          "sampleRateHz": 44100,
+          "startSeconds": 1047.183175,
+          "endSeconds": 1102.059342,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f2ab0ed40d6c802f830cc95a0dd265fe0676ceb2322e473415d86e81e15cb51b",
+        "planSegmentTextSha256": "0e8bd785da61601379870e900e000fd392836d1af6c9eae468fad57ad2704509"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "Uncertain species record",
+          "correctOptionIndex": 0,
+          "correctOptionText": "photograph uncertain specimens"
+        },
+        "evidenceSegment": "s33-p3-t016",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "When a specimen remains uncertain, we will photograph it against a scale and confirm it later rather than inventing a species label.",
+        "timecode": {
+          "startFrame": 46180778,
+          "endFrame": 48600817,
+          "sampleRateHz": 44100,
+          "startSeconds": 1047.183175,
+          "endSeconds": 1102.059342,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9420049014f9689537f803929f8f5aaf1cf6d2548a5d3b6045991249912cb8a4",
+        "planSegmentTextSha256": "5fff512127e54b8e707150cbdf716589e4a4aed1608154263f7f28e13f6494e9"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "Trampling before the survey",
+          "correctOptionIndex": 5,
+          "correctOptionText": "measure before sampling"
+        },
+        "evidenceSegment": "s33-p3-t017",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "To prevent trampling from changing the surface, we will measure each quadrat before sampling and approach from the marked path.",
+        "timecode": {
+          "startFrame": 46180778,
+          "endFrame": 48600817,
+          "sampleRateHz": 44100,
+          "startSeconds": 1047.183175,
+          "endSeconds": 1102.059342,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4b9490ac88276e1b8743e0ea8d952f3b604e7d74258166ff2a780b1042ac2aa9",
+        "planSegmentTextSha256": "473557ba3a02e1a637496a100d6f5b0010a5962313bd2b0191ec2c9906341748"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "A downward ______ contains a broad range of frequencies.",
+          "acceptedResponses": [
+            "frequency sweep"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t002",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "Many bats emit a downward frequency sweep, so a single brief call carries a broad range of frequencies rather than one unchanging note.",
+        "timecode": {
+          "startFrame": 57303933,
+          "endFrame": 62598615,
+          "sampleRateHz": 44100,
+          "startSeconds": 1299.408912,
+          "endSeconds": 1419.469728,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8ef252596093006efc1a56273f5b00256ced46c370b1cad4a7f813c83e7028ad",
+        "planSegmentTextSha256": "3f1750c33903ac285c91e9161b7ddf474f755a25bae2644fc4c72dd321012097"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Distance is inferred from the ______ between call and echo.",
+          "acceptedResponses": [
+            "echo delay"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t004",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "The simplest ranging cue is echo delay: the interval between the outgoing call and its return increases with target distance.",
+        "timecode": {
+          "startFrame": 57303933,
+          "endFrame": 62598615,
+          "sampleRateHz": 44100,
+          "startSeconds": 1299.408912,
+          "endSeconds": 1419.469728,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6bd4b41ef14348503b4c445653db81295f59432531066dbb0e1ec8409db49c5d",
+        "planSegmentTextSha256": "02bc06356dbb5430e25b3e437303647d5169b208b6756c8297292f2e09b77073"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "A structure called the ______ helps analyse returning sound.",
+          "acceptedResponses": [
+            "tragus"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t006",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "In the outer ear, a small projection called the tragus contributes cues that help the auditory system analyse returning sound.",
+        "timecode": {
+          "startFrame": 57303933,
+          "endFrame": 62598615,
+          "sampleRateHz": 44100,
+          "startSeconds": 1299.408912,
+          "endSeconds": 1419.469728,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d94231e4f8788f2fc1b368295d7370e0daf81af8e2b2a7a4b8e929b7ccd48e42",
+        "planSegmentTextSha256": "894578e717a57ae28bdd299ac69482df729b44b8dae1a93a053523e80763b507"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Calls may be timed in relation to each ______.",
+          "acceptedResponses": [
+            "wingbeat"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t008",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "During flight, call production may be coordinated with each wingbeat, which can reduce the energetic cost of breathing and calling.",
+        "timecode": {
+          "startFrame": 57303933,
+          "endFrame": 62598615,
+          "sampleRateHz": 44100,
+          "startSeconds": 1299.408912,
+          "endSeconds": 1419.469728,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "7eaaee3bf6b155a03600dce462da1d753af0511dee325532adf1a2410aa519d7",
+        "planSegmentTextSha256": "3274a33301b4a0dfb6d9dd43a719f04ccf92b6472061f3057473438605d06127"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Dense vegetation creates a ______ habitat.",
+          "acceptedResponses": [
+            "cluttered"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t010",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "Branches and leaves make what researchers call a cluttered habitat, where echoes arrive from many surfaces in very quick succession.",
+        "timecode": {
+          "startFrame": 62618460,
+          "endFrame": 64787340,
+          "sampleRateHz": 44100,
+          "startSeconds": 1419.919728,
+          "endSeconds": 1469.10068,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "da2e49331e9bff6cbecea3ec845b6f166f718560d11450883c6e0fceb32f552c",
+        "planSegmentTextSha256": "26136bdfd5ca6f9052213c00ac720465fc168b2aa10cdf21abe92f00dc2ae9f8"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Near objects require ______ calls.",
+          "acceptedResponses": [
+            "shorter"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t012",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "When a bat approaches vegetation, shorter calls reduce overlap between an outgoing signal and the earliest returning echoes.",
+        "timecode": {
+          "startFrame": 62618460,
+          "endFrame": 64787340,
+          "sampleRateHz": 44100,
+          "startSeconds": 1419.919728,
+          "endSeconds": 1469.10068,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9e554031fb227ea0c1420e59f991bce94f25ac7c63749e19f602565dc0cf1ec7",
+        "planSegmentTextSha256": "0d2be6310231723274595362e3986c65ebc78c75d899c6033268aaca4f9587e9"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "What physical feature may be counted to estimate clutter?",
+          "acceptedResponses": [
+            "vegetation gaps"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t014",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "One practical clutter measure is to count vegetation gaps along a defined line, although other optical and spatial measures are possible.",
+        "timecode": {
+          "startFrame": 67629573,
+          "endFrame": 69995732,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.550408,
+          "endSeconds": 1587.204807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "48c21690407187ad3702aacee51446024752eaba4e827e8f65579e01d3d1e77a",
+        "planSegmentTextSha256": "fc846a3f55bbc6760ea6b82a6e5c2a6c344347d7011a20cf70eb377ba181bdbd"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "What must a bat separate from prey echoes?",
+          "acceptedResponses": [
+            "background echoes"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t016",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "To detect an insect near foliage, the bat must separate the prey echo from strong background echoes returned by leaves and stems.",
+        "timecode": {
+          "startFrame": 67629573,
+          "endFrame": 69995732,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.550408,
+          "endSeconds": 1587.204807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f6e6791dad45af6f99054a491279ba460243d7c965950e730bd6877ea426b435",
+        "planSegmentTextSha256": "116c2a6fb9c11b93313d2862bc6d25c6b5cfd07e449e7294b8903648ceb4de10"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "What movement can change the direction of reception?",
+          "acceptedResponses": [
+            "ear movement"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t017",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "Small ear movement can change the direction from which sound is received most strongly, adding dynamic information during approach.",
+        "timecode": {
+          "startFrame": 67629573,
+          "endFrame": 69995732,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.550408,
+          "endSeconds": 1587.204807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2b15bd01dd2d88b6187f2c93d640c067fb7b7a0fd4f98e323a7ef6ecb0d1ce73",
+        "planSegmentTextSha256": "d4c175053867a0b622cc34a7030e9ee7abf8160702222342fd7ada4522b77d27"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "What benefit do brief calls provide near obstacles?",
+          "acceptedResponses": [
+            "rapid updates"
+          ]
+        },
+        "evidenceSegment": "s33-p4-t018",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "In dense vegetation, the chief benefit of brief calls is rapid updates about nearby obstacles. Their lower energy can shorten range, but that is a cost rather than the benefit.",
+        "timecode": {
+          "startFrame": 67629573,
+          "endFrame": 69995732,
+          "sampleRateHz": 44100,
+          "startSeconds": 1533.550408,
+          "endSeconds": 1587.204807,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "eb1e2b0669804b4b4cb7503dcd7f47ad03a69ec28d5adf5391590b137d30f120",
+        "planSegmentTextSha256": "39ecc05f046ea6627c7e75a035dcd5f061d52a4f36900102335760f7f70d62eb"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/set33-listening-content-v1.0.3.json",
+        "sha256": "cc4a210270c0b24299fe5036863b85e3892a5bbd94795569fb25a72ee1502677"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "9f7a1d9ee636b9f8392a123916d04e95b4934f6c91af8064b1ddc58804d690fb",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-33/set33-audio-production-plan.json",
+        "sha256": "1ac7d84d31ebce3a98b9239319c2154bda33e36a33ac2a65828b18abcd66b1d8"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/elevenlabs-v4/set33-eleven-v4-manifest.json",
+        "sha256": "f691b4a8ca7987f770d39ea098101f66275d24fab4644b5e2273e2b26c283370"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/elevenlabs-v4/set33-eleven-v4-progress.json",
+        "sha256": "b44a2c5d8ec137a7aec21aab5d51dc86d740585ded5c6f23c37d6df11df801d2"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/elevenlabs-v4/set33-eleven-v4-qa.json",
+        "sha256": "685ae0c45693e8202a359be06b736e2938c40be8638490666343a1cb05941c63"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/elevenlabs-v4/set33-concat.txt",
+        "sha256": "31a2ed49d5968bbc9505e5f466c6712f024a01ce706d2554e5418a99f9e0ad40"
+      },
+      "concatPieceAggregateSha256": "be1d4b06321ac27aa566297748b4fc9c29e53a875c1139e2aed197a5749ab3b5",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/elevenlabs-v4/ielts-set-33-listening-eleven-v4-master.wav",
+        "sha256": "08be44f0ac94217331f322a0b99df14e209bc5a7259ba07e7cec111f852f6d26",
+        "frameCount": 76731191,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/listening/elevenlabs-v4/ielts-set-33-listening-eleven-v4.mp3",
+        "sha256": "3535b5b501db5b909d6b4fe14ea621b3b6405443399925a7f18b80bcce3e08c8"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-33.mp3",
+        "sha256": "3535b5b501db5b909d6b4fe14ea621b3b6405443399925a7f18b80bcce3e08c8"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "2962fe79082ef7efa639500c62cea1f35834b0f611cde1406aac841ea2d03663"
+  }
+}

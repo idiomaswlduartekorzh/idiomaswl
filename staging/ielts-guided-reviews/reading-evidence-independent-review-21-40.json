@@ -1,0 +1,2423 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_READING_INDEPENDENT_REVIEW",
+  "scope": {
+    "sets": [
+      21,
+      40
+    ],
+    "module": "Academic Reading",
+    "rowsReviewed": 800
+  },
+  "reviewedAt": "2026-10-28T14:10:11.006476Z",
+  "reviewer": {
+    "role": "Independent Reading Module Reviewer",
+    "task": "guided_reading_independent_review",
+    "independentOfSourceAuthoring": true
+  },
+  "decision": "FAIL",
+  "gate": "G3_CONTENT_READING_EVIDENCE",
+  "releaseAuthorized": false,
+  "runtimeIntegrationAuthorized": false,
+  "reviewPolicy": {
+    "mode": "review-module",
+    "failClosed": true,
+    "passRequires": "All 40 rows must bind to canonical Q1-Q40, responseKey/type and canonical part; every excerpt must be literal in the located passage; source/ledger/artifact hashes must match; and every key must have a substantive, independently reviewable rationale. A citation plus an assertion of correctness is insufficient.",
+    "notGivenRule": "NOT GIVEN/NOT STATED outcomes require a rationale that identifies the missing proposition; a paragraph citation alone cannot establish absence from the passage.",
+    "approvalMeaning": "PASS applies only to this Reading evidence gate. It is not a release, runtime-integration, or human-QA approval."
+  },
+  "sourceManifest": {
+    "path": "staging/ielts-guided-evidence-21-40/manifest.json",
+    "sha256": "5ef9f5fd0b970752a5d98a34c13406c2ece7d7316ca7e0352b9472ac7a78b7e5",
+    "payloadSha256": "81e28a8603d91d3ab16be577b8c0ea1f0975956f3e5d7b201548661fe30261be"
+  },
+  "aggregate": {
+    "setsReviewed": 20,
+    "passSets": 7,
+    "failSets": 13,
+    "rowsReviewed": 800,
+    "substantiveRowsPassed": 360,
+    "failedRows": 440,
+    "passSetNumbers": [
+      21,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "failSetNumbers": [
+      22,
+      24,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ]
+  },
+  "sets": [
+    {
+      "set": 21,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-21-guided-evidence-staging.json",
+          "sha256": "f12f7f6cdc178b94fe68d756b9da4696febe00431c1996ac0ebb5f1097e54016",
+          "payloadSha256": "6904f51a06d9f874107e3e02fc46737a85ebae22964018cee8fa3db3d698ad73"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-21.ts",
+          "sha256": "e9ced020f75eb4bb940ef75c109e654817539327ad225ac35ac70b7e6d3db397"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-21/reading/set21-reading-content-v2.1.3.json",
+          "sha256": "a6f9a6ecb07b1a9bcdf7962b96bcac9a93b1da5e069486d47add3f7c44fa9b58"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "c1713721b0ae350b8c75481ab484adb4f906f088280bf2a84be3a6ed31ab793a",
+        "canonicalQuestionProjectionSha256": "88dec90928b1959c68d94819f408fbf72652e12983c1ab4015a36dbbb2f6654e",
+        "reviewedRowsCanonicalSha256": "abdb4ace743b3ca2a6e7ef02185cd2d224a03e72880c79f55a0a0b1daaab11c1"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": []
+    },
+    {
+      "set": 22,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 2,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-22-guided-evidence-staging.json",
+          "sha256": "40d6309581f6a5a63cd11540218b7d233a4da9999dd98214dc273e66eea1f5f1",
+          "payloadSha256": "ea0a41dfbf2e64aa15ba6ea68756bba4d901cf9c4dbb7acaee83124eeaf20b35"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-22.ts",
+          "sha256": "e6617c19287f3559449af2073f67a355558894d05cf2d7557010239b958b8eb9"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/reading/set22-reading-content-v1.0.1.json",
+          "sha256": "77597babe6483109d424f0e19f81bda60ed4b698741bd6f5f89cae3d370094b6"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "4eb47761270939120a71909ef31890bf6f758cdcb06c052dfdedc63b435f8d13",
+        "canonicalQuestionProjectionSha256": "6eaab01ca860dd5d2d87355dd8fa87220e2e6174ed5d755afb6c956419ce0332",
+        "reviewedRowsCanonicalSha256": "bd68833175dbed4e3fb776cdbe423d5700d35362fe112a00e0a1197c5d3bf12f"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 38,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 23,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-23-guided-evidence-staging.json",
+          "sha256": "1680859c618c7a5fa834753052d30fc47ca6a9e22956c174f53f7f5603e67cfd",
+          "payloadSha256": "1df042c10eaab05c7529ba518874e545e9f132023ab2fa868bb20abbba48428b"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-23.ts",
+          "sha256": "aee603e7a3e489bc474af88b4c4cb3b967aa9799c73bdf735f09f94345b17bf1"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-23/reading/set23-reading-content-v1.0.4.json",
+          "sha256": "5e6fb3e5629e53d48ed713f08ac84519515cd9facb66772725a6122d39827034"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "293106ef4ad5bc6cefd6f28ecf68e056d3658fdb1c038967ab32bfb209b6d138",
+        "canonicalQuestionProjectionSha256": "380a9e4e947cc334aa338daccda97c207212975b1bc257291554c5895c6f635b",
+        "reviewedRowsCanonicalSha256": "ed8ed3a44a58b956f748938138876c454bf6ed1ba63c7c2a134121e47cd958d3"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": []
+    },
+    {
+      "set": 24,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 31,
+      "failedQuestions": [
+        2,
+        4,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-24-guided-evidence-staging.json",
+          "sha256": "8b2d8af685a2d456d3c4bdc2216881df239adfe2dfd5d92af52a8a78640dd65b",
+          "payloadSha256": "ff163580d57396b26c457b5ec3e33f5c533c011d4a0a764ae3c79ebc107ce3ec"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-24.ts",
+          "sha256": "f5a0ce8c1cf2292a083dcd026902175f477a0b03ad5a284c1f00f0d4629fabe8"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-24/reading/set24-reading-content-v1.0.2.json",
+          "sha256": "d701ff78de1311b4fe00bb3d511450de621331ee4d6000913066be3aa86caefd"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "1515077c5d8ff89b7ae025ab2ed85031971b580967659dcf6b826de7b302965a",
+        "canonicalQuestionProjectionSha256": "13a3a18961336e8ef6d37fe84d1e9bda0c087fdd30a5c621b72338478b6ff4c5",
+        "reviewedRowsCanonicalSha256": "b3ee134ad6067a9268b4847853c5089852f5d8977208f5cbe8140173aceeb88b"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            2,
+            4,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "count": 9,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 25,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-25-guided-evidence-staging.json",
+          "sha256": "6b49312cb1e6b273d79bfce3dcdfbd996210762e2f88caeaa1de1c72da90f2a3",
+          "payloadSha256": "551e9420e1951ff93746071b6616daf689b58d0a5d5b48747b150be61b891cfb"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-25.ts",
+          "sha256": "9e42f5720dc693b981703bd81c380e6f4acb96e319f5a64dfe00cc71ada5d889"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-25/reading/set25-reading-content-v1.0.3.json",
+          "sha256": "bb70edda101a0cb6cbc5c6a97b8f140a1c67980092186fc54713924b26211e5b"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "bdfa96075c3204540b131ac26736419245b3b194adc6950bc3dbaa87d10ba730",
+        "canonicalQuestionProjectionSha256": "235dbfdd6f06314c032e8590a2acdc85a76b0621471420941452f2ec1d0af3ab",
+        "reviewedRowsCanonicalSha256": "4e490e37d524904e0dca8d25f9194964bd7db7fced8416f9024b2069509fe2a8"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 26,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-26-guided-evidence-staging.json",
+          "sha256": "05299806a94fc5c47408174b76afa34dcd2f7fa56bf1fcae46f04e8c8befe0fd",
+          "payloadSha256": "8e04a182b69a0ba17a7552229ef6944eb099d63539bca803fed2d32de957b38e"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-26.ts",
+          "sha256": "f918f76bddb5f4c52b5a2f6a49b03049b65cd97675640a532494c9cf3d97a7e4"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-26/reading/set26-reading-content-v1.0.4.json",
+          "sha256": "619773e3cc2f88a1af8a3b3ff3308f72ad75d80de29c0b39cc1b7cefc30abb3b"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "6841aee0ee18a821d69daf6e24c1699b68be3f175a083f35ed047e7544d80d7c",
+        "canonicalQuestionProjectionSha256": "c739c381835a77553b1bffefe5be92029e7484d370997f039227c63063975a15",
+        "reviewedRowsCanonicalSha256": "60ac15690c5a93511efb72bcc7f3bf5b07f6201fdc05ea53b336f1ab406cfbdb"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 27,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 14,
+          "count": 14
+        },
+        "6": {
+          "firstQuestion": 15,
+          "lastQuestion": 26,
+          "count": 12
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-27-guided-evidence-staging.json",
+          "sha256": "17be7d56095f66d83efc879899254122810894f434adcb4d27be0c89fae16757",
+          "payloadSha256": "8aa46510abc67ecf1f6d41f233f12afed099f1a6d13782c6db6f6521a515def4"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-27.ts",
+          "sha256": "1332d47309648f3a417b30c54b9d08c6c901341dfda06cb297739a9104963b80"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-27/reading/set27-reading-content-v1.0.6.json",
+          "sha256": "63b340c5a945b3b54ec2b1bd9ad2c5da036e0adf06c3788b35865aee164099e1"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "9ab4098e8da824aeefe2c188f8ce14d0f13cc864d04109f410f174dcb6b89fed",
+        "canonicalQuestionProjectionSha256": "09cb4b3f7e25cc8e067e05ad10e1e425e717b9eddb67631cfdc5319abc8103ba",
+        "reviewedRowsCanonicalSha256": "93365e4007a5711a10ee51463932da66f05734c03c6e6976c05d8ae57e6faeb5"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 28,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-28-guided-evidence-staging.json",
+          "sha256": "8800899cbc4e2cdf883905a3a11d49af1463e190a71582b0c2e30dd62b3036fd",
+          "payloadSha256": "142f263110ff5c40afc613f94e87dfc42bab122b4516e2bb7afe78f35a1ed72d"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-28.ts",
+          "sha256": "50084193ee798d5ea01b23d4d31cfe2baa2c3bd42998802874c8dc4def2ccb52"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-28/reading/set28-reading-content-v1.0.12.json",
+          "sha256": "5cdf1e90d29d66ef5e71fcf1068e0e510b163dc588705c1670659a70351f553e"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "df411e4e438f49b2692ba57d7506953a92e417f6be8e68d4ceebba3ea53897e9",
+        "canonicalQuestionProjectionSha256": "8d5aea14d970dd235ea6607b6fb8b5ebb8ef2b9ec0f1a89c904440c130b49ec0",
+        "reviewedRowsCanonicalSha256": "853c04953c6c9930244db1da164f236d61b3716ba27915d235ba1c9e74e615c6"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 29,
+      "decision": "PASS",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 40,
+      "failedQuestions": [],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": true
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-29-guided-evidence-staging.json",
+          "sha256": "97f0bd02c9ff9ea33da2dd8d8a41b2cee9f118256e023407bd053c7b3d53a423",
+          "payloadSha256": "f54c085fe51525816ab3aaa73742e5bdaeb61ef2abd031b6203a03486da74394"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-29.ts",
+          "sha256": "21365a40cd230d888b770c4f47e8b26849c120757f1baf0210f8f3d9d80ec0b1"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-29/reading/set29-reading-content-v1.0.2.json",
+          "sha256": "9d2bd7b3b91358ad39d954c7492bcee3d5538c5edf3a2f302093301c5436f57f"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "0311342b604c56e11956bc228af030a10f785ab2445defae386dbd4b30d75a64",
+        "canonicalQuestionProjectionSha256": "42a7e96ffd40e794e206cf01f1cfd2b6129172e5b962475e3aef06e6bc2b9460",
+        "reviewedRowsCanonicalSha256": "7ddf918ddcf80be380a17346edffea5a44ab4bf10e71ec7ed2dae8b46a7411ab"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": []
+    },
+    {
+      "set": 30,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 11,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        21,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-30-guided-evidence-staging.json",
+          "sha256": "00a46055be5bf4916e386d4cfcba8bfc34bd5dfb8455e16478e163e4b8a518fd",
+          "payloadSha256": "68597f0a0c17431e2ec5e6e448c602fd3a50d766be7e78cd997ef8b9693d1c58"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-30.ts",
+          "sha256": "20b9e446aac6f815ab69f5e2b6c05df43e2e0a7d241fbdbc41019ce1a16bde27"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-30/reading/set30-reading-content-v1.0.4.json",
+          "sha256": "99e297db46a56792b7e1652166bc7ba2ad02d160490f6dd7891d0602dcd56c93"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "1b62f86591f4deb885a9aa58807cbfa65945fa2d5685637dd30557f4d65079da",
+        "canonicalQuestionProjectionSha256": "75c45325ee531a198ecb9b7dc6ebc5f96144dc54206d1fedafa40406e752c289",
+        "reviewedRowsCanonicalSha256": "1ed929b0518f4043b1e032b4b0e784af33f2f462f6fc7debcfcdc907b6ca62a3"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            16,
+            21,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 29,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 31,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 0,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 14,
+          "count": 14
+        },
+        "6": {
+          "firstQuestion": 15,
+          "lastQuestion": 26,
+          "count": 12
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-31-guided-evidence-staging.json",
+          "sha256": "8d3cbec4a319480105371293849e4349cd7bf20c23868d983002e9641e474d6a",
+          "payloadSha256": "e6beb35649197df3566f4042441e2927f5c9db68e2631b385ade596b4f9d822d"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-31.ts",
+          "sha256": "e740448e55a2d80de2955f86e5c87407ceb79c32f90ae0b94fb5a146e4fd2e2d"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-31/reading/set31-reading-content-v1.0.2.json",
+          "sha256": "4aa94a23d2726e4a235c98ceeacd50819276b9235f669bf77edeb8f6ba2b07ea"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "9b81f95e3e478d5f207d83c031ffb4b3d4b47b425d98052af2d9446f177613cf",
+        "canonicalQuestionProjectionSha256": "028a94d5915b1aacede8b54b5d8cfa514af8f7238578563e27b064ae37876a20",
+        "reviewedRowsCanonicalSha256": "98e8dac1931d670d984fbb16d82c20ae864f9ae304ee2c3e80f546192f0457c4"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 40,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 32,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 0,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-32-guided-evidence-staging.json",
+          "sha256": "38985918136a2731c4a2edfafd966ce87adebe97cfb6df3181cde07995a9270b",
+          "payloadSha256": "89176f3311fcc458bec793dd8c205e030489105d35183c824e8053670dd62188"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-32.ts",
+          "sha256": "9ddb43b12f352c6cafbe34894a1f01985eb3b9775fbce97aace5965022ba33e4"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-32/reading/set32-reading-content-v1.0.2.json",
+          "sha256": "ca0395448babaf4a6c63d34c50c82ee455dd5bddbeb01df1e753a68e3dfa3989"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "33d7e7178c52e2fea8312c7143c798b995a0c6d371e640475e46cf371fa15446",
+        "canonicalQuestionProjectionSha256": "3089694c0190faf2741df3ce6aa4ff5432ba9ad79e8672821d86fb4ddb318e1a",
+        "reviewedRowsCanonicalSha256": "381d7665ac77147c0b1fb7905ca27facb5b82d3ce0886a92a16023916c554ec9"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 40,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 40,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 33,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 2,
+      "failedQuestions": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-33-guided-evidence-staging.json",
+          "sha256": "d09b98de0085b50b8e3eb48c3d2bf7653e4b0260a0e815eea76f83d3d4193e54",
+          "payloadSha256": "6e0cc9aca00ba7adfc639366943b63db5066af53f02d27a8ed2764d331f53767"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-33.ts",
+          "sha256": "5d78774529168f12ead7852ff2579aa84fa9145d9c6905e5887e0cffc99cbf56"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-33/reading/set33-reading-content-v1.0.2.json",
+          "sha256": "5022e85d1d9a916f07c032c4759dcd38e5f7d4fe19ccd0eac78c0d190f4a4bfe"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "338691e48fbadda2121b5140c13db38f84d79d1ec18174d7c454f96fd5c27622",
+        "canonicalQuestionProjectionSha256": "be83eaa2f1bc7d5edeb163bb4c42cff199b8853aef9aaa80100fc2ece1531141",
+        "reviewedRowsCanonicalSha256": "48675f8534062a019c2d854b4fc2b09d3840a01f6c3252de6c6bde254c8595e8"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 38,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 34,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 0,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-34-guided-evidence-staging.json",
+          "sha256": "8c096f7a4c53e3e41f6ede11ea0fd3fbc97950a05e6ce25b33f560f1454a8bec",
+          "payloadSha256": "036bd4e132ee92a25cbe3dde12945ff54b36e67d11afb04f99025c742cfaa30d"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-34.ts",
+          "sha256": "aa45cb302e18367feaf550a80e02bda263eff7d0b6021c4d01dadf61a3762406"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-34/reading/set34-reading-content-v1.0.2.json",
+          "sha256": "cb9a144d4a8b07e40ab41a6b240627d54284018eff40977f858e92b660fdc32b"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "2d51243109f33e41ac0b0c417a5e1d8a518b8e1fcc57417a36d439842dd1f2b7",
+        "canonicalQuestionProjectionSha256": "b5bed5ca0d357f9592ffbab940f1f4ac0b5702f42c8923efeaf066541f8d6b32",
+        "reviewedRowsCanonicalSha256": "833d14325d735a976ba1bd097453db76bc4d8e0e819596fcbe2a019f93c5530a"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 40,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 35,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 3,
+      "failedQuestions": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-35-guided-evidence-staging.json",
+          "sha256": "151b2b4ef09d98200d6552a414ea3c5ea885ffba64038d78fd5c6a1f56355121",
+          "payloadSha256": "1de741298f783595f86b6b38e57946c35f6feb81e3b2d7506c9d7dd8a955b503"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-35.ts",
+          "sha256": "f98a9364e5cc8da0ed39515510754d70c6372f17ef587b97c537fae3f968b3fa"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-35/reading/set35-reading-content-v1.0.3.json",
+          "sha256": "7d7e5230bcdabe584494a3a40578e3fcd16eb9b4f3f1f10760f2003ec1ebbbe3"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "fa5a9ba27632b4413e7394fb53654bd253ba76dcb1cfe37ac6beed8aa265732d",
+        "canonicalQuestionProjectionSha256": "0ee3aa4e99ffa04a9c51e8cc864e848d3a8c0f79066c163290ad0d3958042b72",
+        "reviewedRowsCanonicalSha256": "cea5241758bc9a4a938b8a558870215ea099264707205b0769d4e30f5e68ce74"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 37,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 36,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 3,
+      "failedQuestions": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-36-guided-evidence-staging.json",
+          "sha256": "b2c211b33fee985173c49722fb689382931810f3c3c4987883a703d73a32b07d",
+          "payloadSha256": "17d8182b135dca2862e7bf24f0e6650e717a70044e3a5e7206c5c79bccbf6467"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-36.ts",
+          "sha256": "3fc32204f91ec67591fde557d808ad1af861a56c1829796bd9adbb71c0277356"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-36/reading/set36-reading-content-v1.0.3.json",
+          "sha256": "f78374ac7f7325447530837c55743f0ceee09d59c627593064c9c2b43786a872"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "0eba73bff6393fcec7698bc50c069722855afb507915f6c7fddeba6b804ad75e",
+        "canonicalQuestionProjectionSha256": "4c3ee87cfe52983bdb477d9633e812ec5c2c08bc3b7d4fed7d503dcec861ebc9",
+        "reviewedRowsCanonicalSha256": "c7f449cef3da5eec88bf2c4046636ea4544e77d5484fd2961d9477af2dbec145"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 37,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 37,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 2,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-37-guided-evidence-staging.json",
+          "sha256": "1daa3e39f68cf61b818164ab90d9b89a404700c315e0c1915cb6a13dace77533",
+          "payloadSha256": "6d239e4daa7ec04d64a818651dee7684b49785125144964acbf0a35a7a3b98a6"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-37.ts",
+          "sha256": "8135a715e023fda9a7300b8c7b5fb0a96bbb86782710a3e9040c58712bd5da39"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/reading/set37-reading-content-v1.0.5.json",
+          "sha256": "6a38de3a9dab334dc5c1c58244540d2f2628f5cc849741af7f8983d9b68b3c27"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "56149b7adca25a1cf5e1f4e3edeb63dd3ab6edbfca1d69e464a360b5e0b675d7",
+        "canonicalQuestionProjectionSha256": "b5bb3136761eb01f2d183546763ccfb1de46fd1fabc65db74829fedd527c88f6",
+        "reviewedRowsCanonicalSha256": "3166df182f1d3987805f1ee9470ecbb1f6ad08a8bf296b1f64849a1c1ea988da"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            23,
+            24,
+            25,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 38,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 38,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 9,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-38-guided-evidence-staging.json",
+          "sha256": "09edc7da1004c357c9f12abe757a85bebe7962e62515944ffaf905971851ea37",
+          "payloadSha256": "d8890ca426bdbf91dc5bf6e8a6dd825827950feb43c532453cfd81115940e186"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-38.ts",
+          "sha256": "644577368f18ed66c1fc7fa698ad6a72c159a35ffb2d5438f4b3fc3badc5b6fb"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-38/reading/set38-reading-content-v1.0.4.json",
+          "sha256": "8b6b6b37c64d9a298087286198ce7075bfbbda0c3a01cdb045e77efd0c05e753"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "3598bf5fbd9e6608f2aac4f9cc150fc1270d7264222162c9e7e099f54df6be71",
+        "canonicalQuestionProjectionSha256": "92ab6fe105ea619a9466502681bf47fb530ee800f4a15e89faf71b867c2e3f22",
+        "reviewedRowsCanonicalSha256": "12414f0d83a5dce659a4de248ae962cab001248a8ec2fbeed2f7dacda690cc05"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12,
+            14,
+            15,
+            16,
+            17,
+            18,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "count": 31,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 39,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 2,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-39-guided-evidence-staging.json",
+          "sha256": "75e2dcd4b9f13f31ffac3bb5bcef8f341802ca2ea6c04cb05f3a6e922eccbb31",
+          "payloadSha256": "0fada49c6f6b7a00349db6fcd841ba3bd3c9b0bade3ae594513fb8595045bd54"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-39.ts",
+          "sha256": "d840a88c9ba2804f5d60a90c632fef74a3887947a8fdb44de62fbff90ae0c264"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-39/reading/set39-reading-content-v1.0.3.json",
+          "sha256": "6bfbf65f89b11133eb8bbd5406fc8307d86e9a3f704ed7985782c087d14bc0ce"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "2a722f673f3d98fd5263115d70e7d79a64a7336f0930dc6dbed6afe8c3f8ec05",
+        "canonicalQuestionProjectionSha256": "9f872638af43954c3a145cdee83084f858bb9ff90dd4160e08d16a487f2b5216",
+        "reviewedRowsCanonicalSha256": "5f2d2d165eccf85b0397c0bfd1ef0fe3e495e48abbd68b963ac032016ca5cc90"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "count": 38,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    },
+    {
+      "set": 40,
+      "decision": "FAIL",
+      "reviewedRows": 40,
+      "substantiveRowsPassed": 15,
+      "failedQuestions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26
+      ],
+      "canonicalPartQuestionRanges": {
+        "5": {
+          "firstQuestion": 1,
+          "lastQuestion": 13,
+          "count": 13
+        },
+        "6": {
+          "firstQuestion": 14,
+          "lastQuestion": 26,
+          "count": 13
+        },
+        "7": {
+          "firstQuestion": 27,
+          "lastQuestion": 40,
+          "count": 14
+        }
+      },
+      "checks": {
+        "q1To40ExactlyOnce": true,
+        "responseKeyAndTypeMatchCanonical": true,
+        "canonicalPartResolvedForEveryResponseKey": true,
+        "acceptedResponseOrCorrectOptionMatchesCanonical": true,
+        "ledgerExplicitKeyMatchesCanonicalWhenPresent": true,
+        "literalExcerptOccursInLocatedCanonicalPassage": true,
+        "rationaleMatchesHashBoundSourceLedger": true,
+        "ledgerRowHashesMatchAll40": true,
+        "sourceAndArtifactHashesMatch": true,
+        "substantiveKeySupportAndRationaleSufficient": false
+      },
+      "hashBindings": {
+        "stagedArtifact": {
+          "path": "staging/ielts-guided-evidence-21-40/set-40-guided-evidence-staging.json",
+          "sha256": "407018ed8a5f2026812149a92ada5511e789abecac74d28f6ae4331ab740f6c2",
+          "payloadSha256": "9d9d7447dda6503c41eae80410744d199b7719100621cf3fff94393492e53d2e"
+        },
+        "canonicalMock": {
+          "path": "src/data/mocks/ielts-set-40.ts",
+          "sha256": "b1f20b6a0f1e2a10aada414a6520ac809de129a748b730c5c08249a512f673f6"
+        },
+        "readingContentArtifact": {
+          "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/reading/set40-reading-content-v1.0.5.json",
+          "sha256": "b286a7c3d94957b5a82c0757ae0cec56b7a3267e715a2579f4e0001c62f075f3"
+        },
+        "answerEvidenceLedgerCanonicalSha256": "a1233cfd53c59e630246ba3799c238818bc6a5a48cdf15ea81ada41344f44614",
+        "canonicalQuestionProjectionSha256": "50952d888e5d940c75628e069599eae9349d1a7d3b04d68e3c63281b447c27b5",
+        "reviewedRowsCanonicalSha256": "2c09f08a27494f55b696d6c409cc406fd9583f52911fe7ece6b32f0efa3f4c02"
+      },
+      "rowAuditContract": [
+        "question",
+        "canonicalPart",
+        "responseKey",
+        "responseType",
+        "canonicalKeySha256",
+        "sourceExcerptSha256",
+        "rationaleSha256",
+        "ledgerRowSha256",
+        "decision"
+      ],
+      "explicitLedgerKeysChecked": 0,
+      "findings": [
+        {
+          "code": "READING-RATIONALE-ASSERTION-ONLY",
+          "severity": "HIGH",
+          "questions": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            24,
+            25,
+            26
+          ],
+          "count": 25,
+          "detail": "The ledger/staged rationale only asserts support (or uses a bare verdict) instead of explaining the semantic link, contradiction, or absence needed to adjudicate the key. Under the fail-closed policy these rows are not substantively approved."
+        }
+      ]
+    }
+  ],
+  "requiredRemediation": "Replace assertion-only/bare-verdict rationales with question-specific explanations bound to the exact canonical passage and current key, regenerate the staging artifacts, and obtain a fresh independent hash-bound review. Existing PASS sets remain bound only to the hashes recorded here.",
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "eb1ccfe1122351cd9c4c4bdbc81b54e7f52ce35bbf985c22052fe155c778efec"
+  }
+}

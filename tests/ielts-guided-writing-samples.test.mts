@@ -46,7 +46,7 @@ test('guided Writing provides exactly two complete samples for each of the 20 IE
 
   assert.equal(sampleCount, 40);
   assert.equal(answers.size, 40);
-  assert.deepEqual(Object.keys(IELTS_GUIDED_WRITING_BY_SET), Array.from({ length: 19 }, (_, index) => `set-${index + 2}`));
+  assert.deepEqual(Object.keys(IELTS_GUIDED_WRITING_BY_SET), Array.from({ length: 39 }, (_, index) => `set-${index + 2}`));
 });
 
 test('each guided Writing prompt is bound to its executable mock Task 2', async () => {

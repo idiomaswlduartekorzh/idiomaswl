@@ -4,8 +4,8 @@ import type {
   IeltsListeningEvidenceRecord,
   IeltsReadingEvidenceRecord,
 } from './guided-evidence.ts';
-
-export const IELTS_GUIDED_MOCK_IDS = Array.from({ length: 20 }, (_, index) => `set-${index + 1}`) as readonly string[];
+export { IELTS_GUIDED_MOCK_IDS } from './guided-eligibility.ts';
+import { IELTS_GUIDED_MOCK_IDS } from './guided-eligibility.ts';
 
 export type IeltsGuidedAudioFile = {
   ready: boolean;

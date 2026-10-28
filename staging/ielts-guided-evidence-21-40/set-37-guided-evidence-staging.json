@@ -1,0 +1,1965 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 37,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-37.ts",
+      "sha256": "8135a715e023fda9a7300b8c7b5fb0a96bbb86782710a3e9040c58712bd5da39"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why cork is divided into grades?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Paragraph D"
+        },
+        "sourceExcerpt": "The rough bark taken from a tree for the first time is usually too irregular for the most exacting products. Later harvests become more uniform as the tree produces a smoother layer. Even then, each plank varies in thickness, density and visible defects. Sorting starts in the woodland and continues after processing. This is why cork should not be described as one homogeneous commodity: material that is unsuitable for a single-piece bottle closure may still be ground for composite products, insulation or flooring. A quality hierarchy reduces waste by matching different grades to different uses.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why cork is divided into grades?» y la clave es «Paragraph D». La evidencia dice «This is why cork should not be described as one homogeneous commodity: material that is unsuitable for a single-piece bottle closure may still be ground for composite products, insulation or flooring.». La coincidencia semántica se apoya en «cork»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports D; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "5e22b302d8a32aaff84a74c7e7b0281be5f00724d4299d2f6e4b01a89abc97fb",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why harvesting cork is compared with surgery?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Paragraph A"
+        },
+        "sourceExcerpt": "A cork oak is not cut down when its commercial material is collected. Workers remove part of the thick outer bark, while the living tissues that move water and nutrients remain on the tree. The exposed trunk looks startlingly red at first, but a new protective layer begins to form. This capacity for bark regrowth makes cork a renewable forest product, although renewal is neither immediate nor automatic. A careless cut can penetrate too deeply, and stripping at the wrong moment can leave the tree vulnerable. The harvest is therefore better understood as skilled surgery than as ordinary logging.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why harvesting cork is compared with surgery?» y la clave es «Paragraph A». La evidencia dice «A cork oak is not cut down when its commercial material is collected.». La coincidencia semántica se apoya en «cork»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "8a99757a9bdc7558498f01ebc0d153fae85a7ba87a4c2bd120b66ce911c90079",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Which paragraph warns that biological renewal still requires long-term management?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Paragraph F"
+        },
+        "sourceExcerpt": "Cork production also shapes the woodland around the tree. In traditional agroforestry mosaics, cork oaks may share space with grazing animals, crops and other tree species. Because a productive tree remains standing for repeated harvests, owners have an incentive to retain mature woodland rather than clear it after one crop. Yet commercial value alone does not guarantee good stewardship. Excessive grazing can prevent young trees from replacing old ones, while badly timed stripping can weaken the existing stock. Renewable harvest depends on patient management across generations, not merely on the biological ability to regrow bark.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph warns that biological renewal still requires long-term management?» y la clave es «Paragraph F». La evidencia dice «Renewable harvest depends on patient management across generations, not merely on the biological ability to regrow bark.». La coincidencia semántica se apoya en «biological», «management»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports F; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "14c2d9fa21afb6d519db8831c829d6bb6cfdbd6bfa97013e3b80532c22e2fd7a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Which paragraph outlines the order in which bark is detached?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Paragraph C"
+        },
+        "sourceExcerpt": "A specialist first makes vertical cuts through the cork and then joins them with shorter horizontal cuts. A flat edge is eased under the bark, allowing broad curved planks to be levered away without injuring the cork cambium. The easiest sheet to remove is not necessarily the best: haste can tear the material or scar the living surface. Around branches and irregular trunks, smaller pieces are taken instead of forcing a single large slab. Marks painted on the trunk record the harvest year, enabling crews to distinguish trees that are due from their neighbours.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph outlines the order in which bark is detached?» y la clave es «Paragraph C». La evidencia dice «A flat edge is eased under the bark, allowing broad curved planks to be levered away without injuring the cork cambium.». La coincidencia semántica se apoya en «bark»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "7a4c9b6696a8c09b1cf3525987e6fe7f06ad56ee2d2f4286e0fc2b269d82f75f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes how readiness is judged at the tree?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Paragraph B"
+        },
+        "sourceExcerpt": "Before an axe touches the trunk, harvesters judge whether the bark is ready to separate. Warm, dry conditions help the outer layer lift from the tissues beneath it; resistance at the first incision is a warning to stop. Age and trunk size also matter because young trees must first build a sufficiently thick shield. Once production has begun, another crop is not taken every year. Managers wait through a multi-year debarking interval so that a usable layer can develop. The calendar supplies a guide, but the tree's condition decides whether removal should proceed.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes how readiness is judged at the tree?» y la clave es «Paragraph B». La evidencia dice «The calendar supplies a guide, but the tree's condition decides whether removal should proceed.». La coincidencia semántica se apoya en «tree»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "4940beb8bf4823f2fa7773e76eab5b2381556a75240b8fb1dc975a44cef1af8d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Which paragraph presents outdoor storage as an assessment stage?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Paragraph E"
+        },
+        "sourceExcerpt": "Fresh planks contain moisture and retain the curve of the trunk. In a seasoning yard they are stacked above the soil with spaces for air to circulate. The period outdoors allows their moisture content to become more stable and exposes pieces that warp or decay. Processors later heat the cork in water, which cleans it, increases its flexibility and helps flatten the curve. The material is then rested again before trimming. Seasoning is not simply storage between harvest and manufacture; it is a stage in which the behaviour of the raw material becomes easier to assess.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph presents outdoor storage as an assessment stage?» y la clave es «Paragraph E». La evidencia dice «Seasoning is not simply storage between harvest and manufacture; it is a stage in which the behaviour of the raw material becomes easier to assess.». La coincidencia semántica se apoya en «storage», «stage»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports E; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "c453a7a985bea985e7d619da509586520af8e1b45e8955181d22d79b0eaf9740",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "fill",
+          "questionText": "The tissues that transport water and nutrients remain in the ______ during harvesting.",
+          "acceptedResponses": [
+            "tree"
+          ]
+        },
+        "sourceExcerpt": "A cork oak is not cut down when its commercial material is collected. Workers remove part of the thick outer bark, while the living tissues that move water and nutrients remain on the tree. The exposed trunk looks startlingly red at first, but a new protective layer begins to form. This capacity for bark regrowth makes cork a renewable forest product, although renewal is neither immediate nor automatic. A careless cut can penetrate too deeply, and stripping at the wrong moment can leave the tree vulnerable. The harvest is therefore better understood as skilled surgery than as ordinary logging.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The tissues that transport water and nutrients remain in the ______ during harvesting.» y acepta «tree». La oración fuente dice «Workers remove part of the thick outer bark, while the living tissues that move water and nutrients remain on the tree.». Esa oración contiene la respuesta y la conecta con «tissues», «water», «nutrients», «remain», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports tree; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "6d6d36d42b646efe9459c33a7656f84a71f658b6daa013c3747c2a7030ad9b56",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "Resistance during the initial cut tells workers to ______.",
+          "acceptedResponses": [
+            "stop"
+          ]
+        },
+        "sourceExcerpt": "Before an axe touches the trunk, harvesters judge whether the bark is ready to separate. Warm, dry conditions help the outer layer lift from the tissues beneath it; resistance at the first incision is a warning to stop. Age and trunk size also matter because young trees must first build a sufficiently thick shield. Once production has begun, another crop is not taken every year. Managers wait through a multi-year debarking interval so that a usable layer can develop. The calendar supplies a guide, but the tree's condition decides whether removal should proceed.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Resistance during the initial cut tells workers to ______.» y acepta «stop». La oración fuente dice «Warm, dry conditions help the outer layer lift from the tissues beneath it; resistance at the first incision is a warning to stop.». Esa oración contiene la respuesta y la conecta con «resistance», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports stop; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "1ac6054626db23221a4dd829dc8629223452a2edcad172af7c149bd7a3be81b1",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "Crews record the harvest year using marks on the ______.",
+          "acceptedResponses": [
+            "trunk"
+          ]
+        },
+        "sourceExcerpt": "A specialist first makes vertical cuts through the cork and then joins them with shorter horizontal cuts. A flat edge is eased under the bark, allowing broad curved planks to be levered away without injuring the cork cambium. The easiest sheet to remove is not necessarily the best: haste can tear the material or scar the living surface. Around branches and irregular trunks, smaller pieces are taken instead of forcing a single large slab. Marks painted on the trunk record the harvest year, enabling crews to distinguish trees that are due from their neighbours.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Crews record the harvest year using marks on the ______.» y acepta «trunk». La oración fuente dice «Around branches and irregular trunks, smaller pieces are taken instead of forcing a single large slab.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports trunk; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "d382c15a96bd4e1aa957cd922bf79ed524c81297f75abda353caf33de98e9a56",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "Cork unsuitable for whole closures can be used in ______ products.",
+          "acceptedResponses": [
+            "composite"
+          ]
+        },
+        "sourceExcerpt": "The rough bark taken from a tree for the first time is usually too irregular for the most exacting products. Later harvests become more uniform as the tree produces a smoother layer. Even then, each plank varies in thickness, density and visible defects. Sorting starts in the woodland and continues after processing. This is why cork should not be described as one homogeneous commodity: material that is unsuitable for a single-piece bottle closure may still be ground for composite products, insulation or flooring. A quality hierarchy reduces waste by matching different grades to different uses.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Cork unsuitable for whole closures can be used in ______ products.» y acepta «composite». La oración fuente dice «This is why cork should not be described as one homogeneous commodity: material that is unsuitable for a single-piece bottle closure may still be ground for composite products, insulation or flooring.». Esa oración contiene la respuesta y la conecta con «cork», «unsuitable», «products», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports composite; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "ae4431d3723e58c68342d17563c2952ff2103b0ea0c81aa84468b5356f7f8b44",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "Planks are raised above the ground in a ______.",
+          "acceptedResponses": [
+            "seasoning yard"
+          ]
+        },
+        "sourceExcerpt": "Fresh planks contain moisture and retain the curve of the trunk. In a seasoning yard they are stacked above the soil with spaces for air to circulate. The period outdoors allows their moisture content to become more stable and exposes pieces that warp or decay. Processors later heat the cork in water, which cleans it, increases its flexibility and helps flatten the curve. The material is then rested again before trimming. Seasoning is not simply storage between harvest and manufacture; it is a stage in which the behaviour of the raw material becomes easier to assess.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Planks are raised above the ground in a ______.» y acepta «seasoning yard». La oración fuente dice «In a seasoning yard they are stacked above the soil with spaces for air to circulate.». Esa oración contiene la respuesta y la conecta con «above», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports seasoning yard; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "190015c59f1379955b44c18e003d95a0840ca737a2f3bb8730cf52d44c977b37",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "Too much grazing can prevent the establishment of ______.",
+          "acceptedResponses": [
+            "young trees"
+          ]
+        },
+        "sourceExcerpt": "Cork production also shapes the woodland around the tree. In traditional agroforestry mosaics, cork oaks may share space with grazing animals, crops and other tree species. Because a productive tree remains standing for repeated harvests, owners have an incentive to retain mature woodland rather than clear it after one crop. Yet commercial value alone does not guarantee good stewardship. Excessive grazing can prevent young trees from replacing old ones, while badly timed stripping can weaken the existing stock. Renewable harvest depends on patient management across generations, not merely on the biological ability to regrow bark.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Too much grazing can prevent the establishment of ______.» y acepta «young trees». La oración fuente dice «Excessive grazing can prevent young trees from replacing old ones, while badly timed stripping can weaken the existing stock.». Esa oración contiene la respuesta y la conecta con «grazing», «prevent», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports young trees; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "760e60fd9b3b3c26ce164eb238eef8df068db5100562df2faa222d47ab147b57",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "A present failure to protect seedlings may produce a future shortage of ______.",
+          "acceptedResponses": [
+            "mature trees"
+          ]
+        },
+        "sourceExcerpt": "Demand for bottle closures once dominated the industry, but alternative closures created pressure to find broader markets. Producers responded by using granulated cork in construction, transport and design. Diversification can make a harvesting region less dependent on one product, although it cannot remove the long delay between a management decision and its consequences. A neglected seedling today may mean a shortage of mature trees decades later. The central lesson of cork forestry is therefore temporal: skilled removal, careful seasoning and inventive manufacturing operate on different schedules, all of which must fit the much slower life of the tree.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A present failure to protect seedlings may produce a future shortage of ______.» y acepta «mature trees». La oración fuente dice «A neglected seedling today may mean a shortage of mature trees decades later.». Esa oración contiene la respuesta y la conecta con «shortage», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports mature trees; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "96660b148074c09427938214adb92734221f5080167af594713d2ac1fb33e489",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "An orb web functions only as a device for trapping prey.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "An orb web is often pictured as a passive net, yet for its owner it is also an extended sensory surface. A struggling insect, a potential mate and a gust of wind all set silk moving. The spider, usually waiting at the hub or in a retreat, receives those movements through its legs. Because eyesight may contribute little at night, vibration can reveal where an event occurred and what kind of event it is. The difficulty is that several sources may act at once. Useful information must be recovered from a structure already trembling with environmental noise.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «An orb web functions only as a device for trapping prey.», mientras el pasaje dice «An orb web is often pictured as a passive net, yet for its owner it is also an extended sensory surface.». Ambos tratan «orb», «web», pero la proposición añade «functions», «only», «device», «trapping», «prey» donde la fuente especifica «often», «pictured», «passive», «net», «yet», «owner». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "1a1372668356d3cde7c94308008cb46a5daa029eff57f872219487c7e5cdf5ba",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Radial threads can help indicate the direction from which a vibration originated.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Signals do not spread uniformly across a web. Radial threads link the hub to the frame and can carry movement rapidly towards the spider, while the sticky spiral crosses those routes and helps restrain prey. Tension, thickness and the junctions between strands alter how strongly a pulse arrives. A signal entering near one radial line may reach the hub with a different pattern from an equal signal elsewhere. Thus the web's geometry contributes directional information. It is not a neutral cable that simply preserves whatever vibration was produced at the source.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Radial threads can help indicate the direction from which a vibration originated.» y el pasaje dice «Radial threads link the hub to the frame and can carry movement rapidly towards the spider, while the sticky spiral crosses those routes and helps restrain prey.». La fuente conserva la misma relación mediante «radial», «threads» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports TRUE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "aa0649a6fd741355fdab9f2c92db57d7c972b82d966f52c071c2202f44cf75ff",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Every species of spider uses one unique frequency to identify prey.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Different events tend to generate different mixtures of frequency, duration and rhythm, but no single frequency acts as a permanent label. The movements of a trapped fly change as it tires; wind can produce both slow swaying and sharper pulses; and courtship signals vary between species. The spider must interpret a combination rather than recognise one magic tone. Experiments show why broad claims are risky: a response observed on one web, under one tension, may not transfer unchanged to another. Signal identity emerges from the source and the transmitting structure together.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Every species of spider uses one unique frequency to identify prey.», mientras el pasaje dice «Different events tend to generate different mixtures of frequency, duration and rhythm, but no single frequency acts as a permanent label.». Ambos tratan «frequency», pero la proposición añade «every», «species», «spider», «uses», «unique», «identify» donde la fuente especifica «different», «events», «tend», «generate», «mixtures», «duration». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "2a51378135b45c4cdc55fb992779fc013b2fc04a61d0de4e7555647bc303aea8",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "The female receives an exact copy of the vibration produced by a courting male.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "A male approaching a female's web faces a communication problem. He must create a pattern that the female recognises as courtship rather than as the movement of prey. Repeated pulses and pauses can form a species-typical rhythm, but the route through the web may distort it. If wind noise masks part of the sequence, the male may repeat or intensify the display. The female's response is evidence that information survived transmission; it does not prove that the waveform at her legs was identical to the one produced by the male.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The female receives an exact copy of the vibration produced by a courting male.», mientras el pasaje dice «The female's response is evidence that information survived transmission; it does not prove that the waveform at her legs was identical to the one produced by the male.». Ambos tratan «female», «produced», «male», pero la proposición añade «receives», «exact», «copy», «vibration», «courting» donde la fuente especifica «response», «evidence», «information», «survived», «transmission», «prove». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "5a229914af2c46c418fb0df5c70a27ad86f7c7885ed04ced7542a29e3ebe9ada",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Controlled pulses allow researchers to compare transmission routes.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Researchers separate source from structure by introducing repeatable vibrations. A mechanical device can deliver the same controlled pulse at several contact points while a remote sensor measures what reaches the hub. Differences in arrival time and amplitude then reveal attenuation along particular routes. Alternatively, a pulse can be kept at one point while thread tension is adjusted. These designs create comparisons that a naturally struggling insect cannot provide. Their precision has a cost, however, because attaching equipment or changing tension may itself alter the web being measured.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Controlled pulses allow researchers to compare transmission routes.» y el pasaje dice «Researchers separate source from structure by introducing repeatable vibrations.». La fuente conserva la misma relación mediante «researchers» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports TRUE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "2de42c09991325365922d383d34d64d0aaef965063e1c4f6fe8c1d0f823392c5",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "Laser instruments record movement at every point of a web simultaneously.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "Laser-based instruments can record silk movement without touching it, reducing one form of disturbance. Even so, the beam samples selected locations rather than the entire three-dimensional structure. Laboratory frames also make webs easier to compare but may constrain the shapes spiders would build outdoors. Field recording preserves natural architecture and wind exposure, yet the source of every vibration is harder to identify. No method eliminates interpretation. Strong studies combine controlled trials with observations of intact webs and state clearly which inferences each design permits.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Laser instruments record movement at every point of a web simultaneously.», mientras el pasaje dice «Even so, the beam samples selected locations rather than the entire three-dimensional structure.». Ambos tratan la misma relación descrita en la pregunta, pero la proposición añade «laser», «instruments», «record», «movement», «every», «point» donde la fuente especifica «even», «beam», «samples», «selected», «locations», «rather». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "655ff3c1f07250833cf09fc4b931b5b53b47394893b13e0059cc1971bffc9d01",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "Web repair is carried out only to improve communication.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "The web is not fixed after construction. A spider can replace damaged silk, tighten some lines and remove others. These changes affect prey capture, but they may also tune the information reaching the animal. That possibility reverses a familiar assumption: instead of treating the web as an imperfect channel that the spider tolerates, it treats construction as part of sensing. Evidence remains incomplete because repair responds to hunger, weather and damage as well as communication. Nonetheless, behaviour and architecture cannot be cleanly separated.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Web repair is carried out only to improve communication.», mientras el pasaje dice «Evidence remains incomplete because repair responds to hunger, weather and damage as well as communication.». Ambos tratan «repair», «communication», pero la proposición añade «web», «carried», «out», «only», «improve» donde la fuente especifica «evidence», «remains», «incomplete», «because», «responds», «hunger». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports FALSE; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "b3b597547f31fec600d97730e49c3140ff1ea3bfed6bbe5d284d362eaab2e872",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "fill",
+          "questionText": "A web gives information about an event through movement received by the spider’s ______.",
+          "acceptedResponses": [
+            "legs"
+          ]
+        },
+        "sourceExcerpt": "An orb web is often pictured as a passive net, yet for its owner it is also an extended sensory surface. A struggling insect, a potential mate and a gust of wind all set silk moving. The spider, usually waiting at the hub or in a retreat, receives those movements through its legs. Because eyesight may contribute little at night, vibration can reveal where an event occurred and what kind of event it is. The difficulty is that several sources may act at once. Useful information must be recovered from a structure already trembling with environmental noise.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A web gives information about an event through movement received by the spider’s ______.» y acepta «legs». La oración fuente dice «The spider, usually waiting at the hub or in a retreat, receives those movements through its legs.». Esa oración contiene la respuesta y la conecta con «through», «spider», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports legs; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "195e5cbb427949ee0e521a3ed170e12c48d8d23adcc9930dc871b9fa2ebfc334",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "fill",
+          "questionText": "Pulse strength at the hub is altered by tension, thickness and ______ between strands.",
+          "acceptedResponses": [
+            "junctions"
+          ]
+        },
+        "sourceExcerpt": "Signals do not spread uniformly across a web. Radial threads link the hub to the frame and can carry movement rapidly towards the spider, while the sticky spiral crosses those routes and helps restrain prey. Tension, thickness and the junctions between strands alter how strongly a pulse arrives. A signal entering near one radial line may reach the hub with a different pattern from an equal signal elsewhere. Thus the web's geometry contributes directional information. It is not a neutral cable that simply preserves whatever vibration was produced at the source.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Pulse strength at the hub is altered by tension, thickness and ______ between strands.» y acepta «junctions». La oración fuente dice «Tension, thickness and the junctions between strands alter how strongly a pulse arrives.». Esa oración contiene la respuesta y la conecta con «pulse», «tension», «thickness», «between», «strands», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The completion sentence reproduces the three-part relation in paragraph B; tension and thickness are supplied, so junctions is the only source word completing the grammar and meaning.",
+        "ledgerRowSha256": "24fdb82f3a292b028f56be24c4d8dfe51f79d80940f3678951891d0af41d79a5",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "fill",
+          "questionText": "A courting male may repeat his display when parts are hidden by ______.",
+          "acceptedResponses": [
+            "wind noise"
+          ]
+        },
+        "sourceExcerpt": "A male approaching a female's web faces a communication problem. He must create a pattern that the female recognises as courtship rather than as the movement of prey. Repeated pulses and pauses can form a species-typical rhythm, but the route through the web may distort it. If wind noise masks part of the sequence, the male may repeat or intensify the display. The female's response is evidence that information survived transmission; it does not prove that the waveform at her legs was identical to the one produced by the male.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «A courting male may repeat his display when parts are hidden by ______.» y acepta «wind noise». La oración fuente dice «If wind noise masks part of the sequence, the male may repeat or intensify the display.». Esa oración contiene la respuesta y la conecta con «male», «repeat», «display», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports wind noise; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "69e4df6d0cf3a765f24722fcec0378dda4d3cfb4cfb27a0d27120505b9c45efe",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "Scientists deliver an identical disturbance at different ______.",
+          "acceptedResponses": [
+            "contact points"
+          ]
+        },
+        "sourceExcerpt": "Researchers separate source from structure by introducing repeatable vibrations. A mechanical device can deliver the same controlled pulse at several contact points while a remote sensor measures what reaches the hub. Differences in arrival time and amplitude then reveal attenuation along particular routes. Alternatively, a pulse can be kept at one point while thread tension is adjusted. These designs create comparisons that a naturally struggling insect cannot provide. Their precision has a cost, however, because attaching equipment or changing tension may itself alter the web being measured.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Scientists deliver an identical disturbance at different ______.» y acepta «contact points». La oración fuente dice «A mechanical device can deliver the same controlled pulse at several contact points while a remote sensor measures what reaches the hub.». Esa oración contiene la respuesta y la conecta con «deliver», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports contact points; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "a2deee45cb6a4d28f740da50174edfc9bc9fe5f75ff4c138e3bea5d9ae47bdcd",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "Laboratory frames may limit the ______ that spiders construct.",
+          "acceptedResponses": [
+            "shapes"
+          ]
+        },
+        "sourceExcerpt": "Laser-based instruments can record silk movement without touching it, reducing one form of disturbance. Even so, the beam samples selected locations rather than the entire three-dimensional structure. Laboratory frames also make webs easier to compare but may constrain the shapes spiders would build outdoors. Field recording preserves natural architecture and wind exposure, yet the source of every vibration is harder to identify. No method eliminates interpretation. Strong studies combine controlled trials with observations of intact webs and state clearly which inferences each design permits.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Laboratory frames may limit the ______ that spiders construct.» y acepta «shapes». La oración fuente dice «Laboratory frames also make webs easier to compare but may constrain the shapes spiders would build outdoors.». Esa oración contiene la respuesta y la conecta con «laboratory», «frames», «spiders», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports shapes; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "35f7b4a8298f6dfffba24a4b8fbd7c36482b5e3719e51415300f9852cb5d4c60",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "Engineers can treat variation as data when geometry is analysed together with the ______.",
+          "acceptedResponses": [
+            "signal"
+          ]
+        },
+        "sourceExcerpt": "Engineers interested in lightweight sensors study webs because a distributed network can reveal both a disturbance and its location. The biological example does not offer a design ready to copy. Silk is variable, the builder continuously maintains it, and interpretation occurs in a nervous system rather than in the material alone. Its value lies in a principle: a structure may carry information precisely because its components respond differently. In an artificial network, as in a web, variation can be a source of data if the geometry and the signal are analysed together.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Engineers can treat variation as data when geometry is analysed together with the ______.» y acepta «signal». La oración fuente dice «In an artificial network, as in a web, variation can be a source of data if the geometry and the signal are analysed together.». Esa oración contiene la respuesta y la conecta con «variation», «data», «geometry», «analysed», «together», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph H contains the exact pair “the geometry and the signal”; because geometry is already printed in the stem, signal is uniquely required.",
+        "ledgerRowSha256": "f0eefcc8024f3807f767f226713e33456bc4f0258a90432292d7a9ccfaada86c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "Paragraph B",
+          "correctOptionIndex": 3,
+          "correctOptionText": "People provide purpose but may reconstruct events"
+        },
+        "sourceExcerpt": "In a time diary, participants record activities in intervals and often add location, companions or a secondary activity. The method allows people to describe purpose: a still hour might be meditation, illness or waiting for a repair. Diaries can also capture care and domestic work that leave few digital traces. Their weakness is not simply forgetfulness. Completing frequent entries imposes a recall burden, while completing them later encourages reconstruction according to routine. Participants may round times, merge short events or omit actions they consider trivial.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph B» y la clave es «People provide purpose but may reconstruct events». La evidencia dice «The method allows people to describe purpose: a still hour might be meditation, illness or waiting for a repair.». La coincidencia semántica se apoya en «people», «purpose»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports iv; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "a5436eaf349e785aedba3a220dc8a161d4dff3f267332f6ce3ce39f4c6d8b273",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Immediate prompts create their own missing data"
+        },
+        "sourceExcerpt": "Experience-sampling systems ask brief questions at selected times, usually through a phone. A prompt close to an event can reduce the distance between action and report, and it can collect mood as well as activity. However, an alert may interrupt the very activity being studied. People also ignore prompts when busy, producing missing intervals that are not random. If a commuter answers reliably but a nurse cannot respond during demanding work, the resulting record may exaggerate one kind of day and underrepresent another.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «Immediate prompts create their own missing data». La evidencia dice «People also ignore prompts when busy, producing missing intervals that are not random.». La coincidencia semántica se apoya en «prompts», «missing»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports vii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "0a7694b6907a4755cd0c79d1b29dcaa8188758eb69dc180d332db994dbd4b63e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Devices observe patterns, not activities"
+        },
+        "sourceExcerpt": "Passive sensors appear to avoid reporting effort. Accelerometers register movement; location services trace changes of place; wearable cameras sample scenes. None observes an activity category directly. Little movement could indicate desk work, sleep or sitting on a bus, while a journey recorded by location does not disclose its purpose. Algorithms infer labels from patterns, so coding rules become part of the measurement. A model trained on one population may misclassify routines organised differently elsewhere.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «Devices observe patterns, not activities». La evidencia dice «Algorithms infer labels from patterns, so coding rules become part of the measurement.». La coincidencia semántica se apoya en «patterns»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports ii; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "ba4646901404a113ab922fe4736058d519d2bc3c6b75f3b28008d86371ba6a47",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 8,
+          "correctOptionText": "Different measurements can truthfully disagree"
+        },
+        "sourceExcerpt": "When a diary and a sensor disagree, it is tempting to treat the device as the objective referee. That conclusion is often mistaken. A participant may correctly report “caring for a parent” while an accelerometer records sitting; the two measures describe different dimensions of the same period. Validation should ask whether a method measures the concept required by the study, not merely whether it matches another instrument. Disagreement can be diagnostic, revealing where categories, purposes and bodily movement diverge.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «Different measurements can truthfully disagree». La evidencia dice «When a diary and a sensor disagree, it is tempting to treat the device as the objective referee.». La coincidencia semántica se apoya en «disagree»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports ix; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e9476cd49e958d0530c3518f1e6d5b565adf86b678bac7213568a952c7bc2790",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "Paragraph H",
+          "correctOptionIndex": 5,
+          "correctOptionText": "The appropriate method depends on purpose and acceptable costs"
+        },
+        "sourceExcerpt": "The attraction of passive sensing is understandable: it promises a continuous record without a participant repeatedly stopping to write. But continuity is not neutrality. Devices are better at some bodies, settings and behaviours than others, and their categories embody assumptions about a worthwhile use of time. Diaries make interpretation visible because a person supplies it; algorithms can hide interpretation behind a numerical label. The best method is therefore not the one that produces the most data, but the one whose errors, intrusions and definitions are acceptable for a stated social purpose.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph H» y la clave es «The appropriate method depends on purpose and acceptable costs». La evidencia dice «The best method is therefore not the one that produces the most data, but the one whose errors, intrusions and definitions are acceptable for a stated social purpose.». La coincidencia semántica se apoya en «method», «purpose», «acceptable»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph H uniquely supports vi; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "f64323fd62d85fc11410767ac3117299474da5cafbbec04cb79e4715bef333fc",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Why are time-use categories described as conceptual choices?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Real activities overlap and must be assigned to units."
+        },
+        "sourceExcerpt": "Governments and researchers want to know how people divide a day among paid work, care, travel, rest and leisure. Those categories inform transport planning, labour policy and estimates of unpaid activity. Yet daily life does not arrive already labelled. A person may supervise a child while answering work messages, or travel while listening to a lecture. Any time-use method must turn overlapping experience into countable units. The apparent precision of a table therefore begins with a conceptual choice about what counts as the main activity.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why are time-use categories described as conceptual choices?» y la clave es «Real activities overlap and must be assigned to units.». La evidencia dice «Any time-use method must turn overlapping experience into countable units.». La coincidencia semántica se apoya en «time», «use», «must», «units»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e569c74a700b6d23c9199dff9573f30d3575a020fdab6446777369afd7e9d359",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "What difficulty with experience sampling does the writer emphasise?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Non-response may be related to the activity being measured."
+        },
+        "sourceExcerpt": "Experience-sampling systems ask brief questions at selected times, usually through a phone. A prompt close to an event can reduce the distance between action and report, and it can collect mood as well as activity. However, an alert may interrupt the very activity being studied. People also ignore prompts when busy, producing missing intervals that are not random. If a commuter answers reliably but a nurse cannot respond during demanding work, the resulting record may exaggerate one kind of day and underrepresent another.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What difficulty with experience sampling does the writer emphasise?» y la clave es «Non-response may be related to the activity being measured.». La evidencia dice «Experience-sampling systems ask brief questions at selected times, usually through a phone.». La coincidencia semántica se apoya en «experience», «sampling»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "367cca9e6f11eea1d421dc310f6db603b8b6b81f6deca64b440d6ae64a43c21f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "What does the example of caring for a parent demonstrate?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Two methods may capture different dimensions of one period."
+        },
+        "sourceExcerpt": "When a diary and a sensor disagree, it is tempting to treat the device as the objective referee. That conclusion is often mistaken. A participant may correctly report “caring for a parent” while an accelerometer records sitting; the two measures describe different dimensions of the same period. Validation should ask whether a method measures the concept required by the study, not merely whether it matches another instrument. Disagreement can be diagnostic, revealing where categories, purposes and bodily movement diverge.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What does the example of caring for a parent demonstrate?» y la clave es «Two methods may capture different dimensions of one period.». La evidencia dice «A participant may correctly report “caring for a parent” while an accelerometer records sitting; the two measures describe different dimensions of the same period.». La coincidencia semántica se apoya en «caring», «parent», «two», «different», «dimensions», «period»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports D; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "8fce86a6cff1efdf896d2b54ad4820a4304b15a51b6240e1b4ac230090c5fa01",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "What is the writer’s main recommendation for mixed designs?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Collect only streams needed for a defined question."
+        },
+        "sourceExcerpt": "Combining methods can reduce some weaknesses if their roles are specified in advance. A diary may supply purpose, a sensor may identify forgotten transitions, and a follow-up interview may explain unusual gaps. This is not a licence to collect everything. Each additional stream increases participant burden, privacy risk and the analyst's opportunity to choose a convenient interpretation. A defensible mixed design begins with a limited question and retains only data needed to answer it.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the writer’s main recommendation for mixed designs?» y la clave es «Collect only streams needed for a defined question.». La evidencia dice «A defensible mixed design begins with a limited question and retains only data needed to answer it.». La coincidencia semántica se apoya en «mixed», «only», «needed», «question»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "15a5b25ed9904934cd237a9d0ac3a27f50fc4d89743f57c670b5f79f290d51e8",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "A diary can distinguish stillness caused by",
+          "correctOptionIndex": 5,
+          "correctOptionText": "meditation, illness or waiting."
+        },
+        "sourceExcerpt": "In a time diary, participants record activities in intervals and often add location, companions or a secondary activity. The method allows people to describe purpose: a still hour might be meditation, illness or waiting for a repair. Diaries can also capture care and domestic work that leave few digital traces. Their weakness is not simply forgetfulness. Completing frequent entries imposes a recall burden, while completing them later encourages reconstruction according to routine. Participants may round times, merge short events or omit actions they consider trivial.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «A diary can distinguish stillness caused by» y la clave es «meditation, illness or waiting.». La evidencia dice «The method allows people to describe purpose: a still hour might be meditation, illness or waiting for a repair.». La coincidencia semántica se apoya en «meditation», «illness», «waiting»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports F; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "3c7281250f47a865885ef98c121a06701b43e31aadf89ebc26830d01cf05bfc3",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "Ignored phone prompts may",
+          "correctOptionIndex": 0,
+          "correctOptionText": "produce missing intervals associated with demanding work."
+        },
+        "sourceExcerpt": "Experience-sampling systems ask brief questions at selected times, usually through a phone. A prompt close to an event can reduce the distance between action and report, and it can collect mood as well as activity. However, an alert may interrupt the very activity being studied. People also ignore prompts when busy, producing missing intervals that are not random. If a commuter answers reliably but a nurse cannot respond during demanding work, the resulting record may exaggerate one kind of day and underrepresent another.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Ignored phone prompts may» y la clave es «produce missing intervals associated with demanding work.». La evidencia dice «People also ignore prompts when busy, producing missing intervals that are not random.». La coincidencia semántica se apoya en «prompts», «missing», «intervals»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "954ec0af207aadf2907370530a3a2e8d6aa5afe9c9275c7d73ce117c20d1652e",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "An algorithm trained on one population may",
+          "correctOptionIndex": 7,
+          "correctOptionText": "misclassify routines organised differently."
+        },
+        "sourceExcerpt": "Passive sensors appear to avoid reporting effort. Accelerometers register movement; location services trace changes of place; wearable cameras sample scenes. None observes an activity category directly. Little movement could indicate desk work, sleep or sitting on a bus, while a journey recorded by location does not disclose its purpose. Algorithms infer labels from patterns, so coding rules become part of the measurement. A model trained on one population may misclassify routines organised differently elsewhere.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «An algorithm trained on one population may» y la clave es «misclassify routines organised differently.». La evidencia dice «A model trained on one population may misclassify routines organised differently elsewhere.». La coincidencia semántica se apoya en «trained», «population», «misclassify», «routines», «organised», «differently»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports H; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "86cb69db75f91bfc42019cf7840333daaa3ab00290257634e2eea2736d1b22c7",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "Blurring images and deleting segments can",
+          "correctOptionIndex": 2,
+          "correctOptionText": "protect privacy while reducing the evidence retained."
+        },
+        "sourceExcerpt": "Device records can expose transitions that a diary smooths away, but increased resolution should not be confused with completeness. A camera may be covered, a battery may fail and an indoor location signal may disappear. Sensors worn by one person also capture fragments of other people's lives. Those bystanders did not necessarily consent to being recorded. Researchers can blur images, remove sound and let participants delete sensitive segments, but each protection also changes the evidence available for analysis.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Blurring images and deleting segments can» y la clave es «protect privacy while reducing the evidence retained.». La evidencia dice «Researchers can blur images, remove sound and let participants delete sensitive segments, but each protection also changes the evidence available for analysis.». La coincidencia semántica se apoya en «images», «segments», «evidence»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "e33c0cf6dad741640ae2d80a2b0c1212499ebf4493f7f9efa3eec83024c48993",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "A good validation study should",
+          "correctOptionIndex": 4,
+          "correctOptionText": "test whether a method measures the intended concept."
+        },
+        "sourceExcerpt": "When a diary and a sensor disagree, it is tempting to treat the device as the objective referee. That conclusion is often mistaken. A participant may correctly report “caring for a parent” while an accelerometer records sitting; the two measures describe different dimensions of the same period. Validation should ask whether a method measures the concept required by the study, not merely whether it matches another instrument. Disagreement can be diagnostic, revealing where categories, purposes and bodily movement diverge.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «A good validation study should» y la clave es «test whether a method measures the intended concept.». La evidencia dice «Validation should ask whether a method measures the concept required by the study, not merely whether it matches another instrument.». La coincidencia semántica se apoya en «validation», «study», «whether», «method», «measures», «concept»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports E; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "6753dde06918c94acab43b072798b87dc7f9fafaae42083650a1e31e6f8759ec",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/reading/set37-reading-content-v1.0.5.json",
+        "sha256": "6a38de3a9dab334dc5c1c58244540d2f2628f5cc849741af7f8983d9b68b3c27"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "56149b7adca25a1cf5e1f4e3edeb63dd3ab6edbfca1d69e464a360b5e0b675d7",
+      "canonicalQuestionProjectionSha256": "5f3b738076b02ffe8b05eb73ddcb1411b485ce795d09b7bcedcc2062a1f01d1e"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Price"
+          ]
+        },
+        "evidenceSegment": "s37-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "It is Price — P-R-I-C-E. The online form somehow recorded Pryce, so please correct that.",
+        "timecode": {
+          "startFrame": 3439776,
+          "endFrame": 8611778,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999456,
+          "endSeconds": 195.278413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5c12e9110c91f677a2a6ae7610040919cb62298dffcd466ccbfc3b581f027361",
+        "planSegmentTextSha256": "fac477ecc51f7950a24971b50a34fa1ec539b1658570d19a5582e2b3e0d92da7"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Machine model: Alder ______",
+          "acceptedResponses": [
+            "210"
+          ]
+        },
+        "evidenceSegment": "s37-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The label under the carrying handle says Alder 210. It is not the newer 310 model that has an automatic thread cutter.",
+        "timecode": {
+          "startFrame": 3439776,
+          "endFrame": 8611778,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999456,
+          "endSeconds": 195.278413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "70d206b36b7a20dfe585cc4e264164d6a8124471d15f5bdd87163c8b6abe9dd8",
+        "planSegmentTextSha256": "5180ccfa182a5297c6c8f08ddfa9e4a397a5a94ef6fe8cbe75161d69779702dd"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Main problem: uneven ______",
+          "acceptedResponses": [
+            "stitches"
+          ]
+        },
+        "evidenceSegment": "s37-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The machine still moves, but the stitches alternate between very short and unusually long. The needle itself was replaced last month. I mostly use the machine for ordinary clothes, never commercial work, and it has not been dropped or exposed to water.",
+        "timecode": {
+          "startFrame": 3439776,
+          "endFrame": 8611778,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999456,
+          "endSeconds": 195.278413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2a93d85178fa1f08af58723f099e104ad65b391c970b7099d05b9f0fff1cdd7c",
+        "planSegmentTextSha256": "74961e1a434f83519ecbda3bd0bd9194dcf69554deada5f208c3e71983b5ade2"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Thread breaks beside the ______",
+          "acceptedResponses": [
+            "tension dial"
+          ]
+        },
+        "evidenceSegment": "s37-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The break happens where the thread passes beside the tension dial. I first suspected the needle, but the snapped end is always higher up.",
+        "timecode": {
+          "startFrame": 3439776,
+          "endFrame": 8611778,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999456,
+          "endSeconds": 195.278413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8d66b3b4b918b91a905577f85ad1b3ac91c2a2a9e46aa0d91b6b209cf5d8faed",
+        "planSegmentTextSha256": "d3272f64de1b7a80a2ebe30257aff7f8037b6441354c023c3308985b9c64de22"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Preferred appointment: Tuesday ______",
+          "acceptedResponses": [
+            "14th",
+            "14",
+            "fourteenth"
+          ]
+        },
+        "evidenceSegment": "s37-p1-t012",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "I cannot manage Monday the thirteenth, but Tuesday the fourteenth is free after ten in the morning. Please keep my neighbour’s number as a backup if I step out briefly.",
+        "timecode": {
+          "startFrame": 3439776,
+          "endFrame": 8611778,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999456,
+          "endSeconds": 195.278413,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "93a61571db042aa1667a4c4fcc584ac1de8ab77c7a4238bfe82b15dafcf88f9a",
+        "planSegmentTextSha256": "20e25f48f354532d155d7da397d426040b15c9806c8144fe4934b4185bba1ecc"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Collection charge: £______",
+          "acceptedResponses": [
+            "18",
+            "eighteen"
+          ]
+        },
+        "evidenceSegment": "s37-p1-t015",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "Home collection costs eighteen pounds. The twenty-five-pound figure applies only outside Sheffield. You mentioned the bus on your enquiry. Is carrying the case the deciding issue?",
+        "timecode": {
+          "startFrame": 8636033,
+          "endFrame": 9643345,
+          "sampleRateHz": 44100,
+          "startSeconds": 195.828413,
+          "endSeconds": 218.669955,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4e30c5b6d6034f73a0e61bf950fcb1700d777ddb3a7177e7d37ea76a6a413138",
+        "planSegmentTextSha256": "0546a1fbeaad93e43f3759391c42a16df1baff172648ae3565122958771e1fd2"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "mcq",
+          "questionText": "Why does Eleanor choose home collection?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the machine is difficult to carry"
+        },
+        "evidenceSegment": "s37-p1-t016",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The workshop drop-off is cheaper, but the case is awkward on the bus, so home collection is the sensible choice. How soon would you complete the initial inspection, before any repair begins?",
+        "timecode": {
+          "startFrame": 11828490,
+          "endFrame": 15087664,
+          "sampleRateHz": 44100,
+          "startSeconds": 268.219728,
+          "endSeconds": 342.1239,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "165eefdc7281c66c579e061e72d86d0dbce5e81a339a6a960480d218c0ddfb40",
+        "planSegmentTextSha256": "aa43b4f28f72dd75dff280f2590cc235186ce3bebd6335863a76424555e44709"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "mcq",
+          "questionText": "How long will the initial inspection take?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "three working days"
+        },
+        "evidenceSegment": "s37-p1-t017",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The full repair could take a week, but the initial inspection is normally completed within three working days.",
+        "timecode": {
+          "startFrame": 11828490,
+          "endFrame": 15087664,
+          "sampleRateHz": 44100,
+          "startSeconds": 268.219728,
+          "endSeconds": 342.1239,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1bb6575b3431949e9c81b69519da03ea0aa01e4f8e3338e16c0d31fc570c44aa",
+        "planSegmentTextSha256": "917dfa756f2936f095cf343e35e86d9458e6642f025d264fa3c9ba45d6948037"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "mcq",
+          "questionText": "What will Hugh send before any extra work begins?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "a written estimate"
+        },
+        "evidenceSegment": "s37-p1-t019",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Once the engineer has opened the casing, I will email a written estimate before any additional work is authorised.",
+        "timecode": {
+          "startFrame": 11828490,
+          "endFrame": 15087664,
+          "sampleRateHz": 44100,
+          "startSeconds": 268.219728,
+          "endSeconds": 342.1239,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b35d75307f0d61feee40930845b429e486d0659316c9da2f900073c47821c669",
+        "planSegmentTextSha256": "d6e3d597aa5c1e3299bfe29b33881f4c9a30cb3921df1bef9fb7b3c0489210b7"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "mcq",
+          "questionText": "Which item should Eleanor bring separately?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the bobbin case"
+        },
+        "evidenceSegment": "s37-p1-t021",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Leave the extension table at home, but place the loose bobbin case in a labelled envelope so it does not disappear inside the cover.",
+        "timecode": {
+          "startFrame": 11828490,
+          "endFrame": 15087664,
+          "sampleRateHz": 44100,
+          "startSeconds": 268.219728,
+          "endSeconds": 342.1239,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "db7eec79bab0a01247d78b8fcc1e7a27e4863bc7e77fb74d5db9391944801799",
+        "planSegmentTextSha256": "8aae9171d641ccb7febf5353c889ec334c60c3deb6297e6989d1777bdb0b8d42"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "11  Tool store",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "s37-p2-t002",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "For the tool store, use the small shed immediately west of the middle lock pound, reached from the towpath before the footbridge.",
+        "timecode": {
+          "startFrame": 18558340,
+          "endFrame": 23332635,
+          "sampleRateHz": 44100,
+          "startSeconds": 420.824036,
+          "endSeconds": 529.084694,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4b63402d8f20bab10480178b1c3aa1bcfd4b39411470203d79c85eb355d5d62c",
+        "planSegmentTextSha256": "26200ec6d18d904ab5df037e96d6716045b9c4c95f83b14df2f880d40b56a7da"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "12  Upper gate work area",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "s37-p2-t005",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The upper gate work area is beyond the footbridge at its north-eastern end, inside the fenced strip beside the top gate.",
+        "timecode": {
+          "startFrame": 18558340,
+          "endFrame": 23332635,
+          "sampleRateHz": 44100,
+          "startSeconds": 420.824036,
+          "endSeconds": 529.084694,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3ac6108aa8120d1aeba4ac18dcc11b7e22ec938554d824bec7ab3733b41afe67",
+        "planSegmentTextSha256": "97e51972083ede04e4e11f7f1a262f84f0b6764f1c3485b48b11e9896502e3d6"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "13  Spillway viewpoint",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "s37-p2-t008",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The spillway viewpoint stands at the far western edge, where the short gravel spur ends beside the overflow channel.",
+        "timecode": {
+          "startFrame": 18558340,
+          "endFrame": 23332635,
+          "sampleRateHz": 44100,
+          "startSeconds": 420.824036,
+          "endSeconds": 529.084694,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e9f84c52af98b6cf0fda080db94e26e7191f1946bbdfd877b1b59ff75b06a0d5",
+        "planSegmentTextSha256": "33876c95bb3b196322aa84b0224090f08b8065c006a8b35dd87769f5ccfe9714"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "14  Sign-in tent",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "s37-p2-t011",
+        "renderedChunk": "chunk-09",
+        "audiblePhrase": "The sign-in tent is just inside the south entrance, between the gate and the first bend in the towpath, not beside the café.",
+        "timecode": {
+          "startFrame": 18558340,
+          "endFrame": 23332635,
+          "sampleRateHz": 44100,
+          "startSeconds": 420.824036,
+          "endSeconds": 529.084694,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "504ce8c2bd6e89483a914b00ecdbc1e16322938898022abb5da451a8d3bad77b",
+        "planSegmentTextSha256": "0b1fb11a2e53095af708b4db9a1e5e841406ec9e50e6f613ecb7e5fd8a4251f4"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "15  Rest area",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "evidenceSegment": "s37-p2-t014",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The volunteer rest area occupies the grassy rectangle east of the third chamber, opposite the middle pound.",
+        "timecode": {
+          "startFrame": 23351157,
+          "endFrame": 25918685,
+          "sampleRateHz": 44100,
+          "startSeconds": 529.504694,
+          "endSeconds": 587.725283,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "73c07d301dae85212bfa41fea9a2cc2ed9388c04d16e725bf75b97c93f4af436",
+        "planSegmentTextSha256": "df9accaaa4449e6ea88ad19bca56bb98a4378228f0b2a07ad1381e4d99b61fdc"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "16  Lower chamber",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "s37-p2-t017",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The lower chamber is the first broad basin reached when you enter from the south and follow the towpath uphill.",
+        "timecode": {
+          "startFrame": 23351157,
+          "endFrame": 25918685,
+          "sampleRateHz": 44100,
+          "startSeconds": 529.504694,
+          "endSeconds": 587.725283,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "926cbe5e07716b8ac8da9244162c0e9748b00d43c271f159f5ebee8b4d9cf9dd",
+        "planSegmentTextSha256": "823f95e86e99f169e7f6e51dd952b7caf202de09750316c6031296c2cba5c0c7"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "17  removing litter from the towpath",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Team E"
+        },
+        "evidenceSegment": "s37-p2-t020",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Team E begins with litter removal along the lower towpath, working uphill in pairs.",
+        "timecode": {
+          "startFrame": 28098090,
+          "endFrame": 32643749,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.144898,
+          "endSeconds": 740.221066,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "65d39825f79f5e3f608bc56b0b40d2e2ba45b2bb2a951b5eab80eeaf096bb52a",
+        "planSegmentTextSha256": "7cb656502518b7f723635ab25ff3971eb3df699dc6f76e265c43e41a7f04eba8"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "18  repainting safety rails",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Team G"
+        },
+        "evidenceSegment": "s37-p2-t023",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "The safety-rail painting is assigned to Team G, after surfaces have dried.",
+        "timecode": {
+          "startFrame": 28098090,
+          "endFrame": 32643749,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.144898,
+          "endSeconds": 740.221066,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6e4f180dc74ded2733d6f4357c88e668cc834ddb399d7caf68dd13e07ae4a85f",
+        "planSegmentTextSha256": "1314a274edfad44b278f4e8135595a735c64dfb8e70d03513d05ca70a4f4dc57"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "19  recording visitor numbers",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Team B"
+        },
+        "evidenceSegment": "s37-p2-t026",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Team B records visitor numbers at the crossing rather than at the entrance.",
+        "timecode": {
+          "startFrame": 28098090,
+          "endFrame": 32643749,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.144898,
+          "endSeconds": 740.221066,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1d86cb60e7c2dee32743fa24bddef9c21ff609d09451aba6b0306176f2a0e52a",
+        "planSegmentTextSha256": "2c63586d69a5a5979f43f048b1b3d6b74538219bc529041a95ae2732c89a69ae"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "20  checking wildlife screens",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Team D"
+        },
+        "evidenceSegment": "s37-p2-t029",
+        "renderedChunk": "chunk-12",
+        "audiblePhrase": "Team D checks the temporary wildlife screens and reports gaps without moving the stakes.",
+        "timecode": {
+          "startFrame": 28098090,
+          "endFrame": 32643749,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.144898,
+          "endSeconds": 740.221066,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5657533b4688132c0a613e4e9f441334bba3dbd79cfca6b600357f3a04d397c5",
+        "planSegmentTextSha256": "2916fe50da604bd993ff4141de0e129cfee39425b41f0a4ac4e59af830d2beb6"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "What was the clearest weakness in the first transfer?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the chair was not secured first"
+        },
+        "evidenceSegment": "s37-p3-t002",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "The clearest weakness was not physical strength. The team began before confirming the chair brakes, so the sequence itself was unsafe.",
+        "timecode": {
+          "startFrame": 36114415,
+          "endFrame": 40938321,
+          "sampleRateHz": 44100,
+          "startSeconds": 818.920975,
+          "endSeconds": 928.306599,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "be39e21ef063738aaf0945649b74450a294b2c7433b438a6dd8e9d15a6c556dd",
+        "planSegmentTextSha256": "df039d905e2ff12e47ebb3c724b38ebbb734a608c64767761b832d2fcc425a74"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "What does Priya say about the footplates?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "they were moved too late"
+        },
+        "evidenceSegment": "s37-p3-t006",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "I moved the footplates late. They should have been swung away before the person came forward, not while the transfer was already under way.",
+        "timecode": {
+          "startFrame": 36114415,
+          "endFrame": 40938321,
+          "sampleRateHz": 44100,
+          "startSeconds": 818.920975,
+          "endSeconds": 928.306599,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "395354aa77fea09c689da430a0d70566821962211e67180e55479a0d93a9828f",
+        "planSegmentTextSha256": "76faaf8ddfe5338579fb3dc87e4ea058d1a00b4bf3e343ef9d8c7d9941ebf959"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "Why will the team use a side camera?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "to reveal distances hidden from the front"
+        },
+        "evidenceSegment": "s37-p3-t010",
+        "renderedChunk": "chunk-15",
+        "audiblePhrase": "A side camera will show the spacing between feet, chair and bed; the front view hid those distances.",
+        "timecode": {
+          "startFrame": 36114415,
+          "endFrame": 40938321,
+          "sampleRateHz": 44100,
+          "startSeconds": 818.920975,
+          "endSeconds": 928.306599,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "84489da16db1fe70e798e6d666c8307e5a4c1e5318d43b4d78f47a255c6f01fb",
+        "planSegmentTextSha256": "c94d4f71a342ee88b2155e02cf50b6150b44e60c3a46f434bfe66ce702a7ea02"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "What change to spoken instructions do they agree on?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "give one instruction at a time"
+        },
+        "evidenceSegment": "s37-p3-t013",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "We agree on one short instruction at a time, followed by a pause for the person to respond.",
+        "timecode": {
+          "startFrame": 40956843,
+          "endFrame": 43159212,
+          "sampleRateHz": 44100,
+          "startSeconds": 928.726599,
+          "endSeconds": 978.666939,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b7fc603a57f4714ea3e6f87bd7c5e9e98c0f10d86d82f22b996771d92f7cafeb",
+        "planSegmentTextSha256": "cf4eec245de7ecd904fe5234203b550c6a5a9bbb03961ddb6db563c31cc9069b"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "What will happen before the next assessed attempt?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "the trainees will rehearse without filming"
+        },
+        "evidenceSegment": "s37-p3-t016",
+        "renderedChunk": "chunk-16",
+        "audiblePhrase": "Before the next assessed attempt, the pair will rehearse slowly without a camera so the revised sequence becomes familiar.",
+        "timecode": {
+          "startFrame": 40956843,
+          "endFrame": 43159212,
+          "sampleRateHz": 44100,
+          "startSeconds": 928.726599,
+          "endSeconds": 978.666939,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d99f718af04c57a36b7b2cb6211755acf07a347dc13a0da5ce4a701a6b191086",
+        "planSegmentTextSha256": "4fd1fefaa3422e372390eb418d364d09a6a300d41c4335e3f930220c95d783fc"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "26  drafts the revised sequence checklist",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Aled"
+        },
+        "evidenceSegment": "s37-p3-t019",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Aled will draft the revised sequence checklist, beginning with consent, brakes and footplates.",
+        "timecode": {
+          "startFrame": 45338644,
+          "endFrame": 49789866,
+          "sampleRateHz": 44100,
+          "startSeconds": 1028.087166,
+          "endSeconds": 1129.021905,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "72d15df87f5b76cb6b264192da978741403a2b2f9415b8c5d06184e5637b100a",
+        "planSegmentTextSha256": "5c97e3308a41feabc7b335b76e478b2b072253535d8eb9110940ddc3f97b8901"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "27  redesigns the communication column",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Priya"
+        },
+        "evidenceSegment": "s37-p3-t022",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Priya will redesign the communication column so observers record the instruction and the response separately.",
+        "timecode": {
+          "startFrame": 45338644,
+          "endFrame": 49789866,
+          "sampleRateHz": 44100,
+          "startSeconds": 1028.087166,
+          "endSeconds": 1129.021905,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "240ffb9cace5bf02ca8281374ba49252ef03a65e652b180b558646522002f0c7",
+        "planSegmentTextSha256": "5478334986b12635024640c1d8a4d50765b9db0a155586dcefaa2896a7098126"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "28  chooses the second camera position",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Dr Hume"
+        },
+        "evidenceSegment": "s37-p3-t025",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "Dr Hume will choose the second camera position after checking what the side view includes.",
+        "timecode": {
+          "startFrame": 45338644,
+          "endFrame": 49789866,
+          "sampleRateHz": 44100,
+          "startSeconds": 1028.087166,
+          "endSeconds": 1129.021905,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "cbfa814c9624d635baf962eb81d55a33e4200dd24d4e15e39751e0a89f3e99c7",
+        "planSegmentTextSha256": "4d54c1098860af776708876790a89bae27fa3a98bb05a15f855cd6e90ddac73a"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "29  tests the form during rehearsal",
+          "correctOptionIndex": 3,
+          "correctOptionText": "peer observer"
+        },
+        "evidenceSegment": "s37-p3-t028",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "The peer observer will test the form during rehearsal and flag any category that is hard to use in real time.",
+        "timecode": {
+          "startFrame": 45338644,
+          "endFrame": 49789866,
+          "sampleRateHz": 44100,
+          "startSeconds": 1028.087166,
+          "endSeconds": 1129.021905,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "3da966029d19b5ed56074ca2f4e3d1451f5bd1002ecf8fe10334c9ebdc2b8358",
+        "planSegmentTextSha256": "7346ea66077bcb1037c258181d1beabbd493718836ea28c2bcab4c7b6e2d4f4d"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "30  leads the final verbal summary",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Priya"
+        },
+        "evidenceSegment": "s37-p3-t031",
+        "renderedChunk": "chunk-19",
+        "audiblePhrase": "Priya will lead the final verbal summary because she can compare the first and revised attempts directly.",
+        "timecode": {
+          "startFrame": 49808388,
+          "endFrame": 51518045,
+          "sampleRateHz": 44100,
+          "startSeconds": 1129.441905,
+          "endSeconds": 1168.209637,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f9a1e344cb8d53657943f73a07e568f4494a58a968d96bfa3aa5405f35f3f0ae",
+        "planSegmentTextSha256": "0a0040e0d84435306853bdd8620cc0e496fa11dc71a809a2987537fd6f2e89c6"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "Birds respond mainly to their ______ rather than to the whole flock.",
+          "acceptedResponses": [
+            "nearest neighbours"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t002",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "A useful model begins with nearest neighbours: each bird responds to a limited social neighbourhood, not to every individual in the flock.",
+        "timecode": {
+          "startFrame": 54988679,
+          "endFrame": 60210186,
+          "sampleRateHz": 44100,
+          "startSeconds": 1246.908821,
+          "endSeconds": 1365.31034,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "5f507d8701f5914d157bce6122a125939596dd67b2680258e10fe9ce2224c31f",
+        "planSegmentTextSha256": "19d2b4756cb54bdef60d30991e1d3645839061c9070ad16e5c003458dd9b7ae6"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "Simple ______ can produce an organised group pattern.",
+          "acceptedResponses": [
+            "local rules"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t006",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "When many birds repeatedly follow local rules, an organised group pattern can emerge without a leader.",
+        "timecode": {
+          "startFrame": 54988679,
+          "endFrame": 60210186,
+          "sampleRateHz": 44100,
+          "startSeconds": 1246.908821,
+          "endSeconds": 1365.31034,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ab57debd5a36ed46a01dac917ece9f5553e6df7090015bbcddafe19bc2fcdff6",
+        "planSegmentTextSha256": "3995a25aab5aafe1e8fd0d5ed31350445b997e1329e201c0d40287ae7fc96277"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "In the teaching simulation, flocks may become denser under ______.",
+          "acceptedResponses": [
+            "predator pressure"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t008",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "The teaching simulation in our course pack shows that flocks may become denser under predator pressure, strengthening the confusion effect in its results.",
+        "timecode": {
+          "startFrame": 54988679,
+          "endFrame": 60210186,
+          "sampleRateHz": 44100,
+          "startSeconds": 1246.908821,
+          "endSeconds": 1365.31034,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "edbd42594c1e0b1fad9c1fab9fbcdf1b88d4ebb2857574008142c9b9d6861a9b",
+        "planSegmentTextSha256": "656f5b803039263ba39392081e52920d4711dd95c31c8333f41a9772720d8066"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "A turn may begin among birds near the ______ of the flock.",
+          "acceptedResponses": [
+            "edge"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t011",
+        "renderedChunk": "chunk-22",
+        "audiblePhrase": "In the second stage of our model, a disturbance may first affect birds near an edge before moving through the group rather than starting at its centre.",
+        "timecode": {
+          "startFrame": 54988679,
+          "endFrame": 60210186,
+          "sampleRateHz": 44100,
+          "startSeconds": 1246.908821,
+          "endSeconds": 1365.31034,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9d99764033ad5f69cf9175d0073e5b5b69000ac672c78b4a19726a88745292d9",
+        "planSegmentTextSha256": "d806e8041d6e91004cd2c9a033828973851f56d7c006e7bf2416e7c76c538053"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "The change in direction travels as a turning ______.",
+          "acceptedResponses": [
+            "wave"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t015",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "The team calls the propagated change a turning wave: orientation shifts rapidly while relative positions remain coordinated.",
+        "timecode": {
+          "startFrame": 60228708,
+          "endFrame": 65255767,
+          "sampleRateHz": 44100,
+          "startSeconds": 1365.73034,
+          "endSeconds": 1479.722608,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "990376b48e18b741c1b8f497da5776d1f15b75d39b732bbd660b81d9ab1a29f1",
+        "planSegmentTextSha256": "dac69725be1982c896eb3a380df00dcad5c5451438aa49c757107a514e515be1"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Researchers used ______ synchronised cameras.",
+          "acceptedResponses": [
+            "three",
+            "3"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t020",
+        "renderedChunk": "chunk-23",
+        "audiblePhrase": "For the field procedure, three synchronised cameras view the same event from separated positions to build a three-dimensional reconstruction.",
+        "timecode": {
+          "startFrame": 60228708,
+          "endFrame": 65255767,
+          "sampleRateHz": 44100,
+          "startSeconds": 1365.73034,
+          "endSeconds": 1479.722608,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e3cca2bfe12fe1485eadc1268a3a09e6d66e53d77b400bcdae2ecb94494e49d8",
+        "planSegmentTextSha256": "64862778efe9ed2122eed789226b01f57d508fc8ff4af17c415e2485d3466537"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "Image matching provides an estimate of each bird’s ______.",
+          "acceptedResponses": [
+            "depth"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t025",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "Matching the same bird across views provides a depth estimate, which a single flat image cannot supply.",
+        "timecode": {
+          "startFrame": 67435179,
+          "endFrame": 72100289,
+          "sampleRateHz": 44100,
+          "startSeconds": 1529.142381,
+          "endSeconds": 1634.927188,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f9307942f6dce10b929f32a077aa947af09f782ca492ea3d6864c5e28977600f",
+        "planSegmentTextSha256": "c16affce0f3260563de731d906185025ecae9cc5572b6cfc2a908e3e9d803731"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "Besides flock size, the simulated model includes ______ as a separate input.",
+          "acceptedResponses": [
+            "wind speed"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t030",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "In our comparison, flock size and wind speed are entered as separate model inputs before the movement records are compared.",
+        "timecode": {
+          "startFrame": 67435179,
+          "endFrame": 72100289,
+          "sampleRateHz": 44100,
+          "startSeconds": 1529.142381,
+          "endSeconds": 1634.927188,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d3a475b6f82a2cc25fbeb4fd937c0db638ee93361500e88195d9b2fdda65e7c0",
+        "planSegmentTextSha256": "ca4805eaffb73dfe61ad8b08f86e7048c78d3d5e15ebb4e20366aa02db3ba19e"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "A sudden turn does not always indicate a ______.",
+          "acceptedResponses": [
+            "threat"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t034",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "A sudden turn does not always indicate a threat; noise, obstacles or movements by other birds can produce similar visible reactions.",
+        "timecode": {
+          "startFrame": 67435179,
+          "endFrame": 72100289,
+          "sampleRateHz": 44100,
+          "startSeconds": 1529.142381,
+          "endSeconds": 1634.927188,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "8fc08e049f2a3a9b1d3beb86e14581fc361b620146250622267cb7399349b9ac",
+        "planSegmentTextSha256": "102b8ba468fffc1c1df8f23a9655284dbef6002c0e4482fe65a96931f5b051de"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "The strongest explanation links measured movement with a ______.",
+          "acceptedResponses": [
+            "testable model"
+          ]
+        },
+        "evidenceSegment": "s37-p4-t037",
+        "renderedChunk": "chunk-26",
+        "audiblePhrase": "For the final analysis, the strongest explanation connects measured movement to a testable model rather than to a striking animation alone.",
+        "timecode": {
+          "startFrame": 72118811,
+          "endFrame": 74084625,
+          "sampleRateHz": 44100,
+          "startSeconds": 1635.347188,
+          "endSeconds": 1679.923469,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "476e58ce721936b3e093db8c7da7aa1f4a0036e2c112e8703e6c72129313efc1",
+        "planSegmentTextSha256": "3200c8063f814b111fe0931e49801634d82a73ba24f42912bb53cae32e725309"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/set37-listening-content-v1.0.18.json",
+        "sha256": "8abac27087c8669d832f15d0e185f432fff03bfefabbde14e18a38675028e40d"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "a070570704b4f76c04373b752cb0375b4a140afdc27c91ac00121f1ce5682c80",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-37/set37-audio-production-plan.json",
+        "sha256": "f124147e779c580968327adb75a132fa546eed8485a2389abd69db61dd9a55ae"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/elevenlabs-v4/set37-eleven-v4-manifest.json",
+        "sha256": "96fc082dcaf753e21dc01c7decb8ce23cf4edc5e8258bba9eded457f453438b1"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/elevenlabs-v4/set37-eleven-v4-progress.json",
+        "sha256": "81f42a920a66c58970f98a2ac3f232a646a06589e7080c038aa67f85e24caee8"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/elevenlabs-v4/set37-eleven-v4-qa.json",
+        "sha256": "62d23a15366324c08ba7ae494761ad76cc0b79f840a8c0a7ae36b09555ca60f5"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/elevenlabs-v4/set37-concat.txt",
+        "sha256": "10a5cd07a33d7014415724ba603df4dfe962125526e4ed5ac977481cedbd2c89"
+      },
+      "concatPieceAggregateSha256": "af5dfb509e8ec88bc3997702bec9faf26b45f595cca0907a979a774431050b7e",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/elevenlabs-v4/ielts-set-37-listening-eleven-v4-master.wav",
+        "sha256": "a279f16aeebd2571b9a5c2bd7f18c3fdf9989861c5afc1fe5d923b27ad9d4a20",
+        "frameCount": 75614913,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-37/listening/elevenlabs-v4/ielts-set-37-listening-eleven-v4.mp3",
+        "sha256": "2626aa770c0669aaba75df0e52aa0550685779a45d1e829ba2133068dcf7dba3"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-37.mp3",
+        "sha256": "2626aa770c0669aaba75df0e52aa0550685779a45d1e829ba2133068dcf7dba3"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "381229912216b68e4878fbc65fc460089ed5357407a9c559efe3f346157765fd"
+  }
+}

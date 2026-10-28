@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "ielts-guided-editorial-review.v1",
+  "reviewId": "guided-editorial-independent-final-review-sets-21-40-2026-10-28",
+  "reviewedAt": "2026-10-28T14:13:59Z",
+  "supersedes": {
+    "reviewId": "guided-editorial-independent-rereview-sets-21-40-2026-10-28",
+    "path": "staging/ielts-guided-reviews/guided-editorial-independent-rereview-sets-21-40-2026-10-28.json",
+    "sha256": "e4a005ec00809b7d6c57323fa244f04007c7a1b3298fbad3407700ad09cc7bde"
+  },
+  "reviewer": {
+    "role": "independent-module-reviewer",
+    "actor": "codex-guided-editorial-independent-review",
+    "authorship": false,
+    "sourceEdits": false
+  },
+  "mode": "review-module",
+  "inputs": [
+    {
+      "path": "src/data/ielts/guided-writing-samples-21-40.draft.ts",
+      "sha256": "9a57a1299703b236676b48e9a40b6979dba3d919cfadbdf4e702705821218c20"
+    },
+    {
+      "path": "src/data/ielts/guided-speaking-references-21-40.ts",
+      "sha256": "51a9630ac48f2b6b86a0b300b1dc171d29a5fb6a8c8a9c14692410ba870bee7a"
+    }
+  ],
+  "specBasis": {
+    "skill": "ielts-mock-factory",
+    "publicSpecSnapshot": "official-spec-contract verified 2026-10-03",
+    "claimsPolicy": "approximate pedagogical references only; no official score prediction"
+  },
+  "targetedChecks": {
+    "writingPromptBinding": {
+      "decision": "PASS",
+      "setsPassed": 20,
+      "setsReviewed": 20,
+      "rule": "Generated prompt equals the canonical Task 2 prompt and contains it exactly once."
+    },
+    "speakingQuotedEvidence": {
+      "decision": "PASS",
+      "samplesPassed": 40,
+      "samplesReviewed": 40,
+      "quotedFragmentsTraceable": 320,
+      "quotedFragmentsReviewed": 320,
+      "normalization": "NFKC, whitespace collapse, trailing editorial ellipsis removed before literal substring comparison",
+      "rule": "Every fragment enclosed by guillemets in verdict or criterion notes must be a literal substring of its own transcript."
+    },
+    "speakingDeliveryClaims": {
+      "decision": "PASS",
+      "samplesPassed": 40,
+      "samplesReviewed": 40,
+      "inventedClaims": 0,
+      "rule": "Text-only feedback must not claim observed pauses, restarts, speed, accent, rhythm, intonation or intelligibility; pronunciation remains pending audio."
+    },
+    "deterministicTests": {
+      "decision": "PASS",
+      "command": "node --experimental-strip-types --experimental-loader ./tests/ts-paths-loader.mjs --test tests/ielts-guided-writing-samples-21-40.test.mts tests/ielts-guided-speaking-references-21-40.test.mts",
+      "testsPassed": 2,
+      "testsFailed": 0
+    }
+  },
+  "resolvedFindings": [
+    {
+      "id": "WRT-PROMPT-DUPLICATION",
+      "decision": "RESOLVED",
+      "evidence": "20/20 Writing prompts occur exactly once."
+    },
+    {
+      "id": "SPK-FEEDBACK-NONTRACEABLE",
+      "decision": "RESOLVED",
+      "evidence": "Feedback limits oral claims to what text can support and explicitly leaves delivery/pronunciation pending audio."
+    },
+    {
+      "id": "SPK-LEXICAL-QUOTE-NOT-IN-TRANSCRIPT",
+      "decision": "RESOLVED",
+      "evidence": "The lexical quotation now comes from the second transcript sentence; 320/320 quoted fragments across all feedback fields are traceable."
+    }
+  ],
+  "sets": [
+    {"set": 21, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 22, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 23, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 24, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 25, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 26, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 27, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 28, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 29, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 30, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 31, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 32, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 33, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 34, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 35, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 36, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 37, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 38, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 39, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0},
+    {"set": 40, "decision": "PASS", "writingPromptExactOnce": true, "speakingQuotedFragments": "16/16", "inventedDeliveryClaims": 0}
+  ],
+  "remainingAdvisories": [
+    {
+      "id": "WRT-BAND55-PROFILE-ADVISORY",
+      "severity": "MEDIUM",
+      "blocking": false,
+      "note": "A future editorial pass should continue varying authentic Band 5.5 limitations across criteria."
+    },
+    {
+      "id": "SPK-PART2-LENGTH-ADVISORY",
+      "severity": "MEDIUM",
+      "blocking": false,
+      "note": "Band 5.5 transcripts remain near the lower timing boundary; delivered duration still requires audio validation."
+    }
+  ],
+  "globalGate": {
+    "decision": "PASS",
+    "nextState": "READY_FOR_HUMAN_REVIEW",
+    "editorialTextIntegrationEligible": true,
+    "audioApprovalAuthorized": false,
+    "releaseAuthorized": false,
+    "reason": "All targeted source-text checks pass with no unresolved HIGH findings. Audio quality, pronunciation and final release remain separate human gates."
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "canonicalization": "Recursive key sort, JSON.stringify, integrity field excluded",
+    "reviewPayloadSha256": "99bf3af65a25e5e6b23a3aee6625956c1dff1f3d328c81b0cb8bfa965cdf5f3b"
+  }
+}

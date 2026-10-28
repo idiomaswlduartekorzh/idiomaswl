@@ -1,0 +1,1942 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 22,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-22.ts",
+      "sha256": "e6617c19287f3559449af2073f67a355558894d05cf2d7557010239b958b8eb9"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Which section describes preventing moisture from distorting later comparisons?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C Drying and stabilising the sample"
+        },
+        "sourceExcerpt": "C Drying and stabilising the sample\nFresh cores contain variable moisture, and water strongly affects X-ray attenuation. Comparing wet samples would make density differences difficult to interpret. The cores are therefore dried under controlled conditions until their mass becomes stable. They are then fixed in straight supports so that movement during scanning does not blur the image. This preparation may look routine, yet it creates a common baseline. If one sample retains more moisture or bends inside the scanner, the resulting profile can resemble a genuine biological change even though it was produced by handling.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section describes preventing moisture from distorting later comparisons?» y la clave es «C Drying and stabilising the sample». La evidencia dice «C Drying and stabilising the sample Fresh cores contain variable moisture, and water strongly affects X-ray attenuation.». La coincidencia semántica se apoya en «moisture», «drying», «stabilising», «sample»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "98787d8643c103dd71aacf34090fd560ff39cabaa63a30f1cd9b21d711d37a23",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Which section explains why ring width does not show every change within a year?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A From ring width to density"
+        },
+        "sourceExcerpt": "A From ring width to density\nFor more than a century, researchers have compared the widths of annual tree rings. Wide rings often indicate favourable growth, while narrow ones may record drought, cold or competition. Width, however, is only one measurement. Wood formed early in a growing season has large, thin-walled cells, whereas late-season wood is commonly denser. A density profile can therefore reveal changes within a single year that a ruler cannot show. Modern laboratories increasingly combine traditional chronology with X-ray computed tomography, or CT, to measure these internal contrasts without cutting a core into many fragile slices.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section explains why ring width does not show every change within a year?» y la clave es «A From ring width to density». La evidencia dice «A From ring width to density For more than a century, researchers have compared the widths of annual tree rings.». La coincidencia semántica se apoya en «ring», «width», «density»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "df3754bbcf16986d58b9e0adb2ced7efbc2399408bb9f84bc4b8faf4e0b8fde8",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Which section describes checking automatic boundaries against neighbouring trees?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "F Locating annual boundaries"
+        },
+        "sourceExcerpt": "F Locating annual boundaries\nDensity values rise and fall along the corrected path, but the computer does not always know where one year ends. In species with a sharp transition, an automated detector may identify the dense latewood peak and the following low-density earlywood. Frost damage, missing rings and gradual boundaries can defeat that rule. Analysts therefore compare the density curve with the visible image and, where possible, with dated patterns from neighbouring trees. This cross-dating step assigns calendar years and prevents a local anomaly from shifting every later measurement by one year.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section describes checking automatic boundaries against neighbouring trees?» y la clave es «F Locating annual boundaries». La evidencia dice «F Locating annual boundaries Density values rise and fall along the corrected path, but the computer does not always know where one year ends.». La coincidencia semántica se apoya en «boundaries», «locating», «annual»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "650fb2f5ebd56e229b0816e0b29fcde6a538c35226983e3f9be3cc7f3f17731a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Which section explains converting scanner intensity into physical estimates?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "D Calibrating the scanner"
+        },
+        "sourceExcerpt": "D Calibrating the scanner\nA CT scanner does not directly print wood density in familiar units. It records how strongly many narrow X-ray beams are weakened as they pass through the sample. Before a batch is analysed, reference materials of known density are scanned with the cores. Their values form a calibration curve that converts image intensity into estimated physical density. Laboratories repeat this step because settings and equipment can drift. Calibration is also why results from two institutions cannot be compared safely merely because both used CT: their reference standards and reconstruction choices must also be compatible.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section explains converting scanner intensity into physical estimates?» y la clave es «D Calibrating the scanner». La evidencia dice «D Calibrating the scanner A CT scanner does not directly print wood density in familiar units.». La coincidencia semántica se apoya en «scanner», «calibrating»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "308d16605c491b1681572e5f1a3b518612344e564d0bc176938094006b0cb318",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Which section warns that environmental association is not proof of cause?",
+          "correctOptionIndex": 6,
+          "correctOptionText": "G Interpreting the archive"
+        },
+        "sourceExcerpt": "G Interpreting the archive\nOnce the sequence is dated, scientists can calculate annual maximum density, minimum density and other features. The values may be related to temperature, rainfall or disturbance, but association is not simple proof. Tree age, competition and species-specific growth can produce similar signals. Large studies therefore combine many trees and retain metadata about sampling and processing. CT expands what can be recovered from a small core and preserves a digital record for reanalysis; it does not remove the need for careful field design, calibration or cautious ecological reasoning. Archived scans also let a later team test a new measurement rule without borrowing or rescanning the physical core. Even then, researchers must preserve the original image settings and calibration record. Otherwise, a refined algorithm may create a more detailed result whose relationship to real density is uncertain.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section warns that environmental association is not proof of cause?» y la clave es «G Interpreting the archive». La evidencia dice «G Interpreting the archive Once the sequence is dated, scientists can calculate annual maximum density, minimum density and other features.». La coincidencia semántica se apoya en «interpreting», «archive»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "c4580547f2f2e3d1820ae5b628ae1f326244d620f753d816c5d28c53c47caa4e",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Which section explains why sampling direction is recorded?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B Taking a representative core"
+        },
+        "sourceExcerpt": "B Taking a representative core\nFieldwork still begins with an increment borer, a hollow tool that removes a pencil-thin cylinder from the trunk. The operator normally samples at a standard height and records the direction of the core, because wood can differ around the same tree. A core that misses the centre is not automatically useless, but its curve may need geometric correction. The bore hole is left small, while the extracted core is placed in a labelled holder. Researchers also record tree species, diameter and local conditions so that later measurements are not separated from their ecological context.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section explains why sampling direction is recorded?» y la clave es «B Taking a representative core». La evidencia dice «B Taking a representative core Fieldwork still begins with an increment borer, a hollow tool that removes a pencil-thin cylinder from the trunk.». La coincidencia semántica se apoya en «taking», «representative», «core»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "976d7afe449e1c13ef5c18eea5e02c7784a981f43c96beeca43a46c475e4de7c",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "mcq",
+          "questionText": "Which section describes correcting the measuring route through curved rings?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "E Building a three-dimensional image"
+        },
+        "sourceExcerpt": "E Building a three-dimensional image\nDuring scanning, the core rotates while the instrument records projections from numerous angles. Software reconstructs these into a stack of cross-sectional images. The stack allows analysts to see cracks, resin pockets and regions where the borer compressed soft tissue. Such defects can be marked before a density line is extracted. The three-dimensional view is especially valuable when a ring boundary curves away from the intended measuring path. Instead of accepting a misleading straight line, the analyst can adjust the path so that it follows the actual growth layers.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Which section describes correcting the measuring route through curved rings?» y la clave es «E Building a three-dimensional image». La evidencia dice «E Building a three-dimensional image During scanning, the core rotates while the instrument records projections from numerous angles.». La coincidencia semántica se apoya en «building», «three», «dimensional», «image»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "e245c62ffe44fede124222001b147af1b20dfdbb135d56fa809cb375e154684a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "What hollow field tool removes the tree sample?",
+          "acceptedResponses": [
+            "increment borer"
+          ]
+        },
+        "sourceExcerpt": "B Taking a representative core\nFieldwork still begins with an increment borer, a hollow tool that removes a pencil-thin cylinder from the trunk. The operator normally samples at a standard height and records the direction of the core, because wood can differ around the same tree. A core that misses the centre is not automatically useless, but its curve may need geometric correction. The bore hole is left small, while the extracted core is placed in a labelled holder. Researchers also record tree species, diameter and local conditions so that later measurements are not separated from their ecological context.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «What hollow field tool removes the tree sample?» y acepta «increment borer». La oración fuente dice «B Taking a representative core Fieldwork still begins with an increment borer, a hollow tool that removes a pencil-thin cylinder from the trunk.». Esa oración contiene la respuesta y la conecta con «hollow», «tool», «removes», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "a60f47b48e1efcca870e6e0938f7ad7fcd7635f239d24f8abe105df5ce4d1bf0",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "Under what conditions are cores dried?",
+          "acceptedResponses": [
+            "controlled conditions"
+          ]
+        },
+        "sourceExcerpt": "C Drying and stabilising the sample\nFresh cores contain variable moisture, and water strongly affects X-ray attenuation. Comparing wet samples would make density differences difficult to interpret. The cores are therefore dried under controlled conditions until their mass becomes stable. They are then fixed in straight supports so that movement during scanning does not blur the image. This preparation may look routine, yet it creates a common baseline. If one sample retains more moisture or bends inside the scanner, the resulting profile can resemble a genuine biological change even though it was produced by handling.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Under what conditions are cores dried?» y acepta «controlled conditions». La oración fuente dice «The cores are therefore dried under controlled conditions until their mass becomes stable.». Esa oración contiene la respuesta y la conecta con «under», «conditions», «cores», «dried», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "96bc1e43e1c0660035f73b32ca50037dbff52f6d6d8dc4e1b07f5e9653b4806f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "What known-density items create the calibration curve?",
+          "acceptedResponses": [
+            "reference materials"
+          ]
+        },
+        "sourceExcerpt": "D Calibrating the scanner\nA CT scanner does not directly print wood density in familiar units. It records how strongly many narrow X-ray beams are weakened as they pass through the sample. Before a batch is analysed, reference materials of known density are scanned with the cores. Their values form a calibration curve that converts image intensity into estimated physical density. Laboratories repeat this step because settings and equipment can drift. Calibration is also why results from two institutions cannot be compared safely merely because both used CT: their reference standards and reconstruction choices must also be compatible.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «What known-density items create the calibration curve?» y acepta «reference materials». La oración fuente dice «Before a batch is analysed, reference materials of known density are scanned with the cores.». Esa oración contiene la respuesta y la conecta con «known», «density», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "f3653cdaa71849108f6cb2611b4607a97a6ec26e0dcf2122da2ccb77a2959473",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "What process assigns calendar years by comparison with other trees?",
+          "acceptedResponses": [
+            "cross-dating"
+          ]
+        },
+        "sourceExcerpt": "F Locating annual boundaries\nDensity values rise and fall along the corrected path, but the computer does not always know where one year ends. In species with a sharp transition, an automated detector may identify the dense latewood peak and the following low-density earlywood. Frost damage, missing rings and gradual boundaries can defeat that rule. Analysts therefore compare the density curve with the visible image and, where possible, with dated patterns from neighbouring trees. This cross-dating step assigns calendar years and prevents a local anomaly from shifting every later measurement by one year.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «What process assigns calendar years by comparison with other trees?» y acepta «cross-dating». La oración fuente dice «This cross-dating step assigns calendar years and prevents a local anomaly from shifting every later measurement by one year.». Esa oración contiene la respuesta y la conecta con «assigns», «calendar», «years», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "10e464bedb90e90b0fd6b619711644f14af2ead54b6f0a606fc70a5354f95cbc",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "What visible defect consists of a split in the wood?",
+          "acceptedResponses": [
+            "cracks"
+          ]
+        },
+        "sourceExcerpt": "E Building a three-dimensional image\nDuring scanning, the core rotates while the instrument records projections from numerous angles. Software reconstructs these into a stack of cross-sectional images. The stack allows analysts to see cracks, resin pockets and regions where the borer compressed soft tissue. Such defects can be marked before a density line is extracted. The three-dimensional view is especially valuable when a ring boundary curves away from the intended measuring path. Instead of accepting a misleading straight line, the analyst can adjust the path so that it follows the actual growth layers.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «What visible defect consists of a split in the wood?» y acepta «cracks». La oración fuente dice «The stack allows analysts to see cracks, resin pockets and regions where the borer compressed soft tissue.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Section E lists cracks, resin pockets and compressed regions. The remediated stem asks specifically for a split in the wood, so only “cracks” is defensible within the three-word limit.",
+        "ledgerRowSha256": "ab1e09c96a4aff28c8a18b44414fcead1ecc5ed064156d8dc25c4413bd8798e8",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "What information is retained to support cautious interpretation?",
+          "acceptedResponses": [
+            "metadata"
+          ]
+        },
+        "sourceExcerpt": "G Interpreting the archive\nOnce the sequence is dated, scientists can calculate annual maximum density, minimum density and other features. The values may be related to temperature, rainfall or disturbance, but association is not simple proof. Tree age, competition and species-specific growth can produce similar signals. Large studies therefore combine many trees and retain metadata about sampling and processing. CT expands what can be recovered from a small core and preserves a digital record for reanalysis; it does not remove the need for careful field design, calibration or cautious ecological reasoning. Archived scans also let a later team test a new measurement rule without borrowing or rescanning the physical core. Even then, researchers must preserve the original image settings and calibration record. Otherwise, a refined algorithm may create a more detailed result whose relationship to real density is uncertain.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «What information is retained to support cautious interpretation?» y acepta «metadata». La oración fuente dice «Large studies therefore combine many trees and retain metadata about sampling and processing.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "2aa1e8adc440fda0a763784484d36d34973f34ea9886e94cf3ff7b4b6a85ce6b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "fill",
+          "questionText": "Complete the summary: Noise maps are combined with 14 ______ to find overlooked sites.",
+          "acceptedResponses": [
+            "local knowledge"
+          ]
+        },
+        "sourceExcerpt": "B Finding candidate areas\nA first survey often combines noise maps with local knowledge. Maps identify places with comparatively low average exposure, while residents point to courtyards, paths and watersides that formal monitoring has overlooked. Researchers then visit at different times. A space that is calm on a Sunday morning may be dominated by deliveries on weekdays. Short measurements are useful, but repeated observation prevents a temporary lull from being mistaken for a stable quiet area. Access, opening hours and nearby land use are recorded alongside sound levels.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: Noise maps are combined with 14 ______ to find overlooked sites.» y acepta «local knowledge». La oración fuente dice «B Finding candidate areas A first survey often combines noise maps with local knowledge.». Esa oración contiene la respuesta y la conecta con «noise», «maps», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "1944436507e9f92eead4ef221bf7c1fcabe4a77cd0ad8ee31c592d0297950c9b",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "fill",
+          "questionText": "Complete the summary: 15 ______ prevents a temporary lull being treated as permanent.",
+          "acceptedResponses": [
+            "repeated observation"
+          ]
+        },
+        "sourceExcerpt": "B Finding candidate areas\nA first survey often combines noise maps with local knowledge. Maps identify places with comparatively low average exposure, while residents point to courtyards, paths and watersides that formal monitoring has overlooked. Researchers then visit at different times. A space that is calm on a Sunday morning may be dominated by deliveries on weekdays. Short measurements are useful, but repeated observation prevents a temporary lull from being mistaken for a stable quiet area. Access, opening hours and nearby land use are recorded alongside sound levels.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: 15 ______ prevents a temporary lull being treated as permanent.» y acepta «repeated observation». La oración fuente dice «Short measurements are useful, but repeated observation prevents a temporary lull from being mistaken for a stable quiet area.». Esa oración contiene la respuesta y la conecta con «prevents», «temporary», «lull», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "c6b5f59820bf8e944ec460961a7410afa388a163d1da955a6a62b45f1ab2a791",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "fill",
+          "questionText": "Complete the summary: Listening-walk instructions should remain 16 ______.",
+          "acceptedResponses": [
+            "neutral"
+          ]
+        },
+        "sourceExcerpt": "C Listening walks\nTeams frequently use guided listening walks. Participants stop at predetermined points, note the sounds they can distinguish and rate qualities such as calmness, vibrancy and safety. The method captures changes along a route rather than reducing a district to one monitor. It also reveals differences among users: birdsong may be welcome to one person but masked by traffic for another. Because a facilitator can influence attention, instructions are kept neutral and the order of stops may be varied between groups.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: Listening-walk instructions should remain 16 ______.» y acepta «neutral». La oración fuente dice «Because a facilitator can influence attention, instructions are kept neutral and the order of stops may be varied between groups.». Esa oración contiene la respuesta y la conecta con «instructions», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "42f3dcf6ef6c55c23f59a83b871af6f5105149ae43d304aa195b97b8766d2bce",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "fill",
+          "questionText": "Complete the summary: 17 ______ identifies where sound energy is concentrated.",
+          "acceptedResponses": [
+            "spectral data"
+          ]
+        },
+        "sourceExcerpt": "D What measurements add\nPhysical measurements still matter. Equivalent continuous sound level summarises energy over time, while peak readings capture brief events. Spectral data show whether energy is concentrated in low-frequency traffic rumble or higher-frequency voices and birds. Researchers can also calculate how often a particular source is audible. None of these indicators independently proves restoration. Their value lies in explaining why ratings differ and in allowing planners to test whether an intervention changed the acoustic environment rather than merely its appearance.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: 17 ______ identifies where sound energy is concentrated.» y acepta «spectral data». La oración fuente dice «Spectral data show whether energy is concentrated in low-frequency traffic rumble or higher-frequency voices and birds.». Esa oración contiene la respuesta y la conecta con «energy», «concentrated», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "cf24a779c5a00bd982059af0098eaa455b083e9fa59f09d0c52a3b77a78e435c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "fill",
+          "questionText": "Complete the summary: Planting may reduce 18 ______ of traffic even with little level change.",
+          "acceptedResponses": [
+            "visual reminders"
+          ]
+        },
+        "sourceExcerpt": "E The role of sight and use\nSound is interpreted with other senses. Dense planting may hide a road and reduce visual reminders of traffic even when the measured level changes little. Seating that faces water can focus attention on splashing and conversation. At the same time, a beautiful space that feels unsafe or excludes some users will not function as a refuge. Good assessments therefore record visibility, maintenance, crowding and the activities a place supports. Acoustic quality is one component of a broader experience, not an isolated property of air pressure.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: Planting may reduce 18 ______ of traffic even with little level change.» y acepta «visual reminders». La oración fuente dice «Dense planting may hide a road and reduce visual reminders of traffic even when the measured level changes little.». Esa oración contiene la respuesta y la conecta con «planting», «reduce», «traffic», «even», «little», «level», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "9059701a25c58224b683b9b4e4e64b42f0eee32421cecdc3de7c12a1bc9014a3",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "fill",
+          "questionText": "Complete the summary: Some restoration studies add 19 ______, which record bodily responses, alongside reports of mood.",
+          "acceptedResponses": [
+            "physiological measures"
+          ]
+        },
+        "sourceExcerpt": "F Testing restoration\nTo investigate restorative effects, studies may ask participants about stress or mood before and after a visit. Some also use simple attention tasks or physiological measures. Results must be interpreted carefully: people choose where to visit, and those already in a better mood may stay longer. Weather, companionship and expectations also influence responses. Randomised laboratory playback can control more variables, but headphones cannot reproduce every visual and social feature of a real park. Field and laboratory methods answer complementary questions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: Some restoration studies add 19 ______, which record bodily responses, alongside reports of mood.» y acepta «physiological measures». La oración fuente dice «Some also use simple attention tasks or physiological measures.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Section F names attention tasks and physiological measures. The remediated summary specifies measures that record bodily responses, isolating “physiological measures” and excluding attention tasks.",
+        "ledgerRowSha256": "6ba097dd09f37cdb1e0243625b588b17804c8d7d31410057cdfa03bba44a4cc5",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "fill",
+          "questionText": "Complete the summary: Small quiet areas can be connected by 20 ______ and public transport.",
+          "acceptedResponses": [
+            "walking routes"
+          ]
+        },
+        "sourceExcerpt": "G Planning a network\nA single flagship park cannot provide everyday relief for an entire city. Planners increasingly consider a network of small, reachable quiet areas linked to walking routes and public transport. Protecting an existing courtyard can be cheaper than constructing a new acoustic barrier. Interventions may include rerouting service vehicles, limiting particular activities at certain times, adding water features or designing planted edges. The aim is not to ban lively sound everywhere; cities need active places as well as calmer alternatives.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "El hueco aparece en «Complete the summary: Small quiet areas can be connected by 20 ______ and public transport.» y acepta «walking routes». La oración fuente dice «Planners increasingly consider a network of small, reachable quiet areas linked to walking routes and public transport.». Esa oración contiene la respuesta y la conecta con «small», «quiet», «areas», «public», «transport», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "e192fa965f151e6588e14be81279cba2e1ceaab1757fece8fa018eb94b35b023",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "A place can be experienced as restorative even when it is not silent.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "A Quiet is not silence\nUrban authorities once treated noise mainly as a number to be reduced. Decibel limits remain useful for controlling harmful exposure, but soundscape researchers ask a different question: how do people experience an acoustic setting? A small garden beside a busy road may not be silent, yet visitors can describe it as restorative when leaves, water and distant human activity form a coherent background. A technically quieter underpass may feel unpleasant if its sounds are unpredictable or signal danger. The distinction shifts attention from sound level alone to meaning, expectation and perceived control.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «A place can be experienced as restorative even when it is not silent.» y el pasaje dice «A small garden beside a busy road may not be silent, yet visitors can describe it as restorative when leaves, water and distant human activity form a coherent background.». La fuente conserva la misma relación mediante «restorative», «silent» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "88821974a45ae38a8598672989360da7805a857176ee3615f9d0b259bf0ba20f",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "Noise maps alone are sufficient for identifying stable quiet areas.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "B Finding candidate areas\nA first survey often combines noise maps with local knowledge. Maps identify places with comparatively low average exposure, while residents point to courtyards, paths and watersides that formal monitoring has overlooked. Researchers then visit at different times. A space that is calm on a Sunday morning may be dominated by deliveries on weekdays. Short measurements are useful, but repeated observation prevents a temporary lull from being mistaken for a stable quiet area. Access, opening hours and nearby land use are recorded alongside sound levels.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «Noise maps alone are sufficient for identifying stable quiet areas.», mientras el pasaje dice «B Finding candidate areas A first survey often combines noise maps with local knowledge.». Ambos tratan «noise», «maps», «areas», pero la proposición añade «alone», «sufficient», «identifying», «stable», «quiet» donde la fuente especifica «finding», «candidate», «first», «survey», «often», «combines». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "85a96472c2931398985a0e112ed1ad9dc1cd89d82f9716a9148b571960abb078",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "All listening-walk studies use exactly the same number of stops.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "C Listening walks\nTeams frequently use guided listening walks. Participants stop at predetermined points, note the sounds they can distinguish and rate qualities such as calmness, vibrancy and safety. The method captures changes along a route rather than reducing a district to one monitor. It also reveals differences among users: birdsong may be welcome to one person but masked by traffic for another. Because a facilitator can influence attention, instructions are kept neutral and the order of stops may be varied between groups.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición ausente es «All listening-walk studies use exactly the same number of stops.». El pasaje sí ofrece el contexto «C Listening walks Teams frequently use guided listening walks.», pero en el texto completo no especifica «all», «walk», «exactly» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "8fea4b5a5861e76e94fa3e676f620656c88365bb3b258064bda85e3ee42ca437",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "mcq",
+          "questionText": "Visual conditions can affect the way an acoustic setting is interpreted.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "E The role of sight and use\nSound is interpreted with other senses. Dense planting may hide a road and reduce visual reminders of traffic even when the measured level changes little. Seating that faces water can focus attention on splashing and conversation. At the same time, a beautiful space that feels unsafe or excludes some users will not function as a refuge. Good assessments therefore record visibility, maintenance, crowding and the activities a place supports. Acoustic quality is one component of a broader experience, not an isolated property of air pressure.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «Visual conditions can affect the way an acoustic setting is interpreted.» y el pasaje dice «E The role of sight and use Sound is interpreted with other senses.». La fuente conserva la misma relación mediante «interpreted» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "c67e707db5efe6d4d7fe2cfa4532fcb6fa965bd63dd65da6e0de914c74fe2d9a",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "mcq",
+          "questionText": "Laboratory playback reproduces every feature of a real park.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "F Testing restoration\nTo investigate restorative effects, studies may ask participants about stress or mood before and after a visit. Some also use simple attention tasks or physiological measures. Results must be interpreted carefully: people choose where to visit, and those already in a better mood may stay longer. Weather, companionship and expectations also influence responses. Randomised laboratory playback can control more variables, but headphones cannot reproduce every visual and social feature of a real park. Field and laboratory methods answer complementary questions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «Laboratory playback reproduces every feature of a real park.», mientras el pasaje dice «Randomised laboratory playback can control more variables, but headphones cannot reproduce every visual and social feature of a real park.». Ambos tratan «laboratory», «playback», «every», «feature», «real», «park», pero la proposición añade «reproduces» donde la fuente especifica «randomised», «control», «variables», «headphones», «cannot», «reproduce». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "9e13f78a1201e39299a121c18ff6b242155085046d5d854154687ddd3ed08065",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "mcq",
+          "questionText": "The author states that water sounds are preferred by most city residents.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "H Limits and accountability\nDefinitions should remain transparent. If an authority labels a site quiet solely because its average level falls below a threshold, it may ignore users who find the route inaccessible or threatening. Conversely, satisfaction surveys alone can overlook damaging exposure. A defensible programme publishes both acoustic and experiential criteria, reports when measurements were taken and repeats assessment after changes. There is no universal sound that guarantees wellbeing. The strongest evidence comes from converging measures and from acknowledging whose experience is missing. Long-term stewardship is equally important. A water feature that stops working or planting that blocks sight lines can reverse the qualities recorded in an opening-day survey. Authorities should assign responsibility for maintenance and provide a way for users to report changes. Seasonal audits can then distinguish temporary disturbance from a persistent decline. They also show whether an intervention displaced noise to a neighbouring street. In this sense, a quiet-area label is not a permanent award but a commitment to continued measurement, public access and responsive management.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición ausente es «The author states that water sounds are preferred by most city residents.». El pasaje sí ofrece el contexto «A water feature that stops working or planting that blocks sight lines can reverse the qualities recorded in an opening-day survey.», pero en el texto completo no especifica «preferred» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "74157ace4a4f18cce87d46ec4dfb05bd834eefc3c59d5e651648266f1803b875",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "A searchable inventory 27 ______.",
+          "correctOptionIndex": 4,
+          "correctOptionText": "helps professionals locate possible supply"
+        },
+        "sourceExcerpt": "B More than a noticeboard\nA basic listing platform reduces search costs: sellers describe material and buyers filter by location, quantity and date. But a photograph and a short label rarely support a professional purchasing decision. Designers need dimensions and technical history; contractors need confidence that the lot will be available when promised. Effective exchanges therefore structure the description, require consistent units and retain documents. The platform becomes a coordination service rather than a collection of advertisements.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «A searchable inventory 27 ______.» y la clave es «helps professionals locate possible supply». La evidencia dice «B More than a noticeboard A basic listing platform reduces search costs: sellers describe material and buyers filter by location, quantity and date.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "96a9d9d0c6556b379723638613853a351d818095acc2eb474d72e436ff72d848",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "An early pre-demolition audit 28 ______.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "allows recovery to be scheduled as part of the project"
+        },
+        "sourceExcerpt": "C Survey before demolition\nThe inventory is most useful when it begins with a pre-demolition audit. Surveyors identify components, estimate quantities and note how they are fixed. Items that appear reusable may be inaccessible without damaging removal, and hazardous coatings can rule out recovery. Early auditing lets a project team alter the dismantling sequence and invite buyers before machinery arrives. It also changes the status of salvage: recovery becomes a planned work package instead of an improvised request at the end.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «An early pre-demolition audit 28 ______.» y la clave es «allows recovery to be scheduled as part of the project». La evidencia dice «C Survey before demolition The inventory is most useful when it begins with a pre-demolition audit.». La coincidencia semántica se apoya en «pre», «demolition», «audit»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "195228d25e93cc5c782cd8a1472b8a444af71a0a1551aa651d08769bd9a06a7a",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "The evidence required for an item 29 ______.",
+          "correctOptionIndex": 6,
+          "correctOptionText": "depends on the consequences if the component fails"
+        },
+        "sourceExcerpt": "D Verification and trust\nUncertainty is costly. A buyer may save on the purchase price but face a larger loss if a component fails inspection after delivery. Exchanges respond with graded descriptions, photographs tied to item records and, for some products, independent testing. Not every brick requires a laboratory certificate, and excessive testing can eliminate the financial advantage of reuse. The appropriate evidence depends on the component's structural role and the consequences of failure. Clear liability rules matter as much as technical data.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «The evidence required for an item 29 ______.» y la clave es «depends on the consequences if the component fails». La evidencia dice «The appropriate evidence depends on the component's structural role and the consequences of failure.». La coincidencia semántica se apoya en «evidence», «depends», «consequences», «component»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "c50587ec3fdbb9afc0b85e71bd7d16d116ea315eb411be65e32c5f57814bb1fa",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Temporary storage 30 ______.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "can preserve a match when project dates do not coincide"
+        },
+        "sourceExcerpt": "E Matching calendars\nSupply and demand must overlap in time. A school renovation may need doors in March while suitable doors leave an office in January. If storage is available, the match can survive the gap; if not, the exchange has merely documented a missed opportunity. Some operators therefore add consolidation yards or partner with logistics firms. Storage charges, double handling and weather protection then become part of the calculation. A platform that ignores calendars may report many matches that never become transactions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Temporary storage 30 ______.» y la clave es «can preserve a match when project dates do not coincide». La evidencia dice «If storage is available, the match can survive the gap; if not, the exchange has merely documented a missed opportunity.». La coincidencia semántica se apoya en «storage», «match»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "9167519ecdc964974f2a4e98d6fa538094768729e2e4c5f30effa663e66013d9",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "Long-distance transport 31 ______.",
+          "correctOptionIndex": 5,
+          "correctOptionText": "can make reuse less beneficial than a nearby new product"
+        },
+        "sourceExcerpt": "F Distance and carbon\nReuse is not automatically the lowest-impact choice. Heavy, low-value material transported across a country may consume more fuel than a nearby new product, especially if it travels through several depots. Digital systems can estimate distance and vehicle utilisation before recommending a match. These estimates should be treated as decision support, not as exact carbon accounts, because back-haul availability and cleaning requirements vary. Local demand is particularly important for bulky items such as masonry.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Long-distance transport 31 ______.» y la clave es «can make reuse less beneficial than a nearby new product». La evidencia dice «Heavy, low-value material transported across a country may consume more fuel than a nearby new product, especially if it travels through several depots.». La coincidencia semántica se apoya en «nearby», «new», «product»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "050c21780d3c819fbfdcfdbf5b2fa4a5974713f46aa9380baee5709739d304af",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Outcome-based public procurement 32 ______.",
+          "correctOptionIndex": 8,
+          "correctOptionText": "can stimulate demand without imposing an inflexible quota"
+        },
+        "sourceExcerpt": "G Creating demand\nImproved supply information does little if specifications insist on new products. Public clients can create demand by allowing equivalent reused components and by setting proportionate reuse targets. Designers can also work with flexible dimensions rather than selecting a component before checking availability. However, rigid quotas may encourage token purchases or unnecessary transport. The better policy rewards verified outcomes while allowing a project to explain why a particular recovered item was unsuitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «Outcome-based public procurement 32 ______.» y la clave es «can stimulate demand without imposing an inflexible quota». La evidencia dice «Public clients can create demand by allowing equivalent reused components and by setting proportionate reuse targets.». La coincidencia semántica se apoya en «public», «demand»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "055585cdb8f47b1bfcb661ee19cdc1b313bc2f4c35958998e04d6f4d5612f32f",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "A successful exchange 33 ______.",
+          "correctOptionIndex": 3,
+          "correctOptionText": "should be evaluated by completed reuse rather than online activity"
+        },
+        "sourceExcerpt": "I A coordinated market\nThe strongest exchanges connect audits, design tools, procurement calendars, transport and verification. Their success should be measured in completed reuse, not in page views or theoretical tonnes listed. Policymakers can support common data standards and temporary storage while monitoring whether benefits reach smaller firms. The central lesson is that information solves only one part of the problem. Circular construction requires timing, evidence, logistics and demand to be aligned; otherwise a sophisticated platform simply records material on its way to disposal. Measurement itself can change behaviour. If a marketplace counts every listing as diverted waste, participants receive credit even when the material is later discarded. Transaction records should therefore follow an item through collection, inspection and installation. Such tracking can reveal where proposed matches fail and which services deserve investment. It may show, for example, that buyers routinely withdraw after transport estimates or that small suppliers struggle with documentation. Yet detailed tracking raises questions about commercial confidentiality and administrative cost. A proportionate system can publish aggregate outcomes while restricting sensitive project data. Independent audits of a sample of transactions may provide more credible evidence than demanding exhaustive reports from every user. The purpose of evaluation is not merely to celebrate volume; it is to learn whether the exchange changes procurement practice, reduces disposal and builds a durable market for recovered components.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La pregunta pide «A successful exchange 33 ______.» y la clave es «should be evaluated by completed reuse rather than online activity». La evidencia dice «Their success should be measured in completed reuse, not in page views or theoretical tonnes listed.». La coincidencia semántica se apoya en «completed», «reuse»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "13d96d7ffd75a920ca08645039adde47436040847140b47049f15c22a3f963fe",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "I"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "The writer believes late information is a major barrier to material reuse.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "A The timing problem\nConstruction produces large quantities of material that could, in principle, be used again. A steel beam, raised floor panel or batch of bricks may retain considerable value. Yet demolition contractors often discover what is available only days before a site must be cleared. Potential buyers need time to check dimensions, performance and delivery. When information appears late, disposal remains the predictable option. Digital exchanges attempt to move discovery earlier by turning planned removals into searchable inventories.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «The writer believes late information is a major barrier to material reuse.» y el pasaje dice «When information appears late, disposal remains the predictable option.». La fuente conserva la misma relación mediante «late», «information» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "3e5bcec924e9cdab4e9cc853ffd84709e83be4fa5278bb5a0b688424c0434585",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "The writer believes every component needs laboratory certification.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "D Verification and trust\nUncertainty is costly. A buyer may save on the purchase price but face a larger loss if a component fails inspection after delivery. Exchanges respond with graded descriptions, photographs tied to item records and, for some products, independent testing. Not every brick requires a laboratory certificate, and excessive testing can eliminate the financial advantage of reuse. The appropriate evidence depends on the component's structural role and the consequences of failure. Clear liability rules matter as much as technical data.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «The writer believes every component needs laboratory certification.», mientras el pasaje dice «Not every brick requires a laboratory certificate, and excessive testing can eliminate the financial advantage of reuse.». Ambos tratan «every», «laboratory», pero la proposición añade «writer», «component», «needs», «certification» donde la fuente especifica «brick», «requires», «certificate», «excessive», «testing», «eliminate». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "9d674944902cd61e74022c3101f0b396f990e296c0a6007adba8c65b7cbd2538",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "The writer claims consolidation yards are normally owned by local government.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "E Matching calendars\nSupply and demand must overlap in time. A school renovation may need doors in March while suitable doors leave an office in January. If storage is available, the match can survive the gap; if not, the exchange has merely documented a missed opportunity. Some operators therefore add consolidation yards or partner with logistics firms. Storage charges, double handling and weather protection then become part of the calculation. A platform that ignores calendars may report many matches that never become transactions.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición ausente es «The writer claims consolidation yards are normally owned by local government.». El pasaje sí ofrece el contexto «Some operators therefore add consolidation yards or partner with logistics firms.», pero en el texto completo no especifica «writer», «claims», «normally», «owned», «government» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "3ff0bb3041d186cb9d12d188ae93d8f7b795a8b70278505d08c23dde300803d0",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "The writer believes platform recommendations should account for transport distance.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "F Distance and carbon\nReuse is not automatically the lowest-impact choice. Heavy, low-value material transported across a country may consume more fuel than a nearby new product, especially if it travels through several depots. Digital systems can estimate distance and vehicle utilisation before recommending a match. These estimates should be treated as decision support, not as exact carbon accounts, because back-haul availability and cleaning requirements vary. Local demand is particularly important for bulky items such as masonry.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «The writer believes platform recommendations should account for transport distance.» y el pasaje dice «F Distance and carbon Reuse is not automatically the lowest-impact choice.». La fuente conserva la misma relación mediante «distance» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "51d384f01814a84d98debe0dd3c6305c46acd618fa6ecaf38f40c010756e4aae",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "The writer supports rigid reuse quotas in all public projects.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "G Creating demand\nImproved supply information does little if specifications insist on new products. Public clients can create demand by allowing equivalent reused components and by setting proportionate reuse targets. Designers can also work with flexible dimensions rather than selecting a component before checking availability. However, rigid quotas may encourage token purchases or unnecessary transport. The better policy rewards verified outcomes while allowing a project to explain why a particular recovered item was unsuitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «The writer supports rigid reuse quotas in all public projects.», mientras el pasaje dice «Public clients can create demand by allowing equivalent reused components and by setting proportionate reuse targets.». Ambos tratan «reuse», «public», pero la proposición añade «writer», «supports», «rigid», «quotas», «all», «projects» donde la fuente especifica «clients», «create», «demand», «allowing», «equivalent», «reused». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "e12299ff2c080b90750df8ac4d7d90ff12c09e344897fc6218f81fe80e50aee7",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "The writer argues that reliable reuse markets require institutions as well as software.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "H Who carries the risk?\nMarketplaces often describe themselves as neutral intermediaries, but participants still need to know who is responsible for accuracy, removal and damage in transit. Standard contracts can allocate these duties and state when ownership changes hands. Rating systems may reveal unreliable sellers, although new or small suppliers can be disadvantaged by having no history. Insurance products are emerging, but they depend on reliable records. Trust is produced by a chain of institutions, not by software alone.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición afirma «The writer argues that reliable reuse markets require institutions as well as software.» y el pasaje dice «Trust is produced by a chain of institutions, not by software alone.». La fuente conserva la misma relación mediante «institutions», «software» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "73cb204ec541c9e0021cd4e85b33a7a2b81e773d608484e312ba93e6e045ac41",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "The writer predicts insurance will replace standard contracts.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "I A coordinated market\nThe strongest exchanges connect audits, design tools, procurement calendars, transport and verification. Their success should be measured in completed reuse, not in page views or theoretical tonnes listed. Policymakers can support common data standards and temporary storage while monitoring whether benefits reach smaller firms. The central lesson is that information solves only one part of the problem. Circular construction requires timing, evidence, logistics and demand to be aligned; otherwise a sophisticated platform simply records material on its way to disposal. Measurement itself can change behaviour. If a marketplace counts every listing as diverted waste, participants receive credit even when the material is later discarded. Transaction records should therefore follow an item through collection, inspection and installation. Such tracking can reveal where proposed matches fail and which services deserve investment. It may show, for example, that buyers routinely withdraw after transport estimates or that small suppliers struggle with documentation. Yet detailed tracking raises questions about commercial confidentiality and administrative cost. A proportionate system can publish aggregate outcomes while restricting sensitive project data. Independent audits of a sample of transactions may provide more credible evidence than demanding exhaustive reports from every user. The purpose of evaluation is not merely to celebrate volume; it is to learn whether the exchange changes procurement practice, reduces disposal and builds a durable market for recovered components.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_LOCATOR_TO_CANONICAL_PARAGRAPH",
+        "rationale": "La proposición ausente es «The writer predicts insurance will replace standard contracts.». El pasaje sí ofrece el contexto «I A coordinated market The strongest exchanges connect audits, design tools, procurement calendars, transport and verification.», pero en el texto completo no especifica «writer», «predicts», «replace» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "The keyed response is stated or logically entailed at the cited location; competing options are contradicted or unsupported.",
+        "ledgerRowSha256": "2726ed6c10400451919e6bdc5c876288328de67e99358697fc6a60fff54c6fea",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "I"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/reading/set22-reading-content-v1.0.1.json",
+        "sha256": "77597babe6483109d424f0e19f81bda60ed4b698741bd6f5f89cae3d370094b6"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "4eb47761270939120a71909ef31890bf6f758cdcb06c052dfdedc63b435f8d13",
+      "canonicalQuestionProjectionSha256": "cdfb973197499a9dd093642aec9e05635e2ce6a56fbc63e1be3c8f25e5bb3e51"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Preferred allotment site: ______",
+          "acceptedResponses": [
+            "northbank",
+            "north bank",
+            "Northbank"
+          ]
+        },
+        "evidenceSegment": "P1-T04",
+        "audiblePhrase": "I first thought Riverside because it's near the bus route. Actually, after checking the walking distance from my flat, Northbank is closer, so please put Northbank as my preferred site.",
+        "timecode": {
+          "startFrame": 5150173,
+          "endFrame": 5624689,
+          "sampleRateHz": 44100,
+          "startSeconds": 116.783968,
+          "endSeconds": 127.543968,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "f6d63711186efe3fd2d401bce0651bb23f6facd30ba03b75c1a9a7256ce8fad3",
+        "planSegmentTextSha256": "d7338ba805f6836bc17ca5ed44ef4263f5139be3b654b2834c84888d78df954d"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Preferred plot: a ______",
+          "acceptedResponses": [
+            "raised bed"
+          ]
+        },
+        "evidenceSegment": "P1-T06",
+        "audiblePhrase": "The raised bed, please. I work full time, so a smaller area is sensible for my first season. I can always apply for a standard plot later if I manage it well.",
+        "timecode": {
+          "startFrame": 6352515,
+          "endFrame": 6795279,
+          "sampleRateHz": 44100,
+          "startSeconds": 144.047959,
+          "endSeconds": 154.087959,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "86cb6d3b49d4ce8526ec1722ca67f0fb1b20eba7899b8a7fbffec00cd42baadd",
+        "planSegmentTextSha256": "542dc193e34dd6806110ebb3a877a0d3207992b0c88df266da29f95258bcc9c0"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Regular visit day: ______",
+          "acceptedResponses": [
+            "tuesday",
+            "Tuesday"
+          ]
+        },
+        "evidenceSegment": "P1-T08",
+        "audiblePhrase": "Saturday sounds convenient, but that's when I often visit my parents. Tuesday is much more reliable because I finish work early, so enter Tuesday as my regular day.",
+        "timecode": {
+          "startFrame": 7538099,
+          "endFrame": 8024963,
+          "sampleRateHz": 44100,
+          "startSeconds": 170.93195,
+          "endSeconds": 181.97195,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "0b4fd9dfd25e454b3432e8c43b5f3d2b37d8674f2be85bb6e1753496aa721648",
+        "planSegmentTextSha256": "dcd81e27e5ed6fb7c7ddff968fe8abb8cd5f41101083906aa7fecad15e1cbac7"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Minimum membership period: ______",
+          "acceptedResponses": [
+            "1 year",
+            "12 months",
+            "one year",
+            "twelve months"
+          ]
+        },
+        "evidenceSegment": "P1-T10",
+        "audiblePhrase": "The minimum membership period is twelve months. That gives people enough time to prepare the bed, plant it and complete a full growing cycle.",
+        "timecode": {
+          "startFrame": 8779250,
+          "endFrame": 9177914,
+          "sampleRateHz": 44100,
+          "startSeconds": 199.075964,
+          "endSeconds": 208.115964,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "7a7ba5473df8ccbedf7c05f2f7ace5623d6561868ba920425239785c05032aa4",
+        "planSegmentTextSha256": "65203f07c6f275a42f2e1cd27222f9d7f28fe56e03bbdc8fb372a4fcdcb079c9"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Large tool requested: ______",
+          "acceptedResponses": [
+            "wheelbarrow"
+          ]
+        },
+        "evidenceSegment": "P1-T13",
+        "audiblePhrase": "Yes, a wheelbarrow would be the useful one. I can bring my own fork and trowel. What happens before I get the gate code?",
+        "timecode": {
+          "startFrame": 10398249,
+          "endFrame": 10747521,
+          "sampleRateHz": 44100,
+          "startSeconds": 235.787959,
+          "endSeconds": 243.707959,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "c5b337169f45c43af35249e0bd9892d3a0fdac415c3c26ee3d35b3aba0e1ee23",
+        "planSegmentTextSha256": "0e4206717d88075c42ff90b440b86a328bcccb1c09db4d44ab3d72fb88f2bfbc"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Induction date: ______",
+          "acceptedResponses": [
+            "14 may",
+            "14th may",
+            "may 14",
+            "may 14th",
+            "may fourteenth",
+            "14/5",
+            "14/05",
+            "14-5",
+            "14-05",
+            "14 May"
+          ]
+        },
+        "evidenceSegment": "P1-T14",
+        "audiblePhrase": "You attend a short induction. The next one was advertised for the seventh of May, but that session filled yesterday. We've added another on the fourteenth of May, and I can reserve you a place then.",
+        "timecode": {
+          "startFrame": 10838191,
+          "endFrame": 11407963,
+          "sampleRateHz": 44100,
+          "startSeconds": 245.763968,
+          "endSeconds": 258.683968,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "5d99215e3444ae9b1a957ee9ab9c361d32c5e1398f545407f5bc639564bc66a1",
+        "planSegmentTextSha256": "9f97e4c4f26923d403c26c1c579f55e17c6d3c95f47af60100a98abd86f82ea4"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "fill",
+          "questionText": "Where should Isla meet the coordinator for the induction?",
+          "acceptedResponses": [
+            "main gate"
+          ]
+        },
+        "evidenceSegment": "P1-T17",
+        "audiblePhrase": "Meet me at the main gate. I'll check the attendance list there and take the group inside together.",
+        "timecode": {
+          "startFrame": 12393686,
+          "endFrame": 12662696,
+          "sampleRateHz": 44100,
+          "startSeconds": 281.035964,
+          "endSeconds": 287.135964,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "44373acc9d83fa2d46689a45403e7343a8d8609f5a8fa3237791465ff4f2547e",
+        "planSegmentTextSha256": "ea660f540be1bbe30c1afc775512152e27425c4f9f1ab2c8d614d6ba3cb537e0"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "fill",
+          "questionText": "What must Isla bring to the induction?",
+          "acceptedResponses": [
+            "photo id",
+            "photo identification",
+            "photographic id",
+            "photographic identification",
+            "photo ID"
+          ]
+        },
+        "evidenceSegment": "P1-T19",
+        "audiblePhrase": "Neither is necessary because your name will be on my list. Please bring photo ID, though. We must confirm the person receiving the gate code is the applicant.",
+        "timecode": {
+          "startFrame": 13044778,
+          "endFrame": 13503418,
+          "sampleRateHz": 44100,
+          "startSeconds": 295.799955,
+          "endSeconds": 306.199955,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "25a1730818c22a080a639f34ce51a6f87fb53b6ad6ed318073c6a0b7db461050",
+        "planSegmentTextSha256": "e9995f5446fba761bcb680ab97eeb1663dd30c26240944cd6f2c008daf5d8d3a"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "fill",
+          "questionText": "What protective item will the allotment provide?",
+          "acceptedResponses": [
+            "garden gloves",
+            "gardening gloves",
+            "gloves"
+          ]
+        },
+        "evidenceSegment": "P1-T21",
+        "audiblePhrase": "Closed shoes are enough for the induction, and safety glasses aren't needed for the basic tour. We provide gardening gloves, so don't buy those specially. Just choose a pair when you arrive.",
+        "timecode": {
+          "startFrame": 14045143,
+          "endFrame": 14614033,
+          "sampleRateHz": 44100,
+          "startSeconds": 318.483968,
+          "endSeconds": 331.383968,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "6831bbe42b92f41d6f6d7b4c69f88c712628d1537f7f29e7e74f707bd1119ae1",
+        "planSegmentTextSha256": "953bb41822858073846cf4b54426b8c3ab2127e312c310cd2c69d4685cb594a2"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "fill",
+          "questionText": "Who handles last-minute access questions?",
+          "acceptedResponses": [
+            "volunteer",
+            "volunteer team",
+            "volunteers"
+          ]
+        },
+        "evidenceSegment": "P1-T23",
+        "audiblePhrase": "The office is closed on induction mornings. Email the volunteer team instead; one of them monitors that inbox from half past eight and can tell you whether the group has entered the site.",
+        "timecode": {
+          "startFrame": 14985531,
+          "endFrame": 15549129,
+          "sampleRateHz": 44100,
+          "startSeconds": 339.807959,
+          "endSeconds": 352.587959,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "23a10c3b625b70af3dbe868c11070aa335fcdd2de6136bd6c0d2ca754a913871",
+        "planSegmentTextSha256": "30df4b67178c17d3b07e9016d646834de7866b235c2c6f47a39c7cb1428c5539"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "What will happen if low cloud remains over the field at opening time?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "The welcome session beside check-in will last longer."
+        },
+        "evidenceSegment": "P2-S02",
+        "audiblePhrase": "A narrow bank of cloud is forecast around opening time, though the clearer air behind it should arrive soon. If the cloud is still over us at half past seven, we will not cancel or send groups straight to the northern stations. The instruments will stay covered while I spend longer beside the trailer on the safety welcome and a planisphere demonstration. We will release the first rotation only when a useful gap appears.",
+        "timecode": {
+          "startFrame": 21124558,
+          "endFrame": 22234114,
+          "sampleRateHz": 44100,
+          "startSeconds": 479.014921,
+          "endSeconds": 504.174921,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "555905736fee30111c975a3e507ba179dd140b022c22e7ab164a850a3b482320",
+        "planSegmentTextSha256": "ed50d3b7f033d46259d06621fd419670c22b9a311d6562b3330e18086482c350"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "How should visitors use their numbered rotation token?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Return it after their timed telescope turn."
+        },
+        "evidenceSegment": "P2-S03",
+        "audiblePhrase": "At check-in, each small group receives a numbered wooden disc. Suppose yours is three: carry it along the early route, and when three appears on the telescope board, take it to the circle. At the end of that timed turn, place it in the steward’s return tray so the next group can be called. The untimed binocular stop is the exception; carry the disc through there.",
+        "timecode": {
+          "startFrame": 22383613,
+          "endFrame": 23335291,
+          "sampleRateHz": 44100,
+          "startSeconds": 507.564921,
+          "endSeconds": 529.144921,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "4ddf089a0643af1c231cf7c8f63a9b02d0395f808fea286e6edadcc7749f0848",
+        "planSegmentTextSha256": "d1cb6ccd61f4bccc13c3e60627931730597d13ffe395c318faccccbe68e1a541"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "Why must visitors use red-filtered light on the route?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "It protects observers’ night vision."
+        },
+        "evidenceSegment": "P2-S04",
+        "audiblePhrase": "Switch ordinary white torches off before leaving the trailer. A bright beam can undo the adjustment your eyes have made and affect people nearby. A deep red filter gives enough light for the arrows while preserving far more of that dark adaptation. Keep phone screens dimmed and inside a red sleeve unless a steward requests one in an emergency.",
+        "timecode": {
+          "startFrame": 23484790,
+          "endFrame": 24392368,
+          "sampleRateHz": 44100,
+          "startSeconds": 532.534921,
+          "endSeconds": 553.114921,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "5144f6f6cb38c5632900648dd822ef83a8c086255edb345d9327370a2c57be3e",
+        "planSegmentTextSha256": "f969e9745799cd019d6288e5e3a16f39cbd8bbe1ddb44e9b24acb2e177e1e9c0"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "What is the main reason for relocating the smallest portable telescope?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "To provide a stable station for a visitor using a mobility aid."
+        },
+        "evidenceSegment": "P2-S05",
+        "audiblePhrase": "Most instruments stand on grass, which is soft after rain. One visitor tonight uses a mobility aid and cannot safely reach those tripods. Staff will therefore relocate our smallest portable telescope after the gate closes, when vehicle movements have ended and stray light can be screened. A steward will also bring a suitable seat and keep the approach clear. Together, these changes create a stable observing station without adding another lit path.",
+        "timecode": {
+          "startFrame": 24541867,
+          "endFrame": 25756381,
+          "sampleRateHz": 44100,
+          "startSeconds": 556.504921,
+          "endSeconds": 584.044921,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "7fa9b847c4488d6c90d78fe2345ae2acb3bca8cdcdf6e04bae7c138d7f0a09e0",
+        "planSegmentTextSha256": "fec14740960fe2488eac735be857f7cd9da797e0f85f4d10843b4b3e5471d4b8"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "Equipment issue point",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A"
+        },
+        "evidenceSegment": "P2-S07",
+        "audiblePhrase": "Before joining the dark path, collect any borrowed seat, blanket or star wheel from the table immediately beside the check-in trailer. Damaged equipment is exchanged there; the desk inside handles names only. Then walk towards the south-east corner of the route.",
+        "timecode": {
+          "startFrame": 26755907,
+          "endFrame": 27420053,
+          "sampleRateHz": 44100,
+          "startSeconds": 606.709909,
+          "endSeconds": 621.769909,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "ad70e5329e34f8d37340229cc5520654e3cbf0674a29d023c8b00ad07bd4c2ff",
+        "planSegmentTextSha256": "d578279166a96580d6da648246d1ec78db8ff7f573974590f54c004648a758f5"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "Red-light check",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B"
+        },
+        "evidenceSegment": "P2-S08",
+        "audiblePhrase": "At the threshold where the route leaves the arrival side, a steward will inspect torch filters and cover any remaining white LEDs. This checkpoint is before the path bends west, not on the paved return strip. Continue across the bottom of the airstrip until you reach the gap in the western hedge.",
+        "timecode": {
+          "startFrame": 27569552,
+          "endFrame": 28297202,
+          "sampleRateHz": 44100,
+          "startSeconds": 625.159909,
+          "endSeconds": 641.659909,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "b0598e3df73fef42562984a939126079de8cd0ddad5260808cbf112a0fa50734",
+        "planSegmentTextSha256": "d55f76b5f1b9fb5860299c9be00fc9f74b12915e4728082761745ff6bb01dbca"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "Wide-field binocular station",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C"
+        },
+        "evidenceSegment": "P2-S09",
+        "audiblePhrase": "Just through that south-west gap, low tripod mounts carry the wide-view binoculars. They face the broad southern sky and sit close to the hedge for shelter. Farther north, a recess holds spare folded tripods; that position is marked on the plan but has no activity for visitors tonight, so keep walking past it.",
+        "timecode": {
+          "startFrame": 28446701,
+          "endFrame": 29316353,
+          "sampleRateHz": 44100,
+          "startSeconds": 645.049909,
+          "endSeconds": 664.769909,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "77a69bd8712f8390a41950a268708e76a00ebaf69b25b5564bd725d931a479df",
+        "planSegmentTextSha256": "9356b2588e2b6e0c79309a9e25505d05f26f73368b0b6969e58b7bc696526dcb"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "Telescope circle",
+          "correctOptionIndex": 4,
+          "correctOptionText": "E"
+        },
+        "evidenceSegment": "P2-S10",
+        "audiblePhrase": "The path then reaches a round clearing in the north-west corner. The larger telescopes form an arc there, leaving the centre open for people to change places safely. It may look quicker to approach them from the airstrip, but all groups must enter from the western path and leave across the top.",
+        "timecode": {
+          "startFrame": 29465852,
+          "endFrame": 30192620,
+          "sampleRateHz": 44100,
+          "startSeconds": 668.159909,
+          "endSeconds": 684.639909,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "faac7739f46b93abd39fe0fd3bcc4f8a0f030e8943b491bdfa8ac43292c7fa52",
+        "planSegmentTextSha256": "5d4844562fee34e05c511ca83ac437928b6d15e2fb62e5ac007f04628cbc363c"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "Meteor-observation marker",
+          "correctOptionIndex": 6,
+          "correctOptionText": "G"
+        },
+        "evidenceSegment": "P2-S11",
+        "audiblePhrase": "Across the northern end you will see a ground marker for the meteor count. It is near the wind sock but deliberately several paces south of it, so observers can look upward without standing beneath the mast. The spur on the north-east side is reserved for a later horizon talk and is not part of the count.",
+        "timecode": {
+          "startFrame": 30342119,
+          "endFrame": 31127099,
+          "sampleRateHz": 44100,
+          "startSeconds": 688.029909,
+          "endSeconds": 705.829909,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "19c7bd600855cc9c9298922e60648cad8e25df5f5b065a76ef5d0e842d63421d",
+        "planSegmentTextSha256": "abc9579b9790f77a490ce717cd8dc050af2238a14b07a52af76d71c05ad236c2"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "Firm-surface viewing pad",
+          "correctOptionIndex": 7,
+          "correctOptionText": "H"
+        },
+        "evidenceSegment": "P2-S12",
+        "audiblePhrase": "Finally, turn down the eastern return edge. The level viewing patch is at the southern end of that edge, beside the arrival lane and opposite the trailer. Shielding will be ready before the portable instrument arrives. After finishing, continue directly to check-out rather than circling again.",
+        "timecode": {
+          "startFrame": 31276598,
+          "endFrame": 32038646,
+          "sampleRateHz": 44100,
+          "startSeconds": 709.219909,
+          "endSeconds": 726.499909,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "15c11dc3a5ee7b12c969fc4939aa777c114fd9cf7e066f332f64efe5eb18409e",
+        "planSegmentTextSha256": "87d9de74a7551353214f6cd672c47450ae86c2930e3665ce40dce540f33800d7"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "weigh the dry ingredients",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A"
+        },
+        "evidenceSegment": "P3-T03",
+        "audiblePhrase": "I'll take the scales, then. I can prepare every set of dry ingredients and seal each one in a labelled container before the first mixer is free.",
+        "timecode": {
+          "startFrame": 37741745,
+          "endFrame": 38210969,
+          "sampleRateHz": 44100,
+          "startSeconds": 855.821882,
+          "endSeconds": 866.461882,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "5d352dda49d5483d82b151ecfa48a7da0d459f6e08209809fe5a36fc7b10d3f5",
+        "planSegmentTextSha256": "5a9182e92400c04cd4582a56f66aa1d2a6c683d24b93c14804008df1ae8f5c90"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "check the allergen matrix",
+          "correctOptionIndex": 2,
+          "correctOptionText": "C"
+        },
+        "evidenceSegment": "P3-T05",
+        "audiblePhrase": "Agreed. We each need to verify every line and add our initials. If either signature is missing, the assessor will send the batch back before production starts.",
+        "timecode": {
+          "startFrame": 38833352,
+          "endFrame": 39333446,
+          "sampleRateHz": 44100,
+          "startSeconds": 880.574875,
+          "endSeconds": 891.914875,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "29a8d6aa93541c13120ef780a5a16c9c688fbab7d650ef726455fe7f91cbaf58",
+        "planSegmentTextSha256": "79993203c311b1e3c713c4619789e2f322e5242b0c76174cb3dcba273d80dbac"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "monitor the shared proofer",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B"
+        },
+        "evidenceSegment": "P3-T07",
+        "audiblePhrase": "I'll stay responsible for that cabinet once the trays enter it. I can note each time and give you a warning before a check is due, even while the pastry cases are resting.",
+        "timecode": {
+          "startFrame": 39975233,
+          "endFrame": 40469153,
+          "sampleRateHz": 44100,
+          "startSeconds": 906.467868,
+          "endSeconds": 917.667868,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "3b035c2bb385031cccb5263b505e1847a845c5ec3bd9b69f7f2259ed7314663b",
+        "planSegmentTextSha256": "51bbaa8190e498f5df3b3e20c8527cfb1f8d20cc5dac63301e09faafe883dc3a"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "load products into the oven",
+          "correctOptionIndex": 1,
+          "correctOptionText": "B"
+        },
+        "evidenceSegment": "P3-T09",
+        "audiblePhrase": "Since I'll have those times in front of me, I'll handle the loading as well. You can remain at the bench and finish the next shaping task without crossing the room.",
+        "timecode": {
+          "startFrame": 41130345,
+          "endFrame": 41542239,
+          "sampleRateHz": 44100,
+          "startSeconds": 932.660884,
+          "endSeconds": 942.000884,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "4cf65615b143775967b5ab269c8b2032f0684faf977fb544a953c0317cbc1db0",
+        "planSegmentTextSha256": "a10fb656fc588cb742b71091d05f7519f1d7898318b0709a7a8f276fb5a585d8"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "record the cooling temperatures",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A"
+        },
+        "evidenceSegment": "P3-T11",
+        "audiblePhrase": "Leave the temperature record with me. It fits the traceability paperwork I'm already keeping, and you won't have to stop cleaning whenever a product reaches the next check point.",
+        "timecode": {
+          "startFrame": 42136398,
+          "endFrame": 42600330,
+          "sampleRateHz": 44100,
+          "startSeconds": 955.473878,
+          "endSeconds": 965.993878,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "752d55c3133e59715dd107d13836b41c4690b7817f2cd25912ef3b7c54a02115",
+        "planSegmentTextSha256": "9a25fe92f10cd3c04ea4fdab6352eff3b1d5afa8d566335ec67eec070a311299"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "mcq",
+          "questionText": "Why do the apprentices decide to start the seeded loaves first?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "They need the longest proofing time."
+        },
+        "evidenceSegment": "P3-T14",
+        "audiblePhrase": "Then the seeded batch has to go through the mixer before the others. Its pre-weighed flour saves a few minutes, but that convenience would not matter if the rise were as short as the buns'.",
+        "timecode": {
+          "startFrame": 43934972,
+          "endFrame": 44435948,
+          "sampleRateHz": 44100,
+          "startSeconds": 996.257868,
+          "endSeconds": 1007.617868,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "a6b75f8e1f606c4655f25935d5223e9a94ae6aea989acc1193bbed75c5926b4c",
+        "planSegmentTextSha256": "c3eff7729518b75887f027897e6d4a7e8f418579e163a89d00a79cadcd7d2544"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "mcq",
+          "questionText": "When will they mix the pastry filling?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "while the first loaves are proofing"
+        },
+        "evidenceSegment": "P3-T16",
+        "audiblePhrase": "So that gap is when we should prepare the filling. Doing it at the very beginning would interrupt the dough setup, and leaving it until the baking is nearly over would make packing impossible.",
+        "timecode": {
+          "startFrame": 45261192,
+          "endFrame": 45802740,
+          "sampleRateHz": 44100,
+          "startSeconds": 1026.330884,
+          "endSeconds": 1038.610884,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "0127d62acc06bb7fc8f846293b6b9acf273238909c4132b9c6b7675cad51d334",
+        "planSegmentTextSha256": "be0a4bc03dc0c55514c7c0a38534b31de7ef3faa260d9a6f899b9fbcb22936b4"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "mcq",
+          "questionText": "What do they identify as the main limitation on the schedule?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "only one oven is available"
+        },
+        "evidenceSegment": "P3-T18",
+        "audiblePhrase": "The queue forms farther along. Our pair has a single oven, and the three products require separate settings. Even if several trays finish rising together, they cannot all move on at once.",
+        "timecode": {
+          "startFrame": 46540665,
+          "endFrame": 47136897,
+          "sampleRateHz": 44100,
+          "startSeconds": 1055.343878,
+          "endSeconds": 1068.863878,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "a714d1fc75f5344571eeb234024081fbaf0bfd7b11ecc4d4dfd5a02eea782ac0",
+        "planSegmentTextSha256": "9b0add32fd9305e31447e49f35e1e12df310f4eb138226bde8039061ffa08b38"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "mcq",
+          "questionText": "Why do they reject dividing the enriched dough by eye?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "It could produce loaves of uneven size."
+        },
+        "evidenceSegment": "P3-T20",
+        "audiblePhrase": "The yeast would survive that, but the portions would vary in weight. The small ones would colour before the large ones had cooked through, and the display would look inconsistent.",
+        "timecode": {
+          "startFrame": 47835132,
+          "endFrame": 48314940,
+          "sampleRateHz": 44100,
+          "startSeconds": 1084.696871,
+          "endSeconds": 1095.576871,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "93436b2bad696f31528969c1f9d35307dc6dfdeff7fce10da35ca62fe83b705d",
+        "planSegmentTextSha256": "56cf661d4f5713ceb7efbc914a0bab1281c11e760cae0120e1c9a306f5a81f6d"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "mcq",
+          "questionText": "What final quality priority do they agree on?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "achieving an even bake"
+        },
+        "evidenceSegment": "P3-T23",
+        "audiblePhrase": "We'll protect that consistency, then. One tray rotation should correct the hot side, and we can reduce the output rather than crowding the oven and getting mixed results.",
+        "timecode": {
+          "startFrame": 49676925,
+          "endFrame": 50169081,
+          "sampleRateHz": 44100,
+          "startSeconds": 1126.460884,
+          "endSeconds": 1137.620884,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "f96abbb5b39f216dadcfb1d3c10ab9fc7b32abe8cc9400790623ca4c669a02dc",
+        "planSegmentTextSha256": "274eca7cfed582d8cf6107911aba1586e96b0abf2b32d13088c39eeb488c4f20"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "The basic feedstock often includes agricultural ______.",
+          "acceptedResponses": [
+            "residue"
+          ]
+        },
+        "evidenceSegment": "P4-S02",
+        "audiblePhrase": "The starting mixture is usually described as a substrate. Rather than using a solid sheet of finished paper, producers may begin with husks, stalk fragments or similar material left after crops are harvested or processed. In materials research, these secondary agricultural streams are commonly grouped under the term residue. They provide both physical bulk and nutrients, although their exact composition depends on the original crop and on what happened during processing.",
+        "timecode": {
+          "startFrame": 56012948,
+          "endFrame": 57463838,
+          "sampleRateHz": 44100,
+          "startSeconds": 1270.134875,
+          "endSeconds": 1303.034875,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "06365892c380bac117316a8156dfb4fc07e638c3e4f199561fd5b67f742b0b48",
+        "planSegmentTextSha256": "8c9c3af5d245c07d6b3d1444b25480fad96fb7e48e880b5473f832a516cb98e0"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "The fine fungal threads are known as ______.",
+          "acceptedResponses": [
+            "hyphae"
+          ]
+        },
+        "evidenceSegment": "P4-S03",
+        "audiblePhrase": "The fungus is easy to misunderstand because a mushroom is the part most people recognise. Inside this composite, however, the active structure is made of microscopic filaments. One individual filament is a hypha; in the plural, those fine fungal threads are called hyphae. The distinction matters because hyphae are fungal structures, not plant fibres in the substrate. Together, many hyphae form the mycelium that grows through the material.",
+        "timecode": {
+          "startFrame": 57629213,
+          "endFrame": 58980437,
+          "sampleRateHz": 44100,
+          "startSeconds": 1306.784875,
+          "endSeconds": 1337.424875,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "61d462bddbcdd59c4998150d06086f677fefa280739e8d57c52a1d72bb36ed48",
+        "planSegmentTextSha256": "991bf98f619db7cd9e955d4121a9b8f4a14a4fc50902b01ac6f35635ccd06f7e"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "As the threads spread, they form a binding ______.",
+          "acceptedResponses": [
+            "network"
+          ]
+        },
+        "evidenceSegment": "P4-S04",
+        "audiblePhrase": "As the filaments extend, they branch around neighbouring particles and cross one another. Separate pieces that could once be poured begin to behave as one body. We can describe the connected arrangement as a binding network. The comparison with glue is only partial: a conventional adhesive is normally introduced as a liquid between surfaces, while here the connections develop as the organism spreads through the available spaces.",
+        "timecode": {
+          "startFrame": 59145812,
+          "endFrame": 60360326,
+          "sampleRateHz": 44100,
+          "startSeconds": 1341.174875,
+          "endSeconds": 1368.714875,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "ab071df7db718129b8edc185fce1340d40801155aeed04e7960b37a9c635e71d",
+        "planSegmentTextSha256": "325b50343df1ac51ac4c7b48874556d8f33143bd2bb380a06ed797d4a330615a"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "After forming, controlled ______ prevents continued fungal growth.",
+          "acceptedResponses": [
+            "drying"
+          ]
+        },
+        "evidenceSegment": "P4-S05",
+        "audiblePhrase": "That growth must be brought to an end once the component has filled the intended form. Otherwise its dimensions and surface could continue to change during storage. The research review reports that controlled drying is commonly used to stop fungal growth on the substrate. This also lowers available water, but the effects should not be reversed: the evidence does not establish that only a separate high-temperature stage can end growth.",
+        "timecode": {
+          "startFrame": 60525701,
+          "endFrame": 61804601,
+          "sampleRateHz": 44100,
+          "startSeconds": 1372.464875,
+          "endSeconds": 1401.464875,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "c7a209562f7565afae1ce2366657037e45742431ee995f20b0e964b26ebf88eb",
+        "planSegmentTextSha256": "ea7272bb9476f07b98d64ed883b03803ee5d4b81e77eb11d0214bced2dedbc0d"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "A thin ______ can protect the outer surface during brief liquid contact.",
+          "acceptedResponses": [
+            "coating",
+            "layer"
+          ]
+        },
+        "evidenceSegment": "P4-S06",
+        "audiblePhrase": "A bare composite may cushion an object well while remaining vulnerable to liquid at its outer surface. Designers can respond by applying a thin coating. Such a layer may reduce uptake during brief contact, but it does not make every design waterproof, and its chemistry may alter end-of-life options. The improvement must therefore be evaluated alongside disposal requirements rather than treated as an automatic environmental benefit.",
+        "timecode": {
+          "startFrame": 61969976,
+          "endFrame": 63346778,
+          "sampleRateHz": 44100,
+          "startSeconds": 1405.214875,
+          "endSeconds": 1436.434875,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "e4bbaa81c71f8f4ed297bdb09f01de3a1300dc44c81cd90990f90ebf6a87e21e",
+        "planSegmentTextSha256": "5161cea359260af0f3e0c97b11b3d598d06b4572e0df0e6636e2bbdf4d017305"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "Available plant matter → first ______ for the trial",
+          "acceptedResponses": [
+            "selected"
+          ]
+        },
+        "evidenceSegment": "P4-S08",
+        "audiblePhrase": "First consider substrate selection. The review notes that agricultural wastes differ by type and are selected according to availability and suitability. For this teaching comparison, the incoming plant matter is therefore selected before further preparation; obviously unsuitable foreign pieces are excluded. Washing may remove surface dirt, but it does not decide which plant fraction enters the trial.",
+        "timecode": {
+          "startFrame": 65151570,
+          "endFrame": 66441936,
+          "sampleRateHz": 44100,
+          "startSeconds": 1477.359864,
+          "endSeconds": 1506.619864,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "f610f3df9345f033aeea9a10904d0da34c271fc2b4f04c3b8977939ab2d91be7",
+        "planSegmentTextSha256": "168dfc83b462557b91fcc4d77c41d2d64e84cdc96867054f406d55a8b150ef7f"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "Larger pieces → ______ for more consistent size",
+          "acceptedResponses": [
+            "shredded"
+          ]
+        },
+        "evidenceSegment": "P4-S09",
+        "audiblePhrase": "The retained pieces then pass through a cutting mill and are shredded to make their size more consistent. They should not become fine powder, since densely packed dust would leave little air space. Controlled variation is the aim: fragments should mix evenly yet remain open enough for gases to move through the bed.",
+        "timecode": {
+          "startFrame": 66607311,
+          "endFrame": 67564281,
+          "sampleRateHz": 44100,
+          "startSeconds": 1510.369864,
+          "endSeconds": 1532.069864,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "f602603cf2d5af3790d8ab1af62ccfc64995dbb15ada5aba8d765f2b1653edd1",
+        "planSegmentTextSha256": "989bf2d378afd9f95931442c724b18bfb3148dbc7b670ee3f744fc1bca6a9b88"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "During incubation → growth and colonisation affected by ______",
+          "acceptedResponses": [
+            "pH",
+            "ph"
+          ]
+        },
+        "evidenceSegment": "P4-S10",
+        "audiblePhrase": "Next comes incubation, when the fungus spreads through the prepared substrate. The review identifies pH as one condition that can affect both mycelial growth and colonisation. In a teaching comparison, technicians would therefore record this condition at regular intervals before the developing material moves to the shaping stage; particle size has already been set.",
+        "timecode": {
+          "startFrame": 67729656,
+          "endFrame": 68891250,
+          "sampleRateHz": 44100,
+          "startSeconds": 1535.819864,
+          "endSeconds": 1562.159864,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "b387136afb3cef9686fb2c2c7f428e5bb4976f69fbb6d495480dc23bf69eadb3",
+        "planSegmentTextSha256": "fca6cdba5b153542c389093f6f992b8af4bd3015544f3866585b06e1aa62e181"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "Colonised mixture → placed into ______ for shaping",
+          "acceptedResponses": [
+            "molds",
+            "moulds"
+          ]
+        },
+        "evidenceSegment": "P4-S11",
+        "audiblePhrase": "After a fungal culture has been introduced and has begun to establish, the developing mixture must acquire the geometry of the package. It is placed into moulds that define corners, trays or protective blocks. A flat rack could support a piece later, but it would not impose the required three-dimensional form. At this stage the container is therefore also a shaping tool.",
+        "timecode": {
+          "startFrame": 69056625,
+          "endFrame": 70191759,
+          "sampleRateHz": 44100,
+          "startSeconds": 1565.909864,
+          "endSeconds": 1591.649864,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "fe397bf210a5ef682ad3cadc4760ecf0bf402a5ab321b5f853b9d7459d038e2e",
+        "planSegmentTextSha256": "229d75a7c3f5111465bc92e875063dcfd76002de6d9752c01f3204b69f3458ee"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "After direct liquid exposure → measure ______",
+          "acceptedResponses": [
+            "water absorption",
+            "absorption",
+            "uptake"
+          ]
+        },
+        "evidenceSegment": "P4-S12",
+        "audiblePhrase": "After the shaped samples have been dried, the final stage is performance testing. One measurement is water absorption: researchers record how much liquid the composite takes up under a stated test condition. The review reports substantial variation between composites and identifies high uptake as an important limitation. This measure concerns direct contact with water; it does not justify a claim that ordinary changes in ambient humidity make a stored component expand or contract.",
+        "timecode": {
+          "startFrame": 70357134,
+          "endFrame": 71890932,
+          "sampleRateHz": 44100,
+          "startSeconds": 1595.399864,
+          "endSeconds": 1630.179864,
+          "basis": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY_MASTER_SAMPLE_ROUNDED"
+        },
+        "ledgerRowSha256": "eaabfa5da171a1e7934325b8135298457df9c18ea91f5fa9864c78e7950f5da8",
+        "planSegmentTextSha256": "8d1bdae5115bab1f278a770a3b49c17d9610377b82561c989a46b642451c808d"
+      }
+    ],
+    "provenance": {
+      "method": "CHATTERBOX_RAW_CACHE_EDGES_CACHE_ASSEMBLY",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/listening/set22-listening-content-v2.1.1.json",
+        "sha256": "3ea4286e381c03ed416c0f0903a404a3b61fb9dc880a48c1eab149b3a780fe10"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "d1eab4dae894cb2c50555601d86a75ba45a6fbafed25a52bd149a69d4e88d48c",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-22/set22-audio-production-plan.json",
+        "sha256": "a4e407d9cca88cca2540214f8278074d9a39652c1af3facc9a4423503df67149"
+      },
+      "technicalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/listening/ielts-set-22-listening-technical-qa.json",
+        "sha256": "5f1f4d6b2ba557c629af5c7e45cd97d3a3679ac072c22f904aaf569d4302ed8b"
+      },
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/listening/ielts-set-22-listening-master.wav",
+        "sha256": "492637bcb681139c4b603e6657f6456f329e1804758da61d6f0b135a3cba649c",
+        "frameCount": 80508952,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-22/listening/ielts-set-22-listening.mp3",
+        "sha256": "3094497d7271d7cd47d8cd16a3abdacc62bfba292b63bf09851cb29297114491"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-22.mp3",
+        "sha256": "3094497d7271d7cd47d8cd16a3abdacc62bfba292b63bf09851cb29297114491"
+      },
+      "cacheAggregateSha256": "d2fe0130ce9bc668e297055099f0a3617eb389719443ea48564337a085870359",
+      "calculatedDurationSeconds": 1825.599875,
+      "masterDurationSeconds": 1825.599819
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "6efc95c6776bf19c78673a751cf41e772a039e7ddaa1ae404e99f91c53c47de1"
+  }
+}

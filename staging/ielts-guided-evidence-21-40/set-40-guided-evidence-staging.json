@@ -1,0 +1,1976 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "IELTS_GUIDED_EVIDENCE_STAGING",
+  "set": 40,
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "releaseAuthorized": false,
+  "runtimeIntegration": {
+    "connected": false
+  },
+  "sourceBindings": {
+    "canonicalMock": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/src/data/mocks/ielts-set-40.ts",
+      "sha256": "b1f20b6a0f1e2a10aada414a6520ac809de129a748b730c5c08249a512f673f6"
+    },
+    "batchControl": {
+      "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/mock-factory/batch-21-40.json",
+      "sha256": "df7e671dbd007ea28988fbf78675e6d5ce29dc7f69bdee9bd2e77a614c774504"
+    },
+    "generator": {
+      "path": "/private/tmp/ielts-prod-audit.9UhQtF/scripts/stage-ielts-guided-evidence-21-40.mjs",
+      "sha256": "7ea74bf8017d2eeeabb1063d8958f8d2585e8cc89a26bc11afce704a441fc670"
+    }
+  },
+  "reading": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "rowCount": 40,
+    "rows": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "r-q01",
+          "responseType": "mcq",
+          "questionText": "Which paragraph clarifies that the glaze was formed inside the kiln?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Paragraph C"
+        },
+        "sourceExcerpt": "Near the hottest stage of firing, salt was introduced into the kiln. Sodium compounds in the vapour reacted with silica and alumina at the clay surface, producing a glass-like skin. The characteristic texture was not a painted coating added after firing; it formed through a reaction during the firing itself. Kiln conditions varied, so colour and coverage were not perfectly uniform. A glossy appearance alone could not guarantee that a pipe was sound throughout its wall.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph clarifies that the glaze was formed inside the kiln?» y la clave es «Paragraph C». La evidencia dice «Near the hottest stage of firing, salt was introduced into the kiln.». La coincidencia semántica se apoya en «kiln»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports C; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "4ad0b57f95a95b893fe658a99dcf59b2ec06e39e7861ad7d00ed69b826cf1f53",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "r-q02",
+          "responseType": "mcq",
+          "questionText": "Which paragraph warns that a larger diameter alone may not improve transport?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Paragraph F"
+        },
+        "sourceExcerpt": "The glazed interior absorbed little water and offered a relatively smooth path for flow. Sediment was less likely to cling than on a rough surface, although insufficient slope could still allow solids to settle. Engineers therefore considered diameter and gradient together. Making a pipe larger did not automatically improve performance if flow became too shallow to carry deposits. The network worked as a system whose joints, alignment and operating conditions were as important as the ceramic body.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph warns that a larger diameter alone may not improve transport?» y la clave es «Paragraph F». La evidencia dice «Making a pipe larger did not automatically improve performance if flow became too shallow to carry deposits.». La coincidencia semántica se apoya en «larger», «improve»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports F; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "08cf78d85faf874e9e930901da4c9f56714f10764a1d9ae3a252bc46c353f12d",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "r-q03",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes the production of a socket?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Paragraph B"
+        },
+        "sourceExcerpt": "Prepared clay was pushed through a die or shaped in moulds to make a hollow cylinder. Consistent wall thickness mattered: a thin patch could fail during firing, while an uneven pipe was difficult to align in a trench. Workers formed a widened socket at one end so that the plain end of the next pipe could enter it. Before firing, lengths were dried gradually. Rapid drying created cracks that a glaze could not repair.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes the production of a socket?» y la clave es «Paragraph B». La evidencia dice «Workers formed a widened socket at one end so that the plain end of the next pipe could enter it.». La coincidencia semántica se apoya en «socket»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports B; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "efc86a990d395bb9c78c5428bd0e2e73eb816099c42ab7fc8a402777c83a67b5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "r-q04",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes the role of bedding below a pipe?",
+          "correctOptionIndex": 4,
+          "correctOptionText": "Paragraph E"
+        },
+        "sourceExcerpt": "At installation, the plain end of one pipe entered the socket of another. The surrounding gap was packed and sealed with jointing material. A rigid seal prevented soil from entering, but poor workmanship could leave a route for leakage or root intrusion. Bedding beneath the pipe distributed loads from the ground above. Durable clay could still break if supported at isolated points or struck during backfilling; material strength did not compensate for a badly prepared trench.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes the role of bedding below a pipe?» y la clave es «Paragraph E». La evidencia dice «Bedding beneath the pipe distributed loads from the ground above.». La coincidencia semántica se apoya en «bedding», «pipe»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports E; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "fb8c162614f4b22bda26f08a847c5436453470e061308748d7c0ed50906e69b5",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "r-q05",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why porous earthenware was unsuitable for wet conditions?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Paragraph A"
+        },
+        "sourceExcerpt": "As towns expanded, drains that had once served a few buildings had to carry waste and storm water over longer distances. Open channels leaked, smelled and were easily obstructed. Builders needed pipes that could be produced in repeated lengths, laid underground and resist constant contact with moisture. Fired clay offered compressive strength and did not rot, but ordinary porous earthenware could absorb water. Salt glazing helped turn the surface into a denser barrier.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why porous earthenware was unsuitable for wet conditions?» y la clave es «Paragraph A». La evidencia dice «Fired clay offered compressive strength and did not rot, but ordinary porous earthenware could absorb water.». La coincidencia semántica se apoya en «porous», «earthenware»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports A; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "441252ff36dd0ae6754da69522a2c6deeb8bd706e1ffb8087ea2dfadbb7a0a38",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "r-q06",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why straightness mattered across multiple lengths?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Paragraph D"
+        },
+        "sourceExcerpt": "Manufacturers rejected lengths that had warped, cracked or fused to their supports. A clear ringing sound when tapped could suggest successful firing, whereas a dull response might indicate a defect, but visual and dimensional checks were also required. Straightness was especially important because small deviations accumulated across a long sewer run. Standardised diameters made replacement and connection easier, turning the pipe from a local craft item into a component of a larger engineered network.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why straightness mattered across multiple lengths?» y la clave es «Paragraph D». La evidencia dice «Straightness was especially important because small deviations accumulated across a long sewer run.». La coincidencia semántica se apoya en «straightness», «across»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports D; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "084a9fd52b32c4eda8ac69a576b53c518145a29cb6b15311c039590e43507f3a",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "r-q07",
+          "responseType": "fill",
+          "questionText": "What raw material was shaped into the pipe body?",
+          "acceptedResponses": [
+            "clay"
+          ]
+        },
+        "sourceExcerpt": "Prepared clay was pushed through a die or shaped in moulds to make a hollow cylinder. Consistent wall thickness mattered: a thin patch could fail during firing, while an uneven pipe was difficult to align in a trench. Workers formed a widened socket at one end so that the plain end of the next pipe could enter it. Before firing, lengths were dried gradually. Rapid drying created cracks that a glaze could not repair.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What raw material was shaped into the pipe body?» y acepta «clay». La oración fuente dice «Prepared clay was pushed through a die or shaped in moulds to make a hollow cylinder.». Esa oración contiene la respuesta y la conecta con «shaped», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports clay; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "2204002f4d60bb27898b771eb7e65934112751f88db7df2a023b397e3022b214",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "r-q08",
+          "responseType": "fill",
+          "questionText": "What widened component received the next pipe?",
+          "acceptedResponses": [
+            "socket"
+          ]
+        },
+        "sourceExcerpt": "Prepared clay was pushed through a die or shaped in moulds to make a hollow cylinder. Consistent wall thickness mattered: a thin patch could fail during firing, while an uneven pipe was difficult to align in a trench. Workers formed a widened socket at one end so that the plain end of the next pipe could enter it. Before firing, lengths were dried gradually. Rapid drying created cracks that a glaze could not repair.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What widened component received the next pipe?» y acepta «socket». La oración fuente dice «Workers formed a widened socket at one end so that the plain end of the next pipe could enter it.». Esa oración contiene la respuesta y la conecta con «widened», «next», «pipe», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports socket; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "a4ba87d58f56a42496f8aa4cec7a6d078c52708f2e42333749dc0b3c84ccaada",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "r-q09",
+          "responseType": "fill",
+          "questionText": "What substance was introduced near the hottest firing stage?",
+          "acceptedResponses": [
+            "salt"
+          ]
+        },
+        "sourceExcerpt": "Near the hottest stage of firing, salt was introduced into the kiln. Sodium compounds in the vapour reacted with silica and alumina at the clay surface, producing a glass-like skin. The characteristic texture was not a painted coating added after firing; it formed through a reaction during the firing itself. Kiln conditions varied, so colour and coverage were not perfectly uniform. A glossy appearance alone could not guarantee that a pipe was sound throughout its wall.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What substance was introduced near the hottest firing stage?» y acepta «salt». La oración fuente dice «Near the hottest stage of firing, salt was introduced into the kiln.». Esa oración contiene la respuesta y la conecta con «introduced», «near», «hottest», «firing», «stage», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports salt; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "b38fb094915634585acfffdbe22676b5f3d90ceaf3f807d2b1035cc3708390bc",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "r-q10",
+          "responseType": "fill",
+          "questionText": "What sound could indicate that firing had succeeded?",
+          "acceptedResponses": [
+            "ringing sound"
+          ]
+        },
+        "sourceExcerpt": "Manufacturers rejected lengths that had warped, cracked or fused to their supports. A clear ringing sound when tapped could suggest successful firing, whereas a dull response might indicate a defect, but visual and dimensional checks were also required. Straightness was especially important because small deviations accumulated across a long sewer run. Standardised diameters made replacement and connection easier, turning the pipe from a local craft item into a component of a larger engineered network.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What sound could indicate that firing had succeeded?» y acepta «ringing sound». La oración fuente dice «A clear ringing sound when tapped could suggest successful firing, whereas a dull response might indicate a defect, but visual and dimensional checks were also required.». Esa oración contiene la respuesta y la conecta con «sound», «indicate», «firing», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports ringing sound; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "515223c5a6ff9b2947675dbb2cc236561fa3a290ef4de2f1f5e6a59b08aedd0b",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "r-q11",
+          "responseType": "fill",
+          "questionText": "What entered a socket during installation?",
+          "acceptedResponses": [
+            "plain end"
+          ]
+        },
+        "sourceExcerpt": "At installation, the plain end of one pipe entered the socket of another. The surrounding gap was packed and sealed with jointing material. A rigid seal prevented soil from entering, but poor workmanship could leave a route for leakage or root intrusion. Bedding beneath the pipe distributed loads from the ground above. Durable clay could still break if supported at isolated points or struck during backfilling; material strength did not compensate for a badly prepared trench.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What entered a socket during installation?» y acepta «plain end». La oración fuente dice «At installation, the plain end of one pipe entered the socket of another.». Esa oración contiene la respuesta y la conecta con «entered», «socket», «installation», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports plain end; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "f13e022995fcaa1e9e140f19dccc6c8cc188f4e676ad9b3767ec1d12d6fb682f",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "r-q12",
+          "responseType": "fill",
+          "questionText": "What biological problem could a defective joint admit?",
+          "acceptedResponses": [
+            "root intrusion"
+          ]
+        },
+        "sourceExcerpt": "At installation, the plain end of one pipe entered the socket of another. The surrounding gap was packed and sealed with jointing material. A rigid seal prevented soil from entering, but poor workmanship could leave a route for leakage or root intrusion. Bedding beneath the pipe distributed loads from the ground above. Durable clay could still break if supported at isolated points or struck during backfilling; material strength did not compensate for a badly prepared trench.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «What biological problem could a defective joint admit?» y acepta «root intrusion». La oración fuente dice «A rigid seal prevented soil from entering, but poor workmanship could leave a route for leakage or root intrusion.». Esa oración contiene la respuesta y la conecta con la misma relación descrita en la pregunta, de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports root intrusion; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "91b0f4557feb954e6f0dfabcf01071172e3f6d64dab8c6a9fe5a7904614c4de7",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "r-q13",
+          "responseType": "fill",
+          "questionText": "Which dimension was considered together with gradient?",
+          "acceptedResponses": [
+            "diameter"
+          ]
+        },
+        "sourceExcerpt": "The glazed interior absorbed little water and offered a relatively smooth path for flow. Sediment was less likely to cling than on a rough surface, although insufficient slope could still allow solids to settle. Engineers therefore considered diameter and gradient together. Making a pipe larger did not automatically improve performance if flow became too shallow to carry deposits. The network worked as a system whose joints, alignment and operating conditions were as important as the ceramic body.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Which dimension was considered together with gradient?» y acepta «diameter». La oración fuente dice «Engineers therefore considered diameter and gradient together.». Esa oración contiene la respuesta y la conecta con «considered», «together», «gradient», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports diameter; alternatives conflict with the cited wording or are not stated.",
+        "ledgerRowSha256": "54571e6fe4383721fd61be07f4dc2c399c733110c069a598cd16d25f45050776",
+        "ledgerLocator": {
+          "passage": 1,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "r-q14",
+          "responseType": "mcq",
+          "questionText": "Paragraph A",
+          "correctOptionIndex": 4,
+          "correctOptionText": "A resource question added to pollution control"
+        },
+        "sourceExcerpt": "Wastewater treatment has traditionally been judged by what it prevents from reaching rivers. Phosphorus is one target because excessive discharge can stimulate unwanted biological growth downstream. Yet phosphorus is also an essential plant nutrient obtained from finite mineral deposits. These two facts support a different question: can a treatment plant recover phosphorus in a useful form rather than merely transfer it into sludge? One established route produces struvite, a crystalline compound containing phosphate, ammonium and magnesium. Recovery turns part of a pollution-control task into a resource operation, although it does not make every treatment stream equally suitable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph A» y la clave es «A resource question added to pollution control». La evidencia dice «Recovery turns part of a pollution-control task into a resource operation, although it does not make every treatment stream equally suitable.». La coincidencia semántica se apoya en «resource», «pollution», «control»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph A uniquely supports v; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "34e2ac13c69e4c01b0ed0a565d00bac5e88f30166b6f7e44466ac8302e96670d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "A"
+        }
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "r-q15",
+          "responseType": "mcq",
+          "questionText": "Paragraph C",
+          "correctOptionIndex": 0,
+          "correctOptionText": "A former maintenance problem becomes a controlled product"
+        },
+        "sourceExcerpt": "Struvite can form unintentionally inside pipes, pumps and valves when its component ions encounter favourable conditions. A hard deposit narrows passages and creates maintenance problems. Deliberate recovery uses the same tendency under controlled conditions. Instead of allowing crystals to appear throughout the plant, operators direct a phosphate-rich liquor into a vessel designed for growth and collection. This concentration of growth also lets staff inspect and remove the mineral at planned intervals. The mineral has not changed; its location, timing and management have. This reversal explains why a substance once treated only as scale can become a planned product.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph C» y la clave es «A former maintenance problem becomes a controlled product». La evidencia dice «A hard deposit narrows passages and creates maintenance problems.». La coincidencia semántica se apoya en «maintenance»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports i; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "dcbd432b105bbdbd478f1c07b7d0693ddb823d3b822345a81ae87412a1171146",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "r-q16",
+          "responseType": "mcq",
+          "questionText": "Paragraph D",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Several variables must be managed together"
+        },
+        "sourceExcerpt": "Crystal growth depends on chemical balance. If magnesium is insufficient, a magnesium source may be added. Operators also adjust the liquid towards an alkaline pH at which the required ions combine more readily. Mixing keeps reactants in contact, but excessive turbulence can break developing particles or carry them out before they grow. Other dissolved ions compete for reaction sites and may create different solids. Successful control therefore involves composition, pH and hydraulic conditions together, rather than a single universal setting.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph D» y la clave es «Several variables must be managed together». La evidencia dice «Successful control therefore involves composition, pH and hydraulic conditions together, rather than a single universal setting.». La coincidencia semántica se apoya en «together»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports iii; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "1be9c8d4014f13321702ffc22c792afe4fa8b5b07ee0df8c5dafb1c58c89daf1",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "r-q17",
+          "responseType": "mcq",
+          "questionText": "Paragraph E",
+          "correctOptionIndex": 6,
+          "correctOptionText": "A surface that supports predictable enlargement"
+        },
+        "sourceExcerpt": "A reactor can retain small seed particles on which new mineral accumulates. In a fluidised design, upward-moving liquid suspends the particles while allowing heavier pellets to remain long enough to enlarge. Operators balance the flow: it must prevent material settling into an inactive mass without washing useful crystals away. Periodically, larger pellets are withdrawn and smaller ones continue through another growth cycle. Seeding makes nucleation more predictable, but it cannot compensate for a feed with too little recoverable phosphorus.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph E» y la clave es «A surface that supports predictable enlargement». La evidencia dice «Seeding makes nucleation more predictable, but it cannot compensate for a feed with too little recoverable phosphorus.». La coincidencia semántica se apoya en «predictable»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports vii; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "02e7b0589196a52fb7cc63e0d5576616eea96246ddb4a1ae119fffc2d8341960",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "r-q18",
+          "responseType": "mcq",
+          "questionText": "Paragraph F",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Preparing and assessing the recovered material"
+        },
+        "sourceExcerpt": "Freshly harvested crystals carry water and traces of the treatment stream. They are separated, washed and dried before grading. A consistent particle size simplifies storage and application, while laboratory analysis confirms nutrient content. Struvite releases nutrients more slowly than highly soluble fertilisers under many conditions, which may suit some crops and soils. That property is not an automatic advantage everywhere: users need a product whose release pattern matches plant demand and local management.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Paragraph F» y la clave es «Preparing and assessing the recovered material». La evidencia dice «They are separated, washed and dried before grading. A consistent particle size simplifies storage and application, while laboratory analysis confirms nutrient content.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports iv; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "19cbf058f930af00e25fe2d25e7e11689d115b0683cb45d6882727cf58605ade",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "r-q19",
+          "responseType": "mcq",
+          "questionText": "The final treated water is always the most practical feed for phosphorus recovery.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "The final treated water contains a large volume of liquid but often a relatively dilute nutrient load. Recovery is usually more practical in smaller side-streams where phosphorus has become concentrated during sludge processing. Liquid separated after anaerobic digestion and dewatering is one example. Selecting such a stream reduces the volume sent through a recovery reactor and increases the chance that dissolved ions will meet often enough to form crystals. Feed composition still varies over time, so operators sample the liquor rather than relying only on an annual average.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The final treated water is always the most practical feed for phosphorus recovery.», mientras el pasaje dice «The final treated water contains a large volume of liquid but often a relatively dilute nutrient load.». Ambos tratan «final», «treated», «water», pero la proposición añade «always», «practical», «feed», «phosphorus», «recovery» donde la fuente especifica «contains», «large», «volume», «liquid», «often», «relatively». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph B uniquely supports FALSE; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "d4d07df34fef6792f3332c3081b7589ecf961f7ad3c14619851276965fa7c95d",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "r-q20",
+          "responseType": "mcq",
+          "questionText": "Struvite can cause operational problems when it forms in uncontrolled locations.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Struvite can form unintentionally inside pipes, pumps and valves when its component ions encounter favourable conditions. A hard deposit narrows passages and creates maintenance problems. Deliberate recovery uses the same tendency under controlled conditions. Instead of allowing crystals to appear throughout the plant, operators direct a phosphate-rich liquor into a vessel designed for growth and collection. This concentration of growth also lets staff inspect and remove the mineral at planned intervals. The mineral has not changed; its location, timing and management have. This reversal explains why a substance once treated only as scale can become a planned product.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Struvite can cause operational problems when it forms in uncontrolled locations.» y el pasaje dice «Struvite can form unintentionally inside pipes, pumps and valves when its component ions encounter favourable conditions.». La fuente conserva la misma relación mediante «struvite» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Paragraph C uniquely supports TRUE; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "2d10a79302c6687c531eada8b6cdf46482424509badd177d01b7c63cbb886198",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "r-q21",
+          "responseType": "mcq",
+          "questionText": "Crystal formation is influenced by chemical composition, pH and mixing conditions.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "TRUE"
+        },
+        "sourceExcerpt": "Crystal growth depends on chemical balance. If magnesium is insufficient, a magnesium source may be added. Operators also adjust the liquid towards an alkaline pH at which the required ions combine more readily. Mixing keeps reactants in contact, but excessive turbulence can break developing particles or carry them out before they grow. Other dissolved ions compete for reaction sites and may create different solids. Successful control therefore involves composition, pH and hydraulic conditions together, rather than a single universal setting.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Crystal formation is influenced by chemical composition, pH and mixing conditions.» y el pasaje dice «Crystal growth depends on chemical balance.». La fuente conserva la misma relación mediante «crystal», «chemical» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es TRUE.",
+        "sourceLedgerRationale": "Paragraph D uniquely supports TRUE; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "29462ca3c854b769c856641a5e8e9df2abb5c1f85a41d32154f8bbac22b24632",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "r-q22",
+          "responseType": "mcq",
+          "questionText": "A high phosphorus recovery percentage is sufficient proof that the product is safe.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "FALSE"
+        },
+        "sourceExcerpt": "The origin of a recovered mineral raises questions about contaminants. Metals, pathogens or unwanted organic compounds may enter with the feed, even if the crystal lattice itself favours particular ions. Product testing and clear standards are therefore essential before agricultural use. A high phosphorus recovery percentage says little about safety or consistency. Plants may redirect a lower-risk side-stream, add a polishing step or reject batches outside specification. Recovery counts as successful only when the output is usable, not simply when phosphorus disappears from the liquid.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «A high phosphorus recovery percentage is sufficient proof that the product is safe.», mientras el pasaje dice «A high phosphorus recovery percentage says little about safety or consistency.». Ambos tratan «high», «phosphorus», «recovery», «percentage», pero la proposición añade «sufficient», «proof», «product», «safe» donde la fuente especifica «little», «about», «safety», «consistency». Esa diferencia verificable niega la relación formulada y justifica FALSE.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports FALSE; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "accc98ce118527a0b9e227243d68599140f30ea422a3d2754d767111777b47d3",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "r-q23",
+          "responseType": "mcq",
+          "questionText": "The passage gives a fixed selling price for recovered struvite in every market.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "Economics depend strongly on concentration, chemical inputs, reactor scale and the value of avoided maintenance. At a site already troubled by mineral deposits, planned crystallisation may reduce cleaning interruptions as well as produce saleable pellets. Revenue from crystals may offset costs, but it rarely tells the whole story. Energy, transport, residual sludge and the destination of the product belong in a life-cycle assessment. Nor should struvite be treated as the only recovery option; other phosphate minerals or routes from ash may suit different facilities. The strongest case arises where a concentrated stream, reliable product market and operational benefit coincide. Resource recovery is thus a design choice within a larger treatment system, not a universal attachment for every plant.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The passage gives a fixed selling price for recovered struvite in every market.». El pasaje sí ofrece el contexto «Nor should struvite be treated as the only recovery option; other phosphate minerals or routes from ash may suit different facilities.», pero en el texto completo no especifica «gives», «fixed», «selling», «price» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "No selling price appears in the passage; paragraph H discusses economic dependencies without giving a fixed universal figure, so NOT GIVEN is the only defensible result.",
+        "ledgerRowSha256": "e825a39564e016db2192a42c908b5ad4f1a554d8798b566e6447f8a5cfbbeb0c",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "r-q24",
+          "responseType": "fill",
+          "questionText": "Small ______ provide a surface on which more mineral can accumulate.",
+          "acceptedResponses": [
+            "seed particles"
+          ]
+        },
+        "sourceExcerpt": "A reactor can retain small seed particles on which new mineral accumulates. In a fluidised design, upward-moving liquid suspends the particles while allowing heavier pellets to remain long enough to enlarge. Operators balance the flow: it must prevent material settling into an inactive mass without washing useful crystals away. Periodically, larger pellets are withdrawn and smaller ones continue through another growth cycle. Seeding makes nucleation more predictable, but it cannot compensate for a feed with too little recoverable phosphorus.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Small ______ provide a surface on which more mineral can accumulate.» y acepta «seed particles». La oración fuente dice «A reactor can retain small seed particles on which new mineral accumulates.». Esa oración contiene la respuesta y la conecta con «small», «mineral», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph E uniquely supports seed particles; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "49febded116b6433e8543fbaa3249e3e378e2150520026330de6765bbb384644",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "E"
+        }
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "r-q25",
+          "responseType": "fill",
+          "questionText": "The harvested crystals are washed and ______ before grading.",
+          "acceptedResponses": [
+            "dried"
+          ]
+        },
+        "sourceExcerpt": "Freshly harvested crystals carry water and traces of the treatment stream. They are separated, washed and dried before grading. A consistent particle size simplifies storage and application, while laboratory analysis confirms nutrient content. Struvite releases nutrients more slowly than highly soluble fertilisers under many conditions, which may suit some crops and soils. That property is not an automatic advantage everywhere: users need a product whose release pattern matches plant demand and local management.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «The harvested crystals are washed and ______ before grading.» y acepta «dried». La oración fuente dice «They are separated, washed and dried before grading.». Esa oración contiene la respuesta y la conecta con «washed», «before», «grading», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph F uniquely supports dried; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "d9c4ea1ea43a1f5b8af0b6d06b4fda3477029005fa093a732c99a1b0b46b0b2e",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "r-q26",
+          "responseType": "fill",
+          "questionText": "Standards and product tests help identify possible ______ in recovered material.",
+          "acceptedResponses": [
+            "contaminants"
+          ]
+        },
+        "sourceExcerpt": "The origin of a recovered mineral raises questions about contaminants. Metals, pathogens or unwanted organic compounds may enter with the feed, even if the crystal lattice itself favours particular ions. Product testing and clear standards are therefore essential before agricultural use. A high phosphorus recovery percentage says little about safety or consistency. Plants may redirect a lower-risk side-stream, add a polishing step or reject batches outside specification. Recovery counts as successful only when the output is usable, not simply when phosphorus disappears from the liquid.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "El hueco aparece en «Standards and product tests help identify possible ______ in recovered material.» y acepta «contaminants». La oración fuente dice «The origin of a recovered mineral raises questions about contaminants.». Esa oración contiene la respuesta y la conecta con «recovered», de modo que completa el significado y no sólo coincide como una palabra aislada.",
+        "sourceLedgerRationale": "Paragraph G uniquely supports contaminants; alternatives contradict or are absent from the cited text.",
+        "ledgerRowSha256": "40377337a942a6aad3848f7851b9a894264ddf8c735b6df7c4b41e1fbd45f610",
+        "ledgerLocator": {
+          "passage": 2,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "r-q27",
+          "responseType": "mcq",
+          "questionText": "Multispectral imaging may reveal contrasts that ordinary colour viewing misses.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "Multispectral imaging exploits the fact that ink and support materials do not absorb and reflect light identically at every wavelength. A feature almost invisible in ordinary colour may separate from its background under ultraviolet, visible or infrared illumination. Technicians therefore record a sequence of narrow spectral bands rather than trusting one photograph. These aligned frames form an image stack. There is no universal best band: the useful contrast depends on the composition and condition of both the writing material and the page.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Multispectral imaging may reveal contrasts that ordinary colour viewing misses.» y el pasaje dice «Multispectral imaging exploits the fact that ink and support materials do not absorb and reflect light identically at every wavelength.». La fuente conserva la misma relación mediante «multispectral», «imaging» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "Paragraph B states that a feature invisible in ordinary colour may separate under other wavelengths. The only defensible answer is YES.",
+        "ledgerRowSha256": "4b8d689dcd84de5e75758b880de85e9089836df7b96e8ffee876973dded7d0c1",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "r-q28",
+          "responseType": "mcq",
+          "questionText": "The same spectral band is optimal for every combination of ink and support.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Multispectral imaging exploits the fact that ink and support materials do not absorb and reflect light identically at every wavelength. A feature almost invisible in ordinary colour may separate from its background under ultraviolet, visible or infrared illumination. Technicians therefore record a sequence of narrow spectral bands rather than trusting one photograph. These aligned frames form an image stack. There is no universal best band: the useful contrast depends on the composition and condition of both the writing material and the page.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «The same spectral band is optimal for every combination of ink and support.», mientras el pasaje dice «Multispectral imaging exploits the fact that ink and support materials do not absorb and reflect light identically at every wavelength.». Ambos tratan «every», «ink», «support», pero la proposición añade «same», «spectral», «band», «optimal», «combination» donde la fuente especifica «multispectral», «imaging», «exploits», «fact», «materials», «absorb». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph B explicitly says that no band works universally and ties contrast to material and condition. The only defensible answer is NO.",
+        "ledgerRowSha256": "6b8e0438312bddb397aa04e366c59a30d37413deb5534869eee343dcee7c478b",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "r-q29",
+          "responseType": "mcq",
+          "questionText": "Because image capture is non-contact, a conservator does not need to assess a fragile volume first.",
+          "correctOptionIndex": 1,
+          "correctOptionText": "NO"
+        },
+        "sourceExcerpt": "Although the camera need not touch the manuscript, non-contact does not mean risk-free. A conservator first checks weak sewing, flaking pigments and the angle through which a bound volume can safely open. A cradle supports the book while cool, controlled lamps limit heat and exposure. Reference targets placed beside the page help record brightness and colour response. This preparation can appear slower than photography itself, but it protects the object and makes images from different sessions more comparable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Because image capture is non-contact, a conservator does not need to assess a fragile volume first.», mientras el pasaje dice «Although the camera need not touch the manuscript, non-contact does not mean risk-free.». Ambos tratan «non», «contact», «need», pero la proposición añade «because», «image», «capture», «conservator», «assess», «fragile» donde la fuente especifica «although», «camera», «touch», «manuscript», «mean», «risk». Esa diferencia verificable niega la relación formulada y justifica NO.",
+        "sourceLedgerRationale": "Paragraph C states that non-contact capture still begins with a conservation assessment. The only defensible answer is NO.",
+        "ledgerRowSha256": "3922f71e8af8598810cf96674cef1c1368cf58d905529a9efc3d2b42848916cf",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "r-q30",
+          "responseType": "mcq",
+          "questionText": "Poor registration between image channels can manufacture apparent outlines.",
+          "correctOptionIndex": 0,
+          "correctOptionText": "YES"
+        },
+        "sourceExcerpt": "The separate frames must correspond pixel for pixel before they are combined. Even slight page movement, camera vibration or curvature can shift a letter between channels. Registration software aligns stable features, while images of dark and light references help correct uneven illumination and detector response. If these steps are weak, processing may create coloured fringes or apparent edges that never existed on the page. Calibration is therefore part of the evidence, not a cosmetic adjustment applied after discovery.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición afirma «Poor registration between image channels can manufacture apparent outlines.» y el pasaje dice «Even slight page movement, camera vibration or curvature can shift a letter between channels.». La fuente conserva la misma relación mediante «between», «channels» y no introduce una condición opuesta; por ello el apoyo es positivo y la clave es YES.",
+        "sourceLedgerRationale": "Paragraph D explicitly warns that weak alignment can create fringes or edges absent from the page. The only defensible answer is YES.",
+        "ledgerRowSha256": "e0be67b72988eb4e2a8e0e692f995a14ad5ea637aa6ac2f8f78fed41a6f2df71",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "D"
+        }
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "r-q31",
+          "responseType": "mcq",
+          "questionText": "The writer specifies one mandatory international file format for storing raw image stacks.",
+          "correctOptionIndex": 2,
+          "correctOptionText": "NOT GIVEN"
+        },
+        "sourceExcerpt": "A processed picture is only one result of many choices. Future researchers need the raw image stack, calibration frames, registration record and settings used for each enhancement. Keeping these materials allows another team to repeat the sequence, question a correction or apply an improved method. Institutions should also record equipment, wavelengths and page orientation in durable metadata. An attractive final composite without that audit trail may communicate a discovery, yet it cannot show whether a disputed stroke came from the manuscript or the workflow.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La proposición ausente es «The writer specifies one mandatory international file format for storing raw image stacks.». El pasaje sí ofrece el contexto «Future researchers need the raw image stack, calibration frames, registration record and settings used for each enhancement.», pero en el texto completo no especifica «writer», «specifies», «mandatory», «international», «file», «format», «storing», «stacks» ni afirma lo contrario de la proposición. Por eso la ausencia concreta, y no una contradicción, conduce a NOT GIVEN.",
+        "sourceLedgerRationale": "Paragraph H requires preservation of raw data and metadata but names no mandatory international file format. The only defensible answer is NOT GIVEN.",
+        "ledgerRowSha256": "f34f0845f31f120170aa83a14be25545bd0691dc9827c054d0e9e49fe74cf007",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "r-q32",
+          "responseType": "mcq",
+          "questionText": "Which paragraph explains why records of processing choices must be retained?",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Paragraph H"
+        },
+        "sourceExcerpt": "A processed picture is only one result of many choices. Future researchers need the raw image stack, calibration frames, registration record and settings used for each enhancement. Keeping these materials allows another team to repeat the sequence, question a correction or apply an improved method. Institutions should also record equipment, wavelengths and page orientation in durable metadata. An attractive final composite without that audit trail may communicate a discovery, yet it cannot show whether a disputed stroke came from the manuscript or the workflow.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph explains why records of processing choices must be retained?» y la clave es «Paragraph H». La evidencia dice «A processed picture is only one result of many choices.». La coincidencia semántica se apoya en «choices»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph H explains that retained records let later teams repeat or challenge the processing route. The only defensible answer is H.",
+        "ledgerRowSha256": "56ebbaf4eb8fb2cdf86de52e78bd51d68cfab75c52f7f4c61bea896767bc09e9",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "H"
+        }
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "r-q33",
+          "responseType": "mcq",
+          "questionText": "Which paragraph describes physical support used before photographs are taken?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Paragraph C"
+        },
+        "sourceExcerpt": "Although the camera need not touch the manuscript, non-contact does not mean risk-free. A conservator first checks weak sewing, flaking pigments and the angle through which a bound volume can safely open. A cradle supports the book while cool, controlled lamps limit heat and exposure. Reference targets placed beside the page help record brightness and colour response. This preparation can appear slower than photography itself, but it protects the object and makes images from different sessions more comparable.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph describes physical support used before photographs are taken?» y la clave es «Paragraph C». La evidencia dice «Although the camera need not touch the manuscript, non-contact does not mean risk-free.». La coincidencia semántica se apoya en la misma relación descrita en la pregunta: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph C describes the cradle that supports the volume during capture. The only defensible answer is C.",
+        "ledgerRowSha256": "4ea853b21ddccf0ce4295d40d0160ea48a1d1460553ed44f321d12b67ce5ae33",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "C"
+        }
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "r-q34",
+          "responseType": "mcq",
+          "questionText": "Which paragraph warns that an enhanced mark is not sufficient evidence of a letter?",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Paragraph F"
+        },
+        "sourceExcerpt": "An enhanced stroke still has to be interpreted. Ruling lines, worm damage and writing visible from the reverse can resemble letters when contrast is pushed too far. Imaging specialists understand how an output was produced, whereas palaeographers compare character shapes, abbreviations and writing habits. Their collaboration prevents software artefacts from being promoted into new words. Uncertain readings remain uncertain: responsible editions distinguish clearly observed letters from reconstructions, even when the reconstructed phrase seems historically plausible.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph warns that an enhanced mark is not sufficient evidence of a letter?» y la clave es «Paragraph F». La evidencia dice «An enhanced stroke still has to be interpreted.». La coincidencia semántica se apoya en «enhanced»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph F explains why an enhanced stroke still requires expert interpretation before it becomes a letter. The only defensible answer is F.",
+        "ledgerRowSha256": "6b85a2a95ad6504bea8cf5a2deab4151221182143e5c0f3c000076d9f3cf626d",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "F"
+        }
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "r-q35",
+          "responseType": "mcq",
+          "questionText": "Which paragraph gives the physical reason that different bands may reveal different features?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Paragraph B"
+        },
+        "sourceExcerpt": "Multispectral imaging exploits the fact that ink and support materials do not absorb and reflect light identically at every wavelength. A feature almost invisible in ordinary colour may separate from its background under ultraviolet, visible or infrared illumination. Technicians therefore record a sequence of narrow spectral bands rather than trusting one photograph. These aligned frames form an image stack. There is no universal best band: the useful contrast depends on the composition and condition of both the writing material and the page.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph gives the physical reason that different bands may reveal different features?» y la clave es «Paragraph B». La evidencia dice «Technicians therefore record a sequence of narrow spectral bands rather than trusting one photograph.». La coincidencia semántica se apoya en «bands»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph B explains wavelength-dependent absorption and reflection as the source of changing contrast. The only defensible answer is B.",
+        "ledgerRowSha256": "158100d89c483d279d9c145b0d548356f8c260cbe6ca80bbeb49b17b253b5c09",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "B"
+        }
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "r-q36",
+          "responseType": "mcq",
+          "questionText": "Which paragraph argues that scholarly claims should remain proportionate to the evidence chain?",
+          "correctOptionIndex": 8,
+          "correctOptionText": "Paragraph I"
+        },
+        "sourceExcerpt": "Recovered fragments can alter the reading of a poem, legal note or scientific argument, and digital surrogates can reduce repeated handling of a fragile original. Yet imaging does not restore material that has vanished, nor does it replace study of the physical book. The strongest claim is proportional to the chain of evidence: what the instrument recorded, how the frames were transformed and how specialists interpreted the marks. Used with that restraint, spectral imaging expands access to a manuscript’s hidden history without pretending to remove every doubt.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph argues that scholarly claims should remain proportionate to the evidence chain?» y la clave es «Paragraph I». La evidencia dice «The strongest claim is proportional to the chain of evidence: what the instrument recorded, how the frames were transformed and how specialists interpreted the marks.». La coincidencia semántica se apoya en «evidence», «chain»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph I explicitly requires claims to be proportional to the full evidence chain. The only defensible answer is I.",
+        "ledgerRowSha256": "6d0afab8ff363379bcb336cc1c41d9730bb564ce31d44fb4c89c36239233c61b",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "I"
+        }
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "r-q37",
+          "responseType": "mcq",
+          "questionText": "Which paragraph contrasts a broad survey with slower analysis at selected locations?",
+          "correctOptionIndex": 6,
+          "correctOptionText": "Paragraph G"
+        },
+        "sourceExcerpt": "Spectral imaging is valuable because it surveys a whole surface and shows where materials differ, but it does not always identify their chemistry. Similar-looking mixtures can produce ambiguous signatures, especially when reference libraries contain no close match. A focused technique such as Raman spectroscopy can examine selected points with greater molecular specificity, although collecting those measurements is slower. The approaches are complementary: the broad image locates promising or puzzling regions, and targeted analysis can investigate why those regions behave differently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which paragraph contrasts a broad survey with slower analysis at selected locations?» y la clave es «Paragraph G». La evidencia dice «A focused technique such as Raman spectroscopy can examine selected points with greater molecular specificity, although collecting those measurements is slower.». La coincidencia semántica se apoya en «slower», «selected»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Only paragraph G contrasts whole-surface spectral survey with slower selected-point spectroscopy. The only defensible answer is G.",
+        "ledgerRowSha256": "5ce39c75e93d0c46abbaf6bb38896938a5bff0496da8418c8406f6cdad5c2327",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "r-q38",
+          "responseType": "mcq",
+          "questionText": "What is the main purpose of the passage?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "To explain how spectral imaging can recover hidden writing and why its results require controls"
+        },
+        "sourceExcerpt": "Recovered fragments can alter the reading of a poem, legal note or scientific argument, and digital surrogates can reduce repeated handling of a fragile original. Yet imaging does not restore material that has vanished, nor does it replace study of the physical book. The strongest claim is proportional to the chain of evidence: what the instrument recorded, how the frames were transformed and how specialists interpreted the marks. Used with that restraint, spectral imaging expands access to a manuscript’s hidden history without pretending to remove every doubt.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «What is the main purpose of the passage?» y la clave es «To explain how spectral imaging can recover hidden writing and why its results require controls». La evidencia dice «Used with that restraint, spectral imaging expands access to a manuscript’s hidden history without pretending to remove every doubt.». La coincidencia semántica se apoya en «spectral», «imaging», «hidden»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "The concluding synthesis presents controlled recovery, limitations and interpretation as the passage’s governing purpose. The only defensible answer is B.",
+        "ledgerRowSha256": "edfd11e3ca432c14ed2e9cfada2866125d449a032f937cd0acdbe0fcafbad422",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "I"
+        }
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "r-q39",
+          "responseType": "mcq",
+          "questionText": "Why does the writer describe Raman spectroscopy in paragraph G?",
+          "correctOptionIndex": 3,
+          "correctOptionText": "To illustrate how focused chemical analysis can complement a surface-wide survey"
+        },
+        "sourceExcerpt": "Spectral imaging is valuable because it surveys a whole surface and shows where materials differ, but it does not always identify their chemistry. Similar-looking mixtures can produce ambiguous signatures, especially when reference libraries contain no close match. A focused technique such as Raman spectroscopy can examine selected points with greater molecular specificity, although collecting those measurements is slower. The approaches are complementary: the broad image locates promising or puzzling regions, and targeted analysis can investigate why those regions behave differently.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Why does the writer describe Raman spectroscopy in paragraph G?» y la clave es «To illustrate how focused chemical analysis can complement a surface-wide survey». La evidencia dice «A focused technique such as Raman spectroscopy can examine selected points with greater molecular specificity, although collecting those measurements is slower.». La coincidencia semántica se apoya en «raman», «spectroscopy», «focused»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph G uses Raman spectroscopy to show how selected-point chemical specificity complements a broad image. The only defensible answer is D.",
+        "ledgerRowSha256": "f0d7e7ca243880703b43a619cfa5f28316efdf5330b5acf24596e36ffbb2436a",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "G"
+        }
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "r-q40",
+          "responseType": "mcq",
+          "questionText": "Which principle does the writer most strongly support?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Capture, processing and interpretation must remain traceable, with claims limited to the evidence."
+        },
+        "sourceExcerpt": "Recovered fragments can alter the reading of a poem, legal note or scientific argument, and digital surrogates can reduce repeated handling of a fragile original. Yet imaging does not restore material that has vanished, nor does it replace study of the physical book. The strongest claim is proportional to the chain of evidence: what the instrument recorded, how the frames were transformed and how specialists interpreted the marks. Used with that restraint, spectral imaging expands access to a manuscript’s hidden history without pretending to remove every doubt.",
+        "sourceExcerptBasis": "ANSWER_EVIDENCE_LEDGER_EXACT_QUOTE",
+        "rationale": "La pregunta pide «Which principle does the writer most strongly support?» y la clave es «Capture, processing and interpretation must remain traceable, with claims limited to the evidence.». La evidencia dice «The strongest claim is proportional to the chain of evidence: what the instrument recorded, how the frames were transformed and how specialists interpreted the marks.». La coincidencia semántica se apoya en «evidence»: esos elementos enlazan el foco de la pregunta y la opción con la información del pasaje, mientras las demás opciones carecen de ese vínculo en el tramo citado.",
+        "sourceLedgerRationale": "Paragraph I explicitly ties the strongest claim to recorded capture, transformation and specialist interpretation, and requires proportionality. The only defensible answer is C.",
+        "ledgerRowSha256": "d86211f76cb7bf067b8f92e1d57ed30185813ba89b32b9dc99330ffc780971aa",
+        "ledgerLocator": {
+          "passage": 3,
+          "paragraph": "I"
+        }
+      }
+    ],
+    "provenance": {
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/reading/set40-reading-content-v1.0.5.json",
+        "sha256": "b286a7c3d94957b5a82c0757ae0cec56b7a3267e715a2579f4e0001c62f075f3"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "a1233cfd53c59e630246ba3799c238818bc6a5a48cdf15ea81ada41344f44614",
+      "canonicalQuestionProjectionSha256": "509d021c2476bcc3a89d1848edc58ea54f032cc4f12759e694c28481bd1e81f3"
+    }
+  },
+  "listening": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "bindingCount": 40,
+    "bindings": [
+      {
+        "question": 1,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 1,
+          "responseKey": "l-q01",
+          "responseType": "fill",
+          "questionText": "Customer surname: ______",
+          "acceptedResponses": [
+            "Mercer"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t002",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The surname is Mercer, M-E-R-C-E-R. My band’s booking uses a stage name, so please use the legal surname here.",
+        "timecode": {
+          "startFrame": 3439794,
+          "endFrame": 8893501,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999864,
+          "endSeconds": 201.666689,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "4a036218acc7174f8b5ed8218c20d60eb1428babddb65abf42a0de27991538c0",
+        "planSegmentTextSha256": "bf8930c10e054224edaf52f12f27d7d18d1cb313f31fdcc91020eab80ad42794"
+      },
+      {
+        "question": 2,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 2,
+          "responseKey": "l-q02",
+          "responseType": "fill",
+          "questionText": "Instrument: ______",
+          "acceptedResponses": [
+            "violin"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t004",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "I play violin in a chamber group, although I occasionally work beside amplified percussion. Most rehearsals are acoustic, but festival work occasionally places me close to amplified percussion.",
+        "timecode": {
+          "startFrame": 3439794,
+          "endFrame": 8893501,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999864,
+          "endSeconds": 201.666689,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "e25eb52d904861bab8e8f4975f3d07dbefbb3f10eba9974d9023bfcd92118b60",
+        "planSegmentTextSha256": "f38994e7c17b6d979870ad755d88de71e2064d482284fdd89a285bce02773842"
+      },
+      {
+        "question": 3,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 3,
+          "responseKey": "l-q03",
+          "responseType": "fill",
+          "questionText": "Ear causing concern: ______",
+          "acceptedResponses": [
+            "left",
+            "left ear"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t006",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "The left ear feels more fatigued after rehearsal; the right one has not caused the same problem. Given that most of my work is acoustic, which of the three filter strengths would you recommend?",
+        "timecode": {
+          "startFrame": 3439794,
+          "endFrame": 8893501,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999864,
+          "endSeconds": 201.666689,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2f834412acb62fa5144887f8f03c795d16845e053a3c1e89faf401d6f009683e",
+        "planSegmentTextSha256": "fe5c3e621314eabd84f245e8bb93f217863836f6c4b7503ba396eb5e4a0d3fd6"
+      },
+      {
+        "question": 4,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 4,
+          "responseKey": "l-q04",
+          "responseType": "fill",
+          "questionText": "Selected filter: ______ strength",
+          "acceptedResponses": [
+            "medium"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t007",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "For mainly acoustic work, the medium-strength filter is suitable; the strongest option would remove more detail than you want.",
+        "timecode": {
+          "startFrame": 3439794,
+          "endFrame": 8893501,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999864,
+          "endSeconds": 201.666689,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ff2c10168026a318020812f9bd4671d0f144cd0c1b104fadccd72576b508bb6c",
+        "planSegmentTextSha256": "05ce1a47d59dd5fee221789b8f37a4e7c80536632e3b67c9502882836d7e09c4"
+      },
+      {
+        "question": 5,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 5,
+          "responseKey": "l-q05",
+          "responseType": "fill",
+          "questionText": "Mould colour: ______",
+          "acceptedResponses": [
+            "clear"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t010",
+        "renderedChunk": "chunk-03",
+        "audiblePhrase": "I will choose clear moulds rather than blue, because they are less visible on stage. Will changing the mould colour later alter the filter itself?",
+        "timecode": {
+          "startFrame": 3439794,
+          "endFrame": 8893501,
+          "sampleRateHz": 44100,
+          "startSeconds": 77.999864,
+          "endSeconds": 201.666689,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fb3146a71468a1cfce8344811a6dfa32b5d415b8eacc6f95e08af19d374ac626",
+        "planSegmentTextSha256": "218694f84c6b2c860f4512479a6f83260687acb6ffba5376c3a4f0b9c556d97b"
+      },
+      {
+        "question": 6,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 6,
+          "responseKey": "l-q06",
+          "responseType": "fill",
+          "questionText": "Hearing check: ______ May",
+          "acceptedResponses": [
+            "6",
+            "6th",
+            "sixth"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t013",
+        "renderedChunk": "chunk-04",
+        "audiblePhrase": "The hearing check is booked for the sixth of May, with impressions immediately afterwards if the result is suitable.",
+        "timecode": {
+          "startFrame": 8909377,
+          "endFrame": 9439787,
+          "sampleRateHz": 44100,
+          "startSeconds": 202.026689,
+          "endSeconds": 214.054127,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "dd996a6833a6c88cd2bd3ceaa76085c0f3f2686f0bc8b29f4a63fe9935edecbb",
+        "planSegmentTextSha256": "ac6871e9ee046bacc0020188c8825a977211d7c0870d0197beb5a7f5435ae3d3"
+      },
+      {
+        "question": 7,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 7,
+          "responseKey": "l-q07",
+          "responseType": "fill",
+          "questionText": "What should Dylan avoid before impressions?",
+          "acceptedResponses": [
+            "ear drops"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t015",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Avoid ear drops on the morning of the appointment unless a clinician has advised them.",
+        "timecode": {
+          "startFrame": 11616567,
+          "endFrame": 14623482,
+          "sampleRateHz": 44100,
+          "startSeconds": 263.414218,
+          "endSeconds": 331.598231,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "20b63eb9761153155c580ca5c668d8577cfb0fdf04d0cf46054270e05d4f4348",
+        "planSegmentTextSha256": "f961b1a3bb9040bcb2bbfa4807f7a7f018b196d52443df777314ddda6c5203e7"
+      },
+      {
+        "question": 8,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 8,
+          "responseKey": "l-q08",
+          "responseType": "fill",
+          "questionText": "Which piece of stage equipment should he bring to the fitting?",
+          "acceptedResponses": [
+            "stage monitor earpiece",
+            "performance earpiece",
+            "earpiece"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t017",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Bring the stage monitor earpiece so we can check that both devices sit comfortably together.",
+        "timecode": {
+          "startFrame": 11616567,
+          "endFrame": 14623482,
+          "sampleRateHz": 44100,
+          "startSeconds": 263.414218,
+          "endSeconds": 331.598231,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a54eb0dd8fa6458c9f0d93b7f2696a1b80386dac191df575a4fd1d1630533b32",
+        "planSegmentTextSha256": "8469f5f21237e6bd1401b89b8042fdbabd7f9aeb84a99ee322b1251912bd4652"
+      },
+      {
+        "question": 9,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 9,
+          "responseKey": "l-q09",
+          "responseType": "fill",
+          "questionText": "When will the finished plugs be ready?",
+          "acceptedResponses": [
+            "two weeks",
+            "2 weeks"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t021",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "Production normally takes two weeks, although a remake would extend that.",
+        "timecode": {
+          "startFrame": 11616567,
+          "endFrame": 14623482,
+          "sampleRateHz": 44100,
+          "startSeconds": 263.414218,
+          "endSeconds": 331.598231,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "0e25aaefbfe0363ca9d1b79f99ce8bbfe703f57154e932c68dfaf4c05a965804",
+        "planSegmentTextSha256": "1fc0f775481639f6684eec7910164afbe09496384ba82fba216e91fefd9f629c"
+      },
+      {
+        "question": 10,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 10,
+          "responseKey": "l-q10",
+          "responseType": "fill",
+          "questionText": "Where will the final seal be checked?",
+          "acceptedResponses": [
+            "clinic"
+          ]
+        },
+        "evidenceSegment": "s40-p1-t023",
+        "renderedChunk": "chunk-06",
+        "audiblePhrase": "The final seal is checked here at the clinic during collection, not remotely at rehearsal.",
+        "timecode": {
+          "startFrame": 11616567,
+          "endFrame": 14623482,
+          "sampleRateHz": 44100,
+          "startSeconds": 263.414218,
+          "endSeconds": 331.598231,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1c3e8fa173cb53ec9168b51ba7b41d8de0fea8483a41c86f4f288bb3f33f0e2d",
+        "planSegmentTextSha256": "f31390b2c688d0d70a311c550dc44cf844843d3f87e4d1c3472f44ad8ac13044"
+      },
+      {
+        "question": 11,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 11,
+          "responseKey": "l-q11",
+          "responseType": "mcq",
+          "questionText": "11  Check-in lodge",
+          "correctOptionIndex": 3,
+          "correctOptionText": "Location D"
+        },
+        "evidenceSegment": "s40-p2-t002",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The check-in lodge is the first building inside the southern gate, before the path reaches the central clearing.",
+        "timecode": {
+          "startFrame": 18888217,
+          "endFrame": 23166826,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.30424,
+          "endSeconds": 525.324853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b7b06e5218413e784978c6f935b49b5311c8e501f08d99a534aaa6030435e2fc",
+        "planSegmentTextSha256": "caea4d1393c43c2817879151ac2f250555ca2ccb86d1d5c9d56d9312316cc997"
+      },
+      {
+        "question": 12,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 12,
+          "responseKey": "l-q12",
+          "responseType": "mcq",
+          "questionText": "12  Harness bay",
+          "correctOptionIndex": 1,
+          "correctOptionText": "Location B"
+        },
+        "evidenceSegment": "s40-p2-t006",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The harness bay is the roofed shelter east of the lodge, connected to it by the short surfaced path.",
+        "timecode": {
+          "startFrame": 18888217,
+          "endFrame": 23166826,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.30424,
+          "endSeconds": 525.324853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6bfb6902d0f3eb43ee52668034e5268f0127498ab2854c145c32e0210159b74c",
+        "planSegmentTextSha256": "0ac99c0e951f7c216988b83340c736c50c1d5927da865bc6e923aa894375b368"
+      },
+      {
+        "question": 13,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 13,
+          "responseKey": "l-q13",
+          "responseType": "mcq",
+          "questionText": "13  Practice zone",
+          "correctOptionIndex": 7,
+          "correctOptionText": "Location H"
+        },
+        "evidenceSegment": "s40-p2-t009",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The low practice wire is beside the orientation board in the middle of the central clearing, not at the incoming route junction.",
+        "timecode": {
+          "startFrame": 18888217,
+          "endFrame": 23166826,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.30424,
+          "endSeconds": 525.324853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "550e82c2477501c6b13dc3f47b8ce867dd690ad8a4a7088e5459f50202a2a0ce",
+        "planSegmentTextSha256": "4f31849c43ebeeb065e30e4c01471980cbb0fd14907d35f31096ca246eb8bbca"
+      },
+      {
+        "question": 14,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 14,
+          "responseKey": "l-q14",
+          "responseType": "mcq",
+          "questionText": "14  Junior loop",
+          "correctOptionIndex": 0,
+          "correctOptionText": "Location A"
+        },
+        "evidenceSegment": "s40-p2-t012",
+        "renderedChunk": "chunk-10",
+        "audiblePhrase": "The junior loop curves through the western trees and returns beside the rest shelter without crossing the hollow.",
+        "timecode": {
+          "startFrame": 18888217,
+          "endFrame": 23166826,
+          "sampleRateHz": 44100,
+          "startSeconds": 428.30424,
+          "endSeconds": 525.324853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "6e4716a9e178b57d218b21335776b3f5d25184f230c0583f4313a8841860818b",
+        "planSegmentTextSha256": "edae7b75ce4a096bcdd2d5b9dbf990b5017e488ca1893c0f0472494bc952fc18"
+      },
+      {
+        "question": 15,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 15,
+          "responseKey": "l-q15",
+          "responseType": "mcq",
+          "questionText": "15  High bridge",
+          "correctOptionIndex": 5,
+          "correctOptionText": "Location F"
+        },
+        "evidenceSegment": "s40-p2-t015",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The high bridge spans the northern hollow between the two tallest platform groups.",
+        "timecode": {
+          "startFrame": 23191081,
+          "endFrame": 25932006,
+          "sampleRateHz": 44100,
+          "startSeconds": 525.874853,
+          "endSeconds": 588.027347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "70702f74aec5a996c76a68414adec7b8d24b4bdace0a45ded24d63920c7d9871",
+        "planSegmentTextSha256": "c8d8906237913753b283bf25a76b729255e1e3044d0dd91e32165ca3f9a5374a"
+      },
+      {
+        "question": 16,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 16,
+          "responseKey": "l-q16",
+          "responseType": "mcq",
+          "questionText": "16  Emergency assembly point",
+          "correctOptionIndex": 2,
+          "correctOptionText": "Location C"
+        },
+        "evidenceSegment": "s40-p2-t018",
+        "renderedChunk": "chunk-11",
+        "audiblePhrase": "The emergency assembly point is the open lawn east of the return path, outside both the trees and the platform fall zones.",
+        "timecode": {
+          "startFrame": 23191081,
+          "endFrame": 25932006,
+          "sampleRateHz": 44100,
+          "startSeconds": 525.874853,
+          "endSeconds": 588.027347,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a3a710eb95497cb0120b0f53c79017eea11e1738cb0db060766470071e48a29f",
+        "planSegmentTextSha256": "1a7bcd1ca4d490cd8cf935dfe01ea2b2245f102738bf098553483ed2ae3f11fa"
+      },
+      {
+        "question": 17,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 17,
+          "responseKey": "l-q17",
+          "responseType": "mcq",
+          "questionText": "17  Blue route",
+          "correctOptionIndex": 1,
+          "correctOptionText": "platform instructor"
+        },
+        "evidenceSegment": "s40-p2-t021",
+        "renderedChunk": "chunk-13",
+        "audiblePhrase": "The blue route is supervised by the platform instructor because it includes two elevated crossings.",
+        "timecode": {
+          "startFrame": 28111409,
+          "endFrame": 32194316,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.446916,
+          "endSeconds": 730.029841,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bb803a38d6785ed61b478049a60ac4ee01b2617a4810d40bbd59ff962c1e366c",
+        "planSegmentTextSha256": "2e2a0e774a3481c6e74bc9bd684942a2db54f58be1bd0c3c723cd66b389eef6a"
+      },
+      {
+        "question": 18,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 18,
+          "responseKey": "l-q18",
+          "responseType": "mcq",
+          "questionText": "18  Red route",
+          "correctOptionIndex": 3,
+          "correctOptionText": "route controller"
+        },
+        "evidenceSegment": "s40-p2-t024",
+        "renderedChunk": "chunk-13",
+        "audiblePhrase": "At the upper gate, the route controller authorises each person to enter the red route; the platform instructor supervises only after entry.",
+        "timecode": {
+          "startFrame": 28111409,
+          "endFrame": 32194316,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.446916,
+          "endSeconds": 730.029841,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "595722ee94ed339c9269c217ae59fe7aa40e4b70dd97cd52a174163566841eff",
+        "planSegmentTextSha256": "056881eb95583bcf0af2c11c0f2b39d2cec5870e5ba7fa34b006c64ba00dcf51"
+      },
+      {
+        "question": 19,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 19,
+          "responseKey": "l-q19",
+          "responseType": "mcq",
+          "questionText": "19  Equipment return",
+          "correctOptionIndex": 0,
+          "correctOptionText": "harness-bay attendant"
+        },
+        "evidenceSegment": "s40-p2-t027",
+        "renderedChunk": "chunk-13",
+        "audiblePhrase": "Equipment return is handled at the harness bay after participants leave the final path.",
+        "timecode": {
+          "startFrame": 28111409,
+          "endFrame": 32194316,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.446916,
+          "endSeconds": 730.029841,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a1130b4e63d9b09406dd6a504bf9b86328dbe0f7581c9249e1db20970dcf345d",
+        "planSegmentTextSha256": "0ee0ed56efbf0973a0319c21199516b7e6179c3e1a95791c6eca7c9da4808040"
+      },
+      {
+        "question": 20,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 20,
+          "responseKey": "l-q20",
+          "responseType": "mcq",
+          "questionText": "20  Ground observation",
+          "correctOptionIndex": 2,
+          "correctOptionText": "ground marshal"
+        },
+        "evidenceSegment": "s40-p2-t030",
+        "renderedChunk": "chunk-13",
+        "audiblePhrase": "Ground observation is the marshal’s responsibility, including people who choose not to climb.",
+        "timecode": {
+          "startFrame": 28111409,
+          "endFrame": 32194316,
+          "sampleRateHz": 44100,
+          "startSeconds": 637.446916,
+          "endSeconds": 730.029841,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ac9a79f45a6a9f25648b6261c8607fbd87e1b0714f81811a56ce45e34e1afb31",
+        "planSegmentTextSha256": "72555acd0f8efb5a4ae562ff4f6d95c9333dc6495d3ba548e597d742ccfb3964"
+      },
+      {
+        "question": 21,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 21,
+          "responseKey": "l-q21",
+          "responseType": "mcq",
+          "questionText": "What is the main outcome of the study?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the distribution of speaking turns"
+        },
+        "evidenceSegment": "s40-p3-t002",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "The main outcome should be how speaking turns are distributed across the group, not simply the total number of comments.",
+        "timecode": {
+          "startFrame": 36025282,
+          "endFrame": 40636828,
+          "sampleRateHz": 44100,
+          "startSeconds": 816.899819,
+          "endSeconds": 921.470023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "88177ea06d6d511f5c6de50ea969b72a513e8ead3b1be35a2a1bd7cd50f2c990",
+        "planSegmentTextSha256": "4c34dd6f0b77e4508b089907b1f1a69359352c21c9401e399bd07fd4c6eb2197"
+      },
+      {
+        "question": 22,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 22,
+          "responseKey": "l-q22",
+          "responseType": "mcq",
+          "questionText": "Why will every seminar group have the same size?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "to prevent group size affecting participation"
+        },
+        "evidenceSegment": "s40-p3-t006",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "If one group has more students, its members have fewer opportunities to speak, so group size must remain constant.",
+        "timecode": {
+          "startFrame": 36025282,
+          "endFrame": 40636828,
+          "sampleRateHz": 44100,
+          "startSeconds": 816.899819,
+          "endSeconds": 921.470023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b618f021a54e8aa010abb9a70899615cbdc4cd01b8f6b85095a095975d49539c",
+        "planSegmentTextSha256": "03303748f1ab00e64f66b43d2c1dc5b22e3b41c65509ccbd756469028676df23"
+      },
+      {
+        "question": 23,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 23,
+          "responseKey": "l-q23",
+          "responseType": "mcq",
+          "questionText": "Why do they choose audio rather than video recording?",
+          "correctOptionIndex": 0,
+          "correctOptionText": "it records the required behaviour with less intrusive data"
+        },
+        "evidenceSegment": "s40-p3-t010",
+        "renderedChunk": "chunk-17",
+        "audiblePhrase": "Audio lets us identify speakers and overlaps while avoiding unnecessary images of participants, which makes the procedure less intrusive.",
+        "timecode": {
+          "startFrame": 36025282,
+          "endFrame": 40636828,
+          "sampleRateHz": 44100,
+          "startSeconds": 816.899819,
+          "endSeconds": 921.470023,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "a6eab93af867f6fc1bb190f99f3b2f16582d6080418ff479ea88b1204314ca92",
+        "planSegmentTextSha256": "4efb80de998f98d5956969e36ff51b5e93b6922ec0c258aa7212c3571aec3bf4"
+      },
+      {
+        "question": 24,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 24,
+          "responseKey": "l-q24",
+          "responseType": "mcq",
+          "questionText": "What weakness appeared in the pilot?",
+          "correctOptionIndex": 1,
+          "correctOptionText": "the tutor used prompts inconsistently"
+        },
+        "evidenceSegment": "s40-p3-t014",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "In the pilot, the tutor waited different lengths of time before prompting, so some groups had more opportunity to fill a silence themselves.",
+        "timecode": {
+          "startFrame": 40655350,
+          "endFrame": 44171046,
+          "sampleRateHz": 44100,
+          "startSeconds": 921.890023,
+          "endSeconds": 1001.61102,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "1a3f4e91488d6dbcfa74e6ea79f29d617437750f5864491bac854dbf4640667e",
+        "planSegmentTextSha256": "05039c6e3342170947db03ace8f33272bac5c4f10d0bf0d61deb80a9f217758b"
+      },
+      {
+        "question": 25,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 25,
+          "responseKey": "l-q25",
+          "responseType": "mcq",
+          "questionText": "How will they control for order effects?",
+          "correctOptionIndex": 2,
+          "correctOptionText": "rotate the layout order between groups"
+        },
+        "evidenceSegment": "s40-p3-t018",
+        "renderedChunk": "chunk-18",
+        "audiblePhrase": "We will rotate the layouts across seminar groups rather than letting every group encounter the circular arrangement first.",
+        "timecode": {
+          "startFrame": 40655350,
+          "endFrame": 44171046,
+          "sampleRateHz": 44100,
+          "startSeconds": 921.890023,
+          "endSeconds": 1001.61102,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "bfc6c999752370dad2ab3d7c28b07f73619857d8f548c333af82e5157d613aad",
+        "planSegmentTextSha256": "1e192e219b0afb8b20c29ebfe4e46a4d0635f43e1fa3c6ac7a4134d4abdb25a6"
+      },
+      {
+        "question": 26,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 26,
+          "responseKey": "l-q26",
+          "responseType": "fill",
+          "questionText": "Participants: ______ students",
+          "acceptedResponses": [
+            "second-year",
+            "second year"
+          ]
+        },
+        "evidenceSegment": "s40-p3-t022",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "We should recruit second-year students, whose seminar experience is established but still broadly comparable.",
+        "timecode": {
+          "startFrame": 46350467,
+          "endFrame": 50923251,
+          "sampleRateHz": 44100,
+          "startSeconds": 1051.030998,
+          "endSeconds": 1154.722245,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "13e901d7a7f60c3ec060038499e56a70e7adde2a3b981477680f95862acc97f7",
+        "planSegmentTextSha256": "294af4144d5772ae7d2f7bcff7c21925e37a16f8dd74313c1166bb1a49bae150"
+      },
+      {
+        "question": 27,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 27,
+          "responseKey": "l-q27",
+          "responseType": "fill",
+          "questionText": "Students in each group: ______",
+          "acceptedResponses": [
+            "8",
+            "eight"
+          ]
+        },
+        "evidenceSegment": "s40-p3-t024",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Eight students per group will allow several voices without making reliable speaker identification unmanageable.",
+        "timecode": {
+          "startFrame": 46350467,
+          "endFrame": 50923251,
+          "sampleRateHz": 44100,
+          "startSeconds": 1051.030998,
+          "endSeconds": 1154.722245,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f1108cd3ecccaf191ed6e8f9d628e637139f21ade97f37115cb4d923715fd871",
+        "planSegmentTextSha256": "abe3ebf4ba2a539cc15680d7ba448d5f5aeb3a790c298622655743dcbcf6fb84"
+      },
+      {
+        "question": 28,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 28,
+          "responseKey": "l-q28",
+          "responseType": "fill",
+          "questionText": "Observers will record spoken ______.",
+          "acceptedResponses": [
+            "interruptions"
+          ]
+        },
+        "evidenceSegment": "s40-p3-t027",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Observers will record interruptions separately from supportive overlaps, because the two may affect participation differently.",
+        "timecode": {
+          "startFrame": 46350467,
+          "endFrame": 50923251,
+          "sampleRateHz": 44100,
+          "startSeconds": 1051.030998,
+          "endSeconds": 1154.722245,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d31ca8517ddc12d733892057e67c58e29ad88816e5ca50f6a127bc3595d56e41",
+        "planSegmentTextSha256": "74611a2dd0e1486b03fb3ef55d7ad29e81bca18fc465bb504b5e1c923d6851dd"
+      },
+      {
+        "question": 29,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 29,
+          "responseKey": "l-q29",
+          "responseType": "fill",
+          "questionText": "Baseline measure: speaking ______",
+          "acceptedResponses": [
+            "confidence"
+          ]
+        },
+        "evidenceSegment": "s40-p3-t030",
+        "renderedChunk": "chunk-20",
+        "audiblePhrase": "Before the first seminar, a brief scale will record speaking confidence so we can check whether one layout begins with a more confident group.",
+        "timecode": {
+          "startFrame": 46350467,
+          "endFrame": 50923251,
+          "sampleRateHz": 44100,
+          "startSeconds": 1051.030998,
+          "endSeconds": 1154.722245,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "afecc5e79b7cd7a21db5ae3c3b64dffd1b1dd8612613527f46b0578d44b44f92",
+        "planSegmentTextSha256": "70d51bc02b1358842fa1c080e37d5ddff1e26c6e07526e805ecb7ab3f037d1f8"
+      },
+      {
+        "question": 30,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 30,
+          "responseKey": "l-q30",
+          "responseType": "fill",
+          "questionText": "Follow-up interview: ______ minutes",
+          "acceptedResponses": [
+            "10",
+            "ten"
+          ]
+        },
+        "evidenceSegment": "s40-p3-t034",
+        "renderedChunk": "chunk-21",
+        "audiblePhrase": "The follow-up interview will last ten minutes and ask what made it easier or harder to enter the discussion.",
+        "timecode": {
+          "startFrame": 50941773,
+          "endFrame": 52458455,
+          "sampleRateHz": 44100,
+          "startSeconds": 1155.142245,
+          "endSeconds": 1189.534127,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "d62e5fdf952f563208893cd933e721ef61b14b650ef82f0792a4698222a5a09a",
+        "planSegmentTextSha256": "61d81d57f166c10e26f9149083a2368122e4d20d413f95df14f2437523872f63"
+      },
+      {
+        "question": 31,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 31,
+          "responseKey": "l-q31",
+          "responseType": "fill",
+          "questionText": "An atmospheric river transports concentrated ______.",
+          "acceptedResponses": [
+            "water vapour"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t002",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "For the exercise, we use atmospheric river for a narrow zone carrying concentrated water vapour, not liquid water in the sky.",
+        "timecode": {
+          "startFrame": 55929129,
+          "endFrame": 60807098,
+          "sampleRateHz": 44100,
+          "startSeconds": 1268.234218,
+          "endSeconds": 1378.84576,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9e32f5356cdc215f8f2aaf4be2b1ee60709deb810d437c0fea053c7fdf729c3b",
+        "planSegmentTextSha256": "b70f577666db7a15e15a17fe8ec9421d30f315143b32c19f4ad3b640aa41b14d"
+      },
+      {
+        "question": 32,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 32,
+          "responseKey": "l-q32",
+          "responseType": "fill",
+          "questionText": "It is typically a relatively ______ corridor.",
+          "acceptedResponses": [
+            "narrow"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t005",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Relative to its length, the corridor is narrow, although its boundaries shift through time.",
+        "timecode": {
+          "startFrame": 55929129,
+          "endFrame": 60807098,
+          "sampleRateHz": 44100,
+          "startSeconds": 1268.234218,
+          "endSeconds": 1378.84576,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "330739886cc11d03bb74f0a0393bd4bf867e5e2a7b2e1213c7bbe264ed6fee07",
+        "planSegmentTextSha256": "173a6ac2e9102c7289d9e304f8365b9f11daa9f14e2e9be14d279fe397ccdeb5"
+      },
+      {
+        "question": 33,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 33,
+          "responseKey": "l-q33",
+          "responseType": "fill",
+          "questionText": "Much of the moisture comes from the ______.",
+          "acceptedResponses": [
+            "ocean"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t010",
+        "renderedChunk": "chunk-24",
+        "audiblePhrase": "Much of the moisture comes from evaporation over the ocean and may be supplemented along the route.",
+        "timecode": {
+          "startFrame": 55929129,
+          "endFrame": 60807098,
+          "sampleRateHz": 44100,
+          "startSeconds": 1268.234218,
+          "endSeconds": 1378.84576,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "9160e21950e4be9c45ca94815470e7aef01cb902e55312093c717aa4c033acc8",
+        "planSegmentTextSha256": "091d10ceff3c6fea4e83de81bc976d4f819c9f914cd284651755ada7e149000f"
+      },
+      {
+        "question": 34,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 34,
+          "responseKey": "l-q34",
+          "responseType": "fill",
+          "questionText": "Rising terrain causes ______ uplift.",
+          "acceptedResponses": [
+            "orographic"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t013",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "On the worksheet, rising terrain causes orographic uplift as the air moves inland.",
+        "timecode": {
+          "startFrame": 60825620,
+          "endFrame": 64669012,
+          "sampleRateHz": 44100,
+          "startSeconds": 1379.26576,
+          "endSeconds": 1466.417506,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "ea70028d5f8bbdec46a7b3d66bda837d28682fdb97dec159dd09eaeca3fd272e",
+        "planSegmentTextSha256": "d005b4f86c4ed5e73acbf1cb4a4603afb7f6dfd2dcfeed711fed9d0780636558"
+      },
+      {
+        "question": 35,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 35,
+          "responseKey": "l-q35",
+          "responseType": "fill",
+          "questionText": "Cooling can produce intense ______.",
+          "acceptedResponses": [
+            "precipitation"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t016",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "Cooling promotes condensation and can produce intense precipitation on windward slopes.",
+        "timecode": {
+          "startFrame": 60825620,
+          "endFrame": 64669012,
+          "sampleRateHz": 44100,
+          "startSeconds": 1379.26576,
+          "endSeconds": 1466.417506,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f5bcf01e045ca74a93228dcab6f0eaec8d56b8b3f44cec61fe668b164e49448e",
+        "planSegmentTextSha256": "3a034267706e1d555af0c89463bfc1790b986312c4a33c255de91bb93f135715"
+      },
+      {
+        "question": 36,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 36,
+          "responseKey": "l-q36",
+          "responseType": "fill",
+          "questionText": "In cold basins the event may add to the ______.",
+          "acceptedResponses": [
+            "snowpack"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t022",
+        "renderedChunk": "chunk-25",
+        "audiblePhrase": "In cold conditions, the event may add substantially to the snowpack rather than falling entirely as rain.",
+        "timecode": {
+          "startFrame": 60825620,
+          "endFrame": 64669012,
+          "sampleRateHz": 44100,
+          "startSeconds": 1379.26576,
+          "endSeconds": 1466.417506,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "f69533bf4403a59e3903824596877ae9d86d0f6396c764abf293735d8dcedf00",
+        "planSegmentTextSha256": "b91ab851db72315e9dfeb9403506bc895afd59341af842aa8cf73c8d5d08d1bf"
+      },
+      {
+        "question": 37,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 37,
+          "responseKey": "l-q37",
+          "responseType": "fill",
+          "questionText": "Forecast impacts depend strongly on the exact landfall ______.",
+          "acceptedResponses": [
+            "location"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t024",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "In the forecast case, the exact landfall location determines which labelled catchment receives the heaviest precipitation.",
+        "timecode": {
+          "startFrame": 66848425,
+          "endFrame": 71551141,
+          "sampleRateHz": 44100,
+          "startSeconds": 1515.837302,
+          "endSeconds": 1622.474853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "81b7d23e94cdbb92a1c09e9c049d6376dc57ec6b6a55fd4d53a8abbb376e9296",
+        "planSegmentTextSha256": "e2f3d858470f1fe7f8a7f573b933ff0c597de63f0f1e46c3b7f2c113568f2a2f"
+      },
+      {
+        "question": 38,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 38,
+          "responseKey": "l-q38",
+          "responseType": "fill",
+          "questionText": "Forecasters also estimate the event’s ______.",
+          "acceptedResponses": [
+            "duration"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t028",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "The worksheet asks students to estimate the event's duration as well as its peak strength before comparing outcomes.",
+        "timecode": {
+          "startFrame": 66848425,
+          "endFrame": 71551141,
+          "sampleRateHz": 44100,
+          "startSeconds": 1515.837302,
+          "endSeconds": 1622.474853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "2f6ea97fe324de47363996bb04daecf71baa34a5eaba1d772af0fe72679b0d4d",
+        "planSegmentTextSha256": "c6aad36f66e35ceee9870e9be6ee4e93e2ab7e587ee8de2d2b2a061d96adc823"
+      },
+      {
+        "question": 39,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 39,
+          "responseKey": "l-q39",
+          "responseType": "fill",
+          "questionText": "Recent wildfire areas may face rapid ______.",
+          "acceptedResponses": [
+            "runoff"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t032",
+        "renderedChunk": "chunk-27",
+        "audiblePhrase": "Recently burned slopes may produce rapid runoff because vegetation and soil structure have been altered.",
+        "timecode": {
+          "startFrame": 66848425,
+          "endFrame": 71551141,
+          "sampleRateHz": 44100,
+          "startSeconds": 1515.837302,
+          "endSeconds": 1622.474853,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "fe43a21cc9e02ba7d1bb7aeba5ef6e46223109f9b0c27afab7378149e6a1fc72",
+        "planSegmentTextSha256": "76110f8b4aaf048fd8ab030b1a673f1b1e41c4dc430718445b51eccfe3acbaec"
+      },
+      {
+        "question": 40,
+        "status": "PENDING_INDEPENDENT_REVIEW",
+        "responseBinding": {
+          "question": 40,
+          "responseKey": "l-q40",
+          "responseType": "fill",
+          "questionText": "Public forecasts should communicate an uncertainty ______.",
+          "acceptedResponses": [
+            "range"
+          ]
+        },
+        "evidenceSegment": "s40-p4-t040",
+        "renderedChunk": "chunk-28",
+        "audiblePhrase": "For the public bulletin, communicate an uncertainty range instead of presenting one track and rainfall total as certain.",
+        "timecode": {
+          "startFrame": 71569663,
+          "endFrame": 75257103,
+          "sampleRateHz": 44100,
+          "startSeconds": 1622.894853,
+          "endSeconds": 1706.510272,
+          "basis": "ELEVENLABS_V4_EXACT_RENDERED_CHUNK_INTERVAL_FROM_CONCAT_FRAMES"
+        },
+        "ledgerRowSha256": "b3649acabb31c018ff3e96c063d595b4b560a0387d894d18767fbcba28b3fce7",
+        "planSegmentTextSha256": "d60a1808ccb5c2e731541e09324464927a7322ae460d871031fbccbd15bf1018"
+      }
+    ],
+    "provenance": {
+      "method": "ELEVENLABS_V4_EXACT_CHUNK_CONCAT_TIMELINE",
+      "note": "A question window is the exact rendered chunk interval containing its answer-bearing plan segment; no intra-chunk time was estimated.",
+      "contentArtifact": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/set40-listening-content-v1.0.17.json",
+        "sha256": "658962eb5f5c7c843cb17177bd5793ce6849a7056d8deafd94b4ad81583f52df"
+      },
+      "answerEvidenceLedgerCanonicalSha256": "9d64b4b02fa72a1b33e37223270e05ebe7e86c8079e18ad63560c2330e53f897",
+      "plan": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/work/listening-sets22-40/set-40/set40-audio-production-plan.json",
+        "sha256": "b158c5d38e8b38affaa94df3f60482378a4420d4a5696a8e71495a0598cd49ab"
+      },
+      "renderManifest": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/elevenlabs-v4/set40-eleven-v4-manifest.json",
+        "sha256": "5700a813f4053ab49e2df39ca3d6bb921744ffbb89aaf246145cffb1c4f5e3ac"
+      },
+      "progressReceipt": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/elevenlabs-v4/set40-eleven-v4-progress.json",
+        "sha256": "32e201d20f730ae748d07ec306a6f4dee3d74e9bd29448e51c278a373eecc401"
+      },
+      "technicalAndFocalQa": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/elevenlabs-v4/set40-eleven-v4-qa.json",
+        "sha256": "98e788e6df08ac7e239109bb102bcc4b5d92d4bf90cda9b48de831ad981baffc"
+      },
+      "concatList": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/elevenlabs-v4/set40-concat.txt",
+        "sha256": "bad18e987fc20c400902c6d1280313b7e0e1d352dbc997de78a2510a961de134"
+      },
+      "concatPieceAggregateSha256": "4d7ff820bfffd532e3c53fa0a241effbca67b023b2ca2a3d8da5362e8c9b1783",
+      "masterWav": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/elevenlabs-v4/ielts-set-40-listening-eleven-v4-master.wav",
+        "sha256": "6e82a38ab9c777c50df0d3762249cc1e839d63488930562b1bc96815578f4b87",
+        "frameCount": 76787377,
+        "sampleRateHz": 44100
+      },
+      "deliveryMp3": {
+        "path": "/Users/ddev/Documents/Codex/2026-10-02/pu/outputs/ielts-production/set-40/listening/elevenlabs-v4/ielts-set-40-listening-eleven-v4.mp3",
+        "sha256": "c6dbb55e2cb2945a459af77d28c13478b5c527b5f3fde59a59288076c68b4290"
+      },
+      "publicMp3": {
+        "path": "/private/tmp/ielts-prod-audit.9UhQtF/public/audio/ielts/ielts-listening-set-40.mp3",
+        "sha256": "c6dbb55e2cb2945a459af77d28c13478b5c527b5f3fde59a59288076c68b4290"
+      }
+    }
+  },
+  "integrity": {
+    "algorithm": "SHA-256 canonical JSON excluding integrity",
+    "payloadSha256": "261dc91b2d6bbe688017b6acf6cd7728df56a795012256cf0a2e481475c877a0"
+  }
+}
