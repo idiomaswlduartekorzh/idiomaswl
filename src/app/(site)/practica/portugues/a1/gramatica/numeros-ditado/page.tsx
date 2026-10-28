@@ -3,7 +3,7 @@ import PortugueseNumberDictation from '@/components/practica/PortugueseNumberDic
 
 export const metadata: Metadata = {
   title: 'Ditado de números em português: 0 a 100.000 | Prática A1',
-  description: 'Ouça números em português brasileiro, responda primeiro em algarismos e depois escreva-os por extenso em seis séries progressivas.',
+  description: 'Ouça um ditado de 20 números em português brasileiro, complete a ficha em algarismos ou por extenso e verifique todas as respostas no final.',
   alternates: { canonical: '/practica/portugues/a1/gramatica/numeros-ditado' },
 }
 

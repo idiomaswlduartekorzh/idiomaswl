@@ -32,26 +32,22 @@ for (let index = 0; index < PORTUGUESE_NUMBER_DICTATION_SETS.length; index += 2)
   assert.equal(digitsSet.answerMode, 'digits')
   assert.equal(wordsSet.answerMode, 'words')
   assert.deepEqual(wordsSet.items, digitsSet.items, `Paired sets must reuse the same audio at index ${index}`)
+  assert.equal(wordsSet.audioUrl, digitsSet.audioUrl, `Paired sets must reference one recording at index ${index}`)
 }
 
 const seenAudioUrls = new Set()
 const sets = PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => {
-  const newAudioItems = set.items.filter((item) => {
-    if (seenAudioUrls.has(item.audioUrl)) return false
-    seenAudioUrls.add(item.audioUrl)
-    return true
-  })
-  const characters = newAudioItems.reduce((total, item) => total + item.spoken.length, 0)
-  const conservativeFlashCredits = newAudioItems.reduce(
-    (total, item) => total + Math.ceil(item.spoken.length * FLASH_CREDITS_PER_CHARACTER),
-    0,
-  )
+  const isNewAudio = !seenAudioUrls.has(set.audioUrl)
+  if (isNewAudio) seenAudioUrls.add(set.audioUrl)
+  const narrationText = `${set.items.map((item) => item.spoken).join('. ... ')}.`
+  const characters = isNewAudio ? narrationText.length : 0
+  const conservativeFlashCredits = Math.ceil(characters * FLASH_CREDITS_PER_CHARACTER)
   return {
     id: set.id,
     range: set.range,
     answerMode: set.answerMode,
     exercises: set.items.length,
-    newAudioFiles: newAudioItems.length,
+    newAudioFiles: isNewAudio ? 1 : 0,
     characters,
     conservativeFlashCredits,
   }

@@ -1,7 +1,6 @@
 export type PortugueseNumberDictationItem = {
   value: number
   spoken: string
-  audioUrl: string
 }
 
 export type PortugueseNumberDictationSet = {
@@ -12,6 +11,7 @@ export type PortugueseNumberDictationSet = {
   description: string
   answerMode: 'digits' | 'words'
   modeLabel: string
+  audioUrl: string
   items: PortugueseNumberDictationItem[]
 }
 
@@ -115,12 +115,12 @@ const RANGE_DEFINITIONS = [
 ] as const
 
 export const PORTUGUESE_NUMBER_DICTATION_SETS: PortugueseNumberDictationSet[] = RANGE_DEFINITIONS.flatMap((range, rangeIndex) => {
-  const items = range.values.map((value, itemIndex) => ({
+  const items = range.values.map((value) => ({
     value,
     spoken: portugueseNumberWords(value),
-    audioUrl: `/audio/portugues/a1/numeros/${range.id}/${String(itemIndex + 1).padStart(2, '0')}.mp3`,
   }))
   const firstOrder = rangeIndex * 2 + 1
+  const audioUrl = `/audio/portugues/a1/numeros/${range.id}/ditado-20.mp3`
 
   return [
     {
@@ -131,6 +131,7 @@ export const PORTUGUESE_NUMBER_DICTATION_SETS: PortugueseNumberDictationSet[] = 
       description: 'Ouça cada número e registre a resposta usando somente algarismos.',
       answerMode: 'digits' as const,
       modeLabel: 'Em cifras',
+      audioUrl,
       items,
     },
     {
@@ -141,6 +142,7 @@ export const PORTUGUESE_NUMBER_DICTATION_SETS: PortugueseNumberDictationSet[] = 
       description: 'Ouça os mesmos 20 números e escreva cada resposta por extenso, com ortografia completa.',
       answerMode: 'words' as const,
       modeLabel: 'Com letras',
+      audioUrl,
       items,
     },
   ]
