@@ -26,17 +26,32 @@ for (const [value, expected] of spellingChecks) {
 
 assert.equal(PORTUGUESE_NUMBER_DICTATION_SETS.length, 6)
 assert.ok(PORTUGUESE_NUMBER_DICTATION_SETS.every((set) => set.items.length === 20))
+for (let index = 0; index < PORTUGUESE_NUMBER_DICTATION_SETS.length; index += 2) {
+  const digitsSet = PORTUGUESE_NUMBER_DICTATION_SETS[index]
+  const wordsSet = PORTUGUESE_NUMBER_DICTATION_SETS[index + 1]
+  assert.equal(digitsSet.answerMode, 'digits')
+  assert.equal(wordsSet.answerMode, 'words')
+  assert.deepEqual(wordsSet.items, digitsSet.items, `Paired sets must reuse the same audio at index ${index}`)
+}
 
+const seenAudioUrls = new Set()
 const sets = PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => {
-  const characters = set.items.reduce((total, item) => total + item.spoken.length, 0)
-  const conservativeFlashCredits = set.items.reduce(
+  const newAudioItems = set.items.filter((item) => {
+    if (seenAudioUrls.has(item.audioUrl)) return false
+    seenAudioUrls.add(item.audioUrl)
+    return true
+  })
+  const characters = newAudioItems.reduce((total, item) => total + item.spoken.length, 0)
+  const conservativeFlashCredits = newAudioItems.reduce(
     (total, item) => total + Math.ceil(item.spoken.length * FLASH_CREDITS_PER_CHARACTER),
     0,
   )
   return {
     id: set.id,
     range: set.range,
-    items: set.items.length,
+    answerMode: set.answerMode,
+    exercises: set.items.length,
+    newAudioFiles: newAudioItems.length,
     characters,
     conservativeFlashCredits,
   }
@@ -50,7 +65,8 @@ console.log(JSON.stringify({
   sets,
   totals: {
     sets: sets.length,
-    items: PORTUGUESE_NUMBER_DICTATION_SETS.reduce((total, set) => total + set.items.length, 0),
+    exercises: PORTUGUESE_NUMBER_DICTATION_SETS.reduce((total, set) => total + set.items.length, 0),
+    uniqueAudioFiles: seenAudioUrls.size,
     characters: totalCharacters,
     creditsAtExactHalfRate: Math.ceil(totalCharacters * FLASH_CREDITS_PER_CHARACTER),
     conservativeCreditsWithPerRequestRounding: conservativeFlashCredits,

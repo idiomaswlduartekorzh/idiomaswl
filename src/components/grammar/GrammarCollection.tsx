@@ -168,8 +168,8 @@ export function GrammarCollectionIndex({
                 <Link className={styles.topicCard} href="/practica/portugues/a1/gramatica/numeros-ditado">
                   <div className={styles.cardTop}><span style={{ background: '#126b3a' }}>▶</span><em>Escucha + escritura</em></div>
                   <h3>Ditado de números: 0 a 100.000</h3>
-                  <p>Escucha un número, escríbelo en cifras y desbloquea la siguiente serie solo cuando aciertes.</p>
-                  <footer><span>6 series progresivas · corrección inmediata</span><b>→</b></footer>
+                  <p>Escucha cada número: primero respóndelo en cifras y después escribe los mismos 20 por extenso.</p>
+                  <footer><span>3 rangos · cifras + ortografía · corrección inmediata</span><b>→</b></footer>
                 </Link>
               </div>
             </section>

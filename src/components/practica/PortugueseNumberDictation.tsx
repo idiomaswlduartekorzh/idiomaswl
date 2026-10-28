@@ -8,12 +8,21 @@ import styles from './PortugueseNumberDictation.module.css'
 type Feedback = 'idle' | 'correct' | 'wrong'
 type StoredProgress = { positions: number[]; unlockedSet: number }
 
-const STORAGE_KEY = 'welearn:portugues:a1:numeros-ditado:v1'
+const STORAGE_KEY = 'welearn:portugues:a1:numeros-ditado:v2'
 const emptyPositions = () => PORTUGUESE_NUMBER_DICTATION_SETS.map(() => 0)
 
 function parseNumericAnswer(value: string): number | null {
   const digits = value.replace(/[^0-9]/g, '')
   return digits ? Number(digits) : null
+}
+
+function normalizeWrittenAnswer(value: string): string {
+  return value
+    .normalize('NFC')
+    .toLocaleLowerCase('pt-BR')
+    .replace(/[.,;:!?]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 function safeProgress(value: unknown): StoredProgress | null {
@@ -96,7 +105,10 @@ export default function PortugueseNumberDictation() {
 
   function submitAnswer() {
     if (!item || feedback === 'correct') return
-    if (parseNumericAnswer(answer) !== item.value) {
+    const answerIsCorrect = selectedSet.answerMode === 'digits'
+      ? parseNumericAnswer(answer) === item.value
+      : normalizeWrittenAnswer(answer) === normalizeWrittenAnswer(item.spoken)
+    if (!answerIsCorrect) {
       setFeedback('wrong')
       setMistakes((value) => value + 1)
       return
@@ -145,18 +157,18 @@ export default function PortugueseNumberDictation() {
           <div>
             <p className={styles.eyebrow}>Laboratório auditivo · Português brasileiro · A1</p>
             <h1>Ouça o número. Escreva o que ouviu.</h1>
-            <p className={styles.lead}>Se acertar, você avança. Se errar, permanece no mesmo número e pode ouvi-lo outra vez. A rota cresce de 0–99 até 100.000.</p>
-            <div className={styles.heroMetrics}><span><b>6</b> séries</span><span><b>120</b> números</span><span><b>{totalCompleted}</b> concluídos</span></div>
+            <p className={styles.lead}>Em cada faixa você trabalha duas vezes os mesmos 20 áudios: primeiro responde em cifras; depois escreve os números por extenso para treinar a ortografia.</p>
+            <div className={styles.heroMetrics}><span><b>3</b> faixas</span><span><b>6</b> séries</span><span><b>{totalCompleted}/120</b> respostas</span></div>
           </div>
           <aside className={styles.heroCard}>
-            <span>Regra do treino</span><strong>ouvir → escrever → conferir</strong><p>Digite somente algarismos. Pontos e espaços de milhar são aceitos.</p>
+            <span>Dupla prática</span><strong>cifras primeiro, ortografia depois</strong><p>Cada áudio é reaproveitado: você reconhece o número e, na rodada seguinte, demonstra como ele é escrito.</p>
           </aside>
         </header>
 
         <section className={styles.route} aria-labelledby="number-route-title">
           <div className={styles.sectionHeading}>
-            <div><span>Seu percurso</span><h2 id="number-route-title">Seis séries, dificuldade progressiva</h2></div>
-            <p>Uma série só é liberada quando a anterior chega a 20 acertos.</p>
+            <div><span>Seu percurso</span><h2 id="number-route-title">Três faixas, duas habilidades em cada uma</h2></div>
+            <p>Complete as cifras para liberar a ortografia; complete ambas para avançar à faixa seguinte.</p>
           </div>
           <div className={styles.setGrid}>
             {PORTUGUESE_NUMBER_DICTATION_SETS.map((set, index) => {
@@ -164,7 +176,7 @@ export default function PortugueseNumberDictation() {
               const setCompleted = positions[index] >= set.items.length
               return (
                 <button type="button" key={set.id} className={`${styles.setCard} ${index === activeSet ? styles.activeSet : ''}`} onClick={() => selectSet(index)} disabled={locked} aria-current={index === activeSet ? 'step' : undefined}>
-                  <span>{locked ? 'Bloqueada' : setCompleted ? 'Concluída' : `Série ${set.order}`}</span><strong>{set.range}</strong><small>{positions[index]}/20</small>
+                  <span>{locked ? 'Bloqueada' : setCompleted ? 'Concluída' : `Série ${set.order}`}</span><strong>{set.range}</strong><em>{set.modeLabel}</em><small>{positions[index]}/20</small>
                 </button>
               )
             })}
@@ -192,21 +204,38 @@ export default function PortugueseNumberDictation() {
                 <span aria-hidden="true">▶</span><strong>{playCount ? 'Ouvir novamente' : 'Ouvir o número'}</strong><small>{playCount ? `${playCount} reprodução${playCount === 1 ? '' : 'ões'}` : 'Você pode repetir quando precisar'}</small>
               </button>
               {audioError ? <p className={styles.audioError}>O áudio desta série ainda não está disponível. A estrutura está pronta e aguarda a geração final.</p> : null}
+              <div className={styles.modeBanner} data-mode={selectedSet.answerMode}>
+                <span>{selectedSet.answerMode === 'digits' ? '01' : 'Aa'}</span>
+                <div><b>{selectedSet.answerMode === 'digits' ? 'Responda em cifras' : 'Responda por extenso'}</b><p>{selectedSet.answerMode === 'digits' ? 'Exemplo: 48' : 'Exemplo: quarenta e oito'}</p></div>
+              </div>
               <label className={styles.answerField}>
-                <span>Qual número você ouviu?</span>
-                <input type="text" inputMode="numeric" autoComplete="off" placeholder="Digite em algarismos" value={answer} onChange={(event) => { setAnswer(event.target.value); if (feedback === 'wrong') setFeedback('idle') }} onKeyDown={(event) => { if (event.key === 'Enter') submitAnswer() }} disabled={feedback === 'correct'} />
+                <span>{selectedSet.answerMode === 'digits' ? 'Qual número você ouviu?' : 'Como se escreve o número que você ouviu?'}</span>
+                <input
+                  type="text"
+                  lang="pt-BR"
+                  inputMode={selectedSet.answerMode === 'digits' ? 'numeric' : 'text'}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoCapitalize="none"
+                  spellCheck={false}
+                  placeholder={selectedSet.answerMode === 'digits' ? 'Digite em algarismos' : 'Digite por extenso em português'}
+                  value={answer}
+                  onChange={(event) => { setAnswer(event.target.value); if (feedback === 'wrong') setFeedback('idle') }}
+                  onKeyDown={(event) => { if (event.key === 'Enter') submitAnswer() }}
+                  disabled={feedback === 'correct'}
+                />
               </label>
               <button type="button" className={styles.checkButton} onClick={submitAnswer} disabled={!answer.trim() || feedback === 'correct'}>Conferir resposta</button>
-              {feedback === 'wrong' ? <div className={styles.wrongFeedback}><b>Ainda não.</b><p>Ouça novamente e tente o mesmo número. Você não perde o seu progresso.</p></div> : null}
+              {feedback === 'wrong' ? <div className={styles.wrongFeedback}><b>Ainda não.</b><p>{selectedSet.answerMode === 'digits' ? 'Confira os algarismos' : 'Confira a ortografia, os acentos e o uso de “e”'}. Ouça novamente e tente o mesmo número.</p></div> : null}
               {feedback === 'correct' ? <div className={styles.correctFeedback}><b>Correto: {item.value.toLocaleString('pt-BR')}</b><p lang="pt-BR">{item.spoken}</p></div> : null}
-              <footer className={styles.exerciseFooter}><span>Tentativas incorretas nesta rodada: <b>{mistakes}</b></span><span>Áudio individual · sem revelar a resposta antes do acerto</span></footer>
+              <footer className={styles.exerciseFooter}><span>Tentativas incorretas nesta rodada: <b>{mistakes}</b></span><span>{selectedSet.answerMode === 'digits' ? 'Reconhecimento numérico' : 'Ortografia em português'} · sem revelar a resposta antes do acerto</span></footer>
             </div>
           ) : null}
         </section>
 
         <section className={styles.teacherNote}>
           <div><span>Para aula e estudo autônomo</span><h2>O modelo está pronto para escalar</h2></div>
-          <p>Os dados, a correção e o desbloqueio são independentes do idioma. Depois de validar esta versão em português, a mesma estrutura pode receber listas e vozes próprias para os demais idiomas.</p>
+          <p>Cada faixa combina reconhecimento e ortografia sem duplicar os áudios. Depois de validar esta versão em português, a mesma estrutura pode receber listas, regras ortográficas e vozes próprias para os demais idiomas.</p>
         </section>
       </div>
     </div>
