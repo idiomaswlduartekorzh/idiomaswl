@@ -18,7 +18,8 @@ import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
 import GoetheReviewPanel from './GoetheReviewPanel'
 import AdminOverview from './AdminOverview'
-import { updateLeadStatus, type LeadStatus } from './lead-actions'
+import { updateLeadStatus } from './lead-actions'
+import type { LeadStatus } from './lead-status'
 import styles from './admin-navigation.module.css'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────

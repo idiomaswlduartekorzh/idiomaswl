@@ -3,9 +3,9 @@
 import { revalidatePath } from 'next/cache'
 import { requireAdmin } from '@/lib/auth/require-admin.server'
 import { createAdminClient } from '@/lib/supabase/admin'
+import type { LeadStatus } from './lead-status'
 
 const statuses = ['new', 'contacted', 'qualified', 'converted', 'discarded'] as const
-export type LeadStatus = typeof statuses[number]
 
 export async function updateLeadStatus(leadId: string, status: LeadStatus): Promise<{ ok: boolean; error?: string }> {
   await requireAdmin()
