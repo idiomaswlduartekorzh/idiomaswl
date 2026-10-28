@@ -8,14 +8,18 @@ Fecha de corte: 25 de agosto de 2026.
 ## Paneles de estudiante y administración — 26 de octubre de 2026
 
 La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama
-`codex/dashboard-redesign-20261026`, incorpora `main@4f0f27b7` y propone un
-rediseño de ambos paneles. El estudiante puede filtrar resultados por examen y
+`codex/dashboard-redesign-20261026`, se integró por squash en
+`main@b5dbe33dc76822b5eba0f58f3ecc57dfe2e3411e` y rediseña ambos paneles.
+El estudiante puede filtrar resultados por examen y
 periodo, comparar su evolución y abrir el reporte más reciente. El centro
 administrativo ofrece filtros, actividad diaria, prioridades y seguimiento del
 estado de leads, con la escritura protegida por `requireAdmin` y la verificación
 del origen de cada solicitud.
 
-Estado: `LISTO_PARA_INTEGRAR`; no integrado ni publicado en producción. Pasaron la CI,
+Estado: `DESPLEGADO`. Vercel publicó
+[`dpl_GrRwbNfwRW4s6iu4bgfZmp9qiJ2o`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/GrRwbNfwRW4s6iu4bgfZmp9qiJ2o)
+desde `main@b5dbe33`, estado `READY`, con `www.idiomaswl.com` asignado el
+28 de octubre de 2026. Pasaron la CI,
 la vista previa de Vercel, el catálogo protegido, la línea base frente a `main`,
 TypeScript, ESLint focalizado, las 12 pruebas del panel de estudiante, el build
 optimizado y una revisión visual de escritorio y móvil. El 28 de octubre se
@@ -25,6 +29,15 @@ del resumen y de leads y el guardado del estado `contacted` en la vista previa y
 en Supabase. El lead sintético de la prueba se eliminó. Para completar el acceso
 con Google se autorizó temporalmente la URL exacta de retorno de la vista previa;
 se retiró después y Supabase conserva solo sus dos URLs de producción.
+
+Smoke en producción: `/dashboard/admin` abrió con sesión administradora;
+los filtros de periodo y examen actualizaron las métricas, la vista de leads
+mostró búsqueda y estados editables, y la gráfica de actividad se dibujó.
+`/dashboard/student` abrió con sesión estudiantil; mostró correctamente el
+estado sin resultados y aceptó el filtro de periodo. No se modificaron
+contactos reales durante el smoke. Los registros de ejecución del deployment
+mostraron cero errores y dos avisos de tamaño inicial del gráfico administrativo;
+la gráfica se visualizó tras la hidratación del cliente.
 
 ## Parche de seguridad Next.js y decisión de inscripción — 26 de octubre de 2026
 
