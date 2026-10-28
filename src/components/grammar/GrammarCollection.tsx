@@ -157,6 +157,24 @@ export function GrammarCollectionIndex({
             <p>{english ? 'Follow the sequence or open the system you need. Every topic includes a complete lesson, visual map, extended practice and three printable PDFs.' : 'Avanza en orden o abre la estructura que necesitas repasar. Cada enlace conserva una lección completa, ejemplos y ejercicios.'}</p>
           </section>
 
+          {idioma === 'portugues' && nivel === 'a1' ? (
+            <section className={styles.topicGroup} aria-labelledby="laboratorio-numeros-portugues">
+              <div className={styles.groupHeading}>
+                <span>00</span>
+                <div><p>Laboratorio auditivo</p><h2 id="laboratorio-numeros-portugues">Números escuchados</h2></div>
+                <small>6 series · 120 números</small>
+              </div>
+              <div className={styles.topicGrid}>
+                <Link className={styles.topicCard} href="/practica/portugues/a1/gramatica/numeros-ditado">
+                  <div className={styles.cardTop}><span style={{ background: '#126b3a' }}>▶</span><em>Escucha + escritura</em></div>
+                  <h3>Ditado de números: 0 a 100.000</h3>
+                  <p>Escucha un número, escríbelo en cifras y desbloquea la siguiente serie solo cuando aciertes.</p>
+                  <footer><span>6 series progresivas · corrección inmediata</span><b>→</b></footer>
+                </Link>
+              </div>
+            </section>
+          ) : null}
+
           {groupedTopics.map(([category, categoryTopics], categoryIndex) => (
             <section className={styles.topicGroup} key={category} aria-labelledby={`categoria-${categoryIndex}`}>
               <div className={styles.groupHeading}>
