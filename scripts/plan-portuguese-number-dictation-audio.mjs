@@ -26,6 +26,7 @@ for (const [value, expected] of spellingChecks) {
 
 assert.equal(PORTUGUESE_NUMBER_DICTATION_SETS.length, 6)
 assert.ok(PORTUGUESE_NUMBER_DICTATION_SETS.every((set) => set.items.length === 20))
+assert.ok(PORTUGUESE_NUMBER_DICTATION_SETS.every((set) => new Set(set.items.map((item) => item.value)).size === set.items.length), 'Each dictation must contain 20 distinct numbers')
 assert.equal(new Set(PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => set.audioUrl)).size, 6)
 assert.deepEqual(PORTUGUESE_NUMBER_DICTATION_SETS.map((set) => set.answerMode), [
   'digits', 'words', 'digits', 'words', 'digits', 'words',

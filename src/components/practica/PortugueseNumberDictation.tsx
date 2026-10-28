@@ -7,13 +7,19 @@ import styles from './PortugueseNumberDictation.module.css'
 
 type FieldResult = 'idle' | 'correct' | 'wrong'
 type StoredProgress = { completed: boolean[]; scores: number[]; unlockedSet: number }
+type PlaybackMode = 'easy' | 'medium' | 'hard'
 
-const STORAGE_KEY = 'welearn:portugues:a1:numeros-ditado:v5'
+const STORAGE_KEY = 'welearn:portugues:a1:numeros-ditado:v6'
 const setCount = PORTUGUESE_NUMBER_DICTATION_SETS.length
 const emptyCompleted = () => PORTUGUESE_NUMBER_DICTATION_SETS.map(() => false)
 const emptyScores = () => PORTUGUESE_NUMBER_DICTATION_SETS.map(() => 0)
 const emptyAnswers = () => Array.from({ length: 20 }, () => '')
 const emptyResults = () => Array.from({ length: 20 }, (): FieldResult => 'idle')
+const PLAYBACK_MODES: ReadonlyArray<{ id: PlaybackMode; label: string; rate: number; note: string }> = [
+  { id: 'easy', label: 'Fácil', rate: 1, note: 'Pausado e bem marcado' },
+  { id: 'medium', label: 'Médio', rate: 1.15, note: 'Mais próximo da fala real' },
+  { id: 'hard', label: 'Difícil', rate: 1.3, note: 'Rápido, mas ainda natural' },
+]
 
 function parseNumericAnswer(value: string): number | null {
   const digits = value.replace(/[^0-9]/g, '')
@@ -47,6 +53,7 @@ export default function PortugueseNumberDictation() {
   const [audioError, setAudioError] = useState(false)
   const [playCount, setPlayCount] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [playbackMode, setPlaybackMode] = useState<PlaybackMode>('easy')
   const audioRef = useRef<HTMLAudioElement>(null)
 
   const selectedSet = PORTUGUESE_NUMBER_DICTATION_SETS[activeSet]
@@ -55,6 +62,7 @@ export default function PortugueseNumberDictation() {
   const filledCount = answers.filter((answer) => answer.trim()).length
   const allFilled = filledCount === selectedSet.items.length
   const completedCount = completed.filter(Boolean).length
+  const selectedPlaybackMode = PLAYBACK_MODES.find((mode) => mode.id === playbackMode) ?? PLAYBACK_MODES[0]
 
   useEffect(() => {
     try {
@@ -75,6 +83,13 @@ export default function PortugueseNumberDictation() {
     return () => audio?.pause()
   }, [])
 
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio) return
+    audio.playbackRate = selectedPlaybackMode.rate
+    audio.preservesPitch = true
+  }, [activeSet, selectedPlaybackMode.rate])
+
   function persist(nextCompleted: boolean[], nextScores: number[], nextUnlocked: number) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({ completed: nextCompleted, scores: nextScores, unlockedSet: nextUnlocked }))
   }
@@ -93,6 +108,16 @@ export default function PortugueseNumberDictation() {
     if (index > unlockedSet) return
     setActiveSet(index)
     resetWorksheet()
+  }
+
+  function selectPlaybackMode(mode: PlaybackMode) {
+    setPlaybackMode(mode)
+    const audio = audioRef.current
+    const nextMode = PLAYBACK_MODES.find((option) => option.id === mode)
+    if (audio && nextMode) {
+      audio.playbackRate = nextMode.rate
+      audio.preservesPitch = true
+    }
   }
 
   async function toggleDictation() {
@@ -177,10 +202,10 @@ export default function PortugueseNumberDictation() {
             <p className={styles.eyebrow}>Laboratório auditivo · Português brasileiro · A1</p>
             <h1>Um áudio. Vinte números. Uma folha completa.</h1>
             <p className={styles.lead}>Ouça o ditado inteiro e preencha as 20 respostas ao mesmo tempo. Em cada faixa você responde primeiro em cifras e depois escreve os mesmos números por extenso.</p>
-            <div className={styles.heroMetrics}><span><b>3</b> áudios</span><span><b>6</b> fichas</span><span><b>{completedCount}/6</b> concluídas</span></div>
+            <div className={styles.heroMetrics}><span><b>6</b> áudios</span><span><b>6</b> fichas</span><span><b>3</b> ritmos</span><span><b>{completedCount}/6</b> concluídas</span></div>
           </div>
           <aside className={styles.heroCard}>
-            <span>Dinâmica real de ditado</span><strong>escute tudo, responda tudo, confira no final</strong><p>As 20 caixas ficam visíveis durante a reprodução. A verificação destaca apenas o que precisa ser corrigido.</p>
+            <span>Dinâmica real de ditado</span><strong>do ritmo fácil ao difícil</strong><p>As 20 caixas ficam visíveis durante a reprodução. Escolha a velocidade, responda tudo e confira no final.</p>
           </aside>
         </header>
 
@@ -220,9 +245,28 @@ export default function PortugueseNumberDictation() {
               <audio ref={audioRef} src={selectedSet.audioUrl} preload="none" onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)} onEnded={() => setIsPlaying(false)} onError={() => setAudioError(true)} />
               <div className={styles.audioPanel}>
                 <button type="button" className={styles.listenButton} onClick={toggleDictation}>
-                  <span aria-hidden="true">{isPlaying ? 'Ⅱ' : '▶'}</span><strong>{isPlaying ? 'Pausar o ditado' : playCount ? 'Continuar o ditado' : 'Reproduzir o ditado completo'}</strong><small>Um áudio com os 20 números · mesma ordem da ficha</small>
+                  <span aria-hidden="true">{isPlaying ? 'Ⅱ' : '▶'}</span><strong>{isPlaying ? 'Pausar o ditado' : playCount ? 'Continuar o ditado' : 'Reproduzir o ditado completo'}</strong><small>20 números · {selectedPlaybackMode.label} {selectedPlaybackMode.rate.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}×</small>
                 </button>
-                <div className={styles.audioGuidance}><b>Antes de começar</b><p>Tenha as 20 caixas à vista. Você pode pausar ou repetir o áudio quando precisar.</p><button type="button" onClick={restartDictation}>↺ Reiniciar do começo</button></div>
+                <div className={styles.audioGuidance}><b>Antes de começar</b><p>Tenha as 20 caixas à vista. Você pode mudar o ritmo, pausar ou repetir o áudio quando precisar.</p><button type="button" onClick={restartDictation}>↺ Reiniciar do começo</button></div>
+                <div className={styles.speedPanel}>
+                  <div><span>Modalidade</span><strong>Escolha o ritmo do ditado</strong></div>
+                  <div className={styles.speedOptions} role="radiogroup" aria-label="Velocidade do ditado">
+                    {PLAYBACK_MODES.map((mode) => (
+                      <button
+                        type="button"
+                        role="radio"
+                        aria-checked={playbackMode === mode.id}
+                        data-active={playbackMode === mode.id}
+                        key={mode.id}
+                        onClick={() => selectPlaybackMode(mode.id)}
+                      >
+                        <span>{mode.label}</span>
+                        <b>{mode.rate.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}×</b>
+                        <small>{mode.note}</small>
+                      </button>
+                    ))}
+                  </div>
+                </div>
               </div>
               {audioError ? <p className={styles.audioError}>O áudio completo desta faixa ainda não está disponível. A ficha está pronta e aguarda a geração final.</p> : null}
 

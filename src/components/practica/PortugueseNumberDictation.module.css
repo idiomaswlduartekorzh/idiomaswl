@@ -43,6 +43,17 @@
 .audioGuidance { display:flex; flex-direction:column; justify-content:center; padding:1rem 1.1rem; border:1px solid #d8e6dc; border-radius:20px; background:#fff; color:#234c39; }
 .audioGuidance p { margin:.35rem 0 0; color:#6b8076; font-size:.82rem; line-height:1.5; }
 .audioGuidance button { width:max-content; margin-top:.6rem; padding:0; border:0; background:transparent; color:#126b3a; font:inherit; font-size:.76rem; font-weight:900; cursor:pointer; }
+.speedPanel { grid-column:1/-1; display:grid; grid-template-columns:minmax(180px,.45fr) minmax(0,1.55fr); align-items:center; gap:1rem; padding:1rem; border:1px solid #d8e6dc; border-radius:20px; background:#fff; }
+.speedPanel>div:first-child { display:grid; gap:.2rem; }
+.speedPanel>div:first-child span { color:#8a6800; font-size:.68rem; font-weight:950; letter-spacing:.11em; text-transform:uppercase; }
+.speedPanel>div:first-child strong { color:#173f2e; font-size:.95rem; }
+.speedOptions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.55rem; }
+.speedOptions button { display:grid; grid-template-columns:1fr auto; gap:.15rem .45rem; padding:.75rem .8rem; border:1px solid #d8e6dc; border-radius:14px; background:#f7faf5; color:#294f3d; text-align:left; cursor:pointer; transition:border-color .18s ease,background .18s ease,transform .18s ease; }
+.speedOptions button:hover { transform:translateY(-1px); border-color:#78ad88; }
+.speedOptions button[data-active="true"] { border-color:#126b3a; background:#e8f5e8; box-shadow:inset 0 0 0 1px #126b3a; }
+.speedOptions span { font-size:.82rem; font-weight:950; }
+.speedOptions b { color:#126b3a; font-size:.78rem; }
+.speedOptions small { grid-column:1/-1; color:#74887d; font-size:.68rem; line-height:1.35; }
 .audioError { margin:.8rem 0 0; padding:.8rem 1rem; border-radius:14px; background:#fff4d1; color:#735900; font-size:.86rem; line-height:1.45; }
 .modeBanner { display:flex; align-items:center; gap:.85rem; margin-top:1.35rem; padding:.8rem 1rem; border:1px solid #d8e6dc; border-radius:16px; background:#fff; }
 .modeBanner>span { display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; border-radius:13px; background:#e9f5e9; color:#126b3a; font-size:.86rem; font-weight:950; }
@@ -84,7 +95,7 @@
 .teacherNote { display:grid; grid-template-columns:.75fr 1.25fr; gap:2rem; align-items:center; padding:clamp(1.4rem,3vw,2.2rem); background:#103e2a; color:#fff; }
 .teacherNote h2 { color:#fff; }
 .teacherNote p { margin:0; color:rgba(255,255,255,.75); line-height:1.65; }
-@media (max-width:920px) { .hero { grid-template-columns:1fr; } .heroCard { min-height:210px; } .setGrid { grid-template-columns:repeat(3,minmax(0,1fr)); } .audioPanel { grid-template-columns:1fr; } .answerGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } .teacherNote { grid-template-columns:1fr; gap:1rem; } }
-@media (max-width:620px) { .page { padding:5.8rem .75rem 3rem; } .hero { padding:1.25rem; border-radius:23px; } .hero h1 { font-size:2.45rem; } .sectionHeading,.trainerTop { align-items:start; } .sectionHeading { display:grid; } .setGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } .trainer { padding:1rem; } .counter { min-width:60px; min-height:60px; border-radius:17px; font-size:1rem; } .worksheet { padding:.85rem; } .listenButton { grid-template-columns:48px 1fr; } .listenButton>span { width:48px; height:48px; } .answerGrid,.answerGrid[data-mode="words"] { grid-template-columns:1fr; } .verificationBar { align-items:stretch; flex-direction:column; } .verificationBar .checkButton { width:100%; } .exerciseFooter { display:grid; } }
+@media (max-width:920px) { .hero { grid-template-columns:1fr; } .heroCard { min-height:210px; } .setGrid { grid-template-columns:repeat(3,minmax(0,1fr)); } .audioPanel { grid-template-columns:1fr; } .speedPanel { grid-template-columns:1fr; } .answerGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } .teacherNote { grid-template-columns:1fr; gap:1rem; } }
+@media (max-width:620px) { .page { padding:5.8rem .75rem 3rem; } .hero { padding:1.25rem; border-radius:23px; } .hero h1 { font-size:2.45rem; } .sectionHeading,.trainerTop { align-items:start; } .sectionHeading { display:grid; } .setGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } .trainer { padding:1rem; } .counter { min-width:60px; min-height:60px; border-radius:17px; font-size:1rem; } .worksheet { padding:.85rem; } .listenButton { grid-template-columns:48px 1fr; } .listenButton>span { width:48px; height:48px; } .speedOptions { grid-template-columns:1fr; } .answerGrid,.answerGrid[data-mode="words"] { grid-template-columns:1fr; } .verificationBar { align-items:stretch; flex-direction:column; } .verificationBar .checkButton { width:100%; } .exerciseFooter { display:grid; } }
 @media (prefers-reduced-motion:reduce) { .setCard { transition:none; } }
 
