@@ -5,6 +5,27 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Separación de intención comercial de inglés — 31 de octubre de 2026
+
+Rama `codex/english-commercial-seo-20261031`, creada desde `origin/main@a6463926`
+y actualizada contra el mismo `main` antes de integrar. Estado:
+`LISTO_PARA_INTEGRAR`, pendiente de acceso de escritura al repositorio canónico,
+PR, CI, deployment de Vercel y smoke productivo. No se declara desplegada.
+
+`/clases-de-ingles` se concentra en clases de inglés general online para
+conversación, trabajo, estudio y viajes. `/clases-de-ingles-bucaramanga` conserva
+la intención local y dirige a rutas específicas de examen. Se agregan las páginas
+comerciales `/preparacion-ielts` y `/preparacion-toefl`, con contenido propio,
+canonicals y CTA diferenciados; `/preparacion-icfes` ya existía. Los hubs
+`/examenes/*` mantienen la intención de simulacro gratuito y enlazan a las
+preparaciones con tutor. No se crean variantes locales duplicadas de cada examen.
+
+La verificación local pasó: catálogo protegido de 465 temas, TypeScript, ESLint
+dirigido, controles de landings, navegación y snippets SEO, build completo de
+Next.js y revisión visual en navegador de las páginas de inglés general,
+Bucaramanga, IELTS y TOEFL. No hay migración ni variables nuevas. Se acortó un
+título portugués preexistente que excedía el límite del control de snippets.
+
 ## Paneles de estudiante y administración — 26 de octubre de 2026
 
 La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama
