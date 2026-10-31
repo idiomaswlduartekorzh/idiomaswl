@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
-import LocalBand from '@/components/hub/LocalBand';
 import PracticeBand from '@/components/hub/PracticeBand';
 import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import s from './page.module.css';
@@ -39,12 +38,11 @@ const FAQS = [
   { q: '¿Puedo estudiar inglés para trabajo o conversación?', a: 'Sí. Puedes enfocar las clases en conversación, entrevistas, reuniones, viajes u otra meta personal. El tutor ajusta la ruta a tu nivel y objetivo.' },
   { q: '¿En qué se diferencia inglés general de preparación IELTS o TOEFL?', a: 'Inglés general desarrolla el idioma para comunicarte. Las rutas IELTS y TOEFL añaden práctica de las tareas y criterios de cada examen. Si necesitas una certificación, consulta la página específica de preparación.' },
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Ofrecemos preparación para IELTS, TOEFL iBT, Cambridge B2 First e ICFES Saber 11. IELTS, TOEFL e ICFES tienen páginas de preparación específicas; también puedes explorar prácticas y simulacros por examen.' },
-  { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.' },
+  { q: '¿Cuánto cuestan las clases de inglés online?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
-  { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
   { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión paga con tutor para revisar tu nivel, objetivo y plan. Te informamos el precio y la modalidad antes de agendar.' },
   { q: '¿Cómo se organizan las clases?', a: 'Te asignamos un tutor y una ruta según tu nivel y objetivo. Consulta las modalidades y horarios disponibles antes de elegir un plan.' },
-  { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. En Bucaramanga y su área metropolitana puedes venir presencialmente; desde cualquier otra ciudad la clase es online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
+  { q: '¿Puedo tomar clases si vivo fuera de Colombia?', a: 'Sí. Las clases online son por videollamada, así que puedes estudiar desde Colombia o el exterior. Consulta horarios disponibles para tu zona antes de agendar.' },
 ];
 
 // El FAQPage se deriva de FAQS para que el marcado y el texto visible no puedan
@@ -71,7 +69,7 @@ const jsonLd = {
         name: 'Idiomas WeLearn',
         url: 'https://www.idiomaswl.com',
       },
-      hasCourseInstance: courseInstances('Inglés', 'en'),
+      hasCourseInstance: courseInstances('Inglés', 'en').slice(0, 1),
     },
     localBusinessNode(
       'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia.'
@@ -509,15 +507,16 @@ export default function ClasesDeInglesPage() {
         </div>
       </section>
 
-      <LocalBand
-        accent="#1a4fcc"
-        idioma="inglés"
-        intro="En WeLearn eliges la ruta de inglés según tu meta, con tutor asignado para conversación, trabajo o exámenes. Si estás en la ciudad o en el área metropolitana puedes estudiar inglés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo tutor y el mismo plan, se hace por videollamada."
-        presencial="Clases cara a cara con tutor asignado. Si vas por certificación, puedes preparar IELTS y TOEFL desde Bucaramanga; consulta las sedes vigentes de cada examen antes de inscribirte."
-        waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de inglés presenciales. ¿Cómo funcionan?"
-        moreHref="/clases-de-ingles-bucaramanga"
-        moreLabel="Ver todo sobre las clases de inglés en Bucaramanga: horarios, sede y modalidades"
-      />
+      <section className="wlh-section" aria-labelledby="ingles-local-link">
+        <div className="wrap">
+          <p className="wlh-section-eyebrow">También en Bucaramanga</p>
+          <h2 id="ingles-local-link" className="wlh-section-h2">¿Prefieres una clase presencial?</h2>
+          <p className="wlh-section-desc">
+            Tenemos sede en Bucaramanga. Consulta las modalidades, la ubicación y los horarios
+            en la página de <Link href="/clases-de-ingles-bucaramanga">cursos de inglés en Bucaramanga</Link>.
+          </p>
+        </div>
+      </section>
 
       {/* ── PRACTICA GRATIS ─────────────────────────────────────────────── */}
       <PracticeBand
