@@ -9,16 +9,6 @@ export const metadata: Metadata = {
   title: 'Preparación ICFES Inglés con tutor | WeLearn',
   description:
     'Preparación para Inglés Saber 11 con diagnóstico, plan por habilidades y clases con tutor. Practica aparte con el catálogo gratuito de simulacros ICFES.',
-  keywords: [
-    'preparación inglés ICFES',
-    'Saber 11 inglés',
-    'mejorar puntaje ICFES inglés',
-    'clases inglés ICFES Colombia',
-    'ICFES inglés nivel B1',
-    'preparación Saber 11 inglés',
-    'WeLearn ICFES',
-    'inglés ICFES Bucaramanga',
-  ],
   openGraph: {
     title: 'Preparación ICFES Inglés con tutor | WeLearn',
     description:
@@ -173,7 +163,7 @@ export default function PreparacionICFESPage() {
             <div className={s.heroText}>
               <p className={s.eyebrow}>ICFES Saber 11 · Inglés</p>
               <h1 className={s.h1}>
-                Preparación de inglés<br />
+                Preparación de inglés<br />{' '}
                 para el <span className={s.accent}>ICFES Saber 11.</span>
               </h1>
               <p className={s.heroSub}>
