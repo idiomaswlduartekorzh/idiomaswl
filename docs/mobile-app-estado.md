@@ -6,7 +6,7 @@ Borrador de integración: [PR #52](https://github.com/idiomaswlduartekorzh/idiom
 
 ## Alcance del MVP
 
-- Proyecto Expo SDK 57 / React Native en `apps/mobile`, compartido por iOS y Android.
+- Proyecto Expo SDK 58 / React Native en `apps/mobile`, compartido por iOS y Android.
 - Login y logout con el mismo proyecto Supabase de idiomaswl.com.
 - Inicio nativo con perfil, pasos completados, días de actividad, tareas y resultados.
 - Práctica nativa A1 en 8 idiomas con 40 preguntas originales, corrección inmediata,

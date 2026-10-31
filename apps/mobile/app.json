@@ -19,7 +19,9 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": { "output": "static" },
+    "web": {
+      "output": "static"
+    },
     "plugins": [
       "expo-router",
       [
@@ -29,8 +31,14 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 120
         }
-      ]
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
     ],
-    "experiments": { "typedRoutes": true }
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }

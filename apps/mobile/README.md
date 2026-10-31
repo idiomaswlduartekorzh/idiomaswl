@@ -31,7 +31,7 @@ Para probar en un teléfono fuera de la red local, ejecuta
 `pnpm exec expo start --tunnel` desde `apps/mobile` y escanea el QR con Expo Go.
 El enlace del túnel funciona mientras el proceso de Expo siga abierto.
 
-La app se creó con Expo SDK 57, compatible con Expo Go durante la transición a SDK 58.
+La app usa Expo SDK 58 para probarla con Expo Go actualizado en iPhone.
 Los identificadores `com.idiomaswl.welearn` de iOS y Android son provisionales hasta confirmar
 la identidad final de publicación en las tiendas.
 
