@@ -27,6 +27,10 @@ No usa `service_role`, tablas nuevas ni migraciones.
 6. Ejecuta `pnpm check:practice-bank` para validar las 40 preguntas y
    `pnpm exec expo export --platform all` para generar bundles iOS y Android.
 
+Para probar en un teléfono fuera de la red local, ejecuta
+`pnpm exec expo start --tunnel` desde `apps/mobile` y escanea el QR con Expo Go.
+El enlace del túnel funciona mientras el proceso de Expo siga abierto.
+
 La app se creó con Expo SDK 57, compatible con Expo Go durante la transición a SDK 58.
 Los identificadores `com.idiomaswl.welearn` de iOS y Android son provisionales hasta confirmar
 la identidad final de publicación en las tiendas.
