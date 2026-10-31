@@ -53,11 +53,6 @@ export const metadata: Metadata = {
   title: 'Idiomas WeLearn — Aprende un idioma, en serio',
   description:
     'Aprende coreano, inglés, francés, alemán, italiano y más con el método WeLearn: once pasos diarios que imitan cómo el cerebro interioriza un idioma. Simulacros completos de TOEFL, IELTS e ICFES.',
-  keywords: [
-    'aprender idiomas', 'coreano online', 'aprender inglés', 'TOEFL simulacro',
-    'IELTS práctica', 'ICFES inglés', 'Saber 11 inglés', 'método WeLearn',
-    'curso de coreano', 'certificación idiomas', 'aprender francés',
-  ],
   authors: [{ name: 'Idiomas WeLearn', url: BASE_URL }],
   creator: 'Idiomas WeLearn',
   openGraph: {

@@ -26,6 +26,23 @@ Next.js y revisión visual en navegador de las páginas de inglés general,
 Bucaramanga, IELTS y TOEFL. No hay migración ni variables nuevas. Se acortó un
 título portugués preexistente que excedía el límite del control de snippets.
 
+Auditoría SEO focalizada del HTML de producción local: las cinco rutas comerciales
+tienen un solo H1, título y descripción propios, canonical a sí mismas, robots
+indexables y datos estructurados válidos. Los títulos miden 44–53 caracteres y
+las descripciones 135–152; estas longitudes son un control interno, no una
+garantía de que Google muestre el fragmento tal cual. Se eliminó `meta keywords`
+del layout global porque Google lo ignora. En la página ICFES se sustituyó un
+reparto 60/40 no respaldado por la guía oficial de siete partes, se añadió la
+fuente del ICFES y se enlazó la ruta de inglés general. En una guía de TOEFL se
+corrigió la afirmación de que no existe sede iBT en Bucaramanga: la UPB se
+identifica como centro aplicador y la agenda de ETS confirma la disponibilidad.
+El barrido SEO rápido del sitio completo encontró 28 problemas preexistentes de
+paridad FAQ en páginas de gramática japonesa; ninguna de las cinco rutas quedó
+señalada. PageSpeed Insights respondió HTTP 429, así que no hay puntuación de
+Lighthouse comprobada. Search Console requiere renovar la sesión de Google para
+medir consultas, indexación y posición después del despliegue. Ningún control
+local garantiza aparecer en la primera página.
+
 ## Paneles de estudiante y administración — 26 de octubre de 2026
 
 La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama
