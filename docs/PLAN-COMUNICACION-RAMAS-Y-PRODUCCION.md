@@ -52,6 +52,9 @@ endpoint solo responde con `NODE_ENV=development` y el indicador local
 del catálogo, TypeScript y un recorrido local en navegador. Se hizo una única
 llamada real con texto sintético: 295 tokens de entrada y 85 de salida; costo
 estimado USD 0,000072 con la tarifa estándar de GPT-6 Luna consultada ese día.
+Una revisión posterior añadió al envío el contexto editorial de la consigna
+desde el servidor y retiró «IA» de la etiqueta del botón; se mantiene el aviso
+explícito sobre el envío a OpenAI.
 Antes de publicar hay que decidir presupuesto, cuota duradera por identidad,
 revisión pedagógica y política de privacidad. Instrucciones y límites en
 [`lectura-feedback-ia-local.md`](lectura-feedback-ia-local.md).
