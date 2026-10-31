@@ -25,7 +25,7 @@ const GOOGLE_PROFILE = {
 
 const LANDINGS = [
   // La landing de inglés general atiende clases online; IELTS y TOEFL tienen rutas comerciales propias.
-  { slug: 'clases-de-ingles', language: 'inglés', exams: [], titleLocation: 'Colombia' },
+  { slug: 'clases-de-ingles', language: 'inglés', exams: [], titleLocation: 'Colombia', localIntent: false },
   { slug: 'clases-de-coreano', language: 'coreano', exams: ['TOPIK'] },
   { slug: 'clases-de-italiano', language: 'italiano', exams: ['CILS', 'CELI', 'Ciudadanía'], faqSingleSource: true },
   { slug: 'clases-de-portugues', language: 'portugués', exams: ['Celpe-Bras'] },
@@ -84,11 +84,17 @@ if (!hub || /1:1|clases? uno a uno|diagnóstico (?:gratis|gratuito)/i.test(hub))
   fail('clases-de-idiomas', 'el hub promete una modalidad o diagnóstico gratuito que el propietario retiró.');
 }
 
+const englishLocal = read('src/app/(site)/clases-de-ingles-bucaramanga/page.tsx');
+if (!englishLocal || !englishLocal.includes('Calle 47 # 29-33') || !englishLocal.includes('Sotomayor') ||
+    !/localBusinessNode\(/.test(englishLocal) || !/courseInstances\(/.test(englishLocal)) {
+  fail('clases-de-ingles-bucaramanga', 'la ruta local perdió la dirección visible o sus datos estructurados.');
+}
+
 const snippetSource = read('src/lib/seo-snippet.ts') ?? '';
 const TITLE_MAX = Number(snippetSource.match(/TITLE_MAX\s*=\s*(\d+)/)?.[1] ?? 60);
 const DESCRIPTION_MAX = Number(snippetSource.match(/DESC_MAX\s*=\s*(\d+)/)?.[1] ?? 155);
 
-for (const { slug, language, exams, faqSingleSource, titleLocation = 'Bucaramanga' } of LANDINGS) {
+for (const { slug, language, exams, faqSingleSource, localIntent = true, titleLocation = 'Bucaramanga' } of LANDINGS) {
   const relativePath = `src/app/(site)/${slug}/page.tsx`;
   const source = read(relativePath);
   if (!source) {
@@ -124,7 +130,10 @@ for (const { slug, language, exams, faqSingleSource, titleLocation = 'Bucaramang
   if (!/from\s+['"][^'"]*localBusiness['"]/.test(source)) fail(slug, 'dejó de leer la fuente única localBusiness.ts.');
   if (!/localBusinessNode\(/.test(source)) fail(slug, 'perdió localBusinessNode().');
   if (!/courseInstances\(/.test(source)) fail(slug, 'perdió courseInstances().');
-  if (!/<LocalBand/.test(source)) fail(slug, 'perdió el bloque NAP visible LocalBand.');
+  if (localIntent && !/<LocalBand/.test(source)) fail(slug, 'perdió el bloque NAP visible LocalBand.');
+  if (!localIntent && !source.includes('href="/clases-de-ingles-bucaramanga"')) {
+    fail(slug, 'perdió el enlace a la ruta local de Bucaramanga.');
+  }
   for (const schemaType of ['BreadcrumbList', 'Course', 'FAQPage']) {
     if (!source.includes(`'${schemaType}'`)) fail(slug, `perdió ${schemaType} del JSON-LD.`);
   }
@@ -138,7 +147,7 @@ for (const { slug, language, exams, faqSingleSource, titleLocation = 'Bucaramang
     }
   }
   if (questionCount < FAQ_TARGET) warn(slug, `solo tiene ${questionCount} pregunta${questionCount === 1 ? '' : 's'} en FAQ; objetivo ${FAQ_TARGET}.`);
-  details.push(`${slug.padEnd(20)} title ${String(title?.length ?? 0).padStart(2)}/${TITLE_MAX} · FAQ ${String(questionCount).padStart(2)} · NAP + LocalBusiness + Course`);
+  details.push(`${slug.padEnd(20)} title ${String(title?.length ?? 0).padStart(2)}/${TITLE_MAX} · FAQ ${String(questionCount).padStart(2)} · ${localIntent ? 'NAP + ' : ''}LocalBusiness + Course`);
 }
 
 if (DETAIL && details.length) {
@@ -155,4 +164,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`✓ Landings locales: ${LANDINGS.length} rutas conservan NAP, LocalBand, CourseInstance y JSON-LD.`);
+console.log(`✓ Landings: ${LANDINGS.length} rutas conservan sus señales comerciales; la ruta local de inglés conserva NAP y datos estructurados.`);
