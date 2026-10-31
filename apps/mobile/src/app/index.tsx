@@ -1,37 +1,23 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { User } from '@supabase/supabase-js';
 import {
   ActivityIndicator, Alert, Image, KeyboardAvoidingView, Linking, Platform,
   Pressable, RefreshControl, ScrollView, Text, TextInput, View,
 } from 'react-native';
+import type { ScrollViewInstance } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { QuickPractice } from '@/components/QuickPractice';
+import { StudyCatalog, type CatalogSection } from '@/components/StudyCatalog';
 import { QUICK_PRACTICE, type LanguageSlug } from '@/data/quick-practice';
+import { STUDY_EXAMS, STUDY_LANGUAGES } from '@/data/study-catalog';
 import { loadPracticeHistory, recordPracticeDay, savePracticeAttempt, type PracticeAttempt } from '@/lib/practice-history';
 import { loadStudentSnapshot, type StudentAssignment, type StudentSnapshot } from '@/lib/student';
 import { isConfigured, supabase } from '@/lib/supabase';
 import { s, palette } from '@/styles';
 
 const SITE = 'https://www.idiomaswl.com';
-type Tab = 'inicio' | 'practicar' | 'perfil';
-
-const practice = [
-  { title: 'Inglés', detail: 'Gramática, vocabulario y escucha', path: '/practica/ingles', mark: 'EN' },
-  { title: 'Coreano', detail: 'Lectura, escritura y pronunciación', path: '/practica/coreano', mark: 'KO' },
-  { title: 'Francés', detail: 'Ejercicios por nivel', path: '/practica/frances', mark: 'FR' },
-  { title: 'Alemán', detail: 'Practica a tu ritmo', path: '/practica/aleman', mark: 'DE' },
-  { title: 'Italiano', detail: 'Aprende con práctica guiada', path: '/practica/italiano', mark: 'IT' },
-  { title: 'Portugués', detail: 'Actividades y retos', path: '/practica/portugues', mark: 'PT' },
-  { title: 'Japonés', detail: 'Fundamentos y práctica', path: '/practica/japones', mark: 'JA' },
-  { title: 'Ruso', detail: 'Práctica por destreza', path: '/practica/ruso', mark: 'RU' },
-] as const;
-
-const exams = [
-  { title: 'IELTS', detail: 'Reading, Writing, Listening y Speaking', path: '/practica/ielts' },
-  { title: 'TOEFL', detail: 'Preparación para cada sección', path: '/practica/toefl' },
-  { title: 'ICFES', detail: 'Inglés Saber 11', path: '/practica/icfes' },
-] as const;
+type Tab = 'inicio' | 'explorar' | 'practicar' | 'perfil';
 
 async function openUrl(url: string) {
   if (!url.startsWith('https://')) {
@@ -174,9 +160,10 @@ function Login({ onSignedIn }: { onSignedIn: (user: User) => void }) {
   </KeyboardAvoidingView>;
 }
 
-function Home({ name, snapshot, busy, error, onRetry, onPractice }: {
+function Home({ name, snapshot, busy, error, onRetry, onPractice, onExplore }: {
   name: string; snapshot: StudentSnapshot | null; busy: boolean; error: boolean;
   onRetry: () => void; onPractice: () => void;
+  onExplore: (section: CatalogSection) => void;
 }) {
   const pending = snapshot?.assignments.filter((item) => item.status !== 'completed') ?? [];
   return <>
@@ -186,6 +173,22 @@ function Home({ name, snapshot, busy, error, onRetry, onPractice }: {
       <Text style={s.heroBody}>Cada paso te acerca al idioma que quieres hablar.</Text>
       <Pressable accessibilityRole="button" onPress={onPractice} style={s.heroButton}>
         <Text style={s.heroButtonText}>Empezar a practicar  →</Text>
+      </Pressable>
+    </View>
+    <SectionTitle title="Explora tu portafolio" subtitle="Rutas de estudio, práctica y simulacros" />
+    <View style={s.discoverRow}>
+      <Pressable accessibilityRole="button" accessibilityLabel="Explorar idiomas y niveles"
+        onPress={() => onExplore('idiomas')} style={({ pressed }) => [s.discoverCard, pressed && s.pressed]}>
+        <Text style={s.discoverCount}>{STUDY_LANGUAGES.length} IDIOMAS</Text>
+        <Text style={s.discoverTitle}>Estudiar idiomas →</Text>
+        <Text style={s.discoverHint}>Niveles A1 a C2</Text>
+      </Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel="Explorar exámenes y simulacros"
+        onPress={() => onExplore('examenes')}
+        style={({ pressed }) => [s.discoverCard, s.discoverCardAccent, pressed && s.pressed]}>
+        <Text style={s.discoverCount}>{STUDY_EXAMS.length} EXÁMENES</Text>
+        <Text style={s.discoverTitle}>Preparar exámenes →</Text>
+        <Text style={s.discoverHint}>Guías y simulacros</Text>
       </Pressable>
     </View>
     {busy && !snapshot ? <ActivityIndicator style={s.spinner} color={palette.navy} /> : null}
@@ -222,7 +225,9 @@ function Home({ name, snapshot, busy, error, onRetry, onPractice }: {
   </>;
 }
 
-function Practice({ history, onStart }: { history: PracticeAttempt[]; onStart: (language: LanguageSlug) => void }) {
+function Practice({ history, onStart, onExplore }: {
+  history: PracticeAttempt[]; onStart: (language: LanguageSlug) => void; onExplore: () => void;
+}) {
   return <>
     <Text style={s.pageEyebrow}>APRENDE A TU RITMO</Text>
     <Text style={s.pageTitle}>¿Qué practicarás hoy?</Text>
@@ -241,21 +246,9 @@ function Practice({ history, onStart }: { history: PracticeAttempt[]; onStart: (
         <Text style={s.meta}>{new Date(item.completedAt).toLocaleDateString('es-CO')}</Text>
       </View><Text style={s.resultScore}>{item.correct}/{item.total}</Text>
     </View>) : <View style={s.emptyCard}><Text style={s.emptyText}>Aquí verás tus resultados de práctica.</Text></View>}
-    <SectionTitle title="Catálogo completo" subtitle="Actividades disponibles en la web" />
-    {practice.map((item) => <Pressable key={item.path} accessibilityRole="link"
-      onPress={() => void openWebsite(item.path)} style={({ pressed }) => [s.practiceCard, pressed && s.pressed]}>
-      <View style={s.languageMark}><Text style={s.languageMarkText}>{item.mark}</Text></View>
-      <View style={s.flex}><Text style={s.listTitle}>{item.title}</Text><Text style={s.listDetail}>{item.detail}</Text></View>
-      <Text style={s.chevron}>↗</Text>
-    </Pressable>)}
-    <SectionTitle title="Exámenes" />
-    {exams.map((item) => <Pressable key={item.path} accessibilityRole="link"
-      onPress={() => void openWebsite(item.path)} style={({ pressed }) => [s.practiceCard, pressed && s.pressed]}>
-      <View style={s.examMark}><Text style={s.examMarkText}>✓</Text></View>
-      <View style={s.flex}><Text style={s.listTitle}>{item.title}</Text><Text style={s.listDetail}>{item.detail}</Text></View>
-      <Text style={s.chevron}>›</Text>
-    </Pressable>)}
-    <Text style={s.webNote}>El catálogo completo y los exámenes se abren en idiomaswl.com. Puede que debas iniciar sesión en el navegador. Los resultados A1 se guardan solo en este dispositivo.</Text>
+    <SectionTitle title="¿Quieres seguir?" subtitle="Hay más rutas y simulacros para explorar" />
+    <Action label="Ver idiomas y exámenes →" onPress={onExplore} secondary />
+    <Text style={s.webNote}>Los resultados de esta práctica A1 se guardan solo en este dispositivo.</Text>
   </>;
 }
 
@@ -285,7 +278,9 @@ function Profile({ user, snapshot }: { user: User; snapshot: StudentSnapshot | n
 
 function Main({ user }: { user: User }) {
   const [tab, setTab] = useState<Tab>('inicio');
+  const [catalogSection, setCatalogSection] = useState<CatalogSection>('idiomas');
   const [quiz, setQuiz] = useState<LanguageSlug | null>(null);
+  const scrollRef = useRef<ScrollViewInstance>(null);
   const [history, setHistory] = useState<PracticeAttempt[]>([]);
   const [snapshot, setSnapshot] = useState<StudentSnapshot | null>(null);
   const [busy, setBusy] = useState(true);
@@ -303,6 +298,22 @@ function Main({ user }: { user: User }) {
   useEffect(() => { void refresh(); }, [refresh]);
   useEffect(() => { void loadPracticeHistory(user.id).then(setHistory).catch(() => setHistory([])); }, [user.id]);
   const name = snapshot?.profile?.full_name?.trim().split(/\s+/)[0] || 'estudiante';
+
+  function selectTab(nextTab: Tab) {
+    setTab(nextTab);
+    setQuiz(null);
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+  }
+
+  function explore(section: CatalogSection) {
+    setCatalogSection(section);
+    selectTab('explorar');
+  }
+
+  function startPractice(language: LanguageSlug) {
+    selectTab('practicar');
+    setQuiz(language);
+  }
 
   async function completePractice(correct: number, total: number) {
     if (!quiz) return;
@@ -325,19 +336,24 @@ function Main({ user }: { user: User }) {
       <Pressable accessibilityRole="button" accessibilityLabel="Actualizar datos"
         onPress={() => void refresh()} style={s.refreshButton}><Text style={s.refreshGlyph}>↻</Text></Pressable>
     </View>
-    <ScrollView style={s.flex} contentContainerStyle={s.content}
+    <ScrollView ref={scrollRef} style={s.flex} contentContainerStyle={s.content}
       refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => void refresh(true)} />}>
       {tab === 'inicio' ? <Home name={name} snapshot={snapshot} busy={busy} error={error}
-        onRetry={() => void refresh()} onPractice={() => setTab('practicar')} /> : null}
+        onRetry={() => void refresh()} onPractice={() => selectTab('practicar')} onExplore={explore} /> : null}
+      {tab === 'explorar' ? <StudyCatalog section={catalogSection}
+        onSectionChange={(section) => { setCatalogSection(section); scrollRef.current?.scrollTo({ y: 0, animated: false }); }}
+        onOpenPath={(path) => { void openWebsite(path); }} onStartPractice={startPractice} /> : null}
       {tab === 'practicar' ? quiz
-        ? <QuickPractice key={quiz} language={quiz} onBack={() => setQuiz(null)} onComplete={(score, total) => void completePractice(score, total)} />
-        : <Practice history={history} onStart={setQuiz} /> : null}
+        ? <QuickPractice key={quiz} language={quiz}
+          onBack={() => { setQuiz(null); scrollRef.current?.scrollTo({ y: 0, animated: false }); }}
+          onComplete={(score, total) => void completePractice(score, total)} />
+        : <Practice history={history} onStart={startPractice} onExplore={() => explore('idiomas')} /> : null}
       {tab === 'perfil' ? <Profile user={user} snapshot={snapshot} /> : null}
     </ScrollView>
     <View style={s.tabBar}>
-      {([['inicio', '⌂', 'Inicio'], ['practicar', '◫', 'Practicar'], ['perfil', '○', 'Perfil']] as const)
+      {([['inicio', '⌂', 'Inicio'], ['explorar', '▦', 'Explorar'], ['practicar', '◫', 'Practicar'], ['perfil', '○', 'Perfil']] as const)
         .map(([key, glyph, label]) => <Pressable key={key} accessibilityRole="tab"
-          accessibilityState={{ selected: tab === key }} onPress={() => { setTab(key); setQuiz(null); }} style={s.tabItem}>
+          accessibilityState={{ selected: tab === key }} onPress={() => selectTab(key)} style={s.tabItem}>
           <Text style={[s.tabGlyph, tab === key && s.tabSelected]}>{glyph}</Text>
           <Text style={[s.tabLabel, tab === key && s.tabSelected]}>{label}</Text>
         </Pressable>)}

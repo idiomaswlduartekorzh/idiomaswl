@@ -11,7 +11,9 @@ La app usa las mismas cuentas de Supabase que idiomaswl.com.
 - Historial de hasta 30 resultados guardado en el dispositivo, separado por cuenta. Al terminar,
   registra el día de actividad en la cuenta si hay conexión.
 - Entrega de tareas desde la app y lectura de comentarios del profesor mediante las operaciones existentes.
-- Catálogo completo de ocho idiomas y tres exámenes que abre las rutas de práctica ya publicadas.
+- Inicio con accesos visibles al portafolio de estudio y exámenes.
+- Pestaña Explorar con ocho idiomas, sus niveles A1–C2, diez exámenes, simulacros y
+  herramientas adicionales. Las lecciones y los simulacros publicados se abren en idiomaswl.com.
 - Perfil básico y acceso al perfil web.
 
 Las consultas del estudiante usan la clave **publishable** y las políticas RLS existentes.
@@ -40,7 +42,8 @@ la identidad final de publicación en las tiendas.
 ## Límites del MVP
 
 El historial A1 es local: no se sincroniza entre dispositivos ni sustituye los resultados
-de cursos o exámenes del sitio. El catálogo completo, el registro, la recuperación de
-contraseña y la gestión del perfil usan idiomaswl.com y pueden pedir otra sesión allí.
+de cursos o exámenes del sitio. Las lecciones por nivel, los simulacros, el registro,
+la recuperación de contraseña y la gestión del perfil usan idiomaswl.com y pueden pedir
+otra sesión allí.
 Faltan pruebas de extremo a extremo con una cuenta estudiante en teléfonos reales y
 builds firmadas para TestFlight/Google Play.

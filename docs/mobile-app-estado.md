@@ -14,7 +14,9 @@ Borrador de integración: [PR #52](https://github.com/idiomaswlduartekorzh/idiom
 - Hasta 30 resultados de práctica guardados localmente por usuario; registro de día activo
   en `daily_activity` cuando la red está disponible.
 - Entrega de tareas por el RPC existente `submit_student_assignment` y lectura de feedback.
-- Catálogo completo que abre las rutas web de 8 idiomas, IELTS, TOEFL e ICFES.
+- Inicio con accesos al portafolio y pestaña Explorar con 8 idiomas, niveles A1–C2,
+  10 exámenes publicados, Mi vocabulario e Ideas avanzadas. Los contenidos extensos
+  y simulacros se abren en las rutas web existentes.
 - Clave publishable en `.env` local ignorado por Git; nunca usa la clave de servicio.
 
 No hay migraciones ni cambios de producto en el sitio web. La app usa el JWT del
