@@ -15,6 +15,10 @@ export type StudentAssignment = {
   due_at: string | null;
   status: string;
   resource_url: string | null;
+  submission_text: string | null;
+  submission_url: string | null;
+  submitted_at: string | null;
+  teacher_feedback: string | null;
 };
 
 export type StudentResult = {
@@ -40,7 +44,7 @@ export async function loadStudentSnapshot(db: SupabaseClient, userId: string): P
     db.from('user_progress').select('id', { count: 'exact', head: true }).eq('user_id', userId),
     db.from('daily_activity').select('activity_date').eq('user_id', userId)
       .order('activity_date', { ascending: false }).limit(7),
-    db.from('student_assignments').select('id,title,instructions,due_at,status,resource_url')
+    db.from('student_assignments').select('id,title,instructions,due_at,status,resource_url,submission_text,submission_url,submitted_at,teacher_feedback')
       .eq('student_id', userId).neq('status', 'canceled')
       .order('assigned_at', { ascending: false }).limit(10),
     db.from('exam_submissions').select('id,exam_slug,mock_title,total_label,created_at')

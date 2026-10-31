@@ -6,6 +6,9 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { QuickPractice } from '@/components/QuickPractice';
+import { QUICK_PRACTICE, type LanguageSlug } from '@/data/quick-practice';
+import { loadPracticeHistory, recordPracticeDay, savePracticeAttempt, type PracticeAttempt } from '@/lib/practice-history';
 import { loadStudentSnapshot, type StudentAssignment, type StudentSnapshot } from '@/lib/student';
 import { isConfigured, supabase } from '@/lib/supabase';
 import { s, palette } from '@/styles';
@@ -65,10 +68,24 @@ function SectionTitle({ title, subtitle }: { title: string; subtitle?: string })
   </View>;
 }
 
-function Assignment({ item }: { item: StudentAssignment }) {
+function Assignment({ item, onSubmitted }: { item: StudentAssignment; onSubmitted: () => void }) {
+  const [expanded, setExpanded] = useState(false);
+  const [submission, setSubmission] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
   const due = item.due_at ? new Date(item.due_at).toLocaleDateString('es-CO', {
     day: 'numeric', month: 'short', year: 'numeric',
   }) : null;
+  async function submit() {
+    if (!supabase || !submission.trim()) { setError('Escribe tu respuesta antes de enviar.'); return; }
+    setBusy(true); setError('');
+    const { data, error: submitError } = await supabase.rpc('submit_student_assignment', {
+      p_assignment_id: item.id, p_submission_text: submission.trim(), p_submission_url: null,
+    });
+    setBusy(false);
+    if (submitError || !data) { setError('No pudimos enviar la tarea. Revisa tu conexión e inténtalo de nuevo.'); return; }
+    setExpanded(false); setSubmission(''); onSubmitted();
+  }
   return <View style={s.listCard}>
     <View style={s.rowBetween}>
       <Text style={s.listTitle}>{item.title}</Text>
@@ -81,6 +98,22 @@ function Assignment({ item }: { item: StudentAssignment }) {
     {item.resource_url ? <Pressable accessibilityRole="link" onPress={() => void openResource(item.resource_url!)}>
       <Text style={s.inlineLink}>Abrir recurso  ↗</Text>
     </Pressable> : null}
+    {item.status === 'completed' ? <>
+      {item.submission_text ? <Text style={s.listDetail}>Tu entrega: {item.submission_text}</Text> : null}
+      {item.teacher_feedback ? <View style={s.quizFeedback}><Text style={s.listTitle}>Comentarios del profesor</Text>
+        <Text style={s.listDetail}>{item.teacher_feedback}</Text></View> : null}
+    </> : <>
+      <Pressable accessibilityRole="button" onPress={() => setExpanded(!expanded)}>
+        <Text style={s.inlineLink}>{expanded ? 'Cerrar respuesta' : 'Responder tarea'}</Text>
+      </Pressable>
+      {expanded ? <>
+        <Text style={s.inputLabel}>Tu respuesta</Text>
+        <TextInput style={[s.input, s.multilineInput]} multiline maxLength={12000} value={submission}
+          onChangeText={setSubmission} placeholder="Escribe tu entrega" placeholderTextColor="#8b98ae" />
+        {error ? <Text accessibilityRole="alert" style={s.error}>{error}</Text> : null}
+        <Action label={busy ? 'Enviando…' : 'Enviar tarea'} onPress={() => void submit()} disabled={busy} />
+      </> : null}
+    </>}
   </View>;
 }
 
@@ -166,8 +199,13 @@ function Home({ name, snapshot, busy, error, onRetry, onPractice }: {
           <Text style={s.statLabel}>días registrados</Text></View>
       </View>
       <SectionTitle title="Tus tareas" subtitle={pending.length ? `${pending.length} por hacer` : 'Vas al día'} />
-      {pending.length ? pending.slice(0, 3).map((item) => <Assignment key={item.id} item={item} />)
+      {pending.length ? pending.slice(0, 3).map((item) => <Assignment key={item.id} item={item} onSubmitted={onRetry} />)
         : <View style={s.emptyCard}><Text style={s.emptyText}>No tienes tareas pendientes.</Text></View>}
+      {snapshot.assignments.some((item) => item.status === 'completed') ? <>
+        <SectionTitle title="Tareas entregadas" />
+        {snapshot.assignments.filter((item) => item.status === 'completed').slice(0, 3)
+          .map((item) => <Assignment key={item.id} item={item} onSubmitted={onRetry} />)}
+      </> : null}
       <SectionTitle title="Resultados recientes" />
       {snapshot.results.length ? snapshot.results.map((item) => <View key={item.id} style={s.resultCard}>
         <View style={s.resultDot} />
@@ -181,17 +219,31 @@ function Home({ name, snapshot, busy, error, onRetry, onPractice }: {
   </>;
 }
 
-function Practice() {
+function Practice({ history, onStart }: { history: PracticeAttempt[]; onStart: (language: LanguageSlug) => void }) {
   return <>
     <Text style={s.pageEyebrow}>APRENDE A TU RITMO</Text>
     <Text style={s.pageTitle}>¿Qué practicarás hoy?</Text>
-    <Text style={s.pageIntro}>Elige un idioma o prepara tu próximo examen.</Text>
-    <SectionTitle title="Idiomas" />
+    <Text style={s.pageIntro}>Responde cinco preguntas A1 dentro de la app.</Text>
+    <SectionTitle title="Práctica rápida" subtitle="Disponible en ocho idiomas" />
+    {QUICK_PRACTICE.map((item) => <Pressable key={item.slug} accessibilityRole="button"
+      onPress={() => onStart(item.slug)} style={({ pressed }) => [s.practiceCard, pressed && s.pressed]}>
+      <View style={s.languageMark}><Text style={s.languageMarkText}>{item.code}</Text></View>
+      <View style={s.flex}><Text style={s.listTitle}>{item.title}</Text><Text style={s.listDetail}>5 preguntas · Nivel A1</Text></View>
+      <Text style={s.chevron}>›</Text>
+    </Pressable>)}
+    <SectionTitle title="Mis prácticas recientes" />
+    {history.length ? history.slice(0, 5).map((item) => <View key={item.id} style={s.resultCard}>
+      <View style={s.resultDot} /><View style={s.flex}>
+        <Text style={s.listTitle}>{QUICK_PRACTICE.find((set) => set.slug === item.language)?.title || item.language}</Text>
+        <Text style={s.meta}>{new Date(item.completedAt).toLocaleDateString('es-CO')}</Text>
+      </View><Text style={s.resultScore}>{item.correct}/{item.total}</Text>
+    </View>) : <View style={s.emptyCard}><Text style={s.emptyText}>Aquí verás tus resultados de práctica.</Text></View>}
+    <SectionTitle title="Catálogo completo" subtitle="Actividades disponibles en la web" />
     {practice.map((item) => <Pressable key={item.path} accessibilityRole="link"
       onPress={() => void openWebsite(item.path)} style={({ pressed }) => [s.practiceCard, pressed && s.pressed]}>
       <View style={s.languageMark}><Text style={s.languageMarkText}>{item.mark}</Text></View>
       <View style={s.flex}><Text style={s.listTitle}>{item.title}</Text><Text style={s.listDetail}>{item.detail}</Text></View>
-      <Text style={s.chevron}>›</Text>
+      <Text style={s.chevron}>↗</Text>
     </Pressable>)}
     <SectionTitle title="Exámenes" />
     {exams.map((item) => <Pressable key={item.path} accessibilityRole="link"
@@ -200,7 +252,7 @@ function Practice() {
       <View style={s.flex}><Text style={s.listTitle}>{item.title}</Text><Text style={s.listDetail}>{item.detail}</Text></View>
       <Text style={s.chevron}>›</Text>
     </Pressable>)}
-    <Text style={s.webNote}>Las actividades se abren en idiomaswl.com. Es posible que debas iniciar sesión también en el navegador.</Text>
+    <Text style={s.webNote}>El catálogo completo y los exámenes se abren en idiomaswl.com. Puede que debas iniciar sesión en el navegador. Los resultados A1 se guardan solo en este dispositivo.</Text>
   </>;
 }
 
@@ -230,6 +282,8 @@ function Profile({ user, snapshot }: { user: User; snapshot: StudentSnapshot | n
 
 function Main({ user }: { user: User }) {
   const [tab, setTab] = useState<Tab>('inicio');
+  const [quiz, setQuiz] = useState<LanguageSlug | null>(null);
+  const [history, setHistory] = useState<PracticeAttempt[]>([]);
   const [snapshot, setSnapshot] = useState<StudentSnapshot | null>(null);
   const [busy, setBusy] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -244,7 +298,22 @@ function Main({ user }: { user: User }) {
   }, [user.id]);
 
   useEffect(() => { void refresh(); }, [refresh]);
+  useEffect(() => { void loadPracticeHistory(user.id).then(setHistory).catch(() => setHistory([])); }, [user.id]);
   const name = snapshot?.profile?.full_name?.trim().split(/\s+/)[0] || 'estudiante';
+
+  async function completePractice(correct: number, total: number) {
+    if (!quiz) return;
+    const attempt: PracticeAttempt = {
+      id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
+      language: quiz, correct, total, completedAt: new Date().toISOString(),
+    };
+    try { setHistory(await savePracticeAttempt(user.id, attempt)); }
+    catch { Alert.alert('No se guardó el resultado', 'No pudimos guardar esta práctica en el dispositivo.'); }
+    if (supabase) {
+      try { await recordPracticeDay(supabase, user.id); await refresh(); }
+      catch { /* The local attempt remains available while offline. */ }
+    }
+  }
 
   return <View style={s.flex}>
     <View style={s.appHeader}>
@@ -257,13 +326,15 @@ function Main({ user }: { user: User }) {
       refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => void refresh(true)} />}>
       {tab === 'inicio' ? <Home name={name} snapshot={snapshot} busy={busy} error={error}
         onRetry={() => void refresh()} onPractice={() => setTab('practicar')} /> : null}
-      {tab === 'practicar' ? <Practice /> : null}
+      {tab === 'practicar' ? quiz
+        ? <QuickPractice key={quiz} language={quiz} onBack={() => setQuiz(null)} onComplete={(score, total) => void completePractice(score, total)} />
+        : <Practice history={history} onStart={setQuiz} /> : null}
       {tab === 'perfil' ? <Profile user={user} snapshot={snapshot} /> : null}
     </ScrollView>
     <View style={s.tabBar}>
       {([['inicio', '⌂', 'Inicio'], ['practicar', '◫', 'Practicar'], ['perfil', '○', 'Perfil']] as const)
         .map(([key, glyph, label]) => <Pressable key={key} accessibilityRole="tab"
-          accessibilityState={{ selected: tab === key }} onPress={() => setTab(key)} style={s.tabItem}>
+          accessibilityState={{ selected: tab === key }} onPress={() => { setTab(key); setQuiz(null); }} style={s.tabItem}>
           <Text style={[s.tabGlyph, tab === key && s.tabSelected]}>{glyph}</Text>
           <Text style={[s.tabLabel, tab === key && s.tabSelected]}>{label}</Text>
         </Pressable>)}
