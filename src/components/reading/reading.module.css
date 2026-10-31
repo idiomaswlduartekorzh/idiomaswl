@@ -113,6 +113,15 @@
 .glossPopover em { margin-top: 3px; color: var(--reading-muted); }
 .secondaryButton, .completedButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--line-soft); border-radius: var(--wlp-r); color: var(--reading-blue); background: var(--surface); font-weight: 700; cursor: pointer; }
 .completedButton { color: var(--wlp-ok); border-color: color-mix(in srgb, var(--wlp-ok) 34%, transparent); background: var(--surface); }
+.aiReview { display: grid; justify-items: start; gap: 10px; margin-top: 18px; padding: 16px; border: 1px solid var(--reading-line); border-radius: var(--wlp-r); background: var(--bg-2); }
+.aiReview > p { margin: 0; font-size: 14px; line-height: 1.5; }
+.aiReview button:disabled { cursor: not-allowed; opacity: .55; }
+.aiHint { color: var(--reading-muted); }
+.aiError { color: var(--wl-on-panel-alert, #8f2927); }
+.aiResult { display: grid; gap: 9px; padding-top: 10px; font-size: 14px; line-height: 1.5; }
+.aiResult h3, .aiResult h4, .aiResult p, .aiResult ol { margin: 0; }
+.aiResult li + li { margin-top: 8px; }
+.aiResult li span { display: block; }
 
 .recorder { display: grid; gap: 14px; margin-top: 22px; padding: 18px; border: 1px solid var(--line-soft); border-radius: var(--wlp-r); background: var(--surface); }
 .recorderHeading { display: flex; gap: 12px; align-items: flex-start; }
