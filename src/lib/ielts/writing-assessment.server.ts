@@ -13,6 +13,7 @@ import { IELTS_SUBMISSION_ID_PATTERN, verifyIeltsSubmissionToken } from './submi
 
 interface SubmissionAssessmentRow {
   id: string;
+  user_email: string | null;
   writing_task1_answer: string | null;
   writing_task2_answer: string | null;
   writing_task1_assessment: FullAssessment | null;
@@ -50,7 +51,7 @@ export async function authorizeIeltsWritingAssessment(input: {
   const admin = createAdminClient();
   const { data, error } = await admin
     .from('exam_submissions')
-    .select('id, writing_task1_answer, writing_task2_answer, writing_task1_assessment, writing_task2_assessment, listening_band, reading_band, writing_band, speaking_band')
+    .select('id, user_email, writing_task1_answer, writing_task2_answer, writing_task1_assessment, writing_task2_assessment, listening_band, reading_band, writing_band, speaking_band')
     .eq('id', submissionId)
     .eq('exam_slug', 'ielts')
     .eq('mock_title', blueprint.mockTitle)

@@ -81,6 +81,7 @@ function renderHighlighted(text: string, issues: TextIssue[]) {
 }
 
 interface Props {
+  openAiPilot?: boolean;
   examSlug:   'ielts';
   mockId:     string;
   taskNumber: 1 | 2;
@@ -91,7 +92,7 @@ interface Props {
   result:     FullAssessment | null;
 }
 
-export function IELTSWritingReportPanel({ examSlug, mockId, taskNumber, taskLabel, essay, fallbackNotice, state, result }: Props) {
+export function IELTSWritingReportPanel({ examSlug, mockId, taskNumber, taskLabel, essay, fallbackNotice, state, result, openAiPilot = false }: Props) {
   const [messageIndex, setMessageIndex] = useState(0);
 
   useEffect(() => {
@@ -129,17 +130,16 @@ export function IELTSWritingReportPanel({ examSlug, mockId, taskNumber, taskLabe
       <div className="mt-4 rounded-xl border border-[var(--accent)]/30 bg-[var(--accent)]/[0.06] p-5">
         <p className="text-sm font-semibold text-[var(--fg)] mb-1">{taskLabel} — Evaluador muy solicitado</p>
         <p className="text-xs text-[var(--muted)] mb-3 leading-relaxed">
-          Los dos motores de corrección están saturados en este momento. Tu profesor la revisará
-          igual, pero si quieres el resultado ya mismo, escríbenos.
+          {openAiPilot ? 'Se alcanzó la cuota de revisiones o el servicio no está disponible. Tu examen sigue guardado; prueba más tarde.' : 'Los dos motores de corrección están saturados en este momento. Tu profesor la revisará igual, pero si quieres el resultado ya mismo, escríbenos.'}
         </p>
-        <a
+        {!openAiPilot && <a
           href={waLink(`Hola, quiero corrección prioritaria de mi ${taskLabel} (${examSlug} ${mockId}) — el evaluador estaba saturado.`)}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block rounded-lg bg-[var(--accent)] px-4 py-2 text-xs font-semibold text-white hover:opacity-90"
         >
           Pedir corrección prioritaria por WhatsApp
-        </a>
+        </a>}
       </div>
     );
   }
@@ -150,7 +150,7 @@ export function IELTSWritingReportPanel({ examSlug, mockId, taskNumber, taskLabe
   // tuvo que responder en vez de Gemini, la lectura del gráfico no está
   // garantizada con la misma precisión. Ver memoria de la sesión: Groq falló
   // ese caso en pruebas.
-  const showBackupCaveat = taskNumber === 1 && result.engineUsed && result.engineUsed !== 'gemini';
+  const showBackupCaveat = taskNumber === 1 && result.engineUsed && result.engineUsed !== 'gemini' && result.engineUsed !== 'openai';
 
   return (
     <div className="mt-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5">

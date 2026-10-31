@@ -636,9 +636,10 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, access, onAccessUnlocked, onRetry }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; basicScore: string; access: ExamAccessOutcome; onAccessUnlocked: () => void; onRetry: ()=>void;
+function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, access, onAccessUnlocked, onRetry, openAiPilot }: {
+  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; basicScore: string; access: ExamAccessOutcome; onAccessUnlocked: () => void; onRetry: ()=>void; openAiPilot: boolean;
 }) {
+  const [reviewRequested, setReviewRequested] = useState(false);
   const objectiveScore = scoreIeltsObjectiveAnswers(mock, ans);
   const lCorrect = objectiveScore.listening?.correct ?? 0;
   const rCorrect = objectiveScore.reading.correct;
@@ -659,8 +660,8 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
   const writingEnabled = writeQs.length > 0 && isFreeIeltsMock(mock.id);
   const task1Essay = writingEnabled && access.unlocked && task1 ? (ans.write[task1.id] ?? '').trim() : '';
   const task2Essay = writingEnabled && access.unlocked && task2 ? (ans.write[task2.id] ?? '').trim() : '';
-  const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay, receipt);
-  const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay, receipt);
+  const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay, receipt, !openAiPilot || reviewRequested);
+  const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay, receipt, !openAiPilot || reviewRequested);
 
   // Peso oficial IELTS: Task 2 cuenta el doble que Task 1.
   const writingBand = (task1Assessment.state === 'success' && task2Assessment.state === 'success')
@@ -740,9 +741,7 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
               {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? 'Writing y Speaking' : 'Speaking'} — Pendiente de corrección
             </p>
             <p className="ielts-pending-notice__sub">
-              Tus textos y audios han sido enviados al profesor. Recibirás tus bandas
-              {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? ' de Writing y Speaking' : ' de Speaking'}
-              {' '}en tu dashboard cuando estén corregidas.
+              {openAiPilot ? 'Tus grabaciones se guardaron de forma privada. Esta prueba no las transcribe ni les asigna una banda automática.' : <>Tus textos y audios han sido enviados al profesor. Recibirás tus bandas{writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? ' de Writing y Speaking' : ' de Speaking'} en tu dashboard cuando estén corregidas.</>}
             </p>
           </div>
         </div>
@@ -750,26 +749,34 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
 
       {writingEnabled && (
         <>
-          {task1Essay && (
+          {openAiPilot && !reviewRequested && (
+            <div className="mt-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5">
+              <p className="text-sm text-[var(--fg)] mb-3">Al pedir la revisión, tus dos textos de Writing y las consignas de cada tarea se enviarán a OpenAI. Las grabaciones de Speaking no se envían a OpenAI. El resultado es orientación pedagógica, no una calificación oficial.</p>
+              <button type="button" className="btn" onClick={() => setReviewRequested(true)}>Revisar mis textos</button>
+            </div>
+          )}
+          {task1Essay && (!openAiPilot || reviewRequested) && (
             <IELTSWritingReportPanel
+              openAiPilot={openAiPilot}
               examSlug="ielts"
               mockId={mock.id}
               taskNumber={1}
               taskLabel="Writing — Task 1"
               essay={task1Essay}
-              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 1 en tu dashboard cuando esté corregida."
+              fallbackNotice={openAiPilot ? 'No pudimos revisar Task 1 ahora. Tu texto sigue guardado.' : 'Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 1 en tu dashboard cuando esté corregida.'}
               state={task1Assessment.state}
               result={task1Assessment.result}
             />
           )}
-          {task2Essay && (
+          {task2Essay && (!openAiPilot || reviewRequested) && (
             <IELTSWritingReportPanel
+              openAiPilot={openAiPilot}
               examSlug="ielts"
               mockId={mock.id}
               taskNumber={2}
               taskLabel="Writing — Task 2"
               essay={task2Essay}
-              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 2 en tu dashboard cuando esté corregida."
+              fallbackNotice={openAiPilot ? 'No pudimos revisar Task 2 ahora. Tu texto sigue guardado.' : 'Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 2 en tu dashboard cuando esté corregida.'}
               state={task2Assessment.state}
               result={task2Assessment.result}
             />
@@ -970,7 +977,7 @@ function IELTSFocusedResults({ mock, skill, ans, recordings, reading, onRetry, o
   </section></div>;
 }
 
-export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exam: Exam; mock: MockExam; practiceSkill?: FocusedSkill }) {
+export default function IELTSPracticeClient({ exam, mock, practiceSkill, openAiPilot = false }: { exam: Exam; mock: MockExam; practiceSkill?: FocusedSkill; openAiPilot?: boolean }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
   const [completedReviewMock, setCompletedReviewMock] = useState<MockExam | null>(null);
@@ -1162,7 +1169,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     if (practiceSkill) return <div className="exam-unified" data-exam="ielts"><IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} /><div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={`${SKILL_LABEL[practiceSkill]} PDF`} /></div></div>;
     return (
       <div className="prac-shell exam-unified" data-exam="ielts">
-        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} basicScore={completedBasicScore} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
+        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} basicScore={completedBasicScore} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} openAiPilot={openAiPilot} />
         <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor()} label="Full practice PDF" /></div>
       </div>
     );
@@ -1177,6 +1184,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     return (
       <div className="prac-shell exam-unified" data-exam="ielts">
         <IELTSSubmission
+          openAiPilot={openAiPilot}
           mockId={mock.id}
           mockTitle={mock.title}
           objectiveAnswers={{ fills: ans.fills, mcq: ans.mcq, ms: ans.ms, match: ans.match }}
@@ -1214,6 +1222,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
         <div className="prac-intro">
           <p className="prac-intro__eyebrow">{exam.flag} {exam.name}{practiceSkill ? ` · ${SKILL_LABEL[practiceSkill]} practice` : ''}</p>
           <h1 className="prac-intro__title">{practiceSkill ? `${SKILL_LABEL[practiceSkill]} · ${mock.title}` : mock.title}</h1>
+          {openAiPilot && !practiceSkill && <p className="prac-intro__sub">Prueba gratuita de Mock 1. No necesitas cuenta ni suscripción para comenzar. Al entregar, te pediremos datos de contacto y consentimiento.</p>}
           <p className="prac-intro__sub">{practiceSkill ? `Practise only ${SKILL_LABEL[practiceSkill]} using the audited material from this set. Move freely between parts; there is no timer.` : mock.subtitle}</p>
           <div className="prac-intro__stats">
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{practiceSkill ? (practiceSkill === 'writing' ? 2 : 3) : skills.filter(sk=>!comingSoonSkills.has(sk)).length}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'Parts' : 'Secciones activas'}</span></div>

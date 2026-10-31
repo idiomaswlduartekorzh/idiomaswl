@@ -51,7 +51,7 @@ export interface IeltsCompleteResponse {
   submissionId: string;
   reviewMock: MockExam | null;
   basicScore: string;
-  xpressAccess: 'membership' | 'single-credit' | 'welearn' | 'public';
+  xpressAccess: 'membership' | 'single-credit' | 'welearn' | 'public' | 'free-sample';
 }
 
 export const IELTS_SPEAKING_MIN_PART_SECONDS: Readonly<Record<number, number>> = {

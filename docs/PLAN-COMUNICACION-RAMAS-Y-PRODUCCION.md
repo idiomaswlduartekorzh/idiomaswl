@@ -5,6 +5,15 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
+
+Rama `codex/aleman-a1-ai-feedback`, actualizada desde `origin/main@e6c9a1448`.
+Estado: `PRUEBA_LOCAL`, sin integración, PR ni despliegue. El acceso gratuito sin
+cuenta y la revisión opcional de Writing solo se habilitan en desarrollo local;
+producción permanece cerrada. El estudiante entrega nombre y correo, sin
+WhatsApp, y la cuota de OpenAI usa el limitador duradero de Supabase. Alcance,
+pruebas y decisiones pendientes: [`ielts-mock1-openai-local.md`](ielts-mock1-openai-local.md).
+
 ## Separación de intención comercial de inglés — 31 de octubre de 2026
 
 Rama `codex/english-commercial-seo-20261031`, creada desde `origin/main@a6463926`

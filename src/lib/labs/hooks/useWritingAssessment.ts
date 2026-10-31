@@ -26,12 +26,13 @@ export function useWritingAssessment(
   taskNumber: 1 | 2 | 3 | 4,
   essay:      string,
   receipt?:   ExamSubmissionReceipt | null,
+  enabled = true,
 ): UseWritingAssessmentResult {
   const [state, setState] = useState<AssessmentState>(() => (essay.trim() ? 'loading' : 'unavailable'));
   const [result, setResult] = useState<FullAssessment | null>(null);
 
   useEffect(() => {
-    if (!essay.trim()) return;
+    if (!enabled || !essay.trim()) return;
 
     let cancelled = false;
     fetch('/api/labs/exam-writing-assess', {
@@ -55,7 +56,7 @@ export function useWritingAssessment(
 
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [enabled]);
 
   return { state, result };
 }
