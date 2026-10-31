@@ -30,6 +30,8 @@ No usa `service_role`, tablas nuevas ni migraciones.
 Para probar en un teléfono fuera de la red local, ejecuta
 `pnpm exec expo start --tunnel` desde `apps/mobile` y escanea el QR con Expo Go.
 El enlace del túnel funciona mientras el proceso de Expo siga abierto.
+Si el QR no responde en iPhone, abre la URL HTTPS del túnel con
+`/abrir-en-expo.html` al final y toca el enlace a Expo Go desde Safari.
 
 La app usa Expo SDK 58 para probarla con Expo Go actualizado en iPhone.
 Los identificadores `com.idiomaswl.welearn` de iOS y Android son provisionales hasta confirmar
