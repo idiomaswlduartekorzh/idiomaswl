@@ -83,7 +83,7 @@ export interface FreeAssessment {
    * el primario (definido por WRITING_ENGINE=auto) falló. Ver
    * exam-writing-assess/route.ts. Ausente en el prototipo de /labs.
    */
-  engineUsed?: 'gemini' | 'groq' | 'nvidia' | 'anthropic';
+  engineUsed?: 'gemini' | 'groq' | 'nvidia' | 'anthropic' | 'openai';
 }
 
 /** Reporte completo — usado por los exámenes reales (no el teaser de /labs). */

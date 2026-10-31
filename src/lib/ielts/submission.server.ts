@@ -1,5 +1,6 @@
 import 'server-only';
 import { hasExamScoreAccess } from '@/lib/exams/score-access.server';
+import { isIeltsMockOnePilot } from './mock-one-pilot';
 
 import { randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
@@ -198,7 +199,7 @@ function ieltsBasicScore(value: unknown): string {
 }
 
 async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
-  if (!await hasExamScoreAccess('ielts', request)) return Response.json({ ok: false, error: 'Registra tus datos antes de enviar el examen.' }, { status: 403 });
+  if (!isIeltsMockOnePilot(mockId) && !await hasExamScoreAccess('ielts', request)) return Response.json({ ok: false, error: 'Registra tus datos antes de enviar el examen.' }, { status: 403 });
   const blueprint = getIeltsReviewBlueprint(mockId);
   const mock = blueprint ? await loadIeltsMock(mockId) : null;
   const speakingAssignment = blueprint ? await getIeltsSpeakingAssignment(mockId) : null;
@@ -333,12 +334,13 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .maybeSingle();
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404);
   if (submission.submission_status === 'submitted') {
-    const xpressAccess = submission.user_id
+    const pilot = isIeltsMockOnePilot(mockId);
+    const xpressAccess = !pilot && submission.user_id
       ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId })
       : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
-    const reviewMock = xpressAccess.detailedResults ? await loadIeltsMock(mockId) : null;
-    if (xpressAccess.detailedResults && !reviewMock) return jsonError('No pudimos cargar la revisión del simulacro.', 500);
-    return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: xpressAccess.access });
+    const reviewMock = xpressAccess.detailedResults || pilot ? await loadIeltsMock(mockId) : null;
+    if ((xpressAccess.detailedResults || pilot) && !reviewMock) return jsonError('No pudimos cargar la revisión del simulacro.', 500);
+    return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: pilot ? 'free-sample' : xpressAccess.access });
   }
 
   const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
@@ -365,12 +367,13 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .select('id')
     .maybeSingle();
   if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
-  const xpressAccess = submission.user_id
+  const pilot = isIeltsMockOnePilot(mockId);
+  const xpressAccess = !pilot && submission.user_id
     ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId })
     : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
-  const reviewMock = xpressAccess.detailedResults ? await loadIeltsMock(mockId) : null;
-  if (xpressAccess.detailedResults && !reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 500);
-  return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: xpressAccess.access });
+  const reviewMock = xpressAccess.detailedResults || pilot ? await loadIeltsMock(mockId) : null;
+  if ((xpressAccess.detailedResults || pilot) && !reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 500);
+  return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: pilot ? 'free-sample' : xpressAccess.access });
 }
 
 export async function handleIeltsSubmissionRequest(request: Request, mockId: string): Promise<Response> {

@@ -14,6 +14,7 @@ import { parseGoetheA2PracticeTeil, parseGoetheB1PracticeTeil, parseGoethePracti
 import { hasGoetheA1Audio } from '@/lib/goethe/release';
 import { sanitizeExamMock, sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 import { getIeltsReviewBlueprint } from '@/lib/ielts/review-blueprint';
+import { isIeltsMockOnePilot } from '@/lib/ielts/mock-one-pilot';
 import ExamPracticeLeadGate from '@/components/exams/ExamPracticeLeadGate';
 import ExamAccessGate from '@/components/exams/ExamAccessGate';
 import { createClient } from '@/lib/supabase/server';
@@ -121,7 +122,8 @@ export default async function PracticePage({ params, searchParams }: { params: P
     const practiceSkill = query.mode === 'practice' && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
       ? query.skill as 'reading' | 'writing' | 'speaking'
       : undefined;
-    const runner = <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
+    const runner = <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} openAiPilot={isIeltsMockOnePilot(mockId)} />;
+    if (isIeltsMockOnePilot(mockId) && !practiceSkill) return runner;
     return withAccessGate(practiceSkill
       ? <ExamPracticeLeadGate examSlug="ielts" mockId={mock.id} examName={`IELTS ${practiceSkill} · ${mock.title}`}>{runner}</ExamPracticeLeadGate>
       : runner);

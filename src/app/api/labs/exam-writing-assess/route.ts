@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server';
+import { IELTS_MOCK_ONE_DAILY_LIMITS, isIeltsMockOnePilot } from '@/lib/ielts/mock-one-pilot';
+import { consumeIeltsRateLimit } from '@/lib/ielts/rate-limit.server';
+import { assessIeltsWritingOpenAi } from '@/lib/ielts/openai-writing.server';
 import { LABS_ENABLED, LIMITS, WRITING_ENGINE } from '@/lib/labs/config';
 import { checkRateLimit, pruneExpired, WRITING_RULE } from '@/lib/labs/rate-limit';
 import { assessWritingFree } from '@/lib/labs/providers/gemini';
@@ -162,8 +165,6 @@ const VALID_TASK_NUMBERS: TaskNumber[] = [1, 2, 3, 4];
 export const maxDuration = 120;
 
 export async function POST(req: Request) {
-  if (!LABS_ENABLED) return new NextResponse(null, { status: 404 });
-
   pruneExpired();
 
   const ip =
@@ -180,6 +181,8 @@ export async function POST(req: Request) {
 
   const examSlug   = typeof payload.examSlug === 'string' ? payload.examSlug : '';
   const mockId     = typeof payload.mockId === 'string' ? payload.mockId : '';
+  const openAiPilot = examSlug === 'ielts' && isIeltsMockOnePilot(mockId);
+  if (!LABS_ENABLED && !openAiPilot) return new NextResponse(null, { status: 404 });
   const taskNumber = payload.taskNumber;
   const essay      = typeof payload.essay === 'string' ? payload.essay.trim() : '';
   const receiptCandidate = payload.receipt;
@@ -188,6 +191,10 @@ export async function POST(req: Request) {
     && typeof (receiptCandidate as Record<string, unknown>).completionToken === 'string'
       ? receiptCandidate as ExamSubmissionReceipt
       : null;
+
+  if (openAiPilot && !receipt) {
+    return NextResponse.json({ code: 'invalid_input', message: 'Envía primero el simulacro para solicitar la revisión.' }, { status: 403 });
+  }
 
   if (receiptCandidate !== undefined && !receipt) {
     return NextResponse.json({ code: 'invalid_input', message: 'El comprobante de entrega no tiene un formato válido.' }, { status: 400 });
@@ -269,6 +276,33 @@ export async function POST(req: Request) {
   // submissions therefore receive an isolated quota per UUID; anonymous lab
   // traffic keeps the existing per-IP protection.
   const verifiedSubmissionId = persistenceContext?.submission.id ?? toeflPersistenceContext?.submission.id;
+  if (openAiPilot) {
+    if (!process.env.OPENAI_API_KEY) {
+      return NextResponse.json({ code: 'not_configured', message: 'La revisión de Writing no está disponible ahora. Tu examen sigue guardado.' }, { status: 503 });
+    }
+    const limits = [
+      { namespace: 'ielts-openai-task-day', identifier: `${verifiedSubmissionId}:${taskNumber}`, limit: IELTS_MOCK_ONE_DAILY_LIMITS.perTask },
+      { namespace: 'ielts-openai-email-day', identifier: persistenceContext?.submission.user_email?.toLowerCase() ?? verifiedSubmissionId ?? 'unknown', limit: IELTS_MOCK_ONE_DAILY_LIMITS.perEmail },
+      { namespace: 'ielts-openai-ip-day', identifier: ip, limit: IELTS_MOCK_ONE_DAILY_LIMITS.perIp },
+      { namespace: 'ielts-openai-global-day', identifier: 'mock-one', limit: IELTS_MOCK_ONE_DAILY_LIMITS.global },
+    ];
+    for (const limit of limits) {
+      if (!await consumeIeltsRateLimit({ ...limit, windowSeconds: IELTS_MOCK_ONE_DAILY_LIMITS.windowSeconds })) {
+        return NextResponse.json({ code: 'rate_limited', message: 'Se alcanzó el límite de revisiones gratuitas por hoy. Tu examen sigue guardado.' }, { status: 429 });
+      }
+    }
+    const image = assignment.imageUrl ? (await fetchInlineImage(assignment.imageUrl, req)) ?? undefined : undefined;
+    const result = await assessIeltsWritingOpenAi({ essay, prompt: assignment.promptText,
+      task: taskNumber === 1 ? 'task1-academic' : 'task2', rubric: adapter.rubric, image });
+    if ('code' in result) {
+      const status = result.code === 'rate_limited' ? 429 : result.code === 'invalid_input' ? 400 : 503;
+      return NextResponse.json(result, { status });
+    }
+    const completedAssessment: FullAssessment = { ...result, engineUsed: 'openai' };
+    const persisted = await persistIeltsWritingAssessment(persistenceContext!, completedAssessment);
+    if (!persisted.ok) return NextResponse.json({ code: 'provider_error', message: persisted.message }, { status: 503 });
+    return NextResponse.json(completedAssessment);
+  }
   const rateLimitKey = verifiedSubmissionId
     ? `${examSlug}-submission:${verifiedSubmissionId}`
     : ip;

@@ -21,6 +21,7 @@ import type { MockExam } from '@/data/mocks/types';
 import { redeemExamAccessCodeFromBrowser, type ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 interface Props {
+  openAiPilot?: boolean;
   mockId: string;
   mockTitle: string;
   objectiveAnswers: IeltsObjectiveAnswers;
@@ -54,6 +55,7 @@ async function readResponse<T>(response: Response): Promise<T & { ok?: boolean; 
 }
 
 export function IELTSSubmission({
+  openAiPilot = false,
   mockId,
   mockTitle,
   objectiveAnswers,
@@ -115,7 +117,7 @@ export function IELTSSubmission({
     const trimmedEmail = email.trim().toLowerCase();
     if (trimmedName.length < 2) return showError('Escribe el nombre completo de la estudiante.');
     if (!/^\S+@\S+\.\S+$/.test(trimmedEmail)) return showError('Escribe un correo válido, por ejemplo estudiante@correo.com.');
-    if (!isPlausibleWhatsapp(whatsapp)) return showError('Escribe un WhatsApp válido de 10 a 15 dígitos.');
+    if (!openAiPilot && !isPlausibleWhatsapp(whatsapp)) return showError('Escribe un WhatsApp válido de 10 a 15 dígitos.');
     if (task1Words < 150) return showError('Writing Task 1 necesita al menos 150 palabras. Vuelve al examen para completarlo.');
     if (task2Words < 250) return showError('Writing Task 2 necesita al menos 250 palabras. Vuelve al examen para completarlo.');
     if (speakingIssues.length > 0) return showError(speakingIssues[0]);
@@ -135,7 +137,7 @@ export function IELTSSubmission({
     const endpoint = `/api/ielts/${encodeURIComponent(mockId)}/submissions`;
 
     try {
-      if (!leadSavedRef.current) {
+      if (!openAiPilot && !leadSavedRef.current) {
         setState('capturing');
         const leadResult = await saveLead({
           name: trimmedName,
@@ -204,7 +206,7 @@ export function IELTSSubmission({
       if (access.unlocked && (!completed.reviewMock || completed.reviewMock.id !== mockId)) {
         throw new Error('La revisión del servidor no llegó completa. Inténtalo otra vez.');
       }
-      if (!access.unlocked && accessCode.trim()) {
+      if (!openAiPilot && !access.unlocked && accessCode.trim()) {
         setState('unlocking');
         access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'ielts', attemptRef: prepared.submissionId });
       }
@@ -221,7 +223,7 @@ export function IELTSSubmission({
         <div className="ielts-submit__eyebrow">{mockTitle}</div>
         <h1 id="ielts-submit-title">Envía tu simulacro para evaluación</h1>
         <p className="ielts-submit__intro">
-          Identifica a la estudiante y confirma que sus dos textos y todas sus muestras de Speaking llegarán juntas al panel privado.
+          {openAiPilot ? 'Escribe tu nombre y correo para guardar la entrega de este simulacro gratuito. Tus respuestas y grabaciones se guardarán de forma privada.' : 'Identifica a la estudiante y confirma que sus dos textos y todas sus muestras de Speaking llegarán juntas al panel privado.'}
         </p>
 
         <div className="ielts-submit__summary" aria-label="Resumen de la entrega">
@@ -265,24 +267,24 @@ export function IELTSSubmission({
               spellCheck={false} value={email} onChange={event => setEmail(event.target.value)}
               placeholder="Ej.: estudiante@correo.com…" maxLength={254} required />
           </div>
-          <div className="ielts-submit__field">
+          {!openAiPilot && <div className="ielts-submit__field">
             <label htmlFor="ielts-student-whatsapp">WhatsApp</label>
             <input id="ielts-student-whatsapp" name="student_whatsapp" type="tel" inputMode="tel" autoComplete="tel"
               value={whatsapp} onChange={event => setWhatsapp(event.target.value)}
               placeholder="Ej.: +57 300 123 4567" maxLength={24} required />
-          </div>
-          <div className="ielts-submit__field ielts-submit__field--access">
+          </div>}
+          {!openAiPilot && <div className="ielts-submit__field ielts-submit__field--access">
             <label htmlFor="ielts-access-code">Código de acceso <span>(opcional)</span></label>
             <input id="ielts-access-code" name="access_code" type="text" autoComplete="one-time-code" value={accessCode}
               onChange={event => setAccessCode(event.target.value.toUpperCase())} placeholder="WL-ABCD-EFGH-JKLM-NP" maxLength={24} />
             <small>Úsalo si tu profesor o institución te dio acceso al informe completo.</small>
-          </div>
+          </div>}
 
           <label className="ielts-submit__consent">
             <input type="checkbox" name="evaluation_consent" checked={consent}
               onChange={event => setConsent(event.target.checked)} required />
             <span>
-              Autorizo el almacenamiento privado de mis respuestas para su evaluación académica y el contacto de WeLearn relacionado con este simulacro. Los accesos temporales no revelan mi nombre ni correo.
+              {openAiPilot ? 'Autorizo el almacenamiento privado de mis respuestas, nombre, correo y grabaciones para revisar este simulacro. La revisión de Writing con OpenAI es opcional y se solicita después de entregar.' : 'Autorizo el almacenamiento privado de mis respuestas para su evaluación académica y el contacto de WeLearn relacionado con este simulacro. Los accesos temporales no revelan mi nombre ni correo.'}
             </span>
           </label>
           <p className="ielts-submit__privacy">
