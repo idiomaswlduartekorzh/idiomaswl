@@ -79,12 +79,15 @@ function Assignment({ item, onSubmitted }: { item: StudentAssignment; onSubmitte
   async function submit() {
     if (!supabase || !submission.trim()) { setError('Escribe tu respuesta antes de enviar.'); return; }
     setBusy(true); setError('');
-    const { data, error: submitError } = await supabase.rpc('submit_student_assignment', {
-      p_assignment_id: item.id, p_submission_text: submission.trim(), p_submission_url: null,
-    });
-    setBusy(false);
-    if (submitError || !data) { setError('No pudimos enviar la tarea. Revisa tu conexión e inténtalo de nuevo.'); return; }
-    setExpanded(false); setSubmission(''); onSubmitted();
+    try {
+      const { data, error: submitError } = await supabase.rpc('submit_student_assignment', {
+        p_assignment_id: item.id, p_submission_text: submission.trim(), p_submission_url: null,
+      });
+      if (submitError || !data) throw submitError ?? new Error('Tarea no disponible');
+      setExpanded(false); setSubmission(''); onSubmitted();
+    } catch {
+      setError('No pudimos enviar la tarea. Revisa tu conexión e inténtalo de nuevo.');
+    } finally { setBusy(false); }
   }
   return <View style={s.listCard}>
     <View style={s.rowBetween}>
@@ -364,6 +367,6 @@ export default function App() {
       <Text style={s.pageTitle}>Configura WeLearn</Text>
       <Text style={s.pageIntro}>Añade las variables públicas de Supabase en apps/mobile/.env para conectar esta app con tu cuenta.</Text>
     </View> : checking ? <ActivityIndicator style={s.centered} color={palette.navy} size="large" />
-      : user ? <Main user={user} /> : <Login onSignedIn={setUser} />}
+      : user ? <Main key={user.id} user={user} /> : <Login onSignedIn={setUser} />}
   </SafeAreaView>;
 }

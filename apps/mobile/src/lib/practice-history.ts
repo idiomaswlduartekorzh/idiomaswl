@@ -32,7 +32,8 @@ export async function savePracticeAttempt(userId: string, attempt: PracticeAttem
 }
 
 export async function recordPracticeDay(db: SupabaseClient, userId: string): Promise<void> {
-  const today = new Date().toLocaleDateString('en-CA');
+  const date = new Date();
+  const today = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
   const { error } = await db.from('daily_activity').insert({ user_id: userId, activity_date: today });
   if (error && error.code !== '23505') throw error;
 }
