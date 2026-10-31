@@ -2,8 +2,8 @@
 
 import { createAdminClient } from '@/lib/supabase/admin'
 import { requireAdmin } from '@/lib/auth/require-admin.server'
-export type { StudentSubject } from './inviteStudent'
-import type { StudentSubject } from './inviteStudent'
+export type { StudentSubject } from './studentSubjects'
+import type { StudentSubject } from './studentSubjects'
 
 export async function assignSubject(userId: string, subject: StudentSubject): Promise<void> {
   await requireAdmin()

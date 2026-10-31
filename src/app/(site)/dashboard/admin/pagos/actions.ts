@@ -5,18 +5,7 @@ import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { createAdminPaymentLink } from '@/lib/admin-payments/server';
 import { parseAdminPaymentLinkForm } from '@/lib/admin-payments/validation';
 import { WompiConfigurationError } from '@/lib/wompi/validation';
-
-export interface CreatePaymentLinkState {
-  status: 'idle' | 'success' | 'error';
-  message: string;
-  paymentUrl: string | null;
-}
-
-export const INITIAL_CREATE_PAYMENT_LINK_STATE: CreatePaymentLinkState = {
-  status: 'idle',
-  message: '',
-  paymentUrl: null,
-};
+import type { CreatePaymentLinkState } from './state';
 
 export async function createPaymentLinkAction(
   _state: CreatePaymentLinkState,

@@ -33,10 +33,8 @@ import type {
   AdminPaymentLinkRow,
   AdminPaymentsData,
 } from '@/lib/admin-payments/server';
-import {
-  createPaymentLinkAction,
-  INITIAL_CREATE_PAYMENT_LINK_STATE,
-} from './actions';
+import { createPaymentLinkAction } from './actions';
+import { INITIAL_CREATE_PAYMENT_LINK_STATE } from './state';
 import styles from './payments.module.css';
 
 const SOURCE_LABELS: Record<AdminPaymentLedgerRow['source'], string> = {
