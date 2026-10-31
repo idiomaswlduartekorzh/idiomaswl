@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseSelection, selectionDetails, selectionPath, selectionSummary, whatsappLink, PLANS, LANGUAGES } from '../src/lib/course-pricing/catalog.ts';
+import { parseSelection, selectionDetails, selectionPath, selectionSummary, whatsappLink, PLANS, LANGUAGES, ENROLLMENT_FEE_COP, EXAM_PLATFORM_FEE_COP, hasExamObjective } from '../src/lib/course-pricing/catalog.ts';
 
 test('tampered and duplicate URL values cannot invent a price, plan or cross-language exam', () => {
   const { selection, corrected } = parseSelection({ idioma: 'coreano', objetivo: 'IELTS Academic', plan: ['diario','esencial'], precio: '1' });
@@ -27,6 +27,21 @@ test('approved prices have four-week units and decrease per session without annu
     assert.equal(detail.classes, plan.weekly * 4);
     assert.ok(plan.price / detail.sessions < previous);
     previous = plan.price / detail.sessions;
+  }
+});
+test('all exam objectives show the one-time platform price, while general language does not', () => {
+  assert.equal(ENROLLMENT_FEE_COP,44200);
+  assert.equal(EXAM_PLATFORM_FEE_COP,99000);
+  for (const language of LANGUAGES) {
+    const general={language:language.id,objective:'general',plan:'esencial',level:'No sé mi nivel'};
+    assert.equal(hasExamObjective(general),false);
+    assert.doesNotMatch(selectionSummary(general),/Plataforma de preparación/);
+    for (const objective of language.exams) {
+      const exam={...general,objective};
+      assert.equal(hasExamObjective(exam),true);
+      assert.match(selectionSummary(exam),/99\.000/);
+      assert.match(selectionSummary(exam),/463\.200/);
+    }
   }
 });
 test('WhatsApp carries the exact reviewed selection and only uses the official recipient', () => {

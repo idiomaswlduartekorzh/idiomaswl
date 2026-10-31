@@ -1,6 +1,6 @@
 # Decisión pendiente: tarifa de inscripción de clases
 
-**Registrada el 26 de octubre de 2026. Estado: propuesta guardada; cobro inactivo.**
+**Registrada el 26 de octubre de 2026. Propuesta de $99.000 sustituida el 31 de octubre por la tarifa de $44.200 COP documentada en `tarifa-inscripcion-2026-10-31.md`.**
 
 El propietario propone una **tarifa de inscripción única de $99.000 COP** para clases con tutor. Su finalidad es ayudar a cubrir los costos de procesamiento de Wompi y de operación de la plataforma (incluidos Codex y Vercel). No es una cuota mensual ni una renovación automática. El valor propuesto es una decisión comercial, no un cálculo verificado de esos costos.
 

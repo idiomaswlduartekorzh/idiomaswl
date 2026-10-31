@@ -1,5 +1,9 @@
 # Candidato de precios, reglamento y Wompi
 
+## Actualización de inscripción · 31 de octubre de 2026
+
+El flujo de clases incorpora la tarifa de inscripción de $44.200 COP y un pago único de plataforma de $99.000 COP para cualquier preparación de examen. Las exenciones y el total quedan congelados en la orden. La regla, fuentes de precio y despliegue están en [`tarifa-inscripcion-2026-10-31.md`](tarifa-inscripcion-2026-10-31.md). La compra independiente de planes digitales y los informes TOEFL mantienen sus importes.
+
 Worktree exclusivo `precios-wompi-20260907`, rama `codex/precios-wompi-20260907`, integrada en `main`. La venta fue autorizada y liberada el 8 de septiembre de 2026 mediante un estado versionado en Git; `COURSE_SALES_EMERGENCY_DISABLED=true` funciona como cierre de emergencia.
 
 ## Alcance implementado

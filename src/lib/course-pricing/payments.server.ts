@@ -8,6 +8,7 @@ import { parseProviderPayment, type parseOrderInput } from './payment';
 import { TERMS_VERSION, COURSE_LEGAL_SNAPSHOT } from './terms';
 import { courseSalesEnabled } from './release';
 import { fulfillPaidCourseOrder } from './fulfillment.server';
+import { ENROLLMENT_FEE_COP, ENROLLMENT_FEE_VERSION, EXAM_PLATFORM_FEE_COP, EXAM_PLATFORM_FEE_VERSION, hasExamObjective } from './catalog';
 
 export { courseSalesEnabled } from './release';
 export async function courseUser() {
@@ -39,11 +40,17 @@ export async function prepareCourseOrder(input:NonNullable<ReturnType<typeof par
   const config=getWompiServerConfig();
   if (process.env.VERCEL_ENV!=='production' && config.environment==='production') throw new Error('production_disabled_outside_production');
   const token=orderAccessToken(input.idempotencyKey);
-  const {data,error}=await createAdminClient().rpc('prepare_course_order',{
+  const {data,error}=await createAdminClient().rpc('prepare_course_order_with_fee',{
     p_user:null,p_email:input.contact.studentEmail,p_access_hash:orderAccessHash(token),p_key:input.idempotencyKey,p_environment:config.environment,p_offer:input.offerVersion,
     p_selection:input.selection,p_contact:{...input.contact,acceptance:{...input.acceptance,snapshot:COURSE_LEGAL_SNAPSHOT,sha256:createHash('sha256').update(COURSE_LEGAL_SNAPSHOT).digest('hex')}},p_amount:input.amountInCents,p_classes:input.classes,p_terms:input.termsVersion,
   }).abortSignal(AbortSignal.timeout(10000));
   if (error || !data) throw new Error('order_storage_unavailable');
+  const fee=Number(data.enrollment_fee_in_cents);
+  const platformFee=Number(data.platform_fee_in_cents);
+  if(data.enrollment_fee_version!==ENROLLMENT_FEE_VERSION || ![0,ENROLLMENT_FEE_COP*100].includes(fee)
+    || data.platform_fee_version!==EXAM_PLATFORM_FEE_VERSION || ![0,EXAM_PLATFORM_FEE_COP*100].includes(platformFee)
+    || (!hasExamObjective(input.selection) && platformFee!==0)
+    || Number(data.amount_in_cents)!==input.amountInCents+fee+platformFee) throw new Error('course_fee_mismatch');
   return data;
 }
 export async function ownedCourseOrder(id:string,userId:string) {
@@ -74,7 +81,7 @@ export async function courseOrderState(orderId:string) {
 export async function checkoutForOrder(order:Record<string,unknown>,origin:string) {
   const config=getWompiServerConfig();
   if(config.environment!==order.environment || (process.env.VERCEL_ENV!=='production'&&config.environment==='production')) throw new Error('environment_mismatch');
-  if (!courseSalesEnabled() || ![TERMS_VERSION,'course-20260907-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
+  if (!courseSalesEnabled() || ![TERMS_VERSION,'course-20261031-v3','course-20260912-v2','course-20260907-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
   const state=await courseOrderState(String(order.id));
   if(state.status==='paid'||state.status==='review'||state.status==='pending') return {status:state.status};
   const expirationTime=new Date(String(order.expires_at)).toISOString();

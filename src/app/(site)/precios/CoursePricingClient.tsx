@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import {
-  LANGUAGES, LEVELS, PLANS, formatCOP, objectiveLabel, objectivesFor,
+  ENROLLMENT_FEE_COP, EXAM_PLATFORM_FEE_COP, LANGUAGES, LEVELS, PLANS, formatCOP, hasExamObjective, objectiveLabel, objectivesFor,
   selectionDetails, selectionPath, selectionSummary, whatsappLink,
   type Selection,
 } from '@/lib/course-pricing/catalog';
@@ -17,6 +17,7 @@ export default function CoursePricingClient({ initialSelection, initialReviewing
   const reviewRef = useRef<HTMLHeadingElement>(null);
   const editorRef = useRef<HTMLHeadingElement>(null);
   const { language, plan, classes, sessions } = selectionDetails(selection);
+  const platformFee = hasExamObjective(selection) ? EXAM_PLATFORM_FEE_COP : 0;
 
   function update(patch: Partial<Selection>) {
     setSelection(current => ({ ...current, ...patch }));
@@ -47,7 +48,7 @@ export default function CoursePricingClient({ initialSelection, initialReviewing
         <p className={styles.eyebrow}>WELEARN · CLASES DE IDIOMAS</p>
         <h1>Tu idioma.<br /><span>Tu propio ritmo.</span></h1>
         <p>Elige qué quieres aprender y cuántas veces por semana.<br className={styles.desktopBreak} /> Un plan claro, en ciclos de cuatro semanas.</p>
-        <div className={styles.facts}><span>8 idiomas</span><span>Clases de 100 minutos</span><span>Desde $320.000 COP</span></div>
+        <div className={styles.facts}><span>8 idiomas</span><span>Clases de 100 minutos</span><span>Ciclos desde $320.000 COP + inscripción cuando corresponda</span></div>
       </header>
       <ol className={styles.steps} aria-label="Pasos para elegir tu curso">
         <li aria-current={!reviewing ? 'step' : undefined}><span>01</span> Idioma e intensidad</li>
@@ -116,7 +117,11 @@ export default function CoursePricingClient({ initialSelection, initialReviewing
           <div><dt>Plan</dt><dd>{plan.name} · {plan.weekly} {plan.weekly === 1 ? 'clase' : 'clases'} por semana</dd></div>
           <div><dt>Duración</dt><dd>4 semanas · {classes} clases de 100 minutos · {sessions} sesiones de 50 minutos</dd></div>
           <div><dt>Precio del ciclo</dt><dd>{formatCOP(plan.price)} COP</dd></div>
+          <div><dt>Inscripción, si corresponde</dt><dd>{formatCOP(ENROLLMENT_FEE_COP)} COP</dd></div>
+          {platformFee > 0 && <div><dt>Plataforma de preparación para exámenes · pago único</dt><dd>{formatCOP(platformFee)} COP</dd></div>}
+          <div><dt>Total de primera inscripción</dt><dd><strong>{formatCOP(plan.price + ENROLLMENT_FEE_COP + platformFee)} COP</strong></dd></div>
         </dl>
+        <p className={styles.small}>Si continúas con otro ciclo dentro del plazo, la inscripción será $0. El pago de plataforma para preparar exámenes se hace una sola vez por estudiante. El total definitivo se fija al guardar la orden, antes de abrir Wompi.</p>
         <p className={styles.small}>El horario se coordina después del pago. La preparación de exámenes no incluye la inscripción al examen oficial.</p>
         <CourseEnrollmentForm key={selectionPath(selection)} selection={selection} salesEnabled={salesEnabled} />
         <a className={styles.secondary} href={whatsappLink(selection)} target="_blank" rel="noopener noreferrer">Necesito orientación por WhatsApp <span aria-hidden="true">↗</span></a>

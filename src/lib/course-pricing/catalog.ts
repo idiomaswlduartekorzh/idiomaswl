@@ -1,6 +1,10 @@
 // Commercial selection only. Never use this browser summary as payment authority.
 // Wompi's legacy catalog and previously sold offers are intentionally independent.
 export const CATALOG_VERSION = 'classes-4w-20260906';
+export const ENROLLMENT_FEE_COP = 44200;
+export const ENROLLMENT_FEE_VERSION = 'enrollment-20261031-v1';
+export const EXAM_PLATFORM_FEE_COP = 99000;
+export const EXAM_PLATFORM_FEE_VERSION = 'exam-platform-20261031-v1';
 export const PLANS = [
   { id: 'esencial', name: 'Esencial', weekly: 1, price: 320000, description: 'Un espacio semanal para tu idioma.' },
   { id: 'constancia', name: 'Constancia', weekly: 2, price: 540000, description: 'Un ritmo que puedes sostener.' },
@@ -32,6 +36,7 @@ export function objectivesFor(languageId: string): string[] {
 export function objectiveLabel(objective: string) {
   return objective === 'general' ? 'Idioma general' : objective;
 }
+export function hasExamObjective(selection: Selection) { return selection.objective !== 'general'; }
 export function parseSelection(query: Query): { selection: Selection; corrected: boolean } {
   const selection = { ...DEFAULT_SELECTION };
   let corrected = false;
@@ -69,6 +74,9 @@ export function selectionSummary(selection: Selection) {
     `${plan.weekly} ${plan.weekly === 1 ? 'clase' : 'clases'} por semana · ${classes} clases en cuatro semanas`,
     `Cada clase: 100 minutos (2 sesiones de 50 minutos). Total: ${sessions} sesiones.`,
     `Precio del ciclo: ${formatCOP(plan.price)} COP. Sin renovación automática.`,
+    `Inscripción: ${formatCOP(ENROLLMENT_FEE_COP)} COP si es mi primera compra o regreso después de 42 días sin pagar clases.`,
+    ...(hasExamObjective(selection) ? [`Plataforma de preparación para exámenes: ${formatCOP(EXAM_PLATFORM_FEE_COP)} COP, pago único por estudiante.`] : []),
+    `Total de primera inscripción: ${formatCOP(plan.price + ENROLLMENT_FEE_COP + (hasExamObjective(selection) ? EXAM_PLATFORM_FEE_COP : 0))} COP.`,
     'Quiero orientación para continuar con este curso.',
   ].join('\n');
 }
