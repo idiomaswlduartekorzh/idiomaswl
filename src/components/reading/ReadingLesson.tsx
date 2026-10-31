@@ -7,6 +7,7 @@ import {
   ChevronUp, CircleHelp, Pause, RotateCcw, Sparkles, Target, Volume2,
 } from 'lucide-react'
 import { ReadingRecorder } from './ReadingRecorder'
+import { ReadingAiFeedback } from './ReadingAiFeedback'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
@@ -214,7 +215,7 @@ const READING_LANG_SLUG: Record<string, string> = {
   ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
 }
 
-export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
+export function ReadingLesson({ exercise, locale, siblings = [], aiFeedbackEnabled = false }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[]; aiFeedbackEnabled?: boolean }) {
   const copy = COPY[locale]
   const [stage, setStage] = useState(0)
   const [answers, setAnswers] = useState<Record<string, StoredAnswer>>({})
@@ -466,6 +467,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
         <label className={styles.productionLabel} htmlFor="reading-production">{localized(exercise.production.prompt, locale)}</label>
         <textarea id="reading-production" value={production} onChange={(event) => setProduction(event.target.value)} rows={5} placeholder={exercise.production.hints.join(' · ')} />
         <div className={styles.productionMeta}><span>{wordCount} / {exercise.production.maxWords} {copy.words}</span><span>{copy.unscored}</span></div>
+        {aiFeedbackEnabled && exercise.id === 'de-a1-der-weg-zur-arbeit' && <ReadingAiFeedback text={production} />}
         <button type="button" className="listen-primary" onClick={() => setStage(4)}>{copy.goResult}</button>
       </section>
       </div>

@@ -43,6 +43,19 @@ Lighthouse comprobada. Search Console requiere renovar la sesión de Google para
 medir consultas, indexación y posición después del despliegue. Ningún control
 local garantiza aparecer en la primera página.
 
+## Prueba local de feedback IA en lectura alemana A1 — 31 de octubre de 2026
+
+Rama `codex/aleman-a1-ai-feedback`, creada desde `origin/main@a6463926` en un
+worktree aislado. Estado: `PRUEBA_LOCAL`, sin PR, integración ni despliegue. El
+endpoint solo responde con `NODE_ENV=development` y el indicador local
+`OPENAI_READING_FEEDBACK_ENABLED=1`. Pasaron cinco pruebas simuladas, el guardián
+del catálogo, TypeScript y un recorrido local en navegador. Se hizo una única
+llamada real con texto sintético: 295 tokens de entrada y 85 de salida; costo
+estimado USD 0,000072 con la tarifa estándar de GPT-6 Luna consultada ese día.
+Antes de publicar hay que decidir presupuesto, cuota duradera por identidad,
+revisión pedagógica y política de privacidad. Instrucciones y límites en
+[`lectura-feedback-ia-local.md`](lectura-feedback-ia-local.md).
+
 ## Paneles de estudiante y administración — 26 de octubre de 2026
 
 La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama

@@ -108,7 +108,8 @@ export function ExercisePage({ exercise, locale }: { exercise: ReadingExercise; 
     <section className="wl-section">
       <div className={`wrap ${styles.readingRoot}`}>
         <ReadingStructuredData exercise={exercise} locale={locale} />
-        <ReadingLesson exercise={exercise} locale={locale} siblings={siblings} />
+        <ReadingLesson exercise={exercise} locale={locale} siblings={siblings}
+          aiFeedbackEnabled={process.env.NODE_ENV === 'development' && process.env.OPENAI_READING_FEEDBACK_ENABLED === '1'} />
       </div>
     </section>
   )
