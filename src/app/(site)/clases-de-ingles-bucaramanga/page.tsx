@@ -4,6 +4,7 @@ import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
 import PracticeBand from '@/components/hub/PracticeBand';
 import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
+import s from './page.module.css';
 
 // ── WhatsApp ─────────────────────────────────────────────────────────────────
 const WA = '573005004253';
@@ -11,8 +12,10 @@ const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
 const WA_GENERAL  = wa('Hola, vi su página de clases de inglés en Bucaramanga. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
-const WA_IELTS    = wa('Hola, necesito preparación para el IELTS en Bucaramanga. ¿Cómo funciona la clase diagnóstico?');
-const WA_TOEFL    = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cuál es el precio y cómo agendo un diagnóstico con tutor?');
+const WA_CONVERSACION = wa('Hola, quiero mejorar mi conversación en inglés en Bucaramanga. ¿Cómo son las clases y cuánto cuesta el diagnóstico con tutor?');
+const WA_TRABAJO = wa('Hola, busco clases de inglés en Bucaramanga para el trabajo. ¿Qué horarios y precios tienen?');
+const WA_ESTUDIO = wa('Hola, busco clases de inglés en Bucaramanga para estudiar. ¿Cómo es la ruta y cuánto cuesta el diagnóstico?');
+const WA_VIAJE = wa('Hola, quiero aprender inglés en Bucaramanga para viajar. ¿Qué modalidad y horarios tienen?');
 const WA_PAQUETE  = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
@@ -22,18 +25,11 @@ export const metadata: Metadata = {
   // anterior no contenía ni «cursos» ni «presenciales».
   title: 'Cursos de inglés en Bucaramanga presenciales y online',
   description:
-    'Cursos de inglés presenciales en Bucaramanga, barrio Sotomayor, con tutor asignado. Combina clases online. Preparación IELTS, TOEFL e ICFES.',
-  keywords: [
-    'cursos de inglés en Bucaramanga presenciales', 'clases de inglés presenciales Bucaramanga',
-    'clases de inglés en Bucaramanga', 'clases particulares de inglés Bucaramanga',
-    'inglés Bucaramanga', 'curso de inglés Bucaramanga', 'IELTS Bucaramanga',
-    'TOEFL Bucaramanga', 'preparación IELTS Bucaramanga', 'inglés online Bucaramanga',
-    'clases inglés Santander Colombia', 'paquetes de inglés Bucaramanga',
-  ],
+    'Cursos de inglés en Bucaramanga con clases presenciales en Sotomayor, tutor asignado y opción online. Aprende para conversación, estudio o trabajo.',
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga' },
   openGraph: {
     title: 'Cursos de inglés en Bucaramanga, presenciales y online',
-    description: 'Clases presenciales en Sotomayor, Bucaramanga, con tutor asignado. Alterna con clases online y prepara IELTS, TOEFL o ICFES.',
+    description: 'Clases presenciales en Sotomayor, Bucaramanga, con tutor asignado y opción online para conversación, estudio o trabajo.',
     url: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga',
   },
 };
@@ -42,8 +38,15 @@ export const metadata: Metadata = {
 const buildJsonLd = () => ({
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'Course',
+      name: 'Cursos de inglés en Bucaramanga',
+      description: 'Clases de inglés presenciales en Bucaramanga y online con tutor asignado para conversación, estudio y trabajo.',
+      provider: { '@type': 'EducationalOrganization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
+      hasCourseInstance: courseInstances('Inglés', 'en'),
+    },
     localBusinessNode(
-      'Clases particulares de inglés en la sede de Sotomayor, Bucaramanga, y online para toda Colombia. Preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
+      'Clases particulares de inglés en la sede de Sotomayor, Bucaramanga, y online para toda Colombia.'
     ),
     davidNode(
       'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen dio origen al método de WeLearn.'
@@ -158,8 +161,8 @@ export default function ClasesInglessBucaramangaPage() {
                 Clases de inglés · Bucaramanga y Área Metropolitana
               </p>
               <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.02em', color: 'var(--ink)', marginBottom: '1.25rem' }}>
-                Cursos de inglés<br />
-                en Bucaramanga,<br />
+                Cursos de inglés<br />{' '}
+                en Bucaramanga,<br />{' '}
                 <span style={{ color: 'var(--accent)' }}>presenciales u online.</span>
               </h1>
               <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '0.75rem', maxWidth: 440 }}>
@@ -168,7 +171,7 @@ export default function ClasesInglessBucaramangaPage() {
                 Atendemos Bucaramanga, Floridablanca, Girón y Piedecuesta.
               </p>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6, marginBottom: '2rem', maxWidth: 440 }}>
-                Preparación para IELTS, TOEFL e ICFES con tutor asignado y método propio para hispanohablantes.
+                Aprende inglés para conversación, estudio o trabajo con tutor asignado. Si necesitas una certificación, también tenemos rutas específicas para IELTS, TOEFL e ICFES.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <a
@@ -217,9 +220,9 @@ export default function ClasesInglessBucaramangaPage() {
         <div className="wrap">
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center', listStyle: 'none', margin: 0, padding: 0, fontSize: '0.85rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
             <li>✓ Sede en Bucaramanga</li>
-            <li>✓ Clases online toda Colombia</li>
-            <li>✓ Preparación IELTS</li>
-            <li>✓ Preparación TOEFL iBT</li>
+            <li>✓ Clases presenciales u online</li>
+            <li>✓ Inglés para conversación y trabajo</li>
+            <li>✓ Ruta según tu nivel</li>
             <li>✓ Clases con tutor asignado</li>
             <li>✓ Paquetes de horas con descuento</li>
           </ul>
@@ -284,13 +287,13 @@ export default function ClasesInglessBucaramangaPage() {
       <section className="wlh-section">
         <div className="wrap">
           <p className="wlh-section-eyebrow">02 — ¿Para qué necesitas el inglés?</p>
-          <h2 className="wlh-section-h2">Cada objetivo, un plan específico.</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.25rem', marginTop: '2.5rem' }}>
+          <h2 className="wlh-section-h2">Clases de inglés para lo que necesitas hacer.</h2>
+          <div className={s.objectiveGrid}>
             {[
-              { icon: '🎓', title: 'Preparación IELTS', sub: 'Band 6.5 – 8.0', desc: 'Para estudiar en el exterior, migrar a Canadá, Australia, Reino Unido o trabajar en empresas internacionales. Academic y General Training.', waUrl: WA_IELTS },
-              { icon: '🏛️', title: 'Preparación TOEFL', sub: '90 – 110 puntos', desc: 'Para universidades en EE.UU., Canadá y Europa. Estrategias para las cuatro secciones del iBT con práctica real de escritura y speaking.', waUrl: WA_TOEFL },
-              { icon: '📚', title: 'ICFES Saber 11', sub: 'Pre A1 – B1', desc: 'Para mejorar lectura y uso de la lengua en el componente de inglés. B1 es el nivel más alto reportado por la prueba.', waUrl: WA_GENERAL },
-              { icon: '💼', title: 'Inglés laboral y conversacional', sub: 'Fluidez real', desc: 'Para comunicarte en el trabajo, entrevistas en multinacionales, trabajo remoto o mudarte al exterior. Corrección real de errores.', waUrl: WA_GENERAL },
+              { icon: '💬', title: 'Conversación', sub: 'Hablar y escuchar', desc: 'Gana seguridad al hablar, mejora la pronunciación y entiende mejor las conversaciones cotidianas.', waUrl: WA_CONVERSACION },
+              { icon: '💼', title: 'Inglés para el trabajo', sub: 'Entrevistas y reuniones', desc: 'Practica las situaciones de tu empleo o búsqueda laboral con un tutor que adapta las clases a tu nivel.', waUrl: WA_TRABAJO },
+              { icon: '📚', title: 'Inglés para estudiar', sub: 'Lectura y comunicación', desc: 'Trabaja comprensión, vocabulario y expresión para usar el idioma en tus estudios.', waUrl: WA_ESTUDIO },
+              { icon: '🌍', title: 'Inglés para viajar', sub: 'Situaciones reales', desc: 'Prepárate para pedir información, resolver imprevistos y conversar durante un viaje.', waUrl: WA_VIAJE },
             ].map(item => (
               <div key={item.title} style={{ background: 'var(--surface)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <span style={{ fontSize: '2rem' }}>{item.icon}</span>
@@ -304,6 +307,12 @@ export default function ClasesInglessBucaramangaPage() {
                 </a>
               </div>
             ))}
+          </div>
+          <div className={s.examPaths}>
+            <strong>¿Necesitas preparar un examen?</strong>
+            <Link href="/preparacion-ielts">IELTS →</Link>
+            <Link href="/preparacion-toefl">TOEFL iBT →</Link>
+            <Link href="/preparacion-icfes">ICFES Inglés →</Link>
           </div>
         </div>
       </section>

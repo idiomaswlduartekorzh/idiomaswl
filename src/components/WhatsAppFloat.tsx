@@ -12,6 +12,8 @@ const PAGE_MESSAGES: [string, string][] = [
   ['/nivel-radar',        'Hola, hice el Nivel Radar de WeLearn y quiero ayuda personalizada para avanzar mi inglés.'],
   ['/clases-de-coreano',  'Hola, vi la página de clases de coreano en WeLearn y quiero saber más sobre el programa.'],
   ['/clases-de-ingles',   'Hola, vi su página de clases de inglés y quiero conocer el precio y agendar una clase de diagnóstico con tutor.'],
+  ['/preparacion-ielts',  'Hola, vi la página de preparación IELTS y quiero conocer la modalidad y el precio del diagnóstico con tutor.'],
+  ['/preparacion-toefl',  'Hola, vi la página de preparación TOEFL iBT y quiero conocer la modalidad y el precio del diagnóstico con tutor.'],
   ['/preparacion-icfes',  'Hola, vi la página de preparación ICFES inglés en WeLearn y quiero empezar.'],
   ['/miembro-fundador',   'Hola, quiero asegurar mi cupo de Miembro Fundador de coreano en WeLearn. ¿Cuántos cupos quedan?'],
   ['/examenes/ielts',     'Hola, vi la información del IELTS en WeLearn y quiero saber cómo prepararme.'],

@@ -5,9 +5,9 @@ export const LANGUAGE_RESOURCES = {
     classes: '/clases-de-ingles',
     accent: '#1a4fcc',
     exams: [
-      { label: 'IELTS', href: '/examenes/ielts' },
-      { label: 'TOEFL', href: '/examenes/toefl' },
-      { label: 'ICFES Inglés', href: '/examenes/icfes' },
+      { label: 'IELTS', href: '/preparacion-ielts' },
+      { label: 'TOEFL', href: '/preparacion-toefl' },
+      { label: 'ICFES Inglés', href: '/preparacion-icfes' },
     ],
   },
   coreano: {
