@@ -37,9 +37,9 @@ export function ReadingAiFeedback({ text }: { text: string }) {
 
   return (
     <div className={styles.aiReview}>
-      <p><strong>Revisión opcional con IA.</strong> Al pulsar «Revisar mi texto con IA», enviaremos solo tu texto escrito a OpenAI para darte comentarios. Las grabaciones de audio permanecen en este dispositivo y no se envían.</p>
+      <p><strong>Revisión opcional.</strong> Al pulsar «Revisar mi texto», enviaremos tu texto escrito a OpenAI junto con la consigna de esta tarea para darte comentarios. Las grabaciones de audio permanecen en este dispositivo y no se envían.</p>
       <button type="button" className={styles.secondaryButton} onClick={review} disabled={!ready || loading}>
-        {loading ? 'Revisando…' : 'Revisar mi texto con IA'}
+        {loading ? 'Revisando…' : 'Revisar mi texto'}
       </button>
       {!ready && <p className={styles.aiHint}>Escribe 5–7 frases y 25–60 palabras (máximo 700 caracteres) para activar la revisión.</p>}
       <div aria-live="polite">

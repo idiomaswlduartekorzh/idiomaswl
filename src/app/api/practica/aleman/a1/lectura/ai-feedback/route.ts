@@ -1,4 +1,14 @@
 import { AI_MAX_BODY_BYTES, AI_READING_ID, LocalRateLimit, reviewWithOpenAI, validateDraft } from '@/lib/reading/ai-feedback'
+import exercise from '@/data/reading/exercises/de-a1-der-weg-zur-arbeit.json'
+
+const assignmentContext = {
+  language: 'alemán',
+  level: exercise.level.cefr,
+  prompt: exercise.production.prompt.es,
+  objectives: exercise.content.objectives.map((item) => item.es),
+  grammarFocus: exercise.content.grammarFocus,
+  readingText: exercise.content.targetText,
+}
 
 // Prueba local: estos contadores viven en un solo proceso. Antes de publicar,
 // sustituirlos por una cuota duradera asociada a una identidad fiable.
@@ -7,7 +17,7 @@ const total = new LocalRateLimit(20, 24 * 60 * 60 * 1000)
 
 const messages = {
   quota: 'Se alcanzó el límite de revisiones por ahora. Tu texto sigue aquí; inténtalo más tarde.',
-  unavailable: 'La revisión con IA no está disponible ahora. Tu texto sigue aquí; puedes continuar el ejercicio.',
+  unavailable: 'La revisión no está disponible ahora. Tu texto sigue aquí; puedes continuar el ejercicio.',
   invalid_response: 'No pudimos mostrar una revisión fiable. Tu texto sigue aquí; prueba más tarde.',
 }
 
@@ -40,7 +50,7 @@ export async function POST(req: Request) {
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || req.headers.get('x-real-ip') || 'local'
   if (!perIp.consume(ip) || !total.consume('all')) return Response.json({ message: messages.quota }, { status: 429 })
 
-  const result = await reviewWithOpenAI(draft.text, key)
+  const result = await reviewWithOpenAI(draft.text, key, assignmentContext)
   if (!result.ok) return Response.json({ message: messages[result.code] }, { status: result.code === 'quota' ? 429 : 502 })
   return Response.json({ feedback: result.feedback }, { headers: { 'Cache-Control': 'no-store' } })
 }
