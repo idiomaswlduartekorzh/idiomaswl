@@ -31,9 +31,10 @@ tiendas quedan para fases posteriores.
 - `pnpm check:practice-bank`: 8 idiomas y 40 preguntas válidas.
 - `pnpm exec expo config --type public --json`: iOS y Android configurados.
 - `pnpm exec expo export --platform all`: bundles iOS y Android generados.
+- Prueba en iPhone con Expo Go: el usuario abrió WeLearn, inició sesión y vio el inicio.
 - Consultas de solo lectura a la base de producción: columnas requeridas presentes;
   RLS activo en las cinco tablas consultadas.
-- Pendiente: prueba de login, entrega y práctica con una cuenta estudiante en dispositivos
-  reales, revisión visual iOS/Android y builds de distribución.
+- Pendiente: revisar el nuevo catálogo en el iPhone, probar entrega y práctica con una
+  cuenta estudiante, revisión visual Android y builds de distribución.
 
 La carpeta `apps/mobile/dist` y el `.env` local están ignorados por Git.
