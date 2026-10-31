@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "WeLearn",
+    "slug": "idiomaswl-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "idiomaswl",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.idiomaswl.welearn",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.idiomaswl.welearn",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#f6f8fc",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
