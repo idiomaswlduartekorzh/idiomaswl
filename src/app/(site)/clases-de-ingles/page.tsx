@@ -14,28 +14,19 @@ const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
 const WA_GENERAL = wa('Hola, vi su página de clases de inglés. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
-const WA_IELTS   = wa('Hola, necesito preparación para el IELTS. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
-const WA_TOEFL   = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
-const WA_ICFES   = wa('Hola, necesito mejorar mi inglés para el ICFES Saber 11. ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
+const WA_CONVERSACION = wa('Hola, quiero mejorar mi conversación en inglés. ¿Cómo son las clases y cuánto cuesta el diagnóstico con tutor?');
 const WA_TRABAJO = wa('Hola, quiero mejorar mi inglés para trabajo o para comunicarme con fluidez. ¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?');
-const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (FCE). ¿Cuál es el precio y cómo agendo una clase de diagnóstico con tutor?');
+const WA_ESTUDIO = wa('Hola, quiero aprender inglés para estudiar o viajar. ¿Qué ruta me recomiendan y cuánto cuesta el diagnóstico con tutor?');
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de inglés online en Colombia | IELTS y TOEFL',
+  title: 'Clases de inglés online en Colombia | WeLearn',
   description:
-    'Clases de inglés online para toda Colombia. Prepara IELTS, TOEFL, Cambridge B2 First o ICFES con tutor asignado y práctica guiada.',
-  keywords: [
-    'clases de inglés', 'clases de inglés online Colombia', 'preparación IELTS Colombia',
-    'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
-    'clases inglés online', 'IELTS online Colombia', 'TOEFL online Colombia',
-    'Cambridge B2 First Colombia', 'FCE preparación Colombia', 'FCE online Colombia',
-    'inglés para trabajo', 'inglés para migrar',
-  ],
+    'Aprende inglés online con clases en vivo, tutor asignado y una ruta para conversación, trabajo o estudio. Consulta modalidad y precio antes de agendar.',
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles' },
   openGraph: {
-    title: 'Clases de inglés online para IELTS, TOEFL e ICFES',
-    description: 'Preparación guiada para exámenes y objetivos laborales con tutor asignado. Sesión de diagnóstico con tutor paga; consulta el precio antes de agendar.',
+    title: 'Clases de inglés online en Colombia | WeLearn',
+    description: 'Clases de inglés general con tutor asignado y una ruta según tu nivel y objetivo. También ofrecemos preparación de exámenes.',
     url: 'https://www.idiomaswl.com/clases-de-ingles',
   },
 };
@@ -43,14 +34,13 @@ export const metadata: Metadata = {
 // ── JSON-LD ───────────────────────────────────────────────────────────────────
 
 const FAQS = [
-  { q: '¿Dónde puedo presentar el examen IELTS en Bucaramanga?', a: 'En la UNAB, que es la sede avalada por el British Council en Santander. La inscripción y el pago se hacen directamente con el British Council, no en la universidad. Es el examen internacional de inglés más cómodo de presentar desde Bucaramanga, porque no obliga a viajar.' },
-  { q: '¿Puedo presentar el TOEFL iBT en Bucaramanga?', a: 'No nos consta que exista sede de TOEFL iBT en la ciudad, así que cuenta con viajar. Cuidado con una confusión muy común: el TOEFL ITP que se ofrece localmente es un examen diferente, con otros usos, y no reemplaza al iBT que piden las universidades del exterior. Confirma siempre en la fuente oficial antes de pagar.' },
-  { q: '¿Qué nivel de inglés necesito para graduarme de la universidad en Bucaramanga?', a: 'Depende de la universidad y varía bastante: va desde A1 en pregrado en la UIS hasta B2 en la UNAB, pasando por B1 en la UPB, la USTA y la UDES. Las UTS piden B1 en tecnología y B2 en el ciclo profesional. Muchas permiten homologar el requisito con un examen internacional. Confirma tu caso con tu facultad, porque los reglamentos cambian.' },
-  { q: '¿Qué nivel de inglés piden los call centers bilingües en Bucaramanga?', a: 'Hoy el estándar es B2, que en muchas convocatorias se expresa como un 80% de dominio. Es un salto real frente al B1 que se pedía hace unos años. En el área metropolitana operan compañías como TP, Concentrix, Lean Solutions, Accedo, Atento y Solvo, y los cargos bilingües pagan por encima de los monolingües.' },
-  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+  { q: '¿Puedo empezar inglés desde cero?', a: 'Sí. La ruta se ajusta a tu nivel de partida. En la orientación inicial nos cuentas qué necesitas; el diagnóstico con tutor, que es pago, permite definir un plan de clases.' },
+  { q: '¿Las clases de inglés online son en vivo?', a: 'Sí. Las sesiones con tutor se hacen por videollamada y se complementan con materiales de práctica. Consulta horarios e intensidad disponibles antes de elegir un plan.' },
+  { q: '¿Puedo estudiar inglés para trabajo o conversación?', a: 'Sí. Puedes enfocar las clases en conversación, entrevistas, reuniones, viajes u otra meta personal. El tutor ajusta la ruta a tu nivel y objetivo.' },
+  { q: '¿En qué se diferencia inglés general de preparación IELTS o TOEFL?', a: 'Inglés general desarrolla el idioma para comunicarte. Las rutas IELTS y TOEFL añaden práctica de las tareas y criterios de cada examen. Si necesitas una certificación, consulta la página específica de preparación.' },
+  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Ofrecemos preparación para IELTS, TOEFL iBT, Cambridge B2 First e ICFES Saber 11. IELTS, TOEFL e ICFES tienen páginas de preparación específicas; también puedes explorar prácticas y simulacros por examen.' },
   { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
-  { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'El tiempo depende de tu nivel inicial, la puntuación objetivo y las horas de práctica. Un tutor puede evaluar tu punto de partida y proponer una ruta; la sesión con tutor es paga.' },
   { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
   { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión paga con tutor para revisar tu nivel, objetivo y plan. Te informamos el precio y la modalidad antes de agendar.' },
   { q: '¿Cómo se organizan las clases?', a: 'Te asignamos un tutor y una ruta según tu nivel y objetivo. Consulta las modalidades y horarios disponibles antes de elegir un plan.' },
@@ -74,8 +64,8 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Course',
-      name: 'Clases de Inglés — Preparación IELTS, TOEFL e ICFES',
-      description: 'Clases de inglés online con preparación para IELTS, TOEFL e ICFES. Método WeLearn para hispanohablantes.',
+      name: 'Clases de inglés online con tutor',
+      description: 'Clases de inglés general online para conversación, trabajo y estudio, con tutor asignado y una ruta según el nivel de cada estudiante.',
       provider: {
         '@type': 'EducationalOrganization',
         name: 'Idiomas WeLearn',
@@ -84,7 +74,7 @@ const jsonLd = {
       hasCourseInstance: courseInstances('Inglés', 'en'),
     },
     localBusinessNode(
-      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia. Inglés con preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
+      'Clases particulares de idiomas con sede en Bucaramanga y atención online para toda Colombia.'
     ),
     davidNode(
       'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen es lo que dio origen al método de WeLearn.'
@@ -106,44 +96,25 @@ const jsonLd = {
 // ── Data ──────────────────────────────────────────────────────────────────────
 const INTENTS = [
   {
-    icon: '🎓',
-    title: 'Certificación IELTS',
-    target: 'Band 6.5 – 8.0',
-    desc: 'Para estudiar en el exterior, migrar o trabajar en empresas internacionales. Preparación para Academic y General Training.',
-    waUrl: WA_IELTS,
-    simulacro: { label: 'Hacer simulacro IELTS gratis →', href: '/examenes/ielts' },
-  },
-  {
-    icon: '🏛️',
-    title: 'Certificación TOEFL',
-    target: '90 – 110 puntos',
-    desc: 'Para universidades en EE.UU., Canadá y Europa. Estrategias específicas para las cuatro secciones del iBT.',
-    waUrl: WA_TOEFL,
-    simulacro: { label: 'Hacer simulacro TOEFL gratis →', href: '/examenes/toefl' },
-  },
-  {
-    icon: '📚',
-    title: 'ICFES Saber 11',
-    target: 'Nivel B2 – C1',
-    desc: 'Para subir el puntaje en inglés de las pruebas de Estado. Estrategia específica para el componente de inglés del ICFES.',
-    waUrl: WA_ICFES,
-    simulacro: { label: 'Hacer simulacro ICFES gratis →', href: '/examenes/icfes' },
-  },
-  {
-    icon: '🎖️',
-    title: 'Cambridge B2 First (FCE)',
-    target: 'Grade B–C (160+) · Grade A (180+)',
-    desc: 'Certificación reconocida en más de 25,000 organizaciones en 130 países. Válida de por vida. Ideal para trabajo, postgrados y migración al Reino Unido o Australia.',
-    waUrl: WA_FCE,
-    simulacro: { label: 'Hacer simulacro FCE gratis →', href: '/examenes/cambridge-b2/practica/set-1' },
+    icon: '💬',
+    title: 'Conversación en inglés',
+    target: 'Habla y escucha',
+    desc: 'Practica conversaciones reales con un tutor, gana soltura al responder y trabaja pronunciación y comprensión oral desde tu nivel.',
+    waUrl: WA_CONVERSACION,
   },
   {
     icon: '💼',
-    title: 'Inglés para trabajo o vida',
-    target: 'Conversación fluida',
-    desc: 'Para comunicarte con fluidez en el trabajo, viajar o mudarte al exterior. Clases conversacionales con corrección real.',
+    title: 'Inglés para el trabajo',
+    target: 'Reuniones y entrevistas',
+    desc: 'Enfoca tus clases en las situaciones profesionales que necesitas: entrevistas, reuniones, presentaciones o comunicación diaria.',
     waUrl: WA_TRABAJO,
-    simulacro: null,
+  },
+  {
+    icon: '🌍',
+    title: 'Inglés para estudiar y viajar',
+    target: 'Estudio y vida diaria',
+    desc: 'Aprende a leer, entender y comunicarte en contextos académicos y cotidianos, con una ruta ajustada a tu próximo paso.',
+    waUrl: WA_ESTUDIO,
   },
 ];
 
@@ -179,7 +150,7 @@ const PRECIOS = [
     name: 'Plan Preparación',
     price: 'Consultar',
     cadence: '',
-    desc: 'Simulacros ilimitados, material de preparación, feedback escrito por sección y chat con tutor en menos de 24 horas.',
+    desc: 'Material de práctica, feedback escrito por habilidad y chat con tutor. Sin sesiones en vivo.',
     cta: 'Consultar por WhatsApp',
     waUrl: WA_GENERAL,
     featured: true,
@@ -198,7 +169,7 @@ const PRECIOS = [
 const PAQUETES_HORAS = [
   { label: '4 horas', desc: 'Para reforzar un área específica o probar WeLearn sin compromiso mensual.', badge: null },
   { label: '10 horas', desc: 'El más popular. Cubre una unidad completa con mejor precio por hora.', badge: 'Más popular' },
-  { label: '20 horas', desc: 'Preparación seria de IELTS o TOEFL al mejor precio por hora disponible.', badge: 'Mejor precio/hora' },
+  { label: '20 horas', desc: 'Para avanzar en tu objetivo con más tiempo de práctica y tutoría.', badge: 'Mejor precio/hora' },
 ];
 
 const WA_PAQUETE = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
@@ -254,11 +225,12 @@ export default function ClasesDeInglesPage() {
               marginBottom: '1.25rem',
               color: 'var(--ink)',
             }}>
-              Clases de inglés online<br />
-              para <span style={{ color: 'var(--accent)' }}>IELTS, TOEFL e ICFES.</span>
+              Clases de inglés online<br />{' '}
+              <span style={{ color: 'var(--accent)' }}>para hablarlo y usarlo.</span>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '2rem', maxWidth: 440 }}>
-              Aprende con tutor asignado y un plan para tu examen, trabajo o conversación.
+              Aprende desde tu nivel con clases en vivo y tutor asignado. Trabaja conversación,
+              comprensión y el inglés que necesitas para estudiar, viajar o avanzar en tu trabajo.
               La orientación inicial por chat es gratis. La sesión de diagnóstico con tutor es paga;
               consulta su precio antes de agendar.
             </p>
@@ -270,8 +242,8 @@ export default function ClasesDeInglesPage() {
                 </svg>
                 Consultar ruta y precio
               </a>
-              <Link href="/examenes/ielts" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
-                Ver simulacro IELTS →
+              <Link href="/clases-de-ingles-bucaramanga" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
+                ¿Buscas clases en Bucaramanga? →
               </Link>
             </div>
           </div>
@@ -298,10 +270,10 @@ export default function ClasesDeInglesPage() {
         <div className="wrap">
           <ul>
             <li>✓ Clases con tutor asignado</li>
-            <li>✓ Preparación IELTS</li>
-            <li>✓ Preparación TOEFL iBT</li>
-            <li>✓ Preparación ICFES Inglés</li>
-            <li>✓ Bucaramanga · Todo Colombia</li>
+            <li>✓ Clases en vivo por videollamada</li>
+            <li>✓ Conversación y trabajo</li>
+            <li>✓ Ruta según tu nivel</li>
+            <li>✓ Desde Colombia y el exterior</li>
           </ul>
         </div>
       </div>
@@ -322,11 +294,11 @@ export default function ClasesDeInglesPage() {
       <section className="wlh-section wlh-section--alt">
         <div className="wrap">
           <p className="wlh-section-eyebrow">01 — ¿Para qué necesitas el inglés?</p>
-          <h2 className="wlh-section-h2">Cada objetivo, una preparación específica.</h2>
+          <h2 className="wlh-section-h2">Elige dónde quieres usar tu inglés.</h2>
           <p className="wlh-section-desc">
-            No todas las clases de inglés son iguales. En Idiomas WeLearn — con tutores en Bucaramanga y clases online en Colombia — tu plan de estudio depende de exactamente lo que necesitas lograr.
+            Tu plan de clases online parte de tu nivel y de lo que necesitas hacer con el idioma. El tutor adapta la práctica y revisa contigo los avances.
           </p>
-          <div className={s.grid4} style={{ marginTop: '2.5rem' }}>
+          <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
             {INTENTS.map(intent => (
               <div key={intent.title} className={s.intentCard}>
                 <span style={{ fontSize: '2rem', lineHeight: 1 }}>{intent.icon}</span>
@@ -340,20 +312,16 @@ export default function ClasesDeInglesPage() {
                   {intent.desc}
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.25rem' }}>
-                  <a href={intent.waUrl} target="_blank" rel="noopener noreferrer" className={s.waBtnSm}>
-                    Consultar ruta y precio →
-                  </a>
-                  {intent.simulacro && (
-                    <Link
-                      href={intent.simulacro.href}
-                      style={{ fontSize: '0.8rem', color: 'var(--accent)', textAlign: 'center', textDecoration: 'underline', textUnderlineOffset: 3 }}
-                    >
-                      {intent.simulacro.label}
-                    </Link>
-                  )}
+                  <a href={intent.waUrl} target="_blank" rel="noopener noreferrer" className={s.waBtnSm}>Consultar ruta y precio →</a>
                 </div>
               </div>
             ))}
+          </div>
+          <div className={s.examPaths}>
+            <strong>¿Necesitas preparar un examen?</strong>
+            <Link href="/preparacion-ielts">IELTS →</Link>
+            <Link href="/preparacion-toefl">TOEFL iBT →</Link>
+            <Link href="/preparacion-icfes">ICFES Inglés →</Link>
           </div>
         </div>
       </section>
@@ -484,7 +452,7 @@ export default function ClasesDeInglesPage() {
       <section className="wlh-section">
         <div className="wrap">
           <p className="wlh-section-eyebrow">04 — Resultados</p>
-          <h2 className="wlh-section-h2">Estudiantes que alcanzaron su puntaje.</h2>
+          <h2 className="wlh-section-h2">Experiencias de estudiantes WeLearn.</h2>
           <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
             {TESTIMONIALS.map(t => (
               <div key={t.name} className={s.testimonialCard}>
@@ -515,83 +483,27 @@ export default function ClasesDeInglesPage() {
         </div>
       </section>
 
-      {/* ── SIMULACRO HOOK ───────────────────────────────────────────────── */}
-      {/* ── BUCARAMANGA (SEO LOCAL) ─────────────────────────────────────── */}
-      {/* ══════════════ EXÁMENES EN BUCARAMANGA (SEO local + AEO) ══════════════ */}
-      <section className="wlh-section">
-        <div className="wrap">
-          <p className="wlh-section-eyebrow">Dónde se presenta cada examen</p>
-          <h2 className="wlh-section-h2">El IELTS sí se presenta en Bucaramanga. El TOEFL iBT no.</h2>
-          <p className="wlh-section-desc">
-            Es una diferencia que cambia el plan y el presupuesto, y casi nadie la explica antes de
-            que la gente pague la inscripción.
-          </p>
-          <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
-            <div className={s.intentCard}>
-              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>IELTS · en la ciudad</p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                Se aplica en Bucaramanga, en la UNAB, que es la sede avalada por el British Council
-                en Santander. La inscripción y el pago se hacen con el British Council, no en la
-                universidad. Es el examen más cómodo de presentar desde aquí.
-              </p>
-            </div>
-            <div className={s.intentCard}>
-              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>TOEFL iBT · toca viajar</p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                No confirmamos ninguna sede de TOEFL iBT en Bucaramanga. Ojo con una confusión
-                frecuente: el TOEFL ITP que se ofrece localmente es un examen distinto, con otros
-                usos, y no reemplaza al iBT que piden las universidades del exterior.
-              </p>
-            </div>
-            <div className={s.intentCard}>
-              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>Cambridge e ICFES</p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                El Cambridge B2 First entrega un certificado que no caduca. El ICFES es otra cosa:
-                mide solo comprensión lectora y su nivel más alto es B1, así que no sirve como
-                certificación internacional.
-              </p>
-            </div>
-          </div>
-          <p className="wlh-section-desc" style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
-            Las sedes, las fechas y los valores cambian cada año. Confirma siempre en la fuente
-            oficial del examen antes de inscribirte.
-          </p>
-        </div>
-      </section>
-
-      {/* ══════════════ REQUISITO DE GRADO (SEO local) ══════════════ */}
+      {/* Inglés general: contenido principal de esta ruta. Las consultas locales y de examen tienen páginas propias. */}
       <section className="wlh-section wlh-section--alt">
         <div className="wrap">
-          <p className="wlh-section-eyebrow">Universidades de Bucaramanga</p>
-          <h2 className="wlh-section-h2">¿Qué nivel de inglés te exigen para graduarte?</h2>
+          <p className="wlh-section-eyebrow">Inglés para usarlo</p>
+          <h2 className="wlh-section-h2">Aprende inglés para hablar, entender y avanzar.</h2>
           <p className="wlh-section-desc">
-            No es el mismo en todas, y la diferencia es grande: hay universidades de la ciudad que
-            piden A1 y otras que piden B2. Saber cuál te aplica define cuántos meses necesitas.
+            Tu punto de partida puede ser desde cero o una base que quieres fortalecer. El tutor ajusta
+            las clases a tu objetivo y combina explicación, práctica, corrección y revisión del progreso.
           </p>
           <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
             <div className={s.intentCard}>
-              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>El rango va de A1 a B2</p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                La UIS pide A1 en pregrado —y sube a A2 en maestría y B1 en doctorado—, mientras
-                que la UNAB exige B2. La UPB, la USTA y la UDES se mueven alrededor de B1, y las
-                UTS piden B1 en tecnología y B2 en el ciclo profesional.
-              </p>
+              <h3>Conversación cotidiana</h3>
+              <p>Practica situaciones reales y recibe correcciones para expresarte con más claridad y seguridad.</p>
             </div>
             <div className={s.intentCard}>
-              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>Casi todas aceptan certificados externos</p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                Varias homologan el requisito con un examen internacional en lugar de obligarte a
-                cursar todos los niveles. Si ya ibas a presentar el IELTS o el TOEFL, puedes
-                resolver dos cosas con un solo examen.
-              </p>
+              <h3>Inglés para el trabajo</h3>
+              <p>Enfoca las sesiones en entrevistas, reuniones, mensajes y vocabulario de tu contexto laboral.</p>
             </div>
             <div className={s.intentCard}>
-              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>Verifica tu caso antes de pagar</p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                Los reglamentos cambian y cada programa tiene sus excepciones. Confirma con tu
-                facultad qué nivel te aplica y qué certificados acepta; nosotros armamos el plan
-                para llegar ahí en el tiempo que tengas.
-              </p>
+              <h3>Comprensión y base del idioma</h3>
+              <p>Trabaja escucha, lectura, vocabulario y gramática como apoyo para comunicarte mejor.</p>
             </div>
           </div>
         </div>
@@ -654,43 +566,16 @@ export default function ClasesDeInglesPage() {
             Del blog WeLearn
           </p>
           <h2 style={{ fontSize: '1.6rem', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 1.75rem' }}>
-            Guías gratuitas de inglés y certificaciones
+            Guías para aprender y usar el inglés
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem' }}>
             {[
-              { cat: 'IELTS', title: 'Cómo sacar Band 7 en el IELTS', slug: 'como-sacar-band-7-en-ielts' },
-              { cat: 'IELTS', title: 'IELTS Reading: estrategias para alcanzar Band 7', slug: 'ielts-reading-estrategias-para-band-7' },
-              { cat: 'IELTS', title: 'IELTS Speaking: cómo preparar las 3 partes', slug: 'ielts-speaking-como-preparar-las-3-partes' },
-              { cat: 'TOEFL', title: 'TOEFL iBT: guía completa para colombianos', slug: 'toefl-ibt-preparacion-guia-completa' },
-              { cat: 'IELTS', title: 'IELTS vs TOEFL: ¿cuál es mejor para ti?', slug: 'ielts-vs-toefl-cual-tomar-en-colombia' },
               { cat: 'Inglés', title: 'Niveles de inglés A1–C2: qué significa cada uno', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
-              { cat: 'Trabajo', title: 'Inglés para empresas multinacionales', slug: 'ingles-para-trabajar-en-empresas-multinacionales' },
               { cat: 'Speaking', title: 'Por qué te bloqueas al hablar inglés y cómo superarlo', slug: 'como-mejorar-el-ingles-hablado' },
-              { cat: 'Migración', title: 'IELTS para migrar a Canadá: qué puntaje necesitas por visa', slug: 'migrar-a-canada-requisitos-ielts-ingles' },
-              { cat: 'IELTS', title: 'IELTS Listening: los 7 errores más comunes y cómo evitarlos', slug: 'ielts-listening-errores-comunes' },
-              { cat: 'IELTS', title: 'Estudiar en Irlanda con IELTS: universidades, costos y puntaje mínimo', slug: 'ielts-para-estudiar-en-irlanda' },
-              { cat: 'TOEFL', title: 'TOEFL iBT vs TOEFL Essentials: diferencias y cuál elegir en 2026', slug: 'toefl-ibt-vs-toefl-essentials-cual-elegir-2026' },
-              { cat: 'Inglés', title: 'Inglés B2–C1 para trabajo remoto: lo que necesitas para empleadores globales', slug: 'ingles-b2-c1-para-trabajo-remoto-global' },
-              { cat: 'Inglés', title: 'Inglés para entrevistas en multinacionales: estructura STAR y frases clave', slug: 'ingles-para-entrevistas-de-trabajo-en-multinacionales' },
-              { cat: 'Migración', title: 'Inglés para Express Entry Canadá: CLB, IELTS y cómo maximizar tu CRS', slug: 'ingles-para-canada-express-entry-requisitos-2026' },
-              { cat: 'IELTS', title: 'IELTS Academic vs General Training: cuál debes tomar y por qué', slug: 'ielts-academic-vs-general-training-cual-elegir' },
-              { cat: 'IELTS', title: 'IELTS de banda 6 a 7: qué cambia y cómo cruzar esa barrera', slug: 'ielts-de-banda-6-a-banda-7-que-cambia' },
-              { cat: 'Inglés', title: 'Inglés técnico para programadores: vocabulario, daily meetings y entrevistas', slug: 'ingles-tecnico-para-programadores-y-desarrolladores' },
-              { cat: 'IELTS', title: 'IELTS Listening Secciones 3 y 4: estrategias para banda 7+', slug: 'ielts-listening-sections-3-4-estrategias-avanzadas' },
-              { cat: 'IELTS', title: 'IELTS Writing Task 2: tipos de ensayo, estructura y errores comunes', slug: 'ielts-writing-task-2-tipos-de-ensayo-y-estructura' },
-              { cat: 'TOEFL', title: 'TOEFL iBT 2026: estructura completa, puntajes y estrategia por sección', slug: 'toefl-ibt-estructura-completa-y-estrategia-2026' },
-              { cat: 'Inglés', title: 'Inglés para médicos: residencia en Estados Unidos y USMLE', slug: 'ingles-para-residencia-medica-en-estados-unidos' },
-              { cat: 'Migración', title: 'Migrar a Nueva Zelanda: requisitos de inglés y tipos de visa 2026', slug: 'migrar-a-nueva-zelanda-ingles-requisitos-visa-2026' },
-              { cat: 'IELTS', title: 'IELTS Speaking Parte 2: cómo hablar 2 minutos sobre cualquier tema', slug: 'ielts-speaking-parte-2-cue-card-como-hablar-2-minutos' },
-              { cat: 'Inglés', title: 'Inglés para profesionales de salud: médicos, enfermeros y fisioterapeutas', slug: 'ingles-para-profesionales-de-salud-colombia' },
-              { cat: 'Migración', title: 'Migrar a España: nivel de inglés que necesitas realmente', slug: 'migrar-a-espana-nivel-ingles-y-espanol-que-necesitas' },
-              { cat: 'IELTS', title: 'IELTS vs. Duolingo English Test: diferencias y cuál aceptan las universidades', slug: 'ielts-vs-duolingo-english-test-diferencias' },
-              { cat: 'IELTS', title: 'IELTS General Training para migración: diferencias con Academic', slug: 'ielts-general-training-para-migracion-vs-academic' },
-              { cat: 'IELTS', title: 'Vocabulario IELTS para banda 7: temas frecuentes y cómo dominarlos', slug: 'ielts-vocabulario-para-banda-7-temas-frecuentes' },
-              { cat: 'Inglés', title: 'Inglés para negocios internacionales: negociaciones y contratos', slug: 'ingles-para-negociaciones-y-contratos-internacionales' },
-              { cat: 'Migración', title: 'Migrar al Reino Unido 2026: requisitos de inglés por tipo de visa', slug: 'migrar-reino-unido-requisitos-ingles-visa-2026' },
-              { cat: 'IELTS', title: 'IELTS Reading: skimming, scanning y técnicas para ahorrar tiempo', slug: 'ielts-reading-skimming-scanning-tecnicas' },
-              { cat: 'Inglés', title: 'Inglés jurídico para abogados: contratos, arbitraje y documentos legales', slug: 'ingles-para-abogados-y-profesionales-del-derecho' },
+              { cat: 'Trabajo', title: 'Inglés para empresas multinacionales', slug: 'ingles-para-trabajar-en-empresas-multinacionales' },
+              { cat: 'Inglés', title: 'Inglés B2–C1 para trabajo remoto', slug: 'ingles-b2-c1-para-trabajo-remoto-global' },
+              { cat: 'Inglés', title: 'Inglés para entrevistas en multinacionales', slug: 'ingles-para-entrevistas-de-trabajo-en-multinacionales' },
+              { cat: 'Inglés', title: 'Inglés técnico para programadores', slug: 'ingles-tecnico-para-programadores-y-desarrolladores' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
@@ -720,7 +605,7 @@ export default function ClasesDeInglesPage() {
             Consultar ruta y precio
           </a>
           <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
-            Respuesta en menos de 2 horas · Lun–Sáb 7 am–8 pm
+            Consulta la disponibilidad y los horarios actuales antes de agendar.
           </p>
         </div>
       </section>

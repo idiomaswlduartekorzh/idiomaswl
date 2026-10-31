@@ -24,7 +24,8 @@ const GOOGLE_PROFILE = {
 };
 
 const LANDINGS = [
-  { slug: 'clases-de-ingles', language: 'inglés', exams: ['IELTS', 'TOEFL', 'FCE', 'ICFES'], titleLocation: 'Colombia' },
+  // La landing de inglés general atiende clases online; IELTS y TOEFL tienen rutas comerciales propias.
+  { slug: 'clases-de-ingles', language: 'inglés', exams: [], titleLocation: 'Colombia' },
   { slug: 'clases-de-coreano', language: 'coreano', exams: ['TOPIK'] },
   { slug: 'clases-de-italiano', language: 'italiano', exams: ['CILS', 'CELI', 'Ciudadanía'], faqSingleSource: true },
   { slug: 'clases-de-portugues', language: 'portugués', exams: ['Celpe-Bras'] },
@@ -110,7 +111,7 @@ for (const { slug, language, exams, faqSingleSource, titleLocation = 'Bucaramang
     }
     if (!/online/i.test(title)) warn(slug, `el title perdió online: «${title}».`);
     if (title.length > TITLE_MAX) fail(slug, `el title mide ${title.length}; el máximo es ${TITLE_MAX}.`);
-    if (!exams.some((exam) => title.toLowerCase().includes(exam.toLowerCase()))) {
+    if (exams.length > 0 && !exams.some((exam) => title.toLowerCase().includes(exam.toLowerCase()))) {
       warn(slug, `el title ya no nombra un examen de ${language} (${exams.join(', ')}).`);
     }
   }

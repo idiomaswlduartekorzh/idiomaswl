@@ -417,7 +417,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
         body: [
           'Aquí hay una ventaja concreta frente a otros exámenes: <strong>el IELTS sí se aplica en Bucaramanga</strong>, en la UNAB, sede avalada por el British Council en Santander.',
           'La inscripción y el pago se hacen con el British Council, no con la universidad. La UNAB es la sede donde se presenta el examen.',
-          'Es una diferencia práctica que pesa al decidir: el TOEFL iBT no se aplica en Bucaramanga y obliga a desplazarse.',
+          'La UPB Bucaramanga también se presenta como centro aplicador del TOEFL iBT. Antes de elegir examen, confirma en la agenda oficial de ETS qué sede y fechas aparecen disponibles para ti.',
         ],
       },
       {
@@ -453,6 +453,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     sources: [
       { label: 'IELTS — Tipos de examen: Academic y General Training', url: 'https://ielts.org/take-a-test/test-types' },
       { label: 'British Council — Qué IELTS necesitas', url: 'https://takeielts.britishcouncil.org/take-ielts/which-ielts-test' },
+      { label: 'British Council Colombia — Sedes y fechas IELTS', url: 'https://www.britishcouncil.co/examen-ingles/ielts/fechas-precios-ubicaciones' },
     ],
     related: [
       { href: '/blog/ielts-bucaramanga-centros-de-examen-y-registro', label: 'IELTS en Bucaramanga', note: 'La sede, cómo inscribirse y qué llevar el día del examen.' },
@@ -460,7 +461,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { href: '/blog/como-sacar-band-7-en-ielts', label: 'Cómo llegar a Band 7', note: 'Lo que separa un 6,5 de un 7 en cada destreza.' },
       { href: '/practica/ingles/b1/escritura', label: 'Escritura guiada', note: 'La destreza donde más gente se queda corta del mínimo por sección.' },
       { href: '/practica/ingles/b1/habla', label: 'Expresión oral', note: 'Estructuras y pronunciación modelo para el Speaking.' },
-      { href: '/clases-de-ingles-bucaramanga', label: 'Preparación en Bucaramanga', note: 'Presencial en el barrio Sotomayor u online, con diagnóstico de pago.' },
+      { href: '/preparacion-ielts', label: 'Preparación IELTS con tutor', note: 'Academic o General Training, online o en Bucaramanga según disponibilidad.' },
     ],
     checked: 'agosto de 2026',
   },
@@ -501,9 +502,9 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       {
         h: 'Dónde se presenta si estás en Bucaramanga',
         body: [
-          'Aquí hay una confusión que sale cara. <strong>El TOEFL iBT no se aplica en Bucaramanga</strong>, así que hay que contar con desplazarse.',
+          'La <strong>UPB Bucaramanga informa que es centro aplicador del TOEFL iBT</strong>. Eso no garantiza cupo para todas las fechas: comprueba la sede y la disponibilidad en tu cuenta de ETS antes de planificar el examen.',
           'Y ojo con esto: el <strong>TOEFL ITP</strong> que se ofrece localmente <strong>es un examen distinto</strong>. Mide otra cosa, se usa para clasificación interna de instituciones y <strong>no sirve donde te piden el iBT</strong>. Confirma cuál te están pidiendo antes de inscribirte en nada.',
-          'Si lo que necesitas es un examen internacional que sí se aplique en Bucaramanga, el <strong>IELTS</strong> se presenta aquí, en la UNAB, como sede avalada por el British Council.',
+          'El <strong>IELTS</strong> también tiene información de presentación local en la UNAB. Consulta las agendas oficiales de ambos exámenes para comparar fechas y requisitos antes de pagar.',
         ],
       },
       {
@@ -522,15 +523,17 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { q: '¿Cómo convierto mi banda del TOEFL a la escala de 120?', a: 'Según la tabla oficial de ETS: banda 6 equivale a 114 o más, 5,5 desde 107, 5 desde 95, 4,5 desde 86, 4 desde 72, 3,5 desde 58, 3 desde 44, 2,5 desde 34, 2 desde 24, 1,5 desde 12 y 1 desde 0. Si tu universidad pide TOEFL 100, necesitas al menos banda 5.' },
       { q: '¿Cuánto dura el TOEFL iBT?', a: 'Aproximadamente dos horas. El examen es adaptativo, así que el número exacto de preguntas y el tiempo por sección varían según cómo vayas respondiendo.' },
       { q: '¿Cuánto tiempo son válidos los resultados del TOEFL?', a: 'Dos años desde la fecha del examen. Pasado ese plazo ETS no reporta ni envía los puntajes.' },
-      { q: '¿Se puede presentar el TOEFL iBT en Bucaramanga?', a: 'No. El TOEFL iBT no se aplica en Bucaramanga, hay que desplazarse a otra ciudad. Si necesitas un examen internacional que sí se aplique aquí, el IELTS se presenta en la UNAB como sede avalada por el British Council.' },
+      { q: '¿Se puede presentar el TOEFL iBT en Bucaramanga?', a: 'La UPB Bucaramanga informa que es centro aplicador del TOEFL iBT. Confirma en la agenda oficial de ETS las sedes, fechas y cupos disponibles para tu inscripción.' },
       { q: '¿El TOEFL ITP sirve igual que el iBT?', a: 'No, son exámenes distintos. El ITP se usa para clasificación interna de instituciones y no reemplaza al iBT donde te piden el iBT. Es un error frecuente y caro: confirma cuál te están exigiendo antes de inscribirte.' },
       { q: '¿Los simulacros de esta página son gratis?', a: 'Sí. Puedes completar los 20 recorridos de las cuatro secciones sin pagar. Son simulacros originales de WeLearn, de formato fijo y no oficiales; no reproducen el motor adaptativo de ETS.' },
       { q: '¿Qué sección del TOEFL es la más difícil?', a: 'Depende de tu perfil, pero la expresión oral es la que más se atraganta a los hispanohablantes: se graba, hay muy poco tiempo de preparación y no se puede corregir sobre la marcha. Es la que más mejora con práctica en voz alta.' },
-      { q: '¿TOEFL o IELTS?', a: 'Si tu institución acepta los dos, pesa lo práctico: el IELTS se aplica en Bucaramanga y el TOEFL iBT no. Si te piden uno por nombre, no hay decisión que tomar. Y verifica siempre el requisito exacto antes de pagar.' },
+      { q: '¿TOEFL o IELTS?', a: 'Si tu institución acepta los dos, compara el formato, el requisito de puntuación y las fechas disponibles en las agendas oficiales. La UPB Bucaramanga informa que es centro aplicador del TOEFL iBT; verifica cupos antes de decidir.' },
     ],
     sources: [
       { label: 'ETS — Comprender los puntajes del TOEFL iBT', url: 'https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html' },
       { label: 'ETS — Contenido y secciones del TOEFL iBT', url: 'https://www.ets.org/toefl/test-takers/ibt/about/content.html' },
+      { label: 'UPB Bucaramanga — Centro aplicador TOEFL iBT', url: 'https://www.upb.edu.co/es/programas/centro-lenguas/portafolio-servicios-bucaramanga' },
+      { label: 'ETS — Opciones y sedes para presentar TOEFL iBT', url: 'https://www.ets.org/toefl/test-takers/ibt/about/testing-options.html' },
     ],
     related: [
       { href: '/practica/toefl', label: 'Mapa de práctica TOEFL 2026', note: 'Elige Reading, Listening, Writing o Speaking y entrena la tarea concreta que te frena.' },
@@ -538,7 +541,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { href: '/practica/toefl/speaking', label: 'TOEFL Speaking 2026', note: 'Listen and Repeat y Take an Interview con práctica de grabación.' },
       { href: '/examenes/ielts', label: 'Simulacros de IELTS', note: 'El examen que sí se aplica en Bucaramanga, por si te sirven los dos.' },
       { href: '/blog/ielts-vs-toefl-cual-tomar-en-colombia', label: 'IELTS o TOEFL en Colombia', note: 'La comparación completa, con lo que pesa de verdad al elegir.' },
-      { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Cómo preparamos el TOEFL en WeLearn, presencial u online.' },
+      { href: '/preparacion-toefl', label: 'Preparación TOEFL con tutor', note: 'Clases y práctica de las tareas vigentes, online o en Bucaramanga.' },
     ],
     checked: 'agosto de 2026',
   },
@@ -689,7 +692,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { href: '/practica/icfes-saber-11/sinonimos-inferencia', label: 'Sinónimos e inferencia', note: 'El tipo de pregunta que más se falla en la segunda mitad del examen.' },
       { href: '/practica/icfes-saber-11/gramatica-conjunciones', label: 'Conectores y conjunciones', note: 'Para no perder puntos en los textos largos del final.' },
       { href: '/blog/icfes-ingles-plan-estudio-3-meses', label: 'Plan de estudio de tres meses', note: 'Qué hacer cada semana si tienes un trimestre por delante.' },
-      { href: '/preparacion-icfes', label: 'Preparación con profesor', note: 'Cómo lo trabajamos en WeLearn, presencial en Bucaramanga u online.' },
+      { href: '/preparacion-icfes', label: 'Preparación con profesor', note: 'Cómo lo trabajamos en WeLearn en clases online.' },
     ],
     checked: '8 de septiembre de 2026',
     checkedISO: '2026-09-08',

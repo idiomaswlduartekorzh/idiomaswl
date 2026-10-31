@@ -9,16 +9,6 @@ export const metadata: Metadata = {
   title: 'Preparación ICFES Inglés con tutor | WeLearn',
   description:
     'Preparación para Inglés Saber 11 con diagnóstico, plan por habilidades y clases con tutor. Practica aparte con el catálogo gratuito de simulacros ICFES.',
-  keywords: [
-    'preparación inglés ICFES',
-    'Saber 11 inglés',
-    'mejorar puntaje ICFES inglés',
-    'clases inglés ICFES Colombia',
-    'ICFES inglés nivel B1',
-    'preparación Saber 11 inglés',
-    'WeLearn ICFES',
-    'inglés ICFES Bucaramanga',
-  ],
   openGraph: {
     title: 'Preparación ICFES Inglés con tutor | WeLearn',
     description:
@@ -50,7 +40,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Necesito saber inglés para empezar la preparación?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. Empezamos desde tu nivel actual, sea A1 o B1. Primero hacemos un simulacro de diagnóstico y diseñamos un plan según tus puntos débiles específicos.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'No. Empezamos desde tu nivel actual, incluso Pre A1. Primero hacemos un simulacro de diagnóstico y diseñamos un plan según tus puntos débiles específicos.' },
     },
     {
       '@type': 'Question',
@@ -108,15 +98,15 @@ const TIPS = [
   {
     icon: '📖',
     title: 'Comprensión de lectura',
-    pct: '60%',
-    desc: 'La mayoría del examen. Textos de 200–400 palabras con preguntas de inferencia, vocabulario en contexto y estructura narrativa.',
+    pct: 'Partes 5 y 6',
+    desc: 'La parte 5 evalúa comprensión literal de un texto; la parte 6, lectura inferencial e intención del autor.',
     tactics: ['Lee el enunciado antes del texto', 'Identifica la idea principal de cada párrafo', 'El vocabulario se deduce del contexto — no adivines'],
   },
   {
     icon: '💬',
-    title: 'Conversacional y uso del idioma',
-    pct: '40%',
-    desc: 'Diálogos cortos, completar oraciones, preguntas sobre uso correcto de gramática y expresiones cotidianas.',
+    title: 'Léxico, conversación y gramática',
+    pct: 'Partes 1–4 y 7',
+    desc: 'Se relacionan palabras con descripciones, se interpretan avisos y diálogos y se completan textos con opciones de gramática y vocabulario.',
     tactics: ['Domina los tiempos verbales básicos', 'Conectores (however, although, therefore)', 'Vocabulario temático: trabajo, familia, viajes'],
   },
 ];
@@ -146,7 +136,7 @@ const FAQS = [
   },
   {
     q: '¿Necesito saber inglés para empezar la preparación?',
-    a: 'No. Empezamos desde tu nivel actual, sea A1 o B1. Primero hacemos un simulacro de diagnóstico y diseñamos un plan según tus puntos débiles específicos.',
+    a: 'No. Empezamos desde tu nivel actual, incluso Pre A1. Primero hacemos un simulacro de diagnóstico y diseñamos un plan según tus puntos débiles específicos.',
   },
   {
     q: '¿Puedo prepararme para el ICFES si vivo fuera de Bucaramanga?',
@@ -173,7 +163,7 @@ export default function PreparacionICFESPage() {
             <div className={s.heroText}>
               <p className={s.eyebrow}>ICFES Saber 11 · Inglés</p>
               <h1 className={s.h1}>
-                Preparación de inglés<br />
+                Preparación de inglés<br />{' '}
                 para el <span className={s.accent}>ICFES Saber 11.</span>
               </h1>
               <p className={s.heroSub}>
@@ -283,6 +273,9 @@ export default function PreparacionICFESPage() {
                 </div>
               ))}
             </div>
+            <p className={s.sectionSub}>
+              Fuente: <a href="https://www.icfes.gov.co/evaluaciones-icfes/saber-11/guia-de-orientacion-examen-saber-11/" target="_blank" rel="noopener noreferrer">guía de orientación Saber 11 del ICFES</a>. La distribución oficial se describe por siete partes; no hay un reparto único de lectura frente a conversación.
+            </p>
           </div>
         </section>
 
@@ -379,6 +372,9 @@ export default function PreparacionICFESPage() {
                 </details>
               ))}
             </div>
+            <p className={s.sectionSub}>
+              Si también buscas reforzar el idioma fuera del examen, conoce nuestras <Link href="/clases-de-ingles">clases de inglés online</Link> o los <Link href="/clases-de-ingles-bucaramanga">cursos de inglés en Bucaramanga</Link>.
+            </p>
           </div>
         </section>
 

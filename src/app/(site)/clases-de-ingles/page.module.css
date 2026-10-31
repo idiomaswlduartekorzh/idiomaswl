@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
   align-items: center;
-  padding: 4rem 0 3rem;
+  padding: 4rem 32px 3rem;
 }
 
 .heroPhoto {
@@ -167,6 +167,19 @@
   background: #1da851;
 }
 
+.examPaths {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem 1.25rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.examPaths a { color: var(--accent-action, var(--accent)); font-weight: 700; }
+
 /* ── CTA final ──────────────────────────────────────────────────────── */
 .ctaFinal {
   text-align: center;
@@ -193,7 +206,7 @@
   .hero {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2.5rem 0 2rem;
+    padding: 2.5rem 32px 2rem;
   }
   .heroPhoto {
     max-width: 100%;

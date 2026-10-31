@@ -98,6 +98,10 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   const icfesModeCount = slug === 'icfes'
     ? icfesResourceCount + exam.mocks.filter(mock => hasGuidedMock(mock.id) || hasGuidedWorkbook(mock.id)).length
     : 0;
+  const commercialHref = slug === 'ielts' ? '/preparacion-ielts'
+    : slug === 'toefl' ? '/preparacion-toefl'
+      : slug === 'icfes' ? '/preparacion-icfes'
+        : language?.classes;
   const sectionLinks = [
     { href: '#resumen', label: 'Resumen' },
     { href: '#estructura', label: 'Estructura' },
@@ -138,9 +142,9 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
       {language ? (
         <nav className={styles.languageLinks} aria-label={`Más recursos de ${language.name}`}>
-          <span>¿Quieres reforzar tu {language.name} antes del simulacro?</span>
+          <span>{commercialHref !== language.classes ? `¿Quieres preparar ${exam.name} con un tutor?` : `¿Quieres reforzar tu ${language.name} antes del simulacro?`}</span>
           <Link href={language.practice}>Ejercicios por nivel →</Link>
-          <Link href={language.classes}>Clases con tutor →</Link>
+          <Link href={commercialHref ?? language.classes}>{commercialHref !== language.classes ? 'Ver preparación con tutor →' : 'Clases con tutor →'}</Link>
         </nav>
       ) : null}
 

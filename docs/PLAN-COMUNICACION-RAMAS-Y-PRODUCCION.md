@@ -5,6 +5,44 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Separación de intención comercial de inglés — 31 de octubre de 2026
+
+Rama `codex/english-commercial-seo-20261031`, creada desde `origin/main@a6463926`
+y actualizada contra el mismo `main` antes de integrar. Estado:
+`LISTO_PARA_INTEGRAR`, pendiente de acceso de escritura al repositorio canónico,
+PR, CI, deployment de Vercel y smoke productivo. No se declara desplegada.
+
+`/clases-de-ingles` se concentra en clases de inglés general online para
+conversación, trabajo, estudio y viajes. `/clases-de-ingles-bucaramanga` conserva
+la intención local y dirige a rutas específicas de examen. Se agregan las páginas
+comerciales `/preparacion-ielts` y `/preparacion-toefl`, con contenido propio,
+canonicals y CTA diferenciados; `/preparacion-icfes` ya existía. Los hubs
+`/examenes/*` mantienen la intención de simulacro gratuito y enlazan a las
+preparaciones con tutor. No se crean variantes locales duplicadas de cada examen.
+
+La verificación local pasó: catálogo protegido de 465 temas, TypeScript, ESLint
+dirigido, controles de landings, navegación y snippets SEO, build completo de
+Next.js y revisión visual en navegador de las páginas de inglés general,
+Bucaramanga, IELTS y TOEFL. No hay migración ni variables nuevas. Se acortó un
+título portugués preexistente que excedía el límite del control de snippets.
+
+Auditoría SEO focalizada del HTML de producción local: las cinco rutas comerciales
+tienen un solo H1, título y descripción propios, canonical a sí mismas, robots
+indexables y datos estructurados válidos. Los títulos miden 44–53 caracteres y
+las descripciones 135–152; estas longitudes son un control interno, no una
+garantía de que Google muestre el fragmento tal cual. Se eliminó `meta keywords`
+del layout global porque Google lo ignora. En la página ICFES se sustituyó un
+reparto 60/40 no respaldado por la guía oficial de siete partes, se añadió la
+fuente del ICFES y se enlazó la ruta de inglés general. En una guía de TOEFL se
+corrigió la afirmación de que no existe sede iBT en Bucaramanga: la UPB se
+identifica como centro aplicador y la agenda de ETS confirma la disponibilidad.
+El barrido SEO rápido del sitio completo encontró 28 problemas preexistentes de
+paridad FAQ en páginas de gramática japonesa; ninguna de las cinco rutas quedó
+señalada. PageSpeed Insights respondió HTTP 429, así que no hay puntuación de
+Lighthouse comprobada. Search Console requiere renovar la sesión de Google para
+medir consultas, indexación y posición después del despliegue. Ningún control
+local garantiza aparecer en la primera página.
+
 ## Paneles de estudiante y administración — 26 de octubre de 2026
 
 La [PR #48](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/48), rama

@@ -125,6 +125,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ])),
     ...SPANISH_GUIDES.map(({ slug }) => ({ url: `${BASE}${SPANISH_HUB}/${slug}`, changeFrequency: 'monthly' as const, priority: 0.72 })),
     { url: `${BASE}/clases-de-ingles`, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${BASE}/preparacion-ielts`, changeFrequency: 'monthly', priority: 0.84 },
+    { url: `${BASE}/preparacion-toefl`, changeFrequency: 'monthly', priority: 0.84 },
     {
       url: `${BASE}/kids`,
       changeFrequency: 'weekly',
