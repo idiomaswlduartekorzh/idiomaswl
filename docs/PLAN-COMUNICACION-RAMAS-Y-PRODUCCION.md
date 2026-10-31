@@ -11,7 +11,8 @@ Rama `codex/mobile-app-mvp-20261031`; base `origin/main` en `e6c9a144`.
 Estado: `EN_VALIDACION`. Responsable: Codex. Alcance: `apps/mobile/` y
 `docs/mobile-app-estado.md`. Sin migraciones, nuevas variables de servidor ni
 cambios en producción. Usa la clave publishable de Supabase solo en el `.env`
-local ignorado por Git. Decisión de integración pendiente: `MERGE` tras probar
+local ignorado por Git. [PR #52](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/52)
+permanece en borrador. Decisión de integración pendiente: `MERGE` tras probar
 login y datos con una cuenta estudiante, revisar iOS/Android en dispositivos,
 y ejecutar el guardián del sitio antes de integrar. No existe despliegue de
 tiendas ni SHA de `main` para esta app. Validaciones iniciales y límites en

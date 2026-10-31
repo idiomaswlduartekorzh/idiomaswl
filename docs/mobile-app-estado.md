@@ -2,6 +2,7 @@
 
 Estado: **EN_VALIDACION**. Rama `codex/mobile-app-mvp-20261031`, creada desde
 `origin/main` en `e6c9a144840d1c67efd26731611f9cca6f9f3169`.
+Borrador de integración: [PR #52](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/52).
 
 ## Alcance de la primera versión
 
@@ -25,6 +26,6 @@ las siguientes fases.
 - Consultas de solo lectura a la base de producción: columnas requeridas presentes;
   RLS activo en las cinco tablas consultadas.
 - Pendiente: prueba de login con una cuenta estudiante en dispositivos reales,
-  revisión visual iOS/Android y builds de distribución.
+  revisión visual iOS/Android, actualización desde el `main` vigente y builds de distribución.
 
 La carpeta `apps/mobile/dist` y el `.env` local están ignorados por Git.
