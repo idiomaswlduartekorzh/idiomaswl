@@ -84,10 +84,17 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
         <p>{emphasizedText(section.text, section.highlights)}</p>
       </article>)}
     </div>
-    <a className={styles.rulesLink} href="/reglamento" target="_blank" rel="noopener">Abrir la versión completa para guardar o imprimir ↗</a>
+    <aside className={styles.rulesNotice} aria-label="Aviso importante sobre el reglamento">
+      <p className={styles.rulesNoticeTitle}>Antes de pagar: lee el reglamento completo</p>
+      <p>La versión que aceptes quedará asociada a tu inscripción junto con la fecha y la firma de quien paga. Después del pago te enviaremos esta copia en PDF al correo del estudiante.</p>
+      <div className={styles.rulesActions}>
+        <a href="/reglamento" target="_blank" rel="noopener">Leer el reglamento</a>
+        <a href="/reglamento/archivo" target="_blank" rel="noopener">Descargar copia en PDF</a>
+      </div>
+    </aside>
     <label className={styles.readConfirmation}>
       <input type="checkbox" checked={acceptedRules} onChange={event => setAcceptedRules(event.target.checked)} />
-      <span><strong>Confirmo que leí y acepto el reglamento.</strong> Revisé especialmente la vigencia de cuatro semanas, la programación, las ausencias y las devoluciones.</span>
+      <span><strong>Leí y acepto el reglamento completo.</strong><small>Revisé la vigencia, la programación, las ausencias y las devoluciones. Recibiré una copia en PDF por correo.</small></span>
     </label>
 
     {!acceptedRules ? <div className={styles.formLocked} aria-live="polite">
