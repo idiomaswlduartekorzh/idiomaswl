@@ -1,4 +1,5 @@
 import 'server-only';
+import { Buffer } from 'node:buffer';
 
 function emailConfig() {
   const apiKey=process.env.RESEND_API_KEY;
@@ -11,12 +12,23 @@ export function escapeEmailHtml(value:unknown) {
   return String(value??'').replace(/[&<>"']/g,character=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[character]!);
 }
 
-export async function sendCourseEmail(input:{to:string;subject:string;html:string;idempotencyKey:string}):Promise<{id:string|null}> {
+export async function sendCourseEmail(input:{
+  to:string;
+  subject:string;
+  html:string;
+  idempotencyKey:string;
+  attachments?:{filename:string;content:Uint8Array;contentType:string}[];
+}):Promise<{id:string|null}> {
   const {apiKey,from}=emailConfig();
+  const attachments=input.attachments?.map(attachment=>({
+    filename:attachment.filename,
+    content:Buffer.from(attachment.content).toString('base64'),
+    content_type:attachment.contentType,
+  }));
   const response=await fetch('https://api.resend.com/emails',{
     method:'POST',
     headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json','Idempotency-Key':input.idempotencyKey},
-    body:JSON.stringify({from,to:[input.to],subject:input.subject,html:input.html}),
+    body:JSON.stringify({from,to:[input.to],subject:input.subject,html:input.html,...(attachments?.length?{attachments}:{})}),
     signal:AbortSignal.timeout(10000),
   });
   if(!response.ok)throw new Error(`course_email_failed_${response.status}`);

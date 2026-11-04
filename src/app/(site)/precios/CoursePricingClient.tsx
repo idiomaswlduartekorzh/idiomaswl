@@ -117,11 +117,10 @@ export default function CoursePricingClient({ initialSelection, initialReviewing
           <div><dt>Plan</dt><dd>{plan.name} · {plan.weekly} {plan.weekly === 1 ? 'clase' : 'clases'} por semana</dd></div>
           <div><dt>Duración</dt><dd>4 semanas · {classes} clases de 100 minutos · {sessions} sesiones de 50 minutos</dd></div>
           <div><dt>Precio del ciclo</dt><dd>{formatCOP(plan.price)} COP</dd></div>
-          <div><dt>Inscripción, si corresponde</dt><dd>{formatCOP(ENROLLMENT_FEE_COP)} COP</dd></div>
           {platformFee > 0 && <div><dt>Plataforma de preparación para exámenes · pago único</dt><dd>{formatCOP(platformFee)} COP</dd></div>}
           <div><dt>Total de primera inscripción</dt><dd><strong>{formatCOP(plan.price + ENROLLMENT_FEE_COP + platformFee)} COP</strong></dd></div>
         </dl>
-        <p className={styles.small}>Si continúas con otro ciclo dentro del plazo, la inscripción será $0. El pago de plataforma para preparar exámenes se hace una sola vez por estudiante. El total definitivo se fija al guardar la orden, antes de abrir Wompi.</p>
+        <p className={styles.small}>El total estimado incluye la tarifa de inscripción de $44.200 COP cuando corresponde. Si ya tienes compras previas, el valor definitivo se calcula con tu correo y se muestra antes de abrir Wompi. La plataforma para exámenes se paga una sola vez por estudiante.</p>
         <p className={styles.small}>El horario se coordina después del pago. La preparación de exámenes no incluye la inscripción al examen oficial.</p>
         <CourseEnrollmentForm key={selectionPath(selection)} selection={selection} salesEnabled={salesEnabled} />
         <a className={styles.secondary} href={whatsappLink(selection)} target="_blank" rel="noopener noreferrer">Necesito orientación por WhatsApp <span aria-hidden="true">↗</span></a>
