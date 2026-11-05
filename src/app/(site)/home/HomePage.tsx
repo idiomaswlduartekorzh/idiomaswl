@@ -88,6 +88,11 @@ export default function HomePage() {
             <p className={styles.heroNote}>
               Nivel Radar es orientativo y no sustituye una certificación oficial.
             </p>
+            <p className={styles.heroNote}>
+              ¿Quieres clases? <Link href="/clases-de-ingles-bucaramanga">Inglés presencial en Bucaramanga</Link>
+              {' '}· <Link href="/clases-de-ingles">Inglés online</Link>
+              {' '}· <Link href="/clases-de-frances">Francés presencial u online</Link>
+            </p>
           </div>
 
           <div className={styles.heroPeople} aria-label="Zhanna y José David, cofundadores de WeLearn">

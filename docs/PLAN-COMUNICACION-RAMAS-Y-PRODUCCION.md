@@ -5,6 +5,16 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Competitividad de inglés, exámenes y francés — 5 de noviembre de 2026
+
+Rama `codex/seo-local-competitive-20261105`, basada en `origin/main@30094611`.
+Estado: `EN_VALIDACION`; falta integración, deployment y smoke productivo.
+Se actualizaron las seis páginas comerciales indicadas en
+[`SEO-COMPETITIVIDAD-2026-11-05.md`](SEO-COMPETITIVIDAD-2026-11-05.md).
+La etiqueta de conversiones de GTM `GTM-57NXLPZV` se corrigió y publicó en la
+versión 5; un clic de prueba generó `click_whatsapp` en GA4 en tiempo real.
+El panel independiente revisó SEO competitivo, contenido y conversión.
+
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
 
 Rama `codex/aleman-a1-ai-feedback`, actualizada desde `origin/main@e6c9a1448`.
@@ -17,9 +27,10 @@ pruebas y decisiones pendientes: [`ielts-mock1-openai-local.md`](ielts-mock1-ope
 ## Separación de intención comercial de inglés — 31 de octubre de 2026
 
 Rama `codex/english-commercial-seo-20261031`, creada desde `origin/main@a6463926`
-y actualizada contra el mismo `main` antes de integrar. Estado:
-`LISTO_PARA_INTEGRAR`, pendiente de acceso de escritura al repositorio canónico,
-PR, CI, deployment de Vercel y smoke productivo. No se declara desplegada.
+y actualizada contra el mismo `main` antes de integrar. Su contenido llegó a
+`main` mediante las PR [#50](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/50)
+y [#51](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/51), commits
+`e6c9a144` y `176da945`. La revisión del 5 de noviembre parte de esas rutas.
 
 `/clases-de-ingles` se concentra en clases de inglés general online para
 conversación, trabajo, estudio y viajes. `/clases-de-ingles-bucaramanga` conserva

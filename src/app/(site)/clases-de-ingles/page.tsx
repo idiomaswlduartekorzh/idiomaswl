@@ -4,7 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
 import PracticeBand from '@/components/hub/PracticeBand';
+import CourseOfferBand from '@/components/hub/CourseOfferBand';
 import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
+import { ENROLLMENT_FEE_COP, PLANS, formatCOP } from '@/lib/course-pricing/catalog';
 import s from './page.module.css';
 
 // ── WhatsApp ─────────────────────────────────────────────────────────────────
@@ -38,8 +40,8 @@ const FAQS = [
   { q: '¿Puedo estudiar inglés para trabajo o conversación?', a: 'Sí. Puedes enfocar las clases en conversación, entrevistas, reuniones, viajes u otra meta personal. El tutor ajusta la ruta a tu nivel y objetivo.' },
   { q: '¿En qué se diferencia inglés general de preparación IELTS o TOEFL?', a: 'Inglés general desarrolla el idioma para comunicarte. Las rutas IELTS y TOEFL añaden práctica de las tareas y criterios de cada examen. Si necesitas una certificación, consulta la página específica de preparación.' },
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Ofrecemos preparación para IELTS, TOEFL iBT, Cambridge B2 First e ICFES Saber 11. IELTS, TOEFL e ICFES tienen páginas de preparación específicas; también puedes explorar prácticas y simulacros por examen.' },
-  { q: '¿Cuánto cuestan las clases de inglés online?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.' },
-  { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
+  { q: '¿Cuánto cuestan las clases de inglés online?', a: `El plan Esencial cuesta ${formatCOP(PLANS[0].price)} COP por cuatro semanas e incluye una clase de 100 minutos por semana. Hay planes de dos a cinco clases semanales. En la primera inscripción puede sumarse ${formatCOP(ENROLLMENT_FEE_COP)} COP; el total se muestra antes del pago. Revisa los planes y condiciones en la página de precios.` },
+  { q: '¿Cuánto dura cada clase y cómo elijo el horario?', a: 'Cada clase dura 100 minutos. Los ciclos son de cuatro semanas y puedes elegir de una a cinco clases por semana. Puedes consultar disponibilidad antes de pagar; el horario definitivo se coordina después del pago.' },
   { q: '¿Cómo funciona y cuánto cuesta la clase de diagnóstico con tutor?', a: 'Es una sesión paga con tutor para revisar tu nivel, objetivo y plan. Te informamos el precio y la modalidad antes de agendar.' },
   { q: '¿Cómo se organizan las clases?', a: 'Te asignamos un tutor y una ruta según tu nivel y objetivo. Consulta las modalidades y horarios disponibles antes de elegir un plan.' },
   { q: '¿Puedo tomar clases si vivo fuera de Colombia?', a: 'Sí. Las clases online son por videollamada, así que puedes estudiar desde Colombia o el exterior. Consulta horarios disponibles para tu zona antes de agendar.' },
@@ -134,44 +136,6 @@ const PILARES = [
   },
 ];
 
-const PRECIOS = [
-  {
-    name: 'Clase de diagnóstico',
-    price: 'Consultar',
-    cadence: '',
-    desc: 'Evaluamos tu nivel actual, identificamos tu objetivo y diseñamos un plan de preparación personalizado. Sesión paga; consulta el precio antes de agendar.',
-    cta: 'Consultar ruta y precio',
-    waUrl: WA_GENERAL,
-    featured: false,
-  },
-  {
-    name: 'Plan Preparación',
-    price: 'Consultar',
-    cadence: '',
-    desc: 'Material de práctica, feedback escrito por habilidad y chat con tutor. Sin sesiones en vivo.',
-    cta: 'Consultar por WhatsApp',
-    waUrl: WA_GENERAL,
-    featured: true,
-  },
-  {
-    name: 'Plan Intensivo',
-    price: 'Consultar',
-    cadence: '',
-    desc: 'Sesiones en vivo 2 a 4 veces por semana, tutor asignado, plan de estudio personalizado y evaluación mensual de progreso.',
-    cta: 'Consultar por WhatsApp',
-    waUrl: WA_GENERAL,
-    featured: false,
-  },
-];
-
-const PAQUETES_HORAS = [
-  { label: '4 horas', desc: 'Para reforzar un área específica o probar WeLearn sin compromiso mensual.', badge: null },
-  { label: '10 horas', desc: 'El más popular. Cubre una unidad completa con mejor precio por hora.', badge: 'Más popular' },
-  { label: '20 horas', desc: 'Para avanzar en tu objetivo con más tiempo de práctica y tutoría.', badge: 'Mejor precio/hora' },
-];
-
-const WA_PAQUETE = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
-
 const TESTIMONIALS = [
   {
     name: 'Leonardo Pinto',
@@ -184,12 +148,6 @@ const TESTIMONIALS = [
     city: 'Bucaramanga',
     result: 'TOEFL · Inglés — Maestría',
     quote: 'Realmente les agradezco a ustedes dos por toda la ayuda, el master dura 2 años pero mi profesor quiere que haga otro curso cuando me gradúe.',
-  },
-  {
-    name: 'Karen Ayala',
-    city: 'Bucaramanga',
-    result: 'Goethe — Alemán',
-    quote: 'David te he recomendado como con 15 personas sin decir mentiras, espero que les salga todo suuuper biennn.',
   },
 ];
 
@@ -242,6 +200,9 @@ export default function ClasesDeInglesPage() {
               </a>
               <Link href="/clases-de-ingles-bucaramanga" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
                 ¿Buscas clases en Bucaramanga? →
+              </Link>
+              <Link href="/precios?idioma=ingles&objetivo=general" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
+                Ver planes y precios →
               </Link>
             </div>
           </div>
@@ -360,91 +321,7 @@ export default function ClasesDeInglesPage() {
         </div>
       </section>
 
-      {/* ── PRECIOS ──────────────────────────────────────────────────────── */}
-      <section className="wlh-section wlh-section--dark">
-        <div className="wrap">
-          <p className="wlh-section-eyebrow wlh-section-eyebrow--light">03 — Precios</p>
-          <h2 className="wlh-section-h2 wlh-section-h2--light">
-            ¿Cuánto cuesta aprender inglés con WeLearn?
-          </h2>
-          <p className="wlh-section-desc wlh-section-desc--light" style={{ maxWidth: 500 }}>
-            Empieza con una clase de diagnóstico con tutor. Consulta el precio antes de agendar.
-          </p>
-          <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
-            {PRECIOS.map(plan => (
-              <div key={plan.name} className={`${s.pricingCard}${plan.featured ? ` ${s.pricingCardFeatured}` : ''}`}>
-                {plan.featured && <span className={s.featuredBadge}>Más popular</span>}
-                <h3 style={{ fontWeight: 700, color: '#fff', fontSize: '1.05rem' }}>
-                  {plan.name}
-                </h3>
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.3rem' }}>
-                  <span style={{ fontWeight: 800, fontSize: '1.65rem', color: '#fff' }}>{plan.price}</span>
-                  {plan.cadence && (
-                    <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.9rem' }}>{plan.cadence}</span>
-                  )}
-                </div>
-                <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.6, flexGrow: 1 }}>
-                  {plan.desc}
-                </p>
-                <a
-                  href={plan.waUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'block',
-                    textAlign: 'center',
-                    padding: '0.65rem 1.25rem',
-                    borderRadius: 10,
-                    fontWeight: 700,
-                    fontSize: '0.875rem',
-                    textDecoration: 'none',
-                    marginTop: 'auto',
-                    background: plan.featured ? '#fff' : 'rgba(255,255,255,0.12)',
-                    color: plan.featured ? 'var(--accent)' : '#fff',
-                    transition: 'opacity 0.15s',
-                  }}
-                >
-                  {plan.cta}
-                </a>
-              </div>
-            ))}
-          </div>
-          {/* Paquetes de horas */}
-          <div style={{ marginTop: '2.5rem', paddingTop: '2.25rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-            <p style={{ fontWeight: 700, fontSize: '1rem', color: 'rgba(255,255,255,0.9)', marginBottom: '0.35rem' }}>
-              ¿Prefieres pagar por horas sin compromiso mensual?
-            </p>
-            <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.5)', marginBottom: '1.5rem' }}>
-              Tenemos paquetes prepago de clases en vivo. Entre más horas compras, mejor es el precio por hora.
-            </p>
-            <div className={s.grid3} style={{ gap: '1rem' }}>
-              {PAQUETES_HORAS.map(pkg => (
-                <div key={pkg.label} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 14, padding: '1.25rem', position: 'relative' }}>
-                  {pkg.badge && (
-                    <span className="wl-action-on-light" style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent)', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
-                      {pkg.badge}
-                    </span>
-                  )}
-                  <p style={{ fontWeight: 800, fontSize: '1rem', color: '#fff', marginBottom: '0.4rem' }}>Paquete {pkg.label}</p>
-                  <p style={{ fontSize: '0.82rem', color: 'rgba(255,255,255,0.58)', lineHeight: 1.55, marginBottom: '1rem' }}>{pkg.desc}</p>
-                  <a href={WA_PAQUETE} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: 'rgba(255,255,255,0.12)', color: '#fff', fontWeight: 700, fontSize: '0.82rem', padding: '0.5rem', borderRadius: 8, textDecoration: 'none' }}>
-                    Consultar precio →
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <p style={{
-            textAlign: 'center',
-            marginTop: '1.75rem',
-            color: 'rgba(255,255,255,0.68)',
-            fontSize: '0.82rem',
-          }}>
-            La clase de diagnóstico con tutor es paga · Sin permanencia mínima
-          </p>
-        </div>
-      </section>
+      <CourseOfferBand language="ingles" name="inglés" />
 
       {/* ── TESTIMONIOS ──────────────────────────────────────────────────── */}
       <section className="wlh-section">

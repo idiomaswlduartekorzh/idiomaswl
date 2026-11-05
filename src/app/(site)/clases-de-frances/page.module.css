@@ -522,7 +522,6 @@
 /* ─── Responsive ────────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .heroInner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .heroVisual { order: -1; }
   .whyGrid { grid-template-columns: repeat(2, 1fr); }
   .levelsGrid { grid-template-columns: 1fr; }
   .delfGrid { grid-template-columns: 1fr; }

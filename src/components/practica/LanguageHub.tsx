@@ -81,6 +81,7 @@ export default function LanguageHub({
         <nav className={s.related} aria-label={`Más recursos de ${related.name}`}>
           <span>Más sobre {related.name}:</span>
           <Link href={related.classes}>Clases con tutor</Link>
+          {language === 'ingles' && <Link href="/clases-de-ingles-bucaramanga">Clases presenciales en Bucaramanga</Link>}
           {related.exams.map(exam => (
             <Link key={exam.href} href={exam.href}>Recursos {exam.label}</Link>
           ))}
