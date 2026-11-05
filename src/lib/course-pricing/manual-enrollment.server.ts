@@ -39,8 +39,8 @@ export function parseManualContact(value: unknown, email: string): Contact | nul
   const phone = normalizeWhatsAppPhone(x.phone);
   const city = clean(x.city, 2, 100);
   const address = clean(x.address, 5, 180);
-  const purpose = clean(x.purpose, 10, 500);
-  if (!studentName || !payerName || !signerName || !phone || !city || !address || !purpose) return null;
+  const purpose = clean(x.purpose, 0, 500);
+  if (!studentName || !payerName || !signerName || !phone || !city || !address || purpose === null) return null;
   if (signerName.toLocaleLowerCase('es-CO') !== payerName.toLocaleLowerCase('es-CO')) return null;
   return { studentName, studentEmail: email, payerName, signerName, phone, city, address, purpose };
 }

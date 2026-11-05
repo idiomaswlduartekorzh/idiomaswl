@@ -101,7 +101,7 @@ export async function generateCourseTermsPdf(snapshot = resolveCourseTermsSnapsh
   doc.setFillColor(255, 244, 245).setDrawColor(255, 196, 202).roundedRect(margin, noticeY, contentWidth, noticeHeight, 2, 2, 'FD');
   doc.setFillColor(...WELEARN_LOGO_RED).rect(margin, noticeY, 1.7, noticeHeight, 'F');
   doc.setFont('helvetica', 'bold').setFontSize(8.3).setTextColor(157, 20, 34);
-  doc.text('LEE ESTAS CONDICIONES ANTES DE PAGAR', margin + 5, noticeY + 6.4);
+  doc.text('LEE ESTAS CONDICIONES ANTES DE FIRMAR', margin + 5, noticeY + 6.4);
   doc.setFont('helvetica', 'normal').setFontSize(8.4).setTextColor(...ink);
   const notice = doc.splitTextToSize(
     'El formulario registra la versión, la fecha y la firma de quien acepta. Conserva este PDF junto con la constancia de inscripción.',

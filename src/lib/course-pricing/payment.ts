@@ -18,8 +18,8 @@ export function parseOrderInput(value: unknown) {
   const c = x.contact as Contact;
   try {
     const details = selectionDetails(s);
-    const studentName=cleanText(c.studentName,2,100),payerName=cleanText(c.payerName,2,100),address=cleanText(c.address,5,180),city=cleanText(c.city,2,100),purpose=cleanText(c.purpose,10,500),signerName=cleanText(c.signerName,2,100);
-    if (!studentName || !payerName || !address || !city || !purpose || !signerName || comparableName(signerName)!==comparableName(payerName)) return null;
+    const studentName=cleanText(c.studentName,2,100),payerName=cleanText(c.payerName,2,100),address=cleanText(c.address,5,180),city=cleanText(c.city,2,100),purpose=cleanText(c.purpose,0,500),signerName=cleanText(c.signerName,2,100);
+    if (!studentName || !payerName || !address || !city || purpose===null || !signerName || comparableName(signerName)!==comparableName(payerName)) return null;
     if (typeof c.studentEmail !== 'string' || c.studentEmail.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.studentEmail.trim())) return null;
     const phone = normalizeWhatsAppPhone(c.phone);
     if (!phone) return null;

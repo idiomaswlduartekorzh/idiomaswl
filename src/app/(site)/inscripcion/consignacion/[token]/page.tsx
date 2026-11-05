@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { findManualInvite } from '@/lib/course-pricing/manual-enrollment.server';
 import ManualEnrollmentForm from './ManualEnrollmentForm';
+import styles from './manual-enrollment.module.css';
 
 export const dynamic = 'force-dynamic';
 export const metadata = { title: 'Completa tu inscripción | WeLearn', robots: { index: false, follow: false } };
@@ -10,10 +11,13 @@ export default async function ManualEnrollmentPage({ params }: { params: Promise
   const invite = await findManualInvite(token);
   if (!invite) notFound();
   const expired = !invite.accepted_at && Date.parse(invite.expires_at) <= Date.now();
-  return <main style={{ maxWidth: 880, margin: '0 auto', padding: '42px 20px 90px', color: '#142457' }}>
-    <p style={{ color: '#9a2439', fontWeight: 700, letterSpacing: '0.1em' }}>WELEARN · INSCRIPCIÓN POR CONSIGNACIÓN</p>
-    <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', lineHeight: 1.12 }}>Completa tu inscripción y activa tu cuenta</h1>
-    <p>Este enlace está reservado para <strong>{invite.email}</strong>. No abrirá Wompi ni te pedirá otro pago.</p>
-    {expired ? <p>El enlace venció. Escríbenos para recibir uno nuevo.</p> : invite.welcome_sent_at ? <p><strong>Tu inscripción quedó guardada.</strong> Revisa tu correo para activar la cuenta y descargar el reglamento firmado.</p> : <ManualEnrollmentForm token={token} email={invite.email} schedule={invite.preferred_schedule} alreadySigned={Boolean(invite.accepted_at)} />}
-  </main>;
+  return <main className={styles.page}><div className={styles.shell}>
+    <header className={styles.hero}>
+      <p className={styles.heroEyebrow}>WELEARN / INSCRIPCIÓN PRIVADA</p>
+      <h1>Tu siguiente paso empieza aquí.</h1>
+      <p>Completa tus datos, revisa el reglamento y activa tu cuenta. Este enlace está reservado para <strong>{invite.email}</strong>.</p>
+      <div className={styles.paymentNotice}><span aria-hidden="true">✓</span><span>Consignación reportada. <strong>No volverás a pagar en este formulario.</strong></span></div>
+    </header>
+    {expired ? <div className={styles.result}><h2>Este enlace venció</h2><p>Escríbenos para recibir uno nuevo.</p></div> : invite.welcome_sent_at ? <div className={styles.result}><h2>Tu inscripción quedó guardada</h2><p>Revisa tu correo para activar la cuenta y descargar el reglamento firmado.</p></div> : <ManualEnrollmentForm token={token} email={invite.email} schedule={invite.preferred_schedule} alreadySigned={Boolean(invite.accepted_at)} />}
+  </div></main>;
 }

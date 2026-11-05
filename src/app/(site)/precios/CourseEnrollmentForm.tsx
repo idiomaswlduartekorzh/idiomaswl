@@ -129,7 +129,7 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
         <label>Número de WhatsApp<input name="phone" type="tel" inputMode="tel" autoComplete="tel" placeholder="3001234567" maxLength={22} required aria-describedby="phone-help" onChange={event => event.currentTarget.setCustomValidity('')} /></label>
         <label>Ciudad y país<input name="city" autoComplete="address-level2" placeholder="Bucaramanga, Colombia" required minLength={2} maxLength={100} /></label>
         <label className={styles.fieldWide}>Dirección de residencia<input name="address" autoComplete="street-address" required minLength={5} maxLength={180} /></label>
-        <label className={styles.fieldWide}>Propósito del curso<textarea name="purpose" placeholder="Por ejemplo: prepararme para IELTS Academic y mejorar mi escritura." required minLength={10} maxLength={500} rows={4} /></label>
+        <label className={styles.fieldWide}>Propósito del curso <span className={styles.optionalField}>(opcional)</span><textarea name="purpose" placeholder="Si quieres, cuéntanos qué te gustaría lograr. También puedes dejarlo vacío." maxLength={500} rows={4} /></label>
         <label>Nombre de quien paga<input name="payerName" autoComplete="cc-name" required minLength={2} maxLength={100} /></label>
         <label>Firma electrónica<input name="signerName" autoComplete="name" required minLength={2} maxLength={100} aria-describedby="signature-help" /></label>
       </div>
