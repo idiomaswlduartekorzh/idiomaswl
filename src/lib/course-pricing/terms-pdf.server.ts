@@ -44,7 +44,7 @@ export function courseTermsPdfFilename(version: string): string {
   return `reglamento-welearn-${safeVersion(version)}.pdf`;
 }
 
-export async function generateCourseTermsPdf(snapshot = resolveCourseTermsSnapshot(null)) {
+export async function generateCourseTermsPdf(snapshot = resolveCourseTermsSnapshot(null), signature?: { name: string; email: string; acceptedAt: string; sha256: string }) {
   const { jsPDF } = await import('jspdf');
   const doc = new jsPDF({ unit: 'mm', format: 'a4', compress: true });
   const pageWidth = doc.internal.pageSize.getWidth();
@@ -104,7 +104,7 @@ export async function generateCourseTermsPdf(snapshot = resolveCourseTermsSnapsh
   doc.text('LEE ESTAS CONDICIONES ANTES DE PAGAR', margin + 5, noticeY + 6.4);
   doc.setFont('helvetica', 'normal').setFontSize(8.4).setTextColor(...ink);
   const notice = doc.splitTextToSize(
-    'El formulario registra la versión, la fecha y la firma de quien acepta. Conserva este PDF junto con la constancia de pago.',
+    'El formulario registra la versión, la fecha y la firma de quien acepta. Conserva este PDF junto con la constancia de inscripción.',
     contentWidth - 10,
   ) as string[];
   doc.text(notice, margin + 5, noticeY + 12.2);
@@ -123,6 +123,30 @@ export async function generateCourseTermsPdf(snapshot = resolveCourseTermsSnapsh
     addParagraph(section.text);
     if (index < snapshot.sections.length - 1) y += 1.5;
   });
+
+  if (signature) {
+    doc.addPage();
+    doc.setFont('helvetica', 'bold').setFontSize(19).setTextColor(20, 33, 92);
+    doc.text('Constancia de aceptación', margin, 35);
+    doc.setFont('helvetica', 'normal').setFontSize(10).setTextColor(...ink);
+    doc.text('Este documento fue aceptado mediante firma electrónica de nombre completo.', margin, 49);
+    const rows = [
+      `Firmante: ${signature.name}`,
+      `Correo de inscripción: ${signature.email}`,
+      `Fecha y hora UTC: ${signature.acceptedAt}`,
+      `Versión del reglamento: ${snapshot.version}`,
+      `Huella SHA-256 del texto aceptado: ${signature.sha256}`,
+    ];
+    rows.forEach((row, index) => {
+      const lines = doc.splitTextToSize(row, contentWidth) as string[];
+      doc.text(lines, margin, 66 + index * 17);
+    });
+    doc.setDrawColor(...WELEARN_LOGO_BLUE).line(margin, 171, pageWidth - margin, 171);
+    doc.setFont('helvetica', 'bold').setFontSize(15).setTextColor(20, 33, 92);
+    doc.text(signature.name, margin, 183);
+    doc.setFont('helvetica', 'normal').setFontSize(8.5).setTextColor(...muted);
+    doc.text('Firma electrónica consignada en el formulario de inscripción', margin, 191);
+  }
 
   const pageCount = doc.getNumberOfPages();
   for (let page = 1; page <= pageCount; page += 1) {
