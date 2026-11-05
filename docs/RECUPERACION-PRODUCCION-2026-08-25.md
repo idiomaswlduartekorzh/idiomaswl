@@ -892,3 +892,27 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   índice B2, C1 y C2 y la revisión francesa final servida por el dominio.
 - No se añadieron migraciones, variables de entorno ni servicios externos.
   Estado: `DESPLEGADO`.
+
+### 5 de noviembre de 2026 — inscripción por consignación y lectura del reglamento
+
+- `main` incorpora la inscripción privada por consignación (`cf5f5010`), la
+  mejora para números de WhatsApp colombianos (`0e3a91f1` y `8e5d3171`) y el
+  rediseño del reglamento y del formulario (`b50a06f0`). El propósito del curso
+  es opcional tanto en la interfaz como en la validación del servidor.
+- La migración `20261105090000_manual_course_enrollment_invites.sql` creó la
+  tabla privada para invitaciones y constancias de firma, con RLS habilitado.
+- La invitación de la estudiante fue probada sin un segundo cobro. Una cuenta
+  temporal verificó la firma, la huella del texto, el PDF guardado, el perfil,
+  el enlace de activación y la entrega del correo con el PDF adjunto. La cuenta
+  de prueba fue eliminada. La inscripción real aparece firmada, con cuenta
+  creada y correo de acceso enviado.
+- Pasaron `check:practica-catalog`, TypeScript, los tests de pagos de cursos y
+  `npm run build -- --webpack`. El build local usó Webpack porque Turbopack no
+  admite el enlace a `node_modules` del árbol de trabajo.
+- Vercel publicó el commit `b50a06f0` mediante el deployment
+  [`dpl_B628yczfE4X9PeQNcReiptZcf86s`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/dpl_B628yczfE4X9PeQNcReiptZcf86s)
+  en estado `READY`. El smoke posterior confirmó HTTP 200 en `/reglamento`,
+  la ruta privada de inscripción y `/reglamento/archivo`; el PDF sirve
+  `application/pdf` y muestra el aviso «antes de firmar». La captura de
+  producción confirmó la nueva presentación del reglamento.
+- Estado: `DESPLEGADO`.
