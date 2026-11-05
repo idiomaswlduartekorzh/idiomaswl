@@ -1,0 +1,3 @@
+# Expo SDK 58 was published on the day this MVP was upgraded.
+# Allow its fresh packages so a clean install works with pnpm 11.
+minimumReleaseAge: 0

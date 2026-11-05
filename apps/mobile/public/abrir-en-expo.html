@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abrir WeLearn en Expo Go</title>
+    <style>
+      body { font: 18px system-ui, sans-serif; max-width: 34rem; margin: 0 auto; padding: 2rem; color: #152a25; }
+      a { display: block; padding: 1rem; border-radius: .8rem; background: #176b55; color: white; text-align: center; text-decoration: none; font-weight: 700; }
+      p { line-height: 1.5; }
+      code { overflow-wrap: anywhere; }
+    </style>
+  </head>
+  <body>
+    <h1>WeLearn</h1>
+    <p>Abre esta página en Safari de tu iPhone y toca el botón para entrar en Expo Go.</p>
+    <a id="abrir" href="exp://c-idiomaswl-jo0yad-mvwofhnd7z6miy02.on.expo.app">Abrir en Expo Go</a>
+    <p>Si no se abre, comprueba que Expo Go esté actualizado e iniciado con la cuenta <strong>idiomaswl</strong>.</p>
+    <p>Enlace directo: <code id="direccion">exp://c-idiomaswl-jo0yad-mvwofhnd7z6miy02.on.expo.app</code></p>
+    <script>
+      const url = `exp://${location.host}`;
+      document.getElementById('abrir').href = url;
+      document.getElementById('direccion').textContent = url;
+    </script>
+  </body>
+</html>

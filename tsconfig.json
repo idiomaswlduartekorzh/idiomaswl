@@ -33,6 +33,7 @@
   ],
   "exclude": [
     "node_modules",
+    "apps/mobile",
     "src/data/mocks/ielts-set-5.ts",
     "src/data/mocks/ielts-set-6.ts",
     "src/data/mocks/ielts-set-7.ts",
