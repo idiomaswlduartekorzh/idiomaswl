@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import Link from 'next/link';
 import Image from 'next/image';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
@@ -224,6 +225,13 @@ export default function MapasPage() {
                 {...noAssist}
                 style={{ width: '100%', padding: '0.85rem', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.95rem', fontFamily: 'inherit', lineHeight: 1.6, resize: 'vertical', boxSizing: 'border-box' }}
               />
+              <WritingFeedbackReview text={text} assignment={{
+                title: 'IELTS Academic Task 1 — map change',
+                language: 'English',
+                level: 'IELTS Academic',
+                prompt: `Describe the change: ${change.before} → ${change.after}; location: ${change.location}.`,
+                focus: ['Accurate change description', 'Past and present location language', 'Concise comparison'],
+              }} />
               {text.trim().length > 10 && !revealed && (
                 <button className="btn btn-sm" onClick={() => setRevealed(true)} style={{ alignSelf: 'flex-start' }}>Reveal model →</button>
               )}

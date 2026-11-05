@@ -14,6 +14,7 @@ import type {
 } from '@/data/grammar/types'
 import { useGrammarProgress } from '@/components/grammar/useGrammarProgress'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 import { canRenderPdf } from '@/lib/pdf/languages'
 
 type RelatedWritingExercise = {
@@ -645,6 +646,9 @@ function WritePractice({
   dispatch,
   onSubmit,
   uiLanguage,
+  language,
+  cefrLevel,
+  topicTitle,
 }: {
   level: WriteLevel
   idx: number
@@ -652,6 +656,9 @@ function WritePractice({
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
   uiLanguage: UiLanguage
+  language: string
+  cefrLevel: string
+  topicTitle: string
 }) {
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
@@ -687,6 +694,13 @@ function WritePractice({
         rows={2}
         style={{ resize: 'vertical', marginTop: '0.75rem' }}
       />
+      <WritingFeedbackReview text={answers[`${idx}`] ?? ''} assignment={{
+        title: `${topicTitle} — ${item.scene}`,
+        language,
+        level: cefrLevel,
+        prompt: item.prompt,
+        focus: [topicTitle, item.scene],
+      }} />
       <div className="gram-actions">
         <button className="gram-btn accent" disabled={!canProceed} onClick={next}>
           {isLast ? tr(uiLanguage, 'Submit answers →', 'Enviar respuestas →', 'Envoyer les réponses →') : tr(uiLanguage, 'Next →', 'Siguiente →', 'Suivant →')}
@@ -1085,6 +1099,9 @@ export default function GrammarTopicClient({
                     dispatch={dispatch}
                     onSubmit={handleSubmit}
                     uiLanguage={uiLanguage}
+                    language={idioma}
+                    cefrLevel={nivel}
+                    topicTitle={topic.title}
                   />
                 )}
               </div>

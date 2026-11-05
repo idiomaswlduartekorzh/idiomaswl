@@ -1,7 +1,6 @@
-/** Local pilot switch. Production stays closed until budget and privacy review. */
+/** Release switch for the free Mock 1 pilot. Off unless explicitly enabled. */
 export function isIeltsMockOnePilot(mockId: string): boolean {
   return mockId === 'set-1'
-    && process.env.NODE_ENV === 'development'
     && process.env.IELTS_MOCK1_FREE_ENABLED === '1';
 }
 

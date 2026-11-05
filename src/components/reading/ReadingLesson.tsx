@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import { ReadingRecorder } from './ReadingRecorder'
 import { ReadingAiFeedback } from './ReadingAiFeedback'
+import { GERMAN_A1_READING_TASK_ID } from '@/lib/writing-feedback-shared'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
@@ -215,7 +216,7 @@ const READING_LANG_SLUG: Record<string, string> = {
   ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
 }
 
-export function ReadingLesson({ exercise, locale, siblings = [], aiFeedbackEnabled = false }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[]; aiFeedbackEnabled?: boolean }) {
+export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
   const copy = COPY[locale]
   const [stage, setStage] = useState(0)
   const [answers, setAnswers] = useState<Record<string, StoredAnswer>>({})
@@ -467,7 +468,18 @@ export function ReadingLesson({ exercise, locale, siblings = [], aiFeedbackEnabl
         <label className={styles.productionLabel} htmlFor="reading-production">{localized(exercise.production.prompt, locale)}</label>
         <textarea id="reading-production" value={production} onChange={(event) => setProduction(event.target.value)} rows={5} placeholder={exercise.production.hints.join(' · ')} />
         <div className={styles.productionMeta}><span>{wordCount} / {exercise.production.maxWords} {copy.words}</span><span>{copy.unscored}</span></div>
-        {aiFeedbackEnabled && exercise.id === 'de-a1-der-weg-zur-arbeit' && <ReadingAiFeedback text={production} />}
+        <ReadingAiFeedback text={production} assignment={{
+          taskId: exercise.id,
+          title: localized(exercise.content.title, locale),
+          language: ({ en: 'inglés', fr: 'francés', it: 'italiano', de: 'alemán', ru: 'ruso', ja: 'japonés', ko: 'coreano', pt: 'portugués' } as Record<string, string>)[exercise.language] ?? exercise.language,
+          level: exercise.level.cefr,
+          prompt: localized(exercise.production.prompt, locale),
+          sourceText: exercise.content.targetText,
+          objectives: exercise.content.objectives.map(item => localized(item, locale)),
+          focus: exercise.content.grammarFocus ?? [],
+        }} requirements={exercise.id === GERMAN_A1_READING_TASK_ID ? {
+          minWords: 25, maxWords: 60, minSentences: 5, maxSentences: 7, maxCharacters: 700,
+        } : { minWords: exercise.production.minWords, maxWords: exercise.production.maxWords }} />
         <button type="button" className="listen-primary" onClick={() => setStage(4)}>{copy.goResult}</button>
       </section>
       </div>

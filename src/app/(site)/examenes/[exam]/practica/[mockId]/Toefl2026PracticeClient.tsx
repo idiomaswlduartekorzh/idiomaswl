@@ -5,6 +5,7 @@ import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { AudioPlayer, formatTime } from '@/components/exam-runner/primitives';
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -330,6 +331,13 @@ function WriteView({ q, value, onChange }: { q: WriteQuestion; value: string; on
         </span>
         <span>Sin corrector ortográfico</span>
       </div>
+      <WritingFeedbackReview text={value} assignment={{
+        title: q.stimulusLabel ?? `TOEFL Writing Task ${q.taskNumber}`,
+        language: 'English',
+        level: 'TOEFL 2026',
+        prompt: [q.stimulusLabel, q.stimulus, q.text].filter(Boolean).join('\n\n'),
+        focus: [q.taskNumber === 1 ? 'Write an email for the stated purpose and audience.' : 'Contribute a supported response to the academic discussion.'],
+      }} />
     </div>
   );
 }

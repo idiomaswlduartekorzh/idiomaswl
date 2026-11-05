@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import type { EssayTypeId } from '../introduccion/introduction-data';
 import type { PromptAnalysisExample } from './prompt-analysis-data';
 import styles from '../introduccion/page.module.css';
@@ -170,6 +171,7 @@ export default function PromptAnalysisWorkshop({ type, example }: { type: EssayT
           <div className={styles.decisionOptions}>{getPositionOptions(type).map((option) => <label key={option} className={decision === option ? styles.decisionSelected : ''}><input type="radio" name={`decision-${example.title}`} value={option} checked={decision === option} onChange={() => { setDecision(option); setPlanAnswers({}); setPlanChecked(false); }} /><span>{option}</span></label>)}</div>
         </fieldset>
         {decision ? <div className={styles.planGrid}>{planFields.map((field) => <label key={field.id} className={styles.guidedField}><strong>{field.label}</strong><span>{field.hint}</span><textarea rows={3} value={planAnswers[field.id] ?? ''} onChange={(event) => { setPlanAnswers((current) => ({ ...current, [field.id]: event.target.value })); setPlanChecked(false); }} spellCheck={false} autoCorrect="off" autoCapitalize="off" /></label>)}</div> : <p className={styles.unlockHint}>Pick one of the answers above to open the boxes.</p>}
+        {decision && planReady && <WritingFeedbackReview text={[`Topic: ${mapAnswers.topic}`, `Instruction: ${mapAnswers.instruction}`, `Scope: ${mapAnswers.scope}`, `Position: ${decision}`, ...planFields.map((field) => `${field.label}: ${planAnswers[field.id] ?? ''}`)].join('\n')} assignment={{ title: `IELTS Task 2 planning — ${example.title}`, language: 'English', level: 'IELTS Academic Task 2', prompt: example.prompt, objectives: [example.map.position, ...example.map.bodyRoute], focus: planFields.map((field) => field.label) }} />}
         <div className={styles.workshopActions}><button type="button" onClick={() => setPlanChecked(true)} disabled={!planReady}><CheckCircle2 size={17} /> Show me the model plan</button></div>
         {decision && !planReady && <p className={styles.unlockHint}>Write a few words in all {planFields.length} boxes to see the model plan.</p>}
         {planChecked && <div className={styles.planReveal} aria-live="polite"><span>Compare with the WeLearn model</span><div><strong>The thesis this prompt needs</strong><p>{example.map.position}</p></div><div><strong>What Body 1 does</strong><p>{example.map.bodyRoute[0]}</p></div><div><strong>What Body 2 does</strong><p>{example.map.bodyRoute[1]}</p></div><p>Keep your own ideas when they answer the same question clearly. Change only the boxes that drift away from the topic, from what the prompt requires, or from the answer you chose.</p></div>}

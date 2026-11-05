@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { CheckCircle2, RotateCcw } from 'lucide-react';
 import type { IntegratedWritingPrompt } from '@/data/practica-exams/seo-catalog';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 function countWords(text: string) {
   return text.trim().split(/\s+/).filter(Boolean).length;
@@ -192,6 +193,16 @@ export default function IntegratedWritingWorkbench({
             </div>
           </aside>
         </div>
+
+        <WritingFeedbackReview text={response} assignment={{
+          title: prompt.topic,
+          language: 'English',
+          level: 'TOEFL Integrated Writing',
+          prompt: prompt.task,
+          sourceText: [prompt.reading, prompt.lecture].join('\n\n'),
+          objectives: [prompt.target, ...prompt.checklist],
+          focus: prompt.readingClaims,
+        }} />
 
         {completed === prompt.checklist.length && words >= 150 && (
           <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: 'var(--wl-on-panel-ok, #047857)', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>

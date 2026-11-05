@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import Task1ApprovedMapVisual from '../Task1ApprovedMapVisual';
 import Task1ApprovedProcessVisual from '../Task1ApprovedProcessVisual';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
@@ -249,6 +250,7 @@ export default function TareaCompletaPage({ initialPhase = 'intro', initialTaskI
       <div className="wl-card" style={{ padding: '1rem', borderLeft: '3px solid #0f3d8c', marginBottom: '0.75rem', lineHeight: 1.65 }}>{task.prompt}</div>
       <div style={{ padding: '0.7rem 0.9rem', borderRadius: 8, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.24)', marginBottom: '0.75rem', fontSize: '0.83rem', lineHeight: 1.55 }}><strong>Data reminder:</strong> {task.dataNotes}</div>
       <textarea value={text} onChange={(event) => setText(event.target.value)} placeholder={'Introduction: paraphrase the task.\n\nOverview: state the big picture.\n\nBody 1 and Body 2: group the most meaningful details.'} rows={20} {...noAssist} style={{ width: '100%', boxSizing: 'border-box', padding: '1rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', font: 'inherit', lineHeight: 1.75, resize: 'vertical' }} />
+      <WritingFeedbackReview text={text} assignment={{ title: task.label, language: 'English', level: 'IELTS Academic', prompt: task.prompt, sourceText: task.dataNotes, focus: ['Write an introduction, an overview and comparisons supported by the visual.'] }} />
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.6rem', alignItems: 'center' }}><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.8rem' }}>{wordCount < 150 ? `${150 - wordCount} words to the official minimum` : 'Official minimum reached'}</span><button className="btn btn-sm" onClick={submit}>Submit for review →</button></div>
     </div></div></section>;
   }

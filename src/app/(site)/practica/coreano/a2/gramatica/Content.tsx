@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 const C = '#7c3aed';
 
@@ -436,6 +437,7 @@ export default function GramaticaCoreanoA2() {
               <textarea value={prodText} onChange={e => setProdText(e.target.value)} rows={5}
                 placeholder="한국어로 써 보세요... (Escribe aquí en coreano o romanización)"
                 style={{ width: '100%', padding: '0.85rem 1rem', borderRadius: 10, resize: 'vertical', border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.92rem', fontFamily: 'inherit', boxSizing: 'border-box', lineHeight: 1.7 }} />
+              <WritingFeedbackReview text={prodText} assignment={{ title: t.title, language: 'Coreano', level: 'A2', prompt: t.production, focus: [t.title] }} />
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.5rem' }}>
                 <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
                   {prodText.trim() ? prodText.trim().split(/\s+/).length : 0} palabras

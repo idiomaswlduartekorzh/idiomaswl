@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
 import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
 import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
@@ -404,6 +405,13 @@ function WriteView({
       <div className={`ielts-write__wordcount${ok?' ielts-write__wordcount--ok':''}`}>
         {words} / {q.minWords} words {ok ? '✓' : ''}
       </div>
+      <WritingFeedbackReview text={value} assignment={{
+        title: `IELTS Writing Task ${q.taskNumber}`,
+        language: 'English',
+        level: 'IELTS Academic',
+        prompt: [q.stimulusLabel, q.stimulus, q.text, q.imageAlt ? `Image description: ${q.imageAlt}` : ''].filter(Boolean).join('\n\n'),
+        focus: [q.taskNumber === 1 ? 'Describe key information, comparisons and an overview.' : 'Answer all parts of the question and support the position with reasons.'],
+      }} />
     </div>
   );
 }
@@ -751,7 +759,7 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
         <>
           {openAiPilot && !reviewRequested && (
             <div className="mt-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5">
-              <p className="text-sm text-[var(--fg)] mb-3">Al pedir la revisión, tus dos textos de Writing y las consignas de cada tarea se enviarán a OpenAI. Las grabaciones de Speaking no se envían a OpenAI. El resultado es orientación pedagógica, no una calificación oficial.</p>
+              <p className="text-sm text-[var(--fg)] mb-3">Al pedir la revisión, tus dos textos de Writing, sus consignas y la gráfica de Task 1 se enviarán a OpenAI. Las grabaciones de Speaking no se envían a OpenAI. El resultado es orientación pedagógica, no una calificación oficial.</p>
               <button type="button" className="btn" onClick={() => setReviewRequested(true)}>Revisar mis textos</button>
             </div>
           )}

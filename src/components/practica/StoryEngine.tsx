@@ -18,10 +18,13 @@
 import { useState, useRef, type Dispatch, type SetStateAction } from 'react';
 import Link from 'next/link';
 import type { Historia, StoryQuestion, StoryVoice, VoiceKey } from '@/data/practica/historias/types';
+import type { HistoriaLang } from '@/data/practica/historias/types';
 import { totalParts, totalQuestions } from '@/data/practica/historias/types';
 import { STORY_UI } from '@/data/practica/historias/ui';
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import { canRenderPdf } from '@/lib/pdf/languages';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
+import type { WritingAssignmentContext } from '@/lib/writing-feedback';
 
 /**
  * Cada voz recorre los mismos cinco pasos, en este orden. La fase se compone
@@ -45,6 +48,10 @@ const emptyVoiceState = (): VoiceState => ({ write1: '', write2: '', unknown: ne
 
 const NARRATOR_COLOR = '#6b7280';
 const FINAL_COLOR = '#059669';
+const LANGUAGE_LABELS: Record<HistoriaLang, string> = {
+  ingles: 'inglés', aleman: 'alemán', frances: 'francés', italiano: 'italiano',
+  portugues: 'portugués', coreano: 'coreano', japones: 'japonés', ruso: 'ruso',
+};
 
 /** Normaliza una palabra a la forma que usan las claves del diccionario. */
 export function dictKey(token: string): string {
@@ -191,9 +198,10 @@ function ClickableText({ paragraphs, dict, unknown, onToggle, hintLabel, noTrans
 
 // ─── WriteBox ─────────────────────────────────────────────────────────────────
 
-function WriteBox({ prompt, value, onChange, onSubmit, submitLabel, color, hint, placeholder }: {
+function WriteBox({ prompt, value, onChange, onSubmit, submitLabel, color, hint, placeholder, assignment }: {
   prompt: string; value: string; onChange: (v: string) => void; onSubmit: () => void;
   submitLabel: string; color: string; hint?: string; placeholder: string;
+  assignment: WritingAssignmentContext;
 }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -208,6 +216,7 @@ function WriteBox({ prompt, value, onChange, onSubmit, submitLabel, color, hint,
         onFocus={e => { (e.target as HTMLTextAreaElement).style.borderColor = `${color}88`; }}
         onBlur={e => { (e.target as HTMLTextAreaElement).style.borderColor = `${color}33`; }}
       />
+      <WritingFeedbackReview text={value} assignment={assignment} />
       <button onClick={onSubmit} disabled={!value.trim()} className="btn"
         style={{ fontSize: '0.95rem', padding: '0.9rem 1.75rem', opacity: value.trim() ? 1 : 0.45, cursor: value.trim() ? 'pointer' : 'default' }}>
         {submitLabel}
@@ -447,6 +456,13 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
             submitLabel={t.submitWithTranscript}
             color={v.color}
             placeholder={t.writePlaceholder}
+            assignment={{
+              title: `${historia.title} — ${v.name}: primera respuesta`,
+              language: `${LANGUAGE_LABELS[historia.lang]} o español, según la respuesta`,
+              level: historia.level,
+              prompt: `${v.write1Prompt}\n${v.write1Hint}`,
+              objectives: ['Resumir con palabras propias lo que entendiste de la nota de voz'],
+            }}
           />
         </div>
       </div>
@@ -486,6 +502,14 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
             submitLabel={t.compareVersions}
             color={v.color}
             placeholder={t.writePlaceholder}
+            assignment={{
+              title: `${historia.title} — ${v.name}: resumen ampliado`,
+              language: `${LANGUAGE_LABELS[historia.lang]} o español, según la respuesta`,
+              level: historia.level,
+              prompt: v.write2Prompt,
+              sourceText: v.paragraphs.join('\n\n'),
+              objectives: ['Reescribir el resumen con más detalle después de leer la transcripción'],
+            }}
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import 'server-only';
 
+import { readUtf8StreamLimited } from '@/lib/writing-feedback';
 import type { FullAssessment, LabsError, WritingRubric } from '@/lib/labs/types';
 import type { InlineImage } from '@/lib/labs/providers/gemini';
 
@@ -96,8 +97,8 @@ export async function assessIeltsWritingOpenAi(input: {
         input: [{ role: 'user', content }], text: { format: RESPONSE_FORMAT(input.rubric.criteria.map(c => c.key)) } }),
       signal: AbortSignal.timeout(60_000),
     });
-    const raw = await response.text();
-    if (raw.length > 32_000) return { code: 'provider_error', message: 'La respuesta del evaluador fue demasiado larga.' };
+    const raw = await readUtf8StreamLimited(response.body, 32_000);
+    if (raw === null) return { code: 'provider_error', message: 'La respuesta del evaluador fue demasiado larga.' };
     const data = JSON.parse(raw) as Record<string, unknown>;
     if (!response.ok) {
       const code = (data.error as Record<string, unknown> | undefined)?.code;

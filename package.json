@@ -274,6 +274,7 @@
     "test:toefl-build-sentence": "node --experimental-strip-types --no-warnings --test tests/toefl-build-sentence.test.mjs",
     "check:toefl-writing": "node --experimental-strip-types --no-warnings scripts/check-toefl-writing-constructed.mjs",
     "test:toefl-writing": "node --experimental-strip-types --no-warnings --test tests/toefl-writing-timing.test.mjs",
+    "test:writing-feedback": "node --experimental-strip-types --no-warnings --test tests/writing-feedback.test.mjs",
     "check:ielts-task2": "node scripts/check-ielts-task2-alignment.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
     "audit:toefl": "node scripts/audit-toefl-routes.mjs",

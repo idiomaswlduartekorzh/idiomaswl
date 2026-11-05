@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 import { IELTS_MOCK_ONE_DAILY_LIMITS, isIeltsMockOnePilot } from '@/lib/ielts/mock-one-pilot';
 import { consumeIeltsRateLimit } from '@/lib/ielts/rate-limit.server';
+import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
 import { assessIeltsWritingOpenAi } from '@/lib/ielts/openai-writing.server';
+import { readBytesStreamLimited, readUtf8StreamLimited, writingSpendQuotaBucket } from '@/lib/writing-feedback';
 import { LABS_ENABLED, LIMITS, WRITING_ENGINE } from '@/lib/labs/config';
 import { checkRateLimit, pruneExpired, WRITING_RULE } from '@/lib/labs/rate-limit';
 import { assessWritingFree } from '@/lib/labs/providers/gemini';
@@ -49,7 +51,9 @@ async function fetchInlineImage(imageUrl: string, req: Request): Promise<InlineI
     const absoluteUrl = new URL(imageUrl, req.url);
     const res = await fetch(absoluteUrl);
     if (!res.ok) return null;
-    const buf = Buffer.from(await res.arrayBuffer());
+    const imageBytes = await readBytesStreamLimited(res.body, 1_000_000);
+    if (!imageBytes?.byteLength) return null;
+    const buf = Buffer.from(imageBytes);
     return { mimeType, data: buf.toString('base64') };
   } catch (err) {
     console.error('[labs/exam-writing-assess] no se pudo descargar la imagen', imageUrl, err);
@@ -164,6 +168,8 @@ const VALID_TASK_NUMBERS: TaskNumber[] = [1, 2, 3, 4];
 
 export const maxDuration = 120;
 
+const MAX_ASSESS_REQUEST_BYTES = 32_000;
+
 export async function POST(req: Request) {
   pruneExpired();
 
@@ -174,7 +180,11 @@ export async function POST(req: Request) {
 
   let payload: { examSlug?: unknown; mockId?: unknown; taskNumber?: unknown; essay?: unknown; receipt?: unknown };
   try {
-    payload = await req.json();
+    const raw = await readUtf8StreamLimited(req.body, MAX_ASSESS_REQUEST_BYTES);
+    if (raw === null) {
+      return NextResponse.json({ code: 'invalid_input', message: 'La solicitud supera el tamaño permitido.' }, { status: 413 });
+    }
+    payload = JSON.parse(raw) as typeof payload;
   } catch {
     return NextResponse.json({ code: 'invalid_input', message: 'JSON inválido.' }, { status: 400 });
   }
@@ -182,6 +192,9 @@ export async function POST(req: Request) {
   const examSlug   = typeof payload.examSlug === 'string' ? payload.examSlug : '';
   const mockId     = typeof payload.mockId === 'string' ? payload.mockId : '';
   const openAiPilot = examSlug === 'ielts' && isIeltsMockOnePilot(mockId);
+  if (openAiPilot && process.env.OPENAI_WRITING_FEEDBACK_ENABLED !== '1') {
+    return new NextResponse(null, { status: 404 });
+  }
   if (!LABS_ENABLED && !openAiPilot) return new NextResponse(null, { status: 404 });
   const taskNumber = payload.taskNumber;
   const essay      = typeof payload.essay === 'string' ? payload.essay.trim() : '';
@@ -290,6 +303,9 @@ export async function POST(req: Request) {
       if (!await consumeIeltsRateLimit({ ...limit, windowSeconds: IELTS_MOCK_ONE_DAILY_LIMITS.windowSeconds })) {
         return NextResponse.json({ code: 'rate_limited', message: 'Se alcanzó el límite de revisiones gratuitas por hoy. Tu examen sigue guardado.' }, { status: 429 });
       }
+    }
+    if (!await consumeExamReviewRateLimit(writingSpendQuotaBucket())) {
+      return NextResponse.json({ code: 'rate_limited', message: 'Se alcanzó el límite mensual de revisiones gratuitas. Tu examen sigue guardado.' }, { status: 429 });
     }
     const image = assignment.imageUrl ? (await fetchInlineImage(assignment.imageUrl, req)) ?? undefined : undefined;
     const result = await assessIeltsWritingOpenAi({ essay, prompt: assignment.promptText,

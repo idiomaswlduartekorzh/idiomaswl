@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import ColoredBodyParagraph from '../body-1/ColoredBodyParagraph';
 import type { BodyTwoExample } from './body-two-data';
 import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
@@ -74,6 +75,7 @@ export default function BodyTwoWorkshop({ example, seed }: { example: BodyTwoExa
       <div className={styles.stepLabel}>{selectedTopic === correctTopic && topicChecked ? <CheckCircle2 size={20} /> : <LockKeyhole size={20} />}<strong>Step 2</strong><span>Develop and connect the second idea</span></div>
       {selectedTopic === correctTopic && topicChecked && <>
         <div className={styles.planGrid}>{example.blocks.map((item, index) => <label key={item.label} className={styles.guidedField}><strong>{item.label}</strong><span>{item.purpose}</span><textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" rows={4} value={answers[index]} onChange={(event) => { setAnswers((current) => current.map((value, answerIndex) => answerIndex === index ? event.target.value : value)); setModelVisible(false); }} placeholder={`Write your ${item.label.toLowerCase()} here.`} /></label>)}</div>
+        <WritingFeedbackReview text={answers.map((value, index) => `${example.blocks[index]?.label ?? 'Sentence'}: ${value}`).join('\n')} assignment={{ title: `${example.title} — Body 2`, language: 'English', level: 'IELTS Academic Task 2', prompt: example.prompt, objectives: [example.paragraphJob], focus: example.blocks.map((item) => `${item.label}: ${item.purpose}`) }} />
         <div className={styles.workshopActions}><button type="button" onClick={() => setModelVisible(true)} disabled={!writingReady}><Eye size={17} /> Show me the model</button>
         {!writingReady && <p className={styles.unlockHint}>{missingWords} more word{missingWords === 1 ? '' : 's'} to go before you can compare.</p>}</div>
         {modelVisible && <div className={styles.bodyModelReveal} aria-live="polite"><span>Compare with the WeLearn model</span><div className={styles.modelBlockGrid}>{example.blocks.map((item) => <article key={item.label} className={styles[item.tone]}><strong>{item.label}</strong><p>{item.text}</p><small>{item.purpose}</small></article>)}</div><div className={styles.completeParagraph}><strong>Complete model paragraph</strong><ColoredBodyParagraph blocks={example.blocks} /></div><p className={styles.comparisonNote}>Compare functions rather than identical wording. Body 2 must add a distinct step to the essay and preserve the position or instruction established earlier. This is explained feedback, not automated band scoring.</p></div>}

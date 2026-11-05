@@ -4,6 +4,7 @@ import { signOut } from '@/lib/actions/signOut';
 import { setStudentAssignmentCompleted, submitStudentAssignment } from '@/lib/actions/studentAssignments';
 import { STUDENT_PRODUCT_COPY } from '@/lib/student-dashboard/catalog';
 import type { StudentDashboardData } from '@/lib/student-dashboard/types';
+import { StudentAssignmentWritingField } from './StudentAssignmentWritingField';
 import styles from './student-dashboard.module.css';
 import StudentInsights from './StudentInsights';
 
@@ -55,7 +56,7 @@ function Assignments({ data, preview }: { data: StudentDashboardData; preview: b
     {data.assignments.length ? <div className={styles.assignmentList}>{data.assignments.map((assignment) => <article className={assignment.status === 'completed' ? styles.assignmentDone : ''} key={assignment.id}>
       <div className={styles.assignmentCheck}>{assignment.status === 'completed' ? '✓' : '○'}</div>
       <div><span>{assignment.status === 'completed' ? `Entregada ${dateLabel(assignment.submittedAt ?? assignment.completedAt)}` : assignment.dueAt ? `Entrega ${dateLabel(assignment.dueAt)}` : 'Sin fecha límite'}</span><h3>{assignment.title}</h3><p>{assignment.instructions}</p>{assignment.resourceUrl ? <Link href={assignment.resourceUrl}>Abrir material →</Link> : null}
-        {assignment.status === 'assigned' && !preview ? <form action={submitStudentAssignment} className={styles.submissionForm}><input type="hidden" name="assignmentId" value={assignment.id} /><textarea aria-label={`Respuesta para ${assignment.title}`} name="submissionText" rows={4} maxLength={12000} placeholder="Escribe aquí tu respuesta, observaciones o el texto solicitado" /><input aria-label={`Enlace de entrega para ${assignment.title}`} name="submissionUrl" type="url" placeholder="https://... enlace de tu entrega (opcional)" /><button type="submit">Entregar tarea</button></form> : null}
+        {assignment.status === 'assigned' && !preview ? <form action={submitStudentAssignment} className={styles.submissionForm}><input type="hidden" name="assignmentId" value={assignment.id} /><StudentAssignmentWritingField title={assignment.title} instructions={assignment.instructions} /><input aria-label={`Enlace de entrega para ${assignment.title}`} name="submissionUrl" type="url" placeholder="https://... enlace de tu entrega (opcional)" /><button type="submit">Entregar tarea</button></form> : null}
         {assignment.submissionText ? <div className={styles.submissionBox}><strong>Tu entrega</strong><p>{assignment.submissionText}</p>{assignment.submissionUrl ? <a href={assignment.submissionUrl} target="_blank" rel="noreferrer">Abrir enlace entregado →</a> : null}</div> : assignment.submissionUrl ? <div className={styles.submissionBox}><strong>Tu entrega</strong><a href={assignment.submissionUrl} target="_blank" rel="noreferrer">Abrir enlace entregado →</a></div> : null}
         {assignment.teacherFeedback ? <div className={styles.feedbackBox}><strong>Retroalimentación de tu profesor</strong><p>{assignment.teacherFeedback}</p></div> : null}
       </div>

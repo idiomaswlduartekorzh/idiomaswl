@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 type Skill = 'lectura' | 'gramatica' | 'escritura' | 'habla' | 'escucha';
 const COLOR = '#dd0000';
@@ -156,6 +157,7 @@ function ReadingA1() {
             <div style={{ fontSize:'0.68rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.5rem' }}>Offene Frage</div>
             <p style={{ margin:'0 0 0.85rem', fontWeight:600, color:'var(--ink)', fontSize:'0.98rem' }}>{OPEN_Q}</p>
             <textarea value={openAns} onChange={e=>setOpenAns(e.target.value)} placeholder="Schreib deine Antwort hier..." rows={3} style={{ width:'100%', padding:'0.75rem 1rem', borderRadius:10, resize:'vertical', border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)', fontSize:'0.95rem', fontFamily:'inherit', boxSizing:'border-box' }}/>
+            <WritingFeedbackReview text={openAns} assignment={{ title: 'Anna verstehen — offene Frage', language: 'alemán o español según la respuesta', level: 'A1', prompt: OPEN_Q, sourceText: READING_TEXT, objectives: ['Explicar qué aprende Anna y qué le gusta'], focus: ['Responder con una frase clara'] }} />
           </div>
           {allDone&&<button className="btn btn-sm" onClick={() => setPhase('done')}>Ver resultado →</button>}
         </div>
@@ -262,6 +264,7 @@ function EscrituraA1() {
           {VOCAB_BANK.map(v=><button key={v} onClick={() => setText(p=>p?`${p} ${v}`:v)} style={{ fontSize:'0.82rem', padding:'0.3rem 0.7rem', borderRadius:8, border:`1px solid rgba(221,0,0,0.25)`, background:`rgba(221,0,0,0.06)`, color:COLOR, cursor:'pointer', fontFamily:'inherit' }}>{v}</button>)}
         </div>
       </div>
+      <WritingFeedbackReview text={text} assignment={{ title: 'Escritura A1 — presentación personal', language: 'alemán', level: 'A1', prompt: WRITING_PROMPT, objectives: ['Escribir tres frases para presentarse'], focus: ['Orden de palabras', 'Presente', 'Preposición de lugar in'] }} />
       <button className="btn btn-sm" disabled={words<8} onClick={() => setSubmitted(true)} style={{ opacity:words<8?0.5:1 }}>Senden →</button>
     </div>
   );

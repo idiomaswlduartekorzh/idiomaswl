@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CYCLE_TEXTS, type CycleText, type Nivel, type QuizLevel, type Question } from '@/data/korean-cycle-texts';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -659,6 +660,8 @@ function StepComprension({
             key={`${quizLevel}-${i}`}
             question={q}
             idx={i}
+            currentText={text}
+            nivel={text.nivel}
             answer={answers[i]}
             orderState={orderState[i] ?? []}
             setAnswer={(v) => setAnswer(i, v)}
@@ -705,11 +708,12 @@ function StepComprension({
 // ─── Question card ────────────────────────────────────────────────────────────
 
 function QuestionCard({
-  question, idx, answer, orderState, setAnswer, setOrder, submitted, color,
+  question, idx, answer, orderState, setAnswer, setOrder, submitted, color, currentText, nivel,
 }: {
   question: Question; idx: number; answer: string | boolean | string[] | null;
   orderState: string[]; setAnswer: (v: string | boolean | string[]) => void;
   setOrder: (w: string[]) => void; submitted: boolean; color: string;
+  currentText: CycleText | null; nivel: Nivel | null;
 }) {
   const num = idx + 1;
 
@@ -765,19 +769,22 @@ function QuestionCard({
       )}
 
       {question.type === 'open' && (
-        <textarea
-          placeholder="Escribe tu respuesta aquí…"
-          value={typeof answer === 'string' ? answer : ''}
-          onChange={e => setAnswer(e.target.value)}
-          disabled={submitted}
-          rows={3}
-          style={{
-            width:'100%', padding:'0.75rem', borderRadius:10, fontSize:'0.9rem',
-            border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)',
-            fontFamily:'inherit', resize:'vertical', outline:'none',
-            boxSizing:'border-box',
-          }}
-        />
+        <>
+          <textarea
+            placeholder="Escribe tu respuesta aquí…"
+            value={typeof answer === 'string' ? answer : ''}
+            onChange={e => setAnswer(e.target.value)}
+            disabled={submitted}
+            rows={3}
+            style={{
+              width:'100%', padding:'0.75rem', borderRadius:10, fontSize:'0.9rem',
+              border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)',
+              fontFamily:'inherit', resize:'vertical', outline:'none',
+              boxSizing:'border-box',
+            }}
+          />
+          <WritingFeedbackReview text={typeof answer === 'string' ? answer : ''} assignment={{ title: currentText?.titulo ?? 'Coreano — respuesta abierta', language: question.question.includes('en coreano') ? 'Korean' : 'Spanish', level: nivel ?? 'A1', prompt: question.question, sourceText: currentText?.korean, objectives: ['Responder con información propia o del texto según la consigna'] }} />
+        </>
       )}
     </div>
   );

@@ -3,6 +3,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle2, Headphones, PenLine, RotateCcw } from 'lucide-react';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 const COLOR = '#009246';
 const BLUE = '#0369a1';
@@ -421,6 +422,7 @@ export default function IntegratedOathExercise() {
               placeholder="Scrivi qui la tua risposta in italiano..."
               style={{ width: '100%', boxSizing: 'border-box', resize: 'vertical', minHeight: 230, border: '1.5px solid var(--line-soft)', borderRadius: 14, background: 'var(--bg)', color: 'var(--ink)', padding: '1rem 1.1rem', fontFamily: 'inherit', fontSize: '0.96rem', lineHeight: 1.7, marginBottom: '0.75rem' }}
             />
+            <WritingFeedbackReview text={writing} assignment={{ title: 'Oath of Allegiance — essay', language: 'Italiano', level: 'B2', prompt: WRITING_PROMPT, sourceText: READING_TEXT, objectives: ['Presenta una tesi', 'Sviluppa almeno due argomenti', 'Considera un controargomento'] }} />
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.6rem', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: writingWords >= 120 ? GREEN : 'var(--muted)', fontWeight: 800 }}>{writingWords} parole</span>
               <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>

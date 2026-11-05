@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 type Skill = 'lectura' | 'gramatica' | 'escritura' | 'habla' | 'escucha';
 
@@ -351,6 +352,7 @@ function EscrituraA1() {
         </div>
         <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Écris ici en français..." rows={6}
           style={{ width:'100%', padding:'0.85rem 1rem', borderRadius:10, resize:'vertical', border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)', fontSize:'0.98rem', fontFamily:'inherit', boxSizing:'border-box', lineHeight:1.8 }} />
+        <WritingFeedbackReview text={text} assignment={{ title: 'Présentation personnelle — écriture A1', language: 'Francés', level: 'A1', prompt: WRITING_PROMPT, objectives: ['Escribe 3 frases sobre nombre, edad, residencia, actividad y gustos'] }} />
       </div>
       <div className="wl-card" style={{ padding:'1.25rem' }}>
         <p style={{ margin:'0 0 0.65rem', fontSize:'0.8rem', fontWeight:700, color:'var(--muted)', textTransform:'uppercase', letterSpacing:'0.06em', fontFamily:'var(--mono)' }}>Vocabulaire utile — cliquer pour insérer</p>

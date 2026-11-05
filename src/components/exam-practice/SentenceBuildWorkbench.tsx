@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { CheckCircle2, Lightbulb, RotateCcw, XCircle } from 'lucide-react';
 import type { SentenceBuildItem } from '@/data/practica-exams/seo-catalog';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 
 function normalize(text: string) {
   return text
@@ -135,6 +136,7 @@ export default function SentenceBuildWorkbench({
             }}
           />
         </label>
+        <WritingFeedbackReview text={response} assignment={{ title: `Sentence building — ${item.focus}`, language: 'English', level: 'Academic writing practice', prompt: item.prompt, objectives: [item.explanation], focus: [item.focus] }} />
 
         <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
           <button className="btn btn-sm" type="button" onClick={() => setChecked(true)} disabled={!response.trim() || checked}>

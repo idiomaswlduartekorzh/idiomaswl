@@ -2,6 +2,7 @@
 
 import { Fragment, useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import ColoredBodyParagraph from '../body-1/ColoredBodyParagraph';
 import type { ConclusionDrill, EssaySentence } from './conclusion-drills';
 import styles from '../introduccion/page.module.css';
@@ -140,6 +141,7 @@ export default function ConclusionWorkshop({ drill }: { drill: ConclusionDrill }
           />
           <small>{shortOf[index] === 0 ? `At least ${MINIMUM} words — reached` : `At least ${MINIMUM} words · ${shortOf[index]} to go`}</small>
         </label>)}</div>
+        <WritingFeedbackReview text={writing.map((value, index) => `${drill.blocks[index]?.label ?? 'Sentence'}: ${value}`).join('\n')} assignment={{ title: `${drill.title} — conclusion`, language: 'English', level: 'IELTS Academic Task 2', prompt: drill.prompt, objectives: drill.blocks.map((block) => block.purpose), focus: drill.blocks.map((block) => block.label) }} />
         <div className={styles.workshopActions}>
           <button type="button" onClick={() => setShowModel(true)} disabled={!ready}><Eye size={17} /> Show me the model conclusion</button>
         </div>

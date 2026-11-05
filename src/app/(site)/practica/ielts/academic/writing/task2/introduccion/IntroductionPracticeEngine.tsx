@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, CheckCircle2, Clock3, Layers3, RotateCcw, XCircle } from 'lucide-react';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import {
   ALIGNMENT_ITEMS,
   ESSAY_TYPES,
@@ -197,6 +198,7 @@ function ProductionLevel({ kind, essayType, onNext }: { kind: 'sentence' | 'intr
         placeholder={kind === 'sentence' ? 'Write one controlling sentence...' : 'Paraphrase the topic, then write the thesis...'}
       />
       <div className={styles.writerMeta}><span>{words} words</span><span>WeLearn self-review, not automated band scoring</span></div>
+      <WritingFeedbackReview text={value} assignment={{ title: `${lesson.shortLabel} — ${kind === 'sentence' ? 'thesis sentence' : 'introduction'}`, language: 'English', level: 'IELTS Academic Task 2', prompt: `${example.prompt}\n\n${kind === 'sentence' ? 'Write one thesis sentence that gives the essay a clear route.' : 'Write a complete introduction using only the blocks this prompt needs.'}`, objectives: example.blocks.map((block) => block.label), focus: example.whyItWorks }} />
       {reviewed && (
         <div className={styles.checkList} aria-live="polite">
           {checks.map((check) => (
@@ -260,6 +262,7 @@ function TimedEssayLevel({ essayType }: { essayType: EssayTypeId }) {
         <button type="button" className="btn btn-sm" onClick={() => setRunning((current) => !current)}>{running ? 'Pause timer' : seconds === 40 * 60 ? 'Start timer' : 'Resume timer'}</button>
         <button type="button" className="btn btn-ghost btn-sm" onClick={() => { setRunning(false); setSeconds(40 * 60); }}>Reset timer</button>
       </div>
+      {seconds === 0 && <WritingFeedbackReview text={essay} assignment={{ title: `${lesson.shortLabel} — timed Task 2 essay`, language: 'English', level: 'IELTS Academic', prompt, objectives: reviewItems, focus: ['Complete essay', 'Task response', 'Coherence and cohesion', 'Grammar and vocabulary'] }} />}
       <p className={styles.orientationNote}>This tool supports practice and self-review. It does not estimate an official IELTS band score.</p>
     </div>
   );

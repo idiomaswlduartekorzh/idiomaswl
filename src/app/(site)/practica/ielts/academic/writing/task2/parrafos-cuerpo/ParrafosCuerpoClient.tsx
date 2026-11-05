@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
 import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 import Task2LegoGuide from '../Task2LegoGuide';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import { BODY_DRILLS, BODY_PLANS, DIAGNOSTIC, WORKED_EXAMPLE } from './body-paragraph-drills';
 import styles from '../introduccion/page.module.css';
 
@@ -85,6 +86,15 @@ function Drill({ drill }: { drill: typeof BODY_DRILLS[number] }) {
         </small>
       </label>;
     })}
+
+    <WritingFeedbackReview text={[drill.topicSentence, ...values].join('\n\n')} assignment={{
+      title: `IELTS Task 2 — ${drill.role}`,
+      language: 'English',
+      level: 'IELTS Academic',
+      prompt: drill.prompt,
+      objectives: drill.fields.map(field => `${field.label}: ${field.ask}`),
+      focus: ['Develop one clear body paragraph with connected support.'],
+    }} />
 
     {!assembled && <>
       <div className={styles.workshopActions}>

@@ -20,6 +20,7 @@ import {
 } from '@/data/practica/vocabulario/ejercicios'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
 import { canRenderPdf } from '@/lib/pdf/languages'
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 
 /**
  * Motor único de vocabulario para los ocho idiomas.
@@ -550,6 +551,7 @@ function Sesion({
               placeholder="Tu frase"
               style={{ ...campo, resize: 'vertical' }}
             />
+            <WritingFeedbackReview text={respuesta} assignment={{ title: `Frase propia con ${actual.lemma}`, language: locale, level: 'Vocabulary practice', prompt: `Escribe una frase original con la palabra «${actual.lemma}». No copies el ejemplo: ${actual.ejemplo.target}`, objectives: ['Usar la palabra en una frase propia'], focus: [actual.lemma] }} />
           </>
         )}
 
@@ -657,7 +659,6 @@ function Dictado({ frases, locale, onHecho }: { frases: VocabEntry[]; locale: st
         placeholder="Escribe lo que oyes"
         style={{ ...campo, resize: 'vertical' }}
       />
-
       {corregido && (
         <div style={{ marginTop: '0.8rem', display: 'grid', gap: '0.35rem' }}>
           <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.6 }}>
@@ -697,7 +698,7 @@ function Dictado({ frases, locale, onHecho }: { frases: VocabEntry[]; locale: st
   )
 }
 
-function EscrituraReforzada({ entradas, onSalir }: { entradas: VocabEntry[]; onSalir: () => void }) {
+function EscrituraReforzada({ entradas, locale, onSalir }: { entradas: VocabEntry[]; locale: string; onSalir: () => void }) {
   const [texto, setTexto] = useState('')
 
   const { usadas, frases, listo } = progresoEscritura(texto, entradas)
@@ -719,6 +720,7 @@ function EscrituraReforzada({ entradas, onSalir }: { entradas: VocabEntry[]; onS
         placeholder="My name is… My father is a…"
         style={{ ...campo, resize: 'vertical' }}
       />
+      <WritingFeedbackReview text={texto} assignment={{ title: 'Cierre de unidad de vocabulario', language: locale, level: 'Vocabulary practice', prompt: `Escribe ${MIN_FRASES} frases sobre ti y tu gente usando al menos ${MIN_PALABRAS_USADAS} palabras de esta unidad.`, objectives: [`Usar ${MIN_PALABRAS_USADAS} palabras de vocabulario`, `Escribir ${MIN_FRASES} frases`], focus: entradas.map((entry) => entry.lemma) }} />
 
       {/* La lista se marca sola mientras escribe: el estudiante ve el progreso, no lo adivina */}
       <div style={{ marginTop: '0.8rem', display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
@@ -797,7 +799,7 @@ function CierreDeUnidad({ entradas, locale, onSalir }: { entradas: VocabEntry[];
       {paso === 'dictado' && conAudio ? (
         <Dictado frases={frases} locale={locale} onHecho={() => setPaso('escritura')} />
       ) : (
-        <EscrituraReforzada entradas={entradas} onSalir={onSalir} />
+        <EscrituraReforzada entradas={entradas} locale={locale} onSalir={onSalir} />
       )}
     </div>
   )

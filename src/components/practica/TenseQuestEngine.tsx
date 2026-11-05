@@ -19,6 +19,7 @@ import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 import { normalizeSentenceAnswer } from '@/data/practica/sentence-production'
 import { selectMixedChallenges } from '@/data/practica/tense-quest-selection'
 import type { GapChallenge, TenseQuestConfig } from '@/data/practica/tense-quest-types'
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 
 import s from './TenseQuestEngine.module.css'
 
@@ -1016,6 +1017,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
             value={displayedSentence}
           />
         </label>
+        {!reviewMode && <WritingFeedbackReview text={displayedSentence} assignment={{ title: `${languageSlug} tense sentence`, language: copy.languageCode, level: 'Grammar practice', prompt: challenge.prompt, objectives: ['Escribir una oración completa con la forma verbal correcta'], focus: [challenge.id] }} />}
       </>
     )
   }
@@ -1051,6 +1053,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                   value={reviewMode ? slot.production?.answers[0] ?? slot.answer : timelineAnswers[slot.id] ?? ''}
                 />
               </label>
+              {!reviewMode && <WritingFeedbackReview text={timelineAnswers[slot.id] ?? ''} assignment={{ title: `${languageSlug} timeline sentence`, language: copy.languageCode, level: 'Grammar practice', prompt: `Reconstruye la oración a partir de: ${slot.production?.tokens.join(' ') ?? slot.answer}`, objectives: ['Conjugar el verbo y ordenar los elementos para escribir la oración completa'], focus: [slot.production?.verb ?? 'orden de palabras'] }} />}
             </div>
           ))}
         </div>

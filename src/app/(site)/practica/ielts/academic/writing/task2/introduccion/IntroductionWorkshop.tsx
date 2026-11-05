@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
 import type { GuidedExample } from './introduction-data';
 import { placeOption } from '@/lib/practica/shuffle-options';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import styles from './page.module.css';
 
 /**
@@ -191,6 +192,17 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
             <small>{words(written.premises)} words · minimum 6</small>
           </label>
         </div>
+        <WritingFeedbackReview
+          text={[written.hook, written.paraphrase, written.position, written.premises].filter(Boolean).join('\n\n')}
+          assignment={{
+            title: `IELTS introduction — ${essayType}`,
+            language: 'English',
+            level: 'IELTS Academic',
+            prompt: example.prompt,
+            objectives: ['Paraphrase the question without copying', 'State a clear position', 'Preview two distinct reasons'],
+            focus: ['A complete, focused introduction', 'Clear task response and grammatical accuracy'],
+          }}
+        />
         <div className={styles.workshopActions}>
           <button type="button" onClick={() => setModelVisible(true)} disabled={!writingReady}><Eye size={17} /> Show me the model</button>
         {!writingReady && <p className={styles.unlockHint}>{missingWords} more word{missingWords === 1 ? '' : 's'} to go before you can compare.</p>}

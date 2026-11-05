@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import type { IntegratedWritingExercise, RequiredWritingTerm } from '@/data/practica/writing-integrated'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 
 type Stage = 'select' | 'read' | 'prepare' | 'write' | 'review'
 
@@ -286,6 +287,15 @@ function IntegratedWritingPracticeContent({ exercises }: { exercises: Integrated
                 placeholder={`Escribe aquí tu respuesta en ${exercise.languageLabel.toLowerCase()}...`}
               />
             </div>
+            <WritingFeedbackReview text={text} assignment={{
+              title: exercise.title,
+              language: exercise.languageNative,
+              level: exercise.level.toUpperCase(),
+              prompt: exercise.prompt,
+              sourceText: exercise.readingText,
+              objectives: exercise.successCriteria,
+              focus: exercise.readingFocus,
+            }} />
             <div className="writing-integrated__checks">
               <span className={enoughWords ? 'is-ok' : ''}>{words}/{exercise.minWords} palabras mínimas</span>
               <span className={enoughTerms ? 'is-ok' : ''}>{usedTerms.length}/{exercise.requiredCount} vocabulario usado</span>

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
 import { countWords, type GuidedExercise } from './skill-blueprint';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import styles from '../task2/introduccion/page.module.css';
 
 /**
@@ -92,6 +93,13 @@ export default function GuidedPractice({
                   />
                   <small>{countWords(written[index])} words · minimum {step.minWords}</small>
                 </label>
+                <WritingFeedbackReview text={written[index]} assignment={{
+                  title: exercise.brief,
+                  language: 'English',
+                  level: 'IELTS Academic',
+                  prompt: [exercise.goal, step.instruction, step.hint].join('\n\n'),
+                  focus: [step.instruction],
+                }} />
 
                 <div className={styles.workshopActions}>
                   <button type="button" disabled={!enough || revealed[index]}

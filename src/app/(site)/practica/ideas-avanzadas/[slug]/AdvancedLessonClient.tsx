@@ -20,6 +20,7 @@ import {
 } from 'lucide-react'
 import type { AdvancedLesson, AdvancedQuestion } from '@/data/practica/advanced-topics'
 import { ADVANCED_CYCLE } from '@/data/practica/advanced-topics'
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 import styles from './AdvancedLesson.module.css'
 
 interface SavedLessonState {
@@ -416,6 +417,7 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                   onChange={(event) => setDraft(event.target.value)}
                   placeholder={lesson.production.placeholder}
                 />
+                <WritingFeedbackReview text={draft} assignment={{ title: lesson.production.title, language: 'English', level: 'Advanced English', prompt: lesson.production.prompt, objectives: lesson.production.checklist, focus: [lesson.production.title] }} />
                 <div className={styles.checklist}>
                   {lesson.production.checklist.map((item, index) => (
                     <label key={item}>

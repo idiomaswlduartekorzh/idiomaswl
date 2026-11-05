@@ -23,6 +23,7 @@ import type {
   GuidedChoiceQuestion,
 } from '@/data/practica/advanced-guided-topics'
 import { GUIDED_ADVANCED_PHASES } from '@/data/practica/advanced-guided-topics'
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 import LocalVoiceRecorder from './LocalVoiceRecorder'
 import styles from './GuidedAdvancedLesson.module.css'
 
@@ -671,6 +672,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                   <small>{draft.trim() ? draft.trim().split(/\s+/).length : 0} words</small>
                   <textarea value={draft} onChange={(event) => setDraft(event.target.value)} placeholder="A feeling deserves attention, but it does not answer every question…" />
                 </label>
+                <WritingFeedbackReview text={draft} assignment={{ title: 'Guided advanced reading synthesis', language: 'English', level: 'Advanced English', prompt: lesson.synthesis.prompt, objectives: lesson.synthesis.checklist, focus: ['Synthesize the reading in your own words'] }} />
                 <div className={styles.checklist}>
                   {lesson.synthesis.checklist.map((item, index) => (
                     <label key={item}>

@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, Eye, RotateCcw } from 'lucide-react';
 import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import { BANK_BY_FAMILY, TASK2_PROMPT_BANK, type BankPrompt } from './task2-prompt-bank';
 import styles from '../introduccion/page.module.css';
 
@@ -286,6 +287,14 @@ export default function TareaCompletaTask2Client() {
           aria-label="Your complete essay"
           onChange={(event) => setText(event.target.value)}
           placeholder="Introduction · Body 1 · Body 2 · Conclusion" />
+        {p && <WritingFeedbackReview text={text} assignment={{
+          title: p.title,
+          language: 'English',
+          level: 'IELTS Academic',
+          prompt: p.prompt,
+          objectives: GENERAL_CHECKS,
+          focus: CRITERIA.map(item => `${item.name}: ${item.desc}`),
+        }} />}
 
         <div className={styles.workshopActions}>
           <button type="button" className={styles.secondaryButton} onClick={() => setPhase('plan')}><ArrowLeft size={16} /> Back to the plan</button>

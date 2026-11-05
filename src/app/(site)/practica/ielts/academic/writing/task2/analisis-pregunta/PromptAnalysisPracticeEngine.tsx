@@ -5,6 +5,7 @@ import { ArrowRight, Check, RotateCcw } from 'lucide-react';
 import type { EssayTypeId } from '../introduccion/introduction-data';
 import { PROMPT_ANALYSIS_LESSONS } from './prompt-analysis-data';
 import { ANALYSIS_DRILLS, writingExample } from './analysis-drills';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import styles from '../introduccion/page.module.css';
 
 /**
@@ -90,6 +91,13 @@ export default function PromptAnalysisPracticeEngine({ essayType }: { essayType:
                     apagado sin decir por qué es lo que hacía que la gente se quedara ahí. */}
                 <span>{missingWords === 0 ? `Minimum ${requiredWords} words reached · you can compare now` : `Minimum ${requiredWords} words · ${missingWords} to go before you can compare`}</span>
               </div>
+              <WritingFeedbackReview text={writing} assignment={{
+                title: `${lesson.shortLabel} — ${LEVELS[level].title}`,
+                language: 'English',
+                level: 'IELTS Academic',
+                prompt: [prompt, LEVELS[level].instruction].join('\n\n'),
+                objectives: example.map.checklist,
+              }} />
             </>
           : <div className={styles.optionGrid}>{drill!.options.map((option, index) => <button
               key={option.text}

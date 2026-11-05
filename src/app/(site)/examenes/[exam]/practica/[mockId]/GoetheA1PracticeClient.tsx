@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { AudioPlayer, Timer } from '@/components/exam-runner/primitives';
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import type { Exam } from '@/data/exams';
 import type { FormGroupQuestion, MCQQuestion, MockExam, MockSection, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
 import GOETHE_A1_PUBLIC_VISUALS from '@/data/mocks/goethe-a1-public-visuals.json';
@@ -495,6 +496,13 @@ function WritingModule({ mock, formValues, onFormChange, textValue, onTextChange
             <label htmlFor={writing.id}>Ihre Nachricht</label>
             <textarea id={writing.id} value={textValue} onChange={event => onTextChange(event.target.value)} disabled={showResult} rows={9} />
             <p className={`${styles.wordCount} ${wordCount(textValue) >= 30 ? styles.wordCountReady : ''}`}>{wordCount(textValue)} Wörter · Ziel: circa 30</p>
+            <WritingFeedbackReview text={textValue} assignment={{
+              title: writing.stimulusLabel,
+              language: 'German',
+              level: 'A1',
+              prompt: [writing.stimulusLabel, writing.stimulus, writing.text].filter(Boolean).join('\n\n'),
+              focus: ['Escribe un mensaje breve y comprensible, con saludos y datos pedidos por la consigna.'],
+            }} />
           </div>
         )}
       </SectionShell>

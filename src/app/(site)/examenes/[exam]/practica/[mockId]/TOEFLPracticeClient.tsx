@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import { ExamReport } from '@/components/ExamReport';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeToeflMock } from '@/lib/labs/exam-bridge/toefl';
@@ -120,6 +121,13 @@ function WriteView({ q, value, onChange }: { q: WriteQuestion; value: string; on
           {words} words {words < q.minWords ? `(min ${q.minWords})` : ''}
         </span>
       </div>
+      <WritingFeedbackReview text={value} assignment={{
+        title: `TOEFL Writing Task ${q.taskNumber}`,
+        language: 'English',
+        level: 'TOEFL',
+        prompt: [q.stimulusLabel, q.stimulus, q.text].filter(Boolean).join('\n\n'),
+        focus: [q.taskNumber === 1 ? 'Write an email for the stated purpose and audience.' : 'Contribute a supported response to the academic discussion.'],
+      }} />
     </div>
   );
 }

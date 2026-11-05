@@ -29,6 +29,7 @@ import type {
 } from '@/data/mocks/types';
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
+import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 import ExamPracticeDownloads from '@/components/exams/ExamPracticeDownloads';
 import { unlockExamMock } from '@/lib/actions/unlockExamMock';
@@ -69,6 +70,11 @@ const SKILL_LABEL: Record<string, string> = {
 const GOETHE_SKILL_LABEL: Record<string, string> = {
   listening: 'Hören', reading: 'Lesen', writing: 'Schreiben',
   speaking: 'Sprechen', general: 'Allgemein',
+};
+
+const EXAM_WRITING_LANGUAGE: Record<string, string> = {
+  goethe: 'German', 'cambridge-b2': 'English', 'cils-celi': 'Italian',
+  'delf-dalf': 'French', 'celpe-bras': 'Portuguese',
 };
 
 type FocusedPractice = {
@@ -403,10 +409,14 @@ function WriteRenderer({
   q,
   value,
   onChange,
+  language,
+  level,
 }: {
   q: WriteQuestion;
   value: string;
   onChange: (v: string) => void;
+  language: string;
+  level: string;
 }) {
   const words = value.trim() ? value.trim().split(/\s+/).length : 0;
   const enough = words >= q.minWords;
@@ -426,6 +436,12 @@ function WriteRenderer({
       <p className={`lang-write__count${enough ? ' lang-write__count--ok' : ''}`}>
         {words} / {q.minWords} palabras {enough ? '✓' : ''}
       </p>
+      <WritingFeedbackReview text={value} assignment={{
+        title: q.stimulusLabel ?? 'Writing task',
+        language,
+        level,
+        prompt: [q.stimulusLabel, q.stimulus, q.text].filter(Boolean).join('\n\n'),
+      }} />
     </div>
   );
 }
@@ -1105,6 +1121,8 @@ function SectionView({
   onMatch,
   showResults,
   goethePractice = false,
+  writingLanguage,
+  writingLevel,
 }: {
   section: MockSection;
   mcqAnswers: Record<string, number>;
@@ -1123,6 +1141,8 @@ function SectionView({
   onMatch: (id: string, num: number, v: string) => void;
   showResults: boolean;
   goethePractice?: boolean;
+  writingLanguage: string;
+  writingLevel: string;
 }) {
   if (goethePractice && section.skill !== 'writing') {
     return (
@@ -1207,6 +1227,8 @@ function SectionView({
                 q={q as WriteQuestion}
                 value={writeAnswers[q.id] ?? ''}
                 onChange={v => onWrite(q.id, v)}
+                language={writingLanguage}
+                level={writingLevel}
               />
             );
           }
@@ -1867,6 +1889,8 @@ export default function LanguagePracticeClient({
             onMatch={handleMatch}
             showResults={false}
             goethePractice={goetheWorksheetLayout}
+            writingLanguage={EXAM_WRITING_LANGUAGE[exam.slug] ?? exam.name}
+            writingLevel={focusedPractice?.level ?? exam.name}
           />
         ))}
 
