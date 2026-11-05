@@ -20,6 +20,7 @@
 /output/ielts-asr/
 /output/ielts-audio/
 /output/ielts-audio-repairs/
+/output/youtube/
 
 # next.js
 /.next/
