@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { COURSE_TERMS, PRIVACY_NOTICE, PRIVACY_VERSION, TERMS_VERSION } from '@/lib/course-pricing/terms';
 
 const inputStyle: React.CSSProperties = { width: '100%', padding: '12px', border: '1px solid #aab3c8', borderRadius: 8, fontSize: 16, color: '#142457', background: '#fff' };
@@ -11,6 +11,15 @@ export default function ManualEnrollmentForm({ token, email, schedule, alreadySi
   const [done, setDone] = useState(false);
   const [message, setMessage] = useState('');
   const [read, setRead] = useState(false);
+  const detailsForm = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!read) return;
+    detailsForm.current?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start',
+    });
+  }, [read]);
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -46,10 +55,11 @@ export default function ManualEnrollmentForm({ token, email, schedule, alreadySi
     <p><a href="/reglamento/archivo" target="_blank" rel="noopener noreferrer">Abrir copia del reglamento en PDF</a></p>
     {COURSE_TERMS.map((section, index) => <section key={section.title} style={{ padding: '18px 0', borderBottom: '1px solid #d9dfec' }}><h3>{index + 1}. {section.title}</h3><p style={{ whiteSpace: 'pre-line', lineHeight: 1.6 }}>{section.text}</p></section>)}
     <label style={{ ...labelStyle, background: '#fff3e8', padding: 16, borderRadius: 8 }}><input type="checkbox" checked={read} onChange={event => setRead(event.target.checked)} required /> <strong>Leí y acepto el reglamento completo.</strong> Entiendo las reglas sobre programación, ausencias y devoluciones.</label>
-    {read && <section><h2>2. Tus datos y firma</h2>
+    {read && <section ref={detailsForm} style={{ scrollMarginTop: 24 }}><h2>2. Tus datos y firma</h2>
       <p>El correo de la cuenta será <strong>{email}</strong>.</p>
       <label style={labelStyle}>Nombre completo del estudiante<input name="studentName" required minLength={2} maxLength={100} autoComplete="name" style={inputStyle} /></label>
-      <label style={labelStyle}>WhatsApp con código de país<input name="phone" required type="tel" placeholder="+573001234567" pattern="\+[1-9][0-9]{7,14}" style={inputStyle} /></label>
+      <label style={labelStyle}>Número de WhatsApp<input name="phone" required type="tel" inputMode="tel" autoComplete="tel" placeholder="3001234567" maxLength={22} aria-describedby="manual-phone-help" style={inputStyle} /></label>
+      <p id="manual-phone-help">En Colombia, escribe solo los 10 dígitos; agregamos +57 automáticamente. No necesitas conocer el código de país. Si tu número es de otro país, escribe + y su código.</p>
       <label style={labelStyle}>Ciudad y país<input name="city" required minLength={2} maxLength={100} style={inputStyle} /></label>
       <label style={labelStyle}>Dirección de residencia<input name="address" required minLength={5} maxLength={180} style={inputStyle} /></label>
       <label style={labelStyle}>Propósito del curso<textarea name="purpose" required minLength={10} maxLength={500} rows={3} style={inputStyle} /></label>
