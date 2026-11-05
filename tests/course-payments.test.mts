@@ -17,6 +17,7 @@ test('server calculates price and requires current explicit legal acceptance',()
  assert.equal(parseOrderInput({...input,contact:{...input.contact,phone:'57 (300) 123-4567'}})?.contact.phone,'+573001234567');
  assert.equal(parseOrderInput({...input,contact:{...input.contact,phone:'+1 (415) 555-2671'}})?.contact.phone,'+14155552671');
  assert.equal(parseOrderInput({...input,contact:{...input.contact,address:'x'}}),null);
+ assert.equal(parseOrderInput({...input,contact:{...input.contact,purpose:''}})?.contact.purpose,'');
  assert.equal(parseOrderInput({...input,contact:{...input.contact,signerName:'Otra Persona'}}),null);
  assert.equal(COURSE_LEGAL_READY,true,'Approved terms can proceed when the operational sales flag is enabled');
 });
