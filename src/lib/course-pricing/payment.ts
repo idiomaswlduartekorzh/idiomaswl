@@ -1,5 +1,6 @@
 import { CATALOG_VERSION, selectionDetails, type Selection } from './catalog.ts';
 import { TERMS_VERSION, PRIVACY_VERSION } from './terms.ts';
+import { normalizeWhatsAppPhone } from './phone.ts';
 export { TERMS_VERSION } from './terms.ts';
 export type Contact = { studentName: string; studentEmail: string; payerName: string; phone: string; address: string; city: string; purpose: string; signerName: string };
 function cleanText(value: unknown, min: number, max: number) {
@@ -20,8 +21,9 @@ export function parseOrderInput(value: unknown) {
     const studentName=cleanText(c.studentName,2,100),payerName=cleanText(c.payerName,2,100),address=cleanText(c.address,5,180),city=cleanText(c.city,2,100),purpose=cleanText(c.purpose,10,500),signerName=cleanText(c.signerName,2,100);
     if (!studentName || !payerName || !address || !city || !purpose || !signerName || comparableName(signerName)!==comparableName(payerName)) return null;
     if (typeof c.studentEmail !== 'string' || c.studentEmail.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.studentEmail.trim())) return null;
-    if (typeof c.phone !== 'string' || !/^\+[1-9]\d{7,14}$/.test(c.phone.trim())) return null;
-    return { idempotencyKey:x.idempotencyKey, selection:{language:s.language,objective:s.objective,plan:s.plan,level:s.level}, contact:{studentName,studentEmail:c.studentEmail.trim().toLowerCase(),payerName,phone:c.phone.trim(),address,city,purpose,signerName}, offerVersion:CATALOG_VERSION, amountInCents:details.plan.price*100, classes:details.classes, termsVersion:TERMS_VERSION, acceptance:{termsVersion:TERMS_VERSION,privacyVersion:PRIVACY_VERSION,adultConfirmed:true,termsReviewed:true,signedBy:signerName,signatureMethod:'typed-full-name' as const} };
+    const phone = normalizeWhatsAppPhone(c.phone);
+    if (!phone) return null;
+    return { idempotencyKey:x.idempotencyKey, selection:{language:s.language,objective:s.objective,plan:s.plan,level:s.level}, contact:{studentName,studentEmail:c.studentEmail.trim().toLowerCase(),payerName,phone,address,city,purpose,signerName}, offerVersion:CATALOG_VERSION, amountInCents:details.plan.price*100, classes:details.classes, termsVersion:TERMS_VERSION, acceptance:{termsVersion:TERMS_VERSION,privacyVersion:PRIVACY_VERSION,adultConfirmed:true,termsReviewed:true,signedBy:signerName,signatureMethod:'typed-full-name' as const} };
   } catch { return null; }
 }
 export type ProviderPayment = { id: string; reference: string; amount_in_cents: number; currency:'COP'; status:'PENDING'|'APPROVED'|'DECLINED'|'ERROR'|'VOIDED' };

@@ -1,7 +1,8 @@
 'use client';
 
-import { Fragment, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { selectionPath, type Selection } from '@/lib/course-pricing/catalog';
+import { normalizeWhatsAppPhone } from '@/lib/course-pricing/phone';
 import { TERMS_VERSION, PRIVACY_VERSION, PRIVACY_NOTICE, COURSE_TERMS, COURSE_LEGAL_READY } from '@/lib/course-pricing/terms';
 import styles from './course-pricing.module.css';
 
@@ -24,11 +25,29 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
   const [message, setMessage] = useState('');
   const [acceptedRules, setAcceptedRules] = useState(false);
   const key = useRef<string | null>(null);
+  const unlockedForm = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!acceptedRules) return;
+    unlockedForm.current?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start',
+    });
+  }, [acceptedRules]);
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (busy || !acceptedRules || !salesEnabled) return;
-    const form = new FormData(event.currentTarget);
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
+    const phoneField = formElement.elements.namedItem('phone') as HTMLInputElement;
+    const phone = normalizeWhatsAppPhone(form.get('phone'));
+    if (!phone) {
+      phoneField.setCustomValidity('Escribe los 10 dígitos de Colombia o, si tu número es de otro país, inclúyelo con + y su código.');
+      phoneField.reportValidity();
+      return;
+    }
+    phoneField.setCustomValidity('');
     setBusy(true);
     setMessage('');
     try {
@@ -48,7 +67,7 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
             studentName: form.get('studentName'),
             studentEmail: form.get('studentEmail'),
             payerName: form.get('payerName'),
-            phone: form.get('phone'),
+            phone,
             address: form.get('address'),
             city: form.get('city'),
             purpose: form.get('purpose'),
@@ -99,22 +118,22 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
 
     {!acceptedRules ? <div className={styles.formLocked} aria-live="polite">
       <span aria-hidden="true">🔒</span>
-      <p><strong>El formulario se desbloquea al confirmar la lectura.</strong><br />Después podrás ingresar los datos de contratación, firmar electrónicamente y continuar al pago.</p>
-    </div> : <div className={styles.formUnlocked}>
+      <p><strong>Marca la casilla de arriba para abrir el formulario.</strong><br />Te llevaremos directamente a los datos para que puedas continuar.</p>
+    </div> : <div ref={unlockedForm} className={styles.formUnlocked} style={{ scrollMarginTop: 24 }}>
       <p className={styles.eyebrow}>03 / DATOS Y FIRMA</p>
       <h3>Completa la contratación</h3>
       <p className={styles.small}>Después de confirmar el pago crearemos la cuenta del estudiante y enviaremos el acceso a este correo.</p>
       <div className={styles.fields}>
         <label>Nombre del estudiante<input name="studentName" autoComplete="name" required minLength={2} maxLength={100} /></label>
         <label>Correo del estudiante<input name="studentEmail" type="email" autoComplete="email" required maxLength={254} /></label>
-        <label>WhatsApp con código de país<input name="phone" type="tel" autoComplete="tel" placeholder="+573001234567" pattern="\+[1-9][0-9]{7,14}" required aria-describedby="phone-help" /></label>
+        <label>Número de WhatsApp<input name="phone" type="tel" inputMode="tel" autoComplete="tel" placeholder="3001234567" maxLength={22} required aria-describedby="phone-help" onChange={event => event.currentTarget.setCustomValidity('')} /></label>
         <label>Ciudad y país<input name="city" autoComplete="address-level2" placeholder="Bucaramanga, Colombia" required minLength={2} maxLength={100} /></label>
         <label className={styles.fieldWide}>Dirección de residencia<input name="address" autoComplete="street-address" required minLength={5} maxLength={180} /></label>
         <label className={styles.fieldWide}>Propósito del curso<textarea name="purpose" placeholder="Por ejemplo: prepararme para IELTS Academic y mejorar mi escritura." required minLength={10} maxLength={500} rows={4} /></label>
         <label>Nombre de quien paga<input name="payerName" autoComplete="cc-name" required minLength={2} maxLength={100} /></label>
         <label>Firma electrónica<input name="signerName" autoComplete="name" required minLength={2} maxLength={100} aria-describedby="signature-help" /></label>
       </div>
-      <p id="phone-help" className={styles.small}>Usa + y el código de país, sin espacios. Si el estudiante es menor, continúa su madre, padre o representante.</p>
+      <p id="phone-help" className={styles.small}>En Colombia, escribe solo los 10 dígitos; agregamos +57 automáticamente. No necesitas conocer el código de país. Si tu número es de otro país, escribe + y su código. Si el estudiante es menor, continúa su madre, padre o representante.</p>
       <p id="signature-help" className={styles.signatureHelp}><strong>Escribe exactamente el mismo nombre de quien paga.</strong> Este nombre será tu firma electrónica. Guardaremos la fecha, la versión y la huella del reglamento aceptado.</p>
       <div className={styles.agreements}>
         <label><input name="privacy" type="checkbox" required /> {PRIVACY_NOTICE}</label>
