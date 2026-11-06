@@ -5,6 +5,24 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Centro de juegos de rol de Práctica — 6 de noviembre de 2026
+
+Rama `codex/speaking-roleplay-20261106`, creada desde `origin/main@bb26e495` en un worktree
+aislado y actualizada a `origin/main@020369e0` antes de su entrega. Estado:
+`EN_VALIDACION`, sin integración ni despliegue. Las 200 situaciones y 400 fichas
+publicadas conservan su contenido. El hub presenta la elección como centro de juegos de rol;
+cada papel muestra una mesa con encargo, datos y documentos, vocabulario y cierre. El caso
+«La licuadora fue un regalo» incorpora una búsqueda simulada del registro de regalos y una
+nota de decisión local, usando el resultado de la carta ya publicada en su turno original.
+
+Pasaron `check:habla-acompanada` (200 escenarios), `check:habla-release:a2` (20/20 y cinco
+perfiles), `check:practica-catalog`, TypeScript y el build completo de 3.688 páginas. En el
+servidor de producción local respondieron 200 el hub, el caso, ambos roles y una ficha A1;
+slug y rol inválidos respondieron 404. La comprobación de HTML confirmó que el papel de la
+tienda no recibe el correo ni los datos privados de la clienta. La inspección visual de
+escritorio y móvil sigue pendiente porque el navegador integrado no estuvo disponible en esta
+sesión; por eso la rama no se declara lista para producción.
+
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
 
 Rama `codex/aleman-a1-ai-feedback`, actualizada desde `origin/main@e6c9a1448`.

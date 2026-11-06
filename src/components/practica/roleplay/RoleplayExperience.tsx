@@ -17,6 +17,8 @@ import {
   type RoleplaySet,
 } from '@/data/practica/habla-acompanado'
 import RoleplayCardScreen from './RoleplayCardScreen'
+import RoleplayRegistryLookup from './RoleplayRegistryLookup'
+import RoleplayWorkspace from './RoleplayWorkspace'
 import ShareRoleLink from './ShareRoleLink'
 import { Blocks, inline } from './RoleplayMarkup'
 import s from './roleplay.module.css'
@@ -100,14 +102,14 @@ export function SpeakingModeHub({ set }: { set: RoleplaySet }) {
 
             <Link className="wlp-card wlp-card--path" href={accompaniedSpeakingPath(set.language, set.level)}>
               <span className="wlp-eyebrow wlp-eyebrow--card">En pareja</span>
-              <h3>Habla acompañada</h3>
-              <p>{set.scenarios.length} situaciones reales con información distinta para cada rol.</p>
+              <h3>Centro de juegos de rol</h3>
+              <p>{set.scenarios.length} situaciones reales. Elige un papel, prepara tu mesa de trabajo y resuelve el caso hablando.</p>
               <ul className={s.cardFacts}>
                 <li>Dos personas y dos pantallas</li>
                 <li>{level.minutes} minutos por escenario</li>
                 <li>Decisiones sin guion preparado</li>
               </ul>
-              <strong>Elegir un juego de rol →</strong>
+              <strong>Entrar al centro →</strong>
             </Link>
           </div>
         </section>
@@ -136,23 +138,23 @@ export function RoleplayHub({ set }: { set: RoleplaySet }) {
         </nav>
 
         <header className="wlp-hero wlp-hero--compact">
-          <p className="wlp-eyebrow">Roleplay · {language.label} {level.label}</p>
-          <h1>Habla acompañada</h1>
+          <p className="wlp-eyebrow">Speaking · {language.label} {level.label}</p>
+          <h1>Centro de juegos de rol</h1>
           <p className="wlp-hero-lead">
-            Dos personas reciben información diferente y necesitan llegar a una salida hablando
-            en {language.labelLower}. No hay respuestas correctas ni un diálogo que memorizar.
+            Entra en una situación, elige tu papel y usa los datos y herramientas de tu rol para
+            resolverla hablando en {language.labelLower}.
           </p>
           <ol className={s.steps}>
-            <li><strong>1.</strong> Elijan una situación.</li>
-            <li><strong>2.</strong> Repartan los roles A y B sin leer la ficha ajena.</li>
-            <li><strong>3.</strong> Abran cada ficha en un dispositivo distinto y hablen.</li>
+            <li><strong>1.</strong> Elijan un caso y repartan los dos papeles.</li>
+            <li><strong>2.</strong> Cada quien abre su mesa de juego sin mirar la del otro.</li>
+            <li><strong>3.</strong> Consulten sus recursos y lleguen a una decisión hablando.</li>
           </ol>
         </header>
 
         <section className="wlp-section" aria-labelledby="scenarios-title">
           <div className="wlp-section-heading">
-            <h2 id="scenarios-title">{set.scenarios.length} situaciones</h2>
-            <p>Empiecen por la primera o elijan la que más se parezca a una conversación real.</p>
+            <h2 id="scenarios-title">{set.scenarios.length} casos para jugar</h2>
+            <p>Elijan una situación. Cada caso abre dos papeles distintos y una mesa de trabajo para cada persona.</p>
           </div>
 
           <div className={s.scenarioGrid}>
@@ -162,12 +164,13 @@ export function RoleplayHub({ set }: { set: RoleplaySet }) {
                 <span className="wlp-eyebrow wlp-eyebrow--card" lang={language.htmlLang}>{scenario.titleTarget}</span>
                 <h3>{scenario.title}</h3>
                 <p>{scenario.settingEs}</p>
+                {scenario.id === 'ingles-a2-the-blender-was-a-gift' ? <span className={s.interactiveBadge}>Incluye consulta de pedido</span> : null}
                 <ul className={s.meta} aria-label="Datos del ejercicio">
                   <li className={s.metaItem}><strong>{scenario.minutes}</strong> min</li>
                   <li className={s.metaItem}><strong>{scenario.turnsPerRole}</strong> turnos por rol</li>
                   <li className={s.metaItem}><strong>2</strong> personas</li>
                 </ul>
-                <strong>Preparar la conversación →</strong>
+                <strong>Elegir papeles →</strong>
               </Link>
             ))}
           </div>
@@ -200,8 +203,9 @@ function RoleChoice({ scenario, role }: { scenario: RoleplayScenario; role: Role
       </div>
       <h3>{role.nameEs}</h3>
       <p lang={ROLEPLAY_LANGUAGES[scenario.language].htmlLang}>{role.name}</p>
+      <p className={s.roleChoiceHint}>{scenario.initiator === role.id ? 'Abre la conversación.' : 'Responde cuando la otra persona empiece.'} Tendrás tu encargo, tus datos y tu vocabulario en una mesa propia.</p>
       <div className={s.roleActions}>
-        <Link className="wlp-btn" href={href}>Abrir ficha {role.id.toUpperCase()}</Link>
+        <Link className="wlp-btn" href={href}>Elegir este papel →</Link>
         <ShareRoleLink href={href} label={`Compartir rol ${role.id.toUpperCase()}`} />
       </div>
     </article>
@@ -238,10 +242,10 @@ export function RoleplayScenarioSetup({ scenario }: { scenario: RoleplayScenario
 
         <section className="wlp-section" aria-labelledby="choose-role-title">
           <div className="wlp-section-heading">
-            <h2 id="choose-role-title">Repartan las fichas</h2>
+            <h2 id="choose-role-title">¿Quién serás en esta escena?</h2>
             <p>
-              Cada persona abre únicamente su rol. Si leen la ficha del otro, desaparece la
-              información oculta que sostiene la conversación.
+              Cada persona elige un papel y abre solo su mesa de juego. Así podrán descubrir
+              la información del otro durante la conversación.
             </p>
           </div>
           <div className={s.roleGrid}>
@@ -272,6 +276,27 @@ export function RoleplayScenarioSetup({ scenario }: { scenario: RoleplayScenario
   )
 }
 
+function RoleHeader({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
+  const counterpart = otherRole(scenario, role.id)
+  const language = ROLEPLAY_LANGUAGES[scenario.language]
+  return (
+    <header className="wlp-hero wlp-hero--compact">
+      <p className="wlp-eyebrow">Escenario {scenario.sequence} · Rol {role.id.toUpperCase()}</p>
+      <h1>{role.nameEs}</h1>
+      <p className={s.targetTitle} lang={language.htmlLang}>{role.headline}</p>
+      <div className={s.secretNotice}>
+        <strong>Esta ficha es solo tuya.</strong> La otra persona tiene objetivos y datos distintos.
+        No intercambien pantallas hasta terminar.
+      </div>
+      <ul className={s.meta} aria-label="Datos del ejercicio">
+        <li className={s.metaItem}><strong>{scenario.minutes}</strong> minutos</li>
+        <li className={s.metaItem}><strong>{scenario.turnsPerRole}</strong> turnos tuyos</li>
+        <li className={s.metaItem}><strong>{scenario.initiator === role.id ? 'Tú' : counterpart.nameEs}</strong> empieza</li>
+      </ul>
+    </header>
+  )
+}
+
 function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
   const counterpart = otherRole(scenario, role.id)
   const language = ROLEPLAY_LANGUAGES[scenario.language]
@@ -279,21 +304,7 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
   const accompaniedPath = accompaniedSpeakingPath(scenario.language, scenario.level)
   return (
     <>
-      <header className="wlp-hero wlp-hero--compact">
-        <p className="wlp-eyebrow">Escenario {scenario.sequence} · Rol {role.id.toUpperCase()}</p>
-        <h1>{role.nameEs}</h1>
-        <p className={s.targetTitle} lang={language.htmlLang}>{role.headline}</p>
-        <div className={s.secretNotice}>
-          <strong>Esta ficha es solo tuya.</strong> La otra persona tiene objetivos y datos distintos.
-          No intercambien pantallas hasta terminar.
-        </div>
-        <ul className={s.meta} aria-label="Datos del ejercicio">
-          <li className={s.metaItem}><strong>{scenario.minutes}</strong> minutos</li>
-          <li className={s.metaItem}><strong>{scenario.turnsPerRole}</strong> turnos tuyos</li>
-          <li className={s.metaItem}><strong>{scenario.initiator === role.id ? 'Tú' : counterpart.nameEs}</strong> empieza</li>
-        </ul>
-      </header>
-
+      <RoleplayWorkspace roleName={role.nameEs} brief={<>
       <section className={s.briefing} aria-label="Cómo jugar este rol" lang={language.htmlLang}>
         {role.briefing.map((line) => <p key={line}>{inline(line)}</p>)}
       </section>
@@ -311,7 +322,20 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
           ))}
         </div>
       </section>
-
+      </>} caseFile={<>
+      {scenario.id === 'ingles-a2-the-blender-was-a-gift' && role.id === 'a' ? (
+        <div className={s.resourceCallout}>
+          <strong>Tu sistema: registro de regalos</strong>
+          <p>Pide el nombre y los últimos cuatro dígitos del teléfono de quien compró. En el turno global 5, abre la consulta y busca el pedido con esos datos.</p>
+          <a href="#roleplay-card-trigger">Ir a la consulta cuando llegue el turno →</a>
+        </div>
+      ) : null}
+      {scenario.id === 'ingles-a2-the-blender-was-a-gift' && role.id === 'b' ? (
+        <div className={s.resourceCallout}>
+          <strong>Tu carpeta: prueba de compra</strong>
+          <p>No tienes recibo. El contacto de quien compró el regalo está en tus datos de abajo; puedes dar el nombre y los últimos cuatro dígitos cuando te los pidan.</p>
+        </div>
+      ) : null}
       <section className={s.piece} aria-labelledby="facts-title">
         <p className={s.pieceLabel}>Notas, no frases</p>
         <div className={s.panel}>
@@ -331,7 +355,7 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
           </div>
         </div>
       </section>
-
+      </>} languageTools={<>
       <section className={s.piece} aria-labelledby="vocab-title">
         <p className={s.pieceLabel}>Palabras para esta situación</p>
         <div className={s.panel}>
@@ -386,7 +410,7 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
           </div>
         </div>
       </section>
-
+      </>} close={<>
       {scenario.card.toRole !== role.id ? (
         <div className={s.noCard}><strong>No tienes carta.</strong> Sigue conversando cuando la otra persona abra la suya.</div>
       ) : null}
@@ -421,6 +445,7 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
           ))}
         </ul>
       </section>
+      </>} />
 
       <div className={s.roleSwitch}>
         <p><strong>¿Abriste la ficha equivocada?</strong> Cambia al rol {counterpart.id.toUpperCase()} sin leer más.</p>
@@ -442,6 +467,7 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
 export function RoleplayRolePage({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
   const language = ROLEPLAY_LANGUAGES[scenario.language]
   const accompaniedPath = accompaniedSpeakingPath(scenario.language, scenario.level)
+  const header = <RoleHeader role={role} scenario={scenario} />
   const content = <RoleContent role={role} scenario={scenario} />
   return (
     <div className="wlp-page" style={roleplayStyle()}>
@@ -457,12 +483,16 @@ export function RoleplayRolePage({ scenario, role }: { scenario: RoleplayScenari
         {scenario.card.toRole === role.id ? (
           <RoleplayCardScreen
             afterTurn={scenario.card.afterTurn}
+            heading={header}
+            buttonLabel={scenario.id === 'ingles-a2-the-blender-was-a-gift' ? 'Abrir registro de regalos' : undefined}
             intro={<div lang={language.htmlLang}><Blocks blocks={scenario.card.openWhen} /></div>}
-            card={<div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>}
+            card={scenario.id === 'ingles-a2-the-blender-was-a-gift' ? (
+              <RoleplayRegistryLookup result={<div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>} />
+            ) : <div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>}
           >
             {content}
           </RoleplayCardScreen>
-        ) : content}
+        ) : <>{header}{content}</>}
       </div>
     </div>
   )

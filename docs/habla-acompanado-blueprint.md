@@ -280,6 +280,23 @@ Se dice, no se disimula:
 - **No hay emparejador.** Si el estudiante no tiene con quién, este modo no le sirve: se va
   a «habla solo».
 
+### Mesa de juego y sistemas simulados
+
+La interfaz de cada rol agrupa la ficha existente en cuatro espacios: encargo, datos y
+documentos, palabras para hablar y cierre. El estudiante puede volver a cualquiera de ellos
+durante la conversación. Esto reorganiza las 400 fichas publicadas sin cambiar sus datos,
+objetivos, cartas ni criterios editoriales.
+
+Un escenario puede añadir una herramienta local cuando la situación la justifique. En «La
+licuadora fue un regalo» (Inglés A2), quien atiende dispone de una consulta simulada del registro
+de regalos: pide el nombre y los últimos cuatro dígitos del teléfono de la compradora, busca y
+ve el resultado de la carta existente. La instrucción visible indica abrir la consulta después
+del turno global 5, igual que la carta original. Después permite preparar una nota local con
+solución, destino del producto, responsable y hora. La otra persona ve solo sus propios datos,
+incluido que no tiene recibo y
+que dispone del contacto de la compradora. La herramienta no crea una base de datos real,
+sincronía ni progreso guardado.
+
 ## 9. La carta va en su propia pantalla
 
 No es un detalle de maquetación. En las simulaciones, la carta impresa debajo del andamiaje

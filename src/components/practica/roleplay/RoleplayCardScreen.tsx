@@ -20,11 +20,15 @@ import s from './roleplay.module.css'
  */
 export default function RoleplayCardScreen({
   afterTurn,
+  heading,
+  buttonLabel,
   intro,
   card,
   children,
 }: {
   afterTurn: number
+  heading: React.ReactNode
+  buttonLabel?: string
   /** El «ábrela cuando…» de la ficha, ya renderizado en el servidor. */
   intro: React.ReactNode
   card: React.ReactNode
@@ -56,13 +60,11 @@ export default function RoleplayCardScreen({
 
   return (
     <>
-      {children}
-
-      <div className={s.cardBar}>
+      {heading}
+      <div className={s.cardBar} id="roleplay-card-trigger">
         <p className={s.cardBarText}>
-          <strong>Tienes una carta.</strong> Se abre en el <strong>turno global {afterTurn}</strong> —el
-          turno {afterTurn} de la conversación, no el tuyo— y ocupa esta pantalla entera. Ábrela cuando
-          toque: mirarla antes no te da ventaja, te da trabajo.
+          <strong>Hay una novedad para tu rol.</strong> Ábrela después del <strong>turno global {afterTurn}</strong>
+          de la conversación. La carta ocupará esta pantalla mientras la consultas.
         </p>
         <button
           type="button"
@@ -72,9 +74,10 @@ export default function RoleplayCardScreen({
             window.scrollTo({ top: 0 })
           }}
         >
-          Abrir la carta →
+          {buttonLabel ?? `Abrir novedad · turno ${afterTurn}`} →
         </button>
       </div>
+      {children}
     </>
   )
 }
