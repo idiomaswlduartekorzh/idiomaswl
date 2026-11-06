@@ -3,7 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
 import PracticeBand from '@/components/hub/PracticeBand';
+import CourseOfferBand from '@/components/hub/CourseOfferBand';
 import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
+import { ENROLLMENT_FEE_COP, PLANS, formatCOP } from '@/lib/course-pricing/catalog';
 import s from './page.module.css';
 
 // ── WhatsApp ─────────────────────────────────────────────────────────────────
@@ -16,7 +18,6 @@ const WA_CONVERSACION = wa('Hola, quiero mejorar mi conversación en inglés en 
 const WA_TRABAJO = wa('Hola, busco clases de inglés en Bucaramanga para el trabajo. ¿Qué horarios y precios tienen?');
 const WA_ESTUDIO = wa('Hola, busco clases de inglés en Bucaramanga para estudiar. ¿Cómo es la ruta y cuánto cuesta el diagnóstico?');
 const WA_VIAJE = wa('Hola, quiero aprender inglés en Bucaramanga para viajar. ¿Qué modalidad y horarios tienen?');
-const WA_PAQUETE  = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -68,31 +69,9 @@ const buildJsonLd = () => ({
 });
 
 // ── Data ──────────────────────────────────────────────────────────────────────
-const PAQUETES = [
-  {
-    label: '4 horas',
-    desc: 'Ideal para reforzar un tema específico o hacer una prueba antes de comprometerte.',
-    badge: null,
-    highlight: false,
-  },
-  {
-    label: '10 horas',
-    desc: 'El más popular. Cubre una unidad completa de preparación con mejor precio por hora.',
-    badge: 'Más popular',
-    highlight: true,
-  },
-  {
-    label: '20 horas',
-    desc: 'Mejor precio por hora. Para preparación seria de IELTS, TOEFL o nivel completo.',
-    badge: 'Mejor precio/hora',
-    highlight: false,
-  },
-];
-
 const RESULTADOS = [
   { name: 'Leonardo Pinto', ciudad: 'Bucaramanga', logro: 'Work & Travel USA', quote: 'Estudié inglés en WeLearn para prepararme e ir a trabajar en USA y me fue de maravilla. Volveré para presentar el TOEFL.' },
   { name: 'Carlos Torres', ciudad: 'Bucaramanga', logro: 'TOEFL — Maestría', quote: 'Realmente les agradezco a ustedes dos por toda la ayuda, el master dura 2 años pero mi profesor quiere que haga otro curso cuando me gradúe.' },
-  { name: 'Karen Ayala', ciudad: 'Bucaramanga', logro: 'Goethe — Alemán B2', quote: 'David te he recomendado como con 15 personas sin decir mentiras, espero que les salga todo suuuper biennn.' },
 ];
 
 const FAQS_LOCAL = [
@@ -102,15 +81,15 @@ const FAQS_LOCAL = [
   },
   {
     q: '¿Cuánto cuestan las clases de inglés en Bucaramanga?',
-    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.',
+    a: `El plan Esencial cuesta ${formatCOP(PLANS[0].price)} COP por cuatro semanas, con una clase de 100 minutos por semana. Hay planes de dos a cinco clases semanales. En la primera inscripción puede sumarse ${formatCOP(ENROLLMENT_FEE_COP)} COP; el total se muestra antes del pago. Consulta los cinco planes en la página de precios.`,
   },
   {
     q: '¿WeLearn prepara para IELTS y TOEFL desde Bucaramanga?',
     a: 'Sí. Tenemos rutas específicas para IELTS Academic, IELTS General y TOEFL iBT. La preparación depende de tu nivel inicial y del puntaje que necesitas.',
   },
   {
-    q: '¿Tienen paquetes de horas con descuento?',
-    a: 'Sí. Paquetes de 4, 10 y 20 horas con precio por hora decreciente. Sin compromiso mensual. Escríbenos por WhatsApp para ver las opciones actuales.',
+    q: '¿Cuánto dura cada clase y cómo se confirma el horario?',
+    a: 'Cada clase dura 100 minutos. Los ciclos son de cuatro semanas y puedes elegir de una a cinco clases por semana. Puedes consultar disponibilidad presencial u online antes de pagar; el horario definitivo se coordina después del pago.',
   },
   {
     q: '¿Puedo tomar clases si vivo en Floridablanca, Girón o Piedecuesta?',
@@ -153,7 +132,7 @@ export default function ClasesInglessBucaramangaPage() {
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section style={{ background: 'var(--bg)', paddingTop: '3.5rem', paddingBottom: '3rem' }}>
         <div className="wrap">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+          <div className={s.heroGrid}>
 
             {/* Copy */}
             <div>
@@ -187,9 +166,9 @@ export default function ClasesInglessBucaramangaPage() {
                   </svg>
                   Consultar ruta y precio
                 </a>
-                <a href={WA_PAQUETE} data-wa-cta="ingles-bucaramanga-paquetes" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
-                  Ver paquetes →
-                </a>
+                <Link href="/precios?idioma=ingles&objetivo=general" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
+                  Ver planes y precios →
+                </Link>
               </div>
               <p style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.8rem', lineHeight: 1.5 }}>
                 La orientación inicial por chat es gratis. La clase y el diagnóstico con tutor son pagos;
@@ -224,7 +203,7 @@ export default function ClasesInglessBucaramangaPage() {
             <li>✓ Inglés para conversación y trabajo</li>
             <li>✓ Ruta según tu nivel</li>
             <li>✓ Clases con tutor asignado</li>
-            <li>✓ Paquetes de horas con descuento</li>
+            <li>✓ Planes de una a cinco clases semanales</li>
           </ul>
         </div>
       </div>
@@ -265,7 +244,7 @@ export default function ClasesInglessBucaramangaPage() {
             En Bucaramanga hay varias opciones para aprender inglés — grupos masivos, plataformas online genéricas, profesores particulares sin método.
             WeLearn combina plan por objetivo, tutor asignado y una ruta creada por co-fundadores políglotas con dirección académica especializada.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginTop: '3rem' }}>
+          <div className={s.benefitGrid}>
             {[
               { num: '01', title: 'Método estructurado', desc: 'Diseñado específicamente para hispanohablantes. Cada clase sigue un ciclo estructurado: vocabulario, gramática, escucha, producción oral y revisión. Nada improvisado.' },
               { num: '02', title: 'Dirección académica especializada', desc: 'Zhanna Korzh diseña el currículo y controla la calidad de todos los cursos. Rigor académico real, con años de experiencia en preparación de exámenes internacionales.' },
@@ -317,107 +296,14 @@ export default function ClasesInglessBucaramangaPage() {
         </div>
       </section>
 
-      {/* ── PRECIOS + PAQUETES ───────────────────────────────────────────── */}
-      <section className="wlh-section wlh-section--dark">
-        <div className="wrap">
-          <p className="wlh-section-eyebrow wlh-section-eyebrow--light">03 — Precios en Bucaramanga</p>
-          <h2 className="wlh-section-h2 wlh-section-h2--light">
-            Planes mensuales y paquetes de horas.
-          </h2>
-          <p className="wlh-section-desc wlh-section-desc--light" style={{ maxWidth: 520 }}>
-            Elige la modalidad que más se adapta a tu presupuesto y ritmo. Sin tarjeta de crédito ni permanencia mínima.
-          </p>
-
-          {/* Planes mensuales */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem', marginTop: '2.5rem' }}>
-            {[
-              {
-                name: 'Diagnóstico',
-                price: 'Consultar',
-                cadence: '',
-                desc: 'Evaluamos tu nivel, identificamos tu objetivo y te damos un plan. La sesión con tutor es paga; consulta el precio antes de agendar.',
-                cta: 'Consultar ruta y precio',
-                url: WA_GENERAL,
-                featured: false,
-              },
-              {
-                name: 'Plan Preparación',
-                price: 'Consultar',
-                cadence: '/ mes',
-                desc: 'Simulacros ilimitados + feedback escrito por sección + chat con tutor. Sin sesiones en vivo.',
-                cta: 'Consultar por WhatsApp',
-                url: WA_GENERAL,
-                featured: true,
-              },
-              {
-                name: 'Plan Intensivo',
-                price: 'Consultar',
-                cadence: '/ mes',
-                desc: '2 a 4 sesiones en vivo por semana + tutor asignado + plan personalizado + evaluación mensual.',
-                cta: 'Consultar ruta y precio',
-                url: WA_GENERAL,
-                featured: false,
-              },
-            ].map(plan => (
-              <div key={plan.name} style={{ background: plan.featured ? 'var(--accent-action, var(--accent))' : 'rgba(255,255,255,0.06)', border: `1px solid ${plan.featured ? 'var(--accent-action, var(--accent))' : 'rgba(255,255,255,0.12)'}`, borderRadius: 16, padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative' }}>
-                {plan.featured && (
-                  <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent-action, var(--accent))', fontSize: '0.72rem', fontWeight: 700, padding: '0.22rem 0.9rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
-                    Más popular
-                  </span>
-                )}
-                <h3 style={{ fontWeight: 700, color: '#fff', fontSize: '1.05rem' }}>{plan.name}</h3>
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.3rem' }}>
-                  <span style={{ fontWeight: 800, fontSize: '1.5rem', color: '#fff' }}>{plan.price}</span>
-                  {plan.cadence && <span style={{ color: 'rgba(255,255,255,0.86)', fontSize: '0.9rem' }}>{plan.cadence}</span>}
-                </div>
-                <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6, flexGrow: 1 }}>{plan.desc}</p>
-                <a href={plan.url} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '0.65rem 1.25rem', borderRadius: 10, fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', background: plan.featured ? '#fff' : 'rgba(255,255,255,0.12)', color: plan.featured ? 'var(--accent-action, var(--accent))' : '#fff' }}>
-                  {plan.cta}
-                </a>
-              </div>
-            ))}
-          </div>
-
-          {/* Paquetes de horas */}
-          <div style={{ marginTop: '2.5rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255,255,255,0.12)' }}>
-            <p style={{ fontSize: '1rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)', marginBottom: '0.4rem' }}>
-              ¿Prefieres pagar por horas sin compromiso mensual?
-            </p>
-            <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.55)', marginBottom: '1.75rem' }}>
-              Tenemos paquetes prepago con precio por hora más bajo mientras más horas compras.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
-              {PAQUETES.map(pkg => (
-                <div key={pkg.label} style={{ background: pkg.highlight ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.06)', border: `1px solid ${pkg.highlight ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.12)'}`, borderRadius: 14, padding: '1.25rem', position: 'relative' }}>
-                  {pkg.badge && (
-                    <span style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent-action, var(--accent))', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
-                      {pkg.badge}
-                    </span>
-                  )}
-                  <p style={{ fontWeight: 800, fontSize: '1.1rem', color: '#fff', marginBottom: '0.4rem' }}>
-                    Paquete {pkg.label}
-                  </p>
-                  <p style={{ fontSize: '0.82rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.55, marginBottom: '1rem' }}>{pkg.desc}</p>
-                  <a href={WA_PAQUETE} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: 'rgba(255,255,255,0.15)', color: '#fff', fontWeight: 700, fontSize: '0.82rem', padding: '0.5rem', borderRadius: 8, textDecoration: 'none' }}>
-                    Consultar precio →
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <p style={{ textAlign: 'center', marginTop: '1.75rem', color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem' }}>
-            La clase de diagnóstico con tutor es paga · Sin permanencia mínima · Cancela cuando quieras
-          </p>
-        </div>
-      </section>
+      <CourseOfferBand language="ingles" name="inglés" local />
 
       {/* ── TESTIMONIOS ──────────────────────────────────────────────────── */}
       <section className="wlh-section">
         <div className="wrap">
           <p className="wlh-section-eyebrow">04 — Resultados reales</p>
           <h2 className="wlh-section-h2">Estudiantes de Bucaramanga que lo lograron.</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem', marginTop: '2.5rem' }}>
+          <div className={s.testimonialGrid}>
             {RESULTADOS.map(t => (
               <div key={t.name} style={{ background: 'var(--surface)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.5rem' }}>
                 <p style={{ fontSize: '0.92rem', lineHeight: 1.7, color: 'var(--ink)', marginBottom: '1.25rem' }}>
@@ -505,7 +391,7 @@ export default function ClasesInglessBucaramangaPage() {
         <div className="wrap" style={{ textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
           <p className="wlh-section-eyebrow">Empieza en Bucaramanga</p>
           <h2 className="wlh-section-h2">
-            Tu diagnóstico es de pago.<br />Empezamos esta semana.
+            Tu diagnóstico es de pago.<br />Consulta el próximo horario.
           </h2>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', marginBottom: '2rem', lineHeight: 1.6 }}>
             Cuéntanos tu objetivo por chat sin costo. La sesión con tutor es paga;

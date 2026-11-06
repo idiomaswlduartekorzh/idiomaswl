@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ExamPrepLanding, { type ExamPrepContent } from '@/components/marketing/ExamPrepLanding';
+import { ENROLLMENT_FEE_COP, EXAM_PLATFORM_FEE_COP, PLANS, formatCOP } from '@/lib/course-pricing/catalog';
 
 export const metadata: Metadata = {
   title: 'Preparación IELTS online con tutor | WeLearn',
@@ -38,7 +39,7 @@ const content: ExamPrepContent = {
   faqs: [
     { question: '¿Preparan IELTS Academic y General Training?', answer: 'Sí. La ruta se ajusta a la versión que exige tu universidad, empleador o trámite. Comprueba cuál te piden antes de inscribirte al examen.' },
     { question: '¿Las clases de IELTS son online o presenciales?', answer: 'Puedes estudiar online por videollamada. Si estás en Bucaramanga, consulta la disponibilidad de clases presenciales en nuestra sede de Sotomayor.' },
-    { question: '¿Cuánto cuesta la preparación?', answer: 'Depende de la intensidad y del paquete de clases. La orientación inicial por chat es gratuita; el diagnóstico y las clases con tutor son pagos. Te informamos el precio antes de agendar.' },
+    { question: '¿Cuánto cuesta la preparación?', answer: `El ciclo Esencial cuesta ${formatCOP(PLANS[0].price)} COP por cuatro semanas e incluye una clase de 100 minutos por semana. Puedes elegir hasta cinco clases semanales. En la primera inscripción puede sumarse ${formatCOP(ENROLLMENT_FEE_COP)} COP y la plataforma de preparación tiene un pago único de ${formatCOP(EXAM_PLATFORM_FEE_COP)} COP. El total se muestra antes del pago; la inscripción al examen oficial es aparte.` },
     { question: '¿Puedo empezar con un simulacro?', answer: 'Sí. El centro de IELTS de WeLearn reúne prácticas y simulacros. El simulacro te ayuda a identificar áreas de trabajo, pero no sustituye el diagnóstico con tutor.' },
   ],
   practiceHref: '/examenes/ielts',

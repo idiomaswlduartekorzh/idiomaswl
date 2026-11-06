@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import CourseOfferBand from '@/components/hub/CourseOfferBand';
+import { LEVELS, PLANS, selectionPath } from '@/lib/course-pricing/catalog';
 import styles from './ExamPrepLanding.module.css';
 
 export type ExamPrepContent = {
@@ -25,6 +27,8 @@ const WHATSAPP = '573005004253';
 export default function ExamPrepLanding({ content }: { content: ExamPrepContent }) {
   const url = `${BASE}/${content.slug}`;
   const contact = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(content.whatsappMessage)}`;
+  const pricingObjective = content.exam === 'IELTS' ? 'IELTS Academic' : 'TOEFL iBT';
+  const pricingHref = selectionPath({ language: 'ingles', objective: pricingObjective, plan: PLANS[0].id, level: LEVELS[0] });
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -71,7 +75,7 @@ export default function ExamPrepLanding({ content }: { content: ExamPrepContent 
             <p className={styles.lead}>{content.intro}</p>
             <div className={styles.actions}>
               <a className={styles.primary} href={contact} target="_blank" rel="noopener noreferrer" data-wa-cta={`${content.slug}-hero`}>Consultar plan y precio</a>
-              <Link className={styles.secondary} href={content.practiceHref}>{content.practiceLabel}</Link>
+              <Link className={styles.secondary} href={pricingHref}>Ver planes y precios</Link>
             </div>
             <p className={styles.disclosure}>La orientación inicial por chat es gratis. El diagnóstico y las clases con tutor son pagos; conoce el precio antes de agendar.</p>
           </div>
@@ -121,6 +125,8 @@ export default function ExamPrepLanding({ content }: { content: ExamPrepContent 
           </div>
         </div>
       </section>
+
+      <CourseOfferBand language="ingles" name={content.exam} objective={pricingObjective} />
 
       <section className={styles.local} aria-labelledby="local-title">
         <div className={styles.container}>
