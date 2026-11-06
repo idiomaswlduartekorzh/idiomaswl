@@ -258,7 +258,9 @@
   font-weight: 950;
   height: 34px;
   justify-content: center;
-  width: 34px;
+  min-width: 64px;
+  padding: 0 0.5rem;
+  white-space: nowrap;
 }
 
 /* ── La carta ────────────────────────────────────────────────────────────── */
