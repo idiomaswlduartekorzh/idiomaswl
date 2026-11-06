@@ -254,10 +254,30 @@ for (const section of mock.sections.filter(s => s.skill === 'listening')) {
 }
 await add('99-finish', end, end + tail, panel(exam === 'ielts' ? 'Test complete' : 'Test beendet', title, `${lines(160, 480, exam === 'ielts' ? 'Review accepted answers and keep practicing at idiomaswl.com' : 'Prüfen Sie Ihr Ergebnis und üben Sie weiter auf idiomaswl.com', 44, 66, 70, '#173864', 600)}`));
 const total = end + tail;
-await card('thumbnail', panel(exam === 'ielts' ? 'IELTS LISTENING' : 'GOETHE A1 HÖREN', 'WeLearn', `${label(160, 460, exam === 'ielts' ? `FULL TEST · SET ${set.split('-')[1]}` : `ÜBUNGSTEST · SET ${set.split('-')[1]}`, 66, '#15458B', 800)}${label(160, 555, exam === 'ielts' ? '40 QUESTIONS + ANSWER KEY' : '15 AUFGABEN + LÖSUNGEN', 45, '#0A2862', 800)}${label(160, 648, exam === 'ielts' ? 'Full audio · 4 parts' : 'Mit Signalton · 3 Teile', 34, '#456B9C', 600)}`));
+const thumbSet = set.split('-')[1];
+const thumbExam = exam === 'ielts' ? 'IELTS' : 'GOETHE A1';
+const thumbMain = exam === 'ielts' ? 'LISTENING TEST' : 'HÖREN TEST';
+const thumbFooter = exam === 'ielts' ? '40 QUESTIONS + ANSWERS' : '15 FRAGEN + LÖSUNGEN';
+const headphone = `<g transform="translate(1250 205)">
+  <path d="M90 350V265C90 104 218 0 355 0s265 104 265 265v85" fill="none" stroke="#FFFFFF" stroke-width="77" stroke-linecap="round"/>
+  <path d="M90 350V265C90 104 218 0 355 0s265 104 265 265v85" fill="none" stroke="#FFD426" stroke-width="45" stroke-linecap="round"/>
+  <rect x="12" y="293" width="165" height="276" rx="74" fill="#EAF4FF" stroke="#072C79" stroke-width="23"/>
+  <rect x="533" y="293" width="165" height="276" rx="74" fill="#EAF4FF" stroke="#072C79" stroke-width="23"/>
+  <rect x="57" y="332" width="80" height="200" rx="38" fill="#FFD426"/>
+  <rect x="573" y="332" width="80" height="200" rx="38" fill="#FFD426"/>
+  <path d="M250 335v100m70-150v200m70-245v290m70-190v100" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+</g>`;
+const thumbnailInside = `${label(100, 345, thumbExam, 126, '#FFFFFF', 800)}
+  <rect x="78" y="413" width="1100" height="208" rx="43" fill="#FFD426"/>
+  ${label(116, 557, thumbMain, 116, '#071A4B', 800)}
+  ${label(100, 692, thumbFooter, 71, '#FFFFFF', 800)}
+  ${headphone}`;
+await card('thumbnail', thumbnailInside);
 if (config.thumbnailArt) {
   const art = await sharp(path.join(root, config.thumbnailArt)).resize(W, H).png().toBuffer();
   await Promise.all(['thumbnail.png', '00-intro.png'].map(name => fs.writeFile(path.join(out, name), art)));
+} else {
+  await fs.copyFile(path.join(out, 'thumbnail.png'), path.join(out, '00-intro.png'));
 }
 await fs.writeFile(path.join(out, 'timeline.json'), JSON.stringify({ exam, set: config.set, audio: config.audio, audioDuration: duration, videoDuration: total, answerKey: mock.sections.filter(s => s.skill === 'listening').map(s => ({ part: s.part, answers: answerRows(s) })), scenes: scenes.map(({ name, start, end }) => ({ name, start, end })) }, null, 2) + '\n');
 const concat = 'ffconcat version 1.0\n' + scenes.map(s => `file '${s.file.replaceAll("'", "'\\''")}'\nduration ${(s.end - s.start).toFixed(6)}\n`).join('') + `file '${scenes.at(-1).file.replaceAll("'", "'\\''")}'\n`;
