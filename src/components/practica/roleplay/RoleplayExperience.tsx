@@ -6,7 +6,6 @@ import {
   ROLEPLAY_LANGUAGES,
   ROLEPLAY_LEVELS,
   accompaniedSpeakingPath,
-  otherRole,
   roleplayRolePath,
   roleplayScenarioPath,
   roleplayToolkitPath,
@@ -16,27 +15,11 @@ import {
   type RoleplayScenario,
   type RoleplaySet,
 } from '@/data/practica/habla-acompanado'
-import RoleplayCardScreen from './RoleplayCardScreen'
+import RoleplayJourney from './RoleplayJourney'
 import RoleplayRegistryLookup from './RoleplayRegistryLookup'
-import RoleplayWorkspace from './RoleplayWorkspace'
 import ShareRoleLink from './ShareRoleLink'
 import { Blocks, inline } from './RoleplayMarkup'
 import s from './roleplay.module.css'
-
-const speechActLabel: Record<RoleplayScenario['speechActs'][number], string> = {
-  'pedir-favor': 'pedir un favor',
-  rechazar: 'rechazar',
-  negociar: 'negociar',
-  disculparse: 'disculparse',
-  quejarse: 'quejarse',
-  'proponer-alternativa': 'proponer una alternativa',
-  'dar-mala-noticia': 'dar una mala noticia',
-  insistir: 'insistir',
-  'poner-limite': 'poner un límite',
-  'pedir-aclaracion': 'pedir aclaración',
-  'conceder-con-condicion': 'aceptar con una condición',
-  recomendar: 'recomendar',
-}
 
 function roleplayStyle(): CSSProperties {
   return { '--wlp-accent': SKILL_ACCENT.habla.var } as CSSProperties
@@ -103,7 +86,7 @@ export function SpeakingModeHub({ set }: { set: RoleplaySet }) {
             <Link className="wlp-card wlp-card--path" href={accompaniedSpeakingPath(set.language, set.level)}>
               <span className="wlp-eyebrow wlp-eyebrow--card">En pareja</span>
               <h3>Centro de juegos de rol</h3>
-              <p>{set.scenarios.length} situaciones reales. Elige un papel, prepara tu mesa de trabajo y resuelve el caso hablando.</p>
+              <p>{set.scenarios.length} situaciones reales. Elige un papel, conoce tu situación, lee las instrucciones y empieza a conversar.</p>
               <ul className={s.cardFacts}>
                 <li>Dos personas y dos pantallas</li>
                 <li>{level.minutes} minutos por escenario</li>
@@ -141,20 +124,20 @@ export function RoleplayHub({ set }: { set: RoleplaySet }) {
           <p className="wlp-eyebrow">Speaking · {language.label} {level.label}</p>
           <h1>Centro de juegos de rol</h1>
           <p className="wlp-hero-lead">
-            Entra en una situación, elige tu papel y usa los datos y herramientas de tu rol para
-            resolverla hablando en {language.labelLower}.
+            Elige una situación y un papel. Primero conocerás tu rol, luego verás cómo jugar
+            y después tendrás tus recursos a mano para hablar en {language.labelLower}.
           </p>
           <ol className={s.steps}>
             <li><strong>1.</strong> Elijan un caso y repartan los dos papeles.</li>
-            <li><strong>2.</strong> Cada quien abre su mesa de juego sin mirar la del otro.</li>
-            <li><strong>3.</strong> Consulten sus recursos y lleguen a una decisión hablando.</li>
+            <li><strong>2.</strong> Cada quien lee su papel y sus instrucciones en su propia pantalla.</li>
+            <li><strong>3.</strong> Empiecen a hablar y consulten sus recursos cuando hagan falta.</li>
           </ol>
         </header>
 
         <section className="wlp-section" aria-labelledby="scenarios-title">
           <div className="wlp-section-heading">
             <h2 id="scenarios-title">{set.scenarios.length} casos para jugar</h2>
-            <p>Elijan una situación. Cada caso abre dos papeles distintos y una mesa de trabajo para cada persona.</p>
+            <p>Elijan una situación. Cada persona conocerá su papel antes de entrar al juego.</p>
           </div>
 
           <div className={s.scenarioGrid}>
@@ -203,7 +186,7 @@ function RoleChoice({ scenario, role }: { scenario: RoleplayScenario; role: Role
       </div>
       <h3>{role.nameEs}</h3>
       <p lang={ROLEPLAY_LANGUAGES[scenario.language].htmlLang}>{role.name}</p>
-      <p className={s.roleChoiceHint}>{scenario.initiator === role.id ? 'Abre la conversación.' : 'Responde cuando la otra persona empiece.'} Tendrás tu encargo, tus datos y tu vocabulario en una mesa propia.</p>
+      <p className={s.roleChoiceHint}>{scenario.initiator === role.id ? 'Tú abrirás la conversación.' : 'Responderás cuando la otra persona empiece.'} Primero leerás tu situación y después las instrucciones.</p>
       <div className={s.roleActions}>
         <Link className="wlp-btn" href={href}>Elegir este papel →</Link>
         <ShareRoleLink href={href} label={`Compartir rol ${role.id.toUpperCase()}`} />
@@ -244,222 +227,154 @@ export function RoleplayScenarioSetup({ scenario }: { scenario: RoleplayScenario
           <div className="wlp-section-heading">
             <h2 id="choose-role-title">¿Quién serás en esta escena?</h2>
             <p>
-              Cada persona elige un papel y abre solo su mesa de juego. Así podrán descubrir
-              la información del otro durante la conversación.
+              Cada persona elige un papel y lee su propia situación. Después recibirá las
+              instrucciones para empezar sin ver los datos de la otra persona.
             </p>
           </div>
           <div className={s.roleGrid}>
             {scenario.roles.map((role) => <RoleChoice key={role.id} role={role} scenario={scenario} />)}
           </div>
         </section>
-
-        <section className={s.preflight} aria-labelledby="preflight-title">
-          <h2 id="preflight-title">Antes de empezar</h2>
-          <ul className={s.checkList}>
-            <li>Dejen visible únicamente la ficha propia.</li>
-            <li>Hablen en {language.labelLower}; usen la caja de herramientas si se bloquean.</li>
-            <li>Una persona recibe una carta a mitad de la conversación. No la abran antes.</li>
-            <li>Terminen cuando cumplan el criterio de cierre de las dos fichas.</li>
-          </ul>
-        </section>
-
-        <section className={s.practiceFocus} aria-labelledby="practice-focus-title">
-          <h2 id="practice-focus-title">Lo que practicarán</h2>
-          <div className={s.tagList}>
-            {scenario.speechActs.map((act) => <span key={act}>{speechActLabel[act]}</span>)}
-          </div>
-        </section>
-
-        <RoleplayLimits />
       </div>
     </div>
   )
 }
 
-function RoleHeader({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
-  const counterpart = otherRole(scenario, role.id)
-  const language = ROLEPLAY_LANGUAGES[scenario.language]
+function RoleProse({ blocks, lang }: { blocks: RoleplayRole['prose']; lang: string }) {
   return (
-    <header className="wlp-hero wlp-hero--compact">
-      <p className="wlp-eyebrow">Escenario {scenario.sequence} · Rol {role.id.toUpperCase()}</p>
-      <h1>{role.nameEs}</h1>
-      <p className={s.targetTitle} lang={language.htmlLang}>{role.headline}</p>
-      <div className={s.secretNotice}>
-        <strong>Esta ficha es solo tuya.</strong> La otra persona tiene objetivos y datos distintos.
-        No intercambien pantallas hasta terminar.
-      </div>
-      <ul className={s.meta} aria-label="Datos del ejercicio">
-        <li className={s.metaItem}><strong>{scenario.minutes}</strong> minutos</li>
-        <li className={s.metaItem}><strong>{scenario.turnsPerRole}</strong> turnos tuyos</li>
-        <li className={s.metaItem}><strong>{scenario.initiator === role.id ? 'Tú' : counterpart.nameEs}</strong> empieza</li>
-      </ul>
-    </header>
+    <div className={s.journeyProse} lang={lang}>
+      {blocks.map((block, index) => (
+        <section className={s.journeyProseBlock} key={`${index}-${block.label}`}>
+          <h2>{block.label}</h2>
+          {block.text ? <p>{inline(block.text)}</p> : null}
+          {block.items ? <ul>{block.items.map((item) => <li key={item}>{inline(item)}</li>)}</ul> : null}
+        </section>
+      ))}
+    </div>
   )
 }
 
-function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
-  const counterpart = otherRole(scenario, role.id)
-  const language = ROLEPLAY_LANGUAGES[scenario.language]
-  const level = ROLEPLAY_LEVELS[scenario.level]
-  const accompaniedPath = accompaniedSpeakingPath(scenario.language, scenario.level)
+function RoleInstructions({ role, lang, introCount }: { role: RoleplayRole; lang: string; introCount: number }) {
   return (
     <>
-      <RoleplayWorkspace roleName={role.nameEs} brief={<>
-      <section className={s.briefing} aria-label="Cómo jugar este rol" lang={language.htmlLang}>
+      <div className={s.journeyBriefing} lang={lang}>
         {role.briefing.map((line) => <p key={line}>{inline(line)}</p>)}
-      </section>
+      </div>
+      <RoleProse blocks={role.prose.slice(introCount)} lang={lang} />
+    </>
+  )
+}
 
-      <section className={s.piece} aria-labelledby="your-brief-title">
-        <p className={s.pieceLabel}>Tu información</p>
-        <h2 className={s.sectionTitle} id="your-brief-title">Lo que sabes y lo que necesitas</h2>
-        <div className={s.proseGrid} lang={language.htmlLang}>
-          {role.prose.map((block) => (
-            <article className={s.panel} key={block.label}>
-              <div className={s.panelHeading}><h3>{block.label}</h3></div>
-              {block.text ? <p className={s.para}>{inline(block.text)}</p> : null}
-              {block.items ? <ul className={s.list}>{block.items.map((item) => <li key={item}>{inline(item)}</li>)}</ul> : null}
-            </article>
-          ))}
-        </div>
-      </section>
-      </>} caseFile={<>
+function RoleCaseFile({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
+  const lang = ROLEPLAY_LANGUAGES[scenario.language].htmlLang
+  return (
+    <>
+      <p className={s.pieceLabel}>Tu información</p>
+      <h2 className={s.journeyResourceTitle}>Datos y documentos</h2>
       {scenario.id === 'ingles-a2-the-blender-was-a-gift' && role.id === 'a' ? (
-        <div className={s.resourceCallout}>
+        <div className={s.journeyNote}>
           <strong>Tu sistema: registro de regalos</strong>
-          <p>Pide el nombre y los últimos cuatro dígitos del teléfono de quien compró. En el turno global 5, abre la consulta y busca el pedido con esos datos.</p>
-          <a href="#roleplay-card-trigger">Ir a la consulta cuando llegue el turno →</a>
+          <p>Pide el nombre y los últimos cuatro dígitos del teléfono de quien compró. Cuando llegue el turno global 5, abre la consulta desde el botón de arriba.</p>
         </div>
       ) : null}
       {scenario.id === 'ingles-a2-the-blender-was-a-gift' && role.id === 'b' ? (
-        <div className={s.resourceCallout}>
+        <div className={s.journeyNote}>
           <strong>Tu carpeta: prueba de compra</strong>
           <p>No tienes recibo. El contacto de quien compró el regalo está en tus datos de abajo; puedes dar el nombre y los últimos cuatro dígitos cuando te los pidan.</p>
         </div>
       ) : null}
-      <section className={s.piece} aria-labelledby="facts-title">
-        <p className={s.pieceLabel}>Notas, no frases</p>
-        <div className={s.panel}>
-          <div className={s.panelHeading}><h2 id="facts-title">Datos duros</h2></div>
-          {role.factsNote ? <p className={s.para} lang={language.htmlLang}>{inline(role.factsNote)}</p> : null}
-          <div className={s.tableWrap} lang={language.htmlLang}>
-            <table className={s.table}>
-              <tbody>
-                {role.facts.map((fact) => (
-                  <tr key={`${fact.label}-${fact.value}`}>
-                    <td className={s.tableLabel}>{inline(fact.label)}</td>
-                    <td>{inline(fact.value)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-      </>} languageTools={<>
-      <section className={s.piece} aria-labelledby="vocab-title">
-        <p className={s.pieceLabel}>Palabras para esta situación</p>
-        <div className={s.panel}>
-          <div className={s.panelHeading}><h2 id="vocab-title">Vocabulario</h2><span>{role.vocab.length} palabras</span></div>
-          <div className={s.tableWrap} lang={language.htmlLang}>
-            <table className={s.table}>
-              <thead><tr><th>{language.targetLabels.word}</th><th>{language.targetLabels.meaning}</th><th>{language.targetLabels.here}</th></tr></thead>
-              <tbody>
-                {role.vocab.map((item) => (
-                  <tr key={item.word}>
-                    <td><strong>{inline(item.word)}</strong>{item.reading ? <span> · {item.reading}</span> : null}</td>
-                    <td>{inline(item.whatItIs)}</td>
-                    <td>{inline(item.here)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      {role.factsNote ? <p className={s.journeyFactNote} lang={lang}>{inline(role.factsNote)}</p> : null}
+      <div className={s.tableWrap} lang={lang}>
+        <table className={s.table}>
+          <tbody>
+            {role.facts.map((fact) => (
+              <tr key={`${fact.label}-${fact.value}`}>
+                <td className={s.tableLabel}>{inline(fact.label)}</td>
+                <td>{inline(fact.value)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )
+}
 
-      <section className={s.piece} aria-labelledby="toolkit-link-title">
-        <p className={s.pieceLabel}>Ayuda común</p>
-        <div className={s.toolkitCallout}>
-          <div>
-            <h2 id="toolkit-link-title">Caja de herramientas {level.label}</h2>
-            <p lang={language.htmlLang}>{inline(role.toolkit)}</p>
-          </div>
-          <Link className="wlp-btn wlp-btn--secondary" href={roleplayToolkitPath(scenario.language, scenario.level)} target="_blank">
-            Abrir en otra pestaña ↗
-          </Link>
+function RoleWords({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
+  const language = ROLEPLAY_LANGUAGES[scenario.language]
+  const level = ROLEPLAY_LEVELS[scenario.level]
+  return (
+    <>
+      <p className={s.pieceLabel}>Ayuda durante la conversación</p>
+      <h2 className={s.journeyResourceTitle}>Palabras y expresiones</h2>
+      <section className={s.journeySubsection} aria-labelledby="vocab-title">
+        <h3 id="vocab-title">Vocabulario <span>{role.vocab.length} palabras</span></h3>
+        <div className={s.tableWrap} lang={language.htmlLang}>
+          <table className={s.table}>
+            <thead><tr><th>{language.targetLabels.word}</th><th>{language.targetLabels.meaning}</th><th>{language.targetLabels.here}</th></tr></thead>
+            <tbody>
+              {role.vocab.map((item) => (
+                <tr key={item.word}>
+                  <td><strong>{inline(item.word)}</strong>{item.reading ? <span> · {item.reading}</span> : null}</td>
+                  <td>{inline(item.whatItIs)}</td>
+                  <td>{inline(item.here)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
-
-      <section className={s.piece} aria-labelledby="exponents-title">
-        <p className={s.pieceLabel}>Solo para tu rol</p>
-        <div className={s.panel}>
-          <div className={s.panelHeading}><h2 id="exponents-title">Expresiones útiles</h2><span>{role.exponents.length} opciones</span></div>
-          <div className={s.tableWrap} lang={language.htmlLang}>
-            <table className={s.table}>
-              <thead><tr><th>{language.targetLabels.purpose}</th><th>{language.targetLabels.form}</th><th>{language.targetLabels.effect}</th></tr></thead>
-              <tbody>
-                {role.exponents.map((item) => (
-                  <tr key={`${item.purpose}-${item.form}`}>
-                    <td>{inline(item.purpose)}</td>
-                    <td>{inline(item.form)}{item.reading ? <span> · {item.reading}</span> : null}</td>
-                    <td>{inline(item.effect)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+      <section className={s.journeySubsection} aria-labelledby="exponents-title">
+        <h3 id="exponents-title">Expresiones para tu rol <span>{role.exponents.length} opciones</span></h3>
+        <div className={s.tableWrap} lang={language.htmlLang}>
+          <table className={s.table}>
+            <thead><tr><th>{language.targetLabels.purpose}</th><th>{language.targetLabels.form}</th><th>{language.targetLabels.effect}</th></tr></thead>
+            <tbody>
+              {role.exponents.map((item) => (
+                <tr key={`${item.purpose}-${item.form}`}>
+                  <td>{inline(item.purpose)}</td>
+                  <td>{inline(item.form)}{item.reading ? <span> · {item.reading}</span> : null}</td>
+                  <td>{inline(item.effect)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
-      </>} close={<>
-      {scenario.card.toRole !== role.id ? (
-        <div className={s.noCard}><strong>No tienes carta.</strong> Sigue conversando cuando la otra persona abra la suya.</div>
-      ) : null}
-
-      <section className={s.piece} aria-labelledby="closing-title">
-        <p className={s.pieceLabel}>Cuándo terminar</p>
-        <div className={s.panel} lang={language.htmlLang}>
-          <div className={s.panelHeading}><h2 id="closing-title">{language.targetLabels.closing}</h2></div>
-          <Blocks blocks={scenario.closing} />
-          <div className={s.success}><strong>{language.targetLabels.success}:</strong> {inline(role.success)}</div>
-        </div>
+      <section className={s.journeySubsection} aria-labelledby="toolkit-link-title">
+        <h3 id="toolkit-link-title">Caja de herramientas {level.label}</h3>
+        <p lang={language.htmlLang}>{inline(role.toolkit)}</p>
+        <Link href={roleplayToolkitPath(scenario.language, scenario.level)} target="_blank" rel="noopener noreferrer">Abrir ayuda común ↗</Link>
       </section>
+    </>
+  )
+}
 
-      <section className={s.piece} aria-labelledby="debrief-title">
-        <p className={s.pieceLabel}>Después de hablar</p>
-        <div className={s.panel}>
-          <div className={s.panelHeading}><h2 id="debrief-title">Conversen sobre cómo les fue</h2></div>
-          <ol className={s.listOrdered}>{scenario.debrief.map((question) => <li key={question}>{inline(question)}</li>)}</ol>
-        </div>
+function RoleClosing({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
+  const language = ROLEPLAY_LANGUAGES[scenario.language]
+  return (
+    <>
+      <p className={s.pieceLabel}>Terminar el juego</p>
+      <h2 className={s.journeyResourceTitle}>Cómo cerrar</h2>
+      <div className={s.journeyClosing} lang={language.htmlLang}>
+        <Blocks blocks={scenario.closing} />
+        <p><strong>{language.targetLabels.success}:</strong> {inline(role.success)}</p>
+      </div>
+      <section className={s.journeySubsection} aria-labelledby="debrief-title">
+        <h3 id="debrief-title">Después de hablar</h3>
+        <ol className={s.listOrdered}>{scenario.debrief.map((question) => <li key={question}>{inline(question)}</li>)}</ol>
       </section>
-
-      <section className={s.piece} aria-labelledby="grammar-links-title">
-        <p className={s.pieceLabel}>Para repasar</p>
-        <h2 className={s.sectionTitle} id="grammar-links-title">Gramática que sostiene este escenario</h2>
-        <ul className={s.refList}>
+      <section className={s.journeySubsection} aria-labelledby="grammar-links-title">
+        <h3 id="grammar-links-title">Para repasar</h3>
+        <ul className={s.journeyReferences}>
           {scenario.grammarReferences.map((ref) => (
-            <li className={s.ref} key={`${ref.level}-${ref.slug}`}>
+            <li key={`${ref.level}-${ref.slug}`}>
               <Link href={`/practica/${scenario.language}/${ref.level}/gramatica/${ref.slug}`}>{ref.title}</Link>
-              <span className={s.refLevel}>{ref.level}</span>
               <p>{inline(ref.rationale)}</p>
             </li>
           ))}
         </ul>
       </section>
-      </>} />
-
-      <div className={s.roleSwitch}>
-        <p><strong>¿Abriste la ficha equivocada?</strong> Cambia al rol {counterpart.id.toUpperCase()} sin leer más.</p>
-        <Link className="wlp-btn wlp-btn--secondary" href={roleplayRolePath(scenario, counterpart.id)}>
-          Ir al rol {counterpart.id.toUpperCase()}
-        </Link>
-      </div>
-
-      <RoleplayLimits />
-      <div className="wlp-next">
-        <Link href={roleplayScenarioPath(scenario)}>← Volver a repartir roles</Link>
-        <Link href={accompaniedPath}>Elegir otro escenario</Link>
-        <Link href={soloSpeakingPath(scenario.language, scenario.level)}>Practicar a solas</Link>
-      </div>
     </>
   )
 }
@@ -467,8 +382,22 @@ function RoleContent({ scenario, role }: { scenario: RoleplayScenario; role: Rol
 export function RoleplayRolePage({ scenario, role }: { scenario: RoleplayScenario; role: RoleplayRole }) {
   const language = ROLEPLAY_LANGUAGES[scenario.language]
   const accompaniedPath = accompaniedSpeakingPath(scenario.language, scenario.level)
-  const header = <RoleHeader role={role} scenario={scenario} />
-  const content = <RoleContent role={role} scenario={scenario} />
+  // One A1 role has a short pre-reading block before its situation and objective.
+  const introCount = role.prose[0]?.label === 'Before you speak' ? 3 : 2
+  const toolSummary = scenario.id === 'ingles-a2-the-blender-was-a-gift'
+    ? role.id === 'a'
+      ? 'Tendrás los datos de la tienda y un registro de regalos simulado. Pide el nombre y los últimos cuatro dígitos del teléfono de quien compró; podrás consultar el registro desde el turno global 5. También tendrás palabras para hablar y el criterio de cierre.'
+      : 'No tienes recibo. Tus datos incluyen el contacto de quien compró el regalo para compartirlo cuando te lo pidan. También tendrás palabras para hablar y el criterio de cierre.'
+    : 'Tendrás tus datos y documentos, palabras para hablar y el criterio de cierre. Abre cada recurso solo cuando lo necesites.'
+  const card = scenario.card.toRole === role.id ? {
+    afterTurn: scenario.card.afterTurn,
+    buttonLabel: scenario.id === 'ingles-a2-the-blender-was-a-gift' ? 'Abrir registro de regalos' : 'Abrir novedad',
+    intro: <div lang={language.htmlLang}><Blocks blocks={scenario.card.openWhen} /></div>,
+    content: scenario.id === 'ingles-a2-the-blender-was-a-gift' ? (
+      <RoleplayRegistryLookup result={<div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>} />
+    ) : <div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>,
+  } : undefined
+
   return (
     <div className="wlp-page" style={roleplayStyle()}>
       <div className="wlp-shell">
@@ -479,20 +408,26 @@ export function RoleplayRolePage({ scenario, role }: { scenario: RoleplayScenari
           <span aria-hidden="true">/</span>
           <span aria-current="page">Rol {role.id.toUpperCase()}</span>
         </nav>
-
-        {scenario.card.toRole === role.id ? (
-          <RoleplayCardScreen
-            afterTurn={scenario.card.afterTurn}
-            heading={header}
-            buttonLabel={scenario.id === 'ingles-a2-the-blender-was-a-gift' ? 'Abrir registro de regalos' : undefined}
-            intro={<div lang={language.htmlLang}><Blocks blocks={scenario.card.openWhen} /></div>}
-            card={scenario.id === 'ingles-a2-the-blender-was-a-gift' ? (
-              <RoleplayRegistryLookup result={<div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>} />
-            ) : <div lang={language.htmlLang}><Blocks blocks={scenario.card.blocks} /></div>}
-          >
-            {content}
-          </RoleplayCardScreen>
-        ) : <>{header}{content}</>}
+        <RoleplayJourney
+          scenarioTitle={scenario.title}
+          scenarioPath={roleplayScenarioPath(scenario)}
+          setting={scenario.settingEs}
+          roleId={role.id.toUpperCase()}
+          roleName={role.nameEs.charAt(0).toUpperCase() + role.nameEs.slice(1)}
+          headline={role.headline}
+          language={language.labelLower}
+          languageHtml={language.htmlLang}
+          starts={scenario.initiator === role.id}
+          minutes={scenario.minutes}
+          turns={scenario.turnsPerRole}
+          introduction={<RoleProse blocks={role.prose.slice(0, introCount)} lang={language.htmlLang} />}
+          instructions={<RoleInstructions role={role} lang={language.htmlLang} introCount={introCount} />}
+          caseFile={<RoleCaseFile scenario={scenario} role={role} />}
+          words={<RoleWords scenario={scenario} role={role} />}
+          closing={<RoleClosing scenario={scenario} role={role} />}
+          toolSummary={toolSummary}
+          card={card}
+        />
       </div>
     </div>
   )

@@ -204,8 +204,7 @@
 
 /* ── Lo que el motor no hace ─────────────────────────────────────────────── */
 
-/* No es letra pequeña. Va en el hub, en el escenario y en las dos fichas, con las mismas
-   palabras: sin compañero este modo no sirve, y eso se dice antes, no se descubre. */
+/* Los límites se leen al elegir el modo y antes de abrir un caso. */
 .limits {
   background: var(--wlp-tint-info);
   border: 1px solid var(--wlp-line);
@@ -528,173 +527,353 @@
   padding: 0.3rem 0.6rem;
 }
 
-/* La ficha se convierte en una mesa de trabajo con cuatro lugares reconocibles. */
-.workspace {
-  background: var(--wlp-surface);
-  border: 1px solid var(--wlp-line);
-  border-radius: var(--wlp-r);
-  margin: 1.5rem 0 2rem;
-  overflow: hidden;
+/* Una etapa visible a la vez: papel, instrucciones y conversación. */
+.journey {
+  margin: 1.2rem 0 4rem;
 }
 
-.workspaceHeading {
-  align-items: flex-start;
-  background: var(--wlp-raised);
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  padding: 1.25rem 1.4rem;
-}
-
-.workspaceHeading h2 {
-  color: var(--wlp-ink);
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-  margin: 0 0 0.35rem;
-}
-
-.workspaceHeading p:last-child {
-  color: var(--wlp-muted);
-  font-size: 0.88rem;
-  line-height: 1.55;
-  margin: 0;
-}
-
-.workspaceProgress {
-  border: 1px solid var(--wlp-line);
-  border-radius: var(--wlp-r-pill);
-  color: var(--wlp-accent);
-  flex: none;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 0.3rem 0.55rem;
-}
-
-.workspaceNav {
+.journeySteps {
   border-bottom: 1px solid var(--wlp-line);
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.workspaceNavButton {
-  align-items: flex-start;
-  background: var(--wlp-raised);
-  border: 0;
+.journeySteps li {
   border-bottom: 3px solid transparent;
   color: var(--wlp-muted);
-  cursor: pointer;
-  display: flex;
-  gap: 0.55rem;
-  min-height: 72px;
-  padding: 0.9rem 0.75rem;
-  text-align: left;
+  font-size: 0.84rem;
+  padding: 0.9rem 0 0.8rem;
 }
 
-.workspaceNavButton + .workspaceNavButton {
-  border-left: 1px solid var(--wlp-line);
+.journeySteps li span {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  font-weight: 900;
+  margin-right: 0.35rem;
 }
 
-.workspaceNavButton:hover,
-.workspaceNavButtonActive {
-  background: var(--wlp-surface);
-  color: var(--wlp-ink);
-}
-
-.workspaceNavButtonActive {
+.journeySteps .journeyStepActive {
   border-bottom-color: var(--wlp-accent);
-}
-
-.workspaceNavButton:focus-visible {
-  outline: 2px solid var(--wlp-accent);
-  outline-offset: -4px;
-}
-
-.workspaceNavNumber {
-  color: var(--wlp-accent);
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  font-weight: 900;
-}
-
-.workspaceNavButton strong,
-.workspaceNavButton small {
-  display: block;
-}
-
-.workspaceNavButton strong {
-  font-size: 0.83rem;
-}
-
-.workspaceNavButton small {
-  font-size: 0.7rem;
-  line-height: 1.35;
-  margin-top: 0.22rem;
-}
-
-.workspacePanel {
-  min-height: 320px;
-  padding: 1.4rem;
-}
-
-.workspacePanelHeading {
-  align-items: flex-start;
-  border-bottom: 1px solid var(--wlp-line);
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.8rem;
-}
-
-.workspacePanelHeading > span {
-  color: var(--wlp-accent);
-  font-family: var(--mono);
-  font-size: 1.3rem;
-  font-weight: 900;
-}
-
-.workspacePanelHeading h3 {
   color: var(--wlp-ink);
-  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.journeyReading {
+  margin: 0 auto;
+  max-width: 780px;
+  min-height: 65vh;
+  padding: clamp(2.1rem, 5vw, 4rem) 0 2rem;
+}
+
+.journeyKicker {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin: 0 0 1.1rem;
+  text-transform: uppercase;
+}
+
+.journeyReading h1,
+.journeyPlay h1,
+.journeyCard h1 {
+  color: var(--wlp-ink);
+  font-size: clamp(2.15rem, 4.5vw, 3.35rem);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+  margin: 0 0 0.65rem;
+}
+
+.journeyHeadline {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.92rem;
+  margin: 0 0 1.6rem;
+}
+
+.journeyLead {
+  color: var(--wlp-ink);
+  font-size: clamp(1.06rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+  max-width: 65ch;
+}
+
+.journeyPrivacy {
+  border-left: 3px solid var(--wlp-accent);
+  color: var(--wlp-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 1.5rem 0 0;
+  padding-left: 0.9rem;
+}
+
+.journeyBody {
+  margin-top: 2.2rem;
+}
+
+.journeyBriefing {
+  border-left: 3px solid var(--wlp-accent);
+  color: var(--wlp-ink);
+  line-height: 1.65;
+  margin: 0 0 2rem;
+  padding: 0.15rem 0 0.15rem 1rem;
+}
+
+.journeyBriefing p {
+  margin: 0 0 0.6rem;
+}
+
+.journeyBriefing p:last-child {
+  margin-bottom: 0;
+}
+
+.journeyProseBlock {
+  border-top: 1px solid var(--wlp-line);
+  padding: 1.25rem 0 1.35rem;
+}
+
+.journeyProseBlock h2 {
+  color: var(--wlp-accent);
+  font-size: 0.9rem;
+  font-weight: 850;
+  margin: 0 0 0.6rem;
+}
+
+.journeyProseBlock p,
+.journeyProseBlock li {
+  color: var(--wlp-ink);
+  font-size: 1.04rem;
+  line-height: 1.68;
+}
+
+.journeyProseBlock p {
   margin: 0;
 }
 
-.workspacePanelHeading p {
-  color: var(--wlp-muted);
-  font-size: 0.83rem;
-  margin: 0.2rem 0 0;
+.journeyProseBlock ul {
+  margin: 0;
+  padding-left: 1.25rem;
 }
 
-.workspaceNext {
-  margin-top: 0.5rem;
+.journeyProseBlock li + li {
+  margin-top: 0.45rem;
 }
 
-.resourceCallout {
-  background: var(--wlp-tint-info);
-  border: 1px solid var(--wlp-line);
-  border-left: 4px solid var(--wlp-accent);
-  border-radius: var(--wlp-r);
+.journeyAvailable {
+  border-top: 1px solid var(--wlp-line);
+  margin-top: 2rem;
+  padding-top: 1.3rem;
+}
+
+.journeyAvailable h2 {
   color: var(--wlp-ink);
-  margin-bottom: 1rem;
-  padding: 1rem 1.15rem;
+  font-size: 1.02rem;
+  margin: 0 0 0.45rem;
 }
 
-.resourceCallout p {
+.journeyAvailable p {
   color: var(--wlp-muted);
   line-height: 1.6;
-  margin: 0.35rem 0 0;
+  margin: 0;
 }
 
-.resourceCallout a {
+.journeyActions {
+  align-items: center;
+  border-top: 1px solid var(--wlp-line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 2.1rem;
+  padding-top: 1.45rem;
+}
+
+.journeyActions a,
+.journeyTextButton {
+  background: none;
+  border: 0;
   color: var(--wlp-accent);
-  display: inline-block;
-  font-size: 0.84rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
   font-weight: 800;
-  margin-top: 0.65rem;
+  padding: 0;
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
 
-.resourceCallout a:focus-visible { outline: 2px solid var(--wlp-accent); outline-offset: 3px; }
+.journeyActions a:focus-visible,
+.journeyTextButton:focus-visible {
+  outline: 2px solid var(--wlp-accent);
+  outline-offset: 4px;
+}
+
+.journeyPlay,
+.journeyCard {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: clamp(2rem, 4vw, 3.2rem) 0 2rem;
+}
+
+.journeyPlay > .journeyLead {
+  margin-bottom: 2.2rem;
+}
+
+.journeyEvent {
+  align-items: center;
+  background: var(--wlp-tint-info);
+  border-left: 3px solid var(--wlp-accent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 0 2rem;
+  padding: 0.9rem 1.15rem;
+}
+
+.journeyEvent p {
+  color: var(--wlp-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 55ch;
+}
+
+.journeyEvent strong {
+  color: var(--wlp-ink);
+}
+
+.journeyTabs {
+  border-bottom: 1px solid var(--wlp-line);
+  display: flex;
+  gap: clamp(1rem, 4vw, 2.5rem);
+  overflow-x: auto;
+}
+
+.journeyTabs button {
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: var(--wlp-muted);
+  cursor: pointer;
+  flex: none;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 0.9rem 0;
+  white-space: nowrap;
+}
+
+.journeyTabs button:hover,
+.journeyTabs .journeyTabActive {
+  color: var(--wlp-ink);
+}
+
+.journeyTabs .journeyTabActive {
+  border-bottom-color: var(--wlp-accent);
+}
+
+.journeyTabs button:focus-visible {
+  outline: 2px solid var(--wlp-accent);
+  outline-offset: -2px;
+}
+
+.journeyResource {
+  min-height: 320px;
+  padding: 2rem 0 0.5rem;
+}
+
+.journeyResourceTitle {
+  color: var(--wlp-ink);
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  letter-spacing: -0.02em;
+  margin: 0 0 1.5rem;
+}
+
+.journeyNote {
+  border-left: 3px solid var(--wlp-accent);
+  color: var(--wlp-ink);
+  line-height: 1.6;
+  margin: 1.1rem 0 1.7rem;
+  padding: 0.1rem 0 0.1rem 1rem;
+}
+
+.journeyNote p {
+  color: var(--wlp-muted);
+  margin: 0.35rem 0 0;
+}
+
+.journeyFactNote {
+  color: var(--wlp-muted);
+  line-height: 1.6;
+}
+
+.journeySubsection {
+  border-top: 1px solid var(--wlp-line);
+  padding: 1.4rem 0 1rem;
+}
+
+.journeySubsection h3 {
+  color: var(--wlp-ink);
+  font-size: 1.12rem;
+  margin: 0 0 0.8rem;
+}
+
+.journeySubsection h3 span {
+  color: var(--wlp-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+
+.journeySubsection p {
+  color: var(--wlp-muted);
+  line-height: 1.6;
+}
+
+.journeySubsection a,
+.journeyReferences a {
+  color: var(--wlp-accent);
+  font-weight: 800;
+  text-underline-offset: 0.2em;
+}
+
+.journeyClosing {
+  color: var(--wlp-ink);
+  line-height: 1.65;
+  margin: 0 0 2rem;
+}
+
+.journeyClosing > p:last-child {
+  border-top: 1px solid var(--wlp-line);
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+}
+
+.journeyReferences {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.journeyReferences li {
+  border-top: 1px solid var(--wlp-line);
+  padding: 0.9rem 0;
+}
+
+.journeyReferences li p {
+  margin: 0.35rem 0 0;
+}
+
+.journeyCard > .cardBody {
+  margin-top: 1.8rem;
+}
 
 /* El registro simulado solo se abre para el rol que atiende devoluciones. */
 .systemWindow {
@@ -887,13 +1066,8 @@
 
 @media (max-width: 640px) {
   .modeGrid,
-  .scenarioGrid,
-  .proseGrid {
+  .scenarioGrid {
     grid-template-columns: 1fr;
-  }
-
-  .proseGrid .panel:last-child:nth-child(odd) {
-    grid-column: auto;
   }
 
   .table {
@@ -904,13 +1078,7 @@
     white-space: normal;
   }
 
-  .cardBar {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .toolkitCallout,
-  .roleSwitch {
+  .toolkitCallout {
     align-items: stretch;
     flex-direction: column;
   }
@@ -919,15 +1087,23 @@
     flex: 1 1 100%;
   }
 
-  .workspaceHeading,
-  .workspacePanel,
   .systemBody { padding: 1rem; }
 
-  .workspaceProgress { display: none; }
+  .journeySteps li { font-size: 0.72rem; }
 
-  .workspaceNav { display: flex; overflow-x: auto; }
+  .journeySteps li span { display: block; margin-bottom: 0.25rem; }
 
-  .workspaceNavButton { flex: 0 0 165px; }
+  .journeyReading,
+  .journeyPlay,
+  .journeyCard { padding-top: 2rem; }
+
+  .journeyEvent,
+  .journeyActions { align-items: stretch; flex-direction: column; }
+
+  .journeyActions .wlp-btn,
+  .journeyEvent .wlp-btn { width: 100%; }
+
+  .journeyTabs { gap: 1.2rem; }
 
   .systemForm { grid-template-columns: 1fr; }
 

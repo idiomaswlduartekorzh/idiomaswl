@@ -280,12 +280,16 @@ Se dice, no se disimula:
 - **No hay emparejador.** Si el estudiante no tiene con quién, este modo no le sirve: se va
   a «habla solo».
 
-### Mesa de juego y sistemas simulados
+### Recorrido de cada rol y sistemas simulados
 
-La interfaz de cada rol agrupa la ficha existente en cuatro espacios: encargo, datos y
-documentos, palabras para hablar y cierre. El estudiante puede volver a cualquiera de ellos
-durante la conversación. Esto reorganiza las 400 fichas publicadas sin cambiar sus datos,
-objetivos, cartas ni criterios editoriales.
+Después de elegir un papel, la interfaz muestra una etapa a la vez. La primera pantalla cuenta
+la situación y el objetivo privado del personaje; la segunda explica cómo actuar, sus límites y
+qué herramientas tendrá disponibles. Solo al pulsar «Empezar conversación» aparece la mesa de
+juego. Allí se consultan, en tres recursos planos, los datos y documentos, las palabras para
+hablar y el criterio de cierre. Se puede volver a las instrucciones durante la conversación.
+Este recorrido reorganiza las 400 fichas publicadas sin cambiar sus datos, objetivos, cartas ni
+criterios editoriales. Las fichas privadas permanecen en el idioma meta; la orientación de la
+interfaz puede estar en español.
 
 Un escenario puede añadir una herramienta local cuando la situación la justifique. En «La
 licuadora fue un regalo» (Inglés A2), quien atiende dispone de una consulta simulada del registro
