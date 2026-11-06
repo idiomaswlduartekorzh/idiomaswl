@@ -263,9 +263,8 @@ export function otherRole(scenario: RoleplayScenario, roleId: RoleId): RoleplayR
 }
 
 /**
- * Lo que el motor no hace, dicho con las mismas palabras en las tres pantallas.
- * §8 del blueprint. No es letra pequeña de un informe: el estudiante tiene que leerlo
- * antes de contar con este modo, sobre todo el tercero.
+ * Lo que el motor no hace, visible al elegir el modo y en el centro de juegos.
+ * §8 del blueprint. El estudiante lo lee antes de entrar en un escenario.
  */
 export const ROLEPLAY_LIMITS: { title: string; body: string }[] = [
   {
