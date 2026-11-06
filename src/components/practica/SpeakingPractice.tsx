@@ -66,6 +66,8 @@ export type SpeakingPracticeProps = {
   /** El aviso de haberlas practicado todas. Diez de las 24 páginas no lo traen. */
   completionTitle?: string
   completionBody?: string
+  /** Un ejercicio adicional del nivel, antes del repertorio de frases. */
+  extraPractice?: React.ReactNode
   /** El cajón de enlaces al cerrar. Hoy lo traen los B1, que enlazan a vocabulario y lectura. */
   footer?: React.ReactNode
 }
@@ -90,6 +92,7 @@ export default function SpeakingPractice({
   doneLabel = 'Dominada',
   completionTitle,
   completionBody,
+  extraPractice,
   footer,
 }: SpeakingPracticeProps) {
   const [filter, setFilter] = useState(ALL)
@@ -135,6 +138,8 @@ export default function SpeakingPractice({
           <h1>{title}</h1>
           <p className="wlp-hero-lead">{lead}</p>
         </header>
+
+        {extraPractice ? <div className={s.extraPractice}>{extraPractice}</div> : null}
 
         <div className={s.progress}>
           <div

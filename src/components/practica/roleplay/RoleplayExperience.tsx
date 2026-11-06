@@ -89,13 +89,13 @@ export function SpeakingModeHub({ set }: { set: RoleplaySet }) {
             <Link className="wlp-card wlp-card--path" href={soloSpeakingPath(set.language, set.level)}>
               <span className="wlp-eyebrow wlp-eyebrow--card">Individual</span>
               <h3>Habla solo</h3>
-              <p>20 frases esenciales con pronunciación, contexto y notas de uso.</p>
+              <p>{set.language === 'ingles' && set.level === 'b1' ? '20 frases esenciales y cinco historias con palabras sorpresa para improvisar.' : '20 frases esenciales con pronunciación, contexto y notas de uso.'}</p>
               <ul className={s.cardFacts}>
                 <li>No necesitas compañero</li>
                 <li>Marca tu propio avance</li>
                 <li>Practica en cualquier momento</li>
               </ul>
-              <strong>Practicar las 20 frases →</strong>
+              <strong>{set.language === 'ingles' && set.level === 'b1' ? 'Practicar solo →' : 'Practicar las 20 frases →'}</strong>
             </Link>
 
             <Link className="wlp-card wlp-card--path" href={accompaniedSpeakingPath(set.language, set.level)}>

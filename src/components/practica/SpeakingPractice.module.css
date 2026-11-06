@@ -10,6 +10,10 @@
   gap: 0.75rem;
 }
 
+.extraPractice {
+  margin: 1.5rem 0;
+}
+
 .item {
   background: var(--wlp-surface);
   border: 1px solid var(--wlp-line);

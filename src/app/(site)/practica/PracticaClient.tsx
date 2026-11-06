@@ -112,12 +112,6 @@ export default function PracticaClient() {
             Practica para tu examen o elige un idioma para desarrollar tus habilidades.
           </p>
 
-          <Link href="/practica/improvisa" style={{ display: 'block', textDecoration: 'none', marginBottom: '1.5rem', borderRadius: 18, background: '#172a47', color: '#fff', padding: '1.4rem 1.6rem' }}>
-            <span style={{ display: 'block', color: '#f5aa7f', fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.13em', marginBottom: '0.4rem' }}>NUEVO · EXPRESIÓN ORAL</span>
-            <strong style={{ display: 'block', fontFamily: 'Georgia, serif', fontSize: '1.7rem', fontWeight: 400 }}>Improvisa: una historia, seis sorpresas →</strong>
-            <span style={{ display: 'block', color: '#d6dfeb', fontSize: '0.9rem', marginTop: '0.35rem' }}>Tres niveles, pistas y palabras que aparecen mientras hablas.</span>
-          </Link>
-
           <AdvancedIdeasEntry />
 
           {/* Exam cards — same grid as language cards */}
