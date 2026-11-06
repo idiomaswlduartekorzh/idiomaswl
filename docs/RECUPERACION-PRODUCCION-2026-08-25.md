@@ -916,3 +916,22 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `application/pdf` y muestra el aviso «antes de firmar». La captura de
   producción confirmó la nueva presentación del reglamento.
 - Estado: `DESPLEGADO`.
+
+### 6 de noviembre de 2026 — improvisación B1 en Habla solo
+
+- `main` incorpora cinco ejercicios progresivos de improvisación en inglés B1
+  desde el commit `d9140fcae8289bd02ef11e511c5ed8cdd5385aa4`. Cada
+  ejercicio presenta una pregunta central y seis palabras o expresiones con
+  revelación temporizada. La interfaz cambia entre español e inglés sin reiniciar
+  la ronda; la revisión de las seis pistas habilita el ejercicio siguiente.
+- Pasaron `check:habla-release:b1` (20/20, cinco perfiles),
+  `check:habla-acompanada`, `check:practica-catalog`, TypeScript y
+  `npm run build -- --webpack`. En navegador se comprobaron el cambio de idioma,
+  la pausa, seis revelaciones, el avance al segundo ejercicio y la vista móvil.
+- Vercel publicó el deployment
+  [`dpl_GmfNKSc7CJv578MEquwnrkML7gmT`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/GmfNKSc7CJv578MEquwnrkML7gmT)
+  en estado `READY` desde `main`. El smoke posterior confirmó HTTP 200 en
+  `/practica/ingles/b1/habla/solo/improvisa` y
+  `/practica/ingles/b1/habla/solo`, con el enlace al ejercicio en la segunda ruta.
+- Estado: `DESPLEGADO`. Las adaptaciones de este modelo a otros niveles quedan
+  pendientes de contenido y validación específicos.
