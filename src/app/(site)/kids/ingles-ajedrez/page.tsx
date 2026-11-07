@@ -11,6 +11,7 @@ import {
   type FaqItem,
 } from '@/components/kids/KidsShared';
 import { localBusinessNode } from '@/components/hub/localBusiness';
+import ChessMoveHarness from '@/components/kids/ChessMoveHarness';
 import styles from '../kids.module.css';
 
 const CANONICAL = 'https://www.idiomaswl.com/kids/ingles-ajedrez';
@@ -252,6 +253,8 @@ export default function KidsChessPage() {
           </div>
         </div>
       </section>
+
+      <ChessMoveHarness />
 
       <section className={styles.section}>
         <div className={styles.wrap}>
