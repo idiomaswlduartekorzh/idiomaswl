@@ -956,3 +956,24 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   confirmó HTTP 200 en 24/24 rutas de Improvisa y enlaces desde 24/24 páginas
   de Speaking. No se añadieron migraciones ni variables de entorno.
 - Estado: `DESPLEGADO`.
+
+### 7 de noviembre de 2026 — 20 preguntas de Habla solo por nivel hasta C2
+
+- `main` incorpora el commit `76991de0`: 20 tarjetas por pregunta para cada una de
+  las 48 combinaciones de 8 idiomas y 6 niveles (A1–C2), 960 rondas en total.
+  Cada ronda contiene seis palabras o expresiones. Las tarjetas sustituyen la
+  experiencia antigua de frases en Habla solo; los diez accesos a roleplay y los
+  200 escenarios de Habla acompañada se conservan. Inglés, francés, alemán,
+  italiano y portugués muestran el ejercicio en el idioma de práctica; ruso,
+  japonés y coreano ofrecen además el selector de español.
+- Después de actualizar con `origin/main`, pasaron `check:practica-catalog`,
+  TypeScript y `npm run build -- --webpack` (3.774 páginas). También pasaron el
+  guardián de 960 rondas y seis pistas distintas, ESLint y
+  `check:habla-acompanada`. En navegador se verificaron la tarjeta 20, el cambio
+  de idioma y la vista móvil.
+- Vercel publicó el deployment
+  [`dpl_EUuziQTdDzUMN22Eto1RavgAJ35W`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/EUuziQTdDzUMN22Eto1RavgAJ35W)
+  en estado `READY`, construido desde ese commit de `main` y asignado a
+  `www.idiomaswl.com`. El smoke público confirmó 48/48 listas con tarjeta 20,
+  24/24 enlaces desde niveles B2–C2 y 32/32 entradas o retos adicionales.
+- Estado: `DESPLEGADO`.
