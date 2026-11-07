@@ -172,8 +172,8 @@ export default function KidsChessPage() {
               >
                 Consultar la próxima edición
               </a>
-              <a className={styles.secondaryButton} href="#ruta">
-                Ver la ruta de aprendizaje
+              <a className={styles.secondaryButton} href="#practica">
+                Practicar ajedrez
               </a>
             </div>
           </div>

@@ -120,7 +120,7 @@ export default function ChessMoveHarness() {
   }
 
   return (
-    <section className={styles.harness} aria-labelledby="chess-harness-title" data-testid="chess-move-harness">
+    <section id="practica" className={styles.harness} aria-labelledby="chess-harness-title" data-testid="chess-move-harness">
       <div className={styles.harnessHeader}>
         <div>
           <p className={styles.eyebrow}>Visual practice lab · Laboratorio visual</p>
@@ -130,9 +130,12 @@ export default function ChessMoveHarness() {
             <span> Un espacio breve para probar las animaciones antes de resolver un puzzle completo.</span>
           </p>
         </div>
-        <div className={styles.statusBadge}>
-          <span className={styles.statusDot} aria-hidden="true" />
-          <span>Ready to explore · Listo para explorar</span>
+        <div className={styles.headerActions}>
+          <a className={styles.practiceButton} href="#chess-practice-board">Practicar ahora · Practice now</a>
+          <div className={styles.statusBadge}>
+            <span className={styles.statusDot} aria-hidden="true" />
+            <span>Ready to explore · Listo para explorar</span>
+          </div>
         </div>
       </div>
 
@@ -152,7 +155,7 @@ export default function ChessMoveHarness() {
       </div>
 
       <div className={styles.harnessGrid}>
-        <div className={styles.boardPanel}>
+        <div id="chess-practice-board" className={styles.boardPanel}>
           <div className={styles.boardToolbar}>
             <div>
               <span className={styles.kicker}>Scenario · Escenario</span>
