@@ -935,3 +935,24 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `/practica/ingles/b1/habla/solo`, con el enlace al ejercicio en la segunda ruta.
 - Estado: `DESPLEGADO`. Las adaptaciones de este modelo a otros niveles quedan
   pendientes de contenido y validación específicos.
+
+### 7 de noviembre de 2026 — Improvisa en los 8 idiomas y niveles A1–B1
+
+- `main` incorpora el commit `78b12f15cbaf2837539f0c348541df9a9b1a186a`:
+  20 rondas en cada una de las 24 combinaciones de idioma y nivel, 480 en total.
+  Cada ronda tiene una pregunta distinta y seis pistas tomadas del vocabulario
+  publicado de su nivel. A1, A2 y B1 cambian el tiempo, el tipo de pregunta y
+  la cantidad de cambios de categoría. Los cinco retos B1 originales de inglés
+  se conservaron. El progreso se guarda por idioma y nivel en el navegador.
+- Pasaron el guardián específico de 480 rondas y seis pistas únicas,
+  `check:practica-catalog`, `check:habla-release:b1` (20/20, cinco perfiles),
+  `check:habla-acompanada`, ESLint, TypeScript y
+  `npm run build -- --webpack` (3.712 páginas). En navegador se verificaron
+  cambio de idioma, seis revelaciones, avance, persistencia al recargar y vista
+  móvil sin desbordamiento.
+- Vercel publicó el deployment
+  [`dpl_DBFRrwoq94sa7H8RCRSevKoWtTFi`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/DBFRrwoq94sa7H8RCRSevKoWtTFi)
+  en estado `READY`, construido desde `main` y ese commit. El smoke posterior
+  confirmó HTTP 200 en 24/24 rutas de Improvisa y enlaces desde 24/24 páginas
+  de Speaking. No se añadieron migraciones ni variables de entorno.
+- Estado: `DESPLEGADO`.
