@@ -15,3 +15,5 @@
 .levelTab{flex:0 0 170px;scroll-snap-align:start}
 .stage{scroll-margin-top:90px}
 .wordGloss{display:block;margin-top:3px;color:#66738a;font-size:12px;line-height:1.3}
+.allQuestions{display:inline-flex;align-items:center;gap:8px;color:#b95735;font-size:14px;font-weight:800;text-decoration:none;margin-top:4px}.allQuestions:hover{text-decoration:underline}
+.questionTranslation{font-size:14px!important;line-height:1.5;color:#64748b!important;margin:9px 0 16px!important}

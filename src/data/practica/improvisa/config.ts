@@ -1,5 +1,5 @@
 export const IMPROVISA_LANGUAGES = ['ingles', 'frances', 'aleman', 'italiano', 'portugues', 'ruso', 'japones', 'coreano'] as const
-export const IMPROVISA_LEVELS = ['a1', 'a2', 'b1'] as const
+export const IMPROVISA_LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const
 export type ImprovisaLanguage = (typeof IMPROVISA_LANGUAGES)[number]
 export type ImprovisaLevel = (typeof IMPROVISA_LEVELS)[number]
 
@@ -17,6 +17,7 @@ export const LANGUAGE_NAMES: Record<ImprovisaLanguage, { es: string; en: string;
 export type ImprovisaExercise = {
   title: { es: string; target: string }
   question: string
+  questionEs?: string
   followUp: string
   focus: { es: string; target: string }
   cues: { category: { es: string; target: string }; word: string; gloss: string }[]

@@ -72,6 +72,30 @@ export default function SkillHub({
   beforeGrid,
   cardBadge,
 }: SkillHubProps) {
+  const language = langHref.match(/^\/practica\/(ingles|frances|aleman|italiano|portugues|ruso|japones|coreano)$/)?.[1]
+  const level = levelLabel.toLowerCase()
+  const speakingBase = language && /^(a1|a2|b1|b2|c1|c2)$/.test(level)
+    ? `/practica/${language}/${level}/habla`
+    : null
+  const hasRoleplay = language === 'ingles' || level === 'a2'
+  const speakingHref = speakingBase ? `${speakingBase}${hasRoleplay ? '' : '/solo'}` : null
+  const advancedSpeaking: Record<string, { name: string; desc: string; count: string }> = {
+    ingles: { name: 'Speaking', desc: '20 speaking questions with six surprise words in each challenge.', count: '20 questions' },
+    frances: { name: 'Expression orale', desc: '20 questions et six mots surprise dans chaque défi oral.', count: '20 questions' },
+    aleman: { name: 'Sprechen', desc: '20 Fragen und sechs überraschende Wörter pro Sprechaufgabe.', count: '20 Fragen' },
+    italiano: { name: 'Espressione orale', desc: '20 domande e sei parole a sorpresa in ogni sfida orale.', count: '20 domande' },
+    portugues: { name: 'Expressão oral', desc: '20 perguntas e seis palavras surpresa em cada desafio oral.', count: '20 perguntas' },
+    ruso: { name: 'Expresión oral', desc: '20 preguntas de ruso con seis palabras sorpresa por reto.', count: '20 preguntas' },
+    japones: { name: 'Expresión oral', desc: '20 preguntas de japonés con seis palabras sorpresa por reto.', count: '20 preguntas' },
+    coreano: { name: 'Expresión oral', desc: '20 preguntas de coreano con seis palabras sorpresa por reto.', count: '20 preguntas' },
+  }
+  const displayedSkills = skills.map((skill) => skill.id === 'habla' && speakingHref
+    ? { ...skill, desc: '20 preguntas para hablar solo, con seis palabras sorpresa en cada reto.', count: '20 preguntas', href: speakingHref, available: true }
+    : skill)
+  if (speakingHref && /^(b2|c1|c2)$/.test(level) && !displayedSkills.some((skill) => skill.id === 'habla')) {
+    const copy = advancedSpeaking[language ?? 'ingles']
+    displayedSkills.push({ id: 'habla', name: copy.name, eng: copy.name, desc: copy.desc, count: copy.count, href: `${speakingBase}/solo`, available: true })
+  }
   return (
     <div className="wlp-page" style={{ '--wlp-accent': accent } as React.CSSProperties}>
       <div className="wlp-shell">
@@ -99,7 +123,7 @@ export default function SkillHub({
         </header>
 
         <ul className={s.grid}>
-          {skills.map((h) => {
+          {displayedSkills.map((h) => {
             const disponible = h.available !== false
             // Cada tarjeta declara el acento de SU habilidad, que es el mismo que usará la
             // página a la que lleva. Si el id no es una habilidad conocida, hereda el del

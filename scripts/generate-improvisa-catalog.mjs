@@ -1,10 +1,11 @@
-/** Build the speaking prompts from the published vocabulary sets, without editing them. */
+/** Build speaking prompts from published A1–B1 vocabulary and authored B2–C2 moves. */
 import fs from 'node:fs'
 import path from 'node:path'
 import ts from 'typescript'
+import { advancedPrompts, advancedModeNamesEs, advancedModeNames, advancedFocus, advancedTerms, advancedTermGlosses, advancedCategory } from './improvisa-advanced-content.mjs'
 
 const languages = ['ingles', 'frances', 'aleman', 'italiano', 'portugues', 'ruso', 'japones', 'coreano']
-const levels = ['a1', 'a2', 'b1']
+const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
 const keys = { ingles: 'en', frances: 'fr', aleman: 'de', italiano: 'it', portugues: 'pt', ruso: 'ru', japones: 'ja', coreano: 'ko' }
 const targetNames = { ingles: 'name', frances: 'nameFr', aleman: 'nameDe', italiano: 'nameIt', portugues: 'namePt', ruso: 'nameRu', japones: 'nameJa', coreano: 'nameKo' }
 const spanishNames = { ingles: 'nameEs', frances: 'name', aleman: 'name', italiano: 'name', portugues: 'name', ruso: 'name', japones: 'nameEs', coreano: 'nameEs' }
@@ -73,6 +74,15 @@ const prompts = {
     b1: ['여기서 어떤 문제를 볼 수 있나요? 어떻게 해결하겠어요?', '이 주제에 대한 생각이 어떻게 바뀌었나요?', '무엇을 개선할 수 있을까요? 누구에게 도움이 될까요?'],
   },
 }
+const spanishPrompts = {
+  a1: ['¿Qué sabes de este tema?', '¿Qué es importante para ti aquí?', '¿Qué puedes describir aquí?', '¿Qué cosas puedes nombrar y dónde las ves?'],
+  a2: ['Cuenta una experiencia relacionada con este tema. ¿Qué pasó?', '¿Qué plan harías en esta situación y por qué?', 'Compara dos experiencias. ¿Qué fue diferente?'],
+  b1: ['¿Qué problema ves aquí y cómo lo resolverías?', '¿Cómo ha cambiado tu opinión sobre este tema?', '¿Qué se podría mejorar y a quién beneficiaría?'],
+  b2: ['¿Cuáles son las principales ventajas y desventajas en este ámbito?', 'Describe un conflicto relacionado con este tema. ¿Qué harías?', '¿Cómo podría cambiar esta situación en la próxima década?'],
+  c1: ['¿Qué supuestos orientan el debate público sobre este tema?', '¿Cómo conciliarías dos perspectivas opuestas?', '¿Qué consecuencias imprevistas podría causar una solución?'],
+  c2: ['¿Qué premisa oculta cuestionarías en un argumento convincente sobre este tema?', '¿Cómo podrían los mismos datos sostener dos interpretaciones aparentemente incompatibles?', '¿Qué conclusión matizada resistiría una objeción fuerte?'],
+}
+for (const language of languages) Object.assign(prompts[language], advancedPrompts[language])
 const followUps = {
   a1: { es: 'Di al menos dos frases sencillas y añade las palabras que aparezcan.', target: 'Add a simple detail and keep speaking.' },
   a2: { es: 'Añade cuándo ocurrió, cómo te sentiste y qué pasó después.', target: 'Add a detail about time, feelings, and what happened next.' },
@@ -93,6 +103,7 @@ const modeNamesEs = {
   a2: ['Mi experiencia', 'Mi plan', 'Dos situaciones'],
   b1: ['Un desafío', 'Mi opinión', 'Una propuesta'],
 }
+Object.assign(modeNamesEs, advancedModeNamesEs)
 const modeNames = {
   ingles: { a1: ['What I know', 'What matters', 'What I see', 'My examples'], a2: ['My experience', 'My plan', 'Two situations'], b1: ['A challenge', 'My opinion', 'A proposal'] },
   frances: { a1: ['Ce que je sais', 'Ce qui compte', 'Ce que je vois', 'Mes exemples'], a2: ['Mon expérience', 'Mon projet', 'Deux situations'], b1: ['Un défi', 'Mon opinion', 'Une proposition'] },
@@ -103,6 +114,7 @@ const modeNames = {
   japones: { a1: ['知っていること', '大切なこと', '見えること', '私の例'], a2: ['私の経験', '私の計画', '二つの場面'], b1: ['課題', '私の意見', '提案'] },
   coreano: { a1: ['내가 아는 것', '중요한 것', '내가 보는 것', '나의 예'], a2: ['나의 경험', '나의 계획', '두 상황'], b1: ['과제', '나의 의견', '제안'] },
 }
+for (const language of languages) Object.assign(modeNames[language], advancedModeNames[language])
 
 function parse(file) {
   return ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
@@ -127,7 +139,10 @@ function readSets(language, level) {
   return expression.elements.map((set) => {
     const wordArray = prop(set, 'words')
     const nameEs = literal(prop(set, level === 'a1' ? spanishNames[language] : (['ruso', 'japones', 'coreano'].includes(language) ? 'name' : spanishNames[language])))
-    const nameTarget = literal(prop(set, targetNames[language])) || literal(prop(set, 'name'))
+    const rawNameTarget = literal(prop(set, targetNames[language])) || literal(prop(set, 'name'))
+    const nameTarget = ['ruso', 'japones', 'coreano'].includes(language)
+      ? rawNameTarget?.replace(/\s*\([^)]*\)/g, '').trim()
+      : rawNameTarget
     const words = wordArray.elements.map((word) => ({
       target: literal(prop(word, level === 'b1' ? keys[language] : 'word')),
       es: literal(prop(word, 'es')),
@@ -165,9 +180,25 @@ function readEnglishLevel(level) {
     return { nameEs, nameTarget: englishTopics[nameEs] || nameEs, words }
   }).filter((set) => set.words.length >= 6)
 }
-function cuesForRound(sets, index, level) {
+function cuesForRound(sets, index, level, language) {
   const setIndex = index % sets.length
   const pass = Math.floor(index / sets.length)
+  if (['b2', 'c1', 'c2'].includes(level)) {
+    const topicalCount = level === 'b2' ? 4 : level === 'c1' ? 3 : 2
+    const topical = cuesForRound(sets, index, 'b1', language).slice(0, topicalCount)
+    const used = new Set(topical.map((cue) => cue.word.toLowerCase()))
+    const terms = advancedTerms[language][level]
+    const selected = []
+    for (let step = 0; selected.length < 6 - topicalCount && step < terms.length; step++) {
+      const termIndex = (index * 2 + step) % terms.length
+      const word = terms[termIndex]
+      if (used.has(word.toLowerCase())) continue
+      used.add(word.toLowerCase())
+      selected.push({ category: { es: advancedCategory[level].es, target: advancedCategory[level][keys[language]] }, word, gloss: advancedTermGlosses[level][termIndex] })
+    }
+    if (topical.length + selected.length !== 6) throw Error(`Insufficient advanced cues: ${language}/${level}/${index}`)
+    return [...topical, ...selected]
+  }
   const counts = level === 'a1' ? [4, 2] : level === 'a2' ? [3, 3] : [2, 2, 2]
   const used = new Set()
   return counts.flatMap((count, group) => {
@@ -188,23 +219,29 @@ const catalog = {}
 for (const language of languages) {
   catalog[language] = {}
   for (const level of levels) {
-    const sets = language === 'ingles' && level !== 'b1' ? readEnglishLevel(level) : readSets(language, level)
+    const sourceLevel = ['b2', 'c1', 'c2'].includes(level) ? 'b1' : level
+    const sets = language === 'ingles' && sourceLevel !== 'b1' ? readEnglishLevel(sourceLevel) : readSets(language, sourceLevel)
     catalog[language][level] = Array.from({ length: 20 }, (_, index) => {
       const set = sets[index % sets.length]
       const mode = Math.floor(index / sets.length)
       const followIndex = levels.indexOf(level)
+      const advanced = ['b2', 'c1', 'c2'].includes(level)
+      const focus = advanced
+        ? { es: advancedFocus[level].es, target: advancedFocus[level][keys[language]] }
+        : { es: followUps[level].es, target: targetFollowUps[language][followIndex] }
       return {
         title: { es: `${set.nameEs} · ${modeNamesEs[level][mode]}`, target: `${set.nameTarget} · ${modeNames[language][level][mode]}` },
         question: `${set.nameTarget} — ${prompts[language][level][mode]}`,
-        followUp: targetFollowUps[language][followIndex],
-        focus: { es: followUps[level].es, target: targetFollowUps[language][followIndex] },
-        cues: cuesForRound(sets, index, level),
+        questionEs: `${set.nameEs} — ${spanishPrompts[level][mode]}`,
+        followUp: focus.target,
+        focus,
+        cues: cuesForRound(sets, index, level, language),
       }
     })
   }
 }
 const output = 'src/data/practica/improvisa/catalog.generated.ts'
-const content = `// Generated from the published vocabulary sets. Run node scripts/generate-improvisa-catalog.mjs.\nexport default JSON.parse(${JSON.stringify(JSON.stringify(catalog))}) as unknown\n`
+const content = `// Generated from published A1–B1 vocabulary and authored B2–C2 moves. Run node scripts/generate-improvisa-catalog.mjs.\nexport default JSON.parse(${JSON.stringify(JSON.stringify(catalog))}) as unknown\n`
 for (const language of languages) {
   for (const level of levels) {
     const rounds = catalog[language][level]
@@ -220,8 +257,8 @@ for (const language of languages) {
 }
 if (process.argv.includes('--check')) {
   if (!fs.existsSync(output) || fs.readFileSync(output, 'utf8') !== content) throw Error(`${output} is stale; regenerate it`)
-  console.log('Improvisa catalog OK: 8 languages × 3 levels × 20 rounds × 6 distinct cues')
+  console.log('Improvisa catalog OK: 8 languages × 6 levels × 20 rounds × 6 distinct cues')
 } else {
   fs.writeFileSync(output, content)
-  console.log(`Generated ${languages.length * levels.length * 20} rounds from published vocabulary in ${output}`)
+  console.log(`Generated ${languages.length * levels.length * 20} rounds from vocabulary and advanced discourse moves in ${output}`)
 }

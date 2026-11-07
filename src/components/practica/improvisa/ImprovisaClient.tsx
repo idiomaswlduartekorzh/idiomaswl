@@ -5,17 +5,23 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Check, Pause, Play, RotateCcw, Sparkles, Volume2 } from 'lucide-react'
 import type { ImprovisaExercise, ImprovisaLanguage, ImprovisaLevel } from '@/data/practica/improvisa/config'
 import { LANGUAGE_NAMES } from '@/data/practica/improvisa/config'
+import { TARGET_COPY } from './target-copy'
+import { readCompleted, saveCompleted } from './progress'
 import styles from './improvisa.module.css'
 
-const REVEAL_TIMING = { a1: [8, 16, 24, 32, 40, 48], a2: [9, 19, 29, 39, 49, 59], b1: [10, 22, 34, 46, 58, 70] }
-const DURATIONS = { a1: 58, a2: 70, b1: 82 }
-type Locale = 'es' | 'en'
+const REVEAL_TIMING = {
+  a1: [8, 16, 24, 32, 40, 48], a2: [9, 19, 29, 39, 49, 59],
+  b1: [10, 22, 34, 46, 58, 70], b2: [11, 24, 37, 50, 63, 76],
+  c1: [12, 26, 40, 54, 68, 82], c2: [13, 28, 43, 58, 73, 88],
+}
+const DURATIONS = { a1: 58, a2: 70, b1: 82, b2: 90, c1: 98, c2: 105 }
+type Locale = 'es' | 'target'
 
 type Phase = 'ready' | 'running' | 'paused' | 'review'
 
 const COPY = {
   es: {
-    back: 'Volver a Speaking', brand: 'LABORATORIO DE VOZ', topTag: '20 ejercicios',
+    allQuestions: 'Ver las 20 preguntas', back: 'Volver a las preguntas', brand: 'LABORATORIO DE VOZ', topTag: '20 ejercicios',
     eyebrow: 'HABLA SIN GUION', headline: 'Una historia.', headlineAccent: 'Seis sorpresas.',
     artLine1: '¿y', artLine2: 'ahora?', artCaption: 'PRÁCTICA ORAL',
     heroLead: 'Responde una pregunta en inglés. La pista anuncia la categoría; la palabra aparece cuando la línea llega a su marca. Intégrala sin perder el hilo.',
@@ -39,7 +45,7 @@ const COPY = {
     footer: 'HABLAR TAMBIÉN SE ENTRENA',
   },
   en: {
-    back: 'Back to Speaking', brand: 'SPEAKING LAB', topTag: '20 exercises',
+    allQuestions: 'See all 20 questions', back: 'Back to questions', brand: 'SPEAKING LAB', topTag: '20 exercises',
     eyebrow: 'SPEAK WITHOUT A SCRIPT', headline: 'One story.', headlineAccent: 'Six surprises.',
     artLine1: 'what', artLine2: 'next?', artCaption: 'SPEAKING PRACTICE',
     heroLead: 'Answer a question in English. A clue announces the category; the word appears when the line reaches its mark. Work it into your answer without losing your train of thought.',
@@ -69,44 +75,42 @@ function formatTime(seconds: number) {
 }
 
 export default function ImprovisaClient({ language, level, exercises }: { language: ImprovisaLanguage; level: ImprovisaLevel; exercises: ImprovisaExercise[] }) {
-  const [locale, setLocale] = useState<Locale>('es')
+  const canUseSpanish = language === 'ruso' || language === 'japones' || language === 'coreano'
+  const [locale, setLocale] = useState<Locale>(canUseSpanish ? 'es' : 'target')
   const REVEAL_AT = REVEAL_TIMING[level]
   const DURATION = DURATIONS[level]
-  const SOLO_PATH = `/practica/${language}/${level}/habla${language === 'ingles' || level === 'a2' ? '/solo' : ''}`
+  const SOLO_PATH = `/practica/${language}/${level}/habla/solo`
   const [exerciseIndex, setExerciseIndex] = useState(0)
-  const [unlocked, setUnlocked] = useState(0)
+  const [completed, setCompleted] = useState<number[]>([])
   const [phase, setPhase] = useState<Phase>('ready')
   const [elapsed, setElapsed] = useState(0)
   const [checked, setChecked] = useState<boolean[]>(Array(6).fill(false))
   const startedAt = useRef(0)
   const banked = useRef(0)
   const stageRef = useRef<HTMLElement>(null)
-  const tabsRef = useRef<HTMLDivElement>(null)
   const exercise = exercises[exerciseIndex]
   const target = LANGUAGE_NAMES[language]
-  const copy = COPY[locale]
+  const copy = locale === 'es' ? COPY.es : language === 'ingles' ? COPY.en : TARGET_COPY[language]
   const headline = level === 'a1'
-    ? locale === 'es' ? 'Una idea.' : 'One idea.'
-    : level === 'a2' ? locale === 'es' ? 'Una situación.' : 'One situation.'
+    ? locale === 'es' ? 'Una idea.' : language === 'ingles' ? 'One idea.' : TARGET_COPY[language].headA1
+    : level === 'a2' ? locale === 'es' ? 'Una situación.' : language === 'ingles' ? 'One situation.' : TARGET_COPY[language].headA2
       : copy.headline
-  const heroLead = locale === 'es' ? copy.heroLead.replace('en inglés', `en ${target.es.toLowerCase()}`) : copy.heroLead.replace('in English', `in ${target.en}`)
-  const howSpeak = locale === 'es' ? `Habla en ${target.es.toLowerCase()}` : `Speak in ${target.en}`
-  const progressKey = `improvisa:v2:${language}:${level}`
+  const heroLead = locale === 'es' ? copy.heroLead.replace('en inglés', `en ${target.es.toLowerCase()}`) : copy.heroLead
+  const howSpeak = locale === 'es' ? `Habla en ${target.es.toLowerCase()}` : copy.how2
   const revealed = REVEAL_AT.filter((at) => elapsed >= at).length
   const nextAt = REVEAL_AT[revealed]
   const remaining = Math.max(0, DURATION - elapsed)
   const allChecked = checked.every(Boolean)
 
   useEffect(() => {
-    const saved = Number(window.localStorage.getItem(progressKey))
-    if (!Number.isInteger(saved) || saved < 0 || saved >= exercises.length) return
+    const requested = Number(new URLSearchParams(window.location.search).get('ejercicio'))
+    const valid = readCompleted(language, level, exercises.length)
     const timeout = window.setTimeout(() => {
-      setUnlocked(saved)
-      setExerciseIndex(saved)
-      tabsRef.current?.scrollTo({ left: saved * 170, behavior: 'auto' })
+      setCompleted(valid)
+      if (Number.isInteger(requested) && requested >= 1 && requested <= exercises.length) setExerciseIndex(requested - 1)
     }, 0)
     return () => window.clearTimeout(timeout)
-  }, [progressKey, exercises.length])
+  }, [language, level, exercises.length])
 
   useEffect(() => {
     if (phase !== 'running') return
@@ -142,16 +146,22 @@ export default function ImprovisaClient({ language, level, exercises }: { langua
     setPhase('review')
   }
 
+  function toggleCue(index: number) {
+    const next = checked.map((value, cueIndex) => cueIndex === index ? !value : value)
+    setChecked(next)
+    const updated = next.every(Boolean)
+      ? [...new Set([...completed, exerciseIndex])]
+      : completed.filter((item) => item !== exerciseIndex)
+    setCompleted(updated)
+    saveCompleted(language, level, updated)
+  }
+
   function advance() {
     if (!allChecked || exerciseIndex === exercises.length - 1) return
-    const nextUnlocked = Math.max(unlocked, exerciseIndex + 1)
-    setUnlocked(nextUnlocked)
-    window.localStorage.setItem(progressKey, String(nextUnlocked))
-    reset(exerciseIndex + 1)
-    window.setTimeout(() => {
-      tabsRef.current?.scrollTo({ left: nextUnlocked * 170, behavior: 'smooth' })
-      stageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }, 0)
+    const nextIndex = exerciseIndex + 1
+    window.history.replaceState(null, '', `${SOLO_PATH}?ejercicio=${nextIndex + 1}`)
+    reset(nextIndex)
+    window.setTimeout(() => stageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0)
   }
 
   return (
@@ -160,7 +170,7 @@ export default function ImprovisaClient({ language, level, exercises }: { langua
         <header className={styles.topbar}>
           <Link href={SOLO_PATH} className={styles.back}><ArrowLeft size={17} /> {copy.back}</Link>
           <span className={styles.brand}>WELEARN <span>/</span> {copy.brand}</span>
-          <span className={styles.topTag}>{target.es} {level.toUpperCase()} · {copy.topTag}</span>
+          <span className={styles.topTag}>{locale === 'es' ? target.es : target.target} {level.toUpperCase()} · {copy.topTag}</span>
         </header>
 
         <section className={styles.hero} aria-labelledby="improvisa-title">
@@ -177,43 +187,33 @@ export default function ImprovisaClient({ language, level, exercises }: { langua
           <div className={styles.heroArt} aria-hidden="true">
             <span className={styles.artOrbit} /><span className={styles.artQuote}>“</span>
             <span className={styles.artWord}>{copy.artLine1}<br />{copy.artLine2}</span><span className={styles.artDot} />
-            <span className={styles.artCaption}>{target.es} {level.toUpperCase()} · {copy.artCaption}</span>
+            <span className={styles.artCaption}>{locale === 'es' ? target.es : target.target} {level.toUpperCase()} · {copy.artCaption}</span>
           </div>
         </section>
 
         <div className={styles.controlsRow}>
           <div className={styles.exercisePicker}>
-          <p className={styles.exerciseCount}>{copy.exercise} {exerciseIndex + 1} {copy.of} {exercises.length}</p>
-          <div ref={tabsRef} className={styles.levels} aria-label={copy.exercise}>
-            {exercises.map((item, index) => (
-              <button key={`${index}-${item.question}`} type="button"
-                disabled={index > unlocked || phase === 'running' || phase === 'paused'}
-                aria-current={index === exerciseIndex ? 'step' : undefined}
-                className={`${styles.levelTab} ${index === exerciseIndex ? styles.levelTabActive : ''}`}
-                onClick={() => reset(index)}>
-                <span>{String(index + 1).padStart(2, '0')}</span> {item.title[locale === 'es' ? 'es' : 'target']}
-                {index > unlocked ? ` · ${copy.locked}` : ''}
-              </button>
-            ))}
+            <p className={styles.exerciseCount}>{copy.exercise} {exerciseIndex + 1} {copy.of} {exercises.length} · {completed.length} / 20</p>
+            <Link href={SOLO_PATH} className={styles.allQuestions}>{copy.allQuestions} <ArrowRight size={15} /></Link>
           </div>
-          </div>
-          <div className={styles.language} role="group" aria-label={copy.instructionLanguage}>
+          {canUseSpanish ? <div className={styles.language} role="group" aria-label={copy.instructionLanguage}>
             <button type="button" className={locale === 'es' ? styles.languageActive : ''}
               onClick={() => setLocale('es')} aria-pressed={locale === 'es'}>Español</button>
-            <button type="button" className={locale === 'en' ? styles.languageActive : ''}
-              onClick={() => setLocale('en')} aria-pressed={locale === 'en'}>English</button>
-          </div>
+            <button type="button" className={locale === 'target' ? styles.languageActive : ''}
+              onClick={() => setLocale('target')} aria-pressed={locale === 'target'}>{target.target}</button>
+          </div> : null}
         </div>
 
         <section ref={stageRef} className={styles.stage} aria-label={`${copy.exercise} ${exerciseIndex + 1}`}>
           <div className={styles.stageTop}>
-            <span className={styles.stageKicker}>{target.es.toUpperCase()} {level.toUpperCase()} <span>·</span> {copy.exercise.toUpperCase()} {String(exerciseIndex + 1).padStart(2, '0')}</span>
+            <span className={styles.stageKicker}>{(locale === 'es' ? target.es : target.target).toUpperCase()} {level.toUpperCase()} <span>·</span> {copy.exercise.toUpperCase()} {String(exerciseIndex + 1).padStart(2, '0')}</span>
             <span className={styles.stagePill}><Volume2 size={14} /> {copy.aloud}</span>
           </div>
           <div className={styles.stageGrid}>
             <div className={styles.storyBrief}>
               <p className={styles.smallLabel}>{copy.startingQuestion}</p>
               <h2 lang={target.code}>{exercise.question}</h2>
+              {locale === 'es' && exercise.questionEs ? <p className={styles.questionTranslation} lang="es">{exercise.questionEs}</p> : null}
               <p className={styles.followUpLabel}>{copy.followUp}</p>
               <p lang={target.code}>{exercise.followUp}</p>
               <div className={styles.challenge}><span>✦</span><div><strong>{copy.mission}</strong><p>{exercise.focus[locale === 'es' ? 'es' : 'target']}</p></div></div>
@@ -270,7 +270,7 @@ export default function ImprovisaClient({ language, level, exercises }: { langua
                 <strong lang={target.code}>{visible ? cue.word : '······'}</strong>
                 {visible && locale === 'es' && cue.gloss ? <small className={styles.wordGloss}>{cue.gloss}</small> : null}
                 {phase === 'review' && <label className={styles.checkLabel}>
-                  <input type="checkbox" aria-label={`${copy.incorporated}: ${cue.word}`} checked={checked[index]} onChange={() => setChecked((prev) => prev.map((value, i) => i === index ? !value : value))} />
+                  <input type="checkbox" aria-label={`${copy.incorporated}: ${cue.word}`} checked={checked[index]} onChange={() => toggleCue(index)} />
                   <span><Check size={15} /></span> {copy.incorporated}
                 </label>}
               </div>

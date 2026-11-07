@@ -12,7 +12,7 @@ const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
 
 export const metadata: Metadata = {
   title: 'Speaking francés A2: solo o en pareja | Idiomas WeLearn',
-  description: `Practica speaking en francés A2 con 20 frases individuales o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
+  description: `Practica speaking en francés A2 con 20 preguntas de improvisación o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
   alternates: { canonical },
 }
 
@@ -22,7 +22,7 @@ export default function Page() {
     <>
       <CourseSchema
         name="Speaking en francés A2 — práctica individual y en pareja"
-        description={`20 frases individuales y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        description={`20 preguntas de improvisación y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
         url={canonical}
         educationalLevel="A2"
         teaches="Expresión oral en francés"

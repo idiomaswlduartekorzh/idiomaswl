@@ -1,9 +1,5 @@
-import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-
-export const metadata: Metadata = practicaMetadata('japones', 'a1', 'habla')
+import { redirect } from 'next/navigation'
 
 export default function Page() {
-  return <Content />
+  redirect('/practica/japones/a1/habla/solo')
 }

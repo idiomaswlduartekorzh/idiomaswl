@@ -1,17 +1,5 @@
-import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema'
-export const metadata: Metadata = practicaMetadata('portugues', 'b1', 'habla')
+import { redirect } from 'next/navigation'
+
 export default function Page() {
-  return (
-    <>
-      <QuizSchema
-        name="Expresión oral en Portugués B1 — Frases esenciales"
-        url="https://www.idiomaswl.com/practica/portugues/b1/habla"
-        description="20 frases esenciales de Portugués B1 para debates, opiniones y conversaciones formais e informais."
-      />
-      <Content />
-    </>
-  )
+  redirect('/practica/portugues/b1/habla/solo')
 }
