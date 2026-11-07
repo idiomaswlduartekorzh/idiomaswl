@@ -10,3 +10,8 @@
 .levels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));overflow:visible}
 .levelTab{min-width:0;min-height:49px;white-space:normal;text-align:left;line-height:1.2}
 @media(max-width:620px){.levels{display:flex;overflow-x:auto;scroll-snap-type:x proximity}.levelTab{min-width:145px;scroll-snap-align:start}.exerciseCount{margin-left:2px}}
+/* Twenty rounds remain a single, keyboard accessible horizontal journey. */
+.levels{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:6px}
+.levelTab{flex:0 0 170px;scroll-snap-align:start}
+.stage{scroll-margin-top:90px}
+.wordGloss{display:block;margin-top:3px;color:#66738a;font-size:12px;line-height:1.3}

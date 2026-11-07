@@ -12,7 +12,7 @@ const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
 
 export const metadata: Metadata = {
   title: 'Speaking inglés B1: solo o en pareja | Idiomas WeLearn',
-  description: `Practica speaking en inglés B1 con 20 frases, cinco ejercicios de improvisación o ${scenarioCount} juegos de rol para dos personas.`,
+  description: `Practica speaking en inglés B1 con 20 frases, 20 ejercicios de improvisación o ${scenarioCount} juegos de rol para dos personas.`,
   alternates: { canonical },
 }
 
@@ -22,7 +22,7 @@ export default function Page() {
     <>
       <CourseSchema
         name="Speaking en inglés B1 — práctica individual y en pareja"
-        description={`20 frases, cinco ejercicios de improvisación y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        description={`20 frases, 20 ejercicios de improvisación y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
         url={canonical}
         educationalLevel="B1"
         teaches="Expresión oral en inglés"

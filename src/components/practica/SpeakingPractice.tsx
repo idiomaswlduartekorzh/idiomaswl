@@ -104,6 +104,9 @@ export default function SpeakingPractice({
     [filter, phrases],
   )
 
+  const speakingMatch = hubHref.match(/^\/practica\/(ingles|frances|aleman|italiano|portugues|ruso|japones|coreano)\/(a1|a2|b1)$/)
+  const improvisaHref = speakingMatch ? `${hubHref}/habla/solo/improvisa` : null
+
   const pct = phrases.length ? Math.round((practiced.size / phrases.length) * 100) : 0
   const complete = phrases.length > 0 && practiced.size === phrases.length
 
@@ -140,6 +143,14 @@ export default function SpeakingPractice({
         </header>
 
         {extraPractice ? <div className={s.extraPractice}>{extraPractice}</div> : null}
+        {improvisaHref ? <div className={s.extraPractice}>
+          <Link className="wlp-card wlp-card--path" href={improvisaHref}>
+            <span className="wlp-eyebrow wlp-eyebrow--card">PRÁCTICA ORAL · 20 RETOS</span>
+            <h3>Improvisa: 20 retos orales, seis palabras sorpresa por ronda</h3>
+            <p>Responde preguntas de tu nivel en el idioma que estudias. Integra cada palabra cuando aparezca y avanza a tu ritmo.</p>
+            <strong>Empezar a improvisar →</strong>
+          </Link>
+        </div> : null}
 
         <div className={s.progress}>
           <div

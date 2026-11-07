@@ -1,5 +1,4 @@
 import SpeakingPractice from '@/components/practica/SpeakingPractice'
-import Link from 'next/link'
 
 interface Phrase {
   id: number; phrase: string; es: string;
@@ -38,21 +37,13 @@ export default function HablaInglesB1() {
       hubLabel="🇬🇧 Inglés B1"
       eyebrow="Speaking · Inglés B1"
       title="Expresión oral B1"
-      lead="Practica 20 frases esenciales y después improvisa cinco historias B1 con palabras sorpresa. Habla en voz alta y marca tu avance."
+      lead="Practica 20 frases esenciales y después improvisa 20 historias B1 con palabras sorpresa. Habla en voz alta y marca tu avance."
       categories={CATEGORIES.slice(1)}
       noteHeading="Nota de uso y variantes"
       doneLabel="Dominada"
       todoLabel="Lo logré"
       completionTitle="¡Completaste las 20 frases B1!"
       completionBody="Ahora úsalas en conversación real — aplícalas en tu próxima clase con David o Zhanna."
-      extraPractice={
-        <Link className="wlp-card wlp-card--path" href="/practica/ingles/b1/habla/solo/improvisa">
-          <span className="wlp-eyebrow wlp-eyebrow--card">NUEVO · SPEAKING B1</span>
-          <h3>Improvisa: cinco historias, seis sorpresas cada una</h3>
-          <p>Responde preguntas B1 en inglés, integra palabras que aparecen a contrarreloj y avanza ejercicio por ejercicio.</p>
-          <strong>Empezar la primera historia →</strong>
-        </Link>
-      }
       phrases={PHRASES.map((p) => ({
           id: p.id,
           phrase: p.phrase,
