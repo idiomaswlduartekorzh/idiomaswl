@@ -44,7 +44,11 @@ export async function prepareCourseOrder(input:NonNullable<ReturnType<typeof par
     p_user:null,p_email:input.contact.studentEmail,p_access_hash:orderAccessHash(token),p_key:input.idempotencyKey,p_environment:config.environment,p_offer:input.offerVersion,
     p_selection:input.selection,p_contact:{...input.contact,acceptance:{...input.acceptance,snapshot:COURSE_LEGAL_SNAPSHOT,sha256:createHash('sha256').update(COURSE_LEGAL_SNAPSHOT).digest('hex')}},p_amount:input.amountInCents,p_classes:input.classes,p_terms:input.termsVersion,
   }).abortSignal(AbortSignal.timeout(10000));
-  if (error || !data) throw new Error('order_storage_unavailable');
+  if(error){
+    const known=['open_order_exists','idempotency_conflict','order_rate_limit'].find(code=>error.message.includes(code));
+    throw new Error(known??'order_storage_unavailable');
+  }
+  if(!data)throw new Error('order_storage_unavailable');
   const fee=Number(data.enrollment_fee_in_cents);
   const platformFee=Number(data.platform_fee_in_cents);
   if(data.enrollment_fee_version!==ENROLLMENT_FEE_VERSION || ![0,ENROLLMENT_FEE_COP*100].includes(fee)
