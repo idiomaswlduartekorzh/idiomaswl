@@ -3,7 +3,6 @@ import { createHash } from 'node:crypto';
 import { Buffer } from 'node:buffer';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { type Contact } from './payment';
-import { normalizeWhatsAppPhone } from './phone';
 import { COURSE_LEGAL_SNAPSHOT, PRIVACY_VERSION, TERMS_VERSION } from './terms';
 import { generateCourseTermsPdf, resolveCourseTermsSnapshot } from './terms-pdf.server';
 import { escapeEmailHtml, sendCourseEmail } from './email.server';
@@ -22,27 +21,6 @@ export async function findManualInvite(token: string): Promise<ManualInvite | nu
   const { data, error } = await createAdminClient().from('manual_course_enrollment_invites').select('*').eq('token_hash', hash).maybeSingle();
   if (error) throw error;
   return data as ManualInvite | null;
-}
-
-function clean(value: unknown, min: number, max: number) {
-  if (typeof value !== 'string') return null;
-  const result = value.normalize('NFKC').trim().replace(/\s+/g, ' ');
-  return result.length >= min && result.length <= max && !/[\x00-\x1f<>]/.test(result) ? result : null;
-}
-
-export function parseManualContact(value: unknown, email: string): Contact | null {
-  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
-  const x = value as Record<string, unknown>;
-  const studentName = clean(x.studentName, 2, 100);
-  const payerName = clean(x.payerName, 2, 100);
-  const signerName = clean(x.signerName, 2, 100);
-  const phone = normalizeWhatsAppPhone(x.phone);
-  const city = clean(x.city, 2, 100);
-  const address = clean(x.address, 5, 180);
-  const purpose = clean(x.purpose, 0, 500);
-  if (!studentName || !payerName || !signerName || !phone || !city || !address || purpose === null) return null;
-  if (signerName.toLocaleLowerCase('es-CO') !== payerName.toLocaleLowerCase('es-CO')) return null;
-  return { studentName, studentEmail: email, payerName, signerName, phone, city, address, purpose };
 }
 
 export async function recordManualAcceptance(invite: ManualInvite, contact: Contact) {

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseOrderInput, parseProviderPayment, safeCourseReturnPath, isCourseRequestOrigin } from '../src/lib/course-pricing/payment.ts';
+import { parseOrderInput, parseManualContact, parseProviderPayment, safeCourseReturnPath, isCourseRequestOrigin } from '../src/lib/course-pricing/payment.ts';
 import { TERMS_VERSION,PRIVACY_VERSION,COURSE_LEGAL_READY } from '../src/lib/course-pricing/terms.ts';
 import { COURSE_SALES_RELEASED, courseSalesEnabled } from '../src/lib/course-pricing/release.ts';
 import { normalizeWhatsAppPhone } from '../src/lib/course-pricing/phone.ts';
@@ -18,8 +18,21 @@ test('server calculates price and requires current explicit legal acceptance',()
  assert.equal(parseOrderInput({...input,contact:{...input.contact,phone:'+1 (415) 555-2671'}})?.contact.phone,'+14155552671');
  assert.equal(parseOrderInput({...input,contact:{...input.contact,address:'x'}}),null);
  assert.equal(parseOrderInput({...input,contact:{...input.contact,purpose:''}})?.contact.purpose,'');
- assert.equal(parseOrderInput({...input,contact:{...input.contact,signerName:'Otra Persona'}}),null);
+ const thirdPartySignature=parseOrderInput({...input,contact:{...input.contact,signerName:'Representante Autorizada'}});
+ assert.equal(thirdPartySignature?.contact.studentName,'Estudiante Prueba');
+ assert.equal(thirdPartySignature?.contact.payerName,'Pagador Prueba');
+ assert.equal(thirdPartySignature?.acceptance.signedBy,'Representante Autorizada');
+ assert.equal(parseOrderInput({...input,contact:{...input.contact,signerName:''}}),null);
+ assert.equal(parseOrderInput({...input,acceptedAdult:false}),null);
  assert.equal(COURSE_LEGAL_READY,true,'Approved terms can proceed when the operational sales flag is enabled');
+});
+test('manual enrollment records student, payer and signer as separate people',()=>{
+ const contact={studentName:'Estudiante Prueba',payerName:'Pagador Prueba',signerName:'Representante Autorizada',phone:'3001234567',city:'Bucaramanga, Colombia',address:'Calle 10 # 20-30',purpose:''};
+ assert.deepEqual(parseManualContact(contact,'estudiante@example.com'),{
+  ...contact,studentEmail:'estudiante@example.com',phone:'+573001234567'
+ });
+ assert.equal(parseManualContact({...contact,signerName:''},'estudiante@example.com'),null);
+ assert.equal(parseManualContact({...contact,phone:'123'},'estudiante@example.com'),null);
 });
 test('WhatsApp number accepts Colombian local entry and international E.164',()=>{
  assert.equal(normalizeWhatsAppPhone('3001234567'),'+573001234567');

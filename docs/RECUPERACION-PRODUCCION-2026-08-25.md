@@ -977,3 +977,10 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `www.idiomaswl.com`. El smoke público confirmó 48/48 listas con tarjeta 20,
   24/24 enlaces desde niveles B2–C2 y 32/32 entradas o retos adicionales.
 - Estado: `DESPLEGADO`.
+
+### 9 de noviembre de 2026 — lectura de la orden y nombres independientes en la inscripción
+
+- La rama `codex/course-enrollment-friction-20261109`, creada desde `origin/main`, reorganiza `/inscripcion` para móvil: importe y desglose visibles, acción de pago antes del reglamento y apartados aceptados consultables por separado. Oculta allí el botón flotante de WhatsApp porque la orden tiene su propio enlace de ayuda.
+- La inscripción por Wompi y por consignación acepta nombres distintos para estudiante, pagador y firmante. Se mantienen la identificación de cada persona, la confirmación de mayoría de edad y la aceptación del reglamento. El texto actualizado se guarda con la versión `course-20261109-v5`; las órdenes con `v4` conservan su copia aceptada y pueden completar el pago.
+- Pasaron 12 pruebas de precios y pagos, `check:practica-catalog`, TypeScript, ESLint de los archivos modificados y `npm run build -- --webpack` (3.774 rutas). En navegador se comprobó la orden a 390 px, la apertura de los apartados y ausencia de desbordamiento horizontal con una respuesta de API simulada.
+- Estado: `PENDIENTE DE INTEGRACIÓN`; no corresponde todavía a una versión desplegada.

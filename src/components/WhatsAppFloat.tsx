@@ -64,6 +64,9 @@ export default function WhatsAppFloat() {
     }
   }
 
+  // La inscripción incluye su propio enlace de ayuda; el botón fijo tapa el resumen en móvil.
+  if (pathname === '/inscripcion') return null;
+
   return (
     <>
       <style>{`

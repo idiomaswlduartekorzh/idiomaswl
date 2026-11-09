@@ -105,7 +105,7 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
     </div>
     <aside className={styles.rulesNotice} aria-label="Aviso importante sobre el reglamento">
       <p className={styles.rulesNoticeTitle}>Antes de pagar: lee el reglamento completo</p>
-      <p>La versión que aceptes quedará asociada a tu inscripción junto con la fecha y la firma de quien paga. Después del pago te enviaremos esta copia en PDF al correo del estudiante.</p>
+      <p>La versión que aceptes quedará asociada a tu inscripción junto con la fecha y la firma de quien acepta las condiciones. Después del pago te enviaremos esta copia en PDF al correo del estudiante.</p>
       <div className={styles.rulesActions}>
         <a href="/reglamento" target="_blank" rel="noopener">Leer el reglamento</a>
         <a href="/reglamento/archivo" target="_blank" rel="noopener">Descargar copia en PDF</a>
@@ -131,10 +131,10 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
         <label className={styles.fieldWide}>Dirección de residencia<input name="address" autoComplete="street-address" required minLength={5} maxLength={180} /></label>
         <label className={styles.fieldWide}>Propósito del curso <span className={styles.optionalField}>(opcional)</span><textarea name="purpose" placeholder="Si quieres, cuéntanos qué te gustaría lograr. También puedes dejarlo vacío." maxLength={500} rows={4} /></label>
         <label>Nombre de quien paga<input name="payerName" autoComplete="cc-name" required minLength={2} maxLength={100} /></label>
-        <label>Firma electrónica<input name="signerName" autoComplete="name" required minLength={2} maxLength={100} aria-describedby="signature-help" /></label>
+        <label>Tu nombre completo para firmar<input name="signerName" autoComplete="name" required minLength={2} maxLength={100} aria-describedby="signature-help" /></label>
       </div>
       <p id="phone-help" className={styles.small}>En Colombia, escribe solo los 10 dígitos; agregamos +57 automáticamente. No necesitas conocer el código de país. Si tu número es de otro país, escribe + y su código. Si el estudiante es menor, continúa su madre, padre o representante.</p>
-      <p id="signature-help" className={styles.signatureHelp}><strong>Escribe exactamente el mismo nombre de quien paga.</strong> Este nombre será tu firma electrónica. Guardaremos la fecha, la versión y la huella del reglamento aceptado.</p>
+      <p id="signature-help" className={styles.signatureHelp}>Escribe <strong>tu propio nombre completo</strong> si eres la persona adulta que acepta estas condiciones. Puede ser diferente del nombre del estudiante y de quien paga. Guardaremos la fecha, la versión y la huella del reglamento aceptado.</p>
       <div className={styles.agreements}>
         <label><input name="privacy" type="checkbox" required /> {PRIVACY_NOTICE}</label>
         <label><input name="adult" type="checkbox" required /> Soy mayor de edad y tengo autorización para inscribirme o representar al estudiante y proporcionar sus datos.</label>

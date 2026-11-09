@@ -1,4 +1,5 @@
-import { findManualInvite, finishManualEnrollment, parseManualContact, recordManualAcceptance } from '@/lib/course-pricing/manual-enrollment.server';
+import { findManualInvite, finishManualEnrollment, recordManualAcceptance } from '@/lib/course-pricing/manual-enrollment.server';
+import { parseManualContact } from '@/lib/course-pricing/payment';
 import { json, readBody, sameOrigin } from '@/lib/course-pricing/http.server';
 import { PRIVACY_VERSION, TERMS_VERSION } from '@/lib/course-pricing/terms';
 
@@ -18,7 +19,7 @@ export async function POST(request: Request, context: { params: Promise<{ token:
       const body = await readBody(request) as Record<string, unknown>;
       if (body.acceptedTerms !== TERMS_VERSION || body.reviewedTerms !== TERMS_VERSION || body.acceptedPrivacy !== PRIVACY_VERSION || body.acceptedAdult !== true) return json({ message: 'Debes leer y aceptar las condiciones para continuar.' }, 400);
       const contact = parseManualContact(body.contact, invite.email);
-      if (!contact) return json({ message: 'Revisa los datos y escribe el mismo nombre en la firma.' }, 400);
+      if (!contact) return json({ message: 'Revisa los datos del estudiante, del pagador y de quien firma.' }, 400);
       const recorded = await recordManualAcceptance(invite, contact);
       if (recorded) invite = recorded;
       else {

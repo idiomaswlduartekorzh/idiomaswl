@@ -70,7 +70,7 @@ export default function ManualEnrollmentForm({ token, email, schedule, alreadySi
         <label>Dirección de residencia<input name="address" required minLength={5} maxLength={180} autoComplete="street-address" /></label>
         <label className={styles.wide}><span>Propósito del curso <span className={styles.optional}>(opcional)</span></span><textarea name="purpose" maxLength={500} rows={3} placeholder="Si quieres, cuéntanos qué te gustaría lograr. También puedes dejarlo vacío." /><small>Podemos hablarlo juntos en la primera clase.</small></label>
         <label>Nombre de quien realizó la consignación<input name="payerName" required minLength={2} maxLength={100} /></label>
-        <label>Firma electrónica<input name="signerName" required minLength={2} maxLength={100} aria-describedby="firma-ayuda" /><small id="firma-ayuda">Escribe el mismo nombre completo de quien realizó la consignación.</small></label>
+        <label>Tu nombre completo para firmar<input name="signerName" required minLength={2} maxLength={100} aria-describedby="firma-ayuda" /><small id="firma-ayuda">Escribe tu propio nombre si aceptas el reglamento. Puedes ser una persona distinta de quien estudia y de quien pagó.</small></label>
       </div>
       <div className={styles.signatureNote}><strong>Tu firma queda respaldada.</strong> Guardaremos el nombre, la fecha, el texto aceptado y una copia PDF de la constancia.</div>
       <div className={styles.agreements}><label><input name="privacy" type="checkbox" required /><span>{PRIVACY_NOTICE}</span></label><label><input name="adult" type="checkbox" required /><span>Soy mayor de edad y puedo inscribir al estudiante y proporcionar sus datos.</span></label></div>

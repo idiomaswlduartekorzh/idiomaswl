@@ -8,7 +8,6 @@ function cleanText(value: unknown, min: number, max: number) {
   const clean = value.normalize('NFKC').trim().replace(/\s+/g, ' ');
   return clean.length >= min && clean.length <= max && !/[\x00-\x1f<>]/.test(clean) ? clean : null;
 }
-function comparableName(value: string) { return value.normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('es-CO'); }
 export function parseOrderInput(value: unknown) {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
   const x = value as Record<string, unknown>;
@@ -19,12 +18,25 @@ export function parseOrderInput(value: unknown) {
   try {
     const details = selectionDetails(s);
     const studentName=cleanText(c.studentName,2,100),payerName=cleanText(c.payerName,2,100),address=cleanText(c.address,5,180),city=cleanText(c.city,2,100),purpose=cleanText(c.purpose,0,500),signerName=cleanText(c.signerName,2,100);
-    if (!studentName || !payerName || !address || !city || purpose===null || !signerName || comparableName(signerName)!==comparableName(payerName)) return null;
+    if (!studentName || !payerName || !address || !city || purpose===null || !signerName) return null;
     if (typeof c.studentEmail !== 'string' || c.studentEmail.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.studentEmail.trim())) return null;
     const phone = normalizeWhatsAppPhone(c.phone);
     if (!phone) return null;
     return { idempotencyKey:x.idempotencyKey, selection:{language:s.language,objective:s.objective,plan:s.plan,level:s.level}, contact:{studentName,studentEmail:c.studentEmail.trim().toLowerCase(),payerName,phone,address,city,purpose,signerName}, offerVersion:CATALOG_VERSION, amountInCents:details.plan.price*100, classes:details.classes, termsVersion:TERMS_VERSION, acceptance:{termsVersion:TERMS_VERSION,privacyVersion:PRIVACY_VERSION,adultConfirmed:true,termsReviewed:true,signedBy:signerName,signatureMethod:'typed-full-name' as const} };
   } catch { return null; }
+}
+export function parseManualContact(value: unknown, email: string): Contact | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+  const x = value as Record<string, unknown>;
+  const studentName = cleanText(x.studentName, 2, 100);
+  const payerName = cleanText(x.payerName, 2, 100);
+  const signerName = cleanText(x.signerName, 2, 100);
+  const phone = normalizeWhatsAppPhone(x.phone);
+  const city = cleanText(x.city, 2, 100);
+  const address = cleanText(x.address, 5, 180);
+  const purpose = cleanText(x.purpose, 0, 500);
+  if (!studentName || !payerName || !signerName || !phone || !city || !address || purpose === null) return null;
+  return { studentName, studentEmail: email, payerName, signerName, phone, city, address, purpose };
 }
 export type ProviderPayment = { id: string; reference: string; amount_in_cents: number; currency:'COP'; status:'PENDING'|'APPROVED'|'DECLINED'|'ERROR'|'VOIDED' };
 export function parseProviderPayment(value: unknown): ProviderPayment | null {
