@@ -980,7 +980,9 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 
 ### 9 de noviembre de 2026 — lectura de la orden y nombres independientes en la inscripción
 
-- La rama `codex/course-enrollment-friction-20261109`, creada desde `origin/main`, reorganiza `/inscripcion` para móvil: importe y desglose visibles, acción de pago antes del reglamento y apartados aceptados consultables por separado. Oculta allí el botón flotante de WhatsApp porque la orden tiene su propio enlace de ayuda.
+- `main` incorporó el commit `7f4fa0e1`, originado en la rama `codex/course-enrollment-friction-20261109`. Reorganiza `/inscripcion` para móvil: importe y desglose visibles, acción de pago antes del reglamento y apartados aceptados consultables por separado. Oculta allí el botón flotante de WhatsApp porque la orden tiene su propio enlace de ayuda.
 - La inscripción por Wompi y por consignación acepta nombres distintos para estudiante, pagador y firmante. Se mantienen la identificación de cada persona, la confirmación de mayoría de edad y la aceptación del reglamento. El texto actualizado se guarda con la versión `course-20261109-v5`; las órdenes con `v4` conservan su copia aceptada y pueden completar el pago.
 - Pasaron 12 pruebas de precios y pagos, `check:practica-catalog`, TypeScript, ESLint de los archivos modificados y `npm run build -- --webpack` (3.774 rutas). En navegador se comprobó la orden a 390 px, la apertura de los apartados y ausencia de desbordamiento horizontal con una respuesta de API simulada.
-- Estado: `PENDIENTE DE INTEGRACIÓN`; no corresponde todavía a una versión desplegada.
+- La migración `20261109202857_allow_course_terms_v5.sql` quedó aplicada en Supabase: la función de creación de órdenes admite `v4` y `v5` y rechaza versiones desconocidas. Pasó la prueba de base de datos con PGlite; la definición de producción se verificó después de aplicarla.
+- Vercel publicó `7f4fa0e1` en producción mediante `dpl_GLqTbnbNU5TKV3SGF17cJvMyf9o2` (estado `READY`), asignado a `www.idiomaswl.com`. El smoke público confirmó HTTP 200 en `/precios`, `/reglamento`, `/inscripcion` y el PDF del reglamento; el texto y el PDF muestran `course-20261109-v5`.
+- Estado: `DESPLEGADO`.

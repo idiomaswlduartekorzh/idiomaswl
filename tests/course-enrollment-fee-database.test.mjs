@@ -7,19 +7,22 @@ test('enrollment and one-time exam platform fees are frozen and verified', async
   const db = new PGlite();
   try {
     await db.exec('create role anon; create role authenticated; create role service_role bypassrls; create schema auth; create table auth.users(id uuid primary key)');
-    for (const file of ['20260907202922_course_orders_wompi.sql','20261031172547_course_enrollment_fee.sql','20261031174346_course_exam_platform_fee.sql']) {
+    for (const file of ['20260907202922_course_orders_wompi.sql','20261031172547_course_enrollment_fee.sql','20261031174346_course_exam_platform_fee.sql','20261109202857_allow_course_terms_v5.sql']) {
       await db.exec(await readFile(new URL(`../supabase/migrations/${file}`, import.meta.url), 'utf8'));
     }
     await db.exec("create table public.profiles(id uuid primary key,email text); create table public.exam_access_grants(user_id uuid,source text,status text); grant select on public.profiles,public.exam_access_grants to service_role");
     await db.exec('set role service_role');
     let counter = 0;
-    const create = async ({key=`12345678-1234-4234-8234-${String(++counter).padStart(12,'0')}`,amount=32000000,objective='general',email='student@example.com'}={}) =>
+    const create = async ({key=`12345678-1234-4234-8234-${String(++counter).padStart(12,'0')}`,amount=32000000,objective='general',email='student@example.com',terms='course-20261031-v4'}={}) =>
       (await db.query('select * from public.prepare_course_order_with_fee($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)',
-        [null,email,'a'.repeat(64),key,'sandbox','classes-4w-20260906',{language:'ingles',plan:'esencial',objective},{studentEmail:email},amount,4,'course-20261031-v4'])).rows[0];
+        [null,email,'a'.repeat(64),key,'sandbox','classes-4w-20260906',{language:'ingles',plan:'esencial',objective},{studentEmail:email},amount,4,terms])).rows[0];
     const approve = (order,id,amount=Number(order.amount_in_cents)) => db.query('select public.record_course_payment($1,$2,$3,$4,$5,$6,$7,$8)',
       [order.reference,'sandbox',id,amount,'COP','APPROVED',new Date().toISOString(),`approved-${id}`]);
 
     const first = await create();
+    const updatedTerms = await create({email:'v5@example.com',terms:'course-20261109-v5'});
+    assert.equal(updatedTerms.terms_version,'course-20261109-v5');
+    await assert.rejects(create({email:'unsupported@example.com',terms:'course-20261109-v6'}),/invalid_order_identity/);
     assert.equal(Number(first.enrollment_fee_in_cents),4420000);
     assert.equal(Number(first.platform_fee_in_cents),0);
     assert.equal(Number(first.amount_in_cents),36420000);
