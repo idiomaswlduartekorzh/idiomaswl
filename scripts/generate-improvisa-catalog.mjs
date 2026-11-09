@@ -4,6 +4,7 @@ import path from 'node:path'
 import ts from 'typescript'
 import { advancedModeNamesEs, advancedModeNames, advancedFocus, advancedTerms, advancedTermGlosses, advancedCategory } from './improvisa-advanced-content.mjs'
 import { concreteQuestion, everydaySubjects, everydaySubjectsEs, advancedSituations } from './improvisa-concrete-questions.mjs'
+import { a1Questions, a1QuestionsEs } from './improvisa-a1-questions.mjs'
 
 const languages = ['ingles', 'frances', 'aleman', 'italiano', 'portugues', 'ruso', 'japones', 'coreano']
 const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
@@ -130,6 +131,29 @@ function readEnglishLevel(level) {
     return { nameEs, nameTarget: englishTopics[nameEs] || nameEs, words }
   }).filter((set) => set.words.length >= 6)
 }
+function readOriginalEnglishB1() {
+  const file = 'src/data/practica/improvisa/english-b1-original.ts'
+  const ast = parse(file)
+  let expression
+  function visit(node) {
+    if (ts.isVariableDeclaration(node) && node.name.getText(ast) === 'B1_EXERCISES'
+      && node.initializer && ts.isArrayLiteralExpression(node.initializer)) expression = node.initializer
+    ts.forEachChild(node, visit)
+  }
+  visit(ast)
+  if (!expression) throw Error('Missing original English B1 exercises')
+  return expression.elements.map((round, index) => {
+    const question = literal(prop(round, 'question'))
+    const cues = prop(round, 'cues')
+    const words = ts.isArrayLiteralExpression(cues)
+      ? cues.elements.map((cue) => literal(prop(cue, 'word')))
+      : []
+    if (!question?.includes('?') || words.length !== 6 || new Set(words).size !== 6) {
+      throw Error(`Incomplete original English B1 exercise: ${index + 1}`)
+    }
+    return question
+  })
+}
 function cuesForRound(sets, index, level, language) {
   const setIndex = index % sets.length
   const pass = Math.floor(index / sets.length)
@@ -179,6 +203,10 @@ for (const language of languages) {
       if (everydaySubjectsEs[language]?.[level] && everydaySubjectsEs[language][level].length !== sets.length) {
         throw Error(`Spanish subjects do not match ${language}/${level} topics`)
       }
+      if (level === 'a1' && (a1Questions[language]?.length !== 20
+        || (['ruso', 'japones', 'coreano'].includes(language) && a1QuestionsEs[language]?.length !== 20))) {
+        throw Error(`Expected 20 authored A1 questions: ${language}`)
+      }
     }
     catalog[language][level] = Array.from({ length: 20 }, (_, index) => {
       const set = sets[index % sets.length]
@@ -203,11 +231,20 @@ for (const language of languages) {
 }
 const output = 'src/data/practica/improvisa/catalog.generated.ts'
 const content = `// Generated from published A1–B1 vocabulary and authored B2–C2 moves. Run node scripts/generate-improvisa-catalog.mjs.\nexport default JSON.parse(${JSON.stringify(JSON.stringify(catalog))}) as unknown\n`
+const originalEnglishB1 = readOriginalEnglishB1()
+const runtimeEnglishB1 = [...originalEnglishB1, ...catalog.ingles.b1.slice(0, 15).map((round) => round.question)]
+if (originalEnglishB1.length !== 5 || runtimeEnglishB1.length !== 20 || new Set(runtimeEnglishB1).size !== 20) {
+  throw Error('Expected 20 distinct English B1 runtime questions, including the five original exercises')
+}
 for (const language of languages) {
   for (const level of levels) {
     const rounds = catalog[language][level]
     if (rounds.length !== 20 || new Set(rounds.map((round) => round.question)).size !== 20) {
       throw Error(`Expected 20 distinct questions: ${language}/${level}`)
+    }
+    if (['ruso', 'japones', 'coreano'].includes(language)
+      && new Set(rounds.map((round) => round.questionEs)).size !== 20) {
+      throw Error(`Expected 20 distinct Spanish support questions: ${language}/${level}`)
     }
     for (const round of rounds) {
       if (!round.question || (['ruso', 'japones', 'coreano'].includes(language) && !round.questionEs)
@@ -216,6 +253,10 @@ for (const language of languages) {
       }
       if (vagueQuestion.test(round.question + (round.questionEs || ''))) {
         throw Error(`Vague speaking question: ${language}/${level}/${round.title.es}`)
+      }
+      if (level === 'a1' && ((language !== 'japones' && !round.question.includes('?'))
+        || (round.questionEs && !round.questionEs.includes('?')))) {
+        throw Error(`A1 prompt must ask a direct question: ${language}/${round.title.es}`)
       }
       if (round.cues.length !== 6 || new Set(round.cues.map((cue) => cue.word.toLowerCase())).size !== 6) {
         throw Error(`Expected six distinct cues: ${language}/${level}/${round.title.es}`)

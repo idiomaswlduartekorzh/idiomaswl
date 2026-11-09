@@ -16,7 +16,7 @@ export type B1Exercise = {
 export const B1_EXERCISES: B1Exercise[] = [
   {
     title: { es: 'Un ayer inesperado', en: 'An unexpected yesterday' },
-    question: "What happened yesterday that you didn't expect?",
+    question: "You had an appointment yesterday, but heavy traffic blocked your route. What happened next?",
     followUp: 'How did you feel when your plans changed?',
     focus: { es: 'Cuenta una secuencia en pasado y explica cómo reaccionaste.', en: 'Tell a sequence of past events and explain how you reacted.' },
     cues: [
@@ -30,8 +30,8 @@ export const B1_EXERCISES: B1Exercise[] = [
   },
   {
     title: { es: 'Una decisión difícil', en: 'A difficult decision' },
-    question: 'Tell me about a difficult choice you made.',
-    followUp: 'What would you do differently now?',
+    question: 'You can accept a job in another city or stay near your family. Which option would you choose, and why?',
+    followUp: 'Whose advice would you ask for before deciding?',
     focus: { es: 'Explica dos opciones, justifica tu decisión y considera una alternativa.', en: 'Explain two options, justify your choice, and consider an alternative.' },
     cues: [
       { category: { es: 'Posibilidad', en: 'Possibility' }, word: 'opportunity' },
@@ -44,8 +44,8 @@ export const B1_EXERCISES: B1Exercise[] = [
   },
   {
     title: { es: 'Un viaje con imprevistos', en: 'A trip with surprises' },
-    question: "Describe a trip that didn't go as planned.",
-    followUp: 'How did you solve the main problem?',
+    question: 'Your train is delayed and you miss a hotel reservation. How would you save the trip?',
+    followUp: 'Who could help you find a solution?',
     focus: { es: 'Describe un problema realista y cómo encontraste una solución.', en: 'Describe a realistic problem and how you found a solution.' },
     cues: [
       { category: { es: 'Plan', en: 'Plan' }, word: 'reservation' },
@@ -58,9 +58,9 @@ export const B1_EXERCISES: B1Exercise[] = [
   },
   {
     title: { es: 'Dos puntos de vista', en: 'Two points of view' },
-    question: 'When did you disagree with someone and learn something?',
-    followUp: 'How did the conversation end?',
-    focus: { es: 'Reconoce otra perspectiva y cuenta cómo llegaron a un acuerdo.', en: 'Acknowledge another perspective and describe how you reached an agreement.' },
+    question: 'A friend thinks your neighbor was rude, but you think it was a misunderstanding. How would you discuss it with them?',
+    followUp: 'What could each of you say to reach an agreement?',
+    focus: { es: 'Reconoce otra perspectiva y explica cómo podrían llegar a un acuerdo.', en: 'Acknowledge another perspective and explain how you could reach an agreement.' },
     cues: [
       { category: { es: 'Opinión', en: 'Opinion' }, word: 'viewpoint' },
       { category: { es: 'Contraste', en: 'Contrast' }, word: 'however' },
@@ -72,7 +72,7 @@ export const B1_EXERCISES: B1Exercise[] = [
   },
   {
     title: { es: 'Mi comunidad, mejor', en: 'A better community' },
-    question: 'What would you improve in your community?',
+    question: 'Your neighborhood has no safe place for young people to meet. What affordable change would you propose?',
     followUp: 'Who would benefit from your idea, and why?',
     focus: { es: 'Presenta una propuesta, una condición y una consecuencia.', en: 'Present a proposal, a condition, and a consequence.' },
     cues: [

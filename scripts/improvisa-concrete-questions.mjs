@@ -1,4 +1,5 @@
 /** Concrete situations for every generated speaking question. Order matches the published vocabulary sets. */
+import { a1Questions, a1QuestionsEs } from './improvisa-a1-questions.mjs'
 const rows = (value) => value.trim().split('\n').map((line) => line.trim())
 const pairs = (value) => rows(value).map((line) => {
   const [choice, claim] = line.split(' | ')
@@ -313,7 +314,6 @@ const fill = (template, context) => template.replaceAll('{subject}', context.sub
 
 export const questionFrames = {
   ingles: {
-    a1: ['Think about {subject}. What two simple details can you give?', 'What do you like or dislike about {subject}? Give one reason.', 'Give an everyday example related to {subject}. When does it come up?', 'How would you describe {subject} to a friend?'],
     a2: ['Tell a short story about {subject}. What happened?', 'Imagine this situation: {subject}. What would you do first?', 'Imagine this situation: {subject}. Name two ways to respond. Which would you choose?'],
     b1: ['How would you deal with {subject}, and why?', 'Why might people disagree about {subject}? What is your view?', 'What concrete change could help with {subject}, and who would benefit?'],
     b2: ['Consider this decision: {choice}. What are its main advantages and disadvantages?', 'Two people disagree about {choice}. What might each say, and how would you resolve their disagreement?', 'If {choice} became common, how might its effects change over the next decade?'],
@@ -321,7 +321,6 @@ export const questionFrames = {
     c2: ['Consider the claim: {claim}. Identify a hidden premise and challenge it with a counterexample.', 'Name one plausible finding about {choice}. How could two groups interpret that same finding differently?', 'A critic says {choice} causes more harm than good. What nuanced conclusion would answer that objection?'],
   },
   frances: {
-    a1: ['Voici ton sujet : {subject}. Quels deux détails simples peux-tu donner ?', 'Voici ton sujet : {subject}. Qu’aimes-tu ou n’aimes-tu pas ? Donne une raison.', 'Voici ton sujet : {subject}. Quand ou où en vois-tu un exemple ?', 'Voici ton sujet : {subject}. Comment en parlerais-tu à un ami ?'],
     a2: ['Voici une situation : {subject}. Raconte une courte histoire. Que s’est-il passé ?', 'Voici une situation : {subject}. Si elle se présentait demain, que ferais-tu d’abord ?', 'Voici une situation : {subject}. Propose deux façons de réagir. Laquelle choisirais-tu ?'],
     b1: ['Voici un problème : {subject}. Comment réagirais-tu et pourquoi ?', 'Voici un problème : {subject}. Pourquoi les avis pourraient-ils diverger ? Quel est le tien ?', 'Voici un problème : {subject}. Quel changement concret aiderait, et à qui profiterait-il ?'],
     b2: ['Examine ce choix : {choice}. Quels en sont les principaux avantages et inconvénients ?', 'Deux personnes ne sont pas d’accord sur ce choix : {choice}. Que dirait chacune et comment réglerais-tu leur désaccord ?', 'Si ce choix devenait courant — {choice} — comment ses effets pourraient-ils évoluer dans dix ans ?'],
@@ -329,7 +328,6 @@ export const questionFrames = {
     c2: ['Examine cette affirmation : {claim}. Trouve un présupposé caché et conteste-le par un contre-exemple.', 'Imagine un résultat d’étude plausible sur ce choix : {choice}. Comment deux groupes pourraient-ils l’interpréter différemment ?', 'Une critique affirme que ce choix ferait plus de mal que de bien : {choice}. Quelle conclusion nuancée lui répondrait ?'],
   },
   aleman: {
-    a1: ['Dein Thema lautet: {subject}. Welche zwei einfachen Details kannst du nennen?', 'Dein Thema lautet: {subject}. Was gefällt dir daran oder was nicht? Nenne einen Grund.', 'Dein Thema lautet: {subject}. Wann oder wo begegnet es dir? Nenne ein Beispiel.', 'Dein Thema lautet: {subject}. Wie würdest du es einem Freund beschreiben?'],
     a2: ['Stell dir folgende Situation vor: {subject}. Erzähl eine kurze Geschichte. Was ist passiert?', 'Stell dir folgende Situation vor: {subject}. Was würdest du morgen zuerst tun?', 'Stell dir folgende Situation vor: {subject}. Nenne zwei Möglichkeiten. Welche wählst du?'],
     b1: ['Betrachte dieses Problem: {subject}. Wie würdest du reagieren und warum?', 'Betrachte dieses Problem: {subject}. Warum könnten Menschen verschiedener Meinung sein?', 'Betrachte dieses Problem: {subject}. Welche konkrete Änderung würde helfen und wem?'],
     b2: ['Betrachte diese Entscheidung: {choice}. Welche Vor- und Nachteile hat sie?', 'Zwei Personen streiten über diese Entscheidung: {choice}. Was könnte jede sagen und wie würdest du vermitteln?', 'Wenn diese Entscheidung üblich würde — {choice} — wie könnten sich ihre Folgen in zehn Jahren verändern?'],
@@ -337,7 +335,6 @@ export const questionFrames = {
     c2: ['Prüfe diese Behauptung: {claim}. Finde eine verborgene Prämisse und widerlege sie mit einem Gegenbeispiel.', 'Nenne ein mögliches Studienergebnis zu dieser Entscheidung: {choice}. Wie könnten zwei Gruppen dasselbe Ergebnis verschieden deuten?', 'Ein Kritiker meint, diese Entscheidung richte mehr Schaden als Nutzen an: {choice}. Welches differenzierte Fazit entgegnest du?'],
   },
   italiano: {
-    a1: ['Pensa a {subject}. Quali due dettagli semplici puoi dire?', 'Che cosa ti piace o non ti piace di {subject}? Dai una ragione.', 'Quando o dove incontri {subject}? Fai un esempio.', 'Come descriveresti {subject} a un amico?'],
     a2: ['Immagina questa situazione: {subject}. Racconta una breve storia. Che cosa è successo?', 'Immagina questa situazione: {subject}. Che cosa faresti per prima cosa?', 'Immagina questa situazione: {subject}. Proponi due modi di reagire. Quale sceglieresti?'],
     b1: ['Come affronteresti {subject} e perché?', 'Perché si potrebbe non essere d’accordo su {subject}? Qual è la tua opinione?', 'Quale cambiamento concreto aiuterebbe nel caso di {subject} e chi ne trarrebbe beneficio?'],
     b2: ['Considera questa scelta: {choice}. Quali sono i principali vantaggi e svantaggi?', 'Due persone non sono d’accordo su questa scelta: {choice}. Che cosa direbbe ciascuna e come risolveresti il conflitto?', 'Se questa scelta diventasse comune — {choice} — come potrebbero cambiare i suoi effetti nei prossimi dieci anni?'],
@@ -345,7 +342,6 @@ export const questionFrames = {
     c2: ['Considera questa affermazione: {claim}. Individua una premessa nascosta e contestala con un controesempio.', 'Immagina un possibile risultato di uno studio su questa scelta: {choice}. Come potrebbero due gruppi interpretarlo in modo opposto?', 'Un critico dice che questa scelta fa più male che bene: {choice}. Quale conclusione sfumata risponderebbe all’obiezione?'],
   },
   portugues: {
-    a1: ['Pense em {subject}. Que dois detalhes simples você pode dizer?', 'Do que você gosta ou não gosta em {subject}? Dê um motivo.', 'Quando ou onde você encontra {subject}? Dê um exemplo.', 'Como você descreveria {subject} para um amigo?'],
     a2: ['Imagine esta situação: {subject}. Conte uma história curta. O que aconteceu?', 'Imagine esta situação: {subject}. O que você faria primeiro?', 'Imagine esta situação: {subject}. Cite duas formas de reagir. Qual escolheria?'],
     b1: ['Como você lidaria com {subject} e por quê?', 'Por que as pessoas poderiam discordar sobre {subject}? Qual é sua opinião?', 'Que mudança concreta ajudaria no caso de {subject} e quem se beneficiaria?'],
     b2: ['Considere esta decisão: {choice}. Quais são suas principais vantagens e desvantagens?', 'Duas pessoas discordam desta decisão: {choice}. O que cada uma diria e como você resolveria o conflito?', 'Se esta decisão se tornasse comum — {choice} — como seus efeitos poderiam mudar na próxima década?'],
@@ -353,7 +349,6 @@ export const questionFrames = {
     c2: ['Considere esta afirmação: {claim}. Identifique uma premissa oculta e questione-a com um contraexemplo.', 'Imagine um resultado plausível de um estudo sobre esta decisão: {choice}. Como dois grupos poderiam interpretá-lo de formas opostas?', 'Um crítico diz que esta decisão causa mais mal do que bem: {choice}. Que conclusão ponderada responderia à objeção?'],
   },
   ruso: {
-    a1: ['Твоя тема: {subject}. Назови два простых факта.', 'Твоя тема: {subject}. Что тебе нравится или не нравится? Назови причину.', 'Твоя тема: {subject}. Когда или где ты с этим сталкиваешься? Приведи пример.', 'Твоя тема: {subject}. Как бы ты рассказал об этом другу?'],
     a2: ['Представь ситуацию: {subject}. Расскажи короткую историю. Что произошло?', 'Представь ситуацию: {subject}. Что ты сделаешь сначала, если это случится завтра?', 'Представь ситуацию: {subject}. Назови два способа справиться. Какой выберешь?'],
     b1: ['Рассмотри проблему: {subject}. Как бы ты поступил и почему?', 'Рассмотри проблему: {subject}. Почему мнения могут различаться? Что думаешь ты?', 'Рассмотри проблему: {subject}. Какое конкретное изменение помогло бы и кому?'],
     b2: ['Рассмотри это решение: {choice}. Каковы его главные преимущества и недостатки?', 'Два человека спорят о таком решении: {choice}. Что мог бы сказать каждый и как ты помог бы им договориться?', 'Если такое решение станет обычным — {choice} — как его последствия могут измениться через десять лет?'],
@@ -361,7 +356,6 @@ export const questionFrames = {
     c2: ['Рассмотри это утверждение: {claim}. Найди скрытую предпосылку и оспорь её с помощью контрпримера.', 'Представь возможный результат исследования такого решения: {choice}. Как две группы могли бы трактовать его противоположным образом?', 'Критик говорит, что такое решение принесёт больше вреда, чем пользы: {choice}. Какой взвешенный вывод ты предложишь?'],
   },
   japones: {
-    a1: ['{subject}について、簡単なことを二つ言ってください。', '{subject}の好きなところ、または好きではないところは何ですか。理由を一つ言ってください。', '{subject}について、身近な例を一つ挙げてください。', '友達に{subject}をどう説明しますか。'],
     a2: ['次の場面について短い話をしてください。{subject}。何がありましたか。', '次の場面を想像してください。{subject}。まず何をしますか。', '次の場面を想像してください。{subject}。対応を二つ考え、どちらかを選んでください。'],
     b1: ['{subject}にどう対応しますか。その理由は何ですか。', '{subject}について意見が分かれるのはなぜですか。あなたはどう考えますか。', '{subject}に役立つ具体的な改善策は何ですか。誰のためになりますか。'],
     b2: ['次の選択を考えてください。{choice}。主な利点と欠点は何ですか。', '二人が次の選択をめぐって対立しています。{choice}。それぞれの主張と解決策を述べてください。', '次の選択が一般的になったら、十年後の影響はどう変わりますか。{choice}。'],
@@ -369,7 +363,6 @@ export const questionFrames = {
     c2: ['次の主張を考えてください。{claim}。隠れた前提を一つ挙げ、反例で問い直してください。', '次の選択について、あり得る調査結果を一つ考えてください。{choice}。同じ結果を二つの立場からどう解釈しますか。', '批判者は次の選択には利益より害が多いと言います。{choice}。その反論を踏まえ、慎重な結論を述べてください。'],
   },
   coreano: {
-    a1: ['주제: {subject}. 간단한 사실 두 가지를 말해 보세요.', '주제: {subject}. 좋아하거나 싫어하는 점은 무엇인가요? 이유를 하나 말해 보세요.', '주제: {subject}. 일상에서 볼 수 있는 예를 하나 들어 보세요.', '주제: {subject}. 친구에게 어떻게 설명하겠어요?'],
     a2: ['다음 상황에 관한 짧은 이야기를 해 보세요. {subject}. 무슨 일이 있었나요?', '다음 상황을 상상해 보세요. {subject}. 무엇부터 하겠어요?', '다음 상황을 상상해 보세요. {subject}. 대처 방법 두 가지를 말하고 하나를 골라 보세요.'],
     b1: ['다음 문제를 생각해 보세요. {subject}. 어떻게 대처하겠어요? 이유도 말해 보세요.', '다음 문제를 생각해 보세요. {subject}. 사람들이 왜 의견이 다를까요? 자신의 생각을 말해 보세요.', '다음 문제를 생각해 보세요. {subject}. 어떤 구체적인 변화가 누구에게 도움이 될까요?'],
     b2: ['다음 선택을 생각해 보세요. {choice}. 주요 장점과 단점은 무엇인가요?', '두 사람이 다음 선택을 두고 다툽니다. {choice}. 각자의 주장과 해결 방법을 말해 보세요.', '다음 선택이 흔해진다면 10년 뒤 영향은 어떻게 달라질까요? {choice}.'],
@@ -377,7 +370,6 @@ export const questionFrames = {
     c2: ['다음 주장을 살펴보세요. {claim}. 숨은 전제를 하나 찾아 반례로 검토해 보세요.', '다음 선택에 관한 연구 결과를 하나 상상해 보세요. {choice}. 같은 결과를 두 집단이 어떻게 다르게 해석할까요?', '비판자는 다음 선택의 해가 이익보다 크다고 말합니다. {choice}. 그 반론을 고려해 신중한 결론을 말해 보세요.'],
   },
   es: {
-    a1: ['Piensa en {subject}. ¿Qué dos detalles sencillos puedes decir?', '¿Qué te gusta o disgusta de {subject}? Da una razón.', '¿Cuándo o dónde encuentras {subject}? Da un ejemplo.', '¿Cómo describirías {subject} a un amigo?'],
     a2: ['Imagina esta situación: {subject}. Cuenta una historia breve. ¿Qué pasó?', 'Imagina esta situación: {subject}. ¿Qué harías primero?', 'Imagina esta situación: {subject}. Propón dos formas de reaccionar. ¿Cuál elegirías?'],
     b1: ['Considera este problema: {subject}. ¿Cómo actuarías y por qué?', 'Considera este problema: {subject}. ¿Por qué podrían discrepar las personas? ¿Qué opinas tú?', 'Considera este problema: {subject}. ¿Qué cambio concreto ayudaría y a quién beneficiaría?'],
     b2: ['Considera esta decisión: {choice}. ¿Cuáles son sus principales ventajas y desventajas?', 'Dos personas discrepan sobre esta decisión: {choice}. ¿Qué diría cada una y cómo resolverías el desacuerdo?', 'Si esta decisión se volviera habitual —{choice}—, ¿cómo cambiarían sus efectos en diez años?'],
@@ -387,6 +379,12 @@ export const questionFrames = {
 }
 
 export function concreteQuestion(language, level, setIndex, mode, spanish = false) {
+  if (level === 'a1') {
+    const roundIndex = mode * everydaySubjects[language].a1.length + setIndex
+    const question = (spanish ? a1QuestionsEs[language] : a1Questions[language])?.[roundIndex]
+    if (!question) throw Error(`Missing authored A1 question: ${language}/${roundIndex + 1}/${spanish ? 'es' : 'target'}`)
+    return question
+  }
   const locale = spanish ? 'es' : language
   const frame = questionFrames[locale]?.[level]?.[mode]
   if (!frame) throw Error(`Missing question frame: ${locale}/${level}/${mode}`)
