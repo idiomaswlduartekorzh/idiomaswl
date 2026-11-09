@@ -986,3 +986,23 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 - La migración `20261109202857_allow_course_terms_v5.sql` quedó aplicada en Supabase: la función de creación de órdenes admite `v4` y `v5` y rechaza versiones desconocidas. Pasó la prueba de base de datos con PGlite; la definición de producción se verificó después de aplicarla.
 - Vercel publicó `7f4fa0e1` en producción mediante `dpl_GLqTbnbNU5TKV3SGF17cJvMyf9o2` (estado `READY`), asignado a `www.idiomaswl.com`. El smoke público confirmó HTTP 200 en `/precios`, `/reglamento`, `/inscripcion` y el PDF del reglamento; el texto y el PDF muestran `course-20261109-v5`.
 - Estado: `DESPLEGADO`.
+
+### 9 de noviembre de 2026 — preguntas concretas y auditoría de Improvisa
+
+- `main` incorporó `d445eb9e` para sustituir preguntas genéricas por situaciones
+  concretas en los 960 ejercicios de 8 idiomas × 6 niveles × 20 rondas. El
+  deployment [`dpl_39Tx5yGFBbm7F1z1oEyf1CNa475v`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/dpl_39Tx5yGFBbm7F1z1oEyf1CNa475v)
+  quedó `READY` y se comprobó públicamente la primera pregunta de inglés B2.
+- La revisión editorial posterior entró en `main` mediante `bbff6b56`:
+  20 preguntas A1 redactadas para cada idioma, en vez de plantillas que producían
+  combinaciones poco naturales; cinco escenarios originales B1 de inglés más
+  concretos; y `check:improvisa-catalog` integrado al prebuild. El guardián
+  exige 20 preguntas distintas y seis pistas por ronda, además de 20 versiones
+  de apoyo en español para cada nivel de ruso, japonés y coreano.
+- Pasaron `check:practica-catalog`, `check:improvisa-catalog`, ESLint,
+  TypeScript y el build local completo sobre `origin/main` actualizado. El
+  deployment [`dpl_9eK7An5kPxYqBkdRVhEFitvZvPen`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/dpl_9eK7An5kPxYqBkdRVhEFitvZvPen)
+  quedó `READY` y asignado a `www.idiomaswl.com`. El smoke público confirmó
+  HTTP 200 y 20 tarjetas enlazadas en 48/48 listas; se verificaron preguntas
+  A1, B1, B2 y C2, incluido el cambio entre español y ruso en navegador local.
+- Estado: `DESPLEGADO`.
