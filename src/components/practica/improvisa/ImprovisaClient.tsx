@@ -214,8 +214,10 @@ export default function ImprovisaClient({ language, level, exercises }: { langua
               <p className={styles.smallLabel}>{copy.startingQuestion}</p>
               <h2 lang={target.code}>{exercise.question}</h2>
               {locale === 'es' && exercise.questionEs ? <p className={styles.questionTranslation} lang="es">{exercise.questionEs}</p> : null}
-              <p className={styles.followUpLabel}>{copy.followUp}</p>
-              <p lang={target.code}>{exercise.followUp}</p>
+              {exercise.followUp !== exercise.focus.target && <>
+                <p className={styles.followUpLabel}>{copy.followUp}</p>
+                <p lang={target.code}>{exercise.followUp}</p>
+              </>}
               <div className={styles.challenge}><span>✦</span><div><strong>{copy.mission}</strong><p>{exercise.focus[locale === 'es' ? 'es' : 'target']}</p></div></div>
             </div>
             <div className={styles.livePanel}>

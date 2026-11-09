@@ -2,7 +2,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import ts from 'typescript'
-import { advancedPrompts, advancedModeNamesEs, advancedModeNames, advancedFocus, advancedTerms, advancedTermGlosses, advancedCategory } from './improvisa-advanced-content.mjs'
+import { advancedModeNamesEs, advancedModeNames, advancedFocus, advancedTerms, advancedTermGlosses, advancedCategory } from './improvisa-advanced-content.mjs'
+import { concreteQuestion, everydaySubjects, everydaySubjectsEs, advancedSituations } from './improvisa-concrete-questions.mjs'
 
 const languages = ['ingles', 'frances', 'aleman', 'italiano', 'portugues', 'ruso', 'japones', 'coreano']
 const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
@@ -32,57 +33,6 @@ const englishTopics = {
   'Salud y consulta médica': 'Health and medical visits',
 }
 
-const prompts = {
-  ingles: {
-    a1: ['What do you know about this topic?', 'What is important to you here?', 'What can you describe here?', 'Which things can you name here, and where do you see them?'],
-    a2: ['Tell me about a time this came up. What happened?', 'What would you plan in this situation, and why?', 'Compare two experiences. What was different?'],
-    b1: ['What challenge do you see here, and how would you solve it?', 'How has your opinion about this topic changed?', 'What could be improved, and who would benefit?'],
-  },
-  frances: {
-    a1: ['Que sais-tu de ce sujet ?', 'Qu’est-ce qui est important pour toi ici ?', 'Qu’est-ce que tu peux décrire ici ?', 'Quelles choses peux-tu nommer ici, et où les vois-tu ?'],
-    a2: ['Raconte une fois où tu as rencontré ce sujet. Que s’est-il passé ?', 'Que prévoirais-tu dans cette situation, et pourquoi ?', 'Compare deux expériences. Qu’est-ce qui était différent ?'],
-    b1: ['Quel défi vois-tu ici et comment le résoudrais-tu ?', 'Comment ton opinion sur ce sujet a-t-elle changé ?', 'Qu’est-ce qu’on pourrait améliorer et à qui cela profiterait-il ?'],
-  },
-  aleman: {
-    a1: ['Was weißt du über dieses Thema?', 'Was ist dir hier wichtig?', 'Was kannst du hier beschreiben?', 'Welche Dinge kannst du hier nennen und wo siehst du sie?'],
-    a2: ['Erzähle von einer Erfahrung zu diesem Thema. Was ist passiert?', 'Was würdest du in dieser Situation planen und warum?', 'Vergleiche zwei Erfahrungen. Was war anders?'],
-    b1: ['Welche Herausforderung siehst du hier und wie würdest du sie lösen?', 'Wie hat sich deine Meinung zu diesem Thema verändert?', 'Was könnte man verbessern und wem würde es helfen?'],
-  },
-  italiano: {
-    a1: ['Che cosa sai di questo argomento?', 'Che cosa è importante per te qui?', 'Che cosa puoi descrivere qui?', 'Quali cose puoi nominare qui e dove le vedi?'],
-    a2: ['Racconta un’esperienza legata a questo argomento. Che cosa è successo?', 'Che cosa organizzeresti in questa situazione e perché?', 'Confronta due esperienze. Che cosa era diverso?'],
-    b1: ['Quale difficoltà vedi qui e come la risolveresti?', 'Come è cambiata la tua opinione su questo argomento?', 'Che cosa si potrebbe migliorare e chi ne trarrebbe beneficio?'],
-  },
-  portugues: {
-    a1: ['O que você sabe sobre este tema?', 'O que é importante para você aqui?', 'O que você pode descrever aqui?', 'Que coisas você pode nomear aqui e onde as vê?'],
-    a2: ['Conte uma experiência com este tema. O que aconteceu?', 'O que você planejaria nessa situação e por quê?', 'Compare duas experiências. O que foi diferente?'],
-    b1: ['Que desafio você vê aqui e como o resolveria?', 'Como sua opinião sobre este tema mudou?', 'O que poderia ser melhorado e quem se beneficiaria?'],
-  },
-  ruso: {
-    a1: ['Что ты знаешь об этой теме?', 'Что здесь важно для тебя?', 'Что ты можешь здесь описать?', 'Какие вещи ты можешь здесь назвать и где ты их видишь?'],
-    a2: ['Расскажи о случае, связанном с этой темой. Что произошло?', 'Что бы ты запланировал в такой ситуации и почему?', 'Сравни два случая. Что было по-другому?'],
-    b1: ['Какую проблему ты здесь видишь и как бы её решил?', 'Как изменилось твоё мнение об этой теме?', 'Что можно было бы улучшить и кому это помогло бы?'],
-  },
-  japones: {
-    a1: ['このテーマについて何を知っていますか。', 'ここであなたにとって大切なことは何ですか。', 'ここで何を説明できますか。', 'ここで何を言えますか。それをどこで見ますか。'],
-    a2: ['このテーマに関する経験を話してください。何がありましたか。', 'この場合、どんな計画を立てますか。なぜですか。', '二つの経験を比べてください。何が違いましたか。'],
-    b1: ['ここにはどんな課題がありますか。どう解決しますか。', 'このテーマについての考えはどう変わりましたか。', '何を改善できると思いますか。誰のためになりますか。'],
-  },
-  coreano: {
-    a1: ['이 주제에 대해 무엇을 알고 있나요?', '여기서 무엇이 중요하다고 생각하나요?', '여기서 무엇을 설명할 수 있나요?', '여기서 무엇을 말할 수 있나요? 어디에서 볼 수 있나요?'],
-    a2: ['이 주제와 관련된 경험을 이야기해 보세요. 무슨 일이 있었나요?', '이 상황에서 어떤 계획을 세우겠어요? 왜요?', '두 가지 경험을 비교해 보세요. 무엇이 달랐나요?'],
-    b1: ['여기서 어떤 문제를 볼 수 있나요? 어떻게 해결하겠어요?', '이 주제에 대한 생각이 어떻게 바뀌었나요?', '무엇을 개선할 수 있을까요? 누구에게 도움이 될까요?'],
-  },
-}
-const spanishPrompts = {
-  a1: ['¿Qué sabes de este tema?', '¿Qué es importante para ti aquí?', '¿Qué puedes describir aquí?', '¿Qué cosas puedes nombrar y dónde las ves?'],
-  a2: ['Cuenta una experiencia relacionada con este tema. ¿Qué pasó?', '¿Qué plan harías en esta situación y por qué?', 'Compara dos experiencias. ¿Qué fue diferente?'],
-  b1: ['¿Qué problema ves aquí y cómo lo resolverías?', '¿Cómo ha cambiado tu opinión sobre este tema?', '¿Qué se podría mejorar y a quién beneficiaría?'],
-  b2: ['¿Cuáles son las principales ventajas y desventajas en este ámbito?', 'Describe un conflicto relacionado con este tema. ¿Qué harías?', '¿Cómo podría cambiar esta situación en la próxima década?'],
-  c1: ['¿Qué supuestos orientan el debate público sobre este tema?', '¿Cómo conciliarías dos perspectivas opuestas?', '¿Qué consecuencias imprevistas podría causar una solución?'],
-  c2: ['¿Qué premisa oculta cuestionarías en un argumento convincente sobre este tema?', '¿Cómo podrían los mismos datos sostener dos interpretaciones aparentemente incompatibles?', '¿Qué conclusión matizada resistiría una objeción fuerte?'],
-}
-for (const language of languages) Object.assign(prompts[language], advancedPrompts[language])
 const followUps = {
   a1: { es: 'Di al menos dos frases sencillas y añade las palabras que aparezcan.', target: 'Add a simple detail and keep speaking.' },
   a2: { es: 'Añade cuándo ocurrió, cómo te sentiste y qué pasó después.', target: 'Add a detail about time, feelings, and what happened next.' },
@@ -216,11 +166,20 @@ function cuesForRound(sets, index, level, language) {
   })
 }
 const catalog = {}
+const vagueQuestion = /in this area|about this topic|in this situation|en este ámbito|sobre este tema|dans ce domaine|de ce sujet|in diesem Bereich|über dieses Thema|in questo ambito|su questo argomento|nessa área|sobre este tema|в этой области|об этой теме|このテーマ|이 주제/i
 for (const language of languages) {
   catalog[language] = {}
   for (const level of levels) {
     const sourceLevel = ['b2', 'c1', 'c2'].includes(level) ? 'b1' : level
     const sets = language === 'ingles' && sourceLevel !== 'b1' ? readEnglishLevel(sourceLevel) : readSets(language, sourceLevel)
+    if (['b2', 'c1', 'c2'].includes(level)) {
+      if (advancedSituations[language].length !== sets.length) throw Error(`Advanced situations do not match ${language} topics`)
+    } else {
+      if (everydaySubjects[language][level].length !== sets.length) throw Error(`Subjects do not match ${language}/${level} topics`)
+      if (everydaySubjectsEs[language]?.[level] && everydaySubjectsEs[language][level].length !== sets.length) {
+        throw Error(`Spanish subjects do not match ${language}/${level} topics`)
+      }
+    }
     catalog[language][level] = Array.from({ length: 20 }, (_, index) => {
       const set = sets[index % sets.length]
       const mode = Math.floor(index / sets.length)
@@ -231,8 +190,10 @@ for (const language of languages) {
         : { es: followUps[level].es, target: targetFollowUps[language][followIndex] }
       return {
         title: { es: `${set.nameEs} · ${modeNamesEs[level][mode]}`, target: `${set.nameTarget} · ${modeNames[language][level][mode]}` },
-        question: `${set.nameTarget} — ${prompts[language][level][mode]}`,
-        questionEs: `${set.nameEs} — ${spanishPrompts[level][mode]}`,
+        question: concreteQuestion(language, level, index % sets.length, mode),
+        ...(['ruso', 'japones', 'coreano'].includes(language)
+          ? { questionEs: concreteQuestion(language, level, index % sets.length, mode, true) }
+          : {}),
         followUp: focus.target,
         focus,
         cues: cuesForRound(sets, index, level, language),
@@ -249,6 +210,13 @@ for (const language of languages) {
       throw Error(`Expected 20 distinct questions: ${language}/${level}`)
     }
     for (const round of rounds) {
+      if (!round.question || (['ruso', 'japones', 'coreano'].includes(language) && !round.questionEs)
+        || /\{(?:subject|choice|claim)\}/.test(round.question + (round.questionEs || ''))) {
+        throw Error(`Incomplete contextual question: ${language}/${level}/${round.title.es}`)
+      }
+      if (vagueQuestion.test(round.question + (round.questionEs || ''))) {
+        throw Error(`Vague speaking question: ${language}/${level}/${round.title.es}`)
+      }
       if (round.cues.length !== 6 || new Set(round.cues.map((cue) => cue.word.toLowerCase())).size !== 6) {
         throw Error(`Expected six distinct cues: ${language}/${level}/${round.title.es}`)
       }

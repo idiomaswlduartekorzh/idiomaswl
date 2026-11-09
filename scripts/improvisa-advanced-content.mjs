@@ -1,47 +1,4 @@
 /** Editorial prompts and discourse moves for advanced improvised speaking. */
-export const advancedPrompts = {
-  ingles: {
-    b2: ['What are the main advantages and disadvantages in this area?', 'Describe a conflict involving this topic. What would you do?', 'How might this situation change in the next decade?'],
-    c1: ['Which assumptions shape public debate on this issue?', 'How would you reconcile two opposing perspectives here?', 'What unintended consequences could a proposed solution create?'],
-    c2: ['Which hidden premise would you challenge in a confident argument about this topic?', 'How could the same evidence support two apparently incompatible interpretations?', 'What nuanced conclusion would still hold after a strong counterargument?'],
-  },
-  frances: {
-    b2: ['Quels sont les principaux avantages et inconvénients dans ce domaine ?', 'Décris un conflit lié à ce sujet. Que ferais-tu ?', 'Comment cette situation pourrait-elle évoluer dans les dix prochaines années ?'],
-    c1: ['Quelles hypothèses orientent le débat public sur cette question ?', 'Comment concilierais-tu deux points de vue opposés ici ?', 'Quelles conséquences inattendues une solution proposée pourrait-elle entraîner ?'],
-    c2: ['Quel présupposé caché remettrais-tu en cause dans un argument convaincant sur ce sujet ?', 'Comment les mêmes faits pourraient-ils étayer deux interprétations apparemment incompatibles ?', 'Quelle conclusion nuancée résisterait encore à une objection solide ?'],
-  },
-  aleman: {
-    b2: ['Was sind die wichtigsten Vor- und Nachteile in diesem Bereich?', 'Beschreibe einen Konflikt zu diesem Thema. Was würdest du tun?', 'Wie könnte sich diese Situation im nächsten Jahrzehnt verändern?'],
-    c1: ['Welche Annahmen prägen die öffentliche Debatte über dieses Thema?', 'Wie würdest du zwei gegensätzliche Sichtweisen miteinander vereinbaren?', 'Welche unbeabsichtigten Folgen könnte ein Lösungsvorschlag haben?'],
-    c2: ['Welche verborgene Prämisse würdest du in einer überzeugenden Argumentation zu diesem Thema hinterfragen?', 'Wie könnten dieselben Belege zwei scheinbar unvereinbare Deutungen stützen?', 'Welche differenzierte Schlussfolgerung würde selbst einem starken Gegenargument standhalten?'],
-  },
-  italiano: {
-    b2: ['Quali sono i principali vantaggi e svantaggi in questo ambito?', 'Descrivi un conflitto legato a questo tema. Che cosa faresti?', 'Come potrebbe cambiare questa situazione nel prossimo decennio?'],
-    c1: ['Quali presupposti orientano il dibattito pubblico su questo tema?', 'Come concilieresti due punti di vista opposti?', 'Quali conseguenze impreviste potrebbe avere una soluzione proposta?'],
-    c2: ['Quale premessa nascosta metteresti in discussione in un argomento convincente su questo tema?', 'Come potrebbero gli stessi dati sostenere due interpretazioni apparentemente incompatibili?', 'Quale conclusione sfumata resisterebbe anche a una forte obiezione?'],
-  },
-  portugues: {
-    b2: ['Quais são as principais vantagens e desvantagens nessa área?', 'Descreva um conflito ligado a esse tema. O que você faria?', 'Como essa situação poderia mudar na próxima década?'],
-    c1: ['Quais pressupostos orientam o debate público sobre essa questão?', 'Como você conciliaria duas perspectivas opostas aqui?', 'Que consequências imprevistas uma solução proposta poderia causar?'],
-    c2: ['Que premissa oculta você questionaria em um argumento convincente sobre esse tema?', 'Como os mesmos dados poderiam sustentar duas interpretações aparentemente incompatíveis?', 'Que conclusão ponderada ainda resistiria a uma forte objeção?'],
-  },
-  ruso: {
-    b2: ['Каковы главные преимущества и недостатки в этой области?', 'Опиши конфликт, связанный с этой темой. Как бы ты поступил?', 'Как эта ситуация может измениться в ближайшие десять лет?'],
-    c1: ['Какие предположения влияют на общественную дискуссию об этой проблеме?', 'Как бы ты согласовал две противоположные точки зрения?', 'Какие неожиданные последствия может вызвать предложенное решение?'],
-    c2: ['Какую скрытую предпосылку ты оспорил бы в убедительном рассуждении на эту тему?', 'Как одни и те же факты могут подтверждать две, казалось бы, несовместимые интерпретации?', 'Какой взвешенный вывод выдержал бы даже сильный контраргумент?'],
-  },
-  japones: {
-    b2: ['この分野の主な利点と欠点は何ですか。', 'このテーマに関する対立を説明してください。あなたならどうしますか。', 'この状況は今後十年でどう変わるでしょうか。'],
-    c1: ['この問題の社会的議論には、どのような前提がありますか。', '対立する二つの見方をどう調和させますか。', '提案された解決策にはどのような予期しない影響がありますか。'],
-    c2: ['このテーマについて説得力のある議論をするなら、どの隠れた前提を問い直しますか。', '同じ証拠から、一見相容れない二つの解釈が生まれるのはなぜですか。', '強い反論を受けても成り立つ、どのような慎重な結論を導けますか。'],
-  },
-  coreano: {
-    b2: ['이 분야의 주요 장점과 단점은 무엇인가요?', '이 주제와 관련된 갈등을 설명해 보세요. 어떻게 하겠어요?', '이 상황은 앞으로 10년 동안 어떻게 바뀔까요?'],
-    c1: ['이 문제에 관한 공적 논의에는 어떤 전제가 깔려 있나요?', '상반된 두 관점을 어떻게 조화시키겠어요?', '제안한 해결책에는 어떤 예상치 못한 결과가 생길 수 있나요?'],
-    c2: ['이 주제에 대해 설득력 있게 주장한다면 어떤 숨은 전제를 의심하겠어요?', '같은 증거가 겉보기에는 양립할 수 없는 두 해석을 어떻게 뒷받침할 수 있나요?', '강한 반론을 받아도 유지할 수 있는 섬세한 결론은 무엇인가요?'],
-  },
-}
-
 export const advancedModeNamesEs = {
   b2: ['Pros y contras', 'Un conflicto', 'Lo que viene'],
   c1: ['Los supuestos', 'Dos perspectivas', 'Efectos imprevistos'],
