@@ -1,0 +1,12 @@
+{
+  "name": "Matecraft — Entrenador de ajedrez",
+  "short_name": "Matecraft",
+  "description": "Mates, tácticas y finales con dificultad adaptativa.",
+  "lang": "es",
+  "start_url": "/kids/ingles-ajedrez/practica/",
+  "display": "standalone",
+  "background_color": "#f5f2eb",
+  "theme_color": "#0e3c2e",
+  "orientation": "any",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

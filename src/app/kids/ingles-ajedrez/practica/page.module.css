@@ -1,0 +1,58 @@
+.page {
+  min-height: 100dvh;
+  background: #f5f2eb;
+}
+
+.topbar {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem clamp(0.8rem, 3vw, 1.8rem);
+  border-bottom: 1px solid #dedbd1;
+  background: #fffdf9;
+  color: #164d3b;
+}
+
+.backLink {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.backLink:hover,
+.backLink:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.title {
+  color: #728078;
+  font-size: 0.74rem;
+  font-weight: 750;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  height: calc(100dvh - 48px);
+  min-height: 760px;
+  border: 0;
+  background: #f5f2eb;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    min-height: 44px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .frame {
+    height: calc(100dvh - 44px);
+    min-height: 900px;
+  }
+}

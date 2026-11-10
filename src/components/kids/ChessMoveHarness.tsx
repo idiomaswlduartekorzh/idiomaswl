@@ -131,7 +131,7 @@ export default function ChessMoveHarness() {
           </p>
         </div>
         <div className={styles.headerActions}>
-          <a className={styles.practiceButton} href="#chess-practice-board">Practicar ahora · Practice now</a>
+          <a className={styles.practiceButton} href="/kids/ingles-ajedrez/practica">Practicar ahora · Practice now</a>
           <div className={styles.statusBadge}>
             <span className={styles.statusDot} aria-hidden="true" />
             <span>Ready to explore · Listo para explorar</span>
