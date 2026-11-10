@@ -10,7 +10,7 @@ Las lecturas reutilizan las cinco estaciones del motor existente: preparar, leer
 
 Con `READING_PREVIEW=1`, abrir `/practica/<idioma>/<nivel>/lectura` y elegir la única lectura. Por ejemplo: `/practica/ingles/b2/lectura/a-library-of-things`. Sin esa variable, el catálogo no expone estos borradores; tampoco entran al sitemap ni son indexables. La ruta inglesa `/en/practice/<language>/<level>/reading` usa el mismo catálogo cuando se habilita la vista editorial.
 
-La interfaz del piloto usa una cubierta azul con folio del nivel, páginas claras para leer y tarjetas de preguntas con evidencia visible tras responder. El estilo está limitado a B2–C2 mediante `premiumRoot`; las lecturas A1–B1 publicadas conservan su diseño. Cuando solo hay una lectura, el catálogo lateral se oculta por redundante y vuelve a aparecer al ampliar el nivel.
+La interfaz del piloto usa una portada azul con el nivel integrado en la composición, páginas claras para leer y tarjetas de preguntas con evidencia visible tras responder. El estilo está limitado a B2–C2 mediante `premiumRoot`; las lecturas A1–B1 publicadas conservan su diseño. Cuando solo hay una lectura, el catálogo lateral se oculta por redundante y vuelve a aparecer al ampliar el nivel.
 
 ## Verificaciones
 

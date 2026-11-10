@@ -54,10 +54,9 @@ export function ReadingHub({
           <p className={styles.lead}>{copy.intro}</p>
         </div>
         {advanced ? (
-          <div className={styles.heroFolio} aria-hidden="true">
-            <span>{locale === 'es' ? 'LECTURA' : 'READING'}</span>
+          <div className={styles.heroLevel} aria-hidden="true">
+            <span>{locale === 'es' ? 'NIVEL' : 'LEVEL'}</span>
             <strong>{level}</strong>
-            <small>WELEARN · {languageName.toUpperCase()}</small>
           </div>
         ) : <div className={styles.heroGlyph} aria-hidden="true"><BookOpenText size={44} /></div>}
       </section>

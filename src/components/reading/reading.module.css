@@ -258,8 +258,8 @@
   position: relative;
   overflow: hidden;
   min-height: 346px;
-  grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 54px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
   padding: clamp(32px, 5vw, 64px);
   border-radius: 24px;
   color: #fff;
@@ -277,23 +277,17 @@
 .premiumRoot .hubHero .eyebrow { color: #a9c6ee; font-size: 11px; letter-spacing: .17em; }
 .premiumRoot .hubHero h1 { max-width: 750px; color: #fff; font: 400 clamp(3rem, 5.6vw, 5.3rem)/.98 Georgia, 'Times New Roman', serif; letter-spacing: -.055em; }
 .premiumRoot .hubHero .lead { max-width: 560px; margin-top: 24px; color: #d5e1f0; font-size: 17px; line-height: 1.65; }
-.heroFolio {
-  position: relative;
+.heroLevel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 240px;
-  padding: 26px 18px 21px 24px;
-  border: 1px solid rgba(255,255,255,.33);
-  border-left: 7px solid var(--premium-red);
-  border-radius: 3px 14px 14px 3px;
-  background: linear-gradient(145deg, rgba(255,255,255,.15), rgba(255,255,255,.045));
-  box-shadow: 13px 14px 0 rgba(4, 23, 44, .24), 0 18px 38px rgba(0,0,0,.15);
-  transform: rotate(3deg);
+  align-self: start;
+  align-items: flex-start;
+  min-width: 112px;
+  padding-top: 15px;
+  border-top: 2px solid var(--premium-red);
 }
-.heroFolio span, .heroFolio small { color: #c6d8ee; font: 700 10px/1.5 var(--mono); letter-spacing: .16em; }
-.heroFolio strong { color: #fff; font: 400 clamp(4.5rem, 9vw, 7rem)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.08em; }
-.heroFolio small { font-size: 9px; letter-spacing: .06em; }
+.heroLevel span { color: #a9c6ee; font: 700 10px/1.5 var(--mono); letter-spacing: .16em; }
+.heroLevel strong { margin-top: 10px; color: #fff; font: 400 clamp(3.4rem, 5vw, 4.5rem)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
 .premiumRoot .topicList { gap: 14px; margin-top: 25px; padding-bottom: 8px; }
 .premiumRoot .topicRow {
   min-height: 175px;
@@ -404,8 +398,8 @@
   .premiumRoot .hubHero { min-height: 0; grid-template-columns: 1fr; gap: 24px; padding: 32px 25px; border-radius: 15px; }
   .premiumRoot .hubHero h1 { font-size: clamp(2.7rem, 10vw, 4rem); }
   .premiumRoot .hubHero .lead { font-size: 15px; }
-  .heroFolio { min-height: 130px; width: 150px; margin: 0 0 10px auto; padding: 13px 13px 11px 16px; transform: rotate(2deg); }
-  .heroFolio strong { font-size: 55px; }
+  .heroLevel { flex-direction: row; align-items: baseline; gap: 12px; width: fit-content; min-width: 0; padding-top: 11px; }
+  .heroLevel strong { margin: 0; font-size: 35px; }
   .premiumRoot .topicRow { align-items: flex-start; gap: 15px; padding: 21px 18px; }
   .premiumRoot .topicNumber { width: 43px; height: 43px; font-size: 21px; }
   .premiumRoot .topicTitle { font-size: 1.45rem; }
