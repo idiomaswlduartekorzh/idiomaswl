@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, BookOpenText, Clock3, Sparkles } from 'lucide-react'
+import { ArrowRight, BookOpenCheck, BookOpenText, Clock3, Sparkles } from 'lucide-react'
 import { LANGUAGE_NAMES, readingExercisePath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from '@/lib/reading/types'
@@ -36,6 +36,7 @@ export function ReadingHub({
 }) {
   const copy = COPY[locale]
   const languageName = LANGUAGE_NAMES[locale][language]
+  const advanced = ['B2', 'C1', 'C2'].includes(level)
   return (
     <div className={styles.pageWidth}>
       <nav className={styles.breadcrumbs} aria-label={locale === 'es' ? 'Migas de pan' : 'Breadcrumbs'}>
@@ -52,7 +53,13 @@ export function ReadingHub({
           <h1>{copy.title}</h1>
           <p className={styles.lead}>{copy.intro}</p>
         </div>
-        <div className={styles.heroGlyph} aria-hidden="true"><BookOpenText size={44} /></div>
+        {advanced ? (
+          <div className={styles.heroFolio} aria-hidden="true">
+            <span>{locale === 'es' ? 'LECTURA' : 'READING'}</span>
+            <strong>{level}</strong>
+            <small>WELEARN · {languageName.toUpperCase()}</small>
+          </div>
+        ) : <div className={styles.heroGlyph} aria-hidden="true"><BookOpenText size={44} /></div>}
       </section>
 
       {exercises.length ? (
@@ -63,7 +70,7 @@ export function ReadingHub({
               className={styles.topicRow}
               href={readingExercisePath(locale, exercise.language, exercise.level.cefr, exercise.slug)}
             >
-              <span className={styles.topicNumber}>{index + 1}</span>
+              <span className={styles.topicNumber}>{advanced ? String(index + 1).padStart(2, '0') : index + 1}</span>
               <span className={styles.topicBody}>
                 <span className={styles.topicHead}>
                   <span className={styles.topicTitle}>{localized(exercise.content.title, locale)}</span>
@@ -74,9 +81,10 @@ export function ReadingHub({
                 <span className={styles.topicMeta}>
                   <span><Clock3 size={13} /> {exercise.content.estimatedMinutes} min</span>
                   <span><Sparkles size={13} /> {exercise.content.wordCount} {exercise.language === 'ja' ? 'caracteres' : exercise.language === 'ko' ? 'eojeol' : copy.words}</span>
+                  {advanced && <span><BookOpenCheck size={13} /> {exercise.questions.length} {locale === 'es' ? 'preguntas' : 'questions'}</span>}
                 </span>
               </span>
-              <ArrowRight className={styles.topicArrow} size={20} aria-hidden="true" />
+              <span className={styles.topicAction}><span>{advanced ? copy.start : ''}</span><ArrowRight className={styles.topicArrow} size={20} aria-hidden="true" /></span>
             </Link>
           ))}
         </section>

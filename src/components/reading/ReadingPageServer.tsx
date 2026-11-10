@@ -104,9 +104,10 @@ export function resolveHubForRoute(locale: TutorLocale, languageParam: string, l
 
 export function ExercisePage({ exercise, locale }: { exercise: ReadingExercise; locale: TutorLocale }) {
   const siblings = findReadingHubExercises(locale, exercise.language, exercise.level.cefr)
+  const advanced = ['B2', 'C1', 'C2'].includes(exercise.level.cefr)
   return (
     <section className="wl-section">
-      <div className={`wrap ${styles.readingRoot}`}>
+      <div className={`wrap ${styles.readingRoot} ${advanced ? styles.premiumRoot : ''}`}>
         <ReadingStructuredData exercise={exercise} locale={locale} />
         <ReadingLesson exercise={exercise} locale={locale} siblings={siblings}
           />
@@ -116,9 +117,10 @@ export function ExercisePage({ exercise, locale }: { exercise: ReadingExercise; 
 }
 
 export function HubPage({ locale, language, level, exercises }: { locale: TutorLocale; language: ReadingLanguage; level: CefrLevel; exercises: ReadingExercise[] }) {
+  const advanced = ['B2', 'C1', 'C2'].includes(level)
   return (
     <section className="wl-section">
-      <div className={`wrap ${styles.readingRoot}`}>
+      <div className={`wrap ${styles.readingRoot} ${advanced ? styles.premiumRoot : ''}`}>
         <ReadingHub locale={locale} language={language} level={level} exercises={exercises} />
       </div>
     </section>

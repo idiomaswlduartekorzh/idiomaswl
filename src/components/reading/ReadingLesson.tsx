@@ -9,7 +9,7 @@ import {
 import { ReadingRecorder } from './ReadingRecorder'
 import { ReadingAiFeedback } from './ReadingAiFeedback'
 import { GERMAN_A1_READING_TASK_ID } from '@/lib/writing-feedback-shared'
-import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
+import { normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { LANGUAGE_NAMES, readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
@@ -237,7 +237,6 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
   const completionTracked = useRef(false)
   const glossOpenCount = useRef(0)
   const uniqueGlosses = useRef(new Set<string>())
-  const capabilities = getScriptCapabilities(exercise)
   const glossarySurfaces = useMemo(() => exercise.content.vocabulary.map((item) => item.surface), [exercise])
   const tokens = useMemo(() => tokenizeReadingText(exercise.content.targetText, exercise.language, glossarySurfaces), [exercise, glossarySurfaces])
   const vocabulary = useMemo(() => new Map(exercise.content.vocabulary.map((item) => [normalizeReadingLookup(item.surface), item])), [exercise])
@@ -336,9 +335,10 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
   const hubHref = readingHubPath(locale, exercise.language, exercise.level.cefr)
   const currentIndex = Math.max(0, siblings.findIndex((item) => item.id === exercise.id))
   const nextSibling = siblings[currentIndex + 1]
+  const advanced = ['B2', 'C1', 'C2'].includes(exercise.level.cefr)
 
   return (
-    <div className={`listen-shell ${styles.lessonShell}`}>
+    <div className={`listen-shell ${styles.lessonShell} ${advanced && siblings.length === 1 ? styles.singleReading : ''}`}>
       <aside className="listen-catalog" aria-label={copy.back}>
         <div className="listen-catalog__head">
           <span>{copy.catalog} {exercise.level.cefr}</span>
@@ -360,17 +360,19 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
       </aside>
 
       <article className={`listen-work ${styles.lessonWork}`}>
-        <Link href={hubHref} className="listen-back"><ArrowLeft size={14} /> {copy.back}</Link>
-        <p className="eyebrow"><span className="ink-line" />{locale === 'es' ? 'Lectura' : 'Reading'} · {LANGUAGE_NAMES[locale][exercise.language]} · {exercise.level.cefr} · {copy.textWord} {currentIndex + 1} {copy.of} {siblings.length || 1}</p>
-        <h1>{localized(exercise.content.title, locale)}</h1>
-        <p className="listen-objective">{localized(exercise.content.intro, locale)}</p>
-        <div className="listen-tags">
-          <span>{exercise.classification.topic}</span>
-          <span>{exercise.content.wordCount} {exercise.language === 'ja' ? 'caracteres' : exercise.language === 'ko' ? 'eojeol' : copy.words}</span>
-          <span>~{exercise.content.estimatedMinutes} min</span>
-          {exercise.content.grammarFocus?.[0] && <span>{exercise.content.grammarFocus[0]}</span>}
-          {exercise.status !== 'published' && <span>{copy.preview}</span>}
-        </div>
+        <header className={advanced ? styles.lessonCover : undefined}>
+          <Link href={hubHref} className="listen-back"><ArrowLeft size={14} /> {copy.back}</Link>
+          <p className="eyebrow"><span className="ink-line" />{advanced ? `${LANGUAGE_NAMES[locale][exercise.language]} ${exercise.level.cefr} · ${locale === 'es' ? 'Lectura' : 'Reading'} ${String(currentIndex + 1).padStart(2, '0')}/${String(siblings.length || 1).padStart(2, '0')}` : `${locale === 'es' ? 'Lectura' : 'Reading'} · ${LANGUAGE_NAMES[locale][exercise.language]} · ${exercise.level.cefr} · ${copy.textWord} ${currentIndex + 1} ${copy.of} ${siblings.length || 1}`}</p>
+          <h1>{localized(exercise.content.title, locale)}</h1>
+          <p className="listen-objective">{localized(exercise.content.intro, locale)}</p>
+          <div className="listen-tags">
+            {!advanced && <span>{exercise.classification.topic}</span>}
+            <span>{exercise.content.wordCount} {exercise.language === 'ja' ? 'caracteres' : exercise.language === 'ko' ? 'eojeol' : copy.words}</span>
+            <span>~{exercise.content.estimatedMinutes} min</span>
+            {advanced ? <span>{exercise.questions.length} {locale === 'es' ? 'preguntas' : 'questions'}</span> : exercise.content.grammarFocus?.[0] && <span>{exercise.content.grammarFocus[0]}</span>}
+            {exercise.status !== 'published' && <span>{copy.preview}</span>}
+          </div>
+        </header>
 
         <ol className={`listen-steps ${styles.readingSteps}`} aria-label={copy.progress}>
           {copy.stages.map((label, index) => (
@@ -452,7 +454,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
             const options = shuffledOptions.get(question.id) ?? []
             return (
             <div key={question.id} className={styles.questionWrap}>
-              <p className={styles.questionLabel}>{SKILL_LABELS[locale][question.skill]} · {copy.question} {index + 1}</p>
+              <p className={styles.questionLabel}>{advanced ? <><span className={styles.questionCount}>{String(index + 1).padStart(2, '0')}</span><span>{SKILL_LABELS[locale][question.skill]}</span></> : <>{SKILL_LABELS[locale][question.skill]} · {copy.question} {index + 1}</>}</p>
               {question.type === 'ordering' ? (
                 <OrderingQuestion key={`${question.id}-${shuffleSeed}`} question={question} locale={locale} options={options} value={answers[question.id]} onAnswer={(value) => answerQuestion(question, value)} />
               ) : (
