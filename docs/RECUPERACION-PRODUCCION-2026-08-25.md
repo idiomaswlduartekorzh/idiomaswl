@@ -1007,3 +1007,25 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   HTTP 200 y 20 tarjetas enlazadas en 48/48 listas; se verificaron preguntas
   A1, B1, B2 y C2, incluido el cambio entre español y ruso en navegador local.
 - Estado: `DESPLEGADO`.
+
+### 10 de noviembre de 2026 — cierre editorial y recursos de gramática inglesa A1
+
+- `main` incorporó `0914f0c3115e1bed5bd4eb053d35a7b3beb99bdb` y el commit de
+  promoción `98352b31f93804dfc7513d8e814425efe2ed302d`. Inglés A1 quedó con
+  33 temas, 1.196 interacciones progresivas y seis etapas de práctica por
+  lección. Las 27 rutas históricas conservaron sus slugs y canonicales; se
+  añadieron seis temas sin sustituir ni redirigir URLs existentes.
+- Cada tema publica tres recursos PDF —guía, cuaderno de ejercicios y
+  solucionario— para un total de 99 archivos. La biblioteca también conserva
+  tres pistas de audio por tema, 99 en total, y las páginas muestran mapa
+  visual, tablas, explicación extensa, práctica y navegación contextual.
+- Pasaron el guardián de gramática inglesa con assets, la protección SEO de
+  colecciones, el catálogo de 465 temas, TypeScript y el build optimizado de
+  Next.js 16.4.3 con 3.786 páginas estáticas. El smoke público confirmó HTTP
+  200 en 33/33 lecciones, tres enlaces PDF y canonical correcto en 33/33, y
+  HTTP 200 en 99/99 pistas de audio.
+- Vercel publicó el deployment
+  [`dpl_BkT8x4VXkzpic2G3sNegnQE1gqeU`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/BkT8x4VXkzpic2G3sNegnQE1gqeU)
+  en estado `READY`, registrado por GitHub como ambiente `Production` y
+  asignado a `https://www.idiomaswl.com`.
+- Estado: `DESPLEGADO`.
