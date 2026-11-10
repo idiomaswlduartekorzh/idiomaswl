@@ -18,6 +18,11 @@ const COPY = {
   },
 } as const
 
+const GENRE_LABELS: Record<TutorLocale, Record<string, string>> = {
+  es: { article: 'Artículo', story: 'Relato', dialogue: 'Diálogo', message: 'Mensaje', email: 'Correo', notice: 'Aviso', review: 'Reseña', instructions: 'Instrucciones', exam: 'Examen' },
+  en: { article: 'Article', story: 'Story', dialogue: 'Dialogue', message: 'Message', email: 'Email', notice: 'Notice', review: 'Review', instructions: 'Instructions', exam: 'Exam' },
+}
+
 export function ReadingHub({
   locale,
   language,
@@ -62,13 +67,13 @@ export function ReadingHub({
               <span className={styles.topicBody}>
                 <span className={styles.topicHead}>
                   <span className={styles.topicTitle}>{localized(exercise.content.title, locale)}</span>
-                  <span className={styles.topicTag}>{exercise.classification.genre}</span>
+                  <span className={styles.topicTag}>{GENRE_LABELS[locale][exercise.classification.genre] ?? exercise.classification.genre}</span>
                   {exercise.status !== 'published' && <span className={styles.previewPill}>{copy.preview}</span>}
                 </span>
                 <span className={styles.topicLead}>{localized(exercise.content.intro, locale)}</span>
                 <span className={styles.topicMeta}>
                   <span><Clock3 size={13} /> {exercise.content.estimatedMinutes} min</span>
-                  <span><Sparkles size={13} /> {exercise.content.wordCount} {copy.words}</span>
+                  <span><Sparkles size={13} /> {exercise.content.wordCount} {exercise.language === 'ja' ? 'caracteres' : exercise.language === 'ko' ? 'eojeol' : copy.words}</span>
                 </span>
               </span>
               <ArrowRight className={styles.topicArrow} size={20} aria-hidden="true" />

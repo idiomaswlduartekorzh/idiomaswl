@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-label-beside-the-object",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "ingles C1"
+  },
+  "slug": "the-label-beside-the-object",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "museum interpretation",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La etiqueta junto al objeto"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "When the regional museum reopened its collection, the oldest map carried two labels. The familiar one identified its maker and date; the new one explained that the map had been drawn for a trading company whose routes depended on forced labour. Some visitors praised the addition as overdue context. Others complained that an object should not be made to answer for a whole political history. The curator did not remove the first label. She argued that precision and context were different obligations, and that fulfilling one did not cancel the other. Yet the revised display exposed a harder question. A short label can acknowledge exploitation without explaining how the museum acquired the map, who has asked for access to it, or why a digital copy is easier to view than the original. The museum promised to publish its acquisition records, but only after verifying names in documents that often recorded workers as numbers. A critic called the delay another form of silence; the curator called it a refusal to replace one simplification with another. Neither position settles what the visitor sees today: two labels, a map, and an empty space where a fuller account might eventually appear.",
+    "wordCount": 197,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "overdue",
+        "lemma": "overdue",
+        "glosses": {
+          "es": "que hacía falta desde hace tiempo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "forced labour",
+        "lemma": "forced labour",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "curator",
+        "lemma": "curator",
+        "glosses": {
+          "es": "conservadora del museo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acquired",
+        "lemma": "acquired",
+        "glosses": {
+          "es": "adquirió"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acquisition records",
+        "lemma": "acquisition records",
+        "glosses": {
+          "es": "registros de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "simplification",
+        "lemma": "simplification",
+        "glosses": {
+          "es": "simplificación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.9,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What tension structures the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The need for accurate facts and adequate historical context"
+        },
+        {
+          "id": "a2",
+          "text": "The price of digital copies versus paper maps"
+        },
+        {
+          "id": "a3",
+          "text": "The age of the museum building"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "precision and context were different obligations",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What did the museum promise to publish?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The names of all visitors"
+        },
+        {
+          "id": "a2",
+          "text": "Its acquisition records"
+        },
+        {
+          "id": "a3",
+          "text": "A new trading map"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "promised to publish its acquisition records",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why might verification take time?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The museum has lost the map"
+        },
+        {
+          "id": "a2",
+          "text": "Visitors reject the first label"
+        },
+        {
+          "id": "a3",
+          "text": "The documents are incomplete or dehumanising"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "documents that often recorded workers as numbers",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the writer end with an empty space?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To signal that the account remains unfinished"
+        },
+        {
+          "id": "a2",
+          "text": "To describe a missing painting"
+        },
+        {
+          "id": "a3",
+          "text": "To celebrate a minimalist design"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "an empty space where a fuller account might eventually appear",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the writer’s stance toward both critic and curator?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The curator is presented as unquestionably right"
+        },
+        {
+          "id": "a2",
+          "text": "Neither claim is treated as a complete solution"
+        },
+        {
+          "id": "a3",
+          "text": "The critic is dismissed as uninformed"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Neither position settles what the visitor sees today",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does “overdue” suggest here?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The museum missed a payment"
+        },
+        {
+          "id": "a2",
+          "text": "The map was returned late"
+        },
+        {
+          "id": "a3",
+          "text": "The explanation should have been added earlier"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "praised the addition as overdue context",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Explain whether the two labels are enough for now. Acknowledge the strongest objection to your view."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La etiqueta junto al objeto | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/ingles/c1/lectura/the-label-beside-the-object",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-ochered-spravedlivee",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "ruso C2"
+  },
+  "slug": "ochered-spravedlivee",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "алгоритмическое распределение",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una fila más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "Город заменил очередь на жильё по времени подачи заявки системой баллов, призванной помочь самым нуждающимся. Первый отчёт праздновал сокращение среднего срока ожидания. Цифра была верной, но не уточняла, чьё ожидание сократилось. Человек с надёжным интернетом исправлял ошибку в заявке за часы; пользователь общественного терминала узнавал о ней иногда лишь после еженедельного пересчёта. Власти ввели срок обжалования. Однако вернуть место через жалобу может только тот, кто заметил его потерю. Независимая комиссия предложила раскрыть правила оценки. Чиновники опасались подгонки ответов; комиссия напомнила, что секретность позволяет ошибке выдавать себя за беспристрастность. Никто не обещал систему без стратегического поведения. Главный спор касался доказательств нужды: недавнее уведомление о выселении легко проверить, а годы неустойчивого проживания редко оставляют аккуратный документ. Назвав первое «объективным», администрация упрощает свою работу. Назвав второе «субъективным», она незаметно переносит бремя доказательства на тех, кому труднее всего его нести. Очередь стала быстрее. Стала ли она справедливее, зависит от того, кого система вообще способна увидеть.",
+    "wordCount": 151,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "баллов",
+        "lemma": "баллов",
+        "glosses": {
+          "es": "puntos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обжалования",
+        "lemma": "обжалования",
+        "glosses": {
+          "es": "apelación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "беспристрастность",
+        "lemma": "беспристрастность",
+        "glosses": {
+          "es": "imparcialidad"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "выселении",
+        "lemma": "выселении",
+        "glosses": {
+          "es": "desalojo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "неустойчивого проживания",
+        "lemma": "неустойчивого проживания",
+        "glosses": {
+          "es": "vivienda precaria"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бремя доказательства",
+        "lemma": "бремя доказательства",
+        "glosses": {
+          "es": "carga de la prueba"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 10.8,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Что ставит под вопрос последнее предложение?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Равенство скорости и справедливости"
+        },
+        {
+          "id": "a2",
+          "text": "Существование очереди"
+        },
+        {
+          "id": "a3",
+          "text": "Стоимость терминала"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "кого система вообще способна увидеть",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Кто мог быстро исправить ошибку?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Член комиссии"
+        },
+        {
+          "id": "a2",
+          "text": "Человек с надёжным интернетом"
+        },
+        {
+          "id": "a3",
+          "text": "Пользователь общественного терминала"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Человек с надёжным интернетом исправлял ошибку в заявке за часы",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Каково ограничение срока обжалования?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Он исключает всякую стратегию"
+        },
+        {
+          "id": "a2",
+          "text": "Он автоматически возвращает место"
+        },
+        {
+          "id": "a3",
+          "text": "Потерю места надо сначала заметить"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "только тот, кто заметил его потерю",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем противопоставлены выселение и неустойчивое проживание?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы усомниться в критерии доказательства"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы отменить все документы"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы сравнить районы"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "редко оставляют аккуратный документ",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Что подразумевает « выдавать себя за беспристрастность »?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Восхищение системой баллов"
+        },
+        {
+          "id": "a2",
+          "text": "Сомнение в нейтральности тайных правил"
+        },
+        {
+          "id": "a3",
+          "text": "Полное доверие к секретности"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "секретность позволяет ошибке выдавать себя за беспристрастность",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что значит « бремя » в конце?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Плата за заявление"
+        },
+        {
+          "id": "a2",
+          "text": "Порядок в очереди"
+        },
+        {
+          "id": "a3",
+          "text": "Тяжесть обязанности доказать"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "бремя доказательства",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Оцените утверждение, что открытые правила сами по себе сделают очередь справедливой."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una fila más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/ruso/c2/lectura/ochered-spravedlivee",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

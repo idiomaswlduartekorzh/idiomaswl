@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-yorikoseina-junban",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japones C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "La equivalencia CEFR–JLPT es orientativa; requiere validación humana."
+    }
+  },
+  "slug": "yorikoseina-junban",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "住宅配分と基準",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una fila más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "市は住宅の順番待ちを申請順から点数制に替え、最も必要とする人を優先すると説明した。最初の報告書は平均待機期間の短縮を成果として掲げた。数字は正しい。ただし、誰の待ち時間が短くなったかは示していない。安定した通信環境があれば申請書の不備を数時間で直せる一方、公共端末を使う人は週ごとの順位が確定した後にようやく誤りに気づくこともある。市は異議申立ての期間を設けた。しかし、失った順位を取り戻せるのは、失ったと知った人だけだ。独立委員会は採点基準の公開を求め、市側は回答の作り込みを懸念した。委員会は、秘密の基準こそ誤りを公正さに見せかけると反論する。どちらも戦略的な行動を防ぎ切れるとは言わない。より根深い対立は「必要」の証拠を巡る。立ち退き通知は確認しやすいが、長年の不安定な住まいには整った書類が残りにくい。前者を「客観的」、後者を「主観的」と呼べば、行政の作業は楽になる。その代わり、証明の負担は最も負担に弱い人へ移る。列は速く進むようになった。それがより公正な列かどうかは、この制度が誰を見える存在として数えるかによる。",
+    "wordCount": 429,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "点数制",
+        "lemma": "点数制",
+        "glosses": {
+          "es": "sistema de puntos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不備",
+        "lemma": "不備",
+        "glosses": {
+          "es": "defecto en la solicitud"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "異議申立て",
+        "lemma": "異議申立て",
+        "glosses": {
+          "es": "apelación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "採点基準",
+        "lemma": "採点基準",
+        "glosses": {
+          "es": "criterios de puntuación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "立ち退き通知",
+        "lemma": "立ち退き通知",
+        "glosses": {
+          "es": "aviso de desalojo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "証明の負担",
+        "lemma": "証明の負担",
+        "glosses": {
+          "es": "carga de la prueba"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 429,
+      "maxSentenceWords": 429,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "結末は何を問い直しているか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "速さと公正さが同じかどうか"
+        },
+        {
+          "id": "a2",
+          "text": "住宅が存在するかどうか"
+        },
+        {
+          "id": "a3",
+          "text": "端末の値段"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "誰を見える存在として数えるか",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "不備を早く直せるのは誰か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "独立委員会の委員"
+        },
+        {
+          "id": "a2",
+          "text": "安定した通信環境がある人"
+        },
+        {
+          "id": "a3",
+          "text": "公共端末だけを使う人"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "安定した通信環境があれば申請書の不備を数時間で直せる",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "異議申立ての限界は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "戦略的回答を完全に防ぐ"
+        },
+        {
+          "id": "a2",
+          "text": "全員の順位を自動で戻す"
+        },
+        {
+          "id": "a3",
+          "text": "順位を失ったと気づく必要がある"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "失ったと知った人だけだ",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "立ち退き通知と不安定な住まいを対比する理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "何を証拠と認めるかを問うため"
+        },
+        {
+          "id": "a2",
+          "text": "全書類を廃止するため"
+        },
+        {
+          "id": "a3",
+          "text": "地域を比較するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "整った書類が残りにくい",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "「公正さに見せかける」に込められた態度は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "点数制への賛美"
+        },
+        {
+          "id": "a2",
+          "text": "秘密の基準への疑い"
+        },
+        {
+          "id": "a3",
+          "text": "秘密への全面的な信頼"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "誤りを公正さに見せかける",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "ここで「根深い」は何を表すか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地面に近いこと"
+        },
+        {
+          "id": "a2",
+          "text": "古い書類であること"
+        },
+        {
+          "id": "a3",
+          "text": "表面より深い問題であること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "より根深い対立",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "基準を公開するだけで公平になるという意見を、二つの根拠から検討してください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una fila más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/japones/c2/lectura/yorikoseina-junban",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

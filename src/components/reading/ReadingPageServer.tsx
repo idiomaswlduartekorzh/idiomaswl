@@ -20,7 +20,7 @@ import styles from './reading.module.css'
 
 function parseLevel(raw: string): CefrLevel | null {
   const level = raw.toUpperCase()
-  return ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'].includes(level) ? level as CefrLevel : null
+  return ['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(level) ? level as CefrLevel : null
 }
 
 export function readingStaticParams(locale: TutorLocale) {

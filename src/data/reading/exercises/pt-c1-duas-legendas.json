@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-duas-legendas",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portugues C1"
+  },
+  "slug": "duas-legendas",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "memória de museu",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos cartelas para un mapa"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "Na reabertura do museu regional, um mapa antigo apareceu com duas legendas. A primeira identificava autor e data; a segunda explicava que as rotas de uma companhia comercial dependiam de trabalho forçado. Alguns visitantes elogiaram o contexto, há muito necessário. Outros disseram que um objeto não deveria responder por toda uma história política. A curadora manteve ambas: precisão material e contexto histórico seriam obrigações diferentes. A nova legenda, porém, deixou evidente o que não conseguia explicar. Como o mapa entrou no acervo? Quem pede acesso ao original hoje? Por que a cópia digital circula com mais facilidade? O museu prometeu publicar os registros de aquisição depois de conferir nomes em documentos que frequentemente reduziam trabalhadores a números. Um crítico chamou a demora de outro silêncio. A curadora afirmou que não substituiria uma simplificação por outra. O visitante fica diante de duas legendas e de um espaço vazio, onde talvez um relato mais completo venha a caber.",
+    "wordCount": 156,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "reabertura",
+        "lemma": "reabertura",
+        "glosses": {
+          "es": "reapertura"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "legendas",
+        "lemma": "legendas",
+        "glosses": {
+          "es": "cartelas explicativas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trabalho forçado",
+        "lemma": "trabalho forçado",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "curadora",
+        "lemma": "curadora",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acervo",
+        "lemma": "acervo",
+        "glosses": {
+          "es": "colección"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "registros de aquisição",
+        "lemma": "registros de aquisição",
+        "glosses": {
+          "es": "registros de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 12,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual tensão organiza o texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Precisão do objeto e contexto histórico"
+        },
+        {
+          "id": "a2",
+          "text": "Custo de cópias e ingressos"
+        },
+        {
+          "id": "a3",
+          "text": "Idade do mapa e do prédio"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "obrigações diferentes",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que o museu prometeu publicar?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Os nomes dos visitantes"
+        },
+        {
+          "id": "a2",
+          "text": "Os registros de aquisição"
+        },
+        {
+          "id": "a3",
+          "text": "Uma rota comercial nova"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "prometeu publicar os registros de aquisição",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que conferir nomes pode ser difícil?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O mapa perdeu a data"
+        },
+        {
+          "id": "a2",
+          "text": "Os visitantes rejeitaram o acervo"
+        },
+        {
+          "id": "a3",
+          "text": "Os documentos tratavam pessoas como números"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "reduziam trabalhadores a números",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Por que terminar com um espaço vazio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para indicar que o relato segue incompleto"
+        },
+        {
+          "id": "a2",
+          "text": "Para descrever uma obra roubada"
+        },
+        {
+          "id": "a3",
+          "text": "Para elogiar a decoração"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "onde talvez um relato mais completo venha a caber",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como são apresentadas as duas posições?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A curadora está claramente certa"
+        },
+        {
+          "id": "a2",
+          "text": "Nenhuma resolve tudo"
+        },
+        {
+          "id": "a3",
+          "text": "O crítico é ridicularizado"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "não substituiria uma simplificação por outra",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que sugere « há muito necessário »?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A visita durou muito"
+        },
+        {
+          "id": "a2",
+          "text": "O mapa chegou atrasado"
+        },
+        {
+          "id": "a3",
+          "text": "O contexto deveria ter sido acrescentado antes"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "contexto, há muito necessário",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Explique se as duas legendas bastam por enquanto, considerando uma objeção."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/portugues/c1/lectura/duas-legendas",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

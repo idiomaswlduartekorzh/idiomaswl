@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-deo-gongjeonghan-daegi",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "coreano C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "La equivalencia CEFR–TOPIK es orientativa; requiere validación humana."
+    }
+  },
+  "slug": "deo-gongjeonghan-daegi",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "주택 배분 기준",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una fila más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "시는 주택 신청 순서를 접수 시간 대신 점수로 정해 가장 절박한 사람을 우선하겠다고 했다. 첫 보고서는 평균 대기 기간이 줄었다고 자랑했다. 수치는 정확했지만 누구의 기다림이 짧아졌는지는 말하지 않았다. 안정적인 인터넷이 있는 사람은 잘못된 신청서를 몇 시간 안에 고칠 수 있었다. 공공 단말기를 쓰는 사람은 매주 순위가 확정된 뒤에야 오류를 발견하기도 했다. 시는 이의 신청 기간을 마련했다. 그러나 잃어버린 순위를 되찾으려면 먼저 그 사실을 알아야 한다. 독립 위원회는 점수 기준을 공개하라고 요구했다. 공무원은 사람들이 답을 전략적으로 꾸밀까 우려했고, 위원회는 비공개 기준이 오류를 공정함처럼 보이게 할 수 있다고 반박했다. 어느 쪽도 전략을 완전히 막을 수 있다고 약속하지 않았다. 더 중요한 논쟁은 어려움을 어떻게 증명하느냐였다. 최근의 퇴거 통보는 확인하기 쉽지만 수년간의 불안정한 거주는 깔끔한 서류를 남기지 않는다. 앞의 증거를 ‘객관적’이라 부르면 행정은 편해진다. 뒤의 경험을 ‘주관적’이라 부르면 증명할 책임은 가장 감당하기 어려운 사람에게 옮겨간다. 줄은 빨라졌다. 더 공정해졌는지는 이 제도가 누구를 보이게 하는지에 달려 있다.",
+    "wordCount": 142,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "대기 기간",
+        "lemma": "대기 기간",
+        "glosses": {
+          "es": "tiempo de espera"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "공공 단말기",
+        "lemma": "공공 단말기",
+        "glosses": {
+          "es": "terminal público"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이의 신청",
+        "lemma": "이의 신청",
+        "glosses": {
+          "es": "apelación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "점수 기준",
+        "lemma": "점수 기준",
+        "glosses": {
+          "es": "criterios de puntuación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "퇴거 통보",
+        "lemma": "퇴거 통보",
+        "glosses": {
+          "es": "aviso de desalojo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "증명할 책임",
+        "lemma": "증명할 책임",
+        "glosses": {
+          "es": "carga de la prueba"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 8.9,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "마지막 문장이 다시 묻는 것은 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "속도가 모두에게 공정함을 뜻하는가"
+        },
+        {
+          "id": "a2",
+          "text": "주택이 남아 있는가"
+        },
+        {
+          "id": "a3",
+          "text": "단말기 가격이 얼마인가"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이 제도가 누구를 보이게 하는지",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "신청서의 오류를 빨리 고칠 수 있었던 사람은 누구인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "독립 위원회 위원"
+        },
+        {
+          "id": "a2",
+          "text": "안정적인 인터넷이 있는 사람"
+        },
+        {
+          "id": "a3",
+          "text": "공공 단말기를 쓰는 사람"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "안정적인 인터넷이 있는 사람은 잘못된 신청서를 몇 시간 안에 고칠 수 있었다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "이의 신청 기간의 한계는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "전략적 답변을 모두 막는다"
+        },
+        {
+          "id": "a2",
+          "text": "모든 순위를 자동으로 되돌린다"
+        },
+        {
+          "id": "a3",
+          "text": "순위를 잃었다는 사실을 알아야 한다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "먼저 그 사실을 알아야 한다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "퇴거 통보와 불안정한 거주를 비교한 이유는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "무엇이 증거로 인정되는지 묻기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "모든 서류를 없애기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "두 지역을 비교하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "깔끔한 서류를 남기지 않는다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "「공정함처럼 보이게」라는 표현에 담긴 태도는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "점수제에 대한 찬사"
+        },
+        {
+          "id": "a2",
+          "text": "비공개 기준의 중립성에 대한 의심"
+        },
+        {
+          "id": "a3",
+          "text": "비밀 유지에 대한 완전한 신뢰"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "오류를 공정함처럼 보이게 할 수 있다고",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "여기서 「감당하기」는 어떤 의미인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "순서를 계산하기"
+        },
+        {
+          "id": "a2",
+          "text": "서류를 버리기"
+        },
+        {
+          "id": "a3",
+          "text": "부담을 견디기"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "가장 감당하기 어려운 사람에게",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "기준 공개만으로 주택 배분이 공정해질 수 있는지 두 근거로 평가하세요."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una fila más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/coreano/c2/lectura/deo-gongjeonghan-daegi",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

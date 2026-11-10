@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-jido-yeop-du-seolmyeong",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "coreano C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "La equivalencia CEFR–TOPIK es orientativa; requiere validación humana."
+    }
+  },
+  "slug": "jido-yeop-du-seolmyeong",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "박물관과 기억",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos cartelas para un mapa"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "지역 박물관이 다시 문을 열었을 때 오래된 지도 옆에는 설명문이 두 개 놓였다. 첫 번째는 제작자와 연도를 밝히고, 두 번째는 지도에 그려진 상업 항로가 강제 노동에 의존했다는 사실을 적었다. 어떤 방문객은 늦었지만 필요한 설명이라고 반겼다. 다른 방문객은 물건 하나에 정치사의 모든 책임을 지우지 말라고 했다. 학예사는 두 설명문을 모두 남겼다. 물건의 정보를 정확히 밝히는 일과 역사적 맥락을 제시하는 일은 서로 다른 의무라는 것이다. 그러나 새 설명문은 짧은 글이 답할 수 없는 질문도 드러냈다. 지도는 어떻게 소장품이 되었는가? 지금 원본을 보길 원하는 사람은 누구인가? 디지털 사본이 원본보다 쉽게 공개되는 이유는 무엇인가? 박물관은 취득 기록을 공개하겠다고 약속했지만, 노동자를 번호로만 적은 문서의 이름부터 확인해야 한다고 했다. 비평가는 그 지연을 또 다른 침묵이라 불렀고, 학예사는 하나의 단순화를 다른 단순화로 바꾸고 싶지 않다고 답했다. 방문객 앞에는 지도와 두 설명문, 그리고 아직 채워지지 않은 이야기의 자리가 남는다.",
+    "wordCount": 131,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "설명문",
+        "lemma": "설명문",
+        "glosses": {
+          "es": "cartela explicativa"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "항로",
+        "lemma": "항로",
+        "glosses": {
+          "es": "ruta marítima"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "강제 노동",
+        "lemma": "강제 노동",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "학예사",
+        "lemma": "학예사",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "취득 기록",
+        "lemma": "취득 기록",
+        "glosses": {
+          "es": "registro de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "침묵",
+        "lemma": "침묵",
+        "glosses": {
+          "es": "silencio"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 10.1,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "글을 이끄는 긴장은 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "물건의 정확한 정보와 역사적 맥락"
+        },
+        {
+          "id": "a2",
+          "text": "사본 가격과 입장료"
+        },
+        {
+          "id": "a3",
+          "text": "지도와 건물의 나이"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "서로 다른 의무라는 것이다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박물관은 무엇을 공개하겠다고 했나요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "방문객 명단"
+        },
+        {
+          "id": "a2",
+          "text": "취득 기록"
+        },
+        {
+          "id": "a3",
+          "text": "새로운 항로 지도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "취득 기록을 공개하겠다고 약속했지만",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "이름을 확인하기 어려운 이유는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지도에 연도가 없기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "방문객이 반대하기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "문서가 노동자를 번호로 기록했기 때문에"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "노동자를 번호로만 적은 문서",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "끝에서 비어 있는 자리를 말하는 이유는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "설명이 아직 완성되지 않았음을 나타내기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "도난당한 작품을 알리기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "전시실을 칭찬하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "아직 채워지지 않은 이야기의 자리가 남는다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글은 비평가와 학예사의 견해를 어떻게 다루나요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학예사의 말만 옳다고 한다"
+        },
+        {
+          "id": "a2",
+          "text": "어느 쪽도 문제를 모두 해결하지 못한다"
+        },
+        {
+          "id": "a3",
+          "text": "비평가를 조롱한다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "짧은 글이 답할 수 없는 질문도 드러냈다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "여기서 « 맥락 »은 무엇을 뜻하나요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지도의 크기"
+        },
+        {
+          "id": "a2",
+          "text": "전시실의 위치"
+        },
+        {
+          "id": "a3",
+          "text": "물건을 둘러싼 역사적 배경"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "역사적 맥락을 제시하는 일",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "두 설명문이 지금으로서는 충분한지 반론을 고려하여 논하세요."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/coreano/c1/lectura/jido-yeop-du-seolmyeong",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

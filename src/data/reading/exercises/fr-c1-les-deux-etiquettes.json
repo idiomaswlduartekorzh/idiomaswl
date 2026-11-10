@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-les-deux-etiquettes",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "frances C1"
+  },
+  "slug": "les-deux-etiquettes",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "mémoire muséale",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las dos etiquetas"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "À sa réouverture, le musée régional a présenté une carte ancienne accompagnée de deux étiquettes. La première donnait le nom du cartographe et la date; la seconde rappelait que les routes dessinées pour une compagnie commerciale dépendaient du travail forcé. Certains visiteurs ont salué cette précision tardive. D’autres ont reproché au musée de faire porter à un objet le poids d’une histoire entière. La conservatrice a gardé les deux textes: selon elle, l’exactitude matérielle et le contexte historique répondent à deux obligations différentes. Cependant, l’ajout a rendu visible ce qu’aucune étiquette ne résout. Comment la carte est-elle entrée dans la collection? Qui en demande l’accès aujourd’hui? Pourquoi sa copie numérique circule-t-elle plus librement que l’original? Le musée a promis de publier ses archives d’acquisition, après avoir vérifié les noms dans des registres où les travailleurs étaient souvent réduits à des numéros. Un critique y voit un nouveau silence; la conservatrice refuse, dit-elle, de remplacer une simplification par une autre. Le visiteur, lui, reste devant la carte et ses deux étiquettes, avec l’impression que l’espace laissé vide fait aussi partie de l’exposition.",
+    "wordCount": 181,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "réouverture",
+        "lemma": "réouverture",
+        "glosses": {
+          "es": "reapertura"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cartographe",
+        "lemma": "cartographe",
+        "glosses": {
+          "es": "cartógrafo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "travail forcé",
+        "lemma": "travail forcé",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conservatrice",
+        "lemma": "conservatrice",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "archives d’acquisition",
+        "lemma": "archives d’acquisition",
+        "glosses": {
+          "es": "archivos de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "registres",
+        "lemma": "registres",
+        "glosses": {
+          "es": "registros"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.1,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quelle tension structure le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Exactitude de l’objet et contexte historique"
+        },
+        {
+          "id": "a2",
+          "text": "Copies numériques et prix des billets"
+        },
+        {
+          "id": "a3",
+          "text": "Âge de la carte et taille du musée"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "deux obligations différentes",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Que promet le musée ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "De vendre la carte"
+        },
+        {
+          "id": "a2",
+          "text": "De publier ses archives d’acquisition"
+        },
+        {
+          "id": "a3",
+          "text": "De retirer la première étiquette"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "promis de publier ses archives d’acquisition",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi la vérification des noms est-elle délicate ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La carte n’a jamais été datée"
+        },
+        {
+          "id": "a2",
+          "text": "Les visiteurs refusent les archives"
+        },
+        {
+          "id": "a3",
+          "text": "Les registres déshumanisent les travailleurs"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "les travailleurs étaient souvent réduits à des numéros",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi terminer sur l’espace vide ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour suggérer un récit encore incomplet"
+        },
+        {
+          "id": "a2",
+          "text": "Pour signaler une œuvre volée"
+        },
+        {
+          "id": "a3",
+          "text": "Pour louer un décor minimaliste"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "l’espace laissé vide fait aussi partie de l’exposition",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Comment le texte traite-t-il les deux positions ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La conservatrice détient la réponse définitive"
+        },
+        {
+          "id": "a2",
+          "text": "Aucune ne règle entièrement le problème"
+        },
+        {
+          "id": "a3",
+          "text": "Le critique a clairement tort"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ce qu’aucune étiquette ne résout",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que suggère « tardive » ici ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une visite après la fermeture"
+        },
+        {
+          "id": "a2",
+          "text": "Une carte arrivée en retard"
+        },
+        {
+          "id": "a3",
+          "text": "Une précision qui aurait dû venir plus tôt"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "cette précision tardive",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Expliquez si les deux étiquettes suffisent pour l’instant, en considérant une objection."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Las dos etiquetas | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/frances/c1/lectura/les-deux-etiquettes",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

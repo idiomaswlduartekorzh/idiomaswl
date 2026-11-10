@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-biblioteka-veshchey",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "ruso B2"
+  },
+  "slug": "biblioteka-veshchey",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "совместное пользование",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La biblioteca de objetos"
+    },
+    "intro": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "mission": {
+      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+    },
+    "targetText": "Новая библиотека вещей выдаёт инструменты, кухонную технику и палатки. Покупать дрель ради одного использования в год дорого и расточительно. За первый месяц жители взяли более трёхсот предметов, а на швейные машины появилась очередь. Однако цифры скрывают проблему: большинство читателей живёт в центре. Жителям окраин приходится ехать на двух автобусах, чтобы вернуть тяжёлый предмет. Организаторы предлагают открыть три пункта выдачи, но город обещает финансировать их лишь полгода. Один доброволец предлагает штрафы за опоздание. Команда опасается, что штрафы отпугнут именно те семьи, которым проект хотел помочь. Поэтому пока проверяют напоминания и более гибкие сроки возврата. Успех зависит не только от того, сколько дрелей возьмут этой зимой. Важно, смогут ли жители далёких районов пользоваться услугой и в следующем году.",
+    "wordCount": 116,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "argumentación y concesión"
+    ],
+    "vocabulary": [
+      {
+        "surface": "выдаёт",
+        "lemma": "выдаёт",
+        "glosses": {
+          "es": "presta"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дрель",
+        "lemma": "дрель",
+        "glosses": {
+          "es": "taladro"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "расточительно",
+        "lemma": "расточительно",
+        "glosses": {
+          "es": "despilfarrador"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "окраин",
+        "lemma": "окраин",
+        "glosses": {
+          "es": "periferias"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "штрафы",
+        "lemma": "штрафы",
+        "glosses": {
+          "es": "multas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сроки возврата",
+        "lemma": "сроки возврата",
+        "glosses": {
+          "es": "plazos de devolución"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+    },
+    "allowedGrammar": [
+      "argumentación y concesión"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.5,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какой главный вопрос поднимает текст?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Доступность услуги в будущем"
+        },
+        {
+          "id": "a2",
+          "text": "Отказ от обычных книг"
+        },
+        {
+          "id": "a3",
+          "text": "Цена швейных машин"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "смогут ли жители далёких районов пользоваться услугой и в следующем году",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Зачем нужны новые пункты выдачи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы продавать тяжёлые вещи"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы помочь жителям окраин"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы заменить добровольцев"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "приходится ехать на двух автобусах",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Что означает финансирование лишь на полгода?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Проект обязательно закроется"
+        },
+        {
+          "id": "a2",
+          "text": "Вещи бесплатны только полгода"
+        },
+        {
+          "id": "a3",
+          "text": "Будущее финансирование неясно"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "финансировать их лишь полгода",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем упомянута очередь на швейные машины?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы показать первоначальный спрос"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы объяснить штрафы"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы раскритиковать инструменты"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "на швейные машины появилась очередь",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как автор относится к первым цифрам?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Как к окончательному доказательству"
+        },
+        {
+          "id": "a2",
+          "text": "С осторожным оптимизмом"
+        },
+        {
+          "id": "a3",
+          "text": "С полным отрицанием"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Однако цифры скрывают проблему",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что значит « отпугнут » здесь?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Помогут донести вещи"
+        },
+        {
+          "id": "a2",
+          "text": "Пригласят работать"
+        },
+        {
+          "id": "a3",
+          "text": "Помешают участвовать"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "штрафы отпугнут именно те семьи",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите рекомендацию городу, указав одно преимущество и одно ограничение проекта."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "canonicalPath": "/practica/ruso/b2/lectura/biblioteka-veshchey",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

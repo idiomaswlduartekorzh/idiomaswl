@@ -32,6 +32,36 @@ for (const file of files) {
   }
 }
 
+// El piloto B2–C2 tiene su propio contrato. Las 24 fichas siguen siendo borradores y
+// ninguna puede entrar al catálogo público sin revisión humana documentada.
+const advanced = exercises.filter(({ exercise }) => exercise.schemaVersion === '1.2.0')
+if (advanced.length) {
+  const expected = ['en', 'fr', 'it', 'de', 'ru', 'ja', 'ko', 'pt'].flatMap((language) =>
+    ['B2', 'C1', 'C2'].map((cefr) => `${language}/${cefr}`))
+  const keys = advanced.map(({ exercise }) => `${exercise.language}/${exercise.level.cefr}`)
+  for (const key of expected) {
+    if (keys.filter((value) => value === key).length !== 1) {
+      failed = true
+      console.error(`✗ piloto avanzado: se exige exactamente una lectura ${key}`)
+    }
+  }
+  for (const { file, exercise } of advanced) {
+    const errors = []
+    if (exercise.questions.length !== 6) errors.push('debe tener seis preguntas')
+    if (new Set(exercise.questions.map((question) => question.skill)).size < 5) errors.push('debe evaluar al menos cinco destrezas')
+    if (exercise.content.vocabulary.length < 6) errors.push('debe glosar al menos seis expresiones')
+    for (const question of exercise.questions) {
+      if (!exercise.content.targetText.includes(question.evidence)) errors.push(`${question.id}: evidencia ausente del texto`)
+      if (question.options?.length !== 3) errors.push(`${question.id}: se exigen tres opciones concretas`)
+    }
+    if (exercise.status !== 'draft' || exercise.seo.indexable || exercise.leveling.independentAssessment.passed) errors.push('el piloto debe quedar como borrador sin evaluación independiente aprobada')
+    if (errors.length) {
+      failed = true
+      console.error(`✗ ${file}: ${errors.join('; ')}`)
+    }
+  }
+}
+
 // --- Comprobaciones que solo se ven mirando todo el conjunto ----------------------
 // Un texto puede estar impecable por su cuenta y aun así ser el cuarto correo de vecinos
 // del mismo nivel. La variedad es una propiedad del conjunto, no de cada archivo.

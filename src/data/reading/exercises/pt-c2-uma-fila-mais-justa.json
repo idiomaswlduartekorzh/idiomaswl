@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-uma-fila-mais-justa",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portugues C2"
+  },
+  "slug": "uma-fila-mais-justa",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "distribuição algorítmica",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una fila más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "A cidade trocou a ordem de chegada na fila de moradias por uma pontuação destinada a priorizar quem mais precisava. O primeiro relatório comemorou a redução da espera média. O número era correto, mas nada dizia sobre a espera de quem havia diminuído. Com internet estável, um candidato corrigia o formulário em horas. No terminal público, um erro às vezes só aparecia depois do fechamento semanal da classificação. A prefeitura criou um prazo de recurso. O recurso, porém, só devolve uma posição a quem percebe que a perdeu. Um comitê independente pediu a divulgação das regras. Os gestores temiam respostas calculadas; o comitê lembrava que o sigilo também permite que um erro pareça imparcial. Nenhum lado prometia um sistema imune a estratégias. A divergência mais profunda dizia respeito à prova da necessidade: uma ordem recente de despejo é verificável, enquanto anos de moradia precária raramente produzem um documento organizado. Chamar a primeira prova de « objetiva » facilita a administração. Chamar a segunda de « subjetiva » transfere discretamente o peso da prova para quem menos consegue carregá-lo. A fila ficou mais rápida. Saber se ficou mais justa exige perguntar quem o sistema aprendeu a enxergar.",
+    "wordCount": 196,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "pontuação",
+        "lemma": "pontuação",
+        "glosses": {
+          "es": "puntuación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prazo de recurso",
+        "lemma": "prazo de recurso",
+        "glosses": {
+          "es": "plazo de recurso"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sigilo",
+        "lemma": "sigilo",
+        "glosses": {
+          "es": "secreto"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "imparcial",
+        "lemma": "imparcial",
+        "glosses": {
+          "es": "imparcial"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "despejo",
+        "lemma": "despejo",
+        "glosses": {
+          "es": "desalojo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "peso da prova",
+        "lemma": "peso da prova",
+        "glosses": {
+          "es": "carga de la prueba"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.1,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "O que a última frase questiona?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Se rapidez equivale a justiça para todos"
+        },
+        {
+          "id": "a2",
+          "text": "Se a fila foi eliminada"
+        },
+        {
+          "id": "a3",
+          "text": "Se o terminal custa caro"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "quem o sistema aprendeu a enxergar",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quem corrigia rapidamente o formulário?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um membro do comitê"
+        },
+        {
+          "id": "a2",
+          "text": "Um candidato com internet estável"
+        },
+        {
+          "id": "a3",
+          "text": "Um candidato no terminal público"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Com internet estável, um candidato corrigia o formulário em horas",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual limite tem o prazo de recurso?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elimina todas as estratégias"
+        },
+        {
+          "id": "a2",
+          "text": "Restaura automaticamente cada posição"
+        },
+        {
+          "id": "a3",
+          "text": "Depende de a perda ser percebida"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "só devolve uma posição a quem percebe que a perdeu",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Por que comparar despejo e moradia precária?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para questionar o que conta como prova"
+        },
+        {
+          "id": "a2",
+          "text": "Para rejeitar todo documento"
+        },
+        {
+          "id": "a3",
+          "text": "Para comparar dois bairros"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "raramente produzem um documento organizado",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "O que comunica « pareça imparcial »?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Admiração pela pontuação"
+        },
+        {
+          "id": "a2",
+          "text": "Desconfiança de regras ocultas"
+        },
+        {
+          "id": "a3",
+          "text": "Confiança completa no sigilo"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o sigilo também permite que um erro pareça imparcial",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa « peso » na expressão final?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Preço de um imóvel"
+        },
+        {
+          "id": "a2",
+          "text": "Posição na fila"
+        },
+        {
+          "id": "a3",
+          "text": "Responsabilidade de apresentar provas"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "o peso da prova",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Avalie a afirmação de que divulgar as regras seria suficiente para tornar a fila justa."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una fila más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/portugues/c2/lectura/uma-fila-mais-justa",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

@@ -273,10 +273,58 @@ import jaB1PuuruONokosuBekiKa from '@/data/reading/exercises/ja-b1-puuru-o-nokos
 import jaB1KyuujuppunNarabuHodoKa from '@/data/reading/exercises/ja-b1-kyuujuppun-narabu-hodo-ka.json'
 import jaB1KieteitsutsuaruKotoba from '@/data/reading/exercises/ja-b1-kieteitsutsuaru-kotoba.json'
 import jaB1AkisouDeAkanaiMise from '@/data/reading/exercises/ja-b1-akisou-de-akanai-mise.json'
+import advancedPilot01 from '@/data/reading/exercises/de-b2-die-bibliothek-der-dinge.json'
+import advancedPilot02 from '@/data/reading/exercises/de-c1-zwei-beschriftungen.json'
+import advancedPilot03 from '@/data/reading/exercises/de-c2-eine-gerechtere-warteliste.json'
+import advancedPilot04 from '@/data/reading/exercises/en-b2-a-library-of-things.json'
+import advancedPilot05 from '@/data/reading/exercises/en-c1-the-label-beside-the-object.json'
+import advancedPilot06 from '@/data/reading/exercises/en-c2-a-fairer-queue.json'
+import advancedPilot07 from '@/data/reading/exercises/fr-b2-la-bibliotheque-des-objets.json'
+import advancedPilot08 from '@/data/reading/exercises/fr-c1-les-deux-etiquettes.json'
+import advancedPilot09 from '@/data/reading/exercises/fr-c2-une-file-plus-juste.json'
+import advancedPilot10 from '@/data/reading/exercises/it-b2-la-biblioteca-degli-oggetti.json'
+import advancedPilot11 from '@/data/reading/exercises/it-c1-due-didascalie.json'
+import advancedPilot12 from '@/data/reading/exercises/it-c2-una-coda-piu-giusta.json'
+import advancedPilot13 from '@/data/reading/exercises/ja-b2-mono-no-toshokan.json'
+import advancedPilot14 from '@/data/reading/exercises/ja-c1-chizu-no-futatsu-no-setsumei.json'
+import advancedPilot15 from '@/data/reading/exercises/ja-c2-yorikoseina-junban.json'
+import advancedPilot16 from '@/data/reading/exercises/ko-b2-mulgeon-doseogwan.json'
+import advancedPilot17 from '@/data/reading/exercises/ko-c1-jido-yeop-du-seolmyeong.json'
+import advancedPilot18 from '@/data/reading/exercises/ko-c2-deo-gongjeonghan-daegi.json'
+import advancedPilot19 from '@/data/reading/exercises/pt-b2-a-biblioteca-de-objetos.json'
+import advancedPilot20 from '@/data/reading/exercises/pt-c1-duas-legendas.json'
+import advancedPilot21 from '@/data/reading/exercises/pt-c2-uma-fila-mais-justa.json'
+import advancedPilot22 from '@/data/reading/exercises/ru-b2-biblioteka-veshchey.json'
+import advancedPilot23 from '@/data/reading/exercises/ru-c1-dve-tablichki.json'
+import advancedPilot24 from '@/data/reading/exercises/ru-c2-ochered-spravedlivee.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
 const RAW_EXERCISES: unknown[] = [
+  advancedPilot01,
+  advancedPilot02,
+  advancedPilot03,
+  advancedPilot04,
+  advancedPilot05,
+  advancedPilot06,
+  advancedPilot07,
+  advancedPilot08,
+  advancedPilot09,
+  advancedPilot10,
+  advancedPilot11,
+  advancedPilot12,
+  advancedPilot13,
+  advancedPilot14,
+  advancedPilot15,
+  advancedPilot16,
+  advancedPilot17,
+  advancedPilot18,
+  advancedPilot19,
+  advancedPilot20,
+  advancedPilot21,
+  advancedPilot22,
+  advancedPilot23,
+  advancedPilot24,
   cafeMorning,
   libraryMessage,
   saturdayBus,

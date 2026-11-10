@@ -5,8 +5,9 @@ import { validateReadingExercise } from '../scripts/lib/reading-content-validato
 
 const fixture = JSON.parse(await readFile(new URL('../src/data/reading/exercises/en-a1-my-morning-at-the-cafe.json', import.meta.url), 'utf8'))
 const koreanFixture = JSON.parse(await readFile(new URL('../src/data/reading/exercises/ko-a1-cafe-order.json', import.meta.url), 'utf8'))
+const advancedDraft = JSON.parse(await readFile(new URL('../src/data/reading/exercises/en-b2-a-library-of-things.json', import.meta.url), 'utf8'))
 const batchFiles = (await readdir(new URL('../src/data/reading/exercises/', import.meta.url)))
-  .filter((filename) => filename.startsWith('en-') && filename.endsWith('.json'))
+  .filter((filename) => /^en-(a1|a2|b1)-.*\.json$/.test(filename))
   .sort()
 const batchFixtures = await Promise.all(batchFiles.map(async (filename) =>
   JSON.parse(await readFile(new URL(`../src/data/reading/exercises/${filename}`, import.meta.url), 'utf8'))
@@ -17,14 +18,14 @@ test('the A1 pilot satisfies structural and leveling preflight checks', () => {
 })
 
 test('publication is blocked while requested human changes await final approval', () => {
-  const published = structuredClone(fixture)
+  const published = structuredClone(advancedDraft)
   published.status = 'published'
   published.seo.indexable = true
   assert.match(validateReadingExercise(published).join('\n'), /approved language and pedagogy decisions/)
 })
 
 test('publication still requires identified human reviewers after approval', () => {
-  const published = structuredClone(fixture)
+  const published = structuredClone(advancedDraft)
   published.status = 'published'
   published.seo.indexable = true
   published.review.languageDecision = 'approved'
@@ -73,7 +74,7 @@ test('the complete English corpus passes content validation', () => {
   }
 })
 
-test('English has ten reviewable readings at each requested level', () => {
+test('English has ten published readings at each foundation level', () => {
   for (const level of ['A1', 'A2', 'B1']) {
     assert.equal(batchFixtures.filter((exercise) => exercise.level.cefr === level).length, 10)
   }
@@ -81,12 +82,12 @@ test('English has ten reviewable readings at each requested level', () => {
   assert.equal(batchFixtures.length, 30)
   assert.equal(new Set(batchFixtures.map((exercise) => exercise.id)).size, 30)
   assert.equal(new Set(batchFixtures.map((exercise) => exercise.slug)).size, 30)
-  assert.ok(batchFixtures.every((exercise) => exercise.status !== 'published'))
-  assert.ok(batchFixtures.every((exercise) => exercise.seo.indexable === false))
-  assert.ok(batchFixtures.every((exercise) => exercise.audio === null))
+  assert.ok(batchFixtures.every((exercise) => exercise.status === 'published'))
+  assert.ok(batchFixtures.every((exercise) => exercise.seo.indexable === true))
+  assert.ok(batchFixtures.every((exercise) => exercise.audio !== null))
   assert.ok(batchFixtures.every((exercise) => exercise.questions.length === 5))
-  assert.ok(batchFixtures.every((exercise) => exercise.review.languageDecision !== 'approved'))
-  assert.ok(batchFixtures.every((exercise) => exercise.review.pedagogyDecision !== 'approved'))
+  assert.ok(batchFixtures.every((exercise) => exercise.review.languageDecision === 'approved'))
+  assert.ok(batchFixtures.every((exercise) => exercise.review.pedagogyDecision === 'approved'))
 })
 
 test('the English corpus forms one ordered thirty-episode series', () => {

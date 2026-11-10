@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-a-library-of-things",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "ingles B2"
+  },
+  "slug": "a-library-of-things",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "community borrowing",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una biblioteca de objetos"
+    },
+    "intro": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "mission": {
+      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+    },
+    "targetText": "The town's new \"library of things\" lends tools, kitchen equipment and camping gear instead of books. Supporters say that borrowing a drill once a year is cheaper and less wasteful than buying one. The first month seemed to prove them right: over three hundred objects were borrowed, and the waiting list for sewing machines grew quickly. Yet the figures hide a problem. Most borrowers live near the centre, while residents on the outer estates would have to take two buses to return a heavy object. The organisers therefore propose collection points in three neighbourhoods. That costs money, and the council has offered funding for only six months. A volunteer suggests charging late fees, but the team worries that a strict fine would exclude the families the project was meant to serve. They are testing reminders and flexible returns instead. Success will depend less on how many drills are borrowed this winter than on whether people who currently cannot reach the service can use it next year.",
+    "wordCount": 166,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "argumentación y concesión"
+    ],
+    "vocabulary": [
+      {
+        "surface": "lends",
+        "lemma": "lends",
+        "glosses": {
+          "es": "presta"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "wasteful",
+        "lemma": "wasteful",
+        "glosses": {
+          "es": "que genera desperdicio"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "waiting list",
+        "lemma": "waiting list",
+        "glosses": {
+          "es": "lista de espera"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "outer estates",
+        "lemma": "outer estates",
+        "glosses": {
+          "es": "barrios periféricos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "late fees",
+        "lemma": "late fees",
+        "glosses": {
+          "es": "recargos por demora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "flexible returns",
+        "lemma": "flexible returns",
+        "glosses": {
+          "es": "devoluciones flexibles"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+    },
+    "allowedGrammar": [
+      "argumentación y concesión"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.6,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article’s central concern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Whether the service will be accessible and sustainable"
+        },
+        {
+          "id": "a2",
+          "text": "Whether books should be removed from libraries"
+        },
+        {
+          "id": "a3",
+          "text": "Whether sewing machines are popular"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Success will depend less on how many drills are borrowed this winter",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why are collection points being proposed?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To store only camping gear"
+        },
+        {
+          "id": "a2",
+          "text": "To reach residents far from the centre"
+        },
+        {
+          "id": "a3",
+          "text": "To replace the volunteers"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "residents on the outer estates would have to take two buses",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the six-month grant imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The project closes after six months"
+        },
+        {
+          "id": "a2",
+          "text": "Borrowing is free for six months only"
+        },
+        {
+          "id": "a3",
+          "text": "Long-term funding is uncertain"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "the council has offered funding for only six months",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why mention the waiting list for sewing machines?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To show early demand"
+        },
+        {
+          "id": "a2",
+          "text": "To argue against lending tools"
+        },
+        {
+          "id": "a3",
+          "text": "To explain the late fee"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "the waiting list for sewing machines grew quickly",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How does the writer treat the promising first-month figures?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As proof of permanent success"
+        },
+        {
+          "id": "a2",
+          "text": "With cautious optimism"
+        },
+        {
+          "id": "a3",
+          "text": "With complete rejection"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Yet the figures hide a problem",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In this context, what does “exclude” mean?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Give families extra equipment"
+        },
+        {
+          "id": "a2",
+          "text": "Ask families to volunteer"
+        },
+        {
+          "id": "a3",
+          "text": "Prevent some families from taking part"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a strict fine would exclude the families",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short recommendation to the council. Use one benefit and one limitation from the article."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una biblioteca de objetos | Lectura B2 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "canonicalPath": "/practica/ingles/b2/lectura/a-library-of-things",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

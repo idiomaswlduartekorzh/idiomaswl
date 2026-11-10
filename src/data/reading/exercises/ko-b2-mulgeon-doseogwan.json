@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-mulgeon-doseogwan",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "coreano B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "La equivalencia CEFR–TOPIK es orientativa; requiere validación humana."
+    }
+  },
+  "slug": "mulgeon-doseogwan",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "물건 공유",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La biblioteca de objetos"
+    },
+    "intro": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "mission": {
+      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+    },
+    "targetText": "마을의 새로운 물건 도서관은 책 대신 공구와 주방 기구, 캠핑 장비를 빌려준다. 일 년에 한 번 쓰는 드릴을 사는 것보다 빌리는 편이 저렴하고 낭비도 적다. 첫 달에는 물건 삼백 개 이상이 대여되었고 재봉틀은 대기 명단까지 생겼다. 그러나 이 숫자가 모든 주민의 이용 가능성을 보여 주지는 않는다. 이용자의 대부분은 중심가에 살지만 외곽 주민은 무거운 물건을 반납하려고 버스를 두 번 타야 한다. 운영진은 세 곳에 수령 장소를 만들 계획이지만 시의 지원금은 여섯 달치뿐이다. 한 자원봉사자는 연체료를 제안했다. 운영진은 벌금이 원래 돕고자 했던 가정을 멀어지게 할까 걱정하여 알림과 유연한 반납 기한을 시험하고 있다. 올겨울 빌려 간 드릴의 개수보다 내년에 먼 동네 주민도 서비스를 이용할 수 있는지가 더 중요한 성공 기준이다.",
+    "wordCount": 107,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "argumentación y concesión"
+    ],
+    "vocabulary": [
+      {
+        "surface": "빌려준다",
+        "lemma": "빌려준다",
+        "glosses": {
+          "es": "presta"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "드릴",
+        "lemma": "드릴",
+        "glosses": {
+          "es": "taladro"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "대기 명단",
+        "lemma": "대기 명단",
+        "glosses": {
+          "es": "lista de espera"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "외곽 주민",
+        "lemma": "외곽 주민",
+        "glosses": {
+          "es": "habitantes de la periferia"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "연체료",
+        "lemma": "연체료",
+        "glosses": {
+          "es": "recargo por demora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "반납 기한",
+        "lemma": "반납 기한",
+        "glosses": {
+          "es": "plazo de devolución"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+    },
+    "allowedGrammar": [
+      "argumentación y concesión"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11.9,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "글에서 가장 중요하게 보는 성공 기준은 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "앞으로도 다양한 주민이 이용할 수 있는가"
+        },
+        {
+          "id": "a2",
+          "text": "책을 모두 없애는가"
+        },
+        {
+          "id": "a3",
+          "text": "재봉틀의 가격이 낮은가"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "내년에 먼 동네 주민도 서비스를 이용할 수 있는지가 더 중요한 성공 기준이다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "수령 장소를 더 만들려는 이유는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "무거운 물건을 팔기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "외곽 주민의 이동 부담을 줄이기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "자원봉사자를 교체하기 위해"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "버스를 두 번 타야 한다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "지원금이 여섯 달치뿐이라는 사실은 무엇을 시사하나요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도서관은 반드시 폐쇄된다"
+        },
+        {
+          "id": "a2",
+          "text": "대여는 여섯 달만 무료다"
+        },
+        {
+          "id": "a3",
+          "text": "장기 운영 자금은 불확실하다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "시의 지원금은 여섯 달치뿐이다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "재봉틀 대기 명단을 언급한 목적은 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "초기 수요를 보여 주기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "연체료를 설명하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "공구를 비판하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "재봉틀은 대기 명단까지 생겼다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글쓴이는 첫 달의 숫자를 어떻게 보나요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "영구적 성공의 증거로 본다"
+        },
+        {
+          "id": "a2",
+          "text": "기대하지만 조심스럽게 본다"
+        },
+        {
+          "id": "a3",
+          "text": "완전히 부정한다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그러나 이 숫자가 모든 주민의 이용 가능성을 보여 주지는 않는다",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "여기서 « 멀어지게 »는 무슨 뜻인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "물건을 먼 곳으로 옮긴다"
+        },
+        {
+          "id": "a2",
+          "text": "봉사자로 초대한다"
+        },
+        {
+          "id": "a3",
+          "text": "참여하기 어렵게 한다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "가정을 멀어지게 할까 걱정하여",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "시청에 조언하는 글을 쓰고, 장점과 한계를 하나씩 설명하세요."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "canonicalPath": "/practica/coreano/b2/lectura/mulgeon-doseogwan",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

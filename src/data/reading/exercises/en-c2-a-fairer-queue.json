@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-a-fairer-queue",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "ingles C2"
+  },
+  "slug": "a-fairer-queue",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "algorithmic allocation",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una fila más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "A city replaced its first-come, first-served housing queue with a scoring system intended to favour applicants in greatest need. In the first report, officials celebrated a shorter average wait. The number was accurate, but the report did not say whose wait had shortened. Applicants with stable internet connections could correct an incomplete form within hours; those who relied on a public terminal often discovered an error only after the weekly ranking had closed. The council responded by adding an appeal period. That sounded like a remedy, although an appeal can restore a place only after someone has noticed that it was lost. An independent panel proposed publishing the scoring rules. Officials hesitated, fearing that applicants would tailor their answers. The panel replied that secrecy also lets an error masquerade as impartiality. Neither side could promise a system immune to strategic behaviour. The more revealing disagreement concerned what counted as evidence of need: a recent eviction notice, which is easy to verify, or years of precarious arrangements, which rarely produce a tidy document. Calling the first item \"objective\" may be administratively convenient; calling the second \"subjective\" quietly transfers the cost of proof to the person least able to pay it. The queue became faster. Whether it became fairer depends on whom the city has learned to see.",
+    "wordCount": 216,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "scoring system",
+        "lemma": "scoring system",
+        "glosses": {
+          "es": "sistema de puntuación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "appeal period",
+        "lemma": "appeal period",
+        "glosses": {
+          "es": "plazo de apelación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "remedy",
+        "lemma": "remedy",
+        "glosses": {
+          "es": "medida correctiva"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "masquerade",
+        "lemma": "masquerade",
+        "glosses": {
+          "es": "hacerse pasar por"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "precarious",
+        "lemma": "precarious",
+        "glosses": {
+          "es": "inestable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tidy document",
+        "lemma": "tidy document",
+        "glosses": {
+          "es": "documento claro y formal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.4,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Which question does the final sentence reopen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Whether speed measures fairness for everyone"
+        },
+        {
+          "id": "a2",
+          "text": "Whether the queue was legally abolished"
+        },
+        {
+          "id": "a3",
+          "text": "Whether applicants prefer paper forms"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Whether it became fairer depends on whom the city has learned to see",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Who could correct incomplete forms most quickly?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Members of the independent panel"
+        },
+        {
+          "id": "a2",
+          "text": "Applicants with stable internet connections"
+        },
+        {
+          "id": "a3",
+          "text": "Applicants using a public terminal"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Applicants with stable internet connections could correct an incomplete form within hours",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What is the limitation of an appeal period?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It removes all incentives to tailor answers"
+        },
+        {
+          "id": "a2",
+          "text": "It automatically restores every lost place"
+        },
+        {
+          "id": "a3",
+          "text": "It helps only those who discover a loss"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "an appeal can restore a place only after someone has noticed that it was lost",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why contrast eviction notices with precarious arrangements?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To question what the system recognises as evidence"
+        },
+        {
+          "id": "a2",
+          "text": "To recommend abandoning all documents"
+        },
+        {
+          "id": "a3",
+          "text": "To compare two legal definitions of tenancy"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "years of precarious arrangements, which rarely produce a tidy document",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What does “masquerade as impartiality” convey?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Admiration for the scoring formula"
+        },
+        {
+          "id": "a2",
+          "text": "Scepticism about hidden rules being neutral"
+        },
+        {
+          "id": "a3",
+          "text": "Confidence that secrecy prevents mistakes"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "secrecy also lets an error masquerade as impartiality",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does “tidy” imply about the document here?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Clean but illegible"
+        },
+        {
+          "id": "a2",
+          "text": "Irrelevant to any decision"
+        },
+        {
+          "id": "a3",
+          "text": "Easy to present and verify"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "rarely produce a tidy document",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Assess the claim that transparent rules alone would make the queue fair. Use two distinct passages."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una fila más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/ingles/c2/lectura/a-fairer-queue",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

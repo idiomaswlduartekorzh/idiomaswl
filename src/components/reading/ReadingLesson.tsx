@@ -10,7 +10,7 @@ import { ReadingRecorder } from './ReadingRecorder'
 import { ReadingAiFeedback } from './ReadingAiFeedback'
 import { GERMAN_A1_READING_TASK_ID } from '@/lib/writing-feedback-shared'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
-import { readingExercisePath, readingHubPath } from '@/lib/reading/routes'
+import { LANGUAGE_NAMES, readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
 import { canRenderPdf } from '@/lib/pdf/languages'
@@ -59,6 +59,11 @@ const COPY = {
     reviewRequired: 'This draft needs human language and pedagogy review before publication.',
   },
 } as const
+
+const SKILL_LABELS: Record<TutorLocale, Record<ReadingQuestion['skill'], string>> = {
+  es: { global: 'Idea global', detail: 'Detalle', vocabulary: 'Vocabulario', inference: 'Inferencia', organization: 'Organización', reference: 'Referencia', purpose: 'Propósito', tone: 'Tono' },
+  en: { global: 'Main idea', detail: 'Detail', vocabulary: 'Vocabulary', inference: 'Inference', organization: 'Organization', reference: 'Reference', purpose: 'Purpose', tone: 'Tone' },
+}
 
 type StoredAnswer = string | boolean | string[]
 
@@ -348,7 +353,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
               style={{ textDecoration: 'none' }}
             >
               <span>{index + 1}</span>
-              <div><b>{localized(item.content.title, locale)}</b><small>{item.content.estimatedMinutes} min · {item.content.wordCount} {copy.words}</small></div>
+              <div><b>{localized(item.content.title, locale)}</b><small>{item.content.estimatedMinutes} min · {item.content.wordCount} {item.language === 'ja' ? 'caracteres' : item.language === 'ko' ? 'eojeol' : copy.words}</small></div>
             </Link>
           ))}
         </section>
@@ -356,12 +361,12 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
 
       <article className={`listen-work ${styles.lessonWork}`}>
         <Link href={hubHref} className="listen-back"><ArrowLeft size={14} /> {copy.back}</Link>
-        <p className="eyebrow"><span className="ink-line" />{copy.eyebrowLabel} · {exercise.level.cefr} · {copy.textWord} {currentIndex + 1} {copy.of} {siblings.length || 1}</p>
+        <p className="eyebrow"><span className="ink-line" />{locale === 'es' ? 'Lectura' : 'Reading'} · {LANGUAGE_NAMES[locale][exercise.language]} · {exercise.level.cefr} · {copy.textWord} {currentIndex + 1} {copy.of} {siblings.length || 1}</p>
         <h1>{localized(exercise.content.title, locale)}</h1>
         <p className="listen-objective">{localized(exercise.content.intro, locale)}</p>
         <div className="listen-tags">
           <span>{exercise.classification.topic}</span>
-          <span>{exercise.content.wordCount} {copy.words}</span>
+          <span>{exercise.content.wordCount} {exercise.language === 'ja' ? 'caracteres' : exercise.language === 'ko' ? 'eojeol' : copy.words}</span>
           <span>~{exercise.content.estimatedMinutes} min</span>
           {exercise.content.grammarFocus?.[0] && <span>{exercise.content.grammarFocus[0]}</span>}
           {exercise.status !== 'published' && <span>{copy.preview}</span>}
@@ -447,7 +452,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
             const options = shuffledOptions.get(question.id) ?? []
             return (
             <div key={question.id} className={styles.questionWrap}>
-              <p className={styles.questionLabel}>{question.skill} · {copy.question} {index + 1}</p>
+              <p className={styles.questionLabel}>{SKILL_LABELS[locale][question.skill]} · {copy.question} {index + 1}</p>
               {question.type === 'ordering' ? (
                 <OrderingQuestion key={`${question.id}-${shuffleSeed}`} question={question} locale={locale} options={options} value={answers[question.id]} onAnswer={(value) => answerQuestion(question, value)} />
               ) : (

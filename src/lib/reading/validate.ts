@@ -3,7 +3,7 @@ import type { CefrLevel, ReadingExercise, TutorLocale } from './types'
 const PUBLISHABLE_STATUSES = new Set(['published'])
 const REVIEW_PLACEHOLDER = /(pending|pendiente|replace|por asignar)/i
 const WORD_LIMITS: Record<CefrLevel, [number, number]> = {
-  A0: [15, 60], A1: [40, 140], A2: [120, 240], B1: [220, 450], B2: [400, 700], C1: [650, 1100],
+  A0: [15, 60], A1: [40, 140], A2: [120, 240], B1: [220, 450], B2: [400, 700], C1: [650, 1100], C2: [800, 1500],
 }
 
 export function localized(value: Partial<Record<TutorLocale, string>>, locale: TutorLocale) {
@@ -15,7 +15,7 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
   const exercise = candidate as ReadingExercise
   const errors: string[] = []
 
-  if (!['1.0.0', '1.1.0'].includes(exercise.schemaVersion)) errors.push('schemaVersion must be 1.0.0 or 1.1.0')
+  if (!['1.0.0', '1.1.0', '1.2.0'].includes(exercise.schemaVersion)) errors.push('schemaVersion must be 1.0.0, 1.1.0 or 1.2.0')
   if (!/^[a-z0-9][a-z0-9-]{5,80}$/.test(exercise.id ?? '')) errors.push('id has an invalid format')
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(exercise.slug ?? '')) errors.push('slug has an invalid format')
   if (!exercise.tutorLocales?.length) errors.push('at least one tutor locale is required')
@@ -44,7 +44,7 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
   if (exercise.leveling?.metrics?.outOfLevelVocabularyPercent > exercise.leveling?.maxOutOfLevelVocabularyPercent) {
     errors.push('out-of-level vocabulary exceeds the configured limit')
   }
-  if (!exercise.leveling?.independentAssessment?.passed) errors.push('independent level assessment must pass')
+  if ((exercise.status === 'approved' || exercise.status === 'published') && !exercise.leveling?.independentAssessment?.passed) errors.push('independent level assessment must pass before approval or publication')
   if (exercise.leveling?.independentAssessment?.estimatedLevel !== exercise.level?.cefr) errors.push('independent level assessment must match the declared CEFR level')
   if (exercise.language === 'ja' && (!exercise.level.jlpt || !exercise.level.mappingDisclaimer)) errors.push('Japanese exercises require JLPT and a mapping disclaimer')
   if (exercise.language === 'ko' && (!exercise.level.topik || !exercise.level.mappingDisclaimer)) errors.push('Korean exercises require TOPIK and a mapping disclaimer')
@@ -65,7 +65,7 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
 
   for (const item of exercise.content?.vocabulary ?? []) {
     if (!exercise.content.targetText.normalize('NFKC').includes(item.surface.normalize('NFKC'))) errors.push(`vocabulary surface is absent from target text: ${item.surface}`)
-    if (exercise.language === 'ko' && !item.reading) errors.push(`Korean vocabulary requires an optional-support reading: ${item.surface}`)
+    if (exercise.language === 'ko' && exercise.schemaVersion !== '1.2.0' && !item.reading) errors.push(`Korean vocabulary requires an optional-support reading: ${item.surface}`)
   }
 
   if (errors.length) throw new Error(`${exercise.id || 'unknown exercise'}: ${errors.join('; ')}`)

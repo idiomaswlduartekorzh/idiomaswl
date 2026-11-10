@@ -1,6 +1,6 @@
 export type TutorLocale = 'es' | 'en'
 export type ReadingLanguage = 'en' | 'fr' | 'it' | 'de' | 'ru' | 'ja' | 'ko' | 'pt'
-export type CefrLevel = 'A0' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1'
+export type CefrLevel = 'A0' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2'
 export type ReadingStatus = 'draft' | 'review' | 'approved' | 'published' | 'retired'
 export type ReadingReviewDecision = 'pending' | 'changes-requested' | 'approved'
 export type ReadingSkill = 'global' | 'detail' | 'vocabulary' | 'inference' | 'organization' | 'reference' | 'purpose' | 'tone'
@@ -46,10 +46,9 @@ export type ReadingQuestion = {
 }
 
 export type ReadingExercise = {
-  // 1.0.0 son las 30 lecturas de inglés ya publicadas. 1.1.0 es el blueprint multiidioma:
-  // mismo esquema, pero con reglas de acompasamiento con gramática y de longitud que
-  // impone el guardián (scripts/lib/reading-blueprint.mjs).
-  schemaVersion: '1.0.0' | '1.1.0'
+  // 1.0.0 cubre el legado de inglés; 1.1.0 el blueprint A1–B1; 1.2.0 el piloto
+  // editorial B2–C2, aún sin evaluación independiente ni publicación.
+  schemaVersion: '1.0.0' | '1.1.0' | '1.2.0'
   id: string
   status: ReadingStatus
   language: ReadingLanguage

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-une-file-plus-juste",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "frances C2"
+  },
+  "slug": "une-file-plus-juste",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "attribution algorithmique",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una fila más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "La ville a remplacé l’ordre d’arrivée des demandes de logement par un classement censé favoriser les situations les plus urgentes. Son premier bilan célébrait une attente moyenne plus courte. Le chiffre était exact; il ne disait pas de qui l’attente avait diminué. Avec une connexion stable, un candidat corrigeait un dossier incomplet en quelques heures. À la borne publique, l’erreur n’apparaissait parfois qu’après la clôture hebdomadaire du classement. La mairie a ajouté un délai de recours. Ce correctif ne rend toutefois une place perdue qu’à celui qui sait l’avoir perdue. Un comité indépendant a demandé la publication des critères. Les responsables craignaient que les candidats adaptent leurs réponses; le comité rappelait que le secret permet aussi à une erreur de se donner pour neutralité. Aucun camp ne promettait un système à l’abri des stratégies. Le désaccord le plus révélateur portait sur la preuve du besoin: un avis d’expulsion récent, facile à vérifier, ou des années d’hébergement précaire, rarement résumées dans un document net. Qualifier le premier d’« objectif » facilite le travail administratif. Qualifier le second de « subjectif » transfère discrètement la charge de la preuve à ceux qui peuvent le moins la porter. La file avance plus vite. Pour savoir si elle est plus juste, il faut demander qui devient visible dans ses dossiers.",
+    "wordCount": 216,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "classement",
+        "lemma": "classement",
+        "glosses": {
+          "es": "clasificación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "borne publique",
+        "lemma": "borne publique",
+        "glosses": {
+          "es": "terminal público"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "délai de recours",
+        "lemma": "délai de recours",
+        "glosses": {
+          "es": "plazo de recurso"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "neutralité",
+        "lemma": "neutralité",
+        "glosses": {
+          "es": "neutralidad"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hébergement précaire",
+        "lemma": "hébergement précaire",
+        "glosses": {
+          "es": "alojamiento precario"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "charge de la preuve",
+        "lemma": "charge de la preuve",
+        "glosses": {
+          "es": "carga de la prueba"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 14.4,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Que remet en question la dernière phrase ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L’équivalence entre rapidité et justice"
+        },
+        {
+          "id": "a2",
+          "text": "La légalité de toute liste d’attente"
+        },
+        {
+          "id": "a3",
+          "text": "Le coût des bornes publiques"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "qui devient visible dans ses dossiers",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Qui pouvait corriger rapidement un dossier ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un membre du comité"
+        },
+        {
+          "id": "a2",
+          "text": "Un candidat avec une connexion stable"
+        },
+        {
+          "id": "a3",
+          "text": "Un candidat à la borne publique"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Avec une connexion stable, un candidat corrigeait un dossier incomplet en quelques heures",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle limite présente le délai de recours ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il interdit toute adaptation des réponses"
+        },
+        {
+          "id": "a2",
+          "text": "Il rétablit automatiquement chaque place"
+        },
+        {
+          "id": "a3",
+          "text": "Il suppose que la perte soit connue"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "qu’à celui qui sait l’avoir perdue",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi opposer expulsion et hébergement précaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour interroger la définition administrative de la preuve"
+        },
+        {
+          "id": "a2",
+          "text": "Pour supprimer tous les documents"
+        },
+        {
+          "id": "a3",
+          "text": "Pour comparer deux quartiers"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "rarement résumées dans un document net",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Que suggère « se donner pour neutralité » ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une admiration pour le classement"
+        },
+        {
+          "id": "a2",
+          "text": "Une méfiance envers l’opacité des critères"
+        },
+        {
+          "id": "a3",
+          "text": "Une confiance totale dans le secret"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "le secret permet aussi à une erreur de se donner pour neutralité",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dans ce contexte, que signifie « net » ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Propre mais illisible"
+        },
+        {
+          "id": "a2",
+          "text": "Sans rapport avec la demande"
+        },
+        {
+          "id": "a3",
+          "text": "Clair et vérifiable"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "un document net",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Évaluez l’idée que publier les critères suffirait à rendre la file juste."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una fila más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/frances/c2/lectura/une-file-plus-juste",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

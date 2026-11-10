@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c1-dve-tablichki",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "ruso C1"
+  },
+  "slug": "dve-tablichki",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "музейная память",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos cartelas para un mapa"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "После открытия обновлённого музея возле старой карты появились две таблички. Первая называла автора и дату, вторая объясняла, что торговые маршруты компании опирались на подневольный труд. Одни посетители приветствовали давно необходимое дополнение. Другие возражали: нельзя требовать от одного предмета ответа за целую политическую историю. Хранительница оставила обе таблички. Точность описания предмета и исторический контекст, по её словам, являются разными обязанностями. Но новое описание обнаружило вопросы, на которые короткий текст не отвечает. Как карта попала в музей? Кто сегодня просит доступ к оригиналу? Почему цифровую копию увидеть проще? Музей обещал опубликовать документы о приобретении после проверки имён в архивах, где работников нередко записывали под номерами. Критик назвал задержку новым молчанием; хранительница отказалась заменять одно упрощение другим. Посетитель остаётся перед картой и двумя табличками, а рядом будто сохраняется место для рассказа, который ещё не написан.",
+    "wordCount": 132,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "таблички",
+        "lemma": "таблички",
+        "glosses": {
+          "es": "cartelas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "подневольный труд",
+        "lemma": "подневольный труд",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "хранительница",
+        "lemma": "хранительница",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "приобретении",
+        "lemma": "приобретении",
+        "glosses": {
+          "es": "adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "архивах",
+        "lemma": "архивах",
+        "glosses": {
+          "es": "archivos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "упрощение",
+        "lemma": "упрощение",
+        "glosses": {
+          "es": "simplificación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 10.2,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какое противоречие организует текст?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Точность описания и исторический контекст"
+        },
+        {
+          "id": "a2",
+          "text": "Цена копий и билетов"
+        },
+        {
+          "id": "a3",
+          "text": "Возраст карты и здания"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "являются разными обязанностями",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что музей обещал опубликовать?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Список посетителей"
+        },
+        {
+          "id": "a2",
+          "text": "Документы о приобретении"
+        },
+        {
+          "id": "a3",
+          "text": "Новую карту маршрутов"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "опубликовать документы о приобретении",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему проверка имён сложна?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "На карте нет даты"
+        },
+        {
+          "id": "a2",
+          "text": "Посетители не любят архивы"
+        },
+        {
+          "id": "a3",
+          "text": "В архивах людей заменяли номерами"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "работников нередко записывали под номерами",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем в конце оставлено место?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы показать незавершённость рассказа"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы описать украденную картину"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы похвалить оформление"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "место для рассказа, который ещё не написан",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как представлены две позиции?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Хранительница несомненно права"
+        },
+        {
+          "id": "a2",
+          "text": "Ни одна не решает проблему целиком"
+        },
+        {
+          "id": "a3",
+          "text": "Критик высмеян"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "короткий текст не отвечает",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что значит « давно необходимое »?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Посещение длилось долго"
+        },
+        {
+          "id": "a2",
+          "text": "Карта приехала поздно"
+        },
+        {
+          "id": "a3",
+          "text": "Дополнение следовало сделать раньше"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "давно необходимое дополнение",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Объясните, достаточно ли двух табличек сейчас, учитывая сильное возражение."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/ruso/c1/lectura/dve-tablichki",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

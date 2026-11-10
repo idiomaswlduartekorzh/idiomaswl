@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-zwei-beschriftungen",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "aleman C1"
+  },
+  "slug": "zwei-beschriftungen",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "Museumsdeutung",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos etiquetas para un mapa"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "Als das Regionalmuseum wieder öffnete, hing neben einer alten Karte nicht mehr nur eine Beschriftung, sondern zwei. Die erste nannte Zeichner und Entstehungsjahr. Die zweite erklärte, dass die Handelswege der damaligen Gesellschaft auf Zwangsarbeit beruhten. Manche Besucher begrüßten den längst überfälligen Hinweis. Andere fanden, ein einzelnes Objekt solle nicht für eine ganze politische Geschichte stehen müssen. Die Kuratorin behielt beide Texte bei. Genauigkeit über das Objekt und historischer Zusammenhang seien unterschiedliche Pflichten, sagte sie. Allerdings machte die neue Beschriftung sichtbar, was sie nicht beantworten konnte: Wie gelangte die Karte ins Museum? Wer möchte heute Zugang zum Original? Warum ist die digitale Kopie leichter zugänglich? Das Museum versprach, die Erwerbsakten zu veröffentlichen, sobald Namen in Unterlagen überprüft seien, die Arbeiter oft nur als Nummern erfassten. Ein Kritiker nannte die Verzögerung erneutes Schweigen. Die Kuratorin wollte jedoch keine Vereinfachung durch die nächste ersetzen. Am Ende steht der Besucher vor einer Karte, zwei Beschriftungen und einer Lücke, die vielleicht einmal eine ausführlichere Geschichte füllt.",
+    "wordCount": 161,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Beschriftung",
+        "lemma": "Beschriftung",
+        "glosses": {
+          "es": "cartela"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zwangsarbeit",
+        "lemma": "Zwangsarbeit",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "überfälligen",
+        "lemma": "überfälligen",
+        "glosses": {
+          "es": "pendiente desde hace tiempo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kuratorin",
+        "lemma": "Kuratorin",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Erwerbsakten",
+        "lemma": "Erwerbsakten",
+        "glosses": {
+          "es": "expedientes de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verzögerung",
+        "lemma": "Verzögerung",
+        "glosses": {
+          "es": "demora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 11.5,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welche Spannung bestimmt den Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Objektgenauigkeit und historischer Zusammenhang"
+        },
+        {
+          "id": "a2",
+          "text": "Digitalisierung und Eintrittspreise"
+        },
+        {
+          "id": "a3",
+          "text": "Kartenalter und Gebäudealter"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "unterschiedliche Pflichten",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was hat das Museum versprochen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Das Original zu verkaufen"
+        },
+        {
+          "id": "a2",
+          "text": "Die Erwerbsakten zu veröffentlichen"
+        },
+        {
+          "id": "a3",
+          "text": "Die erste Beschriftung zu entfernen"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "die Erwerbsakten zu veröffentlichen",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum ist die Prüfung der Namen schwierig?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Karte hat kein Datum"
+        },
+        {
+          "id": "a2",
+          "text": "Besucher lehnen Akten ab"
+        },
+        {
+          "id": "a3",
+          "text": "Unterlagen reduzierten Menschen auf Nummern"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Arbeiter oft nur als Nummern erfassten",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welche Funktion hat die Lücke am Schluss?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie verweist auf eine unvollständige Erzählung"
+        },
+        {
+          "id": "a2",
+          "text": "Sie bezeichnet ein gestohlenes Bild"
+        },
+        {
+          "id": "a3",
+          "text": "Sie lobt den Raumplan"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "einer Lücke, die vielleicht einmal eine ausführlichere Geschichte füllt",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie behandelt der Text Kritiker und Kuratorin?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Kuratorin hat eindeutig recht"
+        },
+        {
+          "id": "a2",
+          "text": "Keine Position löst alles"
+        },
+        {
+          "id": "a3",
+          "text": "Der Kritiker wird verspottet"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "was sie nicht beantworten konnte",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet „überfällig“ im Zusammenhang?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Karte kam zu spät an"
+        },
+        {
+          "id": "a2",
+          "text": "Das Museum schuldet Geld"
+        },
+        {
+          "id": "a3",
+          "text": "Der Hinweis hätte früher kommen sollen"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "längst überfälligen Hinweis",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Erörtern Sie, ob die beiden Beschriftungen vorerst genügen."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dos etiquetas para un mapa | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/aleman/c1/lectura/zwei-beschriftungen",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

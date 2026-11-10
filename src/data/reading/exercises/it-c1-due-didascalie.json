@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-due-didascalie",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italiano C1"
+  },
+  "slug": "due-didascalie",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "memoria museale",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos cartelas para un mapa"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "Alla riapertura del museo regionale, una vecchia carta geografica era accompagnata da due didascalie. La prima indicava autore e data; la seconda spiegava che le rotte tracciate per una compagnia commerciale dipendevano dal lavoro forzato. Alcuni visitatori hanno accolto l’aggiunta come un contesto necessario da tempo. Altri hanno accusato il museo di chiedere a un oggetto di rappresentare un’intera storia politica. La curatrice ha mantenuto entrambe le didascalie: precisione materiale e contesto storico, sostiene, sono obblighi diversi. La novità ha però reso visibile una domanda più difficile. Come entrò la carta nella collezione? Chi chiede oggi di consultarla? Perché una copia digitale è più accessibile dell’originale? Il museo promette di pubblicare i registri d’acquisto dopo aver controllato i nomi in documenti che spesso riducevano i lavoratori a numeri. Un critico chiama il ritardo un altro silenzio; la curatrice rifiuta di sostituire una semplificazione con un’altra. Davanti alla carta, il visitatore vede due testi e uno spazio che una spiegazione più completa potrebbe un giorno occupare.",
+    "wordCount": 165,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "didascalie",
+        "lemma": "didascalie",
+        "glosses": {
+          "es": "cartelas explicativas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rotte",
+        "lemma": "rotte",
+        "glosses": {
+          "es": "rutas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lavoro forzato",
+        "lemma": "lavoro forzato",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "curatrice",
+        "lemma": "curatrice",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "registri d’acquisto",
+        "lemma": "registri d’acquisto",
+        "glosses": {
+          "es": "registros de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "semplificazione",
+        "lemma": "semplificazione",
+        "glosses": {
+          "es": "simplificación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.8,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quale tensione regge il testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Precisione dell’oggetto e contesto storico"
+        },
+        {
+          "id": "a2",
+          "text": "Prezzo delle copie e biglietti"
+        },
+        {
+          "id": "a3",
+          "text": "Età della carta e dell’edificio"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "precisione materiale e contesto storico, sostiene, sono obblighi diversi",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Che cosa promette il museo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Di vendere la carta"
+        },
+        {
+          "id": "a2",
+          "text": "Di pubblicare i registri d’acquisto"
+        },
+        {
+          "id": "a3",
+          "text": "Di togliere la prima didascalia"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "promette di pubblicare i registri d’acquisto",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché controllare i nomi è difficile?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La carta è senza data"
+        },
+        {
+          "id": "a2",
+          "text": "I visitatori non vogliono archivi"
+        },
+        {
+          "id": "a3",
+          "text": "I documenti riducevano persone a numeri"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "riducevano i lavoratori a numeri",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché compare uno spazio nel finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per suggerire che il racconto è incompleto"
+        },
+        {
+          "id": "a2",
+          "text": "Per descrivere un quadro rubato"
+        },
+        {
+          "id": "a3",
+          "text": "Per lodare l’allestimento"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "uno spazio che una spiegazione più completa potrebbe un giorno occupare",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Come vengono trattate le due posizioni?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La curatrice ha certamente ragione"
+        },
+        {
+          "id": "a2",
+          "text": "Nessuna risolve tutto"
+        },
+        {
+          "id": "a3",
+          "text": "Il critico è liquidato"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "rifiuta di sostituire una semplificazione con un’altra",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Che cosa suggerisce « da tempo »?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La visita è durata molto"
+        },
+        {
+          "id": "a2",
+          "text": "La carta è arrivata tardi"
+        },
+        {
+          "id": "a3",
+          "text": "Il chiarimento era atteso già prima"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "necessario da tempo",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Spiega se le due didascalie bastano, considerando una forte obiezione."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/italiano/c1/lectura/due-didascalie",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

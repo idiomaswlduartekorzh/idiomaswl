@@ -113,6 +113,8 @@ pierde ese ejemplo en el PDF, y el propio PDF lo dice.
 
 ## Pendiente
 
+- El piloto de Reading B2–C2 añadió caracteres japoneses y coreanos. Los recortes `welearn-ja-{400,700}.ttf` y `welearn-ko-{400,700}.ttf` se regeneraron el 10 de noviembre de 2026 desde Noto Sans oficiales; `check:pdf-fonts` confirmó cobertura. Las fuentes rusas existentes ya cubrían el texto nuevo y se conservaron.
+
 - **Escucha general de idiomas** aún no tiene PDF. Los PDF de IELTS Listening,
   Goethe Hören y TOEFL Listening son hojas de preguntas; el audio está en la web.
 - **Vocabulario** solo tiene datos de inglés A1 y A2. El generador ya sirve para

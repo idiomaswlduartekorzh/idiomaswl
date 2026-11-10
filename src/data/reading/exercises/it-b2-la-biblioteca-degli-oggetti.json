@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-la-biblioteca-degli-oggetti",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italiano B2"
+  },
+  "slug": "la-biblioteca-degli-oggetti",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "prestito di oggetti",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La biblioteca de objetos"
+    },
+    "intro": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "mission": {
+      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+    },
+    "targetText": "La biblioteca degli oggetti presta attrezzi, utensili da cucina e tende da campeggio. Comprare un trapano per usarlo una volta all’anno sembra uno spreco; prenderlo in prestito è più economico. Nel primo mese sono stati prestati oltre trecento oggetti, e la lista d’attesa per le macchine da cucire è cresciuta. Tuttavia i numeri nascondono un problema: quasi tutti gli utenti abitano vicino al centro. Chi vive nei quartieri periferici deve prendere due autobus per restituire un oggetto pesante. Gli organizzatori propongono tre punti di ritiro, ma il comune finanzierà il progetto soltanto per sei mesi. Un volontario suggerisce multe per i ritardi; il gruppo teme però di escludere proprio le famiglie che voleva aiutare. Per ora prova promemoria e scadenze flessibili. Il successo dipenderà meno dal numero di trapani prestati quest’inverno che dalla possibilità, per chi oggi è lontano, di usare il servizio l’anno prossimo.",
+    "wordCount": 145,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "argumentación y concesión"
+    ],
+    "vocabulary": [
+      {
+        "surface": "presta",
+        "lemma": "presta",
+        "glosses": {
+          "es": "presta"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trapano",
+        "lemma": "trapano",
+        "glosses": {
+          "es": "taladro"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spreco",
+        "lemma": "spreco",
+        "glosses": {
+          "es": "desperdicio"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lista d’attesa",
+        "lemma": "lista d’attesa",
+        "glosses": {
+          "es": "lista de espera"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quartieri periferici",
+        "lemma": "quartieri periferici",
+        "glosses": {
+          "es": "barrios periféricos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scadenze flessibili",
+        "lemma": "scadenze flessibili",
+        "glosses": {
+          "es": "plazos flexibles"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+    },
+    "allowedGrammar": [
+      "argumentación y concesión"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è la preoccupazione principale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L’accessibilità futura del servizio"
+        },
+        {
+          "id": "a2",
+          "text": "La scomparsa dei libri"
+        },
+        {
+          "id": "a3",
+          "text": "Il prezzo delle macchine da cucire"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "di usare il servizio l’anno prossimo",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché servono punti di ritiro?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per vendere gli oggetti pesanti"
+        },
+        {
+          "id": "a2",
+          "text": "Per raggiungere i quartieri lontani"
+        },
+        {
+          "id": "a3",
+          "text": "Per sostituire i volontari"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "deve prendere due autobus per restituire un oggetto pesante",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Che cosa implica il finanziamento di sei mesi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il servizio chiuderà sicuramente"
+        },
+        {
+          "id": "a2",
+          "text": "I prestiti sono gratuiti solo per sei mesi"
+        },
+        {
+          "id": "a3",
+          "text": "Il futuro economico resta incerto"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "finanzierà il progetto soltanto per sei mesi",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché si cita la lista d’attesa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per mostrare la domanda iniziale"
+        },
+        {
+          "id": "a2",
+          "text": "Per criticare gli attrezzi"
+        },
+        {
+          "id": "a3",
+          "text": "Per spiegare le multe"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la lista d’attesa per le macchine da cucire è cresciuta",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Come considera l’autore i primi numeri?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Come garanzia definitiva"
+        },
+        {
+          "id": "a2",
+          "text": "Con ottimismo prudente"
+        },
+        {
+          "id": "a3",
+          "text": "Con totale sfiducia"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Tuttavia i numeri nascondono un problema",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Che cosa significa « escludere » qui?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Offrire più oggetti"
+        },
+        {
+          "id": "a2",
+          "text": "Chiedere aiuto ai volontari"
+        },
+        {
+          "id": "a3",
+          "text": "Impedire la partecipazione"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "di escludere proprio le famiglie",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un consiglio al comune usando un vantaggio e un limite del progetto."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "canonicalPath": "/practica/italiano/b2/lectura/la-biblioteca-degli-oggetti",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-die-bibliothek-der-dinge",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "aleman B2"
+  },
+  "slug": "die-bibliothek-der-dinge",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "Leihangebote",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La biblioteca de las cosas"
+    },
+    "intro": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "mission": {
+      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+    },
+    "targetText": "Die neue Bibliothek der Dinge verleiht Werkzeuge, Küchengeräte und Zelte. Eine Bohrmaschine für einen einzigen Einsatz im Jahr zu kaufen, erscheint teuer und verschwenderisch. Im ersten Monat wurden über dreihundert Gegenstände ausgeliehen; für Nähmaschinen entstand sogar eine Warteliste. Doch diese Zahlen verdecken ein Problem. Die meisten Nutzer wohnen im Zentrum. Wer am Stadtrand lebt, muss einen schweren Gegenstand mit zwei Bussen zurückbringen. Deshalb plant das Team drei zusätzliche Abholstellen. Die Stadt finanziert sie allerdings nur für sechs Monate. Ein Ehrenamtlicher schlägt Gebühren bei verspäteter Rückgabe vor. Die Organisatoren befürchten, dass solche Strafen gerade jene Familien ausschließen, für die das Angebot gedacht war. Stattdessen testen sie Erinnerungen und flexible Fristen. Entscheidend wird nicht allein sein, wie viele Bohrmaschinen in diesem Winter verliehen werden. Wichtiger ist, ob Menschen aus den äußeren Vierteln den Dienst auch im nächsten Jahr tatsächlich nutzen können.",
+    "wordCount": 139,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "argumentación y concesión"
+    ],
+    "vocabulary": [
+      {
+        "surface": "verleiht",
+        "lemma": "verleiht",
+        "glosses": {
+          "es": "presta"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Bohrmaschine",
+        "lemma": "Bohrmaschine",
+        "glosses": {
+          "es": "taladro"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verschwenderisch",
+        "lemma": "verschwenderisch",
+        "glosses": {
+          "es": "despilfarrador"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Warteliste",
+        "lemma": "Warteliste",
+        "glosses": {
+          "es": "lista de espera"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Abholstellen",
+        "lemma": "Abholstellen",
+        "glosses": {
+          "es": "puntos de recogida"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fristen",
+        "lemma": "Fristen",
+        "glosses": {
+          "es": "plazos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+    },
+    "allowedGrammar": [
+      "argumentación y concesión"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.7,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um Zugänglichkeit und dauerhaften Erfolg"
+        },
+        {
+          "id": "a2",
+          "text": "Um die Abschaffung von Büchern"
+        },
+        {
+          "id": "a3",
+          "text": "Um die Herstellung von Nähmaschinen"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ob Menschen aus den äußeren Vierteln den Dienst auch im nächsten Jahr tatsächlich nutzen können",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum sind zusätzliche Abholstellen geplant?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil Zelte verkauft werden sollen"
+        },
+        {
+          "id": "a2",
+          "text": "Weil Randgebiete schwer erreichbar sind"
+        },
+        {
+          "id": "a3",
+          "text": "Weil Ehrenamtliche ersetzt werden"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "muss einen schweren Gegenstand mit zwei Bussen zurückbringen",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Was bedeutet die Finanzierung für sechs Monate?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Dienst schließt sicher danach"
+        },
+        {
+          "id": "a2",
+          "text": "Nur sechs Monate sind kostenlos"
+        },
+        {
+          "id": "a3",
+          "text": "Die langfristige Finanzierung ist offen"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "finanziert sie allerdings nur für sechs Monate",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Wozu dient die Warteliste im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie zeigt die anfängliche Nachfrage"
+        },
+        {
+          "id": "a2",
+          "text": "Sie erklärt die Rückgabegebühren"
+        },
+        {
+          "id": "a3",
+          "text": "Sie kritisiert das Zentrum"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "für Nähmaschinen entstand sogar eine Warteliste",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewertet der Text die ersten Zahlen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Als endgültigen Beweis"
+        },
+        {
+          "id": "a2",
+          "text": "Vorsichtig positiv"
+        },
+        {
+          "id": "a3",
+          "text": "Völlig ablehnend"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Doch diese Zahlen verdecken ein Problem",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet „ausschließen“ hier?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Zusätzliche Gegenstände geben"
+        },
+        {
+          "id": "a2",
+          "text": "Als Helfer einstellen"
+        },
+        {
+          "id": "a3",
+          "text": "Von der Teilnahme abhalten"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "solche Strafen gerade jene Familien ausschließen",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine Empfehlung an die Stadt mit einem Vorteil und einer Grenze des Projekts."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La biblioteca de las cosas | Lectura B2 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "canonicalPath": "/practica/aleman/b2/lectura/die-bibliothek-der-dinge",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

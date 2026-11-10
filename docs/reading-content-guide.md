@@ -1,5 +1,7 @@
 # Guía para añadir lecturas al motor WeLearn
 
+Para el piloto avanzado B2–C2, consulta también [`reading-advanced-pilot.md`](reading-advanced-pilot.md). Sus 24 fichas son borradores generados desde una fuente editorial y tienen un control adicional; no se publican sin revisión humana y nivelación independiente.
+
 ## Flujo seguro
 
 1. Copia un ejercicio existente dentro de `src/data/reading/exercises/`.

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-eine-gerechtere-warteliste",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "aleman C2"
+  },
+  "slug": "eine-gerechtere-warteliste",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "algorithmische Zuteilung",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una lista de espera más justa"
+    },
+    "intro": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "mission": {
+      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+    },
+    "targetText": "Die Stadt ersetzte ihre Wohnungswarteliste nach Eingangsdatum durch ein Punktesystem, das besonders Bedürftige bevorzugen sollte. Im ersten Bericht feierten die Verantwortlichen eine kürzere durchschnittliche Wartezeit. Die Zahl stimmte; sie verriet nur nicht, wessen Warten kürzer geworden war. Mit stabilem Internet ließ sich ein unvollständiger Antrag binnen Stunden korrigieren. Am öffentlichen Terminal fiel ein Fehler manchmal erst nach der wöchentlichen Rangbildung auf. Die Stadt führte daraufhin eine Einspruchsfrist ein. Ein Einspruch kann jedoch nur einen verlorenen Platz zurückgeben, wenn der Verlust überhaupt bemerkt wird. Ein unabhängiges Gremium verlangte offene Bewertungskriterien. Die Verwaltung fürchtete strategisch angepasste Antworten; das Gremium entgegnete, dass Geheimhaltung auch Fehler als Neutralität erscheinen lässt. Keine Seite versprach ein Verfahren ohne taktisches Verhalten. Der tiefere Streit betraf den Nachweis von Not: Eine aktuelle Räumungsklage ist leicht zu prüfen, jahrelange unsichere Wohnverhältnisse hinterlassen selten ein ordentliches Dokument. Das erste als „objektiv“ und das zweite als „subjektiv“ zu bezeichnen, entlastet die Verwaltung und belastet die Antragsteller, die Beweise am schwersten beschaffen können. Die Liste wurde schneller. Ob sie gerechter wurde, hängt davon ab, wen sie überhaupt sichtbar macht.",
+    "wordCount": 177,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Punktesystem",
+        "lemma": "Punktesystem",
+        "glosses": {
+          "es": "sistema de puntos"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Einspruchsfrist",
+        "lemma": "Einspruchsfrist",
+        "glosses": {
+          "es": "plazo de recurso"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gremium",
+        "lemma": "Gremium",
+        "glosses": {
+          "es": "comité"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Geheimhaltung",
+        "lemma": "Geheimhaltung",
+        "glosses": {
+          "es": "secreto u opacidad"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Räumungsklage",
+        "lemma": "Räumungsklage",
+        "glosses": {
+          "es": "demanda de desalojo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Nachweis",
+        "lemma": "Nachweis",
+        "glosses": {
+          "es": "prueba documental"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+    },
+    "allowedGrammar": [
+      "matices retóricos y ambigüedad controlada"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 12.6,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was hinterfragt der letzte Satz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ob Schnelligkeit für alle Gerechtigkeit bedeutet"
+        },
+        {
+          "id": "a2",
+          "text": "Ob es noch Wohnungen gibt"
+        },
+        {
+          "id": "a3",
+          "text": "Ob Terminals Geld kosten"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "wen sie überhaupt sichtbar macht",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wer konnte Anträge schnell korrigieren?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mitglieder des Gremiums"
+        },
+        {
+          "id": "a2",
+          "text": "Menschen mit stabilem Internet"
+        },
+        {
+          "id": "a3",
+          "text": "Menschen am öffentlichen Terminal"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Mit stabilem Internet ließ sich ein unvollständiger Antrag binnen Stunden korrigieren",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Grenze hat die Einspruchsfrist?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie verhindert jedes taktische Verhalten"
+        },
+        {
+          "id": "a2",
+          "text": "Sie stellt alle Plätze automatisch wieder her"
+        },
+        {
+          "id": "a3",
+          "text": "Der Verlust muss zunächst bemerkt werden"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "wenn der Verlust überhaupt bemerkt wird",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum werden Räumungsklage und unsichere Wohnverhältnisse verglichen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Definition von Beweisen zu prüfen"
+        },
+        {
+          "id": "a2",
+          "text": "Um Dokumente ganz abzuschaffen"
+        },
+        {
+          "id": "a3",
+          "text": "Um Stadtteile zu vergleichen"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "hinterlassen selten ein ordentliches Dokument",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Was legt „als Neutralität erscheinen lässt“ nahe?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Bewunderung für die Formel"
+        },
+        {
+          "id": "a2",
+          "text": "Skepsis gegenüber geheimen Kriterien"
+        },
+        {
+          "id": "a3",
+          "text": "Volles Vertrauen in Geheimhaltung"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Geheimhaltung auch Fehler als Neutralität erscheinen lässt",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet „Nachweis“ hier?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine Gebühr"
+        },
+        {
+          "id": "a2",
+          "text": "Ein Platz auf der Liste"
+        },
+        {
+          "id": "a3",
+          "text": "Ein überprüfbarer Beleg"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Nachweis von Not",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Bewerten Sie, ob offene Kriterien allein eine gerechte Zuteilung sichern würden."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Una lista de espera más justa | Lectura C2 | WeLearn"
+    },
+    "description": {
+      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+    },
+    "canonicalPath": "/practica/aleman/c2/lectura/eine-gerechtere-warteliste",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

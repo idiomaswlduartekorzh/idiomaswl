@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-mono-no-toshokan",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japones B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "La equivalencia CEFR–JLPT es orientativa; requiere validación humana."
+    }
+  },
+  "slug": "mono-no-toshokan",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "物の貸し出し",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La biblioteca de objetos"
+    },
+    "intro": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "mission": {
+      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+    },
+    "targetText": "町の「物の図書館」は、本の代わりに工具や調理器具、テントを貸している。年に一度しか使わないドリルを買うより、借りた方が安く、無駄も少ない。最初の一か月には三百点以上が貸し出され、ミシンには順番待ちができた。しかし、この数字だけでは利用しやすさは分からない。利用者の多くは中心部に住み、郊外の人は重い物を返すためにバスを二台乗り継ぐ。運営チームは三か所に受け渡し場所を設けたいが、市の資金援助は半年分だけだ。返却が遅れた人に罰金を課す案も出たものの、それでは支援したかった家庭を遠ざけかねない。そこで今は通知と柔軟な返却期限を試している。この冬に何台のドリルが借りられたかだけでなく、来年、遠くに住む人も使えるかどうかが成功を決める。",
+    "wordCount": 294,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "argumentación y concesión"
+    ],
+    "vocabulary": [
+      {
+        "surface": "貸し出され",
+        "lemma": "貸し出され",
+        "glosses": {
+          "es": "se prestaron"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "順番待ち",
+        "lemma": "順番待ち",
+        "glosses": {
+          "es": "lista de espera"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "郊外",
+        "lemma": "郊外",
+        "glosses": {
+          "es": "periferia"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "資金援助",
+        "lemma": "資金援助",
+        "glosses": {
+          "es": "financiación"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "罰金",
+        "lemma": "罰金",
+        "glosses": {
+          "es": "multa"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "返却期限",
+        "lemma": "返却期限",
+        "glosses": {
+          "es": "plazo de devolución"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+    },
+    "allowedGrammar": [
+      "argumentación y concesión"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 294,
+      "maxSentenceWords": 294,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が最も重視している点は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "将来も誰もが利用できるか"
+        },
+        {
+          "id": "a2",
+          "text": "本をすべてなくすか"
+        },
+        {
+          "id": "a3",
+          "text": "ミシンの値段が下がるか"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "来年、遠くに住む人も使えるかどうかが成功を決める",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "受け渡し場所を増やす理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "重い物を売るため"
+        },
+        {
+          "id": "a2",
+          "text": "郊外の人の負担を減らすため"
+        },
+        {
+          "id": "a3",
+          "text": "運営者を減らすため"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "バスを二台乗り継ぐ",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "半年分だけの資金援助から何が言えるか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "半年後に必ず閉館する"
+        },
+        {
+          "id": "a2",
+          "text": "貸し出しは半年だけ無料だ"
+        },
+        {
+          "id": "a3",
+          "text": "長期的な運営費はまだ不確かだ"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "市の資金援助は半年分だけだ",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "ミシンの順番待ちは何を示すか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "当初の需要"
+        },
+        {
+          "id": "a2",
+          "text": "罰金の必要性"
+        },
+        {
+          "id": "a3",
+          "text": "工具への反対"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ミシンには順番待ちができた",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者は最初の数字をどう見ているか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "成功の決定的証拠と見ている"
+        },
+        {
+          "id": "a2",
+          "text": "期待しつつ慎重に見ている"
+        },
+        {
+          "id": "a3",
+          "text": "全面的に否定している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この数字だけでは利用しやすさは分からない",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "ここで「遠ざけかねない」は何を意味するか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "遠くまで運ぶ"
+        },
+        {
+          "id": "a2",
+          "text": "新しい利用者を招く"
+        },
+        {
+          "id": "a3",
+          "text": "参加しにくくする可能性がある"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "家庭を遠ざけかねない",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "市への提案を書き、事業の利点と限界を一つずつ述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+    },
+    "canonicalPath": "/practica/japones/b2/lectura/mono-no-toshokan",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}

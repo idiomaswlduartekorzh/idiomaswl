@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-chizu-no-futatsu-no-setsumei",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japones C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "La equivalencia CEFR–JLPT es orientativa; requiere validación humana."
+    }
+  },
+  "slug": "chizu-no-futatsu-no-setsumei",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "博物館と歴史",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "lectura avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos cartelas para un mapa"
+    },
+    "intro": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "mission": {
+      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+    },
+    "targetText": "地域博物館が再開したとき、古い地図の横には説明文が二つ並んでいた。一つは作者と制作年を示し、もう一つは、描かれた商業航路が強制労働に支えられていたことを記していた。遅すぎたとはいえ必要な補足だと歓迎する人もいれば、一枚の地図に政治史全体を背負わせるべきではないと反発する人もいた。学芸員は両方を残した。資料を正確に説明する責任と、その歴史的背景を示す責任は別だという。しかし追加された文章は、短い表示では答えられない問いをかえって浮かび上がらせた。地図はどのように収蔵されたのか。現在、原本へのアクセスを求めているのは誰か。なぜ複製の方が簡単に見られるのか。博物館は取得記録の公開を約束したが、労働者を番号で記した資料の名前を確認する必要があるとした。批評家はその遅れを新たな沈黙と呼び、学芸員は一つの単純化を別の単純化に替えたくないと答えた。来館者の前には地図と二つの説明文、そしてまだ語られていない部分が残る。",
+    "wordCount": 385,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+      }
+    ],
+    "grammarFocus": [
+      "implicaturas y postura del autor"
+    ],
+    "vocabulary": [
+      {
+        "surface": "航路",
+        "lemma": "航路",
+        "glosses": {
+          "es": "rutas marítimas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "強制労働",
+        "lemma": "強制労働",
+        "glosses": {
+          "es": "trabajo forzado"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "学芸員",
+        "lemma": "学芸員",
+        "glosses": {
+          "es": "conservadora"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "収蔵",
+        "lemma": "収蔵",
+        "glosses": {
+          "es": "incorporación a la colección"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "取得記録",
+        "lemma": "取得記録",
+        "glosses": {
+          "es": "registros de adquisición"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "沈黙",
+        "lemma": "沈黙",
+        "glosses": {
+          "es": "silencio"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+    },
+    "allowedGrammar": [
+      "implicaturas y postura del autor"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 385,
+      "maxSentenceWords": 385,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pendiente de evaluación independiente",
+      "assessedAt": "2026-11-10T00:00:00-05:00",
+      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "文章の中心にある緊張関係は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "資料の正確な説明と歴史的背景"
+        },
+        {
+          "id": "a2",
+          "text": "複製の価格と入館料"
+        },
+        {
+          "id": "a3",
+          "text": "地図と建物の古さ"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "責任は別だという",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "博物館は何の公開を約束したか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "来館者名簿"
+        },
+        {
+          "id": "a2",
+          "text": "取得記録"
+        },
+        {
+          "id": "a3",
+          "text": "新しい航路図"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "取得記録の公開を約束した",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "名前の確認が難しいのはなぜか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地図に日付がないから"
+        },
+        {
+          "id": "a2",
+          "text": "来館者が反対したから"
+        },
+        {
+          "id": "a3",
+          "text": "資料が労働者を番号で扱っていたから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "労働者を番号で記した資料",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Conecta la evidencia con lo que el autor deja implícito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "最後に「まだ語られていない部分」を残す効果は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "説明が未完成だと示す"
+        },
+        {
+          "id": "a2",
+          "text": "盗難事件を暗示する"
+        },
+        {
+          "id": "a3",
+          "text": "展示室を褒める"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "まだ語られていない部分が残る",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Pregunta por qué el autor incluyó ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者は批評家と学芸員をどう扱うか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "学芸員だけを支持する"
+        },
+        {
+          "id": "a2",
+          "text": "どちらも十分な答えとはしない"
+        },
+        {
+          "id": "a3",
+          "text": "批評家を笑う"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "短い表示では答えられない問い",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "ここで「浮かび上がらせた」の意味は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "文字を紙から離した"
+        },
+        {
+          "id": "a2",
+          "text": "地図を高く掲げた"
+        },
+        {
+          "id": "a3",
+          "text": "見えにくかった問題を明らかにした"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "問いをかえって浮かび上がらせた",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+        },
+        "incorrect": {
+          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+        },
+        "strategy": {
+          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "二つの説明文で十分かどうか、反論を一つ取り上げて論じてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Distingue lo que el autor afirma de la posición que deja entrever.",
+      "Cita una frase del texto y explica su importancia."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "Equipo editorial WeLearn — borrador asistido por IA",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-11-10T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+    },
+    "description": {
+      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+    },
+    "canonicalPath": "/practica/japones/c1/lectura/chizu-no-futatsu-no-setsumei",
+    "indexable": false,
+    "lastModified": "2026-11-10T00:00:00-05:00"
+  }
+}
