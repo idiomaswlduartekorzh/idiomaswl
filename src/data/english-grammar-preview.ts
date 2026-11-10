@@ -51,6 +51,7 @@ export type EnglishGrammarResource = {
 
 export function getEnglishGrammarResource(topic: GrammarTopic, level: EnglishGrammarLevel): EnglishGrammarResource {
   const selected = englishTrackExamples(topic)
+  const hasThreePdfSystem = level === 'a1' || isAdvancedPilot(level)
   const definitions = [
     ['modelo-estructura', 'Modelo y estructura'],
     ['contraste-guiado', 'Contraste guiado'],
@@ -60,8 +61,8 @@ export function getEnglishGrammarResource(topic: GrammarTopic, level: EnglishGra
   return {
     studyMinutes: englishStudyMinutes(level),
     pdf: englishGrammarPdf(topic.slug, level),
-    exercisesPdf: isAdvancedPilot(level) ? englishGrammarPdf(topic.slug, level, 'exercises') : undefined,
-    answerKeyPdf: isAdvancedPilot(level) ? englishGrammarPdf(topic.slug, level, 'answer-key') : undefined,
+    exercisesPdf: hasThreePdfSystem ? englishGrammarPdf(topic.slug, level, 'exercises') : undefined,
+    answerKeyPdf: hasThreePdfSystem ? englishGrammarPdf(topic.slug, level, 'answer-key') : undefined,
     audioTracks: isAdvancedPilot(level) ? [] : definitions.map(([id, title], index) => ({
       id,
       title,

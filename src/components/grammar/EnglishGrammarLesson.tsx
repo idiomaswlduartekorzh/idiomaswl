@@ -80,7 +80,7 @@ export default function EnglishGrammarLesson({
             <span><b>{resource.studyMinutes}</b> min</span>
           </div>
         </div>
-        <div className={styles.heroVisual} aria-label={english ? `Visual map for ${topic.shortTitle}` : 'Mapa visual de pronombres ingleses'}>
+        <div className={styles.heroVisual} aria-label={english ? `Visual map for ${topic.shortTitle}` : `Mapa visual de ${topic.shortTitle}`}>
           <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 25% 20%, #ffffff 0 2%, transparent 2.4%), linear-gradient(145deg, #eef3ff 0%, #d8e3fb 48%, #b7c9ee 100%)' }} />
           <div style={{ position: 'absolute', inset: '12% 9% 24%', display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 'clamp(.55rem, 2vw, 1rem)', transform: 'rotate(-2deg)' }}>
             {heroWords(topic).map((word, index) => (
@@ -183,8 +183,8 @@ export default function EnglishGrammarLesson({
             <div className={styles.resourceGrid}>
               <ResourceCard code="WEB" title={english ? 'Interactive lesson' : 'Lección interactiva'} copy={english ? `${topic.practice.levels.length} stages and ${practiceActivityCount} activities already integrated.` : `${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status={english ? 'Ready to review' : 'Lista para revisar'} />
               <ResourceCard code="PDF" title={english ? 'Complete guide' : 'Guía y cuaderno'} copy={english ? 'Full explanation, guided visual map, practice and answer key in one editorial workbook.' : 'Explicación, mapa, práctica y soluciones con la misma jerarquía visual.'} status={english ? 'Download complete PDF' : 'Descargar PDF'} href={resource.pdf} />
-              {resource.exercisesPdf ? <ResourceCard code="WORK" title="Exercises only" copy={`${practiceActivityCount} learning decisions organised for printing, classroom use or independent practice.`} status="Download exercises" href={resource.exercisesPdf} /> : null}
-              {resource.answerKeyPdf ? <ResourceCard code="KEY" title="Answer key" copy="Model answers with a concise explanation of the grammar decision behind each response." status="Download answer key" href={resource.answerKeyPdf} /> : null}
+              {resource.exercisesPdf ? <ResourceCard code="WORK" title={english ? 'Exercises only' : 'Cuaderno de ejercicios'} copy={english ? `${practiceActivityCount} learning decisions organised for printing, classroom use or independent practice.` : `${practiceActivityCount} decisiones organizadas para imprimir, usar en clase o practicar de forma independiente.`} status={english ? 'Download exercises' : 'Descargar ejercicios'} href={resource.exercisesPdf} /> : null}
+              {resource.answerKeyPdf ? <ResourceCard code="KEY" title={english ? 'Answer key' : 'Solucionario razonado'} copy={english ? 'Model answers with a concise explanation of the grammar decision behind each response.' : 'Respuestas modelo con la explicación de la decisión gramatical detrás de cada solución.'} status={english ? 'Download answer key' : 'Descargar soluciones'} href={resource.answerKeyPdf} /> : null}
               {resource.audioTracks.length ? <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" /> : <ResourceCard code="MAP" title={english ? 'Topic infographic' : 'Infografía del tema'} copy={english ? 'Rule, contrast and examples organised for quick review.' : 'Regla, contraste y ejemplos organizados para repasar de una sola mirada.'} status={english ? 'Included in the lesson' : 'Incluida en la lección'} />}
             </div>
             {resource.audioTracks.length ? <AudioDownloads tracks={resource.audioTracks} /> : null}

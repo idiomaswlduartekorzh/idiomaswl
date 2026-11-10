@@ -4,7 +4,7 @@ import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
 const ROOT = process.cwd()
-const expected = { a1: 27, a2: 24, b1: 23 }
+const expected = { a1: 33, a2: 24, b1: 23 }
 const withAssets = process.argv.includes('--assets')
 
 function placeholders(text) {
@@ -86,9 +86,24 @@ for (const level of Object.keys(expected)) {
       interactions += countInteractions(practice)
     }
     assert.ok(interactions >= 28, `${label}: solo ${interactions} interacciones`)
+    if (level === 'a1') {
+      const explanationWords = [topic.description, topic.lead, ...topic.seo.flatMap((section) => section.paragraphs ?? [])].join(' ').split(/\s+/u).filter(Boolean).length
+      const tableCount = 1 + topic.seo.filter((section) => section.table?.length).length
+      const tableRows = topic.guide.table.length + topic.seo.reduce((total, section) => total + (section.table?.length ?? 0), 0)
+      assert.ok(explanationWords >= 600, `${label}: explicación A1 todavía breve (${explanationWords} palabras)`)
+      assert.ok(tableCount >= 5 && tableRows >= 25, `${label}: faltan tablas explicativas A1`)
+      assert.ok(topic.visual.scene.length >= 6, `${label}: mapa visual A1 insuficiente`)
+      assert.ok(topic.guide.decisions.length >= 8, `${label}: ruta de decisión A1 insuficiente`)
+      assert.ok(interactions >= 35, `${label}: práctica A1 insuficiente (${interactions})`)
+    }
     if (withAssets) {
       const file = topic.slug.endsWith(`-${level}`) ? `idiomaswl-${topic.slug}.pdf` : `idiomaswl-${topic.slug}-${level}.pdf`
-      assert.ok(existsSync(path.join(ROOT, 'private', 'site-materials', `ingles-${level}`, 'grammar', file)), `${label}: falta PDF`)
+      const materials = path.join(ROOT, 'private', 'site-materials', `ingles-${level}`, 'grammar')
+      assert.ok(existsSync(path.join(materials, file)), `${label}: falta PDF`)
+      if (level === 'a1') {
+        assert.ok(existsSync(path.join(materials, file.replace(/\.pdf$/u, '-exercises.pdf'))), `${label}: falta cuaderno de ejercicios`)
+        assert.ok(existsSync(path.join(materials, file.replace(/\.pdf$/u, '-answer-key.pdf'))), `${label}: falta solucionario`)
+      }
       for (const audio of ['modelo-estructura', 'contraste-guiado', 'practica-contexto']) {
         assert.ok(existsSync(path.join(ROOT, 'public', 'audio', 'ingles', level, 'grammar', topic.slug, `${audio}.m4a`)), `${label}: falta audio ${audio}`)
       }

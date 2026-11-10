@@ -25,8 +25,10 @@ import possessiveS from './possessive-s'
 import countableUncountable from './countable-uncountable'
 import tellingTime from './telling-time'
 import { possessivePronouns, presentSimpleVsContinuous } from './supplemental-topics'
+import { completionTopics } from './completion-topics'
+import { closeEnglishA1Topic } from './quality-closeout'
 
-const topics: GrammarTopic[] = [
+const existingTopics: GrammarTopic[] = [
   subjectPronouns,
   verbToBe,
   articles,
@@ -54,6 +56,11 @@ const topics: GrammarTopic[] = [
   tellingTime,
   possessivePronouns,
   presentSimpleVsContinuous,
+]
+
+const topics: GrammarTopic[] = [
+  ...existingTopics.map(closeEnglishA1Topic),
+  ...completionTopics,
 ]
 
 export default topics
