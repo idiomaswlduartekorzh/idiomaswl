@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Kartografie des schweigenden Tals",
+      "en": "Die Kartografie des schweigenden Tals"
+    },
+    "intro": {
+      "es": "Eine Analyse über die Diskrepanz zwischen amtlicher Vermessung und mündlicher Überlieferung im alpinen Raum.",
+      "en": "Eine Analyse über die Diskrepanz zwischen amtlicher Vermessung und mündlicher Überlieferung im alpinen Raum."
+    },
+    "mission": {
+      "es": "Lesen Sie die folgende Erzählung über einen kartografischen Konflikt und beantworten Sie im Anschluss die Fragen zum Text.",
+      "en": "Lesen Sie die folgende Erzählung über einen kartografischen Konflikt und beantworten Sie im Anschluss die Fragen zum Text."
+    },
+    "targetText": "Im staubigen Archiv des historischen Vermessungsamtes roch es nach vergilbtem Papier und dem kalten Schweiß vergangener Jahrzehnte. Hannes Becher strich mit dem Daumen über den Rand der Urkunde von achtzehnhundertneunzig, die fein säuberlich mit roter Tinte unterzeichnet war. Die Lithografie zeigte das Obertal in makellosen geometrischen Linien, auf denen der Bergrücken unmissverständlich als „Grenzgrat“ verzeichnet war. Amtlich besiegelt, gedruckt und für unumstößlich erklärt. Hannes schloss kurz die Augen, während das Surren der modernen Leuchtstoffröhre an seinen Nerven zerrte. Draußen vor dem fensterlosen Kellerraum trieb der Herbstwind den Nieselregen gegen die Scheiben der Landeshauptstadt, meilenweit entfernt von jenen windgepeitschten Hängen, um deren Deutungshoheit er nun schon seit Monaten stritt. Seine Aufgabe schien simpel: Er sollte die historischen Flurnamen für das neue digitale Kataster verifizieren. Doch je tiefer er in die Akten eintauchte, desto deutlicher offenbarte sich der Riss zwischen der staatlichen Ordnungswut und der hartnäckigen Realität des Hochgebirges.\n\nEin paar Tage zuvor, bei seiner letzten Begehung vor Ort, hatte ihm der alte Lorenz auf der Alp einen Strich durch die Rechnung gemacht. Lorenz, dessen Familie seit Generationen die steilen Matten bewirtschaftete, hatte nur müde gelächelt, als Hannes ihm die vergilbte Karte unter die Nase gehalten und triumphierend auf den Begriff „Grenzgrat“ gedeutet hatte. Für Lorenz existierte dieses Wort schlicht nicht. In den mündlichen Erzählungen der Dorfbewohner hieß die Formation seit jeher der „Krumme Riss“. Ein Name, der nicht von Grenzziehungen oder territorialen Ansprüchen kündete, sondern von einer gewaltigen, von Gletschern hinterlassenen Narbe im Gestein, die jeden Winter aufs Neue Lawinen ins Tal stürzte. Hannes hatte damals versucht, bürokratische Vernunft walten zu lassen: „Die königliche Kommission hat dies nach strengen trigonometrischen Messungen so festgelegt“, hatte er erklärt. Lorenz hatte sich daraufhin schweigend umgedreht, seine Sense gewetzt und leise gemurmelt, die Kommission habe damals nicht einmal gewusst, wo im Frühjahr das Schmelzwasser versickerte, geschweige denn, wie man mit den tückischen Fallwinden umging.\n\nDas Dilemma spitzte sich zu, als Hannes am Abend vor dem finalen Redaktionsschluss des Katasters an seinem Schreibtisch saß und die Argumente abwägte. Die Befürworter der amtlichen Nomenklatur argumentierten stets mit Rechtssicherheit und der Notwendigkeit einer standardisierten Geografie, die Fehlinterpretationen bei Rettungseinsätzen ausschloss. Wer im Notfall nach einem „Grenzgrat“ suche, dürfe nicht vor einer Wand stehen, die die Einheimischen völlig anders nannten. Doch Hannes spürte das Gewicht der Verantwortung gegenüber der lokalen Identität. Jedes Mal, wenn ein alter Flurname getilgt wurde, starb ein Stück sprachlicher Sedimentierung, das tiefere Einblicke in das ökologische Verständnis der Vorfahren bot. Der amtliche Begriff war ein Produkt am Reißbrett, während der volkstümliche Name eine lebendige Beziehung zur Landschaft darstellte. Zwar ließe sich einwenden, dass moderne Navigationssysteme ohnehin auf exakte Koordinaten und nicht auf poetische Flurnamen angewiesen sind, weshalb die bürokratische Vereinheitlichung letztlich harmlos erscheine. Dennoch wog der Verlust schwer, denn Sprache prägt das Bewusstsein, mit dem Menschen ihre Umwelt bewirtschaften und schützen.\n\nAm nächsten Morgen traf Hannes im Sitzungssaal auf seine Vorgesetzten, die bereits ungeduldig auf das finale digitale Kartenwerk warteten. Die Projektleiterin, Frau Dr. Meinhardt, blätterte ohne Regung durch die ausgedruckten Entwürfe, bis ihr Blick auf die handschriftlichen Notizen in der Randspalte fiel, die Hannes dort hinterlassen hatte. Er hatte den Mut aufgebracht, in der digitalen Datenbank nicht den „Grenzgrat“, sondern den „Krummen Riss“ als primäre Bezeichnung zu hinterlegen, ergänzt durch einen unscheinbaren historischen Vermerk im Anhang. Im Raum entstand eine angespannte Stille, die nur vom Summen des Projektors unterbrochen wurde. Meinhardt blickte von den Blättern auf und musterte ihn kühl. Die Diskussion, die darauf folgte, drehte sich nicht mehr um technische Standards, sondern um die Frage, ob man bürokratische Kontinuität über das kulturelle Gedächtnis einer Talgemeinde stellen durfte.\n\nAm Ende des Tages stand kein klarer Sieg für eine der beiden Parteien, sondern ein brüchiger Kompromiss, der die Unvereinbarkeit beider Welten nur mühsam kaschierte. Der offizielle Name blieb zwar in den Hauptregistern erhalten, um das juristische Gefüge nicht zu gefährden, doch im interaktiven Atlas wurde der „Krumme Riss“ als gleichberechtigte lokale Variante verankert. Hannes packte seine Aktenkoffer zusammen und trat hinaus in den kühlen Abend. Er wusste, dass das Papier geduldig war und die Server des Katasteramts die Daten unendlich oft duplizieren konnten, aber draußen im Hochgebirge würde der Wind weiterhin pfeifen, unbeeindruckt davon, ob die Menschen nun eine Grenze zogen oder eine Narbe im Stein besangen.",
+    "wordCount": 702,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Deutungshoheit",
+        "lemma": "Deutungshoheit",
+        "glosses": {
+          "es": "interpretative dominance / authority",
+          "en": "interpretative dominance / authority"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ordnungswut",
+        "lemma": "Ordnungswut",
+        "glosses": {
+          "es": "mania for order / bureaucratic obsession",
+          "en": "mania for order / bureaucratic obsession"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Strich durch die Rechnung",
+        "lemma": "Strich durch die Rechnung",
+        "glosses": {
+          "es": "spanner in the works / disruption of plans",
+          "en": "spanner in the works / disruption of plans"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Sedimentierung",
+        "lemma": "Sedimentierung",
+        "glosses": {
+          "es": "sedimentation (here used metaphorically for language layers)",
+          "en": "sedimentation (here used metaphorically for language layers)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Reißbrett",
+        "lemma": "Reißbrett",
+        "glosses": {
+          "es": "drawing board",
+          "en": "drawing board"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "kaschierte",
+        "lemma": "kaschierte",
+        "glosses": {
+          "es": "concealed / masked",
+          "en": "concealed / masked"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.6,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in der Erzählung im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den Konflikt zwischen amtlicher Kartografie und lokalem Sprachgebrauch."
+        },
+        {
+          "id": "a2",
+          "text": "Um die digitale Modernisierung eines alten Archivs."
+        },
+        {
+          "id": "a3",
+          "text": "Um die juristischen Folgen einer fehlerhaften Grenzziehung im Hochgebirge."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Seine Aufgabe schien simpel: Er sollte die historischen Flurnamen für das neue digitale Kataster verifizieren. Doch je tiefer er in die Akten eintauchte, desto deutlicher offenbarte sich der Riss zwischen der staatlichen Ordnungswut und der hartnäckigen Realität des Hochgebirges.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wie argumentiert der alte Lorenz bezüglich der offiziellen Kommission?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie habe damals schlicht die falschen Messinstrumente verwendet."
+        },
+        {
+          "id": "a2",
+          "text": "Sie habe nicht gewusst, wo das Schmelzwasser versickerte und wie man mit Fallwinden umgeht."
+        },
+        {
+          "id": "a3",
+          "text": "Sie sei absichtlich bestochen worden, um die Grenzen zugunsten des Tals zu verschieben."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Lorenz hatte sich daraufhin schweigend umgedreht, seine Sense gewetzt und leise gemurmelt, die Kommission habe damals nicht einmal gewusst, wo im Frühjahr das Schmelzwasser versickerte, geschweige denn, wie man mit den tückischen Fallwinden umging.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung vertritt Hannes gegenüber dem amtlichen Begriff?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hält ihn für eine notwendige und unfehlbare Errungenschaft der Wissenschaft."
+        },
+        {
+          "id": "a2",
+          "text": "Er ignoriert ihn völlig, da er die Region seit seiner Kindheit genau kennt."
+        },
+        {
+          "id": "a3",
+          "text": "Er betrachtet ihn als ein leblos am Reißbrett entstandenes Produkt, das das kulturelle Gedächtnis zerstört."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Der amtliche Begriff war ein Produkt am Reißbrett, während der volkstümliche Name eine lebendige Beziehung zur Landschaft darstellte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Autor mit der Erwähnung der modernen Navigationssysteme?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er führt ein mögliches Gegenargument ein, um die Komplexität des Dilemmas zu erhöhen."
+        },
+        {
+          "id": "a2",
+          "text": "Er will darlegen, dass digitale Technik jeden traditionellen Flurnamen überflüssig macht."
+        },
+        {
+          "id": "a3",
+          "text": "Er kritisiert die mangelhafte GPS-Abdeckung im alpinen Gelände."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Zwar ließe sich einwenden, dass moderne Navigationssysteme ohnehin auf exakte Koordinaten und nicht auf poetische Flurnamen angewiesen sind, weshalb die bürokratische Vereinheitlichung letztlich harmlos erscheine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welche Stimmung dominiert die Schilderung des finalen Kompromisses im letzten Absatz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine triumphierende Atmosphäre des Fortschritts"
+        },
+        {
+          "id": "a2",
+          "text": "Eine melancholische und ungelöste Spannung"
+        },
+        {
+          "id": "a3",
+          "text": "Eine aggressive und feindselige Konfrontation"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Am Ende des Tages stand kein klarer Sieg für eine der beiden Parteien, sondern ein brüchiger Kompromiss, der die Unvereinbarkeit beider Welten nur mühsam kaschierte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der im Text verwendete Ausdruck „Deutungshoheit“ im Kontext dieses Konflikts?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Das alleinige Recht, topografische Karten ohne Einschränkungen zu drucken."
+        },
+        {
+          "id": "a2",
+          "text": "Die gesetzliche Erlaubnis, alte Grundstücke steuerlich neu zu bewerten."
+        },
+        {
+          "id": "a3",
+          "text": "Die offizielle Vorherrschaft darüber, wie ein Name und seine Bedeutung definiert werden."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "meilenweit entfernt von jenen windgepeitschten Hängen, um deren Deutungshoheit er nun schon seit Monaten stritt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob staatliche Behörden bei der Benennung von geografischen Orten stärker auf die lokale Bevölkerung hören sollten oder ob standardisierte Normen unverzichtbar sind.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob staatliche Behörden bei der Benennung von geografischen Orten stärker auf die lokale Bevölkerung hören sollten oder ob standardisierte Normen unverzichtbar sind."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie die folgende Erzählung über einen kartografischen Konflikt und beantworten Sie im Anschluss die Fragen zum Text.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Kartografie des schweigenden Tals | C1 Reading | WeLearn",
+      "en": "Die Kartografie des schweigenden Tals | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine Analyse über die Diskrepanz zwischen amtlicher Vermessung und mündlicher Überlieferung im alpinen Raum.",
+      "en": "Eine Analyse über die Diskrepanz zwischen amtlicher Vermessung und mündlicher Überlieferung im alpinen Raum."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

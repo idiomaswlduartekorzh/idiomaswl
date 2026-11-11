@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-open-schedule",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Stundenplanreform an der Bertolt-Brecht-Gesamtschule",
+      "en": "Stundenplanreform an der Bertolt-Brecht-Gesamtschule"
+    },
+    "intro": {
+      "es": "Lesen Sie den folgenden E-Mail-Austausch zwischen zwei Lehrkräften über die Auswirkungen eines neuen flexiblen Stundenplans und beantworten Sie die dazu gestellten Fragen.",
+      "en": "Lesen Sie den folgenden E-Mail-Austausch zwischen zwei Lehrkräften über die Auswirkungen eines neuen flexiblen Stundenplans und beantworten Sie die dazu gestellten Fragen."
+    },
+    "mission": {
+      "es": "Analysieren Sie die organisatorischen Konflikte, die durch vermeintliche Flexibilisierung im Schulalltag entstehen, und bearbeiten Sie die Aufgaben im Anschluss.",
+      "en": "Analysieren Sie die organisatorischen Konflikte, die durch vermeintliche Flexibilisierung im Schulalltag entstehen, und bearbeiten Sie die Aufgaben im Anschluss."
+    },
+    "targetText": "Betreff: Unvorhergesehene Dynamiken nach der gestrigen Konferenz\n\nLiebe Elena,\n\nich muss gestehen, dass mir die Nachbereitung der gestrigen Gesamtkonferenz noch immer im Magen liegt, insbesondere hinsichtlich der offiziell beschlossenen Flexibilisierung unseres Stundenplans für die kommende Jahrgangsstufe. Was von der Schulleitung als moderner pädagogischer Meilenstein gefeiert wurde, der den individuellen Lernbiografien unserer Schülerschaft gerecht werden soll, entpuppt sich bei genauerer Betrachtung der praktischen Umsetzung als organisatorisches Minenfeld. Wir wollten den Jugendlichen durch frei wählbare Vertiefungsmodule am Vormittag mehr Eigenverantwortung übertragen und gleichzeitig den Lehrkräften ermöglichen, projektbasiert zu arbeiten. Doch die Realität dieses vermeintlich agilen Modells bricht bereits auf, bevor es überhaupt im Klassenraum angekommen ist. Das Kernproblem liegt in der asymmetrischen Verteilung der Belastung, die paradoxerweise genau jene Kolleginnen und Kollegen trifft, die ohnehin schon am Rande ihrer Kapazitäten operieren. Gestern Abend, unmittelbar nach Bekanntgabe der finalen Modulstruktur, erreichte mich eine besorgniserregende Nachricht von Markus aus dem naturwissenschaftlichen Fachbereich, die das fundamentale Dilemma unserer neuen Planungsphilosophie auf den Punkt bringt und mich veranlasst hat, meine eigene Haltung zu dieser Reform grundlegend zu überdenken.\n\nBetreff: Re: Unvorhergesehene Dynamiken nach der gestrigen Konferenz\n\nLiebe Claudia,\n\ndanke für deine Zeilen, die genau die Sorgen widerspiegeln, die ich seit Stunden mit mir herumtrage. Dein Eindruck trügt keineswegs; die Euphorie der Schulleitung steht in keinem Verhältnis zu dem organisatorischen Chaos, das wir in den Fachschaften jetzt ausbaden müssen. Um dir ein konkretes Bild zu geben: Durch die Öffnung der ersten beiden Unterrichtsstunden für die sogenannten Selbstlern- und Forschungsphasen dachten wir, wir würden den Schülern mit intrinsischer Motivation ein tolles Angebot machen. Stattdessen erleben wir eine massive Fragmentierung der Lerngruppen. Die leistungsstarken Jugendlichen nutzen die Flexibilität, um sich gezielt in fortgeschrittene Seminare einzubuchen, während jene, die auf Struktur und verbindliche Ansprache angewiesen sind, in den offenen Räumen orientierungslos verbleiben oder schlicht zu Hause bleiben. Noch gravierender ist jedoch der Kollateralschaden für unseren regulären Fachunterricht ab der dritten Stunde. Da die Module starr auf exakt neunzig Minuten getaktet sind, aber jede Lerngruppe anders zusammengesetzt ist, sprengen wir jegliche Kontinuität im Lehrplan. Wenn ich am Dienstag Chemie unterrichte, sitzt jedes Mal eine völlig andere Zusammensetzung von Schülern vor mir, je nachdem, wer sich am Montagnachmittag noch schnell in das Modul eingeloggt oder wieder abgemeldet hat. Von einem kumulativen Wissensaufbau kann längst keine Rede mehr sein; wir betreiben im Grunde nur noch Schadensbegrenzung und verwalten den fortwährenden Zustand der Unverbindlichkeit.\n\nDas eigentliche Zerwürfnis im Kollegium bahnt sich jedoch an anderer Stelle an, nämlich bei der Zuweisung der sogenannten Betreuungs- und Pufferzeiten. Weil die Schulleitung versprochen hat, dass kein Schüler in den Freiräumen unbetreut bleibt, wurden wir Lehrkräfte verpflichtet, in diesen Phasen als Lernbegleiter anwesend zu sein. Das bedeutet konkret für mein Deputat: Meine eigentliche Vorbereitungszeit wurde drastisch beschnitten, um dieses Vakuum zu füllen. Während also die Befürworter des Modells von einer modernen Lernkultur sprechen, erleben Kolleginnen wie du und ich, dass unsere Kernarbeitszeit schleichend entwertet wird, nur damit das System nach außen hin dynamisch aussieht. Wir lösen die starren Strukturen nicht auf; wir verlagern die starren Anforderungen lediglich auf das Lehrpersonal, während die Schüler mit einer Überforderung durch unendliche Wahlmöglichkeiten konfrontiert werden. Ich frage mich ernsthaft, wie wir diesen Zustand bei der nächsten Dienstbesprechung vertreten sollen, ohne als bremsende Reformgegner abgestempelt zu werden, obwohl wir doch nur die elementare Verlässlichkeit des Unterrichts einfordern.\n\nClaudia antwortete darauf noch in der Nacht, dass sie Markus' Beobachtungen voll und ganz teilt und die Schuldfrage keineswegs bei den Lehrkräften gesucht werden darf, die sich nun querstellen. Sie betonte, dass der Begriff der Flexibilität hier als Euphemismus für unzureichende Ressourcen und mangelnde Absprache missbraucht wird. Wenn man Wahlfreiheit gewähre, müsse man auch die personelle und räumliche Infrastruktur bereitstellen, diese Flexibilität abzufedern, anstatt sie auf dem Rücken der ohnehin überlasteten Pädagogen auszutragen. Der E-Mail-Wechsel gipfelte in der gemeinsamen Erkenntnis, dass sie das Thema auf der kommenden Personalversammlung nicht auf sich beruhen lassen werden. Sie wollen einen gemeinsamen Antrag formulieren, der eine sofortige Evaluation der Modulphase fordert, bevor der unvorhersehbare Rhythmus der neuen Stundenstruktur den Zusammenhalt der gesamten Jahrgangsstufe irreparabel beschädigt hat.\n\nDieser Disput verdeutlicht exemplarisch die oft unterschätzten Reibungsverluste bei administrativen Strukturreformen im Bildungswesen. Was auf dem Papier wie ein Gewinn an pädagogischer Freiheit aussieht, erweist sich in der praktischen Ausführung als Quelle tiefer Verunsicherung. Die unterschiedlichen Perspektiven von Schulleitung und Basis verdeutlichen, dass Flexibilität ohne klare Leitplanken und ausreichende Ressourcen nicht zu mehr Chancengleichheit führt, sondern schlicht bestehende soziale und lernbiografische Ungleichheiten verstärkt. Die Bertolt-Brecht-Gesamtschule steht somit vor einer Zerreißprobe, bei der das vermeintlich fortschrittliche Modell zur Belastungsprobe für das gesamte Schulklima geworden ist.",
+    "wordCount": 749,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Euphemismus",
+        "lemma": "Euphemismus",
+        "glosses": {
+          "es": "A mild or indirect word substituted for one considered to be too harsh or blunt.",
+          "en": "A mild or indirect word substituted for one considered to be too harsh or blunt."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kollateralschaden",
+        "lemma": "Kollateralschaden",
+        "glosses": {
+          "es": "Secondary or unintended damage resulting from an action.",
+          "en": "Secondary or unintended damage resulting from an action."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Deputat",
+        "lemma": "Deputat",
+        "glosses": {
+          "es": "An assigned teaching workload or official duty hours for educators.",
+          "en": "An assigned teaching workload or official duty hours for educators."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zerreißprobe",
+        "lemma": "Zerreißprobe",
+        "glosses": {
+          "es": "A severe test of endurance or unity that threatens to break a system.",
+          "en": "A severe test of endurance or unity that threatens to break a system."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Reibungsverluste",
+        "lemma": "Reibungsverluste",
+        "glosses": {
+          "es": "Losses of efficiency or energy caused by internal friction or poor coordination.",
+          "en": "Losses of efficiency or energy caused by internal friction or poor coordination."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verlässlichkeit",
+        "lemma": "Verlässlichkeit",
+        "glosses": {
+          "es": "Reliability, dependability, or consistency in a process.",
+          "en": "Reliability, dependability, or consistency in a process."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem vorliegenden E-Mail-Austausch im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um organisatorische Konflikte durch eine neue Stundenplanreform."
+        },
+        {
+          "id": "a2",
+          "text": "Um die erfolgreiche Einführung eines modernen Lernmodells."
+        },
+        {
+          "id": "a3",
+          "text": "Um finanzielle Kürzungen im naturwissenschaftlichen Bereich."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Was von der Schulleitung als moderner pädagogischer Meilenstein gefeiert wurde, der den individuellen Lernbiografien unserer Schülerschaft gerecht werden soll, entpuppt sich bei genauerer Betrachtung der praktischen Umsetzung als organisatorisches Minenfeld.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkrete Auswirkung hat die Flexibilisierung auf Markus' Arbeitsbelastung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er muss nun deutlich mehr Chemieunterricht am Nachmittag erteilen."
+        },
+        {
+          "id": "a2",
+          "text": "Seine Vorbereitungszeit wurde stark verkürzt, um Betreuungsaufgaben zu übernehmen."
+        },
+        {
+          "id": "a3",
+          "text": "Sein Deputat wurde erhöht, um neue Vertiefungsmodule eigenständig zu entwickeln."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Das bedeutet konkret für mein Deputat: Meine eigentliche Vorbereitungszeit wurde drastisch beschnitten, um dieses Vakuum zu füllen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche implizite Annahme lässt sich über das Verhalten der Schüler in den Selbstlernphasen ableiten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Alle Jugendlichen nutzen die gewonnenen Freiräume gleichermaßen diszipliniert für ihr Studium."
+        },
+        {
+          "id": "a2",
+          "text": "Leistungsschwächere Lernende profitieren am meisten von der unstrukturierten Zeit am Morgen."
+        },
+        {
+          "id": "a3",
+          "text": "Die Wahlfreiheit führt zu einer Spaltung zwischen stark motivierten und orientierungslosen Schülern."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die leistungsstarken Jugendlichen nutzen die Flexibilität, um sich gezielt in fortgeschrittene Seminare einzubuchen, während jene, die auf Struktur und verbindliche Ansprache angewiesen sind, in den offenen Räumen orientierungslos verbleiben oder schlicht zu Hause bleiben.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum verfasst Markus seine Nachricht an Claudia am späten Abend?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um sie vor den unvorhergesehenen organisatorischen Konsequenzen des Beschlusses zu warnen"
+        },
+        {
+          "id": "a2",
+          "text": "Um einen offiziellen Antrag zur Abschaffung der Notenvergabe einzureichen"
+        },
+        {
+          "id": "a3",
+          "text": "Um sich über die neue Raumnot im naturwissenschaftlichen Trakt zu beschweren"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Gestern Abend, unmittelbar nach Bekanntgabe der finalen Modulstruktur, erreichte mich eine besorgniserregende Nachricht von Markus aus dem naturwissenschaftlichen Fachbereich, die das fundamentale Dilemma unserer neuen Planungsphilosophie auf den Punkt bringt",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewerten die beiden Lehrkräfte die Haltung der Schulleitung gegenüber dem neuen Modell?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie loben die visionäre Weitsicht der Schulleitung in bildungspolitischen Fragen."
+        },
+        {
+          "id": "a2",
+          "text": "Sie kritisieren die Diskrepanz zwischen theoretischer Euphorie und realem Chaos."
+        },
+        {
+          "id": "a3",
+          "text": "Sie werfen der Schulleitung vor, absichtlich finanzielle Mittel unterschlagen zu haben."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Dein Eindruck trügt keineswegs; die Euphorie der Schulleitung steht in keinem Verhältnis zu dem organisatorischen Chaos, das wir in den Fachschaften jetzt ausbaden müssen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Wie wird der Begriff 'Euphemismus' im vierten Absatz kontextuell verwendet?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Als Fachausdruck für eine mathematisch exakte Stundenplangestaltung"
+        },
+        {
+          "id": "a2",
+          "text": "Als Synonym für die offizielle pädagogische Ausrichtung der Schulleitung"
+        },
+        {
+          "id": "a3",
+          "text": "Als Bezeichnung für eine beschönigende Umschreibung unzureichender Ressourcen"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie betonte, dass der Begriff der Flexibilität hier als Euphemismus für unzureichende Ressourcen und mangelnde Absprache missbraucht wird.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie eine formelle Stellungnahme (ca. 200 Wörter) aus der Perspektive der Schulleitung als Antwort auf die Bedenken von Claudia und Markus. Gehen Sie dabei argumentativ auf die Kritikpunkte bezüglich der Planungsunsicherheit und der Arbeitsbelastung ein, ohne das zugrundeliegende Reformkonzept komplett aufzugeben.",
+      "en": "Verfassen Sie eine formelle Stellungnahme (ca. 200 Wörter) aus der Perspektive der Schulleitung als Antwort auf die Bedenken von Claudia und Markus. Gehen Sie dabei argumentativ auf die Kritikpunkte bezüglich der Planungsunsicherheit und der Arbeitsbelastung ein, ohne das zugrundeliegende Reformkonzept komplett aufzugeben."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysieren Sie die organisatorischen Konflikte, die durch vermeintliche Flexibilisierung im Schulalltag entstehen, und bearbeiten Sie die Aufgaben im Anschluss.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Stundenplanreform an der Bertolt-Brecht-Gesamtschule | C1 Reading | WeLearn",
+      "en": "Stundenplanreform an der Bertolt-Brecht-Gesamtschule | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lesen Sie den folgenden E-Mail-Austausch zwischen zwei Lehrkräften über die Auswirkungen eines neuen flexiblen Stundenplans und beantworten Sie die dazu gestellten Fragen.",
+      "en": "Lesen Sie den folgenden E-Mail-Austausch zwischen zwei Lehrkräften über die Auswirkungen eines neuen flexiblen Stundenplans und beantworten Sie die dazu gestellten Fragen."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

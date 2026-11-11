@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-shared-desks",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Neuausrichtung der Arbeitsplatzkonzeption im Vertrieb",
+      "en": "Neuausrichtung der Arbeitsplatzkonzeption im Vertrieb"
+    },
+    "intro": {
+      "es": "Lesen Sie die folgende geschäftliche E-Mail einer Abteilungsleiterin an ihr Team bezüglich neuer Regelungen für die mobile Arbeit und beantworten Sie die anschließenden Fragen auf Niveau C1.",
+      "en": "Lesen Sie die folgende geschäftliche E-Mail einer Abteilungsleiterin an ihr Team bezüglich neuer Regelungen für die mobile Arbeit und beantworten Sie die anschließenden Fragen auf Niveau C1."
+    },
+    "mission": {
+      "es": "Analysieren Sie das Schreiben kritisch im Hinblick auf rhetorische Nuancen, implizite Kostenverlagerungen und die Tonalität der Führungskraft.",
+      "en": "Analysieren Sie das Schreiben kritisch im Hinblick auf rhetorische Nuancen, implizite Kostenverlagerungen und die Tonalität der Führungskraft."
+    },
+    "targetText": "Liebe Kolleginnen und Kollegen der Vertriebsabteilung,\n\nnach unseren intensiven Gesprächen der vergangenen Wochen zur Modernisierung unserer internen Strukturen möchte ich Ihnen heute die finalen Leitlinien für das kommende Quartal vorstellen. Unser Ziel bleibt es, maximale Autonomie mit einer verbindlichen Verpflichtung zu exzellenten Ergebnissen zu verbinden. Die Auswertung unserer quartalsbezogenen Kundenzufriedenheitswerte hat gezeigt, dass die von Ihnen gewohnte Flexibilität ein unverzichtbarer Baustein unseres gemeinsamen Erfolgs ist. Dennoch stehen wir vor der betriebswirtschaftlichen Notwendigkeit, unsere Ressourcenströme zu konsolidieren, um auch künftig in einem kompetitiven Marktumfeld agil agieren zu können. Vor diesem Hintergrund haben wir uns entschlossen, das Konzept der flexiblen Raumvergabe auf eine neue Basis zu stellen und die Präsenztage im zentralen Stammbüro in der Kronenstraße auf zwei fixe Tage pro Woche zu reduzieren. Für die verbleibenden Arbeitstage steht es Ihnen frei, den Arbeitsort eigenverantwortlich zu bestimmen, wobei das Homeoffice hierbei als gleichwertiger und vollwertiger Arbeitsplatz verstanden wird. Diese Entkopplung von fester Infrastruktur und physischer Anwesenheit eröffnet Ihnen die lang ersehnte Freiheit, Ihre beruflichen Verpflichtungen noch besser mit Ihren individuellen Lebensmodellen zu synchronisieren, ohne dass dabei operative Abstriche hingenommen werden müssten.\n\nUm diesen Übergang für alle Beteiligten reibungslos zu gestalten und gleichzeitig den gestiegenen Anforderungen an eine moderne Arbeitsumgebung gerecht zu werden, entfällt künftig die bisherige pauschale Infrastrukturpauschale für den privaten Bereich. Bislang wurden diese monatlichen Aufwendungen im Rahmen einer Sonderregelung quotal übernommen, was jedoch angesichts der stark diversifizierten individuellen Wohnsituationen zu erheblichen Ungleichgewichten geführt hat. Künftig setzen wir auf ein Modell der Eigenverantwortung, bei dem jede Mitarbeiterin und jeder Mitarbeiter selbstbestimmt entscheidet, in welche Ausstattung investiert werden soll, um den persönlichen Produktivitätsstandard im privaten Raum zu optimieren. Das Unternehmen wird stattdessen seine Investitionen gezielt auf die Modernisierung der Gemeinschaftsflächen im Hauptsitz bündeln, sodass Ihnen dort modernste Kollaborationszonen und ergonomisch optimierte Besprechungsräume zur Verfügung stehen. Damit tragen wir dem Umstand Rechnung, dass der physische Raum im Büro zunehmend als Ort des kreativen Austauschs und nicht mehr als bloßer Schreibtischarbeitsplatz verstanden wird.\n\nNatürlich ist uns bewusst, dass eine Verlagerung von Arbeitsanteilen in den privaten Raum auch organisatorische und technische Fragen aufwirft, insbesondere hinsichtlich einer verlässlichen Internetverbindung und einer adäquaten Absicherung vertraulicher Geschäftsvorgänge. Sollten Sie in diesem Zusammenhang feststellen, dass Ihre heimische Infrastruktur punktual an technische Grenzen stößt, bietet unsere IT-Abteilung Ihnen gerne Unterstützung bei der Evaluierung alternativer Tarife oder standardisierter Hardware-Pakete an. Diese können ab sofort über das interne Bestellportal bezogen werden, wobei die Abrechnung über die üblichen unternehmensinternen Einkaufskonditionen erfolgt und somit für Sie mit keinen zusätzlichen Verwaltungsaufwänden verbunden ist. Gleichzeitig möchten wir betonen, dass diese Maßnahmen keineswegs als Rückzug des Unternehmens aus seiner sozialen Verantwortung missverstanden werden dürfen. Vielmehr verstehen wir diesen Schritt als konsequente Einladung an Sie alle, den Arbeitsalltag noch partizipativer und eigenverantwortlicher zu gestalten, während wir im Hintergrund die strukturellen Weichen für eine stabile und zukunftsfähige Ausrichtung unseres Vertriebs stellen.\n\nIch lade Sie herzlich ein, diese neuen Rahmenbedingungen als Chance zu begreifen, Ihre eigenen Arbeitsprozesse noch autonomer zu steuern und gleichzeitig von den intensivierten Begegnungsphasen im Stammbüro zu profitieren. Für einen konstruktiven Austausch zu diesen Neuerungen stehe ich Ihnen im Rahmen unserer kommenden Teamkonferenz am nächsten Mittwoch selbstverständlich Rede und Antwort. Lassen Sie uns diesen Weg gemeinsam beschreiten und den Beweis antreten, dass Vertrauen und Flexibilität die verlässlichsten Fundamente unseres wirtschaftlichen Handelns sind. Mit besten Grüßen, Dr. Elena Bergmann, Leiterin Vertriebsdirektion.\n\nDennoch dürfen wir bei aller berechtigten Euphorie über diese neue unternehmerische Freiheit nicht außer Acht lassen, dass die dauerhafte räumliche Entflechtung des Teams auch substanzielle Risiken für unsere gewachsene Unternehmenskultur birgt. Sollte es uns im Alltag nicht gelingen, den informellen Wissensaustausch trotz reduzierter Präsenztage aktiv aufrechtzuerhalten, droht im schlimmsten Fall eine schleichende Silobildung innerhalb der einzelnen Vertriebssegmente. Um diesem potenziellen Kontrollverlust und der Entfremdung einzelner Kolleginnen und Kollegen präventiv entgegenzuwirken, werden wir ab dem kommenden Monat quartalsweise abteilungsübergreifende Innovationswerkstätten etablieren. Diese physischen Zusammenkünfte dienen gezielt dazu, strategische Best Practices aus den jeweiligen Homeoffice-Phasen zu bündeln und kreative Reibungspunkte in einem gemeinsamen physischen Rahmen konstruktiv zu nutzen. Gleichzeitig appelliere ich an Ihre ausgeprägte kommunikative Kompetenz, digitale Kanäle nicht nur für den reinen Statusbericht zu verwenden, sondern den direkten menschlichen Draht zu Ihren Teampartnern konsequent zu pflegen. Nur wenn wir diese technologische und organisatorische Transformation als fortlaufenden Dialog begreifen, in dem Eigeninitiative und kollektive Verantwortung Hand in Hand gehen, werden wir unsere ambitionierten vertrieblichen Zielvorgaben im kommenden Quartal nicht nur erreichen, sondern nachhaltig übertreffen.",
+    "wordCount": 715,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Ressourcenströme",
+        "lemma": "Ressourcenströme",
+        "glosses": {
+          "es": "resource flows",
+          "en": "resource flows"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Entkopplung",
+        "lemma": "Entkopplung",
+        "glosses": {
+          "es": "decoupling",
+          "en": "decoupling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Infrastrukturpauschale",
+        "lemma": "Infrastrukturpauschale",
+        "glosses": {
+          "es": "infrastructure flat-rate allowance",
+          "en": "infrastructure flat-rate allowance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ungleichgewichten",
+        "lemma": "Ungleichgewichten",
+        "glosses": {
+          "es": "imbalances",
+          "en": "imbalances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Rede und Antwort",
+        "lemma": "Rede und Antwort",
+        "glosses": {
+          "es": "to answer questions / to be accountable",
+          "en": "to answer questions / to be accountable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fundamente",
+        "lemma": "Fundamente",
+        "glosses": {
+          "es": "foundations",
+          "en": "foundations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.5,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Schreiben der Abteilungsleiterin im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Neugestaltung flexibler Arbeitsmodelle bei gleichzeitiger Verschiebung von Kosten in den Privatbereich."
+        },
+        {
+          "id": "a2",
+          "text": "Um die vollständige Schließung des Stammbüros zugunsten reiner Heimarbeit."
+        },
+        {
+          "id": "a3",
+          "text": "Um eine drastische Lohnerhöhung als Ausgleich für gestiegene Energiepreise."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Vor diesem Hintergrund haben wir uns entschlossen, das Konzept der flexiblen Raumvergabe auf eine neue Basis zu stellen und die Präsenztage im zentralen Stammbüro in der Kronenstraße auf zwei fixe Tage pro Woche zu reduzieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wie viele feste Präsenztage pro Woche sind im Stammbüro künftig vorgesehen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Fünf Tage."
+        },
+        {
+          "id": "a2",
+          "text": "Genau zwei Tage."
+        },
+        {
+          "id": "a3",
+          "text": "Keine festen Tage."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "die Präsenztage im zentralen Stammbüro in der Kronenstraße auf zwei fixe Tage pro Woche zu reduzieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche reale finanzielle Konsequenz hat die Abschaffung der Infrastrukturpauschale für die Angestellten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie erhalten stattdessen einen höheren Zuschuss für Büromöbel."
+        },
+        {
+          "id": "a2",
+          "text": "Ihre monatlichen Fixgehälter werden automatisch erhöht."
+        },
+        {
+          "id": "a3",
+          "text": "Sie tragen die Aufwendungen für ihren privaten Arbeitsplatz nun eigenverantwortlich."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Künftig setzen wir auf ein Modell der Eigenverantwortung, bei dem jede Mitarbeiterin und jeder Mitarbeiter selbstbestimmt entscheidet, in welche Ausstattung investiert werden soll",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum betont die Verfasserin den Wert von persönlichem Austausch und Gemeinschaftsflächen im Hauptsitz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den Wegfall der finanziellen Unterstützung für das Homeoffice rhetorisch zu kaschieren und aufzuwerten."
+        },
+        {
+          "id": "a2",
+          "text": "Weil das Stammbüro ab sofort als einzig zugelassener Arbeitsort gilt."
+        },
+        {
+          "id": "a3",
+          "text": "Um zu rechtfertigen, warum die IT-Abteilung neue Hardware-Pakete einkauft."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Unternehmen wird stattdessen seine Investitionen gezielt auf die Modernisierung der Gemeinschaftsflächen im Hauptsitz bündeln, sodass Ihnen dort modernste Kollaborationszonen und ergonomisch optimierte Besprechungsräume zur Verfügung stehen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich die sprachliche Tonalität der E-Mail charakterisieren?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggregat und offen drohend gegenüber Kritikern."
+        },
+        {
+          "id": "a2",
+          "text": "Diplomatisch, verpackt in vermeintliche Wertschätzung von Autonomie."
+        },
+        {
+          "id": "a3",
+          "text": "Ironisch und humorvoll in Bezug auf bürokratische Hürden."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Unser Ziel bleibt es, maximale Autonomie mit einer verbindlichen Verpflichtung zu exzellenten Ergebnissen zu verbinden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat der Begriff 'Entkopplung' im vorliegenden Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die strikte Kopplung von Arbeitszeit und erbrachter Leistung."
+        },
+        {
+          "id": "a2",
+          "text": "Die finanzielle Entlastung der Belegschaft durch das Unternehmen."
+        },
+        {
+          "id": "a3",
+          "text": "Die dauerhafte Trennung von fester Infrastruktur und räumlicher Präsenz."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Diese Entkopplung von fester Infrastruktur und physischer Anwesenheit eröffnet Ihnen die lang ersehnte Freiheit",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie als Betriebsratsmitglied eine kritische, aber professionelle Erwiderung auf diese E-Mail. Gehen Sie auf die verdeckte Kostenverlagerung ein, fordern Sie Transparenz bezüglich der gestrichenen Pauschale und schlagen Sie einen fairen Kompromiss für die mobile Arbeit vor (ca. 180–220 Wörter).",
+      "en": "Verfassen Sie als Betriebsratsmitglied eine kritische, aber professionelle Erwiderung auf diese E-Mail. Gehen Sie auf die verdeckte Kostenverlagerung ein, fordern Sie Transparenz bezüglich der gestrichenen Pauschale und schlagen Sie einen fairen Kompromiss für die mobile Arbeit vor (ca. 180–220 Wörter)."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysieren Sie das Schreiben kritisch im Hinblick auf rhetorische Nuancen, implizite Kostenverlagerungen und die Tonalität der Führungskraft.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Neuausrichtung der Arbeitsplatzkonzeption im Vertrieb | C1 Reading | WeLearn",
+      "en": "Neuausrichtung der Arbeitsplatzkonzeption im Vertrieb | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lesen Sie die folgende geschäftliche E-Mail einer Abteilungsleiterin an ihr Team bezüglich neuer Regelungen für die mobile Arbeit und beantworten Sie die anschließenden Fragen auf Niveau C1.",
+      "en": "Lesen Sie die folgende geschäftliche E-Mail einer Abteilungsleiterin an ihr Team bezüglich neuer Regelungen für die mobile Arbeit und beantworten Sie die anschließenden Fragen auf Niveau C1."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

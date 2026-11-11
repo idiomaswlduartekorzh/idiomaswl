@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-food-label",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Kritischer Blick auf Mindesthaltbarkeit",
+      "en": "Kritischer Blick auf Mindesthaltbarkeit"
+    },
+    "intro": {
+      "es": "Eine vergleichende Rezension zweier neuer Etikettierungsansätze für Lebensmittel auf dem regionalen Biomarkt.",
+      "en": "Eine vergleichende Rezension zweier neuer Etikettierungsansätze für Lebensmittel auf dem regionalen Biomarkt."
+    },
+    "mission": {
+      "es": "Lesen Sie die Rezension und analysieren Sie, wie die unterschiedlichen Formulierungen das Verbraucherverhalten lenken sollen.",
+      "en": "Lesen Sie die Rezension und analysieren Sie, wie die unterschiedlichen Formulierungen das Verbraucherverhalten lenken sollen."
+    },
+    "targetText": "Die Debatte um die Reduzierung von Nahrungsmittelabfällen im städtischen Einzelhandel hat eine neue Dimension erreicht, seit der Nachhaltigkeitsbeauftragte Jonas Bergmann und die Marketingleiterin Clara Wendt ihre jeweiligen Kennzeichnungssysteme für die regionalen Frischemärkte vorstellten. Während Bergmanns Entwurf auf eine nüchterne, faktenbasierte Information setzt, versucht Wendts Konzept durch emotionale Ansprache eine Verhaltensänderung herbeizuführen. Im Zentrum dieser Kontroverse stehen zwei Etiketten, die im Grunde identische Tatsachen vermitteln, aber völlig unterschiedliche Gewohnheiten bei der Kundschaft fördern. Bergmann präsentierte am Dienstagvormittag in der Markthalle sein System namens „Faktenblick“, welches auf den ersten Blick wie eine bürokratische Erweiterung des klassischen Mindesthaltbarkeitsdatums wirkt. Seine Etiketten listen präzise physikalische Parameter auf: Temperaturverläufe im Kühlregal, minimale Abweichungen der Luftfeuchtigkeit und standardisierte Frischeindizes, die auf Labortests basieren. Bergmann argumentiert, dass der mündige Verbraucher durch lückenlose Transparenz befähigt wird, rationale Entscheidungen zu treffen. Wenn auf dem Etikett stünde, dass ein Joghurt nach Ablauf des Datums bei ununterbrochener Kühlung noch mikrobiologisch unbedenklich ist, werde die Tonne als letzter Ausweg vermieden. Seine Kritiker werfen ihm jedoch vor, dass diese Informationsdichte an der Realität des gestressten Alltagsenkaufs vorbeigeht. Die Fülle an Daten überfordert den durchschnittlichen Käufer, anstatt ihn zu lenken; sie erzeugt eine kognitive Überlastung, die im Zweifel dazu führt, aus purem Sicherheitsdenken zum unbeschädigten, frischeren Produkt zu greifen. Am selben Nachmittag stellte Clara Wendt im Konferenzraum der Genossenschaft ihren Entwurf vor, der den konträren Weg beschreitet. Ihr Ansatz trägt den Titel „Sinneswandel“ und verzichtet weitgehend auf technische Kennzahlen. Stattdessen prangt auf den Verpackungen eine bildhafte Aufforderung zur sensorischen Prüfung, flankiert von wechselnden Illustrationen, die den Lebenszyklus des Produkts symbolisieren. Wendt ist überzeugt, dass reine Zahlenkolonnen keine emotionale Bindung zum Lebensmittel erzeugen. Ihr Etikett fordert dazu auf, den Geruchs- und Geschmackssinn einzusetzen, bevor ein leicht überschrittenes Produkt entsorgt wird. Der psychologische Kniff liegt darin, die Verantwortung für die Entsorgung subtil vom Produzenten auf den Verbraucher zu übertragen, indem dieser zum aktiven Prüfer ernannt wird. Das erzeugt zwar eine stärkere moralische Verpflichtung, birgt aber auch das Risiko, dass besonders vorsichtige Personen erst recht den Müllcontainer bevorzugen, sobald der kleinste Zweifel an der Konsistenz aufkommt. Der Konflikt zwischen den beiden Konzepten eskalierte schließlich, als die Geschäftsführung der Markthalle ankündigte, im kommenden Quartal nur eines der beiden Modelle flächendeckend einzuführen. Bergmann verteidigte sein System mit dem Hinweis, dass Emotionen im Supermarkt ein schlechter Ratgeber seien und nur harte Fakten das Vertrauen langfristig sichern könnten. Wendt hingegen hielt dagegen, dass Bergmanns Zahlenwüste an der menschlichen Psychologie vorbeigehe und eine rein kognitive Information niemals die tief verwurzelte Furcht vor Verderb überwinden werde. Die daraus resultierende Pattsituation führte dazu, dass die Sitzung ergebnislos vertagt werden musste, obwohl die Zeit drängte. Betrachtet man die rhetorische Finesse beider Entwürfe, offenbart sich eine tiefere Spannung: Beide Etiketten versuchen, das Problem des Wegwerfens zu lösen, verstricken sich jedoch in ihren eigenen Prämissen. Bergmanns Modell setzt auf Aufklärung, läuft aber Gefahr, als theoretisches Konstrukt zu verpuffen, während Wendts Appell zwar unmittelbar ans Herz appelliert, aber bei mangelnder sensorischer Kompetenz der Kundschaft das Gegenteil bewirken kann. Am Ende bleibt die Erkenntnis, dass weder reine Datenverarbeitung noch moralische Appche allein genügen, um das komplexe Konsumverhalten grundlegend zu transformieren, weshalb eine Synthese beider Ansätze unumgänglich erscheint.\n\nEine solche Synthese erfordert jedoch weit mehr als einen oberflächlichen Kompromiss zwischen technischer Nüchternheit und emotionaler Ansprache, denn sie muss die systemischen Rahmenbedingungen des modernen Handels radikal überdenken. Kritische Stimmen aus der Verbraucherforschung wenden zu Recht ein, dass jegliche Etikettierung ins Leere läuft, solange die strukturellen Anreize im Supermarkt auf ständige Verfügbarkeit und makellose Ästhetik ausgerichtet sind. Wenn der Handel weiterhin makellose Regale bis kurz vor Ladenschluss garantiert, verpufft die Wirkung sowohl von Bergmanns Frischeindizes als auch von Wendts sensorischen Appellen, da der Kunde im Zweifel immer zur makellosen Alternative greift. Folglich ließe sich argumentieren, dass das eigentliche Problem nicht auf der Ebene der Kennzeichnung, sondern in der Logistik der Überproduktion liegt. Ein wirklich nachhaltiger Wandel verlangt deshalb nach flankierenden Maßnahmen wie gesetzlich verankerten Abgabepflichten für überschüssige, aber genießbare Ware an soziale Einrichtungen oder direkt an die Kundschaft. Erst wenn flankierende Preisnachlässe für leicht gealterte Produkte die ökonomischen Barrieren abbauen, greifen die psychologischen Effekte der Etiketten überhaupt. Die anhaltende Debatte in der Markthalle könnte somit der entscheidende Auslöser sein, um die Debatte von der reinen Verpackungsästhetik auf das fundamentale Fundament unseres Umgangs mit Ressourcen zu heben.",
+    "wordCount": 704,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Kontroverse",
+        "lemma": "Kontroverse",
+        "glosses": {
+          "es": "controversy",
+          "en": "controversy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mündige",
+        "lemma": "mündige",
+        "glosses": {
+          "es": "mature / responsible",
+          "en": "mature / responsible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Überlastung",
+        "lemma": "Überlastung",
+        "glosses": {
+          "es": "overload",
+          "en": "overload"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kniff",
+        "lemma": "Kniff",
+        "glosses": {
+          "es": "trick / clever technique",
+          "en": "trick / clever technique"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pattsituation",
+        "lemma": "Pattsituation",
+        "glosses": {
+          "es": "stalemate",
+          "en": "stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Prämissen",
+        "lemma": "Prämissen",
+        "glosses": {
+          "es": "premises",
+          "en": "premises"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.5,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in der vorliegenden Rezension im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Gegenüberstellung zweier unterschiedlicher Etikettierungsansätze gegen Lebensmittelverschwendung"
+        },
+        {
+          "id": "a2",
+          "text": "Um den wirtschaftlichen Erfolg zweier Supermarktketten im direkten Wettbewerb"
+        },
+        {
+          "id": "a3",
+          "text": "Um die technischen Schwierigkeiten bei der Kühlung von Milchprodukten im Handel"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Debatte um die Reduzierung von Nahrungsmittelabfällen im städtischen Einzelhandel hat eine neue Dimension erreicht, seit der Nachhaltigkeitsbeauftragte Jonas Bergmann und die Marketingleiterin Clara Wendt ihre jeweiligen Kennzeichnungssysteme für die regionalen Frischemärkte vorstellten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkreten Inhalte listet das System von Jonas Bergmann auf den Etiketten auf?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Bunte Illustrationen über den biologischen Anbau der Zutaten"
+        },
+        {
+          "id": "a2",
+          "text": "Physikalische Parameter wie Temperaturverläufe und Frischeindizes"
+        },
+        {
+          "id": "a3",
+          "text": "Emotionale Aufrufe zur sensorischen Überprüfung zu Hause"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Seine Etiketten listen präzise physikalische Parameter auf: Temperaturverläufe im Kühlregal, minimale Abweichungen der Luftfeuchtigkeit und standardisierte Frischeindizes, die auf Labortests basieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum könnte Wendts System laut Text bei manchen Käufern zu genau dem gegenteiligen Verhalten führen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil die verwendeten technischen Fachbegriffe die Kunden völlig überfordern"
+        },
+        {
+          "id": "a2",
+          "text": "Weil der angebotene Preis für die betroffenen Waren zu hoch angesetzt ist"
+        },
+        {
+          "id": "a3",
+          "text": "Weil unsichere Personen bei geringsten Zweifeln das Produkt trotzdem wegwerfen"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Das erzeugt zwar eine stärkere moralische Verpflichtung, birgt aber auch das Risiko, dass besonders vorsichtige Personen erst recht den Müllcontainer bevorzugen, sobald der kleinste Zweifel an der Konsistenz aufkommt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt die detaillierte Vorstellung der beiden Systeme in der Markthalle?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie soll verdeutlichen, wie konträre Strategien versuchen, das gleiche Problem zu lösen, dabei aber neue Konflikte erzeugen."
+        },
+        {
+          "id": "a2",
+          "text": "Sie dient als offizielle Werbebroschüre für die bevorstehende Einführung des Systems von Clara Wendt."
+        },
+        {
+          "id": "a3",
+          "text": "Sie beweist, dass rein wissenschaftliche Kennzeichnungen in jedem Fall überlegen sind."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Im Zentrum dieser Kontroverse stehen zwei Etiketten, die im Grunde identische Tatsachen vermitteln, aber völlig unterschiedliche Gewohnheiten bei der Kundschaft fördern.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewertet der Rezensent die Erfolgsaussichten der beiden vorgestellten Konzepte am Ende?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er feiert Wendts Ansatz als die einzig wahre Lösung für die Zukunft."
+        },
+        {
+          "id": "a2",
+          "text": "Er sieht in beiden Modellen ungelöste Schwächen und plädiert für eine Verknüpfung."
+        },
+        {
+          "id": "a3",
+          "text": "Er hält beide Systeme für absolut nutzlos und fordert ein generelles Verbot."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Am Ende bleibt die Erkenntnis, dass weder reine Datenverarbeitung noch moralische Appche allein genügen, um das komplexe Konsumverhalten grundlegend zu transformieren, weshalb eine Synthese beider Ansätze unumgänglich erscheint.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat das Wort „Pattsituation“ im Kontext des Textabschnitts über das Treffen der Geschäftsführung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Einen Zustand der vollständigen Einigung nach langen Verhandlungen"
+        },
+        {
+          "id": "a2",
+          "text": "Einen plötzlichen finanziellen Gewinn durch neue Kooperationen"
+        },
+        {
+          "id": "a3",
+          "text": "Eine feste Blockade, bei der keine Seite nachgeben will"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die daraus resultierende Pattsituation führte dazu, dass die Sitzung ergebnislos vertagt werden musste, obwohl die Zeit drängte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150 Wörter) auf Deutsch, in dem Sie erörtern, ob rationale Fakten oder emotionale Appche Ihrer Ansicht nach effektiver gegen Lebensmittelverschwendung wirken.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150 Wörter) auf Deutsch, in dem Sie erörtern, ob rationale Fakten oder emotionale Appche Ihrer Ansicht nach effektiver gegen Lebensmittelverschwendung wirken."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie die Rezension und analysieren Sie, wie die unterschiedlichen Formulierungen das Verbraucherverhalten lenken sollen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Kritischer Blick auf Mindesthaltbarkeit | C1 Reading | WeLearn",
+      "en": "Kritischer Blick auf Mindesthaltbarkeit | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine vergleichende Rezension zweier neuer Etikettierungsansätze für Lebensmittel auf dem regionalen Biomarkt.",
+      "en": "Eine vergleichende Rezension zweier neuer Etikettierungsansätze für Lebensmittel auf dem regionalen Biomarkt."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

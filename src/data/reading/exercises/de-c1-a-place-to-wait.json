@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Paradoxon der Beruhigung",
+      "en": "Das Paradoxon der Beruhigung"
+    },
+    "intro": {
+      "es": "Ein Tagebucheintrag aus dem Wartezimmer der Praxis Dr. Hansen beleuchtet die psychologischen Effekte eines neuen digitalen Wartesystems.",
+      "en": "Ein Tagebucheintrag aus dem Wartezimmer der Praxis Dr. Hansen beleuchtet die psychologischen Effekte eines neuen digitalen Wartesystems."
+    },
+    "mission": {
+      "es": "Lesen Sie den folgenden Tagebucheintrag und bearbeiten Sie anschließend die Aufgaben zum Textverständnis auf Niveau C1.",
+      "en": "Lesen Sie den folgenden Tagebucheintrag und bearbeiten Sie anschließend die Aufgaben zum Textverständnis auf Niveau C1."
+    },
+    "targetText": "Dienstagabend, kurz nach zwanzig Uhr. Die letzte Patientin, Frau Sprengel, hat soeben mit einem leicht gequälten Lächeln die Praxis verlassen. Endlich Stille. Ich lasse mich in den ergonomischen Drehstuhl sinken, dessen Leder nach Jahren des treuen Dienstes an den Kanten leicht brüchig wird, und öffne mein digitales Tagebuch. Die Umstellung auf das neue, zentral gesteuerte Aufrufsystem liegt nun exakt drei Wochen zurück. Damals pries der Systemadministrator die Software als Heilsbringer für unsere Nerven und die unserer Patienten an. Man versprach uns eine spürbare Entlastung des Empfangsbereichs, eine Reduzierung der gefühlten Wartezeit und vor allem eines: Ordnung. Tatsächlich hat sich das Bild im Raum fundamental gewandelt, doch der Schein trügt auf eine Art und Weise, die mich zunehmend unruhig stimmt. Früher glich unser Wartezimmer an Vormittagen einem überfüllten Bienenstock. Menschen drängten sich auf den mintgrünen Stühlen, Zeitschriften wanderten von Hand zu Hand, und das ungeduldige Rascheln von Papier war ständiger Begleiter unseres Arbeitstages. Vor allem aber gab es einen ständigen, ungefilterten Dialog. Wer hereinkam, sah sofort, woran er war. Ein Blick in den Raum genügte, um die eigene Position in der unsichtbaren Hierarchie der Ankunft zu begreifen. Man nickte sich zu, tauschte klagende Blicke über die Verspätungen des Arztes aus oder schimpfte gemeinsam über den Zustand des Gesundheitssystems. Diese kollektive Frustration hatte ein Ventil. Die Last des Wartens verteilte sich auf alle Schultern im Raum, weil das Leiden sichtbar und gemeinschaftlich war. Heute herrscht hier eine fast schon gespenstische Disziplin. Die Stühle stehen akkurat ausgerichtet, die Luft ist dank der neuen Klimaanlage temperiert, und von den Bildschirmen flimmert ein dezentes, beruhigendes Blau. Die Patienten sitzen isoliert voneinander, die Blicke starr auf ihre Smartphones gerichtet. Sie haben per SMS einen individuellen Zeitfenster-Link erhalten, der ihnen suggeriert, sekundengenau getaktet zu sein. Niemand spricht mehr miteinander. Die App gaukelt ihnen eine absolute Berechenbarkeit vor, die der Praxisalltag schlicht unmöglich einhalten kann. Wenn Dr. Hansen bei einem komplizierten Fall zehn Minuten länger braucht, bricht das System im Hintergrund zwar nicht zusammen, aber die verabredete Präzision erweist sich als Illusion. Das Faszinierende und zugleich Erschreckende ist jedoch, wohin die verdrängte Unruhe gewandert ist. Sie hat sich schlicht und einfach verlagert: weg von den Stühlen im Inneren, hinaus auf den Gehweg vor unserer Eingangstür. Da die App den Patienten signalisiert, sie dürften bloß nicht zu früh erscheinen – andernfalls verfalle ihr Zeitslot angeblich –, irren nun Dutzende Menschen in einem Umkreis von zweihundert Metern um den Häuserblock. Sie ziehen nervös an E-Zigaretten, spähen spätabends noch durch unsere Milchglasfenster oder drängen sich im strömenden Regen unter dem schmalen Vordach der Bäckerei gegenüber. Der Empfangsbereich im Inneren wirkt nun zwar verwaist und herrlich geordnet, doch draußen braut sich ein ungesunder Druck zusammen. Die Verunsicherung der Patienten wurde nicht aufgelöst, sondern externalisiert. Sie warten nun im verborgenen, unkontrollierten Raum und betreten die Praxis mit einer weitaus geringeren Frustrationstoleranz als früher. Wenn sie dann aufgerufen werden, schlägt die scheinbare Sanftheit des digitalen Empfangs in pure Ungeduld um. Das System hat also nicht das Warten verkürzt, sondern lediglich die Kulisse ausgetauscht und das Problem vor die Tür verfrachtet, wo es nun klammheimlich wächst.\n\nDiese geografische Entgrenzung des Wartens offenbart ein tiefgreifendes Defizit moderner Technokratie, die menschliche Psyche in starre Algorithmen pressen zu wollen. Während das Innere unserer Praxis nun die sterile Ästhetik eines Flughafenterminals ausstrahlt, entfaltet sich jenseits der Glasfront eine urbane Anthropologie der Rastlosigkeit, die kaum noch etwas mit Heilung zu tun hat. Die gestressten Menschen auf dem Bürgersteig sind keine Patienten mehr, sondern Getriebene eines unsichtbaren Diktats, das sie zu Getriebenen ihrer eigenen Uhren degradiert. Sie verzehren ihre letzten Reserven an Geduld im kalten Wind, während drinnen die digitalen Monitore unerbittlich das nächste Phantom-Zeitfenster einblenden. Wenn sie schließlich eintreten, bringen sie den Lärm der Straße und die angestaute Wälte eines zweihundert Meter langen Spießrutenlaufs mit in den Behandlungsraum. So hat die Digitalisierung nicht etwa den erhofften Frieden gebracht, sondern eine unsichtbare Barriere zwischen dem medizinischen Personal und den Hilfesuchenden errichtet, die jede empathische Annäherung im Keim erstickt. Es ist ein paradoxer Fortschritt, der das Chaos lediglich outgesourct hat, um eine makellose Fassade zu wahren, während die reale Not der Menschen draußen auf dem Pflaster ungesehen weiterkocht und bei jeder Türöffnung wie ein eisiger Luftzug hereinweht.",
+    "wordCount": 695,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Heilsbringer",
+        "lemma": "Heilsbringer",
+        "glosses": {
+          "es": "savior / bringer of salvation",
+          "en": "savior / bringer of salvation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gespenstische",
+        "lemma": "gespenstische",
+        "glosses": {
+          "es": "ghostly / eerie",
+          "en": "ghostly / eerie"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zeitfenster-Link",
+        "lemma": "Zeitfenster-Link",
+        "glosses": {
+          "es": "time-slot link",
+          "en": "time-slot link"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "externalisiert",
+        "lemma": "externalisiert",
+        "glosses": {
+          "es": "externalized",
+          "en": "externalized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verfrachtet",
+        "lemma": "verfrachtet",
+        "glosses": {
+          "es": "transferred / hauled away (verfrachtet)",
+          "en": "transferred / hauled away (verfrachtet)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Frustrationstoleranz",
+        "lemma": "Frustrationstoleranz",
+        "glosses": {
+          "es": "frustration tolerance",
+          "en": "frustration tolerance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.4,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welche zentrale Entwicklung beschreibt die Autorin in ihrem Tagebucheintrag?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Das neue System hat die Unruhe der Patienten lediglich nach draußen verlagert, statt sie zu beseitigen."
+        },
+        {
+          "id": "a2",
+          "text": "Die Digitalisierung hat zu einer echten und nachhaltigen Verkürzung der gesamten Wartezeiten geführt."
+        },
+        {
+          "id": "a3",
+          "text": "Die Patienten kommunizieren heute digital miteinander, statt im Wartezimmer analog zu streiten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das System hat also nicht das Warten verkürzt, sondern lediglich die Kulisse ausgetauscht und das Problem vor die Tür verfrachtet, wo es nun klammheimlich wächst.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wie verhielten sich die Patienten im Wartezimmer früher im Vergleich zu heute?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie blickten stundenlang schweigend auf ihre Smartphones."
+        },
+        {
+          "id": "a2",
+          "text": "Sie diskutierten offen miteinander und teilten so ihren Frust."
+        },
+        {
+          "id": "a3",
+          "text": "Sie beschwerten sich systematisch beim medizinischen Personal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vor allem aber gab es einen ständigen, ungefilterten Dialog. Wer hereinkam, sah sofort, woran er war. Ein Blick in den Raum genügte, um die eigene Position in der unsichtbaren Hierarchie der Ankunft zu begreifen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Wirkung hat die App laut Text auf das subjektive Zeitempfinden der Patienten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie sorgt dafür, dass Patienten freiwillig länger spazieren gehen."
+        },
+        {
+          "id": "a2",
+          "text": "Sie klärt die Patienten transparent über ärztliche Verzögerungen auf."
+        },
+        {
+          "id": "a3",
+          "text": "Sie erzeugt eine unrealistische Erwartung an absolute Pünktlichkeit."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die App gaukelt ihnen eine absolute Berechenbarkeit vor, die der Praxisalltag schlicht unmöglich einhalten kann.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum verbringen viele Patienten ihre Wartezeit nun außerhalb der Praxisräume?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil sie befürchten, bei zu frühem Erscheinen ihren digitalen Zeitslot zu verlieren."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Praxis wegen strenger Hygienevorschriften nur wenige Personen gleichzeitig hineinlässt."
+        },
+        {
+          "id": "a3",
+          "text": "Weil sie die schlechte Luft im neu klimatisierten Wartezimmer meiden wollen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Da die App den Patienten signalisiert, sie dürften bloß nicht zu früh erscheinen – andernfalls verfalle ihr Zeitslot angeblich –, irren nun Dutzende Menschen in einem Umkreis von zweihundert Metern um den Häuserblock.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewertet die Ich-Erzählerin die vermeintliche Modernisierung der Praxis?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mit scharfer Ablehnung des gesamten medizinischen Fortschritts."
+        },
+        {
+          "id": "a2",
+          "text": "Mit kritischer Skepsis gegenüber den oberflächlichen Effekten."
+        },
+        {
+          "id": "a3",
+          "text": "Mit uneingeschränkter Begeisterung für die verbesserte Raumnutzung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Tatsächlich hat sich das Bild im Raum fundamental gewandelt, doch der Schein trügt auf eine Art und Weise, die mich zunehmend unruhig stimmt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff \"gespenstische\" im Kontext des zweiten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ungepflegt und von mysteriösen Phänomenen begleitet."
+        },
+        {
+          "id": "a2",
+          "text": "Vollkommen dunkel und für Besucher unzugänglich."
+        },
+        {
+          "id": "a3",
+          "text": "Unheimlich und durch eine unnatürliche Stille geprägt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Heute herrscht hier eine fast schon gespenstische Disziplin. Die Stühle stehen akkurat ausgerichtet, die Luft ist dank der neuen Klimaanlage temperiert, und von den Bildschirmen flimmert ein dezentes, beruhigendes Blau.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Absatz (ca. 120-150 Wörter) auf Deutsch, in dem Sie die These erörtern, ob digitale Effizienzsteigerungen im Dienstleistungsbereich oft zu einer unvorhergesehenen Belastung für andere Akteure führen. Nutzen Sie dabei mindestens zwei Konjunktionen zur Satzverknüpfung.",
+      "en": "Schreiben Sie einen kurzen Absatz (ca. 120-150 Wörter) auf Deutsch, in dem Sie die These erörtern, ob digitale Effizienzsteigerungen im Dienstleistungsbereich oft zu einer unvorhergesehenen Belastung für andere Akteure führen. Nutzen Sie dabei mindestens zwei Konjunktionen zur Satzverknüpfung."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den folgenden Tagebucheintrag und bearbeiten Sie anschließend die Aufgaben zum Textverständnis auf Niveau C1.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Paradoxon der Beruhigung | C1 Reading | WeLearn",
+      "en": "Das Paradoxon der Beruhigung | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein Tagebucheintrag aus dem Wartezimmer der Praxis Dr. Hansen beleuchtet die psychologischen Effekte eines neuen digitalen Wartesystems.",
+      "en": "Ein Tagebucheintrag aus dem Wartezimmer der Praxis Dr. Hansen beleuchtet die psychologischen Effekte eines neuen digitalen Wartesystems."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-notes-from-the-roof",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Konflikt um die Solaranlage",
+      "en": "Konflikt um die Solaranlage"
+    },
+    "intro": {
+      "es": "Ein E-Mail-Wechsel zwischen einer Wohnungsbesitzerin und der Hausverwaltung beleuchtet die schwierigen Eigentümerstrukturen bei energetischen Sanierungen.",
+      "en": "Ein E-Mail-Wechsel zwischen einer Wohnungsbesitzerin und der Hausverwaltung beleuchtet die schwierigen Eigentümerstrukturen bei energetischen Sanierungen."
+    },
+    "mission": {
+      "es": "Lesen Sie den folgenden E-Mail-Wechsel und beantworten Sie die Fragen zum Textinhalt.",
+      "en": "Lesen Sie den folgenden E-Mail-Wechsel und beantworten Sie die Fragen zum Textinhalt."
+    },
+    "targetText": "Sehr geehrte Frau Dr. Albers, ich wende mich an Sie in Ihrer Eigenschaft als Beiratsvorsitzende der WEG Sonnenwinkel, da mich gestern Abend ein besorgter Brief von Herrn Kaden erreichte. Er moniert darin vehement, dass die außerordentliche Eigentümerversammlung zur Installation der Photovoltaikanlage auf unserem Flachdach unter fragwürdigen Umständen einberufen worden sei und dass sein Stimmrecht übergangen wurde. Wie Sie wissen, haben wir nach monatelanger Vorbereitung und intensiven Beratungen mit dem Solarteur beschlossen, das Projekt anzugehen, um langfristig die Betriebskosten zu senken und unseren CO2-Fußabdruck zu minimieren. Die Mehrheit der anwesenden Stimmen war im Protokoll als ausreichend vermerkt worden. Herr Kaden argumentiert nun jedoch gestützt auf Paragraf zwölf unserer Gemeinschaftsordnung, dass bei wesentlichen baulichen Veränderungen am Gemeinschaftseigentum, die eine Nutzungsänderung des Daches implizieren, eine qualifizierte Mehrheit erforderlich ist, die laut seiner Lesart schlichtmals nicht erreicht wurde. Zwar ist im Gesetz von einer erleichterten Beschlussfassung für erneuerbare Energien die Rede, doch unsere spezifische Teilungserklärung enthält Klauseln, die bei baulichen Eingriffen in die Dachhaut Sonderrechte der im obersten Geschoss wohnenden Parteien festschreiben. Da Herr Kaden das Penthouse besitzt und sein Sondernutzungsrecht am Luftraum über dem Dach direkt berührt ist, stellt sich die drängende Frage, ob sein Veto tatsächlich aufschiebende Wirkung entfaltet oder ob es sich lediglich um ein unbegründetes Aufbäumen gegen den energetischen Fortschritt handelt. Ich bitte Sie daher dringend um Ihre juristische Einschätzung sowie um einen Vorschlag, wie wir das Projekt vor dem anstehenden Frühlingsbeginn noch retten können, ohne einen langwierigen Rechtsstreit zu riskieren.\n\nSehr geehrte Frau Hantke, ich danke Ihnen für Ihre ausführliche Schilderung, auch wenn mich die Nachricht über Herrn Kadens Intervention keineswegs überrascht. Ich habe die betreffende Klausel in unserer Gemeinschaftsordnung noch gestern Abend studiert und muss Ihnen leider mitteilen, dass Herr Kaden formell im Recht zu sein scheint, so unangenehm das für die Gesamtgemeinschaft auch sein mag. Die gesetzlichen Neuerungen zur Förderung von Solaranlagen greifen in unserem konkreten Fall nur bedingt, da die Teilungserklärung aus den Neunzigerjahren dem Dachgeschossinhaber explizit ein Mitspracherecht bei allen baulichen Maßnahmen einräumt, die über die bloße Instandhaltung hinausgehen. Da die Montage der Kollektoren bohrungsbedingt in die Dachabdichtung eingreift, handelt es sich juristisch eben nicht um eine reine Erhaltungsmaßnahme, sondern um eine bauliche Veränderung von gewissem Ausmaß. Herr Kaden hat bereits angekündigt, den Beschluss gerichtlich anfechten zu wollen, sollte der Vorstand nicht umgehend einlenken und die Arbeiten stoppen. Allerdings sollten wir den Fehler nicht ausschließlich bei der angeblichen Renitenz von Herrn Kaden suchen, sondern uns eingestehen, dass die Hausverwaltung bei der Ladung zur Versammlung die Fristen sehr knapp bemessen hat. Die späte Zustellung der Unterlagen hat dazu geführt, dass sich einige Eigentümer unzureichend informiert fühlten, was den Nährboden für diesen Konflikt erst bereitet hat. Wir dürfen nun keinesfalls den Fehler begehen, die Baumaßnahmen auf gut Glück zu beginnen, da ein vollstreckbarer Baustopp im Nachhinein ungleich höhere Kosten verursachen würde als ein temporäres Innehalten und Nachverhandeln.\n\nSehr geehrte Frau Dr. Albers, Ihre Einschätzung schmerzt zwar, aber sie deckt sich leider mit den Warnungen, die mir gestern aus dem Kreis der jüngeren Eigentümer zugetragen wurden. Es ist wahrlich frustrierend, wenn der dringend notwendige Klimaschutz an verstaubten Paragrafen und dem Egoismus einzelner Penthouse-Besitzer zu scheitern droht, während die Allgemeinheit unter den steigenden Energiekosten ächzt. Wenn ich Herrn Kadens Schreiben jedoch richtig deuten, geht es ihm gar nicht primär um die technische Anlage an sich, sondern vielmehr um die Verteilung der künftigen Einspeisevergütung und um die Frage, wer für eventuelle Schäden an der Dachabdichtung nach Ablauf der Gewährleistung aufkommt. Vielleicht sollten wir versuchen, ihm den Wind aus den Segeln zu nehmen, indem wir ihm vertraglich zusichern, dass die WEG sämtliche Haftungsrisiken für das Dach übernimmt und er im Gegenzug seine Blockadehaltung aufgibt. Ein solcheslenkendes Entgegenkommen könnte den gordischen Knoten zerschlagen, ohne dass wir das Gesicht verlieren oder die Montagefirma vertraglich belangen müssen. Ich werde mich heute noch mit dem Solarteur kurzschließen, um zu eruieren, ob eine modifizierte Montagevariante ohne direkte Durchdringung der Dachhaut technisch machbar wäre, womit Herr Kadens Sonderrecht juristisch gar nicht erst berührt würde. Bitte geben Sie mir kurz Rückruf, ob Sie diesen diplomatischen Weg mittragen würden.\n\nLiebe Frau Hantke, Ihr Vorstoß klingt ambitioniert, doch ich rate zur äußersten Vorsicht bei solchen Sonderabsprachen, da sie schnell den Gleichbehandlungsgrundsatz der WEG verletzen könnten. Wenn wir Herrn Kaden exklusive Garantien einräumen, um seinen Widerstand zu brechen, fordern die übrigen Eigentümer im nächsten Jahr womöglich ähnliche Sonderrechte bei der Fassadengestaltung oder dem Balkonanbau. Dennoch halte ich Ihren technischen Lösungsansatz mit der ballastierten Aufständerung ohne Dachdurchdringung für einen echten Lichtblick aus dieser Sackgasse. Wenn der Solarteur bestätigt, dass das Gewicht statisch unbedenklich ist und kein Eingriff in die geschützte Dachhaut stattfindet, entfällt Kadens rechtliche Handhabe zur Blockade schlagartig, da sein Sondernutzungsrecht dann gar nicht mehr tangiert wird. Ich schlage vor, dass wir die anstehende ordentliche Eigentümerversammlung im nächsten Monat nutzen, um diesen modifizierten Plan offiziell vorzustellen und den alten, umstrittenen Beschluss sauber zu ersetzen. Bis dahin sollten Sie die beauftragte Handwerksfirma anweisen, die Arbeiten vorläufig ruhen zu lassen, um keine vollendeten Tatsachen zu schaffen, die die Richter im Falle einer Klage nur verärgern würden. Lassen Sie uns gemeinsam Stärke und Augenmaß beweisen, damit dieses zukunftsweisende Projekt nicht an formalen Hürden scheitert.",
+    "wordCount": 850,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "moniert",
+        "lemma": "moniert",
+        "glosses": {
+          "es": "complains about",
+          "en": "complains about"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Teilungserklärung",
+        "lemma": "Teilungserklärung",
+        "glosses": {
+          "es": "declaration of division",
+          "en": "declaration of division"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Renitenz",
+        "lemma": "Renitenz",
+        "glosses": {
+          "es": "refractariness",
+          "en": "refractariness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gleichbehandlungsgrundsatz",
+        "lemma": "Gleichbehandlungsgrundsatz",
+        "glosses": {
+          "es": "principle of equal treatment",
+          "en": "principle of equal treatment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Sackgasse",
+        "lemma": "Sackgasse",
+        "glosses": {
+          "es": "dead end",
+          "en": "dead end"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ballastierten",
+        "lemma": "ballastierten",
+        "glosses": {
+          "es": "ballasted",
+          "en": "ballasted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.6,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches übergeordnete Thema wird in den E-Mails verhandelt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die rechtlichen Hürden und Lösungswege bei der Installation einer Solaranlage."
+        },
+        {
+          "id": "a2",
+          "text": "Die finanzielle Pleite der Hausverwaltung."
+        },
+        {
+          "id": "a3",
+          "text": "Der vollständige Abriss des Daches."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sehr geehrte Frau Dr. Albers, ich wende mich an Sie in Ihrer Eigenschaft als Beiratsvorsitzende der WEG Sonnenwinkel, da mich gestern Abend ein besorgter Brief von Herrn Kaden erreichte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche technische Alternative wird am Ende als möglicher Ausweg diskutiert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein kompletter Umzug der Solaranlage auf die Fassade."
+        },
+        {
+          "id": "a2",
+          "text": "Eine Montage ohne Dachdurchdringung."
+        },
+        {
+          "id": "a3",
+          "text": "Die Nutzung eines externen Grundstücks."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ich schlage vor, dass wir die anstehende ordentliche Eigentümerversammlung im nächsten Monat nutzen, um diesen modifizierten Plan offiziell vorzustellen und den alten, umstrittenen Beschluss sauber zu ersetzen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum zeigt sich Frau Dr. Albers skeptisch gegenüber exklusiven Sonderabsprachen mit Herrn Kaden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie befürchtet Streit mit der beauftragten Handwerksfirma."
+        },
+        {
+          "id": "a2",
+          "text": "Sie glaubt nicht an die technische Umsetzung der Anlage."
+        },
+        {
+          "id": "a3",
+          "text": "Sie warnt vor einer Verletzung des Gleichbehandlungsgrundsatzes."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Liebe Frau Hantke, Ihr Vorstoß klingt ambitioniert, doch ich rate zur äußersten Vorsicht bei solchen Sonderabsprachen, da sie schnell den Gleichbehandlungsgrundsatz der WEG verletzen könnten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt Frau Hantke mit ihrer ersten E-Mail an Frau Dr. Albers?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie möchte rechtliche Unterstützung und Ratschläge im Umgang mit Herrn Kadens Veto einholen."
+        },
+        {
+          "id": "a2",
+          "text": "Sie fordert den sofortigen Rücktritt des gesamten Verwaltungsrats."
+        },
+        {
+          "id": "a3",
+          "text": "Sie möchte den Bau der Solaranlage endgültig absagen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ich bitte Sie daher dringend um Ihre juristische Einschätzung sowie um einen Vorschlag, wie wir das Projekt vor dem anstehenden Frühlingsbeginn noch retten können, ohne einen langwierigen Rechtsstreit zu riskieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewerten die beiden Verfasserinnen den Widerstand von Herrn Kaden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie halten seine Argumente für völlig absurd und rechtlich haltlos."
+        },
+        {
+          "id": "a2",
+          "text": "Sie empfinden ihn als ärgerliches, aber formell berechtigtes Hindernis."
+        },
+        {
+          "id": "a3",
+          "text": "Sie begrüßen seine konstruktiven Vorschläge zur Verbesserung des Plans."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ich habe die betreffende Klausel in unserer Gemeinschaftsordnung noch gestern Abend studiert und muss Ihnen leider mitteilen, dass Herr Kaden formell im Recht zu sein scheint",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat das im Text verwendete Wort \"Renitenz\" im gegebenen Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Kreativität"
+        },
+        {
+          "id": "a2",
+          "text": "Inkompetenz"
+        },
+        {
+          "id": "a3",
+          "text": "Aufmüpfigkeit"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Allerdings sollten wir den Fehler nicht ausschließlich bei der angeblichen Renitenz von Herrn Kaden suchen, sondern uns eingestehen, dass die Hausverwaltung bei der Ladung zur Versammlung die Fristen sehr knapp bemessen hat.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie eine E-Mail an Herrn Kaden aus der Sicht der Hausverwaltung, in der Sie ihm die geplante technische Modifikation der Solaranlage ohne Dachdurchdringung erläutern und ihn um Einlenken bitten. Schreiben Sie etwa 150 bis 200 Wörter.",
+      "en": "Verfassen Sie eine E-Mail an Herrn Kaden aus der Sicht der Hausverwaltung, in der Sie ihm die geplante technische Modifikation der Solaranlage ohne Dachdurchdringung erläutern und ihn um Einlenken bitten. Schreiben Sie etwa 150 bis 200 Wörter."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den folgenden E-Mail-Wechsel und beantworten Sie die Fragen zum Textinhalt.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Konflikt um die Solaranlage | C1 Reading | WeLearn",
+      "en": "Konflikt um die Solaranlage | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein E-Mail-Wechsel zwischen einer Wohnungsbesitzerin und der Hausverwaltung beleuchtet die schwierigen Eigentümerstrukturen bei energetischen Sanierungen.",
+      "en": "Ein E-Mail-Wechsel zwischen einer Wohnungsbesitzerin und der Hausverwaltung beleuchtet die schwierigen Eigentümerstrukturen bei energetischen Sanierungen."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

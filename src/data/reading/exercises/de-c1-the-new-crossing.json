@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-new-crossing",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der Markierung",
+      "en": "Die Illusion der Markierung"
+    },
+    "intro": {
+      "es": "Ein offizieller Bericht feiert einen neuen Fußgängerüberweg als unfehlbaren Unfallschutz, verschweigt jedoch eine fundamentale Begleitmaßnahme. Untersuchen Sie den Text auf rhetorische Auslassungen.",
+      "en": "Ein offizieller Bericht feiert einen neuen Fußgängerüberweg als unfehlbaren Unfallschutz, verschweigt jedoch eine fundamentale Begleitmaßnahme. Untersuchen Sie den Text auf rhetorische Auslassungen."
+    },
+    "mission": {
+      "es": "Lesen Sie den Artikel und analysieren Sie, wie administrative Berichte durch selektive Kausalität ein verzerrtes Bild administrativer Erfolge zeichnen. Beantworten Sie anschließend die sechs Fragen.",
+      "en": "Lesen Sie den Artikel und analysieren Sie, wie administrative Berichte durch selektive Kausalität ein verzerrtes Bild administrativer Erfolge zeichnen. Beantworten Sie anschließend die sechs Fragen."
+    },
+    "targetText": "Im westfälischen Gellenbeck schien das Problem so alt wie die Hauptstraße selbst zu sein: Der Abschnitt zwischen der historischen Mühle und dem westlichen Marktplatz galt seit Jahren als unfallträchtiger Gefahrenpunkt. Erst vor wenigen Monaten installierte das Tiefbauamt dort nach langem Druck einer Bürgerinitiative einen beleuchteten Zebrastreifen, um den Fußgängerverkehr sicherer zu machen. Nun legte die Behörde eine stolze Bilanz vor, die belegen soll, dass die Zahl der Kollisionen zwischen Kraftfahrzeugen und Fußgängern im betreffenden Bereich umgehend und drastisch zurückgegangen ist. In dem offiziellen Papier wird der neue Überweg als der alleinige Heiligenschein des Erfolgs gefeiert, der die Verkehrssicherheit im Alleingang revolutioniert habe. Die feierliche Verkündung der Unfallstatistik liess dabei jedoch einen entscheidenden, parallel verlaufenden Eingriff gänzlich unerwähnt: Zeitgleich mit der Installation der Streifenbeleuchtung war das Tempolimit auf diesem gesamten Streckenabschnitt von fünfzig auf dreißig Stundenkilometer gesenkt worden, begleitet von verstärkten Radarkontrollen der örtlichen Polizei. Die beauftragte Stadträtin Dr. Renate Hauff betonte bei der Präsentation des Berichts gebetsmühlenartig, dass die visuelle Signalwirkung der Bodenmarkierung die Verkehrsteilnehmer zu einer intuitiven Verhaltensänderung motiviert habe, wodurch die unfallbegünstigenden Faktoren nachhaltig minimiert worden seien. Kritische Stimmen aus dem Stadtrat, angeführt von dem Verkehrsplaner Jörg Behrens, monieren jedoch zu Recht, dass hier Ursache und Wirkung willkürlich vermischt werden. Behrens argumentiert, dass nicht die weiße Farbe auf dem Asphalt, sondern die massiv reduzierte kinetische Energie der Fahrzeuge bei Tempo dreißig den entscheidenden Schutzfaktor darstellt. Physikalische Gesetze lassen sich eben durch noch so opulente Pressemitteilungen nicht außer Kraft setzen. Wenn ein Auto statt mit fünfzig nur noch mit dreißig Kilometern pro Stunde rollt, verkürzt sich der Bremsweg drastisch, und die Aufprallwucht sinkt im Ernstfall auf ein erträgliches Maß. Die Behördenführung wehrt sich gegen diesen Einwand mit dem Hinweis, dass die statistische Auswertung der vergangenen Monate keinen Raum für Spekulationen lasse. Man klammert sich an das Dogma des sichtbaren Fortschritts, weil sich aufgemalte Streifen im Jahresbericht ungleich besser vermarkten lassen als unpopuläre geschwindigkeitsbegrenzende Maßnahmen. Das Phänomen verdeutlicht ein klassisches Dilemma moderner Kommunalpolitik: Komplexe multikausale Prozesse werden auf monokausale Erfolgsgeschichten reduziert, um politische Legitimation zu erzeugen. Die Bürgerinnen und Bürger nehmen die veränderte Situation derweil pragmatisch wahr. Wer morgens die Straße überquert, spürt zwar die Erleichterung, lässt sich aber von den glattgebügelten Tabellen der Verwaltung nicht täuschen. Die Kontroverse in Gellenbeck zeigt beispielhaft, dass administrative Transparenz oft dort endet, wo sie den eigenen bürokratischen Triumph gefährden könnte. Am Ende bleibt ein neuer Zebrastreifen, der zweifellos nützlich ist, dessen triumphaler Alleinanspruch auf Unfallvermeidung sich bei Lichte besehen jedoch als administrative Inszenierung entpuppt, die wesentliche Variablen geflissen verschweigt.\n\nDiese anhaltende Instrumentalisierung statistischer Daten wirft unweigerlich die Frage auf, wie künftige Infrastrukturprojekte im Spannungsfeld zwischen wissenschaftlicher Evidenz und administrativer Selbstdarstellung verhandelt werden sollen. Wenn die politische Führungsgruppe weiterhin bereitwillig kausale Zusammenhänge verdreht, um opportunistische Narrative zu bedienen, schwindet langfristig das Vertrauen in die Verlässlichkeit kommunaler Planungen. Jörg Behrens und seine Mitstreiter fordern deshalb eine transparente Offenlegung aller flankierenden Maßnahmen bei künftigen Sicherheitsanalysen, anstatt komplexe verkehrspolitische Erfolge auf rein symbolische Baumaßnahmen zu reduzieren. Schließlich könnte eine ehrliche Bestandsaufnahme dazu führen, dass Tempo-30-Zonen flächendeckend als das etabliert werden, was sie tatsächlich sind: das wirksamste und verlässlichste Instrument zur Vermeidung schwerer Personenschäden im innerstädtischen Raum. Solange jedoch die Vermarktbarkeit einzelner, optisch auffälliger Elemente wie Leuchtstreifen höher gewichtet wird als die nüchterne physikalische Realität, bleibt die Gellenbecker Verkehrspolitik ein leuchtendes Beispiel für bürokratische Realitätsverweigerung. Die Anwohner der historischen Mühle werden sich daher auch in Zukunft darauf verlassen müssen, ihren gesunden Menschenverstand walten zu lassen, anstatt blind auf die geschönten Erfolgsmeldungen aus dem Rathaus zu vertrauen.\n\nDiese anhaltende Instrumentalisierung statistischer Daten wirft unweigerlich die Frage auf, wie künftige Infrastrukturprojekte im Spannungsfeld zwischen wissenschaftlicher Evidenz und administrativer Selbstdarstellung verhandelt werden sollen. Wenn die politische Führungsgruppe weiterhin bereitwillig kausale Zusammenhänge verdreht, um opportunistische Narrative zu bedienen, schwindet langfristig das Vertrauen in die Verlässlichkeit kommunaler Planungen. Jörg Behrens und seine Mitstreiter fordern deshalb eine transparente Offenlegung aller flankierenden Maßnahmen bei künftigen Sicherheitsanalysen, anstatt komplexe verkehrspolitische Erfolge auf rein symbolische Baumaßnahmen zu reduzieren. Schließlich könnte eine ehrliche Bestandsaufnahme dazu führen, dass Tempo-30-Zonen flächendeckend als das etabliert werden, was sie tatsächlich sind: das wirksamste und verlässlichste Instrument zur Vermeidung schwerer Personenschäden im innerstädtischen Raum. Solange jedoch die Vermarktbarkeit einzelner, optisch auffälliger Elemente wie Leuchtstreifen höher gewichtet wird als die nüchterne physikalische Realität, bleibt die Gellenbecker Verkehrspolitik ein leuchtendes Beispiel für bürokratische Realitätsverweigerung. Die Anwohner der historischen Mühle werden sich daher auch in Zukunft darauf verlassen müssen, ihren gesunden Menschenverstand walten zu lassen, anstatt blind auf die geschönten Erfolgsmeldungen aus dem Rathaus zu vertrauen.",
+    "wordCount": 740,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Unfallstatistik",
+        "lemma": "Unfallstatistik",
+        "glosses": {
+          "es": "accident statistics",
+          "en": "accident statistics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Eingriff",
+        "lemma": "Eingriff",
+        "glosses": {
+          "es": "intervention",
+          "en": "intervention"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gebetsmühlenartig",
+        "lemma": "gebetsmühlenartig",
+        "glosses": {
+          "es": "like a prayer wheel, repetitively",
+          "en": "like a prayer wheel, repetitively"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "monokausale",
+        "lemma": "monokausale",
+        "glosses": {
+          "es": "monocausal",
+          "en": "monocausal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dilemma",
+        "lemma": "Dilemma",
+        "glosses": {
+          "es": "dilemma",
+          "en": "dilemma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Inszenierung",
+        "lemma": "Inszenierung",
+        "glosses": {
+          "es": "staging, orchestration",
+          "en": "staging, orchestration"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.7,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text im Wesentlichen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Kritik an einer Behördenbilanz, die den Erfolg eines neuen Zebrastreifens fälschlicherweise feiert und dabei eine gleichzeitige Tempolimitierung verschweigt."
+        },
+        {
+          "id": "a2",
+          "text": "Um die technische Planung und den genauen Bauverlauf von Fußgängerüberwegen in deutschen Kleinstädten."
+        },
+        {
+          "id": "a3",
+          "text": "Um die generelle Abschaffung von Tempolimits durch die lokale Verwaltung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "In dem offiziellen Papier wird der neue Überweg als der alleinige Heiligenschein des Erfolgs gefeiert, der die Verkehrssicherheit im Alleingang revolutioniert habe. Die feierliche Verkündung der Unfallstatistik liess dabei jedoch einen entscheidenden, parallel verlaufenden Eingriff gänzlich unerwähnt: Zeitgleich mit der Installation der Streifenbeleuchtung war das Tempolimit auf diesem gesamten Streckenabschnitt von fünfzig auf dreißig Stundenkilometer gesenkt worden",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wer führt die kritischen Stimmen aus dem Stadtrat gegen die offizielle Darstellung an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Bürgerinitiative"
+        },
+        {
+          "id": "a2",
+          "text": "Der Verkehrsplaner Jörg Behrens"
+        },
+        {
+          "id": "a3",
+          "text": "Stadträtin Dr. Renate Hauff"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Kritische Stimmen aus dem Stadtrat, angeführt von dem Verkehrsplaner Jörg Behrens, monieren jedoch zu Recht, dass hier Ursache und Wirkung willkürlich vermischt werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum verschweigt die Verwaltung laut Text das neue Tempolimit im Bericht?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil Tempo-30-Zonen bei den Anwohnern extrem unbeliebt sind und man Unruhe vermeiden möchte."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Polizei die Geschwindigkeitskontrollen nicht ordnungsgemäß durchgeführt hat."
+        },
+        {
+          "id": "a3",
+          "text": "Weil sichtbare Markierungen sich für die Behörde besser vermarkten lassen als unpopuläre geschwindigkeitsbegrenzende Maßnahmen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Man klammert sich an das Dogma des sichtbaren Fortschritts, weil sich aufgemalte Streifen im Jahresbericht ungleich besser vermarkten lassen als unpopuläre geschwindigkeitsbegrenzende Maßnahmen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Autor mit der Erwähnung der physikalischen Gesetze im Zusammenhang mit der Geschwindigkeit?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er will belegen, dass nicht die optische Markierung, sondern die reduzierte Bremsweglänge und Aufprallwucht den Unfallrückgang verursachten."
+        },
+        {
+          "id": "a2",
+          "text": "Er möchte nachweisen, dass die Straße baulich mangelhaft konstruiert wurde und dringend komplett saniert werden muss."
+        },
+        {
+          "id": "a3",
+          "text": "Er kritisiert die unzureichende Beleuchtung des Zebrastreifens bei Nacht."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Behrens argumentiert, dass nicht die weiße Farbe auf dem Asphalt, sondern die massiv reduzierte kinetische Energie der Fahrzeuge bei Tempo dreißig den entscheidenden Schutzfaktor darstellt. Physikalische Gesetze lassen sich eben durch noch so opulente Pressemitteilungen nicht außer Kraft setzen. Wenn ein Auto statt mit fünfzig nur noch mit dreißig Kilometern pro Stunde rollt, verkürzt sich der Bremsweg drastisch, und die Aufprallwucht sinkt im Ernstfall auf ein erträgliches Maß.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Ton prägt die Darstellung der behördlichen Argumentation im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein vollkommen neutraler, wissenschaftlicher Berichtston ohne jegliche persönliche Wertung."
+        },
+        {
+          "id": "a2",
+          "text": "Ein skeptisch-analytischer Ton, der die bürokratische Schönfärberei und selektive Argumentation entlarvt."
+        },
+        {
+          "id": "a3",
+          "text": "Ein enthusiastischer und lobender Ton für die innovativen Ideen der lokalen Verwaltung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Das Phänomen verdeutlicht ein klassisches Dilemma moderner Kommunalpolitik: Komplexe multikausale Prozesse werden auf monokausale Erfolgsgeschichten reduziert, um politische Legitimation zu erzeugen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat das im Text verwendete Wort \"gebetsmühlenartig\" im Kontext der Aussage über Dr. Renate Hauff?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dass sie die Argumente in religiösen Zeremonien vortrug."
+        },
+        {
+          "id": "a2",
+          "text": "Dass sie sich bei ihren Aussagen auf alte religiöse Schriften berief."
+        },
+        {
+          "id": "a3",
+          "text": "Dass sie ihre Argumente monoton und unermüdlich immer wieder wiederholte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die beauftragte Stadträtin Dr. Renate Hauff betonte bei der Präsentation des Berichts gebetsmühlenartig, dass die visuelle Signalwirkung der Bodenmarkierung die Verkehrsteilnehmer zu einer intuitiven Verhaltensänderung motiviert habe",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen Kommentar (ca. 200 Wörter) für eine Lokalzeitung, in dem Sie erörtern, warum Verwaltungen dazu neigen, komplexe verkehrspolitische Maßnahmen auf einfache Prestigeprojekte zu reduzieren, und welche Folgen das für das Vertrauen der Bürger hat.",
+      "en": "Verfassen Sie einen Kommentar (ca. 200 Wörter) für eine Lokalzeitung, in dem Sie erörtern, warum Verwaltungen dazu neigen, komplexe verkehrspolitische Maßnahmen auf einfache Prestigeprojekte zu reduzieren, und welche Folgen das für das Vertrauen der Bürger hat."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Artikel und analysieren Sie, wie administrative Berichte durch selektive Kausalität ein verzerrtes Bild administrativer Erfolge zeichnen. Beantworten Sie anschließend die sechs Fragen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der Markierung | C1 Reading | WeLearn",
+      "en": "Die Illusion der Markierung | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein offizieller Bericht feiert einen neuen Fußgängerüberweg als unfehlbaren Unfallschutz, verschweigt jedoch eine fundamentale Begleitmaßnahme. Untersuchen Sie den Text auf rhetorische Auslassungen.",
+      "en": "Ein offizieller Bericht feiert einen neuen Fußgängerüberweg als unfehlbaren Unfallschutz, verschweigt jedoch eine fundamentale Begleitmaßnahme. Untersuchen Sie den Text auf rhetorische Auslassungen."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Echo im Band",
+      "en": "Das Echo im Band"
+    },
+    "intro": {
+      "es": "Eine erzählende Leseübung auf dem Niveau C1 über die Grenzen des Archivierens und die Bewahrung authentischer Sprechstimmen.",
+      "en": "Eine erzählende Leseübung auf dem Niveau C1 über die Grenzen des Archivierens und die Bewahrung authentischer Sprechstimmen."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text sorgfältig und beantworten Sie die folgenden Fragen zum Textverständnis auf Deutsch.",
+      "en": "Lesen Sie den Text sorgfältig und beantworten Sie die folgenden Fragen zum Textverständnis auf Deutsch."
+    },
+    "targetText": "Das Neonlicht summt leise über dem langen Eichentisch, auf dem die offenen Kassettenrekorder wie silberne Reliquien einer analogen Epoche ruhen. Dr. Elena Vogel, die leitende Archivarin des städtischen Mundarchivs, beugt sich über ein ausgebreitetes Transkript und reibt sich die müden Augen. Neben ihr sitzt Janosch, ein erfahrener Dokumentarfilmer und Geschichtenerzähler, der seit Wochen in den Audiobeständen wühlt, um eine immersive Klanginstallation für die kommende Dauerausstellung zu konzipieren. Die Luft im Raum riecht nach altem Papier und erhitzter Elektronik, während draußen der herbstliche Nieselregen unaufhörlich gegen die Bleiglasscheiben des Magazins trommelt. Es ist spät geworden, doch die angespannte Diskussion über die Integrität der Quellen lässt keinen Raum für Müdigkeit. Auf dem Tisch liegt das Interview mit Karl Moser, einem ehemaligen Werftarbeiter, dessen raue Stimme von einer fast vergessenen Ära zeugt.\n\n„Wir müssen hier dringend eingreifen, Janosch“, sagt Elena mit fester Stimme und deutet mit einem roten Korrekturstift auf eine Passage im Papier. „Mosers Grammatik bricht in diesem Satz völlig zusammen. Er verschluckt Endungen, verheddert sich in doppelten Verneinungen und wechselt die Zeiten mitten im Gedanken. Wenn wir diesen Text unkommentiert in die Publikation geben, wirkt das auf den Leser schlicht ungebildet und lenkt vom eigentlichen historischen Kern ab. Eine sprachliche Glättung ist hier kein Verrat am Original, sondern ein notwendiger Akt redaktioneller Fürsorge, um die Würde des Sprechers zu wahren.“ Sie blickt Janosch erwartungsvoll an, in der Hoffnung, dass er ihre professionelle Einschätzung teilt, die auf jahrelanger philologischer Erfahrung beruht.\n\nJanosch schüttelt jedoch langsam den Kopf und lehnt sich demonstrativ in seinem Stuhl zurück. Für ihn greift dieser Ansatz viel zu kurz, weil er das Lebendige im Gesprochenen opfert. „Du verwechselst Grammatik mit Wahrhaftigkeit, Elena“, entgegnet er, und seine tiefe Stimme klingt fast vorwurfsvoll. „Wenn du Karls Sätze korrigierst, tilgst du damit nicht nur stilistische Unebenheiten, sondern auch den Rhythmus seines Atems, seine Zögerlichkeit und den sozialen Druck, unter dem diese Erinnerungen entstanden sind. Jedes Zögern, jeder grammatikalische Bruch ist ein Fenster zu seiner Biografie. Sobald wir seine Rede glattbügeln, verwandeln wir einen Menschen aus Fleisch und Blut in eine blutleere Kunstfigur, die nur noch dazu dient, unsere eigenen ästhetischen Erwartungen an korrekte Schriftsprache zu erfüllen.“ Er greift nach den Kopfhörern und setzt sie auf, als wolle er sich dem Zugriff der Rotstift-Ästhetik entziehen.\n\nDer Konflikt zwischen den beiden berührt das fundamentale Dilemma jeder oralen Historiografie: Wie dokumentiert man Vergangenheit, ohne sie durch den Akt der Dokumentation unzulässig zu verfälschen? Elena argumentiert aus der Perspektive der Bewahrung, die auf Lesbarkeit und institutionelle Autorität setzt, während Janosch für die rohe, ungezähmte Präsenz plädiert, die das Risiko von Missverständnissen bewusst in Kauf nimmt. Sie streiten nicht über bloße Syntax, sondern über die Frage, wem die Deutungshoheit über das gesprochene Wort gehört – dem Sprecher im Moment der Aufnahme oder dem Archivierenden, der es für die Nachwelt aufbereitet. Jedes Argument wird abgewogen, doch keine Seite ist bereit, von ihrer Grundposition abzuweichen, da beide fürchten, das Wesentliche des Archivguts zu beschädigen.\n\nDie Auseinandersetzung gipfelt schließlich in einem harten Kompromiss, der niemanden ganz zufriedenstellt, aber die Arbeit voranbringt. Sie beschließen, für das gedruckte Begleitheft eine behutsam redigierte Version zu verwenden, während die akustische Installation im Ausstellungsraum den Originalton völlig ungeschnitten und mit all seinen Unebenheiten erlebbar machen soll. Als Janosch das Magazin verlässt und die schwere Eichentür hinter sich ins Fallschloss fällt, bleibt Elena allein im Summen des Neonlichts zurück. Sie blickt auf den Rotstift in ihrer Hand und weiß, dass der schmale Grat zwischen Bewahrung und Verfälschung niemals endgültig vermessen sein wird, solange Menschen ihre Geschichten einander anvertrauen.\n\nDieser pragmatische Ausweg wirft jedoch die dringende Frage auf, ob eine solche Aufteilung das Publikum nicht in zwei unterschiedliche Klassen von Rezipienten spaltet. Wer lediglich den Ausstellungskatalog liest, konsumiert eine gefällige, normierte Historie, während die Besucher der Installation mit der ungefilterten sozialen Wirklichkeit konfrontiert werden. Kritiker könnten einwenden, dass diese Dualität die Hierarchie zwischen geschriebener Hochsprache und gesprochenem Dialekt unzulässig zementiert, anstatt sie aufzubrechen. Schließlich prägt die gedruckte Publikation das dauerhafte wissenschaftliche Gedächtnis einer Stadt weitaus nachhaltiger als flüchtige Klangerlebnisse im abgedunkelten Raum. So bleibt als unbequeme Konsequenz die Erkenntnis zurück, dass selbst kompromisshafte Lösungen stets eine politische Entscheidung darüber treffen, welche Form von Erinnerung als würdig erachtet wird, in die Geschichtsbücher einzugehen. Elena spürt beim Gedanken daran, wie fragil ihre vermeintliche Objektivität im Angesicht der sprachlichen Vielfalt tatsächlich ist.",
+    "wordCount": 713,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Reliquien",
+        "lemma": "Reliquien",
+        "glosses": {
+          "es": "relics",
+          "en": "relics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "glattbügeln",
+        "lemma": "glattbügeln",
+        "glosses": {
+          "es": "to iron out / to smooth over",
+          "en": "to iron out / to smooth over"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dilemma",
+        "lemma": "Dilemma",
+        "glosses": {
+          "es": "dilemma",
+          "en": "dilemma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Deutungshoheit",
+        "lemma": "Deutungshoheit",
+        "glosses": {
+          "es": "interpretative authority",
+          "en": "interpretative authority"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gipfelt",
+        "lemma": "gipfelt",
+        "glosses": {
+          "es": "culminates",
+          "en": "culminates"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fallschloss",
+        "lemma": "Fallschloss",
+        "glosses": {
+          "es": "drop latch / spring lock",
+          "en": "drop latch / spring lock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um einen grundsätzlichen Streit über die Bearbeitung mündlicher Überlieferungen."
+        },
+        {
+          "id": "a2",
+          "text": "Um die technische Sanierung veralteter Audioaufnahmen im städtischen Archiv."
+        },
+        {
+          "id": "a3",
+          "text": "Um die finanzielle Rettung einer gefährdeten historischen Ausstellungsprojekt."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Der Konflikt zwischen den beiden berührt das fundamentale Dilemma jeder oralen Historiografie: Wie dokumentiert man Vergangenheit, ohne sie durch den Akt der Dokumentation unzulässig zu verfälschen?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkrete Maßnahme beschließen Elena und Janosch am Ende des Gesprächs?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie wollen das gesamte Interview ungeschnitten drucken und auf jegliche Audiowiedergabe verzichten."
+        },
+        {
+          "id": "a2",
+          "text": "Sie einigen sich auf eine redigierte Fassung im Begleitheft und den Originalton in der Installation."
+        },
+        {
+          "id": "a3",
+          "text": "Sie lehnen die Veröffentlichung des Interviews nach langer Diskussion komplett ab."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sie beschließen, für das gedruckte Begleitheft eine behutsam redigierte Version zu verwenden, während die akustische Installation im Ausstellungsraum den Originalton völlig ungeschnitten und mit all seinen Unebenheiten erlebbar machen soll.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung vertritt Janosch bezüglich Karl Mosers Sprachgebrauch?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er findet die ungenaue Sprache peinlich und plädiert ebenfalls für eine sofortige Korrektur."
+        },
+        {
+          "id": "a2",
+          "text": "Er glaubt, dass Karl absichtlich falsch gesprochen hat, um die Zuhörer zu verwirren."
+        },
+        {
+          "id": "a3",
+          "text": "Er betrachtet grammatikalische Brüche als wertvolle Zeugnisse der Biografie."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Jedes Zögern, jeder grammatikalische Bruch ist ein Fenster zu seiner Biografie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum möchte Elena die Sätze des Arbeiters korrigieren?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil sie verhindern will, dass der Sprecher ungebildet wirkt und der Kern verloren geht."
+        },
+        {
+          "id": "a2",
+          "text": "Weil sie den Auftrag hat, ein neues Grammatikbuch für Schulen zu schreiben."
+        },
+        {
+          "id": "a3",
+          "text": "Weil sie die technischen Fehler der Kassette ausgleichen muss."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Wenn wir diesen Text unkommentiert in die Publikation geben, wirkt das auf den Leser schlicht ungebildet und lenkt vom eigentlichen historischen Kern ab.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie wird die Atmosphäre während der Diskussion im Magazin beschrieben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Locker und humorvoll bei einer Tasse Kaffee."
+        },
+        {
+          "id": "a2",
+          "text": "Angespannt und von tiefem Ernst geprägt."
+        },
+        {
+          "id": "a3",
+          "text": "Gleichgültig und ohne echtes Interesse."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Es ist spät geworden, doch die angespannte Diskussion über die Integrität der Quellen lässt keinen Raum für Müdigkeit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das im Text verwendete Wort „Deutungshoheit“ im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die absolute Kontrolle über die finanzielle Verteilung von Geldern."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Fähigkeit, alte Tonbänder fehlerfrei zu restaurieren."
+        },
+        {
+          "id": "a3",
+          "text": "Das alleinige Recht, die Bedeutung und Interpretation des Gesprochenen festzulegen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie streiten nicht über bloße Syntax, sondern über die Frage, wem die Deutungshoheit über das gesprochene Wort gehört – dem Sprecher im Moment der Aufnahme oder dem Archivierenden, der es für die Nachwelt aufbereitet.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (150–200 Wörter) auf Deutsch, in dem Sie Stellung zu dem Dilemma beziehen: Sollten historische Interviews grammatikalisch korrigiert werden oder muss das Original zwingend erhalten bleiben? Begründen Sie Ihre Meinung.",
+      "en": "Schreiben Sie einen kurzen Kommentar (150–200 Wörter) auf Deutsch, in dem Sie Stellung zu dem Dilemma beziehen: Sollten historische Interviews grammatikalisch korrigiert werden oder muss das Original zwingend erhalten bleiben? Begründen Sie Ihre Meinung."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Text sorgfältig und beantworten Sie die folgenden Fragen zum Textverständnis auf Deutsch.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Echo im Band | C1 Reading | WeLearn",
+      "en": "Das Echo im Band | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine erzählende Leseübung auf dem Niveau C1 über die Grenzen des Archivierens und die Bewahrung authentischer Sprechstimmen.",
+      "en": "Eine erzählende Leseübung auf dem Niveau C1 über die Grenzen des Archivierens und die Bewahrung authentischer Sprechstimmen."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

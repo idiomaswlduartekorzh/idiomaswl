@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-quiet-street",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der verkehrsberuhigten Zone",
+      "en": "Die Illusion der verkehrsberuhigten Zone"
+    },
+    "intro": {
+      "es": "Ein journalistischer Bericht über nächtliche Verkehrsströme beleuchtet die Diskrepanz zwischen statistischen Zählungen und dem tatsächlichen Empfinden von Anwohnern in einem dicht besiedelten Viertel.",
+      "en": "Ein journalistischer Bericht über nächtliche Verkehrsströme beleuchtet die Diskrepanz zwischen statistischen Zählungen und dem tatsächlichen Empfinden von Anwohnern in einem dicht besiedelten Viertel."
+    },
+    "mission": {
+      "es": "Lesen Sie den Artikel über die umstrittene Verkehrsberuhigung in der Nordstadt und analysieren Sie die Argumente der verschiedenen Akteure sowie die zugrundeliegenden Interessenkonflikte.",
+      "en": "Lesen Sie den Artikel über die umstrittene Verkehrsberuhigung in der Nordstadt und analysieren Sie die Argumente der verschiedenen Akteure sowie die zugrundeliegenden Interessenkonflikte."
+    },
+    "targetText": "Als die Stadtverwaltung im vergangenen Herbst das Konzept der sogenannten schützenden Nachtruhe im Quartier Nord vorstellte, klang das Versprechen verlockend. Durch gezielte Einengungen der Fahrbahnen und neue Vorfahrtsregeln sollte der Durchgangsverkehr zwischen einundzwanzig Uhr und sechs Uhr morgens drastisch reduziert werden. Nun liegt der erste Evaluierungsbericht vor, verfasst von Verkehrsplaner Dr. Henrik Bergmann, und er offenbart eine bemerkenswerte Paradoxie: Während die stationären Induktionsschleifen an den Hauptzufahrten tatsächlich einen Rückgang der registrierten Kfz um zwanzig Prozent ausweisen, klagen die Gewerbetreibenden und Anwohner der betroffenen Nebenstraßen über eine unverkennbare Zunahme von Motorengeräuschen und abrupten Bremsmanövern zur späten Stunde. Es stellt sich somit die dringliche Frage, wer eigentlich die Definitionsmacht darüber besitzt, was eine erfolgreiche Beruhigung ausmacht.\n\nBergmann verteidigt seine Methodik mit der kühlen Rationalität des Statistikers. Seine Datensätze, erhoben durch automatisierte Kennzeichenerfassung und akustische Sensoren, sprechen eine scheinbar eindeutige Sprache. Gemessen an den Parametern des städtischen Masterplans gilt die Maßnahme als Musterbeispiel für gelungene Stadtteilveredelung. Doch wenn man die Zahlen genauer betrachtet, offenbart sich ein blinder Fleck im System. Die Reduktion der Kfz auf den Hauptachsen korreliert keineswegs mit einem simulanen Rückgang des Gesamtverkehrsaufkommens im Viertel. Vielmehr hat sich der Strom der Fahrzeuge lediglich verlagert. Die Autofahrer, die nun durch die baulichen Barrieren auf den großen Alleen ausgebremst werden, weichen über ein Netz kleiner, ungeschützter Wohnstraßen aus, um die zähflüssigen Engpässe zu umgehen.\n\nDies führt zu jener Reibung, die das soziale Gefüge im Quartier zunehmend belastet. Elena Rostova, Inhaberin einer traditionsreichen Eckkneipe am Rosenplatz, beobachtet diese Entwicklung mit wachsender Sorge. Sie schildert Szenen, in denen Lieferwagen und ortskundige Pendler hupend durch die schmale Gasse drängen, weil entgegenkommende Fahrzeuge auf den zugeparkten Straßen nicht ausweichen können. Rostova bezweifelt nicht die Redlichkeit der städtischen Gutachter, wohl aber deren Wahrnehmungshorizont. Für sie und ihre Nachbarn ist eine Straße dann erfolgreich beruhigt, wenn die subjektive Belastung sinkt, nicht wenn eine abstrakte Kennzahl im Excel-Sheet der Verwaltung grün leuchtet. Die Diskrepanz zwischen administrativer Bilanz und gelebter Realität könnte kaum größer sein.\n\nDer Konflikt verdichtet sich, wenn man die unterschiedlichen Interessenlagen analysiert. Die Stadtverwaltung agiert unter dem Druck, europaweite Grenzwerte für Lärmemissionen einzuhalten. Gelingt es, auf dem Papier die Durchschnittsbelastung zu senken, gilt das Projekt als politischer Erfolg. Ob der Lärm lediglich in andere Straßen verschoben wird, wo weniger Messgeräte installiert sind, fällt in der übergeordneten Bilanz kaum ins Gewicht. Die Bürger hingegen erleben den Stadtraum nicht als mathematisches Mittel, sondern als zusammenhängenden Lebensraum. Wenn eine Maßnahme den Durchgangsverkehr zwar von der breiten Hauptstraße fernhält, ihn aber direkt unter die Schlafzimmerfenster einer schmalen Seitenstraße drückt, empfinden die Betroffenen dies als Versagen der Planung.\n\nAm Ende bleibt eine ungelöste gesellschaftliche Spannung zurück. Die Definition von Erfolg wird zum Instrument der Macht. Wer die Kriterien festlegt, bestimmt auch das Resultat. Solange die kommunale Verkehrsplanung primär darauf ausgerichtet ist, formale Vorgaben zu erfüllen, anstatt die tatsächliche Mobilitätskultur ganzheitlich zu steuern, werden solche Berichte ein Zerrbild der Wirklichkeit bleiben. Der Fall im Quartier Nord zeigt exemplarisch, dass weniger gezählte Fahrzeuge auf einer bestimmten Zählstelle noch lange keine ruhigere Nachbarschaft bedeuten. Die eigentliche Herausforderung besteht darin, Mobilität nicht nur zu kanalisieren, sondern die verkehrspolitischen Paradigmen grundlegend zu überdenken.\n\nUm diesen gordischen Knoten zu zerschlagen, fordern Stadtsoziologen nun einen radikalen Perspektivwechsel, der die klassische Ingenieurskunst mit partizipativen Ansätzen verknüpft. Statt weiterhin auf administrative Verdrängungseffekte zu setzen, müsse die Verkehrsberuhigung als gesamtstädtische Aufgabe begriffen werden, die den motorisierten Individualverkehr an den Randzonen des Quartiers konsequent abfängt, anstatt ihn lediglich innerhalb des Wohngebiets umzuleiten. Ein solches Konzept erfordert nicht nur den Ausbau von Quartiersgaragen und attraktiven Mobilstationen, sondern vor allem den mutigen Entschluss, Straßenzüge gänzlich für den Durchgangsverkehr zu sperren. Nur wenn die physischen Barrieren so gesetzt werden, dass Schlupflöcher und Ausweichrouten physisch unmöglich sind, lässt sich die Diskrepanz zwischen statistischem Erfolg und gefühlter Belastung überwinden. Bis dahin wird das Quartier Nord ein Laboratorium bleiben, in dem die Grenzen einer technokratischen Stadtplanung schmerzhaft zutage treten. Die Lehre aus diesem Fall sollte deshalb lauten, dass echte Lebensqualität im urbanen Raum nicht durch administrative Bilanzierung erzeugt werden kann, sondern das Resultat eines echten Dialogs zwischen Verwaltung, Wissenschaft und den direkt betroffenen Anwohnern ist, die ihren Alltag nicht nach Excel-Tabellen ausrichten können.",
+    "wordCount": 683,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Paradoxie",
+        "lemma": "Paradoxie",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Induktionsschleifen",
+        "lemma": "Induktionsschleifen",
+        "glosses": {
+          "es": "induction loops",
+          "en": "induction loops"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Wahrnehmungshorizont",
+        "lemma": "Wahrnehmungshorizont",
+        "glosses": {
+          "es": "horizon of perception",
+          "en": "horizon of perception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emissionen",
+        "lemma": "emissionen",
+        "glosses": {
+          "es": "emissions",
+          "en": "emissions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zerrbild",
+        "lemma": "Zerrbild",
+        "glosses": {
+          "es": "distorted image",
+          "en": "distorted image"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Paradigmen",
+        "lemma": "Paradigmen",
+        "glosses": {
+          "es": "paradigms",
+          "en": "paradigms"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches Hauptproblem wird in dem Artikel über die Verkehrsberuhigung im Quartier Nord geschildert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die offiziellen Verkehrsdaten stehen im Widerspruch zum spürbaren Lärmproblem in den Nebenstraßen."
+        },
+        {
+          "id": "a2",
+          "text": "Die Stadtverwaltung hat den Autoverkehr im gesamten Stadtgebiet erfolgreich und dauerhaft halbiert."
+        },
+        {
+          "id": "a3",
+          "text": "Die Anwohner fordern eine vollständige Sperrung des Viertels für sämtliche Fahrzeuge zu jeder Tageszeit."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Während die stationären Induktionsschleifen an den Hauptzufahrten tatsächlich einen Rückgang der registrierten Kfz um zwanzig Prozent ausweisen, klagen die Gewerbetreibenden und Anwohner der betroffenen Nebenstraßen über eine unverkennbare Zunahme von Motorengeräuschen und abrupten Bremsmanövern zur späten Stunde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wie bewertet der Verkehrsplaner Dr. Henrik Bergmann die getroffenen Maßnahmen anhand seiner Daten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er sieht sie kritisch und fordert einen sofortigen Baustopp."
+        },
+        {
+          "id": "a2",
+          "text": "Er hält sie aufgrund seiner Messungen für ein Musterbeispiel."
+        },
+        {
+          "id": "a3",
+          "text": "Er gibt zu, dass die Belastung für die Anwohner gestiegen ist."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Gemessen an den Parametern des städtischen Masterplans gilt die Maßnahme als Musterbeispiel für gelungene Stadtteilveredelung.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Was lässt sich über die Motivation der Stadtverwaltung bei der Umsetzung des Projekts ableiten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie handelt vor allem im Auftrag der lokalen Gastronomie."
+        },
+        {
+          "id": "a2",
+          "text": "Sie will den Autoverkehr komplett durch Fahrräder ersetzen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie möchte primär formale Grenzwerte auf dem Papier einhalten."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Stadtverwaltung agiert unter dem Druck, europaweite Grenzwerte für Lärmemissionen einzuhalten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum führt Elena Rostova ein Beispiel über hupende Lieferwagen und Pendler an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Unzulänglichkeit der städtischen Messmethoden an einem konkreten Beispiel zu belegen"
+        },
+        {
+          "id": "a2",
+          "text": "Um zu beweisen, dass die Lieferdienste ihre Arbeitszeiten völlig falsch planen"
+        },
+        {
+          "id": "a3",
+          "text": "Um eine juristische Klage gegen die lokalen Pendler vorzubereiten"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Rostova bezweifelt nicht die Redlichkeit der städtischen Gutachter, wohl aber deren Wahrnehmungshorizont.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Tonfall prägt die Auseinandersetzung zwischen der Verwaltung und den Anwohnern in dem Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein humorvoller und versöhnlicher Dialog über gemeinsame Ziele"
+        },
+        {
+          "id": "a2",
+          "text": "Ein analytisch distanzierter Konflikt zwischen administrativer Bilanz und gelebter Realität"
+        },
+        {
+          "id": "a3",
+          "text": "Eine aggressive Polemik gegen alle Autofahrer und Gewerbetreibenden"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Diskrepanz zwischen administrativer Bilanz und gelebter Realität könnte kaum größer sein.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat das Wort Zerrbild im letzten Absatz des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine exakte und detaillierte wissenschaftliche Untersuchung"
+        },
+        {
+          "id": "a2",
+          "text": "Ein künstlerisches Gemälde zur Dokumentation des Verkehrs"
+        },
+        {
+          "id": "a3",
+          "text": "Eine fehlerhafte oder verzerrte Darstellung der Wirklichkeit"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Solange die kommunale Verkehrsplanung primär darauf ausgerichtet ist, formale Vorgaben zu erfüllen, anstatt die tatsächliche Mobilitätskultur ganzheitlich zu steuern, werden solche Berichte ein Zerrbild der Wirklichkeit bleiben.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar aus Sicht eines Anwohners, der die Ergebnisse des Verkehrsberuhigungsberichts kritisch kommentiert und fordert, dass bei zukünftigen Planungen die tatsächliche Lärmbelastung in den Seitenstraßen stärker berücksichtigt wird.",
+      "en": "Verfassen Sie einen kurzen Kommentar aus Sicht eines Anwohners, der die Ergebnisse des Verkehrsberuhigungsberichts kritisch kommentiert und fordert, dass bei zukünftigen Planungen die tatsächliche Lärmbelastung in den Seitenstraßen stärker berücksichtigt wird."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Artikel über die umstrittene Verkehrsberuhigung in der Nordstadt und analysieren Sie die Argumente der verschiedenen Akteure sowie die zugrundeliegenden Interessenkonflikte.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der verkehrsberuhigten Zone | C1 Reading | WeLearn",
+      "en": "Die Illusion der verkehrsberuhigten Zone | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein journalistischer Bericht über nächtliche Verkehrsströme beleuchtet die Diskrepanz zwischen statistischen Zählungen und dem tatsächlichen Empfinden von Anwohnern in einem dicht besiedelten Viertel.",
+      "en": "Ein journalistischer Bericht über nächtliche Verkehrsströme beleuchtet die Diskrepanz zwischen statistischen Zählungen und dem tatsächlichen Empfinden von Anwohnern in einem dicht besiedelten Viertel."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

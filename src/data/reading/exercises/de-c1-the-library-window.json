@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-library-window",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das nächtliche Foyer",
+      "en": "Das nächtliche Foyer"
+    },
+    "intro": {
+      "es": "Ein Tagebucheintrag aus der Stadtbibliothek beleuchtet den schmalen Grat zwischen erweiterten Öffnungszeiten und echter sozialer Inklusion.",
+      "en": "Ein Tagebucheintrag aus der Stadtbibliothek beleuchtet den schmalen Grat zwischen erweiterten Öffnungszeiten und echter sozialer Inklusion."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text und analysieren Sie, wie organisatorische Reformen oft an den realen Bedürfnissen der Zielgruppe vorbeigehen.",
+      "en": "Lesen Sie den Text und analysieren Sie, wie organisatorische Reformen oft an den realen Bedürfnissen der Zielgruppe vorbeigehen."
+    },
+    "targetText": "Als Bibliotheksleiterin hatte ich mir das Jahr des Umbruchs wie eine musikalische Partitur vorgestellt: präzise Einsätze, klare Harmonien, ein stetiger Rhythmus. Doch das sogenannte Modellprojekt der flexiblen Öffnungszeiten, das im Januar anlief, glich von Anfang an eher einer kakophonen Improvisation. Auf dem Papier klang die Maßnahme überzeugend: Durch die Einführung digitaler Einlasskarten und automatisierter Ausleihsysteme sollte die Zentralbibliothek an der Kronenstraße künftig von morgens um sieben bis abends um elf Uhr zugänglich sein. Vier zusätzliche Stunden am Abend, zwei am frühen Morgen. Eine beachtliche Ausweitung der Präsenzzeit, die im Kulturdezernat als Meilenstein gefeiert wurde, da sie den modernen Bedürfnissen einer flexiblen Arbeitsgesellschaft entgegenzukommen schien. Ich selbst hatte in den Gremiensitzungen oft genug betont, dass wir den Menschen entgegenkommen müssten, deren Rhythmen nicht in das klassische Schema von neun bis fünf passten. Doch der erste Monat im verschärften Dauereinsatz offenbarte eine bittere Diskrepanz, die in keinem der Begeisterungsberichte der Verwaltung auftauchte. Die verlängerten Stunden waren real, aber die tatsächliche Barrierefreiheit blieb auf der Strecke, weil wir lediglich die Türen geöffnet hatten, ohne die institutionellen Hürden abzubauen.\n\nBesonders deutlich wurde dies an jenen Abenden, an denen das Licht im Foyer zwar hell brannte, die fachliche Kompetenz jedoch längst das Gebäude verlassen hatte. Um zwanzig Uhr endete der reguläre Schichtdienst der Fachangestellten. Ab diesem Zeitpunkt übernahm die Technik: Drehkreuze, Videokameras und die leise summende Überwachungsanlage. Wer eine Frage hatte, stand vor gläsernen Schaltern und starrte in Bildschirme, auf denen höchstens automatisierte Hilfetexte aufleuchteten. In den ersten Wochen strömten zwar zahlreiche neugierige Besucher herein, darunter viele Studierende und gut verdienende Freiberufler, die das atmosphärische Ambiente als noble Alternative zum heimischen Homeoffice schätzten. Sie brachten ihre Laptops mit, tranken teuren Coffee-to-go und nahmen die Bibliotheksbänke in Beschlag. Die bloße Anwesenheit von Menschen im Raum ließ die Nutzungsstatistik in die Höhe schnellen. Im monatlichen Bericht an die Stadtspitze konnte ich stolz verkurbeln, dass die Abendstunden florierten. Doch hinter dieser glänzenden Fassade vollzog sich ein schleichender Verdrängungsprozess, der mich zunehmend nächtelang wach hielt.\n\nJene Menschen, für die eine Bibliothek in einem dicht besiedelten Stadtteil eigentlich ein lebensnotwendiger Anker sein sollte, blieben zunehmend aus. Ich beobachtete es am Beispiel von Herrn Kaluza, einem pensionierten Schlosser, der jahrelang jeden Dienstag und Donnerstag gekommen war, um in Ruhe die Tageszeitungen zu lesen und sich kurz mit unseren Mitarbeiterinnen am Auskunftstisch auszutauschen. Seitdem wir die Türen bis in die späte Nacht offenhielten und das Personal um zwanzig Uhr abzog, kam er seltener, bis er schließlich ganz ausblieb. Als ich ihn im April zufällig auf dem Wochenmarkt traf und fragte, warum er unseren Lesesaal meide, schüttelte er bedauernd den Kopf. Die neuen Schranken am Eingang machten ihm Angst, sagte er. Die automatischen Scanner piepten schrill, wenn man die Karte nicht im exakten Winkel hielt, und das Gefühl, unter st Beobachtung von anonymen Kameras zu stehen, während keine vertraute Person mehr ansprechbar sei, lasse ihn nicht zur Ruhe kommen. Die Bibliothek sei für ihn kein offener Ort der Gemeinschaft mehr, sondern eine kalte, technisierte Festung geworden, die zwar länger geöffnet habe, aber für ihn unzugänglich geblieben sei.\n\nDas Gespräch mit Herrn Kaluza wirkte wie ein Brandbeschleuniger in meinem eigenen Denken und zwang mich zu einer fundamentalen Neubewertung unseres Projekts. Wir hatten verwechselt, was es bedeutet, für die Stadtgesellschaft da zu sein. Eine verlängerte Öffnungszeit ist kein Wert an sich, wenn sie nur jenen dient, die ohnehin über alle digitalen und sozialen Ressourcen verfügen, um sich im modernen Raum mühelos zu bewegen. Für die anderen, die auf persönliche Zuwendung, auf barrierefreie Kommunikation und auf das soziale Band des analogen Gesprächs angewiesen sind, wirkte die vermeintliche Großzügigkeit wie eine subtile Ausladung. Der Konflikt spitzte sich zu, als das Kulturdezernat im Mai eine Verlängerung des Projekts um ein weiteres Jahr forderte und dabei triumphierend auf die gestiegenen Besucherzahlen verwies. Ich saß an meinem Schreibtisch, starrte auf die Excel-Tabellen mit den glänzenden Nutzungsrekorden und wusste, dass ich mich entscheiden musste zwischen bureaukratischer Bequemlichkeit und intellektueller Ehrlichkeit. In meinem Zwischenbericht, den ich schließlich an jenem Freitag einreichte, verzichtete ich auf die beschönigenden Floskeln der Vergangenheit und legte offen dar, wie wir durch die quantitative Ausweitung der Zeit gleichzeitig die qualitative Tiefe unseres Bildungsauftrags verspielt hatten.\n\nDie darauffolgende Woche brachte die erwartete Kontroverse in den städtischen Ausschüssen, doch sie löste auch etwas Produktives aus, das weit über unsere Einrichtung hinausging. Der Bericht zwang die politischen Entscheidungsträger erstmals dazu, einzuräumen, dass Zugänglichkeit mehr ist als die bloße Abwesenheit eines verschlossenen Schlosses an der Eingangstür. Wir einigten uns schließlich auf einen schmerzhaften, aber notwendigen Kompromiss: Die digitalen Spätschichten blieben zwar erhalten, um den veränderten Bedürfnissen junger Berufstätiger gerecht zu werden, aber sie wurden an konkrete, betreute Präsenzzeiten gekoppelt. An zwei Abenden in der Woche gibt es nun wieder verlängerte Öffnungszeiten mit echtem Personal, mit Kaffeetischen und offener Beratung. Herr Kaluza kam im Juni überraschend zurück, als er sah, dass der Empfang wieder besetzt war. Er sagte nichts, lächelte nur kurz und setzte sich an seinen Stammtisch. Für mich war dieses stille Einverständnis der endgültige Beweis, dass eine moderne Kulturinstitution niemals vergessen darf, dass Zeit ohne Empathie lediglich ein leerer Raum bleibt.",
+    "wordCount": 840,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "kakophonen",
+        "lemma": "kakophonen",
+        "glosses": {
+          "es": "cacophonous / discordant",
+          "en": "cacophonous / discordant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verdrängungsprozess",
+        "lemma": "Verdrängungsprozess",
+        "glosses": {
+          "es": "displacement process",
+          "en": "displacement process"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Brandbeschleuniger",
+        "lemma": "Brandbeschleuniger",
+        "glosses": {
+          "es": "accelerant / catalyst",
+          "en": "accelerant / catalyst"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Floskeln",
+        "lemma": "Floskeln",
+        "glosses": {
+          "es": "clichés / platitudes",
+          "en": "clichés / platitudes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kontroverse",
+        "lemma": "Kontroverse",
+        "glosses": {
+          "es": "controversy / dispute",
+          "en": "controversy / dispute"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Empathie",
+        "lemma": "Empathie",
+        "glosses": {
+          "es": "empathy",
+          "en": "empathy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.1,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welche zentrale Entwicklung wird in dem Tagebucheintrag geschildert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die technische Modernisierung führt zu höheren Besucherzahlen, schließt aber gleichzeitig traditionelle Nutzergruppen aus."
+        },
+        {
+          "id": "a2",
+          "text": "Die Verlängerung der Öffnungszeiten scheitert vollständig an mangelndem Interesse der Bevölkerung."
+        },
+        {
+          "id": "a3",
+          "text": "Das Bibliothekspersonal streikt gegen die Einführung von automatischen Einlasskontrollen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die verlängerten Stunden waren real, aber die tatsächliche Barrierefreiheit blieb auf der Strecke, weil wir lediglich die Türen geöffnet hatten, ohne die institutionellen Hürden abzubauen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Aus welchem Grund zog sich Herr Kaluza schrittweise aus der Bibliothek zurück?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er fand keine tagesaktuellen Zeitungen mehr im Lesesaal."
+        },
+        {
+          "id": "a2",
+          "text": "Die technischen Schranken und das fehlende Personal machten ihm Angst und gaben ihm das Gefühl permanenter Beobachtung."
+        },
+        {
+          "id": "a3",
+          "text": "Die neuen Nutzer störten ihn durch laute Gespräche während der Arbeitszeit."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die neuen Schranken am Eingang machten ihm Angst, sagte er. Die automatischen Scanner piepten schrill, wenn man die Karte nicht im exakten Winkel hielt, und das Gefühl, unter st Beobachtung von anonymen Kameras zu stehen, während keine vertraute Person mehr ansprechbar sei, lasse ihn nicht zur Ruhe kommen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung nimmt die Ich-Erzählerin gegenüber den monatlichen Nutzungsstatistiken ein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie betrachtet sie als unumstößlichen Beweis für den uneingeschränkten Erfolg des Projekts."
+        },
+        {
+          "id": "a2",
+          "text": "Sie nutzt sie gezielt, um eine sofortige Schließung der Bibliothek zu verhindern."
+        },
+        {
+          "id": "a3",
+          "text": "Sie erkennt in ihnen eine trügerische Fassade, die über den tatsächlichen sozialen Ausschluss hinwegtäuscht."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Im monatlichen Bericht an die Stadtspitze konnte ich stolz verkurbeln, dass die Abendstunden florierten. Doch hinter dieser glänzenden Fassade vollzog sich ein schleichender Verdrängungsprozess, der mich zunehmend nächtelang wach hielt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welche Funktion erfüllt die Erwähnung des Kulturdezernats im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie verdeutlicht den Konflikt zwischen rein quantitativen politischen Erfolgskriterien und der realen sozialen Verantwortung der Einrichtung."
+        },
+        {
+          "id": "a2",
+          "text": "Sie zeigt, dass die Verwaltung jederzeit bereit ist, auf die individuellen Sorgen der älteren Bürger einzugehen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie demonstriert die reibungslose Zusammenarbeit zwischen kommunaler Politik und ehrenamtlichen Helfern."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Der Konflikt spitzte sich zu, als das Kulturdezernat im Mai eine Verlängerung des Projekts um ein weiteres Jahr forderte und dabei triumphierend auf die gestiegenen Besucherzahlen verwies.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der tonale Grundzug des Tagebucheintrags am zutreffendsten beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ironisch und distanziert"
+        },
+        {
+          "id": "a2",
+          "text": "Selbstkritisch und reflektiert"
+        },
+        {
+          "id": "a3",
+          "text": "Aggressiv und anklagend"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Das Gespräch mit Herrn Kaluza wirkte wie ein Brandbeschleuniger in meinem eigenen Denken und zwang mich zu einer fundamentalen Neubewertung unseres Projekts.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Verdrängungsprozess' im spezifischen Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die systematische Ersetzung von physischen Büchern durch digitale Lesegeräte."
+        },
+        {
+          "id": "a2",
+          "text": "Das langsame Verdrängen von etablierten Mitarbeitern durch günstigere studentische Aushilfen."
+        },
+        {
+          "id": "a3",
+          "text": "Das unbemerkte Verdrängen von bestimmten Bevölkerungsgruppen, die sich im neuen Umfeld nicht mehr willkommen fühlen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Jene Menschen, für die eine Bibliothek in einem dicht besiedelten Stadtteil eigentlich ein lebensnotwendiger Anker sein sollte, blieben zunehmend aus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen zusammenhängenden Kommentar von ca. 250–300 Wörtern, in dem Sie die These erörtern, ob technische Digitalisierung in öffentlichen Kultur- und Bildungseinrichtungen zwangsläufig zu sozialer Ausgrenzung führt oder ob sie durch gezielte Maßnahmen kompensiert werden kann.",
+      "en": "Schreiben Sie einen zusammenhängenden Kommentar von ca. 250–300 Wörtern, in dem Sie die These erörtern, ob technische Digitalisierung in öffentlichen Kultur- und Bildungseinrichtungen zwangsläufig zu sozialer Ausgrenzung führt oder ob sie durch gezielte Maßnahmen kompensiert werden kann."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Text und analysieren Sie, wie organisatorische Reformen oft an den realen Bedürfnissen der Zielgruppe vorbeigehen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das nächtliche Foyer | C1 Reading | WeLearn",
+      "en": "Das nächtliche Foyer | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein Tagebucheintrag aus der Stadtbibliothek beleuchtet den schmalen Grat zwischen erweiterten Öffnungszeiten und echter sozialer Inklusion.",
+      "en": "Ein Tagebucheintrag aus der Stadtbibliothek beleuchtet den schmalen Grat zwischen erweiterten Öffnungszeiten und echter sozialer Inklusion."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

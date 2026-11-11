@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der geschlossenen Kreisläufe",
+      "en": "Die Illusion der geschlossenen Kreisläufe"
+    },
+    "intro": {
+      "es": "Ein kritischer Blick auf eine vermeintlich nachhaltige Initiative an der Universität Heidelberg.",
+      "en": "Ein kritischer Blick auf eine vermeintlich nachhaltige Initiative an der Universität Heidelberg."
+    },
+    "mission": {
+      "es": "Lesen Sie den Artikel über die Bilanz von Mehrwegbechern und beantworten Sie anschliessend die sechs Aufgaben.",
+      "en": "Lesen Sie den Artikel über die Bilanz von Mehrwegbechern und beantworten Sie anschliessend die sechs Aufgaben."
+    },
+    "targetText": "Als Dr. Marlene Hagen am frühen Dienstagmorgen die vorläufige Bilanz der jüngsten Nachhaltigkeitsinitiative auf dem Campus präsentierte, herrschte im Senatssaal spürbare Erleichterung. Noch vor sechs Wochen hatte der Anblick überfüllter Mülleimer rund um die Zentralbibliothek das Bild eines ökologischen Desasters gezeichnet: Tausende von Einwegbechern aus Pappe und Kunststoff verschonten die Entsorgungsteams nicht und schienen den Reformwillen der akademischen Institution ad absurdum zu führen. Nun, nach der konsequenten Durchsetzung eines obligatorischen Mehrwegsystems für sämtliche Heißgetränke, schien das Problem gebannt. Hagen, die als Dezernentin für Liegenschaften die Umstellung koordiniert hatte, verwies auf eine drastische Reduktion des täglichen Müllvolumens. Die grafischen Darstellungen auf den Foliensätzen zeigten eine steil abfallende Kurve des entsorgten Einwegmaterials, was von der anwesenden Leitungsebene als triumphaler Durchbruch gefeiert wurde. Die Botschaft schien eindeutig: Wer die Infrastruktur radikal verändert, erzwingt messbaren Umweltschutz. Doch während die offiziellen Berichte den Erfolg auf den ersten Blick untermauerten, offenbarten vertiefte Nachfragen in den betroffenen Abteilungen bald jene blinden Flecken, die in hochglanzpolierten Berichten allzu gerne kaschiert werden. Im Zentrum dieser Kontroverse steht eine Verlagerung des ökologischen Aufwands, die im Zuge der Euphorie völlig aus dem Blick geraten war. Zwar verschwanden die Pappbecher aus dem Stadtbild, doch traten an ihre Stelle logistische und energetische Folgekosten, deren Dimensionen erst durch interne Prozessanalysen ans Licht kamen. Die Mensabetreiber mussten für die Bewältigung des massiv gestiegenen Rücklaufs nicht nur zusätzliches Personal einstellen, sondern auch die Betriebszeiten der industriellen Spülanlagen drastisch ausdehnen. Was in der öffentlichen Wahrnehmung als geschlossener, harmonischer Kreislauf galt, erwies sich bei genauerer Betrachtung als ressourcenintensiver Moloch. Messungen ergaben, dass der tägliche Wasser- und Energieverbrauch für die Heißreinigung der robusten Hartplastikbecher ungeahnte Ausmaße annahm. Noch schwerwiegender fiel ins Gewicht, dass die Becher aufgrund unzureichender Rückgabequoten an den Randbereichen des Campus permanent im Pendelverkehr per Lieferwagen zwischen den Aussenstellen und der Hauptküche transportiert werden mussten. Die CO2-Bilanz der zusätzlichen Transportfahrten drohte den vermeintlichen Gewinn an Abfallvermeidung zunichte zu machen. Prof. Dr. Jens Lindner, Inhaber des Lehrstuhls für Umweltverfahrenstechnik, versuchte diesen Zielkonflikt in einer hochschulinternen Stellungnahme zu kontextualisieren. Er argumentierte, dass bürokratische Symbole oft den Blick für systemische Effizienz trübten. Wenn man den gesamten Lebenszyklus eines Produkts betrachte – von der energieaufwendigen Produktion über den Transport bis zur intensiven Reinigung – verliere die isolierte Betrachtung des Müllaufkommens jegliche Aussagekraft. Lindners Skepsis stiess jedoch bei der Hochschulleitung auf verhaltene Kritik; man befürchtete, dass differenzierte Nuancen den politischen Willen zur Veränderung lähmen könnten. Die Diskrepanz zwischen politischer Aussenwirkung und harter ökologischer Realität spitzte sich schliesslich zu, als die Quartalsabrechnung der Wasserwerke eintraf. Die Kosten für die städtische Frischwasserzufuhr hatten sich im Vergleich zum Vorjahreszeitraum verdoppelt, während gleichzeitig die internen Abwasserwerte alarmierende Spitzenwerte aufwiesen. Die studentische Vertretung reagierte empfindlich auf diese Enthüllungen und forderte eine transparente Gesamtrechnung, statt sich mit oberflächlichen Reduktionszielen blenden zu lassen. Dennoch hielt die Verwaltung an der offiziellen Erzählung fest, dass der Verzicht auf Einwegbecher einen unumstrittenen Fortschritt darstelle. Es manifestierte sich ein unbehagliches Patt: Einerseits lieferte das System exakt die statistischen Erfolge, die man sich von ihm versprochen hatte, andererseits offenbarte die operative Praxis einen stillen Raubbau an anderen Ressourcen. Am Ende steht die unbequeme Einsicht, dass administrative Kennzahlen selten die Komplexität ökologischer Wirkungsgefüge abbilden können. Die Universität feiert weiterhin ihre sauberen Wege, während im Maschinenraum der Infrastruktur die versteckten Kosten unerbittlich weiterwachsen.\n\nDie paradoxe Verquickung von sichtbarem Erfolg und unsichtbarem Mehraufwand führte schliesslich dazu, dass eine studentische Initiative eigenmächtig eine umfassende Ökobilanz der gesamten Mensa-Logistik anfertigte. Die jungen Forscherinnen und Forscher kombinierten dabei Daten zum Energieverbrauch der gewerblichen Spülstraßen mit den Fahrtenbüchern der campusinternen Lieferfahrzeuge und bezogen sogar die CO2-Emissionen ein, die bei der nachträglichen Entsorgung beschädigter Hartplastikbecher anfallen. Das Ergebnis dieser akribischen Untersuchung sprengte den Rahmen der bisherigen Debatte völlig. Es stellte sich heraus, dass der kumulierte ökologische Fussabdruck des neuen Mehrwegsystems den der alten Einweglösung in manchen Monaten sogar überstieg, sofern man die zirkuläre Verschleissquote und den enormen Chemikalieneinsatz bei der Desinfektion einberechnete. Diese brisanten Erkenntnisse wurden auf einem offenen Symposium vorgestellt, das breite Beachtung fand und die Universitätsleitung in arge Erklärungsschleusen brachte. Während die administrative Führung weiterhin auf die sauberen Wiesen rund um die Zentralbibliothek verwies, sprachen kritische Ökonomen von einem klassischen Fall von Verlagerungseffekten, bei dem lediglich das Symptom bekämpft, die zugrundeliegende Systematik jedoch verschlimmert wurde. Die Auseinandersetzung verdeutlichte exemplarisch, wie schwer es ist, in komplexen Institutionen ganzheitlich nachhaltig zu handeln.",
+    "wordCount": 710,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Bilanz",
+        "lemma": "Bilanz",
+        "glosses": {
+          "es": "balance sheet / record",
+          "en": "balance sheet / record"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obligatorischen",
+        "lemma": "obligatorischen",
+        "glosses": {
+          "es": "mandatory",
+          "en": "mandatory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "kaschiert",
+        "lemma": "kaschiert",
+        "glosses": {
+          "es": "concealed / masked",
+          "en": "concealed / masked"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Moloch",
+        "lemma": "Moloch",
+        "glosses": {
+          "es": "juggernaut / devourer",
+          "en": "juggernaut / devourer"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "kontextualisieren",
+        "lemma": "kontextualisieren",
+        "glosses": {
+          "es": "to contextualize",
+          "en": "to contextualize"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Patt",
+        "lemma": "Patt",
+        "glosses": {
+          "es": "stalemate",
+          "en": "stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.3,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches zentrale Thema behandelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die verdeckten ökologischen und logistischen Kosten einer vermeintlich erfolgreichen Mehrweginitiative."
+        },
+        {
+          "id": "a2",
+          "text": "Die wirtschaftliche Krise der universitären Gastronomie."
+        },
+        {
+          "id": "a3",
+          "text": "Die technischen Herausforderungen bei der Produktion von biologisch abbaubarem Geschirr."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Im Zentrum dieser Kontroverse steht eine Verlagerung des ökologischen Aufwands, die im Zuge der Euphorie völlig aus dem Blick geraten war.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkreten Konsequenzen hatte der erhöhte Rücklauf der Becher für den Mensabetrieb?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Cafeterien mussten vorübergehend ganz geschlossen werden."
+        },
+        {
+          "id": "a2",
+          "text": "Es mussten zusätzliches Personal eingestellt und die Betriebszeiten der Spülanlagen ausgedehnt werden."
+        },
+        {
+          "id": "a3",
+          "text": "Die Preise für Heißgetränke wurden dauerhaft erhöht."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Mensabetreiber mussten für die Bewältigung des massiv gestiegenen Rücklaufs nicht nur zusätzliches Personal einstellen, sondern auch die Betriebszeiten der industriellen Spülanlagen drastisch ausdehnen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewertet Prof. Dr. Jens Lindner die isolierte Betrachtung des Müllaufkommens?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hält sie für absolut ausreichend, um den Erfolg zu garantieren."
+        },
+        {
+          "id": "a2",
+          "text": "Er erachtet sie als irrelevant, da die Transportkosten unbedeutend sind."
+        },
+        {
+          "id": "a3",
+          "text": "Er sieht sie als ungeeignet, da sie den Blick auf den gesamten Produktlebenszyklus verstellt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er argumentierte, dass bürokratische Symbole oft den Blick für systemische Effizienz trübten. Wenn man den gesamten Lebenszyklus eines Produkts betrachte – von der energieaufwendigen Produktion über den Transport bis zur intensiven Reinigung – verliere die isolierte Betrachtung des Müllaufkommens jegliche Aussagekraft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum hielt die Hochschulleitung trotz der Kritik an ihrer Darstellung fest?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil man befürchtete, dass differenzierte Nuancen den politischen Veränderungswillen lähmen könnten."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Wasserwerke ihnen untersagt hatten, die wahren Kosten zu veröffentlichen."
+        },
+        {
+          "id": "a3",
+          "text": "Weil die studentische Vertretung keinerlei Einsicht in die Dokumente forderte."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "man befürchtete, dass differenzierte Nuancen den politischen Willen zur Veränderung lähmen könnten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Ton prägt die Darstellung der administrativen Erfolgsmeldungen im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uneingeschränkt lobend."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und entlarvend."
+        },
+        {
+          "id": "a3",
+          "text": "Gleichgültig und deskriptiv."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Was in der öffentlichen Wahrnehmung als geschlossener, harmonischer Kreislauf galt, erwies sich bei genauerer Betrachtung als ressourcenintensiver Moloch.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der im Text verwendete Begriff 'Patt' im Kontext des letzten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine klare Einigung zwischen Verwaltung und Studierenden."
+        },
+        {
+          "id": "a2",
+          "text": "Ein plötzlicher finanzieller Gewinn der Universität."
+        },
+        {
+          "id": "a3",
+          "text": "Eine unlösbare Sackgasse oder ein unbehaglicher Stillstand zwischen zwei Positionen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Es manifestierte sich ein unbehagliches Patt: Einerseits lieferte das System exakt die statistischen Erfolge, die man sich von ihm versprochen hatte, andererseits offenbarte die operative Praxis einen stillen Raubbau an anderen Ressourcen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen Kommentar auf Deutsch (ca. 250 Wörter), in dem Sie die These erörtern, ob ökologische Massnahmen an Institutionen primär messbare Symbolwirkung haben müssen oder ob die systemische Gesamtbilanz wichtiger ist. Beziehen Sie sich argumentativ auf den Konflikt zwischen sichtbarem Müll und unsichtbaren Ressourcenkosten.",
+      "en": "Verfassen Sie einen Kommentar auf Deutsch (ca. 250 Wörter), in dem Sie die These erörtern, ob ökologische Massnahmen an Institutionen primär messbare Symbolwirkung haben müssen oder ob die systemische Gesamtbilanz wichtiger ist. Beziehen Sie sich argumentativ auf den Konflikt zwischen sichtbarem Müll und unsichtbaren Ressourcenkosten."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Artikel über die Bilanz von Mehrwegbechern und beantworten Sie anschliessend die sechs Aufgaben.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der geschlossenen Kreisläufe | C1 Reading | WeLearn",
+      "en": "Die Illusion der geschlossenen Kreisläufe | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein kritischer Blick auf eine vermeintlich nachhaltige Initiative an der Universität Heidelberg.",
+      "en": "Ein kritischer Blick auf eine vermeintlich nachhaltige Initiative an der Universität Heidelberg."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

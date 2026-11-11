@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-water-meter",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der Norm",
+      "en": "Die Illusion der Norm"
+    },
+    "intro": {
+      "es": "Lesen Sie den folgenden journalistisch aufbereiteten Bericht über kommunale Wasserkennzahlen und beantworten Sie anschließend die Fragen zum Text.",
+      "en": "Lesen Sie den folgenden journalistisch aufbereiteten Bericht über kommunale Wasserkennzahlen und beantworten Sie anschließend die Fragen zum Text."
+    },
+    "mission": {
+      "es": "Analysieren Sie die Diskrepanz zwischen statistischen Durchschnittswerten und der realen Wohnsituation im Stadtteil Fichtenhain.",
+      "en": "Analysieren Sie die Diskrepanz zwischen statistischen Durchschnittswerten und der realen Wohnsituation im Stadtteil Fichtenhain."
+    },
+    "targetText": "Die Veröffentlichung des diesjährigen städtischen Umweltberichts löste im Stadtteil Fichtenhain eine Welle urbaner Empörung aus, die weit über kommunalpolitische Kreise hinausging. Im Zentrum der Kontroverse stand die amtliche Publikation der durchschnittlichen Haushaltswasserverbräuche, welche das Rathaus als großen Erfolg einer vermeintlich flächendeckenden wassersparenden Bewusstseinsbildung feierte. Laut den Tabellen der Stadtwerke sei der Pro-Kopf-Verbrauch in den letzten Jahren kontinuierlich gesunken, was die Verwaltung als Beleg für die Wirksamkeit progressiver Tarife und ökologischer Kampagnen wertete. Hinter dieser glänzenden Statistik verbirgt sich jedoch ein strukturelles Blindsein gegenüber der architektonischen Realität vieler Altbauten, wie die Quartiersinitiative unter der Leitung von Stadträtin Elena Rost und dem Hausverwalter Hendrik Martens vehement aufzeigte. Das fundamentale Problem liegt in der technischen Infrastruktur der Mehrfamilienhäuser: Dutzende Wohneinheiten teilen sich oft einen einzigen, zentralen Hauptwasserzähler, wodurch die individuelle Verbrauchsrealität vollkommen unsichtbar wird. Wenn in einem solchen Gebäude eine Handvoll Mietparteien ihren Verbrauch drastisch einschränkt, während andere durch defekte Armaturen oder unzureichendes Bewusstsein große Mengen verschwenden, schlägt sich dies im offiziellen Bericht lediglich als ein unscheinbarer Mittelwert nieder. Die Stadtverwaltung gesteht zwar ein, dass die Datenbasis methodische Unschärfen aufweist, verteidigt das Instrument jedoch als unersetzliches Steuerungselement für makroökonomische Analysen. Rost und Martens kontern diese technokratische Haltung jedoch mit harten Fakten aus einem detaillierten Schattenbericht, den sie nach monatelangen Zählungen im Viertel erstellten. Demnach verbrauchen die betroffenen Gemeinschaftsobjekte faktisch signifikant mehr Wasser als die von der Statistik ausgewiesenen Ein- und Zweifamilienhaushalte, weil jeglicher unmittelbare Sparanreiz für den Einzelnen fehlt. Wer die Kosten für Wasser und Abwasser über die Gesamtnebenkosten pauschal entrichtet, entwickelt naturgemäß kaum Ambitionen, das eigene Duschverhalten zu optimieren oder Tropfhähne umgehend zu reparieren. Die Debatte spitzte sich zu, als das Tiefbauamt ankündigte, die umstrittenen Durchschnittswerte ungeachtet der Kritik als Grundlage für künftige Gebührenstrukturen heranzuziehen. Diese Entscheidung hätte zur Konsequenz, dass ehrliche Sparer in Großwohnanlagen finanziell bestraft würden, während verschwenderische Haushalte in getrennt gemessenen Villenvierteln entlastet blieben. In einer denkwürdigen Sondersitzung des Umweltausschusses präsentierte Martens schließlich konkrete Messdaten aus einem exemplarischen Block mit sechzig Parteien, deren tatsächlicher Gesamtverbrauch das statistische Soll um fast die Hälfte überstieg. Daraufhin geriet der zuständige Dezernent unter heftigen Druck, weil er einräumen musste, dass die Behörde seit Jahren eine Scheinlösung verwaltet, statt die dringend notwendige Nachrüstung von Einzelwasserzählern gesetzlich zu erzwingen. Die Kommunalpolitik steht nun vor einem ungelösten Dilemma: Einerseits liefert die amtliche Statistik die bequeme Illusion eines funktionierenden Umweltschutzes, andererseits entzieht sie jeder gezielten Intervention den Boden. Die schwelende Krise im Quartier zeigt exemplarisch, wie bürokratische Kennzahlen die reale soziale Verantwortung verschleiern und den dringend nötigen ökologischen Wandel paradoxerweise ausbremsen können.\n\nAls direkte Konsequenz dieses offenbarten Verwaltungsversagens formierte sich im Stadtteil Fichtenhain eine grassierende Bewegung des zivilen Ungehorsams, die den Druck auf das Rathaus unermüdlich steigerte und die Kommunalpolitik an den Rand ihrer Handlungsfähigkeit brachte. Enttäuscht von der beharrlichen Ignoranz der Stadtspitze, organisierten Elena Rost und Hendrik Martens eine solidarische Nachbarschaftsinitiative, die eigenmächtig hunderte analoge Zwischenzähler in den Kellern der betroffenen Altbauten installierte. Diese dezentrale Messoffensive legte die individuellen Defizite der Haushalteungslosigkeit offen und entlarvte die amtlichen Durchschnittszahlen endgültig als realitätsferne Makulatur. Die Konfrontation verlagerte sich daraufhin von den sterilen Sitzungssälen direkt auf die Straße, wo betroffene Mieter mit symbolischen Wasserrechnungen und drastischen Protestaktionen vor dem Hauptportal demonstrierten. Um einer drohenden Eskalation und einem massiven Vertrauensverlust bei den kommenden Wahlen zu entgehen, sah sich der Oberbürgermeister schließlich gezwungen, das umstrittene Gebührenmodell vorläufig auszusetzen und einen runden Tisch einzuberufen. In diesem neu geschaffenen Gremium wurde nicht nur die sofortige Revision der statistischen Erhebungsmethoden beschlossen, sondern auch ein verbindlicher Sanierungsfonds aufgelegt, der die gesetzlich erzwungene Nachrüstung aller Einzelwasserzähler finanziell absichern soll. Dennoch bleibt die skeptische Grundstimmung im Quartier bestehen, da die Bewohner wissen, dass bürokratische Mühlen langsam mahlen und die zugesagten Reformen erst noch ihre Praxistauglichkeit unter Beweis stellen müssen. Der Fall Fichtenhain hat somit bundesweit eine grundlegende Debatte über die Validität kommunaler Kennzahlen und die soziale Gerechtigkeit ökologischer Steuerungsinstrumente angestoßen. Er verdeutlicht eindringlich, dass echter Ressourcenschutz nicht durch administrative Schönfärberei und anonyme Mittelwerte gelingt, sondern nur durch transparente Strukturen, die den einzelnen Bürger aktiv einbinden und technologische Defizite konsequent beheben. Die dort gewonnene Erkenntnis könnte wegweisend für zahlreiche andere Kommunen sein, die vor ähnlichen strukturellen Herausforderungen stehen und bisher auf die trügerische Sicherheit statistischer Illusionen vertraut haben.",
+    "wordCount": 690,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Kontroverse",
+        "lemma": "Kontroverse",
+        "glosses": {
+          "es": "controversy",
+          "en": "controversy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Blindsein",
+        "lemma": "Blindsein",
+        "glosses": {
+          "es": "blindness",
+          "en": "blindness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Infrastruktur",
+        "lemma": "Infrastruktur",
+        "glosses": {
+          "es": "infrastructure",
+          "en": "infrastructure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schattenbericht",
+        "lemma": "Schattenbericht",
+        "glosses": {
+          "es": "shadow report",
+          "en": "shadow report"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gebührenstrukturen",
+        "lemma": "Gebührenstrukturen",
+        "glosses": {
+          "es": "fee structures",
+          "en": "fee structures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Scheinlösung",
+        "lemma": "Scheinlösung",
+        "glosses": {
+          "es": "pseudo-solution",
+          "en": "pseudo-solution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.5,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Diskrepanz zwischen amtlichen Durchschnittswerten beim Wasserverbrauch und der Realität in Gebäuden mit Gemeinschaftszählern."
+        },
+        {
+          "id": "a2",
+          "text": "Um die steigenden Kosten für die Reparatur defekter Wasserhähne in Altbauten."
+        },
+        {
+          "id": "a3",
+          "text": "Um die unzureichende Mülltrennung in städtischen Mehrfamilienhäusern."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Hinter dieser glänzenden Statistik verbirgt sich jedoch ein strukturelles Blindsein gegenüber der architektonischen Realität vieler Altbauten, wie die Quartiersinitiative unter der Leitung von Stadträtin Elena Rost und dem Hausverwalter Hendrik Martens vehement aufzeigte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welches konkrete technische Problem in Mehrfamilienhäusern wird für die Verfälschung der Statistiken verantwortlich gemacht?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die generelle Weigerung der Mieter, an städtischen Umfragen teilzunehmen."
+        },
+        {
+          "id": "a2",
+          "text": "Das Fehlen von individuellen Wasserzählern durch einen zentralen Hauptzähler."
+        },
+        {
+          "id": "a3",
+          "text": "Veraltete Rohrsysteme aus Blei, die zu ständigen Rohrbrüchen führen."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Das fundamentale Problem liegt in der technischen Infrastruktur der Mehrfamilienhäuser: Dutzende Wohneinheiten teilen sich oft einen einzigen, zentralen Hauptwasserzähler, wodurch die individuelle Verbrauchsrealität vollkommen unsichtbar wird.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Konsequenz droht den Bewohnern von Großwohnanlagen laut Text, wenn das Tiefbauamt an den aktuellen Plänen festhält?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie müssen künftig ihr Wasser aus zentralen Brunnen im Viertel holen."
+        },
+        {
+          "id": "a2",
+          "text": "Ihre Wohnungen werden wegen unzureichender Hygiene zwangsgeräumt."
+        },
+        {
+          "id": "a3",
+          "text": "Mieter, die bereits Wasser sparen, könnten finanziell benachteiligt werden."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Diese Entscheidung hätte zur Konsequenz, dass ehrliche Sparer in Großwohnanlagen finanziell bestraft würden, während verschwenderische Haushalte in getrennt gemessenen Villenvierteln entlastet blieben.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt die Quartiersinitiative mit der Erstellung des eigenen Schattenberichts?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie will beweisen, dass die tatsächlichen Verbräuche in Gemeinschaftsobjekten viel höher sind als offiziell dargestellt."
+        },
+        {
+          "id": "a2",
+          "text": "Sie möchte die Stadtverwaltung dazu bringen, die Grundsteuer für alle Hauseigentümer zu senken."
+        },
+        {
+          "id": "a3",
+          "text": "Sie plant die Gründung einer privaten Wassergesellschaft zur kommerziellen Nutzung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Demnach verbrauchen die betroffenen Gemeinschaftsobjekte faktisch signifikant mehr Wasser als die von der Statistik ausgewiesenen Ein- und Zweifamilienhaushalte, weil jeglicher unmittelbare Sparanreiz für den Einzelnen fehlt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewertet der Verfasser die Haltung der Stadtverwaltung gegenüber der Kritik?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er lobt die schnelle und unbürokratische Hilfe der Behörden."
+        },
+        {
+          "id": "a2",
+          "text": "Er kritisiert sie als technokratisch und wirft ihr vor, eine Scheinlösung zu verwalten."
+        },
+        {
+          "id": "a3",
+          "text": "Er hält sie für völlig neutral und wissenschaftlich fundiert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Rost und Martens kontern diese technokratische Haltung jedoch mit harten Fakten aus einem detaillierten Schattenbericht, den sie nach monatelangen Zählungen im Viertel erstellten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der im Text verwendete Begriff 'Scheinlösung' im Kontext der kommunalen Wasserpolitik?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine provisorische Reparatur an einer defekten Wasserleitung im Keller."
+        },
+        {
+          "id": "a2",
+          "text": "Ein finanzieller Zuschuss für den Kauf neuer Wassersparbrausen."
+        },
+        {
+          "id": "a3",
+          "text": "Eine Maßnahme, die das Problem nicht wirklich löst, sondern nur den Anschein erweckt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Daraufhin geriet der zuständige Dezernent unter heftigen Druck, weil er einräumen musste, dass die Behörde seit Jahren eine Scheinlösung verwaltet, statt die dringend notwendige Nachrüstung von Einzelwasserzählern gesetzlich zu erzwingen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive von Stadträtin Elena Rost, in dem Sie die Stadtverwaltung auffordern, die gesetzlichen Grundlagen für die Nachrüstung von Einzelwasserzählern in Altbauten unverzüglich zu reformieren.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive von Stadträtin Elena Rost, in dem Sie die Stadtverwaltung auffordern, die gesetzlichen Grundlagen für die Nachrüstung von Einzelwasserzählern in Altbauten unverzüglich zu reformieren."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysieren Sie die Diskrepanz zwischen statistischen Durchschnittswerten und der realen Wohnsituation im Stadtteil Fichtenhain.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der Norm | C1 Reading | WeLearn",
+      "en": "Die Illusion der Norm | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lesen Sie den folgenden journalistisch aufbereiteten Bericht über kommunale Wasserkennzahlen und beantworten Sie anschließend die Fragen zum Text.",
+      "en": "Lesen Sie den folgenden journalistisch aufbereiteten Bericht über kommunale Wasserkennzahlen und beantworten Sie anschließend die Fragen zum Text."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

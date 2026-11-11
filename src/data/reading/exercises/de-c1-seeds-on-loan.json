@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Vermächtnis der roten Linse",
+      "en": "Das Vermächtnis der roten Linse"
+    },
+    "intro": {
+      "es": "Ein literarischer Auszug über einen historischen Erbschaftsstreit in einer gemeinschaftlichen Saatgutbibliothek, der die Grenzen zwischen mündlicher Überlieferung und materientreuer Bewahrung aufzeigt.",
+      "en": "Ein literarischer Auszug über einen historischen Erbschaftsstreit in einer gemeinschaftlichen Saatgutbibliothek, der die Grenzen zwischen mündlicher Überlieferung und materientreuer Bewahrung aufzeigt."
+    },
+    "mission": {
+      "es": "Lesen Sie den folgenden Text aufmerksam durch und beantworten Sie die anschließenden Fragen, die auf implizite Haltungen und rhetorische Nuancen auf C1-Niveau ausgerichtet sind.",
+      "en": "Lesen Sie den folgenden Text aufmerksam durch und beantworten Sie die anschließenden Fragen, die auf implizite Haltungen und rhetorische Nuancen auf C1-Niveau ausgerichtet sind."
+    },
+    "targetText": "Unter dem bleichen Neonlicht des alten Gemeindehauses von Obertal roch es nach trockenem Stroh, feuchtem Ton und der dumpfen Erwartung eines langjährigen Nachbarschaftsstreits. An der Stirnseite des langen Eichentisches saß Martha Venz, die mit beharrlicher Ruhe die gläsernen Einweckgläser sortierte, in denen die berühmte ‚Obertaler Schmalbohne‘ lagerte – eine Leguminose, deren aschgraue Schale im trockenen Zustand einen fast violetten Schimmer zeigte. Gegenüber hatte sich die Familie Berger aufgebaut, angeführt von dem gestandenen Landwirt Heinrich, dessen Hände tief in den Taschen seiner Cordhose stecken blieben, als ob er verhindern wollte, dass sie unwillkürlich nach Beweisen griffen. Im Zentrum des Konflikts stand die Frage, wer das alleinige Anrecht auf die Deutungshoheit über die Rettung dieser lokalen Nutzpflanze besaß.\n\nHeinrich Berger schlug mit der flachen Hand auf die Tischplatte, sodass einige Etiketten auf den glatten Holzboden flatterten. Er argumentierte, dass allein seine Ahnenreihe durch ununterbrochene Aussaat und harte Handarbeit während der kargen Nachkriegsjahre das Saatgut vor dem Aussterben bewahrt habe. Zwar gebe es keine schriftlichen Aufzeichnungen, keine beglaubigten Grundbucheinträge oder wissenschaftlichen Kataloge, die diesen mündlichen Stammbaum untermauern könnten, doch die kontinuierliche Ernte auf den steilen Terrassenfeldern spreche für sich. Niemand sonst habe gewusst, wie die Bohne bei den gefürchteten Spätfrösten im Mai geschützt werden musste. Diese ungeschriebene Chronik der Generationen sei, so betonte er mit leicht brüchiger Stimme, das einzig authentische Fundament, auf dem die heutige Saatgutbibliothek überhaupt erst ruhe.\n\nMartha Venz, deren Familie sich erst spät im Tal niedergelassen hatte, entgegnete dem mit einer unerbittlichen Sachlichkeit, die Heinrich noch mehr in die Defensive drängte. Sie räumte zwar ein, dass die Bergers zweifellos über Jahrzehnte hinweg die physische Mühe des Anbaus getragen hatten, doch physische Anwesenheit allein ersetze weder methodische Selektion noch die Rettung der Genetik vor dem schleichenden Inzuchtverlust. Martha hatte vor fünf Jahren, als die lokale Landwirtschaft fast kollabiert wäre, die letzten verbliebenen Keimlinge der Schmalbohne aus Heinrichs feuchtem Keller evakuiert, im städtischen Labor keimen lassen und die widerstandsfähigsten Linien durch kontrollierte Rückkreuzung stabilisiert. Sie argumentierte, dass das Saatgut kein privates Erbstück sein könne, das man wie ein altes Möbelstück vererbe, sondern ein dynamisches Gemeingut, dessen Rettung erst durch wissenschaftliche Methodik und die Gründung der öffentlich zugänglichen Bibliothek vollendet worden sei.\n\nDer Raum füllte sich mit einer eisigen Stille, als die anderen Mitglieder des Bibliotheksrates, die schweigend an der Wand standen, die Tragweite der Argumente wogen. Heinrichs Anspruch stützte sich auf die Integrität des Leidens und der mündlichen Kontinuität, während Marthas Position die Rettung durch technokratische Intervention und institutionelle Sicherung pries. Beide Seiten hatten unbestreitbare Anteile an der Geschichte, doch ihre Interpretationen schlossen einander aus: Entweder war die Bohne das Produkt treuer bäuerlicher Pflichterfüllung oder das Resultat einer rettenden wissenschaftlichen Intervention. Keine der Parteien war bereit, den entscheidenden Schritt der Anerkennung zu gehen, weil die Verleihung des offiziellen Erbe-Zertifikats beim kommenden Dorffest den jeweiligen Beitrag unwiderruflich gewichten würde.\n\nAm Ende des Abends wurde kein Konsens gefunden, und die Gläser blieben unbeschriftet auf dem Tisch stehen, während draußen der erste Frühlingsregen gegen die Scheiben schlug. Die Spannung löste sich nicht in versöhnlichen Worten auf, sondern fror in einem unausgesprochenen Status quo ein, der die fragile Zukunft der Saatgutbibliothek überschattete. Beide Familien hatten die Bohne vor dem physischen Verfall bewahrt, doch im Ringen um die historische Urheberschaft drohten sie just jenes Gemeinschaftsgefühl zu zerstören, das die Bibliothek überhaupt erst hatte lebensfähig machen sollen.\n\nDiese verfahrene Situation offenbarte jedoch ein weitaus größeres Dilemma, das weit über die Grenzen von Obertal hinausreichte und die fundamentale Frage aufwarf, wie modernisierter Naturschutz überhaupt mit traditionellem Regionalwissen harmonieren kann. Sollte sich die Gemeinde tatsächlich dazu entschließen, Marthas wissenschaftlichem Zertifikat den Vorzug zu geben, würde dies nicht nur Heinrichs lebenslangen Einsatz entwerten, sondern auch all jenen traditionellen Landwirten im Tal das Signal senden, dass unbezahlbare mündliche Überlieferungen in einer technisierten Welt wertlos seien. Umgekehrt drohte bei einer reinen Anerkennung des bäuerlichen Erbes die Gefahr, dass künftige genetische Krisen mangels laborwissenschaftlicher Expertise unbewältigt blieben und die Schmalbohne beim nächsten aggressiven Schädlingsbefall endgültig verlänge. Genau dieser Zielkonflikt zwang den restlichen Rat zu der bitteren Erkenntnis, dass das eigentliche Überleben der Pflanze nicht allein an der korrekten Etikettierung der Gläser hing, sondern an der fast unlösbaren Aufgabe, das harte theoretische Wissen der Moderne und die generationenübergreifende Erfahrung der Praxis in einem neuen, verbindenden Narrativ zusammenzuführen, bevor die unversöhnliche Feindschaft der beiden Familien das historische Erbe endgültig zerriss.",
+    "wordCount": 715,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Leguminose",
+        "lemma": "Leguminose",
+        "glosses": {
+          "es": "legume",
+          "en": "legume"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Deutungshoheit",
+        "lemma": "Deutungshoheit",
+        "glosses": {
+          "es": "interpretative monopoly",
+          "en": "interpretative monopoly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mündlichen Stammbaum",
+        "lemma": "mündlichen Stammbaum",
+        "glosses": {
+          "es": "oral pedigree",
+          "en": "oral pedigree"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Inzuchtverlust",
+        "lemma": "Inzuchtverlust",
+        "glosses": {
+          "es": "inbreeding depression",
+          "en": "inbreeding depression"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "technokratische Intervention",
+        "lemma": "technokratische Intervention",
+        "glosses": {
+          "es": "technocratic intervention",
+          "en": "technocratic intervention"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Status quo",
+        "lemma": "Status quo",
+        "glosses": {
+          "es": "status quo",
+          "en": "status quo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.8,
+      "maxSentenceWords": 62,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es im vorliegenden Text im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den Streit zweier Familien über die Urheberschaft bei der Rettung einer lokalen Bohnensorte für die Saatgutbibliothek."
+        },
+        {
+          "id": "a2",
+          "text": "Um die wissenschaftliche Analyse von Bodenerosion und deren Auswirkungen auf den historischen Getreideanbau im Obertal."
+        },
+        {
+          "id": "a3",
+          "text": "Um den vollständigen Verlust der Obertaler Schmalbohne durch extreme Wetterbedingungen und Frost im Mai."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Im Zentrum des Konflikts stand die Frage, wer das alleinige Anrecht auf die Deutungshoheit über die Rettung dieser lokalen Nutzpflanze besaß.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkrete Maßnahme ergriff Martha Venz vor fünf Jahren mit den Keimlingen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie verkaufte sie an städtische Gärtnereien."
+        },
+        {
+          "id": "a2",
+          "text": "Sie evakuierte sie aus dem Keller und stabilisierte sie im Labor."
+        },
+        {
+          "id": "a3",
+          "text": "Sie vergrub sie auf den Terrassenfeldern der Bergers."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Martha hatte vor fünf Jahren, als die lokale Landwirtschaft fast kollabiert wäre, die letzten verbliebenen Keimlinge der Schmalbohne aus Heinrichs feuchtem Keller evakuiert, im städtischen Labor keimen lassen und die widerstandsfähigsten Linien durch kontrollierte Rückkreuzung stabilisiert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung nimmt der Autor gegenüber den Argumenten der beiden Parteien ein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er wertet Marthas wissenschaftliche Methode als die einzig moralisch vertretbare und wertvolle."
+        },
+        {
+          "id": "a2",
+          "text": "Er unterstützt Heinrichs Standpunkt, da mündliche Überlieferung immer über moderner Laborarbeit steht."
+        },
+        {
+          "id": "a3",
+          "text": "Er zeigt auf, dass beide Seiten valide Beiträge leisteten, deren gegensätzliche Ansprüche jedoch unvereinbar scheinen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Beide Seiten hatten unbestreitbare Anteile an der Geschichte, doch ihre Interpretationen schlossen einander aus: Entweder war die Bohne das Produkt treuer bäuerlicher Pflichterfüllung oder das Resultat einer rettenden wissenschaftlichen Intervention.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum weigern sich beide Parteien am Ende des Treffens, Kompromisse einzugehen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil das bevorstehende Dorffest und die damit verbundene offizielle Zertifizierung eine genaue Gewichtung der Beiträge erfordern."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Gemeindeverwaltung ihnen ausdrücklich verboten hat, über die genaue Herkunft der Schmalbohne zu sprechen."
+        },
+        {
+          "id": "a3",
+          "text": "Weil ein plötzliches schweres Unwetter das Gebäude zum Verlassen des Raumes zwang."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Keine der Parteien war bereit, den entscheidenden Schritt der Anerkennung zu gehen, weil die Verleihung des offiziellen Erbe-Zertifikats beim kommenden Dorffest den jeweiligen Beitrag unwiderruflich gewichten würde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welche atmosphärische Stimmung dominiert den Ausklang der Erzählung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine feierliche und gelöste Harmonie nach erfolgreicher Einigung."
+        },
+        {
+          "id": "a2",
+          "text": "Eine bedrückende und ungelöste Erstarrung, die das Gemeinschaftsgefühl gefährdet."
+        },
+        {
+          "id": "a3",
+          "text": "Eine ironische und humorvolle Betrachtung des dörflichen Ehrgeizes."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Spannung löste sich nicht in versöhnlichen Worten auf, sondern fror in einem unausgesprochenen Status quo ein, der die fragile Zukunft der Saatgutbibliothek überschattete.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat der Ausdruck ‚Deutungshoheit‘ im Kontext des zweiten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Das offizielle Monopol zur juristischen Verwertung von Patenten."
+        },
+        {
+          "id": "a2",
+          "text": "Die wirtschaftliche Kontrolle über den weltweiten Handel mit Kulturpflanzen."
+        },
+        {
+          "id": "a3",
+          "text": "Die vorherrschende Macht, die historische Bedeutung eines Ereignisses verbindlich zu definieren."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Im Zentrum des Konflikts stand die Frage, wer das alleinige Anrecht auf die Deutungshoheit über die Rettung dieser lokalen Nutzpflanze besaß.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Bewahrung von Kulturgut die traditionelle Praxis oder die wissenschaftliche Dokumentation höher zu bewerten ist. Beziehen Sie sich argumentativ auf den Text.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Bewahrung von Kulturgut die traditionelle Praxis oder die wissenschaftliche Dokumentation höher zu bewerten ist. Beziehen Sie sich argumentativ auf den Text."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den folgenden Text aufmerksam durch und beantworten Sie die anschließenden Fragen, die auf implizite Haltungen und rhetorische Nuancen auf C1-Niveau ausgerichtet sind.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Vermächtnis der roten Linse | C1 Reading | WeLearn",
+      "en": "Das Vermächtnis der roten Linse | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein literarischer Auszug über einen historischen Erbschaftsstreit in einer gemeinschaftlichen Saatgutbibliothek, der die Grenzen zwischen mündlicher Überlieferung und materientreuer Bewahrung aufzeigt.",
+      "en": "Ein literarischer Auszug über einen historischen Erbschaftsstreit in einer gemeinschaftlichen Saatgutbibliothek, der die Grenzen zwischen mündlicher Überlieferung und materientreuer Bewahrung aufzeigt."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

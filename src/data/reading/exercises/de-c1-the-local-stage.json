@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-local-stage",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Bilanz der unsichtbaren Bühnen",
+      "en": "Bilanz der unsichtbaren Bühnen"
+    },
+    "intro": {
+      "es": "Ein kritischer Bericht über die Differenz zwischen städtischen Förderkriterien und der tatsächlichen sozialen Wirkung von Amateurtheater.",
+      "en": "Ein kritischer Bericht über die Differenz zwischen städtischen Förderkriterien und der tatsächlichen sozialen Wirkung von Amateurtheater."
+    },
+    "mission": {
+      "es": "Lesen Sie den Artikel über die Evaluierung eines Gemeinschaftstheaters und beantworten Sie die Fragen zum Text.",
+      "en": "Lesen Sie den Artikel über die Evaluierung eines Gemeinschaftstheaters und beantworten Sie die Fragen zum Text."
+    },
+    "targetText": "Als die Kulturverwaltung der Stadt den jährlichen Abschlussbericht des Projekts *Bühne für alle* vorlegte, schienen die Kennzahlen auf den ersten Blick eine Erfolgsgeschichte zu erzählen. Auf dem Papier wurden im abgelaufenen Förderzeitraum exakt zweitausendvierzig Eintrittskarten für die Abschlussinszenierung im Bürgerhaus verkauft, was einer soliden Auslastung der Saalkapazität entsprach. Für die städtischen Revisoren bildeten diese numerischen Belege das unverrückbare Fundament einer erfolgreichen Kulturförderung. Sie sahen darin den direkten Beweis dafür, dass öffentliche Mittel effizient eingesetzt worden waren, um dem Publikum kulturelle Teilhabe zu ermöglichen. Doch diese rein quantitative Verengung des Blickwinkels droht jene weitaus komplexere Realität zu verschleiern, die sich weitab vom grellen Rampenlicht der finalen Abendvorstellungen abspielt.\n\nRegisseur Lukas Bergmann und die Theaterpädagogin Clara Sommer blickten am Morgen nach der Premiere erschöpft, aber nachdenklich in die Gesichter der restlichen Crew. Während die Verwaltung triumphierend die Ticketverkäufe summierte, gerieten die eigentlichen Errungenschaften der monatelangen Probenarbeit komplett aus dem Raster der offiziellen Statistik. Das Projekt war niemals als reiner Kartenlieferant für den abendlichen Konsum konzipiert worden. Sein Kernanliegen lag vielmehr darin, sozial isolierten Jugendlichen, langzeitarbeitslosen Erwachsenen und Menschen mit Fluchterfahrung durch monatelange theaterpädagogische Werkstätten einen geschützten Raum für Selbstwirksamkeit und gesellschaftliche Artikulation zu bieten. Diese intensiven Prozesse, in denen Sprachbarrieren überwunden und Traumata behutsam aufgearbeitet wurden, lassen sich jedoch in keinem Excel-Tabelle der städtischen Bürokratie abbilden.\n\nBesonders deutlich wurde diese Schieflage am Schicksal von Tariq, einem jungen Mann, der während der Vorbereitungsphase eine zentrale Säule der Improvisationsgruppe darstellte. Tariq half monatelang tatkräftig beim Bühnenbau, moderierte die wöchentlichen Reflexionsrunden und brachte seine eigene Lebensgeschichte in die Stückentwicklung ein. Doch kurz vor der Premiere erlitt er einen schweren Rückfall seiner chronischen gesundheitlichen Probleme, der es ihm unmöglich machte, am Abend der Aufführung physisch auf der Bühne zu stehen. In den Augen der städtischen Förderrichtlinien existierte Tariqs monatelanger, für die Gruppendynamik unverzichtbarer Beitrag schlichtweg nicht. Da er weder eine Eintrittskarte erworben noch als aktiver Akteur im gedruckten Programmheft der Abendvorstellung aufgeführt wurde, blieb sein Name in den amtlichen Evaluationsbögen unsichtbar.\n\nDieser fundamentale Konflikt zwischen bürokratischer Messbarkeit und realer sozialer Transformation wirft die drängende Frage auf, wer eigentlich über den Wert von Kulturarbeit entscheidet. Die städtische Verwaltung agiert in einem Korsett aus Leistungsindikatoren, die primär auf Sichtbarkeit, Reichweite und öffentlichkeitswirksame Events geeicht sind. Wenn jedoch Kunstprojekte auf diese Weise auf bloße Produktabgabe reduziert werden, konterkariert dies ihren eigentlichen emanzipatorischen Auftrag. Der eigentliche Wert von *Bühne für alle* lag nicht in den applaudierten zwei Stunden des fertigen Stücks, sondern in den zahllosen unsichtbaren Momenten des Vertrauensaufbaus und der kollektiven Sprachfindung, die in den Kellerräumen des Gemeindezentrums stattfanden und die Statistik gänzlich unberührt ließen.\n\nAm Ende des Förderjahres steht das Projekt nun vor einer existenziellen Zerreißprobe. Um die dringend benötigten Gelder für die nächste Periode zu sichern, drängt die Kulturkommission darauf, die Zahl der abendlichen Aufführungen zu verdoppeln und die sozialpädagogischen Betreuungsstunden zugunsten größerer Besucherkapazitäten zu kürzen. Bergmann und Sommer stehen vor der unlösbaren Aufgabe, sich entweder dem ökonomischen Diktat der Kennzahlen anzupassen oder ihre pädagogische Integrität zu verteidigen. Sollten sie dem Druck nachgeben, droht das Theater zu einer bloßen Eventagentur zu verkommen, die zwar glänzende Bilanzen liefert, aber genau jene Menschen verliert, für die der Vorhang niemals aufgehen sollte.\n\nUm diesem drohenden Ausverkauf ihres pädagogischen Ethos zu begegnen, entwickelten die Initiatoren gemeinsam mit den betroffenen Teilnehmern schließlich einen radikalen Gegenentwurf zur rein quantitativen Berichterstattung. Statt sich dem bürokratischen Diktat der Excel-Tabellen widerstandslos zu beugen, initiierten sie eine alternative Dokumentation, die den Fokus gezielt auf die unsichtbaren Prozesse im Hintergrund legte. In akribischer Kleinarbeit sammelten sie Audioaufnahmen von Probenunterbrechungen, anonymisierte Reflexionsprotokolle aus den Theaterwerkstätten und handgeschriebene Briefe der Jugendlichen, um die tatsächliche Tiefe der sozialen Transformation eindrucksvoll zu belegen. Diese subversive Form der Rechenschaftslegung verdeutlichte den städtischen Revisoren auf schmerzhafte Weise, dass menschliche Entwicklungsprozesse niemals in ein starres Korsett aus Eintrittskarten und Besucherrekorden gepresst werden können. Als dieser alternative Bericht schließlich im Rathaus eingereicht wurde, löste er dort eine kontroverse Debatte über den wahren Sinn öffentlicher Kulturförderung aus. Plötzlich standen nicht mehr nur die bloßen Verkaufszahlen im Zentrum der politischen Aufmerksamkeit, sondern die fundamentale Frage, ob Kunst als reines Wirtschaftsgut oder als unverzichtbares Werkzeug gesellschaftlicher Inklusion verstanden werden soll. Damit haben Bergmann und Sommer zwar keinen leichten Sieg errungen, aber sie haben eine dringend notwendige Diskussion angestoßen, die das Überleben des Projekts auf ganz neue, gerechtere Fundamente stellen könnte.",
+    "wordCount": 711,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Revisoren",
+        "lemma": "Revisoren",
+        "glosses": {
+          "es": "auditors",
+          "en": "auditors"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Raster",
+        "lemma": "Raster",
+        "glosses": {
+          "es": "grid or framework",
+          "en": "grid or framework"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emanzipatorischen",
+        "lemma": "emanzipatorischen",
+        "glosses": {
+          "es": "emancipatory",
+          "en": "emancipatory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zerreißprobe",
+        "lemma": "Zerreißprobe",
+        "glosses": {
+          "es": " severe test or ordeal",
+          "en": " severe test or ordeal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Diktat",
+        "lemma": "Diktat",
+        "glosses": {
+          "es": "dictate",
+          "en": "dictate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Sichtbarkeit",
+        "lemma": "Sichtbarkeit",
+        "glosses": {
+          "es": "visibility",
+          "en": "visibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.7,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches übergeordnete Thema behandelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die bürokratische Fehlsteuerung von Kulturförderung."
+        },
+        {
+          "id": "a2",
+          "text": "Die mangelnde Qualität von Amateurtheateraufführungen."
+        },
+        {
+          "id": "a3",
+          "text": "Die technischen Probleme beim modernen Bühnenbau."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Dieser fundamentale Konflikt zwischen bürokratischer Messbarkeit und realer sozialer Transformation wirft die drängende Frage auf, wer eigentlich über den Wert von Kulturarbeit entscheidet.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum taucht Tariq in den offiziellen Berichten der Stadt nicht auf?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil er die Theatergruppe bereits vor Beginn der Proben verlassen hatte."
+        },
+        {
+          "id": "a2",
+          "text": "Weil er weder eine Karte kaufte noch bei der Premiere auf der Bühne stand."
+        },
+        {
+          "id": "a3",
+          "text": "Weil er sich weigerte, an den wöchentlichen Reflexionsrunden teilzunehmen."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Da er weder eine Eintrittskarte erworben noch als aktiver Akteur im gedruckten Programmheft der Abendvorstellung aufgeführt wurde, blieb sein Name in den amtlichen Evaluationsbögen unsichtbar.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewerten die Leiter des Projekts die Prioritätensetzung der Stadt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie sorgt für eine gerechte Verteilung der städtischen Gelder."
+        },
+        {
+          "id": "a2",
+          "text": "Sie verbessert die Zusammenarbeit zwischen Verwaltung und Künstlern."
+        },
+        {
+          "id": "a3",
+          "text": "Sie gefährdet die pädagogische und soziale Kernarbeit."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wenn jedoch Kunstprojekte auf diese Weise auf bloße Produktabgabe reduziert werden, konterkariert dies ihren eigentlichen emanzipatorischen Auftrag.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Text mit der detaillierten Beschreibung von Tariqs Situation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Schwächen des rein quantitativen Evaluationssystems aufzuzeigen."
+        },
+        {
+          "id": "a2",
+          "text": "Zu beweisen, dass gesundheitliche Probleme im Theater unvermeidbar sind."
+        },
+        {
+          "id": "a3",
+          "text": "Die organisatorischen Abläufe beim Bühnenbau zu kritisieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Besonders deutlich wurde diese Schieflage am Schicksal von Tariq, einem jungen Mann, der während der Vorbereitungsphase eine zentrale Säule der Improvisationsgruppe darstellte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Ton prägt die Darstellung der Kulturverwaltung im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Humorvoll und ironisch"
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und distanziert"
+        },
+        {
+          "id": "a3",
+          "text": "Lobend und anerkennend"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Während die Verwaltung triumphierend die Ticketverkäufe summierte, gerieten die eigentlichen Errungenschaften der monatelangen Probenarbeit komplett aus dem Raster der offiziellen Statistik.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Zerreißprobe' im Kontext des letzten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein plötzlicher Streit zwischen den Darstellern während der Aufführung."
+        },
+        {
+          "id": "a2",
+          "text": "Eine finanzielle Prüfung durch unabhängige Theaterkritiker."
+        },
+        {
+          "id": "a3",
+          "text": "Eine extreme Belastungsprobe, die den Bestand des Projekts gefährdet."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Am Ende des Förderjahres steht das Projekt nun vor einer existenziellen Zerreißprobe.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar (150–200 Wörter) aus Sicht der Kulturverwaltung, in dem Sie auf die Kritik des Textes reagieren und die Notwendigkeit quantitativer Kennzahlen für die Verteilung öffentlicher Gelder begründen.",
+      "en": "Verfassen Sie einen kurzen Kommentar (150–200 Wörter) aus Sicht der Kulturverwaltung, in dem Sie auf die Kritik des Textes reagieren und die Notwendigkeit quantitativer Kennzahlen für die Verteilung öffentlicher Gelder begründen."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Artikel über die Evaluierung eines Gemeinschaftstheaters und beantworten Sie die Fragen zum Text.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Bilanz der unsichtbaren Bühnen | C1 Reading | WeLearn",
+      "en": "Bilanz der unsichtbaren Bühnen | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein kritischer Bericht über die Differenz zwischen städtischen Förderkriterien und der tatsächlichen sozialen Wirkung von Amateurtheater.",
+      "en": "Ein kritischer Bericht über die Differenz zwischen städtischen Förderkriterien und der tatsächlichen sozialen Wirkung von Amateurtheater."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

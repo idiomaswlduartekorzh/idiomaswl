@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-river-map",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Geometrie der Flut",
+      "en": "Die Geometrie der Flut"
+    },
+    "intro": {
+      "es": "Lesen Sie den Artikel über den Konflikt zweier Hochwasserkarten und beantworten Sie die Fragen.",
+      "en": "Lesen Sie den Artikel über den Konflikt zweier Hochwasserkarten und beantworten Sie die Fragen."
+    },
+    "mission": {
+      "es": "Analysieren Sie den Text und bearbeiten Sie die Aufgaben im JSON-Format.",
+      "en": "Analysieren Sie den Text und bearbeiten Sie die Aufgaben im JSON-Format."
+    },
+    "targetText": "Am späten Dienstagnachmittag betrat Bürgermeister Dr. med. h.c. Thomas Hanno das Bürgerzentrum von Greifenberg, um den Quartiersrat über die Neukonzeption der kommunalen Hochwasserrisikokarte zu unterrichten. Seit den verheerenden Regenfällen des vergangenen Spätsommers, bei denen der Mühlbach über die Ufer getreten war und im Ortsteil Niederau beträchtliche Schäden anrichtete, forderten die Anwohner verlässliche Schutzmaßnahmen und finanzielle Unterstützung für bauliche Anpassungen. Hanno, ein erfahrener Verwaltungsmann, der seine Karriere auf unerschütterliche Sachlichkeit gründete, hatte gehofft, mit der neuen Karte des Landesamtes für Gewässerkunde endlich eine solide Planungsgrundlage präsentieren zu können. Stattdessen entfachte das Dokument einen folgenschweren Streit, der die Dorfgemeinschaft spaltete und grundsätzliche Fragen über die Definition von Naturgefahren aufwarf.\n\nDas Kernproblem lag in einer fundamentalen methodischen Neuausrichtung. Die bisherige, historisch gewachsene Karte basierte primär auf empirischen Schadensereignissen der letzten Jahrzehnte und berücksichtigte lokale Geländeprofile sowie traditionelle Ablagerungen im Bachbett. Sie stufte den gesamten Unterlauf des Mühlbachs als gelbes Vorsorgegebiet ein, womit knapp einhundert Grundstücke für staatliche Sanierungszuschüsse qualifiziert waren. Die neue, von einem privaten Ingenieurbüro im Auftrag des Ministeriums entwickelte Karte hingegen nutzte komplexe algorithmische Simulationen von Extremwetterereignissen mit einer statistischen Wiederkehrzeit von zweihundert Jahren. Dieses Modell ignorierte viele historische Kleinereignisse, kalkulierte dafür jedoch hypothetische Starkregenfronten ein, die über den umliegenden Hügellangen niedergehen könnten. Durch diese mathematische Verschiebung der Parameter schrumpfte das gefährdete Areal im dicht besiedelten Niederau paradoxerweise zusammen, während einige bisher verschonte Grundstücke am oberen Hang völlig unerwartet in die rote Risikozone rutschten.\n\nAls Hanno die Details erläuterte, erhob sich im vollbesetzten Saal lautstarker Unmut. Besonders betroffen zeigte sich Korbinian Brandner, der Besitzer der traditionsreichen Mühle am unteren Mühlbach. Brandners Anwesen war im Vorjahr nur knapp einer Überschwemmung entgangen, und er hatte gehofft, aus dem Fonds der alten Karte dringend benötigte Mittel für eine moderne Uferbefestigung zu erhalten. Nach der neuen Simulation fiel sein Grundstück jedoch aus der kritischen Zone heraus, weil der Algorithmus die Fließgeschwindigkeit anders gewichtete und dem Bachlauf mehr ungesicherten Raum zuschrieb. Brandner trat ans Mikrofon und warf der Gemeindeverwaltung vor, die Statistik zugunsten von Einsparungen zu manipulieren. Seine Familie bewirtschaftete das Land seit Generationen, und er argumentierte scharf, dass kein Computermodell das reale Wasser verdrängen könne, das im Ernstfall wieder den Keller fluten werde. Der Bürgermeister, der das Dilemma durchaus erkannte, versuchte zu beschwichtigen, indem er einräumte, dass die algorithmische Methode zwar gewisse blinde Flecke aufweise, aber europaweiten Standards entspreche und bürokratische Rechtssicherheit biete.\n\nZwar ließ sich nicht leugnen, dass das neue Modell präzisere Prognosen für seltene Jahrhundertkatastrophen lieferte, doch die Entkoppelung von erlebter Realität und amtlicher Klassifikation schuf ein gefährliches Vakuum im alltäglichen Katastrophenschutz. Die Versicherungswirtschaft, die sich streng an die amtlichen Kartierungen hielt, kündigte bereits an, die Prämien für die neu ausgewiesenen Hanglagen drastisch zu erhöhen, während die Mühle und die umliegenden Häuser im Talgrund trotz ihrer dokumentierten Historie plötzlich als risikofrei galten und folglich leer ausgingen. Damit drohte eine absurde Umkehrung der Verhältnisse: Jene Bürger, deren Häuser im letzten Jahr unter Wasser gestanden hatten, verloren den Anspruch auf staatliche Vorsorgegelder, weil das abstrakte Rechenmodell sie für sicher befand. Gleichzeitig mussten Bewohner höher gelegener Siedlungen, die noch nie nasse Füße gehabt hatten, plötzlich tiefer in die Tasche greifen, um unbezahlbare Elementarversicherungen zu finanzieren.\n\nDie Versammlung endete in einer unversöhnlichen Pattsituation, als der Gemeinderat gegen Mitternacht auseinanderging, ohne einen Beschluss gefasst zu haben. Hanno stand vor den Trümmern seiner Krisenkommunikation, denn die vermeintliche Modernisierung hatte das Vertrauen in die kommunale Handlungsfähigkeit nachhaltig beschädigt. Ohne eine Synthese aus empirischer Erfahrung und zukunftsweisender Simulation drohte der Hochwasserschutz in Greifenberg zu einem bürokratischen Papiertiger zu werden. Am darauffolgenden Morgen lagen die ersten offiziellen Einsprüche auf dem Schreibtisch des Bürgermeisters, angeführt von Brandners Unterschrift, was zeigte, dass der Konflikt längst die juristische Ebene erreicht hatte und jede Hoffnung auf einen schnellen Kompromiss im Keim erstickte.\n\nDer anhaltende Rechtsstreit legte schließlich Schwachstellen offen, die weit über die Gemeindegrenzen von Greifenberg hinausreichten und das gesamte föderale System der Gefahrenabwehr infrage stellten. Während Juristen über die Beweiskraft digitaler Simulationen versus historischer Zeugnisse stritten, begannen besorgte Bürger Eigeninitiativen zu gründen und eigene Sandsackdepots anzulegen, da sie weder dem alten noch dem neuen System vertrauten. Diese Erosion staatlicher Autorität zwang das Ministerium zu verdeckten Krisengesprächen, um das drohende Desaster abzuwenden. Doch selbst wenn ein überarbeiteter Kompromiss gefunden werden sollte, blieb die Erkenntnis bestehen, dass der Versuch, Naturkatastrophen rein mathematisch zu bändigen, die soziale Stabilität einer Dorfgemeinschaft ebenso nachhaltig gefährden konnte wie das ungezähmte Wasser des Mühlbaches selbst.",
+    "wordCount": 723,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Unmut",
+        "lemma": "Unmut",
+        "glosses": {
+          "es": "discontent",
+          "en": "discontent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dilemma",
+        "lemma": "Dilemma",
+        "glosses": {
+          "es": "dilemma",
+          "en": "dilemma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Vakuum",
+        "lemma": "Vakuum",
+        "glosses": {
+          "es": "vacuum",
+          "en": "vacuum"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pattsituation",
+        "lemma": "Pattsituation",
+        "glosses": {
+          "es": "stalemate",
+          "en": "stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Papiertiger",
+        "lemma": "Papiertiger",
+        "glosses": {
+          "es": "paper tiger",
+          "en": "paper tiger"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Einsprüche",
+        "lemma": "Einsprüche",
+        "glosses": {
+          "es": "objections",
+          "en": "objections"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.9,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text im Wesentlichen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die rechtlichen Folgen einer neuen Hochwasserkarte, die durch veränderte Definitionsmethoden zu ungleichen Hilfsansprüchen und heftigem Protest führt."
+        },
+        {
+          "id": "a2",
+          "text": "Um die technische Sanierung des Mühlbachs durch das private Ingenieurbüro."
+        },
+        {
+          "id": "a3",
+          "text": "Um die generelle Abschaffung von Elementarversicherungen in ländlichen Regionen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Kernproblem lag in einer fundamentalen methodischen Neuausrichtung.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkrete Auswirkung hatte die neue Simulation auf Korbinian Brandners Mühle?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie stufte das Anwesen als extrem gefährdet ein."
+        },
+        {
+          "id": "a2",
+          "text": "Sie fiel aus der kritischen Zone heraus und verlor den Anspruch auf Fördermittel."
+        },
+        {
+          "id": "a3",
+          "text": "Sie erhielt sofort die erhofften Gelder für die Uferbefestigung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Nach der neuen Simulation fiel sein Grundstück jedoch aus der kritischen Zone heraus, weil der Algorithmus die Fließgeschwindigkeit anders gewichtete und dem Bachlauf mehr ungesicherten Raum zuschrieb.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welches Verhalten zeigt die Versicherungswirtschaft in Bezug auf die neuen Karten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie ignoriert die amtlichen Kartierungen vollständig und zahlt allen betroffenen Bürgern pauschale Schadensersätze."
+        },
+        {
+          "id": "a2",
+          "text": "Sie senkt die Beiträge im gesamten Gemeindegebiet, um die Anwohner zu entlasten."
+        },
+        {
+          "id": "a3",
+          "text": "Sie passt ihre Prämien strikt an die neue amtliche Kartierung an, was zu paradoxen finanziellen Belastungen führt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Versicherungswirtschaft, die sich streng an die amtlichen Kartierungen hielt, kündigte bereits an, die Prämien für die neu ausgewiesenen Hanglagen drastisch zu erhöhen, während die Mühle und die umliegenden Häuser im Talgrund trotz ihrer dokumentierten Historie plötzlich als risikofrei galten und folglich leer ausgingen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum führt der Autor die Perspektive des Bürgermeisters Hanno ein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um zu zeigen, wie reine Verwaltungssachlichkeit an der komplexen Realität und am Bürgerprotest scheitert."
+        },
+        {
+          "id": "a2",
+          "text": "Um zu beweisen, dass die neue Karte fehlerfrei und sofort umsetzbar ist."
+        },
+        {
+          "id": "a3",
+          "text": "Um die persönlichen wirtschaftlichen Interessen des Bürgermeisters am Mühlbach zu beleuchten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Hanno, ein erfahrener Verwaltungsmann, der seine Karriere auf unerschütterliche Sachlichkeit gründete, hatte gehofft, mit der neuen Karte des Landesamtes für Gewässerkunde endlich eine solide Planungsgrundlage präsentieren zu können. Stattdessen entfachte das Dokument einen folgenschweren Streit",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Ton prägt die Darstellung der Konfliktsituation im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein humorvoller, distanzierter Blick auf lokale Streitigkeiten."
+        },
+        {
+          "id": "a2",
+          "text": "Ein nüchterner, aber kritischer Bericht über den Zusammenprall von Theorie und erlebter Realität."
+        },
+        {
+          "id": "a3",
+          "text": "Eine parteiische, rein emotionale Anklage gegen die Landesregierung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Zwar ließ sich nicht leugnen, dass das neue Modell präzisere Prognosen für seltene Jahrhundertkatastrophen lieferte, doch die Entkoppelung von erlebter Realität und amtlicher Klassifikation schuf ein gefährliches Vakuum im alltäglichen Katastrophenschutz.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der im Text verwendete Begriff Papiertiger im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein gefaltetes Dokument, das als Vorlage für technische Zeichnungen dient."
+        },
+        {
+          "id": "a2",
+          "text": "Ein offizielles Verbotsschreiben der Versicherungsgesellschaften."
+        },
+        {
+          "id": "a3",
+          "text": "Ein wirkungsloses, theoretisches Konzept ohne praktische Durchsetzungskraft."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ohne eine Synthese aus empirischer Erfahrung und zukunftsweisender Simulation drohte der Hochwasserschutz in Greifenberg zu einem bürokratischen Papiertiger zu werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Naturgefahrenvorsorge eher historische Erfahrungswerte oder computergestützte Simulationen gewichtet werden sollten.",
+      "en": "Schreiben Sie einen kurzen Kommentar (150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Naturgefahrenvorsorge eher historische Erfahrungswerte oder computergestützte Simulationen gewichtet werden sollten."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysieren Sie den Text und bearbeiten Sie die Aufgaben im JSON-Format.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Geometrie der Flut | C1 Reading | WeLearn",
+      "en": "Die Geometrie der Flut | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lesen Sie den Artikel über den Konflikt zweier Hochwasserkarten und beantworten Sie die Fragen.",
+      "en": "Lesen Sie den Artikel über den Konflikt zweier Hochwasserkarten und beantworten Sie die Fragen."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

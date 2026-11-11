@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der zugänglichen Kultur",
+      "en": "Die Illusion der zugänglichen Kultur"
+    },
+    "intro": {
+      "es": "Eine kritische Auseinandersetzung mit der Behauptung, moderne Museen stünden allen Schichten gleichermaßen offen.",
+      "en": "Eine kritische Auseinandersetzung mit der Behauptung, moderne Museen stünden allen Schichten gleichermaßen offen."
+    },
+    "mission": {
+      "es": "Lesen Sie den folgenden Text und beantworten Sie anschließend die Fragen zum Verständnis sowie zur sprachlichen und argumentativen Struktur.",
+      "en": "Lesen Sie den folgenden Text und beantworten Sie anschließend die Fragen zum Verständnis sowie zur sprachlichen und argumentativen Struktur."
+    },
+    "targetText": "Als das städtische Museum für Gegenwartskunst im vergangenen Herbst mit großem medialen Echo verkündete, sämtliche Dauerausstellungen ab sofort für die Allgemeinheit bei freiem Eintritt zu öffnen, feierte die lokale Presse dies als epochalen Durchbruch für die kulturelle Teilhabe. Direktorin Dr. Helga von Berg ließ in ihrer Ansprache verlorenen Pathos walten und postulierte, dass Hochkultur fortan keine Frage des Geldbeutels mehr sein dürfe. Diese philanthropische Geste sollte jedoch bald einer weitaus komplexeren Realität weichen, wie ein Blick auf die tatsächlichen Logistikketten des Alltags zeigt. Wer die sozialen Barrieren lediglich auf den nominellen Preis des Einlassbilletts reduziert, verkennt die ökonomischen und strukturellen Hürden, die einem unbeschwerten Museumsbesuch für durchschnittliche Familien im Wege stehen.\n\nEin treffendes Beispiel hierfür liefert der Sonntagsausflug der Familie Weber. Thomas Weber, gelernter Feinmechaniker, und seine Frau Sabine, die in Teilzeit als Buchhalterin arbeitet, hatten sich vorgenommen, mit ihren beiden Kindern im Grundschulalter die viel besprochene Retrospektive zu besuchen. Die vermeintliche Kostenfreiheit erwies sich jedoch rasch als Trugschluss. Da das Museum am Stadtrand liegt und die Anbindung mit dem öffentlichen Nahverkehr an Wochenenden durch Schienenersatzverkehre stark beeinträchtigt war, mussten sie auf das Auto ausweichen. Allein die Parkgebühren im nahe gelegenen Parkhaus beliefen sich auf einen Betrag, der das Budget für einen kleinen Nachmittagskaffee überstieg. Die vermeintlich kostenlose Kultur erwies sich somit als fiskalische Mogelpackung, bei der die Eintrittskarte lediglich den geringsten Kostenfaktor darstellte.\n\nNoch schwerwiegender als die reinen Transportkosten fiel der Faktor Zeit ins Gewicht, der in den wohlmeinenden Berichten der Museumsleitung komplett ausgespart blieb. Weil die Ausstellung stark frequentiert war und das Museum keine verlässlichen Zeitfenster für Familien anbot, verbrachte die vierköpfige Familie fast eine Stunde in einer windigen Schlange vor dem Haupteingang. Die jüngere Tochter, ohnehin erschöpft von einer Woche voller schulischer Verpflichtungen, verlor dort ihre Geduld. Im Inneren der Hallen angekommen, herrschte ein derart dichter Gedrängezustand, dass an ein konzentriertes Betrachten der Exponate kaum zu denken war. Die vermeintliche Offenheit des Hauses schuf de facto einen Exklusionsraum, in dem nur jene reüssieren konnten, die über die nötige physische Robustheit und zeitliche Flexibilität verfügten.\n\nDr. von Berg betonte in einer späteren Podiumsdiskussion zwar, dass man stolz auf die gestiegenen Besucherzahlen sei, wich jedoch der Frage aus, wer diese neuen Gäste eigentlich seien. Statistische Erhebungen vor Ort offenbarten nämlich ein bekanntes Phänomen: Die Gruppe der Bezieher kleiner Einkommen oder Alleinerziehender tauchte in den Hallen kaum auf. Stattdessen nutzten vor allem gut situierte Pendler und Akademikerhaushalte das Angebot für einen sonntäglichen Spaziergang, während die strukturell Benachteiligten weiterhin durch die Maschen des angeblich so niederschwelligen Netzes fielen. Der freie Eintritt fungierte folglich nicht als Instrument der Umverteilung, sondern als unbewusste Subventionierung einer ohnehin privilegierten Klientel, die sich den Luxus von Freizeit und Mobilität ohnehin leisten kann.\n\nAm Ende bleibt ein schales Gefühl der Enttäuschung zurück. Die Webers traten nach kaum sechzig Minuten den Heimweg an – genervt von den Parkkosten, erschöpft vom Lärm und enttäuscht darüber, dass die große Verheißung der Chancengleichheit an der Garderobe endete. Wenn Kultureinrichtungen den Anspruch erheben, demokratische Orte für alle zu sein, greift die bloße Abschaffung von Eintrittsgeldern schlicht zu kurz. Solange die sozialen und ökonomischen Randbedingungen des Besuchs ignoriert werden, bleibt der freie Eintritt ein zahnloser Tiger, der eine gesellschaftliche Öffnung zwar verspricht, sie aber in der rauen Praxis konsequent verhindert.\n\nDiese ernüchternde Bilanz verdeutlicht, dass eine wirkliche Kulturevidenz weit mehr erfordert als populistische Gesten der Großzügigkeit. Um dem eigenen Bildungsauftrag gerecht zu werden, müssten Verantwortliche wie Dr. von Berg ihre Strategie grundlegend revidieren und flankierende Maßnahmen implementieren, die gezielt an den Wurzeln der tatsächlichen Benachteiligung ansetzen. Dazu zählte etwa die Einrichtung dezentraler Außenstellen in strukturell schwächeren Stadtteilen oder die Bereitstellung kostenloser, eng getakteter Shuttlebusse, welche die peripheren Wohngebiete direkt an das museale Zentrum anbinden. Erst wenn die physische Erreichbarkeit gewährleistet und gleichzeitig durch pädagogisch begleitete Familienangebote ein angstfreier, entspannter Zugang geschaffen wird, verwandelt sich das theoretische Versprechen von Partizipation in eine gelebte Realität. Bis dahin bleibt das Museum jedoch eine elitäre Festung im Gewand eines Wohlfahrtsverbands, deren Mauern zwar theoretisch offenstehen, faktisch aber von unsichtbaren Barrieren aus Zeitnot, Erschöpfung und verborgenen Zusatzkosten verteidigt werden. Letztlich zeigt dieser Fall mustergültig, wie gut gemeinte Sozialreformen im Kulturbereich ins Leere laufen können, wenn sie die Lebenswirklichkeit der Menschen ignorieren, denen sie eigentlich zu mehr Teilhabe verhelfen sollten.",
+    "wordCount": 701,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "epochalen",
+        "lemma": "epochalen",
+        "glosses": {
+          "es": "epoch-making / momentous",
+          "en": "epoch-making / momentous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Trugschluss",
+        "lemma": "Trugschluss",
+        "glosses": {
+          "es": "fallacy / misconception",
+          "en": "fallacy / misconception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiskalische",
+        "lemma": "fiskalische",
+        "glosses": {
+          "es": "fiscal / financial",
+          "en": "fiscal / financial"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gedrängezustand",
+        "lemma": "Gedrängezustand",
+        "glosses": {
+          "es": "state of crowding / congestion",
+          "en": "state of crowding / congestion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reüssieren",
+        "lemma": "reüssieren",
+        "glosses": {
+          "es": "succeeding / thriving",
+          "en": "succeeding / thriving"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Mogelpackung",
+        "lemma": "Mogelpackung",
+        "glosses": {
+          "es": "misleading package / deceptive bargain",
+          "en": "misleading package / deceptive bargain"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.9,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welche Kernaussage vertritt der Verfasser bezüglich des freien Museumseintrags?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er reicht allein nicht aus, um echte Chancengleichheit zu garantieren."
+        },
+        {
+          "id": "a2",
+          "text": "Er bildet die absolute Grundlage für einen gerechten und barrierefreien Zugang."
+        },
+        {
+          "id": "a3",
+          "text": "Er beseitigt sämtliche finanziellen Hürden für einkommensschwache Haushalte vollständig."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Wer die sozialen Barrieren lediglich auf den nominellen Preis des Einlassbilletts reduziert, verkennt die ökonomischen und strukturellen Hürden, die einem unbeschwerten Museumsbesuch für durchschnittliche Familien im Wege stehen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welcher konkrete Umstand zwang Familie Weber zur Nutzung des Autos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein defekter Aufzug im Hauptbahnhof"
+        },
+        {
+          "id": "a2",
+          "text": "Schienenersatzverkehre im Nahverkehr am Wochenende"
+        },
+        {
+          "id": "a3",
+          "text": "Ein plötzlicher Streik des städtischen Buspersonals"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Da das Museum am Stadtrand liegt und die Anbindung mit dem öffentlichen Nahverkehr an Wochenenden durch Schienenersatzverkehre stark beeinträchtigt war, mussten sie auf das Auto ausweichen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche soziale Gruppe profitiert laut den statistischen Erhebungen tatsächlich am meisten vom freien Eintritt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Arbeiter"
+        },
+        {
+          "id": "a2",
+          "text": "Familien"
+        },
+        {
+          "id": "a3",
+          "text": "Gut situierte Pendler und Akademiker"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Stattdessen nutzten vor allem gut situierte Pendler und Akademikerhaushalte das Angebot für einen sonntäglichen Spaziergang, während die strukturell Benachteiligten weiterhin durch die Maschen des angeblich so niederschwelligen Netzes fielen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum führt der Autor das Beispiel der Familie Weber im zweiten Absatz an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die theoretische These anhand eines konkreten Schicksals zu veranschaulichen"
+        },
+        {
+          "id": "a2",
+          "text": "Um zu demonstrieren, wie leicht der Zugang für Durchschnittsfamilien mittlerweile geworden ist"
+        },
+        {
+          "id": "a3",
+          "text": "Um aufzuzeigen, dass kulturelle Bildungsangebote von allen Bevölkerungsschichten gleichermaßen genutzt werden"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ein treffendes Beispiel hierfür liefert der Sonntagsausflug der Familie Weber.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Autors gegenüber der Museumsleitung beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Unkritisch und lobend"
+        },
+        {
+          "id": "a2",
+          "text": "Skeptisch und entlarvend"
+        },
+        {
+          "id": "a3",
+          "text": "Streng wissenschaftlich und neutral"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die vermeintlich kostenlose Kultur erwies sich somit als fiskalische Mogelpackung, bei der die Eintrittskarte lediglich den geringsten Kostenfaktor darstellte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff \"Mogelpackung\" im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein verpacktes Geschenk, das beim Auspacken beschädigt ist"
+        },
+        {
+          "id": "a2",
+          "text": "Eine falsch ausgezeichnete Ware im Museumsshop"
+        },
+        {
+          "id": "a3",
+          "text": "Ein Angebot, das mehr verspricht, als es durch versteckte Kosten hält"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die vermeintlich kostenlose Kultur erwies sich somit als fiskalische Mogelpackung, bei der die Eintrittskarte lediglich den geringsten Kostenfaktor darstellte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, welche Maßnahmen neben dem freien Eintritt notwendig wären, um den Zugang zu Kultureinrichtungen für alle gesellschaftlichen Gruppen tatsächlich zu erleichtern.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, welche Maßnahmen neben dem freien Eintritt notwendig wären, um den Zugang zu Kultureinrichtungen für alle gesellschaftlichen Gruppen tatsächlich zu erleichtern."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den folgenden Text und beantworten Sie anschließend die Fragen zum Verständnis sowie zur sprachlichen und argumentativen Struktur.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der zugänglichen Kultur | C1 Reading | WeLearn",
+      "en": "Die Illusion der zugänglichen Kultur | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine kritische Auseinandersetzung mit der Behauptung, moderne Museen stünden allen Schichten gleichermaßen offen.",
+      "en": "Eine kritische Auseinandersetzung mit der Behauptung, moderne Museen stünden allen Schichten gleichermaßen offen."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

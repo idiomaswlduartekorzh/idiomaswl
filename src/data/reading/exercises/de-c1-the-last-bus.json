@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-last-bus",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der vollen Busse",
+      "en": "Die Illusion der vollen Busse"
+    },
+    "intro": {
+      "es": "Leseverständnisübung auf Niveau C1 zu einem satirisch-analytischen Text über statistische Schönfärberei im öffentlichen Nahverkehr.",
+      "en": "Leseverständnisübung auf Niveau C1 zu einem satirisch-analytischen Text über statistische Schönfärberei im öffentlichen Nahverkehr."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text und beantworten Sie die Fragen zur nuancierten Argumentation, impliziten Haltung und lexikalischen Feinheiten.",
+      "en": "Lesen Sie den Text und beantworten Sie die Fragen zur nuancierten Argumentation, impliziten Haltung und lexikalischen Feinheiten."
+    },
+    "targetText": "Der jüngste Jahresbericht des Regionalverkehrsverbunds Steinfeld liest sich wie das Manifest einer verkehrspolitischen Zeitenwende. Mit stolz geschwellter Brust verkündet die Direktion unter dem Vorsitz von Hubertus Bergmann, dass die durchschnittliche Auslastung der Buslinien im ländlichen Raum im Vergleich zum Vorjahr um beachtliche elf Prozentpunkte gestiegen sei. Wo früher auf den langen Zubringerstrecken durch das waldreiche Hügelland oft nur vereinzelte Fahrgäste verloren in den Polstern saßen, herrscht nun belegte Enge. Wer morgens den Regionalbus 412 von Tannheim nach Kirchheim besteigt, muss sich mit einem Stehplatz arrangieren. Bergmann sprach auf einer gut besuchten Pressekonferenz von einer durchschlagenden Trendwende und einem Triumph der Effizienz. Endlich würden Steuergelder nicht mehr in leeren Raum investiert, sondern zielgerichtet dort eingesetzt, wo die Nachfrage brenne. Doch hinter den glänzenden Kennzahlen verbirgt sich eine methodische Blindheit, die den Kern des öffentlichen Auftrags verfehlt, weil sie die Realität der ländlichen Bevölkerung systematisch ausblendet. Die vermeintliche Erfolgsgeschichte basiert nämlich auf einer drastischen Streichung von Kapazitäten. Nach jahrelanger Haushaltskonsolidierung sah sich der Verbund gezwungen, das Angebot auf den weniger rentablen Nebenlinien radikal zusammenzustreichen. Wer früher um zehn Uhr Vormittag oder am späten Samstagnachmittag unregelmäßig bediente Dörfer ansteuern wollte, schaut heute in die Röhre. Der Takt wurde auf vielen Routen ausgedünnt, unrentable Haltestellen wurden ersatzlos gestrichen und ganze Schleifen im Streckennetz getilgt. Die nun so erfreulich vollen Busse sind folglich kein Indikator für eine gesteigerte Attraktivität des ÖPNV, sondern das mathematische Resultat einer künstlich erzeugten Verknappung. Wenn man das ohnehin spärliche Fahrtenangebot halbiert, drängen sich die verbleibenden Pendler zwangsläufig auf den wenigen verbliebenen Kursen zusammen. Die Verkehrsplaner feiern diese erzwungene Konzentration als Effizienzgewinn, während sie geflissentlich verschweigen, dass die Gesamtzahl der beförderten Personen im gesamten Netz keineswegs gestiegen, sondern um knapp zwanzig Prozent eingebrochen ist. Der Verbund hat schlicht jene Kundschaft verloren, die ihren Alltag nicht starr nach dem neuen, ausgedünnten Notfahrplan ausrichten kann. Schichtarbeiter, Senioren mit Arztterminen und Jugendliche ohne Führerschein stehen vor verschlossenen Türen. Für sie bedeutet die Reform keineswegs eine Optimierung, sondern die vollständige Abkopplung vom gesellschaftlichen Leben. Sie haben das Pendeln schlicht aufgegeben, weil der Bus zu den benötigten Zeiten nicht mehr fährt. Die Statistik erfasst diese Gruppe jedoch nicht, denn in den modernen Erhebungssystemen tauchen nur jene auf, die den Überlebenskampf um den letzten freien Sitzplatz überhaupt noch antreten. Wer resigniert auf das Auto umsteigt oder Arzttermine absagt, fällt aus dem Raster der Erfassung heraus. Kritiker aus den betroffenen Gemeinden sprechen daher von einer zynischen Schönfärberei, die den Rückzug aus der Fläche als Modernisierung verkauft. Der Verbund argumentiert gewiss nicht völlig losgelöst von wirtschaftlichen Zwängen. Angesichts knapper Kassen und steigender Betriebskosten muss jede Verwaltung betriebswirtschaftlich agieren und subventionierte Leerfahrten minimieren. Dennoch offenbart der Fall Steinfeld ein fundamentales Dilemma der modernen Verwaltungspraxis: Wenn der Erfolg einer staatlichen Daseinsvorsorge nur noch an der prozentualen Auslastung gemessen wird, mutiert das System zu einer spitzfindigen Buchhalterei. Ein Busnetz erfüllt seinen gesellschaftlichen Zweck nicht dann am besten, wenn er wie eine Sardinenbüchse gefüllt ist, sondern wenn er Mobilität dort garantiert, wo der Markt versagt. Solange die Direktion die sinkende absolute Passagierzahl als Kollateralschaden eines vermeintlichen Aufschwungs verbucht, bleibt der ländliche Raum Gefangener einer Statistik, die sich ihre eigene Realität bastelt.\n\nDiese verfehlte Fixierung auf rein quantitative Effizienzkennzahlen wirft letztlich die grundlegende Frage auf, welchen Zweck der öffentliche Personennahverkehr im Gefüge unseres demokratischen Gemeinwesens überhaupt erfüllen soll. Wenn staatlich finanzierte Mobilität zunehmend nach den harten Rentabilitätskriterien eines gewinnorientierten Privatunternehmens gesteuert wird, verliert sie ihren Charakter als universelles Grundrecht der Daseinsvorsorge. Der Fall des Regionalverkehrsverbunds Steinfeld führt drastisch vor Augen, wohin eine Politik steuert, die den gesellschaftlichen Nutzen zugunsten schöner Bilanzen opfert. Anstatt den ländlichen Raum durch innovative, flexible Bedienungsformen – wie etwa bedarfsorientierte Rufbusse oder integrierte Mitfahrsysteme – zukunftsfähig zu machen, wird hier das Angebot schlicht so lange verknappt, bis die verbleibende Nachfrage statistisch passt. Diese Entwicklung droht jedoch das soziale Gefüge in den Dörfern nachhaltig zu beschädigen, da die Abwanderung junger Menschen und die Isolation älterer Bürger durch mangelnde Mobilität massiv beschleunigt werden. Langfristig zahlt die öffentliche Hand diesen vermeintlichen Einspartoleranzen einen hohen Preis in Form steigender Sozialkosten, schrumpfender Gemeindebudgets und des endgültigen Verlusts der Infrastruktur im ländlichen Raum. Ein wahrhaft zukunftsweisender Verkehrswende-Kurs müsste deshalb völlig andere Prioritäten setzen: Er dürfte den Erfolg des Systems nicht länger an der Enge im einzelnen Bus messen, sondern müsste die Flächendeckung und die tatsächliche Erreichbarkeit aller Bürger als oberste Maxime definieren. Nur wenn Mobilität als sozialer und ökologischer Integrationsfaktor verstanden wird, der auch dort greift, wo keine ökonomischen Gewinne zu holen sind, kann der öffentliche Verkehr seine historische Rolle als Garant gleichwertiger Lebensverhältnisse wieder einnehmen. Andernfalls bleibt die vielzitierte Zeitenwende nichts weiter als ein statistisches Taschenspielerspiel, bei dem die ländliche Bevölkerung auf der Strecke bleibt.",
+    "wordCount": 770,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Schönfärberei",
+        "lemma": "Schönfärberei",
+        "glosses": {
+          "es": "whitewashing / glossing over",
+          "en": "whitewashing / glossing over"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Haushaltskonsolidierung",
+        "lemma": "Haushaltskonsolidierung",
+        "glosses": {
+          "es": "budget consolidation",
+          "en": "budget consolidation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verknappung",
+        "lemma": "Verknappung",
+        "glosses": {
+          "es": "scarcity / reduction in supply",
+          "en": "scarcity / reduction in supply"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Abkopplung",
+        "lemma": "Abkopplung",
+        "glosses": {
+          "es": "detachment / decoupling",
+          "en": "detachment / decoupling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Daseinsvorsorge",
+        "lemma": "Daseinsvorsorge",
+        "glosses": {
+          "es": "provision of public services",
+          "en": "provision of public services"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kollateralschaden",
+        "lemma": "Kollateralschaden",
+        "glosses": {
+          "es": "collateral damage",
+          "en": "collateral damage"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text im Wesentlichen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Kritik an einer trügerischen Statistik, die Angebotskürzungen als Effizienz feiert."
+        },
+        {
+          "id": "a2",
+          "text": "Um die erfolgreiche Sanierung des Regionalverkehrs durch moderne Busse."
+        },
+        {
+          "id": "a3",
+          "text": "Um den Bau neuer Straßen im ländlichen Raum zur Entlastung des Verkehrs."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Der jüngste Jahresbericht des Regionalverkehrsverbunds Steinfeld liest sich wie das Manifest einer verkehrspolitischen Zeitenwende.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was ist die unmittelbare Ursache für die hohe Auslastung der Busse?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein massiver Zuzug von neuen Pendlern in die ländliche Region."
+        },
+        {
+          "id": "a2",
+          "text": "Eine radikale Reduzierung des Fahrtenangebots und der Haltestellen."
+        },
+        {
+          "id": "a3",
+          "text": "Die Einführung kostenloser Tickets für alle Altersgruppen."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Wer früher um zehn Uhr Vormittag oder am späten Samstagnachmittag unregelmäßig bediente Dörfer ansteuern wollte, schaut heute in die Röhre.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welcher Personenkreis wird von der aktuellen Statistik des Verkehrsverbunds komplett ignoriert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Diejenigen, die den öffentlichen Nahverkehr regelmäßig nutzen und zufrieden sind."
+        },
+        {
+          "id": "a2",
+          "text": "Die Politiker, die über die Subventionen für den ländlichen Raum entscheiden."
+        },
+        {
+          "id": "a3",
+          "text": "Die Menschen, die wegen des schlechten Angebots aufgegeben haben zu fahren."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Statistik erfasst diese Gruppe jedoch nicht, denn in den modernen Erhebungssystemen tauchen nur jene auf, die den Überlebenskampf um den letzten freien Sitzplatz überhaupt noch antreten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Autor mit der Darstellung der Verwaltungspraxis?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er will aufzeigen, wie betriebswirtschaftliches Denken den sozialen Auftrag verfehlt."
+        },
+        {
+          "id": "a2",
+          "text": "Er möchte lobend hervorheben, wie gut Verkehrsbetriebe sparen können."
+        },
+        {
+          "id": "a3",
+          "text": "Er fordert die sofortige Entlassung des Direktors Hubertus Bergmann."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Dennoch offenbart der Fall Steinfeld ein fundamentales Dilemma der modernen Verwaltungspraxis: Wenn der Erfolg einer staatlichen Daseinsvorsorge nur noch an der prozentualen Auslastung gemessen wird, mutiert das System zu einer spitzfindigen Buchhalterei.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Ton prägt die Argumentation des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Objektiv, trocken und frei von jeglicher emotionaler Bewertung."
+        },
+        {
+          "id": "a2",
+          "text": "Ironisch und kritisch gegenüber administrativer Dateninterpretation."
+        },
+        {
+          "id": "a3",
+          "text": "Euphorisch und unterstützend für die neuen Sparmaßnahmen."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Kritiker aus den betroffenen Gemeinden sprechen daher von einer zynischen Schönfärberei, die den Rückzug aus der Fläche als Modernisierung verkauft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat das im Text verwendete Wort 'Kollateralschaden' in diesem Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein gewollter und geplanter Gewinn für das Unternehmen."
+        },
+        {
+          "id": "a2",
+          "text": "Ein unbedeutender finanzieller Überschuss bei Ticketverkäufen."
+        },
+        {
+          "id": "a3",
+          "text": "Ein billigend in Kauf genommener, negativer Begleiteffekt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Solange die Direktion die sinkende absolute Passagierzahl als Kollateralschaden eines vermeintlichen Aufschwungs verbucht, bleibt der ländliche Raum Gefangener einer Statistik, die sich ihre eigene Realität bastelt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive eines betroffenen Gemeindebürgermeisters, der sich gegen die Darstellung des Verkehrsverbunds wehrt und fordert, dass Mobilität als Grundrecht statt als reine Betriebswirtschaft betrachtet wird.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive eines betroffenen Gemeindebürgermeisters, der sich gegen die Darstellung des Verkehrsverbunds wehrt und fordert, dass Mobilität als Grundrecht statt als reine Betriebswirtschaft betrachtet wird."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den Text und beantworten Sie die Fragen zur nuancierten Argumentation, impliziten Haltung und lexikalischen Feinheiten.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der vollen Busse | C1 Reading | WeLearn",
+      "en": "Die Illusion der vollen Busse | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leseverständnisübung auf Niveau C1 zu einem satirisch-analytischen Text über statistische Schönfärberei im öffentlichen Nahverkehr.",
+      "en": "Leseverständnisübung auf Niveau C1 zu einem satirisch-analytischen Text über statistische Schönfärberei im öffentlichen Nahverkehr."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

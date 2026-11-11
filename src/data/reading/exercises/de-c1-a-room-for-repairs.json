@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der Selbstermächtigung im Stadtteil-Reparaturcafé",
+      "en": "Die Illusion der Selbstermächtigung im Stadtteil-Reparaturcafé"
+    },
+    "intro": {
+      "es": "Lesen Sie den folgenden kritischen Erfahrungsbericht über ein lokales Reparaturprojekt und analysieren Sie das Spannungsfeld zwischen partizipativer Euphorie und unsichtbarer professioneller Ausbeutung.",
+      "en": "Lesen Sie den folgenden kritischen Erfahrungsbericht über ein lokales Reparaturprojekt und analysieren Sie das Spannungsfeld zwischen partizipativer Euphorie und unsichtbarer professioneller Ausbeutung."
+    },
+    "mission": {
+      "es": "Bearbeiten Sie den Text sowie die anschließenden Aufgaben, um ein tiefes Verständnis für die sprachlichen und argumentativen Nuancen auf dem Niveau C1 zu erlangen.",
+      "en": "Bearbeiten Sie den Text sowie die anschließenden Aufgaben, um ein tiefes Verständnis für die sprachlichen und argumentativen Nuancen auf dem Niveau C1 zu erlangen."
+    },
+    "targetText": "Wenn die Abenddämmerung über den Innenhof des alten Fabrikgebäudes bricht, herrscht in der zentralen Werkstatt ein geschäftiges Treiben, das fast an einen sakralen Rituallokal erinnert. Beim monatlichen Treffen der Initiative „Reparieren statt Wegwerfen“ schwenken engagierte Laien defekte Toaster, klappernde Standventilatoren und zerrissene Cordhosen durch die Luft. Es ist die stadtbekannte Plattform für bürgerschaftliches Engagement, eine Bastion gegen die allgegenwärtige Wegwerfgesellschaft. Die Initiatoren feiern dieses Format seit Jahren als Triumph der kollektiven Selbstwirksamkeit. Überall wird geschraubt, gelötet und vor allem gelächelt. Wer hier einen Stuhl besetzt, erfährt sofort dieses erhebende Gefühl der gemeinschaftlichen Problemlösung. Man reicht sich den Kreuzschlitzschraubenzieher, man tauscht fachliche Anekdoten aus, und am Ende leuchtet die LED-Lampe wieder auf. Die öffentliche Wahrnehmung, gestützt von wohlwollenden Lokaljournalisten, stilisiert diese Zusammenkünfte zu einem demokratischen Fest der Nachhaltigkeit, bei dem angeblich jede Stimme und jeder Handgriff gleich viel zählen. Doch hinter der Fassade aus Kaffeebechern, Gemeinschaftsgefühl und bürgerschaftlichem Pathos verbirgt sich eine strukturelle Schieflage, die selten ausgesprochen wird, weil sie den harmonischen Konsens gefährden würde.\n\nBetrachtet man das Geschehen durch eine nüchterne Lupe, zeigt sich eine strikte, wenngleich ungeschriebene Zweiklassengesellschaft. Während die unerfahrenen Besucher – liebevoll als Lernende apostrophiert – nach einer kurzen Einweisung den Lötkolben schwingen dürfen und am Ende des Abends stolz das reparierte Küchengerät in die Höhe halten, lastet die eigentliche, kräftezehrende Last auf den Schultern einer kleinen, hochspezialisierten Gruppe von Schattenarbeitern. Elena, eine pensionierte Elektrotechnikingenieurin mit jahrzehntelanger Berufserfahrung, und Markus, ein studierter Feinmechaniker, verbringen ihren gesamten Freitagabend in einer fensterlosen Nische. Sie diagnostizieren komplexe Platinenfehler, fangen gefährliche Netzspannungsrisiken ab und retten Geräte, die von den Amateuren bereits aufgegeben wurden. Während im restlichen Raum die integrative Gruppenarbeit zelebriert wird, arbeiten Elena und Markus akkordartig, schweißgebadet und vor allem völlig unbezahlt. Sie sind das Fundament, auf dem die Erfolgsstatistik des Vereins ruht, doch in den offiziellen Broschüren tauchen ihre Namen kaum auf; sie werden lediglich als marginale Statisten im großen Chor der solidarischen Bürgerschaft verbucht.\n\nDie offizielle Rhetorik des Vereins argumentiert, dass es hierbei um Wissensvermittlung und die Wiedergewinnung von technologischer Souveränität gehe. Man wolle die Entfremdung der Bürger von ihren Konsumgütern überwinden. Diese ideologische Prämisse klingt auf dem Papier überzeugend und mag für einfache mechanische Instandsetzungen – etwa das Annähen eines Knopfes oder das Ölen eines Scharniers – durchaus zutreffen. Doch bei hochkomplexen Elektronikschäden verkehrt sich dieser vermeintliche Emanzipationsanspruch in sein genaues Gegenteil. Die Laien erleben zwar einen kurzen Moment der Selbstwirksamkeit, erwerben dabei jedoch kein echtes, systemisches Verständnis der Materie. Sie bedienen lediglich Werkzeuge unter strenger Aufsicht, während die eigentliche intellektuelle und handwerkliche Höchstleistung unsichtbar im Hintergrund durch die Profis erbracht wird. Das Ergebnis ist eine kollektive Illusion: Die Teilnehmenden gehen mit dem beruhigenden Gefühl nach Hause, die Welt durch eigene Hände Arbeit ein Stück besser gemacht zu haben, während in Wahrheit Experten ihre Freizeit opfern, um das System vor dem scheinbaren Scheitern zu bewahren.\n\nBesonders deutlich wurde dieses ethische Dilemma beim jüngsten Jubiläumsabend, als ein ortsansässiger Kommunalpolitiker die Bühne betrat, um das Projekt als mustergültiges Beispiel für gelebte Solidarität zu preisen. Er sprach voller Pathos von der Überwindung gesellschaftlicher Barrieren und dem Abbau von Hierarchien. In der ersten Reihe nickte die Vereinsleitung zustimmend, während Elena im Hintergrund gerade zum dritten Mal in Folge einen verbrannten Kondensator auf einer filigranen Platine auswechselte, ohne dass ihr auch nur gedankt worden wäre. Die Schere zwischen dem zelebrierten Gemeinschaftsgefühl und der realen Ausbeutung von Fachwissen klaffte an diesem Abend weiter auseinander als je zuvor. Die Veranstaltung endete mit frenetischem Applaus für die Allgemeinheit, während die eigentlichen Leistungsträger schweigend ihre Werkzeugkoffer packten und das Gebäude verließen, bevor überhaupt das Gruppenfoto gemacht werden konnte.\n\nDieser fundamentale Widerspruch führt unweigerlich zu einer schleichenden Erosion des Projekts. Im Laufe der letzten Monate haben bereits mehrere erfahrene Handwerker ihre Mitarbeit angekündigt, da sie sich von der Vereinsführung nicht wertgeschätzt fühlen. Sie fordern keine fürstliche Entlohnung, sondern schlicht einen ehrlichen Umgang mit der Tatsache, dass komplexe Reparaturen eben kein nettes Freizeitspiel für jedermann sind, sondern Fachwissen erfordern. Wenn die Initiative weiterhin so tut, als basiere ihr Erfolg auf reiner Gleichberechtigung, wird sie bald vor leerem Werkzeugkoffer stehen. Die Illusion der ehrenamtlichen Selbstermächtigung funktioniert nur so lange, wie es Spezialisten gibt, die bereit sind, ihre Kompetenz unentgeltlich und unsichtbar zur Verfügung zu stellen. Sobald diese den Dienst quittieren, bricht das gesamte Kartenhaus aus Wohlfühlatmosphäre und Heuchelei in sich zusammen.",
+    "wordCount": 712,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Schieflage",
+        "lemma": "Schieflage",
+        "glosses": {
+          "es": "imbalance or precarious state",
+          "en": "imbalance or precarious state"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "apostrophiert",
+        "lemma": "apostrophiert",
+        "glosses": {
+          "es": "designated or addressed",
+          "en": "designated or addressed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Prämisse",
+        "lemma": "Prämisse",
+        "glosses": {
+          "es": "underlying premise or assumption",
+          "en": "underlying premise or assumption"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Emanzipationsanspruch",
+        "lemma": "Emanzipationsanspruch",
+        "glosses": {
+          "es": "claim to emancipation",
+          "en": "claim to emancipation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Erosion",
+        "lemma": "Erosion",
+        "glosses": {
+          "es": "gradual decline or wearing away",
+          "en": "gradual decline or wearing away"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kartenhaus",
+        "lemma": "Kartenhaus",
+        "glosses": {
+          "es": "house of cards",
+          "en": "house of cards"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.6,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welche zentrale These vertritt der Autor bezüglich des Reparaturcafés?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Das Projekt basiert auf einer unfairen Ausbeutung von Fachkräften trotz einer Fassade aus Gleichberechtigung."
+        },
+        {
+          "id": "a2",
+          "text": "Das handwerkliche Niveau aller Teilnehmenden ist über die Jahre hinweg kontinuierlich gestiegen."
+        },
+        {
+          "id": "a3",
+          "text": "Kommunalpolitiker sollten niemals die Schirmherrschaft über ehrenamtliche Initiativen übernehmen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Doch hinter der Fassade aus Kaffeebechern, Gemeinschaftsgefühl und bürgerschaftlichem Pathos verbirgt sich eine strukturelle Schieflage, die selten ausgesprochen wird, weil sie den harmonischen Konsens gefährden würde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was tun Elena und Markus während des Treffens konkret in ihrer Nische?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie halten Vorträge über die Gefahren der modernen Wegwerfgesellschaft."
+        },
+        {
+          "id": "a2",
+          "text": "Sie lösen komplizierte Elektronikprobleme und retten so die Geräte."
+        },
+        {
+          "id": "a3",
+          "text": "Sie bedienen den Kaffeestand und begrüßen die eintreffenden Besucher."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sie diagnostizieren komplexe Platinenfehler, fangen gefährliche Netzspannungsrisiken ab und retten Geräte, die von den Amateuren bereits aufgegeben wurden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum empfinden die Laien laut Text eine trügerische Selbstwirksamkeit?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil sie heimlich von professionellen Ingenieuren für ihre Arbeit bezahlt werden."
+        },
+        {
+          "id": "a2",
+          "text": "Weil sie nach dem Abend in der Lage sind, jedes elektronische Gerät selbstständig zu konstruieren."
+        },
+        {
+          "id": "a3",
+          "text": "Weil sie einfache Handgriffe unter Aufsicht ausführen, während die Profis im Hintergrund die schwere Arbeit leisten."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Laien erleben zwar einen kurzen Moment der Selbstwirksamkeit, erwerben dabei jedoch kein echtes, systemisches Verständnis der Materie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchem Zweck dient die Erwähnung des Kommunalpolitikers im vierten Absatz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie verdeutlicht die Diskrepanz zwischen politischer Lobhudelei und der realen Ausbeutung."
+        },
+        {
+          "id": "a2",
+          "text": "Sie soll die finanzielle Unterstützung der Stadt für neue Werkzeuge belegen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie zeigt, dass sich die Vereinsführung aktiv um neue politische Kontakte bemüht."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Schere zwischen dem zelebrierten Gemeinschaftsgefühl und der realen Ausbeutung von Fachwissen klaffte an diesem Abend weiter auseinander als je zuvor.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Autors gegenüber der offiziellen Vereinsrhetorik beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Unkritisch und bewundernd"
+        },
+        {
+          "id": "a2",
+          "text": "Sarkastisch und entlarvend"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent und objektiv"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sobald diese den Dienst quittieren, bricht das gesamte Kartenhaus aus Wohlfühlatmosphäre und Heuchelei in sich zusammen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff „Prämisse“ im dritten Absatz des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine finanzielle Zuwendung für den Verein"
+        },
+        {
+          "id": "a2",
+          "text": "Ein technisches Werkzeug zum Löten"
+        },
+        {
+          "id": "a3",
+          "text": "Eine zugrundeliegende Annahme oder Voraussetzung"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Diese ideologische Prämisse klingt auf dem Papier überzeugend und mag für einfache mechanische Instandsetzungen – etwa das Annähen eines Knopfes oder das Ölen eines Scharniers – durchaus zutreffen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen Kommentar (ca. 200 Wörter) auf Deutsch, in dem Sie erörtern, ob ehrenamtliche Projekte striktere Hierarchien und Bezahlungen für Experten einführen sollten, um langfristig zu überleben.",
+      "en": "Verfassen Sie einen Kommentar (ca. 200 Wörter) auf Deutsch, in dem Sie erörtern, ob ehrenamtliche Projekte striktere Hierarchien und Bezahlungen für Experten einführen sollten, um langfristig zu überleben."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Bearbeiten Sie den Text sowie die anschließenden Aufgaben, um ein tiefes Verständnis für die sprachlichen und argumentativen Nuancen auf dem Niveau C1 zu erlangen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der Selbstermächtigung im Stadtteil-Reparaturcafé | C1 Reading | WeLearn",
+      "en": "Die Illusion der Selbstermächtigung im Stadtteil-Reparaturcafé | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lesen Sie den folgenden kritischen Erfahrungsbericht über ein lokales Reparaturprojekt und analysieren Sie das Spannungsfeld zwischen partizipativer Euphorie und unsichtbarer professioneller Ausbeutung.",
+      "en": "Lesen Sie den folgenden kritischen Erfahrungsbericht über ein lokales Reparaturprojekt und analysieren Sie das Spannungsfeld zwischen partizipativer Euphorie und unsichtbarer professioneller Ausbeutung."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}

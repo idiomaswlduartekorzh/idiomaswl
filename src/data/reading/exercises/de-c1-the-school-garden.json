@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c1-the-school-garden",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "german C1"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das inklusive grüne Klassenzimmer: Anspruch und soziale Realität",
+      "en": "Das inklusive grüne Klassenzimmer: Anspruch und soziale Realität"
+    },
+    "intro": {
+      "es": "Ein Artikel über die Ambivalenzen eines vermeintlich integrativen Schulgartenprojekts an einer städtischen Gesamtschule.",
+      "en": "Ein Artikel über die Ambivalenzen eines vermeintlich integrativen Schulgartenprojekts an einer städtischen Gesamtschule."
+    },
+    "mission": {
+      "es": "Lesen Sie den folgenden Artikel aufmerksam und analysieren Sie den Konflikt zwischen pädagogischem Anspruch und sozialer Ausgrenzung.",
+      "en": "Lesen Sie den folgenden Artikel aufmerksam und analysieren Sie den Konflikt zwischen pädagogischem Anspruch und sozialer Ausgrenzung."
+    },
+    "targetText": "Die Pestalozzi-Gesamtschule strahlt im spätsommerlichen Sonnenlicht eine geschäftige Betriebsamkeit aus, besonders rund um das neueste Prestigeprojekt der Anstalt: den sogenannten Gemeinschaftsgarten. Als Schulleiterin Dr. Martina Bergmann das Vorhaben im vergangenen Frühjahr der Schulkonferenz vorstellte, tat sie dies mit jener rhetorischen Verve, die das Kollegium und die Elternschaft gewohnt sind. Ein Garten, so verkündete sie damals feierlich, sei weit mehr als ein Biotop für Gemüsepflanzen; er bilde das basale Fundament für gelebte Inklusion, interkulturellen Austausch und ökologisches Bewusstsein. Jede Familie, unabhängig von Herkunft oder sozioökonomischem Status, solle hier einen gleichberechtigten Ort der Begegnung finden. Die Idee klang auf dem Papier unbestreitbar edel und entsprach dem Zeitgeist moderner Reformpädagogik. Doch bereits bei der konstituierenden Sitzung des Planungsausschusses zeigte sich, dass die konzeptionelle Brücke zwischen hehren Idealen und der realen Lebenswelt der Elternschaft brüchig war.\n\nDas Kernproblem der Planung offenbarte sich in der stillschweigenden Prämisse, dass Freizeit eine universell verfügbare Ressource sei. Der von Konrektorin Susanne Lindemann ausgearbeitete Arbeitsplan sah vor, dass die elterliche Beteiligung durch wöchentliche Praxiseinsätze an Samstagen sowie durch unentgeltliche Materialspenden erbracht werden sollte. Wer sich aktiv einbringt, so das unausgesprochene Credo, beweist damit sein Engagement für die Schulgemeinschaft. Für Akademikerhaushalte und flexible Angestellte, deren Homeoffice-Strukturen Freiräume erlauben, stellte dieser Ansatz kaum eine Hürde dar. Ganz anders verhielt es sich jedoch mit den zahlreichen Alleinerziehenden im Schichtdienst, den Pendlerfamilien ohne eigenes Auto und den Elternteilen, die in der Gastronomie oder im Reinigungsgewerbe samstags doppelte Schichten schieben mussten. Für diese Gruppen bedeutete der Gartenplan keinladende Teilhabe, sondern vielmehr eine subtile Form des Ausschlusses und der moralischen Verurteilung.\n\nDie Kluft zwischen Anspruch und Wirklichkeit trat unübersehbar zutage, als der erste große Pflanztag an einem Samstagmorgen stattfand. Während auf den Beeten eifrig gegraben und gepflanzt wurde, blieben die Gesichter jener Eltern, deren Alltag von existentieller Ökonomie bestimmt wird, gänzlich abwesend. Schulleiterin Bergmann interpretierte diese mangelnde Präsenz in ihrer Eröffnungsrede zwar wohlwollend als anfängliche Schüchternheit, die sich durch kontinuierliche Einladungen gewiss abbauen lasse. Doch diese Diagnose verfehlte den Kern des Problems gravierend. Es handelte sich keineswegs um ein Defizit an Motivation, sondern um eine strukturelle Hürde. Herr Yilmaz, Vater zweier Viertklässler und selbstständiger Kleinunternehmer im Baugewerbe, brachte das Dilemma in einer ruhigen Minute auf den Punkt: Wer von morgens bis abends arbeitet, um die Miete zu bezahlen, kann am Wochenende keine Beetpatenschaft übernehmen, ohne dabei die Existenzgrundlage seiner Familie zu gefährden. Der Garten, der eigentlich alle verbinden sollte, zementierte stattdessen unbemerkt bestehende Klassenunterschiede.\n\nUm die drohende soziale Spaltung abzuwenden, versuchte das Kollegium, durch symbolische Zugeständnisse gegenzusteuern, was die Situation jedoch eher verschlimmerte. Anstatt die grundlegenden Bedingungen zu überarbeiten, initiierte die Schulleitung einen freiwilligen Spendenaufruf für teures, biologisches Saatgut und wetterfestes Werkzeug, verbunden mit einem beschämenden internen Ranking der beitragenden Familien. Wer es sich leisten konnte, kaufte teure Pflanzensets im Bioladen, während andere Familien, die sich finanziell schwertaten, sich durch ihre Abwesenheit in der Spendenliste stigmatisiert fühlten. Die gut gemeinte Absicht, ein Gemeinschaftsgefühl zu stiften, schlug in eine moralische Ökonomie um, in der sozialer Status durch sichtbaren Konsum und Freizeitverfügbarkeit bemessen wurde. Die soziale Diversität, auf die die Schule so stolz zu sein schien, wurde durch das Gartenprojekt nicht etwa aufgefangen, sondern durch die Hintertür der Freiwilligkeit verstärkt.\n\nAm Ende des ersten Projektjahres steht die Pestalozzi-Gesamtschule vor einem ungelösten Dilemma, das exemplarisch für gegenwärtige bildungspolitische Zielkonflikte steht. Der Garten blüht zwar in prächtigen Farben und liefert fotogene Erträge für den nächsten Schulbericht, doch er bleibt ein symbolischer Raum der Privilegierten. Die erhoffte soziale Durchmischung ist ausgeblieben, weil man versäumt hat, die realen sozioökonomischen Hürden der Elternschaft ernst zu nehmen. Schulleiterin Bergmann hält eisern an ihrer rhetorischen Fassade fest und feiert das Projekt weiterhin als vollen Erfolg. Doch für kritische Beobachterinnen wie Konrektorin Lindemann, die nachdenklich auf die spärlich besetzten Samstagsrunden blickt, bleibt eine schmerzhafte Erkenntnis zurück: Solange Inklusion voraussetzt, dass sich alle an die Lebensmuster der Mittelschicht anpassen, ist sie nichts weiter als eine Illusion im grünen Gewand.\n\nDie fundamentale Fehlkalibrierung dieses reformpädagogischen Vorhabens wirft unweigerlich die Frage auf, wie Bildungseinrichtungen künftig Diversität jenseits wohlfeiler Sonntagsreden gestalten wollen. Wenn Partizipation an ökonomische Privilegien gekoppelt wird, pervertiert der schulische Raum zum Brennglas gesellschaftlicher Ungleichheit. Um diesen strukturellen Webfehler zu korrigieren, bedarf es mehr als oberflächlicher Kurskorrekturen; es fordert die radikale Bereitschaft, institutionelle Abläufe konsequent an der tatsächlichen Lebenswirklichkeit aller Familien auszurichten, statt die Last der Anpassung einseitig auf jene abzuwälzen, deren Alltag ohnehin von existentieller Verausgabung geprägt ist.",
+    "wordCount": 722,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Verve",
+        "lemma": "Verve",
+        "glosses": {
+          "es": "enthusiasm or vigor in style or action",
+          "en": "enthusiasm or vigor in style or action"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Prämisse",
+        "lemma": "Prämisse",
+        "glosses": {
+          "es": "underlying premise or assumption",
+          "en": "underlying premise or assumption"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "existentieller Ökonomie",
+        "lemma": "existentieller Ökonomie",
+        "glosses": {
+          "es": "economic struggle for basic survival",
+          "en": "economic struggle for basic survival"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stigmatisiert",
+        "lemma": "stigmatisiert",
+        "glosses": {
+          "es": "stigmatized individuals",
+          "en": "stigmatized individuals"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zielkonflikte",
+        "lemma": "Zielkonflikte",
+        "glosses": {
+          "es": "conflicting goals or objectives",
+          "en": "conflicting goals or objectives"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fassade",
+        "lemma": "Fassade",
+        "glosses": {
+          "es": "outward appearance or facade",
+          "en": "outward appearance or facade"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.9,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:42:50.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Schwierigkeiten, ein inklusives Schulgartenprojekt an realen sozialen Ungleichheiten zu messen."
+        },
+        {
+          "id": "a2",
+          "text": "Um die erfolgreiche Zusammenarbeit zwischen der Schulleitung und allen Eltern der Schülerschaft."
+        },
+        {
+          "id": "a3",
+          "text": "Um die technischen Probleme beim Anbau von biologischem Gemüse auf dem städtischen Schulgelände."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Pestalozzi-Gesamtschule strahlt im spätsommerlichen Sonnenlicht eine geschäftige Betriebsamkeit aus, besonders rund um das neueste Prestigeprojekt der Anstalt: den sogenannten Gemeinschaftsgarten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche konkreten Aufgaben sollten die Eltern laut dem Arbeitsplan übernehmen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Wöchentliche theoretische Seminare zur Schulgeschichte leiten"
+        },
+        {
+          "id": "a2",
+          "text": "Wöchentliche Praxiseinsätze an Samstagen und unentgeltliche Materialspenden leisten"
+        },
+        {
+          "id": "a3",
+          "text": "Finanzielle Patenschaften für professionelle Gärtner übernehmen"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Der von Konrektorin Susanne Lindemann ausgearbeitete Arbeitsplan sah vor, dass die elterliche Beteiligung durch wöchentliche Praxiseinsätze an Samstagen sowie durch unentgeltliche Materialspenden erbracht werden sollte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Schlussfolgerung lässt sich über die elterliche Abwesenheit beim ersten Pflanztag ziehen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie resultierte aus einer mangelnden Wertschätzung für ökologische Themen bei den betroffenen Familien."
+        },
+        {
+          "id": "a2",
+          "text": "Sie war das Ergebnis eines organisierten Protests gegen die Schulleitung."
+        },
+        {
+          "id": "a3",
+          "text": "Sie spiegelte die strukturellen Hürden und zeitlichen Zwänge von Eltern in prekären Arbeitsverhältnissen wider."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Es handelte sich keineswegs um ein Defizit an Motivation, sondern um eine strukturelle Hürde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt die Erwähnung des Beitrags von Herrn Yilmaz im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie illustriert anhand eines konkreten Beispiels, wie Arbeitszeiten am Wochenende die Beteiligung unmöglich machen."
+        },
+        {
+          "id": "a2",
+          "text": "Sie verdeutlicht exemplarisch die unlösbare finanzielle Krise der gesamten Handwerksbranche in der Region."
+        },
+        {
+          "id": "a3",
+          "text": "Sie beweist, dass Schulleiterin Bergmann die Bedenken der Elternschaft von Anfang an ernst genommen hat."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Herr Yilmaz, Vater zweier Viertklässler und selbstständiger Kleinunternehmer im Baugewerbe, brachte das Dilemma in einer ruhigen Minute auf den Punkt: Wer von morgens bis abends arbeitet, um die Miete zu bezahlen, kann am Wochenende keine Beetpatenschaft übernehmen, ohne dabei die Existenzgrundlage seiner Familie zu gefährden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Ton prägt die Darstellung der Schulleiterin Bergmann durch den Autor?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein bedingungslos lobender und bewundernder Ton, der ihre pädagogischen Innovationen feiert."
+        },
+        {
+          "id": "a2",
+          "text": "Ein kritischer und distanzierter Ton, der ihre Realitätsferne und rhetorische Fassade entlarvt."
+        },
+        {
+          "id": "a3",
+          "text": "Ein völlig neutraler und emotionsloser Berichtsstil ohne jegliche persönliche Wertung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Schulleiterin Bergmann hält eisern an ihrer rhetorischen Fassade fest und feiert das Projekt weiterhin als vollen Erfolg.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Welche Bedeutung hat das Wort 'Prämisse' im Kontext des zweiten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine finanzielle Zuwendung für schulische Projekte."
+        },
+        {
+          "id": "a2",
+          "text": "Eine formelle Strafe bei Nichtbeachtung von Regeln."
+        },
+        {
+          "id": "a3",
+          "text": "Eine zugrundeliegende, oft unhinterfragte Annahme."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Das Kernproblem der Planung offenbarte sich in der stillschweigenden Prämisse, dass Freizeit eine universell verfügbare Ressource sei.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie einen Kommentar (ca. 250 Wörter), in dem Sie analysieren, warum gut gemeinte soziale Projekte in Bildungseinrichtungen häufig an ungleiche Teilhabebedingungen scheitern.",
+      "en": "Verfassen Sie einen Kommentar (ca. 250 Wörter), in dem Sie analysieren, warum gut gemeinte soziale Projekte in Bildungseinrichtungen häufig an ungleiche Teilhabebedingungen scheitern."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lesen Sie den folgenden Artikel aufmerksam und analysieren Sie den Konflikt zwischen pädagogischem Anspruch und sozialer Ausgrenzung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:42:50.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das inklusive grüne Klassenzimmer: Anspruch und soziale Realität | C1 Reading | WeLearn",
+      "en": "Das inklusive grüne Klassenzimmer: Anspruch und soziale Realität | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein Artikel über die Ambivalenzen eines vermeintlich integrativen Schulgartenprojekts an einer städtischen Gesamtschule.",
+      "en": "Ein Artikel über die Ambivalenzen eines vermeintlich integrativen Schulgartenprojekts an einer städtischen Gesamtschule."
+    },
+    "canonicalPath": "/en/practice/german/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:42:50.234Z"
+  }
+}
