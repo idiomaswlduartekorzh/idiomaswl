@@ -21,8 +21,9 @@ import usedTo from './used-to'
 import presentContinuousFuture from './present-continuous-future'
 import pastContinuous from './past-continuous'
 import { indefinitePronouns, infinitivePurpose, tooEnough } from './supplemental-topics'
+import { closeEnglishA2Topic } from './quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   pastSimpleBe,
   pastSimpleRegular,
   pastSimpleIrregular,
@@ -48,5 +49,7 @@ const topics: GrammarTopic[] = [
   indefinitePronouns,
   infinitivePurpose,
 ]
+
+const topics: GrammarTopic[] = sourceTopics.map(closeEnglishA2Topic)
 
 export default topics

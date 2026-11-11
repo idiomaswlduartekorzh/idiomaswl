@@ -818,7 +818,7 @@ def split_pdf_cover(topic, edition, description, decisions):
         p(description, STYLES['cover_lead']),
         Spacer(1, 4 * mm),
         editorial_card(l('This document', 'Ce document'), edition_title, (
-            l(f'{decisions} learning decisions arranged in six progressive stages. Write directly on the page and consult the separate answer key only after completing a stage.', f'{decisions} décisions d’apprentissage organisées en six étapes progressives. Écrivez directement sur la page et consultez le corrigé séparé seulement après avoir terminé une étape.')
+            l(f'{decisions} learning decisions arranged in progressive stages. Write directly on the page and consult the separate answer key only after completing a stage.', f'{decisions} décisions d’apprentissage organisées en étapes progressives. Écrivez directement sur la page et consultez le corrigé séparé seulement après avoir terminé une étape.')
             if edition == 'exercises'
             else l('Model answers and concise grammar explanations for every stage in the separate exercise workbook.', "Réponses modèles et explications grammaticales concises pour chaque étape du cahier d'exercices séparé.")
         ), PALE_RED if edition == 'exercises' else PALE_BLUE, accent),
@@ -837,10 +837,9 @@ def split_pdf_cover(topic, edition, description, decisions):
 def build_exercises_only_story(topic):
     story = split_pdf_cover(topic, 'exercises', l(f"Printable practice for {topic['title']}. No explanations or solutions interrupt the work pages.", f"Pratique imprimable pour {topic['title']}. Aucune explication ni solution n’interrompt les pages de travail."), practice_decision_count(topic))
     levels = topic['practice']['levels']
-    prefixes = ['A', 'B', 'C', 'D', 'E', 'F']
     for level_index, level in enumerate(levels):
         story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'), level['title'], level['intro'])]
-        prefix = prefixes[level_index]
+        prefix = chr(ord('A') + level_index) if level_index < 26 else f'S{level_index + 1}'
         if level['type'] == 'choice':
             for index, item in enumerate(level['items'], 1):
                 story += [practice_box(f'{prefix}{index}', item['scene'], ' '.join(line[1] for line in item['lines']), item['options'], background=WHITE if index % 2 else SOFT_BG), Spacer(1, 2.5 * mm)]
@@ -867,10 +866,9 @@ def build_exercises_only_story(topic):
 
 def build_answer_key_only_story(topic):
     story = split_pdf_cover(topic, 'answer-key', l(f"Solutions and feedback for the {topic['title']} exercise workbook.", f"Solutions et rétroaction pour le cahier d’exercices {topic['title']}."), practice_decision_count(topic))
-    prefixes = ['A', 'B', 'C', 'D', 'E', 'F']
     for level_index, level in enumerate(topic['practice']['levels']):
         story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Answer key', 'Corrigé'), level['title'], l('Compare the form first, then read the explanation and name the rule in your own words.', "Comparez d’abord la forme, puis lisez l’explication et reformulez la règle avec vos propres mots."))]
-        prefix = prefixes[level_index]
+        prefix = chr(ord('A') + level_index) if level_index < 26 else f'S{level_index + 1}'
         if level['type'] == 'choice':
             entries = [(f'{prefix}{index}', item['answer'], item['explain']) for index, item in enumerate(level['items'], 1)]
         elif level['type'] == 'dual':
@@ -1024,7 +1022,7 @@ def main():
         Workbook(str(target), topic).build(build_story(topic))
         shutil.copy2(target, public_dir / filename)
         print(target.relative_to(ROOT))
-        if level in ('b2', 'c1', 'c2'):
+        if level in ('a1', 'a2', 'b2', 'c1', 'c2'):
             stem = filename[:-4]
             exercises_filename = f"{stem}-{l('exercises', 'exercices')}.pdf"
             answer_key_filename = f"{stem}-{l('answer-key', 'corrige')}.pdf"

@@ -51,7 +51,7 @@ export type EnglishGrammarResource = {
 
 export function getEnglishGrammarResource(topic: GrammarTopic, level: EnglishGrammarLevel): EnglishGrammarResource {
   const selected = englishTrackExamples(topic)
-  const hasThreePdfSystem = level === 'a1' || isAdvancedPilot(level)
+  const hasThreePdfSystem = level === 'a1' || level === 'a2' || isAdvancedPilot(level)
   const definitions = [
     ['modelo-estructura', 'Modelo y estructura'],
     ['contraste-guiado', 'Contraste guiado'],
