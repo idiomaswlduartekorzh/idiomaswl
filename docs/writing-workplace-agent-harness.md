@@ -2,7 +2,7 @@
 
 ## Estado tras la aprobación del preview
 
-El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. El banco de inglés contiene ahora **20 casos jugables por nivel B2, C1 y C2**; francés B2 tiene otros 20. Francés C1/C2 y los demás idiomas siguen en elaboración. No se alteraron los 480 ejercicios A1–B1.
+El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. Inglés y francés contienen **20 casos jugables por nivel B2, C1 y C2**. Los demás idiomas siguen en elaboración. No se alteraron los 480 ejercicios A1–B1.
 
 Las rutas nuevas conservan `noindex` y no se enlazan desde los hubs hasta pasar revisión editorial y las puertas de integración. La aprobación del formato autorizó la expansión; no equivale a una publicación automática.
 
@@ -56,6 +56,6 @@ Las rutas nuevas aún no se incluyen en `prebuild`: falta cerrar la revisión ed
 La progresión toma como referencia la sección de [interacción escrita y correspondencia del Companion Volume del Consejo de Europa](https://rm.coe.int/cefr-companion-volume-with-new-descriptors-2020/16809ea0d4): B2 resuelve correspondencia profesional no rutinaria con hechos claros y registro adecuado; C1 pondera versiones e implicaciones con precisión; C2 controla atribución y tono en correspondencia profesional compleja. La carga no aumenta solo por extensión.
 
 1. Inglés B2–C2: 60 casos redactados; auditar cada banco y cerrar pruebas completas de integración.
-2. Francés: B2 redactado, C1/C2 en elaboración; mantener la interfaz y todo el contenido visible en francés.
+2. Francés: 60 casos redactados y validados por el harness; revisar editorialmente y completar las puertas de integración.
 3. Alemán, italiano, portugués, ruso, japonés y coreano: crear bancos originales y revisar cada lengua con autores y auditores propios. No traducir literalmente la cortesía ni las situaciones laborales.
 4. Publicar por bancos completos de 20 tras pasar el harness, la revisión lingüística y editorial, el catálogo protegido, TypeScript, build y recorrido en navegador. Registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».
