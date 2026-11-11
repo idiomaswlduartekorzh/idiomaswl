@@ -10,7 +10,8 @@ Fecha de corte: 25 de agosto de 2026.
 - Trabajo: `seo-local-idiomas-20261111`; responsable: Codex.
 - Rama: `codex/seo-local-idiomas-20261111`, base `origin/main@95e9e9bb`;
   respaldada en `origin`. Estado: `EN_VALIDACION`.
-- Alcance: hero de `/clases-de-italiano` y `/clases-de-portugues`; generador e
+- Alcance: hero de `/clases-de-frances`, `/clases-de-italiano` y
+  `/clases-de-portugues`; generador e
   índice de gramática que bloqueaban el build de `main` antes de compilar.
   Archivos compartidos: `scripts/build-reading-grammar-index.mjs` y
   `src/data/reading/grammar-index.json`. Sin migraciones ni variables nuevas.
