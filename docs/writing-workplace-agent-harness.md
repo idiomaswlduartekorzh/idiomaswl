@@ -43,6 +43,7 @@ En japonés y coreano, la guía y el contador usan caracteres sin espacios; el h
 npm run check:writing-workplace-b2
 npm run check:writing-workplace-english
 node scripts/check-writing-workplace-locale.mjs frances
+npm run check:writing-workplace-release  # exige los 480 casos y las 24 rutas
 npm run test:writing-workplace-b2
 npx tsc --noEmit
 npm run check:practica-catalog

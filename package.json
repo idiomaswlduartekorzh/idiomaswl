@@ -181,6 +181,7 @@
     "audit:writing-curriculum": "node scripts/audit-writing-curriculum.mjs",
     "check:writing-workplace-b2": "node scripts/check-writing-workplace-b2.mjs",
     "check:writing-workplace-english": "node scripts/check-writing-workplace-english.mjs",
+    "check:writing-workplace-release": "node scripts/check-writing-workplace-release.mjs",
     "test:writing-workplace-b2": "node --test tests/writing-workplace-b2.test.mjs",
     "audit:dark-mode": "node scripts/audit-dark-mode.mjs",
     "check:reading-content": "npm run check:reading-grammar-index && npm run check:reading-derived && node scripts/check-reading-content.mjs",
