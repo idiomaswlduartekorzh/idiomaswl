@@ -879,7 +879,7 @@
           {
             "id": "b",
             "text": "Alle alten Vorgänge sind gelöscht.",
-            "feedback": "Dafür gibt es keinen Hinweis."
+            "feedback": "Die Störung betrifft das Anlegen neuer Vorgänge; für einen Verlust älterer Daten gibt es keinen Beleg."
           },
           {
             "id": "c",
@@ -2715,12 +2715,12 @@
           {
             "id": "a",
             "text": "Eine medizinische Bewertung des Termins.",
-            "feedback": "Der Termininhalte werden nicht geprüft."
+            "feedback": "Der Termininhalt wird in diesem Vorgang nicht medizinisch bewertet."
           },
           {
             "id": "b",
             "text": "Eine Behauptung über den Empfänger.",
-            "feedback": "Die Lesesituation ist unbekannt."
+            "feedback": "Sina braucht eine Erklärung zum Versand, kann aber nicht belegen, wer die SMS tatsächlich gelesen hat."
           },
           {
             "id": "c",
@@ -2747,7 +2747,7 @@
           {
             "id": "b",
             "text": "Behaupten, niemand habe die SMS gelesen.",
-            "feedback": "Die Lesesituation ist unbekannt."
+            "feedback": "Aus der fehlenden Rückmeldung lässt sich nicht ableiten, dass niemand die Nachricht gesehen hat."
           },
           {
             "id": "c",
@@ -3266,7 +3266,7 @@
           {
             "id": "b",
             "text": "Auf alle vier Geräte.",
-            "feedback": "Drei Geräte sind ungeprüft."
+            "feedback": "Der Prüfvermerk nennt nur Gerät 1 aus Karton A; die übrigen drei sind nicht erfasst."
           },
           {
             "id": "c",
@@ -3315,7 +3315,7 @@
           {
             "id": "a",
             "text": "Eine sofortige Ablehnung aller Geräte.",
-            "feedback": "Drei Geräte sind ungeprüft."
+            "feedback": "Über die drei noch ungeprüften Geräte lässt sich derzeit keine endgültige Entscheidung treffen."
           },
           {
             "id": "b",
@@ -3666,7 +3666,7 @@
           {
             "id": "a",
             "text": "Ein Messfehler des Zählers.",
-            "feedback": "Dafür gibt es keinen Hinweis."
+            "feedback": "Der Bericht vermischt zwei Mieter; eine Fehlfunktion des Zählers wurde nicht festgestellt."
           },
           {
             "id": "b",

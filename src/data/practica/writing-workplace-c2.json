@@ -680,7 +680,7 @@
           {
             "id": "c",
             "text": "The entire clinical report.",
-            "feedback": "The report remains in English."
+            "feedback": "Only the administrative cover was translated; the clinical report itself remains in English."
           }
         ]
       },
@@ -756,7 +756,7 @@
           {
             "id": "b",
             "text": "That the full report was translated.",
-            "feedback": "The report remains in English."
+            "feedback": "That would misdescribe the packet and could give the recipient false confidence about the clinical pages."
           },
           {
             "id": "c",
@@ -2137,7 +2137,7 @@
           {
             "id": "b",
             "text": "Whether the log can be deleted.",
-            "feedback": "No deletion is proposed."
+            "feedback": "Iris asks how to give a credible account while protecting another client, not whether records can be erased."
           },
           {
             "id": "c",
@@ -2695,7 +2695,7 @@
           {
             "id": "c",
             "text": "It replaced Version 1 automatically.",
-            "feedback": "No outbound delivery is recorded."
+            "feedback": "A local Version 2 does not show that the practice received it or that Version 1 was replaced."
           }
         ]
       },
@@ -2744,7 +2744,7 @@
           {
             "id": "b",
             "text": "She wants to delete the old summary.",
-            "feedback": "No deletion is proposed."
+            "feedback": "Mina is trying to establish what reached the practice before describing the correction, not erase the earlier record."
           },
           {
             "id": "c",
@@ -2771,7 +2771,7 @@
           {
             "id": "b",
             "text": "Assume sync occurred and close the issue.",
-            "feedback": "No outbound delivery is recorded."
+            "feedback": "Closing the issue on an assumed sync would leave the practice without a confirmed corrected summary."
           },
           {
             "id": "c",
