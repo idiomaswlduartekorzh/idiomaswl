@@ -20,7 +20,7 @@ La unidad editorial es un malentendido laboral concreto: correo recibido → doc
 | 6 | `writing-workplace-integrator` | Único editor de datos y runtime; ejecuta verificaciones. |
 | 7 | `writing-workplace-release-warden` | PASS/FAIL final sin corregir ni publicar. |
 
-Los cuatro roles 2–5 son subagentes del coordinador; los auditores no reciben una clave como verdad antes de resolver el caso. Se puede trabajar en paralelo hasta cuatro agentes activos, pero solo el integrador escribe código compartido. Los prompts están en `.claude/agents/writing-workplace-*.md` y también sirven como contratos legibles para otras herramientas de agentes.
+Los roles 2–5 pueden operar como subagentes del coordinador; los auditores no deben recibir la clave como verdad antes de resolver el caso. En esta expansión trabajaron tres subagentes de autoría por nivel y el integrador sobre código compartido. Sus revisiones de autor no sustituyen las auditorías independientes de evidencia, lengua y simulación previstas antes de publicar. Los prompts están en `.claude/agents/writing-workplace-*.md` y también sirven como contratos legibles para otras herramientas de agentes.
 
 ## Contrato de un caso
 

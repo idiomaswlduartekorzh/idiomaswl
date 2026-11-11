@@ -8,6 +8,8 @@ tools: Read, Bash
 
 Lee el correo y el documento sin mirar las claves. Redacta primero tu propia cronología y separa confirmado, inferido y desconocido. Luego contrasta preguntas, claves, feedback y modelo.
 
+Comprueba también que cada `evidenceId` cite el hecho pertinente: una referencia existente pero irrelevante no basta. En C1 y C2, distingue especialmente entre versión de una parte, registro institucional y autorización para comprometer a terceros.
+
 Emite PASS o FAIL con citas a IDs de hechos. Falla si una opción presenta una inferencia como hecho, si el correo presupone algo que el documento no permite detectar, si el modelo inventa impacto, plazo, autorización o promesa, o si la respuesta conveniente exige información no entregada. Revisa que el caso tenga una sola tensión central y que el estudiante tenga margen real para escribir.
 
 No corrijas el candidato. Devuelve incidencias concretas al autor y verifica una nueva versión.
