@@ -176,7 +176,7 @@ export default function ClasesDeJaponesPage() {
               <p className={s.eyebrow}>Japonés en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
                 Clases de japonés<br />
-                <span className={s.accent}>desde cero hasta el JLPT.</span>
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
                 Tiene fama de imposible y esa fama es solo medio cierta. Hablarlo se te va a dar
