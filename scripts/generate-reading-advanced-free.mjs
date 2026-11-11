@@ -176,6 +176,7 @@ if (args['rebuild-catalog'] === 'true') { await rebuildCatalog(); process.exit(0
 if (args['dry-run'] === 'true') process.exit(0)
 let completed = 0
 let failedCount = 0
+let providerOutageStreak = 0
 for (const { language, level, brief } of pending) {
   if (completed >= maximum) break
   const templateName = (await readdir(exerciseDir)).find((file) => file.startsWith(`${language}-${level.toLowerCase()}-`) && !ADVANCED_BRIEFS.some((candidate) => file.endsWith(`-${candidate.slug}.json`)))
@@ -203,8 +204,11 @@ for (const { language, level, brief } of pending) {
     failedCount++
     console.error(`Skipped ${language}/${level}/${brief.slug}: ${lastError?.message}`)
     if (/\b(?:403|404)\b|429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(lastError?.message ?? '')) break
+    providerOutageStreak = /503|high demand/i.test(lastError?.message ?? '') ? providerOutageStreak + 1 : 0
+    if (providerOutageStreak >= 2) { console.error('Provider remains unavailable; stop and resume this batch later.'); break }
     continue
   }
+  providerOutageStreak = 0
   const exercise = makeExercise(item, language, level, brief, template)
   await writeFile(path.join(exerciseDir, `${exercise.id}.json`), `${JSON.stringify(exercise, null, 2)}\n`)
   completed++
