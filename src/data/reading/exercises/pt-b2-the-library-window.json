@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-library-window",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Silêncio da Aurora",
+      "en": "O Silêncio da Aurora"
+    },
+    "intro": {
+      "es": "Uma nova política de horários em uma biblioteca pública gera tensões entre a equipe e os usuários.",
+      "en": "Uma nova política de horários em uma biblioteca pública gera tensões entre a equipe e os usuários."
+    },
+    "mission": {
+      "es": "Analise como a mudança de rotina impacta a dinâmica social e profissional dentro do ambiente da biblioteca.",
+      "en": "Analise como a mudança de rotina impacta a dinâmica social e profissional dentro do ambiente da biblioteca."
+    },
+    "targetText": "A Biblioteca Municipal de Vila Verde implementou um projeto-piloto inusitado: abrir as portas às cinco da manhã. O objetivo era atender enfermeiros, porteiros e outros trabalhadores que encerram seus turnos noturnos e buscavam um espaço de calmaria antes de retornarem para casa. Para a diretora, Helena, a medida era uma forma de democratizar o acesso ao conhecimento, reconhecendo que a vida urbana não se restringe ao horário comercial convencional. Contudo, a implementação exigiu uma reestruturação severa das escalas de trabalho, forçando os bibliotecários a trocarem suas manhãs de folga por madrugadas de vigília, o que gerou um descontentamento silencioso, mas crescente, entre os funcionários mais antigos.\n\nNo início, a adesão foi modesta. Apenas um punhado de leitores, como o enfermeiro Roberto, frequentava o saguão principal durante o amanhecer. Para ele, aquele silêncio absoluto era um refúgio necessário. \"É o único momento em que o mundo para\", comentava ele enquanto folheava jornais técnicos. Para os usuários, a experiência era um sucesso absoluto, proporcionando uma qualidade de leitura impossível de encontrar durante o movimento frenético da tarde. A tranquilidade daquelas horas precoces tornava a biblioteca um santuário de produtividade e introspecção.\n\nEntretanto, o conflito tornou-se inevitável quando a equipe de limpeza, cujas tarefas dependiam da ausência de público para serem executadas com eficiência, começou a colidir com os leitores matutinos. O atrito entre a necessidade de manutenção do espaço e o desejo de silêncio dos usuários criou uma atmosfera de hostilidade velada. Helena tentou mediar a situação, sugerindo que as tarefas mais ruidosas fossem adiadas, mas isso apenas sobrecarregou o turno da tarde, que já lidava com o fluxo intenso de estudantes. A diretora percebeu, então, que a eficiência operacional estava sendo sacrificada em prol de uma conveniência que, embora louvável, não era sustentável a longo prazo.\n\nO clímax ocorreu em uma reunião de gestão, onde o representante dos funcionários, Ricardo, apresentou um abaixo-assinado solicitando a revisão do horário. Ele argumentou que a biblioteca não deveria funcionar como um albergue de madrugada, mas sim como um centro cultural que respeitasse o bem-estar de seus servidores. Helena, por sua vez, defendeu que a missão da instituição era servir à comunidade, não apenas preservar a rotina dos funcionários. A discussão revelou uma divisão profunda na visão institucional: de um lado, a burocracia focada em processos; do outro, a vocação social focada na inclusão.\n\nAo final do mês, a biblioteca encerrou o projeto-piloto. Embora o impacto positivo para os trabalhadores noturnos tenha sido real, o custo humano para a equipe interna provou-se excessivo. A biblioteca voltou ao seu horário habitual, deixando para trás um vazio que, para alguns, era de paz, e para outros, de alívio. A tensão entre a missão pública e a realidade laboral permaneceu sem uma solução definitiva, pairando sobre os corredores como um eco de um experimento que, por um breve momento, tentou reescrever o tempo.",
+    "wordCount": 475,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "inusitado",
+        "lemma": "inusitado",
+        "glosses": {
+          "es": "unusual",
+          "en": "unusual"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "calmaria",
+        "lemma": "calmaria",
+        "glosses": {
+          "es": "calmness",
+          "en": "calmness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vigília",
+        "lemma": "vigília",
+        "glosses": {
+          "es": "state of being awake or keeping watch",
+          "en": "state of being awake or keeping watch"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "introspecção",
+        "lemma": "introspecção",
+        "glosses": {
+          "es": "introspection",
+          "en": "introspection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "velada",
+        "lemma": "velada",
+        "glosses": {
+          "es": "veiled or hidden",
+          "en": "veiled or hidden"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vocação",
+        "lemma": "vocação",
+        "glosses": {
+          "es": "vocation or calling",
+          "en": "vocation or calling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.6,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A resistência dos funcionários à mudança de horário."
+        },
+        {
+          "id": "a2",
+          "text": "A insuficiência orçamentária para a manutenção do acervo físico da instituição."
+        },
+        {
+          "id": "a3",
+          "text": "A redução drástica no número de usuários que frequentam o espaço durante o dia."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a implementação exigiu uma reestruturação severa das escalas de trabalho, forçando os bibliotecários a trocarem suas manhãs de folga por madrugadas de vigília, o que gerou um descontentamento silencioso, mas crescente, entre os funcionários mais antigos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que a equipe de limpeza teve problemas com o novo horário?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eles queriam usar o saguão."
+        },
+        {
+          "id": "a2",
+          "text": "Os leitores impediam a limpeza."
+        },
+        {
+          "id": "a3",
+          "text": "O ruído atrapalhava os leitores."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a equipe de limpeza, cujas tarefas dependiam da ausência de público para serem executadas com eficiência, começou a colidir com os leitores matutinos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a decisão final sugere sobre a gestão de Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que ela é autoritária."
+        },
+        {
+          "id": "a2",
+          "text": "Que ela priorizou o bem-estar da equipe."
+        },
+        {
+          "id": "a3",
+          "text": "Que ela falhou em conciliar necessidades opostas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A diretora percebeu, então, que a eficiência operacional estava sendo sacrificada em prol de uma conveniência que, embora louvável, não era sustentável a longo prazo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi a intenção do autor ao mencionar o personagem Roberto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Justificar o valor social da iniciativa."
+        },
+        {
+          "id": "a2",
+          "text": "Desqualificar a importância da rotina de leitura para os profissionais da área técnica."
+        },
+        {
+          "id": "a3",
+          "text": "Evidenciar a ausência total de visitantes nas dependências da biblioteca durante o turno."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Para ele, aquele silêncio absoluto era um refúgio necessário. \"É o único momento em que o mundo para\", comentava ele enquanto folheava jornais técnicos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no final da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasmado"
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Cético e analítico sobre o futuro da gestão pública."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A tensão entre a missão pública e a realidade laboral permaneceu sem uma solução definitiva, pairando sobre os corredores como um eco de um experimento que, por um breve momento, tentou reescrever o tempo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'hostilidade velada' no terceiro parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Briga"
+        },
+        {
+          "id": "a2",
+          "text": "Debate"
+        },
+        {
+          "id": "a3",
+          "text": "Uma tensão oculta e não verbalizada."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O atrito entre a necessidade de manutenção do espaço e o desejo de silêncio dos usuários criou uma atmosfera de hostilidade velada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo defendendo se a biblioteca deveria ou não priorizar o atendimento aos trabalhadores noturnos em detrimento da rotina dos funcionários.",
+      "en": "Escreva um parágrafo argumentativo defendendo se a biblioteca deveria ou não priorizar o atendimento aos trabalhadores noturnos em detrimento da rotina dos funcionários."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analise como a mudança de rotina impacta a dinâmica social e profissional dentro do ambiente da biblioteca.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Silêncio da Aurora | B2 Reading | WeLearn",
+      "en": "O Silêncio da Aurora | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma nova política de horários em uma biblioteca pública gera tensões entre a equipe e os usuários.",
+      "en": "Uma nova política de horários em uma biblioteca pública gera tensões entre a equipe e os usuários."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

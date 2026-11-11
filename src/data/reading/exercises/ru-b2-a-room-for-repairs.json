@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Мастерская «Вторые руки»: спасение или утопия?",
+      "en": "Мастерская «Вторые руки»: спасение или утопия?"
+    },
+    "intro": {
+      "es": "Обзор работы локального центра ремонта бытовой техники, где волонтеры пытаются продлить жизнь старым вещам.",
+      "en": "Обзор работы локального центра ремонта бытовой техники, где волонтеры пытаются продлить жизнь старым вещам."
+    },
+    "mission": {
+      "es": "Проанализировать эффективность концепции «ремонтного кафе» в условиях ограниченных ресурсов и высокого спроса.",
+      "en": "Проанализировать эффективность концепции «ремонтного кафе» в условиях ограниченных ресурсов и высокого спроса."
+    },
+    "targetText": "В прошлый четверг я посетил «Вторые руки» — общественную мастерскую, открытую энтузиастами в подвале старого жилого дома. Идея проста: вместо того чтобы выбрасывать сломанный тостер или неработающий фен, вы приносите их сюда, где опытные мастера помогают вам починить устройство. На входе меня встретил Алексей, координатор проекта, который с порога предупредил, что очередь на диагностику растянулась на три часа. В помещении царил хаос: повсюду лежали разобранные кофеварки, провода и детали, а в воздухе висел едкий запах канифоли. \n\nОсновная проблема мастерской заключается в катастрофической нехватке инструментов. На десять посетителей приходится всего одна исправная отвертка с нужным шлицем и единственный мультиметр, который постоянно переходит из рук в руки. Я наблюдал, как пожилая женщина, принесшая старый проигрыватель, была вынуждена ждать полчаса, пока волонтер закончит работу с чужим пылесосом. Это создает напряжение: люди приходят с надеждой на быстрое решение, но сталкиваются с реальностью дефицита ресурсов. \n\nКонфликт обострился, когда молодой человек попытался самостоятельно починить микроволновую печь, игнорируя правила безопасности. Его действия вызвали резкую критику со стороны волонтеров, которые справедливо опасались за жизнь посетителя и репутацию мастерской. Алексей был вынужден прервать работу и попросить его удалиться. Этот инцидент наглядно показал, что энтузиазма недостаточно: без строгой дисциплины и профессионального контроля общественное пространство превращается в зону риска. \n\nНесмотря на очевидные недостатки, нельзя отрицать пользу проекта. Я видел, как загорелись глаза подростка, когда у него получилось оживить старый радиоприемник под руководством наставника. Это не просто ремонт — это передача навыков, которые сегодня стремительно исчезают в обществе потребления. Мастерская выполняет важную социальную функцию, обучая людей бережному отношению к технике и критическому мышлению. \n\nТем не менее, будущее «Вторых рук» остается туманным. Постоянная нехватка запчастей и ограниченное количество волонтеров делают проект крайне уязвимым. Если мастерская не найдет спонсоров для закупки оборудования, она рискует закрыться под гнетом собственных амбиций. Мой визит оставил смешанные чувства: я восхищаюсь идеей, но сомневаюсь в ее жизнеспособности в текущем формате. Возможно, вместо попытки помочь всем, проекту стоит сфокусироваться на обучении, а не на массовом ремонте. Пока что это лишь островок надежды в океане мусора, который держится исключительно на честном слове и терпении добровольцев.\n\nОднако стоит признать, что даже при смене формата мастерская столкнется с серьезными юридическими вызовами. Ответственность за безопасность отремонтированных электроприборов, которые позже могут вызвать возгорание в чьей-то квартире, ложится тяжелым бременем на плечи организаторов. Без официальной сертификации и страховки любая ошибка волонтера рискует обернуться судебным иском, способным мгновенно уничтожить проект. Таким образом, благородное стремление к осознанному потреблению и спасению вещей от свалки неизбежно наталкивается на жесткие рамки бюрократии, требуя от энтузиастов не только навыков пайки, но и глубоких знаний в правовом поле для полноценного выживания.",
+    "wordCount": 418,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "энтузиастами",
+        "lemma": "энтузиастами",
+        "glosses": {
+          "es": "enthusiasts",
+          "en": "enthusiasts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "канифоли",
+        "lemma": "канифоли",
+        "glosses": {
+          "es": "rosin",
+          "en": "rosin"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дефицита",
+        "lemma": "дефицита",
+        "glosses": {
+          "es": "scarcity",
+          "en": "scarcity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "потребления",
+        "lemma": "потребления",
+        "glosses": {
+          "es": "consumption",
+          "en": "consumption"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "уязвимым",
+        "lemma": "уязвимым",
+        "glosses": {
+          "es": "vulnerable",
+          "en": "vulnerable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "амбиций",
+        "lemma": "амбиций",
+        "glosses": {
+          "es": "ambitions",
+          "en": "ambitions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная мысль автора о мастерской?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Проект требует реформ."
+        },
+        {
+          "id": "a2",
+          "text": "Это полностью провальная идея."
+        },
+        {
+          "id": "a3",
+          "text": "Мастерская идеальна для города."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Мой визит оставил смешанные чувства: я восхищаюсь идеей, но сомневаюсь в ее жизнеспособности в текущем формате.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что стало причиной конфликта с молодым человеком?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Неисправная техника."
+        },
+        {
+          "id": "a2",
+          "text": "Нарушение правил безопасности."
+        },
+        {
+          "id": "a3",
+          "text": "Отказ ждать своей очереди."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Конфликт обострился, когда молодой человек попытался самостоятельно починить микроволновую печь, игнорируя правила безопасности.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему мастерской трудно работать?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за плохой рекламы."
+        },
+        {
+          "id": "a2",
+          "text": "Из-за отсутствия интереса."
+        },
+        {
+          "id": "a3",
+          "text": "Из-за нехватки инструментов."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Основная проблема мастерской заключается в катастрофической нехватке инструментов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем автор описывает случай с подростком?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать важность обучения."
+        },
+        {
+          "id": "a2",
+          "text": "Описать технические навыки."
+        },
+        {
+          "id": "a3",
+          "text": "Раскрыть историю радиоприемника."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Это не просто ремонт — это передача навыков, которые сегодня стремительно исчезают в обществе потребления.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон автора в отношении будущего проекта?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Радостный."
+        },
+        {
+          "id": "a2",
+          "text": "Скептический."
+        },
+        {
+          "id": "a3",
+          "text": "Агрессивный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Тем не менее, будущее «Вторых рук» остается туманным.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что значит слово «уязвимым» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Сильным."
+        },
+        {
+          "id": "a2",
+          "text": "Популярным."
+        },
+        {
+          "id": "a3",
+          "text": "Незащищенным."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Постоянная нехватка запчастей и ограниченное количество волонтеров делают проект крайне уязвимым.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткий ответ (100 слов), в котором предложите три конкретных способа, как мастерская может улучшить свою работу, основываясь на проблемах, описанных в тексте.",
+      "en": "Напишите короткий ответ (100 слов), в котором предложите три конкретных способа, как мастерская может улучшить свою работу, основываясь на проблемах, описанных в тексте."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализировать эффективность концепции «ремонтного кафе» в условиях ограниченных ресурсов и высокого спроса.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Мастерская «Вторые руки»: спасение или утопия? | B2 Reading | WeLearn",
+      "en": "Мастерская «Вторые руки»: спасение или утопия? | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Обзор работы локального центра ремонта бытовой техники, где волонтеры пытаются продлить жизнь старым вещам.",
+      "en": "Обзор работы локального центра ремонта бытовой техники, где волонтеры пытаются продлить жизнь старым вещам."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

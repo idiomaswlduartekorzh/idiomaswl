@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-water-meter",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Умные счетчики и старые трубы: конфликт в квартале «Зеленый берег»",
+      "en": "Умные счетчики и старые трубы: конфликт в квартале «Зеленый берег»"
+    },
+    "intro": {
+      "es": "Прочитайте статью о внедрении технологий контроля расхода воды в жилом комплексе и ответьте на вопросы.",
+      "en": "Прочитайте статью о внедрении технологий контроля расхода воды в жилом комплексе и ответьте на вопросы."
+    },
+    "mission": {
+      "es": "Проанализируйте, как технологический прогресс сталкивается с инфраструктурными ограничениями в городской среде.",
+      "en": "Проанализируйте, как технологический прогресс сталкивается с инфраструктурными ограничениями в городской среде."
+    },
+    "targetText": "В квартале «Зеленый берег» муниципальные власти завершили установку интеллектуальных систем учета воды. Эти устройства передают данные о потреблении в режиме реального времени, позволяя городу мгновенно фиксировать аномальные потери. Однако для жильцов старых домов, таких как пенсионерка Анна Петровна, эта инновация обернулась неожиданным стрессом. Несмотря на то, что она бережно расходует воду, система каждый вечер сигнализирует о перерасходе, указывая на скрытую утечку, которую невозможно устранить без капитального ремонта внутридомовых коммуникаций.\n\nУправляющая компания, возглавляемая Игорем Сергеевичем, занимает жесткую позицию: согласно новым правилам, ответственность за потери ложится на собственников квартир. Игорь Сергеевич утверждает, что прозрачность данных — это единственный способ заставить людей следить за состоянием своих кранов. Он игнорирует тот факт, что трубы в здании, построенном полвека назад, изношены до предела и их замена требует огромных инвестиций, которые не предусмотрены текущим бюджетом обслуживания жилого фонда.\n\nСитуация обострилась, когда Анна Петровна получила квитанцию с астрономической суммой. Она обратилась в администрацию с требованием признать, что утечка происходит не в ее квартире, а в общедомовой системе. Однако представители власти, опираясь на показания «умных» датчиков, настаивают на том, что прибор не ошибается. Возникает парадокс: технология, созданная для экономии ресурсов, стала инструментом принуждения к оплате чужих расходов, так как жильцы не имеют доступа к скрытым коммуникациям.\n\nС одной стороны, внедрение датчиков действительно помогло сократить общие потери воды в городе на магистральных линиях. С другой стороны, перекладывание ответственности на плечи рядовых граждан без модернизации инфраструктуры выглядит как попытка переложить финансовое бремя на тех, кто меньше всего защищен. Жители «Зеленого берега» теперь оказались заложниками ситуации: они вынуждены оплачивать счета за воду, которая просто уходит в землю через проржавевшие трубы в подвале, к которым у них нет доступа.\n\nКонфликт остается неразрешенным. Администрация города планирует расширить программу на другие районы, игнорируя протесты жильцов. Тем временем Анна Петровна и ее соседи начали сбор подписей для подачи коллективного иска. Они требуют либо замены инженерных сетей за счет муниципалитета, либо пересмотра тарифов для домов с изношенными коммуникациями. Пока же «умные» системы продолжают беспристрастно фиксировать утечки, превращая каждую каплю воды в повод для судебных разбирательств и социального недовольства.\n\nОднако правовая коллизия грозит затянуться на долгие годы, ведь судебная система требует неоспоримых доказательств, которые управляющая компания намеренно скрывает от рядовых собственников. Эксперты предупреждают, что если власти не пересмотрят свою стратегию, то социальное напряжение в квартале неизбежно перерастет в открытый протест. Подобный подход к цифровизации, лишенный учета реального состояния зданий, лишь дискредитирует саму идею внедрения современных технологий. В конечном итоге, вместо экономии ресурсов город рискует получить волну неплатежей, окончательно разрушая хрупкое доверие между жителями и муниципальными службами, что делает ситуацию по-настоящему тупиковой.",
+    "wordCount": 414,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "интеллектуальных",
+        "lemma": "интеллектуальных",
+        "glosses": {
+          "es": "intelligent/smart",
+          "en": "intelligent/smart"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "аномальные",
+        "lemma": "аномальные",
+        "glosses": {
+          "es": "abnormal",
+          "en": "abnormal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инновация",
+        "lemma": "инновация",
+        "glosses": {
+          "es": "innovation",
+          "en": "innovation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "коммуникаций",
+        "lemma": "коммуникаций",
+        "glosses": {
+          "es": "utilities/infrastructure",
+          "en": "utilities/infrastructure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "астрономической",
+        "lemma": "астрономической",
+        "glosses": {
+          "es": "astronomical",
+          "en": "astronomical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "беспристрастно",
+        "lemma": "беспристрастно",
+        "glosses": {
+          "es": "impartially",
+          "en": "impartially"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная проблема, описанная в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт из-за оплаты потерь воды"
+        },
+        {
+          "id": "a2",
+          "text": "Неисправность новых датчиков"
+        },
+        {
+          "id": "a3",
+          "text": "Нежелание жильцов экономить ресурсы"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "технология, созданная для экономии ресурсов, стала инструментом принуждения к оплате чужих расходов",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему Анна Петровна не может устранить утечку?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "У нее нет денег"
+        },
+        {
+          "id": "a2",
+          "text": "Трубы находятся вне доступа"
+        },
+        {
+          "id": "a3",
+          "text": "Она не знает, где течь"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "они вынуждены оплачивать счета за воду, которая просто уходит в землю через проржавевшие трубы в подвале, к которым у них нет доступа.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Какую роль играет управляющая компания в этом конфликте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Защищает интересы жильцов"
+        },
+        {
+          "id": "a2",
+          "text": "Финансирует ремонт труб"
+        },
+        {
+          "id": "a3",
+          "text": "Перекладывает вину на жителей"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Управляющая компания, возглавляемая Игорем Сергеевичем, занимает жесткую позицию: согласно новым правилам, ответственность за потери ложится на собственников квартир.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Для чего автор приводит пример с Анной Петровной?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы показать несправедливость системы"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы доказать пользу новых технологий"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы описать быт пенсионеров в городе"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "для жильцов старых домов, таких как пенсионерка Анна Петровна, эта инновация обернулась неожиданным стрессом.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как можно охарактеризовать тон автора статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Восторженный и оптимистичный"
+        },
+        {
+          "id": "a2",
+          "text": "Критический и объективный"
+        },
+        {
+          "id": "a3",
+          "text": "Агрессивный и обвинительный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "перекладывание ответственности на плечи рядовых граждан без модернизации инфраструктуры выглядит как попытка переложить финансовое бремя на тех, кто меньше всего защищен.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «аномальные» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Очень большие и опасные для жизни"
+        },
+        {
+          "id": "a2",
+          "text": "Постоянные и предсказуемые"
+        },
+        {
+          "id": "a3",
+          "text": "Необычные или отклоняющиеся от нормы"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "позволяя городу мгновенно фиксировать аномальные потери.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое эссе (100-150 слов) о том, как можно сбалансировать внедрение современных технологий с защитой прав граждан в сфере ЖКХ.",
+      "en": "Напишите короткое эссе (100-150 слов) о том, как можно сбалансировать внедрение современных технологий с защитой прав граждан в сфере ЖКХ."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализируйте, как технологический прогресс сталкивается с инфраструктурными ограничениями в городской среде.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Умные счетчики и старые трубы: конфликт в квартале «Зеленый берег» | B2 Reading | WeLearn",
+      "en": "Умные счетчики и старые трубы: конфликт в квартале «Зеленый берег» | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте статью о внедрении технологий контроля расхода воды в жилом комплексе и ответьте на вопросы.",
+      "en": "Прочитайте статью о внедрении технологий контроля расхода воды в жилом комплексе и ответьте на вопросы."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Искусство в сумерках: триумф и логистический тупик",
+      "en": "Искусство в сумерках: триумф и логистический тупик"
+    },
+    "intro": {
+      "es": "В данной статье рассматривается влияние инициативы бесплатного вечернего посещения на работу городского музея «Спектр» и возникающие проблемы с общественным транспортом.",
+      "en": "В данной статье рассматривается влияние инициативы бесплатного вечернего посещения на работу городского музея «Спектр» и возникающие проблемы с общественным транспортом."
+    },
+    "mission": {
+      "es": "Проанализировать текст, выявить причины конфликта между культурной доступностью и городской инфраструктурой, а также оценить последствия для посетителей.",
+      "en": "Проанализировать текст, выявить причины конфликта между культурной доступностью и городской инфраструктурой, а также оценить последствия для посетителей."
+    },
+    "targetText": "Когда администрация музея «Спектр» объявила о введении бесплатных вечерних часов по четвергам, куратор Елена Маркова ожидала умеренного роста интереса. Однако реальность превзошла все прогнозы: залы, обычно пустующие после пяти вечера, мгновенно заполнились студентами и офисными работниками. Директор музея, господин Соколов, с гордостью заявлял, что искусство наконец-то стало по-настоящему демократичным. Посетители с восторгом обсуждали экспозиции при свете ламп, создавая атмосферу живого интеллектуального диалога, которой так не хватало в дневные часы.\n\nТем не менее, успех инициативы обнажил серьезный инфраструктурный разрыв. Городская транспортная сеть, работающая по консервативному расписанию, заканчивает движение автобусов в половине девятого вечера. Поскольку двери «Спектра» закрываются ровно в десять, последние полтора часа пребывания превращаются для многих в настоящий квест на выживание. Посетители, увлеченные изучением картин, внезапно оказываются перед фактом невозможности добраться до отдаленных районов города без использования дорогостоящих служб такси.\n\nСитуация обострилась, когда местный активист Игорь Петров опубликовал открытое письмо, обвинив музей в создании «ловушки для элиты». По его мнению, бесплатный вход теряет всякий смысл, если финансовое бремя перекладывается на плечи посетителей через стоимость ночного проезда. Елена Маркова попыталась возразить, отметив, что музей не несет ответственности за работу городских служб, однако ее аргументы выглядели неубедительно на фоне пустых остановок, где люди вынужденно ждали попутный транспорт.\n\nВ прошлый четверг конфликт достиг апогея. Группа студентов, заблокированная в музее из-за отмены последнего рейса, устроила импровизированный дискуссионный клуб прямо в фойе. Сотрудники охраны, не имея четких инструкций по работе с «застрявшими» посетителями, были вынуждены продлить дежурство, что вызвало недовольство профсоюза. Господин Соколов оказался в патовой ситуации: сократить часы работы — значит признать поражение идеи доступности, а оставить все как есть — значит провоцировать социальное напряжение.\n\nНа сегодняшний день решение проблемы остается призрачным. Городской департамент транспорта ссылается на бюджетные ограничения, а руководство музея продолжает настаивать на важности ночных сеансов. Этот инцидент стал наглядным уроком того, что культурная политика не может существовать в вакууме. Без синхронизации с базовыми городскими услугами даже самые благие начинания рискуют превратиться в источник дискомфорта, оставляя посетителей один на один с тишиной ночных улиц и неразрешенными вопросами о качестве городской среды.\n\nБолее того, возникший прецедент заставил экспертов пересмотреть саму концепцию культурного планирования в мегаполисе. Стало очевидно, что развитие музейного пространства требует не только энтузиазма кураторов, но и комплексного взаимодействия с муниципальными структурами. Если администрация не найдет способ договориться с транспортным ведомством о запуске ночных маршрутов, «Спектр» рискует превратиться из просветительского центра в изолированный остров. Таким образом, успех демократизации искусства напрямую зависит от способности властей адаптировать городскую инфраструктуру к новым запросам общества, превращая случайный хаос в системную и комфортную практику для всех категорий горожан, стремящихся к интеллектуальному развитию.",
+    "wordCount": 415,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "демократичным",
+        "lemma": "демократичным",
+        "glosses": {
+          "es": "accessible to everyone",
+          "en": "accessible to everyone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инфраструктурный",
+        "lemma": "инфраструктурный",
+        "glosses": {
+          "es": "related to basic systems like transport",
+          "en": "related to basic systems like transport"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бремя",
+        "lemma": "бремя",
+        "glosses": {
+          "es": "a heavy load or burden",
+          "en": "a heavy load or burden"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "апогея",
+        "lemma": "апогея",
+        "glosses": {
+          "es": "the highest point or climax",
+          "en": "the highest point or climax"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "патовой",
+        "lemma": "патовой",
+        "glosses": {
+          "es": "a stalemate or deadlock",
+          "en": "a stalemate or deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "синхронизации",
+        "lemma": "синхронизации",
+        "glosses": {
+          "es": "the coordination of events to operate at the same time",
+          "en": "the coordination of events to operate at the same time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данной статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Успех и проблемы вечернего музея"
+        },
+        {
+          "id": "a2",
+          "text": "История музея Спектр"
+        },
+        {
+          "id": "a3",
+          "text": "Экономика городского транспорта"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "успех инициативы обнажил серьезный инфраструктурный разрыв",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Когда именно закрывается музей?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "В 20:30"
+        },
+        {
+          "id": "a2",
+          "text": "В 22:00"
+        },
+        {
+          "id": "a3",
+          "text": "В 17:00"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "двери «Спектра» закрываются ровно в десять",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему студенты остались в фойе музея?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Они изучали искусство"
+        },
+        {
+          "id": "a2",
+          "text": "Они ждали такси"
+        },
+        {
+          "id": "a3",
+          "text": "Они не успели на транспорт"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "заблокированная в музее из-за отмены последнего рейса",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью Игорь Петров написал открытое письмо?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы раскритиковать доступность музея"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы попросить о продлении работы автобусов"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы защитить права студентов на бесплатный вход"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "обвинив музей в создании «ловушки для элиты»",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон автора в последнем абзаце?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оптимистичный и радостный"
+        },
+        {
+          "id": "a2",
+          "text": "Аналитический и критический"
+        },
+        {
+          "id": "a3",
+          "text": "Агрессивный и обвинительный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Этот инцидент стал наглядным уроком того, что культурная политика не может существовать в вакууме",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает фраза «патовая ситуация» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Состояние полной победы"
+        },
+        {
+          "id": "a2",
+          "text": "Время для отдыха сотрудников"
+        },
+        {
+          "id": "a3",
+          "text": "Ситуация, когда нет выхода"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Господин Соколов оказался в патовой ситуации: сократить часы работы — значит признать поражение идеи доступности, а оставить все как есть — значит провоцировать социальное напряжение.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (150-200 слов), в котором предложите конкретный способ разрешения конфликта между музеем и транспортной службой, учитывая интересы всех сторон.",
+      "en": "Напишите эссе (150-200 слов), в котором предложите конкретный способ разрешения конфликта между музеем и транспортной службой, учитывая интересы всех сторон."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализировать текст, выявить причины конфликта между культурной доступностью и городской инфраструктурой, а также оценить последствия для посетителей.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Искусство в сумерках: триумф и логистический тупик | B2 Reading | WeLearn",
+      "en": "Искусство в сумерках: триумф и логистический тупик | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В данной статье рассматривается влияние инициативы бесплатного вечернего посещения на работу городского музея «Спектр» и возникающие проблемы с общественным транспортом.",
+      "en": "В данной статье рассматривается влияние инициативы бесплатного вечернего посещения на работу городского музея «Спектр» и возникающие проблемы с общественным транспортом."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

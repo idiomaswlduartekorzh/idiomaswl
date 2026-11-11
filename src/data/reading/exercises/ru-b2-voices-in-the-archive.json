@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Архив забытых голосов",
+      "en": "Архив забытых голосов"
+    },
+    "intro": {
+      "es": "В городской библиотеке проект «Живая память» собирает воспоминания пожилых жителей. Однако иногда правда прошлого сталкивается с желанием отредактировать свою биографию.",
+      "en": "В городской библиотеке проект «Живая память» собирает воспоминания пожилых жителей. Однако иногда правда прошлого сталкивается с желанием отредактировать свою биографию."
+    },
+    "mission": {
+      "es": "Прочитайте рассказ и ответьте на вопросы, чтобы понять конфликт между исторической точностью и личным восприятием.",
+      "en": "Прочитайте рассказ и ответьте на вопросы, чтобы понять конфликт между исторической точностью и личным восприятием."
+    },
+    "targetText": "Вечерний свет падал на стопки оцифрованных пленок в кабинете куратора архива, Елены. Она уже неделю работала над расшифровкой интервью с Николаем Петровичем, бывшим инженером местного завода. Его рассказ о забастовке семидесятых годов был ярким, но содержал странное противоречие: он утверждал, что лично остановил станок, хотя архивные документы того времени указывали на его отсутствие в цеху. Елена понимала, что публикация записи в таком виде вызовет вопросы у историков, поэтому она пригласила Николая Петровича для финальной сверки текста.\n\nНиколай Петрович вошел в кабинет, опираясь на трость, и сразу перешел к делу. Он потребовал удалить абзац, где упоминалось его отсутствие на смене, настаивая, что память — это не протокол допроса, а личное переживание. Елена мягко возразила: «Наш архив стремится к объективности, Николай Петрович. Если мы начнем исправлять факты ради красоты рассказа, ценность всей коллекции будет подорвана». Старик нахмурился, его рука дрожала, когда он указывал на экран компьютера. Он объяснил, что в тот день он не просто отсутствовал — он пытался предотвратить аварию, о которой никто не знал, и этот факт был для него важнее, чем участие в протесте.\n\nЕлена чувствовала, как растет напряжение. С одной стороны, она понимала, что архивист обязан хранить истину, но с другой — она видела перед собой человека, для которого этот рассказ был последней попыткой оправдать свою жизнь перед потомками. Она предложила компромисс: оставить основной текст, но добавить примечание редактора с пояснением, что воспоминания могут отличаться от официальных сводок. Николай Петрович категорически отказался, заявив, что любое примечание превратит его жизнь в объект для критики, а не в живое свидетельство.\n\nСитуация зашла в тупик. Елена осознавала, что если она опубликует запись без его согласия, она нарушит этический кодекс проекта, но если она удалит правду, она предаст свою профессию. Она посмотрела на Николая Петровича и увидела в его глазах не упрямство, а глубокую усталость. Он не хотел лгать; он просто хотел, чтобы его запомнили не как человека, который пропустил важное событие, а как того, кто в одиночку боролся с катастрофой, о которой молчали все остальные.\n\nВ итоге Елена приняла решение. Она не стала удалять фрагменты, но согласилась переписать часть интервью, включив в него личное признание Николая Петровича о тех событиях, которые он скрывал годами. Она понимала, что это решение сделает архив менее «стерильным», но более человечным. Николай Петрович молча кивнул, осознав, что его тайна теперь станет частью городской истории. Елена нажала кнопку «Сохранить», понимая, что грань между фактом и памятью навсегда осталась размытой.\n\nОднако спустя годы историки начнут подвергать сомнению достоверность всего архива, полагая, что личные откровения превратили ценный исторический источник в сборник субъективных мифов, искажающих реальную картину трудового прошлого страны.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "оцифрованных",
+        "lemma": "оцифрованных",
+        "glosses": {
+          "es": "digitized",
+          "en": "digitized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "противоречие",
+        "lemma": "противоречие",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сверки",
+        "lemma": "сверки",
+        "glosses": {
+          "es": "verification/cross-check",
+          "en": "verification/cross-check"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "этический",
+        "lemma": "этический",
+        "glosses": {
+          "es": "ethical",
+          "en": "ethical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сводок",
+        "lemma": "сводок",
+        "glosses": {
+          "es": "reports/summaries",
+          "en": "reports/summaries"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "размытой",
+        "lemma": "размытой",
+        "glosses": {
+          "es": "blurred",
+          "en": "blurred"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного рассказа?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт между фактами и памятью"
+        },
+        {
+          "id": "a2",
+          "text": "Технические аспекты архивации"
+        },
+        {
+          "id": "a3",
+          "text": "История одного завода"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Елена осознавала, что если она опубликует запись без его согласия, она нарушит этический кодекс проекта, но если она удалит правду, она предаст свою профессию.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что именно хотел изменить Николай Петрович в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Дату забастовки"
+        },
+        {
+          "id": "a2",
+          "text": "Свое отсутствие"
+        },
+        {
+          "id": "a3",
+          "text": "Имя куратора"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Он потребовал удалить абзац, где упоминалось его отсутствие на смене",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Николай Петрович отказывался от примечания редактора?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Не доверял Елене"
+        },
+        {
+          "id": "a2",
+          "text": "Считал его ложью"
+        },
+        {
+          "id": "a3",
+          "text": "Боялся критики"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Николай Петрович категорически отказался, заявив, что любое примечание превратит его жизнь в объект для критики",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем Елена согласилась включить признание инженера в интервью?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы сделать архив человечнее"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы скрыть ошибку в документах"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы быстрее закончить работу"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Она понимала, что это решение сделает архив менее «стерильным», но более человечным.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон повествования в финальной части текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Торжественный"
+        },
+        {
+          "id": "a2",
+          "text": "Рефлексивный"
+        },
+        {
+          "id": "a3",
+          "text": "Напряженный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Елена нажала кнопку «Сохранить», понимая, что грань между фактом и памятью навсегда осталась размытой.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «стерильным» в контексте работы архива?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Полностью защищенным от вирусов"
+        },
+        {
+          "id": "a2",
+          "text": "Официально одобренным властями"
+        },
+        {
+          "id": "a3",
+          "text": "Безупречно чистым и лишенным эмоций"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Она понимала, что это решение сделает архив менее «стерильным», но более человечным.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (150 слов) на тему: «Должны ли личные воспоминания считаться историческими фактами, если они противоречат официальным документам? Аргументируйте свою позицию, используя примеры из текста или личного опыта».",
+      "en": "Напишите эссе (150 слов) на тему: «Должны ли личные воспоминания считаться историческими фактами, если они противоречат официальным документам? Аргументируйте свою позицию, используя примеры из текста или личного опыта»."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Прочитайте рассказ и ответьте на вопросы, чтобы понять конфликт между исторической точностью и личным восприятием.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Архив забытых голосов | B2 Reading | WeLearn",
+      "en": "Архив забытых голосов | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В городской библиотеке проект «Живая память» собирает воспоминания пожилых жителей. Однако иногда правда прошлого сталкивается с желанием отредактировать свою биографию.",
+      "en": "В городской библиотеке проект «Живая память» собирает воспоминания пожилых жителей. Однако иногда правда прошлого сталкивается с желанием отредактировать свою биографию."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

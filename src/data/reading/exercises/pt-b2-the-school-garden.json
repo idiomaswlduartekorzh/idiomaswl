@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-school-garden",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema da Horta Comunitária na Escola Horizonte",
+      "en": "O Dilema da Horta Comunitária na Escola Horizonte"
+    },
+    "intro": {
+      "es": "Uma análise sobre a gestão de hortas escolares e o equilíbrio entre a sustentabilidade pedagógica e a carga de trabalho das famílias.",
+      "en": "Uma análise sobre a gestão de hortas escolares e o equilíbrio entre a sustentabilidade pedagógica e a carga de trabalho das famílias."
+    },
+    "mission": {
+      "es": "Analisar as tensões entre a gestão comunitária de projetos escolares e as expectativas de participação dos responsáveis.",
+      "en": "Analisar as tensões entre a gestão comunitária de projetos escolares e as expectativas de participação dos responsáveis."
+    },
+    "targetText": "A Escola Horizonte orgulha-se de sua horta pedagógica, um espaço que transformou o cardápio da cantina. Alfaces crocantes, tomates suculentos e temperos frescos tornaram-se pilares da merenda, promovendo uma educação alimentar prática. Contudo, o sucesso do projeto trouxe um desafio logístico: a manutenção durante as férias de verão. Sem a presença diária dos alunos, a horta corre o risco de perecer sob o sol inclemente, desperdiçando meses de cultivo e investimento pedagógico.\n\nPara resolver o impasse, o Grêmio Estudantil, liderado por Beatriz, sugeriu um sistema de rodízio. A proposta previa que cada família, em um esquema de escala, visitasse a escola semanalmente para regar e podar as plantas. Beatriz argumentava que essa seria uma extensão natural do aprendizado, transformando a responsabilidade em um momento de integração familiar e preservação do patrimônio escolar, garantindo que o ciclo produtivo não fosse interrompido pelo calendário acadêmico.\n\nNo entanto, a proposta encontrou resistência imediata. Em uma reunião tensa, pais e responsáveis questionaram a viabilidade da medida. Muitos alegaram que o período de recesso é o único momento de descanso e viagens, tornando a exigência uma carga injusta. Alguns pais argumentaram que a escola estaria terceirizando uma responsabilidade administrativa, transformando um projeto educacional em um fardo operacional para as famílias, que já enfrentam jornadas de trabalho exaustivas.\n\nO debate revelou uma divergência profunda sobre o papel da escola. Enquanto a diretoria via a colaboração como um exercício de cidadania, uma parcela dos pais interpretava a solicitação como uma invasão de sua privacidade e tempo livre. A tensão escalou quando a diretora propôs que a falta de adesão ao rodízio resultaria na desativação permanente da horta, uma medida drástica que visava forçar o compromisso, mas que acabou gerando um clima de ressentimento generalizado.\n\nO desfecho foi um impasse melancólico. A horta foi mantida, mas apenas por meio de um grupo reduzido de voluntários, enquanto a maioria das famílias se afastou da iniciativa. O projeto, antes um símbolo de união, tornou-se um lembrete das dificuldades de se sustentar ideais coletivos em uma comunidade fragmentada. A escola aprendeu que a sustentabilidade de um projeto não depende apenas de recursos naturais, mas da harmonia entre as expectativas institucionais e a realidade cotidiana das pessoas envolvidas.\n\nEssa experiência deixou uma lição valiosa sobre a gestão escolar participativa. Ficou evidente que iniciativas pedagógicas, por mais inspiradoras que sejam, exigem um planejamento que respeite o tempo das famílias. Sem um consenso real, a imposição de tarefas acaba desgastando o vínculo entre a comunidade e a instituição, prejudicando o propósito educacional pretendido originalmente.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "a deadlock or difficult situation",
+          "en": "a deadlock or difficult situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inclemente",
+        "lemma": "inclemente",
+        "glosses": {
+          "es": "harsh or unforgiving",
+          "en": "harsh or unforgiving"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "terceirizando",
+        "lemma": "terceirizando",
+        "glosses": {
+          "es": "outsourcing",
+          "en": "outsourcing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exaustivas",
+        "lemma": "exaustivas",
+        "glosses": {
+          "es": "exhausting",
+          "en": "exhausting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ressentimento",
+        "lemma": "ressentimento",
+        "glosses": {
+          "es": "resentment",
+          "en": "resentment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fragmentada",
+        "lemma": "fragmentada",
+        "glosses": {
+          "es": "fragmented",
+          "en": "fragmented"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central enfrentado pela Escola Horizonte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A manutenção da horta nas férias."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade de contratar jardineiros profissionais para o período."
+        },
+        {
+          "id": "a3",
+          "text": "A decisão administrativa de converter o espaço da horta em uma quadra."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "o sucesso do projeto trouxe um desafio logístico: a manutenção durante as férias de verão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que a diretora propôs como consequência da falta de adesão?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A perda de pontos."
+        },
+        {
+          "id": "a2",
+          "text": "A desativação da horta."
+        },
+        {
+          "id": "a3",
+          "text": "O encerramento definitivo das atividades escolares no verão."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a falta de adesão ao rodízio resultaria na desativação permanente da horta",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que os pais se opuseram ao rodízio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eles não gostam de plantas."
+        },
+        {
+          "id": "a2",
+          "text": "Eles preferem comprar comida."
+        },
+        {
+          "id": "a3",
+          "text": "Consideram uma carga injusta."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "tornando a exigência uma carga injusta.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi a intenção do Grêmio Estudantil ao sugerir o rodízio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Envolver as famílias na manutenção."
+        },
+        {
+          "id": "a2",
+          "text": "Promover uma competição acadêmica entre os alunos durante o recesso escolar."
+        },
+        {
+          "id": "a3",
+          "text": "Implementar um sistema de monitoramento rigoroso sobre a frequência dos estudantes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Beatriz argumentava que essa seria uma extensão natural do aprendizado, transformando a responsabilidade em um momento de integração familiar",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o autor descreve o resultado final do projeto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como um sucesso absoluto."
+        },
+        {
+          "id": "a2",
+          "text": "Como um impasse melancólico."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma vitória da diretoria."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O desfecho foi um impasse melancólico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No texto, o que significa a palavra 'inclemente' ao descrever o sol?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que é muito ameno."
+        },
+        {
+          "id": "a2",
+          "text": "Que é muito benéfico."
+        },
+        {
+          "id": "a3",
+          "text": "Que está muito forte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a horta corre o risco de perecer sob o sol inclemente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo (100-150 palavras) argumentando se a escola deve ou não exigir trabalho voluntário dos pais para projetos pedagógicos, considerando os limites entre a educação escolar e a vida privada das famílias.",
+      "en": "Escreva um parágrafo (100-150 palavras) argumentando se a escola deve ou não exigir trabalho voluntário dos pais para projetos pedagógicos, considerando os limites entre a educação escolar e a vida privada das famílias."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analisar as tensões entre a gestão comunitária de projetos escolares e as expectativas de participação dos responsáveis.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema da Horta Comunitária na Escola Horizonte | B2 Reading | WeLearn",
+      "en": "O Dilema da Horta Comunitária na Escola Horizonte | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise sobre a gestão de hortas escolares e o equilíbrio entre a sustentabilidade pedagógica e a carga de trabalho das famílias.",
+      "en": "Uma análise sobre a gestão de hortas escolares e o equilíbrio entre a sustentabilidade pedagógica e a carga de trabalho das famílias."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

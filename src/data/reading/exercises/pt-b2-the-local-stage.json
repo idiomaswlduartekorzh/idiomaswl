@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-local-stage",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema do Teatro Estrela Guia",
+      "en": "O Dilema do Teatro Estrela Guia"
+    },
+    "intro": {
+      "es": "Um teatro comunitário enfrenta um impasse financeiro que ameaça a continuidade de suas produções.",
+      "en": "Um teatro comunitário enfrenta um impasse financeiro que ameaça a continuidade de suas produções."
+    },
+    "mission": {
+      "es": "Analisar a negociação entre a gestão do teatro e o grupo de atores sobre a sustentabilidade das apresentações.",
+      "en": "Analisar a negociação entre a gestão do teatro e o grupo de atores sobre a sustentabilidade das apresentações."
+    },
+    "targetText": "O Teatro Estrela Guia, um pilar cultural no coração do bairro, encontra-se diante de uma encruzilhada financeira. Conhecido por democratizar o acesso à arte, o teatro implementou uma política de ingressos a preços reduzidos para o público jovem. Embora a iniciativa tenha revitalizado a audiência, a receita gerada tornou-se insuficiente para cobrir os custos operacionais, especialmente as longas temporadas de ensaios necessárias para as produções de vanguarda.\n\nA diretora artística, Helena Viana, argumentou que o teatro não pode sustentar financeiramente cada hora de ensaio sem comprometer a manutenção do edifício. A proposta da gestão foi drástica: reduzir o tempo de preparação para que os gastos com eletricidade e aluguel de equipamentos fossem minimizados. Para os atores, essa decisão representava uma ameaça direta à qualidade técnica e à integridade das obras que o grupo se orgulha de apresentar ao público.\n\nEm uma reunião tensa, o elenco, liderado pelo veterano ator Marcos Rocha, propôs um compromisso. Em vez de cortar o tempo de ensaio, os atores ofereceram realizar ensaios abertos ao público mediante uma contribuição solidária. Essa estratégia permitiria que a comunidade acompanhasse o processo criativo, gerando uma nova fonte de renda que não dependesse exclusivamente da bilheteria das estreias oficiais. A ideia era transformar o ensaio de um custo fixo em um evento de engajamento.\n\nHelena, inicialmente cética, questionou se a exposição prematura do trabalho não prejudicaria o impacto da estreia. Marcos rebateu, argumentando que a transparência criativa reforçaria o vínculo com os espectadores, tornando-os defensores da instituição. O debate revelou uma tensão latente: enquanto a gestão prioriza a sobrevivência fiscal imediata, os artistas defendem que o valor cultural é construído através da dedicação exaustiva, algo que não pode ser quantificado apenas em planilhas de gastos.\n\nO desfecho da negociação foi um acordo experimental. O teatro permitirá os ensaios abertos, mas com uma limitação rigorosa de público para preservar a privacidade do processo artístico. A tensão permanece, pois o sucesso financeiro dessa medida ainda é incerto. O Teatro Estrela Guia agora caminha sobre uma corda bamba, tentando equilibrar a necessidade de viabilidade econômica com a preservação de sua identidade artística, enquanto o público aguarda para ver se essa nova forma de colaboração será suficiente para manter as luzes acesas no palco.\n\nContudo, essa estratégia levanta um dilema ético sobre a mercantilização da intimidade criativa. Se o público se acostumar a consumir fragmentos inacabados, a expectativa pela obra final pode diminuir, transformando o teatro em um entretenimento de bastidores e enfraquecendo o impacto transformador que apenas a estreia completa consegue proporcionar aos espectadores.",
+    "wordCount": 421,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "encruzilhada",
+        "lemma": "encruzilhada",
+        "glosses": {
+          "es": "crossroads",
+          "en": "crossroads"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vanguarda",
+        "lemma": "vanguarda",
+        "glosses": {
+          "es": "avant-garde",
+          "en": "avant-garde"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "drástica",
+        "lemma": "drástica",
+        "glosses": {
+          "es": "drastic",
+          "en": "drastic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cética",
+        "lemma": "cética",
+        "glosses": {
+          "es": "skeptical",
+          "en": "skeptical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "latent",
+          "en": "latent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "viabilidade",
+        "lemma": "viabilidade",
+        "glosses": {
+          "es": "viability",
+          "en": "viability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.2,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central enfrentado pelo Teatro Estrela Guia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O custo elevado dos ensaios versus a receita limitada."
+        },
+        {
+          "id": "a2",
+          "text": "A drástica redução do interesse do público pelas peças de vanguarda apresentadas pelo grupo."
+        },
+        {
+          "id": "a3",
+          "text": "A constante disputa interna entre o elenco e a direção sobre a qualidade artística das obras."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a receita gerada tornou-se insuficiente para cobrir os custos operacionais, especialmente as longas temporadas de ensaios necessárias para as produções de vanguarda.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que os atores sugeriram para resolver o problema financeiro?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aumentar o valor dos ingressos."
+        },
+        {
+          "id": "a2",
+          "text": "Realizar ensaios abertos com contribuição solidária."
+        },
+        {
+          "id": "a3",
+          "text": "Reduzir o tempo de preparação das peças de vanguarda do grupo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "os atores ofereceram realizar ensaios abertos ao público mediante uma contribuição solidária.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que a diretora artística estava inicialmente hesitante quanto à proposta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela duvidava da qualidade."
+        },
+        {
+          "id": "a2",
+          "text": "Ela temia a falta de público."
+        },
+        {
+          "id": "a3",
+          "text": "Ela temia que mostrar o processo prejudicasse a estreia."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Helena, inicialmente cética, questionou se a exposição prematura do trabalho não prejudicaria o impacto da estreia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo principal da inclusão dos ensaios abertos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criar uma nova fonte de renda e aproximar a comunidade."
+        },
+        {
+          "id": "a2",
+          "text": "Eliminar a dependência financeira das bilheterias oficiais através de patrocínios governamentais constantes."
+        },
+        {
+          "id": "a3",
+          "text": "Permitir que o público interfira diretamente nas decisões criativas e no final das peças encenadas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Essa estratégia permitiria que a comunidade acompanhasse o processo criativo, gerando uma nova fonte de renda que não dependesse exclusivamente da bilheteria das estreias oficiais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o texto descreve a situação atual do teatro ao final da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como um sucesso absoluto."
+        },
+        {
+          "id": "a2",
+          "text": "Como uma situação instável."
+        },
+        {
+          "id": "a3",
+          "text": "Como um fracasso inevitável."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O Teatro Estrela Guia agora caminha sobre uma corda bamba, tentando equilibrar a necessidade de viabilidade econômica com a preservação de sua identidade artística",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa dizer que a tensão no teatro era 'latente'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que era evidente e explosiva."
+        },
+        {
+          "id": "a2",
+          "text": "Que era inexistente no momento."
+        },
+        {
+          "id": "a3",
+          "text": "Que estava oculta, mas presente."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O debate revelou uma tensão latente: enquanto a gestão prioriza a sobrevivência fiscal imediata, os artistas defendem que o valor cultural é construído através da dedicação exaustiva",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um e-mail formal de 150 palavras, na voz de um membro da diretoria do teatro, para os doadores locais, explicando a nova política de ensaios abertos e solicitando apoio para garantir a sustentabilidade do projeto a longo prazo.",
+      "en": "Escreva um e-mail formal de 150 palavras, na voz de um membro da diretoria do teatro, para os doadores locais, explicando a nova política de ensaios abertos e solicitando apoio para garantir a sustentabilidade do projeto a longo prazo."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analisar a negociação entre a gestão do teatro e o grupo de atores sobre a sustentabilidade das apresentações.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema do Teatro Estrela Guia | B2 Reading | WeLearn",
+      "en": "O Dilema do Teatro Estrela Guia | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um teatro comunitário enfrenta um impasse financeiro que ameaça a continuidade de suas produções.",
+      "en": "Um teatro comunitário enfrenta um impasse financeiro que ameaça a continuidade de suas produções."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

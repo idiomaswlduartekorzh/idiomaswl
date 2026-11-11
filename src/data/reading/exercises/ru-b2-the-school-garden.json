@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-school-garden",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Зеленый конфликт: урожай или каникулы?",
+      "en": "Зеленый конфликт: урожай или каникулы?"
+    },
+    "intro": {
+      "es": "Статья о школьном огороде, который стал центром споров между учениками, учителями и родителями из-за ухода за растениями летом.",
+      "en": "Статья о школьном огороде, который стал центром споров между учениками, учителями и родителями из-за ухода за растениями летом."
+    },
+    "mission": {
+      "es": "Проанализировать текст, чтобы понять причины разногласий между участниками школьного проекта и оценить предложенные решения.",
+      "en": "Проанализировать текст, чтобы понять причины разногласий между участниками школьного проекта и оценить предложенные решения."
+    },
+    "targetText": "Когда лицей «Зеленый росток» запустил проект школьного огорода, никто не ожидал, что грядки с овощами станут причиной серьезного раздора. Идея была благородной: обеспечить столовую свежими продуктами, а детей — практическими навыками садоводства. В течение учебного года проект процветал. Ученики десятых классов, под руководством учителя биологии Ирины Сергеевны, с энтузиазмом выращивали томаты, кабачки и зелень. Обеды в столовой стали вкуснее, а школьное сообщество гордилось своей экологической инициативой. Однако с приближением летних каникул возникла проблема: кто будет поливать и пропалывать огород, когда школа опустеет?\n\nИнициативная группа учеников предложила график дежурств на лето. Они составили таблицу, в которой каждая семья должна была взять на себя неделю ухода за участком. Идея казалась логичной, но она встретила холодный прием на родительском собрании. Многие родители выразили недовольство, утверждая, что летний отдых — это время для поездок и восстановления сил, а не для обязательных сельскохозяйственных работ. «Мы отправляем детей в школу учиться, а не работать на грядках в жару», — заявила Елена Петровна, мать одного из учеников, выразив мнение большинства.\n\nСитуация обострилась, когда выяснилось, что без должного ухода урожай просто погибнет. Ученики настаивали, что огород — это их общее дело и бросить его на произвол судьбы было бы предательством по отношению к вложенному труду. В свою очередь, администрация школы заняла нейтральную позицию, опасаясь ответственности за безопасность детей на территории в нерабочее время. Конфликт перерос в открытую дискуссию в школьном чате, где аргументы о пользе труда столкнулись с правами на личное время.\n\nВ качестве компромисса было предложено нанять садовника, но бюджет школы не предусматривал таких расходов. Тогда возникла идея продать часть раннего урожая местным жителям, чтобы оплатить услуги помощника. Однако это вызвало новую волну критики: некоторые родители посчитали, что школа не должна заниматься коммерцией, превращая образовательный проект в бизнес. Атмосфера накалялась, а растения требовали воды уже сейчас.\n\nВ итоге, проект оказался на грани закрытия. Ирина Сергеевна предложила радикальный выход: превратить огород в «сад минимального ухода», где растут только многолетние травы, не требующие частого полива. Это решение спасло проект от ликвидации, но лишило столовую свежих овощей. Конфликт был формально исчерпан, однако чувство разочарования осталось у обеих сторон. Школьный огород перестал быть местом объединения, превратившись в символ нереализованных амбиций и неспособности взрослых и детей договориться о границах ответственности.\n\nТем не менее, спустя месяц стало очевидно, что даже неприхотливые травы требуют внимания в засушливый период. Пустующие грядки начали зарастать сорняками, превращаясь в неухоженный пустырь, который портил вид школьного двора. Теперь педагоги и родители вынуждены признать, что отсутствие четкого договора о разделении обязанностей привело к упадку инициативы, оставив после себя лишь горькое осознание упущенных возможностей для воспитания ответственности и командного духа.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "раздора",
+        "lemma": "раздора",
+        "glosses": {
+          "es": "discord",
+          "en": "discord"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "процветал",
+        "lemma": "процветал",
+        "glosses": {
+          "es": "thrived",
+          "en": "thrived"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "холодный прием",
+        "lemma": "холодный прием",
+        "glosses": {
+          "es": "cool reception",
+          "en": "cool reception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "предательством",
+        "lemma": "предательством",
+        "glosses": {
+          "es": "betrayal",
+          "en": "betrayal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ликвидации",
+        "lemma": "ликвидации",
+        "glosses": {
+          "es": "liquidation",
+          "en": "liquidation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "амбиций",
+        "lemma": "амбиций",
+        "glosses": {
+          "es": "ambitions",
+          "en": "ambitions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.5,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Трудности управления школьным огородом."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимость внедрения новых образовательных технологий в процесс обучения."
+        },
+        {
+          "id": "a3",
+          "text": "Положительное влияние физического труда на развитие навыков командной работы."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "никто не ожидал, что грядки с овощами станут причиной серьезного раздора.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что предложила Ирина Сергеевна для спасения проекта?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Нанять садовника."
+        },
+        {
+          "id": "a2",
+          "text": "Сад минимального ухода."
+        },
+        {
+          "id": "a3",
+          "text": "Продавать урожай жителям."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "превратить огород в «сад минимального ухода», где растут только многолетние травы, не требующие частого полива.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему родители были против летнего графика дежурств?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Им не нравился график."
+        },
+        {
+          "id": "a2",
+          "text": "Они не любили огород."
+        },
+        {
+          "id": "a3",
+          "text": "Они хотели отдыхать летом."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Многие родители выразили недовольство, утверждая, что летний отдых — это время для поездок и восстановления сил",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор упоминает продажу урожая?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Описать попытку решения проблемы."
+        },
+        {
+          "id": "a2",
+          "text": "Продемонстрировать стремление школы к получению коммерческой прибыли от деятельности учеников."
+        },
+        {
+          "id": "a3",
+          "text": "Обосновать необходимость привлечения профессиональных агрономов для улучшения качества урожая."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Тогда возникла идея продать часть раннего урожая местным жителям, чтобы оплатить услуги помощника.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон финала статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Торжествующий."
+        },
+        {
+          "id": "a2",
+          "text": "Разочарованный."
+        },
+        {
+          "id": "a3",
+          "text": "Сдержанно-положительный, подчеркивающий успех в примирении сторон."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Конфликт был формально исчерпан, однако чувство разочарования осталось у обеих сторон.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «раздор» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Полное согласие."
+        },
+        {
+          "id": "a2",
+          "text": "Радостное событие."
+        },
+        {
+          "id": "a3",
+          "text": "Конфликт интересов."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "никто не ожидал, что грядки с овощами станут причиной серьезного раздора.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое эссе (100-150 слов) о том, как можно было бы иначе решить проблему ухода за школьным садом, опираясь на принципы сотрудничества между родителями и школой.",
+      "en": "Напишите короткое эссе (100-150 слов) о том, как можно было бы иначе решить проблему ухода за школьным садом, опираясь на принципы сотрудничества между родителями и школой."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализировать текст, чтобы понять причины разногласий между участниками школьного проекта и оценить предложенные решения.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Зеленый конфликт: урожай или каникулы? | B2 Reading | WeLearn",
+      "en": "Зеленый конфликт: урожай или каникулы? | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Статья о школьном огороде, который стал центром споров между учениками, учителями и родителями из-за ухода за растениями летом.",
+      "en": "Статья о школьном огороде, который стал центром споров между учениками, учителями и родителями из-за ухода за растениями летом."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

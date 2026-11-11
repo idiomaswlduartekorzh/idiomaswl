@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Luzes Noturnas: O Dilema da Acessibilidade no Museu Aurora",
+      "en": "Luzes Noturnas: O Dilema da Acessibilidade no Museu Aurora"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a recente iniciativa de gratuidade noturna implementada pelo Museu Aurora e os desafios logísticos que surgiram com o aumento inesperado de visitantes.",
+      "en": "Uma análise crítica sobre a recente iniciativa de gratuidade noturna implementada pelo Museu Aurora e os desafios logísticos que surgiram com o aumento inesperado de visitantes."
+    },
+    "mission": {
+      "es": "Analisar as contradições entre políticas de democratização cultural e a infraestrutura de transporte urbano, avaliando o impacto social dessa desconexão.",
+      "en": "Analisar as contradições entre políticas de democratização cultural e a infraestrutura de transporte urbano, avaliando o impacto social dessa desconexão."
+    },
+    "targetText": "O Museu Aurora, uma joia arquitetônica situada no coração do distrito histórico, recentemente adotou uma política audaciosa: entrada gratuita todas as terças e quintas-feiras, das dezoito às vinte e duas horas. A diretora curatorial, Helena Viana, celebrou a medida como um marco na democratização do acesso à arte, visando atrair trabalhadores que, durante o horário comercial, encontram-se impossibilitados de visitar as galerias. Nas primeiras semanas, o sucesso foi retumbante. Filas serpenteavam pelo quarteirão, compostas por estudantes, famílias e profissionais que, pela primeira vez, encontravam tempo para contemplar as obras de arte sob a luz suave do entardecer. A atmosfera era de celebração, com o saguão principal pulsando com a energia de um público diversificado que, até então, via o museu como um espaço elitista e distante.\n\nContudo, a euforia inicial começou a ser eclipsada por uma falha estrutural sistêmica. À medida que o relógio se aproximava das vinte e uma horas, o fluxo de visitantes começava a diminuir drasticamente, não por falta de interesse, mas por uma necessidade pragmática: o sistema de transporte coletivo. A última linha de ônibus que atende a região central encerra suas atividades pontualmente às vinte e uma e trinta. Para muitos, a experiência cultural, que deveria ser um momento de lazer e enriquecimento, transformava-se em uma corrida frenética contra o cronômetro, forçando os visitantes a abandonarem as exposições antes do encerramento oficial das portas.\n\nO conflito tornou-se evidente durante uma reunião do conselho administrativo na última semana. O representante dos estudantes, Lucas Mendes, argumentou que a gratuidade sem a devida integração com a rede de transportes é, na prática, uma exclusão velada. \"Não adianta abrir as portas se o caminho de volta está trancado\", afirmou, destacando que a maioria dos frequentadores noturnos reside nas periferias, dependendo exclusivamente do transporte público. Em contrapartida, a administração do museu mantém que sua responsabilidade termina na porta da instituição, alegando que questões de mobilidade urbana são de competência exclusiva das autoridades municipais, as quais, até o momento, permanecem inertes diante dos apelos da diretoria.\n\nEssa desconexão cria uma tensão palpável. Enquanto Helena Viana defende a continuidade do projeto, argumentando que a presença do público pressionará o poder público por melhorias, a realidade é que o museu tornou-se um refúgio inacessível para quem não possui veículo próprio. A experiência de contemplação é interrompida pelo medo de ficar desamparado nas ruas desertas do centro após o horário de operação dos ônibus.\n\nO futuro do programa permanece incerto. O Museu Aurora provou que há uma demanda reprimida por cultura noturna, mas a falta de sincronia entre a agenda cultural e a infraestrutura urbana transforma um gesto de inclusão em um exercício de frustração. A arte, que deveria libertar, acaba sendo delimitada pelas rotas dos ônibus, deixando um gosto amargo de uma promessa que, embora bem-intencionada, esbarra na crueza da realidade logística da cidade.",
+    "wordCount": 471,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "retumbante",
+        "lemma": "retumbante",
+        "glosses": {
+          "es": "resounding",
+          "en": "resounding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eclipsada",
+        "lemma": "eclipsada",
+        "glosses": {
+          "es": "overshadowed",
+          "en": "overshadowed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmática",
+        "lemma": "pragmática",
+        "glosses": {
+          "es": "practical",
+          "en": "practical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "velada",
+        "lemma": "velada",
+        "glosses": {
+          "es": "veiled",
+          "en": "veiled"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpável",
+        "lemma": "palpável",
+        "glosses": {
+          "es": "palpable",
+          "en": "palpable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reprimida",
+        "lemma": "reprimida",
+        "glosses": {
+          "es": "repressed",
+          "en": "repressed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 24.8,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A falha na integração entre cultura e transporte."
+        },
+        {
+          "id": "a2",
+          "text": "A gestão financeira do Museu Aurora."
+        },
+        {
+          "id": "a3",
+          "text": "O aumento do número de visitantes em museus."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a desconexão cria uma tensão palpável.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que os visitantes saem antes do fechamento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O museu fecha cedo."
+        },
+        {
+          "id": "a2",
+          "text": "Os ônibus param de circular."
+        },
+        {
+          "id": "a3",
+          "text": "Eles não gostam da arte."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A última linha de ônibus que atende a região central encerra suas atividades pontualmente às vinte e uma e trinta.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como Lucas Mendes percebe a atual política de gratuidade?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como uma estratégia de marketing eficiente."
+        },
+        {
+          "id": "a2",
+          "text": "Como um avanço importante para a cidade."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma forma de exclusão social disfarçada."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Lucas Mendes, argumentou que a gratuidade sem a devida integração com a rede de transportes é, na prática, uma exclusão velada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo principal do autor ao citar a fala de Helena Viana?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar que existe um embate de visões sobre a responsabilidade do museu."
+        },
+        {
+          "id": "a2",
+          "text": "Enfatizar que a diretora não se importa com os problemas logísticos dos visitantes."
+        },
+        {
+          "id": "a3",
+          "text": "Provar que a diretora já conseguiu convencer as autoridades municipais a mudar."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Em contrapartida, a administração do museu mantém que sua responsabilidade termina na porta da instituição, alegando que questões de mobilidade urbana são de competência exclusiva das autoridades municipais",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante do texto ao descrever a situação final?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e melancólico."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e técnico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "deixando um gosto amargo de uma promessa que, embora bem-intencionada, esbarra na crueza da realidade logística da cidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'retumbante' no contexto do parágrafo inicial?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma falha absoluta."
+        },
+        {
+          "id": "a2",
+          "text": "Uma mudança lenta."
+        },
+        {
+          "id": "a3",
+          "text": "Um sucesso estrondoso."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Nas primeiras semanas, o sucesso foi retumbante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo, entre 100 e 150 palavras, propondo uma solução viável para o conflito entre o horário de funcionamento do Museu Aurora e o sistema de transporte público, considerando o papel de diferentes atores sociais.",
+      "en": "Escreva um parágrafo argumentativo, entre 100 e 150 palavras, propondo uma solução viável para o conflito entre o horário de funcionamento do Museu Aurora e o sistema de transporte público, considerando o papel de diferentes atores sociais."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analisar as contradições entre políticas de democratização cultural e a infraestrutura de transporte urbano, avaliando o impacto social dessa desconexão.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Luzes Noturnas: O Dilema da Acessibilidade no Museu Aurora | B2 Reading | WeLearn",
+      "en": "Luzes Noturnas: O Dilema da Acessibilidade no Museu Aurora | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a recente iniciativa de gratuidade noturna implementada pelo Museu Aurora e os desafios logísticos que surgiram com o aumento inesperado de visitantes.",
+      "en": "Uma análise crítica sobre a recente iniciativa de gratuidade noturna implementada pelo Museu Aurora e os desafios logísticos que surgiram com o aumento inesperado de visitantes."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

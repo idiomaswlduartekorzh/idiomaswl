@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-river-map",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema da Cartografia Comunitária",
+      "en": "O Dilema da Cartografia Comunitária"
+    },
+    "intro": {
+      "es": "Uma análise sobre a transição do digital para o físico na gestão de riscos de inundações em áreas vulneráveis.",
+      "en": "Uma análise sobre a transição do digital para o físico na gestão de riscos de inundações em áreas vulneráveis."
+    },
+    "mission": {
+      "es": "Leia o artigo abaixo e responda às questões de compreensão para avaliar sua capacidade de interpretar contextos de crise e soluções tecnológicas.",
+      "en": "Leia o artigo abaixo e responda às questões de compreensão para avaliar sua capacidade de interpretar contextos de crise e soluções tecnológicas."
+    },
+    "targetText": "Na Vila Esperança, a chegada da época de chuvas intensas sempre traz uma ansiedade coletiva. Recentemente, a Defesa Civil local lançou um mapa de riscos interativo, acessível apenas via dispositivos móveis. A ferramenta, embora tecnologicamente avançada, revelou-se um obstáculo inesperado para os moradores mais velhos. Em aparelhos com telas desgastadas ou com baixa resolução, a distinção entre as zonas de perigo iminente e as áreas seguras tornava-se impossível, transformando tons de laranja em borrões indistinguíveis de vermelho. A tecnologia, desenhada para proteger, acabou por excluir justamente o segmento da população que mais necessita de alertas precisos.\n\nDiante deste cenário, o coletivo 'Rios Vivos', liderado pela engenheira civil Mariana Souza, propôs uma solução de baixo custo: a impressão e distribuição de mapas físicos em papel laminado. A proposta gerou um debate acalorado na associação de moradores. Enquanto alguns defendiam a modernização contínua, argumentando que o papel é uma tecnologia obsoleta, Mariana sustentava que a redundância é um princípio fundamental da segurança. Para ela, depender exclusivamente de uma rede de dados instável durante um temporal é um erro estratégico que ignora a realidade técnica da comunidade.\n\nO conflito atingiu seu ápice durante a reunião de planejamento trimestral. O representante do governo municipal, Roberto Mendes, insistiu que a manutenção de mapas impressos seria um retrocesso orçamentário. Ele argumentou que a atualização em tempo real, possível apenas no formato digital, é superior a qualquer documento estático. No entanto, a falha técnica ocorrida na semana anterior, quando uma queda de energia deixou o sistema fora do ar durante um alerta de cheia, enfraqueceu sua posição. A falta de um plano B deixou dezenas de famílias sem orientação no momento crítico.\n\nA tensão entre a eficiência digital e a confiabilidade física não é apenas uma questão de preferência, mas de acessibilidade democrática. O grupo de Mariana, após arrecadar fundos de forma independente, conseguiu imprimir quinhentas cópias do mapa. A distribuição foi feita porta a porta, acompanhada de instruções simples. O resultado foi imediato: durante o temporal daquela noite, os moradores da rua das Acácias, munidos do material impresso, evacuaram suas casas com calma e precisão, enquanto outros, dependendo de telas escuras, permaneceram em dúvida sobre a rota de fuga.\n\nO desfecho, contudo, não encerrou a controvérsia. O governo municipal recusa-se a oficializar o mapa impresso, alegando que ele não reflete as mudanças dinâmicas do terreno. Mariana, por sua vez, mantém o projeto ativo, argumentando que um mapa estático, mas legível, é infinitamente mais útil do que um mapa dinâmico que ninguém consegue enxergar. A Vila Esperança segue dividida, equilibrando-se entre a promessa da inovação e a segurança tangível do papel, em um impasse que reflete os limites da inclusão digital em situações de emergência real.",
+    "wordCount": 449,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ansiedade",
+        "lemma": "ansiedade",
+        "glosses": {
+          "es": "anxiety",
+          "en": "anxiety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "indistinguíveis",
+        "lemma": "indistinguíveis",
+        "glosses": {
+          "es": "indistinguishable",
+          "en": "indistinguishable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsoleta",
+        "lemma": "obsoleta",
+        "glosses": {
+          "es": "obsolete",
+          "en": "obsolete"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "redundância",
+        "lemma": "redundância",
+        "glosses": {
+          "es": "redundancy",
+          "en": "redundancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tangível",
+        "lemma": "tangível",
+        "glosses": {
+          "es": "tangible",
+          "en": "tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock",
+          "en": "deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.4,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A exclusão digital em riscos."
+        },
+        {
+          "id": "a2",
+          "text": "A falha das tecnologias."
+        },
+        {
+          "id": "a3",
+          "text": "O custo de mapas impressos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A tecnologia, desenhada para proteger, acabou por excluir justamente o segmento da população que mais necessita de alertas precisos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o mapa digital falhou para os idosos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pela falta de sinal."
+        },
+        {
+          "id": "a2",
+          "text": "Por causa da tela."
+        },
+        {
+          "id": "a3",
+          "text": "Devido à complexidade."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Em aparelhos com telas desgastadas ou com baixa resolução, a distinção entre as zonas de perigo iminente e as áreas seguras tornava-se impossível",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual é a posição de Mariana sobre a segurança?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aposta na tecnologia."
+        },
+        {
+          "id": "a2",
+          "text": "Prefere o isolamento."
+        },
+        {
+          "id": "a3",
+          "text": "Defende a redundância."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Mariana sustentava que a redundância é um princípio fundamental da segurança.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Por que o coletivo imprimiu o mapa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para evitar a exclusão."
+        },
+        {
+          "id": "a2",
+          "text": "Para testar o papel."
+        },
+        {
+          "id": "a3",
+          "text": "Para substituir o digital."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A distribuição foi feita porta a porta, acompanhada de instruções simples. O resultado foi imediato: durante o temporal daquela noite, os moradores da rua das Acácias, munidos do material impresso, evacuaram suas casas com calma e precisão",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e neutro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A tensão entre a eficiência digital e a confiabilidade física não é apenas uma questão de preferência, mas de acessibilidade democrática.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa 'redundância' no contexto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Excesso inútil."
+        },
+        {
+          "id": "a2",
+          "text": "Erro de sistema."
+        },
+        {
+          "id": "a3",
+          "text": "Duplicação de segurança."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Mariana sustentava que a redundância é um princípio fundamental da segurança. Para ela, depender exclusivamente de uma rede de dados instável durante um temporal é um erro estratégico",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo defendendo se a tecnologia deve ou não ser a única forma de comunicação em situações de desastre, considerando os pontos de vista apresentados no texto.",
+      "en": "Escreva um parágrafo argumentativo defendendo se a tecnologia deve ou não ser a única forma de comunicação em situações de desastre, considerando os pontos de vista apresentados no texto."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o artigo abaixo e responda às questões de compreensão para avaliar sua capacidade de interpretar contextos de crise e soluções tecnológicas.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema da Cartografia Comunitária | B2 Reading | WeLearn",
+      "en": "O Dilema da Cartografia Comunitária | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise sobre a transição do digital para o físico na gestão de riscos de inundações em áreas vulneráveis.",
+      "en": "Uma análise sobre a transição do digital para o físico na gestão de riscos de inundações em áreas vulneráveis."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

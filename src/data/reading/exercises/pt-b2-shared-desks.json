@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-shared-desks",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Desafios do Espaço Compartilhado na InovaTech",
+      "en": "Desafios do Espaço Compartilhado na InovaTech"
+    },
+    "intro": {
+      "es": "Um e-mail interno enviado pela gerente de operações abordando os problemas logísticos de uma política de mesas rotativas.",
+      "en": "Um e-mail interno enviado pela gerente de operações abordando os problemas logísticos de uma política de mesas rotativas."
+    },
+    "mission": {
+      "es": "Compreender as tensões entre a flexibilidade do trabalho híbrido e as necessidades operacionais de uma equipe técnica.",
+      "en": "Compreender as tensões entre a flexibilidade do trabalho híbrido e as necessidades operacionais de uma equipe técnica."
+    },
+    "targetText": "Assunto: Ajustes necessários na política de mesas rotativas\n\nPrezada equipe, escrevo este e-mail para abordar as recentes dificuldades operacionais que surgiram com a nossa política de 'hot-desking'. Embora a flexibilidade de escolher os dias de trabalho presencial tenha sido amplamente celebrada, a falta de estações de trabalho fixas gerou um gargalo inesperado. A ideia inicial de otimizar o espaço físico da InovaTech através do compartilhamento de mesas provou ser eficiente na teoria, mas, na prática, a rotatividade constante está prejudicando a produtividade daqueles que dependem de equipamentos especializados.\n\nO conflito tornou-se evidente durante a última semana, quando a equipe de engenharia de hardware relatou a impossibilidade de manter seus kits de teste montados. Como as mesas devem ser deixadas limpas ao final de cada turno, os engenheiros perdem diariamente cerca de uma hora montando e desmontando osciloscópios e fontes de alimentação. Esse ritual repetitivo não apenas consome tempo valioso, mas também aumenta o desgaste dos componentes sensíveis, criando uma frustração palpável entre os membros do setor técnico que se sentem menosprezados pela atual configuração do escritório.\n\nReconheço que a liberdade de trabalhar de casa é um benefício que a maioria de vocês valoriza profundamente, e não pretendo revogar essa política. No entanto, a premissa de que todos os funcionários possuem necessidades idênticas de infraestrutura mostrou-se uma falha de planejamento. A gestão entende que a economia de espaço não pode sobrepor-se à eficácia operacional. É claro que a flexibilidade é uma conquista, mas ela não deve ser um obstáculo para a execução técnica de projetos complexos que exigem ferramentas fixas.\n\nComo consequência direta dessas reclamações, decidi que, a partir da próxima semana, as mesas localizadas no canto sul do escritório serão reservadas exclusivamente para a equipe de engenharia. Essas estações não farão mais parte do sistema de rotatividade e serão equipadas com bancadas permanentes. Embora essa medida reduza o número de lugares disponíveis para o restante da equipe administrativa, acredito que seja o único caminho viável para equilibrar a necessidade de flexibilidade com a exigência técnica do nosso trabalho diário.\n\nPeço que todos colaborem com essa transição e respeitem a sinalização das novas áreas designadas. Entendo que isso possa gerar desconforto para quem preferia a liberdade total de escolha, mas a estabilidade operacional deve ser nossa prioridade. Agradeço a compreensão de todos e permaneço aberta a sugestões que ajudem a tornar nosso ambiente compartilhado mais funcional, sem comprometer a cultura de autonomia que construímos com tanto esforço ao longo dos últimos anos.",
+    "wordCount": 411,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "hot-desking",
+        "lemma": "hot-desking",
+        "glosses": {
+          "es": "a system where employees do not have their own desk and use whichever is available",
+          "en": "a system where employees do not have their own desk and use whichever is available"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gargalo",
+        "lemma": "gargalo",
+        "glosses": {
+          "es": "bottleneck or a point of congestion",
+          "en": "bottleneck or a point of congestion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "osciloscópios",
+        "lemma": "osciloscópios",
+        "glosses": {
+          "es": "electronic test instruments that graphically display varying signal voltages",
+          "en": "electronic test instruments that graphically display varying signal voltages"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpável",
+        "lemma": "palpável",
+        "glosses": {
+          "es": "tangible or easily perceived",
+          "en": "tangible or easily perceived"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sobrepor-se",
+        "lemma": "sobrepor-se",
+        "glosses": {
+          "es": "to take precedence over or override",
+          "en": "to take precedence over or override"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autonomia",
+        "lemma": "autonomia",
+        "glosses": {
+          "es": "the right or condition of self-government or independence",
+          "en": "the right or condition of self-government or independence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 25.7,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o objetivo central da mensagem da gerente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Resolver problemas de infraestrutura."
+        },
+        {
+          "id": "a2",
+          "text": "Implementar um sistema de rodízio de cargos internos na empresa."
+        },
+        {
+          "id": "a3",
+          "text": "Solicitar a contratação imediata de novos especialistas em logística."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "escrevo este e-mail para abordar as recentes dificuldades operacionais que surgiram com a nossa política de 'hot-desking'.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que os engenheiros sofrem com o sistema atual?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Falta de ferramentas."
+        },
+        {
+          "id": "a2",
+          "text": "Eles perdem tempo montando equipamentos."
+        },
+        {
+          "id": "a3",
+          "text": "Eles precisam trocar de mesas todos os dias da semana."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "os engenheiros perdem diariamente cerca de uma hora montando e desmontando osciloscópios e fontes de alimentação.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual é a posição da gerente sobre a política de trabalho híbrido?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela a considera um erro total."
+        },
+        {
+          "id": "a2",
+          "text": "Ela quer expandi-la para todos."
+        },
+        {
+          "id": "a3",
+          "text": "Ela deseja mantê-la com ajustes."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Reconheço que a liberdade de trabalhar de casa é um benefício que a maioria de vocês valoriza profundamente, e não pretendo revogar essa política.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Por que a gerente menciona a economia de espaço no terceiro parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para explicar que o benefício não justifica a perda de eficácia."
+        },
+        {
+          "id": "a2",
+          "text": "Para validar a implementação de cortes orçamentários no departamento financeiro."
+        },
+        {
+          "id": "a3",
+          "text": "Para sugerir que a empresa deve expandir sua infraestrutura predial imediatamente."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A gestão entende que a economia de espaço não pode sobrepor-se à eficácia operacional.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no e-mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ríspido."
+        },
+        {
+          "id": "a2",
+          "text": "Profissional e ponderado."
+        },
+        {
+          "id": "a3",
+          "text": "Excessivamente condescendente e pouco assertivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Peço que todos colaborem com essa transição e respeitem a sinalização das novas áreas designadas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que a palavra 'gargalo' indica no contexto do primeiro parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um sucesso absoluto."
+        },
+        {
+          "id": "a2",
+          "text": "Uma nova oportunidade."
+        },
+        {
+          "id": "a3",
+          "text": "Um obstáculo ao fluxo."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a falta de estações de trabalho fixas gerou um gargalo inesperado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um e-mail de resposta de um funcionário administrativo, aceitando a nova política, mas sugerindo uma forma de compensação para a perda de flexibilidade na escolha das mesas.",
+      "en": "Escreva um e-mail de resposta de um funcionário administrativo, aceitando a nova política, mas sugerindo uma forma de compensação para a perda de flexibilidade na escolha das mesas."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Compreender as tensões entre a flexibilidade do trabalho híbrido e as necessidades operacionais de uma equipe técnica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Desafios do Espaço Compartilhado na InovaTech | B2 Reading | WeLearn",
+      "en": "Desafios do Espaço Compartilhado na InovaTech | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um e-mail interno enviado pela gerente de operações abordando os problemas logísticos de uma política de mesas rotativas.",
+      "en": "Um e-mail interno enviado pela gerente de operações abordando os problemas logísticos de uma política de mesas rotativas."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-library-window",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Тихий рассвет в библиотеке «Авангард»",
+      "en": "Тихий рассвет в библиотеке «Авангард»"
+    },
+    "intro": {
+      "es": "История о том, как утренний эксперимент городской библиотеки изменил жизнь сотрудников и читателей.",
+      "en": "История о том, как утренний эксперимент городской библиотеки изменил жизнь сотрудников и читателей."
+    },
+    "mission": {
+      "es": "Проанализировать текст, чтобы понять социальный конфликт и последствия организационных изменений.",
+      "en": "Проанализировать текст, чтобы понять социальный конфликт и последствия организационных изменений."
+    },
+    "targetText": "Городская библиотека «Авангард» всегда открывалась в десять утра, но директор Анна Сергеевна решила внедрить пилотный проект: ранний доступ с семи утра. Инициатива была направлена на поддержку работников ночных смен, которым требовалось место для отдыха и подготовки к экзаменам в тишине. Библиотекарь Виктор, привыкший к неспешным утренним часам, был недоволен. Его график сдвинулся, и теперь он должен был приходить к шести утра, чтобы подготовить залы. Он считал, что тишина, за которую так ценили библиотеку, будет нарушена суетой первых посетителей.\n\nПервая неделя эксперимента показала неоднозначные результаты. С одной стороны, медсестры из соседней больницы и водители такси, заканчивающие смену, с благодарностью использовали пространство для чтения в полной тишине. Они ценили возможность переключиться после напряженной работы. С другой стороны, Виктор столкнулся с проблемой: ранние посетители часто оставляли после себя чашки кофе и беспорядок, что требовало дополнительных усилий по уборке. Он начал открыто выражать недовольство, утверждая, что библиотека превращается в транзитный пункт, а не в храм знаний.\n\nКонфликт достиг пика, когда Виктор отказался открывать двери ровно в семь, сославшись на нехватку времени для расстановки книг. Анна Сергеевна вызвала его на серьезный разговор. Она признала, что нагрузка на персонал возросла, но подчеркнула, что социальная значимость проекта перевешивает бытовые неудобства. Директор предложила компромисс: нанять дополнительного помощника для утренней уборки, чтобы разгрузить Виктора. Это решение было продиктовано желанием сохранить баланс между потребностями горожан и комфортом сотрудников.\n\nВиктор, хотя и неохотно, согласился, но остался при своем мнении. Он продолжал считать, что утренние часы должны быть временем для глубокого погружения в литературу, а не для обслуживания усталых людей, ищущих место для сна. Его скептицизм стал предметом обсуждения среди коллег, которые разделились на два лагеря. Одни поддерживали Виктора, опасаясь выгорания, другие же видели в этом шаге развитие библиотеки как современного общественного пространства.\n\nЭксперимент продолжается, и хотя библиотека стала более востребованной, атмосфера в коллективе остается напряженной. Анна Сергеевна понимает, что успех проекта зависит не только от посещаемости, но и от согласия внутри команды. Она планирует провести общее собрание, чтобы обсудить будущее библиотеки. Виктор же каждый день приходит в шесть утра, скрупулезно расставляет книги и ждет, когда же проект официально признают провальным. Пока что тишина раннего утра остается хрупким пространством, где сталкиваются интересы долга и личного комфорта, оставляя вопрос о будущем библиотеки открытым для дальнейших дискуссий.\n\nОднако со временем стало очевидно, что присутствие новых читателей постепенно меняет саму структуру библиотечного фонда. Посетители стали чаще запрашивать прикладную литературу, что вынудило Анну Сергеевну пересмотреть политику закупок. Виктор, наблюдая за этими изменениями, понял, что его страхи были оправданы: классическая роль «храма знаний» окончательно уступила место функциональному центру, адаптированному под запросы современного динамичного общества.",
+    "wordCount": 417,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "пилотный проект",
+        "lemma": "пилотный проект",
+        "glosses": {
+          "es": "pilot project",
+          "en": "pilot project"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "неоднозначные",
+        "lemma": "неоднозначные",
+        "glosses": {
+          "es": "ambiguous",
+          "en": "ambiguous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "транзитный пункт",
+        "lemma": "транзитный пункт",
+        "glosses": {
+          "es": "transit point",
+          "en": "transit point"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромисс",
+        "lemma": "компромисс",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "выгорания",
+        "lemma": "выгорания",
+        "glosses": {
+          "es": "burnout",
+          "en": "burnout"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "скрупулезно",
+        "lemma": "скрупулезно",
+        "glosses": {
+          "es": "scrupulously",
+          "en": "scrupulously"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.4,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:56:22.705Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Трудности внедрения раннего графика."
+        },
+        {
+          "id": "a2",
+          "text": "Детальный разбор финансовой отчетности организации за прошедший отчетный период."
+        },
+        {
+          "id": "a3",
+          "text": "Подробное описание архитектурных особенностей здания новой городской библиотеки."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "директор Анна Сергеевна решила внедрить пилотный проект: ранний доступ с семи утра.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что стало причиной недовольства Виктора?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Шум."
+        },
+        {
+          "id": "a2",
+          "text": "Смена графика работы."
+        },
+        {
+          "id": "a3",
+          "text": "Отмена обеденного перерыва из-за новых корпоративных требований руководства."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Его график сдвинулся, и теперь он должен был приходить к шести утра",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему директор пошла на компромисс?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за жалоб посетителей."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы закрыть проект."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы успокоить персонал."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Директор предложила компромисс: нанять дополнительного помощника для утренней уборки, чтобы разгрузить Виктора.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор описывает действия Виктора в конце текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать его надежду на крах проекта."
+        },
+        {
+          "id": "a2",
+          "text": "Продемонстрировать его искреннее желание помочь коллегам в адаптации к изменениям."
+        },
+        {
+          "id": "a3",
+          "text": "Подчеркнуть его стремление получить повышение по службе в ближайшем будущем."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Виктор же каждый день приходит в шесть утра, скрупулезно расставляет книги и ждет, когда же проект официально признают провальным.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в описании ситуации?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Грустный."
+        },
+        {
+          "id": "a2",
+          "text": "Нейтральный и аналитический."
+        },
+        {
+          "id": "a3",
+          "text": "Острокритический и крайне предвзятый к любым инновациям в сфере культуры."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Эксперимент продолжается, и хотя библиотека стала более востребованной, атмосфера в коллективе остается напряженной.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «скрупулезно» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Быстро и небрежно."
+        },
+        {
+          "id": "a2",
+          "text": "Очень редко."
+        },
+        {
+          "id": "a3",
+          "text": "Тщательно и внимательно."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Виктор же каждый день приходит в шесть утра, скрупулезно расставляет книги",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое эссе (150 слов) о том, должны ли общественные пространства подстраиваться под нужды работающих в ночные смены людей, аргументируя свою позицию.",
+      "en": "Напишите короткое эссе (150 слов) о том, должны ли общественные пространства подстраиваться под нужды работающих в ночные смены людей, аргументируя свою позицию."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализировать текст, чтобы понять социальный конфликт и последствия организационных изменений.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:56:22.705Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Тихий рассвет в библиотеке «Авангард» | B2 Reading | WeLearn",
+      "en": "Тихий рассвет в библиотеке «Авангард» | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "История о том, как утренний эксперимент городской библиотеки изменил жизнь сотрудников и читателей.",
+      "en": "История о том, как утренний эксперимент городской библиотеки изменил жизнь сотрудников и читателей."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:56:22.705Z"
+  }
+}

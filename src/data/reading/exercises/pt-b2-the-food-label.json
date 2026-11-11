@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-food-label",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema do Rótulo: Uma Revolução na Despensa",
+      "en": "O Dilema do Rótulo: Uma Revolução na Despensa"
+    },
+    "intro": {
+      "es": "Um relato sobre como a mudança nas etiquetas de validade em um mercado local gerou um debate intenso entre sustentabilidade e segurança alimentar.",
+      "en": "Um relato sobre como a mudança nas etiquetas de validade em um mercado local gerou um debate intenso entre sustentabilidade e segurança alimentar."
+    },
+    "mission": {
+      "es": "Leia o relato sobre a nova política do Mercado Central e responda às questões para avaliar sua compreensão sobre o impacto das mudanças no comportamento dos consumidores.",
+      "en": "Leia o relato sobre a nova política do Mercado Central e responda às questões para avaliar sua compreensão sobre o impacto das mudanças no comportamento dos consumidores."
+    },
+    "targetText": "A recente decisão do Mercado Central de substituir os rótulos de 'consumir até' por 'melhor antes de' em produtos não perecíveis provocou uma agitação palpável nos corredores. A iniciativa, desenhada para mitigar o desperdício doméstico, visa educar o consumidor sobre a diferença entre segurança alimentar e qualidade sensorial. Contudo, a transição não foi isenta de atritos. Na última terça-feira, observei uma discussão acalorada entre a gerente, Beatriz, e uma cliente de longa data, Dona Helena. Helena, segurando um pacote de lentilhas, questionava se a ausência de uma data rígida não seria um convite ao perigo, argumentando que a clareza anterior protegia os consumidores mais cautelosos.\n\nBeatriz tentou explicar que o rótulo antigo frequentemente induzia ao descarte prematuro de alimentos perfeitamente comestíveis. Ela enfatizou que a empresa agora fornece guias visuais nos corredores, ensinando a identificar sinais reais de deterioração. Apesar dos esforços, a resistência de Helena reflete um receio coletivo: a perda da autoridade do fabricante sobre a segurança do produto. O conflito reside na transferência de responsabilidade; antes, o mercado ditava o fim da vida útil, agora, o consumidor assume o papel de juiz, armado apenas com seus próprios sentidos e um folheto informativo.\n\nO debate escalou quando outros clientes se aproximaram, divididos entre o apoio à causa ecológica e a desconfiança sobre a qualidade dos estoques. Alguns jovens elogiavam a postura progressista do mercado, enquanto consumidores mais velhos insistiam que a ambiguidade favorece a venda de produtos próximos ao limite da frescura. A tensão era palpável, um choque entre a modernidade que busca reduzir o impacto ambiental e a tradição que prioriza a segurança absoluta garantida por datas impressas. A gerente, mantendo a calma, admitiu que a mudança exige uma curva de aprendizado, mas reafirmou que o desperdício é um custo moral que a sociedade não pode mais ignorar.\n\nO desfecho da tarde foi um impasse. Helena deixou o mercado sem levar as lentilhas, recusando-se a confiar em seu próprio julgamento olfativo. Por outro lado, o volume de vendas de itens com novas etiquetas permaneceu estável, sugerindo que a maioria dos clientes apenas aceitou a mudança em silêncio. O Mercado Central venceu a batalha contra o desperdício imediato, mas perdeu a confiança de uma parcela da clientela que não deseja ser responsável pela avaliação de risco.\n\nA questão fundamental que permanece é se o consumidor médio está preparado para essa autonomia. A transição não é apenas logística, mas cultural. Enquanto o mercado celebra a redução de toneladas de lixo, a insegurança de Helena paira como uma sombra, lembrando que a segurança alimentar é, acima de tudo, uma questão de confiança. O Mercado Central continuará sua jornada, mas o custo dessa transição será medido não apenas em toneladas de comida salvas, mas na fragmentação da relação entre o varejista e o cliente que busca certezas em um mundo cada vez mais incerto.",
+    "wordCount": 473,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mitigar",
+        "lemma": "mitigar",
+        "glosses": {
+          "es": "to reduce or alleviate",
+          "en": "to reduce or alleviate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atritos",
+        "lemma": "atritos",
+        "glosses": {
+          "es": "conflicts or disagreements",
+          "en": "conflicts or disagreements"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "deterioração",
+        "lemma": "deterioração",
+        "glosses": {
+          "es": "the process of becoming worse in quality",
+          "en": "the process of becoming worse in quality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ambiguidade",
+        "lemma": "ambiguidade",
+        "glosses": {
+          "es": "uncertainty or lack of clarity",
+          "en": "uncertainty or lack of clarity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "a deadlock or stalemate",
+          "en": "a deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fragmentação",
+        "lemma": "fragmentação",
+        "glosses": {
+          "es": "the process of breaking into smaller parts",
+          "en": "the process of breaking into smaller parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.5,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A mudança na rotulagem de alimentos e o conflito de confiança gerado."
+        },
+        {
+          "id": "a2",
+          "text": "A falência do Mercado Central devido à má gestão de estoques."
+        },
+        {
+          "id": "a3",
+          "text": "A necessidade de novas leis federais sobre o desperdício de comida."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A recente decisão do Mercado Central de substituir os rótulos de 'consumir até' por 'melhor antes de' em produtos não perecíveis provocou uma agitação palpável nos corredores.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que o mercado passou a oferecer para auxiliar os clientes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Descontos em produtos vencidos."
+        },
+        {
+          "id": "a2",
+          "text": "Guias visuais sobre deterioração."
+        },
+        {
+          "id": "a3",
+          "text": "Aulas de culinária para clientes."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ela enfatizou que a empresa agora fornece guias visuais nos corredores, ensinando a identificar sinais reais de deterioração.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que Dona Helena se recusou a comprar as lentilhas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O preço das lentilhas aumentou após a mudança dos rótulos."
+        },
+        {
+          "id": "a2",
+          "text": "Ela prefere marcas que não são vendidas no Mercado Central."
+        },
+        {
+          "id": "a3",
+          "text": "Ela não confia em sua própria capacidade de avaliar a segurança do alimento."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Helena deixou o mercado sem levar as lentilhas, recusando-se a confiar em seu próprio julgamento olfativo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo principal do autor ao relatar a discussão entre Beatriz e Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar o choque entre a nova política de sustentabilidade e a insegurança do consumidor."
+        },
+        {
+          "id": "a2",
+          "text": "Criticar a falta de preparo da gerente Beatriz em lidar com clientes difíceis."
+        },
+        {
+          "id": "a3",
+          "text": "Demonstrar que Helena é uma cliente que não se preocupa com o meio ambiente."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O conflito reside na transferência de responsabilidade; antes, o mercado ditava o fim da vida útil, agora, o consumidor assume o papel de juiz, armado apenas com seus próprios sentidos e um folheto informativo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o autor descreve a postura do Mercado Central em relação à mudança?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como uma estratégia puramente financeira para aumentar lucros."
+        },
+        {
+          "id": "a2",
+          "text": "Como uma transição necessária, porém culturalmente complexa."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma imposição autoritária que ignora as necessidades dos clientes."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A gerente, mantendo a calma, admitiu que a mudança exige uma curva de aprendizado, mas reafirmou que o desperdício é um custo moral que a sociedade não pode mais ignorar.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No texto, o que significa a palavra 'impasse'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um momento de alegria intensa entre os clientes."
+        },
+        {
+          "id": "a2",
+          "text": "Uma rápida resolução de um problema técnico."
+        },
+        {
+          "id": "a3",
+          "text": "Uma situação de bloqueio onde não há consenso."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O desfecho da tarde foi um impasse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo de 100 palavras discutindo se a responsabilidade pela segurança alimentar deve ser do fabricante ou do consumidor, utilizando os conceitos de sustentabilidade apresentados no texto.",
+      "en": "Escreva um parágrafo argumentativo de 100 palavras discutindo se a responsabilidade pela segurança alimentar deve ser do fabricante ou do consumidor, utilizando os conceitos de sustentabilidade apresentados no texto."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o relato sobre a nova política do Mercado Central e responda às questões para avaliar sua compreensão sobre o impacto das mudanças no comportamento dos consumidores.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema do Rótulo: Uma Revolução na Despensa | B2 Reading | WeLearn",
+      "en": "O Dilema do Rótulo: Uma Revolução na Despensa | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um relato sobre como a mudança nas etiquetas de validade em um mercado local gerou um debate intenso entre sustentabilidade e segurança alimentar.",
+      "en": "Um relato sobre como a mudança nas etiquetas de validade em um mercado local gerou um debate intenso entre sustentabilidade e segurança alimentar."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

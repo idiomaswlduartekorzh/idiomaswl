@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-new-crossing",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Перекресток раздора: эксперимент на улице Светлой",
+      "en": "Перекресток раздора: эксперимент на улице Светлой"
+    },
+    "intro": {
+      "es": "Статья о конфликте интересов между жителями района и автомобилистами в связи с установкой нового пешеходного перехода.",
+      "en": "Статья о конфликте интересов между жителями района и автомобилистами в связи с установкой нового пешеходного перехода."
+    },
+    "mission": {
+      "es": "Проанализировать аргументы сторон и оценить последствия внедрения временных мер по организации дорожного движения.",
+      "en": "Проанализировать аргументы сторон и оценить последствия внедрения временных мер по организации дорожного движения."
+    },
+    "targetText": "На улице Светлой, где расположена городская поликлиника, уже давно назревал конфликт. Местные жители, особенно пожилые пациенты, неоднократно жаловались на невозможность безопасно перейти дорогу к медицинскому учреждению. Интенсивное движение транспорта превратило этот участок в зону постоянного риска. После серии обращений в администрацию было принято решение провести двухнедельный эксперимент: установить временный светофор и нанести разметку «зебра» непосредственно у входа в поликлинику. Инициативная группа пенсионеров во главе с Анной Петровой ликовала, считая это долгожданной победой здравого смысла над хаосом.\n\nОднако радость была недолгой. Уже в первый день эксперимента водители, ежедневно использующие этот маршрут, столкнулись с неожиданными трудностями. Сергей Волков, представитель местного союза автомобилистов, отметил, что установка светофора привела к образованию многокилометровых пробок, парализовавших движение в часы пик. По его словам, вместо того чтобы разгрузить поток, городские власти создали «бутылочное горлышко», из-за которого опаздывали на работу сотни людей. Водители начали искать пути объезда через узкие дворы, что вызвало новую волну недовольства уже среди жителей соседних кварталов, уставших от шума и выхлопных газов под окнами.\n\nРезультаты эксперимента оказались весьма противоречивыми. С одной стороны, статистика показала полное отсутствие аварийных ситуаций с участием пешеходов в течение этих двух недель. Пожилые люди смогли посещать врача без страха за свою жизнь, что стало несомненным успехом для социальной инфраструктуры района. С другой стороны, транспортная доступность района резко снизилась, а экологическая обстановка во дворах ухудшилась из-за перенаправления потока машин. Городские планировщики оказались в ловушке: безопасность одних граждан прямо противоречила комфорту других, создавая классическую дилемму городского управления.\n\nК концу срока действия эксперимента страсти накалились до предела. На итоговом собрании Анна Петрова настаивала на сохранении светофора как единственного способа защиты слабых слоев населения. Сергей Волков, в свою очередь, требовал немедленного демонтажа, предлагая взамен строительство надземного перехода, на который, как признались чиновники, в бюджете текущего года нет средств. Обе стороны приводили убедительные доводы, опираясь на реальные нужды: одни на право на жизнь и здоровье, другие на право на беспрепятственное передвижение по городу.\n\nВ итоге администрация приняла компромиссное, но временное решение: светофор демонтировали, но оставили «зебру» с искусственными неровностями, так называемыми «лежачими полицейскими». Это позволило немного снизить скорость потока, не останавливая его полностью. Тем не менее, напряжение не спало. Жители продолжают требовать полноценной защиты, а водители опасаются, что любое дальнейшее ограничение станет критическим. Проблема улицы Светлой осталась нерешенной, превратившись в символ неспособности города найти баланс между интересами разных социальных групп.\n\nБолее того, возникший прецедент спровоцировал общегородскую дискуссию о приоритетах планирования. Теперь активисты из других районов требуют аналогичных мер, опасаясь, что без системного подхода к развитию инфраструктуры подобные локальные конфликты станут неизбежным атрибутом повседневной жизни, лишь усиливая социальное напряжение и недоверие к действиям местных властей.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "назревал",
+        "lemma": "назревал",
+        "glosses": {
+          "es": "was brewing",
+          "en": "was brewing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бутылочное горлышко",
+        "lemma": "бутылочное горлышко",
+        "glosses": {
+          "es": "bottleneck",
+          "en": "bottleneck"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "противоречивыми",
+        "lemma": "противоречивыми",
+        "glosses": {
+          "es": "contradictory",
+          "en": "contradictory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "накалились",
+        "lemma": "накалились",
+        "glosses": {
+          "es": "heated up",
+          "en": "heated up"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "демонтажа",
+        "lemma": "демонтажа",
+        "glosses": {
+          "es": "dismantling",
+          "en": "dismantling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромиссное",
+        "lemma": "компромиссное",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт из-за перехода"
+        },
+        {
+          "id": "a2",
+          "text": "Транспортный коллапс в городе"
+        },
+        {
+          "id": "a3",
+          "text": "Бюджетные проблемы района"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "На улице Светлой, где расположена городская поликлиника, уже давно назревал конфликт.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Какое решение было принято администрацией после окончания эксперимента?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Установка надземного моста"
+        },
+        {
+          "id": "a2",
+          "text": "Оставить зебру и неровности"
+        },
+        {
+          "id": "a3",
+          "text": "Демонтаж всех знаков"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "светофор демонтировали, но оставили «зебру» с искусственными неровностями, так называемыми «лежачими полицейскими».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему водители начали ездить через дворы?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за ремонта дорог"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы быстрее доехать"
+        },
+        {
+          "id": "a3",
+          "text": "Из-за пробок на дороге"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Водители начали искать пути объезда через узкие дворы, что вызвало новую волну недовольства уже среди жителей соседних кварталов",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какова цель упоминания позиции Сергея Волкова в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать недовольство водителей"
+        },
+        {
+          "id": "a2",
+          "text": "Опровергнуть пользу светофора"
+        },
+        {
+          "id": "a3",
+          "text": "Предложить лучший вариант решения"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Сергей Волков, представитель местного союза автомобилистов, отметил, что установка светофора привела к образованию многокилометровых пробок",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков общий тон повествования в статье?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Критический"
+        },
+        {
+          "id": "a2",
+          "text": "Нейтральный"
+        },
+        {
+          "id": "a3",
+          "text": "Оптимистичный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Результаты эксперимента оказались весьма противоречивыми.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает выражение «назревал конфликт» в контексте первого абзаца?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Произошла внезапная ссора"
+        },
+        {
+          "id": "a2",
+          "text": "Проблема была решена"
+        },
+        {
+          "id": "a3",
+          "text": "Ситуация постепенно обострялась"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "На улице Светлой, где расположена городская поликлиника, уже давно назревал конфликт.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите письмо в местную администрацию от лица жителя улицы Светлой, в котором вы предлагаете альтернативный вариант решения проблемы безопасности пешеходов, учитывающий интересы водителей.",
+      "en": "Напишите письмо в местную администрацию от лица жителя улицы Светлой, в котором вы предлагаете альтернативный вариант решения проблемы безопасности пешеходов, учитывающий интересы водителей."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализировать аргументы сторон и оценить последствия внедрения временных мер по организации дорожного движения.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Перекресток раздора: эксперимент на улице Светлой | B2 Reading | WeLearn",
+      "en": "Перекресток раздора: эксперимент на улице Светлой | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Статья о конфликте интересов между жителями района и автомобилистами в связи с установкой нового пешеходного перехода.",
+      "en": "Статья о конфликте интересов между жителями района и автомобилистами в связи с установкой нового пешеходного перехода."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

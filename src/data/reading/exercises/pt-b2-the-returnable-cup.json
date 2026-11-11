@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Revolução do Café: O Dilema do Depósito",
+      "en": "A Revolução do Café: O Dilema do Depósito"
+    },
+    "intro": {
+      "es": "Uma análise sobre a implementação de um sistema de copos retornáveis em uma cafeteria urbana e seus impactos inesperados na conveniência dos clientes.",
+      "en": "Uma análise sobre a implementação de um sistema de copos retornáveis em uma cafeteria urbana e seus impactos inesperados na conveniência dos clientes."
+    },
+    "mission": {
+      "es": "Leia o artigo sobre a cafeteria 'Grão Urbano' e responda às questões para avaliar sua compreensão sobre os desafios logísticos da sustentabilidade urbana.",
+      "en": "Leia o artigo sobre a cafeteria 'Grão Urbano' e responda às questões para avaliar sua compreensão sobre os desafios logísticos da sustentabilidade urbana."
+    },
+    "targetText": "A cafeteria Grão Urbano, situada no coração do centro histórico, recentemente adotou uma política de sustentabilidade ambiciosa: a substituição total de copos descartáveis por recipientes de vidro temperado mediante um depósito reembolsável. A iniciativa, batizada de 'Ciclo Consciente', visava reduzir drasticamente o volume de resíduos acumulados nas calçadas próximas após o horário de pico. Durante as primeiras semanas, o sucesso foi notável. Os clientes habituais, munidos de fichas de metal que representavam o valor do depósito, adaptaram-se rapidamente, criando uma rotina de devolução eficiente que transformou a dinâmica do estabelecimento.\n\nContudo, a realidade para os visitantes ocasionais revelou-se distinta. Mariana, uma turista que passava pela região, encontrou um obstáculo logístico inesperado ao tentar comprar seu café matinal. Sem saber da política, ela pagou o valor do depósito, mas percebeu tarde demais que precisaria retornar ao local antes do fechamento para recuperar seu dinheiro. Para quem não reside no bairro ou não possui planos de retornar àquela rua específica, o sistema de depósito deixou de ser um incentivo à sustentabilidade para se tornar uma taxa oculta e indesejada, gerando um sentimento de frustração que rapidamente se espalhou pelas redes sociais.\n\nO conflito atingiu seu ápice quando um grupo de empresários locais, preocupados com a queda no movimento de pedestres que preferiam evitar a burocracia do copo, exigiu uma revisão da medida. Eles argumentavam que, embora a intenção ambiental fosse louvável, a rigidez do processo punia injustamente os clientes de passagem. A gerência do Grão Urbano, por sua vez, defendia a eficácia do sistema, apontando que a quantidade de lixo plástico na praça central reduziu em quase metade, um feito que, segundo eles, justificava qualquer inconveniente menor para o público flutuante.\n\nEssa tensão entre o objetivo ecológico coletivo e a conveniência individual ilustra um dilema contemporâneo nas políticas urbanas. Enquanto a redução de resíduos é uma meta inegociável para a saúde do ambiente urbano, a implementação de soluções circulares exige uma flexibilidade que, muitas vezes, as empresas locais ainda não conseguem oferecer. A questão que permanece é se o custo da conveniência deve ser sempre priorizado em detrimento das metas ambientais globais, ou se existem modelos de transição que não alienem o consumidor ocasional.\n\nAo final do mês, a gerência decidiu manter o sistema, mas introduziu pontos de coleta em comércios parceiros, uma tentativa de mitigar o impacto negativo sentido pelos visitantes. No entanto, o problema persiste: a logística de retorno ainda exige um esforço que muitos consideram desproporcional. O 'Ciclo Consciente' tornou-se, assim, um símbolo de uma transição necessária, mas ainda imperfeita, onde a sustentabilidade caminha a passos lentos, frequentemente tropeçando nas complexidades da vida urbana moderna e na resistência daqueles que não estão dispostos a alterar seus hábitos de consumo.",
+    "wordCount": 450,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "reembolsável",
+        "lemma": "reembolsável",
+        "glosses": {
+          "es": "refundable",
+          "en": "refundable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ocasionais",
+        "lemma": "ocasionais",
+        "glosses": {
+          "es": "occasional",
+          "en": "occasional"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "louvável",
+        "lemma": "louvável",
+        "glosses": {
+          "es": "praiseworthy",
+          "en": "praiseworthy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienem",
+        "lemma": "alienem",
+        "glosses": {
+          "es": "alienate",
+          "en": "alienate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mitigar",
+        "lemma": "mitigar",
+        "glosses": {
+          "es": "mitigate",
+          "en": "mitigate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "desproporcional",
+        "lemma": "desproporcional",
+        "glosses": {
+          "es": "disproportionate",
+          "en": "disproportionate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 26.5,
+      "maxSentenceWords": 46,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dilemas da sustentabilidade."
+        },
+        {
+          "id": "a2",
+          "text": "O sucesso total do sistema."
+        },
+        {
+          "id": "a3",
+          "text": "A falência do Grão Urbano."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Essa tensão entre o objetivo ecológico coletivo e a conveniência individual ilustra um dilema contemporâneo nas políticas urbanas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o sistema causou frustração?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pela má qualidade."
+        },
+        {
+          "id": "a2",
+          "text": "Pela taxa oculta."
+        },
+        {
+          "id": "a3",
+          "text": "Pela falta de copos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o sistema de depósito deixou de ser um incentivo à sustentabilidade para se tornar uma taxa oculta e indesejada",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como os empresários locais reagiram?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Apoiaram a gerência."
+        },
+        {
+          "id": "a2",
+          "text": "Ignoraram o problema."
+        },
+        {
+          "id": "a3",
+          "text": "Pediram mudanças."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "um grupo de empresários locais, preocupados com a queda no movimento de pedestres que preferiam evitar a burocracia do copo, exigiu uma revisão da medida.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo de citar a turista Mariana?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar o problema dos visitantes."
+        },
+        {
+          "id": "a2",
+          "text": "Mostrar a falta de lixeiras na rua."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar o café da manhã servido."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Mariana, uma turista que passava pela região, encontrou um obstáculo logístico inesperado ao tentar comprar seu café matinal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e entusiasmado."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e equilibrado."
+        },
+        {
+          "id": "a3",
+          "text": "Irônico e desdenhoso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O 'Ciclo Consciente' tornou-se, assim, um símbolo de uma transição necessária, mas ainda imperfeita",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa 'mitigar' no contexto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aumentar a dor."
+        },
+        {
+          "id": "a2",
+          "text": "Ignorar o fato."
+        },
+        {
+          "id": "a3",
+          "text": "Reduzir o impacto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "tentativa de mitigar o impacto negativo sentido pelos visitantes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo defendendo se a responsabilidade pela sustentabilidade urbana deve recair sobre as empresas ou sobre os consumidores, utilizando exemplos do texto lido.",
+      "en": "Escreva um parágrafo argumentativo defendendo se a responsabilidade pela sustentabilidade urbana deve recair sobre as empresas ou sobre os consumidores, utilizando exemplos do texto lido."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o artigo sobre a cafeteria 'Grão Urbano' e responda às questões para avaliar sua compreensão sobre os desafios logísticos da sustentabilidade urbana.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Revolução do Café: O Dilema do Depósito | B2 Reading | WeLearn",
+      "en": "A Revolução do Café: O Dilema do Depósito | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise sobre a implementação de um sistema de copos retornáveis em uma cafeteria urbana e seus impactos inesperados na conveniência dos clientes.",
+      "en": "Uma análise sobre a implementação de um sistema de copos retornáveis em uma cafeteria urbana e seus impactos inesperados na conveniência dos clientes."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

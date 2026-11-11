@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-river-map",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Карта риска: цифровой барьер",
+      "en": "Карта риска: цифровой барьер"
+    },
+    "intro": {
+      "es": "В небольшом прибрежном городке Приморск возник спор вокруг способа информирования жителей о риске затопления. Местная инициативная группа столкнулась с техническими ограничениями официальных карт.",
+      "en": "В небольшом прибрежном городке Приморск возник спор вокруг способа информирования жителей о риске затопления. Местная инициативная группа столкнулась с техническими ограничениями официальных карт."
+    },
+    "mission": {
+      "es": "Прочитайте статью и ответьте на вопросы, чтобы понять конфликт между цифровизацией и доступностью информации.",
+      "en": "Прочитайте статью и ответьте на вопросы, чтобы понять конфликт между цифровизацией и доступностью информации."
+    },
+    "targetText": "Жители Приморска привыкли к близости реки, но недавние изменения климата сделали угрозу наводнения пугающе реальной. Городская администрация разработала интерактивную карту рисков, где зоны затопления выделены сложными градиентами цвета. Однако для многих пожилых горожан, пользующихся устаревшими моделями смартфонов, эти оттенки сливаются в неразборчивое пятно. Анна Петровна, глава местного комитета по безопасности, заметила, что на старых экранах критически важные зоны опасности выглядят так же, как безопасные береговые линии. Это создает иллюзию спокойствия там, где требуется немедленная эвакуация.\n\nКонфликт обострился на прошлой неделе во время открытого собрания. Анна Петровна предложила напечатать бумажные версии карт с высокой контрастностью и раздать их в каждом доме. Она аргументировала это тем, что в экстренной ситуации надежность бумаги выше, чем стабильность мобильной сети или яркость старого дисплея. Её позиция была встречена скептически представителем мэрии, господином Ивановым. Он настаивал, что печать — это архаизм, а будущее за динамическим обновлением данных в реальном времени, которое невозможно на бумаге.\n\nСитуация осложнилась, когда выяснилось, что бюджет на текущий год уже распределен. Мэрия утверждает, что перенаправление средств на типографские услуги замедлит обновление цифровой платформы. Анна Петровна возразила, что ценность данных ничтожна, если их невозможно прочитать в момент кризиса. Она подчеркнула, что доступность информации — это не вопрос технологий, а вопрос социальной ответственности, который игнорируется ради экономии на интерфейсах.\n\nНесмотря на логичность её доводов, совет проголосовал против выделения средств на печать. Аргументом стало то, что бумажная карта быстро устареет, вводя людей в заблуждение при изменении уровня воды. Однако волонтеры, вдохновленные идеей Анны, решили действовать самостоятельно. Они начали сбор средств через краудфандинг, чтобы напечатать черно-белые схемы с четкой штриховкой для обозначения опасных зон, которые легко читаются на любом устройстве и в печатном виде.\n\nК концу месяца группа собрала достаточную сумму для первого тиража. Мэрия пока сохраняет нейтралитет, официально не поддерживая инициативу, но и не запрещая её. В Приморске сложилась парадоксальная ситуация: город обладает передовой цифровой картой, которую никто не может прочитать, и бумажной альтернативой, созданной вопреки воле чиновников. Напряжение остается высоким, так как жители теперь должны сами решать, какому источнику информации доверять в случае реальной угрозы, что оставляет вопрос безопасности открытым.\n\nБолее того, возникший дуализм источников информации породил опасную неопределенность среди населения. Теперь соседи спорят, опираться ли на оперативные данные цифрового приложения, которые могут внезапно исчезнуть при сбое сети, или на статичную бумажную схему, рискующую стать неактуальной через час. Эта раздвоенность восприятия реальности лишь усиливает тревогу, превращая подготовку к стихийному бедствию в личный выбор каждого гражданина. В конечном итоге, отсутствие единства в методах оповещения ставит под угрозу слаженность действий при эвакуации, делая жителей Приморска заложниками собственного выбора в критический момент.",
+    "wordCount": 415,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "градиентами",
+        "lemma": "градиентами",
+        "glosses": {
+          "es": "gradients",
+          "en": "gradients"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "архаизм",
+        "lemma": "архаизм",
+        "glosses": {
+          "es": "archaism",
+          "en": "archaism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "краудфандинг",
+        "lemma": "краудфандинг",
+        "glosses": {
+          "es": "crowdfunding",
+          "en": "crowdfunding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "типографские",
+        "lemma": "типографские",
+        "glosses": {
+          "es": "typographic",
+          "en": "typographic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "штриховкой",
+        "lemma": "штриховкой",
+        "glosses": {
+          "es": "hatching/shading",
+          "en": "hatching/shading"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "парадоксальная",
+        "lemma": "парадоксальная",
+        "glosses": {
+          "es": "paradoxical",
+          "en": "paradoxical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:56:22.705Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Проблема доступности"
+        },
+        {
+          "id": "a2",
+          "text": "Технический прогресс"
+        },
+        {
+          "id": "a3",
+          "text": "Бюджет мэрии"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "доступность информации — это не вопрос технологий, а вопрос социальной ответственности",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему Анна Петровна предложила печатные карты?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Для экономии"
+        },
+        {
+          "id": "a2",
+          "text": "Из-за плохой видимости"
+        },
+        {
+          "id": "a3",
+          "text": "Для рекламы"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "на старых экранах критически важные зоны опасности выглядят так же, как безопасные береговые линии.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему мэрия отказалась печатать карты?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за стоимости"
+        },
+        {
+          "id": "a2",
+          "text": "Из-за лени"
+        },
+        {
+          "id": "a3",
+          "text": "Из-за устаревания"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "бумажная карта быстро устареет, вводя людей в заблуждение при изменении уровня воды.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какова цель волонтеров?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Помочь жителям"
+        },
+        {
+          "id": "a2",
+          "text": "Собрать деньги"
+        },
+        {
+          "id": "a3",
+          "text": "Свергнуть мэрию"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Они начали сбор средств через краудфандинг, чтобы напечатать черно-белые схемы с четкой штриховкой для обозначения опасных зон",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оптимистичный"
+        },
+        {
+          "id": "a2",
+          "text": "Критический"
+        },
+        {
+          "id": "a3",
+          "text": "Нейтральный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "город обладает передовой цифровой картой, которую никто не может прочитать, и бумажной альтернативой, созданной вопреки воле чиновников.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово 'архаизм' в контексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Дорогое"
+        },
+        {
+          "id": "a2",
+          "text": "Сложное"
+        },
+        {
+          "id": "a3",
+          "text": "Устаревшее"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Он настаивал, что печать — это архаизм, а будущее за динамическим обновлением данных",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое письмо мэру города, в котором вы предлагаете компромиссное решение для информирования жителей о наводнениях, сочетающее цифровые и аналоговые методы.",
+      "en": "Напишите короткое письмо мэру города, в котором вы предлагаете компромиссное решение для информирования жителей о наводнениях, сочетающее цифровые и аналоговые методы."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Прочитайте статью и ответьте на вопросы, чтобы понять конфликт между цифровизацией и доступностью информации.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:56:22.705Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Карта риска: цифровой барьер | B2 Reading | WeLearn",
+      "en": "Карта риска: цифровой барьер | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В небольшом прибрежном городке Приморск возник спор вокруг способа информирования жителей о риске затопления. Местная инициативная группа столкнулась с техническими ограничениями официальных карт.",
+      "en": "В небольшом прибрежном городке Приморск возник спор вокруг способа информирования жителей о риске затопления. Местная инициативная группа столкнулась с техническими ограничениями официальных карт."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:56:22.705Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-last-bus",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Последний рейс в Зареченске",
+      "en": "Последний рейс в Зареченске"
+    },
+    "intro": {
+      "es": "В небольшом городке Зареченск традиционный автобусный маршрут заменили системой микроавтобусов по вызову. Узнайте, как это решение разделило местных жителей.",
+      "en": "В небольшом городке Зареченск традиционный автобусный маршрут заменили системой микроавтобусов по вызову. Узнайте, как это решение разделило местных жителей."
+    },
+    "mission": {
+      "es": "Прочитайте текст и ответьте на вопросы, чтобы лучше понять социальные последствия транспортной реформы.",
+      "en": "Прочитайте текст и ответьте на вопросы, чтобы лучше понять социальные последствия транспортной реформы."
+    },
+    "targetText": "Жители Зареченска привыкли к тому, что ровно в двадцать один час последний автобус маршрута номер пять отходил от центральной площади. Это был не просто транспорт, а символ стабильности для тех, кто задерживался на работе или возвращался из соседнего города. Однако на прошлой неделе городская администрация объявила о полной замене рейсовых автобусов на систему «микроавтобус по требованию». Теперь, чтобы уехать домой вечером, горожане обязаны бронировать место через мобильное приложение за два часа до поездки. Для молодых специалистов, привыкших к цифровым сервисам, это обновление стало долгожданным шагом к эффективности, ведь теперь не нужно ждать транспорт на холодном ветру. Они с энтузиазмом отмечают, что микроавтобусы следуют по более гибким маршрутам, сокращая время в пути.\n\nОднако для пожилых жителей, таких как семидесятилетняя Анна Петровна, ситуация выглядит иначе. Она всю жизнь пользовалась автобусом, чтобы навещать внуков, но теперь чувствует себя отрезанной от мира. Анна Петровна не владеет смартфоном и не понимает, как работает система регистрации. Когда она попыталась объяснить водителю, что не может забронировать поездку, тот лишь вежливо сослался на новые правила, которые запрещают посадку без подтверждения в приложении. Конфликт поколений стал очевиден: комфорт одних обернулся социальной изоляцией для других, чьи привычки и возможности оказались за бортом цифровизации.\n\nГородские власти утверждают, что реформа была необходима из-за низкой заполняемости вечерних рейсов. По их словам, пустой автобус потреблял слишком много топлива, а новая система позволяет оптимизировать расходы муниципального бюджета. Тем не менее, общественные активисты указывают на то, что экономия не должна идти в ущерб доступности услуг для всех слоев населения. Они настаивают на создании «горячей линии» для тех, кто не пользуется интернетом, но мэрия пока не спешит выделять средства на дополнительный персонал.\n\nСитуация достигла пика, когда группа пенсионеров вышла на площадь с требованием вернуть хотя бы один регулярный рейс. В ответ администрация предложила компромисс: разрешить оплату проезда наличными непосредственно водителю, но только при наличии свободных мест. Это решение, однако, не гарантирует возможности уехать, превращая вечернюю поездку в лотерею. Анна Петровна, стоя на остановке, лишь грустно смотрит на проезжающие мимо микроавтобусы, в которых часто остаются пустые кресла, забронированные, но не занятые пассажирами.\n\nНапряжение в Зареченске сохраняется. Город разделился на тех, кто ценит прогресс, и тех, кто борется за право на привычную жизнь. Пока чиновники обсуждают графики и алгоритмы, реальные люди продолжают сталкиваться с последствиями поспешных перемен. Неясно, сможет ли технология когда-либо полноценно заменить человеческое участие в вопросах социальной справедливости, или же Зареченск навсегда останется городом, где прогресс оставил часть своих жителей на обочине.\n\nВозможно, этот конфликт станет поводом для создания волонтерского центра, где молодежь поможет пожилым людям освоить технологии, превращая цифровой разрыв в основу для укрепления городских связей.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "стабильности",
+        "lemma": "стабильности",
+        "glosses": {
+          "es": "stability",
+          "en": "stability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "забронировать",
+        "lemma": "забронировать",
+        "glosses": {
+          "es": "to book",
+          "en": "to book"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "цифровизации",
+        "lemma": "цифровизации",
+        "glosses": {
+          "es": "digitalization",
+          "en": "digitalization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "оптимизировать",
+        "lemma": "оптимизировать",
+        "glosses": {
+          "es": "to optimize",
+          "en": "to optimize"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромисс",
+        "lemma": "компромисс",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "справедливости",
+        "lemma": "справедливости",
+        "glosses": {
+          "es": "justice",
+          "en": "justice"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт из-за замены транспорта"
+        },
+        {
+          "id": "a2",
+          "text": "Транспортные инновации"
+        },
+        {
+          "id": "a3",
+          "text": "Проблемы цифровой грамотности пенсионеров"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Конфликт поколений стал очевиден: комфорт одних обернулся социальной изоляцией для других",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что должны делать жители для поездки вечером?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ждать на площади"
+        },
+        {
+          "id": "a2",
+          "text": "Забронировать место заранее"
+        },
+        {
+          "id": "a3",
+          "text": "Купить билет онлайн"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "горожане обязаны бронировать место через мобильное приложение за два часа до поездки",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Анна Петровна не может воспользоваться новым транспортом?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Автобусы всегда полные"
+        },
+        {
+          "id": "a2",
+          "text": "Она не хочет платить за проезд"
+        },
+        {
+          "id": "a3",
+          "text": "У нее нет смартфона"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Анна Петровна не владеет смартфоном и не понимает, как работает система регистрации",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какова цель упоминания властями низкой заполняемости рейсов?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оправдать экономию"
+        },
+        {
+          "id": "a2",
+          "text": "Улучшить экологию"
+        },
+        {
+          "id": "a3",
+          "text": "Увеличить число рейсов"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "реформа была необходима из-за низкой заполняемости вечерних рейсов. По их словам, пустой автобус потреблял слишком много топлива, а новая система позволяет оптимизировать расходы",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон автора в заключительном абзаце?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оптимистичный"
+        },
+        {
+          "id": "a2",
+          "text": "Критически-пессимистичный"
+        },
+        {
+          "id": "a3",
+          "text": "Нейтрально-аналитический"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Неясно, сможет ли технология когда-либо полноценно заменить человеческое участие в вопросах социальной справедливости, или же Зареченск навсегда останется городом, где прогресс оставил часть своих жителей на обочине.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «оптимизировать» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Увеличить расходы"
+        },
+        {
+          "id": "a2",
+          "text": "Полностью прекратить использование"
+        },
+        {
+          "id": "a3",
+          "text": "Сделать более эффективным"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "пустой автобус потреблял слишком много топлива, а новая система позволяет оптимизировать расходы муниципального бюджета",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое эссе (100 слов) о том, как технологии могут помочь или помешать пожилым людям в вашем городе.",
+      "en": "Напишите короткое эссе (100 слов) о том, как технологии могут помочь или помешать пожилым людям в вашем городе."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Прочитайте текст и ответьте на вопросы, чтобы лучше понять социальные последствия транспортной реформы.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Последний рейс в Зареченске | B2 Reading | WeLearn",
+      "en": "Последний рейс в Зареченске | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В небольшом городке Зареченск традиционный автобусный маршрут заменили системой микроавтобусов по вызову. Узнайте, как это решение разделило местных жителей.",
+      "en": "В небольшом городке Зареченск традиционный автобусный маршрут заменили системой микроавтобусов по вызову. Узнайте, как это решение разделило местных жителей."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

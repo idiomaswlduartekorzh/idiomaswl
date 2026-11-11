@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-new-crossing",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema da Travessia na Rua das Acácias",
+      "en": "O Dilema da Travessia na Rua das Acácias"
+    },
+    "intro": {
+      "es": "Um artigo de opinião sobre o conflito entre segurança dos pedestres e fluidez do tráfego urbano.",
+      "en": "Um artigo de opinião sobre o conflito entre segurança dos pedestres e fluidez do tráfego urbano."
+    },
+    "mission": {
+      "es": "Analise o texto para compreender as diferentes perspectivas sobre a implementação de uma nova faixa de pedestres.",
+      "en": "Analise o texto para compreender as diferentes perspectivas sobre a implementação de uma nova faixa de pedestres."
+    },
+    "targetText": "A Rua das Acácias, uma artéria vital que conecta o bairro residencial ao centro médico local, tornou-se o epicentro de uma disputa urbana acirrada. Moradores, liderados pela incansável Dona Helena, argumentam que a ausência de uma sinalização clara coloca em risco constante os pacientes idosos que frequentam a clínica diariamente. A proposta de instalar uma faixa de pedestres elevada gerou uma reação imediata de associações de motoristas, que temem que a medida cause congestionamentos crônicos em um trajeto já saturado. O debate, que antes se limitava a conversas informais, ganhou contornos mais sérios após um quase atropelamento de um jovem estudante próximo ao ponto de ônibus.\n\nDiante da pressão pública, a prefeitura autorizou um período de teste de trinta dias, instalando uma faixa provisória com tachões refletivos. Durante este mês, a rotina da vizinhança foi alterada. Enquanto os pedestres celebravam a nova sensação de segurança, os condutores relataram frustrações crescentes. O tempo de deslocamento aumentou significativamente, especialmente nos horários de pico, exacerbando a impaciência de quem utiliza a via para chegar ao trabalho. A divergência de experiências tornou-se evidente: para uns, a faixa era uma conquista civilizatória; para outros, um obstáculo arbitrário ao direito de ir e vir.\n\nOs dados colhidos pela secretaria de trânsito durante o período experimental foram inconclusivos. Embora o número de travessias seguras tenha aumentado, o índice de frenagens bruscas também subiu, sugerindo que muitos motoristas não respeitavam a sinalização até o último segundo. O engenheiro responsável, Ricardo Mendes, observou que a infraestrutura atual não comportava o fluxo intenso sem causar gargalos. Ele sugeriu que, sem uma reestruturação completa da via, a faixa apenas deslocaria o problema para o cruzamento seguinte, mantendo o risco latente para outros usuários.\n\nO desfecho do teste trouxe um impasse administrativo. Os moradores, sentindo-se vitoriosos com a redução da velocidade média dos carros, exigiram a permanência definitiva da faixa. Em contrapartida, os motoristas organizaram um abaixo-assinado solicitando a remoção imediata, alegando que o aumento no tempo de espera gerava poluição sonora e estresse desnecessário. A prefeitura, em um movimento cauteloso, decidiu manter a faixa, mas prometeu investir em semáforos inteligentes, uma solução que, segundo especialistas, ainda levaria meses para ser implementada.\n\nAtualmente, a Rua das Acácias permanece em um estado de tensão latente. A faixa, agora desgastada pelo uso, serve como um lembrete físico de que o espaço urbano é um recurso finito e disputado. O conflito não foi resolvido, apenas postergado. Enquanto os semáforos não chegam, pedestres e motoristas continuam a navegar por uma via onde a cortesia é escassa e a desconfiança mútua dita o ritmo do tráfego, deixando claro que a segurança viária exige mais do que apenas tinta no asfalto.",
+    "wordCount": 443,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "artéria",
+        "lemma": "artéria",
+        "glosses": {
+          "es": "main route or thoroughfare",
+          "en": "main route or thoroughfare"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acirrada",
+        "lemma": "acirrada",
+        "glosses": {
+          "es": "intense or fierce",
+          "en": "intense or fierce"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gargalos",
+        "lemma": "gargalos",
+        "glosses": {
+          "es": "bottlenecks",
+          "en": "bottlenecks"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock",
+          "en": "deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "postergado",
+        "lemma": "postergado",
+        "glosses": {
+          "es": "postponed",
+          "en": "postponed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "dormant or hidden",
+          "en": "dormant or hidden"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a ideia central do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A disputa sobre a instalação de uma faixa."
+        },
+        {
+          "id": "a2",
+          "text": "A ineficácia das leis de trânsito."
+        },
+        {
+          "id": "a3",
+          "text": "A necessidade de reformar o centro médico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A Rua das Acácias, uma artéria vital que conecta o bairro residencial ao centro médico local, tornou-se o epicentro de uma disputa urbana acirrada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que a prefeitura fez após o período de teste?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Removeu a faixa."
+        },
+        {
+          "id": "a2",
+          "text": "Manteve a faixa."
+        },
+        {
+          "id": "a3",
+          "text": "Instalou semáforos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A prefeitura, em um movimento cauteloso, decidiu manter a faixa, mas prometeu investir em semáforos inteligentes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que os motoristas se opuseram à faixa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pelo custo da obra."
+        },
+        {
+          "id": "a2",
+          "text": "Pela falta de visibilidade."
+        },
+        {
+          "id": "a3",
+          "text": "Pelo medo de atrasos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A proposta de instalar uma faixa de pedestres elevada gerou uma reação imediata de associações de motoristas, que temem que a medida cause congestionamentos crônicos",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do engenheiro ao mencionar os gargalos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sugerir que a faixa sozinha não resolve o problema."
+        },
+        {
+          "id": "a2",
+          "text": "Criticar a prefeitura."
+        },
+        {
+          "id": "a3",
+          "text": "Justificar a ineficácia da medida."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ele sugeriu que, sem uma reestruturação completa da via, a faixa apenas deslocaria o problema para o cruzamento seguinte, mantendo o risco latente para outros usuários.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no encerramento do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e inconclusivo."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro e informativo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O conflito não foi resolvido, apenas postergado. Enquanto os semáforos não chegam, pedestres e motoristas continuam a navegar por uma via onde a cortesia é escassa e a desconfiança mútua dita o ritmo do tráfego",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa dizer que o conflito foi 'postergado'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que foi resolvido."
+        },
+        {
+          "id": "a2",
+          "text": "Que foi intensificado pelo tempo."
+        },
+        {
+          "id": "a3",
+          "text": "Que foi adiado para depois."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O conflito não foi resolvido, apenas postergado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo defendendo se a prioridade em vias urbanas deve ser dada aos pedestres ou aos veículos, utilizando os conceitos de segurança e fluidez discutidos no texto.",
+      "en": "Escreva um parágrafo argumentativo defendendo se a prioridade em vias urbanas deve ser dada aos pedestres ou aos veículos, utilizando os conceitos de segurança e fluidez discutidos no texto."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analise o texto para compreender as diferentes perspectivas sobre a implementação de uma nova faixa de pedestres.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema da Travessia na Rua das Acácias | B2 Reading | WeLearn",
+      "en": "O Dilema da Travessia na Rua das Acácias | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um artigo de opinião sobre o conflito entre segurança dos pedestres e fluidez do tráfego urbano.",
+      "en": "Um artigo de opinião sobre o conflito entre segurança dos pedestres e fluidez do tráfego urbano."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Arquivo da Memória de Vila Verde",
+      "en": "O Arquivo da Memória de Vila Verde"
+    },
+    "intro": {
+      "es": "Uma história sobre a preservação da memória local e o direito à própria narrativa.",
+      "en": "Uma história sobre a preservação da memória local e o direito à própria narrativa."
+    },
+    "mission": {
+      "es": "Analisar a tensão entre a precisão histórica e a identidade pessoal em projetos de memória oral.",
+      "en": "Analisar a tensão entre a precisão histórica e a identidade pessoal em projetos de memória oral."
+    },
+    "targetText": "A Biblioteca Municipal de Vila Verde lançou o projeto 'Vozes do Tempo', dedicado a gravar depoimentos de moradores antigos. Dona Helena, uma professora aposentada de oitenta anos, foi a última a contribuir. Na semana seguinte, ela recebeu a transcrição do seu relato para revisão final antes da publicação digital. Ao ler o documento, porém, a frustração tomou conta de sua sala de estar. O estagiário responsável, um jovem acadêmico chamado Lucas, havia editado trechos cruciais sobre a greve ferroviária de décadas atrás, substituindo termos coloquiais por uma linguagem técnica e asséptica que descaracterizava sua fala.\n\nHelena marcou uma reunião urgente com o coordenador do projeto, o Sr. Arnaldo. Ela argumentou que a história oral não deveria ser apenas um registro factual, mas uma cápsula de identidade. 'Ao remover minhas expressões, você remove a minha humanidade', protestou ela. Arnaldo, por sua vez, defendeu a necessidade de padronização para que o arquivo fosse acessível a pesquisadores acadêmicos. Ele alegou que a clareza institucional era fundamental para a credibilidade do acervo, embora reconhecesse que a vivacidade do relato original tinha um valor inegável.\n\nO conflito atingiu o ápice quando Helena ameaçou retirar sua autorização de uso de imagem e voz. Ela não aceitaria ser apenas um objeto de estudo, despida de seu sotaque e de suas idiossincrasias linguísticas. A biblioteca enfrentava um dilema ético: priorizar a norma culta para fins de catalogação ou preservar a autenticidade emocional que dava sentido ao projeto. A tensão era palpável, pois a perda do depoimento de Helena, uma das figuras mais respeitadas da comunidade, comprometeria a integridade do arquivo.\n\nApós horas de debate, chegaram a um consenso parcial. O texto publicado conteria uma nota explicativa sobre a preservação da oralidade, mantendo as expressões originais de Helena, enquanto um glossário técnico seria anexado ao final. No entanto, Helena sentiu que a essência de seu depoimento ainda estava sob vigilância institucional. Ela percebeu que, no fundo, a tentativa de capturar a história sempre envolveria uma forma de domesticação, uma poda necessária que ela nunca concordaria plenamente em aceitar.\n\nO projeto seguiu adiante, mas a relação entre a biblioteca e os moradores mudou. O caso de Helena tornou-se um precedente para outros colaboradores, que passaram a exigir o controle total sobre a edição de suas falas. O arquivo de Vila Verde tornou-se um mosaico de vozes cruas e notas explicativas, um monumento à dificuldade de traduzir a vida vivida para o papel. A biblioteca aprendeu que a memória não é um dado estático, mas um campo de batalha constante entre quem conta a história e quem a organiza para a posteridade.",
+    "wordCount": 431,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "asséptica",
+        "lemma": "asséptica",
+        "glosses": {
+          "es": "lacking emotion or character; sterile",
+          "en": "lacking emotion or character; sterile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "idiossincrasias",
+        "lemma": "idiossincrasias",
+        "glosses": {
+          "es": "individual peculiarities or habits",
+          "en": "individual peculiarities or habits"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpável",
+        "lemma": "palpável",
+        "glosses": {
+          "es": "noticeable or intense",
+          "en": "noticeable or intense"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "domesticação",
+        "lemma": "domesticação",
+        "glosses": {
+          "es": "the act of taming or making something less wild",
+          "en": "the act of taming or making something less wild"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "precedente",
+        "lemma": "precedente",
+        "glosses": {
+          "es": "an earlier event used as a guide",
+          "en": "an earlier event used as a guide"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "posteridade",
+        "lemma": "posteridade",
+        "glosses": {
+          "es": "future generations",
+          "en": "future generations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.7,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A disputa sobre a edição da fala de Helena."
+        },
+        {
+          "id": "a2",
+          "text": "A impossibilidade de financiamento externo para a continuidade do projeto de pesquisa."
+        },
+        {
+          "id": "a3",
+          "text": "A divergência entre os pesquisadores sobre a metodologia de coleta de dados orais."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ao ler o documento, porém, a frustração tomou conta de sua sala de estar. O estagiário responsável, um jovem acadêmico chamado Lucas, havia editado trechos cruciais",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que a biblioteca propôs como solução inicial?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A censura."
+        },
+        {
+          "id": "a2",
+          "text": "A padronização técnica."
+        },
+        {
+          "id": "a3",
+          "text": "A mudança completa da estrutura narrativa para atrair um público mais jovem."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Arnaldo, por sua vez, defendeu a necessidade de padronização para que o arquivo fosse acessível a pesquisadores acadêmicos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como Helena se sentiu ao final do processo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Grata."
+        },
+        {
+          "id": "a2",
+          "text": "Feliz."
+        },
+        {
+          "id": "a3",
+          "text": "Ainda em desacordo com o método."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "No entanto, Helena sentiu que a essência de seu depoimento ainda estava sob vigilância institucional.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi a intenção do autor ao descrever o arquivo como um 'mosaico de vozes cruas'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Enfatizar a natureza preservada e autêntica do material final."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar a falta de preparo técnico dos estagiários envolvidos na transcrição das entrevistas."
+        },
+        {
+          "id": "a3",
+          "text": "Sugerir que o acervo carecia de uma curadoria profissional para organizar as informações coletadas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O arquivo de Vila Verde tornou-se um mosaico de vozes cruas e notas explicativas, um monumento à dificuldade de traduzir a vida vivida para o papel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Formal."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Irônico e satírico sobre as instituições públicas."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A biblioteca aprendeu que a memória não é um dado estático, mas um campo de batalha constante entre quem conta a história e quem a organiza para a posteridade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'asséptica' no contexto da fala de Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Higiênica."
+        },
+        {
+          "id": "a2",
+          "text": "Impecável."
+        },
+        {
+          "id": "a3",
+          "text": "Sem vida ou personalidade."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "substituindo termos coloquiais por uma linguagem técnica e asséptica que descaracterizava sua fala.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo discutindo se a preservação da identidade cultural deve prevalecer sobre a padronização acadêmica em arquivos históricos.",
+      "en": "Escreva um parágrafo argumentativo discutindo se a preservação da identidade cultural deve prevalecer sobre a padronização acadêmica em arquivos históricos."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analisar a tensão entre a precisão histórica e a identidade pessoal em projetos de memória oral.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Arquivo da Memória de Vila Verde | B2 Reading | WeLearn",
+      "en": "O Arquivo da Memória de Vila Verde | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma história sobre a preservação da memória local e o direito à própria narrativa.",
+      "en": "Uma história sobre a preservação da memória local e o direito à própria narrativa."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

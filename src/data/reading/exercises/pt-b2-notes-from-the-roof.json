@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Proposta de Energia Solar no Edifício Horizonte",
+      "en": "Proposta de Energia Solar no Edifício Horizonte"
+    },
+    "intro": {
+      "es": "Leia o e-mail enviado por um morador aos vizinhos sobre a instalação de painéis solares e analise as tensões entre proprietários e inquilinos.",
+      "en": "Leia o e-mail enviado por um morador aos vizinhos sobre a instalação de painéis solares e analise as tensões entre proprietários e inquilinos."
+    },
+    "mission": {
+      "es": "Identifique os conflitos de interesse e a lógica financeira apresentada na proposta.",
+      "en": "Identifique os conflitos de interesse e a lógica financeira apresentada na proposta."
+    },
+    "targetText": "Prezados vizinhos do Edifício Horizonte, escrevo para formalizar a proposta de instalação de painéis solares no nosso telhado comum. Após consultar especialistas, constatamos que a área disponível é ideal para captar radiação solar, o que reduziria drasticamente a conta de luz das áreas comuns e, potencialmente, das unidades individuais. A tecnologia é eficiente e a manutenção, mínima. No entanto, para viabilizar o investimento inicial, precisamos de um aporte financeiro significativo. Minha sugestão é que os proprietários arquem com o custo de instalação, enquanto os inquilinos pagariam uma taxa mensal de manutenção, compensada pela redução direta em seus gastos de energia. Essa estrutura visa equilibrar o ônus do investimento com o benefício imediato do uso.\n\nContudo, a reunião do conselho de ontem revelou impasses. A Sra. Helena, proprietária do 402, argumenta que, como o valorização do imóvel será exclusiva dos donos, a taxa de manutenção para inquilinos é injusta, pois eles não teriam retorno sobre o capital investido a longo prazo. Por outro lado, o inquilino do 201, Sr. Marcos, defende que, se os proprietários não baixarem o aluguel para compensar o investimento inicial, o custo total para quem aluga será superior ao atual. Ele sugere que a economia gerada seja integralmente revertida para abater a parcela do investimento, mas os proprietários receiam que, ao saírem do imóvel, os inquilinos deixem de pagar a dívida, deixando o prejuízo para quem fica.\n\nEssa divergência cria um dilema logístico e contratual. Se não houver um consenso sobre a divisão dos custos, o projeto será arquivado por falta de quórum. A proposta atual tenta ser um meio-termo, mas reconheço que a percepção de justiça varia conforme a posição de cada um no contrato de locação. O investimento é coletivo, mas o retorno financeiro é interpretado de formas conflitantes, dependendo da perspectiva de quem habita e de quem detém o título de propriedade.\n\nEstamos diante de uma oportunidade de modernização que esbarra na burocracia das relações imobiliárias. A sustentabilidade é um objetivo comum, mas a viabilidade econômica depende de um acordo sobre quem assume o risco do capital. Se os proprietários exigirem que os inquilinos paguem pela instalação, a rotatividade do prédio pode tornar o modelo insustentável. Se os proprietários assumirem tudo, o retorno sobre o investimento demorará anos para ser recuperado.\n\nEspero que possamos debater este tema com serenidade na próxima assembleia. Sem um compromisso mútuo, a energia solar continuará sendo um sonho distante, enquanto nossas contas de luz seguem subindo. A decisão final está nas mãos de todos, mas o tempo para a aprovação dos subsídios governamentais está se esgotando rapidamente. Precisamos decidir se o bem-estar coletivo e a eficiência energética valem o esforço de renegociar nossos contratos individuais de moradia.",
+    "wordCount": 448,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "aporte",
+        "lemma": "aporte",
+        "glosses": {
+          "es": "financial contribution or investment",
+          "en": "financial contribution or investment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ônus",
+        "lemma": "ônus",
+        "glosses": {
+          "es": "burden or responsibility",
+          "en": "burden or responsibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasses",
+        "lemma": "impasses",
+        "glosses": {
+          "es": "deadlocks or stalemates",
+          "en": "deadlocks or stalemates"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quórum",
+        "lemma": "quórum",
+        "glosses": {
+          "es": "minimum number of members required to make decisions",
+          "en": "minimum number of members required to make decisions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rotatividade",
+        "lemma": "rotatividade",
+        "glosses": {
+          "es": "turnover or frequency of change",
+          "en": "turnover or frequency of change"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "subsídios",
+        "lemma": "subsídios",
+        "glosses": {
+          "es": "financial aid or government grants",
+          "en": "financial aid or government grants"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.7,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:28:39.722Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o objetivo central do e-mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Propor um plano de energia solar."
+        },
+        {
+          "id": "a2",
+          "text": "Criticar a gestão do condomínio."
+        },
+        {
+          "id": "a3",
+          "text": "Reclamar do aumento das contas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "escrevo para formalizar a proposta de instalação de painéis solares no nosso telhado comum.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que o Sr. Marcos sugere?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que os proprietários paguem tudo sozinhos."
+        },
+        {
+          "id": "a2",
+          "text": "Que a economia pague o investimento."
+        },
+        {
+          "id": "a3",
+          "text": "Que o projeto seja cancelado imediatamente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ele sugere que a economia gerada seja integralmente revertida para abater a parcela do investimento",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que os proprietários temem o modelo proposto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pelo custo da manutenção anual."
+        },
+        {
+          "id": "a2",
+          "text": "Pela falta de apoio do conselho."
+        },
+        {
+          "id": "a3",
+          "text": "Pela instabilidade dos inquilinos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "os proprietários receiam que, ao saírem do imóvel, os inquilinos deixem de pagar a dívida, deixando o prejuízo para quem fica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual a intenção do autor ao citar a Sra. Helena e o Sr. Marcos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar os conflitos de interesses."
+        },
+        {
+          "id": "a2",
+          "text": "Defender a posição dos inquilinos."
+        },
+        {
+          "id": "a3",
+          "text": "Atacar a gestão do condomínio atual."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Contudo, a reunião do conselho de ontem revelou impasses.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o autor descreve a situação atual do projeto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como uma solução simples e imediata."
+        },
+        {
+          "id": "a2",
+          "text": "Como um dilema logístico complexo."
+        },
+        {
+          "id": "a3",
+          "text": "Como um problema sem nenhuma solução."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Essa divergência cria um dilema logístico e contratual.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'ônus' no contexto do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A vantagem do investimento."
+        },
+        {
+          "id": "a2",
+          "text": "A taxa de condomínio mensal."
+        },
+        {
+          "id": "a3",
+          "text": "O peso financeiro da tarefa."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Essa estrutura visa equilibrar o ônus do investimento com o benefício imediato do uso.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentando se você concorda com a divisão de custos proposta pelo autor ou se sugere uma alternativa mais justa para proprietários e inquilinos.",
+      "en": "Escreva um parágrafo argumentando se você concorda com a divisão de custos proposta pelo autor ou se sugere uma alternativa mais justa para proprietários e inquilinos."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identifique os conflitos de interesse e a lógica financeira apresentada na proposta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:28:39.722Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Proposta de Energia Solar no Edifício Horizonte | B2 Reading | WeLearn",
+      "en": "Proposta de Energia Solar no Edifício Horizonte | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia o e-mail enviado por um morador aos vizinhos sobre a instalação de painéis solares e analise as tensões entre proprietários e inquilinos.",
+      "en": "Leia o e-mail enviado por um morador aos vizinhos sobre a instalação de painéis solares e analise as tensões entre proprietários e inquilinos."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:28:39.722Z"
+  }
+}

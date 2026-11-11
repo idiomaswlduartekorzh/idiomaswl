@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Солнечная энергия: общее благо или финансовая ловушка?",
+      "en": "Солнечная энергия: общее благо или финансовая ловушка?"
+    },
+    "intro": {
+      "es": "Прочитайте электронное письмо от председателя совета жильцов и ответьте на вопросы, чтобы лучше понять конфликт интересов в многоквартирном доме.",
+      "en": "Прочитайте электронное письмо от председателя совета жильцов и ответьте на вопросы, чтобы лучше понять конфликт интересов в многоквартирном доме."
+    },
+    "mission": {
+      "es": "Проанализируйте аргументы сторон и определите скрытые мотивы участников дискуссии.",
+      "en": "Проанализируйте аргументы сторон и определите скрытые мотивы участников дискуссии."
+    },
+    "targetText": "Уважаемые жильцы дома «Зелёный квартал», я пишу вам от имени инициативной группы по установке солнечных панелей на крыше нашего здания. Мы провели предварительный анализ, который показывает, что переход на возобновляемую энергию позволит сократить расходы на освещение подъездов и работу лифтов. Это не только экологичный шаг, но и долгосрочная инвестиция в капитализацию нашей недвижимости. Тем не менее, проект требует значительных первоначальных вложений, которые необходимо распределить между собственниками квартир. Мы предлагаем систему, при которой владельцы жилья покрывают основную часть расходов, а арендаторы вносят фиксированный ежемесячный взнос в фонд обслуживания оборудования. \n\nСитуация осложняется тем, что собственники, проживающие в своих квартирах, видят в этом прямую выгоду для своего бюджета, в то время как владельцы, сдающие жилье в аренду, опасаются снижения доходности. Арендаторы же выразили обеспокоенность тем, что их ежемесячные платежи могут вырасти, несмотря на обещания экономии. Возникает закономерный вопрос: справедливо ли требовать участия от тех, кто не владеет недвижимостью и может съехать через полгода? Мы столкнулись с тем, что некоторые жильцы настаивают на полном освобождении арендаторов от участия в сборе, что перекладывает всё финансовое бремя на плечи владельцев. \n\nС другой стороны, если мы не воспользуемся текущей государственной программой субсидирования, стоимость проекта в будущем возрастет в разы. Я призываю всех осознать, что отказ от модернизации сегодня — это сознательный выбор в пользу роста коммунальных платежей завтра. Мы находимся в точке выбора, где краткосрочная экономия одного жильца может обернуться общими убытками для всего товарищества. Мне кажется, что поиск компромисса возможен через дифференцированную систему оплаты, зависящую от срока аренды и площади квартиры, но пока консенсус кажется недостижимым. \n\nНаш сосед, господин Петров, владелец трёх квартир, уже заявил, что заблокирует голосование, если его расходы не будут компенсированы налоговыми вычетами, которые он пока не может получить. Его позиция парализует работу совета, так как без его голосов мы не наберем кворум. Это создает опасный прецедент, когда личные амбиции одного человека перевешивают интересы всего дома. Мы оказались в ситуации, когда технический прогресс упирается в бюрократические и межличностные барьеры, которые мы сами же и создали. \n\nВ ближайшую пятницу состоится собрание, где мы должны принять окончательное решение. Если мы не достигнем согласия, проект будет заморожен на неопределенный срок, а крыша так и останется неиспользуемым пространством. Я прошу каждого из вас прийти с конкретными предложениями, а не просто с критикой. Нам нужно решить, что важнее: сохранить текущий статус-кво или рискнуть ради общего будущего, даже если цена этого выбора кажется сегодня непосильной для некоторых из нас.\n\nОднако даже при достижении консенсуса остается риск технической несовместимости старых коммуникаций дома с современными панелями. Поспешный монтаж без полной модернизации сетей может привести к авариям, которые аннулируют всю ожидаемую выгоду.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "капитализацию",
+        "lemma": "капитализацию",
+        "glosses": {
+          "es": "increase in asset value",
+          "en": "increase in asset value"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "арендаторы",
+        "lemma": "арендаторы",
+        "glosses": {
+          "es": "tenants",
+          "en": "tenants"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дифференцированную",
+        "lemma": "дифференцированную",
+        "glosses": {
+          "es": "differentiated",
+          "en": "differentiated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "консенсус",
+        "lemma": "консенсус",
+        "glosses": {
+          "es": "consensus",
+          "en": "consensus"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "прецедент",
+        "lemma": "прецедент",
+        "glosses": {
+          "es": "precedent",
+          "en": "precedent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "статус-кво",
+        "lemma": "статус-кво",
+        "glosses": {
+          "es": "current state of affairs",
+          "en": "current state of affairs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.3,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:44:46.858Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема письма?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт интересов жильцов."
+        },
+        {
+          "id": "a2",
+          "text": "Спор о тарифах."
+        },
+        {
+          "id": "a3",
+          "text": "План установки панелей."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Мы столкнулись с тем, что некоторые жильцы настаивают на полном освобождении арендаторов от участия в сборе, что перекладывает всё финансовое бремя на плечи владельцев.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему господин Петров против проекта?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за стоимости."
+        },
+        {
+          "id": "a2",
+          "text": "Из-за отсутствия вычетов."
+        },
+        {
+          "id": "a3",
+          "text": "Из-за недоверия к совету."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "владелец трёх квартир, уже заявил, что заблокирует голосование, если его расходы не будут компенсированы налоговыми вычетами, которые он пока не может получить.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Что произойдет, если соглашение не будет достигнуто?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Цены вырастут."
+        },
+        {
+          "id": "a2",
+          "text": "Жильцы переедут."
+        },
+        {
+          "id": "a3",
+          "text": "Проект отложат."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Если мы не достигнем согласия, проект будет заморожен на неопределенный срок",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Для чего автор пишет это письмо?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы проинформировать всех о собрании и призвать к поиску компромисса."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы обвинить господина Петрова в срыве важного для дома проекта."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы убедить арендаторов платить больше ради общего блага."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Я прошу каждого из вас прийти с конкретными предложениями, а не просто с критикой.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Тревожный."
+        },
+        {
+          "id": "a2",
+          "text": "Деловой и конструктивный."
+        },
+        {
+          "id": "a3",
+          "text": "Агрессивный и обвинительный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Мне кажется, что поиск компромисса возможен через дифференцированную систему оплаты, зависящую от срока аренды и площади квартиры",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «прецедент» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Юридическое препятствие."
+        },
+        {
+          "id": "a2",
+          "text": "Финансовая ошибка жильцов."
+        },
+        {
+          "id": "a3",
+          "text": "Случай, ставший примером."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Это создает опасный прецедент, когда личные амбиции одного человека перевешивают интересы всего дома.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите аргументированный ответ от лица арендатора, который не согласен платить за установку солнечных панелей, объясняя свою позицию с точки зрения долгосрочности инвестиций и прав арендатора.",
+      "en": "Напишите аргументированный ответ от лица арендатора, который не согласен платить за установку солнечных панелей, объясняя свою позицию с точки зрения долгосрочности инвестиций и прав арендатора."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализируйте аргументы сторон и определите скрытые мотивы участников дискуссии.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:44:46.858Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Солнечная энергия: общее благо или финансовая ловушка? | B2 Reading | WeLearn",
+      "en": "Солнечная энергия: общее благо или финансовая ловушка? | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте электронное письмо от председателя совета жильцов и ответьте на вопросы, чтобы лучше понять конфликт интересов в многоквартирном доме.",
+      "en": "Прочитайте электронное письмо от председателя совета жильцов и ответьте на вопросы, чтобы лучше понять конфликт интересов в многоквартирном доме."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:44:46.858Z"
+  }
+}

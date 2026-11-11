@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Silêncio da Sala de Espera",
+      "en": "O Silêncio da Sala de Espera"
+    },
+    "intro": {
+      "es": "Uma crônica sobre a transição digital em uma clínica de bairro e os dilemas da exclusão tecnológica.",
+      "en": "Uma crônica sobre a transição digital em uma clínica de bairro e os dilemas da exclusão tecnológica."
+    },
+    "mission": {
+      "es": "Analisar as implicações sociais da modernização de serviços de saúde e o impacto na acessibilidade dos pacientes.",
+      "en": "Analisar as implicações sociais da modernização de serviços de saúde e o impacto na acessibilidade dos pacientes."
+    },
+    "targetText": "A Clínica Santa Cecília, situada no coração de um bairro operário, decidiu implementar um sistema de mensagens instantâneas para gerir o fluxo de pacientes. A ideia era substituir a aglomeração de pessoas na recepção por avisos digitais enviados diretamente aos telefones. Dona Helena, uma senhora de setenta anos que ainda utiliza um aparelho celular de teclas sem acesso à internet, observava o movimento com um misto de confusão e resignação. Para ela, a sala de espera, antes um espaço de trocas e conversas, tornara-se um ambiente silencioso, onde as pessoas apenas olhavam para baixo, aguardando um sinal vibratório que nunca chegaria para ela.\n\nO conflito emergiu quando o Dr. Arnaldo, o clínico geral, chamou o próximo paciente através do painel eletrônico. O sistema, contudo, não disparou o alerta para o senhor Jorge, um pedreiro que deixara o telefone descarregado na obra. Enquanto os outros pacientes recebiam suas notificações e se dirigiam aos consultórios com agilidade, Jorge permanecia sentado, observando o relógio de parede. A eficiência técnica, celebrada pela administração como uma vitória contra as filas, revelou-se uma barreira invisível para aqueles que não possuíam a conectividade necessária para navegar no novo protocolo.\n\nHelena, percebendo a aflição de Jorge, decidiu intervir. Ela caminhou até o balcão de atendimento, onde a recepcionista, concentrada em uma tela de computador, parecia alheia ao desconforto dos pacientes. A senhora questionou por que o sistema não considerava as pessoas que, como Jorge, não tinham como receber a mensagem. A funcionária respondeu que a política da clínica era rigorosa e que o sistema era o único meio oficial de convocação. O argumento da clínica era claro: a modernização visava otimizar o tempo de todos, reduzindo o caos administrativo que antes dominava o saguão.\n\nContudo, a otimização trouxe uma consequência inesperada. O ambiente, antes caótico, era agora um local de isolamento. O Dr. Arnaldo, ao sair para buscar um prontuário, encontrou Jorge ainda ali, frustrado e prestes a desistir da consulta. O médico, ao entender a falha na comunicação, sentiu um desconforto ético. Ele percebeu que, embora o sistema funcionasse para a maioria, ele criava uma exclusão silenciosa para os mais vulneráveis, transformando a tecnologia em um filtro de acesso que punia a falta de recursos materiais.\n\nAo final da tarde, a sala de espera estava quase vazia, mas o sentimento de exclusão permanecia. A clínica alcançou sua meta de agilidade, mas ao custo de perder o contato humano e a flexibilidade necessária para lidar com as exceções. O silêncio que reinava na sala de espera não era de paz, mas de uma distância intransponível entre o progresso tecnológico e a realidade social de seus pacientes, deixando uma questão em aberto sobre quem realmente o serviço de saúde deveria acolher.",
+    "wordCount": 452,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "aglomeração",
+        "lemma": "aglomeração",
+        "glosses": {
+          "es": "crowding",
+          "en": "crowding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resignação",
+        "lemma": "resignação",
+        "glosses": {
+          "es": "resignation",
+          "en": "resignation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conectividade",
+        "lemma": "conectividade",
+        "glosses": {
+          "es": "connectivity",
+          "en": "connectivity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "protocolo",
+        "lemma": "protocolo",
+        "glosses": {
+          "es": "protocol",
+          "en": "protocol"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "otimizar",
+        "lemma": "otimizar",
+        "glosses": {
+          "es": "to optimize",
+          "en": "to optimize"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intransponível",
+        "lemma": "intransponível",
+        "glosses": {
+          "es": "insurmountable",
+          "en": "insurmountable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.7,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A exclusão social digital."
+        },
+        {
+          "id": "a2",
+          "text": "A implementação de novas políticas de infraestrutura urbana."
+        },
+        {
+          "id": "a3",
+          "text": "A análise detalhada sobre a gestão de recursos em hospitais."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a modernização visava otimizar o tempo de todos, reduzindo o caos administrativo que antes dominava o saguão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o senhor Jorge não foi atendido?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ele esqueceu o documento."
+        },
+        {
+          "id": "a2",
+          "text": "O celular estava sem carga."
+        },
+        {
+          "id": "a3",
+          "text": "O sistema de senhas estava em manutenção."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o senhor Jorge, um pedreiro que deixara o telefone descarregado na obra.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como a recepcionista encara as queixas dos pacientes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Com empatia e ajuda."
+        },
+        {
+          "id": "a2",
+          "text": "Com raiva e agressão."
+        },
+        {
+          "id": "a3",
+          "text": "Com indiferença técnica."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a recepcionista, concentrada em uma tela de computador, parecia alheia ao desconforto dos pacientes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi a intenção do autor ao descrever o silêncio na sala?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticar a perda de humanização no atendimento clínico."
+        },
+        {
+          "id": "a2",
+          "text": "Enfatizar a importância da celeridade no fluxo de pacientes nas unidades de saúde."
+        },
+        {
+          "id": "a3",
+          "text": "Sugerir que a tecnologia promove uma integração mais harmoniosa entre os cidadãos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O silêncio que reinava na sala de espera não era de paz, mas de uma distância intransponível entre o progresso tecnológico e a realidade social",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e alegre."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Irônico e sarcástico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ele percebeu que, embora o sistema funcionasse para a maioria, ele criava uma exclusão silenciosa para os mais vulneráveis",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'intransponível' no contexto final?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que pode ser atravessado."
+        },
+        {
+          "id": "a2",
+          "text": "Que é fácil de resolver."
+        },
+        {
+          "id": "a3",
+          "text": "Que não pode ser superado."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "uma distância intransponível entre o progresso tecnológico e a realidade social de seus pacientes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo discutindo se a tecnologia deve ser obrigatória em serviços públicos ou se deve coexistir com métodos tradicionais para garantir a inclusão.",
+      "en": "Escreva um parágrafo argumentativo discutindo se a tecnologia deve ser obrigatória em serviços públicos ou se deve coexistir com métodos tradicionais para garantir a inclusão."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analisar as implicações sociais da modernização de serviços de saúde e o impacto na acessibilidade dos pacientes.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Silêncio da Sala de Espera | B2 Reading | WeLearn",
+      "en": "O Silêncio da Sala de Espera | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma crônica sobre a transição digital em uma clínica de bairro e os dilemas da exclusão tecnológica.",
+      "en": "Uma crônica sobre a transição digital em uma clínica de bairro e os dilemas da exclusão tecnológica."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

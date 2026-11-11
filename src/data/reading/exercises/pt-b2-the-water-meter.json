@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-water-meter",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema dos Hidrômetros Inteligentes em Vila Serena",
+      "en": "O Dilema dos Hidrômetros Inteligentes em Vila Serena"
+    },
+    "intro": {
+      "es": "Uma análise sobre a implementação de novas tecnologias de monitoramento hídrico e os conflitos habitacionais resultantes.",
+      "en": "Uma análise sobre a implementação de novas tecnologias de monitoramento hídrico e os conflitos habitacionais resultantes."
+    },
+    "mission": {
+      "es": "Leia o texto abaixo e responda às questões para avaliar sua compreensão sobre os desafios da infraestrutura urbana e a responsabilidade compartilhada no consumo de água.",
+      "en": "Leia o texto abaixo e responda às questões para avaliar sua compreensão sobre os desafios da infraestrutura urbana e a responsabilidade compartilhada no consumo de água."
+    },
+    "targetText": "A prefeitura de Vila Serena inaugurou recentemente o projeto 'Água Viva', instalando hidrômetros inteligentes em diversos edifícios residenciais. O objetivo declarado é detectar vazamentos ocultos em tempo real, enviando alertas automáticos para os gestores prediais. Na prática, a tecnologia revelou uma realidade alarmante: o desperdício é constante, mas a responsabilidade pela correção é um labirinto jurídico e estrutural. A síndica do Edifício Horizonte, Beatriz, foi a primeira a receber notificações de um consumo excessivo durante a madrugada, sugerindo um vazamento severo nas tubulações internas de várias unidades.\n\nO conflito surgiu quando Beatriz tentou cobrar os moradores pelas reformas necessárias. Muitos inquilinos, como o estudante Ricardo, argumentaram que a responsabilidade recai sobre o proprietário, pois o problema reside em canos antigos instalados dentro das paredes, inacessíveis sem uma reforma estrutural completa. Ricardo, que aluga seu apartamento, recusou-se a arcar com os custos de uma obra que valorizaria o imóvel de terceiros, enquanto o proprietário, vivendo em outra cidade, alegou que o contrato de locação transfere a manutenção ordinária ao ocupante. A tecnologia, embora eficiente em apontar o problema, exacerbou a tensão entre quem paga a conta e quem detém o poder de decisão sobre a manutenção.\n\nO sistema de telemetria mostrou que o desperdício no Edifício Horizonte superava o consumo de um pequeno comércio local. Beatriz, pressionada pela prefeitura para reduzir o desperdício sob pena de multas pesadas, viu-se em um impasse. Ela não possui autoridade para intervir nos apartamentos privados sem o consentimento dos proprietários, e a prefeitura, apesar de fornecer os dados, não oferece subsídios para a modernização das tubulações obsoletas. O monitoramento inteligente transformou o que era uma negligência invisível em uma crise pública imediata, expondo a fragilidade de prédios que não foram projetados para a eficiência moderna.\n\nAlguns especialistas argumentam que a tecnologia é um avanço necessário, pois a transparência dos dados é o primeiro passo para a mudança de comportamento. Contudo, a situação em Vila Serena demonstra que a inovação técnica, isolada de políticas de incentivo ao retrofit, pode penalizar injustamente os inquilinos. A prefeitura defende que o monitoramento é um sucesso, pois o volume total de água desperdiçada na cidade diminuiu após a instalação dos aparelhos. Entretanto, essa métrica ignora os danos financeiros e o desgaste nas relações entre vizinhos que agora vivem sob a vigilância constante de um contador digital.\n\nO caso de Vila Serena permanece sem uma resolução definitiva. Enquanto a prefeitura celebra a economia de recursos, o Edifício Horizonte continua a perder água através de paredes envelhecidas. O impasse revela uma falha sistêmica: o monitoramento inteligente é uma ferramenta poderosa, mas ineficaz quando o tecido urbano é composto por estruturas que dependem de investimentos que ninguém deseja realizar. A tecnologia, ironicamente, provou que a conservação da água é menos um problema de leitura de dados e mais um desafio de justiça habitacional e responsabilidade compartilhada.",
+    "wordCount": 473,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "hidrômetros",
+        "lemma": "hidrômetros",
+        "glosses": {
+          "es": "water meters",
+          "en": "water meters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "labirinto",
+        "lemma": "labirinto",
+        "glosses": {
+          "es": "maze or complex situation",
+          "en": "maze or complex situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inquilinos",
+        "lemma": "inquilinos",
+        "glosses": {
+          "es": "tenants",
+          "en": "tenants"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "telemetria",
+        "lemma": "telemetria",
+        "glosses": {
+          "es": "remote measurement technology",
+          "en": "remote measurement technology"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retrofit",
+        "lemma": "retrofit",
+        "glosses": {
+          "es": "modernization of old structures",
+          "en": "modernization of old structures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsoletas",
+        "lemma": "obsoletas",
+        "glosses": {
+          "es": "outdated or obsolete",
+          "en": "outdated or obsolete"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 23.6,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto sobre o projeto Água Viva?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O conflito entre tecnologia e infraestrutura."
+        },
+        {
+          "id": "a2",
+          "text": "A falha técnica dos medidores."
+        },
+        {
+          "id": "a3",
+          "text": "A redução do consumo de água na cidade."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A tecnologia, embora eficiente em apontar o problema, exacerbou a tensão entre quem paga a conta e quem detém o poder de decisão sobre a manutenção.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o estudante Ricardo se recusou a pagar pela obra?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ele não tinha dinheiro."
+        },
+        {
+          "id": "a2",
+          "text": "A obra valorizaria o imóvel."
+        },
+        {
+          "id": "a3",
+          "text": "O dono deveria pagar."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ricardo, que aluga seu apartamento, recusou-se a arcar com os custos de uma obra que valorizaria o imóvel de terceiros",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o texto sugere sobre a postura da prefeitura diante do problema?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela é negligente."
+        },
+        {
+          "id": "a2",
+          "text": "Ela é indiferente."
+        },
+        {
+          "id": "a3",
+          "text": "Ela é tecnocrática."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a prefeitura, apesar de fornecer os dados, não oferece subsídios para a modernização das tubulações obsoletas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a intenção do autor ao mencionar o Edifício Horizonte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar as dificuldades práticas da implementação tecnológica em prédios antigos."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que a prefeitura de Vila Serena está falhando em seus objetivos."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar o comportamento individual dos moradores em relação ao desperdício."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O monitoramento inteligente transformou o que era uma negligência invisível em uma crise pública imediata, expondo a fragilidade de prédios que não foram projetados para a eficiência moderna.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no último parágrafo do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e neutro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O impasse revela uma falha sistêmica: o monitoramento inteligente é uma ferramenta poderosa, mas ineficaz quando o tecido urbano é composto por estruturas que dependem de investimentos que ninguém deseja realizar.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'retrofit' no contexto do quarto parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A instalação de novos contadores digitais."
+        },
+        {
+          "id": "a2",
+          "text": "A mudança de comportamento dos moradores locais."
+        },
+        {
+          "id": "a3",
+          "text": "A modernização de sistemas estruturais antigos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a situação em Vila Serena demonstra que a inovação técnica, isolada de políticas de incentivo ao retrofit, pode penalizar injustamente os inquilinos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo quem deve arcar com os custos de modernização em edifícios antigos: os proprietários ou os inquilinos, considerando os argumentos apresentados no texto.",
+      "en": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo quem deve arcar com os custos de modernização em edifícios antigos: os proprietários ou os inquilinos, considerando os argumentos apresentados no texto."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o texto abaixo e responda às questões para avaliar sua compreensão sobre os desafios da infraestrutura urbana e a responsabilidade compartilhada no consumo de água.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema dos Hidrômetros Inteligentes em Vila Serena | B2 Reading | WeLearn",
+      "en": "O Dilema dos Hidrômetros Inteligentes em Vila Serena | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise sobre a implementação de novas tecnologias de monitoramento hídrico e os conflitos habitacionais resultantes.",
+      "en": "Uma análise sobre a implementação de novas tecnologias de monitoramento hídrico e os conflitos habitacionais resultantes."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

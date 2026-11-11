@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema de Vila das Pedras",
+      "en": "O Dilema de Vila das Pedras"
+    },
+    "intro": {
+      "es": "Neste exercício, você lerá sobre um debate comunitário em uma pequena cidade brasileira que deseja resgatar sua identidade histórica através da mudança de seu nome oficial.",
+      "en": "Neste exercício, você lerá sobre um debate comunitário em uma pequena cidade brasileira que deseja resgatar sua identidade histórica através da mudança de seu nome oficial."
+    },
+    "mission": {
+      "es": "Leia o texto abaixo com atenção e responda às questões de compreensão para avaliar sua habilidade de interpretação em nível B2.",
+      "en": "Leia o texto abaixo com atenção e responda às questões de compreensão para avaliar sua habilidade de interpretação em nível B2."
+    },
+    "targetText": "A pequena Vila das Pedras, situada entre colinas neblinosas, vivia um impasse administrativo que dividia seus habitantes. O prefeito, Heitor, propôs oficialmente retomar o nome original da cidade, 'São Bento do Vale', um título esquecido após a modernização das ferrovias no século passado. A ideia, segundo ele, seria um gesto de resgate cultural necessário para fortalecer o orgulho local. No entanto, a proposta gerou uma onda de resistência imediata entre os comerciantes do centro, que temiam que a alteração causasse confusão irreparável para os turistas e viajantes que dependem de mapas digitais e sinalizações rodoviárias desatualizadas.\n\nDurante a reunião na câmara municipal, a tensão era palpável. Dona Elza, proprietária de uma pousada tradicional, argumentou que o nome atual já possuía um valor de marca consolidado. 'Mudar agora seria como apagar décadas de reconhecimento', afirmou ela, sugerindo que o custo de atualizar toda a documentação, placas e registros seria um desperdício de recursos públicos. Ela reconhecia, contudo, que o nome antigo evocava uma nostalgia poética que atraía visitantes interessados em história, mas insistia que a praticidade deveria prevalecer sobre o sentimentalismo nostálgico.\n\nPor outro lado, o jovem historiador Lucas defendia a mudança com fervor. Ele exibia mapas antigos e documentos que provavam que a identidade da cidade estava atrelada ao nome original. Para ele, a modernidade não deveria ser um obstáculo para a preservação da memória. Lucas argumentava que, na era da informação, uma alteração de nome seria rapidamente absorvida pelos sistemas de navegação, tornando o medo dos comerciantes algo infundado e ultrapassado. Ele acreditava que o ganho simbólico superaria qualquer transtorno logístico temporário.\n\nO debate seguiu pela noite adentro, com argumentos sendo trocados de forma acalorada. A oposição, liderada por Elza, enfatizava a estabilidade econômica, enquanto os defensores da mudança, representados por Lucas, focavam na integridade cultural. O prefeito, observando o impasse, percebeu que qualquer decisão tomada naquele momento deixaria uma parcela significativa da população ressentida. A divisão não era apenas sobre um nome, mas sobre como a cidade enxergava o seu próprio futuro: um lugar voltado para a eficiência pragmática ou um refúgio que valoriza suas raízes.\n\nAo final da sessão, nenhuma resolução foi alcançada. Heitor encerrou a reunião propondo um referendo popular, mas a incerteza pairava no ar. A cidade continuava sendo Vila das Pedras, mas o silêncio que se seguiu após a saída dos moradores indicava que a paz local havia sido abalada. O dilema permanecia, revelando que a identidade de um povo é um terreno movediço, onde o passado e o presente lutam constantemente por espaço, deixando o futuro daquela comunidade em um estado de suspensão melancólica.",
+    "wordCount": 431,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock or stalemate",
+          "en": "deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpável",
+        "lemma": "palpável",
+        "glosses": {
+          "es": "tangible or perceptible",
+          "en": "tangible or perceptible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "consolidado",
+        "lemma": "consolidado",
+        "glosses": {
+          "es": "established or solidified",
+          "en": "established or solidified"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "infundado",
+        "lemma": "infundado",
+        "glosses": {
+          "es": "baseless or groundless",
+          "en": "baseless or groundless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmática",
+        "lemma": "pragmática",
+        "glosses": {
+          "es": "practical or realistic",
+          "en": "practical or realistic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "movediço",
+        "lemma": "movediço",
+        "glosses": {
+          "es": "shifting or unstable",
+          "en": "shifting or unstable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.5,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central enfrentado pela cidade de Vila das Pedras?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A escolha entre manter o nome atual ou resgatar o antigo."
+        },
+        {
+          "id": "a2",
+          "text": "A falta de verbas para a modernização das ferrovias."
+        },
+        {
+          "id": "a3",
+          "text": "A disputa entre comerciantes e historiadores pelo controle da prefeitura."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O prefeito, Heitor, propôs oficialmente retomar o nome original da cidade, 'São Bento do Vale', um título esquecido após a modernização das ferrovias no século passado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que Dona Elza se opõe à mudança do nome da cidade?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela acredita que o nome é feio."
+        },
+        {
+          "id": "a2",
+          "text": "Ela teme prejuízos financeiros."
+        },
+        {
+          "id": "a3",
+          "text": "Ela prefere nomes modernos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Dona Elza, proprietária de uma pousada tradicional, argumentou que o nome atual já possuía um valor de marca consolidado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a reação de Lucas sugere sobre a sua visão de tecnologia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ele despreza o uso de mapas em dispositivos móveis."
+        },
+        {
+          "id": "a2",
+          "text": "Ele acredita que a tecnologia impedirá a mudança histórica."
+        },
+        {
+          "id": "a3",
+          "text": "Ele confia na adaptabilidade dos sistemas digitais modernos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Lucas argumentava que, na era da informação, uma alteração de nome seria rapidamente absorvida pelos sistemas de navegação, tornando o medo dos comerciantes algo infundado e ultrapassado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a principal função do parágrafo que descreve a discussão entre Elza e Lucas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Expor as perspectivas divergentes sobre a mudança de nome."
+        },
+        {
+          "id": "a2",
+          "text": "Mostrar que os moradores não se importam com a história."
+        },
+        {
+          "id": "a3",
+          "text": "Demonstrar que o prefeito já tomou uma decisão final."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A oposição, liderada por Elza, enfatizava a estabilidade econômica, enquanto os defensores da mudança, representados por Lucas, focavam na integridade cultural.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no encerramento do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e entusiasmado."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e impessoal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O dilema permanecia, revelando que a identidade de um povo é um terreno movediço, onde o passado e o presente lutam constantemente por espaço, deixando o futuro daquela comunidade em um estado de suspensão melancólica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No texto, o que significa a palavra 'infundado' quando aplicada ao medo dos comerciantes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que o medo é exagerado por motivos políticos."
+        },
+        {
+          "id": "a2",
+          "text": "Que o medo é compartilhado por todos os moradores."
+        },
+        {
+          "id": "a3",
+          "text": "Que o medo não possui uma base sólida ou real."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Lucas argumentava que, na era da informação, uma alteração de nome seria rapidamente absorvida pelos sistemas de navegação, tornando o medo dos comerciantes algo infundado e ultrapassado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo se você acha que cidades devem priorizar a preservação histórica ou a facilidade logística em seus nomes oficiais.",
+      "en": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo se você acha que cidades devem priorizar a preservação histórica ou a facilidade logística em seus nomes oficiais."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o texto abaixo com atenção e responda às questões de compreensão para avaliar sua habilidade de interpretação em nível B2.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema de Vila das Pedras | B2 Reading | WeLearn",
+      "en": "O Dilema de Vila das Pedras | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Neste exercício, você lerá sobre um debate comunitário em uma pequena cidade brasileira que deseja resgatar sua identidade histórica através da mudança de seu nome oficial.",
+      "en": "Neste exercício, você lerá sobre um debate comunitário em uma pequena cidade brasileira que deseja resgatar sua identidade histórica através da mudança de seu nome oficial."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}

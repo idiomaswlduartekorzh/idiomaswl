@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-open-schedule",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema do Horário Flexível na Escola Horizonte",
+      "en": "O Dilema do Horário Flexível na Escola Horizonte"
+    },
+    "intro": {
+      "es": "Leia este e-mail enviado pela direção da escola para entender os desafios logísticos de implementar um sistema de entrada flexível.",
+      "en": "Leia este e-mail enviado pela direção da escola para entender os desafios logísticos de implementar um sistema de entrada flexível."
+    },
+    "mission": {
+      "es": "Analise o e-mail abaixo e responda às questões de compreensão para demonstrar sua capacidade de interpretar contextos formais e conflitos institucionais.",
+      "en": "Analise o e-mail abaixo e responda às questões de compreensão para demonstrar sua capacidade de interpretar contextos formais e conflitos institucionais."
+    },
+    "targetText": "Prezada comunidade escolar, escrevo para abordar o crescente impasse sobre nossa política de chegada flexível. Nosso objetivo inicial, ao permitir que os alunos chegassem entre sete e nove da manhã, era aliviar o estresse das famílias que enfrentam o trânsito caótico da metrópole. A flexibilidade foi celebrada por pais como Ricardo e Helena, que trabalham em horários alternativos e dependem dessa margem de tempo para equilibrar suas rotinas. No entanto, estamos enfrentando um problema pedagógico significativo. As aulas de introdução, essenciais para o desenvolvimento dos projetos interdisciplinares, têm sofrido interrupções constantes devido às chegadas tardias. Quando um grupo de alunos entra na sala de aula trinta minutos após o início da atividade, o fluxo de pensamento é quebrado, e os professores precisam repetir instruções fundamentais, prejudicando o ritmo daqueles que chegaram pontualmente. A situação atingiu um ponto crítico na última terça-feira, quando o professor de Ciências, Sr. Mendes, foi forçado a suspender uma demonstração prática de laboratório porque metade da turma ainda não havia chegado. Esse incidente gerou uma reclamação formal de pais cujos filhos chegaram cedo e ficaram ociosos enquanto aguardavam o restante do grupo. Reconhecemos que a flexibilidade é um benefício necessário para muitos, mas não podemos sacrificar a qualidade do aprendizado coletivo. A escola não é apenas um local de custódia, mas um ambiente de construção conjunta de conhecimento. Portanto, estamos propondo uma reestruturação: a partir do próximo mês, manteremos a flexibilidade para a entrada, mas as atividades de conteúdo principal serão movidas para o bloco das nove horas. O período anterior será dedicado exclusivamente a estudos dirigidos e atividades de reforço individual. Entendemos que essa mudança pode causar um desajuste inicial na organização familiar, mas é a única forma de garantirmos que a equidade não se torne um obstáculo para o progresso acadêmico. Agradecemos a compreensão de todos e estamos abertos a sugestões construtivas durante a reunião de pais que ocorrerá na próxima semana. É imperativo que encontremos um equilíbrio onde a logística familiar não comprometa a integridade pedagógica. A escola Horizonte reafirma seu compromisso com a excelência, mas reforça que a pontualidade, mesmo em um sistema flexível, é um exercício de respeito ao tempo do próximo. Estamos diante de um desafio que exige maturidade de todos os envolvidos. Acreditamos que, com ajustes pontuais, manteremos o bem-estar das famílias sem abdicar da seriedade que nossa proposta pedagógica exige. A colaboração de vocês é o alicerce para que possamos superar este momento de transição com sucesso e harmonia, garantindo que o aprendizado ocorra sem interrupções desnecessárias.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock or difficult situation",
+          "en": "deadlock or difficult situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "custódia",
+        "lemma": "custódia",
+        "glosses": {
+          "es": "safekeeping or supervision",
+          "en": "safekeeping or supervision"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ociosos",
+        "lemma": "ociosos",
+        "glosses": {
+          "es": "idle or unoccupied",
+          "en": "idle or unoccupied"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "equidade",
+        "lemma": "equidade",
+        "glosses": {
+          "es": "fairness or impartiality",
+          "en": "fairness or impartiality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "imperativo",
+        "lemma": "imperativo",
+        "glosses": {
+          "es": "urgent or essential",
+          "en": "urgent or essential"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alicerce",
+        "lemma": "alicerce",
+        "glosses": {
+          "es": "foundation or basis",
+          "en": "foundation or basis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:34:11.551Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o objetivo central deste e-mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ajustar o horário escolar."
+        },
+        {
+          "id": "a2",
+          "text": "Proibir a entrada tardia."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar o trânsito urbano."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "estamos propondo uma reestruturação: a partir do próximo mês, manteremos a flexibilidade para a entrada, mas as atividades de conteúdo principal serão movidas para o bloco das nove horas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que causou o incidente com o Sr. Mendes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A falta de materiais."
+        },
+        {
+          "id": "a2",
+          "text": "A ausência de alunos."
+        },
+        {
+          "id": "a3",
+          "text": "O atraso no laboratório."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o professor de Ciências, Sr. Mendes, foi forçado a suspender uma demonstração prática de laboratório porque metade da turma ainda não havia chegado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que alguns pais reclamaram formalmente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque o trânsito estava muito intenso."
+        },
+        {
+          "id": "a2",
+          "text": "Porque o professor mudou o conteúdo."
+        },
+        {
+          "id": "a3",
+          "text": "Porque seus filhos perderam tempo de aula."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Esse incidente gerou uma reclamação formal de pais cujos filhos chegaram cedo e ficaram ociosos enquanto aguardavam o restante do grupo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Com qual finalidade o autor menciona Ricardo e Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para ilustrar o dilema entre flexibilidade e rotina."
+        },
+        {
+          "id": "a2",
+          "text": "Para identificar os pais que mais reclamam na escola."
+        },
+        {
+          "id": "a3",
+          "text": "Para sugerir que eles mudem de emprego imediatamente."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A flexibilidade foi celebrada por pais como Ricardo e Helena, que trabalham em horários alternativos e dependem dessa margem de tempo para equilibrar suas rotinas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Agressivo e impositivo."
+        },
+        {
+          "id": "a2",
+          "text": "Formal e conciliador."
+        },
+        {
+          "id": "a3",
+          "text": "Descontraído e informal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Agradecemos a compreensão de todos e estamos abertos a sugestões construtivas durante a reunião de pais que ocorrerá na próxima semana.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa dizer que a escola não é um local de 'custódia'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que os alunos são responsáveis pela própria segurança."
+        },
+        {
+          "id": "a2",
+          "text": "Que a escola não possui um sistema de segurança eficiente."
+        },
+        {
+          "id": "a3",
+          "text": "Que a escola não serve apenas para vigiar crianças."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A escola não é apenas um local de custódia, mas um ambiente de construção conjunta de conhecimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva uma resposta formal de um pai ou mãe para a direção da escola, argumentando a favor ou contra a nova proposta de horário, utilizando pelo menos três das palavras do vocabulário fornecido.",
+      "en": "Escreva uma resposta formal de um pai ou mãe para a direção da escola, argumentando a favor ou contra a nova proposta de horário, utilizando pelo menos três das palavras do vocabulário fornecido."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analise o e-mail abaixo e responda às questões de compreensão para demonstrar sua capacidade de interpretar contextos formais e conflitos institucionais.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:34:11.551Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema do Horário Flexível na Escola Horizonte | B2 Reading | WeLearn",
+      "en": "O Dilema do Horário Flexível na Escola Horizonte | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia este e-mail enviado pela direção da escola para entender os desafios logísticos de implementar um sistema de entrada flexível.",
+      "en": "Leia este e-mail enviado pela direção da escola para entender os desafios logísticos de implementar um sistema de entrada flexível."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:34:11.551Z"
+  }
+}
