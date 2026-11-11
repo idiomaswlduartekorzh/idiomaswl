@@ -74,10 +74,13 @@ async function requestGemini(message) {
   const key = process.env.GEMINI_API_KEY
   if (!key) throw new Error('GEMINI_API_KEY is not configured')
   const model = args.model ?? 'gemini-3.1-flash-lite'
-  if (!['gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'].includes(model)) throw new Error('Unsupported Gemini model')
+  if (!['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'].includes(model)) throw new Error('Unsupported Gemini model')
   const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
-    body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: message }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.55 } }),
+    body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: message }] }], generationConfig: {
+      responseMimeType: 'application/json', temperature: 0.55,
+      thinkingConfig: { thinkingLevel: model === 'gemini-3.8-flash' ? 'low' : 'minimal' },
+    } }),
     signal: AbortSignal.timeout(120_000),
   })
   const result = await response.json()

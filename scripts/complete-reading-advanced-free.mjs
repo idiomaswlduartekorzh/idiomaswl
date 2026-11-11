@@ -9,7 +9,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const exerciseDir = path.join(root, 'src/data/reading/exercises')
 const languages = ['en', 'fr', 'it', 'de', 'pt', 'ru', 'ja', 'ko']
 const levels = ['B2', 'C1', 'C2']
-const supportedModels = new Set(['gemini-3.8-flash', 'gemini-3.1-flash-lite', 'gemini-3.5-flash-lite'])
+const supportedModels = new Set(['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.1-flash-lite', 'gemini-3.5-flash-lite'])
 const requestedModels = process.argv.find((arg) => arg.startsWith('--models='))?.slice('--models='.length)
 const models = requestedModels ? requestedModels.split(',') : [...supportedModels]
 if (!models.length || models.some((model) => !supportedModels.has(model))) throw new Error('Invalid --models selection')
@@ -52,6 +52,7 @@ for (const level of levels) {
       const after = await countGroup(language, level)
       if (/Less than 1 GB of free disk space/.test(result.tail)) throw new Error('Generation paused because the disk has less than 1 GB free.')
       if (/(?:Gemini|Groq) (?:403|404):/.test(result.tail)) throw new Error(`Provider access failed for ${language}/${level}; ${result.tail.slice(-250)}`)
+      if (/per day limit exceeded|PerDay|requests per day limit/i.test(result.tail)) throw new Error(`Daily free API quota exhausted at ${language}/${level}; resume after its reset.`)
       if (after > before) {
         completed += after - before
         stalled = 0
