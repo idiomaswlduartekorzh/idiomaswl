@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-library-window",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Illusione del Tempo Sospeso",
+      "en": "L'Illusione del Tempo Sospeso"
+    },
+    "intro": {
+      "es": "Leggere il diario del direttore di una biblioteca civica per comprendere la distanza tra il semplice prolungamento dell'orario di apertura e una reale accessibilità culturale.",
+      "en": "Leggere il diario del direttore di una biblioteca civica per comprendere la distanza tra il semplice prolungamento dell'orario di apertura e una reale accessibilità culturale."
+    },
+    "mission": {
+      "es": "Analizzare il testo per cogliere la tensione tra la misurabilità burocratica dei servizi e l'effettiva inclusione sociale.",
+      "en": "Analizzare il testo per cogliere la tensione tra la misurabilità burocratica dei servizi e l'effettiva inclusione sociale."
+    },
+    "targetText": "Il registro di servizio della biblioteca comunale di Borgo San Pietro giaceva aperto sul leggio in mogano, una cicatrice di inchiostro nero che documentava il fallimento silenzioso del nuovo corso amministrativo. Erano trascorsi sei mesi da quando l'assessore comunale alla Cultura aveva imposto l'orario continuato fino alle ventidue, sbandierando la misura come il trionfo definitivo della democrazia partecipata. Sulle diapositive presentate in consiglio, l'estensione temporale appariva come un moltiplicatore geometrico di opportunità, un ponte teso verso una cittadinanza laboriosa che finalmente avrebbe potuto abitare gli spazi del sapere anche dopo il tramonto. Il direttore, un bibliotecario di lungo corso di nome Valerio, aveva assistito a quell'entusiasmo tecnocratico con il distacco scettico di chi conosce la consistenza granulare della polvere sui tomi antichi. Aveva compreso immediatamente che prolungare il tempo di apertura non significava affatto ampliare la platea dei beneficiari, ma semplicemente diluire la medesima utenza privilegiata in un arco di ore più dilatato, gravando su un bilancio già anemico e su un personale stremato.\n\nLa realtà delle prime settimane aveva smentito senza appello la retorica dell'accessibilità universale. Tra le diciannove e le ventidue, la sala di lettura principale, solitamente brulicante di studenti universitari accaniti e di ricercatori solitari, si trasformava in un teatro di solitudini ovattate. I tornelli, progettati per registrare ogni singolo passaggio, segnavano un incremento numerico che l'amministrazione sbandierava trionfalmente sui comunicati stampa, ma quei dati numerici celavano una distorsione macroscopica. Non erano nuovi lettori a varcare la soglia, né tantomeno cittadini appartenenti a quelle fasce marginalizzate che l'amministrazione giurava di voler sottrarre all'indifferenza culturale. Erano sempre i medesimi frequentatori abituali, i quali, forti della nuova flessibilità, spezzavano la loro permanenza con pause caffè più lunghe o semplicemente posticipavano l'arrivo, occupando i posti a sedere con la stessa possessiva abitudine di prima. L'orario prolungato, lungi dall'essere uno strumento di emancipazione, si era rivelato un comodo servizio di cortesia per una èlite accademica che non aveva alcuna reale urgenza di inclusione.\n\nMentre la città reale, quella fatta di operai turnisti, madri sovraccariche di lavoro e pensionati intimiditi da una monumentalità severa, continuava a percepire la biblioteca come un'entità estranea e inaccessibile, la struttura bruciava risorse preziose. Valerio annotava quotidianamente sul diario il costo energetico di quell'illuminazione monumentale che rischiarava sale semivuote, mentre i fondi destinati all'acquisto di nuove pubblicazioni venivano prosciugati per coprire le indennità di turno notturno del personale ausiliario. La tensione era esplosa la terza settimana di novembre, in concomitanza con l'arrivo di un gruppo di giovani periferici guidati da un educatore di strada. I ragazzi, disorientati dalla rigida liturgia del silenzio e dall'assenza di spazi di socialità informale, avevano cercato di organizzare un gruppo di studio condiviso nella sezione periodici, parlando a voce troppo alta e violando quel decoro algido che i lettori storici consideravano un dogma intangibile.\n\nLa reazione della comunità accreditata fu immediata e implacabile. Tre professori emeriti e un manipolo di dottorandi avevano presentato un esposto formale al direttore, lamentando il degrado del clima di studio e invocando un intervento disciplinare volto a ripristinare il quieto vivere. Valerio si era trovato stretto tra l'incudine di un'amministrazione cieca, ossessionata unicamente dai grafici di affluenza, e il martello di una realtà sociale che chiedeva cittadinanza ma trovava porte sbarrate non già in senso fisico, ma simbolico e metodologico. Invece di ripensare l'offerta culturale, di rimodulare gli spazi per renderli polifunzionali o di avviare laboratori di prossimità nei quartieri degradati, il Comune aveva scelto la via più semplice e fallace: confondere la quantità delle ore con la qualità della relazione umana, riducendo la biblioteca a un semplice dormitorio illuminato per studenti benestanti.\n\nLa svolta giunse in una notte gelida di dicembre, quando l'impianto di riscaldamento subì un collasso definitivo, costringendo la direzione a una chiusura anticipata d'emergenza. Quella sera, mentre i neon sfarfallavano spegnendosi uno a uno e i pochi studenti rimasti raccoglievano i laptop con espressioni di irritato fastidio, Valerio chiuse il registro con un gesto definitivo. Sulle pagine del diario non vergò considerazioni sulla temperatura o sui guasti tecnici, ma mise nero su bianco una riflessione che suonava come un atto d'accusa e un manifesto programmatico. Apertura non significa accoglienza, e tenere le porte spalancate nel buio non serve a nulla se la soglia resta troppo alta da superare per chi non possiede le chiavi culturali per varcarla. Il giorno successivo, l'amministrazione avrebbe ricevuto le sue dimissioni irrevocabili, accompagnate da un dossier che dimostrava come l'orario prolungato non fosse altro che un monumento alla vanità burocratica, costruito sulle spalle di una biblioteca ridotta a simulacro di se stessa.",
+    "wordCount": 754,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "consistenza granulare",
+        "lemma": "consistenza granulare",
+        "glosses": {
+          "es": "granular consistency / tangible reality",
+          "en": "granular consistency / tangible reality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retorica",
+        "lemma": "retorica",
+        "glosses": {
+          "es": "rhetoric",
+          "en": "rhetoric"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decoro algido",
+        "lemma": "decoro algido",
+        "glosses": {
+          "es": "cold decorum / icy propriety",
+          "en": "cold decorum / icy propriety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "incudine",
+        "lemma": "incudine",
+        "glosses": {
+          "es": "anvil",
+          "en": "anvil"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "simulacro",
+        "lemma": "simulacro",
+        "glosses": {
+          "es": "simulacrum / empty shell",
+          "en": "simulacrum / empty shell"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dogma",
+        "lemma": "dogma",
+        "glosses": {
+          "es": "dogma",
+          "en": "dogma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.4,
+      "maxSentenceWords": 53,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale sviluppato nel diario del direttore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il divario tra l'aumento delle ore di apertura e la reale inclusione sociale."
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di aumentare il personale ausiliario per coprire i turni notturni."
+        },
+        {
+          "id": "a3",
+          "text": "L'importanza di digitalizzare il patrimonio librario per attrarre i giovani."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Aveva compreso immediatamente che prolungare il tempo di apertura non significava affatto ampliare la platea dei beneficiari, ma semplicemente diluire la medesima utenza privilegiata in un arco di ore più dilatato",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Chi ha provocato la reazione dei frequentatori abituali della biblioteca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Tre professori emeriti che contestavano l'acquisto di nuovi libri."
+        },
+        {
+          "id": "a2",
+          "text": "Un gruppo di giovani periferici accompagnati da un educatore di strada."
+        },
+        {
+          "id": "a3",
+          "text": "L'assessore comunale alla Cultura durante una conferenza stampa."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La tensione era esplosa la terza settimana di novembre, in concomitanza con l'arrivo di un gruppo di giovani periferici guidati da un educatore di strada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa simboleggia il guasto all'impianto di riscaldamento a fine dicembre?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La totale incompetenza della giunta comunale nella gestione degli edifici."
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di investire fondi pubblici nell'efficienza energetica."
+        },
+        {
+          "id": "a3",
+          "text": "Il collasso definitivo di una facciata politica basata sull'apparenza."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La svolta giunse in una notte gelida di dicembre, quando l'impianto di riscaldamento subì un collasso definitivo, costringendo la direzione a una chiusura anticipata d'emergenza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'amministrazione comunale aveva voluto l'orario continuato?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per offrire un servizio moderno e dimostrare un successo politico di democrazia."
+        },
+        {
+          "id": "a2",
+          "text": "Per ridurre drasticamente i costi di gestione della struttura e del personale."
+        },
+        {
+          "id": "a3",
+          "text": "Per rispondere alle richieste formali presentate dai professori emeriti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "sbandierando la misura come il trionfo definitivo della democrazia partecipata.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tonalità emotiva e stilistica caratterizza la voce narrante di Valerio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un entusiasmo naif che si trasforma gradualmente in profonda delusione giovanile."
+        },
+        {
+          "id": "a2",
+          "text": "Un distacco ironico e disincantato unito a un rigore etico intransigente."
+        },
+        {
+          "id": "a3",
+          "text": "Una rabbia incontenibile mossa dal desiderio di vendetta politica personale."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "aveva assistito a quell'entusiasmo tecnocratico con il distacco scettico di chi conosce la consistenza granulare della polvere sui tomi antichi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, che cosa indica l'espressione \"decoro algido\" riferita alla biblioteca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un clima di studio informale e caloroso creato dai giovani delle periferie."
+        },
+        {
+          "id": "a2",
+          "text": "La temperatura rigida provocata dal guasto dell'impianto di riscaldamento."
+        },
+        {
+          "id": "a3",
+          "text": "Un'atmosfera fredda, formale e rigida imposta dalle consuetudini dei lettori."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "violando quel decoro algido che i lettori storici consideravano un dogma intangibile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa 250 parole in cui analizzi criticamente il concetto di accessibilità nei luoghi della cultura, discutendo se l'estensione degli orari di apertura sia sufficiente a garantire una reale inclusione sociale o se siano necessari interventi strutturali più profondi.",
+      "en": "Scrivi un saggio breve di circa 250 parole in cui analizzi criticamente il concetto di accessibilità nei luoghi della cultura, discutendo se l'estensione degli orari di apertura sia sufficiente a garantire una reale inclusione sociale o se siano necessari interventi strutturali più profondi."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizzare il testo per cogliere la tensione tra la misurabilità burocratica dei servizi e l'effettiva inclusione sociale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Illusione del Tempo Sospeso | C1 Reading | WeLearn",
+      "en": "L'Illusione del Tempo Sospeso | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggere il diario del direttore di una biblioteca civica per comprendere la distanza tra il semplice prolungamento dell'orario di apertura e una reale accessibilità culturale.",
+      "en": "Leggere il diario del direttore di una biblioteca civica per comprendere la distanza tra il semplice prolungamento dell'orario di apertura e una reale accessibilità culturale."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

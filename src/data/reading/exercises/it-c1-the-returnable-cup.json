@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della tazza neutra",
+      "en": "L'illusione della tazza neutra"
+    },
+    "intro": {
+      "es": "Leggete questo articolo di cronaca aziendale e analizzate le tensioni sottese tra sostenibilità percepita e costi ecologici nascosti.",
+      "en": "Leggete questo articolo di cronaca aziendale e analizzate le tensioni sottese tra sostenibilità percepita e costi ecologici nascosti."
+    },
+    "mission": {
+      "es": "Esaminate il testo focalizzandovi sui dati omessi e sulle implicazioni retoriche della comunicazione ambientale.",
+      "en": "Esaminate il testo focalizzandovi sui dati omessi e sulle implicazioni retoriche della comunicazione ambientale."
+    },
+    "targetText": "Alla fine del trimestre autunnale, il comitato di gestione per la transizione ecologica della Soluzioni Tipografiche Meridionali, guidato dalla direttrice operativa Chiara Moretti e dal coordinatore logistico Davide Santoro, ha pubblicato il bilancio d'impatto tanto atteso. Il documento, intitolato programmaticamente 'Verso il consumo circolare', esultava per un traguardo apparentemente inequivocabile: l'eliminazione definitiva di oltre quarantamila bicchieri usa e getta nei tre punti ristoro dell'azienda durante i mesi precedenti, sostituiti da altrettante tazze riutilizzabili in polipropilene rigido distribuite a tutti i dipendenti. La relazione trionfalistica dipingeva l'iniziativa come un trionfo immediato, evidenziando come i depositi della spazzatura si fossero miracolosamente alleggeriti e come l'immagine aziendale ne avesse beneficiato persino sui canali social dedicati alla responsabilità sociale. Eppure, sotto la superficie patinata di grafici in verde brillante e percentuali decrescenti di rifiuti indifferenziati, si celava una realtà operativa ben più complessa e contraddittoria, che nessun dirigente aveva inserito nei riassunti destinati alla stampa locale.\n\nIl primo indizio di questa dissonanza emerse durante una riunione informale tra il personale delle pulizie e il rappresentante sindacale Matteo Gialli, quando fu sollevato il problema della gestione idrica ed energetica legata alle stoviglie lavabili. Nessuno aveva messo in conto che la sostituzione dei contenitori monouso avrebbe richiesto l'installazione straordinaria di tre lavastoviglie industriali ad alta efficienza nel seminterrato dello stabilimento, macchinari che necessitano di cicli di riscaldamento a ottantacinque gradi per rispettare le normative igieniche comunitarie. Davide Santoro, interrogato dai revisori interni sulla provenienza dei rincari energetici registrati nella bolletta di novembre, aveva liquidato la questione come una fluttuazione stagionale trascurabile, omettendo di contabilizzare i litri di acqua potabile consumati quotidianamente per igienizzare migliaia di tazze che spesso tornavano alle postazioni sporche di fondi di caffè incrostati o residui di tè denso.\n\nAncora più paradossale risultava il bilancio dei trasporti e della logistica inversa, un capitolo che la relazione di Moretti aveva abilmente aggirato riducendolo a una nota a piè di pagina sui 'benefici della filiera corta'. Per aggirare i limiti strutturali dell'impianto di lavaggio interno, che periodicamente andava in sovraccarico bloccando i reparti, l'amministrazione aveva infatti appaltato a una ditta esterna la raccolta bisettimanale di metà delle stoviglie per sanificarle in un centro industriale situato a trenta chilometri di distanza. Due furgoni diesel compiono così quattro viaggi alla settimana esclusivamente per trasportare contenitori di plastica che, per un ironico paradosso geometrico, pesano meno del carburante bruciato per muovere i veicoli. I dipendenti, dal canto loro, lamentavano la scarsità di postazioni di risciacquo intermedie, costringendoli a percorrere lunghi corridoi più volte al giorno solo per sciacquare la propria tazza prima di cambiar bevanda, sottraendo minuti preziosi alla produzione effettiva e generando un clima di sottile insofferenza verso l'ecologia imposta dall'alto.\n\nIl culmine della tensione si è raggiunto quando l'auditor indipendente assunto dalla casa madre per la certificazione ambientale annuale ha chiesto di visionare i registri completi dell'acqua e delle emissioni indirette collegate alla flotta di supporto. Di fronte all'impossibilità di fornire dati disaggregati che dimostrassero un effettivo saldo ecologico positivo rispetto ai vecchi bicchieri di carta biodegradabile, la direzione si è trovata a un bivio imprevisto: ammettere pubblicamente l'insufficienza del proprio modello di contabilità verde o raddoppiare gli sforzi comunicativi per seppellire i dati scomodi sotto nuove iniziative di facciata. Chiara Moretti ha scelto la seconda via, varando una campagna di sensibilizzazione interna basata su slogan motivazionali e premi di produttività per chi dimostra di aver conservato la propria tazza senza smarrirla, spostando abilmente l'attenzione dalla scarsa efficienza sistemica alla presunta virtù comportamentale del singolo lavoratore.\n\nIl risultato finale di questa operazione di ingegneria reputazionale è un fragile equilibrio che scontenta i pragmatici e confonde i sinceri ambientalisti. La Soluzioni Tipografiche Meridionali può legittimamente vantare nei suoi prospetti ufficiali una drastica riduzione della frazione secca non riciclabile nei propri cestini, ma questo indicatore parziale maschera una dispersione di risorse che sposta l'impatto ambientale dalla discarica locale alle falde acquifere e all'atmosfera urbana. Quando Matteo Gialli ha provato a depositare una mozione per ridiscutere l'intero capitolato d'acquisto e valutare se il rimedio non sia stato più gravoso del male, la presidenza ha risposto con un'archiviazione formale, sostenendo che il cambiamento culturale richiede tempo e che ogni errore iniziale rappresenta solo un costo inevitabile sulla strada verso la perfezione ecologica, lasciando intatta l'illusione di una transizione indolore.",
+    "wordCount": 709,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "trionfalistica",
+        "lemma": "trionfalistica",
+        "glosses": {
+          "es": "excessively triumphant and boastful",
+          "en": "excessively triumphant and boastful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonanza",
+        "lemma": "dissonanza",
+        "glosses": {
+          "es": "discrepancy or inconsistency",
+          "en": "discrepancy or inconsistency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aggirato",
+        "lemma": "aggirato",
+        "glosses": {
+          "es": "evaded or bypassed",
+          "en": "evaded or bypassed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "disaggregati",
+        "lemma": "disaggregati",
+        "glosses": {
+          "es": "broken down into component parts",
+          "en": "broken down into component parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reputazionale",
+        "lemma": "reputazionale",
+        "glosses": {
+          "es": "related to reputation or image",
+          "en": "related to reputation or image"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "capitolato",
+        "lemma": "capitolato",
+        "glosses": {
+          "es": "contract specifications document",
+          "en": "contract specifications document"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 41.7,
+      "maxSentenceWords": 63,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le contraddizioni nascoste dietro un report di sostenibilità"
+        },
+        {
+          "id": "a2",
+          "text": "La transizione energetica totale dei macchinari di stampa"
+        },
+        {
+          "id": "a3",
+          "text": "Il fallimento economico della tipografia per colpa dei rifiuti"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Eppure, sotto la superficie patinata di grafici in verde brillante e percentuali decrescenti di rifiuti indifferenziati, si celava una realtà operativa ben più complessa e contraddittoria",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Come viene gestito il lavaggio delle tazze quando l'impianto interno va in sovraccarico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I dipendenti le lavano a mano nei bagni dei reparti"
+        },
+        {
+          "id": "a2",
+          "text": "Viene appaltato a una ditta esterna situata a trenta chilometri"
+        },
+        {
+          "id": "a3",
+          "text": "Si ricorre temporaneamente ai vecchi bicchieri usa e getta"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'amministrazione aveva infatti appaltato a una ditta esterna la raccolta bisettimanale di metà delle stoviglie per sanificarle in un centro industriale situato a trenta chilometri di distanza",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Per quale motivo la scelta delle tazze riutilizzabili genera un paradosso logistico secondo il testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché le tazze si rompono troppo facilmente durante il trasporto"
+        },
+        {
+          "id": "a2",
+          "text": "Perché i dipendenti rifiutano categoricamente di riportarle in azienda"
+        },
+        {
+          "id": "a3",
+          "text": "Perché i furgoni consumano più carburante di quanto pesino le stoviglie"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Due furgoni diesel compiono così quattro viaggi alla settimana esclusivamente per trasportare contenitori di plastica che, per un ironico paradosso geometrico, pesano meno del carburante bruciato per muovere i veicoli",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale della seconda campagna di sensibilizzazione voluta da Chiara Moretti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Spostare l'attenzione dalla scarsa efficienza del sistema alla virtù del singolo"
+        },
+        {
+          "id": "a2",
+          "text": "Raccogliere fondi per acquistare nuove lavastoviglie industriali"
+        },
+        {
+          "id": "a3",
+          "text": "Convincere i dipendenti a portare le tazze da casa propria"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "spostando abilmente l'attenzione dalla scarsa efficienza sistemica alla presunta virtù comportamentale del singolo lavoratore",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere il bilancio d'impatto pubblicato dall'azienda?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Enthusiasta e acritico verso le innovazioni"
+        },
+        {
+          "id": "a2",
+          "text": "Ironico e critico riguardo alla facciata ecologica"
+        },
+        {
+          "id": "a3",
+          "text": "Oggettivo e distaccato senza alcun giudizio"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il documento, intitolato programmaticamente 'Verso il consumo circolare', esultava per un traguardo apparentemente inequivocabile",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'dissonanza' nel contesto del secondo capoverso?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una perfetta armonia tra gli intenti della direzione e i risultati"
+        },
+        {
+          "id": "a2",
+          "text": "Un conflitto sonoro causato dal rumore dei macchinari accesi"
+        },
+        {
+          "id": "a3",
+          "text": "Una divergenza evidente tra la teoria ufficiale e la realtà pratica"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il primo indizio di questa dissonanza emerse durante una riunione informale tra il personale delle pulizie e il rappresentante sindacale Matteo Gialli",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivete un saggio breve di circa duecento parole in lingua italiana in cui analizzate il concetto di 'greenwashing' aziendale, prendendo spunto dalle dinamiche descritte nel testo e argomentando se la sostenibilità possa prescindere da un'analisi rigorosa dell'intera filiera.",
+      "en": "Scrivete un saggio breve di circa duecento parole in lingua italiana in cui analizzate il concetto di 'greenwashing' aziendale, prendendo spunto dalle dinamiche descritte nel testo e argomentando se la sostenibilità possa prescindere da un'analisi rigorosa dell'intera filiera."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Esaminate il testo focalizzandovi sui dati omessi e sulle implicazioni retoriche della comunicazione ambientale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della tazza neutra | C1 Reading | WeLearn",
+      "en": "L'illusione della tazza neutra | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggete questo articolo di cronaca aziendale e analizzate le tensioni sottese tra sostenibilità percepita e costi ecologici nascosti.",
+      "en": "Leggete questo articolo di cronaca aziendale e analizzate le tensioni sottese tra sostenibilità percepita e costi ecologici nascosti."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

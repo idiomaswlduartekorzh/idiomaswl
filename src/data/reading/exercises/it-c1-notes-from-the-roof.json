@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-notes-from-the-roof",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La delibera sul tetto solare",
+      "en": "La delibera sul tetto solare"
+    },
+    "intro": {
+      "es": "Leggi questo scambio di email tra il comitato condominiale e la proprietà di una mansarda, in cui si discute l'installazione di un impianto fotovoltaico condiviso.",
+      "en": "Leggi questo scambio di email tra il comitato condominiale e la proprietà di una mansarda, in cui si discute l'installazione di un impianto fotovoltaico condiviso."
+    },
+    "mission": {
+      "es": "Analizza il testo per comprendere le implicazioni legali e i conflitti interpretativi legati alla delibera energetica.",
+      "en": "Analizza il testo per comprendere le implicazioni legali e i conflitti interpretativi legati alla delibera energetica."
+    },
+    "targetText": "Da: ing.valerio.neri@condominioaurora.it\nA: beatrice.fontana@studiolegale-fontana.it\nOggetto: Rih.: Installazione fotovoltaico condominiale e parere preliminare\n\nCara Beatrice,\nti scrivo in merito alla situazione incresciosa che si è venuta a creare attorno all'approvazione del nostro progetto solare per il tetto di Via dei Mille. Come ben sai, la delibera assembleare è passata con la maggioranza prescritta dalla normativa recente, ma la questione della quota millesimale della tua mansarda sta bloccando l'esecuzione dei lavori. Stamattina ho ricevuto una raccomandata dal proprietario dell'ultimo piano, il quale sostiene che la superficie calpestabile e le volumetrie tecniche della sua unità non siano state computate correttamente nel riparto originario, inficiando di conseguenza la validità del quorum deliberativo. La sua tesi poggia su una scrittura privata del millenovecento ottantacinque che, a suo dire, modificherebbe i parametri millesimali a favore della sua proprietà esclusiva sulla copertura. Sebbene l'amministratore sostenga che tali pattuizioni interne non registrate siano inopponibili al condominio, temo che la questione possa trascinarsi in giudizio, paralizzando l'investimento proprio ora che abbiamo ottenuto i fondi europei. Vorrei capire se la sua opposizione possa configurarsi come un abuso del diritto, considerando che l'intervento ridurrebbe le bollette di tutti senza intralciare la veduta o l'uso della terrazza pertinenziale.\n\nDa: beatrice.fontana@studiolegale-fontana.it\nA: ing.valerio.neri@condominioaurora.it\nOggetto: Rih.: Installazione fotovoltaico condominiale e parere preliminare\n\nCarissimo Valerio,\nho esaminato la questione e, credimi, la situazione è ben più sfumata di quanto appaia a prima vista. Prima di tutto, occorre sgomberare il campo da equivoci: la scrittura privata del ottantacinque non ha valore formale nei confronti dei terzi se non è stata trascritta nei registri immobiliari, su questo l'amministratore ha perfettamente ragione. Tuttavia, il punto nodale non è la validità catastale dei millesimi, bensì la natura stessa del tetto nel nostro fabbricato. Per il nostro ordinamento, la copertura dell'edificio è un bene comune per presunzione legale, salvo che il titolo non ne disponga diversamente. Il proprietario della mansarda invoca appunto quel titolo originario per rivendicare una sorta di dominanza qualitativa sulla falda, argomentando che l'installazione dei pannelli solari altererebbe la destinazione naturale della superficie e inciderebbe sul decoro architettonico. Non parlerei affatto di un mero pretesto o di un abuso; dietro la sua resistenza si cela una lettura proprietaria dello spazio che contrasta con la visione solidaristica e transizione-verde che anima il nostro progetto assembleare. Sebbene la giurisprudenza riconosca il diritto soggettivo del singolo condomino di utilizzare le parti comuni per fini energetici, tale facoltà incontra il limite insuperabile del pari uso e della salvaguardia della stabilità strutturale. Ora, se il vicino dimostra che il carico dei pannelli compromette la tenuta delle sue travi di copertura, la delibera rischia di essere dichiarata nulla per violazione dei limiti di godimento della cosa comune. Ti consiglio vivamente di convocare un incontro tecnico urgente prima di procedere con l'ordine dei materiali, perché un contenzioso aperto bloccherebbe l'erogazione del credito d'imposta entro la scadenza di bilancio.\n\nDa: ing.valerio.neri@condominioaurora.it\nA: beatrice.fontana@studiolegale-fontana.it\nOggetto: Rih.: Installazione fotovoltaico condominiale e parere preliminare\n\nBeatrice, le tue argomentazioni mi spingono a riconsiderare la linearità con cui avevamo impostato la votazione in assemblea, ma vi è un aspetto fattuale che non torna nella sua ricostruzione tecnica. Ieri pomeriggio, prima che arrivasse la sua raccomandata formale, ho effettuato un sopralluogo sul tetto insieme al perito incaricato dall'impresa installatrice e abbiamo verificato che lo spazio sovrastante la sua mansarda rimarrebbe completamente libero da moduli fotovoltaici; i pannelli verranno posizionati unicamente sulla falda opposta, quella che sovrasta il vano scala e le proprietà centrali. Di conseguenza, decade l'argomento secondo cui il suo spazio pertinenziale verrebbe occupato o menomato nella sua funzione estetica e di transito. Certo, resta il tema del decoro architettonico generale, ma mi pare difficile sostenere un pregiudizio estetico per un impianto invisibile dalla strada e posto sulla porzione opposta dell'edificio. Se la sua opposizione non trova riscontro oggettivo nello stato dei luoghi, allora la sua condotta assume contorni ostruzionistici evidenti, finalizzati forse a ottenere una transazione economica o una compensazione sulle spese straordinarie deliberate l'anno scorso. Ti chiedo quindi se possiamo notificare una diffida ad adempiere, intimando di consentire l'accesso agli operai per l'inizio dei ponteggi, oppure se rischiamo di subire un sequestro d'urgenza che farebbe sfumare i contributi.\n\nDa: beatrice.fontana@studiolegale-fontana.it\nA: beatrice.fontana@studiolegale-fontana.it\nOggetto: Rih.: Installazione fotovoltaico condominiale e parere preliminare\n\nValerio, questa nuova circostanza cambia radicalmente i termini della questione giuridica. Se i pannelli non insistono sulla sua verticale e non limitano in alcun modo il suo godimento della copertura, la sua pretesa perde la base fattuale su cui poggiava la tutela del pari uso. Tuttavia, ti invito alla prudenza: anziché procedere subito con la diffida muscolare, che irrigidirebbe ulteriormente le posizioni in vista di una convivenza condominiale ormai logora, tentiamo la carta di un accordo transattivo bonario. Possiamo offrirgli una quota di produzione energetica leggermente superiore o una deroga temporanea sulle spese di manutenzione ordinaria del sottotetto. Ricordati che vincere una causa in tribunale richiede anni, mentre perdere i fondi europei per il fotovoltaico comporterebbe un danno economico immediato per tutti i condomini. Domani stesso preparo una bozza di scrittura privata in cui si riconosce la sua autonomia di vedute senza tuttavia cedere sui millesimi, salvaguardando così la legittimità della delibera e l'avvio tempestivo del cantiere.\n\nDa: ing.valerio.neri@condominioaurora.it\nA: beatrice.fontana@studiolegale-fontana.it\nOggetto: Rih.: Installazione fotovoltaico condominiale e parere preliminare\n\nHai perfettamente ragione, Beatrice; la fretta di chiudere il cantiere non deve farci dimenticare che una lite giudiziaria prolungata avrebbe costi sociali e finanziari superiori a qualsiasi compromesso negoziale. Accetto la tua proposta: redigi pure la bozza di accordo transattivo e convochiamo il proprietario della mansarda per giovedì prossimo nello studio. Spero che il buon senso prevalga sulle ripicche personali, permettendoci finalmente di inaugurare questo tetto solare senza strascichi legali.",
+    "wordCount": 941,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "inficiando",
+        "lemma": "inficiando",
+        "glosses": {
+          "es": "invalidating",
+          "en": "invalidating"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inopponibili",
+        "lemma": "inopponibili",
+        "glosses": {
+          "es": "unenforceable against",
+          "en": "unenforceable against"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "menomato",
+        "lemma": "menomato",
+        "glosses": {
+          "es": "impaired",
+          "en": "impaired"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ostruzionistici",
+        "lemma": "ostruzionistici",
+        "glosses": {
+          "es": "obstructive",
+          "en": "obstructive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irrigidirebbe",
+        "lemma": "irrigidirebbe",
+        "glosses": {
+          "es": "would stiffen",
+          "en": "would stiffen"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ripicche",
+        "lemma": "ripicche",
+        "glosses": {
+          "es": "spiteful acts",
+          "en": "spiteful acts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.9,
+      "maxSentenceWords": 55,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale dello scambio epistolare tra i due mittenti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La disputa legale e tecnica sorta in merito all'installazione di un impianto fotovoltaico condiviso sul tetto condominiale."
+        },
+        {
+          "id": "a2",
+          "text": "La revisione totale dei millesimi di proprietà dovuta alla vendita della mansarda all'ultimo piano."
+        },
+        {
+          "id": "a3",
+          "text": "La richiesta di rimborso per i lavori di ristrutturazione straordinaria deliberati l'anno precedente."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cara Beatrice,\nti scrivo in merito alla situazione incresciosa che si è venuta a creare attorno all'approvazione del nostro progetto solare per il tetto di Via dei Mille.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Dove verranno effettivamente posizionati i pannelli solari secondo il sopralluogo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sulla terrazza pertinenziale di proprietà esclusiva del condomino dell'ultimo piano."
+        },
+        {
+          "id": "a2",
+          "text": "Sulla falda che sovrasta il vano scala e le proprietà centrali, lasciando libera la mansarda."
+        },
+        {
+          "id": "a3",
+          "text": "Sull'intera superficie del tetto, inclusa la verticale della mansarda contestata."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "i pannelli verranno posizionati unicamente sulla falda opposta, quella che sovrasta il vano scala e le proprietà centrali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quale atteggiamento adotta inizialmente Beatrice Fontana nei confronti delle rivendicazioni del proprietario?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le respinge categoricamente come un pretesto privo di qualsiasi fondamento giuridico."
+        },
+        {
+          "id": "a2",
+          "text": "Le considera un chiaro tentativo di estorsione economica volto a bloccare i fondi europei."
+        },
+        {
+          "id": "a3",
+          "text": "Le interpreta come una visione proprietaria complessa che merita un'attenta analisi dei limiti di godimento."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Non parlerei affatto di un mero pretesto o di un abuso; dietro la sua resistenza si cela una lettura proprietaria dello spazio che contrasta con la visione solidaristica",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo finale Beatrice consiglia di evitare una diffida legale immediata?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché una causa giudiziaria richiederebbe troppi anni, facendo perdere i contributi europei e danneggiando economicamente il condominio."
+        },
+        {
+          "id": "a2",
+          "text": "Perché il proprietario della mansarda ha già ottenuto un sequestro d'urgenza del cantiere."
+        },
+        {
+          "id": "a3",
+          "text": "Perché l'amministratore ha confermato la validità della scrittura privata del millenovecento ottantacinque."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ricordati che vincere una causa in tribunale richiede anni, mentre perdere i fondi europei per il fotovoltaico comporterebbe un danno economico immediato per tutti i condomini.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il registro stilistico e il tono generale mantenuto dai due professionisti nello scambio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Informale, colloquiale e caratterizzato da frequenti polemiche personali."
+        },
+        {
+          "id": "a2",
+          "text": "Professionale, giuridicamente argomentato ma aperto alla mediazione strategica."
+        },
+        {
+          "id": "a3",
+          "text": "Rigido, autoritario e privo di aperture al dialogo negoziale."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ho esaminato la questione e, credimi, la situazione è ben più sfumata di quanto appaia a prima vista.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa esattamente il termine 'inopponibili' riferito alla scrittura privata?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che sono state depositate ufficialmente presso i registri immobiliari competenti."
+        },
+        {
+          "id": "a2",
+          "text": "Che risultano completamente illegali e perseguibili penalmente dall'autorità giudiziaria."
+        },
+        {
+          "id": "a3",
+          "text": "Che non possono essere fatte valere o produrre effetti giuridici nei confronti dei terzi o del condominio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Tuttavia, il punto nodale non è la validità catastale dei millesimi, bensì la natura stessa del tetto nel nostro fabbricato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa duecento parole in cui analizzi i limiti giuridici e i conflitti tra proprietà individuale e beni comuni nell'installazione di impianti energetici condominiali.",
+      "en": "Scrivi un testo argomentativo di circa duecento parole in cui analizzi i limiti giuridici e i conflitti tra proprietà individuale e beni comuni nell'installazione di impianti energetici condominiali."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizza il testo per comprendere le implicazioni legali e i conflitti interpretativi legati alla delibera energetica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La delibera sul tetto solare | C1 Reading | WeLearn",
+      "en": "La delibera sul tetto solare | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggi questo scambio di email tra il comitato condominiale e la proprietà di una mansarda, in cui si discute l'installazione di un impianto fotovoltaico condiviso.",
+      "en": "Leggi questo scambio di email tra il comitato condominiale e la proprietà di una mansarda, in cui si discute l'installazione di un impianto fotovoltaico condiviso."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

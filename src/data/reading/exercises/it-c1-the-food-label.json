@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-food-label",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La retorica degli scarti: analisi semiotica di due etichette",
+      "en": "La retorica degli scarti: analisi semiotica di due etichette"
+    },
+    "intro": {
+      "es": "Leggere un esercizio di lettura avanzata in italiano di livello C1 incentrato su una recensione critica che mette a confronto due diverse etichette di sostenibilità alimentare.",
+      "en": "Leggere un esercizio di lettura avanzata in italiano di livello C1 incentrato su una recensione critica che mette a confronto due diverse etichette di sostenibilità alimentare."
+    },
+    "mission": {
+      "es": "Analizzare il testo per cogliere le sfumature retoriche, le implicazioni sottili e la tensione irrisolta tra i diversi modelli di comunicazione commerciale.",
+      "en": "Analizzare il testo per cogliere le sfumature retoriche, le implicazioni sottili e la tensione irrisolta tra i diversi modelli di comunicazione commerciale."
+    },
+    "targetText": "Nel panorama attuale della distribuzione alimentare, la rincorsa alla sostenibilità ha generato un proliferare di codici comunicativi che pretendono di guidare la mano del consumatore attraverso il sottile crinale tra consumo consapevole e spreco sconsiderato. Ieri sera, seduto al tavolo della mia cucina con una tazza di camomilla e due differenti confezioni di ricotta artigianale prodotte dallo stesso caseificio locale, mi sono trovato a riflettere su questo fenomeno osservando i cartellini apposti sui banchi frigo della cooperativa del quartiere prima della chiusura domenicale. Da un lato la cooperativa 'VerdeSereno', forte della sua vocazione pedagogica, ha introdotto l'etichetta 'Consuma entro la freschezza ottimale', accompagnata da una piccola icona stilizzata raffigurante un calendario sbiadito e un orologio le cui lancette arretrano pigramente. Dall'altro, la catena concorrente 'SpesaEtica' ha optato per un registro assertivo ma pragmatico, stampando a grandi lettere 'Oltre questa soglia, trasforma in cucina', corredata dall'immagine di una zuppiera fumante e di un cucchiaio di legno. A un esame superficiale, i dati di base veicolati dai due cartellini coincidono perfettamente: entrambi gli avvisi fanno riferimento alla medesima scadenza tecnica stabilita dai laboratori di analisi e invitano implicitamente a non gettare via un alimento ancora idoneo al consumo. Eppure, l'impatto psicologico e la direzione comportamentale impressa al cliente divergono radicalmente, innescando una dinamica che merita un'indagine critica approfondita. Il modello di 'VerdeSereno' si muove lungo una direttrice di tutela paternalistica. L'enfasi posta sulla 'freschezza ottimale' sposta sottilmente l'attenzione organolettica dal valore intrinseco del bene al suo apice edonistico. Il risultato paradossale di tale formulazione è che il compratore, di fronte alla percezione di un potenziale declino qualitativo, tende a sviluppare un'ansia preventiva, finendo paradossalmente per anticipare lo sbarazzarsi del prodotto pur di evitare un'esperienza gustativa subottimale. L'iconografia del tempo che scorre non invita alla creatività domestica, ma evoca uno spettro incombente di decadimento, quasi che il superamento della data indicata trasformasse magicamente la ricotta in un pericolo biologico. Per converso, l'approccio adottato da 'SpesaEtica' compie una coraggiosa virata verso la valorizzazione dell'attitudine trasformativa del consumatore. Nel momento in cui il cartellino suggerisce di 'trasformare in cucina', la responsabilità del cibo non viene semplicemente prorogata nel tempo, ma traslata di livello: il latticino prossimo al limite non è un residuo da smaltire in fretta prima che si guasti, bensì la materia prima nobile per una frittata, un ripieno o una torta salata. Questa etichetta decostruisce la passività dell'acquirente, trasformandolo da mero fruitore a co-produttore di soluzioni antispreco. Ciononostante, non si può ignorare il rischio intrinseco di una simile formula: caricare il cittadino di un onere culinario costante rischia di generare un sovraccarico cognitivo, un'imposizione morale mascherata da consiglio amichevole che finisce per pesare su chi, rientrando a casa dopo una giornata faticosa, desidera solo nutrirsi senza dover improvvisare ricette di recupero. Certo, si potrebbe obiettare che entrambe le strategie falliscono nel loro intento primario, riducendo un problema strutturale della catena di approvvigionamento a un mero esercizio di stile comportamentale domestico. Questa critica, per quanto fondata sul piano macroeconomico, manca il bersaglio immediato della micro-comunicazione al dettaglio. Le etichette non risolvono la sovrapproduzione industriale, ma plasmano l'immaginario con cui il cittadino convive quotidianamente con le proprie eccedenze. Tra l'ansia nostalgica della freschezza perduta e la richiesta faticosa di una militanza culinaria permanente, la vera sfida della sostenibilità alimentare rimane sospesa in un limbo irrisolto, dove nessun cartellino, per quanto ingegnoso, potrà mai sostituire una radicale ridistribuzione del valore lungo l'intera filiera produttiva.\n\nTuttavia, spingendo ulteriormente l'analisi oltre la dicotomia tra ansia conservativa e attivismo domestico, emerge una contraddizione ancora più sottile legata alla mercificazione della coscienza ecologica. Entrambe le insegne, sebbene con tonalità differenti, finiscono per delegare interamente al singolo la gestione etica del fallimento sistemico, trasformando il senso di colpa ecologico in una leva di fidelizzazione commerciale. Quando 'VerdeSereno' culla il cliente nell'illusione di una protezione nostalgica e 'SpesaEtica' lo lusinga investendolo di un ruolo quasi eroico tra i fornelli, si assiste a una sofisticata operazione di marketing relazionale che sfrutta la sostenibilità come differenziatore competitivo anziché come parametro strutturale. In questo scenario, il cartellino sul banco frigo cessa di essere un semplice strumento informativo per diventare un manifesto identitario, in cui l'acquirente non sceglie soltanto un latticino, ma sposa una narrazione esistenziale preconfezionata. Il pericolo reale di questa deriva retorica risiede nella anestetizzazione del giudizio critico: il consumatore, gratificato dall'apparente nobiltà del proprio gesto quotidiano, rischia di abituarsi a tollerare inefficienze macroscopiche a monte, accettando supinamente che la responsabilità morale dell'intero sistema alimentare venga silenziosamente scaricata sulle spalle di chi, semplicemente, cercava soltanto un po' di ricotta per la cena.",
+    "wordCount": 758,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "crinale",
+        "lemma": "crinale",
+        "glosses": {
+          "es": "ridge or dividing line",
+          "en": "ridge or dividing line"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "edonistico",
+        "lemma": "edonistico",
+        "glosses": {
+          "es": "hedonistic or pleasure-seeking",
+          "en": "hedonistic or pleasure-seeking"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "traslata",
+        "lemma": "traslata",
+        "glosses": {
+          "es": "shifted or transferred",
+          "en": "shifted or transferred"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decostruisce",
+        "lemma": "decostruisce",
+        "glosses": {
+          "es": "deconstructs",
+          "en": "deconstructs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "onere",
+        "lemma": "onere",
+        "glosses": {
+          "es": "burden or obligation",
+          "en": "burden or obligation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eccedenze",
+        "lemma": "eccedenze",
+        "glosses": {
+          "es": "surpluses or excess goods",
+          "en": "surpluses or excess goods"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 33,
+      "maxSentenceWords": 57,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale sviluppato dall'autore nella recensione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un confronto critico tra due differenti strategie comunicative in etichetta riguardo allo spreco alimentare domestico"
+        },
+        {
+          "id": "a2",
+          "text": "La superiorità economica delle grandi catene distributive rispetto alle piccole cooperative agricole locali"
+        },
+        {
+          "id": "a3",
+          "text": "La necessità urgente di eliminare del tutto le date di scadenza dai prodotti lattiero-caseari"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Nel panorama attuale della distribuzione alimentare, la rincorsa alla sostenibilità ha generato un proliferare di codici comunicativi che pretendono di guidare la mano del consumatore attraverso il sottile crinale tra consumo consapevole e spreco sconsiderato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale elemento visivo caratterizza l'etichetta proposta da 'VerdeSereno'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una zuppiera fumante e un cucchiaio di legno"
+        },
+        {
+          "id": "a2",
+          "text": "Un calendario sbiadito e un orologio con le lancette che arretrano"
+        },
+        {
+          "id": "a3",
+          "text": "Un'icona stilizzata raffigurante una mucca al pascolo"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "accompagnata da una piccola icona stilizzata raffigurante un calendario sbiadito e un orologio le cui lancette arretrano pigramente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Per quale motivo, secondo l'analisi del testo, l'etichetta di 'VerdeSereno' rischia di sortire un effetto paradossale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché spinge i clienti a cucinare troppo e a sprecare le materie prime avanzate"
+        },
+        {
+          "id": "a2",
+          "text": "Perché i dati tecnici indicati sui cartellini non corrispondono alla reale deperibilità del latticino"
+        },
+        {
+          "id": "a3",
+          "text": "Perché induce nel consumatore un'ansia preventiva che lo spinge a buttare il cibo pur di evitare un calo qualitativo"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il risultato paradossale di tale formulazione è che il compratore, di fronte alla percezione di un potenziale declino qualitativo, tende a sviluppare un'ansia preventiva, finendo paradossalmente per anticipare lo sbarazzarsi del prodotto",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo comunicativo dell'espressione 'trasforma in cucina' adottata da 'SpesaEtica'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Trasformare la percezione del cibo prossimo alla scadenza in una materia prima nobile da rielaborare"
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere l'acquisto di libri di cucina e utensili in legno per i clienti"
+        },
+        {
+          "id": "a3",
+          "text": "Obbligare per legge i cittadini a cucinare tutti i prodotti avanzati prima di mezzanotte"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il latticino prossimo al limite non è un residuo da smaltire in fretta prima che si guasti, bensì la materia prima nobile per una frittata, un ripieno o una torta salata.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Come si può definire il tono generale con cui l'autore affronta la questione della sostenibilità alimentare?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta, ottimista e acritico nei confronti della grande distribuzione"
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo, analitico e sottilmente critico verso le soluzioni di facciata"
+        },
+        {
+          "id": "a3",
+          "text": "Raramente serio, ironico e sarcastico verso i piccoli produttori"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Questa critica, per quanto fondata sul piano macroeconomico, manca il bersaglio immediato della micro-comunicazione al dettaglio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa esattamente il termine 'crinale'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un errore di stampa grave presente sulle etichette commerciali"
+        },
+        {
+          "id": "a2",
+          "text": "Un metodo di conservazione industriale dei prodotti freschi"
+        },
+        {
+          "id": "a3",
+          "text": "Una linea di confine sottile e delicata tra due condizioni opposte"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "codici comunicativi che pretendono di guidare la mano del consumatore attraverso il sottile crinale tra consumo consapevole e spreco sconsiderato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una recensione critica di circa 200 parole in italiano, analizzando un'etichetta commerciale fittizia e argomentando se essa favorisca una reale consapevolezza ecologica o se rappresenti solo una strategia di marketing.",
+      "en": "Scrivi una recensione critica di circa 200 parole in italiano, analizzando un'etichetta commerciale fittizia e argomentando se essa favorisca una reale consapevolezza ecologica o se rappresenti solo una strategia di marketing."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizzare il testo per cogliere le sfumature retoriche, le implicazioni sottili e la tensione irrisolta tra i diversi modelli di comunicazione commerciale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La retorica degli scarti: analisi semiotica di due etichette | C1 Reading | WeLearn",
+      "en": "La retorica degli scarti: analisi semiotica di due etichette | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggere un esercizio di lettura avanzata in italiano di livello C1 incentrato su una recensione critica che mette a confronto due diverse etichette di sostenibilità alimentare.",
+      "en": "Leggere un esercizio di lettura avanzata in italiano di livello C1 incentrato su una recensione critica che mette a confronto due diverse etichette di sostenibilità alimentare."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

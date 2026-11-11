@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-open-schedule",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La Rimodulazione dell'Orario e i Suoi Effetti a Cascata",
+      "en": "La Rimodulazione dell'Orario e i Suoi Effetti a Cascata"
+    },
+    "intro": {
+      "es": "Analizza due comunicazioni interne tra docenti di un istituto superiore che discutono le ricadute organizzative di un nuovo orario flessibile.",
+      "en": "Analizza due comunicazioni interne tra docenti di un istituto superiore che discutono le ricadute organizzative di un nuovo orario flessibile."
+    },
+    "mission": {
+      "es": "Leggi le email e rispondi ai quesiti per comprendere le tensioni sottese alla gestione della flessibilità scolastica.",
+      "en": "Leggi le email e rispondi ai quesiti per comprendere le tensioni sottese alla gestione della flessibilità scolastica."
+    },
+    "targetText": "Da: Marta Rinaldi, Coordinatrice Dipartimento Lettere A: Roberto Benassi, Referente Orario e Logistica Data: 12 ottobre, ore 18:30 Oggetto: Urgente: criticità emerse con il nuovo modulo flessibile per il biennio\n\nCaro Roberto, ti scrivo a fine giornata con una certa preoccupazione riguardo all'andamento della sperimentazione sul tempo scuola che abbiamo introdotto questo mese per le classi prime e seconde. Sulla carta, la rimodulazione dell'orario in moduli dinamici di novanta minuti avrebbe dovuto allegreggiare il carico cognitivo degli studenti e consentire un recupero più mirato delle lacune disciplinari nelle ultime ore della mattinata. Tuttavia, l'applicazione pratica sta generando una serie di asimmetrie gestionali che rischiano di compromettere la stabilità dell'intera offerta formativa. Stamattina, ad esempio, la flessibilità concessa al gruppo di sostegno per anticipare i laboratori inclusivi ha di fatto paralizzato l'accesso all'aula di informatica, lasciando la mia classe di terza senza la postazione multimediale necessaria per la simulazione d'esame programmata da settimane. Questo non è un episodio isolato, ma il sintomo di una visione miope in cui l'autonomia concessa a un singolo settore si traduce inevitabilmente in una zona d'ombra e in una totale incertezza per tutti gli altri docenti che non beneficiano dello stesso grado di manovra. Il punto nodale non è la bontà intrinseca del metodo modulare, quanto l'assenza di un protocollo di compensazione che tuteli i colleghi i cui spazi e tempi vengono regolarmente sacrificati per assecondare le urgenze altrui. Se la flessibilità si riduce a una concessione estemporanea priva di contrappesi, finisce per premiare chi si muove per primo a discapito della programmazione altrui. Domani mattina alle otto, prima del suono della campanella, avrò bisogno di chiarire come intendiamo ricalibrare i flussi di accesso alle aule speciali, altrimenti sarò costretta a sospendere le attività laboratoriali di mia competenza per salvaguardare il programma ministeriale.\n\nDa: Roberto Benassi, Referente Orario e Logistica A: Marta Rinaldi, Coordinatrice Dipartimento Lettere Data: 12 ottobre, ore 21:15 Oggetto: Re: Urgente: criticità emerse con il nuovo modulo flessibile per il biennio\n\nCara Marta, ho letto con attenzione il tuo messaggio e comprendo il tuo disappunto per l'inconveniente logistico di stamane, ma ritengo che la tua analisi ribalti la prospettiva reale del problema. La sperimentazione del biennio non è un privilegio concesso a favore di pochi, ma un banco di prova imprescindibile per traghettare l'istituto verso standard pedagogici più moderni e rispondenti alle direttive europee sull'inclusione. Pretendere che ogni spostamento orario rimanga imbrigliato in una gabbia burocratica rigida significa voler mantenere una stabilità di facciata che maschera l'inefficacia della didattica tradizionale. L'episodio dell'aula di informatica, per quanto spiacevole nella sua contingenza, evidenzia una scarsa propensione al dialogo trasversale tra i dipartimenti piuttosto che un difetto strutturale del sistema. Il gruppo di sostegno ha dovuto anticipare il laboratorio perché le specifiche esigenze terapeutiche di alcuni alunni non potevano essere compresse nei vecchi spazi temporali. Tu parli di zone d'ombra, ma dimentichi che la rigidità alla quale vorresti tornare produceva ogni anno l'abbandono silenzioso di decine di ragazzi incapaci di reggere ritmi monotoni. La nostra priorità istituzionale deve rimanere la personalizzazione dei percorsi, non la quiete burocratica dei docenti di ruolo. Domani mattina non troverai alcuna modifica unilaterale al calendario generale, perché l'orario attuale è l'unico compromesso possibile tra le risorse ridotte e le crescenti richieste dell'utenza. Semmai, ti invito a ripensare la tua programmazione annuale in un'ottica di maggiore osmosi disciplinare, anziché pretendere che l'intero istituto si arresti davanti alla tua simulazione d'esame. Ti aspetto comunque nel mio ufficio alle otto per verificare se sia possibile trovare una mediazione sugli spazi residui.\n\nTuttavia, ridurre il confronto a una contrapposizione tra innovazione inclusiva e conservazione burocratica rischia di eludere il nodo finanziario e materiale che paralizza quotidianamente il nostro lavoro. Non si tratta di difendere una quiete accademica anacronistica, quanto di constatare l'assenza di investimenti strutturali adeguati a sostenere una simile rivoluzione metodologica senza raddoppiare gli spazi e le risorse umane. Pretendere la flessibilità senza ampliare la dotazione tecnologica significa inevitabilmente condannare i dipartimenti a una guerra tra poveri per l'accaparramento delle aule speciali. Domani mattina, oltre a ridiscutere i turni nel tuo ufficio, dovremo necessariamente coinvolgere la dirigenza per stabilire se esistano i fondi per sdoppiare i gruppi o se questa sperimentazione debba essere ridimensionata per manifesta inagibilità logistica. La mia non è chiusura mentale, ma realismo professionale: senza un incremento delle strutture, nessun progetto pedagogico potrà mai trasformarsi in reale progresso.",
+    "wordCount": 727,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "asimmetrie",
+        "lemma": "asimmetrie",
+        "glosses": {
+          "es": "asymmetries / imbalances",
+          "en": "asymmetries / imbalances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miope",
+        "lemma": "miope",
+        "glosses": {
+          "es": "short-sighted",
+          "en": "short-sighted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contrappesi",
+        "lemma": "contrappesi",
+        "glosses": {
+          "es": "counterweights / balances",
+          "en": "counterweights / balances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "traghettare",
+        "lemma": "traghettare",
+        "glosses": {
+          "es": "to ferry / to steer across",
+          "en": "to ferry / to steer across"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contingenza",
+        "lemma": "contingenza",
+        "glosses": {
+          "es": "contingency / current situation",
+          "en": "contingency / current situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "osmosi",
+        "lemma": "osmosi",
+        "glosses": {
+          "es": "osmosis / fluid interaction",
+          "en": "osmosis / fluid interaction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.6,
+      "maxSentenceWords": 62,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale dibattuto nello scambio di email tra i due docenti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le tensioni organizzative provocate dalla gestione disordinata della flessibilità oraria"
+        },
+        {
+          "id": "a2",
+          "text": "L'efficacia della didattica laboratoriale rispetto a quella frontale nelle classi del biennio"
+        },
+        {
+          "id": "a3",
+          "text": "La necessità di aumentare i fondi ministeriali per l'acquisto di nuove postazioni multimediali"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "l'applicazione pratica sta generando una serie di asimmetrie gestionali che rischiano di compromettere la stabilità dell'intera offerta formativa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Per quale motivo specifico il gruppo di sostegno ha modificato l'orario del laboratorio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per permettere lo svolgimento della simulazione d'esame della classe terza"
+        },
+        {
+          "id": "a2",
+          "text": "Per via di esigenze terapeutiche specifiche di alcuni alunni"
+        },
+        {
+          "id": "a3",
+          "text": "Per rispettare le nuove direttive ministeriali sull'innalzamento dell'obbligo scolastico"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il gruppo di sostegno ha dovuto anticipare il laboratorio perché le specifiche esigenze terapeutiche di alcuni alunni non potevano essere compresse nei vecchi spazi temporali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Come giudica Roberto Benassi la richiesta di maggiore rigidità avanzata da Marta Rinaldi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Come una proposta costruttiva per migliorare il rendimento scolastico degli studenti"
+        },
+        {
+          "id": "a2",
+          "text": "Come una reazione esagerata ma giustificata dai danni subiti dal dipartimento di lettere"
+        },
+        {
+          "id": "a3",
+          "text": "Come un tentativo di difendere una stabilità burocratica a scapito dell'innovazione"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Pretendere che ogni spostamento orario rimanga imbrigliato in una gabbia burocratica rigida significa voler mantenere una stabilità di facciata che maschera l'inefficacia della didattica tradizionale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Con quale intento principale Marta Rinaldi scrive la sua prima comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per pretendere l'introduzione di regole e compensazioni che tutelino le attività dei docenti non coinvolti nel biennio"
+        },
+        {
+          "id": "a2",
+          "text": "Per denunciare il fallimento pedagogico del nuovo modulo orario e chiederne l'immediata abolizione definitiva"
+        },
+        {
+          "id": "a3",
+          "text": "Per concordare un incontro mattutino in cui riprogrammare i turni di accesso dei laboratori informatici"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il punto nodale non è la bontà intrinseca del metodo modulare, quanto l'assenza di un protocollo di compensazione che tuteli i colleghi i cui spazi e tempi vengono regolarmente sacrificati per assecondare le urgenze altrui.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale sfumatura emotiva e retorica caratterizza la risposta di Roberto Benassi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un atteggiamento remissivo e conciliante teso a minimizzare l'accaduto e a scusarsi per il disagio"
+        },
+        {
+          "id": "a2",
+          "text": "Un tono fermo e polemico che respinge le accuse rovesciando la responsabilità sull'interlocutrice"
+        },
+        {
+          "id": "a3",
+          "text": "Un registro distaccato e burocratico che evita il confronto diretto sui problemi logistici sollevati"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ho letto con attenzione il tuo messaggio e comprendo il tuo disappunto per l'inconveniente logistico di stamane, ma ritengo che la tua analisi ribalti la prospettiva reale del problema.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa esprime esattamente l'espressione 'zona d'ombra' usata da Marta Rinaldi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uno spazio fisico dell'istituto privo di copertura di rete e di illuminazione naturale"
+        },
+        {
+          "id": "a2",
+          "text": "Un momento della giornata scolastica in cui gli studenti manifestano cali di attenzione"
+        },
+        {
+          "id": "a3",
+          "text": "Una condizione di totale incertezza e svantaggio gestionale subita da chi subisce decisioni altrui"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "si traduce inevitabilmente in una zona d'ombra e in una totale incertezza per tutti gli altri docenti che non beneficiano dello stesso grado di manovra.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa 200 parole in cui analizzi i pro e i contro dell'introduzione di un orario scolastico flessibile, prendendo posizione sul bilanciamento tra esigenze inclusive e pianificazione didattica.",
+      "en": "Scrivi un testo argomentativo di circa 200 parole in cui analizzi i pro e i contro dell'introduzione di un orario scolastico flessibile, prendendo posizione sul bilanciamento tra esigenze inclusive e pianificazione didattica."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggi le email e rispondi ai quesiti per comprendere le tensioni sottese alla gestione della flessibilità scolastica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La Rimodulazione dell'Orario e i Suoi Effetti a Cascata | C1 Reading | WeLearn",
+      "en": "La Rimodulazione dell'Orario e i Suoi Effetti a Cascata | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analizza due comunicazioni interne tra docenti di un istituto superiore che discutono le ricadute organizzative di un nuovo orario flessibile.",
+      "en": "Analizza due comunicazioni interne tra docenti di un istituto superiore che discutono le ricadute organizzative di un nuovo orario flessibile."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

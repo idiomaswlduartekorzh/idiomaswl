@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'eco della sintassi",
+      "en": "L'eco della sintassi"
+    },
+    "intro": {
+      "es": "Leggere un racconto critico di livello C1 su un dibattito tra un archivista e una narratrice riguardo alla conservazione della voce orale nell'archivio storico.",
+      "en": "Leggere un racconto critico di livello C1 su un dibattito tra un archivista e una narratrice riguardo alla conservazione della voce orale nell'archivio storico."
+    },
+    "mission": {
+      "es": "Leggi il testo e dimostra la comprensione della tensione tra rigore filologico e autenticità narrativa rispondendo alle domande e completando il compito di produzione scritta.",
+      "en": "Leggi il testo e dimostra la comprensione della tensione tra rigore filologico e autenticità narrativa rispondendo alle domande e completando il compito di produzione scritta."
+    },
+    "targetText": "L'aria nell'archivio sotterraneo sapeva sempre di carta invecchiata e polvere silente, un odore che per Lorenzo era sinonimo di ordine e rispetto. Da vent'anni curava le registrazioni della memoria popolare della valle, catalogando cassette magnetiche e bobine con la precisione di un notaio. Quella sera, tuttavia, la quiete fu interrotta dall'arrivo di Marta, narratrice teatrale e sua collaboratrice di lunga data, la quale teneva in mano una trascrizione appena ultimata. Sulla scrivania in legno massello, sotto la luce fioca di una lampada verde, si consumò l'ennesimo scontro metodologico che covava da mesi.\n\nMarta aveva lavorato alle interviste raccolte dai vecchi contadini del monte, trasformandole in un dramma corale per il festival estivo. Lorenzo, scorrendo le pagine con i guanti di cotone ancora indosso, aggrottò la fronte di fronte a una serie di modifiche strutturali. 'Hai rimosso le esitazioni, hai regolarizzato i congiuntivi e persino eliminato le ripetizioni dialettali nei passaggi chiave,' osservò con tono freddo, indicando con la punta della matita un capoverso emendato. Per l'archivista, ogni anacoluto e ogni esitazione rappresentavano il DNA irripetibile del parlante, un reperto antropologico che non poteva essere alterato senza tradire la verità storica del documento sonoro originale.\n\nLa replica di Marta fu immediata, sostenuta da una convinzione profonda che ribaltava la prospettiva filologica. Sostenne che la fedeltà letterale alla trascrizione nuda e cruda produceva, paradossalmente, una falsificazione peggiore sulla scena teatrale. Secondo la sua visione artistica, il pubblico moderno non ascolta la voce reale attraverso una pagina scritta ma percepisce solo il disagio o l'inefficacia comunicativa del soggetto. Correggere la sintassi non significava tradire il parlante, bensì liberare il nucleo emotivo del suo racconto dalle scorie di un'oralità disordinata che, sulla carta, rischiava di apparire grottesca o incoerente. La grammatica corretta, in questo contesto performativo, fungeva da amplificatore della dignità narrativa.\n\nIl dibattito si inacidì quando Lorenzo ricordò a Marta che la loro missione istituzionale non era intrattenere le masse con artifici retorici, ma preservare la lingua nella sua nuda autenticità. 'Se levi le asperità, elimini l'individuo e lasci spazio a un fantasma stilizzato da te,' tuonò l'archivista, battendo il palmo sul tavolo. Marta, tuttavia, ribatté che un archivio morto e incomprensibile non serviva a nessuno, e che la vera conservazione risiedeva nella capacità di mantenere viva la risonanza umana di quei racconti, anche a costo di piegare la sintassi alle esigenze della ricezione contemporanea. Ciascuno dei due difendeva una porzione di verità: Lorenzo la tutela del reperto, Marta la vitalità del messaggio.\n\nLa spaccatura divenne insanabile quando si accorsero che il finanziamento europeo per la pubblicazione multimediale imponeva un formato unico. Non potendo trovare un compromesso, decisero di dividere il materiale: Lorenzo avrebbe pubblicato le registrazioni grezze con trascrizioni diplomatiche, mentre Marta avrebbe portato in scena la sua versione rielaborata. Quel compromesso amministrativo lasciò tuttavia un retrogusto amaro in entrambi. L'archivio rimase intatto nei suoi scaffali metallici, custode muto di voci che nessuno avrebbe più ascoltato senza filtri, mentre la voce dei montanari, pur applaudita nei teatri, aveva ormai smarrito la polvere originaria della terra per indossare gli abiti lucidi della letteratura.\n\nNegli anni successivi, questa scissione metodologica finì per ridefinire non solo il destino del loro archivio, ma l'intera percezione culturale della valle. Da un lato, la pubblicazione delle trascrizioni diplomatiche curata da Lorenzo trovò spazio quasi esclusivamente nelle biblioteche universitarie e tra le strette cerchie dei linguisti storici, trasformandosi in un monumento filologico rigoroso ma irrimediabilmente confinato nel silenzio accademico. Le bobine magnetiche, digitalizzate con cura maniacale, riposavano in server protetti, accessibili a pochi eruditi capaci di decodificare la complessità di un'oralità ormai estinta, privata di qualsiasi risonanza emotiva diretta con il presente. Dall'altro lato, lo spettacolo teatrale di Marta replicò trionfalmente nei cartelloni di mezza regione, riscuotendo consensi unanimi di pubblico e critica grazie alla potenza drammaturgica di una lingua levigata e resa universale. Eppure, proprio nel momento del massimo trionfo scenico, la regista avvertì un sottile senso di vuoto, la consapevolezza di aver dato voce a un coro potentissimo ma artificiale, dove i vecchi montanari avevano abdicato alla propria unicità per diventare archetipi letterari. L'equilibrio perduto tra la fredda tutela del reperto e la seduzione della performance dimostrò che la memoria, per sopravvivere davvero, oscillava perennemente tra il tradimento della forma e l'oblio della sostanza, lasciando entrambi i vecchi collaboratori a interrogarsi sul confine sottile tra il preservare la storia e reinventarla.",
+    "wordCount": 724,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "anacoluto",
+        "lemma": "anacoluto",
+        "glosses": {
+          "es": "A grammatical fracture in a sentence where the initial structure is abandoned.",
+          "en": "A grammatical fracture in a sentence where the initial structure is abandoned."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emendato",
+        "lemma": "emendato",
+        "glosses": {
+          "es": "Corrected, edited, or revised to remove errors or irregularities.",
+          "en": "Corrected, edited, or revised to remove errors or irregularities."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scorie",
+        "lemma": "scorie",
+        "glosses": {
+          "es": "Residues, dregs, or unwanted elements left over from a process.",
+          "en": "Residues, dregs, or unwanted elements left over from a process."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insanabile",
+        "lemma": "insanabile",
+        "glosses": {
+          "es": "Irreparable, deep-rooted, and impossible to resolve.",
+          "en": "Irreparable, deep-rooted, and impossible to resolve."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "diplomatiche",
+        "lemma": "diplomatiche",
+        "glosses": {
+          "es": "Pertaining to exact, faithful transcriptions of historical manuscripts.",
+          "en": "Pertaining to exact, faithful transcriptions of historical manuscripts."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retrogusto",
+        "lemma": "retrogusto",
+        "glosses": {
+          "es": "An aftertaste, leaving a lingering, slightly bitter emotional impression.",
+          "en": "An aftertaste, leaving a lingering, slightly bitter emotional impression."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.8,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale che muove il conflitto tra i due protagonisti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il limite tra fedeltà filologica e manipolazione espressiva della voce orale."
+        },
+        {
+          "id": "a2",
+          "text": "La divisione dei fondi europei per il festival."
+        },
+        {
+          "id": "a3",
+          "text": "La scelta della sede fisica in cui conservare i nastri magnetici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "si consumò l'ennesimo scontro metodologico che covava da mesi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Come giustifica Marta il suo intervento di regolarizzazione sintattica?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Permette di accelerare i tempi di catalogazione imposti dall'Unione Europea."
+        },
+        {
+          "id": "a2",
+          "text": "Serve a liberare il nucleo emotivo del racconto ed evitare che appaia grottesco sulla scena."
+        },
+        {
+          "id": "a3",
+          "text": "Garantisce che i vecchi contadini ricevano maggiori diritti d'autore."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "liberare il nucleo emotivo del suo racconto dalle scorie di un'oralità disordinata che, sulla carta, rischiava di apparire grottesca o incoerente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa simboleggia la separazione finale dei materiali?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un trionfo della collaborazione interdisciplinare nel settore culturale."
+        },
+        {
+          "id": "a2",
+          "text": "La vittoria definitiva della ricerca scientifica sul teatro popolare."
+        },
+        {
+          "id": "a3",
+          "text": "Un fallimento comunicativo che impoverisce entrambe le dimensioni della memoria."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "L'archivio rimase intatto nei suoi scaffali metallici, custode muto di voci che nessuno avrebbe più ascoltato senza filtri, mentre la voce dei montanari, pur applaudita nei teatri, aveva ormai smarrito la polvere originaria della terra per indossare gli abiti lucidi della letteratura.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale dell'intervento di Lorenzo sui testi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Preservare l'autenticità antropologica e il DNA irripetibile del parlante."
+        },
+        {
+          "id": "a2",
+          "text": "Adattare i dialoghi per una rappresentazione teatrale di successo."
+        },
+        {
+          "id": "a3",
+          "text": "Correggere gli errori grammaticali prima di pubblicare un romanzo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Per l'archivista, ogni anacoluto e ogni esitazione rappresentavano il DNA irripetibile del parlante, un reperto antropologico che non poteva essere alterato",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono predomina nella descrizione del confronto tra Lorenzo e Marta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Incuriosito e leggero."
+        },
+        {
+          "id": "a2",
+          "text": "Intellettuale, teso e disilluso."
+        },
+        {
+          "id": "a3",
+          "text": "Ironico e farsesco."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La spaccatura divenne insanabile quando si accorsero che il finanziamento europeo per la pubblicazione multimediale imponeva un formato unico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, che cosa indica precisamente il termine 'scorie'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I materiali di scarto accumulati negli scaffali dell'archivio."
+        },
+        {
+          "id": "a2",
+          "text": "Le critiche negative ricevute dai critici teatrali."
+        },
+        {
+          "id": "a3",
+          "text": "Gli elementi di disturbo e le irregolarità di un'oralità disordinata."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "liberare il nucleo emotivo del suo racconto dalle scorie di un'oralità disordinata",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi se la correzione della grammatica nei documenti orali storici costituisca un tradimento della memoria o una necessaria mediazione culturale, facendo riferimento al testo letto.",
+      "en": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi se la correzione della grammatica nei documenti orali storici costituisca un tradimento della memoria o una necessaria mediazione culturale, facendo riferimento al testo letto."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggi il testo e dimostra la comprensione della tensione tra rigore filologico e autenticità narrativa rispondendo alle domande e completando il compito di produzione scritta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'eco della sintassi | C1 Reading | WeLearn",
+      "en": "L'eco della sintassi | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggere un racconto critico di livello C1 su un dibattito tra un archivista e una narratrice riguardo alla conservazione della voce orale nell'archivio storico.",
+      "en": "Leggere un racconto critico di livello C1 su un dibattito tra un archivista e una narratrice riguardo alla conservazione della voce orale nell'archivio storico."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

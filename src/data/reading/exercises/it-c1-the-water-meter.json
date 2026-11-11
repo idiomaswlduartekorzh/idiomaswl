@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-water-meter",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il paradosso dei contatori aggregati",
+      "en": "Il paradosso dei contatori aggregati"
+    },
+    "intro": {
+      "es": "Leggere un articolo giornalistico adattato di livello C1 incentrato sulle politiche di consumo idrico urbano e le distorsioni statistiche generate dai contatori centralizzati.",
+      "en": "Leggere un articolo giornalistico adattato di livello C1 incentrato sulle politiche di consumo idrico urbano e le distorsioni statistiche generate dai contatori centralizzati."
+    },
+    "mission": {
+      "es": "Leggi il testo e rispondi alle domande di comprensione per analizzare le sfumature retoriche e le implicazioni nascoste dei dati statistici.",
+      "en": "Leggi il testo e rispondi alle domande di comprensione per analizzare le sfumature retoriche e le implicazioni nascoste dei dati statistici."
+    },
+    "targetText": "L'assessorato comunale all'ambiente ha recentemente pubblicato il bilancio idrico annuale, sbandierando con orgoglio una contrazione generale dei consumi domestici nei quartieri residenziali della periferia nord. Secondo le tabelle diffuse dall'ente, ogni nucleo familiare avrebbe ridotto il proprio prelievo giornaliero di risorse idriche, un traguardo attribuito a una maggiore consapevolezza ecologica e all'adozione diffusa di riduttori di flusso. Tuttavia, dietro la rassicurante linearità di queste medie aritmetiche si cela una realtà distorta, denunciata da un comitato di quartiere guidato dall'ingegnere idraulico Valeria Moretti. Al centro della polemica vi sono i grandi complessi residenziali dotati di contatori generali condominiali, strutture in cui il consumo effettivo non viene ripartito puntualmente per singola unità abitativa, ma viene stimato attraverso coefficienti catastali obsoleti.\n\nDurante un acceso consiglio di circoscrizione tenutosi martedì scorso, Moretti ha presentato un'analisi tecnica che ribalta la narrazione ufficiale. I dati aggregati forniti dal municipio non riflettono affatto una virtuosa sobrietà dei cittadini, bensì mascherano una falla colossale nella gestione delle perdite infrastrutturali. Nei condomini con contatore unico, la differenza tra l'acqua effettivamente fatturata dall'azienda erogatrice e la somma dei consumi interni stimati viene ripartita d'ufficio tra tutti i condòmini sotto la voce di conguaglio collettivo. Di conseguenza, le perdite occulte dovute a tubature sotterranee logore e a autoclavi difettose non vengono riparate tempestivamente dai proprietari, poiché il costo economico viene diluito e invisibilmente assorbito dalla collettività, falsando a monte le rilevazioni statistiche che l'amministrazione utilizza per elogiare la propria pianificazione.\n\nPeraltro, sebbene l'amministrazione riconosca formalmente la necessità di ammodernare la rete di monitoraggio, i funzionari comunali continuano a sostenere che la media ponderata rimanga uno strumento valido per fotografare i macro-trend ecologici della città. Questa posizione difensiva ignora deliberatamente l'effetto perverso generato sui comportamenti individuali. Nelle palazzine gestite con contabilizzazione centralizzata, i residenti virtuosi che limitano drasticamente l'uso dell'acqua si ritrovano comunque a pagare bollette elevate a causa delle dispersioni strutturali non contabilizzate nei singoli appartamenti. Tale iniquità economica disincentiva qualsiasi reale sforzo di conservazione, poiché il risparmio domestico viene sistematicamente eroso dai costi occulti addebitati collettivamente.\n\nLa situazione è degenerata quando il comitato ha reso pubbliche le bollette dettagliate di tre stabili popolari, dimostrando che l'asserita decrescita dei consumi era smentita dai flussi costanti registrati dai misuratori generali all'ingresso degli edifici. La contrapposizione tra la fredda e rassicurante statistica comunale e la concreta ingiustizia subita dalle famiglie a basso reddito ha spinto il capogruppo della maggioranza, Lorenzo Rossi, a convocare un tavolo tecnico d'urgenza. Rossi ha cercato di stemperare le tensioni ammettendo che il sistema di rilevazione necessita di correttivi, pur ribadendo che la priorità finanziaria dell'ente resta il risanamento dei grandi acquedotti primari e non la sostituzione capillare dei sotto-contatori privati.\n\nIl braccio di ferro si è concluso con un compromesso fragile e insoddisfacente: il comune ha promesso di installare misuratori di portata intelligenti in via sperimentale solo in una manciata di edifici campione, rinviando a data da destinarsi una riforma strutturale della contabilizzazione. Nel frattempo, l'illusione della sostenibilità urbana continua a regredire di fronte all'opacità dei dati aggregati. La conservazione dell'acqua, anziché essere il frutto di un patto civico consapevole, si arena nelle sabbie mobili di una burocrazia incapace di leggere la complessità del territorio, lasciando irrisolto il conflitto tra la forma della rendicontazione e la sostanza della giustizia ambientale.\n\nA complicare ulteriormente questo scenario già compromesso interviene una questione di natura giuridica e contrattuale che finora è stata colpevolmente marginalizzata nel dibattito pubblico. Le compagnie di gestione del servizio idrico integrato, vincolate da rigidi contratti di concessione stipurati decenni fa, applicano tariffe a scaglioni progressivi calcolate unicamente sul volume complessivo transitato attraverso il contatore generale condominiale. Questa modalità di calcolo produce l'effetto paradossale e iniquo di sanzionare pesantemente i grandi stabili popolari: l'elevato volume d'acqua disperso a causa delle perdite infrastrutturali occulte fa schizzare il consumo totale oltre le soglie di tolleranza, catapultando l'intero condominio negli scaglioni tariffari più elevati. Di conseguenza, le famiglie residenti si ritrovano a pagare ogni singolo metro cubo di risorsa sprecata a tariffe di massimo prelievo, come se stessero compiendo abusi sconsiderati, mentre il gestore incassa profitti illeciti generati proprio dalle inefficienze della rete che avrebbe l'obbligo contrattuale di manutenere. L'ingegnere Moretti, insieme al comitato civico, ha ribadito con forza che finché non verrà giuridicamente imposto l'obbligo di scorporare le perdite occulte dalla fatturazione destinata agli utenti finali, ogni proclama ecologista dell'assessorato rimarrà una mera operazione di facciata, incapace di arginare la frustrazione sociale e destinata a fallire miseramente di fronte alla cruda realtà dei fatti.",
+    "wordCount": 744,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sbandierando",
+        "lemma": "sbandierando",
+        "glosses": {
+          "es": "flaunting",
+          "en": "flaunting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conguaglio",
+        "lemma": "conguaglio",
+        "glosses": {
+          "es": "adjustment payment",
+          "en": "adjustment payment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "occulte",
+        "lemma": "occulte",
+        "glosses": {
+          "es": "hidden",
+          "en": "hidden"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "perverso",
+        "lemma": "perverso",
+        "glosses": {
+          "es": "perverse",
+          "en": "perverse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stemperare",
+        "lemma": "stemperare",
+        "glosses": {
+          "es": "to defuse",
+          "en": "to defuse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "opacità",
+        "lemma": "opacità",
+        "glosses": {
+          "es": "opacity",
+          "en": "opacity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.3,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nel testo riguardo ai dati sui consumi idrici?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La discrepanza tra le medie statistiche ufficiali e la realtà dei contatori condominiali."
+        },
+        {
+          "id": "a2",
+          "text": "La totale inefficacia dei riduttori di flusso nelle abitazioni."
+        },
+        {
+          "id": "a3",
+          "text": "La scelta del comune di aumentare le tariffe dell'acqua per tutti i cittadini."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Al centro della polemica vi sono i grandi complessi residenziali dotati di contatori generali condominiali, strutture in cui il consumo effettivo non viene ripartito puntualmente per singola unità abitativa, ma viene stimato attraverso coefficienti catastali obsoleti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Chi ha guidato la contestazione contro i dati diffusi dal comune?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il capogruppo della maggioranza Lorenzo Rossi."
+        },
+        {
+          "id": "a2",
+          "text": "Un comitato di quartiere guidato dall'ingegnere Valeria Moretti."
+        },
+        {
+          "id": "a3",
+          "text": "I tecnici dell'azienda erogatrice dell'acqua."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "denunciata da un comitato di quartiere guidato dall'ingegnere idraulico Valeria Moretti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché i residenti virtuosi nei condomini non traggono beneficio dal loro risparmio idrico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché l'azienda erogatrice aumenta automaticamente il costo per metro cubo."
+        },
+        {
+          "id": "a2",
+          "text": "Perché i contatori intelligenti registrano flussi falsati durante la notte."
+        },
+        {
+          "id": "a3",
+          "text": "Perché le perdite occulte e i costi strutturali vengono ripartiti collettivamente."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Nelle palazzine gestite con contabilizzazione centralizzata, i residenti virtuosi che limitano drasticamente l'uso dell'acqua si ritrovano comunque a pagare bollette elevate a causa delle dispersioni strutturali non contabilizzate nei singoli appartamenti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Con quale intenzione Lorenzo Rossi ha convocato un tavolo tecnico d'urgenza?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per stemperare le tensioni dopo la pubblicazione delle bollette dettagliate."
+        },
+        {
+          "id": "a2",
+          "text": "Per sanzionare i condòmini inadempienti e imporre nuove tasse."
+        },
+        {
+          "id": "a3",
+          "text": "Per annullare definitivamente il bilancio idrico dell'anno precedente."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Rossi ha cercato di stemperare le tensioni ammettendo che il sistema di rilevazione necessita di correttivi, pur ribadendo che la priorità finanziaria dell'ente resta il risanamento dei grandi acquedotti primari e non la sostituzione capillare dei sotto-contatori privati.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere l'esito finale del confronto tra comitato e amministrazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e fiducioso per la risoluzione definitiva del problema idrico."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e disilluso verso un compromesso giudicato fragile e insufficiente."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e puramente descrittivo di fronte a una normale dinamica amministrativa."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il braccio di ferro si è concluso con un compromesso fragile e insoddisfacente: il comune ha promesso di installare misuratori di portata intelligenti in via sperimentale solo in una manciata di edifici campione, rinviando a data da destinarsi una riforma strutturale della contabilizzazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, che cosa significa il termine \"conguaglio\" nel contesto delle bollette condominiali?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un rimborso economico erogato dal comune per premiare il risparmio idrico."
+        },
+        {
+          "id": "a2",
+          "text": "Una sanzione amministrativa inflitta per l'uso eccessivo di acqua potabile."
+        },
+        {
+          "id": "a3",
+          "text": "Il pagamento di una somma aggiuntiva per coprire le differenze tra stime e consumi reali."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la differenza tra l'acqua effettivamente fatturata dall'azienda erogatrice e la somma dei consumi interni stimati viene ripartita d'ufficio tra tutti i condòmini sotto la voce di conguaglio collettivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi come l'uso di dati statistici aggregati possa distorcere la percezione pubblica dei problemi ambientali urbani, portando a politiche inefficaci.",
+      "en": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi come l'uso di dati statistici aggregati possa distorcere la percezione pubblica dei problemi ambientali urbani, portando a politiche inefficaci."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggi il testo e rispondi alle domande di comprensione per analizzare le sfumature retoriche e le implicazioni nascoste dei dati statistici.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il paradosso dei contatori aggregati | C1 Reading | WeLearn",
+      "en": "Il paradosso dei contatori aggregati | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggere un articolo giornalistico adattato di livello C1 incentrato sulle politiche di consumo idrico urbano e le distorsioni statistiche generate dai contatori centralizzati.",
+      "en": "Leggere un articolo giornalistico adattato di livello C1 incentrato sulle politiche di consumo idrico urbano e le distorsioni statistiche generate dai contatori centralizzati."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

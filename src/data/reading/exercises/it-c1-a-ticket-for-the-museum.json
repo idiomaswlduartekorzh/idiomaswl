@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Illusione della Soglia",
+      "en": "L'Illusione della Soglia"
+    },
+    "intro": {
+      "es": "Leggi questa recensione critica sulla sostenibilità economica dell'accesso museale gratuito e rispondi alle domande.",
+      "en": "Leggi questa recensione critica sulla sostenibilità economica dell'accesso museale gratuito e rispondi alle domande."
+    },
+    "mission": {
+      "es": "Analizza il testo per comprendere le sfumature retoriche e la tensione irrisolta tra la retorica dell'inclusione culturale e la realtà logistica dei visitatori.",
+      "en": "Analizza il testo per comprendere le sfumature retoriche e la tensione irrisolta tra la retorica dell'inclusione culturale e la realtà logistica dei visitatori."
+    },
+    "targetText": "La recente conferenza stampa indetta dalla direzione del Museo Civico di Belle Arti ha celebrato con toni trionfalistici l'adozione del regime di ingresso libero permanente, presentato come una vittoria epocale per la democratizzazione del sapere e l'abbattimento delle barriere socio-economiche. Il direttore, avvolto in una retorica intrisa di filantropia istituzionale, ha proclamato che le porte dell'istituzione sono ormai spalancate a chiunque desideri varcarle, trasformando il tempio dell'arte in una piazza civica accessibile a ogni cittadino. Questa narrazione edificante, sebbene seducente nella sua immediatezza populistico-emotiva, rimuove accuratamente i costi invisibili che gravano silenziosamente sulle spalle dei potenziali fruitori, riducendo il concetto complesso di accessibilità culturale a una mera questione di azzeramento del biglietto d'ingresso.\n\nA un'analisi meno superficiale, l'abolizione del ticket si rivela un provvedimento largamente simbolico, che beneficia in misura sproporzionata i residenti benestanti dei quartieri centrali, già abituati a frequentare i circuiti culturali, mentre produce scarsi effetti sui lavoratori pendolari e sulle famiglie monoreddito della periferia urbana. L'equazione secondo cui la gratuità materiale equivalga automaticamente all'inclusione sociale ignora del tutto l'architettura logistica della fruizione museale. Per un nucleo familiare operaio che abita nella cinta esterna della metropoli, pianificare una visita domenicale non significa semplicemente presentarsi davanti al portone monumentale; comporta una catena di esborsi monetari e di sacrifici temporali che nessun decreto direttoriale potrà mai cancellare. Il costo dei trasporti pubblici per quattro persone, unito all'inevitabile consumo di pasti fuori casa, costituisce già una barriera economica tangibile che vanifica la generosità teorica del provvedimento.\n\nA rendere il quadro ancor più gravoso interviene la variabile dimenticata del lavoro di cura e della gestione logistica familiare, un aspetto che la direzione museale ha liquidato con fastidiosa sufficienza durante il dibattito pubblico. Durante il convegno, la curatrice capo ha risposto alle obiezioni sollevate dai comitati di quartiere liquidando la questione del tempo libero come un fattore meramente individuale, dimenticando che l'accesso alla cultura richiede risorse cognitive ed energetiche che chi vive in condizioni di costante precarietà economica ha già esaurito nei turni di lavoro faticosi. Per una madre single impiegata nel settore della logistica notturna, il museo gratuito non è una risorsa fruibile, bensì un lusso concettuale irraggiungibile, poiché il tempo necessario per visitare le sale espositive coincide con l'unico momento utile per il recupero psicofisico o per la gestione domestica non retribuita.\n\nNon si intende qui negare il valore intrinseco delle politiche orientate all'apertura civica, né sminuire l'importanza simbolica di uno spazio pubblico che rinuncia alla rendita da biglietteria per affermare la centralità del patrimonio collettivo. Tuttavia, vi è una forma di malafede intellettuale nel pretendere di risolvere la complessa stratificazione delle disuguaglianze culturali attraverso un intervento a costo zero per l'amministrazione, che peraltro rischia di trasferire il peso della gestione sui bilanci della manutenzione ordinaria e sulla precarizzazione del personale interno. Quando un'istituzione statale sbandiera l'accesso universale senza predisporre un sistema di sussidi alla mobilità o senza prolungare gli orari di apertura per chi lavora fino a tardi, la gratuità si trasforma in un privilegio per pochi oziosi travestito da bene comune.\n\nIn definitiva, la tanto acclamata riforma del Museo Civico si configura non già come un ponte gettato verso gli emarginati, ma come uno specchio deformante che riflette le ipocrisie delle politiche culturali contemporanee. Finché la fruizione dell'arte rimarrà un privilegio subordinato alla disponibilità di tempo libero e di surplus economico, ogni proclama di apertura universale resterà un esercizio di retorica autoreferenziale. La vera sfida non consiste nel rimuovere il pedaggio all'ingresso, ma nel decostruire le disuguaglianze sistemiche che impediscono ai cittadini di varcare quella soglia con la stessa dignità, la stessa serenità e lo stesso diritto alla sosta contemplativa oggi riservati a un'élite privilegiata.\n\nA completare questo scenario di criticità strutturale si inserisce il paradosso della sostenibilità finanziaria a lungo termine, che l'amministrazione comunale sembra colpevolmente ignorare pur di alimentare la propria propaganda mediatica. La mancata entrata derivante dalla biglietteria, lungi dall'essere compensata da un incremento strutturale dei fondi pubblici, rischia di innescare una spirale di progressivo depauperamento dell'offerta espositiva e di drastico ridimensionamento dei servizi educativi dedicati alle scuole di periferia. Senza risorse adeguate per la manutenzione straordinaria e per l'allestimento di mostre innovative, il museo gratuito si condanna a una lenta ma inesorabile stagnazione culturale, trasformandosi in un contenitore vuoto e polveroso che non attrae più nessuno, eccezion fatta per i turisti occasionali di passaggio. Invece di rappresentare un presidio di cittadinanza attiva e di crescita collettiva, l'istituzione finisce così per impoverire proprio quel patrimonio che avrebbe il dovere morale di valorizzare e tramandare alle future generazioni.",
+    "wordCount": 751,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "trionfalistici",
+        "lemma": "trionfalistici",
+        "glosses": {
+          "es": "triumphalistic",
+          "en": "triumphalistic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spalancate",
+        "lemma": "spalancate",
+        "glosses": {
+          "es": "wide open",
+          "en": "wide open"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pendolari",
+        "lemma": "pendolari",
+        "glosses": {
+          "es": "commuters",
+          "en": "commuters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sufficienza",
+        "lemma": "sufficienza",
+        "glosses": {
+          "es": "haughtiness / arrogance",
+          "en": "haughtiness / arrogance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autoreferenziale",
+        "lemma": "autoreferenziale",
+        "glosses": {
+          "es": "self-referential",
+          "en": "self-referential"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "soglia",
+        "lemma": "soglia",
+        "glosses": {
+          "es": "threshold",
+          "en": "threshold"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 37.5,
+      "maxSentenceWords": 53,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato dall'autore della recensione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'illusione dell'accesso museale gratuito che ignora i costi reali dei visitatori"
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di aumentare il prezzo dei biglietti per migliorare i servizi"
+        },
+        {
+          "id": "a3",
+          "text": "Il fallimento gestionale ed economico dei musei statali periferici"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Questa narrazione edificante, sebbene seducente nella sua immediatezza populistico-emotiva, rimuove accuratamente i costi invisibili che gravano silenziosamente sulle spalle dei potenziali fruitori",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale categoria di persone beneficia maggiormente della gratuità secondo l'analisi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I lavoratori pendolari delle aree industriali esterne"
+        },
+        {
+          "id": "a2",
+          "text": "I residenti benestanti dei quartieri centrali"
+        },
+        {
+          "id": "a3",
+          "text": "Le famiglie monoreddito con figli piccoli"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'abolizione del ticket si rivela un provvedimento largamente simbolico, che beneficia in misura sproporzionata i residenti benestanti dei quartieri centrali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa si deduce riguardo al tempo libero delle classi lavoratrici?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È interamente dedicato alla visita dei musei cittadini"
+        },
+        {
+          "id": "a2",
+          "text": "È aumentato grazie alle recenti riforme del lavoro notturno"
+        },
+        {
+          "id": "a3",
+          "text": "È fortemente condizionato dalla fatica e dalle necessità di sopravvivenza"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "chi vive in condizioni di costante precarietà economica ha già esaurito nei turni di lavoro faticosi",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'autore menziona il costo dei trasporti e dei pasti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per dimostrare che la gratuità formale non elimina le spese reali della visita"
+        },
+        {
+          "id": "a2",
+          "text": "Per suggerire l'apertura di punti di ristoro economici dentro le sale"
+        },
+        {
+          "id": "a3",
+          "text": "Per criticare i prezzi eccessivi dei biglietti di autobus e treni"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il costo dei trasporti pubblici per quattro persone, unito all'inevitabile consumo di pasti fuori casa, costituisce già una barriera economica tangibile che vanifica la generosità teorica del provvedimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tonalità emotiva e retorica caratterizza lo stile del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e celebrativa verso le istituzioni"
+        },
+        {
+          "id": "a2",
+          "text": "Critica, disincantata e polemica verso la retorica ufficiale"
+        },
+        {
+          "id": "a3",
+          "text": "Distaccata, neutrale e puramente descrittiva"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la tanto acclamata riforma del Museo Civico si configura non già come un ponte gettato verso gli emarginati, ma come uno specchio deformante che riflette le ipocrisie delle politiche culturali contemporanee.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel contesto del primo paragrafo, cosa significa l'espressione 'retorica intrisa di filantropia istituzionale'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un discorso pubblico falso che nasconde interessi commerciali e vendite di biglietti"
+        },
+        {
+          "id": "a2",
+          "text": "Una proposta politica concreta basata sulla donazione volontaria dei cittadini"
+        },
+        {
+          "id": "a3",
+          "text": "Uno stile comunicativo ufficiale che enfatizza falsamente la benevolenza sociale"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il direttore, avvolto in una retorica intrisa di filantropia istituzionale, ha proclamato che le porte dell'istituzione sono ormai spalancate",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una risposta critica di circa 200 parole in cui analizzi se la gratuità dei luoghi della cultura debba essere accompagnata da sussidi logistici per raggiungere una reale equità sociale.",
+      "en": "Scrivi una risposta critica di circa 200 parole in cui analizzi se la gratuità dei luoghi della cultura debba essere accompagnata da sussidi logistici per raggiungere una reale equità sociale."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizza il testo per comprendere le sfumature retoriche e la tensione irrisolta tra la retorica dell'inclusione culturale e la realtà logistica dei visitatori.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Illusione della Soglia | C1 Reading | WeLearn",
+      "en": "L'Illusione della Soglia | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggi questa recensione critica sulla sostenibilità economica dell'accesso museale gratuito e rispondi alle domande.",
+      "en": "Leggi questa recensione critica sulla sostenibilità economica dell'accesso museale gratuito e rispondi alle domande."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

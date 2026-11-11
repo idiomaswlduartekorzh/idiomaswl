@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Eredità dei Semi Silenziosi",
+      "en": "L'Eredità dei Semi Silenziosi"
+    },
+    "intro": {
+      "es": "Un racconto ambientato nella comunità rurale di Valfiorita, dove la rivalità tra due famiglie per il riconoscimento della custodia di un legume antico minaccia di dividere la biblioteca dei semi.",
+      "en": "Un racconto ambientato nella comunità rurale di Valfiorita, dove la rivalità tra due famiglie per il riconoscimento della custodia di un legume antico minaccia di dividere la biblioteca dei semi."
+    },
+    "mission": {
+      "es": "Leggi il testo e analizza la complessità delle dinamiche comunitarie e delle interpretazioni storiche contrastanti.",
+      "en": "Leggi il testo e analizza la complessità delle dinamiche comunitarie e delle interpretazioni storiche contrastanti."
+    },
+    "targetText": "Nella piccola comunità montana di Valfiorita, il concetto di conservazione agricola non era mai stato un esercizio accademico, bensì una pratica quotidiana di sopravvivenza e memoria. Al centro di questo fragile ecosistema si trovava la Biblioteca dei Semi, un archivio vivente ospitato nell'ex granaio comunale dove i contadini depositavano le varietà locali per garantirne la continuità stagionale. Quest'anno, tuttavia, l'attenzione generale non era rivolta ai consueti scambi autunnali, bensì alla vexata quaestio del fagiolo a toppa, un legume dalla buccia screziata che aveva sfamato il paese durante i mesi più duri del dopoguerra e la cui storia genetica rischiava di perdersi nell'oblio della modernità.\n\nIl conflitto latente vedeva contrapposte due famiglie storiche: i Moretti e i Calegari. I Moretti, guidati dall'anziana Teresa, sostenevano che il merito della salvaguardia spettasse di diritto al loro ramo familiare. Teresa argomentava, con la forza di una tradizione tramandata oralmente, che i suoi avi avevano selezionato i semi migliori anno dopo anno, custodendoli in recipienti di terracotta sigillati con la cera d'api durante le notti di luna calante. Secondo la narrazione dei Moretti, nessun altro in valle possedeva la competenza necessaria per riconoscere il grado perfetto di essiccazione, un sapere che trascendeva la semplice agricoltura per farsi rituale domestico.\n\nDall'altra parte della barricata, Pietro Calegari respingeva con sdegno questa ricostruzione autoreferenziale. Pietro, che aveva trascorso gli ultimi anni a catalogare sistematicamente i campioni botanici per la biblioteca pubblica, ribatteva che l'isolamento egoistico praticato dai Moretti aveva quasi condannato all'estinzione la varietà. Se il legume sopravviveva ancora nei piatti della festa patronale, sosteneva Pietro, era merito della lungimiranza di suo padre, il quale, contravvenendo alle rigide gelosie paesane, aveva distribuito clandestinamente i baccelli a diversi mezzadri della vallata. Per i Calegari, la vera custodia non risiedeva nella gelosa custodia privata, ma nella generosa e rischiosa condivisione comunitaria.\n\nLa tensione raggiunse il culmine durante l'assemblea generale della biblioteca, convocata proprio per decidere a chi intestare ufficialmente la scoperta e la paternità agronomica del fagiolo in vista di un riconoscimento regionale. L'atmosfera nella sala era densa di aspettative non dette e di rancori sedimentati. Teresa prese la parola per prima, rivendicando la purezza della linea genetica e accusando i Calegari di aver contaminato la varietà originale incrociandola con ceppi commerciali meno resistenti alla siccità. Subito dopo, Pietro rispose esibendo i registri di semina che dimostravano come la biodiversità fosse stata salvata proprio grazie alla diversificazione dei terreni, confutando l'idea che la purezza fosse garanzia di resilienza.\n\nLa diatriba si concluse non con un verdetto unanime, ma con un compromesso amaro e illuminante. Il comitato della biblioteca stabilì che nessun individuo o famiglia poteva fregiarsi del titolo di unico custode, poiché il fagiolo a toppa era il risultato paradossale sia della testarda chiusura dei Moretti sia della spericolata apertura dei Calegari. Mentre i registri ufficiali venivano aggiornati per riflettere questa duplice e conflittuale paternità, i membri anziani compresero che la memoria rurale non apparteneva a chi la scriveva, ma a chi, attraverso errori e intuizioni contrastanti, aveva permesso alla terra di continuare a produrre i suoi frutti silenziosi.\n\nTuttavia, l'applicazione pratica di questa risoluzione salomonica generò un paradosso istituzionale che nessuno aveva previsto durante i festeggiamenti formali. Riconoscere una paternità condivisa significava di fatto aprire i bandi regionali per i finanziamenti alla tutela della biodiversità, ma l'accesso a tali fondi europei imponeva standard di tracciabilità industriale e certificazioni fitosanitarie che né il metodo ortodosso dei Moretti né la dispersiva semina clandestina dei Calegari potevano soddisfare senza compromessi burocratici. Nel giro di pochi mesi, la neonata armonia comunitaria si trovò minacciata non più dall'orgoglio delle fazioni, ma dall'impatto freddo e standardizzato della modernità amministrativa. I tecnici inviati dalla provincia, pur lodando il valore storico del legume screziato, imposero rigidi protocolli di coltivazione in serra e l'abbandono delle antiche terre in pendenza, giudicate troppo frammentate e antieconomiche. Di fronte alla prospettiva di dover consegnare il loro patrimonio genetico a laboratori esterni per un'omologazione che avrebbe inevitabilmente snaturato il sapore stesso del fagiolo a toppa, Teresa e Pietro si trovarono per la prima volta a condividere lo stesso banco in municipio, non più per contendersi il primato della memoria, ma per coalizzarsi in una resistenza silenziosa contro l'uniformità imposta dal progresso. Capirono, seppure tardivamente, che la vera minaccia non risiedeva nei rispettivi errori del passato, bensì nell'indifferenza burocratica che avrebbe ridotto una storia di fatica e amore contadino a una mera etichetta commerciale.",
+    "wordCount": 731,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vexata quaestio",
+        "lemma": "vexata quaestio",
+        "glosses": {
+          "es": "a long-disputed problem",
+          "en": "a long-disputed problem"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autoreferenziale",
+        "lemma": "autoreferenziale",
+        "glosses": {
+          "es": "self-referential",
+          "en": "self-referential"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "clandestinamente",
+        "lemma": "clandestinamente",
+        "glosses": {
+          "es": "secretly",
+          "en": "secretly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "confutando",
+        "lemma": "confutando",
+        "glosses": {
+          "es": "refuting",
+          "en": "refuting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "diatriba",
+        "lemma": "diatriba",
+        "glosses": {
+          "es": "dispute",
+          "en": "dispute"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resilienza",
+        "lemma": "resilienza",
+        "glosses": {
+          "es": "resilience",
+          "en": "resilience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 30.5,
+      "maxSentenceWords": 63,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale sviluppato nel testo riguardo alla Biblioteca dei Semi di Valfiorita?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La competizione tra due famiglie per rivendicare la paternità e il merito della conservazione di un legume storico."
+        },
+        {
+          "id": "a2",
+          "text": "Il fallimento totale dei programmi pubblici di salvaguardia della biodiversità montana."
+        },
+        {
+          "id": "a3",
+          "text": "La necessità di abbandonare le antiche tradizioni agricole a favore di tecniche industriali moderne."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Quest'anno, tuttavia, l'attenzione generale non era rivolta ai consueti scambi autunnali, bensì alla vexata quaestio del fagiolo a toppa, un legume dalla buccia screziata che aveva sfamato il paese durante i mesi più duri del dopoguerra e la cui storia genetica rischiava di perdersi nell'oblio della modernità.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Come conservavano tradizionalmente i semi i membri della famiglia Moretti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "All'interno di barattoli di vetro sterilizzati nel forno a legna"
+        },
+        {
+          "id": "a2",
+          "text": "Dentro recipienti di terracotta sigillati con la cera d'api"
+        },
+        {
+          "id": "a3",
+          "text": "Sospesi in sacchetti di juta lungo i muri esterni del granaio"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Teresa argomentava, con la forza di una tradizione tramandata oralmente, che i suoi avi avevano selezionato i semi migliori anno dopo anno, custodendoli in recipienti di terracotta sigillati con la cera d'api durante le notti di luna calante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quale interpretazione della custodia agricola emerge dalla posizione dei Calegari?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La conservazione è un affare di famiglia che richiede la totale segretezza per evitare furti."
+        },
+        {
+          "id": "a2",
+          "text": "Il valore dei semi aumenta solo se vengono esportati fuori dai confini regionali."
+        },
+        {
+          "id": "a3",
+          "text": "La sopravvivenza di una specie dipende dalla condivisione e dalla distribuzione aperta sul territorio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Per i Calegari, la vera custodia non risiedeva nella gelosa custodia privata, ma nella generosa e rischiosa condivisione comunitaria.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo specifico è stata convocata l'assemblea generale della biblioteca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per decidere a chi intestare ufficialmente la paternità agronomica del legume"
+        },
+        {
+          "id": "a2",
+          "text": "Per eleggere il nuovo direttore amministrativo dell'archivio botanico"
+        },
+        {
+          "id": "a3",
+          "text": "Per raccogliere fondi destinati all'acquisto di nuovi macchinari agricoli"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La tensione raggiunse il culmine durante l'assemblea generale della biblioteca, convocata proprio per decidere a chi intestare ufficialmente la scoperta e la paternità agronomica del fagiolo in vista di un riconoscimento regionale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere il confronto e il successivo compromesso tra le due famiglie?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Comico e satirico"
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo e sfumato"
+        },
+        {
+          "id": "a3",
+          "text": "Pessimista e distaccato"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il comitato della biblioteca stabilì che nessun individuo o famiglia poteva fregiarsi del titolo di unico custode, poiché il fagiolo a toppa era il risultato paradossale sia della testarda chiusura dei Moretti sia della spericolata apertura dei Calegari.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa l'espressione 'vexata quaestio' riferita al fagiolo a toppa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un problema agricolo risolto brillantemente in passato"
+        },
+        {
+          "id": "a2",
+          "text": "Una malattia botanica che colpisce esclusivamente i legumi"
+        },
+        {
+          "id": "a3",
+          "text": "Una questione complessa e oggetto di lunghe discussioni"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Quest'anno, tuttavia, l'attenzione generale non era rivolta ai consueti scambi autunnali, bensì alla vexata quaestio del fagiolo a toppa, un legume dalla buccia screziata che aveva sfamato il paese durante i mesi più duri del dopoguerra e la cui storia genetica rischiava di perdersi nell'oblio della modernità.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa 200 parole in cui analizzi se la conservazione delle tradizioni locali debba essere affidata alla protezione esclusiva di singoli gruppi familiari o aperti alla collettività.",
+      "en": "Scrivi un testo argomentativo di circa 200 parole in cui analizzi se la conservazione delle tradizioni locali debba essere affidata alla protezione esclusiva di singoli gruppi familiari o aperti alla collettività."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggi il testo e analizza la complessità delle dinamiche comunitarie e delle interpretazioni storiche contrastanti.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Eredità dei Semi Silenziosi | C1 Reading | WeLearn",
+      "en": "L'Eredità dei Semi Silenziosi | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un racconto ambientato nella comunità rurale di Valfiorita, dove la rivalità tra due famiglie per il riconoscimento della custodia di un legume antico minaccia di dividere la biblioteca dei semi.",
+      "en": "Un racconto ambientato nella comunità rurale di Valfiorita, dove la rivalità tra due famiglie per il riconoscimento della custodia di un legume antico minaccia di dividere la biblioteca dei semi."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

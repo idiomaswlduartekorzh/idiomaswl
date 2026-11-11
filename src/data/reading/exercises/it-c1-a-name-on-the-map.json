@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'eco della valle",
+      "en": "L'eco della valle"
+    },
+    "intro": {
+      "es": "Leggi il brano e rispondi alle domande di comprensione e analisi linguistica.",
+      "en": "Leggi il brano e rispondi alle domande di comprensione e analisi linguistica."
+    },
+    "mission": {
+      "es": "Analizza il testo per comprendere il conflitto tra la documentazione ufficiale e la tradizione orale.",
+      "en": "Analizza il testo per comprendere il conflitto tra la documentazione ufficiale e la tradizione orale."
+    },
+    "targetText": "La polvere dell'Archivio Storico Regionale aveva il profumo acre del legno tarlato e del tempo dimenticato. Il conservatore, il signor Moretti, dispose sul tavolo di rovere un registro rilegato in pelle di camoscio, risalente all'epoca napoleonica. Inizialmente, la dottoressa Elena Rossi cercava soltanto i confini catastali del comune di Valfura per una monografia accademica sull'idrografia alpina. Tuttavia, sfogliando le pagine ingiallite, i suoi occhi si posarono su una discrepanza cartografica che avrebbe compromesso la sua tesi preliminare. Il documento imperiale indicava il piccolo bacino lacustre alla base del Monte Soro con il toponimo burocratico di 'Lago del Piano', un nome asettico, imposto dai funzionari sabaudi per facilitare la tassazione dei pascoli circostanti. Eppure, nei registri parrocchiali precedenti e nelle memorie manoscritte dei notai locali, quello stesso specchio d'acqua rispondeva da secoli a un'altra denominazione: 'Ghiaia Morena'. Questa sovrapposizione toponomastica non rappresentava una semplice svista amministrativa, bensì l'indizio di una frattura profonda tra la comunità autoctona e il potere centrale. Elena decise di prolungare la sua permanenza a Valfura per interrogare gli ultimi custodi della memoria orale, consapevole che la lingua dei luoghi custodisce verità spesso invisibili ai censimenti ufficiali.\n\nNel tardo pomeriggio dello stesso giorno, Elena salì verso la frazione di San Bartolomeo, abbarbicata sui pendii scoscesi dove il bosco di faggi lasciava spazio alla pietra calcarea. Trovò l'anziano Bernardo seduto sulla soglia della sua stalla, intento a intagliare un pezzo di ginepro con un coltellino affilato. Bernardo conosceva ogni anfratto della montagna e rappresentava l'ultimo baluardo di un dialetto che nessun vocabolario accademico aveva mai registrato per intero. Quando Elena gli mostrò la riproduzione della mappa napoleonica, l'uomo non mostrò alcuna sorpresa, ma un sottile sorriso ironico increspò le rughe profonde del suo volto. \"I signori della città mettono i nomi sulle cose per poterle possedere,\" mormorò Bernardo con una voce roca ma ferma, continuando il suo lavoro senza smettere di guardare il legno. \"Ma la montagna non si lascia catturare da un'etichetta d'inchiostro. Per noi quel lago è sempre stato la Ghiaia Morena, perché lì la terra si muove, respira e trascina i detriti a valle ogni volta che il disgelo si fa violento.\" Per Bernardo e per i suoi antenati, il toponimo non era una convenzione arbitraria, ma una descrizione geologica e morale del paesaggio, un patto tacito stretto con la durezza della sopravvivenza alpina.\n\nIl conflitto tra il nome ufficiale e quello vernacolare non era privo di conseguenze pratiche. Il giorno seguente, l'amministrazione comunale di Valfura avrebbe discusso il piano di valorizzazione turistica del comprensorio montano, un progetto finanziato da fondi europei che prevedeva la posa di cartellonistica bilingue lungo i sentieri escursionistici. Il sindaco, ambizioso e desideroso di attrarre visitatori stranieri, intendeva imporre la dicitura 'Lago del Piano' su tutti i materiali promozionali, ritenendola più elegante e conforme agli standard cartografici nazionali. Elena si trovò di fronte a un dilemma etico e professionale non indifferente: da un lato, la necessità di rispettare il rigore filologico dei documenti d'archivio che legittimavano la ricerca storica; dall'altro, l'urgenza morale di difendere un patrimonio immateriale che rischiava di essere definitivamente cancellato da una modernità burocratica e omologante. La studiosa comprese che ogni scelta toponomastica non è mai neutra, ma costituisce un atto di potere che decide chi ha il diritto di nominare il mondo.\n\nLa riunione del consiglio comunale, tenutasi nella sala consiliare affumicata dal tabacco e riscaldata da una stufa di maiolica, si rivelò un microcosmo di tensioni irrisolte. Elena prese la parola dopo l'intervento del geometra comunale, il quale sosteneva che l'adozione del nome tradizionale avrebbe generato confusione nei sistemi di geolocalizzazione satellitare e nei soccorsi alpini. Con argomentazioni ponderate, Elena sostenne che la memoria collettiva non doveva essere sacrificata sull'altare dell'efficienza digitale, pur concedendo che una segnaletica moderna potesse integrare entrambe le denominazioni per evitare equivoci logistici. La sua proposta, tuttavia, si scontrò con l'ostinazione della giunta, la quale vedeva nella doppia intitolazione un inutile appesantimento burocratico. Nonostante l'apparente linearità del dibattito, emerse chiaramente come l'amministrazione temesse che riconoscere il nome 'Ghiaia Morena' significasse legittimare implicitamente rivendicazioni storiche sui diritti d'uso civico di quei pascoli, attualmente contesi tra il comune e una cooperativa di allevatori locali.\n\nLa conclusione di quella vicenda non portò a una riconciliazione pacifica, bensì a un compromesso fragile e insoddisfacente. Il consiglio deliberò l'utilizzo esclusivo del toponimo ufficiale sulla cartellonistica principale, relegando il nome dialettale a una menzione marginale e minuscola nelle guide escursionistiche tascabili. Elena lasciò la sala prima della fine della votazione, avvertendo il peso di una sconfitta culturale che andava ben oltre la semplice denominazione di uno specchio d'acqua alpino. Camminando verso la sua automobile sotto una pioggia sottile che cominciava a bagnare l'asfalto, sentì risuonare nella mente le parole di Bernardo. Sapeva che i funzionari avrebbero potuto cambiare i cartelli e stampare nuove mappe, ma comprendeva anche che finché qualcuno in paese avesse continuato a chiamarlo Ghiaia Morena, la montagna avrebbe custodito un segreto inaccessibile a qualsiasi delibera comunale.",
+    "wordCount": 821,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "discrepanza",
+        "lemma": "discrepanza",
+        "glosses": {
+          "es": "discrepancy",
+          "en": "discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "toponimo",
+        "lemma": "toponimo",
+        "glosses": {
+          "es": "toponym or place name",
+          "en": "toponym or place name"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abbarbicata",
+        "lemma": "abbarbicata",
+        "glosses": {
+          "es": "perched or clinging",
+          "en": "perched or clinging"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "baluardo",
+        "lemma": "baluardo",
+        "glosses": {
+          "es": "bulwark or bastion",
+          "en": "bulwark or bastion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vernacolare",
+        "lemma": "vernacolare",
+        "glosses": {
+          "es": "vernacular or local",
+          "en": "vernacular or local"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "omologante",
+        "lemma": "omologante",
+        "glosses": {
+          "es": "homogenizing",
+          "en": "homogenizing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.5,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema principale affrontato nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra la toponomastica ufficiale e la memoria orale locale."
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di modernizzare la segnaletica dei sentieri alpini."
+        },
+        {
+          "id": "a3",
+          "text": "La scoperta di documenti storici falsificati nell'archivio di Valfura."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Questa sovrapposizione toponomastica non rappresentava una semplice svista amministrativa, bensì l'indizio di una frattura profonda tra la comunità autoctona e il potere centrale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Per quale motivo l'amministrazione comunale voleva imporre il nome 'Lago del Piano'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché era il nome usato storicamente dai pastori locali nei registri della parrocchia."
+        },
+        {
+          "id": "a2",
+          "text": "Per attrarre visitatori stranieri attraverso materiali promozionali conformi agli standard nazionali."
+        },
+        {
+          "id": "a3",
+          "text": "Per facilitare i soccorsi alpini e i sistemi di geolocalizzazione satellitare."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il sindaco, ambizioso e desideroso di attrarre visitatori stranieri, intendeva imporre la dicitura 'Lago del Piano' su tutti i materiali promozionali, ritenendola più elegante e conforme agli standard cartografici nazionali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa temeva realmente la giunta comunale riguardo al riconoscimento del nome tradizionale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che la doppia intitolazione potesse bloccare i finanziamenti europei destinati al turismo."
+        },
+        {
+          "id": "a2",
+          "text": "Che i turisti stranieri non riuscissero a pronunciare il dialetto locale."
+        },
+        {
+          "id": "a3",
+          "text": "Che venissero legittimate rivendicazioni storiche sui diritti d'uso civico dei pascoli."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "emerse chiaramente come l'amministrazione temesse che riconoscere il nome 'Ghiaia Morena' significasse legittimare implicitamente rivendicazioni storiche sui diritti d'uso civico di quei pascoli",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale ragione l'autrice del testo inserisce il dialogo tra Elena e l'anziano Bernardo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per dimostrare che la montagna possiede una sua logica geologica e morale irriducibile alle etichette burocratiche."
+        },
+        {
+          "id": "a2",
+          "text": "Per convincere il consiglio comunale ad accettare la proposta della doppia segnaletica bilingue."
+        },
+        {
+          "id": "a3",
+          "text": "Per confermare l'esattezza dei dati cartografici rinvenuti all'interno dell'archivio napoleonico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Per Bernardo e per i suoi antenati, il toponimo non era una convenzione arbitraria, ma una descrizione geologica e morale del paesaggio, un patto tacito stretto con la durezza della sopravvivenza alpina.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tonalità emotiva e stilistica caratterizza la conclusione della vicenda?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un trionfo entusiasta della cultura popolare sulla burocrazia statale."
+        },
+        {
+          "id": "a2",
+          "text": "Un compromesso fragile che lascia spazio alla resistenza silenziosa della memoria."
+        },
+        {
+          "id": "a3",
+          "text": "Un pessimismo distaccato privo di qualsiasi speranza per il futuro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La conclusione di quella vicenda non portò a una riconciliazione pacifica, bensì a un compromesso fragile e insoddisfacente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa l'espressione 'patto tacito' riferita al rapporto tra gli abitanti e il paesaggio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un accordo scritto firmato davanti al notaio comunale."
+        },
+        {
+          "id": "a2",
+          "text": "Un contratto commerciale stipulato tra i pastori e la cooperativa agricola."
+        },
+        {
+          "id": "a3",
+          "text": "Un'intesa non detta fondata sulla condivisione silenziosa della durezza della vita alpina."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "un patto tacito stretto con la durezza della sopravvivenza alpina.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa trecento parole in cui analizzi il conflitto tra la conservazione della memoria toponomastica locale e le esigenze di standardizzazione amministrativa nei contesti montani o rurali.",
+      "en": "Scrivi un saggio breve di circa trecento parole in cui analizzi il conflitto tra la conservazione della memoria toponomastica locale e le esigenze di standardizzazione amministrativa nei contesti montani o rurali."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizza il testo per comprendere il conflitto tra la documentazione ufficiale e la tradizione orale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'eco della valle | C1 Reading | WeLearn",
+      "en": "L'eco della valle | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggi il brano e rispondi alle domande di comprensione e analisi linguistica.",
+      "en": "Leggi il brano e rispondi alle domande di comprensione e analisi linguistica."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-new-crossing",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della striscia bianca",
+      "en": "L'illusione della striscia bianca"
+    },
+    "intro": {
+      "es": "Leggi questo articolo d'opinione sulla controversia legata alla sicurezza stradale in un quartiere residenziale.",
+      "en": "Leggi questo articolo d'opinione sulla controversia legata alla sicurezza stradale in un quartiere residenziale."
+    },
+    "mission": {
+      "es": "Analizza il testo per comprendere le dinamiche sottese alla comunicazione istituzionale e rispondi alle domande di comprensione.",
+      "en": "Analizza il testo per comprendere le dinamiche sottese alla comunicazione istituzionale e rispondi alle domande di comprensione."
+    },
+    "targetText": "La recente installazione dell'attraversamento pedonale rialzato in Via dei Mille è stata accolta dall'amministrazione comunale come un trionfo inequivocabile della pianificazione urbana. L'assessorato alla mobilità ha diramato un rapporto trionfalistico che attribuisce esclusivamente a questa infrastruttura la netta diminuzione degli incidenti registrati nel trimestre successivo. Il documento, redatto con toni enfatici, elogia l'efficacia visiva e fisica del nuovo manufatto stradale, descrivendolo come il fulcro di una rivoluzione viaria che avrebbe finalmente restituito serenità ai residenti. Tale narrazione ufficiale, sebbene confortata dai dati grezzi sulla frequenza dei sinistri, sorvola deliberatamente su un dettaglio cronologico e normativo tutt'altro che trascurabile: la contestuale introduzione del limite di trenta chilometri orari sull'intero asse viario, accompagnata da un potenziamento dei controlli di polizia locale. Questo sfasamento interpretativo solleva interrogativi cruciali sulla trasparenza della comunicazione pubblica e sulla tendenza a semplificare fenomeni complessi per fini autocelebrativi.\n\nA un'analisi più attenta, la concomitanza dei provvedimenti rende arduo isolare l'impatto del solo attraversamento pedonale rispetto alla drastica riduzione della velocità imposta per legge. I comitati di quartiere, che da anni battevano i pugni sui tavoli del municipio per ottenere interventi strutturali, non tardano a denunciare questa omissione. Per i rappresentanti civici, l'amministrazione avrebbe manipolato la percezione collettiva, piegando la statistica alle esigenze della propaganda elettorale. Da parte sua, l'ingegnere capo del dipartimento viario difende l'operato tecnico, sostenendo che l'opera civile costituisca il vero catalizzatore dell'attenzione degli automobilisti e che la segnaletica verticale non avrebbe sortito alcun effetto senza il vincolo fisico del dosso. Questa contrapposizione tra il rigore presunto della tecnica e le istanze di trasparenza politica mette in luce una frattura profonda nella governance urbana, dove la ricerca del consenso finisce spesso per oscurare la complessità empirica dei problemi.\n\nSebbene si debba riconoscere che l'infrastruttura abbia oggettivamente migliorato la visibilità dei pedoni nelle ore serali, riducendo le situazioni di potenziale conflitto tra ruote e passanti, la pretesa di causalità esclusiva avanzata dal rapporto appare metodologicamente fragile. Gli osservatori indipendenti fanno notare che la riduzione della velocità media, rilevata dai dispositivi elettronici prima ancora che i lavori di muratura fossero completati, rappresentava già di per sé un fattore determinante per l'abbattimento della gravità degli urti. Ridurre un intero ecosistema di prevenzione a un unico elemento visibile non è soltanto un errore di metodo, ma un atto di rimozione delle responsabilità politiche connesse alla gestione complessiva del traffico. La popolazione locale si trova così intrappolata tra bollettini edulcorati e la cruda realtà di una viabilità che richiede interventi ben più strutturali rispetto a una semplice tintoncatura dell'asfalto e all'aggiunta di pietrisco.\n\nIl dibattito si è ulteriormente inasprito quando l'opposizione consiliare ha depositato un'interpellanza per chiarire i criteri di selezione dei dati inseriti nel dossier. L'assessore competente, anziché fornire risguarti di natura metodologica, ha replicato accusando i detrattori di voler sminuire un risultato oggettivo a puro scopo polemico. Questo scambio di accuse rivela una deriva preoccupante: la sicurezza stradale non viene più trattata come una scienza applicata alla salvaguardia della vita umana, ma come merce di scambio politico da spendere nei titoli dei giornali. La cittadinanza, dal canto suo, oscilla tra il sollievo per la maggiore quiete e la diffidenza verso istituzioni che sembrano temere la verità dei dati disaggregati. La convinzione che la verità tecnica debba essere negoziata in base alle convenienze del momento rischia di compromettere irreparabilmente il patto di fiducia tra amministrati e amministratori.\n\nIn definitiva, la vicenda di Via dei Mille assurge a paradigma di una modernità amministrativa in cui l'apparenza del fare prevale sulla sostanza dell'analisi. Se l'obiettivo primario era la tutela dei cittadini, il risultato è stato comunque raggiunto, ma il metodo utilizzato lascia sgomenti quanti credono ancora nel valore dell'onestà intellettuale. Celebrare un successo occultando le variabili determinanti non costituisce buona amministrazione, bensì un esercizio di retorica difensiva che impedisce di replicare efficacemente le buone pratiche altrove. Quando la propaganda si sostituisce all'epistemologia urbana, ogni cartello stradale e ogni striscia pedonale smettono di essere strumenti di civiltà per trasformarsi in monumenti alla vanità burocratica.",
+    "wordCount": 661,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sorvola",
+        "lemma": "sorvola",
+        "glosses": {
+          "es": "glances over / omits",
+          "en": "glances over / omits"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "concomitanza",
+        "lemma": "concomitanza",
+        "glosses": {
+          "es": "simultaneity / occurrence at the same time",
+          "en": "simultaneity / occurrence at the same time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "detrattori",
+        "lemma": "detrattori",
+        "glosses": {
+          "es": "detractors / critics",
+          "en": "detractors / critics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "deriva",
+        "lemma": "deriva",
+        "glosses": {
+          "es": "drift / downward trend",
+          "en": "drift / downward trend"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradigma",
+        "lemma": "paradigma",
+        "glosses": {
+          "es": "paradigm / model",
+          "en": "paradigm / model"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemologia",
+        "lemma": "epistemologia",
+        "glosses": {
+          "es": "epistemology / theory of knowledge",
+          "en": "epistemology / theory of knowledge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.7,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nel testo riguardo all'intervento in Via dei Mille?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La manipolazione dei dati da parte di un rapporto ufficiale che ignora una nuova norma sulla velocità"
+        },
+        {
+          "id": "a2",
+          "text": "Il conflitto tra il comune e i residenti sulla spesa pubblica"
+        },
+        {
+          "id": "a3",
+          "text": "La necessità di rimuovere i dossi stradali per favorire il traffico"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Tale narrazione ufficiale, sebbene confortata dai dati grezzi sulla frequenza dei sinistri, sorvola deliberatamente su un dettaglio cronologico e normativo tutt'altro che trascurabile: la contestuale introduzione del limite di trenta chilometri orari sull'intero asse viario",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa è stato registrato dai dispositivi elettronici prima del completamento dei lavori?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un aumento significativo del flusso di traffico pesante"
+        },
+        {
+          "id": "a2",
+          "text": "Una riduzione della velocità media dei veicoli"
+        },
+        {
+          "id": "a3",
+          "text": "Un guasto generalizzato dei sistemi di rilevamento"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la riduzione della velocità media, rilevata dai dispositivi elettronici prima ancora che i lavori di muratura fossero completati, rappresentava già di per sé un fattore determinante",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Che atteggiamento traspare nell'amministrazione comunale secondo l'autore dell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un approccio scientifico rigoroso e orientato alla trasparenza totale"
+        },
+        {
+          "id": "a2",
+          "text": "Una totale indifferenza verso le proteste formali dei comitati civici"
+        },
+        {
+          "id": "a3",
+          "text": "Una tendenza autocelebrativa che piega la realtà alle esigenze di propaganda"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il documento, redatto con toni enfatici, elogia l'efficacia visiva e fisica del nuovo manufatto stradale, descrivendolo come il fulcro di una rivoluzione viaria che avrebbe finalmente restituito serenità ai residenti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'opposizione consiliare ha depositato un'interpellanza?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per chiarire i criteri di selezione dei dati inseriti nel dossier ufficiale"
+        },
+        {
+          "id": "a2",
+          "text": "Per bloccare i finanziamenti destinati alla manutenzione stradale"
+        },
+        {
+          "id": "a3",
+          "text": "Per proporre l'eliminazione definitiva del limite di velocità"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il dibattito si è ulteriormente inasprito quando l'opposizione consiliare ha depositato un'interpellanza per chiarire i criteri di selezione dei dati inseriti nel dossier.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tonalità caratterizza principalmente la scrittura dell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e promozionale"
+        },
+        {
+          "id": "a2",
+          "text": "Critica e distaccata"
+        },
+        {
+          "id": "a3",
+          "text": "Ironica e sarcastica"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Questa contrapposizione tra il rigore presunto della tecnica e le istanze di trasparenza politica mette in luce una frattura profonda nella governance urbana, dove la ricerca del consenso finisce spesso per oscurare la complessità empirica dei problemi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa il termine \"deriva\" all'interno della frase sulla gestione della sicurezza?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un movimento fisico incontrollato dei veicoli sulla carreggiata"
+        },
+        {
+          "id": "a2",
+          "text": "Una transizione formale verso procedure amministrative più snelle"
+        },
+        {
+          "id": "a3",
+          "text": "Una deviazione negativa verso un andamento preoccupante"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Questo scambio di accuse rivela una deriva preoccupante: la sicurezza stradale non viene più trattata come una scienza applicata alla salvaguardia della vita umana",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa duecento parole in italiano, analizzando come la comunicazione istituzionale possa alterare la percezione pubblica dei fatti complessi attraverso l'occultamento di variabili determinanti, prendendo spunto dalle dinamiche descritte nel testo.",
+      "en": "Scrivi un saggio breve di circa duecento parole in italiano, analizzando come la comunicazione istituzionale possa alterare la percezione pubblica dei fatti complessi attraverso l'occultamento di variabili determinanti, prendendo spunto dalle dinamiche descritte nel testo."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizza il testo per comprendere le dinamiche sottese alla comunicazione istituzionale e rispondi alle domande di comprensione.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della striscia bianca | C1 Reading | WeLearn",
+      "en": "L'illusione della striscia bianca | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggi questo articolo d'opinione sulla controversia legata alla sicurezza stradale in un quartiere residenziale.",
+      "en": "Leggi questo articolo d'opinione sulla controversia legata alla sicurezza stradale in un quartiere residenziale."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

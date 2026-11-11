@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-school-garden",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il giardino dei presupposti",
+      "en": "Il giardino dei presupposti"
+    },
+    "intro": {
+      "es": "Un articolo di riflessione critica che analizza le contraddizioni sottese ai progetti di partecipazione scolastica, evidenziando il divario tra retorica inclusiva e realtà socio-economica.",
+      "en": "Un articolo di riflessione critica che analizza le contraddizioni sottese ai progetti di partecipazione scolastica, evidenziando il divario tra retorica inclusiva e realtà socio-economica."
+    },
+    "mission": {
+      "es": "Leggere un testo argomentativo di livello avanzato per analizzare le tensioni implicite tra progettualità pedagogica e stratificazione sociale, esaminando il lessico e le strategie retoriche.",
+      "en": "Leggere un testo argomentativo di livello avanzato per analizzare le tensioni implicite tra progettualità pedagogica e stratificazione sociale, esaminando il lessico e le strategie retoriche."
+    },
+    "targetText": "L’annuncio della preside Valeria Neri, diramato all’inizio di ottobre tramite il portale d’istituto, prometteva una svolta verde e comunitaria per l’intera scuola media “Manzoni”. Al centro del piano vi era la riqualificazione dell’area cortiliva dismessa per trasformarla nell’Orto Sostenibile Didattico, uno spazio concepito – almeno sulla carta – come laboratorio permanente di cittadinanza attiva e coesione sociale. Durante l’assemblea plenaria convocata per illustrare il progetto, la dirigente scolastica ha insistito a lungo sul concetto di inclusività radicale, sottolineando come la terra non faccia distinzioni e come ogni studente avrebbe trovato, tra i filari di pomodori e le erbe aromatiche, un terreno fertile per la propria crescita personale e collettiva. Il progetto, tuttavia, si fondava su un'architettura logistica che rivelava fin da subito un’asimmetria strutturale: la realizzazione e la manutenzione ordinaria dell'orto erano state delegate a un calendario di sabati ecologici a base di lavoro volontario, presupponendo implicitamente che ogni nucleo familiare gadesse del medesimo capitale temporale ed energetico.\n\nA smontare la retorica dell’uguaglianza di accesso è stata la reazione silenziosa ma eloquente di una parte consistente della comunità genitoriale. Nelle settimane successive alla presentazione, mentre i gruppi di genitori liberi professionisti e impiegati con orari flessibili organizzavano turni pomeridiani e collette per l'acquisto di attrezzi professionali, le famiglie monoreddito o impegnate in turni lavorativi massacranti nei settori della logistica e della cura domiciliare rimanevano ai margini. La professoressa Elena Moretti, docente di lettere e membro del comitato di gestione, ha cercato invano di sollevare la questione durante il collegio docenti di novembre, evidenziando come l’invito a donare tempo libero si traducesse, nei fatti, in una discriminazione basata sulla classe sociale. La sua mozione di prevedere un fondo d’istituto per retribuire manutentori esterni o, in alternativa, di integrare le attività direttamente nell’orario curricolare per garantire la par condicio tra gli alunni è stata liquidata dalla dirigenza come una pericolosa burocratizzazione di uno spirito che doveva rimanere spontaneo e comunitario.\n\nIl cortocircuito si è manifestato in tutta la sua evidenza durante la cerimonia di inaugurazione di metà primavera, un evento serale pensato per celebrare i frutti del lavoro collettivo. Sotto le luminarie allestite nel cortile, i discorsi ufficiali hanno celebrato la vittoria della cooperazione, lodando l’impegno dei genitori più attivi e proiettando le diapositive delle aiuole fiorite curate nelle settimane precedenti. Tuttavia, nei settori periferici dell’area, l’atmosfera era segnata da un’evidente spaccatura: i figli dei genitori che non avevano potuto contribuire alle giornate di zappatura e semina si aggiravano tra i banchetti con un misto di estraneità e disagio, percependo quello spazio verde non come una conquista comune, ma come il monumento alla laboriosità altrui, un giardino privato mascherato da bene pubblico. La narrazione dell’inclusione aveva finito paradossalmente per sancire l’ennesima linea di demarcazione tra chi poteva permettersi di investire tempo gratuito e chi lottava quotidianamente per la sopravvivenza economica.\n\nLa vicenda della “Manzoni” offre uno specchio fedele delle ambiguità che sovente accompagnano le iniziative di cittadinanza partecipativa quando queste vengono calate in contesti socio-economici fortemente disomogenei senza un’analisi preventiva delle risorse reali. La buona fede della dirigenza, mossa da un sincero slancio ecologista e pedagogico, si è scontrata con l’incapacità di leggere la complessità materiale delle vite familiari, riducendo la partecipazione a una prova di efficienza domestica. Quando il merito e la dedizione vengono misurati sulla base di disponibilità extracurricolari, il giardino scolastico cessa di essere uno spazio educativo universale e si trasforma in un privilegio censitario, dove la zappa diventa lo strumento silenzioso di una nuova e sottile forma di selezione sociale.\n\nNel bilancio finale stilato dal consiglio d’istituto a fine anno scolastico, il progetto dell’orto è stato formalmente archiviato come un successo eccezionale sul piano agronomico e didattico per i laboratori di scienze, ma la questione della frattura sociale è rimasta un punto cieco nella memoria della scuola. Nessuna delibera ha affrontato il nodo irrisolto del volontariato esclusivo, e la dirigente ha continuato a citare l’esperienza come fiore all'occhiello dell’offerta formativa. Questa rimozione collettiva dimostra come l'ideologia della partecipazione a costo zero rischi continuamente di riprodurre le stesse disuguaglianze che pretende di sanare, celando dietro l'apparenza neutra della natura e della terra le asimmetrie profonde di una società frammentata.",
+    "wordCount": 690,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cortiliva",
+        "lemma": "cortiliva",
+        "glosses": {
+          "es": "pertaining to the courtyard",
+          "en": "pertaining to the courtyard"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asimmetria",
+        "lemma": "asimmetria",
+        "glosses": {
+          "es": "asymmetry",
+          "en": "asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "monoreddito",
+        "lemma": "monoreddito",
+        "glosses": {
+          "es": "single-income",
+          "en": "single-income"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cortocircuito",
+        "lemma": "cortocircuito",
+        "glosses": {
+          "es": "short circuit / sudden breakdown",
+          "en": "short circuit / sudden breakdown"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "censitario",
+        "lemma": "censitario",
+        "glosses": {
+          "es": "based on wealth or property census",
+          "en": "based on wealth or property census"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rimozione",
+        "lemma": "rimozione",
+        "glosses": {
+          "es": "repression / psychological removal",
+          "en": "repression / psychological removal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 38.3,
+      "maxSentenceWords": 61,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La contraddizione tra la retorica dell'inclusione e le disuguaglianze sociali nella gestione dell'orto scolastico."
+        },
+        {
+          "id": "a2",
+          "text": "Il fallimento tecnico dei laboratori di scienze botaniche nella scuola media."
+        },
+        {
+          "id": "a3",
+          "text": "La necessità di abolire ogni forma di volontariato dei genitori all'interno degli istituti scolastici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La vicenda della “Manzoni” offre uno specchio fedele delle ambiguità che sovente accompagnano le iniziative di cittadinanza partecipativa quando queste vengono calate in contesti socio-economici fortemente disomogenei",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quali categorie di genitori hanno potuto partecipare attivamente ai sabati ecologici?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Esclusivamente i docenti di lettere del comitato di gestione."
+        },
+        {
+          "id": "a2",
+          "text": "I liberi professionisti e gli impiegati con orari flessibili."
+        },
+        {
+          "id": "a3",
+          "text": "I genitori impiegati nei settori della logistica e della cura domiciliare."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "mentre i gruppi di genitori liberi professionisti e impiegati con orari flessibili organizzavano turni pomeridiani e collette per l'acquisto di attrezzi professionali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa si deduce riguardo alla proposta avanzata dalla professoressa Elena Moretti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È stata accolta con entusiasmo dalla preside Valeria Neri durante il collegio docenti."
+        },
+        {
+          "id": "a2",
+          "text": "È stata immediatamente finanziata grazie a una colletta spontanea delle famiglie monoreddito."
+        },
+        {
+          "id": "a3",
+          "text": "È stata rifiutata perché considerata un'inutile burocratizzazione dello spirito comunitario."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La sua mozione di prevedere un fondo d’istituto per retribuire manutentori esterni o, in alternativa, di integrare le attività direttamente nell’orario curricolare per garantire la par condicio tra gli alunni è stata liquidata dalla dirigenza come una pericolosa burocratizzazione di uno spirito che doveva rimanere spontaneo e comunitario.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'autore descrive la cerimonia di inaugurazione serale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per evidenziare visivamente la spaccatura sociale e il disagio dei bambini esclusi."
+        },
+        {
+          "id": "a2",
+          "text": "Per dimostrare l'effettiva riuscita tecnica e agronomica delle coltivazioni."
+        },
+        {
+          "id": "a3",
+          "text": "Per lodare l'efficace organizzazione logistica della dirigente scolastica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Tuttavia, nei settori periferici dell’area, l’atmosfera era segnata da un’evidente spaccatura: i figli dei genitori che non avevano potuto contribuire alle giornate di zappatura e semina si aggiravano tra i banchetti con un misto di estraneità e disagio",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta principalmente l'autore nel descrivere il progetto scolastico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e celebrativo verso le innovazioni didattiche verdi."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e analitico nei confronti delle ipocrisie istituzionali."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e distaccato di fronte alle dinamiche scolastiche."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L’annuncio della preside Valeria Neri, diramato all’inizio di ottobre tramite il portale d’istituto, prometteva una svolta verde e comunitaria per l’intera scuola media “Manzoni”. Al centro del piano vi era la riqualificazione dell’area cortiliva dismessa per trasformarla nell’Orto Sostenibile Didattico, uno spazio concepito – almeno sulla carta – come laboratorio permanente di cittadinanza attiva e coesione sociale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa l'espressione \"cortocircuito\" riferita alla cerimonia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un guasto tecnico all'impianto elettrico delle luminarie del cortile."
+        },
+        {
+          "id": "a2",
+          "text": "Una improvvisa interruzione dei finanziamenti ministeriali per il progetto."
+        },
+        {
+          "id": "a3",
+          "text": "Una contraddizione evidente tra le intenzioni dichiarate e la realtà vissuta."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il cortocircuito si è manifestato in tutta la sua evidenza durante la cerimonia di inaugurazione di metà primavera, un evento serale pensato per celebrare i frutti del lavoro collettivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa 250 parole in lingua italiana, analizzando criticamente un progetto scolastico o civico che promuove la partecipazione volontaria. Discuti come le differenze socio-economiche possano influenzare l'accesso reale a tali iniziative, bilanciando la lode degli obiettivi ideali con l'analisi delle barriere materiali.",
+      "en": "Scrivi un saggio breve di circa 250 parole in lingua italiana, analizzando criticamente un progetto scolastico o civico che promuove la partecipazione volontaria. Discuti come le differenze socio-economiche possano influenzare l'accesso reale a tali iniziative, bilanciando la lode degli obiettivi ideali con l'analisi delle barriere materiali."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggere un testo argomentativo di livello avanzato per analizzare le tensioni implicite tra progettualità pedagogica e stratificazione sociale, esaminando il lessico e le strategie retoriche.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il giardino dei presupposti | C1 Reading | WeLearn",
+      "en": "Il giardino dei presupposti | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un articolo di riflessione critica che analizza le contraddizioni sottese ai progetti di partecipazione scolastica, evidenziando il divario tra retorica inclusiva e realtà socio-economica.",
+      "en": "Un articolo di riflessione critica che analizza le contraddizioni sottese ai progetti di partecipazione scolastica, evidenziando il divario tra retorica inclusiva e realtà socio-economica."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

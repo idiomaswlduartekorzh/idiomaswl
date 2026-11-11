@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-last-bus",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione dei posti pieni: il paradosso della linea 42",
+      "en": "L'illusione dei posti pieni: il paradosso della linea 42"
+    },
+    "intro": {
+      "es": "Un esercizio di lettura avanzata in italiano (livello C1) basato su un articolo di cronaca locale che analizza le critiche politiche e sociali attorno a una controversa riorganizzazione del trasporto pubblico rurale.",
+      "en": "Un esercizio di lettura avanzata in italiano (livello C1) basato su un articolo di cronaca locale che analizza le critiche politiche e sociali attorno a una controversa riorganizzazione del trasporto pubblico rurale."
+    },
+    "mission": {
+      "es": "Leggi il testo e rispondi alle domande per analizzare le sfumature retoriche, le implicazioni sottese e i dettagli logistici di una gestione del trasporto pubblico che privilegia l'efficienza contabile a discapito dell'accessibilità reale.",
+      "en": "Leggi il testo e rispondi alle domande per analizzare le sfumature retoriche, le implicazioni sottese e i dettagli logistici di una gestione del trasporto pubblico che privilegia l'efficienza contabile a discapito dell'accessibilità reale."
+    },
+    "targetText": "L'azienda di trasporto pubblico regionale Autolinee del Valdarno ha recentemente diffuso con toni trionfalistici il bilancio semestrale della linea 42, il collegamento su gomma che unisce i borghi montani di San Benedetto in Alpe alla stazione ferroviaria di Marradi. Secondo il comunicato diramato dall'amministratore delegato, l'ingegner Valerio Moretti, il tasso di occupazione dei posti a bordo ha registrato un incremento record del venti per cento rispetto allo stesso periodo dell'anno precedente. Le tabelle allegate mostrano autobus regolarmente colmi, passeggeri in piedi nelle ore di punta e un indice di gradimento che la dirigenza definisce encomiabile, attribuendo il successo a una drastica rimodulazione delle corse effettuata all'inizio della primavera. Questa operazione di razionalizzazione, fortemente caldeggiata dal comitato di gestione dei costi, aveva comportato il taglio netto delle corse mattutine intermedie, giudicate scarsamente remunerative, e la soppressione totale del servizio festivo. A fronte di tali riduzioni, i pochi collegamenti superstiti erano stati concentrati in fasce orarie rigidamente predeterminate, costringendo l'utenza residua a concentrarsi su un numero esiguo di partenze. Ciononostante, l'ente gestore insiste nel leggere questo dato numerico come la prova inequivocabile di una maggiore efficienza operativa, sventolando l'indice di riempimento dei veicoli come un trofeo di buona amministrazione e sostenibilità economica. \n\nTuttavia, a denunciare la fallacia di questa lettura trionfalistica è intervenuta un'inchiesta indipendente promossa dal comitato civico 'Voci della Valle', guidata dalla portavoce Teresa Rinaldi. Rinaldi ha scardinato la narrazione aziendale evidenziando un meccanismo di distorsione statistica tanto semplice quanto spietato: l'aumento dei posti occupati non deriva da una nuova attrattiva del servizio, bensì dall'impossibilità materiale di scegliere orari alternativi. Chi prima viaggiava alle dieci del mattino per sbrigare commissioni mediche o amministrative nei centri maggiori, oggi si ritrova a dover salire necessariamente sull'unica corsa delle sette, condivisa inevitabilmente con studenti pendolari e lavoratori mattinieri. Il risultato tangibile di questa compressione dell'offerta non è una comunità più mobile e soddisfatta, bensì un progressivo isolamento delle fasce demografiche più vulnerabili, a cominciare dagli anziani non automuniti e dai lavoratori con turni flessibili. L'equazione contabile dell'azienda, che celebra la scomparsa dei sedili vuoti, ignora deliberatamente l'esercito silenzioso di cittadini che ha semplicemente smesso di tentare il viaggio, rinunciando a visite mediche, opportunità formative o semplici interazioni sociali. \n\nLa polemica ha assunto toni particolarmente aspri durante l'ultimo consiglio comunale straordinario, convocato nella sala consiliare di San Benedetto alla presenza dei sindaci dei comuni interessati. Durante il dibattito, il sindaco di Marradi ha tentato di difendere l'operato dell'azienda di trasporti, argomentando che in un regime di scarsità di risorse pubbliche il sussidio statale debba necessariamente premiare i collegamenti con un fatturato certo per chilometro percorso. Secondo questa linea di pensiero, mantenere autobus semivuoti in circolazione rappresenterebbe uno spreco intollerabile di denaro collettivo, un lusso che le casse comunali non possono più permettersi. Una posizione pragmaticamente cinica ma coerente con i vincoli di bilancio imposti dalla regione, che sposta l'asse della discussione dal diritto alla mobilità alla pura sostenibilità finanziaria. La replica del comitato civico non si è fatta attendere: Teresa Rinaldi ha ribadito che il trasporto pubblico non è un'azienda commerciale orientata al profitto azionario, ma un servizio essenziale di coesione territoriale, la cui efficacia non si misura con il profitto del singolo viaggio, ma con la capacità di impedire lo spopolamento delle aree interne. \n\nA rendere la situazione ancora più paradossale si sono aggiunti gli effetti collaterali registrati nei giorni scorsi, quando un guasto meccanico ha colpito la storica corriera delle sette del mattino, l'unica sopravvissuta ai tagli. L'assenza di mezzi di riserva e l'impossibilità di contare su corse successive nello stesso arco temporale hanno lasciato a piedi decine di persone per oltre quattro ore, bloccando studenti diretti agli esami di maturità e lavoratori impossibilitati a raggiungere i propri posti di impiego. L'episodio ha trasformato il malcontento latente in una protesta aperta, culminata in un sit-in spontaneo davanti al deposito delle Autolinee del Valdarno. In quella circostanza, la dirigenza aziendale ha replicato alle proteste appellandosi a una sorta di fatalità logistica e ribadendo che i dati macroeconomici del semestre restano comunque positivi, confermando la bontà della cura dimagrante imposta alla linea. Questo scarto percettivo tra la carta bollata dei bilanci aziendali e la frustrazione quotidiana dei residenti evidenzia una frattura profonda tra chi decide dai tavoli di un ufficio regionale e chi subisce le conseguenze materiali di quelle scelte sul territorio. \n\nIl braccio di ferro si avvia ora verso un epilogo istituzionale incerto, mentre il comitato civico minaccia di ricorrere al tribunale amministrativo regionale per presunta interruzione di pubblico servizio essenziale. L'azienda, dal canto suo, rifiuta ogni ipotesi di revisione del piano, sostenendo che un'eventuale marcia indietro aprirebbe un pericoloso precedente finanziario per analoghe tratte montane in deficit cronico. La vicenda della linea 42 trascende la semplice cronaca locale per trasformarsi in un emblematico studio di caso sulle contraddizioni della modernizzazione amministrativa. In nome di un'efficienza misurata unicamente attraverso indicatori di riempimento geometrico, si finisce per giustificare l'erosione progressiva dei diritti di cittadinanza nelle aree marginali, dimostrando come i numeri, quando decontestualizzati dalle reali esigenze umane, possano raccontare una menzogna perfetta travestita da successo gestionale.",
+    "wordCount": 842,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "rimodulazione",
+        "lemma": "rimodulazione",
+        "glosses": {
+          "es": "restructuring or reallocation",
+          "en": "restructuring or reallocation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fallacia",
+        "lemma": "fallacia",
+        "glosses": {
+          "es": "fallacy or error in logic",
+          "en": "fallacy or error in logic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spietato",
+        "lemma": "spietato",
+        "glosses": {
+          "es": "pitiless or merciless",
+          "en": "pitiless or merciless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sussidio",
+        "lemma": "sussidio",
+        "glosses": {
+          "es": "subsidy or financial grant",
+          "en": "subsidy or financial grant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scarto",
+        "lemma": "scarto",
+        "glosses": {
+          "es": "gap, discrepancy, or deviation",
+          "en": "gap, discrepancy, or deviation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erosione",
+        "lemma": "erosione",
+        "glosses": {
+          "es": "erosion or gradual wearing away",
+          "en": "erosion or gradual wearing away"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 33.7,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il contrasto tra l'efficienza contabile sbandierata da un'azienda di trasporti e l'effettivo peggioramento della mobilità rurale."
+        },
+        {
+          "id": "a2",
+          "text": "Il fallimento finanziario totale delle Autolinee del Valdarno dovuto alla cattiva gestione amministrativa."
+        },
+        {
+          "id": "a3",
+          "text": "La transizione ecologica dei trasporti pubblici nelle zone montane attraverso l'uso di autobus elettrici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'azienda di trasporto pubblico regionale Autolinee del Valdarno ha recentemente diffuso con toni trionfalistici il bilancio semestrale della linea 42",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale conseguenza pratica ha comportato la rimodulazione delle corse per gli utenti della linea 42?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'aumento del costo dei biglietti del cinquanta percento durante i giorni festivi."
+        },
+        {
+          "id": "a2",
+          "text": "Il taglio delle corse intermedie e festive, con la concentrazione dell'utenza su poche partenze fisse."
+        },
+        {
+          "id": "a3",
+          "text": "La sostituzione temporanea degli autobus con veicoli più capienti ma meno confortevoli."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Questa operazione di razionalizzazione, fortemente caldeggiata dal comitato di gestione dei costi, aveva comportato il taglio netto delle corse mattutine intermedie, giudicate scarsamente remunerative, e la soppressione totale del servizio festivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce implicitamente l'autore riguardo all'aumento del tasso di occupazione dei posti sugli autobus?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che esso riflette un aumento demografico straordinario nei borghi montani."
+        },
+        {
+          "id": "a2",
+          "text": "Che la popolazione ha scelto volontariamente di abbandonare le automobili private per preferire il mezzo pubblico."
+        },
+        {
+          "id": "a3",
+          "text": "Che esso è il risultato artificiale di una riduzione forzata dell'offerta che ha concentrato tutti i passeggeri sugli stessi orari."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'aumento dei posti occupati non deriva da una nuova attrattiva del servizio, bensì dall'impossibilità materiale di scegliere orari alternativi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo il sindaco di Marradi ha difeso la decisione dell'azienda di trasporti durante il consiglio comunale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per sostenere che, in un contesto di risorse scarse, i fondi pubblici debbano premiare i collegamenti economicamente sostenibili."
+        },
+        {
+          "id": "a2",
+          "text": "Per dimostrare che il trasporto pubblico può generare enormi profitti commerciali nelle aree rurali."
+        },
+        {
+          "id": "a3",
+          "text": "Per annunciare l'imminente arrivo di nuovi finanziamenti regionali destinati esclusivamente al suo comune."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "argomentando che in un regime di scarsità di risorse pubbliche il sussidio statale debba necessariamente premiare i collegamenti con un fatturato certo per chilometro percorso.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere la contrapposizione tra i dati aziendali e la realtà vissuta dai cittadini?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e fiducioso nella capacità della tecnologia di risolvere ogni problema logistico."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e disincantato, volto a smascherare l'inganno retorico di una modernizzazione amministrativa vuota di contenuti umani."
+        },
+        {
+          "id": "a3",
+          "text": "Distaccato e puramente informativo, privo di giudizi morali o sociali sull'operato dei dirigenti."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La vicenda della linea 42 trascende la semplice cronaca locale per trasformarsi in un emblematico studio di caso sulle contraddizioni della modernizzazione amministrativa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa esprime esattamente il termine \"scarto\" riferito alla percezione della situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uno sciopero sindacale indetto improvvisamente dai lavoratori per protestare contro i turni massacranti."
+        },
+        {
+          "id": "a2",
+          "text": "Un risparmio economico imprevisto ottenuto grazie alla riduzione delle spese di manutenzione dei mezzi."
+        },
+        {
+          "id": "a3",
+          "text": "Una discrepanza insanabile tra la teoria burocratica dei documenti e la frustrazione concreta vissuta sul territorio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Questo scarto percettivo tra la carta bollata dei bilanci aziendali e la frustrazione quotidiana dei residenti evidenzia una frattura profonda tra chi decide dai tavoli di un ufficio regionale e chi subisce le conseguenze materiali di quelle scelte sul territorio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa 200 parole in italiano in cui analizzi come l'efficienza economica possa entrare in conflitto con il concetto di servizio pubblico essenziale, prendendo spunto dai temi affrontati nel testo.",
+      "en": "Scrivi un saggio breve di circa 200 parole in italiano in cui analizzi come l'efficienza economica possa entrare in conflitto con il concetto di servizio pubblico essenziale, prendendo spunto dai temi affrontati nel testo."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggi il testo e rispondi alle domande per analizzare le sfumature retoriche, le implicazioni sottese e i dettagli logistici di una gestione del trasporto pubblico che privilegia l'efficienza contabile a discapito dell'accessibilità reale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione dei posti pieni: il paradosso della linea 42 | C1 Reading | WeLearn",
+      "en": "L'illusione dei posti pieni: il paradosso della linea 42 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un esercizio di lettura avanzata in italiano (livello C1) basato su un articolo di cronaca locale che analizza le critiche politiche e sociali attorno a una controversa riorganizzazione del trasporto pubblico rurale.",
+      "en": "Un esercizio di lettura avanzata in italiano (livello C1) basato su un articolo di cronaca locale che analizza le critiche politiche e sociali attorno a una controversa riorganizzazione del trasporto pubblico rurale."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

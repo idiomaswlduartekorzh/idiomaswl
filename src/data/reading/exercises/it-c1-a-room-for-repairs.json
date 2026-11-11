@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della gratuità al laboratorio di quartiere",
+      "en": "L'illusione della gratuità al laboratorio di quartiere"
+    },
+    "intro": {
+      "es": "Un'analisi critica del modello operativo dei caffè di riparazione autogestiti, sospesi tra etica della condivisione e sfruttamento delle competenze specialistiche.",
+      "en": "Un'analisi critica del modello operativo dei caffè di riparazione autogestiti, sospesi tra etica della condivisione e sfruttamento delle competenze specialistiche."
+    },
+    "mission": {
+      "es": "Leggere un testo argomentativo di livello C1 per analizzare il conflitto tra partecipazione inclusiva e lavoro tecnico non retribuito, rispondendo a sei quesiti di comprensione e completando un compito di produzione scritta.",
+      "en": "Leggere un testo argomentativo di livello C1 per analizzare il conflitto tra partecipazione inclusiva e lavoro tecnico non retribuito, rispondendo a sei quesiti di comprensione e completando un compito di produzione scritta."
+    },
+    "targetText": "Il seminterrato di Via dei Tintori si anima ogni primo sabato del mese con il rito laico del Caffè di Riparazione, un'iniziativa che attira residenti curiosi attorno a tostapane fumanti, sedie traballanti e radio d'epoca. L'atmosfera che accoglie i visitatori è intrisa di un ottimismo contagioso: cartelli colorati inneggiano all'economia circolare e all'empowerment comunitario, mentre tazze di caffè filtrato passano di mano in mano. L'obiettivo dichiarato è nobile e pedagogico, mirando a disincentivare la cultura dell'usa e getta attraverso la trasmissione orizzontale del sapere manuale. Chiunque porti un oggetto rotto non si limita a ricevere un servizio gratuito, ma partecipa attivamente al processo di smontaggio, guidato da volontari entusiasti che trasformano il guasto in un'occasione di apprendimento collettivo. Tuttavia, sotto la superficie patinata di questa festa della sostenibilità, si agita una tensione strutturale che raramente trova spazio nei resoconti trionfalistici pubblicati sui social network.\n\nA un'analisi più attenta, la divisione del lavoro all'interno del laboratorio rivela una gerarchia rigida tra chi intrattiene e chi esegue. Da un lado vi sono i facilitatori sociali, figure carismatiche la cui competenza tecnica spesso si esaurisce nell'uso sicuro di un cacciavite, ma che eccellono nell'animare la conversazione, accogliere i novizi e distribuire sorrisi. Dall'altro operano i veri artigiani della domenica, ex elettricisti, orologiai in pensione e periti industriali le cui mani nodose custodiscono decenni di esperienza specialistica. Sono loro a risolvere i rompicapi circuitali più complessi, a rifare filettature spanate e a saldare microcomponenti con una precisione chirurgica. Eppure, mentre i primi ricevono lode pubblica e gratitudine per aver promosso la coesione sociale, i secondi lavorano in un cono d'ombra operativo, confinati in un ruolo subalterno che riduce la loro perizia tecnica a mera materia prima per lo spettacolo comunitario della riparazione.\n\nIl cortocircuito etico si palesa quando la retorica della gratuità totale si scontra con il valore economico del lavoro impiegato. L'amministrazione comunale e i coordinatori del progetto celebrano con orgoglio le centinaia di ore donate alla collettività, brandendo questo dato come prova inequivocabile di una cittadinanza attiva e ritrovata. Questa narrazione edificante, tuttavia, rimuove comodamente la questione della disparità di valore tra il tempo speso a socializzare e quello investito in una riparazione ad alto rischio tecnico. Un volontario che intrattiene il pubblico con aneddoti ecologici compie un'opera lodevole ma accessibile a chiunque; un tecnico che diagnostica un cortocircuito in un alimentatore senza alcuno schema elettrico mette a disposizione un capitale professionale accumulato in una vita di lavoro. Spacciare entrambe le attività come equivalente \"dono di sé\" costituisce un'equivoca operazione ideologica che maschera la precarizzazione mascherata da volontariato.\n\nDurante l'ultima sessione, questo attrito è emerso con limpida evidenza quando un vecchio amplificatore a valvole, portato da un assessore in vena di pubbliche relazioni, è stato affidato a Valerio, un ex tecnico televisivo di settantadue anni. Per due ore intere, mentre il resto della sala applaudiva laboratori di cucito creativo e banchetti di compostaggio, Valerio è rimasto chino sullo chassis, isolato dal baccano circostante, respirando fumi di stagno e brancolando tra resistenze fuori tolleranza. Quando l'apparecchio è tornato a suonare, l'assessore ha ringraziato calorosamente l'intera comunità per il miracolo della condivisione, ignorando totalmente che quel risultato era figlio esclusivo di una competenza rara e non retribuita. Nessuno ha pensato che Valerio, per rimettere in sesto quell'oggetto, ha investito una professionalità che sul mercato avrebbe preteso un compenso adeguato, qui invece azzerato in nome di un astratto imperativo etico.\n\nA ben vedere, il successo di questi laboratori si fonda proprio su questo ambiguo paradosso: la sostenibilità ecologica degli oggetti si regge sullo sfruttamento immateriale del capitale umano. Finché la comunità continuerà a confondere la solidarietà con la gratuità indiscriminata, i veri detentori del sapere artigianale continueranno a prestarsi a un gioco in cui il loro talento viene monetizzato in applausi anziché in diritti. Il rischio concreto è che, dietro la facciata progressista del fai-da-te ecologico, si consolidi una forma di economia estrattiva dove il lavoro esperto viene spolpato della sua dignità economica, ridotto a hobby folkloristico per animare i pomeriggi di quartiere senza che nessuno si assuma la responsabilità di ripensare il valore reale del lavoro manuale nella società contemporanea.",
+    "wordCount": 686,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "empowerment",
+        "lemma": "empowerment",
+        "glosses": {
+          "es": "empowerment",
+          "en": "empowerment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cono d'ombra",
+        "lemma": "cono d'ombra",
+        "glosses": {
+          "es": "shadowy area / background",
+          "en": "shadowy area / background"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cortocircuito",
+        "lemma": "cortocircuito",
+        "glosses": {
+          "es": "short circuit / conflict",
+          "en": "short circuit / conflict"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chassis",
+        "lemma": "chassis",
+        "glosses": {
+          "es": "chassis / frame",
+          "en": "chassis / frame"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradosso",
+        "lemma": "paradosso",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "economia estrattiva",
+        "lemma": "economia estrattiva",
+        "glosses": {
+          "es": "extractive economy",
+          "en": "extractive economy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.2,
+      "maxSentenceWords": 57,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale sviluppato nel testo riguardo ai laboratori di riparazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La tensione tra la retorica della partecipazione comunitaria e lo sfruttamento non retribuito delle competenze specialistiche."
+        },
+        {
+          "id": "a2",
+          "text": "La superiorità dei laboratori di cucito rispetto a quelli di elettronica."
+        },
+        {
+          "id": "a3",
+          "text": "La totale inefficacia ecologica ed economica dei progetti di economia circolare nei quartieri urbani."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Tuttavia, sotto la superficie patinata di questa festa della sostenibilità, si agita una tensione strutturale che raramente trova spazio nei resoconti trionfalistici pubblicati sui social network.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Chi ha riparato l'amplificatore a valvole durante l'ultima sessione del laboratorio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un assessore comunale in cerca di facili pubbliche relazioni."
+        },
+        {
+          "id": "a2",
+          "text": "Valerio, un ex tecnico televisivo di settantadue anni."
+        },
+        {
+          "id": "a3",
+          "text": "Un facilitatore sociale esperto in animazione di comunità."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "è stato affidato a Valerio, un ex tecnico televisivo di settantadue anni.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa si deduce circa il trattamento riservato ai veri artigiani rispetto ai facilitatori sociali?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I tecnici ricevono maggiore visibilità pubblica e gratitudine rispetto ai facilitatori."
+        },
+        {
+          "id": "a2",
+          "text": "I tecnici vengono regolarmente retribuiti con fondi comunali per le loro riparazioni complesse."
+        },
+        {
+          "id": "a3",
+          "text": "I tecnici lavorano in condizioni di subordinazione simbolica, vedendo la propria perizia ridotta a materia prima per lo spettacolo collettivo."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "i secondi lavorano in un cono d'ombra operativo, confinati in un ruolo subalterno che riduce la loro perizia tecnica a mera materia prima per lo spettacolo comunitario della riparazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'autore descrive in dettaglio il lavoro di Valerio sull'amplificatore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per illustrare concretamente il cortocircuito etico tra la competenza professionale impiegata e la retorica della gratuità totale."
+        },
+        {
+          "id": "a2",
+          "text": "Per dimostrare l'inefficienza tecnica dei vecchi apparecchi elettronici."
+        },
+        {
+          "id": "a3",
+          "text": "Per promuovere la vendita di amplificatori a valvole nei negozi di quartiere."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il cortocircuito etico si palesa quando la retorica della gratuità totale si scontra con il valore economico del lavoro impiegato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta principalmente l'autore nei confronti della narrazione ufficiale del progetto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Enthusiasta e acritico verso le iniziative di cittadinanza attiva."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e disincantato nei confronti dei resoconti trionfalistici."
+        },
+        {
+          "id": "a3",
+          "text": "Completamente neutrale e distaccato da ogni giudizio di valore."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Questa narrazione edificante, tuttavia, rimuove comodamente la questione della disparità di valore tra il tempo speso a socializzare e quello investito in una riparazione ad alto rischio tecnico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa significa l'espressione \"cono d'ombra operativo\"?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una zona del seminterrato non illuminata adeguatamente durante le ore serali."
+        },
+        {
+          "id": "a2",
+          "text": "Un metodo di lavoro basato sulla penombra per favorire la concentrazione."
+        },
+        {
+          "id": "a3",
+          "text": "Una condizione di emarginazione e invisibilità lavorativa in cui operano i tecnici specializzati."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "i secondi lavorano in un cono d'ombra operativo, confinati in un ruolo subalterno che riduce la loro perizia tecnica a mera materia prima per lo spettacolo comunitario della riparazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa 250 parole in italiano, analizzando i limiti e le potenzialità dei progetti di volontariato basati su competenze professionali. Discuti se la gratuità del lavoro possa giustificarsi in nome della coesione sociale o se rischi di svalutare la professionalità tecnica.",
+      "en": "Scrivi un saggio breve di circa 250 parole in italiano, analizzando i limiti e le potenzialità dei progetti di volontariato basati su competenze professionali. Discuti se la gratuità del lavoro possa giustificarsi in nome della coesione sociale o se rischi di svalutare la professionalità tecnica."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggere un testo argomentativo di livello C1 per analizzare il conflitto tra partecipazione inclusiva e lavoro tecnico non retribuito, rispondendo a sei quesiti di comprensione e completando un compito di produzione scritta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della gratuità al laboratorio di quartiere | C1 Reading | WeLearn",
+      "en": "L'illusione della gratuità al laboratorio di quartiere | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica del modello operativo dei caffè di riparazione autogestiti, sospesi tra etica della condivisione e sfruttamento delle competenze specialistiche.",
+      "en": "Un'analisi critica del modello operativo dei caffè di riparazione autogestiti, sospesi tra etica della condivisione e sfruttamento delle competenze specialistiche."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

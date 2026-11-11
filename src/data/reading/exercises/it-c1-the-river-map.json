@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-river-map",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La Cartografia del Margine",
+      "en": "La Cartografia del Margine"
+    },
+    "intro": {
+      "es": "Leggere un articolo critico sull'impatto burocratico delle mappe di rischio idrogeologico a livello comunale.",
+      "en": "Leggere un articolo critico sull'impatto burocratico delle mappe di rischio idrogeologico a livello comunale."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere come divergenze metodologiche nella mappatura delle piene ridefiniscano l'accesso ai sussidi pubblici.",
+      "en": "Analizzare il testo per comprendere come divergenze metodologiche nella mappatura delle piene ridefiniscano l'accesso ai sussidi pubblici."
+    },
+    "targetText": "L'abitato di San Quirico al Serio ha sempre convissuto con la minaccia intermittente del fiume omonimo, ma la tensione sociale che attraversa la municipalità non deriva dalla forza delle correnti, bensì dai tratti di china tracciati su due differenti cartografie tecniche. Da una parte si erge il piano idraulico redatto dal Consorzio di Bonifica, basato su simulazioni storiche centenarie; dall'altra figura il recente modello previsionale commissionato dall'Autorità di Bacino, che integra proiezioni climatiche ad alta risoluzione e modelli di permeabilità urbana. Quando il sindaco, ingegnere Roberto Marini, ha convocato un'assemblea pubblica per illustrare i criteri di accesso ai fondi straordinari per la messa in sicurezza, la sala consiliare era gremita non solo da residenti preoccupati, ma da ingegneri e periti di parte. La divergenza tra le due rappresentazioni cartografiche non è una mera disputa accademica tra geologi, bensì il discrimine burocratico che stabilisce quali abitazioni risultino formalmente idonee agli indennizzi statali e quali, al contrario, vengano relegate in una zona grigia di esclusione amministrativa. Durante l'incontro, Elena Rossi, proprietaria di un immobile storico situato a ridosso dell'argine occidentale, ha esibito pubblicamente le perizie giurate che dimostrano come il nuovo piano computi il rischio di esondazione basandosi su parametri di impermeabilizzazione del suolo ormai obsoleti per la zona artigianale a monte. La donna ha sostenuto con fermezza che l'estensione della zona rossa nel nuovo bollettino non rispecchia l'effettiva vulnerabilità strutturale degli edifici, ma risponde a una logica prudenziale volta a tutelare l'amministrazione centrale da future responsabilità legali, scaricando però sui privati l'onere economico di costosi interventi di adeguamento sismico e idraulico. Dal canto suo, il direttore del Consorzio, intervenuto per difendere l'integrità del proprio operato, ha replicato che la cartografia tradizionale non può più ignorare la frammentazione del territorio e l'aumento delle superfici cementificate registrato nell'ultimo decennio, avvertendo che minimizzare il pericolo significherebbe esporre la comunità a conseguenze catastrofiche in caso di eventi meteorologici estremi. La contrapposizione tra il rigore formalistico delle vecchie tabelle e la prudenza algoritmica dei nuovi modelli ha così paralizzato l'iter di erogazione dei sussidi, trasformando la prevenzione in un terreno di scontro giuridico. Mentre i tecnici continuano a sovrapporre poligoni digitali e vecchie mappe catastali, i proprietari delle abitazioni sospese tra i due confini istituzionali subiscono una svalutazione immediata del proprio patrimonio immobiliare, privi al contempo della possibilità di accedere ai finanziamenti per la delocalizzazione o la protezione passiva. La vicenda di San Quirico evidenzia come la definizione tecnica del rischio non sia mai un atto neutro, ma un dispositivo politico capace di ridisegnare la geografia della cittadinanza e della tutela sociale attraverso il tratto di una penna digitale.\n\nA completamento di questa complessa dinamica amministrativa, emerge tuttavia un ulteriore paradosso che rischia di compromettere definitivamente il tessuto socio-economico del borgo: la paralisi burocratica non colpisce soltanto il mercato immobiliare, ma innesca una pericolosa desertificazione demografica e commerciale. Gli istituti bancari, di fronte all'incertezza giuridica generata dalla sovrapposizione dei due piani cartografici, hanno infatti iniziato a negare la concessione di mutui e linee di credito per la ristrutturazione degli edifici situati nella zona grigia, considerati ormai garanzie troppo volatili. Questa stretta creditizia impedisce di fatto ai giovani residenti di investire nel futuro delle proprie radici e costringe le piccole imprese artigianali a rinunciare a qualsiasi programma di ammodernamento tecnologico ed ecologico. Di conseguenza, la difesa preventiva del territorio, anziché tradursi in un'opportunità di rigenerazione urbana e di coesione comunitaria, si trasforma in un fattore di impoverimento strutturale che accelera l'abbandono delle aree marginali. Gli stessi cittadini che oggi lottano per vedersi riconosciuto il diritto agli indennizzi si ritrovano così intrappolati in un cortocircuito istituzionale: la tutela della loro incolumità viene perseguita attraverso strumenti di pianificazione che, negando il valore economico e sociale dei loro beni, finiscono per desertificare proprio quella comunità che si vorrebbe mettere in sicurezza. L'amministrazione comunale, stretta tra le rigide prescrizioni regionali e le legittime proteste dei contribuenti, appare incapace di mediare un compromesso operativo, lasciando spazio a un contenzioso legale milionario che promette di protrarsi per anni davanti ai tribunali amministrativi regionali. In questo scenario di stallo permanente, il fiume Serio continua a scorrere indifferente tra i suoi argini contesi, mentre il futuro di San Quirico viene deciso non dalle piene stagionali, ma dall'implacabile verdetto di perizie contrapposte che continuano a tracciare confini invisibili sulla pelle dei suoi abitanti.",
+    "wordCount": 717,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "discrimine",
+        "lemma": "discrimine",
+        "glosses": {
+          "es": "criterion of distinction",
+          "en": "criterion of distinction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "perizie",
+        "lemma": "perizie",
+        "glosses": {
+          "es": "expert appraisals",
+          "en": "expert appraisals"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impermeabilizzazione",
+        "lemma": "impermeabilizzazione",
+        "glosses": {
+          "es": "waterproofing",
+          "en": "waterproofing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prudenziale",
+        "lemma": "prudenziale",
+        "glosses": {
+          "es": "cautious",
+          "en": "cautious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "delocalizzazione",
+        "lemma": "delocalizzazione",
+        "glosses": {
+          "es": "relocation",
+          "en": "relocation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dispositivo",
+        "lemma": "dispositivo",
+        "glosses": {
+          "es": "mechanism",
+          "en": "mechanism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 42.2,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto cartografico."
+        },
+        {
+          "id": "a2",
+          "text": "La complessa ripartizione dei fondi pubblici"
+        },
+        {
+          "id": "a3",
+          "text": "Le ripetute inondazioni fluviali stagionali"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La divergenza tra le due rappresentazioni cartografiche non è una mera disputa accademica tra geologi, bensì il discrimine burocratico che stabilisce quali abitazioni risultino formalmente idonee agli indennizzi statali e quali, al contrario, vengano relegate in una zona grigia di esclusione amministrativa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa contesta specificamente Elena Rossi riguardo al nuovo piano?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Esclude la zona artigianale."
+        },
+        {
+          "id": "a2",
+          "text": "Usa parametri superati."
+        },
+        {
+          "id": "a3",
+          "text": "Ignora i dati storici."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La donna ha sostenuto con fermezza che l'estensione della zona rossa nel nuovo bollettino non rispecchia l'effettiva vulnerabilità strutturale degli edifici, ma risponde a una logica prudenziale volta a tutelare l'amministrazione centrale da future responsabilità legali, scaricando però sui privati l'onere economico di costosi interventi di adeguamento sismico e idraulico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quale conseguenza subiscono i residenti delle aree contese?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perdono la proprietà."
+        },
+        {
+          "id": "a2",
+          "text": "Abbandono immediato."
+        },
+        {
+          "id": "a3",
+          "text": "Svalutazione e blocco."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Mentre i tecnici continuano a sovrapporre poligoni digitali e vecchie mappe catastali, i proprietari delle abitazioni sospese tra i due confini istituzionali subiscono una svalutazione immediata del proprio patrimonio immobiliare, privi al contempo della possibilità di accedere ai finanziamenti per la delocalizzazione o la protezione passiva.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché il direttore del Consorzio difende i nuovi modelli?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per evitare rischi gravi."
+        },
+        {
+          "id": "a2",
+          "text": "Per ottenere maggiori sussidi statali"
+        },
+        {
+          "id": "a3",
+          "text": "Per punire i residenti inadempienti"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Dal canto suo, il direttore del Consorzio, intervenuto per difendere l'integrità del proprio operato, ha replicato che la cartografia tradizionale non può più ignorare la frammentazione del territorio e l'aumento delle superfici cementificate registrato nell'ultimo decennio, avvertendo che minimizzare il pericolo significherebbe esporre la comunità a conseguenze catastrofiche in caso di eventi meteorologici estremi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il registro stilistico e l'atteggiamento dell'autore verso il problema?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Soddisfatto"
+        },
+        {
+          "id": "a2",
+          "text": "Critico."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La vicenda di San Quirico evidenzia come la definizione tecnica del rischio non sia mai un atto neutro, ma un dispositivo politico capace di ridisegnare la geografia della cittadinanza e della tutela sociale attraverso il tratto di una penna digitale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine discrimine nel contesto del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una stima"
+        },
+        {
+          "id": "a2",
+          "text": "Un dato"
+        },
+        {
+          "id": "a3",
+          "text": "Un confine netto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La divergenza tra le due rappresentazioni cartografiche non è una mera disputa accademica tra geologi, bensì il discrimine burocratico che stabilisce quali abitazioni risultino formalmente idonee agli indennizzi statali e quali, al contrario, vengano relegate in una zona grigia di esclusione amministrativa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa 200 parole in cui analizzi come la definizione tecnica di un rischio ambientale possa trasformarsi in uno strumento di esclusione sociale ed economica per i cittadini coinvolti, facendo riferimento a conflitti simili tra amministrazioni e privati.",
+      "en": "Scrivi un testo argomentativo di circa 200 parole in cui analizzi come la definizione tecnica di un rischio ambientale possa trasformarsi in uno strumento di esclusione sociale ed economica per i cittadini coinvolti, facendo riferimento a conflitti simili tra amministrazioni e privati."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizzare il testo per comprendere come divergenze metodologiche nella mappatura delle piene ridefiniscano l'accesso ai sussidi pubblici.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La Cartografia del Margine | C1 Reading | WeLearn",
+      "en": "La Cartografia del Margine | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggere un articolo critico sull'impatto burocratico delle mappe di rischio idrogeologico a livello comunale.",
+      "en": "Leggere un articolo critico sull'impatto burocratico delle mappe di rischio idrogeologico a livello comunale."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-quiet-street",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il paradosso della quiete notturna",
+      "en": "Il paradosso della quiete notturna"
+    },
+    "intro": {
+      "es": "Analisi di un report locale sulla gestione del traffico notturno e sui conflitti di interpretazione tra residenti e commercianti.",
+      "en": "Analisi di un report locale sulla gestione del traffico notturno e sui conflitti di interpretazione tra residenti e commercianti."
+    },
+    "mission": {
+      "es": "Leggere l'articolo di cronaca locale, analizzare il conflitto di prospettive sulla definizione di successo urbano e completare gli esercizi di comprensione.",
+      "en": "Leggere l'articolo di cronaca locale, analizzare il conflitto di prospettive sulla definizione di successo urbano e completare gli esercizi di comprensione."
+    },
+    "targetText": "Il recente bollettino emesso dall'assessorato alla mobilità del quartiere San Martino ha celebrato con toni trionfalistici la drastica diminuzione del transito automobilistico lungo via dei Ciliegi. Secondo i rilevatori digitali installati all'altezza dell'incrocio con via Leopardi, il passaggio notturno di veicoli privati ha subito una contrazione netta dopo l'introduzione dei nuovi dissuasori a scomparsa e l'istituzione della ZTL dalle ventidue in poi. L'assessore delegato, Matteo Gualtieri, ha definito l'intervento un modello virtuoso di rigenerazione urbana, sostenendo che la quiete ritrovata restituisca finalmente agli abitanti il diritto al riposo e alla rigenerazione psicofisica. Questa lettura trionfalistica si scontra tuttavia con la realtà percepita da chi vive e lavora quotidianamente sul perimetro di quella stessa strada, rivelando una frattura profonda tra la misurazione quantitativa dei flussi e l'effettiva vivibilità del tessuto urbano.\n\nA sollevare il velo di scetticismo non sono nostalgici del traffico selvaggio, ma i titolari delle attività di ristorazione e i residenti dei civici interni, i quali denunciano un fenomeno di traslazione anziché di dissoluzione del disagio. Lorenzo Marini, portavoce del comitato di quartiere e proprietario della trattoria 'Al Portico', ha documentato come la chiusura di via dei Ciliegi non abbia affatto ridotto il volume complessivo dei veicoli in circolarità, bensì costretto i flussi a una deviazione coatta attraverso le arterie minori di via Verdi e via Carducci. 'Hanno semplicemente spostato l'imbuto sotto le finestre di altri', spiega Marini, mostrando i dati fonometrici raccolti autonomamente dai residenti. Di conseguenza, mentre i contatori comunali registrano il silenzio in un corridoio isolato, le strade limitrofe subiscono un incremento parossistico di manovre di inversione, clacson e accelerazioni improvvise dovute alla frustrazione degli automobilisti disorientati.\n\nIl nucleo del contendere risiede nella definizione stessa di successo amministrativo. Per l'amministrazione comunale, il parametro fondamentale risiede nell'azzeramento dei transiti all'interno del perimetro protetto, indipendentemente dalle esternalità prodotte sui confini adiacenti. Questa visione riduzionista permette a Gualtieri di rivendicare un risultato politico spendibile in vista delle prossime scadenze elettorali, ignorando che la città non è un insieme di compartimenti stagni ma un organismo interconnesso. D'altra parte, il comitato di quartiere rivendica un approccio olistico, sostenendo che una misura urbanistica possa definirsi efficace soltanto se migliora l'equilibrio complessivo dell'area senza semplicemente spostare il peso del disturbo da una categoria di cittadini a un'altra.\n\nLa tensione è esplosa la settimana scorsa quando un gruppo di residenti di via Carducci ha bloccato simbolicamente la carreggiata per protestare contro il rumore molesto generato dai furgoni delle consegne mattutine, costretti a sostare in doppia fila per l'impossibilità di accedere ai vecchi varchi. Tale situazione ha costretto il commissario di polizia locale, Elena Rinaldi, a convocare un tavolo d'urgenza tra le parti per mediare tra le esigenze di quiete notturna e la logistica commerciale. Durante l'incontro, la direttrice dell'associazione commercianti, Beatrice Conti, ha evidenziato come la contrazione del fatturato notturno dei locali pubblici non sia una percezione soggettiva, ma una conseguenza diretta della difficoltà di accesso per la clientela proveniente dai quartieri periferici, la quale preferisce rinunciare alla serata piuttosto che perdersi nel labirinto delle deviazioni.\n\nL'epilogo di questa vicenda rimane sospeso in un limbo normativo e sociale che evidenzia i limiti della pianificazione calata dall'alto. L'amministrazione, di fronte alle prove documentate dai residenti delle strade periferiche, non può più liquidare le proteste come mere rimostranze conservatrici, ma non è nemmeno disposta ad ammettere il fallimento parziale del piano rivedendo la geometria della ZTL. Nel frattempo, in via dei Ciliegi regna un silenzio quasi surreale, interrotto soltanto dal fruscio delle foglie e dai passi dei pochi residenti fortunati, mentre a pochi metri di distanza il traffico si agita come un fiume in piena costretto in un letto troppo stretto, a dimostrazione che in urbanistica non esistono scorciatoie indolori per la conquista della quiete.\n\nA complicare ulteriormente questo delicato quadro si inserisce la questione della sicurezza stradale e della vivibilità pedonale nelle vie collaterali, ormai sovraccariche di traffico pesante. Gli esperti di mobilità sostenibile ricordano che la frammentazione degli interventi senza una visione metropolitana globale finisce inevitabilmente per generare nuove sacche di degrado acustico e ambientale. Senza un ripensamento radicale del trasporto pubblico e dei parcheggi scambiatori, ogni ZTL rischia di trasformarsi in una misura elitaria che sposta i problemi anziché risolverli definitivamente.",
+    "wordCount": 698,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "dissuasori",
+        "lemma": "dissuasori",
+        "glosses": {
+          "es": "traffic bollards",
+          "en": "traffic bollards"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "traslazione",
+        "lemma": "traslazione",
+        "glosses": {
+          "es": "displacement",
+          "en": "displacement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fonometrici",
+        "lemma": "fonometrici",
+        "glosses": {
+          "es": "sound level measurements",
+          "en": "sound level measurements"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compartimenti",
+        "lemma": "compartimenti",
+        "glosses": {
+          "es": "compartments",
+          "en": "compartments"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "limbo",
+        "lemma": "limbo",
+        "glosses": {
+          "es": "limbo",
+          "en": "limbo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scorciatoie",
+        "lemma": "scorciatoie",
+        "glosses": {
+          "es": "shortcuts",
+          "en": "shortcuts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 33.2,
+      "maxSentenceWords": 59,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:34:05.234Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto interpretativo tra dati ufficiali e impatto reale di una ZTL."
+        },
+        {
+          "id": "a2",
+          "text": "La totale abolizione del traffico privato nel centro storico cittadino."
+        },
+        {
+          "id": "a3",
+          "text": "La chiusura definitiva delle attività commerciali per decisione unanime."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Questa lettura trionfalistica si scontra tuttavia con la realtà percepita da chi vive e lavora quotidianamente sul perimetro di quella stessa strada, rivelando una frattura profonda tra la misurazione quantitativa dei flussi e l'effettiva vivibilità del tessuto urbano.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quali strade secondarie subiscono l'aumento dei flussi veicolari a causa della chiusura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Via Roma e Corso Italia."
+        },
+        {
+          "id": "a2",
+          "text": "Via Verdi e via Carducci."
+        },
+        {
+          "id": "a3",
+          "text": "Via Leopardi e piazza San Martino."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "bensì costretto i flussi a una deviazione coatta attraverso le arterie minori di via Verdi e via Carducci.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Per quale motivo la clientela proveniente dalle periferie riduce le proprie uscite serali?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché i prezzi dei ristoranti sono aumentati a causa delle sanzioni."
+        },
+        {
+          "id": "a2",
+          "text": "Perché i mezzi pubblici notturni sono stati completamente soppressi."
+        },
+        {
+          "id": "a3",
+          "text": "Per via delle difficoltà di accesso e del labirinto delle deviazioni."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la quale preferisce rinunciare alla serata piuttosto che perdersi nel labirinto delle deviazioni.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale del comitato di quartiere guidato da Lorenzo Marini?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Promuovere un approccio olistico che eviti lo spostamento del disagio altrove."
+        },
+        {
+          "id": "a2",
+          "text": "Ottenere le dimissioni immediate dell'assessore delegato alla mobilità."
+        },
+        {
+          "id": "a3",
+          "text": "Trasformare via dei Ciliegi in un'area esclusivamente pedonale e commerciale."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il comitato di quartiere rivendica un approccio olistico, sostenendo che una misura urbanistica possa definirsi efficace soltanto se migliora l'equilibrio complessivo dell'area senza semplicemente spostare il peso del disturbo da una categoria di cittadini a un'altra.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere la situazione attuale del quartiere?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e celebrativo verso i successi tecnologici dell'amministrazione."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e distaccato nell'evidenziare le contraddizioni della pianificazione urbana."
+        },
+        {
+          "id": "a3",
+          "text": "Pessimista e rassegnato di fronte all'inevitabile collasso della mobilità."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'epilogo di questa vicenda rimane sospeso in un limbo normativo e sociale che evidenzia i limiti della pianificazione calata dall'alto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel contesto del testo, che cosa significa il termine 'traslazione'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'aumento esponenziale e incontrollato dei costi di manutenzione stradale."
+        },
+        {
+          "id": "a2",
+          "text": "La totale cancellazione e risoluzione definitiva di un problema ambientale."
+        },
+        {
+          "id": "a3",
+          "text": "Il trasferimento o lo spostamento di un fenomeno da un luogo a un altro."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "i quali denunciano un fenomeno di traslazione anziché di dissoluzione del disagio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi il concetto di successo nella gestione degli spazi urbani, confrontando la prospettiva di un'amministrazione comunale con quella dei residenti delle zone limitrofe.",
+      "en": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi il concetto di successo nella gestione degli spazi urbani, confrontando la prospettiva di un'amministrazione comunale con quella dei residenti delle zone limitrofe."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggere l'articolo di cronaca locale, analizzare il conflitto di prospettive sulla definizione di successo urbano e completare gli esercizi di comprensione.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:34:05.234Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il paradosso della quiete notturna | C1 Reading | WeLearn",
+      "en": "Il paradosso della quiete notturna | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analisi di un report locale sulla gestione del traffico notturno e sui conflitti di interpretazione tra residenti e commercianti.",
+      "en": "Analisi di un report locale sulla gestione del traffico notturno e sui conflitti di interpretazione tra residenti e commercianti."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:34:05.234Z"
+  }
+}

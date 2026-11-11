@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-the-local-stage",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il sipario invisibile: oltre la rendicontazione dei botteghini",
+      "en": "Il sipario invisibile: oltre la rendicontazione dei botteghini"
+    },
+    "intro": {
+      "es": "Un'analisi critica sul divario tra i parametri quantitativi dei finanziamenti culturali e il reale impatto sociale dei laboratori teatrali di comunità.",
+      "en": "Un'analisi critica sul divario tra i parametri quantitativi dei finanziamenti culturali e il reale impatto sociale dei laboratori teatrali di comunità."
+    },
+    "mission": {
+      "es": "Leggere attentamente il testo per comprendere le tensioni tra la sostenibilità economica dei teatri locali e il valore sommerso delle attività di inclusione sociale non performative.",
+      "en": "Leggere attentamente il testo per comprendere le tensioni tra la sostenibilità economica dei teatri locali e il valore sommerso delle attività di inclusione sociale non performative."
+    },
+    "targetText": "Il recente rapporto finanziario pubblicato dal Teatro Civico della Marna ha celebrato un trionfo amministrativo inaspettato, evidenziando un incremento del trenta per cento nei ricavi derivanti dalla vendita dei biglietti per la stagione autunnale. Questa cifra, sbandierata con orgoglio dai revisori dei conti durante l'assemblea generale, fotografa una macchina spettacolare apparentemente in salute, capace di attrarre pubblico grazie a una programmazione che ha saputo coniugare classici reinterpretati e drammaturgia contemporanea. Tuttavia, dietro l'apparente linearità di questo bilancio in attivo si cela una frattura profonda, un dissidio che scuote le fondamenta stesse della missione originaria dell'ente: la totale estromissione dai parametri di valutazione di quel lavoro sommerso, capillare e faticoso che si consuma ben prima che si alzi il sipario, e che spesso non approda mai sul palcoscenico principale. L'amministrazione comunale, focalizzata esclusivamente sulla massimizzazione degli introiti e sull'autosufficienza economica, ha elargito il rinnovo della sovvenzione annuale basandosi quasi esclusivamente su un criterio di efficienza mercantile, riducendo l'arte a una merce di scambio soggetta alle leggi del profitto e della capienza di sala. A subire le conseguenze di questa miopia burocratica è stato in primo luogo il laboratorio di drammaturgia periferica diretto dall'educatrice teatrale Elena Riva, un percorso di cittadinanza attiva rivolto agli abitanti dei quartieri marginali che non nutrono alcuna ambizione attoriale. Durante i mesi precedenti la chiusura del bilancio, il laboratorio aveva coinvolto decine di partecipanti in un lavoro di scavo autobiografico, volto a trasformare il disagio sociale in narrazione corale. Nessuno dei frequentatori di questo percorso avrebbe calcato le tavole del teatro principale; la loro esperienza si esauriva nella sala prove della ex bocciofila, uno spazio freddo e periferico. Eppure, proprio in quel contesto di marginalità artistica, si erano generate dinamiche di coesione sociale e di riscatto individuale di inestimabile valore civico. Il conflitto è esploso quando la direzione amministrativa, guidata dal direttore finanziario Giorgio Bernasconi, ha intimato a Riva di riconvertire il laboratorio in un vivaio di futuri acquirenti di biglietti o, in alternativa, di subirne il drastico ridimensionamento dei fondi, rei di non produrre alcun ritorno economico misurabile in termini di botteghino. Bernasconi, difendendo la propria posizione con argomentazioni di stampo economicistico, ha ribadito che la rendicontazione dei fondi pubblici richiede indicatori di performance oggettivi, quantificabili e verificabili attraverso il flusso monetario, escludendo che il benessere psicologico o la crescita relazionale dei partecipanti possano costituire una giustificazione valida per l'investimento di denaro pubblico. La replica di Elena Riva, affidata a una dura lettera aperta sottoscritta anche dai partecipanti al laboratorio, ha scosso l'opinione pubblica locale, denunciando come la quantificazione del successo teatrale attraverso il solo numero di poltrone occupate tradisca la funzione civile del teatro, trasformandolo in un club elitario per spettatori paganti. La tensione ha raggiunto il culmine la sera della prima dello spettacolo di punta della stagione: mentre nel foyer si festeggiava il record di incassi con brindisi e flash dei fotografi, all'esterno della struttura i partecipanti del laboratorio di Riva hanno inscenato un presidio silenzioso, esibendo cartelli che recitavano slogan contro la mercificazione della cultura. Questo gesto dimostrativo, lungi dall'essere una semplice contestazione estemporanea, ha costretto la cittadinanza a interrogarsi sulla natura stessa del sostegno pubblico alle arti sceniche. Il consiglio di amministrazione, messo alle strette dalla risonanza mediatica della protesta e dalla presa di posizione di intellettuali locali, si è visto costretto a convocare un tavolo di mediazione straordinario. Tuttavia, l'accordo raggiunto non ha scalfito la contraddizione di fondo: i finanziamenti futuri saranno sì salvaguardati, ma continueranno a dipendere da metriche di rendicontazione che considerano il lavoro non performativo un mero costo accessorio anziché il cuore pulsante dell'azione culturale. Il sipario, dunque, continua ad alzarsi su una realtà teatrale economicamente florida ma profondamente divisa, dove la spettacolarizzazione del successo economico occulta la sistematica svalutazione di chi il teatro lo vive senza mai recitare.\n\nIn questa prospettiva, la soluzione trovata dal consiglio di amministrazione si rivela un compromesso fragile che sposta semplicemente il conflitto sul piano della retorica istituzionale. La sopravvivenza formale del laboratorio di Elena Riva, garantita solo grazie alla pressione mediatica e non a un reale riconoscimento del suo valore intrinseco, sancisce una pericolosa subalternità della pedagogia sociale alle logiche del bilancio. Tale esito dimostra come l'istituzione teatrale sia ormai incapace di concepire la propria funzione se non attraverso la lente deformante del profitto, riducendo ogni forma di resistenza culturale a un fastidioso rumore di fondo da sterilizzare con concessioni marginali. La ferita inferta al tessuto civico della città rimane dunque aperta e sanguinante, destinata a riemergere non appena i riflettori della cronaca locale si spegneranno.",
+    "wordCount": 755,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "dissidio",
+        "lemma": "dissidio",
+        "glosses": {
+          "es": "dispute or deep disagreement",
+          "en": "dispute or deep disagreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miopia",
+        "lemma": "miopia",
+        "glosses": {
+          "es": "shortsightedness or lack of foresight",
+          "en": "shortsightedness or lack of foresight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "riscatto",
+        "lemma": "riscatto",
+        "glosses": {
+          "es": "redemption or liberation",
+          "en": "redemption or liberation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "economicistico",
+        "lemma": "economicistico",
+        "glosses": {
+          "es": "strictly economic or reductionist",
+          "en": "strictly economic or reductionist"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mercificazione",
+        "lemma": "mercificazione",
+        "glosses": {
+          "es": "commercialisation",
+          "en": "commercialisation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "occulta",
+        "lemma": "occulta",
+        "glosses": {
+          "es": "conceals or hides",
+          "en": "conceals or hides"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 37.8,
+      "maxSentenceWords": 58,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale affrontato nel testo riguardo alla gestione dei teatri?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra i criteri di profitto economico e il valore sociale invisibile delle attività teatrali periferiche."
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di aumentare i prezzi dei biglietti per garantire la sopravvivenza delle compagnie amatoriali."
+        },
+        {
+          "id": "a3",
+          "text": "Il fallimento finanziario delle grandi produzioni artistiche rispetto ai laboratori di quartiere."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la totale estromissione dai parametri di valutazione di quel lavoro sommerso, capillare e faticoso che si consuma ben prima che si alzi il sipario",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Come giustifica il direttore finanziario Giorgio Bernasconi la necessità di rivedere i fondi per i laboratori?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sostenendo che i partecipanti al laboratorio danneggiano la reputazione del teatro principale con le loro proteste."
+        },
+        {
+          "id": "a2",
+          "text": "Affermando che la spesa pubblica richiede indicatori di performance oggettivi legati al flusso monetario."
+        },
+        {
+          "id": "a3",
+          "text": "Chiedendo che tutti i frequentatori del laboratorio acquistino un abbonamento per la stagione."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la rendicontazione dei fondi pubblici richiede indicatori di performance oggettivi, quantificabili e verificabili attraverso il flusso monetario",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa simboleggia il presidio silenzioso organizzato dai partecipanti fuori dal teatro durante la prima?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il desiderio dei manifestanti di ottenere una parte da protagonisti nello spettacolo principale della stagione."
+        },
+        {
+          "id": "a2",
+          "text": "La volontà di interrompere lo spettacolo per boicottare il lavoro degli attori professionisti sul palco."
+        },
+        {
+          "id": "a3",
+          "text": "La denuncia pubblica contro la riduzione della cultura a mera merce commerciale ed elitaria."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "denunciando come la quantificazione del successo teatrale attraverso il solo numero di poltrone occupate tradisca la funzione civile del teatro",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'autore inserisce il dettaglio del laboratorio condotto nella ex bocciofila?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per evidenziare il divario spaziale e concettuale tra i luoghi della marginalità sociale e quelli del profitto spettacolare."
+        },
+        {
+          "id": "a2",
+          "text": "Per dimostrare che gli spazi non convenzionali sono più adatti alla recitazione rispetto ai teatri tradizionali."
+        },
+        {
+          "id": "a3",
+          "text": "Per illustrare i problemi logistici ed economici affrontati dall'amministrazione comunale nella gestione degli edifici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Nessuno dei frequentatori di questo percorso avrebbe calcato le tavole del teatro principale; la loro esperienza si esauriva nella sala prove della ex bocciofila",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tonalità emotiva e critica adotta principalmente il narratore nel descrivere la situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Distaccata e ironica"
+        },
+        {
+          "id": "a2",
+          "text": "Severa e preoccupata"
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta e fiduciosa"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "dietro l'apparente linearità di questo bilancio in attivo si cela una frattura profonda, un dissidio che scuote le fondamenta stesse della missione originaria dell'ente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, cosa esprime il termine «mercificazione» riferito alla cultura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La pratica di vendere i biglietti degli spettacoli teatrali direttamente online anziché attraverso i botteghini fisici."
+        },
+        {
+          "id": "a2",
+          "text": "La tendenza a distribuire merci e beni di consumo gratuiti agli spettatori durante gli intervalli delle rappresentazioni."
+        },
+        {
+          "id": "a3",
+          "text": "Il processo attraverso cui le attività culturali vengono valutate unicamente in base al loro ritorno economico e di profitto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "riducendo l'arte a una merce di scambio soggetta alle leggi del profitto e della capienza di sala.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve di circa 300 parole in cui analizzi il dilemma tra sostenibilità economica e inclusione sociale nelle istituzioni culturali contemporanee, argomentando la tua posizione sull'uso dei fondi pubblici.",
+      "en": "Scrivi un saggio breve di circa 300 parole in cui analizzi il dilemma tra sostenibilità economica e inclusione sociale nelle istituzioni culturali contemporanee, argomentando la tua posizione sull'uso dei fondi pubblici."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leggere attentamente il testo per comprendere le tensioni tra la sostenibilità economica dei teatri locali e il valore sommerso delle attività di inclusione sociale non performative.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il sipario invisibile: oltre la rendicontazione dei botteghini | C1 Reading | WeLearn",
+      "en": "Il sipario invisibile: oltre la rendicontazione dei botteghini | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sul divario tra i parametri quantitativi dei finanziamenti culturali e il reale impatto sociale dei laboratori teatrali di comunità.",
+      "en": "Un'analisi critica sul divario tra i parametri quantitativi dei finanziamenti culturali e il reale impatto sociale dei laboratori teatrali di comunità."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

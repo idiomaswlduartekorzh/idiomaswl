@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il paradosso della soglia",
+      "en": "Il paradosso della soglia"
+    },
+    "intro": {
+      "es": "Leggete questa pagina di diario e rispondete alle domande per dimostrare la comprensione di sfumature lessicali, implicazioni psicologiche e registri stilistici avanzati in italiano.",
+      "en": "Leggete questa pagina di diario e rispondete alle domande per dimostrare la comprensione di sfumature lessicali, implicazioni psicologiche e registri stilistici avanzati in italiano."
+    },
+    "mission": {
+      "es": "Analizzate il testo focalizzandovi sugli effetti psicologici della digitalizzazione delle code e completate le attività di comprensione e produzione scritta.",
+      "en": "Analizzate il testo focalizzandovi sugli effetti psicologici della digitalizzazione delle code e completate le attività di comprensione e produzione scritta."
+    },
+    "targetText": "Mercoledì. Ore sette e quarantacinque. Il mio turno alla reception dello Studio Medico San Michele comincia sempre con un rituale che quest'anno è diventato quasi grottesco. Prima di aprire il portone blindato in Via dei Mille, osservo la piccola folla ammassata sul marciapiede attraverso il vetro oscurato. Non è la calca disordinata del passato, quando le persone litigavano per un numero estratto da un distributore meccanico che si inceppava regolarmente. Oggi regna un silenzio teso, quasi surreale. I pazienti stanno in piedi, immobili come sentinelle, con gli occhi incollati agli schermi dei loro smartphone. Fino a un mese fa, l'introduzione del sistema di prenotazione virtuale \"EliminaCode Smart\" era stata salutata dai vertici amministrativi come una rivoluzione copernicana: l'azzeramento quasi totale delle attese nella sala interna. Sulla carta, i numeri parlano chiaro e danno ragione ai tecnici. Le statistiche generate dal server mostrano una riduzione del settanta per cento delle proteste allo sportello e un flusso costante, quasi chirurgico, dei pazienti verso i tre ambulatori specialistici. eppure, seduta dietro questo bancone di formica grigia, percepisco una dissonanza cognitiva profonda, un disagio che non trova posto nei grafici di efficienza aziendale. Alle otto in punto sblocco la serratura elettronica. L'ingresso avviene in un ordine geometrico: nessuno corre, nessuno supera nessuno. Le notifiche push arrivate sui telefoni mezz'ora prima hanno indicato a ciascuno il momento esatto in cui varcare la soglia, eliminando persino la necessità di salutare me o di chiedere informazioni. Passano rapidamente attraverso la bussola d'ingresso, ma l'aria che lasciano fuori, sul marciapiede, si è inspessitita. Il problema non è stato risolto; è stato semplicemente delocalizzato. Fuori, sotto il portico condominiale, la calca si è trasformata in un assembramento silenzioso e ansioso di persone che arrivano con larghissimo anticipo per paura di perdere il minuto di convocazione digitale. Alcuni anziani, incapaci di gestire l'algoritmo che anticipa o posticipa gli appuntamenti in base agli imprevisti dei medici, vagano nei dintorni come anime in pena, chiedendo ai passanti che ora sia o se il loro telefono stia funzionando correttamente. All'interno, la sala d'attesa è perennemente semivuota, un'oasi di design minimalista con sedie in metacrilato bianco e riviste patinate che nessuno sfoglia più. Ma questa quiete apparente è ingannevole. Ieri, ad esempio, un signore distinto, il signor Moretti, è entrato con venti minuti di anticipo rispetto alla sua finestra temporale virtuale, pretendendo di essere visitato subito perché l'applicazione gli aveva notificato un generico ritardo del cardiologo. Quando gli ho spiegato che l'algoritmo ricalcola i tempi in tempo reale ma non gestisce l'anticipo fisico nello spazio, si è infuriato, riversando su di me una frustrazione che non poteva più sfogare contro una fila visibile. La digitalizzazione ha reso invisibile il tempo di attesa, trasformandolo in una pressione psicologica costante che grava interamente sulle spalle di chi varca la porta. La sala è vuota, ma la tensione è densa quanto il piombo. Nel pomeriggio la situazione è degenerata quando il sistema di geolocalizzazione ha iniziato a impazzire a causa di un guasto temporaneo alla rete dati della zona. Privati della bussola digitale, i pazienti si sono bloccati sulla soglia, incapaci di decidere autonomamente se entrare o meno, paralizzati dall'assenza di un comando numerico sullo schermo. Ho dovuto abbandonare la postazione per guidarli manualmente a voce, riscoprendo il vecchio mestiere di mediatrice umana che l'applicazione prometteva di rendere obsoleto. Alla fine della giornata, mentre spengo i monitor e sistemo i moduli cartacei di emergenza, mi chiedo se questo progresso tecnologico stia davvero servendo a curare le persone o semplicemente a nascondere il caos dove nessuno possa vederlo.\n\nQuesta paradossale deriva cibernetica dimostra come la tanto decantata ottimizzazione dei processi finisca paradossalmente per trasferire l'onere dell'ansia organizzativa direttamente sui soggetti più vulnerabili. L'illusione di un controllo assoluto tramite l'intelligenza artificiale crea una nuova e subdola forma di solitudine istituzionale, dove il contatto umano non viene sostituito da un servizio migliore, bensì da un vuoto algoritmico insondabile. Quando i sistemi informatici cedono, ed è inevitabile che prima o poi accada, ciò che emerge non è una semplice disfunzione tecnica, ma la totale incapacità della struttura di gestire il fattore umano senza l'ausilio di una protesi digitale. Forse la vera malattia che questo studio medico dovrebbe curare non si annida nei corpi dei pazienti, ma risiede in questa nostra febbrile ossessione collettiva di misurare ogni singolo istante della vita, riducendo l'empatia e l'ascolto a mere variabili accessorie da eliminare.",
+    "wordCount": 729,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "grottesco",
+        "lemma": "grottesco",
+        "glosses": {
+          "es": "grotesque",
+          "en": "grotesque"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonanza",
+        "lemma": "dissonanza",
+        "glosses": {
+          "es": "cognitive dissonance",
+          "en": "cognitive dissonance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "delocalizzato",
+        "lemma": "delocalizzato",
+        "glosses": {
+          "es": "relocated",
+          "en": "relocated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "minimalista",
+        "lemma": "minimalista",
+        "glosses": {
+          "es": "minimalist",
+          "en": "minimalist"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ingannevole",
+        "lemma": "ingannevole",
+        "glosses": {
+          "es": "deceptive",
+          "en": "deceptive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsoleto",
+        "lemma": "obsoleto",
+        "glosses": {
+          "es": "obsolete",
+          "en": "obsolete"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.8,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del diario della receptionist?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Gli effetti psicologici negativi della delocalizzazione dell'attesa"
+        },
+        {
+          "id": "a2",
+          "text": "I benefici economici della modernizzazione informatica"
+        },
+        {
+          "id": "a3",
+          "text": "La totale inaffidabilità dei moderni sistemi di geolocalizzazione"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il problema non è stato risolto; è stato semplicemente delocalizzato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Come reagiscono i pazienti all'arrivo delle notifiche push?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Protestano rumorosamente davanti alla porta per i ritardi accumulati"
+        },
+        {
+          "id": "a2",
+          "text": "Entrano in modo ordinato senza la necessità di interagire con la receptionist"
+        },
+        {
+          "id": "a3",
+          "text": "Chiedono aiuto al personale amministrativo per comprendere l'orario"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "eliminando persino la necessità di salutare me o di chiedere informazioni.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Che cosa suggerisce l'autrice riguardo alla presunta efficienza del nuovo sistema?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I dati statistici ufficiali smentiscono completamente la realtà quotidiana dello studio"
+        },
+        {
+          "id": "a2",
+          "text": "Il sistema informatico ha risolto definitivamente ogni forma di conflitto nello studio"
+        },
+        {
+          "id": "a3",
+          "text": "L'efficienza interna è reale ma compensata da un aumento dell'ansia all'esterno"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La sala è vuota, ma la tensione è densa quanto il piombo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo l'autrice descrive l'episodio del signor Moretti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per illustrare come la frustrazione trovi nuovi modi per manifestarsi"
+        },
+        {
+          "id": "a2",
+          "text": "Per dimostrare quanto la tecnologia abbia migliorato il rapporto umano"
+        },
+        {
+          "id": "a3",
+          "text": "Per evidenziare la scarsa preparazione tecnica del personale medico"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "riversando su di me una frustrazione che non poteva più sfogare contro una fila visibile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta principalmente la narratrice nel descrivere la situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e ottimista"
+        },
+        {
+          "id": "a2",
+          "text": "Critico e disilluso"
+        },
+        {
+          "id": "a3",
+          "text": "Distaccato e freddamente burocratico"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "mi chiedo se questo progresso tecnologico stia davvero servendo a curare le persone o semplicemente a nascondere il caos dove nessuno possa vederlo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, che significato assume il termine \"delocalizzato\" riferito al problema dell'attesa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il sistema informatico è stato spostato in un server straniero"
+        },
+        {
+          "id": "a2",
+          "text": "I pazienti sono stati invitati a curarsi in un'altra struttura"
+        },
+        {
+          "id": "a3",
+          "text": "Il disagio è stato trasferito dallo spazio interno a quello esterno"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il problema non è stato risolto; è stato semplicemente delocalizzato. Fuori, sotto il portico condominiale, la calca si è trasformata in un assembramento silenzioso e ansioso",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivete un testo argomentativo di circa 200 parole in italiano in cui discutete se la digitalizzazione dei servizi al pubblico riduca effettivamente lo stress o si limiti a trasformarlo, portando esempi concreti basati sulla vostra esperienza.",
+      "en": "Scrivete un testo argomentativo di circa 200 parole in italiano in cui discutete se la digitalizzazione dei servizi al pubblico riduca effettivamente lo stress o si limiti a trasformarlo, portando esempi concreti basati sulla vostra esperienza."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizzate il testo focalizzandovi sugli effetti psicologici della digitalizzazione delle code e completate le attività di comprensione e produzione scritta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il paradosso della soglia | C1 Reading | WeLearn",
+      "en": "Il paradosso della soglia | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggete questa pagina di diario e rispondete alle domande per dimostrare la comprensione di sfumature lessicali, implicazioni psicologiche e registri stilistici avanzati in italiano.",
+      "en": "Leggete questa pagina di diario e rispondete alle domande per dimostrare la comprensione di sfumature lessicali, implicazioni psicologiche e registri stilistici avanzati in italiano."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}

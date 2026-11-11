@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c1-shared-desks",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "italian C1"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Riorganizzazione degli spazi aziendali e flessibilità operativa",
+      "en": "Riorganizzazione degli spazi aziendali e flessibilità operativa"
+    },
+    "intro": {
+      "es": "Leggi questa comunicazione aziendale di livello avanzato per analizzare le dinamiche retoriche e le implicazioni contrattuali della gestione degli spazi di lavoro.",
+      "en": "Leggi questa comunicazione aziendale di livello avanzato per analizzare le dinamiche retoriche e le implicazioni contrattuali della gestione degli spazi di lavoro."
+    },
+    "mission": {
+      "es": "Analizza il testo per comprendere come la retorica della flessibilità possa mascherare il trasferimento di costi operativi sui dipendenti, quindi rispondi alle domande di comprensione e completa l'attività di produzione scritta.",
+      "en": "Analizza il testo per comprendere come la retorica della flessibilità possa mascherare il trasferimento di costi operativi sui dipendenti, quindi rispondi alle domande di comprensione e completa l'attività di produzione scritta."
+    },
+    "targetText": "Gentile dottoressa Moretti, ti scrivo in merito alla recente revisione della nostra politica operativa che introduce il modello ibrido permanente per il dipartimento di consulenza strategica. La direzione ha esaminato i dati relativi alla produttività del trimestre precedente e ha osservato che la presenza in sede, pur rimanendo un valore fondamentale per la nostra cultura aziendale, non rappresenta più un prerequisito assoluto per il raggiungimento degli obiettivi strategici concordati con i nostri clienti istituzionali. Di conseguenza, a partire dal prossimo mese, ciascun collaboratore avrà la facoltà di gestire autonomamente la propria presenza fisica, alternando giornate in ufficio a sessioni di lavoro da remoto. Questa trasformazione intende valorizzare la fiducia reciproca e offrire a tutti voi una maggiore conciliazione tra impegni professionali ed esigenze personali, riducendo al contempo i disagi legati agli spostamenti quotidiani nelle ore di punta.\n\nÈ opportuno tuttavia sottolineare che la flessibilità, per essere efficace e sostenibile nel lungo periodo, richiede un adeguamento strutturale non solo dei processi decisionali, ma anche dell'infrastruttura logistica individuale di cui ciascuno si avvale. Durante le sessioni di ascolto svolte in autunno, molti di voi hanno evidenziato il desiderio di disporre di postazioni domestiche altamente performanti, capaci di garantire standard di sicurezza informatica e comfort ergonomico paragonabili a quelli offerti dalla nostra sede centrale di viale Monza. Avendo preso atto di tali legittime aspirazioni, l'azienda ha deciso di concedere la massima autonomia nella configurazione del proprio studio privato, affinché ognuno possa plasmare l'ambiente ideale secondo il proprio gusto e le specifiche esigenze operative, senza le rigidità tipiche degli arredi standardizzati d'ufficio.\n\nAl fine di agevolare questa transizione verso un modello organizzativo pienamente autonomo, la direzione ha deliberato di superare il concetto tradizionale di rimborso spese a piè di lista per le utenze domestiche e le attrezzature periferiche. Tale sistema burocratico, come dimostrato dai recenti audit amministrativi, generava inefficienze e disparità di trattamento difficilmente conciliabili con lo spirito egualitario che vogliamo promuovere. Al suo posto, abbiamo stabilito l'erogazione di un'indennità forfettaria annuale svincolata dalla rendicontazione analitica dei consumi energetici e dall'acquisto di minuteria informatica. Questa scelta gestionale mira a responsabilizzare il professionista nella gestione oculata delle proprie risorse, sgravando al contempo i dipartimenti interni da un'onerosissima attività di controllo contabile che inevitabilmente rallentava i processi di approvazione dei rimborsi minori.\n\nPur comprendendo che la ridefinizione dei perimetri di spesa possa inizialmente richiedere un periodo di calibrazione economica, riteniamo che i benefici derivanti dalla totale libertà di scelta compensino ampiamente la cessazione dei vecchi sussidi vincolati. L'indennità forfettaria è stata infatti calcolata sulla base di stime macroeconomiche prudenziali e rimarrà fissa per l'intero anno solare, indipendentemente dalle oscillazioni tariffarie del mercato energetico o dall'effettiva usura delle apparecchiature utilizzate per lo svolgimento delle mansioni assegnate. In questo modo, l'azienda intende stimolare una virtuosa cultura dell'autonomia, in cui il lavoratore non è più un semplice esecutore passivo di direttive calate dall'alto, ma il gestore consapevole di una micro-impresa domestica integrata nella rete aziendale.\n\nVi invito pertanto a sottoscrivere l'addendum contrattuale che disciplina le nuove modalità di lavoro agile entro la fine della settimana corrente, così da consentire agli uffici amministrativi di predisporre i pagamenti della nuova indennità a partire dal cedolino del mese successivo. Resto a disposizione per eventuali chiarimenti di carattere generale, pur ricordando che la sottoscrizione del documento costituisce accettazione tacca dei termini qui descritti e conferma la condivisione degli obiettivi di modernizzazione che la nostra organizzazione sta perseguendo con determinazione e lungimiranza. Cordiali saluti, ingegner Marco Bellini, direttore operativo.\n\nNonostante l'apparente linearità di questo percorso di modernizzazione, è fondamentale considerare il potenziale rischio di isolamento professionale e la progressiva frammentazione del senso di appartenenza alla nostra comunità lavorativa, aspetti che un'indennità puramente economica non può in alcun modo colmare. L'assenza prolungata dagli spazi condivisi potrebbe infatti indebolire quella spontanea osmosi di idee e quel confronto informale che da sempre caratterizzano la nostra eccellenza nella consulenza strategica, riducendo le interazioni a scambi meramente funzionali e digitalizzati. Affinché la flessibilità non si traduca in una graduale autoreferenzialità dei singoli team, la direzione dovrà necessariamente promuovere momenti periodici di incontro in presenza, strutturati non come obblighi burocratici ma come occasioni insostituibili di crescita collettiva e rigenerazione culturale, preservando così l'anima coesa e dinamica che ha reso la nostra società un punto di riferimento autorevole nel settore di mercato.",
+    "wordCount": 711,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "indennità forfettaria",
+        "lemma": "indennità forfettaria",
+        "glosses": {
+          "es": "lump-sum allowance",
+          "en": "lump-sum allowance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rendicontazione analitica",
+        "lemma": "rendicontazione analitica",
+        "glosses": {
+          "es": "itemized accounting",
+          "en": "itemized accounting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "oscillazioni tariffarie",
+        "lemma": "oscillazioni tariffarie",
+        "glosses": {
+          "es": "tariff fluctuations",
+          "en": "tariff fluctuations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "micro-impresa domestica",
+        "lemma": "micro-impresa domestica",
+        "glosses": {
+          "es": "domestic micro-enterprise",
+          "en": "domestic micro-enterprise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "addendum contrattuale",
+        "lemma": "addendum contrattuale",
+        "glosses": {
+          "es": "contractual addendum",
+          "en": "contractual addendum"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "accettazione tacca",
+        "lemma": "accettazione tacca",
+        "glosses": {
+          "es": "tacit acceptance",
+          "en": "tacit acceptance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 35.5,
+      "maxSentenceWords": 60,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:38:32.910Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale della comunicazione inviata dall'ingegner Bellini?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'introduzione del lavoro ibrido e la modifica dei rimborsi"
+        },
+        {
+          "id": "a2",
+          "text": "La chiusura definitiva della sede centrale"
+        },
+        {
+          "id": "a3",
+          "text": "Un aumento generale degli stipendi per tutti i dipendenti"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La direzione ha esaminato i dati relativi alla produttività del trimestre precedente e ha osservato che la presenza in sede, pur rimanendo un valore fondamentale per la nostra cultura aziendale, non rappresenta più un prerequisito assoluto per il raggiungimento degli obiettivi strategici concordati con i nostri clienti istituzionali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "In che modo l'azienda intende gestire le spese per le utenze e le attrezzature domestiche?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Con un rimborso analitico basato sugli scontrini"
+        },
+        {
+          "id": "a2",
+          "text": "Con l'erogazione di un'indennità forfettaria annuale fissa"
+        },
+        {
+          "id": "a3",
+          "text": "Coprendo interamente le bollette energetiche reali"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Al suo posto, abbiamo stabilito l'erogazione di un'indennità forfettaria annuale svincolata dalla rendicontazione analitica dei consumi energetici e dall'acquisto di minuteria informatica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quale conseguenza pratica comporta per i dipendenti il passaggio alla nuova indennità forfettaria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I dipendenti ricevono rimborsi mensili molto più alti rispetto al passato."
+        },
+        {
+          "id": "a2",
+          "text": "I dipendenti non possono più lavorare da casa in modo continuativo."
+        },
+        {
+          "id": "a3",
+          "text": "I dipendenti assumono il rischio finanziario delle fluttuazioni dei costi energetici domestici."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "L'indennità forfettaria è stata infatti calcolata sulla base di stime macroeconomiche prudenziali e rimarrà fissa per l'intero anno solare, indipendentemente dalle oscillazioni tariffarie del mercato energetico o dall'effettiva usura delle apparecchiature utilizzate per lo svolgimento delle mansioni assegnate.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Per quale motivo principale l'autore della lettera adotta questo stile formale e persuasivo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per presentare il trasferimento dei costi operativi come un'opportunità di autonomia e crescita"
+        },
+        {
+          "id": "a2",
+          "text": "Per giustificare un taglio di stipendio generalizzato e punitivo"
+        },
+        {
+          "id": "a3",
+          "text": "Per convincere i clienti a pagare di più per i servizi di consulenza"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "In questo modo, l'azienda intende stimolare una virtuosa cultura dell'autonomia, in cui il lavoratore non è più un semplice esecutore passivo di direttive calate dall'alto, ma il gestore consapevole di una micro-impresa domestica integrata nella rete aziendale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Come si può definire il tono generale utilizzato dall'ingegner Bellini nella comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Rabbioso e minaccioso nei confronti dei collaboratori"
+        },
+        {
+          "id": "a2",
+          "text": "Paternalistico, rassicurante e orientato a mascherare i costi nascosti"
+        },
+        {
+          "id": "a3",
+          "text": "Ironico e apertamente critico verso la direzione aziendale"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Questa trasformazione intende valorizzare la fiducia reciproca e offrire a tutti voi una maggiore conciliazione tra impegni professionali ed esigenze personali, riducendo al contempo i disagi legati agli spostamenti quotidiani nelle ore di punta.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nel testo, che cosa significa l'espressione \"indennità forfettaria\"?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un pagamento variabile legato alle ore effettive di lavoro straordinario"
+        },
+        {
+          "id": "a2",
+          "text": "Un fondo speciale destinato esclusivamente alla riparazione dei computer aziendali"
+        },
+        {
+          "id": "a3",
+          "text": "Una somma di denaro fissa stabilita in anticipo, slegata dalle spese reali documentate"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Al suo posto, abbiamo stabilito l'erogazione di un'indennità forfettaria annuale svincolata dalla rendicontazione analitica dei consumi energetici e dall'acquisto di minuteria informatica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una risposta formale (250-300 parole) indirizzata all'ingegner Bellini nei panni della dottoressa Moretti. Nel testo, accogli con favore la flessibilità del lavoro ibrido ma solleva dubbi critici riguardo all'adeguatezza dell'indennità forfettaria a fronte dei reali costi energetici e di usura delle attrezzature domestiche.",
+      "en": "Scrivi una risposta formale (250-300 parole) indirizzata all'ingegner Bellini nei panni della dottoressa Moretti. Nel testo, accogli con favore la flessibilità del lavoro ibrido ma solleva dubbi critici riguardo all'adeguatezza dell'indennità forfettaria a fronte dei reali costi energetici e di usura delle attrezzature domestiche."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analizza il testo per comprendere come la retorica della flessibilità possa mascherare il trasferimento di costi operativi sui dipendenti, quindi rispondi alle domande di comprensione e completa l'attività di produzione scritta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:38:32.910Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Riorganizzazione degli spazi aziendali e flessibilità operativa | C1 Reading | WeLearn",
+      "en": "Riorganizzazione degli spazi aziendali e flessibilità operativa | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggi questa comunicazione aziendale di livello avanzato per analizzare le dinamiche retoriche e le implicazioni contrattuali della gestione degli spazi di lavoro.",
+      "en": "Leggi questa comunicazione aziendale di livello avanzato per analizzare le dinamiche retoriche e le implicazioni contrattuali della gestione degli spazi di lavoro."
+    },
+    "canonicalPath": "/en/practice/italian/c1/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:38:32.910Z"
+  }
+}
