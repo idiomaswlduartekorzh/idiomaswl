@@ -1,8 +1,10 @@
 # Writing laboral B2 · agentes, subagentes y harness
 
-## Alcance actual
+## Estado tras la aprobación del preview
 
-Este primer corte contiene **tres casos jugables de inglés B2** en `/practica/ingles/b2/escritura`. Es un preview para revisión del usuario. No habilita C1, C2 ni otros idiomas, y no modifica los 480 ejercicios A1–B1. La ruta declara `noindex` y el hub B2 conserva Writing como pendiente hasta aprobación.
+El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. El banco de inglés contiene ahora **20 casos jugables por nivel B2, C1 y C2**; francés B2 tiene otros 20. Francés C1/C2 y los demás idiomas siguen en elaboración. No se alteraron los 480 ejercicios A1–B1.
+
+Las rutas nuevas conservan `noindex` y no se enlazan desde los hubs hasta pasar revisión editorial y las puertas de integración. La aprobación del formato autorizó la expansión; no equivale a una publicación automática.
 
 La unidad editorial es un malentendido laboral concreto: correo recibido → documento de hechos → análisis de alcance, intención, propósito y evidencia → respuesta al correo → revisión y segunda versión. El estudiante debe poder señalar qué sabe, qué supone otra persona, qué falta por comprobar y qué acción está bajo su control.
 
@@ -22,37 +24,38 @@ Los cuatro roles 2–5 son subagentes del coordinador; los auditores no reciben 
 
 ## Contrato de un caso
 
-`src/data/practica/writing-workplace-b2.json` es la fuente única del preview. Cada caso incluye:
+Cada JSON `src/data/practica/writing-workplace-<idioma>-<nivel>.json` (inglés conserva el nombre corto `writing-workplace-<nivel>.json`) es la fuente única de su banco. Cada caso incluye:
 
 - `misunderstanding`: la discrepancia central, expresada en una frase;
 - `email`: remitente, destinatario, momento, asunto y cuerpo;
 - `document.facts`: 4–8 hechos con ID estable y referencia temporal;
-- `questions`: cuatro ejes (Evidence, Scope, Intent, Purpose), tres opciones y feedback específico por opción, con IDs de evidencia;
+- `questions`: cuatro ejes internos (Evidence, Scope, Intent, Purpose), tres opciones y feedback específico por opción, con IDs de evidencia; la interfaz traduce los ejes;
 - `task`: consigna, extensión orientativa y cuatro criterios concretos;
 - `model`: respuesta posible y cuatro decisiones anotadas con evidencia.
 
-Las referencias a hechos permiten detectar una clave sin sustento. Un auditor humano sigue siendo necesario para juzgar realismo, intención implícita, naturalidad y afirmaciones inventadas; el script no pretende puntuar semánticamente el texto del estudiante.
+El campo interno `area` conserva cinco grupos canónicos para el harness; `areaLabel` muestra el dominio en el idioma estudiado. Correo, hechos, preguntas, feedback, consigna, modelo, botones, navegación y metadatos deben estar en la lengua meta. Las referencias a hechos permiten detectar claves sin sustento estructural. Un auditor humano sigue siendo necesario para juzgar realismo, intención implícita, naturalidad y afirmaciones inventadas; el script no puntúa semánticamente el texto del estudiante.
 
 ## Puertas ejecutables
 
 ```bash
 npm run check:writing-workplace-b2
+npm run check:writing-workplace-english
+node scripts/check-writing-workplace-locale.mjs frances
 npm run test:writing-workplace-b2
 npx tsc --noEmit
 npm run check:practica-catalog
 npm run build
 ```
 
-El checker valida cantidad de casos, identidad, variedad de áreas, documentos, cuatro ejes de preguntas, opciones, claves, referencias y anotaciones del modelo. Las pruebas mutan evidencia y claves para comprobar que el propio guardián detecta defectos. Antes de integrar se recorre en navegador el camino completo, una opción errónea, un borrador revisado y el ancho móvil.
+El checker exige 20 casos por nivel, cuatro por cada una de cinco áreas, variedad de posiciones correctas, hechos, cuatro ejes, tres opciones, claves, referencias y anotaciones. Las pruebas mutan evidencia, claves y distribución para comprobar que el propio guardián detecta defectos. Antes de integrar se recorre en navegador el camino completo, una opción errónea, un borrador revisado y el ancho móvil.
 
-El preview no se añade a `prebuild`: el guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1. Al aprobar B2 se define una puerta de publicación nueva para 20 casos, con revisión editorial de todo el conjunto.
+Las rutas nuevas aún no se incluyen en `prebuild`: falta cerrar la revisión editorial y los bancos en curso. El guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1. Al preparar la integración se añade una puerta nueva por banco completo, sin reducir el guardián existente.
 
-## Escalado tras revisión
+## Progresión y escalado
 
-1. Aprobar o corregir estos tres casos y el recorrido.
-2. Revisar y congelar [`writing-workplace-b2-case-map.md`](writing-workplace-b2-case-map.md), la parrilla de 20 casos B2 inglés: áreas variadas, malentendidos distintos y productos escritos diversos sin perder el correo como entrada.
-3. Producir y auditar los 17 restantes; entonces habilitar el hub y el gate de 20.
-4. Adaptar el contrato a C1 y C2 con fuentes y decisiones más complejas, sin alargar artificialmente cada caso.
-5. Adaptar a otros idiomas con autores y auditores de cada lengua; no traducir literalmente correos, cortesía ni situaciones laborales.
+La progresión toma como referencia la sección de [interacción escrita y correspondencia del Companion Volume del Consejo de Europa](https://rm.coe.int/cefr-companion-volume-with-new-descriptors-2020/16809ea0d4): B2 resuelve correspondencia profesional no rutinaria con hechos claros y registro adecuado; C1 pondera versiones e implicaciones con precisión; C2 controla atribución y tono en correspondencia profesional compleja. La carga no aumenta solo por extensión.
 
-La aprobación del usuario es la frontera entre el preview y la producción de C1, C2 y otros idiomas.
+1. Inglés B2–C2: 60 casos redactados; auditar cada banco y cerrar pruebas completas de integración.
+2. Francés: B2 redactado, C1/C2 en elaboración; mantener la interfaz y todo el contenido visible en francés.
+3. Alemán, italiano, portugués, ruso, japonés y coreano: crear bancos originales y revisar cada lengua con autores y auditores propios. No traducir literalmente la cortesía ni las situaciones laborales.
+4. Publicar por bancos completos de 20 tras pasar el harness, la revisión lingüística y editorial, el catálogo protegido, TypeScript, build y recorrido en navegador. Registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».

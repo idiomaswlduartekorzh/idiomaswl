@@ -7,6 +7,7 @@ import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
+import { getAdvancedWritingLocale, isAdvancedEnglishWritingPath } from '@/lib/practica/writing-route';
 
 // ⚠️ NUNCA borrar "Práctica" ni "Herramientas": se han perdido en force-pushes.
 const NAV_LINKS = [
@@ -164,8 +165,10 @@ function ThemeToggle({ english = false }: { english?: boolean }) {
 
 export default function SiteNav() {
   const pathname = usePathname();
+  const writingLocale = getAdvancedWritingLocale(pathname);
   const english = pathname.startsWith('/practica/ielts')
     || pathname.startsWith('/practica/toefl')
+    || isAdvancedEnglishWritingPath(pathname)
     || pathname.startsWith('/learn-spanish-colombia')
     || pathname.startsWith('/spanish-classes-bucaramanga');
   const navLinks = english ? IELTS_NAV_LINKS : NAV_LINKS;
@@ -207,6 +210,8 @@ export default function SiteNav() {
     router.push('/');
     router.refresh();
   };
+
+  if (writingLocale && writingLocale !== 'en') return null;
 
   return (
     <header className="wl-site-nav">

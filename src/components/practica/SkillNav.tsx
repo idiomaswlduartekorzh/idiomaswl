@@ -62,7 +62,7 @@ export default function SkillNav({
   }
 
   return (
-    <section style={{ maxWidth: 1180, margin: '3rem auto 4rem', padding: '0 1.25rem' }}>
+    <section className="wl-skill-nav" style={{ maxWidth: 1180, margin: '3rem auto 4rem', padding: '0 1.25rem' }}>
       <div style={{ borderTop: '1px solid var(--line-soft)', paddingTop: '2rem' }}>
 
         <h2 style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: '0.9rem' }}>

@@ -84,12 +84,12 @@
           "F1",
           "F3"
         ],
-        "correctOptionId": "c",
+        "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Marketing had to send the invitation first.",
-            "feedback": "The invitation was scheduled, but it was not the condition for opening."
+            "text": "Legal had to approve the privacy wording.",
+            "feedback": "Monday's agreement made Legal approval a condition of the 10:00 opening."
           },
           {
             "id": "b",
@@ -98,8 +98,8 @@
           },
           {
             "id": "c",
-            "text": "Legal had to approve the privacy wording.",
-            "feedback": "Monday's agreement made Legal approval a condition of the 10:00 opening."
+            "text": "Marketing had to send the invitation first.",
+            "feedback": "The invitation was scheduled, but it was not the condition for opening."
           }
         ]
       },
@@ -260,22 +260,22 @@
           "P2",
           "P3"
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "options": [
           {
-            "id": "b",
+            "id": "a",
             "text": "Desktop CSV export is complete and passed QA.",
             "feedback": "That is the ticket's scope and the flow QA tested."
           },
           {
-            "id": "a",
-            "text": "Every export flow is available.",
-            "feedback": "The ticket names only the desktop Reports page."
+            "id": "b",
+            "text": "Mobile export is ready for Brookline.",
+            "feedback": "Mobile export is outside this ticket and still in the backlog."
           },
           {
             "id": "c",
-            "text": "Mobile export is ready for Brookline.",
-            "feedback": "Mobile export is outside this ticket and still in the backlog."
+            "text": "Every export flow is available.",
+            "feedback": "The ticket names only the desktop Reports page."
           }
         ]
       },
@@ -286,20 +286,20 @@
         "evidenceIds": [
           "P3"
         ],
-        "correctOptionId": "c",
+        "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "The ticket included mobile by default.",
-            "feedback": "Mobile was explicitly excluded."
-          },
-          {
-            "id": "c",
             "text": "Omar's handover omitted the word desktop.",
             "feedback": "'Export is ready' sounded broader than the agreed scope."
           },
           {
             "id": "b",
+            "text": "The ticket included mobile by default.",
+            "feedback": "Mobile was explicitly excluded."
+          },
+          {
+            "id": "c",
             "text": "QA tested Nia's phone.",
             "feedback": "QA tested the desktop flow."
           }
@@ -316,6 +316,11 @@
         "correctOptionId": "a",
         "options": [
           {
+            "id": "a",
+            "text": "Which report Nia needs to export from her phone.",
+            "feedback": "That use case can inform a separate mobile request and its priority."
+          },
+          {
             "id": "b",
             "text": "Whether the desktop ticket was ever created.",
             "feedback": "P-248 and its QA result are already documented."
@@ -324,11 +329,6 @@
             "id": "c",
             "text": "Whether a mobile date was promised in P-248.",
             "feedback": "The record explicitly says no mobile date has been agreed."
-          },
-          {
-            "id": "a",
-            "text": "Which report Nia needs to export from her phone.",
-            "feedback": "That use case can inform a separate mobile request and its priority."
           }
         ]
       },
@@ -339,7 +339,7 @@
         "evidenceIds": [
           "P5"
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "c",
         "options": [
           {
             "id": "a",
@@ -348,13 +348,13 @@
           },
           {
             "id": "b",
-            "text": "That mobile export will ship next week.",
-            "feedback": "There is no agreed mobile delivery date."
+            "text": "A check of the desktop flow.",
+            "feedback": "Omar can reasonably offer to verify that flow again."
           },
           {
             "id": "c",
-            "text": "A check of the desktop flow.",
-            "feedback": "Omar can reasonably offer to verify that flow again."
+            "text": "That mobile export will ship next week.",
+            "feedback": "There is no agreed mobile delivery date."
           }
         ]
       }
@@ -458,12 +458,12 @@
           "H1",
           "H2"
         ],
-        "correctOptionId": "c",
+        "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "A company-wide ban on remote work.",
-            "feedback": "The policy remains available."
+            "text": "Sara was assigned to host an on-site welcome.",
+            "feedback": "The rota assigns her the Friday 09:00–11:00 session."
           },
           {
             "id": "b",
@@ -472,8 +472,8 @@
           },
           {
             "id": "c",
-            "text": "Sara was assigned to host an on-site welcome.",
-            "feedback": "The rota assigns her the Friday 09:00–11:00 session."
+            "text": "A company-wide ban on remote work.",
+            "feedback": "The policy remains available."
           }
         ]
       },
@@ -488,8 +488,8 @@
         "options": [
           {
             "id": "a",
-            "text": "The policy had been suspended.",
-            "feedback": "The policy has not been suspended."
+            "text": "Priya had already declined the request.",
+            "feedback": "The record does not say Priya declined anything."
           },
           {
             "id": "b",
@@ -498,8 +498,8 @@
           },
           {
             "id": "c",
-            "text": "Priya had already declined the request.",
-            "feedback": "The record does not say Priya declined anything."
+            "text": "The policy had been suspended.",
+            "feedback": "The policy has not been suspended."
           }
         ]
       },
@@ -519,13 +519,13 @@
           },
           {
             "id": "b",
-            "text": "Whether Sara asked to work remotely.",
-            "feedback": "Her Wednesday request is recorded."
+            "text": "Whether the policy allows remote days.",
+            "feedback": "The policy allows up to two with coverage."
           },
           {
             "id": "c",
-            "text": "Whether the policy allows remote days.",
-            "feedback": "The policy allows up to two with coverage."
+            "text": "Whether Sara asked to work remotely.",
+            "feedback": "Her Wednesday request is recorded."
           }
         ]
       },
@@ -539,22 +539,22 @@
           "H4",
           "H5"
         ],
-        "correctOptionId": "c",
+        "correctOptionId": "b",
         "options": [
           {
             "id": "a",
-            "text": "Tell Priya the policy does not apply to this team.",
-            "feedback": "That contradicts the policy."
-          },
-          {
-            "id": "b",
             "text": "Promise Sara can work remotely this Friday.",
             "feedback": "Coverage is still unknown, so that promise is premature."
           },
           {
-            "id": "c",
+            "id": "b",
             "text": "Explain the rota, own the unclear reply, and check coverage with Sara.",
             "feedback": "That clarifies the reason and leaves room for a real option."
+          },
+          {
+            "id": "c",
+            "text": "Tell Priya the policy does not apply to this team.",
+            "feedback": "That contradicts the policy."
           }
         ]
       }
@@ -599,6 +599,3353 @@
           "excerpt": "update you both",
           "evidenceIds": [
             "H5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "old-product-photo",
+    "title": "The photo from last season",
+    "area": "Marketing × Design",
+    "role": "Imani · Design",
+    "teaser": "The campaign copy was approved, but the product photo in the post belongs to an older version.",
+    "misunderstanding": "A copy approval was mistaken for approval of the whole creative asset.",
+    "email": {
+      "from": "Ruth Ellis · Marketing",
+      "to": "Imani · Design",
+      "sent": "Wednesday, 09:18",
+      "subject": "Which image did we approve?",
+      "body": "Hi Imani,\n\nThe launch post went out this morning with the old blue packaging. Sales has already asked why we are showing a version that customers cannot order. I thought we approved the post yesterday. Can you tell me why the earlier photo was used and what we should do with the live post?\n\nRuth"
+    },
+    "document": {
+      "title": "Creative handover · launch post",
+      "intro": "The approval record separates copy from visuals. Use only these confirmed details.",
+      "facts": [
+        {
+          "id": "N4F1",
+          "time": "Tue 15:10",
+          "text": "Ruth approved the headline and body copy in the copy review thread. The image was not included in that review."
+        },
+        {
+          "id": "N4F2",
+          "time": "Tue 16:05",
+          "text": "The new green-packaging image was approved in the asset library, but the scheduled post still pointed to the older blue-packaging file."
+        },
+        {
+          "id": "N4F3",
+          "time": "Wed 08:30",
+          "text": "The scheduler published the post with the blue-packaging image. Imani had prepared the post and did not check the final scheduled preview."
+        },
+        {
+          "id": "N4F4",
+          "time": "Wed 09:00",
+          "text": "Sales flagged the mismatch. The post is still live; the number of people who saw it is unknown."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "old-product-photo-evidence",
+        "axis": "Evidence",
+        "prompt": "What was approved in Ruth's review?",
+        "evidenceIds": [
+          "N4F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The headline and body copy only.",
+            "feedback": "The image was not part of that review."
+          },
+          {
+            "id": "b",
+            "text": "The complete post, including the image.",
+            "feedback": "The review thread did not contain the image."
+          },
+          {
+            "id": "c",
+            "text": "Only the packaging design.",
+            "feedback": "The record concerns campaign copy, not product design."
+          }
+        ]
+      },
+      {
+        "id": "old-product-photo-scope",
+        "axis": "Scope",
+        "prompt": "What caused the published mismatch?",
+        "evidenceIds": [
+          "N4F2",
+          "N4F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sales changed the photo after publication.",
+            "feedback": "No such change is documented."
+          },
+          {
+            "id": "b",
+            "text": "The new packaging was not approved.",
+            "feedback": "The asset library shows it was approved."
+          },
+          {
+            "id": "c",
+            "text": "The scheduled post still used the older image file.",
+            "feedback": "The approved new file was not connected to the scheduled post."
+          }
+        ]
+      },
+      {
+        "id": "old-product-photo-intent",
+        "axis": "Intent",
+        "prompt": "What does Ruth need now?",
+        "evidenceIds": [
+          "N4F3",
+          "N4F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A new product design.",
+            "feedback": "The problem is the campaign image, not the product."
+          },
+          {
+            "id": "b",
+            "text": "A claim that nobody saw the post.",
+            "feedback": "The audience size is unknown."
+          },
+          {
+            "id": "c",
+            "text": "A clear explanation and a plan for the live post.",
+            "feedback": "Her email asks both why it happened and what to do."
+          }
+        ]
+      },
+      {
+        "id": "old-product-photo-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply would be most responsible?",
+        "evidenceIds": [
+          "N4F1",
+          "N4F2",
+          "N4F3",
+          "N4F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Say Ruth approved every part of the post.",
+            "feedback": "Her approval covered copy only."
+          },
+          {
+            "id": "b",
+            "text": "Delete all campaign materials without discussion.",
+            "feedback": "The evidence supports correcting this post, not cancelling the campaign."
+          },
+          {
+            "id": "c",
+            "text": "Own the missed preview, correct the live asset, and check the impact.",
+            "feedback": "It addresses the actual error and the next decision."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Ruth as Imani. Explain the difference between copy and image approval, own the missed preview check, and propose a measured correction to the live post.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Distinguish copy approval from image approval",
+        "Name the scheduled-file mismatch",
+        "Own the missed preview check",
+        "Propose a correction and an impact check"
+      ]
+    },
+    "model": {
+      "subject": "Re: Which image did we approve?",
+      "body": "Hi Ruth,\n\nYou approved the headline and body copy yesterday, but the image was not part of that review. The new green-packaging photo was approved separately in the asset library. I left the scheduled post linked to the older blue-packaging file and did not check the final preview before it went live. That was my mistake, and I understand why Sales is concerned about showing a version customers cannot order.\n\nI can replace the image in the live post now, if the platform allows an edit, or take the post down and republish it with the approved photo. I'll check the available option with the social team and send you the corrected preview before we act. We do not yet know how many people saw the original, so I will also gather the post figures before we decide whether a separate clarification is needed.\n\nImani",
+      "annotations": [
+        {
+          "label": "Defines approval",
+          "excerpt": "image was not part of that review",
+          "evidenceIds": [
+            "N4F1"
+          ]
+        },
+        {
+          "label": "Owns the error",
+          "excerpt": "I left the scheduled post linked",
+          "evidenceIds": [
+            "N4F2",
+            "N4F3"
+          ]
+        },
+        {
+          "label": "Keeps uncertainty",
+          "excerpt": "We do not yet know how many people saw",
+          "evidenceIds": [
+            "N4F4"
+          ]
+        },
+        {
+          "label": "Offers a proportionate action",
+          "excerpt": "send you the corrected preview",
+          "evidenceIds": [
+            "N4F2",
+            "N4F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "internal-time-public-post",
+    "title": "The post before the announcement",
+    "area": "Marketing × Partnerships",
+    "role": "Zoe · Social",
+    "teaser": "A partner sees the launch post before the agreed joint announcement.",
+    "misunderstanding": "An internal preparation time was read as the public publication time.",
+    "email": {
+      "from": "Elena Mora · Partnerships",
+      "to": "Zoe · Social",
+      "sent": "Thursday, 09:05",
+      "subject": "Why is the partnership post already public?",
+      "body": "Hi Zoe,\n\nOur partner has just sent me a screenshot of the announcement on our public feed. We agreed to announce together at noon. The social calendar says 08:30, so I need to understand whether that was a publication time or a preparation reminder. Please tell me what happened before I call them back.\n\nElena"
+    },
+    "document": {
+      "title": "Joint launch notes · social calendar",
+      "intro": "The partner agreement and scheduling record clarify the two times.",
+      "facts": [
+        {
+          "id": "N5F1",
+          "time": "Wed 17:00",
+          "text": "The joint launch note sets 12:00 Thursday as the public announcement time for both organisations."
+        },
+        {
+          "id": "N5F2",
+          "time": "Wed 17:10",
+          "text": "The internal social calendar shows 08:30 Thursday with the label “prepare partner post”; it does not say “publish”."
+        },
+        {
+          "id": "N5F3",
+          "time": "Thu 08:32",
+          "text": "Zoe scheduled the post for 08:30 and it became public. She interpreted the calendar time as a publication slot."
+        },
+        {
+          "id": "N5F4",
+          "time": "Thu 08:47",
+          "text": "The post was removed after Elena flagged it. The record does not show how many people saw it or what the partner plans to say publicly."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "internal-time-public-post-evidence",
+        "axis": "Evidence",
+        "prompt": "Which time was agreed for the public announcement?",
+        "evidenceIds": [
+          "N5F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "12:00 Thursday.",
+            "feedback": "The joint launch note specifies noon."
+          },
+          {
+            "id": "b",
+            "text": "08:47 Thursday.",
+            "feedback": "That is when the early post was removed."
+          },
+          {
+            "id": "c",
+            "text": "08:30 Thursday.",
+            "feedback": "That was an internal preparation reminder."
+          }
+        ]
+      },
+      {
+        "id": "internal-time-public-post-scope",
+        "axis": "Scope",
+        "prompt": "What did the 08:30 calendar entry mean?",
+        "evidenceIds": [
+          "N5F1",
+          "N5F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Publish the joint announcement.",
+            "feedback": "The public time was noon."
+          },
+          {
+            "id": "b",
+            "text": "Call the partner to cancel.",
+            "feedback": "The entry does not mention a cancellation."
+          },
+          {
+            "id": "c",
+            "text": "Prepare the partner post internally.",
+            "feedback": "The entry says prepare, not publish."
+          }
+        ]
+      },
+      {
+        "id": "internal-time-public-post-intent",
+        "axis": "Intent",
+        "prompt": "What does Elena need before calling the partner?",
+        "evidenceIds": [
+          "N5F3",
+          "N5F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A guarantee that no one saw the post.",
+            "feedback": "Audience figures are unknown."
+          },
+          {
+            "id": "b",
+            "text": "An accurate timeline and an immediate coordination plan.",
+            "feedback": "Her email asks what happened so she can speak to them."
+          },
+          {
+            "id": "c",
+            "text": "A statement that the partner changed the time.",
+            "feedback": "There is no evidence of a changed agreement."
+          }
+        ]
+      },
+      {
+        "id": "internal-time-public-post-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Zoe avoid saying?",
+        "evidenceIds": [
+          "N5F1",
+          "N5F2",
+          "N5F3",
+          "N5F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the public agreement was for noon.",
+            "feedback": "The joint note establishes that time."
+          },
+          {
+            "id": "b",
+            "text": "That the early post had no audience.",
+            "feedback": "The record does not show view figures."
+          },
+          {
+            "id": "c",
+            "text": "That she misread the calendar entry.",
+            "feedback": "That is consistent with the scheduling record."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Elena as Zoe. Clarify the two times, own the scheduling error, state what is still unknown, and coordinate the next message with the partner.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "State the agreed public time",
+        "Explain the calendar label",
+        "Own the early publication",
+        "Avoid an unsupported reach claim"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why is the partnership post already public?",
+      "body": "Hi Elena,\n\nThe agreed public announcement time was noon. The 08:30 entry in the social calendar was a reminder to prepare the partner post, not a publication slot. I misread it and scheduled the post for 08:30, which is why it appeared on our public feed at 08:32. I am sorry this put you in a difficult position with the partner.\n\nWe removed the post at 08:47. I have not yet confirmed how many people saw it, and I would not tell the partner that there was no exposure. I will check the post figures and send you the exact timeline now. Before anything goes live again, could we confirm with the partner whether they still want the joint announcement at noon and agree on the wording? I will hold the revised post until you give the go-ahead.\n\nZoe",
+      "annotations": [
+        {
+          "label": "States the agreement",
+          "excerpt": "agreed public announcement time was noon",
+          "evidenceIds": [
+            "N5F1"
+          ]
+        },
+        {
+          "label": "Owns the mistake",
+          "excerpt": "I misread it",
+          "evidenceIds": [
+            "N5F2",
+            "N5F3"
+          ]
+        },
+        {
+          "label": "Preserves uncertainty",
+          "excerpt": "I have not yet confirmed how many people saw it",
+          "evidenceIds": [
+            "N5F4"
+          ]
+        },
+        {
+          "label": "Coordinates repair",
+          "excerpt": "confirm with the partner",
+          "evidenceIds": [
+            "N5F1",
+            "N5F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "quote-permission",
+    "title": "A quote in the wrong place",
+    "area": "Marketing × Account team",
+    "role": "Noah · Campaigns",
+    "teaser": "A customer quote appears in an advertisement, and the account manager says the customer is upset.",
+    "misunderstanding": "Permission for an internal research interview was mistaken for permission to advertise.",
+    "email": {
+      "from": "Tessa Grant · Account team",
+      "to": "Noah · Campaigns",
+      "sent": "Monday, 10:40",
+      "subject": "Customer quote in the new advert",
+      "body": "Hi Noah,\n\nOur customer saw their words in the new advert and has asked me to take it down. I was told they had agreed to be quoted, so I need to know what permission we actually had. Please confirm whether the advert is still running and what I can tell them today.\n\nTessa"
+    },
+    "document": {
+      "title": "Interview consent · campaign record",
+      "intro": "The permission applies to a specific use; the customer request needs a prompt response.",
+      "facts": [
+        {
+          "id": "N6F1",
+          "time": "Interview record",
+          "text": "The customer agreed that a short quote from their interview could be used in an internal research summary."
+        },
+        {
+          "id": "N6F2",
+          "time": "Campaign brief",
+          "text": "The advert used the same quote in a public paid campaign. No separate public-use permission is recorded."
+        },
+        {
+          "id": "N6F3",
+          "time": "Mon 09:30",
+          "text": "The paid advert began running. Noah selected the quote after seeing the interview note “quote approved”, without checking the stated use."
+        },
+        {
+          "id": "N6F4",
+          "time": "Mon 10:35",
+          "text": "Tessa relayed the customer’s request to take the advert down. The current pause status and number of impressions have not yet been checked."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "quote-permission-evidence",
+        "axis": "Evidence",
+        "prompt": "What use did the customer agree to?",
+        "evidenceIds": [
+          "N6F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "An internal research summary.",
+            "feedback": "That is the use stated in the interview record."
+          },
+          {
+            "id": "b",
+            "text": "A testimonial on the website.",
+            "feedback": "The record does not mention a website testimonial."
+          },
+          {
+            "id": "c",
+            "text": "Any public advertisement.",
+            "feedback": "No public-use permission is recorded."
+          }
+        ]
+      },
+      {
+        "id": "quote-permission-scope",
+        "axis": "Scope",
+        "prompt": "Why did the advert exceed the recorded permission?",
+        "evidenceIds": [
+          "N6F1",
+          "N6F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The customer never spoke in an interview.",
+            "feedback": "The interview record confirms an interview."
+          },
+          {
+            "id": "b",
+            "text": "The same quote was used in a public paid campaign.",
+            "feedback": "The agreed context was internal research."
+          },
+          {
+            "id": "c",
+            "text": "The quote was paraphrased.",
+            "feedback": "The issue is use, not paraphrasing."
+          }
+        ]
+      },
+      {
+        "id": "quote-permission-intent",
+        "axis": "Intent",
+        "prompt": "What information does Tessa need today?",
+        "evidenceIds": [
+          "N6F2",
+          "N6F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A promise about impression numbers.",
+            "feedback": "Those figures have not been checked."
+          },
+          {
+            "id": "b",
+            "text": "The permission scope, advert status, and a safe update for the customer.",
+            "feedback": "Her email asks about permission, whether it is running, and what to say."
+          },
+          {
+            "id": "c",
+            "text": "A defence of the campaign’s wording.",
+            "feedback": "The customer is asking for removal, not a copy debate."
+          }
+        ]
+      },
+      {
+        "id": "quote-permission-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Noah do first?",
+        "evidenceIds": [
+          "N6F2",
+          "N6F3",
+          "N6F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask the customer to approve the advert retrospectively before acting.",
+            "feedback": "That would delay the response to their removal request."
+          },
+          {
+            "id": "b",
+            "text": "Request a pause of the advert and verify its status.",
+            "feedback": "This responds to the removal request without assuming it is already paused."
+          },
+          {
+            "id": "c",
+            "text": "Assure Tessa the advert has been removed.",
+            "feedback": "Pause status has not been checked."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Tessa as Noah. Clarify the permission scope, own the mistaken interpretation, initiate a pause and status check, and suggest a careful customer update without inventing reach figures.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Name the internal-only permission",
+        "Own the scope mistake",
+        "Act on the removal request",
+        "Do not claim an unverified pause or reach"
+      ]
+    },
+    "model": {
+      "subject": "Re: Customer quote in the new advert",
+      "body": "Hi Tessa,\n\nI checked the interview record. The customer agreed to use of the quote in an internal research summary. I treated the note “quote approved” as permission for the public campaign, but the record does not support that wider use. I should have checked the stated context before selecting it, and I am sorry this has put you in a difficult conversation.\n\nI am asking the campaign team to pause the paid advert now and will confirm when it is no longer running. I will also obtain the impression figures, which we do not yet have. For your reply to the customer, I suggest acknowledging their request, explaining that we are checking the advert’s status, and promising a confirmed update rather than saying it has already been removed. I will send you the exact status as soon as it is verified.\n\nNoah",
+      "annotations": [
+        {
+          "label": "Defines the permission",
+          "excerpt": "internal research summary",
+          "evidenceIds": [
+            "N6F1"
+          ]
+        },
+        {
+          "label": "Owns the mistake",
+          "excerpt": "I treated the note",
+          "evidenceIds": [
+            "N6F2",
+            "N6F3"
+          ]
+        },
+        {
+          "label": "Avoids invented status",
+          "excerpt": "will confirm when it is no longer running",
+          "evidenceIds": [
+            "N6F4"
+          ]
+        },
+        {
+          "label": "Plans the reply",
+          "excerpt": "promising a confirmed update",
+          "evidenceIds": [
+            "N6F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "one-account-access",
+    "title": "An outage for one account",
+    "area": "Software × Support",
+    "role": "Evan · Engineering",
+    "teaser": "Support reports a platform outage, but the evidence points to one account’s permissions.",
+    "misunderstanding": "An access-denied response for one account was interpreted as a system-wide outage.",
+    "email": {
+      "from": "Marisol Vega · Support",
+      "to": "Evan · Engineering",
+      "sent": "Tuesday, 11:20",
+      "subject": "Is the dashboard down for everyone?",
+      "body": "Hi Evan,\n\nTwo people at Cedarline say the dashboard stopped working this morning. They get an access error, and the customer is asking whether the whole platform is down. Can you tell me what we know and whether I should send an outage notice to all customers? I need a response for Cedarline this afternoon.\n\nMarisol"
+    },
+    "document": {
+      "title": "Access log · support snapshot",
+      "intro": "The current evidence identifies a narrower problem. Further checks may change that assessment.",
+      "facts": [
+        {
+          "id": "N7F1",
+          "time": "Tue 09:14",
+          "text": "An account administrator at Cedarline removed the “Dashboard viewer” permission from the Cedarline analyst role during a role update."
+        },
+        {
+          "id": "N7F2",
+          "time": "Tue 09:22",
+          "text": "The two Cedarline users received an access-denied response when opening the dashboard. Both use the analyst role."
+        },
+        {
+          "id": "N7F3",
+          "time": "Tue 10:50",
+          "text": "Health checks passed for the dashboard service, and Support has no reports from other accounts at this time."
+        },
+        {
+          "id": "N7F4",
+          "time": "Current status",
+          "text": "Evan has not confirmed whether the role change was intentional. No permission has been restored yet."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "one-account-access-evidence",
+        "axis": "Evidence",
+        "prompt": "What directly explains the two users’ error?",
+        "evidenceIds": [
+          "N7F1",
+          "N7F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Their passwords expired.",
+            "feedback": "The log shows a permission change, not expiry."
+          },
+          {
+            "id": "b",
+            "text": "The dashboard service failed for all accounts.",
+            "feedback": "Service checks passed and no wider reports are recorded."
+          },
+          {
+            "id": "c",
+            "text": "Their shared analyst role no longer has dashboard access.",
+            "feedback": "The permission change and access logs align."
+          }
+        ]
+      },
+      {
+        "id": "one-account-access-scope",
+        "axis": "Scope",
+        "prompt": "How broad is the confirmed problem?",
+        "evidenceIds": [
+          "N7F2",
+          "N7F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every customer is affected.",
+            "feedback": "There is no evidence of that."
+          },
+          {
+            "id": "b",
+            "text": "Two users in one account are confirmed affected.",
+            "feedback": "Only Cedarline’s two reports are documented so far."
+          },
+          {
+            "id": "c",
+            "text": "No one is affected because health checks passed.",
+            "feedback": "The two access-denied responses are real."
+          }
+        ]
+      },
+      {
+        "id": "one-account-access-intent",
+        "axis": "Intent",
+        "prompt": "What does Marisol need for Cedarline?",
+        "evidenceIds": [
+          "N7F3",
+          "N7F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A detailed history of every role in the product.",
+            "feedback": "That does not answer this incident."
+          },
+          {
+            "id": "b",
+            "text": "A precise status and a safe next step, not a system-wide claim.",
+            "feedback": "She needs to answer the customer and decide on an outage notice."
+          },
+          {
+            "id": "c",
+            "text": "A promise that Evan will restore access immediately.",
+            "feedback": "Intent of the permission change is unknown."
+          }
+        ]
+      },
+      {
+        "id": "one-account-access-purpose",
+        "axis": "Purpose",
+        "prompt": "Which action should Evan take?",
+        "evidenceIds": [
+          "N7F1",
+          "N7F3",
+          "N7F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send a platform-wide outage notice now.",
+            "feedback": "Current evidence does not support a general outage."
+          },
+          {
+            "id": "b",
+            "text": "Ignore the report because the service is healthy.",
+            "feedback": "The affected users still need access help."
+          },
+          {
+            "id": "c",
+            "text": "Confirm the intended role with Cedarline’s administrator before changing permissions.",
+            "feedback": "The update may have been deliberate; verification comes first."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Marisol as Evan. Explain the narrower evidence, avoid declaring that all other accounts are unaffected, and propose a permission check before changing Cedarline’s role.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Identify the account-specific evidence",
+        "Separate access errors from service health",
+        "Avoid a broad outage claim",
+        "Propose a verified permission decision"
+      ]
+    },
+    "model": {
+      "subject": "Re: Is the dashboard down for everyone?",
+      "body": "Hi Marisol,\n\nWe have confirmed access-denied responses for the two Cedarline users. Both use the analyst role, and that role lost its Dashboard viewer permission during a Cedarline account update this morning. The dashboard service passed its health checks, and Support has no reports from other accounts at present. That points to an account-access issue rather than a confirmed platform outage, although we should keep watching for new reports.\n\nI have not restored the permission because we do not yet know whether Cedarline’s administrator intended to remove it. Could you ask the administrator to confirm the intended access for that role? Once we have that answer, I can help apply the appropriate change and test both users’ access. For now, I would tell Cedarline what we have found and that we are checking the role setting, without sending a platform-wide outage notice.\n\nEvan",
+      "annotations": [
+        {
+          "label": "Identifies evidence",
+          "excerpt": "Both use the analyst role",
+          "evidenceIds": [
+            "N7F1",
+            "N7F2"
+          ]
+        },
+        {
+          "label": "Limits scope",
+          "excerpt": "no reports from other accounts at present",
+          "evidenceIds": [
+            "N7F3"
+          ]
+        },
+        {
+          "label": "Keeps intent open",
+          "excerpt": "we do not yet know whether Cedarline’s administrator intended",
+          "evidenceIds": [
+            "N7F4"
+          ]
+        },
+        {
+          "label": "Offers repair",
+          "excerpt": "confirm the intended access",
+          "evidenceIds": [
+            "N7F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "staging-not-production",
+    "title": "Deployed, but where?",
+    "area": "Software × Customer success",
+    "role": "Kai · Engineering",
+    "teaser": "A customer cannot see a change that the ticket calls deployed.",
+    "misunderstanding": "A staging deployment was mistaken for a production release.",
+    "email": {
+      "from": "Amara Wells · Customer Success",
+      "to": "Kai · Engineering",
+      "sent": "Wednesday, 14:12",
+      "subject": "Northgate still sees the old screen",
+      "body": "Hi Kai,\n\nThe ticket says the new account screen was deployed yesterday, but Northgate still sees the old one. I told them the change was live. Can you confirm whether this is a customer-side problem or something we still need to release? I have a call with them tomorrow morning.\n\nAmara"
+    },
+    "document": {
+      "title": "Release record · account screen",
+      "intro": "The environment is part of the release status. The record does not contain a production date.",
+      "facts": [
+        {
+          "id": "N8F1",
+          "time": "Tue 14:00",
+          "text": "The new account screen was deployed to staging for internal testing."
+        },
+        {
+          "id": "N8F2",
+          "time": "Tue 14:10",
+          "text": "Kai changed the ticket status to “deployed” without naming the environment in the handover note."
+        },
+        {
+          "id": "N8F3",
+          "time": "Wed 10:00",
+          "text": "Internal testing passed, but production release approval is still pending."
+        },
+        {
+          "id": "N8F4",
+          "time": "Wed 13:45",
+          "text": "Northgate’s account is on production, where the old screen remains. No production release time has been agreed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "staging-not-production-evidence",
+        "axis": "Evidence",
+        "prompt": "Where is the new screen currently available?",
+        "evidenceIds": [
+          "N8F1",
+          "N8F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "In Northgate’s production account.",
+            "feedback": "Northgate still sees the old production screen."
+          },
+          {
+            "id": "b",
+            "text": "Nowhere; internal tests failed.",
+            "feedback": "Testing passed in staging."
+          },
+          {
+            "id": "c",
+            "text": "In staging only.",
+            "feedback": "The release record shows a staging deployment and pending production approval."
+          }
+        ]
+      },
+      {
+        "id": "staging-not-production-scope",
+        "axis": "Scope",
+        "prompt": "What did “deployed” leave unclear?",
+        "evidenceIds": [
+          "N8F1",
+          "N8F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether Northgate has an account.",
+            "feedback": "Their production account is documented."
+          },
+          {
+            "id": "b",
+            "text": "Whether the screen has a title.",
+            "feedback": "The issue is release environment, not naming."
+          },
+          {
+            "id": "c",
+            "text": "Which environment received the change.",
+            "feedback": "The handover omitted staging."
+          }
+        ]
+      },
+      {
+        "id": "staging-not-production-intent",
+        "axis": "Intent",
+        "prompt": "What does Amara need before the client call?",
+        "evidenceIds": [
+          "N8F3",
+          "N8F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "An accurate release status and a plan for updating Northgate.",
+            "feedback": "She asks whether the change is live and what to tell them."
+          },
+          {
+            "id": "b",
+            "text": "A claim that Northgate’s browser is at fault.",
+            "feedback": "The record shows production still has the old screen."
+          },
+          {
+            "id": "c",
+            "text": "An invented release time.",
+            "feedback": "No production time has been agreed."
+          }
+        ]
+      },
+      {
+        "id": "staging-not-production-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Kai promise?",
+        "evidenceIds": [
+          "N8F3",
+          "N8F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confirmed update after release approval, with no unagreed go-live time.",
+            "feedback": "Approval remains pending and the client needs an honest status."
+          },
+          {
+            "id": "b",
+            "text": "That it is already live in production.",
+            "feedback": "That contradicts the release record."
+          },
+          {
+            "id": "c",
+            "text": "That Northgate will see it tomorrow morning.",
+            "feedback": "No production release time is agreed."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Amara as Kai. Distinguish staging from production, own the ambiguous handover, and give a client-safe update without inventing a production release date.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "State the deployed environment",
+        "Acknowledge the misleading status",
+        "Explain the pending approval",
+        "Give a safe next step"
+      ]
+    },
+    "model": {
+      "subject": "Re: Northgate still sees the old screen",
+      "body": "Hi Amara,\n\nNorthgate is seeing the old account screen because the new version is in staging, not production. We deployed it there on Tuesday for internal testing, and those tests passed today. Production release approval is still pending, so this is not a problem with Northgate’s account or browser.\n\nI marked the ticket “deployed” without naming the environment in the handover. That was misleading, and I am sorry it led you to tell the client the change was live. I will update the ticket to show the staging status clearly and follow up with the release owner about the approval. We do not have an agreed production time yet, so please tell Northgate that the change has passed internal testing but has not been released to their account. I will send you a confirmed production plan as soon as approval is recorded, before you make any date commitment.\n\nKai",
+      "annotations": [
+        {
+          "label": "Defines environment",
+          "excerpt": "in staging, not production",
+          "evidenceIds": [
+            "N8F1",
+            "N8F4"
+          ]
+        },
+        {
+          "label": "Owns ambiguity",
+          "excerpt": "I marked the ticket “deployed” without naming the environment",
+          "evidenceIds": [
+            "N8F2"
+          ]
+        },
+        {
+          "label": "Preserves uncertainty",
+          "excerpt": "We do not have an agreed production time yet",
+          "evidenceIds": [
+            "N8F4"
+          ]
+        },
+        {
+          "label": "Client-safe wording",
+          "excerpt": "has not been released to their account",
+          "evidenceIds": [
+            "N8F3",
+            "N8F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "saved-filter",
+    "title": "The records that disappeared",
+    "area": "Software × Analytics",
+    "role": "Mina · Analytics",
+    "teaser": "A dashboard looks empty and a colleague fears the records were deleted.",
+    "misunderstanding": "A saved filter changed the view, not the underlying data.",
+    "email": {
+      "from": "Theo Brooks · Finance",
+      "to": "Mina · Analytics",
+      "sent": "Friday, 11:08",
+      "subject": "Did the dashboard lose our records?",
+      "body": "Hi Mina,\n\nI opened the revenue dashboard for the quarterly review and there are no rows. We had hundreds of records yesterday. Did the data get deleted during the update? I need to know whether I can still use this dashboard for the meeting at 2.\n\nTheo"
+    },
+    "document": {
+      "title": "Dashboard check · saved view",
+      "intro": "A view can hide rows without changing the underlying dataset.",
+      "facts": [
+        {
+          "id": "N9F1",
+          "time": "Thu 17:00",
+          "text": "The revenue dataset contained 842 records for the current reporting period."
+        },
+        {
+          "id": "N9F2",
+          "time": "Fri 09:00",
+          "text": "The dashboard opened using a saved view with a previous-period filter. That period has no rows in the current dataset."
+        },
+        {
+          "id": "N9F3",
+          "time": "Fri 10:45",
+          "text": "The underlying current-period dataset still contained 842 records. No deletion event appears in the update log."
+        },
+        {
+          "id": "N9F4",
+          "time": "Current status",
+          "text": "Mina has not yet checked Theo’s exact dashboard session or whether the saved view should be reset for everyone."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "saved-filter-evidence",
+        "axis": "Evidence",
+        "prompt": "What happened to the underlying dataset?",
+        "evidenceIds": [
+          "N9F1",
+          "N9F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The dataset has never contained records.",
+            "feedback": "Yesterday’s count is documented."
+          },
+          {
+            "id": "b",
+            "text": "It still contains 842 current-period records.",
+            "feedback": "The latest check matches yesterday’s count."
+          },
+          {
+            "id": "c",
+            "text": "All 842 records were deleted.",
+            "feedback": "The latest count contradicts that."
+          }
+        ]
+      },
+      {
+        "id": "saved-filter-scope",
+        "axis": "Scope",
+        "prompt": "What explains the empty view?",
+        "evidenceIds": [
+          "N9F2",
+          "N9F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The database was replaced.",
+            "feedback": "No replacement is recorded."
+          },
+          {
+            "id": "b",
+            "text": "A saved filter selects a period with no current rows.",
+            "feedback": "The filter can hide the records without deleting them."
+          },
+          {
+            "id": "c",
+            "text": "Theo lost all access.",
+            "feedback": "He can open the dashboard, but sees no rows."
+          }
+        ]
+      },
+      {
+        "id": "saved-filter-intent",
+        "axis": "Intent",
+        "prompt": "What does Theo need for the 2pm meeting?",
+        "evidenceIds": [
+          "N9F3",
+          "N9F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A promise that every dashboard is correct.",
+            "feedback": "Only this dataset and view have been checked."
+          },
+          {
+            "id": "b",
+            "text": "A reliable view of the current data and a clear status.",
+            "feedback": "He needs to know whether he can use the dashboard."
+          },
+          {
+            "id": "c",
+            "text": "An explanation of database architecture.",
+            "feedback": "That does not resolve the meeting need."
+          }
+        ]
+      },
+      {
+        "id": "saved-filter-purpose",
+        "axis": "Purpose",
+        "prompt": "What is the best first reply?",
+        "evidenceIds": [
+          "N9F2",
+          "N9F3",
+          "N9F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Explain the filter, help Theo switch periods, and verify his session.",
+            "feedback": "That addresses the observed symptom and the remaining check."
+          },
+          {
+            "id": "b",
+            "text": "Tell him the data is gone.",
+            "feedback": "The dataset count is unchanged."
+          },
+          {
+            "id": "c",
+            "text": "Reset everyone’s saved views immediately.",
+            "feedback": "Whether a global reset is appropriate is not yet known."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Theo as Mina. Clarify the difference between an empty view and deleted data, give him a practical check before the meeting, and avoid claiming all dashboards are unaffected.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Cite the dataset check",
+        "Explain the saved filter",
+        "Help recover the current view",
+        "Keep remaining scope clear"
+      ]
+    },
+    "model": {
+      "subject": "Re: Did the dashboard lose our records?",
+      "body": "Hi Theo,\n\nThe current-period revenue dataset still contains 842 records, the same count recorded yesterday, and the update log shows no deletion. The dashboard is opening with a saved filter for the previous period, which has no rows in the current dataset. That explains the empty view we have observed; it does not mean those records were deleted.\n\nI understand why this is worrying before your quarterly review. Please switch the period filter to the current reporting period and let me know whether the rows appear. I will also check your exact session so we can confirm the view you will use at 2. I have not yet decided whether the saved filter should be reset for everyone, so I will check that separately rather than changing other people’s views without warning. I will send you a confirmed meeting-ready link once I have tested it.\n\nMina",
+      "annotations": [
+        {
+          "label": "Cites the data",
+          "excerpt": "still contains 842 records",
+          "evidenceIds": [
+            "N9F1",
+            "N9F3"
+          ]
+        },
+        {
+          "label": "Explains the view",
+          "excerpt": "saved filter for the previous period",
+          "evidenceIds": [
+            "N9F2"
+          ]
+        },
+        {
+          "label": "Limits scope",
+          "excerpt": "I will also check your exact session",
+          "evidenceIds": [
+            "N9F4"
+          ]
+        },
+        {
+          "label": "Offers a useful action",
+          "excerpt": "send you a confirmed meeting-ready link",
+          "evidenceIds": [
+            "N9F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "interview-not-cancelled",
+    "title": "A cancellation that was a reschedule",
+    "area": "People × Hiring",
+    "role": "Leah · Recruiting",
+    "teaser": "A candidate sees a cancellation but never receives the replacement invitation.",
+    "misunderstanding": "Cancelling the old calendar event was taken to mean the interview itself was cancelled.",
+    "email": {
+      "from": "Marco Silva · Hiring manager",
+      "to": "Leah · Recruiting",
+      "sent": "Tuesday, 10:22",
+      "subject": "Did we cancel Alina’s interview?",
+      "body": "Hi Leah,\n\nAlina wrote to ask why we cancelled her interview. I can see a new slot on the panel calendar, so I thought we had moved it. She says she has not received another invitation. Can you tell me what actually happened and what I should say to her today?\n\nMarco"
+    },
+    "document": {
+      "title": "Interview scheduling record",
+      "intro": "The calendar records show a proposed replacement but no candidate confirmation.",
+      "facts": [
+        {
+          "id": "N10F1",
+          "time": "Mon 16:00",
+          "text": "The original Wednesday 11:00 interview invitation included Alina and the panel."
+        },
+        {
+          "id": "N10F2",
+          "time": "Tue 09:00",
+          "text": "Leah cancelled the original event while moving the interview to Thursday 14:00. The cancellation email reached Alina."
+        },
+        {
+          "id": "N10F3",
+          "time": "Tue 09:08",
+          "text": "A replacement invitation for Thursday 14:00 was sent to the internal panel, but Alina’s address was omitted."
+        },
+        {
+          "id": "N10F4",
+          "time": "Current status",
+          "text": "The panel has accepted Thursday 14:00. Alina has not received or confirmed the proposed new slot."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "interview-not-cancelled-evidence",
+        "axis": "Evidence",
+        "prompt": "What did Alina actually receive?",
+        "evidenceIds": [
+          "N10F2",
+          "N10F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confirmed Thursday invitation.",
+            "feedback": "The new invitation went only to the panel."
+          },
+          {
+            "id": "b",
+            "text": "The cancellation of the old interview only.",
+            "feedback": "Her address was omitted from the replacement invitation."
+          },
+          {
+            "id": "c",
+            "text": "No scheduling message at all.",
+            "feedback": "The old cancellation reached her."
+          }
+        ]
+      },
+      {
+        "id": "interview-not-cancelled-scope",
+        "axis": "Scope",
+        "prompt": "What does the panel’s accepted Thursday slot establish?",
+        "evidenceIds": [
+          "N10F2",
+          "N10F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The panel is available, but Alina has not confirmed.",
+            "feedback": "Panel acceptance does not confirm candidate availability."
+          },
+          {
+            "id": "b",
+            "text": "The Wednesday interview is still active.",
+            "feedback": "It was cancelled."
+          },
+          {
+            "id": "c",
+            "text": "The interview is fully confirmed.",
+            "feedback": "Alina has not received the invitation."
+          }
+        ]
+      },
+      {
+        "id": "interview-not-cancelled-intent",
+        "axis": "Intent",
+        "prompt": "What does Marco need to tell Alina?",
+        "evidenceIds": [
+          "N10F3",
+          "N10F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the hiring team has ended the process.",
+            "feedback": "No such decision is recorded."
+          },
+          {
+            "id": "b",
+            "text": "That the move was intended, apologise for the missing invite, and ask if Thursday works.",
+            "feedback": "This accurately describes the status without pretending she accepted."
+          },
+          {
+            "id": "c",
+            "text": "That she missed her confirmed interview.",
+            "feedback": "No Thursday invitation reached her."
+          }
+        ]
+      },
+      {
+        "id": "interview-not-cancelled-purpose",
+        "axis": "Purpose",
+        "prompt": "Which next action repairs the error?",
+        "evidenceIds": [
+          "N10F2",
+          "N10F3",
+          "N10F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send Alina the proposed slot and seek her confirmation before calling it booked.",
+            "feedback": "The candidate has not accepted Thursday."
+          },
+          {
+            "id": "b",
+            "text": "Reinstate Wednesday without checking anyone.",
+            "feedback": "The original event was cancelled; availability is unknown."
+          },
+          {
+            "id": "c",
+            "text": "Leave the panel event as proof that she agreed.",
+            "feedback": "It shows only panel availability."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Marco as Leah. Explain the cancelled and replacement invitations, own the omitted address, and propose a candidate message that treats Thursday as a proposal rather than a confirmed appointment.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Separate cancellation from rescheduling",
+        "Own the omitted invitation",
+        "Avoid claiming candidate confirmation",
+        "Propose direct repair"
+      ]
+    },
+    "model": {
+      "subject": "Re: Did we cancel Alina’s interview?",
+      "body": "Hi Marco,\n\nWe intended to move Alina’s interview from Wednesday at 11 to Thursday at 2. I cancelled the original event, and that cancellation reached her. I then sent the new invitation to the panel but accidentally left Alina off the recipient list. The panel has accepted Thursday; she has not received or confirmed that slot. I am sorry my scheduling error made it look as though we had cancelled her interview entirely.\n\nI will email Alina today, apologise for the confusing cancellation and ask whether Thursday at 2 works for her. I will send a corrected invitation once she agrees, and I will let you know her answer. For now, please describe Thursday as a proposed time, not a confirmed interview. If she cannot make it, I will coordinate another time with the panel rather than assume the original Wednesday slot is available.\n\nLeah",
+      "annotations": [
+        {
+          "label": "Explains the record",
+          "excerpt": "cancellation reached her",
+          "evidenceIds": [
+            "N10F2"
+          ]
+        },
+        {
+          "label": "Owns the mistake",
+          "excerpt": "left Alina off the recipient list",
+          "evidenceIds": [
+            "N10F3"
+          ]
+        },
+        {
+          "label": "Preserves status",
+          "excerpt": "she has not received or confirmed that slot",
+          "evidenceIds": [
+            "N10F4"
+          ]
+        },
+        {
+          "label": "Repairs the relationship",
+          "excerpt": "apologise for the confusing cancellation",
+          "evidenceIds": [
+            "N10F2",
+            "N10F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "modules-not-certificate",
+    "title": "Completed is not certified",
+    "area": "People × Learning",
+    "role": "Ben · Learning coordinator",
+    "teaser": "An employee finished training modules and expects a certificate the dashboard does not offer.",
+    "misunderstanding": "The dashboard’s Completed label refers to modules, not the separate assessment.",
+    "email": {
+      "from": "Rina Patel · Team member",
+      "to": "Ben · Learning coordinator",
+      "sent": "Monday, 12:05",
+      "subject": "Where is my course certificate?",
+      "body": "Hi Ben,\n\nThe learning dashboard says I completed the safety course, but I cannot download a certificate. I need to show my manager that I finished it. Is the certificate missing, or is there another step I was not told about? Please let me know what I should do.\n\nRina"
+    },
+    "document": {
+      "title": "Learning pathway · dashboard labels",
+      "intro": "The pathway has two milestones. The dashboard label names only one.",
+      "facts": [
+        {
+          "id": "N11F1",
+          "time": "Pathway",
+          "text": "The safety course requires completion of four modules and a separate knowledge assessment to receive a certificate."
+        },
+        {
+          "id": "N11F2",
+          "time": "Fri 16:00",
+          "text": "Rina completed all four modules. Her dashboard displayed “Completed” beside the module set."
+        },
+        {
+          "id": "N11F3",
+          "time": "Current status",
+          "text": "Rina has not started the knowledge assessment; no certificate has been issued."
+        },
+        {
+          "id": "N11F4",
+          "time": "Interface note",
+          "text": "The dashboard does not explain beside the Completed label that certification requires the assessment. Ben can send the assessment link."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "modules-not-certificate-evidence",
+        "axis": "Evidence",
+        "prompt": "What has Rina completed?",
+        "evidenceIds": [
+          "N11F1",
+          "N11F2",
+          "N11F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The entire certification pathway.",
+            "feedback": "The assessment is still required."
+          },
+          {
+            "id": "b",
+            "text": "No part of the course.",
+            "feedback": "Her module record says Completed."
+          },
+          {
+            "id": "c",
+            "text": "All four learning modules.",
+            "feedback": "Her module record is complete; the assessment is not started."
+          }
+        ]
+      },
+      {
+        "id": "modules-not-certificate-scope",
+        "axis": "Scope",
+        "prompt": "What does the dashboard’s Completed label cover?",
+        "evidenceIds": [
+          "N11F2",
+          "N11F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The knowledge assessment.",
+            "feedback": "Rina has not started it."
+          },
+          {
+            "id": "b",
+            "text": "The module set, not the certificate.",
+            "feedback": "It appears beside the modules only."
+          },
+          {
+            "id": "c",
+            "text": "Manager approval.",
+            "feedback": "No manager-approval step is documented."
+          }
+        ]
+      },
+      {
+        "id": "modules-not-certificate-intent",
+        "axis": "Intent",
+        "prompt": "What does Rina need from Ben?",
+        "evidenceIds": [
+          "N11F1",
+          "N11F3",
+          "N11F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clear explanation and the next step she can take.",
+            "feedback": "Her email asks whether another step exists and how to proceed."
+          },
+          {
+            "id": "b",
+            "text": "A promise to issue the certificate without assessment.",
+            "feedback": "That would contradict the pathway."
+          },
+          {
+            "id": "c",
+            "text": "A new set of four modules.",
+            "feedback": "She has already completed them."
+          }
+        ]
+      },
+      {
+        "id": "modules-not-certificate-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Ben acknowledge?",
+        "evidenceIds": [
+          "N11F2",
+          "N11F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Completed label could reasonably mislead her.",
+            "feedback": "It omits the separate certification step in that view."
+          },
+          {
+            "id": "b",
+            "text": "Her manager made an error.",
+            "feedback": "The record does not involve a manager error."
+          },
+          {
+            "id": "c",
+            "text": "Rina ignored a clear certificate message.",
+            "feedback": "No such message appears beside the label."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Rina as Ben. Recognise the module work she completed, explain the separate assessment, own the unclear dashboard label, and give her a practical next step without issuing a certificate prematurely.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Acknowledge completed modules",
+        "Distinguish modules from certification",
+        "Own confusing interface wording",
+        "Provide the assessment step"
+      ]
+    },
+    "model": {
+      "subject": "Re: Where is my course certificate?",
+      "body": "Hi Rina,\n\nYou have completed all four learning modules, and the dashboard is correct about that part. The certificate is issued after the separate knowledge assessment, which your record shows you have not started yet. I can see why the “Completed” label made this unclear: it appears beside the modules without explaining the additional step. I am sorry we did not make the pathway easier to understand.\n\nI will send you the assessment link today, along with the instructions and the contact to use if the link does not open. Once you have completed the assessment, the learning system can confirm whether the certificate is available. In the meantime, you can show your manager the module completion record, but I would not describe it as certification yet. I will also ask our team to make the dashboard label more precise for future learners.\n\nBen",
+      "annotations": [
+        {
+          "label": "Acknowledges progress",
+          "excerpt": "completed all four learning modules",
+          "evidenceIds": [
+            "N11F2"
+          ]
+        },
+        {
+          "label": "Defines the missing step",
+          "excerpt": "separate knowledge assessment",
+          "evidenceIds": [
+            "N11F1",
+            "N11F3"
+          ]
+        },
+        {
+          "label": "Owns ambiguity",
+          "excerpt": "I am sorry we did not make the pathway easier",
+          "evidenceIds": [
+            "N11F4"
+          ]
+        },
+        {
+          "label": "Offers action",
+          "excerpt": "send you the assessment link today",
+          "evidenceIds": [
+            "N11F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "leave-not-denied",
+    "title": "The leave request still open",
+    "area": "People × Team lead",
+    "role": "Dara · Team lead",
+    "teaser": "An employee thinks her leave was refused when her manager actually meant coverage was unresolved.",
+    "misunderstanding": "A request for coverage information sounded like a final rejection and put the burden on the employee.",
+    "email": {
+      "from": "Nora Wells · Team member",
+      "to": "Dara · Team lead",
+      "sent": "Wednesday, 15:40",
+      "subject": "Was my leave request rejected?",
+      "body": "Hi Dara,\n\nWhen you wrote “find cover first, then I’ll see”, I understood that my leave request for next Friday had been rejected unless I arrange the rota myself. I need to make travel plans and would appreciate a clear answer. Is the request still being considered?\n\nNora"
+    },
+    "document": {
+      "title": "Leave request · rota record",
+      "intro": "The request is pending; staffing has not yet been arranged.",
+      "facts": [
+        {
+          "id": "N12F1",
+          "time": "Mon 10:00",
+          "text": "Nora requested leave for next Friday in the team system. The status remains Pending."
+        },
+        {
+          "id": "N12F2",
+          "time": "Tue 09:30",
+          "text": "The rota showed two assigned people for next Friday; one additional person is needed for the morning desk."
+        },
+        {
+          "id": "N12F3",
+          "time": "Tue 10:05",
+          "text": "Dara replied, “Find cover first, then I’ll see.” Dara did not explain the rota or give a decision date."
+        },
+        {
+          "id": "N12F4",
+          "time": "Current status",
+          "text": "Dara, as team lead, is responsible for arranging desk coverage. No colleague has yet confirmed the additional shift, and no leave decision has been made."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "leave-not-denied-evidence",
+        "axis": "Evidence",
+        "prompt": "What is Nora’s request status?",
+        "evidenceIds": [
+          "N12F1",
+          "N12F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pending; it has not been decided.",
+            "feedback": "The team system and coverage record show no decision."
+          },
+          {
+            "id": "b",
+            "text": "Rejected by the team lead.",
+            "feedback": "No rejection is recorded."
+          },
+          {
+            "id": "c",
+            "text": "Approved for next Friday.",
+            "feedback": "No approval is recorded."
+          }
+        ]
+      },
+      {
+        "id": "leave-not-denied-scope",
+        "axis": "Scope",
+        "prompt": "Who is responsible for arranging coverage?",
+        "evidenceIds": [
+          "N12F3",
+          "N12F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dara as team lead.",
+            "feedback": "The rota record assigns that responsibility to Dara."
+          },
+          {
+            "id": "b",
+            "text": "Nora alone.",
+            "feedback": "The manager’s message suggested it, but the record says otherwise."
+          },
+          {
+            "id": "c",
+            "text": "The travel provider.",
+            "feedback": "That has no role in the rota."
+          }
+        ]
+      },
+      {
+        "id": "leave-not-denied-intent",
+        "axis": "Intent",
+        "prompt": "What does Nora need now?",
+        "evidenceIds": [
+          "N12F1",
+          "N12F2",
+          "N12F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A guarantee that the leave is approved.",
+            "feedback": "Coverage has not been confirmed."
+          },
+          {
+            "id": "b",
+            "text": "A clear status and a time for a decision.",
+            "feedback": "She is making travel plans and asks whether the request is still considered."
+          },
+          {
+            "id": "c",
+            "text": "A copy of every team member’s schedule.",
+            "feedback": "That is not required to clarify her request."
+          }
+        ]
+      },
+      {
+        "id": "leave-not-denied-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply would repair the misunderstanding?",
+        "evidenceIds": [
+          "N12F3",
+          "N12F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Say the request was rejected because Nora did not arrange cover.",
+            "feedback": "No decision exists and coverage is Dara’s responsibility."
+          },
+          {
+            "id": "b",
+            "text": "Repeat “find cover first” without explanation.",
+            "feedback": "That caused the misunderstanding."
+          },
+          {
+            "id": "c",
+            "text": "Own the misleading wording, explain pending coverage, and commit to a decision update.",
+            "feedback": "This clarifies responsibility without prejudging approval."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Nora as Dara. Clarify that the request is pending, own the misleading wording and coverage responsibility, and give a realistic next update without guaranteeing approval.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "State the pending status",
+        "Own the wording and coverage task",
+        "Explain the specific staffing gap",
+        "Commit to a clear decision update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Was my leave request rejected?",
+      "body": "Hi Nora,\n\nYour request for next Friday has not been rejected; it is still marked Pending. My message, “find cover first, then I’ll see”, was unclear and wrongly suggested that arranging the rota was your responsibility. I am sorry I left you with that impression, especially when you need to make travel plans.\n\nThe morning desk needs one more person on the rota before I can confirm the leave. I will contact the colleagues who may be able to cover that shift and give you a clear update by Friday afternoon. I cannot promise approval until coverage is confirmed, but you should not have to organise it yourself. If the rota cannot be covered, I will explain the decision and discuss alternatives with you rather than leave the request open without an answer. Thank you for asking me to clarify it.\n\nDara",
+      "annotations": [
+        {
+          "label": "States status",
+          "excerpt": "has not been rejected",
+          "evidenceIds": [
+            "N12F1"
+          ]
+        },
+        {
+          "label": "Owns wording",
+          "excerpt": "wrongly suggested that arranging the rota was your responsibility",
+          "evidenceIds": [
+            "N12F3",
+            "N12F4"
+          ]
+        },
+        {
+          "label": "Explains constraint",
+          "excerpt": "morning desk needs one more person",
+          "evidenceIds": [
+            "N12F2"
+          ]
+        },
+        {
+          "label": "Commits to an update",
+          "excerpt": "by Friday afternoon",
+          "evidenceIds": [
+            "N12F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "notice-not-access",
+    "title": "The result notice and the locked portal",
+    "area": "Health administration × Portal",
+    "role": "Jules · Portal coordinator",
+    "teaser": "A result notice arrives, but the patient cannot open the document.",
+    "misunderstanding": "Sending an upload notification was treated as proof that portal access was enabled.",
+    "email": {
+      "from": "Camila Reed · Patient liaison",
+      "to": "Jules · Portal coordinator",
+      "sent": "Thursday, 10:30",
+      "subject": "Patient received a result notice but cannot open it",
+      "body": "Hi Jules,\n\nA patient received an email saying a document had been sent, but the portal still shows “not available”. They are understandably worried. Can you explain what the notice means and what I should tell them about access? Please avoid sending me any clinical details in your reply.\n\nCamila"
+    },
+    "document": {
+      "title": "Portal status · administrative log",
+      "intro": "This log concerns document delivery only. It does not contain clinical findings.",
+      "facts": [
+        {
+          "id": "N13F1",
+          "time": "Thu 09:05",
+          "text": "A laboratory document entered the portal upload queue. The system automatically sent an email headed “New document sent to your portal”."
+        },
+        {
+          "id": "N13F2",
+          "time": "Thu 09:20",
+          "text": "The portal status remained “verification pending”; patient access had not been enabled."
+        },
+        {
+          "id": "N13F3",
+          "time": "Thu 10:05",
+          "text": "The patient reported that the portal showed “not available”. No access confirmation is recorded."
+        },
+        {
+          "id": "N13F4",
+          "time": "Current status",
+          "text": "The verification team has not yet completed its check. Jules can request a status update but cannot interpret or release clinical findings."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "notice-not-access-evidence",
+        "axis": "Evidence",
+        "prompt": "What did the automated email confirm?",
+        "evidenceIds": [
+          "N13F1",
+          "N13F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the clinical findings were normal.",
+            "feedback": "The administrative log contains no findings."
+          },
+          {
+            "id": "b",
+            "text": "The document entered the upload queue.",
+            "feedback": "The email was triggered at queue entry, before access."
+          },
+          {
+            "id": "c",
+            "text": "That the patient could open the document.",
+            "feedback": "Access remained pending."
+          }
+        ]
+      },
+      {
+        "id": "notice-not-access-scope",
+        "axis": "Scope",
+        "prompt": "What is the current portal state?",
+        "evidenceIds": [
+          "N13F2",
+          "N13F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Verification pending and no confirmed patient access.",
+            "feedback": "The portal record and patient report agree."
+          },
+          {
+            "id": "b",
+            "text": "The document has been deleted.",
+            "feedback": "No deletion is recorded."
+          },
+          {
+            "id": "c",
+            "text": "The patient has opened it.",
+            "feedback": "No access confirmation exists."
+          }
+        ]
+      },
+      {
+        "id": "notice-not-access-intent",
+        "axis": "Intent",
+        "prompt": "What does Camila need?",
+        "evidenceIds": [
+          "N13F3",
+          "N13F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clinical interpretation of the document.",
+            "feedback": "She explicitly requests no clinical details."
+          },
+          {
+            "id": "b",
+            "text": "A guarantee about when verification will finish.",
+            "feedback": "No completion time is recorded."
+          },
+          {
+            "id": "c",
+            "text": "An accurate access status and an appropriate patient update.",
+            "feedback": "She asks what the notice means and what to say."
+          }
+        ]
+      },
+      {
+        "id": "notice-not-access-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Jules do next?",
+        "evidenceIds": [
+          "N13F2",
+          "N13F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tell the patient the results are normal.",
+            "feedback": "The log contains no findings and Jules cannot interpret them."
+          },
+          {
+            "id": "b",
+            "text": "Say access is already enabled.",
+            "feedback": "The status says pending."
+          },
+          {
+            "id": "c",
+            "text": "Ask the verification team for status and report only confirmed access information.",
+            "feedback": "This stays within the administrative role and evidence."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Camila as Jules. Distinguish the automated notice from portal access, acknowledge the worry, request a verification update, and avoid any statement about clinical findings or an unconfirmed access time.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Explain what triggered the notice",
+        "State the pending access status",
+        "Stay within administrative scope",
+        "Offer a verified update path"
+      ]
+    },
+    "model": {
+      "subject": "Re: Patient received a result notice but cannot open it",
+      "body": "Hi Camila,\n\nThe email was triggered when the document entered the portal upload queue at 9:05. It did not mean that the patient could already open it. The portal still shows verification pending, and we have no record that access has been enabled. I understand why receiving a notice before the document is available would cause concern; the wording makes those two steps sound like one.\n\nI will ask the verification team for a status update and let you know when they confirm that access is ready. For now, you can tell the patient that the notice confirmed receipt of a document for processing, while portal access is still being checked. I would not give an estimated release time or discuss the contents, because neither is available from this administrative record. If the patient has questions about clinical meaning, please direct them to the appropriate clinical team.\n\nJules",
+      "annotations": [
+        {
+          "label": "Explains trigger",
+          "excerpt": "entered the portal upload queue",
+          "evidenceIds": [
+            "N13F1"
+          ]
+        },
+        {
+          "label": "States status",
+          "excerpt": "verification pending",
+          "evidenceIds": [
+            "N13F2"
+          ]
+        },
+        {
+          "label": "Avoids clinical claims",
+          "excerpt": "neither is available from this administrative record",
+          "evidenceIds": [
+            "N13F4"
+          ]
+        },
+        {
+          "label": "Offers action",
+          "excerpt": "ask the verification team for a status update",
+          "evidenceIds": [
+            "N13F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "request-not-appointment",
+    "title": "Confirmed request, unconfirmed appointment",
+    "area": "Health administration × Scheduling",
+    "role": "Morgan · Scheduling",
+    "teaser": "A patient arrives after an automatic message said an appointment request was confirmed.",
+    "misunderstanding": "The system confirmed receipt of a request, not the appointment slot.",
+    "email": {
+      "from": "Iris Cole · Front desk",
+      "to": "Morgan · Scheduling",
+      "sent": "Monday, 11:35",
+      "subject": "Patient arrived for an appointment we cannot see",
+      "body": "Hi Morgan,\n\nA patient is at reception with an email headed “Appointment request confirmed”. There is no booking on today’s schedule, and they thought the message meant they had an appointment. What does our system show, and what can I tell them now? We need to avoid sending them away with another unclear answer.\n\nIris"
+    },
+    "document": {
+      "title": "Booking workflow · message record",
+      "intro": "The automated message acknowledges a request. A separate step confirms a time.",
+      "facts": [
+        {
+          "id": "N14F1",
+          "time": "Thu 15:00",
+          "text": "The patient submitted a request for a Monday appointment. The system sent an automatic email headed “Appointment request confirmed”."
+        },
+        {
+          "id": "N14F2",
+          "time": "Workflow",
+          "text": "That email confirms receipt of the request only. A scheduler must validate an available slot and send a second message with a date and time."
+        },
+        {
+          "id": "N14F3",
+          "time": "Mon 11:20",
+          "text": "The request still shows “awaiting slot validation”. No appointment or second confirmation message exists."
+        },
+        {
+          "id": "N14F4",
+          "time": "Current status",
+          "text": "The scheduling desk has not checked alternative slots today. Morgan can investigate availability but cannot promise a time yet."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "request-not-appointment-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the patient’s email confirm?",
+        "evidenceIds": [
+          "N14F1",
+          "N14F2",
+          "N14F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A cancellation.",
+            "feedback": "The record contains no booked slot to cancel."
+          },
+          {
+            "id": "b",
+            "text": "A booked Monday appointment.",
+            "feedback": "No second confirmation or booking exists."
+          },
+          {
+            "id": "c",
+            "text": "Receipt of an appointment request.",
+            "feedback": "The workflow sends it before a slot is validated."
+          }
+        ]
+      },
+      {
+        "id": "request-not-appointment-scope",
+        "axis": "Scope",
+        "prompt": "What is missing from the workflow?",
+        "evidenceIds": [
+          "N14F2",
+          "N14F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Slot validation and a dated confirmation.",
+            "feedback": "The request is still awaiting that step."
+          },
+          {
+            "id": "b",
+            "text": "An automated receipt email.",
+            "feedback": "That email was sent."
+          },
+          {
+            "id": "c",
+            "text": "A request from the patient.",
+            "feedback": "The patient submitted one."
+          }
+        ]
+      },
+      {
+        "id": "request-not-appointment-intent",
+        "axis": "Intent",
+        "prompt": "What does Iris need now?",
+        "evidenceIds": [
+          "N14F3",
+          "N14F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clear explanation for the patient and a route to a real appointment decision.",
+            "feedback": "The patient is waiting at reception."
+          },
+          {
+            "id": "b",
+            "text": "A claim that a slot is already available.",
+            "feedback": "Availability has not been checked."
+          },
+          {
+            "id": "c",
+            "text": "The patient’s clinical history.",
+            "feedback": "The issue is booking status, not clinical content."
+          }
+        ]
+      },
+      {
+        "id": "request-not-appointment-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Morgan avoid promising?",
+        "evidenceIds": [
+          "N14F1",
+          "N14F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A correction to the email heading.",
+            "feedback": "The heading is misleading and should be reviewed."
+          },
+          {
+            "id": "b",
+            "text": "An appointment time before checking availability.",
+            "feedback": "No alternative slot has been verified."
+          },
+          {
+            "id": "c",
+            "text": "A check of today’s alternatives.",
+            "feedback": "That is an appropriate next action."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Iris as Morgan. Explain the misleading request confirmation, take responsibility for the wording, and propose immediate scheduling help without inventing an available slot.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Separate receipt from booking",
+        "Acknowledge misleading wording",
+        "State the current pending status",
+        "Propose an availability check and patient update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Patient arrived for an appointment we cannot see",
+      "body": "Hi Iris,\n\nThe email confirms that we received the patient’s appointment request, not that a Monday slot was booked. Our system still shows “awaiting slot validation”, and no message with a confirmed date and time has been sent. The heading “Appointment request confirmed” is misleading, so I understand why the patient came to reception expecting an appointment. I am sorry our message created that confusion.\n\nPlease let the patient know that we have their request but have not yet confirmed a slot. I will check today’s available times with the scheduling desk now and call you back with the options we can actually offer. I cannot promise an appointment today until that check is complete. I will also raise the email wording with the team so the receipt and booking confirmation are clearly different in future. Thank you for helping the patient while we resolve this.\n\nMorgan",
+      "annotations": [
+        {
+          "label": "Defines the email",
+          "excerpt": "received the patient’s appointment request",
+          "evidenceIds": [
+            "N14F1",
+            "N14F2"
+          ]
+        },
+        {
+          "label": "States status",
+          "excerpt": "awaiting slot validation",
+          "evidenceIds": [
+            "N14F3"
+          ]
+        },
+        {
+          "label": "Owns wording",
+          "excerpt": "The heading “Appointment request confirmed” is misleading",
+          "evidenceIds": [
+            "N14F1"
+          ]
+        },
+        {
+          "label": "Avoids false promise",
+          "excerpt": "I cannot promise an appointment today",
+          "evidenceIds": [
+            "N14F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "interpreter-requested",
+    "title": "Requested is not booked",
+    "area": "Health administration × Language access",
+    "role": "Avery · Access coordinator",
+    "teaser": "A patient arrives for an appointment and the interpreter everyone expected is absent.",
+    "misunderstanding": "An interpreter request was mistaken for a confirmed booking.",
+    "email": {
+      "from": "Samira Khan · Reception",
+      "to": "Avery · Access coordinator",
+      "sent": "Wednesday, 08:50",
+      "subject": "Interpreter for the 9am appointment",
+      "body": "Hi Avery,\n\nOur patient has arrived for the 9am appointment, but no interpreter is here. Yesterday’s handover says “interpreter requested”, and the team understood that to mean someone was booked. Can you confirm the status and tell us what to do next? The appointment is about to start.\n\nSamira"
+    },
+    "document": {
+      "title": "Language access request · handover",
+      "intro": "This is a coordination record. The clinical team decides how to proceed with care.",
+      "facts": [
+        {
+          "id": "N15F1",
+          "time": "Tue 14:00",
+          "text": "Avery sent an interpreter request to the language-access provider for Wednesday 09:00."
+        },
+        {
+          "id": "N15F2",
+          "time": "Tue 17:00",
+          "text": "The provider had not accepted the request. No booking confirmation appears in the record."
+        },
+        {
+          "id": "N15F3",
+          "time": "Tue 17:15",
+          "text": "Avery wrote “interpreter requested” in the handover without adding “not yet confirmed”."
+        },
+        {
+          "id": "N15F4",
+          "time": "Wed 08:45",
+          "text": "No interpreter has arrived. Avery has not yet reached the provider or confirmed another language-access option. The clinical team decides how the appointment proceeds."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "interpreter-requested-evidence",
+        "axis": "Evidence",
+        "prompt": "What is confirmed about interpreter coverage?",
+        "evidenceIds": [
+          "N15F1",
+          "N15F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "An interpreter accepted the job.",
+            "feedback": "No acceptance appears in the record."
+          },
+          {
+            "id": "b",
+            "text": "A request was sent, but no booking was confirmed.",
+            "feedback": "The provider had not accepted and the log has no confirmation."
+          },
+          {
+            "id": "c",
+            "text": "The patient declined language support.",
+            "feedback": "No such decision is documented."
+          }
+        ]
+      },
+      {
+        "id": "interpreter-requested-scope",
+        "axis": "Scope",
+        "prompt": "What did “interpreter requested” leave unclear?",
+        "evidenceIds": [
+          "N15F2",
+          "N15F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Which clinician is on duty.",
+            "feedback": "The record concerns language access, not staffing."
+          },
+          {
+            "id": "b",
+            "text": "Whether the patient arrived.",
+            "feedback": "The patient’s arrival is reported separately."
+          },
+          {
+            "id": "c",
+            "text": "Whether the provider had accepted the request.",
+            "feedback": "Requested and booked are different statuses."
+          }
+        ]
+      },
+      {
+        "id": "interpreter-requested-intent",
+        "axis": "Intent",
+        "prompt": "What does Samira need immediately?",
+        "evidenceIds": [
+          "N15F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "An explanation of the patient’s condition.",
+            "feedback": "Clinical details are outside this record."
+          },
+          {
+            "id": "b",
+            "text": "A promise that an interpreter is five minutes away.",
+            "feedback": "No provider contact or arrival time is confirmed."
+          },
+          {
+            "id": "c",
+            "text": "A confirmed access status and a safe coordination step for the team.",
+            "feedback": "The appointment is about to start and support is absent."
+          }
+        ]
+      },
+      {
+        "id": "interpreter-requested-purpose",
+        "axis": "Purpose",
+        "prompt": "Who should decide how the appointment proceeds?",
+        "evidenceIds": [
+          "N15F2",
+          "N15F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The provider without informing the clinic.",
+            "feedback": "The clinic needs the actual status now."
+          },
+          {
+            "id": "b",
+            "text": "Avery alone, based on the handover note.",
+            "feedback": "A request is not confirmed coverage or a clinical decision."
+          },
+          {
+            "id": "c",
+            "text": "The clinical team after the access options are checked.",
+            "feedback": "Avery coordinates support, while the clinical team decides on care."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Samira as Avery. Clarify the request status, own the ambiguous handover, initiate an urgent provider and backup check, and route the appointment decision to the clinical team.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "State that no interpreter is confirmed",
+        "Own the handover wording",
+        "Check provider and backup options",
+        "Avoid a clinical or timing promise"
+      ]
+    },
+    "model": {
+      "subject": "Re: Interpreter for the 9am appointment",
+      "body": "Hi Samira,\n\nI sent the interpreter request yesterday, but the provider had not accepted it by the end of the day. There is no confirmed booking in the record. I wrote “interpreter requested” in the handover without making that distinction clear, and I am sorry the team was led to expect someone at 9.\n\nI am contacting the provider now to confirm whether an interpreter can still join and checking the approved backup language-access options. I will give you the verified status as soon as I have it; I cannot promise an arrival time yet. Please let the clinical team know that support is not confirmed so they can decide how to proceed with the appointment. I will not make that care decision from an administrative handover. I will also update the record to show the actual status rather than leave the request labelled as if it were a booking.\n\nAvery",
+      "annotations": [
+        {
+          "label": "States coverage",
+          "excerpt": "There is no confirmed booking",
+          "evidenceIds": [
+            "N15F2"
+          ]
+        },
+        {
+          "label": "Owns ambiguity",
+          "excerpt": "without making that distinction clear",
+          "evidenceIds": [
+            "N15F3"
+          ]
+        },
+        {
+          "label": "Starts a check",
+          "excerpt": "contacting the provider now",
+          "evidenceIds": [
+            "N15F4"
+          ]
+        },
+        {
+          "label": "Respects role",
+          "excerpt": "clinical team know",
+          "evidenceIds": [
+            "N15F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "referral-received",
+    "title": "Received, not scheduled",
+    "area": "Health administration × Referrals",
+    "role": "Robin · Referral coordinator",
+    "teaser": "A patient believes a received referral means an appointment has been booked.",
+    "misunderstanding": "Document receipt was confused with completed scheduling.",
+    "email": {
+      "from": "Ellis Moore · Clinic liaison",
+      "to": "Robin · Referral coordinator",
+      "sent": "Friday, 13:20",
+      "subject": "What happened to the referral appointment?",
+      "body": "Hi Robin,\n\nThe referring clinic told the patient their referral was received on Tuesday, so they expected an appointment date by now. They called today and we cannot see a booking. Does “received” mean the referral was accepted? Please help me give the patient an accurate update without promising a date we do not have.\n\nEllis"
+    },
+    "document": {
+      "title": "Referral tracker · administrative states",
+      "intro": "The tracker separates document receipt, review, and scheduling.",
+      "facts": [
+        {
+          "id": "N16F1",
+          "time": "Tue 10:15",
+          "text": "The referral documents arrived and the tracker changed to “Received”."
+        },
+        {
+          "id": "N16F2",
+          "time": "Workflow",
+          "text": "“Received” means the documents entered the queue. The review team must complete an administrative check before scheduling can offer a slot."
+        },
+        {
+          "id": "N16F3",
+          "time": "Fri 12:00",
+          "text": "The administrative check remains pending; no appointment has been booked or offered."
+        },
+        {
+          "id": "N16F4",
+          "time": "Current status",
+          "text": "Robin can request the review team’s status. No date for completing the check or offering a slot is recorded."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "referral-received-evidence",
+        "axis": "Evidence",
+        "prompt": "What does “Received” establish?",
+        "evidenceIds": [
+          "N16F1",
+          "N16F2",
+          "N16F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clinical appointment was accepted.",
+            "feedback": "No booking or offer is recorded."
+          },
+          {
+            "id": "b",
+            "text": "The review team finished its check.",
+            "feedback": "That check is still pending."
+          },
+          {
+            "id": "c",
+            "text": "The referral documents entered the queue.",
+            "feedback": "The tracker defines it as document receipt."
+          }
+        ]
+      },
+      {
+        "id": "referral-received-scope",
+        "axis": "Scope",
+        "prompt": "Which stage is still incomplete?",
+        "evidenceIds": [
+          "N16F2",
+          "N16F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Document arrival.",
+            "feedback": "Documents arrived Tuesday."
+          },
+          {
+            "id": "b",
+            "text": "A patient phone call.",
+            "feedback": "The patient called Friday."
+          },
+          {
+            "id": "c",
+            "text": "The administrative review before scheduling.",
+            "feedback": "The workflow requires it and the tracker says pending."
+          }
+        ]
+      },
+      {
+        "id": "referral-received-intent",
+        "axis": "Intent",
+        "prompt": "What does Ellis need for the patient?",
+        "evidenceIds": [
+          "N16F3",
+          "N16F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A promised appointment tomorrow.",
+            "feedback": "No slot or completion time is recorded."
+          },
+          {
+            "id": "b",
+            "text": "A clinical explanation of the referral.",
+            "feedback": "The record contains administrative states only."
+          },
+          {
+            "id": "c",
+            "text": "A precise status and a plan to request an update.",
+            "feedback": "Ellis explicitly asks to avoid an invented date."
+          }
+        ]
+      },
+      {
+        "id": "referral-received-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Robin avoid saying?",
+        "evidenceIds": [
+          "N16F1",
+          "N16F2",
+          "N16F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the referral has been scheduled or accepted as an appointment.",
+            "feedback": "Receipt does not imply review completion or booking."
+          },
+          {
+            "id": "b",
+            "text": "That documents arrived Tuesday.",
+            "feedback": "That is confirmed."
+          },
+          {
+            "id": "c",
+            "text": "That review is pending.",
+            "feedback": "That is the tracker’s current state."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Ellis as Robin. Explain the tracker stages, state the confirmed status, and propose a review-team follow-up without promising an appointment date or discussing clinical details.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Define Received precisely",
+        "State pending review and absent booking",
+        "Stay within administrative scope",
+        "Offer a status request and update"
+      ]
+    },
+    "model": {
+      "subject": "Re: What happened to the referral appointment?",
+      "body": "Hi Ellis,\n\n“Received” means the referral documents entered our queue on Tuesday. It does not mean the administrative check is complete or that an appointment has been booked. The tracker still shows the check as pending, with no slot offered to the patient. I understand how the single word “received” could sound more final when passed on without the later steps.\n\nI will ask the review team for its current status and whether it needs anything further from the referring clinic. Once that is confirmed, I will send you wording you can use with the patient. For now, it would be accurate to say that we have the documents and they are awaiting review before scheduling can offer a time. There is no appointment date or review completion date in the record, so I would avoid promising either. I will keep the update administrative and leave any clinical questions to the care team.\n\nRobin",
+      "annotations": [
+        {
+          "label": "Defines status",
+          "excerpt": "referral documents entered our queue",
+          "evidenceIds": [
+            "N16F1",
+            "N16F2"
+          ]
+        },
+        {
+          "label": "States pending step",
+          "excerpt": "check as pending",
+          "evidenceIds": [
+            "N16F3"
+          ]
+        },
+        {
+          "label": "Offers action",
+          "excerpt": "ask the review team for its current status",
+          "evidenceIds": [
+            "N16F4"
+          ]
+        },
+        {
+          "label": "Avoids invented date",
+          "excerpt": "avoid promising either",
+          "evidenceIds": [
+            "N16F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "stock-reserved",
+    "title": "In stock, but not available",
+    "area": "Operations × Sales",
+    "role": "Felix · Inventory",
+    "teaser": "Sales promised a unit that appears in stock, but the warehouse says it cannot ship it.",
+    "misunderstanding": "The “on hand” count was read as stock available for a new order.",
+    "email": {
+      "from": "Nadia Flores · Sales",
+      "to": "Felix · Inventory",
+      "sent": "Tuesday, 14:18",
+      "subject": "Why can’t we ship the demo unit?",
+      "body": "Hi Felix,\n\nI promised Evermont the last demo unit because the sales dashboard showed one in stock. The warehouse now says it cannot ship it. Have we lost the unit, or was the dashboard wrong? I need to call the customer today and explain what we can actually offer.\n\nNadia"
+    },
+    "document": {
+      "title": "Inventory snapshot · order queue",
+      "intro": "The snapshot distinguishes physical stock from stock available for a new promise.",
+      "facts": [
+        {
+          "id": "N17F1",
+          "time": "Tue 12:00",
+          "text": "The warehouse counted one demo unit physically on hand."
+        },
+        {
+          "id": "N17F2",
+          "time": "Tue 12:05",
+          "text": "That unit was already reserved for order 568, placed before Nadia’s call. Available-to-promise stock was zero."
+        },
+        {
+          "id": "N17F3",
+          "time": "Tue 13:00",
+          "text": "The sales dashboard displayed “On hand: 1” but did not show the reservation beside that number."
+        },
+        {
+          "id": "N17F4",
+          "time": "Current status",
+          "text": "The unit is still in the warehouse and reserved for order 568. No date for another unit has been confirmed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "stock-reserved-evidence",
+        "axis": "Evidence",
+        "prompt": "What happened to the physical unit?",
+        "evidenceIds": [
+          "N17F1",
+          "N17F2",
+          "N17F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "It was lost after Nadia’s call.",
+            "feedback": "No loss is recorded."
+          },
+          {
+            "id": "b",
+            "text": "It is still in the warehouse, reserved for another order.",
+            "feedback": "The inventory record shows one on hand and one reservation."
+          },
+          {
+            "id": "c",
+            "text": "It was shipped to Evermont.",
+            "feedback": "The warehouse says it cannot ship that unit to Evermont."
+          }
+        ]
+      },
+      {
+        "id": "stock-reserved-scope",
+        "axis": "Scope",
+        "prompt": "What did “On hand: 1” fail to show?",
+        "evidenceIds": [
+          "N17F2",
+          "N17F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The unit’s colour.",
+            "feedback": "Colour is not the issue."
+          },
+          {
+            "id": "b",
+            "text": "The reservation that left zero available to promise.",
+            "feedback": "Physical stock and available stock are different here."
+          },
+          {
+            "id": "c",
+            "text": "The customer’s address.",
+            "feedback": "The dashboard’s missing reservation is the relevant gap."
+          }
+        ]
+      },
+      {
+        "id": "stock-reserved-intent",
+        "axis": "Intent",
+        "prompt": "What does Nadia need for the customer call?",
+        "evidenceIds": [
+          "N17F2",
+          "N17F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A promise that another unit arrives tomorrow.",
+            "feedback": "No replacement date is confirmed."
+          },
+          {
+            "id": "b",
+            "text": "Proof that the warehouse lost the unit.",
+            "feedback": "The record says it remains reserved in the warehouse."
+          },
+          {
+            "id": "c",
+            "text": "An accurate stock explanation and options that have been verified.",
+            "feedback": "She asks what can actually be offered today."
+          }
+        ]
+      },
+      {
+        "id": "stock-reserved-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply protects the existing order and the new customer?",
+        "evidenceIds": [
+          "N17F2",
+          "N17F3",
+          "N17F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Transfer the reserved unit to Evermont immediately.",
+            "feedback": "That would ignore order 568."
+          },
+          {
+            "id": "b",
+            "text": "Keep order 568’s reservation, check alternatives, and correct the dashboard explanation.",
+            "feedback": "It respects the prior commitment and avoids a new unsupported one."
+          },
+          {
+            "id": "c",
+            "text": "Tell Evermont its unit has already shipped.",
+            "feedback": "No shipment to Evermont is recorded."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Nadia as Felix. Explain on-hand versus available-to-promise stock, acknowledge the dashboard ambiguity, protect the existing reservation, and offer a verified next step without inventing a restock date.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Distinguish physical and available stock",
+        "Name the existing reservation",
+        "Avoid an unsupported delivery promise",
+        "Propose checked alternatives"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why can’t we ship the demo unit?",
+      "body": "Hi Nadia,\n\nThe demo unit has not been lost. There is one physically in the warehouse, but it was reserved for order 568 before your call, so the available-to-promise count was zero. The sales dashboard showed only “On hand: 1” beside the product. I can see why that looked like a unit we could offer, and our dashboard needs to make the reservation status clearer.\n\nWe need to keep the existing reservation until its order owner approves any change. I will check whether another site has a unit or whether a different demo option is available, then send you only the options we can confirm. We do not yet have a restock date, so please avoid promising Evermont a delivery time today. You can tell them we are checking availability and will come back with a specific option. I will also raise the dashboard label so this distinction is visible to Sales.\n\nFelix",
+      "annotations": [
+        {
+          "label": "Defines the stock",
+          "excerpt": "available-to-promise count was zero",
+          "evidenceIds": [
+            "N17F2"
+          ]
+        },
+        {
+          "label": "Recognises ambiguity",
+          "excerpt": "our dashboard needs to make the reservation status clearer",
+          "evidenceIds": [
+            "N17F3"
+          ]
+        },
+        {
+          "label": "Preserves commitment",
+          "excerpt": "keep the existing reservation",
+          "evidenceIds": [
+            "N17F2",
+            "N17F4"
+          ]
+        },
+        {
+          "label": "Avoids a false date",
+          "excerpt": "We do not yet have a restock date",
+          "evidenceIds": [
+            "N17F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "route-not-handover",
+    "title": "Delivered to a route, not a recipient",
+    "area": "Operations × Logistics",
+    "role": "Harper · Logistics",
+    "teaser": "Tracking says delivered, but reception says no package arrived.",
+    "misunderstanding": "A route-complete scan was shown as recipient delivery without proof of handover.",
+    "email": {
+      "from": "Jo Park · Customer Care",
+      "to": "Harper · Logistics",
+      "sent": "Thursday, 15:15",
+      "subject": "Where is the Meridian package?",
+      "body": "Hi Harper,\n\nMeridian’s tracking page says its package was delivered at 1pm, but its reception desk says nobody handed it over. The customer thinks we have lost it. What does the scan actually prove, and what should I tell them while you check?\n\nJo"
+    },
+    "document": {
+      "title": "Carrier scan · internal tracking",
+      "intro": "The two systems use different labels for the same carrier event.",
+      "facts": [
+        {
+          "id": "N18F1",
+          "time": "Thu 13:02",
+          "text": "The carrier recorded a “route complete” scan at Meridian’s building loading area. There is no recipient name or signature in the carrier record."
+        },
+        {
+          "id": "N18F2",
+          "time": "Thu 13:03",
+          "text": "Our tracking page translated that carrier event into the public label “Delivered”."
+        },
+        {
+          "id": "N18F3",
+          "time": "Thu 14:40",
+          "text": "Meridian reception reported that it had not received the package. The loading-area handover has not been verified."
+        },
+        {
+          "id": "N18F4",
+          "time": "Current status",
+          "text": "Harper has requested the carrier’s delivery detail but has not received a response. The package location is not confirmed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "route-not-handover-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the carrier scan prove?",
+        "evidenceIds": [
+          "N18F1",
+          "N18F3",
+          "N18F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Reception signed for the package.",
+            "feedback": "No signature appears."
+          },
+          {
+            "id": "b",
+            "text": "The route was marked complete at the building loading area.",
+            "feedback": "The record has no recipient name or signature."
+          },
+          {
+            "id": "c",
+            "text": "The package was lost.",
+            "feedback": "Its current location is not confirmed."
+          }
+        ]
+      },
+      {
+        "id": "route-not-handover-scope",
+        "axis": "Scope",
+        "prompt": "Why does the public tracking page say Delivered?",
+        "evidenceIds": [
+          "N18F1",
+          "N18F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "It mapped a route-complete event to a delivery label.",
+            "feedback": "The internal translation explains the mismatch."
+          },
+          {
+            "id": "b",
+            "text": "Reception confirmed handover.",
+            "feedback": "Reception says the opposite."
+          },
+          {
+            "id": "c",
+            "text": "The customer changed the status.",
+            "feedback": "No customer status change is recorded."
+          }
+        ]
+      },
+      {
+        "id": "route-not-handover-intent",
+        "axis": "Intent",
+        "prompt": "What does Jo need for the customer?",
+        "evidenceIds": [
+          "N18F3",
+          "N18F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A truthful status and a concrete investigation plan.",
+            "feedback": "Jo asks what the scan proves and what to say while checking."
+          },
+          {
+            "id": "b",
+            "text": "A guarantee that the package is at reception.",
+            "feedback": "Reception has not received it."
+          },
+          {
+            "id": "c",
+            "text": "An immediate claim of loss.",
+            "feedback": "The location is unknown."
+          }
+        ]
+      },
+      {
+        "id": "route-not-handover-purpose",
+        "axis": "Purpose",
+        "prompt": "Which next step is justified?",
+        "evidenceIds": [
+          "N18F1",
+          "N18F3",
+          "N18F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Obtain carrier handover detail and check the loading-area process.",
+            "feedback": "These checks could establish where the package went."
+          },
+          {
+            "id": "b",
+            "text": "Close the case because the tracking page says Delivered.",
+            "feedback": "The page label lacks proof of recipient handover."
+          },
+          {
+            "id": "c",
+            "text": "Send a replacement before checking the location.",
+            "feedback": "No replacement decision is documented."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Jo as Harper. Explain what the scan confirms and does not confirm, own the misleading tracking label, and propose a specific investigation and customer update without claiming delivery or loss.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Define the carrier event",
+        "Distinguish route completion from handover",
+        "Own the public label",
+        "Give a timed investigation update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Where is the Meridian package?",
+      "body": "Hi Jo,\n\nThe carrier scan at 1:02 shows that its route was marked complete at Meridian’s building loading area. It does not include a recipient name or signature, so it does not confirm that reception received the package. Our tracking page displayed that event as “Delivered”, which gives a stronger impression than the carrier record supports. I am sorry that label left the customer with an inaccurate picture of what we know.\n\nI have asked the carrier for its delivery detail and will also check whether Meridian’s loading area logged a handover. Until those checks are complete, the package location is unconfirmed; we should not tell the customer it was definitely delivered or lost. Please let them know we are investigating the handover and will send a verified update tomorrow morning. I will share the carrier response with you as soon as it arrives, even if the investigation is still open.\n\nHarper",
+      "annotations": [
+        {
+          "label": "Defines scan",
+          "excerpt": "route was marked complete",
+          "evidenceIds": [
+            "N18F1"
+          ]
+        },
+        {
+          "label": "Limits claim",
+          "excerpt": "does not confirm that reception received",
+          "evidenceIds": [
+            "N18F1",
+            "N18F3"
+          ]
+        },
+        {
+          "label": "Owns label",
+          "excerpt": "Our tracking page displayed that event as “Delivered”",
+          "evidenceIds": [
+            "N18F2"
+          ]
+        },
+        {
+          "label": "Offers investigation",
+          "excerpt": "asked the carrier for its delivery detail",
+          "evidenceIds": [
+            "N18F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "provisional-room",
+    "title": "Two teams, one room",
+    "area": "Operations × Facilities",
+    "role": "Casey · Facilities",
+    "teaser": "Two teams arrive for the same meeting room, each holding a calendar entry.",
+    "misunderstanding": "A provisional hold appeared beside a confirmed booking without an obvious status label.",
+    "email": {
+      "from": "Amina Yusuf · Events",
+      "to": "Casey · Facilities",
+      "sent": "Friday, 09:25",
+      "subject": "Conference room conflict",
+      "body": "Hi Casey,\n\nMy workshop team is outside Room B, but another group is already setting up there. I can see our meeting on the calendar, so I thought the room was booked. Can you explain whose reservation is valid and help us find a place to start? Our participants arrive at 10.\n\nAmina"
+    },
+    "document": {
+      "title": "Room booking record · Friday",
+      "intro": "The calendar displays both entries, but only one reservation was confirmed.",
+      "facts": [
+        {
+          "id": "N19F1",
+          "time": "Mon 14:00",
+          "text": "Amina placed a provisional hold on Room B for Friday 10:00–12:00 while waiting for participant numbers."
+        },
+        {
+          "id": "N19F2",
+          "time": "Wed 11:00",
+          "text": "Another team requested Room B for the same time and received a confirmed booking."
+        },
+        {
+          "id": "N19F3",
+          "time": "Wed 11:05",
+          "text": "The shared calendar displayed both entries but did not visibly distinguish provisional from confirmed in its compact view."
+        },
+        {
+          "id": "N19F4",
+          "time": "Fri 09:20",
+          "text": "The other team began setup in Room B. Facilities has not yet checked which alternative rooms are available for Amina’s workshop."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "provisional-room-evidence",
+        "axis": "Evidence",
+        "prompt": "Which team has the confirmed Room B reservation?",
+        "evidenceIds": [
+          "N19F1",
+          "N19F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The team that booked on Wednesday.",
+            "feedback": "Its booking was confirmed; Amina’s remained provisional."
+          },
+          {
+            "id": "b",
+            "text": "Amina’s workshop team.",
+            "feedback": "Their hold was provisional."
+          },
+          {
+            "id": "c",
+            "text": "Neither team.",
+            "feedback": "Wednesday’s confirmation is recorded."
+          }
+        ]
+      },
+      {
+        "id": "provisional-room-scope",
+        "axis": "Scope",
+        "prompt": "Why did Amina think the room was hers?",
+        "evidenceIds": [
+          "N19F1",
+          "N19F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Facilities had confirmed her hold.",
+            "feedback": "The record says provisional."
+          },
+          {
+            "id": "b",
+            "text": "The calendar showed her provisional hold without a clear compact-view status.",
+            "feedback": "The display obscured the distinction."
+          },
+          {
+            "id": "c",
+            "text": "The other team cancelled its booking.",
+            "feedback": "No cancellation is recorded."
+          }
+        ]
+      },
+      {
+        "id": "provisional-room-intent",
+        "axis": "Intent",
+        "prompt": "What does Amina need before 10?",
+        "evidenceIds": [
+          "N19F2",
+          "N19F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A full history of the calendar system.",
+            "feedback": "That will not seat arriving participants."
+          },
+          {
+            "id": "b",
+            "text": "An accurate explanation and a usable alternative if one exists.",
+            "feedback": "Participants are arriving soon and alternative availability is not yet checked."
+          },
+          {
+            "id": "c",
+            "text": "A promise that Room B will be cleared.",
+            "feedback": "The other team holds the confirmed booking."
+          }
+        ]
+      },
+      {
+        "id": "provisional-room-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Casey do now?",
+        "evidenceIds": [
+          "N19F1",
+          "N19F2",
+          "N19F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Check alternative rooms, explain the provisional status, and update Amina promptly.",
+            "feedback": "This addresses the immediate need without displacing a confirmed booking."
+          },
+          {
+            "id": "b",
+            "text": "Promise a specific room before checking.",
+            "feedback": "No alternative availability has been verified."
+          },
+          {
+            "id": "c",
+            "text": "Remove the other team from Room B.",
+            "feedback": "Their reservation is confirmed."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Amina as Casey. Clarify the provisional and confirmed statuses without blaming her, acknowledge the calendar display, and propose an immediate room check before participants arrive.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "State which booking is confirmed",
+        "Explain why the calendar misled",
+        "Avoid promising an unchecked room",
+        "Give an immediate coordination step"
+      ]
+    },
+    "model": {
+      "subject": "Re: Conference room conflict",
+      "body": "Hi Amina,\n\nI have checked the booking record. Your Room B entry was a provisional hold while participant numbers were being confirmed. The other team received a confirmed booking for the same time on Wednesday, so Room B is allocated to them. The compact calendar showed both entries without making that difference clear, and I understand why you expected the room to be yours. I am sorry our display created this problem just before your participants arrive.\n\nI am checking the available rooms now, including spaces that can hold your workshop group. I cannot name a replacement room until its capacity and booking status are confirmed. Could you tell me your final participant number and any equipment you need? I will meet you at reception before 10 with a status update and help redirect participants once we have a confirmed option. I will also report the unclear calendar status to the facilities team.\n\nCasey",
+      "annotations": [
+        {
+          "label": "Clarifies priority",
+          "excerpt": "other team received a confirmed booking",
+          "evidenceIds": [
+            "N19F2"
+          ]
+        },
+        {
+          "label": "Explains confusion",
+          "excerpt": "compact calendar showed both entries",
+          "evidenceIds": [
+            "N19F3"
+          ]
+        },
+        {
+          "label": "Keeps uncertainty",
+          "excerpt": "cannot name a replacement room",
+          "evidenceIds": [
+            "N19F4"
+          ]
+        },
+        {
+          "label": "Offers immediate help",
+          "excerpt": "meet you at reception before 10",
+          "evidenceIds": [
+            "N19F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "estimate-not-invoice",
+    "title": "Two documents, one charge?",
+    "area": "Operations × Billing",
+    "role": "Elise · Account services",
+    "teaser": "A customer sees two documents for the same project amount and fears a duplicate charge.",
+    "misunderstanding": "A price estimate was mistaken for a second invoice.",
+    "email": {
+      "from": "Martin Reed · Customer",
+      "to": "Elise · Account services",
+      "sent": "Tuesday, 10:05",
+      "subject": "Have I been billed twice?",
+      "body": "Hi Elise,\n\nI have two documents for the same amount: one sent last week and one sent today. I am worried I have been billed twice for the project. Please explain what each document is and whether I need to do anything now. I would rather clear this up before paying.\n\nMartin"
+    },
+    "document": {
+      "title": "Project documents · billing snapshot",
+      "intro": "The record distinguishes a price estimate from the final invoice. It does not include the customer’s bank statement.",
+      "facts": [
+        {
+          "id": "N20F1",
+          "time": "Last week",
+          "text": "Elise sent document E-104 headed “Estimate”. It showed the expected project price and carried no payment request."
+        },
+        {
+          "id": "N20F2",
+          "time": "Today 09:00",
+          "text": "Billing issued document I-207 headed “Invoice” for the same project and amount. It is the only payment request in the internal document record."
+        },
+        {
+          "id": "N20F3",
+          "time": "Today 09:30",
+          "text": "The internal payment ledger shows no payment posted against I-207 at the time of the snapshot."
+        },
+        {
+          "id": "N20F4",
+          "time": "Current status",
+          "text": "Elise has not seen Martin’s bank or card statement. If he sees a charge there, Billing must investigate that transaction separately."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "estimate-not-invoice-evidence",
+        "axis": "Evidence",
+        "prompt": "Which document requests payment?",
+        "evidenceIds": [
+          "N20F1",
+          "N20F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Neither document.",
+            "feedback": "I-207 is an invoice."
+          },
+          {
+            "id": "b",
+            "text": "Both E-104 and I-207.",
+            "feedback": "The estimate carries no request for payment."
+          },
+          {
+            "id": "c",
+            "text": "Invoice I-207 only.",
+            "feedback": "E-104 is an estimate without a payment request."
+          }
+        ]
+      },
+      {
+        "id": "estimate-not-invoice-scope",
+        "axis": "Scope",
+        "prompt": "What can the internal ledger confirm?",
+        "evidenceIds": [
+          "N20F3",
+          "N20F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Martin has never been charged by any provider.",
+            "feedback": "Elise has not seen his external statement."
+          },
+          {
+            "id": "b",
+            "text": "The estimate was paid last week.",
+            "feedback": "It had no payment request and no payment evidence."
+          },
+          {
+            "id": "c",
+            "text": "No payment was posted against I-207 at 09:30.",
+            "feedback": "That is the ledger snapshot, not a bank statement."
+          }
+        ]
+      },
+      {
+        "id": "estimate-not-invoice-intent",
+        "axis": "Intent",
+        "prompt": "What does Martin need?",
+        "evidenceIds": [
+          "N20F1",
+          "N20F2",
+          "N20F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A demand for immediate payment without explanation.",
+            "feedback": "He has asked to resolve the confusion first."
+          },
+          {
+            "id": "b",
+            "text": "A guarantee about every bank transaction.",
+            "feedback": "The internal record cannot establish that."
+          },
+          {
+            "id": "c",
+            "text": "A plain explanation of both documents and his next step.",
+            "feedback": "His email asks what each is and whether to act."
+          }
+        ]
+      },
+      {
+        "id": "estimate-not-invoice-purpose",
+        "axis": "Purpose",
+        "prompt": "What if Martin reports a charge on his statement?",
+        "evidenceIds": [
+          "N20F3",
+          "N20F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tell him the statement must be wrong.",
+            "feedback": "Elise has not seen it."
+          },
+          {
+            "id": "b",
+            "text": "Ask Billing to investigate the specific transaction.",
+            "feedback": "External charges require a separate check."
+          },
+          {
+            "id": "c",
+            "text": "Issue a second invoice.",
+            "feedback": "That would deepen the confusion."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Martin as Elise. Distinguish estimate from invoice, explain the limited internal ledger snapshot, and give a clear next step without claiming to know his bank activity.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Identify both documents and purposes",
+        "Explain the single payment request",
+        "Limit claims to the internal ledger",
+        "Offer Billing review if he sees a charge"
+      ]
+    },
+    "model": {
+      "subject": "Re: Have I been billed twice?",
+      "body": "Hi Martin,\n\nI understand why two documents showing the same amount would look like duplicate billing. E-104, sent last week, was an estimate of the project price and did not ask for payment. I-207, sent today, is the final invoice for that same project and is the only payment request in our document record. You do not need to pay the estimate as well.\n\nI checked our internal ledger at 9:30 this morning; it did not show a payment posted against I-207 at that time. That check does not tell me what appears on your bank or card statement. If you can see a separate charge there, please let me know its date and reference so I can ask Billing to investigate it. Otherwise, please use I-207 when you are ready to pay the invoice. I am happy to send a copy marked clearly as an estimate for your records.\n\nElise",
+      "annotations": [
+        {
+          "label": "Defines estimate",
+          "excerpt": "was an estimate of the project price",
+          "evidenceIds": [
+            "N20F1"
+          ]
+        },
+        {
+          "label": "Defines invoice",
+          "excerpt": "the only payment request",
+          "evidenceIds": [
+            "N20F2"
+          ]
+        },
+        {
+          "label": "Limits ledger claim",
+          "excerpt": "at 9:30 this morning",
+          "evidenceIds": [
+            "N20F3"
+          ]
+        },
+        {
+          "label": "Offers a check",
+          "excerpt": "ask Billing to investigate it",
+          "evidenceIds": [
+            "N20F4"
           ]
         }
       ]

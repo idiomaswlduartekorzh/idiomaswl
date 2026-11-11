@@ -38,6 +38,23 @@ Fecha de corte: 25 de agosto de 2026.
 - Decisión de integración: `MERGE`; SHA en `main`,
   deployment y smoke: pendientes. El objetivo es mejorar relevancia y claridad
   local; no hay garantía de una posición concreta en Google.
+## Escritura laboral B2–C2 multilingüe — 11 de noviembre de 2026
+
+Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
+`origin/main@79fc4bee`. Estado: `EN_DESARROLLO`, sin integración ni despliegue.
+El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
+recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
+nivel de inglés B2, C1 y C2, y 20 de francés B2; francés C1/C2 y los demás
+idiomas siguen en elaboración. El harness exige cuatro casos por cada una de
+cinco áreas, evidencia referenciada y claves variadas. Las rutas nuevas siguen
+con `noindex` y los hubs no las anuncian todavía.
+
+Pasaron el harness de los 60 casos ingleses, las nueve pruebas del harness B2,
+ESLint y TypeScript acotado de las rutas nuevas. Se recorrieron en navegador
+inglés B2, C1 y C2 y francés B2. Pendientes: cierre lingüístico de los bancos
+en curso, revisión de salud administrativa, catálogo completo, TypeScript
+global, build y publicación verificable desde `main`. Contrato y estado:
+[`writing-workplace-agent-harness.md`](writing-workplace-agent-harness.md).
 
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
 

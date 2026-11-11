@@ -1,15 +1,20 @@
 const AXES = ['Evidence', 'Scope', 'Intent', 'Purpose']
+const AREA_GROUPS = ['Marketing', 'Software', 'People', 'Health administration', 'Operations']
 const words = value => typeof value === 'string' ? value.trim().split(/\s+/u).filter(Boolean).length : 0
 const present = value => typeof value === 'string' && value.trim().length > 0
 
-export function validateWritingWorkplaceCases(cases, expectedCount = 3) {
+export function validateWritingWorkplaceCases(cases, expectedCount = 3, options = {}) {
   const issues = []
   if (!Array.isArray(cases)) return ['Case bank must be an array.']
-  if (cases.length !== expectedCount) issues.push(`Preview needs ${expectedCount} cases; found ${cases.length}.`)
+  if (cases.length !== expectedCount) issues.push(`Case bank needs ${expectedCount} cases; found ${cases.length}.`)
 
   const ids = new Set()
   const areas = new Set()
+  const areaGroups = new Map(AREA_GROUPS.map(group => [group, 0]))
+  const titles = new Set()
+  const misunderstandings = new Set()
   const modelBodies = new Set()
+  const wrongFeedbackOpenings = new Map()
   for (const item of cases) {
     const id = item?.id ?? '(missing id)'
     if (!present(item?.id)) issues.push('Case is missing an id.')
@@ -18,8 +23,16 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3) {
     for (const field of ['title', 'area', 'role', 'teaser', 'misunderstanding']) {
       if (!present(item?.[field])) issues.push(`${id}: missing ${field}.`)
     }
-    if (areas.has(item?.area)) issues.push(`${id}: preview areas must differ.`)
+    if (options.requireAreaLabel && !present(item?.areaLabel)) issues.push(`${id}: missing target-language areaLabel.`)
+    if (expectedCount === 3 && areas.has(item?.area)) issues.push(`${id}: preview areas must differ.`)
     areas.add(item?.area)
+    const group = AREA_GROUPS.find(value => item?.area === value || item?.area?.startsWith(`${value} ×`))
+    if (!group) issues.push(`${id}: area must belong to one of the five editorial groups.`)
+    else areaGroups.set(group, areaGroups.get(group) + 1)
+    if (titles.has(item?.title)) issues.push(`${id}: duplicate title.`)
+    titles.add(item?.title)
+    if (misunderstandings.has(item?.misunderstanding)) issues.push(`${id}: duplicate misunderstanding.`)
+    misunderstandings.add(item?.misunderstanding)
 
     for (const field of ['from', 'to', 'sent', 'subject', 'body']) {
       if (!present(item?.email?.[field])) issues.push(`${id}: missing email.${field}.`)
@@ -57,6 +70,13 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3) {
         if (optionTexts.has(option.text)) issues.push(`${id}/${question.id}: duplicate option text.`)
         optionIds.add(option.id)
         optionTexts.add(option.text)
+        if (option.id !== question.correctOptionId && present(option.feedback)) {
+          if (option.feedback.trim().startsWith(`«${option.text}»`) || option.feedback.trim().startsWith(`“${option.text}”`)) {
+            issues.push(`${id}/${question.id}: distractor feedback echoes the option instead of diagnosing its distinct error.`)
+          }
+          const opening = option.feedback.trim().toLocaleLowerCase().split(/\s+/u).slice(0, 3).join(' ')
+          wrongFeedbackOpenings.set(opening, (wrongFeedbackOpenings.get(opening) ?? 0) + 1)
+        }
       }
       if (!optionIds.has(question.correctOptionId)) issues.push(`${id}/${question.id}: answer key is missing from options.`)
     }
@@ -78,6 +98,23 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3) {
       if (!(item?.model?.body ?? '').includes(note.excerpt)) issues.push(`${id}: model annotation excerpt is absent from reply.`)
       if (!Array.isArray(note.evidenceIds) || !note.evidenceIds.length) issues.push(`${id}: model annotation lacks evidence.`)
       for (const ref of note.evidenceIds ?? []) if (!factIds.has(ref)) issues.push(`${id}: model annotation cites unknown evidence ${ref}.`)
+    }
+  }
+  if (expectedCount === 20) {
+    for (const [opening, count] of wrongFeedbackOpenings) {
+      if (count > 12) issues.push(`Distractor feedback repeats the opening "${opening}" ${count} times.`)
+    }
+    for (const [group, count] of areaGroups) {
+      if (count !== 4) issues.push(`${group}: expected four cases; found ${count}.`)
+    }
+    const patterns = cases.map(item => (item.questions ?? []).map(question => question.correctOptionId).join(''))
+    if (new Set(patterns).size < 16) issues.push('Answer keys need at least 16 distinct four-question patterns.')
+    if (patterns.some(pattern => pattern.length === 4 && new Set(pattern).size === 1)) issues.push('A case must not put all four correct answers in the same position.')
+    for (let axis = 0; axis < 4; axis++) {
+      for (const position of ['a', 'b', 'c']) {
+        const count = cases.filter(item => item.questions?.[axis]?.correctOptionId === position).length
+        if (count < 5 || count > 9) issues.push(`${AXES[axis]}: answer position ${position} appears ${count} times; expected 5–9.`)
+      }
     }
   }
   return issues

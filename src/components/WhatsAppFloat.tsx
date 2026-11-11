@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { isIcfesPath, trackIcfesEvent } from '@/lib/analytics/icfes';
+import { getAdvancedWritingLocale, isAdvancedEnglishWritingPath } from '@/lib/practica/writing-route';
 
 const WA = '573005004253';
 
@@ -9,6 +10,9 @@ const WA = '573005004253';
 const PAGE_MESSAGES: [string, string][] = [
   ['/practica/ielts',     'Hello, I was practising IELTS with WeLearn and would like guidance on how to continue my preparation.'],
   ['/practica/toefl',     'Hello, I was practising TOEFL with WeLearn and would like guidance on how to continue my preparation.'],
+  ['/practica/ingles/b2/escritura', 'Hello, I was practising English writing at B2 with WeLearn and would like to know more about the classes.'],
+  ['/practica/ingles/c1/escritura', 'Hello, I was practising English writing at C1 with WeLearn and would like to know more about the classes.'],
+  ['/practica/ingles/c2/escritura', 'Hello, I was practising English writing at C2 with WeLearn and would like to know more about the classes.'],
   ['/nivel-radar',        'Hola, hice el Nivel Radar de WeLearn y quiero ayuda personalizada para avanzar mi inglés.'],
   ['/clases-de-coreano',  'Hola, vi la página de clases de coreano en WeLearn y quiero saber más sobre el programa.'],
   ['/clases-de-ingles',   'Hola, vi su página de clases de inglés y quiero conocer el precio y agendar una clase de diagnóstico con tutor.'],
@@ -47,7 +51,7 @@ declare global {
 
 export default function WhatsAppFloat() {
   const pathname = usePathname();
-  const english = pathname.startsWith('/practica/ielts') || pathname.startsWith('/practica/toefl');
+  const english = pathname.startsWith('/practica/ielts') || pathname.startsWith('/practica/toefl') || isAdvancedEnglishWritingPath(pathname);
   const msg = getMessageForPath(pathname);
   const href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
@@ -66,6 +70,8 @@ export default function WhatsAppFloat() {
 
   // La inscripción incluye su propio enlace de ayuda; el botón fijo tapa el resumen en móvil.
   if (pathname === '/inscripcion') return null;
+  const writingLocale = getAdvancedWritingLocale(pathname);
+  if (writingLocale && writingLocale !== 'en') return null;
 
   return (
     <>
