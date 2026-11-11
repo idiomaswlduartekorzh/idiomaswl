@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-river-map",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "디지털 홍수 지도와 인쇄물의 가치",
+      "en": "디지털 홍수 지도와 인쇄물의 가치"
+    },
+    "intro": {
+      "es": "이 읽기 자료는 디지털 홍수 지도 활용의 한계와 지역 주민 모임의 대안 제시 과정을 다룬 B2 수준의 기사문입니다. 본문을 읽고 세부 내용을 파악해 보세요.",
+      "en": "이 읽기 자료는 디지털 홍수 지도 활용의 한계와 지역 주민 모임의 대안 제시 과정을 다룬 B2 수준의 기사문입니다. 본문을 읽고 세부 내용을 파악해 보세요."
+    },
+    "mission": {
+      "es": "기사의 핵심 갈등과 해결 방안을 이해하고, 제시된 독해 문항을 정확하게 풀어 보세요.",
+      "en": "기사의 핵심 갈등과 해결 방안을 이해하고, 제시된 독해 문항을 정확하게 풀어 보세요."
+    },
+    "targetText": "최근 집중호우에 대비하기 위해 행정안전부가 배포한 홍수 경보 지도가 주민들 사이에서 뜨거운 논쟁거리가 되었다. 지자체는 스마트폰 앱을 통해 실시간 침수 예상 지역을 확인할 수 있는 디지털 지도를 전면 도입했다. 젊은 층은 이 지도를 통해 위험 지역을 빠르게 우회할 수 있다며 긍정적인 반응을 보였다. 그러나 문제는 노인 인구가 밀집한 해안 마을인 청산리에서 발생했다. 구형 스마트폰을 사용하는 주민들은 화면 해상도가 낮고 데이터 로딩이 느려 복잡한 색상으로 표시된 침수 경계를 정확히 판별하기 어려웠다.\n\n이러한 디지털 격차는 단순히 정보 접근의 차이를 넘어 생존과 직결된 심각한 안전 불평등 문제로 대다수 마을 주민들을 불안에 떨게 만들었다. 스마트폰 조작에 익숙하지 않은 고령층은 폭우가 쏟아지는 긴급한 상황 속에서 복잡한 애플리케이션을 실행하고 직관적이지 않은 아이콘을 해석하느라 소중한 대피 골든타임을 놓칠 위험에 처했다. 실제로 마을 이장은 종이로 된 전통적 대피 지도와 확성기 방송이 훨씬 더 직관적이고 즉각적인 효과를 발휘한다고 주장하며 행정당국의 일방적인 디지털 전환 정책을 강하게 비판했다. 젊은 세대의 편리함만을 기준으로 삼은 현대적 기술 도입이 정작 보호받아야 할 취약계층을 사각지대에 방치하는 모순을 낳은 셈이다. 결국 이러한 현실적 한계를 인식한 지자체는 디지털 지도와 기존의 아날로그식 경보 체계를 병행하는 보완 대책 마련에 착수했으며 첨단 기술이 모든 사회 구성원에게 평등하게 작동해야 한다는 중요한 교훈을 남기게 되었다.\n\n이러한 개선 노력은 기술의 발전이 속도와 효율성만을 쫓는 것이 아니라 포용성을 갖추어야 함을 명백히 보여준다. 비록 첨단 디지털 시스템이 재난 관리의 효율을 높이는 데 중요한 역할을 하지만 그것이 사회적 약자를 배제하는 도구가 되어서는 결코 안 된다. 앞으로는 다양한 연령층과 계층의 사용 환경을 세심하게 고려한 맞춤형 안내 체계가 정착되어야 할 것이다. 모든 주민이 소외되지 않고 안전한 일상을 누릴 수 있도록 기술과 아날로그 방식의 조화로운 융합이 지속되기를 기대해 본다.",
+    "wordCount": 250,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "논쟁거리",
+        "lemma": "논쟁거리",
+        "glosses": {
+          "es": "subject of debate",
+          "en": "subject of debate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전면",
+        "lemma": "전면",
+        "glosses": {
+          "es": "full scale / entirely",
+          "en": "full scale / entirely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "우회할",
+        "lemma": "우회할",
+        "glosses": {
+          "es": "to detour",
+          "en": "to detour"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "밀집한",
+        "lemma": "밀집한",
+        "glosses": {
+          "es": "densely populated",
+          "en": "densely populated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "해상도가",
+        "lemma": "해상도가",
+        "glosses": {
+          "es": "resolution (of screen)",
+          "en": "resolution (of screen)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "판별하기",
+        "lemma": "판별하기",
+        "glosses": {
+          "es": "to distinguish / identify",
+          "en": "to distinguish / identify"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.9,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 기사 전체의 중심 내용은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "디지털 홍수 지도의 유용성과 인쇄물 보완 필요성"
+        },
+        {
+          "id": "a2",
+          "text": "스마트폰 보급률 증가"
+        },
+        {
+          "id": "a3",
+          "text": "행정안전부의 정책 실패 원인 분석"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "최근 집중호우에 대비하기 위해 행정안전부가 배포한 홍수 경보 지도가 주민들 사이에서 뜨거운 논쟁거리가 되었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "청산리 주민들이 디지털 지도를 이용하는 과정에서 겪은 구체적인 불편은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지자체의 일방적인 앱 삭제 조치"
+        },
+        {
+          "id": "a2",
+          "text": "구형 스마트폰의 낮은 해상도와 느린 데이터 로딩"
+        },
+        {
+          "id": "a3",
+          "text": "젊은 층의 적극적인 스마트폰 사용 거부"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "구형 스마트폰을 사용하는 주민들은 화면 해상도가 낮고 데이터 로딩이 느려 복잡한 색상으로 표시된 침수 경계를 정확히 판별하기 어려웠다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "본문의 내용으로 미루어 볼 때, 젊은 층이 디지털 지도에 대해 가졌을 태도로 가장 알맞은 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "데이터 요금이 너무 비싸서 불만을 제기했다"
+        },
+        {
+          "id": "a2",
+          "text": "시력이 나빠서 지도 이용을 포기했다"
+        },
+        {
+          "id": "a3",
+          "text": "위험 지역을 빠르게 우회할 수 있어 긍정적이었다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "젊은 층은 이 지도를 통해 위험 지역을 빠르게 우회할 수 있다며 긍정적인 반응을 보였다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 청산리의 사례를 본문에 도입한 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "디지털 중심 정보 제공의 한계와 세대별 격차를 드러내기 위함이다"
+        },
+        {
+          "id": "a2",
+          "text": "청산리의 아름다운 자연환경을 홍보하기 위함이다"
+        },
+        {
+          "id": "a3",
+          "text": "구형 스마트폰 제조사의 책임 소재를 규명하기 위함이다"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "그러나 문제는 노인 인구가 밀집한 해안 마을인 청산리에서 발생했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글을 서술하는 필자의 전반적인 어조나 태도는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "특정 지자체의 무능함을 감정적으로 강하게 비판함"
+        },
+        {
+          "id": "a2",
+          "text": "현상의 명암을 객관적으로 조명하며 대안의 필요성을 시사함"
+        },
+        {
+          "id": "a3",
+          "text": "디지털 기술의 완전한 폐기를 주장하며 과거로의 회귀를 요구함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "지자체는 스마트폰 앱을 통해 실시간 침수 예상 지역을 확인할 수 있는 디지털 지도를 전면 도입했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 화면의 선명도를 나타내는 표현으로 사용된 단어는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "논쟁거리"
+        },
+        {
+          "id": "a2",
+          "text": "밀집한"
+        },
+        {
+          "id": "a3",
+          "text": "해상도"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "구형 스마트폰을 사용하는 주민들은 화면 해상도가 낮고 데이터 로딩이 느려 복잡한 색상으로 표시된 침수 경계를 정확히 판별하기 어려웠다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "디지털 정보 접근의 격차가 지역 사회에 미치는 영향과 이를 해결하기 위한 인쇄물 등 보완책의 필요성에 대해 본문의 내용을 바탕으로 자신의 의견을 한국어로 작성해 보세요.",
+      "en": "디지털 정보 접근의 격차가 지역 사회에 미치는 영향과 이를 해결하기 위한 인쇄물 등 보완책의 필요성에 대해 본문의 내용을 바탕으로 자신의 의견을 한국어로 작성해 보세요."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "기사의 핵심 갈등과 해결 방안을 이해하고, 제시된 독해 문항을 정확하게 풀어 보세요.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "디지털 홍수 지도와 인쇄물의 가치 | B2 Reading | WeLearn",
+      "en": "디지털 홍수 지도와 인쇄물의 가치 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "이 읽기 자료는 디지털 홍수 지도 활용의 한계와 지역 주민 모임의 대안 제시 과정을 다룬 B2 수준의 기사문입니다. 본문을 읽고 세부 내용을 파악해 보세요.",
+      "en": "이 읽기 자료는 디지털 홍수 지도 활용의 한계와 지역 주민 모임의 대안 제시 과정을 다룬 B2 수준의 기사문입니다. 본문을 읽고 세부 내용을 파악해 보세요."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

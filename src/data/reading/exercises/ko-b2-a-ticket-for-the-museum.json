@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "야간 무료 개방의 명암과 교통의 한계",
+      "en": "야간 무료 개방의 명암과 교통의 한계"
+    },
+    "intro": {
+      "es": "박물관 야간 무료 개방 정책의 성과와 대중교통 부족 문제를 다룬 비평문을 읽고 세부 내용을 파악해 봅시다.",
+      "en": "박물관 야간 무료 개방 정책의 성과와 대중교통 부족 문제를 다룬 비평문을 읽고 세부 내용을 파악해 봅시다."
+    },
+    "mission": {
+      "es": "텍스트를 읽고 정책의 실효성과 대중교통 연계성의 관계를 분석하며 독해 문제를 해결하세요.",
+      "en": "텍스트를 읽고 정책의 실효성과 대중교통 연계성의 관계를 분석하며 독해 문제를 해결하세요."
+    },
+    "targetText": "지역 사회의 문화 향유 기회를 넓히기 위해 한울박물관은 최근 매주 금요일 저녁 무료 개방 프로그램을 전격 도입했다. 직장인과 학생들의 발길이 이어지며 관람객 수는 이전 대비 두 배 이상 급증했고 야간 전시장은 활기를 띠었다. 기획실의 김 민수 학예연구사는 이를 두고 문화 접근성 제고 측면에서 거둔 고무적인 성과라고 자평했다. 퇴근 후 여유롭게 예술을 즐길 수 있다는 긍정적 반응이 이어지면서 정책의 취지 자체에는 대체로 공감하는 분위기가 형성되었다. 그러나 이러한 양적 성장 이면에 심각한 구조적 모순이 도사리고 있었다. 바로 관람객들이 박물관을 떠나는 시각과 대중교통의 운행 종료 시각이 서로 어긋난다는 점이다. 박물관 측은 폐관 시간을 밤 9시로 연장했지만 인근을 경유하는 시내버스의 막차는 밤 8시 30분에 끊기도록 설정되어 있었다. 이로 인해 무료 관람을 마치고 나온 시민들은 귀가 수단을 찾지 못해 박물관 로비에 발이 묶이는 사태가 반복되었다. 특히 자가용이 없는 학생들과 노약자들에게 야간 문화 행사는 오히려 귀가길을 걱정해야 하는 애물단지로 전락했다. 민원 부서에는 교통편 확충을 요구하는 불만 접수가 쇄도했으나, 시청과 운수업체는 예산 부족과 채산성을 이유로 서로 책임을 떠넘기며 소극적인 태도로 일관했다. 문화 복지를 확대하겠다는 야심 찬 포부가 기초적인 인프라 부조화라는 장벽에 부딪혀 빛을 바랜 셈이다. 결국 박물관 측은 관람객의 편의를 보장하기 위해 셔틀버스 운행을 자체 예산으로 검토하겠다고 밝혔으나, 이는 근본적인 해결책이 아니라 임시방편에 불과하다는 지적이 지배적이다. 문화 행사의 성공은 단순히 입장료를 면제하는 파격적 혜택에만 의존할 수 없으며, 관람객의 이동권을 보장하는 유기적인 행정 협력이 선행되어야 함을 이번 사례는 뼈저리게 증명하고 있다.\n\n나아가 이번 사태는 공공기관의 정책 시행 과정에서 부서 간 칸막이를 허물고 종합적인 교통 대책을 사전에 수립하는 것이 얼마나 필수적인지명백히 보여주었다.",
+    "wordCount": 233,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "전격",
+        "lemma": "전격",
+        "glosses": {
+          "es": "abruptly",
+          "en": "abruptly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순",
+        "lemma": "모순",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "애물단지",
+        "lemma": "애물단지",
+        "glosses": {
+          "es": "nuisance",
+          "en": "nuisance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "쇄도",
+        "lemma": "쇄도",
+        "glosses": {
+          "es": "flood",
+          "en": "flood"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "임시방편",
+        "lemma": "임시방편",
+        "glosses": {
+          "es": "stopgap",
+          "en": "stopgap"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "선행",
+        "lemma": "선행",
+        "glosses": {
+          "es": "preceding",
+          "en": "preceding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.6,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 중심 내용은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "박물관 야간 무료 개방이 관람객 증가를 이끌었으나 대중교통 연계 부족으로 한계를 드러냈다."
+        },
+        {
+          "id": "a2",
+          "text": "문화 복지를 확대하겠다는 야심 찬 포부가 기초적인 인프라 부조화라는 장벽에 부딪혀 빛을 바랜 셈이다."
+        },
+        {
+          "id": "a3",
+          "text": "직장인과 학생들의 발길이 이어지며 관람객 수는 이전 대비 두 배 이상 급증했다."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "지역 사회의 문화 향유 기회를 넓히기 위해 한울박물관은 최근 매주 금요일 저녁 무료 개방 프로그램을 전격 도입했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "시내버스의 막차 시간은 언제였습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "밤 9시"
+        },
+        {
+          "id": "a2",
+          "text": "밤 8시 30분"
+        },
+        {
+          "id": "a3",
+          "text": "밤 9시 30분"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "박물관 측은 폐관 시간을 밤 9시로 연장했지만 인근을 경유하는 시내버스의 막차는 밤 8시 30분에 끊기도록 설정되어 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "시청과 운수업체가 소극적인 태도를 보인 까닭은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "야간 관람객의 수가 예상보다 훨씬 적었기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "박물관 측이 자체 셔틀버스를 이미 운영하고 있었기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "예산 부족과 채산성을 이유로 책임을 떠넘겼기 때문에"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "민원 부서에는 교통편 확충을 요구하는 불만 접수가 쇄도했으나, 시청과 운수업체는 예산 부족과 채산성을 이유로 서로 책임을 떠넘기며 소극적인 태도로 일관했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "글쓴이가 이 글을 쓴 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "문화 정책과 인프라 연계의 중요성을 비판하려고"
+        },
+        {
+          "id": "a2",
+          "text": "박물관 무료 개방의 성과를 홍보하려고"
+        },
+        {
+          "id": "a3",
+          "text": "시내버스 운행 시간표를 변경하도록 촉구하려고"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "문화 행사의 성공은 단순히 입장료를 면제하는 파격적 혜택에만 의존할 수 없으며, 관람객의 이동권을 보장하는 유기적인 행정 협력이 선행되어야 함을 이번 사례는 뼈저리게 증명하고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조와 필자의 태도는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "행정 기관의 무능을 감정적으로 질타하는 격분한 어조"
+        },
+        {
+          "id": "a2",
+          "text": "정책의 성과와 한계를 냉철하게 분석하는 비판적 어조"
+        },
+        {
+          "id": "a3",
+          "text": "모든 문제가 원만히 해결될 것이라고 낙관하는 어조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그러나 이러한 양적 성장 이면에 심각한 구조적 모순이 도사리고 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "텍스트에서 '임시방편'은 어떤 의미로 쓰였습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "근본적인 해결책"
+        },
+        {
+          "id": "a2",
+          "text": "계획적인 행정 협력"
+        },
+        {
+          "id": "a3",
+          "text": "임시로 겨우 면하는 방책"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "결국 박물관 측은 관람객의 편의를 보장하기 위해 셔틀버스 운행을 자체 예산으로 검토하겠다고 밝혔으나, 이는 근본적인 해결책이 아니라 임시방편에 불과하다는 지적이 지배적이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "박물관이나 미술관의 야간 개방 정책이 성공하기 위해 문화예술 기관과 지방자치단체가 협력해야 할 구체적인 방안에 대해 본인의 견해를 200자 이상으로 작성하세요.",
+      "en": "박물관이나 미술관의 야간 개방 정책이 성공하기 위해 문화예술 기관과 지방자치단체가 협력해야 할 구체적인 방안에 대해 본인의 견해를 200자 이상으로 작성하세요."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "텍스트를 읽고 정책의 실효성과 대중교통 연계성의 관계를 분석하며 독해 문제를 해결하세요.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "야간 무료 개방의 명암과 교통의 한계 | B2 Reading | WeLearn",
+      "en": "야간 무료 개방의 명암과 교통의 한계 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "박물관 야간 무료 개방 정책의 성과와 대중교통 부족 문제를 다룬 비평문을 읽고 세부 내용을 파악해 봅시다.",
+      "en": "박물관 야간 무료 개방 정책의 성과와 대중교통 부족 문제를 다룬 비평문을 읽고 세부 내용을 파악해 봅시다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

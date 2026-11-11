@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-open-schedule",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Гибкое расписание под вопросом",
+      "en": "Гибкое расписание под вопросом"
+    },
+    "intro": {
+      "es": "Прочитайте электронное письмо заместителя директора школы по учебной работе и выполните задания по проверке понимания текста на уровне B2.",
+      "en": "Прочитайте электронное письмо заместителя директора школы по учебной работе и выполните задания по проверке понимания текста на уровне B2."
+    },
+    "mission": {
+      "es": "Внимательно изучите текст официального сообщения, обратите внимание на аргументы администрации и позицию родителей, а затем ответьте на вопросы.",
+      "en": "Внимательно изучите текст официального сообщения, обратите внимание на аргументы администрации и позицию родителей, а затем ответьте на вопросы."
+    },
+    "targetText": "Уважаемые родители и коллеги! На прошлой неделе педагогический совет завершил предварительный анализ экспериментального внедрения скользящего графика утреннего прибытия учащихся. Данная инициатива изначально задумывалась как инструмент поддержки семей, проживающих в отдаленных районах области, для которых ежедневная утренняя поездка превращалась в логистический кошмар из-за перегруженности транспортных артерий. Возможность привозить детей в интервале с восьми до девяти часов утра действительно снизила уровень стресса для многих домохозяйств и позволила родителям точнее планировать свой рабочий день. Тем не менее, по истечении первого триместра мы столкнулись с системными противоречиями, которые требуют немедленного пересмотра утвержденного порядка.\n\nГлавная проблема заключается в том, что академическое расписание первых уроков трещит по швам. Единый старт занятий в девять часов утра был заменен хаотичным появлением учеников в классах, что превратило начало учебного дня в перманентный организационный хаос. Учителя предметники вынуждены либо начинать объяснение новой темы в полупустом кабинете, либо бесконечно пересказывать пройденный материал опоздавшим. В результате общая динамика урока разрушается, а темп работы падает на глазах. Дети, привыкшие приходить к самому открытию дверей в восемь часов, скучают в рекреациях или нарушают дисциплину в коридорах, ожидая официального звонка, поскольку полноценный учебный процесс до девяти часов не организован из-за нехватки дежурных педагогов.\n\nКомитет по качеству образования уже направил в наш адрес официальный запрос, указав на снижение академических показателей по ряду ключевых дисциплин в параллели средних классов. Конечно, мы понимаем всю сложность транспортной ситуации в регионе и не хотим полностью отменять льготы для тех, кто действительно зависит от дорожной обстановки. Однако школа не может функционировать как вокзал, где каждый прибывает по собственному расписанию. Мы обязаны соблюдать баланс между индивидуальным комфортом отдельной семьи и коллективной дисциплиной, необходимой для эффективного усвоения учебной программы. Ситуация осложняется тем, что попытка ввести промежуточные мини-уроки для ранних пришедших вызвала протест профсоюза из-за сверхурочной нагрузки на преподавателей.\n\nВ связи с этим администрация школы выносит на общественное обсуждение компромиссный вариант. Мы предлагаем сохранить утреннее окно прибытия, но сузить его до тридцати минут — с восьми тридцати до девяти часов. Кроме того, для всех учащихся, переступающих порог школы до девяти часов, вводится обязательное участие в утренних развивающих модулях под руководством воспитателей, что решит проблему беспризорного нахождения детей в коридорах. Те семьи, чей транспортный маршрут объективно требует более раннего прибытия, должны будут подать официальное заявление с обоснованием форс-мажорных обстоятельств для получения индивидуального разрешения.\n\nМы ждем ваши конструктивные отзывы и предложения на корпоративную почту школы до конца текущей недели. В пятницу вечером состоится внеочередное заседание управляющего совета, на котором будет принято окончательное решение о судьбе скользящего графика на следующий учебный год. Помните, что качество образования наших детей зависит от нашей способности слушать друг друга и принимать взвешенные решения в интересах всего школьного сообщества.",
+    "wordCount": 427,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "логистический кошмар",
+        "lemma": "логистический кошмар",
+        "glosses": {
+          "es": "logistical nightmare",
+          "en": "logistical nightmare"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "перманентный",
+        "lemma": "перманентный",
+        "glosses": {
+          "es": "permanent",
+          "en": "permanent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромиссный",
+        "lemma": "компромиссный",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "интервале",
+        "lemma": "интервале",
+        "glosses": {
+          "es": "interval",
+          "en": "interval"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обсуждение",
+        "lemma": "обсуждение",
+        "glosses": {
+          "es": "discussion",
+          "en": "discussion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дисциплину",
+        "lemma": "дисциплину",
+        "glosses": {
+          "es": "discipline",
+          "en": "discipline"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.4,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема данного письма?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Пересмотр гибкого графика"
+        },
+        {
+          "id": "a2",
+          "text": "Полная отмена занятий"
+        },
+        {
+          "id": "a3",
+          "text": "Строительство новой школы"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "требуют немедленного пересмотра утвержденного порядка.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Какой интервал утреннего прибытия предлагается установить в качестве компромисса?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "С восьми до девяти часов"
+        },
+        {
+          "id": "a2",
+          "text": "С восьми тридцати до девяти"
+        },
+        {
+          "id": "a3",
+          "text": "Точно к девяти часам утра"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "сузить его до тридцати минут — с восьми тридцати до девяти часов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему учителям сложно работать в условиях текущего скользящего графика?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Школа закрыта по утрам"
+        },
+        {
+          "id": "a2",
+          "text": "Не хватает учебников"
+        },
+        {
+          "id": "a3",
+          "text": "Ученики приходят хаотично"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Единый старт занятий в девять часов утра был заменен хаотичным появлением учеников в классах",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью администрация школы направила это письмо родителям?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Начать обсуждение"
+        },
+        {
+          "id": "a2",
+          "text": "Поделиться планами"
+        },
+        {
+          "id": "a3",
+          "text": "Привлечь спонсоров"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "администрация школы выносит на общественное обсуждение компромиссный вариант.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков эмоциональный тон данного официального обращения?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ироничный"
+        },
+        {
+          "id": "a2",
+          "text": "Деловой"
+        },
+        {
+          "id": "a3",
+          "text": "Радостный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Комитет по качеству образования уже направил в наш адрес официальный запрос",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что обозначает выражение «логистический кошмар» в контексте поездок в школу?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Праздничные дни"
+        },
+        {
+          "id": "a2",
+          "text": "Ремонт дорог"
+        },
+        {
+          "id": "a3",
+          "text": "Тяжелые условия"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "для которых ежедневная утренняя поездка превращалась в логистический кошмар из-за перегруженности транспортных артерий.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите ответное письмо от имени родителя на адрес администрации школы. Выскажите свое мнение о предложенном компромиссном варианте утреннего графика, опираясь на реалии вашей семейной логистики. Объем текста — 120-150 слов.",
+      "en": "Напишите ответное письмо от имени родителя на адрес администрации школы. Выскажите свое мнение о предложенном компромиссном варианте утреннего графика, опираясь на реалии вашей семейной логистики. Объем текста — 120-150 слов."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Внимательно изучите текст официального сообщения, обратите внимание на аргументы администрации и позицию родителей, а затем ответьте на вопросы.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Гибкое расписание под вопросом | B2 Reading | WeLearn",
+      "en": "Гибкое расписание под вопросом | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте электронное письмо заместителя директора школы по учебной работе и выполните задания по проверке понимания текста на уровне B2.",
+      "en": "Прочитайте электронное письмо заместителя директора школы по учебной работе и выполните задания по проверке понимания текста на уровне B2."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}

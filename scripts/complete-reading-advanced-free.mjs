@@ -51,7 +51,7 @@ for (const level of levels) {
       ])
       const after = await countGroup(language, level)
       if (/Less than 1 GB of free disk space/.test(result.tail)) throw new Error('Generation paused because the disk has less than 1 GB free.')
-      if (/\b(?:403|404)\b/.test(result.tail)) throw new Error(`Provider access failed for ${language}/${level}; ${result.tail.slice(-250)}`)
+      if (/(?:Gemini|Groq) (?:403|404):/.test(result.tail)) throw new Error(`Provider access failed for ${language}/${level}; ${result.tail.slice(-250)}`)
       if (after > before) {
         completed += after - before
         stalled = 0

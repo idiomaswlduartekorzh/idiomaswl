@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "청목리의 이름 찾기",
+      "en": "청목리의 이름 찾기"
+    },
+    "intro": {
+      "es": "지명 복원을 둘러싼 마을 주민들의 갈등과 그 결정을 다룬 중급 수준의 이야기입니다.",
+      "en": "지명 복원을 둘러싼 마을 주민들의 갈등과 그 결정을 다룬 중급 수준의 이야기입니다."
+    },
+    "mission": {
+      "es": "이야기를 읽고 지명 변경에 대한 주민들의 입장과 최종 결말을 파악하시오.",
+      "en": "이야기를 읽고 지명 변경에 대한 주민들의 입장과 최종 결말을 파악하시오."
+    },
+    "targetText": "산골마을 청목리는 최근 수십 년 동안 행정 지명인 신흥동으로 불렸다. 그러나 마을의 역사성을 되찾아야 한다는 목소리가 커지면서, 이장 민수와 청년 회장 서진은 옛 이름인 청목리로의 공식 명칭 복원을 추진하기 시작했다. 민수는 조상들이 남긴 고유의 정체성을 회복하는 것이 후세에 대한 도리라고 믿었다. 그는 마을 입구의 오래된 느티나무 아래에 주민들을 모아놓고, 이름은 단순히 길을 찾는 표지판이 아니라 우리의 뿌리를 담은 기억의 저장고라고 역설했다. 회의에 참석한 대다수의 노인들은 그의 주장에 깊이 공감하며 고개를 끄덕였다. 반면, 마을에서 작은 숙박업을 운영하는 상인들은 걱정스러운 표정을 감추지 못했다. 숙박업소 주인 영식은 내비게이션이나 지도 앱에 익숙한 여행객들이 갑자기 바뀐 이름을 혼동하여 발길을 돌릴지 모른다고 우려했다. 그는 관광객의 유입이 줄어들 경우 생계에 큰 타격을 입을 수 있다며 현실적인 불편함을 호소했다. 서진은 상인들의 경제적 불안감을 충분히 이해했기에, 단순히 옛 이름만 강요하는 대신 대안을 모색했다. 그는 표지판에 두 이름을 병기하고 디지털 지도 회사들과 미리 협력하여 혼란을 최소화하겠다고 약속했다. 오랜 토론 끝에 주민들은 찬반 투표를 진행했고, 근소한 차이로 청목리라는 이름 복원이 가결되었다. 몇 달 뒤, 마을은 새로운 안내판을 설치하고 역사 문화 축제를 열었다. 우려했던 것과 달리 여행객들은 옛 지명이 주는 독특한 정취에 매료되어 오히려 더 많이 찾아왔다. 영식 역시 늘어난 방문객들을 보며 안도의 미소를 지었고, 청목리는 과거와 현재가 조화롭게 공존하는 공간으로 거듭났다.\n\n이러한 성공적인 변화는 인근의 다른 낙후된 마을들에도 신선한 자극이 되었다. 청목리의 사례를 지켜본 주변 지자체들은 단순히 편리함만을 좇기보다 지역 고유의 역사와 문화적 가치를 발굴하여 현대적으로 재해석하는 방안을 적극적으로 모색하기 시작했다. 특히 전통 지명의 복원이 일회성 행사에 그치지 않고 주민들의 공동체 의식을 고취하며 실질적인 지역 경제 활성화까지 이끌어낼 수 있다는 점이 입증되면서, 전국 각지에서 비슷한 형태의 자발적인 주민 참여 운동이 점차 확산되는 추세를 보였다. 결국 이름을 되찾는다는 것은 단순히 과거의 흔적을 들추는 작업이 아니라 지속 가능한 미래를 향해 나아가는 가장 지혜로운 첫걸음임을 증명한 셈이었다.",
+    "wordCount": 273,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "복원",
+        "lemma": "복원",
+        "glosses": {
+          "es": "restoration",
+          "en": "restoration"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "정체성",
+        "lemma": "정체성",
+        "glosses": {
+          "es": "identity",
+          "en": "identity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역설",
+        "lemma": "역설",
+        "glosses": {
+          "es": "emphasis",
+          "en": "emphasis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "우려",
+        "lemma": "우려",
+        "glosses": {
+          "es": "concern",
+          "en": "concern"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "병기",
+        "lemma": "병기",
+        "glosses": {
+          "es": "writting together",
+          "en": "writting together"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "매료",
+        "lemma": "매료",
+        "glosses": {
+          "es": "fascination",
+          "en": "fascination"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.2,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 이야기의 전체적인 중심 내용은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지명 복원을 둘러싼 갈등과 해결"
+        },
+        {
+          "id": "a2",
+          "text": "관광객 유치 실패로 인한 폐쇄"
+        },
+        {
+          "id": "a3",
+          "text": "디지털 지도 기술의 발전 과정"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "옛 이름인 청목리로의 공식 명칭 복원을 추진하기 시작했다",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "상인들이 지명 변경에 반대했던 가장 주된 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "마을 축제 예산이 부족해서"
+        },
+        {
+          "id": "a2",
+          "text": "여행객들이 혼란을 겪을까 봐"
+        },
+        {
+          "id": "a3",
+          "text": "느티나무가 베어질 위기여서"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "여행객들이 갑자기 바뀐 이름을 혼동하여 발길을 돌릴지 모른다고 우려했다",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "서진이 주민들의 갈등을 해결하기 위해 취한 행동은 무엇이라고 유추할 수 있는가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "상인들의 경제적 피해를 무시하고 강행했다"
+        },
+        {
+          "id": "a2",
+          "text": "투표 결과 조작을 통해 반대를 무마했다"
+        },
+        {
+          "id": "a3",
+          "text": "디지털 지도 협력과 병기 대책을 마련했다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "표지판에 두 이름을 병기하고 디지털 지도 회사들과 미리 협력하여 혼란을 최소화하겠다고 약속했다",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 이 이야기를 통해 독자에게 전달하고자 하는 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "역사적 지명 복원의 가치와 상생의 가능성을 보여주기 위함"
+        },
+        {
+          "id": "a2",
+          "text": "현대 숙박업소 경영의 어려움과 대책을 고발하기 위함"
+        },
+        {
+          "id": "a3",
+          "text": "행정 구역 개편의 법적 절차를 상세히 설명하기 위함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "청목리는 과거와 현재가 조화롭게 공존하는 공간으로 거듭났다",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 이야기의 전반적인 분위기와 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "냉소적이고 비판적임"
+        },
+        {
+          "id": "a2",
+          "text": "갈등을 극복하고 조화를 찾는 희망적임"
+        },
+        {
+          "id": "a3",
+          "text": "두려움과 불안을 강조하는 공포스러움"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "영식 역시 늘어난 방문객들을 보며 안도의 미소를 지었고, 청목리는 과거와 현재가 조화롭게 공존하는 공간으로 거듭났다",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "문맥상 '마을의 역사성을 되찾아야 한다'에서 역사성의 의미와 가장 가까운 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "경제적인 이익을 창출하는 능력"
+        },
+        {
+          "id": "a2",
+          "text": "행정 구역을 새롭게 개편하는 과정"
+        },
+        {
+          "id": "a3",
+          "text": "오랜 역사와 전통을 지닌 성질"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "마을의 역사성을 되찾아야 한다는 목소리가 커지면서",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "거주하는 지역의 옛 지명을 되찾는 정책에 대해 찬성하거나 반대하는 자신의 입장을 B2 수준의 한국어로 서술하시오.",
+      "en": "거주하는 지역의 옛 지명을 되찾는 정책에 대해 찬성하거나 반대하는 자신의 입장을 B2 수준의 한국어로 서술하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "이야기를 읽고 지명 변경에 대한 주민들의 입장과 최종 결말을 파악하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "청목리의 이름 찾기 | B2 Reading | WeLearn",
+      "en": "청목리의 이름 찾기 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "지명 복원을 둘러싼 마을 주민들의 갈등과 그 결정을 다룬 중급 수준의 이야기입니다.",
+      "en": "지명 복원을 둘러싼 마을 주민들의 갈등과 그 결정을 다룬 중급 수준의 이야기입니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

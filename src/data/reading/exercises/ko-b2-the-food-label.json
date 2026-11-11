@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-food-label",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "가온마켓의 날짜 표기 변경이 던진 소비자적 질문",
+      "en": "가온마켓의 날짜 표기 변경이 던진 소비자적 질문"
+    },
+    "intro": {
+      "es": "식품 폐기물을 줄이기 위해 유통기한 대신 품질유지기한을 도입한 가온마켓의 사례를 통해 소비자의 인식 변화와 남겨진 과제를 다룬 서평을 읽고 독해력을 점검해 보세요.",
+      "en": "식품 폐기물을 줄이기 위해 유통기한 대신 품질유지기한을 도입한 가온마켓의 사례를 통해 소비자의 인식 변화와 남겨진 과제를 다룬 서평을 읽고 독해력을 점검해 보세요."
+    },
+    "mission": {
+      "es": "본문을 읽고 가온마켓의 정책 변화에 따른 소비자의 반응과 안전 판단 기준에 대한 논리적 전개를 파악한 뒤 관련 문제에 답하십시오.",
+      "en": "본문을 읽고 가온마켓의 정책 변화에 따른 소비자의 반응과 안전 판단 기준에 대한 논리적 전개를 파악한 뒤 관련 문제에 답하십시오."
+    },
+    "targetText": "지역 주민들에게 신선한 식재료를 공급해 온 가온마켓은 최근 매장 내 모든 진열 상품의 날짜 표기 방식을 대대적으로 개편하였다. 기존에 일괄적으로 적용되던 유통기한 중심의 표기를 상당수 품목에서 품질유지기한 중심으로 전환한 것이다. 이번 조치는 매년 반복되는 막대한 양의 식품 폐기물을 줄이고 자원 순환을 실천하려는 친환경 경영의 일환으로 단행되었다. 마켓 측은 소비자들이 날짜가 지난 상품을 무조건 폐기하는 관행을 바로잡고 합리적인 소비를 할 수 있도록 돕겠다는 취지를 밝혔다. 이러한 파격적인 변화는 환경 보호라는 대의에 공감하는 많은 이들의 지지를 받으며 초기에는 긍정적인 반응을 이끌어냈다. 그러나 주말 장을 보러 나온 소비자들 사이에서는 환영의 목소리와 함께 현실적인 혼란을 호소하는 의견이 교차하기 시작했다. 환경적 가치에 대한 공감대는 충분히 형성되었으나 상품의 안전성을 판가름할 구체적인 기준이 모호하다는 지적이 제기된 것이다. 주부 김민정 씨는 마켓의 취지에는 전적으로 동감하지만 라벨에 적힌 날짜가 지난 식품을 가정에서 어떻게 안전하게 검증해야 할지 난감하다고 토로했다. 단순히 냄새나 색깔에만 의존하는 기존의 방식은 자칫 식중독 사고로 이어질 수 있다는 불안감이 여전하다는 것이다. 이에 대해 가온마켓은 매장 곳곳에 식품 보관법과 변질 여부를 판별하는 간단한 요령을 안내하는 리플릿을 비치하며 진화에 나섰다. 그렇지만 매장 안내서만으로는 각 가정의 다양한 보관 환경에서 발생하는 변수를 모두 통제하기 어렵다는 근본적인 한계가 존재한다. 결국 이번 가온마켓의 시도는 기업의 선의와 제도적 개선만으로는 소비자가 체감하는 불안감을 온전히 해소하기에 역부족임을 보여준다. 환경을 지키자는 거대한 담론 속에서 개별 소비자가 짊어져야 할 안전에 대한 책임이 오히려 무거워진 셈이다. 진정한 의미의 지속 가능한 소비가 정착되려면 직관적인 날짜 표기를 넘어선 사회적 신뢰와 실효성 있는 검증 체계가 병행되어야 할 것이다.",
+    "wordCount": 226,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "개편하였다",
+        "lemma": "개편하였다",
+        "glosses": {
+          "es": "reorganized",
+          "en": "reorganized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "일환으로",
+        "lemma": "일환으로",
+        "glosses": {
+          "es": "as part of",
+          "en": "as part of"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "교차하기",
+        "lemma": "교차하기",
+        "glosses": {
+          "es": "intersecting",
+          "en": "intersecting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모호하다는",
+        "lemma": "모호하다는",
+        "glosses": {
+          "es": "being vague",
+          "en": "being vague"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "토로했다",
+        "lemma": "토로했다",
+        "glosses": {
+          "es": "expressed",
+          "en": "expressed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역부족임을",
+        "lemma": "역부족임을",
+        "glosses": {
+          "es": "being insufficient",
+          "en": "being insufficient"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "가온마켓의 날짜 표기 변경에 대한 본문의 전체적인 논지로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제도 개선과 환경 보호의 취지에도 불구하고 소비자의 안전 검증에 대한 불안과 책임이 커졌다"
+        },
+        {
+          "id": "a2",
+          "text": "유통기한 폐지로 인해 식품 폐기물이 완전히 사라지고 모든 소비자가 환영하고 있다"
+        },
+        {
+          "id": "a3",
+          "text": "기업의 일방적인 정책 변경이 소비자들에게 아무런 혼란을 주지 않았다"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "결국 이번 가온마켓의 시도는 기업의 선의와 제도적 개선만으로는 소비자가 체감하는 불안감을 온전히 해소하기에 역부족임을 보여준다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "가온마켓이 소비자의 불안을 해소하기 위해 매장에 비치한 것은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "무료 시식권과 할인 쿠폰"
+        },
+        {
+          "id": "a2",
+          "text": "식품 보관법과 변질 여부 판별 요령 안내 리플릿"
+        },
+        {
+          "id": "a3",
+          "text": "전문 영양사와 상담할 수 있는 직통 전화번호"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "이에 대해 가온마켓은 매장 곳곳에 식품 보관법과 변질 여부를 판별하는 간단한 요령을 안내하는 리플릿을 비치하며 진화에 나섰다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "주부 김민정 씨가 날짜가 지난 식품에 대해 불안감을 느끼는 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "마켓에서 판매하는 모든 식재료의 가격이 갑자기 올랐기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "정부에서 날짜 표기법을 다시 옛날 방식으로 강제 변경했기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "냄새나 색깔에만 의존하는 기존 판별 방식이 식중독으로 이어질까 봐"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "단순히 냄새나 색깔에만 의존하는 기존의 방식은 자칫 식중독 사고로 이어질 수 있다는 불안감이 여전하다는 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 이 글을 쓴 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "식품 날짜 표기 변경에 따른 긍정적 측면과 함께 남아 있는 현실적 과제를 비판적으로 고찰하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "가온마켓의 새로운 친환경 상품을 홍보하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "소비자들이 가정에서 식품을 오래 보관하는 비법을 전수하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "환경을 지키자는 거대한 담론 속에서 개별 소비자가 짊어져야 할 안전에 대한 책임이 오히려 무거워진 셈이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조와 필자의 태도로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기업의 변화를 무조건 찬양하며 비판을 배제하는 긍정적 태도"
+        },
+        {
+          "id": "a2",
+          "text": "친환경 정책의 의의를 인정하면서도 실효성 한계를 냉철하게 짚어보는 신중한 태도"
+        },
+        {
+          "id": "a3",
+          "text": "모든 유통업체의 폐쇄를 주장하는 과격한 태도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "환경적 가치에 대한 공감대는 충분히 형성되었으나 상품의 안전성을 판가름할 구체적인 기준이 모호하다는 지적이 제기된 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 기업의 선의와 제도적 개선만으로는 소비자의 불안을 해소하기에 부족하다는 의미로 사용된 어휘는?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공감대는"
+        },
+        {
+          "id": "a2",
+          "text": "개편하였다"
+        },
+        {
+          "id": "a3",
+          "text": "역부족임을"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "결국 이번 가온마켓의 시도는 기업의 선의와 제도적 개선만으로는 소비자가 체감하는 불안감을 온전히 해소하기에 역부족임을 보여준다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "가온마켓의 날짜 표기 변경 사례처럼 환경 보호를 위한 기업의 정책이 소비자에게 새로운 책임을 전가할 때, 기업과 소비자가 각각 어떤 노력을 기울여야 진정한 지속 가능성을 달성할 수 있을지 본인의 견해를 150자 이상으로 서술하시오.",
+      "en": "가온마켓의 날짜 표기 변경 사례처럼 환경 보호를 위한 기업의 정책이 소비자에게 새로운 책임을 전가할 때, 기업과 소비자가 각각 어떤 노력을 기울여야 진정한 지속 가능성을 달성할 수 있을지 본인의 견해를 150자 이상으로 서술하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "본문을 읽고 가온마켓의 정책 변화에 따른 소비자의 반응과 안전 판단 기준에 대한 논리적 전개를 파악한 뒤 관련 문제에 답하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "가온마켓의 날짜 표기 변경이 던진 소비자적 질문 | B2 Reading | WeLearn",
+      "en": "가온마켓의 날짜 표기 변경이 던진 소비자적 질문 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "식품 폐기물을 줄이기 위해 유통기한 대신 품질유지기한을 도입한 가온마켓의 사례를 통해 소비자의 인식 변화와 남겨진 과제를 다룬 서평을 읽고 독해력을 점검해 보세요.",
+      "en": "식품 폐기물을 줄이기 위해 유통기한 대신 품질유지기한을 도입한 가온마켓의 사례를 통해 소비자의 인식 변화와 남겨진 과제를 다룬 서평을 읽고 독해력을 점검해 보세요."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

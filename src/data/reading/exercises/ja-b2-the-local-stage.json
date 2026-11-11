@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-local-stage",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "緑陰劇場の試行錯誤",
+      "en": "緑陰劇場の試行錯誤"
+    },
+    "intro": {
+      "es": "市民参加型の小さな劇場が直面した財政的ジレンマと、若い表現者たちによる妥協案の模索について読みます。",
+      "en": "市民参加型の小さな劇場が直面した財政的ジレンマと、若い表現者たちによる妥協案の模索について読みます。"
+    },
+    "mission": {
+      "es": "文章の展開を正確に追いつつ、登場人物たちの意図や対立の構造を読み解いてください。",
+      "en": "文章の展開を正確に追いつつ、登場人物たちの意図や対立の構造を読み解いてください。"
+    },
+    "targetText": "緑陰小劇場は、地域の文化拠点として長年親しまれてきた小さな舞台である。運営基盤を強化するため、昨シーズンから学生や二十代の若者を対象とした大幅な割引チケットを導入したところ、客席の若返りには成功したものの、肝心の興行収入は伸び悩むという皮肉な結果に直面していた。特に、本番前の数週間に行われる追加の稽古にかかる会場費や冷暖房費が経営を圧迫しており、劇団側は十分なリハーサル時間を確保できないまま舞台に立つプレッシャーにさらされていた。若い観客を呼び込む目的と、表現の質を保つための資金調達という二つの課題が正面から衝突していたのである。\n\nこの状況を重く見た演出家の佐藤は、若手俳優たちを集めて緊急のミーティングを開いた。佐藤は劇場の台所事情を包み隠さず説明した上で、これ以上の稽古時間の削減は作品の完成度を著しく損なうと懸念を示した。しかし、チケット代を一律で値上げすることは、せっかく定着し始めた若い観客を再び遠ざけてしまうため、絶対に避けなければならない選択肢だった。予算不足と表現の妥協という二者択一の板挟みになり、会議室には重苦しい沈黙が漂った。誰もが有効な打開策を見出せず、議論はしばらく平行線をたどるかに思えた。\n\nその膠着状態を打破したのは、主演を務める若手俳優の鈴木の提案だった。鈴木は、自分たちが中心となって平日の昼間や休日の早朝を利用した「公開リハーサル」を有料のイベントとして開催することを申し出た。通常の稽古の裏側を観客に覗いてもらうことで新鮮なエンターテインメントとして成立させ、その入場料を全額劇場の稽古場維持費に充てようというのである。さらに、SNSを活用した広報活動も若手メンバーが自主的に引き受けることで、劇場の宣伝スタッフにかかる負担を軽減するという具体的な補足説明も添えられた。\n\nベテランの舞台監督である田中は、この奇抜なアイデアに最初こそ難色を示した。未完成の演技を外部の一般客に見せることは、劇団全体のブランド価値を低下させるリスクがあるのではないかと危惧したからだ。しかし、佐藤や鈴木らが「完璧な舞台だけを見せるのではなく、作品が創り上げられる過程そのものを共有することで、観客とより深い信頼関係を築けるはずだ」と熱心に説得を重ねた結果、田中も徐々にその意義を理解し、試験的な導入を認めるに至った。関係者間の利害調整は難航したが、表現への情熱が形式的な懸念を上回った瞬間であった。\n\n迎えた最初の公開リハーサル日、関係者の不安をよそに、劇場には多くの若者たちが詰めかけた。普段の静まり返った稽古場とは異なり、俳優たちの息づかいや演出家の厳しい指示が生々しく伝わる空間は、観客にとって新鮮な驚きと感動をもたらした。見学を終えた観客からは、本番の舞台とは一味違う臨場感を絶賛する声が相次ぎ、関連グッズの売上も含めて当初の予想を大きく上回る資金が集まった。若者たちの柔軟な発想が生んだこの妥協案は、財政難を乗り越えるための一時しのぎにとどまらず、劇場と地域社会の新しい結びつきを証明する試みとなったのである。",
+    "wordCount": 1204,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "皮肉な結果",
+        "lemma": "皮肉な結果",
+        "glosses": {
+          "es": "ironic result",
+          "en": "ironic result"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "板挟み",
+        "lemma": "板挟み",
+        "glosses": {
+          "es": "caught between two difficult choices",
+          "en": "caught between two difficult choices"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "膠着状態",
+        "lemma": "膠着状態",
+        "glosses": {
+          "es": "deadlock / stalemate",
+          "en": "deadlock / stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "難色を示した",
+        "lemma": "難色を示した",
+        "glosses": {
+          "es": "showed reluctance / expressed disapproval",
+          "en": "showed reluctance / expressed disapproval"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "臨場感",
+        "lemma": "臨場感",
+        "glosses": {
+          "es": "sense of realism / presence",
+          "en": "sense of realism / presence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "一時しのぎ",
+        "lemma": "一時しのぎ",
+        "glosses": {
+          "es": "stopgap measure / temporary expedient",
+          "en": "stopgap measure / temporary expedient"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 57.3,
+      "maxSentenceWords": 108,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "緑陰小劇場が直面していた主な問題は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "若い観客が増えた一方で、稽古のための資金や時間が不足していた点"
+        },
+        {
+          "id": "a2",
+          "text": "チケット代を値上げしたせいで、若者の観客層が完全に離れてしまった点"
+        },
+        {
+          "id": "a3",
+          "text": "舞台監督の反対によって、すべてのリハーサルが中止に追い込まれた点"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "客席の若返りには成功したものの、肝心の興行収入は伸び悩むという皮肉な結果に直面していた。特に、本番前の数週間に行われる追加の稽古にかかる会場費や冷暖房費が経営を圧迫しており、劇団側は十分なリハーサル時間を確保できないまま舞台に立つプレッシャーにさらされていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "鈴木が提案した公開リハーサルの主な目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "劇場の宣伝スタッフの負担を減らすため"
+        },
+        {
+          "id": "a2",
+          "text": "劇場の稽古場維持費を調達するため"
+        },
+        {
+          "id": "a3",
+          "text": "若い観客にチケットを安く売るため"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "通常の稽古の裏側を観客に覗いてもらうことで新鮮なエンターテインメントとして成立させ、その入場料を全額劇場の稽古場維持費に充てようというのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "田中が当初、公開リハーサルに反対した理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "若い俳優たちが自主的にSNSで広報を行うことに強い不信感を抱いていたから"
+        },
+        {
+          "id": "a2",
+          "text": "佐藤が提案した劇場の台所事情の透明化という方針に納得していなかったから"
+        },
+        {
+          "id": "a3",
+          "text": "一般客に未完成の演技を見せることが劇団の価値を下げるのではないかと恐れたから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "未完成の演技を外部の一般客に見せることは、劇団全体のブランド価値を低下させるリスクがあるのではないかと危惧したからだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "劇団員たちが公開リハーサルという形を選んだのはなぜですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "観客との信頼関係を深めつつ資金を確保するため"
+        },
+        {
+          "id": "a2",
+          "text": "完全な舞台芸術のみを観客に提供するため"
+        },
+        {
+          "id": "a3",
+          "text": "平日の昼間や休日の早朝を有効活用するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "「完璧な舞台だけを見せるのではなく、作品が創り上げられる過程そのものを共有することで、観客とより深い信頼関係を築けるはずだ」と熱心に説得を重ねた結果、田中も徐々にその意義を理解し、試験的な導入を認めるに至った。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体における筆者の立場や語り口について最も適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "予算不足に陥った劇団の無計画な運営体制を厳しく批判している"
+        },
+        {
+          "id": "a2",
+          "text": "劇場を救った若者たちの柔軟な発想と、その試みがもたらした前向きな成果を評価している"
+        },
+        {
+          "id": "a3",
+          "text": "公開リハーサルという手法の商業的な成功だけに焦点を当てている"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "若者たちの柔軟な発想が生んだこの妥協案は、財政難を乗り越えるための一時しのぎにとどまらず、劇場と地域社会の新しい結びつきを証明する試みとなったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "文章中で「話し合いなどが進まずに行き詰まった状態」を表している語句はどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "板挟み"
+        },
+        {
+          "id": "a2",
+          "text": "一時しのぎ"
+        },
+        {
+          "id": "a3",
+          "text": "膠着状態"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "その膠着状態を打破したのは、主演を務める若手俳優の鈴木の提案だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたがもし緑陰小劇場の運営スタッフの一員であったなら、若者向けの割引チケット制度を維持しながら財政難を解決するために、どのような新しいイベントや施策を提案しますか。本文の内容を踏まえつつ、具体的なアイデアを200文字程度で記述してください。",
+      "en": "あなたがもし緑陰小劇場の運営スタッフの一員であったなら、若者向けの割引チケット制度を維持しながら財政難を解決するために、どのような新しいイベントや施策を提案しますか。本文の内容を踏まえつつ、具体的なアイデアを200文字程度で記述してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "文章の展開を正確に追いつつ、登場人物たちの意図や対立の構造を読み解いてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "緑陰劇場の試行錯誤 | B2 Reading | WeLearn",
+      "en": "緑陰劇場の試行錯誤 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "市民参加型の小さな劇場が直面した財政的ジレンマと、若い表現者たちによる妥協案の模索について読みます。",
+      "en": "市民参加型の小さな劇場が直面した財政的ジレンマと、若い表現者たちによる妥協案の模索について読みます。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

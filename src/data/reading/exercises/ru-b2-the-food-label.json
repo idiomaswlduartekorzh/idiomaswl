@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-food-label",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Новая маркировка свежести в магазине «Утро»",
+      "en": "Новая маркировка свежести в магазине «Утро»"
+    },
+    "intro": {
+      "es": "Прочитайте текст о переменах в местном супермаркете и выполните задания по проверке понимания.",
+      "en": "Прочитайте текст о переменах в местном супермаркете и выполните задания по проверке понимания."
+    },
+    "mission": {
+      "es": "Изучите рецензию покупательницы на нововведение магазина, проанализируйте аргументы сторон и ответьте на вопросы.",
+      "en": "Изучите рецензию покупательницы на нововведение магазина, проанализируйте аргументы сторон и ответьте на вопросы."
+    },
+    "targetText": "Когда владелица гастронома «Утро» Анна Смирнова объявила о замене стандартных сроков годности на новую систему ориентировочных меток, постоянные клиенты испытали смешанные чувства. Вместо привычной формулировки «годен до» на упаковках молочных продуктов и сыров появились лаконичные значки с изображением солнца и луны, сопровождаемые короткой фразой: «Проверьте органолептически после указанного дня». Анна утверждала, что этот шаг поможет радикально сократить объемы выброшенной съедобной еды, которая отправляется на свалку лишь из-за формального прохождения календарной границы. Первые дни нововведение вызывало оживленные дискуссии у прилавков. Покупательница Ирина Петрова, пенсионерка с многолетним стажем экономии, сразу поддержала инициативу, отметив, что раньше бездумно отправляла в мусорное ведро совершенно нормальный творог только потому, что наступило завтрашнее число. Она с энтузиазмом принялась изучать новые подсказки, доверяя собственному обонянию. С другой стороны, инженер Алексей Морозов выступил с резкой критикой, заявив на местном форуме, что ответственность за безопасность продуктов теперь несправедливо перекладывается с торговой точки на потребителя. Он утверждал, что визуальная оценка цвета и запаха субъективна и не спасает от скрытых патогенных бактерий, способных испортить вечер целой семье. Конфликт достиг пика, когда Алексей вернул купленный йогурт, потребовав вернуть деньги и вывесить четкие таблицы допустимых отклонений. Анна не стала спорить с разгневанным покупателем и оперативно разместила у входа информационные стенды с подробными инструкциями по оценке консистенции и вкуса. Несмотря на компромисс, в обществе остался неразрешенный вопрос: где та тонкая грань между разумной бережливостью и риском для здоровья, которую каждый покупатель теперь вынужден определять самостоятельно?\n\nЭту же дилемму вскоре подхватили и местные СМИ, превратив скромный районный гастроном в эпицентр широкой общественной дискуссии о культуре потребления в современном мегаполисе. Экологические активисты встали на защиту Анны, утверждая, что человечество слишком долго жило в эпоху бездумного изобилия, где цифры на упаковке имели большую ценность, чем реальное качество содержимого. По их мнению, возвращение к доверию собственным органам чувств — это не опасный пережиток прошлого, а осознанный шаг к преодолению глобального кризиса перепроизводства. В то же время врачи-эпидемиологи предостерегали от излишнего оптимизма, напоминая о коварстве микроорганизмов, чье присутствие невозможно определить по аромату или внешнему виду. Подобный раскол мнений заставил задуматься даже самых нейтральных покупателей, превратив обычный поход за молоком в своеобразный экзамен на зрелость и самостоятельность. Внутри самого магазина атмосфера тоже изменилась: у полок с сыром люди стали чаще общаться друг с другом, делиться опытом и спорить о нюансах свежести, создавая удивительное подобие старинного рынка. Анна наблюдала за этими переменами сдержанно, понимая, что ее смелый эксперимент уже перерос рамки коммерческого хода, став важным социальным проектом, исход которого пока не мог предсказать никто.",
+    "wordCount": 402,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "гастронома",
+        "lemma": "гастронома",
+        "glosses": {
+          "es": "grocery store",
+          "en": "grocery store"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ориентировочных",
+        "lemma": "ориентировочных",
+        "glosses": {
+          "es": "approximate",
+          "en": "approximate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "органолептически",
+        "lemma": "органолептически",
+        "glosses": {
+          "es": "organoleptically",
+          "en": "organoleptically"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "патогенных",
+        "lemma": "патогенных",
+        "glosses": {
+          "es": "pathogenic",
+          "en": "pathogenic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "консистенции",
+        "lemma": "консистенции",
+        "glosses": {
+          "es": "consistency",
+          "en": "consistency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бережливостью",
+        "lemma": "бережливостью",
+        "glosses": {
+          "es": "frugality",
+          "en": "frugality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.3,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема прочитанного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Реакция покупателей на смену системы маркировки свежести ради сокращения отходов."
+        },
+        {
+          "id": "a2",
+          "text": "Полный отказ супермаркета от продажи скоропортящихся товаров."
+        },
+        {
+          "id": "a3",
+          "text": "Судебное разбирательство между владельцем магазина и недовольным инженером."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Когда владелица гастронома «Утро» Анна Смирнова объявила о замене стандартных сроков годности на новую систему ориентировочных меток, постоянные клиенты испытали смешанные чувства.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Какой конкретный шаг предприняла Анна Смирнова после претензии Алексея Морозова?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она полностью отменила новые метки и вернула старые даты."
+        },
+        {
+          "id": "a2",
+          "text": "Она разместила информационные стенды с инструкциями у входа."
+        },
+        {
+          "id": "a3",
+          "text": "Она закрыла магазин на санитарную проверку."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Анна не стала спорить с разгневанным покупателем и оперативно разместила у входа информационные стенды с подробными инструкциями по оценке консистенции и вкуса.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как можно охарактеризовать первоначальную реакцию Ирины Петровой на нововведение?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она потребовала материальную компенсацию за испорченный товар."
+        },
+        {
+          "id": "a2",
+          "text": "Она осталась абсолютно равнодушной к изменениям."
+        },
+        {
+          "id": "a3",
+          "text": "Она выразила одобрение и решила полагаться на свои чувства."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Она с энтузиазмом принялась изучать новые подсказки, доверяя собственному обонянию.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор описывает конфликт с участием инженера Алексея Морозова?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы проиллюстрировать проблему перекладывания ответственности на потребителя."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы показать неизбежность закрытия магазина из-за жалоб."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы доказать превосходство старых сроков годности над новыми."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "С другой стороны, инженер Алексей Морозов выступил с резкой критикой, заявив на местном форуме, что ответственность за безопасность продуктов теперь несправедливо перекладывается с торговой точки на потребителя.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков общий тон автора по отношению к описываемой ситуации?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ирония и насмешка над наивными покупателями."
+        },
+        {
+          "id": "a2",
+          "text": "Сбалансированный анализ разных точек зрения без готовых рецептов."
+        },
+        {
+          "id": "a3",
+          "text": "Восторженная пропаганда экологических инноваций."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Несмотря на компромисс, в обществе остался неразрешенный вопрос: где та тонкая грань между разумной бережливостью и риском для здоровья, которую каждый покупатель теперь вынужден определять самостоятельно?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «органолептически» в данном контексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Путем лабораторного химического анализа состава продукта в лаборатории."
+        },
+        {
+          "id": "a2",
+          "text": "Посредством сверки даты изготовления с текущим календарным днем."
+        },
+        {
+          "id": "a3",
+          "text": "Посредством оценки внешнего вида, запаха и вкуса с помощью органов чувств."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Вместо привычной формулировки «годен до» на упаковках молочных продуктов и сыров появились лаконичные значки с изображением солнца и луны, сопровождаемые короткой фразой: «Проверьте органолептически после указанного дня».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткий отзыв (100–150 слов) от лица покупателя, который поддерживает инициативу магазина, но предлагает свой способ контроля безопасности.",
+      "en": "Напишите короткий отзыв (100–150 слов) от лица покупателя, который поддерживает инициативу магазина, но предлагает свой способ контроля безопасности."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Изучите рецензию покупательницы на нововведение магазина, проанализируйте аргументы сторон и ответьте на вопросы.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Новая маркировка свежести в магазине «Утро» | B2 Reading | WeLearn",
+      "en": "Новая маркировка свежести в магазине «Утро» | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте текст о переменах в местном супермаркете и выполните задания по проверке понимания.",
+      "en": "Прочитайте текст о переменах в местном супермаркете и выполните задания по проверке понимания."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}

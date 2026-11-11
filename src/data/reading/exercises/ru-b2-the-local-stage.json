@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-local-stage",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Компромисс на сцене: как спасти экспериментальный театр",
+      "en": "Компромисс на сцене: как спасти экспериментальный театр"
+    },
+    "intro": {
+      "es": "Прочитайте новостную статью о финансовом кризисе в общественном театре и найдите ответ на вопрос, как артисты смогли разрешить конфликт с администрацией.",
+      "en": "Прочитайте новостную статью о финансовом кризисе в общественном театре и найдите ответ на вопрос, как артисты смогли разрешить конфликт с администрацией."
+    },
+    "mission": {
+      "es": "Прочитайте текст уровня B2, изучите лексику, ответьте на шесть вопросов на понимание и выполните письменное задание на русском языке.",
+      "en": "Прочитайте текст уровня B2, изучите лексику, ответьте на шесть вопросов на понимание и выполните письменное задание на русском языке."
+    },
+    "targetText": "Городской драматический театр «Современник» под руководством режиссёра Ильи Морозова оказался в сложной финансовой ситуации из-за роста цен на аренду помещений и сокращения муниципальных дотаций. Чтобы сохранить доступность искусства для молодёжи, театр традиционно выделял льготные билеты для студентов по символической цене. Однако дефицит бюджета достиг критической отметки, когда средств стало не хватать даже на базовую организацию репетиционного процесса и закупку необходимых декораций для новой премьеры. Администрация во главе с финансовым директором Анной Смирновой предложила временное решение: полностью отменить молодёжные скидки на ближайший месяц, чтобы покрыть кассовый разрыв и завершить подготовку спектакля. Илья Морозов и ведущая актриса Елена Васнецова категорически отвергли этот план, заявив, что потеря молодой аудитории подорвёт саму миссию театра как открытого культурного пространства для горожан. По их мнению, лишение студентов доступа к премьерам превратит театр в элитарный клуб, что противоречит изначальной концепции труппы. В ответ на ультиматум администрации артисты предложили смелый компромисс. Труппа выразила готовность отказаться от части собственных гонораров за премьерные показы и одновременно взяла на себя обязательство самостоятельно изготавливать реквизит из недорогих материалов во внерепетиционное время. Кроме того, актёры предложили провести серию уличных перформансов для привлечения спонсорских средств напрямую от местных предпринимателей, минуя бюрократические задержки. Анна Смирнова отнеслась к инициативе скептически, указав на риск снижения качества постановок из-за усталости актёров, совмещающих творческую работу с физическим трудом. Тем не менее, после бурных споров совет директоров принял этот план как временную меру. Премьера спектакля состоялась вовремя, билеты для молодёжи остались доступными, а театр смог избежать долгов. Этот прецедент показал, что искреннее стремление сохранить аудиторию способно объединить разные поколения театральных работников перед лицом суровых экономических трудностей, хотя напряжение в отношениях между администрацией и труппой полностью не исчезло.\n\nТем не менее, успешный выход из кризиса породил неожиданное структурное противоречие, которое руководство театра осознало лишь спустя несколько месяцев. Доказав свою жизнеспособность в экстремальных условиях, модель ручного спасения силами самих артистов незаметно закрепилась как постоянная норма. Финансовый отдел, столкнувшись с хрупким балансом бюджета, стал регулярно закладывать энтузиазм труппы в основу будущих финансовых расчетов, подсознательно перекладывая экономические риски с профессиональных менеджеров на творческий коллектив. Это привело к тому, что актеры начали хронически перерабатывать, совмещая сложные репетиции с ночным изготовлением реквизита и организацией уличных акций. Подобная нагрузка неизбежно отразилась на творческом тонусе: качество новых постановок стало вызывать тревогу у критиков, а в кулуарах театра вновь зазвучали разговоры о профессиональном выгорании. Парадоксальным образом стремление защитить демократичность искусства обернулось скрытой эксплуатацией внутреннего ресурса театра, поставив под угрозу саму художественную ценность спектаклей, ради спасения которых труппа когда-то пожертвовала своими гонорарами и силами.",
+    "wordCount": 404,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "дотаций",
+        "lemma": "дотаций",
+        "glosses": {
+          "es": "subsidies",
+          "en": "subsidies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дефицит",
+        "lemma": "дефицит",
+        "glosses": {
+          "es": "deficit",
+          "en": "deficit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ультиматум",
+        "lemma": "ультиматум",
+        "glosses": {
+          "es": "ultimatum",
+          "en": "ultimatum"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "гонораров",
+        "lemma": "гонораров",
+        "glosses": {
+          "es": "fees",
+          "en": "fees"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "реквизит",
+        "lemma": "реквизит",
+        "glosses": {
+          "es": "props",
+          "en": "props"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "прецедент",
+        "lemma": "прецедент",
+        "glosses": {
+          "es": "precedent",
+          "en": "precedent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.3,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема этой статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Труппа нашла выход"
+        },
+        {
+          "id": "a2",
+          "text": "Театр повысил цены"
+        },
+        {
+          "id": "a3",
+          "text": "Актёры ушли из труппы"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "В ответ на ультиматум администрации артисты предложили смелый компромисс.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Кто предложил временно отменить молодёжные скидки?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Илья Морозов"
+        },
+        {
+          "id": "a2",
+          "text": "Анна Смирнова"
+        },
+        {
+          "id": "a3",
+          "text": "Елена Васнецова"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Администрация во главе с финансовым директором Анной Смирновой предложила временное решение: полностью отменить молодёжные скидки на ближайший месяц, чтобы покрыть кассовый разрыв и завершить подготовку спектакля.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как отреагировала финансовый директор на предложение артистов?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "С восторгом"
+        },
+        {
+          "id": "a2",
+          "text": "Нейтрально"
+        },
+        {
+          "id": "a3",
+          "text": "Скептически"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Анна Смирнова отнеслась к инициативе скептически, указав на риск снижения качества постановок из-за усталости актёров, совмещающих творческую работу с физическим трудом.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем актёры решили проводить уличные перформансы?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы привлечь спонсоров"
+        },
+        {
+          "id": "a2",
+          "text": "Для рекламы новой пьесы"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы продавать билеты"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Кроме того, актёры предложили провести серию уличных перформансов для привлечения спонсорских средств напрямую от местных предпринимателей, минуя бюрократические задержки.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какова тональность финала статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Торжественная"
+        },
+        {
+          "id": "a2",
+          "text": "Сбалансированная"
+        },
+        {
+          "id": "a3",
+          "text": "Пессимистичная"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Этот прецедент показал, что искреннее стремление сохранить аудиторию способно объединить разные поколения театральных работников перед лицом суровых экономических трудностей, хотя напряжение в отношениях между администрацией и труппой полностью не исчезло.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Какое слово в тексте обозначает денежные выплаты за творческий труд?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "дотаций"
+        },
+        {
+          "id": "a2",
+          "text": "ренты"
+        },
+        {
+          "id": "a3",
+          "text": "гонораров"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Труппа выразила готовность отказаться от части собственных гонораров за премьерные показы и одновременно взяла на себя обязательство самостоятельно изготавливать реквизит из недорогих материалов во внерепетиционное время.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткий комментарий (100–120 слов) на русском языке: как вы считаете, оправдан ли риск актёров совмещать творческую работу с физическим трудом ради сохранения льготных билетов?",
+      "en": "Напишите короткий комментарий (100–120 слов) на русском языке: как вы считаете, оправдан ли риск актёров совмещать творческую работу с физическим трудом ради сохранения льготных билетов?"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Прочитайте текст уровня B2, изучите лексику, ответьте на шесть вопросов на понимание и выполните письменное задание на русском языке.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Компромисс на сцене: как спасти экспериментальный театр | B2 Reading | WeLearn",
+      "en": "Компромисс на сцене: как спасти экспериментальный театр | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте новостную статью о финансовом кризисе в общественном театре и найдите ответ на вопрос, как артисты смогли разрешить конфликт с администрацией.",
+      "en": "Прочитайте новостную статью о финансовом кризисе в общественном театре и найдите ответ на вопрос, как артисты смогли разрешить конфликт с администрацией."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}

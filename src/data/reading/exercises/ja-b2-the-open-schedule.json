@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-open-schedule",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "始業時間の柔軟化に関する保護者への連絡",
+      "en": "始業時間の柔軟化に関する保護者への連絡"
+    },
+    "intro": {
+      "es": "フレックス制の導入により生じた学校の課題と、それに対する保護者からの意見についてのメールを読み、その内容を理解する。",
+      "en": "フレックス制の導入により生じた学校の課題と、それに対する保護者からの意見についてのメールを読み、その内容を理解する。"
+    },
+    "mission": {
+      "es": "メールの文章を読み、柔軟な時間割制度が抱える運営上の矛盾と、それに対する学校側の対応について把握し、質問に答えよ。",
+      "en": "メールの文章を読み、柔軟な時間割制度が抱える運営上の矛盾と、それに対する学校側の対応について把握し、質問に答えよ。"
+    },
+    "targetText": "保護者の皆様へ\n\n日頃より本校の教育活動にご理解とご協力をいただき、誠にありがとうございます。\n\n本年度より導入いたしました「選択制登校時間」について、多くのご家庭からご好評の声をいただいております。特に、遠方からの通学において電車の混雑を避けられる点や、家庭の事情に合わせた柔軟なスケジュール調整が可能になった点は、共働き世帯を中心に大きなメリットとして受け入れられています。\n\n一方で、この制度運用における深刻な矛盾が現場で表面化していることも事実です。全校生徒が一斉に参加する「朝のホームルーム」を廃止し、各自が選択した時間帯に合わせて最初の授業に出席する仕組みを採用した結果、教科担当の教師が同じ内容を異なる時間帯のグループに対して何度も繰り返して教えなければならない事態が発生しております。\n\n先週の水曜日には、あるクラスで時間割の錯覚が生じ、主要科目の導入部分を欠席する生徒が続出しました。これは単なる個人の確認不足ではなく、共通の始業という基盤を失ったことで、集団としての学習のリズムそのものが崩れ始めている証拠と言えます。制度の利便性ばかりが強調されるあまり、学校という共同体が本来持っている一体感や、同時性を伴う体験の価値が軽視されているのではないかという懸念の声が、一部の教職員や保護者からも上がっております。\n\n学校経営委員会といたしましては、この状況を重く受け止め、来月より一部の基本授業について再び一定の共通集合時間を設ける方向で調整を進めております。完全な自由度を維持することは生徒の負担軽減につながる一方で、学びの質や公平性を担保する上では大きな障害になり得るという結論に至りました。個別の事情に配慮しつつも、組織としての規律と共同の学びを守るための苦渋の決断となりますことを、何卒ご理解賜りますようお願い申し上げます。\n\n青葉学園中等部 校長 佐藤 健司\n\nこのような過渡期の迷走は、効率性と教育の質が常に背中合わせであることを私たちに教えてくれます。利便性の追求が思わぬ綻びを生む一方で、この議論の過程自体が、生徒たちが自らの時間管理や責任について深く考える貴重な契機ともなっています。完全に画一的な統制に戻すのではなく、柔軟性と連帯感のバランスをいかに再構築するかという問いは、これからの時代における学校のあり方を問う本質的な試金石となるはずです。",
+    "wordCount": 932,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "表面化",
+        "lemma": "表面化",
+        "glosses": {
+          "es": "becoming surface / surfacing",
+          "en": "becoming surface / surfacing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "錯覚",
+        "lemma": "錯覚",
+        "glosses": {
+          "es": "illusion / misconception",
+          "en": "illusion / misconception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "証拠",
+        "lemma": "証拠",
+        "glosses": {
+          "es": "evidence / proof",
+          "en": "evidence / proof"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "懸念",
+        "lemma": "懸念",
+        "glosses": {
+          "es": "concern / anxiety",
+          "en": "concern / anxiety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "担保",
+        "lemma": "担保",
+        "glosses": {
+          "es": "guarantee / securing",
+          "en": "guarantee / securing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "苦渋",
+        "lemma": "苦渋",
+        "glosses": {
+          "es": "bitterness / agony",
+          "en": "bitterness / agony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 66.6,
+      "maxSentenceWords": 116,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "このメールの主な主題は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "選択制登校の導入に伴う教育現場の課題と方針の変更について"
+        },
+        {
+          "id": "a2",
+          "text": "フレックス制の利点と今後の全面的な拡大について"
+        },
+        {
+          "id": "a3",
+          "text": "遠方からの通学者に対する新しい交通費の補助について"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "学校経営委員会といたしましては、この状況を重く受け止め、来月より一部の基本授業について再び一定の共通集合時間を設ける方向で調整を進めております。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "先週の水曜日に発生した具体的な問題は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "電車の遅延により全校生徒が遅刻したこと"
+        },
+        {
+          "id": "a2",
+          "text": "主要科目の導入部分を欠席する生徒が続出したこと"
+        },
+        {
+          "id": "a3",
+          "text": "教員が不足して授業が行えなかったこと"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "先週の水曜日には、あるクラスで時間割の錯覚が生じ、主要科目の導入部分を欠席する生徒が続出しました。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "校長が共通集合時間を再び設けることにした本当の理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "保護者から完全な廃止を求める署名が提出されたため"
+        },
+        {
+          "id": "a2",
+          "text": "教師の負担軽減を完全に諦めたため"
+        },
+        {
+          "id": "a3",
+          "text": "集団としての学習リズムや学びの質を保つ必要があるため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "完全な自由度を維持することは生徒の負担軽減につながる一方で、学びの質や公平性を担保する上では大きな障害になり得るという結論に至りました。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "校長がこのメールを保護者に送った目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい時間割の方針変更についての理解と協力を求めるため"
+        },
+        {
+          "id": "a2",
+          "text": "新しい登校システムのアイデアを募集するため"
+        },
+        {
+          "id": "a3",
+          "text": "毎日の遅刻者を減らすための新しい罰則を通知するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "個別の事情に配慮しつつも、組織としての規律と共同の学びを守るための苦渋の決断となりますことを、何卒ご理解賜りますようお願い申し上げます。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体のトーンや姿勢を最もよく表しているものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい制度の失敗を保護者の責任として強く非難している"
+        },
+        {
+          "id": "a2",
+          "text": "利便性と教育的価値のバランスに悩みつつ、慎重に方針転換を図っている"
+        },
+        {
+          "id": "a3",
+          "text": "利便性の高さだけを無条件に誇り、課題を一切認めていない"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "個別の事情に配慮しつつも、組織としての規律と共同の学びを守るための苦渋の決断となりますことを、何卒ご理解賜りますようお願い申し上げます。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "文中で使われている「担保」という言葉は、どのような意味で使われていますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "お金を借りるために物件を差し出すこと"
+        },
+        {
+          "id": "a2",
+          "text": "古い規則を新しく書き換えること"
+        },
+        {
+          "id": "a3",
+          "text": "ある状態が確実になるように保障すること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "完全な自由度を維持することは生徒の負担軽減につながる一方で、学びの質や公平性を担保する上では大きな障害になり得るという結論に至りました。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "学校の柔軟な時間割制度（フレックス制）について、利便性と集団学習の重要性のバランスをどのように取るべきか、あなたの意見を日本語で400字程度で書きなさい。",
+      "en": "学校の柔軟な時間割制度（フレックス制）について、利便性と集団学習の重要性のバランスをどのように取るべきか、あなたの意見を日本語で400字程度で書きなさい。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "メールの文章を読み、柔軟な時間割制度が抱える運営上の矛盾と、それに対する学校側の対応について把握し、質問に答えよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "始業時間の柔軟化に関する保護者への連絡 | B2 Reading | WeLearn",
+      "en": "始業時間の柔軟化に関する保護者への連絡 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "フレックス制の導入により生じた学校の課題と、それに対する保護者からの意見についてのメールを読み、その内容を理解する。",
+      "en": "フレックス制の導入により生じた学校の課題と、それに対する保護者からの意見についてのメールを読み、その内容を理解する。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

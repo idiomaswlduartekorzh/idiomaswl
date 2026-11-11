@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "지속 가능성의 그늘, 보증금 제도의 명암",
+      "en": "지속 가능성의 그늘, 보증금 제도의 명암"
+    },
+    "intro": {
+      "es": "카페들의 다회용 컵 보증금 제도 도입 이후 나타난 변화와 관광객이 겪는 현실적인 갈등을 다룬 기사를 읽고 독해력을 점검합니다.",
+      "en": "카페들의 다회용 컵 보증금 제도 도입 이후 나타난 변화와 관광객이 겪는 현실적인 갈등을 다룬 기사를 읽고 독해력을 점검합니다."
+    },
+    "mission": {
+      "es": "제시된 기사문을 읽고 중심 내용 파악, 세부 정보 확인, 추론, 작가의 의도와 어조 파악, 그리고 어휘의 문맥적 의미를 묻는 6가지 문항에 답하시오.",
+      "en": "제시된 기사문을 읽고 중심 내용 파악, 세부 정보 확인, 추론, 작가의 의도와 어조 파악, 그리고 어휘의 문맥적 의미를 묻는 6가지 문항에 답하시오."
+    },
+    "targetText": "서울 마포구의 민간 카페 거리에서 시행 중인 다회용 컵 보증금 제도가 시행 반년을 맞이했다. 이 제도는 매장 내 일회용품 사용을 억제하고 쓰레기 배출량을 줄이기 위해 도입되었다. 도입 초기에는 번거로움을 호소하는 목소리가 적지 않았으나, 최근 통계에 따르면 거리의 테이크아웃 쓰레기통에서 발견되는 플라스틱 컵의 양은 눈에 띄게 감소했다. 제도를 기획한 상인회 측은 환경 보호라는 거대한 가치에 시민들이 적극적으로 동참하고 있다는 점을 긍정적인 성과로 평가하고 있다. 그러나 이러한 환경적 성과의 이면에는 간과할 수 없는 구조적 모순이 숨어 있다. 평일에는 직장인들이 주로 이용해 반납률이 비교적 높게 유지되지만, 주말에 이 지역을 찾는 관광객들의 상황은 사뭇 다르다. 주말 관광객들은 컵을 반납하기 위해 다시 매장을 찾아야 하는 번거로움 때문에 보증금을 포기하는 경우가 빈번하다. 특히 타 지역에서 온 방문객 민수 씨는 관광 일정을 소화하느라 바쁜 와중에 멀리 떨어진 특정 카페까지 다시 가서 컵을 돌려주어야 하는 상황에 깊은 피로감을 느꼈다고 토로했다. 결국 관광객들에게 이 제도는 환경 기여라기보다 사실상 회수되지 않는 추가적인 숨은 세금처럼 작용하고 있는 셈이다. 보증금 제도가 모든 이에게 공평한 참여를 유도하지 못하고 특정 집단에게만 불편함을 전가한다는 비판이 제기되는 이유가 바로 여기에 있다. 상인회는 반납 거점 확대를 논의하고 있으나, 보관 공간 부족 문제로 인해 실효성 있는 대책 마련에 난항을 겪고 있다. 환경을 지키겠다는 선의가 체계적인 인프라 부족으로 인해 누군가에게는 또 다른 규제로 다가가는 셈이다. 지속 가능한 소비를 향한 발걸음이 누구의 희생도 강요하지 않으면서 진정한 공존을 이루기 위해서는, 수거 시스템의 전면적인 재설계와 행정적 지원이 시급하다는 목소리가 힘을 얻고 있다.",
+    "wordCount": 220,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "억제하고",
+        "lemma": "억제하고",
+        "glosses": {
+          "es": "suppressing",
+          "en": "suppressing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이면에는",
+        "lemma": "이면에는",
+        "glosses": {
+          "es": "behind the flip side",
+          "en": "behind the flip side"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순이",
+        "lemma": "모순이",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "번거로움",
+        "lemma": "번거로움",
+        "glosses": {
+          "es": "inconvenience",
+          "en": "inconvenience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전가한다는",
+        "lemma": "전가한다는",
+        "glosses": {
+          "es": "shifting burden to",
+          "en": "shifting burden to"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "난항을",
+        "lemma": "난항을",
+        "glosses": {
+          "es": "difficulty",
+          "en": "difficulty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.9,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 다루고 있는 전체적인 중심 내용은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "다회용 컵 보증금 제도의 환경 보호 효과와 그 이면에 숨겨진 구조적 갈등 및 개선 요구"
+        },
+        {
+          "id": "a2",
+          "text": "보증금 제도의 긍정적 성과와 관광객이 겪는 불편"
+        },
+        {
+          "id": "a3",
+          "text": "주말 관광객의 반납률 저조 현상과 상인회의 대책"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "그러나 이러한 환경적 성과의 이면에는 간과할 수 없는 구조적 모순이 숨어 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "평일 이용자와 비교했을 때 주말 관광객이 겪는 주된 문제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보증금 환불 거부"
+        },
+        {
+          "id": "a2",
+          "text": "컵 반납을 위해 매장을 다시 찾아야 하는 번거로움"
+        },
+        {
+          "id": "a3",
+          "text": "플라스틱 컵 부족 현상"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "주말 관광객들은 컵을 반납하기 위해 다시 매장을 찾아야 하는 번거로움 때문에 보증금을 포기하는 경우가 빈번하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "방문객 민수 씨가 컵 보증금 제도에 대해 느낀 감정이나 태도로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제도의 취지에 깊이 공감하며 적극적으로 동참하고 있다"
+        },
+        {
+          "id": "a2",
+          "text": "보증금을 포기함으로써 환경 보호에 기여했다고 만족한다"
+        },
+        {
+          "id": "a3",
+          "text": "바쁜 일정 속에서 추가적인 불편함을 강요당한다고 느낀다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "특히 타 지역에서 온 방문객 민수 씨는 관광 일정을 소화하느라 바쁜 와중에 멀리 떨어진 특정 카페까지 다시 가서 컵을 돌려주어야 하는 상황에 깊은 피로감을 느꼈다고 토로했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 이 글을 쓴 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "카페 보증금 제도의 한계를 지적하고 개선책의 필요성을 알리기 위함"
+        },
+        {
+          "id": "a2",
+          "text": "관광객들의 무분별한 쓰레기 배출을 고발하기 위함"
+        },
+        {
+          "id": "a3",
+          "text": "상인회의 성공적인 친환경 정책을 칭찬하기 위함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "지속 가능한 소비를 향한 발걸음이 누구의 희생도 강요하지 않으면서 진정한 공존을 이루기 위해서는, 수거 시스템의 전면적인 재설계와 행정적 지원이 시급하다는 목소리가 힘을 얻고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글 전체에 나타나는 작가의 어조로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "감정적이고 비난 일변도인 어조"
+        },
+        {
+          "id": "a2",
+          "text": "객관적 성과와 구조적 모순을 함께 조명하는 비판적 어조"
+        },
+        {
+          "id": "a3",
+          "text": "낙관적이고 미래 지향적인 확신의 어조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "제도를 기획한 상인회 측은 환경 보호라는 거대한 가치에 시민들이 적극적으로 동참하고 있다는 점을 긍정적인 성과로 평가하고 있다. 그러나 이러한 환경적 성과의 이면에는 간과할 수 없는 구조적 모순이 숨어 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "문맥상 '전가한다는'의 의미와 가장 잘 통하는 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "물건을 다른 사람에게 판매하는"
+        },
+        {
+          "id": "a2",
+          "text": "새로운 제도를 널리 홍보하는"
+        },
+        {
+          "id": "a3",
+          "text": "책임이나 부담을 다른 이에게 떠넘기는"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "보증금 제도가 모든 이에게 공평한 참여를 유도하지 못하고 특정 집단에게만 불편함을 전가한다는 비판이 제기되는 이유가 바로 여기에 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "다회용 컵 보증금 제도가 환경 보호라는 목적을 달성하면서도 이용자들의 불편을 최소화하기 위해 어떤 보완책이 마련되어야 하는지 자신의 생각을 3문장 이상으로 쓰시오.",
+      "en": "다회용 컵 보증금 제도가 환경 보호라는 목적을 달성하면서도 이용자들의 불편을 최소화하기 위해 어떤 보완책이 마련되어야 하는지 자신의 생각을 3문장 이상으로 쓰시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "제시된 기사문을 읽고 중심 내용 파악, 세부 정보 확인, 추론, 작가의 의도와 어조 파악, 그리고 어휘의 문맥적 의미를 묻는 6가지 문항에 답하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "지속 가능성의 그늘, 보증금 제도의 명암 | B2 Reading | WeLearn",
+      "en": "지속 가능성의 그늘, 보증금 제도의 명암 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "카페들의 다회용 컵 보증금 제도 도입 이후 나타난 변화와 관광객이 겪는 현실적인 갈등을 다룬 기사를 읽고 독해력을 점검합니다.",
+      "en": "카페들의 다회용 컵 보증금 제도 도입 이후 나타난 변화와 관광객이 겪는 현실적인 갈등을 다룬 기사를 읽고 독해력을 점검합니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

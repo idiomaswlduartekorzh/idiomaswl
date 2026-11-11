@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-quiet-street",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "차 없는 저녁이 남긴 기록",
+      "en": "차 없는 저녁이 남긴 기록"
+    },
+    "intro": {
+      "es": "도심 속 주거 지역에서 시도한 차량 통제 실험의 결과와 상인 및 주민들의 상반된 반응을 다룬 기사를 읽고 이해도를 점검합니다.",
+      "en": "도심 속 주거 지역에서 시도한 차량 통제 실험의 결과와 상인 및 주민들의 상반된 반응을 다룬 기사를 읽고 이해도를 점검합니다."
+    },
+    "mission": {
+      "es": "본문을 읽고 차량 없는 저녁 실험이 지역 사회에 미친 영향과 그에 대한 해석의 차이를 파악하세요.",
+      "en": "본문을 읽고 차량 없는 저녁 실험이 지역 사회에 미친 영향과 그에 대한 해석의 차이를 파악하세요."
+    },
+    "targetText": "지난 금요일 저녁, 백화동 주민협의회는 상업 지구와 주거지가 만나는 중심 도로에서 세 시간 동안 차량 통행을 전면 금지하는 실험을 단행했다. 이번 조치는 매연과 소음으로 고통받던 주민들의 오랜 민원을 수렴하여 보행 환경의 개선 가능성을 시험하기 위한 목적에서 마련되었다. 실험이 시작되자마자 대형 버스와 승용차의 진입이 차단되었고, 그 자리는 유모차를 민 가족들과 자전거를 탄 아이들로 가득 채워졌다.\n\n상인들의 반응은 초반부터 극명하게 엇갈렸다. 수공예품을 판매하는 상인 민수 씨는 차량 진입이 막히면서 오전부터 예정되었던 원부자재 배송이 늦어져 오후 장사에 차질을 빚었다고 토로했다. 그는 재고 수급의 불안정이 장기화된다면 소상공인에게는 치명적일 수 있다고 지적했다. 반면, 길목에서 카페를 운영하는 지영 씨는 테라스까지 손님들이 가득 차 평소 금요일보다 매출이 눈에 띄게 늘었다고 밝혔다. 그는 느린 발걸음으로 거리를 거닐며 매장에 들어서는 유동 인구의 증가가 실질적인 소비로 이어졌음을 강조했다.\n\n소음 감소 효과를 두고도 주민들 간의 의견은 팽팽하게 맞섰다. 한쪽에선 엔진 소음이 사라져 평화로웠다고 평가했지만, 다른 쪽에서는 상가 주변에 모인 군중들의 대화 소리와 상인들이 틀어놓은 야외 음악 소리 때문에 체감 소음은 오히려 더 컸다고 반박했다. 환경 단체가 측정한 데시벨 수치는 미세한 하락세를 기록했으나, 주민들의 청각적 만족도는 정서적 기대치에 못 미쳤다. 이처럼 객관적인 수치와 주관적인 경험 사이의 괴리는 소음 관리 정책이 단순한 차량 통제를 넘어선 세심한 접근이 필요함을 시사했다.\n\n이번 실험은 보행권 중심의 도시계획이 지닌 잠재력과 한계를 동시에 드러냈다. 물류 이동의 불편과 소음의 성격 변화라는 현실적 과제가 수면 위로 떠올랐음에도 불구하고, 거리가 사람 중심 공간으로 탈바꿈할 수 있다는 가능성을 증명한 점은 고무적이다. 협의회는 이번 행사를 일회성 이벤트로 끝내지 않고, 상인회와 주민 대표가 참여하는 공청회를 열어 보완책을 논의하기로 결정했다.\n\n결국 차 없는 저녁 실험은 명확한 해답을 제시하기보다 새로운 질문들을 던졌다. 상업적 효율성과 주거 안정성이라는 두 가치는 여전히 아슬아슬한 균형을 유지해야 하는 과제로 남아 있다. 앞으로 이 지역이 어떤 절충안을 찾아낼지, 그리고 그 과정에서 모든 구성원의 목소리가 동등하게 반영될지는 온전히 남겨진 숙제다.",
+    "wordCount": 277,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "단행했다",
+        "lemma": "단행했다",
+        "glosses": {
+          "es": "carried out decisively",
+          "en": "carried out decisively"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "토로했다",
+        "lemma": "토로했다",
+        "glosses": {
+          "es": "expressed one's grievances",
+          "en": "expressed one's grievances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "팽팽하게",
+        "lemma": "팽팽하게",
+        "glosses": {
+          "es": "tightly or sharply",
+          "en": "tightly or sharply"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "괴리는",
+        "lemma": "괴리는",
+        "glosses": {
+          "es": "the gap or discrepancy",
+          "en": "the gap or discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고무적이다",
+        "lemma": "고무적이다",
+        "glosses": {
+          "es": "encouraging",
+          "en": "encouraging"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "절충안을",
+        "lemma": "절충안을",
+        "glosses": {
+          "es": "compromise solution",
+          "en": "compromise solution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.4,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문이 전달하고자 하는 전체적인 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "차량 통제 실험이 가져온 긍정적 변화와 남겨진 과제"
+        },
+        {
+          "id": "a2",
+          "text": "상인들의 경제적 손실 중심 분석"
+        },
+        {
+          "id": "a3",
+          "text": "소음 문제 해결책"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 실험은 보행권 중심의 도시계획이 지닌 잠재력과 한계를 동시에 드러냈다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "카페를 운영하는 지영 씨는 실험 동안 어떠한 변화를 겪었다고 말했습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "배송 지연으로 장사에 차질을 빚음"
+        },
+        {
+          "id": "a2",
+          "text": "손님이 늘어 매출이 증가함"
+        },
+        {
+          "id": "a3",
+          "text": "소음 때문에 야외 영업을 중단함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "길목에서 카페를 운영하는 지영 씨는 테라스까지 손님들이 가득 차 평소 금요일보다 매출이 눈에 띄게 늘었다고 밝혔다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "객관적인 소음 측정 수치와 주민들의 주관적 체감 사이에 차이가 난 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공공기관의 측정 장비가 고장 났기 때문"
+        },
+        {
+          "id": "a2",
+          "text": "자동차 엔진 소음이 완전히 사라지지 않았기 때문"
+        },
+        {
+          "id": "a3",
+          "text": "군중의 대화와 야외 음악 소리가 커졌기 때문"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "다른 쪽에서는 상가 주변에 모인 군중들의 대화 소리와 상인들이 틀어놓은 야외 음악 소리 때문에 체감 소음은 오히려 더 컸다고 반박했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "주민협의회가 이번 차량 통제 실험을 기획한 근본적인 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보행 환경 개선 가능성 시험"
+        },
+        {
+          "id": "a2",
+          "text": "상가 매출을 높이기 위한 목적"
+        },
+        {
+          "id": "a3",
+          "text": "환경 단체의 공식적인 요구 수용"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 조치는 매연과 소음으로 고통받던 주민들의 오랜 민원을 수렴하여 보행 환경의 개선 가능성을 시험하기 위한 목적에서 마련되었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "전체 글이 취하고 있는 태도나 어조로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "실험의 완전한 실패를 강하게 비판함"
+        },
+        {
+          "id": "a2",
+          "text": "양측의 입장을 균형 있게 다루며 향후 과제를 고찰함"
+        },
+        {
+          "id": "a3",
+          "text": "상인들의 일방적인 희생을 동정함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "결국 차 없는 저녁 실험은 명확한 해답을 제시하기보다 새로운 질문들을 던졌다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 객관적인 수치와 주관적 경험 사이의 '어긋남이나 차이'를 나타내는 단어는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "절충안을"
+        },
+        {
+          "id": "a2",
+          "text": "고무적이다"
+        },
+        {
+          "id": "a3",
+          "text": "괴리는"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이처럼 객관적인 수치와 주관적인 경험 사이의 괴리는 소음 관리 정책이 단순한 차량 통제를 넘어선 세심한 접근이 필요함을 시사했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "자유로운 보행 환경 조성을 위한 차량 통제 제도가 우리 동네에 도입된다면, 상업적 활동과 주거 환경 중 어느 측면에 더 큰 비중을 두어야 한다고 생각하는지 본인의 견해를 150자 이상으로 서술하세요.",
+      "en": "자유로운 보행 환경 조성을 위한 차량 통제 제도가 우리 동네에 도입된다면, 상업적 활동과 주거 환경 중 어느 측면에 더 큰 비중을 두어야 한다고 생각하는지 본인의 견해를 150자 이상으로 서술하세요."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "본문을 읽고 차량 없는 저녁 실험이 지역 사회에 미친 영향과 그에 대한 해석의 차이를 파악하세요.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "차 없는 저녁이 남긴 기록 | B2 Reading | WeLearn",
+      "en": "차 없는 저녁이 남긴 기록 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "도심 속 주거 지역에서 시도한 차량 통제 실험의 결과와 상인 및 주민들의 상반된 반응을 다룬 기사를 읽고 이해도를 점검합니다.",
+      "en": "도심 속 주거 지역에서 시도한 차량 통제 실험의 결과와 상인 및 주민들의 상반된 반응을 다룬 기사를 읽고 이해도를 점검합니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

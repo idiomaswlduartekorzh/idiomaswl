@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "기록실의 마지막 교정",
+      "en": "기록실의 마지막 교정"
+    },
+    "intro": {
+      "es": "구술 역사 아카이브 프로젝트에서 발생한 기록 수정 갈등을 다룬 읽기 자료입니다. 본문을 읽고 어휘와 독해 문제를 해결하세요.",
+      "en": "구술 역사 아카이브 프로젝트에서 발생한 기록 수정 갈등을 다룬 읽기 자료입니다. 본문을 읽고 어휘와 독해 문제를 해결하세요."
+    },
+    "mission": {
+      "es": "등장인물 간의 갈등 양상과 아카이브 기록의 성격에 대한 이해도를 평가합니다.",
+      "en": "등장인물 간의 갈등 양상과 아카이브 기록의 성격에 대한 이해도를 평가합니다."
+    },
+    "targetText": "한옥 도서관 지하 구술 역사 기록실에는 지역 노인들의 생생한 기억을 담은 녹음 파일과 초안 녹취록이 산더미처럼 쌓여 있었다. 아카이브 담당 연구원인 민준은 공개를 불과 이틀 앞두고 긴장된 얼굴로 마지막 원고를 검토하고 있었다. 그때 실내 문이 거칠게 열리며 올해 여든둘의 강진우 어르신이 들어왔책상 위에 놓인 출력본을 매서운 눈으로 집어 들었다. 진우는 젊은 시절 항만 노동조합 파업을 주도했던 지역의 산 증인이었다. 그가 자신의 구술 기록을 직접 확인하러 온 것은 이번이 세 번째였다. 민준은 진우가 또다시 방대한 분량의 삭제나 수정을 요구할까 봐 마른침을 삼켰다. 진우는 붉은색 펜을 꺼내 들더니 거침없이 첫 문단부터 밑줄을 그어 나갔다. 이 기록은 단순한 개인의 회상이 아니라 우리 지역 공동체의 거친 숨결을 증명하는 역사적 자산이라는 점에서 객관적 정확성이 무엇보다 중요했다. 하지만 기억의 파편은 때로는 주관적 진실을 더 선명하게 드러내기도 하므로, 연구원인 민준의 입장에서는 날것 그대로의 화법을 보존하는 것이 원칙이었다. 진우가 짚은 대목은 칠십 년대 중반 노동자 총파업 당시의 구체적인 날짜와 동료의 실명이었다. 진우는 녹취록에 적힌 날짜가 사실과 다르고 당시 경찰의 압박 때문에 기억이 일부 엉켰다며 당장 수정해야 한다고 주장했다. 민준은 당혹스러웠다. 구술 아카이브의 윤리 지침상 화자가 직접 자신의 발언을 사후에 수정하는 것은 역사적 왜곡을 낳을 위험이 있었고, 당시의 오류마저도 역사적 정황을 보여주는 자료가 되기 때문이었다. 민준은 진우에게 원본의 생생함을 유지하는 것의 중요성을 차분히 설명하려고 시도했다. 역사적 사실의 엄밀함과 구술자의 주관적 진정성 사이에서 팽팽한 긴장감이 기록실을 가득 채웠다. 진우는 역사가들이 편의대로 기록을 포장하는 것을 경계해야 한다며 물러서지 않았다. 오랜 침묵 끝에 민준은 타협안을 꺼내 들었다. 본문 녹취록은 원본 그대로 두되, 진우가 자필로 작성한 정정 메모와 해설을 각주와 별첨 자료 형태로 나란히 배치하기로 한 것이다. 진우는 잠시 고민하더니 펜을 내려놓고 그 제안을 수용했다. 두 사람의 타협 덕분에 기억의 오류와 진실이 모두 온전하게 아카이브에 기록될 수 있었다.",
+    "wordCount": 265,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "녹취록",
+        "lemma": "녹취록",
+        "glosses": {
+          "es": "transcript",
+          "en": "transcript"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "산 증인",
+        "lemma": "산 증인",
+        "glosses": {
+          "es": "living witness",
+          "en": "living witness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "객관적 정확성",
+        "lemma": "객관적 정확성",
+        "glosses": {
+          "es": "objective accuracy",
+          "en": "objective accuracy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "윤리 지침",
+        "lemma": "윤리 지침",
+        "glosses": {
+          "es": "ethical guidelines",
+          "en": "ethical guidelines"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역사적 정황",
+        "lemma": "역사적 정황",
+        "glosses": {
+          "es": "historical context",
+          "en": "historical context"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "별첨 자료",
+        "lemma": "별첨 자료",
+        "glosses": {
+          "es": "appendix material",
+          "en": "appendix material"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.3,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문 전체에서 다루고 있는 주요 사건은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "구술 기록의 공개를 앞두고 화자의 기억 수정 요구와 연구원의 타협 과정"
+        },
+        {
+          "id": "a2",
+          "text": "도서관 건물의 노후화로 인해 구술 자료를 모두 폐기하는 과정"
+        },
+        {
+          "id": "a3",
+          "text": "노동조합의 역사적 진실을 밝히기 위해 새로운 증인을 찾아내는 과정"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "아카이브 담당 연구원인 민준은 공개를 불과 이틀 앞두고 긴장된 얼굴로 마지막 원고를 검토하고 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "강진우 어르신이 녹취록에서 직접 수정하려고 했던 내용은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "자신이 젊은 시절 항만 노동조합에 가입하게 된 계기와 당시의 감정"
+        },
+        {
+          "id": "a2",
+          "text": "칠십 년대 중반 노동자 총파업 당시의 구체적인 날짜와 동료의 실명"
+        },
+        {
+          "id": "a3",
+          "text": "도서관 지하 기록실에 보관되어 있던 녹음 파일의 제작 연도와 장소"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "진우가 짚은 대목은 칠십 년대 중반 노동자 총파업 당시의 구체적인 날짜와 동료의 실명이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "민준이 당초 진우의 수정 요구에 난난함을 느꼈던 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "노인들의 기억을 신뢰하지 못하여 아카이브 사업 자체를 중단하고 싶었기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "진우가 가져온 붉은색 펜이 공식 문서 작성 규정에 어긋나기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "구술자의 사후 수정이 역사적 왜곡을 낳을 위험과 원본 보존 원칙 때문"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "구술 아카이브의 윤리 지침상 화자가 직접 자신의 발언을 사후에 수정하는 것은 역사적 왜곡을 낳을 위험이 있었고, 당시의 오류마저도 역사적 정황을 보여주는 자료가 되기 때문이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "민준이 본문 마지막에 진우에게 자필 정정 메모를 별첨하자고 제안한 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "원본의 생생함을 유지하면서도 진우의 정정 의견을 함께 기록하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "연구원의 업무 부담을 줄이고 녹취록을 빠르게 출판하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "노동조합 파업의 역사적 사실을 완전히 은폐하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "본문 녹취록은 원본 그대로 두되, 진우가 자필로 작성한 정정 메모와 해설을 각주와 별첨 자료 형태로 나란히 배치하기로 한 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "기록실 안에서 민준과 진우가 갈등을 빚을 때 드러나는 전체적인 분위기는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "서로의 주장을 무시한 채 가벼운 농담을 주고받는 유쾌한 분위기"
+        },
+        {
+          "id": "a2",
+          "text": "역사적 기록의 방식을 두고 팽팽한 긴장감이 감도는 진지한 분위기"
+        },
+        {
+          "id": "a3",
+          "text": "연구원이 일방적으로 권위를 내세워 노인의 의견을 묵살하는 권위적인 분위기"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "역사적 사실의 엄밀함과 구술자의 주관적 진정성 사이에서 팽팽한 긴장감이 기록실을 가득 채웠다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 아카이브 담당 연구원이 원본의 생생함을 유지하는 것과 관련하여 언급한 원칙은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "모든 등장인물의 실명을 익명으로 처리하는 것"
+        },
+        {
+          "id": "a2",
+          "text": "기록물의 발행 부수를 엄격하게 제한하는 것"
+        },
+        {
+          "id": "a3",
+          "text": "날것 그대로의 화법을 보존하는 것"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "하지만 기억의 파편은 때로는 주관적 진실을 더 선명하게 드러내기도 하므로, 연구원인 민준의 입장에서는 날것 그대로의 화법을 보존하는 것이 원칙이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "구술 역사 기록을 보존할 때 원본의 날것 그대로의 형태를 유지해야 하는지, 아니면 화자의 수정을 반영하여 정확성을 높여야 하는지에 대한 본인의 입장을 세 문장 이상으로 작성하세요.",
+      "en": "구술 역사 기록을 보존할 때 원본의 날것 그대로의 형태를 유지해야 하는지, 아니면 화자의 수정을 반영하여 정확성을 높여야 하는지에 대한 본인의 입장을 세 문장 이상으로 작성하세요."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "등장인물 간의 갈등 양상과 아카이브 기록의 성격에 대한 이해도를 평가합니다.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "기록실의 마지막 교정 | B2 Reading | WeLearn",
+      "en": "기록실의 마지막 교정 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "구술 역사 아카이브 프로젝트에서 발생한 기록 수정 갈등을 다룬 읽기 자료입니다. 본문을 읽고 어휘와 독해 문제를 해결하세요.",
+      "en": "구술 역사 아카이브 프로젝트에서 발생한 기록 수정 갈등을 다룬 읽기 자료입니다. 본문을 읽고 어휘와 독해 문제를 해결하세요."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

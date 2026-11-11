@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-new-crossing",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "늘푸른 의원 앞 횡단보도 설치를 둘러싼 갈등과 실험",
+      "en": "늘푸른 의원 앞 횡단보도 설치를 둘러싼 갈등과 실험"
+    },
+    "intro": {
+      "es": "늘푸른 의원 앞 도로의 안전을 위한 횡단보도 설치 요구와 그 시범 운영 결과를 다룬 기사문을 읽고 독해력을 점검하는 과제입니다.",
+      "en": "늘푸른 의원 앞 도로의 안전을 위한 횡단보도 설치 요구와 그 시범 운영 결과를 다룬 기사문을 읽고 독해력을 점검하는 과제입니다."
+    },
+    "mission": {
+      "es": "제시된 기사문을 주의 깊게 읽고, 주민과 운전자 간의 입장 차이와 시범 운영 결과가 시사하는 바를 정확히 파악하여 물음에 답하십시오.",
+      "en": "제시된 기사문을 주의 깊게 읽고, 주민과 운전자 간의 입장 차이와 시범 운영 결과가 시사하는 바를 정확히 파악하여 물음에 답하십시오."
+    },
+    "targetText": "늘푸른 의원 인근 주민들은 수개월 동안 왕복 4차선 도로에 횡단보도를 설치해 달라고 구청에 거듭 요구해 왔다. 이 지역은 고령의 환자들이 병원을 방문하기 위해 자주 건너는 곳이지만, 신호등과 건널목이 없어 매 순간 사고 위험에 노출되어 있었다. 주민 대표인 김민수 씨는 병원에서 처방을 받고 나오는 어르신들이 무단횡단을 하다가 하마터면 차에 치일 뻔한 아찔한 상황을 여러 번 목격했다고 강조하며 시급한 조치를 촉구했다. 하지만 인근 상인들과 출퇴근길 운전자들은 이 요구에 대해 강하게 반발했다. 화물업을 하는 박준호 씨는 가뜩이나 정체가 심한 출퇴근 시간에 횡단보도가 생기면 차량 정체가 극심해져 물류 배송에 차질이 생길 것이라며 우려를 표명했다. 구청은 양측의 갈등이 고조되자 한 달 동안 임시 횡단보도를 설치하고 신호등을 가동하는 시범 사업을 실시하기로 결정했다. 시범 운영 기간이 끝난 후 집계된 결과는 주민과 운전자 모두에게 엇갈린 반응을 이끌어냈다. 보행자 안전 사고 발생 건수는 이전보다 눈에 띄게 줄어들었으나, 출근 시간대 평균 통행 시간은 예상보다 늘어나 차량 정체 문제를 가중시켰다. 구청 교통과는 보행자 안전 확보와 원활한 교통 흐름 사이에서 뚜렷한 해답을 찾지 못한 채, 추가 공청회를 열어 주민들의 의견을 더 수렴하겠다는 입장을 밝혔다. 일각에서는 보행자 버튼식 신호등 도입이나 과속방지턱 보강 같은 절충안이 거론되고 있지만, 근본적인 갈등을 해소하기에는 역부족이라는 지적이 지배적이다.\n\n구청이 직면한 이러한 딜레마는 단순한 민원 해결을 넘어 보행권과 이동권이라는 상반된 가치가 충돌하는 한국 도시 행정의 고질적인 단면을 여실히 보여준다. 결국 양측 모두가 수용할 수 있는 지속 가능한 타협점을 도출하기 위해서는 단순한 통행 시간의 증감만을 따질 것이 아니라 해당 구역 전체의 교통 체계를 종합적으로 재검토하는 정교한 접근이 필수적이다. 전문가들은 보행자 전용 고가나 지하도를 설치하는 방안이 물리적 공간 부족으로 실효성이 낮다면 스마트 교통 시스템을 도입하여 보행 흐름을 방해하지 않는 범위 내에서 신호 주기를 유연하게 조절하는 스마트시티 기술을 적용해야 한다고 조언한다. 주민의 생명과 안전을 보호하는 것은 국가의 가장 기본적인 책무이지만 지역 경제의 동맥 역할을 하는 교통망의 효율성 또한 간과할 수 없는 중대한 사안이다. 따라서 구청은 다가올 추가 공청회에서 찬반 양측의 감정적 대립을 완화하고 객관적 데이터에 기반한 합리적 대안을 이끌어내야만 이번 갈등을 원만히 매듭지을 수 있을 것이다.",
+    "wordCount": 303,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "노출되어",
+        "lemma": "노출되어",
+        "glosses": {
+          "es": "exposed to",
+          "en": "exposed to"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "목격했다고",
+        "lemma": "목격했다고",
+        "glosses": {
+          "es": "witnessed that",
+          "en": "witnessed that"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "반발했다",
+        "lemma": "반발했다",
+        "glosses": {
+          "es": "objected strongly",
+          "en": "objected strongly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가중시켰다",
+        "lemma": "가중시켰다",
+        "glosses": {
+          "es": "aggravated",
+          "en": "aggravated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역부족이라는",
+        "lemma": "역부족이라는",
+        "glosses": {
+          "es": "being insufficient",
+          "en": "being insufficient"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지배적이다",
+        "lemma": "지배적이다",
+        "glosses": {
+          "es": "is dominant",
+          "en": "is dominant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 기사가 다루고 있는 중심 내용은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "늘푸른 의원 앞 횡단보도 설치 요구와 시범 운영에 따른 갈등"
+        },
+        {
+          "id": "a2",
+          "text": "신호등 설치로 인한 상인들의 경제적 손실과 대책"
+        },
+        {
+          "id": "a3",
+          "text": "지자체의 일방적인 도로 개편 정책에 대한 주민들의 소송"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "늘푸른 의원 인근 주민들은 수개월 동안 왕복 4차선 도로에 횡단보도를 설치해 달라고 구청에 거듭 요구해 왔다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "시범 운영 결과 출근 시간대에 어떤 문제가 발생했습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보행자 무단횡단 증가"
+        },
+        {
+          "id": "a2",
+          "text": "차량 정체 가중"
+        },
+        {
+          "id": "a3",
+          "text": "상가 매출의 급감"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "출근 시간대 평균 통행 시간은 예상보다 늘어나 차량 정체 문제를 가중시켰다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "운전자들이 횡단보도 설치에 반대했던 가장 주된 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "병원 이용객들의 주차 공간이 부족해지기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "야간 운전 시 시야를 방해하는 조명 때문"
+        },
+        {
+          "id": "a3",
+          "text": "출퇴근길 차량 정체와 물류 배송 차질을 우려해서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "출퇴근 시간에 횡단보도가 생기면 차량 정체가 극심해져 물류 배송에 차질이 생길 것이라며 우려를 표명했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "구청이 한 달 동안 임시 횡단보도를 설치하고 시범 사업을 실시한 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민과 운전자 간의 갈등을 해소하기 위한 객관적 데이터를 얻기 위함"
+        },
+        {
+          "id": "a2",
+          "text": "상인들의 요구에 따라 인근 상권 활성화를 도모하기 위함"
+        },
+        {
+          "id": "a3",
+          "text": "교통사고 처리 비용을 절감하기 위한 예산 편성 때문"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "구청은 양측의 갈등이 고조되자 한 달 동안 임시 횡단보도를 설치하고 신호등을 가동하는 시범 사업을 실시하기로 결정했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조와 필자의 태도로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보행자의 안전만을 일방적으로 옹호하며 운전자를 비판하는 태도"
+        },
+        {
+          "id": "a2",
+          "text": "양측의 입장을 균형 있게 다루며 뚜렷한 해답을 찾지 못한 현실을 전달하는 태도"
+        },
+        {
+          "id": "a3",
+          "text": "지자체의 행정 편의주의를 강력하게 고발하고 시정을 요구하는 태도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "구청 교통과는 보행자 안전 확보와 원활한 교통 흐름 사이에서 뚜렷한 해답을 찾지 못한 채, 추가 공청회를 열어 주민들의 의견을 더 수렴하겠다는 입장을 밝혔다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 '일정한 조건이나 상태가 더욱 심해지게 만들었다'는 의미로 사용된 단어는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "목격했다고"
+        },
+        {
+          "id": "a2",
+          "text": "역부족이라는"
+        },
+        {
+          "id": "a3",
+          "text": "가중시켰다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "출근 시간대 평균 통행 시간은 예상보다 늘어나 차량 정체 문제를 가중시켰다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "본문에 등장하는 횡단보도 설치 갈등처럼, 보행자 안전과 차량 소통 사이에서 발생하는 도시 갈등을 해결하기 위한 본인만의 창의적인 대안을 세 문장 이상으로 작성해 보십시오.",
+      "en": "본문에 등장하는 횡단보도 설치 갈등처럼, 보행자 안전과 차량 소통 사이에서 발생하는 도시 갈등을 해결하기 위한 본인만의 창의적인 대안을 세 문장 이상으로 작성해 보십시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "제시된 기사문을 주의 깊게 읽고, 주민과 운전자 간의 입장 차이와 시범 운영 결과가 시사하는 바를 정확히 파악하여 물음에 답하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "늘푸른 의원 앞 횡단보도 설치를 둘러싼 갈등과 실험 | B2 Reading | WeLearn",
+      "en": "늘푸른 의원 앞 횡단보도 설치를 둘러싼 갈등과 실험 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "늘푸른 의원 앞 도로의 안전을 위한 횡단보도 설치 요구와 그 시범 운영 결과를 다룬 기사문을 읽고 독해력을 점검하는 과제입니다.",
+      "en": "늘푸른 의원 앞 도로의 안전을 위한 횡단보도 설치 요구와 그 시범 운영 결과를 다룬 기사문을 읽고 독해력을 점검하는 과제입니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

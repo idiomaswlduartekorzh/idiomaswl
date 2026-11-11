@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-last-bus",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "마지막 심야버스의 퇴장과 마을의 이동권 갈등",
+      "en": "마지막 심야버스의 퇴장과 마을의 이동권 갈등"
+    },
+    "intro": {
+      "es": "농어촌 지역의 대중교통 개편 과정에서 발생하는 세대 간 갈등과 새로운 이동 서비스의 명암을 다룬 기사형 읽기 자료입니다.",
+      "en": "농어촌 지역의 대중교통 개편 과정에서 발생하는 세대 간 갈등과 새로운 이동 서비스의 명암을 다룬 기사형 읽기 자료입니다."
+    },
+    "mission": {
+      "es": "제시문을 읽고 심야버스 폐지와 수요응답형 교통수단 도입에 따른 지역 사회의 변화와 갈등 양상을 정확히 파악하십시오.",
+      "en": "제시문을 읽고 심야버스 폐지와 수요응답형 교통수단 도입에 따른 지역 사회의 변화와 갈등 양상을 정확히 파악하십시오."
+    },
+    "targetText": "지난달 말, 산간 소도시인 청림시는 십 년간 적자 노선으로 운영되던 마지막 심야버스를 공식 폐지했다. 시 당국은 저녁 시간대 이용객이 평균 세 명에 불과하다는 점을 들어, 고비용의 대형 버스 대신 스마트폰 앱이나 전화로 호출하는 소형 승합차인 '누리콜'을 전면 도입했다. 예산 효율성을 극대화하려는 불가피한 조치였다는 것이 시의 설명이다. 그러나 이러한 행정적 결단은 곧바로 주민 간의 뜨거운 찬반 양론을 촉발시켰다. 젊은 직장인 민수 씨는 누리콜 도입을 적극 반환했다. 퇴근길이 일정치 않은 그에게 정해진 시간표에 얽매이지 않고 필요할 때 탈 수 있는 온디맨드 방식은 오히려 이동의 자유를 넓혀주었기 때문이다. 반면, 스마트폰을 능숙하게 다루지 못하는 고령 주민들은 깊은 소외감을 토로했다. 경로당 회장 김 할아버지는 콜센터 전화가 불통일 때가 많아 병원이나 모임에 갈 엄두조차 내지 못한다며 분통을 터뜨렸다. 비록 시는 고령층을 위한 전담 전화 상담원을 배치했다고 해명했지만, 실질적인 배차 대기 시간은 과거 버스 배차 간격보다 훨씬 길어졌다는 지적이 이어진다. 효율이라는 경제적 논리와 보편적 이동권이라는 복지적 가치가 충돌하는 가운데, 청림시의 실험은 단순한 교통 체계의 변경을 넘어 지방 소도시가 직면한 구조적 모순을 적나라하게 보여주고 있다.\n\n이러한 갈등 속에서 청림시는 최근 주민 공청회를 열고 새로운 보완책 마련에 착수했지만, 재정적 한계와 현장의 목소리 사이에서 뚜렷한 해답을 찾지 못한 채 깊은 고민에 빠져 있다. 특히 디지털 취약 계층의 접근성을 높이기 위해 각 마을 회관에 전담 도우미를 파견하는 방안이 논의되었으나, 상시 운영에 필요한 예산 확보는 여전히 불투명한 실정이다. 한편으로 IT 기반 교통 서비스의 혁신성이 주는 편리함을 포기할 수 없다는 목소리와 모든 시민의 기본적인 이동권을 국가와 지방 정부가 끝까지 책임져야 한다는 공공성 강조 주장이 팽팽하게 맞서고 있다. 결국 이번 사태는 단순히 버스를 승합차로 교체하는 행정적 절차를 넘어, 인구 감소와 고령화를 겪는 지방 도시들이 앞으로 복지와 효율이라는 두 마리 토끼를 어떻게 조화롭게 잡아나가야 할지 시험하는 중대한 분수령이 되고 있으며, 향후 전국 다른 지자체들의 교통 정책 수립 과정에도 적지 않은 시사점을 던져주고 있다.",
+    "wordCount": 278,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "적자",
+        "lemma": "적자",
+        "glosses": {
+          "es": "deficit",
+          "en": "deficit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "불가피한",
+        "lemma": "불가피한",
+        "glosses": {
+          "es": "inevitable",
+          "en": "inevitable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "양론",
+        "lemma": "양론",
+        "glosses": {
+          "es": "two opposing arguments",
+          "en": "two opposing arguments"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "소외감",
+        "lemma": "소외감",
+        "glosses": {
+          "es": "sense of alienation",
+          "en": "sense of alienation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "보편적",
+        "lemma": "보편적",
+        "glosses": {
+          "es": "universal",
+          "en": "universal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순",
+        "lemma": "모순",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.9,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문의 전체적인 주제로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지방 소도시의 버스 폐지와 새 교통수단 도입에 따른 세대별 갈등"
+        },
+        {
+          "id": "a2",
+          "text": "스마트폰 애플리케이션 개발을 통한 농어촌 물류 시스템의 혁신"
+        },
+        {
+          "id": "a3",
+          "text": "대중교통 적자 해소를 위한 전면적인 요금 인상 정책의 부작용"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "그러나 이러한 행정적 결단은 곧바로 주민 간의 뜨거운 찬반 양론을 촉발시켰다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "시 당국이 마지막 심야버스를 폐지하게 된 직접적인 계기는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "버스 기사들의 총파업과 노조와의 임금 협상 결렬"
+        },
+        {
+          "id": "a2",
+          "text": "저녁 시간대 이용객이 평균 세 명에 불과했다는 점"
+        },
+        {
+          "id": "a3",
+          "text": "중앙 정부의 강제적인 대중교통 노선 통폐합 지침"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "시 당국은 저녁 시간대 이용객이 평균 세 명에 불과하다는 점을 들어, 고비용의 대형 버스 대신 스마트폰 앱이나 전화로 호출하는 소형 승합차인 '누리콜'을 전면 도입했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "민수 씨가 누리콜 도입에 대해 긍정적인 반응을 보인 이유는 무엇이라고 유추할 수 있습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기존의 대형 버스보다 요금이 훨씬 저렴하고 정부 보조금이 추가로 나오기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "스마트폰을 사용하지 않아도 콜센터 직원을 통해 즉시 배차받을 수 있어서"
+        },
+        {
+          "id": "a3",
+          "text": "고정된 시간표에서 벗어나 자신의 퇴근 시간에 맞춰 유연하게 이용할 수 있어서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "퇴근길이 일정치 않은 그에게 정해진 시간표에 얽매이지 않고 필요할 때 탈 수 있는 온디맨드 방식은 오히려 이동의 자유를 넓혀주었기 때문이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 글의 후반부에서 실질적인 배차 대기 시간이 길어졌다고 지적한 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "시의 해명에도 불구하고 교통 약자들의 실제 불편이 해소되지 않았음을 강조하려고"
+        },
+        {
+          "id": "a2",
+          "text": "시가 마련한 고령층 전담 상담원 제도가 완벽하게 작동하고 있음을 증명하려고"
+        },
+        {
+          "id": "a3",
+          "text": "모든 대중교통을 다시 예전의 대형버스 체제로 즉각 환원해야 한다고 주장하려고"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "비록 시는 고령층을 위한 전담 전화 상담원을 배치했다고 해명했지만, 실질적인 배차 대기 시간은 과거 버스 배차 간격보다 훨씬 길어졌다는 지적이 이어진다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 논조와 필자의 태도로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지방 행정의 효율성만을 무조건 옹호하며 주민들의 불만을 단순 님비 현상으로 규탄하는 태도"
+        },
+        {
+          "id": "a2",
+          "text": "농어촌 교통 개편이 가져온 경제적 이익과 사회적 부작용을 균형 있게 성찰하는 비판적 태도"
+        },
+        {
+          "id": "a3",
+          "text": "새로운 기술 도입이 모든 문제를 해결할 것이라는 과도한 낙관주의를 전파하는 계몽적 태도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "효율이라는 경제적 논리와 보편적 이동권이라는 복지적 가치가 충돌하는 가운데, 청림시의 실험은 단순한 교통 체계의 변경을 넘어 지방 소도시가 직면한 구조적 모순을 적나라하게 보여주고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 예산의 효율성을 극대화하기 위해 피할 수 없었던 조치였음을 나타낼 때 사용된 어휘는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보편적"
+        },
+        {
+          "id": "a2",
+          "text": "소외감"
+        },
+        {
+          "id": "a3",
+          "text": "불가피한"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "예산 효율성을 극대화하려는 불가피한 조치였다는 것이 시의 설명이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "대중교통 개편 과정에서 발생하는 효율성과 이동권의 충돌 문제에 대해 본문의 내용을 바탕으로 본인의 의견을 150자 이상으로 작성하십시오.",
+      "en": "대중교통 개편 과정에서 발생하는 효율성과 이동권의 충돌 문제에 대해 본문의 내용을 바탕으로 본인의 의견을 150자 이상으로 작성하십시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "제시문을 읽고 심야버스 폐지와 수요응답형 교통수단 도입에 따른 지역 사회의 변화와 갈등 양상을 정확히 파악하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "마지막 심야버스의 퇴장과 마을의 이동권 갈등 | B2 Reading | WeLearn",
+      "en": "마지막 심야버스의 퇴장과 마을의 이동권 갈등 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "농어촌 지역의 대중교통 개편 과정에서 발생하는 세대 간 갈등과 새로운 이동 서비스의 명암을 다룬 기사형 읽기 자료입니다.",
+      "en": "농어촌 지역의 대중교통 개편 과정에서 발생하는 세대 간 갈등과 새로운 이동 서비스의 명암을 다룬 기사형 읽기 자료입니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

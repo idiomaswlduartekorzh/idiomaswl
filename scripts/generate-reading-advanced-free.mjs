@@ -239,7 +239,7 @@ for (const { language, level, brief } of pending) {
     } catch (error) {
       lastError = error
       console.error(`${language}/${level}/${brief.slug} attempt ${attempt + 1}: ${error.message}`)
-      if (/\b(?:403|404)\b/.test(error.message)) break
+      if (/(?:Gemini|Groq) (?:403|404):/.test(error.message)) break
       if (/per day|PerDay|daily quota/i.test(error.message)) break
       if (/429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 65_000))
       else if (/503|high demand/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 15_000 * (attempt + 1)))
@@ -248,7 +248,7 @@ for (const { language, level, brief } of pending) {
   if (!item) {
     failedCount++
     console.error(`Skipped ${language}/${level}/${brief.slug}: ${lastError?.message}`)
-    if (/\b(?:403|404)\b|429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(lastError?.message ?? '')) break
+    if (/(?:Gemini|Groq) (?:403|404):|429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(lastError?.message ?? '')) break
     providerOutageStreak = /503|high demand/i.test(lastError?.message ?? '') ? providerOutageStreak + 1 : 0
     if (providerOutageStreak >= 2) { console.error('Provider remains unavailable; stop and resume this batch later.'); break }
     continue

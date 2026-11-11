@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "待合室の革命",
+      "en": "待合室の革命"
+    },
+    "intro": {
+      "es": "病院の待ち時間を解消するための新しいシステム導入をめぐり、患者とスタッフが直面した葛藤についての物語を読み、読解力を養います。",
+      "en": "病院の待ち時間を解消するための新しいシステム導入をめぐり、患者とスタッフが直面した葛藤についての物語を読み、読解力を養います。"
+    },
+    "mission": {
+      "es": "本文を読み、技術革新がもたらす利便性と、それから取り残される人々への配慮についての描写を理解し、質問に答えてください。",
+      "en": "本文を読み、技術革新がもたらす利便性と、それから取り残される人々への配慮についての描写を理解し、質問に答えてください。"
+    },
+    "targetText": "緑町総合病院の待合室は、毎朝のように診察を待つ患者であふれかえり、独特の重苦しい空気が漂っていた。長年勤める看護師長の佐藤は、この混雑を何とか解消したいと強く願っていた。そこで病院経営陣は、順番が近づくと患者のスマートフォンへ通知を送る新しい予約システムの導入を決定した。これによって、人々は窮屈な椅子に何時間も座り続ける必要がなくなり、外で用事を済ませたり車内で静かに過ごしたりすることが可能になったはずだった。導入初日の朝、システムは順調に稼働し、待合室の人口密度は明らかに低下した。佐藤は改革が成功したと確信し、安堵の息をもらした。しかし、午後が深まるにつれて、その革新的な仕組みが持つ予期せぬ側面が露わになっていった。隅のベンチに、電源の入らない古い携帯電話を握りしめたまま、不安そうに受付を見つめる高齢の男性、鈴木の姿があったのだ。鈴木は一人暮らしであり、自宅にはインターネット環境もなければ、新しい通知システムに対応する端末もなかった。彼はシステム変更の告知ポスターに気づいていたが、自分には関係のないことだと思い込み、いつものように朝早くから病院にやって来ていたのである。窓口の若手事務員は、マニュアル通りに「アプリを入れていただくか、番号札の代わりにSMSを受信できる端末が必要です」と機械的に繰り返すばかりだった。佐藤はそのやり取りを遠くから見つめ、効率化という名目の裏で、特定の患者が完全に置き去りにされている現実を突きつけられた。もちろん、待合室の過密状態を緩和し、感染症のリスクを下げるためには、デジタル化による効率化が不可欠であるという経営陣の判断も理解できる。限られた医療資源を有効に活用するためには、全体の利便性を高めるシステム投資は避けて通れない道なのだ。それでもなお、すべての人がその恩恵を等しく受けられるわけではないという事実を、佐藤は無視することができなかった。結局、佐藤は窓口へ歩み寄り、鈴木の手をとって優しく微笑んだ。「番号通知の端末をお持ちでない方には、これまで通り紙の整理券をお渡しします。どうか安心してください」と告げ、特例の対応を指示した。鈴木は深く頭を下げ、安堵の表情を浮かべた。効率的なシステム運用と取り残される個人の救済の間で、医療現場の模索はまだ始まったばかりであった。",
+    "wordCount": 903,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "混雑",
+        "lemma": "混雑",
+        "glosses": {
+          "es": "crowding",
+          "en": "crowding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "導入",
+        "lemma": "導入",
+        "glosses": {
+          "es": "introduction",
+          "en": "introduction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "露わ",
+        "lemma": "露わ",
+        "glosses": {
+          "es": "revealed",
+          "en": "revealed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不可欠",
+        "lemma": "不可欠",
+        "glosses": {
+          "es": "indispensable",
+          "en": "indispensable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "恩恵",
+        "lemma": "恩恵",
+        "glosses": {
+          "es": "benefit",
+          "en": "benefit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "模索",
+        "lemma": "模索",
+        "glosses": {
+          "es": "search for a solution",
+          "en": "search for a solution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 45.1,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の全体的なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "医療現場の効率化と社会的弱者への配慮のバランス"
+        },
+        {
+          "id": "a2",
+          "text": "最新アプリの便利さ"
+        },
+        {
+          "id": "a3",
+          "text": "病院経営の失敗談"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "効率的なシステム運用と取り残される個人の救済の間で、医療現場の模索はまだ始まったばかりであった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "鈴木さんが新しいシステムを利用できなかったのはなぜですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "システムの使い方が面倒だったから"
+        },
+        {
+          "id": "a2",
+          "text": "対応する端末や環境を持っていなかったから"
+        },
+        {
+          "id": "a3",
+          "text": "病院に行くのが遅すぎたから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "鈴木は一人暮らしであり、自宅にはインターネット環境もなければ、新しい通知システムに対応する端末もなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤看護師長が鈴木さんの対応をした時、どのような気持ちだったと考えられますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しいシステムを完全に否定したい"
+        },
+        {
+          "id": "a2",
+          "text": "鈴木さんの我が儘に怒りを感じている"
+        },
+        {
+          "id": "a3",
+          "text": "効率化の必要性を認めつつも、取り残された人を救いたい"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "限られた医療資源を有効に活用するためには、全体の利便性を高めるシステム投資は避けて通れない道なのだ。それでもなお、すべての人がその恩恵を等しく受けられるわけではないという事実を、佐藤は無視することができなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "若手事務員が鈴木さんに対してマニュアル通りの説明をしたのはなぜですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい規則に従って機械的に対応した"
+        },
+        {
+          "id": "a2",
+          "text": "鈴木さんを困らせようとした"
+        },
+        {
+          "id": "a3",
+          "text": "特別な例外をすぐに思いついた"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "窓口の若手事務員は、マニュアル通りに「アプリを入れていただくか、番号札の代わりにSMSを受信できる端末が必要です」と機械的に繰り返すばかりだった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体のトーンや語り口について最も適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい医療システムを手放しで称賛する明るいトーン"
+        },
+        {
+          "id": "a2",
+          "text": "デジタル化の進展に伴う課題を多角的な視点から描く、落ち着いたトーン"
+        },
+        {
+          "id": "a3",
+          "text": "昔のやり方を頑なに擁護する批判的なトーン"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "導入初日の朝、システムは順調に稼働し、待合室の人口密度は明らかに低下した。佐藤は改革が成功したと確信し、安堵の息をもらした。しかし、午後が深まるにつれて、その革新的な仕組みが持つ予期せぬ側面が露わになっていった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中で「不可欠」という言葉はどのような文脈で使われていますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "全く役に立たないこと"
+        },
+        {
+          "id": "a2",
+          "text": "すぐに廃止すべきこと"
+        },
+        {
+          "id": "a3",
+          "text": "絶対に必要であること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "もちろん、待合室の過密状態を緩和し、感染症のリスクを下げるためには、デジタル化による効率化が不可欠であるという経営陣の判断も理解できる。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "テクノロジーの導入による効率化と、それによって取り残される人々への配慮について、あなたの考えを400字程度でまとめてください。",
+      "en": "テクノロジーの導入による効率化と、それによって取り残される人々への配慮について、あなたの考えを400字程度でまとめてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "本文を読み、技術革新がもたらす利便性と、それから取り残される人々への配慮についての描写を理解し、質問に答えてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "待合室の革命 | B2 Reading | WeLearn",
+      "en": "待合室の革命 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "病院の待ち時間を解消するための新しいシステム導入をめぐり、患者とスタッフが直面した葛藤についての物語を読み、読解力を養います。",
+      "en": "病院の待ち時間を解消するための新しいシステム導入をめぐり、患者とスタッフが直面した葛藤についての物語を読み、読解力を養います。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

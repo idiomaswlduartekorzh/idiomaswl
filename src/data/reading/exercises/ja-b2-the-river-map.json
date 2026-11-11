@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-river-map",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "洪水ハザードマップの視認性をめぐる世代間論争",
+      "en": "洪水ハザードマップの視認性をめぐる世代間論争"
+    },
+    "intro": {
+      "es": "高齢化が進む地域社会において、防災情報のアクセシビリティがいかに重要であるかを考えさせられる記事です。新しい技術の導入と伝統的な手法のバランスについて、筆者の論考を読み解きましょう。",
+      "en": "高齢化が進む地域社会において、防災情報のアクセシビリティがいかに重要であるかを考えさせられる記事です。新しい技術の導入と伝統的な手法のバランスについて、筆者の論考を読み解きましょう。"
+    },
+    "mission": {
+      "es": "以下の文章を読み、デジタル化とアナログな対策の衝突に関する筆者の主張や背景にある課題を正確に把握し、設問に答えてください。",
+      "en": "以下の文章を読み、デジタル化とアナログな対策の衝突に関する筆者の主張や背景にある課題を正確に把握し、設問に答えてください。"
+    },
+    "targetText": "緑川市の中央地区で自治会役員を務める佐藤健一さんは、先日の激しい豪雨の際、自宅のタブレット端末で市が公開した最新の洪水ハザードマップを確認しようとして困惑した。画面に表示された浸水想定区域のグラデーションは、複雑な色彩で精緻に描かれていたが、佐藤さんが長年愛用している型落ちのスマートフォンでは色が潰れてしまい、自宅が危険地帯に含まれているのかどうか判別できなかったのだ。市は環境負荷の軽減とコスト削減を理由に紙の冊子を全戸配布からデジタル閲覧へと全面移行させていたが、この方針は情報弱者を置き去りにするのではないかという懸念を現実のものにした。\n\nこの事態を重く見た佐藤さんは、地域の有志数名と共に「中央地区・安全な暮らしを守る会」を立ち上げ、行政に対して紙のハザードマップの再配布を求める署名活動を開始した。彼は、スマートフォンの操作に不慣れな高齢者層にとって、拡大縮小の操作が必要なデジタルマップは非常時に心理的負担が大きいと主張した。さらに、夜間の停電時を想定すれば、バッテリー残量を気にせず広げられる紙の地図こそが命綱になると訴えたのである。住民説明会では、多くの高齢住民が佐藤さんの意見に深くうなずき、デジタル化一辺倒の行政の姿勢に疑問を投げかける声が相次いだ。\n\n一方で、市の防災課長である田中真一さんは、予算と更新頻度の限界を理由に佐藤さんたちの要求に難色を示した。田中さんは、道路拡張や新たな治水工事の進捗に合わせてデータをリアルタイムで更新できるのはデジタル版の強みであり、数年に一度しか刷り直せない紙のマップはかえって古い情報による誤認を招く危険があると反論した。行政側の論理としては、限られた財源の中で最も効率的な情報伝達手段を選ぶ必要があり、個別端末の性能差まで配慮して紙を復活させることは前時代的な逆行だと映っていたのだ。双方の主張は平行線をたどり、地域住民の安全確保という共通の目的を持ちながらも、手段を巡る溝は容易に埋まらなかった。\n\nこの対立が先鋭化する中、転機となったのは地元の印刷会社を営む鈴木さんの提案だった。鈴木さんは、全戸に高価なフルカラー冊子を配るのではなく、地区ごとに特に危険度の高いエリアを大きく抜粋したモノクロの簡易詳細図を作成し、自治会の回覧板を通じて各戸に配布する折衷案を提示した。この手法であればコストを大幅に抑えられ、老朽化した端末を持つ世帯でも視覚的な迷いが生じない。佐藤さんはこの現実的な妥協案を受け入れ、市側も情報提供という形で側面支援を約束したことで、形式的な対立は収束に向かった。\n\nしかし、この小さな合意は、行政のデジタルシフトという大きな流れに対する一時的な応急処置に過ぎないという構造的な問題を浮き彫りにした。効率性と包摂性という永遠の二項対立において、私たちはどの程度のコストを払って誰一人取り残さないセーフティネットを維持すべきなのか。紙の地図を手にした住民たちの安堵の裏で、技術の進歩がもたらす恩恵と、そこからこぼれ落ちる人々の存在に向き合う地方自治の重い宿題は、今もなお未解決のまま残り続けている。",
+    "wordCount": 1228,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "困惑した",
+        "lemma": "困惑した",
+        "glosses": {
+          "es": "be puzzled",
+          "en": "be puzzled"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "情報弱者",
+        "lemma": "情報弱者",
+        "glosses": {
+          "es": "information-vulnerable people",
+          "en": "information-vulnerable people"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "難色を示した",
+        "lemma": "難色を示した",
+        "glosses": {
+          "es": "showed reluctance",
+          "en": "showed reluctance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "折衷案",
+        "lemma": "折衷案",
+        "glosses": {
+          "es": "compromise proposal",
+          "en": "compromise proposal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "二項対立",
+        "lemma": "二項対立",
+        "glosses": {
+          "es": "binary opposition",
+          "en": "binary opposition"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "未解決",
+        "lemma": "未解決",
+        "glosses": {
+          "es": "unresolved",
+          "en": "unresolved"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 68.2,
+      "maxSentenceWords": 102,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主題として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "洪水ハザードマップのデジタル化と紙の必要性を巡る住民と行政の対立と模索"
+        },
+        {
+          "id": "a2",
+          "text": "最新のデジタル技術を活用した効率的な防災情報システムの構築について"
+        },
+        {
+          "id": "a3",
+          "text": "高齢化が進む地域における新しい印刷ビジネスの可能性と地方自治のあり方"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "緑川市の中央地区で自治会役員を務める佐藤健一さんは、先日の激しい豪雨の際、自宅のタブレット端末で市が公開した最新の洪水ハザードマップを確認しようとして困惑した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "市の防災課長である田中さんが紙のマップ再配布に難色を示した主な理由は何だったか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "すべての市民がすでに十分な性能を持つスマートフォンを所持していると確信していたから"
+        },
+        {
+          "id": "a2",
+          "text": "予算不足と、データ更新の頻度が限られる紙媒体が古い情報による誤認を招く危険性があったから"
+        },
+        {
+          "id": "a3",
+          "text": "紙の印刷を請け負う地元の企業との間で価格交渉が決裂してしまったから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "田中さんは、道路拡張や新たな治水工事の進捗に合わせてデータをリアルタイムで更新できるのはデジタル版の強みであり、数年に一度しか刷り直せない紙のマップはかえって古い情報による誤認を招く危険があると反論した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "最終段落で筆者が「未解決のまま残り続けている」と述べている背景には、どのような含意があるか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "今回の折衷案によってすべての行政課題が完全に解決されたという満足感"
+        },
+        {
+          "id": "a2",
+          "text": "紙の地図を好む住民とデジタルを推し進める若者との間の感情的な亀裂がより深まったことへの絶望"
+        },
+        {
+          "id": "a3",
+          "text": "効率性を重視するデジタルシフトと全員を救う包摂性の両立という根本的な問題が今後も続くという懸念"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "効率性と包摂性という永遠の二項対立において、私たちはどの程度のコストを払って誰一人取り残さないセーフティネットを維持すべきなのか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "鈴木さんがモノクロの簡易詳細図の提案を行った目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "コストを抑えつつ、古い端末を持つ世帯でも視覚的な迷いが生じないようにするため"
+        },
+        {
+          "id": "a2",
+          "text": "高価なフルカラー冊子を独占して自社の印刷売上を大幅に引き上げるため"
+        },
+        {
+          "id": "a3",
+          "text": "行政側に対してデジタルマップの完全廃止を強制的に認めさせるため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この手法であればコストを大幅に抑えられ、老朽化した端末を持つ世帯でも視覚的な迷いが生じない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者が本記事全体を通じて読者に伝えている論調として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政のデジタル化施策を無条件に礼賛する楽天的なトーン"
+        },
+        {
+          "id": "a2",
+          "text": "効率化と公平性の間で揺れる現代の課題を複眼的に考察する思索的なトーン"
+        },
+        {
+          "id": "a3",
+          "text": "特定の住民グループの頑迷な姿勢を厳しく批判する冷徹なトーン"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "効率性と包摂性という永遠の二項対立において、私たちはどの程度のコストを払って誰一人取り残さないセーフティネットを維持すべきなのか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "文章中で使われている「折衷案」の意味に最も近いものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "一方の意見を完全に退けて他方を優先する強硬な手段"
+        },
+        {
+          "id": "a2",
+          "text": "過去の失敗例をそのまま繰り返す形式的な対処方針"
+        },
+        {
+          "id": "a3",
+          "text": "双方の主張のよいところを取り入れた妥協的な解決策"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この手法であればコストを大幅に抑えられ、老朽化した端末を持つ世帯でも視覚的な迷いが生じない。佐藤さんはこの現実的な妥協案を受け入れ",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "デジタル化が進む現代の行政サービスや防災情報の提供において、効率性とすべての住民を置き去りにしないための配慮（包摂性）のバランスをどのように取るべきか、あなたの考えを400字程度でまとめてください。",
+      "en": "デジタル化が進む現代の行政サービスや防災情報の提供において、効率性とすべての住民を置き去りにしないための配慮（包摂性）のバランスをどのように取るべきか、あなたの考えを400字程度でまとめてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "以下の文章を読み、デジタル化とアナログな対策の衝突に関する筆者の主張や背景にある課題を正確に把握し、設問に答えてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "洪水ハザードマップの視認性をめぐる世代間論争 | B2 Reading | WeLearn",
+      "en": "洪水ハザードマップの視認性をめぐる世代間論争 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "高齢化が進む地域社会において、防災情報のアクセシビリティがいかに重要であるかを考えさせられる記事です。新しい技術の導入と伝統的な手法のバランスについて、筆者の論考を読み解きましょう。",
+      "en": "高齢化が進む地域社会において、防災情報のアクセシビリティがいかに重要であるかを考えさせられる記事です。新しい技術の導入と伝統的な手法のバランスについて、筆者の論考を読み解きましょう。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "동네 수리 공방의 명암: 지속 가능한 소비의 실험",
+      "en": "동네 수리 공방의 명암: 지속 가능한 소비의 실험"
+    },
+    "intro": {
+      "es": "지역 주민들이 고장 난 가전제품을 직접 고치며 자원을 아끼는 공유 수리 공방의 운영 실태를 다룬 비평문을 읽고 독해력을 점검합니다.",
+      "en": "지역 주민들이 고장 난 가전제품을 직접 고치며 자원을 아끼는 공유 수리 공방의 운영 실태를 다룬 비평문을 읽고 독해력을 점검합니다."
+    },
+    "mission": {
+      "es": "본문을 정독하여 공유 수리 공방이 직면한 현실적 한계와 그 사회적 가치에 대한 필자의 비판적 시각을 파악하시오.",
+      "en": "본문을 정독하여 공유 수리 공방이 직면한 현실적 한계와 그 사회적 가치에 대한 필자의 비판적 시각을 파악하시오."
+    },
+    "targetText": "주말 오후, 주민센터 지하에 마련된 '다시가게' 수리 공방은 부서진 토스터와 작동하지 않는 스탠드를 들고 온 사람들로 북적였다. 이 공방은 물건을 쉽게 버리지 않고 고쳐 쓰는 문화를 정착시키기 위해 설립된 비영리 모임이다. 자원봉사자 민수 씨는 회전이 멈춘 선풍기의 나사를 풀며 고장 원인을 설명했다. 그는 제조사가 일부러 수리를 어렵게 설계해 소비자가 새 제품을 사도록 유도한다고 지적했다. 이러한 자발적 노력은 단순히 비용을 아끼는 것을 넘어 대량 생산과 폐기 시스템에 대한 조용한 저항이라는 점에서 의미가 깊다. 하지만 현장을 냉정히 살펴보면 구조적인 한계가 뚜렷하다. 고장 난 가전의 종류는 다양하지만 전문적인 기술을 가진 자원봉사자는 턱없이 부족하다. 이로 인해 수리를 기다리는 대기 시간은 평균 두 시간을 훌쩍 넘기기 일쑤다. 공방에 구비된 도구 역시 노후화되어 정밀한 작업에는 한계가 따랐다. 결국 수리를 포기하고 발걸음을 돌리는 주민들의 불만 섞인 목소리가 공방 한켠에서 흘러나왔다. 일부 방문객은 차라리 저렴한 신제품을 사는 것이 시간 낭비를 줄이는 길이라며 비판적인 반응을 보였다. 그럼에도 불구하고 이 공간의 가치를 단순히 효율성의 잣대로만 평가할 수는 없다. 이곳에서 주민들은 물건의 구조를 이해하고 남의 손을 빌려 고치는 법을 배우는 소중한 경험을 얻는다. 공방이 안고 있는 자원 부족 문제를 해결하기 위해서는 지자체의 행정적 지원과 체계적인 기술 교육 프로그램 도입이 시급하다. 완벽한 대안이 되기에는 아직 부족하지만 이 작은 공방은 우리 사회가 나아가야 할 방향을 조용히 제시하고 있다.\n\n이처럼 민간의 선의에만 의존하는 방식은 지속 가능성을 담보하기 어렵기 때문에 더욱 체계적인 제도 개선이 요구된다. 만약 지역 사회와 기업 그리고 행정 기관이 협력하여 전문 인력을 양성하고 부품 공급망을 안정화한다면 이러한 공방은 일회성 이벤트에 그치지 않고 진정한 자원 순환의 거점으로 자리 잡을 수 있을 것이다.",
+    "wordCount": 239,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "비영리",
+        "lemma": "비영리",
+        "glosses": {
+          "es": "nonprofit",
+          "en": "nonprofit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "저항",
+        "lemma": "저항",
+        "glosses": {
+          "es": "resistance",
+          "en": "resistance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "노후화",
+        "lemma": "노후화",
+        "glosses": {
+          "es": "aging/deterioration",
+          "en": "aging/deterioration"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "잣대",
+        "lemma": "잣대",
+        "glosses": {
+          "es": "standard/measure",
+          "en": "standard/measure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "행정적",
+        "lemma": "행정적",
+        "glosses": {
+          "es": "administrative",
+          "en": "administrative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "시급하다",
+        "lemma": "시급하다",
+        "glosses": {
+          "es": "to be urgent",
+          "en": "to be urgent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.1,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 전체적인 주제로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공유 수리 공방의 현실적 한계와 가치"
+        },
+        {
+          "id": "a2",
+          "text": "제조사의 고의적인 수리 거부 현상"
+        },
+        {
+          "id": "a3",
+          "text": "지자체의 전면적인 행정 지원 방안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "하지만 현장을 냉정히 살펴보면 구조적인 한계가 뚜렷하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "현장에서 수리 대기 시간이 길어지는 이유는 무엇 때문입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "방문객들이 수리 방법을 잘 몰라서"
+        },
+        {
+          "id": "a2",
+          "text": "전문 기술을 가진 자원봉사자가 부족해서"
+        },
+        {
+          "id": "a3",
+          "text": "지자체의 행정적 지원이 전혀 없어서"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "고장 난 가전의 종류는 다양하지만 전문적인 기술을 가진 자원봉사자는 턱없이 부족하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "민수 씨가 지적한 제조사의 설계 방식에 대한 설명으로 알맞은 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제품의 내구성을 극대화하기 위함"
+        },
+        {
+          "id": "a2",
+          "text": "수리 비용을 대폭 낮추기 위한 조치"
+        },
+        {
+          "id": "a3",
+          "text": "소비자가 새 제품을 사도록 유도함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그는 제조사가 일부러 수리를 어렵게 설계해 소비자가 새 제품을 사도록 유도한다고 지적했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 공방의 효율성을 비판하면서도 그 가치를 인정하는 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민들이 물건을 고치는 법을 배우는 소중한 경험을 얻기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "공방의 모든 도구가 최신식으로 곧 교체될 예정이기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "방문객들의 대기 시간이 점차 줄어들고 있기 때문에"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이곳에서 주민들은 물건의 구조를 이해하고 남의 손을 빌려 고치는 법을 배우는 소중한 경험을 얻는다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "공유 수리 공방을 바라보는 필자의 태도로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "자원봉사자들의 미숙함을 강하게 질책하며 공방의 폐쇄를 강력하게 주장하는 냉소적 태도"
+        },
+        {
+          "id": "a2",
+          "text": "구조적 한계를 직시하면서도 지속 가능성을 위한 개선 방향을 모색하는 균형 잡힌 태도"
+        },
+        {
+          "id": "a3",
+          "text": "현재의 문제점은 전혀 언급하지 않은 채 완벽한 성공을 거두었다고 칭찬하는 맹목적 태도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "완벽한 대안이 되기에는 아직 부족하지만 이 작은 공방은 우리 사회가 나아가야 할 방향을 조용히 제시하고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "문맥상 '비영리'와 대조되는 의미로 본문에서 유추할 수 있는 공방의 성격은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민들이 자유롭게 물건을 교환하는 중고 시장"
+        },
+        {
+          "id": "a2",
+          "text": "지자체에서 직접 운영하는 공공 대여 시설"
+        },
+        {
+          "id": "a3",
+          "text": "이익을 추구하는 일반 기업의 생산 및 소비 시스템"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이러한 자발적 노력은 단순히 비용을 아끼는 것을 넘어 대량 생산과 폐기 시스템에 대한 조용한 저항이라는 점에서 의미가 깊다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "자신이 거주하는 지역사회나 학교에서 겪었던 자원 부족 문제와 이를 해결하기 위한 대안에 대해 150자 내외로 서술하시오.",
+      "en": "자신이 거주하는 지역사회나 학교에서 겪었던 자원 부족 문제와 이를 해결하기 위한 대안에 대해 150자 내외로 서술하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "본문을 정독하여 공유 수리 공방이 직면한 현실적 한계와 그 사회적 가치에 대한 필자의 비판적 시각을 파악하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "동네 수리 공방의 명암: 지속 가능한 소비의 실험 | B2 Reading | WeLearn",
+      "en": "동네 수리 공방의 명암: 지속 가능한 소비의 실험 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "지역 주민들이 고장 난 가전제품을 직접 고치며 자원을 아끼는 공유 수리 공방의 운영 실태를 다룬 비평문을 읽고 독해력을 점검합니다.",
+      "en": "지역 주민들이 고장 난 가전제품을 직접 고치며 자원을 아끼는 공유 수리 공방의 운영 실태를 다룬 비평문을 읽고 독해력을 점검합니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

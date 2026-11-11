@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "持続可能な街の選択：デポジット付きリユースカップの導入と観光客の葛藤",
+      "en": "持続可能な街の選択：デポジット付きリユースカップの導入と観光客の葛藤"
+    },
+    "intro": {
+      "es": "街のカフェで導入されたデポジット付きリユースカップ制度について、その成果と観光客が直面する課題を論じる記事を読み、持続可能性と利便性のバランスについて理解を深めます。",
+      "en": "街のカフェで導入されたデポジット付きリユースカップ制度について、その成果と観光客が直面する課題を論じる記事を読み、持続可能性と利便性のバランスについて理解を深めます。"
+    },
+    "mission": {
+      "es": "記事全体を正確に読み解き、リユースカップ導入がもたらした環境面の改善と、一時的な訪問者が抱える構造的な不便さとの間の複雑な関係について考察してください。",
+      "en": "記事全体を正確に読み解き、リユースカップ導入がもたらした環境面の改善と、一時的な訪問者が抱える構造的な不便さとの間の複雑な関係について考察してください。"
+    },
+    "targetText": "緑豊かな街として知られるハルモニア市では、中心街のカフェ数十店舗が参加する形で、新たなリユースカップの運用が始まった。この取り組みは、店舗で飲み物を購入する際に一定の保証金を上乗せし、使い捨てプラスチック容器の消費量を根本から削減することを目指したものである。制度開始から数ヶ月が経過し、街の美化推進団体が発表した中間報告によると、主要な大通りや公園周辺で見つかるテイクアウト容器の廃棄量は大幅に減少したという。毎朝通勤する住民の間では、マイカップを持参する手間が省けつつも環境貢献ができる仕組みとして好意的に受け止められており、店舗側のゴミ処理コストも軽減されるなど、初期の狙いは概ね成功しているように見えた。しかし、この華々しい成果の裏で、予期せぬ摩擦が生じ始めていることも事実である。\n\n摩擦の中心にあるのは、地元住民と一時的な訪問者との間にある利便性の非対称性である。定住している住民であれば、生活圏内の決まった回収ボックスの場所を把握しており、日常的な動線の中でカップをスムーズに返却することが可能である。これに対し、週末に訪れる観光客や出張で数日間滞在するビジネス客にとって、状況は大きく異なる。彼らは帰りの新幹線の時間や観光のスケジュールに追われており、特定の店舗にわざわざカップを戻しに行く余裕がないことが多い。結果として、保証金の回収を諦めてそのまま持ち帰るか、最悪の場合、ホテルの部屋や街角のゴミ箱に放置してしまうケースが相次いでいる。環境に優しいという大義名分が、特定の層にとっては面倒な負担へと変貌しているのだ。\n\nさらに、このシステムを巡っては、店舗側の運用負荷についても議論が分かれている。多くの加盟店を統括する商店街組合の代表者は、容器の洗浄や在庫管理にかかる労力が想定以上であると指摘する。返却されたカップを衛生基準に則って迅速に洗浄し、再び店頭に戻す作業は、特に小規模な店舗にとって深刻な人手不足に拍車をかけている。環境負荷の低減という全体最適の目標と、個々の店舗が負う局所的な負担の増大との間には、いまだに看過できないねじれが存在している。それにもかかわらず、行政側は廃棄物量の数値的な減少を根拠に、制度のさらなる拡張を急ぐ姿勢を崩しておらず、現場の声との間に温度差が生じている。\n\nこのような状況を打開するため、一部の先進的なカフェでは、街の主要な交通拠点や駅の近くに自動返却機を設置するなどの独自対策を講じ始めている。これにより、観光客が移動のついでにカップを手放すことができる環境が整いつつあるが、機器の導入費用や維持管理コストの負担をめぐって、加盟店の間で新たな合意形成の難しさが浮き彫りになっている。初期の熱狂が冷め、制度が日常のインフラとして定着しつつある今、ハルモニア市は単にゴミを減らすという初期の目的を超えて、街を訪れる多様な人々を巻き込んだ真の持続可能性をいかにデザインし直すかという、より本質的な問いに直面している。",
+    "wordCount": 1172,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "保証金",
+        "lemma": "保証金",
+        "glosses": {
+          "es": "deposit",
+          "en": "deposit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "非対称性",
+        "lemma": "非対称性",
+        "glosses": {
+          "es": "asymmetry",
+          "en": "asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "看過",
+        "lemma": "看過",
+        "glosses": {
+          "es": "overlooking",
+          "en": "overlooking"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "温度差",
+        "lemma": "温度差",
+        "glosses": {
+          "es": "temperature difference in attitude",
+          "en": "temperature difference in attitude"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "合意形成",
+        "lemma": "合意形成",
+        "glosses": {
+          "es": "consensus building",
+          "en": "consensus building"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "インフラ",
+        "lemma": "インフラ",
+        "glosses": {
+          "es": "infrastructure",
+          "en": "infrastructure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 61.7,
+      "maxSentenceWords": 109,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主要なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "リユースカップ導入による環境改善と観光客の負担などの課題"
+        },
+        {
+          "id": "a2",
+          "text": "観光客の増加に伴うカフェの売上変化"
+        },
+        {
+          "id": "a3",
+          "text": "最新の自動返却機の導入手順"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この取り組みは、店舗で飲み物を購入する際に一定の保証金を上乗せし、使い捨てプラスチック容器の消費量を根本から削減することを目指したものである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "週末に訪れる観光客が直面している主な問題は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "ドリンクの価格が住民よりも高く設定されていること"
+        },
+        {
+          "id": "a2",
+          "text": "返却場所を探す時間がなく保証金を回収できないこと"
+        },
+        {
+          "id": "a3",
+          "text": "マイカップを持参しなければ購入できないこと"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼らは帰りの新幹線の時間や観光のスケジュールに追われており、特定の店舗にわざわざカップを戻しに行く余裕がないことが多い。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "行政側と現場の店舗との間にある「温度差」の原因として最も妥当なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政は観光客の排除を求めているが、店舗は観光客を歓迎していること"
+        },
+        {
+          "id": "a2",
+          "text": "行政は制度の廃止を考えているが、店舗は継続を強く希望していること"
+        },
+        {
+          "id": "a3",
+          "text": "行政は数値的な成果を重視する一方、店舗は実務的な負担に苦しんでいること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "行政側は廃棄物量の数値的な減少を根拠に、制度のさらなる拡張を急ぐ姿勢を崩しておらず、現場の声との間に温度差が生じている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "一部のカフェが自動返却機を設置した目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "移動のついでにカップを返せる環境を作り観光客の負担を軽減するため"
+        },
+        {
+          "id": "a2",
+          "text": "店舗のスタッフ数を増やして洗浄作業を効率化するため"
+        },
+        {
+          "id": "a3",
+          "text": "使い捨てプラスチックの販売を完全に禁止するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "これにより、観光客が移動のついでにカップを手放すことができる環境が整いつつあるが",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この記事全体の筆者のトーンを最もよく表しているものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい制度を無条件に賛美し、すべての読者に導入を強く勧める熱狂的なトーン"
+        },
+        {
+          "id": "a2",
+          "text": "環境政策の成果を評価しつつも、現場の葛藤や構造的な課題を冷静に分析するトーン"
+        },
+        {
+          "id": "a3",
+          "text": "観光客の利便性のみを重視し、環境保護政策を全面的に批判する感情的なトーン"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "初期の熱狂が冷め、制度が日常のインフラとして定着しつつある今、ハルモニア市は単にゴミを減らすという初期の目的を超えて、街を訪れる多様な人々を巻き込んだ真の持続可能性をいかにデザインし直すかという、より本質的な問いに直面している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "文脈における「非対称性」の意味として正しいものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "カフェの店舗数と回収ボックスの数が完全に一致していること"
+        },
+        {
+          "id": "a2",
+          "text": "新品のカップと回収されたカップの衛生状態が異なること"
+        },
+        {
+          "id": "a3",
+          "text": "住民と観光客の間で制度による利便性や負担に不均衡が生じていること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "摩擦の中心にあるのは、地元住民と一時的な訪問者との間にある利便性の非対称性である。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "リユース容器の導入が地域社会や訪問者にもたらす影響について、あなたの考えを300文字程度で述べてください。",
+      "en": "リユース容器の導入が地域社会や訪問者にもたらす影響について、あなたの考えを300文字程度で述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "記事全体を正確に読み解き、リユースカップ導入がもたらした環境面の改善と、一時的な訪問者が抱える構造的な不便さとの間の複雑な関係について考察してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "持続可能な街の選択：デポジット付きリユースカップの導入と観光客の葛藤 | B2 Reading | WeLearn",
+      "en": "持続可能な街の選択：デポジット付きリユースカップの導入と観光客の葛藤 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "街のカフェで導入されたデポジット付きリユースカップ制度について、その成果と観光客が直面する課題を論じる記事を読み、持続可能性と利便性のバランスについて理解を深めます。",
+      "en": "街のカフェで導入されたデポジット付きリユースカップ制度について、その成果と観光客が直面する課題を論じる記事を読み、持続可能性と利便性のバランスについて理解を深めます。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "디지털 대기실의 그림자",
+      "en": "디지털 대기실의 그림자"
+    },
+    "intro": {
+      "es": "진료실 예약 문자가 효율성을 높이지만 모든 환자에게 공평하지는 않음을 다룬 이야기입니다. 본문을 읽고 세부 사항을 파악해 보세요.",
+      "en": "진료실 예약 문자가 효율성을 높이지만 모든 환자에게 공평하지는 않음을 다룬 이야기입니다. 본문을 읽고 세부 사항을 파악해 보세요."
+    },
+    "mission": {
+      "es": "디지털 예약 시스템 도입에 따른 갈등과 해결 과정을 분석하고 이해도를 점검하세요.",
+      "en": "디지털 예약 시스템 도입에 따른 갈등과 해결 과정을 분석하고 이해도를 점검하세요."
+    },
+    "targetText": "서울의 한 주택가에 자리 잡은 다나 의원은 최근 만성적인 대기 시간 문제를 해결하기 위해 모바일 예약 문자 시스템 전면 도입을 단행했다. 과거 환자들이 접수처 앞에 길게 줄을 서서 무한정 기다리던 풍경은 사라지고 이제는 스마트폰 알림톡을 통해 자신의 순서가 되기 삼십 분 전에 방문하는 방식이 정착되었다. 이 혁신적인 제도는 대다수 직장인 환자들에게 엄청난 시간적 여유를 선물하며 큰 호응을 얻었다. 병원 측은 이를 통해 공간 활용도를 높이고 업무 효율이 극대화되었다고 자평했다. 하지만 이러한 편리함의 이면에는 디지털 환경에 익숙하지 않은 취약층의 불편이라는 그림자가 짙게 드리워져 있었다. \n\n기본적인 스마트폰조차 제대로 다루기 버거운 고령층 환자나 요금 체납으로 언제 전화 통화가 끊길지 모르는 저소득층에게 이 모바일 알림 시스템은 또 다른 보이지 않는 장벽이었다. 어느 쌀쌀한 가을 오후, 낡은 점퍼 차림의 노인 김 씨가 다나 의원 자동문 앞에 멈춰 섰다. 지난달 심한 기침으로 예약을 잡고 돌아갔던 그는 스마트폰 화면을 멍하니 바라보다가 접수처 직원에게 다가갔다. 김 씨는 문자 메시지를 확인하지 못해 정해진 입실 시간을 놓쳤고, 시스템상 이미 예약이 자동 취소된 상태였다. 직원은 정해진 규정과 대기 중인 다른 환자들의 편의를 근거로 난색을 표하며 오늘 진료는 어렵다고 냉정하게 안내했다. \n\n김 씨는 발을 동동 구르며 어제 밤부터 기침이 심해 한숨도 못 잤다고 호소했지만, 모니터에 뜨는 차가운 화면 앞에서는 아무런 소용이 없었다. 디지털 격차라는 구조적 문제가 개인의 무능이나 부주의로 치부되는 순간이었다. 이 광경을 유심히 지켜보던 베테랑 간호사 박 씨는 단순한 절차 준수 너머의 모순을 감지했다. 박 씨는 의사에게 직접 상황을 보고하고 예외 규정을 적용해 김 씨를 진료 대기 명단에 수동으로 추가했다. 진료를 무사히 마치고 나온 김 씨는 고맙다는 인사 거듭하며 병원 문을 나섰지만, 박 씨의 마음은 쉽게 편해지지 않았다. \n\n기술의 발전이 인간을 위한 도구여야 함에도 불구하고 오히려 특정한 누군가를 소외시키는 모순적인 현실을 목격했기 때문이다. 효율성이라는 미명 아래 병원은 점점 더 많은 것을 요구하고 있었고, 약자들은 그 속도를 따라잡느라 숨이 찼다. 박 씨는 병원 관리자들에게 단순히 문자로만 안내하는 방식을 고집할 것이 아니라, 전화가 어려운 이들을 위한 별도의 아날로그 창구나 대면 안내 인력이 반드시 병행되어야 한다고 강력하게 건의했다. 모든 진보가 곧바로 평등을 의미하지 않는다는 뼈아픈 깨달음 속에서 다나 의원은 새로운 고민을 시작했다.",
+    "wordCount": 318,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "도입",
+        "lemma": "도입",
+        "glosses": {
+          "es": "introduction",
+          "en": "introduction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "장벽",
+        "lemma": "장벽",
+        "glosses": {
+          "es": "barrier",
+          "en": "barrier"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치부",
+        "lemma": "치부",
+        "glosses": {
+          "es": "treatment",
+          "en": "treatment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순",
+        "lemma": "모순",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "미명",
+        "lemma": "미명",
+        "glosses": {
+          "es": "false pretext",
+          "en": "false pretext"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "건의",
+        "lemma": "건의",
+        "glosses": {
+          "es": "suggestion",
+          "en": "suggestion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.7,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문의 전체적인 중심 내용은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "병원 예약 시스템 도입에 따른 효율성과 취약계층 소외 문제"
+        },
+        {
+          "id": "a2",
+          "text": "스마트폰 보급 확대로 인한 모든 환자의 편의 증대"
+        },
+        {
+          "id": "a3",
+          "text": "의료 서비스의 전면적인 디지털화와 비용 절감 효과"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "하지만 이러한 편리함의 이면에는 디지털 환경에 익숙하지 않은 취약층의 불편이라는 그림자가 짙게 드리워져 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "김 씨가 진료를 받지 못할 뻔한 직접적인 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "병원 휴무일과 겹쳤기 때문"
+        },
+        {
+          "id": "a2",
+          "text": "예약 시간을 놓쳐 자동 취소되었기 때문"
+        },
+        {
+          "id": "a3",
+          "text": "진료 비용을 지불하지 못했기 때문"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "김 씨는 문자 메시지를 확인하지 못해 정해진 입실 시간을 놓쳤고, 시스템상 이미 예약이 자동 취소된 상태였다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "간호사 박 씨가 김 씨의 진료 후에도 마음이 편해지지 않은 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "의사가 자신의 결정을 강하게 질책했기 때문"
+        },
+        {
+          "id": "a2",
+          "text": "병원비가 없어서 김 씨가 처방전을 받지 못했기 때문"
+        },
+        {
+          "id": "a3",
+          "text": "기술 발전 뒤에 가려진 소외와 구조적 모순을 깨달았기 때문"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "기술의 발전이 인간을 위한 도구여야 함에도 불구하고 오히려 특정한 누군가를 소외시키는 모순적인 현실을 목격했기 때문이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "글쓴이가 이 이야기를 통해 독자에게 전달하고자 하는 주요 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기술 만능주의의 이면을 조명하고 포용적 대책의 필요성 제기"
+        },
+        {
+          "id": "a2",
+          "text": "병원 운영비 절감을 위한 효과적인 문자 시스템 홍보"
+        },
+        {
+          "id": "a3",
+          "text": "아날로그 방식의 완전한 폐지와 디지털 전환 촉구"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "박 씨는 병원 관리자들에게 단순히 문자로만 안내하는 방식을 고집할 것이 아니라, 전화가 어려운 이들을 위한 별도의 아날로그 창구나 대면 안내 인력이 반드시 병행되어야 한다고 강력하게 건의했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조와 분위기로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "경쾌하고 유머러스함"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적임"
+        },
+        {
+          "id": "a3",
+          "text": "냉냉하고 무관심함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "모든 진보가 곧바로 평등을 의미하지 않는다는 뼈아픈 깨달음 속에서 다나 의원은 새로운 고민을 시작했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 '어떤 일의 표면에 내세우는 명목이나 그럴듯한 이름'을 뜻하는 단어는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "장벽"
+        },
+        {
+          "id": "a2",
+          "text": "모순"
+        },
+        {
+          "id": "a3",
+          "text": "미명"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "효율성이라는 미명 아래 병원은 점점 더 많은 것을 요구하고 있었고, 약자들은 그 속도를 따라잡느라 숨이 찼다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "기술의 발전이 가져온 편리함과 그로 인해 소외되는 계층 사이의 갈등을 해결하기 위해 병원이나 공공기관이 취해야 할 구체적인 보완책에 관해 본인의 의견을 200자 이상으로 작성하세요.",
+      "en": "기술의 발전이 가져온 편리함과 그로 인해 소외되는 계층 사이의 갈등을 해결하기 위해 병원이나 공공기관이 취해야 할 구체적인 보완책에 관해 본인의 의견을 200자 이상으로 작성하세요."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "디지털 예약 시스템 도입에 따른 갈등과 해결 과정을 분석하고 이해도를 점검하세요.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "디지털 대기실의 그림자 | B2 Reading | WeLearn",
+      "en": "디지털 대기실의 그림자 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "진료실 예약 문자가 효율성을 높이지만 모든 환자에게 공평하지는 않음을 다룬 이야기입니다. 본문을 읽고 세부 사항을 파악해 보세요.",
+      "en": "진료실 예약 문자가 효율성을 높이지만 모든 환자에게 공평하지는 않음을 다룬 이야기입니다. 본문을 읽고 세부 사항을 파악해 보세요."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

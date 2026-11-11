@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-shared-desks",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Рабочие места без фиксированных стен",
+      "en": "Рабочие места без фиксированных стен"
+    },
+    "intro": {
+      "es": "Прочитайте внутреннее электронное письмо в небольшой дизайнерской фирме и выполните задания по проверке понимания текста.",
+      "en": "Прочитайте внутреннее электронное письмо в небольшой дизайнерской фирме и выполните задания по проверке понимания текста."
+    },
+    "mission": {
+      "es": "Внимательно изучите текст, обращая внимание на аргументы руководства и сотрудников, а затем ответьте на вопросы в формате множественного выбора.",
+      "en": "Внимательно изучите текст, обращая внимание на аргументы руководства и сотрудников, а затем ответьте на вопросы в формате множественного выбора."
+    },
+    "targetText": "От: Марина Смирнова, операционный директор\nКому: Всем сотрудникам студии «Альтернатива»\nТема: Итоги эксперимента с гибкими рабочими местами и новые правила\n\nКоллеги, подошел к концу наш трехмесячный эксперимент по внедрению концепции «горячих столов», когда сотрудники не имеют закрепленных за ними рабочих мест, а бронируют свободный стол через внутреннее приложение на конкретный день. Изначально этот шаг казался идеальным решением для оптимизации аренды нашего небольшого офиса в центре города, особенно учитывая стремление команды совмещать удаленную работу с присутствием в студии. Многие отмечали, что такая система стимулирует живое общение между разными отделами и позволяет менять обстановку в зависимости от текущих задач. Действительно, гибкий график помог нам сократить пустующие площади по понедельникам и пятницам, когда большинство работает из дома, и снизить постоянные накладные расходы компании.\n\nОднако по мере того, как проект развивался, стали очевидны серьезные организационные трения, требующие немедленного вмешательства. Главной проблемой неожиданно оказалось хранение специализированного оборудования. Если маркетологам и копирайтерам достаточно обычного ноутбука, который легко помещается в рюкзак, то наши графические дизайнеры, звукорежиссеры и инженеры визуализации зависят от тяжелых мониторов с точной цветопередачей, графических планшетов и массивных кабелей. Заставлять творческих специалистов ежедневно носить с собой тяжелую периферию в общественном транспорте оказалось не только утомительно, но и опасно для дорогостоящей техники. Попытки оставлять мониторы в общих шкафчиках привели к тому, что устройства часто оказываются разряженными, а универсальные переходники регулярно пропадают, создавая утренний хаос перед совещаниями.\n\nСитуация обострилась на прошлой неделе, когда ведущий дизайнер Илья Соколов обнаружил, что его калиброванный экран оказался занят другим сотрудником, который случайно повредил защитное покрытие матрицы. Илья был вынужден отменить презентацию макета для ключевого заказчика, поскольку на восстановление настроек ушло бы слишком много времени. Этот инцидент вызвал бурную дискуссию в корпоративном чате: часть команды требует полностью вернуть фиксированные места, аргументируя это потерей чувства личного пространства и снижением концентрации, в то время как руководство видит корень проблемы в плохой самоорганизации коллектива, а не в самой концепции шеринга.\n\nМы не можем полностью отказаться от гибкого офиса, так как это нарушит финансовый план студии на год вперед, но и игнорировать нужды производственного отдела больше нельзя. Полноценное возвращение к старой схеме рассадки увеличит арендные платежи на треть, что неизбежно отразится на выплате квартальных премий. С другой стороны, компромисс в виде гибридного зонирования потребует от нас жесткой дисциплины. Нам придется ввести персональные долгосрочные ячейки с замками для тяжелой периферии и закрепить за каждым техническим специалистом по одному стационарному рабочему месту у окна, оставив остальные столы свободными для бронирования.\n\nЖду ваши конструктивные предложения по этому вопросу на завтрашней утренней встрече. Если до конца недели мы не утвердим новый регламент хранения аппаратуры, студии придется ввести строгие штрафы за оставленные без присмотра вещи и ограничить доступ к технической зоне. Надеюсь на ваше понимание и готовность искать баланс между экономией компании и комфортом каждого специалиста.",
+    "wordCount": 445,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "накладные расходы",
+        "lemma": "накладные расходы",
+        "glosses": {
+          "es": "overhead expenses",
+          "en": "overhead expenses"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "периферию",
+        "lemma": "периферию",
+        "glosses": {
+          "es": "peripheral equipment",
+          "en": "peripheral equipment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инцидент",
+        "lemma": "инцидент",
+        "glosses": {
+          "es": "incident",
+          "en": "incident"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "зонирования",
+        "lemma": "зонирования",
+        "glosses": {
+          "es": "zoning",
+          "en": "zoning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "регламент",
+        "lemma": "регламент",
+        "glosses": {
+          "es": "regulations",
+          "en": "regulations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромисс",
+        "lemma": "компромисс",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 23.4,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема данного электронного письма?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Поиск баланса между экономией офисного пространства и удобством работы специалистов"
+        },
+        {
+          "id": "a2",
+          "text": "Обзор финансовых результатов фирмы за квартал"
+        },
+        {
+          "id": "a3",
+          "text": "Полный переход всей студии на удаленный формат работы из дома"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Надеюсь на ваше понимание и готовность искать баланс между экономией компании и комфортом каждого специалиста.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Какая проблема возникла у дизайнера Ильи Соколова?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Он забыл свой ноутбук дома и не смог подключиться к корпоративной сети"
+        },
+        {
+          "id": "a2",
+          "text": "Его калиброванный экран занял другой сотрудник и повредил покрытие матрицы"
+        },
+        {
+          "id": "a3",
+          "text": "Его уволили за опоздание на важную презентацию перед ключевым клиентом"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ведущий дизайнер Илья Соколов обнаружил, что его калиброванный экран оказался занят другим сотрудником, который случайно повредил защитное покрытие матрицы.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему руководство не может полностью отменить систему гибких столов?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Потому что это приведет к увольнению всех удаленных сотрудников"
+        },
+        {
+          "id": "a2",
+          "text": "Потому что у компании нет денег на покупку новых столов"
+        },
+        {
+          "id": "a3",
+          "text": "Потому что это разрушит утвержденный финансовый план студии и увеличит арендные платежи"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Полноценное возвращение к старой схеме рассадки увеличит арендные платежи на треть, что неизбежно отразится на выплате квартальных премий.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью Марина Смирнова написала это письмо сотрудникам?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы обсудить накопившиеся проблемы шеринга столов и подготовить почву для компромиссного решения"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы сообщить о закрытии студии из-за финансовых трудностей"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы наказать виновных в порче дорогостоящего оборудования"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Жду ваши конструктивные предложения по этому вопросу на завтрашней утренней встрече.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков общий тон коммуникации руководства с коллективом в данном письме?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ироничный и пренебрежительный по отношению к проблемам дизайнеров"
+        },
+        {
+          "id": "a2",
+          "text": "Строго деловой, конструктивный, но твердый в отстаивании финансовых интересов"
+        },
+        {
+          "id": "a3",
+          "text": "Чрезмерно эмоциональный и паникерский из-за одного инцидента"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Мы не можем полностью отказаться от гибкого офиса, так как это нарушит финансовый план студии на год вперед, но и игнорировать нужды производственного отдела больше нельзя.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что в тексте обозначает словосочетание «накладные расходы»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Дополнительные затраты на покупку бумаги"
+        },
+        {
+          "id": "a2",
+          "text": "Штрафы за опоздание на работу"
+        },
+        {
+          "id": "a3",
+          "text": "Постоянные расходы компании на содержание офиса"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "снизить постоянные накладные расходы компании.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите ответное письмо от лица ведущего дизайнера Ильи Соколова, в котором он предлагает конкретный план организации рабочих мест с учетом потребностей творческого отдела и интересов руководства. Объем текста — 120–150 слов.",
+      "en": "Напишите ответное письмо от лица ведущего дизайнера Ильи Соколова, в котором он предлагает конкретный план организации рабочих мест с учетом потребностей творческого отдела и интересов руководства. Объем текста — 120–150 слов."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Внимательно изучите текст, обращая внимание на аргументы руководства и сотрудников, а затем ответьте на вопросы в формате множественного выбора.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Рабочие места без фиксированных стен | B2 Reading | WeLearn",
+      "en": "Рабочие места без фиксированных стен | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте внутреннее электронное письмо в небольшой дизайнерской фирме и выполните задания по проверке понимания текста.",
+      "en": "Прочитайте внутреннее электронное письмо в небольшой дизайнерской фирме и выполните задания по проверке понимания текста."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}

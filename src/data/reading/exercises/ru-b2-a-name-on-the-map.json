@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Исторический выбор Зареченска",
+      "en": "Исторический выбор Зареченска"
+    },
+    "intro": {
+      "es": "Прочитайте художественный текст о споре вокруг переименования города и выполните задания по проверке понимания.",
+      "en": "Прочитайте художественный текст о споре вокруг переименования города и выполните задания по проверке понимания."
+    },
+    "mission": {
+      "es": "Внимательно изучите текст, обращая внимание на аргументы обеих сторон, затем ответьте на вопросы и выполните письменное задание.",
+      "en": "Внимательно изучите текст, обращая внимание на аргументы обеих сторон, затем ответьте на вопросы и выполните письменное задание."
+    },
+    "targetText": "Вечерний свет фонарей едва освещал фасад старой городской управы, где собрался городской совет Зареченска. На повестке дня стоял вопрос, который уже несколько недель разделял жителей на два непримиримых лагеря: стоит ли возвратить поселению его историческое название — Озерский-на-Проре? Инициативная группа краеведов утверждала, что нынешнее советское наименование стирает память о событиях девятнадцатого века, когда здесь процветали знаменитые ярмарки и ремесла. Они подготовили увесистые папки с архивными картами, доказывая, что возвращение корней привлечет туристов и укрепит местную идентичность. Архивариус Виктор Павлович горячо доказывал с трибуны, что уважение к прошлому — это единственный фундамент для устойчивого будущего.\n\nОднако владельцы придорожных отелей и логистических компаний смотрели на инициативу прагматично и без всякого энтузиазма. Предприниматель Сергей Громов взял слово после краеведов и указал на очевидные логистические издержки. По его мнению, изменение указателей на трассе, переоформление лицензий и путаница в навигационных системах могут отпугнуть транзитных путешественников. Водители грузовиков и туристы просто заблудятся в поисках несуществующего на современных картах пункта, что мгновенно ударит по придорожному бизнесу. Громов не отрицал важности истории, но настаивал, что экономическая стабильность города не должна приноситься в жертву романтическим амбициям.\n\nСпор затянулся до поздней ночи, обнажив глубокий социальный разрыв между старшим поколением, стремящимся восстановить историческую справедливость, и молодыми специалистами, ценящими предсказуемость и удобство инфраструктуры. Мэр города, выслушав обе стороны, попытался найти компромиссное решение, предложив сохранить официальное название для карт, но присвоение исторического имени центральной площади. Тем не менее, это половинчатое решение не устроило ни радикальных сторонников переименования, ни защитников бизнеса. Первые сочли это половинчатой мерой, а вторые усмотрели в этом угрозу постепенного удорожания всех бюрократических процедур.\n\nНапряжение в зале достигло пика, когда слово взял молодой историк Андрей, попытавшийся примирить оппонентов с помощью цифр и фактов. Он напомнил, что идентичность и прагматизм вовсе не обязательно должны исключать друг друга, если подойти к делу поэтапно. Тем не менее, его призыв к диалогу потонул в новом витке взаимных обвинений. Громов демонстративно сложил свои бумаги в портфель, а Виктор Павлович демонстративно отвернулся, подчеркивая принципиальность своей позиции. Никто не хотел уступать ни единого дюйма в этом идеологическом споре.\n\nВ результате голосование отложили на неопределенный срок, оставив город в подвешенном состоянии. Зареченск продолжил жить под привычным именем, но раскол в обществе стал еще более явным, чем прежде. Каждый житель теперь сам решал, в каком городе он живет — в индустриальном Зареченске или в утерянном во времени Озерском-на-Проре.\n\nТем не менее, эта вынужденная пауза породила неожиданный общественный эффект, которого никто не мог предвидеть. Обычные горожане, уставшие от бесконечных баталий между бизнесменами и краеведами, начали самостоятельно организовывать низовые инициативы по благоустройству дворов и изучению местных легенд без оглядки на официальные топонимы. Молодежь и пенсионеры вдруг обнаружили общие точки соприкосновения в волонтерских проектах, доказывая, что реальная забота о родных местах измеряется не сменом вывесок на дорогах, а повседневными делами.",
+    "wordCount": 447,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "краеведов",
+        "lemma": "краеведов",
+        "glosses": {
+          "es": "local historians",
+          "en": "local historians"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "издержки",
+        "lemma": "издержки",
+        "glosses": {
+          "es": "costs or expenses",
+          "en": "costs or expenses"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромиссное",
+        "lemma": "компромиссное",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "оппонентов",
+        "lemma": "оппонентов",
+        "glosses": {
+          "es": "opponents",
+          "en": "opponents"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "подвешенном",
+        "lemma": "подвешенном",
+        "glosses": {
+          "es": "suspended",
+          "en": "suspended"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "раскол",
+        "lemma": "раскол",
+        "glosses": {
+          "es": "split or divide",
+          "en": "split or divide"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.9,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Дискуссия о возвращении городу исторического названия."
+        },
+        {
+          "id": "a2",
+          "text": "Развитие туристической инфраструктуры региона."
+        },
+        {
+          "id": "a3",
+          "text": "Экономические проблемы придорожного бизнеса."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "На повестке дня стоял вопрос, который уже несколько недель разделял жителей на два непримиримых лагеря: стоит ли возвратить поселению его историческое название — Озерский-на-Проре?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Кто выступил против изменения названия города?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Молодой историк Андрей."
+        },
+        {
+          "id": "a2",
+          "text": "Предприниматели и владельцы отелей."
+        },
+        {
+          "id": "a3",
+          "text": "Архивариус Виктор Павлович."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "владельцы придорожных отелей и логистических компаний смотрели на инициативу прагматично и без всякого энтузиазма.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему предприниматели опасались переименования?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Потому что они не любили местную историю."
+        },
+        {
+          "id": "a2",
+          "text": "Из-за резкого роста налогов на недвижимость."
+        },
+        {
+          "id": "a3",
+          "text": "Из-за возможных проблем с навигацией и убытков бизнеса."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Водители грузовиков и туристы просто заблудятся в поисках несуществующего на современных картах пункта, что мгновенно ударит по придорожному бизнесу.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какую роль сыграло предложение мэра?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оно не удовлетворило ни одну из противоборствующих сторон."
+        },
+        {
+          "id": "a2",
+          "text": "Оно полностью примирило краеведов и бизнесменов."
+        },
+        {
+          "id": "a3",
+          "text": "Оно было сразу принято единогласным голосованием."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Тем не менее, это половинчатое решение не устроило ни радикальных сторонников переименования, ни защитников бизнеса.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как можно охарактеризовать общую атмосферу городского совета?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Спокойная и конструктивная."
+        },
+        {
+          "id": "a2",
+          "text": "Напряженная и непримиримая."
+        },
+        {
+          "id": "a3",
+          "text": "Дружелюбная и оптимистичная."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Напряжение в зале достигло пика, когда слово взял молодой историк Андрей, попытавшийся примирить оппонентов с помощью цифр и фактов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Какое слово в тексте обозначает раскол или разделение в обществе?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "компромиссное"
+        },
+        {
+          "id": "a2",
+          "text": "издержки"
+        },
+        {
+          "id": "a3",
+          "text": "раскол"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Зареченск продолжил жить под привычным именем, но раскол в обществе стал еще более явным, чем прежде.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите текст объемом 120–150 слов на русском языке, в котором вы выскажете свое мнение: стоит ли современным городам возвращать исторические названия, учитывая интересы бизнеса и местных жителей.",
+      "en": "Напишите текст объемом 120–150 слов на русском языке, в котором вы выскажете свое мнение: стоит ли современным городам возвращать исторические названия, учитывая интересы бизнеса и местных жителей."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Внимательно изучите текст, обращая внимание на аргументы обеих сторон, затем ответьте на вопросы и выполните письменное задание.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Исторический выбор Зареченска | B2 Reading | WeLearn",
+      "en": "Исторический выбор Зареченска | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте художественный текст о споре вокруг переименования города и выполните задания по проверке понимания.",
+      "en": "Прочитайте художественный текст о споре вокруг переименования города и выполните задания по проверке понимания."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}

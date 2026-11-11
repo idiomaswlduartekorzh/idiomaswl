@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "古い地名の復元をめぐる議論",
+      "en": "古い地名の復元をめぐる議論"
+    },
+    "intro": {
+      "es": "古い地名の復活がもたらす歴史的価値と実務上の混乱について、住民の対立を描いた読解課題です。",
+      "en": "古い地名の復活がもたらす歴史的価値と実務上の混乱について、住民の対立を描いた読解課題です。"
+    },
+    "mission": {
+      "es": "物語を読み、地名変更に伴う利害の対立や登場人物の立場を把握し、質問に答えなさい。",
+      "en": "物語を読み、地名変更に伴う利害の対立や登場人物の立場を把握し、質問に答えなさい。"
+    },
+    "targetText": "静かな港町である緑ヶ浜町では、近年、かつての古い地名である「湊崎」という名称を公式に復活させるべきかどうかが、住民の間で大きな議論となっていた。町の歴史的アイデンティティを取り戻す好機だと主張するのは、歴史研究家の佐伯である。彼は、古い地名には先人たちの営みや地理的特徴が刻まれており、それを蘇らせることで地域への誇りが高まると熱弁を振るっていた。若い世代の住民の中には、この意見に共鳴し、町のブランド力を高めるチャンスだと捉える者も少なくなかった。確かに、かつての名称には郷土の歴史を物語る深い重みがあり、文化的価値を軽視すべきではないという点においては、多くの住民の意見が一致していた。\n\nしかし、この提案に対して強い懸念を抱いている人々も存在した。その代表格が、町内で小さな運送会社を営む村上である。村上は、毎日のように町を訪れる配送業者や観光客にとって、長年親しまれてきた現在の「緑ヶ浜」という名前が変わることは、深刻な混乱を招くと主張した。カーナビや地図の更新作業には莫大な労力と費用がかかるだけでなく、緊急時の消防や救急車両の到着が遅れるリスクさえあるというのだ。彼の指摘は、単なる変化への抵抗ではなく、日々の実務に直結する切実な問題提起であったため、多くの商工業者から強い支持を集めることになった。\n\n議論は平行線をたどったまま、町役場主催の公聴会を迎えることになった。会場には多くの住民が詰めかけ、歴史的価値を重視する一派と、実利や利便性を守る一派がそれぞれの正当性を訴えて激しく対立した。佐伯は古い記録の写しを掲げ、失われた記憶を取り戻すことの尊さを訴え、一方の村上は最新の配達伝票やトラブルの事例を示して現実の厳しさを強調した。お互いの主張はいずれも一理あり、どちらか一方を安易に切り捨てることはできない重みを持っていた。町長は、住民の間に亀裂が生じている現状を重く受け止め、即決を避けてさらなる協議の場を設けることを余儀なくされた。\n\n数週間にわたる非公式な話し合いの末、両者は徐歩的な歩み寄りを見せ始めた。歴史的な誇りを残しつつ、実務上の混乱を防ぐための折衷案として、行政上の正式な地名は緑ヶ浜を維持しつつ、歴史的地区の愛称として「湊崎」を公式に認定し、案内板や観光マップに併記するという妥協点である。この提案は、完璧な解決策ではないものの、双方が抱える不安と願いを一定の形で汲み取るものであった。佐伯は先人の名が公の空間に復活することを喜び、村上も実務的な混乱が回避されることに安堵の表情を浮かべた。\n\nこうして、町は分裂の危機を辛うじて回避し、新たな一歩を踏み出すことになった。しかし、この一連の騒動は、名前というものが単なる記号ではなく、人々の生活の基盤であり記憶そのものであるという重い事実を住民の心に刻み込んだ。愛称の併記という形式的な平穏が保たれたものの、効率性と歴史的継承のバランスをいかに保ち続けるかという課題は、今後もこの町が静かに背負っていくべき永続的な問いとして残り続けるのであった。",
+    "wordCount": 1186,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "アイデンティティ",
+        "lemma": "アイデンティティ",
+        "glosses": {
+          "es": "identity",
+          "en": "identity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "共鳴",
+        "lemma": "共鳴",
+        "glosses": {
+          "es": "resonance or sympathy",
+          "en": "resonance or sympathy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "平行線",
+        "lemma": "平行線",
+        "glosses": {
+          "es": "parallel lines (failing to intersect)",
+          "en": "parallel lines (failing to intersect)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "切実",
+        "lemma": "切実",
+        "glosses": {
+          "es": "pressing or earnest",
+          "en": "pressing or earnest"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "折衷案",
+        "lemma": "折衷案",
+        "glosses": {
+          "es": "compromise plan",
+          "en": "compromise plan"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "併記",
+        "lemma": "併記",
+        "glosses": {
+          "es": "writing side by side",
+          "en": "writing side by side"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 53.9,
+      "maxSentenceWords": 91,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語全体のテーマとして最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地名の変更をめぐる住民の対立と妥協の過程"
+        },
+        {
+          "id": "a2",
+          "text": "観光客の増加がもたらした町の交通問題"
+        },
+        {
+          "id": "a3",
+          "text": "古い歴史を持つ建造物の保存に関する意見の不一致"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "静かな港町である緑ヶ浜町では、近年、かつての古い地名である「湊崎」という名称を公式に復活させるべきかどうかが、住民の間で大きな議論となっていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "村上が地名変更に反対した主な理由として本文に述べられていることはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "町の歴史的価値が失われるから"
+        },
+        {
+          "id": "a2",
+          "text": "配送や緊急時の深刻な混乱を招くから"
+        },
+        {
+          "id": "a3",
+          "text": "観光客が減少し経済が衰退するから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "カーナビや地図の更新作業には莫大な労力と費用がかかるだけでなく、緊急時の消防や救急車両の到着が遅れるリスクさえあるというのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "最終的に採用された折衷案について、登場人物たちの受け止め方として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "双方が満足している"
+        },
+        {
+          "id": "a2",
+          "text": "双方が納得していない"
+        },
+        {
+          "id": "a3",
+          "text": "双方が不安と願いを形にできた"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この提案は、完璧な解決策ではないものの、双方が抱える不安と願いを一定の形で汲み取るものであった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "佐伯が古い記録の写しを掲げて公聴会で訴えた目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "失われた記憶を取り戻すことの尊さを伝えるため"
+        },
+        {
+          "id": "a2",
+          "text": "新しい道路や建物の建設を進めるため"
+        },
+        {
+          "id": "a3",
+          "text": "運送業者の主張の誤りを証明するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "佐伯は古い記録の写しを掲げ、失われた記憶を取り戻すことの尊さを訴え、一方の村上は最新の配達伝票やトラブルの事例を示して現実の厳しさを強調した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "結末部分における筆者のトーンや立場を表しているものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地名変更の成功を強く礼賛する"
+        },
+        {
+          "id": "a2",
+          "text": "住民の葛藤や永続的な課題を冷静に見つめる"
+        },
+        {
+          "id": "a3",
+          "text": "行政の優柔不断な態度を厳しく非難する"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "効率性と歴史的継承のバランスをいかに保ち続けるかという課題は、今後もこの町が静かに背負っていくべき永続的な問いとして残り続けるのであった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「平行線をたどったまま」という表現が意味しているものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "意見が交わらない"
+        },
+        {
+          "id": "a2",
+          "text": "議論が全く進展しない"
+        },
+        {
+          "id": "a3",
+          "text": "お互いの意見がまとまらず議論が噛み合わないまま"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "議論は平行線をたどったまま、町役場主催の公聴会を迎えることになった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたの住んでいる地域や身近な場所で、古い名称や歴史的な価値を復活させることと、現在の利便性や実用性を優先することの間で意見が対立したとしたら、あなたならどのような解決策を提案しますか。本文の状況を踏まえ、自分の意見を400字程度で述べなさい。",
+      "en": "あなたの住んでいる地域や身近な場所で、古い名称や歴史的な価値を復活させることと、現在の利便性や実用性を優先することの間で意見が対立したとしたら、あなたならどのような解決策を提案しますか。本文の状況を踏まえ、自分の意見を400字程度で述べなさい。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "物語を読み、地名変更に伴う利害の対立や登場人物の立場を把握し、質問に答えなさい。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "古い地名の復元をめぐる議論 | B2 Reading | WeLearn",
+      "en": "古い地名の復元をめぐる議論 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "古い地名の復活がもたらす歴史的価値と実務上の混乱について、住民の対立を描いた読解課題です。",
+      "en": "古い地名の復活がもたらす歴史的価値と実務上の混乱について、住民の対立を描いた読解課題です。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-school-garden",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "푸른 교정의 여름 방학",
+      "en": "푸른 교정의 여름 방학"
+    },
+    "intro": {
+      "es": "학교 텃밭 운영을 둘러싼 학생들과 학부모의 갈등과 해결 과정을 다룬 기사문을 읽고 독해력을 점검합니다.",
+      "en": "학교 텃밭 운영을 둘러싼 학생들과 학부모의 갈등과 해결 과정을 다룬 기사문을 읽고 독해력을 점검합니다."
+    },
+    "mission": {
+      "es": "텃밭 관리 방안을 둘러싼 의견 차이가 어떻게 조율되었는지 파악하고 본문의 핵심 논지를 분석하시오.",
+      "en": "텃밭 관리 방안을 둘러싼 의견 차이가 어떻게 조율되었는지 파악하고 본문의 핵심 논지를 분석하시오."
+    },
+    "targetText": "지난 봄, 민우와 은지 등 환경 동아리 학생들은 학교 식당의 식단을 개선하겠다는 야심 찬 포부로 교내 유휴지에 작은 텃밭을 일구었다. 학생들이 직접 심은 상추와 고추는 무럭무럭 자라나 여름이 되자 학교 급식에 오르기 시작했고, 신선한 채소 덕분에 학생들의 급식 만족도는 눈에 띄게 높아졌다. 그러나 본격적인 여름 방학이 시작되면서 예상치 못한 문제가 수면 위로 떠올랐다. 방학 기간 동안 매일 텃밭에 물을 주고 잡음을 뽑아줄 관리 인력이 턱없이 부족하다는 사실이었다. 동아리 회장인 민우는 방학 중 당번제를 운영하여 학생들이 번갈아 가며 학교에 나와 텃밭을 관리하자는 대안을 제시했다. 하지만 이 제안은 곧바로 학부모들의 강한 반대에 부딪혔다. 학부모들은 방학 중에도 학생들을 학교로 불러내는 것은 휴식권을 침해하는 처사일 뿐더러, 맞벌이 가정의 경우 아이들의 등하교 안전까지 신경 써야 하는 추가적인 부담이 된다고 지적했다. 단순히 급식의 질을 높이겠다는 선의에서 출발한 활동이 세대 간의 인식 차이와 책임 소재를 둘러싼 갈등으로 번진 것이다. 양측의 팽팽한 대립 속에서 교장 선생님은 중재안을 내놓았다. 방학 중 평일 오전 시간에 교사들과 인근 주민들이 자발적으로 참여하는 자원봉사 모임을 꾸리고, 학생들이 주도하는 방학 당번제는 의무가 아닌 희망자에 한해 소그룹 형태로 운영하자는 것이었다. 이 타협안은 학부모들의 부담을 덜어주는 동시에 학생들의 자발적 참여 의지도 살릴 수 있었다. 방학이 끝난 뒤, 텃밭은 무사히 보존되었고 수확물은 지역 아동 센터에 기부되었다. 이번 갈등은 공동체의 일이 누구 한 사람의 희생이나 일방적인 강요가 아니라 모두의 지혜로운 협력으로 지속될 수 있음을 보여주는 중요한 계기가 되었다.\n\n이러한 성공적인 경험은 학생들에게 학교 공간을 단순한 학습의 장소가 아니라 살아있는 생태적 배움터로 재인식하게 만들었으며 나아가 지역 사회와의 긴밀한 연대를 통해 진정한 시민성 교육이 무엇인지 몸소 깨닫는 소중한 밑거름이 되었다.",
+    "wordCount": 240,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "유휴지",
+        "lemma": "유휴지",
+        "glosses": {
+          "es": "idle land",
+          "en": "idle land"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "수면",
+        "lemma": "수면",
+        "glosses": {
+          "es": "surface",
+          "en": "surface"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "처사",
+        "lemma": "처사",
+        "glosses": {
+          "es": " treatment",
+          "en": " treatment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "중재안",
+        "lemma": "중재안",
+        "glosses": {
+          "es": "arbitration proposal",
+          "en": "arbitration proposal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "타협안",
+        "lemma": "타협안",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "계기가",
+        "lemma": "계기가",
+        "glosses": {
+          "es": "opportunity",
+          "en": "opportunity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.1,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 기사문이 다루고 있는 중심 사건은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학교 텃밭 운영을 둘러싼 갈등과 타협"
+        },
+        {
+          "id": "a2",
+          "text": "방학 중 텃밭 관리 문제를 해결한 과정"
+        },
+        {
+          "id": "a3",
+          "text": "학생들이 식당 식단을 개선한 과정"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "단순히 급식의 질을 높이겠다는 선의에서 출발한 활동이 세대 간의 인식 차이와 책임 소재를 둘러싼 갈등으로 번진 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "학부모들이 학생들이 학교로 나오는 방학 당번제에 반대했던 주된 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "농사 경험의 부족"
+        },
+        {
+          "id": "a2",
+          "text": "휴식권 침해와 안전 문제"
+        },
+        {
+          "id": "a3",
+          "text": "학업 지장"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "방학 중에도 학생들을 학교로 불러내는 것은 휴식권을 침해하는 처사일 뿐더러, 맞벌이 가정의 경우 아이들의 등하교 안전까지 신경 써야 하는 추가적인 부담이 된다고 지적했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "교장 선생님이 제시한 중재안이 지니는 성격에 대한 설명으로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학생들의 자발성을 완전히 배제한 강제 조치이다."
+        },
+        {
+          "id": "a2",
+          "text": "학교 측의 관리 책임을 전적으로 학부모에게 전가한다."
+        },
+        {
+          "id": "a3",
+          "text": "학부모와 학생 양측의 부담을 줄이고 참여를 유도한다."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이 타협안은 학부모들의 부담을 덜어주는 동시에 학생들의 자발적 참여 의지도 살릴 수 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "글쓴이가 이 글을 통해 독자에게 전달하고자 하는 주된 메시지는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공동체 과제는 강요보다는 협력으로 해결해야 한다."
+        },
+        {
+          "id": "a2",
+          "text": "방학 중 학교 시설 이용은 전면 금지되어야 한다."
+        },
+        {
+          "id": "a3",
+          "text": "친환경 급식의 확대를 위해 농사를 장려해야 한다."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 갈등은 공동체의 일이 누구 한 사람의 희생이나 일방적인 강요가 아니라 모두의 지혜로운 협력으로 지속될 수 있음을 보여주는 중요한 계기가 되었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전체적인 어조와 서술 태도로 가장 알맞은 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "감정적"
+        },
+        {
+          "id": "a2",
+          "text": "객관적"
+        },
+        {
+          "id": "a3",
+          "text": "비판적"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "지난 봄, 민우와 은지 등 환경 동아리 학생들은 학교 식당의 식단을 개선하겠다는 야심 찬 포부로 교내 유휴지에 작은 텃밭을 일구었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 사용된 단어 중 '아무 일도 하지 않고 내버려 둔 땅'을 뜻하는 표현은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "수면"
+        },
+        {
+          "id": "a2",
+          "text": "처사"
+        },
+        {
+          "id": "a3",
+          "text": "유휴지"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "지난 봄, 민우와 은지 등 환경 동아리 학생들은 학교 식당의 식단을 개선하겠다는 야심 찬 포부로 교내 유휴지에 작은 텃밭을 일구었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "학교 공동체 활동에서 발생할 수 있는 갈등 상황을 하나 정하고, 이를 원만하게 해결하기 위한 본인만의 중재 방안을 세 문장 이상으로 작성하시오.",
+      "en": "학교 공동체 활동에서 발생할 수 있는 갈등 상황을 하나 정하고, 이를 원만하게 해결하기 위한 본인만의 중재 방안을 세 문장 이상으로 작성하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "텃밭 관리 방안을 둘러싼 의견 차이가 어떻게 조율되었는지 파악하고 본문의 핵심 논지를 분석하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "푸른 교정의 여름 방학 | B2 Reading | WeLearn",
+      "en": "푸른 교정의 여름 방학 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "학교 텃밭 운영을 둘러싼 학생들과 학부모의 갈등과 해결 과정을 다룬 기사문을 읽고 독해력을 점검합니다.",
+      "en": "학교 텃밭 운영을 둘러싼 학생들과 학부모의 갈등과 해결 과정을 다룬 기사문을 읽고 독해력을 점검합니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

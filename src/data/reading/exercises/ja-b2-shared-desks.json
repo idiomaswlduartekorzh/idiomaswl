@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-shared-desks",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "固定席の撤廃に伴う特殊機材の保管に関する緊急連絡",
+      "en": "固定席の撤廃に伴う特殊機材の保管に関する緊急連絡"
+    },
+    "intro": {
+      "es": "共有オフィスの導入によって生じた実務上の摩擦と、その解決に向けた部署間の協議に関するメール文を読み、B2レベルの読解力を測ります。",
+      "en": "共有オフィスの導入によって生じた実務上の摩擦と、その解決に向けた部署間の協議に関するメール文を読み、B2レベルの読解力を測ります。"
+    },
+    "mission": {
+      "es": "本文を精読し、登場人物が直面している構造的な課題と、下された最終判断の妥当性について把握してください。",
+      "en": "本文を精読し、登場人物が直面している構造的な課題と、下された最終判断の妥当性について把握してください。"
+    },
+    "targetText": "営業部の佐藤様、総務部の高橋です。いつも全社的なコスト削減と効率的なフロア運用にご協力いただき、心より感謝申し上げます。さて、先月実施されたフリーアドレス制の本格導入以降、各部署からさまざまなフィードバックが寄せられておりますが、とりわけ御社が抱える特殊機材の保管場所について、深刻な懸念が生じていることを看過できなくなりました。出社日を自由に選べる柔軟な働き方は、社員の通勤ストレスを軽減し、生産性向上に寄与しているという点においては、総務部としても高く評価しているところでございます。しかしながら、共有デスクの導入に伴い、各人が毎日すべての私物を持ち運ぶ運用が原則とされた結果、御社の業務に不可欠な大型の計測器や高精度な解析用端末が、共有スペースのキャビネットを過度に占有するという事態が発生しております。先日、鈴木部長からも直接ご相談を承り、一時的な例外措置として会議室の一角を臨時の資材置き場として開放いたしましたが、これはあくまで暫定的な対応であり、他の部署からの不満の声も日に日に高まっております。共有という概念は、限られたリソースを公平に分配し、全員が快適に利用できる環境を維持するためのものでありますが、特定の部署のみが専用のインフラのように空間を利用し続けることは、全社的な合意形成の観点から決して許容されるべきではありません。もちろん、御社が扱う機材の専門性と、それらが日々の営業活動に直結する重要なお道具であることは、総務部としても十分に理解しているつもりです。ただ、社内のルールと個別の業務上の必要性との間でどのように妥当な均衡を見出すべきか、これ以上の先送りは組織の秩序を揺るがす恐れがあります。つきましては、来週の水曜日の定例会議におきまして、この問題に関する最終的な運用方針を決定する運びとなりました。その場におきましては、機材の集約化を進めるための外部倉庫の契約案、あるいは社内ロッカーの再割当による物理的な解決策について、具体的な数値に基づいたご提案を準備しておりますので、佐藤様におかれましても、実務的な観点から率直なご意見を賜れれば幸甚です。組織全体の利便性を損なうことなく、個別の業務要請を満たすための知恵を絞る必要がありますので、何卒前向きなご検討とご協力をお願い申し上げます。",
+    "wordCount": 913,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "看過",
+        "lemma": "看過",
+        "glosses": {
+          "es": "overlooking",
+          "en": "overlooking"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "寄与",
+        "lemma": "寄与",
+        "glosses": {
+          "es": "contribution",
+          "en": "contribution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "暫定",
+        "lemma": "暫定",
+        "glosses": {
+          "es": "provisional",
+          "en": "provisional"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "均衡",
+        "lemma": "均衡",
+        "glosses": {
+          "es": "equilibrium",
+          "en": "equilibrium"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "運び",
+        "lemma": "運び",
+        "glosses": {
+          "es": "turn of events",
+          "en": "turn of events"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "賜れ",
+        "lemma": "賜れ",
+        "glosses": {
+          "es": "bestow",
+          "en": "bestow"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 76.1,
+      "maxSentenceWords": 118,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "このメール全体が扱っている主要なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "フリーアドレス導入後の特殊機材の保管をめぐる部署間の対立"
+        },
+        {
+          "id": "a2",
+          "text": "社内コスト削減"
+        },
+        {
+          "id": "a3",
+          "text": "新しい会議室の予約システム"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "とりわけ御社が抱える特殊機材の保管場所について、深刻な懸念が生じていることを看過できなくなりました。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "鈴木部長から受けた相談に対して、総務部はどのような対応を取りましたか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "外部の倉庫を正式に契約した"
+        },
+        {
+          "id": "a2",
+          "text": "会議室の一角を臨時の資材置き場として開放した"
+        },
+        {
+          "id": "a3",
+          "text": "特殊機材の廃棄を命じた"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "一時的な例外措置として会議室の一角を臨時の資材置き場として開放いたしましたが",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "総務部がこの問題を来週の定例会議に持ち出す理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤様が新しいオフィスの改装を希望しているから"
+        },
+        {
+          "id": "a2",
+          "text": "他の部署が全員フリーアドレス制の廃止を求めているから"
+        },
+        {
+          "id": "a3",
+          "text": "先送りが組織の秩序を揺るがす恐れがあるから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "これ以上の先送りは組織の秩序を揺るがす恐れがあります。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "高橋がこのメールを送った最大の目的はどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "来週の定例会議に向けた建設的な議論と意見を促すため"
+        },
+        {
+          "id": "a2",
+          "text": "営業部の機材を即座にすべて撤去させるため"
+        },
+        {
+          "id": "a3",
+          "text": "フリーアドレス制の完全な廃止を一方的に通告するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "実務的な観点から率直なご意見を賜れれば幸甚です。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本文全体における書き手の態度の特徴として適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "個人的な感情をむき出しにして相手の部署を激しく非難する感情的な姿勢"
+        },
+        {
+          "id": "a2",
+          "text": "相手の立場に理解を示しつつも、ルールの厳格な運用を求める警告を含んだ慎重な姿勢"
+        },
+        {
+          "id": "a3",
+          "text": "規則の変更を一切認めず、一方的に罰則を科す強権的な姿勢"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "御社が扱う機材の専門性と、それらが日々の営業活動に直結する重要なお道具であることは、総務部としても十分に理解しているつもりです。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中で使われている「均衡」という言葉の最も適切な意味はどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "物事の順序や手際の良いやり方"
+        },
+        {
+          "id": "a2",
+          "text": "一時的で定まっていない状態"
+        },
+        {
+          "id": "a3",
+          "text": "二つ以上のものの間に保たれるつりあい"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "社内のルールと個別の業務上の必要性との間でどのように妥当な均衡を見出すべきか",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "共有オフィスやフリーアドレス制を導入した組織において、専門的な機材や私物の保管場所をめぐるトラブルは実際の職場で頻発します。もしあなたが営業部の佐藤の立場であれば、総務部からのこの連絡に対して、どのような妥協案や解決策を返信メールとして提案しますか。業務効率を落とさずに社内秩序を保つための具体的な方法を、敬語を用いて日本語で記述してください。",
+      "en": "共有オフィスやフリーアドレス制を導入した組織において、専門的な機材や私物の保管場所をめぐるトラブルは実際の職場で頻発します。もしあなたが営業部の佐藤の立場であれば、総務部からのこの連絡に対して、どのような妥協案や解決策を返信メールとして提案しますか。業務効率を落とさずに社内秩序を保つための具体的な方法を、敬語を用いて日本語で記述してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "本文を精読し、登場人物が直面している構造的な課題と、下された最終判断の妥当性について把握してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "固定席の撤廃に伴う特殊機材の保管に関する緊急連絡 | B2 Reading | WeLearn",
+      "en": "固定席の撤廃に伴う特殊機材の保管に関する緊急連絡 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "共有オフィスの導入によって生じた実務上の摩擦と、その解決に向けた部署間の協議に関するメール文を読み、B2レベルの読解力を測ります。",
+      "en": "共有オフィスの導入によって生じた実務上の摩擦と、その解決に向けた部署間の協議に関するメール文を読み、B2レベルの読解力を測ります。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

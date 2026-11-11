@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Эксперимент с залоговыми стаканчиками в кофейне «Утро»",
+      "en": "Эксперимент с залоговыми стаканчиками в кофейне «Утро»"
+    },
+    "intro": {
+      "es": "Прочитайте статью о внедрении системы возврата стаканчиков в городской кофейне и выполните задания по тексту.",
+      "en": "Прочитайте статью о внедрении системы возврата стаканчиков в городской кофейне и выполните задания по тексту."
+    },
+    "mission": {
+      "es": "Внимательно изучите текст, обращая внимание на детали экологической инициативы, трудности посетителей и экономические последствия, затем ответьте на вопросы.",
+      "en": "Внимательно изучите текст, обращая внимание на детали экологической инициативы, трудности посетителей и экономические последствия, затем ответьте на вопросы."
+    },
+    "targetText": "Городская кофейня «Утро», расположенная в тихом переулке, всегда гордилась своей лояльной аудиторией и стремлением к экологичности. Прошлым месяцем владелица заведения, Ирина Смирнова, решилась на радикальный шаг: полностью отказаться от одноматериальных бумажных стаканчиков, заменив их на многоразовую посуду с залоговой стоимостью. Суть нововведения заключалась в том, что каждый гость при покупке латте или фильтр-кофе доплачивал фиксированную сумму за прочный полимерный стакан. Эту сумму можно было вернуть наличными или на карту, сдав стакан обратно в кофейню или в один из партнерских пунктов приема, расположенных в соседних магазинах.\n\nПервые недели показали впечатляющие результаты в сфере сокращения отходов. Объем мусора, ежедневно вывозимого из кофейни, сократился почти втрое, что вызвало искреннюю радость у активистов районного экологического движения. Ирина с гордостью публиковала еженедельные отчеты в социальных сетях, демонстрируя пустые мусорные баки. Однако вскоре за кулисами экологического триумфа начали нарастать скрытые проблемы. Постоянные клиенты, жившие в том же доме или работающие неподалеку, быстро привыкли носить стаканы с собой и воспринимали залог как удобную инвестицию в чистоту улиц.\n\nСовершенно иначе обстояли дела с туристами и случайными прохожими, которые составляли значительную долю дневной выручки кофейни. Для человека, спешащего на вокзал или приехавшего в город на пару дней, возвращение стакана превращалось в логистический кошмар. Пожилой турист из другого региона, купивший утренний капучино перед экскурсией, физически не мог вернуться в переулок к вечеру, чтобы забрать свои деньги, и в итоге просто выбросил стакан в уличную урну на центральной площади, потеряв залог и разочаровавшись в сервисе. В книге отзывов стали появляться гневные записи о скрытых поборах под видом заботы о природе.\n\nФинансовые показатели кофейни также претерпели неожиданные изменения. С одной стороны, закупка одноразовой посуды прекратилась, что сэкономило бюджет. С другой стороны, общая проходимость упала: люди спешили и предпочитали обходить заведение стороной, опасаясь бюрократии с возвратом. Бариста Алексей отмечал, что вместо быстрой выдачи заказов ему теперь приходится тратить драгоценное время на объяснение правил, учет пластиковых жетонов и ручную мойку возвращенных емкостей, из-за чего на кассе стали собираться очереди.\n\nВ завершение эксперимента Ирина оказалась перед сложной дилеммой. Снижение объемов мусора бесспорно радовало экологов, но отчуждение случайных гостей и перегрузка персонала ставили под угрозу саму жизнеспособность бизнеса. Кофейня выполнила свою миссию по привлечению внимания к проблеме отходов, однако универсального ответа на вопрос, как примирить экологические амбиции с суровой рыночной реальностью, найдено не было.\n\nОсознав тупиковость ситуации, владелица решила внедрить гибридную систему, которая позволила бы сохранить как планету, так и прибыль. Начиная со следующего месяца, посетители получили право выбора: приобретать напиток в прежнем многоразовом формате с залогом или приходить со своей собственной термокружкой со скидкой, а для спешащих туристов были введены биоразлагаемые аналоги из кукурузного крахмала. Такой компромиссный шаг моментально разгрузил уставшего бариста, вернул случайных прохожих и доказал, что подлинная забота об окружающей среде должна опираться на гибкость и уважение к удобству каждого человека.",
+    "wordCount": 448,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "залоговой",
+        "lemma": "залоговой",
+        "glosses": {
+          "es": "deposit-based",
+          "en": "deposit-based"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "активистов",
+        "lemma": "активистов",
+        "glosses": {
+          "es": "activists",
+          "en": "activists"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "логистический",
+        "lemma": "логистический",
+        "glosses": {
+          "es": "logistical",
+          "en": "logistical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "проходимость",
+        "lemma": "проходимость",
+        "glosses": {
+          "es": "customer traffic",
+          "en": "customer traffic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дилеммой",
+        "lemma": "дилеммой",
+        "glosses": {
+          "es": "dilemma",
+          "en": "dilemma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "универсального",
+        "lemma": "универсального",
+        "glosses": {
+          "es": "universal",
+          "en": "universal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.5,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема прочитанного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Последствия внедрения залоговых стаканчиков в кофейне."
+        },
+        {
+          "id": "a2",
+          "text": "Успех экологических реформ в крупных корпорациях."
+        },
+        {
+          "id": "a3",
+          "text": "Конфликт туристов и местных жителей в мегаполисе."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Прошлым месяцем владелица заведения, Ирина Смирнова, решилась на радикальный шаг: полностью отказаться от одноматериальных бумажных стаканчиков, заменив их на многоразовую посуду с залоговой стоимостью.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему туристы испытывали трудности с новой системой?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Им запрещали покупать кофе в многоразовой посуде."
+        },
+        {
+          "id": "a2",
+          "text": "Они не могли вернуть стакан из-за спешки и отъезда."
+        },
+        {
+          "id": "a3",
+          "text": "Залог за стакан был выше стоимости самого напитка."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Для человека, спешащего на вокзал или приехавшего в город на пару дней, возвращение стакана превращалось в логистический кошмар.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как нововведение отразилось на работе персонала?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Бариста стали работать быстрее благодаря новой технике."
+        },
+        {
+          "id": "a2",
+          "text": "Сотрудники получили больше свободного времени для отдыха."
+        },
+        {
+          "id": "a3",
+          "text": "У бариста увеличилась нагрузка из-за объяснений и мытья посуды."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Бариста Алексей отмечал, что вместо быстрой выдачи заказов ему теперь приходится тратить драгоценное время на объяснение правил, учет пластиковых жетонов и ручную мойку возвращенных емкостей",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор описывает историю пожилого туриста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать уязвимость системы для временных посетителей."
+        },
+        {
+          "id": "a2",
+          "text": "Подчеркнуть невоспитанность старшего поколения."
+        },
+        {
+          "id": "a3",
+          "text": "Продемонстрировать высокие цены на кофе в переулке."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Пожилой турист из другого региона, купивший утренний капучино перед экскурсией, физически не мог вернуться в переулок к вечеру, чтобы забрать свои деньги, и в итоге просто выбросил стакан в уличную урну",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков эмоциональный тон автора по отношению к результатам эксперимента?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Восторженный"
+        },
+        {
+          "id": "a2",
+          "text": "Сбалансированный"
+        },
+        {
+          "id": "a3",
+          "text": "Ироничный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Снижение объемов мусора бесспорно радовало экологов, но отчуждение случайных гостей и перегрузка персонала ставили под угрозу саму жизнеспособность бизнеса.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что обозначает слово «проходимость» в данном контексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Качество пешеходных дорожек возле кофейни"
+        },
+        {
+          "id": "a2",
+          "text": "Способность здания выдерживать большой наплыв людей"
+        },
+        {
+          "id": "a3",
+          "text": "Количество посетителей, проходящих через заведение"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "С другой стороны, общая проходимость упала: люди спешили и предпочитали обходить заведение стороной, опасаясь бюрократии с возвратом.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите текст объемом 120–150 слов на русском языке, в котором вы выскажете свое мнение о том, могут ли современные малые бизнесы эффективно совмещать экологическую ответственность и коммерческий успех.",
+      "en": "Напишите текст объемом 120–150 слов на русском языке, в котором вы выскажете свое мнение о том, могут ли современные малые бизнесы эффективно совмещать экологическую ответственность и коммерческий успех."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Внимательно изучите текст, обращая внимание на детали экологической инициативы, трудности посетителей и экономические последствия, затем ответьте на вопросы.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Эксперимент с залоговыми стаканчиками в кофейне «Утро» | B2 Reading | WeLearn",
+      "en": "Эксперимент с залоговыми стаканчиками в кофейне «Утро» | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте статью о внедрении системы возврата стаканчиков в городской кофейне и выполните задания по тексту.",
+      "en": "Прочитайте статью о внедрении системы возврата стаканчиков в городской кофейне и выполните задания по тексту."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}

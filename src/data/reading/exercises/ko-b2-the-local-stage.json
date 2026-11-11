@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-local-stage",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "햇빛극단의 파격적인 제안",
+      "en": "햇빛극단의 파격적인 제안"
+    },
+    "intro": {
+      "es": "젊은 관객을 위한 할인 좌석 도입으로 재정 위기를 겪는 극단과 청년 예술가들 사이의 갈등과 타협 과정을 다룬 기사입니다.",
+      "en": "젊은 관객을 위한 할인 좌석 도입으로 재정 위기를 겪는 극단과 청년 예술가들 사이의 갈등과 타협 과정을 다룬 기사입니다."
+    },
+    "mission": {
+      "es": "본문을 읽고 극단 운영 문제와 예술가들의 제안에 관한 세부 내용을 파악한 뒤 질문에 답하십시오.",
+      "en": "본문을 읽고 극단 운영 문제와 예술가들의 제안에 관한 세부 내용을 파악한 뒤 질문에 답하십시오."
+    },
+    "targetText": "지역 사회의 문화 예술을 이끌어 온 햇빛극단이 최근 청년층의 문화 접근성을 높이기 위해 도입한 파격적인 할인 좌석 제도로 인해 예기치 못한 재정적 압박에 직면했다. 공연마다 객석의 상당 부분이 저렴한 표를 구매한 청년 관객들로 채워졌지만, 티켓 수익이 급감하면서 다가오는 신작의 연습 대관료조차 지불하기 어려운 지경에 이르렀던 것이다. 극단 대표인 강민준 씨는 공연 횟수를 줄이거나 제작을 잠정 중단하는 방안까지 검토했으나, 이는 문화 향유 기회를 넓히겠다는 애초의 취지와 어긋나는 결정이기에 쉽게 결정을 내리지 못했다. 이러한 상황 속에서 극단 소속의 젊은 연기자와 무대 연출가들은 스스로 해결책을 모색하기 시작했다. 이들은 심야 연습 시간을 활용하여 정규 제작비가 투입되지 않는 실험적 낭독 공연을 자체적으로 기획하고, 그 수익금을 전체 연습실 운영 기금으로 기부하겠다는 타협안을 강 대표에게 공식적으로 제안했다. 처음에는 아마추어적인 시도가 극단의 전체적인 예술적 완성도에 흠집을 낼까 우려하던 강 대표도 청년들의 진정성 있는 태도와 구체적인 실행 계획을 확인한 후 제안을 수용하기로 결정했다. 결국 이 타협안 덕분에 극단은 재정적 파산을 모면하고 신작 연습을 차질 없이 이어갈 수 있게 되었으며, 청년 예술가들은 자신들만의 무대를 통해 한층 더 성장할 수 있는 소중한 기회를 얻게 되었다.\n\n이러한 성공적인 위기 극복 사례는 지역 사회의 다른 예술 단체들에게도 신선한 자극과 중요한 시사점을 던져 주었다. 재정적 어려움을 단순히 외부의 지원금이나 보조금에만 의존해 해결하려던 기존의 수동적인 태도에서 벗어나, 내부 구성원들의 자발적인 참여와 창의적인 아이디어가 얼마나 강력한 돌파구가 될 수 있는지 증명해 보였기 때문이다. 실제로 인근의 여러 소규모 극단들도 햇빛극단의 행보를 모델 삼아 젊은 예술가들과의 소통을 강화하고 다양한 형태의 협업 프로젝트를 준비하는 움직임을 보이고 있다. 결과적으로 이번 사태는 단순한 경제적 손실의 위기를 넘어, 지역 문화 예술계 전체가 세대 간의 벽을 허물고 더욱 단단한 연대와 자생력을 구축하는 결정적인 계기로 작용하게 되었다.",
+    "wordCount": 253,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "파격적인",
+        "lemma": "파격적인",
+        "glosses": {
+          "es": "unconventional",
+          "en": "unconventional"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "직면했다",
+        "lemma": "직면했다",
+        "glosses": {
+          "es": "faced",
+          "en": "faced"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "급감하면서",
+        "lemma": "급감하면서",
+        "glosses": {
+          "es": "plummeting",
+          "en": "plummeting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "잠정 중단하는",
+        "lemma": "잠정 중단하는",
+        "glosses": {
+          "es": "temporarily suspending",
+          "en": "temporarily suspending"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모색하기",
+        "lemma": "모색하기",
+        "glosses": {
+          "es": "seeking out",
+          "en": "seeking out"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "수용하기로",
+        "lemma": "수용하기로",
+        "glosses": {
+          "es": "accepting",
+          "en": "accepting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 23,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문에서 햇빛극단이 처했던 핵심적인 문제는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "신작 연습 대관료 지불 난항"
+        },
+        {
+          "id": "a2",
+          "text": "관객 감소로 인한 폐업"
+        },
+        {
+          "id": "a3",
+          "text": "주요 배우들의 집단 이탈"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "티켓 수익이 급감하면서 다가오는 신작의 연습 대관료조차 지불하기 어려운 지경에 이르렀던 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "젊은 예술가들이 제안한 해결책의 구체적인 방식은 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주말 공연 횟수 두 배 늘리기"
+        },
+        {
+          "id": "a2",
+          "text": "심야 연습을 통한 실험적 낭독 공연 개최"
+        },
+        {
+          "id": "a3",
+          "text": "외부 기업으로부터 후원금 유치하기"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "심야 연습 시간을 활용하여 정규 제작비가 투입되지 않는 실험적 낭독 공연을 자체적으로 기획하고",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "강민준 대표가 처음에는 청년들의 제안을 망설인 이유는 무엇이라고 유추할 수 있나요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "청년들이 공연 수익금을 나누어 가지려 해서"
+        },
+        {
+          "id": "a2",
+          "text": "외부 비평가들의 압력 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "극단의 예술적 완성도에 부정적인 영향을 미칠까 봐"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "처음에는 아마추어적인 시도가 극단의 전체적인 예술적 완성도에 흠집을 낼까 우려하던 강 대표도",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "이 글의 주된 목적은 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "위기를 극복한 극단의 사례 공유"
+        },
+        {
+          "id": "a2",
+          "text": "청년 문화 정책 비판"
+        },
+        {
+          "id": "a3",
+          "text": "예술 교육의 중요성 강조"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "결국 이 타협안 덕분에 극단은 재정적 파산을 모면하고 신작 연습을 차질 없이 이어갈 수 있게 되었으며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글쓴이가 사건을 전개하는 전반적인 어조는 어떠한가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "냉소적이고 비판적"
+        },
+        {
+          "id": "a2",
+          "text": "객관적이고 전달 중심적"
+        },
+        {
+          "id": "a3",
+          "text": "감정적이고 호소력 짙음"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "지역 사회의 문화 예술을 이끌어 온 햇빛극단이 최근 청년층의 문화 접근성을 높이기 위해 도입한 파격적인 할인 좌석 제도로 인해 예기치 못한 재정적 압박에 직면했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 티켓 수익이 크게 줄어들었음을 나타내는 단어는 무엇인가요?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "잠정 중단하는"
+        },
+        {
+          "id": "a2",
+          "text": "모색하기"
+        },
+        {
+          "id": "a3",
+          "text": "급감하면서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "티켓 수익이 급감하면서 다가오는 신작의 연습 대관료조차 지불하기 어려운 지경에 이르렀던 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "재정적 어려움을 겪는 예술 단체가 구성원들의 자발적인 타협과 기획으로 위기를 극복한 사례를 바탕으로, 공공 지원과 자구책 중 어느 쪽이 지역 예술 활성화에 더 중요한지 자신의 의견을 세 문장 이상으로 서술하십시오.",
+      "en": "재정적 어려움을 겪는 예술 단체가 구성원들의 자발적인 타협과 기획으로 위기를 극복한 사례를 바탕으로, 공공 지원과 자구책 중 어느 쪽이 지역 예술 활성화에 더 중요한지 자신의 의견을 세 문장 이상으로 서술하십시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "본문을 읽고 극단 운영 문제와 예술가들의 제안에 관한 세부 내용을 파악한 뒤 질문에 답하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "햇빛극단의 파격적인 제안 | B2 Reading | WeLearn",
+      "en": "햇빛극단의 파격적인 제안 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "젊은 관객을 위한 할인 좌석 도입으로 재정 위기를 겪는 극단과 청년 예술가들 사이의 갈등과 타협 과정을 다룬 기사입니다.",
+      "en": "젊은 관객을 위한 할인 좌석 도입으로 재정 위기를 겪는 극단과 청년 예술가들 사이의 갈등과 타협 과정을 다룬 기사입니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

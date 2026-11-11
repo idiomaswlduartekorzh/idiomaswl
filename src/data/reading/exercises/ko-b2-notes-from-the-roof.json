@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "아파트 옥상 태양광 발전기 설치에 관한 제안",
+      "en": "아파트 옥상 태양광 발전기 설치에 관한 제안"
+    },
+    "intro": {
+      "es": "공동주택 옥상 태양광 발전기 설치를 둘러싼 세입자와 소유자의 갈등과 해결 과정을 다룬 이메일을 읽고 독해 능력을 점검하세요.",
+      "en": "공동주택 옥상 태양광 발전기 설치를 둘러싼 세입자와 소유자의 갈등과 해결 과정을 다룬 이메일을 읽고 독해 능력을 점검하세요."
+    },
+    "mission": {
+      "es": "이메일 본문을 읽고 세부 정보와 함축된 갈등 상황을 정확히 파악하여 질문에 답하시오.",
+      "en": "이메일 본문을 읽고 세부 정보와 함축된 갈등 상황을 정확히 파악하여 질문에 답하시오."
+    },
+    "targetText": "수신: 청솔아파트 입주민 여러분께, 발신: 101동 대표 민수진. 안녕하십니까, 입주민 여러분. 최근 관리사무소와 함께 진행한 사전 타당성 조사 결과에 따르면, 우리 아파트 옥상에 공동 태양광 발전 시설을 설치할 경우 공용 전기료를 상당한 수준으로 절감할 수 있는 것으로 나타났습니다. 초기 설치 비용이 적지 않게 소요되지만, 장기적인 관점에서 관리비 부담을 크게 낮출 수 있는 실효성 있는 대안임이 분명합니다. 특히 정부 보조금 지원 사업에 선정될 경우 투자 원금 회수 기간은 예상보다 훨씬 단축될 것입니다. 그러나 이 과정에서 세입자와 소유자 간의 비용 분담 방식을 두고 몇 가지 이견이 제기되고 있습니다. 소유자들은 집값 상승과 장기적 자산 가치 제고를 기대하며 투자의 필요성에 대체로 공감하는 분위기입니다. 반면, 계약 기간이 상대적으로 짧은 세입자들은 퇴거 시 투자금을 온전히 환급받기 어렵다는 점을 들어 난색을 표하고 있습니다. 당장 매달 나가는 전기료를 아낄 수 있다는 장점에도 불구하고, 초기 투자비를 부담하는 주체와 혜택의 불균형 문제로 인해 입주자대표회의 내에서도 갑론을박이 이어지고 있습니다. 만약 소유자가 전액 투자하고 세입자가 절감 혜택을 누린다면 형평성 논란이 일 수 있고, 반대로 세입자에게 분담금을 요구하면 임대차 계약의 성격상 반발이 거세질 수밖에 없습니다. 이에 따라 우리는 단순한 비용 절감의 논리를 넘어, 거주 형태의 차이를 아우르는 유연한 상생 방안을 마련해야 하는 기점에 서 있습니다. 관리비 고지서에 찍히는 숫자 너머에는 각기 다른 계약 조건으로 이 공간을 공유하는 이들의 이해관계가 얽혀 있습니다. 이번 주 금요일 저녁에 열리는 주민 공청회에서 이 문제를 본격적으로 다룰 예정이오니, 소유자와 세입자 모두 빠짐없이 참석하시어 실질적인 합의점을 찾는 데 힘을 보태주시기를 당부드립니다.",
+    "wordCount": 222,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "타당성",
+        "lemma": "타당성",
+        "glosses": {
+          "es": "feasibility",
+          "en": "feasibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "실효성",
+        "lemma": "실효성",
+        "glosses": {
+          "es": "effectiveness",
+          "en": "effectiveness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "환급",
+        "lemma": "환급",
+        "glosses": {
+          "es": "refund",
+          "en": "refund"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "갑론을박",
+        "lemma": "갑론을박",
+        "glosses": {
+          "es": " heated debate",
+          "en": " heated debate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "형평성",
+        "lemma": "형평성",
+        "glosses": {
+          "es": "equity",
+          "en": "equity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이해관계",
+        "lemma": "이해관계",
+        "glosses": {
+          "es": "interests",
+          "en": "interests"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.1,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문이 다루고 있는 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "옥상 태양광 설치에 따른 이해관계 조율"
+        },
+        {
+          "id": "a2",
+          "text": "정부 보조금 신청 절차"
+        },
+        {
+          "id": "a3",
+          "text": "관리비 인상 계획"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "그러나 이 과정에서 세입자와 소유자 간의 비용 분담 방식을 두고 몇 가지 이견이 제기되고 있습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "소유자들이 태양광 설치에 대체로 공감하는 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "정부로부터 전액 무상 지원을 받을 수 있기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "집값 상승과 장기적 자산 가치 제고를 기대하기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "세입자들이 설치비를 전액 부담하기 때문에"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "소유자들은 집값 상승과 장기적 자산 가치 제고를 기대하며 투자의 필요성에 대체로 공감하는 분위기입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "세입자들이 태양광 설치에 난색을 표하는 주된 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공용 전기료가 오히려 상승하기 때문"
+        },
+        {
+          "id": "a2",
+          "text": "태양광 패널이 미관을 해치기 때문"
+        },
+        {
+          "id": "a3",
+          "text": "퇴거 시 투자금을 환급받기 어렵기 때문"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "반면, 계약 기간이 상대적으로 짧은 세입자들은 퇴거 시 투자금을 온전히 환급받기 어렵다는 점을 들어 난색을 표하고 있습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "발신자가 이메일을 작성한 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민 공청회 참석을 독려하고 상생 방안을 찾기 위함"
+        },
+        {
+          "id": "a2",
+          "text": "태양광 발전기 설치 공사 업체를 선정하기 위함"
+        },
+        {
+          "id": "a3",
+          "text": "관리비 체납 세대에 대한 경고를 전달하기 위함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 주 금요일 저녁에 열리는 주민 공청회에서 이 문제를 본격적으로 다룰 예정이오니, 소유자와 세입자 모두 빠짐없이 참석하시어 실질적인 합의점을 찾는 데 힘을 보태주시기를 당부드립니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "본문의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "일방적으로 공사 강행을 통보하는 권위적인 어조"
+        },
+        {
+          "id": "a2",
+          "text": "갈등 요인을 냉철하게 분석하며 협력을 촉구하는 어조"
+        },
+        {
+          "id": "a3",
+          "text": "비용 절감 효과만을 지나치게 과장하는 홍보성 어조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "이에 따라 우리는 단순한 비용 절감의 논리를 넘어, 거주 형태의 차이를 아우르는 유연한 상생 방안을 마련해야 하는 기점에 서 있습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 집값 상승과 자산 가치 제고를 기대하며 투자의 필요성에 공감하는 집단은 누구인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "세입자"
+        },
+        {
+          "id": "a2",
+          "text": "시공사"
+        },
+        {
+          "id": "a3",
+          "text": "소유자"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "소유자들은 집값 상승과 장기적 자산 가치 제고를 기대하며 투자의 필요성에 대체로 공감하는 분위기입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "공동주택의 신재생 에너지 설비 도입 과정에서 발생할 수 있는 소유자와 세입자 간의 갈등을 해결하기 위한 본인만의 합리적인 비용 분담 방안을 한국어로 서술하시오.",
+      "en": "공동주택의 신재생 에너지 설비 도입 과정에서 발생할 수 있는 소유자와 세입자 간의 갈등을 해결하기 위한 본인만의 합리적인 비용 분담 방안을 한국어로 서술하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "이메일 본문을 읽고 세부 정보와 함축된 갈등 상황을 정확히 파악하여 질문에 답하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "아파트 옥상 태양광 발전기 설치에 관한 제안 | B2 Reading | WeLearn",
+      "en": "아파트 옥상 태양광 발전기 설치에 관한 제안 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "공동주택 옥상 태양광 발전기 설치를 둘러싼 세입자와 소유자의 갈등과 해결 과정을 다룬 이메일을 읽고 독해 능력을 점검하세요.",
+      "en": "공동주택 옥상 태양광 발전기 설치를 둘러싼 세입자와 소유자의 갈등과 해결 과정을 다룬 이메일을 읽고 독해 능력을 점검하세요."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

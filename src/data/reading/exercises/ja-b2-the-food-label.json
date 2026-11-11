@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-food-label",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "期限表示の刷新がもたらしたスーパーの葛藤",
+      "en": "期限表示の刷新がもたらしたスーパーの葛藤"
+    },
+    "intro": {
+      "es": "食品ロス削減を目指して新しい期限表示を導入したスーパーの試みと、それに対する顧客の反応を扱ったレビュー記事を読み、読解力を深めましょう。",
+      "en": "食品ロス削減を目指して新しい期限表示を導入したスーパーの試みと、それに対する顧客の反応を扱ったレビュー記事を読み、読解力を深めましょう。"
+    },
+    "mission": {
+      "es": "記事全体における新しい表示制度への評価や、店側と消費者の間に生じた意識のギャップを正確に把握し、読解問題に答えてください。",
+      "en": "記事全体における新しい表示制度への評価や、店側と消費者の間に生じた意識のギャップを正確に把握し、読解問題に答えてください。"
+    },
+    "targetText": "緑豊かな郊外に位置する「ひかりマート」は、昨秋から食品ロス削減の切り札として、商品のパッケージに印字される日付表示の刷新踏み切った。店長の佐藤氏が主導したこの取り組みは、従来の「賞味期限」に代わり、品質の保持期間ではなく「美味しく食べられる目安」をより直感的なアイコンで示す試みである。陳列棚には「素材の風味を堪能できる期間」を意味する青いマークと、「品質保持の限界を示すものではない」という注意書きが添えられ、環境配慮型店舗としての新しい試みとして地元紙でも取り上げられた。\n\n導入直後の週末、店内には多くの買い物客が訪れ、目新しい表示に戸惑いつつも関心を寄せた。主婦の田中さんは「環境に良いのは分かるけれど、どこまで信じていいのか迷う」と、これまでの明確な日付とは異なる曖昧さに困惑の色を隠さなかった。こうした消費者の迷いは、佐藤氏が想定していた以上の広がりを見せた。多くの客は食品ロス削減の理念自体には賛同しているものの、家庭での具体的な判断基準を求めており、店側からのさらなる解説やガイドラインの提示が急務となったのである。\n\nこうした声を受け、ひかりマートは売場の一角に「賢い見分け方相談カウンター」を設置し、専門スタッフがにおいや色を通した具体的な食材の判断方法を実演するイベントを企画した。イベントの初日、参加した会社員の鈴木さんは「ただ表示を変えるだけでなく、家庭での見極め方を教えてもらえるのは非常に心強い」と評価し、店側の丁寧なフォロー姿勢に一定の理解を示した。試みは単なる表示の変更に留まらず、消費者が自身の五感を働かせて食品と向き合うきっかけを緩やかに提供し始めていた。\n\nしかし、すべての顧客がこの変化を好意的に受け入れたわけではない。一部の保守的な顧客からは「安全性が曖昧になったことで、かえって不安が増した」という根強い批判の声も上がった。特に高齢者層からは、従来の厳格な日付表示が持つ安心感を懐かしむ意見が聞かれ、効率的な在庫管理と顧客の心理的安心感のバランスを取ることの難しさが浮き彫りとなった。佐藤氏は、こうした相反する意見の存在を真摯に受け止めつつも、一度立ち止まれば改革の意図そのものが失われるという危機感を抱いていた。\n\n結果として、ひかりマートの新たな試みは、画一的な期限に頼らない持続可能な消費のあり方を提示した一方で、信頼関係の構築には時間と対話が不可欠であるという現実を突きつけた。佐藤氏は、今後さらにポップやパンフレットを充実させ、客との対話を重ねる方針を固めている。食品ロスの削減という大きな目標に向かって踏み出した一歩は、店舗と地域社会が共に知恵を絞り、新しい食の安全の基準を模索し続けるための重要な契機となったのである。",
+    "wordCount": 1064,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "刷新",
+        "lemma": "刷新",
+        "glosses": {
+          "es": "renewal",
+          "en": "renewal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "困惑",
+        "lemma": "困惑",
+        "glosses": {
+          "es": "bewilderment",
+          "en": "bewilderment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "急務",
+        "lemma": "急務",
+        "glosses": {
+          "es": "urgent task",
+          "en": "urgent task"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "模索",
+        "lemma": "模索",
+        "glosses": {
+          "es": "exploration",
+          "en": "exploration"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "画一的",
+        "lemma": "画一的",
+        "glosses": {
+          "es": "uniform",
+          "en": "uniform"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "契機",
+        "lemma": "契機",
+        "glosses": {
+          "es": "opportunity",
+          "en": "opportunity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 62.6,
+      "maxSentenceWords": 88,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:13:39.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の全体的な主題は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい期限表示をめぐる店舗の試みと、それに伴う消費者の戸惑いや議論"
+        },
+        {
+          "id": "a2",
+          "text": "食品ロスの完全な解決に向けた先進的な取り組み"
+        },
+        {
+          "id": "a3",
+          "text": "消費者の反対によって中止に追い込まれた店舗の改革"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "緑豊かな郊外に位置する「ひかりマート」は、昨秋から食品ロス削減の切り札として、商品のパッケージに印字される日付表示の刷新踏み切った。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "店側が売場に設置した相談カウンターでは、何が行われましたか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "客からの苦情の受付と返金対応"
+        },
+        {
+          "id": "a2",
+          "text": "専門スタッフによる見極め方の実演"
+        },
+        {
+          "id": "a3",
+          "text": "環境配慮型商品の特別セール"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "専門スタッフがにおいや色を通した具体的な食材の判断方法を実演するイベントを企画した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "高齢者層から根強い批判の声が上がった主な理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい表示方法がスマートフォンの操作を前提としており、利用が困難だったから"
+        },
+        {
+          "id": "a2",
+          "text": "相談カウンターの開催場所が自宅から遠く、気軽に参加できなかったから"
+        },
+        {
+          "id": "a3",
+          "text": "従来の厳格な日付表示が失われたことで、食品の安全に対する安心感が揺らいだらか"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "特に高齢者層からは、従来の厳格な日付表示が持つ安心感を懐かしむ意見が聞かれ、効率的な在庫管理と顧客の心理的安心感のバランスを取ることの難しさが浮き彫りとなった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「賢い見分け方相談カウンター」の設置というエピソードを挿入した目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "店側が単なる表示の変更にとどまらず、消費者の不安に対して丁寧に対応しようとした姿勢を示すため"
+        },
+        {
+          "id": "a2",
+          "text": "顧客からの苦情を完全に解消し、すべての買い物客から絶賛されたという成果を強調するため"
+        },
+        {
+          "id": "a3",
+          "text": "スーパーの新しい経営戦略がいかに商業的な成功を収めたかを具体的に証明するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "試みは単なる表示の変更に留まらず、消費者が自身の五感を働かせて食品と向き合うきっかけを緩やかに提供し始めていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "新しい期限表示の導入に対する、筆者の全体的なスタンスはどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "消費者の混乱を煽るだけの無責任な試みとして強く非難している"
+        },
+        {
+          "id": "a2",
+          "text": "環境配慮の意義を認めつつも、社会的合意形成の難しさを冷静に描写している"
+        },
+        {
+          "id": "a3",
+          "text": "理想論に偏りすぎて現実の経営を無視した愚行であると冷笑している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "結果として、ひかりマートの新たな試みは、画一的な期限に頼らない持続可能な消費のあり方を提示した一方で、信頼関係の構築には時間と対話が不可欠であるという現実を突きつけた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "文章中で使われている「刷新」の意味に最も近いものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "古い規則をそのまま維持すること"
+        },
+        {
+          "id": "a2",
+          "text": "計画の実行を一時的に中断すること"
+        },
+        {
+          "id": "a3",
+          "text": "物事を新しくすること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "緑豊かな郊外に位置する「ひかりマート」は、昨秋から食品ロス削減の切り札として、商品のパッケージに印字される日付表示の刷新踏み切った。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "本文で描かれたような新しい日付表示や食品ロス削減の取り組みについて、あなたの考えを日本語でまとめてください。店舗側が工夫すべき点や、消費者が持つべき意識について具体的に述べてください。",
+      "en": "本文で描かれたような新しい日付表示や食品ロス削減の取り組みについて、あなたの考えを日本語でまとめてください。店舗側が工夫すべき点や、消費者が持つべき意識について具体的に述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "記事全体における新しい表示制度への評価や、店側と消費者の間に生じた意識のギャップを正確に把握し、読解問題に答えてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:13:39.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "期限表示の刷新がもたらしたスーパーの葛藤 | B2 Reading | WeLearn",
+      "en": "期限表示の刷新がもたらしたスーパーの葛藤 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "食品ロス削減を目指して新しい期限表示を導入したスーパーの試みと、それに対する顧客の反応を扱ったレビュー記事を読み、読解力を深めましょう。",
+      "en": "食品ロス削減を目指して新しい期限表示を導入したスーパーの試みと、それに対する顧客の反応を扱ったレビュー記事を読み、読解力を深めましょう。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:13:39.480Z"
+  }
+}

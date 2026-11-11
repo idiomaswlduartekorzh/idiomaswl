@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-water-meter",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "지능형 수도 계량기가 드러낸 도심 임차인의 딜레마",
+      "en": "지능형 수도 계량기가 드러낸 도심 임차인의 딜레마"
+    },
+    "intro": {
+      "es": "스마트 수도 계량기 도입 이후 나타난 누수 감지와 노후 배관 책임 문제를 다룬 기사 읽기 자료입니다.",
+      "en": "스마트 수도 계량기 도입 이후 나타난 누수 감지와 노후 배관 책임 문제를 다룬 기사 읽기 자료입니다."
+    },
+    "mission": {
+      "es": "본문을 읽고 임대인과 임차인 간의 책임 공방과 기술 도입의 이면에 대한 이해를 바탕으로 문제를 해결하시오.",
+      "en": "본문을 읽고 임대인과 임차인 간의 책임 공방과 기술 도입의 이면에 대한 이해를 바탕으로 문제를 해결하시오."
+    },
+    "targetText": "최근 한강시가 전역의 주택에 원격으로 물 사용량을 실시간 측정하는 지능형 수도 계량기를 전면 도입했다. 이 최신 기기는 미세한 누수까지 정확하게 감지해 수자원 낭비를 줄이고 요금 폭탄을 미연에 방지한다는 점에서 큰 호응을 얻었다. 실제로 도입 첫 달 동안 시내 전체에서 수백 건의 숨은 누수가 발견되어 신속한 수리가 이루어졌다. 그러나 이러한 기술적 성과 이면에는 오래된 주거 시설에 거주하는 세입자들의 깊은 한숨이 자리 잡고 있다.\n\n봉천동의 한 다세대 주택에 사는 직장인 김민수 씨는 최근 시청으로부터 지하 배관에서 지속적인 누수가 발생하고 있다는 경고 메시지를 받았다. 스마트 계량기 덕분에 거주자가 인지하지 못한 누수를 일찍 발견한 것은 다행이었지만 문제는 비용과 책임이었다. 건물주인 박 모 씨는 계량기가 알려준 이상 징후는 인정하면서도 건물이 너무 오래되어 생긴 구조적 결함이므로 보수 비용의 일부를 세입자가 분담해야 한다고 주장했다. 김 씨는 배관 시설을 교체하거나 수리할 수 있는 권한도 없는 세입자가 건물 노후화에 따른 비용을 부담해야 하는 상황에 강한 불만을 제기했다.\n\n도시 전문가들은 지능형 계량기가 자원 절약이라는 공익적 목표를 달성하는 동시에 사생활 침해 논란 없이 효율성을 높인다는 점을 높이 평가한다. 하지만 이번 사례처럼 기술이 제공하는 데이터가 건물주와 임차인 사이의 해묵은 갈등을 증폭시키는 도화선이 될 수 있음을 경고한다. 세입자는 누수를 알고도 방치한다는 오해를 피하기 위해 즉시 건물주에게 연락해야 하지만, 막상 수리 과정에서는 결정권이 없어 발을 동동 구를 뿐이다. 반면 임대인들은 갑작스러운 대규모 수리 비용에 부담을 느끼며 법적 의무의 모호함 뒤에 숨어 결정을 미루는 경향이 있다.\n\n물론 지능형 계량기 자체가 임대차 갈등의 직접적인 원인은 아니다. 오히려 이 기기는 그동안 수면 아래 가라앉아 있던 주거 환경의 구조적 모순을 수면 위로 끌어올린 촉매제 역할을 했다고 볼 수 있다. 정부가 아무리 첨단 기술을 보급하여 물 부족 문제를 해결하려 해도, 기초적인 주거 인프라가 개선되지 않는 한 기술의 혜택은 불평등하게 분배될 수밖에 없다. 결국 첨단 행정과 낙후된 건축물 사이의 괴리가 해소되지 않는다면 스마트 기기는 누구에게는 구세주가 되고 누구에게는 골칫거리가 될 것이다.\n\n시 주택과는 이러한 부작용을 인식하고 임대차 계약 시 노후 배관 보수 책임을 명확히 하는 가이드라인을 검토하겠다고 밝혔다. 그러나 강제성이 없는 권고안에 그칠 경우 실효성이 떨어질 것이라는 우려가 지배적이다. 기술의 발전이 행정 편의를 넘어 모든 시민에게 공평한 주거권을 보장하기 위해서는, 계량기가 찾아낸 누수만큼이나 촘촘하고 실효성 있는 법적 보호 장치가 시급히 마련되어야 한다.",
+    "wordCount": 332,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "도화선",
+        "lemma": "도화선",
+        "glosses": {
+          "es": "fuse or catalyst",
+          "en": "fuse or catalyst"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "촉매제",
+        "lemma": "촉매제",
+        "glosses": {
+          "es": "catalyst",
+          "en": "catalyst"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "불평등하게",
+        "lemma": "불평등하게",
+        "glosses": {
+          "es": "unequally",
+          "en": "unequally"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모호함",
+        "lemma": "모호함",
+        "glosses": {
+          "es": "ambiguity",
+          "en": "ambiguity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "실효성",
+        "lemma": "실효성",
+        "glosses": {
+          "es": "effectiveness",
+          "en": "effectiveness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "괴리",
+        "lemma": "괴리",
+        "glosses": {
+          "es": "gap or disconnect",
+          "en": "gap or disconnect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 23,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문의 전체적인 내용으로 가장 적절한 것은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지능형 수도 계량기의 도입이 새로운 갈등을 유발한다"
+        },
+        {
+          "id": "a2",
+          "text": "스마트 기기 보급으로 모든 주거 환경이 개선되었다"
+        },
+        {
+          "id": "a3",
+          "text": "세입자들의 무관심이 수자원 낭비의 주요 원인이다"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "그러나 이러한 기술적 성과 이면에는 오래된 주거 시설에 거주하는 세입자들의 깊은 한숨이 자리 잡고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "김민수 씨가 건물주와의 갈등을 겪게 된 구체적인 계기는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "월세 인상 통보"
+        },
+        {
+          "id": "a2",
+          "text": "지하 배관 누수 경고"
+        },
+        {
+          "id": "a3",
+          "text": "수도 요금 체납 통지"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "김민수 씨는 최근 시청으로부터 지하 배관에서 지속적인 누수가 발생하고 있다는 경고 메시지를 받았다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "필자가 지능형 수도 계량기를 '촉매제'에 비유한 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "물 사용량을 획기적으로 줄여주기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "건물주와 세입자의 관계를 완전히 회복시켰기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "기존의 주거 환경 모순을 드러냈기 때문에"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "오히려 이 기기는 그동안 수면 아래 가라앉아 있던 주거 환경의 구조적 모순을 수면 위로 끌어올린 촉매제 역할을 했다고 볼 수 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "마지막 문단에서 시 주택과의 향후 대응 방안을 언급한 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기술 도입의 한계를 지적하며 추가적인 제도적 보완의 필요성을 강조하려고"
+        },
+        {
+          "id": "a2",
+          "text": "임대인들의 경제적 부담을 완화해 주는 구체적 지원책을 약속하려고"
+        },
+        {
+          "id": "a3",
+          "text": "스마트 계량기 설치 사업의 전면 중단을 공식적으로 선언하려고"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "기술의 발전이 행정 편의를 넘어 모든 시민에게 공평한 주거권을 보장하기 위해서는, 계량기가 찾아낸 누수만큼이나 촘촘하고 실효성 있는 법적 보호 장치가 시급히 마련되어야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조와 필자의 태도로 가장 적절한 것은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "새로운 스마트 도시 행정의 성과를 무조건적으로 칭찬하는 낙관적 태도"
+        },
+        {
+          "id": "a2",
+          "text": "기술 발전의 이면에 숨겨진 구조적 모순을 냉철하게 분석하는 비판적 태도"
+        },
+        {
+          "id": "a3",
+          "text": "주거 갈등의 책임이 오로지 이기적인 임대인에게 있다고 단정하는 비난조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "하지만 이번 사례처럼 기술이 제공하는 데이터가 건물주와 임차인 사이의 해묵은 갈등을 증폭시키는 도화선이 될 수 있음을 경고한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 '두 사물이나 현상 사이의 간격이나 차이'를 뜻하는 단어로 사용된 것은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도화선"
+        },
+        {
+          "id": "a2",
+          "text": "실효성"
+        },
+        {
+          "id": "a3",
+          "text": "괴리"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "결국 첨단 행정과 낙후된 건축물 사이의 괴리가 해소되지 않는다면 스마트 기기는 누구에게는 구세주가 되고 누구에게는 골칫거리가 될 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "스마트 기술 도입이 임대인과 임차인에게 미치는 영향과, 기술적 진보가 주거 불평등 문제를 해결하는 데 있어서 가지는 한계에 관하여 자신의 견해를 150자 이상으로 서술하시오.",
+      "en": "스마트 기술 도입이 임대인과 임차인에게 미치는 영향과, 기술적 진보가 주거 불평등 문제를 해결하는 데 있어서 가지는 한계에 관하여 자신의 견해를 150자 이상으로 서술하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "본문을 읽고 임대인과 임차인 간의 책임 공방과 기술 도입의 이면에 대한 이해를 바탕으로 문제를 해결하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "지능형 수도 계량기가 드러낸 도심 임차인의 딜레마 | B2 Reading | WeLearn",
+      "en": "지능형 수도 계량기가 드러낸 도심 임차인의 딜레마 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "스마트 수도 계량기 도입 이후 나타난 누수 감지와 노후 배관 책임 문제를 다룬 기사 읽기 자료입니다.",
+      "en": "스마트 수도 계량기 도입 이후 나타난 누수 감지와 노후 배관 책임 문제를 다룬 기사 읽기 자료입니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

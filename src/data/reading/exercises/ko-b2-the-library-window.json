@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-b2-the-library-window",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "korean B2",
+    "topik": 4,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "새벽 도서관의 실험",
+      "en": "새벽 도서관의 실험"
+    },
+    "intro": {
+      "es": "교대 근무자를 위한 도서관의 이른 개방 제도가 가져온 갈등과 변화를 다룬 이야기입니다.",
+      "en": "교대 근무자를 위한 도서관의 이른 개방 제도가 가져온 갈등과 변화를 다룬 이야기입니다."
+    },
+    "mission": {
+      "es": "도서관의 시간 조정 과정에서 발생한 갈등과 그 해결 과정을 분석하며 읽으십시오.",
+      "en": "도서관의 시간 조정 과정에서 발생한 갈등과 그 해결 과정을 분석하며 읽으십시오."
+    },
+    "targetText": "민수와 도서관 직원들은 교대 근무자들을 위해 오전 여섯 시로 개방 시간을 앞당기는 새로운 시범 운영을 시작했다. 이 제도는 밤낮이 바뀐 노동자들에게 큰 환영을 받았지만, 내부적으로는 근무 체계 조정을 둘러싸고 상당한 마찰을 빚었다. 사서들은 새벽 출근을 감당하기 위해 기존의 업무 분장을 전면 수정해야 했으며, 특히 야간 당직과의 피로도 누적이 심각한 문제로 대두되었다. 직원 대표인 지영은 새벽 시간대의 이용률이 미비하다면 제도를 철회해야 한다고 주장하며 경영진과 대립각을 세웠다. 하지만 조용한 환경에서 공부하려는 이른 아침 방문객들의 만족도가 예상외로 높았고, 이들은 도서관이 단순한 자료 대출 공간을 넘어 고요한 사색의 안식처 역할을 하고 있다고 입을 모았다. 찬반 양측의 팽팽한 논쟁 속에서 민수는 단순한 이용자 통계에만 의존할 수 없음을 깨달았다. 그는 새벽 운영이 노동자 복지라는 본래의 취지와 직원들의 근로 환경 사이에서 아슬아슬한 균형을 유지하고 있음을 직시했다. 결국 도서관 측은 새벽 근무 전담 인력을 별도로 채용하고 기존 사서들의 순환 근무 주기를 조정하는 절충안을 마련했다. 이번 실험은 공공시설이 다양한 생활 패턴을 가진 시민들을 포용하는 과정에서 겪는 불가피한 진통을 보여주는 동시에, 행정 편의주의를 넘어선 유연한 운영의 중요성을 시사하고 있다.\n\n이러한 타협안에도 불구하고 재정적 부담과 인력 운용의 효율성에 대한 우려는 여전히 완전히 해소되지 않은 채 남아 있었다. 새로운 전담 인력 채용은 예산 집행에 적지 않은 압박을 주었으며, 향후 시범 운영 기간이 종료된 이후에도 이 제도가 지속 가능한지에 대한 회의적인 시선이 경영진 내부에서 끊이지 않았다. 게다가 유사한 공공기관들이 이 사례를 벤치마킹하여 무리하게 운영 시간을 확대하려는 움직임을 보이면서, 노동권 침해와 비용 대비 편익 분석을 둘러싼 사회적 논쟁은 더욱 거세지는 양상을 보였다. 결국 민수와 도서관 직원들은 단기적인 성과에 안주하지 않고 끊임없이 제도의 허점을 보완해야 하는 무거운 과제를 떠안게 되었다.",
+    "wordCount": 245,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "시범",
+        "lemma": "시범",
+        "glosses": {
+          "es": "trial",
+          "en": "trial"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "마찰",
+        "lemma": "마찰",
+        "glosses": {
+          "es": "friction",
+          "en": "friction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "대두",
+        "lemma": "대두",
+        "glosses": {
+          "es": "emergence",
+          "en": "emergence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "안식처",
+        "lemma": "안식처",
+        "glosses": {
+          "es": "sanctuary",
+          "en": "sanctuary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "직시",
+        "lemma": "직시",
+        "glosses": {
+          "es": "facing directly",
+          "en": "facing directly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "절충안",
+        "lemma": "절충안",
+        "glosses": {
+          "es": "compromise solution",
+          "en": "compromise solution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.8,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:16:23.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 이야기의 전체적인 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도서관의 새로운 새벽 개방 제도를 둘러싼 갈등과 절충안 마련"
+        },
+        {
+          "id": "a2",
+          "text": "야간 노동자들을 위한 복지 정책의 전면 폐지"
+        },
+        {
+          "id": "a3",
+          "text": "사서들의 근로 조건 개선을 위한 파업 과정"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "민수와 도서관 직원들은 교대 근무자들을 위해 오전 여섯 시로 개방 시간을 앞당기는 새로운 시범 운영을 시작했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "지영은 새벽 운영에 대해 어떤 입장을 취했습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "근무 인력을 즉시 충원해 줄 것을 요구했다"
+        },
+        {
+          "id": "a2",
+          "text": "이용률이 저조할 경우 제도를 철회해야 한다고 주장했다"
+        },
+        {
+          "id": "a3",
+          "text": "새벽 개방 시간을 더욱 늘려야 한다고 건의했다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "직원 대표인 지영은 새벽 시간대의 이용률이 미비하다면 제도를 철회해야 한다고 주장하며 경영진과 대립각을 세웠다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "방문객들이 이른 아침 도서관을 찾는 주된 이유는 무엇이었습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "교대 근무를 마치고 휴식을 취하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "다양한 신간 도서를 먼저 대출받기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "조용한 환경에서 공부하기 위해"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "하지만 조용한 환경에서 공부하려는 이른 아침 방문객들의 만족도가 예상외로 높았고, 이들은 도서관이 단순한 자료 대출 공간을 넘어 고요한 사색의 안식처 역할을 하고 있다고 입을 모았다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 쓴 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공공시설 운영 과정에서 발생하는 갈등과 조율의 과정을 보여주기 위함"
+        },
+        {
+          "id": "a2",
+          "text": "모든 도서관에 24시간 개방 제도를 도입할 것을 촉구하기 위함"
+        },
+        {
+          "id": "a3",
+          "text": "교대 근무자의 노동 권익 보호를 위한 법 개정을 요구하기 위함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 실험은 공공시설이 다양한 생활 패턴을 가진 시민들을 포용하는 과정에서 겪는 불가피한 진통을 보여주는 동시에, 행정 편의주의를 넘어선 유연한 운영의 중요성을 시사하고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "특정 집단의 이익을 맹목적으로 옹호하는 감정적 어조"
+        },
+        {
+          "id": "a2",
+          "text": "갈등과 절충의 과정을 균형 있게 조명하는 객관적 어조"
+        },
+        {
+          "id": "a3",
+          "text": "제도의 실패를 비판적으로 단정 짓는 냉소적 어조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "찬반 양측의 팽팽한 논쟁 속에서 민수는 단순한 이용자 통계에만 의존할 수 없음을 깨달았다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "텍스트에서 '의견이나 입장이 맞서 부딪힘'을 뜻하는 단어는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "시범"
+        },
+        {
+          "id": "a2",
+          "text": "안식처"
+        },
+        {
+          "id": "a3",
+          "text": "마찰"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이 제도는 밤낮이 바뀐 노동자들에게 큰 환영을 받았지만, 내부적으로는 근무 체계 조정을 둘러싸고 상당한 마찰을 빚었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "도서관이나 공공시설이 이용자의 편의와 직원들의 근로 환경 사이에서 균형을 잡기 위해 어떤 노력을 해야 하는지 본인의 생각을 100자 이상으로 서술하시오.",
+      "en": "도서관이나 공공시설이 이용자의 편의와 직원들의 근로 환경 사이에서 균형을 잡기 위해 어떤 노력을 해야 하는지 본인의 생각을 100자 이상으로 서술하시오."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "도서관의 시간 조정 과정에서 발생한 갈등과 그 해결 과정을 분석하며 읽으십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:16:23.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "새벽 도서관의 실험 | B2 Reading | WeLearn",
+      "en": "새벽 도서관의 실험 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "교대 근무자를 위한 도서관의 이른 개방 제도가 가져온 갈등과 변화를 다룬 이야기입니다.",
+      "en": "교대 근무자를 위한 도서관의 이른 개방 제도가 가져온 갈등과 변화를 다룬 이야기입니다."
+    },
+    "canonicalPath": "/en/practice/korean/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:16:23.719Z"
+  }
+}

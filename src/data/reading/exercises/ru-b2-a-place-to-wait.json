@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Новый порядок",
+      "en": "Новый порядок"
+    },
+    "intro": {
+      "es": "Прочитайте художественный текст о переменах в городской поликлинике и выполните задания по проверке понимания.",
+      "en": "Прочитайте художественный текст о переменах в городской поликлинике и выполните задания по проверке понимания."
+    },
+    "mission": {
+      "es": "Проанализируйте текст, обращая внимание на социальные аспекты цифровизации и проблемы пациентов, затем ответьте на вопросы.",
+      "en": "Проанализируйте текст, обращая внимание на социальные аспекты цифровизации и проблемы пациентов, затем ответьте на вопросы."
+    },
+    "targetText": "В регистратуре районной поликлиники имени Семашко стоял привычный утренний гул, но за стеклом окошек царила странная тишина. Заведующая терапевтическим отделением Вера Андреевна наблюдала, как пациент с тростью растерянно крутит в руках бумажный талон, не понимая, куда идти. Новая система электронных уведомлений, призванная полностью ликвидировать живые очереди, работала безупречно лишь на бумаге. Суть нововведения заключалась в том, что вместо ожидания в душном коридоре граждане получали SMS-сообщение с точным временем приёма за пятнадцать минут до визита. Большинство молодых пациентов восприняли это новшество с восторгом, однако для пожилых людей и социально уязвимых слоев населения это обернулось настоящим испытанием.\n\nПенсионер Иван Петрович сидел на краешке жесткого дерматинового дивана уже второй час. У него был кнопочный телефон старого образца, который принимал только звонки, а мобильный интернет отсутствовал как класс. Когда внедряли прогрессивную цифровую платформу, разработчики почему-то не учли, что далеко не у каждого пенсионера или бездомного есть смартфон с поддержкой мессенджеров. В результате Иван Петрович пропустил своё утреннее время, потому что система отправила вызов на несуществующий у него мессенджер. Администратор зала вежливо, но непреклонно объяснила старику, что живая очередь больше не предусмотрена регламентом, и ему придется ждать конца рабочего дня в надежде на «окно» в расписании врача.\n\nС одной стороны, цифровизация здравоохранения объективно разгрузила коридоры, избавив медицинские учреждения от толп кашляющих людей и снизив риск внутрибольничных инфекций. Врачи отмечали, что работать стало спокойнее: пациенты заходили строго по графику, исчезли бесконечные споры «кто за кем занимал». С другой стороны, технический прогресс оставил за бортом тех, кто не успевает за его темпом. Получился парадоксальный конфликт: учреждение стало комфортным для одних ценой полного отчуждения других. Вера Андреевна видела, как система, созданная для заботы о людях, из-за бюрократического формализма оттолкнула тех, кто больше всего нуждался в помощи.\n\nРешение созрело внезапно, когда к регистратуре подошла плачущая женщина с ребёнком, у которой разрядился единственный старый телефон, а зарядного устройства с собой не оказалось. Заведующая решительно подошла к терминалу выдачи талонов и нажала скрытую сервисную кнопку администратора. На экране зашуршал принтер, выведя на плотной бумаге традиционный бумажный талон с живым временем. Вера Андреевна распорядилась вернуть дублирующую печать талонов для всех граждан, у которых нет технической возможности принимать цифровые уведомления, взяв ответственность на себя.\n\nЭтот волевой поступок вызвал бурные споры среди IT-специалистов министерства, которые настаивали на исключительной эффективности цифровых алгоритмов. Тем не менее, коридоры поликлиники обрели долгожданный баланс: современные пациенты продолжали получать уведомления на гаджеты, а те, кто был лишён этих благ, снова чувствовали себя людьми. Проблема неравенства перед лицом технологий не исчезла окончательно, но медицинский долг в отдельно взятом учреждении оказался выше слепого следования бездушным инструкциям.",
+    "wordCount": 414,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ликвидировать",
+        "lemma": "ликвидировать",
+        "glosses": {
+          "es": "to liquidate",
+          "en": "to liquidate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "нововведения",
+        "lemma": "нововведения",
+        "glosses": {
+          "es": "innovation",
+          "en": "innovation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "уязвимых",
+        "lemma": "уязвимых",
+        "glosses": {
+          "es": "vulnerable",
+          "en": "vulnerable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "регламентом",
+        "lemma": "регламентом",
+        "glosses": {
+          "es": "regulations",
+          "en": "regulations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "отчуждения",
+        "lemma": "отчуждения",
+        "glosses": {
+          "es": "alienation",
+          "en": "alienation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "формализма",
+        "lemma": "формализма",
+        "glosses": {
+          "es": "formalism",
+          "en": "formalism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.8,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:40.468Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная идея прочитанного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Столкновение цифровых инноваций с уязвимостью части людей."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимость полного отказа от новых технологий."
+        },
+        {
+          "id": "a3",
+          "text": "Преимущества старых методов работы регистратуры."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "С одной стороны, цифровизация здравоохранения объективно разгрузила коридоры, избавив медицинские учреждения от толп кашляющих людей и снизив риск внутрибольничных инфекций.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему Иван Петрович пропустил своё время приёма?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Он опоздал к началу рабочего дня поликлиники."
+        },
+        {
+          "id": "a2",
+          "text": "У него был кнопочный телефон без мессенджеров."
+        },
+        {
+          "id": "a3",
+          "text": "Врач отменил приём из-за срочной операции."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "У него был кнопочный телефон старого образца, который принимал только звонки, а мобильный интернет отсутствовал как класс.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как Вера Андреевна относится к сложившейся ситуации в поликлинике?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она считает, что все пациенты должны купить смартфоны."
+        },
+        {
+          "id": "a2",
+          "text": "Она полностью поддерживает позицию IT-специалистов."
+        },
+        {
+          "id": "a3",
+          "text": "Она видит как пользу нововведений, так и их жестокость."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Вера Андреевна видела, как система, созданная для заботы о людях, из-за бюрократического формализма оттолкнула тех, кто больше всего нуждался в помощи.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор описывает случай с плачущей женщиной и разрядившимся телефоном?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать абсурдность ситуации и подтолкнуть героев к решительным действиям."
+        },
+        {
+          "id": "a2",
+          "text": "Подчеркнуть небрежность пациентов в обращении с техникой."
+        },
+        {
+          "id": "a3",
+          "text": "Продемонстрировать нехватку розеток в здании поликлиники."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Решение созрело внезапно, когда к регистратуре подошла плачущая женщина с ребёнком, у которой разрядился единственный старый телефон, а зарядного устройства с собой не оказалось.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков эмоциональный тон финала рассказа?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Тревожный и мрачный."
+        },
+        {
+          "id": "a2",
+          "text": "Оптимистично-компромиссный."
+        },
+        {
+          "id": "a3",
+          "text": "Саркастический и едкий."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Тем не менее, коридоры поликлиники обрели долгожданный баланс: современные пациенты продолжали получать уведомления на гаджеты, а те, кто был лишён этих благ, снова чувствовали себя людьми.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что обозначает слово «отчуждения» в третьем абзаце?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Передачу прав собственности на медицинское имущество."
+        },
+        {
+          "id": "a2",
+          "text": "Физическое перемещение пациентов в другие больницы."
+        },
+        {
+          "id": "a3",
+          "text": "Потерю связи и отдаление людей друг от друга."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Получился парадоксальный конфликт: учреждение стало комфортным для одних ценой полного отчуждения других.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите развёрнутый комментарий объемом 120–150 слов, выразив своё мнение о том, как совместить технологический прогресс в сфере услуг и заботу о пожилых людях, у которых нет смартфонов.",
+      "en": "Напишите развёрнутый комментарий объемом 120–150 слов, выразив своё мнение о том, как совместить технологический прогресс в сфере услуг и заботу о пожилых людях, у которых нет смартфонов."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализируйте текст, обращая внимание на социальные аспекты цифровизации и проблемы пациентов, затем ответьте на вопросы.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:40.468Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Новый порядок | B2 Reading | WeLearn",
+      "en": "Новый порядок | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте художественный текст о переменах в городской поликлинике и выполните задания по проверке понимания.",
+      "en": "Прочитайте художественный текст о переменах в городской поликлинике и выполните задания по проверке понимания."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:40.468Z"
+  }
+}
