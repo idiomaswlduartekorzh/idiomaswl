@@ -11,7 +11,23 @@ const LANGUAGE_TAGS: Record<string, string> = {
   german: 'de', french: 'fr', italian: 'it', portuguese: 'pt', russian: 'ru', japanese: 'ja', korean: 'ko',
 }
 
-export function WritingFeedbackReview({ text, assignment, requirements }: { text: string; assignment: WritingAssignmentContext; requirements?: WritingDraftRequirements }) {
+const REVIEW_COPY = {
+  es: {
+    aria: 'Comentarios sobre tu texto', optional: 'Revisión opcional.', notice: 'Al pulsar el botón, enviaremos únicamente tu texto y el contexto de esta tarea a OpenAI para recibir comentarios. Esta revisión no envía grabaciones de audio.',
+    loading: 'Revisando…', action: 'Revisar mi texto', unavailable: 'La revisión no está disponible ahora. Tu ejercicio sigue intacto.', offline: 'No hay conexión con la revisión. Tu texto sigue aquí; inténtalo más tarde.',
+    tooLong: 'El texto supera el tamaño permitido; acórtalo antes de solicitar comentarios.', short: 'Escribe un texto de al menos 12 caracteres para activar la revisión.',
+    title: 'Comentarios para practicar', disclaimer: 'Orientación automática; no es una calificación oficial.', correction: 'Corrección:', noErrors: 'No hay errores prioritarios. Relee tu versión corregida y sigue practicando el objetivo de esta tarea.', version: 'Versión corregida', next: 'Ahora te toca', words: 'palabras', sentences: 'frases', maximum: 'máximo', requirement: 'Para esta tarea, escribe', beforeReview: 'antes de solicitar comentarios.',
+  },
+  en: {
+    aria: 'Feedback on your writing', optional: 'Optional review.', notice: 'When you press the button, only your text and this task’s context are sent to OpenAI for feedback. No audio recording is sent.',
+    loading: 'Reviewing…', action: 'Review my writing', unavailable: 'Review is unavailable right now. Your draft is still here.', offline: 'Could not connect to the review service. Your draft is still here; try again later.',
+    tooLong: 'Your text is too long. Shorten it before requesting feedback.', short: 'Write at least 12 characters to enable the review.',
+    title: 'Feedback for practice', disclaimer: 'Automated guidance, not an official grade.', correction: 'Correction:', noErrors: 'No priority errors found. Read the corrected version and keep practising this task.', version: 'Corrected version', next: 'Your turn', words: 'words', sentences: 'sentences', maximum: 'maximum', requirement: 'For this task, write', beforeReview: 'before requesting feedback.',
+  },
+} as const
+
+export function WritingFeedbackReview({ text, assignment, requirements, locale = 'es' }: { text: string; assignment: WritingAssignmentContext; requirements?: WritingDraftRequirements; locale?: 'es' | 'en' }) {
+  const copy = REVIEW_COPY[locale]
   const [loading, setLoading] = useState(false)
   const [submittedKey, setSubmittedKey] = useState('')
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null)
@@ -22,10 +38,11 @@ export function WritingFeedbackReview({ text, assignment, requirements }: { text
   const ready = normalizedText.length >= 12 && withinSize && meetsRequirements
   const requirementHint = requirements ? [
     requirements.minSentences !== undefined || requirements.maxSentences !== undefined
-      ? `${requirements.minSentences ?? 1}–${requirements.maxSentences ?? '∞'} frases` : '',
+      ? `${requirements.minSentences ?? 1}–${requirements.maxSentences ?? '∞'} ${copy.sentences}` : '',
     requirements.minWords !== undefined || requirements.maxWords !== undefined
-      ? `${requirements.minWords ?? 1}–${requirements.maxWords ?? '∞'} palabras` : '',
-    requirements.maxCharacters !== undefined ? `máximo ${requirements.maxCharacters} caracteres` : '',
+      ? `${requirements.minWords ?? 1}–${requirements.maxWords ?? '∞'} ${copy.words}` : '',
+    requirements.maxCharacters !== undefined ? `${copy.maximum} ${requirements.maxCharacters} ${locale === 'es' ? 'caracteres' : 'characters'}` : '',
+    requirements.minCharacters !== undefined ? `${requirements.minCharacters}+ ${locale === 'es' ? 'caracteres' : 'characters'}` : '',
   ].filter(Boolean).join(', ') : ''
   const currentKey = `${normalizedText}\n${JSON.stringify(assignment)}`
   const languageName = assignment.language.toLocaleLowerCase()
@@ -47,38 +64,38 @@ export function WritingFeedbackReview({ text, assignment, requirements }: { text
         body: JSON.stringify({ consent: true, text: normalizedText, assignment }),
       })
       const result = await response.json() as { feedback?: WritingFeedback; message?: string }
-      if (!response.ok || !result.feedback) setError(result.message || 'La revisión no está disponible ahora. Tu ejercicio sigue intacto.')
+      if (!response.ok || !result.feedback) setError(locale === 'en' ? copy.unavailable : result.message || copy.unavailable)
       else setFeedback(result.feedback)
     } catch {
-      setError('No hay conexión con la revisión. Tu texto sigue aquí; inténtalo más tarde.')
+      setError(copy.offline)
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <section className={styles.review} aria-label="Comentarios sobre tu texto">
+    <section className={styles.review} aria-label={copy.aria}>
       <p className={styles.notice}>
-        <strong>Revisión opcional.</strong> Al pulsar el botón, enviaremos únicamente tu texto y el contexto de esta tarea a OpenAI para recibir comentarios. Esta revisión no envía grabaciones de audio.
+        <strong>{copy.optional}</strong> {copy.notice}
       </p>
       <button type="button" className="btn btn-ghost" onClick={review} disabled={!ready || loading}>
-        {loading ? 'Revisando…' : 'Revisar mi texto'}
+        {loading ? copy.loading : copy.action}
       </button>
-      {!ready && <p className={styles.hint}>{!withinSize ? 'El texto supera el tamaño permitido; acórtalo antes de solicitar comentarios.' : requirements && !meetsRequirements ? `Para esta tarea, escribe ${requirementHint} antes de solicitar comentarios.` : 'Escribe un texto de al menos 12 caracteres para activar la revisión.'}</p>}
+      {!ready && <p className={styles.hint}>{!withinSize ? copy.tooLong : requirements && !meetsRequirements ? `${copy.requirement} ${requirementHint} ${copy.beforeReview}` : copy.short}</p>}
       <div aria-live="polite">
         {currentError && <p className={styles.error} role="alert">{currentError}</p>}
         {currentFeedback && (
           <div className={styles.result}>
-            <h3>Comentarios para practicar</h3>
-            <p>Orientación automática; no es una calificación oficial.</p>
+            <h3>{copy.title}</h3>
+            <p>{copy.disclaimer}</p>
             {currentFeedback.errores.length ? <ol>{currentFeedback.errores.map((issue, index) => (
               <li key={`${issue.fragmento}-${index}`}>
-                <strong>{issue.fragmento}</strong> — {issue.explicacion} <span>Corrección: {issue.correccion}</span>
+                <strong>{issue.fragmento}</strong> — {issue.explicacion} <span>{copy.correction} {issue.correccion}</span>
               </li>
-            ))}</ol> : <p>No hay errores prioritarios. Relee tu versión corregida y sigue practicando el objetivo de esta tarea.</p>}
-            <h4>Versión corregida</h4>
+            ))}</ol> : <p>{copy.noErrors}</p>}
+            <h4>{copy.version}</h4>
             <p lang={languageTag}>{currentFeedback.version_corregida}</p>
-            <h4>Ahora te toca</h4>
+            <h4>{copy.next}</h4>
             <p>{currentFeedback.reescribe}</p>
           </div>
         )}

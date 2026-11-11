@@ -5,11 +5,12 @@
   "language": "ru",
   "variant": "ru",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C2",
-    "displayLabel": "ruso C2"
+    "displayLabel": "russian C2"
   },
   "slug": "ochered-spravedlivee",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "ru",
       "c2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Una fila más justa"
+      "es": "Более справедливая очередь",
+      "en": "Более справедливая очередь"
     },
     "intro": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
     "mission": {
-      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+      "es": "Explain the central paradox and how the choice of words changes its scope.",
+      "en": "Explain the central paradox and how the choice of words changes its scope."
     },
-    "targetText": "Город заменил очередь на жильё по времени подачи заявки системой баллов, призванной помочь самым нуждающимся. Первый отчёт праздновал сокращение среднего срока ожидания. Цифра была верной, но не уточняла, чьё ожидание сократилось. Человек с надёжным интернетом исправлял ошибку в заявке за часы; пользователь общественного терминала узнавал о ней иногда лишь после еженедельного пересчёта. Власти ввели срок обжалования. Однако вернуть место через жалобу может только тот, кто заметил его потерю. Независимая комиссия предложила раскрыть правила оценки. Чиновники опасались подгонки ответов; комиссия напомнила, что секретность позволяет ошибке выдавать себя за беспристрастность. Никто не обещал систему без стратегического поведения. Главный спор касался доказательств нужды: недавнее уведомление о выселении легко проверить, а годы неустойчивого проживания редко оставляют аккуратный документ. Назвав первое «объективным», администрация упрощает свою работу. Назвав второе «субъективным», она незаметно переносит бремя доказательства на тех, кому труднее всего его нести. Очередь стала быстрее. Стала ли она справедливее, зависит от того, кого система вообще способна увидеть.",
-    "wordCount": 151,
-    "estimatedMinutes": 6,
+    "targetText": "Город заменил очередь на жильё по времени подачи заявки системой баллов, призванной помочь самым нуждающимся. Первый отчёт праздновал сокращение среднего срока ожидания. Цифра была верной, но не уточняла, чьё ожидание сократилось. Человек с надёжным интернетом исправлял ошибку в заявке за часы; пользователь общественного терминала узнавал о ней иногда лишь после еженедельного пересчёта. Власти ввели срок обжалования. Однако вернуть место через жалобу может только тот, кто заметил его потерю. Независимая комиссия предложила раскрыть правила оценки. Чиновники опасались подгонки ответов; комиссия напомнила, что секретность позволяет ошибке выдавать себя за беспристрастность. Никто не обещал систему без стратегического поведения. Главный спор касался доказательств нужды: недавнее уведомление о выселении легко проверить, а годы неустойчивого проживания редко оставляют аккуратный документ. Назвав первое «объективным», администрация упрощает свою работу. Назвав второе «субъективным», она незаметно переносит бремя доказательства на тех, кому труднее всего его нести. Очередь стала быстрее. Стала ли она справедливее, зависит от того, кого система вообще способна увидеть. Улучшение среднего показателя может скрывать гораздо более долгий срок ожидания для небольшой группы. Именно у этих людей чаще всего требуют документы, которые трудно получить. Поэтому одна опубликованная цифра не просто упрощает отчёт: она определяет, чей опыт станет заметным успехом, а чей исчезнет за средним значением.",
+    "wordCount": 196,
+    "estimatedMinutes": 8,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "vocabulary": [
       {
         "surface": "баллов",
         "lemma": "баллов",
         "glosses": {
-          "es": "puntos"
+          "es": "points",
+          "en": "points"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "обжалования",
         "lemma": "обжалования",
         "glosses": {
-          "es": "apelación"
+          "es": "appeal",
+          "en": "appeal"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "беспристрастность",
         "lemma": "беспристрастность",
         "glosses": {
-          "es": "imparcialidad"
+          "es": "impartiality",
+          "en": "impartiality"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "выселении",
         "lemma": "выселении",
         "glosses": {
-          "es": "desalojo"
+          "es": "eviction",
+          "en": "eviction"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "неустойчивого проживания",
         "lemma": "неустойчивого проживания",
         "glosses": {
-          "es": "vivienda precaria"
+          "es": "unstable housing",
+          "en": "unstable housing"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "бремя доказательства",
         "lemma": "бремя доказательства",
         "glosses": {
-          "es": "carga de la prueba"
+          "es": "burden of proof",
+          "en": "burden of proof"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
     },
     "allowedGrammar": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 10.8,
+      "averageSentenceWords": 11.5,
       "maxSentenceWords": 21,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "кого система вообще способна увидеть",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Человек с надёжным интернетом"
+          "text": "Люди с надёжным интернетом"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "Человек с надёжным интернетом исправлял ошибку в заявке за часы",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Потерю места надо сначала заметить"
+          "text": "Потерю нужно сначала заметить"
         }
       ],
       "answer": "a3",
       "evidence": "только тот, кто заметил его потерю",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Чтобы усомниться в критерии доказательства"
+          "text": "Чтобы проверить критерий"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "редко оставляют аккуратный документ",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "секретность позволяет ошибке выдавать себя за беспристрастность",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Тяжесть обязанности доказать"
+          "text": "Бремя доказать"
         }
       ],
       "answer": "a3",
       "evidence": "бремя доказательства",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Оцените утверждение, что открытые правила сами по себе сделают очередь справедливой."
+      "es": "Оцените утверждение, что открытые правила сами по себе сделают очередь справедливой.",
+      "en": "Оцените утверждение, что открытые правила сами по себе сделают очередь справедливой."
     },
     "minWords": 120,
     "maxWords": 220,
     "hints": [
-      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
-      "Cita una frase del texto y explica su importancia."
+      "Explain the central paradox and how the choice of words changes its scope.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Una fila más justa | Lectura C2 | WeLearn"
+      "es": "Более справедливая очередь | C2 Reading | WeLearn",
+      "en": "Более справедливая очередь | C2 Reading | WeLearn"
     },
     "description": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
-    "canonicalPath": "/practica/ruso/c2/lectura/ochered-spravedlivee",
+    "canonicalPath": "/en/practice/russian/c2/reading/ochered-spravedlivee",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

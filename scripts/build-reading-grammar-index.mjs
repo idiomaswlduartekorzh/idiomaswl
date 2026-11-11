@@ -42,6 +42,24 @@ function extractField(source, field) {
   return match ? match[2].trim() : null
 }
 
+function extractInlineField(source, field) {
+  const match = source.match(new RegExp(`(?:^|[,{])\\s*${field}:\\s*(['"\x60])([\\s\\S]*?)\\1`, 'm'))
+  return match ? match[2].trim() : null
+}
+
+function extractCompletionTopics(source, languageDir, level, file) {
+  const matches = [...source.matchAll(/\bslug\s*:\s*(['"\x60])([^'"\x60]+)\1/g)]
+  return matches.map((match, index) => {
+    const segment = source.slice(match.index, matches[index + 1]?.index ?? source.length)
+    return {
+      slug: match[2],
+      title: extractInlineField(segment, 'shortTitle') ?? extractInlineField(segment, 'title') ?? match[2],
+      category: extractInlineField(segment, 'category'),
+      file: `src/data/grammar/${languageDir}/${level}/${file}`,
+    }
+  })
+}
+
 async function readTopics(languageDir, level) {
   const dir = path.join(grammarDir, languageDir, level)
   let entries
@@ -67,6 +85,12 @@ async function readTopics(languageDir, level) {
           file: `src/data/grammar/${languageDir}/${level}/${entry}`,
         })
       }
+      continue
+    }
+    if (languageDir === 'ingles' && level === 'a1' && entry === 'completion-topics.ts') {
+      const generated = extractCompletionTopics(source, languageDir, level, entry)
+      if (generated.length !== 6) throw new Error(`${languageDir}/${level}/${entry}: se esperaban seis temas generados; se encontraron ${generated.length}`)
+      topics.push(...generated)
       continue
     }
     const slug = extractField(source, 'slug')

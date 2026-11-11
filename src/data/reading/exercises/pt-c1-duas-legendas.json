@@ -5,11 +5,12 @@
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "portugues C1"
+    "displayLabel": "portuguese C1"
   },
   "slug": "duas-legendas",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "pt",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Dos cartelas para un mapa"
+      "es": "As duas etiquetas",
+      "en": "As duas etiquetas"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "Na reabertura do museu regional, um mapa antigo apareceu com duas legendas. A primeira identificava autor e data; a segunda explicava que as rotas de uma companhia comercial dependiam de trabalho forçado. Alguns visitantes elogiaram o contexto, há muito necessário. Outros disseram que um objeto não deveria responder por toda uma história política. A curadora manteve ambas: precisão material e contexto histórico seriam obrigações diferentes. A nova legenda, porém, deixou evidente o que não conseguia explicar. Como o mapa entrou no acervo? Quem pede acesso ao original hoje? Por que a cópia digital circula com mais facilidade? O museu prometeu publicar os registros de aquisição depois de conferir nomes em documentos que frequentemente reduziam trabalhadores a números. Um crítico chamou a demora de outro silêncio. A curadora afirmou que não substituiria uma simplificação por outra. O visitante fica diante de duas legendas e de um espaço vazio, onde talvez um relato mais completo venha a caber.",
-    "wordCount": 156,
-    "estimatedMinutes": 6,
+    "targetText": "Na reabertura do museu regional, um mapa antigo apareceu com duas legendas. A primeira identificava autor e data; a segunda explicava que as rotas de uma companhia comercial dependiam de trabalho forçado. Alguns visitantes elogiaram o contexto, há muito necessário. Outros disseram que um objeto não deveria responder por toda uma história política. A curadora manteve ambas: precisão material e contexto histórico seriam obrigações diferentes. A nova legenda, porém, deixou evidente o que não conseguia explicar. Como o mapa entrou no acervo? Quem pede acesso ao original hoje? Por que a cópia digital circula com mais facilidade? O museu prometeu publicar os registros de aquisição depois de conferir nomes em documentos que frequentemente reduziam trabalhadores a números. Um crítico chamou a demora de outro silêncio. A curadora afirmou que não substituiria uma simplificação por outra. O visitante fica diante de duas legendas e de um espaço vazio, onde talvez um relato mais completo venha a caber. O museu convidou grupos locais a comentar a linguagem das etiquetas. A conversa pode melhorar a exposição, mas abre outra questão: quem decide quais sugestões serão aceitas? Sem explicar esse processo, o convite ao diálogo pode parecer uma resposta completa quando ainda representa apenas o começo.",
+    "wordCount": 202,
+    "estimatedMinutes": 8,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "reabertura",
         "lemma": "reabertura",
         "glosses": {
-          "es": "reapertura"
+          "es": "reopening",
+          "en": "reopening"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "legendas",
         "lemma": "legendas",
         "glosses": {
-          "es": "cartelas explicativas"
+          "es": "explanatory labels",
+          "en": "explanatory labels"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "trabalho forçado",
         "lemma": "trabalho forçado",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "curadora",
         "lemma": "curadora",
         "glosses": {
-          "es": "conservadora"
+          "es": "curator",
+          "en": "curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "acervo",
         "lemma": "acervo",
         "glosses": {
-          "es": "colección"
+          "es": "collection",
+          "en": "collection"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "registros de aquisição",
         "lemma": "registros de aquisição",
         "glosses": {
-          "es": "registros de adquisición"
+          "es": "acquisition records",
+          "en": "acquisition records"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 12,
+      "averageSentenceWords": 12.6,
       "maxSentenceWords": 21,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "obrigações diferentes",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Os registros de aquisição"
+          "text": "Registros da compra"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "prometeu publicar os registros de aquisição",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Os documentos tratavam pessoas como números"
+          "text": "As pessoas apareciam como números"
         }
       ],
       "answer": "a3",
       "evidence": "reduziam trabalhadores a números",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Para indicar que o relato segue incompleto"
+          "text": "Para mostrar uma lacuna"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "onde talvez um relato mais completo venha a caber",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -282,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Nenhuma resolve tudo"
+          "text": "Nenhuma delas resolve o problema"
         },
         {
           "id": "a3",
@@ -293,13 +317,16 @@
       "evidence": "não substituiria uma simplificação por outra",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "O contexto deveria ter sido acrescentado antes"
+          "text": "O contexto veio tarde"
         }
       ],
       "answer": "a3",
       "evidence": "contexto, há muito necessário",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Explique se as duas legendas bastam por enquanto, considerando uma objeção."
+      "es": "Explique se as duas legendas bastam por enquanto, considerando uma objeção.",
+      "en": "Explique se as duas legendas bastam por enquanto, considerando uma objeção."
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+      "es": "As duas etiquetas | C1 Reading | WeLearn",
+      "en": "As duas etiquetas | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/portugues/c1/lectura/duas-legendas",
+    "canonicalPath": "/en/practice/portuguese/c1/reading/duas-legendas",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

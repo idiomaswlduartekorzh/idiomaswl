@@ -76,6 +76,21 @@ test('envía borrador y contexto como contenido, con formato JSON y sin guardar 
   assert.equal(JSON.stringify(requestBody).includes('test-only-secret'), false)
 })
 
+test('advanced reading requests feedback in the target language without changing the legacy Spanish review', async () => {
+  let requestBody
+  const fetcher = async (_url, init) => {
+    requestBody = JSON.parse(init.body)
+    return new Response(JSON.stringify({ output: [{ content: [{ type: 'output_text', text: JSON.stringify(validFeedback) }] }] }), { status: 200 })
+  }
+  const advanced = { ...assignment, feedbackLanguage: 'de' }
+  assert.equal(validateWritingFeedbackRequest({ text: draft, assignment: advanced, consent: true }).ok, true)
+  assert.equal(validateWritingFeedbackRequest({ text: draft, assignment: { ...advanced, feedbackLanguage: 'invalid' }, consent: true }).ok, false)
+  await reviewWritingWithOpenAi(draft, advanced, 'test-only-secret', fetcher)
+  assert.match(requestBody.instructions, /Write all explanations and the rewrite invitation in de/)
+  assert.equal(meetsWritingDraftRequirements('日本語の少し長い文章です。', { minCharacters: 12, maxCharacters: 40 }), true)
+  assert.equal(meetsWritingDraftRequirements('短い', { minCharacters: 12 }), false)
+})
+
 test('clasifica saldo agotado, errores HTTP, respuestas inválidas y caídas de red', async () => {
   const apiFailure = async () => new Response(JSON.stringify({ error: { code: 'insufficient_quota' } }), { status: 429 })
   assert.deepEqual(await reviewWritingWithOpenAi(draft, assignment, 'test', apiFailure), { ok: false, code: 'quota_exhausted' })

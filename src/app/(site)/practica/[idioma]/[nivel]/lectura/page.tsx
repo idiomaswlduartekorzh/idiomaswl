@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import { buildHubMetadata, HubPage, readingHubStaticParams, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
+import { redirect } from 'next/navigation'
+import { buildHubMetadata, readingHubStaticParams, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
+import { readingHubPath } from '@/lib/reading/routes'
 
 type Props = { params: Promise<{ idioma: string; nivel: string }> }
 
@@ -17,5 +19,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { idioma, nivel } = await params
   const resolved = resolveHubForRoute('es', idioma, nivel)
-  return <HubPage locale="es" {...resolved} />
+  redirect(readingHubPath('en', resolved.language, resolved.level))
 }

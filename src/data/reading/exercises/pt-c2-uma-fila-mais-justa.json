@@ -5,11 +5,12 @@
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C2",
-    "displayLabel": "portugues C2"
+    "displayLabel": "portuguese C2"
   },
   "slug": "uma-fila-mais-justa",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "pt",
       "c2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Una fila más justa"
+      "es": "Uma fila mais justa",
+      "en": "Uma fila mais justa"
     },
     "intro": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
     "mission": {
-      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+      "es": "Explain the central paradox and how the choice of words changes its scope.",
+      "en": "Explain the central paradox and how the choice of words changes its scope."
     },
-    "targetText": "A cidade trocou a ordem de chegada na fila de moradias por uma pontuação destinada a priorizar quem mais precisava. O primeiro relatório comemorou a redução da espera média. O número era correto, mas nada dizia sobre a espera de quem havia diminuído. Com internet estável, um candidato corrigia o formulário em horas. No terminal público, um erro às vezes só aparecia depois do fechamento semanal da classificação. A prefeitura criou um prazo de recurso. O recurso, porém, só devolve uma posição a quem percebe que a perdeu. Um comitê independente pediu a divulgação das regras. Os gestores temiam respostas calculadas; o comitê lembrava que o sigilo também permite que um erro pareça imparcial. Nenhum lado prometia um sistema imune a estratégias. A divergência mais profunda dizia respeito à prova da necessidade: uma ordem recente de despejo é verificável, enquanto anos de moradia precária raramente produzem um documento organizado. Chamar a primeira prova de « objetiva » facilita a administração. Chamar a segunda de « subjetiva » transfere discretamente o peso da prova para quem menos consegue carregá-lo. A fila ficou mais rápida. Saber se ficou mais justa exige perguntar quem o sistema aprendeu a enxergar.",
-    "wordCount": 196,
-    "estimatedMinutes": 8,
+    "targetText": "A cidade trocou a ordem de chegada na fila de moradias por uma pontuação destinada a priorizar quem mais precisava. O primeiro relatório comemorou a redução da espera média. O número era correto, mas nada dizia sobre a espera de quem havia diminuído. Com internet estável, um candidato corrigia o formulário em horas. No terminal público, um erro às vezes só aparecia depois do fechamento semanal da classificação. A prefeitura criou um prazo de recurso. O recurso, porém, só devolve uma posição a quem percebe que a perdeu. Um comitê independente pediu a divulgação das regras. Os gestores temiam respostas calculadas; o comitê lembrava que o sigilo também permite que um erro pareça imparcial. Nenhum lado prometia um sistema imune a estratégias. A divergência mais profunda dizia respeito à prova da necessidade: uma ordem recente de despejo é verificável, enquanto anos de moradia precária raramente produzem um documento organizado. Chamar a primeira prova de « objetiva » facilita a administração. Chamar a segunda de « subjetiva » transfere discretamente o peso da prova para quem menos consegue carregá-lo. A fila ficou mais rápida. Saber se ficou mais justa exige perguntar quem o sistema aprendeu a enxergar. Uma média melhor pode conviver com esperas muito mais longas para um grupo pequeno, especialmente quando essas pessoas precisam apresentar documentos difíceis de obter. Publicar um único número, portanto, não é apenas resumir um relatório: é escolher quais experiências aparecerão como sucesso e quais desaparecerão na média.",
+    "wordCount": 243,
+    "estimatedMinutes": 10,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "vocabulary": [
       {
         "surface": "pontuação",
         "lemma": "pontuação",
         "glosses": {
-          "es": "puntuación"
+          "es": "score",
+          "en": "score"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "prazo de recurso",
         "lemma": "prazo de recurso",
         "glosses": {
-          "es": "plazo de recurso"
+          "es": "appeal period",
+          "en": "appeal period"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "sigilo",
         "lemma": "sigilo",
         "glosses": {
-          "es": "secreto"
+          "es": "secrecy",
+          "en": "secrecy"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "imparcial",
         "lemma": "imparcial",
         "glosses": {
-          "es": "imparcial"
+          "es": "impartial",
+          "en": "impartial"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "despejo",
         "lemma": "despejo",
         "glosses": {
-          "es": "desalojo"
+          "es": "eviction",
+          "en": "eviction"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "peso da prova",
         "lemma": "peso da prova",
         "glosses": {
-          "es": "carga de la prueba"
+          "es": "burden of proof",
+          "en": "burden of proof"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
     },
     "allowedGrammar": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 13.1,
+      "averageSentenceWords": 14.3,
       "maxSentenceWords": 27,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "quem o sistema aprendeu a enxergar",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Um candidato com internet estável"
+          "text": "Quem tinha internet estável"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "Com internet estável, um candidato corrigia o formulário em horas",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Depende de a perda ser percebida"
+          "text": "É preciso notar a perda"
         }
       ],
       "answer": "a3",
       "evidence": "só devolve uma posição a quem percebe que a perdeu",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Para questionar o que conta como prova"
+          "text": "Para rever a prova exigida"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "raramente produzem um documento organizado",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "o sigilo também permite que um erro pareça imparcial",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Responsabilidade de apresentar provas"
+          "text": "O ônus da prova"
         }
       ],
       "answer": "a3",
       "evidence": "o peso da prova",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Avalie a afirmação de que divulgar as regras seria suficiente para tornar a fila justa."
+      "es": "Avalie a afirmação de que divulgar as regras seria suficiente para tornar a fila justa.",
+      "en": "Avalie a afirmação de que divulgar as regras seria suficiente para tornar a fila justa."
     },
     "minWords": 120,
     "maxWords": 220,
     "hints": [
-      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
-      "Cita una frase del texto y explica su importancia."
+      "Explain the central paradox and how the choice of words changes its scope.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Una fila más justa | Lectura C2 | WeLearn"
+      "es": "Uma fila mais justa | C2 Reading | WeLearn",
+      "en": "Uma fila mais justa | C2 Reading | WeLearn"
     },
     "description": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
-    "canonicalPath": "/practica/portugues/c2/lectura/uma-fila-mais-justa",
+    "canonicalPath": "/en/practice/portuguese/c2/reading/uma-fila-mais-justa",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

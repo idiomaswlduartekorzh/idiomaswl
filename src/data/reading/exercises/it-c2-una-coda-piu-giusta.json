@@ -5,11 +5,12 @@
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C2",
-    "displayLabel": "italiano C2"
+    "displayLabel": "italian C2"
   },
   "slug": "una-coda-piu-giusta",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "it",
       "c2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Una cola más justa"
+      "es": "Una fila più giusta",
+      "en": "Una fila più giusta"
     },
     "intro": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
     "mission": {
-      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+      "es": "Explain the central paradox and how the choice of words changes its scope.",
+      "en": "Explain the central paradox and how the choice of words changes its scope."
     },
-    "targetText": "La città ha sostituito la graduatoria degli alloggi basata sull’ordine di arrivo con un punteggio che dovrebbe favorire chi ha più bisogno. Il primo rapporto celebrava un’attesa media più breve. Il dato era esatto, ma taceva su chi avesse atteso meno. Con una connessione stabile si poteva correggere una domanda incompleta in poche ore; allo sportello pubblico, un errore emergeva talvolta dopo la chiusura settimanale della graduatoria. Il comune ha introdotto un periodo di ricorso. Un ricorso, però, restituisce una posizione soltanto a chi sa di averla persa. Una commissione indipendente ha proposto di rendere pubblici i criteri. I funzionari temevano risposte costruite ad arte; la commissione osservava che la segretezza permette anche a un errore di sembrare imparziale. Nessuno garantiva un sistema immune da strategie. La controversia più profonda riguardava le prove: uno sfratto recente è facile da documentare; anni di sistemazioni precarie raramente producono una carta altrettanto ordinata. Definire « oggettivo » il primo caso semplifica il lavoro amministrativo. Definire « soggettivo » il secondo sposta discretamente l’onere della prova su chi può sostenerlo meno. La coda è più veloce. Per dire se sia anche più giusta bisogna chiedere chi il sistema riesce a vedere.",
-    "wordCount": 197,
-    "estimatedMinutes": 8,
+    "targetText": "La città ha sostituito la graduatoria degli alloggi basata sull’ordine di arrivo con un punteggio che dovrebbe favorire chi ha più bisogno. Il primo rapporto celebrava un’attesa media più breve. Il dato era esatto, ma taceva su chi avesse atteso meno. Con una connessione stabile si poteva correggere una domanda incompleta in poche ore; allo sportello pubblico, un errore emergeva talvolta dopo la chiusura settimanale della graduatoria. Il comune ha introdotto un periodo di ricorso. Un ricorso, però, restituisce una posizione soltanto a chi sa di averla persa. Una commissione indipendente ha proposto di rendere pubblici i criteri. I funzionari temevano risposte costruite ad arte; la commissione osservava che la segretezza permette anche a un errore di sembrare imparziale. Nessuno garantiva un sistema immune da strategie. La controversia più profonda riguardava le prove: uno sfratto recente è facile da documentare; anni di sistemazioni precarie raramente producono una carta altrettanto ordinata. Definire « oggettivo » il primo caso semplifica il lavoro amministrativo. Definire « soggettivo » il secondo sposta discretamente l’onere della prova su chi può sostenerlo meno. La coda è più veloce. Per dire se sia anche più giusta bisogna chiedere chi il sistema riesce a vedere. Una media migliore può nascondere attese più lunghe per un gruppo ristretto, soprattutto se a quelle persone vengono chiesti documenti difficili da ottenere. Pubblicare un solo numero non è quindi una semplice scelta di sintesi: determina quali esperienze diventano visibili come successo e quali restano fuori dal racconto.",
+    "wordCount": 245,
+    "estimatedMinutes": 10,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "vocabulary": [
       {
         "surface": "graduatoria",
         "lemma": "graduatoria",
         "glosses": {
-          "es": "lista de clasificación"
+          "es": "ranking list",
+          "en": "ranking list"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "ricorso",
         "lemma": "ricorso",
         "glosses": {
-          "es": "recurso"
+          "es": "appeal",
+          "en": "appeal"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "criteri",
         "lemma": "criteri",
         "glosses": {
-          "es": "criterios"
+          "es": "criteria",
+          "en": "criteria"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "segretezza",
         "lemma": "segretezza",
         "glosses": {
-          "es": "opacidad"
+          "es": "lack of transparency",
+          "en": "lack of transparency"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "sfratto",
         "lemma": "sfratto",
         "glosses": {
-          "es": "desahucio"
+          "es": "eviction",
+          "en": "eviction"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "onere della prova",
         "lemma": "onere della prova",
         "glosses": {
-          "es": "carga de la prueba"
+          "es": "burden of proof",
+          "en": "burden of proof"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
     },
     "allowedGrammar": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 14.1,
+      "averageSentenceWords": 15.3,
       "maxSentenceWords": 26,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "chi il sistema riesce a vedere",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Chi aveva una connessione stabile"
+          "text": "Chi aveva internet stabile"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "Con una connessione stabile si poteva correggere una domanda incompleta in poche ore",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Funziona se la perdita viene scoperta"
+          "text": "La perdita va prima scoperta"
         }
       ],
       "answer": "a3",
       "evidence": "soltanto a chi sa di averla persa",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Per interrogare ciò che conta come prova"
+          "text": "Per chiedere che cosa sia prova"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "raramente producono una carta altrettanto ordinata",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "la segretezza permette anche a un errore di sembrare imparziale",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Responsabilità o peso di dimostrare qualcosa"
+          "text": "Il peso della prova"
         }
       ],
       "answer": "a3",
       "evidence": "l’onere della prova",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Valuta l’idea che la pubblicazione dei criteri basti a rendere giusta la graduatoria."
+      "es": "Valuta l’idea che la pubblicazione dei criteri basti a rendere giusta la graduatoria.",
+      "en": "Valuta l’idea che la pubblicazione dei criteri basti a rendere giusta la graduatoria."
     },
     "minWords": 120,
     "maxWords": 220,
     "hints": [
-      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
-      "Cita una frase del texto y explica su importancia."
+      "Explain the central paradox and how the choice of words changes its scope.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Una cola más justa | Lectura C2 | WeLearn"
+      "es": "Una fila più giusta | C2 Reading | WeLearn",
+      "en": "Una fila più giusta | C2 Reading | WeLearn"
     },
     "description": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
-    "canonicalPath": "/practica/italiano/c2/lectura/una-coda-piu-giusta",
+    "canonicalPath": "/en/practice/italian/c2/reading/una-coda-piu-giusta",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

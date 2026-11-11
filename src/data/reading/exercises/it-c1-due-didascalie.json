@@ -5,11 +5,12 @@
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "italiano C1"
+    "displayLabel": "italian C1"
   },
   "slug": "due-didascalie",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "it",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Dos cartelas para un mapa"
+      "es": "Le due etichette",
+      "en": "Le due etichette"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "Alla riapertura del museo regionale, una vecchia carta geografica era accompagnata da due didascalie. La prima indicava autore e data; la seconda spiegava che le rotte tracciate per una compagnia commerciale dipendevano dal lavoro forzato. Alcuni visitatori hanno accolto l’aggiunta come un contesto necessario da tempo. Altri hanno accusato il museo di chiedere a un oggetto di rappresentare un’intera storia politica. La curatrice ha mantenuto entrambe le didascalie: precisione materiale e contesto storico, sostiene, sono obblighi diversi. La novità ha però reso visibile una domanda più difficile. Come entrò la carta nella collezione? Chi chiede oggi di consultarla? Perché una copia digitale è più accessibile dell’originale? Il museo promette di pubblicare i registri d’acquisto dopo aver controllato i nomi in documenti che spesso riducevano i lavoratori a numeri. Un critico chiama il ritardo un altro silenzio; la curatrice rifiuta di sostituire una semplificazione con un’altra. Davanti alla carta, il visitatore vede due testi e uno spazio che una spiegazione più completa potrebbe un giorno occupare.",
-    "wordCount": 165,
-    "estimatedMinutes": 7,
+    "targetText": "Alla riapertura del museo regionale, una vecchia carta geografica era accompagnata da due didascalie. La prima indicava autore e data; la seconda spiegava che le rotte tracciate per una compagnia commerciale dipendevano dal lavoro forzato. Alcuni visitatori hanno accolto l’aggiunta come un contesto necessario da tempo. Altri hanno accusato il museo di chiedere a un oggetto di rappresentare un’intera storia politica. La curatrice ha mantenuto entrambe le didascalie: precisione materiale e contesto storico, sostiene, sono obblighi diversi. La novità ha però reso visibile una domanda più difficile. Come entrò la carta nella collezione? Chi chiede oggi di consultarla? Perché una copia digitale è più accessibile dell’originale? Il museo promette di pubblicare i registri d’acquisto dopo aver controllato i nomi in documenti che spesso riducevano i lavoratori a numeri. Un critico chiama il ritardo un altro silenzio; la curatrice rifiuta di sostituire una semplificazione con un’altra. Davanti alla carta, il visitatore vede due testi e uno spazio che una spiegazione più completa potrebbe un giorno occupare. Il museo ha invitato alcune associazioni locali a discutere il linguaggio delle etichette. Il confronto potrebbe migliorare la mostra, ma apre un’altra questione: chi decide quali proposte verranno accolte? Senza una risposta pubblica, la consultazione rischia di sembrare una soluzione completa quando è solo l’inizio.",
+    "wordCount": 210,
+    "estimatedMinutes": 8,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "didascalie",
         "lemma": "didascalie",
         "glosses": {
-          "es": "cartelas explicativas"
+          "es": "explanatory labels",
+          "en": "explanatory labels"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "rotte",
         "lemma": "rotte",
         "glosses": {
-          "es": "rutas"
+          "es": "routes",
+          "en": "routes"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "lavoro forzato",
         "lemma": "lavoro forzato",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "curatrice",
         "lemma": "curatrice",
         "glosses": {
-          "es": "conservadora"
+          "es": "curator",
+          "en": "curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "registri d’acquisto",
         "lemma": "registri d’acquisto",
         "glosses": {
-          "es": "registros de adquisición"
+          "es": "acquisition records",
+          "en": "acquisition records"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "semplificazione",
         "lemma": "semplificazione",
         "glosses": {
-          "es": "simplificación"
+          "es": "oversimplification",
+          "en": "oversimplification"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 13.8,
+      "averageSentenceWords": 14,
       "maxSentenceWords": 22,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "precisione materiale e contesto storico, sostiene, sono obblighi diversi",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Di pubblicare i registri d’acquisto"
+          "text": "I registri d’acquisto"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "promette di pubblicare i registri d’acquisto",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "I documenti riducevano persone a numeri"
+          "text": "Persone registrate come numeri"
         }
       ],
       "answer": "a3",
       "evidence": "riducevano i lavoratori a numeri",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Per suggerire che il racconto è incompleto"
+          "text": "Per mostrare un racconto incompleto"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "uno spazio che una spiegazione più completa potrebbe un giorno occupare",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -282,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Nessuna risolve tutto"
+          "text": "Nessuna delle due basta"
         },
         {
           "id": "a3",
@@ -293,13 +317,16 @@
       "evidence": "rifiuta di sostituire una semplificazione con un’altra",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Il chiarimento era atteso già prima"
+          "text": "Era atteso da tempo"
         }
       ],
       "answer": "a3",
       "evidence": "necessario da tempo",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Spiega se le due didascalie bastano, considerando una forte obiezione."
+      "es": "Spiega se le due didascalie bastano, considerando una forte obiezione.",
+      "en": "Spiega se le due didascalie bastano, considerando una forte obiezione."
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+      "es": "Le due etichette | C1 Reading | WeLearn",
+      "en": "Le due etichette | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/italiano/c1/lectura/due-didascalie",
+    "canonicalPath": "/en/practice/italian/c1/reading/due-didascalie",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

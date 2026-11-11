@@ -1,0 +1,17 @@
+.page { width: min(1080px, calc(100% - 36px)); margin: 40px auto 100px; color: #173052; }
+.page nav { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 25px; color: #65758b; font-size: 12px; }
+.page nav a, .links a { color: #315bb4; text-decoration: none; font-weight: 700; }
+.page header { padding: clamp(28px, 4vw, 48px); border-radius: 20px; color: white; background: linear-gradient(125deg, #0d2342, #244b79); }
+.page header p { margin: 0 0 12px; color: #b6cce8; font-size: 11px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.page header h1 { margin: 0 0 9px; font: 400 clamp(2.4rem, 5vw, 4rem)/1 Georgia, serif; }
+.page header span { color: #d0deef; font-size: 14px; }
+.list { display: grid; gap: 16px; margin-top: 24px; }
+.card, .empty { padding: clamp(22px, 3vw, 32px); border: 1px solid #dce4ef; border-radius: 15px; background: white; box-shadow: 0 8px 24px rgba(17,42,75,.05); }
+.cardHead { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; }
+.cardHead p { margin: 0 0 7px; color: #315bb4; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+.cardHead h2 { margin: 0 0 6px; font: 400 25px/1.15 Georgia, serif; }
+.cardHead span { color: #64758d; font-size: 12px; }
+.links { display: grid; gap: 8px; flex-shrink: 0; font-size: 12px; text-align: right; }
+.response { margin-top: 20px; padding: 20px 23px; border-left: 3px solid #db5b56; border-radius: 0 8px 8px 0; background: #f7f9fd; white-space: pre-wrap; overflow-wrap: anywhere; font: 17px/1.7 Georgia, serif; }
+.empty { margin-top: 24px; }.empty h2 { margin-top: 0; }
+@media (max-width: 640px) { .cardHead { display: block; }.links { margin-top: 16px; text-align: left; }.response { padding: 16px; } }

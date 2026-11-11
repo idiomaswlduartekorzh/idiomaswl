@@ -24,7 +24,7 @@ const GENRE_LABELS: Record<TutorLocale, Record<string, string>> = {
 }
 
 export function ReadingHub({
-  locale,
+  locale: routeLocale,
   language,
   level,
   exercises,
@@ -34,13 +34,14 @@ export function ReadingHub({
   level: CefrLevel
   exercises: ReadingExercise[]
 }) {
+  const advanced = ['B2', 'C1', 'C2'].includes(level)
+  const locale = advanced ? 'en' : routeLocale
   const copy = COPY[locale]
   const languageName = LANGUAGE_NAMES[locale][language]
-  const advanced = ['B2', 'C1', 'C2'].includes(level)
   return (
     <div className={styles.pageWidth}>
       <nav className={styles.breadcrumbs} aria-label={locale === 'es' ? 'Migas de pan' : 'Breadcrumbs'}>
-        <Link href="/practica">{locale === 'es' ? 'Práctica' : 'Practice'}</Link>
+        <Link href={routeLocale === 'es' ? '/practica' : '/en/practice'}>{locale === 'es' ? 'Práctica' : 'Practice'}</Link>
         <span aria-hidden="true">/</span>
         <span>{languageName}</span>
         <span aria-hidden="true">/</span>
@@ -67,7 +68,7 @@ export function ReadingHub({
             <Link
               key={exercise.id}
               className={styles.topicRow}
-              href={readingExercisePath(locale, exercise.language, exercise.level.cefr, exercise.slug)}
+              href={readingExercisePath(routeLocale, exercise.language, exercise.level.cefr, exercise.slug)}
             >
               <span className={styles.topicNumber}>{advanced ? String(index + 1).padStart(2, '0') : index + 1}</span>
               <span className={styles.topicBody}>

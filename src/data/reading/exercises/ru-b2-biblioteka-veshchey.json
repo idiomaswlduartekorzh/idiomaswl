@@ -5,11 +5,12 @@
   "language": "ru",
   "variant": "ru",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "B2",
-    "displayLabel": "ruso B2"
+    "displayLabel": "russian B2"
   },
   "slug": "biblioteka-veshchey",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "ru",
       "b2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "La biblioteca de objetos"
+      "es": "Библиотека вещей",
+      "en": "Библиотека вещей"
     },
     "intro": {
-      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+      "es": "Read an argument and separate its main claim from the conditions and limits around it.",
+      "en": "Read an argument and separate its main claim from the conditions and limits around it."
     },
     "mission": {
-      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+      "es": "Identify the proposal, its benefits and the obstacle that could prevent it from working.",
+      "en": "Identify the proposal, its benefits and the obstacle that could prevent it from working."
     },
-    "targetText": "Новая библиотека вещей выдаёт инструменты, кухонную технику и палатки. Покупать дрель ради одного использования в год дорого и расточительно. За первый месяц жители взяли более трёхсот предметов, а на швейные машины появилась очередь. Однако цифры скрывают проблему: большинство читателей живёт в центре. Жителям окраин приходится ехать на двух автобусах, чтобы вернуть тяжёлый предмет. Организаторы предлагают открыть три пункта выдачи, но город обещает финансировать их лишь полгода. Один доброволец предлагает штрафы за опоздание. Команда опасается, что штрафы отпугнут именно те семьи, которым проект хотел помочь. Поэтому пока проверяют напоминания и более гибкие сроки возврата. Успех зависит не только от того, сколько дрелей возьмут этой зимой. Важно, смогут ли жители далёких районов пользоваться услугой и в следующем году.",
-    "wordCount": 116,
-    "estimatedMinutes": 5,
+    "targetText": "Новая библиотека вещей выдаёт инструменты, кухонную технику и палатки. Покупать дрель ради одного использования в год дорого и расточительно. За первый месяц жители взяли более трёхсот предметов, а на швейные машины появилась очередь. Однако цифры скрывают проблему: большинство читателей живёт в центре. Жителям окраин приходится ехать на двух автобусах, чтобы вернуть тяжёлый предмет. Организаторы предлагают открыть три пункта выдачи, но город обещает финансировать их лишь полгода. Один доброволец предлагает штрафы за опоздание. Команда опасается, что штрафы отпугнут именно те семьи, которым проект хотел помочь. Поэтому пока проверяют напоминания и более гибкие сроки возврата. Успех зависит не только от того, сколько дрелей возьмут этой зимой. Важно, смогут ли жители далёких районов пользоваться услугой и в следующем году. Пробный пункт выдачи в одном из отдалённых районов помог бы понять, будут ли жители им пользоваться и справятся ли волонтёры с дополнительными поездками. Организаторы также хотят спросить тех, кто перестал приходить, почему они ушли. Подсчёт только успешных выдач скроет людей, для которых услуга так и осталась недоступной.",
+    "wordCount": 163,
+    "estimatedMinutes": 7,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "argumentación y concesión"
+      "argument and concession"
     ],
     "vocabulary": [
       {
         "surface": "выдаёт",
         "lemma": "выдаёт",
         "glosses": {
-          "es": "presta"
+          "es": "lends",
+          "en": "lends"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "дрель",
         "lemma": "дрель",
         "glosses": {
-          "es": "taladro"
+          "es": "drill",
+          "en": "drill"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "расточительно",
         "lemma": "расточительно",
         "glosses": {
-          "es": "despilfarrador"
+          "es": "wasteful",
+          "en": "wasteful"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "окраин",
         "lemma": "окраин",
         "glosses": {
-          "es": "periferias"
+          "es": "outer areas",
+          "en": "outer areas"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "штрафы",
         "lemma": "штрафы",
         "glosses": {
-          "es": "multas"
+          "es": "fines",
+          "en": "fines"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "сроки возврата",
         "lemma": "сроки возврата",
         "glosses": {
-          "es": "plazos de devolución"
+          "es": "return deadlines",
+          "en": "return deadlines"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,26 +122,27 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
     },
     "allowedGrammar": [
-      "argumentación y concesión"
+      "argument and concession"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "moderate",
     "metrics": {
-      "averageSentenceWords": 10.5,
-      "maxSentenceWords": 14,
+      "averageSentenceWords": 11.6,
+      "maxSentenceWords": 23,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
     },
     "independentAssessment": {
       "estimatedLevel": "B2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "смогут ли жители далёких районов пользоваться услугой и в следующем году",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -191,13 +206,16 @@
       "evidence": "приходится ехать на двух автобусах",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Будущее финансирование неясно"
+          "text": "Финансирование под вопросом"
         }
       ],
       "answer": "a3",
       "evidence": "финансировать их лишь полгода",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Чтобы показать первоначальный спрос"
+          "text": "Чтобы показать ранний спрос"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "на швейные машины появилась очередь",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "Однако цифры скрывают проблему",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Помешают участвовать"
+          "text": "Мешать участию"
         }
       ],
       "answer": "a3",
       "evidence": "штрафы отпугнут именно те семьи",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Напишите рекомендацию городу, указав одно преимущество и одно ограничение проекта."
+      "es": "Напишите рекомендацию городу, указав одно преимущество и одно ограничение проекта.",
+      "en": "Напишите рекомендацию городу, указав одно преимущество и одно ограничение проекта."
     },
     "minWords": 60,
     "maxWords": 130,
     "hints": [
-      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
-      "Cita una frase del texto y explica su importancia."
+      "Identify the proposal, its benefits and the obstacle that could prevent it from working.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+      "es": "Библиотека вещей | B2 Reading | WeLearn",
+      "en": "Библиотека вещей | B2 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+      "es": "Read an argument and separate its main claim from the conditions and limits around it.",
+      "en": "Read an argument and separate its main claim from the conditions and limits around it."
     },
-    "canonicalPath": "/practica/ruso/b2/lectura/biblioteka-veshchey",
+    "canonicalPath": "/en/practice/russian/b2/reading/biblioteka-veshchey",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

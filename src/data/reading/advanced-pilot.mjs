@@ -1,5 +1,6 @@
 // Primer piloto editorial B2–C2: una lectura por nivel e idioma. Fuente de verdad.
 // Todos los textos y las preguntas están en borrador hasta revisión humana.
+import { ADDITIONS, CONCISE_ANSWERS, LEVEL_COPY, TITLES } from './advanced-pilot-localization.mjs'
 const intro = {
   B2: 'Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites.',
   C1: 'Lee entre líneas: identifica postura, concesiones y supuestos del autor.',
@@ -16,7 +17,16 @@ const canDo = {
   C2: 'Puedes captar matices sutiles de significado y formular una lectura crítica justificada.',
 }
 function reading(language, level, slug, title, topic, text, vocabulary, questions, production) {
-  return { language, level, slug, title, topic, text, vocabulary, questions, production,
+  const concise = CONCISE_ANSWERS[language][level]
+  const balancedQuestions = questions.map((question, index) => {
+    const replacement = concise[index]
+    if (!replacement) return question
+    const [skill, prompt, options, correct, evidence] = question
+    if (correct !== 0) throw new Error(`${language}/${level}/${index}: expected the original correct option first`)
+    return [skill, prompt, [replacement, ...options.slice(1)], correct, evidence]
+  })
+  return { language, level, slug, title, topic, text: `${text} ${ADDITIONS[language][level]}`, vocabulary, questions: balancedQuestions, production,
+    displayTitle: TITLES[language][['B2', 'C1', 'C2'].indexOf(level)], displayCopy: LEVEL_COPY[level],
     intro: intro[level], mission: mission[level], canDo: canDo[level] }
 }
 

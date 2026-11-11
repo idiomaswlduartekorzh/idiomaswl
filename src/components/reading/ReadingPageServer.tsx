@@ -68,15 +68,16 @@ export function buildExerciseMetadata(exercise: ReadingExercise, locale: TutorLo
 }
 
 export function buildHubMetadata(locale: TutorLocale, language: ReadingLanguage, level: CefrLevel, exercises: ReadingExercise[]): Metadata {
-  const languageName = LANGUAGE_NAMES[locale][language]
+  const displayLocale = ['B2', 'C1', 'C2'].includes(level) ? 'en' : locale
+  const languageName = LANGUAGE_NAMES[displayLocale][language]
   const canonical = readingHubPath(locale, language, level)
   const availableLocales = (['es', 'en'] as const).filter(
     (candidate) => findReadingHubExercises(candidate, language, level).length > 0
   )
   const languages = readingAlternates(readingHubLocalePaths(availableLocales, language, level))
   const indexable = exercises.some((exercise) => exercise.status === 'published' && exercise.seo.indexable)
-  const title = locale === 'es' ? `Lecturas de ${languageName} ${level} con preguntas | WeLearn` : `${level} ${languageName} readings with questions | WeLearn`
-  const description = locale === 'es'
+  const title = displayLocale === 'es' ? `Lecturas de ${languageName} ${level} con preguntas | WeLearn` : `${level} ${languageName} readings with questions | WeLearn`
+  const description = displayLocale === 'es'
     ? `Practica lectura en ${languageName} ${level} con textos breves, vocabulario, preguntas y feedback basado en evidencia.`
     : `Practise ${level} ${languageName} reading with short texts, vocabulary, questions, and evidence-based feedback.`
   return {

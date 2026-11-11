@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import { ReadingRecorder } from './ReadingRecorder'
 import { ReadingAiFeedback } from './ReadingAiFeedback'
+import { ReadingWritingSubmission } from './ReadingWritingSubmission'
 import { GERMAN_A1_READING_TASK_ID } from '@/lib/writing-feedback-shared'
 import { normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { LANGUAGE_NAMES, readingExercisePath, readingHubPath } from '@/lib/reading/routes'
@@ -221,7 +222,9 @@ const READING_LANG_SLUG: Record<string, string> = {
   ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
 }
 
-export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
+export function ReadingLesson({ exercise, locale: routeLocale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
+  const advanced = exercise.schemaVersion === '1.2.0'
+  const locale = advanced ? 'en' : routeLocale
   const copy = COPY[locale]
   const [stage, setStage] = useState(0)
   const [answers, setAnswers] = useState<Record<string, StoredAnswer>>({})
@@ -265,7 +268,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
     return value !== undefined && answersMatch(question, value)
   }).length
   const complete = answeredCount === exercise.questions.length
-  const wordCount = production.trim() ? production.trim().split(/\s+/u).length : 0
+  const wordCount = production.trim() ? (exercise.language === 'ja' && advanced ? Array.from(production.trim().replace(/\s+/gu, '')).length : production.trim().split(/\s+/u).length) : 0
 
   useEffect(() => {
     if (impressionTracked.current) return
@@ -332,10 +335,9 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
     trackEvent('reading_retry')
   }
 
-  const hubHref = readingHubPath(locale, exercise.language, exercise.level.cefr)
+  const hubHref = readingHubPath(routeLocale, exercise.language, exercise.level.cefr)
   const currentIndex = Math.max(0, siblings.findIndex((item) => item.id === exercise.id))
   const nextSibling = siblings[currentIndex + 1]
-  const advanced = ['B2', 'C1', 'C2'].includes(exercise.level.cefr)
 
   return (
     <div className={`listen-shell ${styles.lessonShell} ${advanced && siblings.length === 1 ? styles.singleReading : ''}`}>
@@ -348,7 +350,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
           {siblings.map((item, index) => (
             <Link
               key={item.id}
-              href={readingExercisePath(locale, item.language, item.level.cefr, item.slug)}
+              href={readingExercisePath(routeLocale, item.language, item.level.cefr, item.slug)}
               className={`listen-card${item.id === exercise.id ? ' is-active' : ''}`}
               style={{ textDecoration: 'none' }}
             >
@@ -474,7 +476,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
         <h2 id="production-task">{copy.use}</h2>
         <label className={styles.productionLabel} htmlFor="reading-production">{localized(exercise.production.prompt, locale)}</label>
         <textarea id="reading-production" value={production} onChange={(event) => setProduction(event.target.value)} rows={5} placeholder={exercise.production.hints.join(' · ')} />
-        <div className={styles.productionMeta}><span>{wordCount} / {exercise.production.maxWords} {copy.words}</span><span>{copy.unscored}</span></div>
+        <div className={styles.productionMeta}><span>{wordCount} / {exercise.production.maxWords} {exercise.language === 'ja' && advanced ? 'characters' : copy.words}</span><span>{copy.unscored}</span></div>
         <ReadingAiFeedback text={production} assignment={{
           taskId: exercise.id,
           title: localized(exercise.content.title, locale),
@@ -484,9 +486,11 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
           sourceText: exercise.content.targetText,
           objectives: exercise.content.objectives.map(item => localized(item, locale)),
           focus: exercise.content.grammarFocus ?? [],
-        }} requirements={exercise.id === GERMAN_A1_READING_TASK_ID ? {
+          ...(advanced ? { feedbackLanguage: exercise.language } : {}),
+        }} locale={locale} requirements={exercise.id === GERMAN_A1_READING_TASK_ID ? {
           minWords: 25, maxWords: 60, minSentences: 5, maxSentences: 7, maxCharacters: 700,
-        } : { minWords: exercise.production.minWords, maxWords: exercise.production.maxWords }} />
+        } : exercise.language === 'ja' && advanced ? { minCharacters: exercise.production.minWords, maxCharacters: exercise.production.maxWords } : { minWords: exercise.production.minWords, maxWords: exercise.production.maxWords }} />
+        {advanced && <ReadingWritingSubmission exercise={exercise} text={production} />}
         <button type="button" className="listen-primary" onClick={() => setStage(4)}>{copy.goResult}</button>
       </section>
       </div>
@@ -546,7 +550,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
       <div className={styles.lessonFooterLinks}>
         <Link className={styles.nextLink} href={hubHref}>{copy.back}<ArrowRight size={17} /></Link>
         {nextSibling && (
-          <Link className={styles.nextLink} href={readingExercisePath(locale, nextSibling.language, nextSibling.level.cefr, nextSibling.slug)}>
+          <Link className={styles.nextLink} href={readingExercisePath(routeLocale, nextSibling.language, nextSibling.level.cefr, nextSibling.slug)}>
             {copy.nextReading}<ArrowRight size={17} />
           </Link>
         )}

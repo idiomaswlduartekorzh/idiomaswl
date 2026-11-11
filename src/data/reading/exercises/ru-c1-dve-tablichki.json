@@ -5,11 +5,12 @@
   "language": "ru",
   "variant": "ru",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "ruso C1"
+    "displayLabel": "russian C1"
   },
   "slug": "dve-tablichki",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "ru",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Dos cartelas para un mapa"
+      "es": "Две этикетки",
+      "en": "Две этикетки"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "После открытия обновлённого музея возле старой карты появились две таблички. Первая называла автора и дату, вторая объясняла, что торговые маршруты компании опирались на подневольный труд. Одни посетители приветствовали давно необходимое дополнение. Другие возражали: нельзя требовать от одного предмета ответа за целую политическую историю. Хранительница оставила обе таблички. Точность описания предмета и исторический контекст, по её словам, являются разными обязанностями. Но новое описание обнаружило вопросы, на которые короткий текст не отвечает. Как карта попала в музей? Кто сегодня просит доступ к оригиналу? Почему цифровую копию увидеть проще? Музей обещал опубликовать документы о приобретении после проверки имён в архивах, где работников нередко записывали под номерами. Критик назвал задержку новым молчанием; хранительница отказалась заменять одно упрощение другим. Посетитель остаётся перед картой и двумя табличками, а рядом будто сохраняется место для рассказа, который ещё не написан.",
-    "wordCount": 132,
-    "estimatedMinutes": 5,
+    "targetText": "После открытия обновлённого музея возле старой карты появились две таблички. Первая называла автора и дату, вторая объясняла, что торговые маршруты компании опирались на подневольный труд. Одни посетители приветствовали давно необходимое дополнение. Другие возражали: нельзя требовать от одного предмета ответа за целую политическую историю. Хранительница оставила обе таблички. Точность описания предмета и исторический контекст, по её словам, являются разными обязанностями. Но новое описание обнаружило вопросы, на которые короткий текст не отвечает. Как карта попала в музей? Кто сегодня просит доступ к оригиналу? Почему цифровую копию увидеть проще? Музей обещал опубликовать документы о приобретении после проверки имён в архивах, где работников нередко записывали под номерами. Критик назвал задержку новым молчанием; хранительница отказалась заменять одно упрощение другим. Посетитель остаётся перед картой и двумя табличками, а рядом будто сохраняется место для рассказа, который ещё не написан. Музей предложил местным объединениям обсудить формулировки подписей. Такой разговор может сделать выставку точнее, но остаётся вопрос: кто решит, какие предложения принять? Пока порядок принятия решений не объяснён, приглашение к диалогу может выглядеть завершённым ответом, хотя оно лишь начинает обсуждение.",
+    "wordCount": 171,
+    "estimatedMinutes": 7,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "таблички",
         "lemma": "таблички",
         "glosses": {
-          "es": "cartelas"
+          "es": "display labels",
+          "en": "display labels"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "подневольный труд",
         "lemma": "подневольный труд",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "хранительница",
         "lemma": "хранительница",
         "glosses": {
-          "es": "conservadora"
+          "es": "curator",
+          "en": "curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "приобретении",
         "lemma": "приобретении",
         "glosses": {
-          "es": "adquisición"
+          "es": "acquisition",
+          "en": "acquisition"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "архивах",
         "lemma": "архивах",
         "glosses": {
-          "es": "archivos"
+          "es": "archives",
+          "en": "archives"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "упрощение",
         "lemma": "упрощение",
         "glosses": {
-          "es": "simplificación"
+          "es": "oversimplification",
+          "en": "oversimplification"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 10.2,
+      "averageSentenceWords": 10.7,
       "maxSentenceWords": 18,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "являются разными обязанностями",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Документы о приобретении"
+          "text": "Архивы приобретения"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "опубликовать документы о приобретении",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "В архивах людей заменяли номерами"
+          "text": "Людей называли номерами"
         }
       ],
       "answer": "a3",
       "evidence": "работников нередко записывали под номерами",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Чтобы показать незавершённость рассказа"
+          "text": "Чтобы показать пробел"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "место для рассказа, который ещё не написан",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "короткий текст не отвечает",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Дополнение следовало сделать раньше"
+          "text": "Это уточнение запоздало"
         }
       ],
       "answer": "a3",
       "evidence": "давно необходимое дополнение",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Объясните, достаточно ли двух табличек сейчас, учитывая сильное возражение."
+      "es": "Объясните, достаточно ли двух табличек сейчас, учитывая сильное возражение.",
+      "en": "Объясните, достаточно ли двух табличек сейчас, учитывая сильное возражение."
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+      "es": "Две этикетки | C1 Reading | WeLearn",
+      "en": "Две этикетки | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/ruso/c1/lectura/dve-tablichki",
+    "canonicalPath": "/en/practice/russian/c1/reading/dve-tablichki",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

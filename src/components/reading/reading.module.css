@@ -366,6 +366,8 @@
 .premiumRoot .glossWord { border-bottom-color: #d55c63; color: #234e91; }
 .premiumRoot .lessonWork :global(.listen-primary) { min-height: 47px; margin-top: 25px; padding: 11px 20px; border-radius: 8px; background: var(--premium-blue); color: #fff; font-size: 13px; box-shadow: 0 7px 16px rgba(38,80,165,.18); transition: transform .18s, background .18s; }
 .premiumRoot .lessonWork :global(.listen-primary:hover) { transform: translateY(-2px); background: #244995; }
+.premiumRoot .lessonWork textarea { display: block; width: 100%; min-height: 170px; padding: 16px 18px; border: 1px solid var(--premium-line); border-radius: 10px; background: #fafbfd; color: var(--premium-ink); font: 15px/1.6 var(--sans); resize: vertical; }
+.premiumRoot .lessonWork textarea:focus-visible { outline: 3px solid #86a8ef; outline-offset: 2px; }
 .premiumRoot .questionGrid { grid-template-columns: 1fr; gap: 16px; }
 .premiumRoot .questionWrap { display: grid; grid-template-columns: 94px minmax(0, 1fr); border: 1px solid var(--premium-line); border-radius: 13px; background: #fff; box-shadow: 0 5px 16px rgba(17,42,75,.025); }
 .premiumRoot .questionLabel { display: flex; flex-direction: column; gap: 9px; align-items: flex-start; margin: 0; padding: 23px 13px 20px 19px; border-right: 1px solid var(--premium-line); color: #627590; font: 750 10px/1.35 var(--mono); letter-spacing: .04em; }
@@ -385,6 +387,12 @@
 .premiumRoot .resultCopy h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 25px; font-weight: 400; }
 .premiumRoot .supportContent > div { border-radius: 12px; }
 .premiumRoot .reviewNotice { border-radius: 9px; }
+.submissionBox { margin-top: 17px; padding: 18px 20px; border: 1px solid var(--premium-line); border-radius: 10px; background: #f7f9fd; }
+.submissionBox > p:first-child { margin: 0 0 12px; color: var(--premium-muted); font-size: 13px; line-height: 1.55; }
+.submissionBox > p:first-child strong { display: block; margin-bottom: 4px; color: var(--premium-night); font-size: 14px; }
+.submissionHint { margin: 9px 0 0; color: var(--premium-muted); font-size: 12px; }
+.submissionError { margin: 10px 0 0; color: #9a4443; font-size: 12px; }
+.submissionSuccess { margin: 10px 0 0; color: #225e47; font-size: 12px; }
 .premiumRoot :is(a, button, input, textarea, summary):focus-visible { outline: 3px solid #86a8ef; outline-offset: 3px; }
 
 @media (max-width: 900px) {

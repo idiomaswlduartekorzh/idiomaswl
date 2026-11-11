@@ -72,6 +72,7 @@ export default function AdminOverview({ data, viewer, onTabChange }: {
       <article><span>Leads de simulacros</span><strong>{periodLeads.length}</strong><small>en {period} días</small></article>
     </div>
     <div className={styles.priorityGrid} aria-label="Prioridades operativas">
+      <Link href="/dashboard/admin/lecturas"><span className={styles.priorityIcon}><ClipboardCheck size={18} /></span><span><strong>Textos de Reading</strong><small>Producciones escritas para revisar</small></span><ArrowRight size={16} /></Link>
       <button type="button" onClick={() => onTabChange('reviews')}><span className={styles.priorityIcon}><ClipboardCheck size={18} /></span><span><strong>{pendingReviews} correcciones pendientes</strong><small>IELTS, TOEFL y Goethe</small></span><ArrowRight size={16} /></button>
       <button type="button" onClick={() => onTabChange('leads')}><span className={styles.priorityIcon}><MessageCircle size={18} /></span><span><strong>{newLeads} leads nuevos con WhatsApp</strong><small>Listos para contacto</small></span><ArrowRight size={16} /></button>
       <button type="button" onClick={() => onTabChange('students')}><span className={styles.priorityIcon}><UserRoundSearch size={18} /></span><span><strong>{followUp} estudiantes por revisar</strong><small>Sin actividad en 14 días o más</small></span><ArrowRight size={16} /></button>

@@ -40,8 +40,38 @@
         },
         {
           "slug": "basic-sentence-order",
-          "title": "Basic English sentence order A1: subject, verb, object, place and time",
-          "category": null,
+          "title": "Basic sentence order",
+          "category": "Sentence architecture",
+          "file": "src/data/grammar/ingles/a1/completion-topics.ts"
+        },
+        {
+          "slug": "be-vs-do-questions-negatives",
+          "title": "Be or do/does?",
+          "category": "Sentence architecture",
+          "file": "src/data/grammar/ingles/a1/completion-topics.ts"
+        },
+        {
+          "slug": "some-any-no-basic-quantity",
+          "title": "Some, any and no",
+          "category": "Determiners",
+          "file": "src/data/grammar/ingles/a1/completion-topics.ts"
+        },
+        {
+          "slug": "basic-connectors",
+          "title": "Basic connectors",
+          "category": "Sentence architecture",
+          "file": "src/data/grammar/ingles/a1/completion-topics.ts"
+        },
+        {
+          "slug": "would-like",
+          "title": "Would like",
+          "category": "Functions",
+          "file": "src/data/grammar/ingles/a1/completion-topics.ts"
+        },
+        {
+          "slug": "basic-adverb-order",
+          "title": "Basic adverb order",
+          "category": "Adverbs",
           "file": "src/data/grammar/ingles/a1/completion-topics.ts"
         },
         {

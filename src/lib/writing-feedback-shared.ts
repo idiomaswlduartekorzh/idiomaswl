@@ -9,6 +9,7 @@ export type WritingAssignmentContext = {
   sourceText?: string
   objectives?: string[]
   focus?: string[]
+  feedbackLanguage?: 'en' | 'fr' | 'it' | 'de' | 'ru' | 'ja' | 'ko' | 'pt'
 }
 
 export type WritingFeedback = {
@@ -23,6 +24,7 @@ export type WritingDraftRequirements = {
   minSentences?: number
   maxSentences?: number
   maxCharacters?: number
+  minCharacters?: number
 }
 
 export function meetsWritingDraftRequirements(text: string, requirements?: WritingDraftRequirements) {
@@ -35,4 +37,5 @@ export function meetsWritingDraftRequirements(text: string, requirements?: Writi
     && (requirements.minSentences === undefined || sentences >= requirements.minSentences)
     && (requirements.maxSentences === undefined || sentences <= requirements.maxSentences)
     && (requirements.maxCharacters === undefined || draft.length <= requirements.maxCharacters)
+    && (requirements.minCharacters === undefined || draft.length >= requirements.minCharacters)
 }

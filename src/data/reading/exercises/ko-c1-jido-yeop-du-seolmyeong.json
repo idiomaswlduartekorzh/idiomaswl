@@ -5,14 +5,16 @@
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "coreano C1",
+    "displayLabel": "korean C1",
     "topik": 5,
     "mappingDisclaimer": {
-      "es": "La equivalencia CEFR–TOPIK es orientativa; requiere validación humana."
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
     }
   },
   "slug": "jido-yeop-du-seolmyeong",
@@ -24,36 +26,41 @@
     "tags": [
       "ko",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Dos cartelas para un mapa"
+      "es": "두 개의 설명문",
+      "en": "두 개의 설명문"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "지역 박물관이 다시 문을 열었을 때 오래된 지도 옆에는 설명문이 두 개 놓였다. 첫 번째는 제작자와 연도를 밝히고, 두 번째는 지도에 그려진 상업 항로가 강제 노동에 의존했다는 사실을 적었다. 어떤 방문객은 늦었지만 필요한 설명이라고 반겼다. 다른 방문객은 물건 하나에 정치사의 모든 책임을 지우지 말라고 했다. 학예사는 두 설명문을 모두 남겼다. 물건의 정보를 정확히 밝히는 일과 역사적 맥락을 제시하는 일은 서로 다른 의무라는 것이다. 그러나 새 설명문은 짧은 글이 답할 수 없는 질문도 드러냈다. 지도는 어떻게 소장품이 되었는가? 지금 원본을 보길 원하는 사람은 누구인가? 디지털 사본이 원본보다 쉽게 공개되는 이유는 무엇인가? 박물관은 취득 기록을 공개하겠다고 약속했지만, 노동자를 번호로만 적은 문서의 이름부터 확인해야 한다고 했다. 비평가는 그 지연을 또 다른 침묵이라 불렀고, 학예사는 하나의 단순화를 다른 단순화로 바꾸고 싶지 않다고 답했다. 방문객 앞에는 지도와 두 설명문, 그리고 아직 채워지지 않은 이야기의 자리가 남는다.",
-    "wordCount": 131,
-    "estimatedMinutes": 5,
+    "targetText": "지역 박물관이 다시 문을 열었을 때 오래된 지도 옆에는 설명문이 두 개 놓였다. 첫 번째는 제작자와 연도를 밝히고, 두 번째는 지도에 그려진 상업 항로가 강제 노동에 의존했다는 사실을 적었다. 어떤 방문객은 늦었지만 필요한 설명이라고 반겼다. 다른 방문객은 물건 하나에 정치사의 모든 책임을 지우지 말라고 했다. 학예사는 두 설명문을 모두 남겼다. 물건의 정보를 정확히 밝히는 일과 역사적 맥락을 제시하는 일은 서로 다른 의무라는 것이다. 그러나 새 설명문은 짧은 글이 답할 수 없는 질문도 드러냈다. 지도는 어떻게 소장품이 되었는가? 지금 원본을 보길 원하는 사람은 누구인가? 디지털 사본이 원본보다 쉽게 공개되는 이유는 무엇인가? 박물관은 취득 기록을 공개하겠다고 약속했지만, 노동자를 번호로만 적은 문서의 이름부터 확인해야 한다고 했다. 비평가는 그 지연을 또 다른 침묵이라 불렀고, 학예사는 하나의 단순화를 다른 단순화로 바꾸고 싶지 않다고 답했다. 방문객 앞에는 지도와 두 설명문, 그리고 아직 채워지지 않은 이야기의 자리가 남는다. 박물관은 지역 단체에 설명문의 표현에 대한 의견을 요청했다. 대화가 전시를 더 풍부하게 만들 수는 있지만, 어떤 제안을 반영할지는 누가 결정할까? 그 절차를 공개하지 않는다면 의견 수렴 자체가 이미 충분한 답인 것처럼 보일 위험이 있다.",
+    "wordCount": 165,
+    "estimatedMinutes": 7,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "설명문",
         "lemma": "설명문",
         "glosses": {
-          "es": "cartela explicativa"
+          "es": "explanatory label",
+          "en": "explanatory label"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -62,7 +69,8 @@
         "surface": "항로",
         "lemma": "항로",
         "glosses": {
-          "es": "ruta marítima"
+          "es": "sea route",
+          "en": "sea route"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -71,7 +79,8 @@
         "surface": "강제 노동",
         "lemma": "강제 노동",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -80,7 +89,8 @@
         "surface": "학예사",
         "lemma": "학예사",
         "glosses": {
-          "es": "conservadora"
+          "es": "curator",
+          "en": "curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -89,7 +99,8 @@
         "surface": "취득 기록",
         "lemma": "취득 기록",
         "glosses": {
-          "es": "registro de adquisición"
+          "es": "acquisition record",
+          "en": "acquisition record"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -98,7 +109,8 @@
         "surface": "침묵",
         "lemma": "침묵",
         "glosses": {
-          "es": "silencio"
+          "es": "silence",
+          "en": "silence"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -115,16 +127,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 10.1,
+      "averageSentenceWords": 10.3,
       "maxSentenceWords": 16,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -132,9 +145,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -161,13 +174,16 @@
       "evidence": "서로 다른 의무라는 것이다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -195,13 +211,16 @@
       "evidence": "취득 기록을 공개하겠다고 약속했지만",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -222,20 +241,23 @@
         },
         {
           "id": "a3",
-          "text": "문서가 노동자를 번호로 기록했기 때문에"
+          "text": "사람을 번호로만 적어서"
         }
       ],
       "answer": "a3",
       "evidence": "노동자를 번호로만 적은 문서",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -248,7 +270,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "설명이 아직 완성되지 않았음을 나타내기 위해"
+          "text": "설명의 빈틈을 드러내려고"
         },
         {
           "id": "a2",
@@ -263,13 +285,16 @@
       "evidence": "아직 채워지지 않은 이야기의 자리가 남는다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -297,13 +322,16 @@
       "evidence": "짧은 글이 답할 수 없는 질문도 드러냈다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -324,20 +352,23 @@
         },
         {
           "id": "a3",
-          "text": "물건을 둘러싼 역사적 배경"
+          "text": "역사적 맥락"
         }
       ],
       "answer": "a3",
       "evidence": "역사적 맥락을 제시하는 일",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -345,13 +376,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "두 설명문이 지금으로서는 충분한지 반론을 고려하여 논하세요."
+      "es": "두 설명문이 지금으로서는 충분한지 반론을 고려하여 논하세요.",
+      "en": "두 설명문이 지금으로서는 충분한지 반론을 고려하여 논하세요."
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -369,12 +401,14 @@
   },
   "seo": {
     "title": {
-      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+      "es": "두 개의 설명문 | C1 Reading | WeLearn",
+      "en": "두 개의 설명문 | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/coreano/c1/lectura/jido-yeop-du-seolmyeong",
+    "canonicalPath": "/en/practice/korean/c1/reading/jido-yeop-du-seolmyeong",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

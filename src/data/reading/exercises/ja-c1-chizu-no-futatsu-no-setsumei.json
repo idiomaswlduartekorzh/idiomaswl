@@ -5,14 +5,16 @@
   "language": "ja",
   "variant": "ja-JP",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "japones C1",
+    "displayLabel": "japanese C1",
     "jlpt": "N1",
     "mappingDisclaimer": {
-      "es": "La equivalencia CEFR–JLPT es orientativa; requiere validación humana."
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
     }
   },
   "slug": "chizu-no-futatsu-no-setsumei",
@@ -24,36 +26,41 @@
     "tags": [
       "ja",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Dos cartelas para un mapa"
+      "es": "二つの説明文",
+      "en": "二つの説明文"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "地域博物館が再開したとき、古い地図の横には説明文が二つ並んでいた。一つは作者と制作年を示し、もう一つは、描かれた商業航路が強制労働に支えられていたことを記していた。遅すぎたとはいえ必要な補足だと歓迎する人もいれば、一枚の地図に政治史全体を背負わせるべきではないと反発する人もいた。学芸員は両方を残した。資料を正確に説明する責任と、その歴史的背景を示す責任は別だという。しかし追加された文章は、短い表示では答えられない問いをかえって浮かび上がらせた。地図はどのように収蔵されたのか。現在、原本へのアクセスを求めているのは誰か。なぜ複製の方が簡単に見られるのか。博物館は取得記録の公開を約束したが、労働者を番号で記した資料の名前を確認する必要があるとした。批評家はその遅れを新たな沈黙と呼び、学芸員は一つの単純化を別の単純化に替えたくないと答えた。来館者の前には地図と二つの説明文、そしてまだ語られていない部分が残る。",
-    "wordCount": 385,
-    "estimatedMinutes": 15,
+    "targetText": "地域博物館が再開したとき、古い地図の横には説明文が二つ並んでいた。一つは作者と制作年を示し、もう一つは、描かれた商業航路が強制労働に支えられていたことを記していた。遅すぎたとはいえ必要な補足だと歓迎する人もいれば、一枚の地図に政治史全体を背負わせるべきではないと反発する人もいた。学芸員は両方を残した。資料を正確に説明する責任と、その歴史的背景を示す責任は別だという。しかし追加された文章は、短い表示では答えられない問いをかえって浮かび上がらせた。地図はどのように収蔵されたのか。現在、原本へのアクセスを求めているのは誰か。なぜ複製の方が簡単に見られるのか。博物館は取得記録の公開を約束したが、労働者を番号で記した資料の名前を確認する必要があるとした。批評家はその遅れを新たな沈黙と呼び、学芸員は一つの単純化を別の単純化に替えたくないと答えた。来館者の前には地図と二つの説明文、そしてまだ語られていない部分が残る。 博物館は地域の団体に説明文への意見を求めた。対話は展示を豊かにするかもしれないが、どの提案を採用するかを誰が決めるのかは明らかでない。その手続きを示さなければ、意見募集そのものが問題を解決したかのように見えてしまう。",
+    "wordCount": 488,
+    "estimatedMinutes": 20,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "航路",
         "lemma": "航路",
         "glosses": {
-          "es": "rutas marítimas"
+          "es": "sea routes",
+          "en": "sea routes"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -62,7 +69,8 @@
         "surface": "強制労働",
         "lemma": "強制労働",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -71,7 +79,8 @@
         "surface": "学芸員",
         "lemma": "学芸員",
         "glosses": {
-          "es": "conservadora"
+          "es": "curator",
+          "en": "curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -80,7 +89,8 @@
         "surface": "収蔵",
         "lemma": "収蔵",
         "glosses": {
-          "es": "incorporación a la colección"
+          "es": "addition to the collection",
+          "en": "addition to the collection"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -89,7 +99,8 @@
         "surface": "取得記録",
         "lemma": "取得記録",
         "glosses": {
-          "es": "registros de adquisición"
+          "es": "acquisition records",
+          "en": "acquisition records"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -98,7 +109,8 @@
         "surface": "沈黙",
         "lemma": "沈黙",
         "glosses": {
-          "es": "silencio"
+          "es": "silence",
+          "en": "silence"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -115,16 +127,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 385,
+      "averageSentenceWords": 244,
       "maxSentenceWords": 385,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -132,9 +145,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -161,13 +174,16 @@
       "evidence": "責任は別だという",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -195,13 +211,16 @@
       "evidence": "取得記録の公開を約束した",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -222,20 +241,23 @@
         },
         {
           "id": "a3",
-          "text": "資料が労働者を番号で扱っていたから"
+          "text": "番号だけだったから"
         }
       ],
       "answer": "a3",
       "evidence": "労働者を番号で記した資料",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -248,7 +270,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "説明が未完成だと示す"
+          "text": "説明の空白を示す"
         },
         {
           "id": "a2",
@@ -263,13 +285,16 @@
       "evidence": "まだ語られていない部分が残る",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -297,13 +322,16 @@
       "evidence": "短い表示では答えられない問い",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -324,20 +352,23 @@
         },
         {
           "id": "a3",
-          "text": "見えにくかった問題を明らかにした"
+          "text": "前から必要だった"
         }
       ],
       "answer": "a3",
       "evidence": "問いをかえって浮かび上がらせた",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -345,13 +376,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "二つの説明文で十分かどうか、反論を一つ取り上げて論じてください。"
+      "es": "二つの説明文で十分かどうか、反論を一つ取り上げて論じてください。",
+      "en": "二つの説明文で十分かどうか、反論を一つ取り上げて論じてください。"
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -369,12 +401,14 @@
   },
   "seo": {
     "title": {
-      "es": "Dos cartelas para un mapa | Lectura C1 | WeLearn"
+      "es": "二つの説明文 | C1 Reading | WeLearn",
+      "en": "二つの説明文 | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/japones/c1/lectura/chizu-no-futatsu-no-setsumei",
+    "canonicalPath": "/en/practice/japanese/c1/reading/chizu-no-futatsu-no-setsumei",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

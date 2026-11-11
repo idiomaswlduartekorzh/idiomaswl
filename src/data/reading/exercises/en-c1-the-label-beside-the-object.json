@@ -5,11 +5,12 @@
   "language": "en",
   "variant": "en-global",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "ingles C1"
+    "displayLabel": "english C1"
   },
   "slug": "the-label-beside-the-object",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "en",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "La etiqueta junto al objeto"
+      "es": "The Label Beside the Object",
+      "en": "The Label Beside the Object"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "When the regional museum reopened its collection, the oldest map carried two labels. The familiar one identified its maker and date; the new one explained that the map had been drawn for a trading company whose routes depended on forced labour. Some visitors praised the addition as overdue context. Others complained that an object should not be made to answer for a whole political history. The curator did not remove the first label. She argued that precision and context were different obligations, and that fulfilling one did not cancel the other. Yet the revised display exposed a harder question. A short label can acknowledge exploitation without explaining how the museum acquired the map, who has asked for access to it, or why a digital copy is easier to view than the original. The museum promised to publish its acquisition records, but only after verifying names in documents that often recorded workers as numbers. A critic called the delay another form of silence; the curator called it a refusal to replace one simplification with another. Neither position settles what the visitor sees today: two labels, a map, and an empty space where a fuller account might eventually appear.",
-    "wordCount": 197,
-    "estimatedMinutes": 8,
+    "targetText": "When the regional museum reopened its collection, the oldest map carried two labels. The familiar one identified its maker and date; the new one explained that the map had been drawn for a trading company whose routes depended on forced labour. Some visitors praised the addition as overdue context. Others complained that an object should not be made to answer for a whole political history. The curator did not remove the first label. She argued that precision and context were different obligations, and that fulfilling one did not cancel the other. Yet the revised display exposed a harder question. A short label can acknowledge exploitation without explaining how the museum acquired the map, who has asked for access to it, or why a digital copy is easier to view than the original. The museum promised to publish its acquisition records, but only after verifying names in documents that often recorded workers as numbers. A critic called the delay another form of silence; the curator called it a refusal to replace one simplification with another. Neither position settles what the visitor sees today: two labels, a map, and an empty space where a fuller account might eventually appear. The museum has invited local groups to comment on the wording before the records appear. That invitation may widen the conversation, but it also raises a question about responsibility: who decides which suggested changes become part of the display? Until that process is explained, consultation risks sounding more complete than it is.",
+    "wordCount": 249,
+    "estimatedMinutes": 10,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "overdue",
         "lemma": "overdue",
         "glosses": {
-          "es": "que hacía falta desde hace tiempo"
+          "es": "long overdue",
+          "en": "long overdue"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "forced labour",
         "lemma": "forced labour",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "curator",
         "lemma": "curator",
         "glosses": {
-          "es": "conservadora del museo"
+          "es": "museum curator",
+          "en": "museum curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "acquired",
         "lemma": "acquired",
         "glosses": {
-          "es": "adquirió"
+          "es": "acquired",
+          "en": "acquired"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "acquisition records",
         "lemma": "acquisition records",
         "glosses": {
-          "es": "registros de adquisición"
+          "es": "acquisition records",
+          "en": "acquisition records"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "simplification",
         "lemma": "simplification",
         "glosses": {
-          "es": "simplificación"
+          "es": "oversimplification",
+          "en": "oversimplification"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 17.9,
+      "averageSentenceWords": 17.8,
       "maxSentenceWords": 33,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "precision and context were different obligations",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -191,13 +206,16 @@
       "evidence": "promised to publish its acquisition records",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "The documents are incomplete or dehumanising"
+          "text": "The records omit workers’ names"
         }
       ],
       "answer": "a3",
       "evidence": "documents that often recorded workers as numbers",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "To signal that the account remains unfinished"
+          "text": "To signal an unfinished account"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "an empty space where a fuller account might eventually appear",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "Neither position settles what the visitor sees today",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "The explanation should have been added earlier"
+          "text": "The context came too late"
         }
       ],
       "answer": "a3",
       "evidence": "praised the addition as overdue context",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Explain whether the two labels are enough for now. Acknowledge the strongest objection to your view."
+      "es": "Explain whether the two labels are enough for now. Acknowledge the strongest objection to your view.",
+      "en": "Explain whether the two labels are enough for now. Acknowledge the strongest objection to your view."
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "La etiqueta junto al objeto | Lectura C1 | WeLearn"
+      "es": "The Label Beside the Object | C1 Reading | WeLearn",
+      "en": "The Label Beside the Object | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/ingles/c1/lectura/the-label-beside-the-object",
+    "canonicalPath": "/en/practice/english/c1/reading/the-label-beside-the-object",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

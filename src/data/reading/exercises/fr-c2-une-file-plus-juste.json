@@ -5,11 +5,12 @@
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C2",
-    "displayLabel": "frances C2"
+    "displayLabel": "french C2"
   },
   "slug": "une-file-plus-juste",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "fr",
       "c2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Una fila más justa"
+      "es": "Une file plus juste",
+      "en": "Une file plus juste"
     },
     "intro": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
     "mission": {
-      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+      "es": "Explain the central paradox and how the choice of words changes its scope.",
+      "en": "Explain the central paradox and how the choice of words changes its scope."
     },
-    "targetText": "La ville a remplacé l’ordre d’arrivée des demandes de logement par un classement censé favoriser les situations les plus urgentes. Son premier bilan célébrait une attente moyenne plus courte. Le chiffre était exact; il ne disait pas de qui l’attente avait diminué. Avec une connexion stable, un candidat corrigeait un dossier incomplet en quelques heures. À la borne publique, l’erreur n’apparaissait parfois qu’après la clôture hebdomadaire du classement. La mairie a ajouté un délai de recours. Ce correctif ne rend toutefois une place perdue qu’à celui qui sait l’avoir perdue. Un comité indépendant a demandé la publication des critères. Les responsables craignaient que les candidats adaptent leurs réponses; le comité rappelait que le secret permet aussi à une erreur de se donner pour neutralité. Aucun camp ne promettait un système à l’abri des stratégies. Le désaccord le plus révélateur portait sur la preuve du besoin: un avis d’expulsion récent, facile à vérifier, ou des années d’hébergement précaire, rarement résumées dans un document net. Qualifier le premier d’« objectif » facilite le travail administratif. Qualifier le second de « subjectif » transfère discrètement la charge de la preuve à ceux qui peuvent le moins la porter. La file avance plus vite. Pour savoir si elle est plus juste, il faut demander qui devient visible dans ses dossiers.",
-    "wordCount": 216,
-    "estimatedMinutes": 9,
+    "targetText": "La ville a remplacé l’ordre d’arrivée des demandes de logement par un classement censé favoriser les situations les plus urgentes. Son premier bilan célébrait une attente moyenne plus courte. Le chiffre était exact; il ne disait pas de qui l’attente avait diminué. Avec une connexion stable, un candidat corrigeait un dossier incomplet en quelques heures. À la borne publique, l’erreur n’apparaissait parfois qu’après la clôture hebdomadaire du classement. La mairie a ajouté un délai de recours. Ce correctif ne rend toutefois une place perdue qu’à celui qui sait l’avoir perdue. Un comité indépendant a demandé la publication des critères. Les responsables craignaient que les candidats adaptent leurs réponses; le comité rappelait que le secret permet aussi à une erreur de se donner pour neutralité. Aucun camp ne promettait un système à l’abri des stratégies. Le désaccord le plus révélateur portait sur la preuve du besoin: un avis d’expulsion récent, facile à vérifier, ou des années d’hébergement précaire, rarement résumées dans un document net. Qualifier le premier d’« objectif » facilite le travail administratif. Qualifier le second de « subjectif » transfère discrètement la charge de la preuve à ceux qui peuvent le moins la porter. La file avance plus vite. Pour savoir si elle est plus juste, il faut demander qui devient visible dans ses dossiers. Une moyenne plus favorable peut coexister avec une attente beaucoup plus longue pour un petit groupe. C’est précisément ce groupe qui doit souvent fournir les documents les plus difficiles à réunir. Le chiffre publié ne simplifie donc pas seulement la situation: il décide aussi quelles expériences compteront comme une amélioration.",
+    "wordCount": 266,
+    "estimatedMinutes": 11,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "vocabulary": [
       {
         "surface": "classement",
         "lemma": "classement",
         "glosses": {
-          "es": "clasificación"
+          "es": "ranking",
+          "en": "ranking"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "borne publique",
         "lemma": "borne publique",
         "glosses": {
-          "es": "terminal público"
+          "es": "public terminal",
+          "en": "public terminal"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "délai de recours",
         "lemma": "délai de recours",
         "glosses": {
-          "es": "plazo de recurso"
+          "es": "appeal period",
+          "en": "appeal period"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "neutralité",
         "lemma": "neutralité",
         "glosses": {
-          "es": "neutralidad"
+          "es": "neutrality",
+          "en": "neutrality"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "hébergement précaire",
         "lemma": "hébergement précaire",
         "glosses": {
-          "es": "alojamiento precario"
+          "es": "unstable housing",
+          "en": "unstable housing"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "charge de la preuve",
         "lemma": "charge de la preuve",
         "glosses": {
-          "es": "carga de la prueba"
+          "es": "burden of proof",
+          "en": "burden of proof"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
     },
     "allowedGrammar": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 14.4,
+      "averageSentenceWords": 14.8,
       "maxSentenceWords": 29,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "qui devient visible dans ses dossiers",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Un candidat avec une connexion stable"
+          "text": "Un candidat bien connecté"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "Avec une connexion stable, un candidat corrigeait un dossier incomplet en quelques heures",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Il suppose que la perte soit connue"
+          "text": "Il faut connaître la perte"
         }
       ],
       "answer": "a3",
       "evidence": "qu’à celui qui sait l’avoir perdue",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Pour interroger la définition administrative de la preuve"
+          "text": "Pour interroger la preuve exigée"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "rarement résumées dans un document net",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "le secret permet aussi à une erreur de se donner pour neutralité",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -327,13 +354,16 @@
       "evidence": "un document net",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Évaluez l’idée que publier les critères suffirait à rendre la file juste."
+      "es": "Évaluez l’idée que publier les critères suffirait à rendre la file juste.",
+      "en": "Évaluez l’idée que publier les critères suffirait à rendre la file juste."
     },
     "minWords": 120,
     "maxWords": 220,
     "hints": [
-      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
-      "Cita una frase del texto y explica su importancia."
+      "Explain the central paradox and how the choice of words changes its scope.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Una fila más justa | Lectura C2 | WeLearn"
+      "es": "Une file plus juste | C2 Reading | WeLearn",
+      "en": "Une file plus juste | C2 Reading | WeLearn"
     },
     "description": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
-    "canonicalPath": "/practica/frances/c2/lectura/une-file-plus-juste",
+    "canonicalPath": "/en/practice/french/c2/reading/une-file-plus-juste",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

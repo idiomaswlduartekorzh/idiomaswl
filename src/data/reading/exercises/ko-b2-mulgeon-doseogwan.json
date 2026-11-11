@@ -5,14 +5,16 @@
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "B2",
-    "displayLabel": "coreano B2",
+    "displayLabel": "korean B2",
     "topik": 4,
     "mappingDisclaimer": {
-      "es": "La equivalencia CEFR–TOPIK es orientativa; requiere validación humana."
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
     }
   },
   "slug": "mulgeon-doseogwan",
@@ -24,36 +26,41 @@
     "tags": [
       "ko",
       "b2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "La biblioteca de objetos"
+      "es": "물건 도서관",
+      "en": "물건 도서관"
     },
     "intro": {
-      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+      "es": "Read an argument and separate its main claim from the conditions and limits around it.",
+      "en": "Read an argument and separate its main claim from the conditions and limits around it."
     },
     "mission": {
-      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+      "es": "Identify the proposal, its benefits and the obstacle that could prevent it from working.",
+      "en": "Identify the proposal, its benefits and the obstacle that could prevent it from working."
     },
-    "targetText": "마을의 새로운 물건 도서관은 책 대신 공구와 주방 기구, 캠핑 장비를 빌려준다. 일 년에 한 번 쓰는 드릴을 사는 것보다 빌리는 편이 저렴하고 낭비도 적다. 첫 달에는 물건 삼백 개 이상이 대여되었고 재봉틀은 대기 명단까지 생겼다. 그러나 이 숫자가 모든 주민의 이용 가능성을 보여 주지는 않는다. 이용자의 대부분은 중심가에 살지만 외곽 주민은 무거운 물건을 반납하려고 버스를 두 번 타야 한다. 운영진은 세 곳에 수령 장소를 만들 계획이지만 시의 지원금은 여섯 달치뿐이다. 한 자원봉사자는 연체료를 제안했다. 운영진은 벌금이 원래 돕고자 했던 가정을 멀어지게 할까 걱정하여 알림과 유연한 반납 기한을 시험하고 있다. 올겨울 빌려 간 드릴의 개수보다 내년에 먼 동네 주민도 서비스를 이용할 수 있는지가 더 중요한 성공 기준이다.",
-    "wordCount": 107,
-    "estimatedMinutes": 5,
+    "targetText": "마을의 새로운 물건 도서관은 책 대신 공구와 주방 기구, 캠핑 장비를 빌려준다. 일 년에 한 번 쓰는 드릴을 사는 것보다 빌리는 편이 저렴하고 낭비도 적다. 첫 달에는 물건 삼백 개 이상이 대여되었고 재봉틀은 대기 명단까지 생겼다. 그러나 이 숫자가 모든 주민의 이용 가능성을 보여 주지는 않는다. 이용자의 대부분은 중심가에 살지만 외곽 주민은 무거운 물건을 반납하려고 버스를 두 번 타야 한다. 운영진은 세 곳에 수령 장소를 만들 계획이지만 시의 지원금은 여섯 달치뿐이다. 한 자원봉사자는 연체료를 제안했다. 운영진은 벌금이 원래 돕고자 했던 가정을 멀어지게 할까 걱정하여 알림과 유연한 반납 기한을 시험하고 있다. 올겨울 빌려 간 드릴의 개수보다 내년에 먼 동네 주민도 서비스를 이용할 수 있는지가 더 중요한 성공 기준이다. 외곽 지역 한 곳에서 먼저 수령 장소를 운영해 보면 주민들이 실제로 이용하는지, 자원봉사자들이 추가 이동을 감당할 수 있는지 확인할 수 있다. 운영진은 이용을 중단한 사람들에게도 그 이유를 물어보려 한다. 성공한 대여 건수만 세면 처음부터 서비스를 이용하기 어려웠던 사람들은 통계에서 빠진다.",
+    "wordCount": 147,
+    "estimatedMinutes": 6,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "argumentación y concesión"
+      "argument and concession"
     ],
     "vocabulary": [
       {
         "surface": "빌려준다",
         "lemma": "빌려준다",
         "glosses": {
-          "es": "presta"
+          "es": "lends",
+          "en": "lends"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -62,7 +69,8 @@
         "surface": "드릴",
         "lemma": "드릴",
         "glosses": {
-          "es": "taladro"
+          "es": "drill",
+          "en": "drill"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -71,7 +79,8 @@
         "surface": "대기 명단",
         "lemma": "대기 명단",
         "glosses": {
-          "es": "lista de espera"
+          "es": "waiting list",
+          "en": "waiting list"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -80,7 +89,8 @@
         "surface": "외곽 주민",
         "lemma": "외곽 주민",
         "glosses": {
-          "es": "habitantes de la periferia"
+          "es": "residents of outer areas",
+          "en": "residents of outer areas"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -89,7 +99,8 @@
         "surface": "연체료",
         "lemma": "연체료",
         "glosses": {
-          "es": "recargo por demora"
+          "es": "late fee",
+          "en": "late fee"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -98,7 +109,8 @@
         "surface": "반납 기한",
         "lemma": "반납 기한",
         "glosses": {
-          "es": "plazo de devolución"
+          "es": "return deadline",
+          "en": "return deadline"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -115,26 +127,27 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
     },
     "allowedGrammar": [
-      "argumentación y concesión"
+      "argument and concession"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "moderate",
     "metrics": {
-      "averageSentenceWords": 11.9,
-      "maxSentenceWords": 17,
+      "averageSentenceWords": 12.3,
+      "maxSentenceWords": 21,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
     },
     "independentAssessment": {
       "estimatedLevel": "B2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -161,13 +174,16 @@
       "evidence": "내년에 먼 동네 주민도 서비스를 이용할 수 있는지가 더 중요한 성공 기준이다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -184,7 +200,7 @@
         },
         {
           "id": "a2",
-          "text": "외곽 주민의 이동 부담을 줄이기 위해"
+          "text": "외곽 주민을 돕기 위해"
         },
         {
           "id": "a3",
@@ -195,13 +211,16 @@
       "evidence": "버스를 두 번 타야 한다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -222,20 +241,23 @@
         },
         {
           "id": "a3",
-          "text": "장기 운영 자금은 불확실하다"
+          "text": "장기 자금이 불확실하다"
         }
       ],
       "answer": "a3",
       "evidence": "시의 지원금은 여섯 달치뿐이다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -248,7 +270,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "초기 수요를 보여 주기 위해"
+          "text": "초기 수요를 보여 준다"
         },
         {
           "id": "a2",
@@ -263,13 +285,16 @@
       "evidence": "재봉틀은 대기 명단까지 생겼다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -297,13 +322,16 @@
       "evidence": "그러나 이 숫자가 모든 주민의 이용 가능성을 보여 주지는 않는다",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -324,20 +352,23 @@
         },
         {
           "id": "a3",
-          "text": "참여하기 어렵게 한다"
+          "text": "참여하기 어렵게 만든다"
         }
       ],
       "answer": "a3",
       "evidence": "가정을 멀어지게 할까 걱정하여",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -345,13 +376,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "시청에 조언하는 글을 쓰고, 장점과 한계를 하나씩 설명하세요."
+      "es": "시청에 조언하는 글을 쓰고, 장점과 한계를 하나씩 설명하세요.",
+      "en": "시청에 조언하는 글을 쓰고, 장점과 한계를 하나씩 설명하세요."
     },
     "minWords": 60,
     "maxWords": 130,
     "hints": [
-      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
-      "Cita una frase del texto y explica su importancia."
+      "Identify the proposal, its benefits and the obstacle that could prevent it from working.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -369,12 +401,14 @@
   },
   "seo": {
     "title": {
-      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+      "es": "물건 도서관 | B2 Reading | WeLearn",
+      "en": "물건 도서관 | B2 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+      "es": "Read an argument and separate its main claim from the conditions and limits around it.",
+      "en": "Read an argument and separate its main claim from the conditions and limits around it."
     },
-    "canonicalPath": "/practica/coreano/b2/lectura/mulgeon-doseogwan",
+    "canonicalPath": "/en/practice/korean/b2/reading/mulgeon-doseogwan",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

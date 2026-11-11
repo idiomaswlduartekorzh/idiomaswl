@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import { buildExerciseMetadata, ExercisePage, readingStaticParams, resolveExerciseForRoute } from '@/components/reading/ReadingPageServer'
+import { redirect } from 'next/navigation'
+import { buildExerciseMetadata, readingStaticParams, resolveExerciseForRoute } from '@/components/reading/ReadingPageServer'
+import { readingExercisePath } from '@/lib/reading/routes'
 
 type Props = { params: Promise<{ idioma: string; nivel: string; slug: string }> }
 
@@ -15,5 +17,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Page({ params }: Props) {
   const { idioma, nivel, slug } = await params
-  return <ExercisePage locale="es" exercise={resolveExerciseForRoute('es', idioma, nivel, slug)} />
+  const exercise = resolveExerciseForRoute('es', idioma, nivel, slug)
+  redirect(readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug))
 }

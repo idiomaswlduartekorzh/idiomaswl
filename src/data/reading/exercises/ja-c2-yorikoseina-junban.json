@@ -5,14 +5,16 @@
   "language": "ja",
   "variant": "ja-JP",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C2",
-    "displayLabel": "japones C2",
+    "displayLabel": "japanese C2",
     "jlpt": "N1",
     "mappingDisclaimer": {
-      "es": "La equivalencia CEFR–JLPT es orientativa; requiere validación humana."
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
     }
   },
   "slug": "yorikoseina-junban",
@@ -24,36 +26,41 @@
     "tags": [
       "ja",
       "c2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Una fila más justa"
+      "es": "より公平な順番待ち",
+      "en": "より公平な順番待ち"
     },
     "intro": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
     "mission": {
-      "es": "Explica la paradoja central y cómo la elección de palabras modifica su alcance."
+      "es": "Explain the central paradox and how the choice of words changes its scope.",
+      "en": "Explain the central paradox and how the choice of words changes its scope."
     },
-    "targetText": "市は住宅の順番待ちを申請順から点数制に替え、最も必要とする人を優先すると説明した。最初の報告書は平均待機期間の短縮を成果として掲げた。数字は正しい。ただし、誰の待ち時間が短くなったかは示していない。安定した通信環境があれば申請書の不備を数時間で直せる一方、公共端末を使う人は週ごとの順位が確定した後にようやく誤りに気づくこともある。市は異議申立ての期間を設けた。しかし、失った順位を取り戻せるのは、失ったと知った人だけだ。独立委員会は採点基準の公開を求め、市側は回答の作り込みを懸念した。委員会は、秘密の基準こそ誤りを公正さに見せかけると反論する。どちらも戦略的な行動を防ぎ切れるとは言わない。より根深い対立は「必要」の証拠を巡る。立ち退き通知は確認しやすいが、長年の不安定な住まいには整った書類が残りにくい。前者を「客観的」、後者を「主観的」と呼べば、行政の作業は楽になる。その代わり、証明の負担は最も負担に弱い人へ移る。列は速く進むようになった。それがより公正な列かどうかは、この制度が誰を見える存在として数えるかによる。",
-    "wordCount": 429,
-    "estimatedMinutes": 17,
+    "targetText": "市は住宅の順番待ちを申請順から点数制に替え、最も必要とする人を優先すると説明した。最初の報告書は平均待機期間の短縮を成果として掲げた。数字は正しい。ただし、誰の待ち時間が短くなったかは示していない。安定した通信環境があれば申請書の不備を数時間で直せる一方、公共端末を使う人は週ごとの順位が確定した後にようやく誤りに気づくこともある。市は異議申立ての期間を設けた。しかし、失った順位を取り戻せるのは、失ったと知った人だけだ。独立委員会は採点基準の公開を求め、市側は回答の作り込みを懸念した。委員会は、秘密の基準こそ誤りを公正さに見せかけると反論する。どちらも戦略的な行動を防ぎ切れるとは言わない。より根深い対立は「必要」の証拠を巡る。立ち退き通知は確認しやすいが、長年の不安定な住まいには整った書類が残りにくい。前者を「客観的」、後者を「主観的」と呼べば、行政の作業は楽になる。その代わり、証明の負担は最も負担に弱い人へ移る。列は速く進むようになった。それがより公正な列かどうかは、この制度が誰を見える存在として数えるかによる。 平均待機期間が短くなっても、一部の申請者の待ち時間は長くなるかもしれない。しかも、その人々ほど入手しにくい書類を求められる。数字を一つだけ公表することは単なる要約ではない。誰の経験を成果として示し、誰の経験を平均に隠すかを決めることでもある。",
+    "wordCount": 543,
+    "estimatedMinutes": 22,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "vocabulary": [
       {
         "surface": "点数制",
         "lemma": "点数制",
         "glosses": {
-          "es": "sistema de puntos"
+          "es": "points system",
+          "en": "points system"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -62,7 +69,8 @@
         "surface": "不備",
         "lemma": "不備",
         "glosses": {
-          "es": "defecto en la solicitud"
+          "es": "error in the application",
+          "en": "error in the application"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -71,7 +79,8 @@
         "surface": "異議申立て",
         "lemma": "異議申立て",
         "glosses": {
-          "es": "apelación"
+          "es": "appeal",
+          "en": "appeal"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -80,7 +89,8 @@
         "surface": "採点基準",
         "lemma": "採点基準",
         "glosses": {
-          "es": "criterios de puntuación"
+          "es": "scoring criteria",
+          "en": "scoring criteria"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -89,7 +99,8 @@
         "surface": "立ち退き通知",
         "lemma": "立ち退き通知",
         "glosses": {
-          "es": "aviso de desalojo"
+          "es": "eviction notice",
+          "en": "eviction notice"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -98,7 +109,8 @@
         "surface": "証明の負担",
         "lemma": "証明の負担",
         "glosses": {
-          "es": "carga de la prueba"
+          "es": "burden of proof",
+          "en": "burden of proof"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -115,16 +127,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes captar matices sutiles de significado y formular una lectura crítica justificada."
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
     },
     "allowedGrammar": [
-      "matices retóricos y ambigüedad controlada"
+      "rhetorical nuance and controlled ambiguity"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 429,
+      "averageSentenceWords": 271.5,
       "maxSentenceWords": 429,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -132,9 +145,9 @@
     "independentAssessment": {
       "estimatedLevel": "C2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -161,13 +174,16 @@
       "evidence": "誰を見える存在として数えるか",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -184,7 +200,7 @@
         },
         {
           "id": "a2",
-          "text": "安定した通信環境がある人"
+          "text": "通信環境の良い人"
         },
         {
           "id": "a3",
@@ -195,13 +211,16 @@
       "evidence": "安定した通信環境があれば申請書の不備を数時間で直せる",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -222,20 +241,23 @@
         },
         {
           "id": "a3",
-          "text": "順位を失ったと気づく必要がある"
+          "text": "失った順位に気づく必要がある"
         }
       ],
       "answer": "a3",
       "evidence": "失ったと知った人だけだ",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -248,7 +270,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "何を証拠と認めるかを問うため"
+          "text": "証拠の基準を問う"
         },
         {
           "id": "a2",
@@ -263,13 +285,16 @@
       "evidence": "整った書類が残りにくい",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -297,13 +322,16 @@
       "evidence": "誤りを公正さに見せかける",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -324,20 +352,23 @@
         },
         {
           "id": "a3",
-          "text": "表面より深い問題であること"
+          "text": "整った証明書類"
         }
       ],
       "answer": "a3",
       "evidence": "より根深い対立",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -345,13 +376,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "基準を公開するだけで公平になるという意見を、二つの根拠から検討してください。"
+      "es": "基準を公開するだけで公平になるという意見を、二つの根拠から検討してください。",
+      "en": "基準を公開するだけで公平になるという意見を、二つの根拠から検討してください。"
     },
     "minWords": 120,
     "maxWords": 220,
     "hints": [
-      "Explica la paradoja central y cómo la elección de palabras modifica su alcance.",
-      "Cita una frase del texto y explica su importancia."
+      "Explain the central paradox and how the choice of words changes its scope.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -369,12 +401,14 @@
   },
   "seo": {
     "title": {
-      "es": "Una fila más justa | Lectura C2 | WeLearn"
+      "es": "より公平な順番待ち | C2 Reading | WeLearn",
+      "en": "より公平な順番待ち | C2 Reading | WeLearn"
     },
     "description": {
-      "es": "Analiza matices retóricos, implicaciones y tensiones que el texto no resuelve de forma explícita."
+      "es": "Examine rhetorical nuance, implications and tensions the text leaves unresolved.",
+      "en": "Examine rhetorical nuance, implications and tensions the text leaves unresolved."
     },
-    "canonicalPath": "/practica/japones/c2/lectura/yorikoseina-junban",
+    "canonicalPath": "/en/practice/japanese/c2/reading/yorikoseina-junban",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

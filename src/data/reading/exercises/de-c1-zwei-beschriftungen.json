@@ -5,11 +5,12 @@
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "C1",
-    "displayLabel": "aleman C1"
+    "displayLabel": "german C1"
   },
   "slug": "zwei-beschriftungen",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "de",
       "c1",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "Dos etiquetas para un mapa"
+      "es": "Zwei Beschriftungen",
+      "en": "Zwei Beschriftungen"
     },
     "intro": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "mission": {
-      "es": "Distingue lo que el autor afirma de la posición que deja entrever."
+      "es": "Separate what the writer states directly from the position the text implies.",
+      "en": "Separate what the writer states directly from the position the text implies."
     },
-    "targetText": "Als das Regionalmuseum wieder öffnete, hing neben einer alten Karte nicht mehr nur eine Beschriftung, sondern zwei. Die erste nannte Zeichner und Entstehungsjahr. Die zweite erklärte, dass die Handelswege der damaligen Gesellschaft auf Zwangsarbeit beruhten. Manche Besucher begrüßten den längst überfälligen Hinweis. Andere fanden, ein einzelnes Objekt solle nicht für eine ganze politische Geschichte stehen müssen. Die Kuratorin behielt beide Texte bei. Genauigkeit über das Objekt und historischer Zusammenhang seien unterschiedliche Pflichten, sagte sie. Allerdings machte die neue Beschriftung sichtbar, was sie nicht beantworten konnte: Wie gelangte die Karte ins Museum? Wer möchte heute Zugang zum Original? Warum ist die digitale Kopie leichter zugänglich? Das Museum versprach, die Erwerbsakten zu veröffentlichen, sobald Namen in Unterlagen überprüft seien, die Arbeiter oft nur als Nummern erfassten. Ein Kritiker nannte die Verzögerung erneutes Schweigen. Die Kuratorin wollte jedoch keine Vereinfachung durch die nächste ersetzen. Am Ende steht der Besucher vor einer Karte, zwei Beschriftungen und einer Lücke, die vielleicht einmal eine ausführlichere Geschichte füllt.",
-    "wordCount": 161,
-    "estimatedMinutes": 6,
+    "targetText": "Als das Regionalmuseum wieder öffnete, hing neben einer alten Karte nicht mehr nur eine Beschriftung, sondern zwei. Die erste nannte Zeichner und Entstehungsjahr. Die zweite erklärte, dass die Handelswege der damaligen Gesellschaft auf Zwangsarbeit beruhten. Manche Besucher begrüßten den längst überfälligen Hinweis. Andere fanden, ein einzelnes Objekt solle nicht für eine ganze politische Geschichte stehen müssen. Die Kuratorin behielt beide Texte bei. Genauigkeit über das Objekt und historischer Zusammenhang seien unterschiedliche Pflichten, sagte sie. Allerdings machte die neue Beschriftung sichtbar, was sie nicht beantworten konnte: Wie gelangte die Karte ins Museum? Wer möchte heute Zugang zum Original? Warum ist die digitale Kopie leichter zugänglich? Das Museum versprach, die Erwerbsakten zu veröffentlichen, sobald Namen in Unterlagen überprüft seien, die Arbeiter oft nur als Nummern erfassten. Ein Kritiker nannte die Verzögerung erneutes Schweigen. Die Kuratorin wollte jedoch keine Vereinfachung durch die nächste ersetzen. Am Ende steht der Besucher vor einer Karte, zwei Beschriftungen und einer Lücke, die vielleicht einmal eine ausführlichere Geschichte füllt. Das Museum hat örtliche Gruppen eingeladen, die Formulierungen der Beschriftungen zu kommentieren. Das kann die Ausstellung verbessern, wirft aber eine weitere Frage auf: Wer entscheidet, welche Vorschläge übernommen werden? Solange dieses Verfahren nicht erklärt wird, könnte die Einladung zum Gespräch vollständiger erscheinen, als sie tatsächlich ist.",
+    "wordCount": 207,
+    "estimatedMinutes": 8,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "vocabulary": [
       {
         "surface": "Beschriftung",
         "lemma": "Beschriftung",
         "glosses": {
-          "es": "cartela"
+          "es": "display label",
+          "en": "display label"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "Zwangsarbeit",
         "lemma": "Zwangsarbeit",
         "glosses": {
-          "es": "trabajo forzado"
+          "es": "forced labour",
+          "en": "forced labour"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "überfälligen",
         "lemma": "überfälligen",
         "glosses": {
-          "es": "pendiente desde hace tiempo"
+          "es": "long overdue",
+          "en": "long overdue"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "Kuratorin",
         "lemma": "Kuratorin",
         "glosses": {
-          "es": "conservadora"
+          "es": "curator",
+          "en": "curator"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "Erwerbsakten",
         "lemma": "Erwerbsakten",
         "glosses": {
-          "es": "expedientes de adquisición"
+          "es": "acquisition files",
+          "en": "acquisition files"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "Verzögerung",
         "lemma": "Verzögerung",
         "glosses": {
-          "es": "demora"
+          "es": "delay",
+          "en": "delay"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes interpretar posturas implícitas y evaluar la función de las concesiones."
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
     },
     "allowedGrammar": [
-      "implicaturas y postura del autor"
+      "implications and writer stance"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "high",
     "metrics": {
-      "averageSentenceWords": 11.5,
+      "averageSentenceWords": 12.2,
       "maxSentenceWords": 20,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "C1",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "unterschiedliche Pflichten",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Die Erwerbsakten zu veröffentlichen"
+          "text": "Die Erwerbsakten"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "die Erwerbsakten zu veröffentlichen",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Unterlagen reduzierten Menschen auf Nummern"
+          "text": "Menschen standen nur als Nummern darin"
         }
       ],
       "answer": "a3",
       "evidence": "Arbeiter oft nur als Nummern erfassten",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Sie verweist auf eine unvollständige Erzählung"
+          "text": "Sie zeigt eine Lücke"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "einer Lücke, die vielleicht einmal eine ausführlichere Geschichte füllt",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -282,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Keine Position löst alles"
+          "text": "Keine der Positionen löst alles"
         },
         {
           "id": "a3",
@@ -293,13 +317,16 @@
       "evidence": "was sie nicht beantworten konnte",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -320,20 +347,23 @@
         },
         {
           "id": "a3",
-          "text": "Der Hinweis hätte früher kommen sollen"
+          "text": "Der Hinweis kam zu spät"
         }
       ],
       "answer": "a3",
       "evidence": "längst überfälligen Hinweis",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Erörtern Sie, ob die beiden Beschriftungen vorerst genügen."
+      "es": "Erörtern Sie, ob die beiden Beschriftungen vorerst genügen.",
+      "en": "Erörtern Sie, ob die beiden Beschriftungen vorerst genügen."
     },
     "minWords": 90,
     "maxWords": 180,
     "hints": [
-      "Distingue lo que el autor afirma de la posición que deja entrever.",
-      "Cita una frase del texto y explica su importancia."
+      "Separate what the writer states directly from the position the text implies.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "Dos etiquetas para un mapa | Lectura C1 | WeLearn"
+      "es": "Zwei Beschriftungen | C1 Reading | WeLearn",
+      "en": "Zwei Beschriftungen | C1 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee entre líneas: identifica postura, concesiones y supuestos del autor."
+      "es": "Read between the lines: identify the writer’s position, concessions and assumptions.",
+      "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
-    "canonicalPath": "/practica/aleman/c1/lectura/zwei-beschriftungen",
+    "canonicalPath": "/en/practice/german/c1/reading/zwei-beschriftungen",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

@@ -5,11 +5,12 @@
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
-    "es"
+    "es",
+    "en"
   ],
   "level": {
     "cefr": "B2",
-    "displayLabel": "italiano B2"
+    "displayLabel": "italian B2"
   },
   "slug": "la-biblioteca-degli-oggetti",
   "series": null,
@@ -20,36 +21,41 @@
     "tags": [
       "it",
       "b2",
-      "lectura avanzada"
+      "advanced reading"
     ]
   },
   "content": {
     "title": {
-      "es": "La biblioteca de objetos"
+      "es": "La biblioteca degli oggetti",
+      "en": "La biblioteca degli oggetti"
     },
     "intro": {
-      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+      "es": "Read an argument and separate its main claim from the conditions and limits around it.",
+      "en": "Read an argument and separate its main claim from the conditions and limits around it."
     },
     "mission": {
-      "es": "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar."
+      "es": "Identify the proposal, its benefits and the obstacle that could prevent it from working.",
+      "en": "Identify the proposal, its benefits and the obstacle that could prevent it from working."
     },
-    "targetText": "La biblioteca degli oggetti presta attrezzi, utensili da cucina e tende da campeggio. Comprare un trapano per usarlo una volta all’anno sembra uno spreco; prenderlo in prestito è più economico. Nel primo mese sono stati prestati oltre trecento oggetti, e la lista d’attesa per le macchine da cucire è cresciuta. Tuttavia i numeri nascondono un problema: quasi tutti gli utenti abitano vicino al centro. Chi vive nei quartieri periferici deve prendere due autobus per restituire un oggetto pesante. Gli organizzatori propongono tre punti di ritiro, ma il comune finanzierà il progetto soltanto per sei mesi. Un volontario suggerisce multe per i ritardi; il gruppo teme però di escludere proprio le famiglie che voleva aiutare. Per ora prova promemoria e scadenze flessibili. Il successo dipenderà meno dal numero di trapani prestati quest’inverno che dalla possibilità, per chi oggi è lontano, di usare il servizio l’anno prossimo.",
-    "wordCount": 145,
-    "estimatedMinutes": 6,
+    "targetText": "La biblioteca degli oggetti presta attrezzi, utensili da cucina e tende da campeggio. Comprare un trapano per usarlo una volta all’anno sembra uno spreco; prenderlo in prestito è più economico. Nel primo mese sono stati prestati oltre trecento oggetti, e la lista d’attesa per le macchine da cucire è cresciuta. Tuttavia i numeri nascondono un problema: quasi tutti gli utenti abitano vicino al centro. Chi vive nei quartieri periferici deve prendere due autobus per restituire un oggetto pesante. Gli organizzatori propongono tre punti di ritiro, ma il comune finanzierà il progetto soltanto per sei mesi. Un volontario suggerisce multe per i ritardi; il gruppo teme però di escludere proprio le famiglie che voleva aiutare. Per ora prova promemoria e scadenze flessibili. Il successo dipenderà meno dal numero di trapani prestati quest’inverno che dalla possibilità, per chi oggi è lontano, di usare il servizio l’anno prossimo. Una prova in uno dei nuovi quartieri mostrerebbe se i punti di ritiro vengono davvero usati e se i volontari riescono a gestirli. Il gruppo vuole chiedere anche a chi ha rinunciato perché non è tornato. Contare soltanto i prestiti riusciti nasconderebbe le persone che non sono mai riuscite a partecipare.",
+    "wordCount": 196,
+    "estimatedMinutes": 8,
     "objectives": [
       {
-        "es": "Distinguir lo explícito de lo implícito y justificar cada respuesta con el texto."
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
       }
     ],
     "grammarFocus": [
-      "argumentación y concesión"
+      "argument and concession"
     ],
     "vocabulary": [
       {
         "surface": "presta",
         "lemma": "presta",
         "glosses": {
-          "es": "presta"
+          "es": "lends",
+          "en": "lends"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -58,7 +64,8 @@
         "surface": "trapano",
         "lemma": "trapano",
         "glosses": {
-          "es": "taladro"
+          "es": "drill",
+          "en": "drill"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -67,7 +74,8 @@
         "surface": "spreco",
         "lemma": "spreco",
         "glosses": {
-          "es": "desperdicio"
+          "es": "waste",
+          "en": "waste"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -76,7 +84,8 @@
         "surface": "lista d’attesa",
         "lemma": "lista d’attesa",
         "glosses": {
-          "es": "lista de espera"
+          "es": "waiting list",
+          "en": "waiting list"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -85,7 +94,8 @@
         "surface": "quartieri periferici",
         "lemma": "quartieri periferici",
         "glosses": {
-          "es": "barrios periféricos"
+          "es": "outer neighbourhoods",
+          "en": "outer neighbourhoods"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -94,7 +104,8 @@
         "surface": "scadenze flessibili",
         "lemma": "scadenze flessibili",
         "glosses": {
-          "es": "plazos flexibles"
+          "es": "flexible deadlines",
+          "en": "flexible deadlines"
         },
         "audioRequired": false,
         "levelStatus": "within-level"
@@ -111,16 +122,17 @@
   },
   "leveling": {
     "targetCanDo": {
-      "es": "Puedes seguir un argumento y reconocer condiciones, evidencia y reservas."
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
     },
     "allowedGrammar": [
-      "argumentación y concesión"
+      "argument and concession"
     ],
     "disallowedGrammar": [],
     "maxOutOfLevelVocabularyPercent": 12,
     "inferenceBand": "moderate",
     "metrics": {
-      "averageSentenceWords": 16.1,
+      "averageSentenceWords": 16.3,
       "maxSentenceWords": 24,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -128,9 +140,9 @@
     "independentAssessment": {
       "estimatedLevel": "B2",
       "passed": false,
-      "assessor": "Pendiente de evaluación independiente",
+      "assessor": "Pending independent assessment",
       "assessedAt": "2026-11-10T00:00:00-05:00",
-      "notes": "Borrador; la dificultad y naturalidad requieren revisión humana."
+      "notes": "Draft; difficulty and naturalness require human review."
     }
   },
   "questions": [
@@ -157,13 +169,16 @@
       "evidence": "di usare il servizio l’anno prossimo",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Busca la tesis que organiza todo el texto, no un dato aislado."
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
         }
       },
       "maxAttempts": 2
@@ -180,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Per raggiungere i quartieri lontani"
+          "text": "Per servire quartieri lontani"
         },
         {
           "id": "a3",
@@ -191,13 +206,16 @@
       "evidence": "deve prendere due autobus per restituire un oggetto pesante",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Ubica el pasaje concreto y comprueba quién hace qué."
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
         }
       },
       "maxAttempts": 2
@@ -218,20 +236,23 @@
         },
         {
           "id": "a3",
-          "text": "Il futuro economico resta incerto"
+          "text": "I fondi futuri sono incerti"
         }
       ],
       "answer": "a3",
       "evidence": "finanzierà il progetto soltanto per sei mesi",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Conecta la evidencia con lo que el autor deja implícito."
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
         }
       },
       "maxAttempts": 2
@@ -244,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Per mostrare la domanda iniziale"
+          "text": "Per mostrare la richiesta iniziale"
         },
         {
           "id": "a2",
@@ -259,13 +280,16 @@
       "evidence": "la lista d’attesa per le macchine da cucire è cresciuta",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Pregunta por qué el autor incluyó ese detalle."
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
         }
       },
       "maxAttempts": 2
@@ -293,13 +317,16 @@
       "evidence": "Tuttavia i numeri nascondono un problema",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Fíjate en los matices de aprobación, reserva o crítica."
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
         }
       },
       "maxAttempts": 2
@@ -327,13 +354,16 @@
       "evidence": "di escludere proprio le famiglie",
       "feedback": {
         "correct": {
-          "es": "Sí. La evidencia señalada sostiene esta respuesta."
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
         },
         "incorrect": {
-          "es": "Vuelve a leer el fragmento señalado y compara las opciones."
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
         },
         "strategy": {
-          "es": "Decide el sentido de la palabra en esta oración, no fuera de contexto."
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
         }
       },
       "maxAttempts": 2
@@ -341,13 +371,14 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un consiglio al comune usando un vantaggio e un limite del progetto."
+      "es": "Scrivi un consiglio al comune usando un vantaggio e un limite del progetto.",
+      "en": "Scrivi un consiglio al comune usando un vantaggio e un limite del progetto."
     },
     "minWords": 60,
     "maxWords": 130,
     "hints": [
-      "Identifica la propuesta, sus ventajas y el problema que podría hacerla fracasar.",
-      "Cita una frase del texto y explica su importancia."
+      "Identify the proposal, its benefits and the obstacle that could prevent it from working.",
+      "Quote one phrase from the text and explain why it matters."
     ],
     "scored": false
   },
@@ -365,12 +396,14 @@
   },
   "seo": {
     "title": {
-      "es": "La biblioteca de objetos | Lectura B2 | WeLearn"
+      "es": "La biblioteca degli oggetti | B2 Reading | WeLearn",
+      "en": "La biblioteca degli oggetti | B2 Reading | WeLearn"
     },
     "description": {
-      "es": "Lee un texto argumentativo y distingue la idea principal de sus condiciones y límites."
+      "es": "Read an argument and separate its main claim from the conditions and limits around it.",
+      "en": "Read an argument and separate its main claim from the conditions and limits around it."
     },
-    "canonicalPath": "/practica/italiano/b2/lectura/la-biblioteca-degli-oggetti",
+    "canonicalPath": "/en/practice/italian/b2/reading/la-biblioteca-degli-oggetti",
     "indexable": false,
     "lastModified": "2026-11-10T00:00:00-05:00"
   }

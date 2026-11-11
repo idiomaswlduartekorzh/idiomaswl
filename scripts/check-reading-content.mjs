@@ -48,17 +48,45 @@ if (advanced.length) {
   for (const { file, exercise } of advanced) {
     const errors = []
     if (exercise.questions.length !== 6) errors.push('debe tener seis preguntas')
+    if (!exercise.tutorLocales.includes('en') || exercise.content.title.es !== exercise.content.title.en || exercise.content.intro.es !== exercise.content.intro.en || exercise.content.mission.es !== exercise.content.mission.en || exercise.production.prompt.es !== exercise.production.prompt.en) {
+      errors.push('el piloto debe mostrar el mismo contenido sin español en ambas rutas')
+    }
+    if (exercise.content.vocabulary.some((item) => item.glosses.es !== item.glosses.en)) errors.push('las glosas deben ser iguales en ambas rutas')
     if (new Set(exercise.questions.map((question) => question.skill)).size < 5) errors.push('debe evaluar al menos cinco destrezas')
     if (exercise.content.vocabulary.length < 6) errors.push('debe glosar al menos seis expresiones')
     for (const question of exercise.questions) {
       if (!exercise.content.targetText.includes(question.evidence)) errors.push(`${question.id}: evidencia ausente del texto`)
       if (question.options?.length !== 3) errors.push(`${question.id}: se exigen tres opciones concretas`)
     }
+    const answerPositions = [0, 0, 0]
+    for (const question of exercise.questions) {
+      const position = question.options?.findIndex((option) => option.id === question.answer) ?? -1
+      if (position >= 0 && position < 3) answerPositions[position]++
+    }
+    if (answerPositions.some((count) => count !== 2)) errors.push(`sesgo de posición: ${answerPositions.join('/')}; se exige 2/2/2`)
     if (exercise.status !== 'draft' || exercise.seo.indexable || exercise.leveling.independentAssessment.passed) errors.push('el piloto debe quedar como borrador sin evaluación independiente aprobada')
     if (errors.length) {
       failed = true
       console.error(`✗ ${file}: ${errors.join('; ')}`)
     }
+  }
+  for (const level of ['B2', 'C1', 'C2']) {
+    const lengths = { longest: 0, shortest: 0, middle: 0 }
+    for (const { exercise } of advanced.filter(({ exercise }) => exercise.level.cefr === level)) {
+      for (const question of exercise.questions) {
+        const sizes = question.options.map((option) => Array.from(option.text).length)
+        const correct = question.options.find((option) => option.id === question.answer)
+        const size = Array.from(correct.text).length
+        if (size === Math.max(...sizes)) lengths.longest++
+        else if (size === Math.min(...sizes)) lengths.shortest++
+        else lengths.middle++
+      }
+    }
+    const total = Object.values(lengths).reduce((sum, count) => sum + count, 0)
+    if (total && Object.values(lengths).some((count) => count / total < 0.2 || count / total > 0.45)) {
+      failed = true
+      console.error(`✗ piloto avanzado ${level}: sesgo de longitud ${JSON.stringify(lengths)}; cada banda debe ocupar entre 20 % y 45 %`)
+    } else console.log(`· piloto avanzado ${level}: longitud de respuesta ${JSON.stringify(lengths)}`)
   }
 }
 
