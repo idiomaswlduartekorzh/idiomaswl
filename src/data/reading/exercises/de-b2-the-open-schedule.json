@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-open-schedule",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Herausforderungen der Gleitzeit an der Nordwald-Schule",
+      "en": "Herausforderungen der Gleitzeit an der Nordwald-Schule"
+    },
+    "intro": {
+      "es": "Ein E-Mail-Austausch zwischen der Schulleitung und einer besorgten Mutter über die Einführung flexibler Unterrichtszeiten.",
+      "en": "Ein E-Mail-Austausch zwischen der Schulleitung und einer besorgten Mutter über die Einführung flexibler Unterrichtszeiten."
+    },
+    "mission": {
+      "es": "Analysieren Sie die Argumente bezüglich der neuen Zeitregelung und bewerten Sie die Auswirkungen auf den Schulalltag.",
+      "en": "Analysieren Sie die Argumente bezüglich der neuen Zeitregelung und bewerten Sie die Auswirkungen auf den Schulalltag."
+    },
+    "targetText": "Sehr geehrte Frau Dr. Weber, ich schreibe Ihnen als Vertreterin der Elternschaft, um unsere wachsende Besorgnis bezüglich des neuen Gleitzeitmodells an der Nordwald-Schule zu äußern. Während wir das Ziel, Familien mit langen Anfahrtswegen zu entlasten, ausdrücklich begrüßen, führt die aktuelle Umsetzung zu erheblichen Störungen im Unterrichtsverlauf. Viele Schüler erscheinen nun in einem Zeitfenster von fast einer Stunde, was bedeutet, dass die ersten gemeinsamen Unterrichtsphasen ständig durch verspätete Ankünfte unterbrochen werden. Unsere Kinder berichten, dass die Lehrer gezwungen sind, bereits erklärte Lerninhalte mehrfach zu wiederholen, was die Konzentration der pünktlich erschienenen Schüler massiv beeinträchtigt. Es ist für uns schwer nachvollziehbar, warum eine organisatorische Erleichterung für einige wenige Familien auf Kosten der allgemeinen Unterrichtsqualität gehen muss. Wir schlagen daher vor, dass das Zeitfenster für den Ankunftsbereich deutlich verengt wird, um den gemeinsamen Start in den Schultag zu garantieren. Sollte dies nicht möglich sein, befürchten wir eine dauerhafte Verschlechterung des Klassenklimas. Ich erwarte zeitnah eine Stellungnahme zu diesem Vorschlag. Mit freundlichen Grüßen, Sabine Kern. Liebe Frau Kern, vielen Dank für Ihre offene Rückmeldung. Wir sind uns der Problematik bewusst, doch müssen wir betonen, dass die Gleitzeit für viele unserer Pendlerfamilien die einzige Möglichkeit darstellt, den Schulbesuch überhaupt logistisch zu bewältigen. Ein starrer Beginn würde für diese Gruppe den Ausschluss von unserer Schule bedeuten, was unserem Inklusionsanspruch widersprechen würde. Wir haben bereits versucht, die ersten dreißig Minuten als reine Ankommens- und Stillarbeitsphase zu deklarieren, um den Frontalunterricht zu entlasten. Dass dies in der Praxis noch nicht optimal funktioniert, ist uns bewusst. Wir planen daher eine interne Konferenz, um zu prüfen, ob wir den Unterrichtsbeginn in den ersten zwei Stunden durch eine digitale Vorbereitung ersetzen können, damit alle Schüler unabhängig von ihrer Ankunftszeit auf demselben Stand sind. Wir bitten Sie um etwas Geduld, während wir diese komplexen pädagogischen Prozesse neu justieren. Wir wollen niemanden ausschließen, aber wir müssen auch die Qualität der gemeinsamen Lernzeit wahren. Es ist ein schwieriger Balanceakt zwischen Flexibilität und Struktur. Wir werden die Elternvertretung in den Prozess einbinden. Mit freundlichen Grüßen, Dr. Elena Weber.\n\nDennoch bleibt die Sorge bestehen, dass digitale Vorbereitungsphasen die soziale Interaktion im Klassenzimmer langfristig schwächen könnten. Wenn Schüler ihre ersten Aufgaben isoliert vor dem Bildschirm erledigen, statt gemeinsam in den Tag zu starten, droht ein Verlust des wertvollen Gemeinschaftsgefühls. Wir müssen sicherstellen, dass die technische Lösung nicht die zwischenmenschliche Komponente ersetzt, welche für die persönliche Entwicklung unserer Kinder unerlässlich ist. Daher fordern wir, dass bei der Neugestaltung des Konzepts auch pädagogische Ansätze zur Stärkung des sozialen Miteinanders trotz der zeitlichen Flexibilität explizit berücksichtigt werden.",
+    "wordCount": 417,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Gleitzeit",
+        "lemma": "Gleitzeit",
+        "glosses": {
+          "es": "flexible working or arrival hours",
+          "en": "flexible working or arrival hours"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Anfahrtswegen",
+        "lemma": "Anfahrtswegen",
+        "glosses": {
+          "es": "commute routes",
+          "en": "commute routes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "beeinträchtigt",
+        "lemma": "beeinträchtigt",
+        "glosses": {
+          "es": "impairs or negatively affects",
+          "en": "impairs or negatively affects"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Inklusionsanspruch",
+        "lemma": "Inklusionsanspruch",
+        "glosses": {
+          "es": "right to inclusion",
+          "en": "right to inclusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Frontalunterricht",
+        "lemma": "Frontalunterricht",
+        "glosses": {
+          "es": "teacher-centered instruction",
+          "en": "teacher-centered instruction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Balanceakt",
+        "lemma": "Balanceakt",
+        "glosses": {
+          "es": "balancing act",
+          "en": "balancing act"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:24:04.240Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in diesem E-Mail-Austausch primär?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Kritik am neuen Zeitmodell."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Organisation eines Schulfests."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Planung neuer Unterrichtsfächer."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ich schreibe Ihnen als Vertreterin der Elternschaft, um unsere wachsende Besorgnis bezüglich des neuen Gleitzeitmodells an der Nordwald-Schule zu äußern.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was ist der Hauptgrund für die Einführung der Gleitzeit?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Verbesserung der Noten."
+        },
+        {
+          "id": "a2",
+          "text": "Die Entlastung der Pendlerfamilien."
+        },
+        {
+          "id": "a3",
+          "text": "Die Modernisierung des Konzepts."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "die Gleitzeit für viele unserer Pendlerfamilien die einzige Möglichkeit darstellt, den Schulbesuch überhaupt logistisch zu bewältigen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht die Schulleiterin zu dem Vorschlag der Eltern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie lehnt ihn komplett ab."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ignoriert die Beschwerde."
+        },
+        {
+          "id": "a3",
+          "text": "Sie sucht nach Alternativen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wir planen daher eine interne Konferenz, um zu prüfen, ob wir den Unterrichtsbeginn in den ersten zwei Stunden durch eine digitale Vorbereitung ersetzen können",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum erwähnt Dr. Weber den Inklusionsanspruch?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Notwendigkeit flexibler Zeiten zu rechtfertigen."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Eltern zu einer Spende zu bewegen."
+        },
+        {
+          "id": "a3",
+          "text": "Um den Lehrplan offiziell zu ändern."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ein starrer Beginn würde für diese Gruppe den Ausschluss von unserer Schule bedeuten, was unserem Inklusionsanspruch widersprechen würde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie ist der Ton der E-Mail von Frau Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Fröhlich und entspannt."
+        },
+        {
+          "id": "a2",
+          "text": "Besorgt und fordernd."
+        },
+        {
+          "id": "a3",
+          "text": "Gleichgültig und kühl."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ich erwarte zeitnah eine Stellungnahme zu diesem Vorschlag.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Balanceakt' im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein sportliches Ereignis."
+        },
+        {
+          "id": "a2",
+          "text": "Ein geplanter Schulausflug."
+        },
+        {
+          "id": "a3",
+          "text": "Eine schwierige Abwägung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Es ist ein schwieriger Balanceakt zwischen Flexibilität und Struktur.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine Antwort als Elternvertreter, in der Sie auf den Vorschlag der Schulleitung zur digitalen Vorbereitung eingehen. Diskutieren Sie, ob dies eine tragfähige Lösung für alle Schüler darstellt.",
+      "en": "Schreiben Sie eine Antwort als Elternvertreter, in der Sie auf den Vorschlag der Schulleitung zur digitalen Vorbereitung eingehen. Diskutieren Sie, ob dies eine tragfähige Lösung für alle Schüler darstellt."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analysieren Sie die Argumente bezüglich der neuen Zeitregelung und bewerten Sie die Auswirkungen auf den Schulalltag.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:24:04.240Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Herausforderungen der Gleitzeit an der Nordwald-Schule | B2 Reading | WeLearn",
+      "en": "Herausforderungen der Gleitzeit an der Nordwald-Schule | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein E-Mail-Austausch zwischen der Schulleitung und einer besorgten Mutter über die Einführung flexibler Unterrichtszeiten.",
+      "en": "Ein E-Mail-Austausch zwischen der Schulleitung und einer besorgten Mutter über die Einführung flexibler Unterrichtszeiten."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:24:04.240Z"
+  }
+}

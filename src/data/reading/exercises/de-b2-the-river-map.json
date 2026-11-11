@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-river-map",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Tinte der Vorsorge",
+      "en": "Die Tinte der Vorsorge"
+    },
+    "intro": {
+      "es": "In der Gemeinde Auenbach führt eine neue digitale Hochwasserkarte zu hitzigen Debatten zwischen der Verwaltung und den Bürgern.",
+      "en": "In der Gemeinde Auenbach führt eine neue digitale Hochwasserkarte zu hitzigen Debatten zwischen der Verwaltung und den Bürgern."
+    },
+    "mission": {
+      "es": "Analysieren Sie den Konflikt um die Informationsvermittlung bei Naturgefahren und bewerten Sie die Argumente beider Seiten.",
+      "en": "Analysieren Sie den Konflikt um die Informationsvermittlung bei Naturgefahren und bewerten Sie die Argumente beider Seiten."
+    },
+    "targetText": "Die Gemeinde Auenbach hat kürzlich eine digitale Hochwasserkarte veröffentlicht, um die Bevölkerung vor potenziellen Überschwemmungsgebieten zu warnen. Das System nutzt komplexe Farbschattierungen, um die Gefahrenstufen für jedes Grundstück präzise abzubilden. Während die Verwaltung stolz auf die technologische Innovation verweist, regt sich in der Bürgerinitiative 'Sicheres Auenbach' unter der Leitung von Markus Weber erheblicher Widerstand. Weber argumentiert, dass die Karte auf älteren Smartphones kaum lesbar sei, da die Kontraste der digitalen Farbskala bei direkter Sonneneinstrahlung völlig verschwimmen. Für viele ältere Anwohner, die nicht über modernste Endgeräte verfügen, bleibt die lebenswichtige Information somit faktisch unzugänglich.\n\nDie Verwaltung unter Bürgermeisterin Elena Fischer entgegnet, dass gedruckte Karten bereits kurz nach der Veröffentlichung veralten würden. Sie betont, dass digitale Updates in Echtzeit erfolgen, was bei dynamischen Wetterlagen ein entscheidender Vorteil sei. Dennoch räumt Fischer ein, dass die Barrierefreiheit ein wichtiges Thema bleibt. Sie schlägt vor, die Farbschemata in einem nächsten Software-Update anzupassen, um die Lesbarkeit zu verbessern. Dies lehnt die Bürgerinitiative jedoch als unzureichend ab, da Software-Optimierungen die grundlegende Problematik der Hardware-Abhängigkeit nicht lösen könnten.\n\nDer Konflikt erreichte am Dienstagabend einen Höhepunkt, als die Initiative während einer Bürgerversammlung den Antrag stellte, physische Karten in den Rathäusern auszulegen. Weber betonte, dass in einer Notlage, wenn das Stromnetz ausfällt, kein Smartphone der Welt mehr funktioniere. Die Verwaltung beharrt jedoch auf ihrer digitalen Strategie und verweist auf die hohen Druckkosten sowie die ökologische Bilanz von Papier. Es ist ein klassischer Zusammenstoß zwischen technokratischer Effizienz und der pragmatischen Sicherheit, die viele Bürger in einer analogen Kopie suchen.\n\nDie Stimmung im Saal war angespannt. Während einige Jüngere die digitale Lösung als zeitgemäß verteidigten, forderten die Älteren eine sofortige Druckaktion. Fischer versuchte zu vermitteln, indem sie einen Kompromiss aus öffentlichen Terminals vorschlug, doch die Initiative blieb hart. Sie fürchtet, dass die Abhängigkeit von einer Internetverbindung die Vorbereitungszeit im Ernstfall gefährlich verkürzt. Die Debatte zeigt deutlich, wie tief die digitale Kluft selbst in einer kleinen Gemeinde verwurzelt ist.\n\nLetztlich endete der Abend ohne eine formelle Einigung. Die Verwaltung kündigte an, die Kosten für den Druck einer limitierten Auflage von Informationsbroschüren zu prüfen, jedoch ohne Garantie auf eine flächendeckende Verteilung der Karten. Die Bürgerinitiative hat bereits angekündigt, bei einem Ablehnungsbescheid rechtliche Schritte zu prüfen. Die Frage bleibt, ob Sicherheit durch ein Update oder durch Tinte auf Papier gewährleistet wird, während die Wolken über Auenbach am Horizont bereits dunkler werden.\n\nSollte die Gemeinde tatsächlich an ihrer rein digitalen Strategie festhalten, droht bei einem tatsächlichen Hochwasserereignis ein fataler Informationsverlust für jene Bürger, die im entscheidenden Moment keinen Zugriff auf die notwendige, moderne Technik besitzen.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "schattierungen",
+        "lemma": "schattierungen",
+        "glosses": {
+          "es": "shades",
+          "en": "shades"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unzugänglich",
+        "lemma": "unzugänglich",
+        "glosses": {
+          "es": "inaccessible",
+          "en": "inaccessible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "veralten",
+        "lemma": "veralten",
+        "glosses": {
+          "es": "to become outdated",
+          "en": "to become outdated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "technokratisch",
+        "lemma": "technokratisch",
+        "glosses": {
+          "es": "technocratic",
+          "en": "technocratic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatisch",
+        "lemma": "pragmatisch",
+        "glosses": {
+          "es": "pragmatic",
+          "en": "pragmatic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Einigung",
+        "lemma": "Einigung",
+        "glosses": {
+          "es": "agreement",
+          "en": "agreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den Streit über Hochwasserkarten."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Kosten der Digitalisierung."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Technik der Gemeinde."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Gemeinde Auenbach hat kürzlich eine digitale Hochwasserkarte veröffentlicht, um die Bevölkerung vor potenziellen Überschwemmungsgebieten zu warnen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was kritisiert die Bürgerinitiative an der digitalen Karte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die mangelnde Farbwahl."
+        },
+        {
+          "id": "a2",
+          "text": "Die schlechte Lesbarkeit."
+        },
+        {
+          "id": "a3",
+          "text": "Die zu hohen Kosten."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Weber argumentiert, dass die Karte auf älteren Smartphones kaum lesbar sei",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum lehnt die Bürgerinitiative ein Software-Update ab?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil es zu lange dauert."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Kosten zu hoch sind."
+        },
+        {
+          "id": "a3",
+          "text": "Weil Hardware-Probleme bleiben."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Dies lehnt die Bürgerinitiative jedoch als unzureichend ab, da Software-Optimierungen die grundlegende Problematik der Hardware-Abhängigkeit nicht lösen könnten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Was ist das Ziel der Bürgerinitiative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie fordert die Bereitstellung von gedruckten Karten im Rathaus."
+        },
+        {
+          "id": "a2",
+          "text": "Sie möchte, dass die Verwaltung die digitale Karte komplett abschafft."
+        },
+        {
+          "id": "a3",
+          "text": "Sie will den Bürgermeister durch eine neue Person ersetzen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Der Konflikt erreichte am Dienstagabend einen Höhepunkt, als die Initiative während einer Bürgerversammlung den Antrag stellte, physische Karten in den Rathäusern auszulegen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie wird die Atmosphäre in der Bürgerversammlung beschrieben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr harmonisch."
+        },
+        {
+          "id": "a2",
+          "text": "Ziemlich angespannt."
+        },
+        {
+          "id": "a3",
+          "text": "Völlig gleichgültig."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Stimmung im Saal war angespannt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort 'veralten' im Kontext der Verwaltung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dass Karten an Wert verlieren."
+        },
+        {
+          "id": "a2",
+          "text": "Dass das Papier der Karten kaputtgeht."
+        },
+        {
+          "id": "a3",
+          "text": "Dass Informationen nicht mehr aktuell sind."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie betont, dass digitale Updates in Echtzeit erfolgen, was bei dynamischen Wetterlagen ein entscheidender Vorteil sei. Dennoch räumt Fischer ein, dass die Barrierefreiheit ein wichtiges Thema bleibt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Leserbrief (ca. 100 Wörter) aus der Sicht eines Anwohners, in dem Sie entweder die digitale Lösung oder die Forderung nach gedruckten Karten unterstützen. Begründen Sie Ihre Position mit einem Argument aus dem Text.",
+      "en": "Schreiben Sie einen kurzen Leserbrief (ca. 100 Wörter) aus der Sicht eines Anwohners, in dem Sie entweder die digitale Lösung oder die Forderung nach gedruckten Karten unterstützen. Begründen Sie Ihre Position mit einem Argument aus dem Text."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analysieren Sie den Konflikt um die Informationsvermittlung bei Naturgefahren und bewerten Sie die Argumente beider Seiten.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Tinte der Vorsorge | B2 Reading | WeLearn",
+      "en": "Die Tinte der Vorsorge | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In der Gemeinde Auenbach führt eine neue digitale Hochwasserkarte zu hitzigen Debatten zwischen der Verwaltung und den Bürgern.",
+      "en": "In der Gemeinde Auenbach führt eine neue digitale Hochwasserkarte zu hitzigen Debatten zwischen der Verwaltung und den Bürgern."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

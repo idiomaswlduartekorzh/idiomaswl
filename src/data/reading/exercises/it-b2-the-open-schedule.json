@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-open-schedule",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il dilemma dell'orario flessibile alla Scuola Aurora",
+      "en": "Il dilemma dell'orario flessibile alla Scuola Aurora"
+    },
+    "intro": {
+      "es": "Leggete questa email inviata dal preside della Scuola Aurora ai genitori riguardo alla nuova politica di ingresso flessibile e analizzate le tensioni pedagogiche che ne derivano.",
+      "en": "Leggete questa email inviata dal preside della Scuola Aurora ai genitori riguardo alla nuova politica di ingresso flessibile e analizzate le tensioni pedagogiche che ne derivano."
+    },
+    "mission": {
+      "es": "Comprendere le implicazioni organizzative e relazionali di un modello scolastico ibrido in un contesto educativo moderno.",
+      "en": "Comprendere le implicazioni organizzative e relazionali di un modello scolastico ibrido in un contesto educativo moderno."
+    },
+    "targetText": "Gentili genitori, vi scrivo in merito alla recente implementazione dell'orario di ingresso flessibile presso il nostro istituto. L'obiettivo iniziale era agevolare le famiglie che affrontano lunghi tragitti pendolari, permettendo un arrivo scaglionato tra le otto e le nove del mattino. Tuttavia, dopo il primo trimestre, è emerso un conflitto strutturale che non possiamo più ignorare: la frammentazione della didattica.\n\nLa nostra missione educativa si fonda sulla condivisione e sul dibattito in aula. Quando gli studenti arrivano in momenti diversi, i docenti sono costretti a ripetere le introduzioni delle lezioni, sottraendo tempo prezioso alle attività laboratoriali. Questo fenomeno ha creato una disparità percepita tra chi partecipa al dibattito iniziale e chi, arrivando tardi, perde il filo conduttore delle discussioni critiche, sentendosi poi isolato durante il lavoro di gruppo.\n\nComprendo perfettamente le sfide logistiche che molte famiglie affrontano quotidianamente. La flessibilità non era un capriccio, ma una risposta concreta a un bisogno reale di conciliare vita privata e doveri scolastici. Tuttavia, la scuola non è un semplice deposito di competenze individuali, bensì una comunità che si costruisce attraverso la simultaneità delle esperienze. L'apprendimento collaborativo richiede una sincronia che l'attuale modello sta lentamente erodendo.\n\nPer risolvere questa tensione, propongo una modifica sostanziale: mantenere l'ingresso flessibile solo per le attività di studio individuale o di recupero, ma fissare un orario tassativo per l'inizio delle lezioni frontali e dei seminari interdisciplinari. Sebbene questa soluzione possa sembrare un passo indietro rispetto alla nostra autonomia, credo sia l'unico modo per preservare la qualità dell'insegnamento senza penalizzare chi, pur vivendo lontano, riesce a garantire la puntualità.\n\nVi invito a riflettere su questo compromesso. La vera sfida non è scegliere tra flessibilità e rigore, ma definire quali momenti della giornata scolastica siano irrinunciabili per la coesione del gruppo classe. Resto in attesa di un vostro riscontro costruttivo, consapevole che ogni cambiamento richiede un sacrificio reciproco. La nostra priorità rimane l'eccellenza didattica, ma il percorso per raggiungerla deve essere condiviso da tutta la nostra comunità educante, nel rispetto delle esigenze di ciascuno e della necessità di un tempo comune.\n\nTuttavia, alcuni genitori obiettano che tale restrizione penalizzi proprio le famiglie residenti nelle aree periferiche, prive di collegamenti efficienti. Limitare l'accesso flessibile potrebbe infatti escludere gli studenti più vulnerabili, creando una nuova forma di disuguaglianza basata sulla residenza geografica. È fondamentale dunque valutare se il rigore orario non rischi di compromettere l'inclusività, principio cardine del nostro istituto. Dobbiamo trovare un equilibrio che tuteli la didattica senza trasformare la puntualità in un privilegio riservato esclusivamente a chi vive vicino alla scuola.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "scaglionato",
+        "lemma": "scaglionato",
+        "glosses": {
+          "es": "staggered",
+          "en": "staggered"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "didattica",
+        "lemma": "didattica",
+        "glosses": {
+          "es": "teaching methodology",
+          "en": "teaching methodology"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "laboratoriali",
+        "lemma": "laboratoriali",
+        "glosses": {
+          "es": "workshop-based",
+          "en": "workshop-based"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erodendo",
+        "lemma": "erodendo",
+        "glosses": {
+          "es": "eroding",
+          "en": "eroding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tassativo",
+        "lemma": "tassativo",
+        "glosses": {
+          "es": "mandatory/strict",
+          "en": "mandatory/strict"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irrinunciabili",
+        "lemma": "irrinunciabili",
+        "glosses": {
+          "es": "indispensable",
+          "en": "indispensable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:06:08.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale della comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto didattico"
+        },
+        {
+          "id": "a2",
+          "text": "La gestione dei costi"
+        },
+        {
+          "id": "a3",
+          "text": "La logistica dei trasporti"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "è emerso un conflitto strutturale che non possiamo più ignorare: la frammentazione della didattica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa accade agli studenti che arrivano in ritardo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perdono la lezione"
+        },
+        {
+          "id": "a2",
+          "text": "Si sentono isolati"
+        },
+        {
+          "id": "a3",
+          "text": "Devono recuperare"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "chi, arrivando tardi, perde il filo conduttore delle discussioni critiche, sentendosi poi isolato durante il lavoro di gruppo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché l'autore vuole cambiare il modello?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per punire i ritardatari"
+        },
+        {
+          "id": "a2",
+          "text": "Per ridurre le assenze"
+        },
+        {
+          "id": "a3",
+          "text": "Per migliorare la qualità"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "credo sia l'unico modo per preservare la qualità dell'insegnamento",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo della proposta finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Bilanciare esigenze e didattica"
+        },
+        {
+          "id": "a2",
+          "text": "Eliminare ogni flessibilità"
+        },
+        {
+          "id": "a3",
+          "text": "Aumentare le ore di lezione"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "mantenere l'ingresso flessibile solo per le attività di studio individuale o di recupero, ma fissare un orario tassativo per l'inizio delle lezioni frontali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono utilizza il preside?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Autoritario"
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vi invito a riflettere su questo compromesso. La vera sfida non è scegliere tra flessibilità e rigore",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'tassativo' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Facoltativo"
+        },
+        {
+          "id": "a2",
+          "text": "Consigliato"
+        },
+        {
+          "id": "a3",
+          "text": "Obbligatorio"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "fissare un orario tassativo per l'inizio delle lezioni frontali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve risposta (100 parole) in cui, interpretando il ruolo di un genitore, esprimi la tua opinione sulla proposta del preside, bilanciando le necessità lavorative con le esigenze pedagogiche descritte.",
+      "en": "Scrivi una breve risposta (100 parole) in cui, interpretando il ruolo di un genitore, esprimi la tua opinione sulla proposta del preside, bilanciando le necessità lavorative con le esigenze pedagogiche descritte."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Comprendere le implicazioni organizzative e relazionali di un modello scolastico ibrido in un contesto educativo moderno.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:06:08.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il dilemma dell'orario flessibile alla Scuola Aurora | B2 Reading | WeLearn",
+      "en": "Il dilemma dell'orario flessibile alla Scuola Aurora | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggete questa email inviata dal preside della Scuola Aurora ai genitori riguardo alla nuova politica di ingresso flessibile e analizzate le tensioni pedagogiche che ne derivano.",
+      "en": "Leggete questa email inviata dal preside della Scuola Aurora ai genitori riguardo alla nuova politica di ingresso flessibile e analizzate le tensioni pedagogiche che ne derivano."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:06:08.719Z"
+  }
+}

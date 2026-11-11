@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-water-meter",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Digitale Überwachung oder nachhaltige Lösung?",
+      "en": "Digitale Überwachung oder nachhaltige Lösung?"
+    },
+    "intro": {
+      "es": "Ein kurzer Bericht über die Einführung intelligenter Wasserzähler in der Stadt Neustadt und die daraus resultierenden sozialen Spannungen.",
+      "en": "Ein kurzer Bericht über die Einführung intelligenter Wasserzähler in der Stadt Neustadt und die daraus resultierenden sozialen Spannungen."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam und beantworten Sie die Fragen, um Ihr Verständnis für das komplexe Thema der Ressourcenverwaltung in städtischen Mietverhältnissen zu beweisen.",
+      "en": "Lesen Sie den Text aufmerksam und beantworten Sie die Fragen, um Ihr Verständnis für das komplexe Thema der Ressourcenverwaltung in städtischen Mietverhältnissen zu beweisen."
+    },
+    "targetText": "In der Stadt Neustadt hat die Verwaltung ein ambitioniertes Projekt gestartet: In allen städtischen Wohnkomplexen wurden intelligente Wasserzähler installiert, die in Echtzeit den Verbrauch an die Stadtwerke übermitteln. Das Ziel ist klar formuliert: Durch die sofortige Erkennung von Lecks soll der enorme Wasserverlust gestoppt werden, der bisher oft erst bei der jährlichen Abrechnung auffiel. Während die Stadtverwaltung das Projekt als ökologischen Meilenstein feiert, wächst der Unmut bei den Bewohnern, insbesondere in den älteren Gebäuden der Sonnenstraße. Dort sind die sanitären Anlagen derart veraltet, dass die Mieter trotz größter Sparsamkeit hohe Kosten tragen müssen. Die neue Technologie deckt zwar die Lecks auf, bietet aber keine Handhabe für die Bewohner, diese zu beheben, da die Instandhaltung der maroden Leitungen in der Verantwortung der Hausverwaltung liegt.\n\nElias Weber, ein langjähriger Bewohner der Sonnenstraße, berichtet von einem frustrierenden Vorfall. Sein Zähler meldete einen kontinuierlichen Wasserfluss, selbst als er für ein Wochenende verreist war. Er kontaktierte umgehend die Hausverwaltung, doch diese wiegelte ab und verwies auf lange Wartelisten für Handwerker. Weber fühlt sich durch die digitale Überwachung nun unter Druck gesetzt, da er für Wasser bezahlen muss, das durch defekte Rohre in den Wänden versickert. Die Stadtwerke argumentieren hingegen, dass die Datenbasis für eine effizientere Ressourcenplanung unerlässlich sei. Sie betonen, dass Transparenz der erste Schritt zu einem verantwortungsbewussten Umgang mit kostbarem Trinkwasser ist.\n\nDie Situation hat sich zugespitzt, als die Stadtverwaltung ankündigte, bei auffälligen Verbrauchsspitzen automatisch Bußgelder wegen Verschwendung zu verhängen. Kritiker sehen darin eine gefährliche Fehlsteuerung: Mieter werden für strukturelle Mängel bestraft, die sie nicht beeinflussen können. Die Hausverwaltungen wiederum fühlen sich durch die neuen Daten unter Zugzwang gesetzt, ihre Instandhaltungszyklen zu beschleunigen, was zu Mietpreiserhöhungen führen könnte. Es entsteht ein Teufelskreis, in dem die ökologische Notwendigkeit der Wassereinsparung auf die soziale Realität maroder Infrastruktur trifft.\n\nBefürworter des Projekts halten dagegen, dass ohne den Druck der neuen Zähler gar kein Anreiz für die Sanierung der alten Rohre bestünde. Sie sehen in der Technologie einen notwendigen Katalysator für notwendige Modernisierungen. Die Bewohner hingegen fordern eine Kopplung der digitalen Messung an ein Förderprogramm für Sanierungen. Ohne eine solche Unterstützung bleibt die intelligente Zählertechnik für viele Mieter lediglich ein Instrument der Überwachung, das die bestehende soziale Ungleichheit verschärft.\n\nAbschließend bleibt die Frage, ob ökologische Ziele durch individuelle Belastung erreicht werden sollten. Während Neustadt an seinem Kurs festhält, bleibt die Stimmung in der Sonnenstraße angespannt. Die Technologie ist zwar präzise, doch die soziale Gerechtigkeit hinkt der digitalen Fortschrittlichkeit hinterher. Die Stadt steht vor der Herausforderung, die Akzeptanz für den Umweltschutz zu sichern, ohne dabei diejenigen zu bestrafen, die am wenigsten Einfluss auf ihre eigene Wohnsituation haben.",
+    "wordCount": 428,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Meilenstein",
+        "lemma": "Meilenstein",
+        "glosses": {
+          "es": "milestone",
+          "en": "milestone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "maroden",
+        "lemma": "maroden",
+        "glosses": {
+          "es": "dilapidated",
+          "en": "dilapidated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "wiegelte ab",
+        "lemma": "wiegelte ab",
+        "glosses": {
+          "es": "brushed off",
+          "en": "brushed off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Katalysator",
+        "lemma": "Katalysator",
+        "glosses": {
+          "es": "catalyst",
+          "en": "catalyst"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zwang",
+        "lemma": "zwang",
+        "glosses": {
+          "es": "pressure",
+          "en": "pressure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hinkt",
+        "lemma": "hinkt",
+        "glosses": {
+          "es": "lags behind",
+          "en": "lags behind"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.6,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Konflikt zwischen digitaler Überwachung und maroder Bausubstanz."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Funktionsweise neuer Wasserzähler."
+        },
+        {
+          "id": "a3",
+          "text": "Die Notwendigkeit, Wasserpreise in der Stadt Neustadt aufgrund von Lecks drastisch zu erhöhen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es entsteht ein Teufelskreis, in dem die ökologische Notwendigkeit der Wassereinsparung auf die soziale Realität maroder Infrastruktur trifft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum kann Elias Weber die gemessenen Wasserverluste nicht stoppen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil er die nötigen Reparaturen selbst bezahlen müsste."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Hausverwaltung für die Instandhaltung zuständig ist."
+        },
+        {
+          "id": "a3",
+          "text": "Weil die intelligenten Zähler die Leitungen blockieren."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "da die Instandhaltung der maroden Leitungen in der Verantwortung der Hausverwaltung liegt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie stehen die Hausverwaltungen zu den neuen Daten der Stadtwerke?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie begrüßen die Daten als Hilfe zur Sanierung."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ignorieren die Daten vollständig."
+        },
+        {
+          "id": "a3",
+          "text": "Sie fühlen sich durch den Druck zu Investitionen genötigt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Hausverwaltungen wiederum fühlen sich durch die neuen Daten unter Zugzwang gesetzt, ihre Instandhaltungszyklen zu beschleunigen",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt die Stadtverwaltung mit der Einführung der neuen Zähler?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Lecks schneller zu finden und den Wasserverlust zu stoppen."
+        },
+        {
+          "id": "a2",
+          "text": "Die Einnahmen durch Bußgelder zu steigern."
+        },
+        {
+          "id": "a3",
+          "text": "Die Überwachung der Mieter zu intensivieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Durch die sofortige Erkennung von Lecks soll der enorme Wasserverlust gestoppt werden",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Autors gegenüber dem Projekt beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Durchweg enthusiastisch und befürwortend."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und abwägend zwischen ökologischem Nutzen und sozialen Folgen."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressiv und einseitig gegen die Stadtverwaltung gerichtet."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Technologie ist zwar präzise, doch die soziale Gerechtigkeit hinkt der digitalen Fortschrittlichkeit hinterher.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'maroden' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Modern und effizient."
+        },
+        {
+          "id": "a2",
+          "text": "Teuer und exklusiv."
+        },
+        {
+          "id": "a3",
+          "text": "Veraltet und schadhaft."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Dort sind die sanitären Anlagen derart veraltet, dass die Mieter trotz größter Sparsamkeit hohe Kosten tragen müssen. Die neue Technologie deckt zwar die Lecks auf, bietet aber keine Handhabe für die Bewohner, diese zu beheben, da die Instandhaltung der maroden Leitungen in der Verantwortung der Hausverwaltung liegt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Diskutieren Sie in einem kurzen Text, ob technologische Lösungen wie intelligente Zähler in Mietwohnungen verpflichtend sein sollten, wenn die Infrastruktur des Gebäudes nicht vom Mieter beeinflusst werden kann. Berücksichtigen Sie dabei sowohl ökologische als auch soziale Aspekte.",
+      "en": "Diskutieren Sie in einem kurzen Text, ob technologische Lösungen wie intelligente Zähler in Mietwohnungen verpflichtend sein sollten, wenn die Infrastruktur des Gebäudes nicht vom Mieter beeinflusst werden kann. Berücksichtigen Sie dabei sowohl ökologische als auch soziale Aspekte."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Text aufmerksam und beantworten Sie die Fragen, um Ihr Verständnis für das komplexe Thema der Ressourcenverwaltung in städtischen Mietverhältnissen zu beweisen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Digitale Überwachung oder nachhaltige Lösung? | B2 Reading | WeLearn",
+      "en": "Digitale Überwachung oder nachhaltige Lösung? | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein kurzer Bericht über die Einführung intelligenter Wasserzähler in der Stadt Neustadt und die daraus resultierenden sozialen Spannungen.",
+      "en": "Ein kurzer Bericht über die Einführung intelligenter Wasserzähler in der Stadt Neustadt und die daraus resultierenden sozialen Spannungen."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

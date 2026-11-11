@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-local-stage",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il dilemma del Teatro Aurora",
+      "en": "Il dilemma del Teatro Aurora"
+    },
+    "intro": {
+      "es": "Un'analisi del conflitto tra accessibilità economica e sostenibilità operativa nel contesto del teatro locale.",
+      "en": "Un'analisi del conflitto tra accessibilità economica e sostenibilità operativa nel contesto del teatro locale."
+    },
+    "mission": {
+      "es": "Comprendere le dinamiche di negoziazione tra le istituzioni culturali e le compagnie artistiche indipendenti.",
+      "en": "Comprendere le dinamiche di negoziazione tra le istituzioni culturali e le compagnie artistiche indipendenti."
+    },
+    "targetText": "Il Teatro Aurora, storico punto di riferimento per la cittadina di Valchiara, si trova di fronte a una crisi gestionale senza precedenti. Da anni, la direzione promuove una politica di biglietti a prezzo ridotto per gli under venticinque, una scelta che ha garantito un ricambio generazionale tra il pubblico, ma che ha svuotato le casse destinate alle prove tecniche. Senza fondi sufficienti per affittare la sala principale durante le ore mattutine, le compagnie residenti si sono viste costrette a ridurre drasticamente il tempo dedicato alla messa in scena, compromettendo la qualità delle performance finali.\n\nLa tensione è esplosa durante l'ultima riunione tra il direttore artistico, Marco Valenti, e la compagnia teatrale 'I Senza Confine'. Il gruppo, guidato dalla regista Elena Rinaldi, ha presentato una proposta audace: rinunciare alla scenografia complessa e all'uso intensivo delle luci in cambio di sessioni di prova prolungate. Rinaldi sostiene che il teatro debba essere un laboratorio umano piuttosto che una vetrina di effetti speciali, enfatizzando come la connessione tra attore e spettatore sia il vero valore aggiunto della loro arte.\n\nMarco Valenti, pur comprendendo le ragioni della compagnia, ha espresso forti riserve. Il direttore teme che, privando gli spettacoli di un impatto visivo professionale, il prestigio del Teatro Aurora possa subire un declino irreversibile. Secondo Valenti, il pubblico giovane, abituato a standard estetici elevati, potrebbe allontanarsi se le opere venissero percepite come amatoriali o eccessivamente minimaliste, vanificando così gli sforzi fatti per fidelizzare questa fascia demografica.\n\nIl compromesso è stato raggiunto solo dopo un lungo dibattito. Le parti hanno concordato una soluzione ibrida: le compagnie potranno utilizzare la sala per le prove in orari non di punta, a patto di integrare nel loro programma mensile dei laboratori gratuiti per gli studenti locali. In questo modo, il teatro giustifica il costo operativo come un investimento educativo, trasformando la necessità di risparmio in una risorsa comunitaria che arricchisce l'offerta culturale del territorio.\n\nNonostante l'accordo, rimane una tensione sotterranea. Molti attori si chiedono se il carico di lavoro aggiuntivo richiesto per i laboratori non finisca per erodere ulteriormente la loro creatività. Valenti, d'altro canto, osserva con cautela i primi risultati, consapevole che la sostenibilità economica non è una meta definitiva, ma un equilibrio precario che richiede sacrifici costanti da parte di chiunque varchi la soglia del palcoscenico.\n\nTuttavia, il rischio concreto è che questa trasformazione in centro formativo snaturi l'identità artistica del Teatro Aurora. Se la priorità diventerà l'insegnamento anziché la produzione, il rischio di perdere l'eccellenza scenica diventerà una realtà tangibile, alienando definitivamente il pubblico più esigente.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "svuotato",
+        "lemma": "svuotato",
+        "glosses": {
+          "es": "emptied",
+          "en": "emptied"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "audace",
+        "lemma": "audace",
+        "glosses": {
+          "es": "bold",
+          "en": "bold"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "riserve",
+        "lemma": "riserve",
+        "glosses": {
+          "es": "doubts/reservations",
+          "en": "doubts/reservations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fidelizzare",
+        "lemma": "fidelizzare",
+        "glosses": {
+          "es": "to build customer loyalty",
+          "en": "to build customer loyalty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ibrida",
+        "lemma": "ibrida",
+        "glosses": {
+          "es": "hybrid",
+          "en": "hybrid"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erodere",
+        "lemma": "erodere",
+        "glosses": {
+          "es": "to erode",
+          "en": "to erode"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 24.7,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:06:08.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione dei costi teatrali."
+        },
+        {
+          "id": "a2",
+          "text": "Il declino del teatro moderno."
+        },
+        {
+          "id": "a3",
+          "text": "La riforma dei prezzi dei biglietti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il Teatro Aurora, storico punto di riferimento per la cittadina di Valchiara, si trova di fronte a una crisi gestionale senza precedenti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa propone Elena Rinaldi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Biglietti più cari."
+        },
+        {
+          "id": "a2",
+          "text": "Meno scenografie."
+        },
+        {
+          "id": "a3",
+          "text": "Più ore di prova."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "rinunciare alla scenografia complessa e all'uso intensivo delle luci in cambio di sessioni di prova prolungate.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché Valenti teme il minimalismo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per i costi."
+        },
+        {
+          "id": "a2",
+          "text": "Per la qualità."
+        },
+        {
+          "id": "a3",
+          "text": "Per il prestigio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il direttore teme che, privando gli spettacoli di un impatto visivo professionale, il prestigio del Teatro Aurora possa subire un declino irreversibile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo dei laboratori?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Giustificare i costi operativi."
+        },
+        {
+          "id": "a2",
+          "text": "Sostituire gli attori."
+        },
+        {
+          "id": "a3",
+          "text": "Aumentare il prezzo dei biglietti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il teatro giustifica il costo operativo come un investimento educativo, trasformando la necessità di risparmio in una risorsa comunitaria",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono della conclusione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista."
+        },
+        {
+          "id": "a2",
+          "text": "Incerto."
+        },
+        {
+          "id": "a3",
+          "text": "Trionfante."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Valenti, d'altro canto, osserva con cautela i primi risultati, consapevole che la sostenibilità economica non è una meta definitiva, ma un equilibrio precario",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'erodere' nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Migliorare la qualità."
+        },
+        {
+          "id": "a2",
+          "text": "Aumentare il valore."
+        },
+        {
+          "id": "a3",
+          "text": "Consumare gradualmente."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Molti attori si chiedono se il carico di lavoro aggiuntivo richiesto per i laboratori non finisca per erodere ulteriormente la loro creatività.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio argomentativo (150 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità economica o alla qualità artistica delle produzioni.",
+      "en": "Scrivi un breve saggio argomentativo (150 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità economica o alla qualità artistica delle produzioni."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Comprendere le dinamiche di negoziazione tra le istituzioni culturali e le compagnie artistiche indipendenti.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:06:08.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il dilemma del Teatro Aurora | B2 Reading | WeLearn",
+      "en": "Il dilemma del Teatro Aurora | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi del conflitto tra accessibilità economica e sostenibilità operativa nel contesto del teatro locale.",
+      "en": "Un'analisi del conflitto tra accessibilità economica e sostenibilità operativa nel contesto del teatro locale."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:06:08.719Z"
+  }
+}

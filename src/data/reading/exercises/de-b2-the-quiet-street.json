@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-quiet-street",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Experiment in der Lindenstraße: Stille gegen Umsatz",
+      "en": "Das Experiment in der Lindenstraße: Stille gegen Umsatz"
+    },
+    "intro": {
+      "es": "Ein Artikel über die Auswirkungen eines autofreien Abends auf eine lokale Gemeinschaft.",
+      "en": "Ein Artikel über die Auswirkungen eines autofreien Abends auf eine lokale Gemeinschaft."
+    },
+    "mission": {
+      "es": "Lesen Sie den Artikel aufmerksam und beantworten Sie die Fragen zum Textverständnis.",
+      "en": "Lesen Sie den Artikel aufmerksam und beantworten Sie die Fragen zum Textverständnis."
+    },
+    "targetText": "Die Lindenstraße, sonst eine lärmende Verkehrsader, erlebte letzten Samstag eine Premiere: Zwischen achtzehn und zweiundzwanzig Uhr blieb der Asphalt den Fußgängern vorbehalten. Das Projekt ‚Abendruhe‘, initiiert von einer Anwohnerinitiative, sollte die Lebensqualität durch Lärmreduzierung steigern. Doch die Bilanz nach dem ersten Versuch fällt gespalten aus. Während die Cafés an den Ecken über einen beispiellosen Ansturm klagten, sahen sich die lokalen Einzelhändler mit logistischen Hürden konfrontiert. Der Inhaber der Buchhandlung, Herr Weber, berichtete frustriert, dass seine Abendlieferung aufgrund der Absperrungen erst am nächsten Morgen eintreffen konnte, was seine Planung für die Auslage am Sonntag empfindlich störte. Er argumentiert, dass die Stadt den wirtschaftlichen Schaden durch den Wegfall der Lieferzufahrt unterschätzt habe.\n\nAuf der anderen Seite steht die Perspektive von Frau Schneider, einer Bewohnerin des ersten Stocks. Sie genießt den neu gewonnenen Raum, doch ihr Urteil bleibt zwiespältig. Zwar sei das monotone Dröhnen der Motoren verschwunden, doch die neue Geräuschkulisse durch die flanierenden Massen empfindet sie als ebenso belastend. „Es ist kein echter Frieden eingekehrt, nur ein Wechsel der Lärmquelle“, erklärt sie. Diese Beobachtung wirft die Frage auf, ob der öffentliche Raum in einer dicht besiedelten Stadt überhaupt jemals zur Ruhe kommen kann, oder ob wir lediglich die Art der Unruhe austauschen.\n\nDie Gastronomen hingegen sind begeistert. Die Tische auf dem Gehweg waren durchgehend besetzt, und der Umsatz übertraf die Erwartungen bei weitem. Die Inhaberin des Bistros, Elena Rossi, betont, dass die Menschen ohne den ständigen Autoverkehr entspannter konsumierten. Sie sieht in dem autofreien Abend ein Modell für die Zukunft, das die soziale Interaktion fördert. Die Konfrontation zwischen den gewerblichen Interessen der Ladenbesitzer und dem Wunsch nach einer urbanen Oase bleibt jedoch bestehen.\n\nDer Stadtrat hat bereits angekündigt, das Experiment zu evaluieren. Dabei stellt sich die zentrale Herausforderung: Wie lässt sich eine Stadt gestalten, die sowohl wirtschaftlich effizient als auch lebenswert ist? Die Anwohnerinitiative fordert eine Fortsetzung, doch die Gewerbetreibenden verlangen eine Ausnahmegenehmigung für Lieferfahrzeuge. Ein Kompromiss scheint in weiter Ferne, da die Fronten zwischen denjenigen, die den Raum als Transitweg sehen, und denjenigen, die ihn als Lebensraum begreifen, verhärtet sind.\n\nAm Ende bleibt die Erkenntnis, dass städtische Planung kein Nullsummenspiel ist. Das Experiment in der Lindenstraße hat gezeigt, dass die Vertreibung der Autos die soziale Dynamik verändert, aber nicht zwangsläufig die gewünschte Stille bringt. Während die Stadtverwaltung über neue Verkehrsführungen brütet, bleibt die Lindenstraße am nächsten Samstag erst einmal wieder für den Verkehr geöffnet. Die ersehnte Ruhepause ist vorerst beendet, und der Alltag kehrt mit seinem gewohnten, motorisierten Rhythmus zurück.",
+    "wordCount": 409,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "lärmende",
+        "lemma": "lärmende",
+        "glosses": {
+          "es": "noisy",
+          "en": "noisy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ansturm",
+        "lemma": "Ansturm",
+        "glosses": {
+          "es": "rush/onslaught",
+          "en": "rush/onslaught"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zwiespältig",
+        "lemma": "zwiespältig",
+        "glosses": {
+          "es": "ambivalent",
+          "en": "ambivalent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "flanierenden",
+        "lemma": "flanierenden",
+        "glosses": {
+          "es": "strolling",
+          "en": "strolling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "evaluieren",
+        "lemma": "evaluieren",
+        "glosses": {
+          "es": "to evaluate",
+          "en": "to evaluate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Nullsummenspiel",
+        "lemma": "Nullsummenspiel",
+        "glosses": {
+          "es": "zero-sum game",
+          "en": "zero-sum game"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:11:27.295Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Artikels?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein autofreier Abend."
+        },
+        {
+          "id": "a2",
+          "text": "Die wirtschaftliche Krise."
+        },
+        {
+          "id": "a3",
+          "text": "Die Stadtplanung allgemein."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Projekt ‚Abendruhe‘, initiiert von einer Anwohnerinitiative, sollte die Lebensqualität durch Lärmreduzierung steigern.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum war Herr Weber unzufrieden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hatte zu wenig Kunden."
+        },
+        {
+          "id": "a2",
+          "text": "Die Lieferung kam zu spät."
+        },
+        {
+          "id": "a3",
+          "text": "Das Bistro war zu laut."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Der Inhaber der Buchhandlung, Herr Weber, berichtete frustriert, dass seine Abendlieferung aufgrund der Absperrungen erst am nächsten Morgen eintreffen konnte",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewertet Frau Schneider die Lärmsituation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie findet es viel leiser."
+        },
+        {
+          "id": "a2",
+          "text": "Sie findet es gleich laut."
+        },
+        {
+          "id": "a3",
+          "text": "Sie findet es nur anders."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "„Es ist kein echter Frieden eingekehrt, nur ein Wechsel der Lärmquelle“",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum erwähnt der Autor die Gastronomen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den wirtschaftlichen Erfolg zu belegen."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Anwohner zu kritisieren."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Konkurrenz zu zeigen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Gastronomen hingegen sind begeistert. Die Tische auf dem Gehweg waren durchgehend besetzt, und der Umsatz übertraf die Erwartungen bei weitem.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie ist der Ton des Artikels gegenüber dem Experiment?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Absolut ablehnend."
+        },
+        {
+          "id": "a2",
+          "text": "Neutral und abwägend."
+        },
+        {
+          "id": "a3",
+          "text": "Vollkommen begeistert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Doch die Bilanz nach dem ersten Versuch fällt gespalten aus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet 'zwiespältig' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr glücklich und zufrieden."
+        },
+        {
+          "id": "a2",
+          "text": "Völlig wütend und enttäuscht."
+        },
+        {
+          "id": "a3",
+          "text": "Zweifelnd und nicht eindeutig."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Zwar sei das monotone Dröhnen der Motoren verschwunden, doch die neue Geräuschkulisse durch die flanierenden Massen empfindet sie als ebenso belastend. „Es ist kein echter Frieden eingekehrt, nur ein Wechsel der Lärmquelle“, erklärt sie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 100 Wörter) aus der Sicht eines Ladenbesitzers, in dem Sie einen Kompromiss für das autofreie Projekt vorschlagen, der sowohl die Anwohner als auch die Gewerbetreibenden zufriedenstellt.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 100 Wörter) aus der Sicht eines Ladenbesitzers, in dem Sie einen Kompromiss für das autofreie Projekt vorschlagen, der sowohl die Anwohner als auch die Gewerbetreibenden zufriedenstellt."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Artikel aufmerksam und beantworten Sie die Fragen zum Textverständnis.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:11:27.295Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Experiment in der Lindenstraße: Stille gegen Umsatz | B2 Reading | WeLearn",
+      "en": "Das Experiment in der Lindenstraße: Stille gegen Umsatz | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein Artikel über die Auswirkungen eines autofreien Abends auf eine lokale Gemeinschaft.",
+      "en": "Ein Artikel über die Auswirkungen eines autofreien Abends auf eine lokale Gemeinschaft."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:11:27.295Z"
+  }
+}

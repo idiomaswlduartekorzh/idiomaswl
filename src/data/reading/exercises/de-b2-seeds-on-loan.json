@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Erbe der trockenen Erde",
+      "en": "Das Erbe der trockenen Erde"
+    },
+    "intro": {
+      "es": "In der kleinen Gemeinde Sonnenfeld steht die lokale Saatgutbibliothek vor einer schwierigen Entscheidung, nachdem eine Dürre die Ernte vernichtet hat.",
+      "en": "In der kleinen Gemeinde Sonnenfeld steht die lokale Saatgutbibliothek vor einer schwierigen Entscheidung, nachdem eine Dürre die Ernte vernichtet hat."
+    },
+    "mission": {
+      "es": "Die Leser sollen die ethische Dilemma-Situation analysieren und die Konsequenzen der getroffenen Entscheidung bewerten.",
+      "en": "Die Leser sollen die ethische Dilemma-Situation analysieren und die Konsequenzen der getroffenen Entscheidung bewerten."
+    },
+    "targetText": "Die Saatgutbibliothek von Sonnenfeld war mehr als nur ein Regal voller Gläser; sie war das lebendige Gedächtnis des Tals. Jeden Frühling liehen sich Gärtner wie die junge Elena oder der erfahrene Bauer Herr Weber seltene, an die Region angepasste Samen aus. Das Prinzip war einfach: Man pflanzte, erntete und brachte nach der Saison eine größere Menge des gewonnenen Saatguts zurück, um den Bestand für die nächste Generation zu sichern. Doch in diesem Jahr hatte die Sonne das Land unerbittlich gebrannt. Die Brunnen versiegten, und die Pflanzen verdorrten, bevor sie Samen bilden konnten. Als der Herbstabend für die Rückgabeveranstaltung anbrach, war die Stimmung im Gemeindezentrum gedrückt.\n\nElena saß am Eichentisch und starrte auf ihr leeres Glas. Sie hatte ihre Tomatenpflanzen mit dem letzten Tropfen Wasser aus der Regentonne gerettet, doch für die Vermehrung hatte es nicht gereicht. Herr Weber hingegen hatte einen kleinen Beutel mit Bohnen dabei, den er mühsam aus seinem letzten, fast vertrockneten Beet gerettet hatte. Die Bibliotheksleiterin, Frau Dr. Fischer, beobachtete die Szene mit Sorge. Sie wusste, dass ohne eine neue Einlage die Bibliothek im nächsten Jahr schließen müsste. Die Regeln besagten klar, dass jeder Nutzer zur Rückgabe verpflichtet war, um das System aufrechtzuerhalten.\n\nEs entbrannte eine hitzige Debatte. Ein Teil der Gruppe forderte eine strikte Einhaltung der Regeln: Wer nichts zurückbringe, dürfe im nächsten Jahr keine Samen mehr leihen. Sie argumentierten, dass die Solidarität des Systems nur durch die strikte Gegenseitigkeit funktioniere. Elena hingegen wandte ein, dass eine solche Bestrafung gerade jene ausschließe, die am stärksten unter der Klimaveränderung litten. Sie schlug vor, die Rückgabepflicht für dieses Jahr auszusetzen, auch wenn dies das Risiko berge, dass der Bestand für die nächste Saison nicht ausreichte.\n\nFrau Dr. Fischer hörte aufmerksam zu, doch sie sah die Gefahr einer schleichenden Entwertung des Gemeinschaftsguts. Sie entschied sich für einen Mittelweg: Die Rückgabepflicht blieb bestehen, aber sie wurde in eine Bringschuld für das übernächste Jahr umgewandelt, gekoppelt an eine gemeinschaftliche Arbeit im Schaugarten der Bibliothek. Es war ein Kompromiss, der die Verantwortung betonte, ohne die Menschen in einer Notlage zu ächten. Dennoch blieb ein bitterer Beigeschmack: Die Bibliothek war nun auf die Arbeitskraft der Gärtner angewiesen, statt auf den natürlichen Ertrag der Pflanzen.\n\nAls die Lichter im Gemeindezentrum erloschen, blieb die Frage offen, ob dieser Pakt halten würde. Die Gemeinschaft hatte ihre Regeln bewahrt, doch die Natur hatte ihre Grenzen aufgezeigt. Elena ging nach Hause, den Blick auf den staubigen Boden gerichtet. Sie wusste, dass sie im nächsten Jahr nicht nur gegen die Trockenheit kämpfen musste, sondern auch gegen die Erwartung, eine Schuld einzulösen, die sie vielleicht nie ganz begleichen konnte. Der Kreislauf war unterbrochen, und das Vertrauen in die Zukunft schien nun ebenso fragil wie die vertrockneten Stängel in ihrem Garten.",
+    "wordCount": 450,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "unerbittlich",
+        "lemma": "unerbittlich",
+        "glosses": {
+          "es": "relentless",
+          "en": "relentless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verdorrten",
+        "lemma": "verdorrten",
+        "glosses": {
+          "es": "withered",
+          "en": "withered"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gegenseitigkeit",
+        "lemma": "Gegenseitigkeit",
+        "glosses": {
+          "es": "reciprocity",
+          "en": "reciprocity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "auszusetzen",
+        "lemma": "auszusetzen",
+        "glosses": {
+          "es": "to suspend",
+          "en": "to suspend"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ächten",
+        "lemma": "ächten",
+        "glosses": {
+          "es": "to ostracize",
+          "en": "to ostracize"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fragil",
+        "lemma": "fragil",
+        "glosses": {
+          "es": "fragile",
+          "en": "fragile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:11:27.295Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in diesem Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den ethischen Konflikt bei der Rückgabe von Saatgut nach einer Missernte."
+        },
+        {
+          "id": "a2",
+          "text": "Um das Überleben der Bibliothek."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Dürre im Tal von Sonnenfeld."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es entbrannte eine hitzige Debatte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was ist das Problem bei der Rückgabeveranstaltung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Gärtner sind wütend."
+        },
+        {
+          "id": "a2",
+          "text": "Die Samen fehlen."
+        },
+        {
+          "id": "a3",
+          "text": "Die Bibliothek hat keine Gläser."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Brunnen versiegten, und die Pflanzen verdorrten, bevor sie Samen bilden konnten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum ist Elena besorgt über die Entscheidung der Leiterin?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie mag keine Gartenarbeit."
+        },
+        {
+          "id": "a2",
+          "text": "Sie will die Regeln nicht ändern."
+        },
+        {
+          "id": "a3",
+          "text": "Sie fürchtet die neue Verpflichtung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie wusste, dass sie im nächsten Jahr nicht nur gegen die Trockenheit kämpfen musste, sondern auch gegen die Erwartung, eine Schuld einzulösen, die sie vielleicht nie ganz begleichen konnte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt Frau Dr. Fischer mit ihrem Kompromiss?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie will die Bibliothek vor dem Ruin bewahren und die Gemeinschaft halten."
+        },
+        {
+          "id": "a2",
+          "text": "Sie will die Regeln durchsetzen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie möchte die Gärtner für ihre mangelnde Ernte bestrafen und zur Arbeit verpflichten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es war ein Kompromiss, der die Verantwortung betonte, ohne die Menschen in einer Notlage zu ächten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich die Stimmung am Ende der Geschichte beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch."
+        },
+        {
+          "id": "a2",
+          "text": "Resigniert und unsicher."
+        },
+        {
+          "id": "a3",
+          "text": "Entschlossen und voller Hoffnung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Der Kreislauf war unterbrochen, und das Vertrauen in die Zukunft schien nun ebenso fragil wie die vertrockneten Stängel in ihrem Garten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort 'Gegenseitigkeit' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein Tauschgeschäft."
+        },
+        {
+          "id": "a2",
+          "text": "Die strikte Einhaltung von Regeln."
+        },
+        {
+          "id": "a3",
+          "text": "Die Pflicht zum Geben und Nehmen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie argumentierten, dass die Solidarität des Systems nur durch die strikte Gegenseitigkeit funktioniere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Brief an Frau Dr. Fischer, in dem Sie als Gärtner aus Sonnenfeld Ihre Meinung zum neuen Kompromiss äußern. Begründen Sie, ob Sie die Lösung für fair halten.",
+      "en": "Schreiben Sie einen kurzen Brief an Frau Dr. Fischer, in dem Sie als Gärtner aus Sonnenfeld Ihre Meinung zum neuen Kompromiss äußern. Begründen Sie, ob Sie die Lösung für fair halten."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Die Leser sollen die ethische Dilemma-Situation analysieren und die Konsequenzen der getroffenen Entscheidung bewerten.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:11:27.295Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Erbe der trockenen Erde | B2 Reading | WeLearn",
+      "en": "Das Erbe der trockenen Erde | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In der kleinen Gemeinde Sonnenfeld steht die lokale Saatgutbibliothek vor einer schwierigen Entscheidung, nachdem eine Dürre die Ernte vernichtet hat.",
+      "en": "In der kleinen Gemeinde Sonnenfeld steht die lokale Saatgutbibliothek vor einer schwierigen Entscheidung, nachdem eine Dürre die Ernte vernichtet hat."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:11:27.295Z"
+  }
+}

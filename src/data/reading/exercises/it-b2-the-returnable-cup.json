@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La rivoluzione del deposito: il caso del Caffè Aurora",
+      "en": "La rivoluzione del deposito: il caso del Caffè Aurora"
+    },
+    "intro": {
+      "es": "Un articolo che esplora le sfide pratiche e le implicazioni ecologiche dell'introduzione di bicchieri riutilizzabili in un contesto urbano dinamico.",
+      "en": "Un articolo che esplora le sfide pratiche e le implicazioni ecologiche dell'introduzione di bicchieri riutilizzabili in un contesto urbano dinamico."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere le tensioni tra sostenibilità ambientale e comodità del consumatore.",
+      "en": "Analizzare il testo per comprendere le tensioni tra sostenibilità ambientale e comodità del consumatore."
+    },
+    "targetText": "Al Caffè Aurora, situato nel cuore pulsante di Piazza dei Librai, la mattinata iniziava solitamente con il rumore frenetico delle macchine espresso e il fragore dei bicchieri di carta che riempivano i cestini. Tuttavia, da lunedì scorso, il proprietario Marco Valenti ha imposto una svolta radicale: l'eliminazione totale dell'usa e getta in favore di un sistema a deposito. Ogni cliente che acquista un caffè deve pagare una cauzione di due euro per un bicchiere in acciaio, rimborsabile esclusivamente al momento della restituzione fisica presso il locale. La logica di Valenti è ferrea: ridurre drasticamente la montagna di rifiuti che ogni pomeriggio soffocava la piazza, trasformando un gesto quotidiano in un atto di responsabilità civica.\n\nLa reazione della clientela abituale è stata sorprendentemente positiva. Molti residenti, orgogliosi di partecipare a questo esperimento di economia circolare, hanno iniziato a collezionare i bicchieri, considerandoli un accessorio di stile. La riduzione dei rifiuti è stata immediata e visibile, con un calo drastico dei cestini stracolmi che deturpavano il decoro urbano. Valenti osserva con soddisfazione il bancone, dove i bicchieri restituiti vengono sanificati e rimessi in circolo, creando un ciclo virtuoso che sembrava impossibile solo un mese fa. Per i frequentatori fissi, la cauzione è diventata una consuetudine accettata, quasi un piccolo investimento nella salute della loro piazza.\n\nTuttavia, il sistema ha mostrato crepe evidenti quando si è scontrato con la realtà dei turisti di passaggio. Elena, una visitatrice straniera, ha vissuto una situazione emblematica: arrivata in città per un weekend, ha acquistato un cappuccino prima di dirigersi verso la stazione ferroviaria, situata a chilometri di distanza. Solo dopo il primo sorso ha compreso che, per recuperare i suoi due euro, avrebbe dovuto tornare indietro, un'opzione logisticamente impossibile per chi deve prendere un treno in partenza. Per lei, quella che doveva essere una pausa rigenerante si è trasformata in una tassa occulta, lasciandola con un senso di frustrazione e un bicchiere di metallo che non sapeva come smaltire.\n\nQuesta dicotomia tra residenti e visitatori crea una tensione irrisolta. Se da un lato il progetto ha effettivamente ripulito la piazza, dall'altro ha generato una forma di esclusione involontaria per chi non risiede stabilmente in zona. Il Caffè Aurora si trova ora a gestire un paradosso: il successo ambientale è direttamente proporzionale alla difficoltà logistica per i non residenti. Valenti sta valutando l'idea di punti di raccolta esterni, ma la gestione dei costi e la logistica del trasporto complicano ogni iniziativa futura.\n\nLa questione rimane aperta. È giusto che la sostenibilità urbana ricada sulle spalle di chi è solo di passaggio, o dovrebbe esserci un sistema di interoperabilità tra più locali? Mentre la piazza brilla di una pulizia ritrovata, il dibattito si sposta sulla giustizia di un modello che, pur salvando l'ambiente, rischia di alienare una parte fondamentale del tessuto economico locale, lasciando i turisti con un ricordo amaro e un bicchiere di troppo nello zaino.",
+    "wordCount": 479,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cauzione",
+        "lemma": "cauzione",
+        "glosses": {
+          "es": "deposit",
+          "en": "deposit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decoro",
+        "lemma": "decoro",
+        "glosses": {
+          "es": "decorum/aesthetic order",
+          "en": "decorum/aesthetic order"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanificati",
+        "lemma": "sanificati",
+        "glosses": {
+          "es": "sanitized",
+          "en": "sanitized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emblematica",
+        "lemma": "emblematica",
+        "glosses": {
+          "es": "emblematic",
+          "en": "emblematic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dicotomia",
+        "lemma": "dicotomia",
+        "glosses": {
+          "es": "dichotomy",
+          "en": "dichotomy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "interoperabilità",
+        "lemma": "interoperabilità",
+        "glosses": {
+          "es": "interoperability",
+          "en": "interoperability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 23.9,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:06:08.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema principale dell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le difficoltà del sistema a deposito."
+        },
+        {
+          "id": "a2",
+          "text": "La ristrutturazione completa del Caffè Aurora durante la stagione estiva."
+        },
+        {
+          "id": "a3",
+          "text": "L'impatto economico derivante dall'aumento dei flussi turistici in centro."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il sistema ha mostrato crepe evidenti quando si è scontrato con la realtà dei turisti di passaggio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa accade ai bicchieri restituiti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Vengono riciclati."
+        },
+        {
+          "id": "a2",
+          "text": "Vengono sanificati."
+        },
+        {
+          "id": "a3",
+          "text": "Vengono gettati via."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "i bicchieri restituiti vengono sanificati e rimessi in circolo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché il sistema è problematico per i turisti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il costo è troppo alto."
+        },
+        {
+          "id": "a2",
+          "text": "Non vogliono portarlo."
+        },
+        {
+          "id": "a3",
+          "text": "La logistica è difficile."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "avrebbe dovuto tornare indietro, un'opzione logisticamente impossibile per chi deve prendere un treno in partenza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo del proprietario del Caffè Aurora?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ridurre la quantità di rifiuti prodotti."
+        },
+        {
+          "id": "a2",
+          "text": "Collaborare con le autorità per multare i turisti indisciplinati."
+        },
+        {
+          "id": "a3",
+          "text": "Promuovere un evento culturale per migliorare l'immagine del locale."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ridurre drasticamente la montagna di rifiuti che ogni pomeriggio soffocava la piazza",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono dell'autore riguardo al futuro del progetto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pessimista."
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo e indeciso."
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta e orientato al successo futuro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La questione rimane aperta.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'decoro urbano' nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Stile."
+        },
+        {
+          "id": "a2",
+          "text": "Arredo."
+        },
+        {
+          "id": "a3",
+          "text": "L'ordine e la pulizia della città."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "con un calo drastico dei cestini stracolmi che deturpavano il decoro urbano.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve paragrafo (80-100 parole) in cui proponi una possibile soluzione al problema dei turisti descritto nel testo, giustificando la tua scelta dal punto di vista della sostenibilità e della praticità.",
+      "en": "Scrivi un breve paragrafo (80-100 parole) in cui proponi una possibile soluzione al problema dei turisti descritto nel testo, giustificando la tua scelta dal punto di vista della sostenibilità e della praticità."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizzare il testo per comprendere le tensioni tra sostenibilità ambientale e comodità del consumatore.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:06:08.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La rivoluzione del deposito: il caso del Caffè Aurora | B2 Reading | WeLearn",
+      "en": "La rivoluzione del deposito: il caso del Caffè Aurora | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un articolo che esplora le sfide pratiche e le implicazioni ecologiche dell'introduzione di bicchieri riutilizzabili in un contesto urbano dinamico.",
+      "en": "Un articolo che esplora le sfide pratiche e le implicazioni ecologiche dell'introduzione di bicchieri riutilizzabili in un contesto urbano dinamico."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:06:08.719Z"
+  }
+}

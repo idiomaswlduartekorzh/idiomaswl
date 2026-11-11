@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-shared-desks",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nota interna: La gestione degli spazi condivisi",
+      "en": "Nota interna: La gestione degli spazi condivisi"
+    },
+    "intro": {
+      "es": "Leggi questa email inviata dal responsabile operativo di una piccola agenzia di design e rispondi alle domande di comprensione.",
+      "en": "Leggi questa email inviata dal responsabile operativo di una piccola agenzia di design e rispondi alle domande di comprensione."
+    },
+    "mission": {
+      "es": "Analizza le dinamiche di un ufficio condiviso e valuta le implicazioni organizzative descritte nel testo.",
+      "en": "Analizza le dinamiche di un ufficio condiviso e valuta le implicazioni organizzative descritte nel testo."
+    },
+    "targetText": "Oggetto: Aggiornamento urgente sulla politica di scrivania condivisa. Gentile team, desidero fare il punto sulla nostra attuale configurazione di ufficio flessibile. Negli ultimi mesi, la scelta di adottare postazioni non assegnate ha permesso un risparmio significativo sui costi di locazione, garantendo a molti di voi la libertà di lavorare da casa in giorni alterni. Tuttavia, sono giunte segnalazioni crescenti riguardanti la gestione delle attrezzature tecniche specializzate. Durante la giornata di martedì, il nostro illustratore senior, Marco, non è riuscito a completare il rendering per il cliente principale perché la sua tavoletta grafica ad alta precisione, lasciata in un armadietto comune, era stata spostata e danneggiata da un collega del team marketing che cercava spazio per il proprio laptop. Questo episodio evidenzia una tensione latente tra la flessibilità operativa e la necessità di proteggere strumenti di lavoro costosi e delicati. La nostra cultura aziendale valorizza l'autonomia, ma la condivisione indiscriminata degli spazi di stoccaggio sta creando inefficienze operative che non possiamo più ignorare. Non è accettabile che il tempo dedicato alla progettazione venga sprecato a causa di una logistica precaria. Comprendo perfettamente il desiderio di mantenere un ambiente di lavoro fluido e dinamico, ma dobbiamo integrare dei protocolli di sicurezza più rigidi. A partire dalla prossima settimana, ogni dipartimento avrà accesso esclusivo a specifiche aree di deposito chiuse a chiave. Questa decisione, sebbene possa sembrare un passo indietro rispetto alla nostra filosofia di apertura totale, è necessaria per garantire la continuità dei progetti. Sono consapevole che questo limiterà la libertà di movimento all'interno dell'ufficio, ma la priorità deve rimanere la tutela del nostro capitale tecnologico. Vi invito a riflettere su come possiamo bilanciare questa nuova restrizione con il nostro spirito collaborativo. Nonostante la necessità di proteggere l'hardware, rimane fondamentale mantenere un dialogo aperto sulle modalità di gestione degli spazi comuni. Resto a disposizione per discutere eventuali proposte alternative che non compromettano l'integrità delle attrezzature, purché siano sostenibili nel lungo periodo. La nostra crescita dipende dalla capacità di adattare le strutture alle esigenze tecniche, senza sacrificare la qualità del lavoro prodotto. Vi ringrazio per la comprensione e per il vostro impegno costante nel superare queste sfide logistiche, certi che una migliore organizzazione porterà a una maggiore serenità per tutti. Cordialmente, Luca, Responsabile Operativo.\n\nTuttavia, tale compartimentazione rischia di isolare i vari reparti, riducendo le occasioni di confronto spontaneo tra colleghi di aree diverse. Sarà quindi essenziale organizzare momenti di condivisione informali, poiché l'eccessiva protezione degli strumenti non deve trasformarsi in un ostacolo alla creatività collettiva e alla coesione del nostro ambiente lavorativo.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "configurazione",
+        "lemma": "configurazione",
+        "glosses": {
+          "es": "arrangement",
+          "en": "arrangement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "segnalazioni",
+        "lemma": "segnalazioni",
+        "glosses": {
+          "es": "reports",
+          "en": "reports"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "dormant",
+          "en": "dormant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "indiscriminata",
+        "lemma": "indiscriminata",
+        "glosses": {
+          "es": "random",
+          "en": "random"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "protocolli",
+        "lemma": "protocolli",
+        "glosses": {
+          "es": "procedures",
+          "en": "procedures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sostenibili",
+        "lemma": "sostenibili",
+        "glosses": {
+          "es": "viable",
+          "en": "viable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:02:46.693Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è l'argomento principale della comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione degli spazi."
+        },
+        {
+          "id": "a2",
+          "text": "La riduzione del personale."
+        },
+        {
+          "id": "a3",
+          "text": "La nuova sede aziendale."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "desidero fare il punto sulla nostra attuale configurazione di ufficio flessibile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa è successo a Marco?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ha rotto il computer."
+        },
+        {
+          "id": "a2",
+          "text": "La tavoletta è stata danneggiata."
+        },
+        {
+          "id": "a3",
+          "text": "Ha perso un cliente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la sua tavoletta grafica ad alta precisione, lasciata in un armadietto comune, era stata spostata e danneggiata",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché la nuova politica è controversa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aumenta i costi."
+        },
+        {
+          "id": "a2",
+          "text": "Crea troppa confusione."
+        },
+        {
+          "id": "a3",
+          "text": "Riduce la libertà."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "sebbene possa sembrare un passo indietro rispetto alla nostra filosofia di apertura totale",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo di Luca con questa email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Informare sul nuovo sistema di sicurezza per proteggere gli strumenti."
+        },
+        {
+          "id": "a2",
+          "text": "Chiedere ai dipendenti di tornare a lavorare in ufficio ogni giorno."
+        },
+        {
+          "id": "a3",
+          "text": "Punire il dipendente del marketing che ha rotto la tavoletta grafica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A partire dalla prossima settimana, ogni dipartimento avrà accesso esclusivo a specifiche aree di deposito chiuse a chiave.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Che tono usa l'autore nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Amichevole e informale."
+        },
+        {
+          "id": "a2",
+          "text": "Professionale e risoluto."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressivo e minaccioso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Non è accettabile che il tempo dedicato alla progettazione venga sprecato a causa di una logistica precaria.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'latente' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Esplicita e visibile a tutti."
+        },
+        {
+          "id": "a2",
+          "text": "Superata e ormai dimenticata."
+        },
+        {
+          "id": "a3",
+          "text": "Nascosta ma pronta a emergere."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Questo episodio evidenzia una tensione latente tra la flessibilità operativa e la necessità di proteggere strumenti di lavoro costosi e delicati.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve risposta (100 parole) dal punto di vista di un dipendente che esprime il proprio parere sulla nuova politica di Luca, proponendo un compromesso per mantenere la flessibilità.",
+      "en": "Scrivi una breve risposta (100 parole) dal punto di vista di un dipendente che esprime il proprio parere sulla nuova politica di Luca, proponendo un compromesso per mantenere la flessibilità."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizza le dinamiche di un ufficio condiviso e valuta le implicazioni organizzative descritte nel testo.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:02:46.693Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Nota interna: La gestione degli spazi condivisi | B2 Reading | WeLearn",
+      "en": "Nota interna: La gestione degli spazi condivisi | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggi questa email inviata dal responsabile operativo di una piccola agenzia di design e rispondi alle domande di comprensione.",
+      "en": "Leggi questa email inviata dal responsabile operativo di una piccola agenzia di design e rispondi alle domande di comprensione."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:02:46.693Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-local-stage",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Der Kompromiss von Lichtblick",
+      "en": "Der Kompromiss von Lichtblick"
+    },
+    "intro": {
+      "es": "Ein lokales Theater steht vor einer schwierigen Entscheidung zwischen jugendfreundlichen Preisen und der Finanzierung notwendiger Probenzeiten.",
+      "en": "Ein lokales Theater steht vor einer schwierigen Entscheidung zwischen jugendfreundlichen Preisen und der Finanzierung notwendiger Probenzeiten."
+    },
+    "mission": {
+      "es": "Leseverständnis auf B2-Niveau mit Fokus auf Konfliktlösung und Verhandlungsführung.",
+      "en": "Leseverständnis auf B2-Niveau mit Fokus auf Konfliktlösung und Verhandlungsführung."
+    },
+    "targetText": "Das Stadttheater 'Lichtblick' befindet sich in einer prekären Lage. Seit Jahren verfolgt die Intendantin Elena Berg das Ziel, jungen Menschen den Zugang zur Kultur durch drastisch reduzierte Eintrittspreise zu ermöglichen. Diese Strategie war erfolgreich, doch der finanzielle Spielraum für die laufenden Produktionen schrumpfte bedenklich. Besonders die exklusiven Probenzeiten, in denen das Ensemble unter professioneller Anleitung an komplexen Choreografien feilte, konnten kaum noch gedeckt werden. Die Kosten für die Miete der Bühne und die Honorare der Lichttechniker überstiegen die Einnahmen aus den vergünstigten Tickets bei weitem. Berg sah sich gezwungen, die Probenzeiten für das kommende Stück 'Der silberne Horizont' drastisch zu kürzen, was bei den Schauspielern für erheblichen Unmut sorgte.\n\nDer Hauptdarsteller Jonas Weber und die Choreografin Sarah Lenz vertraten die Meinung, dass eine Reduzierung der Probenzeit die künstlerische Integrität des Ensembles gefährde. Sie argumentierten, dass ein minderwertiges Produkt letztlich auch die jungen Zuschauer abschrecken würde, da diese ein hohes Niveau erwarteten. In einem hitzigen Meeting schlugen sie vor, die Proben in den weniger frequentierten Vormittagsstunden durchzuführen, um die Mietkosten für die Abendstunden zu umgehen. Zudem boten sie an, die Proben als öffentliche Workshops zu gestalten, bei denen Interessierte gegen einen kleinen Aufpreis zusehen könnten. Dies würde die Einnahmen stabilisieren, ohne die Ticketpreise für die Abendvorstellungen zu erhöhen.\n\nElena Berg war skeptisch, da sie den Schutzraum der Proben für essenziell hielt. Dennoch erkannte sie die Notwendigkeit eines Kompromisses an. Sie stimmte zu, die Vormittagsproben zu testen, unter der Bedingung, dass die Workshops keine störenden Eingriffe in den künstlerischen Prozess darstellten. Die Schauspieler verpflichteten sich im Gegenzug, die Öffentlichkeitsarbeit für diese neuen Formate selbst zu übernehmen. Dieser Schritt erforderte von beiden Seiten Zugeständnisse: Die Künstler mussten ihre Privatsphäre während der Arbeit opfern, während die Intendantin die Kontrolle über den exklusiven Charakter der Proben abgab.\n\nDie erste Woche der neuen Regelung verlief überraschend produktiv. Die jungen Zuschauer zeigten großes Interesse an den Einblicken hinter die Kulissen, was die Vorverkaufszahlen für die Premiere in die Höhe trieb. Die Atmosphäre im Theater wandelte sich von einer angespannten Sparpolitik zu einer gemeinschaftlichen Aufbruchstimmung. Dennoch blieb ein unterschwelliges Unbehagen bestehen. Einige Ensemblemitglieder fürchteten, dass die ständige Beobachtung durch das Publikum die Kreativität langfristig einschränken könnte. Die künstlerische Freiheit schien nun untrennbar mit der wirtschaftlichen Transparenz verbunden zu sein.\n\nObwohl der finanzielle Engpass vorerst bewältigt scheint, bleibt die Frage nach der langfristigen Identität des Theaters offen. Ist ein Theater noch ein Ort der freien Entfaltung, wenn jeder Schritt der Vorbereitung bereits Teil des kommerziellen Angebots ist? Die Lösung für 'Lichtblick' ist ein fragiles Gleichgewicht. Während das Theater finanziell stabilisiert wurde, kämpft das Ensemble weiterhin mit der neuen Realität, in der Kunst und Publikum nicht mehr strikt voneinander getrennt sind. Die Zukunft wird zeigen, ob dieses Modell nachhaltig ist oder ob der Druck der ständigen Öffentlichkeit die künstlerische Substanz erodiert.",
+    "wordCount": 461,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "prekären",
+        "lemma": "prekären",
+        "glosses": {
+          "es": "precarious",
+          "en": "precarious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Unmut",
+        "lemma": "Unmut",
+        "glosses": {
+          "es": "resentment",
+          "en": "resentment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Integrität",
+        "lemma": "Integrität",
+        "glosses": {
+          "es": "integrity",
+          "en": "integrity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "essenziell",
+        "lemma": "essenziell",
+        "glosses": {
+          "es": "essential",
+          "en": "essential"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Unbehagen",
+        "lemma": "Unbehagen",
+        "glosses": {
+          "es": "unease",
+          "en": "unease"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erodiert",
+        "lemma": "erodiert",
+        "glosses": {
+          "es": "erodes",
+          "en": "erodes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.1,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es im Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um einen Konflikt zwischen Kunst und Finanzen."
+        },
+        {
+          "id": "a2",
+          "text": "Um die architektonische Sanierung des Gebäudes."
+        },
+        {
+          "id": "a3",
+          "text": "Um die kulturelle Bedeutung für die Stadtbevölkerung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Stadttheater 'Lichtblick' befindet sich in einer prekären Lage.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was schlagen Weber und Lenz als Lösung vor?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Preiserhöhungen."
+        },
+        {
+          "id": "a2",
+          "text": "Öffentliche Workshops."
+        },
+        {
+          "id": "a3",
+          "text": "Kürzung der Probenzeit."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Zudem boten sie an, die Proben als öffentliche Workshops zu gestalten",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum war Elena Berg anfangs gegen den Vorschlag?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie glaubte nicht an das Interesse der Jugend."
+        },
+        {
+          "id": "a2",
+          "text": "Sie wollte die Proben komplett streichen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie wollte die Privatsphäre der Proben wahren."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elena Berg war skeptisch, da sie den Schutzraum der Proben für essenziell hielt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der letzte Absatz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die langfristige Unsicherheit zu betonen."
+        },
+        {
+          "id": "a2",
+          "text": "Die endgültige Entscheidung für ein Modell zu rechtfertigen."
+        },
+        {
+          "id": "a3",
+          "text": "Die künstlerische Überlegenheit der neuen Probenmethode zu loben."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Zukunft wird zeigen, ob dieses Modell nachhaltig ist oder ob der Druck der ständigen Öffentlichkeit die künstlerische Substanz erodiert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Textes beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Distanziert."
+        },
+        {
+          "id": "a2",
+          "text": "Sachlich und abwägend."
+        },
+        {
+          "id": "a3",
+          "text": "Sehr emotional und parteiisch."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Dieser Schritt erforderte von beiden Seiten Zugeständnisse: Die Künstler mussten ihre Privatsphäre während der Arbeit opfern, während die Intendantin die Kontrolle über den exklusiven Charakter der Proben abgab.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet 'prekären' im Kontext des ersten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Gut."
+        },
+        {
+          "id": "a2",
+          "text": "Fest."
+        },
+        {
+          "id": "a3",
+          "text": "Schwierig."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Das Stadttheater 'Lichtblick' befindet sich in einer prekären Lage.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine E-Mail an die Intendantin, in der Sie als Zuschauer Ihre Meinung zu den öffentlichen Proben äußern. Berücksichtigen Sie dabei sowohl die Vorteile als auch die möglichen Nachteile für die Schauspieler.",
+      "en": "Schreiben Sie eine E-Mail an die Intendantin, in der Sie als Zuschauer Ihre Meinung zu den öffentlichen Proben äußern. Berücksichtigen Sie dabei sowohl die Vorteile als auch die möglichen Nachteile für die Schauspieler."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leseverständnis auf B2-Niveau mit Fokus auf Konfliktlösung und Verhandlungsführung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Der Kompromiss von Lichtblick | B2 Reading | WeLearn",
+      "en": "Der Kompromiss von Lichtblick | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein lokales Theater steht vor einer schwierigen Entscheidung zwischen jugendfreundlichen Preisen und der Finanzierung notwendiger Probenzeiten.",
+      "en": "Ein lokales Theater steht vor einer schwierigen Entscheidung zwischen jugendfreundlichen Preisen und der Finanzierung notwendiger Probenzeiten."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

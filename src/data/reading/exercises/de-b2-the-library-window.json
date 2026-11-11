@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-library-window",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Stille vor dem Sturm",
+      "en": "Die Stille vor dem Sturm"
+    },
+    "intro": {
+      "es": "Eine Geschichte über die Einführung von Frühöffnungszeiten in der Stadtbibliothek und die daraus resultierenden Herausforderungen für das Personal und die Nutzer.",
+      "en": "Eine Geschichte über die Einführung von Frühöffnungszeiten in der Stadtbibliothek und die daraus resultierenden Herausforderungen für das Personal und die Nutzer."
+    },
+    "mission": {
+      "es": "Leseverständnis und Analyse von organisatorischen Veränderungen in einer öffentlichen Einrichtung.",
+      "en": "Leseverständnis und Analyse von organisatorischen Veränderungen in einer öffentlichen Einrichtung."
+    },
+    "targetText": "Die Stadtbibliothek ‚Lichtblick‘ wagte ein Experiment. Um den Bedürfnissen von Schichtarbeitern gerecht zu werden, öffnete die Einrichtung ihre Tore neuerdings bereits um sechs Uhr morgens. Bibliotheksleiterin Frau Dr. Weber hatte diesen Schritt lange geplant, doch die Umsetzung im Team verlief holprig. Während die Frühschicht-Mitarbeiterin Elena die Ruhe in den frühen Stunden genoss, beklagte sich ihr Kollege Markus, der für die Abendstunden eingeteilt war, über die ungleiche Belastung. Er fühlte sich durch die neuen Schichtpläne in seinem Privatleben eingeschränkt, da die Übergaben nun in die Stoßzeiten fielen, in denen das Haus bereits voll mit Schülern war.\n\nDie ersten Wochen zeigten ein zweigeteiltes Bild. Die Stammleser, vor allem jene, die vor der Arbeit noch schnell in den Zeitungen blättern wollten, lobten die Neuerung in den höchsten Tönen. Für sie war die erste Stunde des Tages eine Oase der Konzentration. Doch für das Personal blieb die Situation angespannt. Die physische Präsenz in der Bibliothek erforderte eine Umstellung des Biorhythmus, die nicht jeder ohne Weiteres bewältigte. Elena versuchte, zwischen den Fronten zu vermitteln, doch die Stimmung blieb unterkühlt.\n\nDer Konflikt erreichte seinen Höhepunkt, als eine wichtige Lieferung von Neuanschaffungen genau während der morgendlichen Stoßzeit eintraf. Markus, der gerade seinen Dienst antrat, sah sich mit einem Berg von Kartons konfrontiert, während gleichzeitig eine Gruppe von Studenten nach Hilfe bei der Literaturrecherche verlangte. Er fühlte sich überfordert und warf der Leitung vor, die betrieblichen Abläufe zugunsten eines symbolischen Kundenservices vernachlässigt zu haben. Die Bibliothek war zwar offen, aber die Qualität der Betreuung litt unter der dünnen Personaldecke.\n\nDr. Weber erkannte, dass ihre Vision von einem inklusiven Service eine strukturelle Anpassung benötigte. Sie gab zu, dass die Bedürfnisse der Mitarbeiter bei der Planung der neuen Öffnungszeiten zu kurz gekommen waren. Es war ein klassisches Dilemma: Der Wunsch nach maximaler Zugänglichkeit für die Bürger kollidierte mit der Belastungsgrenze der Angestellten. Sie versprach eine Überarbeitung des Dienstplans, doch die Erschöpfung bei Markus saß tief. Die Bibliothek blieb zwar morgens offen, aber der innere Frieden des Teams war vorerst zerstört.\n\nAm Ende blieb die Frage, ob der Mehrwert für die Leser den Preis der internen Zerrüttung wert war. Die Bibliothek war nun ein Ort, der zwar funktionaler wirkte, aber seine einstige Harmonie verloren hatte. Die Stille der frühen Morgenstunden war nun von einem unterschwelligen Grollen der Unzufriedenheit begleitet, das weder durch neue Regale noch durch bessere Katalogisierung gelöst werden konnte. Die Stadtbibliothek ‚Lichtblick‘ war nun zwar für alle zugänglich, aber für niemanden mehr ein echter Rückzugsort.",
+    "wordCount": 406,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "holprig",
+        "lemma": "holprig",
+        "glosses": {
+          "es": "bumpy or difficult",
+          "en": "bumpy or difficult"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Stoßzeiten",
+        "lemma": "Stoßzeiten",
+        "glosses": {
+          "es": "peak hours",
+          "en": "peak hours"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Biorhythmus",
+        "lemma": "Biorhythmus",
+        "glosses": {
+          "es": "biological rhythm",
+          "en": "biological rhythm"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Neuanschaffungen",
+        "lemma": "Neuanschaffungen",
+        "glosses": {
+          "es": "new acquisitions",
+          "en": "new acquisitions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dienstplans",
+        "lemma": "Dienstplans",
+        "glosses": {
+          "es": "shift schedule",
+          "en": "shift schedule"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zerrüttung",
+        "lemma": "Zerrüttung",
+        "glosses": {
+          "es": "disruption or breakdown",
+          "en": "disruption or breakdown"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.6,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Schwierigkeiten einer Bibliotheksreform."
+        },
+        {
+          "id": "a2",
+          "text": "Die allgemeine Begeisterung der Stadtbevölkerung für das neue Angebot."
+        },
+        {
+          "id": "a3",
+          "text": "Die komplexe strategische Neuausrichtung der städtischen Medienverwaltung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Stadtbibliothek ‚Lichtblick‘ wagte ein Experiment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum war Markus mit der neuen Situation unzufrieden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er mochte keine Studenten."
+        },
+        {
+          "id": "a2",
+          "text": "Er war mit der Schichtplanung überfordert."
+        },
+        {
+          "id": "a3",
+          "text": "Er wollte nicht mehr in der Bibliothek arbeiten."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Er fühlte sich durch die neuen Schichtpläne in seinem Privatleben eingeschränkt",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Was lässt sich über Dr. Webers Führungsstil sagen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie ist starr."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ist kühl."
+        },
+        {
+          "id": "a3",
+          "text": "Sie ist einsichtig, aber organisatorisch fehlerhaft."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie gab zu, dass die Bedürfnisse der Mitarbeiter bei der Planung der neuen Öffnungszeiten zu kurz gekommen waren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Autor mit der Beschreibung des Vorfalls mit den Neuanschaffungen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Den Konflikt zwischen Personalbelastung und Serviceanspruch zu illustrieren."
+        },
+        {
+          "id": "a2",
+          "text": "Die notwendige Professionalisierung der Bibliotheksmitarbeiter bei der Warenannahme."
+        },
+        {
+          "id": "a3",
+          "text": "Die hohe Priorität der akademischen Unterstützung für Studenten in der Stadtbibliothek."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Markus, der gerade seinen Dienst antrat, sah sich mit einem Berg von Kartons konfrontiert, während gleichzeitig eine Gruppe von Studenten nach Hilfe bei der Literaturrecherche verlangte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie ist die Stimmung am Ende der Geschichte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ernüchternd und von einem Gefühl des Verlustes geprägt."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholisch."
+        },
+        {
+          "id": "a3",
+          "text": "Neutral."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Bibliothek war nun ein Ort, der zwar funktionaler wirkte, aber seine einstige Harmonie verloren hatte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Zerrüttung' im Kontext des letzten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Zerfall."
+        },
+        {
+          "id": "a2",
+          "text": "Der Umbau."
+        },
+        {
+          "id": "a3",
+          "text": "Die Störung der zwischenmenschlichen Beziehungen im Team."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Am Ende blieb die Frage, ob der Mehrwert für die Leser den Preis der internen Zerrüttung wert war.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 100 Wörter), in dem Sie bewerten, ob eine Bibliothek für Schichtarbeiter ihre Öffnungszeiten erweitern sollte, wenn dies zu Lasten des Personals geht. Begründen Sie Ihre Meinung.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 100 Wörter), in dem Sie bewerten, ob eine Bibliothek für Schichtarbeiter ihre Öffnungszeiten erweitern sollte, wenn dies zu Lasten des Personals geht. Begründen Sie Ihre Meinung."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leseverständnis und Analyse von organisatorischen Veränderungen in einer öffentlichen Einrichtung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Stille vor dem Sturm | B2 Reading | WeLearn",
+      "en": "Die Stille vor dem Sturm | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine Geschichte über die Einführung von Frühöffnungszeiten in der Stadtbibliothek und die daraus resultierenden Herausforderungen für das Personal und die Nutzer.",
+      "en": "Eine Geschichte über die Einführung von Frühöffnungszeiten in der Stadtbibliothek und die daraus resultierenden Herausforderungen für das Personal und die Nutzer."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

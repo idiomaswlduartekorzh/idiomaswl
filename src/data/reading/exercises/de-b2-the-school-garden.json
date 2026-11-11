@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-school-garden",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das grüne Dilemma der Linden-Schule",
+      "en": "Das grüne Dilemma der Linden-Schule"
+    },
+    "intro": {
+      "es": "Ein innovatives Schulgartenprojekt führt zu einem unerwarteten Konflikt zwischen Lehrkräften, Schülern und Eltern über die Verantwortung in den Sommerferien.",
+      "en": "Ein innovatives Schulgartenprojekt führt zu einem unerwarteten Konflikt zwischen Lehrkräften, Schülern und Eltern über die Verantwortung in den Sommerferien."
+    },
+    "mission": {
+      "es": "Leseverstehen eines Berichts über ein schulisches Gemeinschaftsprojekt mit Fokus auf Argumentationsstrukturen.",
+      "en": "Leseverstehen eines Berichts über ein schulisches Gemeinschaftsprojekt mit Fokus auf Argumentationsstrukturen."
+    },
+    "targetText": "Der Schulgarten der Linden-Schule war einst eine brachliegende Fläche hinter der Turnhalle, doch seit Beginn dieses Schuljahres hat sich das Bild gewandelt. Unter der Leitung der Biologielehrerin Frau Dr. Arndt haben die Schüler der zehnten Klassen Hochbeete angelegt, in denen nun frisches Gemüse für die schuleigene Mensa gedeiht. Das Projekt war ein voller Erfolg: Die Qualität der Mittagsverpflegung stieg spürbar an, und die Schüler lernten durch die praktische Arbeit viel über nachhaltige Landwirtschaft. Doch mit der nahenden Sommerpause wächst die Sorge um die Pflanzen. Während die Schule geschlossen ist, drohen die Tomaten und Zucchini ohne Pflege zu vertrocknen.\n\nUm dieses Problem zu lösen, schlug die Schülersprecherin Lena vor, einen rotierenden Dienstplan für die Ferienzeit zu erstellen. Die Idee war simpel: Jede Woche sollte eine andere Familie die Bewässerung und Ernte übernehmen. Die Begeisterung im Kollegium war groß, da das Projekt so ohne externe Hilfe fortbestehen könnte. Doch als der Plan bei einem Elternabend vorgestellt wurde, schlug den Lehrkräften eine Welle der Skepsis entgegen. Viele Eltern fühlten sich durch die zusätzliche Verantwortung überfordert, da sie ihre Sommerferien bereits verplant hatten und die Betreuung des Gartens als unzumutbare Belastung empfanden.\n\nDie Debatte spitzte sich zu, als Herr Weber, ein Vater, argumentierte, dass die Schule als öffentliche Einrichtung für die Instandhaltung ihrer Anlagen verantwortlich sei. Er betonte, dass die freiwillige Arbeit während der Schulzeit lobenswert sei, aber eine verpflichtende Teilnahme in den Ferien die Grenzen des ehrenamtlichen Engagements überschreite. Frau Dr. Arndt hielt dagegen und verwies auf den pädagogischen Wert der Kontinuität. Sie argumentierte, dass ein Garten kein kurzfristiges Hobby sei, sondern ein lebendiges System, das ständige Fürsorge erfordere. Die Stimmung im Raum war angespannt, da beide Seiten stichhaltige Argumente vorbrachten.\n\nDie Situation wurde kompliziert, als sich herausstellte, dass der Ertrag des Gartens direkt in die Finanzierung eines neuen Gewächshauses fließen sollte. Ohne die Ernte in den Sommermonaten würde das Budget für die nächste Ausbaustufe fehlen. Diese finanzielle Komponente verlieh dem Streit eine neue Dringlichkeit. Einige Eltern boten zwar an, gelegentlich vorbeizukommen, lehnten jedoch eine feste Einteilung strikt ab. Der Vorschlag, die Ernte an lokale Restaurants zu verkaufen, um professionelle Gärtner zu bezahlen, wurde von der Schulleitung aufgrund bürokratischer Hürden sofort verworfen.\n\nLetztendlich endete der Abend ohne eine verbindliche Lösung. Der Garten steht nun vor einer ungewissen Zukunft. Während die Schüler motiviert sind, den Garten zu retten, bleibt die Frage nach der fairen Verteilung der Arbeit ungelöst. Die Schulleitung hat eine Bedenkzeit bis zum nächsten Monat angekündigt, doch der Zeitdruck steigt. Ob das Projekt an der mangelnden Kooperationsbereitschaft der Erwachsenen scheitern wird oder ob ein Kompromiss gefunden werden kann, bleibt abzuwarten. Die grüne Oase der Linden-Schule ist mehr als nur ein Garten; sie ist ein Test für die Gemeinschaft der Schule.",
+    "wordCount": 448,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "brachliegende",
+        "lemma": "brachliegende",
+        "glosses": {
+          "es": "fallow or unused",
+          "en": "fallow or unused"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rotierenden",
+        "lemma": "rotierenden",
+        "glosses": {
+          "es": "rotating",
+          "en": "rotating"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Skepsis",
+        "lemma": "Skepsis",
+        "glosses": {
+          "es": "doubt or skepticism",
+          "en": "doubt or skepticism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unzumutbare",
+        "lemma": "unzumutbare",
+        "glosses": {
+          "es": "unreasonable",
+          "en": "unreasonable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kontinuität",
+        "lemma": "Kontinuität",
+        "glosses": {
+          "es": "continuity",
+          "en": "continuity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Bedenkzeit",
+        "lemma": "Bedenkzeit",
+        "glosses": {
+          "es": "time for reflection",
+          "en": "time for reflection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Pflege des Gartens in den Sommerferien."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Finanzierung des Gartens."
+        },
+        {
+          "id": "a3",
+          "text": "Um die pädagogischen Ziele des Biologieunterrichts."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Doch mit der nahenden Sommerpause wächst die Sorge um die Pflanzen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum ist die Ernte im Sommer finanziell wichtig?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie senkt die Mensakosten."
+        },
+        {
+          "id": "a2",
+          "text": "Sie finanziert das Gewächshaus."
+        },
+        {
+          "id": "a3",
+          "text": "Sie bezahlt die Gärtner."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "dass der Ertrag des Gartens direkt in die Finanzierung eines neuen Gewächshauses fließen sollte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie stehen die Eltern zu dem Dienstplan?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie unterstützen ihn voll."
+        },
+        {
+          "id": "a2",
+          "text": "Sie sind unentschlossen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie lehnen ihn ab."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Viele Eltern fühlten sich durch die zusätzliche Verantwortung überfordert",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum erwähnt der Autor die bürokratischen Hürden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Ablehnung zu begründen."
+        },
+        {
+          "id": "a2",
+          "text": "Um den Verkauf zu erklären."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Schulleitung zu kritisieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Der Vorschlag, die Ernte an lokale Restaurants zu verkaufen, um professionelle Gärtner zu bezahlen, wurde von der Schulleitung aufgrund bürokratischer Hürden sofort verworfen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich die Stimmung am Ende des Textes beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und hoffnungsvoll."
+        },
+        {
+          "id": "a2",
+          "text": "Spannungsgeladen und unentschieden."
+        },
+        {
+          "id": "a3",
+          "text": "Neutral und sachlich distanziert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Stimmung im Raum war angespannt, da beide Seiten stichhaltige Argumente vorbrachten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet 'brachliegende' im Kontext des ersten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr fruchtbar."
+        },
+        {
+          "id": "a2",
+          "text": "Voll bepflanzt."
+        },
+        {
+          "id": "a3",
+          "text": "Nicht genutzt."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Der Schulgarten der Linden-Schule war einst eine brachliegende Fläche hinter der Turnhalle",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (100-150 Wörter), in dem Sie einen Lösungsvorschlag für das Gartenproblem der Linden-Schule unterbreiten. Berücksichtigen Sie dabei die Interessen von Lehrern und Eltern.",
+      "en": "Schreiben Sie einen kurzen Kommentar (100-150 Wörter), in dem Sie einen Lösungsvorschlag für das Gartenproblem der Linden-Schule unterbreiten. Berücksichtigen Sie dabei die Interessen von Lehrern und Eltern."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leseverstehen eines Berichts über ein schulisches Gemeinschaftsprojekt mit Fokus auf Argumentationsstrukturen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das grüne Dilemma der Linden-Schule | B2 Reading | WeLearn",
+      "en": "Das grüne Dilemma der Linden-Schule | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein innovatives Schulgartenprojekt führt zu einem unerwarteten Konflikt zwischen Lehrkräften, Schülern und Eltern über die Verantwortung in den Sommerferien.",
+      "en": "Ein innovatives Schulgartenprojekt führt zu einem unerwarteten Konflikt zwischen Lehrkräften, Schülern und Eltern über die Verantwortung in den Sommerferien."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

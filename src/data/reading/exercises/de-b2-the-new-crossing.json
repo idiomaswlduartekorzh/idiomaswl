@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-new-crossing",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Der Konflikt an der Sonnenallee",
+      "en": "Der Konflikt an der Sonnenallee"
+    },
+    "intro": {
+      "es": "Ein kurzer Artikel über eine lokale Kontroverse bezüglich einer neuen Fußgängerüberquerung in der Nähe einer medizinischen Einrichtung.",
+      "en": "Ein kurzer Artikel über eine lokale Kontroverse bezüglich einer neuen Fußgängerüberquerung in der Nähe einer medizinischen Einrichtung."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam und beantworten Sie die Fragen zur Analyse des Inhalts und der sprachlichen Nuancen.",
+      "en": "Lesen Sie den Text aufmerksam und beantworten Sie die Fragen zur Analyse des Inhalts und der sprachlichen Nuancen."
+    },
+    "targetText": "Die Situation an der Sonnenallee spitzte sich zu, als Anwohner der örtlichen Gemeinschaftsinitiative forderten, eine sichere Überquerung direkt vor der neuen Sonnen-Klinik einzurichten. Bisher mussten Patienten, darunter viele ältere Menschen, eine vielbefahrene Straße ohne Schutz überqueren, um das Gebäude zu erreichen. Frau Dr. Hannes, die Leiterin der Klinik, unterstützte das Anliegen vehement, da sie wiederholt gefährliche Bremsmanöver vor ihrem Fenster beobachten musste. Die Stadtverwaltung reagierte schließlich mit einem einmonatigen Pilotprojekt, das eine mobile Ampelanlage vorsah. Doch der Widerstand ließ nicht lange auf sich warten. Herr Kroll, ein lokaler Speditionsunternehmer, sah in der Ampel eine unnötige Behinderung des Berufsverkehrs. Er argumentierte, dass die ständigen Stopps den Lieferverkehr massiv verzögerten und zu einer erhöhten Lärmbelastung durch an- und abfahrende Lkw führten. Die Fronten zwischen den Anwohnern, die Sicherheit priorisierten, und den Pendlern, die auf Effizienz pochten, schienen unüberbrückbar. Während des Testmonats wurden die Verkehrsflüsse genau protokolliert. Die Daten zeigten ein zweigeteiltes Bild: Zwar sank die Zahl der Beinahe-Unfälle signifikant, doch die durchschnittliche Reisezeit für Autofahrer stieg während der Stoßzeiten um mehrere Minuten an. Die Stadtverwaltung fand sich in einer schwierigen Lage wieder. Einerseits war die moralische Verpflichtung gegenüber den Patienten der Klinik unbestreitbar, andererseits durfte die wirtschaftliche Anbindung des Gewerbegebiets nicht nachhaltig geschädigt werden. Die Anwohner feierten die sinkenden Unfallzahlen als vollen Erfolg und forderten eine dauerhafte Installation. Die Pendler hingegen sahen ihre Befürchtungen bestätigt und drohten mit einer Klage wegen unzumutbarer Verkehrsbehinderung. Die Stadt entschied sich schließlich für einen Kompromiss: Die Ampel wurde wieder abgebaut, stattdessen soll nun eine Verkehrsinsel mit einer verbesserten Beleuchtung errichtet werden. Diese Lösung sollte den Fußgängern eine sichere Insel in der Straßenmitte bieten, ohne den Verkehrsfluss dauerhaft durch Rotphasen zu unterbrechen. Dennoch bleibt die Stimmung in der Nachbarschaft angespannt. Die Anwohner kritisieren die Insel als unzureichend für Menschen mit Gehbehinderungen, während die Pendler weiterhin vor einer Verengung der Fahrbahn warnen. Ob diese bauliche Maßnahme den erhofften Frieden bringen wird, bleibt abzuwarten. Die Sonnenallee ist heute eine Straße, die zwar technisch sicherer ist, aber menschlich tiefer gespalten denn je. Die Entscheidung der Stadtverwaltung hat niemanden vollkommen zufriedengestellt, sondern lediglich den Konflikt in eine neue, bauliche Form überführt. Es zeigt sich deutlich, dass städtische Planung selten eine rein technische Angelegenheit ist, sondern immer eine Abwägung zwischen konkurrierenden Lebensentwürfen darstellt. Die Geschichte der Sonnenallee ist somit noch lange nicht zu Ende geschrieben, da die grundlegenden Bedürfnisse der verschiedenen Gruppen weiterhin in direktem Widerspruch zueinander stehen.\n\nZukünftige Stadtentwicklungsprojekte müssen daher verstärkt auf partizipative Dialogformate setzen, um bei solch komplexen Interessenkonflikten tragfähige Konsense zu finden, bevor die erste Baumaschine den Asphalt berührt.",
+    "wordCount": 421,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vehement",
+        "lemma": "vehement",
+        "glosses": {
+          "es": "forcefully",
+          "en": "forcefully"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pilotprojekt",
+        "lemma": "Pilotprojekt",
+        "glosses": {
+          "es": "trial project",
+          "en": "trial project"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pendler",
+        "lemma": "Pendler",
+        "glosses": {
+          "es": "commuters",
+          "en": "commuters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unüberbrückbar",
+        "lemma": "unüberbrückbar",
+        "glosses": {
+          "es": "insurmountable",
+          "en": "insurmountable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verkehrsinsel",
+        "lemma": "Verkehrsinsel",
+        "glosses": {
+          "es": "traffic island",
+          "en": "traffic island"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Abwägung",
+        "lemma": "Abwägung",
+        "glosses": {
+          "es": "weighing up",
+          "en": "weighing up"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.8,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein Streit um Verkehrsplanung"
+        },
+        {
+          "id": "a2",
+          "text": "Der Bau einer Klinik"
+        },
+        {
+          "id": "a3",
+          "text": "Die Effizienz der Logistik"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Situation an der Sonnenallee spitzte sich zu, als Anwohner der örtlichen Gemeinschaftsinitiative forderten, eine sichere Überquerung direkt vor der neuen Sonnen-Klinik einzurichten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche Lösung wurde nach dem Pilotprojekt gewählt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine neue Ampel"
+        },
+        {
+          "id": "a2",
+          "text": "Eine Verkehrsinsel"
+        },
+        {
+          "id": "a3",
+          "text": "Eine Unterführung"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Stadt entschied sich schließlich für einen Kompromiss: Die Ampel wurde wieder abgebaut, stattdessen soll nun eine Verkehrsinsel mit einer verbesserten Beleuchtung errichtet werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewerten die Anwohner die neue Verkehrsinsel?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie sind sehr zufrieden"
+        },
+        {
+          "id": "a2",
+          "text": "Sie lehnen sie grundsätzlich ab"
+        },
+        {
+          "id": "a3",
+          "text": "Sie halten sie für unzureichend"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Anwohner kritisieren die Insel als unzureichend für Menschen mit Gehbehinderungen",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum erwähnt der Autor die Ansicht von Herrn Kroll?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die wirtschaftlichen Sorgen der Pendler und Unternehmer darzustellen"
+        },
+        {
+          "id": "a2",
+          "text": "Um die moralische Überlegenheit der Klinikleitung zu beweisen"
+        },
+        {
+          "id": "a3",
+          "text": "Um die Notwendigkeit einer sofortigen Straßensperrung zu begründen"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Herr Kroll, ein lokaler Speditionsunternehmer, sah in der Ampel eine unnötige Behinderung des Berufsverkehrs. Er argumentierte, dass die ständigen Stopps den Lieferverkehr massiv verzögerten",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Autors beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Einseitig und parteiisch"
+        },
+        {
+          "id": "a2",
+          "text": "Sachlich und abwägend"
+        },
+        {
+          "id": "a3",
+          "text": "Optimistisch und euphorisch"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Einerseits war die moralische Verpflichtung gegenüber den Patienten der Klinik unbestreitbar, andererseits durfte die wirtschaftliche Anbindung des Gewerbegebiets nicht nachhaltig geschädigt werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort 'vehement' im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Völlig ohne Interesse"
+        },
+        {
+          "id": "a2",
+          "text": "Sehr langsam und bedächtig"
+        },
+        {
+          "id": "a3",
+          "text": "Besonders nachdrücklich"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Frau Dr. Hannes, die Leiterin der Klinik, unterstützte das Anliegen vehement, da sie wiederholt gefährliche Bremsmanöver vor ihrem Fenster beobachten musste.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 100 Wörter), in dem Sie Stellung dazu beziehen, ob Sicherheit oder Verkehrsfluss in städtischen Gebieten Vorrang haben sollte.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 100 Wörter), in dem Sie Stellung dazu beziehen, ob Sicherheit oder Verkehrsfluss in städtischen Gebieten Vorrang haben sollte."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Text aufmerksam und beantworten Sie die Fragen zur Analyse des Inhalts und der sprachlichen Nuancen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Der Konflikt an der Sonnenallee | B2 Reading | WeLearn",
+      "en": "Der Konflikt an der Sonnenallee | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein kurzer Artikel über eine lokale Kontroverse bezüglich einer neuen Fußgängerüberquerung in der Nähe einer medizinischen Einrichtung.",
+      "en": "Ein kurzer Artikel über eine lokale Kontroverse bezüglich einer neuen Fußgängerüberquerung in der Nähe einer medizinischen Einrichtung."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

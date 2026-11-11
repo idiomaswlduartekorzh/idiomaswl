@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-river-map",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'inchiostro contro il pixel: una battaglia per la sicurezza",
+      "en": "L'inchiostro contro il pixel: una battaglia per la sicurezza"
+    },
+    "intro": {
+      "es": "Un gruppo di cittadini di Borgo Fluviale affronta le difficoltà tecnologiche legate alla prevenzione delle inondazioni, mettendo in discussione la digitalizzazione esclusiva dei servizi pubblici.",
+      "en": "Un gruppo di cittadini di Borgo Fluviale affronta le difficoltà tecnologiche legate alla prevenzione delle inondazioni, mettendo in discussione la digitalizzazione esclusiva dei servizi pubblici."
+    },
+    "mission": {
+      "es": "Leggi l'articolo e valuta come la tecnologia possa diventare una barriera per la sicurezza pubblica in contesti locali.",
+      "en": "Leggi l'articolo e valuta come la tecnologia possa diventare una barriera per la sicurezza pubblica in contesti locali."
+    },
+    "targetText": "A Borgo Fluviale, la stagione delle piogge è sempre stata vissuta con una tensione palpabile. Quest'anno, l'amministrazione comunale ha lanciato la 'Mappa di Rischio Idrogeologico', un portale interattivo progettato per informare i residenti sulle zone soggette ad allagamenti. Tuttavia, l'iniziativa ha incontrato un ostacolo inaspettato: la leggibilità. Molti anziani del quartiere, che utilizzano smartphone di vecchia generazione, si sono trovati di fronte a schermi dove le sfumature di blu e grigio si confondevano, rendendo impossibile distinguere le aree sicure da quelle ad alto rischio. La tecnologia, pensata per semplificare, è diventata un muro invalicabile.\n\nElisa, una bibliotecaria in pensione, ha deciso di agire. Durante una riunione del comitato di quartiere, ha presentato una proposta concreta: stampare e distribuire copie cartacee della mappa in formato grande, plastificate e leggibili anche in condizioni di scarsa illuminazione. 'La tecnologia è un complemento, non un sostituto della chiarezza', ha dichiarato, sottolineando come la vita di una famiglia non possa dipendere dalla risoluzione di un display datato. La sua posizione ha scatenato un acceso dibattito tra i sostenitori della transizione digitale, che vedono nel cartaceo un ritorno al passato inefficiente.\n\nIl conflitto si è intensificato quando il Comune ha rifiutato il finanziamento, citando costi di stampa insostenibili e la necessità di aggiornamenti in tempo reale. Per l'amministrazione, la mappa digitale è l'unica via percorribile per garantire dati precisi. Eppure, la logica burocratica ignora la realtà quotidiana: in caso di emergenza, l'accesso immediato e intuitivo all'informazione è vitale. Se un cittadino non riesce a interpretare un avviso a causa di un pixel difettoso, la precisione dei dati diventa irrilevante.\n\nLa situazione ha raggiunto un punto di rottura la scorsa settimana, quando un falso allarme ha seminato il panico. Chi possedeva i vecchi dispositivi non è riuscito a caricare la pagina, creando confusione e allontanando la popolazione dalle zone di raccolta sicure. La tensione tra l'efficienza algoritmica e l'accessibilità umana è diventata evidente. Il comitato di quartiere ha quindi deciso di autofinanziarsi, raccogliendo fondi tra i commercianti locali per stampare le mappe autonomamente, sfidando apertamente la linea ufficiale del Comune.\n\nOggi, le mappe cartacee sono appese nelle vetrine di molti negozi, offrendo una sicurezza tangibile che il digitale non ha saputo garantire. Nonostante il successo dell'iniziativa, rimane una domanda inquietante: quanto è saggio delegare la nostra incolumità a un sistema che non tutti possono consultare? La questione non è risolta, poiché il Comune continua a promuovere esclusivamente la piattaforma online. La carta, pur essendo un presidio di emergenza, rappresenta una soluzione temporanea a un problema strutturale di esclusione digitale che minaccia la coesione sociale di Borgo Fluviale.",
+    "wordCount": 430,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "palpabile",
+        "lemma": "palpabile",
+        "glosses": {
+          "es": "tangible",
+          "en": "tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "invalicabile",
+        "lemma": "invalicabile",
+        "glosses": {
+          "es": "impassable",
+          "en": "impassable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "complemento",
+        "lemma": "complemento",
+        "glosses": {
+          "es": "addition",
+          "en": "addition"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insostenibili",
+        "lemma": "insostenibili",
+        "glosses": {
+          "es": "unaffordable",
+          "en": "unaffordable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tangibile",
+        "lemma": "tangibile",
+        "glosses": {
+          "es": "concrete",
+          "en": "concrete"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coesione",
+        "lemma": "coesione",
+        "glosses": {
+          "es": "cohesion",
+          "en": "cohesion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.5,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:02:46.693Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La sicurezza locale"
+        },
+        {
+          "id": "a2",
+          "text": "La digitalizzazione pubblica"
+        },
+        {
+          "id": "a3",
+          "text": "L'inclusione sociale"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La tecnologia, pensata per semplificare, è diventata un muro invalicabile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché gli anziani non vedono bene la mappa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mancanza di connessione"
+        },
+        {
+          "id": "a2",
+          "text": "Schermi vecchi"
+        },
+        {
+          "id": "a3",
+          "text": "Errori grafici"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Molti anziani del quartiere, che utilizzano smartphone di vecchia generazione, si sono trovati di fronte a schermi dove le sfumature di blu e grigio si confondevano",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa pensa l'amministrazione comunale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il cartaceo è inutile"
+        },
+        {
+          "id": "a2",
+          "text": "Il budget è limitato"
+        },
+        {
+          "id": "a3",
+          "text": "Il digitale è superiore"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Per l'amministrazione, la mappa digitale è l'unica via percorribile per garantire dati precisi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché il comitato ha stampato le mappe?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per aiutare i cittadini"
+        },
+        {
+          "id": "a2",
+          "text": "Per sfidare il Comune"
+        },
+        {
+          "id": "a3",
+          "text": "Per protestare contro i costi"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il comitato di quartiere ha quindi deciso di autofinanziarsi, raccogliendo fondi tra i commercianti locali per stampare le mappe autonomamente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono dell'autore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutrale"
+        },
+        {
+          "id": "a2",
+          "text": "Critico"
+        },
+        {
+          "id": "a3",
+          "text": "Ottimista"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Eppure, la logica burocratica ignora la realtà quotidiana: in caso di emergenza, l'accesso immediato e intuitivo all'informazione è vitale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'invalicabile'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che è molto profondo"
+        },
+        {
+          "id": "a2",
+          "text": "Che è troppo difficile"
+        },
+        {
+          "id": "a3",
+          "text": "Che non si può superare"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La tecnologia, pensata per semplificare, è diventata un muro invalicabile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve email al sindaco di Borgo Fluviale proponendo una soluzione ibrida che integri la tecnologia con l'accessibilità cartacea per garantire la sicurezza di tutti i cittadini.",
+      "en": "Scrivi una breve email al sindaco di Borgo Fluviale proponendo una soluzione ibrida che integri la tecnologia con l'accessibilità cartacea per garantire la sicurezza di tutti i cittadini."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leggi l'articolo e valuta come la tecnologia possa diventare una barriera per la sicurezza pubblica in contesti locali.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:02:46.693Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'inchiostro contro il pixel: una battaglia per la sicurezza | B2 Reading | WeLearn",
+      "en": "L'inchiostro contro il pixel: una battaglia per la sicurezza | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un gruppo di cittadini di Borgo Fluviale affronta le difficoltà tecnologiche legate alla prevenzione delle inondazioni, mettendo in discussione la digitalizzazione esclusiva dei servizi pubblici.",
+      "en": "Un gruppo di cittadini di Borgo Fluviale affronta le difficoltà tecnologiche legate alla prevenzione delle inondazioni, mettendo in discussione la digitalizzazione esclusiva dei servizi pubblici."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:02:46.693Z"
+  }
+}

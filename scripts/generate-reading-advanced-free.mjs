@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises'
+import { readFile, readdir, statfs, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { ADVANCED_BRIEFS } from '../src/data/reading/advanced-scale-briefs.mjs'
@@ -15,9 +15,48 @@ const units = { en: 'words', fr: 'words', it: 'words', de: 'words', pt: 'words',
 const targets = { B2: { en: [400, 700], ja: [800, 1300], ko: [220, 380] }, C1: { en: [650, 1100], ja: [1200, 1900], ko: [340, 550] }, C2: { en: [800, 1500], ja: [1600, 2500], ko: [430, 700] } }
 const skills = ['global', 'detail', 'inference', 'purpose', 'tone', 'vocabulary']
 const date = new Date().toISOString()
+const minimumFreeBytes = 1_000_000_000
 const ui = (value) => ({ es: value, en: value })
 const count = (text, language) => language === 'ja' ? countJapaneseCharacters(text) : text.trim().split(/\s+/u).filter(Boolean).length
 const target = (language, level) => targets[level][language] ?? targets[level].en
+async function ensureDiskSpace() {
+  const disk = await statfs(root)
+  if (disk.bavail * disk.bsize < minimumFreeBytes) throw new Error('Less than 1 GB of free disk space; stop generation before writing another draft.')
+}
+
+function nearestSurface(text, surface) {
+  const source = [...text.matchAll(/[\p{L}\p{N}]+/gu)].map((match) => ({ value: match[0], start: match.index, end: match.index + match[0].length }))
+  const wanted = surface.match(/[\p{L}\p{N}]+/gu) ?? []
+  if (!wanted.length || wanted.length > 4) return null
+  const normalize = (value) => value.normalize('NFKD').replace(/\p{M}/gu, '').toLocaleLowerCase()
+  const similarity = (left, right) => {
+    const a = normalize(left)
+    const b = normalize(right)
+    const row = Array.from({ length: b.length + 1 }, (_, index) => index)
+    for (let i = 1; i <= a.length; i++) {
+      let diagonal = row[0]
+      row[0] = i
+      for (let j = 1; j <= b.length; j++) {
+        const previous = row[j]
+        row[j] = Math.min(row[j] + 1, row[j - 1] + 1, diagonal + (a[i - 1] === b[j - 1] ? 0 : 1))
+        diagonal = previous
+      }
+    }
+    return 1 - row[b.length] / Math.max(a.length, b.length, 1)
+  }
+  let winner = null
+  let best = 0
+  for (let index = 0; index <= source.length - wanted.length; index++) {
+    const scores = wanted.map((word, offset) => similarity(word, source[index + offset].value))
+    if (scores.some((score) => score < 0.72)) continue
+    const score = scores.reduce((sum, value) => sum + value, 0) / scores.length
+    if (score > best) {
+      best = score
+      winner = text.slice(source[index].start, source[index + wanted.length - 1].end)
+    }
+  }
+  return best >= 0.78 ? winner : null
+}
 
 if (args.language && !languages[args.language]) throw new Error(`Unknown language: ${args.language}`)
 if (args.level && !levels.includes(args.level)) throw new Error(`Unknown level: ${args.level}`)
@@ -76,7 +115,11 @@ function parseAndCheck(raw, language, level, { allowShort = false } = {}) {
     if (!item.text.includes(vocab.surface)) {
       const index = item.text.toLocaleLowerCase().indexOf(vocab.surface.toLocaleLowerCase())
       if (index >= 0) vocab.surface = item.text.slice(index, index + vocab.surface.length)
-      else errors.push('invalid vocabulary surface/gloss')
+      else {
+        const replacement = nearestSurface(item.text, vocab.surface)
+        if (replacement) vocab.surface = replacement
+        else errors.push(`vocabulary surface absent from text: ${vocab.surface.slice(0, 70)}`)
+      }
     }
   }
   if (!Array.isArray(item.questions) || item.questions.length !== 6) errors.push('expected six questions')
@@ -179,6 +222,7 @@ let failedCount = 0
 let providerOutageStreak = 0
 for (const { language, level, brief } of pending) {
   if (completed >= maximum) break
+  await ensureDiskSpace()
   const templateName = (await readdir(exerciseDir)).find((file) => file.startsWith(`${language}-${level.toLowerCase()}-`) && !ADVANCED_BRIEFS.some((candidate) => file.endsWith(`-${candidate.slug}.json`)))
   if (!templateName) throw new Error(`No pilot template for ${language}/${level}`)
   const template = JSON.parse(await readFile(path.join(exerciseDir, templateName), 'utf8'))
@@ -210,6 +254,7 @@ for (const { language, level, brief } of pending) {
   }
   providerOutageStreak = 0
   const exercise = makeExercise(item, language, level, brief, template)
+  await ensureDiskSpace()
   await writeFile(path.join(exerciseDir, `${exercise.id}.json`), `${JSON.stringify(exercise, null, 2)}\n`)
   completed++
   console.log(`✓ ${exercise.id}: ${exercise.content.wordCount} ${units[language]}`)

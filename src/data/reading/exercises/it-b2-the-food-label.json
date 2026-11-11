@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-food-label",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Oltre la data: Il dilemma di Villafranca",
+      "en": "Oltre la data: Il dilemma di Villafranca"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla nuova politica di etichettatura del mercato rionale di Villafranca e le reazioni contrastanti dei consumatori.",
+      "en": "Un'analisi critica sulla nuova politica di etichettatura del mercato rionale di Villafranca e le reazioni contrastanti dei consumatori."
+    },
+    "mission": {
+      "es": "Comprendere le implicazioni pratiche e le sfide etiche legate alla riduzione dello spreco alimentare attraverso le nuove etichette di qualità.",
+      "en": "Comprendere le implicazioni pratiche e le sfide etiche legate alla riduzione dello spreco alimentare attraverso le nuove etichette di qualità."
+    },
+    "targetText": "Il mercato rionale di Villafranca ha recentemente adottato una strategia audace per combattere lo spreco alimentare: la sostituzione delle classiche date di scadenza con un sistema basato sulla 'qualità percepita'. Il direttore del mercato, Marco Valenti, ha introdotto etichette che indicano il grado di freschezza ottimale, sperando di incoraggiare i clienti a valutare i prodotti con i propri sensi anziché affidarsi ciecamente a un calendario. L'iniziativa, lanciata lunedì mattina, ha trasformato i banchi in laboratori di educazione alimentare, dove i venditori, come la signora Elena, spiegano pazientemente che un pomodoro leggermente ammaccato non è necessariamente da buttare.\n\nTuttavia, il cambiamento ha generato una tensione palpabile. Durante il pomeriggio di martedì, un gruppo di clienti abituali ha espresso forti riserve. La signora Clara, una cliente storica, ha sollevato un punto cruciale: 'Come possiamo distinguere un prodotto sicuro da uno pericoloso se non abbiamo parametri oggettivi?'. La sua preoccupazione, condivisa da molti, evidenzia il conflitto tra l'intenzione nobile del mercato e la responsabilità individuale che viene improvvisamente delegata al consumatore, spesso impreparato a gestire tale autonomia decisionale.\n\nLa situazione è giunta a un punto critico mercoledì mattina, quando un cliente ha contestato l'acquisto di una confezione di formaggio fresco, etichettata come 'ancora ottima' dal venditore ma rivelatasi alterata una volta aperta a casa. Questo episodio ha scatenato un acceso dibattito tra gli acquirenti presenti, mettendo in luce l'incertezza intrinseca del nuovo metodo. Valenti, pur difendendo la filosofia del progetto, si è trovato costretto a promettere l'integrazione di guide visive più dettagliate per assistere i clienti meno esperti, cercando di mediare tra la libertà di scelta e la sicurezza alimentare.\n\nNonostante le critiche, il progetto ha il merito indiscutibile di aver aperto un dialogo necessario. La sfida non risiede solo nella gestione dei prodotti, ma nella ricostruzione di un rapporto di fiducia tra chi vende e chi compra. Il mercato di Villafranca sta cercando di superare la cultura dello scarto, ma la transizione richiede tempo e una competenza che la società moderna ha in gran parte dimenticato. La questione rimane aperta: è possibile educare il consumatore senza rischiare la salute pubblica?\n\nIn conclusione, l'esperimento di Villafranca rappresenta un banco di prova significativo. Sebbene l'intenzione di ridurre lo spreco sia lodevole, la mancanza di standard chiari crea un vuoto normativo che genera ansia. Il successo futuro dipenderà dalla capacità del mercato di bilanciare l'autonomia del cliente con garanzie concrete, trasformando un'iniziativa pionieristica in un modello sostenibile e sicuro per tutti.",
+    "wordCount": 406,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "rionale",
+        "lemma": "rionale",
+        "glosses": {
+          "es": "local/district-level",
+          "en": "local/district-level"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "audace",
+        "lemma": "audace",
+        "glosses": {
+          "es": "bold",
+          "en": "bold"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ammaccato",
+        "lemma": "ammaccato",
+        "glosses": {
+          "es": "bruised",
+          "en": "bruised"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intrinseca",
+        "lemma": "intrinseca",
+        "glosses": {
+          "es": "intrinsic",
+          "en": "intrinsic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pionieristica",
+        "lemma": "pionieristica",
+        "glosses": {
+          "es": "pioneering",
+          "en": "pioneering"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lodevole",
+        "lemma": "lodevole",
+        "glosses": {
+          "es": "praiseworthy",
+          "en": "praiseworthy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.6,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:06:08.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è l'argomento principale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'efficacia delle etichette."
+        },
+        {
+          "id": "a2",
+          "text": "La ristrutturazione logistica completa del complesso edilizio."
+        },
+        {
+          "id": "a3",
+          "text": "La revisione normativa delle sanzioni amministrative locali."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il mercato rionale di Villafranca ha recentemente adottato una strategia audace per combattere lo spreco alimentare: la sostituzione delle classiche date di scadenza con un sistema basato sulla 'qualità percepita'.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa è successo mercoledì mattina?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un furto."
+        },
+        {
+          "id": "a2",
+          "text": "Un cliente ha protestato."
+        },
+        {
+          "id": "a3",
+          "text": "La consegna di merce avariata al magazzino centrale."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La situazione è giunta a un punto critico mercoledì mattina, quando un cliente ha contestato l'acquisto di una confezione di formaggio fresco",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché i clienti sono preoccupati?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I prezzi sono alti."
+        },
+        {
+          "id": "a2",
+          "text": "Il cibo è scadente."
+        },
+        {
+          "id": "a3",
+          "text": "Mancano criteri oggettivi."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Come possiamo distinguere un prodotto sicuro da uno pericoloso se non abbiamo parametri oggettivi?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo del direttore Valenti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evitare lo spreco."
+        },
+        {
+          "id": "a2",
+          "text": "Aumentare le vendite."
+        },
+        {
+          "id": "a3",
+          "text": "Cambiare la legge."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "sperando di incoraggiare i clienti a valutare i prodotti con i propri sensi anziché affidarsi ciecamente a un calendario.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è l'atteggiamento dell'autore verso il progetto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Totalmente critico."
+        },
+        {
+          "id": "a2",
+          "text": "Equilibrato."
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sebbene l'intenzione di ridurre lo spreco sia lodevole, la mancanza di standard chiari crea un vuoto normativo che genera ansia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'pionieristica' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Molto antica."
+        },
+        {
+          "id": "a2",
+          "text": "Già provata."
+        },
+        {
+          "id": "a3",
+          "text": "Sperimentale."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "trasformando un'iniziativa pionieristica in un modello sostenibile e sicuro per tutti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve paragrafo (80-100 parole) in cui esprimi la tua opinione: preferisci affidarti alle date di scadenza stampate o preferiresti imparare a valutare la freschezza degli alimenti autonomamente? Motiva la tua risposta considerando i rischi e i benefici.",
+      "en": "Scrivi un breve paragrafo (80-100 parole) in cui esprimi la tua opinione: preferisci affidarti alle date di scadenza stampate o preferiresti imparare a valutare la freschezza degli alimenti autonomamente? Motiva la tua risposta considerando i rischi e i benefici."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Comprendere le implicazioni pratiche e le sfide etiche legate alla riduzione dello spreco alimentare attraverso le nuove etichette di qualità.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:06:08.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Oltre la data: Il dilemma di Villafranca | B2 Reading | WeLearn",
+      "en": "Oltre la data: Il dilemma di Villafranca | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla nuova politica di etichettatura del mercato rionale di Villafranca e le reazioni contrastanti dei consumatori.",
+      "en": "Un'analisi critica sulla nuova politica di etichettatura del mercato rionale di Villafranca e le reazioni contrastanti dei consumatori."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:06:08.719Z"
+  }
+}

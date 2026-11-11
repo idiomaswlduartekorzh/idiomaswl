@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-shared-desks",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Herausforderung im Shared-Desk-Modell",
+      "en": "Herausforderung im Shared-Desk-Modell"
+    },
+    "intro": {
+      "es": "Eine interne E-Mail-Korrespondenz zwischen der Geschäftsführung und der Grafikabteilung über die Tücken des neuen Bürokonzepts.",
+      "en": "Eine interne E-Mail-Korrespondenz zwischen der Geschäftsführung und der Grafikabteilung über die Tücken des neuen Bürokonzepts."
+    },
+    "mission": {
+      "es": "Leseverständnis einer E-Mail über Arbeitsplatzmanagement und die Balance zwischen Flexibilität und praktischen Notwendigkeiten.",
+      "en": "Leseverständnis einer E-Mail über Arbeitsplatzmanagement und die Balance zwischen Flexibilität und praktischen Notwendigkeiten."
+    },
+    "targetText": "Betreff: Dringende Klärung zur Lagerung von Grafik-Hardware\n\nLiebe Frau Weber, ich schreibe Ihnen bezüglich der aktuellen Situation in unserem Open-Space-Büro. Seit wir das Desk-Sharing-Modell eingeführt haben, genießen viele Kollegen die Flexibilität, ihre Arbeitstage frei zu wählen. Dennoch stoßen wir in der Grafikabteilung auf erhebliche Hindernisse. Da wir keine festen Arbeitsplätze mehr haben, müssen wir unsere speziellen Grafiktabletts und hochauflösenden Monitore jeden Abend in den Schließfächern verstauen. Diese Schließfächer sind jedoch für unsere sperrige Ausrüstung schlichtweg zu klein konzipiert worden.\n\nZugegebenermaßen hat das neue Modell die Kommunikation zwischen den Abteilungen gefördert, da man nun öfter neben Kollegen aus dem Marketing oder dem Vertrieb sitzt. Wir schätzen den Austausch sehr, doch die tägliche Logistik raubt uns wertvolle Zeit. Gestern musste Herr Müller seine Arbeit unterbrechen, weil das Kabel seines Tabletts beim Verstauen beschädigt wurde. Ein solcher Vorfall ist nicht nur ärgerlich, sondern beeinträchtigt direkt unsere Produktivität bei den anstehenden Projekten.\n\nWir haben versucht, die Geräte in den gemeinschaftlichen Regalen unterzubringen, aber dort herrscht bereits Platzmangel aufgrund der Aktenordner der Buchhaltung. Es scheint, als wäre die Infrastruktur des Büros nicht auf die spezifischen Hardwareanforderungen unserer kreativen Arbeit ausgerichtet. Wir benötigen eine Lösung, die über das bloße „Hot-Desking“ hinausgeht, um unsere Arbeitsmittel sicher und griffbereit zu halten.\n\nIch schlage vor, dass wir einen Bereich im hinteren Teil des Büros als dedizierte Hardware-Station ausweisen. Dort könnten wir unsere Geräte sicher einschließen, ohne sie täglich durch das gesamte Gebäude tragen zu müssen. Dies würde den täglichen Stress minimieren und sicherstellen, dass die Technik intakt bleibt. Ohne eine solche Anpassung sehe ich die Gefahr, dass die Qualität unserer digitalen Entwürfe unter der ständigen Umräumerei leidet.\n\nIch bitte Sie daher um ein kurzes Gespräch, um diese Option zu prüfen. Sollten wir keine Einigung finden, müsste ich die Geschäftsführung bitten, die Hardware-Anforderungen als Ausnahme vom Desk-Sharing-Prinzip zu behandeln. Wir möchten das neue Modell unterstützen, aber die Sicherheit unserer Arbeitsmittel hat für uns oberste Priorität. Ich bin gespannt auf Ihre Rückmeldung und hoffe, dass wir zeitnah eine pragmatische Lösung für dieses logistische Problem finden können.\n\nAllerdings darf man nicht außer Acht lassen, dass eine solche Ausnahmeregelung das Gemeinschaftsgefühl innerhalb des Open-Space-Büros langfristig gefährden könnte. Wenn einzelne Abteilungen ihre festen Bereiche zurückfordern, droht eine schleichende Rückkehr zur alten Abteilungsisolation, die wir eigentlich durch das Desk-Sharing überwinden wollten. Wir müssen daher sorgfältig abwägen, ob eine räumliche Trennung der Grafik-Hardware nicht das Risiko birgt, die neu gewonnene Flexibilität wieder einzuschränken. Vielleicht lässt sich durch ein modulares Schließfachsystem eine Lösung finden, die sowohl die technische Sicherheit gewährleistet als auch unseren modernen Arbeitsansatz weiterhin konsequent unterstützt.",
+    "wordCount": 421,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Desk-Sharing-Modell",
+        "lemma": "Desk-Sharing-Modell",
+        "glosses": {
+          "es": "a workspace arrangement where employees do not have assigned desks",
+          "en": "a workspace arrangement where employees do not have assigned desks"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Hindernisse",
+        "lemma": "Hindernisse",
+        "glosses": {
+          "es": "obstacles or barriers",
+          "en": "obstacles or barriers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sperrige",
+        "lemma": "sperrige",
+        "glosses": {
+          "es": "bulky or cumbersome",
+          "en": "bulky or cumbersome"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Infrastruktur",
+        "lemma": "Infrastruktur",
+        "glosses": {
+          "es": "the basic physical and organizational structures",
+          "en": "the basic physical and organizational structures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dedizierte",
+        "lemma": "dedizierte",
+        "glosses": {
+          "es": "dedicated or assigned for a specific purpose",
+          "en": "dedicated or assigned for a specific purpose"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatische",
+        "lemma": "pragmatische",
+        "glosses": {
+          "es": "practical or realistic",
+          "en": "practical or realistic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptanliegen der E-Mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein Vorschlag zur Lagerung."
+        },
+        {
+          "id": "a2",
+          "text": "Die Abschaffung des Modells."
+        },
+        {
+          "id": "a3",
+          "text": "Ein Wunsch nach mehr Platz."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ich schlage vor, dass wir einen Bereich im hinteren Teil des Büros als dedizierte Hardware-Station ausweisen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum ist das Verstauen der Geräte problematisch?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Schlösser sind defekt."
+        },
+        {
+          "id": "a2",
+          "text": "Die Schließfächer sind zu klein."
+        },
+        {
+          "id": "a3",
+          "text": "Es gibt zu wenig Schließfächer."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Diese Schließfächer sind jedoch für unsere sperrige Ausrüstung schlichtweg zu klein konzipiert worden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht die Grafikabteilung zum Desk-Sharing-Modell?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie lehnen es grundsätzlich ab."
+        },
+        {
+          "id": "a2",
+          "text": "Sie sind gespalten in der Meinung."
+        },
+        {
+          "id": "a3",
+          "text": "Sie befürworten das Konzept in der Theorie."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wir möchten das neue Modell unterstützen, aber die Sicherheit unserer Arbeitsmittel hat für uns oberste Priorität.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum erwähnt die Autorin den Vorfall mit Herrn Müller?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Dringlichkeit zu verdeutlichen."
+        },
+        {
+          "id": "a2",
+          "text": "Um den Kollegen Müller zu kritisieren."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Kosten der Hardware zu betonen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ein solcher Vorfall ist nicht nur ärgerlich, sondern beeinträchtigt direkt unsere Produktivität bei den anstehenden Projekten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welchen Ton schlägt die Autorin gegenüber Frau Weber an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggressiv und fordernd."
+        },
+        {
+          "id": "a2",
+          "text": "Kooperativ und lösungsorientiert."
+        },
+        {
+          "id": "a3",
+          "text": "Gleichgültig und distanziert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ich bin gespannt auf Ihre Rückmeldung und hoffe, dass wir zeitnah eine pragmatische Lösung für dieses logistische Problem finden können.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort „sperrige“ im Kontext der E-Mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr teuer und wertvoll."
+        },
+        {
+          "id": "a2",
+          "text": "Veraltet und kaputt."
+        },
+        {
+          "id": "a3",
+          "text": "Groß und unhandlich."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Diese Schließfächer sind jedoch für unsere sperrige Ausrüstung schlichtweg zu klein konzipiert worden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine Antwort-E-Mail aus der Sicht von Frau Weber. Gehen Sie auf den Vorschlag der Hardware-Station ein und schlagen Sie einen Kompromiss vor, der sowohl die Sicherheit der Geräte als auch die Prinzipien des Desk-Sharings berücksichtigt.",
+      "en": "Schreiben Sie eine Antwort-E-Mail aus der Sicht von Frau Weber. Gehen Sie auf den Vorschlag der Hardware-Station ein und schlagen Sie einen Kompromiss vor, der sowohl die Sicherheit der Geräte als auch die Prinzipien des Desk-Sharings berücksichtigt."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leseverständnis einer E-Mail über Arbeitsplatzmanagement und die Balance zwischen Flexibilität und praktischen Notwendigkeiten.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Herausforderung im Shared-Desk-Modell | B2 Reading | WeLearn",
+      "en": "Herausforderung im Shared-Desk-Modell | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine interne E-Mail-Korrespondenz zwischen der Geschäftsführung und der Grafikabteilung über die Tücken des neuen Bürokonzepts.",
+      "en": "Eine interne E-Mail-Korrespondenz zwischen der Geschäftsführung und der Grafikabteilung über die Tücken des neuen Bürokonzepts."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

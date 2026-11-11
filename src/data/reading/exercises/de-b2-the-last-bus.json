@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-last-bus",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Ende der Linie: Mobilität im Wandel",
+      "en": "Das Ende der Linie: Mobilität im Wandel"
+    },
+    "intro": {
+      "es": "In der Gemeinde Altdorf wurde der letzte Abendbus durch ein Rufbussystem ersetzt. Lesen Sie den Bericht über die Auswirkungen auf die Bewohner.",
+      "en": "In der Gemeinde Altdorf wurde der letzte Abendbus durch ein Rufbussystem ersetzt. Lesen Sie den Bericht über die Auswirkungen auf die Bewohner."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam und beantworten Sie die anschließenden Fragen zur inhaltlichen Analyse.",
+      "en": "Lesen Sie den Text aufmerksam und beantworten Sie die anschließenden Fragen zur inhaltlichen Analyse."
+    },
+    "targetText": "Die Gemeinde Altdorf hat eine weitreichende Entscheidung getroffen: Der letzte fahrplanmäßige Linienbus, der bisher um 22:30 Uhr die umliegenden Dörfer ansteuerte, wurde ersatzlos gestrichen. An seine Stelle tritt nun der ‚Flexi-Shuttle‘, ein bedarfsgesteuerter Kleinbus, der per App angefordert werden muss. Während die Lokalpolitik den Schritt als notwendige Modernisierung feiert, prallen in der Bevölkerung gegensätzliche Lebensrealitäten aufeinander. Für junge Berufstätige wie den 24-jährigen Softwareentwickler Lukas scheint das System ein Segen zu sein. Er schätzt die Flexibilität, da er nun nicht mehr an feste Abfahrtszeiten gebunden ist, wenn er nach einem späten Projektmeeting im Nachbarort nach Hause möchte. „Ich buche den Shuttle über mein Smartphone, und zehn Minuten später steht er vor der Tür“, erklärt er begeistert. Für ihn ist die Digitalisierung des Nahverkehrs ein logischer Schritt in eine effizientere Zukunft.\n\nDemgegenüber steht die Perspektive der älteren Generation, die den Wandel mit Skepsis betrachtet. Die 78-jährige Rentnerin Martha, die regelmäßig ihre Tochter im Nachbarort besucht, fühlt sich durch die neue Regelung zunehmend isoliert. Für sie ist die App-Bedienung eine unüberwindbare Barriere, und die Vorstellung, bei Dunkelheit an einer unbeleuchteten Haltestelle auf ein Fahrzeug zu warten, das vielleicht erst nach einer halben Stunde erscheint, bereitet ihr Unbehagen. „Der Bus war ein fester Ankerpunkt in meinem Alltag“, sagt sie. „Man wusste, wann er kommt, und man traf dort immer dieselben Nachbarn. Jetzt fühle ich mich wie ein Bittsteller, der um eine Mitfahrgelegenheit betteln muss.“\n\nDie Kritik der Senioren stößt bei der Gemeindeverwaltung auf Verständnis, doch die ökonomischen Argumente wiegen schwer. Der alte Linienbus fuhr abends oft fast leer durch die Gegend, was hohe Betriebskosten verursachte, die das Budget der Gemeinde stark belasteten. Die Umstellung soll nun Ressourcen freisetzen, um das Angebot in den Hauptverkehrszeiten zu verbessern. Dennoch bleibt ein fader Beigeschmack: Die soziale Funktion des öffentlichen Nahverkehrs als Treffpunkt der Dorfgemeinschaft geht verloren. Der Shuttle ist ein funktionales Transportmittel, kein Ort der Begegnung mehr.\n\nDer Konflikt erreichte seinen Höhepunkt, als die Gemeinde den letzten physischen Fahrkartenautomaten am Marktplatz abbaute. Dies wurde von vielen als endgültiger Abschied von der analogen Welt wahrgenommen. Ein lokaler Bürgerverein hat nun eine Petition gestartet, die zumindest eine telefonische Buchungsoption für den Shuttle fordert, um die digitale Hürde zu senken. Die Gemeindeverwaltung zögert jedoch, da dies zusätzliche Personalkosten verursachen würde.\n\nDie Situation in Altdorf ist bezeichnend für den ländlichen Raum. Während die Effizienz steigt, schwindet das Gemeinschaftsgefühl. Es bleibt die Frage, ob technischer Fortschritt immer auf Kosten derjenigen gehen muss, die sich nicht anpassen können. Die Antwort darauf bleibt in Altdorf vorerst offen, während die ersten Shuttles durch die nächtlichen Straßen gleiten – effizient, aber einsam.",
+    "wordCount": 426,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bedarfsgesteuerter",
+        "lemma": "bedarfsgesteuerter",
+        "glosses": {
+          "es": "on-demand",
+          "en": "on-demand"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unüberwindbare",
+        "lemma": "unüberwindbare",
+        "glosses": {
+          "es": "insurmountable",
+          "en": "insurmountable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Beigeschmack",
+        "lemma": "Beigeschmack",
+        "glosses": {
+          "es": "aftertaste",
+          "en": "aftertaste"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ressourcen",
+        "lemma": "Ressourcen",
+        "glosses": {
+          "es": "resources",
+          "en": "resources"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Barriere",
+        "lemma": "Barriere",
+        "glosses": {
+          "es": "barrier",
+          "en": "barrier"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Betriebskosten",
+        "lemma": "Betriebskosten",
+        "glosses": {
+          "es": "operating costs",
+          "en": "operating costs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.4,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Berichts?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Wandel des Nahverkehrs in Altdorf."
+        },
+        {
+          "id": "a2",
+          "text": "Die Digitalisierung der Verwaltung."
+        },
+        {
+          "id": "a3",
+          "text": "Die Proteste gegen den neuen Fahrplan."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Gemeinde Altdorf hat eine weitreichende Entscheidung getroffen: Der letzte fahrplanmäßige Linienbus, der bisher um 22:30 Uhr die umliegenden Dörfer ansteuerte, wurde ersatzlos gestrichen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum wurde der Linienbus abgeschafft?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Auf Wunsch der Pendler."
+        },
+        {
+          "id": "a2",
+          "text": "Wegen der hohen Kosten."
+        },
+        {
+          "id": "a3",
+          "text": "Wegen technischer Mängel."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Der alte Linienbus fuhr abends oft fast leer durch die Gegend, was hohe Betriebskosten verursachte, die das Budget der Gemeinde stark belasteten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht Martha zum neuen System?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie findet es zu teuer."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ist technisch versiert."
+        },
+        {
+          "id": "a3",
+          "text": "Sie fühlt sich ausgeschlossen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die 78-jährige Rentnerin Martha, die regelmäßig ihre Tochter im Nachbarort besucht, fühlt sich durch die neue Regelung zunehmend isoliert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Bürgerverein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er fordert eine telefonische Buchung."
+        },
+        {
+          "id": "a2",
+          "text": "Er will den alten Bus zurück."
+        },
+        {
+          "id": "a3",
+          "text": "Er möchte die Shuttles verbieten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ein lokaler Bürgerverein hat nun eine Petition gestartet, die zumindest eine telefonische Buchungsoption für den Shuttle fordert, um die digitale Hürde zu senken.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie wird die Stimmung im letzten Absatz beschrieben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und zukunftsorientiert."
+        },
+        {
+          "id": "a2",
+          "text": "Nachdenklich und leicht melancholisch."
+        },
+        {
+          "id": "a3",
+          "text": "Neutral und rein sachlich gehalten."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Es bleibt die Frage, ob technischer Fortschritt immer auf Kosten derjenigen gehen muss, die sich nicht anpassen können.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort 'Barriere' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein physisches Hindernis."
+        },
+        {
+          "id": "a2",
+          "text": "Eine gesetzliche Bestimmung."
+        },
+        {
+          "id": "a3",
+          "text": "Eine schwierige Herausforderung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Für sie ist die App-Bedienung eine unüberwindbare Barriere, und die Vorstellung, bei Dunkelheit an einer unbeleuchteten Haltestelle auf ein Fahrzeug zu warten",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (100 Wörter), in dem Sie argumentieren, ob technische Innovationen im öffentlichen Nahverkehr immer eine analoge Alternative für ältere Menschen beinhalten sollten.",
+      "en": "Schreiben Sie einen kurzen Kommentar (100 Wörter), in dem Sie argumentieren, ob technische Innovationen im öffentlichen Nahverkehr immer eine analoge Alternative für ältere Menschen beinhalten sollten."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Text aufmerksam und beantworten Sie die anschließenden Fragen zur inhaltlichen Analyse.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Ende der Linie: Mobilität im Wandel | B2 Reading | WeLearn",
+      "en": "Das Ende der Linie: Mobilität im Wandel | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In der Gemeinde Altdorf wurde der letzte Abendbus durch ein Rufbussystem ersetzt. Lesen Sie den Bericht über die Auswirkungen auf die Bewohner.",
+      "en": "In der Gemeinde Altdorf wurde der letzte Abendbus durch ein Rufbussystem ersetzt. Lesen Sie den Bericht über die Auswirkungen auf die Bewohner."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

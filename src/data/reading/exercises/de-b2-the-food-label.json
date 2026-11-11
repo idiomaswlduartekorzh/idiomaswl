@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-food-label",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Ende der Haltbarkeits-Diktatur",
+      "en": "Das Ende der Haltbarkeits-Diktatur"
+    },
+    "intro": {
+      "es": "Ein lokaler Supermarkt führt neue Kennzeichnungen ein, um Lebensmittelverschwendung zu bekämpfen. Wir analysieren die Auswirkungen auf die Kunden.",
+      "en": "Ein lokaler Supermarkt führt neue Kennzeichnungen ein, um Lebensmittelverschwendung zu bekämpfen. Wir analysieren die Auswirkungen auf die Kunden."
+    },
+    "mission": {
+      "es": "Leseverständnis und kritische Reflexion über nachhaltigen Konsum bei Lebensmitteln.",
+      "en": "Leseverständnis und kritische Reflexion über nachhaltigen Konsum bei Lebensmitteln."
+    },
+    "targetText": "Als der Inhaber des Marktes 'FrischeQuelle', Herr Weber, letzte Woche die traditionellen Mindesthaltbarkeitsdaten durch eine differenzierte Kennzeichnung ersetzte, löste dies eine hitzige Debatte aus. Anstatt starrer Kalenderdaten kleben nun Aufkleber mit dem Hinweis 'Oft länger gut' auf vielen Produkten. Frau Schneider, eine treue Stammkundin, begrüßte die Initiative zunächst als mutigen Schritt gegen die unnötige Entsorgung einwandfreier Waren. Sie betonte, dass der gesunde Menschenverstand in den letzten Jahren durch die Angst vor abgelaufenen Produkten vollständig verdrängt wurde.\n\nDennoch blieb die Skepsis im Viertel spürbar. Während die junge Generation die neue Transparenz feiert, äußerten ältere Kunden wie Herr Meyer Bedenken bezüglich der Lebensmittelsicherheit. Er argumentierte, dass die Verantwortung nun einseitig auf den Käufer übertragen werde. Wenn er nun einen Joghurt kaufe, der laut Etikett zwar noch gut sein könnte, aber dennoch verdorben sei, wer trage dann die gesundheitliche Konsequenz? Die klare Grenze zwischen Sicherheit und Risiko verschwimmt, sobald die objektive Garantie des Herstellers entfällt.\n\nDie Situation eskalierte am Dienstagabend, als ein Kunde an der Kasse lautstark reklamierte, dass seine Milch trotz des neuen Siegels sauer schmeckte. Weber musste eingestehen, dass die neue Kennzeichnung keine wissenschaftliche Prüfung ersetzt. Er versuchte zu erklären, dass die sensorische Prüfung – Riechen, Sehen, Schmecken – wieder erlernt werden müsse. Die hitzige Diskussion im Kassenbereich verdeutlichte das Kernproblem: Die Kunden fordern Nachhaltigkeit, scheuen sich aber vor der damit verbundenen Eigenverantwortung bei der Qualitätsbeurteilung.\n\nZugegeben, die Initiative reduziert den Müll messbar. Die wöchentliche Menge an entsorgten Molkereiprodukten ist seit der Umstellung drastisch gesunken. Doch der Preis dafür ist ein latentes Misstrauen bei jedem Einkauf. Kunden verbringen nun deutlich mehr Zeit in den Kühlregalen, um die Beschaffenheit der Waren kritisch zu prüfen. Was als Entlastung für das Gewissen gedacht war, hat sich für viele zu einer täglichen Belastungsprobe entwickelt, bei der die eigene Wahrnehmung gegen die vagen Versprechen des Marktes steht.\n\nLetztlich bleibt die Frage offen, ob eine Gesellschaft, die sich an absolute Sicherheit gewöhnt hat, überhaupt bereit ist für diese Art der Eigenverantwortung. Herr Weber hält an seinem Konzept fest, doch die Stimmung bleibt gespalten. Die 'FrischeQuelle' ist nun ein Labor für ein neues Konsumverhalten, in dem die Grenze zwischen ökologischem Fortschritt und praktischer Unsicherheit hauchdünn ist. Ob dieses Modell Schule macht, hängt nicht nur von der Reduzierung der Abfallberge ab, sondern davon, ob die Kunden ihren eigenen Sinnen wieder vertrauen lernen oder ob sie bald wieder nach den alten, starren Daten verlangen werden.\n\nSollte das Vertrauen in diese Eigenverantwortung jedoch weiter schwinden, droht das Projekt an der mangelnden Akzeptanz zu scheitern, was den mühsam erkämpften ökologischen Fortschritt gefährden könnte.",
+    "wordCount": 421,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Mindesthaltbarkeitsdaten",
+        "lemma": "Mindesthaltbarkeitsdaten",
+        "glosses": {
+          "es": "best-before dates",
+          "en": "best-before dates"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "differenzierte",
+        "lemma": "differenzierte",
+        "glosses": {
+          "es": "differentiated",
+          "en": "differentiated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Skepsis",
+        "lemma": "Skepsis",
+        "glosses": {
+          "es": "skepticism",
+          "en": "skepticism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sensorische",
+        "lemma": "sensorische",
+        "glosses": {
+          "es": "sensory",
+          "en": "sensory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latentes",
+        "lemma": "latentes",
+        "glosses": {
+          "es": "latent",
+          "en": "latent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hauchdünn",
+        "lemma": "hauchdünn",
+        "glosses": {
+          "es": "razor-thin",
+          "en": "razor-thin"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.3,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neue Kennzeichnungssysteme"
+        },
+        {
+          "id": "a2",
+          "text": "Die Effizienz von Supermärkten"
+        },
+        {
+          "id": "a3",
+          "text": "Die Kritik an Webers Markt"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Anstatt starrer Kalenderdaten kleben nun Aufkleber mit dem Hinweis 'Oft länger gut' auf vielen Produkten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welches Problem hatte der Kunde am Dienstagabend?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Preis war falsch"
+        },
+        {
+          "id": "a2",
+          "text": "Die Milch war sauer"
+        },
+        {
+          "id": "a3",
+          "text": "Das Etikett fehlte"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "als ein Kunde an der Kasse lautstark reklamierte, dass seine Milch trotz des neuen Siegels sauer schmeckte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum zögern einige Kunden bei der neuen Kennzeichnung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie mögen keine Aufkleber"
+        },
+        {
+          "id": "a2",
+          "text": "Sie bevorzugen Plastikverpackungen"
+        },
+        {
+          "id": "a3",
+          "text": "Sie fürchten das Risiko"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wenn er nun einen Joghurt kaufe, der laut Etikett zwar noch gut sein könnte, aber dennoch verdorben sei, wer trage dann die gesundheitliche Konsequenz?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt Herr Weber mit der Änderung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Abfallmenge zu verringern"
+        },
+        {
+          "id": "a2",
+          "text": "Die Preise zu erhöhen"
+        },
+        {
+          "id": "a3",
+          "text": "Die Kunden zu verwirren"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Frau Schneider, eine treue Stammkundin, begrüßte die Initiative zunächst als mutigen Schritt gegen die unnötige Entsorgung einwandfreier Waren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie wird die Stimmung im Markt beschrieben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eindeutig positiv"
+        },
+        {
+          "id": "a2",
+          "text": "Zutiefst gespalten"
+        },
+        {
+          "id": "a3",
+          "text": "Völlig gleichgültig"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Herr Weber hält an seinem Konzept fest, doch die Stimmung bleibt gespalten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort 'hauchdünn' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr zerbrechlich"
+        },
+        {
+          "id": "a2",
+          "text": "Kaum wahrnehmbar"
+        },
+        {
+          "id": "a3",
+          "text": "Extrem schmal oder fein"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "in dem die Grenze zwischen ökologischem Fortschritt und praktischer Unsicherheit hauchdünn ist.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine E-Mail an den Inhaber, in der Sie Ihre Meinung zu den neuen Etiketten darlegen. Berücksichtigen Sie dabei sowohl den ökologischen Nutzen als auch das Sicherheitsbedürfnis der Kunden.",
+      "en": "Schreiben Sie eine E-Mail an den Inhaber, in der Sie Ihre Meinung zu den neuen Etiketten darlegen. Berücksichtigen Sie dabei sowohl den ökologischen Nutzen als auch das Sicherheitsbedürfnis der Kunden."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leseverständnis und kritische Reflexion über nachhaltigen Konsum bei Lebensmitteln.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Ende der Haltbarkeits-Diktatur | B2 Reading | WeLearn",
+      "en": "Das Ende der Haltbarkeits-Diktatur | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein lokaler Supermarkt führt neue Kennzeichnungen ein, um Lebensmittelverschwendung zu bekämpfen. Wir analysieren die Auswirkungen auf die Kunden.",
+      "en": "Ein lokaler Supermarkt führt neue Kennzeichnungen ein, um Lebensmittelverschwendung zu bekämpfen. Wir analysieren die Auswirkungen auf die Kunden."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

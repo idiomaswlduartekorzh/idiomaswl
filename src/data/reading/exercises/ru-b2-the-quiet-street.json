@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-the-quiet-street",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Тихий вечер на улице Липовой",
+      "en": "Тихий вечер на улице Липовой"
+    },
+    "intro": {
+      "es": "Прочитайте статью о необычном эксперименте в одном из городских районов и ответьте на вопросы.",
+      "en": "Прочитайте статью о необычном эксперименте в одном из городских районов и ответьте на вопросы."
+    },
+    "mission": {
+      "es": "Проанализируйте текст, чтобы понять скрытые конфликты между жителями и владельцами бизнеса.",
+      "en": "Проанализируйте текст, чтобы понять скрытые конфликты между жителями и владельцами бизнеса."
+    },
+    "targetText": "В прошлую пятницу район Липовая роща решился на смелый шаг: с шести вечера до полуночи движение автомобилей было полностью перекрыто. Инициативная группа «Тихий квартал» надеялась, что отсутствие машин вернет улицам атмосферу уюта, однако результаты эксперимента оказались неоднозначными. Для местных жителей вечер начался с непривычной тишины, но вскоре мнения разделились. Пенсионерка Анна Петровна, живущая на первом этаже, отметила, что гул моторов сменился громкими разговорами прохожих, которые, не стесняясь, обсуждали свои дела прямо под окнами. С другой стороны, молодые семьи с детьми наслаждались возможностью гулять по проезжей части, не опасаясь за безопасность. Конфликт интересов стал очевиден, когда шум толпы перекрыл привычный городской фон, заставив некоторых жителей пожалеть о закрытии дороги.\n\nВладельцы малого бизнеса также столкнулись с трудностями. Владелец пекарни «Зерно» Марк признался, что вечер стал настоящим испытанием. Из-за запрета на въезд фургоны с мукой и свежими продуктами не смогли вовремя подъехать к складу, что привело к нехватке выпечки к концу дня. Тем не менее, он не мог отрицать рост числа случайных посетителей. Люди, гуляющие по пустой улице, чаще заглядывали в витрины, привлеченные ароматом свежего хлеба. «Продажи были выше, чем в обычную пятницу, но логистический хаос съел всю прибыль», — резюмировал он, подчеркивая, что подобный формат требует серьезной доработки системы доставки.\n\nСитуация накалилась к десяти часам вечера, когда музыка из уличного кафе стала звучать громче, так как ее больше не заглушал шум проезжающих машин. Жители верхних этажей, рассчитывавшие на спокойный отдых, начали вызывать полицию из-за нарушения тишины. Владелец кафе возразил, что музыка была на том же уровне, что и всегда, просто отсутствие дорожного трафика сделало звук более отчетливым для окружающих. Это породило спор о том, что именно считать комфортной городской средой: отсутствие механического шума или отсутствие человеческого присутствия.\n\nК полуночи, когда движение было восстановлено, многие почувствовали облегчение. Эксперимент показал, что городская инфраструктура слишком тесно связана с автомобильным трафиком, чтобы просто убрать его без последствий. Несмотря на увеличение пешеходного потока, логистические проблемы и новые источники шума создали напряжение, которое организаторы не предвидели. В итоге, вопрос о повторении акции остался открытым, так как компромисс между комфортом жителей и развитием торговли пока не найден.\n\nТаким образом, вечер на Липовой стал уроком для всех участников. Город — это сложный механизм, где любое изменение затрагивает десятки интересов. Пока жители и предприниматели пытаются договориться, улица продолжает жить своей жизнью, ожидая новых решений, которые смогут объединить тишину и активность в единое целое, не ущемляя права ни одной из сторон.\n\nВозможно, будущее таких инициатив кроется в гибком графике, который позволит ограничить движение лишь частично, сохраняя баланс между потребностями бизнеса, спокойствием горожан и безопасностью пешеходов в условиях плотной городской застройки.",
+    "wordCount": 418,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "неоднозначными",
+        "lemma": "неоднозначными",
+        "glosses": {
+          "es": "ambiguous",
+          "en": "ambiguous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "логистический",
+        "lemma": "логистический",
+        "glosses": {
+          "es": "logistical",
+          "en": "logistical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "накалилась",
+        "lemma": "накалилась",
+        "glosses": {
+          "es": "intensified",
+          "en": "intensified"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инфраструктура",
+        "lemma": "инфраструктура",
+        "glosses": {
+          "es": "infrastructure",
+          "en": "infrastructure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компромисс",
+        "lemma": "компромисс",
+        "glosses": {
+          "es": "compromise",
+          "en": "compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ущемляя",
+        "lemma": "ущемляя",
+        "glosses": {
+          "es": "infringing",
+          "en": "infringing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.4,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:17:17.931Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная идея текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Сложность городских перемен."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимость полной перестройки инфраструктуры мегаполиса."
+        },
+        {
+          "id": "a3",
+          "text": "Преимущества развития велосипедных дорожек в центре города."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Город — это сложный механизм, где любое изменение затрагивает десятки интересов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему пекарня «Зерно» понесла убытки?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Сбой в работе касс."
+        },
+        {
+          "id": "a2",
+          "text": "Проблемы с доставкой."
+        },
+        {
+          "id": "a3",
+          "text": "Низкое качество выпечки."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "фургоны с мукой и свежими продуктами не смогли вовремя подъехать к складу",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Что можно сказать о шуме в районе?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Шум."
+        },
+        {
+          "id": "a2",
+          "text": "Гул."
+        },
+        {
+          "id": "a3",
+          "text": "Он изменился."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "гул моторов сменился громкими разговорами прохожих",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем автор упоминает полицию?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Описать конфликт интересов."
+        },
+        {
+          "id": "a2",
+          "text": "Показать рост преступности."
+        },
+        {
+          "id": "a3",
+          "text": "Подчеркнуть важность закона."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Жители верхних этажей, рассчитывавшие на спокойный отдых, начали вызывать полицию из-за нарушения тишины.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон автора в заключении?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Тревожный."
+        },
+        {
+          "id": "a2",
+          "text": "Нейтральный."
+        },
+        {
+          "id": "a3",
+          "text": "Очень эмоциональный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "В итоге, вопрос о повторении акции остался открытым, так как компромисс между комфортом жителей и развитием торговли пока не найден.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «неоднозначными»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Плохими."
+        },
+        {
+          "id": "a2",
+          "text": "Ясными."
+        },
+        {
+          "id": "a3",
+          "text": "Спорными."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "результаты эксперимента оказались неоднозначными.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое эссе (150 слов) о том, как можно улучшить организацию пешеходных зон в вашем городе, учитывая интересы местных предпринимателей.",
+      "en": "Напишите короткое эссе (150 слов) о том, как можно улучшить организацию пешеходных зон в вашем городе, учитывая интересы местных предпринимателей."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализируйте текст, чтобы понять скрытые конфликты между жителями и владельцами бизнеса.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:17:17.931Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Тихий вечер на улице Липовой | B2 Reading | WeLearn",
+      "en": "Тихий вечер на улице Липовой | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте статью о необычном эксперименте в одном из городских районов и ответьте на вопросы.",
+      "en": "Прочитайте статью о необычном эксперименте в одном из городских районов и ответьте на вопросы."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:17:17.931Z"
+  }
+}

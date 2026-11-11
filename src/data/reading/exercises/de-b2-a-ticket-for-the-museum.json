@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das nächtliche Museumsdilemma",
+      "en": "Das nächtliche Museumsdilemma"
+    },
+    "intro": {
+      "es": "Ein Erfahrungsbericht über den neuen kostenlosen Abendzugang im Stadtmuseum und die damit verbundenen logistischen Herausforderungen für die Besucher.",
+      "en": "Ein Erfahrungsbericht über den neuen kostenlosen Abendzugang im Stadtmuseum und die damit verbundenen logistischen Herausforderungen für die Besucher."
+    },
+    "mission": {
+      "es": "Analysieren Sie den Text kritisch, um die Diskrepanz zwischen kultureller Teilhabe und städtischer Infrastruktur zu verstehen.",
+      "en": "Analysieren Sie den Text kritisch, um die Diskrepanz zwischen kultureller Teilhabe und städtischer Infrastruktur zu verstehen."
+    },
+    "targetText": "Als das Stadtmuseum von Arnsburg neulich den freien Eintritt an jedem Donnerstagabend einführte, war die Begeisterung in der lokalen Kulturszene groß. Endlich sollten auch Berufstätige, die ihren Tag in Büros oder Werkstätten verbringen, die Möglichkeit erhalten, die neuen Ausstellungen zur Industriegeschichte ohne finanziellen Druck zu besichtigen. Die Kuratorin Elena Vogt betonte in ihrer Eröffnungsrede, dass Museen keine exklusiven Elfenbeintürme sein dürften, sondern lebendige Orte des Austauschs. Tatsächlich stieg die Besucherzahl in den ersten Wochen sprunghaft an. Familien und Studenten flanierten durch die Galerien, und die abendliche Atmosphäre verlieh den Exponaten eine fast mystische Aura. Doch während die kulturelle Inklusion florierte, offenbarte sich eine bittere Kehrseite der Medaille, die den Erfolg des Projekts überschattet.\n\nDas Problem manifestiert sich in der unglücklichen Taktung des öffentlichen Nahverkehrs. Die letzte Buslinie, die das Museumsviertel mit den Außenbezirken verbindet, stellt ihren Betrieb bereits um zwanzig Uhr ein. Da das Museum jedoch bis zweiundzwanzig Uhr geöffnet bleibt, finden viele Besucher, die auf den Bus angewiesen sind, nach ihrem Rundgang keinen Weg mehr nach Hause. Diese strukturelle Diskrepanz führt dazu, dass ein erheblicher Teil der Gäste das Gebäude vorzeitig verlassen muss, um den letzten Bus nicht zu verpassen. Die Intention, den Zugang zu erleichtern, wird somit durch eine unzureichende städtische Planung konterkariert.\n\nBesonders frustrierend ist diese Situation für Besucher wie den Rentner Herrn Klose, der sich regelmäßig über die mangelnde Koordination beschwert. Er berichtet, dass er oft mitten in einem interessanten Vortrag aufbrechen muss, nur um nicht bei Dunkelheit am einsamen Busbahnhof zu stranden. Für ihn ist der freie Eintritt ein leeres Versprechen, wenn die physische Erreichbarkeit nicht gewährleistet ist. Die Museumsleitung steht nun vor einem Dilemma: Soll sie die Öffnungszeiten an den unzureichenden Busfahrplan anpassen und damit den Abendcharakter aufgeben, oder soll sie weiterhin auf eine Änderung der städtischen Verkehrsplanung hoffen, die bisher jedoch ausblieb?\n\nEs ist eine bittere Ironie, dass die Demokratisierung der Kunst an der starren Logik des Fahrplans scheitert. Während die Stadtverwaltung den Erfolg des Museums als ihren eigenen verbucht, ignorieren die Verkehrsbetriebe die veränderten Bedürfnisse der Bürger konsequent. Die Museumsleitung hat zwar bereits mehrfach das Gespräch gesucht, doch die Antwort blieb stets dieselbe: Die Ausweitung der Fahrzeiten sei aufgrund mangelnder Rentabilität nicht wirtschaftlich vertretbar. So bleibt das Museum ein Ort, den man zwar ohne Eintrittsgeld betreten, aber nur unter Zeitdruck wieder verlassen kann.\n\nLetztlich stellt sich die Frage, ob kulturelle Teilhabe nur in einem Vakuum existieren kann. Ohne eine ganzheitliche Strategie, die auch die Mobilität der Menschen einbezieht, bleibt das Angebot des Museums ein unvollständiges Experiment. Solange die Stadt nicht bereit ist, die Infrastruktur an die neuen kulturellen Angebote anzupassen, wird der abendliche Besuch für viele ein frustrierender Kompromiss bleiben. Es ist an der Zeit, dass die Stadtverwaltung erkennt, dass Bildung und Kultur untrennbar mit der Mobilität der Bürger verbunden sind.",
+    "wordCount": 459,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Elfenbeintürme",
+        "lemma": "Elfenbeintürme",
+        "glosses": {
+          "es": "ivory towers",
+          "en": "ivory towers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kehrseite",
+        "lemma": "Kehrseite",
+        "glosses": {
+          "es": "downside",
+          "en": "downside"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "konterkariert",
+        "lemma": "konterkariert",
+        "glosses": {
+          "es": "thwarted",
+          "en": "thwarted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stranden",
+        "lemma": "stranden",
+        "glosses": {
+          "es": "to be stranded",
+          "en": "to be stranded"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Vakuum",
+        "lemma": "Vakuum",
+        "glosses": {
+          "es": "vacuum",
+          "en": "vacuum"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ganzheitliche",
+        "lemma": "ganzheitliche",
+        "glosses": {
+          "es": "holistic",
+          "en": "holistic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches Hauptproblem wird im Text thematisiert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die mangelnde Anbindung des Museums."
+        },
+        {
+          "id": "a2",
+          "text": "Die hohen Eintrittspreise."
+        },
+        {
+          "id": "a3",
+          "text": "Die geringe Qualität der Ausstellungen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Problem manifestiert sich in der unglücklichen Taktung des öffentlichen Nahverkehrs.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wann endet der Betrieb der letzten Buslinie?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Erst um 22:00 Uhr."
+        },
+        {
+          "id": "a2",
+          "text": "Um 20:00 Uhr."
+        },
+        {
+          "id": "a3",
+          "text": "Um 21:00 Uhr."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die letzte Buslinie, die das Museumsviertel mit den Außenbezirken verbindet, stellt ihren Betrieb bereits um zwanzig Uhr ein.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum ist Herr Klose frustriert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Wegen der hohen Kosten."
+        },
+        {
+          "id": "a2",
+          "text": "Wegen der fehlenden Sitzplätze."
+        },
+        {
+          "id": "a3",
+          "text": "Wegen der kurzen Besuchszeit."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er berichtet, dass er oft mitten in einem interessanten Vortrag aufbrechen muss, nur um nicht bei Dunkelheit am einsamen Busbahnhof zu stranden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt die Museumsleitung mit dem freien Eintritt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Förderung der Inklusion."
+        },
+        {
+          "id": "a2",
+          "text": "Die Senkung der Betriebskosten."
+        },
+        {
+          "id": "a3",
+          "text": "Die Gewinnung von neuen Sponsoren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Kuratorin Elena Vogt betonte in ihrer Eröffnungsrede, dass Museen keine exklusiven Elfenbeintürme sein dürften, sondern lebendige Orte des Austauschs.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewertet der Autor die Haltung der Stadtverwaltung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Als sehr kooperativ."
+        },
+        {
+          "id": "a2",
+          "text": "Als desinteressiert."
+        },
+        {
+          "id": "a3",
+          "text": "Als unterstützend."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Während die Stadtverwaltung den Erfolg des Museums als ihren eigenen verbucht, ignorieren die Verkehrsbetriebe die veränderten Bedürfnisse der Bürger konsequent.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'konterkariert' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Unterstützt."
+        },
+        {
+          "id": "a2",
+          "text": "Erweitert."
+        },
+        {
+          "id": "a3",
+          "text": "Verhindert."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Intention, den Zugang zu erleichtern, wird somit durch eine unzureichende städtische Planung konterkariert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Diskutieren Sie in einem kurzen Text, ob Museen in Ihrer Region ähnliche Probleme haben und welche Rolle der öffentliche Nahverkehr bei der kulturellen Teilhabe spielt.",
+      "en": "Diskutieren Sie in einem kurzen Text, ob Museen in Ihrer Region ähnliche Probleme haben und welche Rolle der öffentliche Nahverkehr bei der kulturellen Teilhabe spielt."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analysieren Sie den Text kritisch, um die Diskrepanz zwischen kultureller Teilhabe und städtischer Infrastruktur zu verstehen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das nächtliche Museumsdilemma | B2 Reading | WeLearn",
+      "en": "Das nächtliche Museumsdilemma | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein Erfahrungsbericht über den neuen kostenlosen Abendzugang im Stadtmuseum und die damit verbundenen logistischen Herausforderungen für die Besucher.",
+      "en": "Ein Erfahrungsbericht über den neuen kostenlosen Abendzugang im Stadtmuseum und die damit verbundenen logistischen Herausforderungen für die Besucher."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

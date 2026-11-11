@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il dilemma di Borgo Antico",
+      "en": "Il dilemma di Borgo Antico"
+    },
+    "intro": {
+      "es": "Leggete questa storia riguardante una disputa municipale sull'identità storica di un villaggio e rispondete alle domande.",
+      "en": "Leggete questa storia riguardante una disputa municipale sull'identità storica di un villaggio e rispondete alle domande."
+    },
+    "mission": {
+      "es": "Analizzate le diverse prospettive dei residenti riguardo alla toponomastica locale e valutate le implicazioni pratiche del cambiamento.",
+      "en": "Analizzate le diverse prospettive dei residenti riguardo alla toponomastica locale e valutate le implicazioni pratiche del cambiamento."
+    },
+    "targetText": "Il consiglio comunale di Valchiusa si è riunito in una sala gremita per discutere una proposta controversa: ripristinare il nome originale del villaggio, 'Castelverde', sostituendo l'attuale denominazione che risale all'epoca della riorganizzazione amministrativa del secolo scorso. Il sindaco, Marco Valenti, ha aperto la sessione sottolineando come il recupero del toponimo possa rafforzare il senso di appartenenza della comunità. Secondo lui, il nome Castelverde evoca la storia medievale del borgo e potrebbe fungere da volano per il turismo culturale, attirando visitatori interessati all'autenticità storica piuttosto che a una generica etichetta burocratica.\n\nTuttavia, la proposta ha incontrato una resistenza inaspettata da parte dei commercianti del centro. Elena, proprietaria di un piccolo albergo, ha espresso preoccupazione per le possibili complicazioni logistiche. Ha spiegato che, sebbene il nome Castelverde sia affascinante, i turisti stranieri utilizzano già le mappe digitali e i sistemi di navigazione che riconoscono esclusivamente Valchiusa. Cambiare il nome comporterebbe una confusione immediata per chiunque cerchi di raggiungere la località, rischiando di scoraggiare i viaggiatori meno esperti o quelli che hanno già prenotato soggiorni sotto il nome attuale.\n\nIl dibattito si è acceso quando un anziano storico locale, il professor Alberto Neri, ha preso la parola per sostenere che la toponomastica non è solo una convenzione, ma un atto di giustizia storica. Ha argomentato che cancellare il passato per comodità moderna significa privare le future generazioni della loro eredità culturale. Nonostante il suo tono appassionato, la sua posizione è stata messa in discussione da un gruppo di giovani residenti che temono i costi burocratici legati all'aggiornamento dei documenti ufficiali, delle insegne stradali e dei registri catastali, risorse che preferirebbero vedere investite nella manutenzione delle infrastrutture esistenti.\n\nLa discussione ha evidenziato una spaccatura netta. Da una parte, c'è chi vede nel ritorno al passato un'opportunità di rinascita identitaria. Dall'altra, chi privilegia la funzionalità e la stabilità economica teme che il cambiamento possa isolare il paese invece di valorizzarlo. Il sindaco ha tentato di mediare proponendo una transizione graduale, ma la tensione è rimasta palpabile tra i presenti, con accuse reciproche di eccessivo idealismo o di miopia pragmatica.\n\nAlla fine della serata, la votazione è stata rimandata a data da destinarsi. Non è stata raggiunta alcuna risoluzione definitiva, lasciando il borgo in uno stato di sospensione. La questione rimane aperta, con il cartello all'ingresso del paese che continua a riportare il nome Valchiusa, mentre le ombre della sera avvolgono le antiche mura che, per ora, attendono ancora di riappropriarsi della loro vera identità, in un silenzio che riflette la complessità di una scelta che non può accontentare tutti.",
+    "wordCount": 424,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "toponimo",
+        "lemma": "toponimo",
+        "glosses": {
+          "es": "place name",
+          "en": "place name"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "volano",
+        "lemma": "volano",
+        "glosses": {
+          "es": "driving force",
+          "en": "driving force"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "logistiche",
+        "lemma": "logistiche",
+        "glosses": {
+          "es": "logistical",
+          "en": "logistical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spaccatura",
+        "lemma": "spaccatura",
+        "glosses": {
+          "es": "division",
+          "en": "division"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miopia",
+        "lemma": "miopia",
+        "glosses": {
+          "es": "short-sightedness",
+          "en": "short-sightedness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sospensione",
+        "lemma": "sospensione",
+        "glosses": {
+          "es": "limbo",
+          "en": "limbo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 24.9,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:10:52.827Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema principale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il cambio del nome."
+        },
+        {
+          "id": "a2",
+          "text": "La gestione del turismo."
+        },
+        {
+          "id": "a3",
+          "text": "La crisi economica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ripristinare il nome originale del villaggio",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché Elena è contraria al cambiamento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per i costi elevati."
+        },
+        {
+          "id": "a2",
+          "text": "Per la confusione dei turisti."
+        },
+        {
+          "id": "a3",
+          "text": "Per la perdita di identità."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "i turisti stranieri utilizzano già le mappe digitali e i sistemi di navigazione che riconoscono esclusivamente Valchiusa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce il finale riguardo alla situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il progetto è stato approvato."
+        },
+        {
+          "id": "a2",
+          "text": "Il sindaco ha deciso da solo."
+        },
+        {
+          "id": "a3",
+          "text": "Il conflitto rimane irrisolto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la votazione è stata rimandata a data da destinarsi. Non è stata raggiunta alcuna risoluzione definitiva, lasciando il borgo in uno stato di sospensione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo del professor Neri nel suo intervento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Difendere la memoria storica del borgo."
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere la modernizzazione delle strade."
+        },
+        {
+          "id": "a3",
+          "text": "Criticare l'operato del sindaco Valenti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "cancellare il passato per comodità moderna significa privare le future generazioni della loro eredità culturale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono prevale nella descrizione del dibattito?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e positivo."
+        },
+        {
+          "id": "a2",
+          "text": "Teso e conflittuale."
+        },
+        {
+          "id": "a3",
+          "text": "Neutrale e descrittivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la tensione è rimasta palpabile tra i presenti, con accuse reciproche di eccessivo idealismo o di miopia pragmatica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'miopia'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un difetto fisico."
+        },
+        {
+          "id": "a2",
+          "text": "Un errore contabile."
+        },
+        {
+          "id": "a3",
+          "text": "Mancanza di visione."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "accuse reciproche di eccessivo idealismo o di miopia pragmatica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivete un breve paragrafo (80-100 parole) in cui esprimete la vostra opinione: è più importante preservare i nomi storici o mantenere la funzionalità pratica per i visitatori?",
+      "en": "Scrivete un breve paragrafo (80-100 parole) in cui esprimete la vostra opinione: è più importante preservare i nomi storici o mantenere la funzionalità pratica per i visitatori?"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizzate le diverse prospettive dei residenti riguardo alla toponomastica locale e valutate le implicazioni pratiche del cambiamento.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:10:52.827Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il dilemma di Borgo Antico | B2 Reading | WeLearn",
+      "en": "Il dilemma di Borgo Antico | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leggete questa storia riguardante una disputa municipale sull'identità storica di un villaggio e rispondete alle domande.",
+      "en": "Leggete questa storia riguardante una disputa municipale sull'identità storica di un villaggio e rispondete alle domande."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:10:52.827Z"
+  }
+}

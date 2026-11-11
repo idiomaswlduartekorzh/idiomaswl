@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il silenzio digitale",
+      "en": "Il silenzio digitale"
+    },
+    "intro": {
+      "es": "Un racconto breve che esplora le sfide dell'innovazione tecnologica in un contesto sanitario locale.",
+      "en": "Un racconto breve che esplora le sfide dell'innovazione tecnologica in un contesto sanitario locale."
+    },
+    "mission": {
+      "es": "Analizzare le implicazioni sociali della digitalizzazione dei servizi pubblici.",
+      "en": "Analizzare le implicazioni sociali della digitalizzazione dei servizi pubblici."
+    },
+    "targetText": "La sala d'attesa della clinica 'Villa Serena' era un tempo un luogo di chiacchiere, dove gli anziani del quartiere si scambiavano ricette e lamentele. Da quando la direzione ha introdotto il sistema di prenotazione tramite messaggi istantanei, il silenzio è diventato il padrone assoluto. Il dottor Valerio, osservando la fila virtuale dal suo monitor, si sentiva sollevato dall'efficienza del nuovo metodo, convinto che la modernizzazione fosse l'unico modo per gestire l'afflusso crescente. Tuttavia, la realtà dei fatti nascondeva crepe profonde in questo sistema apparentemente perfetto.\n\nElena, una donna di settant'anni con una vista ormai annebbiata, sedeva su una sedia di plastica rigida, fissando il vuoto. Non possedeva uno smartphone capace di ricevere notifiche push, né aveva familiari in città che potessero aiutarla. Per lei, la clinica non era un'app, ma un luogo fisico dove presentarsi all'alba, sperando nella clemenza di un'infermiera. Quando il dottor Valerio uscì dal suo studio per chiamare il prossimo paziente, trovò Elena ancora lì, ignorata dal sistema che non prevedeva la sua esistenza.\n\nIl conflitto esplose quando l'infermiera Giulia, incaricata di gestire la lista digitale, chiese a Elena di uscire perché il suo turno non risultava nel database. Elena, con una dignità che scuoteva le pareti asettiche, rifiutò di muoversi. Sostenne che la sua salute non poteva dipendere dalla presenza di un dispositivo elettronico, accusando la clinica di aver creato una barriera invisibile che escludeva i più vulnerabili. La tensione era palpabile; il silenzio della sala d'attesa si trasformò in un campo di battaglia tra l'efficienza algoritmica e il diritto umano all'assistenza.\n\nValerio intervenne, osservando il confronto con un misto di colpa e pragmatismo. Riconobbe che il sistema aveva ottimizzato i tempi di attesa per la maggioranza, ma ammise che la tecnologia aveva involontariamente reciso il legame di cura verso chi non poteva adattarsi. La clinica aveva guadagnato in velocità, perdendo però la sua funzione di presidio sociale. Il dottor Valerio capì che il progresso, senza un'interfaccia umana, rischiava di diventare un'arma di esclusione, trasformando i pazienti in semplici dati numerici.\n\nAlla fine, il dottor Valerio fece entrare Elena, ma la questione rimase irrisolta. Non c'era una soluzione immediata per integrare chi restava fuori dal circuito digitale senza rallentare l'intero processo. Mentre la giornata volgeva al termine, il medico restò a guardare lo schermo spento, consapevole che la prossima mattina il conflitto si sarebbe ripetuto. La modernità aveva portato ordine, ma aveva anche creato un nuovo tipo di invisibilità, lasciando la clinica in uno stato di sospensione tra l'efficienza desiderata e l'umanità dimenticata.",
+    "wordCount": 417,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "afflusso",
+        "lemma": "afflusso",
+        "glosses": {
+          "es": "inflow or influx",
+          "en": "inflow or influx"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "clemenza",
+        "lemma": "clemenza",
+        "glosses": {
+          "es": "mercy or leniency",
+          "en": "mercy or leniency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asettiche",
+        "lemma": "asettiche",
+        "glosses": {
+          "es": "sterile or antiseptic",
+          "en": "sterile or antiseptic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatismo",
+        "lemma": "pragmatismo",
+        "glosses": {
+          "es": "pragmatism",
+          "en": "pragmatism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reciso",
+        "lemma": "reciso",
+        "glosses": {
+          "es": "cut or severed",
+          "en": "cut or severed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "presidio",
+        "lemma": "presidio",
+        "glosses": {
+          "es": "garrison or local outpost",
+          "en": "garrison or local outpost"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:06:08.719Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema principale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'esclusione sociale tecnologica."
+        },
+        {
+          "id": "a2",
+          "text": "L'innovazione tecnologica applicata alla diagnostica strumentale moderna."
+        },
+        {
+          "id": "a3",
+          "text": "La complessa riorganizzazione amministrativa dei reparti ospedalieri pubblici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La clinica aveva guadagnato in velocità, perdendo però la sua funzione di presidio sociale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché Elena non riesce a farsi visitare?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Non ha i soldi."
+        },
+        {
+          "id": "a2",
+          "text": "Non ha lo smartphone."
+        },
+        {
+          "id": "a3",
+          "text": "Ha smarrito la tessera sanitaria digitale necessaria per l'accesso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Non possedeva uno smartphone capace di ricevere notifiche push",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa prova il dottor Valerio verso la fine?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Noia."
+        },
+        {
+          "id": "a2",
+          "text": "Gioia."
+        },
+        {
+          "id": "a3",
+          "text": "Un conflitto interiore."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Valerio intervenne, osservando il confronto con un misto di colpa e pragmatismo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché l'autore descrive il silenzio iniziale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per evidenziare la perdita del contatto umano."
+        },
+        {
+          "id": "a2",
+          "text": "Per descrivere l'efficienza burocratica dell'ufficio accettazione."
+        },
+        {
+          "id": "a3",
+          "text": "Per enfatizzare la rigorosa disciplina imposta dai nuovi protocolli sanitari."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Da quando la direzione ha introdotto il sistema di prenotazione tramite messaggi istantanei, il silenzio è diventato il padrone assoluto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono del finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Soddisfatto."
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo e irrisolto."
+        },
+        {
+          "id": "a3",
+          "text": "Cinico e pienamente consapevole del successo delle riforme attuate."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La modernità aveva portato ordine, ma aveva anche creato un nuovo tipo di invisibilità",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'presidio' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un attrezzo medico moderno."
+        },
+        {
+          "id": "a2",
+          "text": "Una guardia giurata armata."
+        },
+        {
+          "id": "a3",
+          "text": "Un punto di riferimento sociale."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La clinica aveva guadagnato in velocità, perdendo però la sua funzione di presidio sociale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve riflessione (100-150 parole) su come la tecnologia possa bilanciare l'efficienza operativa con l'inclusività per le persone anziane o svantaggiate.",
+      "en": "Scrivi una breve riflessione (100-150 parole) su come la tecnologia possa bilanciare l'efficienza operativa con l'inclusività per le persone anziane o svantaggiate."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizzare le implicazioni sociali della digitalizzazione dei servizi pubblici.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:06:08.719Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il silenzio digitale | B2 Reading | WeLearn",
+      "en": "Il silenzio digitale | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un racconto breve che esplora le sfide dell'innovazione tecnologica in un contesto sanitario locale.",
+      "en": "Un racconto breve che esplora le sfide dell'innovazione tecnologica in un contesto sanitario locale."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:06:08.719Z"
+  }
+}

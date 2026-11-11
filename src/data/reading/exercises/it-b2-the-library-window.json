@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-library-window",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'alba silenziosa della Biblioteca Civica",
+      "en": "L'alba silenziosa della Biblioteca Civica"
+    },
+    "intro": {
+      "es": "Esploriamo le dinamiche lavorative e sociali nate da un esperimento di apertura anticipata in una biblioteca cittadina.",
+      "en": "Esploriamo le dinamiche lavorative e sociali nate da un esperimento di apertura anticipata in una biblioteca cittadina."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere le implicazioni organizzative e umane di una modifica negli orari di servizio pubblico.",
+      "en": "Analizzare il testo per comprendere le implicazioni organizzative e umane di una modifica negli orari di servizio pubblico."
+    },
+    "targetText": "La Biblioteca Civica di Valchiara ha sempre rappresentato un rifugio per gli studenti, ma il recente esperimento di apertura alle sei del mattino ha trasformato radicalmente la routine del personale. La direttrice, Elena Valli, ha promosso l'iniziativa pensando ai lavoratori del turno notturno e ai pendolari che necessitavano di uno spazio tranquillo prima dell'inizio della giornata lavorativa. Tuttavia, la gestione dei turni è diventata un campo di battaglia. Marco, il bibliotecario veterano, ha espresso forti riserve durante l'ultima riunione, sostenendo che l'orario prolungato richieda una rotazione insostenibile del personale, che già fatica a coprire le ore pomeridiane. La tensione è palpabile: mentre Elena vede nell'accessibilità un dovere civico, Marco percepisce una svalutazione del benessere dei dipendenti a favore di una produttività astratta.\n\nNonostante le frizioni interne, i frequentatori del mattino hanno accolto la novità con entusiasmo. Tra loro, Giulia, un'infermiera che termina il turno in ospedale all'alba, trova in quel silenzio mattutino l'unica occasione per dedicarsi alla lettura senza le distrazioni tipiche del pomeriggio. Per lei, la biblioteca non è solo un deposito di libri, ma un santuario di calma in una città che non si ferma mai. La sua presenza costante è diventata il simbolo del successo dell'iniziativa, creando un contrasto netto con le lamentele del personale che vede il proprio tempo privato sacrificato sull'altare di un servizio pubblico esteso.\n\nIl conflitto è esploso martedì scorso, quando una carenza di personale ha costretto la biblioteca a chiudere improvvisamente nel pomeriggio. Questo evento ha scatenato una protesta tra gli studenti, che hanno accusato la direzione di privilegiare una nicchia di utenza a scapito della maggioranza. Elena si è trovata a dover giustificare una scelta che, nata per essere inclusiva, ha finito per creare una frattura tra le diverse categorie di utenti. La biblioteca, un tempo luogo di coesione, sembra ora l'arena di un gioco a somma zero dove ogni beneficio per un gruppo si traduce in un disagio per un altro.\n\nLa situazione rimane irrisolta. Elena ha proposto di assumere collaboratori esterni per coprire le prime ore, ma il budget limitato rende questa opzione poco realistica. Marco, dal canto suo, insiste per un ritorno all'orario tradizionale, temendo che la qualità del servizio possa deteriorarsi irrimediabilmente. La biblioteca si trova in una posizione di stallo: mantenere l'apertura anticipata significa rischiare il burnout dello staff, mentre tornare indietro significherebbe negare un diritto acquisito a chi, come Giulia, ha trovato in quegli orari una risorsa vitale.\n\nIn questo scenario, la biblioteca non è più solo un contenitore di sapere, ma un organismo vivo che riflette le contraddizioni della società moderna. La sfida non è più solo logistica, ma etica. È giusto sacrificare l'equilibrio di pochi per il beneficio di molti, o viceversa? La risposta non appare semplice, poiché ogni decisione sembra portare con sé un'ombra di ingiustizia, lasciando la comunità di Valchiara in attesa di un compromesso che, al momento, appare ancora lontano.",
+    "wordCount": 480,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "veterano",
+        "lemma": "veterano",
+        "glosses": {
+          "es": "experienced or long-serving person",
+          "en": "experienced or long-serving person"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "svalutazione",
+        "lemma": "svalutazione",
+        "glosses": {
+          "es": "devaluation",
+          "en": "devaluation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "frizioni",
+        "lemma": "frizioni",
+        "glosses": {
+          "es": "tensions or conflicts",
+          "en": "tensions or conflicts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nicchia",
+        "lemma": "nicchia",
+        "glosses": {
+          "es": "small, specialized segment",
+          "en": "small, specialized segment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stallo",
+        "lemma": "stallo",
+        "glosses": {
+          "es": "deadlock or stalemate",
+          "en": "deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "burnout",
+        "lemma": "burnout",
+        "glosses": {
+          "es": "physical or mental exhaustion",
+          "en": "physical or mental exhaustion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.9,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:02:46.693Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra le esigenze degli utenti e la sostenibilità del lavoro."
+        },
+        {
+          "id": "a2",
+          "text": "La gestione del personale."
+        },
+        {
+          "id": "a3",
+          "text": "La storia della biblioteca di Valchiara."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La biblioteca, un tempo luogo di coesione, sembra ora l'arena di un gioco a somma zero dove ogni beneficio per un gruppo si traduce in un disagio per un altro.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché la biblioteca ha chiuso di pomeriggio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per lavori di ristrutturazione."
+        },
+        {
+          "id": "a2",
+          "text": "Per una carenza di personale."
+        },
+        {
+          "id": "a3",
+          "text": "Per sciopero dei bibliotecari."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il conflitto è esploso martedì scorso, quando una carenza di personale ha costretto la biblioteca a chiudere improvvisamente nel pomeriggio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual è la posizione di Giulia rispetto all'apertura anticipata?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È contraria."
+        },
+        {
+          "id": "a2",
+          "text": "È indifferente."
+        },
+        {
+          "id": "a3",
+          "text": "È molto favorevole."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Tra loro, Giulia, un'infermiera che termina il turno in ospedale all'alba, trova in quel silenzio mattutino l'unica occasione per dedicarsi alla lettura",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Illustrare le difficoltà di gestione di un servizio pubblico."
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere l'apertura anticipata delle biblioteche in Italia."
+        },
+        {
+          "id": "a3",
+          "text": "Denunciare le condizioni di lavoro dei bibliotecari di Valchiara."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La sfida non è più solo logistica, ma etica. È giusto sacrificare l'equilibrio di pochi per il beneficio di molti, o viceversa?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono utilizza l'autore nel descrivere la situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critico e risolutivo."
+        },
+        {
+          "id": "a2",
+          "text": "Distaccato e riflessivo."
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta e ottimista."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "In questo scenario, la biblioteca non è più solo un contenitore di sapere, ma un organismo vivo che riflette le contraddizioni della società moderna.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa si intende con il termine 'stallo'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un momento di grande crescita."
+        },
+        {
+          "id": "a2",
+          "text": "Un periodo di chiusura programmata."
+        },
+        {
+          "id": "a3",
+          "text": "Una situazione di blocco."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La biblioteca si trova in una posizione di stallo: mantenere l'apertura anticipata significa rischiare il burnout dello staff",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio (150 parole) in cui proponi una soluzione per conciliare le esigenze del personale bibliotecario con quelle degli utenti che lavorano su turni, motivando la tua scelta.",
+      "en": "Scrivi un breve saggio (150 parole) in cui proponi una soluzione per conciliare le esigenze del personale bibliotecario con quelle degli utenti che lavorano su turni, motivando la tua scelta."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizzare il testo per comprendere le implicazioni organizzative e umane di una modifica negli orari di servizio pubblico.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:02:46.693Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'alba silenziosa della Biblioteca Civica | B2 Reading | WeLearn",
+      "en": "L'alba silenziosa della Biblioteca Civica | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Esploriamo le dinamiche lavorative e sociali nate da un esperimento di apertura anticipata in una biblioteca cittadina.",
+      "en": "Esploriamo le dinamiche lavorative e sociali nate da un esperimento di apertura anticipata in una biblioteca cittadina."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:02:46.693Z"
+  }
+}

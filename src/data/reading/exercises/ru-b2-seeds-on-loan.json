@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "russian B2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Урок засухи",
+      "en": "Урок засухи"
+    },
+    "intro": {
+      "es": "История о том, как небольшое сообщество садоводов столкнулось с неожиданным выбором в условиях климатического кризиса.",
+      "en": "История о том, как небольшое сообщество садоводов столкнулось с неожиданным выбором в условиях климатического кризиса."
+    },
+    "mission": {
+      "es": "Проанализировать этическую дилемму распределения ресурсов в условиях дефицита.",
+      "en": "Проанализировать этическую дилемму распределения ресурсов в условиях дефицита."
+    },
+    "targetText": "В поселке Зеленый Клин местная библиотека семян работала по принципу доверия: каждый садовод брал семена весной, а осенью возвращал вдвое больше, чтобы пополнить общий фонд. Куратор библиотеки, Анна, и главный волонтер, Петр, гордились тем, что их коллекция редких сортов томатов и огурцов процветала годами. Однако нынешнее лето выдалось аномально жарким. Дожди обходили стороной огороды Клина, превращая плодородную почву в потрескавшуюся корку. К концу августа стало ясно, что урожай у большинства участников оказался скудным. Многие садоводы, привыкшие к изобилию, столкнулись с невозможностью выполнить свои обязательства перед библиотекой.\n\nНа вечернем собрании в библиотеке атмосфера была напряженной. Анна настаивала на строгом соблюдении правил. Она утверждала, что если сделать исключение для одних, фонд быстро истощится, и на следующий год сажать будет нечего. По ее мнению, библиотека — это не благотворительная организация, а механизм сохранения биоразнообразия, требующий дисциплины. Она предложила тем, кто не собрал семена, купить их в магазине, чтобы компенсировать долг.\n\nПетр же смотрел на ситуацию иначе. Он указывал на то, что большинство садоводов — пожилые люди, для которых огород был единственным способом прокормиться. Требовать от них покупки семян, когда они потеряли урожай, казалось ему несправедливым. Он предложил ввести «амнистию засухи»: разрешить участникам вернуть меньше семян или вообще ничего не возвращать в этом сезоне, рассчитывая на солидарность сообщества. Петр считал, что доверие важнее сухой статистики, и если люди почувствуют поддержку, они останутся в проекте.\n\nСпор затянулся до поздней ночи. Анна приводила веские аргументы о выживании фонда, признавая при этом, что ситуация действительно исключительная. С другой стороны, Петр понимал риск того, что фонд может опустеть, но настаивал на человечности. В воздухе висело негласное признание того, что ни одно из решений не является идеальным. Компромисс казался недостижимым, так как каждая сторона защищала фундаментальные ценности: порядок и выживание биологического фонда против социальной поддержки и человеческой эмпатии.\n\nВ итоге, решение так и не было принято единогласно. Участники разошлись, оставив вопрос открытым до следующего месяца. Библиотека семян оказалась в ситуации, когда правила, созданные для мирного времени, перестали работать в условиях природного бедствия. Теперь будущее Зеленого Клина зависело не от количества семян в банках, а от того, смогут ли соседи договориться между собой, когда природа отказывается помогать им. Тишина в библиотеке после ухода людей казалась тяжелым напоминанием о том, что даже самые благие начинания могут оказаться под угрозой из-за климатических перемен.\n\nВозможно, этот кризис станет поворотным моментом, вынуждающим жителей объединиться для создания общей системы орошения. Если садоводы осознают, что коллективное выживание важнее индивидуальных запасов, они смогут преодолеть разногласия. В конечном счете, именно способность адаптироваться к суровым условиям определит, сохранится ли уникальное наследие Зеленого Клина для будущих поколений местных жителей.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "аномально",
+        "lemma": "аномально",
+        "glosses": {
+          "es": "abnormally",
+          "en": "abnormally"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "скудным",
+        "lemma": "скудным",
+        "glosses": {
+          "es": "meager",
+          "en": "meager"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обязательства",
+        "lemma": "обязательства",
+        "glosses": {
+          "es": "obligations",
+          "en": "obligations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "амнистию",
+        "lemma": "амнистию",
+        "glosses": {
+          "es": "amnesty",
+          "en": "amnesty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "солидарность",
+        "lemma": "солидарность",
+        "glosses": {
+          "es": "solidarity",
+          "en": "solidarity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "эмпатии",
+        "lemma": "эмпатии",
+        "glosses": {
+          "es": "empathy",
+          "en": "empathy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.4,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:17:17.931Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт интересов сообщества."
+        },
+        {
+          "id": "a2",
+          "text": "Технологии выращивания овощей."
+        },
+        {
+          "id": "a3",
+          "text": "История развития библиотеки."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Спор затянулся до поздней ночи.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что именно требовала Анна от садоводов?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Вернуть долг."
+        },
+        {
+          "id": "a2",
+          "text": "Купить семена."
+        },
+        {
+          "id": "a3",
+          "text": "Ждать дождей."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Она предложила тем, кто не собрал семена, купить их в магазине, чтобы компенсировать долг.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Петр настаивал на амнистии?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за любви к людям."
+        },
+        {
+          "id": "a2",
+          "text": "Из-за ошибок в учете."
+        },
+        {
+          "id": "a3",
+          "text": "Из-за бедности участников."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Он указывал на то, что большинство садоводов — пожилые люди, для которых огород был единственным способом прокормиться.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какова цель описания спора в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать сложность этического выбора."
+        },
+        {
+          "id": "a2",
+          "text": "Описать методы работы библиотеки."
+        },
+        {
+          "id": "a3",
+          "text": "Доказать правоту Анны в споре."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "В воздухе висело негласное признание того, что ни одно из решений не является идеальным.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон повествования в заключительной части?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Радостный."
+        },
+        {
+          "id": "a2",
+          "text": "Тревожный."
+        },
+        {
+          "id": "a3",
+          "text": "Ироничный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Тишина в библиотеке после ухода людей казалась тяжелым напоминанием о том, что даже самые благие начинания могут оказаться под угрозой из-за климатических перемен.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово «скудным» в контексте урожая?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Некачественным."
+        },
+        {
+          "id": "a2",
+          "text": "Испорченным."
+        },
+        {
+          "id": "a3",
+          "text": "Очень малым."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Дожди обходили стороной огороды Клина, превращая плодородную почву в потрескавшуюся корку. К концу августа стало ясно, что урожай у большинства участников оказался скудным.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите короткое эссе (100-150 слов), в котором вы предложите свой вариант решения конфликта между Анной и Петром, аргументируя свою позицию с точки зрения устойчивого развития сообщества.",
+      "en": "Напишите короткое эссе (100-150 слов), в котором вы предложите свой вариант решения конфликта между Анной и Петром, аргументируя свою позицию с точки зрения устойчивого развития сообщества."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Проанализировать этическую дилемму распределения ресурсов в условиях дефицита.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:17:17.931Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Урок засухи | B2 Reading | WeLearn",
+      "en": "Урок засухи | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "История о том, как небольшое сообщество садоводов столкнулось с неожиданным выбором в условиях климатического кризиса.",
+      "en": "История о том, как небольшое сообщество садоводов столкнулось с неожиданным выбором в условиях климатического кризиса."
+    },
+    "canonicalPath": "/en/practice/russian/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:17:17.931Z"
+  }
+}

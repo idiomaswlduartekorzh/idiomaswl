@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Archiv der flüchtigen Echos",
+      "en": "Das Archiv der flüchtigen Echos"
+    },
+    "intro": {
+      "es": "In der Stadtbibliothek von Auenstein wird ein Projekt zur Bewahrung lokaler Geschichte durchgeführt. Herr Kroll, ein älterer Zeitzeuge, hat jedoch Bedenken bezüglich der Veröffentlichung seines Transkripts.",
+      "en": "In der Stadtbibliothek von Auenstein wird ein Projekt zur Bewahrung lokaler Geschichte durchgeführt. Herr Kroll, ein älterer Zeitzeuge, hat jedoch Bedenken bezüglich der Veröffentlichung seines Transkripts."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam durch und beantworten Sie die Fragen zum Verständnis und zur Interpretation.",
+      "en": "Lesen Sie den Text aufmerksam durch und beantworten Sie die Fragen zum Verständnis und zur Interpretation."
+    },
+    "targetText": "Die Stadtbibliothek von Auenstein hatte es sich zur Aufgabe gemacht, die flüchtigen Erinnerungen ihrer älteren Bürger für die Nachwelt festzuhalten. Das Projekt 'Stimmen der Zeit' sammelte Tonaufnahmen von Zeitzeugen, die anschließend transkribiert und in einer digitalen Datenbank öffentlich zugänglich gemacht wurden. Herr Kroll, ein ehemaliger Uhrmacher, dessen Familie seit Generationen in der Stadt ansässig war, hatte an einer dieser Sitzungen teilgenommen. Er hatte stundenlang über die karge Nachkriegszeit und die schleichende Veränderung des Stadtbildes gesprochen. Als er jedoch den Entwurf des Transkripts erhielt, erstarrte er. Die automatische Spracherkennungssoftware hatte seine Erzählung an entscheidenden Stellen verfälscht, was zu einer völlig falschen Darstellung der damaligen politischen Stimmung führte.\n\nEr suchte die junge Archivarin Lena auf, die für die Korrektur der Texte zuständig war. In ihrem kleinen Büro, das nach altem Papier und trockenem Staub roch, legte er das Dokument auf den Tisch. Er wies darauf hin, dass die Software seine ironische Bemerkung über den damaligen Bürgermeister als ernsthafte politische Unterstützung missinterpretiert hatte. Für Herrn Kroll war dies nicht nur ein technischer Fehler, sondern eine Entstellung seiner Lebensgeschichte. Er bestand darauf, dass der Text vor der Veröffentlichung korrigiert werden müsse, da er sonst seine Zustimmung zur öffentlichen Nutzung zurückziehen würde.\n\nLena hörte ihm geduldig zu, doch sie gab zu bedenken, dass das Archiv eine strikte Richtlinie verfolgte: Die Transkripte sollten den authentischen, ungeschönten Wortlaut der Aufnahmen widerspiegeln, inklusive der Fehler der Software, um die Unmittelbarkeit der oralen Überlieferung zu bewahren. Sie argumentierte, dass nachträgliche Korrekturen die wissenschaftliche Integrität des Projekts gefährden könnten. Es entstand ein schwelender Konflikt zwischen der Bewahrung der historischen Wahrheit und dem Respekt vor der Identität des Erzählers. Herr Kroll beharrte jedoch darauf, dass eine Lüge, selbst wenn sie technisch korrekt aus der Aufnahme extrahiert wurde, keine historische Wahrheit sein könne.\n\nDie Spannung im Raum war greifbar. Lena sah in die Akten und erkannte, dass die Glaubwürdigkeit des gesamten Archivs von der Kooperation der Zeitzeugen abhing. Wenn Herr Kroll seine Zustimmung verweigerte, würde ein wertvolles Stück lokaler Geschichte unwiederbringlich verloren gehen. Sie bot ihm einen Kompromiss an: Eine Fußnote, die den Kontext seiner ironischen Bemerkung erläuterte, anstatt den eigentlichen Text zu verändern. Herr Kroll zögerte, denn für ihn war die Fußnote nur ein Pflaster auf einer Wunde, die nicht hätte entstehen dürfen.\n\nSchließlich lenkte er ein, doch der Sieg fühlte sich hohl an. Die Archivarin begann mit der Arbeit, während Herr Kroll das Büro verließ. Zurück blieb ein Archiv, das nun zwar technisch präzise war, aber die ursprüngliche Intention des Erzählers in ein bürokratisches Korsett gezwängt hatte. Die Geschichte war bewahrt, doch der Geist der Erzählung war in den starren Strukturen der digitalen Erfassung verloren gegangen.",
+    "wordCount": 436,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "flüchtigen",
+        "lemma": "flüchtigen",
+        "glosses": {
+          "es": "fleeting",
+          "en": "fleeting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Entstellung",
+        "lemma": "Entstellung",
+        "glosses": {
+          "es": "distortion",
+          "en": "distortion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "schwelender",
+        "lemma": "schwelender",
+        "glosses": {
+          "es": "smoldering",
+          "en": "smoldering"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Integrität",
+        "lemma": "Integrität",
+        "glosses": {
+          "es": "integrity",
+          "en": "integrity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Korsett",
+        "lemma": "Korsett",
+        "glosses": {
+          "es": "corset/constraint",
+          "en": "corset/constraint"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unwiederbringlich",
+        "lemma": "unwiederbringlich",
+        "glosses": {
+          "es": "irretrievably",
+          "en": "irretrievably"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.2,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in der Geschichte hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um einen Konflikt über die historische Genauigkeit und Identität eines Zeitzeugenberichts."
+        },
+        {
+          "id": "a2",
+          "text": "Um die technische Herausforderung bei der Digitalisierung alter Tonaufnahmen in der Stadtbibliothek."
+        },
+        {
+          "id": "a3",
+          "text": "Um den Streit zwischen einem ehemaligen Uhrmacher und der Bibliotheksleitung über die Finanzierung des Projekts."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es entstand ein schwelender Konflikt zwischen der Bewahrung der historischen Wahrheit und dem Respekt vor der Identität des Erzählers.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum war Herr Kroll mit dem Transkript unzufrieden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er wollte nicht, dass seine Geschichte öffentlich wird."
+        },
+        {
+          "id": "a2",
+          "text": "Die Software hat seine Aussagen falsch interpretiert."
+        },
+        {
+          "id": "a3",
+          "text": "Das Transkript war unvollständig und enthielt Lücken."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die automatische Spracherkennungssoftware hatte seine Erzählung an entscheidenden Stellen verfälscht",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht Lena zu Herrn Krolls Forderung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie lehnt seine Forderung ab, weil sie die Software für fehlerfrei hält."
+        },
+        {
+          "id": "a2",
+          "text": "Sie unterstützt ihn voll und ganz bei der sofortigen Korrektur des Textes."
+        },
+        {
+          "id": "a3",
+          "text": "Sie versteht sein Anliegen, fühlt sich aber an die Archivrichtlinien gebunden."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Lena hörte ihm geduldig zu, doch sie gab zu bedenken, dass das Archiv eine strikte Richtlinie verfolgte",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Effekt erzielt der Autor mit der Beschreibung des Büros?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Atmosphäre der Archivarbeit zu verdeutlichen."
+        },
+        {
+          "id": "a2",
+          "text": "Das Alter des Archivars hervorzuheben."
+        },
+        {
+          "id": "a3",
+          "text": "Die technische Modernität der Bibliothek zu unterstreichen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "In ihrem kleinen Büro, das nach altem Papier und trockenem Staub roch, legte er das Dokument auf den Tisch.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich die Stimmung am Ende der Geschichte beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und erleichtert."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholisch und nachdenklich."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressiv und konfrontativ."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Geschichte war bewahrt, doch der Geist der Erzählung war in den starren Strukturen der digitalen Erfassung verloren gegangen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'flüchtigen' im Kontext der Einleitung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dass die Aufnahmen sehr schnell gemacht wurden."
+        },
+        {
+          "id": "a2",
+          "text": "Dass die Bürger ihre Geschichten nur kurz erzählten."
+        },
+        {
+          "id": "a3",
+          "text": "Dass die Erinnerungen vergänglich sind."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Stadtbibliothek von Auenstein hatte es sich zur Aufgabe gemacht, die flüchtigen Erinnerungen ihrer älteren Bürger für die Nachwelt festzuhalten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Diskutieren Sie, ob die Bewahrung der historischen Wahrheit durch technische Präzision wichtiger ist als die subjektive Wahrnehmung des Zeitzeugen.",
+      "en": "Diskutieren Sie, ob die Bewahrung der historischen Wahrheit durch technische Präzision wichtiger ist als die subjektive Wahrnehmung des Zeitzeugen."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Text aufmerksam durch und beantworten Sie die Fragen zum Verständnis und zur Interpretation.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Archiv der flüchtigen Echos | B2 Reading | WeLearn",
+      "en": "Das Archiv der flüchtigen Echos | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In der Stadtbibliothek von Auenstein wird ein Projekt zur Bewahrung lokaler Geschichte durchgeführt. Herr Kroll, ein älterer Zeitzeuge, hat jedoch Bedenken bezüglich der Veröffentlichung seines Transkripts.",
+      "en": "In der Stadtbibliothek von Auenstein wird ein Projekt zur Bewahrung lokaler Geschichte durchgeführt. Herr Kroll, ein älterer Zeitzeuge, hat jedoch Bedenken bezüglich der Veröffentlichung seines Transkripts."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Pfandsystem im Café Morgenrot",
+      "en": "Das Pfandsystem im Café Morgenrot"
+    },
+    "intro": {
+      "es": "Ein kurzer Artikel über die Einführung von Mehrwegbechern in einem lokalen Café und die Herausforderungen für die Kunden.",
+      "en": "Ein kurzer Artikel über die Einführung von Mehrwegbechern in einem lokalen Café und die Herausforderungen für die Kunden."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam durch und beantworten Sie die Fragen zum Verständnis.",
+      "en": "Lesen Sie den Text aufmerksam durch und beantworten Sie die Fragen zum Verständnis."
+    },
+    "targetText": "Im Café Morgenrot, einem beliebten Treffpunkt im Stadtviertel, herrschte lange Zeit eine entspannte Atmosphäre, bis Inhaber Lukas Weber die Einführung eines Pfandsystems für Kaffeebecher ankündigte. Sein Ziel war ambitioniert: Den täglichen Müllberg aus Einwegbechern, der sich in den umliegenden Papierkörben stapelte, drastisch zu reduzieren. Kunden zahlen nun einen Euro Pfand für einen stabilen, wiederverwendbaren Becher. Wer seinen Kaffee unterwegs genießt, muss den Becher später zurückbringen, um sein Geld zurückzuerhalten. Die Resonanz der Stammgäste war zunächst positiv, da sie den ökologischen Nutzen sofort erkannten und das robuste Design der Becher schätzten. Doch für Touristen und Gelegenheitsbesucher entwickelte sich das System schnell zu einer unerwarteten Hürde. Anna, eine Besucherin aus einer anderen Stadt, wollte nach ihrem morgendlichen Spaziergang einen schnellen Kaffee vor der Weiterreise. Als sie den Becher nach dem Trinken zurückgeben wollte, war das Café bereits geschlossen, da der Inhaber die Öffnungszeiten aufgrund von Personalmangel gekürzt hatte. Anna blieb auf ihrem Becher sitzen, während der Euro Pfand für sie nun verloren war. Dieser Vorfall löste eine hitzige Debatte im lokalen Online-Forum aus. Während die Befürworter betonen, dass der Umweltschutz Opfer erfordere und das System bei regelmäßiger Nutzung funktioniere, kritisieren andere die mangelnde Flexibilität. Sie argumentieren, dass das Pfandsystem vor allem Menschen bestraft, die keine Zeit haben, den Becher an den spezifischen Ort zurückzubringen. Lukas Weber steht nun vor einem Dilemma. Er möchte den Planeten schonen, verliert aber zunehmend die Gunst jener Kunden, die nicht in den Rhythmus seines Ladens passen. Die Spannung zwischen nachhaltigem Handeln und kundenorientiertem Service bleibt ungelöst. Es stellt sich die Frage, ob ein lokales System ohne ein stadtweites Netzwerk überhaupt langfristig überlebensfähig ist. Während die Mülltonnen vor dem Laden nun tatsächlich leerer bleiben, wächst der Unmut in den sozialen Medien. Die Becher stapeln sich nun nicht mehr im Abfall, sondern in den Küchenschränken der enttäuschten Touristen, was die ursprüngliche Idee der Kreislaufwirtschaft ad absurdum führt. Ob Lukas Weber sein Konzept anpassen wird oder ob die Frustration der Kunden zum Ende des Projekts führen wird, bleibt abzuwarten. Die Situation zeigt deutlich, dass gut gemeinte ökologische Maßnahmen ohne eine passende Infrastruktur zu neuen, unerwarteten Problemen führen können. Der Konflikt zwischen den idealistischen Zielen des Inhabers und der praktischen Realität der Kunden erfordert eine Lösung, die über die Grenzen des eigenen Ladens hinausgeht. Bisher gibt es jedoch keine Anzeichen für eine Kooperation mit anderen Cafés, was die Zukunft des Pfandsystems im Morgenrot weiterhin in Frage stellt.\n\nEin stadtweites Netzwerk könnte die Rückgabe erleichtern, doch die notwendige Kooperation zwischen konkurrierenden Gastronomen erweist sich in der Praxis als eine kaum überwindbare wirtschaftliche Hürde.",
+    "wordCount": 421,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ambitioniert",
+        "lemma": "ambitioniert",
+        "glosses": {
+          "es": "ambitious",
+          "en": "ambitious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Resonanz",
+        "lemma": "Resonanz",
+        "glosses": {
+          "es": "response/feedback",
+          "en": "response/feedback"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Hürde",
+        "lemma": "Hürde",
+        "glosses": {
+          "es": "obstacle",
+          "en": "obstacle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Debatte",
+        "lemma": "Debatte",
+        "glosses": {
+          "es": "debate",
+          "en": "debate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ad absurdum",
+        "lemma": "ad absurdum",
+        "glosses": {
+          "es": "to the point of absurdity",
+          "en": "to the point of absurdity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Infrastruktur",
+        "lemma": "Infrastruktur",
+        "glosses": {
+          "es": "infrastructure",
+          "en": "infrastructure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.3,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:24:04.240Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Schwierigkeiten eines lokalen Pfandsystems."
+        },
+        {
+          "id": "a2",
+          "text": "Die Vorteile von Einwegbechern im Café Morgenrot."
+        },
+        {
+          "id": "a3",
+          "text": "Die generelle Notwendigkeit von Umweltschutz in Cafés."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Spannung zwischen nachhaltigem Handeln und kundenorientiertem Service bleibt ungelöst.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum konnte Anna ihr Pfand nicht zurückerhalten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Becher war beschädigt."
+        },
+        {
+          "id": "a2",
+          "text": "Das Café war geschlossen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie hatte den Kassenbon verloren."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Als sie den Becher nach dem Trinken zurückgeben wollte, war das Café bereits geschlossen",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welches Problem entsteht durch die Becher in den Küchenschränken?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Kunden kaufen keine neuen Becher mehr."
+        },
+        {
+          "id": "a2",
+          "text": "Die Becher werden zu teuer für das Café."
+        },
+        {
+          "id": "a3",
+          "text": "Die Kreislaufwirtschaft funktioniert nicht."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "was die ursprüngliche Idee der Kreislaufwirtschaft ad absurdum führt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Text mit der Erwähnung von Anna?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein konkretes Beispiel für die Probleme der Kunden zu geben."
+        },
+        {
+          "id": "a2",
+          "text": "Die Geschichte einer Touristin ausführlich zu erzählen."
+        },
+        {
+          "id": "a3",
+          "text": "Zu zeigen, dass Touristen den Umweltschutz ignorieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Doch für Touristen und Gelegenheitsbesucher entwickelte sich das System schnell zu einer unerwarteten Hürde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie bewertet der Autor die aktuelle Situation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er findet das System sehr erfolgreich."
+        },
+        {
+          "id": "a2",
+          "text": "Er sieht eine ungelöste Problematik."
+        },
+        {
+          "id": "a3",
+          "text": "Er ist wütend auf den Caféinhaber."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Spannung zwischen nachhaltigem Handeln und kundenorientiertem Service bleibt ungelöst.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet das Wort 'ambitioniert' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr einfach."
+        },
+        {
+          "id": "a2",
+          "text": "Sehr langweilig."
+        },
+        {
+          "id": "a3",
+          "text": "Sehr ehrgeizig."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sein Ziel war ambitioniert: Den täglichen Müllberg aus Einwegbechern, der sich in den umliegenden Papierkörben stapelte, drastisch zu reduzieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Diskutieren Sie, ob Pfandsysteme für Cafés nur funktionieren können, wenn sie stadtweit einheitlich sind. Begründen Sie Ihre Meinung.",
+      "en": "Diskutieren Sie, ob Pfandsysteme für Cafés nur funktionieren können, wenn sie stadtweit einheitlich sind. Begründen Sie Ihre Meinung."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Text aufmerksam durch und beantworten Sie die Fragen zum Verständnis.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:24:04.240Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Pfandsystem im Café Morgenrot | B2 Reading | WeLearn",
+      "en": "Das Pfandsystem im Café Morgenrot | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein kurzer Artikel über die Einführung von Mehrwegbechern in einem lokalen Café und die Herausforderungen für die Kunden.",
+      "en": "Ein kurzer Artikel über die Einführung von Mehrwegbechern in einem lokalen Café und die Herausforderungen für die Kunden."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:24:04.240Z"
+  }
+}

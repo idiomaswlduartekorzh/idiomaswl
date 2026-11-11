@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Rückkehr von Silberbach",
+      "en": "Die Rückkehr von Silberbach"
+    },
+    "intro": {
+      "es": "Eine Kleinstadt debattiert über die Wiederherstellung eines historischen Ortsnamens.",
+      "en": "Eine Kleinstadt debattiert über die Wiederherstellung eines historischen Ortsnamens."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text und beantworten Sie die Fragen zur Textanalyse.",
+      "en": "Lesen Sie den Text und beantworten Sie die Fragen zur Textanalyse."
+    },
+    "targetText": "Die kleine Gemeinde Talheim stand vor einer ungewöhnlichen Entscheidung. Seit Jahrzehnten war der Ort unter seinem modernen Namen bekannt, doch eine Bürgerinitiative forderte nun die Rückkehr zum historischen Namen Silberbach. Bürgermeisterin Elena Vogt hatte zu einer öffentlichen Versammlung geladen, um die erhitzten Gemüter zu beruhigen. Der Saal war bis auf den letzten Platz gefüllt, als sie das Wort ergriff. Sie betonte, dass Identität ein wertvolles Gut sei, warnte jedoch gleichzeitig vor den bürokratischen Hürden, die eine Umbenennung mit sich brächte. Die Befürworter argumentierten leidenschaftlich, dass der Name Silberbach die Seele der Region widerspiegle, während der jetzige Name lediglich ein künstliches Konstrukt der Nachkriegszeit sei. Sie sahen darin eine Chance, den Tourismus durch ein authentischeres Image zu beleben.\n\nAuf der anderen Seite stand eine Gruppe lokaler Gewerbetreibender, angeführt von dem Hotelbesitzer Markus Lenz. Er äußerte große Sorgen bezüglich der praktischen Folgen für Reisende. Lenz befürchtete, dass Navigationssysteme und Reiseführer bei einer Änderung des Namens für Verwirrung sorgen könnten. Er argumentierte, dass die Gäste bereits Schwierigkeiten hätten, die kleinen Seitenstraßen zu finden, und eine offizielle Umbenennung den logistischen Aufwand für Lieferketten und Adressänderungen massiv erhöhen würde. Für ihn wog die wirtschaftliche Stabilität schwerer als die nostalgische Sehnsucht nach einer vergangenen Epoche. Die Debatte entwickelte sich schnell zu einem Schlagabtausch zwischen Tradition und Funktionalität.\n\nEinige Anwohner versuchten, einen Mittelweg zu finden. Sie schlugen vor, den historischen Namen als offiziellen Beinamen zu führen, um die Kosten gering zu halten und dennoch die Geschichte zu ehren. Doch dieser Kompromiss stieß bei beiden Lagern auf wenig Gegenliebe. Die Traditionalisten wollten keine halben Sachen, während die Pragmatiker jede Form der Namensänderung als unnötiges Risiko betrachteten. Die Stimmung im Raum wurde zunehmend frostig, als die Diskussion auf die Kosten für neue Ortsschilder und offizielle Dokumente kam. Die Bürgermeisterin notierte sich die Argumente, während sie merkte, dass die Gräben tiefer waren, als sie zunächst vermutet hatte.\n\nDer Konflikt erreichte seinen Höhepunkt, als ein junger Historiker aufstand und erklärte, dass Namen nicht nur Etiketten seien, sondern politische Aussagen. Er behauptete, dass der Name Talheim eine bewusste Abkehr von der Geschichte darstelle, die nun korrigiert werden müsse. Diese Aussage löste bei den Geschäftsleuten Kopfschütteln aus, die ihre Existenzgrundlage durch eine solche ideologische Debatte gefährdet sahen. Die Atmosphäre war geprägt von einem tiefen Misstrauen gegenüber den Motiven der jeweils anderen Seite. Es wurde deutlich, dass es hier nicht nur um ein Schild am Ortseingang ging, sondern um die Frage, wie man die eigene Vergangenheit in einer globalisierten Welt bewertet.\n\nAm Ende des Abends gab es keinen Konsens. Bürgermeisterin Vogt beendete die Sitzung mit dem Versprechen, eine unabhängige Studie zur wirtschaftlichen Auswirkung in Auftrag zu geben. Als die Bürger den Saal verließen, blieb eine spürbare Spannung zurück. Die Frage, ob Silberbach jemals wieder auf den Landkarten erscheinen würde, blieb unbeantwortet. Die Stadt war gespalten, und die Rückkehr zur Normalität schien in weite Ferne gerückt. Die Identität der Gemeinde war nun untrennbar mit diesem ungelösten Disput verbunden, was die Zukunft des Ortes ungewiss erscheinen ließ.",
+    "wordCount": 491,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Bürgerinitiative",
+        "lemma": "Bürgerinitiative",
+        "glosses": {
+          "es": "citizens' initiative",
+          "en": "citizens' initiative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gewerbetreibender",
+        "lemma": "Gewerbetreibender",
+        "glosses": {
+          "es": "business owner",
+          "en": "business owner"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Nachkriegszeit",
+        "lemma": "Nachkriegszeit",
+        "glosses": {
+          "es": "post-war period",
+          "en": "post-war period"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schlagabtausch",
+        "lemma": "Schlagabtausch",
+        "glosses": {
+          "es": "exchange of blows/heated debate",
+          "en": "exchange of blows/heated debate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Existenzgrundlage",
+        "lemma": "Existenzgrundlage",
+        "glosses": {
+          "es": "livelihood",
+          "en": "livelihood"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Konsens",
+        "lemma": "Konsens",
+        "glosses": {
+          "es": "consensus",
+          "en": "consensus"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.4,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:22:20.786Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in dem Text hauptsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Umbenennung einer Stadt."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Planung neuer Ortsschilder."
+        },
+        {
+          "id": "a3",
+          "text": "Um die wirtschaftliche Lage eines Hotels."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Seit Jahrzehnten war der Ort unter seinem modernen Namen bekannt, doch eine Bürgerinitiative forderte nun die Rückkehr zum historischen Namen Silberbach.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was befürchtet Markus Lenz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Hohe Kosten."
+        },
+        {
+          "id": "a2",
+          "text": "Verwirrung bei Reisenden."
+        },
+        {
+          "id": "a3",
+          "text": "Einen Verlust an historischer Identität."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Lenz befürchtete, dass Navigationssysteme und Reiseführer bei einer Änderung des Namens für Verwirrung sorgen könnten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum lehnten beide Lager den Kompromiss ab?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil er zu teuer war."
+        },
+        {
+          "id": "a2",
+          "text": "Weil sie die Bürgermeisterin nicht mochten."
+        },
+        {
+          "id": "a3",
+          "text": "Weil er ihre Ziele nicht voll erfüllte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Traditionalisten wollten keine halben Sachen, während die Pragmatiker jede Form der Namensänderung als unnötiges Risiko betrachteten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Historiker mit seinem Beitrag?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er will die Geschichte korrigieren."
+        },
+        {
+          "id": "a2",
+          "text": "Er möchte die Hotelbesitzer unterstützen."
+        },
+        {
+          "id": "a3",
+          "text": "Er will die Kosten für die Schilder senken."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Er behauptete, dass der Name Talheim eine bewusste Abkehr von der Geschichte darstelle, die nun korrigiert werden müsse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich die Stimmung am Ende der Versammlung beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Versöhnlich."
+        },
+        {
+          "id": "a2",
+          "text": "Gespalten und angespannt."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistisch."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Stadt war gespalten, und die Rückkehr zur Normalität schien in weite Ferne gerückt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Schlagabtausch' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein körperlicher Kampf."
+        },
+        {
+          "id": "a2",
+          "text": "Ein geplanter Austausch von Argumenten."
+        },
+        {
+          "id": "a3",
+          "text": "Eine hitzige verbale Auseinandersetzung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Debatte entwickelte sich schnell zu einem Schlagabtausch zwischen Tradition und Funktionalität.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 150 Wörter), in dem Sie Stellung beziehen: Sollten historische Ortsnamen wieder eingeführt werden, auch wenn dies logistische Probleme verursacht?",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 150 Wörter), in dem Sie Stellung beziehen: Sollten historische Ortsnamen wieder eingeführt werden, auch wenn dies logistische Probleme verursacht?"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lesen Sie den Text und beantworten Sie die Fragen zur Textanalyse.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:22:20.786Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Rückkehr von Silberbach | B2 Reading | WeLearn",
+      "en": "Die Rückkehr von Silberbach | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine Kleinstadt debattiert über die Wiederherstellung eines historischen Ortsnamens.",
+      "en": "Eine Kleinstadt debattiert über die Wiederherstellung eines historischen Ortsnamens."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:22:20.786Z"
+  }
+}

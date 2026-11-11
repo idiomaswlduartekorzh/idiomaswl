@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "german B2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "de",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Reparatur-Paradoxon: Ein Abend in der Werkstatt",
+      "en": "Das Reparatur-Paradoxon: Ein Abend in der Werkstatt"
+    },
+    "intro": {
+      "es": "Eine kritische Analyse des lokalen Reparatur-Treffs durch einen skeptischen Beobachter.",
+      "en": "Eine kritische Analyse des lokalen Reparatur-Treffs durch einen skeptischen Beobachter."
+    },
+    "mission": {
+      "es": "Untersuchen Sie, ob gemeinschaftliche Reparatur-Initiativen eine nachhaltige Lösung oder bloße Symbolpolitik darstellen.",
+      "en": "Untersuchen Sie, ob gemeinschaftliche Reparatur-Initiativen eine nachhaltige Lösung oder bloße Symbolpolitik darstellen."
+    },
+    "targetText": "Die Tür zur 'Werkstatt-Oase' klemmt, was angesichts des Zwecks dieses Ortes eine gewisse Ironie besitzt. Als ich an einem verregneten Dienstagabend den Raum betrat, wurde ich von einer Mischung aus verbranntem Lötzinn und abgestandenem Kaffee begrüßt. Das Konzept ist simpel: Bürger bringen defekte Kleingeräte mit, und ehrenamtliche Experten wie der pensionierte Elektriker Herr Weber helfen bei der Instandsetzung. Mein Ziel war es, meinen zehn Jahre alten Toaster zu retten, der seit Wochen nur noch einseitig röstet. Doch die Realität der Werkstatt ist von einer ernüchternden Knappheit geprägt.\n\nDer Raum ist überfüllt, aber die Ressourcen sind es nicht. Es gibt genau zwei funktionierende Multimeter für ein Dutzend Hilfesuchende. Während Herr Weber geduldig einem jungen Studenten erklärt, wie man einen Wackelkontakt an einer Lampe lötet, staut sich der Frust bei den Wartenden. Die ehrenamtlichen Helfer sind zweifellos kompetent, doch sie sind erschöpft. Sie arbeiten unentgeltlich, während die Schlange der defekten Geräte stetig wächst. Es herrscht eine Atmosphäre, die zwischen solidarischem Tatendrang und der Resignation angesichts der schieren Menge an technischem Müll schwankt.\n\nMein Toaster wurde schließlich von einer Freiwilligen namens Frau Klein begutachtet. Ihr Urteil war schnell gefällt: Ein spezifisches Ersatzteil fehlt, und die universellen Werkzeuge der Werkstatt reichen für diesen komplexen Mechanismus nicht aus. Hier zeigt sich die strukturelle Schwäche des Modells. Ohne ein zentrales Ersatzteillager oder spezialisierte Ausrüstung bleibt die Hilfe oft oberflächlich. Man kann zwar ein Kabel flicken, aber die moderne Wegwerf-Elektronik ist oft so konzipiert, dass sie absichtlich irreparabel bleibt. Der Kampf gegen den Elektroschrott gleicht hier dem Versuch, ein sinkendes Schiff mit einem Teelöffel auszuschöpfen.\n\nDennoch wäre es unfair, das Projekt als gescheitert abzutun. Während ich dort saß, reparierte ein Nachbar erfolgreich eine Kaffeemaschine, die bereits auf dem Weg zum Wertstoffhof war. Die soziale Komponente ist nicht zu unterschätzen; der Austausch von Wissen schafft ein Bewusstsein für den Wert von Dingen, das über den rein materiellen Aspekt hinausgeht. Die Werkstatt ist kein Ersatz für eine nachhaltige Industriepolitik, aber sie fungiert als ein notwendiges Korrektiv zu unserer Konsumkultur.\n\nAm Ende verließ ich die Werkstatt mit meinem defekten Toaster und einer neuen Perspektive. Die Reparatur ist gescheitert, aber der Prozess hat mir die Komplexität der Nachhaltigkeit vor Augen geführt. Es ist ein mühsamer, oft frustrierender Weg, der auf dem Engagement weniger basiert. Ob dieses Modell langfristig gegen die industrielle Übermacht bestehen kann, bleibt fraglich. Die Werkstatt ist ein Ort des Widerstands, doch ihre Waffen sind stumpf. Es bleibt das ungelöste Spannungsfeld zwischen dem Wunsch nach Reparatur und der industriellen Realität, die uns zur Entsorgung zwingt.",
+    "wordCount": 416,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Lötzinn",
+        "lemma": "Lötzinn",
+        "glosses": {
+          "es": "solder",
+          "en": "solder"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Instandsetzung",
+        "lemma": "Instandsetzung",
+        "glosses": {
+          "es": "repair/restoration",
+          "en": "repair/restoration"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Multimeter",
+        "lemma": "Multimeter",
+        "glosses": {
+          "es": "multimeter",
+          "en": "multimeter"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Wegwerf-Elektronik",
+        "lemma": "Wegwerf-Elektronik",
+        "glosses": {
+          "es": "disposable electronics",
+          "en": "disposable electronics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Korrektiv",
+        "lemma": "Korrektiv",
+        "glosses": {
+          "es": "corrective measure",
+          "en": "corrective measure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Spannungsfeld",
+        "lemma": "Spannungsfeld",
+        "glosses": {
+          "es": "area of tension",
+          "en": "area of tension"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.4,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T17:12:24.327Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist die Hauptaussage des Textes über die Werkstatt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie ist ein symbolischer Ort mit begrenzter Wirkung."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ist ineffizient und sollte schließen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie löst das Problem des Elektroschrotts vollständig."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Werkstatt ist kein Ersatz für eine nachhaltige Industriepolitik, aber sie fungiert als ein notwendiges Korrektiv zu unserer Konsumkultur.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum konnte der Toaster des Autors nicht repariert werden?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Helfer waren zu müde."
+        },
+        {
+          "id": "a2",
+          "text": "Ein Ersatzteil fehlte."
+        },
+        {
+          "id": "a3",
+          "text": "Das Gerät war zu alt."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ein spezifisches Ersatzteil fehlt, und die universellen Werkzeuge der Werkstatt reichen für diesen komplexen Mechanismus nicht aus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht der Autor zur Arbeit der Freiwilligen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hält sie für inkompetent, da sie den Toaster nicht reparieren konnten."
+        },
+        {
+          "id": "a2",
+          "text": "Er kritisiert ihre mangelnde Organisation und die langen Wartezeiten."
+        },
+        {
+          "id": "a3",
+          "text": "Er bewundert ihren Einsatz, zweifelt aber an der strukturellen Nachhaltigkeit."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die ehrenamtlichen Helfer sind zweifellos kompetent, doch sie sind erschöpft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Autor mit der Beschreibung der Atmosphäre?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die emotionale Belastung des Projekts zu verdeutlichen."
+        },
+        {
+          "id": "a2",
+          "text": "Um die Leser zu einer Spende zu bewegen."
+        },
+        {
+          "id": "a3",
+          "text": "Um die technische Überlegenheit der Werkstatt zu betonen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es herrscht eine Atmosphäre, die zwischen solidarischem Tatendrang und der Resignation angesichts der schieren Menge an technischem Müll schwankt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie ist der Ton des Autors am Ende des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptisch."
+        },
+        {
+          "id": "a3",
+          "text": "Zornig."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ob dieses Modell langfristig gegen die industrielle Übermacht bestehen kann, bleibt fraglich.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Wegwerf-Elektronik' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elektronik, die man im Müll findet und wiederverwendet."
+        },
+        {
+          "id": "a2",
+          "text": "Die Entsorgung von kaputten Geräten durch die Werkstatt."
+        },
+        {
+          "id": "a3",
+          "text": "Geräte, die für eine kurze Lebensdauer produziert werden."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "die moderne Wegwerf-Elektronik ist oft so konzipiert, dass sie absichtlich irreparabel bleibt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (100 Wörter), in dem Sie darlegen, ob Sie die Reparatur-Initiative als sinnvoll erachten oder ob sie nur ein Tropfen auf den heißen Stein ist.",
+      "en": "Schreiben Sie einen kurzen Kommentar (100 Wörter), in dem Sie darlegen, ob Sie die Reparatur-Initiative als sinnvoll erachten oder ob sie nur ein Tropfen auf den heißen Stein ist."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Untersuchen Sie, ob gemeinschaftliche Reparatur-Initiativen eine nachhaltige Lösung oder bloße Symbolpolitik darstellen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T17:12:24.327Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Reparatur-Paradoxon: Ein Abend in der Werkstatt | B2 Reading | WeLearn",
+      "en": "Das Reparatur-Paradoxon: Ein Abend in der Werkstatt | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine kritische Analyse des lokalen Reparatur-Treffs durch einen skeptischen Beobachter.",
+      "en": "Eine kritische Analyse des lokalen Reparatur-Treffs durch einen skeptischen Beobachter."
+    },
+    "canonicalPath": "/en/practice/german/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T17:12:24.327Z"
+  }
+}
