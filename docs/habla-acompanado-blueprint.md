@@ -280,6 +280,27 @@ Se dice, no se disimula:
 - **No hay emparejador.** Si el estudiante no tiene con quién, este modo no le sirve: se va
   a «habla solo».
 
+### Recorrido de cada rol y sistemas simulados
+
+Después de elegir un papel, la interfaz muestra una etapa a la vez. La primera pantalla cuenta
+la situación y el objetivo privado del personaje; la segunda explica cómo actuar, sus límites y
+qué herramientas tendrá disponibles. Solo al pulsar «Empezar conversación» aparece la mesa de
+juego. Allí se consultan, en tres recursos planos, los datos y documentos, las palabras para
+hablar y el criterio de cierre. Se puede volver a las instrucciones durante la conversación.
+Este recorrido reorganiza las 400 fichas publicadas sin cambiar sus datos, objetivos, cartas ni
+criterios editoriales. Las fichas privadas permanecen en el idioma meta; la orientación de la
+interfaz puede estar en español.
+
+Un escenario puede añadir una herramienta local cuando la situación la justifique. En «La
+licuadora fue un regalo» (Inglés A2), quien atiende dispone de una consulta simulada del registro
+de regalos: pide el nombre y los últimos cuatro dígitos del teléfono de la compradora, busca y
+ve el resultado de la carta existente. La instrucción visible indica abrir la consulta después
+del turno global 5, igual que la carta original. Después permite preparar una nota local con
+solución, destino del producto, responsable y hora. La otra persona ve solo sus propios datos,
+incluido que no tiene recibo y
+que dispone del contacto de la compradora. La herramienta no crea una base de datos real,
+sincronía ni progreso guardado.
+
 ## 9. La carta va en su propia pantalla
 
 No es un detalle de maquetación. En las simulaciones, la carta impresa debajo del andamiaje

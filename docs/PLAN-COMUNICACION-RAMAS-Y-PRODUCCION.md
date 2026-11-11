@@ -5,6 +5,27 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Centro de juegos de rol de Práctica — 6 de noviembre de 2026
+
+Rama `codex/speaking-roleplay-20261106`, en un worktree aislado y actualizada a
+`origin/main@6ebd9b53`. [PR #55](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/55)
+en borrador; estado `LISTO_PARA_REVISION`, sin integración ni despliegue. Las 200 situaciones y
+400 fichas publicadas conservan sus datos y cartas. El hub presenta la elección como centro de
+juegos de rol. Al escoger un papel se ve una pantalla con la situación y el objetivo, después
+otra con las instrucciones y herramientas disponibles, y por último la conversación con tres
+recursos planos: datos, palabras y cierre. La carta conserva su pantalla propia. «La licuadora
+fue un regalo» mantiene la búsqueda simulada del registro de regalos y la nota local de
+decisión, usando el resultado de la carta ya publicada en su turno original.
+
+Pasaron `check:habla-acompanada` (200 escenarios), `check:habla-release:a2` (20/20 y cinco
+perfiles), `check:practica-catalog`, TypeScript, ESLint dirigido y el build completo de 3.689
+páginas. El servidor de producción local devolvió 200 en 97 rutas: hub, 20 escenarios, 40
+roles, caja y destinos gramaticales; un slug y un rol inválidos devolvieron 404. El HTML del
+rol A no expone el correo privado del rol B. En navegador se recorrieron ambos papeles, las
+tres etapas, las pestañas, la consulta con datos correctos e incorrectos y la vista móvil, sin
+errores de ejecución ni desbordamiento horizontal. Hay capturas reales de escritorio y móvil
+en el espacio de trabajo; producción no se ha modificado.
+
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
 
 Rama `codex/aleman-a1-ai-feedback`, actualizada desde `origin/main@e6c9a1448`.
