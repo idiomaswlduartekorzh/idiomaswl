@@ -1,4 +1,8 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { getAdvancedWritingLocale } from '@/lib/practica/writing-route'
 
 /**
  * Navegación lateral entre las destrezas de un nivel y entre los niveles de un idioma.
@@ -52,6 +56,10 @@ export default function SkillNav({
   /** Niveles que existen para este idioma. */
   levels: string[]
 }) {
+  const pathname = usePathname()
+  // These exercises keep the complete learner-facing journey in the target language.
+  if (getAdvancedWritingLocale(pathname)) return null
+
   const langName = LANG_LABELS[lang] ?? lang
   const lvl = level.toUpperCase()
   const base = `/practica/${lang}/${level}`

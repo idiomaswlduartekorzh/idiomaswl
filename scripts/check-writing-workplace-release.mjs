@@ -2,14 +2,14 @@ import fs from 'node:fs'
 import { validateWritingWorkplaceCases } from './lib/writing-workplace-harness.mjs'
 
 const languages = [
-  { slug: 'ingles', locale: 'en', bank: '', prefix: 'Re:' },
-  { slug: 'frances', locale: 'fr', bank: 'frances-', prefix: 'Ré :', areaLabel: true },
-  { slug: 'aleman', locale: 'de', bank: 'aleman-', prefix: 'AW:', areaLabel: true },
-  { slug: 'italiano', locale: 'it', bank: 'italiano-', prefix: 'R:', areaLabel: true },
-  { slug: 'portugues', locale: 'pt', bank: 'portugues-', prefix: 'Re:', areaLabel: true },
-  { slug: 'ruso', locale: 'ru', bank: 'ruso-', prefix: 'Ответ:', areaLabel: true },
-  { slug: 'japones', locale: 'ja', bank: 'japones-', prefix: '返信:', areaLabel: true, lengthUnit: 'characters' },
-  { slug: 'coreano', locale: 'ko', bank: 'coreano-', prefix: '답장:', areaLabel: true, lengthUnit: 'characters' },
+  { slug: 'ingles', locale: 'en', ogLocale: 'en_US', bank: '', prefix: 'Re:' },
+  { slug: 'frances', locale: 'fr', ogLocale: 'fr_FR', bank: 'frances-', prefix: 'Ré :', areaLabel: true },
+  { slug: 'aleman', locale: 'de', ogLocale: 'de_DE', bank: 'aleman-', prefix: 'AW:', areaLabel: true },
+  { slug: 'italiano', locale: 'it', ogLocale: 'it_IT', bank: 'italiano-', prefix: 'R:', areaLabel: true },
+  { slug: 'portugues', locale: 'pt', ogLocale: 'pt_BR', bank: 'portugues-', prefix: 'Re:', areaLabel: true },
+  { slug: 'ruso', locale: 'ru', ogLocale: 'ru_RU', bank: 'ruso-', prefix: 'Ответ:', areaLabel: true },
+  { slug: 'japones', locale: 'ja', ogLocale: 'ja_JP', bank: 'japones-', prefix: '返信:', areaLabel: true, lengthUnit: 'characters' },
+  { slug: 'coreano', locale: 'ko', ogLocale: 'ko_KR', bank: 'coreano-', prefix: '답장:', areaLabel: true, lengthUnit: 'characters' },
 ]
 
 let failed = false
@@ -19,17 +19,27 @@ for (const language of languages) {
   for (const level of ['b2', 'c1', 'c2']) {
     const bankPath = new URL(`../src/data/practica/writing-workplace-${language.bank}${level}.json`, import.meta.url)
     const routePath = new URL(`../src/app/(site)/practica/${language.slug}/${level}/escritura/page.tsx`, import.meta.url)
-    if (!fs.existsSync(bankPath) || !fs.existsSync(routePath)) {
-      console.error(`${language.slug}/${level}: bank or route is missing.`)
+    const imagePath = new URL(`../src/app/(site)/practica/${language.slug}/${level}/escritura/opengraph-image.tsx`, import.meta.url)
+    if (!fs.existsSync(bankPath) || !fs.existsSync(routePath) || !fs.existsSync(imagePath)) {
+      console.error(`${language.slug}/${level}: bank, route or target-language social image is missing.`)
       failed = true
       continue
     }
     const route = fs.readFileSync(routePath, 'utf8')
+    const image = fs.readFileSync(imagePath, 'utf8')
     const expectedBank = `writing-workplace-${language.bank}${level}.json`
     const expectedLevel = `level="${level.toUpperCase()}"`
     const expectedLocale = language.locale === 'en' ? '' : `language="${language.locale}"`
+    const title = route.match(/^const title = (.+)$/mu)?.[1]
+    const imageAlt = image.match(/^export const alt = (.+)$/mu)?.[1]
     if (!route.includes(expectedBank) || !route.includes(expectedLevel) || (expectedLocale && !route.includes(expectedLocale))) {
       console.error(`${language.slug}/${level}: route is wired to the wrong bank, level or locale.`)
+      failed = true
+      continue
+    }
+    if (!route.includes(`locale: '${language.ogLocale}'`) || !route.includes('openGraph:') || !route.includes('twitter:') || !route.includes('alternates: { canonical }') ||
+        !image.includes(`createWritingOgImage('${language.locale}', '${level.toUpperCase()}')`) || !title || title !== imageAlt) {
+      console.error(`${language.slug}/${level}: native-language metadata or social image is missing or wired incorrectly.`)
       failed = true
       continue
     }

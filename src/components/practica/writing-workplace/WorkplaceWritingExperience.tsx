@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { WRITING_UI, type WritingLevel, type WritingLocale } from '@/data/practica/writing-workplace-ui'
 import styles from './WorkplaceWritingExperience.module.css'
@@ -43,6 +43,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
   const [hydrated, setHydrated] = useState(false)
   const [showEmptyWarning, setShowEmptyWarning] = useState(false)
   const [reviewChecks, setReviewChecks] = useState<Record<string, boolean>>({})
+  const focusAfterTransition = useRef(false)
   const storageKey = `welearn-writing-${language}-${level.toLowerCase()}-workplace`
   const ui = WRITING_UI[language]
   const intro = ui.intro[level]
@@ -94,26 +95,33 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
   const notesReady = Object.values(notes).every(value => Boolean(value.trim()))
   const analysisReady = Boolean(current && correct === current.questions.length && notesReady)
 
-  function scrollToWorkspace() {
-    window.setTimeout(() => document.getElementById('case-workspace')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0)
-  }
+  useEffect(() => {
+    if (!focusAfterTransition.current) return
+    const frame = window.requestAnimationFrame(() => {
+      focusAfterTransition.current = false
+      const heading = document.querySelector<HTMLElement>('#case-workspace [data-stage-heading]')
+      heading?.focus()
+      document.getElementById('case-workspace')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+    return () => window.cancelAnimationFrame(frame)
+  }, [selectedId, stage])
 
   function openCase(id: string) {
+    focusAfterTransition.current = true
     setSelectedId(id)
     setStage(drafts[id]?.trim() ? 'reply' : 'email')
     setReviewChecks({})
     setShowEmptyWarning(false)
-    scrollToWorkspace()
   }
 
   function closeCase() {
+    focusAfterTransition.current = true
     setSelectedId(null)
-    scrollToWorkspace()
   }
 
   function go(next: Stage) {
+    focusAfterTransition.current = true
     setStage(next)
-    scrollToWorkspace()
   }
 
   function submitDraft() {
@@ -139,7 +147,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
           <>
             <header className={styles.intro}>
               <p className={styles.kicker}>{ui.breadcrumb} {level} · {cases.length < 20 ? ui.previewKicker : ui.liveKicker}</p>
-              <h1>{intro.first}<br /><em>{intro.second}</em></h1>
+              <h1 data-stage-heading tabIndex={-1}>{intro.first}<br /><em>{intro.second}</em></h1>
               <p>{intro.description}</p>
               <div className={styles.introMeta}><span>{ui.caseCount.replace('{count}', String(cases.length))}</span><span>{ui.stepsCount}</span><span>{ui.localDraft}</span></div>
             </header>
@@ -175,7 +183,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
 
             {stage === 'email' && (
               <section className={styles.panel} aria-labelledby="email-title">
-                <div className={styles.sectionHeading}><span>{ui.emailInput}</span><h2 id="email-title">{ui.emailTitle}</h2><p>{ui.emailInstruction}</p></div>
+                <div className={styles.sectionHeading}><span>{ui.emailInput}</span><h2 id="email-title" data-stage-heading tabIndex={-1}>{ui.emailTitle}</h2><p>{ui.emailInstruction}</p></div>
                 <article className={styles.email}>
                   <div className={styles.emailHeader}><div><span>{ui.from}</span><strong>{current.email.from}</strong></div><div><span>{ui.to}</span><strong>{current.email.to}</strong></div><div><span>{ui.sent}</span><strong>{current.email.sent}</strong></div><div><span>{ui.subject}</span><strong>{current.email.subject}</strong></div></div>
                   <div className={styles.emailBody}>{current.email.body}</div>
@@ -186,7 +194,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
 
             {stage === 'document' && (
               <section className={styles.panel} aria-labelledby="document-title">
-                <div className={styles.sectionHeading}><span>{ui.evidenceStep}</span><h2 id="document-title">{current.document.title}</h2><p>{current.document.intro}</p></div>
+                <div className={styles.sectionHeading}><span>{ui.evidenceStep}</span><h2 id="document-title" data-stage-heading tabIndex={-1}>{current.document.title}</h2><p>{current.document.intro}</p></div>
                 <ol className={styles.timeline}>{current.document.facts.map(fact => <li key={fact.id}><span className={styles.factTime}>{fact.time}</span><p>{fact.text}</p><span className={styles.factId}>{fact.id}</span></li>)}</ol>
                 <div className={styles.panelActions}><button type="button" className={styles.quietButton} onClick={() => go('email')}>← {ui.backEmail}</button><button type="button" className={styles.primaryButton} onClick={() => go('analysis')}>{ui.analyseSituation} →</button></div>
               </section>
@@ -194,7 +202,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
 
             {stage === 'analysis' && (
               <section className={styles.panel} aria-labelledby="analysis-title">
-                <div className={styles.sectionHeading}><span>{ui.judgementStep}</span><h2 id="analysis-title">{ui.analysis[level].title}</h2><p>{ui.analysis[level].instruction}</p></div>
+                <div className={styles.sectionHeading}><span>{ui.judgementStep}</span><h2 id="analysis-title" data-stage-heading tabIndex={-1}>{ui.analysis[level].title}</h2><p>{ui.analysis[level].instruction}</p></div>
                 <div className={styles.notebook}>
                   <label><span>{noteCopy.fact}</span><textarea value={notes.fact} onChange={event => setNotesByCase(previous => ({ ...previous, [current.id]: { ...notes, fact: event.target.value } }))} rows={2} placeholder={noteCopy.factPlaceholder} /></label>
                   <label><span>{noteCopy.assumption}</span><textarea value={notes.assumption} onChange={event => setNotesByCase(previous => ({ ...previous, [current.id]: { ...notes, assumption: event.target.value } }))} rows={2} placeholder={noteCopy.assumptionPlaceholder} /></label>
@@ -217,7 +225,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
 
             {stage === 'reply' && (
               <section className={styles.panel} aria-labelledby="reply-title">
-                <div className={styles.sectionHeading}><span>{ui.replyStep}</span><h2 id="reply-title">{ui.replyTitle}</h2><p>{current.task.prompt}</p></div>
+                <div className={styles.sectionHeading}><span>{ui.replyStep}</span><h2 id="reply-title" data-stage-heading tabIndex={-1}>{ui.replyTitle}</h2><p>{current.task.prompt}</p></div>
                 <div className={styles.replyGrid}>
                   <div className={styles.editor}><div className={styles.editorHeader}><span>{ui.to}: {current.email.from}</span><strong>{ui.replyPrefix} {current.email.subject}</strong></div><label htmlFor="workplace-reply">{ui.replyLabel}</label><textarea id="workplace-reply" rows={14} value={draft} onChange={event => setDrafts(previous => ({ ...previous, [current.id]: event.target.value }))} placeholder={ui.replyPlaceholder} /><div className={styles.editorFooter}><span>{writingLength(draft, language)} {ui.wordUnit} · {current.task.wordGuide}</span><span>{ui.draftSaved}</span></div></div>
                   <aside className={styles.replyAside}><h3>{ui.beforeSend}</h3><ul>{current.task.criteria.map(criterion => <li key={criterion}>{criterion}</li>)}</ul><p>{ui.wordGuideNote}</p></aside>
@@ -229,7 +237,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
 
             {stage === 'review' && (
               <section className={styles.panel} aria-labelledby="review-title">
-                <div className={styles.sectionHeading}><span>{ui.revisionStep}</span><h2 id="review-title">{ui.revisionTitle}</h2><p>{ui.revisionInstruction}</p></div>
+                <div className={styles.sectionHeading}><span>{ui.revisionStep}</span><h2 id="review-title" data-stage-heading tabIndex={-1}>{ui.revisionTitle}</h2><p>{ui.revisionInstruction}</p></div>
                 <div className={styles.compareGrid}><article><span className={styles.compareLabel}>{ui.yourReply}</span><div className={styles.compareBody}>{draft}</div></article><article><span className={styles.compareLabel}>{ui.possibleReply}</span><strong>{current.model.subject}</strong><div className={styles.compareBody}>{current.model.body}</div></article></div>
                 <div className={styles.reviewBottom}><div><h3>{ui.noticeDecisions}</h3><ul className={styles.annotationList}>{current.model.annotations.map(annotation => <li key={annotation.label}><strong>{annotation.label}</strong><span>“{annotation.excerpt}”</span></li>)}</ul></div><div><h3>{ui.checkReply}</h3><div className={styles.checklist}>{current.task.criteria.map(criterion => <label key={criterion}><input type="checkbox" checked={Boolean(reviewChecks[criterion])} onChange={event => setReviewChecks(previous => ({ ...previous, [criterion]: event.target.checked }))} /><span>{criterion}</span></label>)}</div></div></div>
                 {firstDraft && firstDraft !== draft && <details className={styles.firstDraft}><summary>{ui.compareFirstDraft}</summary><div>{firstDraft}</div></details>}

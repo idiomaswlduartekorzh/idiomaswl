@@ -2392,7 +2392,7 @@
       "to": "Anke · Terminservice",
       "sent": "6. Mai, 11:05 Uhr",
       "subject": "Welcher Tag ist auf der Bestätigung gemeint?",
-      "body": "Hallo Anke,\n\neine Patientin hat ihre Bestätigung mit „05.06.“ gelesen und ist am 6. Mai, erschienen. Im Kalender sehe ich einen Termin im Juni. Sie ist verständlicherweise verunsichert und fragt, ob wir den Termin geändert haben. Kannst du mir das richtige Datum bestätigen und sagen, wie wir es eindeutig mitteilen?\n\nSamira"
+      "body": "Hallo Anke,\n\neine Patientin hat ihre Bestätigung mit „05.06.“ gelesen und ist am 6. Mai erschienen. Im Kalender sehe ich einen Termin im Juni. Sie ist verständlicherweise verunsichert und fragt, ob wir den Termin geändert haben. Kannst du mir das richtige Datum bestätigen und sagen, wie wir es eindeutig mitteilen?\n\nSamira"
     },
     "document": {
       "title": "Terminbestätigung und Kalender",
@@ -2416,7 +2416,7 @@
         {
           "id": "DE13F4",
           "time": "Stand jetzt",
-          "text": "Anke kann eine Bestätigung mit ausgeschriebenem Monat und Wochentag senden. Ein früherer Ersatztermin wurde noch nicht geprüft."
+          "text": "Anke kann eine Bestätigung mit ausgeschriebenem Monat und Uhrzeit senden. Ein früherer Ersatztermin wurde noch nicht geprüft."
         }
       ]
     },
@@ -2444,7 +2444,7 @@
           },
           {
             "id": "c",
-            "text": "Am Donnerstag, dem 5. Juni, um 10:30 Uhr.",
+            "text": "Am 5. Juni um 10:30 Uhr.",
             "feedback": "Der Kalender nennt den 5. Juni ausdrücklich."
           }
         ]
@@ -2517,7 +2517,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Das Datum mit Wochentag und ausgeschriebenem Monat bestätigen.",
+            "text": "Das Datum mit ausgeschriebenem Monat und Uhrzeit bestätigen.",
             "feedback": "Eine ausgeschriebene Datumsangabe beseitigt die Reihenfolge-Unklarheit."
           },
           {
@@ -2545,7 +2545,7 @@
     },
     "model": {
       "subject": "AW: Welcher Tag ist auf der Bestätigung gemeint?",
-      "body": "Hallo Samira,\n\nich habe die Buchung geprüft: Der Termin ist für den 5. Juni um 10:30 Uhr eingetragen. Er wurde seit der Buchung nicht verschoben. Unsere automatische Bestätigung nennt nur „05.06.“; ohne ausgeschriebenen Monat kann diese Schreibweise leicht anders gelesen werden. Ich verstehe, warum die Patientin heute gekommen ist, und es tut mir leid, dass unser Text nicht eindeutig war.\n\nBitte erkläre ihr am Empfang, dass für heute kein Termin im Kalender steht und dass der gebuchte Besuch am 5. Juni stattfindet. Ich sende ihr sofort eine neue Bestätigung mit Wochentag, ausgeschriebenem Monat und Uhrzeit. Wenn sie wegen der Verwechslung einen früheren Termin benötigt, kann ich freie Möglichkeiten prüfen; einen Ersatz habe ich bisher noch nicht bestätigt. Ich werde außerdem die Vorlage für Terminbestätigungen anpassen lassen, damit der Monat künftig immer ausgeschrieben wird und dieselbe Verwechslung nicht noch einmal entsteht.\n\nViele Grüße\nAnke",
+      "body": "Hallo Samira,\n\nich habe die Buchung geprüft: Der Termin ist für den 5. Juni um 10:30 Uhr eingetragen. Er wurde seit der Buchung nicht verschoben. Unsere automatische Bestätigung nennt nur „05.06.“; ohne ausgeschriebenen Monat kann diese Schreibweise leicht anders gelesen werden. Ich verstehe, warum die Patientin heute gekommen ist, und es tut mir leid, dass unser Text nicht eindeutig war.\n\nBitte erkläre ihr am Empfang, dass für heute kein Termin im Kalender steht und dass der gebuchte Besuch am 5. Juni stattfindet. Ich sende ihr sofort eine neue Bestätigung mit ausgeschriebenem Monat und Uhrzeit. Wenn sie wegen der Verwechslung einen früheren Termin benötigt, kann ich freie Möglichkeiten prüfen; einen Ersatz habe ich bisher noch nicht bestätigt. Ich werde außerdem die Vorlage für Terminbestätigungen anpassen lassen, damit der Monat künftig immer ausgeschrieben wird und dieselbe Verwechslung nicht noch einmal entsteht.\n\nViele Grüße\nAnke",
       "annotations": [
         {
           "label": "Bestätigt das Datum",

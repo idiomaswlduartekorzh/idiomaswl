@@ -133,6 +133,7 @@
 }
 @media (max-width: 520px) {
   .shell { padding: 18px 12px 80px; }
+  .focusHeader { margin: -18px -12px 26px; padding: 18px 12px; }
   .intro { padding: 30px 22px; }
   .intro > p:not(.kicker) { font-size: 16px; }
   .caseCard { padding: 21px; }

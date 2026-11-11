@@ -1054,12 +1054,12 @@
           {
             "id": "a",
             "text": "O sistema sozinho, sem participação humana.",
-            "feedback": "Houve confirmação humana."
+            "feedback": "O registro traz uma recomendação automática seguida de confirmação datada por um analista."
           },
           {
             "id": "b",
             "text": "O usuário aprovou a recusa.",
-            "feedback": "Ele a contesta."
+            "feedback": "O usuário contesta a recusa; quem confirmou o resultado no fluxo foi um analista."
           },
           {
             "id": "c",
@@ -1080,7 +1080,7 @@
           {
             "id": "a",
             "text": "Que houve critérios automáticos.",
-            "feedback": "A recomendação os aplicou."
+            "feedback": "Os critérios aplicados pelo sistema constam do registro; faltam razões individualizadas do analista."
           },
           {
             "id": "b",
@@ -1090,7 +1090,7 @@
           {
             "id": "c",
             "text": "A data da confirmação.",
-            "feedback": "Ela consta no registro."
+            "feedback": "A data da confirmação consta; o que não foi registrado são os fundamentos próprios do revisor."
           }
         ]
       },
@@ -1107,12 +1107,12 @@
           {
             "id": "a",
             "text": "A existência de uma recomendação automática.",
-            "feedback": "Ela está registrada."
+            "feedback": "Luana não nega a recomendação automática: quer evitar que a tela omita a confirmação humana."
           },
           {
             "id": "b",
             "text": "A possibilidade de revisar o caso.",
-            "feedback": "O procedimento prevê revisão."
+            "feedback": "A revisão está prevista no procedimento; a imprecisão apontada por Luana é chamar a decisão de exclusivamente algorítmica."
           },
           {
             "id": "c",
@@ -1140,12 +1140,12 @@
           {
             "id": "b",
             "text": "Repetir que foi uma decisão puramente automática.",
-            "feedback": "O analista confirmou o resultado."
+            "feedback": "Houve confirmação humana registrada, embora sem justificativa individual detalhada."
           },
           {
             "id": "c",
             "text": "Inventar a motivação pessoal do analista.",
-            "feedback": "Ela não está registrada."
+            "feedback": "O registro não contém razões pessoais do analista além dos critérios aplicados pelo sistema."
           }
         ]
       }
@@ -1394,7 +1394,7 @@
   },
   {
     "id": "restauracao-parcial",
-    "title": "A restauração ensaiada a metà",
+    "title": "O teste de restauração incompleto",
     "area": "Software × continuidade",
     "areaLabel": "Software · continuidade",
     "role": "Tiago · continuidade de serviço",
@@ -1452,12 +1452,12 @@
           {
             "id": "b",
             "text": "Recuperação integral de produção.",
-            "feedback": "Arquivos e integrações não entraram."
+            "feedback": "O ensaio restaurou só uma amostra de 5 GB em ambiente isolado; não incluiu arquivos grandes nem as três integrações."
           },
           {
             "id": "c",
             "text": "Impossibilidade de recuperar o sistema.",
-            "feedback": "A amostra funcionou."
+            "feedback": "A amostra ficou acessível após duas horas, mostrando que ao menos esse recorte pôde ser restaurado."
           }
         ]
       },
@@ -1479,12 +1479,12 @@
           {
             "id": "b",
             "text": "A medição de duas horas no ensaio.",
-            "feedback": "Ela está registrada."
+            "feedback": "Duas horas é o resultado medido para a amostra, não uma etapa que ficou por executar."
           },
           {
             "id": "c",
             "text": "A existência da base de amostra.",
-            "feedback": "Ela foi restaurada."
+            "feedback": "A base de 5 GB já foi restaurada; as etapas ausentes são arquivos grandes e integrações."
           }
         ]
       },
@@ -1501,12 +1501,12 @@
           {
             "id": "a",
             "text": "Prometer uma data aprovada.",
-            "feedback": "Ela ainda não existe."
+            "feedback": "Não há data aprovada para o ensaio completo; Fernanda pede uma resposta fiel ao teste já feito."
           },
           {
             "id": "b",
             "text": "Cancelar os testes futuros.",
-            "feedback": "O plano permanece."
+            "feedback": "O plano ainda prevê arquivos grandes e três integrações, portanto o pedido não é cancelar as próximas etapas."
           },
           {
             "id": "c",
@@ -1534,12 +1534,12 @@
           {
             "id": "b",
             "text": "Repetir «recuperação integral validada».",
-            "feedback": "A apresentação extrapola o ensaio."
+            "feedback": "A apresentação chama de integral um ensaio que deixou arquivos grandes e integrações de fora."
           },
           {
             "id": "c",
             "text": "Dizer que nunca houve ensaio.",
-            "feedback": "A amostra foi testada."
+            "feedback": "O registro confirma a restauração da amostra de 5 GB e seu acesso após duas horas."
           }
         ]
       }
@@ -3356,7 +3356,7 @@
     },
     "model": {
       "subject": "Re: Podemos liberar a carga?",
-      "body": "Oi, Patrícia,\n\na leitura feita na chegada estava dentro da faixa prevista. Ela descreve aquele momento, mas não preenche a lacuna de dados entre 3h e 5h no registrador principal. Existe um registrador secundário no veículo que ainda precisa ser descarregado e analisado. Por enquanto, não temos base para afirmar que a temperatura saiu da faixa nem para garantir que permaneceu adequada durante todo o trajeto. A qualidade ainda não liberou a carga.\n\nAo cliente eu diria: «A medição no recebimento ficou na faixa prevista. Identificamos, porém, um intervalo sem leitura no registrador principal e estamos analisando a fonte secundária antes de concluir a avaliação do transporte. A decisão sobre a liberação será comunicada assim que a equipe de qualidade concluir essa verificação. Até lá, a carga permanece sob controle.»\n\nVou pedir a descarga do segundo registrador agora e conferir se há outros registros de parada ou abertura do veículo. Encaminharei a análise à qualidade com o intervalo claramente identificado. Se os dados adicionais não resolverem a lacuna, será a equipe responsável que definirá as medidas adequadas e a comunicação seguinte.\n\nVitor",
+      "body": "Oi, Patrícia,\n\na leitura feita na chegada estava dentro da faixa prevista. Ela descreve aquele momento, mas não preenche a lacuna de dados entre 3h e 5h no registrador principal. Existe um registrador secundário no veículo que ainda precisa ser descarregado e analisado. Por enquanto, não temos base para afirmar que a temperatura saiu da faixa nem para garantir que permaneceu adequada durante todo o trajeto. A qualidade ainda não liberou a carga.\n\nAo cliente eu diria: «A medição no recebimento ficou na faixa prevista. Identificamos, porém, um intervalo sem leitura no registrador principal e estamos analisando a fonte secundária antes de concluir a avaliação do transporte. A decisão sobre a liberação será comunicada assim que a equipe de qualidade concluir essa verificação. Até lá, não podemos confirmar a liberação nem a adequação de todo o trajeto.»\n\nVou pedir a descarga do segundo registrador agora e conferir se há outros registros de parada ou abertura do veículo. Encaminharei a análise à qualidade com o intervalo claramente identificado. Se os dados adicionais não resolverem a lacuna, será a equipe responsável que definirá as medidas adequadas e a comunicação seguinte.\n\nVitor",
       "annotations": [
         {
           "label": "Delimita chegada",

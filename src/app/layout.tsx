@@ -99,6 +99,15 @@ const themeScript = `
     var pathname = window.location.pathname;
     var surface = pathname === '/' || pathname === '/home' ? 'home' : 'editorial';
     document.documentElement.setAttribute('data-wl-surface', surface);
+    var parts = pathname.split('/');
+    if (parts[1] === 'practica' && parts[4] === 'escritura' &&
+        (parts[3] === 'b2' || parts[3] === 'c1' || parts[3] === 'c2')) {
+      var writingLanguages = {
+        ingles: 'en', frances: 'fr', aleman: 'de', italiano: 'it',
+        portugues: 'pt', ruso: 'ru', japones: 'ja', coreano: 'ko'
+      };
+      if (writingLanguages[parts[2]]) document.documentElement.lang = writingLanguages[parts[2]];
+    }
   } catch(e) {}
 })();
 `;

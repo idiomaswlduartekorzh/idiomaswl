@@ -44,16 +44,27 @@ Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
 `origin/main@79fc4bee`. Estado: `EN_DESARROLLO`, sin integración ni despliegue.
 El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
 recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
-nivel de inglés, francés, alemán, italiano, portugués, ruso y japonés B2, C1 y C2; coreano sigue en elaboración.
-El harness exige cuatro casos por cada una de
+nivel B2, C1 y C2 de inglés, francés, alemán, italiano, portugués, ruso, japonés
+y coreano: 480 casos y 24 rutas. El harness exige cuatro casos por cada una de
 cinco áreas, evidencia referenciada y claves variadas. Las rutas nuevas siguen
 con `noindex` y los hubs no las anuncian todavía.
 
-Pasaron el harness de los 60 casos ingleses, los 60 franceses, los 60 alemanes, los 60 italianos, los 60 portugueses, los 60 rusos, los 60 japoneses y las doce pruebas del harness B2,
-ESLint y TypeScript acotado de las rutas nuevas. Se recorrieron en navegador
-inglés B2, C1 y C2, francés B2, alemán B2 y japonés B2. Pendientes: recorrido de los demás niveles e idiomas, cierre lingüístico de los bancos
-en curso, revisión de salud administrativa, catálogo completo, TypeScript
-global, build y publicación verificable desde `main`. Contrato y estado:
+Pasaron el harness de los 480 casos, las 13 pruebas de sus reglas, el catálogo
+protegido, ESLint, TypeScript global y toda la batería `prebuild`; el guardián
+nuevo comprueba también las 24 rutas, metadatos e imágenes OG nativas. Se hizo
+muestreo editorial cruzado de B2 y C1–C2, con correcciones de registro,
+evidencia, feedback y originalidad. Se recorrieron en navegador inglés B2–C2,
+francés B2, alemán B2 y japonés B2; se comprobaron los catálogos B2 restantes,
+el foco entre etapas y el ancho móvil. Las ocho páginas B2 y muestras C1/C2
+sirven metadatos e imágenes sociales en la lengua correspondiente.
+
+El primer build local con Webpack agotó el límite de 2 GB de Node. Un segundo
+intento con 4 GB se detuvo durante la optimización para preservar espacio en
+el portátil. Antes de publicar siguen pendientes un build completo, auditoría
+lingüística exhaustiva, integración en `main` y smoke del deployment. El fallo
+previo de `check:reading-grammar-index` provenía de dos auxiliares existentes de
+inglés A1/A2; se distinguieron de las lecciones y se actualizó el índice, sin
+reducir los controles de temas. Contrato y estado:
 [`writing-workplace-agent-harness.md`](writing-workplace-agent-harness.md).
 
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026

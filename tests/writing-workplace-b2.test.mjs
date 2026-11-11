@@ -99,3 +99,11 @@ test('model subject must use the locale reply prefix', () => {
   altered[0].model.subject = 'Respuesta: a mixed-language subject'
   assert.ok(validateWritingWorkplaceCases(altered, 20, { subjectPrefix: 'Re:' }).some(issue => issue.includes('target-language reply prefix')))
 })
+
+test('model reply cannot repeat its salutation', () => {
+  const altered = copy()
+  const lines = altered[0].model.body.split('\n')
+  const greeting = lines[0]
+  altered[0].model.body = altered[0].model.body.replace('\n\n', `\n\n${greeting} `)
+  assert.ok(validateWritingWorkplaceCases(altered, 20).some(issue => issue.includes('repeats its salutation')))
+})

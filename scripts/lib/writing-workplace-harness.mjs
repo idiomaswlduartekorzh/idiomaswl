@@ -96,6 +96,10 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3, options 
     if (options.subjectPrefix && !item?.model?.subject?.startsWith(options.subjectPrefix)) {
       issues.push(`${id}: model subject must use the target-language reply prefix ${options.subjectPrefix}.`)
     }
+    const modelLines = typeof item?.model?.body === 'string' ? item.model.body.split(/\n+/u).map(line => line.trim()).filter(Boolean) : []
+    if (modelLines[0] && modelLines[1]?.startsWith(modelLines[0])) {
+      issues.push(`${id}: model repeats its salutation at the start of the reply.`)
+    }
     if (countLength(item?.model?.body) < modelRange[0] || countLength(item?.model?.body) > modelRange[1]) issues.push(`${id}: model reply should contain ${modelRange[0]}–${modelRange[1]} ${unit}.`)
     const guide = item?.task?.wordGuide?.match(/(\d+)[–-](\d+)/u)
     if (guide && (countLength(item?.model?.body) < Number(guide[1]) || countLength(item?.model?.body) > Number(guide[2]))) {

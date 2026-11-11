@@ -1452,12 +1452,12 @@
           {
             "id": "b",
             "text": "Una nota nel solo calendario tecnico.",
-            "feedback": "Il contratto richiede un avviso al cliente."
+            "feedback": "Il calendario tecnico registra la finestra solo internamente; il contratto richiede un avviso al cliente almeno 72 ore prima."
           },
           {
             "id": "c",
             "text": "La durata inferiore a un’ora.",
-            "feedback": "La clausola citata riguarda l’avviso."
+            "feedback": "I 48 minuti di interruzione non sostituiscono il preavviso di 72 ore richiesto per l’esclusione dallo SLA."
           }
         ]
       },
@@ -1479,12 +1479,12 @@
           {
             "id": "b",
             "text": "È certamente impossibile che esista.",
-            "feedback": "La ricerca è ancora aperta."
+            "feedback": "L’archivio principale non mostra l’invio, ma i canali secondari devono ancora essere controllati."
           },
           {
             "id": "c",
             "text": "È stato certamente inviato.",
-            "feedback": "Non c’è prova nell’archivio esaminato."
+            "feedback": "La pianificazione interna di mercoledì non prova l’invio al cliente; l’archivio principale non lo registra."
           }
         ]
       },
@@ -1501,12 +1501,12 @@
           {
             "id": "a",
             "text": "La comunicazione al cliente.",
-            "feedback": "Vuole rispondergli."
+            "feedback": "Irene chiede proprio un messaggio intermedio al cliente mentre si cercano le prove dell’avviso."
           },
           {
             "id": "b",
             "text": "La verifica della finestra.",
-            "feedback": "È proprio la verifica richiesta."
+            "feedback": "Vuole verificare se il preavviso di 72 ore sia stato inviato prima di decidere sull’accredito."
           },
           {
             "id": "c",
@@ -1534,12 +1534,12 @@
           {
             "id": "b",
             "text": "Escludere subito la finestra dallo SLA.",
-            "feedback": "La condizione dell’avviso non è provata."
+            "feedback": "Senza prova dell’avviso al cliente 72 ore prima, la condizione contrattuale per l’esclusione non è accertata."
           },
           {
             "id": "c",
             "text": "Promettere subito un accredito definitivo.",
-            "feedback": "Il calcolo non è completato."
+            "feedback": "Il calcolo SLA e l’eventuale accredito non sono stati verificati; i 48 minuti da soli non ne fissano l’esito."
           }
         ]
       }
@@ -2567,7 +2567,7 @@
     },
     "model": {
       "subject": "R: Conflitto sulla stanza 4",
-      "body": "Ciao Elisa,\n\nle due visite risultano ancora confermate per le 11; nessuna è stata annullata. Il problema riguarda l’assegnazione della stanza 4, scelta da entrambi i reparti in un sistema che non impedisce il conflitto. La stanza 5 risulta libera, ma dobbiamo far confermare al reparto che sia adatta alla visita prima di indicarla come soluzione. Non possiamo quindi garantire già la stessa sede prevista, né chiedere alla paziente di rinunciare all’appuntamento.\n\nLe direi: «La sua visita delle 11 è ancora in agenda. Abbiamo rilevato un conflitto nell’assegnazione della stanza e stiamo verificando con il reparto uno spazio idoneo. Le confermeremo la stanza e l’eventuale indicazione di accesso entro le 9:30, prima che inizi il viaggio, oppure la contatteremo subito se fosse necessario concordare un’alternativa.»\n\nChiederò ora al reparto di verificare la stanza 5 e terrò aggiornati entrambi i servizi coinvolti. Se non è idonea, sarà il reparto a indicare la soluzione clinicamente appropriata; il nostro compito è comunicarla in modo tempestivo e preciso.\n\nMarta",
+      "body": "Ciao Elisa,\n\nle due visite risultano ancora confermate per le 11; nessuna è stata annullata. Il problema riguarda l’assegnazione della stanza 4, scelta da entrambi i reparti in un sistema che non impedisce il conflitto. La stanza 5 risulta libera, ma dobbiamo far confermare al reparto che sia adatta alla visita prima di indicarla come soluzione. Non possiamo quindi garantire già la stessa sede prevista, né chiedere alla paziente di rinunciare all’appuntamento.\n\nLe direi: «La sua visita delle 11 è ancora in agenda. Abbiamo rilevato un conflitto nell’assegnazione della stanza e stiamo verificando con il reparto uno spazio idoneo. Le confermeremo la stanza e l’eventuale indicazione di accesso entro le 9:30, così potrà organizzarsi con un’informazione verificata, oppure la contatteremo subito se fosse necessario concordare un’alternativa.»\n\nChiederò ora al reparto di verificare la stanza 5 e terrò aggiornati entrambi i servizi coinvolti. Se non è idonea, sarà il reparto a indicare la soluzione clinicamente appropriata; il nostro compito è comunicarla in modo tempestivo e preciso.\n\nMarta",
       "annotations": [
         {
           "label": "Mantiene appuntamenti",
@@ -2661,7 +2661,7 @@
           {
             "id": "a",
             "text": "La pagina è stata certamente letta.",
-            "feedback": "Il registro non prova la lettura."
+            "feedback": "Il registro prova la consegna alle 12:30, ma non quali pagine siano state aperte o salvate."
           },
           {
             "id": "b",
@@ -2671,7 +2671,7 @@
           {
             "id": "c",
             "text": "Tutto il fascicolo appartiene a un altro paziente.",
-            "feedback": "Gli altri documenti non sono stati ancora dichiarati errati."
+            "feedback": "È una pagina a riportare un identificativo diverso; gli altri documenti non sono stati dichiarati estranei."
           }
         ]
       },
@@ -2689,7 +2689,7 @@
           {
             "id": "a",
             "text": "Che il file sia stato ritirato dal portale.",
-            "feedback": "Il ritiro è documentato."
+            "feedback": "Il ritiro dal portale è documentato; ciò non dice se una copia fosse già stata scaricata."
           },
           {
             "id": "b",
@@ -2699,7 +2699,7 @@
           {
             "id": "c",
             "text": "Che il file sia stato consegnato.",
-            "feedback": "La consegna è registrata."
+            "feedback": "La consegna all’account alle 12:30 è attestata, ma non prova la lettura della pagina."
           }
         ]
       },
@@ -2716,12 +2716,12 @@
           {
             "id": "a",
             "text": "La ricostruzione della copia.",
-            "feedback": "La considera necessaria."
+            "feedback": "Giorgio vuole una copia corretta, ma chiede prima di non far circolare la pagina di terzi per email."
           },
           {
             "id": "b",
             "text": "L’informazione al paziente.",
-            "feedback": "Vuole rispondergli."
+            "feedback": "Vuole rispondere al paziente evitando di chiedergli un reinvio della pagina estranea per email."
           },
           {
             "id": "c",
@@ -2749,12 +2749,12 @@
           {
             "id": "b",
             "text": "Dire che il ritiro cancella tutte le copie.",
-            "feedback": "Una copia scaricata resta possibile."
+            "feedback": "Il file non è più nel portale, ma il registro non esclude che il paziente lo abbia già scaricato."
           },
           {
             "id": "c",
             "text": "Chiedere al paziente di reinviare la pagina per email.",
-            "feedback": "Rischierebbe altra diffusione."
+            "feedback": "La pagina contiene un identificativo di terzi: chiederne l’invio per email ne creerebbe un’altra copia fuori dal portale."
           }
         ]
       }
