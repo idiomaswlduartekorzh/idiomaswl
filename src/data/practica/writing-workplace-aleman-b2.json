@@ -1189,133 +1189,85 @@
     }
   },
   {
-    "id": "konfliktkopie-bericht",
-    "title": "Zwei Dateien statt eines verlorenen Berichts",
+    "id": "einladung-noch-nicht-angenommen",
+    "title": "Die Einladung ist angekommen, der Zugang noch nicht aktiv",
     "area": "Software × Zusammenarbeit",
     "areaLabel": "Software · Zusammenarbeit",
-    "role": "Elena · IT-Koordination",
-    "teaser": "Nach gemeinsamer Bearbeitung gibt es plötzlich zwei Fassungen eines wichtigen Berichts.",
-    "misunderstanding": "Eine automatisch erzeugte Konfliktkopie wurde als Überschreiben oder Löschen der ursprünglichen Arbeit verstanden.",
+    "role": "Elena · Produktbetreuung",
+    "teaser": "Ein Kunde hat eine Einladung erhalten, kann das Projekt aber nicht öffnen.",
+    "misunderstanding": "Die verschickte Einladung wird mit aktivem Zugriff verwechselt; der eingeladene Nutzer hat sie noch nicht angenommen.",
     "email": {
-      "from": "Jan · Projektleitung",
-      "to": "Elena · IT-Koordination",
-      "sent": "Mittwoch, 10:20 Uhr",
-      "subject": "Ist unser Bericht überschrieben worden?",
-      "body": "Hallo Elena,\n\nim gemeinsamen Ordner liegen jetzt „Bericht“ und „Bericht – Konfliktkopie“. Zwei Kolleginnen haben gestern parallel daran gearbeitet. Ich fürchte, eine Fassung hat die andere überschrieben. Morgen müssen wir die finale Version versenden. Kannst du prüfen, ob Inhalte fehlen und wie wir zu einer verlässlichen Datei kommen?\n\nJan"
+      "from": "Jan · Kundenbetreuung",
+      "to": "Elena · Produktbetreuung",
+      "sent": "Mittwoch, 09:40 Uhr",
+      "subject": "Warum kommt Tim trotz Einladung nicht ins Projekt?",
+      "body": "Hallo Elena,\n\nTim vom Kunden hat gestern unsere Projekteinladung erhalten. Ich habe ihm deshalb geschrieben, sein Zugang sei freigeschaltet. Heute öffnet er den Projektlink und sieht nur „Kein Zugriff“. Er fragt, ob unser System ausgefallen ist. Kannst du den Einladungsstatus prüfen und mir sagen, was ich ihm vor unserem Gespräch um 11 Uhr erklären soll?\n\nViele Grüße\nJan"
     },
     "document": {
-      "title": "Synchronisationsprotokoll des gemeinsamen Ordners",
-      "intro": "Das System bewahrte beide Bearbeitungen als getrennte Dateien auf.",
+      "title": "Einladungsprotokoll für Projekt Falken",
+      "intro": "Der Versand einer Einladung und die Aktivierung des Zugangs sind getrennte Schritte.",
       "facts": [
         {
           "id": "DE7F1",
-          "time": "Dienstag, 16:00 Uhr",
-          "text": "Anna und Beate öffneten dieselbe Ausgangsversion des Berichts auf zwei Geräten."
+          "time": "Dienstag, 15:00 Uhr",
+          "text": "Elena lud Tim mit seiner Firmenadresse zum Projekt Falken ein."
         },
         {
           "id": "DE7F2",
-          "time": "Dienstag, 17:15 Uhr",
-          "text": "Beide Geräte speicherten Änderungen, bevor die jeweils andere Fassung synchronisiert war."
+          "time": "Dienstag, 15:02 Uhr",
+          "text": "Die Einladung wurde an Tims Postfach zugestellt. Im Protokoll steht weiterhin „Annahme ausstehend“."
         },
         {
           "id": "DE7F3",
-          "time": "Dienstag, 17:16 Uhr",
-          "text": "Das System behielt „Bericht“ und legte zusätzlich „Bericht – Konfliktkopie“ an. Beide Dateien sind weiterhin vorhanden."
+          "time": "Zugangsregel",
+          "text": "Projektzugriff wird erst aktiv, wenn die eingeladene Person den Link mit dem eingeladenen Konto annimmt. Der Versand allein schaltet ihn nicht frei."
         },
         {
           "id": "DE7F4",
+          "time": "Mittwoch, 09:00 Uhr",
+          "text": "Tim erhielt beim direkten Projektlink „Kein Zugriff“. Andere Projektmitglieder konnten das Projekt öffnen; eine allgemeine Störung ist nicht gemeldet."
+        },
+        {
+          "id": "DE7F5",
           "time": "Stand jetzt",
-          "text": "Elena hat die inhaltlichen Unterschiede noch nicht verglichen. Welche Abschnitte in die finale Fassung gehören, muss Jan mit Anna und Beate entscheiden."
+          "text": "Der Einladungslink ist bis Freitag, 18 Uhr gültig. Elena kann Tim durch die Annahme führen und danach seinen Zugriff prüfen; eine Annahme ist noch nicht bestätigt."
         }
       ]
     },
     "questions": [
       {
-        "id": "konfliktkopie-bericht-evidence",
+        "id": "einladung-noch-nicht-angenommen-evidence",
         "axis": "Evidence",
-        "prompt": "Welche Dateien sind nach dem Konflikt vorhanden?",
-        "evidenceIds": [
-          "DE7F3"
-        ],
-        "correctOptionId": "a",
-        "options": [
-          {
-            "id": "a",
-            "text": "Die ursprüngliche Datei und eine zusätzliche Konfliktkopie.",
-            "feedback": "Das Protokoll nennt zwei weiter vorhandene Dateien."
-          },
-          {
-            "id": "b",
-            "text": "Nur die Datei von Anna.",
-            "feedback": "Die zweite Datei ist ausdrücklich im Ordner sichtbar."
-          },
-          {
-            "id": "c",
-            "text": "Keine der beiden Bearbeitungen.",
-            "feedback": "Der Synchronisationsdienst hat beide Fassungen behalten."
-          }
-        ]
-      },
-      {
-        "id": "konfliktkopie-bericht-scope",
-        "axis": "Scope",
-        "prompt": "Was hat die zweite Datei ausgelöst?",
+        "prompt": "Welcher Status ist für Tims Einladung belegt?",
         "evidenceIds": [
           "DE7F1",
-          "DE7F2",
-          "DE7F3"
-        ],
-        "correctOptionId": "c",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ein automatischer Versand an den Kunden.",
-            "feedback": "Die Dateien liegen im Ordner; ein Versand ist nicht dokumentiert."
-          },
-          {
-            "id": "b",
-            "text": "Eine absichtliche Löschung durch Jan.",
-            "feedback": "Im Protokoll erscheint keine Löschung durch Jan."
-          },
-          {
-            "id": "c",
-            "text": "Zwei parallele Änderungen vor der gegenseitigen Synchronisation.",
-            "feedback": "Beide Geräte speicherten auf derselben Ausgangsbasis."
-          }
-        ]
-      },
-      {
-        "id": "konfliktkopie-bericht-intent",
-        "axis": "Intent",
-        "prompt": "Was ist noch nicht geklärt?",
-        "evidenceIds": [
-          "DE7F3",
-          "DE7F4"
+          "DE7F2"
         ],
         "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Welche inhaltlichen Änderungen in die finale Fassung gehören.",
-            "feedback": "Elena hat die Unterschiede noch nicht geprüft; Jan muss über Inhalte entscheiden."
+            "text": "Die E-Mail wurde zugestellt, die Annahme steht noch aus.",
+            "feedback": "Zustellung und Annahme sind im Protokoll getrennt erfasst."
           },
           {
             "id": "b",
-            "text": "Ob überhaupt zwei Dateien existieren.",
-            "feedback": "Zwei Dateinamen sind im Protokoll belegt."
+            "text": "Tim hat die Einladung angenommen und den Zugang aktiviert.",
+            "feedback": "Im Protokoll steht weiterhin „Annahme ausstehend“; ein aktiver Zugang ist nicht bestätigt."
           },
           {
             "id": "c",
-            "text": "Ob morgen ein Versand geplant ist.",
-            "feedback": "Jan erwähnt den Termin selbst in seiner Mail."
+            "text": "Es wurde noch gar keine Einladung verschickt.",
+            "feedback": "Die Einladung ging am Dienstag an Tims Firmenadresse und wurde zugestellt."
           }
         ]
       },
       {
-        "id": "konfliktkopie-bericht-purpose",
-        "axis": "Purpose",
-        "prompt": "Welches Vorgehen hilft vor dem Versand?",
+        "id": "einladung-noch-nicht-angenommen-scope",
+        "axis": "Scope",
+        "prompt": "Warum beweist die zugestellte E-Mail noch keinen Projektzugriff?",
         "evidenceIds": [
+          "DE7F2",
           "DE7F3",
           "DE7F4"
         ],
@@ -1323,63 +1275,119 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Konfliktkopie sofort löschen.",
-            "feedback": "Ohne Vergleich könnten Änderungen aus der Kopie verloren gehen."
+            "text": "Weil das gesamte Projekt derzeit ausgefallen ist.",
+            "feedback": "Andere Mitglieder können das Projekt öffnen; Tims Annahme steht noch aus."
           },
           {
             "id": "b",
-            "text": "Behaupten, beide Dateien seien inhaltlich gleich.",
-            "feedback": "Die inhaltlichen Unterschiede sind noch unbekannt."
+            "text": "Weil Jan das Projekt gelöscht hat.",
+            "feedback": "Eine Löschung ist nicht dokumentiert und andere Mitglieder haben Zugriff."
           },
           {
             "id": "c",
-            "text": "Beide Fassungen vergleichen und die finale Auswahl mit den Bearbeiterinnen abstimmen.",
-            "feedback": "Das bewahrt Änderungen und klärt, was in den Versand gehört."
+            "text": "Weil der Zugriff erst nach Annahme mit dem eingeladenen Konto aktiv wird.",
+            "feedback": "Der Versand bestätigt die Einladung, nicht die Freischaltung des Kontos."
+          }
+        ]
+      },
+      {
+        "id": "einladung-noch-nicht-angenommen-intent",
+        "axis": "Intent",
+        "prompt": "Welche Auskunft braucht Jan vor dem Kundengespräch?",
+        "evidenceIds": [
+          "DE7F2",
+          "DE7F4",
+          "DE7F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine ehrliche Statuskorrektur und einen konkreten Weg, Tims Zugang zu prüfen.",
+            "feedback": "Damit kann Jan seine frühere Zusage berichtigen und Tim weiterhelfen."
+          },
+          {
+            "id": "b",
+            "text": "Eine Garantie, dass Tim den Einladungslink bereits geöffnet hat.",
+            "feedback": "Die Zustellung der E-Mail belegt weder das Öffnen noch die Annahme des Links."
+          },
+          {
+            "id": "c",
+            "text": "Eine Nachricht, dass alle Projektmitglieder ausgesperrt sind.",
+            "feedback": "Andere Mitglieder konnten das Projekt öffnen; nur Tims Zugang ist gemeldet."
+          }
+        ]
+      },
+      {
+        "id": "einladung-noch-nicht-angenommen-purpose",
+        "axis": "Purpose",
+        "prompt": "Wie sollte Elena jetzt vorgehen?",
+        "evidenceIds": [
+          "DE7F2",
+          "DE7F3",
+          "DE7F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tim sagen, sein Zugang sei bereits aktiv.",
+            "feedback": "Die Annahme steht aus und ein erfolgreicher Zugriff wurde noch nicht geprüft."
+          },
+          {
+            "id": "b",
+            "text": "Den Projektlink öffentlich freigeben, damit Tim ihn öffnen kann.",
+            "feedback": "Die Zugangsregel sieht die Annahme mit dem eingeladenen Konto vor, nicht eine öffentliche Freigabe."
+          },
+          {
+            "id": "c",
+            "text": "Den offenen Schritt erklären, Tim bei der Annahme helfen und anschließend den Zugriff testen.",
+            "feedback": "So wird erst nach bestätigter Annahme von einem funktionierenden Zugang gesprochen."
           }
         ]
       }
     ],
     "task": {
-      "prompt": "Antworten Sie Jan als Elena. Erklären Sie die Konfliktkopie, grenzen Sie die bekannten technischen Fakten von den noch ungeprüften Inhalten ab und schlagen Sie einen gemeinsamen Abgleich vor.",
+      "prompt": "Antworten Sie Jan. Erklären Sie den Unterschied zwischen zugestellter Einladung und aktivem Projektzugriff und schlagen Sie einen überprüfbaren nächsten Schritt für Tim vor.",
       "wordGuide": "Etwa 130–190 Wörter",
       "criteria": [
-        "Beide Dateien als vorhanden benennen",
-        "Die parallele Bearbeitung erklären",
-        "Nicht behaupten, dass kein Inhalt fehlt",
-        "Einen Abgleich vor Versand planen"
+        "Zustellung und Annahme unterscheiden",
+        "Die frühere Zusage korrigieren",
+        "Keine allgemeine Störung behaupten",
+        "Zugang erst nach Prüfung als aktiv bezeichnen"
       ]
     },
     "model": {
-      "subject": "AW: Ist unser Bericht überschrieben worden?",
-      "body": "Hallo Jan,\n\ndas Synchronisationsprotokoll zeigt, dass Anna und Beate gestern von derselben Ausgangsversion aus gleichzeitig gearbeitet haben. Weil beide Fassungen gespeichert wurden, bevor die Änderungen der anderen sichtbar waren, hat das System zusätzlich die Datei „Bericht – Konfliktkopie“ angelegt. Die ursprüngliche Datei und die Kopie sind weiterhin vorhanden; nach dem Protokoll wurde keine von beiden gelöscht.\n\nIch kann aber noch nicht sagen, ob der Inhalt der einen Fassung bereits alle gewünschten Änderungen enthält. Ich vergleiche heute die beiden Dateien Abschnitt für Abschnitt und markiere die Unterschiede. Danach sollten Anna und Beate mit dir entscheiden, welche Formulierungen in die endgültige Fassung gehören. Bitte löscht die Konfliktkopie bis dahin nicht. Wenn wir den Abgleich heute abschließen, können wir morgen vor dem Versand noch eine gemeinsame Sichtprüfung machen. Ich schicke euch am Nachmittag eine Übersicht der Unterschiede, statt vorschnell eine der beiden Versionen als vollständig zu bezeichnen.\n\nViele Grüße\nElena",
+      "subject": "AW: Warum kommt Tim trotz Einladung nicht ins Projekt?",
+      "body": "Hallo Jan,\n\ndie Einladung an Tim wurde gestern an seine Firmenadresse zugestellt. Im Protokoll steht jedoch weiterhin „Annahme ausstehend“. Bei unserem Projekt wird der Zugriff erst aktiv, wenn die eingeladene Person den Link mit diesem Konto annimmt. Die zugestellte E-Mail allein war deshalb noch keine Freischaltung. Ich verstehe, warum deine Nachricht bei Tim eine andere Erwartung geweckt hat; wir sollten sie ausdrücklich berichtigen.\n\nAndere Mitglieder können das Projekt öffnen, und es liegt keine Meldung über eine allgemeine Störung vor. Bitte erkläre Tim, dass sein Zugang noch auf die Annahme wartet, statt ihm einen Systemausfall oder bereits aktiven Zugriff zu melden. Der Einladungslink ist bis Freitag, 18 Uhr gültig. Ich kann ihn heute durch die Annahme führen und anschließend mit ihm prüfen, ob sich Projekt Falken öffnen lässt. Falls dabei ein Fehler auftritt, untersuche ich diesen gesondert und gebe dir einen bestätigten Status vor eurem Gespräch um 11 Uhr.\n\nIch passe außerdem unsere Übergabeformulierung an: Künftig unterscheiden wir „Einladung zugestellt“ von „Zugang aktiviert“.\n\nViele Grüße\nElena",
       "annotations": [
         {
-          "label": "Erklärt die Entstehung",
-          "excerpt": "gleichzeitig gearbeitet haben",
+          "label": "Belegt die Zustellung",
+          "excerpt": "die Einladung an Tim wurde gestern an seine Firmenadresse zugestellt",
           "evidenceIds": [
             "DE7F1",
             "DE7F2"
           ]
         },
         {
-          "label": "Sichert beide Dateien",
-          "excerpt": "sind weiterhin vorhanden",
+          "label": "Trennt den Status",
+          "excerpt": "weiterhin „Annahme ausstehend“",
           "evidenceIds": [
-            "DE7F3"
+            "DE7F2"
           ]
         },
         {
-          "label": "Bewahrt Ungewissheit",
-          "excerpt": "noch nicht sagen, ob der Inhalt",
+          "label": "Begrenzt die Störung",
+          "excerpt": "keine Meldung über eine allgemeine Störung",
           "evidenceIds": [
             "DE7F4"
           ]
         },
         {
-          "label": "Plant den Abgleich",
-          "excerpt": "Abschnitt für Abschnitt",
+          "label": "Prüft den Zugang",
+          "excerpt": "anschließend mit ihm prüfen, ob sich Projekt Falken öffnen lässt",
           "evidenceIds": [
-            "DE7F4"
+            "DE7F5"
           ]
         }
       ]
@@ -3141,7 +3149,7 @@
     },
     "model": {
       "subject": "AW: Wurde die Untersuchung auf Dienstag verlegt?",
-      "body": "Hallo Malik,\n\nich habe beide Einträge geprüft. Die Untersuchung findet weiterhin am Freitag um 9 Uhr vor Ort statt; sie wurde nicht verlegt. Für Dienstag um 15 Uhr ist zusätzlich ein kurzes telefonisches Vorgespräch zur organisatorischen Vorbereitung eingetragen. Die automatische Erinnerung sagt dazu leider nur „Ihr Termin“ und nennt weder das Telefonat noch seinen Zweck. Ich verstehe, warum die Patientin deshalb annimmt, die Untersuchung sei verschoben worden.\n\nBitte erkläre ihr, dass sie am Dienstag nicht in die Praxis fahren muss, sondern für das Vorgespräch telefonisch kontaktiert wird. Die Anreise zur Untersuchung bleibt für Freitag geplant. Ich schicke ihr heute zwei getrennte Bestätigungen mit Datum, Uhrzeit und Art des jeweiligen Termins. Danach prüfe ich, ob beide Nachrichten angekommen sind. Außerdem werde ich die Erinnerungsvorlage ändern lassen, damit zusätzliche Telefonate künftig eindeutig als Vorgespräch gekennzeichnet werden. Zu medizinischen Fragen kann das Terminprotokoll nichts beitragen; diese gehören an das behandelnde Team.\n\nViele Grüße\nVera",
+      "body": "Hallo Malik,\n\nich habe beide Einträge geprüft. Die Untersuchung findet weiterhin am Freitag um 9 Uhr vor Ort statt; sie wurde nicht verlegt. Für Dienstag um 15 Uhr ist zusätzlich ein kurzes telefonisches Vorgespräch zur organisatorischen Vorbereitung eingetragen. Die automatische Erinnerung sagt dazu leider nur „Ihr Termin“ und nennt weder das Telefonat noch seinen Zweck. Ich verstehe, warum die Patientin deshalb annimmt, die Untersuchung sei verschoben worden.\n\nBitte erkläre ihr, dass sie am Dienstag nicht in die Praxis fahren muss, da das Vorgespräch telefonisch stattfindet. Die Anreise zur Untersuchung bleibt für Freitag geplant. Ich schicke ihr heute zwei getrennte Bestätigungen mit Datum, Uhrzeit und Art des jeweiligen Termins. Danach prüfe ich, ob beide Nachrichten angekommen sind. Außerdem werde ich die Erinnerungsvorlage ändern lassen, damit zusätzliche Telefonate künftig eindeutig als Vorgespräch gekennzeichnet werden. Zu medizinischen Fragen kann das Terminprotokoll nichts beitragen; diese gehören an das behandelnde Team.\n\nViele Grüße\nVera",
       "annotations": [
         {
           "label": "Bestätigt die Untersuchung",

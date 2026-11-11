@@ -1,10 +1,10 @@
 # Writing laboral B2–C2 · agentes, subagentes y harness
 
-## Estado tras la aprobación del preview
+## Estado de la entrega B2–C2
 
 El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. Inglés, francés, alemán, italiano, portugués, ruso, japonés y coreano contienen **20 casos jugables por nivel B2, C1 y C2**: 480 casos en 24 bancos. No se alteraron los 480 ejercicios A1–B1.
 
-Las rutas nuevas conservan `noindex` y no se enlazan desde los hubs hasta pasar revisión editorial y las puertas de integración. La aprobación del formato autorizó la expansión; no equivale a una publicación automática.
+Las 24 rutas se enlazan desde sus niveles B2–C2 y están incluidas en el sitemap. Se retiró el `noindex` de la fase de preview. La integración en `main` y el despliegue siguen el protocolo de `docs/OPERACION-REPOSITORIO.md`.
 
 La unidad editorial es un malentendido laboral concreto: correo recibido → documento de hechos → análisis de alcance, intención, propósito y evidencia → respuesta al correo → revisión y segunda versión. El estudiante debe poder señalar qué sabe, qué supone otra persona, qué falta por comprobar y qué acción está bajo su control.
 
@@ -20,7 +20,7 @@ La unidad editorial es un malentendido laboral concreto: correo recibido → doc
 | 6 | `writing-workplace-integrator` | Único editor de datos y runtime; ejecuta verificaciones. |
 | 7 | `writing-workplace-release-warden` | PASS/FAIL final sin corregir ni publicar. |
 
-Los roles 2–5 pueden operar como subagentes del coordinador; los auditores no deben recibir la clave como verdad antes de resolver el caso. En esta expansión trabajaron tres subagentes de autoría por nivel y el integrador sobre código compartido. Se hicieron muestreos cruzados de B2 y de C1–C2, con correcciones de registro, evidencia, feedback y originalidad. El muestreo no equivale a una auditoría humana exhaustiva de los 480 casos. Los prompts están en `.claude/agents/writing-workplace-*.md` y también sirven como contratos legibles para otras herramientas de agentes.
+Los roles 2–5 pueden operar como subagentes del coordinador; los auditores no deben recibir la clave como verdad antes de resolver el caso. Tres subagentes leyeron los 480 casos individualmente: correo, hechos, cuatro preguntas y distractores, tarea y modelo. Los informes registran los 20 IDs por banco y distinguen autorrevisión de revisión independiente: [inglés, francés y alemán](writing-workplace-audit-en-fr-de.md), [italiano, portugués y ruso](writing-workplace-audit-it-pt-ru.md), [japonés y coreano](writing-workplace-audit-ja-ko.md). Se cruzaron además 157 casos cuya primera revisión era de su autor; los hallazgos se corrigieron y verificaron. Los prompts están en `.claude/agents/writing-workplace-*.md` y sirven como contratos legibles para otras herramientas de agentes.
 
 ## Contrato de un caso
 
@@ -52,12 +52,12 @@ npm run build
 
 El checker exige 20 casos por nivel, cuatro por cada una de cinco áreas, variedad de posiciones correctas, hechos, cuatro ejes, tres opciones, claves, referencias y anotaciones. Las pruebas mutan evidencia, claves y distribución para comprobar que el propio guardián detecta defectos. Antes de integrar se recorre en navegador el camino completo, una opción errónea, un borrador revisado y el ancho móvil.
 
-`prebuild` ejecuta el guardián nuevo de los 480 casos, 24 rutas y sus metadatos e imágenes sociales en la lengua meta. El guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1, sin reducir sus umbrales. TypeScript global y `prebuild` pasaron en el worktree. El build local con Webpack superó el límite predeterminado de 2 GB de Node; la repetición con 4 GB se detuvo tras varios minutos sin terminar la optimización y con el disco a 2,5 GB libres. No se considera certificado para publicar.
+`prebuild` ejecuta el guardián de los 480 casos, 24 rutas, enlaces desde el nivel, sitemap y metadatos e imágenes sociales en la lengua meta. El guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1, sin reducir umbrales. La vista previa remota de Vercel compiló el commit `82be95f0`, y las 24 rutas respondieron HTTP 200 con contenido y metadatos nativos. Ese build es anterior a las últimas correcciones editoriales y la apertura de los enlaces; un nuevo build del commit final es obligatorio. El build local con Webpack superó el límite predeterminado de 2 GB de Node; la repetición con 4 GB se detuvo por presión de disco. La ausencia de un build local completo se registra, sin confundirla con un fallo de compilación remota.
 
 ## Progresión y escalado
 
 La progresión toma como referencia la sección de [interacción escrita y correspondencia del Companion Volume del Consejo de Europa](https://rm.coe.int/cefr-companion-volume-with-new-descriptors-2020/16809ea0d4): B2 resuelve correspondencia profesional no rutinaria con hechos claros y registro adecuado; C1 pondera versiones e implicaciones con precisión; C2 controla atribución y tono en correspondencia profesional compleja. La carga no aumenta solo por extensión.
 
 1. Los ocho idiomas tienen 60 casos cada uno, interfaz en la lengua meta y 20 casos por nivel. Se probaron recorridos en navegador de inglés B2–C2 y varios B2 de otras lenguas.
-2. Cerrar auditoría editorial y lingüística de cada banco y completar un build de producción antes de publicar. El harness estructural, sus 13 pruebas, el catálogo protegido, TypeScript global, `prebuild` y un recorrido móvil ya pasan.
-3. Publicar por bancos completos de 20. Registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».
+2. La lectura editorial de los 480 y el cruce independiente de 157 están registrados. Los controles del commit final siguen en curso.
+3. Integrar mediante PR después de los controles; registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».

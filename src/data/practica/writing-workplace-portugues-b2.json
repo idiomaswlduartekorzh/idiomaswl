@@ -541,7 +541,7 @@
           },
           {
             "id": "b",
-            "text": "Separar 180 inscritos de 112 presentes.",
+            "text": "Separar 180 inscritos de 112 contas que acessaram a sala.",
             "feedback": "As duas métricas são reais quando recebem nomes precisos."
           },
           {
@@ -559,12 +559,12 @@
         "Distinga o fato: 112.",
         "Delimite o alcance: Pessoas inscritas pelo formulário.",
         "Reconheça o pedido: Vai comunicar o resultado ao parceiro.",
-        "Indique o passo: Separar 180 inscritos de 112 presentes."
+        "Indique o passo: Separar 180 inscritos de 112 contas que acessaram a sala."
       ]
     },
     "model": {
       "subject": "Re: Resultado do webinar",
-      "body": "Olá, Rafael,\n\nConferi o relatório da plataforma: 180 pessoas se inscreveram pelo formulário, e 112 contas entraram na sala durante o webinar. Portanto, o número que podemos chamar de presença é 112.\n\nA linha do resumo que diz “180 participantes assistiram” mistura duas métricas diferentes. A inscrição mostra interesse prévio, enquanto a entrada registra quem esteve na sala; o relatório não diz, por si só, quanto tempo cada pessoa permaneceu.\n\nObrigado por interromper o envio ao parceiro para checar o dado. Entendo que o número maior pareça uma notícia melhor, mas apresentar as duas medidas com clareza conta uma história mais fiel e evita uma correção posterior.\n\nVou atualizar o resumo agora para “180 inscritos e 112 presentes” e te enviar a versão revisada antes do almoço. Se o parceiro quiser detalhes sobre permanência ou perguntas feitas ao vivo, posso buscar essas métricas separadamente na plataforma.\n\nAbraço,\nNatália",
+      "body": "Olá, Rafael,\n\nConferi o relatório da plataforma: 180 pessoas se inscreveram pelo formulário, e 112 contas entraram na sala durante o webinar. Portanto, o registro confirma o acesso de 112 contas, sem provar quantas pessoas distintas assistiram.\n\nA linha do resumo que diz “180 participantes assistiram” mistura duas métricas diferentes. A inscrição mostra interesse prévio, enquanto a entrada registra contas que acessaram a sala; o relatório não diz, por si só, quanto tempo cada pessoa permaneceu.\n\nObrigado por interromper o envio ao parceiro para checar o dado. Entendo que o número maior pareça uma notícia melhor, mas apresentar as duas medidas com clareza conta uma história mais fiel e evita uma correção posterior.\n\nVou atualizar o resumo agora para “180 inscritos e 112 contas que acessaram a sala” e te enviar a versão revisada antes do almoço. Se o parceiro quiser detalhes sobre permanência ou perguntas feitas ao vivo, posso buscar essas métricas separadamente na plataforma.\n\nAbraço,\nNatália",
       "annotations": [
         {
           "label": "Fato confirmado",
@@ -592,7 +592,7 @@
         },
         {
           "label": "Próximo passo",
-          "excerpt": "Vou atualizar o resumo agora para “180 inscritos e 112 presentes” e te enviar a versão revisada antes do almoço.",
+          "excerpt": "Vou atualizar o resumo agora para “180 inscritos e 112 contas que acessaram a sala” e te enviar a versão revisada antes do almoço.",
           "evidenceIds": [
             "PT3F1",
             "PT3F2",
@@ -1366,7 +1366,7 @@
     },
     "model": {
       "subject": "Re: Pico de acessos às 15h",
-      "body": "Olá, Bia,\n\nO pico das 15h veio da simulação de 2.000 acessos iniciada pela engenharia cinco minutos antes. O painel geral somou esse tráfego à linha monitorada e disparou o alerta que você recebeu.\n\nNo painel de contas reais, o volume permaneceu dentro da faixa habitual, e o atendimento não registrou aumento de chamadas até as 15h30. Portanto, o alerta descreve uma carga observada no sistema, mas não um crescimento confirmado de clientes.\n\nEntendo por que você avisou a equipe: a mensagem do alerta não distinguia o teste do tráfego real. Vou registrar essa origem no incidente e revisar como a simulação aparece nos próximos avisos, para não deixar a interpretação por sua conta.\n\nEnvio agora o recorte do painel de contas reais e uma frase curta para corrigir o aviso ao atendimento. Se o volume real mudar mais tarde, faremos um novo alerta separado; neste momento não há motivo documentado para esperar mais contatos.\n\nAbraço,\nOtávio",
+      "body": "Olá, Bia,\n\nO pico das 15h veio da simulação de 2.000 acessos iniciada pela engenharia cinco minutos antes. O painel geral somou esse tráfego à linha monitorada e disparou o alerta que você recebeu.\n\nNo painel de contas reais, o volume permaneceu dentro da faixa habitual, e o atendimento não registrou aumento de chamadas até as 15h30. Portanto, o alerta descreve uma carga observada no sistema, mas não um crescimento confirmado de clientes.\n\nEntendo por que você avisou a equipe: a mensagem do alerta não distinguia o teste do tráfego real. Vou registrar essa origem no alerta e revisar como a simulação aparece nos próximos avisos, para não deixar a interpretação por sua conta.\n\nEnvio agora o recorte do painel de contas reais e uma frase curta para corrigir o aviso ao atendimento. Se o volume real mudar mais tarde, faremos um novo alerta separado; neste momento não há motivo documentado para esperar mais contatos.\n\nAbraço,\nOtávio",
       "annotations": [
         {
           "label": "Fato confirmado",

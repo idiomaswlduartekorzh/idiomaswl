@@ -357,7 +357,7 @@
     },
     "model": {
       "subject": "R: Citazione tradotta sul sito",
-      "body": "Ciao Marco,\n\nla versione sul sito attribuisce al cliente una certezza che non ha espresso. L’originale dice che il servizio «potrebbe aiutare in alcuni casi» e limita il giudizio alla sua esperienza. La frase italiana «risolve sempre» elimina entrambe le riserve. La revisione ha approvato leggibilità e tono, ma non ha verificato l’aderenza al testo di partenza; dobbiamo riconoscere questo limite del nostro controllo.\n\nToglierei subito la frase pubblicata. Al cliente scriverei: «Ha ragione a segnalarci che la nostra versione italiana modifica il senso della sua recensione. Abbiamo sospeso la citazione e ci scusiamo per averle attribuito un’affermazione più netta della sua. Se desidera che la recensione resti sul sito, le invieremo una proposta fedele all’originale per la sua conferma; altrimenti non la riutilizzeremo.»\n\nPer la nuova formulazione proporrei «Secondo la mia esperienza, il servizio potrebbe aiutare in alcuni casi», ma la userei solo dopo il suo riscontro. Controllo oggi le altre citazioni tradotte con lo stesso flusso editoriale, partendo da quelle in evidenza.\n\nElena",
+      "body": "Ciao Marco,\n\nla versione sul sito attribuisce al cliente una certezza che non ha espresso. L’originale dice che il servizio «potrebbe aiutare in alcuni casi» e limita il giudizio alla sua esperienza. La frase italiana «risolve sempre» elimina entrambe le riserve. La revisione ha approvato leggibilità e tono, ma non ha verificato l’aderenza al testo di partenza; dobbiamo riconoscere questo limite del nostro controllo.\n\nRimuovo subito la frase pubblicata. Dopo la rimozione, al cliente scriverei: «Ha ragione a segnalarci che la nostra versione italiana modifica il senso della sua recensione. Abbiamo sospeso la citazione e ci scusiamo per averle attribuito un’affermazione più netta della sua. Se desidera che la recensione resti sul sito, le invieremo una proposta fedele all’originale per la sua conferma; altrimenti non la riutilizzeremo.»\n\nPer la nuova formulazione proporrei «Secondo la mia esperienza, il servizio potrebbe aiutare in alcuni casi», ma la userei solo dopo il suo riscontro. Controllo oggi le altre citazioni tradotte con lo stesso flusso editoriale, partendo da quelle in evidenza.\n\nElena",
       "annotations": [
         {
           "label": "Preserva la cautela",
@@ -382,7 +382,7 @@
         },
         {
           "label": "Sospende la frase",
-          "excerpt": "Toglierei subito la frase pubblicata",
+          "excerpt": "Rimuovo subito la frase pubblicata",
           "evidenceIds": [
             "ITC22F4"
           ]
@@ -587,105 +587,109 @@
     }
   },
   {
-    "id": "ascolto-social-campione",
-    "title": "L’80% di quali commenti?",
+    "id": "schermata-formazione-virale",
+    "title": "Una schermata offensiva, ma di quale chat?",
     "area": "Marketing × reputazione",
     "areaLabel": "Marketing · reputazione",
-    "role": "Davide · analisi reputazionale",
-    "teaser": "Un report di ascolto social attribuisce una percentuale negativa a tutti i clienti.",
-    "misunderstanding": "Un campione di commenti pubblici viene presentato come opinione rappresentativa dell’intera clientela.",
+    "role": "Davide · comunicazione di crisi",
+    "teaser": "Una frase offensiva circola come risposta ai clienti; la schermata proviene da una simulazione, ma i ritardi dell’assistenza sono reali.",
+    "misunderstanding": "L’origine didattica della schermata viene usata per smentire ogni problema di assistenza, benché i ritardi documentati richiedano una risposta separata.",
     "email": {
       "from": "Marta · direzione generale",
-      "to": "Davide · analisi",
+      "to": "Davide · comunicazione",
       "sent": "Venerdì, ore 8:55",
-      "subject": "L’80% dei clienti è contrario?",
-      "body": "Ciao Davide,\n\nil report dice che l’80% dei commenti analizzati è negativo. Nel riepilogo per la direzione questa frase è diventata «l’80% dei clienti è contrario». Il tema è serio e non voglio ridimensionarlo artificialmente, ma dobbiamo capire chi è stato contato. Puoi correggere il riepilogo e indicare un modo per verificare se il problema si estende oltre i social?\n\nMarta"
+      "subject": "Risposta alla schermata che circola",
+      "body": "Ciao Davide,\n\nsta circolando uno screenshot in cui sembriamo dire a un cliente «Se ha fretta, si arrangi». Nel file completo vedo un codice di esercitazione, ma mi chiedono di pubblicare subito che nessun cliente ha mai ricevuto una risposta simile. Intanto l’assistenza segnala alcuni ritardi veri. Puoi distinguere ciò che sappiamo sull’immagine da ciò che resta da verificare e preparare una risposta che non usi la simulazione per liquidare i reclami?\n\nMarta"
     },
     "document": {
-      "title": "Metodo di ascolto e sintesi",
-      "intro": "La raccolta misura contenuti pubblici selezionati, non una quota di clienti.",
+      "title": "Tracciamento della schermata e registro assistenza",
+      "intro": "La provenienza dell’immagine e la qualità del servizio richiedono verifiche distinte.",
       "facts": [
         {
           "id": "ITC24F1",
-          "time": "Report",
-          "text": "Sono stati classificati 250 commenti pubblici contenenti il nome della marca."
+          "time": "Archivio formazione",
+          "text": "La versione non ritagliata della schermata porta il codice SIM-417 e appartiene a un esercizio interno che mostra una risposta volutamente inadeguata da correggere."
         },
         {
           "id": "ITC24F2",
-          "time": "Report",
-          "text": "L’80% dei commenti classificati è negativo; uno stesso account può aver scritto più commenti."
+          "time": "Verifica messaggi",
+          "text": "Nei canali di assistenza controllati per gli ultimi sette giorni non compare l’invio della frase «Se ha fretta, si arrangi» a un cliente."
         },
         {
           "id": "ITC24F3",
-          "time": "Metodo",
-          "text": "Il campione non è costruito per rappresentare tutti i clienti e non verifica se gli autori siano clienti."
+          "time": "Limite della verifica",
+          "text": "Non sono ancora stati controllati tutti i canali e i periodi precedenti; l’identità di chi ha diffuso il ritaglio e la sua portata restano sconosciute."
         },
         {
           "id": "ITC24F4",
-          "time": "Attuale",
-          "text": "L’assistenza registra un aumento di richieste sullo stesso tema, senza un tasso complessivo calcolato."
+          "time": "Assistenza",
+          "text": "Quattordici ticket della settimana hanno atteso più di 48 ore per una prima risposta; la causa dei ritardi è in esame."
+        },
+        {
+          "id": "ITC24F5",
+          "time": "Comunicazione",
+          "text": "La direzione deve decidere oggi una risposta pubblica; può impegnarsi a pubblicare gli esiti delle verifiche senza attribuire intenzioni a chi ha condiviso l’immagine."
         }
       ]
     },
     "questions": [
       {
-        "id": "ascolto-social-campione-evidence",
+        "id": "schermata-formazione-virale-evidence",
         "axis": "Evidence",
-        "prompt": "Che cosa misura l’80%?",
+        "prompt": "Che cosa mostra la versione non ritagliata?",
         "evidenceIds": [
-          "ITC24F1",
-          "ITC24F2"
-        ],
-        "correctOptionId": "a",
-        "options": [
-          {
-            "id": "a",
-            "text": "La quota di commenti classificati come negativi.",
-            "feedback": "L’unità è il commento, non la persona."
-          },
-          {
-            "id": "b",
-            "text": "La quota di acquisti persi.",
-            "feedback": "Le vendite non sono misurate."
-          },
-          {
-            "id": "c",
-            "text": "La quota di tutti i clienti contrari.",
-            "feedback": "Non è un campione rappresentativo."
-          }
-        ]
-      },
-      {
-        "id": "ascolto-social-campione-scope",
-        "axis": "Scope",
-        "prompt": "Perché non equivale a «clienti»?",
-        "evidenceIds": [
-          "ITC24F2",
-          "ITC24F3"
+          "ITC24F1"
         ],
         "correctOptionId": "c",
         "options": [
           {
             "id": "a",
-            "text": "Perché tutti i commenti sono falsi.",
-            "feedback": "Nessuna verifica li dichiara falsi."
+            "text": "Una conversazione confermata con un cliente.",
+            "feedback": "Il codice SIM-417 identifica l’esercizio interno, non un ticket cliente."
           },
           {
             "id": "b",
-            "text": "Perché il tema non interessa l’assistenza.",
-            "feedback": "Le richieste sono aumentate."
+            "text": "Un’immagine creata da chi ha protestato online.",
+            "feedback": "L’archivio formazione contiene la versione completa della schermata."
           },
           {
             "id": "c",
-            "text": "Autori e commenti non coincidono e l’identità dei clienti non è verificata.",
-            "feedback": "Il metodo non conta clienti unici."
+            "text": "Un esempio volutamente scorretto usato in formazione.",
+            "feedback": "La frase compare nell’esercizio SIM-417 come testo da correggere."
           }
         ]
       },
       {
-        "id": "ascolto-social-campione-intent",
+        "id": "schermata-formazione-virale-scope",
+        "axis": "Scope",
+        "prompt": "Quale smentita andrebbe oltre la verifica?",
+        "evidenceIds": [
+          "ITC24F2",
+          "ITC24F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "«Nessun cliente ha mai ricevuto una frase simile da noi».",
+            "feedback": "Sono stati controllati solo alcuni canali e gli ultimi sette giorni."
+          },
+          {
+            "id": "b",
+            "text": "«Questa versione completa proviene dall’esercizio SIM-417».",
+            "feedback": "L’archivio formazione permette questa attribuzione specifica."
+          },
+          {
+            "id": "c",
+            "text": "«Nei canali verificati questa settimana non risulta l’invio di quella frase».",
+            "feedback": "La formula delimita il periodo e le fonti effettivamente controllate."
+          }
+        ]
+      },
+      {
+        "id": "schermata-formazione-virale-intent",
         "axis": "Intent",
-        "prompt": "Quale posizione di Marta è equilibrata?",
+        "prompt": "Quale tensione deve gestire Marta?",
         "evidenceIds": [
           "ITC24F1",
           "ITC24F4"
@@ -694,89 +698,92 @@
         "options": [
           {
             "id": "a",
-            "text": "Ignorare il report.",
-            "feedback": "Marta lo considera serio."
+            "text": "Difendere la frase offensiva perché era un esercizio.",
+            "feedback": "L’esercizio la presenta come esempio da correggere, non come tono accettabile."
           },
           {
             "id": "b",
-            "text": "Correggere la generalizzazione senza sminuire un segnale reale.",
-            "feedback": "I social e l’assistenza mostrano un tema."
+            "text": "Correggere l’attribuzione dello screenshot e prendere sul serio i ritardi reali.",
+            "feedback": "La provenienza didattica non cancella i quattordici ticket con attesa lunga."
           },
           {
             "id": "c",
-            "text": "Concludere già che quattro clienti su cinque sono contrari.",
-            "feedback": "Il metodo non lo consente."
+            "text": "Attribuire i ritardi alla persona che ha diffuso l’immagine.",
+            "feedback": "La diffusione della schermata non spiega i tempi dei ticket."
           }
         ]
       },
       {
-        "id": "ascolto-social-campione-purpose",
+        "id": "schermata-formazione-virale-purpose",
         "axis": "Purpose",
-        "prompt": "Quale verifica proporre?",
+        "prompt": "Quale risposta pubblica è verificabile?",
         "evidenceIds": [
+          "ITC24F1",
+          "ITC24F2",
           "ITC24F3",
-          "ITC24F4"
+          "ITC24F4",
+          "ITC24F5"
         ],
         "correctOptionId": "c",
         "options": [
           {
             "id": "a",
-            "text": "Eliminare i commenti duplicati e dichiarare comunque l’80% di clienti.",
-            "feedback": "Anche senza duplicati mancherebbe la rappresentatività."
+            "text": "«È tutto inventato e l’assistenza non ha ritardi».",
+            "feedback": "La schermata nasce da un esercizio, ma quattordici ticket hanno superato 48 ore."
           },
           {
             "id": "b",
-            "text": "Pubblicare subito la quota come dato clienti.",
-            "feedback": "La popolazione non è definita."
+            "text": "«La frase è stata certamente inviata a un cliente e sappiamo chi ha diffuso la prova».",
+            "feedback": "I log controllati non mostrano l’invio e l’autore del ritaglio è sconosciuto."
           },
           {
             "id": "c",
-            "text": "Separare commenti e clienti, analizzare i contatti dell’assistenza e valutare un campione rappresentativo.",
-            "feedback": "Serve una base diversa per stimare la clientela."
+            "text": "«La schermata completa è una simulazione; completiamo le verifiche sui messaggi e affrontiamo separatamente i ritardi documentati».",
+            "feedback": "Distingue l’origine accertata, i limiti dei log e il problema di servizio già visibile."
           }
         ]
       }
     ],
     "task": {
-      "prompt": "Rispondi a Marta con un riepilogo corretto. Mantieni visibile il segnale, definisci la popolazione osservata e proponi un percorso per stimarne la diffusione.",
-      "wordGuide": "Circa 110–190 parole",
+      "prompt": "Rispondi a Marta con una proposta di dichiarazione pubblica. Attribuisci la schermata alla fonte verificata, delimita i controlli sui messaggi, riconosci i ritardi effettivi e prometti solo aggiornamenti che puoi documentare.",
+      "wordGuide": "Circa 150–230 parole",
       "criteria": [
-        "Definire l’unità misurata",
-        "Non inferire clienti unici",
-        "Riconoscere il segnale dell’assistenza",
-        "Proporre una verifica adeguata"
+        "Spiegare il codice dell’esercizio senza minimizzare la frase",
+        "Non estendere sette giorni di log a ogni messaggio passato",
+        "Riconoscere i quattordici ticket con attesa lunga",
+        "Separare la verifica della schermata dal piano sui ritardi"
       ]
     },
     "model": {
-      "subject": "R: L’80% dei clienti è contrario?",
-      "body": "Ciao Marta,\n\nla percentuale dell’80% riguarda 250 commenti pubblici classificati, non l’80% dei nostri clienti. Uno stesso account può comparire più volte e non sappiamo se tutti gli autori siano clienti. Il riepilogo per la direzione cambia quindi la popolazione a cui si riferisce il dato; va corretto. Non dobbiamo però scartare il segnale: anche l’assistenza registra più richieste sullo stesso tema, pur senza un tasso complessivo.\n\nProporrei questa sintesi: «Nell’ascolto di 250 commenti pubblici che citano la marca, l’80% dei contenuti classificati esprime una valutazione negativa. Il campione non consente di stimare la quota di clienti con questa opinione. L’aumento delle richieste all’assistenza conferma che il tema richiede un approfondimento.»\n\nPer il seguito distinguerei gli autori unici dai commenti, analizzerei le richieste dell’assistenza per categoria e periodo e valuterei una rilevazione su un campione di clienti definito. Ti invierò domani una proposta di metodo con le domande a cui ciascuna fonte può rispondere. Così diamo al problema il peso che merita senza trasformare una misura social in un sondaggio sulla clientela.\n\nDavide",
+      "subject": "R: Risposta alla schermata che circola",
+      "body": "Ciao Marta,\n\nla versione completa della schermata è nell’archivio di formazione con il codice SIM-417. La frase offensiva vi compare come esempio di risposta sbagliata da correggere, non come modello da usare con i clienti. Nei canali controllati per gli ultimi sette giorni non risulta l’invio di quella frase. Non abbiamo però completato la verifica di tutti i canali e dei periodi precedenti: dire che nessun cliente abbia mai ricevuto parole simili sarebbe più ampio delle prove disponibili.\n\nProporrei questa risposta pubblica: «La schermata completa proviene da un esercizio interno che mostrava una risposta inadeguata da correggere. Nei canali verificati questa settimana non abbiamo trovato l’invio della frase a clienti; stiamo completando i controlli e ne comunicheremo l’esito. Separatamente, abbiamo rilevato ritardi nella prima risposta ad alcune richieste e stiamo esaminando le cause e le misure necessarie».\n\nQuattordici ticket della settimana hanno atteso oltre 48 ore: dovremmo contattare quelle persone secondo le informazioni disponibili e verificare lo stato di ciascuna richiesta. Chiederò all’assistenza un aggiornamento documentato sui ritardi e ai responsabili dei canali il perimetro mancante dei log. Non attribuirei intenzioni a chi ha condiviso il ritaglio, né userei l’origine della schermata per chiudere il tema del servizio.\n\nDavide",
       "annotations": [
         {
-          "label": "Definisce la misura",
-          "excerpt": "250 commenti pubblici classificati",
+          "label": "Attribuisce la fonte",
+          "excerpt": "la versione completa della schermata è nell’archivio di formazione con il codice SIM-417",
           "evidenceIds": [
             "ITC24F1"
           ]
         },
         {
-          "label": "Separa autori e commenti",
-          "excerpt": "Uno stesso account può comparire più volte",
-          "evidenceIds": [
-            "ITC24F2"
-          ]
-        },
-        {
-          "label": "Limita la popolazione",
-          "excerpt": "non sappiamo se tutti gli autori siano clienti",
+          "label": "Delimita la verifica",
+          "excerpt": "Non abbiamo però completato la verifica di tutti i canali e dei periodi precedenti",
           "evidenceIds": [
             "ITC24F3"
           ]
         },
         {
-          "label": "Mantiene il segnale",
-          "excerpt": "l’assistenza registra più richieste",
+          "label": "Riconosce il problema reale",
+          "excerpt": "Quattordici ticket della settimana hanno atteso oltre 48 ore",
           "evidenceIds": [
             "ITC24F4"
+          ]
+        },
+        {
+          "label": "Separa le azioni",
+          "excerpt": "Non attribuirei intenzioni a chi ha condiviso il ritaglio, né userei l’origine della schermata per chiudere il tema del servizio",
+          "evidenceIds": [
+            "ITC24F5"
           ]
         }
       ]
@@ -2567,7 +2574,7 @@
     },
     "model": {
       "subject": "R: Conflitto sulla stanza 4",
-      "body": "Ciao Elisa,\n\nle due visite risultano ancora confermate per le 11; nessuna è stata annullata. Il problema riguarda l’assegnazione della stanza 4, scelta da entrambi i reparti in un sistema che non impedisce il conflitto. La stanza 5 risulta libera, ma dobbiamo far confermare al reparto che sia adatta alla visita prima di indicarla come soluzione. Non possiamo quindi garantire già la stessa sede prevista, né chiedere alla paziente di rinunciare all’appuntamento.\n\nLe direi: «La sua visita delle 11 è ancora in agenda. Abbiamo rilevato un conflitto nell’assegnazione della stanza e stiamo verificando con il reparto uno spazio idoneo. Le confermeremo la stanza e l’eventuale indicazione di accesso entro le 9:30, così potrà organizzarsi con un’informazione verificata, oppure la contatteremo subito se fosse necessario concordare un’alternativa.»\n\nChiederò ora al reparto di verificare la stanza 5 e terrò aggiornati entrambi i servizi coinvolti. Se non è idonea, sarà il reparto a indicare la soluzione clinicamente appropriata; il nostro compito è comunicarla in modo tempestivo e preciso.\n\nMarta",
+      "body": "Ciao Elisa,\n\nle due visite risultano ancora confermate per le 11; nessuna è stata annullata. Il problema riguarda l’assegnazione della stanza 4, scelta da entrambi i reparti in un sistema che non impedisce il conflitto. La stanza 5 risulta libera, ma dobbiamo far confermare al reparto che sia adatta alla visita prima di indicarla come soluzione. Non possiamo quindi garantire già la stessa sede prevista, né chiedere alla paziente di rinunciare all’appuntamento.\n\nLe direi: «La sua visita delle 11 è ancora in agenda. Abbiamo rilevato un conflitto nell’assegnazione della stanza e stiamo verificando con il reparto uno spazio idoneo. La contattiamo ora per sapere se è già in viaggio e quando deve partire. Prima di chiederle di raggiungerci, le confermeremo uno spazio idoneo o concorderemo con lei e il reparto un’alternativa praticabile.»\n\nChiederò ora al reparto di verificare la stanza 5 e terrò aggiornati entrambi i servizi coinvolti. Se non è idonea, sarà il reparto a indicare la soluzione clinicamente appropriata; il nostro compito è comunicarla in modo tempestivo e preciso.\n\nMarta",
       "annotations": [
         {
           "label": "Mantiene appuntamenti",
@@ -2593,8 +2600,8 @@
           ]
         },
         {
-          "label": "Fissa aggiornamento",
-          "excerpt": "entro le 9:30",
+          "label": "Anticipa il contatto",
+          "excerpt": "La contattiamo ora per sapere se è già in viaggio",
           "evidenceIds": [
             "ITC213F3"
           ]
@@ -2771,7 +2778,7 @@
     },
     "model": {
       "subject": "R: Pagina estranea nella copia",
-      "body": "Ciao Giorgio,\n\nabbiamo verificato che una pagina del file consegnato riporta un identificativo diverso da quello del richiedente. Il registro attesta la consegna all’account, ma non mostra quali pagine siano state aperte o salvate. Abbiamo ritirato il file dal portale; questo non ci permette di escludere una copia già scaricata. Dobbiamo segnalare l’accaduto al referente privacy e preparare una nuova copia controllata pagina per pagina.\n\nAl paziente scriverei: «Grazie per averci avvisato. Nella copia inviata compare una pagina che non appartiene al suo fascicolo. Abbiamo ritirato il file dal portale e stiamo ricostruendo una versione verificata dei suoi documenti. Le comunicheremo tramite il portale sicuro quando la nuova copia sarà pronta e le daremo indicazioni sul file ricevuto in precedenza. Non le chiediamo di inoltrarci la pagina per email.»\n\nIo coordino la verifica con il referente privacy e registro le versioni del file. Prima del nuovo invio farò controllare l’identificativo su ogni pagina da una seconda persona. Ti aggiornerò oggi sul tempo necessario, senza dichiarare già conclusa la verifica degli accessi.\n\nPaola",
+      "body": "Ciao Giorgio,\n\nabbiamo verificato che una pagina del file consegnato riporta un identificativo diverso da quello del richiedente. Il registro attesta la consegna all’account, ma non mostra quali pagine siano state aperte o salvate. Abbiamo ritirato il file dal portale; questo non ci permette di escludere una copia già scaricata. Dobbiamo segnalare l’accaduto al referente privacy e preparare una nuova copia controllata pagina per pagina.\n\nAl paziente scriverei: «Grazie per averci avvisato. Nella copia inviata compare una pagina che riporta un identificativo diverso dal suo. Abbiamo ritirato il file dal portale e stiamo ricostruendo una versione verificata dei suoi documenti. Le comunicheremo tramite il portale sicuro quando la nuova copia sarà pronta e le daremo indicazioni sul file ricevuto in precedenza. Non le chiediamo di inoltrarci la pagina per email.»\n\nIo coordino la verifica con il referente privacy e registro le versioni del file. Prima del nuovo invio farò controllare l’identificativo su ogni pagina da una seconda persona. Ti aggiornerò oggi sul tempo necessario, senza dichiarare già conclusa la verifica degli accessi.\n\nPaola",
       "annotations": [
         {
           "label": "Rileva discordanza",
@@ -3168,7 +3175,7 @@
     },
     "model": {
       "subject": "R: Indicazioni per visita al secondo piano",
-      "body": "Ciao Paolo,\n\nla rampa rende accessibile l’ingresso nord, ma oggi non garantisce il tragitto fino all’ambulatorio al secondo piano: l’ascensore nord è fermo. L’ascensore sud risulta funzionante, tuttavia non abbiamo verificato il percorso dalla rampa fino a quell’impianto. Anche la stanza al piano terra è solo una possibilità da confermare con l’ambulatorio. Non dobbiamo far arrivare la paziente a un ingresso per poi scoprire che non può proseguire.\n\nLe scriverei: «L’ascensore vicino all’ingresso nord è temporaneamente fuori servizio. Stiamo verificando un percorso alternativo praticabile per la sua visita o la disponibilità di una stanza al piano terra. La contatteremo entro le 11 con indicazioni precise prima del suo arrivo. Ci scusiamo per il disagio e le chiediamo di non affidarsi alle sole informazioni generali del sito per il percorso di oggi.»\n\nIo controllo subito il tragitto con un collega della sede e chiedo all’ambulatorio la conferma della stanza alternativa. Aggiorneremo anche l’avviso sul sito per la durata del guasto. Se nessuna soluzione è praticabile, sarà l’ambulatorio a concordare con la paziente il passo successivo.\n\nSilvia",
+      "body": "Ciao Paolo,\n\nla rampa rende accessibile l’ingresso nord, ma oggi non garantisce il tragitto fino all’ambulatorio al secondo piano: l’ascensore nord è fermo. L’ascensore sud risulta funzionante, tuttavia non abbiamo verificato il percorso dalla rampa fino a quell’impianto. Anche la stanza al piano terra è solo una possibilità da confermare con l’ambulatorio. Non dobbiamo far arrivare la paziente a un ingresso per poi scoprire che non può proseguire.\n\nLe scriverei: «L’ascensore vicino all’ingresso nord è temporaneamente fuori servizio. Stiamo verificando un percorso alternativo praticabile per la sua visita o la disponibilità di una stanza al piano terra. Ci dica a che ora pensa di partire: la contatteremo prima con indicazioni verificate. Se è già in viaggio, ci chiami ora e la assisteremo direttamente. Ci scusiamo per il disagio e le chiediamo di non affidarsi alle sole informazioni generali del sito per il percorso di oggi.»\n\nIo controllo subito il tragitto con un collega della sede e chiedo all’ambulatorio la conferma della stanza alternativa. Aggiorneremo anche l’avviso sul sito per la durata del guasto. Se nessuna soluzione è praticabile, sarà l’ambulatorio a concordare con la paziente il passo successivo.\n\nSilvia",
       "annotations": [
         {
           "label": "Delimita ingresso",
@@ -3193,8 +3200,8 @@
           ]
         },
         {
-          "label": "Dà un termine",
-          "excerpt": "entro le 11",
+          "label": "Coordina il contatto prima del viaggio",
+          "excerpt": "la contatteremo prima con indicazioni verificate",
           "evidenceIds": [
             "ITC216F5"
           ]

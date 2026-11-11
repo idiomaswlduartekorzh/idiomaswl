@@ -1391,79 +1391,85 @@
     }
   },
   {
-    "id": "status-webhook",
-    "title": "Grün für die API, rot für Benachrichtigungen",
-    "area": "Software × Integrationen",
-    "areaLabel": "Software · Integrationen",
-    "role": "Daria · Integrationsbetrieb",
-    "teaser": "Eine Statusseite meldet Betrieb, aber Ereignisbenachrichtigungen an Partner verzögern sich.",
-    "misunderstanding": "Ein erfolgreicher API-Test wird als Nachweis verwendet, dass auch Webhooks pünktlich zugestellt werden.",
+    "id": "offline-abschluesse",
+    "title": "Am Sonntag erledigt, erst am Montag erfasst",
+    "area": "Software × Berichte",
+    "areaLabel": "Software · Berichte",
+    "role": "Daria · Datenbetrieb",
+    "teaser": "Ein Wochenbericht zählt 120 Abschlüsse; nach dem Offline-Abgleich sind 138 belegt, zwei weitere bleiben offen.",
+    "misunderstanding": "Ein zum festen Zeitpunkt erstellter Bericht wird als vollständige Aussage über alle tatsächlich am Sonntag erledigten Vorgänge gelesen.",
     "email": {
       "from": "Ben · Partnerbetreuung",
-      "to": "Daria · Integrationsbetrieb",
-      "sent": "Freitag, 12:15 Uhr",
-      "subject": "Partner erhält keine Ereignisse",
-      "body": "Hallo Daria,\n\nUnser Partner sieht auf der Statusseite alles grün, erhält aber Ereignisse erst Stunden später. Er befürchtet, dass Vorgänge verloren gegangen sind. Die API reagiert tatsächlich normal. Wie erkläre ich ihm den Unterschied zwischen API und Benachrichtigungswarteschlange, ohne eine vollständige Nachlieferung zu versprechen, bevor wir sie geprüft haben?\n\nBen"
+      "to": "Daria · Datenbetrieb",
+      "sent": "Montag, 09:20 Uhr",
+      "subject": "Abweichung im Wochenbericht",
+      "body": "Hallo Daria,\n\nunser Partner meldet für Sonntag 140 abgeschlossene Vorgänge. Der gestern Nacht erzeugte Wochenbericht zeigt 120, während die Anwendung heute 138 anzeigt. Er fragt, ob wir Abschlüsse verloren oder den Bericht nachträglich geändert haben. Kannst du die drei Zahlen auseinanderhalten und eine Korrektur vorschlagen, die den ursprünglichen Bericht nachvollziehbar lässt? Die Rückmeldung soll heute raus.\n\nBen"
     },
     "document": {
-      "title": "API-Monitor und Zustellwarteschlange",
-      "intro": "Abrufbarkeit und asynchrone Zustellung sind getrennte Messgrößen.",
+      "title": "Berichtsstand und Offline-Abgleich",
+      "intro": "Der Zeitpunkt der Erfassung ist nicht immer der Zeitpunkt des Abschlusses.",
       "facts": [
         {
           "id": "DEC28F1",
-          "time": "11:30",
-          "text": "Der API-Monitor meldet normale Antwortzeiten für direkte Anfragen."
+          "time": "Montag, 00:15 Uhr",
+          "text": "Der unveränderliche Wochenbericht wurde mit 120 bis dahin synchronisierten Sonntagsabschlüssen erzeugt."
         },
         {
           "id": "DEC28F2",
-          "time": "11:30",
-          "text": "Die Warteschlange für Partner-Webhooks enthält 480 wartende Ereignisse."
+          "time": "Montag, 02:10 Uhr",
+          "text": "18 weitere Vorgänge wurden von Offline-Geräten übertragen. Ihre bestätigten Abschlusszeiten liegen am Sonntag; ihre Erfassungszeiten liegen nach dem Berichtslauf."
         },
         {
           "id": "DEC28F3",
-          "time": "12:00",
-          "text": "Ein Teil der Ereignisse wurde verspätet zugestellt; der Abgleich mit den Partnerprotokollen läuft."
+          "time": "Montag, 08:30 Uhr",
+          "text": "Die Anwendung zeigt nun 138 verifizierte Sonntagsabschlüsse. Der ursprüngliche Bericht wurde nicht überschrieben."
         },
         {
           "id": "DEC28F4",
           "time": "Stand jetzt",
-          "text": "Ein Verlust von Ereignissen ist nicht bestätigt, eine vollständige Zustellung aber auch nicht."
+          "text": "Für zwei zusätzliche vom Partner genannte Vorgänge liegen noch keine zugeordneten Quellereignisse vor. Ob sie abgeschlossen wurden, wird gemeinsam geprüft."
+        },
+        {
+          "id": "DEC28F5",
+          "time": "Berichtsregel",
+          "text": "Eine korrigierte Fassung muss den neuen Datenstand und den ursprünglichen Laufzeitpunkt kenntlich machen; der erste Bericht bleibt archiviert."
         }
       ]
     },
     "questions": [
       {
-        "id": "status-webhook-evidence",
+        "id": "offline-abschluesse-evidence",
         "axis": "Evidence",
-        "prompt": "Was misst die grüne Anzeige?",
+        "prompt": "Was erklärt die Differenz zwischen 120 und 138?",
         "evidenceIds": [
-          "DEC28F1"
+          "DEC28F1",
+          "DEC28F2",
+          "DEC28F3"
         ],
         "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Direkte API-Antworten.",
-            "feedback": "Der Monitor prüft diesen Pfad."
+            "text": "18 bestätigte Sonntagsabschlüsse wurden erst nach dem Berichtslauf synchronisiert.",
+            "feedback": "Abschlusszeit und Erfassungszeit fallen bei diesen Offline-Vorgängen auseinander."
           },
           {
             "id": "b",
-            "text": "Jeden Partnerdatensatz.",
-            "feedback": "Die Partnerprotokolle werden noch abgeglichen."
+            "text": "Der ursprüngliche Bericht wurde nachträglich auf 138 geändert.",
+            "feedback": "Die Fassung mit 120 Einträgen blieb archiviert und unverändert."
           },
           {
             "id": "c",
-            "text": "Pünktliche Webhook-Zustellung.",
-            "feedback": "Die Warteschlange zeigt eine Verzögerung."
+            "text": "18 Vorgänge wurden am Montag erst erledigt.",
+            "feedback": "Ihre bestätigten Abschlusszeiten liegen am Sonntag."
           }
         ]
       },
       {
-        "id": "status-webhook-scope",
+        "id": "offline-abschluesse-scope",
         "axis": "Scope",
-        "prompt": "Was ist über die Ereignisse gesichert?",
+        "prompt": "Welche Aussage zu den vom Partner genannten 140 Vorgängen ist noch offen?",
         "evidenceIds": [
-          "DEC28F2",
           "DEC28F3",
           "DEC28F4"
         ],
@@ -1471,117 +1477,119 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine Warteschlange und verspätete Zustellungen; die Vollständigkeit ist offen.",
-            "feedback": "Der Abgleich ist noch im Gang."
+            "text": "Ob die zwei nicht zugeordneten Vorgänge tatsächlich abgeschlossen wurden.",
+            "feedback": "Für diese beiden fehlen noch passende Quellereignisse."
           },
           {
             "id": "b",
-            "text": "Alle Ereignisse sind bereits zugestellt.",
-            "feedback": "480 stehen noch in der Warteschlange."
+            "text": "Ob die 18 Offline-Abschlüsse zum Sonntag gehören.",
+            "feedback": "Ihre Abschlusszeiten wurden bereits bestätigt."
           },
           {
             "id": "c",
-            "text": "Alle 480 Ereignisse sind verloren.",
-            "feedback": "Ein Verlust wurde nicht bestätigt."
+            "text": "Ob der erste Bericht 120 Einträge enthielt.",
+            "feedback": "Der archivierte Bericht belegt diese Zahl."
           }
         ]
       },
       {
-        "id": "status-webhook-intent",
+        "id": "offline-abschluesse-intent",
         "axis": "Intent",
-        "prompt": "Was braucht Ben für den Partner?",
+        "prompt": "Was braucht Ben für eine faire Partnerantwort?",
         "evidenceIds": [
           "DEC28F1",
-          "DEC28F2"
+          "DEC28F3",
+          "DEC28F4"
         ],
         "correctOptionId": "c",
         "options": [
           {
             "id": "a",
-            "text": "Eine Behauptung vollständiger Nachlieferung.",
-            "feedback": "Gerade das möchte Ben vermeiden."
+            "text": "Eine Behauptung, der Partner habe sich bei allen 20 Vorgängen geirrt.",
+            "feedback": "18 nachträgliche Sonntagsabschlüsse sind bestätigt; nur zwei bleiben offen."
           },
           {
             "id": "b",
-            "text": "Eine neue Preisvereinbarung.",
-            "feedback": "Dazu stellt der Partner keine Frage."
+            "text": "Eine unbemerkte Ersetzung des ersten Berichts.",
+            "feedback": "Die Berichtsregel verlangt, den ursprünglichen Lauf sichtbar zu lassen."
           },
           {
             "id": "c",
-            "text": "Eine Erklärung, warum der API-Status dessen Erfahrung nicht abbildet.",
-            "feedback": "API und Webhooks sind getrennt."
+            "text": "Eine Erklärung der drei Zahlen mit getrenntem Stand für die zwei ungeklärten Vorgänge.",
+            "feedback": "So kann er die Abweichung anerkennen, ohne den Rest vorwegzunehmen."
           }
         ]
       },
       {
-        "id": "status-webhook-purpose",
+        "id": "offline-abschluesse-purpose",
         "axis": "Purpose",
-        "prompt": "Welche Antwort ist belastbar?",
+        "prompt": "Wie lässt sich die Auswertung korrigieren?",
         "evidenceIds": [
           "DEC28F2",
           "DEC28F3",
-          "DEC28F4"
+          "DEC28F4",
+          "DEC28F5"
         ],
         "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Verzögerung benennen, Zustellung prüfen und nach Abgleich einen vollständigen Status liefern.",
-            "feedback": "Sie beschreibt das Problem und die offene Prüfung."
+            "text": "Eine neue, datierte Fassung mit 138 bestätigten Abschlüssen erstellen, den ersten Bericht erhalten und zwei Vorgänge weiter prüfen.",
+            "feedback": "Das trennt den ursprünglichen Datenstand, den Abgleich und die offene Differenz."
           },
           {
             "id": "b",
-            "text": "Den Verlust aller Vorgänge melden.",
-            "feedback": "Der Verlust ist ungeklärt."
+            "text": "140 als gesicherte Zahl übernehmen und die beiden fehlenden Ereignisse später suchen.",
+            "feedback": "Für zwei behauptete Abschlüsse gibt es noch keinen Nachweis."
           },
           {
             "id": "c",
-            "text": "Mit „alles grün“ auf die Statusseite verweisen.",
-            "feedback": "Der Webhook-Pfad ist beeinträchtigt."
+            "text": "Den Wert 120 als endgültige Sonntagsleistung verteidigen.",
+            "feedback": "Die 18 später synchronisierten Sonntagsabschlüsse würden fehlen."
           }
         ]
       }
     ],
     "task": {
-      "prompt": "Antworten Sie Ben mit einer Partnernachricht. Trennen Sie API-Erreichbarkeit und Webhook-Zustellung, nennen Sie die offene Vollständigkeitsprüfung und einen nächsten Statuspunkt.",
+      "prompt": "Antworten Sie Ben mit einem Entwurf für den Partner. Erklären Sie die drei Zahlen, schlagen Sie eine nachvollziehbare neue Berichtsfassung vor und begrenzen Sie die Aussage zu den zwei offenen Vorgängen.",
       "wordGuide": "Etwa 110–190 Wörter",
       "criteria": [
-        "Messgrenze erklären",
-        "Verzögerung anerkennen",
-        "Keinen Datenverlust behaupten",
-        "Abgleich zusagen"
+        "Berichtslauf und Abschlusszeit trennen",
+        "18 bestätigte Nachträge einordnen",
+        "Zwei Vorgänge offenlassen",
+        "Versionierte Korrektur anbieten"
       ]
     },
     "model": {
-      "subject": "AW: Partner erhält keine Ereignisse",
-      "body": "Hallo Ben,\n\ndie grüne Anzeige bezieht sich derzeit auf direkte API-Anfragen. Sie sagt nichts über die pünktliche Zustellung der asynchronen Benachrichtigungen aus. In der Webhook-Warteschlange stehen aktuell 480 Ereignisse; ein Teil wurde bereits mit Verspätung ausgeliefert. Ob sämtliche Ereignisse beim Partner angekommen sind, prüfen wir anhand beider Protokolle. Ein Verlust ist bisher nicht bestätigt, vollständige Zustellung aber ebenfalls noch nicht.\n\nFür den Partner schlage ich vor: „Ihre Beobachtung ist berechtigt. Unsere API beantwortet direkte Anfragen normal, während sich die Zustellung von Ereignisbenachrichtigungen derzeit verzögert. Wir arbeiten die Warteschlange ab und gleichen die Zustellungen mit Ihren Referenzen ab. Wir melden Ihnen um 15 Uhr den überprüften Stand und kennzeichnen, was zu diesem Zeitpunkt noch offen ist.“\n\nIch werde die Statusseite um den Webhook-Pfad ergänzen, damit die grüne API-Anzeige nicht als Gesamtentwarnung gelesen wird. Bitte lass dir vom Partner einige fehlende Ereignisreferenzen geben; damit können wir den Abgleich gezielt testen. Sobald die Warteschlange abgearbeitet ist, bestätigen wir die Vollständigkeit erst nach der Protokollprüfung.\n\nDaria",
+      "subject": "AW: Abweichung im Wochenbericht",
+      "body": "Hallo Ben,\n\ndie 120 im Wochenbericht sind der dokumentierte Stand des Laufs um 00:15 Uhr, nicht die endgültige Zahl aller Sonntagsabschlüsse. Um 02:10 Uhr wurden 18 weitere Vorgänge von Offline-Geräten übertragen. Ihre Abschlusszeiten liegen nachweislich am Sonntag; deshalb zeigt die Anwendung jetzt 138 bestätigte Abschlüsse. Der ursprüngliche Bericht wurde nicht verändert.\n\nDem Partner würde ich schreiben: „Sie haben recht, dass der erste Wochenbericht Ihre Sonntagsleistung unvollständig abbildet. Er wurde vor der Synchronisierung von 18 weiteren Sonntagsabschlüssen erstellt. Wir stellen Ihnen eine neue, datierte Fassung mit 138 bestätigten Abschlüssen bereit und kennzeichnen den Datenstand sowie den Zeitpunkt des ersten Berichtslaufs. Die ursprüngliche Fassung bleibt zur Nachvollziehbarkeit erhalten. Zwei weitere von Ihnen genannte Vorgänge gleichen wir noch anhand der Quellereignisse ab; für sie können wir derzeit weder einen Abschluss noch einen Verlust bestätigen.“\n\nIch erstelle die korrigierte Fassung heute und bitte den Partner um die Kennungen der zwei offenen Vorgänge. Sobald der Abgleich abgeschlossen ist, dokumentieren wir das Ergebnis separat. Bitte nenne 140 bis dahin nicht als bestätigte Zahl.\n\nDaria",
       "annotations": [
         {
-          "label": "Begrenzt Status",
-          "excerpt": "direkte API-Anfragen",
+          "label": "Begrenzt den ersten Bericht",
+          "excerpt": "Stand des Laufs um 00:15 Uhr",
           "evidenceIds": [
             "DEC28F1"
           ]
         },
         {
-          "label": "Benennt Rückstau",
-          "excerpt": "480 Ereignisse",
+          "label": "Erklärt den Nachtrag",
+          "excerpt": "18 weitere Vorgänge von Offline-Geräten übertragen",
           "evidenceIds": [
             "DEC28F2"
           ]
         },
         {
-          "label": "Qualifiziert Verlust",
-          "excerpt": "bisher nicht bestätigt",
+          "label": "Erhält die Historie",
+          "excerpt": "Der ursprüngliche Bericht wurde nicht verändert",
           "evidenceIds": [
-            "DEC28F4"
+            "DEC28F3",
+            "DEC28F5"
           ]
         },
         {
-          "label": "Erklärt Nachweis",
-          "excerpt": "erst nach der Protokollprüfung",
+          "label": "Markiert die offene Differenz",
+          "excerpt": "weder einen Abschluss noch einen Verlust bestätigen",
           "evidenceIds": [
-            "DEC28F3",
             "DEC28F4"
           ]
         }

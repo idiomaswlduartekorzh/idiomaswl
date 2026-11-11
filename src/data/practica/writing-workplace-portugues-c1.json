@@ -3744,7 +3744,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Um pacote deixado diante do número 43, distinto do endereço pedido.",
+            "text": "Uma porta com o número 43, diferente do 48 do pedido, sem pessoa recebendo.",
             "feedback": "Não prova recebimento no 48."
           },
           {

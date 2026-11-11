@@ -498,8 +498,8 @@
         "options": [
           {
             "id": "a",
-            "text": "D’une décision clinique concernant Sophie.",
-            "feedback": "Farah gère une demande de retrait d’image ; aucune question de santé ou de soin n’est en jeu."
+            "text": "De la confirmation que l’accord initial couvrait aussi la publicité.",
+            "feedback": "L’accord initial ne mentionne que la page du programme ; Farah doit connaître le statut de la publicité contestée."
           },
           {
             "id": "b",
@@ -693,13 +693,13 @@
         "options": [
           {
             "id": "a",
-            "text": "Quel abonné a ouvert la page en premier.",
-            "feedback": "Identifier le premier visiteur de la page n’aiderait pas à interpréter le chiffre 430 ni à préparer le prochain envoi."
+            "text": "Si les 430 visites prouvent que tous ces abonnés ont quitté la liste.",
+            "feedback": "Les visites de la page ne prouvent pas un départ ; Bastien veut décider quoi faire après clarification des deux mesures."
           },
           {
             "id": "b",
-            "text": "Si la campagne a été envoyée à huit personnes.",
-            "feedback": "La newsletter a été adressée à 8 000 abonnés ; huit personnes n’est pas une donnée du rapport."
+            "text": "Si les 17 désinscriptions ont toutes été causées par le texte du courriel.",
+            "feedback": "Le rapport confirme 17 désinscriptions, mais pas leur cause ; Bastien demande s’il faut revoir la campagne et prévenir Sales."
           },
           {
             "id": "c",
@@ -871,8 +871,8 @@
           },
           {
             "id": "c",
-            "text": "Que l’atelier a été annulé.",
-            "feedback": "L’atelier est prévu demain et aucun élément ne dit qu’il a été annulé."
+            "text": "Que la version 7 est déjà visible par l’équipe terrain.",
+            "feedback": "Une modification enregistrée reste en brouillon jusqu’à la publication ; l’équipe terrain voit encore la version 6."
           }
         ]
       },
@@ -1925,7 +1925,7 @@
     },
     "model": {
       "subject": "Ré : Qui travaille samedi ?",
-      "body": "Bonjour Mélanie,\n\nJe vois bien ton accord avec Karim pour échanger samedi contre mardi. Cependant, la demande apparaît encore « en attente de validation » et le planning officiel te maintient sur le service de samedi. L’accord entre collègues est une première étape ; je dois aussi vérifier que la personne qui prend chaque service possède les compétences requises. Je comprends que mon absence de réponse soit particulièrement gênante puisque tu as déjà organisé ta garde d’enfant.\n\nJe vais vérifier ce soir l’habilitation nécessaire pour samedi et je te répondrai dès que le contrôle sera terminé. Si tout est conforme, je validerai l’échange et je vous enverrai à tous les deux le planning mis à jour. Si un obstacle apparaît, je te l’expliquerai immédiatement afin que nous cherchions une autre solution. Pour l’instant, je ne veux pas te dire que l’échange est confirmé alors que cette vérification manque encore.\n\nBenoît",
+      "body": "Bonjour Mélanie,\n\nJe vois bien ton accord avec Karim pour échanger samedi contre mardi. Cependant, la demande apparaît encore « en attente de validation » et le planning officiel te maintient sur le service de samedi. Tant que la validation manque, c’est ce planning qui s’applique ; je te confirme la décision ce soir. L’accord entre collègues est une première étape ; je dois aussi vérifier que la personne qui prend chaque service possède les compétences requises. Je comprends que mon absence de réponse soit particulièrement gênante puisque tu as déjà organisé ta garde d’enfant.\n\nJe vais vérifier ce soir l’habilitation nécessaire pour samedi et je te répondrai dès que le contrôle sera terminé. Si tout est conforme, je validerai l’échange et je vous enverrai à tous les deux le planning mis à jour. Si un obstacle apparaît, je te l’expliquerai immédiatement afin que nous cherchions une autre solution. Pour l’instant, je ne veux pas te dire que l’échange est confirmé alors que cette vérification manque encore.\n\nBenoît",
       "annotations": [
         {
           "label": "Reconnaît l’accord",
@@ -2517,7 +2517,7 @@
     },
     "model": {
       "subject": "Ré : Patiente attendue au bâtiment B",
-      "body": "Bonjour Karim,\n\nLe rendez-vous est bien maintenu à 9 heures, mais il a été déplacé vendredi du bâtiment A au bâtiment B. Le SMS reçu par la patiente indiquait encore le bâtiment A : je ne trouve aucun nouvel envoi ni appel l’informant du changement. Elle s’est donc présentée à l’adresse qui lui avait été communiquée, et je suis désolée que notre suivi ne l’ait pas corrigée à temps.\n\nJe contacte immédiatement l’accueil du bâtiment B pour expliquer où elle se trouve et éviter qu’on considère sa présence au bâtiment A comme une absence. Peux-tu lui indiquer le trajet vérifié vers le bâtiment B et, si nécessaire, demander une aide d’orientation sur place ? Je confirmerai directement au service qu’elle est en route. Je vais également signaler l’absence de notification afin que les futurs changements d’adresse déclenchent un message clair. Restons sur la coordination du rendez-vous ; le service prendra toute décision concernant la consultation.\n\nLucie",
+      "body": "Bonjour Karim,\n\nLe rendez-vous est bien maintenu à 9 heures, mais il a été déplacé vendredi du bâtiment A au bâtiment B. Le SMS reçu par la patiente indiquait encore le bâtiment A : je ne trouve aucun nouvel envoi ni appel l’informant du changement. Elle s’est donc présentée à l’adresse qui lui avait été communiquée, et je suis désolée que notre suivi ne l’ait pas corrigée à temps.\n\nJe contacte immédiatement l’accueil du bâtiment B pour expliquer où elle se trouve et éviter qu’on considère sa présence au bâtiment A comme une absence. Peux-tu lui indiquer le trajet vers le bâtiment B après l’avoir vérifié avec l’accueil et, si nécessaire, demander une aide d’orientation sur place ? Je confirmerai directement au service qu’elle est en route. Je vais également signaler l’absence de notification afin que les futurs changements d’adresse déclenchent un message clair. Restons sur la coordination du rendez-vous ; le service prendra toute décision concernant la consultation.\n\nLucie",
       "annotations": [
         {
           "label": "Confirme le lieu",
@@ -2911,7 +2911,7 @@
     },
     "model": {
       "subject": "Ré : Transport pour demain matin",
-      "body": "Bonjour Sonia,\n\nJ’ai bien envoyé une demande de transport pour vendredi matin, et la centrale en a accusé réception. Elle n’a toutefois attribué ni véhicule ni heure de passage. La mention « transport demandé » sur notre fiche décrit donc une démarche en cours, pas un trajet réservé. J’aurais dû ajouter « en attente de confirmation » pour éviter que le service et le patient comprennent le contraire. Je suis désolé de cette confusion à la veille du déplacement.\n\nJe rappelle la centrale maintenant pour obtenir une réponse ferme. Si elle ne peut pas assurer le trajet, je chercherai avec le service les autres possibilités prévues dans notre organisation. Je te transmettrai uniquement un horaire confirmé ; à ce stade, je ne peux pas dire au patient qu’une voiture passera demain à une heure donnée. Peux-tu lui expliquer que nous vérifions la réservation et que nous reviendrons vers lui dès que le statut sera établi ? Je mettrai aussi la fiche à jour.\n\nOlivier",
+      "body": "Bonjour Sonia,\n\nJ’ai bien envoyé une demande de transport pour vendredi matin, et la centrale en a accusé réception. Elle n’a toutefois attribué ni véhicule ni heure de passage. La mention « transport demandé » sur notre fiche décrit donc une démarche en cours, pas un trajet réservé. J’aurais dû ajouter « en attente de confirmation » pour éviter que le service et le patient comprennent le contraire. Je suis désolé de cette confusion à la veille du déplacement.\n\nJe rappelle la centrale maintenant pour obtenir une réponse ferme. Si elle ne peut pas assurer le trajet, je chercherai d’autres possibilités avec le service. Je te transmettrai uniquement un horaire confirmé ; à ce stade, je ne peux pas dire au patient qu’une voiture passera demain à une heure donnée. Peux-tu lui expliquer que nous vérifions la réservation et que nous reviendrons vers lui dès que le statut sera établi ? Je mettrai aussi la fiche à jour.\n\nOlivier",
       "annotations": [
         {
           "label": "Définit le retour",

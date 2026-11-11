@@ -23,9 +23,9 @@ const HABILIDADES = [
     count: 'Próximamente', href: '#', available: false,
   },
   {
-    id: 'writing', emoji: '✍️', name: 'Escritura', eng: 'Writing',
-    desc: 'Essays, reports y formal letters al estilo FCE con criterios de evaluación y modelo. Próximamente.',
-    count: 'Próximamente', href: '#', available: false,
+    id: 'writing', emoji: '✍️', name: 'Writing', eng: 'Workplace correspondence',
+    desc: 'Read a workplace email, check the facts, analyse the misunderstanding and write a precise reply.',
+    count: '20 workplace cases', href: '/practica/ingles/b2/escritura', available: true,
   },
   {
     id: 'listening', emoji: '🎧', name: 'Comprensión auditiva', eng: 'Listening',

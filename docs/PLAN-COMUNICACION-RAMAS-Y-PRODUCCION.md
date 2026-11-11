@@ -41,27 +41,32 @@ Fecha de corte: 25 de agosto de 2026.
 ## Escritura laboral B2–C2 multilingüe — 11 de noviembre de 2026
 
 Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
-`origin/main@95e9e9bb`. Estado: `EN_DESARROLLO`, sin integración ni despliegue.
+`origin/main@95e9e9bb`. Estado: `VALIDADO_PENDIENTE_DE_PR`, sin integración ni despliegue.
 El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
 recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
 nivel B2, C1 y C2 de inglés, francés, alemán, italiano, portugués, ruso, japonés
 y coreano: 480 casos y 24 rutas. El harness exige cuatro casos por cada una de
-cinco áreas, evidencia referenciada y claves variadas. Las rutas nuevas siguen
-con `noindex` y los hubs no las anuncian todavía.
+cinco áreas, evidencia referenciada y claves variadas. Las rutas ya se enlazan
+desde los niveles B2–C2 y se incluyen en el sitemap; se retiró el `noindex`
+temporal de preview.
 
 Pasaron el harness de los 480 casos, las 13 pruebas de sus reglas, el catálogo
-protegido, ESLint, TypeScript global y toda la batería `prebuild`; el guardián
-nuevo comprueba también las 24 rutas, metadatos e imágenes OG nativas. Se hizo
-muestreo editorial cruzado de B2 y C1–C2, con correcciones de registro,
-evidencia, feedback y originalidad. Se recorrieron en navegador inglés B2–C2,
-francés B2, alemán B2 y japonés B2; se comprobaron los catálogos B2 restantes,
-el foco entre etapas y el ancho móvil. Las ocho páginas B2 y muestras C1/C2
-sirven metadatos e imágenes sociales en la lengua correspondiente.
+protegido, ESLint, TypeScript global con 4 GB de heap y toda la batería `prebuild`.
+El guardián comprueba las 24 rutas, enlaces desde hubs, sitemap, metadatos e
+imágenes OG nativas. Tres informes enumeran y documentan la lectura completa de
+los 480 casos; se cruzaron independientemente otros 157 que habían sido revisados
+por su autor. Se corrigieron cronología, evidencia, registro, originalidad,
+traducción de cifras y promesas no respaldadas. Los nueve pares semejantes entre
+japonés/coreano C1 quedan registrados como riesgo de repetición para estudiantes
+multilingües; cada banco mantiene variedad interna. Se recorrieron en navegador
+inglés B2–C2, francés B2, alemán B2 y japonés B2, además del foco y ancho móvil.
 
 El primer build local con Webpack agotó el límite de 2 GB de Node. Un segundo
 intento con 4 GB se detuvo durante la optimización para preservar espacio en
-el portátil. Antes de publicar siguen pendientes un build completo, auditoría
-lingüística exhaustiva, integración en `main` y smoke del deployment. El fallo
+el portátil. La vista previa remota de Vercel compiló `82be95f0` y sirvió las
+24 rutas HTTP 200, pero precede las correcciones finales. Antes de publicar
+siguen pendientes un build remoto del commit final, PR, integración en `main`
+y smoke del deployment. El fallo
 previo de `check:reading-grammar-index` provenía de dos auxiliares existentes de
 inglés A1/A2; se distinguieron de las lecciones y se actualizó el índice, sin
 reducir los controles de temas. Contrato y estado:

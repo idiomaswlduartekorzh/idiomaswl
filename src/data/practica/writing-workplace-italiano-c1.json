@@ -205,112 +205,139 @@
     }
   },
   {
-    "id": "sondaggio-trentadue-risposte",
-    "title": "Il 96% di chi ha risposto",
-    "area": "Marketing × Ricerca",
-    "areaLabel": "Marketing · Ricerca",
-    "role": "Elena · Analisi clienti",
-    "teaser": "Un report di gradimento viene trasformato in un giudizio su tutti i partecipanti.",
-    "misunderstanding": "La percentuale deriva da 32 risposte volontarie su 800 presenze.",
+    "id": "attribuzione-vendite-campagna",
+    "title": "Trentadue ordini, ma da quale canale?",
+    "area": "Marketing × Analisi",
+    "areaLabel": "Marketing · Analisi",
+    "role": "Alessio · Analisi campagne",
+    "teaser": "Una presentazione attribuisce tutte le vendite a una campagna che compare solo nel percorso di acquisto.",
+    "misunderstanding": "La presenza di un annuncio nel percorso di 32 ordini viene presentata come prova che la campagna li abbia causati da sola.",
     "email": {
-      "from": "Paolo · Marketing",
-      "to": "Elena · Analisi clienti",
-      "sent": "Martedì, ore 11:05",
-      "subject": "Possiamo dire che tutti sono soddisfatti?",
-      "body": "Ciao Elena,\n\nnel sondaggio post evento vedo il 96% di giudizi positivi. Vorrei usare il dato nel comunicato e scrivere che quasi tutti gli 800 partecipanti sono rimasti soddisfatti. Il risultato mi sembra forte, ma non conosco il numero di risposte. Mi dici quale frase possiamo sostenere e quali limiti vanno resi visibili?\n\nGrazie, Paolo"
+      "from": "Giada · Partnership",
+      "to": "Alessio · Analisi campagne",
+      "sent": "Giovedì, ore 11:20",
+      "subject": "Risultato da condividere con il partner",
+      "body": "Ciao Alessio,\n\nnella bozza per il partner ho scritto che la campagna ha generato 32 vendite. Il report mostra proprio 32 ordini associati agli annunci, ma ho notato che alcuni clienti sono arrivati anche dalla nostra newsletter. Il partner vorrebbe citare il risultato domani. Possiamo attribuire tutti gli ordini alla campagna, oppure serve una formula più precisa? Vorrei correggere la slide senza cancellare il contributo che il report documenta.\n\nGiada"
     },
     "document": {
-      "title": "Esportazione del sondaggio",
-      "intro": "La quota positiva riguarda soltanto chi ha risposto.",
+      "title": "Nota metodologica e percorsi d’acquisto",
+      "intro": "L’associazione nel report non misura un effetto causale esclusivo.",
       "facts": [
         {
           "id": "ITC12F1",
-          "time": "Presenze",
-          "text": "All’evento hanno partecipato 800 persone."
+          "time": "Report",
+          "text": "Trentadue ordini sono associati alla campagna perché l’annuncio è stato mostrato almeno una volta nei sette giorni precedenti l’acquisto."
         },
         {
           "id": "ITC12F2",
-          "time": "Sondaggio",
-          "text": "Hanno risposto volontariamente 32 persone."
+          "time": "Percorsi",
+          "text": "Per nove di quei 32 ordini, l’ultimo accesso al sito prima dell’acquisto proveniva dalla newsletter."
         },
         {
           "id": "ITC12F3",
-          "time": "Risultato",
-          "text": "31 risposte su 32 erano positive; il valore arrotondato è 96,9%."
+          "time": "Metodo",
+          "text": "Lo stesso ordine può comparire in più canali del report; non è stato svolto un confronto con un gruppo non esposto agli annunci."
         },
         {
           "id": "ITC12F4",
-          "time": "Metodo",
-          "text": "Non è stato selezionato un campione rappresentativo e non si conosce l’opinione degli altri 768."
+          "time": "Bozza",
+          "text": "La slide dice «La campagna ha generato da sola 32 vendite»; non è ancora stata inviata al partner."
         },
         {
           "id": "ITC12F5",
-          "time": "Comunicato",
-          "text": "La bozza attribuisce il gradimento alla quasi totalità dei partecipanti."
+          "time": "Verifica",
+          "text": "Alessio può preparare entro domani l’elenco degli ordini unici e dei canali registrati in ciascun percorso."
         }
       ]
     },
     "questions": [
       {
-        "id": "sondaggio-trentadue-risposte-evidence",
+        "id": "attribuzione-vendite-campagna-evidence",
         "axis": "Evidence",
-        "prompt": "A chi si riferisce la quota positiva?",
+        "prompt": "Che cosa conta il numero 32 nel report?",
+        "evidenceIds": [
+          "ITC12F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trentadue clienti che hanno acquistato solo dopo un clic sull’annuncio.",
+            "feedback": "Il criterio è almeno una visualizzazione nei sette giorni precedenti, non un clic esclusivo."
+          },
+          {
+            "id": "b",
+            "text": "Ordini preceduti da almeno una visualizzazione dell’annuncio entro sette giorni.",
+            "feedback": "Il report associa così gli ordini alla campagna senza isolare la causa dell’acquisto."
+          },
+          {
+            "id": "c",
+            "text": "Trentadue acquisti prodotti dalla newsletter.",
+            "feedback": "La newsletter è l’ultimo accesso registrato per nove dei 32 ordini, non per tutti."
+          }
+        ]
+      },
+      {
+        "id": "attribuzione-vendite-campagna-scope",
+        "axis": "Scope",
+        "prompt": "Perché «generati da sola» supera i dati?",
         "evidenceIds": [
           "ITC12F2",
           "ITC12F3"
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "c",
         "options": [
           {
             "id": "a",
-            "text": "Alle 31 persone positive fra le 32 rispondenti.",
-            "feedback": "Il denominatore non è 800."
+            "text": "Perché nessuno degli ordini ha visto l’annuncio.",
+            "feedback": "Tutti e 32 soddisfano il criterio di esposizione del report."
           },
           {
             "id": "b",
-            "text": "A 775 partecipanti.",
-            "feedback": "Non sono stati intervistati."
+            "text": "Perché i nove ordini della newsletter vanno eliminati dal totale delle vendite.",
+            "feedback": "Sono vendite reali; il problema è attribuire loro una causa esclusiva."
           },
           {
             "id": "c",
-            "text": "A tutte le 800 persone presenti.",
-            "feedback": "La maggior parte non ha risposto."
+            "text": "Perché i canali si sovrappongono e manca un confronto che isoli l’effetto della campagna.",
+            "feedback": "Nove percorsi includono la newsletter e il report non stima acquisti aggiuntivi causati dagli annunci."
           }
         ]
       },
       {
-        "id": "sondaggio-trentadue-risposte-scope",
-        "axis": "Scope",
-        "prompt": "Quale inferenza non è giustificata?",
+        "id": "attribuzione-vendite-campagna-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Giada prima di parlare al partner?",
         "evidenceIds": [
-          "ITC12F1",
-          "ITC12F2",
-          "ITC12F4"
+          "ITC12F4",
+          "ITC12F5"
         ],
         "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Estendere le risposte volontarie a tutti i partecipanti.",
-            "feedback": "Manca un campione rappresentativo."
+            "text": "Una frase verificabile che riconosca l’associazione senza promettere causalità esclusiva.",
+            "feedback": "La slide è ancora modificabile e la verifica dei percorsi può precisarla."
           },
           {
             "id": "b",
-            "text": "Dire che esistono 32 risposte.",
-            "feedback": "Il dato è documentato."
+            "text": "Una giustificazione per nascondere gli ordini con accesso dalla newsletter.",
+            "feedback": "Giada segnala proprio quei percorsi per descrivere il dato con più accuratezza."
           },
           {
             "id": "c",
-            "text": "Calcolare la quota tra i rispondenti.",
-            "feedback": "Il calcolo è possibile."
+            "text": "Un motivo per dire che la campagna non ha avuto alcun ruolo.",
+            "feedback": "Il report documenta esposizione agli annunci, anche se non ne misura l’effetto isolato."
           }
         ]
       },
       {
-        "id": "sondaggio-trentadue-risposte-intent",
-        "axis": "Intent",
-        "prompt": "Che cosa serve a Paolo?",
+        "id": "attribuzione-vendite-campagna-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale sintesi è difendibile domani?",
         "evidenceIds": [
+          "ITC12F1",
+          "ITC12F2",
           "ITC12F3",
           "ITC12F5"
         ],
@@ -318,92 +345,62 @@
         "options": [
           {
             "id": "a",
-            "text": "Una garanzia che il prossimo evento andrà bene.",
-            "feedback": "Il sondaggio non prevede il futuro."
+            "text": "«Gli annunci hanno causato 32 acquisti che altrimenti non sarebbero avvenuti».",
+            "feedback": "Senza confronto con un gruppo non esposto non si conoscono gli acquisti aggiuntivi."
           },
           {
             "id": "b",
-            "text": "Una frase utilizzabile che mantenga il risultato senza allargarne il significato.",
-            "feedback": "Il comunicato può citare i rispondenti."
+            "text": "«Trentadue ordini hanno incluso un’esposizione agli annunci nel percorso di sette giorni; altri canali possono aver contribuito».",
+            "feedback": "Definisce il criterio del report e lascia aperta l’attribuzione causale."
           },
           {
             "id": "c",
-            "text": "L’eliminazione di ogni dato.",
-            "feedback": "Il risultato circoscritto è valido."
-          }
-        ]
-      },
-      {
-        "id": "sondaggio-trentadue-risposte-purpose",
-        "axis": "Purpose",
-        "prompt": "Quale formulazione è corretta?",
-        "evidenceIds": [
-          "ITC12F2",
-          "ITC12F3",
-          "ITC12F4"
-        ],
-        "correctOptionId": "b",
-        "options": [
-          {
-            "id": "a",
-            "text": "«Il 97% degli 800 partecipanti è soddisfatto».",
-            "feedback": "Confonderebbe rispondenti e presenze."
-          },
-          {
-            "id": "b",
-            "text": "«31 dei 32 rispondenti hanno espresso un giudizio positivo», con il limite del sondaggio.",
-            "feedback": "Numero e perimetro sono chiari."
-          },
-          {
-            "id": "c",
-            "text": "«Nessuno ha espresso critiche».",
-            "feedback": "Una risposta non era positiva."
+            "text": "«Solo nove ordini appartengono alla campagna».",
+            "feedback": "Nove è il sottoinsieme con ultimo accesso dalla newsletter, non il totale associato agli annunci."
           }
         ]
       }
     ],
     "task": {
-      "prompt": "Rispondi a Paolo con una frase per il comunicato e un limite metodologico comprensibile.",
+      "prompt": "Rispondi a Giada con una formulazione pronta per il partner. Distingui l’associazione osservata dall’effetto causale, riconosci l’esigenza commerciale e proponi una verifica concreta dei percorsi.",
       "wordGuide": "Circa 130–210 parole",
       "criteria": [
-        "Indicare il denominatore",
-        "Non generalizzare",
-        "Preservare un risultato vero",
-        "Suggerire la formula finale"
+        "Definire che cosa misura il report",
+        "Non rivendicare vendite causate esclusivamente",
+        "Riconoscere l’esigenza di una slide utilizzabile",
+        "Proporre verifica degli ordini unici e dei canali"
       ]
     },
     "model": {
-      "subject": "R: Possiamo dire che tutti sono soddisfatti?",
-      "body": "Ciao Paolo,\n\nil risultato è positivo, ma riguarda un gruppo molto più piccolo degli 800 partecipanti. Hanno risposto volontariamente 32 persone e 31 hanno espresso un giudizio positivo. Il valore arrotondato è quindi circa il 97% dei rispondenti, non il 97% di tutte le persone presenti. Non abbiamo informazioni sull’opinione degli altri 768 e il gruppo non è stato selezionato come campione rappresentativo.\n\nPer il comunicato proporrei: «Nel sondaggio inviato dopo l’evento, 31 dei 32 partecipanti che hanno risposto hanno valutato positivamente l’esperienza». Possiamo aggiungere che si tratta di risposte volontarie. È un dato interessante e preciso, senza trasformarlo in un giudizio sull’intera platea.\n\nToglierei invece la frase «quasi tutti gli 800 partecipanti sono soddisfatti». Se vogliamo una stima più ampia per la prossima edizione, possiamo progettare un sondaggio con più risposte e una raccolta meno selettiva. Per questa uscita preparo una nota metodologica di una riga da inviare insieme alla nuova frase.\n\nA presto, Elena",
+      "subject": "R: Risultato da condividere con il partner",
+      "body": "Ciao Giada,\n\nil numero 32 è reale, ma descrive gli ordini per i quali l’annuncio è stato mostrato almeno una volta nei sette giorni precedenti l’acquisto. Non misura 32 vendite causate esclusivamente dalla campagna. In nove di quei percorsi l’ultimo accesso è arrivato dalla newsletter, e il report può associare lo stesso ordine a più canali. Senza un confronto con clienti non esposti non sappiamo quanti acquisti aggiuntivi siano dovuti agli annunci.\n\nCapisco che il partner voglia un risultato concreto domani. Proporrei di sostituire la frase della slide con: «Trentadue ordini hanno incluso un’esposizione agli annunci nei sette giorni precedenti l’acquisto; il percorso può comprendere anche altri canali». È un dato utile e verificabile, senza assegnare alla campagna un merito esclusivo che non abbiamo misurato.\n\nOggi preparo l’elenco degli ordini unici e dei canali registrati per ciascuno, così potrai rispondere se il partner chiede come si compone il totale. Possiamo discutere separatamente un metodo per stimare l’effetto incrementale in una campagna futura. Per questa presentazione correggerei anche il titolo del grafico, affinché la slide non ripeta l’attribuzione troppo forte.\n\nAlessio",
       "annotations": [
         {
-          "label": "Conta risposte",
-          "excerpt": "32 persone e 31",
+          "label": "Definisce la misura",
+          "excerpt": "l’annuncio è stato mostrato almeno una volta nei sette giorni precedenti l’acquisto",
           "evidenceIds": [
-            "ITC12F2",
-            "ITC12F3"
+            "ITC12F1"
           ]
         },
         {
-          "label": "Segna limite",
-          "excerpt": "non il 97% di tutte le persone presenti",
-          "evidenceIds": [
-            "ITC12F1",
-            "ITC12F4"
-          ]
-        },
-        {
-          "label": "Propone frase",
-          "excerpt": "31 dei 32 partecipanti che hanno risposto",
+          "label": "Delimita la causalità",
+          "excerpt": "Senza un confronto con clienti non esposti non sappiamo quanti acquisti aggiuntivi siano dovuti agli annunci",
           "evidenceIds": [
             "ITC12F3"
           ]
         },
         {
-          "label": "Indica metodo futuro",
-          "excerpt": "una raccolta meno selettiva",
+          "label": "Riconosce l’esigenza",
+          "excerpt": "Capisco che il partner voglia un risultato concreto domani",
           "evidenceIds": [
             "ITC12F4"
+          ]
+        },
+        {
+          "label": "Indica la verifica",
+          "excerpt": "preparo l’elenco degli ordini unici e dei canali registrati per ciascuno",
+          "evidenceIds": [
+            "ITC12F5"
           ]
         }
       ]
@@ -783,11 +780,11 @@
     },
     "model": {
       "subject": "R: Ha violato l’embargo?",
-      "body": "Ciao Chiara,\n\nho verificato l’invio: al creator è arrivata una bozza che autorizzava la pubblicazione dalle 09, non il brief interno definitivo con le 12. Il post è uscito alle 09:02 e non contiene prezzo o dettagli tecnici riservati. Non abbiamo quindi una base solida per accusarlo di aver violato l’orario che conosciamo noi; la discrepanza nasce dal nostro allegato.\n\nGli scriverei in modo collaborativo: «Abbiamo riscontrato una differenza tra la versione del brief inviata a te e il programma finale. Grazie per l’anteprima; il lancio ufficiale è alle 12. Ti va di aggiungere allora il link e la dicitura concordata al post?» Se il team ritiene necessaria la rimozione, possiamo chiederla, ma come favore motivato dalla nostra correzione, non come contestazione.\n\nPer il resto della campagna blocco gli invii finché non abbiamo confrontato tutti gli allegati con la versione finale. Ti mando anche un elenco dei destinatari che potrebbero aver ricevuto la bozza, così evitiamo messaggi incoerenti nelle prossime ore.\n\nA presto, Davide",
+      "body": "Ciao Chiara,\n\nho verificato l’invio: al creator è arrivata una bozza che indicava la pubblicazione dalle 09, non il brief interno definitivo con le 12. Il post è uscito alle 09:02 e non contiene prezzo o dettagli tecnici riservati. Non abbiamo quindi una base solida per accusarlo di aver violato l’orario che conosciamo noi; la discrepanza nasce dal nostro allegato.\n\nGli scriverei in modo collaborativo: «Abbiamo riscontrato una differenza tra la versione del brief inviata a te e il programma finale. Grazie per l’anteprima; il lancio ufficiale è alle 12. Ti va di aggiungere allora il link e la dicitura concordata al post?» Se il team ritiene necessaria la rimozione, possiamo chiederla, ma come favore motivato dalla nostra correzione, non come contestazione.\n\nPer il resto della campagna blocco gli invii finché non abbiamo confrontato tutti gli allegati con la versione finale. Ti mando anche un elenco dei destinatari che potrebbero aver ricevuto la bozza, così evitiamo messaggi incoerenti nelle prossime ore.\n\nA presto, Davide",
       "annotations": [
         {
           "label": "Verifica invio",
-          "excerpt": "una bozza che autorizzava la pubblicazione dalle 09",
+          "excerpt": "una bozza che indicava la pubblicazione dalle 09",
           "evidenceIds": [
             "ITC14F2"
           ]
@@ -1031,7 +1028,7 @@
     "areaLabel": "Software · Dati",
     "role": "Lucia · Integrazioni",
     "teaser": "Un portale segnala come tardive pratiche inviate entro la scadenza locale.",
-    "misunderstanding": "L’importazione interpreta un orario UTC come ora italiana e sposta la data visualizzata.",
+    "misunderstanding": "L’importazione applica due volte la conversione da UTC a ora italiana e sposta la data visualizzata.",
     "email": {
       "from": "Andrea · Operazioni",
       "to": "Lucia · Integrazioni",
@@ -1056,7 +1053,7 @@
         {
           "id": "ITC16F3",
           "time": "Importazione",
-          "text": "La dashboard tratta il timestamp UTC come se fosse già ora italiana e aggiunge un’ulteriore conversione."
+          "text": "La dashboard applica due volte la conversione da UTC a ora italiana ai timestamp archiviati."
         },
         {
           "id": "ITC16F4",
@@ -1194,7 +1191,7 @@
     },
     "model": {
       "subject": "R: Dobbiamo applicare le penali?",
-      "body": "Ciao Andrea,\n\nper le tre pratiche indicate, le ricevute attestano invii effettuati venerdì alle 23:10, 23:22 e 23:40, ora italiana. La scadenza è alle 23:59 dello stesso giorno e la regola attribuisce valore alla ricevuta. Su questi dati, non c’è una base per applicare le penali. Ti chiedo quindi di sospendere subito i tre addebiti, che non sono ancora stati comunicati.\n\nLa dashboard mostra il sabato perché, durante l’importazione, tratta un timestamp UTC come ora italiana e applica una seconda conversione. Il dato originario conserva il fuso; l’errore riguarda la visualizzazione e il calcolo derivato. Correggeremo la trasformazione e confronteremo nuovamente i tre record con le ricevute prima di riaprire il flusso amministrativo.\n\nNon estenderei automaticamente questa conclusione a tutte le pratiche: verificheremo il periodo interessato e segnaleremo eventuali altri casi vicini alla mezzanotte. Per i tre clienti possiamo dire che le ricevute sono state riconosciute e che la segnalazione di ritardo era dovuta a un errore del portale. Ti mando oggi il controllo documentato.\n\nA presto, Lucia",
+      "body": "Ciao Andrea,\n\nper le tre pratiche indicate, le ricevute attestano invii effettuati venerdì alle 23:10, 23:22 e 23:40, ora italiana. La scadenza è alle 23:59 dello stesso giorno e la regola attribuisce valore alla ricevuta. Su questi dati, non c’è una base per applicare le penali. Ti chiedo quindi di sospendere subito i tre addebiti, che non sono ancora stati comunicati.\n\nLa dashboard mostra il sabato perché, durante l’importazione, applica due volte la conversione da UTC a ora italiana. Il dato originario conserva il fuso; l’errore riguarda la visualizzazione e il calcolo derivato. Correggeremo la trasformazione e confronteremo nuovamente i tre record con le ricevute prima di riaprire il flusso amministrativo.\n\nNon estenderei automaticamente questa conclusione a tutte le pratiche: verificheremo il periodo interessato e segnaleremo eventuali altri casi vicini alla mezzanotte. Per i tre clienti possiamo dire che le ricevute sono state riconosciute e che la segnalazione di ritardo era dovuta a un errore del portale. Ti mando oggi il controllo documentato.\n\nA presto, Lucia",
       "annotations": [
         {
           "label": "Usa ricevute",
@@ -1212,7 +1209,7 @@
         },
         {
           "label": "Spiega fuso",
-          "excerpt": "applica una seconda conversione",
+          "excerpt": "applica due volte la conversione da UTC a ora italiana",
           "evidenceIds": [
             "ITC16F3"
           ]
@@ -1228,113 +1225,138 @@
     }
   },
   {
-    "id": "funzione-attiva-solo-per-pilota",
-    "title": "Il nuovo pannello esiste, ma non per tutti",
-    "area": "Software × Rilasci",
-    "areaLabel": "Software · Rilasci",
-    "role": "Riccardo · Prodotto",
-    "teaser": "Il commerciale annuncia una nuova funzione a tutti i clienti dopo averla vista in demo.",
-    "misunderstanding": "La funzione è attiva solo per dodici account pilota e non ha ancora una data generale.",
+    "id": "test-pannello-tastiera",
+    "title": "Test superati, percorso da tastiera aperto",
+    "area": "Software × Qualità",
+    "areaLabel": "Software · Qualità",
+    "role": "Riccardo · Qualità prodotto",
+    "teaser": "La demo funziona con il mouse, ma il filtro principale non è utilizzabile da tastiera.",
+    "misunderstanding": "«Test completati» viene letto come copertura di tutti i modi d’uso del pannello, benché il percorso da tastiera abbia un difetto aperto.",
     "email": {
-      "from": "Arianna · Vendite",
-      "to": "Riccardo · Prodotto",
+      "from": "Arianna · Relazione clienti",
+      "to": "Riccardo · Qualità prodotto",
       "sent": "Martedì, ore 09:50",
-      "subject": "Quando la vedranno tutti i clienti?",
-      "body": "Ciao Riccardo,\n\nho mostrato il nuovo pannello a un cliente e gli ho detto che sarebbe disponibile dalla prossima settimana. Ora mi chiede una data per tutto il gruppo. Nel mio account funziona, quindi credevo fosse pronto. Puoi dirmi quale disponibilità è confermata e come correggere la mia indicazione senza perdere fiducia?\n\nGrazie, Arianna"
+      "subject": "Demo del pannello per il cliente",
+      "body": "Ciao Riccardo,\n\nho detto al cliente che il pannello ha superato i test. Nella demo con il mouse non ho visto problemi, ma lui usa la tastiera per scegliere il periodo e mi ha scritto che non riesce a raggiungere il filtro delle date. Abbiamo una sessione con il suo gruppo la prossima settimana. Puoi chiarire quali prove sono state superate, che cosa resta aperto e quale alternativa concreta possiamo offrirgli nel frattempo?\n\nGrazie, Arianna"
     },
     "document": {
-      "title": "Piano di rilascio",
-      "intro": "Demo, pilota e disponibilità generale hanno stati distinti.",
+      "title": "Risultati delle prove del pannello",
+      "intro": "Le verifiche coprono percorsi diversi e non hanno tutte lo stesso esito.",
       "facts": [
         {
           "id": "ITC17F1",
-          "time": "Ambiente demo",
-          "text": "Il pannello è visibile nei profili interni e nei dodici account del pilota."
+          "time": "Prove automatiche",
+          "text": "Diciotto test di visualizzazione dei dati sono passati nel browser con interazione tramite mouse."
         },
         {
           "id": "ITC17F2",
-          "time": "Pilota",
-          "text": "I dodici clienti hanno accettato un test limitato fino a fine mese."
+          "time": "Prova manuale",
+          "text": "Nel filtro delle date, il focus da tastiera salta il pulsante di conferma; la selezione non può essere completata senza mouse."
         },
         {
           "id": "ITC17F3",
-          "time": "Verifica",
-          "text": "Due problemi di esportazione sono ancora aperti; il rilascio generale dipende dalla loro soluzione."
+          "time": "Copertura",
+          "text": "La verifica con lettore di schermo non è ancora stata eseguita; non esiste un risultato su quel percorso."
         },
         {
           "id": "ITC17F4",
-          "time": "Calendario",
-          "text": "Non è stata approvata una data di disponibilità per tutti gli account."
+          "time": "Cliente",
+          "text": "Il cliente usa la tastiera per scegliere il periodo e ha una sessione con il gruppo la prossima settimana."
         },
         {
           "id": "ITC17F5",
-          "time": "Cliente",
-          "text": "Il gruppo di Arianna non è tra i dodici account pilota."
+          "time": "Alternativa",
+          "text": "L’esportazione CSV del periodo richiesto funziona nel percorso già verificato; il team può preparare il file con il cliente. Non è stata confermata una data di correzione del filtro."
         }
       ]
     },
     "questions": [
       {
-        "id": "funzione-attiva-solo-per-pilota-evidence",
+        "id": "test-pannello-tastiera-evidence",
         "axis": "Evidence",
-        "prompt": "Per chi è disponibile ora il pannello?",
+        "prompt": "Che cosa attestano i diciotto test superati?",
         "evidenceIds": [
-          "ITC17F1",
-          "ITC17F2",
-          "ITC17F5"
+          "ITC17F1"
         ],
         "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Per profili interni e dodici account pilota.",
-            "feedback": "Il cliente di Arianna è fuori dal gruppo."
+            "text": "La visualizzazione dei dati nel percorso provato con il mouse.",
+            "feedback": "L’esito riguarda quelle prove automatiche, non ogni modalità di interazione."
           },
           {
             "id": "b",
-            "text": "Per tutti i clienti dalla prossima settimana.",
-            "feedback": "La data non è approvata."
+            "text": "L’uso completo del filtro da tastiera.",
+            "feedback": "La prova manuale ha trovato un blocco nel pulsante di conferma."
           },
           {
             "id": "c",
-            "text": "Per nessun utente.",
-            "feedback": "Il pilota è attivo."
+            "text": "La compatibilità con il lettore di schermo.",
+            "feedback": "Quel percorso non è ancora stato verificato."
           }
         ]
       },
       {
-        "id": "funzione-attiva-solo-per-pilota-scope",
+        "id": "test-pannello-tastiera-scope",
         "axis": "Scope",
-        "prompt": "Perché la demo non prova il rilascio generale?",
+        "prompt": "Quale limite va spiegato al cliente?",
+        "evidenceIds": [
+          "ITC17F2",
+          "ITC17F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La scelta del periodo da tastiera si blocca e l’esito con lettore di schermo resta sconosciuto.",
+            "feedback": "Distingue il difetto osservato dalla prova ancora mancante."
+          },
+          {
+            "id": "b",
+            "text": "Il lettore di schermo è sicuramente incompatibile.",
+            "feedback": "La verifica non è stata eseguita, quindi non c’è un esito da comunicare."
+          },
+          {
+            "id": "c",
+            "text": "Il pannello non mostra alcun dato.",
+            "feedback": "Le prove di visualizzazione sono passate; il problema documentato riguarda il filtro da tastiera."
+          }
+        ]
+      },
+      {
+        "id": "test-pannello-tastiera-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve riparare Arianna nella comunicazione?",
         "evidenceIds": [
           "ITC17F1",
-          "ITC17F3",
           "ITC17F4"
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "b",
         "options": [
           {
             "id": "a",
-            "text": "L’accesso interno è separato dai criteri di uscita del pilota.",
-            "feedback": "Restano problemi e una decisione di calendario."
+            "text": "La data della sessione, già annullata.",
+            "feedback": "La sessione è prevista per la prossima settimana e non risulta annullata."
           },
           {
             "id": "b",
-            "text": "Perché il pannello non esiste.",
-            "feedback": "È visibile nel pilota."
+            "text": "L’impressione che «test superati» coprisse anche il modo d’uso del cliente.",
+            "feedback": "Il cliente dipende dalla tastiera, mentre i test superati usavano il mouse."
           },
           {
             "id": "c",
-            "text": "Perché i dodici clienti hanno rifiutato il test.",
-            "feedback": "L’hanno accettato."
+            "text": "Il numero dei test, che in realtà non sono mai stati eseguiti.",
+            "feedback": "Diciotto prove sono state eseguite e superate nel percorso indicato."
           }
         ]
       },
       {
-        "id": "funzione-attiva-solo-per-pilota-intent",
-        "axis": "Intent",
-        "prompt": "Che cosa deve riparare Arianna?",
+        "id": "test-pannello-tastiera-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale proposta è sostenibile per la prossima sessione?",
         "evidenceIds": [
+          "ITC17F2",
           "ITC17F4",
           "ITC17F5"
         ],
@@ -1342,90 +1364,60 @@
         "options": [
           {
             "id": "a",
-            "text": "Il codice dell’esportazione.",
-            "feedback": "È compito del prodotto."
+            "text": "Promettere il filtro corretto entro la sessione.",
+            "feedback": "Non è stata approvata una data di correzione."
           },
           {
             "id": "b",
-            "text": "L’adesione di tutti al pilota.",
-            "feedback": "Il gruppo non ne fa parte."
+            "text": "Chiedere al cliente di usare il mouse senza menzionare il blocco.",
+            "feedback": "Il suo modo d’uso è noto e il difetto va riconosciuto."
           },
           {
             "id": "c",
-            "text": "L’aspettativa creata nel cliente con una data non confermata.",
-            "feedback": "Una rettifica tempestiva è più affidabile del silenzio."
-          }
-        ]
-      },
-      {
-        "id": "funzione-attiva-solo-per-pilota-purpose",
-        "axis": "Purpose",
-        "prompt": "Quale messaggio è difendibile?",
-        "evidenceIds": [
-          "ITC17F2",
-          "ITC17F3",
-          "ITC17F4",
-          "ITC17F5"
-        ],
-        "correctOptionId": "b",
-        "options": [
-          {
-            "id": "a",
-            "text": "Confermare comunque la prossima settimana.",
-            "feedback": "Manca una data approvata."
-          },
-          {
-            "id": "b",
-            "text": "Riconoscere l’errore sulla data, descrivere il pilota e promettere un aggiornamento, non una disponibilità.",
-            "feedback": "Distingue stato e previsione."
-          },
-          {
-            "id": "c",
-            "text": "Dire che la funzione è stata cancellata.",
-            "feedback": "Il pilota continua."
+            "text": "Spiegare il limite, preparare il CSV del periodo e aggiornare il cliente dopo la verifica della correzione.",
+            "feedback": "L’esportazione è disponibile come alternativa, senza inventare una data di ripristino."
           }
         ]
       }
     ],
     "task": {
-      "prompt": "Rispondi ad Arianna con una rettifica pronta per il cliente e un criterio per il prossimo aggiornamento.",
+      "prompt": "Rispondi ad Arianna con un chiarimento pronto per il cliente. Delimita le prove superate, riconosci il problema d’uso del cliente, proponi una soluzione per la sessione e calibra l’impegno sulla correzione.",
       "wordGuide": "Circa 130–210 parole",
       "criteria": [
-        "Delimitare il pilota",
-        "Riconoscere la data errata",
-        "Non inventare il rilascio",
-        "Indicare quando aggiornare"
+        "Delimitare i test superati al percorso con mouse",
+        "Riconoscere il difetto da tastiera e la verifica non svolta",
+        "Offrire il CSV del periodo come alternativa",
+        "Non promettere una data di correzione"
       ]
     },
     "model": {
-      "subject": "R: Quando la vedranno tutti i clienti?",
-      "body": "Ciao Arianna,\n\nil pannello che hai visto è attivo nei profili interni e in dodici account pilota. Il gruppo del tuo cliente non fa parte di quel test. Due problemi di esportazione sono ancora aperti e non abbiamo approvato una data di disponibilità generale. Per questo non possiamo confermare la prossima settimana come avevi indicato.\n\nTi suggerisco di correggere la comunicazione oggi: «Ho anticipato una data che non era stata confermata, e mi scuso per la confusione. La funzione è attualmente in un pilota limitato; la disponibilità per il vostro gruppo sarà comunicata dopo la verifica dei problemi ancora aperti». Possiamo aggiungere che ti aggiornerò alla fine del periodo di test, anche se la decisione sul rilascio non fosse ancora presa.\n\nNon proporrei l’ingresso immediato del cliente nel pilota per rimediare alla promessa: il gruppo dei partecipanti e le condizioni del test sono già definiti. Ti mando una scheda con le funzioni effettivamente disponibili nel suo account, così può valutare ciò che può usare oggi. Ti avviserò appena avremo una decisione approvata.\n\nA presto, Riccardo",
+      "subject": "R: Demo del pannello per il cliente",
+      "body": "Ciao Arianna,\n\ni diciotto test superati riguardano la visualizzazione dei dati nel percorso provato con il mouse. Non certificano ogni modalità d’uso del pannello. La prova manuale ha individuato un blocco nel filtro delle date: usando la tastiera, il focus salta il pulsante di conferma. Non abbiamo ancora eseguito la verifica con lettore di schermo, quindi non attribuirei nemmeno a quel percorso un esito positivo o negativo.\n\nIl cliente ha ragione a segnalarlo, soprattutto perché la scelta del periodo gli serve nella sessione della prossima settimana. Gli direi: «Abbiamo descritto i test in modo troppo ampio. La visualizzazione dei dati è stata verificata, ma il filtro delle date presenta un problema per chi usa la tastiera. Ci scusiamo. Per la prossima sessione possiamo preparare insieme un’esportazione CSV del periodo che desiderate, mentre lavoriamo alla correzione del filtro».\n\nTi aiuto a concordare il periodo e a verificare il file prima della riunione. Aprirò una verifica specifica sul percorso da tastiera e su quello con lettore di schermo; ti aggiornerò quando avremo risultati e un piano confermato. Per ora eviterei di promettere una data di correzione.\n\nRiccardo",
       "annotations": [
         {
-          "label": "Delimita accesso",
-          "excerpt": "dodici account pilota",
+          "label": "Delimita la prova",
+          "excerpt": "i diciotto test superati riguardano la visualizzazione dei dati nel percorso provato con il mouse",
           "evidenceIds": [
-            "ITC17F1",
-            "ITC17F2"
+            "ITC17F1"
           ]
         },
         {
-          "label": "Segna dipendenza",
-          "excerpt": "Due problemi di esportazione sono ancora aperti",
+          "label": "Distingue esiti",
+          "excerpt": "Non abbiamo ancora eseguito la verifica con lettore di schermo",
           "evidenceIds": [
             "ITC17F3"
           ]
         },
         {
-          "label": "Corregge promessa",
-          "excerpt": "Ho anticipato una data che non era stata confermata",
+          "label": "Riconosce l’uso reale",
+          "excerpt": "la scelta del periodo gli serve nella sessione della prossima settimana",
           "evidenceIds": [
             "ITC17F4"
           ]
         },
         {
-          "label": "Offre valore attuale",
-          "excerpt": "funzioni effettivamente disponibili nel suo account",
+          "label": "Offre un’alternativa",
+          "excerpt": "possiamo preparare insieme un’esportazione CSV del periodo che desiderate",
           "evidenceIds": [
             "ITC17F5"
           ]

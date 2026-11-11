@@ -284,7 +284,7 @@
           {
             "id": "a",
             "text": "Dire que la version finale a été publiée.",
-            "feedback": "Le dossier ne prouve aucune intention de contourner la procédure."
+            "feedback": "La publication de la version finale est attestée ; ce n’est pas une affirmation prématurée."
           },
           {
             "id": "b",
@@ -294,7 +294,7 @@
           {
             "id": "c",
             "text": "Dire que la validation écrite manque au dossier.",
-            "feedback": "La publication de la version finale est bien attestée."
+            "feedback": "Le dossier ne contient aucun accord écrit pour la promesse chiffrée."
           }
         ]
       },
@@ -685,12 +685,12 @@
           {
             "id": "a",
             "text": "L’examen du formulaire par la sécurité.",
-            "feedback": "Le portail officiel figure bien dans la procédure."
+            "feedback": "L’équipe sécurité examine effectivement le formulaire ; ce statut peut être communiqué."
           },
           {
             "id": "b",
             "text": "L’existence du portail officiel.",
-            "feedback": "Le remboursement intégral provient du compte non répertorié."
+            "feedback": "Le portail officiel figure bien dans la procédure de remboursement."
           },
           {
             "id": "c",
@@ -1747,7 +1747,7 @@
           },
           {
             "id": "c",
-            "text": "Dire que le filtre a été bloqué et que les thèmes seront partagés sous forme agrégée.",
+            "text": "Dire que la vue filtrée ne sera pas diffusée et que les thèmes seront partagés sous forme agrégée.",
             "feedback": "La promesse et la règle imposent une limite concrète."
           }
         ]
@@ -3400,7 +3400,7 @@
       "to": "Farid · logistique",
       "sent": "Jeudi, 8 h 20",
       "subject": "Explication du retard client",
-      "body": "Bonjour Farid,\n\nLe transporteur nous demande de dire au client que la livraison tardive était entièrement due aux orages. Je vois pourtant que le camion a quitté notre quai plus tard que prévu. Le client attend une explication et un nouveau créneau fiable. Peux-tu proposer une réponse qui ne rejette pas tout sur le transporteur, sans attribuer arbitrairement une part du retard à chacun ?\n\nLéon"
+      "body": "Bonjour Farid,\n\nLe transporteur nous demande de dire au client que la livraison tardive était entièrement due aux orages. Je vois pourtant que le camion a quitté notre quai plus tard que prévu. Le client attend une explication et veut un créneau fiable pour sa prochaine livraison. Peux-tu proposer une réponse qui ne rejette pas tout sur le transporteur, sans attribuer arbitrairement une part du retard à chacun ?\n\nLéon"
     },
     "document": {
       "title": "Chronologie de chargement et de trajet",
@@ -3592,139 +3592,142 @@
     }
   },
   {
-    "id": "certificat-autre-machine",
-    "title": "Le certificat du mauvais numéro",
-    "area": "Operations × maintenance",
-    "areaLabel": "Opérations · maintenance",
-    "role": "Chloé · responsable maintenance",
-    "teaser": "Un certificat valide est joint à un équipement dont le numéro de série diffère.",
-    "misunderstanding": "Un certificat actuel pour le même modèle est présenté comme preuve d’inspection de l’appareil installé.",
+    "id": "controle-par-echantillon",
+    "title": "« Contrôlé » ne signifie pas « testé un par un »",
+    "area": "Operations × contrôle qualité",
+    "areaLabel": "Opérations · contrôle qualité",
+    "role": "Chloé · qualité fournisseurs",
+    "teaser": "Le client demande les relevés de chaque pièce après une assurance trop large de l’équipe commerciale.",
+    "misunderstanding": "Le lot a satisfait au plan d’échantillonnage convenu, mais seules vingt pièces ont été testées individuellement.",
     "email": {
-      "from": "Thomas · directeur de site",
-      "to": "Chloé · maintenance",
-      "sent": "Vendredi, 9 h 05",
-      "subject": "Certificat demandé par le client",
-      "body": "Bonjour Chloé,\n\nLe client demande la preuve que la machine installée sur son site a passé son contrôle. J’ai un certificat récent pour le même modèle, mais le numéro de série ne correspond pas. Il se peut qu’il s’agisse d’une simple erreur de classement. Peux-tu me dire ce que nous pouvons lui envoyer aujourd’hui et comment vérifier la situation sans déclarer la machine non conforme avant examen ?\n\nThomas"
+      "from": "Thomas · relation client",
+      "to": "Chloé · qualité fournisseurs",
+      "sent": "Jeudi, 10 h 15",
+      "subject": "Contrôle du lot : pouvons-nous envoyer les 240 relevés ?",
+      "body": "Bonjour Chloé,\n\nLe client demande les relevés de contrôle de chacune des 240 pièces avant notre expédition prévue demain. Je lui ai écrit hier qu’elles avaient été « contrôlées une par une », car le suivi affichait « contrôle terminé ». Le rapport que je viens d’ouvrir ne contient pourtant que vingt résultats. Peut-on maintenir que le lot a passé le contrôle sans donner l’impression de cacher les autres pièces ? Il me faut une correction aujourd’hui et une position sur le départ de demain.\n\nThomas"
     },
     "document": {
-      "title": "Registre des machines et contrôles",
-      "intro": "Les documents doivent être rapprochés par numéro de série, pas seulement par modèle.",
+      "title": "Plan de contrôle et suivi du lot",
+      "intro": "La libération du lot repose sur un échantillon, non sur un test individuel de chaque pièce.",
       "facts": [
         {
           "id": "FRC219F1",
-          "time": "Registre",
-          "text": "La machine installée porte le numéro de série 7318."
+          "time": "Plan convenu",
+          "text": "Le plan qualité signé pour ce lot de 240 pièces prévoit un prélèvement de 20 pièces au hasard et un test de résistance sur chacune. Il permet la libération du lot si les 20 résultats sont conformes."
         },
         {
           "id": "FRC219F2",
-          "time": "Certificat",
-          "text": "Le certificat joint, encore valide, porte le numéro de série 7138."
+          "time": "Mercredi",
+          "text": "Les 20 pièces prélevées ont passé le test. Le suivi a affiché « contrôle terminé » et le lot a été libéré selon le plan convenu."
         },
         {
           "id": "FRC219F3",
-          "time": "Actuel",
-          "text": "Le registre central ne contient pas de certificat retrouvé pour 7318."
+          "time": "Mercredi",
+          "text": "Thomas a écrit au client que les 240 pièces avaient été « contrôlées une par une » en s’appuyant sur ce statut."
         },
         {
           "id": "FRC219F4",
-          "time": "Actuel",
-          "text": "La recherche dans les archives du prestataire de contrôle est en cours."
+          "time": "Jeudi",
+          "text": "Aucun test individuel ni relevé de résistance n’existe pour les 220 autres pièces. Aucun défaut de ces pièces n’est non plus constaté dans ce dossier."
         },
         {
           "id": "FRC219F5",
-          "time": "Procédure",
-          "text": "La preuve de contrôle doit identifier l’appareil installé ; une absence de pièce retrouvée n’établit pas à elle seule qu’aucun contrôle n’a eu lieu."
+          "time": "À ce jour",
+          "text": "L’expédition est prévue vendredi, mais le transporteur n’a pas encore collecté le lot. La qualité peut fournir le rapport de l’échantillon ; aucun contrôle unitaire supplémentaire ni délai associé n’a été convenu avec le client."
         }
       ]
     },
     "questions": [
       {
-        "id": "certificat-autre-machine-evidence",
+        "id": "controle-par-echantillon-evidence",
         "axis": "Evidence",
-        "prompt": "Que démontre le certificat joint ?",
+        "prompt": "Quel résultat est documenté ?",
         "evidenceIds": [
           "FRC219F1",
-          "FRC219F2"
+          "FRC219F2",
+          "FRC219F4"
         ],
         "correctOptionId": "c",
         "options": [
           {
             "id": "a",
-            "text": "Le contrôle de la machine installée.",
-            "feedback": "Le numéro de série du certificat est 7138, non 7318."
+            "text": "Les 240 pièces ont chacune réussi un test de résistance.",
+            "feedback": "Seules les 20 pièces prélevées ont un résultat individuel ; les 220 autres n’ont pas été testées une par une."
           },
           {
             "id": "b",
-            "text": "L’absence de contrôle de toutes les machines du modèle.",
-            "feedback": "Le dossier ne conclut rien pour toutes les machines du modèle."
+            "text": "Aucun contrôle du lot n’a été effectué.",
+            "feedback": "Vingt pièces ont été testées et ont satisfait au plan de contrôle signé."
           },
           {
             "id": "c",
-            "text": "Le contrôle de 7138, pas celui de 7318.",
-            "feedback": "Le numéro de série ne correspond pas."
+            "text": "Les 20 pièces prélevées ont réussi le test prévu par le plan.",
+            "feedback": "Ce résultat permet la libération du lot selon le plan, sans prouver un test de chaque pièce."
           }
         ]
       },
       {
-        "id": "certificat-autre-machine-scope",
+        "id": "controle-par-echantillon-scope",
         "axis": "Scope",
-        "prompt": "Que signifie l’absence de pièce dans le registre ?",
+        "prompt": "Quelle portée donner au statut « contrôle terminé » ?",
         "evidenceIds": [
-          "FRC219F3",
-          "FRC219F5"
+          "FRC219F1",
+          "FRC219F2",
+          "FRC219F4"
         ],
         "correctOptionId": "b",
         "options": [
           {
             "id": "a",
-            "text": "Le certificat de 7138 s’applique automatiquement.",
-            "feedback": "Un même modèle n’efface pas la différence de numéros."
+            "text": "Il garantit que chaque pièce a été testée et qu’aucun défaut n’existe.",
+            "feedback": "Le statut clôt le contrôle par échantillon ; il ne décrit ni un test unitaire ni l’état de chaque pièce non prélevée."
           },
           {
             "id": "b",
-            "text": "La preuve n’est pas disponible dans ce registre ; l’historique reste à vérifier.",
-            "feedback": "La recherche documentaire n’est pas une conclusion technique."
+            "text": "Il confirme l’achèvement du contrôle par échantillon prévu au contrat.",
+            "feedback": "Le lot a été libéré selon ce plan, dont la portée doit être nommée au client."
           },
           {
             "id": "c",
-            "text": "La machine est certainement non conforme.",
-            "feedback": "L’archive du prestataire peut encore contenir une preuve."
+            "text": "Il n’a aucune valeur puisque 220 pièces ne possèdent pas de relevé.",
+            "feedback": "Le plan signé prévoyait précisément vingt tests pour décider de la libération du lot."
           }
         ]
       },
       {
-        "id": "certificat-autre-machine-intent",
+        "id": "controle-par-echantillon-intent",
         "axis": "Intent",
-        "prompt": "Quel équilibre Thomas demande-t-il ?",
+        "prompt": "Que cherche Thomas au-delà d’une rectification de vocabulaire ?",
         "evidenceIds": [
-          "FRC219F2",
-          "FRC219F4"
+          "FRC219F3",
+          "FRC219F5"
         ],
         "correctOptionId": "a",
         "options": [
           {
             "id": "a",
-            "text": "Répondre au client sans maquiller le document ni préjuger le résultat de l’archive.",
-            "feedback": "Son courriel mentionne le décalage et la recherche."
+            "text": "Préserver la confiance du client et clarifier si la demande de relevés modifie l’expédition.",
+            "feedback": "Il doit corriger sa promesse sans inventer un contrôle supplémentaire ni un nouveau délai."
           },
           {
             "id": "b",
-            "text": "Cacher le numéro de série.",
-            "feedback": "Masquer le numéro empêcherait une vérification honnête."
+            "text": "Faire disparaître le rapport des vingt tests.",
+            "feedback": "Ce rapport est la preuve du contrôle convenu et peut être communiqué."
           },
           {
             "id": "c",
-            "text": "Utiliser n’importe quel certificat récent.",
-            "feedback": "Thomas relève justement le mauvais numéro."
+            "text": "Attribuer au client la responsabilité de la formule « une par une ».",
+            "feedback": "Cette formule vient du courriel de Thomas, pas du client."
           }
         ]
       },
       {
-        "id": "certificat-autre-machine-purpose",
+        "id": "controle-par-echantillon-purpose",
         "axis": "Purpose",
-        "prompt": "Quelle suite est appropriée ?",
+        "prompt": "Quelle réponse est défendable avant le départ prévu ?",
         "evidenceIds": [
           "FRC219F1",
+          "FRC219F3",
           "FRC219F4",
           "FRC219F5"
         ],
@@ -3732,64 +3735,65 @@
         "options": [
           {
             "id": "a",
-            "text": "Envoyer 7138 comme si c’était 7318.",
-            "feedback": "7138 n’identifie pas l’appareil du client."
+            "text": "Produire des relevés individuels pour les 220 pièces non testées.",
+            "feedback": "Aucun test individuel n’a eu lieu pour ces pièces ; créer des relevés serait trompeur."
           },
           {
             "id": "b",
-            "text": "Signaler le décalage, poursuivre la recherche ciblée et communiquer la preuve exacte ou les mesures décidées après vérification.",
-            "feedback": "La procédure exige l’identification de l’appareil."
+            "text": "Corriger la phrase, transmettre le rapport de l’échantillon et clarifier toute demande de contrôle supplémentaire.",
+            "feedback": "Le plan convenu reste valable, mais la nouvelle attente du client doit être traitée avant de promettre un contrôle ou un délai."
           },
           {
             "id": "c",
-            "text": "Déclarer immédiatement que le contrôle n’a jamais eu lieu.",
-            "feedback": "L’absence de pièce retrouvée ne prouve pas l’absence de contrôle."
+            "text": "Déclarer tout le lot défectueux et annuler l’expédition.",
+            "feedback": "Les vingt tests sont conformes et aucun défaut des autres pièces n’est constaté dans le dossier."
           }
         ]
       }
     ],
     "task": {
-      "prompt": "Répondez à Thomas avec un message au client. Expliquez l’écart de numéro, préservez l’incertitude sur l’historique et fixez la recherche de preuve et la suite éventuelle.",
+      "prompt": "Répondez à Thomas en distinguant le contrôle convenu de la promesse individuelle, puis proposez un message au client et une décision vérifiable sur l’expédition.",
       "wordGuide": "Environ 110–210 mots",
       "criteria": [
-        "Vérifier le numéro de série",
-        "Ne pas utiliser une pièce inadéquate",
-        "Éviter une conclusion prématurée",
-        "Définir un suivi documentaire"
+        "Délimiter les vingt résultats réellement obtenus",
+        "Reconnaître la phrase trop large sans dévaloriser le plan signé",
+        "Éviter de garantir l’état individuel des 240 pièces",
+        "Clarifier la demande du client avant tout nouveau contrôle ou délai"
       ]
     },
     "model": {
-      "subject": "Ré : Certificat demandé par le client",
-      "body": "Bonjour Thomas,\n\nJe n’enverrais pas le certificat actuel comme preuve du contrôle de la machine installée. Il concerne le numéro 7138, alors que l’appareil sur le site du client porte le numéro 7318. Notre registre central ne contient pas encore de certificat retrouvé pour 7318. Cela signifie que nous ne disposons pas aujourd’hui de la pièce attendue ; cela ne démontre pas, à lui seul, qu’aucun contrôle n’a eu lieu. La recherche auprès des archives du prestataire se poursuit.\n\nJe propose d’écrire au client : « Nous avons constaté que le certificat actuellement classé avec votre dossier porte un numéro de série différent de celui de l’appareil installé. Nous ne souhaitons pas vous transmettre une pièce qui ne prouve pas le contrôle de votre machine. Nous recherchons le document correspondant au numéro 7318 auprès de notre prestataire et vous communiquerons le résultat de cette vérification, ainsi que les mesures nécessaires si la preuve ne peut être établie. »\n\nJe demande aujourd’hui au prestataire une réponse écrite et je vérifierai également le registre local du site. Je te donnerai un point d’étape lundi matin, même si l’archive demande plus de temps.\n\nChloé",
+      "subject": "Ré : Contrôle du lot : pouvons-nous envoyer les 240 relevés ?",
+      "body": "Bonjour Thomas,\n\nLe lot a bien passé le contrôle prévu par le plan qualité signé : vingt pièces prélevées au hasard ont réussi le test de résistance, permettant sa libération. En revanche, le statut « contrôle terminé » ne signifie pas que les 240 pièces ont été testées une par une. Aucun relevé individuel n’existe pour les 220 autres. Nous ne pouvons ni fabriquer ces relevés ni conclure que les autres sont défectueuses.\n\nJe propose de corriger notre message : « Le lot a satisfait au plan de contrôle par échantillonnage convenu. Vingt pièces ont été testées et leurs résultats sont conformes ; nous vous transmettons ce rapport. Notre précédente formule, “contrôlées une par une”, était inexacte et nous vous prions de nous en excuser. Si vous demandez un contrôle de chaque pièce en plus du plan convenu, précisons ensemble sa portée et ses conséquences sur le calendrier avant de nous engager. »\n\nL’expédition est prévue vendredi et le transporteur n’a pas encore collecté le lot. J’envoie le rapport aujourd’hui ; demande au client si sa demande de relevés est une condition nouvelle pour le départ. Nous déciderons avec la qualité et la logistique s’il faut adapter le contrôle ou le calendrier, sans promettre que les deux resteront inchangés.\n\nChloé",
       "annotations": [
         {
-          "label": "Identifie l’écart",
-          "excerpt": "Il concerne le numéro 7138",
+          "label": "Résultat établi",
+          "excerpt": "vingt pièces prélevées au hasard ont réussi le test de résistance",
           "evidenceIds": [
             "FRC219F1",
             "FRC219F2"
           ]
         },
         {
-          "label": "Limite l’absence de pièce",
-          "excerpt": "cela ne démontre pas, à lui seul",
+          "label": "Limite du statut",
+          "excerpt": "ne signifie pas que les 240 pièces ont été testées une par une",
+          "evidenceIds": [
+            "FRC219F1",
+            "FRC219F4"
+          ]
+        },
+        {
+          "label": "Corrige la promesse",
+          "excerpt": "Notre précédente formule, “contrôlées une par une”, était inexacte",
           "evidenceIds": [
             "FRC219F3",
+            "FRC219F4"
+          ]
+        },
+        {
+          "label": "Décision à vérifier",
+          "excerpt": "le transporteur n’a pas encore collecté le lot",
+          "evidenceIds": [
             "FRC219F5"
-          ]
-        },
-        {
-          "label": "Cherche la preuve",
-          "excerpt": "auprès de notre prestataire",
-          "evidenceIds": [
-            "FRC219F4"
-          ]
-        },
-        {
-          "label": "Fixe le suivi",
-          "excerpt": "un point d’étape lundi matin",
-          "evidenceIds": [
-            "FRC219F4"
           ]
         }
       ]

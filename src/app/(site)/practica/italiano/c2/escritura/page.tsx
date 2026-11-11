@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     title,
     description,
   },
-  robots: { index: false, follow: false },
 }
 
 export default function Page() {

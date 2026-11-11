@@ -767,7 +767,7 @@
     },
     "model": {
       "subject": "Re: Which image did we approve?",
-      "body": "Hi Ruth,\n\nYou approved the headline and body copy yesterday, but the image was not part of that review. The new green-packaging photo was approved separately in the asset library. I left the scheduled post linked to the older blue-packaging file and did not check the final preview before it went live. That was my mistake, and I understand why Sales is concerned about showing a version customers cannot order.\n\nI can replace the image in the live post now, if the platform allows an edit, or take the post down and republish it with the approved photo. I'll check the available option with the social team and send you the corrected preview before we act. We do not yet know how many people saw the original, so I will also gather the post figures before we decide whether a separate clarification is needed.\n\nImani",
+      "body": "Hi Ruth,\n\nYou approved the headline and body copy yesterday, but the image was not part of that review. The new green-packaging photo was approved separately in the asset library. I left the scheduled post linked to the older blue-packaging file and did not check the final preview before it went live. That was my mistake, and I understand why Sales is concerned about showing a version customers cannot order.\n\nI'll contact the social team now to stop the current post from being shown, using the quickest option the platform allows. Then I'll prepare a version with the approved green photo and send you its final preview before it goes live. We do not yet know how many people saw the original, so I will also gather the post figures before we decide whether a separate clarification is needed.\n\nImani",
       "annotations": [
         {
           "label": "Defines approval",
@@ -792,8 +792,8 @@
           ]
         },
         {
-          "label": "Offers a proportionate action",
-          "excerpt": "send you the corrected preview",
+          "label": "Stops the live error",
+          "excerpt": "stop the current post from being shown",
           "evidenceIds": [
             "N4F2",
             "N4F4"
@@ -2932,7 +2932,7 @@
     },
     "model": {
       "subject": "Re: Interpreter for the 9am appointment",
-      "body": "Hi Samira,\n\nI sent the interpreter request yesterday, but the provider had not accepted it by the end of the day. There is no confirmed booking in the record. I wrote “interpreter requested” in the handover without making that distinction clear, and I am sorry the team was led to expect someone at 9.\n\nI am contacting the provider now to confirm whether an interpreter can still join and checking the approved backup language-access options. I will give you the verified status as soon as I have it; I cannot promise an arrival time yet. Please let the clinical team know that support is not confirmed so they can decide how to proceed with the appointment. I will not make that care decision from an administrative handover. I will also update the record to show the actual status rather than leave the request labelled as if it were a booking.\n\nAvery",
+      "body": "Hi Samira,\n\nI sent the interpreter request yesterday, but the provider had not accepted it by the end of the day. There is no confirmed booking in the record. I wrote “interpreter requested” in the handover without making that distinction clear, and I am sorry the team was led to expect someone at 9.\n\nI am contacting the provider now to confirm whether an interpreter can still join and checking whether an approved backup language-access option is available. I will give you the verified status as soon as I have it; I cannot promise an arrival time yet. Please let the clinical team know that support is not confirmed so they can decide how to proceed with the appointment. I will not make that care decision from an administrative handover. I will also update the record to show the actual status rather than leave the request labelled as if it were a booking.\n\nAvery",
       "annotations": [
         {
           "label": "States coverage",
@@ -3580,7 +3580,7 @@
         {
           "id": "N19F1",
           "time": "Mon 14:00",
-          "text": "Amina placed a provisional hold on Room B for Friday 10:00–12:00 while waiting for participant numbers."
+          "text": "Amina placed a provisional hold on Room B for Friday 10:00–12:00 while waiting for participant numbers. A provisional hold does not reserve the room until Facilities confirms it."
         },
         {
           "id": "N19F2",
@@ -3918,7 +3918,7 @@
     },
     "model": {
       "subject": "Re: Have I been billed twice?",
-      "body": "Hi Martin,\n\nI understand why two documents showing the same amount would look like duplicate billing. E-104, sent last week, was an estimate of the project price and did not ask for payment. I-207, sent today, is the final invoice for that same project and is the only payment request in our document record. You do not need to pay the estimate as well.\n\nI checked our internal ledger at 9:30 this morning; it did not show a payment posted against I-207 at that time. That check does not tell me what appears on your bank or card statement. If you can see a separate charge there, please let me know its date and reference so I can ask Billing to investigate it. Otherwise, please use I-207 when you are ready to pay the invoice. I am happy to send a copy marked clearly as an estimate for your records.\n\nElise",
+      "body": "Hi Martin,\n\nI understand why two documents showing the same amount would look like duplicate billing. E-104, sent last week, was an estimate of the project price and did not ask for payment. I-207, sent today, is the invoice for that same project and is the only payment request in our document record. You do not need to pay the estimate as well.\n\nI checked our internal ledger at 9:30 this morning; it did not show a payment posted against I-207 at that time. That check does not tell me what appears on your bank or card statement. If you can see a separate charge there, please let me know its date and reference so I can ask Billing to investigate it. Otherwise, please use I-207 when you are ready to pay the invoice. I am happy to send a copy marked clearly as an estimate for your records.\n\nElise",
       "annotations": [
         {
           "label": "Defines estimate",

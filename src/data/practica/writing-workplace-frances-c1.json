@@ -2493,7 +2493,7 @@
         {
           "id": "FRC113F2",
           "time": "Jeudi, 8 h",
-          "text": "La liste du courrier administratif de mardi a été exportée deux heures avant cette modification."
+          "text": "La liste destinée au prochain envoi de courrier administratif a été exportée deux heures avant cette modification."
         },
         {
           "id": "FRC113F3",
@@ -2638,11 +2638,11 @@
     },
     "model": {
       "subject": "Ré : Quel courrier est parti chez l’ancienne adresse ?",
-      "body": "Bonjour Romain,\n\nLa nouvelle adresse figure bien dans le dossier central depuis jeudi à 10 h. Malheureusement, la liste utilisée pour l’envoi de mardi avait été exportée deux heures auparavant : elle contenait encore l’ancienne adresse. Un rappel administratif sous enveloppe fermée a été confié au service postal lundi. Nous n’avons pas de retour enregistré, mais ce suivi ne permet pas de savoir si l’enveloppe a été remise à quelqu’un ni, a fortiori, ouverte.\n\nTu peux dire à la patiente que nous avons identifié un décalage entre la mise à jour de son dossier et la liste d’envoi, et lui présenter nos excuses. Il serait inexact de lui garantir que personne n’a reçu le courrier, comme d’affirmer qu’un tiers l’a lu. Je lance la vérification postale prévue et confirme avec elle l’adresse à utiliser avant tout nouvel envoi.\n\nJe te transmettrai le résultat de la vérification et la suite donnée selon notre procédure. Si la patiente souhaite parler directement au service concerné, nous organiserons ce contact sans lui faire répéter inutilement son signalement.\n\nÉlodie",
+      "body": "Bonjour Romain,\n\nLa nouvelle adresse figure bien dans le dossier central depuis jeudi à 10 h. Malheureusement, la liste utilisée pour l’envoi de lundi avait été exportée deux heures avant la modification : elle contenait encore l’ancienne adresse. Un rappel administratif sous enveloppe fermée a été confié au service postal lundi. Nous n’avons pas de retour enregistré, mais ce suivi ne permet pas de savoir si l’enveloppe a été remise à quelqu’un ni, a fortiori, ouverte.\n\nTu peux dire à la patiente que nous avons identifié un décalage entre la mise à jour de son dossier et la liste d’envoi, et lui présenter nos excuses. Il serait inexact de lui garantir que personne n’a reçu le courrier, comme d’affirmer qu’un tiers l’a lu. Je lance la vérification postale prévue et confirme avec elle l’adresse à utiliser avant tout nouvel envoi.\n\nJe te transmettrai le résultat de la vérification et la suite donnée selon notre procédure. Si la patiente souhaite parler directement au service concerné, nous organiserons ce contact sans lui faire répéter inutilement son signalement.\n\nÉlodie",
       "annotations": [
         {
           "label": "Explique l’export",
-          "excerpt": "la liste utilisée pour l’envoi de mardi avait été exportée deux heures auparavant",
+          "excerpt": "la liste utilisée pour l’envoi de lundi avait été exportée deux heures avant la modification",
           "evidenceIds": [
             "FRC113F1",
             "FRC113F2"
@@ -3050,7 +3050,7 @@
     },
     "model": {
       "subject": "Ré : A-t-on remis cette personne en fin de liste ?",
-      "body": "Bonjour Luc,\n\nLa demande initiale de janvier n’a pas été effacée : elle figure toujours dans l’historique transmis lors du transfert. L’espace en ligne affiche toutefois la date d’entrée sur la liste du site Nord, en avril. Ces deux dates répondent à des questions différentes, et l’affichage actuel ne suffit pas à déterminer la place de la personne dans cette liste.\n\nLa règle prévoit que le site Nord examine le dossier avec la date initiale, mais elle ne garantit pas à elle seule un rang ou une date de rendez-vous. Comme le site n’a pas encore confirmé son traitement, je ne dirais ni que trois mois ont été perdus ni que rien n’a changé. Je vais lui demander explicitement comment la date de janvier a été prise en compte et quelle information nous pouvons communiquer sur l’état de la demande.\n\nTu peux déjà expliquer à la personne pourquoi avril apparaît à l’écran et reconnaître que cette présentation prête à confusion. Je te transmettrai la réponse vérifiée du site Nord pour que tu puisses lui faire un retour précis.\n\nSamira",
+      "body": "Bonjour Luc,\n\nLa demande initiale de janvier n’a pas été effacée : elle figure toujours dans l’historique du dossier. L’espace en ligne affiche toutefois la date d’entrée sur la liste du site Nord, en avril. Ces deux dates répondent à des questions différentes, et l’affichage actuel ne suffit pas à déterminer la place de la personne dans cette liste.\n\nLa règle prévoit que le site Nord examine le dossier avec la date initiale, mais elle ne garantit pas à elle seule un rang ou une date de rendez-vous. Comme le site n’a pas encore confirmé son traitement, je ne dirais ni que trois mois ont été perdus ni que rien n’a changé. Je vais lui demander explicitement comment la date de janvier a été prise en compte et quelle information nous pouvons communiquer sur l’état de la demande.\n\nTu peux déjà expliquer à la personne pourquoi avril apparaît à l’écran et reconnaître que cette présentation prête à confusion. Je te transmettrai la réponse vérifiée du site Nord pour que tu puisses lui faire un retour précis.\n\nSamira",
       "annotations": [
         {
           "label": "Conserve la date",

@@ -12,6 +12,12 @@ const languages = [
   { slug: 'coreano', locale: 'ko', ogLocale: 'ko_KR', bank: 'coreano-', prefix: '답장:', areaLabel: true, lengthUnit: 'characters' },
 ]
 
+const sitemap = fs.readFileSync(new URL('../src/app/sitemap.ts', import.meta.url), 'utf8')
+if (!sitemap.includes("skill: 'escritura'")) {
+  console.error('Advanced writing routes are missing from the sitemap.')
+  process.exit(1)
+}
+
 let failed = false
 let total = 0
 for (const language of languages) {
@@ -27,6 +33,14 @@ for (const language of languages) {
     }
     const route = fs.readFileSync(routePath, 'utf8')
     const image = fs.readFileSync(imagePath, 'utf8')
+    const hubPath = language.slug === 'ingles'
+      ? new URL(level === 'b2' ? '../src/app/(site)/practica/ingles/b2/page.tsx' : '../src/components/grammar/AdvancedEnglishLevelHub.tsx', import.meta.url)
+      : new URL(`../src/components/practica/${({ frances: 'French', aleman: 'German', italiano: 'Italian', portugues: 'Portuguese', ruso: 'Russian', japones: 'Japanese', coreano: 'Korean' })[language.slug]}AdvancedLevelHub.tsx`, import.meta.url)
+    if (!fs.readFileSync(hubPath, 'utf8').includes('/escritura') || /robots:\s*\{\s*index:\s*false/u.test(route)) {
+      console.error(`${language.slug}/${level}: writing route is hidden from the level hub or search index.`)
+      failed = true
+      continue
+    }
     const expectedBank = `writing-workplace-${language.bank}${level}.json`
     const expectedLevel = `level="${level.toUpperCase()}"`
     const expectedLocale = language.locale === 'en' ? '' : `language="${language.locale}"`
