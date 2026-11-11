@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-last-bus",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「効率化」の裏側に潜む静かなる撤退",
+      "en": "「効率化」の裏側に潜む静かなる撤退"
+    },
+    "intro": {
+      "es": "本稿は、地方自治体による公共交通機関の再編とその社会的影響を批判的に分析した論説である。行政側の成功指標と利用者の実態との乖離に焦点を当てている。",
+      "en": "本稿は、地方自治体による公共交通機関の再編とその社会的影響を批判的に分析した論説である。行政側の成功指標と利用者の実態との乖離に焦点を当てている。"
+    },
+    "mission": {
+      "es": "テキストを精読し、筆者が示唆する「見えない損失」の本質を理解するとともに、語彙の文脈的意味を把握せよ。",
+      "en": "テキストを精読し、筆者が示唆する「見えない損失」の本質を理解するとともに、語彙の文脈的意味を把握せよ。"
+    },
+    "targetText": "奥羽山脈の麓に位置する架空の自治体、水守市。先月、市交通局は「路線バス運行適正化計画」の第一段階完了を宣言し、華々しい成果報告を行った。報告書によれば、不採算路線の整理と主要ルートへの車両集中により、一便あたりの平均乗車率は前年比で劇的な改善を見せたという。当局の広報官である佐藤氏は、空席を運ぶ「幽霊バス」の解消こそが持続可能な公共交通の鍵であると胸を張る。しかし、この数字の裏側には、統計には決して表れない冷厳な現実が横たわっている。今回の再編で最も大きな煽りを受けたのは、市街地から離れた北部集落に住む高齢者たちだ。かつて一時間に一本は確保されていた運行本数が、朝夕の二便のみに削減されたことで、通院や買い物の利便性は根底から覆された。特に夕方の最終便が繰り上げられた影響は甚大である。病院での待ち時間が長引けば、帰宅の足を失うリスクを冒すことになる。その結果、住民たちは「バスを利用する」という選択肢そのものを放棄し始めた。皮肉なことに、当局が誇る乗車率の向上は、利便性の向上による利用者の増加ではなく、最も支援を必要とする層が市場から「退出」を余儀なくされたことによる分母の縮小がもたらした結果に過ぎない。当局は、予約型デマンドタクシーへの移行を代替案として提示しているが、デジタル端末の操作を前提とした予約システムは、情報弱者である高齢者にとって高い障壁となっている。結局のところ、効率性の追求という美名の下で、公共交通が本来担うべき「移動の権利」の保障という理念が、収支均衡という目先の数字にすり替えられている。夕暮れ時、誰もいないバス停で時刻表を眺め、そのまま静かに家路につく老人の背中は、この都市計画が誰のために、そして何を切り捨てることで成立しているのかを雄弁に物語っている。行政が祝杯を挙げる「効率化」の陰で、地域コミュニティの毛細血管は確実に壊死しつつあるのだ。この静かなる撤退が、将来的にどのような社会的コストとして跳ね返ってくるのか、当局は未だその想像力を持ち合わせていないようである。数字上の成功に酔いしれる前に、彼らが直視すべきは、バスに乗らなくなった人々が今どこで、どのような不自由を強いられているかという一点に尽きる。\n\nさらに深刻なのは、この「効率化」が招く負の連鎖が、単なる移動手段の喪失に留まらず、水守市の財政基盤そのものを中長期的に蝕む可能性である。外出機会を奪われた高齢者は、社会的な孤立を深め、結果として認知機能の低下や身体能力の衰えを加速させる。これは将来的な介護給付費や医療費の増大という形で、交通局が節約した予算を遥かに上回る負担となって市に跳ね返るだろう。また、利便性を失った北部地域では若年層の流出が加速し、不動産価値の下落と固定資産税収の減少という悪循環が既に始まっている。当局は「デマンドタクシーへの移行」を免罪符に掲げるが、システム設計の不備を放置したままでは、それは実質的な行政サービスの放棄に等しい。民間の経済論理を公共インフラに無批判に持ち込んだ代償は、数年後、ゴーストタウン化した集落と膨れ上がった社会保障費という形で、市民全員が支払わされることになる。数字の帳尻合わせに終始する現行の計画は、都市の持続可能性を自ら摘み取る「静かなる自壊」の序曲ではないか。今求められているのは、単なる収支の均衡ではなく、移動という基本的人権を維持するための、覚悟を持った公的投資の再定義である。",
+    "wordCount": 1332,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "煽り",
+        "lemma": "煽り",
+        "glosses": {
+          "es": "being negatively influenced or affected by an event",
+          "en": "being negatively influenced or affected by an event"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "甚大",
+        "lemma": "甚大",
+        "glosses": {
+          "es": "enormous, serious, or grave in terms of damage or influence",
+          "en": "enormous, serious, or grave in terms of damage or influence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "分母の縮小",
+        "lemma": "分母の縮小",
+        "glosses": {
+          "es": "reduction of the denominator; here referring to the decrease in the total number of potential users",
+          "en": "reduction of the denominator; here referring to the decrease in the total number of potential users"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "情報弱者",
+        "lemma": "情報弱者",
+        "glosses": {
+          "es": "people with limited access to or ability to use information technology",
+          "en": "people with limited access to or ability to use information technology"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "収支均衡",
+        "lemma": "収支均衡",
+        "glosses": {
+          "es": "balancing income and expenditure; breaking even",
+          "en": "balancing income and expenditure; breaking even"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "毛細血管",
+        "lemma": "毛細血管",
+        "glosses": {
+          "es": "capillaries; used metaphorically to describe the intricate local transport network",
+          "en": "capillaries; used metaphorically to describe the intricate local transport network"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 53.3,
+      "maxSentenceWords": 86,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T23:20:59.242Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が最も強調したい主張はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "効率重視の再編が弱者の移動手段を奪っている。"
+        },
+        {
+          "id": "a2",
+          "text": "デマンドタクシーの導入を急ぐべきである。"
+        },
+        {
+          "id": "a3",
+          "text": "乗車率の向上は行政の努力の賜物である。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "効率性の追求という美名の下で、公共交通が本来担うべき「移動の権利」の保障という理念が、収支均衡という目先の数字にすり替えられている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "北部集落の住民がバス利用を諦めた直接的な理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "バスの運賃が大幅に値上げされたため。"
+        },
+        {
+          "id": "a2",
+          "text": "最終便の繰り上げで帰宅困難になる恐れが生じたため。"
+        },
+        {
+          "id": "a3",
+          "text": "予約システムが複雑でバスの座席が確保できないため。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "病院での待ち時間が長引けば、帰宅の足を失うリスクを冒すことになる。その結果、住民たちは「バスを利用する」という選択肢そのものを放棄し始めた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "「分母の縮小」という言葉が示唆する、乗車率向上の実態はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "車両を小型化したことで、満席になりやすくなった。"
+        },
+        {
+          "id": "a2",
+          "text": "若者の利用者が増えたことで、高齢者の割合が相対的に低下した。"
+        },
+        {
+          "id": "a3",
+          "text": "不便を感じた人々が利用を止めたため、残った少数の利用者で計算されている。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "最も支援を必要とする層が市場から「退出」を余儀なくされたことによる分母の縮小がもたらした結果に過ぎない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「毛細血管」という比喩を用いた意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地域交通が人々の生活を支える不可欠なネットワークであることを示すため。"
+        },
+        {
+          "id": "a2",
+          "text": "バス路線の複雑さが行政コストを圧迫していることを批判するため。"
+        },
+        {
+          "id": "a3",
+          "text": "高齢者の健康維持には外出が不可欠であることを説明するため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "地域コミュニティの毛細血管は確実に壊死しつつあるのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本文の全体的なトーンとして最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政の成功を称えつつ、更なる改善を促す建設的なトーン。"
+        },
+        {
+          "id": "a2",
+          "text": "統計の裏にある社会的孤立を冷徹に指摘する批判的なトーン。"
+        },
+        {
+          "id": "a3",
+          "text": "過去の豊かな交通網を懐かしむ、感傷的で情緒的なトーン。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "行政が祝杯を挙げる「効率化」の陰で、地域コミュニティの毛細血管は確実に壊死しつつあるのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文における「退出」という言葉の意味に最も近いものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "集落からの転居"
+        },
+        {
+          "id": "a2",
+          "text": "政治への無関心"
+        },
+        {
+          "id": "a3",
+          "text": "サービス利用の断念"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "住民たちは「バスを利用する」という選択肢そのものを放棄し始めた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたは水守市の市民代表として、交通局の佐藤広報官に公開質問状を送ることになりました。本文で指摘された「数字上の成功」と「住民の退出」という矛盾を踏まえ、今後の公共交通のあり方について、あなたの意見を400字程度の日本語で述べなさい。",
+      "en": "あなたは水守市の市民代表として、交通局の佐藤広報官に公開質問状を送ることになりました。本文で指摘された「数字上の成功」と「住民の退出」という矛盾を踏まえ、今後の公共交通のあり方について、あなたの意見を400字程度の日本語で述べなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "テキストを精読し、筆者が示唆する「見えない損失」の本質を理解するとともに、語彙の文脈的意味を把握せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T23:20:59.242Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「効率化」の裏側に潜む静かなる撤退 | C1 Reading | WeLearn",
+      "en": "「効率化」の裏側に潜む静かなる撤退 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "本稿は、地方自治体による公共交通機関の再編とその社会的影響を批判的に分析した論説である。行政側の成功指標と利用者の実態との乖離に焦点を当てている。",
+      "en": "本稿は、地方自治体による公共交通機関の再編とその社会的影響を批判的に分析した論説である。行政側の成功指標と利用者の実態との乖離に焦点を当てている。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T23:20:59.242Z"
+  }
+}

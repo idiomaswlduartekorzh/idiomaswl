@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "russian C1"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Эхо Лисьего Оврага",
+      "en": "Эхо Лисьего Оврага"
+    },
+    "intro": {
+      "es": "Данный текст исследует конфликт между официальной картографией и живой народной памятью на примере небольшого поселения.",
+      "en": "Данный текст исследует конфликт между официальной картографией и живой народной памятью на примере небольшого поселения."
+    },
+    "mission": {
+      "es": "Прочитайте текст и проанализируйте скрытые мотивы героев, а также лингвистические нюансы топонимики.",
+      "en": "Прочитайте текст и проанализируйте скрытые мотивы героев, а также лингвистические нюансы топонимики."
+    },
+    "targetText": "Вечер в архиве департамента землеустройства выдался душным. Виктор Петрович, пожилой исследователь с цепким взглядом, перебирал пожелтевшие планшеты геодезической съемки столетней давности. Его внимание привлек документ под номером 412 — «План расширения промышленной зоны поселка Светлый Путь». На бумаге, датированной эпохой индустриального рывка, четко значилось это оптимистичное название, выведенное каллиграфическим почерком чертежника. Однако под слоем официальной туши, если присмотреться под определенным углом, проступал карандашный набросок с пометкой: «Местные упорно именуют Лисьим Оврагом. Рекомендовано искоренить ввиду неблагозвучия». Это открытие стало отправной точкой для расследования, которое обнажило глубокий разрыв между административной волей и культурным кодом территории.\n\nКонфликт зародился не в тишине кабинетов, а на стыке двух мировоззрений. Для чиновников того времени переименование было актом созидания новой реальности, где старые, «стихийные» названия мешали строительству светлого будущего. Название «Светлый Путь» должно было символизировать прогресс и разрыв с темным прошлым. Лисий Овраг же ассоциировался с чем-то диким, неупорядоченным и, что греха таить, языческим. Администрация полагала, что, изменив имя на карте, она изменит и самосознание людей. Это была попытка стерилизации ландшафта, превращения живого пространства в послушную схему. Однако архивные записи свидетельствуют о тихом, но яростном сопротивлении: в отчетах жандармерии того периода упоминается, что рабочие отказывались выходить на смену, если в распоряжении указывался «Светлый Путь», утверждая, что не знают такого места.\n\nВиктор Петрович решил отправиться в сам поселок, чтобы проверить, сохранилось ли это двоемыслие сегодня. К его удивлению, современная молодежь, никогда не видевшая дореволюционных карт, в разговорной речи по-прежнему использовала топоним «Лисий Овраг». Официальные таблички на автобусных остановках и фасаде почты гордо возвещали о «Светлом Пути», но в местном магазине очередь обсуждала, что «у Оврага опять размыло дорогу». Стало очевидно, что навязанное имя за десятилетия так и не прижилось, оставшись лишь бюрократическим фасадом. Это была лингвистическая партизанская война, где победа осталась за коллективной памятью, передаваемой из уст в уста вопреки всем циркулярам.\n\nСитуация обострилась, когда районная администрация объявила о тендере на установку новой стелы при въезде в поселение. Проект предполагал огромные буквы «СВЕТЛЫЙ ПУТЬ» с подсветкой. Инициативная группа жителей, возглавляемая местным учителем истории Ильей Семеновичем, выступила с протестом. Они требовали вернуть историческое название не только в обиход, но и в официальные реестры. Илья Семенович аргументировал это тем, что название «Лисий Овраг» отражает уникальную экосистему региона и легенды о рыжих лисицах, которые когда-то спасли жителей от голода, указав путь к замерзшим запасам. Для власти же это выглядело как опасный прецедент ревизионизма. Спор перерос из филологического в политический: признать правоту жителей означало расписаться в неэффективности прежних идеологических установок.\n\nРазвязка наступила внезапно и имела необратимые последствия для обеих сторон. Во время торжественного открытия стелы, когда покрывало упало под звуки оркестра, присутствующие увидели, что кто-то за ночь исправил надпись. Вместо золоченых букв на бетоне красовалось выжженное кислотой «ЛИСИЙ ОВРАГ». Этот акт вандализма, как назвали его в газетах, окончательно расколол общину. Администрация, уязвленная дерзостью, отказалась от дальнейшего диалога и законсервировала проект, оставив изуродованную стелу как памятник человеческому упрямству. В итоге поселок остался с двумя именами: одно — мертвое и официальное, другое — живое и гонимое. Эта двойственность создала атмосферу постоянного недоверия, где каждое упоминание того или иного названия стало маркером лояльности или протеста. Архивный документ Виктора Петровича так и остался лежать в папке, став не инструментом примирения, а лишь еще одним свидетельством того, как легко разрушить гармонию между местом и его именем.\n\nОднако последствия этого раскола оказались гораздо глубже, чем простая топонимическая путаница или эстетический дефект при въезде в поселок. Со временем социальная ткань «Светлого Пути», или, вернее, Лисьего Оврага, начала стремительно деградировать под бременем этой неразрешенной дихотомии. Инвесторы, привлеченные изначально планами по модернизации промзоны, стали обходить регион стороной, опасаясь непредсказуемости местных жителей, чья идентичность строилась на открытом противостоянии государственной символике. Внутренний конфликт превратил территорию в «серую зону» смыслов: ни одна федеральная программа развития не могла быть реализована в полной мере, так как любое упоминание официального названия в проектной документации вызывало саботаж на местах. Более того, возник опасный социокультурный феномен: молодежь, видя бессилие власти и маргинализацию родных преданий, начала массово покидать поселок, не желая жить в пространстве, где каждое слово является политическим заявлением. Таким образом, попытка искоренить «неблагозвучное» имя привела к результату, прямо противоположному ожиданиям столетней давности. Вместо процветающего индустриального узла на карте образовалась лакуна — место, лишенное единого вектора развития и обреченное на медленное угасание в тени собственной легенды. Виктор Петрович, наблюдая за пустеющими улицами и покосившейся стелой, осознал горькую истину: когда административная воля окончательно подавляет культурный код, не рождается новая реальность — наступает лишь тишина, в которой старые лисы больше не указывают путь к спасению, а лишь безмолвно наблюдают за гибелью человеческого поселения.",
+    "wordCount": 732,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "неблагозвучия",
+        "lemma": "неблагозвучия",
+        "glosses": {
+          "es": "cacophony or lack of euphony",
+          "en": "cacophony or lack of euphony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "самосознание",
+        "lemma": "самосознание",
+        "glosses": {
+          "es": "self-awareness or identity",
+          "en": "self-awareness or identity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "двоемыслие",
+        "lemma": "двоемыслие",
+        "glosses": {
+          "es": "doublethink",
+          "en": "doublethink"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "циркулярам",
+        "lemma": "циркулярам",
+        "glosses": {
+          "es": "circulars or official directives",
+          "en": "circulars or official directives"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ревизионизма",
+        "lemma": "ревизионизма",
+        "glosses": {
+          "es": "revisionism",
+          "en": "revisionism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "лояльности",
+        "lemma": "лояльности",
+        "glosses": {
+          "es": "loyalty",
+          "en": "loyalty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.4,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T23:19:40.371Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Противостояние официальных названий и народной памяти"
+        },
+        {
+          "id": "a2",
+          "text": "Анализ статистических данных об уровне жизни в сельской местности"
+        },
+        {
+          "id": "a3",
+          "text": "Методология проведения археологических раскопок в северных регионах"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Это открытие стало отправной точкой для расследования, которое обнажило глубокий разрыв между административной волей и культурным кодом территории.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему власти в прошлом решили переименовать Лисий Овраг в Светлый Путь?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за смены власти"
+        },
+        {
+          "id": "a2",
+          "text": "Из-за неблагозвучия и ассоциаций с дикой природой"
+        },
+        {
+          "id": "a3",
+          "text": "Для привлечения в регион иностранных специалистов и инвесторов"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Лисий Овраг же ассоциировался с чем-то диким, неупорядоченным и, что греха таить, языческим.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Что можно сказать об отношении современного населения к названию «Светлый Путь»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оно забыто"
+        },
+        {
+          "id": "a2",
+          "text": "Это миф"
+        },
+        {
+          "id": "a3",
+          "text": "Жители используют его только в формальных ситуациях"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Официальные таблички на автобусных остановках и фасаде почты гордо возвещали о «Светлом Пути», но в местном магазине очередь обсуждала, что «у Оврага опять размыло дорогу».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор упоминает легенду о рыжих лисицах?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подчеркнуть смысловую глубину исторического топонима"
+        },
+        {
+          "id": "a2",
+          "text": "Для демонстрации преимуществ охотничьего промысла в условиях сурового климата"
+        },
+        {
+          "id": "a3",
+          "text": "С целью классификации различных видов пушных зверей в лесах средней полосы"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Илья Семенович аргументировал это тем, что название «Лисий Овраг» отражает уникальную экосистему региона и легенды о рыжих лисицах, которые когда-то спасли жителей от голода, указав путь к замерзшим запасам.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как автор относится к результату конфликта вокруг стелы?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Равнодушно"
+        },
+        {
+          "id": "a2",
+          "text": "С сожалением о возникшем расколе и недоверии"
+        },
+        {
+          "id": "a3",
+          "text": "С надеждой на скорое примирение сторон и установку нового памятника"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Эта двойственность создала атмосферу постоянного недоверия, где каждое упоминание того или иного названия стало маркером лояльности или протеста.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "В каком контексте в тексте использовано слово «двоемыслие»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Способность властей менять мнение"
+        },
+        {
+          "id": "a2",
+          "text": "Конфликт между учителем и чиновником"
+        },
+        {
+          "id": "a3",
+          "text": "Наличие двух параллельных систем имен"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Виктор Петрович решил отправиться в сам поселок, чтобы проверить, сохранилось ли это двоемыслие сегодня.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Представьте, что вы — член комиссии по топонимике. Напишите эссе (около 200 слов), в котором аргументируйте, стоит ли сохранять исторические названия, если они кажутся современному обществу устаревшими или неблагозвучными. Используйте примеры из текста для подтверждения своей позиции.",
+      "en": "Представьте, что вы — член комиссии по топонимике. Напишите эссе (около 200 слов), в котором аргументируйте, стоит ли сохранять исторические названия, если они кажутся современному обществу устаревшими или неблагозвучными. Используйте примеры из текста для подтверждения своей позиции."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Прочитайте текст и проанализируйте скрытые мотивы героев, а также лингвистические нюансы топонимики.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T23:19:40.371Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Эхо Лисьего Оврага | C1 Reading | WeLearn",
+      "en": "Эхо Лисьего Оврага | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Данный текст исследует конфликт между официальной картографией и живой народной памятью на примере небольшого поселения.",
+      "en": "Данный текст исследует конфликт между официальной картографией и живой народной памятью на примере небольшого поселения."
+    },
+    "canonicalPath": "/en/practice/russian/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T23:19:40.371Z"
+  }
+}

@@ -74,7 +74,7 @@ async function requestGemini(message) {
   const key = process.env.GEMINI_API_KEY
   if (!key) throw new Error('GEMINI_API_KEY is not configured')
   const model = args.model ?? 'gemini-3.1-flash-lite'
-  if (!['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'].includes(model)) throw new Error('Unsupported Gemini model')
+  if (!['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-3-flash-preview'].includes(model)) throw new Error('Unsupported Gemini model')
   const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
     body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: message }] }], generationConfig: {
@@ -242,7 +242,9 @@ for (const { language, level, brief } of pending) {
       const text = await call(prompt(language, level, brief))
       const preliminary = parseAndCheck(text, language, level, { allowShort: true })
       item = parseAndCheck(JSON.stringify(await extendIfNeeded(preliminary, language, level, call)), language, level)
-      item = await balanceOptionLengths(item, language, call)
+      // Length repair is an optional extra provider call. Drafts remain blocked
+      // by the editorial bias gate until their choices have been reviewed.
+      if (args['repair-option-lengths'] === 'true') item = await balanceOptionLengths(item, language, call)
       break
     } catch (error) {
       lastError = error

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c1-the-open-schedule",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "russian C1"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Гибкий график: Благословение или проклятие?",
+      "en": "Гибкий график: Благословение или проклятие?"
+    },
+    "intro": {
+      "es": "В данной переписке рассматривается конфликт между администрацией школы и преподавательским составом, возникший из-за внедрения системы динамического расписания.",
+      "en": "В данной переписке рассматривается конфликт между администрацией школы и преподавательским составом, возникший из-за внедрения системы динамического расписания."
+    },
+    "mission": {
+      "es": "Проанализируйте аргументы обеих сторон и определите скрытые причины организационного кризиса в учебном заведении.",
+      "en": "Проанализируйте аргументы обеих сторон и определите скрытые причины организационного кризиса в учебном заведении."
+    },
+    "targetText": "От кого: Марина Соколова, заместитель директора по учебной части\nКому: Педагогический коллектив гимназии «Вершина»\nДата: 14 октября\nТема: Внедрение модульного планирования и итоги первой недели\n\nУважаемые коллеги, я искренне признательна всем вам за ту колоссальную работу, которую вы проделали в рамках перехода на нашу новую систему «Живое расписание». Основная идея реформы заключалась в том, чтобы дать вам и вашим ученикам долгожданную свободу маневра. Мы отказались от жесткой сетки часов в пользу плавающих модулей, позволяя преподавателям самостоятельно определять длительность занятий в зависимости от сложности текущей темы. Казалось бы, такая децентрализация должна была развязать вам руки, избавить от необходимости искусственно растягивать материал или, наоборот, галопом проноситься по важным параграфам. Мы стремились создать среду, где академическая целесообразность стоит выше бюрократической отчетности. Первые отзывы от родителей старшеклассников подтверждают, что дети стали меньше уставать, так как теперь они могут сосредоточиться на одном предмете в течение глубокого трехчасового погружения, вместо того чтобы переключаться между шестью разноплановыми уроками. Это был смелый шаг, и я убеждена, что временные шероховатости — лишь малая цена за качественный скачок в образовательном процессе.\n\nОднако я не могу игнорировать тревожные сигналы, поступающие от некоторых кафедр. Выяснилось, что предоставленная автономия была воспринята неоднозначно. Вместо конструктивного планирования мы столкнулись с тем, что некоторые кабинеты пустуют в пиковые часы, в то время как в другие дни в учительской разгораются нешуточные баталии за право занять лабораторию химии или медиа-центр. Наша информационная система мониторинга показывает, что неопределенность стала доминирующим фактором: ученики приходят к восьми утра, не зная наверняка, закончится ли их учебный день в два часа дня или затянется до вечера из-за внезапного решения словесников провести литературный диспут. Эта волатильность, которую мы ошибочно приняли за гибкость, начинает подтачивать дисциплинарный фундамент гимназии. Я призываю вас к более тесному взаимодействию в рамках междисциплинарных групп, чтобы ваша свобода не превращалась в хаос для коллег смежных направлений.\n\nОт кого: Виктор Громов, руководитель кафедры точных наук\nКому: Марина Соколова, заместитель директора по учебной части\nДата: 15 октября\nТема: Re: Внедрение модульного планирования и итоги первой недели\n\nМарина Игоревна, при всем уважении к вашему энтузиазму, я вынужден выступить в роли адвоката дьявола. То, что администрация называет «свободой маневра», для нас, математиков и физиков, обернулось полной дезорганизацией учебного цикла. Мы работаем с дисциплинами, требующими строгой последовательности и регулярности. В условиях, когда гуманитарный блок может в любой момент «застолбить» за собой общие пространства на неопределенный срок, мы теряем возможность планировать лабораторные работы, требующие сложной подготовки оборудования. Вчерашний инцидент, когда группа физиков была вынуждена проводить замеры на лестничной клетке, потому что актовый зал был занят репетицией исторического театра, — это не «шероховатость», а профессиональное унижение. Мы не против инноваций, но мы против системы, в которой право сильного или более красноречивого определяет доступ к ресурсам школы. Гибкость хороша там, где есть избыток ресурсов, а в наших реалиях она лишь обострила скрытую конкуренцию между факультетами.\n\nБолее того, последствия этой неопределенности уже вышли за пределы школьных стен. Ко мне обращаются разгневанные тренеры спортивных секций и преподаватели музыкальных школ. Наши ученики массово пропускают дополнительные занятия вне гимназии, потому что не могут спрогнозировать время своего освобождения. Мы фактически заперли детей в стенах «Вершины», лишив их возможности развиваться в других сферах. Родители, которые поначалу приветствовали отсутствие усталости, теперь в ужасе от того, что семейные планы на вечер рушатся из-за очередного «творческого порыва» педагогов. Мы создали вакуум планирования, который заполняется не качеством знаний, а нарастающим раздражением всех участников процесса. Если раньше мы жаловались на диктатуру звонка, то теперь мы оказались в заложниках у непредсказуемости, которая парализует волю и учителей, и учеников.\n\nВ сложившейся ситуации я не вижу иного выхода, кроме частичного возврата к регламентированному графику. Нам необходимы «якорные часы» — фиксированные периоды для базовых предметов, которые не могут быть изменены в угоду модульным экспериментам. В противном случае кафедра точных наук будет вынуждена официально заявить о невозможности выполнения учебного плана. Мы не можем строить здание на зыбучих песках импровизации. Надеюсь, что на ближайшем педагогическом совете мы сможем прийти к компромиссу, который вернет в наши коридоры не только творчество, но и элементарный порядок. В противном случае мы рискуем потерять лучших специалистов, которые не привыкли работать в режиме вечного ожидания и борьбы за квадратные метры учебной площади.",
+    "wordCount": 670,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "свободу маневра",
+        "lemma": "свободу маневра",
+        "glosses": {
+          "es": "room for maneuver / freedom of action",
+          "en": "room for maneuver / freedom of action"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "шероховатости",
+        "lemma": "шероховатости",
+        "glosses": {
+          "es": "rough edges / minor flaws",
+          "en": "rough edges / minor flaws"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "волатильность",
+        "lemma": "волатильность",
+        "glosses": {
+          "es": "volatility / instability",
+          "en": "volatility / instability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "застолбить",
+        "lemma": "застолбить",
+        "glosses": {
+          "es": "to stake a claim / to reserve",
+          "en": "to stake a claim / to reserve"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "зыбучих песках",
+        "lemma": "зыбучих песках",
+        "glosses": {
+          "es": "quicksands",
+          "en": "quicksands"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "якорные часы",
+        "lemma": "якорные часы",
+        "glosses": {
+          "es": "anchor hours / fixed time slots",
+          "en": "anchor hours / fixed time slots"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.3,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T23:19:40.371Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная причина конфликта между администрацией и кафедрой точных наук?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Противоречие между концепцией гибкости и необходимостью стабильности"
+        },
+        {
+          "id": "a2",
+          "text": "Отсутствие квалифицированных преподавателей математики в текущем учебном году"
+        },
+        {
+          "id": "a3",
+          "text": "Несогласованность графиков отпусков руководящего состава и рядовых сотрудников"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Эта волатильность, которую мы ошибочно приняли за гибкость, начинает подтачивать дисциплинарный фундамент гимназии.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Где ученики-физики были вынуждены проводить практическое занятие из-за отсутствия свободных помещений?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "В фойе"
+        },
+        {
+          "id": "a2",
+          "text": "На лестничной клетке"
+        },
+        {
+          "id": "a3",
+          "text": "В подвальном помещении спортивного комплекса"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Вчерашний инцидент, когда группа физиков была вынуждена проводить замеры на лестничной клетке, потому что актовый зал был занят репетицией исторического театра, — это не «шероховатость», а профессиональное унижение.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как новая система расписания повлияла на жизнь учеников вне школы?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она позволила детям больше времени уделять спорту"
+        },
+        {
+          "id": "a2",
+          "text": "Она привела к улучшению отношений внутри семей"
+        },
+        {
+          "id": "a3",
+          "text": "Она вызвала конфликты с организациями дополнительного образования"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Наши ученики массово пропускают дополнительные занятия вне гимназии, потому что не могут спрогнозировать время своего освобождения.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью Виктор Громов использует метафору «зыбучие пески»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подчеркнуть ненадежность текущей системы планирования"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы указать на необходимость замены старого фундамента в левом крыле гимназии"
+        },
+        {
+          "id": "a3",
+          "text": "Для критики методов преподавания географии"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Мы не можем строить здание на зыбучих песках импровизации.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков общий тон письма Виктора Громова?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Саркастичный и враждебный"
+        },
+        {
+          "id": "a2",
+          "text": "Критический и встревоженный"
+        },
+        {
+          "id": "a3",
+          "text": "Восторженный и оптимистичный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Мы создали вакуум планирования, который заполняется не качеством знаний, а нарастающим раздражением всех участников процесса.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что имеет в виду Марина Соколова под термином «шероховатости»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Тяжелые травмы"
+        },
+        {
+          "id": "a2",
+          "text": "Грубые ошибки"
+        },
+        {
+          "id": "a3",
+          "text": "Мелкие недочеты"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "я убеждена, что временные шероховатости — лишь малая цена за качественный скачок в образовательном процессе.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Представьте, что вы — представитель родительского комитета гимназии «Вершина». Напишите ответное письмо администрации, в котором вы либо поддерживаете «Живое расписание», либо требуете возврата к старому графику. Используйте не менее трех аргументов, касающихся благополучия детей и семейного досуга.",
+      "en": "Представьте, что вы — представитель родительского комитета гимназии «Вершина». Напишите ответное письмо администрации, в котором вы либо поддерживаете «Живое расписание», либо требуете возврата к старому графику. Используйте не менее трех аргументов, касающихся благополучия детей и семейного досуга."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Проанализируйте аргументы обеих сторон и определите скрытые причины организационного кризиса в учебном заведении.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T23:19:40.371Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Гибкий график: Благословение или проклятие? | C1 Reading | WeLearn",
+      "en": "Гибкий график: Благословение или проклятие? | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В данной переписке рассматривается конфликт между администрацией школы и преподавательским составом, возникший из-за внедрения системы динамического расписания.",
+      "en": "В данной переписке рассматривается конфликт между администрацией школы и преподавательским составом, возникший из-за внедрения системы динамического расписания."
+    },
+    "canonicalPath": "/en/practice/russian/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T23:19:40.371Z"
+  }
+}

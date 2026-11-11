@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-quiet-street",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "静寂の代償：ミナト街における夜間通行規制の光と影",
+      "en": "静寂の代償：ミナト街における夜間通行規制の光と影"
+    },
+    "intro": {
+      "es": "都市開発と住民の生活環境の調和は常に困難を伴います。本稿では、ある街で実施された夜間交通規制を巡る、統計データと住民の実感の乖離を考察します。",
+      "en": "都市開発と住民の生活環境の調和は常に困難を伴います。本稿では、ある街で実施された夜間交通規制を巡る、統計データと住民の実感の乖離を考察します。"
+    },
+    "mission": {
+      "es": "テキストを精読し、数値化された「成功」の裏に隠された矛盾や、異なる立場による解釈の相違を読み取ってください。",
+      "en": "テキストを精読し、数値化された「成功」の裏に隠された矛盾や、異なる立場による解釈の相違を読み取ってください。"
+    },
+    "targetText": "湾岸部に位置するミナト街の北側、歴史的な煉瓦造りの住宅が並ぶ「アサヒ通り」では、半年間にわたり深夜の車両通行禁止措置が試験的に導入された。この施策を主導したミナト街環境改善委員会の佐藤議長は、中間報告書において「騒音レベルの劇的な低下と、通過車両台数の八割削減を達成した」と胸を張る。報告書によれば、かつて深夜まで響いていたエンジン音は消え、住民の睡眠の質が向上したという。数値上、このプロジェクトは非の打ち所がない成功を収めたかのように見える。しかし、この「静寂」という定義そのものが、実は極めて限定的な視点に基づいていることは、報告書の行間から読み取らねばならない。\n\n問題の本質は、アサヒ通りから排除された車両がどこへ向かったのかという点にある。アサヒ通りの一本南側に位置する「カモメ通り」の住民、高橋さんは、規制開始以来の生活を一変させた。カモメ通りは道幅こそアサヒ通りと同等だが、商店や飲食店が密集しており、以前から夜間の配送車両が頻繁に行き交う場所だった。アサヒ通りが封鎖されたことで、本来そこを通るはずだった一般車両やタクシーが、迂回路としてカモメ通りになだれ込んだのである。高橋さんは「行政は特定の通りの平穏を確保するために、隣接する通りの平穏を犠牲にした。これは改善ではなく、単なる問題の移転だ」と憤る。実際、カモメ通りでは深夜の接触事故が急増し、路地裏での違法駐車も常態化している。\n\nさらに、この施策は地域経済の構造にも予期せぬ歪みを生じさせている。アサヒ通り沿いで深夜営業のカフェを営む伊藤さんは、通行規制によって客足が途絶え、廃業の危機に瀕している。佐藤議長は「歩行者主体の空間こそが街の価値を高める」と主張するが、それはあくまで通過交通を前提としない理想論に過ぎない。伊藤さんの店を訪れていた客の多くは、深夜のドライブがてらに立ち寄る近隣住民や、帰路につくタクシー利用者であった。車両の流入を断つことは、単に騒音を消すだけでなく、その通りが持っていた経済的な毛細血管を遮断することを意味していたのである。皮肉なことに、アサヒ通りが静かになればなるほど、防犯上の死角が増え、夜間の治安悪化を懸念する声も上がり始めている。\n\n統計データの欺瞞は、測定ポイントの選定にも現れている。環境改善委員会が設置した騒音計は、アサヒ通りの最も閑静な住宅区画に限定されており、迂回路となった周辺道路の状況は一切加味されていない。このような恣意的なデータの抽出は、政策の正当性を補強するための方便として機能している。佐藤議長は「全体最適を見据えた一歩だ」と繰り返すが、その「全体」の中にカモメ通りの住民やアサヒ通りの事業主が含まれているかは疑わしい。成功の定義を誰が握るのかという権力構造が、この静寂の裏側には隠されているのだ。\n\n結局、試験期間の終了を待たずして、カモメ通りの住民グループは規制の即時撤廃を求める署名活動を開始した。これに対し、アサヒ通りの一部住民は「生活環境の維持」を盾に規制の恒久化を訴え、地域コミュニティは深刻な分断状態に陥っている。静寂という名の恩恵を享受する者と、その余波を押し付けられる者。都市の夜を巡るこの対立は、単なる交通問題を超え、公共性とは誰のためのものかという根源的な問いを我々に突きつけている。ミナト街の夜は、かつての喧騒とは異なる、重苦しい沈黙に包まれている。",
+    "wordCount": 1305,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "非の打ち所がない",
+        "lemma": "非の打ち所がない",
+        "glosses": {
+          "es": "impeccable, flawless",
+          "en": "impeccable, flawless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "なだれ込んだ",
+        "lemma": "なだれ込んだ",
+        "glosses": {
+          "es": "rushed into, flooded into",
+          "en": "rushed into, flooded into"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "常態化",
+        "lemma": "常態化",
+        "glosses": {
+          "es": "becoming a normal state, becoming a regular occurrence",
+          "en": "becoming a normal state, becoming a regular occurrence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "毛細血管",
+        "lemma": "毛細血管",
+        "glosses": {
+          "es": "capillaries (used metaphorically for intricate networks)",
+          "en": "capillaries (used metaphorically for intricate networks)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "恣意的な",
+        "lemma": "恣意的な",
+        "glosses": {
+          "es": "arbitrary",
+          "en": "arbitrary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "享受する",
+        "lemma": "享受する",
+        "glosses": {
+          "es": "to enjoy (a benefit or right)",
+          "en": "to enjoy (a benefit or right)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 46.6,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T23:20:59.242Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この文章の主な論点は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "特定の地域における静寂の確保と、それに伴う周辺への負の影響や利害対立"
+        },
+        {
+          "id": "a2",
+          "text": "夜間交通規制がもたらした経済効果の分析"
+        },
+        {
+          "id": "a3",
+          "text": "ミナト街における歴史的建造物の保存と、現代的な交通網の再整備の必要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "静寂という名の恩恵を享受する者と、その余波を押し付けられる者。都市の夜を巡るこの対立は、単なる交通問題を超え、公共性とは誰のためのものかという根源的な問いを我々に突きつけている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "カモメ通りの住民である高橋さんが憤っている直接の理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政がアサヒ通りの住民に対してのみ補助金を支給したこと"
+        },
+        {
+          "id": "a2",
+          "text": "アサヒ通りの規制により、自分の通りに車両が流入し環境が悪化したこと"
+        },
+        {
+          "id": "a3",
+          "text": "深夜営業のカフェが閉店し、夜間の買い物が不便になったこと"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "アサヒ通りが封鎖されたことで、本来そこを通るはずだった一般車両やタクシーが、迂回路としてカモメ通りになだれ込んだのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "筆者は、環境改善委員会が発表した統計データについてどのように考えていますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "最新の技術を用いた正確なものであり、信頼に値する"
+        },
+        {
+          "id": "a2",
+          "text": "住民の主観的な感想を反映していないため、全く無意味である"
+        },
+        {
+          "id": "a3",
+          "text": "客観性に欠け、政策を正当化するために都合よく選ばれたものである"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "このような恣意的なデータの抽出は、政策の正当性を補強するための方便として機能している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が第三段落でカフェの店主、伊藤さんの事例を挙げた目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "通行規制が地域経済や治安に与えた負の側面を示すため"
+        },
+        {
+          "id": "a2",
+          "text": "深夜の騒音問題が解決したことを証明するため"
+        },
+        {
+          "id": "a3",
+          "text": "歩行者主体の空間作りが成功していることを強調するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "車両の流入を断つことは、単に騒音を消すだけでなく、その通りが持っていた経済的な毛細血管を遮断することを意味していたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体から感じられる筆者の態度はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政の施策を全面的に支持し、住民の協力不足を批判する態度"
+        },
+        {
+          "id": "a2",
+          "text": "一方的な成功の定義に疑問を投げかけ、複雑な利害関係を冷静に分析する批判的な態度"
+        },
+        {
+          "id": "a3",
+          "text": "交通規制の成功を喜び、他の地域への拡大を推奨する楽観的な態度"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "成功の定義を誰が握るのかという権力構造が、この静寂の裏側には隠されているのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「常態化」という言葉は、どのような状況を指していますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しいルールが住民に歓迎され、街が活気を取り戻すこと"
+        },
+        {
+          "id": "a2",
+          "text": "行政の指導により、問題が速やかに解決されること"
+        },
+        {
+          "id": "a3",
+          "text": "一時的な現象が、当たり前の日常的なこととして定着してしまうこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "実際、カモメ通りでは深夜の接触事故が急増し、路地裏での違法駐車も常態化している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたがミナト街の都市計画コンサルタントだとしたら、アサヒ通りとカモメ通りの対立を解消するために、どのような代替案や補完的な措置を提案しますか。統計データと住民の感情の両面に配慮して、あなたの考えを述べなさい。",
+      "en": "あなたがミナト街の都市計画コンサルタントだとしたら、アサヒ通りとカモメ通りの対立を解消するために、どのような代替案や補完的な措置を提案しますか。統計データと住民の感情の両面に配慮して、あなたの考えを述べなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "テキストを精読し、数値化された「成功」の裏に隠された矛盾や、異なる立場による解釈の相違を読み取ってください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T23:20:59.242Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "静寂の代償：ミナト街における夜間通行規制の光と影 | C1 Reading | WeLearn",
+      "en": "静寂の代償：ミナト街における夜間通行規制の光と影 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "都市開発と住民の生活環境の調和は常に困難を伴います。本稿では、ある街で実施された夜間交通規制を巡る、統計データと住民の実感の乖離を考察します。",
+      "en": "都市開発と住民の生活環境の調和は常に困難を伴います。本稿では、ある街で実施された夜間交通規制を巡る、統計データと住民の実感の乖離を考察します。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T23:20:59.242Z"
+  }
+}

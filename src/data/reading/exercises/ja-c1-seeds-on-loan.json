@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「緋色の大根」を巡る沈黙の系譜",
+      "en": "「緋色の大根」を巡る沈黙の系譜"
+    },
+    "intro": {
+      "es": "この読み物では、ある地域コミュニティの種子ライブラリーを舞台に、文字に残されなかった農作物の歴史と、その継承を主張する二つの家族の葛藤を描きます。",
+      "en": "この読み物では、ある地域コミュニティの種子ライブラリーを舞台に、文字に残されなかった農作物の歴史と、その継承を主張する二つの家族の葛藤を描きます。"
+    },
+    "mission": {
+      "es": "文脈から登場人物の隠された意図を読み取り、客観的な事実と主観的な伝承の境界線を考察してください。",
+      "en": "文脈から登場人物の隠された意図を読み取り、客観的な事実と主観的な伝承の境界線を考察してください。"
+    },
+    "targetText": "秋の夕暮れ、山あいの村にある「種子ライブラリー」の談話室には、重苦しい空気が漂っていた。棚には何世代にもわたって守られてきた在来種の種子が並んでいるが、今夜の議題は、この地域特有の「緋色の大根」の由来についてだった。この大根は、鮮やかな赤色と独特の辛味を持ち、近年、食文化の保存活動として注目を集めている。しかし、その起源を記した公的な記録は存在しない。村の有力者である安藤家と、かつて小作農として土地を耕してきた佐藤家は、どちらがこの種を絶滅の危機から救い、今日まで繋いできたかについて、長年対立していた。安藤家の当主、泰三は、古びた蔵の台帳を指し示し、そこにある「赤根」という記述こそが、自らの先祖が種を管理していた証拠だと主張した。一方、佐藤家の千代は、文字に残されない口伝こそが真実だと静かに語った。彼女によれば、飢饉の年に安藤家が種を食料として消費しようとした際、佐藤家の先祖が密かに種を隠し持ち、家の裏庭で細々と育て続けたことで、この品種は生き延びたというのである。ライブラリーの運営委員たちは、どちらの主張も決定的な証拠に欠けることを理解していた。安藤家の台帳には具体的な栽培方法の記載はなく、単なる在庫記録に過ぎない可能性もあった。対して、千代の語る物語はあまりに劇的で、裏付けとなる物証が何一つなかった。議論が平行線をたどる中、ライブラリーの館長は「この種は誰の所有物でもなく、土地の記憶そのものだ」と宥めたが、両家の溝は深まるばかりだった。会合の終盤、千代は一袋の古い種をテーブルに置いた。それは、彼女の家で代々「命の粒」と呼ばれてきたものだった。しかし、彼女はそれをライブラリーに寄贈することを拒み、再び懐に収めた。安藤泰三の冷ややかな視線が彼女を刺す中、千代は「名前を奪われた歴史は、名前を与えられた瞬間に死ぬのです」と言い残して部屋を去った。結局、緋色の大根のルーツは曖昧なまま、ライブラリーのラベルには「由来不明」の四文字が刻まれることになった。この結末は、記録を重んじる近代的な保存活動と、記憶に依存する土着の文化が、決して相容れないことを象徴していた。村の若者たちは、この沈黙の意味を測りかねたまま、ただ美しく赤い大根を収穫し続けている。そこには、真実よりも平穏を優先したコミュニティの、苦渋の選択が隠されていた。\n\nしかし、この「由来不明」という妥協案がもたらした平穏は、皮肉にも緋色の大根そのものの存続を脅かす新たな火種となった。ラベルに刻まれた四文字は、外部の市場や研究機関に対して「学術的価値の欠如」という誤った印象を与え、公的な保護助成金の対象から外れる結果を招いたのである。安藤家は権威を失ったことで種への関心を急速に失い、台帳の記述を裏付けるための追加調査を打ち切った。一方、千代が守り抜いた「命の粒」も、彼女の死後、その重すぎる記憶を継承できる若者が現れず、蔵の奥で静かに発芽能力を失いつつある。若者たちが収穫し続ける赤い大根は、今や均質化された商業用の種子に取って代わられ、かつての独特な辛味は、誰にも気づかれぬまま薄れ始めている。名前を与えられなかった歴史は、記録として死ぬことを免れた代わりに、誰からも参照されないまま忘却の淵へと沈んでいくのだ。土地の記憶を共有することを拒んだ代償は、勝利なき風化という形で村全体に重くのしかかっている。真実を棚上げにしたコミュニティの選択は、文化の核となる魂を抜き去り、ただ形だけの伝統という空虚な殻を、秋の冷たい風の中に残しただけであった。",
+    "wordCount": 1354,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "在来種",
+        "lemma": "在来種",
+        "glosses": {
+          "es": "native species or heirloom variety",
+          "en": "native species or heirloom variety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "小作農",
+        "lemma": "小作農",
+        "glosses": {
+          "es": "tenant farmer",
+          "en": "tenant farmer"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "飢饉",
+        "lemma": "飢饉",
+        "glosses": {
+          "es": "famine",
+          "en": "famine"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "口伝",
+        "lemma": "口伝",
+        "glosses": {
+          "es": "oral tradition or verbal instruction",
+          "en": "oral tradition or verbal instruction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "物証",
+        "lemma": "物証",
+        "glosses": {
+          "es": "physical evidence",
+          "en": "physical evidence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "土着",
+        "lemma": "土着",
+        "glosses": {
+          "es": "indigenous or local to the land",
+          "en": "indigenous or local to the land"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 48.4,
+      "maxSentenceWords": 80,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T23:20:59.242Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主な対立軸は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "記録された公的な歴史と口承による記憶の正当性"
+        },
+        {
+          "id": "a2",
+          "text": "種子の所有権を巡る法的争いと経済的利益の分配"
+        },
+        {
+          "id": "a3",
+          "text": "伝統的な農業手法と近代的な品種改良技術の対立"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "記録を重んじる近代的な保存活動と、記憶に依存する土着の文化が、決して相容れないことを象徴していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "安藤泰三が自説の根拠として提示したものは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "裏庭で育てた大根"
+        },
+        {
+          "id": "a2",
+          "text": "古びた蔵の台帳"
+        },
+        {
+          "id": "a3",
+          "text": "飢饉の際の配給記録"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "安藤家の当主、泰三は、古びた蔵の台帳を指し示し、そこにある「赤根」という記述こそが、自らの先祖が種を管理していた証拠だと主張した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "千代が種をライブラリーに寄贈しなかった理由として、最も適切な推察はどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "安藤家との共同管理に納得がいかなかったため"
+        },
+        {
+          "id": "a2",
+          "text": "種子がまだ十分に発芽する状態ではないことを隠すため"
+        },
+        {
+          "id": "a3",
+          "text": "種を公的な記録に委ねることで、家族の物語が失われることを恐れたため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "名前を奪われた歴史は、名前を与えられた瞬間に死ぬのです",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "館長が「この種は誰の所有物でもない」と発言した意図は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "二家族の対立を鎮め、議論を収束させるため"
+        },
+        {
+          "id": "a2",
+          "text": "安藤家の台帳の信憑性を否定するため"
+        },
+        {
+          "id": "a3",
+          "text": "種子ライブラリーの法的な権利を主張するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ライブラリーの館長は「この種は誰の所有物でもなく、土地の記憶そのものだ」と宥めたが、両家の溝は深まるばかりだった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語の結末における筆者の視点はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "歴史の真実が解明されなかったことへの強い憤り"
+        },
+        {
+          "id": "a2",
+          "text": "相容れない価値観の共存の難しさに対する冷徹な観察"
+        },
+        {
+          "id": "a3",
+          "text": "伝統が失われていくことへの楽観的な期待"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この結末は、記録を重んじる近代的な保存活動と、記憶に依存する土着の文化が、決して相容れないことを象徴していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「平行線をたどる」という表現の意味に最も近いものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "二つの家族が協力して新しい結論を出す状態"
+        },
+        {
+          "id": "a2",
+          "text": "過去の記録と現在の事実が完全に一致する状態"
+        },
+        {
+          "id": "a3",
+          "text": "互いの意見が歩み寄らず、解決に向かわない状態"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "議論が平行線をたどる中、ライブラリーの館長は「この種は誰の所有物でもなく、土地の記憶そのものだ」と宥めた",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「名前を奪われた歴史は、名前を与えられた瞬間に死ぬ」という千代の言葉について、あなたはどう解釈しますか。文化遺産の保護において「公式な記録」と「個人の記憶」のどちらを優先すべきか、本文の内容に触れながらあなたの意見を日本語で述べてください。",
+      "en": "「名前を奪われた歴史は、名前を与えられた瞬間に死ぬ」という千代の言葉について、あなたはどう解釈しますか。文化遺産の保護において「公式な記録」と「個人の記憶」のどちらを優先すべきか、本文の内容に触れながらあなたの意見を日本語で述べてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "文脈から登場人物の隠された意図を読み取り、客観的な事実と主観的な伝承の境界線を考察してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T23:20:59.242Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「緋色の大根」を巡る沈黙の系譜 | C1 Reading | WeLearn",
+      "en": "「緋色の大根」を巡る沈黙の系譜 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "この読み物では、ある地域コミュニティの種子ライブラリーを舞台に、文字に残されなかった農作物の歴史と、その継承を主張する二つの家族の葛藤を描きます。",
+      "en": "この読み物では、ある地域コミュニティの種子ライブラリーを舞台に、文字に残されなかった農作物の歴史と、その継承を主張する二つの家族の葛藤を描きます。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T23:20:59.242Z"
+  }
+}
