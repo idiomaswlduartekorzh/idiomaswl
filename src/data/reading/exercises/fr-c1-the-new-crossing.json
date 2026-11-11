@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-new-crossing",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion du passage",
+      "en": "L'illusion du passage"
+    },
+    "intro": {
+      "es": "Lisez cet article critique portant sur l'inauguration d'une infrastructure piétonne et analysez les biais méthodologiques du rapport officiel présenté.",
+      "en": "Lisez cet article critique portant sur l'inauguration d'une infrastructure piétonne et analysez les biais méthodologiques du rapport officiel présenté."
+    },
+    "mission": {
+      "es": "Analysez le texte pour comprendre comment la rhétorique institutionnelle occulte la complexité des données urbaines, puis répondez aux questions de compréhension critique.",
+      "en": "Analysez le texte pour comprendre comment la rhétorique institutionnelle occulte la complexité des données urbaines, puis répondez aux questions de compréhension critique."
+    },
+    "targetText": "La municipalité de Val-de-Sambre vient de publier un bilan triomphal concernant la sécurisation de l'artère commerçante, focalisant l'attention publique sur le nouveau passage piéton surélevé installé au carrefour de la République. Selon le rapport rédigé par la direction de la voirie sous la supervision de l'ingénieur en chef Marc Vanestein, les statistiques de sinistralité routière ont chuté de manière spectaculaire depuis la mise en service de cet aménagement enrobé de résine rouge. Les autorités locales brandissent ces chiffres comme la preuve irréfutable de l'efficacité de leur politique urbanistique, vantant un investissement qui aurait transformé un point noir du réseau en havre de paix pour les usagers vulnérables. Pourtant, derrière l'unanimité apparente des communiqués de presse, une lecture minutieuse des annexes techniques révèle une omission méthodologique troublante qui jette le discrédit sur la causalité univoque vendue aux contribuables.\n\nEn effet, l'inauguration du passage piéton a coïncidé presque jour pour jour avec l'abrogation de la vitesse maximale autorisée, abaissée de cinquante à trente kilomètres par heure sur l'ensemble de la portion commerciale, couplée à l'installation de deux radars pédagogiques préventifs. Alors que les associations d'usagers de la route, menées par la porte-parole Élise Moreau, tentaient d'attirer l'attention sur cette double intervention, les services techniques ont méthodiquement isolé l'impact de l'infrastructure physique tout en reléguant la mesure de police de circulation au rang de simple variable secondaire. Cette dichotomie artificielle arrange manifestement l'exécutif municipal, désireux d'attribuer les mérites de la baisse des collisions à une réalisation concutable et photogénique plutôt qu'à une décision réglementaire impopulaire auprès des automobilistes pressés.\n\nLe rapport omet de mentionner que la configuration géométrique de la voirie, caractérisée par une visibilité accrue grâce à la suppression de trois places de stationnement, jouait déjà un rôle prépondérant dans l'apaisement de la circulation avant même que les premiers coups de pioche ne soient donnés. En voulant simplifier à l'extrême un phénomène multifactoriel pour les besoins de sa communication politique, l'administration s'expose à une critique de fond sur la probité de ses indicateurs de performance. Les commerçants du quartier, initialement sceptiques face aux perturbations engendrées par le chantier, saluent aujourd'hui le calme retrouvé sans chercher à démêler l'écheveau des causes réelles, satisfaits de voir le flux de chalands reprendre sans encombre.\n\nPourtant, cette confusion volontaire entre aménagement physique et régulation de vitesse soulève des questions éthiques quant à l'instrumentalisation des données publiques par les décideurs locaux. Lorsqu'un rapport officiel occulte sciemment un facteur aussi déterminant qu'une restriction de vitesse pour glorifier le béton et la signalétique lumineuse, il ne s'agit plus seulement d'une maladresse administrative, mais d'une manipulation délibérée du débat démocratique. Les conseillers municipaux de l'opposition, bien qu'ayant tenté de soulever le paradoxe lors du dernier conseil plénier, se sont heurtés au mur de la majorité qui brandit le taux de satisfaction des riverains comme un blanc-seing indiscutable.\n\nÀ terme, cette dissonance narrative risque de fragiliser la confiance des citoyens envers les expertises techniques censées guider les politiques de mobilité durable. Si chaque succès est indûment attribué à la brique et au mortier au détriment des changements de comportements induits par la loi, la planification urbaine perd sa boussole scientifique au profit du pur storytelling électoral. La ville de Val-de-Sambre, loin de constituer un modèle reproductible d'urbanisme bienveillant, illustre plutôt la persistance d'une gouvernance tentée par le mirage technocratique, où l'objectivité des faits cède systématiquement le pas aux impératifs de la communication institutionnelle.\n\nCette dérive communicationnelle trouve également un écho particulièrement préoccupant dans la gestion future des budgets d'investissement alloués aux infrastructures de transport. En effet, en validant l'idée fausse que seuls les aménagements lourds et esthétiques garantissent la sécurité des usagers, la municipalité s'interdit de financer des mesures immatérielles pourtant bien moins onéreuses et souvent plus redoutables d'efficacité, telles que des campagnes de sensibilisation ciblées ou un renforcement ponctuel des contrôles automatisés. Les ingénieurs de la voirie, relégués au rang de simples exécutants d'une propagande visuelle, voient ainsi leur expertise compromise par des choix politiques court-termistes qui sacrifient la rigueur scientifique sur l'autel de la popularité numérique. Les citoyens, quant à eux, piégés dans cette illusion sécuritaire, continuent d'applaudir des interventions cosmétiques tout en ignorant les véritables leviers d'une transition vers une mobilité réellement apaisée. Cette situation ubuesque démontre à quel point la démocratie locale peine à s'affranchir du spectacle permanent, transformant chaque décision d'intérêt général en un produit marketing destiné à flatter l'électeur plutôt qu'à transformer durablement la cité.",
+    "wordCount": 730,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sinistralité",
+        "lemma": "sinistralité",
+        "glosses": {
+          "es": "accident rate",
+          "en": "accident rate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irréfutable",
+        "lemma": "irréfutable",
+        "glosses": {
+          "es": "unrefutable",
+          "en": "unrefutable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abrogation",
+        "lemma": "abrogation",
+        "glosses": {
+          "es": "repeal",
+          "en": "repeal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dichotomie",
+        "lemma": "dichotomie",
+        "glosses": {
+          "es": "dichotomy",
+          "en": "dichotomy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "probité",
+        "lemma": "probité",
+        "glosses": {
+          "es": "probity",
+          "en": "probity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "storytelling",
+        "lemma": "storytelling",
+        "glosses": {
+          "es": "storytelling",
+          "en": "storytelling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 34.8,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de cet article critique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'analyse critique d'un rapport officiel masquant une cause réglementaire"
+        },
+        {
+          "id": "a2",
+          "text": "La transformation complète du réseau routier urbain par la municipalité"
+        },
+        {
+          "id": "a3",
+          "text": "La contestation violente des commerçants contre la piétonnisation"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "un rapport officiel occulte sciemment un facteur aussi déterminant qu'une restriction de vitesse pour glorifier le béton et la signalétique lumineuse",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle mesure réglementaire a été appliquée en même temps que l'inauguration du passage ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'interdiction totale des véhicules utilitaires dans la zone"
+        },
+        {
+          "id": "a2",
+          "text": "L'abrogation de la vitesse maximale ramenée à trente kilomètres par heure"
+        },
+        {
+          "id": "a3",
+          "text": "La gratuité des transports en commun pour tous les riverains"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'inauguration du passage piéton a coïncidé presque jour pour jour avec l'abrogation de la vitesse maximale autorisée, abaissée de cinquante à trente kilomètres par heure",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi la municipalité privilégie-t-elle l'aménagement physique dans sa communication ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Parce que le béton est moins coûteux que les radars pédagogiques"
+        },
+        {
+          "id": "a2",
+          "text": "Pour éviter d'admettre que les automobilistes respectent les nouvelles lois"
+        },
+        {
+          "id": "a3",
+          "text": "Pour valoriser une réalisation concrète et photogénique plutôt qu'une règle impopulaire"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "désireux d'attribuer les mérites de la baisse des collisions à une réalisation concutable et photogénique plutôt qu'à une décision réglementaire impopulaire auprès des automobilistes pressés.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de l'auteur dans ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dénoncer la manipulation des données publiques par les décideurs locaux"
+        },
+        {
+          "id": "a2",
+          "text": "Suggérer des solutions techniques pour améliorer la sécurité routière"
+        },
+        {
+          "id": "a3",
+          "text": "Louer le travail des associations d'usagers de la route"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il ne s'agit plus seulement d'une maladresse administrative, mais d'une manipulation délibérée du débat démocratique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général employé par l'auteur face au rapport municipal ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutre et purement informatif"
+        },
+        {
+          "id": "a2",
+          "text": "Sceptique et incisif"
+        },
+        {
+          "id": "a3",
+          "text": "Louangeur et admiratif"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "une lecture minutieuse des annexes techniques révèle une omission méthodologique troublante qui jette le discrédit sur la causalité univoque vendue aux contribuables.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme \"probité\" dans le troisième paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La complexité financière d'un projet"
+        },
+        {
+          "id": "a2",
+          "text": "La rapidité d'exécution des travaux"
+        },
+        {
+          "id": "a3",
+          "text": "L'honnêteté et la rigueur morale"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'administration s'expose à une critique de fond sur la probité de ses indicateurs de performance.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire argumenté d'environ deux cents mots dans lequel vous examinez comment les institutions publiques utilisent parfois la communication visuelle pour occulter d'autres facteurs politiques ou réglementaires.",
+      "en": "Rédigez un commentaire argumenté d'environ deux cents mots dans lequel vous examinez comment les institutions publiques utilisent parfois la communication visuelle pour occulter d'autres facteurs politiques ou réglementaires."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez le texte pour comprendre comment la rhétorique institutionnelle occulte la complexité des données urbaines, puis répondez aux questions de compréhension critique.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion du passage | C1 Reading | WeLearn",
+      "en": "L'illusion du passage | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet article critique portant sur l'inauguration d'une infrastructure piétonne et analysez les biais méthodologiques du rapport officiel présenté.",
+      "en": "Lisez cet article critique portant sur l'inauguration d'une infrastructure piétonne et analysez les biais méthodologiques du rapport officiel présenté."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

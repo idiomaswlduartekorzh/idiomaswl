@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-library-window",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Les Silences Prolongés",
+      "en": "Les Silences Prolongés"
+    },
+    "intro": {
+      "es": "Lisez cet extrait de journal intime sur la gestion des horaires d'une bibliothèque municipale et répondez aux questions.",
+      "en": "Lisez cet extrait de journal intime sur la gestion des horaires d'une bibliothèque municipale et répondez aux questions."
+    },
+    "mission": {
+      "es": "Analyser les enjeux de l'extension des horaires d'ouverture à travers le prisme de l'accessibilité réelle et de la charge de travail.",
+      "en": "Analyser les enjeux de l'extension des horaires d'ouverture à travers le prisme de l'accessibilité réelle et de la charge de travail."
+    },
+    "targetText": "Le carnet de bord de Juliette, directrice adjointe de la bibliothèque intercommunale de Val-de-Sarthe, reposait ouvert sur son bureau, taché d'une éclaboussure de café froid qui maculait la page du 14 novembre. Depuis l'adoption du décret municipal imposant l'ouverture continue de huit heures à vingt-deux heures, sept jours sur sept, l'établissement respirait une agitation feutrée mais incessante. Les autorités locales avaient célébré cette mesure comme une victoire éclatante pour l'égalité culturelle, brandissant l'argument massue de la modernité : une infrastructure publique se doit d'être disponible à toute heure pour s'adapter aux rythmes de vie fragmentés du XXIe siècle. Pourtant, sous la plume de Juliette, la réalité quotidienne se dessinait sous des traits beaucoup plus sombres, oscillant entre l'épuisement des équipes et le paradoxe d'un lieu paradoxalement déserté par ceux qu'il prétendait servir.\n\nAu cours des premières semaines, l'affluence vespérale avait effectivement gonflé les statistiques de fréquentation, un chiffre brandi avec triomphe par le conseil d'administration lors des réunions budgétaires. Des étudiants en quête de silence nocturne, des télétravailleurs en mal de connexion haut débit et quelques promeneurs égarés venaient occuper les vastes travées baignées d'une lumière crue. Mais Juliette notait avec une lucidité caustique que ces nouveaux usagers n'étaient en réalité que les bénéficiaires d'un privilège déjà acquis, des privilégiés de la flexibilité capables d'aménager leur temps à leur guise. Pour eux, la bibliothèque n'était qu'un salon secondaire, un espace de coworking gratuit et bien chauffé, loin de la mission émancipatrice originelle de l'institution.\n\nLe véritable fossé se creusait précisément là où l'on prétendait l'abolir. Les familles monoparentales des quartiers périphériques, les ouvriers aux horaires décalés et les personnes âgées isolées, pour qui l'accès à la culture représentait un véritable parcours du combattant, continuaient de briller par leur absence après dix-neuf heures. Les transports en commun se raréfiaient, l'insécurité perçue aux abords du parvis augmentait à mesure que la nuit s'installait, et par-dessus tout, la fatigue endémique du personnel commençait à peser lourdement sur la qualité de l'accueil diurne. En voulant tout offrir à tout le monde tout le temps, la bibliothèque avait dilué ses ressources humaines et financières dans des plages horaires creuses, au détriment des ateliers d'alphabétisation et des permanences d'accompagnement numérique qui faisaient autrefois la sève sociale du lieu.\n\nLa tension atteignit son paroxysme lors de l'incident du mardi soir, rapporté avec force détails dans les marges du carnet. Vers vingt et une heures quinze, alors que la grande salle d'étude ne comptait plus que trois individus absorbés par leurs écrans lumineux, un agent d'entretien avait dû refuser l'entrée à une grand-mère et sa petite-fille venue chercher en urgence un ouvrage de littérature jeunesse pour un exposé scolaire matinal. La porte automatique s'était refermée sur leur incompréhension, le règlement intérieur interdisant toute nouvelle admission une heure avant la fermeture pour des raisons de sécurité prétendument impérieuses. Juliette écrivait : « Nous maintenons allumés des lustres gigantesques pour trois étudiants sur ordinateurs portables, tandis que nous fermons la porte au nez des véritables usagers en difficulté. Extension des murs et des heures ne rime point avec démocratisation. »\n\nAu terme de ce mois d'expérimentation forcée, la directrice adjointe déposa son stylo, consciente que le rapport qu'elle s'apprêtait à rendre au maire provoquerait une onde de choc institutionnelle. Elle savait pertinemment que les édiles privilégieraient la communication politique au détriment de l'analyse sociale, préférant l'illusion chiffrée d'un service universel à la réalité complexe d'un accompagnement ciblé. Le carnet refermé dans le tiroir verrouillé ne contenait pas seulement le constat d'un échec managérial ; il portait le témoignage discret d'une institution en train de perdre son âme au nom d'une accessibilité devenue purement formelle et déshumanisée.\n\nPourtant, malgré l'évidence de ce naufrage silencieux, les répercussions de ce rapport menaçaient d'embraser bien au-delà des murs de l'institution culturelle. En effet, la diffusion officieuse des notes de Juliette auprès de la presse locale provoqua un séisme politique inattendu, obligeant les syndicats à descendre dans l'arène pour dénoncer la mise en danger de la santé publique des agents. Les usagers nocturnes, quant à eux, s'organisèrent en comité de défense de la modernité, accusant la direction de rétrograde conservatisme face aux besoins légitimes d'une génération connectée. Pris en étau entre la fronde sociale de son personnel épuisé et la frénésie techniciste des édiles municipaux, le conseil d'administration se trouva contraint d'arbitrer ce conflit existentiel, transformant un simple débat sur les horaires d'ouverture en une véritable guerre idéologique sur la vocation profonde du service public à l'ère contemporaine.",
+    "wordCount": 743,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "feutrée",
+        "lemma": "feutrée",
+        "glosses": {
+          "es": "muffled",
+          "en": "muffled"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "caustique",
+        "lemma": "caustique",
+        "glosses": {
+          "es": "caustic",
+          "en": "caustic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "endémique",
+        "lemma": "endémique",
+        "glosses": {
+          "es": "endemic",
+          "en": "endemic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impérieuses",
+        "lemma": "impérieuses",
+        "glosses": {
+          "es": "imperative",
+          "en": "imperative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "édiles",
+        "lemma": "édiles",
+        "glosses": {
+          "es": "city officials",
+          "en": "city officials"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "déshumanisée",
+        "lemma": "déshumanisée",
+        "glosses": {
+          "es": "dehumanized",
+          "en": "dehumanized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central abordé dans le journal de Juliette ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le décalage entre l'extension des horaires et l'accessibilité réelle des publics fragiles."
+        },
+        {
+          "id": "a2",
+          "text": "La diminution drastique des budgets culturels municipaux."
+        },
+        {
+          "id": "a3",
+          "text": "La transition numérique réussie des bibliothèques publiques."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En voulant tout offrir à tout le monde tout le temps, la bibliothèque avait dilué ses ressources humaines et financières dans des plages horaires creuses, au détriment des ateliers d'alphabétisation et des permanences d'accompagnement numérique qui faisaient autrefois la sève sociale du lieu.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quel incident précis illustre le paradoxe des nouvelles règles de la bibliothèque ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La panne des portes automatiques un mardi soir."
+        },
+        {
+          "id": "a2",
+          "text": "Le refus d'entrée opposé à une grand-mère et sa petite-fille peu avant la fermeture."
+        },
+        {
+          "id": "a3",
+          "text": "La protestation violente d'étudiants privés de connexion Internet."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vers vingt et une heures quinze, alors que la grande salle d'étude ne comptait plus que trois individus absorbés par leurs écrans lumineux, un agent d'entretien avait dû refuser l'entrée à une grand-mère et sa petite-fille venue chercher en urgence un ouvrage de littérature jeunesse pour un exposé scolaire matinal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment Juliette perçoit-elle les nouveaux usagers profitant des nocturnes ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Comme de nouveaux citoyens issus des quartiers défavorisés."
+        },
+        {
+          "id": "a2",
+          "text": "Comme des professionnels du livre venus aider le personnel épuisé."
+        },
+        {
+          "id": "a3",
+          "text": "Comme des personnes privilégiées qui utilisaient l'espace tel un salon secondaire."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Pour eux, la bibliothèque n'était qu'un salon secondaire, un espace de coworking gratuit et bien chauffé, loin de la mission émancipatrice originelle de l'institution.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Dans quel but les autorités locales ont-elles initialement imposé ces horaires continus ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour adapter l'infrastructure publique aux modes de vie fragmentés et promouvoir l'égalité culturelle."
+        },
+        {
+          "id": "a2",
+          "text": "Pour réduire les coûts salariaux en concentrant le personnel sur une seule plage horaire."
+        },
+        {
+          "id": "a3",
+          "text": "Pour répondre à une pétition signée par l'ensemble des habitants de la commune."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Les autorités locales avaient célébré cette mesure comme une victoire éclatante pour l'égalité culturelle, brandissant l'argument massue de la modernité : une infrastructure publique se doit d'être disponible à toute heure pour s'adapter aux rythmes de vie fragmentés du XXIe siècle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans la description que fait Juliette de la situation ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un enthousiasme béat face à la modernisation des services."
+        },
+        {
+          "id": "a2",
+          "text": "Une lucidité caustique teintée de désillusion face aux décisions politiques."
+        },
+        {
+          "id": "a3",
+          "text": "Une neutralité scientifique dépourvue de tout engagement personnel."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Mais Juliette notait avec une lucidité caustique que ces nouveaux usagers n'étaient en réalité que les bénéficiaires d'un privilège déjà acquis, des privilégiés de la flexibilité capables d'aménager leur temps à leur guise.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « édiles » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les usagers réguliers de la bibliothèque."
+        },
+        {
+          "id": "a2",
+          "text": "Les agents d'entretien de l'établissement."
+        },
+        {
+          "id": "a3",
+          "text": "Les représentants municipaux ou dirigeants locaux."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elle savait pertinemment que les édiles privilégieraient la communication politique au détriment de l'analyse sociale, préférant l'illusion chiffrée d'un service universel à la réalité complexe d'un accompagnement ciblé.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif d'environ 200 mots dans lequel vous discutez de la distinction entre l'ouverture prolongée d'un service public et son accessibilité réelle pour l'ensemble des citoyens.",
+      "en": "Rédigez un court essai argumentatif d'environ 200 mots dans lequel vous discutez de la distinction entre l'ouverture prolongée d'un service public et son accessibilité réelle pour l'ensemble des citoyens."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyser les enjeux de l'extension des horaires d'ouverture à travers le prisme de l'accessibilité réelle et de la charge de travail.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Les Silences Prolongés | C1 Reading | WeLearn",
+      "en": "Les Silences Prolongés | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet extrait de journal intime sur la gestion des horaires d'une bibliothèque municipale et répondez aux questions.",
+      "en": "Lisez cet extrait de journal intime sur la gestion des horaires d'une bibliothèque municipale et répondez aux questions."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

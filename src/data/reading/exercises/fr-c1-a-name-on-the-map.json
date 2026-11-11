@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Hivernage des Cartographes",
+      "en": "L'Hivernage des Cartographes"
+    },
+    "intro": {
+      "es": "Exercez votre compréhension de texte de niveau C1 en analysant une fiction historique centrée sur la divergence entre la toponymie officielle et l'usage oral.",
+      "en": "Exercez votre compréhension de texte de niveau C1 en analysant une fiction historique centrée sur la divergence entre la toponymie officielle et l'usage oral."
+    },
+    "mission": {
+      "es": "Lisez attentivement le texte narratif ci-dessous, puis répondez aux six questions de lecture critique avant de rédiger une synthèse argumentée.",
+      "en": "Lisez attentivement le texte narratif ci-dessous, puis répondez aux six questions de lecture critique avant de rédiger une synthèse argumentée."
+    },
+    "targetText": "L'encre sépia de la cartographie royale avait toujours eu raison des murmures de la vallée. Dans le cabinet poussiéreux de l'administration centrale, on croyait façonner la réalité par le simple tracé d'un compas sur le vélin. Pourtant, au fond des gorges de Valombre, la rigueur géométrique des ingénieurs se heurtait à une têtue persistance phonétique. Maître Alary, arpenteur patenté du royaume, en fit l'amère découverte lorsqu'il fut mandaté pour actualiser le cadastre de la province reculée de Haute-Sève. Son prédécesseur, un vieil homme usé par les brumes et les hivers rigoureux, lui avait légué un carnet de notes taché de suie où figurait une énigme toponymique. Sur la carte officielle, le défilé rocheux s'appelait invariablement la Combe des Morts, appellation sinistre forgée à Paris par un scribe n'ayant jamais quitté son encre de chêne. En revanche, les bergers et les tisserands locaux persistaient à nommer ce même gouffre le Pas de l'Aube, évoquant le moment fugace où la lumière matinale embrasait les parois de schiste avant de s'éteindre dans l'abîme.\n\nAlary arriva au village de Pierraube par un crépuscule de novembre, le havresac alourdi par des parchemins neufs et des décrets impérieux. Il s'installa dans l'unique auberge, dont le tenancier, un taciturne du nom de Gaspard, l'observa trier ses calames avec un scepticisme non dissimulé. Le cartographe s'attendait à de la résistance administrative, mais il découvrit bien vite une forme de subversion bien plus insidieuse : l'indifférence polie. Lorsque Alary interrogea les anciens sur l'origine exacte de la Combe des Morts, on lui opposa un silence obstiné, brisé seulement par le cliquetis des tasses de faïence. Nul ne connaissait ce nom dans les chaumières, ou du moins, nul ne daignait le reconnaître. Pour les habitants, l'autorité de l'État s'arrêtait là où commençait la mémoire des vents. Un jeune chevrier, interrogé sur le bord du chemin, lui rétorqua avec une candeur désarmante que les morts n'avaient jamais habité la roche, contrairement au soleil qui y naissait chaque matin.\n\nAu fil des semaines, Alary mena son enquête topographique, mesurant les angles, triangulant les sommets et consignant les données dans ses registres avec une minutie maniaque. Mais le soir venu, il examinait ses propres doutes à la lueur d'une chandelle vacillante. Le carnet de son prédécesseur hantait ses nuits. L'ancien arpenteur n'avait pas seulement consigné des mesures ; il avait transcrit les légendes locales, consignant les variations d'accent qui transformaient un mot en un autre au gré des générations. Alary comprit alors que son travail n'était pas neutre. En imposant le nom de la Combe des Morts sur les atlas royaux, il condamnait à l'effacement un pan entier de l'identité paysanne, réduisant des siècles de poésie orale à un simple accident géographique. Pourtant, s'il modifiait les registres pour entériner le Pas de l'Aube, il trahissait son serment d'objectivité et s'exposait à la colère des censeurs métropolitains qui voyaient dans toute variation locale une sédition larvée.\n\nThe tension culminated on the last day of his tenure, when the village council gathered in the damp cellar of the communal hall to inspect the final draft of the map. Gaspard, agissant en porte-parole tacite, posa une lourde main calleuse sur le vélin encore frais. Il ne proféra aucune menace, mais ses yeux brillaient d'une certitude tranquille qui valait tous les manifestes politiques. Il expliqua à l'émissaire que les noms écrits par les hommes de l'encre s'effaceraient avec le temps, tandis que ceux prononcés par les hommes de la terre survivraient aux empires. Alary se retrouva face à un choix cornézien : plier l'échine devant la hiérarchie ou céder à la vérité vivante de la vallée.\n\nLe lendemain matin, l'arpenteur plia bagage sous une fine pellicule de givre. Sur la table de l'auberge, il laissa le cadastre officiel dûment tamponné, mais dans le tiroir secret du bureau, il glissa une feuille volante contenant le relevé phonétique des noms vernaculaires, à l'attention du prochain fou qui oserait s'aventurer dans ces montagnes. En redescendant vers la plaine, il entendit résonner au loin l'écho d'un cor de chasse. Il sut alors que la carte qu'il venait de dessiner était déjà périmée, condamnée à n'être qu'un mensonge utile pour les gouvernants, tandis que la véritable géographie de la vallée continuerait de s'écrire sur les lèvres de ses habitants.",
+    "wordCount": 707,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vélin",
+        "lemma": "vélin",
+        "glosses": {
+          "es": "fine parchment",
+          "en": "fine parchment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sédition",
+        "lemma": "sédition",
+        "glosses": {
+          "es": "rebellion or insurrection",
+          "en": "rebellion or insurrection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "calames",
+        "lemma": "calames",
+        "glosses": {
+          "es": "reed pens",
+          "en": "reed pens"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vernaculaires",
+        "lemma": "vernaculaires",
+        "glosses": {
+          "es": "local or native",
+          "en": "local or native"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arpenteur",
+        "lemma": "arpenteur",
+        "glosses": {
+          "es": "land surveyor",
+          "en": "land surveyor"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cadastre",
+        "lemma": "cadastre",
+        "glosses": {
+          "es": "official land register",
+          "en": "official land register"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.6,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit entre la toponymie officielle et la mémoire orale locale."
+        },
+        {
+          "id": "a2",
+          "text": "La découverte d'un trésor caché dans les montagnes de Haute-Sève."
+        },
+        {
+          "id": "a3",
+          "text": "La trahison d'un fonctionnaire impérial au profit des contrebandiers."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'encre sépia de la cartographie royale avait toujours eu raison des murmures de la vallée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Comment les villageois nomment-ils le défilé rocheux ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La Combe des Morts"
+        },
+        {
+          "id": "a2",
+          "text": "Le Pas de l'Aube"
+        },
+        {
+          "id": "a3",
+          "text": "La Gorge de Schiste"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "les bergers et les tisserands locaux persistaient à nommer ce même gouffre le Pas de l'Aube",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est l'attitude réelle des villageois face au travail d'Alary ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils accueillent l'arpenteur avec une violence physique manifeste."
+        },
+        {
+          "id": "a2",
+          "text": "Ils coopèrent pleinement en lui révélant tous leurs secrets."
+        },
+        {
+          "id": "a3",
+          "text": "Ils manifestent une indifférence polie et un silence obstiné."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "il découvrit bien vite une forme de subversion bien plus insidieuse : l'indifférence polie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi Alary est-il hanté par le carnet de son prédécesseur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Parce que ce document consigne des légendes et des variations d'accent qui remettent en cause la neutralité de sa mission."
+        },
+        {
+          "id": "a2",
+          "text": "Parce qu'il y découvre les plans d'une révolte armée contre le pouvoir central."
+        },
+        {
+          "id": "a3",
+          "text": "Parce qu'il contient des dettes impayées que l'ancien arpenteur a léguées au village."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'ancien arpenteur n'avait pas seulement consigné des mesures ; il avait transcrit les légendes locales, consignant les variations d'accent qui transformaient un mot en un autre au gré des générations.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans la description finale du départ d'Alary ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une satire sociale cynique et mordante."
+        },
+        {
+          "id": "a2",
+          "text": "Un lyrisme mélancolique et contemplatif."
+        },
+        {
+          "id": "a3",
+          "text": "Un suspense policier haletant et angoissant."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "En redescendant vers la plaine, il entendit résonner au loin l'écho d'un cor de chasse. Il sut alors que la carte qu'il venait de dessiner était déjà périmée",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'vélin' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un instrument de mesure"
+        },
+        {
+          "id": "a2",
+          "text": "Un vêtement d'hiver"
+        },
+        {
+          "id": "a3",
+          "text": "Un parchemin fin"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Dans le cabinet poussiéreux de l'administration centrale, on croyait façonner la réalité par le simple tracé d'un compas sur le vélin.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire argumenté de 180 à 220 mots en français, analysant la tension entre l'autorité étatique et la mémoire populaire telle qu'elle est illustrée par le choix des noms de lieux dans le texte.",
+      "en": "Rédigez un commentaire argumenté de 180 à 220 mots en français, analysant la tension entre l'autorité étatique et la mémoire populaire telle qu'elle est illustrée par le choix des noms de lieux dans le texte."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez attentivement le texte narratif ci-dessous, puis répondez aux six questions de lecture critique avant de rédiger une synthèse argumentée.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Hivernage des Cartographes | C1 Reading | WeLearn",
+      "en": "L'Hivernage des Cartographes | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Exercez votre compréhension de texte de niveau C1 en analysant une fiction historique centrée sur la divergence entre la toponymie officielle et l'usage oral.",
+      "en": "Exercez votre compréhension de texte de niveau C1 en analysant une fiction historique centrée sur la divergence entre la toponymie officielle et l'usage oral."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

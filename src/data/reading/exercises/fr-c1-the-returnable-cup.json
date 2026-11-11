@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de l'amphore verte",
+      "en": "L'illusion de l'amphore verte"
+    },
+    "intro": {
+      "es": "Examinez l'écart entre la comptabilité superficielle des déchets et la complexité logistique des alternatives durables à travers cet article critique.",
+      "en": "Examinez l'écart entre la comptabilité superficielle des déchets et la complexité logistique des alternatives durables à travers cet article critique."
+    },
+    "mission": {
+      "es": "Lisez le texte et répondez aux questions pour analyser les contradictions inhérentes aux politiques environnementales des entreprises.",
+      "en": "Lisez le texte et répondez aux questions pour analyser les contradictions inhérentes aux politiques environnementales des entreprises."
+    },
+    "targetText": "Au cœur du quartier des affaires de Lyon, le cabinet de conseil Novae a récemment publié son bilan annuel de transition écologique, saluant avec enthousiasme la suppression quasi totale des gobelets jetables dans ses locaux. Sous l'impulsion de sa directrice de la RSE, Élodie Marceau, l'entreprise a remplacé ces consommables par des tasses en céramique personnalisées, présentées comme le symbole tangible d'un engagement écoresponsable irréprochable. Lors d'une réunion de cadrage matinale, Marc Vasseur, responsable de la logistique, avait pourtant tenté d'alerter la direction sur les angles morts de cette transition. Selon ses estimations informelles, la disparition de milliers de portions de carton par mois ne suffisait pas à masquer l'alourdissement significatif des charges indirectes et de l'empreinte hydrique. Si les collaborateurs applaudissent unanimement la disparition des déchets plastiques sur leurs bureaux, ils ignorent superbement les répercussions systémiques qu'implique cette substitution esthétique.\n\nLe nœud du problème réside dans le protocole de nettoyage de ces nouvelles tasses. Chaque soir, après le départ des consultants, deux agents d'entretien doivent faire tourner des cycles de lave-vaisselle industriels à haute température pour désinfecter le millier de récipients accumulés au cours de la journée. Cette opération consomme quotidiennement des volumes d'eau considérables ainsi qu'une énergie thermique non négligeable, compensant largement les économies de CO2 réalisées en amont sur la fabrication du papier. De surcroît, le fabricant des céramiques, basé en Bohême, achemine ses produits par poids lourd sur plus de neuf cents kilomètres, alourdissant le bilan carbone initial. Marc Vasseur avait souligné ce paradoxe lors de l'audit de livraison, mais ses réserves techniques avaient été balayées d'un revers de main par le département de la communication, soucieux de valider un indicateur visuel flatteur pour le rapport annuel.\n\nLa tension entre la réalité opérationnelle et la communication institutionnelle a atteint son paroxysme lors de la venue d'un auditeur externe, mandaté pour certifier le label écologique de Novae. En examinant les factures d'eau et les registres de maintenance des machines, l'expert a tiqué sur la hausse abrupte des consommations fluides, remettant en cause la pertinence globale du dispositif. Élodie Marceau a tenté de défendre la démarche en invoquant l'exemplarité comportementale des salariés, tout en admettant à demi-mot que l'impact aquatique n'avait pas fait l'objet d'une modélisation préalable. L'auditeur a dès lors pointé une dissonance cognitive récurrente dans les politiques de développement durable : la propension à privilégier les métriques immédiatement visibles au détriment d'une analyse holistique du cycle de vie des objets.\n\nPour tenter de désamorcer la fronde interne menée discrètement par l'équipe logistique, la direction a organisé une table ronde vendredi dernier. Marc Vasseur y a exposé des chiffres précis, démontrant que l'empreinte environnementale globale de la céramique ne s'amortirait qu'au bout de sept années d'utilisation intensive, un horizon temporel largement supérieur au taux de rotation du personnel et à la durée de vie moyenne des tasses, souvent ébréchées ou égarées. Les arguments factuels du logisticien ont jeté un froid dans l'assemblée, ruinant l'ambiance triomphale qu'Élodie Marceau s'efforçait de maintenir. Les cadres dirigeants se sont retrouvés face à une impasse stratégique : persister dans l'illusion d'un succès cosmétique ou reconnaître publiquement l'échec méthodologique de leur mesure phare.\n\nL'épilogue de cette crise interne s'est soldé par un statu quo bureaucratique. Aucune modification concrète du protocole n'a été votée, mais le rapport RSE a été amendé en urgence pour y ajouter une note de bas de page mentionnant pudiquement les défis inhérents à la gestion des ustensiles réutilisables. Élodie Marceau a conservé ses prérogatives, bien que son autorité morale se soit trouvée écornée auprès des services techniques. Quant aux tasses en céramique, elles continuent de trôner sur les bureaux, devenant le monument silencieux d'une transition bien-pensante qui déplace le fardeau écologique au lieu de le résoudre.\n\nCette situation ubuesque illustre parfaitement les dérives du greenwashing institutionnel, où la forme l'emporte invariablement sur le fond. En voulant incarner la modernité écoresponsable à moindre frais intellectuel, le cabinet s'est enfermé dans un piège rhétorique dont il ne peut plus sortir sans perdre la face. Les salariés, désormais conscients de cette supercherie malgré eux, utilisent ces récipients avec une ironie mordante, transformant chaque pause-café en un acte de résistance passive. Au-delà de l'anecdote lyonnaise, cet épisode questionne la capacité réelle des entreprises à repenser globalement leur modèle productif face à l'urgence climatique.",
+    "wordCount": 710,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "consommables",
+        "lemma": "consommables",
+        "glosses": {
+          "es": "disposable items",
+          "en": "disposable items"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "empreinte",
+        "lemma": "empreinte",
+        "glosses": {
+          "es": "footprint",
+          "en": "footprint"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "balayées",
+        "lemma": "balayées",
+        "glosses": {
+          "es": "dismissed",
+          "en": "dismissed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonance",
+        "lemma": "dissonance",
+        "glosses": {
+          "es": "discrepancy",
+          "en": "discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fronde",
+        "lemma": "fronde",
+        "glosses": {
+          "es": "rebellion",
+          "en": "rebellion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "statu quo",
+        "lemma": "statu quo",
+        "glosses": {
+          "es": "current state",
+          "en": "current state"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.3,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central abordé dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le décalage entre la communication écologique et la réalité logistique."
+        },
+        {
+          "id": "a2",
+          "text": "L'obligation légale de trier sélectivement les déchets de bureau pour réduire l'impact environnemental global de la société."
+        },
+        {
+          "id": "a3",
+          "text": "La complexité financière inhérente au remplacement des ustensiles en plastique par des récipients durables et écoresponsables."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le nœud du problème réside dans le protocole de nettoyage de ces nouvelles tasses.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "D'où proviennent les tasses en céramique utilisées par le cabinet Novae ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "De Lyon."
+        },
+        {
+          "id": "a2",
+          "text": "De Bohême."
+        },
+        {
+          "id": "a3",
+          "text": "D'Allemagne."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "De surcroît, le fabricant des céramiques, basé en Bohême, achemine ses produits par poids lourd sur plus de neuf cents kilomètres",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment la direction perçoit-elle initialement les remarques de Marc Vasseur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle les écoute attentivement pour réajuster le budget."
+        },
+        {
+          "id": "a2",
+          "text": "Elle les transmet immédiatement à l'auditeur externe."
+        },
+        {
+          "id": "a3",
+          "text": "Elle les rejette car elles nuisent à leur communication."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "mais ses réserves techniques avaient été balayées d'un revers de main par le département de la communication, soucieux de valider un indicateur visuel flatteur pour le rapport annuel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi la direction a-t-elle organisé la table ronde de vendredi dernier ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour tenter de désamorcer la contestation menée par l'équipe logistique."
+        },
+        {
+          "id": "a2",
+          "text": "Pour valider le budget prévisionnel et présenter les résultats financiers."
+        },
+        {
+          "id": "a3",
+          "text": "Pour officialiser le partenariat avec le nouveau fournisseur de vaisselle."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Pour tenter de désamorcer la fronde interne menée discrètement par l'équipe logistique, la direction a organisé une table ronde vendredi dernier.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton employé par l'auteur pour décrire l'action de l'entreprise Novae ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Détaché."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et ironique face aux illusions écologiques."
+        },
+        {
+          "id": "a3",
+          "text": "Élogieux et laudatif face aux initiatives écoresponsables de la société."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Quant aux tasses en céramique, elles continuent de trôner sur les bureaux, devenant le monument silencieux d'une transition bien-pensante qui déplace le fardeau écologique au lieu de le résoudre.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot \"fronde\" dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un accord."
+        },
+        {
+          "id": "a2",
+          "text": "Un pacte."
+        },
+        {
+          "id": "a3",
+          "text": "Une révolte discrète."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Pour tenter de désamorcer la fronde interne menée discrètement par l'équipe logistique",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire critique d'environ 150 mots analysant comment les entreprises peuvent éviter les pièges du « greenwashing » dans leurs choix logistiques.",
+      "en": "Rédigez un commentaire critique d'environ 150 mots analysant comment les entreprises peuvent éviter les pièges du « greenwashing » dans leurs choix logistiques."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez le texte et répondez aux questions pour analyser les contradictions inhérentes aux politiques environnementales des entreprises.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de l'amphore verte | C1 Reading | WeLearn",
+      "en": "L'illusion de l'amphore verte | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Examinez l'écart entre la comptabilité superficielle des déchets et la complexité logistique des alternatives durables à travers cet article critique.",
+      "en": "Examinez l'écart entre la comptabilité superficielle des déchets et la complexité logistique des alternatives durables à travers cet article critique."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La Voix de l'Archiviste",
+      "en": "La Voix de l'Archiviste"
+    },
+    "intro": {
+      "es": "Lisez cette nouvelle sur le dilemme éthique de la transcription d'archives orales, puis répondez aux questions et rédigez une analyse.",
+      "en": "Lisez cette nouvelle sur le dilemme éthique de la transcription d'archives orales, puis répondez aux questions et rédigez une analyse."
+    },
+    "mission": {
+      "es": "Analysez les tensions entre la rigueur archivistique et la fidélité littéraire dans la préservation de la mémoire orale.",
+      "en": "Analysez les tensions entre la rigueur archivistique et la fidélité littéraire dans la préservation de la mémoire orale."
+    },
+    "targetText": "Dans la pénombre feutrée du dépôt d'archives sonores, l'air sentait le vieux papier et la poussière chauffée par les radiateurs en fonte. Hélène ajusta son casque audio, son regard rivé sur la forme d'onde numérique qui défilait à l'écran. Depuis trois décennies, elle classait, nettoyait et répertoriait les témoignages des derniers marins-pêcheurs de la côte atlantique, convaincue que son rôle était de soustraire ces voix aux ravages du temps. Devant elle, sur le bureau en chêne massif, gisait la transcription brute de l'entretien réalisé la veille avec le vieux Yves, un doyen du port dont le souffle rauque et les hésitations rythmaient le fichier sonore. Pourtant, la quiétude de son sanctuaire méthodique fut troublée par l'arrivée brusque de Marc, le conteur en résidence, dont la silhouette s'engouffra dans la pièce en brandissant les épreuves du futur recueil édité par l'institution.\n\nMarc s'installa sans y être invité, posant un café fumant à côté des dossiers cartonnés. Il venait de relire la version provisoire du chapitre consacré à la tempête de quatre-vingt-dix-neuf, telle qu'Hélène l'avait préparée pour publication. « Hélène, il faut absolument lisser ces tournures bancales », s'exclama-t-il en tapotant du doigt une page criblée de corrections au stylo rouge. Pour Marc, un récit destiné à un public large devait s'affranchir des scories syntaxiques, des redondances et des ruptures de construction qui émaillaient la parole spontanée d'Yves. À ses yeux, le conteur avait le devoir impérieux de sculpter la matière brute pour en révéler la puissance dramatique, quitte à supprimer les hésitations orales qui, selon lui, nuisaient à la fluidité et transformaient un témoignage vibrant en une lecture laborieuse et déroutante.\n\nHélène retira son casque, un pli soucieux marquant son front. Elle reconnut volontiers que la prose d'Yves, retranscrite au mot près, présentait des aspérités syntaxiques déroutantes et des répétitions lexicales qui pouvaient lasser un lecteur non initié. Céder à cette facilité éditoriale lui paraissait toutefois constituer une trahison fondamentale de l'éthique mémorielle qu'elle servait. « Si nous rectifions la syntaxe, si nous remplaçons ses tournures régionales par un français normé, nous n'enregistrons plus Yves ; nous fabriquons un porte-voix factice qui nous ressemble », rétorqua-t-elle avec une fermeté tranquille. Pour elle, chaque anacoluthe et chaque silence constituaient les empreintes digitales d'une conscience, les traces indélébiles d'une existence laborieuse que la correction académique effaçait irrémédiablement au nom d'un idéal esthétique standardisé.\n\nLe débat s'envenima, glissant du terrain purement technique vers une confrontation philosophique irréconciliable sur la nature même de la vérité historique. Marc soutenait avec passion que la vérité d'un récit réside dans son impact émotionnel et sa capacité à captiver l'auditoire, arguant qu'un texte mal agencé détourne l'attention du lecteur et amoindrit la portée universelle de l'expérience humaine racontée. Hélène, arc-boutée sur sa déontologie d'archiviste, lui opposait que la violence de la normalisation institutionnelle prive les locuteurs populaires de leur autonomie discursive, transformant leurs propos en objets folkloriques aseptisés et inoffensifs. L'entretien de la veille n'était pas seulement une source d'informations factuelles ; c'était la manifestation vivante d'une altérité irréductible que les institutions s'empressaient trop souvent de domestiquer pour la rendre consommable par le grand public.\n\nLa confrontation prit fin sans compromis lorsque les carillons de l'horloge murale annoncèrent la fermeture du bâtiment. Marc quitta la pièce en emportant ses manuscrits sous le bras, agacé par ce qu'il qualifiait de dogmatisme stérile, tandis qu'Hélène resta seule dans le silence retrouvé du dépôt. Elle replongea dans son écoute, les écouteurs pressés contre ses oreilles, cherchant dans le grain de la voix d'Yves la justification obstinée de son combat. Elle décida alors de maintenir l'intégralité des aspérités textuelles dans la version définitive, sachant pertinemment que ce choix marginaliserait l'ouvrage auprès des maisons d'édition commerciales mais préserverait l'intégrité souveraine d'une mémoire menacée d'extinction par les ciseaux bienveillants de la mise en récit.\n\nPourtant, cette décision de préserver l'intégrité brute des témoignages souleva rapidement de nouveaux paradoxes au sein même de l'institution. En refusant toute intervention stylistique, Hélène et ses partisans risquaient d'enfermer ces récits dans un entre-soi hermétique, où la radicalité de la forme finissait par décourager les lecteurs les plus curieux, réduisant paradoxalement la portée politique et sociale de la transmission qu'ils défendaient avec tant de ferveur. Certains critiques culturels commencèrent à faire valoir que l'accessibilité n'était pas nécessairement synonyme de trahison, mais qu'elle pouvait au contraire constituer un pont nécessaire entre des univers éloignés, permettant à une mémoire populaire marginalisée de traverser les frontières de son milieu d'origine pour toucher durablement de larges publics.",
+    "wordCount": 743,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "scories",
+        "lemma": "scories",
+        "glosses": {
+          "es": "flaws",
+          "en": "flaws"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "anacoluthe",
+        "lemma": "anacoluthe",
+        "glosses": {
+          "es": "syntax break",
+          "en": "syntax break"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irréductible",
+        "lemma": "irréductible",
+        "glosses": {
+          "es": "unyielding",
+          "en": "unyielding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aseptisés",
+        "lemma": "aseptisés",
+        "glosses": {
+          "es": "sanitized",
+          "en": "sanitized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dogmatisme",
+        "lemma": "dogmatisme",
+        "glosses": {
+          "es": "dogmatism",
+          "en": "dogmatism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aspérités",
+        "lemma": "aspérités",
+        "glosses": {
+          "es": "rough edges",
+          "en": "rough edges"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.6,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet central qui oppose les deux protagonistes dans ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La méthode de conservation et de transcription de la mémoire orale."
+        },
+        {
+          "id": "a2",
+          "text": "Le financement des publications littéraires de l'institution."
+        },
+        {
+          "id": "a3",
+          "text": "Le choix des marins interviewés pour le projet d'archives."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Depuis trois décennies, elle classait, nettoyait et répertoriait les témoignages des derniers marins-pêcheurs de la côte atlantique, convaincue que son rôle était de soustraire ces voix aux ravages du temps.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Que reproche précisément Marc à la transcription initiale préparée par Hélène ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle contient des erreurs factuelles sur la tempête de quatre-vingt-dix-neuf."
+        },
+        {
+          "id": "a2",
+          "text": "Elle présente des tournures bancales et des redondances qui nuisent à la lecture."
+        },
+        {
+          "id": "a3",
+          "text": "Elle est trop courte pour figurer dans le futur recueil édité."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Pour Marc, un récit destiné à un public large devait s'affranchir des scories syntaxiques, des redondances et des ruptures de construction qui émaillaient la parole spontanée d'Yves.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment Hélène perçoit-elle l'acte de normaliser la syntaxe d'un témoignage ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Comme un hommage respectueux rendu à l'auteur du récit."
+        },
+        {
+          "id": "a2",
+          "text": "Comme une étape technique indispensable à toute publication réussie."
+        },
+        {
+          "id": "a3",
+          "text": "Comme une trahison qui fabrique un faux témoignage standardisé."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "« Si nous rectifions la syntaxe, si nous remplaçons ses tournures régionales par un français normé, nous n'enregistrons plus Yves ; nous fabriquons un porte-voix factice qui nous ressemble »",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de Marc en voulant modifier le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Rendre le texte plus captivant et accessible pour un public élargi."
+        },
+        {
+          "id": "a2",
+          "text": "Permettre au vieux Yves de devenir un auteur reconnu."
+        },
+        {
+          "id": "a3",
+          "text": "Réduire les coûts d'impression du futur ouvrage."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Marc soutenait avec passion que la vérité d'un récit réside dans son impact émotionnel et sa capacité à captiver l'auditoire, arguant qu'un texte mal agencé détourne l'attention du lecteur et amoindrit la portée universelle de l'expérience humaine racontée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quelle est la tonalité générale qui se dégage de la fin de cette confrontation ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une résolution joyeuse et unanime des divergences."
+        },
+        {
+          "id": "a2",
+          "text": "Une tension intellectuelle non résolue et mélancolique."
+        },
+        {
+          "id": "a3",
+          "text": "Une satire humoristique du milieu institutionnel."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La confrontation prit fin sans compromis lorsque les carillons de l'horloge murale annoncèrent la fermeture du bâtiment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot « aspérités » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les défauts de prononciation dus à l'âge avancé du locuteur."
+        },
+        {
+          "id": "a2",
+          "text": "Les critiques acerbes formulées par le conteur contre l'archiviste."
+        },
+        {
+          "id": "a3",
+          "text": "Les particularités rugueuses et irrégulières du langage oral spontané."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elle reconnut volontiers que la prose d'Yves, retranscrite au mot près, présentait des aspérités syntaxiques déroutantes et des répétitions lexicales qui pouvaient lasser un lecteur non initié.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumenté en français (250-300 mots) dans lequel vous discutez s'il est préférable de corriger la grammaire d'un témoignage oral pour le rendre accessible ou de conserver la trace brute de sa formulation originale.",
+      "en": "Rédigez un court essai argumenté en français (250-300 mots) dans lequel vous discutez s'il est préférable de corriger la grammaire d'un témoignage oral pour le rendre accessible ou de conserver la trace brute de sa formulation originale."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez les tensions entre la rigueur archivistique et la fidélité littéraire dans la préservation de la mémoire orale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La Voix de l'Archiviste | C1 Reading | WeLearn",
+      "en": "La Voix de l'Archiviste | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cette nouvelle sur le dilemme éthique de la transcription d'archives orales, puis répondez aux questions et rédigez une analyse.",
+      "en": "Lisez cette nouvelle sur le dilemme éthique de la transcription d'archives orales, puis répondez aux questions et rédigez une analyse."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

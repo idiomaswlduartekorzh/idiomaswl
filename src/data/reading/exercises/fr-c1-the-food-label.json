@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-food-label",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de la fraîcheur : critique comparée des étiquettes alimentaires",
+      "en": "L'illusion de la fraîcheur : critique comparée des étiquettes alimentaires"
+    },
+    "intro": {
+      "es": "Analysez un compte-rendu critique évaluant l'impact comportemental de deux étiquettes de péremption concurrentes, puis répondez aux questions de compréhension.",
+      "en": "Analysez un compte-rendu critique évaluant l'impact comportemental de deux étiquettes de péremption concurrentes, puis répondez aux questions de compréhension."
+    },
+    "mission": {
+      "es": "Lisez attentivement le texte critique pour évaluer les nuances rhétoriques et les tensions sous-jacentes liées à la psychologie du consommateur, puis traitez les exercices d'analyse.",
+      "en": "Lisez attentivement le texte critique pour évaluer les nuances rhétoriques et les tensions sous-jacentes liées à la psychologie du consommateur, puis traitez les exercices d'analyse."
+    },
+    "targetText": "Dans le paysage de la distribution contemporaine, la sémantique de l'emballage est devenue un champ de bataille idéologique où s'affrontent des visions radicalement divergentes de la responsabilité domestique. Récemment, le cabinet d'études dirigé par Élodie Varin a publié une note critique percutante qui dissèque les stratégies de communication de deux enseignes nationales, « Fraîcheur Optimale » et « Consommer Juste », face au fléau persistant du gaspillage alimentaire. L'étude se penche sur un cas d'école : deux produits laitiers rigoureusement identiques, issus de la même chaîne de production, mais affichant des mentions de péremption aux antipodes de la neutralité bureaucratique. D'un côté, « Fraîcheur Optimale » maintient la formule canonique « À consommer de préférence avant le », un syntagme juridiquement protecteur mais psychologiquement anxiogène qui pousse le citoyen pressé à la récrimination préventive. De l'autre, « Consommer Juste » expérimente une injonction audacieuse, voire subversive dans sa familiarité : « Souvent bon après, fiez-vous à vos sens », une formule importée des pays nordiques qui déplace la charge de la décision du calendrier vers le consommateur. Varin orchestre une confrontation minutieuse entre ces deux philosophies, soulignant que la seconde, sous des abords vertueux, n'est pas exempte d'ambiguïtés cyniques.\n\nLa démonstration de Varin s'articule d'abord autour de l'analyse sémiotique de l'étiquette traditionnelle. La mention consacrée par l'usage, loin d'être un simple repère chronologique, fonctionne comme un couperet moral qui infantilise l'acheteur. En juxtaposant une date fatidique à l'angoisse sous-jacente de l'intoxication, cette formulation capitalise insidieusement sur l'hypocondrie sécuritaire des ménages urbains. L'enquête de terrain menée par l'équipe de Varin démontre que ce libellé engendre un réflexe pavlovien de rejet dès l'aube, bien avant que le produit n'ait entamé sa dégradation réelle. Le consommateur, pris au piège d'une norme hygiéniste qu'il intériorise sans esprit critique, préfère jeter un aliment parfaitement consommable plutôt que d'assumer la responsabilité d'un arbitrage olfactif. Pourtant, la critique relève un paradoxe troublant : cette même étiquette offre aux distributeurs une couverture juridique incontestable, déchargeant l'industrie agroalimentaire de toute obligation d'éducation culinaire profonde. Le système perdure non par inertie, mais parce qu'il sert les intérêts conjoncturels d'un capitalisme de flux qui tire profit du renouvellement accéléré des stocks.\n\nÀ l'inverse, l'initiative de « Consommer Juste » est saluée pour son audace émancipatrice, bien que Varin en dénonce rapidement les angles morts mercatiques. En incitant le client à humer, goûter et observer, l'étiquette réhabilite un savoir-faire sensoriel ancestral que la modernité industrielle s'était employée à atrophier. Le texte de la note insiste sur le basculement épistémologique induit par ce changement de paradigme : l'autorité de la date cède le pas à l'autonomie de la perception. Néanmoins, l'analyse critique décèle dans cette démarche une instrumentalisation pernicieuse de l'écologie. Sous couvert de lutte contre le gaspillage, l'enseigne transfère habilement la responsabilité morale et financière de la gestion des invendus sur les épaules du citoyen. Si l'aliment avarié finit par intoxiquer le consommateur imprudent, l'entreprise se dédouane élégamment en invoquant la mauvaise foi ou l'incompétence sensorielle de ce dernier. Varin qualifie cette stratégie de « paternalisme inversé », où la liberté octroyée dissimule mal un désengagement des responsabilités industrielles.\n\nLe conflit s'envenime lorsque le rapport aborde les répercussions économiques de ces deux visions sur la chaîne logistique locale. D'un côté, le maintien des repères stricts garantit une rotation rapide des rayons, protégeant les petits commerçants contre les impayés et les litiges de fraîcheur, au prix d'une destruction massive de ressources encore viables. De l'autre, l'adoption généralisée du label participatif provoque une crise larguée au sein des services de contrôle sanitaire, désemparés face à l'hétérogénéité des jugements subjectifs émis par une clientèle non qualifiée. La note relate l'incident survenu dans la supérette du quartier des Halles, où l'introduction de la mention permissive a entraîné une hausse spectaculaire des retours de produits jugés anormaux par des acheteurs paniqués, ruinant les efforts initiaux de réduction des déchets. Cet échec local, loin d'être anecdotique, illustre le fossé abyssal qui sépare l'angélisme conceptuel des bureaux de design et la réalité brutale des pratiques sociologiques.\n\nEn définitive, la conclusion de Varin refuse tout manichéisme facile et laisse le lecteur suspendu au milieu d'une aporie insoluble. L'auteure démontre que l'étiquette idéale reste à inventer, car elle devrait simultanément garantir la sécurité juridique du producteur, éduquer le palais du néophyte et s'affranchir de la tyrannie du calendrier sans pour autant verser dans l'abandon de poste réglementaire. La tension demeure entière entre une sécurité aliénante qui gaspille la matière et une liberté illusoire qui privatise le risque. Le compte-rendu s'achève sur cette interrogation troublante : le consommateur moderne est-il seulement armé pour recouvrer son autonomie gustative, ou réclame-t-il inconsciemment la tutelle rassurante d'un chiffre rouge qui décide pour lui de ce qui est bon ou mauvais ?",
+    "wordCount": 786,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "syntagme",
+        "lemma": "syntagme",
+        "glosses": {
+          "es": "phrasal unit",
+          "en": "phrasal unit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hypocondrie",
+        "lemma": "hypocondrie",
+        "glosses": {
+          "es": "health anxiety",
+          "en": "health anxiety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atrophier",
+        "lemma": "atrophier",
+        "glosses": {
+          "es": "to wither",
+          "en": "to wither"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aporie",
+        "lemma": "aporie",
+        "glosses": {
+          "es": "unresolvable paradox",
+          "en": "unresolvable paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tutelle",
+        "lemma": "tutelle",
+        "glosses": {
+          "es": "guardianship",
+          "en": "guardianship"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dédouane",
+        "lemma": "dédouane",
+        "glosses": {
+          "es": "clears of blame",
+          "en": "clears of blame"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.1,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central abordé par le rapport critique d'Élodie Varin ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'évaluation critique de deux étiquettes de péremption aux effets opposés."
+        },
+        {
+          "id": "a2",
+          "text": "L'obligation légale de détruire les denrées périmées."
+        },
+        {
+          "id": "a3",
+          "text": "La supériorité incontestable des méthodes nordiques de distribution."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "dissèque les stratégies de communication de deux enseignes nationales, « Fraîcheur Optimale » et « Consommer Juste », face au fléau persistant du gaspillage alimentaire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quel incident spécifique est survenu dans la supérette du quartier des Halles suite à l'introduction du label participatif ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une faillite immédiate de l'établissement."
+        },
+        {
+          "id": "a2",
+          "text": "Une hausse des retours de produits jugés anormaux."
+        },
+        {
+          "id": "a3",
+          "text": "Une inspection sanitaire menée par le ministère."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'introduction de la mention permissive a entraîné une hausse spectaculaire des retours de produits jugés anormaux par des acheteurs paniqués",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère l'analyse concernant la véritable motivation de l'enseigne « Consommer Juste » derrière son étiquette participative ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Réduire le coût de fabrication des emballages en plastique."
+        },
+        {
+          "id": "a2",
+          "text": "Obtenir une certification écologique internationale."
+        },
+        {
+          "id": "a3",
+          "text": "Transférer la responsabilité morale et financière sur le client."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'enseigne transfère habilement la responsabilité morale et financière de la gestion des invendus sur les épaules du citoyen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif rhétorique de la dernière phrase du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Laisser le lecteur face à une interrogation irrésolue sur l'autonomie du consommateur."
+        },
+        {
+          "id": "a2",
+          "text": "Résoudre définitivement le débat sur les dates de péremption."
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer la supériorité absolue du chiffre rouge."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le compte-rendu s'achève sur cette interrogation troublante : le consommateur moderne est-il seulement armé pour recouvrer son autonomie gustative, ou réclame-t-il inconsciemment la tutelle rassurante d'un chiffre rouge qui décide pour lui de ce qui est bon ou mauvais ?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général adopté par l'auteure dans sa critique des deux stratégies d'étiquetage ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un enthousiasme naïf et laudatif envers le progrès."
+        },
+        {
+          "id": "a2",
+          "text": "Une lucidité critique et nuancée face aux ambiguïtés mercatiques."
+        },
+        {
+          "id": "a3",
+          "text": "Une sévérité manichéenne rejetant tout compromis."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "En définitive, la conclusion de Varin refuse tout manichéisme facile et laisse le lecteur suspendu au milieu d'une aporie insoluble.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Selon le contexte du texte, que signifie le terme « aporie » employé par l'auteure ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une stratégie commerciale hautement rentable."
+        },
+        {
+          "id": "a2",
+          "text": "Une solution évidente validée par l'expérience."
+        },
+        {
+          "id": "a3",
+          "text": "Une impasse intellectuelle sans solution apparente."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "laisse le lecteur suspendu au milieu d'une aporie insoluble.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un texte argumentatif de deux cents mots dans lequel vous prenez position sur la tension entre sécurité réglementaire et autonomie sensorielle du consommateur face au gaspillage.",
+      "en": "Rédigez un texte argumentatif de deux cents mots dans lequel vous prenez position sur la tension entre sécurité réglementaire et autonomie sensorielle du consommateur face au gaspillage."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez attentivement le texte critique pour évaluer les nuances rhétoriques et les tensions sous-jacentes liées à la psychologie du consommateur, puis traitez les exercices d'analyse.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de la fraîcheur : critique comparée des étiquettes alimentaires | C1 Reading | WeLearn",
+      "en": "L'illusion de la fraîcheur : critique comparée des étiquettes alimentaires | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analysez un compte-rendu critique évaluant l'impact comportemental de deux étiquettes de péremption concurrentes, puis répondez aux questions de compréhension.",
+      "en": "Analysez un compte-rendu critique évaluant l'impact comportemental de deux étiquettes de péremption concurrentes, puis répondez aux questions de compréhension."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Illusion du Seuil Franchi",
+      "en": "L'Illusion du Seuil Franchi"
+    },
+    "intro": {
+      "es": "Examen critique de la politique d'ouverture d'un grand établissement culturel par un critique d'art.",
+      "en": "Examen critique de la politique d'ouverture d'un grand établissement culturel par un critique d'art."
+    },
+    "mission": {
+      "es": "Analyser les tensions entre l'accessibilité institutionnelle proclamée et les barrières socio-économiques réelles.",
+      "en": "Analyser les tensions entre l'accessibilité institutionnelle proclamée et les barrières socio-économiques réelles."
+    },
+    "targetText": "Lorsque la directrice générale du Musée de la Cité, Béatrice Laurent, a annoncé en grande pompe la gratuité permanente des collections permanentes, les éditorialistes culturels ont salué une victoire démocratique. On nous a vendu cette mesure comme l'abolition définitive des barrières entre le sanctuaire élitiste et le grand public. Pourtant, en observant de près le profil des visiteurs massés dans la grande rotonde ce samedi de novembre, l'illusion d'une mixité retrouvée se dissipe rapidement. J'y ai rencontré Élodie, mère célibataire et aide-soignante, venue de la lointaine banlieue ouvrière. Son témoignage réduit à néant le vernis philanthropique de l'institution. Pour elle, la gratuité de l'entrée n'est qu'un mirage abstrait qui masque mal les dépenses annexes incontournables. Le transport ferroviaire aller-retour, conjugué aux honoraires exigés par une gardienne d'enfants pour un samedi après-midi, représente une ponction financière équivalente à une semaine de courses alimentaires. La structure muséale s'exonère ainsi de toute responsabilité sociale en brandissant un accès libre théorique, tout en maintenant un péage invisible mais redoutable aux portes de ses salles.\n\nCe décalage entre la promesse d'hospitalité et la réalité vargueresse des foyers modestes illustre une hypocrisie systémique bien ancrée. Laurent a beau pérorer sur l'affluence record des statistiques trimestrielles, ces chiffres ne trompent que ceux qui veulent bien l'être. L'augmentation du volume global des entrées ne traduit nullement une diversification sociologique, mais plutôt une surconsommation culturelle par une frange déjà privilégiée de la population, qui se réapproprie les lieux à moindre frais. Pendant ce temps, les familles populaires pour qui l'effort logistique s'avère prohibitif restent assignées à résidence. Le musée se retranche derrière son argument massue : puisque la porte est ouverte, l'exclusion relève du choix individuel ou du désintérêt culturel. C'est là un sophisme commode qui évite d'interroger la géographie urbaine des grands équipements culturels, systématiquement implantés dans des hypercentres gentrifiés et saturés, loin des bassins de vie ouvriers.\n\nAu cœur de cette controverse se joue une lutte d'interprétation autour de la notion même de service public. Pour la direction, la démocratisation se mesure à l'aune du mètre carré d'exposition offert sans contrepartie monétaire directe. Pour les usagers exclus de fait, elle se mesure à la capacité réelle d'appropriation de l'espace civique. Durant notre échange, Élodie me confiait son sentiment d'illégitimité en traversant les travées de marbre blanc, surveillée par des agents de sécurité prompts à suspecter le moindre faux pas. La gratuité proclamée n'efface ni l'intimidation architecturale ni la violence symbolique des codes en vigueur dans ces enceintes. Bien au contraire, elle tend à culpabiliser davantage l'exclu : puisque le billet n'est plus un frein, l'absence des classes laborieuses ne serait plus le fruit d'une injustice structurelle, mais d'une carence intime.\n\nFace à cette impasse, la réponse ne saurait se résumer à des mesures cosmétiques ou à des nocturnes exceptionnelles. La mise en place récente d'un tarif réduit pour les transports le week-end, arrachée haute la lutte par des associations locales, démontre que la question de l'accès ne peut être cloisonnée entre les murs d'un musée. Tant que l'institution refusera de penser sa politique tarifaire et géographique en synergie avec les infrastructures de transport et les services de garde, ses déclarations d'intention sonneront creux. La gratuité des collections, déconnectée d'une politique globale d'accompagnement des publics, s'apparente moins à un acte d'émancipation qu'à un outil de légitimation bureaucratique, permettant aux dirigeants de verdir leur bilan social à bon compte.\n\nEn fin de compte, le triomphalisme affiché par la direction du Musée de la Cité révèle une profonde cécité volontaire face aux inégalités contemporaines. En transformant un droit fondamental en une faveur conditionnelle, l'institution perpétue l'exclusion sous couvert de philanthropie. Le véritable scandale ne réside pas dans le prix du billet autrefois exigé, mais dans l'hypocrisie d'un système qui feint d'accueillir tout le monde tout en s'assurant, par des mécanismes indirects, que seuls les plus favorisés pourront matériellement franchir le seuil. Tant que les critiques culturelles refuseront de voir au-delà des communiqués de presse officiels, le musée continuera d'être ce qu'il a toujours été : un miroir complaisant tendu aux classes dominantes, fascinées par leur propre générosité.",
+    "wordCount": 677,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mirage",
+        "lemma": "mirage",
+        "glosses": {
+          "es": "illusion",
+          "en": "illusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ponction",
+        "lemma": "ponction",
+        "glosses": {
+          "es": "financial drain",
+          "en": "financial drain"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sophisme",
+        "lemma": "sophisme",
+        "glosses": {
+          "es": "fallacy",
+          "en": "fallacy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "illégitimité",
+        "lemma": "illégitimité",
+        "glosses": {
+          "es": "sense of not belonging",
+          "en": "sense of not belonging"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cécité",
+        "lemma": "cécité",
+        "glosses": {
+          "es": "blindness",
+          "en": "blindness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "générosité",
+        "lemma": "générosité",
+        "glosses": {
+          "es": "generosity",
+          "en": "generosity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.2,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce texte critique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'analyse critique des limites de la gratuité muséale face aux barrières socio-économiques réelles."
+        },
+        {
+          "id": "a2",
+          "text": "La nécessité absolue de privatiser les grandes institutions culturelles pour assurer leur survie financière et moderniser leurs infrastructures d'accueil."
+        },
+        {
+          "id": "a3",
+          "text": "Le succès incontestable des politiques d'ouverture démocratique menées par les musées modernes auprès des populations les plus modestes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ce décalage entre la promesse d'hospitalité et la réalité vargueresse des foyers modestes illustre une hypocrisie systémique bien ancrée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quels frais précis empêchent Élodie de profiter de la gratuité du musée ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le coût des billets d'entrée et la location des audioguides obligatoires pour la visite."
+        },
+        {
+          "id": "a2",
+          "text": "Le transport ferroviaire et la rémunération d'une gardienne d'enfants."
+        },
+        {
+          "id": "a3",
+          "text": "L'achat de livres."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le transport ferroviaire aller-retour, conjugué aux honoraires exigés par une gardienne d'enfants pour un samedi après-midi, représente une ponction financière équivalente à une semaine de courses alimentaires.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment l'auteur interprète-t-il l'augmentation de la fréquentation du musée ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle prouve la démocratisation."
+        },
+        {
+          "id": "a2",
+          "text": "Elle est artificielle."
+        },
+        {
+          "id": "a3",
+          "text": "Elle résulte d'une surconsommation par un public déjà privilégié."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "L'augmentation du volume global des entrées ne traduit nullement une diversification sociologique, mais plutôt une surconsommation culturelle par une frange déjà privilégiée de la population, qui se réapproprie les lieux à moindre frais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de l'auteur en citant le témoignage d'Élodie ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Démontrer que la gratuité théorique masque une exclusion matérielle persistante."
+        },
+        {
+          "id": "a2",
+          "text": "Illustrer la complexité des horaires de transport en commun le week-end pour les visiteurs de province."
+        },
+        {
+          "id": "a3",
+          "text": "Suggérer la création d'un vaste fonds de compensation étatique dédié exclusivement aux frais de garde d'enfants."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Son témoignage réduit à néant le vernis philanthropique de l'institution.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il vis-à-vis de la direction du musée ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Fidèle et admiratif face aux efforts d'innovation sociale entrepris depuis dix ans."
+        },
+        {
+          "id": "a2",
+          "text": "Polémique et acerbe face au triomphalisme hypocrite de la direction."
+        },
+        {
+          "id": "a3",
+          "text": "Incertain."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "En fin de compte, le triomphalisme affiché par la direction du Musée de la Cité révèle une profonde cécité volontaire face aux inégalités contemporaines.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme \"sophisme\" tel qu'il est employé dans le deuxième paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une règle administrative complexe imposée par le ministère de la Culture."
+        },
+        {
+          "id": "a2",
+          "text": "Un plan d'urbanisme visant à déplacer les musées vers les périphéries."
+        },
+        {
+          "id": "a3",
+          "text": "Un argument spécieux ou faux qui revêt l'apparence de la vérité pour tromper."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "C'est là un sophisme commode qui évite d'interroger la géographie urbaine des grands équipements culturels, systématiquement implantés dans des hypercentres gentrifiés et saturés, loin des bassins de vie ouvriers.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire critique de 200 mots dans lequel vous discutez si la gratuité des lieux culturels suffit à garantir une véritable démocratisation de l'art.",
+      "en": "Rédigez un commentaire critique de 200 mots dans lequel vous discutez si la gratuité des lieux culturels suffit à garantir une véritable démocratisation de l'art."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyser les tensions entre l'accessibilité institutionnelle proclamée et les barrières socio-économiques réelles.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Illusion du Seuil Franchi | C1 Reading | WeLearn",
+      "en": "L'Illusion du Seuil Franchi | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Examen critique de la politique d'ouverture d'un grand établissement culturel par un critique d'art.",
+      "en": "Examen critique de la politique d'ouverture d'un grand établissement culturel par un critique d'art."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

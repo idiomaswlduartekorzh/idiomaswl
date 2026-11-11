@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-quiet-street",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le Paradoxe de la Rue Tardoire",
+      "en": "Le Paradoxe de la Rue Tardoire"
+    },
+    "intro": {
+      "es": "Analysez un reportage journalistique abordant les tensions entre les données municipales et le ressenti des riverains face à la régulation nocturne de la circulation.",
+      "en": "Analysez un reportage journalistique abordant les tensions entre les données municipales et le ressenti des riverains face à la régulation nocturne de la circulation."
+    },
+    "mission": {
+      "es": "Lisez attentivement l'article journalistique pour comprendre les divergences d'interprétation concernant la réussite d'un plan de circulation, puis répondez aux questions d'analyse textuelle.",
+      "en": "Lisez attentivement l'article journalistique pour comprendre les divergences d'interprétation concernant la réussite d'un plan de circulation, puis répondez aux questions d'analyse textuelle."
+    },
+    "targetText": "Le dernier rapport municipal de la Rue Tardoire, présenté par l'adjointe à l'urbanisme Claire Vasseur, exhibe des chiffres que l'hôtel de ville qualifie d'incontestables. Grâce à l'installation de bornes escamotables et d'un nouveau plan de circulation nocturne, le nombre de véhicules recensés entre vingt-deux heures et six heures a chuté de manière drastique. Pour les services techniques, cette réduction linéaire du trafic automobile constitue l'étalon-or de la réussite environnementale et de l'apaisement urbain. Les graphiques présentés lors du conseil de quartier montrent une courbe descendante flatteuse, propre à conforter l'exécutif dans sa politique de reconquête de l'espace public au profit des mobilités douces. Pourtant, sitôt franchi le seuil de la salle du conseil, cette quiétude statistique vole en éclats face à la réalité vécue des habitants et des commerçants de l'artère.\n\nMarc Lelièvre, qui tient la boulangerie artisanale de nuit à l'angle de la rue, dresse un constat qui s'inscrit en faux contre les triomphes municipaux. Si les capteurs de l'artère principale enregistrent effectivement un déficit de voitures, les camionnettes de livraison et les véhicules utilitaires de services, exclus par les nouvelles restrictions horaires, se déversent désormais dans les venelles adjacentes et les cours intérieures dès l'aube. La circulation n'a pas été résorbée ; elle a été atomisée, déplacée vers des axes secondaires dont le revêtement ancien amplifie les nuisances sonores. Pour Lelièvre, la notion de « rue apaisée » relève de l'imposture sémantique, une construction technocratique qui confond l'absence de flux sur un tronçon surveillé avec la disparition globale des nuisances.\n\nAu cœur de ce désaccord se dessine une lutte d'influence pour s'approprier la définition légitime de la réussite urbaine. D'un côté, l'administration privilégie une approche quantitative, incarnée par des capteurs de flux et des bilans kilométriques qui permettent de standardiser l'évaluation des politiques publiques. De l'autre, les riverains opposent une approche phénoménologique, où le succès se mesure à l'aune de la qualité du sommeil, de la poussière accumulée sur les rebords de fenêtres et de la fluidité retrouvée des livraisons matinales. Cette divergence méthodologique pose une question politique fondamentale : qui détient l'autorité exclusive de qualifier l'espace public ? Est-ce l'expert armé de ses algorithmes de comptage, ou l'habitant dont le quotidien est rythmé par les soubresauts de son environnement immédiat ?\n\nL'impasse s'est cristallisée lors de la dernière réunion publique lorsque l'association « Vivre Tardoire », menée par l'architecte retraitée Hélène Mercier, a rendu public un contre-rapport fondé sur des relevés acoustiques indépendants. Ces mesures démontrent que si le décibelmètre enregistre une baisse globale de l'intensité sonore continue, les pics de bruit nocturne ont paradoxalement augmenté. En cause : les freinages brusques, les manœuvres de demi-tour en fin de cul-de-sac et les klaxons d'automobilistes égarés face à une signalisation jugée absconse. La mairie a beau brandir ses graphiques officiels, elle se heurte à une fronde citoyenne qui ne conteste pas les chiffres en tant que tels, mais leur pertinence herméneutique.\n\nFace à cette fronde, l'administration municipale persiste dans son hermétisme, arguant que toute politique de transition subit des frictions transitoires qu'il ne faut pas dramatiser pour ne pas paralyser l'action publique. L'exécutif craint surtout que céder sur la définition de la réussite n'ouvre la boîte de Pandore de la co-gestion des infrastructures. Le dénouement de ce bras de fer reste suspendu à une commission d'arbitrage dont la composition, largement technocratique, laisse présager un statu quo habillé de quelques ajustements cosmétiques sur la signalétique. La rue Tardoire demeure ainsi le théâtre paradoxal d'une modernité urbaine où les habitants constatent la baisse des voitures tout en subissant l'aggravation de leur calvaire quotidien, pris en étau entre des indicateurs triomphants et une réalité fracturée.\n\nCette situation conflictuelle met en lumière la fracture grandissante entre la gouvernance municipale et le tissu vivant des quartiers. Tandis que l'hôtel de ville s'accroche à ses dogmes chiffrés pour justifier ses choix face à ses pairs, il néglige l'érosion progressive du contrat social local. L'association « Vivre Tardoire », loin de baisser les bras, envisage désormais de porter le combat devant les tribunaux administratifs pour contester la légalité des arrêtés de circulation. Si cette démarche juridique venait à prospérer, elle créerait un précédent fâcheux pour l'exécutif, remettant en cause la légitimité même des algorithmes décisionnels dans la gestion des flux de mobilité. La véritable menace pour la municipalité réside donc moins dans la contestation ponctuelle de quelques riverains mécontents que dans l'émergence d'une expertise citoyenne structurée, capable de rivaliser d'égal à égal avec l'appareil technique de la ville et de redéfinir les contours de la démocratie participative.",
+    "wordCount": 752,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "escamotables",
+        "lemma": "escamotables",
+        "glosses": {
+          "es": "retractable",
+          "en": "retractable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atomisée",
+        "lemma": "atomisée",
+        "glosses": {
+          "es": "atomized / broken up",
+          "en": "atomized / broken up"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "phénoménologique",
+        "lemma": "phénoménologique",
+        "glosses": {
+          "es": "phenomenological",
+          "en": "phenomenological"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "herméneutique",
+        "lemma": "herméneutique",
+        "glosses": {
+          "es": "hermeneutic / interpretative",
+          "en": "hermeneutic / interpretative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hermétisme",
+        "lemma": "hermétisme",
+        "glosses": {
+          "es": "hermetism / closed-mindedness",
+          "en": "hermetism / closed-mindedness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cosmétiques",
+        "lemma": "cosmétiques",
+        "glosses": {
+          "es": "cosmetic / superficial",
+          "en": "cosmetic / superficial"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.9,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal traité dans cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'affrontement entre la vision quantitative municipale et le vécu des riverains concernant la baisse de la circulation nocturne."
+        },
+        {
+          "id": "a2",
+          "text": "La décision radicale de la municipalité d'interdire totalement l'accès aux véhicules dans le centre historique."
+        },
+        {
+          "id": "a3",
+          "text": "Le succès indiscutable des nouvelles technologies de comptage du trafic routier adoptées par l'ensemble des mairies."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Au cœur de ce désaccord se dessine une lutte d'influence pour s'approprier la définition légitime de la réussite urbaine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Selon le contre-rapport de l'association « Vivre Tardoire », quel phénomène acoustique paradoxal a été observé ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une suppression totale de tout bruit nocturne grâce à la fermeture définitive des rues."
+        },
+        {
+          "id": "a2",
+          "text": "Une augmentation des pics de bruit nocturne en raison des manœuvres et des freinages brusques."
+        },
+        {
+          "id": "a3",
+          "text": "Une baisse générale des décibels qui profite immédiatement à la qualité du sommeil des riverains."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ces mesures démontrent que si le décibelmètre enregistre une baisse globale de l'intensité sonore continue, les pics de bruit nocturne ont paradoxalement augmenté.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi la municipalité refuse-t-elle de céder sur sa définition de la réussite ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Parce que les habitants exigent le remboursement total des taxes foncières perçues."
+        },
+        {
+          "id": "a2",
+          "text": "Parce que les capteurs électroniques installés dans la rue sont techniquement irréprochables et infaillibles."
+        },
+        {
+          "id": "a3",
+          "text": "Parce qu'elle craint que cela ne conduise à une co-gestion des infrastructures avec les citoyens."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "L'exécutif craint surtout que céder sur la définition de la réussite n'ouvre la boîte de Pandore de la co-gestion des infrastructures.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but principal de l'auteur lorsqu'il cite l'intervention du boulanger Marc Lelièvre ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Illustrer de manière concrète comment le trafic a été déplacé plutôt que supprimé."
+        },
+        {
+          "id": "a2",
+          "text": "Démontrer que les commerçants soutiennent unanimement la politique de la mairie."
+        },
+        {
+          "id": "a3",
+          "text": "Critiquer la cherté du pain artisanal dans les quartiers anciens de la ville."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Si les capteurs de l'artère principale enregistrent effectivement un déficit de voitures, les camionnettes de livraison et les véhicules utilitaires de services, exclus par les nouvelles restrictions horaires, se déversent désormais dans les venelles adjacentes et les cours intérieures dès l'aube.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il principalement tout au long de l'article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton neutre et béat, célébrant sans réserve les initiatives modernisatrices de la technocratie municipale."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton critique et analytique, mettant en lumière l'écart entre la froideur des statistiques officielles et la complexité du terrain."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton polémique et alarmiste, appelant ouvertement à la démission immédiate de l'adjointe à l'urbanisme."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La rue Tardoire demeure ainsi le théâtre paradoxal d'une modernité urbaine où les habitants constatent la baisse des voitures tout en subissant l'aggravation de leur calvaire quotidien, pris en étau entre des indicateurs triomphants et une réalité fracturée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dans le texte, que signifie le terme « herménétique » employé à propos des chiffres officiels ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Qui est totalement secret et réservé à une élite d'experts informaticiens."
+        },
+        {
+          "id": "a2",
+          "text": "Qui ne peut en aucun cas être contesté par des mesures scientifiques."
+        },
+        {
+          "id": "a3",
+          "text": "Qui concerne l'interprétation et le sens que l'on donne aux données."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La mairie a beau brandir ses graphiques officiels, elle se heurte à une fronde citoyenne qui ne conteste pas les chiffres en tant que tels, mais leur pertinence herméneutique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un essai critique d'environ 250 mots dans lequel vous examinez comment les politiques publiques locales peuvent concilier les indicateurs quantitatifs de performance et le ressenti qualitatif des habitants lors d'aménagements urbains.",
+      "en": "Rédigez un essai critique d'environ 250 mots dans lequel vous examinez comment les politiques publiques locales peuvent concilier les indicateurs quantitatifs de performance et le ressenti qualitatif des habitants lors d'aménagements urbains."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez attentivement l'article journalistique pour comprendre les divergences d'interprétation concernant la réussite d'un plan de circulation, puis répondez aux questions d'analyse textuelle.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le Paradoxe de la Rue Tardoire | C1 Reading | WeLearn",
+      "en": "Le Paradoxe de la Rue Tardoire | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analysez un reportage journalistique abordant les tensions entre les données municipales et le ressenti des riverains face à la régulation nocturne de la circulation.",
+      "en": "Analysez un reportage journalistique abordant les tensions entre les données municipales et le ressenti des riverains face à la régulation nocturne de la circulation."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

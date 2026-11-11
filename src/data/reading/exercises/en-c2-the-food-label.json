@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-food-label",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Lexicon of Indolence: Semiotic Shifts in Expiry Epistemology",
+      "en": "The Lexicon of Indolence: Semiotic Shifts in Expiry Epistemology"
+    },
+    "intro": {
+      "es": "Read the following critical review analyzing the shift in consumer responsibility through packaging semantics, then complete the reading comprehension exercises.",
+      "en": "Read the following critical review analyzing the shift in consumer responsibility through packaging semantics, then complete the reading comprehension exercises."
+    },
+    "mission": {
+      "es": "Analyze the text for rhetorical shifts and subtle manipulations of consumer agency, then complete the comprehension and production tasks.",
+      "en": "Analyze the text for rhetorical shifts and subtle manipulations of consumer agency, then complete the comprehension and production tasks."
+    },
+    "targetText": "The typographies of urgency have long dictated the domestic rhythm of the modern household. When Alistair Finch, the meticulous head curator of the culinary design quarterly Gastric Archive, first encountered the redesign of dairy packaging across the Meridian supermarket chain in the autumn of his tenure, he recognized something more profound than mere corporate rebranding. Meridian had quietly replaced the traditional 'Sell By' metrics on its flagship artisanal milk carafes with an enigmatic, softly imperative locution: 'Look, Smell, Taste.' It was a masterstroke of semiotic deflection, ostensibly designed to combat the global scourge of premature food waste by transferring the epistemological burden of freshness from the infallible laboratory of the manufacturer directly onto the subjective, easily manipulable sensorium of the bewildered shopper. Finch spent three weeks observing patrons in the refrigerated aisles of the Meridian flagship branch in central district, noting how this linguistic pivot transformed a routine grocery excursion into an anxious diagnostic ordeal. Where once a customer could rely on an objective, algorithmic timestamp to dictate household inventory, they were now conscripted as amateur quality assurance inspectors, forced to interrogate their own sensory faculties under the fluorescent glare of aisle twelve.\n\nThe genesis of this lexical migration traces back to a closed-door symposium held by the Consortium for Sustainable Retail, where behavioral psychologists and packaging conglomerates converged around a singular, pressing exigency: how to mitigate the staggering volume of perfectly viable provisions discarded prematurely by jittery consumers. The traditional date stamp, Finch argued in his subsequent scathing review, was a blunt instrument of corporate indemnity, engineered primarily to shield producers from liability while inadvertently training a populace to treat milk as radioactive upon the stroke of midnight. Yet, in dismantling the absolute authority of the calendar, Meridian and its peers did not democratize culinary judgment; rather, they outsourced liability under the guise of ecological enlightenment. The new injunction—'Look, Smell, Taste'—operates as a Trojan horse of neoliberal governance. It flatters the consumer with the illusion of autonomy while quietly stripping away the institutional safety net that guaranteed a baseline standard of verifiable safety. By recasting food preservation as an individual moral virtue rather than a systemic supply chain challenge, the retail complex successfully weaponized consumer guilt, turning every sour sip into a personal failure of perception.\n\nThis dynamic played out with theatrical precision during a private dinner party hosted by Beatrice Vance, the formidable director of sustainable logistics for Meridian, who had championed the label overhaul as a triumph of behavioral nudging. Finch, seated across a meticulously adorned mahogany table, watched as Vance poured glasses of organic cream for her guests, only to hesitate herself, lifting the glass to her nose with a sudden, palpable flicker of self-doubt. The irony was exquisite and damning. The very architect of the sensory paradigm had fallen prey to the epistemological vertigo she had unleashed upon the public. When Vance turned to Finch and asked, with a trace of genuine vulnerability, whether the dairy had crossed the threshold from rich to rancid, Finch demurred, pointing out that her own label had stripped them of any objective standard by which to adjudicate the matter. The dinner party, intended as a celebratory symposium of corporate foresight, devolved into an anxious parlor game of olfactory guesswork, perfectly mirroring the domestic comedies and tragedies unfolding in kitchens across the city where husbands and wives debated the moral hazard of a slightly oxidized cheddar.\n\nThe philosophical implications of this shift extend far beyond the dairy aisle, signaling a broader retreat of institutional accountability across the consumer landscape. We are witnessing the rise of a participatory economy of blame, where the citizen-consumer is continually invited to co-create corporate efficiency through emotional labor. When the state or the corporation abdicates its role as the arbiter of basic standards, it replaces regulation with ethos, demanding that we feel responsible for macro-phenomena like agricultural surplus by micro-managing our personal olfactory thresholds. Finch’s critique struck a raw nerve precisely because it exposed this sleight of hand: the new label does not inform; it implicates. It assumes that the consumer’s nose is a neutral instrument, untainted by marketing gaslighting or psychological exhaustion, capable of discerning the subtle gradient between safe fermentation and hazardous spoilage without the aid of empirical metrics. In reality, it breeds a pervasive paranoia, wherein the household refrigerator ceases to be a storage unit and becomes instead a courtroom of perpetual suspicion, presided over by an invisible jury of brand strategists.\n\nUltimately, the triumph of the 'Look, Smell, Taste' paradigm lies in its unassailable rhetorical immunity. To critique it is to appear-at least on the surface-to advocate for profligacy, as though one were personally demanding the needless destruction of wholesome provisions in the name of bureaucratic rigidity. Yet Finch’s masterclass in cultural criticism reminds us that true sustainability cannot be built upon the shifting sands of consumer gaslighting. By shifting the locus of responsibility from the logistical chain to the individual palate, Meridian has perfected a form of corporate absolution that masks systemic failure as personal empowerment. As Finch noted in his concluding paragraph, a label that tells you to trust your senses is not an invitation to culinary freedom; it is a notice of abandonment, leaving the solitary shopper adrift in a sea of ambiguity, armed with nothing more than a teaspoon and a prayer.",
+    "wordCount": 885,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "semiotic deflection",
+        "lemma": "semiotic deflection",
+        "glosses": {
+          "es": "a linguistic shift that misdirects attention from a core issue",
+          "en": "a linguistic shift that misdirects attention from a core issue"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemological burden",
+        "lemma": "epistemological burden",
+        "glosses": {
+          "es": "the responsibility of knowing or verifying a truth",
+          "en": "the responsibility of knowing or verifying a truth"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "corporate indemnity",
+        "lemma": "corporate indemnity",
+        "glosses": {
+          "es": "protection granted to a company against legal responsibility or loss",
+          "en": "protection granted to a company against legal responsibility or loss"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemological vertigo",
+        "lemma": "epistemological vertigo",
+        "glosses": {
+          "es": "a dizzying sense of uncertainty regarding how one knows what is true",
+          "en": "a dizzying sense of uncertainty regarding how one knows what is true"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "participatory economy of blame",
+        "lemma": "participatory economy of blame",
+        "glosses": {
+          "es": "a system where individuals are made to feel responsible for systemic failures",
+          "en": "a system where individuals are made to feel responsible for systemic failures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rhetorical immunity",
+        "lemma": "rhetorical immunity",
+        "glosses": {
+          "es": "an invulnerability to criticism derived from the clever framing of an argument",
+          "en": "an invulnerability to criticism derived from the clever framing of an argument"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 30.5,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:10:22.995Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument advanced by the author regarding the new grocery labeling system?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It cleverly masks corporate liability and transfers systemic burdens onto the individual."
+        },
+        {
+          "id": "a2",
+          "text": "It successfully eliminates global food waste through practical consumer empowerment."
+        },
+        {
+          "id": "a3",
+          "text": "It modernizes the dairy industry by replacing outdated laboratory testing with sensory science."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "It was a masterstroke of semiotic deflection, ostensibly designed to combat the global scourge of premature food waste by transferring the epistemological burden of freshness from the infallible laboratory of the manufacturer directly onto the subjective, easily manipulable sensorium of the bewildered shopper.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How did Beatrice Vance react when serving cream at her own dinner party?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She confidently assured her guests of its absolute freshness."
+        },
+        {
+          "id": "a2",
+          "text": "She hesitated and experienced a moment of sudden self-doubt."
+        },
+        {
+          "id": "a3",
+          "text": "She refused to taste it and blamed the supermarket supply chain."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vance poured glasses of organic cream for her guests, only to hesitate herself, lifting the glass to her nose with a sudden, palpable flicker of self-doubt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What can be inferred about the author's view of the phrase 'Look, Smell, Taste'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It represents a genuine democratization of culinary judgment for everyday shoppers."
+        },
+        {
+          "id": "a2",
+          "text": "It provides a scientifically rigorous framework for households to test food safety."
+        },
+        {
+          "id": "a3",
+          "text": "It acts as a deceptive tool that weaponizes consumer anxiety under the guise of sustainability."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The new injunction—'Look, Smell, Taste'—operates as a Trojan horse of neoliberal governance. It flatters the consumer with the illusion of autonomy while quietly stripping away the institutional safety net that guaranteed a baseline standard of verifiable safety.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the dinner party anecdote involving Alistair Finch and Beatrice Vance?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To expose the hypocrisy and unintended vertigo experienced by the label's creator"
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the practical difficulties of hosting high-society events sustainably"
+        },
+        {
+          "id": "a3",
+          "text": "To demonstrate how corporate executives secretly disregard their own packaging guidelines"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The very architect of the sensory paradigm had fallen prey to the epistemological vertigo she had unleashed upon the public.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which best describes the tone of the review toward the corporate strategy behind the new labels?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic and encouraging"
+        },
+        {
+          "id": "a2",
+          "text": "Cynical and analytical"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "By shifting the locus of responsibility from the logistical chain to the individual palate, Meridian has perfected a form of corporate absolution that masks systemic failure as personal empowerment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'epistemological vertigo' mean?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A sudden physical dizziness caused by inspecting dairy products under bright lights"
+        },
+        {
+          "id": "a2",
+          "text": "A marketing technique designed to confuse elderly shoppers in supermarket aisles"
+        },
+        {
+          "id": "a3",
+          "text": "A disorienting uncertainty regarding how one determines what is true or safe"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The very architect of the sensory paradigm had fallen prey to the epistemological vertigo she had unleashed upon the public.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word critical essay examining how modern corporations utilize linguistic reframing to shift systemic responsibilities onto individual consumers. Use sophisticated vocabulary and maintain a rigorous, analytical tone throughout your response.",
+      "en": "Write a 300-word critical essay examining how modern corporations utilize linguistic reframing to shift systemic responsibilities onto individual consumers. Use sophisticated vocabulary and maintain a rigorous, analytical tone throughout your response."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the text for rhetorical shifts and subtle manipulations of consumer agency, then complete the comprehension and production tasks.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:10:22.995Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Lexicon of Indolence: Semiotic Shifts in Expiry Epistemology | C2 Reading | WeLearn",
+      "en": "The Lexicon of Indolence: Semiotic Shifts in Expiry Epistemology | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read the following critical review analyzing the shift in consumer responsibility through packaging semantics, then complete the reading comprehension exercises.",
+      "en": "Read the following critical review analyzing the shift in consumer responsibility through packaging semantics, then complete the reading comprehension exercises."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:10:22.995Z"
+  }
+}

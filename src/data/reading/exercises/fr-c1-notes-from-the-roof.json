@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-notes-from-the-roof",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La transition entravée",
+      "en": "La transition entravée"
+    },
+    "intro": {
+      "es": "Lisez cet échange de courriels professionnels concernant un projet de toiture solaire partagée et répondez aux questions de compréhension.",
+      "en": "Lisez cet échange de courriels professionnels concernant un projet de toiture solaire partagée et répondez aux questions de compréhension."
+    },
+    "mission": {
+      "es": "Analysez les tensions juridiques et relationnelles entre les différents décisionnaires d'une copropriété.",
+      "en": "Analysez les tensions juridiques et relationnelles entre les différents décisionnaires d'une copropriété."
+    },
+    "targetText": "De : h.berthier@immobilier-horizon.fr\nÀ : c.vanderbeken@avocats-associez.fr\nObjet : Consultation urgente - Installation photovoltaïque de la résidence Les Tilleuls\nDate : 14 novembre\n\nMaître Vanderbeken,\n\nJe me permets de solliciter votre expertise dans un dossier particulièrement épineux qui oppose, depuis l'assemblée générale extraordinaire d'hier soir, le conseil syndical de la copropriété Les Tilleuls et la société Énergie Citoyenne. En tant que syndic, notre cabinet se retrouve pris entre l'impératif de transition écologique et les rigidités de notre règlement de copropriété. Le projet prévoyait l'installation de panneaux solaires en toiture pour alimenter les parties communes et revendre le surplus. Si la majorité simple requise pour les travaux d'économie d'énergie a bien été atteinte, un obstacle juridique majeur est apparu lors du vote des conventions d'usufruit.\n\nEn effet, l'appartement du dernier étage, dont la surface de plancher confère le poids décisif dans la pondération des millièmes de toiture, appartient en nue-propriété à un investisseur institutionnel distant, tandis que l'usufruit en est détenu par une résidente historique, Madame Althaus. Cette dernière occupe les lieux depuis des décennies et a voté chaleureusement en faveur du projet photovoltaïque, voyant en lui un moyen de stabiliser ses charges. Néanmoins, le nu-propriétaire, averti tardivement par nos services, a notifié ce matin même son opposition formelle par acte extrajudiciaire. Il invoque une modification substantielle de la structure architecturale et conteste la légitimité du consentement donné par la seule usufruitière pour des travaux d'une telle envergure.\n\nDe notre côté, Énergie Citoyenne menace de se retirer si un compromis n'est pas trouvé avant la fin de la semaine, invoquant l'attribution de subventions régionales qui cadrent mal avec les atermoiements judiciaires. La question qui se pose avec acuité est de savoir si l'usufruitier peut engager valablement la copropriété sur des équipements lourds affectant l'enveloppe du bâtiment, ou si le nu-propriétaire dispose d'un veto absolu fondé sur la préservation de la substance de l'immeuble. Je redoute que la précipitation de notre calendrier ne nous expose à une annulation rétroactive de l'assemblée générale.\n\nDans l'attente de votre éclairage juridique pour baliser notre réponse au conseil syndical.\n\nBien cordialement,\n\nHervé Berthier\nDirecteur d'agence, Immobilier Horizon\n\n----\n\nDe : c.vanderbeken@avocats-associez.fr\nÀ : h.berthier@immobilier-horizon.fr\nObjet : RE: Consultation urgente - Installation photovoltaïque de la résidence Les Tilleuls\nDate : 14 novembre\n\nCher Monsieur Berthier,\n\nJ'ai pris connaissance de votre note avec toute l'attention que requiert ce dossier, qui illustre parfaitement les angles morts de notre législation en matière de rénovation énergétique partagée. La jurisprudence en la matière distingue traditionnellement les actes d'administration, accessibles à l'usufruitier, des actes de disposition, réservés au nu-propriétaire. Toutefois, l'installation de panneaux solaires sur une toiture commune échappe à cette binaire simpliste : elle s'apparente à une amélioration pérenne dotée d'une incidence technique et esthétique indéniable sur le bâti.\n\nS'agissant de la validité du vote d'hier, la position du nu-propriétaire ne manque pas d'arguments spécieux, bien qu'elle pèche par opportunisme financier. En l'état actuel du droit, le droit de vote aux assemblées générales de copropriété appartient par défaut au nu-propriétaire, sauf convention contraire notifiée au syndic, ce qui confère à sa contestation une base formelle redoutable. Madame Althaus jouit certes d'un droit d'usage et de jouissance étendu, mais la jurisprudence tend à considérer que l'affectation du toit à une production industrielle ou semi-industrielle dépasse la simple jouissance paisible de son lot. Par conséquent, le syndicat des copropriétaires s'est imprudemment affranchi d'une notification préalable obligatoire auprès du nu-propriétaire, viciant potentiellement la résolution adoptée.\n\nNéanmoins, tout n'est pas perdu. Plutôt que d'affronter une procédure contentieuse longue et incertaine qui découragerait Énergie Citoyenne, je vous suggère de convoquer une miniconciliation en proposant un avenant au contrat. Cet avenant garantirait au nu-propriétaire que l'installation ne crée aucun droit acquis sur la structure à l'expiration de l'usufruit et que les éventuels dommages d'étanchéité seront intégralement couverts par une assurance dédiée. Il s'agit moins de plier face à son veto que de neutraliser son grief économique en le rassurant sur la préservation de son capital immobilier.\n\nTenez-moi informé des suites que vous donnerez à cette proposition avant que la situation ne devienne inextricable.\n\nMaître Claire Vanderbeken\nAvocate associée",
+    "wordCount": 679,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "épineux",
+        "lemma": "épineux",
+        "glosses": {
+          "es": "thorny / difficult",
+          "en": "thorny / difficult"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "millièmes",
+        "lemma": "millièmes",
+        "glosses": {
+          "es": "thousandths / share proportions",
+          "en": "thousandths / share proportions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atermoiements",
+        "lemma": "atermoiements",
+        "glosses": {
+          "es": "procrastination / delays",
+          "en": "procrastination / delays"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "binaire",
+        "lemma": "binaire",
+        "glosses": {
+          "es": "binary framework",
+          "en": "binary framework"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spécieux",
+        "lemma": "spécieux",
+        "glosses": {
+          "es": "specious / misleadingly plausible",
+          "en": "specious / misleadingly plausible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inextricable",
+        "lemma": "inextricable",
+        "glosses": {
+          "es": "inextricable / hopelessly complex",
+          "en": "inextricable / hopelessly complex"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.6,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le problème central abordé dans cet échange de courriels ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un conflit de légitimité entre usufruitier et nu-propriétaire"
+        },
+        {
+          "id": "a2",
+          "text": "Un désaccord sur le financement des travaux"
+        },
+        {
+          "id": "a3",
+          "text": "Une rupture de contrat de la part d'Énergie Citoyenne"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En effet, l'appartement du dernier étage, dont la surface de plancher confère le poids décisif dans la pondération des millièmes de toiture, appartient en nue-propriété à un investisseur institutionnel distant, tandis que l'usufruit en est détenu par une résidente historique, Madame Althaus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle action le nu-propriétaire a-t-il entreprise le matin suivant l'assemblée générale ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il a assigné le syndic en justice pour annuler le vote."
+        },
+        {
+          "id": "a2",
+          "text": "Il a notifié son opposition formelle par acte extrajudiciaire."
+        },
+        {
+          "id": "a3",
+          "text": "Il a contacté directement l'entreprise Énergie Citoyenne."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Néanmoins, le nu-propriétaire, averti tardivement par nos services, a notifié ce matin même son opposition formelle par acte extrajudiciaire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment l'avocate qualifie-t-elle la position juridique adoptée par le nu-propriétaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Fondée exclusivement sur la protection écologique du bâtiment"
+        },
+        {
+          "id": "a2",
+          "text": "Totalement infondée et dépourvue de toute base légale"
+        },
+        {
+          "id": "a3",
+          "text": "Argumentée mais motivée par des intérêts financiers opportunistes"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "S'agissant de la validité du vote d'hier, la position du nu-propriétaire ne manque pas d'arguments spécieux, bien qu'elle pèche par opportunisme financier.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de la réponse de l'avocate au syndic ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Proposer une solution amiable pour rassurer le nu-propriétaire"
+        },
+        {
+          "id": "a2",
+          "text": "Exiger l'annulation immédiate de l'assemblée générale"
+        },
+        {
+          "id": "a3",
+          "text": "Résilier le partenariat avec Énergie Citoyenne"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "je vous suggère de convoquer une miniconciliation en proposant un avenant au contrat. Cet avenant garantirait au nu-propriétaire que l'installation ne crée aucun droit acquis sur la structure à l'expiration de l'usufruit et que les éventuels dommages d'étanchéité seront intégralement couverts par une assurance dédiée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton général caractérise l'analyse juridique fournie par Maître Vanderbeken ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Alarmiste et péremptoire"
+        },
+        {
+          "id": "a2",
+          "text": "Pragmatique et nuancé"
+        },
+        {
+          "id": "a3",
+          "text": "Désinvolte et ironique"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "J'ai pris connaissance de votre note avec toute l'attention que requiert ce dossier, qui illustre parfaitement les angles morts de notre législation en matière de rénovation énergétique partagée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « atermoiements » employé dans le premier courriel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Des réclamations financières"
+        },
+        {
+          "id": "a2",
+          "text": "Des décisions autoritaires"
+        },
+        {
+          "id": "a3",
+          "text": "Des délais et hésitations"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "De notre côté, Énergie Citoyenne menace de se retirer si un compromis n'est pas trouvé avant la fin de la semaine, invoquant l'attribution de subventions régionales qui cadrent mal avec les atermoiements judiciaires.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse argumentée d'environ cent cinquante mots dans laquelle vous incarnez le conseil syndical, proposant une stratégie pour convaincre le nu-propriétaire de lever son opposition.",
+      "en": "Rédigez une réponse argumentée d'environ cent cinquante mots dans laquelle vous incarnez le conseil syndical, proposant une stratégie pour convaincre le nu-propriétaire de lever son opposition."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez les tensions juridiques et relationnelles entre les différents décisionnaires d'une copropriété.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La transition entravée | C1 Reading | WeLearn",
+      "en": "La transition entravée | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet échange de courriels professionnels concernant un projet de toiture solaire partagée et répondez aux questions de compréhension.",
+      "en": "Lisez cet échange de courriels professionnels concernant un projet de toiture solaire partagée et répondez aux questions de compréhension."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

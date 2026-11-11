@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-river-map",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La cartographie du désastre",
+      "en": "La cartographie du désastre"
+    },
+    "intro": {
+      "es": "Exercez votre compréhension de lecture avancée avec cet article journalistique complexe analysant les répercussions politiques et sociales de la redéfinition des zones inondables.",
+      "en": "Exercez votre compréhension de lecture avancée avec cet article journalistique complexe analysant les répercussions politiques et sociales de la redéfinition des zones inondables."
+    },
+    "mission": {
+      "es": "Lisez attentivement l'article et répondez aux questions analytiques pour démontrer votre maîtrise du niveau C1 en français.",
+      "en": "Lisez attentivement l'article et répondez aux questions analytiques pour démontrer votre maîtrise du niveau C1 en français."
+    },
+    "targetText": "Le conseil municipal de Val-de-Sorne retint son souffle lorsque l'urbaniste en chef, Éric Vasseur, posa sur la table de chêne massif les deux cartes hydrographiques côte à côte. À première vue, les documents semblaient jumeaux, tous deux recouverts d'un canevas de lignes bleues serpentant à travers les vallées. Pourtant, l'examen minutieux des tracés révélait une divergence abyssale. La première carte, élaborée selon les anciennes normes de l'Agence de bassin, classait le quartier riverain des Tilleuls en zone de submersion modérée. La seconde, commandurée par le consortium privé Aquathèque à la demande du fonds de garantie municipal, redessinait radicalement le périmètre en s'appuyant sur des modèles stochastiques de crues centennales. Sous ce nouveau prisme méthodologique, les trois quarts du lotissement s'effaçaient des zones d'exclusion, basculant soudainement dans le domaine de l'aléa négligeable. Pour les résidents, cette métamorphose cartographique n'était pas un simple exercice académique ; elle scellait le destin de leurs foyers et conditionnait l'accès aux indemnisations étatiques en cas de catastrophe.\n\nLa confrontation prit une tournure dramatique lorsque Camille Jaurès, porte-parole du collectif 'Rive Solidaire', prit la parole pour dénoncer ce qu'elle qualifiait de manipulation actuarielle. Selon elle, l'algorithme d'Aquathèque avait purement et simplement gommé la réalité topographique du terrain au profit d'une rentabilité assurantielle cynique. Elle brandit alors un rapport d'expertise indépendant, datant de la veille de la réunion, qui attestait que les digues naturelles protégeant les Tilleuls s'étaient affaissées de trente centimètres suite aux récentes infiltrations souterraines. Vasseur, tout en concédant que les marges d'erreur inhérentes aux projections climatiques pouvaient effectivement prêter à discussion, défendit l'objectivité des nouveaux modèles. Il argua que l'ancien système pénalisait injustement des familles en bloquant arbitrairement toute transaction immobilière, alors même que les probabilités d'une crue majeure restaient statistiquement infimes sur une décennie. Cette concession apparente masquait mal un antagonisme fondamental : d'un côté, le pragmatisme budgétaire cherchant à tarir le flux des subventions publiques ; de l'autre, la défense impérative de citoyens menacés par l'incertitude climatique.\n\nAu cœur de cette controverse résidait une divergence d'interprétation des données pluviométriques historiques. Pour l'administration, les relevés des cinquante dernières années constituaient une base empirique suffisante pour lisser les pics de crue et établir un profil de risque stationnaire. Pour les opposants, cette approche statique constituait une aberration intellectuelle à l'heure du dérèglement climatique, où chaque décennie battait des records d'aridité ou de précipitation diluvienne. Jaurès insista sur le fait que la moyenne arithmétique masquait des extrêmes de plus en plus violents, rendant obsolètes les repères traditionnels. Le conseil, pris en étau entre la nécessité de rassurer les investisseurs et l'impératif de protéger ses administrés, se trouva incapable de trancher sur le champ. Les répercussions de ce débat dépassaient largement les limites de Val-de-Sorne, illustrant la fragilité des critères bureaucratiques face à la complexité des mutations environnementales.\n\nLa tension atteignit son paroxysme lorsque le maire, acculé par les interpellations véhéments de la salle, proposa de surseoir à l'application du nouveau plan jusqu'à nouvel ordre. Cette décision de compromis, saluée par les habitants des Tilleuls mais conspuée par les représentants d'Aquathèque, laissa la commune dans un vide juridique inquiétant. Désormais, ni les anciennes subventions ne pouvaient être garanties ni les nouveaux prêts bancaires adossés aux garanties du consortium ne pouvaient être validés. Les transactions immobilières se figèrent instantanément, transformant le quartier en une zone grise administrative où personne n'osait plus investir, ni partir, ni rester. Le paradoxe était cruel : en voulant clarifier la notion de risque pour libérer le marché foncier, la municipalité avait provoqué l'effet inverse, paralysant toute dynamique économique locale.\n\nFinalement, la nuit achevât de figer cette incertitude sous une pluie fine et persistante qui commença à saturer les sols déjà gorgés d'eau des berges. Alors que les lampadaires de la rue des Tilleuls projetaient des lueurs jaunes sur l'asphalte luisant, les habitants veillaient derrière leurs fenêtres closes, observant anxieusement la lente montée de la rivière qui se fichait des décrets administratifs et des algorithmes. La confrontation des cartes avait accouché d'une impasse totale, démontrant que la bureaucratie a beau redessiner les frontières du danger, elle ne saurait en modifier la substance. Val-de-Sorne restait suspendue à la merci des éléments, prisonnière d'une fiction juridique qui menaçait de se transformer en tragédie bien réelle à la moindre intempérie.",
+    "wordCount": 703,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "divergence",
+        "lemma": "divergence",
+        "glosses": {
+          "es": "difference or disagreement",
+          "en": "difference or disagreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stochastiques",
+        "lemma": "stochastiques",
+        "glosses": {
+          "es": "probabilistic or random",
+          "en": "probabilistic or random"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatisme",
+        "lemma": "pragmatisme",
+        "glosses": {
+          "es": "practical approach",
+          "en": "practical approach"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pluviométriques",
+        "lemma": "pluviométriques",
+        "glosses": {
+          "es": "relating to rainfall measurement",
+          "en": "relating to rainfall measurement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vide",
+        "lemma": "vide",
+        "glosses": {
+          "es": "empty space or void",
+          "en": "empty space or void"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "substance",
+        "lemma": "substance",
+        "glosses": {
+          "es": "core reality or essence",
+          "en": "core reality or essence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.1,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'impact de la modification des cartes de risques inondation sur une commune et ses habitants"
+        },
+        {
+          "id": "a2",
+          "text": "La modernisation des infrastructures hydrauliques menée par le consortium Aquathèque"
+        },
+        {
+          "id": "a3",
+          "text": "L'historique complet des crues et des politiques d'aménagement urbain à Val-de-Sorne"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le conseil municipal de Val-de-Sorne retint son souffle lorsque l'urbaniste en chef, Éric Vasseur, posa sur la table de chêne massif les deux cartes hydrographiques côte à côte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle est la conséquence directe du nouveau plan selon le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le déplacement immédiat de tous les habitants des Tilleuls vers un autre secteur"
+        },
+        {
+          "id": "a2",
+          "text": "La transformation du quartier en zone grise administrative bloquant les transactions"
+        },
+        {
+          "id": "a3",
+          "text": "L'augmentation automatique des taxes foncières pour financer de nouvelles digues"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Les transactions immobilières se figèrent instantanément, transformant le quartier en une zone grise administrative où personne n'osait plus investir, ni partir, ni rester.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment peut-on qualifier la position de Camille Jaurès face aux nouveaux modèles ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle soutient pleinement l'utilisation des algorithmes pour moderniser la gestion de crise"
+        },
+        {
+          "id": "a2",
+          "text": "Elle propose de confier l'intégralité de l'urbanisme à un organisme indépendant"
+        },
+        {
+          "id": "a3",
+          "text": "Elle rejette fermement les modélisations qu'elle juge déconnectées de la réalité topographique"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Selon elle, l'algorithme d'Aquathèque avait purement et simplement gommé la réalité topographique du terrain au profit d'une rentabilité assurantielle cynique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de la description de la scène finale dans la nuit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mettre en contraste la réalité physique de la nature avec l'inefficacité des décisions bureaucratiques"
+        },
+        {
+          "id": "a2",
+          "text": "Annoncer la résolution pacifique du conflit entre les résidents et la municipalité"
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer l'efficacité immédiate des mesures de sécurité prises par le maire"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La confrontation des cartes avait accouché d'une impasse totale, démontrant que la bureaucratie a beau redessiner les frontières du danger, elle ne saurait en modifier la substance.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton général se dégage de cet article journalistique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et triomphant face aux progrès technologiques de la cartographie moderne"
+        },
+        {
+          "id": "a2",
+          "text": "Grave, critique et empreint d'une tension dramatique face aux impasses administratives"
+        },
+        {
+          "id": "a3",
+          "text": "Neutre et purement technique, dépourvu de tout commentaire sur les enjeux humains"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La confrontation prit une tournure dramatique lorsque Camille Jaurès, porte-parole du collectif 'Rive Solidaire', prit la parole pour dénoncer ce qu'elle qualifiait de manipulation actuarielle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'stochastiques' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Basés exclusivement sur des observations historiques fixes"
+        },
+        {
+          "id": "a2",
+          "text": "Destinés à rassurer immédiatement les investisseurs"
+        },
+        {
+          "id": "a3",
+          "text": "Fondés sur des calculs de probabilités et le hasard"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La seconde, commandurée par le consortium privé Aquathèque à la demande du fonds de garantie municipal, redessinait radicalement le périmètre en s'appuyant sur des modèles stochastiques de crues centennales.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire critique de 250 mots analysant comment la redéfinition des zones de risque illustre le conflit entre rationalité économique et protection des citoyens.",
+      "en": "Rédigez un commentaire critique de 250 mots analysant comment la redéfinition des zones de risque illustre le conflit entre rationalité économique et protection des citoyens."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez attentivement l'article et répondez aux questions analytiques pour démontrer votre maîtrise du niveau C1 en français.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La cartographie du désastre | C1 Reading | WeLearn",
+      "en": "La cartographie du désastre | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Exercez votre compréhension de lecture avancée avec cet article journalistique complexe analysant les répercussions politiques et sociales de la redéfinition des zones inondables.",
+      "en": "Exercez votre compréhension de lecture avancée avec cet article journalistique complexe analysant les répercussions politiques et sociales de la redéfinition des zones inondables."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

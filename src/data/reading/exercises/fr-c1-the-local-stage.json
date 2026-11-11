@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-local-stage",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Les Ombres de la Scène",
+      "en": "Les Ombres de la Scène"
+    },
+    "intro": {
+      "es": "Examinez un rapport de subvention qui confronte les chiffres officiels de la billetterie à la réalité humaine d'un projet de théâtre communautaire.",
+      "en": "Examinez un rapport de subvention qui confronte les chiffres officiels de la billetterie à la réalité humaine d'un projet de théâtre communautaire."
+    },
+    "mission": {
+      "es": "Lisez le texte suivant et répondez aux questions de compréhension pour analyser les tensions entre l'évaluation quantitative et l'impact social d'un projet culturel.",
+      "en": "Lisez le texte suivant et répondez aux questions de compréhension pour analyser les tensions entre l'évaluation quantitative et l'impact social d'un projet culturel."
+    },
+    "targetText": "L'Association des Planches Solidaires, installée dans le quartier populaire de Belleville, vient de publier son bilan annuel d'activité destiné au ministère de la Culture. Le document, rédigé par la directrice administrative Hélène Morvan, s'articule autour d'un constat triomphant : le nombre de billets vendus pour les représentations de fin de saison a augmenté de manière significative, validant ainsi la pertinence des fonds publics alloués. Pourtant, derrière la froideur rassurante des graphiques et des bilans comptables, une réalité bien plus complexe se dessine, révélant un fossé grandissant entre la vitrine artistique de l'institution et son véritable ancrage social.\n\nDepuis trois ans, le cœur battant de l'association ne réside pas seulement dans ses têtes d'affiche ou dans les applaudissements du public lors des soirées de première, mais dans les ateliers hebdomadaires d'expression théâtrale menés par le metteur en scène Marc Lemaire. Ces espaces de parole et de mouvement s'adressent prioritairement à des personnes en situation de précarité, qu'il s'agisse de jeunes en décrochage scolaire ou de retraités isolés. Pour ce public, la scène finale représente souvent une barrière infranchissable, une exigence de visibilité qu'il redoute ou refuse. Leur engagement se vit en coulisses, dans l'ombre des projecteurs, à travers des exercices d'écoute, d'improvisation et de réappropriation de la parole, des démarches thérapeutiques et émancipatrices qui échappent totalement aux indicateurs de performance exigés par les financeurs.\n\nLe conflit larvé entre Hélène Morvan et Marc Lemaire a éclaté lors de la dernière réunion du conseil d'administration. Tandis que la directrice mettait en avant la rentabilité accrue et le taux de remplissage de la salle pour justifier le renouvellement de la subvention pluriannuelle, le metteur en scène a vivement contesté cette lecture unilatérale. Selon lui, réduire l'action de l'association au simple produit fini offert aux spectateurs payants revient à nier l'essence même du projet d'éducation populaire qui a motivé sa création. Marc a souligné que plusieurs participants réguliers, dont l'intégration au sein du groupe a nécessité des mois de travail patient, avaient définitivement abandonné l'atelier à l'annonce d'une représentation publique obligatoire, vécue comme une trahison de l'espace de sécurité initialement promis.\n\nPourtant, la machinerie administrative ne s'embarrasse guère de nuances sociologiques. Pour le rapport officiel, un participant qui ne monte pas sur scène est un échec statistique, ou pire, une variable négligeable. Hélène Morvan soutient, non sans une certaine logique bureaucratique, que les bailleurs de fonds exigent des retombées mesurables, quantifiables et médiatisables, des critères que seuls les spectateurs dans les fauteuils et les acteurs sous les feux de la rampe peuvent incarner. Elle brandit la menace d'un désengagement financier si l'association ne parvient pas à standardiser ses livrables et à prouver son attractivité grand public, sacrifiant de fait l'accompagnement individuel au profit d'une logique de rentabilité culturelle.\n\nCette confrontation met en lumière une tension irrésolue au cœur des politiques culturelles contemporaines, tiraillées entre l'injonction à la démocratisation de l'accès aux arts et la tentation de la marchandisation des pratiques. À vouloir satisfaire à tout prix les critères d'évaluation exogènes fixés par les autorités de tutelle, l'Association des Planches Solidaires risque de perdre son âme, transformant un lieu de résistance sociale en simple prestataire de divertissement de quartier. Le rapport est certes validé et les caisses sont provisoirement renflouées, mais la fracture est désormais béante entre ceux qui gèrent l'institution et ceux qui la font vivre de l'intérieur, dans le silence fertile des ateliers oubliés des bilans officiels.\n\nAu-delà de cette querelle interne se profile une menace encore plus insidieuse pour l'avenir de la structure : la normalisation progressive des contenus artistiques pour plaire à un lectorat institutionnel friand de consensus. En voulant lisser les aspérités de ses créations pour garantir un taux de remplissage maximal, l'institution aliène irrémédiablement sa liberté de ton et sa capacité à déranger. Les financeurs publics, obsédés par la rentabilité sociale mesurable à grande échelle, ignorent que la véritable subversion culturelle ne se mesure ni en décibels d'applaudissements ni en entrées payantes, mais dans la capacité à offrir un refuge inconditionnel aux parias du système. Si cette dérive gestionnaire venait à s'institutionnaliser définitivement, les ateliers de Belleville ne seraient plus que des vitrines aseptisées, vidées de leur substance contestataire originelle, réduisant le théâtre à un simple outil de pacification sociale au service des politiques publiques. Cette mutation silencieuse transforme peu à peu les travailleurs sociaux et les artistes engagés en de simples exécutants bureaucratiques, contraints de justifier chaque sou dépensé par des indicateurs de performance qui n'ont plus grand-chose à voir avec la promesse émancipatrice du premier jour.",
+    "wordCount": 748,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bilan",
+        "lemma": "bilan",
+        "glosses": {
+          "es": "report / assessment",
+          "en": "report / assessment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "précarité",
+        "lemma": "précarité",
+        "glosses": {
+          "es": "precariousness / poverty",
+          "en": "precariousness / poverty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conflit larvé",
+        "lemma": "conflit larvé",
+        "glosses": {
+          "es": "latent conflict",
+          "en": "latent conflict"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bailleurs de fonds",
+        "lemma": "bailleurs de fonds",
+        "glosses": {
+          "es": "funders / financial backers",
+          "en": "funders / financial backers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "marchandisation",
+        "lemma": "marchandisation",
+        "glosses": {
+          "es": "commercialization",
+          "en": "commercialization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "béante",
+        "lemma": "béante",
+        "glosses": {
+          "es": "gaping / wide open",
+          "en": "gaping / wide open"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.5,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème principal abordé dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le décalage entre la rentabilité mesurée par la billetterie et l'impact social réel des ateliers."
+        },
+        {
+          "id": "a2",
+          "text": "La diminution drastique des subventions publiques allouées au théâtre de Belleville."
+        },
+        {
+          "id": "a3",
+          "text": "La nécessité pour tous les participants d'un atelier de monter obligatoirement sur scène."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "révélant un fossé grandissant entre la vitrine artistique de l'institution et son véritable ancrage social.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle est la principale source de désaccord entre Hélène Morvan et Marc Lemaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le choix des pièces jouées en fin de saison."
+        },
+        {
+          "id": "a2",
+          "text": "La nécessité de valoriser la rentabilité face aux financeurs."
+        },
+        {
+          "id": "a3",
+          "text": "La répartition du budget entre la communication et les décors."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Tandis que la directrice mettait en avant la rentabilité accrue et le taux de remplissage de la salle pour justifier le renouvellement de la subvention pluriannuelle, le metteur en scène a vivement contesté cette lecture unilatérale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que peut-on déduire quant à l'impact des exigences de la direction sur certains participants ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elles ont renforcé la cohésion de groupe grâce à une visibilité accrue."
+        },
+        {
+          "id": "a2",
+          "text": "Elles ont permis d'attirer un public plus jeune et plus fortuné."
+        },
+        {
+          "id": "a3",
+          "text": "Elles ont provoqué l'abandon de personnes fuyant l'exposition publique."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "plusieurs participants réguliers, dont l'intégration au sein du groupe a nécessité des mois de travail patient, avaient définitivement abandonné l'atelier à l'annonce d'une représentation publique obligatoire",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de l'utilisation des indicateurs quantitatifs par la direction ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Prouver l'attractivité de l'association pour garantir son financement."
+        },
+        {
+          "id": "a2",
+          "text": "Évaluer les progrès thérapeutiques individuels de chaque comédien."
+        },
+        {
+          "id": "a3",
+          "text": "Fixer le salaire des intervenants artistiques des ateliers."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elle brandit la menace d'un désengagement financier si l'association ne parvient pas à standardiser ses livrables et à prouver son attractivité grand public",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il principalement pour décrire la gestion administrative du projet ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un enthousiasme naïf face à la modernisation des structures culturelles."
+        },
+        {
+          "id": "a2",
+          "text": "Une critique lucide et sévère envers la bureaucratisation culturelle."
+        },
+        {
+          "id": "a3",
+          "text": "Un humour caustique qui célèbre la victoire des chiffres sur l'art."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Pourtant, la machinerie administrative ne s'embarrasse guère de nuances sociologiques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie l'expression 'fossé grandissant' dans le premier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une augmentation du budget alloué aux décors."
+        },
+        {
+          "id": "a2",
+          "text": "Un agrandissement physique de la salle de spectacle."
+        },
+        {
+          "id": "a3",
+          "text": "Une divergence croissante entre deux réalités."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "révélant un fossé grandissant entre la vitrine artistique de l'institution et son véritable ancrage social.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un essai argumenté de 250 mots en français dans lequel vous discutez s'il est légitime d'évaluer l'efficacité des structures culturelles subventionnées uniquement par des critères quantitatifs.",
+      "en": "Rédigez un essai argumenté de 250 mots en français dans lequel vous discutez s'il est légitime d'évaluer l'efficacité des structures culturelles subventionnées uniquement par des critères quantitatifs."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez le texte suivant et répondez aux questions de compréhension pour analyser les tensions entre l'évaluation quantitative et l'impact social d'un projet culturel.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Les Ombres de la Scène | C1 Reading | WeLearn",
+      "en": "Les Ombres de la Scène | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Examinez un rapport de subvention qui confronte les chiffres officiels de la billetterie à la réalité humaine d'un projet de théâtre communautaire.",
+      "en": "Examinez un rapport de subvention qui confronte les chiffres officiels de la billetterie à la réalité humaine d'un projet de théâtre communautaire."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

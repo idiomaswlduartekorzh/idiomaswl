@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le Paradoxe de la Salle d'Attente",
+      "en": "Le Paradoxe de la Salle d'Attente"
+    },
+    "intro": {
+      "es": "Lisez cet extrait du journal de bord d'une réceptionniste de clinique pour analyser l'impact psychologique de la gestion numérique des flux.",
+      "en": "Lisez cet extrait du journal de bord d'une réceptionniste de clinique pour analyser l'impact psychologique de la gestion numérique des flux."
+    },
+    "mission": {
+      "es": "Analysez comment l'algorithme de file d'attente transforme la perception du temps et déplace l'anxiété des patients de l'intérieur vers le seuil de l'établissement.",
+      "en": "Analysez comment l'algorithme de file d'attente transforme la perception du temps et déplace l'anxiété des patients de l'intérieur vers le seuil de l'établissement."
+    },
+    "targetText": "Lundi. L’écran tactile de l’accueil affiche désormais une sérénité trompeuse. Depuis que la direction a déployé le nouveau logiciel de régulation des flux, la salle d’attente ne déborde plus de corps fatigués qui s’impatientent sur les chaises en skaï bleu. Les statistiques officielles jubilent : le temps de séjour moyen à l’intérieur de l’enceinte a chuté de trente pour cent, validant la promesse technologique d’une efficacité accrue. Pourtant, derrière mon comptoir, je perçois les fissures de cette modernité aseptisée. Le système redistribue la tension au lieu de la résorber. Dorénavant, les patients ne patientent plus sous mes yeux ; ils errent sur le trottoir, agglutinés devant la porte vitrée comme des spectateurs en attente d’une billetterie de théâtre. Madame Mercier, qui souffre d’une arthrite sévère, a passé quarante minutes debout dans le vent frais parce que son ticket virtuel lui indiquait une prise en charge imminente, un artifice algorithmique conçu pour vider les couloirs mais incapable de prédire l’imprévu des consultations. \n\nMardi. Le conflit s’est déplacé sur le seuil. Ce matin, un homme en costume froissé a tambouriné contre la vitre teintée, furieux d’avoir vu son numéro passer en son absence alors qu’il cherchait un abri pour fumer sa cigarette. Le logiciel, implacable, l’avait radié de la liste dès l’appel muet de son terminal mobile. Dans l’ancienne configuration, j’aurais levé les yeux, repéré son visage inquiet et l’aurais fait entrer avec un sourire complice. Aujourd’hui, je suis devenue la simple exécutrice d’une machine invisible qui décide arbitrairement des priorités. Le directeur soutient que cette fluidité apparente apaise l’atmosphère générale, mais je constate l’inverse : l’angoisse n’a pas disparu, elle a été externalisée. Elle rôde désormais dehors, condensée en une masse frissonnante et suspicieuse qui guette le moindre mouvement de mon curseur sur l’écran de contrôle.\n\nMercredi. Un incident révélateur a cristallisé l'absurdité du dispositif. Une jeune femme, le visage blême, est entrée en trombe pour réclamer de l'aide, son smartphone affichant un message d'erreur abscons au moment exact où son tour d'appel devait s'enclencher. Le système, incapable de tolérer l'écart entre le protocole numérique et la réalité biologique de la détresse, l'avait rétrogradée au bas de la liste générale. J'ai voulu court-circuiter la procédure manuellement, mais le logiciel exige désormais une double validation hiérarchique pour toute réattribution de ticket. Cette lourdeur bureaucratique, maquillée en innovation agile, paralyse l'empathie humaine et transforme le personnel en gardiens d'un ordre algorithmique aveugle aux nuances de la souffrance.\n\nJeudi. L'ambiance dans le hall est devenue glaciale. Les chaises vides renvoient un écho cynique aux promesses de modernité affichées sur la brochure d'accueil. Les patients ne voient plus en la clinique un lieu de soin bienveillant, mais une opaque machinerie administrative dont ils redoutent les verdicts arbitraires. La direction se félicite des indicateurs de performance, aveuglée par la baisse artificielle de la densité interne. Pourtant, la violence verbale s'est déplacée du comptoir vers le parvis, où les usagers, frigorifiés et exaspérés, s'observent en chiens de faïence, persuadés que les autres ont bénéficié de passe-droits numériques.\n\nVendredi. Le bilan de la semaine s'impose avec une clarté troublante. En voulant éradiquer l'ennui et l'attente visible, l'établissement a substitué une incertitude supportable par une anxiété paranoïaque. Les gens n'attendent plus sagement assis en communauté ; ils guettent l'algorithme comme on guette un couperet, terrifiés à l'idée qu'un bug informatique ne les prive définitivement de leur consultation. La technologie a certes nettoyé l'espace physique, mais elle a contaminé le lien de confiance originel, prouvant que l'optimisation mathématique du temps médical engendre souvent une régression profonde de l'humanité des soins.\n\nSamedi. Le dernier rapport statistique est tombé, contredisant brutalement les certitudes de la direction. Un mouvement de fronde inédit s'organise sur les réseaux sociaux, alimenté par la colère des usagers relégués sur le trottoir et les témoignages accablants du personnel. Face au tollé général et à la menace imminente d'une inspection sanitaire, le conseil d'administration a finalement dû concéder une réévaluation d'urgence du protocole. Les techniciens s'affairent déjà à modifier les paramètres de l'application, cherchant en hâte à réintroduire une marge de tolérance humaine que la froideur des chiffres avait bannie. Derrière mon écran, je retrouve enfin l'usage de mon discernement, bien que le mal soit déjà fait. Cette brève parenthèse numérique aura durablement fracturé la relation de proximité qui faisait la force de notre établissement, nous rappelant amèrement que la vitesse de traitement ne remplace jamais la dignité de l'écoute et du temps partagé.",
+    "wordCount": 735,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "aseptisée",
+        "lemma": "aseptisée",
+        "glosses": {
+          "es": "sanitized",
+          "en": "sanitized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exécutrice",
+        "lemma": "exécutrice",
+        "glosses": {
+          "es": "executor",
+          "en": "executor"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abscons",
+        "lemma": "abscons",
+        "glosses": {
+          "es": "abstruse",
+          "en": "abstruse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "parvis",
+        "lemma": "parvis",
+        "glosses": {
+          "es": "forecourt",
+          "en": "forecourt"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "couperet",
+        "lemma": "couperet",
+        "glosses": {
+          "es": "blade",
+          "en": "blade"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "guettent",
+        "lemma": "guettent",
+        "glosses": {
+          "es": "watch for",
+          "en": "watch for"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 18.4,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce journal de bord ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'impact aliénant d'un logiciel de gestion des files d'attente qui déplace l'anxiété hors de la clinique"
+        },
+        {
+          "id": "a2",
+          "text": "La modernisation réussie du système de prise en charge médicale grâce à l'intelligence artificielle"
+        },
+        {
+          "id": "a3",
+          "text": "La diminution définitive du nombre de patients consultants au sein de l'établissement de santé"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le système redistribue la tension au lieu de la résorber.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Madame Mercier a-t-elle passé quarante minutes debout dehors ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La salle d'attente intérieure était strictement interdite aux personnes âgées"
+        },
+        {
+          "id": "a2",
+          "text": "Le logiciel lui indiquait une prise en charge imminente malgré l'imprévu"
+        },
+        {
+          "id": "a3",
+          "text": "Elle refusait obstinément d'entrer dans l'établissement avant son appel"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "son ticket virtuel lui indiquait une prise en charge imminente, un artifice algorithmique conçu pour vider les couloirs mais incapable de prédire l’imprévu des consultations",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que révèle l'incident de la jeune femme au visage blême ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La volonté délibérée des patients de saboter le matériel informatique"
+        },
+        {
+          "id": "a2",
+          "text": "L'incompétence notoire de la réceptionniste pour manipuler les interfaces"
+        },
+        {
+          "id": "a3",
+          "text": "La froideur bureaucratique et l'inadaptation du système face à la détresse"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le système, incapable de tolérer l'écart entre le protocole numérique et la réalité biologique de la détresse, l'avait rétrogradée au bas de la liste générale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le principal objectif visé par la direction en adoptant ce nouvel outil ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiser les indicateurs de performance et vider les espaces intérieurs"
+        },
+        {
+          "id": "a2",
+          "text": "Favoriser les échanges humains et la solidarité entre les patients"
+        },
+        {
+          "id": "a3",
+          "text": "Réduire le coût salarial du personnel d'accueil posté au comptoir"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La direction se félicite des indicateurs de performance, aveuglée par la baisse artificielle de la densité interne.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans la réflexion finale de la narratrice ? Saisissez la nuance critique.",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Serein et enthousiaste face aux progrès constants de la technique"
+        },
+        {
+          "id": "a2",
+          "text": "Désabusé et critique face à la perte d'humanité des soins"
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et neutre quant aux choix stratégiques de l'entreprise"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "prouvant que l'optimisation mathématique du temps médical engendre souvent une régression profonde de l'humanité des soins.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme \"aseptisée\" appliqué à la modernité de la clinique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Propre et stérile"
+        },
+        {
+          "id": "a2",
+          "text": "Sécurisée et efficace"
+        },
+        {
+          "id": "a3",
+          "text": "Froide et déshumanisée"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "je perçois les fissures de cette modernité aseptisée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un paragraphe argumenté d'environ 150 mots pour discuter si la numérisation des services publics améliore réellement le rapport entre les usagers et les institutions.",
+      "en": "Rédigez un paragraphe argumenté d'environ 150 mots pour discuter si la numérisation des services publics améliore réellement le rapport entre les usagers et les institutions."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez comment l'algorithme de file d'attente transforme la perception du temps et déplace l'anxiété des patients de l'intérieur vers le seuil de l'établissement.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le Paradoxe de la Salle d'Attente | C1 Reading | WeLearn",
+      "en": "Le Paradoxe de la Salle d'Attente | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet extrait du journal de bord d'une réceptionniste de clinique pour analyser l'impact psychologique de la gestion numérique des flux.",
+      "en": "Lisez cet extrait du journal de bord d'une réceptionniste de clinique pour analyser l'impact psychologique de la gestion numérique des flux."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

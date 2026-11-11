@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La Légende des Gousses d'Ébène",
+      "en": "La Légende des Gousses d'Ébène"
+    },
+    "intro": {
+      "es": "Lisez cette nouvelle sur un différend lié au patrimoine agricole pour pratiquer la lecture analytique de niveau C1.",
+      "en": "Lisez cette nouvelle sur un différend lié au patrimoine agricole pour pratiquer la lecture analytique de niveau C1."
+    },
+    "mission": {
+      "es": "Analysez les tensions sociales et les interprétations historiques divergentes autour de la conservation d'une légumineuse rare.",
+      "en": "Analysez les tensions sociales et les interprétations historiques divergentes autour de la conservation d'une légumineuse rare."
+    },
+    "targetText": "Dans la touffeur de la salle polyvalente de Val-des-Sables, les rangées de chaises en plastique ployaient sous le poids des murmures. Sur l'estrade, une banderole en feutrine arborait le logo de la grainothèque communautaire : une cosse stylisée dont les grains répandaient des éclats d'or. L'assemblée extraordinaire avait été convoquée pour entériner la donation officielle des semences dites de l'Ébène, un haricot noir charnu, résistant à la sécheresse, qui faisait la fierté et le gagne-pain officieux de la vallée. Pourtant, loin de célébrer une victoire collective, la soirée portait le sceau d'une discorde enracinée dans les non-dits et les mémoires sélectives. Au premier rang, les mains croisées sur sa canne en merisier, le patriarche Anselme Girard fixait le vide. À quelques sièges de là, Léa Moretti, coordinatrice de la jeune coopérative, feuilletait nerveusement un épais carnet de notes relié en cuir brut. Le nœud du litige tenait en une phrase : à qui appartenait la paternité morale et matérielle de cette conservation patrimoniale ? D'un côté, la lignée des Girard clamait haut et fort, sans autre archive que la parole ancestrale, qu'elle avait soustrait le haricot aux famines successives en le cachant au fond de jarres enterrées lors des exodes du siècle dernier. De l'autre, les techniciens et naturalistes de la coopérative, emmenés par Léa, soutenaient que l'isolement paysan avait failli condamner la variété à l'endogamie stérile et que seule la méthode de brassage génétique empirique mise en œuvre depuis dix ans avait sauvé l'espèce de l'extinction. Le silence s'étira lorsque Léa prit la parole pour présenter le protocole de catalogage. Sans élever la voix, elle rappela que la sauvegarde d'un vivant ne se mesurait pas à l'aune d'une fidélité romanesque, mais à la rigueur de sa transmission. Elle expliqua que les échantillons confiés par les Girard étaient certes d'une pureté remarquable, mais qu'ils présentaient une vulnérabilité fongique alarmante que les croisements contrôlés avaient seule permis de juguler. « Conserver, ce n'est pas momifier un héritage dans le formol du secret familial ; c'est le rendre capable de traverser les tempêtes de demain », affirma-t-elle, cherchant du regard l'approbation de l'assemblée. La réplique d'Anselme ne se fit pas attendre. Se redressant avec une raideur inattendue pour son grand âge, il prit appui sur le dossier de la chaise voisine et décocha un regard chargé d'amertume. Il ne nia pas les analyses de laboratoire, mais il rappela avec une ironie mordante que lorsque les terres de la commune étaient arides et que les agronomes de la ville tournaient le dos aux paysans, ce sont les mains calleuses des siens qui avaient trié les graines une à une, à la lueur d'une chandelle, en s'interdisant d'en consommer une seule même au cœur de l'hiver. Pour lui, la science venait en utilitaire après coup, s'appropriant un travail de titan accompli dans l'ombre par dignité et par instinct de survie. La confrontation mit en lumière une fracture plus profonde : celle qui sépare la légitimité de l'usage quotidien et celle de la reconnaissance institutionnelle. Le débat menaçait de s'enliser dans les invectives lorsque le maire prit la décision de suspendre la séance pour obliger les parties à négocier un compromis dans une salle adjacente. Le huis clos dura plus d'une heure. À leur retour, l'atmosphère avait changé de texture ; elle n'était plus à l'affrontement frontal, mais à une résignation lucide. Le pacte final, lu par le secrétaire de mairie, ne désigna ni vainqueur ni vaincu. Il fut convenu que la grainothèque porterait conjointement les deux noms et que les réserves seraient divisées en deux lots distincts : l'un conservé selon les méthodes traditionnelles de sélection massale des Girard, l'autre soumis aux protocoles évolutifs de la coopérative. En sortant dans la fraîcheur de la nuit val-des-sablienne, Anselme serra contre sa poitrine un sachet de toile contenant la première récolte issue du compromis. Il savait pertinemment que cette cohabitation forcée n'effaçait pas les rancœurs, mais il réalisait, non sans une pointe de mélancolie, que la survie du haricot d'Ébène dépendait désormais autant de la mémoire têtue des vieillards que de la curiosité méthodique des jeunes.",
+    "wordCount": 680,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "touffeur",
+        "lemma": "touffeur",
+        "glosses": {
+          "es": "stuffy heat",
+          "en": "stuffy heat"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "endogamie",
+        "lemma": "endogamie",
+        "glosses": {
+          "es": "inbreeding",
+          "en": "inbreeding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fongique",
+        "lemma": "fongique",
+        "glosses": {
+          "es": "fungal",
+          "en": "fungal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "juguler",
+        "lemma": "juguler",
+        "glosses": {
+          "es": "to curb",
+          "en": "to curb"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "massale",
+        "lemma": "massale",
+        "glosses": {
+          "es": "mass selection",
+          "en": "mass selection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rancœurs",
+        "lemma": "rancœurs",
+        "glosses": {
+          "es": "resentments",
+          "en": "resentments"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.2,
+      "maxSentenceWords": 67,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal de ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un conflit sur la propriété et la méthode de conservation d'une variété de haricot entre une famille paysanne et une coopérative."
+        },
+        {
+          "id": "a2",
+          "text": "La création d'un marché agricole municipal destiné à exporter des graines rares."
+        },
+        {
+          "id": "a3",
+          "text": "L'échec total des négociations entre les habitants de Val-des-Sables et les agronomes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le nœud du litige tenait en une phrase : à qui appartenait la paternité morale et matérielle de cette conservation patrimoniale ?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle solution a finalement été adoptée lors du compromis ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'exclusivité totale de la gestion des semences a été confiée aux Girard."
+        },
+        {
+          "id": "a2",
+          "text": "Le nom de la grainothèque a été partagé et les réserves divisées en deux lots selon les deux méthodes."
+        },
+        {
+          "id": "a3",
+          "text": "La coopérative a détruit les stocks traditionnels pour imposer ses propres croisements."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il fut convenu que la grainothèque porterait conjointement les deux noms et que les réserves seraient divisées en deux lots distincts : l'un conservé selon les méthodes traditionnelles de sélection massale des Girard, l'autre soumis aux protocoles évolutifs de la coopérative.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que peut-on déduire de l'attitude d'Anselme Girard à la fin du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il refuse catégoriquement d'appliquer le compromis et quitte définitivement le village."
+        },
+        {
+          "id": "a2",
+          "text": "Il reconnaît que sa famille a commis des erreurs graves dans le tri des graines."
+        },
+        {
+          "id": "a3",
+          "text": "Il accepte la cohabitation des méthodes par pragmatisme, tout en gardant une certaine amertume."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il savait pertinemment que cette cohabitation forcée n'effaçait pas les rancœurs, mais il réalisait, non sans une pointe de mélancolie, que la survie du haricot d'Ébène dépendait désormais autant de la mémoire têtue des vieillards que de la curiosité méthodique des jeunes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi l'auteur insiste-t-il sur les descriptions de l'atmosphère et des réactions physiques des personnages ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour illustrer la dimension humaine et émotionnelle de la transmission du patrimoine face aux approches techniques."
+        },
+        {
+          "id": "a2",
+          "text": "Pour meubler le récit avant d'introduire des données statistiques sur la production agricole."
+        },
+        {
+          "id": "a3",
+          "text": "Pour démontrer que les réunions publiques sont toujours vouées à l'échec dans les villages."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La confrontation mit en lumière une fracture plus profonde : celle qui sépare la légitimité de l'usage quotidien et celle de la reconnaissance institutionnelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans la narration de cette assemblée communautaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton comique et léger qui tourne en dérision les querelles de village."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton grave et nuancé qui souligne la complexité des luttes mémorielles."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton neutre et purement journalistique sans aucun parti pris narratif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'assemblée extraordinaire avait été convoquée pour entériner la donation officielle des semences dites de l'Ébène, un haricot noir charnu, résistant à la sécheresse, qui faisait la fierté et le gagne-pain officieux de la vallée. Pourtant, loin de célébrer une victoire collective, la soirée portait le sceau d'une discorde enracinée dans les non-dits et les mémoires sélectives.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie exactement le terme « endogamie » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une technique moderne d'amélioration des sols arides par l'apport d'engrais organiques."
+        },
+        {
+          "id": "a2",
+          "text": "Un mode de vie villageois strictement replié sur ses traditions alimentaires."
+        },
+        {
+          "id": "a3",
+          "text": "Une reproduction en circuit fermé appauvrissant la diversité génétique de la variété."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "les techniciens et naturalistes de la coopérative, emmenés par Léa, soutenaient que l'isolement paysan avait failli condamner la variété à l'endogamie stérile et que seule la méthode de brassage génétique empirique mise en œuvre depuis dix ans avait sauvé l'espèce de l'extinction.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un texte argumentatif de 250 mots dans lequel vous discutez s'il est préférable de confier la conservation du patrimoine vivant à des experts scientifiques ou aux communautés locales.",
+      "en": "Rédigez un texte argumentatif de 250 mots dans lequel vous discutez s'il est préférable de confier la conservation du patrimoine vivant à des experts scientifiques ou aux communautés locales."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez les tensions sociales et les interprétations historiques divergentes autour de la conservation d'une légumineuse rare.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La Légende des Gousses d'Ébène | C1 Reading | WeLearn",
+      "en": "La Légende des Gousses d'Ébène | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cette nouvelle sur un différend lié au patrimoine agricole pour pratiquer la lecture analytique de niveau C1.",
+      "en": "Lisez cette nouvelle sur un différend lié au patrimoine agricole pour pratiquer la lecture analytique de niveau C1."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Illusion du Bénévolat Inclusif au Repair Café L'Engrenage",
+      "en": "L'Illusion du Bénévolat Inclusif au Repair Café L'Engrenage"
+    },
+    "intro": {
+      "es": "Examen critique des dynamiques de pouvoir au sein d'un atelier de réparation participatif, entre rhétorique de l'émancipation collective et exploitation officieuse des compétences expertes.",
+      "en": "Examen critique des dynamiques de pouvoir au sein d'un atelier de réparation participatif, entre rhétorique de l'émancipation collective et exploitation officieuse des compétences expertes."
+    },
+    "mission": {
+      "es": "Analysez l'éditorial pour comprendre comment l'idéologie du partage masquée par l'éloge de la participation peut générer des asymétries de travail non rémunéré.",
+      "en": "Analysez l'éditorial pour comprendre comment l'idéologie du partage masquée par l'éloge de la participation peut générer des asymétries de travail non rémunéré."
+    },
+    "targetText": "L'association L'Engrenage célébrait hier soir le premier anniversaire de son atelier de co-réparation, un événement salué avec enthousiasme par la municipalité et les habitants du quartier. Sous les guirlandes lumineuses tendues dans l'ancienne halle industrielle, les discours officiels ont loué la mixité sociale et la transmission horizontale des savoirs. Pourtant, derrière cette vitrine d'un hacer-ensemble bienveissant, une analyse minutieuse des dynamiques internes révèle une réalité plus contrastée, où la célébration de la participation citoyenne dissimule mal une répartition inéquitable des charges techniques. L'initiative, louable en apparence, repose sur un postulat séduisant : permettre à chacun de réparer ses objets du quotidien grâce aux conseils de bénévoles passionnés. Dans les faits, la soirée de lancement a mis en lumière un fossé grandissant entre les néophytes enthousiastes et le noyau dur des techniciens qualifiés. Tandis que les participants d'un soir repartent comblés d'avoir vissé eux-mêmes un pied de lampe ou recousu un ourlet sous les applaudissements, ce sont les mêmes artisans chevronnés — à l'instar de Marc et de Sophie, électriciens à la retraite — qui passent la majeure partie de la soirée à accomplir le travail de fond, souvent dans l'ombre et sans aucune contrepartie. Le problème ne réside pas dans la transmission pédagogique, mais dans l'instrumentalisation de cette dernière. L'éloge systématique de la participation collective, omniprésente dans la communication de L'Engrenage, tend à banaliser et à invisibiliser l'expertise technique. Lorsque le président de l'association affirme avec emphase que « chaque usager devient acteur de sa propre autonomie », il occulte commodément le fait que cette autonomie est subventionnée par le temps libre et le savoir-faire accumulé de professionnels qui offrent, bénévolement, des compétences pour lesquelles d'autres factureraient leurs services. Cette confusion des genres fragilise l'édifice associatif. En refusant de formaliser ou de rétribuer à sa juste valeur le travail des experts, l'organisation institutionnalise un modèle de précarité militante. Les réparateurs les plus expérimentés se retrouvent pris au piège d'une injonction morale : refuser de réparer un appareil complexe ou exiger une reconnaissance matérielle reviendrait à trahir l'esprit d'entraide communautaire. Ainsi, la bienveillance affichée fonctionne comme un mécanisme de coercition douce, où la culpabilisation guette celui qui oserait réclamer un rééquilibrage de la charge. Cette tension permanente entre le mythe de l'égalité horizontale et la réalité d'une hiérarchie des compétences non dite risque, à terme, d'épuiser les forces vives sur lesquelles repose l'association. Si L'Engrenage souhaite pérenniser son action sans sombrer dans l'hypocrisie managériale, il lui faudra d'urgence cesser de faire l'économie d'une réflexion honnête sur la valeur réelle du travail technique, en cessant de confondre démocratisation de l'accès aux outils et gratuité absolue des expertises spécialisées.\n\nPourtant, envisager cette issue uniquement sous l'angle de la marchandisation ou d'un rapport salarial revisité serait faire abstraction de la dimension profondément émancipatrice que revendiquent ces vétérans de l'atelier, pour qui le don du temps échappe précisément à la logique comptable. En effet, Marc et Sophie ne subissent pas passivement cette asymétrie ; ils y trouvent, par la transmission quotidienne de leur art, une forme de réhabilitation sociale que le marché du travail leur avait confisquée à l'heure de la retraite. Leurs gestes précis, loin d'être de simples prestations gratuites exploitées par une gouvernance soucieuse de communication, constituent des actes de résistance politique contre l'obsolescence programmée et la société de consommation jetable. Réduire leur engagement à une simple aliénation douce sous prétexte d'un déséquilibre dans la charge technique revient à ignorer la satisfaction intime de voir renaître un objet condamné, ainsi que le tissu relationnel tressé au fil des heures partagées. La reconnaissance qu'ils attendent ne relève guère de la rétribution sonnante et trébuchante, mais bien de la valorisation symbolique d'un savoir-faire manuel trop souvent méprisé par les élites intellectuelles. Si L'Engrenage commet l'erreur de romantiser excessivement la participation citoyenne au détriment de la vérité des efforts fournis, la solution ne réside point dans la bureaucratisation ou la contractualisation des rapports humains, ce qui risquerait d'aseptiser l'atmosphère conviviale propre à ces sanctuaires de la débrouillardise. Au contraire, c'est en instaurant un dialogue horizontal sincère, capable d'entendre les frustrations légitimes des techniciens sans pour autant céder aux sirènes du capitalisme associatif, que l'on parviendra à préserver l'équilibre fragile de cette communauté. L'avenir de l'atelier dépendra donc de sa capacité à inventer de nouvelles formes de considération mutuelle, où l'expertise technique et l'enthousiasme profane s'enrichissent mutuellement, prouvant ainsi que la solidarité n'est pas nécessairement incompatible avec la lucidité organisationnelle.",
+    "wordCount": 733,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vitrine",
+        "lemma": "vitrine",
+        "glosses": {
+          "es": "showcase",
+          "en": "showcase"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "néophytes",
+        "lemma": "néophytes",
+        "glosses": {
+          "es": "beginners",
+          "en": "beginners"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "invisibiliser",
+        "lemma": "invisibiliser",
+        "glosses": {
+          "es": "to render invisible",
+          "en": "to render invisible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "injonction",
+        "lemma": "injonction",
+        "glosses": {
+          "es": "injunction",
+          "en": "injunction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coercition",
+        "lemma": "coercition",
+        "glosses": {
+          "es": "coercion",
+          "en": "coercion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérenniser",
+        "lemma": "pérenniser",
+        "glosses": {
+          "es": "to make sustainable",
+          "en": "to make sustainable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.9,
+      "maxSentenceWords": 62,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le propos principal de cet article critique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il expose la tension entre la valorisation de la participation citoyenne et l'exploitation des experts techniques."
+        },
+        {
+          "id": "a2",
+          "text": "Il démontre l'échec total des ateliers de réparation participatifs face aux exigences de l'industrie moderne."
+        },
+        {
+          "id": "a3",
+          "text": "Il raconte la soirée d'anniversaire réussie d'une association de quartier dédiée au recyclage."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "une analyse minutieuse des dynamiques internes révèle une réalité plus contrastée, où la célébration de la participation citoyenne dissimule mal une répartition inéquitable des charges techniques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quel rôle jouent Marc et Sophie durant la soirée ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils animent les discours officiels avec la municipalité."
+        },
+        {
+          "id": "a2",
+          "text": "Ils réparent les objets complexes dans l'ombre."
+        },
+        {
+          "id": "a3",
+          "text": "Ils découvrent pour la première fois l'art de la couture."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ce sont les mêmes artisans chevronnés — à l'instar de Marc et de Sophie, électriciens à la retraite — qui passent la majeure partie de la soirée à accomplir le travail de fond, souvent dans l'ombre et sans aucune contrepartie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment les experts réagissent-ils face à cette situation de travail non rémunéré ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils abandonnent immédiatement l'association pour fonder une entreprise concurrente lucrative."
+        },
+        {
+          "id": "a2",
+          "text": "Ils profitent de la situation pour se faire élire à la tête du bureau municipal."
+        },
+        {
+          "id": "a3",
+          "text": "Ils sont prisonniers d'une injonction morale qui les empêche de réclamer une reconnaissance."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Les réparateurs les plus expérimentés se retrouvent pris au piège d'une injonction morale : refuser de réparer un appareil complexe ou exiger une reconnaissance matérielle reviendrait à trahir l'esprit d'entraide communautaire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi l'auteur critique-t-il la formule du président selon laquelle « chaque usager devient acteur de sa propre autonomie » ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour dénoncer le fait qu'elle masque la dépendance de l'atelier envers le travail bénévole non rétribué des professionnels."
+        },
+        {
+          "id": "a2",
+          "text": "Pour prouver que les citoyens sont incapables de réparer le moindre objet sans l'aide d'un ingénieur diplômé."
+        },
+        {
+          "id": "a3",
+          "text": "Pour suggérer que l'association devrait facturer chaque intervention au tarif du marché."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il occulte commodément le fait que cette autonomie est subventionnée par le temps libre et le savoir-faire accumulé de professionnels qui offrent, bénévolement, des compétences pour lesquelles d'autres factureraient leurs services.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton adopté par l'auteur tout au long de ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Favorable et enthousiaste."
+        },
+        {
+          "id": "a2",
+          "text": "Analytique et critique."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre et journalistique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'initiative, louable en apparence, repose sur un postulat séduisant : permettre à chacun de réparer ses objets du quotidien grâce aux conseils de bénévoles passionnés.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « coercition » dans le contexte de la phrase « la bienveillance affichée fonctionne comme un mécanisme de coercition douce » ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un encouragement chaleureux destiné à motiver les bénévoles débutants."
+        },
+        {
+          "id": "a2",
+          "text": "Une règle juridique stricte votée lors de l'assemblée générale."
+        },
+        {
+          "id": "a3",
+          "text": "Une contrainte subtile exercée par le groupe pour obtenir la soumission morale des individus."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la bienveillance affichée fonctionne comme un mécanisme de coercition douce, où la culpabilisation guette celui qui oserait réclamer un rééquilibrage de la charge.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire argumenté de trois cents mots dans lequel vous discutez s'il est possible de concilier l'éthique du bénévolat participatif avec la juste rémunération des compétences expertes au sein des structures associatives.",
+      "en": "Rédigez un commentaire argumenté de trois cents mots dans lequel vous discutez s'il est possible de concilier l'éthique du bénévolat participatif avec la juste rémunération des compétences expertes au sein des structures associatives."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez l'éditorial pour comprendre comment l'idéologie du partage masquée par l'éloge de la participation peut générer des asymétries de travail non rémunéré.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Illusion du Bénévolat Inclusif au Repair Café L'Engrenage | C1 Reading | WeLearn",
+      "en": "L'Illusion du Bénévolat Inclusif au Repair Café L'Engrenage | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Examen critique des dynamiques de pouvoir au sein d'un atelier de réparation participatif, entre rhétorique de l'émancipation collective et exploitation officieuse des compétences expertes.",
+      "en": "Examen critique des dynamiques de pouvoir au sein d'un atelier de réparation participatif, entre rhétorique de l'émancipation collective et exploitation officieuse des compétences expertes."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

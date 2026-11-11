@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-last-bus",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le paradoxe des bus pleins : quand la fluidité masque l'abandon",
+      "en": "Le paradoxe des bus pleins : quand la fluidité masque l'abandon"
+    },
+    "intro": {
+      "es": "Lisez cet article d'actualité fictif sur la réorganisation des transports ruraux et répondez aux questions pour analyser les tensions entre indicateurs de performance et réalités sociales.",
+      "en": "Lisez cet article d'actualité fictif sur la réorganisation des transports ruraux et répondez aux questions pour analyser les tensions entre indicateurs de performance et réalités sociales."
+    },
+    "mission": {
+      "es": "Analysez la stratégie de communication de la régie des transports face à la baisse de fréquentation des lignes rurales.",
+      "en": "Analysez la stratégie de communication de la régie des transports face à la baisse de fréquentation des lignes rurales."
+    },
+    "targetText": "L'annonce triomphale de la Régie des Mobilités Rurales a de quoi surprendre les usagers de la vallée de l'Orne. Selon le dernier rapport d'activité présenté par son directeur général, Marc Vilar, le taux de remplissage moyen des autocars a bondi de manière spectaculaire au cours du dernier trimestre. Les sièges vides, longtemps décriés comme une aberration budgétaire et écologique, se font désormais rares, particulièrement aux heures de pointe. Pour la direction, cette densification des flux est la preuve éclatante qu'une cure d'amaigrissement des horaires, décidée l'automne dernier, a enfin produit l'effet escompté : rationaliser l'offre sans pénaliser la population. Pourtant, sur le terrain, cette apparente réussite statistique suscite l'incompréhension et l'amertume des habitants.\n\nDerrière l'autosatisfaction affichée des graphiques présentés en conseil d'administration se cache une réalité bien plus sombre que les chiffres officiels s'obstinent à reléguer au second plan. La suppression de la desserte matinale de sept heures, actée pour cause de faible rentabilité, n'a pas seulement fluidifié le trafic ; elle a contraint les lycéens et les travailleurs matinaux à modifier radicalement leur mode de vie. Ceux qui le peuvent ont acheté un véhicule individuel d'occasion, aggravant leur empreinte carbone et leur budget mensuel. Ceux qui ne le peuvent pas, notamment les jeunes sans permis et les personnes âgées, ont tout simplement renoncé à se déplacer. Ainsi, la hausse du taux de remplissage ne traduit en rien une reconquête des voyageurs, mais atteste mathématiquement de la concentration forcée des usagers sur les seuls créneaux maintenus par l'autorité.\n\nInterrogée sur ce déplacement de la contrainte, Élodie Mercier, porte-parole du collectif 'Mobilité pour Tous', dénonce un artifice comptable. 'On se félicite de transporter des bus pleins, mais on oublie méthodiquement tous ceux qui restent sur le carreau, incapables de s'adapter à cette cadence devenue intenable', tempête-t-elle. Les chiffres de la régie, bien qu'incontestables dans leur stricte matérialité, reposent sur un angle mort méthodologique : ils mesurent l'occupation des véhicules en circulation, mais ignorent superbement les trajets qui ont cessé d'exister. En d'autres termes, un service public performant est évalué ici à l'aune de sa propre raréfaction, transformant la pénurie d'offre en critère d'excellence opérationnelle.\n\nFace aux critiques croissantes, la direction tente de nuancer son propos tout en maintenant le cap stratégique. Marc Vilar concède que la transition a pu générer quelques frictions transitoires, tout en rappelant les impératifs d'équilibre financier imposés par la tutelle régionale. 'Notre mission n'est pas de faire rouler du vide au nom d'un idéal abstrait, mais d'optimiser chaque euro investi pour répondre à la demande globale', argumente-t-il, invoquant la nécessité d'une gestion rigoureuse des deniers publics. Cet argument pragmatique trouve un écho favorable auprès de certains élus locaux, soulagés de voir les subventions d'équilibre stabilisées, même si cette stabilité financière se paye au prix fort d'une fracture territoriale accrue et d'un sentiment d'abandon grandissant.\n\nL'inauguration prochaine du nouveau pôle d'échange multimodal à Saint-Gervais, salué comme le joyau de cette réforme, illustre parfaitement ce grand écart entre vision technocratique et vécu paysan. Si le bâtiment flambant neuf offre des bornes de recharge et des abris vélos ultramodernes, il se dresse désormais au milieu d'une zone où la fréquence des bus a été divisée par deux. Cette dissonance cognitive entre un écrin matériel sophistiqué et une desserte exsangue laisse présager des mois tendus. La régie célèbre une efficacité retrouvée, tandis que les vallées reculées s'enfoncent un peu plus dans le silence d'une mobilité confisquée, posant la question fondamentale de la finalité réelle d'un service public en milieu rural.\n\nAu-delà des querelles de chiffres et des inaugurations en grande pompe, c'est toute la philosophie de l'aménagement du territoire qui se trouve ainsi pervertie par cette logique comptable. En privilégiant la rentabilité immédiate des lignes au détriment de l'équité territoriale, la Régie des Mobilités Rurales oublie que le transport public n'est pas une entreprise marchande comme une autre, mais le ciment indispensable de la cohésion sociale. Quand se déplacer devient un parcours du combattant, c'est le droit même à l'éducation, au travail et à la santé qui se trouve hypothéqué pour les plus fragiles. Si Marc Vilar et ses partisans persistent à voir dans cette cure d'austérité un modèle d'avenir, les habitants, eux, redoutent que cette rationalisation à marche forcée ne soit le prélude à l'effondrement définitif du lien social. À terme, ce ne sont pas seulement des bus qui risquent de manquer dans la vallée de l'Orne, mais la confiance citoyenne envers des institutions désormais perçues comme sourdes et aveugles aux souffrances réelles de leur population.",
+    "wordCount": 746,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "densification",
+        "lemma": "densification",
+        "glosses": {
+          "es": "increase in density",
+          "en": "increase in density"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aberration",
+        "lemma": "aberration",
+        "glosses": {
+          "es": "absurdity or deviation",
+          "en": "absurdity or deviation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "artifice",
+        "lemma": "artifice",
+        "glosses": {
+          "es": "trick or cunning device",
+          "en": "trick or cunning device"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "deniers",
+        "lemma": "deniers",
+        "glosses": {
+          "es": "funds or money",
+          "en": "funds or money"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "écrin",
+        "lemma": "écrin",
+        "glosses": {
+          "es": "setting or showcase",
+          "en": "setting or showcase"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exsangue",
+        "lemma": "exsangue",
+        "glosses": {
+          "es": "drained or lifeless",
+          "en": "drained or lifeless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.6,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central abordé dans cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le contraste entre la performance statistique des transports et l'exclusion des usagers ruraux."
+        },
+        {
+          "id": "a2",
+          "text": "La transformation écologique des flottes de bus en zone urbaine."
+        },
+        {
+          "id": "a3",
+          "text": "Le financement participatif des infrastructures routières par les collectivités."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La suppression de la desserte matinale de sept heures, actée pour cause de faible rentabilité, n'a pas seulement fluidifié le trafic ; elle a contraint les lycéens et les travailleurs matinaux à modifier radicalement leur mode de vie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Comment la direction explique-t-elle la réduction des horaires de bus ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Par la volonté de décourager l'usage de la voiture individuelle."
+        },
+        {
+          "id": "a2",
+          "text": "Par la nécessité d'équilibrer les budgets et d'optimiser les investissements publics."
+        },
+        {
+          "id": "a3",
+          "text": "Par le manque de conducteurs qualifiés sur l'ensemble du territoire."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Notre mission n'est pas de faire rouler du vide au nom d'un idéal abstrait, mais d'optimiser chaque euro investi pour répondre à la demande globale",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que peut-on déduire de la hausse du taux de remplissage des autocars ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Qu'un plus grand nombre de citoyens choisissent désormais spontanément les transports en commun."
+        },
+        {
+          "id": "a2",
+          "text": "Que la population de la vallée de l'Orne a considérablement augmenté au cours du trimestre."
+        },
+        {
+          "id": "a3",
+          "text": "Qu'elle résulte d'une concentration forcée des voyageurs sur un nombre restreint de trajets restants."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la hausse du taux de remplissage ne traduit en rien une reconquête des voyageurs, mais atteste mathématiquement de la concentration forcée des usagers sur les seuls créneaux maintenus par l'autorité.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal du collectif 'Mobilité pour Tous' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dénoncer un indicateur trompeur qui occulte l'exclusion des usagers les plus vulnérables."
+        },
+        {
+          "id": "a2",
+          "text": "Proposer un nouveau plan de financement pour l'achat de véhicules électriques."
+        },
+        {
+          "id": "a3",
+          "text": "Négocier de nouveaux tarifs pour les abonnements scolaires de la vallée."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "On se félicite de transporter des bus pleins, mais on oublie méthodiquement tous ceux qui restent sur le carreau, incapables de s'adapter à cette cadence devenue intenable",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il pour relater la situation dans le dernier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton résolument optimiste face aux innovations architecturales."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton critique soulignant l'absurdité d'un contraste entre modernité technique et carence de service."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton neutre et purement descriptif sans critique sous-jacente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Cette dissonance cognitive entre un écrin matériel sophistiqué et une desserte exsangue laisse présager des mois tendus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'exsangue' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Moderne, connecté et doté des dernières technologies."
+        },
+        {
+          "id": "a2",
+          "text": "Financièrement excédentaire et rentable."
+        },
+        {
+          "id": "a3",
+          "text": "Affaibli, vidé de sa substance vitale ou de ses moyens."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Cette dissonance cognitive entre un écrin matériel sophistiqué et une desserte exsangue laisse présager des mois tendus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire critique d'environ 200 mots dans lequel vous examinez comment les indicateurs chiffrés de performance peuvent parfois trahir la réalité sociale d'un service public.",
+      "en": "Rédigez un commentaire critique d'environ 200 mots dans lequel vous examinez comment les indicateurs chiffrés de performance peuvent parfois trahir la réalité sociale d'un service public."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez la stratégie de communication de la régie des transports face à la baisse de fréquentation des lignes rurales.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le paradoxe des bus pleins : quand la fluidité masque l'abandon | C1 Reading | WeLearn",
+      "en": "Le paradoxe des bus pleins : quand la fluidité masque l'abandon | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet article d'actualité fictif sur la réorganisation des transports ruraux et répondez aux questions pour analyser les tensions entre indicateurs de performance et réalités sociales.",
+      "en": "Lisez cet article d'actualité fictif sur la réorganisation des transports ruraux et répondez aux questions pour analyser les tensions entre indicateurs de performance et réalités sociales."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-shared-desks",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Notes de service sur l'aménagement du temps et de l'espace",
+      "en": "Notes de service sur l'aménagement du temps et de l'espace"
+    },
+    "intro": {
+      "es": "Lisez le courriel interne ci-dessous concernant la politique de flexibilité des espaces de travail et répondez aux questions d'analyse critique.",
+      "en": "Lisez le courriel interne ci-dessous concernant la politique de flexibilité des espaces de travail et répondez aux questions d'analyse critique."
+    },
+    "mission": {
+      "es": "Analysez ce message managérial pour en saisir les non-dits économiques et les implications contractuelles.",
+      "en": "Analysez ce message managérial pour en saisir les non-dits économiques et les implications contractuelles."
+    },
+    "targetText": "Chère équipe, chers collaborateurs, alors que notre entreprise poursuit sa transition vers un modèle hybride pérenne, il m'apparaît essentiel de clarifier notre vision de l'autonomie professionnelle et de l'optimisation de nos infrastructures. Depuis l'adoption de notre charte sur le télétravail partiel, nombre d'entre vous ont exprimé leur attachement à la flexibilité des horaires et à la liberté d'organiser leur semaine entre le bureau central et leur domicile. Cette souplesse, que nous avons toujours encouragée, constitue indéniablement un levier précieux d'équilibre entre vie personnelle et exigences professionnelles. Toutefois, l'évolution rapide de notre organisation et la nécessité d'allouer nos ressources financières aux projets de R&D les plus innovants nous obligent à repenser certains aspects logistiques de ce mode opératoire. C'est pourquoi nous formalisons aujourd'hui un cadre modernisé concernant l'équipement des postes de travail distants, afin de garantir une équité de traitement tout en responsabilisant chaque acteur face aux nouveaux modes de production.\n\nJusqu'à présent, la dotation matérielle initiale fournie par la direction générale couvrait l'ensemble des installations nécessaires à l'exercice de vos fonctions en tout lieu. Cependant, l'expérience démontre que la personnalisation des espaces domestiques relève d'une démarche intime et hautement individuelle, qu'il s'agisse du choix d'un mobilier ergonomique spécifique, de l'isolation phonique ou de la souscription à des abonnements internet haut débit à usage mixte. Il serait illusoire de croire qu'une standardisation centralisée puisse répondre adéquatement à la diversité de vos intérieurs. Par conséquent, dans un souci d'efficacité et pour vous permettre d'aménager votre bureau personnel selon vos critères esthétiques et fonctionnels propres, nous avons décidé de transférer la charge directe de l'acquisition du mobilier et des périphériques secondaires aux collaborateurs concernés. Désormais, chaque membre de l'équipe recevra une indemnité forfaitaire unique, non révisable, destinée à couvrir l'amortissement initial de son installation à domicile, charge à lui de compléter cet investissement si ses exigences de confort dépassent le socle minimal subventionné.\n\nCette transition s'accompagne d'une révision de notre politique de remboursement des frais de fonctionnement récurrents. L'analyse de nos comptes d'exploitation révèle que la consommation énergétique et les abonnements de communication liés à l'activité professionnelle à domicile présentent des variations difficilement auditables par notre département comptable. Plutôt que d'imposer un système de contrôle intrusif qui nécessiterait le relevé détaillé de vos factures personnelles et l'installation de compteurs de sous-consommation, nous privilégions la confiance mutuelle. L'indemnité mensuelle forfaitaire d'occupation du domicile, revalorisée de manière symbolique, intègre désormais l'ensemble de ces charges, qu'il s'agisse de l'électricité, du chauffage ou de la connectivité. Cette simplification administrative vous libère de la contrainte des justificatifs tout en transférant le risque d'inflation des coûts énergétiques vers la sphère privée, vous incitant ainsi à une gestion plus vertueuse et écoresponsable de votre consommation quotidienne.\n\nCertains d'entre vous s'interrogeront légitimement sur l'adéquation de ce dispositif face à la hausse des prix de l'immobilier et des équipements technologiques de pointe. Nous entendons vos préoccupations et tenons à souligner que ce choix ne procède en aucun cas d'une volonté de désengagement de l'employeur, mais bien d'une coresponsabilisation face aux réalités économiques du marché. En vous octroyant la pleine maîtrise de vos choix d'aménagement, nous vous reconnaissons un statut de quasi-entrepreneur de votre propre espace de travail. Les économies ainsi réalisées par l'entreprise sur la gestion immobilière centralisée ne constituent pas un profit indu, mais le carburant indispensable qui garantit la pérennité de nos emplois face à une concurrence internationale féroce. La flexibilité a un coût, certes, mais elle offre en contrepartie une autonomie d'organisation dont la valeur est inestimable pour l'épanouissement professionnel de chacun d'entre vous.\n\nEn conclusion, cette note de service n'appelle pas de négociation collective, le cadre légal du télétravail nous autorisant à fixer unilatéralement les modalités de prise en charge des frais professionnels, pourvu qu'ils soient couverts de manière raisonnable. Les services des ressources humaines se tiennent à votre disposition pour vous accompagner dans la transition administrative et pour vous guider vers nos fournisseurs partenaires qui proposent des tarifs préférentiels. Nous sommes convaincus que cette responsabilisation accrue renforcera votre sentiment d'appartenance et transformera votre domicile en un véritable prolongement de notre culture d'entreprise, fondé sur l'efficacité, la confiance et l'engagement mutuel. Je vous remercie pour votre compréhension et votre contribution active à la réussite de notre modèle organisationnel.\n\nBien cordialement,\n\nJean-Marc Vasseur, Directeur des Opérations",
+    "wordCount": 707,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "levier",
+        "lemma": "levier",
+        "glosses": {
+          "es": "lever / driving force",
+          "en": "lever / driving force"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dotation",
+        "lemma": "dotation",
+        "glosses": {
+          "es": "allocation / endowment",
+          "en": "allocation / endowment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "indemnité",
+        "lemma": "indemnité",
+        "glosses": {
+          "es": "allowance / compensation",
+          "en": "allowance / compensation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coresponsabilisation",
+        "lemma": "coresponsabilisation",
+        "glosses": {
+          "es": "shared responsibility",
+          "en": "shared responsibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unilatéralement",
+        "lemma": "unilatéralement",
+        "glosses": {
+          "es": "unilaterally",
+          "en": "unilaterally"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prolongement",
+        "lemma": "prolongement",
+        "glosses": {
+          "es": "extension",
+          "en": "extension"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.3,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est l'objectif principal de ce message managérial ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Transférer les coûts d'aménagement et de fonctionnement du bureau à domicile sur les salariés tout en invoquant la flexibilité."
+        },
+        {
+          "id": "a2",
+          "text": "Augmenter le temps de présence obligatoire dans les locaux de l'entreprise."
+        },
+        {
+          "id": "a3",
+          "text": "Anoncer la suppression définitive du télétravail pour l'ensemble des équipes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "nous avons décidé de transférer la charge directe de l'acquisition du mobilier et des périphériques secondaires aux collaborateurs concernés.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Comment l'entreprise justifie-t-elle l'abandon du remboursement des frais réels d'énergie ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Par la baisse générale des tarifs de l'électricité constatée sur le marché."
+        },
+        {
+          "id": "a2",
+          "text": "Par la volonté d'éviter un contrôle jugé intrusif et de privilégier la simplification administrative."
+        },
+        {
+          "id": "a3",
+          "text": "Par l'impossibilité légale de rembourser des factures domestiques."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Plutôt que d'imposer un système de contrôle intrusif qui nécessiterait le relevé détaillé de vos factures personnelles et l'installation de compteurs de sous-consommation, nous privilégions la confiance mutuelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que peut-on déduire quant à l'impact financier réel de cette mesure pour les salariés ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une augmentation sensible de leur pouvoir d'achat grâce aux nouvelles primes."
+        },
+        {
+          "id": "a2",
+          "text": "Une compensation intégrale et illimitée de tous leurs investissements futurs."
+        },
+        {
+          "id": "a3",
+          "text": "Un risque financier accru en raison de forfaits fixes face à l'inflation des coûts."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "transférant le risque d'inflation des coûts énergétiques vers la sphère privée, vous incitant ainsi à une gestion plus vertueuse",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Dans quel but la direction invoque-t-elle la R&D et la concurrence internationale dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour légitimer les économies budgétaires réalisées sur l'immobilier et l'équipement."
+        },
+        {
+          "id": "a2",
+          "text": "Pour annoncer le lancement prochain d'un nouveau produit technologique."
+        },
+        {
+          "id": "a3",
+          "text": "Pour justifier une baisse générale imminente des salaires de base."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Les économies ainsi réalisées par l'entreprise sur la gestion immobilière centralisée ne constituent pas un profit indu, mais le carburant indispensable qui garantit la pérennité de nos emplois",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant employé par Jean-Marc Vasseur dans cette note de service ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton ouvertement autoritaire et menaçant envers les récalcitrants."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton faussement bienveillant qui masque des décisions unilatérales rigides."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton neutre et purement informatif sans parti pris managérial."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "cette note de service n'appelle pas de négociation collective, le cadre légal du télétravail nous autorisant à fixer unilatéralement les modalités",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'prolongement' dans le contexte de la conclusion du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un retard ou un report des échéances administratives."
+        },
+        {
+          "id": "a2",
+          "text": "Une augmentation de la durée journalière de travail."
+        },
+        {
+          "id": "a3",
+          "text": "Une extension ou une continuité de la structure organisationnelle au sein du foyer."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "transformera votre domicile en un véritable prolongement de notre culture d'entreprise",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse argumentée d'environ 200 mots, adressée par un représentant du personnel à la direction, pour contester les choix présentés dans cette note de service.",
+      "en": "Rédigez une réponse argumentée d'environ 200 mots, adressée par un représentant du personnel à la direction, pour contester les choix présentés dans cette note de service."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analysez ce message managérial pour en saisir les non-dits économiques et les implications contractuelles.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Notes de service sur l'aménagement du temps et de l'espace | C1 Reading | WeLearn",
+      "en": "Notes de service sur l'aménagement du temps et de l'espace | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez le courriel interne ci-dessous concernant la politique de flexibilité des espaces de travail et répondez aux questions d'analyse critique.",
+      "en": "Lisez le courriel interne ci-dessous concernant la politique de flexibilité des espaces de travail et répondez aux questions d'analyse critique."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-water-meter",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Illusion des Compteurs Communs et le Mirage de l'Eau",
+      "en": "L'Illusion des Compteurs Communs et le Mirage de l'Eau"
+    },
+    "intro": {
+      "es": "Analysez un reportage journalistique abordant les biais statistiques liés à la consommation d'eau urbaine et répondez aux questions de compréhension.",
+      "en": "Analysez un reportage journalistique abordant les biais statistiques liés à la consommation d'eau urbaine et répondez aux questions de compréhension."
+    },
+    "mission": {
+      "es": "Lisez le texte avec attention pour identifier les tensions entre les moyennes officielles et la réalité des immeubles collectifs, puis réalisez les exercices d'évaluation.",
+      "en": "Lisez le texte avec attention pour identifier les tensions entre les moyennes officielles et la réalité des immeubles collectifs, puis réalisez les exercices d'évaluation."
+    },
+    "targetText": "La publication récente du rapport municipal sur la gestion hydrique a suscité un vif débat au sein du conseil de quartier de Val-de-Rupt, opposant les défenseurs de la rigueur statistique aux réalités vécues par les résidents. Selon les données diffusées par l'édile, la consommation moyenne par foyer aurait amorcé une décrue notable au cours des derniers trimestres, suggérant une prise de conscience collective face aux impératifs de préservation de la ressource. Toutefois, cette lecture optimiste occulte une faille méthodologique majeure que dénonce l'association locale 'Eau et Transparence' : l'agrégation globale des données dilue les spécificités des immeubles dotés de compteurs généraux indifférenciés. Pour Éléonore Vance, urbaniste et porte-parole du collectif, ce lissage mathématique s'apparente à un artifice bureaucratique. En effet, dans ces grands ensembles résidentiels où la facture est répartie au prorata des millièmes de propriété et non au volume réellement soutiré par chaque appartement, l'incitation individuelle à la sobriété disparaît. Un ménage particulièrement économe se retrouve ainsi à subventionner tacitement la prodigalité de ses voisins, annihilant tout effet dissuasif des tarifs progressifs instaurés par la municipalité. Le directeur des services techniques, Marc Vignon, concède que le système de comptage partagé présente des angles morts administratifs, mais rétorque que le coût d'une individualisation des réseaux sur l'ensemble du parc immobilier excède largement les capacités budgétaires actuelles de la ville. Cette fin de non-recevoir a provoqué l'ire des locataires du complexe des Hauts-de-Seine, dont les récents efforts pour réduire drastiquement leurs prélèvements d'eau se sont soldés par une augmentation paradoxale de leurs charges individuelles lors de la dernière régularisation annuelle. Face à cette impasse, le conseil municipal se trouve désormais au pied du mur : maintenir une communication institutionnelle triomphante au risque de décourager les initiatives citoyennes les plus vertueuses, ou admettre publiquement que les moyennes officielles masquent de profondes iniquités structurelles. L'affaire illustre avec acuité la tension permanente entre la gouvernance technocratique par les grands agrégats et la complexité irréductible des usages quotidiens, laissant présager un automne social agité si aucun aménagement tarifaire n'est négocié d'ici la prochaine session budgétaire.\n\nAu-delà de cette fracture comptable, la persistance de telles inégalités de répartition met en lumière un risque plus insidieux encore pour la cohésion civique de Val-de-Rupt : l'érosion progressive du civisme environnemental par le sentiment d'injustice. Lorsque l'effort individuel, loin d'être récompensé par une baisse tangible des dépenses, se traduit par une ponction financière accrue au profit des foyers les plus insouciants, c'est le pacte même de la transition écologique urbaine qui se trouve délégitimé aux yeux des administrés. Les habitants des Hauts-de-Seine, loin de se résigner à cette fatalité administrative, s'organisent désormais en collectifs autonomes pour exiger non seulement la révision des critères de répartition, mais aussi l'instauration d'un moratoire sur les hausses de charges liées à l'eau. Cette mobilisation citoyenne, qui gagne peu à peu les quartiers pavillonnaires voisins solidaires de leurs concurents en habitat collectif, dépasse le simple cadre d'un litige tarifaire pour poser les jalons d'une contestation politique plus large de la gouvernance municipale. Pour contrer cette fronde naissante, la municipalité tente bien de proposer des ateliers de sensibilisation aux éco-gestes et de distribuer des mousseurs de robinet à titre gracieux, mais ces mesures cosmétiques apparaissent aux yeux des riverains mobilisés comme une provocation, une diversion dérisoire face à l'urgence d'une refonte structurelle du système de facturation. Les conseillers municipaux de l'opposition, flairant l'opportunité politique, s'emparent du dossier pour exiger la création d'une commission d'enquête paritaire associant résidents, bailleurs sociaux et experts indépendants, transformant ainsi la gestion de l'eau en un référendum implicite sur la sincérité démocratique de l'équipe en place. Si l'exécutif local persiste à privilégier l'équilibre comptable à court terme au détriment de l'équité distributive, il s'expose à une radicalisation des modes d'action, allant du boycott partiel des factures litigieuses jusqu'aux manifestations symboliques sur le parvis de l'hôtel de ville. Ainsi, l'enjeu hydrique dépasse largement la simple technique de comptage pour devenir le révélateur implacable des fractures territoriales et sociales qui traversent la cité, obligeant les édiles à repenser en profondeur l'articulation entre l'action publique et la justice sociale sous peine de voir l'ensemble de leur politique environnementale voler en éclats dès les premiers frémissements de la contestation automnale.",
+    "wordCount": 695,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "décrue",
+        "lemma": "décrue",
+        "glosses": {
+          "es": "decrease",
+          "en": "decrease"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "occulte",
+        "lemma": "occulte",
+        "glosses": {
+          "es": "hides",
+          "en": "hides"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prorata",
+        "lemma": "prorata",
+        "glosses": {
+          "es": "proportion",
+          "en": "proportion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prodigalité",
+        "lemma": "prodigalité",
+        "glosses": {
+          "es": "wastefulness",
+          "en": "wastefulness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rétorque",
+        "lemma": "rétorque",
+        "glosses": {
+          "es": "retorts",
+          "en": "retorts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "iniquités",
+        "lemma": "iniquités",
+        "glosses": {
+          "es": "inequities",
+          "en": "inequities"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 38.6,
+      "maxSentenceWords": 59,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le problème central soulevé par le texte concernant les statistiques officielles sur l'eau ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elles masquent les réalités des immeubles à compteurs partagés."
+        },
+        {
+          "id": "a2",
+          "text": "Elles intègrent les données d'entreprises industrielles polluantes."
+        },
+        {
+          "id": "a3",
+          "text": "Elles surestiment volontairement le coût de la vie urbaine."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "cette lecture optimiste occulte une faille méthodologique majeure que dénonce l'association locale 'Eau et Transparence' : l'agrégation globale des données dilue les spécificités des immeubles dotés de compteurs généraux indifférenciés.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi la facture d'eau augmente-t-elle pour certains ménages économes dans les grands ensembles ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Parce que la mairie a augmenté unilatéralement le prix du mètre cube."
+        },
+        {
+          "id": "a2",
+          "text": "Parce que la facture globale est répartie selon les millièmes de propriété."
+        },
+        {
+          "id": "a3",
+          "text": "Parce que le coût des réparations des fuites est facturé aux locataires."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "dans ces grands ensembles résidentiels où la facture est répartie au prorata des millièmes de propriété et non au volume réellement soutiré par chaque appartement, l'incitation individuelle à la sobriété disparaît.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la conséquence probable de cette situation pour l'avenir ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La privatisation immédiate de la gestion des réseaux."
+        },
+        {
+          "id": "a2",
+          "text": "L'installation rapide de compteurs individuels partout."
+        },
+        {
+          "id": "a3",
+          "text": "Un conflit social potentiel lors du prochain budget."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "laissant présager un automne social agité si aucun aménagement tarifaire n'est négocié d'ici la prochaine session budgétaire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal du directeur des services techniques lorsqu'il répond aux critiques ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il cherche à justifier l'inaction financière de la municipalité par le coût."
+        },
+        {
+          "id": "a2",
+          "text": "Il souhaite valoriser les efforts exceptionnels de la population locale."
+        },
+        {
+          "id": "a3",
+          "text": "Il tente de proposer une solution technique immédiate et peu coûteuse."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le directeur des services techniques, Marc Vignon, concède que le système de comptage partagé présente des angles morts administratifs, mais rétorque que le coût d'une individualisation des réseaux sur l'ensemble du parc immobilier excède largement les capacités budgétaires actuelles de la ville.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans la description de la position municipale par rapport aux associations ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton neutre et purement descriptif sans aucun parti pris."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton critique et sceptique envers la communication officielle."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton laudatif et admiratif face à l'efficacité administrative."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Pour Éléonore Vance, urbaniste et porte-parole du collectif, ce lissage mathématique s'apparente à un artifice bureaucratique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'décrue' dans le contexte du rapport municipal ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une pénurie"
+        },
+        {
+          "id": "a2",
+          "text": "Une augmentation"
+        },
+        {
+          "id": "a3",
+          "text": "Une baisse"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Selon les données diffusées par l'édile, la consommation moyenne par foyer aurait amorcé une décrue notable au cours des derniers trimestres",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire critique de trois cents mots dans lequel vous analysez comment les données chiffrées en politique publique peuvent parfois masquer les réalités sociales locales, en vous appuyant sur l'exemple de la gestion de l'eau.",
+      "en": "Rédigez un commentaire critique de trois cents mots dans lequel vous analysez comment les données chiffrées en politique publique peuvent parfois masquer les réalités sociales locales, en vous appuyant sur l'exemple de la gestion de l'eau."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Lisez le texte avec attention pour identifier les tensions entre les moyennes officielles et la réalité des immeubles collectifs, puis réalisez les exercices d'évaluation.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Illusion des Compteurs Communs et le Mirage de l'Eau | C1 Reading | WeLearn",
+      "en": "L'Illusion des Compteurs Communs et le Mirage de l'Eau | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analysez un reportage journalistique abordant les biais statistiques liés à la consommation d'eau urbaine et répondez aux questions de compréhension.",
+      "en": "Analysez un reportage journalistique abordant les biais statistiques liés à la consommation d'eau urbaine et répondez aux questions de compréhension."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c1-the-school-garden",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "french C1"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le Paradoxe des Racines Partagées",
+      "en": "Le Paradoxe des Racines Partagées"
+    },
+    "intro": {
+      "es": "Examinez un article critique sur l'iniquité implicite d'un projet de jardin pédagogique mené par le proviseur d'un lycée.",
+      "en": "Examinez un article critique sur l'iniquité implicite d'un projet de jardin pédagogique mené par le proviseur d'un lycée."
+    },
+    "mission": {
+      "es": "Analyser les tensions rhétoriques et sociologiques sous-jacentes à une initiative scolaire prétendument inclusive.",
+      "en": "Analyser les tensions rhétoriques et sociologiques sous-jacentes à une initiative scolaire prétendument inclusive."
+    },
+    "targetText": "L'annonce enthousiaste du proviseur Marc Duval résonna dans l'amphithéâtre bondé comme une promesse d'émancipation collective. Sous les projecteurs de la rentrée, il dévoila la maquette du futur « Jardin des Saisons », un espace vert conçu pour réconcilier la communauté éducative avec la terre nourricière et retisser le tissu social distendu de l'établissement. Ce projet ambitieux, présenté comme le joyau de l'année, reposait sur une vision idyllique où chaque famille, par sa contribution bénévole, viendrait fertiliser non seulement la terre, mais aussi le sentiment d'appartenance à l'institution. Pourtant, derrière les aplats de vert pastel de la maquette et les discours lyriques sur la citoyenneté active, une dissonance subtile s'insinua dès la fin de la séance. Les applaudissements nourris des parents présents masquaient mal un malaise sourd, partagé par ceux qui mesuraient déjà, calculette invisible en main, le coût réel de cette prétendue gratuité. Car si la direction vantait l'horizontalité d'un jardin sans barrières, le modèle opérationnel exigé contredisait frontalement cet égalitarisme de façade. L'architecture du plan supposait tacitement que chaque foyer disposait d'un capital temporel et d'une flexibilité professionnelle équivalents, oubliant que la sueur investie dans les carrés de potager n'a pas la même valeur marchande ni le même coût d'opportunité pour tous. Tandis que les professions libérales et les cadres supérieurs du quartier voyaient dans ces samedis de bêchage une récréation écoresponsable bienvenue, les parents aux horaires fracturés, enchaînant les contrats précaires et les temps partiels subis, mesuraient l'abîme qui les séparait de cette disponibilité bienveillante. Le jardin, censé unir, devenait dès sa conception le révélateur implacable des fractures invisibles qui traversent la cité scolaire. Madame Vasseur, déléguée des parents d'élèves et caissière dans un hypermarché de périphérie, tenta bien d'alerter le conseil d'administration sur cette asymétrie des ressources. Elle souligna que l'injonction au bénévolat, loin d'être neutre, pénalisait de facto les familles monoparentales et les travailleurs aux plannings erratiques, transformant l'absence de participation en un signal tacite de désintérêt, voire d'échec éducatif. Sa remarque, poliment écoutée, fut aussitôt balayée par une pirouette rhétorique du proviseur, qui préféra y voir une résistance au changement plutôt qu'une critique structurelle de l'injustice sociale. Pour Duval, le jardin était par définition démocratique puisque ses portes restaient ouvertes à tous, sans distinction de matricule ou de moyenne trimestrielle. Cette confusion volontaire entre l'accès formel et la capacité réelle d'exercice devint le pivot autour duquel s'organisa la fracture de l'année. Les semaines suivantes virent s'installer une ségrégation insidieuse sur les parcelles. Les samedis de corvée de terre, loin de briser les barrières sociiales, offrirent une tribune informelle où les familles les plus favorisées dictèrent le rythme, les choix botaniques et l'esthétique du domaine, reléguant les parents absents au rang de spectateurs passifs ou de mauvais élèves de la citoyenneté. L'écosystème du jardin s'autonomisa, reflétant fidèlement les hiérarchies du monde extérieur que l'école était pourtant censée subvertir. L'apogée de cette contradiction éclata lors de la récolte inaugurale, transformée en vitrine médiatique pour la municipalité. Sur les estrades dressées entre les rangées de tomates anciennes, les discours officiels célébrèrent la victoire de la cohésion, ignorant superbement les silhouettes fatiguées de ceux qui n'avaient pu libérer une seule heure pour bêcher. Le dénouement prit la forme d'un silence obstiné : lors du vote pour pérenniser l'association du jardin, les abstentions des familles invisibilisées formèrent une majorité silencieuse mais écrasante, brisant net l'unanimité de façade que le proviseur espérait brandir comme le trophée de son mandat. Le jardin demeura, luxuriant et productif, mais sa verdeur cachait désormais l'amertume d'une occasion manquée, celle d'avoir confondu la participation au travail de la terre avec la justice sociale.\n\nAu-delà de ce désaveu institutionnel, cette fracture locale résonna comme le symptôme douloureux d'une transition écologique menée hors-sol, où la transition verte risquait d'institutionnaliser de nouvelles formes d'exclusion sous couvert de vertu civique. En voulant verdir l'enceinte scolaire par la seule grâce du volontariat, l'établissement avait omis d'interroger les conditions matérielles préalables à l'exercice de la citoyenneté environnementale, réduisant l'écologie à un marqueur distinctif supplémentaire. La terre, pourtant si prompte à enseigner l'humilité aux hommes, venait de servir de miroir grossissant aux inégalités systémiques que l'éducation nationale peinait tant à corriger. Désormais, le feuillage luxuriant des parcelles agitait dans le vent l'ironie persistante d'un paradoxe contemporain : celui d'une nature généreuse cultivée sur les jachères de la fracture sociale.",
+    "wordCount": 716,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "dissonance",
+        "lemma": "dissonance",
+        "glosses": {
+          "es": "discrepancy",
+          "en": "discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asymétrie",
+        "lemma": "asymétrie",
+        "glosses": {
+          "es": "asymmetry",
+          "en": "asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "injonction",
+        "lemma": "injonction",
+        "glosses": {
+          "es": "injunction",
+          "en": "injunction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pirouette",
+        "lemma": "pirouette",
+        "glosses": {
+          "es": "evasive trick",
+          "en": "evasive trick"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insidieuse",
+        "lemma": "insidieuse",
+        "glosses": {
+          "es": "insidious",
+          "en": "insidious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérenniser",
+        "lemma": "pérenniser",
+        "glosses": {
+          "es": "to make permanent",
+          "en": "to make permanent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.6,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:25:53.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le décalage entre un projet d'école inclusif et les inégalités sociales réelles qu'il masque"
+        },
+        {
+          "id": "a2",
+          "text": "La difficulté technique de cultiver des légumes rares en milieu urbain"
+        },
+        {
+          "id": "a3",
+          "text": "Le succès indiscutable d'une initiative écologique menée par un chef d'établissement visionnaire"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le jardin, censé unir, devenait dès sa conception le révélateur implacable des fractures invisibles qui traversent la cité scolaire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle catégorie de parents subit particulièrement l'injonction au bénévolat selon le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les cadres supérieurs aux emplois du temps excessivement rigides"
+        },
+        {
+          "id": "a2",
+          "text": "Ceux qui possèdent des horaires fracturés et des contrats précaires"
+        },
+        {
+          "id": "a3",
+          "text": "Les représentants syndicaux siégeant au conseil d'administration"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "les parents aux horaires fracturés, enchaînant les contrats précaires et les temps partiels subis, mesuraient l'abîme qui les séparait de cette disponibilité bienveillante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment le proviseur réagit-il face aux objections soulevées par Madame Vasseur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il modifie immédiatement le calendrier des travaux pour intégrer les contraintes de chacun"
+        },
+        {
+          "id": "a2",
+          "text": "Il décide d'annuler purement et simplement le projet du jardin pédagogique"
+        },
+        {
+          "id": "a3",
+          "text": "Il rejette ses arguments en interprétant sa critique comme de la résistance au changement"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sa remarque, poliment écoutée, fut aussitôt balayée par une pirouette rhétorique du proviseur, qui préféra y voir une résistance au changement plutôt qu'une critique structurelle de l'injustice sociale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de l'auteur en décrivant la récolte inaugurale ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Souligner le contraste entre la vitrine médiatique officielle et la réalité de l'exclusion"
+        },
+        {
+          "id": "a2",
+          "text": "Mettre en valeur le succès technique des cultures maraîchères biologiques"
+        },
+        {
+          "id": "a3",
+          "text": "Promouvoir les innovations pédagogiques auprès des municipalités voisines"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sur les estrades dressées entre les rangées de tomates anciennes, les discours officiels célébrèrent la victoire de la cohésion, ignorant superbement les silhouettes fatiguées de ceux qui n'avaient pu libérer une seule heure pour bêcher.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il principalement tout au long de son analyse ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutre et purement informatif"
+        },
+        {
+          "id": "a2",
+          "text": "Critique et caustique face aux illusions technocratiques"
+        },
+        {
+          "id": "a3",
+          "text": "Élogieux et admiratif envers l'administration"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Car si la direction vantait l'horizontalité d'un jardin sans barrières, le modèle opérationnel exigé contredisait frontalement cet égalitarisme de façade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « pérenniser » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mettre un terme définitif à une expérimentation jugée infructueuse"
+        },
+        {
+          "id": "a2",
+          "text": "Modifier la structure juridique d'un établissement public"
+        },
+        {
+          "id": "a3",
+          "text": "Assurer la durée et la continuité dans le temps d'une association ou d'une action"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le dénouement prit la forme d'un silence obstiné : lors du vote pour pérenniser l'association du jardin, les abstentions des familles invisibilisées formèrent une majorité silencieuse mais écrasante",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un commentaire critique de trois cents mots dans lequel vous analysez comment les bonnes intentions institutionnelles peuvent parfois renforcer les inégalités qu'elles prétendent combattre.",
+      "en": "Rédigez un commentaire critique de trois cents mots dans lequel vous analysez comment les bonnes intentions institutionnelles peuvent parfois renforcer les inégalités qu'elles prétendent combattre."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyser les tensions rhétoriques et sociologiques sous-jacentes à une initiative scolaire prétendument inclusive.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:25:53.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le Paradoxe des Racines Partagées | C1 Reading | WeLearn",
+      "en": "Le Paradoxe des Racines Partagées | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Examinez un article critique sur l'iniquité implicite d'un projet de jardin pédagogique mené par le proviseur d'un lycée.",
+      "en": "Examinez un article critique sur l'iniquité implicite d'un projet de jardin pédagogique mené par le proviseur d'un lycée."
+    },
+    "canonicalPath": "/en/practice/french/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:25:53.071Z"
+  }
+}
