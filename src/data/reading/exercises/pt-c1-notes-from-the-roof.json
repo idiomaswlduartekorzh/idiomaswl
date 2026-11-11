@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-notes-from-the-roof",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Iluminação da Discórdia no Edifício Aurora",
+      "en": "A Iluminação da Discórdia no Edifício Aurora"
+    },
+    "intro": {
+      "es": "Leia a correspondência eletrônica entre os condôminos sobre a instalação de um sistema de energia solar e analise os conflitos jurídicos e de consentimento envolvidos.",
+      "en": "Leia a correspondência eletrônica entre os condôminos sobre a instalação de um sistema de energia solar e analise os conflitos jurídicos e de consentimento envolvidos."
+    },
+    "mission": {
+      "es": "Compreenda o texto e responda às questões sobre a dinâmica condominial e a interpretação das normas de aprovação.",
+      "en": "Compreenda o texto e responda às questões sobre a dinâmica condominial e a interpretação das normas de aprovação."
+    },
+    "targetText": "Prezada Beatriz, Escrevo esta mensagem ainda sob o impacto da assembleia extraordinária realizada ontem à noite, na qual discutimos a viabilidade de implantar o consórcio de painéis fotovoltaicos no telhado do Edifício Aurora. Sei que a sua gestão à frente do conselho fiscal foi pautada pela estrita legalidade, mas preciso externar minha profunda perplexidade com a decisão da mesa de considerar aprovado o projeto de transição energética. Acredito que houve um equívoco metodológico grave na contabilização das abstenções e na interpretação do quórum exigido pela nossa convenção para alterações estruturais de longo prazo. Não se trata de negar a urgência climática ou os benefícios financeiros futuros que a energia solar traria para as áreas comuns, mas sim de defender a salvaguarda jurídica dos proprietários que não puderam comparecer e cujos votos não podem ser tacitamente convertidos em anuência. O regimento interno é cristalino ao estipular maioria qualificada de dois terços dos titulares para intervenções que afetem a fachada ou a destinação das lajes de uso coletivo, um patamar que, segundo meus cálculos, não foi atingido se deduzirmos os inadimplentes. Enquanto você enxerga na nossa relutância um mero entrave burocrático que atrasa a modernização ecológica do prédio, eu percebo um precedente perigoso de erosão das garantias individuais em nome de uma suposta urgência coletiva que carece de respaldo legal unânime. Caro Joaquim, Agradeço a franqueza da sua mensagem e compreendo o seu zelo pelas formalidades jurídicas que regem a nossa vida condominial, mas a minha leitura dos fatos diverge substancialmente da sua. Durante o debate, a consultoria técnica contratada esclareceu exaustivamente que a instalação dos módulos sobre a laje superior configura uma benfeitoria útil voltada para a sustentabilidade e a redução permanente da taxa ordinária, enquadrando-se, portanto, na regra de maioria simples dos presentes, conforme o artigo orientador do nosso código interno. Alegar que os ausentes estariam tendo seus direitos suprimidos é inverter a lógica da participação democrática em assembleia, onde a cadeira vazia não pode paralisar a administração daqueles que se mobilizam para atualizar o edifício às exigências do século XXI. Embora eu reconheça que a comunicação prévia enviada pela portaria poderia ter sido mais abrangente para evitar mal-entendidos sobre o impacto estético dos suportes metálicos, o edital foi publicado dentro do prazo estatutário e continha todos os anexos técnicos necessários para a análise. Sejamos pragmáticos: a proposta aprovada não impõe qualquer ônus financeiro aos condôminos refratários, visto que o investimento inicial será integralmente custeado pelo fundo de reserva acumulado e por uma linha de crédito verde subsidiada pela agência de fomento municipal. O seu receio quanto ao precedente perigoso parece-me, com o devido respeito, um preciosismo formal que sacrifica o bem comum em benefício de uma inércia institucional paralisante. Beatriz, o cerne da nossa divergência não reside no mérito ecológico da captação solar, mas na soberania do consentimento e na maleabilidade com que interpretamos as regras do jogo para acelerar resultados desejáveis. Quando a mesa diretora valida um projeto estrutural contando os votos por cabeça dos presentes sem ponderar a fração ideal de cada unidade, ela vulnera o princípio fundamental de que o patrimônio de todos não pode ser onerado pela conveniência de uma maioria ocasional. Os proprietários das coberturas, por exemplo, sofrerão restrições operacionais diretas no acesso à laje para manutenção dos seus próprios equipamentos de ar-condicionado, um dano objetivo que sequer foi pautado no relatório técnico apresentado pela engenharia. Ao desconsiderar esse gravame sob o argumento de que o ganho energético compensa o transtorno individual, a gestão atual abre a porta para que qualquer benfeitoria future seja imposta de cima para baixo, transformando a assembleia de condôminos em um simulacro de deliberação. Meu objetivo não é obstruir o progresso, mas exigir que a transição energética do Aurora seja feita com a legitimidade inegociável que previne futuras contestações judiciais capazes de paralisar a obra no meio da execução. Joaquim, a sua insistência em focar na fração ideal e nas restrições hipotéticas dos proprietários de cobertura ignora o fato de que a convenção do edifício prevê expressamente a laje como área comum inalienável, cuja gestão administrativa cabe ao síndico e ao conselho deliberativo. A jurisprudência recente dos tribunais estaduais tem sido pacífica ao desestimular ações anhatórias movidas por minorias isoladas que tentam bloquear a modernização de edifícios sob o pretexto de vícios formais menores sanáveis em revalidação posterior. Se você optar por ingressar com uma medida cautelar para suspender a execução do contrato com a empresa de energia, o único resultado prático será a perda do subsídio municipal e o reajuste nos custos dos painéis, gerando um prejuízo financeiro mensurável para todos os moradores que votaram favoravelmente. O ônus da prova de que houve cerceamento de defesa caberá a você perante o juízo, e os honorários de sucumbência decorrentes de uma ação julgada improcedente recairão sobre a sua fração, um risco que me parece desproporcional diante da clareza da votação de ontem. Diante do impasse instalado, recebi há pouco uma notificação da administradora informando que o contrato de financiamento precisa ser assinado até o final da semana útil para garantir a taxa bonificada, sob pena de o projeto ser cancelado por falta de adimplemento das condições resolutivas da proposta. Para evitar que o litígio judicial prospere e crie um racha irreversível na convivência do Aurora, convoco você e os demais líderes do grupo dissidente para uma reunião de conciliação extraordinária amanhã na sala do zelador. Se concordarmos em acrescentar um aditivo ao contrato garantindo o livre acesso dos moradores das coberturas e a criação de um comitê de fiscalização paritário, poderemos enviar a ata retificada à administração antes do prazo fatal sem precisar anular a assembleia. A sustentabilidade do nosso edifício só fará sentido se construída sobre bases de real consenso coletivo, e não sobre o temor de sanções judiciais ou sobre a imposição unilateral de uma maioria apressada.",
+    "wordCount": 970,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "anuência",
+        "lemma": "anuência",
+        "glosses": {
+          "es": "consent or agreement",
+          "en": "consent or agreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "entrave",
+        "lemma": "entrave",
+        "glosses": {
+          "es": "obstacle or hindrance",
+          "en": "obstacle or hindrance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gravame",
+        "lemma": "gravame",
+        "glosses": {
+          "es": "burden or encumbrance",
+          "en": "burden or encumbrance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "litígio",
+        "lemma": "litígio",
+        "glosses": {
+          "es": "lawsuit or legal dispute",
+          "en": "lawsuit or legal dispute"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "adimplemento",
+        "lemma": "adimplemento",
+        "glosses": {
+          "es": "fulfillment or payment of an obligation",
+          "en": "fulfillment or payment of an obligation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock or stalemate",
+          "en": "deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 38.8,
+      "maxSentenceWords": 50,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central discutido na troca de mensagens entre Beatriz e Joaquim?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A legalidade e a forma de aprovação de um projeto de energia solar no telhado do condomínio."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade imediata de reformar a fachada histórica do Edifício Aurora."
+        },
+        {
+          "id": "a3",
+          "text": "A destinação financeira do fundo de reserva para despesas ordinárias de manutenção."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Prezada Beatriz, Escrevo esta mensagem ainda sob o impacto da assembleia extraordinária realizada ontem à noite, na qual discutimos a viabilidade de implantar o consórcio de painéis fotovoltaicos no telhado do Edifício Aurora.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que, segundo Beatriz, seria exigido pela convenção do edifício para aprovar intervenções estruturais?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A unanimidade absoluta de todos os proprietários em votação presencial."
+        },
+        {
+          "id": "a2",
+          "text": "A maioria qualificada de dois terços dos titulares, descontados os inadimplentes."
+        },
+        {
+          "id": "a3",
+          "text": "A autorização direta da agência de fomento municipal sem consulta prévia."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O regimento interno é cristalino ao estipular maioria qualificada de dois terços dos titulares para intervenções que afetem a fachada ou a destinação das lajes de uso coletivo, um patamar que, segundo meus cálculos, não foi atingido se deduzirmos os inadimplentes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode inferir sobre a posição de Joaquim em relação à ação judicial proposta por Beatriz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Joaquim apoia plenamente a medida cautelar e deseja paralisar a obra imediatamente."
+        },
+        {
+          "id": "a2",
+          "text": "Joaquim acredita que uma ação judicial resultará em ganho financeiro para todos os moradores."
+        },
+        {
+          "id": "a3",
+          "text": "Joaquim considera que o processo trará prejuízos financeiros e riscos de sucumbência para o opositor."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Se você optar por ingressar com uma medida cautelar para suspender a execução do contrato com a empresa de energia, o único resultado prático será a perda do subsídio municipal e o reajuste nos custos dos painéis, gerando um prejuízo financeiro mensurável para todos os moradores que votaram favoravelmente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal propósito da última mensagem enviada por Beatriz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Propor uma reunião de conciliação e um aditivo contratual para evitar uma disputa judicial e viabilizar o projeto."
+        },
+        {
+          "id": "a2",
+          "text": "Cancelar definitivamente a instalação dos painéis solares devido à falta de consenso."
+        },
+        {
+          "id": "a3",
+          "text": "Ameaçar o grupo dissidente com sanções administrativas severas estipuladas pelo conselho fiscal."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Para evitar que o litígio judicial prospere e crie um racha irreversível na convivência do Aurora, convoco você e os demais líderes do grupo dissidente para uma reunião de conciliação extraordinária amanhã na sala do zelador.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser caracterizado o tom geral da correspondência trocada entre os dois condôminos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Irrespeitoso e agressivo, marcado por ofensas pessoais diretas e ameaças de expulsão."
+        },
+        {
+          "id": "a2",
+          "text": "Argumentativo, polido e formal, refletindo divergências profundas de interpretação jurídica sem perder a compostura."
+        },
+        {
+          "id": "a3",
+          "text": "Informal, descontraído e indiferente aos impactos financeiros da obra no condomínio."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Agradeço a franqueza da sua mensagem e compreendo o seu zelo pelas formalidades jurídicas que regem a nossa vida condominial, mas a minha leitura dos fatos diverge substancialmente da sua.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto da correspondência, qual é o significado exato da palavra 'gravame'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um benefício financeiro direto concedido aos proprietários de coberturas."
+        },
+        {
+          "id": "a2",
+          "text": "Uma multa pecuniária aplicada pelo síndico por atraso no pagamento do condomínio."
+        },
+        {
+          "id": "a3",
+          "text": "Um ônus, peso ou restrição imposta que prejudica ou onera alguém."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Os proprietários das coberturas, por exemplo, sofrerão restrições operacionais diretas no acesso à laje para manutenção dos seus próprios equipamentos de ar-condicionado, um dano objetivo que sequer foi pautado no relatório técnico apresentado pela engenharia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva uma resposta formal de trinta a cinquenta palavras posicionando-se sobre o conflito de consentimento e a urgência da transição energética em condomínios.",
+      "en": "Escreva uma resposta formal de trinta a cinquenta palavras posicionando-se sobre o conflito de consentimento e a urgência da transição energética em condomínios."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Compreenda o texto e responda às questões sobre a dinâmica condominial e a interpretação das normas de aprovação.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Iluminação da Discórdia no Edifício Aurora | C1 Reading | WeLearn",
+      "en": "A Iluminação da Discórdia no Edifício Aurora | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia a correspondência eletrônica entre os condôminos sobre a instalação de um sistema de energia solar e analise os conflitos jurídicos e de consentimento envolvidos.",
+      "en": "Leia a correspondência eletrônica entre os condôminos sobre a instalação de um sistema de energia solar e analise os conflitos jurídicos e de consentimento envolvidos."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

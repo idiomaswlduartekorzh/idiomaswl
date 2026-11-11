@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-shared-desks",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Reorganização Silenciosa do Espaço Coletivo",
+      "en": "A Reorganização Silenciosa do Espaço Coletivo"
+    },
+    "intro": {
+      "es": "Leia este e-mail corporativo enviado por uma gerência aos funcionários e responda às questões de compreensão e análise crítica.",
+      "en": "Leia este e-mail corporativo enviado por uma gerência aos funcionários e responda às questões de compreensão e análise crítica."
+    },
+    "mission": {
+      "es": "Analise o tom gerencial, identifique as implicações econômicas implícitas da transição para o modelo híbrido e responda às questões com base no texto.",
+      "en": "Analise o tom gerencial, identifique as implicações econômicas implícitas da transição para o modelo híbrido e responda às questões com base no texto."
+    },
+    "targetText": "Prezada equipe, com o avanço contínuo do nosso modelo operacional híbrido, temos observado que a flexibilidade conquistada nos últimos trimestres trouxe ganhos notáveis tanto para a autonomia individual quanto para a agilidade dos nossos fluxos de entrega. A possibilidade de gerenciar o próprio tempo, equilibrando as demandas profissionais com as aspirações pessoais, consolidou-se como um dos pilares da nossa cultura organizacional. No entanto, à medida que consolidamos essa modalidade, torna-seimperativo refletir sobre a infraestrutura que viabiliza essa dinâmica e sobre a responsabilidade compartilhada na sustentação do nosso ambiente de trabalho, que agora se estende para além dos muros físicos da empresa.\n\nHistoricamente, a organização centralizava os custos associados ao espaço produtivo, fornecendo não apenas as estações de trabalho tradicionais, mas também todo o suporte logístico e tecnológico inerente ao funcionamento diário. Contudo, a nova configuração descentralizada exige que repensemos a natureza desses encargos. A empresa continuará a prover as licenças de software corporativo e as diretrizes de segurança da informação, assegurando que a integridade dos nossos dados permaneça inviolável. Paralelamente, esperamos que cada colaborador assuma a gestão direta da sua infraestrutura periférica de escritório em domicílio, incluindo conectividade de alta performance e ergonomia adequada.\n\nEssa transição para a corresponsabilidade estrutural não deve ser vista como um retrocesso nas nossas políticas de bem-estar, mas sim como um alinhamento maduro com a autonomia que o trabalho remoto proporciona. Afinal, a liberdade de escolher onde atuar traz inerentemente a prerrogativa de moldar esse espaço conforme as preferências estéticas e funcionais de cada um. Quando a sede corporativa reduz a sua pegada física, os recursos financeiros outrora destinados à manutenção predial e ao fornecimento de insumos básicos são redirecionados para frentes estratégicas de expansão de mercado e inovação tecnológica, beneficiando a todos no longo prazo.\n\nCompreendemos que a adaptação a essa nova diretriz pode gerar dúvidas pontuais, especialmente no que tange aos investimentos iniciais necessários para equipar adequadamente o escritório doméstico. Para mitigar eventuais fricções nessa fase de transição, a diretoria financeira estruturou um auxílio único de caráter extraordinário, cujo valor foi dimensionado para cobrir a aquisição básica de mobiliário ergonômico. Ressaltamos, contudo, que a manutenção contínua, as atualizações tecnológicas futuras e o custeio das utilidades diárias passam a figurar no escopo das obrigações individuais inerentes à escolha de operar remotamente.\n\nAgradeço antecipadamente pela compreensão e pelo comprometimento contínuo com os nossos objetivos estratégicos. Acreditamos firmemente que essa divisão de papéis fortalece a nossa resiliência organizacional e garante a sustentabilidade do nosso modelo híbrido frente aos desafios do mercado global. Continuamos à disposição através dos canais habituais para esclarecer quaisquer dúvidas pontuais sobre a implementação operacional desta diretriz e para apoiar cada um de vocês na consolidação dos seus respectivos espaços de trabalho.\n\nApesar dos evidentes benefícios econômicos e da evidente descentralização gerencial proporcionada por essa nova diretriz, surgem questionamentos legítimos quanto aos potenciais impactos na coesão cultural e na equidade a longo prazo entre os membros da equipe. A transferência parcial dos custos operacionais para a esfera doméstica, embora mitigada pelo aporte financeiro inicial, pode inadvertidamente aprofundar assimetrias estruturais preexistentes, visto que nem todos os colaboradores dispõem originariamente de condições habitacionais equiparáveis para otimizar o desempenho profissional de maneira isolada. Além disso, a diminuição drástica da convivência presencial contínua impõe o desafio complexo de preservar a espontaneidade na troca de ideias e a transmissão informal de valores institucionais, elementos cruciais que tradicionalmente floresciam nos corredores e nas salas de reunião da sede física. Para contrabalançar essa eventual erosão do pertencimento coletivo, a liderança precisará intensificar os esforços voltados à criação de rituais virtuais significativos e ao monitoramento constante do clima organizacional, garantindo que a autonomia conquistada não resulte em um isolamento gradual ou na diluição do senso de propósito compartilhado. Afinal, a verdadeira resiliência de um modelo híbrido avançado reside não apenas na otimização de custos e na flexibilidade logística, mas fundamentalmente na capacidade de manter a organização coesa, motivada e alinhada em torno de uma visão comum, mesmo quando os seus integrantes operam geograficamente distantes uns dos outros em seus respectivos recintos particulares ao redor do país.",
+    "wordCount": 675,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "imperativo",
+        "lemma": "imperativo",
+        "glosses": {
+          "es": "imperative",
+          "en": "imperative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inerente",
+        "lemma": "inerente",
+        "glosses": {
+          "es": "inherent",
+          "en": "inherent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prerrogativa",
+        "lemma": "prerrogativa",
+        "glosses": {
+          "es": "prerogative",
+          "en": "prerogative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fricções",
+        "lemma": "fricções",
+        "glosses": {
+          "es": "friction / tensions",
+          "en": "friction / tensions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "extraordinário",
+        "lemma": "extraordinário",
+        "glosses": {
+          "es": "extraordinary / one-time",
+          "en": "extraordinary / one-time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resiliência",
+        "lemma": "resiliência",
+        "glosses": {
+          "es": "resilience",
+          "en": "resilience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.1,
+      "maxSentenceWords": 58,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no comunicado enviado pela gerência?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A transferência gradual dos custos de infraestrutura do escritório remoto para os funcionários."
+        },
+        {
+          "id": "a2",
+          "text": "O encerramento definitivo das atividades presenciais e a venda da sede física."
+        },
+        {
+          "id": "a3",
+          "text": "A ampliação dos benefícios corporativos voltados para o lazer da equipe."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a nova configuração descentralizada exige que repensemos a natureza desses encargos. A empresa continuará a prover as licenças de software corporativo e as diretrizes de segurança da informação, assegurando que a integridade dos nossos dados permaneça inviolável. Paralelamente, esperamos que cada colaborador assuma a gestão direta da sua infraestrutura periférica de escritório em domicílio",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que a empresa continuará a fornecer aos colaboradores durante o modelo híbrido?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mobiliário ergonômico e auxílio para contas de luz."
+        },
+        {
+          "id": "a2",
+          "text": "Licenças de software e diretrizes de segurança."
+        },
+        {
+          "id": "a3",
+          "text": "Conectividade de alta performance e computadores."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A empresa continuará a prover as licenças de software corporativo e as diretrizes de segurança da informação, assegurando que a integridade dos nossos dados permaneça inviolável.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o redirecionamento dos recursos financeiros da sede para inovação sugere sobre as prioridades da empresa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A empresa pretende eliminar todos os cargos administrativos nos próximos meses."
+        },
+        {
+          "id": "a2",
+          "text": "Os lucros serão integralmente distribuídos entre os acionistas majoritários."
+        },
+        {
+          "id": "a3",
+          "text": "A prioridade é reduzir despesas prediais para investir em crescimento estratégico."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "os recursos financeiros outrora destinados à manutenção predial e ao fornecimento de insumos básicos são redirecionados para frentes estratégicas de expansão de mercado e inovação tecnológica",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a finalidade principal do auxílio único oferecido pela diretoria financeira?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cobrir os custos iniciais com mobiliário ergonômico."
+        },
+        {
+          "id": "a2",
+          "text": "Remunerar mensalmente o uso da internet residencial."
+        },
+        {
+          "id": "a3",
+          "text": "Financiar cursos de capacitação técnica avançada."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a diretoria financeira estruturou um auxílio único de caráter extraordinário, cujo valor foi dimensionado para cobrir a aquisição básica de mobiliário ergonômico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom da comunicação pode ser caracterizado em relação às novas exigências financeiras?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Irritado"
+        },
+        {
+          "id": "a2",
+          "text": "Eufemístico"
+        },
+        {
+          "id": "a3",
+          "text": "Humorístico"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Essa transição para a corresponsabilidade estrutural não deve ser vista como um retrocesso nas nossas políticas de bem-estar, mas sim como um alinhamento maduro com a autonomia que o trabalho remoto proporciona.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra \"inerente\"?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Temporário ou passageiro"
+        },
+        {
+          "id": "a2",
+          "text": "Opcional ou dispensável"
+        },
+        {
+          "id": "a3",
+          "text": "Indissociável ou natural"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a manutenção contínua, as atualizações tecnológicas futuras e o custeio das utilidades diárias passam a figurar no escopo das obrigações individuais inerentes à escolha de operar remotamente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um e-mail de resposta de duzentas palavras na perspectiva de um funcionário sênior, questionando polidamente a transferência dos custos operacionais e propondo uma revisão da política de auxílio remoto.",
+      "en": "Escreva um e-mail de resposta de duzentas palavras na perspectiva de um funcionário sênior, questionando polidamente a transferência dos custos operacionais e propondo uma revisão da política de auxílio remoto."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise o tom gerencial, identifique as implicações econômicas implícitas da transição para o modelo híbrido e responda às questões com base no texto.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Reorganização Silenciosa do Espaço Coletivo | C1 Reading | WeLearn",
+      "en": "A Reorganização Silenciosa do Espaço Coletivo | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia este e-mail corporativo enviado por uma gerência aos funcionários e responda às questões de compreensão e análise crítica.",
+      "en": "Leia este e-mail corporativo enviado por uma gerência aos funcionários e responda às questões de compreensão e análise crítica."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

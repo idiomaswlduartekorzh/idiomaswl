@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-quiet-street",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão do Silêncio Noturno na Rua dos Jasmins",
+      "en": "A Ilusão do Silêncio Noturno na Rua dos Jasmins"
+    },
+    "intro": {
+      "es": "Leia este artigo de jornal investigativo sobre políticas de trânsito urbano e responda às questões de compreensão e análise crítica.",
+      "en": "Leia este artigo de jornal investigativo sobre políticas de trânsito urbano e responda às questões de compreensão e análise crítica."
+    },
+    "mission": {
+      "es": "Analise o conflito entre dados estatísticos superficiais e a realidade vivida pelos moradores diante das novas restrições de circulação noturna.",
+      "en": "Analise o conflito entre dados estatísticos superficiais e a realidade vivida pelos moradores diante das novas restrições de circulação noturna."
+    },
+    "targetText": "Quando a Secretaria Municipal de Mobilidade Urbana cravou em seu balanço trimestral que a Rua dos Jasmins registrara uma queda de quarenta por cento no fluxo de veículos após a implementação do bloqueio noturno, a autarquia considerou a intervenção um triunfo incontestável. Para a burocracia municipal, a diminuição na contagem de placas captadas pelas câmeras de monitoramento equivalia diretamente a uma vitória da qualidade de vida e à pacificação acústica de uma via historicamente congestionada. No entanto, a premissa de que menos carros equivalem automaticamente a ruas mais tranquilas revelou-se uma falácia operacional insustentável para quem habita a região. A moradora Beatriz Vasconcelos, representante do conselho comunitário local, percebeu a dissonância logo na primeira semana de vigência da norma: embora o tráfego regular de automóveis tivesse de fato minguado, o esvaziamento aparente não dissipou o ruído, mas o transformou em algo mais insidioso e perturbador.\n\nA dinâmica do problema mudou de figura, não de intensidade. O que a estatística oficial ignorou foi o fenômeno do desvio de rota e a adaptação oportunista dos motoristas comerciais. Com o fechamento do eixo principal das dez da noite às seis da manhã, as frotas de entregas rápidas e os caminhões de abastecimento de pequeno porte não deixaram de circular; apenas recalcularam seus trajetos por vias secundárias e residenciais ainda desprotegidas pela barreira física. O resultado prático foi a concentração do barulho antes difuso em corredores estreitos, cujas calçadas rebaixadas amplificam o ronco dos motores acelerados em marcha lenta. Enquanto os gráficos da prefeitura exibiam uma linha descendente reconfortante, a rotina de Beatriz e de seus vizinhos passou a ser pontuada pelo atrito constante entre moradores exaustos e entregadores acuados em becos sem saída.\n\nO conflito explodiu em uma tensa reunião pública na última quinta-feira, quando Beatriz confrontou o engenheiro civil Marcos Silveira, projetista responsável pela intervenção. Munida de gravações de decibéis e diários de bordo coletados pelos moradores, ela argumentou que o sucesso de uma política pública não pode ser medido apenas pela retenção de veículos em um ponto isolado do mapa viário. Marcos, por sua vez, defendeu a rigidez técnica do projeto com base estritamente nos parâmetros contratuais e nos relatórios de contagem automatizada. Para a engenharia de tráfego tradicional, a métrica de sucesso é binária: se o fluxo diminui no trecho regulamentado, a meta foi alcançada. A redistribuição espacial do ônus acústico para ruas vizinhas não constava nas planilhas de desempenho, figurando como uma externalidade invisível aos olhos de quem governa a partir de gabinetes climatizados.\n\nA divergência fundamental reside, portanto, em quem detém a legitimidade para definir o que constitui uma rua pacificada. Para a administração pública, a quietude é um dado quantitativo, um índice que legitima a eficiência gerencial perante os órgãos de controle. Para os residentes, a tranquilidade é uma experiência sensorial e contínua, incompatível com a simples realocação do caos para a esquina ao lado. Essa assimetria conceitual paralisa qualquer tentativa de diálogo genuíno, pois a prefeitura interpreta as reclamações cotidianas como mero saudosismo ou resistência infundada à modernização urbana, enquanto a comunidade enxerga na tecnocracia uma forma sofisticada de negligência institucional disfarçada de inovação.\n\nO desfecho dessa queda de braço permanece inconcluso e profundamente sintomático das cidades contemporâneas. Uma semana após o embate, a prefeitura instalou novas placas informativas e prometeu intensificar a fiscalização esporádica, recusando-se, contudo, a redesenhar o perímetro do bloqueio ou a admitir falhas estruturais no planejamento. Em contrapartida, os moradores organizaram rondas noturnas autônomas e ameaçam ingressar com uma ação civil pública para suspender o decreto. A Rua dos Jasmins continua, assim, a oscilar entre a ficção burocrática de um silêncio estatístico e a realidade sufocante de um tráfego que apenas mudou de endereço, provando que a engenharia urbana, quando desprovida de empatia territorial, fabrica conflitos tão barulhentos quanto os motores que tenta silenciar.\n\nEnquanto a batalha jurídica ganha corpo nos tribunais, o impacto social da medida se aprofunda de maneiras imprevistas. Pequenos comércios locais, antes beneficiados pelo movimento constante de transeuntes noturnos, relatam quedas drásticas no faturamento devido à sensação de isolamento e insegurança gerada pelo esvaziamento artificial da área. Paradoxalmente, a tentativa de pacificar a via acabou por desarticular a rede de vigilância espontânea que o fluxo regular de pedestres e veículos proporcionava. Assim, a comunidade se vê encurralada entre o barulho deslocado para as travessas e a vulnerabilidade crescente de ruas desertificadas, evidenciando que intervenções tecnocráticas na malha urbana frequentemente geram efeitos colaterais tão fragmentados e complexos quanto o próprio tecido social que pretendem ordenar.",
+    "wordCount": 746,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "autarquia",
+        "lemma": "autarquia",
+        "glosses": {
+          "es": "autonomous government agency",
+          "en": "autonomous government agency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "falácia",
+        "lemma": "falácia",
+        "glosses": {
+          "es": "fallacy or deceptive reasoning",
+          "en": "fallacy or deceptive reasoning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insidioso",
+        "lemma": "insidioso",
+        "glosses": {
+          "es": "insidious or stealthily harmful",
+          "en": "insidious or stealthily harmful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ônus",
+        "lemma": "ônus",
+        "glosses": {
+          "es": "burden or load",
+          "en": "burden or load"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assimetria",
+        "lemma": "assimetria",
+        "glosses": {
+          "es": "asymmetry or imbalance",
+          "en": "asymmetry or imbalance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tecnocracia",
+        "lemma": "tecnocracia",
+        "glosses": {
+          "es": "technocracy or rule by technical experts",
+          "en": "technocracy or rule by technical experts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.7,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto sobre o bloqueio noturno?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O contraste entre dados estatísticos oficiais de trânsito e a realidade incômoda vivida pelos moradores"
+        },
+        {
+          "id": "a2",
+          "text": "A ineficácia das medidas tecnológicas na eliminação definitiva de todos os veículos da cidade"
+        },
+        {
+          "id": "a3",
+          "text": "A necessidade urgente de ampliar o horário de circulação para beneficiar os entregadores comerciais"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O que a estatística oficial ignorou foi o fenômeno do desvio de rota e a adaptação oportunista dos motoristas comerciais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Segundo o relato, qual foi a reação imediata da prefeitura diante das reclamações dos moradores na reunião pública?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Suspendeu imediatamente o decreto de circulação noturna para reavaliar o projeto"
+        },
+        {
+          "id": "a2",
+          "text": "Instalou novas placas informativas e recusou-se a redesenhar o perímetro do bloqueio"
+        },
+        {
+          "id": "a3",
+          "text": "Redistribuiu o orçamento municipal para indenizar as famílias afetadas pelo barulho"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Uma semana após o embate, a prefeitura instalou novas placas informativas e prometeu intensificar a fiscalização esporádica, recusando-se, contudo, a redesenhar o perímetro do bloqueio ou a admitir falhas estruturais no planejamento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode deduzir sobre a visão da engenharia de tráfego em relação aos impactos colaterais da medida?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Os engenheiros monitoram de perto o aumento do barulho nas ruas secundárias por meio de diários de bordo"
+        },
+        {
+          "id": "a2",
+          "text": "A prefeitura considera os efeitos em vias secundárias como um problema temporário que desaparecerá sozinho"
+        },
+        {
+          "id": "a3",
+          "text": "Os efeitos indesejados nas ruas vizinhas são ignorados porque não aparecem nas planilhas oficiais de desempenho"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A redistribuição espacial do ônus acústico para ruas vizinhas não constava nas planilhas de desempenho, figurando como uma externalidade invisível aos olhos de quem governa a partir de gabinetes climatizados.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal objetivo do autor ao contrastar a visão de Beatriz com a do engenheiro Marcos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenciar o choque entre a métrica quantitativa burocrática e a experiência sensorial da comunidade"
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que os moradores locais possuem mais formação técnica do que os projetistas municipais"
+        },
+        {
+          "id": "a3",
+          "text": "Comprovar que o tráfego comercial noturno é totalmente desnecessário para o funcionamento urbano"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Para a administração pública, a quietude é um dado quantitativo, um índice que legitima a eficiência gerencial perante os órgãos de controle. Para os residentes, a tranquilidade é uma experiência sensorial e contínua",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom do texto caracteriza a relação entre a administração municipal e a comunidade afetada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Harmonioso e colaborativo"
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e distanciado"
+        },
+        {
+          "id": "a3",
+          "text": "Otimista e conciliador"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Essa assimetria conceitual paralisa qualquer tentativa de diálogo genuíno, pois a prefeitura interpreta as reclamações cotidianas como mero saudosismo ou resistência infundada à modernização urbana",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'ônus'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O lucro financeiro obtido pelos comerciantes com a mudança de rota"
+        },
+        {
+          "id": "a2",
+          "text": "A vantagem técnica proporcionada pelas câmeras de monitoramento"
+        },
+        {
+          "id": "a3",
+          "text": "O peso ou encargo incômodo gerado pela transferência do problema para outra área"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A redistribuição espacial do ônus acústico para ruas vizinhas não constava nas planilhas de desempenho, figurando como uma externalidade invisível aos olhos de quem governa a partir de gabinetes climatizados.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de duzentas palavras discutindo se as métricas quantitativas de órgãos públicos devem prevalecer sobre a percepção subjetiva de comunidades afetadas por intervenções urbanas.",
+      "en": "Escreva um texto argumentativo de duzentas palavras discutindo se as métricas quantitativas de órgãos públicos devem prevalecer sobre a percepção subjetiva de comunidades afetadas por intervenções urbanas."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise o conflito entre dados estatísticos superficiais e a realidade vivida pelos moradores diante das novas restrições de circulação noturna.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão do Silêncio Noturno na Rua dos Jasmins | C1 Reading | WeLearn",
+      "en": "A Ilusão do Silêncio Noturno na Rua dos Jasmins | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia este artigo de jornal investigativo sobre políticas de trânsito urbano e responda às questões de compreensão e análise crítica.",
+      "en": "Leia este artigo de jornal investigativo sobre políticas de trânsito urbano e responda às questões de compreensão e análise crítica."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

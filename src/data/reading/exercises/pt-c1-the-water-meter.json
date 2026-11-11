@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-water-meter",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Miragem do Hidrômetro Coletivo e a Ilusão da Sustentabilidade Urbana",
+      "en": "A Miragem do Hidrômetro Coletivo e a Ilusão da Sustentabilidade Urbana"
+    },
+    "intro": {
+      "es": "Leia a notícia adaptada sobre os desafios na medição do consumo hídrico e responda às questões analíticas para praticar a interpretação avançada em português.",
+      "en": "Leia a notícia adaptada sobre os desafios na medição do consumo hídrico e responda às questões analíticas para praticar a interpretação avançada em português."
+    },
+    "mission": {
+      "es": "Compreenda a complexidade por trás dos dados oficiais de consumo de água e analise criticamente o conflito entre médias estatísticas e a realidade dos edifícios com hidrômetros compartilhados.",
+      "en": "Compreenda a complexidade por trás dos dados oficiais de consumo de água e analise criticamente o conflito entre médias estatísticas e a realidade dos edifícios com hidrômetros compartilhados."
+    },
+    "targetText": "A divulgação recente do relatório anual de consumo hídrico pela autarquia municipal de saneamento gerou comemoração superficial entre os gestores públicos, que apontaram uma queda modesta na média de gastos por domicílio na zona norte da cidade. No entanto, o documento esconde uma distorção estrutural grave: a ocultação estatística dos edifícios dotados de hidrômetro coletivo. Enquanto as residências unifamiliares registraram retração no uso graças a campanhas de conscientização e tarifas progressivas, os grandes condomínios verticais permaneceram em uma zona cega de monitoramento individualizado. Nessas edificações, a ausência de hidrômetros individuais desestimula qualquer iniciativa de economia voluntária, uma vez que a fatura global é diluída igualmente entre todos os condôminos, independentemente do desperdício praticado por unidades isoladas. O síndico do Edifício Aurora, Roberto Sampaio, tentou por meses alertar a secretaria sobre a distorção, argumentando que a média divulgada mascarava o uso excessivo de piscinas e lavagens diárias de garagens em dezenas de prédios da região. Segundo Sampaio, a aparente eficiência hídrica alardeada pelo governo municipal não passava de uma cortina de fumaça gerada por médias aritméticas que nivelavam por baixo o comportamento de moradores conscientes e irresponsáveis. A tensão atingiu o ápice quando o conselho de moradores do Aurora convocou uma assembleia extraordinária para deliberar sobre a instalação obrigatória de medidores individualizados, enfrentando forte resistência de proprietários de apartamentos alugados, que temiam o repasse de custos e a valorização tributária decorrente da reforma hidráulica. Para piorar o cenário, a autarquia argumentou em nota oficial que a responsabilidade técnica e financeira pela setorização interna caberia exclusivamente aos condomínios, eximindo-se de qualquer aporte financeiro para corrigir a falha estrutural. O desfecho dessa impasse ocorreu na semana passada, quando o conselho aprovou por margem mínima a contratação de uma auditoria de engenharia independente para mapear o consumo real do edifício e confrontar os dados oficiais. Embora os defensores da média municipal insistam que o modelo estatístico cumpre o papel de balizamento macroeconômico, a iniciativa do Edifício Aurora evidenciou que a busca genuína pela sustentabilidade urbana exige o fim das médias generalizadas e a assunção de responsabilidades descentralizadas.\n\nEssa auditoria independente, longe de ser um caso isolado de inconformismo vecinal, acabou por desencadear um efeito cascata que ameaça desestabilizar a narrativa oficial da autarquia municipal em toda a região norte. À medida que os engenheiros contratados começaram a esmiuçar os registros de vazão e a cruzar os dados de consumo bruto com a quantidade real de moradores por metro quadrado, revelou-se um panorama alarmante de desperdício institucionalizado que desafia os índices de sustentabilidade alardeados pela prefeitura. O relatório preliminar do Edifício Aurora, vazado anonimamente para veículos de imprensa local na última sexta-feira, apontou que o consumo real nos grandes condomínios verticais supera em até sessenta por cento a média per capita divulgada nos boletins oficiais, escancarando a ineficácia das políticas públicas baseadas em estimativas genéricas. Diante da repercussão negativa, outros síndicos e conselhos de moradores da zona norte começaram a se articular em um movimento de contestação cívica, exigindo não apenas a revisão imediata dos critérios de cálculo do consumo hídrico, mas também a implementação de subsídios estatais para a retroadaptação das redes hidráulicas antigas. A prefeitura, acuada pela pressão combinada da imprensa, dos comitês de bairro e da oposição na câmara municipal, viu-se obrigada a recuar na postura de absoluta intransigência, sinalizando a criação de um grupo de trabalho técnico para reavaliar a setorização dos hidrômetros coletivos. Contudo, persiste o impasse financeiro sobre quem deve arcar com os custos bilionários da modernização da infraestrutura urbana, visto que o erário municipal alega restrições orçamentárias severas, enquanto os contribuintes sustentam que a omissão histórica do poder público na fiscalização dos condomínios criou o problema atual. Esse cabo de guerra institucional colocou em evidência a fragilidade dos indicadores macroeconômicos tradicionalmente aceitos sem questionamento crítico, demonstrando que a transição para um modelo de gestão hídrica verdadeiramente eficiente não pode prescindir da transparência radical e da responsabilização individualizada nas instâncias microestruturais da cidade.",
+    "wordCount": 654,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "autarquia",
+        "lemma": "autarquia",
+        "glosses": {
+          "es": "autonomous government agency",
+          "en": "autonomous government agency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "diluída",
+        "lemma": "diluída",
+        "glosses": {
+          "es": "diluted or spread out",
+          "en": "diluted or spread out"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cortina de fumaça",
+        "lemma": "cortina de fumaça",
+        "glosses": {
+          "es": "smoke screen or distraction",
+          "en": "smoke screen or distraction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eximindo-se",
+        "lemma": "eximindo-se",
+        "glosses": {
+          "es": "exempting oneself",
+          "en": "exempting oneself"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock or stalemate",
+          "en": "deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "balizamento",
+        "lemma": "balizamento",
+        "glosses": {
+          "es": "guideline or benchmarking",
+          "en": "guideline or benchmarking"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 38.5,
+      "maxSentenceWords": 50,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A ineficácia das médias estatísticas oficiais em edifícios com medição compartilhada."
+        },
+        {
+          "id": "a2",
+          "text": "O aumento das tarifas de água."
+        },
+        {
+          "id": "a3",
+          "text": "A escassez de recursos hídricos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "o documento esconde uma distorção estrutural grave: a ocultação estatística dos edifícios dotados de hidrômetro coletivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Como a autarquia municipal justificou sua posição diante da reivindicação dos condomínios?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Prometeu instalar medidores novos."
+        },
+        {
+          "id": "a2",
+          "text": "Transferiu a responsabilidade financeira e técnica aos prédios."
+        },
+        {
+          "id": "a3",
+          "text": "Negou a existência de qualquer problema."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a autarquia argumentou em nota oficial que a responsabilidade técnica e financeira pela setorização interna caberia exclusivamente aos condomínios, eximindo-se de qualquer aporte financeiro",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode inferir sobre o comportamento de consumo nos condomínios verticais citados?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Economizam água devido à tarifa."
+        },
+        {
+          "id": "a2",
+          "text": "Consomem menos que as casas."
+        },
+        {
+          "id": "a3",
+          "text": "Não há incentivo para a economia."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a ausência de hidrômetros individuais desestimula qualquer iniciativa de economia voluntária, uma vez que a fatura global é diluída igualmente entre todos os condôminos",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi a intenção do síndico Roberto Sampaio ao contatar a secretaria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Denunciar que a média divulgada mascarava o desperdício real em prédios da região."
+        },
+        {
+          "id": "a2",
+          "text": "Solicitar subsídios para a reforma."
+        },
+        {
+          "id": "a3",
+          "text": "Elogiar o relatório de saneamento."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "argumentando que a média divulgada mascarava o uso excessivo de piscinas e lavagens diárias de garagens em dezenas de prédios da região.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto em relação à gestão dos dados de consumo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Festivo e otimista."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e analítico."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro e descritivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a aparente eficiência hídrica alardeada pelo governo municipal não passava de uma cortina de fumaça gerada por médias aritméticas",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a expressão 'cortina de fumaça'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma fumaça real de incêndio."
+        },
+        {
+          "id": "a2",
+          "text": "Uma medida de segurança."
+        },
+        {
+          "id": "a3",
+          "text": "Um artifício para ocultar a realidade."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a aparente eficiência hídrica alardeada pelo governo municipal não passava de uma cortina de fumaça gerada por médias aritméticas que nivelavam por baixo o comportamento de moradores conscientes e irresponsáveis.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto dissertativo-argumentativo, entre 200 e 250 palavras, discutindo se a individualização obrigatória de hidrômetros em condomínios é a solução mais eficaz para a conservação da água ou se medidas coletivas de conscientização seriam suficientes. Utilize argumentos consistentes e vocabulário formal em português.",
+      "en": "Escreva um texto dissertativo-argumentativo, entre 200 e 250 palavras, discutindo se a individualização obrigatória de hidrômetros em condomínios é a solução mais eficaz para a conservação da água ou se medidas coletivas de conscientização seriam suficientes. Utilize argumentos consistentes e vocabulário formal em português."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Compreenda a complexidade por trás dos dados oficiais de consumo de água e analise criticamente o conflito entre médias estatísticas e a realidade dos edifícios com hidrômetros compartilhados.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Miragem do Hidrômetro Coletivo e a Ilusão da Sustentabilidade Urbana | C1 Reading | WeLearn",
+      "en": "A Miragem do Hidrômetro Coletivo e a Ilusão da Sustentabilidade Urbana | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia a notícia adaptada sobre os desafios na medição do consumo hídrico e responda às questões analíticas para praticar a interpretação avançada em português.",
+      "en": "Leia a notícia adaptada sobre os desafios na medição do consumo hídrico e responda às questões analíticas para praticar a interpretação avançada em português."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

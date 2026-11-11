@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Geometria do Silêncio",
+      "en": "A Geometria do Silêncio"
+    },
+    "intro": {
+      "es": "Leia o texto sobre a redescoberta de um topônimo esquecido em um povoado isolado e responda às questões.",
+      "en": "Leia o texto sobre a redescoberta de um topônimo esquecido em um povoado isolado e responda às questões."
+    },
+    "mission": {
+      "es": "Analise como a divergência entre a cartografia oficial e a memória oral transforma a identidade de uma comunidade rural.",
+      "en": "Analise como a divergência entre a cartografia oficial e a memória oral transforma a identidade de uma comunidade rural."
+    },
+    "targetText": "O gabinete do Instituto Cartográfico permanecia envolto em uma penumbra densa, apenas cortada pelo facho de luz do abajur que iluminava a mesa de Clara. Ali, entre pilhas de velhos registros de agrimensura e mapas cadastrais amarelados pelo tempo, ela desvendava os vestígios de uma contenda burocrática esquecida havia décadas. O documento principal, datado do final do século XIX, trazia a planta oficial do arraial de Santa Brígida, um aglomerado de casas de pau a pique encravado nas encostas da Serra do Corvo. Contudo, nas margens daquele papel espesso, anotações à mão em tinta ferrogálica desbotada revelavam um detalhe intrigante: o escrivão imperial registrara uma divergência persistente entre a denominação oficial e o modo como os moradores locais se referiam ao vale. Enquanto a cartografia impunha a solenidade sacra de Santa Brígida, os camponeses insistiam em chamar o lugarejo de Várzea dos Sussurros, nome que jamais constara em qualquer decreto estadual.\n\nMovida por uma curiosidade acadêmica que logo se transformou em urgência pessoal, Clara decidiu empreender uma viagem até o vilarejo para compreender a gênese dessa cisão toponímica. Ao chegar, encontrou um cenário de casario rústico e ruas de terra batida onde o ritmo do tempo parecia obedecer a uma lógica própria, imune às urgências da modernidade. Na pequena venda do Seu Juca, o ar denso cheirava a café torrado na hora e fumo de corda. O comerciante, um homem de oitenta anos com olhos lúcidos e mãos calejadas pelo cultivo da terra, recebeu a pesquisadora com desconfiança polida. Quando Clara abriu a cópia do mapa oficial sobre o balcão de madeira gasta e perguntou sobre a origem do nome Santa Brígida, Seu Juca limitou-se a um sorriso enigmático, balançando a cabeça em negação silenciosa antes de servir uma xícara de café fumegante.\n\nA verdadeira revelação, no entanto, não viria dos documentos formais, mas de uma conversa tardia com dona Helena, a benzedeira mais antiga do lugar, cuja memória guardava os recônditos da história oral da comunidade. Sentados no alpendre de sua casa, com vista para a imensidão verdejante do vale, dona Helena explicou que a imposição do nome oficial fora um ato puramente administrativo, concebido por agrimensores que nunca pisaram no chão daquela terra e que sequer falavam a língua dos tropeiros locais. Para os fundadores originais, a Várzea dos Sussurros não era uma designação poética vazia, mas uma descrição acústica precisa: o vento que descia das gargantas da serra ao entardecer produzia um eco singular entre as formações rochosas, um murmúrio constante que lembrava vozes humanas murmurando segredos ancestrais. O nome cartográfico, portanto, representava a violência sutil da tinta sobre a vivência, a tentativa de enquadrar a topografia viva nos limites estéreis de um cadastro fiscal.\n\nConforme os dias passavam, Clara percebeu que a disputa entre os dois nomes não era meramente uma curiosidade filológica, mas o eixo central de uma tensão latente sobre quem detém o direito de narrar o território. Os mais jovens, educados nas escolas da cidade vizinha e influenciados pela conectividade recente, começavam a adotar o nome impresso nos documentos oficiais em placas de sinalização e correspondências comerciais, vendo na denominação tradicional um sinal indesejado de atraso rural. Em contrapartida, os anciãos viam na preservação do nome oral um ato de resistência identitária, uma recusa obstinada em permitir que a burocracia estatal apagasse a memória afetiva de seus antepassados. Cada placa instalada pela prefeitura era recebida pelos mais velhos não como progresso, mas como um apagamento simbólico, uma forma de exílio em sua própria terra.\n\nNa véspera de sua partida, Clara contemplou o vale iluminado pela luz dourada do crepúsculo e ouviu, com clareza inédita, o som que dera origem ao nome renegado: o vento sussurrando entre as rochas da serra. Compreendeu então que nenhum mapa jamais conseguiria conter a totalidade da experiência humana, pois a verdadeira geografia de um povo reside não nas linhas precisas da agrimensura, mas nas dobras invisíveis da memória coletiva. Ao fechar sua caderneta de campo, ela soube que sua tese precisaria acolher esse paradoxo, registrando que a verdade de um lugar muitas vezes habita justamente o espaço vazio entre o nome escrito e o nome falado.",
+    "wordCount": 688,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "contenda",
+        "lemma": "contenda",
+        "glosses": {
+          "es": "dispute",
+          "en": "dispute"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "encravado",
+        "lemma": "encravado",
+        "glosses": {
+          "es": "embedded",
+          "en": "embedded"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ferrogálica",
+        "lemma": "ferrogálica",
+        "glosses": {
+          "es": "iron gall",
+          "en": "iron gall"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gênese",
+        "lemma": "gênese",
+        "glosses": {
+          "es": "genesis",
+          "en": "genesis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alpendre",
+        "lemma": "alpendre",
+        "glosses": {
+          "es": "porch",
+          "en": "porch"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "latent",
+          "en": "latent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.8,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O conflito entre a cartografia oficial e a memória oral na definição de um lugar."
+        },
+        {
+          "id": "a2",
+          "text": "A evolução das técnicas de agrimensura no século XIX."
+        },
+        {
+          "id": "a3",
+          "text": "A dificuldade de acesso a povoados isolados devido à falta de estradas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Contudo, nas margens daquele papel espesso, anotações à mão em tinta ferrogálica desbotada revelavam um detalhe intrigante: o escrivão imperial registrara uma divergência persistente entre a denominação oficial e o modo como os moradores locais se referiam ao vale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Como os fundadores originais justificavam o nome Várzea dos Sussurros?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Era uma homenagem secreta aos tropeiros que cruzavam a região."
+        },
+        {
+          "id": "a2",
+          "text": "Descrevia o som singular do vento entre as rochas da serra ao entardecer."
+        },
+        {
+          "id": "a3",
+          "text": "Refletia um decreto imperial perdido nos arquivos da capital."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o vento que descia das gargantas da serra ao entardecer produzia um eco singular entre as formações rochosas, um murmúrio constante que lembrava vozes humanas murmurando segredos ancestrais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a adoção do nome oficial pelos mais jovens sugere sobre a comunidade?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um acordo pacífico entre anciãos e agrimensores."
+        },
+        {
+          "id": "a2",
+          "text": "O esquecimento completo da localização geográfica do arraial."
+        },
+        {
+          "id": "a3",
+          "text": "Uma ruptura gradual com a memória afetiva em favor da modernização."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Os mais jovens, educados nas escolas da cidade vizinha e influenciados pela conectividade recente, começavam a adotar o nome impresso nos documentos oficiais em placas de sinalização e correspondências comerciais, vendo na denominação tradicional um sinal indesejado de atraso rural.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual era o objetivo principal da viagem de Clara ao vilarejo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Compreender a origem da divergência entre o nome oficial e o popular."
+        },
+        {
+          "id": "a2",
+          "text": "Vender cópias de mapas antigos para os comerciantes locais."
+        },
+        {
+          "id": "a3",
+          "text": "Investigar fraudes em registros imobiliários do século passado."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Movida por uma curiosidade acadêmica que logo se transformou em urgência pessoal, Clara decidiu empreender uma viagem até o vilarejo para compreender a gênese dessa cisão toponímica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o narrador caracteriza a imposição do nome cartográfico pelos agrimensores?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como uma contribuição indispensável para o desenvolvimento econômico."
+        },
+        {
+          "id": "a2",
+          "text": "Como um ato burocrático insensível que desconsiderou a vivência local."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma brincadeira histórica sem relevância prática."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O nome cartográfico, portanto, representava a violência sutil da tinta sobre a vivência, a tentativa de enquadrar a topografia viva nos limites estéreis de um cadastro fiscal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto da narrativa, o que significa o termo contenda?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma festa tradicional com danças folclóricas."
+        },
+        {
+          "id": "a2",
+          "text": "Um acordo comercial de longa data."
+        },
+        {
+          "id": "a3",
+          "text": "Uma disputa ou conflito de interesses."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ali, entre pilhas de velhos registros de agrimensura e mapas cadastrais amarelados pelo tempo, ela desvendava os vestígios de uma contenda burocrática esquecida havia décadas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto dissertativo-argumentativo, entre 250 e 300 palavras, discutindo de que maneira a preservação de nomes tradicionais em comunidades locais atua como forma de resistência cultural frente à padronização imposta por registros oficiais.",
+      "en": "Escreva um texto dissertativo-argumentativo, entre 250 e 300 palavras, discutindo de que maneira a preservação de nomes tradicionais em comunidades locais atua como forma de resistência cultural frente à padronização imposta por registros oficiais."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise como a divergência entre a cartografia oficial e a memória oral transforma a identidade de uma comunidade rural.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Geometria do Silêncio | C1 Reading | WeLearn",
+      "en": "A Geometria do Silêncio | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia o texto sobre a redescoberta de um topônimo esquecido em um povoado isolado e responda às questões.",
+      "en": "Leia o texto sobre a redescoberta de um topônimo esquecido em um povoado isolado e responda às questões."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

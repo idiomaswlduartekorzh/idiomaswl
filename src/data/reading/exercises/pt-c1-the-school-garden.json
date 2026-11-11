@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-school-garden",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão dos canteiros coletivos",
+      "en": "A Ilusão dos canteiros coletivos"
+    },
+    "intro": {
+      "es": "Leia o artigo crítico sobre a implementação de um projeto de horta escolar e responda às questões.",
+      "en": "Leia o artigo crítico sobre a implementação de um projeto de horta escolar e responda às questões."
+    },
+    "mission": {
+      "es": "Analise as entrelinhas do discurso institucional e os conflitos sociais subjacentes à iniciativa pedagógica da escola.",
+      "en": "Analise as entrelinhas do discurso institucional e os conflitos sociais subjacentes à iniciativa pedagógica da escola."
+    },
+    "targetText": "A proposta da diretora Helena para a implantação da chamada “Horta Viva e Inclusiva” no Colégio Albert Sabin foi recebida pela comunidade escolar com um entusiasmo quase unânime. Em seu discurso inaugural, proferido durante a assembleia de pais e mestres no auditório principal, Helena enfatizou que o projeto arquitetônico e pedagógico fora meticulosamente desenhado para apagar as fronteiras invisíveis entre as diferentes classes sociais que compõem o corpo discente. Os canteiros elevados, acessíveis a cadeirantes, e as placas informativas em braile foram apresentados como a prova cabal de um compromisso institucional com a equidade. No entanto, por trás da fachada polida de modernidade verde e da retórica acolhedora, repousava uma premissa estruturalmente falha: o projeto partia do princípio tácito de que todas as famílias dispunham de excedente temporal para dedicar aos mutirões de manutenção aos fins de semana.\n\nO primeiro sinal de atrito manifestou-se silenciosamente nas reuniões de planejamento voluntário, nas quais a presença de pais com jornadas de trabalho precarizadas e horários inflexíveis era notavelmente escassa. Enquanto Helena celebrava efusivamente a adesão dos profissionais liberais e funcionários públicos com horários comerciais previsíveis — que prontamente assumiram a coordenação dos subcomitês de compostagem e irrigação —, mães e pais submetidos a turnos duplos e ao transporte público caótico viam-se fisicamente incapacitados de marcar presença. Longe de ser um espaço neutro de integração, a horta começou a reproduzir milimetricamente as assimetrias de tempo livre que já fragmentavam a sociedade externa. A suposição de que a vontade de participar bastava para garantir a inclusão ignorou o fato de que a disponibilidade temporal constitui um privilégio de classe tão restrito quanto o capital financeiro.\n\nO ponto de ruptura ocorreu quando o conselho escolar deliberou sobre a aplicação de uma taxa opcional para cobrir os custos de insumos não doados, seguida pela imposição de advertências veladas aos estudantes cujos responsáveis acumulavam mais de três faltas consecutivas nos mutirões mensais. Foi nesse momento que o fosso entre o discurso da diretoria e a realidade empírica das famílias periféricas tornou-se intransponível. Cláudia, mãe de um bolsista do nono ano e trabalhadora do setor hoteleiro com revezamento noturno, redigiu uma carta aberta contundente. No documento, ela argumentava que a suposta igualdade de oportunidades da horta mascarava uma exigência de prestação de contas que penalizava justamente aqueles que precisavam de suporte socioeconômico, transformando uma atividade pedagógica em um tribunal moral de engajamento familiar.\n\nA diretoria reagiu à manifestação pública de Cláudia não com autocrítica, mas com consternação defensiva, alegando em comunicado oficial que a carta distorcia os nobres propósitos da instituição e feria o espírito comunitário. Helena insistiu, nos corredores da escola, que a flexibilidade era ampla e que faltava aos críticos uma genuína vontade de colaboração cívica, transferindo o ônus da exclusão para as próprias vítimas da estrutura excludente. A polarização instalou-se de maneira indelével: de um lado, os defensores da horta, que viam nos tomates orgânicos e nas ervas medicinais a materialização de uma pedagogia progressista; de outro, as famílias marginalizadas pela dinâmica de participação obrigatória, que enxergavam no mesmo espaço um mecanismo sutil de vigilância e exclusão social.\n\nO desfecho do conflito materializou-se no final do semestre letivo, quando a horta foi formalmente premiada por uma fundação ambiental externa, enquanto, nos bastidores, o conselho deliberativo aprovava, em caráter irrevogável, a desvinculação da frequência obrigatória dos critérios de avaliação, após um boicote silencioso que esvaziou os três últimos mutirões programados. A instituição celebrou o troféu de sustentabilidade com destaque na imprensa local, ao passo que as famílias distantes do perfil idealizado pela diretoria permaneceram céticas quanto à real capacidade da escola de enxergar suas urgências cotidianas. A horta continuou a vicejar viçosa e verde nos fundos do terreno escolar, mas o pacto social que deveria sustentá-la permaneceu irremediavelmente estéril.\n\nEssa desconexão institucional evidenciou uma tendência recorrente em projetos pedagógicos contemporâneos, que frequentemente priorizam a estética da inovação em detrimento de uma escuta ativa das bases sociais. Ao celebrar a viçosa vegetação dos canteiros sem reconhecer as fraturas expostas pelo próprio modelo de gestão, a direção do Colégio Albert Sabin reforçou uma lógica meritocrática disfarçada de sensibilidade ecológica. A premiação externa serviu menos como validação comunitária e mais como um biombo institucional, ocultando a incapacidade de lidar com as complexidades materiais do alunado. Desse modo, o episódio transformou-se em um estudo emblemático sobre como iniciativas bem-intencionadas, quando desprovidas de uma análise interseccional genuína, terminam por institucionalizar o abismo entre o mérito propagandeado e a realidade intransponível dos marginalizados.",
+    "wordCount": 741,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tácito",
+        "lemma": "tácito",
+        "glosses": {
+          "es": "implicit",
+          "en": "implicit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "precarizadas",
+        "lemma": "precarizadas",
+        "glosses": {
+          "es": "made precarious or unstable",
+          "en": "made precarious or unstable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assimetrias",
+        "lemma": "assimetrias",
+        "glosses": {
+          "es": "asymmetries",
+          "en": "asymmetries"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contundente",
+        "lemma": "contundente",
+        "glosses": {
+          "es": "blunt, forceful, or punchy",
+          "en": "blunt, forceful, or punchy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "consternação",
+        "lemma": "consternação",
+        "glosses": {
+          "es": "consternation or dismay",
+          "en": "consternation or dismay"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irremediavelmente",
+        "lemma": "irremediavelmente",
+        "glosses": {
+          "es": "irremediably",
+          "en": "irremediably"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 33.7,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no artigo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A contradição entre o discurso inclusivo de um projeto de horta escolar e a realidade excludente de sua exigência de tempo livre."
+        },
+        {
+          "id": "a2",
+          "text": "A incapacidade de uma diretora escolar de administrar recursos financeiros destinados à jardinagem."
+        },
+        {
+          "id": "a3",
+          "text": "O sucesso absoluto de uma horta comunitária na integração de todas as classes sociais de uma escola."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A proposta da diretora Helena para a implantação da chamada “Horta Viva e Inclusiva” no Colégio Albert Sabin foi recebida pela comunidade escolar com um entusiasmo quase unânime.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que motivou a redação da carta aberta escrita por Cláudia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O corte verba destinado à compra de ferramentas e sementes para a manutenção dos canteiros elevados."
+        },
+        {
+          "id": "a2",
+          "text": "A decisão do conselho de aplicar uma taxa opcional e impor advertências veladas aos alunos cujos responsáveis faltavam aos mutirões."
+        },
+        {
+          "id": "a3",
+          "text": "A proibição explícita de que estudantes bolsistas participassem das atividades de compostagem e irrigação."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O ponto de ruptura ocorreu quando o conselho escolar deliberou sobre a aplicação de uma taxa opcional para cobrir os custos de insumos não doados, seguida pela imposição de advertências veladas aos estudantes cujos responsáveis acumulavam mais de três faltas consecutivas nos mutirões mensais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a dinâmica de participação na horta revela sobre a estrutura social da comunidade escolar?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que a disponibilidade de tempo livre é distribuída de forma equânime entre todas as famílias."
+        },
+        {
+          "id": "a2",
+          "text": "Que o engajamento cívico depende exclusivamente do interesse individual, desconsiderando fatores econômicos."
+        },
+        {
+          "id": "a3",
+          "text": "Que a exigência de dedicação temporal atua como um mecanismo sutil de exclusão para quem possui jornadas exaustivas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A suposição de que a vontade de participar bastava para garantir a inclusão ignorou o fato de que a disponibilidade temporal constitui um privilégio de classe tão restrito quanto o capital financeiro.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Com que objetivo principal o autor descreve a premiação externa da horta no final do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar o abismo entre o reconhecimento institucional formal e o fracasso do pacto social interno."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que a fundação ambiental possuía informações falsas sobre a gestão pedagógica da escola."
+        },
+        {
+          "id": "a3",
+          "text": "Comprovar que o boicote das famílias periféricas não teve nenhum impacto na reputação do colégio."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O desfecho do conflito materializou-se no final do semestre letivo, quando a horta foi formalmente premiada por uma fundação ambiental externa, enquanto, nos bastidores, o conselho deliberativo aprovava, em caráter irrevogável, a desvinculação da frequência obrigatória dos critérios de avaliação",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser caracterizado o tom do autor em relação à postura da diretoria diante das críticas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutro e estritamente informativo."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e irônico frente à defensividade institucional."
+        },
+        {
+          "id": "a3",
+          "text": "Elogioso e apologético da liderança."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A diretoria reagiu à manifestação pública de Cláudia não com autocrítica, mas com consternação defensiva, alegando em comunicado oficial que a carta distorcia os nobres propósitos da instituição",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra \"tácito\"?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Imposto por força de lei e amplamente debatido em assembleias abertas."
+        },
+        {
+          "id": "a2",
+          "text": "Temporário e sujeito a revisões periódicas por parte do conselho."
+        },
+        {
+          "id": "a3",
+          "text": "Subentendido ou implícito, sem ter sido explicitamente formulado."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "o projeto partia do princípio tácito de que todas as famílias dispunham de excedente temporal para dedicar aos mutirões de manutenção aos fins de semana.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de 250 a 300 palavras discutindo de que maneira iniciativas educacionais bem-intencionadas podem, inadvertidamente, reproduzir desigualdades estruturais ao ignorar as limitações materiais e temporais das famílias de baixa renda.",
+      "en": "Escreva um texto argumentativo de 250 a 300 palavras discutindo de que maneira iniciativas educacionais bem-intencionadas podem, inadvertidamente, reproduzir desigualdades estruturais ao ignorar as limitações materiais e temporais das famílias de baixa renda."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise as entrelinhas do discurso institucional e os conflitos sociais subjacentes à iniciativa pedagógica da escola.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão dos canteiros coletivos | C1 Reading | WeLearn",
+      "en": "A Ilusão dos canteiros coletivos | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia o artigo crítico sobre a implementação de um projeto de horta escolar e responda às questões.",
+      "en": "Leia o artigo crítico sobre a implementação de um projeto de horta escolar e responda às questões."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

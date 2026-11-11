@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-open-schedule",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Flexibilidade",
+      "en": "A Ilusão da Flexibilidade"
+    },
+    "intro": {
+      "es": "Leia a troca de mensagens entre duas coordenadoras pedagógicas e responda às questões de compreensão e análise crítica.",
+      "en": "Leia a troca de mensagens entre duas coordenadoras pedagógicas e responda às questões de compreensão e análise crítica."
+    },
+    "mission": {
+      "es": "Analise como a reestruturação do horário escolar impacta diferentes setores da comunidade acadêmica, identificando tensões implícitas e consequências práticas na rotina institucional.",
+      "en": "Analise como a reestruturação do horário escolar impacta diferentes setores da comunidade acadêmica, identificando tensões implícitas e consequências práticas na rotina institucional."
+    },
+    "targetText": "De: Beatriz Siqueira <b.siqueira@colegioalvorada.edu.br>\nPara: Mariana Guedes <m.guedes@colegioalvorada.edu.br>\nData: Ontem, 21:15\nAssunto: Reflexões sobre o novo formato de jornada modular\n\nCara Mariana,\n\nEscrevo ainda sob o impacto da reunião de ontem à noite com os representantes do grêmio estudantil e alguns pais do Ensino Médio. Sei que defendemos a implantação do horário flexível como uma conquista pedagógica alinhada às diretrizes contemporâneas de autonomia juvenil, e reconheço o esforço monumental que você empreendeu para redesenhar a matriz curricular. Contudo, os desdobramentos práticos dessa medida começam a desenhar um cenário bastante complexo que escapa à nossa previsibilidade inicial. O que parecia ser uma solução elegante para contemplar itinerários formativos personalizados acabou por gerar um vácuo estrutural severo na rotina de convivência escolar, cujos efeitos colaterais recaem pesadamente sobre a equipe de docentes e, paradoxalmente, sobre os próprios alunos que pretendíamos beneficiar.\n\nO cerne do problema reside na assimetria de adesão ao modelo. Enquanto os estudantes do último ano, dotados de maior maturidade e foco nos vestibulares, aproveitaram as janelas horárias para otimizar seus estudos autônomos e participarem de mentorias avançadas, o restante do corpo discente tem lidado com o tempo livre de maneira profundamente errática. Sem a supervisão contínua das antigas aulas-bloco, corredores e espaços de convivência transformaram-se em zonas de dispersão improdutiva, alimentando um clima de ociosidade que corrói o rigor acadêmico que tanto prezamos. Os professores, por sua vez, encontram-se em uma corda bamba pedagógica: preparam aulas compactadas para turmas fragmentadas, mas acabam por repetir conteúdos básicos para alunos que perderam a linha de raciocínio nas interjornadas, comprometendo o avanço programático previsto para o trimestre.\n\nO que mais me estarrece, contudo, é a percepção equivocada de que nossa flexibilidade institucional possa ser aplicada sem fricções administrativas. Durante o encontro, ficou evidente que a promessa de personalização mascarou uma transferência de responsabilidade pedagógica para o âmbito doméstico, gerando atritos severos com famílias cujas dinâmicas laborais não comportam a inconstância da nova jornada. Pais que dependiam da custódia escolar estendida agora se veem compelidos a reajustar horários de trabalho de última hora, pois as saídas antecipadas — antes vistas como exceções toleráveis — tornaram-se a norma estrutural do cotidiano. A suposta liberdade de escolha pedagógica colidiu frontalmente com a rigidez contratual do mercado de trabalho contemporâneo, evidenciando um abismo entre o planejamento idealizado em nosso gabinete e a realidade socioeconômica das famílias que atendemos.\n\nPara agravar o quadro, a gestão do espaço físico tornou-se um quebra-cabeça diário para a secretaria. Salas de aula outrora ocupadas de forma homogênea agora oscilam entre a superlotação nos módulos centrais e o vazio quase absoluto nos horários periféricos, desorganizando a escala de limpeza e a alocação de recursos tecnológicos. Se por um lado a flexibilidade atende aos anseios de modernidade exigidos pelos órgãos reguladores, por outro dissolve o senso de comunidade que mantinha a coesão institucional. Não podemos mais ignorar que a autonomia concedida a um grupo específico gerou, por tabela, uma vulnerabilidade sistêmica para os demais segmentos da escola, transformando nossa inovação pedagógica em fonte permanente de incerteza operacional.\n\nDiante desse panorama, pergunto-me se não deveríamos instituir mecanismos de contenção antes que o desgaste atinja um ponto de inflexão irreversível. Talvez seja o caso de reavaliarmos a obrigatoriedade da presença integral apenas para os ciclos iniciais, ou criarmos trilhas obrigatórias de permanência no campus para mitigar os efeitos da dispersão juvenil. Aguardo seus comentários na reunião de amanhã cedo, pois precisamos apresentar uma postura unificada à diretoria antes que a insatisfação transborde para instâncias formais de reclamação.\n\nAtenciosamente,\nBeatriz\n\nA urgência dessa deliberação ganha contornos ainda mais dramáticos quando consideramos o impacto financeiro e institucional de longo prazo que essa evasão velada dos espaços escolares pode acarretar para a nossa reputação no mercado educacional regional. Caso a diretoria decida manter o formato vigente sem ajustes drásticos, arriscamos não apenas a perda de matrículas de famílias tradicionais que priorizam a previsibilidade, mas também a desmoralização gradual do nosso projeto pedagógico perante a comunidade. A transição para a modernidade não pode atropelar a nossa responsabilidade civil de garantir um ambiente seguro e equânime para todos os matriculados, independentemente de sua autonomia pessoal. Por isso, considero imprescindível propormos amanhã uma moratória parcial do sistema, condicionando o usufruto das janelas a critérios rigorosos de desempenho e frequência comprovada. Só assim conseguiremos resgatar a credibilidade institucional que construímos ao longo de décadas, salvando nossa proposta inovadora do colapso operacional.",
+    "wordCount": 729,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "itinerários formativos",
+        "lemma": "itinerários formativos",
+        "glosses": {
+          "es": "educational pathways",
+          "en": "educational pathways"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assimetria de adesão",
+        "lemma": "assimetria de adesão",
+        "glosses": {
+          "es": "asymmetry of adherence",
+          "en": "asymmetry of adherence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "corda bamba",
+        "lemma": "corda bamba",
+        "glosses": {
+          "es": "tightrope",
+          "en": "tightrope"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "instância",
+        "lemma": "instância",
+        "glosses": {
+          "es": "authority level / instance",
+          "en": "authority level / instance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ponto de inflexão",
+        "lemma": "ponto de inflexão",
+        "glosses": {
+          "es": "turning point",
+          "en": "turning point"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ociosidade",
+        "lemma": "ociosidade",
+        "glosses": {
+          "es": "idleness",
+          "en": "idleness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.3,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a principal mensagem transmitida por Beatriz na mensagem?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A flexibilidade horária gerou problemas práticos imprevistos que afetam a rotina e as famílias."
+        },
+        {
+          "id": "a2",
+          "text": "O novo modelo curricular foi um sucesso absoluto entre os alunos e os professores."
+        },
+        {
+          "id": "a3",
+          "text": "A escola deve eliminar imediatamente todas as aulas presenciais e adotar o ensino remoto."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Contudo, os desdobramentos práticos dessa medida começam a desenhar um cenário bastante complexo que escapa à nossa previsibilidade inicial.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Como os alunos do último ano reagiram à flexibilidade dos horários?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eles abandonaram as aulas em massa para trabalhar em turnos integrais."
+        },
+        {
+          "id": "a2",
+          "text": "Eles aproveitaram as janelas para otimizar estudos e participar de mentorias."
+        },
+        {
+          "id": "a3",
+          "text": "Eles reclamaram da falta de atividades extracurriculares no período noturno."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Enquanto os estudantes do último ano, dotados de maior maturidade e foco nos vestibulares, aproveitaram as janelas horárias para otimizar seus estudos autônomos e participarem de mentorias avançadas,",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode inferir sobre o impacto da flexibilidade nas famílias dos estudantes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elas conseguiram alinhar facilmente suas rotinas profissionais com as novas saídas dos filhos."
+        },
+        {
+          "id": "a2",
+          "text": "Elas perceberam que a escola assumiu integralmente a responsabilidade pela educação."
+        },
+        {
+          "id": "a3",
+          "text": "Elas enfrentam dificuldades porque suas rotinas de trabalho não comportam a inconstância do horário."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "gerando atritos severos com famílias cujas dinâmicas laborais não comportam a inconstância da nova jornada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo principal de Beatriz ao escrever para Mariana?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Propor uma reflexão crítica e ajustes urgentes no modelo flexível antes da reunião com a diretoria."
+        },
+        {
+          "id": "a2",
+          "text": "Pedir a demissão dos professores que não conseguiram se adaptar ao novo formato curricular."
+        },
+        {
+          "id": "a3",
+          "text": "Parabenizar a colega pelo sucesso estrondoso da reforma pedagógica na instituição."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Aguardo seus comentários na reunião de amanhã cedo, pois precisamos apresentar uma postura unificada à diretoria antes que a insatisfação transborde para instâncias formais de reclamação.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na comunicação de Beatriz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Festivo, irônico e descontraído em relação aos problemas enfrentados."
+        },
+        {
+          "id": "a2",
+          "text": "Cauteloso, preocupado e analítico diante das complicações institucionais."
+        },
+        {
+          "id": "a3",
+          "text": "Agressivo, autoritário e intransigente com os professores e alunos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Escrevo ainda sob o impacto da reunião de ontem à noite com os representantes do grêmio estudantil e alguns pais do Ensino Médio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "De acordo com o texto, o que o termo 'ociosidade' representa no contexto escolar?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A dedicação excessiva aos estudos acadêmicos e preparação para exames."
+        },
+        {
+          "id": "a2",
+          "text": "O tempo de descanso produtivo planejado pela coordenação pedagógica."
+        },
+        {
+          "id": "a3",
+          "text": "A dispersão improdutiva gerada pelo tempo livre sem supervisão contínua."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "corredores e espaços de convivência transformaram-se em zonas de dispersão improdutiva, alimentando um clima de ociosidade que corrói o rigor acadêmico que tanto prezamos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um e-mail formal de resposta (cerca de 250 palavras) sob o ponto de vista de Mariana Guedes, ponderando os benefícios pedagógicos já alcançados com propostas concretas para mitigar os problemas operacionais apontados por Beatriz.",
+      "en": "Escreva um e-mail formal de resposta (cerca de 250 palavras) sob o ponto de vista de Mariana Guedes, ponderando os benefícios pedagógicos já alcançados com propostas concretas para mitigar os problemas operacionais apontados por Beatriz."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise como a reestruturação do horário escolar impacta diferentes setores da comunidade acadêmica, identificando tensões implícitas e consequências práticas na rotina institucional.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Flexibilidade | C1 Reading | WeLearn",
+      "en": "A Ilusão da Flexibilidade | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia a troca de mensagens entre duas coordenadoras pedagógicas e responda às questões de compreensão e análise crítica.",
+      "en": "Leia a troca de mensagens entre duas coordenadoras pedagógicas e responda às questões de compreensão e análise crítica."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

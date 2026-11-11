@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-local-stage",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Os Bastidores da Prestação de Contas: O Teatro Comunitário e a Ilusão da Metrificação",
+      "en": "Os Bastidores da Prestação de Contas: O Teatro Comunitário e a Ilusão da Metrificação"
+    },
+    "intro": {
+      "es": "Um relatório de financiamento cultural gera um conflito ético e administrativo quando o número de ingressos vendidos mascara o impacto social real de um projeto de teatro comunitário.",
+      "en": "Um relatório de financiamento cultural gera um conflito ético e administrativo quando o número de ingressos vendidos mascara o impacto social real de um projeto de teatro comunitário."
+    },
+    "mission": {
+      "es": "Analise criticamente o texto jornalístico para compreender as tensões entre a burocracia cultural e a eficácia comunitária, respondendo às questões de compreensão e interpretando o vocabulário avançado.",
+      "en": "Analise criticamente o texto jornalístico para compreender as tensões entre a burocracia cultural e a eficácia comunitária, respondendo às questões de compreensão e interpretando o vocabulário avançado."
+    },
+    "targetText": "A recente publicação do balanço financeiro do projeto «Palco Aberto» pela Secretaria de Cultura revelou uma desconexão alarmante entre os indicadores quantitativos exigidos pelos editais públicos e a realidade transformadora das oficinas de teatro comunitário na periferia da capital. Coordenado pela dramaturga Helena Silveira e pelo arte-educador Mário Ribeiro, o programa foi inicialmente concebido para descentralizar o acesso às artes cênicas e fomentar a coesão social em uma região marcada por vulnerabilidades estruturais. No entanto, o relatório oficial de encerramento do ciclo anual centrou quase toda a sua narrativa de sucesso na superlotação do auditório principal durante a temporada de encerramento, relegando a uma nota de rodapé o trabalho contínuo de formação humana desenvolvido ao longo de meses com dezenas de moradores que jamais pisaram em um palco. Esta discrepância metodológica gerou um intenso debate entre os gestores públicos e os agentes culturais da base, evidenciando o abismo intransponível entre a ânsia tecnocrática por resultados imediatos e a complexidade inerente ao fazer artístico participativo. Para a burocracia estatal, a eficácia de um investimento cultural resume-se a planilhas de bilheteria e taxas de ocupação de assentos, métricas que, embora tangíveis, falham miseravelmente em capturar a reconfiguração das subjetividades e a construção de redes de apoio mútuo engendradas nos ensaios semanais.\n\nDurante a defesa formal do relatório perante o conselho deliberativo, Helena Silveira confrontou diretamente os auditores ao apontar a falácia de medir o valor da arte comunitária estritamente pelo aplauso efêmero do público pagante. Segundo a diretora, o verdadeiro impacto do «Palco Aberto» ocorreu nas dinâmicas de escuta e acolhimento promovidas nas oficinas preparatórias, espaços onde jovens e idosos encontraram refúgio contra o isolamento social e desenvolveram ferramentas expressivas para narrar suas próprias trajetórias. Mário Ribeiro, por sua vez, detalhou o caso emblemático de um grupo de quarenta participantes que abandonaram o processo de montagem final devido a conflitos laborais e domésticos, mas cuja permanência nas etapas preliminares redefiniu suas relações familiares e comunitárias. Para a contabilidade do Estado, esses indivíduos figuram meramente como evasão ou desperdício de recursos públicos; para o cotidiano do bairro, representam a consolidação de um tecido social mais resiliente, cujos frutos intangíveis jamais caberão em gráficos de desempenho.\n\nA retórica adotada pelos avaliadores governamentais baseou-se na premissa de que a transparência fiscal exige indicadores padronizados e comparáveis, argumentando que a ausência de um produto final escalável compromete a justificativa para futuros aportes financeiros. Os gestores alegaram, com certa razão do ponto de vista estritamente legal, que a liberação de verbas públicas requer comprovações auditáveis e que a intangibilidade do desenvolvimento humano não constitui, por si só, um comprovante fiscal aceitável para os órgãos de controle. Contudo, essa defesa tecnocrática ignora deliberadamente a natureza preventiva e terapêutica da intervenção artística, tratando a comunidade como mera consumidora passiva de espetáculos em vez de coautora de um processo de emancipação. A exigência de espetacularização, portanto, atua como um mecanismo de domesticação da cultura, forçando projetos comunitários a adotarem a lógica mercantilista dos grandes centros em detrimento de suas vocações originárias.\n\nO clímax institucional ocorreu quando o conselho deliberativo ameaçou reter a última parcela do repasse financeiro, condicionando-a à reescrita do relatório para priorizar os dados de bilheteria e o alcance de público ostensivo. Diante do ultimato, Helena e Mário recusaram-se a falsificar a prioridade pedagógica do projeto, redigindo um documento anexo que desconstroem as métricas tradicionais e expõem a violência simbólica de apagar o esforço daqueles que construíram o projeto nos bastidores sem a recompensa da visibilidade pública. Essa recusa heroica, contudo, colocou em risco a continuidade das oficinas para o próximo semestre, deixando a equipe e os moradores em um limbo financeiro e emocional. A tensão entre a prestação de contas burocrática e a integridade metodológica revelou-se, assim, um impasse insolúvel que transcende o caso específico do «Palco Aberto», questionando o próprio sentido das políticas públicas de cultura em um modelo de Estado que mercantiliza até mesmo a solidariedade.\n\nO desfecho desse embate permanece em aberto, mas suas ramificações já transformaram o cenário do ativismo cultural na região, inspirando outras coletâneas a repensarem suas estratégias de resistência diante da sanha métrica do poder público. Enquanto a Secretaria de Cultura avalia punições administrativas pelo descumprimento dos formatos exigidos, os moradores do bairro organizam assembleias autônomas para garantir a manutenção das oficinas por meio de cotas solidárias e doações locais. A vitória simbólica de Helena e Mário ao defenderem os invisíveis do palco consolidou um precedente ético importante, embora o custo material dessa tomada de posição ameace a sobrevivência física do projeto. Resta saber se as instituições conseguirão evoluir para contemplar a complexidade humana ou se continuarão a financiar apenas aquilo que cabe confortavelmente em uma poltrona numerada.",
+    "wordCount": 778,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "desconexão",
+        "lemma": "desconexão",
+        "glosses": {
+          "es": "disconnection",
+          "en": "disconnection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "relegando",
+        "lemma": "relegando",
+        "glosses": {
+          "es": "relegating",
+          "en": "relegating"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intransponível",
+        "lemma": "intransponível",
+        "glosses": {
+          "es": "insurmountable",
+          "en": "insurmountable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "engendradas",
+        "lemma": "engendradas",
+        "glosses": {
+          "es": "engendered",
+          "en": "engendered"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "efêmero",
+        "lemma": "efêmero",
+        "glosses": {
+          "es": "ephemeral",
+          "en": "ephemeral"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ultimato",
+        "lemma": "ultimato",
+        "glosses": {
+          "es": "ultimatum",
+          "en": "ultimatum"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 37,
+      "maxSentenceWords": 55,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central abordado no texto sobre o projeto de teatro comunitário?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O choque entre exigências burocráticas quantitativas e o valor social intangível do trabalho de bastidor."
+        },
+        {
+          "id": "a2",
+          "text": "A briga judicial entre diretores e atores sobre o pagamento de cachês durante as exibições públicas."
+        },
+        {
+          "id": "a3",
+          "text": "A falta de interesse dos moradores da periferia pelas artes cênicas promovidas pela Secretaria de Cultura."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Esta discrepância metodológica gerou um intenso debate entre os gestores públicos e os agentes culturais da base, evidenciando o abismo intransponível entre a ânsia tecnocrática por resultados imediatos e a complexidade inerente ao fazer artístico participativo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que aconteceu com um grupo de quarenta participantes durante o processo do projeto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eles recusaram-se a participar das oficinas iniciais e exigiram entrar diretamente na peça principal."
+        },
+        {
+          "id": "a2",
+          "text": "Eles abandonaram a montagem final por conflitos, mas suas participações prévias transformaram suas relações."
+        },
+        {
+          "id": "a3",
+          "text": "Eles foram expulsos pela direção devido ao baixo desempenho técnico demonstrado nos ensaios."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Mário Ribeiro, por sua vez, detalhou o caso emblemático de um grupo de quarenta participantes que abandonaram o processo de montagem final devido a conflitos laborais e domésticos, mas cuja permanência nas etapas preliminares redefiniu suas relações familiares e comunitárias.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a exigência de espetacularização por parte do Estado sugere sobre a visão oficial da cultura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que o governo prioriza o desenvolvimento emocional individual em detrimento do entretenimento de massa."
+        },
+        {
+          "id": "a2",
+          "text": "Que as secretarias de cultura possuem verbas ilimitadas para financiar apresentações teatrais em auditórios."
+        },
+        {
+          "id": "a3",
+          "text": "Que a cultura é tratada sob uma lógica mercantilista e consumista, exigindo produtos visíveis e escaláveis."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A exigência de espetacularização, portanto, atua como um mecanismo de domesticação da cultura, forçando projetos comunitários a adotarem a lógica mercantilista dos grandes centros em detrimento de suas vocações originárias.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal objetivo da inclusão do posicionamento dos avaliadores governamentais no terceiro parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar a rigidez legal e a justificativa fiscal da burocracia estatal para contrapor a visão artística."
+        },
+        {
+          "id": "a2",
+          "text": "Comprovar que os gestores públicos agiram de má-fé para desviar verbas destinadas à comunidade local."
+        },
+        {
+          "id": "a3",
+          "text": "Invalidar completamente a importância da prestação de contas fiscal em qualquer projeto de incentivo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Os gestores alegaram, com certa razão do ponto de vista estritamente legal, que a liberação de verbas públicas requer comprovações auditáveis e que a intangibilidade do desenvolvimento humano não constitui, por si só, um comprovante fiscal aceitável para os órgãos de controle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom do autor pode ser caracterizado em relação à relação entre burocracia e impacto social?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Completamente neutro e indiferente aos dilemas enfrentados pelos gestores e coordenadores."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo diante da incapacidade das métricas oficiais de capturarem a essência comunitária."
+        },
+        {
+          "id": "a3",
+          "text": "Otimista e celebratório em relação à eficácia dos relatórios financeiros governamentais."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A tensão entre a prestação de contas burocrática e a integridade metodológica revelou-se, assim, um impasse insolúvel que transcende o caso específico do «Palco Aberto», questionando o próprio sentido das políticas públicas de cultura em um modelo de Estado que mercantiliza até mesmo a solidariedade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do primeiro parágrafo, o que significa a palavra \"desconexão\"?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A ruptura na rede elétrica do auditório durante a temporada de encerramento das apresentações teatrais."
+        },
+        {
+          "id": "a2",
+          "text": "O distanciamento físico entre a sede da Secretaria de Cultura e o bairro periférico onde ocorriam as oficinas."
+        },
+        {
+          "id": "a3",
+          "text": "A falta de sintonia ou harmonia entre as exigências numéricas do edital e a realidade social do projeto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A recente publicação do balanço financeiro do projeto «Palco Aberto» pela Secretaria de Cultura revelou uma desconexão alarmante entre os indicadores quantitativos exigidos pelos editais públicos e a realidade transformadora das oficinas de teatro comunitário na periferia da capital.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se as métricas financeiras tradicionais são compatíveis com a avaliação de impacto em projetos sociais e culturais.",
+      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se as métricas financeiras tradicionais são compatíveis com a avaliação de impacto em projetos sociais e culturais."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise criticamente o texto jornalístico para compreender as tensões entre a burocracia cultural e a eficácia comunitária, respondendo às questões de compreensão e interpretando o vocabulário avançado.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Os Bastidores da Prestação de Contas: O Teatro Comunitário e a Ilusão da Metrificação | C1 Reading | WeLearn",
+      "en": "Os Bastidores da Prestação de Contas: O Teatro Comunitário e a Ilusão da Metrificação | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um relatório de financiamento cultural gera um conflito ético e administrativo quando o número de ingressos vendidos mascara o impacto social real de um projeto de teatro comunitário.",
+      "en": "Um relatório de financiamento cultural gera um conflito ético e administrativo quando o número de ingressos vendidos mascara o impacto social real de um projeto de teatro comunitário."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

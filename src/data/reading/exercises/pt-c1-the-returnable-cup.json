@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Sustentabilidade Urbana: O Custo Oculto da Transição em Copos",
+      "en": "A Ilusão da Sustentabilidade Urbana: O Custo Oculto da Transição em Copos"
+    },
+    "intro": {
+      "es": "Leia o artigo crítico sobre a transição para copos reutilizáveis em eventos corporativos e analise os conflitos implícitos na contabilidade ambiental.",
+      "en": "Leia o artigo crítico sobre a transição para copos reutilizáveis em eventos corporativos e analise os conflitos implícitos na contabilidade ambiental."
+    },
+    "mission": {
+      "es": "Analise a complexidade das métricas ambientais modernas, compreenda as contradições entre a redução de resíduos sólidos e o consumo hídrico, e responda às questões de interpretação crítica.",
+      "en": "Analise a complexidade das métricas ambientais modernas, compreenda as contradições entre a redução de resíduos sólidos e o consumo hídrico, e responda às questões de interpretação crítica."
+    },
+    "targetText": "A gestão de resíduos da Fundação Aurora parecia ter encontrado seu marco histórico na última sexta-feira, quando a diretora de operações, Marina Bastos, apresentou o balanço trimestral do programa \"Café Consciente\". O relatório apontava para a eliminação quase total de descartáveis plásticos na sede principal, substituídos por uma frota de duas mil canecas de polipropileno personalizadas distribuídas a funcionários e parceiros frequentes. Durante a cerimônia matinal de comemoração, Marina destacou com entusiasmo que a iniciativa poupou o aterro sanitário de receber cerca de dezoito mil unidades em apenas noventa dias, consolidando a imagem da instituição como vanguarda da responsabilidade ecológica no setor de consultoria. Contudo, o clima de celebração começou a se dissipar quando o coordenador de infraestrutura, Roberto Candeias, revisou a fundo a planilha de despesas operacionais e de recursos hídricos associada ao projeto.\n\nA euforia inicial em torno da diminuição do volume de lixo urbano ignorava uma cadeia logística complexa e energeticamente custosa que sustentava a suposta vitória ambiental. Para manter a higiene das canecas e evitar o acúmulo de resíduos nas mesas de trabalho, a fundação contratou um serviço terceirizado de higienização industrial, cujas máquinas operavam diariamente em ciclo pesado com água aquecida e detergentes enzimáticos concentrados. Os cálculos preliminares de Roberto revelaram um incremento de trezentos por cento no consumo de água da unidade em comparação ao mesmo período do ano anterior, além de um aumento exponencial no uso de energia elétrica para a operação contínua das lavadoras. Em termos de pegada hídrica, cada caneca precisava ser reutilizada dezenas de vezes para compensar o gasto hídrico e térmico de sua própria lavagem, um dado conveniente omitido do sumário executivo apresentado por Marina.\n\nO conflito técnico logo escalou para um impasse institucional quando a equipe de contabilidade financeira cruzou os dados de consumo com a taxa de extravio dos recipientes. A despeito do apelo estético e do valor simbólico das canecas, a rotatividade de funcionários e a negligência cotidiana resultaram no sumiço de quinhentas unidades no primeiro trimestre, exigindo uma reposição urgente encomendada diretamente de um fornecedor localizado em outro estado. Essa nova remessa, transportada por caminhões a diesel ao longo de trezentos quilômetros de rodovias congestionadas, gerou emissões de gases de efeito estufa que desafiavam o propósito climático do programa original. A diretoria se viu diante de um paradoxo desconfortável: o esforço visível para mitigar um problema local gerou impactos invisíveis, porém severos, dispersos em outras etapas da cadeia produtiva e de transporte.\n\nAs divergências conceituais entre a equipe de Marina e o setor de Roberto evidenciaram a fragilidade de métricas focadas em um único indicador de sustentabilidade. Enquanto a diretoria operava sob uma lógica linear de contagem de lixo evitado, a auditoria interna exigia uma avaliação de ciclo de vida completo que pesasse o custo da matéria-prima, o transporte intermunicipal de reposição e o gasto intensivo de água potável. O debate revelou que a transição ecológica corporativa muitas vezes funciona como um exercício de deslocamento de danos, onde o resíduo sólido que incomoda os olhos do cliente é trocado por poluentes dissolvidos na água e emissões atmosféricas distantes dos centros urbanos. A narrativa oficial da fundação, contudo, continuava a priorizar a estética da limpeza pública em detrimento da rigorosa contabilidade ecológica.\n\nNo desfecho do trimestre, a fundação optou por manter o programa publicamente, mas instituiu diretrizes sigilosas para reavaliar a viabilidade econômica e ambiental do uso de polipropileno no próximo ano fiscal. Marina aceitou a necessidade de incluir notas explicativas nos futuros relatórios de sustentabilidade, reconhecendo que a transparência corporativa não pode selecionar apenas as estatísticas que favorecem a reputação institucional. Roberto, por sua vez, concluiu que a verdadeira transição verde exige mais do que a simples substituição de objetos cotidianos; exige o enfrentamento corajoso das externalidades que teimamos em varrer para debaixo do tapete industrial.\n\nA repercussão interna desse impasse gerou um debate acalorado sobre a urgência de repensar os critérios de governança socioambiental em todo o setor. Funcionários de diversos departamentos começaram a questionar se outras campanhas de fachada da instituição escondiam passivos ecológicos semelhantes, alimentando uma cultura de desconfiança em relação às diretrizes da alta cúpula. A pressão por auditorias independentes e públicas passou a ganhar força nos corredores, transformando um simples erro de cálculo logístico em um catalisador para reformas estruturais profundas na cultura organizacional da fundação.",
+    "wordCount": 716,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "descartáveis",
+        "lemma": "descartáveis",
+        "glosses": {
+          "es": "disposable items",
+          "en": "disposable items"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pegada",
+        "lemma": "pegada",
+        "glosses": {
+          "es": "footprint",
+          "en": "footprint"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "extravio",
+        "lemma": "extravio",
+        "glosses": {
+          "es": "loss or misplacement",
+          "en": "loss or misplacement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradoxo",
+        "lemma": "paradoxo",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "externalidades",
+        "lemma": "externalidades",
+        "glosses": {
+          "es": "externalities",
+          "en": "externalities"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sigilosas",
+        "lemma": "sigilosas",
+        "glosses": {
+          "es": "confidential",
+          "en": "confidential"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.5,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto sobre a Fundação Aurora?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A contradição entre a redução aparente de resíduos e o aumento de impactos ambientais ocultos."
+        },
+        {
+          "id": "a2",
+          "text": "A celebração unânime do sucesso ecológico obtido pelo fim do uso de copos plásticos."
+        },
+        {
+          "id": "a3",
+          "text": "A falência financeira decorrente da compra excessiva de canecas para todos os funcionários."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O relatório apontava para a eliminação quase total de descartáveis plásticos na sede principal, substituídos por uma frota de duas mil canecas de polipropileno personalizadas distribuídas a funcionários e parceiros frequentes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que causou o aumento expressivo no consumo de recursos da instituição?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O desperdício de água potável pelos funcionários nas copas durante o expediente."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade de lavar as canecas diariamente em máquinas industriais com água aquecida."
+        },
+        {
+          "id": "a3",
+          "text": "A instalação de novos banheiros para atender ao crescimento do quadro de pessoal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a fundação contratou um serviço terceirizado de higienização industrial, cujas máquinas operavam diariamente em ciclo pesado com água aquecida e detergentes enzimáticos concentrados.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode inferir sobre a reposição das canecas perdidas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elas foram fabricadas localmente por artesãos para incentivar a economia da própria cidade."
+        },
+        {
+          "id": "a2",
+          "text": "A perda de unidades foi insignificante e não afetou o orçamento nem a logística da empresa."
+        },
+        {
+          "id": "a3",
+          "text": "O transporte das novas unidades gerou emissões poluentes que contradiziam o propósito ecológico."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Essa nova remessa, transportada por caminhões a diesel ao longo de trezentos quilômetros de rodovias congestionadas, gerou emissões de gases de efeito estufa que desafiavam o propósito climático do programa original.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal objetivo do autor ao contrastar as visões de Marina e Roberto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar o conflito entre métricas superficiais de marketing e a complexidade real da sustentabilidade."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que a contabilidade financeira é sempre mais importante do que qualquer ideal ecológico."
+        },
+        {
+          "id": "a3",
+          "text": "Defender a demissão dos gestores que falham em calcular o custo exato da água utilizada na limpeza."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "As divergências conceituais entre a equipe de Marina e o setor de Roberto evidenciaram a fragilidade de métricas focadas em um único indicador de sustentabilidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom do texto pode ser caracterizado em relação às inovações verdes corporativas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eufórico e otimista com o futuro inevitável das empresas totalmente sem plástico."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e cético em relação a soluções simplistas que mascaram danos indiretos."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e puramente descritivo diante dos relatórios administrativos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O debate revelou que a transição ecológica corporativa muitas vezes funciona como um exercício de deslocamento de danos, onde o resíduo sólido que incomoda os olhos do cliente é trocado por poluentes dissolvidos na água e emissões atmosféricas distantes dos centros urbanos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa o termo 'externalidades'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Despesas extras com publicidade exterior feitas para promover a imagem da fundação."
+        },
+        {
+          "id": "a2",
+          "text": "Problemas externos causados por manifestações públicas em frente à sede da empresa."
+        },
+        {
+          "id": "a3",
+          "text": "Custos e impactos indiretos que não são contabilizados inicialmente nas decisões principais."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Roberto, por sua vez, concluiu que a verdadeira transição verde exige mais do que a simples substituição de objetos cotidianos; exige o enfrentamento corajoso das externalidades que teimamos em varrer para debaixo do tapete industrial.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto dissertativo argumentativo de 250 a 300 palavras, em português do Brasil, discutindo se as iniciativas de sustentabilidade corporativa muitas vezes priorizam a estética da imagem pública em detrimento de uma verdadeira análise de impacto ambiental. Utilize vocabulário avançado e mantenha um tom formal e analítico.",
+      "en": "Escreva um texto dissertativo argumentativo de 250 a 300 palavras, em português do Brasil, discutindo se as iniciativas de sustentabilidade corporativa muitas vezes priorizam a estética da imagem pública em detrimento de uma verdadeira análise de impacto ambiental. Utilize vocabulário avançado e mantenha um tom formal e analítico."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise a complexidade das métricas ambientais modernas, compreenda as contradições entre a redução de resíduos sólidos e o consumo hídrico, e responda às questões de interpretação crítica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Sustentabilidade Urbana: O Custo Oculto da Transição em Copos | C1 Reading | WeLearn",
+      "en": "A Ilusão da Sustentabilidade Urbana: O Custo Oculto da Transição em Copos | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia o artigo crítico sobre a transição para copos reutilizáveis em eventos corporativos e analise os conflitos implícitos na contabilidade ambiental.",
+      "en": "Leia o artigo crítico sobre a transição para copos reutilizáveis em eventos corporativos e analise os conflitos implícitos na contabilidade ambiental."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

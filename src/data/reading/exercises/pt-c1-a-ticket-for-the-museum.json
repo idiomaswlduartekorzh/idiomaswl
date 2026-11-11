@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Porta Aberta",
+      "en": "A Ilusão da Porta Aberta"
+    },
+    "intro": {
+      "es": "Leia uma resenha crítica sobre a política de gratuidade em uma instituição cultural e analise as tensões entre o discurso institucional e a realidade socioeconômica.",
+      "en": "Leia uma resenha crítica sobre a política de gratuidade em uma instituição cultural e analise as tensões entre o discurso institucional e a realidade socioeconômica."
+    },
+    "mission": {
+      "es": "Leia o texto com atenção à argumentação implícita e resolva os exercícios propostos para demonstrar proficiência leitora em nível avançado.",
+      "en": "Leia o texto com atenção à argumentação implícita e resolva os exercícios propostos para demonstrar proficiência leitora em nível avançado."
+    },
+    "targetText": "O recente anúncio da Pinacoteca de Alvorada proclamando a abolição definitiva de qualquer taxa de entrada foi recebido com efusiva ovação pela imprensa cultural, que prontamente converteu a medida em um marco histórico de democratização estética. O diretor-geral, Clarice Montenegro, declarou com altivez que os portões da instituição agora pertenciam inteiramente ao povo, dissolvendo séculos de exclusão burguesa em um único decreto magnânimo. Contudo, a experiência empírica dos frequentadores habituais e a análise minuciosa das dinâmicas urbanas revelam uma realidade consideravelmente mais complexa do que aquela pintada pelos boletins de relações públicas. A supressão do bilhete de acesso, embora louvável em sua intenção primordial, operou muito mais como um verniz ideológico do que como uma alavanca efetiva de inclusão social, mascarando barreiras estruturais que continuam a operar com implacável eficiência nos bastidores da alta cultura.\n\nPara compreender a falácia dessa suposta acessibilidade universal, basta examinar a rotina de Beatriz Lima, uma mãe solo e auxiliar de enfermagem residente na zona periférica da metrópole. Atraída pelas manchetes triunfantes que prometiam cultura gratuita, Beatriz planejou uma visita matinal para o último sábado com seu filho de sete anos. O primeiro obstáculo emergiu na planilha de custos do transporte público: sem direito a tarifas integradas nos fins de semana, a jornada de ida e volta consumiu uma fatia desproporcional de seu orçamento semanal restrito. A supressão do ingresso, portanto, revelou-se um alívio irrisório frente ao preço real do deslocamento geográfico, transformando o trajeto em um exercício de cálculo financeiro rigoroso. A gratuidade institucional pressupõe, equivocadamente, que os cidadãos já se encontram gravitando ao redor do centro urbano, ignorando a franja periférica de onde a maioria trabalhadora precisa se deslocar.\n\nAs barreiras invisíveis, contudo, não se esgotam no preço da passagem de ônibus. Ao chegar ao majestoso saguão de mármore após quase duas horas de viagem, Beatriz deparou-se com o segundo entrave intransponível: a absoluta ausência de infraestrutura de acolhimento infantil e a proibição implacável de carrinhos de bebê nas salas expositivas. Sem uma rede de apoio familiar e incapaz de arcar com os honorários de uma babá particular em pleno fim de semana, ela se viu compelida a retornar à bilheteria não para retirar um ingresso, mas para formular uma reclamação inútil à coordenação de atendimento. A instituição oferece as paredes e os quadros sem custo, mas terceiriza o ônus da logística familiar, exigindo um tempo livre e uma flexibilidade que apenas as classes privilegiadas possuem em abundância. A ausência de creches integradas ou de soluções para o cuidado infantil revela que o museu continua a ser desenhado à imagem e semelhança da elite que dele sempre usufruiu.\n\nDiante desse impasse kafkiano, a retórica triunfalista da diretoria desmancha-se em contradições patentes. Enquanto Montenegro celebrava o aumento estatístico na contagem de catracas durante os dias úteis, o perfil demográfico dos visitantes permaneceu estagnado, composto majoritariamente por estudantes universitários de bairros centrais e turistas de classe média. A supressão do tributo de entrada beneficiou quem já frequentava o espaço ou quem possui capital cultural e financeiro para absorver os custos colaterais da visitação. Os portões abertos funcionam, paradoxalmente, como um filtro elitista mais sutil, pois excluem sem a necessidade de cobrar taxa alguma, delegando ao tempo livre e à geografia a tarefa de selecionar quem tem o direito de contemplar a beleza canônica.\n\nO desfecho dessa narrativa de falsas promessas consolidou-se no início da tarde, quando Beatriz, exausta e frustrada com a recusa em acomodar suas demandas básicas de mãe trabalhadora, empreendeu o longo retorno à periferia sem ter avistado uma única obra de arte. A instituição celebrou o final de semana com recordes de público em seus relatórios de gestão, enquanto a verdadeira população marginalizada continuou do lado de fora das muralhas de pedra. A verdadeira acessibilidade não reside na generosidade performativa de zerar o bilhete, mas na desconstrução radical das estruturas que tornam o acesso um privilégio excludente. Enquanto os museus confundirem generosidade fiscal com justiça social, suas portas permanecerão trancadas por correntes invisíveis, intransponíveis para quem precisa lutar cotidianamente apenas para sobreviver.",
+    "wordCount": 670,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "efusiva ovação",
+        "lemma": "efusiva ovação",
+        "glosses": {
+          "es": "enthusiastic ovation",
+          "en": "enthusiastic ovation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verniz ideológico",
+        "lemma": "verniz ideológico",
+        "glosses": {
+          "es": "ideological veneer",
+          "en": "ideological veneer"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fatia desproporcional",
+        "lemma": "fatia desproporcional",
+        "glosses": {
+          "es": "disproportionate share",
+          "en": "disproportionate share"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "entrave intransponível",
+        "lemma": "entrave intransponível",
+        "glosses": {
+          "es": "insurmountable obstacle",
+          "en": "insurmountable obstacle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "perfil demográfico",
+        "lemma": "perfil demográfico",
+        "glosses": {
+          "es": "demographic profile",
+          "en": "demographic profile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "correntes invisíveis",
+        "lemma": "correntes invisíveis",
+        "glosses": {
+          "es": "invisible chains",
+          "en": "invisible chains"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 30.5,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese principal defendida pelo autor da resenha?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A extinção do valor do ingresso é insuficiente se as barreiras geográficas e logísticas não forem eliminadas."
+        },
+        {
+          "id": "a2",
+          "text": "A gratuidade nos museus resolve todas as desigualdades sociais e garante o acesso pleno à cultura."
+        },
+        {
+          "id": "a3",
+          "text": "A cobrança de taxas de entrada deve ser mantida para preservar a exclusividade das obras de arte."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A supressão do bilhete de acesso, embora louvável em sua intenção primordial, operou muito mais como um verniz ideológico do que como uma alavanca efetiva de inclusão social, mascarando barreiras estruturais que continuam a operar com implacável eficiência nos bastidores da alta cultura.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Qual foi o obstáculo financeiro inicial enfrentado por Beatriz Lima?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O preço abusivo cobrado pelo ingresso na bilheteria principal."
+        },
+        {
+          "id": "a2",
+          "text": "O custo elevado do transporte público sem tarifa integrada aos sábados."
+        },
+        {
+          "id": "a3",
+          "text": "A cobrança de uma taxa especial para visitantes que levavam crianças."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O primeiro obstáculo emergiu na planilha de custos do transporte público: sem direito a tarifas integradas nos fins de semana, a jornada de ida e volta consumiu uma fatia desproporcional de seu orçamento semanal restrito.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o texto sugere sobre o aumento estatístico nas catracas comemorado pela diretoria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ele reflete a inclusão bem-sucedida das populações marginalizadas da periferia urbana."
+        },
+        {
+          "id": "a2",
+          "text": "Ele foi causado por uma queda drástica na visitação de turistas estrangeiros."
+        },
+        {
+          "id": "a3",
+          "text": "Ele beneficia principalmente pessoas que já possuíam condições de frequentar o espaço."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A supressão do tributo de entrada beneficiou quem já frequentava o espaço ou quem possui capital cultural e financeiro para absorver os custos colaterais da visitação.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Por que o autor introduz a narrativa detalhada da personagem Beatriz Lima no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para ilustrar de forma concreta como as barreiras invisíveis invalidam a promessa de acesso universal."
+        },
+        {
+          "id": "a2",
+          "text": "Para demonstrar a ineficiência administrativa do setor de atendimento ao cliente da Pinacoteca."
+        },
+        {
+          "id": "a3",
+          "text": "Para comprovar que as mães solo não possuem interesse genuíno pelas artes visuais."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Para compreender a falácia dessa suposta acessibilidade universal, basta examinar a rotina de Beatriz Lima, uma mãe solo e auxiliar de enfermagem residente na zona periférica da metrópole.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser caracterizado o tom predominante do autor em relação ao discurso institucional da diretoria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ingênuo e admirado diante das inovações administrativas da Pinacoteca."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e irônico ao expor a distância entre a propaganda oficial e a realidade."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro e estritamente informativo ao relatar os dados estatísticos de público."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Diante desse impasse kafkiano, a retórica triunfalista da diretoria desmancha-se em contradições patentes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "De acordo com o contexto do primeiro parágrafo, o que significa a expressão 'verniz ideológico'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma pintura artística utilizada para proteger as telas históricas da umidade."
+        },
+        {
+          "id": "a2",
+          "text": "Uma tinta especial aplicada nos portões do museu para simbolizar a liberdade."
+        },
+        {
+          "id": "a3",
+          "text": "Uma aparência superficial que encobre problemas estruturais reais sob uma fachada positiva."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A supressão do bilhete de acesso, embora louvável em sua intenção primordial, operou muito mais como um verniz ideológico do que como uma alavanca efetiva de inclusão social, mascarando barreiras estruturais que continuam a operar com implacável eficiência nos bastidores da alta cultura.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto dissertativo-argumentativo, entre 250 e 350 palavras, discutindo se a gratuidade em equipamentos culturais públicos é suficiente para promover a verdadeira democratização do acesso ou se medidas complementares são indispensáveis.",
+      "en": "Escreva um texto dissertativo-argumentativo, entre 250 e 350 palavras, discutindo se a gratuidade em equipamentos culturais públicos é suficiente para promover a verdadeira democratização do acesso ou se medidas complementares são indispensáveis."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leia o texto com atenção à argumentação implícita e resolva os exercícios propostos para demonstrar proficiência leitora em nível avançado.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Porta Aberta | C1 Reading | WeLearn",
+      "en": "A Ilusão da Porta Aberta | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia uma resenha crítica sobre a política de gratuidade em uma instituição cultural e analise as tensões entre o discurso institucional e a realidade socioeconômica.",
+      "en": "Leia uma resenha crítica sobre a política de gratuidade em uma instituição cultural e analise as tensões entre o discurso institucional e a realidade socioeconômica."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

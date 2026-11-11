@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-last-bus",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Lotação Máxima na Linha Quatrocentos e Oito",
+      "en": "A Ilusão da Lotação Máxima na Linha Quatrocentos e Oito"
+    },
+    "intro": {
+      "es": "Leia a notícia adaptada sobre um debate de mobilidade urbana e resolva as questões para comprovar seu domínio em compreensão leitora avançada.",
+      "en": "Leia a notícia adaptada sobre um debate de mobilidade urbana e resolva as questões para comprovar seu domínio em compreensão leitora avançada."
+    },
+    "mission": {
+      "es": "Analise criticamente o texto jornalístico, prestando atenção à tensão entre dados estatísticos e a realidade vivida pelos passageiros, e complete as atividades propostas.",
+      "en": "Analise criticamente o texto jornalístico, prestando atenção à tensão entre dados estatísticos e a realidade vivida pelos passageiros, e complete as atividades propostas."
+    },
+    "targetText": "A Empresa Metropolitana de Transportes divulgou ontem o balanço trimestral da linha quatrocentos e oito, que conecta o distrito rural de Santa Branca ao terminal central da capital, alardeando um feito administrativo singular. Segundo o relatório oficial assinado pelo diretor de operações, Cláudio Antunes, a taxa de assentos vagos nos horários de pico despencou para patamares negligenciáveis, índice que a autarquia interpretou como a coroação de uma política de eficiência de frota e redimensionamento de horários. Para Antunes, a supressão de quatro viagens matutinas redundou em um ganho de densidade operacional notável, eliminando o desperdício de combustível e otimizando o tempo de giro dos veículos nas estradas vicinais. A gestão comemora o que classifica como uma sinergia perfeita entre oferta e demanda, sustentando que os ônibus trafegam agora com a ocupação máxima almejada pelos manuais de planejamento moderno. Contudo, essa leitura triunfalista ignora o clamor cotidiano dos moradores da região periférica, cuja rotina foi profundamente desestruturada pelas novas diretrizes operacionais. A moradora Rosa Maria de Souza, costureira que há mais de uma década depende do coletivo das cinco e meia para chegar ao seu posto de trabalho na zona industrial, relata uma realidade diametralmente oposta à dos gabinetes climatizados. Com a extinção do primeiro ônibus do dia, Rosa Maria viu-se compelida a abandonar o emprego formal, pois o horário remanescente mais cedo a faz chegar com duas horas de atraso à fábrica, inviabilizando sua permanência na linha de produção. A supressão não eliminou um excedente real de passageiros, mas simplesmente encurralou aqueles que precisavam viajar mais cedo, obrigando-os a migrar para o transporte informal ou, na pior das hipóteses, a renunciar aos seus deslocamentos habituais. O fenômeno ilustra uma perversa distorção métrica: a frota parece magicamente eficiente porque a estatística oficial contabiliza apenas os corpos que conseguiram embarcar, silenciando aqueles que ficaram à margem da estrada. Durante a audiência pública realizada na câmara municipal, vereadores da oposição confrontaram a diretoria da empresa com relatos de trabalhadores rurais que perderam consultas médicas e oportunidades de comércio por falta de opções viáveis de trânsito. A resposta da autarquia baseou-se estritamente na contagem de bilhetes eletrônicos validados nas catracas, um indicador cego às dinâmicas sociais que operam fora dos terminais monitorados. Para Antunes, se há menos assentos vazios, conclui-se que o serviço atende perfeitamente ao público remanescente, numa lógica circular que desqualifica qualquer evidência empírica contrária ao modelo matemático adotado. A tensão entre o rigor formal dos gráficos estatísticos e o colapso do direito básico à circulação escancara os limites de uma gestão tecnocrática que confunde o enxugamento forçado da oferta com a satisfação do usuário. Enquanto os relatórios oficiais continuarem a celebrar a lotação plena como atestado de excelência, a mobilidade no campo continuará a ser tratada como um mero problema contábil, no qual a ausência do passageiro é convenientemente lida como sinal de progresso.\n\nEssa dissonância entre a frieza dos relatórios corporativos e a realidade sufocante das comunidades rurais revela uma profunda falha estrutural na governança pública contemporânea, onde o cidadão deixa de ser o sujeito das políticas de transporte para se converter em mera externalidade a ser gerida. Ao ignorar que a supressão de linhas atinge desproporcionalmente as camadas mais vulneráveis da população, a Empresa Metropolitana de Transportes promove uma exclusão territorial silenciosa, mas implacável, que compromete o desenvolvimento socioeconômico de todo o distrito de Santa Branca. A incapacidade de dialogar com as demandas reais da comunidade demonstra que o planejamento técnico, quando desprovido de sensibilidade social, opera como um mecanismo de cerceamento de direitos fundamentais, como o trabalho e a saúde. A migração forçada para o transporte informal, frequentemente precário e inseguro, e a evasão escolar noturna decorrente da mesma falta de opções de retorno evidenciam que o problema não foi resolvido, mas apenas transferido para a clandestinidade e para a margem da invisibilidade estatística. Assim, a suposta vitória administrativa alardeada nos boletins trimestrais desmorona diante do custo humano insustentável exigido dos trabalhadores, transformando a mobilidade urbana em um privilégio excludente. Se a autarquia persistir na recusa de reavaliar seus parâmetros à luz da dignidade humana, a aparente eficiência da frota não passará de um monumento à miopia burocrática, incapaz de perceber que o progresso real de um sistema de transporte se mede pela inclusão de todos os corpos na estrada, e nunca pela exclusão conveniente daqueles que o Estado prefere não enxergar.",
+    "wordCount": 724,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "alardeando",
+        "lemma": "alardeando",
+        "glosses": {
+          "es": "proclaiming loudly or boasting about",
+          "en": "proclaiming loudly or boasting about"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "redimensionamento",
+        "lemma": "redimensionamento",
+        "glosses": {
+          "es": "resizing or restructuring",
+          "en": "resizing or restructuring"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "triunfalista",
+        "lemma": "triunfalista",
+        "glosses": {
+          "es": "triumphalist or overly optimistic",
+          "en": "triumphalist or overly optimistic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "diametralmente",
+        "lemma": "diametralmente",
+        "glosses": {
+          "es": "diametrically or completely",
+          "en": "diametrically or completely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compelida",
+        "lemma": "compelida",
+        "glosses": {
+          "es": "compelled or forced",
+          "en": "compelled or forced"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tecnocrática",
+        "lemma": "tecnocrática",
+        "glosses": {
+          "es": "technocratic",
+          "en": "technocratic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 36.2,
+      "maxSentenceWords": 62,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto jornalístico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A discrepância entre os dados estatísticos de eficiência e a exclusão real de passageiros causada por cortes de horários."
+        },
+        {
+          "id": "a2",
+          "text": "A melhora expressiva na qualidade do transporte público rural graças à redução de custos."
+        },
+        {
+          "id": "a3",
+          "text": "A necessidade urgente de privatizar as linhas de ônibus intermunicipais para aumentar a frota circulante."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A tensão entre o rigor formal dos gráficos estatísticos e o colapso do direito básico à circulação escancara os limites de uma gestão tecnocrática que confunde o enxugamento forçado da oferta com a satisfação do usuário.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que a moradora Rosa Maria de Souza precisou abandonar seu emprego formal?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque o encerramento definitivo da linha onde trabalhava deixou toda a sua região sem cobertura de transporte."
+        },
+        {
+          "id": "a2",
+          "text": "Porque a extinção do primeiro ônibus do dia a fazia chegar com duas horas de atraso ao trabalho."
+        },
+        {
+          "id": "a3",
+          "text": "Porque a cobrança de tarifas abusivas tornou inviável pagar a passagem diária para a zona industrial."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Com a extinção do primeiro ônibus do dia, Rosa Maria viu-se compelida a abandonar o emprego formal, pois o horário remanescente mais cedo a faz chegar com duas horas de atraso à fábrica, inviabilizando sua permanência na linha de produção.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode inferir sobre a lógica administrativa da Empresa Metropolitana de Transportes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela prioriza o bem-estar social em detrimento do equilíbrio fiscal."
+        },
+        {
+          "id": "a2",
+          "text": "Ela realiza consultas públicas constantes para ajustar os horários às necessidades locais."
+        },
+        {
+          "id": "a3",
+          "text": "Ela utiliza métricas restritas para validar decisões que, na prática, marginalizam parte dos usuários."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Para Antunes, se há menos assentos vazios, conclui-se que o serviço atende perfeitamente ao público remanescente, numa lógica circular que desqualifica qualquer evidência empírica contrária ao modelo matemático adotado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal propósito do autor ao mencionar a audiência pública na câmara municipal?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Expor o confronto entre as reclamações reais da comunidade e a recusa da diretoria em aceitá-las."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que os vereadores conseguiram reverter imediatamente os cortes de viagens na linha."
+        },
+        {
+          "id": "a3",
+          "text": "Ilustrar a cooperação harmoniosa entre a população rural e os gestores públicos da capital."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Durante a audiência pública realizada na câmara municipal, vereadores da oposição confrontaram a diretoria da empresa com relatos de trabalhadores rurais que perderam consultas médicas e oportunidades de comércio por falta de opções viáveis de trânsito.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom do texto pode ser caracterizado em relação à gestão da empresa de transportes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elogioso e reverente diante da inovação tecnológica aplicada nos relatórios."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e irônico ao expor a falácia de indicadores baseados apenas em dados de catracas."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro e estritamente informativo, sem emitir juízos de valor sobre os fatos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O fenômeno ilustra uma perversa distorção métrica: a frota parece magicamente eficiente porque a estatística oficial contabiliza apenas os corpos que conseguiram embarcar, silenciando aqueles que ficaram à margem da estrada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a expressão 'distorção métrica'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um erro de cálculo na distância percorrida pelos ônibus nas estradas vicinais."
+        },
+        {
+          "id": "a2",
+          "text": "Uma alteração física nos veículos para ampliar artificialmente a capacidade de carga."
+        },
+        {
+          "id": "a3",
+          "text": "Uma falha na interpretação da realidade gerada por indicadores que ignoram a demanda suprimida."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O fenômeno ilustra uma perversa distorção métrica: a frota parece magicamente eficiente porque a estatística oficial contabiliza apenas os corpos que conseguiram embarcar, silenciando aqueles que ficaram à margem da estrada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de duzentas a trezentas palavras discutindo como a adoção de métricas puramente quantitativas no planejamento urbano pode mascarar desigualdades sociais e prejudicar o acesso a serviços essenciais por populações periféricas.",
+      "en": "Escreva um texto argumentativo de duzentas a trezentas palavras discutindo como a adoção de métricas puramente quantitativas no planejamento urbano pode mascarar desigualdades sociais e prejudicar o acesso a serviços essenciais por populações periféricas."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise criticamente o texto jornalístico, prestando atenção à tensão entre dados estatísticos e a realidade vivida pelos passageiros, e complete as atividades propostas.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Lotação Máxima na Linha Quatrocentos e Oito | C1 Reading | WeLearn",
+      "en": "A Ilusão da Lotação Máxima na Linha Quatrocentos e Oito | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia a notícia adaptada sobre um debate de mobilidade urbana e resolva as questões para comprovar seu domínio em compreensão leitora avançada.",
+      "en": "Leia a notícia adaptada sobre um debate de mobilidade urbana e resolva as questões para comprovar seu domínio em compreensão leitora avançada."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

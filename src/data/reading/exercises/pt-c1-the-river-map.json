@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-river-map",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A cartografia da contingência",
+      "en": "A cartografia da contingência"
+    },
+    "intro": {
+      "es": "Leia este artigo jornalístico sobre o impacto de dois mapas de risco de inundação na comunidade de Ribeira Alta e responda às questões.",
+      "en": "Leia este artigo jornalístico sobre o impacto de dois mapas de risco de inundação na comunidade de Ribeira Alta e responda às questões."
+    },
+    "mission": {
+      "es": "Analise como a divergência metodológica na cartografia de riscos altera a distribuição de recursos públicos e redija um posicionamento crítico sobre o dilema técnico e ético.",
+      "en": "Analise como a divergência metodológica na cartografia de riscos altera a distribuição de recursos públicos e redija um posicionamento crítico sobre o dilema técnico e ético."
+    },
+    "targetText": "A noite de terça-feira desenhava-se com a amenidade típica do outono em Ribeira Alta, até que o rompimento súbito da barragem de montanha transformou a calmaria urbana em urgência. Liderada pela superintendente de defesa civil, Beatriz Antunes, a resposta municipal baseou-se imediatamente no Mapa Histórico de Cheias, um documento consolidado ao longo de décadas que demarcava as zonas vermelhas com base nos eventos hidrológicos extremos registrados desde o século passado. No entanto, enquanto os botes salva-vidas navegavam pelas ruas alagadas do setor norte, a secretaria estadual de planejamento urbano já operava sob uma premissa técnica distinta: o recém-homologado Atlas Preditivo de Vulnerabilidade, instrumento que projetava cenários climáticos futuros mediante modelos algorítmicos complexos e simulações de escoamento superficial em solo impermeabilizado.\n\nEssa coexistência de diretrizes cartográficas gerou um impasse burocrático e operacional dramático quando os primeiros pedidos de indenização e repasse de verbas federais começaram a ser protocolados na prefeitura. Para o veterano morador e líder comunitário Vicente Guedes, cujas propriedades no vale histórico sofreram danos severos mas foram excluídas do novo atlas preditivo, a divergência não passava de uma artimanha tecnocrática para mitigar o passivo financeiro do Estado. Vicente argumentava que ignorar a materialidade da enchente real em nome de projeções probabilísticas representava uma forma sutil de desamparo institucional. Em contrapartida, os defensores do Atlas Preditivo sustentavam que concentrar recursos em áreas de risco obsoleto equivalia a desperdiçar verbas escassas em locais cuja vulnerabilidade já havia sido mitigada por obras de engenharia passadas, defendendo que a priorização deveria mirar o futuro incerto da bacia hidrográfica.\n\nA celenfim escalou quando a Defesa Civil Nacional exigiu a adoção de um único padrão técnico para liberar o fundo de reconstrução de emergência. Beatriz Antunes viu-se encurralada entre a lealdade à urgência empírica que testemunhara nas ruas e a obrigação legal de cumprir as diretrizes modernizadoras do Estado. Enquanto as reuniões de gabinete se prolongavam por madrugadas adentro, a calçada da prefeitura acumulava moradores indignados que exigiam respostas claras sobre o porquê de suas casas figurarem como seguras em uma tela de computador enquanto suas garagens permaneciam submetidas ao lodo. A tensão evidenciou que a escolha de um mapa nunca é um ato meramente neutro ou técnico, mas sim uma decisão política profunda que determina quem tem direito ao socorro estatal e quem permanece invisível às estatísticas oficiais.\n\nEmbora os técnicos estaduais alegassem que a modelagem preditiva era indispensável para evitar o adensamento indevido em zonas de expansão futura, a aplicação rígida desse critério no rescaldo imediato da tragédia revelou uma insensibilidade gritante diante do sofrimento presente. A controvérsia expôs a fratura entre a ciência atuarial, voltada para a gestão de riscos estatísticos, e a realidade visceral das comunidades ribeirinhas, que experienciam o território não como uma grade de coordenadas, mas como um espaço de vida e memória. O debate não se resumia a qual ferramenta era mais precisa, mas a quem cabia definir os limites geográficos da solidariedade pública num contexto de degradação ambiental acelerada.\n\nAo final da semana, a prefeitura optou por um arranjo provisório que reconhecia parcialmente as duas cartografias, criando um fundo híbrido de atendimento emergencial, embora a ambiguidade jurídica tenha deixado dezenas de famílias em um limbo regulatório permanente. Vicente Guedes aceitou o auxílio parcial, mas alertou que a vitória pírrica não resolvia a raiz do problema: enquanto a burocracia insistisse em desenhar o futuro ignorando as cicatrizes do passado, o próximo temporal encontraria a cidade dividida não apenas pelas águas, mas pelas próprias linhas arbitrárias traçadas nos gabinetes.\n\nEssa trégua frágil, contudo, não tardou a evidenciar novas fraturas na governança local, pois a indefinição jurídica travou o licenciamento de obras essenciais de contenção nas margens do rio. Sem um consenso definitivo sobre qual mapa possuía validade legal, empreiteiras suspenderam os cronogramas de dragagem, deixando os moradores do vale ainda mais expostos à imprevisibilidade das próximas tempestades sazonais. Beatriz Antunes, desgastada pelo embate político, acabou solicitando afastamento do cargo, enquanto o conselho municipal de urbanismo se perdia em infindáveis debates acadêmicos sobre a precisão de algoritmos versus a empiria dos antigos registros. Para Vicente Guedes e seus vizinhos, a calmaria aparente nas ruas limpas mascarava uma bomba-relógio institucional, onde a falta de clareza cartográfica condenava a comunidade a viver sob a constante espada de Dâmocles da burocracia estatal. Assim, a tragédia original deixou de ser apenas um acidente climático para se converter em um sintoma permanente da incapacidade de planejar o território com justiça e coerência.",
+    "wordCount": 737,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "impasse",
+          "en": "impasse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "artimanha",
+        "lemma": "artimanha",
+        "glosses": {
+          "es": "trick / artifice",
+          "en": "trick / artifice"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "celenfim",
+        "lemma": "celenfim",
+        "glosses": {
+          "es": "controversy / turmoil",
+          "en": "controversy / turmoil"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rescaldo",
+        "lemma": "rescaldo",
+        "glosses": {
+          "es": "aftermath",
+          "en": "aftermath"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "limbo",
+        "lemma": "limbo",
+        "glosses": {
+          "es": "limbo",
+          "en": "limbo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pírrica",
+        "lemma": "pírrica",
+        "glosses": {
+          "es": "pyrrhic",
+          "en": "pyrrhic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 35.1,
+      "maxSentenceWords": 50,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A divergência entre dois mapas de risco que altera a qualificação de moradias para ajuda humanitária."
+        },
+        {
+          "id": "a2",
+          "text": "A disputa política entre o governo federal e a prefeitura sobre a construção de uma nova barragem de montanha."
+        },
+        {
+          "id": "a3",
+          "text": "A revolta dos moradores contra os meteorologistas que erraram a previsão temporal da tempestade."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Essa coexistência de diretrizes cartográficas gerou um impasse burocrático e operacional dramático quando os primeiros pedidos de indenização e repasse de verbas federais começaram a ser protocolados na prefeitura.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que defendiam os partidários do Atlas Preditivo de Vulnerabilidade?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A transferência imediata de todos os moradores do vale histórico para uma nova cidade planejada."
+        },
+        {
+          "id": "a2",
+          "text": "A concentração de recursos em áreas de risco futuro em vez de gastar verbas em locais com risco obsoleto."
+        },
+        {
+          "id": "a3",
+          "text": "A suspensão total de qualquer repasse financeiro para obras de engenharia na bacia hidrográfica."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "os defensores do Atlas Preditivo sustentavam que concentrar recursos em áreas de risco obsoleto equivalia a desperdiçar verbas escassas em locais cuja vulnerabilidade já havia sido mitigada por obras de engenharia passadas",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode inferir sobre a natureza das escolhas cartográficas segundo a narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elas são ferramentas matemáticas puramente neutras que eliminam a subjetividade humana."
+        },
+        {
+          "id": "a2",
+          "text": "Elas refletem exclusivamente preferências estéticas dos projetistas urbanos do Estado."
+        },
+        {
+          "id": "a3",
+          "text": "Elas constituem decisões políticas profundas que definem quem recebe socorro estatal."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A tensão evidenciou que a escolha de um mapa nunca é um ato meramente neutro ou técnico, mas sim uma decisão política profunda que determina quem tem direito ao socorro estatal e quem permanece invisível às estatísticas oficiais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal propósito do autor ao relatar a reação de Vicente Guedes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar a perspectiva dos moradores que vivenciam a tragédia e contestam o afastamento tecnocrático."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar a ineficiência técnica absoluta de qualquer modelo computacional de previsão meteorológica."
+        },
+        {
+          "id": "a3",
+          "text": "Comprovar que as lideranças comunitárias locais possuem formações avançadas em cartografia."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Vicente argumentava que ignorar a materialidade da enchente real em nome de projeções probabilísticas representava uma forma sutil de desamparo institucional.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom do texto caracteriza o embate entre a burocracia e a realidade social?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Leve e otimista, enfatizando a superação rápida de todos os entraves burocráticos."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo, expondo a tensão entre a frieza atuarial e o sofrimento humano."
+        },
+        {
+          "id": "a3",
+          "text": "Sarcástico e desinteressado, ridicularizando o trabalho dos funcionários públicos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A controvérsia expôs a fratura entre a ciência atuarial, voltada para a gestão de riscos estatísticos, e a realidade visceral das comunidades ribeirinhas",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto da narrativa, o que o termo 'limbo' conota em relação à situação das dezenas de famílias?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A clareza absoluta de seus direitos garantidos por lei."
+        },
+        {
+          "id": "a2",
+          "text": "O banimento definitivo para fora dos limites do município."
+        },
+        {
+          "id": "a3",
+          "text": "A condição de incerteza e indefesa regulatória após a decisão."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "embora a ambiguidade jurídica tenha deixado dezenas de famílias em um limbo regulatório permanente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto dissertativo-argumentativo de 250 a 300 palavras discutindo de que maneira a adoção de critérios técnicos e estatísticos na gestão de desastres pode gerar exclusão social. Utilize argumentos consistentes e mantenham um registro formal.",
+      "en": "Escreva um texto dissertativo-argumentativo de 250 a 300 palavras discutindo de que maneira a adoção de critérios técnicos e estatísticos na gestão de desastres pode gerar exclusão social. Utilize argumentos consistentes e mantenham um registro formal."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise como a divergência metodológica na cartografia de riscos altera a distribuição de recursos públicos e redija um posicionamento crítico sobre o dilema técnico e ético.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A cartografia da contingência | C1 Reading | WeLearn",
+      "en": "A cartografia da contingência | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia este artigo jornalístico sobre o impacto de dois mapas de risco de inundação na comunidade de Ribeira Alta e responda às questões.",
+      "en": "Leia este artigo jornalístico sobre o impacto de dois mapas de risco de inundação na comunidade de Ribeira Alta e responda às questões."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

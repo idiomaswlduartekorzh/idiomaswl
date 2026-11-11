@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Fila Invisível",
+      "en": "A Fila Invisível"
+    },
+    "intro": {
+      "es": "Leia este conto sobre a dinâmica de uma recepção médica e analise como a tecnologia altera a percepção do tempo e da ansiedade.",
+      "en": "Leia este conto sobre a dinâmica de uma recepção médica e analise como a tecnologia altera a percepção do tempo e da ansiedade."
+    },
+    "mission": {
+      "es": "Compreenda o texto prestando atenção à transição entre o controle digital interno e a tensão acumulada do lado de fora da clínica.",
+      "en": "Compreenda o texto prestando atenção à transição entre o controle digital interno e a tensão acumulada do lado de fora da clínica."
+    },
+    "targetText": "O monitor de LED na recepção da Clínica Sanare exibia uma lista exígua de nomes, sustentando a promessa falaciosa de que o atendimento fluía com presteza geométrica. Beatriz, plantada atrás do balcão de mármore sintético há quase seis horas, encarava a interface com um misto de alívio e culpa crônica. Graças ao recém-implantado algoritmo de triagem preditiva, o saguão interno mantinha-se curiosamente desinfetado de aglomerações. Eram apenas quatro poltronas ocupadas, todas espaçadas de maneira asséptica, onde pacientes silenciosos fitavam telas de celulares sem articular uma única sílaba. Para a diretoria administrativa, o sistema era um triunfo inconteste de eficiência ergonômica; a taxa de retenção interna despencara, e os relatórios mensais exibiam curvas descendentes que pareciam desenhar uma utopia operacional. No entanto, Beatriz sabia que a suposta agilidade não passava de uma transmutação espacial da angústia humana, um deslocamento cínico do caos para fora do perímetro do piso porcelanato.\n\nA verdadeira natureza daquela otimização revelava-se a cada poucos minutos, quando o sensor de proximidade da porta automática deslizava para abrir, permitindo a infiltração de lufadas de ar abafado e murmúrios exasperados. Do lado de fora, a calçada da Rua Barão de Jaceguai transformara-se em um anexo informal e caótico da clínica. Dezesseis pessoas — idosos com mobilidade reduzida, gestantes trêmulas e acompanhantes exaustos — amontoavam-se sob o toldo desbotado, submetidas à incerteza climática e à tirania de um relógio invisível. O algoritmo havia descarregado o ônus da espera sobre a via pública, transformando o saguão climatizado em um oásis exclusivo para quem possuía estômago para decifrar notificações cifradas. Quando o nome de Dona Lourdes foi finalmente emitido pelo sintetizador de voz, a idosa levantou-se com rigidez articular, murmurando um desabafo resignado sobre as horas que passara escorada no batente da farmácia vizinha, fingindo examinar xampus para justificar sua permanência ali.\n\nO conflito latente irrompeu por volta das quatro da tarde, quando um homem de terno cinza, identificado nos registros como Vicente, irrompeu pela porta com o cenho franzido e a respiração ofegante. Ele disparou em direção ao balcão, ignorando a sinalização de distância prudencial, e descarregou sua frustração acumulada sobre o tampo de madeira. Vicente alegava ter recebido uma mensagem automática informando que faltavam apenas duas chamadas para sua vez, o que o fizera abandonar a cafeteria da esquina correndo, apenas para descobrir, ao retornar, que seu número havia sido sumariamente purgado do sistema por ausência na chamada presencial. Beatriz tentou ponderar, recitando o protocolo engessado que exigia a presença física sob o raio de alcance do sensor biométrico dentro de um intervalo exíguo de noventa segundos. A discussão atraiu olhares furtivos dos quatro pacientes internos, cujas expressões refletiam um pacto tácito de neutralidade egoísta: afinal, a expulsão de um concorrente na fila representava a garantia intangível de sua própria preservação.\n\nO bate-boca evaporou não por conciliação, mas pelo esgotamento mútuo diante da rigidez incorruptível do software que reinava soberano sobre o estabelecimento. Vicente retirou-se pisando duro, disparando ameaças abafadas contra o livro de reclamações e prometendo acionar órgãos de defesa do consumidor, enquanto a porta automática se fechava com um silogismo mecânico implacável. Beatriz recuou para a cadeira ergonômica, sentindo o peso opressor daquela vitória burocrática que premiava a métrica em detrimento da empatia. Olhou novamente para a tela e percebeu que, estatisticamente, o dia havia sido impecável: o tempo médio de permanência interna caíra vinte por cento, e os gráficos exibiam a estabilidade almejada pelos gestores distantes. Contudo, ao contemplar o reflexo embaçado do vidro, ela compreendeu que a desordem não fora erradicada, mas apenas terceirizada para o asfalto.\n\nNo crepúsculo daquela tarde, enquanto a equipe de limpeza iniciava o protocolo de higienização dos pisos, Beatriz recolheu suas coisas em silêncio. A clínica fechava suas portas físicas, mas o eco daquela espera difusa parecia impregnar as paredes frias do saguão vazio. A modernização prometera conectar as pessoas ao futuro, mas acabara por erigir barreiras invisíveis que fragmentavam a comunidade em sobreviventes solitários de uma corrida silenciosa. Enquanto caminhava para o ponto de ônibus, ela constatou que o verdadeiro progresso tecnológico muitas vezes consistia apenas na habilidade requintada de esconder a poeira sob o tapete digital, deixando que o vento frio da rua lidasse com o restante.",
+    "wordCount": 697,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "exígua",
+        "lemma": "exígua",
+        "glosses": {
+          "es": "Meager, scanty",
+          "en": "Meager, scanty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asséptica",
+        "lemma": "asséptica",
+        "glosses": {
+          "es": "Aseptic, sterile",
+          "en": "Aseptic, sterile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "transmutação",
+        "lemma": "transmutação",
+        "glosses": {
+          "es": "Transmutation, transformation",
+          "en": "Transmutation, transformation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ônus",
+        "lemma": "ônus",
+        "glosses": {
+          "es": "Burden, load",
+          "en": "Burden, load"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "purgado",
+        "lemma": "purgado",
+        "glosses": {
+          "es": "Purged, removed",
+          "en": "Purged, removed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "silogismo",
+        "lemma": "silogismo",
+        "glosses": {
+          "es": "Syllogism, logical argument",
+          "en": "Syllogism, logical argument"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.9,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no conto sobre a recepção da clínica?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O impacto paradoxal da tecnologia que apenas desloca a desordem para a rua."
+        },
+        {
+          "id": "a2",
+          "text": "A superioridade moral dos pacientes que aguardam do lado de fora."
+        },
+        {
+          "id": "a3",
+          "text": "A ineficiência técnica absoluta dos computadores na área da saúde."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Beatriz sabia que a suposta agilidade não passava de uma transmutação espacial da angústia humana, um deslocamento cínico do caos para fora do perímetro do piso porcelanato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que aconteceu com Vicente após ele retornar correndo da cafeteria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ele conseguiu negociar seu atendimento diretamente com a diretoria."
+        },
+        {
+          "id": "a2",
+          "text": "Seu número foi purgado do sistema por ausência na chamada presencial."
+        },
+        {
+          "id": "a3",
+          "text": "Ele foi convidado a esperar no saguão interno climatizado."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "apenas para descobrir, ao retornar, que seu número havia sido sumariamente purgado do sistema por ausência na chamada presencial.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como os pacientes que estavam dentro do saguão reagiram à discussão de Vicente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eles demonstraram solidariedade e exigiram que o sistema fosse modificado imediatamente."
+        },
+        {
+          "id": "a2",
+          "text": "Eles abandonaram o local em protesto contra a rigidez do protocolo digital."
+        },
+        {
+          "id": "a3",
+          "text": "Eles mantiveram um pacto tácito de neutralidade egoísta para garantir sua própria preservação."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A discussão atraiu olhares furtivos dos quatro pacientes internos, cujas expressões refletiam um pacto tácito de neutralidade egoísta: afinal, a expulsão de um concorrente na fila representava a garantia intangível de sua própria preservação.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a intenção principal do autor ao descrever a calçada da rua como um anexo da clínica?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar como o sofrimento e a incerteza foram empurrados para fora do campo de visão da gestão."
+        },
+        {
+          "id": "a2",
+          "text": "Criticar a falta de investimentos municipais em abrigos públicos para pedestres."
+        },
+        {
+          "id": "a3",
+          "text": "Elogiar a capacidade dos pacientes de se organizarem comunitariamente ao ar livre."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O algoritmo havia descarregado o ônus da espera sobre a via pública, transformando o saguão climatizado em um oásis exclusivo para quem possuía estômago para decifrar notificações cifradas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual palavra melhor define o tom predominante da narradora ao relatar os relatórios de eficiência?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasmado."
+        },
+        {
+          "id": "a2",
+          "text": "Irônico."
+        },
+        {
+          "id": "a3",
+          "text": "Nostálgico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Para a diretoria administrativa, o sistema era um triunfo inconteste de eficiência ergonômica; a taxa de retenção interna despencara, e os relatórios mensais exibiam curvas descendentes que pareciam desenhar uma utopia operacional.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do primeiro parágrafo, o que significa a palavra 'exígua'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ampla e detalhada."
+        },
+        {
+          "id": "a2",
+          "text": "Confusa e desorganizada."
+        },
+        {
+          "id": "a3",
+          "text": "Reduzida ou escassa."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O monitor de LED na recepção da Clínica Sanare exibia uma lista exígua de nomes, sustentando a promessa falaciosa de que o atendimento fluía com presteza geométrica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a otimização digital de serviços públicos e privados realmente melhora a experiência do usuário ou se apenas oculta os problemas estruturais.",
+      "en": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a otimização digital de serviços públicos e privados realmente melhora a experiência do usuário ou se apenas oculta os problemas estruturais."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Compreenda o texto prestando atenção à transição entre o controle digital interno e a tensão acumulada do lado de fora da clínica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Fila Invisível | C1 Reading | WeLearn",
+      "en": "A Fila Invisível | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia este conto sobre a dinâmica de uma recepção médica e analise como a tecnologia altera a percepção do tempo e da ansiedade.",
+      "en": "Leia este conto sobre a dinâmica de uma recepção médica e analise como a tecnologia altera a percepção do tempo e da ansiedade."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

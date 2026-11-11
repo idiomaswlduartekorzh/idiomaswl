@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-new-crossing",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Travessia",
+      "en": "A Ilusão da Travessia"
+    },
+    "intro": {
+      "es": "Leia este artigo jornalístico de nível avançado sobre um relatório oficial controverso e responda às questões analíticas e interpretativas.",
+      "en": "Leia este artigo jornalístico de nível avançado sobre um relatório oficial controverso e responda às questões analíticas e interpretativas."
+    },
+    "mission": {
+      "es": "Analise criticamente o texto jornalístico, prestando atenção à forma como os dados estatísticos são enquadrados e utilizados para justificar decisões administrativas municipais.",
+      "en": "Analise criticamente o texto jornalístico, prestando atenção à forma como os dados estatísticos são enquadrados e utilizados para justificar decisões administrativas municipais."
+    },
+    "targetText": "A recente inauguração da travessia elevada na Avenida dos Pinheiros tornou-se o centro de um debate acalorado entre a Secretaria Municipal de Mobilidade Urbana e o grêmio acadêmico do Instituto de Engenharia Cívica. O relatório oficial divulgado no início deste mês pela pasta municipal atribui a queda drástica de atropelamentos na via exclusivamente à instalação da nova infraestrutura física, destacando a eficiência do projeto na proteção dos pedestres. No entanto, o documento administrativo deliberadamente omitiu um fator concomitante crucial: a reclassificação de toda a extensão da avenida como zona de trânsito lento, com a imposição rigorosa de um limite máximo de trinta quilômetros por hora. Essa supressão metodológica gerou ceticismo imediato entre os pesquisadores independentes, que acusam a administração pública de manipular a interpretação dos dados para legitimar uma obra dispendiosa em detrimento de políticas de sinalização mais amplas. Enquanto a prefeitura sustenta que o relevo acentuado da travessia atua como o principal agente dissuasório da velocidade excessiva, os analistas acadêmicos argumentam que o pavimento elevado teve um impacto secundário, servindo muito mais como um lembrete visual do que como um obstáculo mecânico intransponível para veículos de passeio. A polêmica ganhou novos contornos quando o engenheiro responsável pelo projeto, Maurício Ramos, defendeu publicamente a eficácia multifatorial da intervenção urbana. Segundo Ramos, embora a redução da velocidade máxima tenha sido implementada na mesma semana, a topografia modificada da via alterou irrevogavelmente a psicologia espacial dos motoristas, criando um microclima de cautela que nenhuma placa de sinalização vertical conseguia induzir isoladamente. Por outro lado, a professora e pesquisadora Helena Vasconcelos contra-argumenta que a ausência de transparência estatística compromete a integridade de qualquer conclusão científica. Vasconcelos aponta que a diminuição dos acidentes já vinha sendo observada de forma gradual nos meses anteriores, impulsionada por campanhas educativas digitais veiculadas pelas associações de moradores locais. Para a pesquisadora, a prefeitura elegeu a travessia como o troféu político de sua gestão, instrumentalizando uma correlação espúria para ofuscar o fracasso de outras medidas complementares que exigiam maior investimento orçamentário e fiscalização contínua. O conflito de narrativas atingiu o ápice quando o conselho deliberativo do município rejeitou o pedido de auditoria externa protocolado pelo comitê de moradores, alegando que os custos operacionais de uma nova apuração seriam injustificáveis diante da evidência prática de que os incidentes de trânsito efetivamente cessaram na região. Essa recusa institucional cristalizou um impasse preocupante, onde o sucesso prático de uma medida de segurança viária é maculado por táticas de comunicação opacas. Ao fim, a comunidade se vê dividida entre aplaudir a trégua na violência do tráfego e questionar os limites éticos da retórica governamental na construção de políticas públicas.\n\nEssa persistente opacidade informacional acabou por catalisar uma mobilização sem precedentes na sociedade civil organizada, transformando a disputa técnica em um vigoroso movimento de controle social sobre a gestão da coisa pública. Frustrados com a intransigência do conselho deliberativo, coletivos de urbanistas, estudantes e lideranças comunitárias uniram forças para constituir um observatório independente de trânsito, cujo objetivo principal é auditar de maneira autônoma não apenas a Avenida dos Pinheiros, mas todas as futuras intervenções viárias anunciadas pela administração municipal. Munidos de equipamentos de medição temporal e câmeras de contagem volumétrica, esses cidadãos passaram a coletar dados empíricos rigorosos que desafiam diretamente as narrativas oficiais divulgadas pela Secretaria Municipal de Mobilidade Urbana. Ironias à parte, a recusa da prefeitura em abrir os microdados da intervenção teve o condão paradoxal de rejuvenescer o debate democrático local, despertando na população uma consciência crítica adormecida em relação aos rumos do planejamento urbano. Enquanto os técnicos governamentais tentam minimizar o impacto dessa fiscalização paralela alegando falta de rigor metodológico por parte dos leigos, o novo observatório já apresentou os primeiros resultados parciais indicando que o comportamento dos motoristas na via em questão permanece rigorosamente inalterado mesmo nos trechos distantes da travessia elevada, corroborando a tese de que foi o limite de trinta quilômetros por hora o verdadeiro responsável pela pacificação do tráfego. Esse embate cotidiano entre a tecnocracia instalada e a cidadania ativa evidencia que a legitimidade de uma obra pública não se sustenta apenas na constatação empírica de seus resultados imediatos, mas exige, sobretudo, transparência radical e respeito intransigente ao direito coletivo à informação. Assim, enquanto os carros continuam trafegando lentamente pela avenida sob o olhar atento dos fiscais voluntários, a cidade assiste ao nascimento de um novo paradigma onde a engenharia de tráfego deixa de ser um monólogo autoritário do poder executivo para se transformar em um permanente exercício de deliberação coletiva, provando que a segurança viária autêntica caminha sempre lado a lado com a maturidade democrática e a fiscalização ética dos atos governamentais.",
+    "wordCount": 767,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "deliberadamente",
+        "lemma": "deliberadamente",
+        "glosses": {
+          "es": "deliberately",
+          "en": "deliberately"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "concomitante",
+        "lemma": "concomitante",
+        "glosses": {
+          "es": "concomitant",
+          "en": "concomitant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissuasório",
+        "lemma": "dissuasório",
+        "glosses": {
+          "es": "deterrent",
+          "en": "deterrent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "instrumentalizando",
+        "lemma": "instrumentalizando",
+        "glosses": {
+          "es": "instrumentalizing",
+          "en": "instrumentalizing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "espúria",
+        "lemma": "espúria",
+        "glosses": {
+          "es": "spurious",
+          "en": "spurious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "maculado",
+        "lemma": "maculado",
+        "glosses": {
+          "es": "tarnished",
+          "en": "tarnished"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 38.4,
+      "maxSentenceWords": 71,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no artigo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A disputa sobre a real causa da queda de acidentes."
+        },
+        {
+          "id": "a2",
+          "text": "O custo financeiro da nova travessia elevada."
+        },
+        {
+          "id": "a3",
+          "text": "A resistência dos moradores contra o limite de velocidade."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A recente inauguração da travessia elevada na Avenida dos Pinheiros tornou-se o centro de um debate acalorado entre a Secretaria Municipal de Mobilidade Urbana e o grêmio acadêmico do Instituto de Engenharia Cívica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Qual fator simultâneo foi omitido pelo relatório oficial da prefeitura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A instalação de câmeras de segurança."
+        },
+        {
+          "id": "a2",
+          "text": "A reclassificação da via como zona lenta."
+        },
+        {
+          "id": "a3",
+          "text": "A pavimentação asfáltica completa."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "No entanto, o documento administrativo deliberadamente omitiu um fator concomitante crucial: a reclassificação de toda a extensão da avenida como zona de trânsito lento, com a imposição rigorosa de um limite máximo de trinta quilômetros por hora.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a recusa do conselho deliberativo sugere sobre a postura da administração?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Desejo de economizar recursos."
+        },
+        {
+          "id": "a2",
+          "text": "Transparência total na gestão."
+        },
+        {
+          "id": "a3",
+          "text": "Resistência à fiscalização externa."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Essa recusa institucional cristalizou um impasse preocupante, onde o sucesso prático de uma medida de segurança viária é maculado por táticas de comunicação opacas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a finalidade principal do trecho que apresenta a fala do engenheiro Maurício Ramos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Justificar o impacto multifatorial da intervenção urbana."
+        },
+        {
+          "id": "a2",
+          "text": "Explicar a dinâmica do tráfego rodoviário nacional."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar o orçamento destinado à pavimentação."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Segundo Ramos, embora a redução da velocidade máxima tenha sido implementada na mesma semana, a topografia modificada da via alterou irrevogavelmente a psicologia espacial dos motoristas, criando um microclima de cautela que nenhuma placa de sinalização vertical conseguia induzir isoladamente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom do artigo pode ser caracterizado em relação às versões oficiais?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Totalmente favorável."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e investigativo."
+        },
+        {
+          "id": "a3",
+          "text": "Irrelevante e cômico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Essa supressão metodológica gerou ceticismo imediato entre os pesquisadores independentes, que acusam a administração pública de manipular a interpretação dos dados para legitimar uma obra dispendiosa em detrimento de políticas de sinalização mais amplas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto da narrativa, o que expressa o termo 'espúria' aplicado à correlação estatística?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Completa e segura."
+        },
+        {
+          "id": "a2",
+          "text": "Inevitável e rápida."
+        },
+        {
+          "id": "a3",
+          "text": "Falsa ou enganosa."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Para a pesquisadora, a prefeitura elegeu a travessia como o troféu político de sua gestão, instrumentalizando uma correlação espúria para ofuscar o fracasso de outras medidas complementares que exigiam maior investimento orçamentário e fiscalização contínua.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de 250 a 300 palavras avaliando se a omissão de dados por órgãos públicos é justificável quando o resultado final da política implementada é positivo para a segurança da população.",
+      "en": "Escreva um texto argumentativo de 250 a 300 palavras avaliando se a omissão de dados por órgãos públicos é justificável quando o resultado final da política implementada é positivo para a segurança da população."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise criticamente o texto jornalístico, prestando atenção à forma como os dados estatísticos são enquadrados e utilizados para justificar decisões administrativas municipais.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Travessia | C1 Reading | WeLearn",
+      "en": "A Ilusão da Travessia | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia este artigo jornalístico de nível avançado sobre um relatório oficial controverso e responda às questões analíticas e interpretativas.",
+      "en": "Leia este artigo jornalístico de nível avançado sobre um relatório oficial controverso e responda às questões analíticas e interpretativas."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão do Conserto Coletivo",
+      "en": "A Ilusão do Conserto Coletivo"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre os bastidores do projeto de reparo comunitário Oficina Fênix, onde a celebração pública do voluntariado oculta uma assimetria profunda na divisão do trabalho técnico.",
+      "en": "Uma análise crítica sobre os bastidores do projeto de reparo comunitário Oficina Fênix, onde a celebração pública do voluntariado oculta uma assimetria profunda na divisão do trabalho técnico."
+    },
+    "mission": {
+      "es": "Leia a resenha crítica a seguir e responda às questões para demonstrar compreensão avançada de texto, vocabulário e nuances argumentativas em português brasileiro.",
+      "en": "Leia a resenha crítica a seguir e responda às questões para demonstrar compreensão avançada de texto, vocabulário e nuances argumentativas em português brasileiro."
+    },
+    "targetText": "A inauguração solene da Oficina Fênix, realizada no galpão central do bairro, foi amplamente celebrada pela imprensa local como um triunfo da cidadania participativa. O projeto, concebido pelo conselho municipal para revitalizar eletrodomésticos descartados e promover a sustentabilidade urbana, baseia-se no princípio de que qualquer cidadão pode contribuir para o esforço coletivo. Durante a cerimônia de abertura, discursos inflamados exaltaram o engajamento comunitário, destacando como dezenas de moradores acorreram ao local munidos de ferramentas rudimentares e grande entusiasmo. Contudo, por trás da fachada de harmonia horizontal e da retórica inclusiva que domina os boletins oficiais da prefeitura, delineia-se uma realidade operacional marcadamente distinta, marcada por dinâmicas de exploração velada e assimetria técnica.\n\nUma análise mais atenta do cotidiano da oficina revela que o sucesso aparente dos mutirões de fim de semana repousa quase inteiramente sobre os ombros de um pequeno núcleo de especialistas. Profissionais aposentados da eletrônica e técnicos industriais autônomos, como o metódico senhor Antunes e a experiente engenheira Cláudia, sustentam o fluxo de trabalho real. Enquanto os voluntários novatos dedicam-se a tarefas periféricas de baixo risco — como a limpeza externa de gabinetes, a organização de parafusos miúdos e, sobretudo, a captação de fotografias sorridentes para as redes sociais institucionais —, os veteranos realizam o trabalho pesado de diagnóstico de placas, solda de precisão e recondicionamento de motores. Essa divisão não declarada do trabalho gera um paradoxo incômodo: o capital simbólico do projeto é distribuído uniformemente entre todos os participantes por meio de certificados e tapinhas nas costas, ao passo que o ônus físico e mental do esforço especializado recai exclusivamente sobre aqueles que já possuem o conhecimento prévio.\n\nO ápice dessa tensão ocorreu na última terça-feira, quando a oficina enfrentou o seu teste mais rigoroso com a chegada de um lote crítico de dezenas de micro-ondas industriais doados por um hospital regional. Diante do volume inesperado e da complexidade técnica dos circuitos de alta tensão, a coordenação do projeto recorreu imediatamente à cartilha da participação popular, convocando uma força-tarefa aberta. O resultado foi o caos operacional previsto apenas pelos mais céticos: enquanto os entusiastas amadores manuseavam chaves de fenda sem critério, agravando danos em painéis sensíveis, coube a Antunes e Cláudia passar a noite inteira em claro, operando em silêncio para salvar os equipamentos antes do prazo de entrega estipulado pela administração. A narrativa oficial, contudo, ignorou completamente a exaustão desses profissionais, preferindo creditar o salvamento do lote ao espírito vibrante de união comunitária e ao engajamento coletivo dos cidadãos.\n\nEmbora seja inegável que a Oficina Fênix cumpra uma função pedagógica valiosa ao sensibilizar a vizinhança sobre os males do descarte precoce de bens duráveis, o modelo carece de honestidade estrutural. A insistência da gestão em romantizar a horizontalidade serve, na prática, para encobrir a precarização do trabalho técnico voluntário e apropriação indevida de competências especializadas em nome de uma métrica vazia de participação quantitativa. Quando o esforço individual especializado é diluído em estatísticas genéricas de engajamento comunitário, o voluntariado deixa de ser um ato de solidariedade livre para transformar-se em um mecanismo sutil de extração de mais-valia técnica, onde os verdadeiros artífices do sucesso tornam-se invisíveis.\n\nEm última análise, a experiência da Oficina Fênix deixa um saldo ambíguo que desafia definições simplistas. Se, por um lado, o espaço fomenta um senso fugaz de pertencimento social e educa visualmente a população contra a cultura do desperdício, por outro, ele consolida uma hierarquia perversa onde a competência técnica é instrumentalizada sem a devida remuneração ou reconhecimento real. A menos que a coordenação reveja suas premissas e estabeleça uma compensação justa ou uma distinção clara de papéis, o projeto corre o risco de esgotar o seu recurso mais precioso: a boa vontade dos poucos técnicos que, movidos por um anacromático senso de dever, continuam sustentando a engrenagem com seu próprio suor invisível.\n\nA persistência dessa dinâmica predatória poderá, ironicamente, acelerar a derrocada da própria iniciativa que pretende glorificar. Afinal, ao ignorar o esgotamento físico e emocional de seus pilares humanos, a administração municipal subestima a fragilidade de um sistema construído sobre a abnegação silenciosa. Quando figuras como Antunes e Cláudia finalmente decidirem cruzar os braços diante da exaustão, a retórica institucional desmoronará junto com os aparelhos que ninguém mais saberá consertar. Desprovida de sua base técnica qualificada, a fachada participativa da oficina revelará o vazio de suas estatísticas, provando que nenhum entusiasmo comunitário substitui a valorização real do saber especializado.",
+    "wordCount": 731,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "fachada",
+        "lemma": "fachada",
+        "glosses": {
+          "es": "facade or superficial appearance",
+          "en": "facade or superficial appearance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ônus",
+        "lemma": "ônus",
+        "glosses": {
+          "es": "burden or load",
+          "en": "burden or load"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "força-tarefa",
+        "lemma": "força-tarefa",
+        "glosses": {
+          "es": "task force",
+          "en": "task force"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "precarização",
+        "lemma": "precarização",
+        "glosses": {
+          "es": "precariousness or deterioration of conditions",
+          "en": "precariousness or deterioration of conditions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "anacromático",
+        "lemma": "anacromático",
+        "glosses": {
+          "es": "anachronistic or out of its time",
+          "en": "anachronistic or out of its time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "engrenagem",
+        "lemma": "engrenagem",
+        "glosses": {
+          "es": "gear or machinery",
+          "en": "gear or machinery"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 33.2,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central defendida pelo autor do texto sobre a Oficina Fênix?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O projeto explora o trabalho de técnicos especializados enquanto romantiza o voluntariado leigo."
+        },
+        {
+          "id": "a2",
+          "text": "A prefeitura manipula dados financeiros para justificar o fechamento da oficina."
+        },
+        {
+          "id": "a3",
+          "text": "Os moradores do bairro demonstram total desinteresse pela sustentabilidade urbana."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O projeto, concebido pelo conselho municipal para revitalizar eletrodomésticos descartados e promover a sustentabilidade urbana, baseia-se no princípio de que qualquer cidadão pode contribuir para o esforço coletivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Como os voluntários novatos e os profissionais experientes dividiram o trabalho na oficina?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Todos os participantes operavam placas eletrônicas e soldavam motores em conjunto."
+        },
+        {
+          "id": "a2",
+          "text": "Os novatos cuidavam da limpeza e fotografia, enquanto os veteranos faziam o trabalho técnico pesado."
+        },
+        {
+          "id": "a3",
+          "text": "Os veteranos fotografavam o evento e os novatos consertavam os micro-ondas."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Enquanto os voluntários novatos dedicam-se a tarefas periféricas de baixo risco — como a limpeza externa de gabinetes, a organização de parafusos miúdos e, sobretudo, a captação de fotografias sorridentes para as redes sociais institucionais —, os veteranos realizam o trabalho pesado de diagnóstico de placas, solda de precisão e recondicionamento de motores.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o episódio envolvendo o lote de micro-ondas industriais revela sobre a gestão do projeto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que a administração prioriza a capacitação técnica contínua dos cidadãos amadores em horários noturnos."
+        },
+        {
+          "id": "a2",
+          "text": "Que os hospitais regionais frequentemente doam equipamentos perfeitamente funcionais para testes."
+        },
+        {
+          "id": "a3",
+          "text": "Que a coordenação confia cegamente em uma retórica inclusiva que falha na hora de resolver crises técnicas complexas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Diante do volume inesperado e da complexidade técnica dos circuitos de alta tensão, a coordenação do projeto recorreu imediatamente à cartilha da participação popular, convocando uma força-tarefa aberta.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Com qual finalidade o autor menciona o trabalho noturno de Antunes e Cláudia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para ilustrar o contraste entre a exaustão real dos técnicos e a narrativa oficial de união comunitária."
+        },
+        {
+          "id": "a2",
+          "text": "Para demonstrar que os micro-ondas hospitalares poderiam ter sido consertados durante o dia sem problemas."
+        },
+        {
+          "id": "a3",
+          "text": "Para comprovar que o conselho municipal fornecia café e ferramentas adequadas aos trabalhadores."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A narrativa oficial, contudo, ignorou completamente a exaustão desses profissionais, preferindo creditar o salvamento do lote ao espírito vibrante de união comunitária e ao engajamento coletivo dos cidadãos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual termo melhor descreve o tom predominante do autor ao examinar o impacto social do projeto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta"
+        },
+        {
+          "id": "a2",
+          "text": "Cítico"
+        },
+        {
+          "id": "a3",
+          "text": "Irônico"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A insistência da gestão em romantizar a horizontalidade serve, na prática, para encobrir a precarização do trabalho técnico voluntário e apropriação indevida de competências especializadas em nome de uma métrica vazia de participação quantitativa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto da leitura, o que o vocábulo 'ônus' expressa em relação ao esforço coletivo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A remuneração financeira distribuída igualmente entre todos os voluntários novatos."
+        },
+        {
+          "id": "a2",
+          "text": "O reconhecimento público e os certificados concedidos pela prefeitura local."
+        },
+        {
+          "id": "a3",
+          "text": "A carga pesada e a responsabilidade física e mental que recaem sobre os especialistas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Essa divisão não declarada do trabalho gera um paradoxo incômodo: o capital simbólico do projeto é distribuído uniformemente entre todos os participantes por meio de certificados e tapinhas nas costas, ao passo que o ônus físico e mental do esforço especializado recai exclusivamente sobre aqueles que já possuem o conhecimento prévio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva uma resenha crítica de duzentas palavras avaliando um projeto comunitário de sua escolha, discutindo o conflito entre o reconhecimento público generalizado e a dependência do esforço invisível de poucos especialistas.",
+      "en": "Escreva uma resenha crítica de duzentas palavras avaliando um projeto comunitário de sua escolha, discutindo o conflito entre o reconhecimento público generalizado e a dependência do esforço invisível de poucos especialistas."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leia a resenha crítica a seguir e responda às questões para demonstrar compreensão avançada de texto, vocabulário e nuances argumentativas em português brasileiro.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão do Conserto Coletivo | C1 Reading | WeLearn",
+      "en": "A Ilusão do Conserto Coletivo | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre os bastidores do projeto de reparo comunitário Oficina Fênix, onde a celebração pública do voluntariado oculta uma assimetria profunda na divisão do trabalho técnico.",
+      "en": "Uma análise crítica sobre os bastidores do projeto de reparo comunitário Oficina Fênix, onde a celebração pública do voluntariado oculta uma assimetria profunda na divisão do trabalho técnico."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

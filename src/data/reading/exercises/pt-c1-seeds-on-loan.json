@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Semente Omitida",
+      "en": "A Semente Omitida"
+    },
+    "intro": {
+      "es": "Um conto complexo sobre a disputa velada entre duas famílias pelo reconhecimento da preservação de uma semente crioula milenar na Serra dos Vales.",
+      "en": "Um conto complexo sobre a disputa velada entre duas famílias pelo reconhecimento da preservação de uma semente crioula milenar na Serra dos Vales."
+    },
+    "mission": {
+      "es": "Leia o conto abaixo, analise as sutilezas da disputa familiar em torno do patrimônio genético local, responda às questões de compreensão e produza um texto crítico argumentando sobre a ética da preservação sem registros oficiais.",
+      "en": "Leia o conto abaixo, analise as sutilezas da disputa familiar em torno do patrimônio genético local, responda às questões de compreensão e produza um texto crítico argumentando sobre a ética da preservação sem registros oficiais."
+    },
+    "targetText": "A cozinha de Helena cheirava a toucinho frito e a terra revolvida, um aroma denso que parecia impregnar a madeira rústica das vigas e as paredes caiadas de cal. Ali, sobre a mesa de carvalho maciço, repousava o verdadeiro motivo da discórdia: uma pequena vasilha de barro contendo dezenas de grãos de feijão-fava de coloração púrpura e manchas douradas, conhecidos na região como o Fava-da-Serra. Enquanto o vento soprasse forte pelas frestas da janela da frente, anunciando a chegada de uma geada tardia, a tensão entre os presentes permanecia palpável, quase física. Helena ajustava o xale de lã sobre os ombros com movimentos deliberados, fitando o cunhado, Arnaldo, que ocupava o banco do canto com a postura de quem se considerava o único legítimo herdeiro daquela sabedoria ancestral. Para Arnaldo, a safra que vingava todos os anos nos fundos do seu sítio era fruto exclusivo da rigorosa seleção que seu falecido pai realizara, ano após ano, isolando as vagens mais resistentes às pragas e à seca prolongada, sem que jamais houvesse a necessidade de recorrer a anotações em cadernos ou a métodos científicos modernos.\n\nContudo, a narrativa que sustentava a supremacia dos Arnaldo esbarrava na memória igualmente tenaz e nos registros invisíveis guardados por Helena e sua linhagem. Ela argumentava, com a calma cortante de quem conhecia cada palmo daquele solo, que a sobrevivência daquela variedade específica nunca dependera de um único método ou de uma mente isolada, mas sim de um complexo arranjo de trocas comunitárias que ocorria nos dias de feira em São Vicente das Pedras. Segundo a sua perspectiva, enquanto os homens da família de Arnaldo guardavam zelosamente as sementes em paióis trancados, foram as mulheres da sua própria família que, diante da fome severa de épocas passadas, arriscaram plantar os poucos grãos que restavam em solos ácidos e margens de riachos, garantindo que o material genético não se extinguisse. A disputa, portanto, não versava apenas sobre sacas de feijão ou hectares cultivados, mas sobre quem detinha a autoridade moral para contar a gênese daquela resistência agrícola que jamais havia sido registrada em nenhum documento oficial da prefeitura.\n\nA atmosfera na sala tornou-se ainda mais irrespirável quando o mediador da comunidade, o velho farmacêutico aposentado Seu Juvenal, pigarreou antes de intervir no debate. Juvenal, que conhecia os segredos botânicos da serra melhor do que ninguém, ponderou que ambas as versões continham fragmentos incontestáveis da verdade, embora nenhuma delas pudesse ser comprovada por meio de laudos ou cronologias escritas. Para ele, a tentativa de arrogar para si a exclusividade daquela herança revelava uma ânsia moderna por propriedade e controle, algo paradoxal em se tratando de sementes crioulas que, por definição, pertenciam ao fluxo coletivo da terra. Arnaldo, contudo, recusava qualquer concessão à tese de Juvenal, insistindo que sem o esforço metódico de sua linhagem no manejo das sementes, o patrimônio teria apodrecido no esquecimento há décadas. Para ele, a intuição sem disciplina não passava de sorte.\n\nHelena, por sua vez, rechaçava essa leitura com um sorriso irônico que deixava transparecer o peso de décadas de silenciamento institucional. Ela lembrava que a ausência de registros escritos não equivalia à ausência de método, mas sim a uma escolha política de proteger o saber tradicional contra a sanha de patenteamento que rondava as cooperativas da região metropolitana. Em sua visão, ao transformar a semente em um troféu de mérito familiar, Arnaldo involuntariamente abria portas para que agências externas viessem reclamar direitos sobre o material genético, ameaçando a autonomia que eles tanto custaram a manter. A discussão parecia caminhar para um impasse intransponível, alimentada pelo orgulho ferido e pela urgência de legitimar identidades perante o restante da comunidade rural.\n\nÀ medida que a tarde avançava e a luz dourada do crepúsculo começava a tingir os campos de capim-sape, a fava púrpura continuava intocada no centro da mesa, como um altar mudo em torno do qual giravam duas visões irreconciliáveis do passado. Nenhuma das partes cedeu um centímetro em suas convicções, e a promessa de criar um banco comunitário de sementes parecia agora mais distante do que nunca, soterrada sob o peso de ressentimentos antigos e vaidades locais. A herança da terra, ao invés de unir as famílias em torno de um propósito comum, transformou-se em um espelho cruel que refletia a incapacidade humana de compartilhar aquilo que a própria natureza generosamente oferecia sem pedir em troca.",
+    "wordCount": 724,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "púrpura",
+        "lemma": "púrpura",
+        "glosses": {
+          "es": "purple",
+          "en": "purple"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paióis",
+        "lemma": "paióis",
+        "glosses": {
+          "es": "barns or storehouses",
+          "en": "barns or storehouses"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanha",
+        "lemma": "sanha",
+        "glosses": {
+          "es": "fury or aggressive eagerness",
+          "en": "fury or aggressive eagerness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "stalemate",
+          "en": "stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "crepúsculo",
+        "lemma": "crepúsculo",
+        "glosses": {
+          "es": "twilight",
+          "en": "twilight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "soterrada",
+        "lemma": "soterrada",
+        "glosses": {
+          "es": "buried",
+          "en": "buried"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 34.5,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no conflito entre as duas famílias?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A divergência sobre quem merece o crédito pela preservação de uma semente crioula tradicional."
+        },
+        {
+          "id": "a2",
+          "text": "A disputa de terras para o plantio comercial em grande escala."
+        },
+        {
+          "id": "a3",
+          "text": "A competição financeira pela exclusividade na venda de grãos para o governo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "o verdadeiro motivo da discórdia: uma pequena vasilha de barro contendo dezenas de grãos de feijão-fava de coloração púrpura e manchas douradas, conhecidos na região como o Fava-da-Serra.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que Arnaldo utilizava para sustentar sua alegação de exclusividade na preservação das sementes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Documentos oficiais emitidos pela prefeitura de São Vicente das Pedras."
+        },
+        {
+          "id": "a2",
+          "text": "A rigorosa seleção anual realizada por seu falecido pai sem o uso de anotações."
+        },
+        {
+          "id": "a3",
+          "text": "Cadernos antigos com anotações botânicas detalhadas deixadas por seus ancestrais."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a safra que vingava todos os anos nos fundos do seu sítio era fruto exclusivo da rigorosa seleção que seu falecido pai realizara, ano após ano, isolando as vagens mais resistentes às pragas e à seca prolongada, sem que jamais houvesse a necessidade de recorrer a anotações em cadernos ou a métodos científicos modernos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que Helena defendia que a ausência de registros escritos era, na verdade, uma escolha deliberada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque sua família não sabia ler nem escrever na época em que iniciou o cultivo."
+        },
+        {
+          "id": "a2",
+          "text": "Porque os registros escritos eram considerados proibidos pelas leis religiosas locais."
+        },
+        {
+          "id": "a3",
+          "text": "Para evitar que o conhecimento tradicional fosse roubado por corporações e cooperativas externas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a ausência de registros escritos não equivalia à ausência de método, mas sim a uma escolha política de proteger o saber tradicional contra a sanha de patenteamento que rondava as cooperativas da região metropolitana.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual era a intenção de Seu Juvenal ao intervir na discussão entre Helena e Arnaldo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar que ambos possuíam parte da razão, criticando a ânsia moderna por controle e propriedade."
+        },
+        {
+          "id": "a2",
+          "text": "Apoiar formalmente a versão de Arnaldo por considerá-la cientificamente mais rigorosa."
+        },
+        {
+          "id": "a3",
+          "text": "Propor a divisão imediata das terras cultivadas entre os membros das duas famílias."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a tentativa de arrogar para si a exclusividade daquela herança revelava uma ânsia moderna por propriedade e controle, algo paradoxal em se tratando de sementes crioulas que, por definição, pertenciam ao fluxo coletivo da terra.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser caracterizado o tom predominante do autor ao descrever o desfecho da reunião?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso, indicando que as famílias logo entrariam em um acordo duradouro."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e pessimista, destacando a incapacidade humana de compartilhar a herança natural."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro e jornalístico, limitando-se a relatar os fatos sem emitir juízo de valor."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Nenhuma das partes cedeu um centímetro em suas convicções, e a promessa de criar um banco comunitário de sementes parecia agora mais distante do que nunca, soterrada sob o peso de ressentimentos antigos e vaidades locais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto da narrativa, o que significa a palavra 'sanha' no trecho que aborda o patenteamento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Desejo urgente de proteção ambiental."
+        },
+        {
+          "id": "a2",
+          "text": "Desinteresse profundo e apatia."
+        },
+        {
+          "id": "a3",
+          "text": "Ganância ou ânsia agressiva."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "proteger o saber tradicional contra a sanha de patenteamento que rondava as cooperativas da região metropolitana.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de 200 a 250 palavras discutindo os dilemas éticos da preservação de patrimônios genéticos tradicionais sem registros formais. Analise como a disputa por reconhecimento pode tanto proteger quanto ameaçar a continuidade de saberes comunitários.",
+      "en": "Escreva um texto argumentativo de 200 a 250 palavras discutindo os dilemas éticos da preservação de patrimônios genéticos tradicionais sem registros formais. Analise como a disputa por reconhecimento pode tanto proteger quanto ameaçar a continuidade de saberes comunitários."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leia o conto abaixo, analise as sutilezas da disputa familiar em torno do patrimônio genético local, responda às questões de compreensão e produza um texto crítico argumentando sobre a ética da preservação sem registros oficiais.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Semente Omitida | C1 Reading | WeLearn",
+      "en": "A Semente Omitida | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um conto complexo sobre a disputa velada entre duas famílias pelo reconhecimento da preservação de uma semente crioula milenar na Serra dos Vales.",
+      "en": "Um conto complexo sobre a disputa velada entre duas famílias pelo reconhecimento da preservação de uma semente crioula milenar na Serra dos Vales."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

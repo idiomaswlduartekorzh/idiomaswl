@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-library-window",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Metragem",
+      "en": "A Ilusão da Metragem"
+    },
+    "intro": {
+      "es": "Um excerto do diário da diretora Marta Vasconcelos expõe as contradições entre estender o horário de atendimento e promover a real inclusão cultural na Biblioteca Pública Municipal de Vila Serena.",
+      "en": "Um excerto do diário da diretora Marta Vasconcelos expõe as contradições entre estender o horário de atendimento e promover a real inclusão cultural na Biblioteca Pública Municipal de Vila Serena."
+    },
+    "mission": {
+      "es": "Analise o texto literário de nível avançado, compreenda as nuances retóricas e resolva os exercícios de interpretação textual em português brasileiro.",
+      "en": "Analise o texto literário de nível avançado, compreenda as nuances retóricas e resolva os exercícios de interpretação textual em português brasileiro."
+    },
+    "targetText": "Sexta-feira marcou o encerramento do primeiro trimestre sob o novo regime de jornada estendida na Biblioteca Pública Municipal de Vila Serena. Quando a prefeitura decretou, com pompa em jornais e redes sociais, que nossas portas permaneceriam abertas até as dez da noite, a medida foi recebida por grande parte da imprensa local como um triunfo da democratização do acesso. Afinal, argumentavam os entusiastas da modernização administrativa, a extensão horária dissolveria o suposto descompasso entre a rotina da classe trabalhadora e a disponibilidade institucional de nosso acervo. Contudo, passados noventa dias de corredores iluminados até tarde, a realidade operacional revelou um paradoxo sutil que insiste em escapar aos entusiastas das estatísticas de frequência: há um abismo intransponível entre estender o horário e tornar um espaço verdadeiramente acessível. Nas primeiras semanas, a novidade atraiu um contingente curioso. Estudantes universitários em busca de silêncio noturno, freelancers com laptops reluzentes e leitores contumazes que antes corriam contra o relógio para devolver romances pontualmente ocuparam as mesas de leitura. Os balcões de atendimento registravam um pico noturno visível, e os relatórios mensais exibiam números inflados que a administração municipal exibia como prova cabal de sucesso. No entanto, uma observação mais atenta dos fluxos internos e das conversas mantidas com os frequentadores habituais revelava que o perfil dos usuários havia se estreitado, em vez de se diversificar. Quem realmente usufruía daquelas quatro horas extras não eram os operários da zona industrial que saíam dos turnos exaustivos às dezoito horas — estes continuavam a enfrentar barreiras estruturais invisíveis, como a escassez de linhas de transporte público integradas após o anoitecer e o cansaço acumulado que impedia qualquer atividade intelectual de lazer. Em vez disso, o benefício concentrava-se quase exclusivamente em uma elite intelectual urbana e em profissionais autônomos com alta flexibilidade de agenda, os quais já dispunham de margem temporal durante o período diurno, mas preferiam a atmosfera rarefeita e silenciosa da biblioteca noturna. O conflito atingiu seu ápice na última terça-feira, quando Cláudia, nossa bibliotecária sênior do setor circulante, apresentou sua carta de demissão em caráter irrevogável. Cláudia argumentou, com a lucidez cortante de quem dedicou três décadas àquela instituição, que a biblioteca estava sacrificando sua alma comunitária em altar de metas quantitativas vazias. Segundo seu relato emocionado, o orçamento suplementar necessário para manter o funcionamento noturno — que exigia iluminação industrial, segurança reforçada e equipes de limpeza adicionais — havia sido extraído diretamente das verbas destinadas à aquisição de novos livros e à manutenção dos programas de extensão nos bairros periféricos. Enquanto o saguão central brilhava ostensivamente para acolher dez ou quinze leitores privilegiados nas últimas horas da noite, as bibliotecas comunitárias das vilas distantes viam seus acervos encolherem por falta de reposição e suas oficinas de leitura infantil serem sumariamente canceladas por falta de recursos materiais básicos. A diretoria da prefeitura, contudo, permanece impermeável a esses argumentos qualitativos, preferindo aferrar-se ao conforto numérico dos gráficos ascendentes. Para eles, a contagem de catracas é o único indicador de vitalidade cívica que merece crédito. Ao refletir sobre esses acontecimentos à luz da lâmpada fraca da minha sala, percebo que nossa obsessão contemporânea por métricas de produtividade acabou por esvaziar o sentido cívico do espaço público. Abrir mais tempo não passa de um eufemismo conveniente para justificar a precarização das bases estruturais que sustentam a verdadeira equidade. Resta-nos saber se teremos a coragem institucional necessária para admitir que a métrica do relógio jamais substituirá o critério da justiça social.\n\nEssa miopia administrativa, longe de ser um caso isolado, espelha um sintoma alarmante da gestão pública contemporânea, que confunde a mera disponibilidade física de um serviço com a sua efetiva apropriação democrática. A perda irreparável de Cláudia expôs a ferida aberta de uma instituição que, ao tentar se moldar às exigências de uma suposta modernidade acelerada, acabou por trair justamente aqueles que mais necessitavam de seu acolhimento transformador. Afinal, a verdadeira democratização do saber não se mede pela quantidade de lúmens que iluminam mesas vazias após o expediente, mas pela capacidade capilar de alcançar as margens esquecidas da cidade, onde o acesso aos livros deveria funcionar como ferramenta primordial de emancipação. Se persistirmos no erro de priorizar a grandiosidade estatística em detrimento da justiça distributiva, correremos o risco iminente de transformar nossos templos do saber em meros escritórios de conveniência para poucos, sepultando de vez o ideal republicano de que a cultura pertence a todos, e não apenas aos que podem pagar o luxo de esperar o relógio avançar.",
+    "wordCount": 741,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "paradoxo",
+        "lemma": "paradoxo",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contingente",
+        "lemma": "contingente",
+        "glosses": {
+          "es": "contingent or group",
+          "en": "contingent or group"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irrevogável",
+        "lemma": "irrevogável",
+        "glosses": {
+          "es": "irrevocable",
+          "en": "irrevocable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impermeável",
+        "lemma": "impermeável",
+        "glosses": {
+          "es": "impervious or unresponsive",
+          "en": "impervious or unresponsive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eufemismo",
+        "lemma": "eufemismo",
+        "glosses": {
+          "es": "euphemism",
+          "en": "euphemism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "equidade",
+        "lemma": "equidade",
+        "glosses": {
+          "es": "equity",
+          "en": "equity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.2,
+      "maxSentenceWords": 58,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no diário da diretora Marta Vasconcelos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A discrepância entre o aumento do horário de funcionamento e a real inclusão social."
+        },
+        {
+          "id": "a2",
+          "text": "A urgência de modernizar a infraestrutura tecnológica do acervo municipal."
+        },
+        {
+          "id": "a3",
+          "text": "A necessidade de demitir funcionários para cobrir os custos operacionais."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a realidade operacional revelou um paradoxo sutil que insiste em escapar aos entusiastas das estatísticas de frequência: há um abismo intransponível entre estender o horário e tornar um espaço verdadeiramente acessível.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quem foram os principais beneficiados pelo novo horário estendido da biblioteca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Operários da zona industrial."
+        },
+        {
+          "id": "a2",
+          "text": "Uma elite intelectual urbana."
+        },
+        {
+          "id": "a3",
+          "text": "Crianças dos bairros periféricos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o benefício concentrava-se quase exclusivamente em uma elite intelectual urbana e em profissionais autônomos com alta flexibilidade de agenda",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que se pode deduzir sobre a reação da prefeitura diante das críticas apresentadas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A prefeitura cancelará imediatamente o programa de horário noturno."
+        },
+        {
+          "id": "a2",
+          "text": "Os governantes planejam expandir ainda mais o orçamento para os bairros."
+        },
+        {
+          "id": "a3",
+          "text": "A administração municipal prioriza indicadores quantitativos em detrimento da qualidade social."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A diretoria da prefeitura, contudo, permanece impermeável a esses argumentos qualitativos, preferindo aferrar-se ao conforto numérico dos gráficos ascendentes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o principal objetivo da menção à demissão da bibliotecária Cláudia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar o conflito interno e o desvio de recursos das periferias para sustentar o horário noturno."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar a incompetência administrativa da diretora Marta Vasconcelos."
+        },
+        {
+          "id": "a3",
+          "text": "Comprovar que os leitores noturnos eram violentos e desrespeitosos com os funcionários."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Segundo seu relato emocionado, o orçamento suplementar necessário para manter o funcionamento noturno — que exigia iluminação industrial, segurança reforçada e equipes de limpeza adicionais — havia sido extraído diretamente das verbas destinadas à aquisição de novos livros",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual palavra melhor descreve o tom geral do diário ao refletir sobre as métricas municipais?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasmado."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "percebo que nossa obsessão contemporânea por métricas de produtividade acabou por esvaziar o sentido cívico do espaço público.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'impermeável' ao descrever a postura da prefeitura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que possui instalações físicas protegidas contra infiltrações de chuva."
+        },
+        {
+          "id": "a2",
+          "text": "Que aceita prontamente todas as sugestões dos funcionários seniores."
+        },
+        {
+          "id": "a3",
+          "text": "Que não se deixa sensibilizar ou convencer por argumentos qualitativos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A diretoria da prefeitura, contudo, permanece impermeável a esses argumentos qualitativos, preferindo aferrar-se ao conforto numérico dos gráficos ascendentes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a extensão de horários em espaços públicos culturais realmente promove a inclusão ou se frequentemente serve apenas para atender a interesses de elites privilegiadas.",
+      "en": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a extensão de horários em espaços públicos culturais realmente promove a inclusão ou se frequentemente serve apenas para atender a interesses de elites privilegiadas."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise o texto literário de nível avançado, compreenda as nuances retóricas e resolva os exercícios de interpretação textual em português brasileiro.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Metragem | C1 Reading | WeLearn",
+      "en": "A Ilusão da Metragem | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um excerto do diário da diretora Marta Vasconcelos expõe as contradições entre estender o horário de atendimento e promover a real inclusão cultural na Biblioteca Pública Municipal de Vila Serena.",
+      "en": "Um excerto do diário da diretora Marta Vasconcelos expõe as contradições entre estender o horário de atendimento e promover a real inclusão cultural na Biblioteca Pública Municipal de Vila Serena."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

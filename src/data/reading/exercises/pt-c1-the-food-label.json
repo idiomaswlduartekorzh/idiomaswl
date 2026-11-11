@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-the-food-label",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Semântica da Sobra: Uma Análise Comparativa dos Selos de Consumo Consciente",
+      "en": "A Semântica da Sobra: Uma Análise Comparativa dos Selos de Consumo Consciente"
+    },
+    "intro": {
+      "es": "Analise a resenha crítica sobre rotulagem alimentar avançada e resolva os exercícios de interpretação textual em nível C1.",
+      "en": "Analise a resenha crítica sobre rotulagem alimentar avançada e resolva os exercícios de interpretação textual em nível C1."
+    },
+    "mission": {
+      "es": "Leia o texto atentamente e complete os exercícios de compreensão leitora e análise crítica.",
+      "en": "Leia o texto atentamente e complete os exercícios de compreensão leitora e análise crítica."
+    },
+    "targetText": "A culinária contemporânea urbana enfrenta um dilema logístico e moral que vai muito além das portas das cozinhas profissionais, adentrando o terreno pantanoso da semântica comercial. Na última terça-feira, a inspetora sanitária Beatriz Mendes e o gastrólogo Ricardo Vianna cruzaram caminhos em uma auditoria minuciosa na distribuidora municipal Sabor & Ciclo, onde o verdadeiro embate não se deu sobre a refrigeração dos insumos, mas sobre a filosofia impressa em duas etiquetas recém-lançadas para mitigar o desperdício doméstico. O artefato do primeiro fabricante, batizado de \"Guia de Longevidade Sensorial\", aposta na moderação analítica: o selo sugere que o consumidor verifique a integridade do alimento por meio de testes táteis e olfativos antes de descartá-lo após o prazo nominal. Em contrapartida, a rival \"Rede Sustenta\" introduziu o emblema \"Ciclo Integral\", um adesivo minimalista que estampa uma contagem regressiva em cores vibrantes, associando o descarte imediato a uma falha ética imperdoável na gestão do lar. Durante a inspeção nas câmaras frias da distribuidora, Beatriz argumentou que a abordagem de Ricardo e sua equipe na Sabor & Ciclo dependia excessivamente da boa-fé do comprador, cuja capacidade de discernir um indício patogênico de uma simples oxidação superficial é notoriamente falha.\n\nPara Ricardo, contudo, a imposição de um padrão estrito de descarte pelo selo \"Ciclo Integral\" mascara uma estratégia corporativa perversa de obsolescência programada disfarçada de virtude ecológica. Ele defendeu perante a fiscal que a etiqueta da concorrente manipula a ansiedade do consumidor urbano através de um alarmismo calculado, transformando o medo do envenenamento alimentar em um gatilho para compras mais frequentes. A divergência conceitual entre os dois rótulos escancara uma fenda profunda na arquitetura da sustentabilidade moderna: enquanto a moderação sensorial apela para o resgate de uma autonomia empírica perdida — exigindo do indivíduo um grau de discernimento que a vida moderna atrofiou —, a contagem regressiva do \"Ciclo Integral\" terceiriza o julgamento humano a um algoritmo de conveniência que favorece os interesses logísticos dos grandes conglomerados varejistas, os quais lucram enormemente com a substituição acelerada de despensas inteiras.\n\nA tensão atingiu seu ápice quando Beatriz confrontou Ricardo com os relatórios preliminares de desempenho obtidos na manhã daquela mesma terça-feira, momentos antes da abertura oficial dos portões para o público e os fornecedores locais. Os dados mostravam que, embora o selo \"Ciclo Integral\" gerasse uma redução drástica de cem gramas na massa média dos resíduos orgânicos descartados nas lixeiras das residências piloto, ele provocava simultaneamente um aumento de trinta por cento nas compras por impulso de reposição. Os cidadãos, aterrorizados pelo piscar vermelho da etiqueta que proclamava o fim da validade primária, corriam para os supermercados para recompor seus estoques com produtos novos, neutralizando o ganho ecológico inicial sob uma avalanche de novas embalagens plásticas e emissões de transporte. Ricardo ponderou que tal paradoxo confirmava sua tese de que a sustentabilidade punitiva é um oxímoro comercial, uma vez que o alívio da consciência ecológica do consumidor se paga com o sacrifício de sua sobriedade financeira e o adensamento da pegada de carbono sistêmica.\n\nDiante da constatação empírica, Beatriz ponderou que a ineficácia relativa de ambos os modelos reside na recusa coletiva em aceitar a imperfeição inerente aos ciclos biológicos dos alimentos naturais. Para a inspetora, a linguagem dos rótulos oscila peligrosamente entre o paternalismo alarmista e a condescendência imprudente, falhando em educar o cidadão para o risco real em prol de uma pacificação estética da consciência moderna. A fiscal notou que a insistência em transformar a conservação de alimentos em um imperativo moral gera um efeito rebote: quanto mais rigorosa a advertência gráfica, mais o público se distancia da experimentação culinária intuitiva, refugiando-se em alimentos ultraprocessados que vêm acompanhados de garantias químicas artificiais de durabilidade prolongada. O debate, portanto, extrapolou a mera contabilidade de resíduos orgânicos para revelar a profunda alienação da sociedade contemporânea em relação à matéria orgânica que consome.\n\nO desfecho dessa auditoria não se traduziu em multas ou apreensões, mas na formulação de um termo de ajustamento de conduta provisório que suspendeu o uso de ambos os selos nas prateleiras da Sabor & Ciclo até que um comitê independente avaliasse o impacto psicológico real das mensagens. Enquanto Ricardo recolhia os rolos de etiquetas para o fundo da sala de despacho, a distribuidora municipal viu-se temporariamente sem qualquer ferramenta de comunicação visual para orientar seus clientes, um vácuo semiótico que evidenciou a fragilidade das soluções simplistas para problemas estruturais complexos. A inspeção encerrou-se sob o som abafado dos motores de refrigeração, deixando no ar a desconfortável certeza de que nenhum adesivo conseguirá resolver o desperdício alimentar enquanto o ato de comer permanecer desconectado da compreensão lúcida de seus ciclos de deterioração e renovação.",
+    "wordCount": 770,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "obsolescência programada",
+        "lemma": "obsolescência programada",
+        "glosses": {
+          "es": "planned obsolescence",
+          "en": "planned obsolescence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alarmismo calculado",
+        "lemma": "alarmismo calculado",
+        "glosses": {
+          "es": "calculated alarmism",
+          "en": "calculated alarmism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arquitetura da sustentabilidade",
+        "lemma": "arquitetura da sustentabilidade",
+        "glosses": {
+          "es": "sustainability architecture",
+          "en": "sustainability architecture"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "oxímoro comercial",
+        "lemma": "oxímoro comercial",
+        "glosses": {
+          "es": "commercial oxymoron",
+          "en": "commercial oxymoron"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vácuo semiótico",
+        "lemma": "vácuo semiótico",
+        "glosses": {
+          "es": "semiotic vacuum",
+          "en": "semiotic vacuum"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienação da sociedade",
+        "lemma": "alienação da sociedade",
+        "glosses": {
+          "es": "alienation of society",
+          "en": "alienation of society"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 40.5,
+      "maxSentenceWords": 78,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o foco central da discussão entre Beatriz e Ricardo na distribuidora municipal?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O impacto ideológico e comportamental de duas etiquetas concorrentes voltadas para o desperdício."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade de aplicar multas severas aos fabricantes que violam as normas de refrigeração."
+        },
+        {
+          "id": "a3",
+          "text": "A urgência de substituir todos os alimentos naturais por opções ultraprocessadas e duráveis."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a auditoria minuciosa na distribuidora municipal Sabor & Ciclo, onde o verdadeiro embate não se deu sobre a refrigeração dos insumos, mas sobre a filosofia impressa em duas etiquetas recém-lançadas para mitigar o desperdício doméstico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que os relatórios preliminares revelaram sobre o desempenho do selo \"Ciclo Integral\"?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eliminou completamente o uso de embalagens plásticas na cadeia de suprimentos local."
+        },
+        {
+          "id": "a2",
+          "text": "Reduziu os resíduos orgânicos nas residências, mas elevou as compras por impulso de reposição."
+        },
+        {
+          "id": "a3",
+          "text": "Provocou a falência imediata da distribuidora devido à rejeição maciça dos consumidores."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Os dados mostravam que, embora o selo \"Ciclo Integral\" gerasse uma redução drástica de cem gramas na massa média dos resíduos orgânicos descartados nas lixeiras das residências piloto, ele provocava simultaneamente um aumento de trinta por cento nas compras por impulso de reposição.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a preferência do público por alimentos ultraprocessados sugere, segundo a análise de Beatriz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um retorno bem-sucedido às práticas agrícolas ancestrais e de baixo impacto ambiental."
+        },
+        {
+          "id": "a2",
+          "text": "A comprovação científica de que tais alimentos nunca se deterioram sob nenhuma circunstância."
+        },
+        {
+          "id": "a3",
+          "text": "Uma fuga do público diante da rigidez moral dos rótulos em busca de garantias químicas artificiais."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "quanto mais rigorosa a advertência gráfica, mais o público se distancia da experimentação culinária intuitiva, refugiando-se em alimentos ultraprocessados que vêm acompanhados de garantias químicas artificiais de durabilidade prolongada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi a finalidade prática da intervenção realizada por Beatriz ao término da auditoria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Suspender o uso de ambos os selos até que um comitê independente avalie seu impacto psicológico."
+        },
+        {
+          "id": "a2",
+          "text": "Apreender todo o estoque de alimentos da distribuidora por infração sanitária grave."
+        },
+        {
+          "id": "a3",
+          "text": "Impor o uso obrigatório do selo \"Ciclo Integral\" em todas as cozinhas urbanas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O desfecho dessa auditoria não se traduziu em multas ou apreensões, mas na formulação de um termo de ajustamento de conduta provisório que suspendeu o uso de ambos os selos nas prateleiras da Sabor & Ciclo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o narrador caracteriza a eficácia das soluções baseadas exclusivamente em rotulagem simplista?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como um marco revolucionário que garantiu a completa erradicação do desperdício culinário."
+        },
+        {
+          "id": "a2",
+          "text": "Como uma ilusão semiótica frágil que falha em resolver problemas estruturais complexos."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma iniciativa irrelevante que não gerou nenhum tipo de debate entre os especialistas."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "um vácuo semiótico que evidenciou a fragilidade das soluções simplistas para problemas estruturais complexos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Qual o significado da expressão \"oximoro comercial\" no contexto da argumentação de Ricardo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma estratégia publicitária infalível que garante lucro imediato e sustentabilidade plena."
+        },
+        {
+          "id": "a2",
+          "text": "Um acordo comercial firmado entre concorrentes para padronizar os preços dos alimentos."
+        },
+        {
+          "id": "a3",
+          "text": "Uma contradição inerente onde a suposta sustentabilidade punitiva fomenta o consumo excessivo."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ricardo ponderou que tal paradoxo confirmava sua tese de que a sustentabilidade punitiva é um oxímo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de 200 a 250 palavras discutindo se a rotulagem de alimentos deve priorizar a autonomia sensorial do consumidor ou a automação de alertas de descarte, utilizando argumentos críticos presentes na leitura.",
+      "en": "Escreva um texto argumentativo de 200 a 250 palavras discutindo se a rotulagem de alimentos deve priorizar a autonomia sensorial do consumidor ou a automação de alertas de descarte, utilizando argumentos críticos presentes na leitura."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Leia o texto atentamente e complete os exercícios de compreensão leitora e análise crítica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Semântica da Sobra: Uma Análise Comparativa dos Selos de Consumo Consciente | C1 Reading | WeLearn",
+      "en": "A Semântica da Sobra: Uma Análise Comparativa dos Selos de Consumo Consciente | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analise a resenha crítica sobre rotulagem alimentar avançada e resolva os exercícios de interpretação textual em nível C1.",
+      "en": "Analise a resenha crítica sobre rotulagem alimentar avançada e resolva os exercícios de interpretação textual em nível C1."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}

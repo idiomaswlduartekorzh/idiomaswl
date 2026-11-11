@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "portuguese C1"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Cura das Vozes Rasgadas",
+      "en": "A Cura das Vozes Rasgadas"
+    },
+    "intro": {
+      "es": "Leia o conto abaixo sobre o dilema ético de um arquivista e de uma contadora de histórias diante da preservação de registros orais.",
+      "en": "Leia o conto abaixo sobre o dilema ético de um arquivista e de uma contadora de histórias diante da preservação de registros orais."
+    },
+    "mission": {
+      "es": "Analise a narrativa para compreender os conflitos sutis entre a pureza documental e a inteligibilidade estética na custódia da memória oral.",
+      "en": "Analise a narrativa para compreender os conflitos sutis entre a pureza documental e a inteligibilidade estética na custódia da memória oral."
+    },
+    "targetText": "O laboratório de restauração sonora do Instituto de Etnografia Urbana parecia mais uma capela secular do que um escritório técnico. Entre estantes de fitas magnéticas e arquivos digitais, o arquivista Heitor limpava o suor da testa com um lenço de linho. À sua frente, a contadora de histórias Beatriz examinava o espectrograma de áudio na tela de alta definição, onde a voz de Dona Caurica — uma rezadeira do interior paulista — exibia interrupções abruptas, hesitações e um sem-número de desvios da norma culta gramatical. Para Heitor, cuja formação rígida o impelia à assepsia documental, cada falha na concordância e cada gaguejamento representavam ruídos a serem metodicamente atenuados ou corrigidos na transcrição que acompanharia o acervo público. No entanto, Beatriz enxergava naquele mesmo traçado acústico a ossatura viva de uma identidade que ruiria caso fosse submetida à esterilização sintática. O embate entre os dois profissionais não era inédito, mas naquela tarde chuvosa atingiu um ponto de inflexão incontornável, pois o prazo para a entrega do dossiê definitivo vencia ao amanhecer.\n\nHeitor argumentava, com a compostura polida de quem defendia a legibilidade institucional, que deixar a transcrição repleta de anomalias sintáticas expunha os informantes ao ridículo acadêmico e feria a solenidade do repositório nacional. A seu ver, a língua escrita possuía leis soberanas que não podiam ser transigidas sob o pretexto de um purismo folclórico ingênuo; para ele, a correção gramatical operava como um ato de tradução civilizatória que elevava a fala popular ao estatuto de documento digno de estudo. Beatriz, por sua vez, rebatia com veemência que o timbre daquela voz, com suas pausas hesitantes e solavancos morfológicos, constituía o próprio tecido conjuntivo da experiência vivida por Dona Caurica. Ela sustentava que a gramática normativa, ao impor uma ordem geométrica sobre a cacofonia orgânica da vida, funcionava como uma tesoura cirúrgica que amputava a carne viva da narrativa para embalsamar um cadáver estético. A concessão que Beatriz fazia repousava na aceitação de notas de rodapé explicativas, mas jamais na adulteração do texto falado, pois alterar o arranjo das palavras equivalia a silenciar a respiração original do locutor.\n\nEnquanto a discussão se acalorava, Heitor destacou um trecho específico da gravação onde Dona Caurica repetia três vezes o pronome antes de concluir a frase sobre a seca na roça, sugerindo que a eliminação das repisas tornaria o depoimento fluido sem alterar o sentido lógico da narrativa. Beatriz, aproximando-se da mesa de mistura, encostou a mão sobre o botão de volume e relembrou ao colega que a repetição não era um defeito lógico, mas a própria ferramenta rítmica pela qual a anciã cadenciava o sofrimento e a resignação perante a perda da colheita. A tensão entre o rigor taxonômico do arquivista e a devoção poética da contadora de histórias escancarava um dilema hermenêutico profundo: afinal, o arquivo histórico serve para fixar verdades unificadas ou para abrigar a polifonia desordenada das existências marginais? A recusa de Beatriz em ceder à edição ortográfica não decorria de mero capricho romântico, mas da convicção de que a linguagem oral carrega em suas fraturas a única prova legítima de sua autonomia.\n\nConforme a noite avançava, o silêncio do edifício passou a ser pontuado apenas pelo zumbido dos servidores e pelo rufar insistente da chuva contra as vidraças herméticas. Heitor cedeu parcialmente ao verificar que o comitê de avaliação exigia fidelidade absoluta às fontes primárias, embora continuasse convencido de que a preservação sem filtros acadêmicos empobrecia a recepção pública do material. Beatriz, compreendendo o cansaço do colega e reconhecendo a validade prática de tornar o acervo acessível a pesquisadores de outras regiões, concordou em incluir um glossário explicativo ao final do volume, desde que a transcrição principal permanecesse intocada em sua rudeza original. A solução de compromisso, contudo, deixava um resíduo amargo para ambos: Heitor sentia que havia falhado em sua missão de conferir dignidade técnica ao arquivo, enquanto Beatriz temia que a mera presença de notas glossariais já representasse um contágio indesejado do olhar normativo sobre a inocência da voz.\n\nO desfecho dessa madrugada de negociações resultou em um compêndio híbrido que desafiava as categorias tradicionais da arquivologia contemporânea. Quando o sol finalmente rasgou as nuvens cinzentas da madrugada, a equipe de encadernação recolheu os manuscritos prontos para a publicação definitiva, contendo tanto as hesitações sintáticas de Dona Caurica quanto as notas interpretativas meticulosamente redigidas por Heitor. Nenhuma das partes obteve a vitória absoluta que almejava no início da contenda, mas o artefato resultante provou que a memória histórica sobrevive justamente nas tensões irresolutas entre a norma que unifica e a voz que singulariza. Ao fecharem as portas do laboratório, compreendiam que a verdadeira conservação não reside na eliminação das impurezas do passado, mas na coragem de acolher o discurso humano em toda a sua incontrolável, bela e áspera desordem.",
+    "wordCount": 792,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "espectrograma",
+        "lemma": "espectrograma",
+        "glosses": {
+          "es": "spectrogram",
+          "en": "spectrogram"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assepsia",
+        "lemma": "assepsia",
+        "glosses": {
+          "es": "asepsis",
+          "en": "asepsis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inflexão",
+        "lemma": "inflexão",
+        "glosses": {
+          "es": "inflection",
+          "en": "inflection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cacofonia",
+        "lemma": "cacofonia",
+        "glosses": {
+          "es": "cacophony",
+          "en": "cacophony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "taxonômico",
+        "lemma": "taxonômico",
+        "glosses": {
+          "es": "taxonomic",
+          "en": "taxonomic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "polifonia",
+        "lemma": "polifonia",
+        "glosses": {
+          "es": "polyphony",
+          "en": "polyphony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 34.4,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:50:33.593Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central que polariza as posições de Heitor e Beatriz ao longo da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A divergência sobre se a correção gramatical na transcrição descaracteriza a autenticidade da voz oral."
+        },
+        {
+          "id": "a2",
+          "text": "A urgência de finalizar o dossiê antes do amanhecer para evitar punições administrativas."
+        },
+        {
+          "id": "a3",
+          "text": "A disputa financeira sobre a autoria das notas de rodapé no compêndio híbrido."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O embate entre os dois profissionais não era inédito, mas naquela tarde chuvosa atingiu um ponto de inflexão incontornável, pois o prazo para a entrega do dossiê definitivo vencia ao amanhecer.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Que argumento Heitor utiliza inicialmente para justificar a necessidade de corrigir a transcrição de Dona Caurica?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As fitas magnéticas estão deterioradas e exigem reescrita total para garantir legibilidade acústica."
+        },
+        {
+          "id": "a2",
+          "text": "A norma culta da língua escrita possui leis soberanas e evita expor os informantes ao ridículo acadêmico."
+        },
+        {
+          "id": "a3",
+          "text": "O comitê de avaliação exige que todos os depoimentos sigam rigorosamente a métrica poética."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Heitor argumentava, com a compostura polida de quem defendia a legibilidade institucional, que deixar a transcrição repleta de anomalias sintáticas expunha os informantes ao ridículo acadêmico e feria a solenidade do repositório nacional.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a metáfora da tesoura cirúrgica utilizada por Beatriz sugere sobre a intervenção gramatical?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que a edição ortográfica moderniza o texto e facilita a compreensão das gerações futuras."
+        },
+        {
+          "id": "a2",
+          "text": "Que o trabalho do arquivista é essencialmente medicinal e cura os vícios de linguagem."
+        },
+        {
+          "id": "a3",
+          "text": "Que a mudança sintática destrói a essência viva da narrativa para impor um padrão artificial."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ela sustentava que a gramática normativa, ao impor uma ordem geométrica sobre a cacofonia orgânica da vida, funcionava como uma tesoura cirúrgica que amputava a carne viva da narrativa para embalsamar um cadáver estético.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi o propósito prático da solução de compromisso adotada por ambos no final da madrugada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Permitir a publicação de um compêndio híbrido que mantinha o texto original acompanhado de um glossário explicativo."
+        },
+        {
+          "id": "a2",
+          "text": "Eliminar todas as repetições sintáticas para que o material pudesse ser lido em escolas públicas."
+        },
+        {
+          "id": "a3",
+          "text": "Substituir integralmente a gravação de Dona Caurica por uma versão reescrita por acadêmicos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Beatriz, compreendendo o cansaço do colega e reconhecendo a validade prática de tornar o acervo acessível a pesquisadores de outras regiões, concordou em incluir um glossário explicativo ao final do volume, desde que a transcrição principal permanecesse intocada em sua rudeza original.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o tom da narrativa evolui da discussão inicial até o fechamento do laboratório?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "De um debate estritamente cômico para uma celebração festiva da cultura popular."
+        },
+        {
+          "id": "a2",
+          "text": "De um confronto tenso e intelectualizado para uma aceitação resignada da ambiguidade."
+        },
+        {
+          "id": "a3",
+          "text": "De uma indiferença burocrática total para um rompimento profissional definitivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A solução de compromisso, contudo, deixava um resíduo amargo para ambos: Heitor sentia que havia falhado em sua missão de conferir dignidade técnica ao arquivo, enquanto Beatriz temia que a mera presença de notas glossariais já representasse um contágio indesejado do olhar normativo sobre a inocência da voz.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que o termo \"polifonia\" denota em relação ao arquivo histórico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A reprodução simultânea de ruídos sonoros captados por fitas magnéticas antigas."
+        },
+        {
+          "id": "a2",
+          "text": "O conjunto de regras gramaticais estritas exigidas pelo comitê de avaliação institucional."
+        },
+        {
+          "id": "a3",
+          "text": "A coexistência de múltiplas vozes e perspectivas desordenadas que desafiam a unificação."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A tensão entre o rigor taxonômico do arquivista e a devoção poética da contadora de histórias escancarava um dilema hermenêutico profundo: afinal, o arquivo histórico serve para fixar verdades unificadas ou para abrigar a polifonia desordenada das existências marginais?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um texto argumentativo de duzentas palavras posicionando-se sobre o dilema apresentado: deve o arquivista corrigir os desvios gramaticais de registros orais populares ou preservar integralmente a oralidade?",
+      "en": "Escreva um texto argumentativo de duzentas palavras posicionando-se sobre o dilema apresentado: deve o arquivista corrigir os desvios gramaticais de registros orais populares ou preservar integralmente a oralidade?"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analise a narrativa para compreender os conflitos sutis entre a pureza documental e a inteligibilidade estética na custódia da memória oral.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:50:33.593Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Cura das Vozes Rasgadas | C1 Reading | WeLearn",
+      "en": "A Cura das Vozes Rasgadas | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Leia o conto abaixo sobre o dilema ético de um arquivista e de uma contadora de histórias diante da preservação de registros orais.",
+      "en": "Leia o conto abaixo sobre o dilema ético de um arquivista e de uma contadora de histórias diante da preservação de registros orais."
+    },
+    "canonicalPath": "/en/practice/portuguese/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:50:33.593Z"
+  }
+}
