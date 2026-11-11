@@ -1,0 +1,4018 @@
+[
+  {
+    "id": "punti-scadenza-pilota",
+    "title": "La scadenza che non vale per tutti",
+    "area": "Marketing × fidelizzazione",
+    "areaLabel": "Marketing · fidelizzazione",
+    "role": "Giulia · responsabile CRM",
+    "teaser": "Un avviso sui punti fedeltà viene preparato per tutti, ma la modifica riguarda solo un gruppo pilota.",
+    "misunderstanding": "Una regola sperimentale viene presentata come cambiamento generale già approvato.",
+    "email": {
+      "from": "Luca · direzione commerciale",
+      "to": "Giulia · CRM",
+      "sent": "Martedì, ore 9:40",
+      "subject": "Avviso sulla scadenza dei punti",
+      "body": "Ciao Giulia,\n\nil servizio clienti ha ricevuto una bozza che dice che tutti i punti scadranno a fine mese. Un cliente l’ha vista e chiede se perderà il saldo. Ricordavo una prova su un gruppo limitato, non una modifica generale. Puoi verificare a chi si applica la nuova regola e preparare una risposta che non prometta però l’immutabilità del programma?\n\nLuca"
+    },
+    "document": {
+      "title": "Delibera pilota e registro comunicazioni",
+      "intro": "La decisione distingue il gruppo di prova dalla base clienti complessiva.",
+      "facts": [
+        {
+          "id": "ITC21F1",
+          "time": "Delibera",
+          "text": "La nuova scadenza riguarda 300 partecipanti che hanno accettato il programma pilota."
+        },
+        {
+          "id": "ITC21F2",
+          "time": "Registro",
+          "text": "La bozza generale è stata caricata nella cartella del servizio clienti, ma non risulta inviata come campagna."
+        },
+        {
+          "id": "ITC21F3",
+          "time": "Attuale",
+          "text": "Il cliente che ha scritto non figura tra i partecipanti al pilota."
+        },
+        {
+          "id": "ITC21F4",
+          "time": "Programma",
+          "text": "Le condizioni ordinarie restano in vigore; eventuali modifiche future richiedono una comunicazione dedicata."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "punti-scadenza-pilota-evidence",
+        "axis": "Evidence",
+        "prompt": "A chi si applica la scadenza nuova?",
+        "evidenceIds": [
+          "ITC21F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Solo ai clienti che hanno scritto al servizio.",
+            "feedback": "La partecipazione dipende dal pilota."
+          },
+          {
+            "id": "b",
+            "text": "Ai 300 partecipanti del pilota.",
+            "feedback": "La delibera delimita il gruppo."
+          },
+          {
+            "id": "c",
+            "text": "A tutti i clienti.",
+            "feedback": "La decisione non è generale."
+          }
+        ]
+      },
+      {
+        "id": "punti-scadenza-pilota-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa non dimostra la presenza della bozza?",
+        "evidenceIds": [
+          "ITC21F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il testo sia stato caricato.",
+            "feedback": "Il caricamento è documentato."
+          },
+          {
+            "id": "b",
+            "text": "Che il servizio possa leggerla.",
+            "feedback": "È nella sua cartella."
+          },
+          {
+            "id": "c",
+            "text": "Che sia partita una campagna a tutti.",
+            "feedback": "Il registro non mostra un invio."
+          }
+        ]
+      },
+      {
+        "id": "punti-scadenza-pilota-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole evitare Luca?",
+        "evidenceIds": [
+          "ITC21F3",
+          "ITC21F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una risposta al cliente.",
+            "feedback": "La risposta è proprio richiesta."
+          },
+          {
+            "id": "b",
+            "text": "Una verifica dell’adesione al pilota.",
+            "feedback": "Questa verifica è essenziale."
+          },
+          {
+            "id": "c",
+            "text": "Una falsa perdita del saldo senza garantire regole immutabili per sempre.",
+            "feedback": "Chiede una risposta limitata al presente."
+          }
+        ]
+      },
+      {
+        "id": "punti-scadenza-pilota-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è sostenibile?",
+        "evidenceIds": [
+          "ITC21F1",
+          "ITC21F3",
+          "ITC21F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Inviare la bozza generale per coerenza.",
+            "feedback": "La sua portata è errata."
+          },
+          {
+            "id": "b",
+            "text": "Dire che il cliente non rientra nel pilota e che valgono le condizioni attuali, correggendo la bozza.",
+            "feedback": "Tiene distinti stato attuale e cambi futuri."
+          },
+          {
+            "id": "c",
+            "text": "Promettere che i punti non scadranno mai.",
+            "feedback": "Le condizioni potrebbero cambiare in futuro."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Luca con un testo per il cliente. Distingui programma pilota e condizioni ordinarie, chiarisci il percorso della bozza e indica una correzione interna.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Definire il gruppo pilota",
+        "Non confondere bozza e invio",
+        "Rassicurare il cliente nei limiti dei fatti",
+        "Correggere il materiale interno"
+      ]
+    },
+    "model": {
+      "subject": "Re: Avviso sulla scadenza dei punti",
+      "body": "Ciao Luca,\n\nla scadenza anticipata riguarda soltanto i 300 partecipanti che hanno aderito al programma pilota. Il cliente che ci ha scritto non è in quel gruppo: per il suo saldo valgono le condizioni ordinarie attuali. La bozza con la formula «tutti i punti» è stata caricata nella cartella del servizio clienti, ma il registro non mostra l’invio di una campagna generale. Dobbiamo comunque ritirarla dalla cartella, perché può generare risposte errate.\n\nProporrei al cliente: «Abbiamo verificato la sua posizione: la nuova scadenza citata nella bozza riguarda un programma pilota al quale lei non partecipa. Il suo saldo resta soggetto alle condizioni attualmente in vigore. Ci scusiamo per il messaggio ambiguo che ha visto. Se in futuro le condizioni del programma dovessero cambiare, riceverà una comunicazione specifica secondo la procedura prevista.»\n\nOggi sostituirò la bozza con una nota che identifica chiaramente il gruppo pilota e informerò il servizio clienti della distinzione. Controllerò anche se il testo sia stato usato in risposte individuali, senza presupporre che ciò sia avvenuto.\n\nGiulia",
+      "annotations": [
+        {
+          "label": "Delimita il pilota",
+          "excerpt": "soltanto i 300 partecipanti",
+          "evidenceIds": [
+            "ITC21F1"
+          ]
+        },
+        {
+          "label": "Distingue caricamento e invio",
+          "excerpt": "il registro non mostra l’invio",
+          "evidenceIds": [
+            "ITC21F2"
+          ]
+        },
+        {
+          "label": "Verifica il cliente",
+          "excerpt": "non è in quel gruppo",
+          "evidenceIds": [
+            "ITC21F3"
+          ]
+        },
+        {
+          "label": "Preserva il futuro",
+          "excerpt": "Se in futuro le condizioni del programma dovessero cambiare",
+          "evidenceIds": [
+            "ITC21F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "recensione-senza-riserva",
+    "title": "Una recensione privata della sua riserva",
+    "area": "Marketing × contenuti",
+    "areaLabel": "Marketing · contenuti",
+    "role": "Elena · redazione",
+    "teaser": "Una traduzione promozionale elimina un «forse» decisivo dalla recensione di un cliente.",
+    "misunderstanding": "Una valutazione prudente viene trasformata in una promessa certa attribuita al cliente.",
+    "email": {
+      "from": "Marco · responsabile contenuti",
+      "to": "Elena · redazione",
+      "sent": "Giovedì, ore 15:10",
+      "subject": "Citazione tradotta sul sito",
+      "body": "Ciao Elena,\n\nun cliente ha contestato la frase italiana sul sito: «il servizio risolve sempre il problema». Nel testo originale aveva scritto che poteva aiutare in alcuni casi. La traduzione è stata approvata come scorrevole, ma non credo che qualcuno abbia controllato la sfumatura. Puoi proporre una correzione e una risposta al cliente che riconosca l’errore senza attribuirgli un giudizio che non ha espresso?\n\nMarco"
+    },
+    "document": {
+      "title": "Testo originale e flusso editoriale",
+      "intro": "Il controllo stilistico non equivale alla conferma del significato attribuito.",
+      "facts": [
+        {
+          "id": "ITC22F1",
+          "time": "Originale",
+          "text": "La recensione dice: «Potrebbe aiutare in alcuni casi, secondo la mia esperienza»."
+        },
+        {
+          "id": "ITC22F2",
+          "time": "Sito",
+          "text": "La versione italiana pubblicata dice: «Risolve sempre il problema»."
+        },
+        {
+          "id": "ITC22F3",
+          "time": "Flusso",
+          "text": "La revisione ha verificato leggibilità e tono, non l’aderenza semantica all’originale."
+        },
+        {
+          "id": "ITC22F4",
+          "time": "Attuale",
+          "text": "La frase è ancora online; il cliente ne ha chiesto la rettifica."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "recensione-senza-riserva-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale cautela contiene l’originale?",
+        "evidenceIds": [
+          "ITC22F1"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un giudizio negativo assoluto.",
+            "feedback": "Il testo parla di possibile utilità."
+          },
+          {
+            "id": "b",
+            "text": "Una garanzia universale.",
+            "feedback": "«Potrebbe» esclude la certezza."
+          },
+          {
+            "id": "c",
+            "text": "Possibilità limitata ad alcuni casi e all’esperienza personale.",
+            "feedback": "Entrambi i limiti sono espliciti."
+          }
+        ]
+      },
+      {
+        "id": "recensione-senza-riserva-scope",
+        "axis": "Scope",
+        "prompt": "Perché l’approvazione editoriale non basta?",
+        "evidenceIds": [
+          "ITC22F2",
+          "ITC22F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Non esiste alcuna revisione.",
+            "feedback": "La revisione c’è stata."
+          },
+          {
+            "id": "b",
+            "text": "Non ha verificato la fedeltà della traduzione.",
+            "feedback": "Il controllo era stilistico."
+          },
+          {
+            "id": "c",
+            "text": "Il cliente ha approvato la nuova frase.",
+            "feedback": "La richiesta attuale è di rettificarla."
+          }
+        ]
+      },
+      {
+        "id": "recensione-senza-riserva-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Marco?",
+        "evidenceIds": [
+          "ITC22F1",
+          "ITC22F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eliminare ogni recensione dal sito.",
+            "feedback": "Non propone una rimozione generale."
+          },
+          {
+            "id": "b",
+            "text": "Ripristinare il senso e rispondere senza falsificare la voce del cliente.",
+            "feedback": "Chiede una correzione rispettosa."
+          },
+          {
+            "id": "c",
+            "text": "Mantenere la frase assoluta.",
+            "feedback": "La ritiene problematica."
+          }
+        ]
+      },
+      {
+        "id": "recensione-senza-riserva-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual è il passo corretto?",
+        "evidenceIds": [
+          "ITC22F1",
+          "ITC22F2",
+          "ITC22F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sospendere la frase, proporre una traduzione fedele e chiedere conferma al cliente prima del riuso.",
+            "feedback": "La frase pubblicata è contestata."
+          },
+          {
+            "id": "b",
+            "text": "Lasciare online «sempre» perché il tono era approvato.",
+            "feedback": "Il tono non sana il cambio di significato."
+          },
+          {
+            "id": "c",
+            "text": "Attribuire al cliente una promessa ancora più ampia.",
+            "feedback": "L’originale è qualificato."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Marco con una proposta di rettifica pubblica e un messaggio al cliente. Conserva la sfumatura originale e descrivi il controllo mancato con precisione.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Riconoscere la riserva originale",
+        "Correggere la frase online",
+        "Distinguere stile e significato",
+        "Chiedere conferma prima del riuso"
+      ]
+    },
+    "model": {
+      "subject": "Re: Citazione tradotta sul sito",
+      "body": "Ciao Marco,\n\nla versione sul sito attribuisce al cliente una certezza che non ha espresso. L’originale dice che il servizio «potrebbe aiutare in alcuni casi» e limita il giudizio alla sua esperienza. La frase italiana «risolve sempre» elimina entrambe le riserve. La revisione ha approvato leggibilità e tono, ma non ha verificato l’aderenza al testo di partenza; dobbiamo riconoscere questo limite del nostro controllo.\n\nToglierei subito la frase pubblicata. Al cliente scriverei: «Ha ragione a segnalarci che la nostra versione italiana modifica il senso della sua recensione. Abbiamo sospeso la citazione e ci scusiamo per averle attribuito un’affermazione più netta della sua. Se desidera che la recensione resti sul sito, le invieremo una proposta fedele all’originale per la sua conferma; altrimenti non la riutilizzeremo.»\n\nPer la nuova formulazione proporrei «Secondo la mia esperienza, il servizio potrebbe aiutare in alcuni casi», ma la userei solo dopo il suo riscontro. Controllo oggi le altre citazioni tradotte con lo stesso flusso editoriale, partendo da quelle in evidenza.\n\nElena",
+      "annotations": [
+        {
+          "label": "Preserva la cautela",
+          "excerpt": "potrebbe aiutare in alcuni casi",
+          "evidenceIds": [
+            "ITC22F1"
+          ]
+        },
+        {
+          "label": "Nomina l’eccesso",
+          "excerpt": "risolve sempre",
+          "evidenceIds": [
+            "ITC22F2"
+          ]
+        },
+        {
+          "label": "Spiega il controllo",
+          "excerpt": "non ha verificato l’aderenza",
+          "evidenceIds": [
+            "ITC22F3"
+          ]
+        },
+        {
+          "label": "Sospende la frase",
+          "excerpt": "Toglierei subito la frase pubblicata",
+          "evidenceIds": [
+            "ITC22F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "evento-chiusura-ambigua",
+    "title": "Cancellato il panel, non la fiera",
+    "area": "Marketing × eventi",
+    "areaLabel": "Marketing · eventi",
+    "role": "Sara · coordinamento eventi",
+    "teaser": "Un messaggio del partner annuncia «evento cancellato» dopo la soppressione di un solo panel.",
+    "misunderstanding": "La cancellazione di una sessione è comunicata come annullamento dell’intera manifestazione.",
+    "email": {
+      "from": "Pietro · direzione partnership",
+      "to": "Sara · eventi",
+      "sent": "Mercoledì, ore 12:25",
+      "subject": "Messaggio del partner sulla fiera",
+      "body": "Ciao Sara,\n\nil partner ha pubblicato «evento cancellato» dopo che abbiamo tolto il panel di venerdì. Alcuni partecipanti ci chiedono se devono annullare il viaggio. La fiera principale dovrebbe svolgersi, ma voglio verificare il programma aggiornato prima di rassicurarli. Puoi preparare una risposta che chiarisca l’ambito della cancellazione e attribuisca correttamente l’informazione al partner?\n\nPietro"
+    },
+    "document": {
+      "title": "Programma e comunicazioni",
+      "intro": "Le due organizzazioni gestiscono parti diverse del programma.",
+      "facts": [
+        {
+          "id": "ITC23F1",
+          "time": "Martedì",
+          "text": "Il partner cancella il panel di venerdì per indisponibilità di due relatori."
+        },
+        {
+          "id": "ITC23F2",
+          "time": "Mercoledì",
+          "text": "La direzione della fiera conferma che l’evento principale è programmato."
+        },
+        {
+          "id": "ITC23F3",
+          "time": "Mercoledì",
+          "text": "Il post del partner dice «evento cancellato» senza specificare il panel."
+        },
+        {
+          "id": "ITC23F4",
+          "time": "Attuale",
+          "text": "La pagina del programma completo non è ancora aggiornata; gli altri panel non risultano annullati."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "evento-chiusura-ambigua-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è stato cancellato con certezza?",
+        "evidenceIds": [
+          "ITC23F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tutti i panel del partner.",
+            "feedback": "Il registro cita un panel."
+          },
+          {
+            "id": "b",
+            "text": "Il panel di venerdì.",
+            "feedback": "La decisione del partner riguarda quella sessione."
+          },
+          {
+            "id": "c",
+            "text": "L’intera fiera.",
+            "feedback": "La direzione la mantiene programmata."
+          }
+        ]
+      },
+      {
+        "id": "evento-chiusura-ambigua-scope",
+        "axis": "Scope",
+        "prompt": "Quale rassicurazione sarebbe eccessiva?",
+        "evidenceIds": [
+          "ITC23F2",
+          "ITC23F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il panel di venerdì sia cancellato.",
+            "feedback": "La decisione è registrata."
+          },
+          {
+            "id": "b",
+            "text": "Che la fiera sia ancora programmata.",
+            "feedback": "La direzione lo ha confermato."
+          },
+          {
+            "id": "c",
+            "text": "Che ogni elemento del programma sia confermato senza modifiche.",
+            "feedback": "La pagina completa non è aggiornata."
+          }
+        ]
+      },
+      {
+        "id": "evento-chiusura-ambigua-intent",
+        "axis": "Intent",
+        "prompt": "Quale problema vuole risolvere Pietro?",
+        "evidenceIds": [
+          "ITC23F2",
+          "ITC23F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Evitare che una comunicazione del partner faccia annullare viaggi per errore.",
+            "feedback": "Le domande dei partecipanti riguardano la fiera."
+          },
+          {
+            "id": "b",
+            "text": "Scaricare tutta la colpa sul partner.",
+            "feedback": "Chiede un’attribuzione corretta."
+          },
+          {
+            "id": "c",
+            "text": "Promettere il programma definitivo.",
+            "feedback": "Vuole prima verificarlo."
+          }
+        ]
+      },
+      {
+        "id": "evento-chiusura-ambigua-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale messaggio è utile?",
+        "evidenceIds": [
+          "ITC23F1",
+          "ITC23F2",
+          "ITC23F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Precisare che è cancellato il panel; la fiera resta in programma e gli aggiornamenti saranno pubblicati.",
+            "feedback": "Distingue conferma e programma aperto."
+          },
+          {
+            "id": "b",
+            "text": "Dire che nessun altro dettaglio potrà cambiare.",
+            "feedback": "Il programma non è definitivo."
+          },
+          {
+            "id": "c",
+            "text": "Ripetere «evento cancellato».",
+            "feedback": "È proprio l’ambiguità da correggere."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Pietro con un testo per i partecipanti e una richiesta al partner. Distingui organizzatori e parti del programma, senza garantire dettagli ancora non aggiornati.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Identificare il panel",
+        "Confermare solo la fiera programmata",
+        "Correggere il post ambiguo",
+        "Indicare dove seguire gli aggiornamenti"
+      ]
+    },
+    "model": {
+      "subject": "Re: Messaggio del partner sulla fiera",
+      "body": "Ciao Pietro,\n\nla decisione registrata dal partner riguarda il panel di venerdì, cancellato per l’indisponibilità di due relatori. La direzione della fiera ha confermato che la manifestazione principale resta programmata. Il post «evento cancellato» non distingue questi due livelli e può indurre i partecipanti a credere che l’intera fiera non si terrà. La pagina del programma completo deve ancora essere aggiornata, quindi eviterei di garantire che ogni altra sessione resti identica.\n\nProporrei: «Il panel di venerdì organizzato dal nostro partner è stato cancellato. La fiera principale resta in programma, come confermato dalla sua direzione. Il programma dettagliato è in aggiornamento: consultate la pagina ufficiale per le informazioni sulle singole sessioni prima di modificare i vostri piani di viaggio.»\n\nChiederò oggi al partner di correggere il post e di rimandare alla pagina ufficiale della fiera. Verificherò con la direzione quando la pagina aggiornata sarà disponibile e ti invierò il link da usare nelle risposte individuali. Così correggiamo l’equivoco senza parlare a nome dell’organizzatore su dettagli non ancora pubblicati.\n\nSara",
+      "annotations": [
+        {
+          "label": "Definisce la cancellazione",
+          "excerpt": "il panel di venerdì",
+          "evidenceIds": [
+            "ITC23F1"
+          ]
+        },
+        {
+          "label": "Attribuisce la conferma",
+          "excerpt": "La direzione della fiera ha confermato",
+          "evidenceIds": [
+            "ITC23F2"
+          ]
+        },
+        {
+          "label": "Qualifica il programma",
+          "excerpt": "deve ancora essere aggiornata",
+          "evidenceIds": [
+            "ITC23F4"
+          ]
+        },
+        {
+          "label": "Chiede rettifica",
+          "excerpt": "al partner di correggere il post",
+          "evidenceIds": [
+            "ITC23F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ascolto-social-campione",
+    "title": "L’80% di quali commenti?",
+    "area": "Marketing × reputazione",
+    "areaLabel": "Marketing · reputazione",
+    "role": "Davide · analisi reputazionale",
+    "teaser": "Un report di ascolto social attribuisce una percentuale negativa a tutti i clienti.",
+    "misunderstanding": "Un campione di commenti pubblici viene presentato come opinione rappresentativa dell’intera clientela.",
+    "email": {
+      "from": "Marta · direzione generale",
+      "to": "Davide · analisi",
+      "sent": "Venerdì, ore 8:55",
+      "subject": "L’80% dei clienti è contrario?",
+      "body": "Ciao Davide,\n\nil report dice che l’80% dei commenti analizzati è negativo. Nel riepilogo per la direzione questa frase è diventata «l’80% dei clienti è contrario». Il tema è serio e non voglio ridimensionarlo artificialmente, ma dobbiamo capire chi è stato contato. Puoi correggere il riepilogo e indicare un modo per verificare se il problema si estende oltre i social?\n\nMarta"
+    },
+    "document": {
+      "title": "Metodo di ascolto e sintesi",
+      "intro": "La raccolta misura contenuti pubblici selezionati, non una quota di clienti.",
+      "facts": [
+        {
+          "id": "ITC24F1",
+          "time": "Report",
+          "text": "Sono stati classificati 250 commenti pubblici contenenti il nome della marca."
+        },
+        {
+          "id": "ITC24F2",
+          "time": "Report",
+          "text": "L’80% dei commenti classificati è negativo; uno stesso account può aver scritto più commenti."
+        },
+        {
+          "id": "ITC24F3",
+          "time": "Metodo",
+          "text": "Il campione non è costruito per rappresentare tutti i clienti e non verifica se gli autori siano clienti."
+        },
+        {
+          "id": "ITC24F4",
+          "time": "Attuale",
+          "text": "L’assistenza registra un aumento di richieste sullo stesso tema, senza un tasso complessivo calcolato."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "ascolto-social-campione-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa misura l’80%?",
+        "evidenceIds": [
+          "ITC24F1",
+          "ITC24F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La quota di commenti classificati come negativi.",
+            "feedback": "L’unità è il commento, non la persona."
+          },
+          {
+            "id": "b",
+            "text": "La quota di acquisti persi.",
+            "feedback": "Le vendite non sono misurate."
+          },
+          {
+            "id": "c",
+            "text": "La quota di tutti i clienti contrari.",
+            "feedback": "Non è un campione rappresentativo."
+          }
+        ]
+      },
+      {
+        "id": "ascolto-social-campione-scope",
+        "axis": "Scope",
+        "prompt": "Perché non equivale a «clienti»?",
+        "evidenceIds": [
+          "ITC24F2",
+          "ITC24F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché tutti i commenti sono falsi.",
+            "feedback": "Nessuna verifica li dichiara falsi."
+          },
+          {
+            "id": "b",
+            "text": "Perché il tema non interessa l’assistenza.",
+            "feedback": "Le richieste sono aumentate."
+          },
+          {
+            "id": "c",
+            "text": "Autori e commenti non coincidono e l’identità dei clienti non è verificata.",
+            "feedback": "Il metodo non conta clienti unici."
+          }
+        ]
+      },
+      {
+        "id": "ascolto-social-campione-intent",
+        "axis": "Intent",
+        "prompt": "Quale posizione di Marta è equilibrata?",
+        "evidenceIds": [
+          "ITC24F1",
+          "ITC24F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignorare il report.",
+            "feedback": "Marta lo considera serio."
+          },
+          {
+            "id": "b",
+            "text": "Correggere la generalizzazione senza sminuire un segnale reale.",
+            "feedback": "I social e l’assistenza mostrano un tema."
+          },
+          {
+            "id": "c",
+            "text": "Concludere già che quattro clienti su cinque sono contrari.",
+            "feedback": "Il metodo non lo consente."
+          }
+        ]
+      },
+      {
+        "id": "ascolto-social-campione-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale verifica proporre?",
+        "evidenceIds": [
+          "ITC24F3",
+          "ITC24F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eliminare i commenti duplicati e dichiarare comunque l’80% di clienti.",
+            "feedback": "Anche senza duplicati mancherebbe la rappresentatività."
+          },
+          {
+            "id": "b",
+            "text": "Pubblicare subito la quota come dato clienti.",
+            "feedback": "La popolazione non è definita."
+          },
+          {
+            "id": "c",
+            "text": "Separare commenti e clienti, analizzare i contatti dell’assistenza e valutare un campione rappresentativo.",
+            "feedback": "Serve una base diversa per stimare la clientela."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Marta con un riepilogo corretto. Mantieni visibile il segnale, definisci la popolazione osservata e proponi un percorso per stimarne la diffusione.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Definire l’unità misurata",
+        "Non inferire clienti unici",
+        "Riconoscere il segnale dell’assistenza",
+        "Proporre una verifica adeguata"
+      ]
+    },
+    "model": {
+      "subject": "Re: L’80% dei clienti è contrario?",
+      "body": "Ciao Marta,\n\nla percentuale dell’80% riguarda 250 commenti pubblici classificati, non l’80% dei nostri clienti. Uno stesso account può comparire più volte e non sappiamo se tutti gli autori siano clienti. Il riepilogo per la direzione cambia quindi la popolazione a cui si riferisce il dato; va corretto. Non dobbiamo però scartare il segnale: anche l’assistenza registra più richieste sullo stesso tema, pur senza un tasso complessivo.\n\nProporrei questa sintesi: «Nell’ascolto di 250 commenti pubblici che citano la marca, l’80% dei contenuti classificati esprime una valutazione negativa. Il campione non consente di stimare la quota di clienti con questa opinione. L’aumento delle richieste all’assistenza conferma che il tema richiede un approfondimento.»\n\nPer il seguito distinguerei gli autori unici dai commenti, analizzerei le richieste dell’assistenza per categoria e periodo e valuterei una rilevazione su un campione di clienti definito. Ti invierò domani una proposta di metodo con le domande a cui ciascuna fonte può rispondere. Così diamo al problema il peso che merita senza trasformare una misura social in un sondaggio sulla clientela.\n\nDavide",
+      "annotations": [
+        {
+          "label": "Definisce la misura",
+          "excerpt": "250 commenti pubblici classificati",
+          "evidenceIds": [
+            "ITC24F1"
+          ]
+        },
+        {
+          "label": "Separa autori e commenti",
+          "excerpt": "Uno stesso account può comparire più volte",
+          "evidenceIds": [
+            "ITC24F2"
+          ]
+        },
+        {
+          "label": "Limita la popolazione",
+          "excerpt": "non sappiamo se tutti gli autori siano clienti",
+          "evidenceIds": [
+            "ITC24F3"
+          ]
+        },
+        {
+          "label": "Mantiene il segnale",
+          "excerpt": "l’assistenza registra più richieste",
+          "evidenceIds": [
+            "ITC24F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "prezzi-cache",
+    "title": "Due prezzi, una sola pubblicazione",
+    "area": "Software × commercio digitale",
+    "areaLabel": "Software · commercio digitale",
+    "role": "Riccardo · piattaforma",
+    "teaser": "Il prezzo nuovo compare nel catalogo, mentre alcune pagine servono ancora quello precedente.",
+    "misunderstanding": "La modifica nel database viene considerata prova che ogni cliente abbia visto il prezzo aggiornato.",
+    "email": {
+      "from": "Laura · e-commerce",
+      "to": "Riccardo · piattaforma",
+      "sent": "Martedì, ore 11:20",
+      "subject": "Prezzo diverso nella pagina prodotto",
+      "body": "Ciao Riccardo,\n\nil catalogo mostra il nuovo prezzo dalle 10, ma un cliente mi ha inviato alle 10:40 una schermata con il vecchio importo. Il team sostiene che la modifica fosse già pubblicata per tutti. Possiamo verificare che cosa sia stato effettivamente mostrato e rispondere senza presumere che tutti gli ordini di stamattina abbiano lo stesso problema?\n\nLaura"
+    },
+    "document": {
+      "title": "Registro prezzi e distribuzione cache",
+      "intro": "La scrittura nel catalogo e la disponibilità sulle pagine non sono lo stesso evento.",
+      "facts": [
+        {
+          "id": "ITC25F1",
+          "time": "Ore 10:00",
+          "text": "Il nuovo prezzo viene salvato nel database del catalogo."
+        },
+        {
+          "id": "ITC25F2",
+          "time": "Ore 10:40",
+          "text": "La schermata del cliente mostra il vecchio prezzo su una pagina prodotto."
+        },
+        {
+          "id": "ITC25F3",
+          "time": "Ore 10:55",
+          "text": "Il controllo rileva che due nodi cache servono ancora la versione precedente."
+        },
+        {
+          "id": "ITC25F4",
+          "time": "Attuale",
+          "text": "Non è stato ancora ricostruito quali utenti e ordini siano passati da quei nodi."
+        },
+        {
+          "id": "ITC25F5",
+          "time": "Ore 11:05",
+          "text": "L’invalidazione della cache è stata avviata; la verifica completa è in corso."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "prezzi-cache-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa prova il salvataggio delle 10?",
+        "evidenceIds": [
+          "ITC25F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ogni pagina mostrava il nuovo prezzo.",
+            "feedback": "Due nodi servivano ancora la versione vecchia."
+          },
+          {
+            "id": "b",
+            "text": "Il catalogo centrale è stato aggiornato.",
+            "feedback": "Non prova la diffusione a ogni cache."
+          },
+          {
+            "id": "c",
+            "text": "Tutti gli ordini hanno il prezzo vecchio.",
+            "feedback": "Il percorso degli ordini è ignoto."
+          }
+        ]
+      },
+      {
+        "id": "prezzi-cache-scope",
+        "axis": "Scope",
+        "prompt": "Quale portata ha la schermata?",
+        "evidenceIds": [
+          "ITC25F2",
+          "ITC25F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dimostra un caso di visualizzazione vecchia, non quanti utenti siano coinvolti.",
+            "feedback": "La ricostruzione è ancora aperta."
+          },
+          {
+            "id": "b",
+            "text": "Dimostra un addebito errato.",
+            "feedback": "Non contiene i dettagli di un ordine."
+          },
+          {
+            "id": "c",
+            "text": "Dimostra che nessuno vedeva il nuovo prezzo.",
+            "feedback": "La schermata riguarda un cliente."
+          }
+        ]
+      },
+      {
+        "id": "prezzi-cache-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa chiede Laura?",
+        "evidenceIds": [
+          "ITC25F3",
+          "ITC25F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La rimozione permanente del prodotto.",
+            "feedback": "Non la richiede."
+          },
+          {
+            "id": "b",
+            "text": "Un resoconto verificabile senza generalizzare il caso.",
+            "feedback": "Vuole conoscere la distribuzione effettiva."
+          },
+          {
+            "id": "c",
+            "text": "Una risposta che neghi la schermata.",
+            "feedback": "La considera una prova da esaminare."
+          }
+        ]
+      },
+      {
+        "id": "prezzi-cache-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è difendibile?",
+        "evidenceIds": [
+          "ITC25F3",
+          "ITC25F4",
+          "ITC25F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rimborsare tutti gli ordini senza analisi.",
+            "feedback": "La platea non è ricostruita."
+          },
+          {
+            "id": "b",
+            "text": "Riconoscere la pagina non aggiornata, completare l’invalidazione e verificare gli ordini interessati.",
+            "feedback": "Distingue correzione tecnica e impatto."
+          },
+          {
+            "id": "c",
+            "text": "Dire che l’aggiornamento era uniforme dalle 10.",
+            "feedback": "Il controllo cache lo smentisce."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Laura con testo per il cliente e piano di verifica. Distingui catalogo, cache e ordini realmente coinvolti.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Datare il salvataggio",
+        "Riconoscere la pagina vecchia",
+        "Non generalizzare l’impatto",
+        "Verificare ordini e correzione"
+      ]
+    },
+    "model": {
+      "subject": "Re: Prezzo diverso nella pagina prodotto",
+      "body": "Ciao Laura,\n\nil nuovo prezzo è stato salvato nel catalogo alle 10, ma questo non significa che tutte le pagine lo mostrassero già. La schermata delle 10:40 documenta il vecchio importo e il controllo successivo ha individuato due nodi cache non aggiornati. Abbiamo avviato l’invalidazione; non abbiamo ancora ricostruito quali utenti o ordini siano passati da quei nodi.\n\nAl cliente proporrei: «Grazie per la schermata. Abbiamo verificato che una parte delle pagine prodotto mostrava ancora il prezzo precedente dopo l’aggiornamento del catalogo. Stiamo correggendo la distribuzione del prezzo e controllando gli ordini del periodo per stabilire quali siano stati effettivamente interessati. Le daremo una risposta sul suo caso dopo aver verificato il prezzo visualizzato e quello applicato al suo ordine.»\n\nIo controllerò i log dei nodi coinvolti e l’esito dell’invalidazione prima di dichiarare l’anomalia risolta. Ti invierò un primo elenco degli ordini da esaminare oggi pomeriggio. Eviterei sia di dire che tutti i clienti hanno visto il prezzo vecchio sia di negare il problema perché il database era aggiornato.\n\nRiccardo",
+      "annotations": [
+        {
+          "label": "Separa catalogo e pagine",
+          "excerpt": "salvato nel catalogo alle 10",
+          "evidenceIds": [
+            "ITC25F1"
+          ]
+        },
+        {
+          "label": "Riconosce la schermata",
+          "excerpt": "La schermata delle 10:40 documenta il vecchio importo",
+          "evidenceIds": [
+            "ITC25F2"
+          ]
+        },
+        {
+          "label": "Localizza la causa",
+          "excerpt": "due nodi cache non aggiornati",
+          "evidenceIds": [
+            "ITC25F3"
+          ]
+        },
+        {
+          "label": "Lascia aperto l’impatto",
+          "excerpt": "non abbiamo ancora ricostruito quali utenti o ordini",
+          "evidenceIds": [
+            "ITC25F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "negazione-tradotta",
+    "title": "Il «non» sparito dal ticket",
+    "area": "Software × assistenza",
+    "areaLabel": "Software · assistenza",
+    "role": "Michele · qualità strumenti",
+    "teaser": "Una traduzione automatica elimina una negazione in una richiesta di supporto.",
+    "misunderstanding": "Il testo tradotto dal sistema viene trattato come equivalente alla richiesta originale.",
+    "email": {
+      "from": "Chiara · responsabile supporto",
+      "to": "Michele · qualità",
+      "sent": "Mercoledì, ore 16:05",
+      "subject": "Ticket tradotto in modo opposto",
+      "body": "Ciao Michele,\n\nil nostro operatore ha letto nel ticket tradotto che il cliente autorizzava il riavvio del servizio. Nel messaggio originale, invece, chiedeva di non riavviarlo durante l’orario di lavoro. Il riavvio è stato pianificato ma non eseguito. Come informiamo il cliente e correggiamo il flusso senza sostenere che il traduttore abbia causato un’interruzione che non è avvenuta?\n\nChiara"
+    },
+    "document": {
+      "title": "Ticket originale, traduzione e piano operativo",
+      "intro": "Il testo sorgente e le azioni successive sono tracciati separatamente.",
+      "facts": [
+        {
+          "id": "ITC26F1",
+          "time": "Ticket",
+          "text": "Il cliente scrive: «Non riavviate il servizio prima delle 18»."
+        },
+        {
+          "id": "ITC26F2",
+          "time": "Traduzione",
+          "text": "La versione automatica mostra: «Riavviate il servizio prima delle 18»."
+        },
+        {
+          "id": "ITC26F3",
+          "time": "Piano",
+          "text": "Un riavvio alle 17:30 è stato inserito nella pianificazione."
+        },
+        {
+          "id": "ITC26F4",
+          "time": "Attuale",
+          "text": "Il riavvio non è stato eseguito e il piano è stato sospeso dopo il confronto con l’originale."
+        },
+        {
+          "id": "ITC26F5",
+          "time": "Procedura",
+          "text": "Le istruzioni operative tradotte devono essere verificate sul testo sorgente prima di essere eseguite."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "negazione-tradotta-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale istruzione ha dato il cliente?",
+        "evidenceIds": [
+          "ITC26F1"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Non riavviare mai.",
+            "feedback": "L’istruzione ha un limite orario."
+          },
+          {
+            "id": "b",
+            "text": "Riavviare alle 17:30.",
+            "feedback": "Questo era il piano interno errato."
+          },
+          {
+            "id": "c",
+            "text": "Non riavviare prima delle 18.",
+            "feedback": "La negazione è nel testo sorgente."
+          }
+        ]
+      },
+      {
+        "id": "negazione-tradotta-scope",
+        "axis": "Scope",
+        "prompt": "Quale impatto è accertato?",
+        "evidenceIds": [
+          "ITC26F3",
+          "ITC26F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La perdita di dati del cliente.",
+            "feedback": "Nessun dato perso è descritto."
+          },
+          {
+            "id": "b",
+            "text": "Un piano errato, sospeso prima dell’esecuzione.",
+            "feedback": "Non risulta alcuna interruzione."
+          },
+          {
+            "id": "c",
+            "text": "Un riavvio realmente avvenuto.",
+            "feedback": "Il piano non è stato eseguito."
+          }
+        ]
+      },
+      {
+        "id": "negazione-tradotta-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole Chiara evitare?",
+        "evidenceIds": [
+          "ITC26F2",
+          "ITC26F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mostrare il testo originale agli operatori.",
+            "feedback": "È necessario per la verifica."
+          },
+          {
+            "id": "b",
+            "text": "Sospendere il piano.",
+            "feedback": "È già stato sospeso."
+          },
+          {
+            "id": "c",
+            "text": "Nascondere la traduzione errata o inventare un disservizio.",
+            "feedback": "La sua richiesta distingue errore e conseguenza."
+          }
+        ]
+      },
+      {
+        "id": "negazione-tradotta-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale correzione è più utile?",
+        "evidenceIds": [
+          "ITC26F1",
+          "ITC26F4",
+          "ITC26F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Informare il cliente del piano annullato e imporre il confronto con l’originale per istruzioni operative.",
+            "feedback": "Il controllo mancato va corretto."
+          },
+          {
+            "id": "b",
+            "text": "Dire che il riavvio è stato completato.",
+            "feedback": "Non è avvenuto."
+          },
+          {
+            "id": "c",
+            "text": "Continuare a usare la traduzione senza verifica.",
+            "feedback": "La procedura richiede il sorgente."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Chiara con messaggio al cliente e misura di processo. Riconosci l’errore di traduzione, distingui piano e azione ed evita conclusioni su effetti non avvenuti.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Citare l’istruzione originale",
+        "Descrivere il piano sospeso",
+        "Non inventare un disservizio",
+        "Rafforzare la verifica del sorgente"
+      ]
+    },
+    "model": {
+      "subject": "Re: Ticket tradotto in modo opposto",
+      "body": "Ciao Chiara,\n\nil cliente aveva scritto di non riavviare il servizio prima delle 18. La traduzione automatica ha eliminato la negazione, inducendo l’operatore a pianificare un riavvio alle 17:30. Il piano è stato sospeso prima dell’esecuzione: possiamo quindi parlare di un’istruzione letta in modo errato e di una pianificazione da correggere, non di un’interruzione già causata.\n\nAl cliente scriverei: «Abbiamo rilevato che la traduzione automatica del suo messaggio non riportava correttamente il divieto di riavvio prima delle 18. Un riavvio anticipato era stato pianificato, ma non è stato eseguito; il piano è stato sospeso. Ci scusiamo per l’errore e le chiederemo conferma dell’orario prima di qualsiasi intervento.»\n\nOggi verificherò se altri ticket con istruzioni temporali siano stati gestiti usando soltanto la traduzione. Ricorderò al team che ogni indicazione operativa deve essere confrontata con il testo originale prima di diventare un’azione. Ti comunicherò i risultati della verifica e le eventuali correzioni necessarie, senza dare per scontato che altri casi abbiano prodotto effetti.\n\nMichele",
+      "annotations": [
+        {
+          "label": "Ripristina la negazione",
+          "excerpt": "non riavviare il servizio prima delle 18",
+          "evidenceIds": [
+            "ITC26F1"
+          ]
+        },
+        {
+          "label": "Spiega la traduzione",
+          "excerpt": "ha eliminato la negazione",
+          "evidenceIds": [
+            "ITC26F2"
+          ]
+        },
+        {
+          "label": "Distingue piano e azione",
+          "excerpt": "sospeso prima dell’esecuzione",
+          "evidenceIds": [
+            "ITC26F3",
+            "ITC26F4"
+          ]
+        },
+        {
+          "label": "Corregge il processo",
+          "excerpt": "confrontata con il testo originale",
+          "evidenceIds": [
+            "ITC26F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "timestamp-indice",
+    "title": "Aggiornato quando?",
+    "area": "Software × dati",
+    "areaLabel": "Software · dati",
+    "role": "Alessia · ingegneria dati",
+    "teaser": "Un pannello indica una data recente di aggiornamento che riguarda solo l’indice, non i record.",
+    "misunderstanding": "Il timestamp del processo di indicizzazione viene scambiato per la freschezza di tutti i dati mostrati.",
+    "email": {
+      "from": "Roberto · operations",
+      "to": "Alessia · dati",
+      "sent": "Giovedì, ore 9:55",
+      "subject": "Pannello aggiornato ieri",
+      "body": "Ciao Alessia,\n\nil pannello mostra «aggiornato ieri», ma il cliente non trova tre operazioni di questa settimana. Il team ha risposto che i dati sono correnti perché il timestamp è recente. Ho visto che quel valore potrebbe riferirsi all’indice di ricerca. Puoi spiegare cosa è davvero aggiornato e darci una risposta che non faccia sparire le operazioni dal racconto?\n\nRoberto"
+    },
+    "document": {
+      "title": "Esecuzioni dell’indice e importazione",
+      "intro": "L’indice è stato ricostruito usando un insieme di record non ancora completo.",
+      "facts": [
+        {
+          "id": "ITC27F1",
+          "time": "Ieri",
+          "text": "L’indice di ricerca è stato ricostruito correttamente."
+        },
+        {
+          "id": "ITC27F2",
+          "time": "Quattro giorni fa",
+          "text": "L’ultima importazione completa dei record operativi è terminata."
+        },
+        {
+          "id": "ITC27F3",
+          "time": "Questa settimana",
+          "text": "Tre operazioni del cliente risultano nel sistema sorgente ma non nel pannello."
+        },
+        {
+          "id": "ITC27F4",
+          "time": "Attuale",
+          "text": "La causa del ritardo di importazione è in analisi; non risulta cancellazione nel sistema sorgente."
+        },
+        {
+          "id": "ITC27F5",
+          "time": "Interfaccia",
+          "text": "La dicitura «aggiornato ieri» si riferisce all’indice, senza precisarlo."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "timestamp-indice-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è stato aggiornato ieri?",
+        "evidenceIds": [
+          "ITC27F1",
+          "ITC27F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le tre operazioni nel pannello.",
+            "feedback": "Non vi compaiono."
+          },
+          {
+            "id": "b",
+            "text": "L’indice di ricerca.",
+            "feedback": "La dicitura omette questa specificazione."
+          },
+          {
+            "id": "c",
+            "text": "Tutti i record operativi.",
+            "feedback": "L’importazione completa è precedente."
+          }
+        ]
+      },
+      {
+        "id": "timestamp-indice-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa si può dire delle tre operazioni?",
+        "evidenceIds": [
+          "ITC27F3",
+          "ITC27F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Esistono nel sistema sorgente, ma mancano ancora nel pannello.",
+            "feedback": "La cancellazione non è documentata."
+          },
+          {
+            "id": "b",
+            "text": "Sono certamente state viste dal cliente nel pannello.",
+            "feedback": "Il cliente segnala l’assenza."
+          },
+          {
+            "id": "c",
+            "text": "Sono state eliminate dal sistema sorgente.",
+            "feedback": "Lì sono presenti."
+          }
+        ]
+      },
+      {
+        "id": "timestamp-indice-intent",
+        "axis": "Intent",
+        "prompt": "Quale equivoco vuole sciogliere Roberto?",
+        "evidenceIds": [
+          "ITC27F2",
+          "ITC27F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un timestamp tecnico è stato usato come garanzia di dati correnti.",
+            "feedback": "La sua domanda riguarda la freschezza."
+          },
+          {
+            "id": "b",
+            "text": "L’indice non è mai stato ricostruito.",
+            "feedback": "La ricostruzione c’è stata."
+          },
+          {
+            "id": "c",
+            "text": "Il cliente non sa usare la ricerca.",
+            "feedback": "La mancanza è confermata."
+          }
+        ]
+      },
+      {
+        "id": "timestamp-indice-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale azione è completa?",
+        "evidenceIds": [
+          "ITC27F2",
+          "ITC27F3",
+          "ITC27F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dichiarare perse le operazioni.",
+            "feedback": "Il sistema sorgente le conserva."
+          },
+          {
+            "id": "b",
+            "text": "Limitarsi a ripetere «aggiornato ieri».",
+            "feedback": "L’etichetta è ambigua."
+          },
+          {
+            "id": "c",
+            "text": "Correggere l’etichetta, investigare l’importazione e aggiornare il cliente sulla presenza nel sorgente.",
+            "feedback": "Affronta interfaccia e dati."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Roberto con testo per il cliente. Distingui indice e importazione, chiarisci la situazione delle tre operazioni e proponi una correzione dell’interfaccia.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Definire il timestamp",
+        "Localizzare i record",
+        "Non affermare perdita",
+        "Prevedere diagnosi e correzione"
+      ]
+    },
+    "model": {
+      "subject": "Re: Pannello aggiornato ieri",
+      "body": "Ciao Roberto,\n\nla dicitura «aggiornato ieri» descrive la ricostruzione dell’indice di ricerca, non l’importazione completa dei record. Quest’ultima risale a quattro giorni fa. Le tre operazioni segnalate dal cliente sono presenti nel sistema sorgente, ma non ancora nel pannello. Non abbiamo evidenza che siano state cancellate; stiamo cercando la causa del ritardo nel passaggio dei dati. La risposta data finora dal team è quindi troppo ampia.\n\nProporrei al cliente: «Abbiamo verificato le tre operazioni: risultano nel sistema sorgente, ma non sono ancora visibili nel pannello. L’indicazione “aggiornato ieri” si riferiva all’indice di ricerca e non alla completezza dei record operativi. Ci scusiamo per questa formulazione poco chiara. Stiamo analizzando l’importazione e la informeremo appena avremo verificato il ripristino della visualizzazione.»\n\nFarò modificare l’etichetta affinché distingua l’ultima indicizzazione dall’ultima importazione riuscita. Ti invierò un aggiornamento sul controllo delle tre operazioni entro oggi pomeriggio, anche se la causa tecnica fosse ancora aperta. Prima di dichiarare il pannello allineato, confronteremo i record con il sistema sorgente.\n\nAlessia",
+      "annotations": [
+        {
+          "label": "Definisce il timestamp",
+          "excerpt": "ricostruzione dell’indice di ricerca",
+          "evidenceIds": [
+            "ITC27F1",
+            "ITC27F5"
+          ]
+        },
+        {
+          "label": "Data l’importazione",
+          "excerpt": "quattro giorni fa",
+          "evidenceIds": [
+            "ITC27F2"
+          ]
+        },
+        {
+          "label": "Localizza i record",
+          "excerpt": "presenti nel sistema sorgente",
+          "evidenceIds": [
+            "ITC27F3"
+          ]
+        },
+        {
+          "label": "Evita perdita inventata",
+          "excerpt": "Non abbiamo evidenza che siano state cancellate",
+          "evidenceIds": [
+            "ITC27F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sla-manutenzione",
+    "title": "La finestra prevista, ma non annunciata",
+    "area": "Software × servizio",
+    "areaLabel": "Software · servizio",
+    "role": "Fabio · gestione servizio",
+    "teaser": "Una manutenzione programmata è esclusa dal calcolo SLA solo se comunicata in anticipo.",
+    "misunderstanding": "Una finestra tecnica pianificata internamente viene trattata come esclusione SLA automatica.",
+    "email": {
+      "from": "Irene · account manager",
+      "to": "Fabio · servizio",
+      "sent": "Lunedì, ore 13:20",
+      "subject": "Interruzione e SLA del cliente",
+      "body": "Ciao Fabio,\n\nil cliente contesta l’interruzione di sabato. Il team tecnico dice che era manutenzione programmata, quindi fuori dallo SLA. Non trovo però l’avviso inviato al cliente. Prima di promettere un accredito o respingere la richiesta, puoi verificare se la finestra soddisfaceva le condizioni contrattuali e suggerire un messaggio intermedio?\n\nIrene"
+    },
+    "document": {
+      "title": "Calendario manutenzione e condizioni di servizio",
+      "intro": "La pianificazione interna non coincide con la comunicazione richiesta al cliente.",
+      "facts": [
+        {
+          "id": "ITC28F1",
+          "time": "Contratto",
+          "text": "Le manutenzioni programmate sono escluse dal calcolo SLA se comunicate almeno 72 ore prima."
+        },
+        {
+          "id": "ITC28F2",
+          "time": "Mercoledì",
+          "text": "La finestra di sabato è inserita nel calendario tecnico interno."
+        },
+        {
+          "id": "ITC28F3",
+          "time": "Archivio invii",
+          "text": "Non compare un avviso al cliente per quella finestra; la ricerca nei canali secondari è ancora aperta."
+        },
+        {
+          "id": "ITC28F4",
+          "time": "Sabato",
+          "text": "Il servizio è stato indisponibile per 48 minuti durante la finestra."
+        },
+        {
+          "id": "ITC28F5",
+          "time": "Attuale",
+          "text": "Il calcolo SLA e l’eventuale accredito non sono ancora stati verificati."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sla-manutenzione-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale condizione richiede il contratto?",
+        "evidenceIds": [
+          "ITC28F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Comunicazione al cliente almeno 72 ore prima.",
+            "feedback": "La pianificazione interna da sola non basta."
+          },
+          {
+            "id": "b",
+            "text": "Una nota nel solo calendario tecnico.",
+            "feedback": "Il contratto richiede un avviso al cliente."
+          },
+          {
+            "id": "c",
+            "text": "La durata inferiore a un’ora.",
+            "feedback": "La clausola citata riguarda l’avviso."
+          }
+        ]
+      },
+      {
+        "id": "sla-manutenzione-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa si sa dell’avviso?",
+        "evidenceIds": [
+          "ITC28F2",
+          "ITC28F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Non risulta nell’archivio principale; la ricerca non è finita.",
+            "feedback": "I canali secondari sono ancora da controllare."
+          },
+          {
+            "id": "b",
+            "text": "È certamente impossibile che esista.",
+            "feedback": "La ricerca è ancora aperta."
+          },
+          {
+            "id": "c",
+            "text": "È stato certamente inviato.",
+            "feedback": "Non c’è prova nell’archivio esaminato."
+          }
+        ]
+      },
+      {
+        "id": "sla-manutenzione-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole evitare Irene?",
+        "evidenceIds": [
+          "ITC28F4",
+          "ITC28F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "La comunicazione al cliente.",
+            "feedback": "Vuole rispondergli."
+          },
+          {
+            "id": "b",
+            "text": "La verifica della finestra.",
+            "feedback": "È proprio la verifica richiesta."
+          },
+          {
+            "id": "c",
+            "text": "Una decisione prematura su SLA e accredito.",
+            "feedback": "Chiede un messaggio intermedio."
+          }
+        ]
+      },
+      {
+        "id": "sla-manutenzione-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta intermedia è corretta?",
+        "evidenceIds": [
+          "ITC28F1",
+          "ITC28F3",
+          "ITC28F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Riconoscere i 48 minuti, verificare l’avviso e comunicare l’esito del calcolo prima di decidere sull’accredito.",
+            "feedback": "Tiene separati fatto e qualificazione contrattuale."
+          },
+          {
+            "id": "b",
+            "text": "Escludere subito la finestra dallo SLA.",
+            "feedback": "La condizione dell’avviso non è provata."
+          },
+          {
+            "id": "c",
+            "text": "Promettere subito un accredito definitivo.",
+            "feedback": "Il calcolo non è completato."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Irene con un testo per il cliente. Riconosci l’interruzione, spiega la verifica dell’avviso e non anticipare l’esito SLA o economico.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Riconoscere il disservizio",
+        "Esplicitare la condizione contrattuale",
+        "Qualificare la ricerca dell’avviso",
+        "Fissare un esito documentato"
+      ]
+    },
+    "model": {
+      "subject": "Re: Interruzione e SLA del cliente",
+      "body": "Ciao Irene,\n\nla finestra era stata pianificata internamente, ma questo da solo non basta a escludere i 48 minuti dal calcolo SLA. Il contratto richiede un avviso al cliente con almeno 72 ore di anticipo. Nell’archivio principale non lo troviamo; stiamo ancora controllando i canali secondari. Non possiamo quindi dire oggi che l’esclusione sia applicabile, né stabilire già l’eventuale accredito senza completare il calcolo.\n\nAl cliente scriverei: «Riconosciamo l’indisponibilità di 48 minuti di sabato. La finestra era prevista nel nostro calendario tecnico. Stiamo verificando se la comunicazione preventiva richiesta dalle condizioni di servizio sia stata effettivamente inviata e come l’interruzione debba essere considerata nel calcolo SLA. Le forniremo l’esito documentato di questa verifica e, se dovuto, il relativo trattamento economico.»\n\nOggi controllerò con il team comunicazioni tutti i canali usati per gli avvisi e farò ricostruire il calcolo. Ti darò un primo riscontro domani mattina con le prove disponibili e i punti ancora aperti. Nel frattempo eviterei di descrivere la manutenzione come automaticamente esclusa solo perché programmata.\n\nFabio",
+      "annotations": [
+        {
+          "label": "Riconosce durata",
+          "excerpt": "48 minuti",
+          "evidenceIds": [
+            "ITC28F4"
+          ]
+        },
+        {
+          "label": "Definisce condizione",
+          "excerpt": "almeno 72 ore di anticipo",
+          "evidenceIds": [
+            "ITC28F1"
+          ]
+        },
+        {
+          "label": "Qualifica ricerca",
+          "excerpt": "stiamo ancora controllando i canali secondari",
+          "evidenceIds": [
+            "ITC28F3"
+          ]
+        },
+        {
+          "label": "Non decide l’accredito",
+          "excerpt": "senza completare il calcolo",
+          "evidenceIds": [
+            "ITC28F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "griglia-diversa",
+    "title": "Due griglie nello stesso colloquio",
+    "area": "People × selezione",
+    "areaLabel": "Risorse umane · selezione",
+    "role": "Teresa · responsabile selezione",
+    "teaser": "I candidati sono stati valutati con versioni diverse della griglia.",
+    "misunderstanding": "La media numerica finale è trattata come confronto equo senza verificare i criteri usati.",
+    "email": {
+      "from": "Andrea · direzione di funzione",
+      "to": "Teresa · selezione",
+      "sent": "Martedì, ore 14:30",
+      "subject": "Classifica candidati da confermare",
+      "body": "Ciao Teresa,\n\nla tabella mette Elisa al primo posto, ma ho scoperto che due valutatori hanno usato la griglia di marzo e uno quella aggiornata ad aprile. Vorrei comunicare presto l’esito ai candidati. Possiamo fidarci della media o dobbiamo rivedere le valutazioni? Mi serve una risposta che tuteli il processo senza insinuare favoritismi non dimostrati.\n\nAndrea"
+    },
+    "document": {
+      "title": "Versioni della griglia e schede",
+      "intro": "Le scale numeriche sono uguali, ma i criteri e i pesi differiscono.",
+      "facts": [
+        {
+          "id": "ITC29F1",
+          "time": "Marzo",
+          "text": "La griglia A attribuisce 40 punti all’esperienza tecnica e 20 alla collaborazione."
+        },
+        {
+          "id": "ITC29F2",
+          "time": "Aprile",
+          "text": "La griglia B attribuisce 25 punti all’esperienza tecnica e 35 alla collaborazione."
+        },
+        {
+          "id": "ITC29F3",
+          "time": "Colloqui",
+          "text": "Due valutatori hanno usato A; uno ha usato B per gli stessi candidati."
+        },
+        {
+          "id": "ITC29F4",
+          "time": "Attuale",
+          "text": "La media delle schede colloca Elisa prima, ma non è stata ricalcolata su una griglia comune."
+        },
+        {
+          "id": "ITC29F5",
+          "time": "Procedura",
+          "text": "Prima dell’esito si deve applicare ai candidati lo stesso insieme di criteri e documentare eventuali correzioni."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "griglia-diversa-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa cambia tra le griglie?",
+        "evidenceIds": [
+          "ITC29F1",
+          "ITC29F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’identità dei candidati.",
+            "feedback": "Le versioni riguardano i punteggi."
+          },
+          {
+            "id": "b",
+            "text": "Solo il colore del modulo.",
+            "feedback": "Cambiano 15 punti in due criteri."
+          },
+          {
+            "id": "c",
+            "text": "Il peso attribuito alle competenze, pur con la stessa scala totale.",
+            "feedback": "I criteri non sono equivalenti."
+          }
+        ]
+      },
+      {
+        "id": "griglia-diversa-scope",
+        "axis": "Scope",
+        "prompt": "Perché la media non chiude il confronto?",
+        "evidenceIds": [
+          "ITC29F3",
+          "ITC29F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Somma valutazioni costruite con pesi diversi.",
+            "feedback": "Serve una base comune."
+          },
+          {
+            "id": "b",
+            "text": "È impossibile calcolare qualsiasi media.",
+            "feedback": "Una media numerica esiste."
+          },
+          {
+            "id": "c",
+            "text": "Dimostra un favore intenzionale a Elisa.",
+            "feedback": "Nessuna intenzione è documentata."
+          }
+        ]
+      },
+      {
+        "id": "griglia-diversa-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole Andrea?",
+        "evidenceIds": [
+          "ITC29F4",
+          "ITC29F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nascondere l’errore ai candidati.",
+            "feedback": "Vuole tutelare il processo."
+          },
+          {
+            "id": "b",
+            "text": "Garantire il primo posto di Elisa.",
+            "feedback": "Si domanda se la media sia affidabile."
+          },
+          {
+            "id": "c",
+            "text": "Comunicare un esito difendibile senza accusare i valutatori.",
+            "feedback": "Chiede rapidità e correttezza."
+          }
+        ]
+      },
+      {
+        "id": "griglia-diversa-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual è il passo adeguato?",
+        "evidenceIds": [
+          "ITC29F1",
+          "ITC29F2",
+          "ITC29F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Annullare ogni candidatura senza esame.",
+            "feedback": "Una correzione documentata può bastare."
+          },
+          {
+            "id": "b",
+            "text": "Usare la media attuale perché il totale è sempre 100.",
+            "feedback": "I pesi cambiano il significato del totale."
+          },
+          {
+            "id": "c",
+            "text": "Rivedere le schede con criteri comuni e documentare l’effetto sulla classifica prima di comunicarla.",
+            "feedback": "La procedura richiede comparabilità."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi ad Andrea con un piano di revisione e un messaggio intermedio ai candidati. Distingui errore di metodo e intenzione, senza anticipare la classifica finale.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Riconoscere i pesi diversi",
+        "Non inferire favoritismi",
+        "Ricalcolare con criteri comuni",
+        "Comunicare tempi realistici"
+      ]
+    },
+    "model": {
+      "subject": "Re: Classifica candidati da confermare",
+      "body": "Ciao Andrea,\n\nla media attuale è aritmeticamente calcolabile, ma non costituisce ancora un confronto equo. Le due versioni della griglia assegnano pesi diversi all’esperienza tecnica e alla collaborazione. Due valutatori hanno usato la prima e uno la seconda sugli stessi candidati. Il primo posto di Elisa potrebbe rimanere invariato, ma non possiamo darlo per acquisito prima di rivedere le schede su criteri comuni. Non abbiamo elementi per attribuire ai valutatori un intento di favorire qualcuno.\n\nPropongo di sospendere la comunicazione dell’esito, scegliere la griglia prevista per questa selezione e far riesaminare tutte le candidature secondo gli stessi criteri. Documenteremo le modifiche e verificheremo se la classifica cambia. Ai candidati possiamo dire: «Stiamo completando una verifica di coerenza del metodo di valutazione. Vi comunicheremo l’esito dopo questa verifica, entro la data che confermeremo a breve.»\n\nOggi raccolgo le schede e il testo della procedura applicabile. Ti darò domani una stima credibile dei tempi. È preferibile un rinvio spiegato a una decisione rapida che non possiamo ancora motivare in modo uniforme.\n\nTeresa",
+      "annotations": [
+        {
+          "label": "Definisce il problema",
+          "excerpt": "pesi diversi all’esperienza tecnica e alla collaborazione",
+          "evidenceIds": [
+            "ITC29F1",
+            "ITC29F2"
+          ]
+        },
+        {
+          "label": "Qualifica la classifica",
+          "excerpt": "non possiamo darlo per acquisito",
+          "evidenceIds": [
+            "ITC29F4"
+          ]
+        },
+        {
+          "label": "Evita accuse",
+          "excerpt": "Non abbiamo elementi per attribuire ai valutatori un intento",
+          "evidenceIds": [
+            "ITC29F3"
+          ]
+        },
+        {
+          "label": "Propone revisione",
+          "excerpt": "far riesaminare tutte le candidature",
+          "evidenceIds": [
+            "ITC29F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "nota-confidenziale",
+    "title": "La nota finita al responsabile coinvolto",
+    "area": "People × mediazione",
+    "areaLabel": "Risorse umane · mediazione",
+    "role": "Valeria · mediatrice interna",
+    "teaser": "Una nota confidenziale su un conflitto è stata inoltrata al responsabile citato senza la verifica prevista.",
+    "misunderstanding": "La richiesta di mediazione viene trattata come autorizzazione a condividere integralmente la nota con una delle persone coinvolte.",
+    "email": {
+      "from": "Marta · HR",
+      "to": "Valeria · mediazione",
+      "sent": "Giovedì, ore 10:15",
+      "subject": "Condivisione della nota di Chiara",
+      "body": "Ciao Valeria,\n\nChiara mi ha affidato una nota per chiedere una mediazione con il suo responsabile. Un collega l’ha inoltrata integralmente a quest’ultimo per organizzare l’incontro. Chiara è turbata e chiede chi l’abbia letta. Dobbiamo spiegarle cosa è successo e come procederemo, ma non voglio affermare che la mediazione sia impossibile né minimizzare la condivisione. Mi aiuti?\n\nMarta"
+    },
+    "document": {
+      "title": "Richiesta e registro delle condivisioni",
+      "intro": "La finalità organizzativa e il contenuto confidenziale avevano livelli di accesso diversi.",
+      "facts": [
+        {
+          "id": "ITC210F1",
+          "time": "Richiesta",
+          "text": "Chiara autorizza HR a contattare il responsabile per fissare un incontro, non a inviargli la nota integrale."
+        },
+        {
+          "id": "ITC210F2",
+          "time": "Mercoledì",
+          "text": "La nota integrale è stata inoltrata al responsabile e a un assistente amministrativo."
+        },
+        {
+          "id": "ITC210F3",
+          "time": "Attuale",
+          "text": "Il registro identifica i destinatari, ma non prova se abbiano aperto o copiato l’allegato."
+        },
+        {
+          "id": "ITC210F4",
+          "time": "Procedura",
+          "text": "La condivisione di appunti confidenziali richiede una verifica specifica del consenso e un esame del caso da parte di HR."
+        },
+        {
+          "id": "ITC210F5",
+          "time": "Attuale",
+          "text": "Chiara non ha ancora deciso se proseguire con la mediazione."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "nota-confidenziale-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa aveva autorizzato Chiara?",
+        "evidenceIds": [
+          "ITC210F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il contatto per organizzare l’incontro, non l’invio della nota.",
+            "feedback": "La richiesta distingue le due azioni."
+          },
+          {
+            "id": "b",
+            "text": "La diffusione integrale ai destinatari.",
+            "feedback": "La nota non era autorizzata."
+          },
+          {
+            "id": "c",
+            "text": "La chiusura della mediazione.",
+            "feedback": "Non ha deciso se proseguire."
+          }
+        ]
+      },
+      {
+        "id": "nota-confidenziale-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa si può dire della lettura?",
+        "evidenceIds": [
+          "ITC210F2",
+          "ITC210F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Due persone hanno ricevuto l’inoltro; l’apertura dell’allegato è da verificare.",
+            "feedback": "Il registro non prova la lettura."
+          },
+          {
+            "id": "b",
+            "text": "Nessuno l’ha ricevuta.",
+            "feedback": "L’inoltro è documentato."
+          },
+          {
+            "id": "c",
+            "text": "Tutto il team ha letto la nota.",
+            "feedback": "I destinatari registrati sono due."
+          }
+        ]
+      },
+      {
+        "id": "nota-confidenziale-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa chiede Marta?",
+        "evidenceIds": [
+          "ITC210F2",
+          "ITC210F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un’accusa definitiva a Chiara.",
+            "feedback": "Chiara ha segnalato il problema."
+          },
+          {
+            "id": "b",
+            "text": "Trasparenza sull’errore e libertà di Chiara di decidere il seguito.",
+            "feedback": "La mediazione resta una sua scelta."
+          },
+          {
+            "id": "c",
+            "text": "L’incontro forzato domani.",
+            "feedback": "Non ha deciso se procedere."
+          }
+        ]
+      },
+      {
+        "id": "nota-confidenziale-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è appropriata?",
+        "evidenceIds": [
+          "ITC210F1",
+          "ITC210F3",
+          "ITC210F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Promettere che l’allegato non è stato aperto.",
+            "feedback": "Il registro non lo dimostra."
+          },
+          {
+            "id": "b",
+            "text": "Dire che la nota era implicitamente condivisibile.",
+            "feedback": "Il consenso era limitato."
+          },
+          {
+            "id": "c",
+            "text": "Riconoscere l’inoltro, verificare l’accesso e chiedere a Chiara come desidera procedere.",
+            "feedback": "Sono i limiti e le misure del dossier."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Marta con un testo per Chiara. Riconosci la condivisione non autorizzata, attribuisci correttamente ciò che il registro mostra e preserva la sua scelta sul percorso.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Distinguere contatto e allegato",
+        "Indicare destinatari noti",
+        "Non presumere lettura",
+        "Restituire scelta a Chiara"
+      ]
+    },
+    "model": {
+      "subject": "Re: Condivisione della nota di Chiara",
+      "body": "Ciao Marta,\n\nla richiesta di Chiara autorizzava il contatto necessario a organizzare un incontro, non l’invio integrale della sua nota. Il registro mostra che il documento è stato inoltrato al responsabile e a un assistente amministrativo. Non possiamo ancora dire se l’allegato sia stato aperto o copiato. Dobbiamo riferire la condivisione con precisione e verificare gli accessi, senza usare l’incertezza sulla lettura per ridurre la gravità dell’errore.\n\nA Chiara proporrei: «La sua nota è stata inoltrata a due destinatari nell’organizzazione dell’incontro, oltre l’ambito che aveva autorizzato. Ci scusiamo. Stiamo verificando chi abbia avuto accesso all’allegato e quali misure servano per limitarne ulteriormente la circolazione. Le comunicheremo quanto potremo accertare. La decisione se e come proseguire con la mediazione resta sua; possiamo anche discutere un percorso alternativo.»\n\nSegnalo oggi il caso alla funzione HR competente e chiedo ai destinatari di non diffondere la nota. Prima di proporre un nuovo incontro, ascolterei Chiara su ciò di cui ha bisogno per sentirsi in condizione di scegliere liberamente.\n\nValeria",
+      "annotations": [
+        {
+          "label": "Delimita autorizzazione",
+          "excerpt": "non l’invio integrale della sua nota",
+          "evidenceIds": [
+            "ITC210F1"
+          ]
+        },
+        {
+          "label": "Nomina destinatari",
+          "excerpt": "al responsabile e a un assistente amministrativo",
+          "evidenceIds": [
+            "ITC210F2"
+          ]
+        },
+        {
+          "label": "Lascia aperta la lettura",
+          "excerpt": "Non possiamo ancora dire se l’allegato sia stato aperto",
+          "evidenceIds": [
+            "ITC210F3"
+          ]
+        },
+        {
+          "label": "Preserva scelta",
+          "excerpt": "resta sua",
+          "evidenceIds": [
+            "ITC210F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bonus-bozza",
+    "title": "Il bonus nella simulazione",
+    "area": "People × retribuzione",
+    "areaLabel": "Risorse umane · retribuzione",
+    "role": "Paolo · amministrazione HR",
+    "teaser": "Una simulazione di bonus compare nel portale come importo approvato.",
+    "misunderstanding": "Un calcolo preliminare viene comunicato come diritto individuale già deliberato.",
+    "email": {
+      "from": "Elisa · responsabile di area",
+      "to": "Paolo · HR",
+      "sent": "Lunedì, ore 9:10",
+      "subject": "Bonus mostrato a Davide",
+      "body": "Ciao Paolo,\n\nDavide vede nel portale un bonus di 2.400 euro e mi chiede quando verrà pagato. Ricordo che stavamo simulando scenari, non deliberando importi. Non vorrei rispondergli che non riceverà nulla, perché la valutazione è ancora aperta. Puoi chiarire il significato del numero e aiutarci a spiegare l’errore di visualizzazione senza promettere l’esito?\n\nElisa"
+    },
+    "document": {
+      "title": "Simulazione bonus e stato approvazioni",
+      "intro": "L’importo mostrato è un calcolo di scenario, non una decisione individuale.",
+      "facts": [
+        {
+          "id": "ITC211F1",
+          "time": "Simulazione",
+          "text": "2.400 euro risultano da uno scenario con obiettivi non ancora verificati."
+        },
+        {
+          "id": "ITC211F2",
+          "time": "Portale",
+          "text": "Un errore di etichetta mostra «approvato» dove il dato sorgente è «simulazione»."
+        },
+        {
+          "id": "ITC211F3",
+          "time": "Attuale",
+          "text": "La verifica degli obiettivi di Davide e la delibera finale non sono concluse."
+        },
+        {
+          "id": "ITC211F4",
+          "time": "Calendario",
+          "text": "La comunicazione individuale degli importi è prevista dopo la delibera."
+        },
+        {
+          "id": "ITC211F5",
+          "time": "Attuale",
+          "text": "Nessun ordine di pagamento per quel bonus è stato creato."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "bonus-bozza-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa rappresentano i 2.400 euro?",
+        "evidenceIds": [
+          "ITC211F1",
+          "ITC211F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un importo deliberato e da pagare.",
+            "feedback": "La delibera non è conclusa."
+          },
+          {
+            "id": "b",
+            "text": "Un importo rifiutato definitivamente.",
+            "feedback": "La valutazione è ancora aperta."
+          },
+          {
+            "id": "c",
+            "text": "Uno scenario calcolato su obiettivi ancora da verificare.",
+            "feedback": "L’etichetta del portale è errata."
+          }
+        ]
+      },
+      {
+        "id": "bonus-bozza-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa non si può dedurre dall’etichetta?",
+        "evidenceIds": [
+          "ITC211F2",
+          "ITC211F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il portale mostra la parola «approvato».",
+            "feedback": "Questa parola compare davvero."
+          },
+          {
+            "id": "b",
+            "text": "Che serve correggere l’interfaccia.",
+            "feedback": "L’errore di etichetta lo impone."
+          },
+          {
+            "id": "c",
+            "text": "Un’approvazione individuale effettiva.",
+            "feedback": "La sorgente dice «simulazione»."
+          }
+        ]
+      },
+      {
+        "id": "bonus-bozza-intent",
+        "axis": "Intent",
+        "prompt": "Quale equilibrio cerca Elisa?",
+        "evidenceIds": [
+          "ITC211F3",
+          "ITC211F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Correggere la falsa certezza senza anticipare un rifiuto.",
+            "feedback": "L’esito non è ancora deciso."
+          },
+          {
+            "id": "b",
+            "text": "Garantire il pagamento immediato.",
+            "feedback": "Non c’è ordine di pagamento."
+          },
+          {
+            "id": "c",
+            "text": "Negare ogni possibilità di bonus.",
+            "feedback": "La verifica resta aperta."
+          }
+        ]
+      },
+      {
+        "id": "bonus-bozza-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta a Davide è completa?",
+        "evidenceIds": [
+          "ITC211F1",
+          "ITC211F3",
+          "ITC211F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Spiegare simulazione ed etichetta errata, indicare le fasi residue e la comunicazione dopo la delibera.",
+            "feedback": "Dà una sequenza verificabile."
+          },
+          {
+            "id": "b",
+            "text": "Dire che la simulazione non ha mai riguardato Davide.",
+            "feedback": "Lo scenario appare nella sua posizione."
+          },
+          {
+            "id": "c",
+            "text": "Dire che i 2.400 euro arriveranno a fine mese.",
+            "feedback": "Importo e pagamento non sono approvati."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Elisa con un messaggio a Davide. Riconosci l’errore del portale, definisci lo scenario e indica quando arriverà una comunicazione formale senza promettere importo o pagamento.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Definire la simulazione",
+        "Riconoscere l’etichetta errata",
+        "Non decidere il bonus in anticipo",
+        "Descrivere le fasi residue"
+      ]
+    },
+    "model": {
+      "subject": "Re: Bonus mostrato a Davide",
+      "body": "Ciao Elisa,\n\ni 2.400 euro visualizzati da Davide provengono da una simulazione che usa obiettivi non ancora verificati. Il portale ha mostrato la parola «approvato», ma nel dato sorgente lo stato è «simulazione». Dobbiamo riconoscere questo errore di visualizzazione. Non abbiamo ancora una delibera individuale né un ordine di pagamento; allo stesso tempo non possiamo dire che il bonus sia stato escluso.\n\nProporrei a Davide: «Il portale ha mostrato erroneamente come approvato un importo di 2.400 euro. Si tratta di una simulazione preliminare, non di una decisione sul suo bonus. Ci scusiamo per l’indicazione fuorviante. La verifica degli obiettivi e la delibera finale sono ancora in corso. Riceverà una comunicazione individuale sull’importo eventualmente riconosciuto dopo la conclusione di queste fasi.»\n\nFarò correggere l’etichetta e verificherò se lo stesso problema riguarda altri profili. Ti invierò il calendario aggiornato della delibera appena confermato, così potremo dare a Davide un riferimento temporale realistico. Evitiamo di usare la simulazione come promessa o come smentita definitiva.\n\nPaolo",
+      "annotations": [
+        {
+          "label": "Definisce importo",
+          "excerpt": "provengono da una simulazione",
+          "evidenceIds": [
+            "ITC211F1"
+          ]
+        },
+        {
+          "label": "Riconosce etichetta",
+          "excerpt": "ha mostrato la parola «approvato»",
+          "evidenceIds": [
+            "ITC211F2"
+          ]
+        },
+        {
+          "label": "Lascia esito aperto",
+          "excerpt": "non possiamo dire che il bonus sia stato escluso",
+          "evidenceIds": [
+            "ITC211F3"
+          ]
+        },
+        {
+          "label": "Indica fase formale",
+          "excerpt": "dopo la conclusione di queste fasi",
+          "evidenceIds": [
+            "ITC211F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "richiesta-orario",
+    "title": "La richiesta diventata annuncio",
+    "area": "People × organizzazione",
+    "areaLabel": "Risorse umane · organizzazione",
+    "role": "Francesca · consulente HR",
+    "teaser": "Una richiesta di orario ridotto viene anticipata al team come modifica già decisa.",
+    "misunderstanding": "La discussione di una preferenza individuale viene presentata come decisione organizzativa definitiva.",
+    "email": {
+      "from": "Giorgio · responsabile team",
+      "to": "Francesca · HR",
+      "sent": "Martedì, ore 12:40",
+      "subject": "Orario di Chiara comunicato al team",
+      "body": "Ciao Francesca,\n\nChiara mi ha chiesto di valutare un orario ridotto da settembre. Ho detto al team che riorganizzeremo i turni per il suo nuovo orario, ma Chiara non ha ancora presentato la domanda formale e non vuole che i colleghi conoscano le sue ragioni personali. Puoi aiutarmi a correggere il messaggio senza far sembrare che la sua richiesta non sia presa sul serio?\n\nGiorgio"
+    },
+    "document": {
+      "title": "Scambio individuale e piano turni",
+      "intro": "La preferenza espressa e la modifica del servizio sono in fasi diverse.",
+      "facts": [
+        {
+          "id": "ITC212F1",
+          "time": "Lunedì",
+          "text": "Chiara chiede un confronto su un possibile orario ridotto da settembre."
+        },
+        {
+          "id": "ITC212F2",
+          "time": "Lunedì",
+          "text": "Giorgio annuncia al team una riorganizzazione «per il nuovo orario di Chiara»."
+        },
+        {
+          "id": "ITC212F3",
+          "time": "Attuale",
+          "text": "Non è stata presentata una domanda formale né concordato un nuovo orario."
+        },
+        {
+          "id": "ITC212F4",
+          "time": "Procedura",
+          "text": "Le esigenze personali restano riservate; i turni vengono modificati dopo una decisione concordata e comunicata alle persone interessate."
+        },
+        {
+          "id": "ITC212F5",
+          "time": "Attuale",
+          "text": "Il team non ha ancora ricevuto un nuovo piano turni."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "richiesta-orario-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa ha chiesto Chiara?",
+        "evidenceIds": [
+          "ITC212F1",
+          "ITC212F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un confronto su un possibile cambiamento.",
+            "feedback": "Non c’è ancora un nuovo orario concordato."
+          },
+          {
+            "id": "b",
+            "text": "Una modifica dei turni già decisa.",
+            "feedback": "La richiesta formale manca."
+          },
+          {
+            "id": "c",
+            "text": "L’immediata pubblicazione delle sue ragioni.",
+            "feedback": "Vuole mantenerle riservate."
+          }
+        ]
+      },
+      {
+        "id": "richiesta-orario-scope",
+        "axis": "Scope",
+        "prompt": "Perché l’annuncio era prematuro?",
+        "evidenceIds": [
+          "ITC212F2",
+          "ITC212F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché nessuno nel team può mai cambiare orario.",
+            "feedback": "La procedura contempla modifiche dopo una decisione."
+          },
+          {
+            "id": "b",
+            "text": "Presentava una decisione e un impatto sul team non ancora concordati.",
+            "feedback": "Né orario né piano sono approvati."
+          },
+          {
+            "id": "c",
+            "text": "Perché Chiara non ha mai parlato con Giorgio.",
+            "feedback": "Il confronto è avvenuto."
+          }
+        ]
+      },
+      {
+        "id": "richiesta-orario-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve preservare Giorgio?",
+        "evidenceIds": [
+          "ITC212F1",
+          "ITC212F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La serietà della richiesta e la riservatezza delle ragioni.",
+            "feedback": "Entrambe sono compatibili."
+          },
+          {
+            "id": "b",
+            "text": "La propria frase come decisione irrevocabile.",
+            "feedback": "La decisione non esiste."
+          },
+          {
+            "id": "c",
+            "text": "La curiosità del team sulle ragioni personali.",
+            "feedback": "Sono riservate."
+          }
+        ]
+      },
+      {
+        "id": "richiesta-orario-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale correzione al team è adatta?",
+        "evidenceIds": [
+          "ITC212F2",
+          "ITC212F4",
+          "ITC212F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Spiegare le ragioni personali di Chiara.",
+            "feedback": "La procedura tutela la riservatezza."
+          },
+          {
+            "id": "b",
+            "text": "Confermare l’orario di Chiara come definitivo.",
+            "feedback": "Nessun accordo esiste."
+          },
+          {
+            "id": "c",
+            "text": "Dire che si stanno valutando opzioni di turnazione, senza riferirle a dettagli personali o a una decisione già presa.",
+            "feedback": "Il piano non è ancora cambiato."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Giorgio con una correzione per il team e un messaggio individuale a Chiara. Distingui ascolto della richiesta, decisione e riservatezza.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Correggere l’annuncio",
+        "Non sminuire la richiesta",
+        "Proteggere i motivi personali",
+        "Rimandare i turni alla decisione"
+      ]
+    },
+    "model": {
+      "subject": "Re: Orario di Chiara comunicato al team",
+      "body": "Ciao Giorgio,\n\nChiara ti ha chiesto di valutare un possibile orario ridotto da settembre. Non ha ancora presentato una domanda formale né è stato concordato un nuovo orario. L’annuncio al team ha trasformato una conversazione individuale in una decisione organizzativa già presa. Dobbiamo correggerlo, ma senza dare l’impressione che la richiesta venga accantonata. Le ragioni personali di Chiara non devono entrare nella comunicazione collettiva.\n\nAl team direi: «La comunicazione sui turni era prematura. Stiamo esaminando alcune possibili esigenze organizzative per settembre, ma non è stato approvato alcun nuovo piano. Se e quando sarà necessario modificare i turni, parleremo prima con le persone interessate e comunicheremo il calendario concordato.»\n\nA Chiara proporrei una scusa diretta: «Ho parlato troppo presto di un nuovo orario come se fosse già deciso. La tua richiesta resta aperta e la valuteremo con HR, rispettando la riservatezza delle tue motivazioni. Non condividerò ulteriori dettagli personali con il team.»\n\nTi aiuto a definire le prossime fasi del confronto e a separarle dalla pianificazione dei turni.\n\nFrancesca",
+      "annotations": [
+        {
+          "label": "Definisce richiesta",
+          "excerpt": "un possibile orario ridotto",
+          "evidenceIds": [
+            "ITC212F1"
+          ]
+        },
+        {
+          "label": "Corregge l’annuncio",
+          "excerpt": "ha trasformato una conversazione individuale",
+          "evidenceIds": [
+            "ITC212F2",
+            "ITC212F3"
+          ]
+        },
+        {
+          "label": "Tutela riservatezza",
+          "excerpt": "Le ragioni personali di Chiara non devono entrare",
+          "evidenceIds": [
+            "ITC212F4"
+          ]
+        },
+        {
+          "label": "Limita i turni",
+          "excerpt": "non è stato approvato alcun nuovo piano",
+          "evidenceIds": [
+            "ITC212F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "stanza-doppia",
+    "title": "Due visite, la stessa stanza",
+    "area": "Health administration × agende",
+    "areaLabel": "Amministrazione sanitaria · agende",
+    "role": "Marta · coordinamento agende",
+    "teaser": "Due reparti hanno assegnato la stessa stanza alla stessa ora.",
+    "misunderstanding": "La conferma della visita viene trattata come garanzia che anche la stanza necessaria sia disponibile.",
+    "email": {
+      "from": "Elisa · accettazione",
+      "to": "Marta · agende",
+      "sent": "Lunedì, ore 8:35",
+      "subject": "Conflitto sulla stanza 4",
+      "body": "Ciao Marta,\n\ndue pazienti hanno una visita confermata alle 11 e i due reparti indicano entrambi la stanza 4. Una paziente deve arrivare da lontano e chiede se la sua visita è ancora garantita. Non voglio annullarla per un errore di stanza, ma nemmeno promettere che tutto si svolgerà come previsto prima di trovare un’alternativa. Come le rispondiamo?\n\nElisa"
+    },
+    "document": {
+      "title": "Agende reparto e disponibilità spazi",
+      "intro": "Gli appuntamenti clinici e l’assegnazione della stanza sono registrati in sistemi separati.",
+      "facts": [
+        {
+          "id": "ITC213F1",
+          "time": "Agende",
+          "text": "Entrambe le visite risultano confermate per le 11 in due reparti diversi."
+        },
+        {
+          "id": "ITC213F2",
+          "time": "Spazi",
+          "text": "Entrambi i reparti hanno selezionato la stanza 4; il sistema spazi non blocca la doppia selezione."
+        },
+        {
+          "id": "ITC213F3",
+          "time": "Attuale",
+          "text": "La stanza 5 è libera dalle 11, ma la sua idoneità per una delle visite deve essere confermata dal reparto."
+        },
+        {
+          "id": "ITC213F4",
+          "time": "Attuale",
+          "text": "Nessuna delle due visite è stata annullata o spostata."
+        },
+        {
+          "id": "ITC213F5",
+          "time": "Procedura",
+          "text": "Il reparto conferma l’idoneità clinica della stanza; il coordinamento agende comunica l’esito ai pazienti."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "stanza-doppia-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è confermato?",
+        "evidenceIds": [
+          "ITC213F1",
+          "ITC213F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le due visite, non una stanza distinta per ciascuna.",
+            "feedback": "Il conflitto di spazio resta."
+          },
+          {
+            "id": "b",
+            "text": "La stanza 4 per entrambe contemporaneamente.",
+            "feedback": "La selezione doppia è un errore."
+          },
+          {
+            "id": "c",
+            "text": "L’annullamento della visita lontana.",
+            "feedback": "Nessuna visita è stata annullata."
+          }
+        ]
+      },
+      {
+        "id": "stanza-doppia-scope",
+        "axis": "Scope",
+        "prompt": "Perché la stanza 5 non è già una soluzione certa?",
+        "evidenceIds": [
+          "ITC213F3",
+          "ITC213F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "La paziente l’ha rifiutata.",
+            "feedback": "Non è stata proposta."
+          },
+          {
+            "id": "b",
+            "text": "È occupata alle 11.",
+            "feedback": "Il registro la indica libera."
+          },
+          {
+            "id": "c",
+            "text": "Il reparto deve confermarne l’idoneità.",
+            "feedback": "Essere libera non basta."
+          }
+        ]
+      },
+      {
+        "id": "stanza-doppia-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Elisa?",
+        "evidenceIds": [
+          "ITC213F1",
+          "ITC213F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una risposta rassicurante ma condizionata alla verifica dello spazio.",
+            "feedback": "La sua email tiene insieme visita e stanza."
+          },
+          {
+            "id": "b",
+            "text": "Un annullamento automatico.",
+            "feedback": "Vuole evitarlo."
+          },
+          {
+            "id": "c",
+            "text": "Una valutazione clinica da accettazione.",
+            "feedback": "L’idoneità spetta al reparto."
+          }
+        ]
+      },
+      {
+        "id": "stanza-doppia-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale passo è corretto?",
+        "evidenceIds": [
+          "ITC213F3",
+          "ITC213F4",
+          "ITC213F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confermare subito la stanza 5.",
+            "feedback": "Manca la verifica di idoneità."
+          },
+          {
+            "id": "b",
+            "text": "Far verificare la stanza alternativa e aggiornare i pazienti prima di confermare la sede della visita.",
+            "feedback": "Rispetta la competenza del reparto."
+          },
+          {
+            "id": "c",
+            "text": "Dire che le visite non esistono più.",
+            "feedback": "Sono ancora confermate."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Elisa con un messaggio alla paziente. Distingui appuntamento e spazio, evita giudizi clinici e prometti un aggiornamento dopo la verifica del reparto.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Confermare il solo appuntamento",
+        "Esplicitare il conflitto logistico",
+        "Lasciare l’idoneità al reparto",
+        "Dare un aggiornamento utile"
+      ]
+    },
+    "model": {
+      "subject": "Re: Conflitto sulla stanza 4",
+      "body": "Ciao Elisa,\n\nle due visite risultano ancora confermate per le 11; nessuna è stata annullata. Il problema riguarda l’assegnazione della stanza 4, scelta da entrambi i reparti in un sistema che non impedisce il conflitto. La stanza 5 risulta libera, ma dobbiamo far confermare al reparto che sia adatta alla visita prima di indicarla come soluzione. Non possiamo quindi garantire già la stessa sede prevista, né chiedere alla paziente di rinunciare all’appuntamento.\n\nLe direi: «La sua visita delle 11 è ancora in agenda. Abbiamo rilevato un conflitto nell’assegnazione della stanza e stiamo verificando con il reparto uno spazio idoneo. Le confermeremo la stanza e l’eventuale indicazione di accesso entro le 9:30, prima che inizi il viaggio, oppure la contatteremo subito se fosse necessario concordare un’alternativa.»\n\nChiederò ora al reparto di verificare la stanza 5 e terrò aggiornati entrambi i servizi coinvolti. Se non è idonea, sarà il reparto a indicare la soluzione clinicamente appropriata; il nostro compito è comunicarla in modo tempestivo e preciso.\n\nMarta",
+      "annotations": [
+        {
+          "label": "Mantiene appuntamenti",
+          "excerpt": "ancora confermate per le 11",
+          "evidenceIds": [
+            "ITC213F1",
+            "ITC213F4"
+          ]
+        },
+        {
+          "label": "Nomina conflitto",
+          "excerpt": "stanza 4, scelta da entrambi i reparti",
+          "evidenceIds": [
+            "ITC213F2"
+          ]
+        },
+        {
+          "label": "Qualifica alternativa",
+          "excerpt": "dobbiamo far confermare al reparto",
+          "evidenceIds": [
+            "ITC213F3",
+            "ITC213F5"
+          ]
+        },
+        {
+          "label": "Fissa aggiornamento",
+          "excerpt": "entro le 9:30",
+          "evidenceIds": [
+            "ITC213F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "verbale-altro-paziente",
+    "title": "Una pagina nel fascicolo sbagliato",
+    "area": "Health administration × documenti",
+    "areaLabel": "Amministrazione sanitaria · documenti",
+    "role": "Paola · gestione documentale",
+    "teaser": "Una scansione richiesta da un paziente contiene una pagina appartenente a un altro fascicolo.",
+    "misunderstanding": "La completezza della scansione viene assunta senza controllare l’identità di ogni pagina.",
+    "email": {
+      "from": "Giorgio · sportello referti",
+      "to": "Paola · documenti",
+      "sent": "Martedì, ore 14:10",
+      "subject": "Pagina estranea nella copia",
+      "body": "Ciao Paola,\n\nil paziente ha ricevuto la copia digitale richiesta e segnala che una pagina sembra riferirsi a un’altra persona. Gli altri documenti paiono suoi. Prima di rispondergli, vorrei capire se la pagina è davvero estranea, chi possa averla vista e come inviargli una copia corretta senza chiedergli di inoltrare dati di terzi per email.\n\nGiorgio"
+    },
+    "document": {
+      "title": "Lotto di scansione e registro accessi",
+      "intro": "La verifica della pagina e degli accessi è ancora preliminare.",
+      "facts": [
+        {
+          "id": "ITC214F1",
+          "time": "Lotto",
+          "text": "Una pagina del file inviato riporta un identificativo diverso da quello del richiedente."
+        },
+        {
+          "id": "ITC214F2",
+          "time": "Invio",
+          "text": "Il file è stato consegnato all’account del richiedente alle 12:30."
+        },
+        {
+          "id": "ITC214F3",
+          "time": "Attuale",
+          "text": "Il registro conferma la consegna ma non dimostra quali pagine siano state aperte o salvate."
+        },
+        {
+          "id": "ITC214F4",
+          "time": "Procedura",
+          "text": "L’anomalia va segnalata al referente privacy; la copia corretta va ricostruita e verificata pagina per pagina prima del nuovo invio."
+        },
+        {
+          "id": "ITC214F5",
+          "time": "Attuale",
+          "text": "Il file originale è stato ritirato dal portale, ma una copia scaricata non può essere esclusa."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "verbale-altro-paziente-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale anomalia è verificata?",
+        "evidenceIds": [
+          "ITC214F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La pagina è stata certamente letta.",
+            "feedback": "Il registro non prova la lettura."
+          },
+          {
+            "id": "b",
+            "text": "Una pagina porta un identificativo diverso.",
+            "feedback": "La discordanza compare nel file inviato."
+          },
+          {
+            "id": "c",
+            "text": "Tutto il fascicolo appartiene a un altro paziente.",
+            "feedback": "Gli altri documenti non sono stati ancora dichiarati errati."
+          }
+        ]
+      },
+      {
+        "id": "verbale-altro-paziente-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa non si può affermare sugli accessi?",
+        "evidenceIds": [
+          "ITC214F2",
+          "ITC214F3",
+          "ITC214F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il file sia stato ritirato dal portale.",
+            "feedback": "Il ritiro è documentato."
+          },
+          {
+            "id": "b",
+            "text": "Che nessuno abbia salvato la pagina o che sia stata letta integralmente.",
+            "feedback": "Consegna e lettura sono diverse."
+          },
+          {
+            "id": "c",
+            "text": "Che il file sia stato consegnato.",
+            "feedback": "La consegna è registrata."
+          }
+        ]
+      },
+      {
+        "id": "verbale-altro-paziente-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole evitare Giorgio?",
+        "evidenceIds": [
+          "ITC214F1",
+          "ITC214F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "La ricostruzione della copia.",
+            "feedback": "La considera necessaria."
+          },
+          {
+            "id": "b",
+            "text": "L’informazione al paziente.",
+            "feedback": "Vuole rispondergli."
+          },
+          {
+            "id": "c",
+            "text": "Una nuova diffusione del dato di terzi mentre corregge il fascicolo.",
+            "feedback": "Chiede un canale sicuro."
+          }
+        ]
+      },
+      {
+        "id": "verbale-altro-paziente-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale sequenza è corretta?",
+        "evidenceIds": [
+          "ITC214F3",
+          "ITC214F4",
+          "ITC214F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Segnalare, verificare la copia pagina per pagina e inviarla tramite portale con un aggiornamento circoscritto.",
+            "feedback": "La procedura definisce i passi."
+          },
+          {
+            "id": "b",
+            "text": "Dire che il ritiro cancella tutte le copie.",
+            "feedback": "Una copia scaricata resta possibile."
+          },
+          {
+            "id": "c",
+            "text": "Chiedere al paziente di reinviare la pagina per email.",
+            "feedback": "Rischierebbe altra diffusione."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Giorgio con testo per il paziente. Riconosci la pagina non pertinente, non presumere la lettura e organizza correzione e verifica privacy.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Identificare la pagina diversa",
+        "Distinguere consegna e lettura",
+        "Usare canali sicuri",
+        "Verificare la nuova copia"
+      ]
+    },
+    "model": {
+      "subject": "Re: Pagina estranea nella copia",
+      "body": "Ciao Giorgio,\n\nabbiamo verificato che una pagina del file consegnato riporta un identificativo diverso da quello del richiedente. Il registro attesta la consegna all’account, ma non mostra quali pagine siano state aperte o salvate. Abbiamo ritirato il file dal portale; questo non ci permette di escludere una copia già scaricata. Dobbiamo segnalare l’accaduto al referente privacy e preparare una nuova copia controllata pagina per pagina.\n\nAl paziente scriverei: «Grazie per averci avvisato. Nella copia inviata compare una pagina che non appartiene al suo fascicolo. Abbiamo ritirato il file dal portale e stiamo ricostruendo una versione verificata dei suoi documenti. Le comunicheremo tramite il portale sicuro quando la nuova copia sarà pronta e le daremo indicazioni sul file ricevuto in precedenza. Non le chiediamo di inoltrarci la pagina per email.»\n\nIo coordino la verifica con il referente privacy e registro le versioni del file. Prima del nuovo invio farò controllare l’identificativo su ogni pagina da una seconda persona. Ti aggiornerò oggi sul tempo necessario, senza dichiarare già conclusa la verifica degli accessi.\n\nPaola",
+      "annotations": [
+        {
+          "label": "Rileva discordanza",
+          "excerpt": "un identificativo diverso",
+          "evidenceIds": [
+            "ITC214F1"
+          ]
+        },
+        {
+          "label": "Limita il registro",
+          "excerpt": "non mostra quali pagine siano state aperte",
+          "evidenceIds": [
+            "ITC214F3"
+          ]
+        },
+        {
+          "label": "Qualifica il ritiro",
+          "excerpt": "non ci permette di escludere una copia già scaricata",
+          "evidenceIds": [
+            "ITC214F5"
+          ]
+        },
+        {
+          "label": "Introduce secondo controllo",
+          "excerpt": "controllare l’identificativo su ogni pagina",
+          "evidenceIds": [
+            "ITC214F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "farmaco-deposito",
+    "title": "Disponibile, ma dove?",
+    "area": "Health administration × approvvigionamento",
+    "areaLabel": "Amministrazione sanitaria · approvvigionamento",
+    "role": "Lorenzo · farmacia ospedaliera",
+    "teaser": "Un farmaco risulta in stock nel deposito centrale, mentre il punto di somministrazione ne è privo.",
+    "misunderstanding": "La disponibilità nel sistema centrale viene comunicata come disponibilità immediata per un appuntamento specifico.",
+    "email": {
+      "from": "Anna · coordinamento pazienti",
+      "to": "Lorenzo · farmacia",
+      "sent": "Giovedì, ore 10:45",
+      "subject": "Disponibilità per domani",
+      "body": "Ciao Lorenzo,\n\nla paziente ha una somministrazione prevista domani mattina. Il gestionale segna 24 unità disponibili, ma il reparto dice di non averne. Posso confermarle che tutto è pronto? Vorrei distinguere la presenza del farmaco da una consegna effettiva al reparto e sapere chi decide eventuali cambi del piano clinico.\n\nAnna"
+    },
+    "document": {
+      "title": "Inventario e trasferimenti interni",
+      "intro": "L’inventario aggregato non indica automaticamente la disponibilità nel reparto.",
+      "facts": [
+        {
+          "id": "ITC215F1",
+          "time": "Inventario",
+          "text": "Ventiquattro unità sono registrate nel deposito centrale."
+        },
+        {
+          "id": "ITC215F2",
+          "time": "Reparto",
+          "text": "Il punto di somministrazione non ha unità disponibili alle 10:30."
+        },
+        {
+          "id": "ITC215F3",
+          "time": "Logistica",
+          "text": "La richiesta di trasferimento è stata aperta, ma non ha ancora una conferma di consegna per domani."
+        },
+        {
+          "id": "ITC215F4",
+          "time": "Procedura",
+          "text": "La farmacia conferma disponibilità e trasporto; il team clinico decide eventuali modifiche dell’appuntamento o della terapia."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "farmaco-deposito-evidence",
+        "axis": "Evidence",
+        "prompt": "Dove sono le 24 unità?",
+        "evidenceIds": [
+          "ITC215F1",
+          "ITC215F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nel deposito centrale, non nel reparto.",
+            "feedback": "I due livelli sono distinti."
+          },
+          {
+            "id": "b",
+            "text": "In possesso della paziente.",
+            "feedback": "Il dossier non lo indica."
+          },
+          {
+            "id": "c",
+            "text": "Già al punto di somministrazione.",
+            "feedback": "Il reparto non ne ha."
+          }
+        ]
+      },
+      {
+        "id": "farmaco-deposito-scope",
+        "axis": "Scope",
+        "prompt": "Quale promessa è prematura?",
+        "evidenceIds": [
+          "ITC215F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che esistono unità nel deposito.",
+            "feedback": "L’inventario lo conferma."
+          },
+          {
+            "id": "b",
+            "text": "Che è stata aperta una richiesta.",
+            "feedback": "La richiesta è registrata."
+          },
+          {
+            "id": "c",
+            "text": "Che il farmaco sarà certamente in reparto domani mattina.",
+            "feedback": "La consegna non è confermata."
+          }
+        ]
+      },
+      {
+        "id": "farmaco-deposito-intent",
+        "axis": "Intent",
+        "prompt": "Quale confine di responsabilità nota Anna?",
+        "evidenceIds": [
+          "ITC215F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accettazione per cambiare terapia.",
+            "feedback": "Non è sua competenza."
+          },
+          {
+            "id": "b",
+            "text": "Farmacia per logistica, clinici per eventuali modifiche del piano.",
+            "feedback": "La procedura distingue i ruoli."
+          },
+          {
+            "id": "c",
+            "text": "Paziente per organizzare il trasporto interno.",
+            "feedback": "È compito del servizio."
+          }
+        ]
+      },
+      {
+        "id": "farmaco-deposito-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale aggiornamento serve?",
+        "evidenceIds": [
+          "ITC215F2",
+          "ITC215F3",
+          "ITC215F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Garantire l’appuntamento in base allo stock centrale.",
+            "feedback": "Il reparto è senza unità."
+          },
+          {
+            "id": "b",
+            "text": "Dire che il trasferimento è in verifica e che il team clinico sarà avvisato se il termine non è confermato.",
+            "feedback": "Non anticipa decisioni mediche."
+          },
+          {
+            "id": "c",
+            "text": "Annullare autonomamente la somministrazione.",
+            "feedback": "La decisione spetta al team clinico."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi ad Anna con una comunicazione amministrativa alla paziente. Separa stock, trasferimento e decisione clinica, e dai un tempo di verifica.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Localizzare lo stock",
+        "Qualificare la consegna",
+        "Rispettare il ruolo clinico",
+        "Comunicare un aggiornamento"
+      ]
+    },
+    "model": {
+      "subject": "Re: Disponibilità per domani",
+      "body": "Ciao Anna,\n\nle 24 unità indicate nel gestionale si trovano nel deposito centrale. Il reparto non ne ha al momento e la richiesta di trasferimento non ha ancora una consegna confermata per domani mattina. Non direi quindi alla paziente che tutto è pronto. La farmacia può verificare disponibilità e trasporto; se il trasferimento non sarà possibile nei tempi previsti, sarà il team clinico a valutare l’appuntamento e ogni altra scelta relativa alle cure.\n\nLe proporrei: «Il farmaco risulta disponibile nel nostro deposito centrale. Stiamo confermando il trasferimento al reparto per l’appuntamento di domani. Le daremo un aggiornamento oggi entro le 16. Se emergesse una difficoltà nella consegna, informeremo subito il team clinico, che le comunicherà eventuali indicazioni sul programma della visita.»\n\nIo contatto ora la logistica e chiedo una conferma scritta del trasferimento. Aggiornerò il reparto prima di comunicare l’esito ad Anna. Il dato di magazzino è utile, ma non equivale alla presenza del farmaco nel luogo in cui è previsto l’uso.\n\nLorenzo",
+      "annotations": [
+        {
+          "label": "Localizza unità",
+          "excerpt": "nel deposito centrale",
+          "evidenceIds": [
+            "ITC215F1"
+          ]
+        },
+        {
+          "label": "Qualifica consegna",
+          "excerpt": "non ha ancora una consegna confermata",
+          "evidenceIds": [
+            "ITC215F3"
+          ]
+        },
+        {
+          "label": "Riserva decisione clinica",
+          "excerpt": "sarà il team clinico a valutare",
+          "evidenceIds": [
+            "ITC215F4"
+          ]
+        },
+        {
+          "label": "Fissa aggiornamento",
+          "excerpt": "oggi entro le 16",
+          "evidenceIds": [
+            "ITC215F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "percorso-accessibile",
+    "title": "Un ingresso accessibile, un ascensore fermo",
+    "area": "Health administration × accessibilità",
+    "areaLabel": "Amministrazione sanitaria · accessibilità",
+    "role": "Silvia · accoglienza",
+    "teaser": "L’ingresso indicato come accessibile conduce a un ascensore temporaneamente fuori servizio.",
+    "misunderstanding": "La presenza di una rampa all’ingresso viene considerata garanzia di un percorso completo verso l’ambulatorio.",
+    "email": {
+      "from": "Paolo · gestione sede",
+      "to": "Silvia · accoglienza",
+      "sent": "Venerdì, ore 9:25",
+      "subject": "Indicazioni per visita al secondo piano",
+      "body": "Ciao Silvia,\n\nuna paziente in carrozzina arriva oggi per una visita al secondo piano. Sul sito indichiamo l’ingresso con rampa come accessibile, ma l’ascensore vicino è fermo. C’è un altro ascensore sul lato opposto e non so se il percorso sia praticabile senza ostacoli. Come le diamo informazioni utili senza mandarla in un tragitto che non abbiamo verificato?\n\nPaolo"
+    },
+    "document": {
+      "title": "Stato percorsi della sede",
+      "intro": "L’accessibilità dell’ingresso e quella dell’intero tragitto sono controlli distinti.",
+      "facts": [
+        {
+          "id": "ITC216F1",
+          "time": "Sito",
+          "text": "L’ingresso nord dispone di rampa ed è indicato come accessibile."
+        },
+        {
+          "id": "ITC216F2",
+          "time": "Manutenzione",
+          "text": "L’ascensore nord per il secondo piano è fuori servizio."
+        },
+        {
+          "id": "ITC216F3",
+          "time": "Mappa",
+          "text": "L’ascensore sud risulta funzionante, ma il percorso dalla rampa nord non è stato verificato oggi."
+        },
+        {
+          "id": "ITC216F4",
+          "time": "Attuale",
+          "text": "L’ambulatorio può valutare una stanza al piano terra, ma non l’ha ancora confermata."
+        },
+        {
+          "id": "ITC216F5",
+          "time": "Procedura",
+          "text": "L’accoglienza deve confermare un percorso praticabile prima di indirizzare la paziente."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "percorso-accessibile-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa conferma la rampa?",
+        "evidenceIds": [
+          "ITC216F1",
+          "ITC216F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’accesso all’ingresso nord, non al secondo piano.",
+            "feedback": "L’ascensore nord è fermo."
+          },
+          {
+            "id": "b",
+            "text": "Un percorso completo e verificato.",
+            "feedback": "Il tratto interno è incerto."
+          },
+          {
+            "id": "c",
+            "text": "L’accessibilità di ogni ambulatorio.",
+            "feedback": "Il sito descrive l’ingresso."
+          }
+        ]
+      },
+      {
+        "id": "percorso-accessibile-scope",
+        "axis": "Scope",
+        "prompt": "Quali alternative restano da verificare?",
+        "evidenceIds": [
+          "ITC216F3",
+          "ITC216F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Solo le scale.",
+            "feedback": "Esistono due possibili alternative."
+          },
+          {
+            "id": "b",
+            "text": "Percorso per l’ascensore sud o stanza al piano terra.",
+            "feedback": "Nessuna è già confermata."
+          },
+          {
+            "id": "c",
+            "text": "Il ripristino immediato dell’ascensore nord.",
+            "feedback": "Non è previsto oggi."
+          }
+        ]
+      },
+      {
+        "id": "percorso-accessibile-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole evitare Paolo?",
+        "evidenceIds": [
+          "ITC216F3",
+          "ITC216F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiedere conferma all’ambulatorio.",
+            "feedback": "È una possibile soluzione."
+          },
+          {
+            "id": "b",
+            "text": "Indicare un itinerario non controllato a una paziente che ne dipende.",
+            "feedback": "La richiesta è pratica e urgente."
+          },
+          {
+            "id": "c",
+            "text": "Informare la paziente del guasto.",
+            "feedback": "È necessario farlo."
+          }
+        ]
+      },
+      {
+        "id": "percorso-accessibile-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale comunicazione è corretta?",
+        "evidenceIds": [
+          "ITC216F2",
+          "ITC216F3",
+          "ITC216F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire alla paziente di prendere le scale.",
+            "feedback": "Non risolve la sua esigenza."
+          },
+          {
+            "id": "b",
+            "text": "Segnalare il guasto e promettere istruzioni solo dopo verifica del percorso o della stanza alternativa.",
+            "feedback": "La procedura richiede la verifica."
+          },
+          {
+            "id": "c",
+            "text": "Ripetere semplicemente «ingresso accessibile».",
+            "feedback": "Non copre il tragitto fino alla visita."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Paolo con un messaggio alla paziente. Riconosci il guasto, non dichiarare accessibile un tragitto non verificato e coordina un’alternativa concreta.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Separare ingresso e percorso",
+        "Segnalare il guasto",
+        "Verificare l’alternativa",
+        "Dare indicazioni prima dell’arrivo"
+      ]
+    },
+    "model": {
+      "subject": "Re: Indicazioni per visita al secondo piano",
+      "body": "Ciao Paolo,\n\nla rampa rende accessibile l’ingresso nord, ma oggi non garantisce il tragitto fino all’ambulatorio al secondo piano: l’ascensore nord è fermo. L’ascensore sud risulta funzionante, tuttavia non abbiamo verificato il percorso dalla rampa fino a quell’impianto. Anche la stanza al piano terra è solo una possibilità da confermare con l’ambulatorio. Non dobbiamo far arrivare la paziente a un ingresso per poi scoprire che non può proseguire.\n\nLe scriverei: «L’ascensore vicino all’ingresso nord è temporaneamente fuori servizio. Stiamo verificando un percorso alternativo praticabile per la sua visita o la disponibilità di una stanza al piano terra. La contatteremo entro le 11 con indicazioni precise prima del suo arrivo. Ci scusiamo per il disagio e le chiediamo di non affidarsi alle sole informazioni generali del sito per il percorso di oggi.»\n\nIo controllo subito il tragitto con un collega della sede e chiedo all’ambulatorio la conferma della stanza alternativa. Aggiorneremo anche l’avviso sul sito per la durata del guasto. Se nessuna soluzione è praticabile, sarà l’ambulatorio a concordare con la paziente il passo successivo.\n\nSilvia",
+      "annotations": [
+        {
+          "label": "Delimita ingresso",
+          "excerpt": "la rampa rende accessibile l’ingresso nord",
+          "evidenceIds": [
+            "ITC216F1"
+          ]
+        },
+        {
+          "label": "Nomina guasto",
+          "excerpt": "l’ascensore nord è fermo",
+          "evidenceIds": [
+            "ITC216F2"
+          ]
+        },
+        {
+          "label": "Lascia aperta alternativa",
+          "excerpt": "solo una possibilità da confermare",
+          "evidenceIds": [
+            "ITC216F3",
+            "ITC216F4"
+          ]
+        },
+        {
+          "label": "Dà un termine",
+          "excerpt": "entro le 11",
+          "evidenceIds": [
+            "ITC216F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "lotto-in-quarantena",
+    "title": "Il blocco arrivato dopo la spedizione",
+    "area": "Operations × qualità",
+    "areaLabel": "Operazioni · qualità",
+    "role": "Edoardo · controllo qualità",
+    "teaser": "Un lotto è stato messo in quarantena dopo che alcune unità erano già partite.",
+    "misunderstanding": "Il blocco del magazzino viene comunicato come prova che nessun cliente abbia ricevuto unità del lotto.",
+    "email": {
+      "from": "Lucia · assistenza clienti",
+      "to": "Edoardo · qualità",
+      "sent": "Lunedì, ore 10:20",
+      "subject": "Lotto bloccato e clienti coinvolti",
+      "body": "Ciao Edoardo,\n\nil lotto L-27 è stato bloccato venerdì per un controllo. Vorrei rassicurare i clienti dicendo che nessuna unità è uscita, ma il registro indica alcune spedizioni della mattina. Non sappiamo ancora se i colli siano stati consegnati. Puoi dirci qual è il perimetro verificato e come contattare i destinatari senza presentare il controllo come un difetto già accertato?\n\nLucia"
+    },
+    "document": {
+      "title": "Registro del lotto e verifica qualità",
+      "intro": "Blocco, spedizione e conferma di difetto sono tre stati distinti.",
+      "facts": [
+        {
+          "id": "ITC217F1",
+          "time": "Venerdì 9:00",
+          "text": "Dodici unità del lotto L-27 sono affidate al vettore."
+        },
+        {
+          "id": "ITC217F2",
+          "time": "Venerdì 11:00",
+          "text": "Il magazzino blocca le restanti 88 unità dopo un risultato preliminare da approfondire."
+        },
+        {
+          "id": "ITC217F3",
+          "time": "Attuale",
+          "text": "La qualità non ha ancora confermato un difetto del lotto."
+        },
+        {
+          "id": "ITC217F4",
+          "time": "Attuale",
+          "text": "La consegna delle dodici unità e l’identità dei destinatari sono in riconciliazione."
+        },
+        {
+          "id": "ITC217F5",
+          "time": "Procedura",
+          "text": "I destinatari identificati ricevono una comunicazione proporzionata dopo la verifica della tracciabilità e delle istruzioni qualità."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "lotto-in-quarantena-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è uscito prima del blocco?",
+        "evidenceIds": [
+          "ITC217F1",
+          "ITC217F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nessuna unità.",
+            "feedback": "Il registro mostra una spedizione precedente."
+          },
+          {
+            "id": "b",
+            "text": "Tutte le cento unità.",
+            "feedback": "Ottantotto sono rimaste in magazzino."
+          },
+          {
+            "id": "c",
+            "text": "Dodici unità affidate al vettore.",
+            "feedback": "Il blocco ha riguardato le restanti 88."
+          }
+        ]
+      },
+      {
+        "id": "lotto-in-quarantena-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa non è ancora provato?",
+        "evidenceIds": [
+          "ITC217F3",
+          "ITC217F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un difetto confermato e l’effettiva consegna delle dodici unità.",
+            "feedback": "Entrambe le verifiche sono aperte."
+          },
+          {
+            "id": "b",
+            "text": "Che il blocco sia avvenuto.",
+            "feedback": "Il magazzino lo registra."
+          },
+          {
+            "id": "c",
+            "text": "Che dodici unità siano state affidate al vettore.",
+            "feedback": "La spedizione è documentata."
+          }
+        ]
+      },
+      {
+        "id": "lotto-in-quarantena-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole Lucia conciliare?",
+        "evidenceIds": [
+          "ITC217F1",
+          "ITC217F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nascondere le spedizioni.",
+            "feedback": "Le segnala apertamente."
+          },
+          {
+            "id": "b",
+            "text": "Un contatto tempestivo con clienti potenzialmente coinvolti senza dichiarare un difetto certo.",
+            "feedback": "Chiede tracciabilità e tono calibrato."
+          },
+          {
+            "id": "c",
+            "text": "Annunciare un richiamo generale immediato.",
+            "feedback": "La decisione qualità non è stata presa."
+          }
+        ]
+      },
+      {
+        "id": "lotto-in-quarantena-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale sequenza è adeguata?",
+        "evidenceIds": [
+          "ITC217F3",
+          "ITC217F4",
+          "ITC217F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ricostruire destinatari e consegne, seguire le istruzioni qualità e comunicare il controllo senza anticiparne l’esito.",
+            "feedback": "La tracciabilità precede il messaggio mirato."
+          },
+          {
+            "id": "b",
+            "text": "Dire che tutte le unità sono difettose.",
+            "feedback": "Nessun difetto è confermato."
+          },
+          {
+            "id": "c",
+            "text": "Dire che tutte le unità sono sicure.",
+            "feedback": "L’esame è aperto."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Lucia con testo per i destinatari identificati e piano di tracciabilità. Distingui blocco, spedizione, consegna e risultato qualità.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Quantificare il lotto con precisione",
+        "Non inventare consegne",
+        "Non confermare un difetto",
+        "Seguire la tracciabilità e la decisione qualità"
+      ]
+    },
+    "model": {
+      "subject": "Re: Lotto bloccato e clienti coinvolti",
+      "body": "Ciao Lucia,\n\nnon possiamo dire che nessuna unità sia uscita: dodici pezzi del lotto L-27 sono stati affidati al vettore alle 9, due ore prima del blocco delle altre 88 unità. Stiamo ancora riconciliando le consegne e i destinatari. Inoltre il risultato che ha motivato il blocco è preliminare; la qualità non ha confermato un difetto del lotto. La comunicazione deve quindi seguire la tracciabilità, non precederla con conclusioni generali.\n\nPer i destinatari che risulteranno coinvolti proporrei, dopo la verifica delle istruzioni qualità: «Stiamo svolgendo un controllo sul lotto L-27, dal quale potrebbe provenire un’unità della sua spedizione. La verifica è ancora in corso e non costituisce, al momento, una conferma di difetto. Le comunicheremo le indicazioni applicabili al suo caso non appena avremo completato il controllo del numero di lotto e dello stato della consegna.»\n\nOggi chiedo al vettore le prove di consegna e confronto i numeri delle unità con gli ordini. Ti passerò l’elenco verificato prima di ogni invio mirato. Se l’analisi qualità richiederà azioni ulteriori, aggiorneremo immediatamente il testo e le istruzioni.\n\nEdoardo",
+      "annotations": [
+        {
+          "label": "Quantifica spedizione",
+          "excerpt": "dodici pezzi del lotto L-27",
+          "evidenceIds": [
+            "ITC217F1"
+          ]
+        },
+        {
+          "label": "Quantifica blocco",
+          "excerpt": "altre 88 unità",
+          "evidenceIds": [
+            "ITC217F2"
+          ]
+        },
+        {
+          "label": "Lascia aperto difetto",
+          "excerpt": "non ha confermato un difetto",
+          "evidenceIds": [
+            "ITC217F3"
+          ]
+        },
+        {
+          "label": "Verifica consegne",
+          "excerpt": "chiedo al vettore le prove di consegna",
+          "evidenceIds": [
+            "ITC217F4",
+            "ITC217F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dogana-due-svincoli",
+    "title": "Svincolato da chi?",
+    "area": "Operations × importazioni",
+    "areaLabel": "Operazioni · importazioni",
+    "role": "Raffaele · logistica import",
+    "teaser": "Il container supera un controllo doganale, ma la singola merce resta in attesa del controllo locale.",
+    "misunderstanding": "Lo svincolo doganale del container viene interpretato come disponibilità immediata della spedizione al deposito.",
+    "email": {
+      "from": "Sofia · vendite",
+      "to": "Raffaele · importazioni",
+      "sent": "Mercoledì, ore 9:30",
+      "subject": "Merce pronta per il cliente?",
+      "body": "Ciao Raffaele,\n\nil portale del porto mostra «svincolato», quindi ho detto al cliente che la merce sarebbe arrivata oggi. Ora il deposito mi dice che il pallet è ancora in attesa di controllo locale. Puoi chiarire che cosa è stato effettivamente autorizzato e aiutarci a dare una nuova previsione senza attribuire il ritardo a un ufficio specifico prima di capirlo?\n\nSofia"
+    },
+    "document": {
+      "title": "Tracciamento container e pallet",
+      "intro": "Lo svincolo del container e la disponibilità del pallet sono passaggi distinti.",
+      "facts": [
+        {
+          "id": "ITC218F1",
+          "time": "Martedì",
+          "text": "La dogana registra lo svincolo del container per l’uscita dal porto."
+        },
+        {
+          "id": "ITC218F2",
+          "time": "Mercoledì",
+          "text": "Il pallet destinato al cliente è identificato nel container ma in attesa di controllo documentale al deposito."
+        },
+        {
+          "id": "ITC218F3",
+          "time": "Attuale",
+          "text": "Il deposito non ha confermato l’ora di completamento del controllo."
+        },
+        {
+          "id": "ITC218F4",
+          "time": "Attuale",
+          "text": "Il trasporto finale non è ancora prenotato."
+        },
+        {
+          "id": "ITC218F5",
+          "time": "Procedura",
+          "text": "La data di consegna si conferma dopo il controllo del pallet e la prenotazione del trasporto."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "dogana-due-svincoli-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa indica «svincolato»?",
+        "evidenceIds": [
+          "ITC218F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il completamento di ogni controllo al deposito.",
+            "feedback": "Il pallet è ancora in attesa."
+          },
+          {
+            "id": "b",
+            "text": "Il via libera del container per uscire dal porto.",
+            "feedback": "Non equivale alla consegna del pallet."
+          },
+          {
+            "id": "c",
+            "text": "La consegna al cliente.",
+            "feedback": "Il trasporto non è prenotato."
+          }
+        ]
+      },
+      {
+        "id": "dogana-due-svincoli-scope",
+        "axis": "Scope",
+        "prompt": "Quale elemento impedisce una data certa?",
+        "evidenceIds": [
+          "ITC218F2",
+          "ITC218F3",
+          "ITC218F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il container non è mai uscito dal porto.",
+            "feedback": "Lo svincolo è registrato."
+          },
+          {
+            "id": "b",
+            "text": "Controllo del pallet e trasporto finale ancora aperti.",
+            "feedback": "Mancano entrambi i passaggi."
+          },
+          {
+            "id": "c",
+            "text": "Il cliente ha rifiutato la merce.",
+            "feedback": "Non c’è un rifiuto documentato."
+          }
+        ]
+      },
+      {
+        "id": "dogana-due-svincoli-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve riparare Sofia?",
+        "evidenceIds": [
+          "ITC218F1",
+          "ITC218F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La promessa di arrivo basata su uno stato troppo ampio.",
+            "feedback": "Il suo messaggio ha saltato due verifiche."
+          },
+          {
+            "id": "b",
+            "text": "Un annullamento del contratto.",
+            "feedback": "La richiesta riguarda una previsione."
+          },
+          {
+            "id": "c",
+            "text": "Una colpa già attribuita al deposito.",
+            "feedback": "Non c’è ancora un accertamento di responsabilità."
+          }
+        ]
+      },
+      {
+        "id": "dogana-due-svincoli-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è proporzionata?",
+        "evidenceIds": [
+          "ITC218F2",
+          "ITC218F3",
+          "ITC218F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Garantire ancora la consegna oggi.",
+            "feedback": "Nessun orario di controllo è confermato."
+          },
+          {
+            "id": "b",
+            "text": "Dire che la dogana ha bloccato il container.",
+            "feedback": "Lo ha svincolato."
+          },
+          {
+            "id": "c",
+            "text": "Correggere la promessa, spiegare i passaggi mancanti e aggiornare dopo controllo e prenotazione.",
+            "feedback": "La procedura definisce il momento utile."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Sofia con un messaggio al cliente. Spiega la differenza fra i due stati e sostituisci la promessa di oggi con un aggiornamento verificabile.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Definire lo svincolo",
+        "Nominare il controllo locale",
+        "Non attribuire colpe premature",
+        "Confermare solo dopo il trasporto"
+      ]
+    },
+    "model": {
+      "subject": "Re: Merce pronta per il cliente?",
+      "body": "Ciao Sofia,\n\nlo stato «svincolato» riguarda il container e la sua uscita dal porto. Il pallet del cliente è stato identificato, ma attende ancora un controllo documentale al deposito. Non abbiamo un orario confermato per la conclusione di quel controllo e il trasporto finale non è prenotato. La previsione di arrivo oggi era quindi troppo anticipata; dobbiamo correggerla senza presentare la dogana o il deposito come responsabili di un ritardo che non abbiamo ancora ricostruito.\n\nAl cliente scriverei: «La merce ha superato il passaggio doganale del container. Il pallet destinato al suo ordine sta completando una verifica documentale al deposito; seguirà la prenotazione del trasporto finale. Ci scusiamo per aver indicato l’arrivo oggi prima che questi passaggi fossero confermati. Le daremo un nuovo aggiornamento domani mattina con lo stato del controllo e una data di consegna solo quando il vettore avrà accettato la prenotazione.»\n\nIo contatto oggi il deposito per conoscere i documenti ancora richiesti e preparo il trasporto non appena il pallet sarà disponibile. Ti informerò di ogni conferma, distinguendola dalle stime operative.\n\nRaffaele",
+      "annotations": [
+        {
+          "label": "Definisce stato porto",
+          "excerpt": "riguarda il container e la sua uscita dal porto",
+          "evidenceIds": [
+            "ITC218F1"
+          ]
+        },
+        {
+          "label": "Nomina controllo",
+          "excerpt": "attende ancora un controllo documentale",
+          "evidenceIds": [
+            "ITC218F2"
+          ]
+        },
+        {
+          "label": "Ritira promessa",
+          "excerpt": "La previsione di arrivo oggi era quindi troppo anticipata",
+          "evidenceIds": [
+            "ITC218F3",
+            "ITC218F4"
+          ]
+        },
+        {
+          "label": "Condiziona data",
+          "excerpt": "quando il vettore avrà accettato la prenotazione",
+          "evidenceIds": [
+            "ITC218F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "peso-imballi",
+    "title": "La tonnellata in più",
+    "area": "Operations × rendicontazione",
+    "areaLabel": "Operazioni · rendicontazione",
+    "role": "Beatrice · controllo operativo",
+    "teaser": "Un rapporto sugli scarti include il peso dei bancali riutilizzabili.",
+    "misunderstanding": "Il peso lordo di una raccolta viene comunicato come quantità netta di rifiuti prodotti.",
+    "email": {
+      "from": "Enrico · direzione stabilimento",
+      "to": "Beatrice · controllo operativo",
+      "sent": "Giovedì, ore 13:45",
+      "subject": "Peso degli scarti nel report",
+      "body": "Ciao Beatrice,\n\nil cliente legge 6,2 tonnellate di scarti nel nostro report e chiede perché siamo sopra l’obiettivo. Il formulario di ritiro pesa anche i bancali su cui sono caricati i materiali, che ci vengono restituiti. Possiamo correggere il numero senza sembrare che stiamo nascondendo materiale? Mi serve un metodo verificabile e un messaggio provvisorio.\n\nEnrico"
+    },
+    "document": {
+      "title": "Pesa e registro bancali",
+      "intro": "Il peso lordo è noto; la tara dei supporti non è ancora stata riconciliata per ogni ritiro.",
+      "facts": [
+        {
+          "id": "ITC219F1",
+          "time": "Pesa",
+          "text": "Il formulario registra 6,2 tonnellate di peso lordo dei ritiri del mese."
+        },
+        {
+          "id": "ITC219F2",
+          "time": "Registro",
+          "text": "I carichi includevano bancali riutilizzabili restituiti allo stabilimento."
+        },
+        {
+          "id": "ITC219F3",
+          "time": "Attuale",
+          "text": "Il peso complessivo dei bancali per quei ritiri non è ancora stato verificato."
+        },
+        {
+          "id": "ITC219F4",
+          "time": "Report",
+          "text": "La tabella usa la voce «scarti prodotti: 6,2 tonnellate» senza indicare peso lordo."
+        },
+        {
+          "id": "ITC219F5",
+          "time": "Procedura",
+          "text": "La quantità netta si pubblica dopo riconciliazione fra formulari, tara e registro dei resi."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "peso-imballi-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa misura certamente 6,2 tonnellate?",
+        "evidenceIds": [
+          "ITC219F1",
+          "ITC219F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gli scarti netti prodotti.",
+            "feedback": "La tara non è verificata."
+          },
+          {
+            "id": "b",
+            "text": "Solo il peso dei bancali.",
+            "feedback": "Il lordo include anche il materiale."
+          },
+          {
+            "id": "c",
+            "text": "Il peso lordo dei ritiri, inclusi i supporti.",
+            "feedback": "La pesa non separa ancora i bancali."
+          }
+        ]
+      },
+      {
+        "id": "peso-imballi-scope",
+        "axis": "Scope",
+        "prompt": "Perché non si può dare subito il netto?",
+        "evidenceIds": [
+          "ITC219F3",
+          "ITC219F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il peso lordo è inventato.",
+            "feedback": "È registrato dalla pesa."
+          },
+          {
+            "id": "b",
+            "text": "Manca la riconciliazione della tara dei bancali.",
+            "feedback": "La procedura richiede questo passaggio."
+          },
+          {
+            "id": "c",
+            "text": "I bancali non sono stati restituiti.",
+            "feedback": "Il registro indica il reso."
+          }
+        ]
+      },
+      {
+        "id": "peso-imballi-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole Enrico?",
+        "evidenceIds": [
+          "ITC219F1",
+          "ITC219F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Correggere un’etichetta troppo netta senza sminuire il dato misurato.",
+            "feedback": "Chiede un metodo verificabile."
+          },
+          {
+            "id": "b",
+            "text": "Cancellare il formulario originale.",
+            "feedback": "Il formulario resta una fonte."
+          },
+          {
+            "id": "c",
+            "text": "Confermare il superamento dell’obiettivo prima del netto.",
+            "feedback": "Il confronto dipende dal netto."
+          }
+        ]
+      },
+      {
+        "id": "peso-imballi-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta provvisoria è corretta?",
+        "evidenceIds": [
+          "ITC219F3",
+          "ITC219F4",
+          "ITC219F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lasciare «scarti prodotti» senza nota.",
+            "feedback": "L’etichetta è fuorviante."
+          },
+          {
+            "id": "b",
+            "text": "Indicare che 6,2 è lordo, sospendere il giudizio sull’obiettivo e pubblicare il netto dopo riconciliazione.",
+            "feedback": "Separa misura e calcolo aperto."
+          },
+          {
+            "id": "c",
+            "text": "Sottrarre una tara stimata senza dirlo.",
+            "feedback": "Sarebbe un nuovo numero non verificato."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Enrico con un testo al cliente. Mantieni il dato lordo, correggi l’etichetta e definisci quando e come sarà calcolato il netto.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Definire il peso lordo",
+        "Non inventare una tara",
+        "Correggere il report",
+        "Riconciliare prima di giudicare l’obiettivo"
+      ]
+    },
+    "model": {
+      "subject": "Re: Peso degli scarti nel report",
+      "body": "Ciao Enrico,\n\nle 6,2 tonnellate sono un peso lordo registrato alla pesa, non ancora la quantità netta di scarti. I carichi comprendevano bancali riutilizzabili che sono tornati allo stabilimento. Non abbiamo però riconciliato il peso di quei bancali per ciascun ritiro, quindi oggi non posso indicare un netto affidabile né concludere che l’obiettivo sia stato superato. Il report va corretto almeno nell’etichetta, che attualmente presenta il lordo come «scarti prodotti».\n\nProporrei al cliente: «Il valore di 6,2 tonnellate riportato nel documento è il peso lordo dei ritiri e comprende i bancali riutilizzabili. La voce del report non lo specificava e la correggeremo. Stiamo confrontando i formulari di pesa con il registro dei bancali restituiti per determinare la quantità netta di scarti. Le invieremo il valore riconciliato e il confronto con l’obiettivo dopo questa verifica.»\n\nIo raccolgo oggi formulari e resi e chiedo al magazzino le tare disponibili. Se manca un dato, lo segnalerò esplicitamente invece di sostituirlo con una stima non dichiarata. Ti darò domani lo stato della riconciliazione.\n\nBeatrice",
+      "annotations": [
+        {
+          "label": "Definisce misura",
+          "excerpt": "un peso lordo registrato alla pesa",
+          "evidenceIds": [
+            "ITC219F1"
+          ]
+        },
+        {
+          "label": "Nomina supporti",
+          "excerpt": "bancali riutilizzabili",
+          "evidenceIds": [
+            "ITC219F2"
+          ]
+        },
+        {
+          "label": "Lascia netto aperto",
+          "excerpt": "non posso indicare un netto affidabile",
+          "evidenceIds": [
+            "ITC219F3"
+          ]
+        },
+        {
+          "label": "Corregge etichetta",
+          "excerpt": "Il report va corretto almeno nell’etichetta",
+          "evidenceIds": [
+            "ITC219F4",
+            "ITC219F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "offerte-riservate",
+    "title": "Il preventivo dell’altro fornitore",
+    "area": "Operations × gare",
+    "areaLabel": "Operazioni · gare",
+    "role": "Nicola · gestione gare",
+    "teaser": "Un fornitore chiede il preventivo di un concorrente per capire perché non è stato scelto.",
+    "misunderstanding": "La trasparenza del criterio di scelta è confusa con la divulgazione integrale dell’offerta concorrente.",
+    "email": {
+      "from": "Federica · acquisti",
+      "to": "Nicola · gestione gare",
+      "sent": "Venerdì, ore 10:05",
+      "subject": "Richiesta di spiegazioni del fornitore",
+      "body": "Ciao Nicola,\n\nil fornitore escluso chiede copia dell’offerta vincente. Dice che senza i prezzi del concorrente non può capire la nostra decisione. Vorrei spiegare i criteri e il suo punteggio, ma il fascicolo contiene dettagli riservati dell’altra impresa. Cosa possiamo comunicare ora, e quali parti richiedono una verifica prima di essere condivise?\n\nFederica"
+    },
+    "document": {
+      "title": "Verbale valutazione e regola di accesso",
+      "intro": "Il fascicolo distingue motivazione della scelta e dati dell’offerta concorrente.",
+      "facts": [
+        {
+          "id": "ITC220F1",
+          "time": "Bando",
+          "text": "I criteri pubblicati attribuiscono 60 punti alla qualità e 40 al prezzo."
+        },
+        {
+          "id": "ITC220F2",
+          "time": "Verbale",
+          "text": "Il fornitore richiedente ha ottenuto 71 punti; il vincitore 83."
+        },
+        {
+          "id": "ITC220F3",
+          "time": "Verbale",
+          "text": "Le note sulla qualità indicano due requisiti non pienamente soddisfatti dal richiedente."
+        },
+        {
+          "id": "ITC220F4",
+          "time": "Fascicolo",
+          "text": "L’offerta vincente contiene formule di costo e dati tecnici marcati come riservati."
+        },
+        {
+          "id": "ITC220F5",
+          "time": "Procedura",
+          "text": "La risposta deve motivare il punteggio del richiedente; l’accesso a documenti di terzi richiede una verifica separata."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "offerte-riservate-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa si può spiegare con il verbale?",
+        "evidenceIds": [
+          "ITC220F1",
+          "ITC220F2",
+          "ITC220F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una ragione inventata per l’esclusione.",
+            "feedback": "Il verbale offre motivi specifici."
+          },
+          {
+            "id": "b",
+            "text": "Criteri, punteggio del richiedente e motivi documentati della valutazione.",
+            "feedback": "Questi elementi sono nel fascicolo."
+          },
+          {
+            "id": "c",
+            "text": "Ogni formula di costo del concorrente.",
+            "feedback": "È marcata riservata."
+          }
+        ]
+      },
+      {
+        "id": "offerte-riservate-scope",
+        "axis": "Scope",
+        "prompt": "Quale parte richiede verifica separata?",
+        "evidenceIds": [
+          "ITC220F4",
+          "ITC220F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’accesso all’offerta del concorrente.",
+            "feedback": "La procedura lo prevede."
+          },
+          {
+            "id": "b",
+            "text": "Il punteggio del richiedente.",
+            "feedback": "È documentato nel verbale."
+          },
+          {
+            "id": "c",
+            "text": "Il testo dei criteri pubblicati.",
+            "feedback": "Era già nel bando."
+          }
+        ]
+      },
+      {
+        "id": "offerte-riservate-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole conciliare Federica?",
+        "evidenceIds": [
+          "ITC220F2",
+          "ITC220F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "La pubblicazione automatica dell’offerta vincente.",
+            "feedback": "Chiede prima una verifica."
+          },
+          {
+            "id": "b",
+            "text": "Il rifiuto di ogni spiegazione.",
+            "feedback": "Vuole spiegare criteri e punteggio."
+          },
+          {
+            "id": "c",
+            "text": "Una motivazione comprensibile e la tutela dei dati di terzi.",
+            "feedback": "La domanda contiene entrambi i bisogni."
+          }
+        ]
+      },
+      {
+        "id": "offerte-riservate-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è equilibrata?",
+        "evidenceIds": [
+          "ITC220F3",
+          "ITC220F4",
+          "ITC220F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Inviare subito l’offerta completa.",
+            "feedback": "Contiene dati riservati non esaminati."
+          },
+          {
+            "id": "b",
+            "text": "Fornire la motivazione propria, indicare che i documenti di terzi sono in verifica e dare una data di risposta su quella richiesta.",
+            "feedback": "Distingue i due percorsi."
+          },
+          {
+            "id": "c",
+            "text": "Dire solo «ha perso» senza criteri.",
+            "feedback": "Il verbale permette una motivazione."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Federica con una comunicazione al fornitore. Dai una spiegazione concreta del suo esito e separa la richiesta di documenti del concorrente dalla motivazione immediata.",
+      "wordGuide": "Circa 110–190 parole",
+      "criteria": [
+        "Usare criteri pubblicati",
+        "Spiegare il punteggio proprio",
+        "Proteggere dati di terzi",
+        "Dare un percorso per l’accesso richiesto"
+      ]
+    },
+    "model": {
+      "subject": "Re: Richiesta di spiegazioni del fornitore",
+      "body": "Ciao Federica,\n\npossiamo spiegare subito la valutazione del fornitore senza inviare automaticamente l’offerta del concorrente. Il bando attribuiva 60 punti alla qualità e 40 al prezzo; il richiedente ha ottenuto 71 punti rispetto agli 83 del vincitore. Il verbale segnala inoltre due requisiti qualitativi non pienamente soddisfatti. Dobbiamo descriverli con riferimento ai criteri applicati, non limitarci alla differenza numerica.\n\nGli scriverei: «La sua offerta è stata valutata secondo i criteri pubblicati. Ha ottenuto 71 punti; il punteggio più alto è stato 83. In particolare, la valutazione della qualità ha rilevato [i due requisiti, riportati fedelmente dal verbale]. Le inviamo il dettaglio della sua scheda di valutazione. La sua richiesta di accesso all’offerta dell’altro partecipante è stata registrata e sarà esaminata separatamente, perché il documento contiene informazioni di terzi soggette a verifica. Le comunicheremo l’esito di questa richiesta entro la data confermata dall’ufficio competente.»\n\nControllo oggi la formulazione dei due rilievi e chiedo all’ufficio competente il termine per la verifica dell’accesso. Trasparenza sulla nostra decisione e tutela del materiale altrui possono procedere insieme.\n\nNicola",
+      "annotations": [
+        {
+          "label": "Nomina criteri",
+          "excerpt": "60 punti alla qualità e 40 al prezzo",
+          "evidenceIds": [
+            "ITC220F1"
+          ]
+        },
+        {
+          "label": "Spiega punteggio",
+          "excerpt": "71 punti rispetto agli 83",
+          "evidenceIds": [
+            "ITC220F2"
+          ]
+        },
+        {
+          "label": "Usa rilievi",
+          "excerpt": "due requisiti qualitativi non pienamente soddisfatti",
+          "evidenceIds": [
+            "ITC220F3"
+          ]
+        },
+        {
+          "label": "Separa accesso",
+          "excerpt": "esaminata separatamente",
+          "evidenceIds": [
+            "ITC220F4",
+            "ITC220F5"
+          ]
+        }
+      ]
+    }
+  }
+]

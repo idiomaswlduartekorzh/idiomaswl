@@ -44,14 +44,14 @@ Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
 `origin/main@79fc4bee`. Estado: `EN_DESARROLLO`, sin integración ni despliegue.
 El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
 recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
-nivel de inglés, francés y alemán B2, C1 y C2; los demás idiomas siguen en elaboración.
+nivel de inglés, francés, alemán e italiano B2, C1 y C2; los demás idiomas siguen en elaboración.
 El harness exige cuatro casos por cada una de
 cinco áreas, evidencia referenciada y claves variadas. Las rutas nuevas siguen
 con `noindex` y los hubs no las anuncian todavía.
 
-Pasaron el harness de los 60 casos ingleses, los 60 franceses, los 60 alemanes y las diez pruebas del harness B2,
+Pasaron el harness de los 60 casos ingleses, los 60 franceses, los 60 alemanes, los 60 italianos y las diez pruebas del harness B2,
 ESLint y TypeScript acotado de las rutas nuevas. Se recorrieron en navegador
-inglés B2, C1 y C2 y francés B2. Pendientes: recorrido de francés C1/C2 y alemán, cierre lingüístico de los bancos
+inglés B2, C1 y C2, francés B2 y alemán B2. Pendientes: recorrido de francés C1/C2, alemán C1/C2 e italiano, cierre lingüístico de los bancos
 en curso, revisión de salud administrativa, catálogo completo, TypeScript
 global, build y publicación verificable desde `main`. Contrato y estado:
 [`writing-workplace-agent-harness.md`](writing-workplace-agent-harness.md).
