@@ -1,0 +1,4017 @@
+[
+  {
+    "id": "pruefsiegel-verpackung",
+    "title": "Was genau ist zertifiziert?",
+    "area": "Marketing × Produktkommunikation",
+    "areaLabel": "Marketing · Produktkommunikation",
+    "role": "Mara · Markenkommunikation",
+    "teaser": "Ein Prüfsiegel für die Verpackung erscheint in einer Anzeige neben dem ganzen Produkt.",
+    "misunderstanding": "Die Prüfung eines Verpackungsmaterials wird als Zertifizierung des gesamten Produkts ausgegeben.",
+    "email": {
+      "from": "Felix · Marketingleitung",
+      "to": "Mara · Markenkommunikation",
+      "sent": "Montag, 9:20 Uhr",
+      "subject": "Prüfsiegel in der Anzeige",
+      "body": "Hallo Mara,\n\nEin Händler fragt, ob unser Produkt vollständig zertifiziert ist. In unserer neuen Anzeige steht das Prüfsiegel direkt neben dem Produktnamen. Ich weiß, dass wir Unterlagen zur Verpackung haben, aber ich finde keine Bescheinigung für das Gerät selbst. Wie können wir die Anzeige präzisieren, ohne die tatsächlich bestandene Prüfung kleinzureden? Die Händlerunterlagen sollen morgen raus.\n\nFelix"
+    },
+    "document": {
+      "title": "Prüfbericht und Anzeigenfreigabe",
+      "intro": "Der Bericht nennt den geprüften Gegenstand ausdrücklich.",
+      "facts": [
+        {
+          "id": "DEC21F1",
+          "time": "Bericht",
+          "text": "Das Prüfsiegel bezieht sich auf das Recyclingmaterial der Außenverpackung."
+        },
+        {
+          "id": "DEC21F2",
+          "time": "Bericht",
+          "text": "Das Gerät und sein Zubehör waren nicht Gegenstand dieser Prüfung."
+        },
+        {
+          "id": "DEC21F3",
+          "time": "Anzeige",
+          "text": "Das Siegel steht neben dem Produktnamen; der Zusatz „Verpackung“ fehlt."
+        },
+        {
+          "id": "DEC21F4",
+          "time": "Stand jetzt",
+          "text": "Die Händlerunterlagen sind vorbereitet, aber noch nicht versandt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "pruefsiegel-verpackung-evidence",
+        "axis": "Evidence",
+        "prompt": "Was wurde tatsächlich geprüft?",
+        "evidenceIds": [
+          "DEC21F1",
+          "DEC21F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das vollständige Gerät.",
+            "feedback": "Das Gerät war nicht Teil der Prüfung."
+          },
+          {
+            "id": "b",
+            "text": "Das Material der Außenverpackung.",
+            "feedback": "Der Bericht benennt genau dieses Material."
+          },
+          {
+            "id": "c",
+            "text": "Das Zubehör allein.",
+            "feedback": "Auch das Zubehör war nicht Gegenstand."
+          }
+        ]
+      },
+      {
+        "id": "pruefsiegel-verpackung-scope",
+        "axis": "Scope",
+        "prompt": "Warum ist die Anzeige missverständlich?",
+        "evidenceIds": [
+          "DEC21F2",
+          "DEC21F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Es gibt überhaupt keinen Prüfbericht.",
+            "feedback": "Der Verpackungsbericht liegt vor."
+          },
+          {
+            "id": "b",
+            "text": "Das Siegel ist abgelaufen.",
+            "feedback": "Ein Ablaufdatum ist nicht dokumentiert."
+          },
+          {
+            "id": "c",
+            "text": "Die Platzierung lässt das Siegel auf das Produkt insgesamt beziehen.",
+            "feedback": "Der notwendige Bezug zur Verpackung fehlt."
+          }
+        ]
+      },
+      {
+        "id": "pruefsiegel-verpackung-intent",
+        "axis": "Intent",
+        "prompt": "Welches Anliegen von Felix ist berechtigt?",
+        "evidenceIds": [
+          "DEC21F1",
+          "DEC21F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Prüfsiegel vollständig erfinden.",
+            "feedback": "Die Prüfung hat tatsächlich stattgefunden."
+          },
+          {
+            "id": "b",
+            "text": "Die Händlerfrage unbeantwortet lassen.",
+            "feedback": "Die Unterlagen sind noch nicht versandt."
+          },
+          {
+            "id": "c",
+            "text": "Die reale Verpackungsprüfung sichtbar halten und den falschen Eindruck korrigieren.",
+            "feedback": "Beides ist vor dem Versand möglich."
+          }
+        ]
+      },
+      {
+        "id": "pruefsiegel-verpackung-purpose",
+        "axis": "Purpose",
+        "prompt": "Was sollte Mara vor dem Versand tun?",
+        "evidenceIds": [
+          "DEC21F1",
+          "DEC21F3",
+          "DEC21F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Anzeige unverändert schicken und erst auf Nachfrage erklären.",
+            "feedback": "Der falsche Eindruck ist bereits erkennbar."
+          },
+          {
+            "id": "b",
+            "text": "Den Zusatz „Verpackungsmaterial geprüft“ direkt am Siegel ergänzen und die Händler informieren.",
+            "feedback": "So bleibt die Aussage auf den Bericht begrenzt."
+          },
+          {
+            "id": "c",
+            "text": "Das ganze Produkt als zertifiziert bestätigen.",
+            "feedback": "Dafür fehlt eine entsprechende Prüfung."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Felix mit einer Formulierung für Anzeige und Händler. Grenzen Sie den Prüfgegenstand ein und nennen Sie einen konkreten Freigabeschritt vor dem Versand.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Prüfgegenstand exakt nennen",
+        "Irreführende Platzierung anerkennen",
+        "Korrekte Aussage erhalten",
+        "Versand kontrollieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Prüfsiegel in der Anzeige",
+      "body": "Hallo Felix,\n\ndie Prüfung ist real, ihr Gegenstand aber enger als die Anzeige vermuten lässt. Das Siegel betrifft das Recyclingmaterial der Außenverpackung. Weder das Gerät noch sein Zubehör wurden in diesem Bericht geprüft. Weil das Siegel unmittelbar neben dem Produktnamen steht und der Zusatz „Verpackung“ fehlt, kann der Händler die Darstellung verständlicherweise als Produktzertifizierung lesen.\n\nIch würde in der Anzeige direkt am Siegel „Recyclingmaterial der Außenverpackung geprüft“ ergänzen. Für die Händler schlage ich vor: „Das abgebildete Prüfsiegel bezieht sich auf das Material der Außenverpackung. Es ist keine Zertifizierung des Geräts oder seines Zubehörs.“ Damit benennen wir die bestandene Prüfung präzise, statt sie zurückzunehmen.\n\nDie Unterlagen sind noch nicht versandt. Ich prüfe heute alle Stellen, an denen das Siegel ohne erläuternden Zusatz erscheint, und lasse die korrigierte Fassung vor dem Versand noch einmal gegen den Prüfbericht lesen. Falls bereits eine digitale Anzeige sichtbar ist, sollten wir dort denselben Zusatz sofort ergänzen und die Änderung dokumentieren.\n\nMara",
+      "annotations": [
+        {
+          "label": "Begrenzt die Prüfung",
+          "excerpt": "Das Siegel betrifft das Recyclingmaterial der Außenverpackung",
+          "evidenceIds": [
+            "DEC21F1"
+          ]
+        },
+        {
+          "label": "Benennt den Ausschluss",
+          "excerpt": "Weder das Gerät noch sein Zubehör",
+          "evidenceIds": [
+            "DEC21F2"
+          ]
+        },
+        {
+          "label": "Erklärt den Eindruck",
+          "excerpt": "unmittelbar neben dem Produktnamen",
+          "evidenceIds": [
+            "DEC21F3"
+          ]
+        },
+        {
+          "label": "Setzt Freigabe",
+          "excerpt": "vor dem Versand noch einmal gegen den Prüfbericht lesen",
+          "evidenceIds": [
+            "DEC21F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "referenzzeitraum",
+    "title": "Der Vergleich mit dem anderen Jahr",
+    "area": "Marketing × Analyse",
+    "areaLabel": "Marketing · Analyse",
+    "role": "Nora · Kampagnenanalyse",
+    "teaser": "Eine Erfolgsmeldung vergleicht aktuelle Verkäufe mit einem Zeitraum, in dem ein Laden geschlossen war.",
+    "misunderstanding": "Ein Anstieg gegenüber einer Sonderphase wird als Beleg für dauerhaftes Wachstum dargestellt.",
+    "email": {
+      "from": "Sven · Vertriebsleitung",
+      "to": "Nora · Analyse",
+      "sent": "Mittwoch, 11:10 Uhr",
+      "subject": "Zahl für die Pressemitteilung",
+      "body": "Hallo Nora,\n\nDie Umsätze liegen laut Folie 40 Prozent über dem Vorjahr. Ich möchte die Zahl in der Pressemitteilung nennen, aber mir fällt ein, dass unser größter Standort damals zwei Wochen geschlossen war. Kannst du mir sagen, was der Vergleich noch aussagt und welche Formulierung wir nach außen vertreten können? Wir brauchen heute Nachmittag eine Entscheidung.\n\nSven"
+    },
+    "document": {
+      "title": "Umsatzvergleich und Standortkalender",
+      "intro": "Die Daten sind korrekt berechnet, der Referenzzeitraum war jedoch atypisch.",
+      "facts": [
+        {
+          "id": "DEC22F1",
+          "time": "Bericht",
+          "text": "Der Umsatz im aktuellen April liegt 40 Prozent über April des Vorjahres."
+        },
+        {
+          "id": "DEC22F2",
+          "time": "Vorjahr",
+          "text": "Der größte Standort war im Vergleichsmonat wegen eines Umbaus zwei Wochen geschlossen."
+        },
+        {
+          "id": "DEC22F3",
+          "time": "Aktuell",
+          "text": "Alle Standorte waren im aktuellen April geöffnet."
+        },
+        {
+          "id": "DEC22F4",
+          "time": "Stand jetzt",
+          "text": "Ein Vergleich auf gleicher Öffnungsbasis wurde noch nicht berechnet."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "referenzzeitraum-evidence",
+        "axis": "Evidence",
+        "prompt": "Ist die Zahl 40 Prozent rechnerisch falsch?",
+        "evidenceIds": [
+          "DEC22F1",
+          "DEC22F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ja, die Daten wurden erfunden.",
+            "feedback": "Der Bericht enthält die Zahl."
+          },
+          {
+            "id": "b",
+            "text": "Sie belegt den Erfolg jeder Filiale.",
+            "feedback": "Die Standorte hatten unterschiedliche Öffnungszeiten."
+          },
+          {
+            "id": "c",
+            "text": "Nein, sie beschreibt den ausgewählten Monatsvergleich.",
+            "feedback": "Die Berechnung ist korrekt, die Interpretation begrenzt."
+          }
+        ]
+      },
+      {
+        "id": "referenzzeitraum-scope",
+        "axis": "Scope",
+        "prompt": "Welche Aussage geht zu weit?",
+        "evidenceIds": [
+          "DEC22F2",
+          "DEC22F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass der Umsatz im aktuellen April höher war.",
+            "feedback": "Genau das zeigt der Bericht."
+          },
+          {
+            "id": "b",
+            "text": "Ein dauerhaftes Wachstum auf vergleichbarer Betriebsbasis.",
+            "feedback": "Ein bereinigter Vergleich fehlt."
+          },
+          {
+            "id": "c",
+            "text": "Dass der Standort zuvor geschlossen war.",
+            "feedback": "Der Kalender bestätigt die Schließung."
+          }
+        ]
+      },
+      {
+        "id": "referenzzeitraum-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Sven für seine Entscheidung?",
+        "evidenceIds": [
+          "DEC22F1",
+          "DEC22F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Garantie für die Umsätze des nächsten Jahres.",
+            "feedback": "Der Bericht enthält keine Prognose."
+          },
+          {
+            "id": "b",
+            "text": "Eine nach außen tragfähige Einordnung vor der Veröffentlichung.",
+            "feedback": "Die Folie ist für die Presse vorgesehen."
+          },
+          {
+            "id": "c",
+            "text": "Eine Erklärung, warum der Umbau illegal war.",
+            "feedback": "Zum Umbau gibt es keine solche Frage."
+          }
+        ]
+      },
+      {
+        "id": "referenzzeitraum-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Formulierung ist vertretbar?",
+        "evidenceIds": [
+          "DEC22F1",
+          "DEC22F2",
+          "DEC22F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Anstieg mit Zeitraum und Schließung nennen und einen bereinigten Vergleich nachreichen.",
+            "feedback": "So werden Zahl und Einschränkung gemeinsam sichtbar."
+          },
+          {
+            "id": "b",
+            "text": "Die Zahl vollständig streichen und niedrigere Umsätze behaupten.",
+            "feedback": "Der tatsächliche Monatsanstieg bleibt belegbar."
+          },
+          {
+            "id": "c",
+            "text": "Nur „40 Prozent dauerhaftes Wachstum“ schreiben.",
+            "feedback": "Die Referenz war atypisch."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Sven mit einer pressefähigen Formulierung. Unterscheiden Sie korrekte Rechnung und überzogene Deutung und schlagen Sie einen bereinigten Vergleich vor.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Zahl korrekt einordnen",
+        "Atypischen Zeitraum benennen",
+        "Keine Dauerprognose behaupten",
+        "Nächste Berechnung anbieten"
+      ]
+    },
+    "model": {
+      "subject": "Re: Zahl für die Pressemitteilung",
+      "body": "Hallo Sven,\n\ndie 40 Prozent sind als Vergleich der beiden Aprilmonate korrekt berechnet. Für eine Aussage über dauerhaftes Wachstum reichen sie nicht aus: Im Vorjahr war unser größter Standort zwei Wochen geschlossen, während diesmal alle Standorte geöffnet waren. Ein Vergleich mit gleicher Öffnungsbasis liegt noch nicht vor. Wir sollten den Unterschied offen benennen, ohne die beobachtete Umsatzsteigerung zu bestreiten.\n\nFür die Pressemitteilung schlage ich vor: „Im April lag unser Umsatz 40 Prozent über dem entsprechenden Vorjahresmonat. Der Vergleich ist durch die zweiwöchige Schließung unseres größten Standorts im Vorjahr beeinflusst; eine bereinigte Auswertung auf vergleichbarer Öffnungsbasis folgt.“ Falls diese Einordnung für die Mitteilung zu lang ist, würde ich lieber auf die Wachstumsbehauptung verzichten, bis die Auswertung vorliegt.\n\nIch kann heute den Standortkalender und die Umsätze für eine bereinigte Gegenüberstellung zusammenführen und dir bis morgen Mittag sagen, welche Aussage daraus belastbar ist. Bitte gib die jetzige Folie nicht ohne den Hinweis zur Schließung frei.\n\nNora",
+      "annotations": [
+        {
+          "label": "Bestätigt die Rechnung",
+          "excerpt": "als Vergleich der beiden Aprilmonate korrekt",
+          "evidenceIds": [
+            "DEC22F1"
+          ]
+        },
+        {
+          "label": "Nennt die Verzerrung",
+          "excerpt": "zwei Wochen geschlossen",
+          "evidenceIds": [
+            "DEC22F2"
+          ]
+        },
+        {
+          "label": "Begrenzt die Deutung",
+          "excerpt": "Für eine Aussage über dauerhaftes Wachstum reichen sie nicht aus",
+          "evidenceIds": [
+            "DEC22F2",
+            "DEC22F4"
+          ]
+        },
+        {
+          "label": "Bietet Prüfung",
+          "excerpt": "eine bereinigte Gegenüberstellung",
+          "evidenceIds": [
+            "DEC22F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "partnerschaft-logo",
+    "title": "Ein Logo ist noch keine Empfehlung",
+    "area": "Marketing × Kooperationen",
+    "areaLabel": "Marketing · Kooperationen",
+    "role": "Lena · Partnerschaften",
+    "teaser": "Ein Veranstalter nutzt das Firmenlogo neben einer Aussage, die wie eine Empfehlung wirkt.",
+    "misunderstanding": "Die Erlaubnis, als Sponsor genannt zu werden, wird als Zustimmung zu einer fachlichen Empfehlung gelesen.",
+    "email": {
+      "from": "Jan · Geschäftsführung",
+      "to": "Lena · Partnerschaften",
+      "sent": "Donnerstag, 15:40 Uhr",
+      "subject": "Unser Logo beim Veranstalter",
+      "body": "Hallo Lena,\n\nAuf der Veranstaltungsseite steht unser Logo direkt unter „Von führenden Unternehmen empfohlen“. Wir sind Sponsor, haben aber meines Wissens keine Empfehlung für die dort beworbene Methode abgegeben. Der Veranstalter sagt, das sei übliche Sponsorenkommunikation. Kannst du klären, worauf unsere Freigabe tatsächlich bezogen war, und eine Änderung verlangen, ohne die Zusammenarbeit unnötig zu belasten?\n\nJan"
+    },
+    "document": {
+      "title": "Sponsoringvereinbarung und Webseitenentwurf",
+      "intro": "Die Vereinbarung erlaubt die Sponsorennennung, nicht jede inhaltliche Einordnung.",
+      "facts": [
+        {
+          "id": "DEC23F1",
+          "time": "Vertrag",
+          "text": "Das Firmenlogo darf im Sponsorenteil der Veranstaltung erscheinen."
+        },
+        {
+          "id": "DEC23F2",
+          "time": "Freigabe",
+          "text": "Der geprüfte Entwurf zeigte eine getrennte Sponsorenliste ohne Empfehlungssatz."
+        },
+        {
+          "id": "DEC23F3",
+          "time": "Aktuell",
+          "text": "Die veröffentlichte Seite verbindet die Logos optisch mit „Von führenden Unternehmen empfohlen“."
+        },
+        {
+          "id": "DEC23F4",
+          "time": "Stand jetzt",
+          "text": "Es liegt keine dokumentierte fachliche Empfehlung des Unternehmens für die Methode vor."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "partnerschaft-logo-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Nutzung wurde freigegeben?",
+        "evidenceIds": [
+          "DEC23F1",
+          "DEC23F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Empfehlung der Methode.",
+            "feedback": "Dazu gibt es keine dokumentierte Erklärung."
+          },
+          {
+            "id": "b",
+            "text": "Das Logo in einer getrennten Sponsorenliste.",
+            "feedback": "So stand es im geprüften Entwurf."
+          },
+          {
+            "id": "c",
+            "text": "Jede beliebige Platzierung des Logos.",
+            "feedback": "Die Freigabe bezog sich auf einen konkreten Entwurf."
+          }
+        ]
+      },
+      {
+        "id": "partnerschaft-logo-scope",
+        "axis": "Scope",
+        "prompt": "Worin liegt die neue Aussage?",
+        "evidenceIds": [
+          "DEC23F3",
+          "DEC23F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Sponsorvertrag ist automatisch beendet.",
+            "feedback": "Ein Vertragsende ist nicht dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Das Unternehmen hat die Methode geprüft.",
+            "feedback": "Eine fachliche Prüfung ist nicht belegt."
+          },
+          {
+            "id": "c",
+            "text": "Die veröffentlichte Anordnung kann Sponsoring wie eine Empfehlung wirken lassen.",
+            "feedback": "Der Satz ist visuell mit den Logos verbunden."
+          }
+        ]
+      },
+      {
+        "id": "partnerschaft-logo-intent",
+        "axis": "Intent",
+        "prompt": "Welche Beziehung will Jan erhalten?",
+        "evidenceIds": [
+          "DEC23F1",
+          "DEC23F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Zusammenarbeit mit dem Veranstalter bei klarer Trennung von Sponsoring und Empfehlung.",
+            "feedback": "Er bittet um eine Änderung ohne Eskalation."
+          },
+          {
+            "id": "b",
+            "text": "Eine nachträgliche fachliche Empfehlung.",
+            "feedback": "Dafür gibt es keinen Auftrag."
+          },
+          {
+            "id": "c",
+            "text": "Eine öffentliche Schuldzuweisung.",
+            "feedback": "Er möchte die Kooperation nicht unnötig belasten."
+          }
+        ]
+      },
+      {
+        "id": "partnerschaft-logo-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Änderung passt zum Befund?",
+        "evidenceIds": [
+          "DEC23F2",
+          "DEC23F3",
+          "DEC23F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Logo in den Sponsorenteil verschieben und den Empfehlungssatz davon trennen.",
+            "feedback": "Das stellt den freigegebenen Kontext wieder her."
+          },
+          {
+            "id": "b",
+            "text": "Die aktuelle Seite unverändert bestätigen.",
+            "feedback": "Die veröffentlichte Anordnung weicht vom Entwurf ab."
+          },
+          {
+            "id": "c",
+            "text": "Alle Logos kommentarlos löschen lassen.",
+            "feedback": "Die Sponsorennennung selbst ist erlaubt."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Jan mit einem Schreiben an den Veranstalter. Beschreiben Sie die Freigabe und den neuen Eindruck präzise, ohne eine Absicht zu unterstellen.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Freigabe begrenzen",
+        "Optischen Eindruck benennen",
+        "Kooperation wahren",
+        "Konkrete Korrektur verlangen"
+      ]
+    },
+    "model": {
+      "subject": "Re: Unser Logo beim Veranstalter",
+      "body": "Hallo Jan,\n\nunser Vertrag erlaubt die Verwendung des Logos im Sponsorenteil. Der von uns geprüfte Entwurf zeigte eine eigenständige Sponsorenliste. Auf der veröffentlichten Seite stehen die Logos dagegen unmittelbar unter dem Satz „Von führenden Unternehmen empfohlen“. Diese Anordnung kann den Eindruck erwecken, wir hätten die beworbene Methode fachlich empfohlen. Eine solche Erklärung liegt von uns nicht vor. Warum die Gestaltung geändert wurde, wissen wir noch nicht; eine Absicht würde ich dem Veranstalter nicht zuschreiben.\n\nIch schlage folgende Nachricht vor: „Wir unterstützen die Veranstaltung weiterhin gern als Sponsor. Die aktuelle Platzierung unseres Logos unter dem Empfehlungssatz geht jedoch über den freigegebenen Sponsorenkontext hinaus. Bitte setzen Sie die Logos in einen klar getrennten Sponsorenteil und entfernen Sie die visuelle Verbindung zur fachlichen Empfehlung. Geben Sie uns kurz Bescheid, sobald die Seite angepasst ist.“\n\nIch werde den freigegebenen Entwurf und einen Screenshot der jetzigen Seite sichern und dem Veranstalter heute schreiben. Sollte die Änderung nicht zeitnah möglich sein, können wir gemeinsam eine vorübergehende Lösung für die Darstellung vereinbaren.\n\nLena",
+      "annotations": [
+        {
+          "label": "Begrenzt die Freigabe",
+          "excerpt": "im Sponsorenteil",
+          "evidenceIds": [
+            "DEC23F1"
+          ]
+        },
+        {
+          "label": "Benennt die Abweichung",
+          "excerpt": "unmittelbar unter dem Satz",
+          "evidenceIds": [
+            "DEC23F3"
+          ]
+        },
+        {
+          "label": "Schützt Beziehung",
+          "excerpt": "weiterhin gern als Sponsor",
+          "evidenceIds": [
+            "DEC23F1"
+          ]
+        },
+        {
+          "label": "Fordert konkrete Änderung",
+          "excerpt": "klar getrennten Sponsorenteil",
+          "evidenceIds": [
+            "DEC23F2",
+            "DEC23F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "chatbot-preis",
+    "title": "Die Zusage aus dem Chatfenster",
+    "area": "Marketing × Kundenkommunikation",
+    "areaLabel": "Marketing · Kundenkommunikation",
+    "role": "Tarek · Kommunikationsleitung",
+    "teaser": "Ein Chatbot verspricht einen Preis für ein ganzes Jahr, obwohl der Tarif monatlich überprüft wird.",
+    "misunderstanding": "Eine automatisch erzeugte Antwort wird als verbindliche Unternehmenszusage behandelt, obwohl ihre Grundlage unklar ist.",
+    "email": {
+      "from": "Eva · Kundenservice",
+      "to": "Tarek · Kommunikation",
+      "sent": "Freitag, 10:30 Uhr",
+      "subject": "Preiszusage im Chat",
+      "body": "Hallo Tarek,\n\nein Kunde hat einen Screenshot unseres Chats geschickt. Darin steht, sein Preis bleibe zwölf Monate unverändert. Unsere Tarifseite beschreibt jedoch nur eine monatliche Abrechnung mit möglicher Anpassung. Ich möchte den Screenshot nicht abtun: Die Aussage kam schließlich von unserem System. Wie antworten wir fair, während wir prüfen, warum der Bot das geschrieben hat?\n\nEva"
+    },
+    "document": {
+      "title": "Chatprotokoll und Tarifstand",
+      "intro": "Die technische Quelle der Chat-Antwort und die Auswirkung auf den konkreten Vertrag werden getrennt geprüft.",
+      "facts": [
+        {
+          "id": "DEC24F1",
+          "time": "Chat",
+          "text": "Der Bot antwortete: „Ihr Preis bleibt garantiert zwölf Monate gleich.“"
+        },
+        {
+          "id": "DEC24F2",
+          "time": "Tarifseite",
+          "text": "Der veröffentlichte Tarif nennt monatliche Abrechnung und mögliche Preisanpassungen."
+        },
+        {
+          "id": "DEC24F3",
+          "time": "Technik",
+          "text": "Die Quelle des Garantie-Satzes im Bot ist noch nicht identifiziert."
+        },
+        {
+          "id": "DEC24F4",
+          "time": "Kundenakte",
+          "text": "Der konkrete Vertrag des Kunden wurde noch nicht mit dem Chatprotokoll abgeglichen."
+        },
+        {
+          "id": "DEC24F5",
+          "time": "Aktuell",
+          "text": "Die betreffende Bot-Antwort ist vorläufig deaktiviert."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "chatbot-preis-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist am Screenshot gesichert?",
+        "evidenceIds": [
+          "DEC24F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das System hat die Garantie ausdrücklich ausgegeben.",
+            "feedback": "Der Wortlaut steht im Protokoll."
+          },
+          {
+            "id": "b",
+            "text": "Der Kunde hat die Aussage erfunden.",
+            "feedback": "Der Chatverlauf ist dokumentiert."
+          },
+          {
+            "id": "c",
+            "text": "Ein Jahresvertrag wurde unterschrieben.",
+            "feedback": "Die Kundenakte wurde noch nicht abgeglichen."
+          }
+        ]
+      },
+      {
+        "id": "chatbot-preis-scope",
+        "axis": "Scope",
+        "prompt": "Welche Aussage ist noch nicht möglich?",
+        "evidenceIds": [
+          "DEC24F3",
+          "DEC24F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass die Tarifseite eine Anpassung erwähnt.",
+            "feedback": "Das steht ausdrücklich auf der Seite."
+          },
+          {
+            "id": "b",
+            "text": "Dass der Bot-Satz deaktiviert wurde.",
+            "feedback": "Die Deaktivierung ist dokumentiert."
+          },
+          {
+            "id": "c",
+            "text": "Ob und wie die Chat-Antwort für diesen konkreten Vertrag zu behandeln ist.",
+            "feedback": "Quelle und Vertrag sind noch offen."
+          }
+        ]
+      },
+      {
+        "id": "chatbot-preis-intent",
+        "axis": "Intent",
+        "prompt": "Was will Eva vermeiden?",
+        "evidenceIds": [
+          "DEC24F1",
+          "DEC24F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Chatverlauf sichern.",
+            "feedback": "Gerade der Verlauf ist wichtig."
+          },
+          {
+            "id": "b",
+            "text": "Den Kunden für eine Aussage des eigenen Systems verantwortlich machen.",
+            "feedback": "Sie erkennt den Screenshot ausdrücklich an."
+          },
+          {
+            "id": "c",
+            "text": "Eine Korrektur des Bots.",
+            "feedback": "Die Antwort wurde bereits deaktiviert."
+          }
+        ]
+      },
+      {
+        "id": "chatbot-preis-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort ist fair?",
+        "evidenceIds": [
+          "DEC24F1",
+          "DEC24F4",
+          "DEC24F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Tarifseite zitieren und den Screenshot ignorieren.",
+            "feedback": "Das System hat die Zusage tatsächlich angezeigt."
+          },
+          {
+            "id": "b",
+            "text": "Sofort alle Verträge auf zwölf Monate festschreiben.",
+            "feedback": "Der Status der einzelnen Verträge ist ungeprüft."
+          },
+          {
+            "id": "c",
+            "text": "Die widersprüchliche Aussage anerkennen, Vertrag und Quelle prüfen und eine schriftliche Rückmeldung zusagen.",
+            "feedback": "So bleibt der konkrete Anspruch offen und die Verantwortung sichtbar."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Eva mit einem kundenfähigen Text. Erkennen Sie die Systemaussage an, unterscheiden Sie Tarifinformation und Einzelfallprüfung und versprechen Sie einen überprüfbaren nächsten Schritt.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Screenshot ernst nehmen",
+        "Widerspruch erklären",
+        "Einzelfall nicht vorentscheiden",
+        "Bot-Korrektur nennen"
+      ]
+    },
+    "model": {
+      "subject": "Re: Preiszusage im Chat",
+      "body": "Hallo Eva,\n\nder Screenshot zeigt eine klare Aussage aus unserem eigenen Chat. Wir sollten sie nicht dem Kunden als Missverständnis zuschreiben. Gleichzeitig steht auf der Tarifseite etwas anderes, und wir haben weder die Quelle des Bot-Satzes gefunden noch den Vertrag des Kunden mit dem Verlauf abgeglichen. Deshalb sollten wir heute weder eine Jahresgarantie für seinen Vertrag bestätigen noch seinen Einwand pauschal zurückweisen.\n\nIch würde schreiben: „Vielen Dank für den Screenshot. Unser Chat hat Ihnen tatsächlich eine Preisgarantie für zwölf Monate angezeigt. Diese Aussage weicht von den Informationen auf unserer Tarifseite ab. Wir prüfen den Chatverlauf und die Bedingungen Ihres konkreten Vertrags und melden uns bis Dienstag schriftlich mit einer nachvollziehbaren Antwort. Die betreffende automatische Antwort haben wir vorläufig deaktiviert, damit die Unklarheit nicht erneut entsteht.“\n\nIch lasse heute den vollständigen Chatverlauf sichern und bitte Produkt und Kundenbetreuung um die Prüfung der Quelle sowie der Kundenakte. Bitte versprich keine bestimmte Vertragsfolge, bevor diese Prüfung abgeschlossen ist. Der Kunde soll aber sehen, dass wir die Aussage unseres Systems als unser Problem behandeln.\n\nTarek",
+      "annotations": [
+        {
+          "label": "Anerkennt das System",
+          "excerpt": "eine klare Aussage aus unserem eigenen Chat",
+          "evidenceIds": [
+            "DEC24F1"
+          ]
+        },
+        {
+          "label": "Nennt den Widerspruch",
+          "excerpt": "auf der Tarifseite etwas anderes",
+          "evidenceIds": [
+            "DEC24F2"
+          ]
+        },
+        {
+          "label": "Respektiert den Einzelfall",
+          "excerpt": "den Vertrag des Kunden mit dem Verlauf abgeglichen",
+          "evidenceIds": [
+            "DEC24F4"
+          ]
+        },
+        {
+          "label": "Korrigiert den Kanal",
+          "excerpt": "vorläufig deaktiviert",
+          "evidenceIds": [
+            "DEC24F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "schreibstopp-lesen",
+    "title": "Erreichbar, aber nicht beschreibbar",
+    "area": "Software × Betrieb",
+    "areaLabel": "Software · Betrieb",
+    "role": "Jonas · Plattformbetrieb",
+    "teaser": "Ein Dienst zeigt eine grüne Statusseite, obwohl neue Vorgänge nicht gespeichert werden.",
+    "misunderstanding": "Erfolgreiche Lesezugriffe werden als Beleg für einen insgesamt funktionierenden Dienst angeführt.",
+    "email": {
+      "from": "Mila · Kundenbetreuung",
+      "to": "Jonas · Plattformbetrieb",
+      "sent": "Dienstag, 14:05 Uhr",
+      "subject": "Statusseite trotz Schreibfehlern",
+      "body": "Hallo Jonas,\n\nEin Kunde sieht bei uns „Betrieb normal“, obwohl er seit einer Stunde keine neuen Vorgänge speichern kann. Das Team verweist auf die grünen Verfügbarkeitswerte. Ich möchte den Status korrigieren, ohne zu behaupten, dass bereits gespeicherte Vorgänge verloren sind. Was belegen unsere Messungen, und welche Einschränkung müssen wir nennen?\n\nMila"
+    },
+    "document": {
+      "title": "Monitoring der Lese- und Schreibpfade",
+      "intro": "Die Statusanzeige und die Fehlermessung decken unterschiedliche Funktionen ab.",
+      "facts": [
+        {
+          "id": "DEC25F1",
+          "time": "13:00–14:00",
+          "text": "Der Verfügbarkeitsmonitor prüft ausschließlich das Lesen vorhandener Vorgänge und meldet Erfolg."
+        },
+        {
+          "id": "DEC25F2",
+          "time": "13:07",
+          "text": "Die Fehlerrate beim Anlegen neuer Vorgänge steigt stark an."
+        },
+        {
+          "id": "DEC25F3",
+          "time": "Stand jetzt",
+          "text": "Es gibt keinen bestätigten Hinweis auf Verlust bereits gespeicherter Vorgänge; die Datenprüfung läuft."
+        },
+        {
+          "id": "DEC25F4",
+          "time": "14:00",
+          "text": "Ein Workaround für neue Vorgänge ist noch nicht freigegeben."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "schreibstopp-lesen-evidence",
+        "axis": "Evidence",
+        "prompt": "Was bedeutet die grüne Anzeige?",
+        "evidenceIds": [
+          "DEC25F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Neue Vorgänge lassen sich speichern.",
+            "feedback": "Der Schreibpfad zeigt hohe Fehlerraten."
+          },
+          {
+            "id": "b",
+            "text": "Der geprüfte Lesepfad antwortet.",
+            "feedback": "Genau diesen Pfad misst der Monitor."
+          },
+          {
+            "id": "c",
+            "text": "Alle gespeicherten Daten sind geprüft.",
+            "feedback": "Die Datenprüfung ist noch offen."
+          }
+        ]
+      },
+      {
+        "id": "schreibstopp-lesen-scope",
+        "axis": "Scope",
+        "prompt": "Welche Störung ist zu kommunizieren?",
+        "evidenceIds": [
+          "DEC25F2",
+          "DEC25F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Anlegen neuer Vorgänge ist beeinträchtigt; ein Workaround ist noch nicht bestätigt.",
+            "feedback": "Die Fehlerrate betrifft den Schreibpfad."
+          },
+          {
+            "id": "b",
+            "text": "Alle alten Vorgänge sind gelöscht.",
+            "feedback": "Dafür gibt es keinen Hinweis."
+          },
+          {
+            "id": "c",
+            "text": "Ein freigegebener Ersatzweg steht bereit.",
+            "feedback": "Ein Workaround ist noch nicht freigegeben."
+          }
+        ]
+      },
+      {
+        "id": "schreibstopp-lesen-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Mila vermeiden?",
+        "evidenceIds": [
+          "DEC25F1",
+          "DEC25F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die laufende Datenprüfung.",
+            "feedback": "Gerade deren Ergebnis fehlt noch."
+          },
+          {
+            "id": "b",
+            "text": "Einen beschönigenden Status ebenso wie eine unbelegte Verlustmeldung.",
+            "feedback": "Sie nennt beide Risiken ausdrücklich."
+          },
+          {
+            "id": "c",
+            "text": "Jede Information an Kunden.",
+            "feedback": "Sie möchte den Status korrigieren."
+          }
+        ]
+      },
+      {
+        "id": "schreibstopp-lesen-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Meldung ist präzise?",
+        "evidenceIds": [
+          "DEC25F1",
+          "DEC25F2",
+          "DEC25F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle Daten sind unwiederbringlich verloren.",
+            "feedback": "Ein Verlust ist nicht bestätigt."
+          },
+          {
+            "id": "b",
+            "text": "Lesezugriffe funktionieren im Test; neue Vorgänge sind beeinträchtigt; Datenintegrität wird geprüft.",
+            "feedback": "Sie trennt die gemessenen Funktionen."
+          },
+          {
+            "id": "c",
+            "text": "Der Dienst funktioniert uneingeschränkt.",
+            "feedback": "Der Schreibpfad ist gestört."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Mila mit einer neuen Statusmeldung. Beschreiben Sie Messgrenze, tatsächliche Störung und offene Datenprüfung, ohne einen Ersatzweg zu versprechen.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Lesen und Schreiben unterscheiden",
+        "Störung klar benennen",
+        "Datenverlust nicht behaupten",
+        "Statusanzeige korrigieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Statusseite trotz Schreibfehlern",
+      "body": "Hallo Mila,\n\ndie grüne Anzeige ist in dieser Situation zu weit gefasst. Unser Monitor prüft, ob vorhandene Vorgänge gelesen werden können; dieser Test ist erfolgreich. Das Anlegen neuer Vorgänge zeigt seit 13:07 Uhr dagegen eine deutlich erhöhte Fehlerrate. Wir sollten die Statusseite deshalb als eingeschränkten Betrieb kennzeichnen und den betroffenen Schreibpfad ausdrücklich nennen.\n\nFür Kunden schlage ich vor: „Das Lesen vorhandener Vorgänge ist nach unseren laufenden Tests möglich. Beim Anlegen neuer Vorgänge treten derzeit Fehler auf. Wir untersuchen die Ursache und prüfen parallel die Datenintegrität. Ein Verlust bereits gespeicherter Vorgänge ist bislang nicht bestätigt. Wir veröffentlichen um 15 Uhr ein weiteres Update, auch wenn die Untersuchung noch andauert.“\n\nEinen Ersatzweg würde ich noch nicht nennen, weil keiner freigegeben ist. Ich lasse den Statusmonitor um eine Prüfung des Schreibpfads ergänzen, damit „Betrieb normal“ künftig nicht allein aus erfolgreichen Lesezugriffen abgeleitet wird. Falls die Datenprüfung einen anderen Befund ergibt, passen wir die Meldung sofort an und informieren betroffene Kunden gezielt.\n\nJonas",
+      "annotations": [
+        {
+          "label": "Begrenzt den Monitor",
+          "excerpt": "ob vorhandene Vorgänge gelesen werden können",
+          "evidenceIds": [
+            "DEC25F1"
+          ]
+        },
+        {
+          "label": "Benennt den Fehler",
+          "excerpt": "Beim Anlegen neuer Vorgänge treten derzeit Fehler auf",
+          "evidenceIds": [
+            "DEC25F2"
+          ]
+        },
+        {
+          "label": "Qualifiziert Datenverlust",
+          "excerpt": "bislang nicht bestätigt",
+          "evidenceIds": [
+            "DEC25F3"
+          ]
+        },
+        {
+          "label": "Vermeidet Workaround",
+          "excerpt": "weil keiner freigegeben ist",
+          "evidenceIds": [
+            "DEC25F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "demo-schluessel",
+    "title": "Der Schlüssel in der Demo",
+    "area": "Software × Sicherheit",
+    "areaLabel": "Software · Sicherheit",
+    "role": "Lea · Sicherheitskoordination",
+    "teaser": "Ein Zugangsschlüssel ist in einer aufgezeichneten Demo sichtbar; eine Nutzung durch Dritte ist ungeklärt.",
+    "misunderstanding": "Das Sichtbarwerden eines Schlüssels wird entweder als nachgewiesener Missbrauch oder als harmlos bezeichnet.",
+    "email": {
+      "from": "Moritz · Produktleitung",
+      "to": "Lea · Sicherheit",
+      "sent": "Mittwoch, 9:35 Uhr",
+      "subject": "Schlüssel im Demo-Video",
+      "body": "Hallo Lea,\n\nIm Demo-Video ist für einige Sekunden ein Zugangsschlüssel zu sehen. Das Video war gestern über einen Link abrufbar. Manche sagen bereits, damit sei ein Datenabfluss bewiesen; andere halten es für harmlos, weil wir keine Beschwerden haben. Ich brauche eine sachliche Nachricht an den Partner und eine Reihenfolge der nächsten Schritte. Was wissen wir wirklich?\n\nMoritz"
+    },
+    "document": {
+      "title": "Videozugriff und Schlüsselprotokoll",
+      "intro": "Sichtbarkeit, Zugriffe und tatsächliche Nutzung sind getrennte Befunde.",
+      "facts": [
+        {
+          "id": "DEC26F1",
+          "time": "Dienstag",
+          "text": "Der Schlüssel ist im veröffentlichten Demo-Video lesbar."
+        },
+        {
+          "id": "DEC26F2",
+          "time": "Dienstag",
+          "text": "Die Videoplattform protokolliert zwölf Abrufe, aber keine verifizierten Identitäten aller Zuschauenden."
+        },
+        {
+          "id": "DEC26F3",
+          "time": "Mittwoch",
+          "text": "Der Schlüssel wurde gesperrt und ersetzt; das Video ist offline."
+        },
+        {
+          "id": "DEC26F4",
+          "time": "Stand jetzt",
+          "text": "Die Auswertung der Zugriffsprotokolle des angeschlossenen Dienstes ist nicht abgeschlossen."
+        },
+        {
+          "id": "DEC26F5",
+          "time": "Stand jetzt",
+          "text": "Eine unbefugte Nutzung oder ein Datenabfluss ist weder bestätigt noch ausgeschlossen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "demo-schluessel-evidence",
+        "axis": "Evidence",
+        "prompt": "Welcher Vorfall ist sicher?",
+        "evidenceIds": [
+          "DEC26F1",
+          "DEC26F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Datenabfluss ist bewiesen.",
+            "feedback": "Die Dienstprotokolle sind noch nicht ausgewertet."
+          },
+          {
+            "id": "b",
+            "text": "Niemand hat das Video geöffnet.",
+            "feedback": "Zwölf Abrufe sind erfasst."
+          },
+          {
+            "id": "c",
+            "text": "Der Schlüssel war in einem abrufbaren Video sichtbar.",
+            "feedback": "Sichtbarkeit und Abrufe sind dokumentiert."
+          }
+        ]
+      },
+      {
+        "id": "demo-schluessel-scope",
+        "axis": "Scope",
+        "prompt": "Was lässt sich über Missbrauch sagen?",
+        "evidenceIds": [
+          "DEC26F4",
+          "DEC26F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Keine Beschwerde beweist sichere Nichtnutzung.",
+            "feedback": "Beschwerden sind kein Zugriffsprotokoll."
+          },
+          {
+            "id": "b",
+            "text": "Der Befund ist offen; weder Entwarnung noch Bestätigung ist begründet.",
+            "feedback": "Die Auswertung läuft noch."
+          },
+          {
+            "id": "c",
+            "text": "Jeder Abruf war ein Angriff.",
+            "feedback": "Die Identität und Handlung der Zuschauer sind unbekannt."
+          }
+        ]
+      },
+      {
+        "id": "demo-schluessel-intent",
+        "axis": "Intent",
+        "prompt": "Welche Spannung beschreibt Moritz?",
+        "evidenceIds": [
+          "DEC26F2",
+          "DEC26F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Er verlangt eine Schuldzuweisung an den Partner.",
+            "feedback": "Eine solche Absicht wird nicht genannt."
+          },
+          {
+            "id": "b",
+            "text": "Er möchte die Aufnahme wieder online stellen.",
+            "feedback": "Das Video wurde entfernt."
+          },
+          {
+            "id": "c",
+            "text": "Er will zwischen voreiliger Alarmmeldung und unbegründeter Entwarnung antworten.",
+            "feedback": "Seine Nachricht nennt beide Extreme."
+          }
+        ]
+      },
+      {
+        "id": "demo-schluessel-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Abfolge ist verantwortbar?",
+        "evidenceIds": [
+          "DEC26F3",
+          "DEC26F4",
+          "DEC26F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sperrung und Entfernung nennen, Protokolle auswerten und den Partner über bestätigte Ergebnisse informieren.",
+            "feedback": "Die Sofortmaßnahmen sind erfolgt, die Analyse folgt."
+          },
+          {
+            "id": "b",
+            "text": "Nur auf Beschwerden warten.",
+            "feedback": "Die Protokollprüfung ist erforderlich."
+          },
+          {
+            "id": "c",
+            "text": "Einen vollständigen Datenabfluss melden.",
+            "feedback": "Ein Abfluss ist nicht bestätigt."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Moritz mit partnerfähigem Text. Trennen Sie Exposition, Sofortmaßnahmen und unbekannte Folgen; nennen Sie einen überprüfbaren Aktualisierungspunkt.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Sichtbarkeit belegen",
+        "Missbrauch offenlassen",
+        "Sofortmaßnahmen nennen",
+        "Untersuchung konkretisieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Schlüssel im Demo-Video",
+      "body": "Hallo Moritz,\n\nwir können sicher sagen, dass der Schlüssel im abrufbaren Demo-Video lesbar war und die Plattform zwölf Abrufe registriert hat. Wir kennen nicht alle Personen hinter diesen Abrufen. Ob der Schlüssel tatsächlich unbefugt genutzt wurde, lässt sich erst nach der Auswertung der Dienstprotokolle beurteilen. Weder „Datenabfluss bewiesen“ noch „harmlos“ entspricht derzeit dem Stand.\n\nDem Partner würde ich schreiben: „In einer gestern zugänglichen Demo-Aufzeichnung war ein Zugangsschlüssel sichtbar. Wir haben den Schlüssel gesperrt und ersetzt sowie das Video entfernt. Wir prüfen derzeit die Zugriffe auf den angebundenen Dienst, um festzustellen, ob der Schlüssel außerhalb des vorgesehenen Rahmens verwendet wurde. Über bestätigte Ergebnisse und gegebenenfalls notwendige Folgeschritte informieren wir Sie morgen bis 12 Uhr.“\n\nIch lasse die Protokolle mit den Zeiten der Videoabrufe abgleichen und dokumentiere die Maßnahmen. Bitte verspreche noch keine abschließende Entwarnung. Wenn die Prüfung Hinweise auf eine unbefugte Nutzung ergibt, informieren wir den Partner früher und passen die Maßnahmen an. Zugleich sollten wir die Demo-Freigabe prüfen, damit Zugangsdaten künftig vor Veröffentlichung entfernt werden.\n\nLea",
+      "annotations": [
+        {
+          "label": "Belegt Sichtbarkeit",
+          "excerpt": "im abrufbaren Demo-Video lesbar",
+          "evidenceIds": [
+            "DEC26F1"
+          ]
+        },
+        {
+          "label": "Nennt unbekannte Identitäten",
+          "excerpt": "nicht alle Personen hinter diesen Abrufen",
+          "evidenceIds": [
+            "DEC26F2"
+          ]
+        },
+        {
+          "label": "Nennt Sofortmaßnahmen",
+          "excerpt": "gesperrt und ersetzt sowie das Video entfernt",
+          "evidenceIds": [
+            "DEC26F3"
+          ]
+        },
+        {
+          "label": "Hält Folgen offen",
+          "excerpt": "erst nach der Auswertung der Dienstprotokolle",
+          "evidenceIds": [
+            "DEC26F4",
+            "DEC26F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "alte-signatur",
+    "title": "Alt, aber noch gültig?",
+    "area": "Software × Kryptografie",
+    "areaLabel": "Software · Kryptografie",
+    "role": "Timo · Plattformarchitektur",
+    "teaser": "Nach einer Schlüsselrotation gelten alte Signaturen weiterhin für bereits ausgestellte Belege.",
+    "misunderstanding": "„Neuer Schlüssel aktiv“ wird als vollständige Ungültigkeit aller früheren Signaturen verstanden.",
+    "email": {
+      "from": "Hannah · Compliance",
+      "to": "Timo · Architektur",
+      "sent": "Donnerstag, 11:25 Uhr",
+      "subject": "Formulierung zur Schlüsselrotation",
+      "body": "Hallo Timo,\n\nIm Bericht steht, der alte Signaturschlüssel sei „abgelöst“. Ein Kunde fragt, ob damit alle früher ausgestellten Belege ungültig werden oder ob der alte Schlüssel noch neue Belege erzeugen könnte. Beides möchte ich nicht aus dem Wort „abgelöst“ ableiten. Kannst du die technische Trennung in eine verständliche Antwort übersetzen?\n\nHannah"
+    },
+    "document": {
+      "title": "Rotationsprotokoll",
+      "intro": "Ausstellung und Prüfung früherer Signaturen haben unterschiedliche Schlüsselrollen.",
+      "facts": [
+        {
+          "id": "DEC27F1",
+          "time": "Montag",
+          "text": "Neue Belege werden seit 10 Uhr ausschließlich mit dem neuen Schlüssel signiert."
+        },
+        {
+          "id": "DEC27F2",
+          "time": "Montag",
+          "text": "Die Berechtigung des alten Schlüssels zur Ausstellung neuer Belege wurde deaktiviert."
+        },
+        {
+          "id": "DEC27F3",
+          "time": "Stand jetzt",
+          "text": "Frühere Belege werden weiterhin gegen den alten öffentlichen Prüfschlüssel verifiziert."
+        },
+        {
+          "id": "DEC27F4",
+          "time": "Prüfung",
+          "text": "Ein Test bestätigt die Verifikation von fünf älteren Belegen; eine vollständige Archivprüfung läuft noch."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "alte-signatur-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist seit Montag gestoppt?",
+        "evidenceIds": [
+          "DEC27F1",
+          "DEC27F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Erstellung sämtlicher neuer Belege.",
+            "feedback": "Neue Belege verwenden den neuen Schlüssel."
+          },
+          {
+            "id": "b",
+            "text": "Das Signieren neuer Belege mit dem alten Schlüssel.",
+            "feedback": "Die Ausstellungsberechtigung wurde deaktiviert."
+          },
+          {
+            "id": "c",
+            "text": "Die Prüfung aller älteren Belege.",
+            "feedback": "Der Prüfschlüssel bleibt dafür verfügbar."
+          }
+        ]
+      },
+      {
+        "id": "alte-signatur-scope",
+        "axis": "Scope",
+        "prompt": "Welche Aussage zu alten Belegen ist tragfähig?",
+        "evidenceIds": [
+          "DEC27F3",
+          "DEC27F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sie bleiben prüfbar; die vollständige Archivprüfung ist noch offen.",
+            "feedback": "Die Prüffunktion besteht, der Umfangstest läuft."
+          },
+          {
+            "id": "b",
+            "text": "Jeder Archivbeleg wurde bereits geprüft.",
+            "feedback": "Die Archivprüfung ist nicht beendet."
+          },
+          {
+            "id": "c",
+            "text": "Alle alten Belege sind ungültig.",
+            "feedback": "Fünf ältere Belege wurden erfolgreich geprüft."
+          }
+        ]
+      },
+      {
+        "id": "alte-signatur-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Hannah verständlich trennen?",
+        "evidenceIds": [
+          "DEC27F1",
+          "DEC27F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Neue Ausstellung und Verifikation bestehender Belege.",
+            "feedback": "Beides hat unterschiedliche Rollen."
+          },
+          {
+            "id": "b",
+            "text": "Die persönlichen Daten der Kunden.",
+            "feedback": "Die Frage betrifft Signaturfunktionen."
+          },
+          {
+            "id": "c",
+            "text": "Den Kaufpreis der Schlüssel.",
+            "feedback": "Dazu enthält das Protokoll nichts."
+          }
+        ]
+      },
+      {
+        "id": "alte-signatur-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Kundenantwort vermeidet Fehlinterpretationen?",
+        "evidenceIds": [
+          "DEC27F2",
+          "DEC27F3",
+          "DEC27F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle früheren Belege müssen neu ausgestellt werden.",
+            "feedback": "Das folgt nicht aus der Rotation."
+          },
+          {
+            "id": "b",
+            "text": "Der alte Schlüssel ist für jede Funktion gelöscht.",
+            "feedback": "Sein öffentlicher Prüfschlüssel bleibt verfügbar."
+          },
+          {
+            "id": "c",
+            "text": "Alter Schlüssel signiert nicht mehr neu; bestehende Belege bleiben verifizierbar, Archivprüfung läuft.",
+            "feedback": "Sie trennt beide Funktionen samt Prüfstatus."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Hannah mit einer verständlichen Kundenformulierung. Unterscheiden Sie Ausstellung und Prüfung und begrenzen Sie die Aussage über die noch laufende Archivprüfung.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Ausstellung technisch korrekt beschreiben",
+        "Prüfung alter Belege erklären",
+        "Testumfang einordnen",
+        "„Abgelöst“ präzisieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Formulierung zur Schlüsselrotation",
+      "body": "Hallo Hannah,\n\n„Abgelöst“ ist hier missverständlich, weil es zwei verschiedene Funktionen zusammenzieht. Seit Montag werden neue Belege ausschließlich mit dem neuen Schlüssel signiert; die Ausstellungsberechtigung des alten Schlüssels ist deaktiviert. Für die Prüfung bereits ausgestellter Belege bleibt dessen öffentlicher Prüfschlüssel verfügbar. Die Rotation macht frühere Belege also nicht allein deshalb ungültig. Wir haben fünf ältere Belege erfolgreich verifiziert; die Prüfung des gesamten Archivs läuft noch.\n\nIch würde dem Kunden schreiben: „Seit der Umstellung erstellen wir neue Belege nur noch mit dem neuen Signaturschlüssel. Der bisherige Schlüssel kann keine neuen Belege mehr ausstellen. Bereits ausgestellte Belege können weiterhin mit dem zugehörigen öffentlichen Prüfschlüssel überprüft werden. Stichproben waren erfolgreich; die vollständige Archivprüfung ist noch nicht abgeschlossen.“\n\nIch passe die Formulierung im Bericht entsprechend an und lasse die Archivprüfung dokumentieren. Sobald sie abgeschlossen ist, können wir eine Aussage zum gesamten Bestand treffen. Bis dahin sollten wir weder eine pauschale Ungültigkeit noch eine bereits vollständige Prüfung behaupten.\n\nTimo",
+      "annotations": [
+        {
+          "label": "Trennt Funktionen",
+          "excerpt": "zwei verschiedene Funktionen",
+          "evidenceIds": [
+            "DEC27F1",
+            "DEC27F3"
+          ]
+        },
+        {
+          "label": "Stoppt neue Signaturen",
+          "excerpt": "Ausstellungsberechtigung des alten Schlüssels ist deaktiviert",
+          "evidenceIds": [
+            "DEC27F2"
+          ]
+        },
+        {
+          "label": "Erhält Prüfbarkeit",
+          "excerpt": "öffentlicher Prüfschlüssel verfügbar",
+          "evidenceIds": [
+            "DEC27F3"
+          ]
+        },
+        {
+          "label": "Begrenzt Testumfang",
+          "excerpt": "die Prüfung des gesamten Archivs läuft noch",
+          "evidenceIds": [
+            "DEC27F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "status-webhook",
+    "title": "Grün für die API, rot für Benachrichtigungen",
+    "area": "Software × Integrationen",
+    "areaLabel": "Software · Integrationen",
+    "role": "Daria · Integrationsbetrieb",
+    "teaser": "Eine Statusseite meldet Betrieb, aber Ereignisbenachrichtigungen an Partner verzögern sich.",
+    "misunderstanding": "Ein erfolgreicher API-Test wird als Nachweis verwendet, dass auch Webhooks pünktlich zugestellt werden.",
+    "email": {
+      "from": "Ben · Partnerbetreuung",
+      "to": "Daria · Integrationsbetrieb",
+      "sent": "Freitag, 12:15 Uhr",
+      "subject": "Partner erhält keine Ereignisse",
+      "body": "Hallo Daria,\n\nUnser Partner sieht auf der Statusseite alles grün, erhält aber Ereignisse erst Stunden später. Er befürchtet, dass Vorgänge verloren gegangen sind. Die API reagiert tatsächlich normal. Wie erkläre ich ihm den Unterschied zwischen API und Benachrichtigungswarteschlange, ohne eine vollständige Nachlieferung zu versprechen, bevor wir sie geprüft haben?\n\nBen"
+    },
+    "document": {
+      "title": "API-Monitor und Zustellwarteschlange",
+      "intro": "Abrufbarkeit und asynchrone Zustellung sind getrennte Messgrößen.",
+      "facts": [
+        {
+          "id": "DEC28F1",
+          "time": "11:30",
+          "text": "Der API-Monitor meldet normale Antwortzeiten für direkte Anfragen."
+        },
+        {
+          "id": "DEC28F2",
+          "time": "11:30",
+          "text": "Die Warteschlange für Partner-Webhooks enthält 480 wartende Ereignisse."
+        },
+        {
+          "id": "DEC28F3",
+          "time": "12:00",
+          "text": "Ein Teil der Ereignisse wurde verspätet zugestellt; der Abgleich mit den Partnerprotokollen läuft."
+        },
+        {
+          "id": "DEC28F4",
+          "time": "Stand jetzt",
+          "text": "Ein Verlust von Ereignissen ist nicht bestätigt, eine vollständige Zustellung aber auch nicht."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "status-webhook-evidence",
+        "axis": "Evidence",
+        "prompt": "Was misst die grüne Anzeige?",
+        "evidenceIds": [
+          "DEC28F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Direkte API-Antworten.",
+            "feedback": "Der Monitor prüft diesen Pfad."
+          },
+          {
+            "id": "b",
+            "text": "Jeden Partnerdatensatz.",
+            "feedback": "Die Partnerprotokolle werden noch abgeglichen."
+          },
+          {
+            "id": "c",
+            "text": "Pünktliche Webhook-Zustellung.",
+            "feedback": "Die Warteschlange zeigt eine Verzögerung."
+          }
+        ]
+      },
+      {
+        "id": "status-webhook-scope",
+        "axis": "Scope",
+        "prompt": "Was ist über die Ereignisse gesichert?",
+        "evidenceIds": [
+          "DEC28F2",
+          "DEC28F3",
+          "DEC28F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Warteschlange und verspätete Zustellungen; die Vollständigkeit ist offen.",
+            "feedback": "Der Abgleich ist noch im Gang."
+          },
+          {
+            "id": "b",
+            "text": "Alle Ereignisse sind bereits zugestellt.",
+            "feedback": "480 stehen noch in der Warteschlange."
+          },
+          {
+            "id": "c",
+            "text": "Alle 480 Ereignisse sind verloren.",
+            "feedback": "Ein Verlust wurde nicht bestätigt."
+          }
+        ]
+      },
+      {
+        "id": "status-webhook-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Ben für den Partner?",
+        "evidenceIds": [
+          "DEC28F1",
+          "DEC28F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Behauptung vollständiger Nachlieferung.",
+            "feedback": "Gerade das möchte Ben vermeiden."
+          },
+          {
+            "id": "b",
+            "text": "Eine neue Preisvereinbarung.",
+            "feedback": "Dazu stellt der Partner keine Frage."
+          },
+          {
+            "id": "c",
+            "text": "Eine Erklärung, warum der API-Status dessen Erfahrung nicht abbildet.",
+            "feedback": "API und Webhooks sind getrennt."
+          }
+        ]
+      },
+      {
+        "id": "status-webhook-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort ist belastbar?",
+        "evidenceIds": [
+          "DEC28F2",
+          "DEC28F3",
+          "DEC28F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Verzögerung benennen, Zustellung prüfen und nach Abgleich einen vollständigen Status liefern.",
+            "feedback": "Sie beschreibt das Problem und die offene Prüfung."
+          },
+          {
+            "id": "b",
+            "text": "Den Verlust aller Vorgänge melden.",
+            "feedback": "Der Verlust ist ungeklärt."
+          },
+          {
+            "id": "c",
+            "text": "Mit „alles grün“ auf die Statusseite verweisen.",
+            "feedback": "Der Webhook-Pfad ist beeinträchtigt."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Ben mit einer Partnernachricht. Trennen Sie API-Erreichbarkeit und Webhook-Zustellung, nennen Sie die offene Vollständigkeitsprüfung und einen nächsten Statuspunkt.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Messgrenze erklären",
+        "Verzögerung anerkennen",
+        "Keinen Datenverlust behaupten",
+        "Abgleich zusagen"
+      ]
+    },
+    "model": {
+      "subject": "Re: Partner erhält keine Ereignisse",
+      "body": "Hallo Ben,\n\ndie grüne Anzeige bezieht sich derzeit auf direkte API-Anfragen. Sie sagt nichts über die pünktliche Zustellung der asynchronen Benachrichtigungen aus. In der Webhook-Warteschlange stehen aktuell 480 Ereignisse; ein Teil wurde bereits mit Verspätung ausgeliefert. Ob sämtliche Ereignisse beim Partner angekommen sind, prüfen wir anhand beider Protokolle. Ein Verlust ist bisher nicht bestätigt, vollständige Zustellung aber ebenfalls noch nicht.\n\nFür den Partner schlage ich vor: „Ihre Beobachtung ist berechtigt. Unsere API beantwortet direkte Anfragen normal, während sich die Zustellung von Ereignisbenachrichtigungen derzeit verzögert. Wir arbeiten die Warteschlange ab und gleichen die Zustellungen mit Ihren Referenzen ab. Wir melden Ihnen um 15 Uhr den überprüften Stand und kennzeichnen, was zu diesem Zeitpunkt noch offen ist.“\n\nIch werde die Statusseite um den Webhook-Pfad ergänzen, damit die grüne API-Anzeige nicht als Gesamtentwarnung gelesen wird. Bitte lass dir vom Partner einige fehlende Ereignisreferenzen geben; damit können wir den Abgleich gezielt testen. Sobald die Warteschlange abgearbeitet ist, bestätigen wir die Vollständigkeit erst nach der Protokollprüfung.\n\nDaria",
+      "annotations": [
+        {
+          "label": "Begrenzt Status",
+          "excerpt": "direkte API-Anfragen",
+          "evidenceIds": [
+            "DEC28F1"
+          ]
+        },
+        {
+          "label": "Benennt Rückstau",
+          "excerpt": "480 Ereignisse",
+          "evidenceIds": [
+            "DEC28F2"
+          ]
+        },
+        {
+          "label": "Qualifiziert Verlust",
+          "excerpt": "bisher nicht bestätigt",
+          "evidenceIds": [
+            "DEC28F4"
+          ]
+        },
+        {
+          "label": "Erklärt Nachweis",
+          "excerpt": "erst nach der Protokollprüfung",
+          "evidenceIds": [
+            "DEC28F3",
+            "DEC28F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "auswahl-befangenheit",
+    "title": "Die Befangenheit nach der Vorauswahl",
+    "area": "People × Recruiting",
+    "areaLabel": "Personal · Recruiting",
+    "role": "Anika · Personalpartnerin",
+    "teaser": "Ein Mitglied der Auswahlrunde meldet eine frühere Zusammenarbeit erst nach der Vorauswahl.",
+    "misunderstanding": "Ein späterer Rückzug aus dem Gremium wird als Beleg behandelt, dass die frühere Bewertung keinen Einfluss hatte.",
+    "email": {
+      "from": "Petra · Bereichsleitung",
+      "to": "Anika · Personal",
+      "sent": "Montag, 10:00 Uhr",
+      "subject": "Auswahlverfahren und Interessenkonflikt",
+      "body": "Hallo Anika,\n\nEin Mitglied unserer Auswahlrunde hat erst nach der Vorauswahl erwähnt, dass es früher eng mit einem Bewerber zusammengearbeitet hat. Die Person nimmt an den nächsten Gesprächen nicht mehr teil. Kann ich den übrigen Bewerbern sagen, der mögliche Konflikt sei damit vollständig erledigt? Ich möchte das Verfahren schützen, ohne jemanden vorschnell der Bevorzugung zu beschuldigen.\n\nPetra"
+    },
+    "document": {
+      "title": "Protokoll der Auswahlrunde",
+      "intro": "Die Teilnahme an der Vorauswahl und die spätere Enthaltung sind getrennt dokumentiert.",
+      "facts": [
+        {
+          "id": "DEC29F1",
+          "time": "Vorauswahl",
+          "text": "Das Gremiumsmitglied vergab eine Bewertung für alle Bewerbungen."
+        },
+        {
+          "id": "DEC29F2",
+          "time": "Danach",
+          "text": "Es meldete eine frühere enge Zusammenarbeit mit einem Bewerber."
+        },
+        {
+          "id": "DEC29F3",
+          "time": "Aktuell",
+          "text": "Es ist von weiteren Gesprächen und Entscheidungen ausgeschlossen."
+        },
+        {
+          "id": "DEC29F4",
+          "time": "Verfahren",
+          "text": "Die Vorauswahlbewertungen müssen ohne den betroffenen Beitrag erneut geprüft werden."
+        },
+        {
+          "id": "DEC29F5",
+          "time": "Stand jetzt",
+          "text": "Diese erneute Prüfung ist noch nicht abgeschlossen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "auswahl-befangenheit-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist am Verfahren bereits geändert?",
+        "evidenceIds": [
+          "DEC29F2",
+          "DEC29F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle Bewerber wurden neu bewertet.",
+            "feedback": "Dazu gibt es keinen Abschluss."
+          },
+          {
+            "id": "b",
+            "text": "Seine Vorauswahlbewertung wurde bereits neutralisiert.",
+            "feedback": "Die erneute Prüfung steht noch aus."
+          },
+          {
+            "id": "c",
+            "text": "Das Mitglied nimmt an künftigen Gesprächen nicht mehr teil.",
+            "feedback": "Der Ausschluss ist dokumentiert."
+          }
+        ]
+      },
+      {
+        "id": "auswahl-befangenheit-scope",
+        "axis": "Scope",
+        "prompt": "Warum reicht der Ausschluss allein nicht?",
+        "evidenceIds": [
+          "DEC29F1",
+          "DEC29F4",
+          "DEC29F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der frühere Bewertungsbeitrag kann die Vorauswahl beeinflusst haben.",
+            "feedback": "Dieser Beitrag muss noch überprüft werden."
+          },
+          {
+            "id": "b",
+            "text": "Er macht alle Bewerbungen ungültig.",
+            "feedback": "Eine solche Folge ist nicht beschlossen."
+          },
+          {
+            "id": "c",
+            "text": "Er beweist automatisch eine absichtliche Bevorzugung.",
+            "feedback": "Eine Absicht ist nicht festgestellt."
+          }
+        ]
+      },
+      {
+        "id": "auswahl-befangenheit-intent",
+        "axis": "Intent",
+        "prompt": "Was will Petra kommunikativ vermeiden?",
+        "evidenceIds": [
+          "DEC29F2",
+          "DEC29F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die erneute Prüfung des Verfahrens.",
+            "feedback": "Gerade diese Prüfung schützt es."
+          },
+          {
+            "id": "b",
+            "text": "Den Ausschluss des Mitglieds.",
+            "feedback": "Der Ausschluss ist bereits erfolgt."
+          },
+          {
+            "id": "c",
+            "text": "Eine voreilige Entwarnung ebenso wie einen unbelegten Vorwurf.",
+            "feedback": "Beides nennt sie in ihrer Anfrage."
+          }
+        ]
+      },
+      {
+        "id": "auswahl-befangenheit-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Auskunft ist fair?",
+        "evidenceIds": [
+          "DEC29F3",
+          "DEC29F4",
+          "DEC29F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Verfahren als abschließend bereinigt erklären.",
+            "feedback": "Die erneute Prüfung fehlt noch."
+          },
+          {
+            "id": "b",
+            "text": "Dem Mitglied eine Manipulation vorwerfen.",
+            "feedback": "Ein Vorsatz ist nicht belegt."
+          },
+          {
+            "id": "c",
+            "text": "Den Ausschluss nennen und die noch offene Prüfung der Vorauswahl erläutern.",
+            "feedback": "Das beschreibt Maßnahme und Lücke."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Petra mit einer Formulierung für Beteiligte. Trennen Sie Schutzmaßnahme, offene Rückprüfung und unbewiesene Absicht; nennen Sie einen dokumentierbaren Abschluss.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Vorherige Bewertung einbeziehen",
+        "Keine Schuld unterstellen",
+        "Keine Entwarnung vor Prüfung",
+        "Verfahren transparent machen"
+      ]
+    },
+    "model": {
+      "subject": "Re: Auswahlverfahren und Interessenkonflikt",
+      "body": "Hallo Petra,\n\nder Ausschluss des Gremiumsmitglieds von den weiteren Gesprächen ist eine notwendige Schutzmaßnahme. Er klärt aber noch nicht, ob dessen Bewertung in der bereits abgeschlossenen Vorauswahl eine Rolle gespielt hat. Diese Beiträge müssen wir ohne die betreffende Person erneut prüfen und dokumentieren. Bis das geschehen ist, würde ich das Verfahren nicht als vollständig bereinigt bezeichnen. Ebenso wenig haben wir eine Grundlage, dem Mitglied eine absichtliche Bevorzugung zu unterstellen.\n\nFür Nachfragen schlage ich vor: „Nach der Vorauswahl wurde eine frühere Zusammenarbeit eines Gremiumsmitglieds mit einem Bewerber bekannt. Die Person wirkt an den weiteren Schritten nicht mit. Wir überprüfen außerdem die Vorauswahl anhand der festgelegten Kriterien ohne ihren Bewertungsbeitrag. Sobald diese Prüfung abgeschlossen ist, dokumentieren wir, ob sich die Auswahl ändert und welche weiteren Schritte erforderlich sind.“\n\nIch organisiere die erneute Bewertung mit den übrigen Mitgliedern und halte fest, welche Kriterien angewendet wurden. Bitte gib keine Angaben zur Identität oder zu einzelnen Bewertungen weiter, solange wir die Auswirkungen nicht geprüft haben. Wir können Beteiligte über das Verfahren informieren, ohne persönliche Details oder ein Ergebnis vorwegzunehmen.\n\nAnika",
+      "annotations": [
+        {
+          "label": "Nennt Schutzmaßnahme",
+          "excerpt": "Ausschluss des Gremiumsmitglieds",
+          "evidenceIds": [
+            "DEC29F3"
+          ]
+        },
+        {
+          "label": "Prüft Rückwirkung",
+          "excerpt": "bereits abgeschlossenen Vorauswahl",
+          "evidenceIds": [
+            "DEC29F1",
+            "DEC29F4"
+          ]
+        },
+        {
+          "label": "Vermeidet Vorwurf",
+          "excerpt": "haben wir eine Grundlage, dem Mitglied eine absichtliche Bevorzugung zu unterstellen",
+          "evidenceIds": [
+            "DEC29F2"
+          ]
+        },
+        {
+          "label": "Dokumentiert Abschluss",
+          "excerpt": "dokumentieren wir, ob sich die Auswahl ändert",
+          "evidenceIds": [
+            "DEC29F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "schutzmassnahme-kein-urteil",
+    "title": "Eine Trennung ist kein Urteil",
+    "area": "People × Konfliktklärung",
+    "areaLabel": "Personal · Konfliktklärung",
+    "role": "Leonie · Personalberatung",
+    "teaser": "Nach einer Beschwerde wurden Dienstpläne vorläufig getrennt; ein Team liest darin eine Schuldentscheidung.",
+    "misunderstanding": "Eine vorsorgliche organisatorische Maßnahme wird als abgeschlossener Befund über das Verhalten einer Person ausgelegt.",
+    "email": {
+      "from": "Jens · Teamleitung",
+      "to": "Leonie · Personal",
+      "sent": "Dienstag, 12:20 Uhr",
+      "subject": "Gerüchte nach der Dienstplanänderung",
+      "body": "Hallo Leonie,\n\nnach einer Beschwerde haben wir zwei Mitarbeitende vorläufig auf unterschiedliche Schichten gesetzt. Nun sagt das Team, damit sei die beschuldigte Person offenbar schon überführt. Ich muss erklären, warum der Plan geändert wurde, ohne den Inhalt der Beschwerde preiszugeben oder der betroffenen Person das Wort zu nehmen. Welche Aussage ist intern tragfähig?\n\nJens"
+    },
+    "document": {
+      "title": "Verfahrensstand und Dienstplan",
+      "intro": "Die Maßnahme dient der geordneten Klärung und ist keine Feststellung.",
+      "facts": [
+        {
+          "id": "DEC210F1",
+          "time": "Montag",
+          "text": "Eine Beschwerde über eine Zusammenarbeitssituation wurde aufgenommen."
+        },
+        {
+          "id": "DEC210F2",
+          "time": "Montag",
+          "text": "Die zwei Personen wurden vorübergehend unterschiedlichen Schichten zugeteilt."
+        },
+        {
+          "id": "DEC210F3",
+          "time": "Stand jetzt",
+          "text": "Beide Personen wurden noch nicht vollständig angehört; eine Feststellung liegt nicht vor."
+        },
+        {
+          "id": "DEC210F4",
+          "time": "Verfahren",
+          "text": "Inhalte und Identitäten werden nur den mit der Klärung beauftragten Personen mitgeteilt."
+        },
+        {
+          "id": "DEC210F5",
+          "time": "Plan",
+          "text": "Die vorläufige Schichteinteilung wird nach der Anhörung überprüft."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "schutzmassnahme-kein-urteil-evidence",
+        "axis": "Evidence",
+        "prompt": "Was bedeutet die Schichttrennung?",
+        "evidenceIds": [
+          "DEC210F2",
+          "DEC210F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine vorläufige organisatorische Maßnahme.",
+            "feedback": "Eine Feststellung liegt nicht vor."
+          },
+          {
+            "id": "b",
+            "text": "Eine dauerhafte Versetzung.",
+            "feedback": "Der Plan soll überprüft werden."
+          },
+          {
+            "id": "c",
+            "text": "Den Nachweis einer Pflichtverletzung.",
+            "feedback": "Beide Anhörungen fehlen noch."
+          }
+        ]
+      },
+      {
+        "id": "schutzmassnahme-kein-urteil-scope",
+        "axis": "Scope",
+        "prompt": "Welche Details dürfen dem Team mitgeteilt werden?",
+        "evidenceIds": [
+          "DEC210F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur der organisatorische Rahmen, keine Beschwerdeinhalte oder Identitäten.",
+            "feedback": "Das Verfahren begrenzt den Kreis der Informierten."
+          },
+          {
+            "id": "b",
+            "text": "Eine Liste möglicher Zeugen.",
+            "feedback": "Auch das würde das Verfahren offenlegen."
+          },
+          {
+            "id": "c",
+            "text": "Die vollständige Beschwerde.",
+            "feedback": "Sie ist nicht für das Team freigegeben."
+          }
+        ]
+      },
+      {
+        "id": "schutzmassnahme-kein-urteil-intent",
+        "axis": "Intent",
+        "prompt": "Was will Jens erreichen?",
+        "evidenceIds": [
+          "DEC210F3",
+          "DEC210F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Beschwerde zurückziehen.",
+            "feedback": "Das ist nicht seine Frage."
+          },
+          {
+            "id": "b",
+            "text": "Gerüchte begrenzen, ohne das Ergebnis der Klärung vorwegzunehmen.",
+            "feedback": "Er fragt nach einer tragfähigen internen Aussage."
+          },
+          {
+            "id": "c",
+            "text": "Die vorläufige Maßnahme für immer festlegen.",
+            "feedback": "Sie wird nach der Anhörung überprüft."
+          }
+        ]
+      },
+      {
+        "id": "schutzmassnahme-kein-urteil-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Teaminformation ist angemessen?",
+        "evidenceIds": [
+          "DEC210F2",
+          "DEC210F3",
+          "DEC210F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Es habe überhaupt keine Beschwerde gegeben.",
+            "feedback": "Eine Beschwerde wurde aufgenommen."
+          },
+          {
+            "id": "b",
+            "text": "Die beschuldigte Person sei überführt.",
+            "feedback": "Eine Feststellung liegt nicht vor."
+          },
+          {
+            "id": "c",
+            "text": "Es gibt eine vorläufige Planänderung während einer vertraulichen Klärung; daraus folgt kein Urteil.",
+            "feedback": "Das wahrt Verfahren und Privatsphäre."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Jens mit einer knappen Teammitteilung. Erklären Sie den vorläufigen Charakter, schützen Sie beide Personen und setzen Sie einen Zeitpunkt zur erneuten Prüfung.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Maßnahme von Befund trennen",
+        "Vertraulichkeit wahren",
+        "Gerüchte ohne Details adressieren",
+        "Überprüfung zusagen"
+      ]
+    },
+    "model": {
+      "subject": "Re: Gerüchte nach der Dienstplanänderung",
+      "body": "Hallo Jens,\n\ndie Schichtänderung ist eine vorläufige organisatorische Maßnahme, damit die Beschwerde geordnet geklärt werden kann. Sie ist keine Feststellung über das Verhalten einer der beiden Personen. Da die Anhörungen noch nicht abgeschlossen sind, sollten wir weder eine Schuldzuweisung noch eine Entwarnung aus dem Dienstplan ableiten. Inhalte der Beschwerde und persönliche Angaben bleiben bei den für das Verfahren zuständigen Personen.\n\nFür das Team würde ich formulieren: „Die aktuelle Schichteinteilung wurde vorübergehend aus organisatorischen Gründen angepasst. Parallel läuft eine vertrauliche Klärung. Aus der Einteilung lässt sich kein Ergebnis über einzelne Mitarbeitende ableiten. Bitte respektiert die Privatsphäre aller Beteiligten und richtet Fragen zur Arbeitsorganisation an die Teamleitung.“\n\nIch werde mit dir nach den Anhörungen prüfen, ob und wie der Plan angepasst werden muss. Bis dahin sollten Führungskräfte dieselbe begrenzte Erklärung verwenden und Spekulationen nicht durch zusätzliche Andeutungen verstärken. Den beiden unmittelbar betroffenen Personen erklären wir separat, wie sie sich äußern können und wann wir sie über den nächsten Verfahrensschritt informieren.\n\nLeonie",
+      "annotations": [
+        {
+          "label": "Begrenzt die Maßnahme",
+          "excerpt": "eine vorläufige organisatorische Maßnahme",
+          "evidenceIds": [
+            "DEC210F2"
+          ]
+        },
+        {
+          "label": "Hält Ergebnis offen",
+          "excerpt": "keine Feststellung",
+          "evidenceIds": [
+            "DEC210F3"
+          ]
+        },
+        {
+          "label": "Schützt Informationen",
+          "excerpt": "Inhalte der Beschwerde und persönliche Angaben",
+          "evidenceIds": [
+            "DEC210F4"
+          ]
+        },
+        {
+          "label": "Prüft erneut",
+          "excerpt": "nach den Anhörungen prüfen",
+          "evidenceIds": [
+            "DEC210F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "unsichtbare-supportarbeit",
+    "title": "Die Zahl ohne die Hilfsarbeit",
+    "area": "People × Leistungsbewertung",
+    "areaLabel": "Personal · Leistungsbewertung",
+    "role": "Farah · Personalentwicklung",
+    "teaser": "Eine Produktivitätsliste erfasst Abschlüsse, aber keine Zeit für die Einarbeitung neuer Kollegen.",
+    "misunderstanding": "Ein niedriger Kennwert wird als vollständiges Bild individueller Leistung genutzt.",
+    "email": {
+      "from": "Robert · Abteilungsleitung",
+      "to": "Farah · Personalentwicklung",
+      "sent": "Donnerstag, 16:15 Uhr",
+      "subject": "Bewertung von Mira",
+      "body": "Hallo Farah,\n\nMira liegt bei abgeschlossenen Fällen deutlich unter dem Teamdurchschnitt. Ich wollte das als Minderleistung in ihre Beurteilung schreiben. Gleichzeitig hat sie im letzten Quartal zwei neue Kolleginnen eingearbeitet. Diese Arbeit steht nicht im Kennwert. Wie spreche ich die niedrigere Fallzahl an, ohne die Einarbeitung unsichtbar zu machen oder den Vergleich komplett aufzugeben?\n\nRobert"
+    },
+    "document": {
+      "title": "Kennzahlen und Aufgabenverteilung",
+      "intro": "Der Kennwert zählt Abschlüsse, nicht sämtliche Arbeitsanteile.",
+      "facts": [
+        {
+          "id": "DEC211F1",
+          "time": "Quartal",
+          "text": "Mira schloss 38 Fälle ab; der Teammedian lag bei 52."
+        },
+        {
+          "id": "DEC211F2",
+          "time": "Quartal",
+          "text": "Mira betreute die Einarbeitung von zwei neuen Kolleginnen an drei Tagen pro Woche."
+        },
+        {
+          "id": "DEC211F3",
+          "time": "Messung",
+          "text": "Die Einarbeitungszeit wird im Fallabschluss-Kennwert nicht erfasst."
+        },
+        {
+          "id": "DEC211F4",
+          "time": "Stand jetzt",
+          "text": "Es liegt keine Berechnung einer vergleichbaren Fallkapazität für Mira vor."
+        },
+        {
+          "id": "DEC211F5",
+          "time": "Verfahren",
+          "text": "Beurteilungen sollen Kennzahlen im Kontext der zugewiesenen Aufgaben erläutern."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "unsichtbare-supportarbeit-evidence",
+        "axis": "Evidence",
+        "prompt": "Was misst die Zahl 38?",
+        "evidenceIds": [
+          "DEC211F1",
+          "DEC211F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Miras gesamte Arbeitsqualität.",
+            "feedback": "Die Zahl erfasst nur Abschlüsse."
+          },
+          {
+            "id": "b",
+            "text": "Die Leistung der neuen Kolleginnen.",
+            "feedback": "Deren Ergebnisse sind nicht Teil dieser Zahl."
+          },
+          {
+            "id": "c",
+            "text": "Abgeschlossene Fälle, nicht alle zugewiesenen Arbeitsanteile.",
+            "feedback": "Die Einarbeitung fehlt in der Kennzahl."
+          }
+        ]
+      },
+      {
+        "id": "unsichtbare-supportarbeit-scope",
+        "axis": "Scope",
+        "prompt": "Was ist aus dem Abstand zum Median nicht ableitbar?",
+        "evidenceIds": [
+          "DEC211F2",
+          "DEC211F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass sie Einarbeitungsaufgaben hatte.",
+            "feedback": "Diese Aufgaben sind dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Dass Mira weniger Fälle abgeschlossen hat.",
+            "feedback": "38 liegt unter 52."
+          },
+          {
+            "id": "c",
+            "text": "Eine feststehende Minderleistung bei gleicher verfügbarer Fallzeit.",
+            "feedback": "Die Kapazitäten wurden nicht vergleichbar berechnet."
+          }
+        ]
+      },
+      {
+        "id": "unsichtbare-supportarbeit-intent",
+        "axis": "Intent",
+        "prompt": "Was will Robert beibehalten?",
+        "evidenceIds": [
+          "DEC211F1",
+          "DEC211F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein ehrliches Gespräch über Fallzahlen mit vollständigem Aufgabenkontext.",
+            "feedback": "Er fragt nicht nach dem Streichen der Zahl."
+          },
+          {
+            "id": "b",
+            "text": "Die Kennzahl als einziges Beurteilungskriterium.",
+            "feedback": "Das Verfahren fordert Kontext."
+          },
+          {
+            "id": "c",
+            "text": "Eine automatische Abwertung.",
+            "feedback": "Er zweifelt gerade an dieser Formulierung."
+          }
+        ]
+      },
+      {
+        "id": "unsichtbare-supportarbeit-purpose",
+        "axis": "Purpose",
+        "prompt": "Wie sollte die Beurteilung vorgehen?",
+        "evidenceIds": [
+          "DEC211F2",
+          "DEC211F3",
+          "DEC211F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fallzahl nennen, Einarbeitungsauftrag dokumentieren und Vergleich nach verfügbarer Zeit prüfen.",
+            "feedback": "Das erklärt Messung und Aufgabe gemeinsam."
+          },
+          {
+            "id": "b",
+            "text": "Mira ohne weitere Prüfung als unterdurchschnittlich einstufen.",
+            "feedback": "Die Aufgaben sind nicht vergleichbar berücksichtigt."
+          },
+          {
+            "id": "c",
+            "text": "Fallzahl verschweigen.",
+            "feedback": "Sie ist ein belegter Teil der Arbeit."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Robert mit einer differenzierten Beurteilungsformulierung und einem Prüfauftrag. Halten Sie die Fallzahl fest, ohne aus ihr allein ein Gesamturteil zu machen.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Kennzahl exakt benennen",
+        "Einarbeitungsarbeit würdigen",
+        "Vergleichbarkeit prüfen",
+        "Konkretes Gespräch vorbereiten"
+      ]
+    },
+    "model": {
+      "subject": "Re: Bewertung von Mira",
+      "body": "Hallo Robert,\n\ndie Fallzahl sollten wir nicht verschweigen: Mira hat 38 Fälle abgeschlossen, der Teammedian liegt bei 52. Aus diesem Abstand allein folgt jedoch noch keine belastbare Aussage über Minderleistung. Mira war an drei Tagen pro Woche mit der Einarbeitung zweier Kolleginnen betraut; diese Zeit erscheint im Abschlusskennwert nicht. Eine Berechnung der tatsächlich verfügbaren Fallkapazität fehlt bislang.\n\nFür die Beurteilung würde ich schreiben: „Mira schloss im vergangenen Quartal 38 Fälle ab und übernahm parallel die Einarbeitung von zwei neuen Kolleginnen. Der Fallabschlusswert liegt unter dem Teammedian; bei seiner Einordnung ist zu berücksichtigen, dass die Einarbeitungszeit im Kennwert nicht abgebildet wird. Wir prüfen die Vergleichbarkeit der Fallkapazitäten und besprechen anschließend Ziele für beide Aufgabenbereiche.“\n\nIch kann mit dir die Einsatzpläne und die Einarbeitungsaufgaben bis nächste Woche nachvollziehen. Im Gespräch mit Mira sollten wir fragen, wie sie die Aufteilung erlebt hat und welche Unterstützung sie für die Fallbearbeitung benötigt. So bleibt die Zahl sichtbar, ohne eine Aufgabe, die wir ihr selbst übertragen haben, gegen sie zu verwenden.\n\nFarah",
+      "annotations": [
+        {
+          "label": "Nimmt Zahl auf",
+          "excerpt": "38 Fälle abgeschlossen",
+          "evidenceIds": [
+            "DEC211F1"
+          ]
+        },
+        {
+          "label": "Berücksichtigt Einarbeitung",
+          "excerpt": "an drei Tagen pro Woche",
+          "evidenceIds": [
+            "DEC211F2"
+          ]
+        },
+        {
+          "label": "Nennt Messgrenze",
+          "excerpt": "im Abschlusskennwert nicht",
+          "evidenceIds": [
+            "DEC211F3"
+          ]
+        },
+        {
+          "label": "Verlangt Vergleich",
+          "excerpt": "Eine Berechnung der tatsächlich verfügbaren Fallkapazität fehlt",
+          "evidenceIds": [
+            "DEC211F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "standortwunsch",
+    "title": "Ein Wunschbogen ist keine Versetzung",
+    "area": "People × Standortplanung",
+    "areaLabel": "Personal · Standortplanung",
+    "role": "Sofia · Personalplanung",
+    "teaser": "Ein Standortfragebogen wird als Entscheidung über künftige Versetzungen gelesen.",
+    "misunderstanding": "Eine unverbindliche Präferenzabfrage wird intern als bereits beschlossener Personalplan behandelt.",
+    "email": {
+      "from": "Klara · Teamleitung",
+      "to": "Sofia · Personalplanung",
+      "sent": "Freitag, 9:45 Uhr",
+      "subject": "Gerüchte zum Standortwechsel",
+      "body": "Hallo Sofia,\n\nMehrere Mitarbeitende glauben, ihre Angaben im Standortfragebogen seien schon als Zusage oder Ablehnung einer Versetzung gespeichert. Ich habe selbst gesagt, wir würden uns an den Wünschen orientieren. Jetzt fragen sie, ob jemand gegen seinen Wunsch umgesetzt wird. Was können wir zum Stand sagen, ohne die Wünsche als bedeutungslos darzustellen oder Entscheidungen vorwegzunehmen?\n\nKlara"
+    },
+    "document": {
+      "title": "Fragebogen und Planungsstand",
+      "intro": "Die Präferenzabfrage und spätere Personalentscheidungen sind getrennte Schritte.",
+      "facts": [
+        {
+          "id": "DEC212F1",
+          "time": "Fragebogen",
+          "text": "Mitarbeitende konnten bevorzugte Standorte und Einschränkungen freiwillig angeben."
+        },
+        {
+          "id": "DEC212F2",
+          "time": "Einladung",
+          "text": "Die Angaben werden als Planungsinput bezeichnet, nicht als verbindliche Zusage."
+        },
+        {
+          "id": "DEC212F3",
+          "time": "Stand jetzt",
+          "text": "Es gibt noch keine genehmigten individuellen Versetzungsentscheidungen."
+        },
+        {
+          "id": "DEC212F4",
+          "time": "Plan",
+          "text": "Vor Entscheidungen sollen betroffene Personen zu möglichen Optionen angehört werden."
+        },
+        {
+          "id": "DEC212F5",
+          "time": "Stand jetzt",
+          "text": "Die Standortkapazitäten werden noch geprüft."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "standortwunsch-evidence",
+        "axis": "Evidence",
+        "prompt": "Wozu dient der Fragebogen?",
+        "evidenceIds": [
+          "DEC212F1",
+          "DEC212F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Er sammelt freiwillige Präferenzen und Einschränkungen.",
+            "feedback": "Die Einladung nennt ihn Planungsinput."
+          },
+          {
+            "id": "b",
+            "text": "Er hebt die Kapazitätsprüfung auf.",
+            "feedback": "Die Kapazitäten werden noch untersucht."
+          },
+          {
+            "id": "c",
+            "text": "Er erteilt bereits individuelle Zusagen.",
+            "feedback": "Die Einladung schließt Verbindlichkeit aus."
+          }
+        ]
+      },
+      {
+        "id": "standortwunsch-scope",
+        "axis": "Scope",
+        "prompt": "Was ist zum jetzigen Stand offen?",
+        "evidenceIds": [
+          "DEC212F3",
+          "DEC212F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Existenz des Fragebogens.",
+            "feedback": "Der Fragebogen wurde bereits verteilt."
+          },
+          {
+            "id": "b",
+            "text": "Individuelle Entscheidungen und verfügbare Kapazitäten.",
+            "feedback": "Beides ist noch nicht abgeschlossen."
+          },
+          {
+            "id": "c",
+            "text": "Ob Wünsche überhaupt erfasst wurden.",
+            "feedback": "Sie wurden freiwillig erhoben."
+          }
+        ]
+      },
+      {
+        "id": "standortwunsch-intent",
+        "axis": "Intent",
+        "prompt": "Welches Bedürfnis erkennt Klara?",
+        "evidenceIds": [
+          "DEC212F1",
+          "DEC212F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Wünsche ernst nehmen, ohne sie als fertige Entscheidung auszugeben.",
+            "feedback": "Sie fragt nach einer ehrlichen Einordnung."
+          },
+          {
+            "id": "b",
+            "text": "Die Wünsche löschen.",
+            "feedback": "Sie sollen als Input dienen."
+          },
+          {
+            "id": "c",
+            "text": "Alle Mitarbeitenden sofort versetzen.",
+            "feedback": "Dazu gibt es keinen Beschluss."
+          }
+        ]
+      },
+      {
+        "id": "standortwunsch-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Mitteilung ist fair?",
+        "evidenceIds": [
+          "DEC212F2",
+          "DEC212F3",
+          "DEC212F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Fragebogen ist bedeutungslos.",
+            "feedback": "Er ist ausdrücklich Planungsinput."
+          },
+          {
+            "id": "b",
+            "text": "Alle Wünsche werden garantiert erfüllt.",
+            "feedback": "Kapazitäten und Entscheidungen sind offen."
+          },
+          {
+            "id": "c",
+            "text": "Präferenzen fließen ein; Entscheidungen sind offen und Betroffene werden vorher angehört.",
+            "feedback": "Das entspricht Einladung und Plan."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Klara mit einer internen Mitteilung. Beschreiben Sie den Wert der Angaben, die noch offenen Entscheidungen und die Anhörung vor einem konkreten Schritt.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Präferenzen nicht entwerten",
+        "Keine Zusage erfinden",
+        "Planungsstand nennen",
+        "Anhörung zusichern"
+      ]
+    },
+    "model": {
+      "subject": "Re: Gerüchte zum Standortwechsel",
+      "body": "Hallo Klara,\n\nwir haben die Standortwünsche nicht als Zusagen oder Ablehnungen erfasst. Der Fragebogen liefert freiwillige Angaben zu Präferenzen und Einschränkungen, die in die Planung eingehen sollen. Gleichzeitig sind die Kapazitäten noch in Prüfung, und es gibt keine genehmigten individuellen Versetzungsentscheidungen. Deine Aussage, dass wir uns an den Wünschen orientieren, ist als Planungsgrundsatz sinnvoll; sie sollte aber nicht wie eine Garantie für jeden Einzelfall klingen.\n\nFür das Team schlage ich vor: „Vielen Dank für Ihre Angaben im Standortfragebogen. Wir nutzen sie als wichtigen Teil der Planung. Der Fragebogen entscheidet noch nicht über einzelne Versetzungen; auch die verfügbaren Plätze werden derzeit geprüft. Bevor eine konkrete Entscheidung für eine Person getroffen wird, sprechen wir mit ihr über die möglichen Optionen und ihre angegebenen Einschränkungen.“\n\nIch werde die häufigsten Fragen sammeln und nächste Woche einen aktualisierten Planungsstand mitteilen, auch wenn dann noch nicht jede Option feststeht. Bitte leite individuelle Sorgen direkt an mich weiter, damit niemand aus einem allgemeinen Fragebogen eine persönliche Entscheidung ableiten muss.\n\nSofia",
+      "annotations": [
+        {
+          "label": "Definiert Fragebogen",
+          "excerpt": "freiwillige Angaben zu Präferenzen und Einschränkungen",
+          "evidenceIds": [
+            "DEC212F1"
+          ]
+        },
+        {
+          "label": "Nennt offene Kapazität",
+          "excerpt": "Kapazitäten noch in Prüfung",
+          "evidenceIds": [
+            "DEC212F5"
+          ]
+        },
+        {
+          "label": "Verneint Entscheidung",
+          "excerpt": "keine genehmigten individuellen Versetzungsentscheidungen",
+          "evidenceIds": [
+            "DEC212F3"
+          ]
+        },
+        {
+          "label": "Verspricht Anhörung",
+          "excerpt": "sprechen wir mit ihr über die möglichen Optionen",
+          "evidenceIds": [
+            "DEC212F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "probenkennung",
+    "title": "Der Befund mit der falschen Kennung",
+    "area": "Health administration × Labor",
+    "areaLabel": "Gesundheitsverwaltung · Labor",
+    "role": "Mina · Labororganisation",
+    "teaser": "Ein Laborbefund trägt eine abweichende Probenkennung, obwohl Name und Geburtsdatum passen.",
+    "misunderstanding": "Zwei übereinstimmende Personendaten werden als ausreichender Nachweis für die Zuordnung einer Probe behandelt.",
+    "email": {
+      "from": "Dr Weber · Ambulanzleitung",
+      "to": "Mina · Labororganisation",
+      "sent": "Montag, 11:50 Uhr",
+      "subject": "Befundfreigabe bei abweichender Kennung",
+      "body": "Hallo Mina,\n\nDer Befund für Frau K. liegt im System, aber die Probenkennung entspricht nicht der Kennung auf unserem Anforderungsschein. Name und Geburtsdatum stimmen. Das Team möchte den Befund rasch weiterleiten. Können wir davon ausgehen, dass es nur ein Tippfehler ist? Bitte gib mir eine administrative Formulierung für die Patientin und den Ablauf zur Klärung, ohne den Befund medizinisch zu deuten.\n\nDr Weber"
+    },
+    "document": {
+      "title": "Anforderung, Eingang und Befund",
+      "intro": "Die Identitätsprüfung der Probe ist noch nicht abgeschlossen.",
+      "facts": [
+        {
+          "id": "DEC213F1",
+          "time": "Anforderung",
+          "text": "Der Schein für Frau K. nennt die Probenkennung P-4208."
+        },
+        {
+          "id": "DEC213F2",
+          "time": "Labor",
+          "text": "Der vorliegende Befund trägt P-4028 bei gleichem Namen und Geburtsdatum."
+        },
+        {
+          "id": "DEC213F3",
+          "time": "Stand jetzt",
+          "text": "Das Labor hat den Weg der Probe und die Kennungsänderung noch nicht nachvollzogen."
+        },
+        {
+          "id": "DEC213F4",
+          "time": "Verfahren",
+          "text": "Bei ungeklärter Probenzuordnung wird der Befund nicht als gesichert an die Patientin weitergeleitet."
+        },
+        {
+          "id": "DEC213F5",
+          "time": "Stand jetzt",
+          "text": "Die behandelnde Ärztin ist über die Abweichung informiert."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "probenkennung-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Abweichung ist dokumentiert?",
+        "evidenceIds": [
+          "DEC213F1",
+          "DEC213F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "P-4208 auf dem Schein und P-4028 auf dem Befund.",
+            "feedback": "Die Kennungen unterscheiden sich."
+          },
+          {
+            "id": "b",
+            "text": "Die Probe wurde sicher vertauscht.",
+            "feedback": "Der Probenweg wurde noch nicht geklärt."
+          },
+          {
+            "id": "c",
+            "text": "Der Name stimmt nicht überein.",
+            "feedback": "Name und Geburtsdatum stimmen."
+          }
+        ]
+      },
+      {
+        "id": "probenkennung-scope",
+        "axis": "Scope",
+        "prompt": "Warum reicht der Namensabgleich nicht?",
+        "evidenceIds": [
+          "DEC213F2",
+          "DEC213F3",
+          "DEC213F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Kennung ist immer bedeutungslos.",
+            "feedback": "Das Verfahren verlangt die Zuordnung."
+          },
+          {
+            "id": "b",
+            "text": "Der Befund ist medizinisch harmlos.",
+            "feedback": "Sein Inhalt wird hier nicht beurteilt."
+          },
+          {
+            "id": "c",
+            "text": "Die Kennungsabweichung lässt die Probenzuordnung offen.",
+            "feedback": "Das Labor prüft den Probenweg noch."
+          }
+        ]
+      },
+      {
+        "id": "probenkennung-intent",
+        "axis": "Intent",
+        "prompt": "Welchen Druck beschreibt Dr Weber?",
+        "evidenceIds": [
+          "DEC213F3",
+          "DEC213F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Schnelle Information bei noch ungeklärter Zuordnung.",
+            "feedback": "Er fragt nach einem sicheren administrativen Ablauf."
+          },
+          {
+            "id": "b",
+            "text": "Eine sofortige medizinische Interpretation.",
+            "feedback": "Er bittet ausdrücklich, diese zu vermeiden."
+          },
+          {
+            "id": "c",
+            "text": "Eine Beschwerde über eine Rechnung.",
+            "feedback": "Dazu enthält die Anfrage nichts."
+          }
+        ]
+      },
+      {
+        "id": "probenkennung-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Nachricht ist angemessen?",
+        "evidenceIds": [
+          "DEC213F3",
+          "DEC213F4",
+          "DEC213F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Tippfehler sei sicher bestätigt.",
+            "feedback": "Das Labor hat die Abweichung noch nicht erklärt."
+          },
+          {
+            "id": "b",
+            "text": "Die Zuordnung wird geprüft; die Ärztin wird nach Bestätigung über den Befund informieren.",
+            "feedback": "So bleibt die Unsicherheit sichtbar."
+          },
+          {
+            "id": "c",
+            "text": "Der Befund sei endgültig ungültig.",
+            "feedback": "Das wäre ebenso voreilig."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Dr Weber mit einer kurzen patientengerechten Statusmeldung. Trennen Sie Kennungsprüfung und medizinischen Befund und nennen Sie die zuständigen nächsten Schritte.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Kennungsabweichung exakt benennen",
+        "Keine Zuordnung behaupten",
+        "Befund nicht interpretieren",
+        "Prüfung und Rückmeldung organisieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Befundfreigabe bei abweichender Kennung",
+      "body": "Hallo Dr Weber,\n\nwir sollten die Abweichung nicht als bloßen Tippfehler einordnen, bevor das Labor den Probenweg geprüft hat. Auf dem Anforderungsschein steht P-4208, auf dem vorliegenden Befund P-4028. Name und Geburtsdatum stimmen überein, ersetzen aber die noch offene Zuordnung der Probe nicht. Nach unserem Verfahren geben wir einen Befund mit ungeklärter Kennung nicht als gesichert an die Patientin weiter. Die behandelnde Ärztin ist bereits informiert.\n\nFür Frau K. würde ich sagen: „Bei der Zuordnung Ihrer Laborprobe ist uns eine unterschiedliche Kennung in den Unterlagen aufgefallen. Wir klären das derzeit mit dem Labor, bevor wir Ihnen ein Ergebnis als sicher zugeordnet mitteilen. Ihre behandelnde Ärztin kennt den Vorgang und wird Sie nach der Prüfung über das weitere Vorgehen informieren.“\n\nIch fordere heute beim Labor die Eingangs- und Bearbeitungsschritte der Probe an und halte die Weiterleitung bis zur Klärung zurück. Sobald die Zuordnung schriftlich bestätigt oder ein weiterer Schritt erforderlich wird, informiere ich die Ärztin sofort. Über die medizinische Bedeutung des Befunds sollte ausschließlich das Behandlungsteam sprechen.\n\nMina",
+      "annotations": [
+        {
+          "label": "Nennt Kennungen",
+          "excerpt": "P-4208, auf dem vorliegenden Befund P-4028",
+          "evidenceIds": [
+            "DEC213F1",
+            "DEC213F2"
+          ]
+        },
+        {
+          "label": "Vermeidet Tippfehlerannahme",
+          "excerpt": "nicht als bloßen Tippfehler einordnen",
+          "evidenceIds": [
+            "DEC213F3"
+          ]
+        },
+        {
+          "label": "Hält Weiterleitung zurück",
+          "excerpt": "nicht als gesichert an die Patientin weiter",
+          "evidenceIds": [
+            "DEC213F4"
+          ]
+        },
+        {
+          "label": "Lässt Medizin beim Team",
+          "excerpt": "ausschließlich das Behandlungsteam",
+          "evidenceIds": [
+            "DEC213F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "kontaktweg-geaendert",
+    "title": "Die Erinnerung an die alte Nummer",
+    "area": "Health administration × Terminservice",
+    "areaLabel": "Gesundheitsverwaltung · Terminservice",
+    "role": "Ruth · Terminorganisation",
+    "teaser": "Ein Patient änderte seinen Kontaktwunsch, nachdem eine Erinnerungsdatei erstellt worden war.",
+    "misunderstanding": "Die aktuelle Präferenz im Stammdatensatz wird als Nachweis genommen, dass eine vorher erzeugte Versanddatei ebenfalls aktualisiert wurde.",
+    "email": {
+      "from": "Sina · Empfang",
+      "to": "Ruth · Terminorganisation",
+      "sent": "Mittwoch, 10:40 Uhr",
+      "subject": "Erinnerung an die alte Telefonnummer",
+      "body": "Hallo Ruth,\n\nHerr B. hat gestern umgestellt, dass Terminerinnerungen nur noch per E-Mail kommen sollen. Heute erhielt seine frühere Mobilnummer trotzdem eine SMS. Im Stammdatensatz steht die neue Einstellung korrekt. Kannst du erklären, wie die Nachricht noch ausgelöst wurde, und ihm antworten, ohne zu behaupten, dass die SMS definitiv von ihm gelesen wurde?\n\nSina"
+    },
+    "document": {
+      "title": "Änderungs- und Versandprotokoll",
+      "intro": "Stammdaten und vorbereitete Versandlisten haben unterschiedliche Zeitpunkte.",
+      "facts": [
+        {
+          "id": "DEC214F1",
+          "time": "Dienstag 8 Uhr",
+          "text": "Die SMS-Versanddatei für Mittwoch wurde aus den damaligen Kontaktdaten erstellt."
+        },
+        {
+          "id": "DEC214F2",
+          "time": "Dienstag 15 Uhr",
+          "text": "Herr B. änderte seine Präferenz auf E-Mail und ließ die alte Mobilnummer entfernen."
+        },
+        {
+          "id": "DEC214F3",
+          "time": "Mittwoch 9 Uhr",
+          "text": "Der Dienst protokolliert eine SMS an die frühere Nummer als zugestellt."
+        },
+        {
+          "id": "DEC214F4",
+          "time": "Stand jetzt",
+          "text": "Es ist unbekannt, wer Zugriff auf die frühere Nummer hat oder die SMS gesehen hat."
+        },
+        {
+          "id": "DEC214F5",
+          "time": "Verfahren",
+          "text": "Eine mögliche Fehlzustellung wird an die Datenschutzkoordination gemeldet; vorbereitete Dateien sind zu prüfen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "kontaktweg-geaendert-evidence",
+        "axis": "Evidence",
+        "prompt": "Warum konnte die SMS noch versandt werden?",
+        "evidenceIds": [
+          "DEC214F1",
+          "DEC214F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die SMS wurde erst nach der Änderung vorbereitet.",
+            "feedback": "Die Datei stammt vom Morgen davor."
+          },
+          {
+            "id": "b",
+            "text": "Die Versanddatei war vor der Präferenzänderung erstellt worden.",
+            "feedback": "Die Zeitpunkte erklären die Abweichung."
+          },
+          {
+            "id": "c",
+            "text": "Herr B. hatte die E-Mail-Einstellung nie geändert.",
+            "feedback": "Die Änderung ist protokolliert."
+          }
+        ]
+      },
+      {
+        "id": "kontaktweg-geaendert-scope",
+        "axis": "Scope",
+        "prompt": "Was beweist „zugestellt“ nicht?",
+        "evidenceIds": [
+          "DEC214F3",
+          "DEC214F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass eine SMS technisch übertragen wurde.",
+            "feedback": "Genau das protokolliert der Dienst."
+          },
+          {
+            "id": "b",
+            "text": "Wer die Nachricht tatsächlich gelesen hat.",
+            "feedback": "Der Zugriff auf die alte Nummer ist unbekannt."
+          },
+          {
+            "id": "c",
+            "text": "Dass die alte Nummer verwendet wurde.",
+            "feedback": "Die Zielnummer steht im Protokoll."
+          }
+        ]
+      },
+      {
+        "id": "kontaktweg-geaendert-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Sina für ihre Antwort?",
+        "evidenceIds": [
+          "DEC214F2",
+          "DEC214F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine medizinische Bewertung des Termins.",
+            "feedback": "Der Termininhalte werden nicht geprüft."
+          },
+          {
+            "id": "b",
+            "text": "Eine Behauptung über den Empfänger.",
+            "feedback": "Die Lesesituation ist unbekannt."
+          },
+          {
+            "id": "c",
+            "text": "Eine Erklärung des Versands und einen überprüfbaren Schutzschritt.",
+            "feedback": "Die Anfrage zielt auf Ursache und Reaktion."
+          }
+        ]
+      },
+      {
+        "id": "kontaktweg-geaendert-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Maßnahme ist angemessen?",
+        "evidenceIds": [
+          "DEC214F4",
+          "DEC214F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Datenschutzkoordination informieren, vorbereitete Dateien prüfen und Herrn B. sachlich updaten.",
+            "feedback": "Das Verfahren verlangt Meldung und Prüfung."
+          },
+          {
+            "id": "b",
+            "text": "Behaupten, niemand habe die SMS gelesen.",
+            "feedback": "Die Lesesituation ist unbekannt."
+          },
+          {
+            "id": "c",
+            "text": "Die aktuelle Stammdatenanzeige als Entwarnung verwenden.",
+            "feedback": "Sie ändert die alte Versanddatei nicht rückwirkend."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Sina mit einer Nachricht an Herrn B. Erklären Sie den Zeitpunkt der Versanddatei, die Grenzen des Zustellprotokolls und die Prüfung weiterer vorbereiteter Nachrichten.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Zeitliche Ursache erklären",
+        "Lesestatus offenlassen",
+        "Datenschutzprüfung einleiten",
+        "Künftige Versände kontrollieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Erinnerung an die alte Telefonnummer",
+      "body": "Hallo Sina,\n\ndie aktuelle Einstellung im Stammdatensatz ist richtig, aber die SMS-Datei wurde bereits Dienstagmorgen erstellt. Herr B. änderte seinen Kontaktwunsch erst am Nachmittag. Der Versanddienst meldet eine Zustellung an die frühere Nummer; daraus können wir nicht ableiten, wer die SMS tatsächlich gesehen hat. Wir sollten die technische Ursache erklären und die mögliche Fehlzustellung prüfen lassen.\n\nIch schlage für Herrn B. vor: „Ihre Präferenz für E-Mail-Erinnerungen ist seit gestern Nachmittag in Ihrem Datensatz gespeichert. Die heute versandte SMS stammte aus einer zuvor vorbereiteten Versanddatei, die diese Änderung noch nicht enthielt. Das hätte nicht passieren sollen. Wir prüfen, ob weitere vorbereitete Nachrichten betroffen sind, und haben den Vorgang an unsere Datenschutzkoordination gegeben. Ob die SMS von jemandem gelesen wurde, können wir derzeit nicht feststellen. Wir informieren Sie über die bestätigten Ergebnisse und die getroffenen Maßnahmen.“\n\nIch lasse die noch offenen Versanddateien mit den aktuellen Präferenzen abgleichen und halte Nachrichten an die frühere Nummer zurück. Bitte bestätige Herrn B. außerdem, welcher Kontaktweg ab jetzt für Rückfragen gilt.\n\nRuth",
+      "annotations": [
+        {
+          "label": "Erklärt Zeitpunkt",
+          "excerpt": "SMS-Datei wurde bereits Dienstagmorgen erstellt",
+          "evidenceIds": [
+            "DEC214F1"
+          ]
+        },
+        {
+          "label": "Nennt Änderung",
+          "excerpt": "erst am Nachmittag",
+          "evidenceIds": [
+            "DEC214F2"
+          ]
+        },
+        {
+          "label": "Begrenzt Zustellung",
+          "excerpt": "nicht ableiten, wer die SMS tatsächlich gesehen hat",
+          "evidenceIds": [
+            "DEC214F3",
+            "DEC214F4"
+          ]
+        },
+        {
+          "label": "Leitet Prüfung ein",
+          "excerpt": "an unsere Datenschutzkoordination gegeben",
+          "evidenceIds": [
+            "DEC214F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dringlichkeitsvermerk",
+    "title": "„Dringend“ auf dem Umschlag",
+    "area": "Health administration × Überweisungen",
+    "areaLabel": "Gesundheitsverwaltung · Überweisungen",
+    "role": "Elias · Überweisungskoordination",
+    "teaser": "Eine Praxis markiert Unterlagen als dringend; der interne Prioritätsentscheid ist noch offen.",
+    "misunderstanding": "Ein Dringlichkeitsvermerk der absendenden Praxis wird als bestätigte Terminpriorität der aufnehmenden Stelle dargestellt.",
+    "email": {
+      "from": "Nora · Patientenservice",
+      "to": "Elias · Überweisungen",
+      "sent": "Donnerstag, 13:10 Uhr",
+      "subject": "Dringende Überweisung von Herrn S.",
+      "body": "Hallo Elias,\n\ndie überweisende Praxis hat „dringend“ auf das Schreiben gesetzt. Herr S. fragt, ob ihm damit ein Termin in dieser Woche zugesagt ist. Ich möchte seinen Hinweis ernst nehmen, aber die Unterlagen sind erst heute eingegangen. Kannst du mir sagen, wer die Priorität festlegt und was wir ihm bis dahin verbindlich mitteilen können?\n\nNora"
+    },
+    "document": {
+      "title": "Eingang und Sichtung der Überweisung",
+      "intro": "Der Vermerk des Absenders und die interne Sichtung sind verschiedene Schritte.",
+      "facts": [
+        {
+          "id": "DEC215F1",
+          "time": "Donnerstag 10 Uhr",
+          "text": "Die Überweisung der Praxis geht mit dem Vermerk „dringend“ ein."
+        },
+        {
+          "id": "DEC215F2",
+          "time": "Donnerstag 11 Uhr",
+          "text": "Die Unterlagen werden zur fachlichen Sichtung an das zuständige Team weitergeleitet."
+        },
+        {
+          "id": "DEC215F3",
+          "time": "Stand jetzt",
+          "text": "Die fachliche Priorität und ein Terminvorschlag wurden noch nicht festgelegt."
+        },
+        {
+          "id": "DEC215F4",
+          "time": "Verfahren",
+          "text": "Das fachliche Team entscheidet die Priorität; der Patientenservice informiert über den dokumentierten Status und leitet neue Informationen weiter."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "dringlichkeitsvermerk-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist zum Vermerk sicher?",
+        "evidenceIds": [
+          "DEC215F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die überweisende Praxis hat ihn angebracht.",
+            "feedback": "Der Eingang ist dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Die Priorität ist intern bereits bestätigt.",
+            "feedback": "Die fachliche Sichtung läuft noch."
+          },
+          {
+            "id": "c",
+            "text": "Das aufnehmende Team hat einen Wochentermin zugesagt.",
+            "feedback": "Ein Terminvorschlag fehlt."
+          }
+        ]
+      },
+      {
+        "id": "dringlichkeitsvermerk-scope",
+        "axis": "Scope",
+        "prompt": "Wer legt die interne Priorität fest?",
+        "evidenceIds": [
+          "DEC215F2",
+          "DEC215F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Vermerk allein automatisch.",
+            "feedback": "Er stammt von der absendenden Praxis."
+          },
+          {
+            "id": "b",
+            "text": "Die Servicekraft am Telefon.",
+            "feedback": "Sie informiert nur über den Status."
+          },
+          {
+            "id": "c",
+            "text": "Das zuständige fachliche Team nach Sichtung.",
+            "feedback": "Die Unterlagen wurden dorthin geleitet."
+          }
+        ]
+      },
+      {
+        "id": "dringlichkeitsvermerk-intent",
+        "axis": "Intent",
+        "prompt": "Welche Sorge von Nora ist berechtigt?",
+        "evidenceIds": [
+          "DEC215F1",
+          "DEC215F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Vermerk ignorieren.",
+            "feedback": "Sie möchte ihn ausdrücklich berücksichtigen."
+          },
+          {
+            "id": "b",
+            "text": "Den Hinweis ernst nehmen, ohne eine Woche zu versprechen.",
+            "feedback": "Der Eingang ist bestätigt, der Termin nicht."
+          },
+          {
+            "id": "c",
+            "text": "Eine medizinische Einschätzung selbst treffen.",
+            "feedback": "Sie fragt nach Zuständigkeit."
+          }
+        ]
+      },
+      {
+        "id": "dringlichkeitsvermerk-purpose",
+        "axis": "Purpose",
+        "prompt": "Was soll Herr S. erfahren?",
+        "evidenceIds": [
+          "DEC215F2",
+          "DEC215F3",
+          "DEC215F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Termin diese Woche ist garantiert.",
+            "feedback": "Es gibt noch keinen Vorschlag."
+          },
+          {
+            "id": "b",
+            "text": "Eingang und Weiterleitung sind bestätigt; Priorität und Termin folgen nach Sichtung.",
+            "feedback": "Das trennt gesicherte Schritte und offene Entscheidung."
+          },
+          {
+            "id": "c",
+            "text": "Die Praxis habe sich geirrt.",
+            "feedback": "Dazu liegt keine Grundlage vor."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Nora mit einer patientengerechten Nachricht. Würdigen Sie den Dringlichkeitsvermerk, nennen Sie die zuständige Sichtung und vermeiden Sie eine Termin- oder medizinische Zusage.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Vermerk richtig zuordnen",
+        "Interne Entscheidung offenlassen",
+        "Termin nicht versprechen",
+        "Weiterleitung neuer Angaben anbieten"
+      ]
+    },
+    "model": {
+      "subject": "Re: Dringende Überweisung von Herrn S.",
+      "body": "Hallo Nora,\n\nwir können Herrn S. bestätigen, dass seine Überweisung heute mit dem Vermerk „dringend“ eingegangen und an das zuständige fachliche Team weitergeleitet worden ist. Der Vermerk stammt von der überweisenden Praxis. Er bedeutet nicht, dass unsere Stelle bereits eine Priorität festgelegt oder einen Termin für diese Woche zugesagt hat. Beides ist nach der fachlichen Sichtung noch offen.\n\nIch würde ihm schreiben: „Ihre Unterlagen sind bei uns eingegangen; den Dringlichkeitsvermerk Ihrer Praxis haben wir mit den Unterlagen an das zuständige Team weitergegeben. Dieses Team prüft die Priorität und den nächsten Terminschritt. Wir können Ihnen derzeit noch keinen Termin bestätigen. Sobald eine Entscheidung dokumentiert ist, informieren wir Sie über das weitere Vorgehen. Falls Ihre Praxis zusätzliche Angaben übermitteln möchte, leiten wir sie unmittelbar weiter.“\n\nIch frage heute nach, wann mit einem Status der Sichtung zu rechnen ist, und gebe dir diesen Zeitpunkt weiter, sobald er bestätigt wurde. Bitte interpretiere den medizinischen Inhalt gegenüber Herrn S. nicht selbst. Wenn er eine neue akute Sorge schildert, verbinden wir ihn mit dem dafür zuständigen klinischen Team.\n\nElias",
+      "annotations": [
+        {
+          "label": "Ordnet Vermerk zu",
+          "excerpt": "stammt von der überweisenden Praxis",
+          "evidenceIds": [
+            "DEC215F1"
+          ]
+        },
+        {
+          "label": "Nennt Sichtung",
+          "excerpt": "an das zuständige fachliche Team weitergeleitet",
+          "evidenceIds": [
+            "DEC215F2"
+          ]
+        },
+        {
+          "label": "Lässt Termin offen",
+          "excerpt": "noch keinen Termin bestätigen",
+          "evidenceIds": [
+            "DEC215F3"
+          ]
+        },
+        {
+          "label": "Wahrt Zuständigkeit",
+          "excerpt": "medizinischen Inhalt gegenüber Herrn S. nicht selbst",
+          "evidenceIds": [
+            "DEC215F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "rueckruf-ohne-eintrag",
+    "title": "Der Rückruf, der nicht im Verlauf steht",
+    "area": "Health administration × Patientenservice",
+    "areaLabel": "Gesundheitsverwaltung · Patientenservice",
+    "role": "Alina · Patientenservice",
+    "teaser": "Eine Patientin meldet einen unterbliebenen Rückruf; das Telefonprotokoll zeigt einen Anruf ohne nachgewiesenes Gespräch.",
+    "misunderstanding": "Ein ausgehender Anrufversuch wird als erfolgreiches Beratungsgespräch bezeichnet.",
+    "email": {
+      "from": "Dr Klee · Praxisleitung",
+      "to": "Alina · Patientenservice",
+      "sent": "Freitag, 8:55 Uhr",
+      "subject": "Beschwerde über fehlenden Rückruf",
+      "body": "Hallo Alina,\n\nFrau L. sagt, sie habe den gestern zugesagten Rückruf nicht erhalten. Im Telefonsystem sehe ich einen ausgehenden Anruf an ihre Nummer. Können wir ihr damit sagen, dass wir die Zusage erfüllt haben? Mir fehlt ein Gesprächsvermerk. Bitte prüfe den Unterschied und schlage eine Antwort vor, die ihre Erfahrung ernst nimmt und den Rückruf jetzt zuverlässig organisiert.\n\nDr Klee"
+    },
+    "document": {
+      "title": "Telefonprotokoll und Aufgabenliste",
+      "intro": "Ein Verbindungsversuch und ein dokumentiertes Gespräch sind getrennte Ereignisse.",
+      "facts": [
+        {
+          "id": "DEC216F1",
+          "time": "Donnerstag 14 Uhr",
+          "text": "Ein Rückruf bis 17 Uhr wird Frau L. zugesagt."
+        },
+        {
+          "id": "DEC216F2",
+          "time": "Donnerstag 16:20 Uhr",
+          "text": "Das Telefonsystem zeigt einen ausgehenden Anruf von 9 Sekunden Dauer."
+        },
+        {
+          "id": "DEC216F3",
+          "time": "Stand jetzt",
+          "text": "Es gibt keinen Gesprächsvermerk und keine Bestätigung, dass Frau L. erreicht wurde."
+        },
+        {
+          "id": "DEC216F4",
+          "time": "Freitag",
+          "text": "Die ursprüngliche Rückrufaufgabe steht im System fälschlich auf „erledigt“."
+        },
+        {
+          "id": "DEC216F5",
+          "time": "Verfahren",
+          "text": "Ein neuer Rückruf soll mit zuständiger Person und dokumentiertem Ergebnis eingetragen werden."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "rueckruf-ohne-eintrag-evidence",
+        "axis": "Evidence",
+        "prompt": "Was beweist das Telefonprotokoll?",
+        "evidenceIds": [
+          "DEC216F2",
+          "DEC216F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Einen kurzen Anrufversuch, kein bestätigtes Gespräch.",
+            "feedback": "Eine erreichte Person ist nicht dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Ein ausführliches Beratungsgespräch.",
+            "feedback": "Neun Sekunden und fehlender Vermerk tragen das nicht."
+          },
+          {
+            "id": "c",
+            "text": "Dass Frau L. gar keinen Anruf bekam.",
+            "feedback": "Ein ausgehender Versuch ist dokumentiert."
+          }
+        ]
+      },
+      {
+        "id": "rueckruf-ohne-eintrag-scope",
+        "axis": "Scope",
+        "prompt": "Warum ist „erledigt“ ungenau?",
+        "evidenceIds": [
+          "DEC216F1",
+          "DEC216F3",
+          "DEC216F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Frau L. hat den Rückruf abgelehnt.",
+            "feedback": "Eine Ablehnung ist nicht dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Die zugesagte Kontaktaufnahme ist nicht als gelungen belegt.",
+            "feedback": "Ein Abschlussvermerk ohne Ergebnis reicht nicht."
+          },
+          {
+            "id": "c",
+            "text": "Die Aufgabe wurde nie angelegt.",
+            "feedback": "Sie steht im System."
+          }
+        ]
+      },
+      {
+        "id": "rueckruf-ohne-eintrag-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Dr Klee verbinden?",
+        "evidenceIds": [
+          "DEC216F3",
+          "DEC216F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Diagnose per E-Mail.",
+            "feedback": "Es geht um den Kontaktweg."
+          },
+          {
+            "id": "b",
+            "text": "Eine ehrliche Entschuldigung mit einem verlässlich zugewiesenen neuen Rückruf.",
+            "feedback": "Ihre Anfrage fordert beides."
+          },
+          {
+            "id": "c",
+            "text": "Eine Verteidigung des falschen Status.",
+            "feedback": "Sie hinterfragt den Status."
+          }
+        ]
+      },
+      {
+        "id": "rueckruf-ohne-eintrag-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort hilft Frau L.?",
+        "evidenceIds": [
+          "DEC216F2",
+          "DEC216F3",
+          "DEC216F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Gespräch als geführt behaupten.",
+            "feedback": "Dafür fehlt ein Vermerk."
+          },
+          {
+            "id": "b",
+            "text": "Den Versuch erwähnen, fehlenden Gesprächsnachweis anerkennen und einen dokumentierten Rückruf vereinbaren.",
+            "feedback": "Das ist nachvollziehbar und überprüfbar."
+          },
+          {
+            "id": "c",
+            "text": "Nur den Systemstatus zitieren.",
+            "feedback": "Dieser ist irreführend."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Dr Klee mit einer Nachricht an Frau L. Unterscheiden Sie Versuch und erreichtes Gespräch und sichern Sie einen Rückruf mit nachvollziehbarer Zuständigkeit.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Anrufversuch korrekt beschreiben",
+        "Kein Gespräch erfinden",
+        "Falschen Status berichtigen",
+        "Rückruf verbindlich organisieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Beschwerde über fehlenden Rückruf",
+      "body": "Hallo Dr Klee,\n\ndas Telefonprotokoll belegt einen ausgehenden Anruf von neun Sekunden um 16:20 Uhr. Es belegt nicht, dass Frau L. erreicht wurde oder dass ein Gespräch stattfand. Ein Gesprächsvermerk fehlt, und die Aufgabe ist trotz dieses offenen Ergebnisses als „erledigt“ markiert. Wir sollten den Versuch nicht als erfüllten Rückruf darstellen.\n\nFür Frau L. schlage ich vor: „Es tut uns leid, dass der zugesagte Rückruf für Sie nicht stattgefunden hat. Unser System zeigt einen kurzen Anrufversuch, aber wir können nicht nachvollziehen, dass ein Gespräch zustande kam. Wir haben die Aufgabe erneut geöffnet und organisieren einen Rückruf durch die zuständige Person. Wir bestätigen Ihnen den vereinbarten Zeitraum und dokumentieren das Ergebnis anschließend.“\n\nIch kläre jetzt mit dem zuständigen Team einen konkreten Zeitraum und nenne ihn erst, wenn die Person ihn bestätigt hat. Außerdem korrigiere ich den Status der ursprünglichen Aufgabe und prüfe, weshalb ein Versuch ohne Gespräch als Abschluss gewertet wurde. So nehmen wir Frau L.s Wahrnehmung ernst und schaffen einen überprüfbaren nächsten Kontakt.\n\nAlina",
+      "annotations": [
+        {
+          "label": "Begrenzt Protokoll",
+          "excerpt": "einen ausgehenden Anruf von neun Sekunden",
+          "evidenceIds": [
+            "DEC216F2"
+          ]
+        },
+        {
+          "label": "Hält Gespräch offen",
+          "excerpt": "Es belegt nicht, dass Frau L. erreicht wurde",
+          "evidenceIds": [
+            "DEC216F3"
+          ]
+        },
+        {
+          "label": "Berichtigt Status",
+          "excerpt": "korrigiere ich den Status",
+          "evidenceIds": [
+            "DEC216F4"
+          ]
+        },
+        {
+          "label": "Organisiert Rückruf",
+          "excerpt": "erst, wenn die Person ihn bestätigt hat",
+          "evidenceIds": [
+            "DEC216F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "retoure-zwei-kartons",
+    "title": "Zwei Kartons, ein Prüfvermerk",
+    "area": "Operations × Retouren",
+    "areaLabel": "Betrieb · Retouren",
+    "role": "Nils · Retourenleitung",
+    "teaser": "Ein Prüfvermerk zu einem Karton wird auf eine gesamte Rücksendung übertragen.",
+    "misunderstanding": "Die Feststellung an einem Teil der Rücksendung gilt intern fälschlich als Ergebnis für alle Teile.",
+    "email": {
+      "from": "Britta · Kundenservice",
+      "to": "Nils · Retouren",
+      "sent": "Montag, 14:30 Uhr",
+      "subject": "Gesamte Retoure abgelehnt?",
+      "body": "Hallo Nils,\n\nDer Kunde hat zwei Kartons zurückgeschickt. Im System steht „Gebrauchsspuren festgestellt“, und der Service hat daraus eine Ablehnung der gesamten Retoure formuliert. Der Kunde sagt, nur ein Gerät sei ausgepackt worden. Kannst du klären, was wirklich geprüft wurde, und eine Antwort vorbereiten, die eine mögliche Ablehnung nicht vorschnell bestätigt oder ausschließt?\n\nBritta"
+    },
+    "document": {
+      "title": "Wareneingang und Prüfbericht",
+      "intro": "Die Prüfung ist bisher nur einem Gerät sicher zugeordnet.",
+      "facts": [
+        {
+          "id": "DEC217F1",
+          "time": "Eingang",
+          "text": "Zwei Kartons mit insgesamt vier Geräten gingen unter einer Retourennummer ein."
+        },
+        {
+          "id": "DEC217F2",
+          "time": "Prüfung",
+          "text": "Der Vermerk „Gebrauchsspuren“ bezieht sich auf Gerät 1 aus Karton A."
+        },
+        {
+          "id": "DEC217F3",
+          "time": "Stand jetzt",
+          "text": "Die drei weiteren Geräte wurden noch nicht einzeln geprüft."
+        },
+        {
+          "id": "DEC217F4",
+          "time": "System",
+          "text": "Das Feld für die Retourennummer übernahm den Vermerk ohne Gerätenummer."
+        },
+        {
+          "id": "DEC217F5",
+          "time": "Verfahren",
+          "text": "Eine Entscheidung wird pro betroffenem Gerät begründet und dem Kunden entsprechend erklärt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "retoure-zwei-kartons-evidence",
+        "axis": "Evidence",
+        "prompt": "Worauf bezieht sich der Prüfvermerk?",
+        "evidenceIds": [
+          "DEC217F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Auf Karton B allein.",
+            "feedback": "Der Vermerk nennt Karton A."
+          },
+          {
+            "id": "b",
+            "text": "Auf alle vier Geräte.",
+            "feedback": "Drei Geräte sind ungeprüft."
+          },
+          {
+            "id": "c",
+            "text": "Auf Gerät 1 aus Karton A.",
+            "feedback": "Nur dieses Gerät wurde so dokumentiert."
+          }
+        ]
+      },
+      {
+        "id": "retoure-zwei-kartons-scope",
+        "axis": "Scope",
+        "prompt": "Warum ist die Systemanzeige zu weit?",
+        "evidenceIds": [
+          "DEC217F1",
+          "DEC217F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein gerätebezogener Befund erscheint als Befund der ganzen Retoure.",
+            "feedback": "Die Nummer bündelt vier Geräte."
+          },
+          {
+            "id": "b",
+            "text": "Der Kunde hat vier Retourennummern.",
+            "feedback": "Es gibt nur eine."
+          },
+          {
+            "id": "c",
+            "text": "Es wurde gar nichts geprüft.",
+            "feedback": "Gerät 1 wurde geprüft."
+          }
+        ]
+      },
+      {
+        "id": "retoure-zwei-kartons-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Britta für die Kundenantwort?",
+        "evidenceIds": [
+          "DEC217F3",
+          "DEC217F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine sofortige Ablehnung aller Geräte.",
+            "feedback": "Drei Geräte sind ungeprüft."
+          },
+          {
+            "id": "b",
+            "text": "Einen begrenzten Zwischenstand und eine Einzelprüfung vor der Entscheidung.",
+            "feedback": "Der Verfahrensschritt ist noch offen."
+          },
+          {
+            "id": "c",
+            "text": "Eine Garantie für volle Erstattung.",
+            "feedback": "Auch Gerät 1 muss eingeordnet werden."
+          }
+        ]
+      },
+      {
+        "id": "retoure-zwei-kartons-purpose",
+        "axis": "Purpose",
+        "prompt": "Wie wird der Fall geklärt?",
+        "evidenceIds": [
+          "DEC217F2",
+          "DEC217F3",
+          "DEC217F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle Geräte einzeln prüfen, den Vermerk richtig zuordnen und die Entscheidung je Gerät erklären.",
+            "feedback": "Das entspricht dem dokumentierten Verfahren."
+          },
+          {
+            "id": "b",
+            "text": "Die Sammelanzeige als abschließende Begründung senden.",
+            "feedback": "Sie verdeckt die Gerätenummer."
+          },
+          {
+            "id": "c",
+            "text": "Den Befund an Gerät 1 löschen.",
+            "feedback": "Der belegte Befund muss erhalten bleiben."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Britta mit einer Kundenformulierung. Erkennen Sie die zu weite Systemmeldung an, nennen Sie den tatsächlichen Prüfstand und sichern Sie eine gerätebezogene Entscheidung.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Befund genau zuordnen",
+        "Sammelstatus korrigieren",
+        "Entscheidung offenhalten",
+        "Einzelprüfung organisieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Gesamte Retoure abgelehnt?",
+      "body": "Hallo Britta,\n\ndie bisherige Ablehnung der gesamten Retoure ist durch den Prüfbericht nicht gedeckt. Zwei Kartons mit vier Geräten wurden erfasst, aber „Gebrauchsspuren“ ist bisher nur für Gerät 1 aus Karton A dokumentiert. Die drei anderen Geräte wurden noch nicht einzeln geprüft. Unser System hat den Vermerk auf der gemeinsamen Retourennummer angezeigt und damit den Eindruck erweckt, er gelte für alles.\n\nDem Kunden würde ich schreiben: „Vielen Dank für Ihren Hinweis. Unsere frühere Nachricht bezog sich zu pauschal auf Ihre gesamte Rücksendung. Der vorliegende Prüfvermerk betrifft bislang ein einzelnes Gerät. Die übrigen Geräte werden noch gesondert geprüft. Wir ordnen jeden Befund dem jeweiligen Gerät zu und teilen Ihnen danach die Entscheidung mit einer nachvollziehbaren Begründung pro Gerät mit.“\n\nIch lasse die drei offenen Geräte heute erfassen und korrigiere die interne Anzeige, damit der Vermerk nicht als Gesamtbefund erscheint. Für Gerät 1 prüfen wir die Folgen des dokumentierten Zustands nach dem vorgesehenen Verfahren; darüber sollten wir heute noch keine endgültige Zusage machen. Ich schicke dir einen aktualisierten Stand, sobald die Einzelprüfung abgeschlossen ist.\n\nNils",
+      "annotations": [
+        {
+          "label": "Begrenzt Befund",
+          "excerpt": "nur für Gerät 1 aus Karton A",
+          "evidenceIds": [
+            "DEC217F2"
+          ]
+        },
+        {
+          "label": "Nennt offene Prüfung",
+          "excerpt": "drei anderen Geräte wurden noch nicht einzeln geprüft",
+          "evidenceIds": [
+            "DEC217F3"
+          ]
+        },
+        {
+          "label": "Erklärt Systemfehler",
+          "excerpt": "auf der gemeinsamen Retourennummer",
+          "evidenceIds": [
+            "DEC217F4"
+          ]
+        },
+        {
+          "label": "Sichert Einzelentscheidung",
+          "excerpt": "Begründung pro Gerät",
+          "evidenceIds": [
+            "DEC217F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "rabatt-nach-menge",
+    "title": "Der Preis vor der Schwelle",
+    "area": "Operations × Einkauf",
+    "areaLabel": "Betrieb · Einkauf",
+    "role": "Eva · Einkaufskalkulation",
+    "teaser": "Ein Angebot zeigt einen günstigen Preis nach Jahresbonus; die nötige Abnahmemenge ist noch nicht erreicht.",
+    "misunderstanding": "Ein möglicher rückwirkender Bonus wird wie ein bereits geltender Rechnungsrabatt behandelt.",
+    "email": {
+      "from": "Paul · Vertriebsleitung",
+      "to": "Eva · Einkauf",
+      "sent": "Dienstag, 8:40 Uhr",
+      "subject": "Preis für das Kundenangebot",
+      "body": "Hallo Eva,\n\nDie Lieferantenfolie nennt 18 Euro pro Stück „nach Bonus“. Ich habe diesen Wert in unser Kundenangebot übernommen. Jetzt fragt der Kunde, ob der Preis auch bei kleiner Abnahme gilt. Wir haben noch nicht genug Menge für den Bonus. Wie korrigieren wir das, ohne den möglichen Vorteil zu verschweigen oder einen Preis zu versprechen, den wir nicht halten können?\n\nPaul"
+    },
+    "document": {
+      "title": "Lieferantenangebot und Abnahmestand",
+      "intro": "Rechnungspreis und möglicher Jahresbonus sind getrennt.",
+      "facts": [
+        {
+          "id": "DEC218F1",
+          "time": "Angebot",
+          "text": "Der Lieferant berechnet zunächst 20 Euro pro Stück."
+        },
+        {
+          "id": "DEC218F2",
+          "time": "Angebot",
+          "text": "Bei mindestens 5.000 Stück Jahresabnahme wird nach Jahresende ein Bonus von 2 Euro pro Stück gutgeschrieben."
+        },
+        {
+          "id": "DEC218F3",
+          "time": "Stand jetzt",
+          "text": "Die verbindliche Jahresabnahme liegt bei 2.100 Stück."
+        },
+        {
+          "id": "DEC218F4",
+          "time": "Kundenentwurf",
+          "text": "Im Entwurf steht 18 Euro ohne Hinweis auf die Bonusschwelle."
+        },
+        {
+          "id": "DEC218F5",
+          "time": "Stand jetzt",
+          "text": "Ein anderer fester Einkaufspreis wurde nicht verhandelt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "rabatt-nach-menge-evidence",
+        "axis": "Evidence",
+        "prompt": "Welcher Betrag wird zunächst berechnet?",
+        "evidenceIds": [
+          "DEC218F1",
+          "DEC218F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "18 Euro auf jeder Rechnung.",
+            "feedback": "Der Bonus wird nach Jahresende gutgeschrieben."
+          },
+          {
+            "id": "b",
+            "text": "20 Euro pro Stück.",
+            "feedback": "Der Bonus folgt nur nach Erreichen der Schwelle."
+          },
+          {
+            "id": "c",
+            "text": "16 Euro bei kleiner Abnahme.",
+            "feedback": "Ein solcher Preis steht nicht im Angebot."
+          }
+        ]
+      },
+      {
+        "id": "rabatt-nach-menge-scope",
+        "axis": "Scope",
+        "prompt": "Welche Aussage ist zur Schwelle richtig?",
+        "evidenceIds": [
+          "DEC218F2",
+          "DEC218F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Schwelle gilt pro Kundenbestellung.",
+            "feedback": "Sie bezieht sich auf das Jahr."
+          },
+          {
+            "id": "b",
+            "text": "Sie ist mit 2.100 verbindlichen Stück noch nicht erreicht.",
+            "feedback": "5.000 Stück sind erforderlich."
+          },
+          {
+            "id": "c",
+            "text": "Der Bonus ist bereits erworben.",
+            "feedback": "Die Menge reicht noch nicht aus."
+          }
+        ]
+      },
+      {
+        "id": "rabatt-nach-menge-intent",
+        "axis": "Intent",
+        "prompt": "Was will Paul bewahren?",
+        "evidenceIds": [
+          "DEC218F4",
+          "DEC218F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Einen möglichen Kostenvorteil zeigen, ohne ihn als festen Preis auszugeben.",
+            "feedback": "Der Entwurf ist zu eindeutig formuliert."
+          },
+          {
+            "id": "b",
+            "text": "Einen bereits verhandelten Festpreis verteidigen.",
+            "feedback": "Ein solcher Preis fehlt."
+          },
+          {
+            "id": "c",
+            "text": "Die Bonusschwelle verbergen.",
+            "feedback": "Er fragt nach einer Korrektur."
+          }
+        ]
+      },
+      {
+        "id": "rabatt-nach-menge-purpose",
+        "axis": "Purpose",
+        "prompt": "Was gehört ins Kundenangebot?",
+        "evidenceIds": [
+          "DEC218F1",
+          "DEC218F2",
+          "DEC218F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "18 Euro vorbehaltlos zusagen.",
+            "feedback": "Die Schwelle ist offen."
+          },
+          {
+            "id": "b",
+            "text": "Den Bonus als sofortige Gutschrift bezeichnen.",
+            "feedback": "Er erfolgt gegebenenfalls nach Jahresende."
+          },
+          {
+            "id": "c",
+            "text": "Ein tragfähiger Preis auf gesicherter Basis; den möglichen Bonus nur mit Bedingung und Zeitpunkt nennen.",
+            "feedback": "So werden Rechnung und Szenario getrennt."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Paul mit einer korrigierten Preisformulierung. Unterscheiden Sie aktuellen Rechnungspreis, mögliche spätere Gutschrift und Kundenpreisentscheidung.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Rechnungspreis korrekt nennen",
+        "Schwelle und Zeitpunkt erläutern",
+        "Keine bedingungslose Zusage",
+        "Kundenangebot korrigieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Preis für das Kundenangebot",
+      "body": "Hallo Paul,\n\ndie 18 Euro auf der Lieferantenfolie sind kein derzeitiger Rechnungspreis. Wir zahlen zunächst 20 Euro pro Stück. Erst wenn die Jahresabnahme mindestens 5.000 Stück erreicht, entsteht nach Jahresende ein Bonus von 2 Euro pro Stück. Verbindlich sind bisher 2.100 Stück; die Bedingung ist also noch offen. Einen anderen festen Einkaufspreis haben wir nicht vereinbart. Deshalb sollten wir den Kundenentwurf vor Versand korrigieren.\n\nIch würde den Preis auf Grundlage der gesicherten 20 Euro kalkulieren. Falls wir einen möglichen späteren Vorteil erwähnen, dann ausdrücklich als Szenario: „Bei Erreichen der vereinbarten Jahresmenge kann sich unser Einkauf nachträglich um 2 Euro je Stück reduzieren; dieser Bonus ist derzeit nicht gesichert und nicht Teil des angebotenen Festpreises.“ Ob wir einen Teil eines späteren Bonus an den Kunden weitergeben wollen, müssten wir gesondert entscheiden.\n\nIch prüfe heute mit dir die Marge des korrigierten Angebots und kennzeichne die Bonusannahme in der internen Kalkulation separat. So bleibt der mögliche Vorteil sichtbar, ohne dass wir einen noch nicht erreichten Lieferantenrabatt als bestehenden Kundenpreis ausgeben.\n\nEva",
+      "annotations": [
+        {
+          "label": "Nennt Rechnungspreis",
+          "excerpt": "zunächst 20 Euro pro Stück",
+          "evidenceIds": [
+            "DEC218F1"
+          ]
+        },
+        {
+          "label": "Nennt Bedingung",
+          "excerpt": "mindestens 5.000 Stück",
+          "evidenceIds": [
+            "DEC218F2"
+          ]
+        },
+        {
+          "label": "Nennt aktuelle Menge",
+          "excerpt": "bisher 2.100 Stück",
+          "evidenceIds": [
+            "DEC218F3"
+          ]
+        },
+        {
+          "label": "Begrenzt Kundenpreis",
+          "excerpt": "nicht Teil des angebotenen Festpreises",
+          "evidenceIds": [
+            "DEC218F4",
+            "DEC218F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "zaehler-geteilt",
+    "title": "Ein Zähler für zwei Mieter",
+    "area": "Operations × Gebäude",
+    "areaLabel": "Betrieb · Gebäude",
+    "role": "Karla · Gebäudemanagement",
+    "teaser": "Ein Energiebericht ordnet den gesamten Verbrauch einem Mieter zu, obwohl zwei Flächen am selben Zähler hängen.",
+    "misunderstanding": "Ein gemeinsamer Messwert wird als exakter Verbrauch einer einzelnen Mieteinheit ausgewiesen.",
+    "email": {
+      "from": "Tim · Kundenbetreuung",
+      "to": "Karla · Gebäudemanagement",
+      "sent": "Mittwoch, 15:15 Uhr",
+      "subject": "Energiebericht für Nordhaus",
+      "body": "Hallo Karla,\n\nNordhaus hält den ausgewiesenen Stromverbrauch für zu hoch. Die Zahl stammt aus dem Hauptzähler ihres Gebäudeteils, aber dort hängt offenbar auch die Nachbarfläche dran. Ich möchte nicht behaupten, der Bericht sei komplett falsch, wenn der Messwert stimmt. Kannst du erklären, was wir korrigieren müssen und wie wir bis zu einer Aufteilung transparent abrechnen?\n\nTim"
+    },
+    "document": {
+      "title": "Zählerplan und Bericht",
+      "intro": "Der Messwert ist korrekt abgelesen, seine Zuordnung ist ungeklärt.",
+      "facts": [
+        {
+          "id": "DEC219F1",
+          "time": "Zählerplan",
+          "text": "Der Hauptzähler versorgt Nordhaus und eine benachbarte Mieteinheit."
+        },
+        {
+          "id": "DEC219F2",
+          "time": "Bericht",
+          "text": "Der abgelesene Wert wurde vollständig Nordhaus zugeordnet."
+        },
+        {
+          "id": "DEC219F3",
+          "time": "Stand jetzt",
+          "text": "Für den Berichtsmonat liegen keine getrennten Unterzählerwerte vor."
+        },
+        {
+          "id": "DEC219F4",
+          "time": "Vereinbarung",
+          "text": "Für gemeinsame Messstellen ist ein dokumentierter Aufteilungsschlüssel vorgesehen."
+        },
+        {
+          "id": "DEC219F5",
+          "time": "Stand jetzt",
+          "text": "Der zutreffende Schlüssel wurde für diesen Bericht noch nicht geprüft."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "zaehler-geteilt-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist am Bericht belastbar?",
+        "evidenceIds": [
+          "DEC219F1",
+          "DEC219F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Messfehler des Zählers.",
+            "feedback": "Dafür gibt es keinen Hinweis."
+          },
+          {
+            "id": "b",
+            "text": "Der exakte Verbrauch nur von Nordhaus.",
+            "feedback": "Es fehlen getrennte Werte."
+          },
+          {
+            "id": "c",
+            "text": "Der Hauptzählerwert als Gesamtwert beider Flächen.",
+            "feedback": "Die Zuordnung zu Nordhaus allein ist fraglich."
+          }
+        ]
+      },
+      {
+        "id": "zaehler-geteilt-scope",
+        "axis": "Scope",
+        "prompt": "Welche Korrektur ist nötig?",
+        "evidenceIds": [
+          "DEC219F3",
+          "DEC219F4",
+          "DEC219F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Wert ohne Prüfung halbieren.",
+            "feedback": "Ein hälftiger Schlüssel ist nicht dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Den Wert als gemeinsamen Verbrauch kennzeichnen und den Aufteilungsschlüssel prüfen.",
+            "feedback": "Eine genaue Einzelzahl ist noch nicht belegbar."
+          },
+          {
+            "id": "c",
+            "text": "Den ganzen Verbrauch der Nachbarfläche zuweisen.",
+            "feedback": "Auch Nordhaus hängt am Zähler."
+          }
+        ]
+      },
+      {
+        "id": "zaehler-geteilt-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Tim vermeiden?",
+        "evidenceIds": [
+          "DEC219F1",
+          "DEC219F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Messung pauschal verwerfen, obwohl die Zuordnung das Problem ist.",
+            "feedback": "Er unterscheidet Wert und Zuschreibung."
+          },
+          {
+            "id": "b",
+            "text": "Die Nachfrage des Mieters beantworten.",
+            "feedback": "Er bittet gerade um eine Antwort."
+          },
+          {
+            "id": "c",
+            "text": "Den vertraglichen Schlüssel prüfen.",
+            "feedback": "Das ist ein notwendiger Schritt."
+          }
+        ]
+      },
+      {
+        "id": "zaehler-geteilt-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Zwischenmitteilung ist präzise?",
+        "evidenceIds": [
+          "DEC219F2",
+          "DEC219F4",
+          "DEC219F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Bericht als unverändert richtig bezeichnen.",
+            "feedback": "Die vollständige Zuordnung ist unbelegt."
+          },
+          {
+            "id": "b",
+            "text": "Gesamtwert bestätigen, Einzelzuordnung zurücknehmen und Aufteilung nach geprüfter Regel nachreichen.",
+            "feedback": "So wird nur der unbelegte Teil korrigiert."
+          },
+          {
+            "id": "c",
+            "text": "Nordhaus den gesamten Wert erstatten.",
+            "feedback": "Die richtige Aufteilung steht noch nicht fest."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Tim mit einer Nachricht an Nordhaus. Unterscheiden Sie Messwert und Zuschreibung und erklären Sie die Prüfung des vereinbarten Schlüssels vor einer Korrektur.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Gesamtmessung erhalten",
+        "Falsche Zuordnung korrigieren",
+        "Keine Schätzung als Fakt ausgeben",
+        "Aufteilung dokumentieren"
+      ]
+    },
+    "model": {
+      "subject": "Re: Energiebericht für Nordhaus",
+      "body": "Hallo Tim,\n\nder Zählerwert selbst ist als Messung der gemeinsamen Versorgung nicht widerlegt. Fehlerhaft ist die Darstellung, er sei der genaue Verbrauch von Nordhaus allein. Laut Zählerplan versorgt derselbe Anschluss auch die benachbarte Fläche; getrennte Unterzählerwerte für den Monat liegen nicht vor. Wir müssen den vereinbarten Aufteilungsschlüssel prüfen, bevor wir einen Einzelbetrag oder eine Korrektur beziffern.\n\nIch schlage Nordhaus vor: „Vielen Dank für Ihren Hinweis. Der im Bericht genannte Wert wurde am gemeinsamen Hauptzähler abgelesen. Wir haben festgestellt, dass dieser Zähler auch eine weitere Mieteinheit versorgt. Die bisherige Darstellung als ausschließlich Ihr Verbrauch war daher nicht präzise. Wir prüfen den für diese Messstelle vereinbarten Aufteilungsschlüssel und senden Ihnen anschließend einen korrigierten Bericht mit nachvollziehbarer Berechnung.“\n\nIch lasse heute den Zählerplan und die Vereinbarung abgleichen und dokumentiere, welcher Schlüssel für diesen Zeitraum gilt. Bis dahin sollten wir weder eine hälftige Aufteilung noch eine vollständige Erstattung versprechen. Ich melde dir morgen, welche Unterlagen vorliegen und wann die Berechnung abgeschlossen werden kann.\n\nKarla",
+      "annotations": [
+        {
+          "label": "Erhält Messung",
+          "excerpt": "Zählerwert selbst ist als Messung der gemeinsamen Versorgung nicht widerlegt",
+          "evidenceIds": [
+            "DEC219F1"
+          ]
+        },
+        {
+          "label": "Korrigiert Zuordnung",
+          "excerpt": "genaue Verbrauch von Nordhaus allein",
+          "evidenceIds": [
+            "DEC219F2"
+          ]
+        },
+        {
+          "label": "Nennt fehlende Werte",
+          "excerpt": "getrennte Unterzählerwerte für den Monat liegen nicht vor",
+          "evidenceIds": [
+            "DEC219F3"
+          ]
+        },
+        {
+          "label": "Prüft Schlüssel",
+          "excerpt": "vereinbarten Aufteilungsschlüssel prüfen",
+          "evidenceIds": [
+            "DEC219F4",
+            "DEC219F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "konsignation-bestand",
+    "title": "Im Lager, aber nicht unser Bestand",
+    "area": "Operations × Lager",
+    "areaLabel": "Betrieb · Lager",
+    "role": "Oskar · Bestandskoordination",
+    "teaser": "Ein Kunde will gelagerte Kommissionsware sofort kaufen; das Eigentum und die Freigabe liegen beim Lieferanten.",
+    "misunderstanding": "Physische Verfügbarkeit wird mit verkaufsfähigem Eigenbestand gleichgesetzt.",
+    "email": {
+      "from": "Maren · Vertrieb",
+      "to": "Oskar · Lager",
+      "sent": "Freitag, 11:00 Uhr",
+      "subject": "Teile aus dem Konsignationslager",
+      "body": "Hallo Oskar,\n\nIm Lager sehe ich 80 Teile, und der Kunde möchte 50 davon nächste Woche abnehmen. Der Lieferant nennt sie allerdings Konsignationsware. Ich habe bisher nur gesagt, dass sie bei uns liegen, nicht dass sie fest reserviert sind. Was können wir dem Kunden zusagen, bevor wir klären, ob wir sie verkaufen dürfen und welche Menge bereits für Reparaturen vorgesehen ist?\n\nMaren"
+    },
+    "document": {
+      "title": "Lagerbestand und Konsignationsvereinbarung",
+      "intro": "Lagerort, Eigentum, Reservierung und Verkaufsfreigabe sind getrennte Merkmale.",
+      "facts": [
+        {
+          "id": "DEC220F1",
+          "time": "Lager",
+          "text": "80 Teile liegen physisch im Konsignationsbereich."
+        },
+        {
+          "id": "DEC220F2",
+          "time": "Vereinbarung",
+          "text": "Der Lieferant bleibt bis zur Entnahme nach vereinbartem Verfahren Eigentümer; ein Weiterverkauf braucht seine Freigabe."
+        },
+        {
+          "id": "DEC220F3",
+          "time": "Disposition",
+          "text": "20 der 80 Teile sind für bereits geplante Reparaturen vorgemerkt."
+        },
+        {
+          "id": "DEC220F4",
+          "time": "Stand jetzt",
+          "text": "Eine Verkaufsfreigabe des Lieferanten und eine Reservierung für den Kunden liegen nicht vor."
+        },
+        {
+          "id": "DEC220F5",
+          "time": "Stand jetzt",
+          "text": "Das Lager kann die freien Mengen erst nach Bestätigung der Reparaturplanung final nennen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "konsignation-bestand-evidence",
+        "axis": "Evidence",
+        "prompt": "Was bedeutet die Zahl 80?",
+        "evidenceIds": [
+          "DEC220F1",
+          "DEC220F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "80 Teile bereits beim Kunden.",
+            "feedback": "Sie liegen im Konsignationsbereich."
+          },
+          {
+            "id": "b",
+            "text": "Physisch vorhandene Teile, darunter vorgemerkte Ware.",
+            "feedback": "Der Ort belegt noch keine freie Verkaufsmenge."
+          },
+          {
+            "id": "c",
+            "text": "80 frei verkäufliche eigene Teile.",
+            "feedback": "Eigentum und Vormerkung sprechen dagegen."
+          }
+        ]
+      },
+      {
+        "id": "konsignation-bestand-scope",
+        "axis": "Scope",
+        "prompt": "Welche Voraussetzungen fehlen für die Zusage?",
+        "evidenceIds": [
+          "DEC220F2",
+          "DEC220F4",
+          "DEC220F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Freigabe des Lieferanten und verifizierte freie Menge.",
+            "feedback": "Beides ist noch offen."
+          },
+          {
+            "id": "b",
+            "text": "Nur eine Versandetikette.",
+            "feedback": "Die Verkaufsberechtigung fehlt bereits vorher."
+          },
+          {
+            "id": "c",
+            "text": "Ein neuer Lagerraum.",
+            "feedback": "Der Lagerort ist bekannt."
+          }
+        ]
+      },
+      {
+        "id": "konsignation-bestand-intent",
+        "axis": "Intent",
+        "prompt": "Welche Aussage von Maren war bisher sorgfältig?",
+        "evidenceIds": [
+          "DEC220F1",
+          "DEC220F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sie bezeichnete die Ware als ihr Eigentum.",
+            "feedback": "Der Lieferant bleibt Eigentümer."
+          },
+          {
+            "id": "b",
+            "text": "Sie garantierte 50 Teile.",
+            "feedback": "Eine Reservierung existiert nicht."
+          },
+          {
+            "id": "c",
+            "text": "Sie nannte nur den Lagerort, nicht eine feste Reservierung.",
+            "feedback": "So blieb die offene Freigabe erkennbar."
+          }
+        ]
+      },
+      {
+        "id": "konsignation-bestand-purpose",
+        "axis": "Purpose",
+        "prompt": "Was sollte sie nun anbieten?",
+        "evidenceIds": [
+          "DEC220F3",
+          "DEC220F4",
+          "DEC220F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle 80 Teile als unverkäuflich erklären.",
+            "feedback": "Eine Freigabe könnte Verkauf ermöglichen."
+          },
+          {
+            "id": "b",
+            "text": "Den Kundenbedarf aufnehmen und Menge sowie Freigabe prüfen, bevor ein Liefertermin zugesagt wird.",
+            "feedback": "Die Reparaturvormerkung und Freigabe sind zu klären."
+          },
+          {
+            "id": "c",
+            "text": "50 Teile sofort verbindlich zusagen.",
+            "feedback": "Die Bedingungen sind ungeprüft."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Maren mit kundenfähiger Formulierung. Unterscheiden Sie Lagerort, Eigentum, Vormerkung und Verkaufsfreigabe und setzen Sie einen überprüfbaren Rückmeldungspunkt.",
+      "wordGuide": "Etwa 110–190 Wörter",
+      "criteria": [
+        "Physische Menge einordnen",
+        "Eigentum und Freigabe beachten",
+        "Reparaturvormerkung berücksichtigen",
+        "Keinen Liefertermin erfinden"
+      ]
+    },
+    "model": {
+      "subject": "Re: Teile aus dem Konsignationslager",
+      "body": "Hallo Maren,\n\ndie 80 Teile sind physisch vorhanden, aber nicht als frei verkäuflicher Eigenbestand zu behandeln. Sie liegen im Konsignationsbereich; nach der Vereinbarung bleibt der Lieferant bis zur vorgesehenen Entnahme Eigentümer, und ein Weiterverkauf benötigt seine Freigabe. Zudem sind 20 Teile für Reparaturen vorgemerkt. Wir müssen die tatsächliche freie Menge und diese Vormerkungen bestätigen, bevor wir 50 Teile reservieren oder einen Liefertermin nennen.\n\nDem Kunden würde ich schreiben: „Die angefragten Teile befinden sich derzeit in unserem Lager. Wir prüfen noch die verfügbare Menge und die erforderliche Freigabe für einen Verkauf aus diesem Bestand. Wir melden uns bis Dienstag mit einer bestätigten Aussage zu Menge und möglichem Liefertermin. Ihre Anfrage ist aufgenommen; eine Reservierung ist damit noch nicht verbunden.“\n\nIch kläre heute mit der Disposition die Reparaturplanung und frage den Lieferanten nach der Verkaufsfreigabe. Falls einer der beiden Punkte bis Dienstag offenbleibt, geben wir dem Kunden einen ehrlichen Zwischenstand statt einer stillschweigenden Zusage. Deine bisherige Formulierung zum Lagerort war richtig; wir müssen sie nun um die Bedingungen ergänzen, bevor daraus ein Angebot wird.\n\nOskar",
+      "annotations": [
+        {
+          "label": "Begrenzt Lagerzahl",
+          "excerpt": "physisch vorhanden, aber nicht als frei verkäuflicher Eigenbestand",
+          "evidenceIds": [
+            "DEC220F1"
+          ]
+        },
+        {
+          "label": "Nennt Eigentum",
+          "excerpt": "bleibt der Lieferant bis zur vorgesehenen Entnahme Eigentümer",
+          "evidenceIds": [
+            "DEC220F2"
+          ]
+        },
+        {
+          "label": "Nennt Vormerkung",
+          "excerpt": "20 Teile für Reparaturen vorgemerkt",
+          "evidenceIds": [
+            "DEC220F3"
+          ]
+        },
+        {
+          "label": "Qualifiziert Zusage",
+          "excerpt": "eine Reservierung ist damit noch nicht verbunden",
+          "evidenceIds": [
+            "DEC220F4",
+            "DEC220F5"
+          ]
+        }
+      ]
+    }
+  }
+]

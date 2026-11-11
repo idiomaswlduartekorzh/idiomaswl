@@ -1,5 +1,7 @@
+import { WRITING_UI_DE } from './writing-workplace-ui-de'
+
 export type WritingLevel = 'B2' | 'C1' | 'C2'
-export type WritingLocale = 'en' | 'fr'
+export type WritingLocale = 'en' | 'fr' | 'de'
 
 type Stage = 'email' | 'document' | 'analysis' | 'reply' | 'review'
 
@@ -71,6 +73,7 @@ export type WritingUi = {
 }
 
 export const WRITING_UI: Record<WritingLocale, WritingUi> = {
+  de: WRITING_UI_DE,
   en: {
     languageName: 'English',
     languageSlug: 'ingles',

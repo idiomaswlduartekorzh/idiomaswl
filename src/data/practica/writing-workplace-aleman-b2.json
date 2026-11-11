@@ -1,0 +1,3971 @@
+[
+  {
+    "id": "messe-kontakte-nicht-newsletter",
+    "title": "120 Kontakte, aber keine neue Mailingliste",
+    "area": "Marketing × Messe",
+    "areaLabel": "Marketing · Messe",
+    "role": "Mira · Messemarketing",
+    "teaser": "Der Vertrieb möchte Messekontakte sofort in den regelmäßigen Newsletter aufnehmen.",
+    "misunderstanding": "Eine Bitte um Unterlagen nach dem Messegespräch wurde als Zustimmung zum laufenden Newsletter verstanden.",
+    "email": {
+      "from": "Jonas · Vertrieb",
+      "to": "Mira · Messemarketing",
+      "sent": "Dienstag, 10:15 Uhr",
+      "subject": "Newsletter an die Messekontakte",
+      "body": "Hallo Mira,\n\nWir haben auf der Messe 120 Kontaktdaten erfasst. Ich würde den Leuten gern noch heute unseren Newsletter schicken, damit das Interesse nicht abkühlt. In unserem Gespräch hieß es, dass wir ihnen Informationen zusenden dürfen. Kannst du die Liste hochladen und mir sagen, wann der Versand beginnt?\n\nViele Grüße\nJonas"
+    },
+    "document": {
+      "title": "Messeformular und interne Versandregel",
+      "intro": "Das Formular unterscheidet zwischen einer Antwort auf eine Anfrage und einem regelmäßigen Versand.",
+      "facts": [
+        {
+          "id": "DE1F1",
+          "time": "Montag",
+          "text": "120 Besucher ließen ihre Kontaktdaten scannen, damit der Vertrieb ihnen die im Gespräch gewünschten Produktunterlagen schicken kann."
+        },
+        {
+          "id": "DE1F2",
+          "time": "Formular",
+          "text": "Eine gesonderte Auswahl für den regelmäßigen Newsletter war vorhanden; 28 Besucher wählten sie aus."
+        },
+        {
+          "id": "DE1F3",
+          "time": "Interne Regel",
+          "text": "Die Messe-Nachricht mit angeforderten Unterlagen geht an die jeweiligen Anfragenden. Der regelmäßige Newsletter wird nur an Kontakte mit der gesonderten Auswahl geschickt."
+        },
+        {
+          "id": "DE1F4",
+          "time": "Stand jetzt",
+          "text": "Jonas hat die Liste noch nicht hochgeladen. Mira kann beide Gruppen vor einem Versand getrennt prüfen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "messe-kontakte-nicht-newsletter-evidence",
+        "axis": "Evidence",
+        "prompt": "Wofür wurden die 120 Kontakte zunächst erfasst?",
+        "evidenceIds": [
+          "DE1F1",
+          "DE1F2",
+          "DE1F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Für jeden künftigen Newsletter.",
+            "feedback": "Nur 28 Personen wählten den Newsletter zusätzlich aus."
+          },
+          {
+            "id": "b",
+            "text": "Für einen bereits gestarteten Versand.",
+            "feedback": "Jonas bittet erst jetzt darum, die Liste hochzuladen."
+          },
+          {
+            "id": "c",
+            "text": "Für die angeforderten Unterlagen nach dem Messegespräch.",
+            "feedback": "Der Scan diente der Antwort auf konkrete Anfragen."
+          }
+        ]
+      },
+      {
+        "id": "messe-kontakte-nicht-newsletter-scope",
+        "axis": "Scope",
+        "prompt": "Wie groß ist die bestätigte Newsletter-Gruppe?",
+        "evidenceIds": [
+          "DE1F2",
+          "DE1F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Keine Kontakte.",
+            "feedback": "Die 28 aktiven Auswahlen sind im Formular dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "120 Kontakte.",
+            "feedback": "Der Scan allein erweitert die Newsletter-Gruppe nicht auf 120."
+          },
+          {
+            "id": "c",
+            "text": "28 Kontakte.",
+            "feedback": "Die gesonderte Auswahl liegt für 28 Personen vor."
+          }
+        ]
+      },
+      {
+        "id": "messe-kontakte-nicht-newsletter-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Jonas erreichen?",
+        "evidenceIds": [
+          "DE1F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Kontakte zeitnah informieren, ohne Interesse zu verlieren.",
+            "feedback": "Seine Mail nennt das aktuelle Interesse als Grund für den schnellen Versand."
+          },
+          {
+            "id": "b",
+            "text": "Eine technische Störung melden.",
+            "feedback": "Es ist noch gar kein Versand ausgelöst worden."
+          },
+          {
+            "id": "c",
+            "text": "Den Messestand erneut buchen.",
+            "feedback": "Der Messestand ist nicht Gegenstand seiner Bitte."
+          }
+        ]
+      },
+      {
+        "id": "messe-kontakte-nicht-newsletter-purpose",
+        "axis": "Purpose",
+        "prompt": "Wie kann Mira sinnvoll antworten?",
+        "evidenceIds": [
+          "DE1F1",
+          "DE1F2",
+          "DE1F3",
+          "DE1F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle 120 sofort in den Newsletter übernehmen.",
+            "feedback": "Die interne Regel bindet den Newsletter an die gesonderte Auswahl."
+          },
+          {
+            "id": "b",
+            "text": "Unterlagen an die Anfragenden und den Newsletter nur an die 28 ausgewählten Kontakte senden.",
+            "feedback": "Die beiden erlaubten Kommunikationswege lassen sich getrennt vorbereiten."
+          },
+          {
+            "id": "c",
+            "text": "Die 120 Kontakte vollständig löschen.",
+            "feedback": "Die Anfragen nach Unterlagen bleiben bestehen und können beantwortet werden."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Jonas als Mira. Erklären Sie den Unterschied zwischen angeforderten Unterlagen und dem regelmäßigen Newsletter, nennen Sie die belegten Gruppen und schlagen Sie einen zügigen, überprüfbaren Versandplan vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die 120 Messeanfragen richtig einordnen",
+        "Die 28 Newsletter-Auswahlen nennen",
+        "Keine pauschale Zustimmung behaupten",
+        "Einen konkreten nächsten Schritt anbieten"
+      ]
+    },
+    "model": {
+      "subject": "AW: Newsletter an die Messekontakte",
+      "body": "Hallo Jonas,\n\ndie 120 Scans zeigen, dass Besucher nach ihren Gesprächen Produktunterlagen erhalten möchten. Das ist eine gute Gelegenheit für eine schnelle persönliche Nachfassmail. Für den regelmäßigen Newsletter gibt es im Messeformular jedoch eine eigene Auswahl; diese haben 28 Personen getroffen. Wir sollten deshalb die gesamten 120 Kontakte nicht als Newsletter-Liste behandeln.\n\nIch kann heute die Anfragen mit den notierten Unterlagen abgleichen und die passenden Informationen an die jeweiligen Personen verschicken. Parallel prüfe ich die 28 zusätzlichen Auswahlen und bereite nur für diese Gruppe den Newsletter-Versand vor. Die Liste ist noch nicht hochgeladen, sodass wir die beiden Wege vorab sauber trennen können. So geht kein echtes Interesse verloren, und niemand erhält eine regelmäßige Nachricht, die im Gespräch nicht vereinbart wurde. Ich schicke dir am Nachmittag eine kurze Übersicht: wie viele Nachfassmails vorbereitet sind und welche 28 Kontakte für den Newsletter vorgesehen sind. Bitte gib mir Bescheid, falls bei einem Gespräch eine besondere Unterlage zugesagt wurde.\n\nViele Grüße\nMira",
+      "annotations": [
+        {
+          "label": "Trennt die Gruppen",
+          "excerpt": "Für den regelmäßigen Newsletter gibt es im Messeformular jedoch eine eigene Auswahl",
+          "evidenceIds": [
+            "DE1F2",
+            "DE1F3"
+          ]
+        },
+        {
+          "label": "Nennt die Zahl",
+          "excerpt": "28 Personen",
+          "evidenceIds": [
+            "DE1F2"
+          ]
+        },
+        {
+          "label": "Nutzt den Handlungsspielraum",
+          "excerpt": "Die Liste ist noch nicht hochgeladen",
+          "evidenceIds": [
+            "DE1F4"
+          ]
+        },
+        {
+          "label": "Bietet einen nächsten Schritt",
+          "excerpt": "die Anfragen mit den notierten Unterlagen abgleichen",
+          "evidenceIds": [
+            "DE1F1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "gutschein-pro-bestellung",
+    "title": "Ein Gutschein, zwei mögliche Regeln",
+    "area": "Marketing × Aktion",
+    "areaLabel": "Marketing · Verkaufsaktion",
+    "role": "Tobias · Kampagnenmanagement",
+    "teaser": "Ein Aktionscode gilt an der Kasse häufiger als in der Kampagne angekündigt.",
+    "misunderstanding": "Die Formulierung „einmalig“ bezog sich auf eine Person, wurde aber als einmal pro Bestellung eingestellt.",
+    "email": {
+      "from": "Eva · Kundenservice",
+      "to": "Tobias · Kampagnenmanagement",
+      "sent": "Mittwoch, 09:40 Uhr",
+      "subject": "Kann der Code mehrfach genutzt werden?",
+      "body": "Hallo Tobias,\n\neine Kundin hat denselben Aktionscode bei zwei Bestellungen verwendet. Auf unserer Aktionsseite steht „einmalig 10 Euro Rabatt“. Sie fragt nun, ob die zweite Nutzung erlaubt ist oder ob wir einen Fehler bei ihr korrigieren müssen. Was war mit „einmalig“ gemeint, und wie sollen wir antworten?\n\nViele Grüße\nEva"
+    },
+    "document": {
+      "title": "Aktionsbriefing und Kassenkonfiguration",
+      "intro": "Die geplante Regel und die tatsächliche Einstellung stimmen nicht überein.",
+      "facts": [
+        {
+          "id": "DE2F1",
+          "time": "Briefing",
+          "text": "Der Rabatt von 10 Euro sollte pro Kundenkonto nur bei der ersten Bestellung mit dem Code gelten."
+        },
+        {
+          "id": "DE2F2",
+          "time": "Dienstag",
+          "text": "Tobias stellte den Code irrtümlich auf „einmal pro Bestellung“ und prüfte keine zweite Testbestellung mit demselben Konto."
+        },
+        {
+          "id": "DE2F3",
+          "time": "Mittwoch, 09:00 Uhr",
+          "text": "Die Kundin hat zwei Bestellungen abgeschlossen; beide erhielten den Rabatt automatisch. Es gibt noch keine Auswertung weiterer Mehrfachnutzungen."
+        },
+        {
+          "id": "DE2F4",
+          "time": "Stand jetzt",
+          "text": "Die Aktion läuft noch. Tobias kann die Einstellung für künftige Bestellungen berichtigen und mit dem Kundenservice eine einheitliche Antwort abstimmen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "gutschein-pro-bestellung-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Nutzung war geplant?",
+        "evidenceIds": [
+          "DE2F1",
+          "DE2F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Einmal für die gesamte Kundschaft zusammen.",
+            "feedback": "Es gab keinen gemeinsamen Einmal-Code für alle."
+          },
+          {
+            "id": "b",
+            "text": "Einmal pro Kundenkonto bei der ersten Bestellung.",
+            "feedback": "Das Briefing bezieht die Einmaligkeit auf das Kundenkonto."
+          },
+          {
+            "id": "c",
+            "text": "Einmal bei jeder Bestellung.",
+            "feedback": "Die Einstellung pro Bestellung war eine Abweichung vom Briefing."
+          }
+        ]
+      },
+      {
+        "id": "gutschein-pro-bestellung-scope",
+        "axis": "Scope",
+        "prompt": "Was ist bei dieser Kundin tatsächlich geschehen?",
+        "evidenceIds": [
+          "DE2F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beide Bestellungen erhielten automatisch 10 Euro Rabatt.",
+            "feedback": "Das Kassenprotokoll zeigt zwei abgeschlossene Bestellungen mit Rabatt."
+          },
+          {
+            "id": "b",
+            "text": "Nur die erste Bestellung erhielt den Rabatt.",
+            "feedback": "Die zweite Bestellung wurde ebenfalls rabattiert."
+          },
+          {
+            "id": "c",
+            "text": "Die zweite Bestellung wurde abgebrochen.",
+            "feedback": "Beide Bestellungen sind laut Protokoll abgeschlossen."
+          }
+        ]
+      },
+      {
+        "id": "gutschein-pro-bestellung-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Eva für ihre Antwort?",
+        "evidenceIds": [
+          "DE2F1",
+          "DE2F3",
+          "DE2F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die geplante Regel und den tatsächlichen Umgang mit dem bereits gewährten Rabatt.",
+            "feedback": "Die Frage der Kundin betrifft ihre zweite Bestellung und die Bedeutung von „einmalig“."
+          },
+          {
+            "id": "b",
+            "text": "Eine Behauptung über alle anderen Kundenkonten.",
+            "feedback": "Weitere Mehrfachnutzungen wurden noch nicht ausgewertet."
+          },
+          {
+            "id": "c",
+            "text": "Eine neue Werbegrafik für die Aktion.",
+            "feedback": "Ein Bild würde den konkreten Vorgang an der Kasse nicht klären."
+          }
+        ]
+      },
+      {
+        "id": "gutschein-pro-bestellung-purpose",
+        "axis": "Purpose",
+        "prompt": "Was sollte Tobias zuerst veranlassen?",
+        "evidenceIds": [
+          "DE2F2",
+          "DE2F3",
+          "DE2F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Behaupten, es habe keine zweite Nutzung gegeben.",
+            "feedback": "Zwei rabattierte Bestellungen sind ausdrücklich dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Der Kundin sofort einen technischen Fehler vorwerfen.",
+            "feedback": "Der Fehler entstand bei der Einstellung des Codes, nicht durch eine Manipulation der Kundin."
+          },
+          {
+            "id": "c",
+            "text": "Die Konfiguration für künftige Bestellungen prüfen und die Antwort zu bereits rabattierten Bestellungen abstimmen.",
+            "feedback": "Die Aktion läuft noch, und die Abweichung betrifft weitere mögliche Bestellungen."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Eva als Tobias. Erklären Sie die beabsichtigte und die tatsächliche Regel, übernehmen Sie die Verantwortung für die Einstellung und schlagen Sie eine abgestimmte Kundenantwort vor, ohne weitere Fälle zu erfinden.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die Regel pro Kundenkonto erklären",
+        "Die zwei gewährten Rabatte anerkennen",
+        "Den Einstellungsfehler übernehmen",
+        "Die laufende Aktion und die Kundenantwort koordinieren"
+      ]
+    },
+    "model": {
+      "subject": "AW: Kann der Code mehrfach genutzt werden?",
+      "body": "Hallo Eva,\n\nim Briefing bedeutete „einmalig“: zehn Euro Rabatt bei der ersten Bestellung pro Kundenkonto. Ich habe den Code jedoch versehentlich so eingestellt, dass er einmal pro Bestellung angewendet wird. Die Kundin hat deshalb bei beiden abgeschlossenen Bestellungen automatisch den Rabatt erhalten. Sie hat den Code nicht falsch benutzt; der Unterschied zwischen Ankündigung und Kasse liegt bei unserer Einstellung.\n\nIch prüfe die Konfiguration jetzt und korrigiere sie für künftige Bestellungen, sobald die Änderung getestet ist. Bitte warte mit einer Aussage zu einer nachträglichen Änderung ihrer beiden Bestellungen, bis wir gemeinsam mit dem Kundenservice festgelegt haben, wie wir bereits gewährte Rabatte behandeln. Derzeit wissen wir auch nicht, ob weitere Konten den Code mehrfach genutzt haben. Ich lasse die betreffenden Vorgänge auswerten und sende dir heute eine Formulierung, die den Fehler offen erklärt, ohne der Kundin eine Verantwortung zuzuschieben. Für die Aktionsseite sollten wir außerdem „einmal pro Kundenkonto“ schreiben, damit die Regel künftig eindeutig ist.\n\nViele Grüße\nTobias",
+      "annotations": [
+        {
+          "label": "Erklärt die Absicht",
+          "excerpt": "bei der ersten Bestellung pro Kundenkonto",
+          "evidenceIds": [
+            "DE2F1"
+          ]
+        },
+        {
+          "label": "Übernimmt den Fehler",
+          "excerpt": "Ich habe den Code jedoch versehentlich so eingestellt",
+          "evidenceIds": [
+            "DE2F2"
+          ]
+        },
+        {
+          "label": "Trennt bekannte Fälle",
+          "excerpt": "ob weitere Konten den Code mehrfach genutzt haben",
+          "evidenceIds": [
+            "DE2F3"
+          ]
+        },
+        {
+          "label": "Plant die Korrektur",
+          "excerpt": "korrigiere sie für künftige Bestellungen",
+          "evidenceIds": [
+            "DE2F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "kampagne-nur-bayern",
+    "title": "Eine Freigabe für Bayern, ein Entwurf für ganz Deutschland",
+    "area": "Marketing × Mediaplanung",
+    "areaLabel": "Marketing · Mediaplanung",
+    "role": "Saskia · Mediaplanung",
+    "teaser": "Die Geschäftsleitung sieht einen bundesweiten Anzeigenentwurf, obwohl nur eine regionale Aktion beschlossen wurde.",
+    "misunderstanding": "Eine bundesweite Standardzielgruppe im Werbekonto wurde als beschlossene Reichweite verstanden.",
+    "email": {
+      "from": "Robert · Geschäftsleitung",
+      "to": "Saskia · Mediaplanung",
+      "sent": "Donnerstag, 11:25 Uhr",
+      "subject": "Ist die Anzeige bundesweit geplant?",
+      "body": "Hallo Saskia,\n\nim Anzeigenkonto sehe ich „Deutschland“ als Zielgebiet. Im Gespräch am Dienstag hatten wir aber nur Bayern für den ersten Schritt vereinbart. Wurde der Plan geändert, oder läuft die Anzeige bereits überregional? Bitte kläre die Reichweite, bevor weitere Kosten entstehen.\n\nRobert"
+    },
+    "document": {
+      "title": "Freigabe und Entwurf im Werbekonto",
+      "intro": "Ein gespeicherter Entwurf ist noch keine aktive Anzeige.",
+      "facts": [
+        {
+          "id": "DE3F1",
+          "time": "Dienstag",
+          "text": "Robert gab ein Testbudget und Bayern als Zielgebiet für die erste Kampagnenwoche frei."
+        },
+        {
+          "id": "DE3F2",
+          "time": "Mittwoch",
+          "text": "Saskia kopierte einen alten Anzeigenentwurf. Dessen Standardzielgebiet war Deutschland; sie änderte es noch nicht auf Bayern."
+        },
+        {
+          "id": "DE3F3",
+          "time": "Donnerstag, 11:00 Uhr",
+          "text": "Der neue Entwurf ist gespeichert, aber pausiert. Für ihn wurden noch keine Anzeigen ausgeliefert und keine Kosten verbucht."
+        },
+        {
+          "id": "DE3F4",
+          "time": "Stand jetzt",
+          "text": "Saskia kann das Zielgebiet auf Bayern setzen und eine Vorschau zur Freigabe schicken, bevor sie die Anzeige aktiviert."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "kampagne-nur-bayern-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Region wurde freigegeben?",
+        "evidenceIds": [
+          "DE3F1",
+          "DE3F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bayern für die erste Kampagnenwoche.",
+            "feedback": "Das Protokoll nennt Bayern und eine Testwoche."
+          },
+          {
+            "id": "b",
+            "text": "Ganz Deutschland für den gesamten Monat.",
+            "feedback": "Deutschland stammt aus dem alten Entwurf, nicht aus der Entscheidung."
+          },
+          {
+            "id": "c",
+            "text": "Nur München für einen Tag.",
+            "feedback": "Das freigegebene Gebiet umfasst Bayern, nicht nur eine Stadt."
+          }
+        ]
+      },
+      {
+        "id": "kampagne-nur-bayern-scope",
+        "axis": "Scope",
+        "prompt": "Was zeigt „Deutschland“ im Werbekonto gerade an?",
+        "evidenceIds": [
+          "DE3F2",
+          "DE3F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine bereits bezahlte bundesweite Kampagne.",
+            "feedback": "Für diesen Entwurf wurden keine Auslieferungen oder Kosten erfasst."
+          },
+          {
+            "id": "b",
+            "text": "Die Einstellung eines pausierten Entwurfs.",
+            "feedback": "Der Entwurf ist gespeichert, aber noch nicht aktiv."
+          },
+          {
+            "id": "c",
+            "text": "Eine neue Entscheidung der Geschäftsleitung.",
+            "feedback": "Eine Planänderung ist nicht protokolliert."
+          }
+        ]
+      },
+      {
+        "id": "kampagne-nur-bayern-intent",
+        "axis": "Intent",
+        "prompt": "Welche Sorge hat Robert?",
+        "evidenceIds": [
+          "DE3F1",
+          "DE3F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Reichweite außerhalb der Freigabe und mögliche zusätzliche Kosten.",
+            "feedback": "Er fragt nach dem Zielgebiet und will Kosten vor einer Aktivierung vermeiden."
+          },
+          {
+            "id": "b",
+            "text": "Die Zahl der Besucher in München.",
+            "feedback": "Besucherzahlen liegen für den pausierten Entwurf nicht vor."
+          },
+          {
+            "id": "c",
+            "text": "Die Schreibweise des Anzeigentextes.",
+            "feedback": "Der Text der Anzeige wird in seiner Mail nicht beanstandet."
+          }
+        ]
+      },
+      {
+        "id": "kampagne-nur-bayern-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort führt weiter?",
+        "evidenceIds": [
+          "DE3F1",
+          "DE3F2",
+          "DE3F3",
+          "DE3F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Behaupten, die bundesweite Anzeige laufe bereits.",
+            "feedback": "Es gab weder Auslieferungen noch Kosten für diesen Entwurf."
+          },
+          {
+            "id": "b",
+            "text": "Die alte Voreinstellung erklären, Bayern einstellen und vor Aktivierung eine Vorschau schicken.",
+            "feedback": "Der Entwurf kann vor dem Start noch passend zur Freigabe eingestellt werden."
+          },
+          {
+            "id": "c",
+            "text": "Die Anzeige ohne Rücksprache für Deutschland starten.",
+            "feedback": "Ein bundesweiter Start würde die vereinbarte Region überschreiten."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Robert als Saskia. Trennen Sie den pausierten Entwurf von einer aktiven Kampagne, erklären Sie die alte Voreinstellung und bieten Sie eine überprüfbare Freigabe vor dem Start an.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Bayern als freigegebenes Gebiet nennen",
+        "Den pausierten Status belegen",
+        "Die Voreinstellung erklären",
+        "Eine Vorschau vor Aktivierung zusagen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist die Anzeige bundesweit geplant?",
+      "body": "Hallo Robert,\n\nwir haben am Dienstag Bayern als Zielgebiet für die erste Testwoche freigegeben. Die Einstellung „Deutschland“, die du jetzt im Werbekonto siehst, stammt aus einem älteren Entwurf, den ich als Vorlage kopiert habe. Ich habe das Gebiet im neuen Entwurf noch nicht angepasst. Das war unübersichtlich, und ich verstehe, warum es wie eine Planänderung aussieht.\n\nWichtig ist der aktuelle Status: Der neue Entwurf ist pausiert. Er wurde nicht ausgeliefert, und für ihn sind noch keine Kosten verbucht worden. Ich setze das Zielgebiet jetzt auf Bayern, kontrolliere Budget und Laufzeit noch einmal und schicke dir eine Vorschau mit den Einstellungen. Erst nach deiner Bestätigung werde ich die Anzeige aktivieren. Falls wir später weitere Regionen testen möchten, sollten wir dafür eine eigene Entscheidung festhalten, statt die Reichweite stillschweigend zu erweitern. Ich melde mich heute Nachmittag mit der korrigierten Vorschau, damit du alle Angaben vor dem Start prüfen kannst.\n\nViele Grüße\nSaskia",
+      "annotations": [
+        {
+          "label": "Nennt die Freigabe",
+          "excerpt": "Bayern als Zielgebiet für die erste Testwoche",
+          "evidenceIds": [
+            "DE3F1"
+          ]
+        },
+        {
+          "label": "Erklärt die Voreinstellung",
+          "excerpt": "stammt aus einem älteren Entwurf",
+          "evidenceIds": [
+            "DE3F2"
+          ]
+        },
+        {
+          "label": "Begrenzt den Status",
+          "excerpt": "Der neue Entwurf ist pausiert",
+          "evidenceIds": [
+            "DE3F3"
+          ]
+        },
+        {
+          "label": "Sichert die Freigabe",
+          "excerpt": "Erst nach deiner Bestätigung",
+          "evidenceIds": [
+            "DE3F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ab-sofort-bestellbar",
+    "title": "Ab sofort bestellbar, erst Montag abholbar",
+    "area": "Marketing × Filialen",
+    "areaLabel": "Marketing · Filialkommunikation",
+    "role": "Leon · Kampagnentexte",
+    "teaser": "Ein Aushang weckt die Erwartung, ein neues Gerät noch heute mitnehmen zu können.",
+    "misunderstanding": "„Ab sofort erhältlich“ wurde als sofortige Abholung verstanden, obwohl nur die Bestellung startet.",
+    "email": {
+      "from": "Katrin · Filialleitung",
+      "to": "Leon · Marketing",
+      "sent": "Freitag, 12:10 Uhr",
+      "subject": "Was bedeutet „ab sofort erhältlich“?",
+      "body": "Hallo Leon,\n\nSeit heute hängt unser Plakat mit „ab sofort erhältlich“. Drei Kunden wollten das neue Gerät gleich mitnehmen, aber wir bekommen die Ware erst am Montag. Können wir den Text bitte klären? Mein Team braucht eine einheitliche Antwort, bevor am Nachmittag noch mehr Leute kommen.\n\nKatrin"
+    },
+    "document": {
+      "title": "Produktstart und Filialaushang",
+      "intro": "Der Start der Bestellmöglichkeit und die Abholung fallen auf verschiedene Tage.",
+      "facts": [
+        {
+          "id": "DE4F1",
+          "time": "Startplan",
+          "text": "Online-Bestellungen und Reservierungen in den Filialen sind ab Freitag möglich."
+        },
+        {
+          "id": "DE4F2",
+          "time": "Lieferplan",
+          "text": "Die Geräte für die Filialabholung kommen am Montag an. Vorher ist keine Mitnahme vor Ort vorgesehen."
+        },
+        {
+          "id": "DE4F3",
+          "time": "Donnerstag",
+          "text": "Leon schrieb für das Plakat „ab sofort erhältlich“, ohne die spätere Abholung zu nennen."
+        },
+        {
+          "id": "DE4F4",
+          "time": "Freitag, 11:30 Uhr",
+          "text": "Drei Kunden fragten nach sofortiger Mitnahme. Wie viele weitere das Plakat gesehen haben, ist nicht bekannt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "ab-sofort-bestellbar-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist seit Freitag möglich?",
+        "evidenceIds": [
+          "DE4F1",
+          "DE4F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Gerät sofort in jeder Filiale mitnehmen.",
+            "feedback": "Die Filialware kommt erst Montag an."
+          },
+          {
+            "id": "b",
+            "text": "Bestellen oder in der Filiale reservieren.",
+            "feedback": "Der Startplan nennt Bestellung und Reservierung ab Freitag."
+          },
+          {
+            "id": "c",
+            "text": "Eine bereits gekaufte Ware am Donnerstag abholen.",
+            "feedback": "Der Donnerstag liegt vor dem Bestellstart."
+          }
+        ]
+      },
+      {
+        "id": "ab-sofort-bestellbar-scope",
+        "axis": "Scope",
+        "prompt": "Warum führt der Aushang zu falschen Erwartungen?",
+        "evidenceIds": [
+          "DE4F2",
+          "DE4F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Er nennt sofortige Verfügbarkeit ohne den späteren Abholtermin.",
+            "feedback": "Der Wortlaut verschweigt, dass die Abholung erst Montag beginnen kann."
+          },
+          {
+            "id": "b",
+            "text": "Die Filiale hat den Text eigenständig geändert.",
+            "feedback": "Der Text wurde von Leon geschrieben."
+          },
+          {
+            "id": "c",
+            "text": "Er enthält eine falsche Modellnummer.",
+            "feedback": "Eine Modellnummer spielt im dokumentierten Missverständnis keine Rolle."
+          }
+        ]
+      },
+      {
+        "id": "ab-sofort-bestellbar-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Katrins Team heute?",
+        "evidenceIds": [
+          "DE4F2",
+          "DE4F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Zusage, dass alle Geräte heute eintreffen.",
+            "feedback": "Der Lieferplan sieht Montag vor."
+          },
+          {
+            "id": "b",
+            "text": "Eine präzise Erklärung für Kunden und einen korrigierten Aushang.",
+            "feedback": "Die Kunden fragen nach Mitnahme, und das Team benötigt vor dem Nachmittag klare Worte."
+          },
+          {
+            "id": "c",
+            "text": "Eine Liste aller Personen, die das Plakat gesehen haben.",
+            "feedback": "Die Zahl aller Betrachter ist nicht bekannt und für die Auskunft nicht nötig."
+          }
+        ]
+      },
+      {
+        "id": "ab-sofort-bestellbar-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Korrektur ist sachlich richtig?",
+        "evidenceIds": [
+          "DE4F1",
+          "DE4F2",
+          "DE4F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "„Heute sofort mitnehmen“ auf dem Plakat belassen.",
+            "feedback": "Vor Montag ist keine Mitnahme vorgesehen."
+          },
+          {
+            "id": "b",
+            "text": "„Ab sofort reservieren, Abholung ab Montag“ nach Prüfung der Filialdetails.",
+            "feedback": "Die Formulierung trennt den Bestellstart von der Abholung."
+          },
+          {
+            "id": "c",
+            "text": "Behaupten, nur drei Kunden hätten das Plakat gesehen.",
+            "feedback": "Drei Nachfragen sind bekannt, nicht die gesamte Reichweite des Plakats."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Katrin als Leon. Erklären Sie die beiden Termine, übernehmen Sie die Verantwortung für die ungenaue Formulierung und schlagen Sie einen korrigierten Aushang sowie eine sofort nutzbare Antwort für das Team vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Bestellstart und Abholung unterscheiden",
+        "Die missverständliche Formulierung anerkennen",
+        "Eine konkrete Ersatzformulierung anbieten",
+        "Keine unbekannte Reichweite behaupten"
+      ]
+    },
+    "model": {
+      "subject": "AW: Was bedeutet „ab sofort erhältlich“?",
+      "body": "Hallo Katrin,\n\ndu hast recht: „ab sofort erhältlich“ legt nahe, dass die Kunden das Gerät heute mitnehmen können. Tatsächlich können sie es seit Freitag bestellen oder in der Filiale reservieren; die Geräte für die Abholung treffen erst am Montag ein. Ich habe diesen Unterschied auf dem Plakat nicht genannt. Das war ungenau, und es tut mir leid, dass dein Team die enttäuschten Kunden nun auffangen muss.\n\nAls sofortige Auskunft schlage ich vor: „Sie können das Gerät heute reservieren. Die Abholung in der Filiale ist voraussichtlich ab Montag möglich.“ Ich prüfe den Montagstermin noch einmal mit der Warenplanung und sende dir danach eine druckfertige Fassung für den Aushang. Bitte nehmt den bisherigen Text bis dahin ab oder ergänzt einen klaren Hinweis direkt daneben. Wir kennen bisher drei Nachfragen, aber nicht die gesamte Zahl der Personen, die das Plakat gesehen haben. Deshalb würde ich die Korrektur sichtbar vor Ort anbringen, statt die Wirkung zu kleinzureden.\n\nViele Grüße\nLeon",
+      "annotations": [
+        {
+          "label": "Trennt die Termine",
+          "excerpt": "seit Freitag bestellen oder in der Filiale reservieren",
+          "evidenceIds": [
+            "DE4F1"
+          ]
+        },
+        {
+          "label": "Übernimmt den Textfehler",
+          "excerpt": "Ich habe diesen Unterschied auf dem Plakat nicht genannt",
+          "evidenceIds": [
+            "DE4F3"
+          ]
+        },
+        {
+          "label": "Sichert den Abholtermin",
+          "excerpt": "prüfe den Montagstermin noch einmal",
+          "evidenceIds": [
+            "DE4F2"
+          ]
+        },
+        {
+          "label": "Begrenzt die Reichweite",
+          "excerpt": "nicht die gesamte Zahl der Personen",
+          "evidenceIds": [
+            "DE4F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "csv-komma-punkt",
+    "title": "Die Zahl im Export sieht hundertmal zu groß aus",
+    "area": "Software × Datenexport",
+    "areaLabel": "Software · Datenexport",
+    "role": "Nora · Datenprodukt",
+    "teaser": "Ein importierter Bericht zeigt andere Beträge als die Anwendung.",
+    "misunderstanding": "Das Dezimalkomma der CSV wurde beim Import als Trennzeichen statt als Zahlzeichen gelesen.",
+    "email": {
+      "from": "Felix · Controlling",
+      "to": "Nora · Datenprodukt",
+      "sent": "Montag, 09:35 Uhr",
+      "subject": "Stimmen die Beträge im Export?",
+      "body": "Hallo Nora,\n\nich habe den Monatsbericht als CSV geöffnet. In meinem Tabellenprogramm steht bei einem Vorgang 1.250, statt 12,50 Euro wie in der Anwendung. Ich fürchte, der Export rechnet falsch. Kannst du prüfen, ob die gespeicherten Beträge stimmen und wie ich den Bericht für die Sitzung um 14 Uhr zuverlässig öffnen kann?\n\nViele Grüße\nFelix"
+    },
+    "document": {
+      "title": "Exportformat und Vergleichsprotokoll",
+      "intro": "Die Werte in der Anwendung und die importierte Darstellung wurden getrennt geprüft.",
+      "facts": [
+        {
+          "id": "DE5F1",
+          "time": "Anwendung",
+          "text": "Der betreffende Vorgang ist mit 12,50 Euro gespeichert. Die Summe der Monatsdaten in der Anwendung wurde geprüft und blieb unverändert."
+        },
+        {
+          "id": "DE5F2",
+          "time": "CSV-Datei",
+          "text": "Der Rohtext des Exports enthält für diesen Vorgang „12,50“; die Datei benutzt ein Semikolon zwischen Spalten."
+        },
+        {
+          "id": "DE5F3",
+          "time": "Import bei Felix",
+          "text": "Felix’ Tabellenprogramm behandelte das Komma beim automatischen Import als Tausendertrennzeichen statt als Dezimalzeichen. Dadurch erschien aus „12,50“ die Zahl „1250“."
+        },
+        {
+          "id": "DE5F4",
+          "time": "Stand jetzt",
+          "text": "Nora kann Felix die passende Import-Einstellung zeigen. Andere Tabellenprogramme wurden noch nicht geprüft."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "csv-komma-punkt-evidence",
+        "axis": "Evidence",
+        "prompt": "Welcher Betrag ist im System gespeichert?",
+        "evidenceIds": [
+          "DE5F1",
+          "DE5F2",
+          "DE5F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "125 Euro.",
+            "feedback": "Ein Betrag von 125 ist nirgends belegt."
+          },
+          {
+            "id": "b",
+            "text": "12,50 Euro.",
+            "feedback": "Der Anwendungsdatensatz und die CSV-Rohzeile zeigen 12,50."
+          },
+          {
+            "id": "c",
+            "text": "1.250 Euro.",
+            "feedback": "1.250 entsteht erst bei Felix’ Import."
+          }
+        ]
+      },
+      {
+        "id": "csv-komma-punkt-scope",
+        "axis": "Scope",
+        "prompt": "Wo entsteht die veränderte Anzeige?",
+        "evidenceIds": [
+          "DE5F1",
+          "DE5F2",
+          "DE5F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bei einer Neuberechnung in der Anwendung.",
+            "feedback": "Die geprüfte Monatssumme in der Anwendung blieb gleich; die Abweichung erscheint erst in Felix’ Datei."
+          },
+          {
+            "id": "b",
+            "text": "Beim Schreiben des CSV-Rohtexts als 1250.",
+            "feedback": "Der CSV-Rohtext enthält ausdrücklich „12,50“ und nicht „1250“."
+          },
+          {
+            "id": "c",
+            "text": "Beim Import mit falsch eingestelltem Dezimalzeichen.",
+            "feedback": "Das Programm interpretiert das Komma als Tausendertrennzeichen und entfernt es aus der Zahl."
+          }
+        ]
+      },
+      {
+        "id": "csv-komma-punkt-intent",
+        "axis": "Intent",
+        "prompt": "Was benötigt Felix vor 14 Uhr?",
+        "evidenceIds": [
+          "DE5F3",
+          "DE5F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Zusage, dass jedes Tabellenprogramm gleich reagiert.",
+            "feedback": "Andere Programme wurden noch nicht geprüft."
+          },
+          {
+            "id": "b",
+            "text": "Eine verlässliche Importmethode und einen Abgleich für seinen Bericht.",
+            "feedback": "Er muss den Bericht für die Sitzung korrekt öffnen können."
+          },
+          {
+            "id": "c",
+            "text": "Eine neue Monatsbuchung.",
+            "feedback": "Der gespeicherte Vorgang selbst muss nicht neu gebucht werden."
+          }
+        ]
+      },
+      {
+        "id": "csv-komma-punkt-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Hilfe ist angemessen?",
+        "evidenceIds": [
+          "DE5F1",
+          "DE5F2",
+          "DE5F3",
+          "DE5F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Behaupten, alle Exporte seien fehlerfrei.",
+            "feedback": "Nur dieser konkrete Export und Import wurden verglichen."
+          },
+          {
+            "id": "b",
+            "text": "Den Import mit Semikolon als Spaltentrenner testen und den Betrag gegen die Anwendung prüfen.",
+            "feedback": "Damit lässt sich die konkrete Anzeige kontrolliert korrigieren."
+          },
+          {
+            "id": "c",
+            "text": "Den gespeicherten Betrag auf 1.250 Euro ändern.",
+            "feedback": "Die Speicherung zeigt 12,50 Euro und darf nicht an eine falsche Darstellung angepasst werden."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Felix als Nora. Erklären Sie den Unterschied zwischen gespeichertem Wert, CSV-Rohtext und Importanzeige; schlagen Sie einen Test vor der Sitzung vor, ohne alle Exportwege pauschal zu bewerten.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Den gespeicherten Betrag nennen",
+        "Das Zahlenformat beim Import erklären",
+        "Eine konkrete Importprüfung anbieten",
+        "Keine pauschale Zusage für andere Programme machen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Stimmen die Beträge im Export?",
+      "body": "Hallo Felix,\n\nich habe den betroffenen Vorgang mit der Exportdatei verglichen. In der Anwendung sind 12,50 Euro gespeichert, und genau „12,50“ steht auch im Rohtext der CSV. Die Datei trennt ihre Spalten mit Semikolons. Dein Tabellenprogramm hat das Komma beim automatischen Import als Tausendertrennzeichen statt als Dezimalzeichen behandelt. So wurde aus „12,50“ die Anzeige „1250“. Für diesen Vorgang spricht also nichts für eine falsche Berechnung im System.\n\nLass uns den Bericht gemeinsam über die Importfunktion öffnen und dabei Semikolon als Spaltentrenner und Komma als Dezimalzeichen auswählen. Anschließend vergleichen wir einige Beträge und die Monatssumme mit der Anwendung, bevor du die Datei in der Sitzung verwendest. Ich kann heute vor 11 Uhr bei dir vorbeikommen oder den Ablauf per Bildschirmfreigabe zeigen. Andere Tabellenprogramme haben wir noch nicht geprüft; deshalb möchte ich nur die getestete Einstellung für deinen Bericht empfehlen und die Anleitung danach sauber dokumentieren.\n\nViele Grüße\nNora",
+      "annotations": [
+        {
+          "label": "Nennt den Originalwert",
+          "excerpt": "12,50 Euro gespeichert",
+          "evidenceIds": [
+            "DE5F1"
+          ]
+        },
+        {
+          "label": "Erklärt den Rohtext",
+          "excerpt": "„12,50“ steht auch im Rohtext der CSV",
+          "evidenceIds": [
+            "DE5F2"
+          ]
+        },
+        {
+          "label": "Findet den Darstellungsfehler",
+          "excerpt": "als Tausendertrennzeichen statt als Dezimalzeichen behandelt",
+          "evidenceIds": [
+            "DE5F3"
+          ]
+        },
+        {
+          "label": "Begrenzt die Aussage",
+          "excerpt": "Andere Tabellenprogramme haben wir noch nicht geprüft",
+          "evidenceIds": [
+            "DE5F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "passwort-neu-konto-gesperrt",
+    "title": "Neues Passwort, weiterhin gesperrt",
+    "area": "Software × Kontozugang",
+    "areaLabel": "Software · Kontozugang",
+    "role": "Lukas · technische Betreuung",
+    "teaser": "Eine Kollegin hat ihr Passwort geändert und kommt trotzdem nicht ins System.",
+    "misunderstanding": "Das Zurücksetzen des Passworts wurde mit dem Ende einer zeitlich begrenzten Kontosperre gleichgesetzt.",
+    "email": {
+      "from": "Rike · Teamkoordination",
+      "to": "Lukas · technische Betreuung",
+      "sent": "Dienstag, 11:45 Uhr",
+      "subject": "Warum funktioniert der neue Zugang nicht?",
+      "body": "Hallo Lukas,\n\nMara hat heute ihr Passwort neu gesetzt und erhält trotzdem „Konto vorübergehend gesperrt“. Sie glaubt, dass die Zurücksetzung fehlgeschlagen ist, und versucht es immer wieder. Wir benötigen den Zugang für eine Besprechung um 15 Uhr. Was ist im System zu sehen, und was soll ich ihr jetzt sagen?\n\nRike"
+    },
+    "document": {
+      "title": "Zugangsprotokoll und Sperrregel",
+      "intro": "Passwortänderung und automatische Sperre werden getrennt verwaltet.",
+      "facts": [
+        {
+          "id": "DE6F1",
+          "time": "Dienstag, 10:05 Uhr",
+          "text": "Nach fünf fehlgeschlagenen Anmeldungen wurde Maras Konto bis 14 Uhr automatisch gesperrt."
+        },
+        {
+          "id": "DE6F2",
+          "time": "Dienstag, 11:10 Uhr",
+          "text": "Mara schloss die Passwortzurücksetzung erfolgreich ab. Die Bestätigung steht im Protokoll."
+        },
+        {
+          "id": "DE6F3",
+          "time": "Systemregel",
+          "text": "Eine erfolgreiche Passwortänderung hebt eine bereits laufende automatische Sperre nicht auf. Weitere Versuche verlängern sie nach dieser Regel nicht."
+        },
+        {
+          "id": "DE6F4",
+          "time": "Stand jetzt",
+          "text": "Die Sperre endet laut Protokoll um 14 Uhr. Lukas kann Maras Zugang danach mit ihr testen; eine manuelle Freischaltung ist noch nicht beantragt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "passwort-neu-konto-gesperrt-evidence",
+        "axis": "Evidence",
+        "prompt": "Was ist über das neue Passwort bekannt?",
+        "evidenceIds": [
+          "DE6F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Zurücksetzung wurde erfolgreich abgeschlossen.",
+            "feedback": "Das Protokoll bestätigt den Abschluss um 11:10 Uhr."
+          },
+          {
+            "id": "b",
+            "text": "Die Zurücksetzung wurde vom System abgebrochen.",
+            "feedback": "Ein Fehler der Zurücksetzung ist nicht dokumentiert."
+          },
+          {
+            "id": "c",
+            "text": "Das neue Passwort wurde nie gewählt.",
+            "feedback": "Mara hat den Vorgang laut Protokoll abgeschlossen."
+          }
+        ]
+      },
+      {
+        "id": "passwort-neu-konto-gesperrt-scope",
+        "axis": "Scope",
+        "prompt": "Warum bleibt die Meldung zur Sperre sichtbar?",
+        "evidenceIds": [
+          "DE6F1",
+          "DE6F3",
+          "DE6F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die automatische Sperre läuft unabhängig von der Passwortänderung bis 14 Uhr.",
+            "feedback": "Die Sperrregel trennt beide Vorgänge voneinander."
+          },
+          {
+            "id": "b",
+            "text": "Das neue Passwort ist sicher falsch.",
+            "feedback": "Aus der Sperrmeldung lässt sich kein Fehler des neuen Passworts ableiten."
+          },
+          {
+            "id": "c",
+            "text": "Die Besprechung wurde verschoben.",
+            "feedback": "Zur Besprechungszeit gibt es keine Änderung im Protokoll."
+          }
+        ]
+      },
+      {
+        "id": "passwort-neu-konto-gesperrt-intent",
+        "axis": "Intent",
+        "prompt": "Welche Information braucht Rike?",
+        "evidenceIds": [
+          "DE6F1",
+          "DE6F2",
+          "DE6F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ob die Änderung gelang und wann ein Zugangstest sinnvoll ist.",
+            "feedback": "Ihre Mail fragt nach dem Status für die Besprechung um 15 Uhr."
+          },
+          {
+            "id": "b",
+            "text": "Eine Zusage, dass alle Konten betroffen sind.",
+            "feedback": "Der Vorgang betrifft bisher nur Maras Konto."
+          },
+          {
+            "id": "c",
+            "text": "Eine Liste von Maras früheren Passwörtern.",
+            "feedback": "Frühere Passwörter sind für den dokumentierten Sperrzeitraum nicht nötig."
+          }
+        ]
+      },
+      {
+        "id": "passwort-neu-konto-gesperrt-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Hilfe ist angemessen?",
+        "evidenceIds": [
+          "DE6F2",
+          "DE6F3",
+          "DE6F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mara bitten, ohne Pause weitere Passwörter auszuprobieren.",
+            "feedback": "Weitere Versuche lösen die bestehende Sperre nicht; sie klären das Problem vorher nicht."
+          },
+          {
+            "id": "b",
+            "text": "Die erfolgreiche Zurücksetzung als fehlgeschlagen bezeichnen.",
+            "feedback": "Der Abschluss der Zurücksetzung ist bereits protokolliert."
+          },
+          {
+            "id": "c",
+            "text": "Den Sperrzeitpunkt erklären und nach 14 Uhr einen gemeinsamen Test anbieten.",
+            "feedback": "Ein Test nach Ende der Sperre prüft den Zugang ohne falsche Diagnose."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Rike als Lukas. Trennen Sie die erfolgreiche Passwortänderung von der laufenden Sperre, geben Sie den belegten Zeitpunkt an und schlagen Sie einen Zugangstest vor der Besprechung vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die erfolgreiche Zurücksetzung nennen",
+        "Die Sperre bis 14 Uhr erklären",
+        "Keine falsche Fehlerdiagnose stellen",
+        "Einen Test nach Sperrende anbieten"
+      ]
+    },
+    "model": {
+      "subject": "AW: Warum funktioniert der neue Zugang nicht?",
+      "body": "Hallo Rike,\n\nich habe Maras Vorgang geprüft. Die Passwortzurücksetzung wurde um 11:10 Uhr erfolgreich abgeschlossen. Die Meldung stammt von einer anderen Funktion: Nach fünf fehlgeschlagenen Anmeldungen wurde das Konto schon um 10:05 Uhr automatisch bis 14 Uhr gesperrt. Nach unserer Systemregel beendet eine Passwortänderung diese laufende Sperre nicht. Die Meldung beweist deshalb nicht, dass das neue Passwort falsch ist.\n\nBitte sag Mara, dass sie die Zurücksetzung nicht noch einmal durchführen muss. Sie kann nach 14 Uhr einen neuen Anmeldeversuch machen; ich bin dann erreichbar und teste den Zugang gern gemeinsam mit ihr. Damit bleibt vor der Besprechung um 15 Uhr Zeit, falls wir doch noch etwas prüfen müssen. Eine manuelle Freischaltung ist bisher nicht beantragt, und ich würde sie nicht ohne Rücksprache auslösen. Ich werde außerdem die Hilfe zur Passwortänderung um einen Hinweis auf getrennte Sperrzeiten ergänzen, damit diese Situation für andere Nutzer klarer ist.\n\nViele Grüße\nLukas",
+      "annotations": [
+        {
+          "label": "Bestätigt die Änderung",
+          "excerpt": "um 11:10 Uhr erfolgreich abgeschlossen",
+          "evidenceIds": [
+            "DE6F2"
+          ]
+        },
+        {
+          "label": "Erklärt die Sperre",
+          "excerpt": "automatisch bis 14 Uhr gesperrt",
+          "evidenceIds": [
+            "DE6F1"
+          ]
+        },
+        {
+          "label": "Vermeidet eine falsche Diagnose",
+          "excerpt": "beweist deshalb nicht, dass das neue Passwort falsch ist",
+          "evidenceIds": [
+            "DE6F3"
+          ]
+        },
+        {
+          "label": "Bietet einen Test",
+          "excerpt": "nach 14 Uhr einen neuen Anmeldeversuch",
+          "evidenceIds": [
+            "DE6F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "konfliktkopie-bericht",
+    "title": "Zwei Dateien statt eines verlorenen Berichts",
+    "area": "Software × Zusammenarbeit",
+    "areaLabel": "Software · Zusammenarbeit",
+    "role": "Elena · IT-Koordination",
+    "teaser": "Nach gemeinsamer Bearbeitung gibt es plötzlich zwei Fassungen eines wichtigen Berichts.",
+    "misunderstanding": "Eine automatisch erzeugte Konfliktkopie wurde als Überschreiben oder Löschen der ursprünglichen Arbeit verstanden.",
+    "email": {
+      "from": "Jan · Projektleitung",
+      "to": "Elena · IT-Koordination",
+      "sent": "Mittwoch, 10:20 Uhr",
+      "subject": "Ist unser Bericht überschrieben worden?",
+      "body": "Hallo Elena,\n\nim gemeinsamen Ordner liegen jetzt „Bericht“ und „Bericht – Konfliktkopie“. Zwei Kolleginnen haben gestern parallel daran gearbeitet. Ich fürchte, eine Fassung hat die andere überschrieben. Morgen müssen wir die finale Version versenden. Kannst du prüfen, ob Inhalte fehlen und wie wir zu einer verlässlichen Datei kommen?\n\nJan"
+    },
+    "document": {
+      "title": "Synchronisationsprotokoll des gemeinsamen Ordners",
+      "intro": "Das System bewahrte beide Bearbeitungen als getrennte Dateien auf.",
+      "facts": [
+        {
+          "id": "DE7F1",
+          "time": "Dienstag, 16:00 Uhr",
+          "text": "Anna und Beate öffneten dieselbe Ausgangsversion des Berichts auf zwei Geräten."
+        },
+        {
+          "id": "DE7F2",
+          "time": "Dienstag, 17:15 Uhr",
+          "text": "Beide Geräte speicherten Änderungen, bevor die jeweils andere Fassung synchronisiert war."
+        },
+        {
+          "id": "DE7F3",
+          "time": "Dienstag, 17:16 Uhr",
+          "text": "Das System behielt „Bericht“ und legte zusätzlich „Bericht – Konfliktkopie“ an. Beide Dateien sind weiterhin vorhanden."
+        },
+        {
+          "id": "DE7F4",
+          "time": "Stand jetzt",
+          "text": "Elena hat die inhaltlichen Unterschiede noch nicht verglichen. Welche Abschnitte in die finale Fassung gehören, muss Jan mit Anna und Beate entscheiden."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "konfliktkopie-bericht-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Dateien sind nach dem Konflikt vorhanden?",
+        "evidenceIds": [
+          "DE7F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die ursprüngliche Datei und eine zusätzliche Konfliktkopie.",
+            "feedback": "Das Protokoll nennt zwei weiter vorhandene Dateien."
+          },
+          {
+            "id": "b",
+            "text": "Nur die Datei von Anna.",
+            "feedback": "Die zweite Datei ist ausdrücklich im Ordner sichtbar."
+          },
+          {
+            "id": "c",
+            "text": "Keine der beiden Bearbeitungen.",
+            "feedback": "Der Synchronisationsdienst hat beide Fassungen behalten."
+          }
+        ]
+      },
+      {
+        "id": "konfliktkopie-bericht-scope",
+        "axis": "Scope",
+        "prompt": "Was hat die zweite Datei ausgelöst?",
+        "evidenceIds": [
+          "DE7F1",
+          "DE7F2",
+          "DE7F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein automatischer Versand an den Kunden.",
+            "feedback": "Die Dateien liegen im Ordner; ein Versand ist nicht dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Eine absichtliche Löschung durch Jan.",
+            "feedback": "Im Protokoll erscheint keine Löschung durch Jan."
+          },
+          {
+            "id": "c",
+            "text": "Zwei parallele Änderungen vor der gegenseitigen Synchronisation.",
+            "feedback": "Beide Geräte speicherten auf derselben Ausgangsbasis."
+          }
+        ]
+      },
+      {
+        "id": "konfliktkopie-bericht-intent",
+        "axis": "Intent",
+        "prompt": "Was ist noch nicht geklärt?",
+        "evidenceIds": [
+          "DE7F3",
+          "DE7F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Welche inhaltlichen Änderungen in die finale Fassung gehören.",
+            "feedback": "Elena hat die Unterschiede noch nicht geprüft; Jan muss über Inhalte entscheiden."
+          },
+          {
+            "id": "b",
+            "text": "Ob überhaupt zwei Dateien existieren.",
+            "feedback": "Zwei Dateinamen sind im Protokoll belegt."
+          },
+          {
+            "id": "c",
+            "text": "Ob morgen ein Versand geplant ist.",
+            "feedback": "Jan erwähnt den Termin selbst in seiner Mail."
+          }
+        ]
+      },
+      {
+        "id": "konfliktkopie-bericht-purpose",
+        "axis": "Purpose",
+        "prompt": "Welches Vorgehen hilft vor dem Versand?",
+        "evidenceIds": [
+          "DE7F3",
+          "DE7F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Konfliktkopie sofort löschen.",
+            "feedback": "Ohne Vergleich könnten Änderungen aus der Kopie verloren gehen."
+          },
+          {
+            "id": "b",
+            "text": "Behaupten, beide Dateien seien inhaltlich gleich.",
+            "feedback": "Die inhaltlichen Unterschiede sind noch unbekannt."
+          },
+          {
+            "id": "c",
+            "text": "Beide Fassungen vergleichen und die finale Auswahl mit den Bearbeiterinnen abstimmen.",
+            "feedback": "Das bewahrt Änderungen und klärt, was in den Versand gehört."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Jan als Elena. Erklären Sie die Konfliktkopie, grenzen Sie die bekannten technischen Fakten von den noch ungeprüften Inhalten ab und schlagen Sie einen gemeinsamen Abgleich vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Beide Dateien als vorhanden benennen",
+        "Die parallele Bearbeitung erklären",
+        "Nicht behaupten, dass kein Inhalt fehlt",
+        "Einen Abgleich vor Versand planen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist unser Bericht überschrieben worden?",
+      "body": "Hallo Jan,\n\ndas Synchronisationsprotokoll zeigt, dass Anna und Beate gestern von derselben Ausgangsversion aus gleichzeitig gearbeitet haben. Weil beide Fassungen gespeichert wurden, bevor die Änderungen der anderen sichtbar waren, hat das System zusätzlich die Datei „Bericht – Konfliktkopie“ angelegt. Die ursprüngliche Datei und die Kopie sind weiterhin vorhanden; nach dem Protokoll wurde keine von beiden gelöscht.\n\nIch kann aber noch nicht sagen, ob der Inhalt der einen Fassung bereits alle gewünschten Änderungen enthält. Ich vergleiche heute die beiden Dateien Abschnitt für Abschnitt und markiere die Unterschiede. Danach sollten Anna und Beate mit dir entscheiden, welche Formulierungen in die endgültige Fassung gehören. Bitte löscht die Konfliktkopie bis dahin nicht. Wenn wir den Abgleich heute abschließen, können wir morgen vor dem Versand noch eine gemeinsame Sichtprüfung machen. Ich schicke euch am Nachmittag eine Übersicht der Unterschiede, statt vorschnell eine der beiden Versionen als vollständig zu bezeichnen.\n\nViele Grüße\nElena",
+      "annotations": [
+        {
+          "label": "Erklärt die Entstehung",
+          "excerpt": "gleichzeitig gearbeitet haben",
+          "evidenceIds": [
+            "DE7F1",
+            "DE7F2"
+          ]
+        },
+        {
+          "label": "Sichert beide Dateien",
+          "excerpt": "sind weiterhin vorhanden",
+          "evidenceIds": [
+            "DE7F3"
+          ]
+        },
+        {
+          "label": "Bewahrt Ungewissheit",
+          "excerpt": "noch nicht sagen, ob der Inhalt",
+          "evidenceIds": [
+            "DE7F4"
+          ]
+        },
+        {
+          "label": "Plant den Abgleich",
+          "excerpt": "Abschnitt für Abschnitt",
+          "evidenceIds": [
+            "DE7F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "api-kontingent-gemeinsam",
+    "title": "Ein Schlüssel, ein gemeinsames Kontingent",
+    "area": "Software × Schnittstelle",
+    "areaLabel": "Software · Schnittstelle",
+    "role": "David · Schnittstellenbetreuung",
+    "teaser": "Ein Team glaubt, ein einzelner Zugangsschlüssel sei defekt, weil eine Anfrage abgewiesen wird.",
+    "misunderstanding": "Das Tageskontingent wurde als Grenze pro Person statt pro gemeinsamem Arbeitsbereich verstanden.",
+    "email": {
+      "from": "Nina · Partnerbetreuung",
+      "to": "David · Schnittstellenbetreuung",
+      "sent": "Donnerstag, 13:05 Uhr",
+      "subject": "Ist der Zugangsschlüssel von Atlas gesperrt?",
+      "body": "Hallo David,\n\nAtlas meldet, dass eine neue Anfrage über die Schnittstelle abgewiesen wurde. Die Kollegin dort hat heute erst wenige Anfragen gesendet und vermutet einen gesperrten Schlüssel. Kannst du prüfen, warum sie die Grenze erreicht haben soll, und mir eine Erklärung für das Gespräch um 16 Uhr geben?\n\nNina"
+    },
+    "document": {
+      "title": "Kontingentregel und Anfrageprotokoll",
+      "intro": "Die Begrenzung zählt alle Anfragen eines Arbeitsbereichs zusammen.",
+      "facts": [
+        {
+          "id": "DE8F1",
+          "time": "Vertragseinstellung",
+          "text": "Für den Arbeitsbereich Atlas sind 1.000 Anfragen pro Tag vorgesehen, gemeinsam für alle Zugangsschlüssel des Arbeitsbereichs."
+        },
+        {
+          "id": "DE8F2",
+          "time": "Donnerstag, 12:00 Uhr",
+          "text": "Ein automatischer Import von Atlas nutzte bereits 970 Anfragen."
+        },
+        {
+          "id": "DE8F3",
+          "time": "Donnerstag, 12:50 Uhr",
+          "text": "Weitere Teammitglieder sendeten 30 Anfragen. Danach wurde die nächste Anfrage mit „Tageskontingent erreicht“ abgewiesen."
+        },
+        {
+          "id": "DE8F4",
+          "time": "Stand jetzt",
+          "text": "Der betroffene Schlüssel ist aktiv. David kann das Team bei der Verteilung der Anfragen beraten; eine Erhöhung des Kontingents wurde nicht vereinbart."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "api-kontingent-gemeinsam-evidence",
+        "axis": "Evidence",
+        "prompt": "Wie viele Anfragen stehen Atlas täglich insgesamt zu?",
+        "evidenceIds": [
+          "DE8F1",
+          "DE8F2",
+          "DE8F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "30 für alle Schlüssel zusammen.",
+            "feedback": "Die 30 Anfragen waren nur der letzte Teil des Tagesverbrauchs."
+          },
+          {
+            "id": "b",
+            "text": "1.000 für den gesamten Arbeitsbereich.",
+            "feedback": "Die Regel zählt alle Schlüssel von Atlas gemeinsam."
+          },
+          {
+            "id": "c",
+            "text": "1.000 für jede Person einzeln.",
+            "feedback": "Eine persönliche Grenze ist nicht vereinbart."
+          }
+        ]
+      },
+      {
+        "id": "api-kontingent-gemeinsam-scope",
+        "axis": "Scope",
+        "prompt": "Warum wurde die neue Anfrage abgewiesen?",
+        "evidenceIds": [
+          "DE8F2",
+          "DE8F3",
+          "DE8F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Import und Team hatten zusammen das Tageskontingent verbraucht.",
+            "feedback": "970 und weitere 30 Anfragen füllten die gemeinsame Grenze."
+          },
+          {
+            "id": "b",
+            "text": "Der Schlüssel wurde gesperrt.",
+            "feedback": "Der Schlüssel bleibt laut Status aktiv."
+          },
+          {
+            "id": "c",
+            "text": "Die Kollegin hatte allein 1.000 Anfragen gesendet.",
+            "feedback": "Der Verbrauch verteilt sich auf Import und mehrere Personen."
+          }
+        ]
+      },
+      {
+        "id": "api-kontingent-gemeinsam-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Nina für das Gespräch?",
+        "evidenceIds": [
+          "DE8F1",
+          "DE8F3",
+          "DE8F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die privaten Passwörter aller Teammitglieder.",
+            "feedback": "Passwörter erklären die dokumentierte Kontingentmeldung nicht."
+          },
+          {
+            "id": "b",
+            "text": "Eine Behauptung über eine zugesagte höhere Grenze.",
+            "feedback": "Eine Erhöhung ist nicht vereinbart."
+          },
+          {
+            "id": "c",
+            "text": "Eine verständliche Erklärung der gemeinsamen Zählung und mögliche nächste Schritte.",
+            "feedback": "Ihre Mail fragt nach dem Grund der Ablehnung und einer Erklärung für Atlas."
+          }
+        ]
+      },
+      {
+        "id": "api-kontingent-gemeinsam-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Zusage sollte David vermeiden?",
+        "evidenceIds": [
+          "DE8F2",
+          "DE8F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass der Import 970 Anfragen nutzte.",
+            "feedback": "Der Importverbrauch steht im Protokoll."
+          },
+          {
+            "id": "b",
+            "text": "Dass Atlas ab sofort mehr als 1.000 Anfragen pro Tag nutzen darf.",
+            "feedback": "Für eine höhere Grenze gibt es noch keine Vereinbarung."
+          },
+          {
+            "id": "c",
+            "text": "Dass der Schlüssel aktiv ist.",
+            "feedback": "Der Schlüsselstatus ist geprüft."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Nina als David. Erklären Sie die gemeinsame Tagesgrenze mit den konkreten Zahlen, stellen Sie den aktiven Schlüssel klar und schlagen Sie eine Abstimmung über die Anfragen vor, ohne mehr Kontingent zu versprechen.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die Grenze pro Arbeitsbereich erklären",
+        "970 plus 30 korrekt einordnen",
+        "Den Schlüsselstatus nennen",
+        "Keine Erhöhung ohne Vereinbarung zusagen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist der Zugangsschlüssel von Atlas gesperrt?",
+      "body": "Hallo Nina,\n\nder Zugangsschlüssel der Kollegin ist nicht gesperrt. Atlas hat ein gemeinsames Tageskontingent von 1.000 Anfragen für den ganzen Arbeitsbereich, nicht 1.000 pro Person. Der automatische Import verbrauchte heute 970 Anfragen; anschließend kamen 30 Anfragen anderer Teammitglieder hinzu. Damit war die vereinbarte Grenze erreicht, bevor die nächste Anfrage der Kollegin einging. Ihre persönliche Nutzung kann niedrig sein, obwohl das gemeinsame Kontingent schon ausgeschöpft ist.\n\nFür dein Gespräch um 16 Uhr würde ich genau diese Unterscheidung erklären und nachfragen, ob sich der automatische Import zeitlich oder in kleineren Schritten planen lässt. Ich kann Atlas eine Übersicht des heutigen Verbrauchs bereitstellen, damit das Team die Spitzen besser erkennt. Eine höhere Tagesgrenze ist bisher nicht vereinbart; ich möchte sie deshalb nicht als sofortige Lösung versprechen. Falls Atlas dauerhaft mehr Anfragen benötigt, können wir den Bedarf aufnehmen und eine Entscheidung dazu vorbereiten. Ich sende dir die Verbrauchszahlen noch vor dem Gespräch.\n\nViele Grüße\nDavid",
+      "annotations": [
+        {
+          "label": "Korrigiert die Vermutung",
+          "excerpt": "nicht gesperrt",
+          "evidenceIds": [
+            "DE8F4"
+          ]
+        },
+        {
+          "label": "Erklärt die Reichweite",
+          "excerpt": "für den ganzen Arbeitsbereich",
+          "evidenceIds": [
+            "DE8F1"
+          ]
+        },
+        {
+          "label": "Rechnet die Nutzung vor",
+          "excerpt": "970 Anfragen; anschließend kamen 30",
+          "evidenceIds": [
+            "DE8F2",
+            "DE8F3"
+          ]
+        },
+        {
+          "label": "Vermeidet die Zusage",
+          "excerpt": "bisher nicht vereinbart",
+          "evidenceIds": [
+            "DE8F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "vertretung-keine-beforderung",
+    "title": "Vertretung auf dem Organigramm",
+    "area": "People × Teamstruktur",
+    "areaLabel": "Personal · Teamstruktur",
+    "role": "Friederike · Personalteam",
+    "teaser": "Ein befristeter Vertretungseintrag wird als dauerhafte Beförderung gelesen.",
+    "misunderstanding": "Die Darstellung einer vorübergehenden Teamvertretung im Organigramm wirkte wie eine dauerhafte Stellenentscheidung.",
+    "email": {
+      "from": "Markus · Bereichsleitung",
+      "to": "Friederike · Personalteam",
+      "sent": "Montag, 11:30 Uhr",
+      "subject": "Ist die Teamleitung schon besetzt?",
+      "body": "Hallo Friederike,\n\nmehrere Kolleginnen gratulieren Lara zur neuen Teamleitung. Im Organigramm steht ihr Name direkt unter „Teamleitung“. Wir hatten aber nur vereinbart, dass sie während Peters Abwesenheit die Abstimmung übernimmt. Gibt es eine dauerhafte Entscheidung, die ich verpasst habe, oder müssen wir den Eintrag klarstellen?\n\nMarkus"
+    },
+    "document": {
+      "title": "Vertretungsabsprache und Organigramm",
+      "intro": "Die Aufgabenübernahme hat ein festes Ende; die Darstellung zeigt es nicht.",
+      "facts": [
+        {
+          "id": "DE9F1",
+          "time": "Freitag",
+          "text": "Lara erklärte sich bereit, bis Ende des Monats die tägliche Teamabstimmung während Peters Abwesenheit zu übernehmen."
+        },
+        {
+          "id": "DE9F2",
+          "time": "Freitag",
+          "text": "Das Personalteam trug Lara im Organigramm unter „Teamleitung“ ein, ohne „Vertretung bis Monatsende“ zu ergänzen."
+        },
+        {
+          "id": "DE9F3",
+          "time": "Montag",
+          "text": "Drei Teammitglieder gratulierten Lara zu einer vermeintlichen Beförderung."
+        },
+        {
+          "id": "DE9F4",
+          "time": "Stand jetzt",
+          "text": "Es gibt keine Entscheidung über eine dauerhafte Besetzung der Teamleitung. Friederike kann den Eintrag korrigieren und die Aufgabenverteilung mit Markus abstimmen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "vertretung-keine-beforderung-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Aufgabe hat Lara übernommen?",
+        "evidenceIds": [
+          "DE9F1",
+          "DE9F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Teamleitung dauerhaft.",
+            "feedback": "Eine dauerhafte Besetzung wurde nicht entschieden."
+          },
+          {
+            "id": "b",
+            "text": "Peters gesamte Stelle ohne Befristung.",
+            "feedback": "Die Befristung endet mit dem vereinbarten Monat."
+          },
+          {
+            "id": "c",
+            "text": "Die tägliche Teamabstimmung bis Monatsende.",
+            "feedback": "Die Absprache beschränkt sich auf eine Vertretungsaufgabe."
+          }
+        ]
+      },
+      {
+        "id": "vertretung-keine-beforderung-scope",
+        "axis": "Scope",
+        "prompt": "Warum entstanden Glückwünsche zur Beförderung?",
+        "evidenceIds": [
+          "DE9F1",
+          "DE9F2",
+          "DE9F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lara hatte eine Beförderung angekündigt.",
+            "feedback": "Von Laras eigener Ankündigung steht nichts im Protokoll."
+          },
+          {
+            "id": "b",
+            "text": "Im Organigramm fehlte der Hinweis auf die befristete Vertretung.",
+            "feedback": "Der Eintrag zeigt den Titel ohne die zeitliche Einschränkung."
+          },
+          {
+            "id": "c",
+            "text": "Peter hatte die Stelle gekündigt.",
+            "feedback": "Die Absprache nennt nur Peters Abwesenheit."
+          }
+        ]
+      },
+      {
+        "id": "vertretung-keine-beforderung-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Markus klären?",
+        "evidenceIds": [
+          "DE9F3",
+          "DE9F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ob das Organigramm ganz abgeschafft wird.",
+            "feedback": "Eine Abschaffung des Organigramms ist nicht gefragt."
+          },
+          {
+            "id": "b",
+            "text": "Ob Lara die Gratulationen löschen kann.",
+            "feedback": "Gratulationen sind Folge des Missverständnisses, nicht die Entscheidung."
+          },
+          {
+            "id": "c",
+            "text": "Ob es eine dauerhafte Entscheidung gibt und wie das Team informiert werden soll.",
+            "feedback": "Seine Mail verbindet die falsche Annahme mit einer möglichen Klarstellung."
+          }
+        ]
+      },
+      {
+        "id": "vertretung-keine-beforderung-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort schützt Lara und das Team?",
+        "evidenceIds": [
+          "DE9F1",
+          "DE9F2",
+          "DE9F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Vertretung samt Ende benennen und den Eintrag nach Absprache präzisieren.",
+            "feedback": "So werden ihre tatsächlichen Aufgaben anerkannt, ohne eine Stellenentscheidung vorzutäuschen."
+          },
+          {
+            "id": "b",
+            "text": "Lara öffentlich für eine Beförderung feiern.",
+            "feedback": "Es gibt keine dauerhafte Ernennung."
+          },
+          {
+            "id": "c",
+            "text": "Den ungenauen Eintrag bis Monatsende unverändert lassen.",
+            "feedback": "Der Eintrag erzeugt bereits falsche Erwartungen im Team."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Markus als Friederike. Erklären Sie die befristete Rolle, erkennen Sie die missverständliche Darstellung an und schlagen Sie eine respektvolle Klarstellung mit Lara und Markus vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die Vertretung bis Monatsende nennen",
+        "Keine Beförderung behaupten",
+        "Den Organigramm-Eintrag erklären",
+        "Eine abgestimmte Klarstellung anbieten"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist die Teamleitung schon besetzt?",
+      "body": "Hallo Markus,\n\ndu hast keine dauerhafte Entscheidung verpasst. Lara hat zugesagt, während Peters Abwesenheit bis Ende des Monats die tägliche Teamabstimmung zu übernehmen. Eine dauerhafte Besetzung der Teamleitung wurde nicht beschlossen. Unser Eintrag im Organigramm nennt jedoch nur „Teamleitung“ und lässt die Vertretung und ihr Ende weg. Ich verstehe, warum das Team daraus eine Beförderung abgeleitet hat. Das hätten wir deutlicher kennzeichnen müssen.\n\nIch würde den Eintrag heute zu „Vertretung der Teamabstimmung bis Monatsende“ ändern. Vorher möchte ich die Formulierung kurz mit dir und Lara abstimmen, damit ihre Arbeit sichtbar bleibt und wir ihr keine Rolle zuschreiben, die nicht vereinbart wurde. Danach können wir dem Team in einer knappen Nachricht erklären, wer bis wann welche Abstimmung übernimmt. So nehmen wir die Glückwünsche ernst, ohne Lara in eine unangenehme Rechtfertigung zu drängen. Ich schicke euch gleich einen Vorschlag für den Eintrag und die Nachricht.\n\nViele Grüße\nFriederike",
+      "annotations": [
+        {
+          "label": "Bestätigt den Status",
+          "excerpt": "keine dauerhafte Entscheidung verpasst",
+          "evidenceIds": [
+            "DE9F4"
+          ]
+        },
+        {
+          "label": "Begrenzt die Aufgabe",
+          "excerpt": "bis Ende des Monats",
+          "evidenceIds": [
+            "DE9F1"
+          ]
+        },
+        {
+          "label": "Erkennt den Eintrag an",
+          "excerpt": "lässt die Vertretung und ihr Ende weg",
+          "evidenceIds": [
+            "DE9F2"
+          ]
+        },
+        {
+          "label": "Schützt die Person",
+          "excerpt": "mit dir und Lara abstimmen",
+          "evidenceIds": [
+            "DE9F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "mentoring-nicht-beurteilung",
+    "title": "Ein Mentor ist kein Beurteiler",
+    "area": "People × Mentoring",
+    "areaLabel": "Personal · Mentoring",
+    "role": "Helena · Personalentwicklung",
+    "teaser": "Eine Mitarbeiterin befürchtet, dass offene Fragen im Mentoring zu ihrer Leistungsakte werden.",
+    "misunderstanding": "Die Einladung „Entwicklungsgespräch“ ließ ein freiwilliges Mentoring wie ein Beurteilungsgespräch erscheinen.",
+    "email": {
+      "from": "Selin · neue Mitarbeiterin",
+      "to": "Helena · Personalentwicklung",
+      "sent": "Dienstag, 13:20 Uhr",
+      "subject": "Wer liest meine Notizen aus dem Mentoring?",
+      "body": "Hallo Helena,\n\nich habe eine Einladung zum „Entwicklungsgespräch“ mit meinem Mentor erhalten. Bevor ich offen über Schwierigkeiten spreche, möchte ich wissen, ob meine Notizen später an meine Führungskraft oder in die Leistungsbeurteilung gehen. Ich dachte, das Mentoring sei ein geschützter Austausch. Was ist tatsächlich vorgesehen?\n\nViele Grüße\nSelin"
+    },
+    "document": {
+      "title": "Mentoring-Ablauf und Einladungsvorlage",
+      "intro": "Das Programm trennt persönliche Mentoring-Inhalte von der regulären Leistungsbeurteilung.",
+      "facts": [
+        {
+          "id": "DE10F1",
+          "time": "Programm",
+          "text": "Das Mentoring ist freiwillig. Mentor und Teilnehmerin legen ihre Gesprächsnotizen selbst ab; die Personalentwicklung erhält nur die Information, ob Treffen stattgefunden haben."
+        },
+        {
+          "id": "DE10F2",
+          "time": "Bericht an Führungskräfte",
+          "text": "Die Führungskraft erhält aus dem Mentoring keine Gesprächsnotizen und keine Bewertung. Die reguläre Leistungsbeurteilung läuft getrennt."
+        },
+        {
+          "id": "DE10F3",
+          "time": "Einladung",
+          "text": "Die Vorlage nennt das erste Mentoring-Treffen „Entwicklungsgespräch“, ohne die Trennung zu erklären."
+        },
+        {
+          "id": "DE10F4",
+          "time": "Stand jetzt",
+          "text": "Selin hat noch keine Notizen geteilt. Helena kann die Einladung klarstellen und Selin die Programminformation zusenden."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "mentoring-nicht-beurteilung-evidence",
+        "axis": "Evidence",
+        "prompt": "Welche Information erhält die Führungskraft aus dem Mentoring?",
+        "evidenceIds": [
+          "DE10F1",
+          "DE10F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle persönlichen Notizen von Selin.",
+            "feedback": "Die Gesprächsnotizen bleiben bei Mentor und Teilnehmerin."
+          },
+          {
+            "id": "b",
+            "text": "Weder Notizen noch eine Mentoring-Bewertung.",
+            "feedback": "Das Programm trennt diese Inhalte von der Führungskraft."
+          },
+          {
+            "id": "c",
+            "text": "Eine Bewertung durch den Mentor.",
+            "feedback": "Eine Mentoring-Bewertung wird nicht weitergegeben."
+          }
+        ]
+      },
+      {
+        "id": "mentoring-nicht-beurteilung-scope",
+        "axis": "Scope",
+        "prompt": "Was macht die Einladung missverständlich?",
+        "evidenceIds": [
+          "DE10F1",
+          "DE10F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Begriff „Entwicklungsgespräch“ erklärt die Trennung zur Beurteilung nicht.",
+            "feedback": "Der Titel klingt nach Beurteilung, obwohl es um ein freiwilliges Mentoring geht."
+          },
+          {
+            "id": "b",
+            "text": "Sie fordert Selin auf, alle Notizen hochzuladen.",
+            "feedback": "Ein Hochladen von Notizen ist nicht vorgesehen."
+          },
+          {
+            "id": "c",
+            "text": "Sie enthält eine verbindliche Leistungsnote.",
+            "feedback": "Eine Note steht in der Vorlage nicht."
+          }
+        ]
+      },
+      {
+        "id": "mentoring-nicht-beurteilung-intent",
+        "axis": "Intent",
+        "prompt": "Was möchte Selin vor dem Treffen wissen?",
+        "evidenceIds": [
+          "DE10F1",
+          "DE10F2",
+          "DE10F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ob ihre Führungskraft den Termin verschieben kann.",
+            "feedback": "Eine Terminänderung ist nicht ihr Anliegen."
+          },
+          {
+            "id": "b",
+            "text": "Ob der Mentor eine Beförderung beschlossen hat.",
+            "feedback": "Das Mentoring trifft keine Stellenentscheidung."
+          },
+          {
+            "id": "c",
+            "text": "Wer ihre Notizen sieht und ob sie bewertet werden.",
+            "feedback": "Ihre Mail nennt Vertraulichkeit und Leistungsbeurteilung ausdrücklich."
+          }
+        ]
+      },
+      {
+        "id": "mentoring-nicht-beurteilung-purpose",
+        "axis": "Purpose",
+        "prompt": "Wie sollte Helena reagieren?",
+        "evidenceIds": [
+          "DE10F1",
+          "DE10F2",
+          "DE10F3",
+          "DE10F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Selin zum Teilen aller Notizen drängen.",
+            "feedback": "Sie hat noch keine Notizen geteilt und das Programm verlangt diese Weitergabe nicht."
+          },
+          {
+            "id": "b",
+            "text": "Behaupten, Mentoring und Beurteilung seien derselbe Vorgang.",
+            "feedback": "Die reguläre Beurteilung läuft laut Ablauf getrennt."
+          },
+          {
+            "id": "c",
+            "text": "Die Trennung erklären, die Programminformation schicken und die Einladung präzisieren.",
+            "feedback": "So kann Selin informiert entscheiden, was sie bespricht."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Selin als Helena. Erklären Sie, wer welche Informationen erhält, benennen Sie die missverständliche Einladung und bieten Sie eine klare Programminformation an, ohne über Selins künftige Gespräche zu spekulieren.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die freiwillige Teilnahme nennen",
+        "Den Umgang mit Notizen präzisieren",
+        "Mentoring und Beurteilung trennen",
+        "Die Einladung verständlicher machen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Wer liest meine Notizen aus dem Mentoring?",
+      "body": "Hallo Selin,\n\ndanke für deine Nachfrage. Das Mentoring ist freiwillig und von der regulären Leistungsbeurteilung getrennt. Deine Gesprächsnotizen bleiben bei dir und deinem Mentor; die Personalentwicklung erfährt nur, ob Treffen stattgefunden haben. Deine Führungskraft erhält aus diesem Programm weder die Notizen noch eine Bewertung durch den Mentor. Du musst also keine persönlichen Inhalte an uns hochladen, um teilnehmen zu können.\n\nIch verstehe, warum der Titel „Entwicklungsgespräch“ Zweifel weckt. In unserer Einladung steht die Trennung leider nicht deutlich genug. Ich sende dir die Programminformation mit den Zuständigkeiten und werde die Vorlage ändern, damit künftige Einladungen klar von einem Mentoring-Treffen sprechen. Wenn du möchtest, können wir vor dem Termin gemeinsam offene Fragen zum Ablauf besprechen. Welche Themen du im Mentoring ansprichst, entscheidest du selbst. Falls du nach der Information lieber nicht teilnehmen möchtest, sag mir einfach Bescheid; die Teilnahme bleibt freiwillig.\n\nViele Grüße\nHelena",
+      "annotations": [
+        {
+          "label": "Erklärt die Trennung",
+          "excerpt": "von der regulären Leistungsbeurteilung getrennt",
+          "evidenceIds": [
+            "DE10F2"
+          ]
+        },
+        {
+          "label": "Schützt die Notizen",
+          "excerpt": "bleiben bei dir und deinem Mentor",
+          "evidenceIds": [
+            "DE10F1"
+          ]
+        },
+        {
+          "label": "Erkennt die Einladung an",
+          "excerpt": "steht die Trennung leider nicht deutlich genug",
+          "evidenceIds": [
+            "DE10F3"
+          ]
+        },
+        {
+          "label": "Wahrt die Entscheidung",
+          "excerpt": "entscheidest du selbst",
+          "evidenceIds": [
+            "DE10F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "interview-sprache-offen",
+    "title": "Ein Termin bestätigt noch keine Gesprächssprache",
+    "area": "People × Bewerbung",
+    "areaLabel": "Personal · Bewerbung",
+    "role": "Marlene · Recruiting",
+    "teaser": "Ein Bewerber erscheint auf ein Gespräch in einer anderen Sprache vorbereitet als das Auswahlteam.",
+    "misunderstanding": "Die Bestätigung des Termins wurde als Zustimmung zu Deutsch als Gesprächssprache gelesen.",
+    "email": {
+      "from": "Oliver · Auswahlteam",
+      "to": "Marlene · Recruiting",
+      "sent": "Mittwoch, 15:20 Uhr",
+      "subject": "Sprache beim Gespräch mit Amir",
+      "body": "Hallo Marlene,\n\nAmir hat nach dem Interviewtermin gefragt, ob das Gespräch auf Englisch stattfinden kann. Unser Team hat Deutsch eingeplant und dachte, er hätte dem zugestimmt. Seine letzte Mail lautete doch „Donnerstag passt“. Kannst du den Schriftwechsel prüfen und mit ihm eine klare Vereinbarung treffen, bevor wir morgen starten?\n\nOliver"
+    },
+    "document": {
+      "title": "Einladung und Antwort des Bewerbers",
+      "intro": "Im Schriftwechsel stehen Termin und Sprache in verschiedenen Sätzen.",
+      "facts": [
+        {
+          "id": "DE11F1",
+          "time": "Montag",
+          "text": "Marlene schlug Donnerstag 10 Uhr als Termin vor und schrieb danach: „Wäre ein Gespräch auf Deutsch für Sie in Ordnung?“"
+        },
+        {
+          "id": "DE11F2",
+          "time": "Dienstag",
+          "text": "Amir antwortete: „Donnerstag um 10 Uhr passt mir gut.“ Er ging auf die Frage zur Sprache nicht ein."
+        },
+        {
+          "id": "DE11F3",
+          "time": "Mittwoch",
+          "text": "Das Auswahlteam trug Deutsch in den Gesprächsplan ein. Eine ausdrückliche Bestätigung der Sprache liegt nicht vor."
+        },
+        {
+          "id": "DE11F4",
+          "time": "Stand jetzt",
+          "text": "Amir hat nach einem Gespräch auf Englisch gefragt. Das Team hat noch nicht geprüft, ob alle Mitglieder Englisch für dieses Interview ermöglichen können."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "interview-sprache-offen-evidence",
+        "axis": "Evidence",
+        "prompt": "Was hat Amir ausdrücklich bestätigt?",
+        "evidenceIds": [
+          "DE11F1",
+          "DE11F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Verschiebung des Interviews.",
+            "feedback": "Eine Verschiebung wurde nicht angefragt."
+          },
+          {
+            "id": "b",
+            "text": "Deutsch als Gesprächssprache.",
+            "feedback": "Die Sprachfrage blieb in seiner Antwort offen."
+          },
+          {
+            "id": "c",
+            "text": "Den Termin am Donnerstag um 10 Uhr.",
+            "feedback": "Seine Antwort nennt nur den Termin."
+          }
+        ]
+      },
+      {
+        "id": "interview-sprache-offen-scope",
+        "axis": "Scope",
+        "prompt": "Welche Annahme war nicht gedeckt?",
+        "evidenceIds": [
+          "DE11F1",
+          "DE11F2",
+          "DE11F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass ein Interview für Donnerstag geplant ist.",
+            "feedback": "Der Termin ist tatsächlich vereinbart."
+          },
+          {
+            "id": "b",
+            "text": "Dass „Donnerstag passt“ auch Deutsch bestätigt.",
+            "feedback": "Termin und Sprachwahl wurden getrennt angesprochen."
+          },
+          {
+            "id": "c",
+            "text": "Dass Marlene nach der Sprache gefragt hat.",
+            "feedback": "Die Sprachfrage steht in Marlenes Einladung."
+          }
+        ]
+      },
+      {
+        "id": "interview-sprache-offen-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Oliver vor dem Interview?",
+        "evidenceIds": [
+          "DE11F3",
+          "DE11F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine klare Sprachabsprache und eine Prüfung der Möglichkeiten des Teams.",
+            "feedback": "Morgen muss das Gespräch in einer gemeinsamen Sprache stattfinden."
+          },
+          {
+            "id": "b",
+            "text": "Die Behauptung, Amir habe Deutsch abgelehnt.",
+            "feedback": "Amir hat Deutsch bislang nicht ausdrücklich abgelehnt, sondern Englisch erfragt."
+          },
+          {
+            "id": "c",
+            "text": "Eine neue Stellenausschreibung.",
+            "feedback": "Die ausgeschriebene Stelle ist nicht das Problem."
+          }
+        ]
+      },
+      {
+        "id": "interview-sprache-offen-purpose",
+        "axis": "Purpose",
+        "prompt": "Welches Vorgehen ist fair?",
+        "evidenceIds": [
+          "DE11F2",
+          "DE11F3",
+          "DE11F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Englisch versprechen, ohne das Team zu fragen.",
+            "feedback": "Die Fähigkeit des gesamten Teams wurde noch nicht geprüft."
+          },
+          {
+            "id": "b",
+            "text": "Deutsch ohne Rückfrage erzwingen.",
+            "feedback": "Die bisherige Terminbestätigung deckt keine Sprachentscheidung."
+          },
+          {
+            "id": "c",
+            "text": "Amir um Bestätigung bitten und die englische Gesprächsführung intern prüfen.",
+            "feedback": "Die offene Frage lässt sich vor dem Termin gemeinsam klären."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Oliver als Marlene. Trennen Sie Terminbestätigung und Sprachfrage, erkennen Sie die unbegründete Annahme an und schlagen Sie eine Klärung mit Amir und dem Auswahlteam vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Den bestätigten Termin nennen",
+        "Die offene Sprachfrage belegen",
+        "Keine Zustimmung erfinden",
+        "Die Möglichkeiten des Teams prüfen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Sprache beim Gespräch mit Amir",
+      "body": "Hallo Oliver,\n\nich habe den Schriftwechsel noch einmal gelesen. Amir hat Donnerstag um 10 Uhr bestätigt. Auf meine anschließende Frage, ob ein Gespräch auf Deutsch für ihn in Ordnung wäre, ist er in seiner Antwort nicht eingegangen. Wir hätten seine Terminbestätigung deshalb nicht als Zustimmung zur Gesprächssprache werten dürfen. Es tut mir leid, dass ich diesen offenen Punkt im Plan nicht markiert habe.\n\nIch schreibe Amir jetzt zurück und frage, ob Englisch für ihn eine Voraussetzung ist oder ob beide Sprachen für ihn infrage kommen. Gleichzeitig kläre ich mit allen Mitgliedern des Auswahlteams, ob wir das Interview auf Englisch gut führen können. Erst wenn beides geklärt ist, bestätige ich ihm die Sprache ausdrücklich. Der Termin bleibt vorerst für Donnerstag um 10 Uhr stehen; falls wir eine Änderung brauchen, spreche ich sie mit ihm ab, statt sie einfach vorauszusetzen. Ich gebe dir heute Nachmittag Bescheid, damit das Team sich angemessen vorbereiten kann.\n\nViele Grüße\nMarlene",
+      "annotations": [
+        {
+          "label": "Bestätigt nur den Termin",
+          "excerpt": "Donnerstag um 10 Uhr bestätigt",
+          "evidenceIds": [
+            "DE11F2"
+          ]
+        },
+        {
+          "label": "Markiert die Lücke",
+          "excerpt": "nicht als Zustimmung zur Gesprächssprache werten dürfen",
+          "evidenceIds": [
+            "DE11F1",
+            "DE11F2"
+          ]
+        },
+        {
+          "label": "Prüft die Möglichkeit",
+          "excerpt": "mit allen Mitgliedern des Auswahlteams",
+          "evidenceIds": [
+            "DE11F4"
+          ]
+        },
+        {
+          "label": "Sichert die Absprache",
+          "excerpt": "bestätige ich ihm die Sprache ausdrücklich",
+          "evidenceIds": [
+            "DE11F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pflichteinladung-falsch-verteilt",
+    "title": "Eine Pflichtschulung für das falsche Publikum",
+    "area": "People × Weiterbildung",
+    "areaLabel": "Personal · Weiterbildung",
+    "role": "Konrad · Weiterbildung",
+    "teaser": "Eine automatisch weitergeleitete Einladung lässt ein ganzes Team eine Pflichtschulung vermuten.",
+    "misunderstanding": "Die Verteilung an alle Teammitglieder wurde mit einer Pflicht für alle verwechselt.",
+    "email": {
+      "from": "Daria · Teamleitung",
+      "to": "Konrad · Weiterbildung",
+      "sent": "Montag, 14:05 Uhr",
+      "subject": "Müssen alle bis Freitag die Schulung machen?",
+      "body": "Hallo Konrad,\n\nmein gesamtes Team hat eine Einladung mit „Pflichtschulung bis Freitag“ erhalten. Die Kolleginnen und Kollegen verschieben schon Kundentermine, weil sie glauben, die Schulung gelte für alle. Im Schulungsplan sehe ich sie nur für Personen mit Budgetfreigabe. Kannst du bestätigen, wer wirklich teilnehmen muss und wie wir die Einladung korrigieren?\n\nDaria"
+    },
+    "document": {
+      "title": "Schulungsplan und Versandliste",
+      "intro": "Die Zielgruppe im Plan und die Empfänger des Versands weichen voneinander ab.",
+      "facts": [
+        {
+          "id": "DE12F1",
+          "time": "Schulungsplan",
+          "text": "Die Schulung zur Budgetfreigabe ist bis Freitag für sieben Personen vorgesehen, die diese Aufgabe derzeit ausüben."
+        },
+        {
+          "id": "DE12F2",
+          "time": "Montag, 10 Uhr",
+          "text": "Konrad wählte versehentlich die Verteilerliste des gesamten Teams mit 32 Adressen. Die Einladung enthielt keine Liste der betroffenen Rollen."
+        },
+        {
+          "id": "DE12F3",
+          "time": "Montag, 13 Uhr",
+          "text": "Alle 32 Personen erhielten die Einladung. Es gibt keine Änderung des Schulungsplans auf die übrigen 25 Personen."
+        },
+        {
+          "id": "DE12F4",
+          "time": "Stand jetzt",
+          "text": "Konrad kann eine Korrektur an denselben Verteiler senden und die sieben erforderlichen Teilnahmen einzeln bestätigen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "pflichteinladung-falsch-verteilt-evidence",
+        "axis": "Evidence",
+        "prompt": "Für wen gilt die Schulungspflicht laut Plan?",
+        "evidenceIds": [
+          "DE12F1",
+          "DE12F2",
+          "DE12F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Für alle 32 Empfänger.",
+            "feedback": "Der Versand an 32 ändert den Schulungsplan nicht."
+          },
+          {
+            "id": "b",
+            "text": "Für niemanden.",
+            "feedback": "Sieben Teilnahmen sind ausdrücklich vorgesehen."
+          },
+          {
+            "id": "c",
+            "text": "Für sieben Personen mit Budgetfreigabe.",
+            "feedback": "Die Zielgruppe ist nach Aufgabe, nicht nach Verteilergröße bestimmt."
+          }
+        ]
+      },
+      {
+        "id": "pflichteinladung-falsch-verteilt-scope",
+        "axis": "Scope",
+        "prompt": "Was verursachte die Verwirrung?",
+        "evidenceIds": [
+          "DE12F2",
+          "DE12F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Einladung ging an die ganze Teamliste und nannte die Zielrollen nicht.",
+            "feedback": "Der falsche Verteiler ließ den Pflicht-Hinweis allgemein wirken."
+          },
+          {
+            "id": "b",
+            "text": "Daria änderte eigenmächtig den Schulungsplan.",
+            "feedback": "Eine Änderung durch Daria ist nicht dokumentiert."
+          },
+          {
+            "id": "c",
+            "text": "Die sieben Personen erhielten keine Nachricht.",
+            "feedback": "Alle 32 Adressen, also auch die sieben, erhielten die Einladung."
+          }
+        ]
+      },
+      {
+        "id": "pflichteinladung-falsch-verteilt-intent",
+        "axis": "Intent",
+        "prompt": "Warum ist eine schnelle Klärung wichtig?",
+        "evidenceIds": [
+          "DE12F1",
+          "DE12F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Budgetaufgabe existiert nicht mehr.",
+            "feedback": "Sieben Personen üben die Aufgabe weiter aus."
+          },
+          {
+            "id": "b",
+            "text": "Die Schulung wurde abgesagt.",
+            "feedback": "Der Schulungsplan bleibt bestehen."
+          },
+          {
+            "id": "c",
+            "text": "Kolleginnen und Kollegen verschieben bereits Kundentermine.",
+            "feedback": "Die falsche Annahme beeinflusst schon die Arbeitsplanung."
+          }
+        ]
+      },
+      {
+        "id": "pflichteinladung-falsch-verteilt-purpose",
+        "axis": "Purpose",
+        "prompt": "Was sollte Konrad tun?",
+        "evidenceIds": [
+          "DE12F1",
+          "DE12F2",
+          "DE12F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur Daria antworten und den Rest im Unklaren lassen.",
+            "feedback": "Die übrigen 31 Personen könnten weiterhin Termine verschieben."
+          },
+          {
+            "id": "b",
+            "text": "Den ganzen Verteiler korrigieren und die sieben Betroffenen gezielt informieren.",
+            "feedback": "Die Korrektur muss dieselben Empfänger erreichen wie die missverständliche Einladung."
+          },
+          {
+            "id": "c",
+            "text": "Die Schulung für alle 32 verbindlich machen.",
+            "feedback": "Eine solche Ausweitung wurde nicht beschlossen."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Daria als Konrad. Erklären Sie die tatsächliche Zielgruppe, übernehmen Sie den Verteilerfehler und schlagen Sie eine Korrektur vor, die alle Betroffenen erreicht.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die sieben erforderlichen Teilnahmen nennen",
+        "Den Versand an 32 erklären",
+        "Die Arbeitsplanung der anderen berücksichtigen",
+        "Eine Korrektur an denselben Verteiler vorsehen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Müssen alle bis Freitag die Schulung machen?",
+      "body": "Hallo Daria,\n\nder Schulungsplan gilt weiterhin nur für die sieben Personen, die derzeit Budgetfreigaben bearbeiten. Ich habe beim Versand versehentlich die Liste des gesamten Teams mit 32 Adressen gewählt. Weil in der Einladung die betroffenen Rollen nicht genannt wurden, klang „Pflichtschulung bis Freitag“ wie eine Vorgabe für alle. Das war mein Fehler. Es tut mir leid, dass Kolleginnen und Kollegen deshalb bereits Kundentermine verschieben.\n\nIch sende noch heute eine Korrektur an alle 32 Empfänger. Darin stelle ich klar, dass die Einladung für die übrigen Teammitglieder keine Pflicht begründet und dass sie ihre Termine nicht wegen dieser Schulung ändern müssen. Die sieben Personen mit Budgetfreigabe erhalten anschließend eine eigene Nachricht mit dem Termin und den notwendigen Informationen. Ich schicke dir den Wortlaut vor dem Versand, damit du prüfen kannst, ob er für dein Team eindeutig ist. Falls bereits Termine verlegt wurden, können wir gemeinsam eine kurze Rückmeldung an die betroffenen Kunden vorbereiten.\n\nViele Grüße\nKonrad",
+      "annotations": [
+        {
+          "label": "Nennt die Zielgruppe",
+          "excerpt": "nur für die sieben Personen",
+          "evidenceIds": [
+            "DE12F1"
+          ]
+        },
+        {
+          "label": "Übernimmt den Fehler",
+          "excerpt": "versehentlich die Liste des gesamten Teams",
+          "evidenceIds": [
+            "DE12F2"
+          ]
+        },
+        {
+          "label": "Beachtet die Folge",
+          "excerpt": "bereits Kundentermine verschieben",
+          "evidenceIds": [
+            "DE12F3"
+          ]
+        },
+        {
+          "label": "Korrigiert den Verteiler",
+          "excerpt": "an alle 32 Empfänger",
+          "evidenceIds": [
+            "DE12F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "datum-tag-monat",
+    "title": "05.06. oder 06.05.?",
+    "area": "Health administration × Terminservice",
+    "areaLabel": "Gesundheitsverwaltung · Terminservice",
+    "role": "Anke · Terminservice",
+    "teaser": "Eine internationale Patientin versteht das Datum ihres Termins anders als die Praxis.",
+    "misunderstanding": "Die deutsche Schreibweise Tag.Monat. wurde als Monat.Tag. gelesen.",
+    "email": {
+      "from": "Samira · Empfang",
+      "to": "Anke · Terminservice",
+      "sent": "6. Mai, 11:05 Uhr",
+      "subject": "Welcher Tag ist auf der Bestätigung gemeint?",
+      "body": "Hallo Anke,\n\neine Patientin hat ihre Bestätigung mit „05.06.“ gelesen und ist am 6. Mai, erschienen. Im Kalender sehe ich einen Termin im Juni. Sie ist verständlicherweise verunsichert und fragt, ob wir den Termin geändert haben. Kannst du mir das richtige Datum bestätigen und sagen, wie wir es eindeutig mitteilen?\n\nSamira"
+    },
+    "document": {
+      "title": "Terminbestätigung und Kalender",
+      "intro": "Die Bestätigung verwendet ein kurzes Datumsformat ohne ausgeschriebenen Monat.",
+      "facts": [
+        {
+          "id": "DE13F1",
+          "time": "Bestätigung",
+          "text": "Der automatisch versandte Text nennt „05.06., 10:30 Uhr“ und erklärt das Datumsformat nicht."
+        },
+        {
+          "id": "DE13F2",
+          "time": "Praxiskalender",
+          "text": "Eingetragen ist der 5. Juni um 10:30 Uhr. Es gab seit der Buchung keine Terminänderung."
+        },
+        {
+          "id": "DE13F3",
+          "time": "6. Mai",
+          "text": "Die Patientin erschien am Empfang, weil sie „05.06.“ als 6. Mai las. Heute ist kein Termin für sie eingetragen."
+        },
+        {
+          "id": "DE13F4",
+          "time": "Stand jetzt",
+          "text": "Anke kann eine Bestätigung mit ausgeschriebenem Monat und Wochentag senden. Ein früherer Ersatztermin wurde noch nicht geprüft."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "datum-tag-monat-evidence",
+        "axis": "Evidence",
+        "prompt": "Wann liegt der gebuchte Termin?",
+        "evidenceIds": [
+          "DE13F1",
+          "DE13F2",
+          "DE13F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Am 6. Mai um 10:30 Uhr.",
+            "feedback": "Am 6. Mai steht für die Patientin kein Termin im Kalender."
+          },
+          {
+            "id": "b",
+            "text": "An einem noch unbestimmten Tag.",
+            "feedback": "Datum und Uhrzeit sind in der Kalenderbuchung vorhanden."
+          },
+          {
+            "id": "c",
+            "text": "Am Donnerstag, dem 5. Juni, um 10:30 Uhr.",
+            "feedback": "Der Kalender nennt den 5. Juni ausdrücklich."
+          }
+        ]
+      },
+      {
+        "id": "datum-tag-monat-scope",
+        "axis": "Scope",
+        "prompt": "Was hat das Missverständnis ausgelöst?",
+        "evidenceIds": [
+          "DE13F1",
+          "DE13F2",
+          "DE13F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine geänderte Uhrzeit.",
+            "feedback": "Die Uhrzeit blieb durchgehend 10:30 Uhr."
+          },
+          {
+            "id": "b",
+            "text": "Eine nachträgliche Verschiebung des Termins.",
+            "feedback": "Seit der Buchung gab es keine Terminänderung."
+          },
+          {
+            "id": "c",
+            "text": "Das kurze Datum ohne ausgeschriebenen Monat.",
+            "feedback": "Die Patientin las Tag und Monat in anderer Reihenfolge."
+          }
+        ]
+      },
+      {
+        "id": "datum-tag-monat-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Samira am Empfang?",
+        "evidenceIds": [
+          "DE13F2",
+          "DE13F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine eindeutige Datumsangabe und eine hilfreiche Antwort für die Patientin.",
+            "feedback": "Ihre Mail fragt nach Datum und verständlicher Mitteilung."
+          },
+          {
+            "id": "b",
+            "text": "Eine medizinische Beurteilung des Besuchs.",
+            "feedback": "Der Terminkonflikt ist administrativ."
+          },
+          {
+            "id": "c",
+            "text": "Die Zusage eines früheren Ersatztermins.",
+            "feedback": "Ein früherer Termin wurde noch nicht geprüft."
+          }
+        ]
+      },
+      {
+        "id": "datum-tag-monat-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Nachricht verhindert eine Wiederholung?",
+        "evidenceIds": [
+          "DE13F1",
+          "DE13F2",
+          "DE13F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Datum mit Wochentag und ausgeschriebenem Monat bestätigen.",
+            "feedback": "Eine ausgeschriebene Datumsangabe beseitigt die Reihenfolge-Unklarheit."
+          },
+          {
+            "id": "b",
+            "text": "Das Kürzel „05.06.“ unverändert wiederholen.",
+            "feedback": "Das gleiche Kurzformat könnte erneut falsch gelesen werden."
+          },
+          {
+            "id": "c",
+            "text": "Behaupten, die Patientin habe eine Umbuchung verpasst.",
+            "feedback": "Es gab keine Umbuchung."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Samira als Anke. Bestätigen Sie das gebuchte Datum eindeutig, erklären Sie die missverständliche Schreibweise und schlagen Sie eine neue Bestätigung sowie eine Prüfung möglicher Alternativen ohne Zusage vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Den 5. Juni eindeutig nennen",
+        "Keine Terminänderung behaupten",
+        "Das Datumsformat erklären",
+        "Einen klaren schriftlichen Hinweis anbieten"
+      ]
+    },
+    "model": {
+      "subject": "AW: Welcher Tag ist auf der Bestätigung gemeint?",
+      "body": "Hallo Samira,\n\nich habe die Buchung geprüft: Der Termin ist für den 5. Juni um 10:30 Uhr eingetragen. Er wurde seit der Buchung nicht verschoben. Unsere automatische Bestätigung nennt nur „05.06.“; ohne ausgeschriebenen Monat kann diese Schreibweise leicht anders gelesen werden. Ich verstehe, warum die Patientin heute gekommen ist, und es tut mir leid, dass unser Text nicht eindeutig war.\n\nBitte erkläre ihr am Empfang, dass für heute kein Termin im Kalender steht und dass der gebuchte Besuch am 5. Juni stattfindet. Ich sende ihr sofort eine neue Bestätigung mit Wochentag, ausgeschriebenem Monat und Uhrzeit. Wenn sie wegen der Verwechslung einen früheren Termin benötigt, kann ich freie Möglichkeiten prüfen; einen Ersatz habe ich bisher noch nicht bestätigt. Ich werde außerdem die Vorlage für Terminbestätigungen anpassen lassen, damit der Monat künftig immer ausgeschrieben wird und dieselbe Verwechslung nicht noch einmal entsteht.\n\nViele Grüße\nAnke",
+      "annotations": [
+        {
+          "label": "Bestätigt das Datum",
+          "excerpt": "für den 5. Juni um 10:30 Uhr",
+          "evidenceIds": [
+            "DE13F2"
+          ]
+        },
+        {
+          "label": "Erklärt den Auslöser",
+          "excerpt": "ohne ausgeschriebenen Monat",
+          "evidenceIds": [
+            "DE13F1",
+            "DE13F3"
+          ]
+        },
+        {
+          "label": "Wahrt die Grenze",
+          "excerpt": "einen Ersatz habe ich bisher noch nicht bestätigt",
+          "evidenceIds": [
+            "DE13F4"
+          ]
+        },
+        {
+          "label": "Verbessert die Vorlage",
+          "excerpt": "der Monat künftig immer ausgeschrieben wird",
+          "evidenceIds": [
+            "DE13F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "online-checkin-vorort",
+    "title": "Online eingecheckt, aber am Empfang nicht angemeldet",
+    "area": "Health administration × Patientenaufnahme",
+    "areaLabel": "Gesundheitsverwaltung · Patientenaufnahme",
+    "role": "Matthias · Aufnahmeorganisation",
+    "teaser": "Ein Patient füllt den Online-Check-in aus und wartet, ohne in der Warteliste zu erscheinen.",
+    "misunderstanding": "Die digitale Eingabe der Stammdaten wurde für die persönliche Anmeldung am Empfang gehalten.",
+    "email": {
+      "from": "Nele · Ambulanzempfang",
+      "to": "Matthias · Aufnahmeorganisation",
+      "sent": "Dienstag, 09:25 Uhr",
+      "subject": "Patient wartet trotz Online-Check-in",
+      "body": "Hallo Matthias,\n\nein Patient zeigt mir die Bestätigung „Online-Check-in abgeschlossen“. Er sitzt seit zwanzig Minuten im Wartebereich, erscheint aber nicht in unserer Ankunftsliste. Er dachte, er müsse sich nicht mehr am Empfang melden. Welche Schritte hat er online bereits erledigt, und wie melden wir ihn jetzt korrekt an?\n\nNele"
+    },
+    "document": {
+      "title": "Ablauf des Online-Check-ins",
+      "intro": "Die digitale Vorbereitung und die Ankunft in der Ambulanz werden separat erfasst.",
+      "facts": [
+        {
+          "id": "DE14F1",
+          "time": "Vor dem Termin",
+          "text": "Der Patient gab online seine Stammdaten ein. Die automatische Bestätigung lautete „Online-Check-in abgeschlossen“."
+        },
+        {
+          "id": "DE14F2",
+          "time": "Ablauf",
+          "text": "Die Online-Eingabe ersetzt Papierfragen, aber vor Ort scannt der Empfang die Terminbestätigung und markiert die tatsächliche Ankunft."
+        },
+        {
+          "id": "DE14F3",
+          "time": "Dienstag, 09:05 Uhr",
+          "text": "Der Patient setzte sich direkt in den Wartebereich. Ein Scan oder Ankunftseintrag liegt bisher nicht vor."
+        },
+        {
+          "id": "DE14F4",
+          "time": "Stand jetzt",
+          "text": "Nele kann die Bestätigung prüfen und die Ankunft eintragen. Die Online-Nachricht erwähnt den zusätzlichen Empfangsschritt nicht."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "online-checkin-vorort-evidence",
+        "axis": "Evidence",
+        "prompt": "Was hat der Patient online abgeschlossen?",
+        "evidenceIds": [
+          "DE14F1",
+          "DE14F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die medizinische Untersuchung.",
+            "feedback": "Eine Untersuchung ist im Check-in nicht enthalten."
+          },
+          {
+            "id": "b",
+            "text": "Die persönliche Anmeldung am Empfang.",
+            "feedback": "Für die Ankunft fehlt noch der Scan vor Ort."
+          },
+          {
+            "id": "c",
+            "text": "Die Eingabe seiner Stammdaten.",
+            "feedback": "Die Bestätigung bezieht sich auf die digitale Vorbereitung."
+          }
+        ]
+      },
+      {
+        "id": "online-checkin-vorort-scope",
+        "axis": "Scope",
+        "prompt": "Warum erscheint er nicht in der Ankunftsliste?",
+        "evidenceIds": [
+          "DE14F2",
+          "DE14F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Seine Stammdaten wurden gelöscht.",
+            "feedback": "Die Stammdaten wurden online erfasst."
+          },
+          {
+            "id": "b",
+            "text": "Der Empfang hat seine Terminbestätigung noch nicht gescannt.",
+            "feedback": "Ohne den Scan wird die tatsächliche Ankunft nicht eingetragen."
+          },
+          {
+            "id": "c",
+            "text": "Der Termin ist abgesagt.",
+            "feedback": "Eine Absage steht im Ablauf nicht."
+          }
+        ]
+      },
+      {
+        "id": "online-checkin-vorort-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Nele jetzt?",
+        "evidenceIds": [
+          "DE14F3",
+          "DE14F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine neue medizinische Entscheidung.",
+            "feedback": "Der Vorgang betrifft die Aufnahme, nicht die Behandlung."
+          },
+          {
+            "id": "b",
+            "text": "Einen klaren Weg, den wartenden Patienten anzumelden, und eine Erklärung für ihn.",
+            "feedback": "Sie kann die Bestätigung prüfen und die Ankunft erfassen."
+          },
+          {
+            "id": "c",
+            "text": "Einen Beweis, dass er absichtlich eine Regel ignoriert hat.",
+            "feedback": "Die Online-Nachricht verschwieg den zusätzlichen Schritt."
+          }
+        ]
+      },
+      {
+        "id": "online-checkin-vorort-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Verbesserung ist naheliegend?",
+        "evidenceIds": [
+          "DE14F2",
+          "DE14F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Online-Bestätigung um den Hinweis auf den Empfangsscan ergänzen.",
+            "feedback": "Der fehlende Hinweis hat die falsche Erwartung begünstigt."
+          },
+          {
+            "id": "b",
+            "text": "Den Ankunftsschritt heimlich abschaffen.",
+            "feedback": "Der vor Ort erforderliche Schritt ist im Ablauf festgehalten."
+          },
+          {
+            "id": "c",
+            "text": "Den Patienten für die missverständliche Bestätigung verantwortlich machen.",
+            "feedback": "Die Nachricht nennt die Anmeldung vor Ort nicht."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Nele als Matthias. Trennen Sie digitale Dateneingabe und Ankunftsmeldung, erläutern Sie den unmittelbaren Schritt am Empfang und erkennen Sie die unklare Bestätigung an.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Den Online-Schritt benennen",
+        "Den fehlenden Scan erklären",
+        "Eine sofortige Anmeldung vorschlagen",
+        "Die Bestätigung verständlicher machen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Patient wartet trotz Online-Check-in",
+      "body": "Hallo Nele,\n\nder Patient hat mit dem Online-Check-in seine Stammdaten vor dem Termin übermittelt. Damit muss er die entsprechenden Papierfragen nicht noch einmal ausfüllen. Für die Ankunftsliste braucht der Empfang aber zusätzlich einen Scan seiner Terminbestätigung vor Ort. Dieser Schritt ist bei ihm bisher nicht erfolgt; deshalb sieht ihn die Ambulanz noch nicht als angekommen.\n\nBitte prüfe jetzt seine Bestätigung und trage seine tatsächliche Ankunft im System ein. Sag ihm dabei, dass er sich trotz Online-Vorbereitung am Empfang melden muss. Ich verstehe gut, dass die Nachricht „Online-Check-in abgeschlossen“ etwas anderes nahelegt: Sie erwähnt den Empfangsschritt nicht. Wir sollten den Text so ändern, dass nach der digitalen Eingabe ausdrücklich „Bitte melden Sie sich bei Ankunft am Empfang“ steht. Ich gebe die Änderung heute an das Team für die automatische Nachricht weiter. Über die Reihenfolge der Behandlung trifft selbstverständlich die Ambulanz die Entscheidung, nicht die Check-in-Anzeige.\n\nViele Grüße\nMatthias",
+      "annotations": [
+        {
+          "label": "Trennt die Schritte",
+          "excerpt": "seine Stammdaten vor dem Termin übermittelt",
+          "evidenceIds": [
+            "DE14F1"
+          ]
+        },
+        {
+          "label": "Erklärt die Liste",
+          "excerpt": "einen Scan seiner Terminbestätigung vor Ort",
+          "evidenceIds": [
+            "DE14F2",
+            "DE14F3"
+          ]
+        },
+        {
+          "label": "Erkennt die Unklarheit",
+          "excerpt": "Sie erwähnt den Empfangsschritt nicht",
+          "evidenceIds": [
+            "DE14F4"
+          ]
+        },
+        {
+          "label": "Bietet die Korrektur",
+          "excerpt": "Bitte melden Sie sich bei Ankunft am Empfang",
+          "evidenceIds": [
+            "DE14F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "einzelzimmer-wunsch",
+    "title": "Zimmerwunsch statt Zimmerzusage",
+    "area": "Health administration × Belegung",
+    "areaLabel": "Gesundheitsverwaltung · Belegung",
+    "role": "Petra · Belegungskoordination",
+    "teaser": "Eine Patientin erwartet ein Einzelzimmer, weil ihr Wunsch im Formular steht.",
+    "misunderstanding": "Ein dokumentierter Zimmerwunsch wurde für eine bestätigte Zimmerzuteilung gehalten.",
+    "email": {
+      "from": "Daniela · Aufnahme",
+      "to": "Petra · Belegungskoordination",
+      "sent": "Donnerstag, 15:40 Uhr",
+      "subject": "Ist das Einzelzimmer bestätigt?",
+      "body": "Hallo Petra,\n\neine Patientin hat bei der Anmeldung „Einzelzimmer gewünscht“ angekreuzt und sagt nun, ihr sei damit ein Einzelzimmer zugesichert worden. In unserem System finde ich noch keine Zimmernummer. Kannst du prüfen, was wir tatsächlich bestätigt haben und wie ich ihre Erwartungen vor der Anreise richtig einordne?\n\nDaniela"
+    },
+    "document": {
+      "title": "Anmeldeformular und Belegungsstand",
+      "intro": "Ein Wunsch wird erfasst, bevor ein konkretes Zimmer zugeteilt werden kann.",
+      "facts": [
+        {
+          "id": "DE15F1",
+          "time": "Anmeldeformular",
+          "text": "Die Patientin kreuzte „Einzelzimmer gewünscht“ an. Der Text darunter lautet: „Wir prüfen die Verfügbarkeit und bestätigen die Zuteilung gesondert.“"
+        },
+        {
+          "id": "DE15F2",
+          "time": "Aufnahmebestätigung",
+          "text": "Die automatische Nachricht bestätigte den Eingang der Anmeldung, erwähnte aber den offenen Zimmerwunsch nicht erneut."
+        },
+        {
+          "id": "DE15F3",
+          "time": "Donnerstag, 14 Uhr",
+          "text": "Im Belegungsplan steht noch keine Zimmernummer für die Patientin. Die Verfügbarkeit am Anreisetag wurde nicht abschließend geprüft."
+        },
+        {
+          "id": "DE15F4",
+          "time": "Stand jetzt",
+          "text": "Petra kann den Belegungsstand erneut prüfen und eine klare Nachricht zum Zimmerstatus veranlassen, ohne ein Einzelzimmer zu versprechen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "einzelzimmer-wunsch-evidence",
+        "axis": "Evidence",
+        "prompt": "Was hat die Patientin im Formular angegeben?",
+        "evidenceIds": [
+          "DE15F1",
+          "DE15F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Einen Wunsch nach einem Einzelzimmer.",
+            "feedback": "Das Formular erfasst einen Wunsch mit späterer Prüfung."
+          },
+          {
+            "id": "b",
+            "text": "Eine bestätigte Zimmernummer.",
+            "feedback": "Eine Zimmernummer steht noch nicht im Belegungsplan."
+          },
+          {
+            "id": "c",
+            "text": "Eine Absage der Aufnahme.",
+            "feedback": "Die Anmeldung wurde nicht abgesagt."
+          }
+        ]
+      },
+      {
+        "id": "einzelzimmer-wunsch-scope",
+        "axis": "Scope",
+        "prompt": "Was bestätigt die automatische Nachricht?",
+        "evidenceIds": [
+          "DE15F1",
+          "DE15F2",
+          "DE15F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Zuteilung eines Einzelzimmers.",
+            "feedback": "Die Zuteilung soll gesondert bestätigt werden."
+          },
+          {
+            "id": "b",
+            "text": "Eine endgültige Zimmernummer.",
+            "feedback": "Eine Nummer fehlt im Belegungsplan."
+          },
+          {
+            "id": "c",
+            "text": "Den Eingang der Anmeldung.",
+            "feedback": "Der Zimmerwunsch wird in der Nachricht nicht abschließend beantwortet."
+          }
+        ]
+      },
+      {
+        "id": "einzelzimmer-wunsch-intent",
+        "axis": "Intent",
+        "prompt": "Wozu braucht Daniela eine Antwort vor der Anreise?",
+        "evidenceIds": [
+          "DE15F3",
+          "DE15F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Um die endgültige Zimmernummer zu nennen.",
+            "feedback": "Noch ist keine Zimmernummer zugeteilt."
+          },
+          {
+            "id": "b",
+            "text": "Um medizinische Angaben zur Patientin zu bewerten.",
+            "feedback": "Die Zimmerfrage ist organisatorisch, nicht medizinisch."
+          },
+          {
+            "id": "c",
+            "text": "Um den Unterschied zwischen Wunsch und Zusage verständlich zu erklären.",
+            "feedback": "Ihre Mail fragt nach dem bestätigten Status und der Erwartung der Patientin."
+          }
+        ]
+      },
+      {
+        "id": "einzelzimmer-wunsch-purpose",
+        "axis": "Purpose",
+        "prompt": "Was sollte Petra mitteilen?",
+        "evidenceIds": [
+          "DE15F1",
+          "DE15F3",
+          "DE15F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass die Verfügbarkeit noch geprüft wird und eine gesonderte Bestätigung folgt.",
+            "feedback": "Nur so wird kein Ergebnis der noch offenen Belegungsprüfung vorweggenommen."
+          },
+          {
+            "id": "b",
+            "text": "Dass das Einzelzimmer sicher frei ist.",
+            "feedback": "Die Verfügbarkeit wurde nicht abschließend geprüft."
+          },
+          {
+            "id": "c",
+            "text": "Dass der Zimmerwunsch aus dem Formular gelöscht wurde.",
+            "feedback": "Der Wunsch ist weiterhin im Formular dokumentiert."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Daniela als Petra. Stellen Sie den Unterschied zwischen Zimmerwunsch und Zuteilung klar, erkennen Sie die lückenhafte automatische Nachricht an und bieten Sie eine überprüfte Rückmeldung an.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Den dokumentierten Wunsch nennen",
+        "Die fehlende Zuteilung erklären",
+        "Kein Einzelzimmer versprechen",
+        "Eine gesonderte Rückmeldung vorsehen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist das Einzelzimmer bestätigt?",
+      "body": "Hallo Daniela,\n\nim Formular hat die Patientin ein Einzelzimmer gewünscht. Direkt darunter steht, dass wir die Verfügbarkeit prüfen und die Zuteilung gesondert bestätigen. Bisher ist für sie keine Zimmernummer im Belegungsplan eingetragen; auch die Verfügbarkeit am Anreisetag ist noch nicht abschließend geklärt. Die automatische Nachricht bestätigte nur den Eingang der Anmeldung. Weil sie den offenen Zimmerwunsch nicht noch einmal erwähnt, verstehe ich, warum die Patientin darin mehr gelesen hat.\n\nBitte erkläre ihr, dass wir ihren Wunsch erfasst haben, aber noch keine Zimmerzusage geben können. Ich prüfe den aktuellen Belegungsstand erneut und lasse eine gesonderte Nachricht zum Zimmerstatus vorbereiten, sobald eine verlässliche Aussage möglich ist. Wir sollten dabei ausdrücklich zwischen „gewünscht“ und „zugeteilt“ unterscheiden. Ich werde außerdem anregen, dass die automatische Aufnahmebestätigung künftig offene Wünsche sichtbar nennt, damit die Patientinnen und Patienten nicht erst bei der Anreise von einer anderen Erwartung ausgehen.\n\nViele Grüße\nPetra",
+      "annotations": [
+        {
+          "label": "Benennt den Wunsch",
+          "excerpt": "ein Einzelzimmer gewünscht",
+          "evidenceIds": [
+            "DE15F1"
+          ]
+        },
+        {
+          "label": "Stellt den Stand klar",
+          "excerpt": "keine Zimmernummer im Belegungsplan",
+          "evidenceIds": [
+            "DE15F3"
+          ]
+        },
+        {
+          "label": "Erkennt die Nachricht an",
+          "excerpt": "bestätigte nur den Eingang der Anmeldung",
+          "evidenceIds": [
+            "DE15F2"
+          ]
+        },
+        {
+          "label": "Vermeidet die Zusage",
+          "excerpt": "noch keine Zimmerzusage geben können",
+          "evidenceIds": [
+            "DE15F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "vorgespraech-nicht-untersuchung",
+    "title": "Ein Vorgespräch ist kein neuer Untersuchungstermin",
+    "area": "Health administration × Ablaufplanung",
+    "areaLabel": "Gesundheitsverwaltung · Ablaufplanung",
+    "role": "Vera · Terminplanung",
+    "teaser": "Zwei Erinnerungen lassen eine Patientin glauben, ihre Untersuchung sei vorverlegt worden.",
+    "misunderstanding": "Ein zusätzliches telefonisches Vorgespräch wurde als neuer Termin für die Untersuchung verstanden.",
+    "email": {
+      "from": "Malik · Telefonservice",
+      "to": "Vera · Terminplanung",
+      "sent": "Montag, 14:50 Uhr",
+      "subject": "Wurde die Untersuchung auf Dienstag verlegt?",
+      "body": "Hallo Vera,\n\neine Patientin hat heute eine Erinnerung für Dienstag erhalten und fragt, ob ihre Untersuchung am Freitag nicht mehr gilt. In ihrer ursprünglichen Bestätigung steht Freitag, jetzt erscheint zusätzlich Dienstag. Kannst du beide Einträge prüfen und mir sagen, was ich ihr eindeutig erklären soll? Sie möchte ihre Fahrt rechtzeitig planen.\n\nMalik"
+    },
+    "document": {
+      "title": "Terminübersicht und Erinnerungsvorlage",
+      "intro": "Die beiden Einträge betreffen unterschiedliche Schritte.",
+      "facts": [
+        {
+          "id": "DE16F1",
+          "time": "Ursprüngliche Buchung",
+          "text": "Die Untersuchung ist für Freitag um 9 Uhr vor Ort eingetragen und wurde nicht verschoben."
+        },
+        {
+          "id": "DE16F2",
+          "time": "Zusätzlicher Eintrag",
+          "text": "Für Dienstag um 15 Uhr wurde ein kurzes telefonisches Vorgespräch zur organisatorischen Vorbereitung angelegt."
+        },
+        {
+          "id": "DE16F3",
+          "time": "Erinnerung",
+          "text": "Die automatische Nachricht nennt für Dienstag nur „Ihr Termin“, ohne das Telefonat als Vorgespräch zu bezeichnen."
+        },
+        {
+          "id": "DE16F4",
+          "time": "Stand jetzt",
+          "text": "Beide Einträge sind aktiv. Vera kann eine getrennte Bestätigung mit Datum, Uhrzeit und Art jedes Termins schicken. Medizinische Inhalte stehen nicht im Terminprotokoll."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "vorgespraech-nicht-untersuchung-evidence",
+        "axis": "Evidence",
+        "prompt": "Wann ist die Untersuchung geplant?",
+        "evidenceIds": [
+          "DE16F1",
+          "DE16F2",
+          "DE16F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Am Dienstag um 15 Uhr telefonisch.",
+            "feedback": "Dienstag ist für ein anderes Gespräch vorgesehen."
+          },
+          {
+            "id": "b",
+            "text": "Am Freitag um 9 Uhr vor Ort.",
+            "feedback": "Die ursprüngliche Buchung bleibt unverändert."
+          },
+          {
+            "id": "c",
+            "text": "Sie ist abgesagt.",
+            "feedback": "Kein Eintrag zeigt eine Absage."
+          }
+        ]
+      },
+      {
+        "id": "vorgespraech-nicht-untersuchung-scope",
+        "axis": "Scope",
+        "prompt": "Was meint die Erinnerung für Dienstag?",
+        "evidenceIds": [
+          "DE16F1",
+          "DE16F2",
+          "DE16F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein telefonisches Vorgespräch zur Vorbereitung.",
+            "feedback": "Die Vorlage hat die Art des zusätzlichen Gesprächs nicht benannt."
+          },
+          {
+            "id": "b",
+            "text": "Eine neue Anreise in die Praxis.",
+            "feedback": "Der Dienstagseintrag ist telefonisch."
+          },
+          {
+            "id": "c",
+            "text": "Die vorverlegte Untersuchung.",
+            "feedback": "Die Untersuchung bleibt für Freitag eingetragen."
+          }
+        ]
+      },
+      {
+        "id": "vorgespraech-nicht-untersuchung-intent",
+        "axis": "Intent",
+        "prompt": "Warum braucht Malik eine klare Antwort?",
+        "evidenceIds": [
+          "DE16F3",
+          "DE16F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Er muss den medizinischen Befund erklären.",
+            "feedback": "Das Protokoll enthält keine medizinischen Inhalte."
+          },
+          {
+            "id": "b",
+            "text": "Die Patientin plant ihre Fahrt und sieht zwei ungenaue Mitteilungen.",
+            "feedback": "Seine Mail fragt nach dem Ablauf und der Anreise, nicht nach Befunden."
+          },
+          {
+            "id": "c",
+            "text": "Er will beide Termine löschen.",
+            "feedback": "Beide Einträge sind aktiv und erfüllen verschiedene Zwecke."
+          }
+        ]
+      },
+      {
+        "id": "vorgespraech-nicht-untersuchung-purpose",
+        "axis": "Purpose",
+        "prompt": "Was sollte Vera schicken?",
+        "evidenceIds": [
+          "DE16F1",
+          "DE16F2",
+          "DE16F3",
+          "DE16F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Zwei klar bezeichnete Termine mit jeweiliger Art, Uhrzeit und Ort beziehungsweise Telefon.",
+            "feedback": "Die getrennte Bestätigung klärt, was Dienstag und Freitag jeweils bedeuten."
+          },
+          {
+            "id": "b",
+            "text": "Nur die unklare Erinnerung noch einmal.",
+            "feedback": "Der bisherige Wortlaut „Ihr Termin“ hat die Verwechslung gerade ausgelöst."
+          },
+          {
+            "id": "c",
+            "text": "Eine neue Freitagszeit ohne Prüfung.",
+            "feedback": "Die Freitagszeit ist bereits mit 9 Uhr eingetragen."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Malik als Vera. Erklären Sie beide Termine, übernehmen Sie die unklare Erinnerungsformulierung und bieten Sie eine getrennte schriftliche Bestätigung an, ohne medizinische Angaben zu erfinden.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die Freitagsuntersuchung bestätigen",
+        "Das Dienstagstelefonat benennen",
+        "Die Vorlage als Auslöser erkennen",
+        "Beide Schritte eindeutig bestätigen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Wurde die Untersuchung auf Dienstag verlegt?",
+      "body": "Hallo Malik,\n\nich habe beide Einträge geprüft. Die Untersuchung findet weiterhin am Freitag um 9 Uhr vor Ort statt; sie wurde nicht verlegt. Für Dienstag um 15 Uhr ist zusätzlich ein kurzes telefonisches Vorgespräch zur organisatorischen Vorbereitung eingetragen. Die automatische Erinnerung sagt dazu leider nur „Ihr Termin“ und nennt weder das Telefonat noch seinen Zweck. Ich verstehe, warum die Patientin deshalb annimmt, die Untersuchung sei verschoben worden.\n\nBitte erkläre ihr, dass sie am Dienstag nicht in die Praxis fahren muss, sondern für das Vorgespräch telefonisch kontaktiert wird. Die Anreise zur Untersuchung bleibt für Freitag geplant. Ich schicke ihr heute zwei getrennte Bestätigungen mit Datum, Uhrzeit und Art des jeweiligen Termins. Danach prüfe ich, ob beide Nachrichten angekommen sind. Außerdem werde ich die Erinnerungsvorlage ändern lassen, damit zusätzliche Telefonate künftig eindeutig als Vorgespräch gekennzeichnet werden. Zu medizinischen Fragen kann das Terminprotokoll nichts beitragen; diese gehören an das behandelnde Team.\n\nViele Grüße\nVera",
+      "annotations": [
+        {
+          "label": "Bestätigt die Untersuchung",
+          "excerpt": "weiterhin am Freitag um 9 Uhr vor Ort",
+          "evidenceIds": [
+            "DE16F1"
+          ]
+        },
+        {
+          "label": "Benennt das Telefonat",
+          "excerpt": "zusätzlich ein kurzes telefonisches Vorgespräch",
+          "evidenceIds": [
+            "DE16F2"
+          ]
+        },
+        {
+          "label": "Erkennt die Vorlage an",
+          "excerpt": "sagt dazu leider nur „Ihr Termin“",
+          "evidenceIds": [
+            "DE16F3"
+          ]
+        },
+        {
+          "label": "Plant getrennte Nachrichten",
+          "excerpt": "zwei getrennte Bestätigungen",
+          "evidenceIds": [
+            "DE16F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "paletten-kartons",
+    "title": "Zwölf Paletten sind nicht zwölf Kartons",
+    "area": "Operations × Lager",
+    "areaLabel": "Betrieb · Lager",
+    "role": "Rafael · Lagerkoordination",
+    "teaser": "Ein Bericht zeigt nur zwölf Einheiten für eine Bestellung über 120 Kartons.",
+    "misunderstanding": "Die Lageranzeige zählte Paletten, während der Vertrieb Kartons erwartete.",
+    "email": {
+      "from": "Carla · Auftragsbearbeitung",
+      "to": "Rafael · Lagerkoordination",
+      "sent": "Mittwoch, 10:35 Uhr",
+      "subject": "Fehlen 108 Kartons?",
+      "body": "Hallo Rafael,\n\nfür den Auftrag 884 brauchen wir 120 Kartons. In der Lagerübersicht steht bei diesem Artikel nur „12 Einheiten“. Ich habe dem Kunden bereits zugesagt, dass die Menge vorhanden ist, und befürchte jetzt einen großen Fehlbestand. Kannst du prüfen, was genau gezählt wurde und ob wir den Auftrag vollständig vorbereiten können?\n\nCarla"
+    },
+    "document": {
+      "title": "Lagerübersicht und Packeinheit",
+      "intro": "Die Zahl in der Übersicht bezieht sich auf eine größere Verpackungseinheit.",
+      "facts": [
+        {
+          "id": "DE17F1",
+          "time": "Artikelstamm",
+          "text": "Eine Palette dieses Artikels enthält zehn versiegelte Kartons."
+        },
+        {
+          "id": "DE17F2",
+          "time": "Mittwoch, 9 Uhr",
+          "text": "Der Lagerbestand für den Auftrag 884 beträgt zwölf Paletten. Die Übersicht zeigt „12 Einheiten“, ohne die Einheit „Paletten“ neben der Zahl zu nennen."
+        },
+        {
+          "id": "DE17F3",
+          "time": "Mittwoch, 10 Uhr",
+          "text": "Eine Zählung bestätigte zwölf vollständige Paletten, also 120 Kartons. Noch keine Palette wurde für den Auftrag kommissioniert."
+        },
+        {
+          "id": "DE17F4",
+          "time": "Stand jetzt",
+          "text": "Rafael kann die 120 Kartons für Auftrag 884 reservieren und die Anzeige mit der Packeinheit ergänzen lassen. Ein Versandtermin ist noch nicht bestätigt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "paletten-kartons-evidence",
+        "axis": "Evidence",
+        "prompt": "Wie viele Kartons sind gezählt worden?",
+        "evidenceIds": [
+          "DE17F1",
+          "DE17F2",
+          "DE17F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "1.200 Kartons.",
+            "feedback": "Eine Palette enthält zehn, nicht hundert Kartons."
+          },
+          {
+            "id": "b",
+            "text": "120 Kartons.",
+            "feedback": "Zwölf Paletten zu je zehn Kartons ergeben 120."
+          },
+          {
+            "id": "c",
+            "text": "Zwölf Kartons.",
+            "feedback": "Die Übersicht zählt Paletten, nicht einzelne Kartons."
+          }
+        ]
+      },
+      {
+        "id": "paletten-kartons-scope",
+        "axis": "Scope",
+        "prompt": "Was war an „12 Einheiten“ missverständlich?",
+        "evidenceIds": [
+          "DE17F2",
+          "DE17F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Lagerzählung war um 108 Kartons falsch.",
+            "feedback": "Eine Nachzählung bestätigte alle zwölf Paletten."
+          },
+          {
+            "id": "b",
+            "text": "Der Kunde hatte nur zwölf Kartons bestellt.",
+            "feedback": "Der Auftrag nennt 120 Kartons."
+          },
+          {
+            "id": "c",
+            "text": "Die Anzeige verschwieg, dass Paletten gemeint waren.",
+            "feedback": "Die fehlende Einheit führte zur falschen Umrechnung."
+          }
+        ]
+      },
+      {
+        "id": "paletten-kartons-intent",
+        "axis": "Intent",
+        "prompt": "Was muss Carla für den Kunden wissen?",
+        "evidenceIds": [
+          "DE17F3",
+          "DE17F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ob die Menge vorhanden ist und was noch nicht bestätigt wurde.",
+            "feedback": "Die Menge ist belegt, ein Versandtermin aber noch offen."
+          },
+          {
+            "id": "b",
+            "text": "Dass der Versand heute sicher stattfindet.",
+            "feedback": "Das Protokoll enthält noch keinen Versandtermin."
+          },
+          {
+            "id": "c",
+            "text": "Welche Farbe die Paletten haben.",
+            "feedback": "Die Palettenfarbe beeinflusst den Auftrag nicht."
+          }
+        ]
+      },
+      {
+        "id": "paletten-kartons-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort ist sachlich?",
+        "evidenceIds": [
+          "DE17F3",
+          "DE17F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "120 Kartons sind vorhanden; Rafael reserviert sie, ohne einen Versandtermin zu versprechen.",
+            "feedback": "Die gezählte Menge reicht, die Kommissionierung hat noch nicht begonnen."
+          },
+          {
+            "id": "b",
+            "text": "Der Auftrag ist bereits verschickt.",
+            "feedback": "Weder Kommissionierung noch Versand sind bestätigt."
+          },
+          {
+            "id": "c",
+            "text": "Nur zwölf Kartons sind vorhanden.",
+            "feedback": "Die Nachzählung ergab 120 Kartons."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Carla als Rafael. Erklären Sie die Packeinheit und die Rechnung, beruhigen Sie sie mit der bestätigten Menge und begrenzen Sie Ihre Aussage zum noch offenen Versand.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Zwölf Paletten mal zehn Kartons erklären",
+        "Die 120 Kartons bestätigen",
+        "Die Kommissionierung als offen benennen",
+        "Keinen Versandtermin erfinden"
+      ]
+    },
+    "model": {
+      "subject": "AW: Fehlen 108 Kartons?",
+      "body": "Hallo Carla,\n\nes fehlen keine 108 Kartons. Unsere Übersicht zeigt zwölf „Einheiten“, meint bei diesem Artikel aber Paletten. Auf jeder Palette liegen zehn versiegelte Kartons. Die Nachzählung heute Morgen hat zwölf vollständige Paletten bestätigt, also genau 120 Kartons für Auftrag 884. Dass die Einheit neben der Zahl nicht steht, ist irreführend; ich verstehe deine Sorge nach der Zusage an den Kunden.\n\nIch reserviere die zwölf Paletten jetzt für diesen Auftrag und lasse bei der Kommissionierung die Kartonzahl noch einmal bestätigen. Dieser Schritt hat bisher nicht begonnen. Du kannst dem Kunden daher sagen, dass die benötigte Menge im Lager vorhanden ist. Einen Versandtermin solltest du noch nicht nennen, weil er nicht bestätigt wurde. Sobald die Kommissionierung abgeschlossen und die Abholung geplant ist, schicke ich dir den tatsächlichen Zeitplan. Ich melde außerdem die fehlende Packeinheit an das Team für die Lagerübersicht, damit künftig klar erkennbar ist, ob eine Zahl Kartons oder Paletten meint.\n\nViele Grüße\nRafael",
+      "annotations": [
+        {
+          "label": "Erklärt die Einheit",
+          "excerpt": "meint bei diesem Artikel aber Paletten",
+          "evidenceIds": [
+            "DE17F1",
+            "DE17F2"
+          ]
+        },
+        {
+          "label": "Rechnet die Menge aus",
+          "excerpt": "also genau 120 Kartons",
+          "evidenceIds": [
+            "DE17F3"
+          ]
+        },
+        {
+          "label": "Begrenzt den Stand",
+          "excerpt": "Dieser Schritt hat bisher nicht begonnen",
+          "evidenceIds": [
+            "DE17F3"
+          ]
+        },
+        {
+          "label": "Vermeidet eine Versandzusage",
+          "excerpt": "weil er nicht bestätigt wurde",
+          "evidenceIds": [
+            "DE17F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "muster-freigabe-kein-auftrag",
+    "title": "Muster freigegeben, Bestellung fehlt",
+    "area": "Operations × Einkauf",
+    "areaLabel": "Betrieb · Einkauf",
+    "role": "Johanna · Einkauf",
+    "teaser": "Ein Lieferant hat ein Verpackungsmuster bestätigt, aber noch keine Serienproduktion begonnen.",
+    "misunderstanding": "Die Freigabe des Musters wurde mit einer verbindlichen Bestellung der Stückzahl verwechselt.",
+    "email": {
+      "from": "Bela · Produktion",
+      "to": "Johanna · Einkauf",
+      "sent": "Freitag, 08:50 Uhr",
+      "subject": "Warum kommen die Kartons noch nicht?",
+      "body": "Hallo Johanna,\n\nwir haben das neue Verpackungsmuster am Dienstag freigegeben. Der Lieferant sagt trotzdem, dass die 2.000 Kartons noch nicht in Produktion sind. Ich hatte mit der Lieferung für nächste Woche gerechnet. Fehlt ihm eine Information, oder ist die Bestellung irgendwo hängen geblieben? Bitte gib mir vor dem Produktionsgespräch eine klare Einschätzung.\n\nBela"
+    },
+    "document": {
+      "title": "Musterprotokoll und Bestellübersicht",
+      "intro": "Gestaltungsfreigabe und Mengenbestellung sind getrennte Schritte.",
+      "facts": [
+        {
+          "id": "DE18F1",
+          "time": "Dienstag",
+          "text": "Bela bestätigte Farbe und Maße des Verpackungsmusters. Im Musterprotokoll steht ausdrücklich „Freigabe des Musters“."
+        },
+        {
+          "id": "DE18F2",
+          "time": "Mittwoch",
+          "text": "Johanna bereitete die Bestellung über 2.000 Kartons vor. Die interne Freigabe der Menge und Kosten ist noch offen."
+        },
+        {
+          "id": "DE18F3",
+          "time": "Freitag, 08:30 Uhr",
+          "text": "Der Lieferant hat das freigegebene Muster, aber keinen verbindlichen Bestellauftrag erhalten. Er hat keine Serienproduktion gestartet."
+        },
+        {
+          "id": "DE18F4",
+          "time": "Stand jetzt",
+          "text": "Johanna kann die interne Bestellfreigabe nachverfolgen. Ein Liefertermin lässt sich erst nach Auftragseingang beim Lieferanten bestätigen."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "muster-freigabe-kein-auftrag-evidence",
+        "axis": "Evidence",
+        "prompt": "Was wurde am Dienstag freigegeben?",
+        "evidenceIds": [
+          "DE18F1",
+          "DE18F2",
+          "DE18F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Muster mit Farbe und Maßen.",
+            "feedback": "Das Protokoll nennt allein die Musterfreigabe."
+          },
+          {
+            "id": "b",
+            "text": "Die Produktion von 2.000 Kartons.",
+            "feedback": "Die Mengenbestellung wartet noch auf interne Freigabe."
+          },
+          {
+            "id": "c",
+            "text": "Ein Liefertermin für nächste Woche.",
+            "feedback": "Ein bestätigter Liefertermin fehlt."
+          }
+        ]
+      },
+      {
+        "id": "muster-freigabe-kein-auftrag-scope",
+        "axis": "Scope",
+        "prompt": "Warum produziert der Lieferant noch nicht?",
+        "evidenceIds": [
+          "DE18F2",
+          "DE18F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Er hat das Muster nicht bekommen.",
+            "feedback": "Der Lieferant besitzt das bestätigte Muster."
+          },
+          {
+            "id": "b",
+            "text": "Er hat keinen verbindlichen Bestellauftrag erhalten.",
+            "feedback": "Das Muster liegt vor, aber der Auftrag wurde nicht übermittelt."
+          },
+          {
+            "id": "c",
+            "text": "Er hat 2.000 Kartons bereits fertiggestellt.",
+            "feedback": "Die Serienproduktion hat noch nicht begonnen."
+          }
+        ]
+      },
+      {
+        "id": "muster-freigabe-kein-auftrag-intent",
+        "axis": "Intent",
+        "prompt": "Was braucht Bela für sein Gespräch?",
+        "evidenceIds": [
+          "DE18F1",
+          "DE18F2",
+          "DE18F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Einen neuen Entwurf der Verpackung.",
+            "feedback": "Farbe und Maße des Musters sind bereits freigegeben."
+          },
+          {
+            "id": "b",
+            "text": "Eine zugesagte Lieferung nächste Woche.",
+            "feedback": "Ein Liefertermin kann ohne Auftrag noch nicht bestätigt werden."
+          },
+          {
+            "id": "c",
+            "text": "Den Unterschied zwischen Muster und Bestellung sowie einen belastbaren nächsten Schritt.",
+            "feedback": "Die Produktion muss wissen, was offen ist, bevor sie mit Kartons plant."
+          }
+        ]
+      },
+      {
+        "id": "muster-freigabe-kein-auftrag-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Zusage sollte Johanna vermeiden?",
+        "evidenceIds": [
+          "DE18F2",
+          "DE18F3",
+          "DE18F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dass sie die interne Freigabe nachverfolgt.",
+            "feedback": "Die offene Freigabe kann jetzt überprüft werden."
+          },
+          {
+            "id": "b",
+            "text": "Dass die 2.000 Kartons nächste Woche sicher geliefert werden.",
+            "feedback": "Ohne Auftrag und bestätigten Termin ist die Lieferwoche nicht gesichert."
+          },
+          {
+            "id": "c",
+            "text": "Dass das Muster beim Lieferanten vorliegt.",
+            "feedback": "Der Lieferant hat das Muster laut Übersicht erhalten."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Bela als Johanna. Trennen Sie Musterfreigabe und Mengenbestellung, benennen Sie den offenen internen Schritt und bieten Sie einen Statusbericht an, ohne die nächste Woche zu versprechen.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die Musterfreigabe einordnen",
+        "Die fehlende Bestellung nennen",
+        "Den internen Freigabeschritt übernehmen",
+        "Keinen Liefertermin erfinden"
+      ]
+    },
+    "model": {
+      "subject": "AW: Warum kommen die Kartons noch nicht?",
+      "body": "Hallo Bela,\n\nam Dienstag haben wir Farbe und Maße des Musters freigegeben. Damit weiß der Lieferant, wie die Kartons aussehen sollen; es war aber noch kein verbindlicher Auftrag über 2.000 Stück. Ich habe die Bestellung vorbereitet, doch die interne Freigabe von Menge und Kosten ist weiterhin offen. Deshalb hat der Lieferant bisher keinen Bestellauftrag erhalten und die Serienproduktion nicht gestartet. Ich hätte deutlicher zwischen diesen beiden Freigaben unterscheiden müssen, bevor du mit einer Lieferung geplant hast.\n\nIch kläre heute Vormittag, bei wem die interne Entscheidung liegt und wann wir mit ihr rechnen können. Sobald der Auftrag tatsächlich versendet ist, frage ich den Lieferanten nach einem bestätigten Produktions- und Liefertermin. Für das Gespräch heute würde ich die Lieferung nächste Woche noch nicht als sicher darstellen. Ich schicke dir bis Mittag den Stand der Freigabe und die nächsten Schritte, damit die Produktion ihre Planung auf belegte Informationen stützen kann.\n\nViele Grüße\nJohanna",
+      "annotations": [
+        {
+          "label": "Trennt die Freigaben",
+          "excerpt": "noch kein verbindlicher Auftrag",
+          "evidenceIds": [
+            "DE18F1",
+            "DE18F2"
+          ]
+        },
+        {
+          "label": "Erklärt den Stillstand",
+          "excerpt": "keinen Bestellauftrag erhalten",
+          "evidenceIds": [
+            "DE18F3"
+          ]
+        },
+        {
+          "label": "Übernimmt Kommunikation",
+          "excerpt": "Ich hätte deutlicher zwischen diesen beiden Freigaben unterscheiden müssen",
+          "evidenceIds": [
+            "DE18F2"
+          ]
+        },
+        {
+          "label": "Vermeidet den Termin",
+          "excerpt": "noch nicht als sicher darstellen",
+          "evidenceIds": [
+            "DE18F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "raum-gereinigt-nicht-freigegeben",
+    "title": "Gereinigt, aber noch nicht begehbar",
+    "area": "Operations × Gebäude",
+    "areaLabel": "Betrieb · Gebäude",
+    "role": "Uwe · Gebäudeservice",
+    "teaser": "Ein Besprechungsraum steht als gereinigt im Plan, obwohl sein Boden noch gesperrt ist.",
+    "misunderstanding": "Der Abschluss der Reinigung wurde mit der Freigabe des Raums verwechselt.",
+    "email": {
+      "from": "Klara · Veranstaltungsplanung",
+      "to": "Uwe · Gebäudeservice",
+      "sent": "Donnerstag, 08:25 Uhr",
+      "subject": "Ist Raum 4 um 9 Uhr nutzbar?",
+      "body": "Hallo Uwe,\n\nder Belegungsplan zeigt Raum 4 als „gereinigt“. Ich habe dort um 9 Uhr ein Kundengespräch angesetzt. Vor der Tür steht aber noch eine Absperrung und ein Hinweis, dass der Boden trocknet. Ist der Raum wirklich freigegeben? Falls nicht, brauche ich schnell eine verlässliche Alternative.\n\nKlara"
+    },
+    "document": {
+      "title": "Reinigungsauftrag und Raumstatus",
+      "intro": "Der Reinigungsauftrag und die Nutzungsfreigabe haben getrennte Zeiten.",
+      "facts": [
+        {
+          "id": "DE19F1",
+          "time": "Donnerstag, 07:45 Uhr",
+          "text": "Die Bodenreinigung in Raum 4 wurde abgeschlossen; der Reinigungsauftrag erhielt den Status „gereinigt“."
+        },
+        {
+          "id": "DE19F2",
+          "time": "Hinweis vor Ort",
+          "text": "Nach der Behandlung soll der Boden bis 11 Uhr trocknen. Die Absperrung bleibt bis zur Kontrolle durch den Gebäudeservice stehen."
+        },
+        {
+          "id": "DE19F3",
+          "time": "Donnerstag, 08:20 Uhr",
+          "text": "Eine Freigabekontrolle hat noch nicht stattgefunden. Der Belegungsplan zeigt nur den Reinigungsstatus, nicht die Sperre."
+        },
+        {
+          "id": "DE19F4",
+          "time": "Stand jetzt",
+          "text": "Uwe kann andere Räume auf Größe und Verfügbarkeit prüfen. Für 9 Uhr ist noch keine Alternative bestätigt."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "raum-gereinigt-nicht-freigegeben-evidence",
+        "axis": "Evidence",
+        "prompt": "Was wurde um 07:45 Uhr abgeschlossen?",
+        "evidenceIds": [
+          "DE19F1",
+          "DE19F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Bodenreinigung.",
+            "feedback": "Der Status „gereinigt“ gehört zum Reinigungsauftrag."
+          },
+          {
+            "id": "b",
+            "text": "Die Freigabekontrolle.",
+            "feedback": "Eine Freigabekontrolle fehlt noch."
+          },
+          {
+            "id": "c",
+            "text": "Das Kundengespräch.",
+            "feedback": "Das Gespräch ist erst für 9 Uhr geplant."
+          }
+        ]
+      },
+      {
+        "id": "raum-gereinigt-nicht-freigegeben-scope",
+        "axis": "Scope",
+        "prompt": "Warum ist Raum 4 noch gesperrt?",
+        "evidenceIds": [
+          "DE19F1",
+          "DE19F2",
+          "DE19F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Kunde hat den Raum abgesagt.",
+            "feedback": "Eine Absage durch den Kunden ist nicht dokumentiert."
+          },
+          {
+            "id": "b",
+            "text": "Die Reinigung wurde nie begonnen.",
+            "feedback": "Die Reinigung ist bereits abgeschlossen."
+          },
+          {
+            "id": "c",
+            "text": "Der Boden trocknet bis 11 Uhr und die Kontrolle steht aus.",
+            "feedback": "Die Absperrung bleibt bis zur Kontrolle bestehen."
+          }
+        ]
+      },
+      {
+        "id": "raum-gereinigt-nicht-freigegeben-intent",
+        "axis": "Intent",
+        "prompt": "Was benötigt Klara jetzt?",
+        "evidenceIds": [
+          "DE19F2",
+          "DE19F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine sichere Aussage zu Raum 4 und eine geprüfte Alternative für 9 Uhr.",
+            "feedback": "Sie hat ein Kundengespräch vor Ende der Trocknungszeit geplant."
+          },
+          {
+            "id": "b",
+            "text": "Eine Zusage, dass der Boden schon trocken ist.",
+            "feedback": "Trocknung und Freigabe sind noch nicht abgeschlossen."
+          },
+          {
+            "id": "c",
+            "text": "Den Namen aller Reinigungskräfte.",
+            "feedback": "Die Teamnamen ändern nichts an der Raumnutzung."
+          }
+        ]
+      },
+      {
+        "id": "raum-gereinigt-nicht-freigegeben-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Antwort ist verantwortbar?",
+        "evidenceIds": [
+          "DE19F2",
+          "DE19F3",
+          "DE19F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Absperrung für das Gespräch entfernen.",
+            "feedback": "Die Absperrung schützt den noch nicht freigegebenen Boden."
+          },
+          {
+            "id": "b",
+            "text": "Raum 4 nicht freigeben und sofort einen anderen Raum prüfen.",
+            "feedback": "Die Kontrolle fehlt und eine Alternative muss erst bestätigt werden."
+          },
+          {
+            "id": "c",
+            "text": "Einen Ersatzraum nennen, bevor seine Verfügbarkeit geprüft ist.",
+            "feedback": "Noch ist kein freier Ersatzraum belegt."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Klara als Uwe. Erklären Sie den Unterschied zwischen Reinigung und Nutzungsfreigabe, nennen Sie die Sperre bis zur Kontrolle und prüfen Sie eine Alternative ohne unbelegte Zusage.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Die Reinigung als abgeschlossen nennen",
+        "Die Trocknung und Kontrolle erklären",
+        "Raum 4 nicht vorzeitig freigeben",
+        "Eine Alternative erst nach Prüfung nennen"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist Raum 4 um 9 Uhr nutzbar?",
+      "body": "Hallo Klara,\n\nder Eintrag „gereinigt“ bestätigt nur, dass die Bodenreinigung um 07:45 Uhr abgeschlossen wurde. Er ist noch keine Freigabe für eine Besprechung. Der Boden soll bis 11 Uhr trocknen, und anschließend muss unser Gebäudeservice den Raum kontrollieren. Die Absperrung steht deshalb zu Recht noch vor der Tür. Ich verstehe, dass der Belegungsplan mit seinem einzelnen Status etwas anderes nahelegt; wir müssen die Sperre dort sichtbarer machen.\n\nFür dein Kundengespräch um 9 Uhr solltest du Raum 4 bitte nicht nutzen. Ich prüfe jetzt die anderen Räume auf passende Größe und tatsächliche Verfügbarkeit und melde dir so schnell wie möglich einen bestätigten Vorschlag. Einen Ersatzraum kann ich noch nicht verbindlich nennen, weil die Prüfung gerade erst beginnt. Sobald wir einen Raum gefunden haben, helfe ich beim Umleiten der Gäste und bei der Ausstattung. Den Status von Raum 4 ändere ich erst nach der Kontrolle, nicht allein wegen des abgeschlossenen Reinigungsauftrags.\n\nViele Grüße\nUwe",
+      "annotations": [
+        {
+          "label": "Definiert den Status",
+          "excerpt": "nur, dass die Bodenreinigung",
+          "evidenceIds": [
+            "DE19F1"
+          ]
+        },
+        {
+          "label": "Nennt die Sperre",
+          "excerpt": "bis 11 Uhr trocknen",
+          "evidenceIds": [
+            "DE19F2"
+          ]
+        },
+        {
+          "label": "Verhindert voreilige Nutzung",
+          "excerpt": "Raum 4 bitte nicht nutzen",
+          "evidenceIds": [
+            "DE19F3"
+          ]
+        },
+        {
+          "label": "Prüft Alternativen",
+          "excerpt": "tatsächliche Verfügbarkeit",
+          "evidenceIds": [
+            "DE19F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ankunftsfenster-kein-abschluss",
+    "title": "Der Techniker kommt bis zwölf, die Arbeit endet später",
+    "area": "Operations × Serviceeinsatz",
+    "areaLabel": "Betrieb · Serviceeinsatz",
+    "role": "Beate · Einsatzplanung",
+    "teaser": "Ein Kunde plant die Wiedereröffnung um 12 Uhr, weil das Servicefenster um 12 endet.",
+    "misunderstanding": "Das Zeitfenster für die Ankunft wurde für einen zugesagten Abschluss der Montage gehalten.",
+    "email": {
+      "from": "Tim · Kundenbetreuung",
+      "to": "Beate · Einsatzplanung",
+      "sent": "Dienstag, 16:15 Uhr",
+      "subject": "Ist die Montage morgen bis 12 Uhr fertig?",
+      "body": "Hallo Beate,\n\nder Kunde hat für morgen „Techniker 8–12 Uhr“ erhalten und daraufhin die Wiedereröffnung für 12 Uhr angekündigt. Ich dachte ebenfalls, die Montage sei bis dahin abgeschlossen. Kannst du mir erklären, was dieses Fenster bedeutet und welche Zeit wir dem Kunden tatsächlich nennen dürfen? Er muss sein Team heute noch informieren.\n\nTim"
+    },
+    "document": {
+      "title": "Einsatzbestätigung und Arbeitsplanung",
+      "intro": "Das Zeitfenster betrifft die Ankunft; die Dauer der Arbeiten ist eine separate Schätzung.",
+      "facts": [
+        {
+          "id": "DE20F1",
+          "time": "Bestätigung",
+          "text": "Der Dienstleister bestätigte ein Ankunftsfenster des Technikers zwischen 8 und 12 Uhr."
+        },
+        {
+          "id": "DE20F2",
+          "time": "Arbeitsplanung",
+          "text": "Die Montage dauert nach Beginn voraussichtlich drei Stunden. Eine feste Endzeit wurde nicht zugesagt."
+        },
+        {
+          "id": "DE20F3",
+          "time": "Dienstag, 15 Uhr",
+          "text": "Die Kundenbestätigung zeigte nur „Techniker 8–12 Uhr“ und erklärte nicht, dass dies die Ankunft betrifft."
+        },
+        {
+          "id": "DE20F4",
+          "time": "Stand jetzt",
+          "text": "Der Dienstleister hat keinen engeren Ankunftstermin bestätigt. Beate kann nach Arbeitsbeginn eine aktualisierte Einschätzung anfordern."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "ankunftsfenster-kein-abschluss-evidence",
+        "axis": "Evidence",
+        "prompt": "Was sagt das Fenster 8–12 Uhr zu?",
+        "evidenceIds": [
+          "DE20F1",
+          "DE20F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Ankunft des Technikers in diesem Zeitraum.",
+            "feedback": "Die Dienstleisterbestätigung bezeichnet ein Ankunftsfenster."
+          },
+          {
+            "id": "b",
+            "text": "Den Beginn der Wiedereröffnung um 8 Uhr.",
+            "feedback": "Eine Wiedereröffnung ist keine Zusage des Dienstleisters."
+          },
+          {
+            "id": "c",
+            "text": "Die Fertigstellung der Montage bis 12 Uhr.",
+            "feedback": "Die Arbeit dauert erst ab Ankunft voraussichtlich drei Stunden."
+          }
+        ]
+      },
+      {
+        "id": "ankunftsfenster-kein-abschluss-scope",
+        "axis": "Scope",
+        "prompt": "Warum konnte Tim das Fenster falsch verstehen?",
+        "evidenceIds": [
+          "DE20F2",
+          "DE20F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Kundenbestätigung erklärte „Ankunft“ nicht.",
+            "feedback": "Der Text zeigte nur die Uhrzeiten ohne den Zweck des Fensters."
+          },
+          {
+            "id": "b",
+            "text": "Die Montage war bereits beendet.",
+            "feedback": "Der Einsatz steht erst für morgen an."
+          },
+          {
+            "id": "c",
+            "text": "Der Dienstleister hatte 12 Uhr als Endzeit unterschrieben.",
+            "feedback": "Eine feste Endzeit wurde gerade nicht zugesagt."
+          }
+        ]
+      },
+      {
+        "id": "ankunftsfenster-kein-abschluss-intent",
+        "axis": "Intent",
+        "prompt": "Welche Information benötigt der Kunde heute?",
+        "evidenceIds": [
+          "DE20F1",
+          "DE20F2",
+          "DE20F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Garantie für eine genaue Endminute.",
+            "feedback": "Der tatsächliche Beginn ist noch unbekannt."
+          },
+          {
+            "id": "b",
+            "text": "Dass 12 Uhr kein gesicherter Abschluss ist und sein Team anders planen sollte.",
+            "feedback": "Seine angekündigte Wiedereröffnung beruht auf einer falschen Deutung des Fensters."
+          },
+          {
+            "id": "c",
+            "text": "Den Namen des Technikers als Ersatz für eine Zeitangabe.",
+            "feedback": "Ein Name ersetzt keine Einschätzung der Montagezeit."
+          }
+        ]
+      },
+      {
+        "id": "ankunftsfenster-kein-abschluss-purpose",
+        "axis": "Purpose",
+        "prompt": "Welche Zusage kann Beate verantworten?",
+        "evidenceIds": [
+          "DE20F1",
+          "DE20F2",
+          "DE20F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nach Arbeitsbeginn eine aktualisierte Einschätzung einholen.",
+            "feedback": "Erst der tatsächliche Beginn ermöglicht eine sinnvollere Zeitangabe."
+          },
+          {
+            "id": "b",
+            "text": "Eine Ankunft genau um 8 Uhr versprechen.",
+            "feedback": "Das bestätigte Fenster reicht von 8 bis 12 Uhr."
+          },
+          {
+            "id": "c",
+            "text": "Die Wiedereröffnung um 12 Uhr bestätigen.",
+            "feedback": "Drei Stunden Arbeit können nach einer Ankunft um 12 Uhr nicht bis 12 Uhr enden."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Antworten Sie Tim als Beate. Stellen Sie das Ankunftsfenster und die geschätzte Arbeitsdauer klar, erkennen Sie die unklare Bestätigung an und schlagen Sie eine vorsichtige Kundeninformation sowie ein späteres Update vor.",
+      "wordGuide": "Etwa 130–190 Wörter",
+      "criteria": [
+        "Das Ankunftsfenster definieren",
+        "Die geschätzte Dauer nennen",
+        "Keine Fertigstellung bis 12 Uhr behaupten",
+        "Ein Update nach Arbeitsbeginn anbieten"
+      ]
+    },
+    "model": {
+      "subject": "AW: Ist die Montage morgen bis 12 Uhr fertig?",
+      "body": "Hallo Tim,\n\ndas Zeitfenster von 8 bis 12 Uhr bezeichnet die Ankunft des Technikers, nicht das Ende der Montage. Nach seinem Eintreffen rechnen wir mit ungefähr drei Stunden Arbeit. Der Dienstleister hat weder eine genaue Ankunftszeit noch eine feste Endzeit bestätigt. Unsere Kundenbestätigung nennt leider nur „Techniker 8–12 Uhr“. Ich verstehe, warum der Kunde und auch du daraus eine Fertigstellung bis Mittag abgeleitet haben. Diese Unklarheit müssen wir in der Vorlage korrigieren.\n\nBitte informiere den Kunden noch heute, dass eine Wiedereröffnung um 12 Uhr auf Grundlage dieser Bestätigung nicht gesichert ist. Er sollte sein Team vorerst mit einem späteren Abschluss planen. Sobald der Techniker morgen begonnen hat, frage ich beim Dienstleister nach einer aktualisierten Einschätzung und gebe sie dir sofort weiter. Wenn die Arbeiten früher enden, können wir das dann bestätigen; bis dahin möchte ich keine Endzeit versprechen. Ich schicke dir gleich einen kurzen Text für die Kundenantwort.\n\nViele Grüße\nBeate",
+      "annotations": [
+        {
+          "label": "Definiert das Fenster",
+          "excerpt": "bezeichnet die Ankunft des Technikers",
+          "evidenceIds": [
+            "DE20F1"
+          ]
+        },
+        {
+          "label": "Erklärt die Dauer",
+          "excerpt": "ungefähr drei Stunden Arbeit",
+          "evidenceIds": [
+            "DE20F2"
+          ]
+        },
+        {
+          "label": "Erkennt die Vorlage an",
+          "excerpt": "nennt leider nur „Techniker 8–12 Uhr“",
+          "evidenceIds": [
+            "DE20F3"
+          ]
+        },
+        {
+          "label": "Verspricht ein Update",
+          "excerpt": "nach einer aktualisierten Einschätzung",
+          "evidenceIds": [
+            "DE20F4"
+          ]
+        }
+      ]
+    }
+  }
+]
