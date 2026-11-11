@@ -171,8 +171,8 @@ export default function ClasesDeRusoPage() {
               <div className={s.heroPhrase}>Здравствуйте!</div>
               <p className={s.eyebrow}>Ruso en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
-                Aprende ruso<br />
-                <span className={s.accent}>desde cero.</span>
+                Clases de ruso<br />
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
                 El alfabeto no es el problema — se lee en cuestión de horas. Lo que exige método son

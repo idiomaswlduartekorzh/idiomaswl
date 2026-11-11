@@ -52,7 +52,8 @@ async function readTopics(languageDir, level) {
   }
 
   const topics = []
-  for (const entry of entries.filter((name) => name.endsWith('.ts') && name !== 'index.ts').sort()) {
+  // quality-closeout.ts transforma temas al importarlos; no define una lección propia.
+  for (const entry of entries.filter((name) => name.endsWith('.ts') && name !== 'index.ts' && name !== 'quality-closeout.ts').sort()) {
     const source = await readFile(path.join(dir, entry), 'utf8')
     const slug = extractField(source, 'slug')
     if (!slug) {

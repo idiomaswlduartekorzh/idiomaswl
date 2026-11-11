@@ -5,6 +5,40 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Visibilidad local de clases por idioma — 11 de noviembre de 2026
+
+- Trabajo: `seo-local-idiomas-20261111`; responsable: Codex.
+- Rama: `codex/seo-local-idiomas-20261111`, base `origin/main@95e9e9bb`;
+  respaldada en `origin`. Estado: `LISTO_PARA_INTEGRAR`.
+- Alcance: hero de `/clases-de-frances`, `/clases-de-italiano`,
+  `/clases-de-portugues`, `/clases-de-aleman`, `/clases-de-japones`,
+  `/clases-de-coreano` y `/clases-de-ruso`; generador e
+  índice de gramática que bloqueaban el build de `main` antes de compilar.
+  Archivos compartidos: `scripts/build-reading-grammar-index.mjs` y
+  `src/data/reading/grammar-index.json`. Sin migraciones ni variables nuevas.
+- Search Console, datos completos hasta el 9 de noviembre: las consultas con
+  «bucaramanga» tuvieron 164 impresiones, 1 clic y posición media 17,5 en
+  28 días; en tres meses, 567 impresiones, 5 clics y posición 21,1. La URL de
+  francés está indexada, admite rastreo y usa la canónica esperada.
+  Estas cifras muestran visibilidad local débil antes de la actualización
+  principal de Google iniciada el 10 de noviembre; no prueban una caída causada
+  por ella.
+- Perfil de Empresa verificado: se añadieron los servicios de francés, inglés,
+  portugués, alemán y japonés, y servicios personalizados de italiano, coreano
+  y ruso. Google los dejó pendientes de revisión; su publicación y efecto en
+  posicionamiento siguen sin confirmar.
+- Validación local: `check:practica-catalog`, `check:landings-locales`,
+  `check:seo-foundation`, `check:seo-snippets`, `check:reading-content` y
+  TypeScript global pasaron. Next compiló y verificó tipos; el build local se
+  detuvo en prerender por falta de espacio en disco (`ENOSPC`). El build completo
+  pasó en GitHub Actions para el commit `dba80cb0`. Las siete rutas se revisaron
+  en navegador; los cambios del último commit también se comprobaron en la
+  vista previa de Vercel `ENFAEny4qwXiMwtLNVTp23UtcuTh`, en estado `READY`.
+  `origin/main@95e9e9bb` sigue siendo ancestro de la rama.
+- Decisión de integración: `MERGE`; SHA en `main`,
+  deployment y smoke: pendientes. El objetivo es mejorar relevancia y claridad
+  local; no hay garantía de una posición concreta en Google.
+
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
 
 Rama `codex/aleman-a1-ai-feedback`, actualizada desde `origin/main@e6c9a1448`.

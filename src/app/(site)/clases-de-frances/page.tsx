@@ -213,9 +213,9 @@ export default function ClasesDeFrancesPage() {
                 <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
-                El francés no es solo pronunciación difícil — es estructura, ritmo y contexto.
-                Con el método WeLearn trabajas la base y las habilidades que exige tu objetivo, desde empezar de cero hasta preparar DELF o DALF.
-                <strong> Presencial en Bucaramanga u online desde cualquier ciudad de Colombia.</strong>
+                Estudia francés con un tutor en nuestra sede de Sotomayor, Bucaramanga, o por
+                videollamada desde cualquier ciudad. Trabaja conversación y comprensión desde
+                tu nivel actual, o prepara DELF, DALF y TCF/TEF según tu objetivo.
               </p>
               <div className={s.heroCtas}>
                 <a

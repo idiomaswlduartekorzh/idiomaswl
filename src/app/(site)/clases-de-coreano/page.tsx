@@ -171,12 +171,12 @@ export default function ClasesDeCoreanoPage() {
               <p className={s.eyebrow}>Clases de coreano · Bucaramanga y Colombia</p>
               <h1 className={s.h1}>
                 Clases de coreano<br />
-                <span className={s.accent}>desde Hangul hasta TOPIK.</span>
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
-                El coreano no es difícil — es diferente. Con el método correcto,
-                puedes avanzar desde Hangul hacia la comprensión cotidiana y la preparación TOPIK I,
-                según tu nivel, práctica y objetivo.
+                Estudia coreano presencialmente en nuestra sede de Sotomayor, Bucaramanga, o por
+                videollamada desde cualquier ciudad. Un tutor adapta tu ruta desde Hangul hasta la
+                conversación y la preparación TOPIK, según tu nivel y objetivo.
               </p>
               <div className={s.heroCtas}>
                 <a

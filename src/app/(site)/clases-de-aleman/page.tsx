@@ -208,12 +208,13 @@ export default function ClasesDeAlemanPage() {
               <div className={s.heroPhrase}>Hallo!</div>
               <p className={s.eyebrow}>Alemán en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
-                Aprende alemán<br />
-                <span className={s.accent}>de verdad.</span>
+                Clases de alemán<br />
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
-                El alemán abre puertas a Alemania, Austria y Suiza — visas de trabajo, universidades de clase mundial
-                y salarios entre los más altos de Europa. Con el método WeLearn llegas al Goethe B1 con una base sólida.
+                Estudia alemán presencialmente en nuestra sede de Sotomayor, Bucaramanga, o por
+                videollamada desde cualquier ciudad. Un tutor adapta tu ruta a tu nivel y a tu objetivo,
+                desde conversar hasta preparar el Goethe-Zertifikat.
               </p>
               <div className={s.heroCtas}>
                 <a
