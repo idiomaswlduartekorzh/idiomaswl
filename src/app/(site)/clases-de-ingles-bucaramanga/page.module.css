@@ -19,6 +19,21 @@
 
 .examPaths a { color: var(--accent-action, var(--accent)); font-weight: 700; }
 
+.heroGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.benefitGrid, .testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
 @media (max-width: 720px) {
-  .objectiveGrid { grid-template-columns: 1fr; }
+  .heroGrid, .benefitGrid, .objectiveGrid, .testimonialGrid { grid-template-columns: 1fr; }
+  .heroGrid { gap: 2rem; }
 }

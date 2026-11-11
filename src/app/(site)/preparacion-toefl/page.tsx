@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ExamPrepLanding, { type ExamPrepContent } from '@/components/marketing/ExamPrepLanding';
+import { ENROLLMENT_FEE_COP, EXAM_PLATFORM_FEE_COP, PLANS, formatCOP } from '@/lib/course-pricing/catalog';
 
 export const metadata: Metadata = {
   title: 'Preparación TOEFL iBT online con tutor | WeLearn',
@@ -38,7 +39,7 @@ const content: ExamPrepContent = {
   faqs: [
     { question: '¿La preparación usa el formato TOEFL iBT vigente?', answer: 'Sí. La ruta se basa en las tareas actuales del iBT y en las prácticas correspondientes de WeLearn. Confirma la fecha y las exigencias de tu institución antes de inscribirte.' },
     { question: '¿Puedo preparar TOEFL desde Bucaramanga?', answer: 'Sí. Puedes estudiar online desde cualquier ciudad y consultar clases presenciales con tutor en nuestra sede de Sotomayor, Bucaramanga, según disponibilidad.' },
-    { question: '¿Cuánto cuesta la preparación TOEFL?', answer: 'El valor depende de la intensidad y el paquete de clases. La orientación inicial por chat es gratuita; el diagnóstico y las sesiones con tutor son pagos. Conoces el precio antes de agendar.' },
+    { question: '¿Cuánto cuesta la preparación TOEFL?', answer: `El ciclo Esencial cuesta ${formatCOP(PLANS[0].price)} COP por cuatro semanas e incluye una clase de 100 minutos por semana. Puedes elegir hasta cinco clases semanales. En la primera inscripción puede sumarse ${formatCOP(ENROLLMENT_FEE_COP)} COP y la plataforma de preparación tiene un pago único de ${formatCOP(EXAM_PLATFORM_FEE_COP)} COP. El total se muestra antes del pago; la inscripción al examen oficial es aparte.` },
     { question: '¿El simulacro reemplaza las clases?', answer: 'El simulacro permite practicar y detectar errores. Las clases con tutor sirven para trabajar esos errores con un plan ajustado a tu objetivo.' },
   ],
   practiceHref: '/examenes/toefl',

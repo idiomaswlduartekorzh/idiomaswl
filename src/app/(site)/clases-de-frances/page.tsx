@@ -4,8 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
 import LocalBand from '@/components/hub/LocalBand';
-import PracticeBand from '@/components/hub/PracticeBand';
+import CourseOfferBand from '@/components/hub/CourseOfferBand';
 import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
+import { ENROLLMENT_FEE_COP, PLANS, formatCOP } from '@/lib/course-pricing/catalog';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -13,27 +14,13 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de francés en Bucaramanga y online — DELF y DALF',
+  title: 'Clases de francés en Bucaramanga y online | WeLearn',
   description:
-    'Clases de francés en Bucaramanga y online. Preparación DELF A1–B2, DALF C1–C2 y TCF/TEF para Canadá, desde cero. Diagnóstico de pago.',
-  keywords: [
-    'clases de francés Bucaramanga',
-    'clases particulares de francés Bucaramanga',
-    'curso de francés Bucaramanga',
-    'profesor de francés Bucaramanga',
-    'clases de francés online Colombia',
-    'preparación DELF Colombia',
-    'preparación DALF Colombia',
-    'TCF Canadá Colombia',
-    'francés para migrar a Canadá',
-    'curso de francés para adultos',
-    'aprender francés desde cero',
-    'WeLearn francés',
-  ],
+    'Aprende francés desde cero con clases presenciales en Bucaramanga u online en vivo. Conoce planes, precios y rutas para conversación o DELF.',
   openGraph: {
-    title: 'Clases de Francés en Bucaramanga y Online — DELF/DALF',
+    title: 'Clases de francés en Bucaramanga y online | WeLearn',
     description:
-      'Presencial en Bucaramanga y online en toda Colombia. Preparación DELF, DALF y TCF/TEF Canadá. Diagnóstico de pago.',
+      'Francés desde cero hasta nivel avanzado con tutor. Presencial en Bucaramanga u online desde Colombia.',
     url: 'https://www.idiomaswl.com/clases-de-frances',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-frances' },
@@ -59,7 +46,7 @@ const jsonLd = {
       '@type': 'Course',
       name: 'Francés con el método WeLearn',
       description:
-        'Aprende francés desde cero hasta DALF C2 con tutor especializado. Preparación DELF/DALF, conversación, gramática y pronunciación.',
+        'Clases de francés desde nivel inicial hasta avanzado con tutor. Conversación, comprensión y preparación de exámenes según el objetivo del estudiante.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
@@ -118,7 +105,7 @@ const DELF_EXAMS = [
   {
     name: 'DELF',
     range: 'Niveles A1 · A2 · B1 · B2',
-    desc: "El Diplôme d'Études en Langue Française es la certificación más solicitada para estudio y trabajo en países francófonos. Válido para universidades en Francia, Bélgica, Suiza y Canadá.",
+    desc: "El Diplôme d'Études en Langue Française acredita un nivel de francés. Su aceptación para estudios, trabajo o trámites depende de los requisitos de cada institución o programa.",
     skills: ['Comprensión oral', 'Comprensión escrita', 'Producción oral', 'Producción escrita'],
   },
   {
@@ -136,11 +123,11 @@ const FAQS = [
   },
   {
     q: '¿Qué tan difícil es el francés para colombianos?',
-    a: 'Más fácil de lo que parece. Compartimos el 80% del vocabulario con el español gracias al latín común. La pronunciación es diferente pero sistemática. Con método, progresas rápido.',
+    a: 'El francés y el español comparten muchas raíces latinas, pero la pronunciación y algunas estructuras son distintas. El tiempo de avance depende de tu punto de partida, intensidad y práctica entre clases.',
   },
   {
     q: '¿Para qué sirve el DELF?',
-    a: 'El DELF es la certificación oficial de francés del Ministerio de Educación de Francia. Es requerida para estudiar en universidades francesas, obtener visas y demostrar nivel en contextos laborales internacionales.',
+    a: 'El DELF es un diploma oficial de francés por nivel. Puede servir para acreditar tu nivel ante instituciones educativas o empleadores, según sus requisitos. Confirma el diploma y nivel que exige cada trámite antes de inscribirte.',
   },
   {
     q: '¿Cuánto tiempo toma llegar al DELF B2?',
@@ -156,15 +143,15 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
-    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. Puedes consultar por chat sin costo la ruta y el precio; el diagnóstico con tutor es pago. Puedes ver los planes vigentes en la página de precios.',
+    a: `El plan Esencial cuesta ${formatCOP(PLANS[0].price)} COP por cuatro semanas, con una clase de 100 minutos por semana. Hay planes de dos a cinco clases semanales. En la primera inscripción puede sumarse ${formatCOP(ENROLLMENT_FEE_COP)} COP; el total se muestra antes del pago. La sesión de diagnóstico con tutor, si la solicitas, es paga.`,
   },
   {
-    q: '¿El DELF sirve para migrar a Canadá?',
-    a: 'No. Para los trámites migratorios canadienses se aceptan el TEF Canada y el TCF Canada, no el DELF. El DELF y el DALF son diplomas académicos que no caducan y sirven para universidades y para acreditar tu nivel, pero no reemplazan el examen que exige el proceso migratorio.',
+    q: '¿El DELF sirve para Express Entry o para Quebec?',
+    a: 'Para Express Entry federal, las pruebas de francés aceptadas son TEF Canada y TCF Canada; DELF y DALF no figuran en esa lista. Algunos programas de selección de Quebec aceptan DELF y DALF bajo sus propias condiciones, incluso sobre la antigüedad del resultado. Consulta siempre las reglas vigentes del programa exacto.',
   },
   {
     q: '¿Cuál es la diferencia entre DELF, DALF, TCF y TEF?',
-    a: 'DELF y DALF son diplomas del Ministerio de Educación de Francia: se presentan por nivel (A1 a C2) y no caducan. TCF y TEF son pruebas de nivel con vigencia limitada, normalmente de dos años, y sus versiones "Canada" son las que reconocen los procesos migratorios canadienses. El francés que estudias es el mismo; cambia el formato de la prueba.',
+    a: 'DELF y DALF son diplomas por nivel (A1 a C2) que no caducan. TCF y TEF son pruebas de nivel con vigencia limitada. Express Entry federal acepta TEF Canada o TCF Canada; algunos programas de Quebec también aceptan DELF y DALF. Revisa el examen exigido por tu programa.',
   },
   {
     q: '¿Dónde puedo presentar el DELF o el TCF en Colombia?',
@@ -227,8 +214,8 @@ export default function ClasesDeFrancesPage() {
                   <WaIcon />
                   Consultar ruta y precio
                 </a>
-                <Link href="/examenes/delf-dalf" className={s.ghostBtn}>
-                  Ver simulacros DELF →
+                <Link href="/precios?idioma=frances&objetivo=general" className={s.ghostBtn}>
+                  Ver planes y precios →
                 </Link>
               </div>
               <p className={s.heroSub} style={{ fontSize: '0.82rem', marginTop: '0.8rem' }}>La orientación inicial por chat y la <Link href="/practica/frances/a1/gramatica">práctica automática de francés A1</Link> son gratis. La clase y el diagnóstico con tutor son pagos; conoce el precio antes de agendar.</p>
@@ -237,8 +224,8 @@ export default function ClasesDeFrancesPage() {
             <div className={s.heroVisual}>
               <div className={s.heroCard}>
                 <span className={s.heroCardFlag}>🇫🇷</span>
-                <p className={s.heroCardTitle}>DELF / DALF</p>
-                <p className={s.heroCardSub}>Certificación oficial del Ministerio de Educación de Francia</p>
+                <p className={s.heroCardTitle}>Francés desde tu nivel</p>
+                <p className={s.heroCardSub}>Conversación, comprensión y expresión con una ruta de aprendizaje adaptada a tu objetivo.</p>
                 <div className={s.levelBadges}>
                   {['A1','A2','B1','B2','C1','C2'].map(l => (
                     <span key={l} className={s.levelBadge}>{l}</span>
@@ -246,12 +233,12 @@ export default function ClasesDeFrancesPage() {
                 </div>
               </div>
               <div className={s.heroCard}>
-                <p className={s.heroCardTitle}>¿Por qué francés?</p>
+                <p className={s.heroCardTitle}>Cómo puedes estudiar</p>
                 <p className={s.heroCardSub}>
-                  • 300 millones de hablantes en 5 continentes<br />
-                  • Segundo idioma más estudiado del mundo<br />
-                  • Requerido para becas Eiffel y universidades francesas<br />
-                  • Ventaja competitiva en comercio internacional
+                  • En nuestra sede de Sotomayor, Bucaramanga<br />
+                  • Online en vivo desde Colombia<br />
+                  • Una a cinco clases por semana<br />
+                  • Ciclos de cuatro semanas
                 </p>
               </div>
             </div>
@@ -266,7 +253,7 @@ export default function ClasesDeFrancesPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>DELF A1 hasta DALF C2</strong></span>
+          <span className={s.proofItem}><strong>Francés general</strong> · DELF y DALF según tu objetivo</span>
         </div>
 
         <LanguageResourceLinks language="frances" />
@@ -285,9 +272,9 @@ export default function ClasesDeFrancesPage() {
         <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Por qué WeLearn</p>
-            <h2 className={s.h2}>No es un curso. Es un método.</h2>
+            <h2 className={s.h2}>Una ruta para usar el francés en la vida real.</h2>
             <p className={s.sectionSub}>
-              No vendemos clases sueltas. Diseñamos el camino completo desde tu nivel actual hasta tu objetivo.
+              Elige la frecuencia de tus clases y trabaja conversación, comprensión, lectura y escritura con una ruta según tu nivel y objetivo.
             </p>
             <div className={s.whyGrid}>
               {WHY_CARDS.map(c => (
@@ -300,6 +287,8 @@ export default function ClasesDeFrancesPage() {
             </div>
           </div>
         </section>
+
+        <CourseOfferBand language="frances" name="francés" local />
 
         {/* ══════════════ LEVELS ══════════════ */}
         <section className={s.section} style={{ paddingTop: 0 }}>
@@ -338,7 +327,7 @@ export default function ClasesDeFrancesPage() {
                 </div>
               </div>
               <div className={s.instructorText}>
-                <p className={s.sectionEyebrow}>Tu instructor</p>
+                <p className={s.sectionEyebrow}>Creador del método</p>
                 <h2 className={s.h2}>David habla 8 idiomas. El francés fue el cuarto.</h2>
                 <p className={s.instructorP}>
                   David llegó al francés después del inglés, el italiano y el portugués. Para
@@ -357,7 +346,7 @@ export default function ClasesDeFrancesPage() {
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtnLight}
                 >
-                  Hablar con David por WhatsApp
+                  Consultar a WeLearn por WhatsApp
                 </a>
               </div>
             </div>
@@ -370,7 +359,7 @@ export default function ClasesDeFrancesPage() {
             <p className={s.sectionEyebrow}>Certificaciones</p>
             <h2 className={s.h2}>DELF y DALF: las certificaciones oficiales</h2>
             <p className={s.sectionSub}>
-              Son los únicos diplomas del Ministerio de Educación de Francia. Válidos de por vida, reconocidos en todo el mundo.
+              Son diplomas oficiales de francés por nivel. No caducan, aunque una institución o programa puede exigir resultados recientes.
             </p>
             <div className={s.delfGrid}>
               {DELF_EXAMS.map(e => (
@@ -406,64 +395,49 @@ export default function ClasesDeFrancesPage() {
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de francés presenciales. ¿Cómo funcionan?"
         />
 
-        {/* ══════════════ PRÁCTICA GRATIS ══════════════ */}
-        <PracticeBand
-          accent="#1a2ecc"
-          title="Practica francés gratis, sin registrarte"
-          sub="Todo esto está abierto y no hay que dar ningún dato. Si luego quieres clases con profesor, hablamos; si no, el material es tuyo igual."
-          cards={[
-            { href: '/practica/frances/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Los artículos, la negación y los verbos irregulares explicados desde el español, que es donde se atasca todo hispanohablante.' },
-            { href: '/practica/frances/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, para fijar la pronunciación antes de que se vuelva un vicio.' },
-            { href: '/practica/frances/a1/escucha', title: 'Comprensión auditiva', desc: 'El francés hablado une las palabras y se come sonidos: por eso se entiende leyendo y no escuchando. Aquí se entrena eso.' },
-            { href: '/practica/frances/b1/lectura', title: 'Comprensión lectora', desc: 'Textos con preguntas al estilo del examen, para leer rápido sin traducir mentalmente.' },
-            { href: '/practica/frances/b1/escritura', title: 'Escritura guiada', desc: 'Escribe una respuesta real y compárala con un modelo del nivel.' },
-            { href: '/practica/frances/a1/habla', title: 'Expresión oral', desc: 'Estructuras y pronunciación modelo, la parte que más pesa en el DELF y la que menos se practica solo.' },
-          ]}
-        />
-
         {/* ══════════════ CANADÁ (SEO/AEO) ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Francés para migrar</p>
-            <h2 className={s.h2}>¿El DELF sirve para migrar a Canadá?</h2>
+            <h2 className={s.h2}>¿Qué examen de francés exige tu programa en Canadá?</h2>
             <p className={s.sectionSub}>
-              No. Es el error más caro y más común: mucha gente estudia y presenta el DELF pensando
-              que le sirve para su proceso migratorio, y no es el examen que aceptan las
-              autoridades canadienses. Para inmigración necesitas <strong>TEF Canada</strong> o
-              <strong> TCF Canada</strong>; para Quebec, la variante que exija el programa.
+              Para Express Entry federal, las pruebas de francés aceptadas son <strong>TEF Canada</strong> y
+              <strong> TCF Canada</strong>. Algunos programas de selección de Quebec también aceptan
+              DELF o DALF bajo condiciones propias. Verifica la lista y el nivel exigidos por tu programa
+              antes de pagar una inscripción.
             </p>
             <div className={s.levelsGrid}>
               <div className={s.levelCard}>
                 <span className={s.levelTag}>DELF / DALF</span>
-                <p className={s.levelTitle}>Para estudiar y certificar</p>
+                <p className={s.levelTitle}>Para certificar; también aceptados en ciertos programas de Quebec</p>
                 <p className={s.levelDesc}>
-                  Diploma oficial del Ministerio de Educación de Francia. No caduca. Es el que
-                  piden universidades francesas y el que sirve para acreditar tu nivel ante
-                  empleadores. No es el examen de los trámites migratorios canadienses.
+                  Diplomas oficiales por nivel que no caducan. Algunas instituciones los aceptan para
+                  acreditar francés y ciertos programas de Quebec los admiten con condiciones,
+                  incluida la antigüedad del resultado presentado.
+                  No aparecen entre las pruebas aceptadas por Express Entry federal.
                 </p>
               </div>
               <div className={s.levelCard}>
                 <span className={s.levelTag}>TEF / TCF</span>
-                <p className={s.levelTitle}>Para inmigración a Canadá</p>
+                <p className={s.levelTitle}>Para Express Entry federal</p>
                 <p className={s.levelDesc}>
-                  Son pruebas de nivel con vigencia limitada — típicamente dos años — y son las
-                  versiones &ldquo;Canada&rdquo; las que reconocen los procesos migratorios. Tu resultado se
-                  traduce a niveles NCLC, que es lo que suma puntos.
+                  TEF Canada y TCF Canada son las pruebas de francés aceptadas para ese programa.
+                  Sus resultados se expresan en niveles NCLC y deben cumplir las reglas de vigencia
+                  y puntuación publicadas por la autoridad federal.
                 </p>
               </div>
               <div className={s.levelCard}>
                 <span className={s.levelTag}>Qué hacemos</span>
                 <p className={s.levelTitle}>Un solo camino, dos salidas</p>
                 <p className={s.levelDesc}>
-                  El francés que necesitas es el mismo; lo que cambia es el formato de la prueba.
-                  Te llevamos al nivel y después entrenamos el examen concreto que tu trámite
-                  exige, sin que estudies dos veces.
+                  Trabajamos tu nivel de francés y, si tienes una meta de certificación, orientamos
+                  la práctica hacia el examen que hayas confirmado para tu trámite. Cada programa
+                  tiene requisitos propios.
                 </p>
               </div>
             </div>
             <p className={s.sectionSub} style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
-              Los requisitos migratorios cambian con frecuencia. Confirma siempre el examen y el
-              nivel exacto en la fuente oficial del programa al que apliques antes de inscribirte.
+              Consulta las fuentes oficiales de <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html">Express Entry</a> o del <a href="https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program/requirements/knowledge-french">programa de Quebec</a> que corresponda antes de inscribirte.
             </p>
           </div>
         </section>
@@ -474,9 +448,9 @@ export default function ClasesDeFrancesPage() {
             <p className={s.sectionEyebrow}>Práctica gratuita</p>
             <h2 className={s.h2}>Todo lo que puedes practicar gratis desde hoy</h2>
             <p className={s.sectionSub}>
-              No tienes que esperar a matricularte. Las cinco habilidades, los simulacros del
-              DELF y el diagnóstico de nivel están abiertos, con corrección inmediata y sin
-              registro.
+              Puedes explorar ejercicios automáticos de francés por nivel antes de matricularte.
+              Algunas herramientas o resultados pueden pedir una cuenta o datos de contacto.
+              El diagnóstico con tutor es una sesión paga.
             </p>
             <div className={s.practicaGrid}>
               <Link href="/practica/frances/a1/gramatica" className={s.practicaCard}>
@@ -516,8 +490,8 @@ export default function ClasesDeFrancesPage() {
               </Link>
               <Link href="/nivel-radar" className={s.practicaCard}>
                 <span className={s.practicaBadge}>Gratis</span>
-                <p className={s.practicaTitle}>Descubre tu nivel real</p>
-                <p className={s.practicaDesc}>Si no sabes por dónde empezar, el diagnóstico de nivel te ubica en el MCER antes de la primera clase.</p>
+                <p className={s.practicaTitle}>Explora tu nivel orientativo</p>
+                <p className={s.practicaDesc}>La herramienta automática da una orientación inicial. No reemplaza la evaluación de un tutor.</p>
               </Link>
             </div>
           </div>
@@ -564,7 +538,7 @@ export default function ClasesDeFrancesPage() {
               <span className={s.accent}>es una sesión paga.</span>
             </h2>
             <p className={s.ctaSub}>
-              Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al DELF que necesitas.
+              Cuéntanos tu nivel y objetivo. Te explicamos las clases, horarios disponibles y el precio antes de agendar una sesión con tutor.
             </p>
             <div className={s.ctaBtns}>
               <a

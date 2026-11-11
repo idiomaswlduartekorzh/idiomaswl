@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import CourseOfferBand from '@/components/hub/CourseOfferBand';
+import { LEVELS, PLANS, selectionPath } from '@/lib/course-pricing/catalog';
 import s from './page.module.css';
 
 const WA = '573005004253';
 const WA_ICFES      = encodeURIComponent('Hola, quiero prepararme para el inglés del ICFES con WeLearn. ¿Cómo funciona?');
+const ICFES_PRICING_URL = selectionPath({ language: 'ingles', objective: 'ICFES inglés', plan: PLANS[0].id, level: LEVELS[0] });
 
 export const metadata: Metadata = {
   title: 'Preparación ICFES Inglés con tutor | WeLearn',
@@ -67,7 +70,6 @@ const jsonLd = {
           '@type': 'CourseInstance',
           courseMode: 'online',
           inLanguage: 'es',
-          instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
         },
       ],
     },
@@ -172,7 +174,7 @@ export default function PreparacionICFESPage() {
               </p>
               <div className={s.heroCtas}>
                 <Link href="/examenes/icfes" className={s.primaryBtn}>
-                  Hacer simulacro gratis →
+                  Explorar simulacro gratuito →
                 </Link>
                 <a
                   href={`https://wa.me/${WA}?text=${WA_ICFES}`}
@@ -186,6 +188,9 @@ export default function PreparacionICFESPage() {
                   Clases con tutor
                 </a>
               </div>
+              <p className={s.heroSub} style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+                <Link href={ICFES_PRICING_URL}>Ver planes, duración y precio de las clases →</Link>
+              </p>
             </div>
             <div className={s.heroStats}>
               <div className={s.statCard}>
@@ -293,7 +298,7 @@ export default function PreparacionICFESPage() {
               <div className={s.planStep}>
                 <div className={s.planN}>02</div>
                 <h3 className={s.planTitle}>Plan personalizado</h3>
-                <p className={s.planDesc}>Con los resultados del diagnóstico, diseñamos un plan de 8–12 semanas enfocado en tus puntos débiles específicos.</p>
+                <p className={s.planDesc}>Con los resultados del diagnóstico, diseñamos un plan orientativo de 8–12 semanas, equivalente a dos o tres ciclos de clases, enfocado en tus puntos débiles.</p>
               </div>
               <div className={s.planStep}>
                 <div className={s.planN}>03</div>
@@ -309,26 +314,28 @@ export default function PreparacionICFESPage() {
           </div>
         </section>
 
+        <CourseOfferBand language="ingles" name="ICFES Saber 11" objective="ICFES inglés" />
+
         {/* ══════════════ SIMULACRO DIRECTO ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
             <div style={{ background: 'linear-gradient(135deg, #0f3d8c12 0%, #0f3d8c06 100%)', border: '2px solid #0f3d8c30', borderRadius: 20, padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', flexWrap: 'wrap' }}>
               <div>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: '#0f3d8c18', border: '1px solid #0f3d8c30', borderRadius: 8, padding: '0.2rem 0.7rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.7rem' }}>
-                  Gratis · Sin registro
+                  Práctica automática gratuita
                 </div>
                 <h3 style={{ margin: '0 0 0.4rem', fontSize: '1.3rem', fontWeight: 800, color: 'var(--ink)' }}>
                   Haz el simulacro ICFES ahora mismo
                 </h3>
                 <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 460 }}>
-                  Bancos históricos atribuidos a material ICFES · resultado por sección al instante. La atribución por ítem aún está pendiente de cotejo; la aplicación estándar actual tiene 55 preguntas de Inglés.
+                  Bancos históricos atribuidos a material ICFES. La atribución por ítem aún está pendiente de cotejo; algunas funciones o resultados pueden pedir datos de contacto.
                 </p>
               </div>
               <Link
                 href="/examenes/icfes"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#0f3d8c', color: '#fff', padding: '0.85rem 1.75rem', borderRadius: 12, fontWeight: 700, fontSize: '1rem', textDecoration: 'none', whiteSpace: 'nowrap', flexShrink: 0 }}
               >
-                Iniciar simulacro gratis →
+                Explorar simulacro gratuito →
               </Link>
             </div>
           </div>
@@ -422,7 +429,7 @@ export default function PreparacionICFESPage() {
                   Hablar con un tutor
                 </a>
               </div>
-              <p className={s.ctaNote}>Sin registro ni tarjeta de crédito para el simulacro gratis.</p>
+              <p className={s.ctaNote}>La práctica automática es gratuita; algunas funciones o resultados pueden pedir datos de contacto.</p>
             </div>
           </div>
         </section>

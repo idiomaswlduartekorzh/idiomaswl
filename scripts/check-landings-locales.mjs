@@ -29,7 +29,8 @@ const LANDINGS = [
   { slug: 'clases-de-coreano', language: 'coreano', exams: ['TOPIK'] },
   { slug: 'clases-de-italiano', language: 'italiano', exams: ['CILS', 'CELI', 'Ciudadanía'], faqSingleSource: true },
   { slug: 'clases-de-portugues', language: 'portugués', exams: ['Celpe-Bras'] },
-  { slug: 'clases-de-frances', language: 'francés', exams: ['DELF', 'DALF'], faqSingleSource: true },
+  // Francés prioriza clases generales; DELF/DALF permanecen como ruta secundaria dentro de la página.
+  { slug: 'clases-de-frances', language: 'francés', exams: [], faqSingleSource: true },
   { slug: 'clases-de-aleman', language: 'alemán', exams: ['Goethe', 'Ausbildung'] },
   { slug: 'clases-de-japones', language: 'japonés', exams: ['JLPT'] },
   { slug: 'clases-de-ruso', language: 'ruso', exams: ['Cero'] },
@@ -133,6 +134,9 @@ for (const { slug, language, exams, faqSingleSource, localIntent = true, titleLo
   if (localIntent && !/<LocalBand/.test(source)) fail(slug, 'perdió el bloque NAP visible LocalBand.');
   if (!localIntent && !source.includes('href="/clases-de-ingles-bucaramanga"')) {
     fail(slug, 'perdió el enlace a la ruta local de Bucaramanga.');
+  }
+  if (slug === 'clases-de-frances' && (!source.includes('DELF') || !source.includes('DALF'))) {
+    fail(slug, 'perdió las rutas secundarias DELF y DALF.');
   }
   for (const schemaType of ['BreadcrumbList', 'Course', 'FAQPage']) {
     if (!source.includes(`'${schemaType}'`)) fail(slug, `perdió ${schemaType} del JSON-LD.`);
