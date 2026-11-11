@@ -1,20 +1,24 @@
-'use client'
+import { IRREGULAR_VERBS_REFERENCE_PDF } from '@/data/practica/recursos/verbos-irregulares-100'
 
-import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
-
-// Envoltorio de cliente: IrregularVerbsReference es un server component (su
-// tabla tiene que ser rastreable por Google), así que no puede pasar una
-// función al botón. Este trozo mínimo es lo único que corre en el navegador.
+// Descarga estable del PDF editorial que también aparece en la biblioteca del
+// tema. La tabla HTML permanece rastreable y el enlace funciona sin fabricar
+// un segundo archivo distinto en el navegador.
 export default function IrregularVerbsPdfButton({ color }: { color: string }) {
+  const tone = /^#[0-9a-fA-F]{6}$/.test(color) ? color : '#14215c'
+
   return (
-    <PdfDownloadButton
-      color={color}
-      compact
-      label="Descargar la lista en PDF"
-      generate={async () => {
-        const { generateVerbsResourcePdf } = await import('@/lib/pdf/generateVerbsResourcePdf')
-        await generateVerbsResourcePdf()
+    <a
+      href={IRREGULAR_VERBS_REFERENCE_PDF}
+      download
+      aria-label="Descargar la tabla completa de 100 verbos irregulares en PDF"
+      style={{
+        display: 'inline-flex', alignItems: 'center', gap: '0.45rem', padding: '0.48rem 0.8rem',
+        borderRadius: 10, border: `1.5px solid ${tone}44`, background: `${tone}0d`,
+        color: tone, fontWeight: 800, fontSize: '0.82rem', textDecoration: 'none',
       }}
-    />
+    >
+      <span aria-hidden="true">↓</span>
+      Descargar tabla completa · 100 verbos
+    </a>
   )
 }

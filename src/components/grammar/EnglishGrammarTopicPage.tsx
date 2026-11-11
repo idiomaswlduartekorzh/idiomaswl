@@ -4,6 +4,7 @@ import { isAdvancedPilot, type EnglishGrammarLevel } from '@/data/english-gramma
 import EnglishGrammarLesson from '@/components/grammar/EnglishGrammarLesson'
 import TopicNav from '@/components/grammar/TopicNav'
 import { getEnglishGrammarResource } from '@/data/english-grammar-preview'
+import { IRREGULAR_VERBS_REFERENCE_PDF } from '@/data/practica/recursos/verbos-irregulares-100'
 import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
 
 type RelatedWritingExercise = { id: string; sequence: number; title: string; genre: string }
@@ -18,6 +19,7 @@ export default function EnglishGrammarTopicPage({ topic, level, relatedWritingEx
     { '@type': 'MediaObject', name: advancedPilot ? 'Complete grammar guide' : 'Cuaderno PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf', inLanguage: advancedPilot ? 'en' : ['es', 'en'] },
     ...(resource.exercisesPdf ? [{ '@type': 'MediaObject', name: 'Grammar exercise workbook', contentUrl: `https://www.idiomaswl.com${resource.exercisesPdf}`, encodingFormat: 'application/pdf', inLanguage: 'en' }] : []),
     ...(resource.answerKeyPdf ? [{ '@type': 'MediaObject', name: 'Grammar answer key', contentUrl: `https://www.idiomaswl.com${resource.answerKeyPdf}`, encodingFormat: 'application/pdf', inLanguage: 'en' }] : []),
+    ...(topic.slug === 'past-simple-irregular' ? [{ '@type': 'MediaObject', name: '100 irregular verbs reference table', contentUrl: `https://www.idiomaswl.com${IRREGULAR_VERBS_REFERENCE_PDF}`, encodingFormat: 'application/pdf', inLanguage: ['en', 'es'] }] : []),
     ...resource.audioTracks.map((track) => ({ '@type': 'AudioObject', name: track.title, contentUrl: `https://www.idiomaswl.com${track.src}`, encodingFormat: 'audio/mp4', inLanguage: 'en' })),
   ]
   const jsonLd = {

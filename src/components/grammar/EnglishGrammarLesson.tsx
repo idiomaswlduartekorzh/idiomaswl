@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
 import { getEnglishGrammarResource, isAdvancedPilot, type EnglishGrammarLevel } from '@/data/english-grammar-preview'
+import { IRREGULAR_VERBS_REFERENCE_PDF } from '@/data/practica/recursos/verbos-irregulares-100'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
@@ -45,6 +46,7 @@ export default function EnglishGrammarLesson({
   const [active, setActive] = useState<SectionId>('comprender')
   const formulaParts = splitFormula(topic.guide.formula)
   const practiceActivityCount = countPracticeActivities(topic)
+  const irregularVerbsReference = topic.slug === 'past-simple-irregular'
 
   function selectSection(id: SectionId) {
     setActive(id)
@@ -60,7 +62,7 @@ export default function EnglishGrammarLesson({
       style={{ '--kr-blue': '#012169', '--kr-red': '#c8102e', '--kr-cream': '#f5f2ea' } as React.CSSProperties}
       aria-labelledby="english-grammar-title"
     >
-      <div className={styles.previewFlag}><span>{advancedPilot ? 'Complete advanced lesson' : 'Página completa'}</span> {advancedPilot ? 'Visual map, three PDFs and extended practice ready' : 'Audio inglés nativo, PDF y práctica listos'}</div>
+      <div className={styles.previewFlag}><span>{advancedPilot ? 'Complete advanced lesson' : 'Página completa'}</span> {advancedPilot ? 'Visual map, three PDFs and extended practice ready' : 'Audio inglés nativo, PDFs y práctica listos'}</div>
       <div className={styles.track} aria-label={english ? `English grammar route ${level.toUpperCase()}` : `Ruta de gramática inglesa ${level.toUpperCase()}`}>
         <span>{english ? 'Foundations' : 'Fundamentos'}</span><b>→</b><strong>{english ? 'Grammar' : 'Gramática'}</strong><b>→</b><span>{english ? 'Real use' : 'Uso real'}</span><b>→</b><span>{english ? 'Production' : 'Producción'}</span>
       </div>
@@ -179,12 +181,13 @@ export default function EnglishGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker={english ? 'Study library' : 'Biblioteca de estudio'} title={english ? 'Study materials ready to use' : 'Material listo para estudiar'} copy={resource.audioTracks.length ? `Descarga el cuaderno y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.` : (english ? 'Download the printable workbook and keep the infographic as a quick reference for this topic.' : 'Descarga el cuaderno imprimible y conserva la infografía como referencia rápida del tema.')} titleId="resources-title" />
+            <SectionIntro kicker={english ? 'Study library' : 'Biblioteca de estudio'} title={english ? 'Study materials ready to use' : 'Material listo para estudiar'} copy={irregularVerbsReference ? `Descarga la tabla completa de 100 verbos por familias, los tres PDF de la lección y usa las ${resource.audioTracks.length} pistas nativas.` : (resource.audioTracks.length ? `Descarga los PDF de la lección y usa las ${resource.audioTracks.length} pistas nativas dentro de la lección o fuera de línea.` : (english ? 'Download the printable workbook and keep the infographic as a quick reference for this topic.' : 'Descarga el cuaderno imprimible y conserva la infografía como referencia rápida del tema.'))} titleId="resources-title" />
             <div className={styles.resourceGrid}>
               <ResourceCard code="WEB" title={english ? 'Interactive lesson' : 'Lección interactiva'} copy={english ? `${topic.practice.levels.length} stages and ${practiceActivityCount} activities already integrated.` : `${topic.practice.levels.length} niveles y ${practiceActivityCount} actividades ya integradas.`} status={english ? 'Ready to review' : 'Lista para revisar'} />
               <ResourceCard code="PDF" title={english ? 'Complete guide' : 'Guía y cuaderno'} copy={english ? 'Full explanation, guided visual map, practice and answer key in one editorial workbook.' : 'Explicación, mapa, práctica y soluciones con la misma jerarquía visual.'} status={english ? 'Download complete PDF' : 'Descargar PDF'} href={resource.pdf} />
               {resource.exercisesPdf ? <ResourceCard code="WORK" title={english ? 'Exercises only' : 'Cuaderno de ejercicios'} copy={english ? `${practiceActivityCount} learning decisions organised for printing, classroom use or independent practice.` : `${practiceActivityCount} decisiones organizadas para imprimir, usar en clase o practicar de forma independiente.`} status={english ? 'Download exercises' : 'Descargar ejercicios'} href={resource.exercisesPdf} /> : null}
               {resource.answerKeyPdf ? <ResourceCard code="KEY" title={english ? 'Answer key' : 'Solucionario razonado'} copy={english ? 'Model answers with a concise explanation of the grammar decision behind each response.' : 'Respuestas modelo con la explicación de la decisión gramatical detrás de cada solución.'} status={english ? 'Download answer key' : 'Descargar soluciones'} href={resource.answerKeyPdf} /> : null}
+              {irregularVerbsReference ? <ResourceCard code="100" title="Tabla completa de verbos irregulares" copy="Base, past, participle y español, organizados en 14 familias para estudiar patrones y no cien filas aisladas." status="Descargar tabla de 100 verbos" href={IRREGULAR_VERBS_REFERENCE_PDF} /> : null}
               {resource.audioTracks.length ? <ResourceCard code="AUDIO" title="Inglés nativo" copy="Tres modelos con pronunciación clara y ritmo natural." status="3 pistas listas" /> : <ResourceCard code="MAP" title={english ? 'Topic infographic' : 'Infografía del tema'} copy={english ? 'Rule, contrast and examples organised for quick review.' : 'Regla, contraste y ejemplos organizados para repasar de una sola mirada.'} status={english ? 'Included in the lesson' : 'Incluida en la lección'} />}
             </div>
             {resource.audioTracks.length ? <AudioDownloads tracks={resource.audioTracks} /> : null}

@@ -18,6 +18,9 @@ export interface IrregularVerbGroup {
   verbs: IrregularVerbEntry[]
 }
 
+export const IRREGULAR_VERBS_REFERENCE_PDF =
+  '/api/site-materials/ingles-recursos/100-verbos-irregulares-ingles-welearn.pdf'
+
 export const IRREGULAR_VERBS_100: IrregularVerbGroup[] = [
   {
     id: 'sin-cambio',

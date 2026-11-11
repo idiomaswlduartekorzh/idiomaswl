@@ -83,7 +83,7 @@ def page_decor(canvas, doc, short_title: str):
     canvas.rect(0, height - 20 * mm, width, 2 * mm, stroke=0, fill=1)
     canvas.setFont("WeLearnBold", 9)
     canvas.setFillColor(WHITE)
-    canvas.drawString(16 * mm, height - 11.5 * mm, "WELEARN · INGLÉS A1–B1")
+    canvas.drawString(16 * mm, height - 11.5 * mm, "WELEARN · INGLÉS A1-B1")
     canvas.setFont("WeLearn", 7.5)
     canvas.drawRightString(width - 16 * mm, height - 11.5 * mm, short_title)
     canvas.setStrokeColor(colors.HexColor("#D9E4E8"))
@@ -138,7 +138,15 @@ def pdf_styles():
 
 
 def p(text: str, style) -> Paragraph:
-    safe = (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+    safe = (
+        str(text)
+        .replace("–", "-")
+        .replace("—", "-")
+        .replace("‑", "-")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
     return Paragraph(safe, style)
 
 
@@ -190,7 +198,7 @@ def cover_story(resource: dict, styles: dict, study_points: list[str]):
         *[Paragraph(f"• {point}", styles["body"]) for point in study_points],
         Spacer(1, 6 * mm),
         Table(
-            [[p("Estudia la lista → practica el tema → vuelve y produce tus propios ejemplos.", styles["center"])]],
+            [[p("Estudia la lista -> practica el tema -> vuelve y produce tus propios ejemplos.", styles["center"])]],
             colWidths=[168 * mm],
             style=TableStyle([
                 ("BACKGROUND", (0, 0), (-1, -1), GOLD),
@@ -241,9 +249,18 @@ def build_irregular_pdf(data: dict, styles: dict):
         table = Table(rows, colWidths=[31 * mm, 34 * mm, 38 * mm, 65 * mm], repeatRows=1)
         table.setStyle(table_style(compact=True))
         story.extend([table, Spacer(1, 5 * mm)])
-    story.extend([PageBreak(), Paragraph("Mini reto: activa la memoria", styles["h2"]), Paragraph(
-        "Tapa las columnas Past y Participle. Completa diez verbos cada día y escribe dos historias: una en past simple y otra en present perfect.", styles["body"]
-    ), Paragraph("Practica con ejercicios autocorregibles en idiomaswl.com/practica/ingles/a2/gramatica/past-simple-irregular", styles["body"])])
+    story.append(KeepTogether([
+        Spacer(1, 2 * mm),
+        Paragraph("Mini reto: activa la memoria", styles["h2"]),
+        Paragraph(
+            "Tapa las columnas Past y Participle. Completa diez verbos cada día y escribe dos historias: una en past simple y otra en present perfect.",
+            styles["body"],
+        ),
+        Paragraph(
+            "Practica con ejercicios autocorregibles en idiomaswl.com/practica/ingles/a2/gramatica/past-simple-irregular",
+            styles["body"],
+        ),
+    ]))
     build_pdf(PUBLIC_PDF_DIR / SLUG_TO_PDF[resource["slug"]], resource, story, "100 verbos irregulares")
 
 
