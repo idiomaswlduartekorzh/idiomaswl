@@ -1,10 +1,15 @@
 const AXES = ['Evidence', 'Scope', 'Intent', 'Purpose']
 const AREA_GROUPS = ['Marketing', 'Software', 'People', 'Health administration', 'Operations']
 const words = value => typeof value === 'string' ? value.trim().split(/\s+/u).filter(Boolean).length : 0
+const characters = value => typeof value === 'string' ? Array.from(value.replace(/\s/gu, '')).length : 0
 const present = value => typeof value === 'string' && value.trim().length > 0
 
 export function validateWritingWorkplaceCases(cases, expectedCount = 3, options = {}) {
   const issues = []
+  const countLength = options.lengthUnit === 'characters' ? characters : words
+  const emailRange = options.lengthUnit === 'characters' ? [100, 600] : [35, 130]
+  const modelRange = options.lengthUnit === 'characters' ? [250, 900] : [110, 230]
+  const unit = options.lengthUnit === 'characters' ? 'characters' : 'words'
   if (!Array.isArray(cases)) return ['Case bank must be an array.']
   if (cases.length !== expectedCount) issues.push(`Case bank needs ${expectedCount} cases; found ${cases.length}.`)
 
@@ -37,7 +42,7 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3, options 
     for (const field of ['from', 'to', 'sent', 'subject', 'body']) {
       if (!present(item?.email?.[field])) issues.push(`${id}: missing email.${field}.`)
     }
-    if (words(item?.email?.body) < 35 || words(item?.email?.body) > 130) issues.push(`${id}: email should contain 35–130 words.`)
+    if (countLength(item?.email?.body) < emailRange[0] || countLength(item?.email?.body) > emailRange[1]) issues.push(`${id}: email should contain ${emailRange[0]}–${emailRange[1]} ${unit}.`)
     if (!present(item?.document?.title) || !present(item?.document?.intro)) issues.push(`${id}: incomplete facts document.`)
 
     const facts = item?.document?.facts ?? []
@@ -85,9 +90,9 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3, options 
     if (!present(item?.task?.prompt) || !present(item?.task?.wordGuide)) issues.push(`${id}: incomplete reply task.`)
     if (item?.task?.criteria?.length !== 4 || item.task.criteria.some(value => !present(value))) issues.push(`${id}: reply task needs four concrete criteria.`)
     if (!present(item?.model?.subject) || !present(item?.model?.body)) issues.push(`${id}: incomplete model reply.`)
-    if (words(item?.model?.body) < 110 || words(item?.model?.body) > 230) issues.push(`${id}: model reply should contain 110–230 words.`)
+    if (countLength(item?.model?.body) < modelRange[0] || countLength(item?.model?.body) > modelRange[1]) issues.push(`${id}: model reply should contain ${modelRange[0]}–${modelRange[1]} ${unit}.`)
     const guide = item?.task?.wordGuide?.match(/(\d+)[–-](\d+)/u)
-    if (guide && (words(item?.model?.body) < Number(guide[1]) || words(item?.model?.body) > Number(guide[2]))) {
+    if (guide && (countLength(item?.model?.body) < Number(guide[1]) || countLength(item?.model?.body) > Number(guide[2]))) {
       issues.push(`${id}: model reply falls outside its published word guide.`)
     }
     if (modelBodies.has(item?.model?.body)) issues.push(`${id}: model reply repeats another case.`)

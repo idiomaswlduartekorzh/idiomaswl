@@ -49,7 +49,7 @@ El harness exige cuatro casos por cada una de
 cinco áreas, evidencia referenciada y claves variadas. Las rutas nuevas siguen
 con `noindex` y los hubs no las anuncian todavía.
 
-Pasaron el harness de los 60 casos ingleses, los 60 franceses, las nueve pruebas del harness B2,
+Pasaron el harness de los 60 casos ingleses, los 60 franceses, las diez pruebas del harness B2,
 ESLint y TypeScript acotado de las rutas nuevas. Se recorrieron en navegador
 inglés B2, C1 y C2 y francés B2. Pendientes: recorrido de francés C1/C2, cierre lingüístico de los bancos
 en curso, revisión de salud administrativa, catálogo completo, TypeScript

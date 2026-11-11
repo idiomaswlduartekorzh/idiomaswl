@@ -72,3 +72,15 @@ test('distractor feedback must explain more than a quoted option', () => {
   distractor.feedback = `«${distractor.text}» does not match the record.`
   assert.ok(validateWritingWorkplaceCases(altered, 20).some(issue => issue.includes('echoes the option')))
 })
+
+test('Japanese and Korean length guides count characters rather than spaces', () => {
+  const altered = copy().slice(0, 1)
+  altered[0].email.body = 'あ'.repeat(120)
+  altered[0].model.body = '漢'.repeat(260)
+  altered[0].model.annotations.forEach(note => { note.excerpt = '漢' })
+  altered[0].task.wordGuide = '250–300字'
+  const validIssues = validateWritingWorkplaceCases(altered, 1, { lengthUnit: 'characters' })
+  assert.ok(!validIssues.some(issue => issue.includes('characters') || issue.includes('outside its published word guide')))
+  altered[0].model.body = '漢'.repeat(200)
+  assert.ok(validateWritingWorkplaceCases(altered, 1, { lengthUnit: 'characters' }).some(issue => issue.includes('model reply should contain 250–900 characters')))
+})

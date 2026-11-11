@@ -35,6 +35,8 @@ Cada JSON `src/data/practica/writing-workplace-<idioma>-<nivel>.json` (inglés c
 
 El campo interno `area` conserva cinco grupos canónicos para el harness; `areaLabel` muestra el dominio en el idioma estudiado. Correo, hechos, preguntas, feedback, consigna, modelo, botones, navegación y metadatos deben estar en la lengua meta. Las referencias a hechos permiten detectar claves sin sustento estructural. Un auditor humano sigue siendo necesario para juzgar realismo, intención implícita, naturalidad y afirmaciones inventadas; el script no puntúa semánticamente el texto del estudiante.
 
+En japonés y coreano, la guía y el contador usan caracteres sin espacios; el harness acepta correos de 100–600 caracteres y modelos de 250–900, además de comprobar el intervalo publicado en cada caso. En las otras lenguas usa palabras separadas por espacios.
+
 ## Puertas ejecutables
 
 ```bash

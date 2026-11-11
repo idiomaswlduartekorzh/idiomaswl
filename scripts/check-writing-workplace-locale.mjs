@@ -18,7 +18,10 @@ for (const level of ['b2', 'c1', 'c2']) {
     continue
   }
   const cases = JSON.parse(fs.readFileSync(path, 'utf8'))
-  const issues = validateWritingWorkplaceCases(cases, 20, { requireAreaLabel: true })
+  const issues = validateWritingWorkplaceCases(cases, 20, {
+    requireAreaLabel: true,
+    lengthUnit: slug === 'japones' || slug === 'coreano' ? 'characters' : 'words',
+  })
   for (const item of cases) {
     if (titles.has(item.title)) issues.push(`${item.id}: title repeats within ${slug}.`)
     titles.add(item.title)

@@ -25,8 +25,11 @@ const stages: Stage[] = ['email', 'document', 'analysis', 'reply', 'review']
 
 const emptyNotes: Notes = { fact: '', assumption: '', responsibility: '' }
 
-function words(value: string) {
-  return value.trim() ? value.trim().split(/\s+/u).length : 0
+function writingLength(value: string, language: string) {
+  if (!value.trim()) return 0
+  return language === 'ja' || language === 'ko'
+    ? Array.from(value.replace(/\s/gu, '')).length
+    : value.trim().split(/\s+/u).length
 }
 
 export default function WorkplaceWritingExperience({ language = 'en', level, cases }: { language?: WritingLocale; level: WritingLevel; cases: WorkplaceCase[] }) {
@@ -216,7 +219,7 @@ export default function WorkplaceWritingExperience({ language = 'en', level, cas
               <section className={styles.panel} aria-labelledby="reply-title">
                 <div className={styles.sectionHeading}><span>{ui.replyStep}</span><h2 id="reply-title">{ui.replyTitle}</h2><p>{current.task.prompt}</p></div>
                 <div className={styles.replyGrid}>
-                  <div className={styles.editor}><div className={styles.editorHeader}><span>{ui.to}: {current.email.from}</span><strong>{ui.replyPrefix} {current.email.subject}</strong></div><label htmlFor="workplace-reply">{ui.replyLabel}</label><textarea id="workplace-reply" rows={14} value={draft} onChange={event => setDrafts(previous => ({ ...previous, [current.id]: event.target.value }))} placeholder={ui.replyPlaceholder} /><div className={styles.editorFooter}><span>{words(draft)} {ui.wordUnit} · {current.task.wordGuide}</span><span>{ui.draftSaved}</span></div></div>
+                  <div className={styles.editor}><div className={styles.editorHeader}><span>{ui.to}: {current.email.from}</span><strong>{ui.replyPrefix} {current.email.subject}</strong></div><label htmlFor="workplace-reply">{ui.replyLabel}</label><textarea id="workplace-reply" rows={14} value={draft} onChange={event => setDrafts(previous => ({ ...previous, [current.id]: event.target.value }))} placeholder={ui.replyPlaceholder} /><div className={styles.editorFooter}><span>{writingLength(draft, language)} {ui.wordUnit} · {current.task.wordGuide}</span><span>{ui.draftSaved}</span></div></div>
                   <aside className={styles.replyAside}><h3>{ui.beforeSend}</h3><ul>{current.task.criteria.map(criterion => <li key={criterion}>{criterion}</li>)}</ul><p>{ui.wordGuideNote}</p></aside>
                 </div>
                 {showEmptyWarning && <p className={styles.feedbackTry} role="alert">{ui.emptyReply}</p>}
