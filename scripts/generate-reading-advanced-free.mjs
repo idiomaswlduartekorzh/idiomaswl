@@ -81,7 +81,7 @@ async function requestGemini(message) {
     signal: AbortSignal.timeout(120_000),
   })
   const result = await response.json()
-  if (!response.ok) throw new Error(`Gemini ${response.status}: ${result.error?.message?.slice(0, 180) ?? 'unknown error'}`)
+  if (!response.ok) throw new Error(`Gemini ${response.status}: ${result.error?.message?.slice(0, 800) ?? 'unknown error'}`)
   return result.candidates?.[0]?.content?.parts?.map((part) => part.text ?? '').join('') ?? ''
 }
 
@@ -161,19 +161,24 @@ async function balanceOptionLengths(item, language, call) {
   const desired = ['shortest', 'middle', 'longest', 'shortest', 'middle', 'longest']
   const needed = item.questions.map((question, index) => ({ question, index })).filter(({ question, index }) => answerRank(question) !== desired[index])
   if (!needed.length) return item
-  const message = `Return only JSON {"replacements":[{"index":number,"wrongOptions":[string,string]}]}. Rewrite the two WRONG answer options for each question below in ${languages[language]}. Keep the correct answer unchanged. Each new wrong option must remain plausible but clearly false or unsupported by the quoted evidence; avoid silly, generic or meta distractors. Make their lengths such that the correct answer has the requested STRICT rank by Unicode character count: shortest means both wrong options longer, middle means one shorter and one longer, longest means both shorter. No ties. Respond for every requested index.\n${needed.map(({ question, index }) => JSON.stringify({ index, prompt: question.prompt, evidence: question.evidence, correct: question.options[question.correct], wrongOptions: question.options.filter((_, optionIndex) => optionIndex !== question.correct), desiredRank: desired[index] })).join('\n')}`
+  const message = `Return only a JSON object with a replacements array. Each item needs an integer index and wrongOptions with exactly two strings. Rewrite the two WRONG answer options for each question below in ${languages[language]}. Keep the correct answer unchanged. Each new wrong option must remain plausible but clearly false or unsupported by the quoted evidence; avoid silly, generic or meta distractors. Make their lengths such that the correct answer has the requested STRICT rank by Unicode character count: shortest means both wrong options longer, middle means one shorter and one longer, longest means both shorter. No ties. Respond for every requested index.\n${needed.map(({ question, index }) => JSON.stringify({ index, prompt: question.prompt, evidence: question.evidence, correct: question.options[question.correct], wrongOptions: question.options.filter((_, optionIndex) => optionIndex !== question.correct), desiredRank: desired[index] })).join('\n')}`
   try {
     const raw = await call(message)
     const result = JSON.parse(raw.replace(/^```(?:json)?\s*|\s*```$/g, '').trim())
-    if (!Array.isArray(result.replacements) || result.replacements.length !== needed.length) return item
+    if (!Array.isArray(result.replacements)) return item
     const candidate = structuredClone(item)
     for (const replacement of result.replacements) {
-      if (!Number.isInteger(replacement.index) || !needed.some((entry) => entry.index === replacement.index) || !Array.isArray(replacement.wrongOptions) || replacement.wrongOptions.length !== 2 || replacement.wrongOptions.some((option) => typeof option !== 'string' || option.trim().length < 3)) return item
+      if (!Number.isInteger(replacement.index) || !needed.some((entry) => entry.index === replacement.index) || !Array.isArray(replacement.wrongOptions) || replacement.wrongOptions.length !== 2 || replacement.wrongOptions.some((option) => typeof option !== 'string' || option.trim().length < 3)) continue
       const question = candidate.questions[replacement.index]
+      const original = structuredClone(question)
       let wrongIndex = 0
       question.options = question.options.map((option, index) => index === question.correct ? option : replacement.wrongOptions[wrongIndex++].trim())
+      const rankIndex = { shortest: 0, middle: 1, longest: 2 }
+      const oldDistance = Math.abs(rankIndex[answerRank(original)] - rankIndex[desired[replacement.index]])
+      const newDistance = Math.abs(rankIndex[answerRank(question)] - rankIndex[desired[replacement.index]])
+      if (newDistance >= oldDistance) candidate.questions[replacement.index] = original
     }
-    if (candidate.questions.every((question, index) => answerRank(question) === desired[index])) return candidate
+    return candidate
   } catch (error) { console.error(`Option-length repair skipped: ${error.message}`) }
   return item
 }
@@ -260,7 +265,7 @@ for (const { language, level, brief } of pending) {
   completed++
   console.log(`✓ ${exercise.id}: ${exercise.content.wordCount} ${units[language]}`)
   await rebuildCatalog()
-  if (completed < maximum) await new Promise((resolve) => setTimeout(resolve, provider === 'groq' ? 25_000 : 5000))
+  if (completed < maximum) await new Promise((resolve) => setTimeout(resolve, provider === 'groq' ? 25_000 : 20_000))
 }
 if (failedCount) process.exitCode = 1
 console.log(`Generated ${completed} new drafts; ${failedCount} skipped in this run. All remain unpublished.`)

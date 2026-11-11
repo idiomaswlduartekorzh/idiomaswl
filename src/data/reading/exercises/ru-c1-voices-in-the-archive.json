@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "russian C1"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Смещение тона",
+      "en": "Смещение тона"
+    },
+    "intro": {
+      "es": "Прочитайте художественный текст о споре вокруг устной истории и выполните задания уровня C1.",
+      "en": "Прочитайте художественный текст о споре вокруг устной истории и выполните задания уровня C1."
+    },
+    "mission": {
+      "es": "Проанализируйте конфликт между архивной точностью и живым повествованием, затем ответьте на вопросы и напишите эссе.",
+      "en": "Проанализируйте конфликт между архивной точностью и живым повествованием, затем ответьте на вопросы и напишите эссе."
+    },
+    "targetText": "Вечерний свет в цокольном этаже фонда устной истории падал косыми лучами на стеллажи с нумерованными коробками. Архивариус Илья Лавров аккуратно перебирал бумажные папки, сверяясь с реестром описей, в то время как фольклорист и документалист Кира Ремизова сидела у монитора, сжав губы. На экране мерцала расшифровка интервью с Матвеем Смирновым — старым плотником из Заречья, чья речь изобиловала местными диалектизмами, обрóвками фраз и паратаксисом. Илья считал, что сохранение сырого аудиоматериала без текстовой шлифовки дискредитирует сам институт памяти, превращая его в склад речевого мусора. Кира же утверждала, что любое вмешательство в синтаксис стирает саму личность говорящего, подменяя подлинный человеческий голос стерильной музейной нормой. Их профессиональный спор назревал давно, но сегодняшняя ночь перед сдачей грантового альбома стала точкой кипения. Илья взял со стола распечатку и, постукивая по ней карандашом, указал на абзац, где рассказчик путал падежи и трижды начинал предложение со слова «значит». По его мнению, такая бессвязность лишь утомляла читателя, отвлекая от ценных этнографических деталей о строительстве барж. Кира парировала тем, что именно эти спотыкания и паузы создают психологический объем, без которого рассказ превращается в безликую справку. Постепенно их дискуссия вышла за рамки технической корректуры, задев фундаментальный вопрос о том, кому на самом деле принадлежат зафиксированные воспоминания — тому, кто их прожил, или тому, кто их упорядочил. Напряжение в комнате нарастало вместе с гулом старого кулера, пока Илья не предложил компромисс: оставить спорные фрагменты в приложении, но основной текст выровнять по литературным канонам. Кира категорически отвергла этот вариант, заявив, что подобная сегрегация превращает живую речь в курьезный экспонат для праздных зевак. В этот момент зазвонил телефон: директор фонда сообщил, что спонсоры внезапно потребовали сократить общий объем издания вдвое, что делало невозможным сохранение как пространных оригинальных цитат, так и пространных комментариев. Перед лицом внешнего давления оба исследователя поняли, что их теоретические дебаты потеряли всякий практический смысл. Илья медленно положил карандаш на стол, осознавая, что компромисс теперь диктуется не филологическими убеждениями, а безжалостным лимитом знаков. Кира закрыла файл на экране, не сказав больше ни слова, а тишину в архиве нарушало лишь мерное потрескивание ламп.\n\nОднако этот бюрократический ультиматум парадоксальным образом не примирил оппонентов, а лишь обнажил всю глубину их методологического тупика, заставив взглянуть на проблему с неожиданной и пугающей стороны. Если раньше казалось, что выбор сводится исключительно к дилемме между пуристской сухостью и хаотичным натурализмом, то теперь жесткий дефицит пространства вынуждал их искать принципиально иную форму репрезентации чужого опыта. Сокращение объема до критического минимума означало, что любое оставленное слово будет нести колоссальную смысловую нагрузку, работая как сгусток энергии памяти, способный либо оживить образ Матвея Смирнова, либо окончательно исказить его до неузнаваемости. Илья, привыгший доверять системной классификации, вдруг отчетливо понял, что при тотальном урезании текста традиционные литературные стандарты рискуют превратиться в бессмысленную маскировку, лишенную живого дыхания эпохи. Сжатый до нескольких абзацев рассказ о зареченских баржах без диалектных шероховатостей и характерных сбоев ритма рисковал потерять свою уникальную фактуру, превратившись в безликую энциклопедическую выжимку, автором которой станет не сам плотник, а безликий редактор. С другой стороны, Кира осознала, что сохранение фрагментарных цитат в условиях катастрофической нехватки знаков приведет к мозаичному эффекту, где редкие диалектизмы будут восприниматься неподготовленным читателем не как проявление подлинной психологической глубины, а как невнятный речевой дефект или досадный технический брак стенографистки. Внезапно оба исследователя осознали горькую истину: архивное дело никогда не является простым зеркалом прошлого, это всегда акт насилия над памятью, независимо от того, совершается ли оно во имя высокой литературы или во имя абсолютной аутентичности. Полуночный инцидент продемонстрировал, что грантовый альманах не сможет вместить в себя всю полноту человеческой судьбы Матвея Смирнова, сколь бы тщательно они ни выверяли каждую запятую и каждый деепричастный оборот. Разговор, начавшийся как академическая дискуссия о синтаксисе, завершился молчаливым признанием того факта, что подлинная устная история принципиально неуловима для печатного станка, ускользая сквозь любые регламенты, стандарты и шрифтовые кегли. Илья подошел к окну, за которым бледнел предрассветный свет фонарей, отражающийся в лужах асфальта, и почувствовал странную профессиональную усталость, смешанную с освобождением от иллюзий. Кира тем временем медленно встала из-за стула, выключила монитор, погрузив комнату в полумрак, и положила блокнот в сумку, словно ставя точку в споре, который не имел победителей. В наступившей тишине цокольного этажа стало очевидно, что грантовый альбом будет сдан вовремя, но зафиксированная на его страницах история останется лишь осколком некогда звучавшего голоса, зажатого между жесткими рамками государственного заказа и бескомпромиссными требованиями формата.",
+    "wordCount": 696,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "паратаксисом",
+        "lemma": "паратаксисом",
+        "glosses": {
+          "es": "parataxis, coordination of clauses without conjunctions",
+          "en": "parataxis, coordination of clauses without conjunctions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "корректуры",
+        "lemma": "корректуры",
+        "glosses": {
+          "es": "proofreading, textual correction",
+          "en": "proofreading, textual correction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сегрегация",
+        "lemma": "сегрегация",
+        "glosses": {
+          "es": "segregation, separation",
+          "en": "segregation, separation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "этнографических",
+        "lemma": "этнографических",
+        "glosses": {
+          "es": "ethnographic",
+          "en": "ethnographic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "курьезный",
+        "lemma": "курьезный",
+        "glosses": {
+          "es": "curious, odd",
+          "en": "curious, odd"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дебаты",
+        "lemma": "дебаты",
+        "glosses": {
+          "es": "debates, discussions",
+          "en": "debates, discussions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.9,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:59:10.487Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема этого рассказа?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Столкновение двух подходов к обработке устной речи"
+        },
+        {
+          "id": "a2",
+          "text": "Технические проблемы оцифровки старых аудиозаписей"
+        },
+        {
+          "id": "a3",
+          "text": "Финансовый кризис в научно-исследовательском фонде"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Их профессиональный спор назревал давно, но сегодняшняя ночь перед сдачей грантового альбома стала точкой кипения.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Какая конкретная деталь заставила Илью указать на недостатки текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Использование архаизмов"
+        },
+        {
+          "id": "a2",
+          "text": "Путаница в падежах"
+        },
+        {
+          "id": "a3",
+          "text": "Длинные описания барж"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Илья взял со стола распечатку и, постукивая по ней карандашом, указал на абзац, где рассказчик путал падежи и трижды начинал предложение со слова «значит».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Кира отвергла предложенный Ильей компромисс?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "У нее не было времени на переверстку приложения"
+        },
+        {
+          "id": "a2",
+          "text": "Директор фонда запретил публиковать диалектизмы"
+        },
+        {
+          "id": "a3",
+          "text": "Она считала разделение текста унизительным для живой речи"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Кира категорически отвергла этот вариант, заявив, что подобная сегрегация превращает живую речь в курьезный экспонат для праздных зевак.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор вводит звонок директора в сюжет?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы прервать спор внешним обстоятельством"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы показать авторитет руководителя"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы добавить элемент случайности"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "В этот момент зазвонил телефон: директор фонда сообщил, что спонсоры внезапно потребовали сократить общий объем издания вдвое, что делало невозможным сохранение как пространных оригинальных цитат, так и пространных комментариев.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как можно охарактеризовать общую атмосферу финала истории?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Торжественная"
+        },
+        {
+          "id": "a2",
+          "text": "Разочарованная"
+        },
+        {
+          "id": "a3",
+          "text": "Меланхоличная"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Перед лицом внешнего давления оба исследователя поняли, что их теоретические дебаты потеряли всякий практический смысл.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что в тексте обозначает словосочетание «синтаксис стирает саму личность говорящего» в контексте позиции Киры?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Грамматические правила усложняют чтение"
+        },
+        {
+          "id": "a2",
+          "text": "Архивные стандарты портят качество звука"
+        },
+        {
+          "id": "a3",
+          "text": "Литературная правка уничтожает индивидуальность"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Кира же утверждала, что любое вмешательство в синтаксис стирает саму личность говорящего, подменяя подлинный человеческий голос стерильной музейной нормой.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите развёрнутый комментарий объемом 180–220 слов на русском языке, рассуждая о том, где проходит грань между научной адаптацией документального источника и уважением к авторскому голосу говорящего.",
+      "en": "Напишите развёрнутый комментарий объемом 180–220 слов на русском языке, рассуждая о том, где проходит грань между научной адаптацией документального источника и уважением к авторскому голосу говорящего."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Проанализируйте конфликт между архивной точностью и живым повествованием, затем ответьте на вопросы и напишите эссе.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:59:10.487Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Смещение тона | C1 Reading | WeLearn",
+      "en": "Смещение тона | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте художественный текст о споре вокруг устной истории и выполните задания уровня C1.",
+      "en": "Прочитайте художественный текст о споре вокруг устной истории и выполните задания уровня C1."
+    },
+    "canonicalPath": "/en/practice/russian/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:59:10.487Z"
+  }
+}

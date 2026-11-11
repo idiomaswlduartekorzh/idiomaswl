@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c1-the-quiet-street",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "russian C1"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Тишина на бумаге",
+      "en": "Тишина на бумаге"
+    },
+    "intro": {
+      "es": "Проанализируйте статью о конфликте вокруг ограничений ночного движения в спальном районе и выполните комплексные задания на понимание текста уровня C1.",
+      "en": "Проанализируйте статью о конфликте вокруг ограничений ночного движения в спальном районе и выполните комплексные задания на понимание текста уровня C1."
+    },
+    "mission": {
+      "es": "Прочитайте текст, изучите словарные статьи, ответьте на вопросы по содержанию и напишите развернутый комментарий в соответствии с заданием.",
+      "en": "Прочитайте текст, изучите словарные статьи, ответьте на вопросы по содержанию и напишите развернутый комментарий в соответствии с заданием."
+    },
+    "targetText": "Когда муниципальный совет объявил о завершении пилотного проекта по ограничению ночного движения на улице Ольховой, урбанист Илья Ремизов сразу заподозрил подвох. Официальный отчет департамента транспорта выглядел безупречно: датчики автоматической фиксации зафиксировали снижение трафика на сорок процентов в период с полуночи до пяти часов утра. Документ бодро рапортовал об улучшении экологических показателей и возвращении долгожданного покоя местным жителям. Однако Ремизов, чья спальня выходит окнами прямо на этот пресловутый участок, прекрасно знал, что затишье было иллюзорным. Выйдя на балкон в два часа ночи, он не услышал гула моторов, но заметил другое: вереницу тяжелых грузовиков, которые теперь пробирались по параллельной узкой улице Горького, содрогающейся от каждого маневра фур. Муниципальный отчет оперировал узкими цифрами, игнорируя пространственное перераспределение транспортных потоков, и тем самым создавал комфортную для чиновников фикцию успеха.\n\nКонфликт между городской администрацией и жителями прилегающих кварталов обнажил извечный вопрос о том, кто именно обладает монополией на определение эффективности градостроительных инициатив. Для главы транспортного отдела Виктора Смирнова успех измерялся исключительно показателями датчиков на подотчетной территории. Смирнов отстаивал позицию технократического планирования, где любые локальные улучшения автоматически трактуются как общее благо. В его системе координат сокращение потока на улице Ольховой означало выполнение KPI, независимо от того, куда делись машины. Напротив, инициативная группа жильцов во главе с владелицей небольшой пекарни на улице Горького, Маргаритой Захаровой, настаивала на том, что городская среда представляет собой целостный организм. Захарова утверждала, что победа над шумом в одном конкретном переулке ценой разрушения сна в соседнем квартале является не решением проблемы, а лишь перекладыванием её из одного угла в другой.\n\nСитуация обострилась, когда Маргарита опубликовала в сети видеозапись ночных пробок под своими окнами, подкрепив её аудиозаписями трещин, поползших по штукатурке старых зданий. Видео вызвало широкий резонанс, заставив местную прессу обратить внимание на изнанку победных отчетов. Ремизов попытался выступить посредником, предложив провести комплексный аудит всей транспортной сети округа, а не изолированных его частей. Он указал на методологическую ошибку чиновников: измеряя уровень шума и интенсивность движения лишь там, где были установлены новые знаки, департамент заранее запрограммировал положительный результат. Тем не менее, Смирнов упрямо цеплялся за формальные критерии, заявляя, что ведомство не несет ответственности за стихийный выбор водителей, ищущих объездные пути.\n\nСпор перешел из плоскости логистики в плоскость политической риторики, где каждая сторона вкладывала свой смысл в понятие «благоустройство». Для Смирнова это была цифровая оптимизация и следование букве утвержденного плана, тогда как для Захаровой и Ремизова — сохранение пригодности городской среды для жизни реальных людей. Попытки чиновников замять скандал с помощью дежурных отписок лишь усиливали недоверие граждан к муниципальным инициативам. Власти упорно не желали признавать, что сужение проезжей части и запреты без предварительного расширения объездных магистралей порождают новые очаги социального напряжения, а не ликвидируют саму транспортную проблему.\n\nРазвязка наступила на открытых слушаниях городского совета, где столкнулись две логики: бюрократическая отчетность и живой опыт городской повседневности. Смирнов представил обновленную презентацию, где утверждал, что улица Ольховая стала образцом современного городского пространства, забыв упомянуть, что обитатели улицы Горького начали подготовку судебного иска. Ремизов в своем выступлении метко охарактеризовал этот подход как триумф виртуальной статистики над здравым смыслом. Ни одна из сторон не убедила другую в своей правоте, оставив вопрос открытым: имеет ли право городская администрация называть проект успешным, если общая сумма страданий жителей района не уменьшилась, а лишь переместилась на соседние улицы.\n\nОднако этот тупиковый спор на публичных слушаниях запустил цепную реакцию, которую уже не могли остановить ни отговорки чиновников, ни судебные перспективы. Местные активисты осознали, что точечная борьба за каждый переулок обречена на поражение, если не изменить саму философию муниципального управления. Маргарита Захарова предложила создать постоянную народную комиссию по независимому мониторингу градостроительных решений, которая получила бы законное право вето на любые инициативы, не прошедшие предварительную экологическую и социальную экспертизу. Илья Ремизов поддержал эту идею, разработав цифровую платформу для сбора реальных данных о нагрузке на всю инфраструктуру района. Проект быстро вышел за пределы одного округа, превратившись в общегородской прецедент гражданского сопротивления бюрократическому формализму. Жители других кварталов, уставшие от показушных отчетов и ухудшения условий жизни ради красивых графиков на экранах чиновников, начали массово присоединяться к инициативе. Так локальный дорожный конфликт перерос в системный кризис доверия, заставивший мэрию впервые за долгие годы признать, что подлинное благоустройство невозможно без прямого и равноправного диалога с теми, кто населяет реальные улицы, а не виртуальные таблицы.",
+    "wordCount": 680,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "подвох",
+        "lemma": "подвох",
+        "glosses": {
+          "es": "hidden catch or trap",
+          "en": "hidden catch or trap"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "пресловутый",
+        "lemma": "пресловутый",
+        "glosses": {
+          "es": "notorious or so-called",
+          "en": "notorious or so-called"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "технократического",
+        "lemma": "технократического",
+        "glosses": {
+          "es": "technocratic",
+          "en": "technocratic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "изнанку",
+        "lemma": "изнанку",
+        "glosses": {
+          "es": "flip side or inner workings",
+          "en": "flip side or inner workings"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "отписок",
+        "lemma": "отписок",
+        "glosses": {
+          "es": "formal bureaucratic replies",
+          "en": "formal bureaucratic replies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "повседневности",
+        "lemma": "повседневности",
+        "glosses": {
+          "es": "everyday life or routine",
+          "en": "everyday life or routine"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.3,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:59:10.487Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная тема обсуждения в представленном тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт из-за критериев оценки успеха транспортной реформы."
+        },
+        {
+          "id": "a2",
+          "text": "Технические проблемы установки датчиков шума."
+        },
+        {
+          "id": "a3",
+          "text": "Экономические трудности владельцев пекарен."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Конфликт между городской администрацией и жителями прилегающих кварталов обнажил извечный вопрос о том, кто именно обладает монополией на определение эффективности градостроительных инициатив.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Как изменилось движение на улице Ольховой по данным датчиков?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Движение полностью прекратилось на всю ночь."
+        },
+        {
+          "id": "a2",
+          "text": "Трафик снизился на сорок процентов."
+        },
+        {
+          "id": "a3",
+          "text": "Интенсивность машин выросла в утренние часы."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "датчики автоматической фиксации зафиксировали снижение трафика на сорок процентов в период с полуночи до пяти часов утра.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему отчет департамента транспорта не отражал реальную ситуацию в районе?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Потому что приборы ночного наблюдения были неисправны."
+        },
+        {
+          "id": "a2",
+          "text": "Потому что чиновники намеренно подделывали показатели датчиков."
+        },
+        {
+          "id": "a3",
+          "text": "Потому что он фиксировал только улучшение на одной улице, игнорируя нагрузку на соседние."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Муниципальный отчет оперировал узкими цифрами, игнорируя пространственное перераспределение транспортных потоков, и тем самым создавал комфортную для чиновников фикцию успеха.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью Маргарита Захарова опубликовала видеозапись в сети?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы привлечь внимание прессы к реальным последствиям решения властей."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы заставить городской совет закрыть пекарню."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы отомстить урбанисту Ремизову за бездействие."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Маргарита опубликовала в сети видеозапись ночных пробок под своими окнами, подкрепив её аудиозаписями трещин, поползших по штукатурке старых зданий. Видео вызвало широкий резонанс, заставив местную прессу обратить внимание на изнанку победных отчетов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какова тональность автора по отношению к позиции муниципальных чиновников?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Восхищенная, отмечающая высокую скорость внедрения инноваций."
+        },
+        {
+          "id": "a2",
+          "text": "Критическая, подчеркивающая оторванность бюрократических отчетов от реальности."
+        },
+        {
+          "id": "a3",
+          "text": "Нейтральная, беспристрастно фиксирующая мнения обеих сторон."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ремизов в своем выступлении метко охарактеризовал этот подход как триумф виртуальной статистики над здравым смыслом.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что обозначает словосочетание «дежурных отписок» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Официальные графики дежурств сотрудников полиции."
+        },
+        {
+          "id": "a2",
+          "text": "Списки жалоб местных жителей на качество дорог."
+        },
+        {
+          "id": "a3",
+          "text": "Формальные ответы властей, не решающие суть проблемы."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Попытки чиновников замять скандал с помощью дежурных отписок лишь усиливали недоверие граждан к муниципальным инициативам.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите развернутый комментарий (180–220 слов) на русском языке, отвечая на вопрос: имеют ли право городские власти внедрять локальные улучшения за счет ухудшения условий в других частях города? Приведите аргументы, опираясь на текст.",
+      "en": "Напишите развернутый комментарий (180–220 слов) на русском языке, отвечая на вопрос: имеют ли право городские власти внедрять локальные улучшения за счет ухудшения условий в других частях города? Приведите аргументы, опираясь на текст."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Прочитайте текст, изучите словарные статьи, ответьте на вопросы по содержанию и напишите развернутый комментарий в соответствии с заданием.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:59:10.487Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Тишина на бумаге | C1 Reading | WeLearn",
+      "en": "Тишина на бумаге | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Проанализируйте статью о конфликте вокруг ограничений ночного движения в спальном районе и выполните комплексные задания на понимание текста уровня C1.",
+      "en": "Проанализируйте статью о конфликте вокруг ограничений ночного движения в спальном районе и выполните комплексные задания на понимание текста уровня C1."
+    },
+    "canonicalPath": "/en/practice/russian/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:59:10.487Z"
+  }
+}

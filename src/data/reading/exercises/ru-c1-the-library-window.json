@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c1-the-library-window",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "russian C1"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Свет за закрытыми окнами",
+      "en": "Свет за закрытыми окнами"
+    },
+    "intro": {
+      "es": "Прочитайте дневниковые записи библиотекаря Анны и выполните задания по анализу текста уровня C1.",
+      "en": "Прочитайте дневниковые записи библиотекаря Анны и выполните задания по анализу текста уровня C1."
+    },
+    "mission": {
+      "es": "Проанализируйте тонкие различия между формальной доступностью учреждения и его реальной инклюзивностью для местного сообщества.",
+      "en": "Проанализируйте тонкие различия между формальной доступностью учреждения и его реальной инклюзивностью для местного сообщества."
+    },
+    "targetText": "Дневник библиотекаря Анны, август.\n\nПонедельник. Мы подвели итоги первого месяца после введения так называемого расширенного графика. Директор нашего филиала, Аркадий Петрович, с гордостью демонстрирует графики роста посещаемости на городских совещаниях, уповая на то, что библиотека теперь открыта с семи утра до десяти вечера без перерывов на обед. Бумажные отчеты выглядят безупречно: часы работы увеличились почти вдвое, а общая цифра переступивших порог граждан возросла на рекордные показатели. Однако за этой сухой статистикой скрывается глубокое несоответствие между формальной открытостью и реальной доступностью пространства для тех, ради кого мы, собственно, здесь находимся. Утром, ровно в семь, когда распахиваются тяжелые дубовые двери, в залах появляется лишь горстка одних и тех же пенсионеров, которым просто негде переждать утреннюю прохладу до открытия ближайшего рынка. Они занимают краешки кресел, молчаливо глядя в пространство, пока гудят запущенные накануне системы кондиционирования. В этом утреннем затишье нет ни жажды знаний, ни поиска информации — лишь упрямая привычка коротать время в общественном месте, где тепло и безопасно. Настоящий же парадокс разворачивается вечером, когда двери должны гостеприимно распахиваться для работающих горожан, студентов и тех, кто действительно нуждается в тишине для работы над проектами.\n\nСреда. Сегодняшний вечер обнажил всю абсурдность ситуации с нашими новыми часами. Около девяти часов вечера, когда за окнами уже сгустилась темнота и зажглись фонари центральной улицы, в читальный зал вошел Илья — молодой архитектор, живущий в соседнем квартале. Он отчаянно пытался найти уединенное место для завершения масштабного макета реконструкции исторического центра, так как в его съемной квартире ремонт и постоянно отключают электричество. Илья подошел к моей стойке с надеждой в глазах, но столкнулся с непреодолимой стеной бюрократических инструкций. Согласно новому распоряжению администрации, все специализированные рабочие зоны, включая кабинеты с мощными компьютерами и чертежными столами, закрываются ровно в восемь вечера в целях экономии электроэнергии и сокращения штата вечерних дежурных. Нам разрешено держать открытыми лишь главный холл и абонемент, где свет бьет в глаза, повсюду стоят очереди за возвратом художественной литературы легкого жанра, а гул голосов напоминает вокзал в часы пик. Илья растерянно оглядел пеструю толпу подростков, пришедших сюда просто посидеть в бесплатном Wi-Fi, и со вздохом покинул библиотеку, не добившись никакой помощи. Получается парадоксальная вещь: формально мы работаем для всех и допоздна, но в критический момент, когда человеку нужна не просто крыша над головой, а функциональная среда, учреждение оказывается бесполезным фасадом.\n\nПятница. На утренней планерке я попыталась поднять этот вопрос перед Аркадием Петровичем, указав на то, что продление часов без сохранения специализированного функционала превращает библиотеку в дорогостоящий зал ожидания. Мои аргументы встретили вежливое, но непреклонное сопротивление. Директор убежден, что количество часов в расписании само по себе является высшим благом и главным мерилом нашей эффективности перед лицом городского департамента культуры. Он искренне верит, что цифра в отчете важнее глубины получаемого читательского опыта. По его мнению, если человек пришел в библиотеку в девять часов вечера, значит, наша миссия выполнена, независимо от того, смог ли он найти нужную книгу или поработать в тишине. Я же вижу обратное: удлинение рабочего дня без пересмотра внутреннего содержания порождает лишь иллюзию инклюзивности, отталкивая тех, кто ищет интеллектуального убежища, и привлекая тех, кому просто нужен ночлег в тепле. Мы подменяем качественное служение обществу количественными показателями заполняемости квадратных метров.\n\nСуббота. Весь день меня не покидает ощущение профессионального тупика. К нам заглядывала постоянная читательница, профессор филологии в отставке, Вера Павловна. Она с горечью заметила, что библиотека постепенно утрачивает свой сакральный статус храма мысли, превращаясь в шумный проходной двор. Попытки угодить абсолютно всем категориям посетителей одновременно привели к тому, что пространство перестало удовлетворять запросы хоть кого-нибудь в полной мере. Студенты жалуются на нехватку розеток и шум, исследователи — на сокращение времени доступа к архивам, а случайные прохожие — на излишне строгие правила поведения. Аркадий Петрович считает нашу гибкость победой, а я вижу в ней размывание идентичности. Если учреждение открыто круглосуточно, но не может предоставить работающему человеку условий для труда, эта открытость становится фикцией, красивой вывеской на пустом здании.\n\nВоскресенье. Подводя итог этой тяжелой недели, я записала для себя главную мысль, которая не дает мне покоя. Истинная доступность библиотеки измеряется не количеством минут, в течение которых ее двери остаются отпертыми для прохода, а способностью отвечать на сложные запросы общества в те моменты, когда это действительно необходимо. Увеличить время работы оказалось делом техники и приказов сверху, а вот сохранить содержательное наполнение этих часов — задачу куда более сложную и неудобную для отчетности — никто решать не собирается. Пока мы гонимся за статистикой длинного дня, мы теряем саму суть библиотеки как интеллектуального центра. И если в понедельник директор снова начнет хвастаться нашими часами, мне придется открыто заявить, что свет в окнах горит допоздна, но читать при нем уже некому.",
+    "wordCount": 745,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "уповая",
+        "lemma": "уповая",
+        "glosses": {
+          "es": "hoping or relying upon",
+          "en": "hoping or relying upon"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "несоответствие",
+        "lemma": "несоответствие",
+        "glosses": {
+          "es": "mismatch or discrepancy",
+          "en": "mismatch or discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "абсурдность",
+        "lemma": "абсурдность",
+        "glosses": {
+          "es": "absurdity",
+          "en": "absurdity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "фасад",
+        "lemma": "фасад",
+        "glosses": {
+          "es": "façade or superficial appearance",
+          "en": "façade or superficial appearance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "фикцией",
+        "lemma": "фикцией",
+        "glosses": {
+          "es": "fiction or illusion",
+          "en": "fiction or illusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сакральный",
+        "lemma": "сакральный",
+        "glosses": {
+          "es": "sacred",
+          "en": "sacred"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 18.2,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T21:59:10.487Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова главная мысль дневниковых записей Анны?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Формальное продление часов работы без сохранения функционала создает лишь иллюзию реальной доступности."
+        },
+        {
+          "id": "a2",
+          "text": "Директор библиотеки полностью прав в своем стремлении улучшить городскую статистику посещений."
+        },
+        {
+          "id": "a3",
+          "text": "Современным библиотекам следует полностью отказаться от читальных залов в пользу Wi-Fi зон."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "удлинение рабочего дня без пересмотра внутреннего содержания порождает лишь иллюзию инклюзивности",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему архитектор Илья не смог воспользоваться условиями для работы в вечернее время?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "В библиотеке полностью отсутвало электричество из-за аварии на линии."
+        },
+        {
+          "id": "a2",
+          "text": "Специализированные рабочие зоны закрывались в восемь вечера в целях экономии."
+        },
+        {
+          "id": "a3",
+          "text": "Ему отказали в выдаче читательского билета из-за отсутствия местной прописки."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "все специализированные рабочие зоны, включая кабинеты с мощными компьютерами и чертежными столами, закрываются ровно в восемь вечера в целях экономии электроэнергии",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как автор относится к утренним посетителям библиотеки?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она видит в них перспективных исследователей, которые готовятся к поступлению в университет."
+        },
+        {
+          "id": "a2",
+          "text": "Она глубоко возмущена тем, что пенсионеры занимают места студентов и архитекторов."
+        },
+        {
+          "id": "a3",
+          "text": "Она считает их случайными людьми, которые используют теплое помещение для коротания времени без жажды знаний."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "В этом утреннем затишье нет ни жажды знаний, ни поиска информации — лишь упрямая привычка коротать время в общественном месте",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью директор Аркадий Петрович настаивает на расширенном графике?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы демонстрировать городскому департаменту культуры красивые отчеты о росте показателей."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы лично контролировать вечернюю работу сотрудников и студентов."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы снизить расходы на содержание здания в ночное время суток."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "уповая на то, что библиотека теперь открыта с семи утра до десяти вечера без перерывов на обед.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в рассуждениях автора на протяжении всего дневника?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Тревожный и созерцательный"
+        },
+        {
+          "id": "a2",
+          "text": "Критический и рефлексивный"
+        },
+        {
+          "id": "a3",
+          "text": "Ироничный и сатирический"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Весь день меня не покидает ощущение профессионального тупика.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает словосочетание «дороящийся зал ожидания» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Официальное помещение для регистрации новых читателей."
+        },
+        {
+          "id": "a2",
+          "text": "Зал, где посетители ожидают прибытия заказанных из архива редких книг."
+        },
+        {
+          "id": "a3",
+          "text": "Пространство, где люди находятся ради тепла и укрытия, а не для работы с литературой."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "превращает библиотеку в дорогостоящий зал ожидания.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите развернутый ответ (150–200 слов) на русском языке, проанализировав, где проходит грань между количественными показателями эффективности учреждения и его реальной ценностью для общества, опираясь на текст.",
+      "en": "Напишите развернутый ответ (150–200 слов) на русском языке, проанализировав, где проходит грань между количественными показателями эффективности учреждения и его реальной ценностью для общества, опираясь на текст."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Проанализируйте тонкие различия между формальной доступностью учреждения и его реальной инклюзивностью для местного сообщества.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T21:59:10.487Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Свет за закрытыми окнами | C1 Reading | WeLearn",
+      "en": "Свет за закрытыми окнами | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте дневниковые записи библиотекаря Анны и выполните задания по анализу текста уровня C1.",
+      "en": "Прочитайте дневниковые записи библиотекаря Анны и выполните задания по анализу текста уровня C1."
+    },
+    "canonicalPath": "/en/practice/russian/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T21:59:10.487Z"
+  }
+}
