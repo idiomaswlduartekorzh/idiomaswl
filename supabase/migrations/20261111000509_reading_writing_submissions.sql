@@ -17,16 +17,12 @@ create index reading_writing_submissions_recent
 
 alter table public.reading_writing_submissions enable row level security;
 revoke all on public.reading_writing_submissions from public, anon, authenticated;
-grant select, insert on public.reading_writing_submissions to authenticated;
+grant select on public.reading_writing_submissions to authenticated;
 grant select, insert, update, delete on public.reading_writing_submissions to service_role;
 
 create policy "Students can read their own reading writing submissions"
   on public.reading_writing_submissions for select to authenticated
   using ((select auth.uid()) = student_id);
-
-create policy "Students can submit their own reading writing"
-  on public.reading_writing_submissions for insert to authenticated
-  with check ((select auth.uid()) = student_id);
 
 comment on table public.reading_writing_submissions is
   'Private, explicitly submitted Reading B2-C2 writing. Tutors access it only through the verified admin server route.';

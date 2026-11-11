@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { availableExercises } from '@/lib/reading/catalog'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { readUtf8StreamLimited } from '@/lib/writing-feedback'
 
 export const runtime = 'nodejs'
@@ -40,7 +41,7 @@ export async function POST(request: Request) {
   const { data: { user } } = await db.auth.getUser()
   if (!user || user.is_anonymous) return reply({ code: 'sign_in_required' }, 401)
 
-  const { data, error } = await db.from('reading_writing_submissions').insert({
+  const { data, error } = await createAdminClient().from('reading_writing_submissions').insert({
     student_id: user.id,
     exercise_id: exercise.id,
     language: exercise.language,
