@@ -42,7 +42,7 @@ Fecha de corte: 25 de agosto de 2026.
 
 Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
 `origin/main@95e9e9bb`. [PR #57](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/57)
-abierto. Estado: `PR_ABIERTO_EN_VALIDACION`, sin integración ni despliegue.
+abierto. Estado: `EN_VALIDACION`, sin integración ni despliegue.
 El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
 recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
 nivel B2, C1 y C2 de inglés, francés, alemán, italiano, portugués, ruso, japonés
