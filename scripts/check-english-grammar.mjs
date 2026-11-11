@@ -86,25 +86,25 @@ for (const level of Object.keys(expected)) {
       interactions += countInteractions(practice)
     }
     assert.ok(interactions >= 28, `${label}: solo ${interactions} interacciones`)
-    if (level === 'a1' || level === 'a2') {
+    if (level === 'a1' || level === 'a2' || level === 'b1') {
       const explanationWords = [topic.description, topic.lead, ...topic.seo.flatMap((section) => section.paragraphs ?? [])].join(' ').split(/\s+/u).filter(Boolean).length
       const tableCount = 1 + topic.seo.filter((section) => section.table?.length).length
       const tableRows = topic.guide.table.length + topic.seo.reduce((total, section) => total + (section.table?.length ?? 0), 0)
-      const minimumWords = level === 'a2' ? 650 : 600
-      const minimumTables = level === 'a2' ? 6 : 5
-      const minimumRows = level === 'a2' ? 30 : 25
-      const minimumInteractions = level === 'a2' ? 40 : 35
+      const minimumWords = level === 'b1' ? 750 : level === 'a2' ? 650 : 600
+      const minimumTables = level === 'b1' ? 7 : level === 'a2' ? 6 : 5
+      const minimumRows = level === 'b1' ? 35 : level === 'a2' ? 30 : 25
+      const minimumInteractions = level === 'b1' ? 50 : level === 'a2' ? 40 : 35
       assert.ok(explanationWords >= minimumWords, `${label}: explicación todavía breve (${explanationWords} palabras)`)
       assert.ok(tableCount >= minimumTables && tableRows >= minimumRows, `${label}: faltan tablas explicativas`)
-      assert.ok(topic.visual.scene.length >= (level === 'a2' ? 8 : 6), `${label}: mapa visual insuficiente`)
-      assert.ok(topic.guide.decisions.length >= 8, `${label}: ruta de decisión insuficiente`)
+      assert.ok(topic.visual.scene.length >= (level === 'b1' ? 10 : level === 'a2' ? 8 : 6), `${label}: mapa visual insuficiente`)
+      assert.ok(topic.guide.decisions.length >= (level === 'b1' ? 10 : 8), `${label}: ruta de decisión insuficiente`)
       assert.ok(interactions >= minimumInteractions, `${label}: práctica insuficiente (${interactions})`)
     }
     if (withAssets) {
       const file = topic.slug.endsWith(`-${level}`) ? `idiomaswl-${topic.slug}.pdf` : `idiomaswl-${topic.slug}-${level}.pdf`
       const materials = path.join(ROOT, 'private', 'site-materials', `ingles-${level}`, 'grammar')
       assert.ok(existsSync(path.join(materials, file)), `${label}: falta PDF`)
-      if (level === 'a1' || level === 'a2') {
+      if (level === 'a1' || level === 'a2' || level === 'b1') {
         assert.ok(existsSync(path.join(materials, file.replace(/\.pdf$/u, '-exercises.pdf'))), `${label}: falta cuaderno de ejercicios`)
         assert.ok(existsSync(path.join(materials, file.replace(/\.pdf$/u, '-answer-key.pdf'))), `${label}: falta solucionario`)
       }

@@ -20,6 +20,7 @@ import questionTags from './question-tags-b1'
 import wishClauses from './wish-clauses-b1'
 import linkingWords from './linking-words-b1'
 import { indirectQuestions, modalDeduction, thirdConditional } from './supplemental-topics'
+import { closeEnglishB1Topic } from './quality-closeout'
 
 const topics: GrammarTopic[] = [
   pastContinuous,
@@ -45,6 +46,6 @@ const topics: GrammarTopic[] = [
   modalDeduction,
   indirectQuestions,
   thirdConditional,
-]
+].map(closeEnglishB1Topic)
 
 export default topics

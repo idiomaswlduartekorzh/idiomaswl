@@ -1022,7 +1022,7 @@ def main():
         Workbook(str(target), topic).build(build_story(topic))
         shutil.copy2(target, public_dir / filename)
         print(target.relative_to(ROOT))
-        if level in ('a1', 'a2', 'b2', 'c1', 'c2'):
+        if level in ('a1', 'a2', 'b1', 'b2', 'c1', 'c2'):
             stem = filename[:-4]
             exercises_filename = f"{stem}-{l('exercises', 'exercices')}.pdf"
             answer_key_filename = f"{stem}-{l('answer-key', 'corrige')}.pdf"
