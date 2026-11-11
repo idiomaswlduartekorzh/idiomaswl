@@ -8,8 +8,8 @@ Fecha de corte: 25 de agosto de 2026.
 ## Visibilidad local de clases por idioma — 11 de noviembre de 2026
 
 - Trabajo: `seo-local-idiomas-20261111`; responsable: Codex.
-- Rama: `codex/seo-local-idiomas-20261111`, base `origin/main@95e9e9bb`;
-  respaldada en `origin`. Estado: `LISTO_PARA_INTEGRAR`.
+- Rama: `codex/seo-local-idiomas-20261111`, integrada mediante PR #56 desde
+  `origin/main@95e9e9bb`. Estado: `DESPLEGADO`.
 - Alcance: hero de `/clases-de-frances`, `/clases-de-italiano`,
   `/clases-de-portugues`, `/clases-de-aleman`, `/clases-de-japones`,
   `/clases-de-coreano` y `/clases-de-ruso`; generador e
@@ -31,13 +31,21 @@ Fecha de corte: 25 de agosto de 2026.
   `check:seo-foundation`, `check:seo-snippets`, `check:reading-content` y
   TypeScript global pasaron. Next compiló y verificó tipos; el build local se
   detuvo en prerender por falta de espacio en disco (`ENOSPC`). El build completo
-  pasó en GitHub Actions para el commit `dba80cb0`. Las siete rutas se revisaron
-  en navegador; los cambios del último commit también se comprobaron en la
-  vista previa de Vercel `ENFAEny4qwXiMwtLNVTp23UtcuTh`, en estado `READY`.
-  `origin/main@95e9e9bb` sigue siendo ancestro de la rama.
-- Decisión de integración: `MERGE`; SHA en `main`,
-  deployment y smoke: pendientes. El objetivo es mejorar relevancia y claridad
-  local; no hay garantía de una posición concreta en Google.
+  pasó en GitHub Actions para el commit final de la rama `41b8225e`. Las siete
+  rutas se revisaron en navegador y en la vista previa de Vercel.
+- Integración: squash del PR #56 en `main@fb2989af2622cb3081fe29edf8eac75a275eeaec`.
+  Vercel publicó ese SHA desde `main` en
+  `dpl_4BSyKTsY9WevW66M63Qb8vR1SBqg` (`READY`, Production, alias
+  `www.idiomaswl.com`). Smoke: HTTP 200 y H1 esperado en las siete rutas
+  comerciales y en `/clases-de-ingles-bucaramanga`; las siete páginas nuevas
+  conservaron canónica propia y `index, follow`. Home, `/practica`,
+  `/precios`, `/blog`, `/robots.txt` y `/sitemap.xml` respondieron 200.
+  `/dashboard` mostró el acceso sin exponer datos privados.
+- Search Console: `/clases-de-frances` sigue indexada. El sitemap enviado tuvo
+  estado correcto y última lectura el 10 de noviembre. La solicitud manual de
+  reindexación falló por un error de conexión con reCAPTCHA; no se cuenta como
+  enviada. El objetivo es mejorar relevancia y claridad local; no hay garantía
+  de una posición concreta en Google.
 
 ## Escritura laboral B2–C2 multilingüe — 11 de noviembre de 2026
 
