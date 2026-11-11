@@ -174,11 +174,12 @@ export default function ClasesDeItalianoPage() {
               <p className={s.eyebrow}>Italiano en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
                 Clases de italiano<br />
-                <span className={s.accent}>para ciudadanía y CILS.</span>
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
-                El italiano es el idioma románico más cercano al español. Con método correcto,
-                avanzas hacia la conversación y puedes preparar el B1 de ciudadanía o el CILS según tu objetivo.
+                Estudia presencialmente en nuestra sede de Sotomayor, Bucaramanga, o por videollamada
+                desde cualquier ciudad. Un tutor te acompaña desde tu nivel actual para conversar en italiano
+                o preparar el B1 de ciudadanía, CILS y CELI según tu objetivo.
               </p>
               <div className={s.heroCtas}>
                 <a data-wa-cta="italiano-hero" href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>

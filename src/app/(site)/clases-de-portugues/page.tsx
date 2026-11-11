@@ -219,13 +219,13 @@ export default function ClasesDePortuguesPage() {
               <div className={s.heroPhrase}>Olá!</div>
               <p className={s.eyebrow}>Portugués en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
-                Aprende portugués<br />
-                <span className={s.accent}>de verdad.</span>
+                Clases de portugués<br />
+                <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
-                El portugués es el cuarto idioma más hablado del mundo. Con método correcto,
-                trabajas la conversación y puedes preparar el Celpe-Bras Intermediário
-                según tu punto de partida, el tiempo de estudio y tu objetivo.
+                Estudia portugués brasileño presencialmente en nuestra sede de Sotomayor, Bucaramanga,
+                o por videollamada desde cualquier ciudad. Un tutor adapta la ruta a tu nivel para
+                conversar y, si lo necesitas, preparar el Celpe-Bras.
               </p>
               <div className={s.heroCtas}>
                 <a data-wa-cta="portugues-hero" href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
@@ -259,7 +259,7 @@ export default function ClasesDePortuguesPage() {
         </section>
 
         <div className={s.proofStrip}>
-          <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
+          <span className={s.proofItem}><strong>Portugués brasileño</strong> desde tu nivel</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Diagnóstico</strong> con tutor</span>
           <span className={s.proofDivider} />

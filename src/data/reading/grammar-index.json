@@ -39,6 +39,12 @@
           "file": "src/data/grammar/ingles/a1/can-ability.ts"
         },
         {
+          "slug": "basic-sentence-order",
+          "title": "Basic English sentence order A1: subject, verb, object, place and time",
+          "category": null,
+          "file": "src/data/grammar/ingles/a1/completion-topics.ts"
+        },
+        {
           "slug": "countable-uncountable",
           "title": "Contables e incontables",
           "category": "Nouns",
