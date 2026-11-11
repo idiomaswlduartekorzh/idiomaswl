@@ -3,6 +3,7 @@ import { ArrowRight, BookOpenCheck, BookOpenText, Clock3, Sparkles } from 'lucid
 import { LANGUAGE_NAMES, readingExercisePath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from '@/lib/reading/types'
+import { ReadingPilotDirectory, type ReadingPilotLink } from './ReadingPilotDirectory'
 import styles from './reading.module.css'
 
 const COPY = {
@@ -28,11 +29,13 @@ export function ReadingHub({
   language,
   level,
   exercises,
+  pilotLinks = [],
 }: {
   locale: TutorLocale
   language: ReadingLanguage
   level: CefrLevel
   exercises: ReadingExercise[]
+  pilotLinks?: ReadingPilotLink[]
 }) {
   const advanced = ['B2', 'C1', 'C2'].includes(level)
   const locale = advanced ? 'en' : routeLocale
@@ -61,6 +64,8 @@ export function ReadingHub({
           </div>
         ) : <div className={styles.heroGlyph} aria-hidden="true"><BookOpenText size={44} /></div>}
       </section>
+
+      {advanced && <ReadingPilotDirectory links={pilotLinks} />}
 
       {exercises.length ? (
         <section className={styles.topicList} aria-label={copy.title}>

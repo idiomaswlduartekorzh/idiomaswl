@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { ReadingHub } from './ReadingHub'
 import { ReadingLesson } from './ReadingLesson'
+import type { ReadingPilotLink } from './ReadingPilotDirectory'
 import { ReadingStructuredData } from './ReadingStructuredData'
 import { availableExercises, findReadingExercise, findReadingHubExercises } from '@/lib/reading/catalog'
 import {
@@ -106,11 +107,12 @@ export function resolveHubForRoute(locale: TutorLocale, languageParam: string, l
 export function ExercisePage({ exercise, locale }: { exercise: ReadingExercise; locale: TutorLocale }) {
   const siblings = findReadingHubExercises(locale, exercise.language, exercise.level.cefr)
   const advanced = ['B2', 'C1', 'C2'].includes(exercise.level.cefr)
+  const pilotLinks = advanced ? readingPilotLinks() : []
   return (
     <section className="wl-section">
       <div className={`wrap ${styles.readingRoot} ${advanced ? styles.premiumRoot : ''}`}>
         <ReadingStructuredData exercise={exercise} locale={locale} />
-        <ReadingLesson exercise={exercise} locale={locale} siblings={siblings}
+        <ReadingLesson exercise={exercise} locale={locale} siblings={siblings} pilotLinks={pilotLinks}
           />
       </div>
     </section>
@@ -122,8 +124,20 @@ export function HubPage({ locale, language, level, exercises }: { locale: TutorL
   return (
     <section className="wl-section">
       <div className={`wrap ${styles.readingRoot} ${advanced ? styles.premiumRoot : ''}`}>
-        <ReadingHub locale={locale} language={language} level={level} exercises={exercises} />
+        <ReadingHub locale={locale} language={language} level={level} exercises={exercises} pilotLinks={advanced ? readingPilotLinks() : []} />
       </div>
     </section>
   )
+}
+
+function readingPilotLinks(): ReadingPilotLink[] {
+  return availableExercises('en')
+    .filter((exercise) => exercise.schemaVersion === '1.2.0')
+    .map((exercise) => ({
+      id: exercise.id,
+      language: exercise.language,
+      level: exercise.level.cefr,
+      title: localized(exercise.content.title, 'en'),
+      href: readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug),
+    }))
 }

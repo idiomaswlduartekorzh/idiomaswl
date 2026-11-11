@@ -288,6 +288,23 @@
 }
 .heroLevel span { color: #a9c6ee; font: 700 10px/1.5 var(--mono); letter-spacing: .16em; }
 .heroLevel strong { margin-top: 10px; color: #fff; font: 400 clamp(3.4rem, 5vw, 4.5rem)/1 Georgia, 'Times New Roman', serif; letter-spacing: -.07em; }
+.pilotDirectory { margin: 20px 0 24px; overflow: hidden; border: 1px solid #bfd0e8; border-radius: 15px; background: #fff; box-shadow: 0 9px 24px rgba(17,42,75,.05); }
+.pilotDirectory summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 22px; cursor: pointer; list-style: none; color: var(--premium-night); }
+.pilotDirectory summary::-webkit-details-marker { display: none; }
+.pilotDirectory summary > span:first-child { display: grid; gap: 4px; }
+.pilotDirectory summary strong { font: 700 15px/1.3 var(--sans); }
+.pilotDirectory summary small { color: var(--premium-muted); font: 500 12px/1.45 var(--sans); }
+.pilotDirectory summary > span:last-child { flex: none; color: var(--premium-blue); font: 750 12px/1.3 var(--sans); }
+.pilotDirectory[open] summary { border-bottom: 1px solid var(--premium-line); background: #f1f5fb; }
+.pilotDirectoryGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; padding: 22px; }
+.pilotDirectoryGrid section { min-width: 0; }
+.pilotDirectoryGrid h2 { margin: 0 0 9px; color: var(--premium-night); font: 400 20px/1.2 Georgia, 'Times New Roman', serif; }
+.pilotDirectoryGrid section > div { display: grid; gap: 7px; }
+.pilotDirectoryGrid a { display: flex; align-items: baseline; gap: 10px; min-width: 0; padding: 10px 12px; border: 1px solid var(--premium-line); border-radius: 8px; color: var(--premium-ink); text-decoration: none; font: 600 12px/1.35 var(--sans); }
+.pilotDirectoryGrid a:hover, .pilotDirectoryGrid a[aria-current="page"] { border-color: #a9c1e8; background: #eaf0fa; }
+.pilotDirectoryGrid a b { flex: none; color: var(--premium-blue); }
+.pilotDirectoryGrid a span { min-width: 0; overflow-wrap: anywhere; }
+.pilotDirectory summary:focus-visible, .pilotDirectoryGrid a:focus-visible { outline: 3px solid #86a8ef; outline-offset: 2px; }
 .premiumRoot .topicList { gap: 14px; margin-top: 25px; padding-bottom: 8px; }
 .premiumRoot .topicRow {
   min-height: 175px;
@@ -402,6 +419,8 @@
   .premiumRoot .lessonShell :global(.listen-card) { width: min(100%, 280px); }
 }
 @media (max-width: 700px) {
+  .pilotDirectory summary { align-items: flex-start; flex-direction: column; gap: 10px; padding: 17px; }
+  .pilotDirectoryGrid { grid-template-columns: 1fr; padding: 17px; }
   .premiumRoot { margin-top: -24px; padding: 12px; border-radius: 18px; }
   .premiumRoot .hubHero { min-height: 0; grid-template-columns: 1fr; gap: 24px; padding: 32px 25px; border-radius: 15px; }
   .premiumRoot .hubHero h1 { font-size: clamp(2.7rem, 10vw, 4rem); }

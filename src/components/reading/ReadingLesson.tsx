@@ -9,6 +9,7 @@ import {
 import { ReadingRecorder } from './ReadingRecorder'
 import { ReadingAiFeedback } from './ReadingAiFeedback'
 import { ReadingWritingSubmission } from './ReadingWritingSubmission'
+import { ReadingPilotDirectory, type ReadingPilotLink } from './ReadingPilotDirectory'
 import { GERMAN_A1_READING_TASK_ID } from '@/lib/writing-feedback-shared'
 import { normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { LANGUAGE_NAMES, readingExercisePath, readingHubPath } from '@/lib/reading/routes'
@@ -222,7 +223,7 @@ const READING_LANG_SLUG: Record<string, string> = {
   ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
 }
 
-export function ReadingLesson({ exercise, locale: routeLocale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
+export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pilotLinks = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[]; pilotLinks?: ReadingPilotLink[] }) {
   const advanced = exercise.schemaVersion === '1.2.0'
   const locale = advanced ? 'en' : routeLocale
   const copy = COPY[locale]
@@ -375,6 +376,8 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [] }: 
             {exercise.status !== 'published' && <span>{copy.preview}</span>}
           </div>
         </header>
+
+        {advanced && <ReadingPilotDirectory links={pilotLinks} currentId={exercise.id} />}
 
         <ol className={`listen-steps ${styles.readingSteps}`} aria-label={copy.progress}>
           {copy.stages.map((label, index) => (
@@ -537,13 +540,13 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [] }: 
       {canRenderPdf(READING_LANG_SLUG[exercise.language] ?? '') && (
         <div className="topic-download no-print">
           <PdfDownloadButton
-            label="Descargar esta lectura en PDF"
+            label={advanced ? 'Download this reading as a PDF' : 'Descargar esta lectura en PDF'}
             generate={async () => {
               const { generateReadingPdf } = await import('@/lib/pdf/generateReadingPdf')
               await generateReadingPdf(exercise, locale)
             }}
           />
-          <span>El texto, el glosario, las preguntas y las soluciones con su evidencia.</span>
+          <span>{advanced ? 'Text, glossary, questions and answers with supporting evidence.' : 'El texto, el glosario, las preguntas y las soluciones con su evidencia.'}</span>
         </div>
       )}
 
