@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-water-meter",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il paradosso del contatore intelligente",
+      "en": "Il paradosso del contatore intelligente"
+    },
+    "intro": {
+      "es": "Un'analisi critica sull'implementazione della tecnologia idrica in un contesto urbano degradato.",
+      "en": "Un'analisi critica sull'implementazione della tecnologia idrica in un contesto urbano degradato."
+    },
+    "mission": {
+      "es": "Comprendere le dinamiche tra innovazione tecnologica e responsabilità strutturale negli edifici storici.",
+      "en": "Comprendere le dinamiche tra innovazione tecnologica e responsabilità strutturale negli edifici storici."
+    },
+    "targetText": "La municipalità di Valchiara ha recentemente completato l'installazione di contatori idrici intelligenti in tutti gli edifici residenziali del centro storico. Il progetto, promosso come una svolta ecologica, mira a monitorare il consumo in tempo reale per identificare tempestivamente eventuali perdite occulte. Per la signora Elena Valli, pensionata che vive in un palazzo del diciottesimo secolo, l'iniziativa si è trasformata in un incubo burocratico. Quando il sistema ha segnalato un consumo anomalo nel suo appartamento, Elena ha scoperto che la causa era una tubatura corrosa all'interno di un muro portante, situata ben oltre il suo controllo diretto.\n\nNonostante la precisione del sensore nel rilevare il problema, la gestione della riparazione si è arenata in un conflitto di competenze. Il proprietario dell'immobile, il signor Giulio Righi, si è rifiutato di finanziare i lavori di ristrutturazione necessari, sostenendo che il contatore intelligente non è una prova sufficiente di negligenza da parte sua. Righi sostiene che, finché l'acqua non fuoriesce visibilmente, la manutenzione non è urgente. Di conseguenza, Elena si trova a pagare bollette gonfiate da una dispersione che non può fermare, intrappolata tra l'efficienza dei dati e l'inerzia delle infrastrutture vetuste.\n\nIl caso di Elena solleva questioni etiche rilevanti riguardo alla digitalizzazione dei servizi pubblici. Sebbene sia innegabile che il monitoraggio riduca gli sprechi su scala urbana, esso sposta il peso della responsabilità economica sui cittadini più vulnerabili. La tecnologia, in questo scenario, funziona come un occhio vigile che denuncia il malfunzionamento senza però fornire gli strumenti per risolverlo. Il paradosso è evidente: la città è diventata più intelligente, ma i suoi cittadini sono diventati più impotenti di fronte a muri che non possono abbattere.\n\nIl comitato di quartiere ha tentato di mediare, proponendo un fondo pubblico per le riparazioni d'emergenza, ma la giunta comunale ha declinato ogni responsabilità, citando il carattere privato delle tubature. La tensione è salita durante l'assemblea cittadina, dove si è discusso se il progresso tecnologico debba essere subordinato a un piano di riqualificazione degli edifici. La posizione ufficiale rimane ferma: il contatore serve a informare, non a ristrutturare. Per molti residenti, questo significa che il progresso è solo una nuova forma di sorveglianza sui propri consumi.\n\nLa situazione rimane irrisolta, con Elena che ha deciso di chiudere la valvola generale ogni sera, vivendo in una casa senza acqua corrente dopo il tramonto. Questa forma di protesta silenziosa mette in luce il fallimento di un'innovazione che ignora la realtà materiale. Mentre i dati di Valchiara mostrano una riduzione statistica degli sprechi, la qualità della vita di chi abita il centro storico subisce un declino costante. La tecnologia ha vinto la battaglia contro l'invisibile, ma ha perso quella contro la dignità abitativa di chi non ha voce.",
+    "wordCount": 447,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tempestivamente",
+        "lemma": "tempestivamente",
+        "glosses": {
+          "es": "in a timely manner",
+          "en": "in a timely manner"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "corrosa",
+        "lemma": "corrosa",
+        "glosses": {
+          "es": "corroded",
+          "en": "corroded"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vetuste",
+        "lemma": "vetuste",
+        "glosses": {
+          "es": "ancient or old-fashioned",
+          "en": "ancient or old-fashioned"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inerzia",
+        "lemma": "inerzia",
+        "glosses": {
+          "es": "inactivity or sluggishness",
+          "en": "inactivity or sluggishness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "declinato",
+        "lemma": "declinato",
+        "glosses": {
+          "es": "refused or rejected",
+          "en": "refused or rejected"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "subordinato",
+        "lemma": "subordinato",
+        "glosses": {
+          "es": "placed under the authority or condition of something else",
+          "en": "placed under the authority or condition of something else"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.4,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T15:19:48.178Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra tecnologia e infrastrutture."
+        },
+        {
+          "id": "a2",
+          "text": "L'inefficacia dei nuovi contatori."
+        },
+        {
+          "id": "a3",
+          "text": "La lotta di Elena contro il proprietario di casa."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il paradosso è evidente: la città è diventata più intelligente, ma i suoi cittadini sono diventati più impotenti di fronte a muri che non possono abbattere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché Elena non può riparare la perdita?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Manca il budget."
+        },
+        {
+          "id": "a2",
+          "text": "Il proprietario non vuole."
+        },
+        {
+          "id": "a3",
+          "text": "Il danno è strutturale."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il proprietario dell'immobile, il signor Giulio Righi, si è rifiutato di finanziare i lavori di ristrutturazione necessari",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual è l'atteggiamento del comune?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sostegno totale ai cittadini."
+        },
+        {
+          "id": "a2",
+          "text": "Collaborazione con il comitato."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferenza verso il privato."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la giunta comunale ha declinato ogni responsabilità, citando il carattere privato delle tubature.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo dell'autore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticare l'implementazione tecnologica."
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere l'efficienza idrica urbana."
+        },
+        {
+          "id": "a3",
+          "text": "Raccontare la storia di una pensionata."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La tecnologia, in questo scenario, funziona come un occhio vigile che denuncia il malfunzionamento senza però fornire gli strumenti per risolverlo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e speranzoso."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e disilluso."
+        },
+        {
+          "id": "a3",
+          "text": "Neutrale e informativo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la qualità della vita di chi abita il centro storico subisce un declino costante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'vetuste' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Molto moderne."
+        },
+        {
+          "id": "a2",
+          "text": "Recenti ma fragili."
+        },
+        {
+          "id": "a3",
+          "text": "Estremamente vecchie."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'inerzia delle infrastrutture vetuste.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve lettera formale al comune di Valchiara proponendo una soluzione per mediare tra le esigenze dei proprietari e il diritto dei locatari ad avere impianti funzionanti.",
+      "en": "Scrivi una breve lettera formale al comune di Valchiara proponendo una soluzione per mediare tra le esigenze dei proprietari e il diritto dei locatari ad avere impianti funzionanti."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Comprendere le dinamiche tra innovazione tecnologica e responsabilità strutturale negli edifici storici.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T15:19:48.178Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il paradosso del contatore intelligente | B2 Reading | WeLearn",
+      "en": "Il paradosso del contatore intelligente | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sull'implementazione della tecnologia idrica in un contesto urbano degradato.",
+      "en": "Un'analisi critica sull'implementazione della tecnologia idrica in un contesto urbano degradato."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T15:19:48.178Z"
+  }
+}

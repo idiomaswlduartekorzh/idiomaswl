@@ -78,6 +78,7 @@ export const ADVANCED_SCALE_EXERCISES: unknown[] = [
   require('./exercises/it-b2-the-new-crossing.json'),
   require('./exercises/it-b2-the-quiet-street.json'),
   require('./exercises/it-b2-the-school-garden.json'),
+  require('./exercises/it-b2-the-water-meter.json'),
   require('./exercises/it-b2-voices-in-the-archive.json'),
   require('./exercises/ja-b2-a-room-for-repairs.json'),
   require('./exercises/ja-b2-a-ticket-for-the-museum.json'),

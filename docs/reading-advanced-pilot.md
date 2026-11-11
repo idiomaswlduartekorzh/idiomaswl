@@ -2,7 +2,7 @@
 
 Estado: **colección en ampliación hacia una meta mínima de 480; ninguno publicado** (11 de noviembre de 2026).
 
-Punto de control del 11 de noviembre: 118/480 fichas avanzadas en la rama de trabajo (24 originales ampliadas y 94 nuevas); faltan 362. La API gratuita responde a veces con 429/503, por lo que el generador puede reanudarse sin repetir fichas guardadas. La compilación de Next pasó, pero el build completo se detuvo durante TypeScript porque el portátil se quedó cerca del límite de espacio por intercambio de memoria. `npx tsc --noEmit`, el catálogo ordinario y la validación de Reading pasaron por separado. No integrar ni publicar hasta completar 20 por combinación, revisar las fichas y terminar el build completo.
+Punto de control del 11 de noviembre: 119/480 fichas avanzadas en la rama de trabajo (24 originales ampliadas y 95 nuevas); faltan 361. La API gratuita responde a veces con 429/503, por lo que el generador puede reanudarse sin repetir fichas guardadas. La compilación de Next pasó, pero el build completo se detuvo durante TypeScript porque el portátil se quedó cerca del límite de espacio por intercambio de memoria. `npx tsc --noEmit`, el catálogo ordinario y la validación de Reading pasaron por separado. No integrar ni publicar hasta completar 20 por combinación, revisar las fichas y terminar el build completo.
 
 Pendiente de calidad: equilibrar la longitud de las opciones japonesas B2, completar las combinaciones restantes y repetir el recorte de fuentes PDF cuando se añadan más caracteres japoneses o coreanos. `npm run check:reading-advanced-scale` informa cada desviación.
 
