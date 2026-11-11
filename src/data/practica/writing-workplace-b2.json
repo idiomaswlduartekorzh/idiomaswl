@@ -1,0 +1,607 @@
+[
+  {
+    "id": "form-never-opened",
+    "title": "The form that wasn't broken",
+    "area": "Marketing × Product",
+    "role": "Daniel · Product",
+    "teaser": "An invitation went out. The sign-up form was closed. Marketing wants to know who took it offline.",
+    "misunderstanding": "Marketing understood the 10:00 launch as unconditional; the agreed opening depended on Legal's approval.",
+    "email": {
+      "from": "Maya Chen · Marketing",
+      "to": "Daniel · Product",
+      "sent": "Tuesday, 11:14",
+      "subject": "Why was the sign-up form taken offline?",
+      "body": "Hi Daniel,\n\nWe confirmed yesterday that sign-ups would open at 10. The invitation has gone out, but Support is sending me screenshots of a closed form. Why did Product take it offline without telling us? We may need to email the whole list again, and I need an explanation before the 1pm campaign review.\n\nMaya"
+    },
+    "document": {
+      "title": "Launch handover · campaign notes",
+      "intro": "These notes were available internally before Maya wrote. They are the only confirmed facts you can rely on.",
+      "facts": [
+        {
+          "id": "F1",
+          "time": "Mon 16:00",
+          "text": "The team agreed to open sign-ups Tuesday at 10:00, provided Legal approved the final privacy wording."
+        },
+        {
+          "id": "F2",
+          "time": "Mon 16:20",
+          "text": "The campaign calendar scheduled the invitation for 10:00 but did not include the Legal approval condition."
+        },
+        {
+          "id": "F3",
+          "time": "Tue 09:42",
+          "text": "Legal requested a wording change. Daniel posted the delay in the Product channel, not the shared campaign channel."
+        },
+        {
+          "id": "F4",
+          "time": "Tue 10:00",
+          "text": "The invitation was sent. The form had not opened yet; it displayed 'Registration opens soon'."
+        },
+        {
+          "id": "F5",
+          "time": "Tue 10:23–10:31",
+          "text": "Legal approved the wording at 10:23. The form opened at 10:31."
+        },
+        {
+          "id": "F6",
+          "time": "Tue 11:05",
+          "text": "Support forwarded three screenshots. The total number of people who tried to register while the form was closed is unknown."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "form-evidence",
+        "axis": "Evidence",
+        "prompt": "Which statement in Maya's email goes beyond the confirmed facts?",
+        "evidenceIds": [
+          "F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The invitation has already been sent.",
+            "feedback": "The campaign notes confirm it was sent at 10:00."
+          },
+          {
+            "id": "b",
+            "text": "Product took an open form offline.",
+            "feedback": "The form was never open before 10:31. Maya's wording assumes it had been live."
+          },
+          {
+            "id": "c",
+            "text": "Support sent screenshots of a closed form.",
+            "feedback": "Support did forward three screenshots."
+          }
+        ]
+      },
+      {
+        "id": "form-scope",
+        "axis": "Scope",
+        "prompt": "What was the actual condition for opening sign-ups?",
+        "evidenceIds": [
+          "F1",
+          "F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Marketing had to send the invitation first.",
+            "feedback": "The invitation was scheduled, but it was not the condition for opening."
+          },
+          {
+            "id": "b",
+            "text": "Support had to test every registration.",
+            "feedback": "The notes do not assign Support that condition."
+          },
+          {
+            "id": "c",
+            "text": "Legal had to approve the privacy wording.",
+            "feedback": "Monday's agreement made Legal approval a condition of the 10:00 opening."
+          }
+        ]
+      },
+      {
+        "id": "form-intent",
+        "axis": "Intent",
+        "prompt": "What does Maya need from Daniel before the review?",
+        "evidenceIds": [
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A reliable timeline and a plan for checking the impact.",
+            "feedback": "She needs an explanation and a decision about a possible correction."
+          },
+          {
+            "id": "b",
+            "text": "Proof that Marketing caused the problem.",
+            "feedback": "Blame will not establish the impact or help decide what to tell recipients."
+          },
+          {
+            "id": "c",
+            "text": "A promise that only three people were affected.",
+            "feedback": "Three screenshots are reports, not the total number of affected people."
+          }
+        ]
+      },
+      {
+        "id": "form-purpose",
+        "axis": "Purpose",
+        "prompt": "Which response would clarify the situation without shifting blame?",
+        "evidenceIds": [
+          "F3",
+          "F5",
+          "F6"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Say Marketing ignored the checklist and must fix the email alone.",
+            "feedback": "The calendar omitted the condition, but Daniel also missed the shared update."
+          },
+          {
+            "id": "b",
+            "text": "Explain the condition, own the missed update, and propose an impact check.",
+            "feedback": "This addresses the misunderstanding, Daniel's part, and Maya's next decision."
+          },
+          {
+            "id": "c",
+            "text": "Apologise for taking the live form offline and promise a full resend.",
+            "feedback": "The form was not taken offline, and a full resend has not been justified."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Maya as Daniel. Clarify what happened, acknowledge the communication gap you caused, distinguish confirmed reports from the unknown total impact, and propose a decision before the 1pm review.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Correct the assumption without blaming Maya",
+        "Own the missed shared update",
+        "Separate three screenshots from total impact",
+        "Offer a concrete check and decision"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why was the sign-up form taken offline?",
+      "body": "Hi Maya,\n\nI'm sorry the invitation went out while registration was still closed. The form was not taken offline after launch: it had not opened yet because the final privacy wording was awaiting Legal approval. That condition was in Monday's launch agreement, but I should have flagged the delay in the shared campaign channel when Legal requested a change at 9:42. I only posted in Product, which left your team without the information it needed.\n\nLegal approved the wording at 10:23, and the form opened at 10:31. Support has forwarded three screenshots; we do not yet know how many people tried to register during that half hour. I'll check what we can confirm from the sign-up records and Support reports. Could we decide together, before the 1pm review, whether to contact affected people or send a wider correction?\n\nDaniel",
+      "annotations": [
+        {
+          "label": "Clarifies the fact",
+          "excerpt": "it had not opened yet",
+          "evidenceIds": [
+            "F4"
+          ]
+        },
+        {
+          "label": "Takes responsibility",
+          "excerpt": "I should have flagged the delay",
+          "evidenceIds": [
+            "F3"
+          ]
+        },
+        {
+          "label": "Preserves uncertainty",
+          "excerpt": "we do not yet know how many people",
+          "evidenceIds": [
+            "F6"
+          ]
+        },
+        {
+          "label": "Moves the situation forward",
+          "excerpt": "Could we decide together",
+          "evidenceIds": [
+            "F6"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "done-for-whom",
+    "title": "Done for whom?",
+    "area": "Software × Product",
+    "role": "Omar · Engineering",
+    "teaser": "A ticket says Done. A client cannot find the feature on her phone. Is the release broken?",
+    "misunderstanding": "The ticket covered desktop export; an unqualified handover made the completion sound broader.",
+    "email": {
+      "from": "Lena Ortiz · Product",
+      "to": "Omar · Engineering",
+      "sent": "Friday, 10:18",
+      "subject": "Brookline can't find Export",
+      "body": "Hi Omar,\n\nNia at Brookline opened Reports on her phone during our call and found no Export button. I told her export was ready because the ticket is marked Done. Did we ship a broken release? I need a clear explanation for tomorrow's client check-in.\n\nLena"
+    },
+    "document": {
+      "title": "Ticket P-248 · handover record",
+      "intro": "Read the scope and handover before deciding what Omar can safely say.",
+      "facts": [
+        {
+          "id": "P1",
+          "time": "Ticket scope",
+          "text": "P-248 says: 'Add CSV export to the desktop Reports page.' Mobile export is explicitly outside this ticket and remains in the backlog."
+        },
+        {
+          "id": "P2",
+          "time": "Thu 15:00",
+          "text": "QA passed the desktop CSV export flow."
+        },
+        {
+          "id": "P3",
+          "time": "Thu 16:00",
+          "text": "Omar marked P-248 Done and wrote 'Export is ready' in the handover without specifying desktop."
+        },
+        {
+          "id": "P4",
+          "time": "Fri 10:00",
+          "text": "Nia's screenshot shows the mobile Reports page. There is no evidence that desktop export is broken."
+        },
+        {
+          "id": "P5",
+          "time": "Current status",
+          "text": "No delivery date for mobile export has been agreed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "done-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the Done status actually verify?",
+        "evidenceIds": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "b",
+            "text": "Desktop CSV export is complete and passed QA.",
+            "feedback": "That is the ticket's scope and the flow QA tested."
+          },
+          {
+            "id": "a",
+            "text": "Every export flow is available.",
+            "feedback": "The ticket names only the desktop Reports page."
+          },
+          {
+            "id": "c",
+            "text": "Mobile export is ready for Brookline.",
+            "feedback": "Mobile export is outside this ticket and still in the backlog."
+          }
+        ]
+      },
+      {
+        "id": "done-scope",
+        "axis": "Scope",
+        "prompt": "Why was Lena's wider expectation understandable?",
+        "evidenceIds": [
+          "P3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The ticket included mobile by default.",
+            "feedback": "Mobile was explicitly excluded."
+          },
+          {
+            "id": "c",
+            "text": "Omar's handover omitted the word desktop.",
+            "feedback": "'Export is ready' sounded broader than the agreed scope."
+          },
+          {
+            "id": "b",
+            "text": "QA tested Nia's phone.",
+            "feedback": "QA tested the desktop flow."
+          }
+        ]
+      },
+      {
+        "id": "done-intent",
+        "axis": "Intent",
+        "prompt": "What is still important to learn from Lena or Nia?",
+        "evidenceIds": [
+          "P4",
+          "P5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "b",
+            "text": "Whether the desktop ticket was ever created.",
+            "feedback": "P-248 and its QA result are already documented."
+          },
+          {
+            "id": "c",
+            "text": "Whether a mobile date was promised in P-248.",
+            "feedback": "The record explicitly says no mobile date has been agreed."
+          },
+          {
+            "id": "a",
+            "text": "Which report Nia needs to export from her phone.",
+            "feedback": "That use case can inform a separate mobile request and its priority."
+          }
+        ]
+      },
+      {
+        "id": "done-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Omar avoid promising in his reply?",
+        "evidenceIds": [
+          "P5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clear explanation of desktop scope.",
+            "feedback": "The scope is documented and should be explained."
+          },
+          {
+            "id": "b",
+            "text": "That mobile export will ship next week.",
+            "feedback": "There is no agreed mobile delivery date."
+          },
+          {
+            "id": "c",
+            "text": "A check of the desktop flow.",
+            "feedback": "Omar can reasonably offer to verify that flow again."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Lena as Omar. Distinguish completed desktop work from the unmet mobile need, own the ambiguous handover, and propose a useful client update without promising a mobile delivery date.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Name the completed desktop scope",
+        "Recognise why Lena inferred wider coverage",
+        "Avoid an invented mobile date",
+        "Propose a next step for Nia's use case"
+      ]
+    },
+    "model": {
+      "subject": "Re: Brookline can't find Export",
+      "body": "Hi Lena,\n\nP-248 marked Done covers CSV export from the desktop Reports page. QA passed that flow on Thursday. That is the work the team marked complete. Mobile was outside the ticket, so the missing button in Nia's screenshot does not show whether the desktop flow is working today.\n\nI can see why my handover note, 'Export is ready', suggested wider coverage. I should have said 'desktop CSV export', and I'm sorry that caused confusion during your call. I'll check the desktop flow again today and document Nia's mobile use case as a separate request. Could you confirm which report she needs to export from her phone? We can then agree its priority and explain the current scope clearly at tomorrow's check-in. We should not offer a mobile delivery date until one has been agreed.\n\nOmar",
+      "annotations": [
+        {
+          "label": "Defines scope",
+          "excerpt": "desktop Reports page",
+          "evidenceIds": [
+            "P1"
+          ]
+        },
+        {
+          "label": "Owns ambiguity",
+          "excerpt": "my handover note",
+          "evidenceIds": [
+            "P3"
+          ]
+        },
+        {
+          "label": "Avoids an invented promise",
+          "excerpt": "until one has been agreed",
+          "evidenceIds": [
+            "P5"
+          ]
+        },
+        {
+          "label": "Asks a useful question",
+          "excerpt": "which report she needs",
+          "evidenceIds": [
+            "P4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "friday-doesnt-work",
+    "title": "Friday doesn't work",
+    "area": "People × Team lead",
+    "role": "Alex · Team lead",
+    "teaser": "One short reply to a remote-work request sounds like a ban on an entire team's policy.",
+    "misunderstanding": "A Friday duty was the constraint, but Alex's terse reply sounded like a broad policy refusal.",
+    "email": {
+      "from": "Priya Shah · People",
+      "to": "Alex · Team lead",
+      "sent": "Thursday, 09:10",
+      "subject": "Sara's Friday request",
+      "body": "Hi Alex,\n\nSara says her request to work remotely on Friday was declined. She understood your reply to mean that the new two-day remote policy is not available to her team. Can you clarify the reason and what options she has? I'd like to resolve the confusion before Monday's team meeting.\n\nPriya"
+    },
+    "document": {
+      "title": "Remote-work policy · rota excerpt",
+      "intro": "The policy and message record provide the facts. No one has checked coverage yet.",
+      "facts": [
+        {
+          "id": "H1",
+          "time": "Policy",
+          "text": "The team may work remotely up to two days each week when assigned on-site sessions have coverage. The policy has not been suspended."
+        },
+        {
+          "id": "H2",
+          "time": "Mon rota",
+          "text": "Sara is named as the in-person host for Friday's new-starter welcome, 09:00–11:00."
+        },
+        {
+          "id": "H3",
+          "time": "Wed request",
+          "text": "Sara asked Alex to work remotely on Friday."
+        },
+        {
+          "id": "H4",
+          "time": "Wed reply",
+          "text": "Alex replied only, 'Friday won't work this week.' He did not explain the rota or discuss alternatives."
+        },
+        {
+          "id": "H5",
+          "time": "Current status",
+          "text": "Nobody has checked whether another trained host can cover the welcome."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "friday-evidence",
+        "axis": "Evidence",
+        "prompt": "What was the specific constraint on Friday?",
+        "evidenceIds": [
+          "H1",
+          "H2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A company-wide ban on remote work.",
+            "feedback": "The policy remains available."
+          },
+          {
+            "id": "b",
+            "text": "Sara's performance had been questioned.",
+            "feedback": "The documents say nothing about performance."
+          },
+          {
+            "id": "c",
+            "text": "Sara was assigned to host an on-site welcome.",
+            "feedback": "The rota assigns her the Friday 09:00–11:00 session."
+          }
+        ]
+      },
+      {
+        "id": "friday-scope",
+        "axis": "Scope",
+        "prompt": "Why did Sara infer that the policy was unavailable?",
+        "evidenceIds": [
+          "H4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The policy had been suspended.",
+            "feedback": "The policy has not been suspended."
+          },
+          {
+            "id": "b",
+            "text": "Alex's brief reply gave no reason or alternative.",
+            "feedback": "Without the rota context, 'Friday won't work' could sound like a broader refusal."
+          },
+          {
+            "id": "c",
+            "text": "Priya had already declined the request.",
+            "feedback": "The record does not say Priya declined anything."
+          }
+        ]
+      },
+      {
+        "id": "friday-intent",
+        "axis": "Intent",
+        "prompt": "What remains unknown before Alex can offer a Friday arrangement?",
+        "evidenceIds": [
+          "H5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether another trained host can cover the welcome.",
+            "feedback": "Coverage has not been checked yet."
+          },
+          {
+            "id": "b",
+            "text": "Whether Sara asked to work remotely.",
+            "feedback": "Her Wednesday request is recorded."
+          },
+          {
+            "id": "c",
+            "text": "Whether the policy allows remote days.",
+            "feedback": "The policy allows up to two with coverage."
+          }
+        ]
+      },
+      {
+        "id": "friday-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply best resolves the misunderstanding without making an unsupported promise?",
+        "evidenceIds": [
+          "H1",
+          "H2",
+          "H4",
+          "H5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tell Priya the policy does not apply to this team.",
+            "feedback": "That contradicts the policy."
+          },
+          {
+            "id": "b",
+            "text": "Promise Sara can work remotely this Friday.",
+            "feedback": "Coverage is still unknown, so that promise is premature."
+          },
+          {
+            "id": "c",
+            "text": "Explain the rota, own the unclear reply, and check coverage with Sara.",
+            "feedback": "That clarifies the reason and leaves room for a real option."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Priya as Alex. Explain the specific Friday duty, take responsibility for your unclear reply to Sara, avoid commenting on performance or promising unconfirmed coverage, and propose a clear update before Monday's meeting.",
+      "wordGuide": "About 130–190 words",
+      "criteria": [
+        "Distinguish the Friday duty from the team policy",
+        "Own the unclear message",
+        "Do not promise unconfirmed coverage",
+        "Propose a conversation and update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Sara's Friday request",
+      "body": "Hi Priya,\n\nThe remote-work policy is still available to our team. My reply to Sara was about this Friday's rota, not a general restriction: she is listed as the on-site host for the new-starter welcome from 9 to 11. I wrote only 'Friday won't work this week' and did not explain that distinction or discuss options. I can understand why she read it as a broader refusal, and I should have been clearer.\n\nI have not yet checked whether another trained colleague could cover the welcome, so I cannot say that Friday remote work is impossible. I'll speak with Sara today, explain the duty and ask what arrangement would work for her. Then I'll check coverage and update you both with a clear decision before Monday's meeting. Thanks for flagging the misunderstanding.\n\nAlex",
+      "annotations": [
+        {
+          "label": "Clarifies the policy",
+          "excerpt": "still available to our team",
+          "evidenceIds": [
+            "H1"
+          ]
+        },
+        {
+          "label": "Owns the message",
+          "excerpt": "I should have been clearer",
+          "evidenceIds": [
+            "H4"
+          ]
+        },
+        {
+          "label": "Preserves uncertainty",
+          "excerpt": "I have not yet checked",
+          "evidenceIds": [
+            "H5"
+          ]
+        },
+        {
+          "label": "Offers a next step",
+          "excerpt": "update you both",
+          "evidenceIds": [
+            "H5"
+          ]
+        }
+      ]
+    }
+  }
+]
